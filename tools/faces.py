@@ -5,7 +5,7 @@ TUNIC = "M-25 -164 C -31 -150 -33 -120 -28 -58 L -18 -62 L -8 -55 L 2 -62 L 12 -
 def _inner(p):
     s = (B/p).read_text()
     return re.sub(r'^<g id="[A-Z]+">\n', '', s).rsplit('</g>', 1)[0]
-def face(base="adam", skin=None, shadow=None, hair=None, hl=None, brow=None, beard=False, sigil=False, light=None, scarf=None, laugh=False, beard_color=None, blind=False, tear=False, sweat=False, stubble=None):
+def face(base="adam", skin=None, shadow=None, hair=None, hl=None, brow=None, beard=False, sigil=False, light=None, scarf=None, laugh=False, beard_color=None, blind=False, tear=False, sweat=False, stubble=None, egypt=None, collar=False, kohl=False, false_beard=False):
     s = _inner(f"faces/{base}.svg")
     d_skin, d_sh = ("#D9A27A", "#A8684A") if base == "adam" else ("#E3B08A", "#B97A58")
     if skin: s = s.replace(d_skin, skin)
@@ -32,6 +32,20 @@ def face(base="adam", skin=None, shadow=None, hair=None, hl=None, brow=None, bea
         s += '\n<g fill="#CFEFFF" stroke="#2C7DA0" stroke-width="1"><path d="M210 112 C 214 120 214 126 210 128 C 206 126 206 120 210 112 Z"></path><path d="M244 196 C 247 202 247 206 244 208 C 241 206 241 202 244 196 Z"></path></g>'
     if stubble:
         s += ('\n<path d="M168 246 C 180 274 200 296 222 306 C 238 306 244 296 242 284 C 238 276 236 270 232 272 C 226 284 214 290 200 288 C 186 284 176 268 168 246 Z" fill="%s" opacity="0.75"></path>' % stubble)
+    if kohl:
+        s += '\n<path d="M206 170 C 214 165 224 164 233 168 L 246 164" fill="none" stroke="#0D0D0F" stroke-width="2.6" stroke-linecap="round"></path><path d="M210 174 C 218 177 226 176 232 172" fill="none" stroke="#0D0D0F" stroke-width="1.4"></path>'
+    if egypt:
+        import re as _re2
+        s = _re2.sub(r'<path d="M234 106 C 240 96.*?</path>\n  <g fill="none" stroke="#[0-9A-Fa-f]{6}" stroke-width="1.5" stroke-linecap="round">.*?</g>\n', '', s, flags=_re2.S)
+        a, b = egypt
+        s += ('\n<defs><pattern id="nemes%s" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(8)"><rect width="12" height="12" fill="%s"></rect><rect width="12" height="5" fill="%s"></rect></pattern></defs>'
+              '\n<path d="M236 108 C 240 84 222 44 172 38 C 120 34 90 70 86 114 C 84 150 92 190 96 230 C 100 290 108 340 112 392 L 162 392 C 156 330 148 270 150 240 C 150 210 148 190 152 176 C 156 150 168 132 186 122 C 204 114 222 110 236 108 Z" fill="url(#nemes%s)" stroke="#0D0D0F" stroke-width="2.2" stroke-linejoin="round"></path>'
+              '\n<path d="M236 108 C 210 112 186 120 172 132" fill="none" stroke="#0D0D0F" stroke-width="5"></path><path d="M236 108 C 210 112 186 120 172 132" fill="none" stroke="#E8B830" stroke-width="3"></path>') % (a[1:]+b[1:], a, b, a[1:]+b[1:])
+    if collar:
+        s += ('\n<path d="M140 380 C 150 340 180 320 216 330 C 240 336 256 352 262 380 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path>'
+              '\n<g fill="none" stroke="#1F5FAD" stroke-width="4"><path d="M150 370 C 162 344 188 334 214 340 C 236 344 248 358 254 376"></path></g><path d="M156 378 C 168 356 190 348 212 352 C 232 356 242 366 246 380" fill="none" stroke="#D7261E" stroke-width="3"></path>')
+    if false_beard:
+        s += '\n<path d="M226 300 L 222 350 L 238 350 L 240 300 Z" fill="#1F5FAD" stroke="#0D0D0F" stroke-width="1.6"></path><g stroke="#E8B830" stroke-width="2"><path d="M223 314 L 239 314 M223 328 L 239 328 M222 342 L 238 342"></path></g>'
     if laugh:
         import re as _re
         s = _re.sub(r'<path d="M209 171 C 215 165.*?</path>\n  <ellipse cx="224".*?</ellipse>\n  <circle cx="225" cy="169".*?</circle>\n', '<path d="M209 171 C 215 175 223 175 229 170" fill="none" stroke="#0D0D0F" stroke-width="2.4" stroke-linecap="round"></path>\n', s, flags=_re.S)
@@ -67,6 +81,11 @@ def tokens():
     t["__FACE_ESAU_CRY__"] = face("adam", skin="#C47A5A", shadow="#6A3A3A", hair="#B5421E", hl="#E06A3A", stubble="#B5421E", brow="sorrow", tear=True)
     t["__FACE_ISAAC_OLD__"] = face("adam", skin="#D9A27A", shadow="#9A6A4A", hair="#E8E2D6", hl="#B8B2A6", beard=True, blind=True)
     t["__FACE_RACHEL__"] = face("eve", skin="#E3B08A", shadow="#B97A58", hair="#1A1210")
+    t["__FACE_JOSEPH__"] = face("adam", skin="#E3B08A", shadow="#B97A58", hair="#5A3A22", hl="#8A6A4A")
+    t["__FACE_JOSEPH_EGYPT__"] = face("adam", skin="#D9A27A", shadow="#9A6A4A", egypt=("#1F5FAD", "#E8B830"), collar=True, kohl=True)
+    t["__FACE_JOSEPH_WEEP__"] = face("adam", skin="#D9A27A", shadow="#8A5A5A", egypt=("#1F5FAD", "#E8B830"), collar=True, kohl=True, brow="sorrow", tear=True)
+    t["__FACE_PHARAOH__"] = face("adam", skin="#C98E66", shadow="#8A5A3E", egypt=("#E8B830", "#1F5FAD"), collar=True, kohl=True, false_beard=True, light="#FFE680")
+    t["__FACE_JACOB_OLD_WEEP__"] = face("adam", skin="#C98E66", shadow="#6A4A5A", hair="#C8C2B6", hl="#8A867E", beard=True, brow="sorrow", tear=True)
     return t
 def build(paths):
     t = tokens()

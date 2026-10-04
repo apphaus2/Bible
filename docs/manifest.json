@@ -242,6 +242,68 @@
           "thumb": "thumbs/book-04-08-the-brothers-meet.jpg"
         }
       ]
+    },
+    {
+      "id": "book-05",
+      "title": "Book Five: The Dreamer",
+      "range": "Genesis 37–50",
+      "url": "genesis/book-05/",
+      "pages": [
+        {
+          "title": "Cover",
+          "ref": "Genesis 37–50",
+          "url": "genesis/book-05/00-cover.html",
+          "thumb": "thumbs/book-05-00-cover.jpg"
+        },
+        {
+          "title": "The Coat and the Dreams",
+          "ref": "Genesis 37:3–9",
+          "url": "genesis/book-05/01-the-coat-and-the-dreams.html",
+          "thumb": "thumbs/book-05-01-the-coat-and-the-dreams.jpg"
+        },
+        {
+          "title": "The Pit",
+          "ref": "Genesis 37:18–28",
+          "url": "genesis/book-05/02-the-pit.html",
+          "thumb": "thumbs/book-05-02-the-pit.jpg"
+        },
+        {
+          "title": "Jacob's Grief",
+          "ref": "Genesis 37:31–35",
+          "url": "genesis/book-05/03-jacob-s-grief.html",
+          "thumb": "thumbs/book-05-03-jacob-s-grief.jpg"
+        },
+        {
+          "title": "Egypt and the Prison",
+          "ref": "Genesis 39 – 40",
+          "url": "genesis/book-05/04-egypt-and-the-prison.html",
+          "thumb": "thumbs/book-05-04-egypt-and-the-prison.jpg"
+        },
+        {
+          "title": "Pharaoh's Dream",
+          "ref": "Genesis 41:1–7",
+          "url": "genesis/book-05/05-pharaoh-s-dream.html",
+          "thumb": "thumbs/book-05-05-pharaoh-s-dream.jpg"
+        },
+        {
+          "title": "Before Pharaoh",
+          "ref": "Genesis 41:14–42",
+          "url": "genesis/book-05/06-before-pharaoh.html",
+          "thumb": "thumbs/book-05-06-before-pharaoh.jpg"
+        },
+        {
+          "title": "Grain as the Sand",
+          "ref": "Genesis 41:47 – 42:9",
+          "url": "genesis/book-05/07-grain-as-the-sand.html",
+          "thumb": "thumbs/book-05-07-grain-as-the-sand.jpg"
+        },
+        {
+          "title": "I Am Joseph",
+          "ref": "Genesis 45:1–4; 50:20",
+          "url": "genesis/book-05/08-i-am-joseph.html",
+          "thumb": "thumbs/book-05-08-i-am-joseph.jpg"
+        }
+      ]
     }
   ]
 }

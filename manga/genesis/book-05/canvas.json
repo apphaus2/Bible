@@ -1,0 +1,91 @@
+{
+  "v": 3,
+  "attachments": {},
+  "createdOnFiles": {
+    "at": "2026-10-04T17:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "title": "Genesis Manga",
+  "boards": {
+    "B5-Cover.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 00 · Cover"
+    },
+    "B5-P01-Coat.dc.html": {
+      "x": 840,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 01 · The Coat and the Dreams"
+    },
+    "B5-P02-Pit.dc.html": {
+      "x": 1680,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 02 · The Pit"
+    },
+    "B5-P03-Grief.dc.html": {
+      "x": 2520,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 03 · Jacob's Grief"
+    },
+    "B5-P04-Prison.dc.html": {
+      "x": 3360,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 04 · Egypt and the Prison"
+    },
+    "B5-P05-Dream.dc.html": {
+      "x": 0,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 05 · Pharaoh's Dream"
+    },
+    "B5-P06-Pharaoh.dc.html": {
+      "x": 840,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 06 · Before Pharaoh"
+    },
+    "B5-P07-Granaries.dc.html": {
+      "x": 1680,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 07 · Grain as the Sand"
+    },
+    "B5-P08-Joseph.dc.html": {
+      "x": 2520,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B5 · 08 · I Am Joseph"
+    }
+  },
+  "order": [
+    "B5-Cover.dc.html",
+    "B5-P01-Coat.dc.html",
+    "B5-P02-Pit.dc.html",
+    "B5-P03-Grief.dc.html",
+    "B5-P04-Prison.dc.html",
+    "B5-P05-Dream.dc.html",
+    "B5-P06-Pharaoh.dc.html",
+    "B5-P07-Granaries.dc.html",
+    "B5-P08-Joseph.dc.html"
+  ],
+  "notes": {}
+}

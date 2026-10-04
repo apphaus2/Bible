@@ -4,7 +4,7 @@ import json, re, sys, html, pathlib, subprocess
 src, canvas_path, out = map(pathlib.Path, sys.argv[1:4])
 canvas = json.loads(canvas_path.read_text())
 BOOKS = [
-  {"dir": "book-01", "num": "One",   "name": "The Beginning", "range": "Genesis 1–3",   "match": lambda n: not n.startswith(("B2-", "B3-", "B4-")),
+  {"dir": "book-01", "num": "One",   "name": "The Beginning", "range": "Genesis 1–3",   "match": lambda n: not n.startswith(("B2-", "B3-", "B4-", "B5-")),
    "blurb": "Creation in seven days, the garden of Eden, the serpent, and the way east of Eden."},
   {"dir": "book-02", "num": "Two",   "name": "The Flood",     "range": "Genesis 4–9",   "match": lambda n: n.startswith("B2-"),
    "blurb": "Cain and Abel, the generations of Adam, the ark, the deluge, and the bow in the cloud."},
@@ -12,6 +12,8 @@ BOOKS = [
    "blurb": "The tower of Babel, the call of Abram, Sodom and Gomorrah, and the mountain of Moriah."},
   {"dir": "book-04", "num": "Four",  "name": "The Ladder",    "range": "Genesis 25–33", "match": lambda n: n.startswith("B4-"),
    "blurb": "Jacob and Esau, the stolen blessing, the ladder at Bethel, and the night of wrestling at Peniel."},
+  {"dir": "book-05", "num": "Five",  "name": "The Dreamer",   "range": "Genesis 37–50", "match": lambda n: n.startswith("B5-"),
+   "blurb": "Joseph's coat of many colors, the pit, Pharaoh's dreams, the granaries of Egypt, and the brothers forgiven."},
 ]
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
 def slug(t):
@@ -135,7 +137,7 @@ toc = "\n".join(f'''<li><h3><a href="genesis/{b['dir']}/index.html">Book {b['num
   <section class="hero">
     <p class="kicker">Bible Manga · 創世記</p>
     <h1>Genesis</h1>
-    <p class="lede">The first book of the Bible as a full-color manga — from the first light to Jacob's ladder and the brothers' reunion. Adapted from the American Standard Version (1901).</p>
+    <p class="lede">The first book of the Bible as a full-color manga — from the first light to Joseph in Egypt, in five books. Adapted from the American Standard Version (1901).</p>
     <a class="cta" href="genesis/{BOOKS[0]['dir']}/{BOOKS[0]['pages'][0]['slug']}.html">Start at the beginning ›</a>
   </section>
   <h2 class="sec">Books</h2>
