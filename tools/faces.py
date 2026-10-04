@@ -50,6 +50,9 @@ def face(base="adam", skin=None, shadow=None, hair=None, hl=None, brow=None, bea
         import re as _re
         s = _re.sub(r'<path d="M209 171 C 215 165.*?</path>\n  <ellipse cx="224".*?</ellipse>\n  <circle cx="225" cy="169".*?</circle>\n', '<path d="M209 171 C 215 175 223 175 229 170" fill="none" stroke="#0D0D0F" stroke-width="2.4" stroke-linecap="round"></path>\n', s, flags=_re.S)
         s += '\n<path d="M226 252 C 230 256 236 256 240 250" fill="none" stroke="#0D0D0F" stroke-width="2" stroke-linecap="round"></path><path d="M196 240 C 204 236 210 238 214 244" fill="none" stroke="#B97A58" stroke-width="1.6" stroke-linecap="round"></path>'
+    if scarf and base == "adam":
+        import re as _re3
+        s = _re3.sub(r'<path d="M234 106 C 240 96.*?</path>\n  <g fill="none" stroke="#[0-9A-Fa-f]{6}" stroke-width="1.5" stroke-linecap="round">.*?</g>\n', '', s, flags=_re3.S)
     if scarf:
         s += ('\n<path d="M238 106 C 242 80 222 38 170 32 C 118 28 84 70 82 122 C 80 182 90 262 92 392 L 158 392 C 152 300 146 214 150 182 C 154 152 166 132 184 122 C 202 112 220 108 238 106 Z" fill="%s" stroke="#0D0D0F" stroke-width="2.2" stroke-linejoin="round"></path>'
               '\n<g fill="none" stroke="#0D0D0F" stroke-width="1.2" opacity="0.45"><path d="M228 70 C 200 50 150 48 110 80"></path><path d="M110 120 C 106 200 110 290 112 390"></path><path d="M132 140 C 128 220 130 300 134 390"></path></g>'

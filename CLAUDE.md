@@ -5,7 +5,7 @@ Context for Claude (and humans) working in this repo.
 ## What this is
 
 A manga adaptation of the Bible, book by book, drawn as full-color vector pages in a
-1980s cyberpunk-manga style. Genesis is first.
+1980s cyberpunk-manga style. Genesis is complete; Exodus is under way.
 
 - **Book One — Genesis 1–3** (Creation → Eden → the Fall): done, `manga/genesis/book-01/`
 - **Book Two — Genesis 4–9** (Cain and Abel → the Flood → the rainbow): done, `manga/genesis/book-02/`
@@ -13,7 +13,12 @@ A manga adaptation of the Bible, book by book, drawn as full-color vector pages 
 - **Book Four — Genesis 25–33** (Jacob and Esau → Bethel → Peniel → reunion): done, `manga/genesis/book-04/`
 - **Book Five — Genesis 37–50** (Joseph: coat → pit → Egypt → Pharaoh → reunion): done, `manga/genesis/book-05/`
 - **Genesis is complete.**
-- Live canvas (private Claude Design artifact): https://claude.ai/artifact/UGXs4gFgPqfSp92tykHmT3
+- Genesis live canvas (private Claude Design artifact): https://claude.ai/artifact/UGXs4gFgPqfSp92tykHmT3
+
+**Exodus**
+
+- **Book One — Exodus 1–4** (bondage → the ark of bulrushes → Midian → the burning bush → I AM → the rod): done, `manga/exodus/book-01/`
+- Exodus live canvas (its own private Claude Design artifact): https://claude.ai/artifact/GkjFPGxsPf2iJtfVooXJNa
 
 ## Repo layout
 
@@ -26,6 +31,9 @@ manga/
     book-03/          Genesis 11–22: B3-Cover, B3-P01…B3-P08, canvas.json (this book only)
     book-04/          Genesis 25–33: B4-Cover, B4-P01…B4-P08, canvas.json (this book only)
     book-05/          Genesis 37–50: B5-Cover, B5-P01…B5-P08, canvas.json (this book only)
+  exodus/
+    canvas.json       the Exodus canvas index (Book One rows at y = 0 and 1200; Book Two will start at 2800)
+    book-01/          Exodus 1–4: Main.dc.html (cover), EX1-P01…EX1-P08, canvas.json (this book only)
 tools/
   faces.py            figure/face kit: build(paths) swaps __MAN__, __WOMAN__, __HAIR__,
                       __TUNIC__, __LIEB__/__LIEA__, __FACE_*__ tokens in page files
@@ -39,10 +47,24 @@ tools/
   egypt.py            pyramids, granary rows, fat/lean kine, sheaf paths
   build5.py           Book Five build: build4 tokens + __PYRAMIDS_*__, __GRANARIES_*__, __FAT__/__LEAN__/__RIBS__, __SHEAF__
   shot.js             Playwright render of a .dc.html to PNG, for checking a page
+  shots.js            the same for many pages: node tools/shots.js <out_dir> a.dc.html b.dc.html …
+  mk.py               page-building helpers for Exodus on: page(), panel(), cols(), cap(), god(), balloon()+tail(),
+                      stamp(), sfx(), ref(), person() (with ManUp/WomanUp + arm points for a raised arm), speed(), stars()
+  faces_ex.py         Exodus faces: Moses (shepherd headcloth + cord, beard; fire-lit; afraid), Moses as an Egyptian
+                      prince (angry variant), Pharaoh's daughter, Miriam, Jochebed, Zipporah, the new Pharaoh,
+                      a taskmaster, Hebrew slaves
+  exodus.py           reeds/bulrushes, the ark of bulrushes, flame/blaze, the burning bush (not consumed), sheep,
+                      an open hand (leprous variant), kneeling figure, sandals
+  exodus_book1.py     writes all of Exodus Book One: python3 tools/exodus_book1.py <out_dir>
 ```
 
 New books go in `manga/<book>/book-NN/` and keep the same file conventions.
 File stems must be unique across the whole canvas, so Book Two pages are prefixed `B2-` (Book Three: `B3-`).
+Exodus has its own canvas: its pages are prefixed `EX1-` (Book Two: `EX2-`), and its first cover is `Main.dc.html`.
+
+Genesis pages were written by hand with `__TOKEN__` placeholders and filled by `build3/4/5.py`. From Exodus on,
+each book is one Python script (`exodus_book1.py`) that composes every page from the `mk.py` helpers and the
+generators, so a fix is an edit to the script and a re-run, never a hand edit of the generated `.dc.html`.
 
 ## File format
 
@@ -138,6 +160,14 @@ Archivo Narrow 700 (speech balloons), Noto Sans JP 900 (sound effects).
     key emotional beat a face close-up. Book Five adds Joseph, Joseph in
     Egyptian dress (`egypt=` striped headcloth with the hair hidden, gold
     collar, kohl), weeping Joseph, Pharaoh (false beard), and grieving old Jacob.
+    Exodus adds the faces in `tools/faces_ex.py`. Grown Moses always wears an off-white
+    shepherd's headcloth with a dark cord and a black beard (a `scarf=` on the male face
+    now hides the hair under it); young Moses is in Egyptian dress, red-and-white.
+  - **Poses:** `person(..., up=[shoulder, elbow, hand])` draws a raised or reaching arm
+    and removes that side's hanging arm. Kneeling or cowering people use
+    `exodus.kneel()` (arm across the face), not the old `__BOW__` blob.
+  - The burning bush is `exodus.bush()`: one merged blaze outline with hotter cores,
+    dark thorny branches, and green leaves still on them (the bush is not consumed).
   - Joseph's coat of many colors is a 6-band stripe `<pattern>` (red, gold,
     teal, purple, green, orange) on the TUNIC or ROBE.
   - Patriarchs and travellers wear the full-length `__ROBE__`; younger people
@@ -162,21 +192,25 @@ Archivo Narrow 700 (speech balloons), Noto Sans JP 900 (sound effects).
 A static site built from the pages, served by GitHub Pages from `main` › `/docs`.
 
 - `docs/index.html` is the landing page: every book plus a full table of contents.
-- `docs/genesis/book-NN/index.html` is each book's index, with page thumbnails.
-- `docs/genesis/book-NN/NN-<slug>.html` is one URL per manga page, with
-  breadcrumbs, Prev/Next (arrow keys and swipe work too) and `<link rel=prev/next>`.
-  The last page of a book continues into the next book.
-- `docs/manifest.json` lists every book and page (title, verse ref, URL,
+- `docs/<series>/book-NN/index.html` is each book's index, with page thumbnails
+  (`<series>` is `genesis` or `exodus`).
+- `docs/<series>/book-NN/NN-<slug>.html` is one URL per manga page, with
+  breadcrumbs (Bible Manga / series / book / page), Prev/Next (arrow keys and swipe work too)
+  and `<link rel=prev/next>`. The last page of a book continues into the next book, and the
+  end of Genesis continues into Exodus.
+- `docs/manifest.json` lists every series, book and page (title, verse ref, URL,
   thumbnail) for linking from another website.
-- `docs/thumbs/*.jpg` are 380×540 page previews.
+- `docs/thumbs/*.jpg` are 380×540 page previews: `book-NN-<slug>.jpg` for Genesis,
+  `exodus-book-NN-<slug>.jpg` for Exodus.
 
-Rebuild after any page change:
+Rebuild after any page change (each series' pages flat in one folder with its canvas.json):
 ```
-python3 tools/build_site.py <dir with the .dc.html pages> manga/genesis/canvas.json docs
+python3 tools/build_site.py docs genesis=<genesis pages dir> exodus=<exodus pages dir>
 cp tools/site/* docs/assets/
-node tools/thumbs.js <jobs.json>   # [[page.dc.html, thumb_<book>-<slug>.png], …], then resize to 380×540 JPG
+node tools/shots.js <png_dir> <pages…>   # then resize each PNG to a 380×540 JPG in docs/thumbs/
 ```
-When adding a book, add an entry to `BOOKS` in `tools/build_site.py`.
+When adding a book, add it to that series' `books` in `SERIES` in `tools/build_site.py`
+(a new series is a new `SERIES` entry).
 
 ## Checking pages
 
@@ -186,5 +220,7 @@ publishing.
 
 ## Roadmap
 
-- Exodus: Moses, the burning bush, the plagues, the Red Sea, Sinai (new `manga/exodus/` tree; the cover kanji becomes 出エジプト記)
+- Exodus Book Two — Exodus 5–11: Moses and Aaron before Pharaoh, the rods and serpents, the ten plagues
+- Exodus Book Three — Exodus 12–15: the passover, the departure, the Red Sea, the song of Moses
+- Exodus Book Four — Exodus 16–20, 32–34: manna, Sinai, the ten commandments, the golden calf
 - Possible option: right-to-left reading order

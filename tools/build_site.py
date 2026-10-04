@@ -1,20 +1,32 @@
-"""Build a static website (docs/) from the .dc.html manga pages.
-Usage: python3 build_site.py <project_dir> <canvas.json> <out_dir>"""
-import json, re, sys, html, pathlib, subprocess
-src, canvas_path, out = map(pathlib.Path, sys.argv[1:4])
-canvas = json.loads(canvas_path.read_text())
-BOOKS = [
-  {"dir": "book-01", "num": "One",   "name": "The Beginning", "range": "Genesis 1–3",   "match": lambda n: not n.startswith(("B2-", "B3-", "B4-", "B5-")),
-   "blurb": "Creation in seven days, the garden of Eden, the serpent, and the way east of Eden."},
-  {"dir": "book-02", "num": "Two",   "name": "The Flood",     "range": "Genesis 4–9",   "match": lambda n: n.startswith("B2-"),
-   "blurb": "Cain and Abel, the generations of Adam, the ark, the deluge, and the bow in the cloud."},
-  {"dir": "book-03", "num": "Three", "name": "The Promise",   "range": "Genesis 11–22", "match": lambda n: n.startswith("B3-"),
-   "blurb": "The tower of Babel, the call of Abram, Sodom and Gomorrah, and the mountain of Moriah."},
-  {"dir": "book-04", "num": "Four",  "name": "The Ladder",    "range": "Genesis 25–33", "match": lambda n: n.startswith("B4-"),
-   "blurb": "Jacob and Esau, the stolen blessing, the ladder at Bethel, and the night of wrestling at Peniel."},
-  {"dir": "book-05", "num": "Five",  "name": "The Dreamer",   "range": "Genesis 37–50", "match": lambda n: n.startswith("B5-"),
-   "blurb": "Joseph's coat of many colors, the pit, Pharaoh's dreams, the granaries of Egypt, and the brothers forgiven."},
+"""Build a static website (docs/) from the .dc.html manga pages of every series.
+Usage: python3 build_site.py <out_dir> genesis=<project_dir> exodus=<project_dir> ...
+Each project_dir holds that series' pages and its canvas.json (all books flat in one folder)."""
+import json, re, sys, html, pathlib
+out = pathlib.Path(sys.argv[1])
+SRC = {k: pathlib.Path(v) for k, v in (a.split("=", 1) for a in sys.argv[2:])}
+SERIES = [
+  {"id": "genesis", "name": "Genesis", "kanji": "創世記", "thumb": "",
+   "lede": "The first book of the Bible — from the first light to Joseph in Egypt, in five books.",
+   "books": [
+    {"dir": "book-01", "num": "One",   "name": "The Beginning", "range": "Genesis 1–3",   "match": lambda n: not n.startswith(("B2-", "B3-", "B4-", "B5-")),
+     "blurb": "Creation in seven days, the garden of Eden, the serpent, and the way east of Eden."},
+    {"dir": "book-02", "num": "Two",   "name": "The Flood",     "range": "Genesis 4–9",   "match": lambda n: n.startswith("B2-"),
+     "blurb": "Cain and Abel, the generations of Adam, the ark, the deluge, and the bow in the cloud."},
+    {"dir": "book-03", "num": "Three", "name": "The Promise",   "range": "Genesis 11–22", "match": lambda n: n.startswith("B3-"),
+     "blurb": "The tower of Babel, the call of Abram, Sodom and Gomorrah, and the mountain of Moriah."},
+    {"dir": "book-04", "num": "Four",  "name": "The Ladder",    "range": "Genesis 25–33", "match": lambda n: n.startswith("B4-"),
+     "blurb": "Jacob and Esau, the stolen blessing, the ladder at Bethel, and the night of wrestling at Peniel."},
+    {"dir": "book-05", "num": "Five",  "name": "The Dreamer",   "range": "Genesis 37–50", "match": lambda n: n.startswith("B5-"),
+     "blurb": "Joseph's coat of many colors, the pit, Pharaoh's dreams, the granaries of Egypt, and the brothers forgiven."},
+  ]},
+  {"id": "exodus", "name": "Exodus", "kanji": "出エジプト記", "thumb": "exodus-",
+   "lede": "The second book of the Bible — the bondage in Egypt, Moses, and the God who calls from the fire.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "The Bush That Burned", "range": "Exodus 1–4", "match": lambda n: n == "Main.dc.html" or n.startswith("EX1-"),
+     "blurb": "The new king who knew not Joseph, the ark of bulrushes, Moses in Midian, the burning bush, I AM THAT I AM, and the rod."},
+  ]},
 ]
+SERIES = [x for x in SERIES if x["id"] in SRC]
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
 def slug(t):
     t = re.sub(r"^(B\d+ · )?\d+ · ", "", t)
@@ -31,53 +43,67 @@ def convert(path):
 
 out.mkdir(parents=True, exist_ok=True)
 (out / "assets").mkdir(exist_ok=True); (out / "thumbs").mkdir(exist_ok=True)
-manifest = {"title": "Genesis — Bible Manga", "books": []}
-for b in BOOKS:
-    names = [n for n in canvas["order"] if b["match"](n)]
-    pages = []
-    for i, n in enumerate(names):
-        t = canvas["boards"][n].get("title", n)
-        title, style, body = convert(src / n)
-        ref, _, heading = title.partition(" — ")
-        if "Cover" in t: ref, heading = b["range"], "Cover"
-        num = "Cover" if i == 0 else f"Page {i}"
-        pages.append({"file": n, "slug": f"{i:02d}-{slug(t)}", "label": re.sub(r'^B\d+ · ', '', t), "heading": heading or t,
-                      "ref": ref, "num": num, "style": style, "body": body})
-    b["pages"] = pages
-    manifest["books"].append({"id": b["dir"], "title": f"Book {b['num']}: {b['name']}", "range": b["range"], "url": f"genesis/{b['dir']}/",
-        "pages": [{"title": p["heading"], "ref": p["ref"], "url": f"genesis/{b['dir']}/{p['slug']}.html", "thumb": f"thumbs/{b['dir']}-{p['slug']}.jpg"} for p in pages]})
+manifest = {"title": "Bible Manga", "series": []}
+FLAT = []   # every book in reading order, for prev/next across books and series
+for S in SERIES:
+    canvas = json.loads((SRC[S["id"]] / "canvas.json").read_text())
+    ms = {"id": S["id"], "title": S["name"], "books": []}
+    for b in S["books"]:
+        b["series"] = S
+        names = [n for n in canvas["order"] if b["match"](n)]
+        pages = []
+        for i, n in enumerate(names):
+            t = canvas["boards"][n].get("title", n)
+            title, style, body = convert(SRC[S["id"]] / n)
+            ref, _, heading = title.partition(" — ")
+            if "Cover" in t: ref, heading = b["range"], "Cover"
+            num = "Cover" if i == 0 else f"Page {i}"
+            pages.append({"file": n, "slug": f"{i:02d}-{slug(t)}", "label": re.sub(r'^B\d+ · ', '', t), "heading": heading or t,
+                          "ref": ref, "num": num, "style": style, "body": body})
+        b["pages"] = pages; FLAT.append(b)
+        ms["books"].append({"id": b["dir"], "title": f"Book {b['num']}: {b['name']}", "range": b["range"], "url": f"{S['id']}/{b['dir']}/",
+            "pages": [{"title": p["heading"], "ref": p["ref"], "url": f"{S['id']}/{b['dir']}/{p['slug']}.html", "thumb": f"thumbs/{S['thumb']}{b['dir']}-{p['slug']}.jpg"} for p in pages]})
+    manifest["series"].append(ms)
+def thumb(b, p): return f"{b['series']['thumb']}{b['dir']}-{p['slug']}.jpg"
+def href(frm, b, p):
+    """Relative link from book `frm` to page p of book b."""
+    if b is frm: return f"{p['slug']}.html"
+    if b["series"] is frm["series"]: return f"../{b['dir']}/{p['slug']}.html"
+    return f"../../{b['series']['id']}/{b['dir']}/{p['slug']}.html"
 
 def bar(crumbs, extra=""):
     c = ' <span aria-hidden="true">/</span> '.join(crumbs)
     return f'<header class="bar"><nav class="crumbs" aria-label="Breadcrumb">{c}</nav>{extra}</header>'
 
 # reader pages
-for bi, b in enumerate(BOOKS):
-    P = b["pages"]; d = out / "genesis" / b["dir"]; d.mkdir(parents=True, exist_ok=True)
+for bi, b in enumerate(FLAT):
+    S = b["series"]; SN = S["name"]
+    P = b["pages"]; d = out / S["id"] / b["dir"]; d.mkdir(parents=True, exist_ok=True)
+    crumbs0 = ['<a href="../../index.html">Bible Manga</a>', f'<a href="../../index.html#{S["id"]}">{SN}</a>']
     for i, p in enumerate(P):
-        prev = P[i-1]["slug"] + ".html" if i > 0 else (f"../{BOOKS[bi-1]['dir']}/{BOOKS[bi-1]['pages'][-1]['slug']}.html" if bi > 0 else None)
-        nxt = P[i+1]["slug"] + ".html" if i < len(P)-1 else (f"../{BOOKS[bi+1]['dir']}/{BOOKS[bi+1]['pages'][0]['slug']}.html" if bi < len(BOOKS)-1 else None)
+        prev = P[i-1]["slug"] + ".html" if i > 0 else (href(b, FLAT[bi-1], FLAT[bi-1]["pages"][-1]) if bi > 0 else None)
+        nxt = P[i+1]["slug"] + ".html" if i < len(P)-1 else (href(b, FLAT[bi+1], FLAT[bi+1]["pages"][0]) if bi < len(FLAT)-1 else None)
         links = (f'<link rel="prev" href="{prev}">' if prev else "") + (f'<link rel="next" href="{nxt}">' if nxt else "")
         pn = f'<a class="btn" href="{prev}" rel="prev">‹ Prev</a>' if prev else '<span class="btn off" aria-disabled="true">‹ Prev</span>'
         nn = f'<a class="btn" href="{nxt}" rel="next">Next ›</a>' if nxt else '<span class="btn off" aria-disabled="true">Next ›</span>'
-        desc = f"{p['heading']} ({p['ref']}) — Genesis Book {b['num']}: {b['name']}, a manga adaptation of the Bible."
+        desc = f"{p['heading']} ({p['ref']}) — {SN} Book {b['num']}: {b['name']}, a manga adaptation of the Bible."
         (d / f"{p['slug']}.html").write_text(f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(p['heading'])} · Genesis Book {b['num']} · Bible Manga</title>
+<title>{esc(p['heading'])} · {SN} Book {b['num']} · Bible Manga</title>
 <meta name="description" content="{esc(desc)}">
-<meta property="og:title" content="{esc(p['heading'])} · Genesis Book {b['num']}">
+<meta property="og:title" content="{esc(p['heading'])} · {SN} Book {b['num']}">
 <meta property="og:description" content="{esc(desc)}">
-<meta property="og:image" content="../../thumbs/{b['dir']}-{p['slug']}.jpg">
+<meta property="og:image" content="../../thumbs/{thumb(b, p)}">
 {links}
 {FONTS}
 <link rel="stylesheet" href="../../assets/site.css">
 <style>{p['style']}</style>
 </head>
 <body class="reader">
-{bar(['<a href="../../index.html">Genesis</a>', f'<a href="index.html">Book {b["num"]}</a>', f'<span aria-current="page">{esc(p["num"])}</span>'],
+{bar(crumbs0 + [f'<a href="index.html">Book {b["num"]}</a>', f'<span aria-current="page">{esc(p["num"])}</span>'],
      f'<div class="pager">{pn}{nn}</div>')}
 <main class="stage" id="stage"><h1 class="sr">{esc(p['heading'])} — {esc(p['ref'])}</h1><div class="sheet" id="sheet">{p['body']}</div></main>
 <footer class="foot"><span>{esc(p['ref'])} · {esc(p['heading'])}</span><span>Adapted from the American Standard Version (1901)</span></footer>
@@ -86,23 +112,23 @@ for bi, b in enumerate(BOOKS):
 </html>
 ''')
     # book index
-    cards = "\n".join(f'''<li><a class="card" href="{p['slug']}.html"><img src="../../thumbs/{b['dir']}-{p['slug']}.jpg" alt="{esc(p['heading'])}" width="380" height="540" loading="lazy"><span class="num">{esc(p['num'])}</span><span class="h">{esc(p['heading'])}</span><span class="ref">{esc(p['ref'])}</span></a></li>''' for p in P)
+    cards = "\n".join(f'''<li><a class="card" href="{p['slug']}.html"><img src="../../thumbs/{thumb(b, p)}" alt="{esc(p['heading'])}" width="380" height="540" loading="lazy"><span class="num">{esc(p['num'])}</span><span class="h">{esc(p['heading'])}</span><span class="ref">{esc(p['ref'])}</span></a></li>''' for p in P)
     (d / "index.html").write_text(f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis Book {b['num']}: {b['name']} · Bible Manga</title>
+<title>{SN} Book {b['num']}: {b['name']} · Bible Manga</title>
 <meta name="description" content="{esc(b['range'])}: {esc(b['blurb'])}">
-<meta property="og:image" content="../../thumbs/{b['dir']}-{P[0]['slug']}.jpg">
+<meta property="og:image" content="../../thumbs/{thumb(b, P[0])}">
 {FONTS}
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body class="index">
-{bar(['<a href="../../index.html">Genesis</a>', f'<span aria-current="page">Book {b["num"]}</span>'])}
+{bar(crumbs0 + [f'<span aria-current="page">Book {b["num"]}</span>'])}
 <main class="wrap">
   <section class="hero">
-    <p class="kicker">Genesis · Book {b['num']} · {esc(b['range'])}</p>
+    <p class="kicker">{SN} · Book {b['num']} · {esc(b['range'])}</p>
     <h1>{esc(b['name'])}</h1>
     <p class="lede">{esc(b['blurb'])}</p>
     <a class="cta" href="{P[0]['slug']}.html">Start reading ›</a>
@@ -112,47 +138,56 @@ for bi, b in enumerate(BOOKS):
 {cards}
   </ol>
 </main>
-<footer class="foot"><span>Bible Manga · Genesis</span><span>Adapted from the American Standard Version (1901)</span></footer>
+<footer class="foot"><span>Bible Manga · {SN}</span><span>Adapted from the American Standard Version (1901)</span></footer>
 </body>
 </html>
 ''')
 
 # home
-books = "\n".join(f'''<li><a class="book" href="genesis/{b['dir']}/index.html"><img src="thumbs/{b['dir']}-{b['pages'][0]['slug']}.jpg" alt="Genesis Book {b['num']} cover" width="380" height="540" loading="lazy"><span class="kicker">Book {b['num']} · {esc(b['range'])}</span><span class="h">{esc(b['name'])}</span><span class="ref">{esc(b['blurb'])}</span><span class="count">{len(b['pages'])-1} pages</span></a></li>''' for b in BOOKS)
-toc = "\n".join(f'''<li><h3><a href="genesis/{b['dir']}/index.html">Book {b['num']}: {esc(b['name'])}</a></h3><ol>''' + "".join(f'<li><a href="genesis/{b["dir"]}/{p["slug"]}.html"><span>{esc(p["num"])}</span> {esc(p["heading"])} <em>{esc(p["ref"])}</em></a></li>' for p in b["pages"]) + "</ol></li>" for b in BOOKS)
+def book_card(b):
+    S = b["series"]; p0 = b["pages"][0]
+    return f'''<li><a class="book" href="{S['id']}/{b['dir']}/index.html"><img src="thumbs/{thumb(b, p0)}" alt="{S['name']} Book {b['num']} cover" width="380" height="540" loading="lazy"><span class="kicker">Book {b['num']} · {esc(b['range'])}</span><span class="h">{esc(b['name'])}</span><span class="ref">{esc(b['blurb'])}</span><span class="count">{len(b['pages'])-1} pages</span></a></li>'''
+def toc_entry(b):
+    S = b["series"]
+    return (f'''<li><h3><a href="{S['id']}/{b['dir']}/index.html">{S['name']} · Book {b['num']}: {esc(b['name'])}</a></h3><ol>'''
+            + "".join(f'<li><a href="{S["id"]}/{b["dir"]}/{p["slug"]}.html"><span>{esc(p["num"])}</span> {esc(p["heading"])} <em>{esc(p["ref"])}</em></a></li>' for p in b["pages"]) + "</ol></li>")
+sections = "\n".join(f'''  <h2 class="sec" id="{S['id']}">{S['name']} <span lang="ja">{S['kanji']}</span></h2>
+  <p class="lede">{esc(S['lede'])}</p>
+  <ol class="grid books">
+{chr(10).join(book_card(b) for b in S['books'])}
+  </ol>''' for S in SERIES)
+toc = "\n".join(toc_entry(b) for b in FLAT)
+first = FLAT[0]
 (out / "index.html").write_text(f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis · Bible Manga</title>
-<meta name="description" content="The book of Genesis as a full-color manga, in the style of 1980s cyberpunk comics, adapted from the American Standard Version.">
-<meta property="og:image" content="thumbs/book-01-00-cover.jpg">
+<title>Bible Manga · Genesis and Exodus</title>
+<meta name="description" content="The Bible as a full-color manga, in the style of 1980s cyberpunk comics, adapted from the American Standard Version: Genesis and Exodus.">
+<meta property="og:image" content="thumbs/{thumb(first, first['pages'][0])}">
 {FONTS}
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body class="index home">
-{bar(['<span aria-current="page">Genesis</span>'])}
+{bar(['<span aria-current="page">Bible Manga</span>'])}
 <main class="wrap">
   <section class="hero">
-    <p class="kicker">Bible Manga · 創世記</p>
-    <h1>Genesis</h1>
-    <p class="lede">The first book of the Bible as a full-color manga — from the first light to Joseph in Egypt, in five books. Adapted from the American Standard Version (1901).</p>
-    <a class="cta" href="genesis/{BOOKS[0]['dir']}/{BOOKS[0]['pages'][0]['slug']}.html">Start at the beginning ›</a>
+    <p class="kicker">Bible Manga · {" · ".join(S["kanji"] for S in SERIES)}</p>
+    <h1>Bible Manga</h1>
+    <p class="lede">The Bible as a full-color manga — {", ".join(f"{S['name']} in {len(S['books'])} book{'s' if len(S['books']) > 1 else ''}" for S in SERIES)}. Adapted from the American Standard Version (1901).</p>
+    <a class="cta" href="{first['series']['id']}/{first['dir']}/{first['pages'][0]['slug']}.html">Start at the beginning ›</a>
   </section>
-  <h2 class="sec">Books</h2>
-  <ol class="grid books">
-{books}
-  </ol>
+{sections}
   <h2 class="sec">All pages</h2>
   <ol class="toc">
 {toc}
   </ol>
 </main>
-<footer class="foot"><span>Bible Manga · Genesis</span><span>Adapted from the American Standard Version (1901)</span></footer>
+<footer class="foot"><span>Bible Manga</span><span>Adapted from the American Standard Version (1901)</span></footer>
 </body>
 </html>
 ''')
 (out / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
 (out / ".nojekyll").write_text("")
-print("built", sum(len(b["pages"]) for b in BOOKS), "pages")
+print("built", sum(len(b["pages"]) for b in FLAT), "pages")

@@ -1,307 +1,381 @@
 {
-  "title": "Genesis — Bible Manga",
-  "books": [
+  "title": "Bible Manga",
+  "series": [
     {
-      "id": "book-01",
-      "title": "Book One: The Beginning",
-      "range": "Genesis 1–3",
-      "url": "genesis/book-01/",
-      "pages": [
+      "id": "genesis",
+      "title": "Genesis",
+      "books": [
         {
-          "title": "Cover",
-          "ref": "Genesis 1–3",
-          "url": "genesis/book-01/00-cover.html",
-          "thumb": "thumbs/book-01-00-cover.jpg"
+          "id": "book-01",
+          "title": "Book One: The Beginning",
+          "range": "Genesis 1–3",
+          "url": "genesis/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Genesis 1–3",
+              "url": "genesis/book-01/00-cover.html",
+              "thumb": "thumbs/book-01-00-cover.jpg"
+            },
+            {
+              "title": "Let There Be Light",
+              "ref": "Genesis 1:1–3",
+              "url": "genesis/book-01/01-let-there-be-light.html",
+              "thumb": "thumbs/book-01-01-let-there-be-light.jpg"
+            },
+            {
+              "title": "Day and Firmament",
+              "ref": "Genesis 1:4–8",
+              "url": "genesis/book-01/02-day-firmament.html",
+              "thumb": "thumbs/book-01-02-day-firmament.jpg"
+            },
+            {
+              "title": "Land, Seed, Lights",
+              "ref": "Genesis 1:9–19",
+              "url": "genesis/book-01/03-land-seed-lights.html",
+              "thumb": "thumbs/book-01-03-land-seed-lights.jpg"
+            },
+            {
+              "title": "Living Things and Man",
+              "ref": "Genesis 1:20 – 2:7",
+              "url": "genesis/book-01/04-living-things-man.html",
+              "thumb": "thumbs/book-01-04-living-things-man.jpg"
+            },
+            {
+              "title": "Rest and Eden",
+              "ref": "Genesis 2:2–17",
+              "url": "genesis/book-01/05-rest-eden.html",
+              "thumb": "thumbs/book-01-05-rest-eden.jpg"
+            },
+            {
+              "title": "The Woman and the Serpent",
+              "ref": "Genesis 2:21 – 3:5",
+              "url": "genesis/book-01/06-the-serpent.html",
+              "thumb": "thumbs/book-01-06-the-serpent.jpg"
+            },
+            {
+              "title": "The Fall",
+              "ref": "Genesis 3:6–24",
+              "url": "genesis/book-01/07-the-fall.html",
+              "thumb": "thumbs/book-01-07-the-fall.jpg"
+            }
+          ]
         },
         {
-          "title": "Let There Be Light",
-          "ref": "Genesis 1:1–3",
-          "url": "genesis/book-01/01-let-there-be-light.html",
-          "thumb": "thumbs/book-01-01-let-there-be-light.jpg"
+          "id": "book-02",
+          "title": "Book Two: The Flood",
+          "range": "Genesis 4–9",
+          "url": "genesis/book-02/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Genesis 4–9",
+              "url": "genesis/book-02/00-cover.html",
+              "thumb": "thumbs/book-02-00-cover.jpg"
+            },
+            {
+              "title": "The Offerings",
+              "ref": "Genesis 4:2–7",
+              "url": "genesis/book-02/01-the-offerings.html",
+              "thumb": "thumbs/book-02-01-the-offerings.jpg"
+            },
+            {
+              "title": "In the Field",
+              "ref": "Genesis 4:8–11",
+              "url": "genesis/book-02/02-in-the-field.html",
+              "thumb": "thumbs/book-02-02-in-the-field.jpg"
+            },
+            {
+              "title": "The Mark of Cain",
+              "ref": "Genesis 4:12–17",
+              "url": "genesis/book-02/03-the-mark.html",
+              "thumb": "thumbs/book-02-03-the-mark.jpg"
+            },
+            {
+              "title": "The Generations",
+              "ref": "Genesis 5 – 6:8",
+              "url": "genesis/book-02/04-the-generations.html",
+              "thumb": "thumbs/book-02-04-the-generations.jpg"
+            },
+            {
+              "title": "The Ark",
+              "ref": "Genesis 6:14 – 7:16",
+              "url": "genesis/book-02/05-the-ark.html",
+              "thumb": "thumbs/book-02-05-the-ark.jpg"
+            },
+            {
+              "title": "The Deluge",
+              "ref": "Genesis 7:11–23",
+              "url": "genesis/book-02/06-the-deluge.html",
+              "thumb": "thumbs/book-02-06-the-deluge.jpg"
+            },
+            {
+              "title": "The Raven and the Dove",
+              "ref": "Genesis 8",
+              "url": "genesis/book-02/07-raven-dove.html",
+              "thumb": "thumbs/book-02-07-raven-dove.jpg"
+            },
+            {
+              "title": "The Covenant",
+              "ref": "Genesis 8:20 – 9:17",
+              "url": "genesis/book-02/08-the-covenant.html",
+              "thumb": "thumbs/book-02-08-the-covenant.jpg"
+            }
+          ]
         },
         {
-          "title": "Day and Firmament",
-          "ref": "Genesis 1:4–8",
-          "url": "genesis/book-01/02-day-firmament.html",
-          "thumb": "thumbs/book-01-02-day-firmament.jpg"
+          "id": "book-03",
+          "title": "Book Three: The Promise",
+          "range": "Genesis 11–22",
+          "url": "genesis/book-03/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Genesis 11–22",
+              "url": "genesis/book-03/00-cover.html",
+              "thumb": "thumbs/book-03-00-cover.jpg"
+            },
+            {
+              "title": "Brick for Stone",
+              "ref": "Genesis 11:1–4",
+              "url": "genesis/book-03/01-brick-for-stone.html",
+              "thumb": "thumbs/book-03-01-brick-for-stone.jpg"
+            },
+            {
+              "title": "Babel",
+              "ref": "Genesis 11:5–9",
+              "url": "genesis/book-03/02-babel.html",
+              "thumb": "thumbs/book-03-02-babel.jpg"
+            },
+            {
+              "title": "The Call of Abram",
+              "ref": "Genesis 12:1–7",
+              "url": "genesis/book-03/03-the-call.html",
+              "thumb": "thumbs/book-03-03-the-call.jpg"
+            },
+            {
+              "title": "Number the Stars",
+              "ref": "Genesis 15:5–6",
+              "url": "genesis/book-03/04-number-the-stars.html",
+              "thumb": "thumbs/book-03-04-number-the-stars.jpg"
+            },
+            {
+              "title": "Sarah Laughed",
+              "ref": "Genesis 18 – 21",
+              "url": "genesis/book-03/05-sarah-laughed.html",
+              "thumb": "thumbs/book-03-05-sarah-laughed.jpg"
+            },
+            {
+              "title": "Fire from Heaven",
+              "ref": "Genesis 19:24–28",
+              "url": "genesis/book-03/06-fire-from-heaven.html",
+              "thumb": "thumbs/book-03-06-fire-from-heaven.jpg"
+            },
+            {
+              "title": "The Way to Moriah",
+              "ref": "Genesis 22:1–8",
+              "url": "genesis/book-03/07-the-way-to-moriah.html",
+              "thumb": "thumbs/book-03-07-the-way-to-moriah.jpg"
+            },
+            {
+              "title": "Jehovah-jireh",
+              "ref": "Genesis 22:9–18",
+              "url": "genesis/book-03/08-jehovah-jireh.html",
+              "thumb": "thumbs/book-03-08-jehovah-jireh.jpg"
+            }
+          ]
         },
         {
-          "title": "Land, Seed, Lights",
-          "ref": "Genesis 1:9–19",
-          "url": "genesis/book-01/03-land-seed-lights.html",
-          "thumb": "thumbs/book-01-03-land-seed-lights.jpg"
+          "id": "book-04",
+          "title": "Book Four: The Ladder",
+          "range": "Genesis 25–33",
+          "url": "genesis/book-04/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Genesis 25–33",
+              "url": "genesis/book-04/00-cover.html",
+              "thumb": "thumbs/book-04-00-cover.jpg"
+            },
+            {
+              "title": "The Twins",
+              "ref": "Genesis 25:24–27",
+              "url": "genesis/book-04/01-the-twins.html",
+              "thumb": "thumbs/book-04-01-the-twins.jpg"
+            },
+            {
+              "title": "The Red Pottage",
+              "ref": "Genesis 25:29–34",
+              "url": "genesis/book-04/02-the-red-pottage.html",
+              "thumb": "thumbs/book-04-02-the-red-pottage.jpg"
+            },
+            {
+              "title": "The Stolen Blessing",
+              "ref": "Genesis 27:1–29",
+              "url": "genesis/book-04/03-the-stolen-blessing.html",
+              "thumb": "thumbs/book-04-03-the-stolen-blessing.jpg"
+            },
+            {
+              "title": "A Bitter Cry",
+              "ref": "Genesis 27:34–43",
+              "url": "genesis/book-04/04-a-bitter-cry.html",
+              "thumb": "thumbs/book-04-04-a-bitter-cry.jpg"
+            },
+            {
+              "title": "The Ladder at Bethel",
+              "ref": "Genesis 28:10–19",
+              "url": "genesis/book-04/05-the-ladder-at-bethel.html",
+              "thumb": "thumbs/book-04-05-the-ladder-at-bethel.jpg"
+            },
+            {
+              "title": "Rachel",
+              "ref": "Genesis 29:9–20",
+              "url": "genesis/book-04/06-rachel.html",
+              "thumb": "thumbs/book-04-06-rachel.jpg"
+            },
+            {
+              "title": "Wrestling at Peniel",
+              "ref": "Genesis 32:24–31",
+              "url": "genesis/book-04/07-wrestling-at-peniel.html",
+              "thumb": "thumbs/book-04-07-wrestling-at-peniel.jpg"
+            },
+            {
+              "title": "The Brothers Meet",
+              "ref": "Genesis 33:1–4",
+              "url": "genesis/book-04/08-the-brothers-meet.html",
+              "thumb": "thumbs/book-04-08-the-brothers-meet.jpg"
+            }
+          ]
         },
         {
-          "title": "Living Things and Man",
-          "ref": "Genesis 1:20 – 2:7",
-          "url": "genesis/book-01/04-living-things-man.html",
-          "thumb": "thumbs/book-01-04-living-things-man.jpg"
-        },
-        {
-          "title": "Rest and Eden",
-          "ref": "Genesis 2:2–17",
-          "url": "genesis/book-01/05-rest-eden.html",
-          "thumb": "thumbs/book-01-05-rest-eden.jpg"
-        },
-        {
-          "title": "The Woman and the Serpent",
-          "ref": "Genesis 2:21 – 3:5",
-          "url": "genesis/book-01/06-the-serpent.html",
-          "thumb": "thumbs/book-01-06-the-serpent.jpg"
-        },
-        {
-          "title": "The Fall",
-          "ref": "Genesis 3:6–24",
-          "url": "genesis/book-01/07-the-fall.html",
-          "thumb": "thumbs/book-01-07-the-fall.jpg"
+          "id": "book-05",
+          "title": "Book Five: The Dreamer",
+          "range": "Genesis 37–50",
+          "url": "genesis/book-05/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Genesis 37–50",
+              "url": "genesis/book-05/00-cover.html",
+              "thumb": "thumbs/book-05-00-cover.jpg"
+            },
+            {
+              "title": "The Coat and the Dreams",
+              "ref": "Genesis 37:3–9",
+              "url": "genesis/book-05/01-the-coat-and-the-dreams.html",
+              "thumb": "thumbs/book-05-01-the-coat-and-the-dreams.jpg"
+            },
+            {
+              "title": "The Pit",
+              "ref": "Genesis 37:18–28",
+              "url": "genesis/book-05/02-the-pit.html",
+              "thumb": "thumbs/book-05-02-the-pit.jpg"
+            },
+            {
+              "title": "Jacob's Grief",
+              "ref": "Genesis 37:31–35",
+              "url": "genesis/book-05/03-jacob-s-grief.html",
+              "thumb": "thumbs/book-05-03-jacob-s-grief.jpg"
+            },
+            {
+              "title": "Egypt and the Prison",
+              "ref": "Genesis 39 – 40",
+              "url": "genesis/book-05/04-egypt-and-the-prison.html",
+              "thumb": "thumbs/book-05-04-egypt-and-the-prison.jpg"
+            },
+            {
+              "title": "Pharaoh's Dream",
+              "ref": "Genesis 41:1–7",
+              "url": "genesis/book-05/05-pharaoh-s-dream.html",
+              "thumb": "thumbs/book-05-05-pharaoh-s-dream.jpg"
+            },
+            {
+              "title": "Before Pharaoh",
+              "ref": "Genesis 41:14–42",
+              "url": "genesis/book-05/06-before-pharaoh.html",
+              "thumb": "thumbs/book-05-06-before-pharaoh.jpg"
+            },
+            {
+              "title": "Grain as the Sand",
+              "ref": "Genesis 41:47 – 42:9",
+              "url": "genesis/book-05/07-grain-as-the-sand.html",
+              "thumb": "thumbs/book-05-07-grain-as-the-sand.jpg"
+            },
+            {
+              "title": "I Am Joseph",
+              "ref": "Genesis 45:1–4; 50:20",
+              "url": "genesis/book-05/08-i-am-joseph.html",
+              "thumb": "thumbs/book-05-08-i-am-joseph.jpg"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "book-02",
-      "title": "Book Two: The Flood",
-      "range": "Genesis 4–9",
-      "url": "genesis/book-02/",
-      "pages": [
+      "id": "exodus",
+      "title": "Exodus",
+      "books": [
         {
-          "title": "Cover",
-          "ref": "Genesis 4–9",
-          "url": "genesis/book-02/00-cover.html",
-          "thumb": "thumbs/book-02-00-cover.jpg"
-        },
-        {
-          "title": "The Offerings",
-          "ref": "Genesis 4:2–7",
-          "url": "genesis/book-02/01-the-offerings.html",
-          "thumb": "thumbs/book-02-01-the-offerings.jpg"
-        },
-        {
-          "title": "In the Field",
-          "ref": "Genesis 4:8–11",
-          "url": "genesis/book-02/02-in-the-field.html",
-          "thumb": "thumbs/book-02-02-in-the-field.jpg"
-        },
-        {
-          "title": "The Mark of Cain",
-          "ref": "Genesis 4:12–17",
-          "url": "genesis/book-02/03-the-mark.html",
-          "thumb": "thumbs/book-02-03-the-mark.jpg"
-        },
-        {
-          "title": "The Generations",
-          "ref": "Genesis 5 – 6:8",
-          "url": "genesis/book-02/04-the-generations.html",
-          "thumb": "thumbs/book-02-04-the-generations.jpg"
-        },
-        {
-          "title": "The Ark",
-          "ref": "Genesis 6:14 – 7:16",
-          "url": "genesis/book-02/05-the-ark.html",
-          "thumb": "thumbs/book-02-05-the-ark.jpg"
-        },
-        {
-          "title": "The Deluge",
-          "ref": "Genesis 7:11–23",
-          "url": "genesis/book-02/06-the-deluge.html",
-          "thumb": "thumbs/book-02-06-the-deluge.jpg"
-        },
-        {
-          "title": "The Raven and the Dove",
-          "ref": "Genesis 8",
-          "url": "genesis/book-02/07-raven-dove.html",
-          "thumb": "thumbs/book-02-07-raven-dove.jpg"
-        },
-        {
-          "title": "The Covenant",
-          "ref": "Genesis 8:20 – 9:17",
-          "url": "genesis/book-02/08-the-covenant.html",
-          "thumb": "thumbs/book-02-08-the-covenant.jpg"
-        }
-      ]
-    },
-    {
-      "id": "book-03",
-      "title": "Book Three: The Promise",
-      "range": "Genesis 11–22",
-      "url": "genesis/book-03/",
-      "pages": [
-        {
-          "title": "Cover",
-          "ref": "Genesis 11–22",
-          "url": "genesis/book-03/00-cover.html",
-          "thumb": "thumbs/book-03-00-cover.jpg"
-        },
-        {
-          "title": "Brick for Stone",
-          "ref": "Genesis 11:1–4",
-          "url": "genesis/book-03/01-brick-for-stone.html",
-          "thumb": "thumbs/book-03-01-brick-for-stone.jpg"
-        },
-        {
-          "title": "Babel",
-          "ref": "Genesis 11:5–9",
-          "url": "genesis/book-03/02-babel.html",
-          "thumb": "thumbs/book-03-02-babel.jpg"
-        },
-        {
-          "title": "The Call of Abram",
-          "ref": "Genesis 12:1–7",
-          "url": "genesis/book-03/03-the-call.html",
-          "thumb": "thumbs/book-03-03-the-call.jpg"
-        },
-        {
-          "title": "Number the Stars",
-          "ref": "Genesis 15:5–6",
-          "url": "genesis/book-03/04-number-the-stars.html",
-          "thumb": "thumbs/book-03-04-number-the-stars.jpg"
-        },
-        {
-          "title": "Sarah Laughed",
-          "ref": "Genesis 18 – 21",
-          "url": "genesis/book-03/05-sarah-laughed.html",
-          "thumb": "thumbs/book-03-05-sarah-laughed.jpg"
-        },
-        {
-          "title": "Fire from Heaven",
-          "ref": "Genesis 19:24–28",
-          "url": "genesis/book-03/06-fire-from-heaven.html",
-          "thumb": "thumbs/book-03-06-fire-from-heaven.jpg"
-        },
-        {
-          "title": "The Way to Moriah",
-          "ref": "Genesis 22:1–8",
-          "url": "genesis/book-03/07-the-way-to-moriah.html",
-          "thumb": "thumbs/book-03-07-the-way-to-moriah.jpg"
-        },
-        {
-          "title": "Jehovah-jireh",
-          "ref": "Genesis 22:9–18",
-          "url": "genesis/book-03/08-jehovah-jireh.html",
-          "thumb": "thumbs/book-03-08-jehovah-jireh.jpg"
-        }
-      ]
-    },
-    {
-      "id": "book-04",
-      "title": "Book Four: The Ladder",
-      "range": "Genesis 25–33",
-      "url": "genesis/book-04/",
-      "pages": [
-        {
-          "title": "Cover",
-          "ref": "Genesis 25–33",
-          "url": "genesis/book-04/00-cover.html",
-          "thumb": "thumbs/book-04-00-cover.jpg"
-        },
-        {
-          "title": "The Twins",
-          "ref": "Genesis 25:24–27",
-          "url": "genesis/book-04/01-the-twins.html",
-          "thumb": "thumbs/book-04-01-the-twins.jpg"
-        },
-        {
-          "title": "The Red Pottage",
-          "ref": "Genesis 25:29–34",
-          "url": "genesis/book-04/02-the-red-pottage.html",
-          "thumb": "thumbs/book-04-02-the-red-pottage.jpg"
-        },
-        {
-          "title": "The Stolen Blessing",
-          "ref": "Genesis 27:1–29",
-          "url": "genesis/book-04/03-the-stolen-blessing.html",
-          "thumb": "thumbs/book-04-03-the-stolen-blessing.jpg"
-        },
-        {
-          "title": "A Bitter Cry",
-          "ref": "Genesis 27:34–43",
-          "url": "genesis/book-04/04-a-bitter-cry.html",
-          "thumb": "thumbs/book-04-04-a-bitter-cry.jpg"
-        },
-        {
-          "title": "The Ladder at Bethel",
-          "ref": "Genesis 28:10–19",
-          "url": "genesis/book-04/05-the-ladder-at-bethel.html",
-          "thumb": "thumbs/book-04-05-the-ladder-at-bethel.jpg"
-        },
-        {
-          "title": "Rachel",
-          "ref": "Genesis 29:9–20",
-          "url": "genesis/book-04/06-rachel.html",
-          "thumb": "thumbs/book-04-06-rachel.jpg"
-        },
-        {
-          "title": "Wrestling at Peniel",
-          "ref": "Genesis 32:24–31",
-          "url": "genesis/book-04/07-wrestling-at-peniel.html",
-          "thumb": "thumbs/book-04-07-wrestling-at-peniel.jpg"
-        },
-        {
-          "title": "The Brothers Meet",
-          "ref": "Genesis 33:1–4",
-          "url": "genesis/book-04/08-the-brothers-meet.html",
-          "thumb": "thumbs/book-04-08-the-brothers-meet.jpg"
-        }
-      ]
-    },
-    {
-      "id": "book-05",
-      "title": "Book Five: The Dreamer",
-      "range": "Genesis 37–50",
-      "url": "genesis/book-05/",
-      "pages": [
-        {
-          "title": "Cover",
-          "ref": "Genesis 37–50",
-          "url": "genesis/book-05/00-cover.html",
-          "thumb": "thumbs/book-05-00-cover.jpg"
-        },
-        {
-          "title": "The Coat and the Dreams",
-          "ref": "Genesis 37:3–9",
-          "url": "genesis/book-05/01-the-coat-and-the-dreams.html",
-          "thumb": "thumbs/book-05-01-the-coat-and-the-dreams.jpg"
-        },
-        {
-          "title": "The Pit",
-          "ref": "Genesis 37:18–28",
-          "url": "genesis/book-05/02-the-pit.html",
-          "thumb": "thumbs/book-05-02-the-pit.jpg"
-        },
-        {
-          "title": "Jacob's Grief",
-          "ref": "Genesis 37:31–35",
-          "url": "genesis/book-05/03-jacob-s-grief.html",
-          "thumb": "thumbs/book-05-03-jacob-s-grief.jpg"
-        },
-        {
-          "title": "Egypt and the Prison",
-          "ref": "Genesis 39 – 40",
-          "url": "genesis/book-05/04-egypt-and-the-prison.html",
-          "thumb": "thumbs/book-05-04-egypt-and-the-prison.jpg"
-        },
-        {
-          "title": "Pharaoh's Dream",
-          "ref": "Genesis 41:1–7",
-          "url": "genesis/book-05/05-pharaoh-s-dream.html",
-          "thumb": "thumbs/book-05-05-pharaoh-s-dream.jpg"
-        },
-        {
-          "title": "Before Pharaoh",
-          "ref": "Genesis 41:14–42",
-          "url": "genesis/book-05/06-before-pharaoh.html",
-          "thumb": "thumbs/book-05-06-before-pharaoh.jpg"
-        },
-        {
-          "title": "Grain as the Sand",
-          "ref": "Genesis 41:47 – 42:9",
-          "url": "genesis/book-05/07-grain-as-the-sand.html",
-          "thumb": "thumbs/book-05-07-grain-as-the-sand.jpg"
-        },
-        {
-          "title": "I Am Joseph",
-          "ref": "Genesis 45:1–4; 50:20",
-          "url": "genesis/book-05/08-i-am-joseph.html",
-          "thumb": "thumbs/book-05-08-i-am-joseph.jpg"
+          "id": "book-01",
+          "title": "Book One: The Bush That Burned",
+          "range": "Exodus 1–4",
+          "url": "exodus/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Exodus 1–4",
+              "url": "exodus/book-01/00-cover.html",
+              "thumb": "thumbs/exodus-book-01-00-cover.jpg"
+            },
+            {
+              "title": "A New King",
+              "ref": "Exodus 1:8–14",
+              "url": "exodus/book-01/01-a-new-king.html",
+              "thumb": "thumbs/exodus-book-01-01-a-new-king.jpg"
+            },
+            {
+              "title": "The Ark of Bulrushes",
+              "ref": "Exodus 1:22–2:4",
+              "url": "exodus/book-01/02-the-ark-of-bulrushes.html",
+              "thumb": "thumbs/exodus-book-01-02-the-ark-of-bulrushes.jpg"
+            },
+            {
+              "title": "Drawn Out of the Water",
+              "ref": "Exodus 2:5–10",
+              "url": "exodus/book-01/03-drawn-out-of-the-water.html",
+              "thumb": "thumbs/exodus-book-01-03-drawn-out-of-the-water.jpg"
+            },
+            {
+              "title": "The Egyptian",
+              "ref": "Exodus 2:11–15",
+              "url": "exodus/book-01/04-the-egyptian.html",
+              "thumb": "thumbs/exodus-book-01-04-the-egyptian.jpg"
+            },
+            {
+              "title": "The Well in Midian",
+              "ref": "Exodus 2:16–25",
+              "url": "exodus/book-01/05-the-well-in-midian.html",
+              "thumb": "thumbs/exodus-book-01-05-the-well-in-midian.jpg"
+            },
+            {
+              "title": "The Bush",
+              "ref": "Exodus 3:1–5",
+              "url": "exodus/book-01/06-the-bush.html",
+              "thumb": "thumbs/exodus-book-01-06-the-bush.jpg"
+            },
+            {
+              "title": "I AM",
+              "ref": "Exodus 3:6–14",
+              "url": "exodus/book-01/07-i-am.html",
+              "thumb": "thumbs/exodus-book-01-07-i-am.jpg"
+            },
+            {
+              "title": "The Rod",
+              "ref": "Exodus 4:1–17",
+              "url": "exodus/book-01/08-the-rod.html",
+              "thumb": "thumbs/exodus-book-01-08-the-rod.jpg"
+            }
+          ]
         }
       ]
     }
