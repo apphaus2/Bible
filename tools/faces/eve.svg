@@ -1,0 +1,27 @@
+<g id="EVE">
+  <path d="M120 120 C 150 60 220 70 230 110 C 234 130 236 145 236 158 C 236 164 232 168 231 172 C 238 188 248 204 254 216 C 256 222 250 226 242 227 C 244 230 240 230 240 232 C 241 236 243 240 244 244 C 242 248 238 250 236 252 C 240 254 242 256 242 260 C 240 266 234 268 232 272 C 234 280 237 288 236 293 C 234 300 226 304 220 305 C 216 322 214 344 214 380 L 140 380 C 144 340 148 310 150 280 L 120 200 Z" fill="#E3B08A"></path>
+  <path d="M168 254 C 182 278 200 292 222 304 C 216 320 214 344 214 380 L 180 380 C 182 340 180 300 168 278 Z" fill="#B97A58"></path>
+  <path d="M196 160 C 212 156 228 160 233 172 C 221 167 209 166 196 168 Z" fill="#B97A58"></path>
+  <path d="M206 204 C 212 214 218 222 226 228 C 218 226 210 218 206 204 Z" fill="#B97A58" opacity="0.7"></path>
+  <path d="M230 110 C 234 130 236 145 236 158 C 236 164 232 168 231 172 C 238 188 248 204 254 216 C 256 222 250 226 242 227 C 244 230 240 230 240 232 C 241 236 243 240 244 244 C 242 248 238 250 236 252 C 240 254 242 256 242 260 C 240 266 234 268 232 272 C 234 280 237 288 236 293 C 234 300 226 304 220 305 C 216 322 214 344 214 380" fill="none" stroke="#0D0D0F" stroke-width="2.6" stroke-linejoin="round"></path>
+  <path d="M150 280 C 148 310 144 340 140 380" fill="none" stroke="#0D0D0F" stroke-width="2.4"></path>
+  <path d="M168 254 C 182 278 200 292 220 304" fill="none" stroke="#0D0D0F" stroke-width="1.6" opacity="0.55"></path>
+  <path d="M234 106 C 240 92 238 70 224 54 C 208 32 170 24 140 34 C 104 46 84 80 82 122 C 80 172 88 222 90 272 C 92 320 98 350 92 384 L 158 384 C 154 344 150 304 152 272 C 150 232 146 202 150 182 C 154 152 166 132 184 122 C 200 112 216 108 234 106 Z" fill="#3A1E14" stroke="#0D0D0F" stroke-width="2" stroke-linejoin="round"></path>
+  <g fill="none" stroke="#7A4A30" stroke-width="1.6" stroke-linecap="round"><path d="M218 58 C 196 68 184 88 178 112"></path><path d="M180 40 C 158 54 146 80 140 112"></path><path d="M130 50 C 112 80 106 120 108 160"></path><path d="M104 170 C 106 220 112 270 116 330"></path><path d="M126 200 C 128 250 132 300 132 370"></path></g>
+  <path d="M150 182 C 162 170 180 176 180 196 C 180 214 171 227 160 231 C 153 233 149 226 152 220 C 156 210 150 200 150 182 Z" fill="#E3B08A" stroke="#0D0D0F" stroke-width="2"></path>
+  <path d="M160 190 C 168 186 172 194 168 204 C 166 210 162 212 162 218" fill="none" stroke="#B97A58" stroke-width="2.2" stroke-linecap="round"></path>
+  <path d="M209 171 C 215 165 223 165 229 171 C 223 175 215 175 209 171 Z" fill="#ffffff" stroke="#0D0D0F" stroke-width="1"></path>
+  <ellipse cx="224" cy="170.5" rx="3" ry="4" fill="#2A1A10"></ellipse>
+  <circle cx="225" cy="169" r="0.9" fill="#ffffff"></circle>
+  <path d="M206 168 C 214 162 224 161 231 170" fill="none" stroke="#0D0D0F" stroke-width="2.6" stroke-linecap="round"></path>
+  <path d="M212 176 C 218 178 224 178 228 175" fill="none" stroke="#B97A58" stroke-width="1.2"></path>
+  <path d="M202 152 C 214 145 226 146 235 153" fill="none" stroke="#3A1E14" stroke-width="2.4" stroke-linecap="round"></path>
+  <g stroke="#0D0D0F" stroke-width="1.6" stroke-linecap="round"><path d="M229 169 L 235 164"></path><path d="M226 166 L 230 160"></path><path d="M222 165 L 224 159"></path></g>
+  <path d="M240 221 C 244 222 246 225 243 227" fill="none" stroke="#0D0D0F" stroke-width="1.6" stroke-linecap="round"></path>
+  <path d="M244 244 C 241 247 238 249 236 252 C 240 254 242 256 242 260 C 238 263 233 262 229 258 C 232 255 232 249 236 246 C 238 244 241 243 244 244 Z" fill="#B5534A"></path>
+  <path d="M236 252 L 226 251" stroke="#0D0D0F" stroke-width="1.8" stroke-linecap="round"></path>
+  <path d="M212 336 C 206 332 200 332 194 336" fill="none" stroke="#0D0D0F" stroke-width="1.6" opacity="0.5"></path>
+  <path d="M240 212 C 246 214 249 216 250 214" fill="none" stroke="#F6D2B0" stroke-width="2" stroke-linecap="round"></path>
+  <path d="M228 118 C 232 132 234 142 234 152" fill="none" stroke="#F6D2B0" stroke-width="2.2" stroke-linecap="round"></path>
+  <path d="M236 284 C 238 290 238 294 236 298" fill="none" stroke="#F6D2B0" stroke-width="2" stroke-linecap="round"></path>
+</g>

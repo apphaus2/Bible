@@ -4,10 +4,11 @@ Context for Claude (and humans) working in this repo.
 
 ## What this is
 
-A manga adaptation of the Bible, book by book, drawn as vector pages in a dense
-black-and-white 1980s cyberpunk-manga style. Genesis is first.
+A manga adaptation of the Bible, book by book, drawn as full-color vector pages in a
+1980s cyberpunk-manga style. Genesis is first.
 
 - **Book One — Genesis 1–3** (Creation → Eden → the Fall): done, `manga/genesis/book-01/`
+- **Book Two — Genesis 4–9** (Cain and Abel → the Flood → the rainbow): done, `manga/genesis/book-02/`
 - Live canvas (private Claude Design artifact): https://claude.ai/artifact/UGXs4gFgPqfSp92tykHmT3
 
 ## Repo layout
@@ -15,13 +16,20 @@ black-and-white 1980s cyberpunk-manga style. Genesis is first.
 ```
 manga/
   genesis/
-    book-01/          Genesis 1–3
-      canvas.json     canvas index: artboard positions, order, titles
-      Main.dc.html    00 · Cover
-      P01-…P07-….dc.html   one file per manga page
+    canvas.json       the live canvas index (both books; Book Two rows start at y = 2800)
+    book-01/          Genesis 1–3: Main.dc.html (cover), P01…P07, canvas.json (this book only)
+    book-02/          Genesis 4–9: B2-Cover, B2-P01…B2-P08, canvas.json (this book only)
+tools/
+  faces.py            figure/face kit: build(paths) swaps __MAN__, __WOMAN__, __HAIR__,
+                      __TUNIC__, __LIEB__/__LIEA__, __FACE_*__ tokens in page files
+  faces/adam.svg, faces/eve.svg   shaded profile close-ups (base art for face variants)
+  figures.json        silhouette paths (man, woman, hair, reclining body/arm)
+  snake.py            generates a tapered, scaled serpent from a centerline
+  shot.js             Playwright render of a .dc.html to PNG, for checking a page
 ```
 
 New books go in `manga/<book>/book-NN/` and keep the same file conventions.
+File stems must be unique across the whole canvas, so Book Two pages are prefixed `B2-` (Book Three: `B3-`).
 
 ## File format
 
@@ -42,7 +50,7 @@ Design canvas:
 - Give SVG `id`s a page prefix (`dk`, `fm`, `ld`, `lf`, `ed`, `sv`, `ex`, …) so
   `<defs>`/`<use>` never collide.
 
-`canvas.json`: pages are 760×1080, in rows of 4. Frames are 80 px apart in a row
+`canvas.json`: pages are 760×1080, in rows of 4 or 5. Frames are 80 px apart in a row
 and 120 px apart between rows (y = 0, 1200, 2400…). Every page needs a `boards`
 entry and an `order` slot. Keep `createdOnFiles` unchanged.
 
@@ -55,12 +63,28 @@ screentone, and big cinematic splash panels.
 pill or capsule imagery, Neo-Tokyo, or the white-dome explosion. Use the
 general style only, not a recreation of that work.
 
+**Full color**, in the style of 80s airbrushed manga coloring: black ink linework
+over flat, saturated fills and smooth gradients. Gutters, captions and speech
+balloons stay cream and white so the text reads cleanly.
+
 | Token | Value | Use |
 |---|---|---|
-| Paper | `#F3EFE6` | page ground, captions |
-| Ink | `#0D0D0F` | lines, black panels |
-| Red | `#D7261E` | sparingly: day stamps, forbidden fruit, serpent eye, flaming sword |
-| Muted | `#8A867E` / `#6B6862` | verse refs, page numbers |
+| Paper | `#F3EFE6` | page gutter, captions |
+| Ink | `#0D0D0F` | linework, borders, speed lines |
+| Red | `#D7261E` | day stamps, forbidden fruit, serpent eye, flaming sword |
+| Night | `#0B0B2A` → `#1E1650` → `#5B2470` | void, cosmos, God's-voice panels |
+| Voice box | `#12113A` fill, `#FFD23F` gold inner rule | all of God's words |
+| Light | `#FFE680` → `#FFC14D` → `#FF6A2A` | creation light, sun, glow |
+| Sea | `#8FD0E2` sky, `#0F4C68` water, `#6FD3E0` crests | waters, firmament |
+| Earth | `#4A2418` rock, `#C8682E` lit rock, `#F2733F` dust sky | land rising |
+| Life | `#2E6B3A` / `#1F4A34` greens, `#9CCB5E` tree of knowledge | plants, Eden |
+| Serpent | `#1B3A12` body, `#C9E265` bands and outline, `#0B2A1E` jungle | serpent pages |
+| Skin/people | `#3A2230` silhouettes and hands, `#F4C9A0` skin close-ups | humans |
+| Exile | `#1A0F3A` → `#4A1D55` sky, gold `#FFD23F` rim light | cherubim, gate |
+
+Each panel gets its own background gradient (an inline `background:`). Use
+SVG fills for shapes and keep black lines on top. A gradient goes last in a
+layered `background`, under any conic speed lines.
 
 **Fonts:** Anton (God's voice, titles), IBM Plex Mono (narration captions, labels),
 Archivo Narrow 700 (speech balloons), Noto Sans JP 900 (sound effects).
@@ -72,21 +96,33 @@ Archivo Narrow 700 (speech balloons), Noto Sans JP 900 (sound effects).
 **Recurring components** (copy the inline styles from existing pages):
 - **Narration caption:** a paper box with a 2 px ink border, mono 600 at 11 px,
   uppercase.
-- **Voice of God:** a black box with an inner paper rule
-  (`box-shadow: inset 0 0 0 4px ink, inset 0 0 0 5.5px paper`), Anton, uppercase.
-  No speaker is ever drawn.
+- **Voice of God:** an indigo `#12113A` box with an inner gold rule
+  (`box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F`), Anton,
+  uppercase. No speaker is ever drawn.
 - **Speech balloon:** a white ellipse (`border-radius:50%`) with a 2.5 px border
   and an SVG triangle tail placed *before* the balloon in the DOM. The serpent
   gets a black balloon with a double paper outline.
 - **SFX:** Japanese katakana with a romanized tag underneath, e.g. ドン / DOOOM,
   ゴゴゴ / GOGOGO.
-- **Day stamp:** a red-outlined rotated box with kanji over English
-  (第一日 / THE FIRST DAY).
+- **Day / chapter stamp:** a red-outlined rotated box with kanji over English
+  (第一日 / THE FIRST DAY in Book One, 第四章 / CHAPTER 4 from Book Two on).
 - **Verse ref:** tiny mono `GEN 1:3` in a corner.
 - **Speed lines:** layered `repeating-conic-gradient` (focus) or thin tapered
   SVG wedges (horizontal). Screentone is a `radial-gradient` dot grid.
-- **People:** a shared standing-silhouette `<path>` (feet at 0,0, ~199 units
-  tall). Eve adds a hair path. Rotate −90° for a reclining figure.
+- **People.** The goal is realistic, well-proportioned figures, not cut-outs.
+  - **Distant figures:** the silhouettes in `tools/figures.json` (feet at 0,0,
+    about 200 units tall, legs about half the height, gaps between arms and
+    body). Use the separate WOMAN body for women, and the HAIR path as its own
+    `<use>`, never merged into the body path (merged subpaths render hollow).
+    From Genesis 3:21 on, people wear the `__TUNIC__` coat of skins. Use the
+    LIE_BODY + LIE_ARM side view for lying figures; never rotate a standing one.
+  - **Close-ups:** use shaded profile faces (`tools/faces/*.svg` via
+    `faces.face()`): skin with a shadow side, a highlight line, a real eye,
+    ear and hair. Variants so far: Adam, Eve, Cain (angry, marked), and Noah
+    (white hair and beard). Give every key emotional beat a face close-up.
+- **Serpent:** generated by `tools/snake.py` (tapered body, pale belly with
+  scutes, dorsal blotches, scales, a viper head with slit pupil and forked
+  tongue). Clip the branch over the body where the coils pass behind it.
 
 ## Text rules
 
@@ -99,8 +135,13 @@ Archivo Narrow 700 (speech balloons), Noto Sans JP 900 (sound effects).
 - Captions carry narration and balloons carry dialogue. God's words always use
   the Voice box.
 
+## Checking pages
+
+Render with `node tools/shot.js page.dc.html out.png` (Playwright; the fonts may
+fall back locally) and look at people, the serpent and text overlaps before
+publishing.
+
 ## Roadmap
 
-- Book Two: Genesis 4–9 (Cain and Abel → the Flood)
-- Book Three: Genesis 11–22 (Babel, Abraham)
+- Book Three: Genesis 11–22 (Babel, Abraham, Isaac)
 - Possible option: right-to-left reading order

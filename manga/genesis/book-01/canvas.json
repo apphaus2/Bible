@@ -1,18 +1,73 @@
 {
   "v": 3,
-  "createdOnFiles": {"v": 1, "at": "2026-10-04T17:00:00Z"},
-  "title": "Genesis Manga",
-  "launch": {"view": "canvas"},
+  "attachments": {},
+  "createdOnFiles": {
+    "at": "2026-10-04T17:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
   "pages": [],
+  "title": "Genesis Manga",
   "boards": {
-    "Main.dc.html": {"x": 0, "y": 0, "w": 760, "h": 1080, "title": "00 · Cover"},
-    "P01-Darkness.dc.html": {"x": 840, "y": 0, "w": 760, "h": 1080, "title": "01 · Let There Be Light"},
-    "P02-Firmament.dc.html": {"x": 1680, "y": 0, "w": 760, "h": 1080, "title": "02 · Day & Firmament"},
-    "P03-Land.dc.html": {"x": 2520, "y": 0, "w": 760, "h": 1080, "title": "03 · Land, Seed, Lights"},
-    "P04-Life.dc.html": {"x": 0, "y": 1200, "w": 760, "h": 1080, "title": "04 · Living Things & Man"},
-    "P05-Eden.dc.html": {"x": 840, "y": 1200, "w": 760, "h": 1080, "title": "05 · Rest & Eden"},
-    "P06-Serpent.dc.html": {"x": 1680, "y": 1200, "w": 760, "h": 1080, "title": "06 · The Serpent"},
-    "P07-Exile.dc.html": {"x": 2520, "y": 1200, "w": 760, "h": 1080, "title": "07 · The Fall"}
+    "Main.dc.html": {
+      "h": 1080,
+      "title": "00 \u00b7 Cover",
+      "w": 760,
+      "x": 0,
+      "y": 0
+    },
+    "P01-Darkness.dc.html": {
+      "h": 1080,
+      "title": "01 \u00b7 Let There Be Light",
+      "w": 760,
+      "x": 840,
+      "y": 0
+    },
+    "P02-Firmament.dc.html": {
+      "h": 1080,
+      "title": "02 \u00b7 Day & Firmament",
+      "w": 760,
+      "x": 1680,
+      "y": 0
+    },
+    "P03-Land.dc.html": {
+      "h": 1080,
+      "title": "03 \u00b7 Land, Seed, Lights",
+      "w": 760,
+      "x": 2520,
+      "y": 0
+    },
+    "P04-Life.dc.html": {
+      "h": 1080,
+      "title": "04 \u00b7 Living Things & Man",
+      "w": 760,
+      "x": 0,
+      "y": 1200
+    },
+    "P05-Eden.dc.html": {
+      "h": 1080,
+      "title": "05 \u00b7 Rest & Eden",
+      "w": 760,
+      "x": 840,
+      "y": 1200
+    },
+    "P06-Serpent.dc.html": {
+      "h": 1080,
+      "title": "06 \u00b7 The Serpent",
+      "w": 760,
+      "x": 1680,
+      "y": 1200
+    },
+    "P07-Exile.dc.html": {
+      "h": 1080,
+      "title": "07 \u00b7 The Fall",
+      "w": 760,
+      "x": 2520,
+      "y": 1200
+    }
   },
   "order": [
     "Main.dc.html",
@@ -24,8 +79,5 @@
     "P06-Serpent.dc.html",
     "P07-Exile.dc.html"
   ],
-  "notes": {
-    "title": {"x": 0, "y": -300, "text": "GENESIS — Book One: The Beginning (Ch. 1–3)", "kind": "title1", "maxW": 3280}
-  },
-  "designSystems": []
+  "notes": {}
 }

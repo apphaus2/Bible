@@ -13,16 +13,17 @@
 body{margin:0}
 </style>
 </helmet>
-<div style="position: relative; width: 760px; height: 1080px; overflow: hidden; background: #0D0D0F; color: #F3EFE6; font-family: 'IBM Plex Mono', monospace">
-  <div style="position: absolute; inset: 0; background: repeating-conic-gradient(from 2deg at 50% 65%, rgba(243,239,230,0.75) 0deg 0.35deg, transparent 0.35deg 2.9deg), repeating-conic-gradient(from 0deg at 50% 65%, rgba(243,239,230,0.4) 0deg 0.2deg, transparent 0.2deg 4.3deg)"></div>
+<div style="position: relative; width: 760px; height: 1080px; overflow: hidden; background: linear-gradient(180deg, #0B0B2A 0%, #1E1650 36%, #5B2470 56%, #C2456A 63%, #FF8A3D 65%, #0E2A44 65%); color: #F3EFE6; font-family: 'IBM Plex Mono', monospace">
+  <div style="position: absolute; inset: 0; background: repeating-conic-gradient(from 2deg at 50% 65%, rgba(255,214,120,0.7) 0deg 0.35deg, transparent 0.35deg 2.9deg), repeating-conic-gradient(from 0deg at 50% 65%, rgba(255,150,90,0.45) 0deg 0.2deg, transparent 0.2deg 4.3deg)"></div>
   <svg width="760" height="1080" viewBox="0 0 760 1080" style="position: absolute; inset: 0; display: block">
     <defs>
       <radialGradient id="cvGlow" cx="380" cy="702" r="430" gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="#ffffff"></stop>
         <stop offset="0.06" stop-color="#ffffff"></stop>
-        <stop offset="0.22" stop-color="#F3EFE6" stop-opacity="0.6"></stop>
-        <stop offset="0.6" stop-color="#0D0D0F" stop-opacity="0.2"></stop>
-        <stop offset="1" stop-color="#0D0D0F" stop-opacity="0.85"></stop>
+        <stop offset="0.14" stop-color="#FFE680" stop-opacity="0.9"></stop>
+        <stop offset="0.28" stop-color="#FF7A1A" stop-opacity="0.5"></stop>
+        <stop offset="0.6" stop-color="#5B2470" stop-opacity="0.15"></stop>
+        <stop offset="1" stop-color="#0B0B2A" stop-opacity="0.7"></stop>
       </radialGradient>
       <linearGradient id="cvBeam" x1="0" y1="0" x2="1" y2="0">
         <stop offset="0" stop-color="#ffffff" stop-opacity="0"></stop>
@@ -30,17 +31,17 @@ body{margin:0}
         <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
       </linearGradient>
       <linearGradient id="cvSea" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#2a2925"></stop>
-        <stop offset="0.25" stop-color="#0D0D0F"></stop>
-        <stop offset="1" stop-color="#050506"></stop>
+        <stop offset="0" stop-color="#2C7DA0"></stop>
+        <stop offset="0.25" stop-color="#0E3A5A"></stop>
+        <stop offset="1" stop-color="#06121F"></stop>
       </linearGradient>
-      <pattern id="cvTone" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="0.9" fill="#F3EFE6"></circle></pattern>
+      <pattern id="cvTone" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="0.9" fill="#6FD3E0"></circle></pattern>
     </defs>
     <rect x="0" y="0" width="760" height="1080" fill="url(#cvGlow)"></rect>
     <rect x="350" y="0" width="60" height="702" fill="url(#cvBeam)" opacity="0.55"></rect>
     <rect x="372" y="0" width="16" height="702" fill="url(#cvBeam)"></rect>
     <rect x="378.5" y="0" width="3" height="702" fill="#ffffff"></rect>
-    <g fill="#F3EFE6">
+    <g fill="#FFE08A">
       <circle cx="312" cy="610" r="2.2"></circle><circle cx="455" cy="590" r="1.6"></circle><circle cx="420" cy="540" r="2.6"></circle>
       <circle cx="268" cy="650" r="1.4"></circle><circle cx="498" cy="660" r="2"></circle><circle cx="340" cy="520" r="1.2"></circle>
       <circle cx="470" cy="480" r="1.5"></circle><circle cx="230" cy="580" r="1.8"></circle><circle cx="545" cy="610" r="1.3"></circle>
@@ -51,7 +52,7 @@ body{margin:0}
     </g>
     <rect x="0" y="702" width="760" height="378" fill="url(#cvSea)"></rect>
     <rect x="0" y="702" width="760" height="378" fill="url(#cvTone)" opacity="0.12"></rect>
-    <g fill="none" stroke="#F3EFE6" stroke-linecap="round">
+    <g fill="none" stroke="#6FD3E0" stroke-linecap="round">
       <path d="M0 718 Q 40 713 80 718 T 160 718 T 240 718 T 320 718 T 400 718 T 480 718 T 560 718 T 640 718 T 720 718 T 800 718" stroke-width="0.8" opacity="0.5"></path>
       <path d="M-20 740 Q 35 732 90 740 T 200 740 T 310 740 T 420 740 T 530 740 T 640 740 T 750 740 T 860 740" stroke-width="1" opacity="0.55"></path>
       <path d="M-10 772 Q 60 760 130 772 T 270 772 T 410 772 T 550 772 T 690 772 T 830 772" stroke-width="1.3" opacity="0.6"></path>
@@ -60,7 +61,7 @@ body{margin:0}
       <path d="M-60 950 Q 70 918 200 950 T 460 950 T 720 950 T 980 950" stroke-width="2.4" opacity="0.7"></path>
       <path d="M-80 1045 Q 80 1000 240 1045 T 560 1045 T 880 1045" stroke-width="3" opacity="0.7"></path>
     </g>
-    <g fill="#ffffff">
+    <g fill="#FFF1B8">
       <rect x="366" y="706" width="28" height="2"></rect><rect x="360" y="716" width="40" height="2"></rect>
       <rect x="352" y="728" width="56" height="2.5"></rect><rect x="370" y="736" width="20" height="2"></rect>
       <rect x="344" y="748" width="72" height="3"></rect><rect x="336" y="764" width="50" height="3"></rect>
