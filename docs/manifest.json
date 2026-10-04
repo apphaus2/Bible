@@ -180,6 +180,68 @@
           "thumb": "thumbs/book-03-08-jehovah-jireh.jpg"
         }
       ]
+    },
+    {
+      "id": "book-04",
+      "title": "Book Four: The Ladder",
+      "range": "Genesis 25–33",
+      "url": "genesis/book-04/",
+      "pages": [
+        {
+          "title": "Cover",
+          "ref": "Genesis 25–33",
+          "url": "genesis/book-04/00-cover.html",
+          "thumb": "thumbs/book-04-00-cover.jpg"
+        },
+        {
+          "title": "The Twins",
+          "ref": "Genesis 25:24–27",
+          "url": "genesis/book-04/01-the-twins.html",
+          "thumb": "thumbs/book-04-01-the-twins.jpg"
+        },
+        {
+          "title": "The Red Pottage",
+          "ref": "Genesis 25:29–34",
+          "url": "genesis/book-04/02-the-red-pottage.html",
+          "thumb": "thumbs/book-04-02-the-red-pottage.jpg"
+        },
+        {
+          "title": "The Stolen Blessing",
+          "ref": "Genesis 27:1–29",
+          "url": "genesis/book-04/03-the-stolen-blessing.html",
+          "thumb": "thumbs/book-04-03-the-stolen-blessing.jpg"
+        },
+        {
+          "title": "A Bitter Cry",
+          "ref": "Genesis 27:34–43",
+          "url": "genesis/book-04/04-a-bitter-cry.html",
+          "thumb": "thumbs/book-04-04-a-bitter-cry.jpg"
+        },
+        {
+          "title": "The Ladder at Bethel",
+          "ref": "Genesis 28:10–19",
+          "url": "genesis/book-04/05-the-ladder-at-bethel.html",
+          "thumb": "thumbs/book-04-05-the-ladder-at-bethel.jpg"
+        },
+        {
+          "title": "Rachel",
+          "ref": "Genesis 29:9–20",
+          "url": "genesis/book-04/06-rachel.html",
+          "thumb": "thumbs/book-04-06-rachel.jpg"
+        },
+        {
+          "title": "Wrestling at Peniel",
+          "ref": "Genesis 32:24–31",
+          "url": "genesis/book-04/07-wrestling-at-peniel.html",
+          "thumb": "thumbs/book-04-07-wrestling-at-peniel.jpg"
+        },
+        {
+          "title": "The Brothers Meet",
+          "ref": "Genesis 33:1–4",
+          "url": "genesis/book-04/08-the-brothers-meet.html",
+          "thumb": "thumbs/book-04-08-the-brothers-meet.jpg"
+        }
+      ]
     }
   ]
 }

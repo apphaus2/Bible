@@ -1,0 +1,91 @@
+{
+  "v": 3,
+  "attachments": {},
+  "createdOnFiles": {
+    "at": "2026-10-04T17:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "title": "Genesis Manga",
+  "boards": {
+    "B4-Cover.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 00 · Cover"
+    },
+    "B4-P01-Twins.dc.html": {
+      "x": 840,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 01 · The Twins"
+    },
+    "B4-P02-Pottage.dc.html": {
+      "x": 1680,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 02 · The Red Pottage"
+    },
+    "B4-P03-Blessing.dc.html": {
+      "x": 2520,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 03 · The Stolen Blessing"
+    },
+    "B4-P04-Cry.dc.html": {
+      "x": 3360,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 04 · A Bitter Cry"
+    },
+    "B4-P05-Ladder.dc.html": {
+      "x": 0,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 05 · The Ladder at Bethel"
+    },
+    "B4-P06-Rachel.dc.html": {
+      "x": 840,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 06 · Rachel"
+    },
+    "B4-P07-Peniel.dc.html": {
+      "x": 1680,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 07 · Wrestling at Peniel"
+    },
+    "B4-P08-Reunion.dc.html": {
+      "x": 2520,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B4 · 08 · The Brothers Meet"
+    }
+  },
+  "order": [
+    "B4-Cover.dc.html",
+    "B4-P01-Twins.dc.html",
+    "B4-P02-Pottage.dc.html",
+    "B4-P03-Blessing.dc.html",
+    "B4-P04-Cry.dc.html",
+    "B4-P05-Ladder.dc.html",
+    "B4-P06-Rachel.dc.html",
+    "B4-P07-Peniel.dc.html",
+    "B4-P08-Reunion.dc.html"
+  ],
+  "notes": {}
+}
