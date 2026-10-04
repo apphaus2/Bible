@@ -1,0 +1,91 @@
+{
+  "v": 3,
+  "attachments": {},
+  "createdOnFiles": {
+    "at": "2026-10-04T17:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "title": "Genesis Manga",
+  "boards": {
+    "B3-Cover.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 00 · Cover"
+    },
+    "B3-P01-Brick.dc.html": {
+      "x": 840,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 01 · Brick for Stone"
+    },
+    "B3-P02-Babel.dc.html": {
+      "x": 1680,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 02 · Babel"
+    },
+    "B3-P03-Call.dc.html": {
+      "x": 2520,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 03 · The Call"
+    },
+    "B3-P04-Stars.dc.html": {
+      "x": 3360,
+      "y": 0,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 04 · Number the Stars"
+    },
+    "B3-P05-Mamre.dc.html": {
+      "x": 0,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 05 · Sarah Laughed"
+    },
+    "B3-P06-Sodom.dc.html": {
+      "x": 840,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 06 · Fire from Heaven"
+    },
+    "B3-P07-Moriah.dc.html": {
+      "x": 1680,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 07 · The Way to Moriah"
+    },
+    "B3-P08-Provide.dc.html": {
+      "x": 2520,
+      "y": 1200,
+      "w": 760,
+      "h": 1080,
+      "title": "B3 · 08 · Jehovah-jireh"
+    }
+  },
+  "order": [
+    "B3-Cover.dc.html",
+    "B3-P01-Brick.dc.html",
+    "B3-P02-Babel.dc.html",
+    "B3-P03-Call.dc.html",
+    "B3-P04-Stars.dc.html",
+    "B3-P05-Mamre.dc.html",
+    "B3-P06-Sodom.dc.html",
+    "B3-P07-Moriah.dc.html",
+    "B3-P08-Provide.dc.html"
+  ],
+  "notes": {}
+}
