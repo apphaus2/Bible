@@ -376,6 +376,130 @@
               "thumb": "thumbs/exodus-book-01-08-the-rod.jpg"
             }
           ]
+        },
+        {
+          "id": "book-02",
+          "title": "Book Two: The Plagues",
+          "range": "Exodus 5–11",
+          "url": "exodus/book-02/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Exodus 5–11",
+              "url": "exodus/book-02/00-cover.html",
+              "thumb": "thumbs/exodus-book-02-00-cover.jpg"
+            },
+            {
+              "title": "Let My People Go",
+              "ref": "Exodus 5:1–12",
+              "url": "exodus/book-02/01-let-my-people-go.html",
+              "thumb": "thumbs/exodus-book-02-01-let-my-people-go.jpg"
+            },
+            {
+              "title": "Rod Against Rod",
+              "ref": "Exodus 7:10–13",
+              "url": "exodus/book-02/02-rod-against-rod.html",
+              "thumb": "thumbs/exodus-book-02-02-rod-against-rod.jpg"
+            },
+            {
+              "title": "The River Turned to Blood",
+              "ref": "Exodus 7:20–24",
+              "url": "exodus/book-02/03-blood.html",
+              "thumb": "thumbs/exodus-book-02-03-blood.jpg"
+            },
+            {
+              "title": "Frogs, Lice and Flies",
+              "ref": "Exodus 8:6–24",
+              "url": "exodus/book-02/04-frogs-lice-flies.html",
+              "thumb": "thumbs/exodus-book-02-04-frogs-lice-flies.jpg"
+            },
+            {
+              "title": "Murrain, Boils and Hail",
+              "ref": "Exodus 9:6–24",
+              "url": "exodus/book-02/05-murrain-boils-hail.html",
+              "thumb": "thumbs/exodus-book-02-05-murrain-boils-hail.jpg"
+            },
+            {
+              "title": "The Locusts",
+              "ref": "Exodus 10:3–16",
+              "url": "exodus/book-02/06-locusts.html",
+              "thumb": "thumbs/exodus-book-02-06-locusts.jpg"
+            },
+            {
+              "title": "Darkness",
+              "ref": "Exodus 10:21–29",
+              "url": "exodus/book-02/07-darkness.html",
+              "thumb": "thumbs/exodus-book-02-07-darkness.jpg"
+            },
+            {
+              "title": "One Plague More",
+              "ref": "Exodus 11:1–8",
+              "url": "exodus/book-02/08-one-plague-more.html",
+              "thumb": "thumbs/exodus-book-02-08-one-plague-more.jpg"
+            }
+          ]
+        },
+        {
+          "id": "book-03",
+          "title": "Book Three: The Red Sea",
+          "range": "Exodus 12–15",
+          "url": "exodus/book-03/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Exodus 12–15",
+              "url": "exodus/book-03/00-cover.html",
+              "thumb": "thumbs/exodus-book-03-00-cover.jpg"
+            },
+            {
+              "title": "The Passover Lamb",
+              "ref": "Exodus 12:1–11",
+              "url": "exodus/book-03/01-the-passover-lamb.html",
+              "thumb": "thumbs/exodus-book-03-01-the-passover-lamb.jpg"
+            },
+            {
+              "title": "When I See the Blood",
+              "ref": "Exodus 12:12–23",
+              "url": "exodus/book-03/02-when-i-see-the-blood.html",
+              "thumb": "thumbs/exodus-book-03-02-when-i-see-the-blood.jpg"
+            },
+            {
+              "title": "A Great Cry",
+              "ref": "Exodus 12:29–31",
+              "url": "exodus/book-03/03-a-great-cry.html",
+              "thumb": "thumbs/exodus-book-03-03-a-great-cry.jpg"
+            },
+            {
+              "title": "Out of Egypt",
+              "ref": "Exodus 12:37–13:21",
+              "url": "exodus/book-03/04-out-of-egypt.html",
+              "thumb": "thumbs/exodus-book-03-04-out-of-egypt.jpg"
+            },
+            {
+              "title": "Pharaoh Pursues",
+              "ref": "Exodus 14:5–11",
+              "url": "exodus/book-03/05-pharaoh-pursues.html",
+              "thumb": "thumbs/exodus-book-03-05-pharaoh-pursues.jpg"
+            },
+            {
+              "title": "Stand Still",
+              "ref": "Exodus 14:13–21",
+              "url": "exodus/book-03/06-stand-still.html",
+              "thumb": "thumbs/exodus-book-03-06-stand-still.jpg"
+            },
+            {
+              "title": "Dry Ground",
+              "ref": "Exodus 14:22–25",
+              "url": "exodus/book-03/07-dry-ground.html",
+              "thumb": "thumbs/exodus-book-03-07-dry-ground.jpg"
+            },
+            {
+              "title": "The Horse and His Rider",
+              "ref": "Exodus 14:27–15:21",
+              "url": "exodus/book-03/08-the-horse-and-his-rider.html",
+              "thumb": "thumbs/exodus-book-03-08-the-horse-and-his-rider.jpg"
+            }
+          ]
         }
       ]
     }

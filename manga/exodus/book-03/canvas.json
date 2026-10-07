@@ -1,0 +1,99 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "EX3-Cover.dc.html": {
+      "h": 1080,
+      "title": "B3 · 00 · Cover",
+      "w": 760,
+      "x": 0,
+      "y": 5600
+    },
+    "EX3-P01-Lamb.dc.html": {
+      "h": 1080,
+      "title": "B3 · 01 · The Passover Lamb",
+      "w": 760,
+      "x": 840,
+      "y": 5600
+    },
+    "EX3-P02-Blood.dc.html": {
+      "h": 1080,
+      "title": "B3 · 02 · When I See the Blood",
+      "w": 760,
+      "x": 1680,
+      "y": 5600
+    },
+    "EX3-P03-Cry.dc.html": {
+      "h": 1080,
+      "title": "B3 · 03 · A Great Cry",
+      "w": 760,
+      "x": 2520,
+      "y": 5600
+    },
+    "EX3-P04-Exodus.dc.html": {
+      "h": 1080,
+      "title": "B3 · 04 · Out of Egypt",
+      "w": 760,
+      "x": 3360,
+      "y": 5600
+    },
+    "EX3-P05-Pursuit.dc.html": {
+      "h": 1080,
+      "title": "B3 · 05 · Pharaoh Pursues",
+      "w": 760,
+      "x": 0,
+      "y": 6800
+    },
+    "EX3-P06-StandStill.dc.html": {
+      "h": 1080,
+      "title": "B3 · 06 · Stand Still",
+      "w": 760,
+      "x": 840,
+      "y": 6800
+    },
+    "EX3-P07-DryGround.dc.html": {
+      "h": 1080,
+      "title": "B3 · 07 · Dry Ground",
+      "w": 760,
+      "x": 1680,
+      "y": 6800
+    },
+    "EX3-P08-Song.dc.html": {
+      "h": 1080,
+      "title": "B3 · 08 · The Horse and His Rider",
+      "w": 760,
+      "x": 2520,
+      "y": 6800
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-04T21:49:22Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "title3": {
+      "kind": "title1",
+      "maxW": 4120,
+      "text": "EXODUS — Book Three: The Red Sea (Ch. 12–15)",
+      "x": 0,
+      "y": 5300
+    }
+  },
+  "order": [
+    "EX3-Cover.dc.html",
+    "EX3-P01-Lamb.dc.html",
+    "EX3-P02-Blood.dc.html",
+    "EX3-P03-Cry.dc.html",
+    "EX3-P04-Exodus.dc.html",
+    "EX3-P05-Pursuit.dc.html",
+    "EX3-P06-StandStill.dc.html",
+    "EX3-P07-DryGround.dc.html",
+    "EX3-P08-Song.dc.html"
+  ],
+  "pages": [],
+  "title": "Exodus Manga"
+}

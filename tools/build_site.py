@@ -20,10 +20,14 @@ SERIES = [
      "blurb": "Joseph's coat of many colors, the pit, Pharaoh's dreams, the granaries of Egypt, and the brothers forgiven."},
   ]},
   {"id": "exodus", "name": "Exodus", "kanji": "出エジプト記", "thumb": "exodus-",
-   "lede": "The second book of the Bible — the bondage in Egypt, Moses, and the God who calls from the fire.",
+   "lede": "The second book of the Bible — the bondage in Egypt, Moses at the burning bush, the plagues, and the crossing of the Red Sea.",
    "books": [
     {"dir": "book-01", "num": "One", "name": "The Bush That Burned", "range": "Exodus 1–4", "match": lambda n: n == "Main.dc.html" or n.startswith("EX1-"),
      "blurb": "The new king who knew not Joseph, the ark of bulrushes, Moses in Midian, the burning bush, I AM THAT I AM, and the rod."},
+    {"dir": "book-02", "num": "Two", "name": "The Plagues", "range": "Exodus 5–11", "match": lambda n: n.startswith("EX2-"),
+     "blurb": "Let my people go: the rods that became serpents, the river turned to blood, frogs, lice, flies, hail and fire, locusts, darkness, and the warning of midnight."},
+    {"dir": "book-03", "num": "Three", "name": "The Red Sea", "range": "Exodus 12–15", "match": lambda n: n.startswith("EX3-"),
+     "blurb": "The passover lamb, the blood on the doorposts, the great cry at midnight, the pillars of cloud and fire, the sea divided, and the song of Miriam."},
   ]},
 ]
 SERIES = [x for x in SERIES if x["id"] in SRC]

@@ -1,226 +1,255 @@
 # CLAUDE.md — Bible Manga
 
-Context for Claude (and humans) working in this repo.
+Context for Claude (and humans) working in this repo. Read this first.
 
 ## What this is
 
 A manga adaptation of the Bible, book by book, drawn as full-color vector pages in a
-1980s cyberpunk-manga style. Genesis is complete; Exodus is under way.
+1980s cyberpunk-manga style, with the text taken word for word from the
+**American Standard Version (1901)**. Each "book" of the manga is a cover plus 7–8 pages.
+The pages are edited on private Claude Design canvases and published as a static
+website from `docs/` (GitHub Pages).
 
-- **Book One — Genesis 1–3** (Creation → Eden → the Fall): done, `manga/genesis/book-01/`
-- **Book Two — Genesis 4–9** (Cain and Abel → the Flood → the rainbow): done, `manga/genesis/book-02/`
-- **Book Three — Genesis 11–22** (Babel → Abram's call → Sodom → Moriah): done, `manga/genesis/book-03/`
-- **Book Four — Genesis 25–33** (Jacob and Esau → Bethel → Peniel → reunion): done, `manga/genesis/book-04/`
-- **Book Five — Genesis 37–50** (Joseph: coat → pit → Egypt → Pharaoh → reunion): done, `manga/genesis/book-05/`
-- **Genesis is complete.**
-- Genesis live canvas (private Claude Design artifact): https://claude.ai/artifact/UGXs4gFgPqfSp92tykHmT3
+### Status
 
-**Exodus**
+| Series | Manga book | Chapters | Story | Folder | Text checked |
+|---|---|---|---|---|---|
+| Genesis | One — The Beginning | 1–3 | Creation → Eden → the Fall | `manga/genesis/book-01/` | yes |
+| Genesis | Two — The Flood | 4–9 | Cain and Abel → the Flood → the rainbow | `manga/genesis/book-02/` | yes |
+| Genesis | Three — The Promise | 11–22 | Babel → Abram's call → Sodom → Moriah | `manga/genesis/book-03/` | yes |
+| Genesis | Four — The Ladder | 25–33 | Jacob and Esau → Bethel → Peniel → reunion | `manga/genesis/book-04/` | yes |
+| Genesis | Five — The Dreamer | 37–50 | Joseph: coat → pit → Pharaoh → reunion | `manga/genesis/book-05/` | yes |
+| Exodus | One — The Bush That Burned | 1–4 | bondage → bulrushes → Midian → the burning bush → I AM → the rod | `manga/exodus/book-01/` | yes |
+| Exodus | Two — The Plagues | 5–11 | let my people go → rod against rod → the plagues → the midnight warning | `manga/exodus/book-02/` | yes |
+| Exodus | Three — The Red Sea | 12–15 | the passover → the great cry → the pillars → the sea divided → Miriam's song | `manga/exodus/book-03/` | **no — see below** |
 
-- **Book One — Exodus 1–4** (bondage → the ark of bulrushes → Midian → the burning bush → I AM → the rod): done, `manga/exodus/book-01/`
-- Exodus live canvas (its own private Claude Design artifact): https://claude.ai/artifact/GkjFPGxsPf2iJtfVooXJNa
+**Genesis is complete.** Exodus Books One to Three are done.
+
+**Open item:** Exodus Book Three's quotations were written from the ASV but not yet checked
+against the source (the ebible.org fetch wasn't approved at the time). Check every quoted line
+in `tools/exodus_book3.py` against `https://ebible.org/asv/EXO12.htm` … `EXO15.htm`
+(12:1–41, 13:19–21, 14:5–31, 15:20–21), fix any word that differs, re-run the script, republish,
+and mark it checked in the table.
+
+### The live canvases (private Claude Design artifacts)
+
+- Genesis: https://claude.ai/artifact/UGXs4gFgPqfSp92tykHmT3
+- Exodus: https://claude.ai/artifact/GkjFPGxsPf2iJtfVooXJNa
+
+The canvas and the repo hold the same `.dc.html` files. The canvas can be edited by hand in the
+browser, so **read a canvas's `project/canvas.json` (and any page you'll change) before
+publishing to it**, and merge rather than overwrite. Publishing a page only sends that file;
+send `canvas.json` only when boards, notes or order change.
 
 ## Repo layout
 
 ```
+CLAUDE.md
+index.html            redirect to docs/
+docs/                 the website (generated — never edit by hand; see Website)
 manga/
   genesis/
-    canvas.json       the live canvas index (all books; Book Two rows start at y = 2800, Book Three at 5600, Book Four at 8400, Book Five at 11200)
-    book-01/          Genesis 1–3: Main.dc.html (cover), P01…P07, canvas.json (this book only)
-    book-02/          Genesis 4–9: B2-Cover, B2-P01…B2-P08, canvas.json (this book only)
-    book-03/          Genesis 11–22: B3-Cover, B3-P01…B3-P08, canvas.json (this book only)
-    book-04/          Genesis 25–33: B4-Cover, B4-P01…B4-P08, canvas.json (this book only)
-    book-05/          Genesis 37–50: B5-Cover, B5-P01…B5-P08, canvas.json (this book only)
+    canvas.json       Genesis canvas index (all books)
+    book-01/          Main.dc.html (cover), P01…P07, canvas.json (this book only)
+    book-02/ … book-05/   B2-…B5- Cover, P01…P08, canvas.json
   exodus/
-    canvas.json       the Exodus canvas index (Book One rows at y = 0 and 1200; Book Two will start at 2800)
-    book-01/          Exodus 1–4: Main.dc.html (cover), EX1-P01…EX1-P08, canvas.json (this book only)
+    canvas.json       Exodus canvas index (all books)
+    book-01/          Main.dc.html (cover), EX1-P01…EX1-P08, canvas.json
+    book-02/          EX2-Cover, EX2-P01…EX2-P08, canvas.json
+    book-03/          EX3-Cover, EX3-P01…EX3-P08, canvas.json
 tools/
-  faces.py            figure/face kit: build(paths) swaps __MAN__, __WOMAN__, __HAIR__,
-                      __TUNIC__, __LIEB__/__LIEA__, __FACE_*__ tokens in page files
-  faces/adam.svg, faces/eve.svg   shaded profile close-ups (base art for face variants)
-  figures.json        silhouette paths (man, woman, hair, reclining body/arm)
-  snake.py            generates a tapered, scaled serpent from a centerline
-  tower.py            generates the stepped brick Tower of Babel (tiers, ramps, scaffolding, crane)
-  build3.py           Book Three build: faces.tokens() + __ROBE__, __TOWER_*__, __STARS_*__ tokens
-  ladder.py           generates Jacob's ladder in perspective with winged angels
-  build4.py           Book Four build: build3 tokens + __LADDER_*__, __BOW__ (bowing figure), Esau/Jacob faces
-  egypt.py            pyramids, granary rows, fat/lean kine, sheaf paths
-  build5.py           Book Five build: build4 tokens + __PYRAMIDS_*__, __GRANARIES_*__, __FAT__/__LEAN__/__RIBS__, __SHEAF__
-  shot.js             Playwright render of a .dc.html to PNG, for checking a page
-  shots.js            the same for many pages: node tools/shots.js <out_dir> a.dc.html b.dc.html …
-  mk.py               page-building helpers for Exodus on: page(), panel(), cols(), cap(), god(), balloon()+tail(),
-                      stamp(), sfx(), ref(), person() (with ManUp/WomanUp + arm points for a raised arm), speed(), stars()
-  faces_ex.py         Exodus faces: Moses (shepherd headcloth + cord, beard; fire-lit; afraid), Moses as an Egyptian
-                      prince (angry variant), Pharaoh's daughter, Miriam, Jochebed, Zipporah, the new Pharaoh,
-                      a taskmaster, Hebrew slaves
-  exodus.py           reeds/bulrushes, the ark of bulrushes, flame/blaze, the burning bush (not consumed), sheep,
-                      an open hand (leprous variant), kneeling figure, sandals
-  exodus_book1.py     writes all of Exodus Book One: python3 tools/exodus_book1.py <out_dir>
+  — shared kit —
+  figures.json        silhouettes: MAN, WOMAN, HAIR, LIE_BODY, LIE_ARM (feet at 0,0, ~200 units tall)
+  faces.py            face(base="adam"|"eve", skin, shadow, hair, beard, scarf, egypt, collar, kohl,
+                      false_beard, brow="scowl"|"sorrow", tear, sweat, stubble, light, …); faces/adam.svg, faces/eve.svg
+  snake.py            snake(points, width, uid, head_scale): tapered, scaled serpent with a viper head
+  egypt.py            pyramid(), granaries(), FAT/LEAN kine, SHEAF
+  — Genesis only (token pipeline) —
+  tower.py, ladder.py   Babel tower; Jacob's ladder with angels
+  build3.py, build4.py, build5.py   swap __TOKEN__ placeholders in Genesis Book 3/4/5 pages
+  — Exodus (one script per book) —
+  mk.py               page helpers: page(), panel(), cols(), cap(), god(), balloon()+tail(), stamp(), sfx(),
+                      ref(), person() (up=[shoulder, elbow, hand] for a raised arm), defs(), face(), speed(), stars()
+  faces_ex.py         Moses (shepherd, fire-lit, afraid; Egyptian prince, angry), Pharaoh's daughter, Miriam,
+                      Jochebed, Zipporah, the new Pharaoh, a taskmaster, Hebrew slaves
+  exodus.py           reeds, the ark of bulrushes, flame()/blaze(), bush() (burning, not consumed), sheep(), hand(),
+                      kneel(), sandal()
+  exodus2.py          frogs, flies/swarm, lice, locusts, fish, hail, bolt(), columns(), brown serpents, kine_dead();
+                      Aaron, the magicians (afraid, with boils), Pharaoh afraid, stern Moses
+  exodus3.py          door() with blood, hyssop(), basin(), lamb(), horse(), chariot(), pillar_cloud(), pillar_fire(),
+                      sea_corridor() (the parted sea in perspective), crash() (breaking wave), timbrel();
+                      Pharaoh weeping, old Miriam, a frightened Hebrew, calm Moses
+  exodus_book1.py … exodus_book3.py   each writes one whole book: python3 tools/exodus_bookN.py <out_dir>
+  — website and checking —
+  build_site.py       builds docs/ from flat page folders (SERIES config lists every series and book)
+  rebuild_site.py     one step: python3 tools/rebuild_site.py [--thumbs]
+  site/site.css, site/site.js   reader styles and keys/swipe navigation (copied into docs/assets/)
+  shot.js, shots.js   Playwright renders: node tools/shots.js <out_dir> page.dc.html …
+  thumbs.js           older thumbnail batch renderer (jobs file)
 ```
 
-New books go in `manga/<book>/book-NN/` and keep the same file conventions.
-File stems must be unique across the whole canvas, so Book Two pages are prefixed `B2-` (Book Three: `B3-`).
-Exodus has its own canvas: its pages are prefixed `EX1-` (Book Two: `EX2-`), and its first cover is `Main.dc.html`.
+## How to add the next book
 
-Genesis pages were written by hand with `__TOKEN__` placeholders and filled by `build3/4/5.py`. From Exodus on,
-each book is one Python script (`exodus_book1.py`) that composes every page from the `mk.py` helpers and the
-generators, so a fix is an edit to the script and a re-run, never a hand edit of the generated `.dc.html`.
+1. **Get the text first.** Fetch the ASV chapters from `https://ebible.org/asv/<BOOK><NN>.htm`
+   (e.g. `EXO16.htm`). Plan a cover + 8 pages, 2–4 panels each, and pick the verses for each panel.
+   Every caption, balloon and Voice box must be an exact ASV substring (trim with `…` only).
+2. **Write `tools/<series>_bookN.py`** on the pattern of `exodus_book3.py`: one function per page
+   returning `mk.page(...)`, new art in a `<series>N.py` generator module, new faces via
+   `faces_ex.F(...)` in that module's `tokens()`.
+   File stems: `EX4-Cover`, `EX4-P01-…`; titles `B4 · 00 · Cover`, `B4 · 01 · …`.
+3. **Render and look:** `python3 tools/exodus_book4.py /tmp/ex && node tools/shots.js /tmp/png /tmp/ex/*.dc.html`.
+   Check faces, figures, balloon tails pointing at the speaker's mouth, text inside balloons,
+   captions not covering faces, and nothing important cut off. Fix the script and re-run.
+4. **Publish to the canvas:** read `project/canvas.json`, add the boards (rows of 5 then 4, x = col × 840,
+   rows 1200 apart, each book starting 2800 below the last: 0, 2800, 5600, 8400, …) and a
+   `title1` note 300 above the first row, then send the new pages plus the index.
+5. **Repo:** copy the pages to `manga/<series>/book-NN/` with a book-only `canvas.json`, update
+   `manga/<series>/canvas.json`, add the book to `SERIES` in `tools/build_site.py`, run
+   `python3 tools/rebuild_site.py --thumbs`, update this file's status table, commit.
 
 ## File format
 
-Each page is a self-contained **Design Component** (`.dc.html`) for the Claude
-Design canvas:
+Each page is a self-contained **Design Component** (`.dc.html`) for the Claude Design canvas:
 
 - Keep `<script src="./support.js"></script>` in `<head>` exactly as written.
-- All markup sits inside `<x-dc>…</x-dc>`. Fonts come from one Google Fonts
-  `<link>` in `<helmet>`.
-- End each file with a `<script type="text/x-dc" data-dc-script data-props='…'>`
-  block containing `class Component extends DCLogic { renderVals() {…} }`.
-  `$preview` is `{"width":760,"height":1080}`.
-- `{{hole}}` only does a dotted lookup, never an expression.
-- Close every element and quote every attribute. Use inline `style=""`, since
-  that's what the editor edits.
-- Art is inline SVG plus CSS gradients. Don't use images, emoji, scripts that
-  build the DOM, or iframes.
-- Give SVG `id`s a page prefix (`dk`, `fm`, `ld`, `lf`, `ed`, `sv`, `ex`, …) so
-  `<defs>`/`<use>` never collide.
+- All markup sits inside `<x-dc>…</x-dc>`. Fonts come from one Google Fonts `<link>` in `<helmet>`.
+- End with `<script type="text/x-dc" data-dc-script data-props='…'>` holding
+  `class Component extends DCLogic { renderVals() {…} }`; `$preview` is `{"width":760,"height":1080}`.
+  Covers declare an `accent` color prop and use `{{accent}}` on the kanji block.
+- `{{hole}}` is a dotted lookup only, never an expression.
+- Close every element, quote every attribute, use inline `style=""` (the editor edits it).
+- Art is inline SVG plus CSS gradients: no images, emoji, DOM-building scripts or iframes.
+- SVG `id`s get a per-panel prefix so `<defs>`/`<use>` never collide (the Exodus scripts pass one to `defs()`).
+- Genesis pages were written by hand with `__TOKEN__` placeholders filled by `build3/4/5.py`.
+  Exodus pages are **generated**: fix the script and re-run, never hand-edit the output.
 
-`canvas.json`: pages are 760×1080, in rows of 4 or 5. Frames are 80 px apart in a row
-and 120 px apart between rows (y = 0, 1200, 2400…). Every page needs a `boards`
-entry and an `order` slot. Keep `createdOnFiles` unchanged.
+`canvas.json`: `v: 3`, `boards` keyed by file name (x, y, w 760, h 1080, title), `order`, `notes`
+(`kind: "title1"`, `maxW: 4120` for book titles). Keep `createdOnFiles` and every key you aren't changing.
 
 ## Visual style guide
 
-**Influences:** 1980s Japanese cyberpunk manga in general. That means precise
-linework, technical annotation labels, flying debris, radial speed lines,
-screentone, and big cinematic splash panels.
-**Never** use Akira's characters, logo or title treatment, the red motorcycle,
-pill or capsule imagery, Neo-Tokyo, or the white-dome explosion. Use the
-general style only, not a recreation of that work.
+**Influences:** 1980s Japanese cyberpunk manga in general — precise linework, technical labels,
+flying debris, radial speed lines, screentone, big cinematic splash panels.
+**Never** use Akira's characters, logo or title treatment, the red motorcycle, pill or capsule
+imagery, Neo-Tokyo, or the white-dome explosion: the general style only, not a recreation.
 
-**Full color**, in the style of 80s airbrushed manga coloring: black ink linework
-over flat, saturated fills and smooth gradients. Gutters, captions and speech
-balloons stay cream and white so the text reads cleanly.
+**Full color**, 80s airbrushed manga coloring: black ink linework over flat, saturated fills and
+smooth gradients. Gutters, captions and balloons stay cream and white so the text reads.
 
 | Token | Value | Use |
 |---|---|---|
 | Paper | `#F3EFE6` | page gutter, captions |
 | Ink | `#0D0D0F` | linework, borders, speed lines |
-| Red | `#D7261E` | day stamps, forbidden fruit, serpent eye, flaming sword |
+| Red | `#D7261E` | chapter stamps, accents, cover kanji block |
 | Night | `#0B0B2A` → `#1E1650` → `#5B2470` | void, cosmos, God's-voice panels |
 | Voice box | `#12113A` fill, `#FFD23F` gold inner rule | all of God's words |
-| Light | `#FFE680` → `#FFC14D` → `#FF6A2A` | creation light, sun, glow |
-| Sea | `#8FD0E2` sky, `#0F4C68` water, `#6FD3E0` crests | waters, firmament |
-| Earth | `#4A2418` rock, `#C8682E` lit rock, `#F2733F` dust sky | land rising |
-| Life | `#2E6B3A` / `#1F4A34` greens, `#9CCB5E` tree of knowledge | plants, Eden |
-| Serpent | `#1B3A12` body, `#C9E265` bands and outline, `#0B2A1E` jungle | serpent pages |
-| Skin/people | `#3A2230` silhouettes and hands, `#F4C9A0` skin close-ups | humans |
-| Exile | `#1A0F3A` → `#4A1D55` sky, gold `#FFD23F` rim light | cherubim, gate |
+| Light | `#FFE680` → `#FFC14D` → `#FF6A2A` | light, sun, glow, fire |
+| Sea | `#8FD0E2` sky, `#0F4C68`/`#1F6F9A` water, `#E8F6FA` foam | waters, the Red Sea |
+| Earth | `#4A2418` rock, `#C8682E` lit rock, `#C8A06A`/`#E8C88A` sand | land, desert |
+| Life | `#2E6B3A` / `#1F4A34` greens, `#9CCB5E` grass | plants, Eden |
+| Blood | `#8A0E16` river, `#B5121B` doorposts | the Nile, the passover |
+| Egypt | gold `#E8B830`, blue `#1F5FAD`, Pharaoh's nemes black-and-gold | court, palace |
 
-Each panel gets its own background gradient (an inline `background:`). Use
-SVG fills for shapes and keep black lines on top. A gradient goes last in a
-layered `background`, under any conic speed lines.
+Each panel gets its own background gradient. Keep black lines on top of fills.
 
-**Fonts:** Anton (God's voice, titles), IBM Plex Mono (narration captions, labels),
-Archivo Narrow 700 (speech balloons), Noto Sans JP 900 (sound effects).
+**Fonts:** Anton (God's voice, titles), IBM Plex Mono (captions, labels), Archivo Narrow 700
+(speech balloons), Noto Sans JP 900 (sound effects, kanji).
 
-**Page:** 760×1080. Padding `28px 26px 30px`. The CSS grid has explicit
-`grid-template-rows` and 12 px gaps. Panels have a 3 px ink border and
-`overflow:hidden`. The page number goes centered at the bottom as `— NN —`.
+**Page:** 760×1080, padding `28px 26px 30px`, CSS grid with explicit `grid-template-rows` and 12 px
+gaps, panels with a 3 px ink border and `overflow:hidden`, page number centered at the bottom as `— NN —`.
+Usable panel widths: full 702, half 342; heights are the row height minus 6.
 
-**Recurring components** (copy the inline styles from existing pages):
-- **Narration caption:** a paper box with a 2 px ink border, mono 600 at 11 px,
-  uppercase.
-- **Voice of God:** an indigo `#12113A` box with an inner gold rule
-  (`box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F`), Anton,
-  uppercase. No speaker is ever drawn.
-- **Speech balloon:** a white ellipse (`border-radius:50%`) with a 2.5 px border
-  and an SVG triangle tail placed *before* the balloon in the DOM. The serpent
-  gets a black balloon with a double paper outline.
-- **SFX:** Japanese katakana with a romanized tag underneath, e.g. ドン / DOOOM,
-  ゴゴゴ / GOGOGO.
-- **Day / chapter stamp:** a red-outlined rotated box with kanji over English
-  (第一日 / THE FIRST DAY in Book One, 第四章 / CHAPTER 4 from Book Two on).
-- **Verse ref:** tiny mono `GEN 1:3` in a corner.
-- **Speed lines:** layered `repeating-conic-gradient` (focus) or thin tapered
-  SVG wedges (horizontal). Screentone is a `radial-gradient` dot grid.
-- **People.** The goal is realistic, well-proportioned figures, not cut-outs.
-  - **Distant figures:** the silhouettes in `tools/figures.json` (feet at 0,0,
-    about 200 units tall, legs about half the height, gaps between arms and
-    body). Use the separate WOMAN body for women, and the HAIR path as its own
-    `<use>`, never merged into the body path (merged subpaths render hollow).
-    From Genesis 3:21 on, people wear the `__TUNIC__` coat of skins. Use the
-    LIE_BODY + LIE_ARM side view for lying figures; never rotate a standing one.
-  - **Close-ups:** use shaded profile faces (`tools/faces/*.svg` via
-    `faces.face()`): skin with a shadow side, a highlight line, a real eye,
-    ear and hair. Variants so far: Adam, Eve, Cain (angry, marked), and Noah
-    (white hair and beard), Abraham (grey beard; star-lit variant), Sarah
-    (headscarf, laughing), Isaac, blind old Isaac, Jacob (calm, straining,
-    awed), Esau (red hair and stubble; weeping; angry), and Rachel. Give every
-    key emotional beat a face close-up. Book Five adds Joseph, Joseph in
-    Egyptian dress (`egypt=` striped headcloth with the hair hidden, gold
-    collar, kohl), weeping Joseph, Pharaoh (false beard), and grieving old Jacob.
-    Exodus adds the faces in `tools/faces_ex.py`. Grown Moses always wears an off-white
-    shepherd's headcloth with a dark cord and a black beard (a `scarf=` on the male face
-    now hides the hair under it); young Moses is in Egyptian dress, red-and-white.
-  - **Poses:** `person(..., up=[shoulder, elbow, hand])` draws a raised or reaching arm
-    and removes that side's hanging arm. Kneeling or cowering people use
-    `exodus.kneel()` (arm across the face), not the old `__BOW__` blob.
-  - The burning bush is `exodus.bush()`: one merged blaze outline with hotter cores,
-    dark thorny branches, and green leaves still on them (the bush is not consumed).
-  - Joseph's coat of many colors is a 6-band stripe `<pattern>` (red, gold,
-    teal, purple, green, orange) on the TUNIC or ROBE.
-  - Patriarchs and travellers wear the full-length `__ROBE__`; younger people
-    wear the `__TUNIC__`.
-- **Serpent:** generated by `tools/snake.py` (tapered body, pale belly with
-  scutes, dorsal blotches, scales, a viper head with slit pupil and forked
-  tongue). Clip the branch over the body where the coils pass behind it.
+**Covers:** "THE BOOK OF" / "No. NN", the series title in Anton 168 px, "Book N — Name",
+"Chapters a – b", a vertical kanji block in the accent color (創世記 SŌSEIKI for Genesis,
+出エジプト記 SHUTSU for Exodus), one short ASV caption, "Adapted from the American Standard
+Version (1901)" and "Vol. N" at the bottom.
+
+**Recurring components** (all in `tools/mk.py`):
+- **Narration caption** `cap()`: paper box, 2 px ink border, mono 600 at 10–11 px, uppercase.
+- **Voice of God** `god()`: indigo box with an inner gold rule, Anton, uppercase. God is never drawn.
+- **Speech balloon** `balloon()` + `tail()`: white ellipse with a 2.5 px border; the SVG tail goes
+  *before* the balloon in the DOM and its tip points at the speaker's mouth.
+- **SFX** `sfx()`: katakana with a romanized tag (ゴオオ / GOOO, ドッ / DOH!).
+- **Chapter stamp** `stamp(n)`: red-outlined rotated box, 第N章 over CHAPTER N, once per chapter.
+- **Verse ref** `ref()`: tiny mono `EX 14:22` in a corner when no caption names the verse.
+- **Speed lines** `speed()`, starfields `stars()`.
+
+## People and creatures
+
+The user asked for **realistic, well-proportioned people** and a **serpent that looks like a snake**.
+Never fall back to blobs or stick figures.
+
+- **Distant figures:** `figures.json` silhouettes via `mk.person()`, with a `Robe` or `Tunic` over them.
+  Women use WOMAN plus a separate HAIR `<use>` (never merge subpaths — they render hollow).
+  Raised or reaching arms: `person(..., up=[(-22,-158), elbow, hand])` (removes that hanging arm).
+  Kneeling, cowering or bowed figures: `exodus.kneel()`. Lying figures: LIE_BODY + LIE_ARM.
+  Never rotate a standing figure to make it lie down.
+- **Close-ups:** every key emotional beat gets a shaded profile face from `faces.face()`.
+  Flip with `face(tok, x, y, s, flip=True)` (x is then the right edge).
+- **Character guide (Exodus):**
+  - Moses grown: off-white shepherd's headcloth with a dark cord, black beard. Young Moses: Egyptian
+    red-and-white headcloth, collar, kohl. Moods: calm (gold rim light), fire-lit, afraid (sweat), stern (scowl, red light).
+  - Aaron: grey beard, blue headcloth with cord.
+  - The new Pharaoh (from Exodus 1): black-and-gold nemes, false beard, kohl; afraid and weeping variants.
+  - Pharaoh's magicians: black-and-white headcloth, kohl, purple rim light.
+  - Miriam: brown hair when young; old Miriam has grey hair and a pink headscarf, with a timbrel.
+  - Pharaoh's daughter: black hair, gold band, collar, kohl. Zipporah: red headscarf.
+- **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
+  Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
+- **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'
+  serpents are the brown recolor `exodus2.serpent(..., brown=True)`.
 
 ## Text rules
 
-- Use the **American Standard Version (1901)** (public domain) only. Trim with
-  `…`; don't paraphrase. Keep ASV specifics: "Jehovah God", "waste and void",
-  "great sea-monsters", "as God", Pishon, "the Cherubim".
-- **Don't** quote the NASB, NAB (the Vatican site's translation) or any other
-  copyrighted translation. If someone asks for one, offer the ASV or the World
-  English Bible (also public domain) instead.
-- Captions carry narration and balloons carry dialogue. God's words always use
-  the Voice box.
+- **American Standard Version (1901)** only, word for word. Trim with `…`; never paraphrase or
+  modernize. Keep ASV wording: "Jehovah", "Jehovah God", "waste and void", "great sea-monsters",
+  "kine", "murrain", "to-day", "the Cherubim".
+- Source: `https://ebible.org/asv/<BOOK><NN>.htm` (GEN01…, EXO01…). Check every line against it.
+- **Don't** quote the NASB, NAB (the Vatican site's translation) or any other copyrighted
+  translation. If asked for one, offer the ASV or the World English Bible (also public domain).
+- Captions carry narration, balloons carry dialogue, God's words always use the Voice box.
+- Proofread captions: one past typo ("caled" for "called") was caught by the user.
 
 ## Website (`docs/`)
 
-A static site built from the pages, served by GitHub Pages from `main` › `/docs`.
+A static site built from the pages, served by GitHub Pages from `main` › `/docs`
+(the root `index.html` redirects there).
 
-- `docs/index.html` is the landing page: every book plus a full table of contents.
-- `docs/<series>/book-NN/index.html` is each book's index, with page thumbnails
-  (`<series>` is `genesis` or `exodus`).
-- `docs/<series>/book-NN/NN-<slug>.html` is one URL per manga page, with
-  breadcrumbs (Bible Manga / series / book / page), Prev/Next (arrow keys and swipe work too)
-  and `<link rel=prev/next>`. The last page of a book continues into the next book, and the
-  end of Genesis continues into Exodus.
-- `docs/manifest.json` lists every series, book and page (title, verse ref, URL,
-  thumbnail) for linking from another website.
-- `docs/thumbs/*.jpg` are 380×540 page previews: `book-NN-<slug>.jpg` for Genesis,
-  `exodus-book-NN-<slug>.jpg` for Exodus.
+- `docs/index.html`: landing page with a section per series, book cards, and a full table of contents.
+- `docs/<series>/book-NN/index.html`: each book's index with page thumbnails.
+- `docs/<series>/book-NN/NN-<slug>.html`: one URL per manga page, with breadcrumbs
+  (Bible Manga / series / book / page), Prev/Next (arrow keys and swipe too) and `<link rel=prev/next>`.
+  Books chain into each other, and the end of Genesis continues into Exodus.
+- `docs/manifest.json`: every series, book and page (title, verse ref, URL, thumbnail) for linking.
+- `docs/thumbs/`: 380×540 JPGs — `book-NN-<slug>.jpg` for Genesis, `exodus-book-NN-<slug>.jpg` for Exodus.
 
-Rebuild after any page change (each series' pages flat in one folder with its canvas.json):
+Rebuild after any page change:
 ```
-python3 tools/build_site.py docs genesis=<genesis pages dir> exodus=<exodus pages dir>
-cp tools/site/* docs/assets/
-node tools/shots.js <png_dir> <pages…>   # then resize each PNG to a 380×540 JPG in docs/thumbs/
+python3 tools/rebuild_site.py --thumbs   # --thumbs renders only missing thumbnails
 ```
-When adding a book, add it to that series' `books` in `SERIES` in `tools/build_site.py`
-(a new series is a new `SERIES` entry).
+To refresh a changed page's thumbnail, delete its JPG first. New book: add it to that series'
+`books` in `SERIES` in `tools/build_site.py`; a new series is a new `SERIES` entry with `id`,
+`name`, `kanji`, `thumb` prefix and `lede`.
 
 ## Checking pages
 
-Render with `node tools/shot.js page.dc.html out.png` (Playwright; the fonts may
-fall back locally) and look at people, the serpent and text overlaps before
-publishing.
+`node tools/shots.js <out_dir> page.dc.html …` renders PNGs with Playwright. The sandbox has no
+Anton/Archivo/Plex fonts, so renders use wider fallbacks: if text fits there, it fits on the canvas.
+Look at people, faces, balloon tails, overlaps and cut-off art before publishing.
+
+## Working notes for Claude
+
+- **Pushing:** Claude can't push to GitHub from its cloud session. It writes the changed files into
+  the user's clone at `~/_GITHUB/apphaus2/Bible` (when the Mac is connected) and gives the user the
+  command: `cd ~/_GITHUB/apphaus2/Bible && git add -A && git commit -m "…" && git push`.
+- **"continue"** from the user means: build the next manga book.
+- **"commit" / "update github"** means: write the latest repo files to the Mac clone and give the push command.
+- Commit messages end with the Co-Authored-By and Claude-Session lines; the git author is Sky.
 
 ## Roadmap
 
-- Exodus Book Two — Exodus 5–11: Moses and Aaron before Pharaoh, the rods and serpents, the ten plagues
-- Exodus Book Three — Exodus 12–15: the passover, the departure, the Red Sea, the song of Moses
-- Exodus Book Four — Exodus 16–20, 32–34: manna, Sinai, the ten commandments, the golden calf
-- Possible option: right-to-left reading order
+- Check Exodus Book Three's text against the ASV (see Status).
+- Exodus Book Four — Exodus 16–20: manna and quails, water from the rock, Sinai, the ten commandments.
+- Exodus Book Five — Exodus 24, 32–34, 40: the tables of stone, the golden calf, the glory filling the tabernacle.
+- Then Leviticus/Numbers highlights or straight on to Joshua — the user's call.
+- Possible option: right-to-left reading order.
