@@ -153,7 +153,7 @@ def p03():
 
     s2 = f'''      {speed(500, 200, 70, 160, 800, 23, color="#0D0D0F", sw=2, op=0.5)}
       {face(FX["__FACE_PHARAOH_WEEP__"], 760, -14, 1.0, flip=True)}'''
-    o2 = (cap("And Pharaoh rose up in the night, he, and all his servants, and all the Egyptians; and there was a great cry in Egypt, for there was not a house where there was not one dead.", "left: 12px; top: 12px", maxw=380)
+    o2 = (cap("And Pharaoh rose up in the night, he, and all his servants, and all the Egyptians; and there was a great cry in Egypt; for there was not a house where there was not one dead.", "left: 12px; top: 12px", maxw=380)
           + sfx("ウワアア", "UWAAA", "left: 40px; top: 220px", size=58, fill="#F3EFE6", stroke="#5A0E16", rot=-6, align="flex-start"))
     P2 = panel("radial-gradient(circle at 75% 50%, #C2456A 0 30px, #5A0E16 260px, #12040A 480px)", 702, 372, s2, o2, "2 · A great cry")
 
@@ -208,7 +208,7 @@ def p04():
       <path d="M-10 250 C 100 244 240 254 352 246 L 352 334 L -10 334 Z" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></path>
       {Y.pillar_fire(220, 254, 30, 70, 7)}
       {crowd("h5", 30, -10, 200, 250, 320, 45, 0.12, 0.3, body=("#12090A",), cloth=("#3A2214", "#2A1A2E", "#4A2A1A"))}'''
-    o5 = cap("and by night in a pillar of fire, to give them light, that they might go by day and by night:", "left: 10px; top: 10px", size=10, maxw=170) + ref("EX 13:21", "right: 10px; bottom: 8px")
+    o5 = cap("and by night in a pillar of fire, to give them light; that they might go by day and by night:", "left: 10px; top: 10px", size=10, maxw=170) + ref("EX 13:21", "right: 10px; bottom: 8px")
     P3b = panel("linear-gradient(180deg, #05050A, #2A1A5E)", 342, 324, s5, o5, "3b · Pillar of fire")
     body = P1 + cols(P2a, P2b) + cols(P3a, P3b)
     return mk.page("Exodus 12:37–13:21 — Out of Egypt", "340px minmax(0, 1fr) 330px", body, 4)

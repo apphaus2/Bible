@@ -1,0 +1,99 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T02:13:06Z"
+ },
+ "title": "Joshua Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JO1-P01-Strong.dc.html": {
+   "x": 840,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "01 · Be Strong"
+  },
+  "JO1-P02-Rahab.dc.html": {
+   "x": 1680,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "02 · Rahab"
+  },
+  "JO1-P03-Jordan.dc.html": {
+   "x": 2520,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "03 · Crossing Jordan"
+  },
+  "JO1-P04-Prince.dc.html": {
+   "x": 3360,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "04 · The Prince of the Host"
+  },
+  "JO1-P05-Compass.dc.html": {
+   "x": 0,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "05 · Compass the City"
+  },
+  "JO1-P06-Wall.dc.html": {
+   "x": 840,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "06 · The Wall Fell Down Flat"
+  },
+  "JO1-P07-Sun.dc.html": {
+   "x": 1680,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "07 · Sun, Stand Thou Still"
+  },
+  "JO1-P08-Choose.dc.html": {
+   "x": 2520,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "08 · Choose You This Day"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JO1-P01-Strong.dc.html",
+  "JO1-P02-Rahab.dc.html",
+  "JO1-P03-Jordan.dc.html",
+  "JO1-P04-Prince.dc.html",
+  "JO1-P05-Compass.dc.html",
+  "JO1-P06-Wall.dc.html",
+  "JO1-P07-Sun.dc.html",
+  "JO1-P08-Choose.dc.html"
+ ],
+ "notes": {
+  "title": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "JOSHUA — Book One: Jericho (Ch. 1–24)",
+   "x": 0,
+   "y": -300
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

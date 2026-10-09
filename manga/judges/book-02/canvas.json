@@ -1,0 +1,99 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T04:31:25Z"
+ },
+ "title": "Judges Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "JG2-Cover.dc.html": {
+   "x": 0,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 00 · Cover"
+  },
+  "JG2-P01-Nazirite.dc.html": {
+   "x": 840,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 01 · A Nazirite unto God"
+  },
+  "JG2-P02-Lion.dc.html": {
+   "x": 1680,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 02 · The Young Lion"
+  },
+  "JG2-P03-Foxes.dc.html": {
+   "x": 2520,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 03 · Three Hundred Foxes"
+  },
+  "JG2-P04-Jawbone.dc.html": {
+   "x": 3360,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 04 · The Jawbone"
+  },
+  "JG2-P05-Gaza.dc.html": {
+   "x": 0,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 05 · The Gates of Gaza"
+  },
+  "JG2-P06-Delilah.dc.html": {
+   "x": 840,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 06 · Wherein Thy Great Strength Lieth"
+  },
+  "JG2-P07-Shaven.dc.html": {
+   "x": 1680,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 07 · The Philistines Are upon Thee"
+  },
+  "JG2-P08-Pillars.dc.html": {
+   "x": 2520,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 08 · The Pillars"
+  }
+ },
+ "order": [
+  "JG2-Cover.dc.html",
+  "JG2-P01-Nazirite.dc.html",
+  "JG2-P02-Lion.dc.html",
+  "JG2-P03-Foxes.dc.html",
+  "JG2-P04-Jawbone.dc.html",
+  "JG2-P05-Gaza.dc.html",
+  "JG2-P06-Delilah.dc.html",
+  "JG2-P07-Shaven.dc.html",
+  "JG2-P08-Pillars.dc.html"
+ ],
+ "notes": {
+  "title2": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "JUDGES — Book Two: Samson (Ch. 13–16)",
+   "x": 0,
+   "y": 2500
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

@@ -500,6 +500,686 @@
               "thumb": "thumbs/exodus-book-03-08-the-horse-and-his-rider.jpg"
             }
           ]
+        },
+        {
+          "id": "book-04",
+          "title": "Book Four: Sinai",
+          "range": "Exodus 16–20",
+          "url": "exodus/book-04/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Exodus 16–20",
+              "url": "exodus/book-04/00-cover.html",
+              "thumb": "thumbs/exodus-book-04-00-cover.jpg"
+            },
+            {
+              "title": "Bread from Heaven",
+              "ref": "Exodus 16:2–4",
+              "url": "exodus/book-04/01-bread-from-heaven.html",
+              "thumb": "thumbs/exodus-book-04-01-bread-from-heaven.jpg"
+            },
+            {
+              "title": "Manna",
+              "ref": "Exodus 16:13–31",
+              "url": "exodus/book-04/02-manna.html",
+              "thumb": "thumbs/exodus-book-04-02-manna.jpg"
+            },
+            {
+              "title": "The Rock in Horeb",
+              "ref": "Exodus 17:3–6",
+              "url": "exodus/book-04/03-the-rock-in-horeb.html",
+              "thumb": "thumbs/exodus-book-04-03-the-rock-in-horeb.jpg"
+            },
+            {
+              "title": "Hands Held Up",
+              "ref": "Exodus 17:8–13",
+              "url": "exodus/book-04/04-hands-held-up.html",
+              "thumb": "thumbs/exodus-book-04-04-hands-held-up.jpg"
+            },
+            {
+              "title": "The Mountain Smoked",
+              "ref": "Exodus 19:16–20",
+              "url": "exodus/book-04/05-the-mountain-smoked.html",
+              "thumb": "thumbs/exodus-book-04-05-the-mountain-smoked.jpg"
+            },
+            {
+              "title": "I Am Jehovah Thy God",
+              "ref": "Exodus 20:1–7",
+              "url": "exodus/book-04/06-i-am-jehovah-thy-god.html",
+              "thumb": "thumbs/exodus-book-04-06-i-am-jehovah-thy-god.jpg"
+            },
+            {
+              "title": "The Ten Words",
+              "ref": "Exodus 20:8–17",
+              "url": "exodus/book-04/07-the-ten-words.html",
+              "thumb": "thumbs/exodus-book-04-07-the-ten-words.jpg"
+            },
+            {
+              "title": "Afar Off",
+              "ref": "Exodus 20:18–21",
+              "url": "exodus/book-04/08-afar-off.html",
+              "thumb": "thumbs/exodus-book-04-08-afar-off.jpg"
+            }
+          ]
+        },
+        {
+          "id": "book-05",
+          "title": "Book Five: The Glory",
+          "range": "Exodus 24–40",
+          "url": "exodus/book-05/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Exodus 24–40",
+              "url": "exodus/book-05/00-cover.html",
+              "thumb": "thumbs/exodus-book-05-00-cover.jpg"
+            },
+            {
+              "title": "Come Up to Me",
+              "ref": "Exodus 24:12–18",
+              "url": "exodus/book-05/01-come-up-to-me.html",
+              "thumb": "thumbs/exodus-book-05-01-come-up-to-me.jpg"
+            },
+            {
+              "title": "The Finger of God",
+              "ref": "Exodus 31:18–32:1",
+              "url": "exodus/book-05/02-the-finger-of-god.html",
+              "thumb": "thumbs/exodus-book-05-02-the-finger-of-god.jpg"
+            },
+            {
+              "title": "Make Us Gods",
+              "ref": "Exodus 32:1–4",
+              "url": "exodus/book-05/03-make-us-gods.html",
+              "thumb": "thumbs/exodus-book-05-03-make-us-gods.jpg"
+            },
+            {
+              "title": "They Rose Up to Play",
+              "ref": "Exodus 32:6–8",
+              "url": "exodus/book-05/04-they-rose-up-to-play.html",
+              "thumb": "thumbs/exodus-book-05-04-they-rose-up-to-play.jpg"
+            },
+            {
+              "title": "He Brake Them",
+              "ref": "Exodus 32:15–19",
+              "url": "exodus/book-05/05-he-brake-them.html",
+              "thumb": "thumbs/exodus-book-05-05-he-brake-them.jpg"
+            },
+            {
+              "title": "Who Is on Jehovah's Side?",
+              "ref": "Exodus 32:20–26",
+              "url": "exodus/book-05/06-who-is-on-jehovah-s-side.html",
+              "thumb": "thumbs/exodus-book-05-06-who-is-on-jehovah-s-side.jpg"
+            },
+            {
+              "title": "Show Me Thy Glory",
+              "ref": "Exodus 33:18–23",
+              "url": "exodus/book-05/07-show-me-thy-glory.html",
+              "thumb": "thumbs/exodus-book-05-07-show-me-thy-glory.jpg"
+            },
+            {
+              "title": "The Glory Filled the Tabernacle",
+              "ref": "Exodus 34:29–40:38",
+              "url": "exodus/book-05/08-the-glory-filled-the-tabernacle.html",
+              "thumb": "thumbs/exodus-book-05-08-the-glory-filled-the-tabernacle.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers",
+      "books": [
+        {
+          "id": "book-01",
+          "title": "Book One: In the Wilderness",
+          "range": "Numbers 13–24",
+          "url": "numbers/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Numbers 13–24",
+              "url": "numbers/book-01/00-cover.html",
+              "thumb": "thumbs/numbers-book-01-00-cover.jpg"
+            },
+            {
+              "title": "The Twelve Spies",
+              "ref": "Numbers 13:1–23",
+              "url": "numbers/book-01/01-the-twelve-spies.html",
+              "thumb": "thumbs/numbers-book-01-01-the-twelve-spies.jpg"
+            },
+            {
+              "title": "The Evil Report",
+              "ref": "Numbers 13:27–33",
+              "url": "numbers/book-01/02-the-evil-report.html",
+              "thumb": "thumbs/numbers-book-01-02-the-evil-report.jpg"
+            },
+            {
+              "title": "The People Wept",
+              "ref": "Numbers 14:1–9",
+              "url": "numbers/book-01/03-the-people-wept.html",
+              "thumb": "thumbs/numbers-book-01-03-the-people-wept.jpg"
+            },
+            {
+              "title": "Forty Years",
+              "ref": "Numbers 14:33–20:8",
+              "url": "numbers/book-01/04-forty-years.html",
+              "thumb": "thumbs/numbers-book-01-04-forty-years.jpg"
+            },
+            {
+              "title": "He Smote the Rock Twice",
+              "ref": "Numbers 20:10–12",
+              "url": "numbers/book-01/05-he-smote-the-rock-twice.html",
+              "thumb": "thumbs/numbers-book-01-05-he-smote-the-rock-twice.jpg"
+            },
+            {
+              "title": "The Serpent of Brass",
+              "ref": "Numbers 21:5–9",
+              "url": "numbers/book-01/06-the-serpent-of-brass.html",
+              "thumb": "thumbs/numbers-book-01-06-the-serpent-of-brass.jpg"
+            },
+            {
+              "title": "Balaam's Ass",
+              "ref": "Numbers 22:22–28",
+              "url": "numbers/book-01/07-balaam-s-ass.html",
+              "thumb": "thumbs/numbers-book-01-07-balaam-s-ass.jpg"
+            },
+            {
+              "title": "A Star out of Jacob",
+              "ref": "Numbers 22:29–24:17",
+              "url": "numbers/book-01/08-a-star-out-of-jacob.html",
+              "thumb": "thumbs/numbers-book-01-08-a-star-out-of-jacob.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joshua",
+      "title": "Joshua",
+      "books": [
+        {
+          "id": "book-01",
+          "title": "Book One: Jericho",
+          "range": "Joshua 1–24",
+          "url": "joshua/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Joshua 1–24",
+              "url": "joshua/book-01/00-cover.html",
+              "thumb": "thumbs/joshua-book-01-00-cover.jpg"
+            },
+            {
+              "title": "Be Strong",
+              "ref": "Joshua 1:1–9",
+              "url": "joshua/book-01/01-be-strong.html",
+              "thumb": "thumbs/joshua-book-01-01-be-strong.jpg"
+            },
+            {
+              "title": "Rahab",
+              "ref": "Joshua 2:1–21",
+              "url": "joshua/book-01/02-rahab.html",
+              "thumb": "thumbs/joshua-book-01-02-rahab.jpg"
+            },
+            {
+              "title": "Crossing Jordan",
+              "ref": "Joshua 3:15–17",
+              "url": "joshua/book-01/03-crossing-jordan.html",
+              "thumb": "thumbs/joshua-book-01-03-crossing-jordan.jpg"
+            },
+            {
+              "title": "The Prince of the Host",
+              "ref": "Joshua 5:13–15",
+              "url": "joshua/book-01/04-the-prince-of-the-host.html",
+              "thumb": "thumbs/joshua-book-01-04-the-prince-of-the-host.jpg"
+            },
+            {
+              "title": "Compass the City",
+              "ref": "Joshua 6:2–16",
+              "url": "joshua/book-01/05-compass-the-city.html",
+              "thumb": "thumbs/joshua-book-01-05-compass-the-city.jpg"
+            },
+            {
+              "title": "The Wall Fell Down Flat",
+              "ref": "Joshua 6:20",
+              "url": "joshua/book-01/06-the-wall-fell-down-flat.html",
+              "thumb": "thumbs/joshua-book-01-06-the-wall-fell-down-flat.jpg"
+            },
+            {
+              "title": "Sun, Stand Thou Still",
+              "ref": "Joshua 10:12–14",
+              "url": "joshua/book-01/07-sun-stand-thou-still.html",
+              "thumb": "thumbs/joshua-book-01-07-sun-stand-thou-still.jpg"
+            },
+            {
+              "title": "Choose You This Day",
+              "ref": "Joshua 24:14–29",
+              "url": "joshua/book-01/08-choose-you-this-day.html",
+              "thumb": "thumbs/joshua-book-01-08-choose-you-this-day.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "judges",
+      "title": "Judges",
+      "books": [
+        {
+          "id": "book-01",
+          "title": "Book One: The Sword of Gideon",
+          "range": "Judges 4–8",
+          "url": "judges/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Judges 4–8",
+              "url": "judges/book-01/00-cover.html",
+              "thumb": "thumbs/judges-book-01-00-cover.jpg"
+            },
+            {
+              "title": "The Palm-tree of Deborah",
+              "ref": "Judges 4:4–9",
+              "url": "judges/book-01/01-the-palm-tree-of-deborah.html",
+              "thumb": "thumbs/judges-book-01-01-the-palm-tree-of-deborah.jpg"
+            },
+            {
+              "title": "This Is the Day",
+              "ref": "Judges 4:14–15",
+              "url": "judges/book-01/02-this-is-the-day.html",
+              "thumb": "thumbs/judges-book-01-02-this-is-the-day.jpg"
+            },
+            {
+              "title": "The Tent of Jael",
+              "ref": "Judges 4:17–21",
+              "url": "judges/book-01/03-the-tent-of-jael.html",
+              "thumb": "thumbs/judges-book-01-03-the-tent-of-jael.jpg"
+            },
+            {
+              "title": "Thou Mighty Man of Valor",
+              "ref": "Judges 6:11–15",
+              "url": "judges/book-01/04-thou-mighty-man-of-valor.html",
+              "thumb": "thumbs/judges-book-01-04-thou-mighty-man-of-valor.jpg"
+            },
+            {
+              "title": "The Fleece",
+              "ref": "Judges 6:36–40",
+              "url": "judges/book-01/05-the-fleece.html",
+              "thumb": "thumbs/judges-book-01-05-the-fleece.jpg"
+            },
+            {
+              "title": "Three Hundred Men",
+              "ref": "Judges 7:2–7",
+              "url": "judges/book-01/06-three-hundred-men.html",
+              "thumb": "thumbs/judges-book-01-06-three-hundred-men.jpg"
+            },
+            {
+              "title": "The Sword of Jehovah and of Gideon",
+              "ref": "Judges 7:16–20",
+              "url": "judges/book-01/07-the-sword-of-jehovah-and-of-gideon.html",
+              "thumb": "thumbs/judges-book-01-07-the-sword-of-jehovah-and-of-gideon.jpg"
+            },
+            {
+              "title": "Jehovah Shall Rule",
+              "ref": "Judges 7:21–8:28",
+              "url": "judges/book-01/08-jehovah-shall-rule.html",
+              "thumb": "thumbs/judges-book-01-08-jehovah-shall-rule.jpg"
+            }
+          ]
+        },
+        {
+          "id": "book-02",
+          "title": "Book Two: Samson",
+          "range": "Judges 13–16",
+          "url": "judges/book-02/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Judges 13–16",
+              "url": "judges/book-02/00-cover.html",
+              "thumb": "thumbs/judges-book-02-00-cover.jpg"
+            },
+            {
+              "title": "A Nazirite unto God",
+              "ref": "Judges 13:3–24",
+              "url": "judges/book-02/01-a-nazirite-unto-god.html",
+              "thumb": "thumbs/judges-book-02-01-a-nazirite-unto-god.jpg"
+            },
+            {
+              "title": "The Young Lion",
+              "ref": "Judges 14:5–6",
+              "url": "judges/book-02/02-the-young-lion.html",
+              "thumb": "thumbs/judges-book-02-02-the-young-lion.jpg"
+            },
+            {
+              "title": "Three Hundred Foxes",
+              "ref": "Judges 15:4–5",
+              "url": "judges/book-02/03-three-hundred-foxes.html",
+              "thumb": "thumbs/judges-book-02-03-three-hundred-foxes.jpg"
+            },
+            {
+              "title": "The Jawbone",
+              "ref": "Judges 15:14–16",
+              "url": "judges/book-02/04-the-jawbone.html",
+              "thumb": "thumbs/judges-book-02-04-the-jawbone.jpg"
+            },
+            {
+              "title": "The Gates of Gaza",
+              "ref": "Judges 16:3–4",
+              "url": "judges/book-02/05-the-gates-of-gaza.html",
+              "thumb": "thumbs/judges-book-02-05-the-gates-of-gaza.jpg"
+            },
+            {
+              "title": "Wherein Thy Great Strength Lieth",
+              "ref": "Judges 16:5–17",
+              "url": "judges/book-02/06-wherein-thy-great-strength-lieth.html",
+              "thumb": "thumbs/judges-book-02-06-wherein-thy-great-strength-lieth.jpg"
+            },
+            {
+              "title": "The Philistines Are upon Thee",
+              "ref": "Judges 16:19–21",
+              "url": "judges/book-02/07-the-philistines-are-upon-thee.html",
+              "thumb": "thumbs/judges-book-02-07-the-philistines-are-upon-thee.jpg"
+            },
+            {
+              "title": "The Pillars",
+              "ref": "Judges 16:22–30",
+              "url": "judges/book-02/08-the-pillars.html",
+              "thumb": "thumbs/judges-book-02-08-the-pillars.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ruth",
+      "title": "Ruth",
+      "books": [
+        {
+          "id": "book-01",
+          "title": "Book One: Whither Thou Goest",
+          "range": "Ruth 1–4",
+          "url": "ruth/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "Ruth 1–4",
+              "url": "ruth/book-01/00-cover.html",
+              "thumb": "thumbs/ruth-book-01-00-cover.jpg"
+            },
+            {
+              "title": "When the Judges Judged",
+              "ref": "Ruth 1:1–5",
+              "url": "ruth/book-01/01-when-the-judges-judged.html",
+              "thumb": "thumbs/ruth-book-01-01-when-the-judges-judged.jpg"
+            },
+            {
+              "title": "Return, Each of You",
+              "ref": "Ruth 1:8–14",
+              "url": "ruth/book-01/02-return-each-of-you.html",
+              "thumb": "thumbs/ruth-book-01-02-return-each-of-you.jpg"
+            },
+            {
+              "title": "Whither Thou Goest",
+              "ref": "Ruth 1:16–19",
+              "url": "ruth/book-01/03-whither-thou-goest.html",
+              "thumb": "thumbs/ruth-book-01-03-whither-thou-goest.jpg"
+            },
+            {
+              "title": "Call Me Mara",
+              "ref": "Ruth 1:19–22",
+              "url": "ruth/book-01/04-call-me-mara.html",
+              "thumb": "thumbs/ruth-book-01-04-call-me-mara.jpg"
+            },
+            {
+              "title": "The Field of Boaz",
+              "ref": "Ruth 2:2–5",
+              "url": "ruth/book-01/05-the-field-of-boaz.html",
+              "thumb": "thumbs/ruth-book-01-05-the-field-of-boaz.jpg"
+            },
+            {
+              "title": "Under Whose Wings",
+              "ref": "Ruth 2:8–17",
+              "url": "ruth/book-01/06-under-whose-wings.html",
+              "thumb": "thumbs/ruth-book-01-06-under-whose-wings.jpg"
+            },
+            {
+              "title": "The Threshing-floor",
+              "ref": "Ruth 3:2–11",
+              "url": "ruth/book-01/07-the-threshing-floor.html",
+              "thumb": "thumbs/ruth-book-01-07-the-threshing-floor.jpg"
+            },
+            {
+              "title": "Obed",
+              "ref": "Ruth 4:9–17",
+              "url": "ruth/book-01/08-obed.html",
+              "thumb": "thumbs/ruth-book-01-08-obed.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1samuel",
+      "title": "1 Samuel",
+      "books": [
+        {
+          "id": "book-01",
+          "title": "Book One: Thy Servant Heareth",
+          "range": "1 Samuel 1–10",
+          "url": "1samuel/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "1 Samuel 1–10",
+              "url": "1samuel/book-01/00-cover.html",
+              "thumb": "thumbs/1samuel-book-01-00-cover.jpg"
+            },
+            {
+              "title": "Hannah",
+              "ref": "1 Samuel 1:2–11",
+              "url": "1samuel/book-01/01-hannah.html",
+              "thumb": "thumbs/1samuel-book-01-01-hannah.jpg"
+            },
+            {
+              "title": "Asked of Jehovah",
+              "ref": "1 Samuel 1:20 – 3:1",
+              "url": "1samuel/book-01/02-asked-of-jehovah.html",
+              "thumb": "thumbs/1samuel-book-01-02-asked-of-jehovah.jpg"
+            },
+            {
+              "title": "Here Am I",
+              "ref": "1 Samuel 3:3–8",
+              "url": "1samuel/book-01/03-here-am-i.html",
+              "thumb": "thumbs/1samuel-book-01-03-here-am-i.jpg"
+            },
+            {
+              "title": "Speak",
+              "ref": "1 Samuel 3:9–20",
+              "url": "1samuel/book-01/04-speak.html",
+              "thumb": "thumbs/1samuel-book-01-04-speak.jpg"
+            },
+            {
+              "title": "The Ark of God Was Taken",
+              "ref": "1 Samuel 4:3–22",
+              "url": "1samuel/book-01/05-the-ark-of-god-was-taken.html",
+              "thumb": "thumbs/1samuel-book-01-05-the-ark-of-god-was-taken.jpg"
+            },
+            {
+              "title": "Dagon",
+              "ref": "1 Samuel 5:2–4",
+              "url": "1samuel/book-01/06-dagon.html",
+              "thumb": "thumbs/1samuel-book-01-06-dagon.jpg"
+            },
+            {
+              "title": "The Kine",
+              "ref": "1 Samuel 6:10–13",
+              "url": "1samuel/book-01/07-the-kine.html",
+              "thumb": "thumbs/1samuel-book-01-07-the-kine.jpg"
+            },
+            {
+              "title": "Give Us a King",
+              "ref": "1 Samuel 8:4–20",
+              "url": "1samuel/book-01/08-give-us-a-king.html",
+              "thumb": "thumbs/1samuel-book-01-08-give-us-a-king.jpg"
+            },
+            {
+              "title": "Long Live the King",
+              "ref": "1 Samuel 9:2 – 10:24",
+              "url": "1samuel/book-01/09-long-live-the-king.html",
+              "thumb": "thumbs/1samuel-book-01-09-long-live-the-king.jpg"
+            }
+          ]
+        },
+        {
+          "id": "book-02",
+          "title": "Book Two: The Battle Is Jehovah's",
+          "range": "1 Samuel 16–31",
+          "url": "1samuel/book-02/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "1 Samuel 16–31",
+              "url": "1samuel/book-02/00-cover.html",
+              "thumb": "thumbs/1samuel-book-02-00-cover.jpg"
+            },
+            {
+              "title": "The Youngest",
+              "ref": "1 Samuel 16:1–11",
+              "url": "1samuel/book-02/01-the-youngest.html",
+              "thumb": "thumbs/1samuel-book-02-01-the-youngest.jpg"
+            },
+            {
+              "title": "Arise, Anoint Him",
+              "ref": "1 Samuel 16:12–23",
+              "url": "1samuel/book-02/02-arise-anoint-him.html",
+              "thumb": "thumbs/1samuel-book-02-02-arise-anoint-him.jpg"
+            },
+            {
+              "title": "Goliath of Gath",
+              "ref": "1 Samuel 17:4–11",
+              "url": "1samuel/book-02/03-goliath-of-gath.html",
+              "thumb": "thumbs/1samuel-book-02-03-goliath-of-gath.jpg"
+            },
+            {
+              "title": "The Living God",
+              "ref": "1 Samuel 17:26–37",
+              "url": "1samuel/book-02/04-the-living-god.html",
+              "thumb": "thumbs/1samuel-book-02-04-the-living-god.jpg"
+            },
+            {
+              "title": "Five Smooth Stones",
+              "ref": "1 Samuel 17:38–40",
+              "url": "1samuel/book-02/05-five-smooth-stones.html",
+              "thumb": "thumbs/1samuel-book-02-05-five-smooth-stones.jpg"
+            },
+            {
+              "title": "In the Name of Jehovah",
+              "ref": "1 Samuel 17:42–47",
+              "url": "1samuel/book-02/06-in-the-name-of-jehovah.html",
+              "thumb": "thumbs/1samuel-book-02-06-in-the-name-of-jehovah.jpg"
+            },
+            {
+              "title": "A Sling and a Stone",
+              "ref": "1 Samuel 17:48–51",
+              "url": "1samuel/book-02/07-a-sling-and-a-stone.html",
+              "thumb": "thumbs/1samuel-book-02-07-a-sling-and-a-stone.jpg"
+            },
+            {
+              "title": "Jonathan",
+              "ref": "1 Samuel 18:1–11",
+              "url": "1samuel/book-02/08-jonathan.html",
+              "thumb": "thumbs/1samuel-book-02-08-jonathan.jpg"
+            },
+            {
+              "title": "The Cave",
+              "ref": "1 Samuel 24:3–17",
+              "url": "1samuel/book-02/09-the-cave.html",
+              "thumb": "thumbs/1samuel-book-02-09-the-cave.jpg"
+            },
+            {
+              "title": "Mount Gilboa",
+              "ref": "1 Samuel 31:1–6",
+              "url": "1samuel/book-02/10-mount-gilboa.html",
+              "thumb": "thumbs/1samuel-book-02-10-mount-gilboa.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2samuel",
+      "title": "2 Samuel",
+      "books": [
+        {
+          "id": "book-01",
+          "title": "Book One: Thou Art the Man",
+          "range": "2 Samuel 1–12",
+          "url": "2samuel/book-01/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "2 Samuel 1–12",
+              "url": "2samuel/book-01/00-cover.html",
+              "thumb": "thumbs/2samuel-book-01-00-cover.jpg"
+            },
+            {
+              "title": "Mourning",
+              "ref": "2 Samuel 1:11–17",
+              "url": "2samuel/book-01/01-mourning.html",
+              "thumb": "thumbs/2samuel-book-01-01-mourning.jpg"
+            },
+            {
+              "title": "King over All Israel",
+              "ref": "2 Samuel 5:3–11",
+              "url": "2samuel/book-01/02-king-over-all-israel.html",
+              "thumb": "thumbs/2samuel-book-01-02-king-over-all-israel.jpg"
+            },
+            {
+              "title": "The Ark Comes Up",
+              "ref": "2 Samuel 6:2–12",
+              "url": "2samuel/book-01/03-the-ark-comes-up.html",
+              "thumb": "thumbs/2samuel-book-01-03-the-ark-comes-up.jpg"
+            },
+            {
+              "title": "Dancing before Jehovah",
+              "ref": "2 Samuel 6:14–16",
+              "url": "2samuel/book-01/04-dancing-before-jehovah.html",
+              "thumb": "thumbs/2samuel-book-01-04-dancing-before-jehovah.jpg"
+            },
+            {
+              "title": "For Ever",
+              "ref": "2 Samuel 7:1–18",
+              "url": "2samuel/book-01/05-for-ever.html",
+              "thumb": "thumbs/2samuel-book-01-05-for-ever.jpg"
+            },
+            {
+              "title": "Mephibosheth",
+              "ref": "2 Samuel 9:3–13",
+              "url": "2samuel/book-01/06-mephibosheth.html",
+              "thumb": "thumbs/2samuel-book-01-06-mephibosheth.jpg"
+            },
+            {
+              "title": "The Letter",
+              "ref": "2 Samuel 11:1–27",
+              "url": "2samuel/book-01/07-the-letter.html",
+              "thumb": "thumbs/2samuel-book-01-07-the-letter.jpg"
+            },
+            {
+              "title": "The Ewe Lamb",
+              "ref": "2 Samuel 12:1–5",
+              "url": "2samuel/book-01/08-the-ewe-lamb.html",
+              "thumb": "thumbs/2samuel-book-01-08-the-ewe-lamb.jpg"
+            },
+            {
+              "title": "Thou Art the Man",
+              "ref": "2 Samuel 12:7–24",
+              "url": "2samuel/book-01/09-thou-art-the-man.html",
+              "thumb": "thumbs/2samuel-book-01-09-thou-art-the-man.jpg"
+            }
+          ]
         }
       ]
     }

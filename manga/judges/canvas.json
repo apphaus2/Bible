@@ -1,0 +1,178 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T04:31:25Z"
+ },
+ "title": "Judges Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JG1-P01-Deborah.dc.html": {
+   "x": 840,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "01 · The Palm-tree of Deborah"
+  },
+  "JG1-P02-Tabor.dc.html": {
+   "x": 1680,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "02 · This Is the Day"
+  },
+  "JG1-P03-Jael.dc.html": {
+   "x": 2520,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "03 · The Tent of Jael"
+  },
+  "JG1-P04-Valor.dc.html": {
+   "x": 3360,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "04 · Thou Mighty Man of Valor"
+  },
+  "JG1-P05-Fleece.dc.html": {
+   "x": 0,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "05 · The Fleece"
+  },
+  "JG1-P06-Three.dc.html": {
+   "x": 840,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "06 · Three Hundred Men"
+  },
+  "JG1-P07-Sword.dc.html": {
+   "x": 1680,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "07 · The Sword of Jehovah and of Gideon"
+  },
+  "JG1-P08-Rule.dc.html": {
+   "x": 2520,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "08 · Jehovah Shall Rule"
+  },
+  "JG2-Cover.dc.html": {
+   "x": 0,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 00 · Cover"
+  },
+  "JG2-P01-Nazirite.dc.html": {
+   "x": 840,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 01 · A Nazirite unto God"
+  },
+  "JG2-P02-Lion.dc.html": {
+   "x": 1680,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 02 · The Young Lion"
+  },
+  "JG2-P03-Foxes.dc.html": {
+   "x": 2520,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 03 · Three Hundred Foxes"
+  },
+  "JG2-P04-Jawbone.dc.html": {
+   "x": 3360,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 04 · The Jawbone"
+  },
+  "JG2-P05-Gaza.dc.html": {
+   "x": 0,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 05 · The Gates of Gaza"
+  },
+  "JG2-P06-Delilah.dc.html": {
+   "x": 840,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 06 · Wherein Thy Great Strength Lieth"
+  },
+  "JG2-P07-Shaven.dc.html": {
+   "x": 1680,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 07 · The Philistines Are upon Thee"
+  },
+  "JG2-P08-Pillars.dc.html": {
+   "x": 2520,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 08 · The Pillars"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JG1-P01-Deborah.dc.html",
+  "JG1-P02-Tabor.dc.html",
+  "JG1-P03-Jael.dc.html",
+  "JG1-P04-Valor.dc.html",
+  "JG1-P05-Fleece.dc.html",
+  "JG1-P06-Three.dc.html",
+  "JG1-P07-Sword.dc.html",
+  "JG1-P08-Rule.dc.html",
+  "JG2-Cover.dc.html",
+  "JG2-P01-Nazirite.dc.html",
+  "JG2-P02-Lion.dc.html",
+  "JG2-P03-Foxes.dc.html",
+  "JG2-P04-Jawbone.dc.html",
+  "JG2-P05-Gaza.dc.html",
+  "JG2-P06-Delilah.dc.html",
+  "JG2-P07-Shaven.dc.html",
+  "JG2-P08-Pillars.dc.html"
+ ],
+ "notes": {
+  "title": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "JUDGES — Book One: The Sword of Gideon (Ch. 4–8)",
+   "x": 0,
+   "y": -300
+  },
+  "title2": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "JUDGES — Book Two: Samson (Ch. 13–16)",
+   "x": 0,
+   "y": 2500
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

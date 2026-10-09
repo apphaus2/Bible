@@ -1,0 +1,99 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T04:31:25Z"
+ },
+ "title": "Judges Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JG1-P01-Deborah.dc.html": {
+   "x": 840,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "01 · The Palm-tree of Deborah"
+  },
+  "JG1-P02-Tabor.dc.html": {
+   "x": 1680,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "02 · This Is the Day"
+  },
+  "JG1-P03-Jael.dc.html": {
+   "x": 2520,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "03 · The Tent of Jael"
+  },
+  "JG1-P04-Valor.dc.html": {
+   "x": 3360,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "04 · Thou Mighty Man of Valor"
+  },
+  "JG1-P05-Fleece.dc.html": {
+   "x": 0,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "05 · The Fleece"
+  },
+  "JG1-P06-Three.dc.html": {
+   "x": 840,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "06 · Three Hundred Men"
+  },
+  "JG1-P07-Sword.dc.html": {
+   "x": 1680,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "07 · The Sword of Jehovah and of Gideon"
+  },
+  "JG1-P08-Rule.dc.html": {
+   "x": 2520,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "08 · Jehovah Shall Rule"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JG1-P01-Deborah.dc.html",
+  "JG1-P02-Tabor.dc.html",
+  "JG1-P03-Jael.dc.html",
+  "JG1-P04-Valor.dc.html",
+  "JG1-P05-Fleece.dc.html",
+  "JG1-P06-Three.dc.html",
+  "JG1-P07-Sword.dc.html",
+  "JG1-P08-Rule.dc.html"
+ ],
+ "notes": {
+  "title": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "JUDGES — Book One: The Sword of Gideon (Ch. 4–8)",
+   "x": 0,
+   "y": -300
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

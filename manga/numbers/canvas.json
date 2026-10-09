@@ -1,0 +1,99 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T02:06:54Z"
+ },
+ "title": "Numbers Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "NU1-P01-Spies.dc.html": {
+   "x": 840,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "01 · The Twelve Spies"
+  },
+  "NU1-P02-Report.dc.html": {
+   "x": 1680,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "02 · The Evil Report"
+  },
+  "NU1-P03-Wept.dc.html": {
+   "x": 2520,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "03 · The People Wept"
+  },
+  "NU1-P04-Forty.dc.html": {
+   "x": 3360,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "04 · Forty Years"
+  },
+  "NU1-P05-Rock.dc.html": {
+   "x": 0,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "05 · He Smote the Rock Twice"
+  },
+  "NU1-P06-Serpent.dc.html": {
+   "x": 840,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "06 · The Serpent of Brass"
+  },
+  "NU1-P07-Ass.dc.html": {
+   "x": 1680,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "07 · Balaam's Ass"
+  },
+  "NU1-P08-Star.dc.html": {
+   "x": 2520,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "08 · A Star out of Jacob"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "NU1-P01-Spies.dc.html",
+  "NU1-P02-Report.dc.html",
+  "NU1-P03-Wept.dc.html",
+  "NU1-P04-Forty.dc.html",
+  "NU1-P05-Rock.dc.html",
+  "NU1-P06-Serpent.dc.html",
+  "NU1-P07-Ass.dc.html",
+  "NU1-P08-Star.dc.html"
+ ],
+ "notes": {
+  "title": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "NUMBERS — Book One: In the Wilderness (Ch. 13–24)",
+   "x": 0,
+   "y": -300
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

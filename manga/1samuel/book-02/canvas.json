@@ -1,0 +1,115 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T14:17:53Z"
+ },
+ "title": "1 Samuel Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "SA2-Cover.dc.html": {
+   "x": 0,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 00 · Cover"
+  },
+  "SA2-P01-Youngest.dc.html": {
+   "x": 840,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 01 · The Youngest"
+  },
+  "SA2-P02-Anoint.dc.html": {
+   "x": 1680,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 02 · Arise, Anoint Him"
+  },
+  "SA2-P03-Goliath.dc.html": {
+   "x": 2520,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 03 · Goliath of Gath"
+  },
+  "SA2-P04-LivingGod.dc.html": {
+   "x": 3360,
+   "y": 2800,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 04 · The Living God"
+  },
+  "SA2-P05-Stones.dc.html": {
+   "x": 0,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 05 · Five Smooth Stones"
+  },
+  "SA2-P06-Name.dc.html": {
+   "x": 840,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 06 · In the Name of Jehovah"
+  },
+  "SA2-P07-Stone.dc.html": {
+   "x": 1680,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 07 · A Sling and a Stone"
+  },
+  "SA2-P08-Jonathan.dc.html": {
+   "x": 2520,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 08 · Jonathan"
+  },
+  "SA2-P09-Cave.dc.html": {
+   "x": 3360,
+   "y": 4000,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 09 · The Cave"
+  },
+  "SA2-P10-Gilboa.dc.html": {
+   "x": 0,
+   "y": 5200,
+   "w": 760,
+   "h": 1080,
+   "title": "B2 · 10 · Mount Gilboa"
+  }
+ },
+ "order": [
+  "SA2-Cover.dc.html",
+  "SA2-P01-Youngest.dc.html",
+  "SA2-P02-Anoint.dc.html",
+  "SA2-P03-Goliath.dc.html",
+  "SA2-P04-LivingGod.dc.html",
+  "SA2-P05-Stones.dc.html",
+  "SA2-P06-Name.dc.html",
+  "SA2-P07-Stone.dc.html",
+  "SA2-P08-Jonathan.dc.html",
+  "SA2-P09-Cave.dc.html",
+  "SA2-P10-Gilboa.dc.html"
+ ],
+ "notes": {
+  "title2": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "1 SAMUEL — Book Two: The Battle Is Jehovah's (Ch. 16–31)",
+   "x": 0,
+   "y": 2500
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

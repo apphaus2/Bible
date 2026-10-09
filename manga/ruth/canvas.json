@@ -1,0 +1,99 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-09T12:26:26Z"
+ },
+ "title": "Ruth Manga",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "RU1-P01-Moab.dc.html": {
+   "x": 840,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "01 · When the Judges Judged"
+  },
+  "RU1-P02-Return.dc.html": {
+   "x": 1680,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "02 · Return, Each of You"
+  },
+  "RU1-P03-Whither.dc.html": {
+   "x": 2520,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "03 · Whither Thou Goest"
+  },
+  "RU1-P04-Mara.dc.html": {
+   "x": 3360,
+   "y": 0,
+   "w": 760,
+   "h": 1080,
+   "title": "04 · Call Me Mara"
+  },
+  "RU1-P05-Field.dc.html": {
+   "x": 0,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "05 · The Field of Boaz"
+  },
+  "RU1-P06-Wings.dc.html": {
+   "x": 840,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "06 · Under Whose Wings"
+  },
+  "RU1-P07-Threshing.dc.html": {
+   "x": 1680,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "07 · The Threshing-floor"
+  },
+  "RU1-P08-Obed.dc.html": {
+   "x": 2520,
+   "y": 1200,
+   "w": 760,
+   "h": 1080,
+   "title": "08 · Obed"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "RU1-P01-Moab.dc.html",
+  "RU1-P02-Return.dc.html",
+  "RU1-P03-Whither.dc.html",
+  "RU1-P04-Mara.dc.html",
+  "RU1-P05-Field.dc.html",
+  "RU1-P06-Wings.dc.html",
+  "RU1-P07-Threshing.dc.html",
+  "RU1-P08-Obed.dc.html"
+ ],
+ "notes": {
+  "title": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "RUTH — Book One: Whither Thou Goest (Ch. 1–4)",
+   "x": 0,
+   "y": -300
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

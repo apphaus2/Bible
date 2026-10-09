@@ -1,0 +1,99 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "EX4-Cover.dc.html": {
+      "h": 1080,
+      "title": "B4 · 00 · Cover",
+      "w": 760,
+      "x": 0,
+      "y": 8400
+    },
+    "EX4-P01-Murmur.dc.html": {
+      "h": 1080,
+      "title": "B4 · 01 · Bread from Heaven",
+      "w": 760,
+      "x": 840,
+      "y": 8400
+    },
+    "EX4-P02-Manna.dc.html": {
+      "h": 1080,
+      "title": "B4 · 02 · Manna",
+      "w": 760,
+      "x": 1680,
+      "y": 8400
+    },
+    "EX4-P03-Rock.dc.html": {
+      "h": 1080,
+      "title": "B4 · 03 · The Rock in Horeb",
+      "w": 760,
+      "x": 2520,
+      "y": 8400
+    },
+    "EX4-P04-Amalek.dc.html": {
+      "h": 1080,
+      "title": "B4 · 04 · Hands Held Up",
+      "w": 760,
+      "x": 3360,
+      "y": 8400
+    },
+    "EX4-P05-Sinai.dc.html": {
+      "h": 1080,
+      "title": "B4 · 05 · The Mountain Smoked",
+      "w": 760,
+      "x": 0,
+      "y": 9600
+    },
+    "EX4-P06-IAm.dc.html": {
+      "h": 1080,
+      "title": "B4 · 06 · I Am Jehovah Thy God",
+      "w": 760,
+      "x": 840,
+      "y": 9600
+    },
+    "EX4-P07-TenWords.dc.html": {
+      "h": 1080,
+      "title": "B4 · 07 · The Ten Words",
+      "w": 760,
+      "x": 1680,
+      "y": 9600
+    },
+    "EX4-P08-AfarOff.dc.html": {
+      "h": 1080,
+      "title": "B4 · 08 · Afar Off",
+      "w": 760,
+      "x": 2520,
+      "y": 9600
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-04T21:49:22Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "title4": {
+      "kind": "title1",
+      "maxW": 4120,
+      "text": "EXODUS — Book Four: Sinai (Ch. 16–20)",
+      "x": 0,
+      "y": 8100
+    }
+  },
+  "order": [
+    "EX4-Cover.dc.html",
+    "EX4-P01-Murmur.dc.html",
+    "EX4-P02-Manna.dc.html",
+    "EX4-P03-Rock.dc.html",
+    "EX4-P04-Amalek.dc.html",
+    "EX4-P05-Sinai.dc.html",
+    "EX4-P06-IAm.dc.html",
+    "EX4-P07-TenWords.dc.html",
+    "EX4-P08-AfarOff.dc.html"
+  ],
+  "pages": [],
+  "title": "Exodus Manga"
+}

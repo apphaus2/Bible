@@ -20,7 +20,7 @@ SERIES = [
      "blurb": "Joseph's coat of many colors, the pit, Pharaoh's dreams, the granaries of Egypt, and the brothers forgiven."},
   ]},
   {"id": "exodus", "name": "Exodus", "kanji": "出エジプト記", "thumb": "exodus-",
-   "lede": "The second book of the Bible — the bondage in Egypt, Moses at the burning bush, the plagues, and the crossing of the Red Sea.",
+   "lede": "The second book of the Bible — the bondage in Egypt, Moses at the burning bush, the plagues, the Red Sea, Sinai, and the glory in the tabernacle — complete in five books.",
    "books": [
     {"dir": "book-01", "num": "One", "name": "The Bush That Burned", "range": "Exodus 1–4", "match": lambda n: n == "Main.dc.html" or n.startswith("EX1-"),
      "blurb": "The new king who knew not Joseph, the ark of bulrushes, Moses in Midian, the burning bush, I AM THAT I AM, and the rod."},
@@ -28,9 +28,54 @@ SERIES = [
      "blurb": "Let my people go: the rods that became serpents, the river turned to blood, frogs, lice, flies, hail and fire, locusts, darkness, and the warning of midnight."},
     {"dir": "book-03", "num": "Three", "name": "The Red Sea", "range": "Exodus 12–15", "match": lambda n: n.startswith("EX3-"),
      "blurb": "The passover lamb, the blood on the doorposts, the great cry at midnight, the pillars of cloud and fire, the sea divided, and the song of Miriam."},
+    {"dir": "book-04", "num": "Four", "name": "Sinai", "range": "Exodus 16–20", "match": lambda n: n.startswith("EX4-"),
+     "blurb": "Manna and quails, water from the rock, Aaron and Hur holding up Moses' hands, the mountain on fire, and the ten commandments."},
+    {"dir": "book-05", "num": "Five", "name": "The Glory", "range": "Exodus 24–40", "match": lambda n: n.startswith("EX5-"),
+     "blurb": "The tables of stone, the golden calf, the tables broken, Moses in the cleft of the rock, his shining face, and the glory filling the tabernacle."},
+  ]},
+  {"id": "numbers", "name": "Numbers", "kanji": "民数記", "thumb": "numbers-",
+   "lede": "The fourth book of the Bible — highlights from the wilderness: the twelve spies, forty years of wandering, water from the rock, the serpent of brass, and Balaam's ass.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "In the Wilderness", "range": "Numbers 13–24", "match": lambda n: n == "Main.dc.html" or n.startswith("NU1-"),
+     "blurb": "The twelve spies and the grapes of Eshcol, the evil report, forty years, the rock smitten twice, the fiery serpents and the serpent of brass, Balaam's ass, and a star out of Jacob."},
+  ]},
+  {"id": "joshua", "name": "Joshua", "kanji": "ヨシュア記", "thumb": "joshua-",
+   "lede": "The sixth book of the Bible — Joshua leads Israel over Jordan: Rahab and the scarlet line, the walls of Jericho, the sun standing still, and choose you this day.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "Jericho", "range": "Joshua 1–24", "match": lambda n: n == "Main.dc.html" or n.startswith("JO1-"),
+     "blurb": "Be strong and of good courage, Rahab and the scarlet line, the Jordan heaped up, the prince of Jehovah's host, the walls of Jericho falling flat, the sun standing still, and Joshua's farewell."},
+  ]},
+  {"id": "judges", "name": "Judges", "kanji": "士師記", "thumb": "judges-",
+   "lede": "The seventh book of the Bible — the judges Jehovah raised up: Deborah under her palm-tree, Jael's tent, Gideon's three hundred with trumpets, pitchers and torches, and Samson — complete in two books.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "The Sword of Gideon", "range": "Judges 4–8", "match": lambda n: n == "Main.dc.html" or n.startswith("JG1-"),
+     "blurb": "Deborah and Barak, Sisera's chariots routed, the tent of Jael, Gideon in the winepress, the fleece, the three hundred, and the sword of Jehovah and of Gideon."},
+    {"dir": "book-02", "num": "Two", "name": "Samson", "range": "Judges 13–16", "match": lambda n: n.startswith("JG2-"),
+     "blurb": "The Nazirite from the womb, the young lion, three hundred foxes, the jawbone, the gates of Gaza, Delilah, the seven locks, and the two middle pillars."},
+  ]},
+  {"id": "ruth", "name": "Ruth", "kanji": "ルツ記", "thumb": "ruth-",
+   "lede": "The eighth book of the Bible — Ruth the Moabitess cleaves to Naomi, gleans in the field of Boaz, and becomes the great-grandmother of David.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "Whither Thou Goest", "range": "Ruth 1–4", "match": lambda n: n == "Main.dc.html" or n.startswith("RU1-"),
+     "blurb": "The famine and Moab, Orpah's kiss and Ruth's vow, Naomi who called herself Mara, the field of Boaz, the threshing-floor at midnight, and Obed, the father of Jesse, the father of David."},
+  ]},
+  {"id": "1samuel", "name": "1 Samuel", "kanji": "サムエル記上", "thumb": "1samuel-",
+   "lede": "The ninth book of the Bible — Hannah's prayer, the child Samuel who answers in the night, the ark among the Philistines, Israel's first king, and David and Goliath.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "Thy Servant Heareth", "range": "1 Samuel 1–10", "match": lambda n: n == "Main.dc.html" or n.startswith("SA1-"),
+     "blurb": "Hannah's vow at Shiloh, the child given to Jehovah, the voice in the night and \"Speak; for thy servant heareth,\" the ark taken and Dagon fallen on his face, the kine that carried it home, and Saul anointed king."},
+    {"dir": "book-02", "num": "Two", "name": "The Battle Is Jehovah's", "range": "1 Samuel 16–31", "match": lambda n: n.startswith("SA2-"),
+     "blurb": "David anointed among his brethren, the harp for Saul, Goliath of Gath, five smooth stones and a sling, Jonathan's covenant, Saul's spear, the skirt of Saul's robe in the cave, and Saul's end on mount Gilboa."},
+  ]},
+  {"id": "2samuel", "name": "2 Samuel", "kanji": "サムエル記下", "thumb": "2samuel-",
+   "lede": "The tenth book of the Bible — David king over all Israel, the ark brought up to Jerusalem, the promise of a throne for ever, and Nathan's word to the king.",
+   "books": [
+    {"dir": "book-01", "num": "One", "name": "Thou Art the Man", "range": "2 Samuel 1–12", "match": lambda n: n == "Main.dc.html" or n.startswith("SB1-"),
+     "blurb": "David mourns Saul and Jonathan, is anointed king in Hebron and takes Zion, dances before the ark, receives the promise of a house for ever, shows kindness to Mephibosheth, sends Uriah to the forefront of the battle, and hears Nathan's parable of the ewe lamb."},
   ]},
 ]
 SERIES = [x for x in SERIES if x["id"] in SRC]
+NAMES = ", ".join(x["name"] for x in SERIES[:-1]) + (" and " if len(SERIES) > 1 else "") + SERIES[-1]["name"]
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
 def slug(t):
     t = re.sub(r"^(B\d+ · )?\d+ · ", "", t)
@@ -167,8 +212,8 @@ first = FLAT[0]
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bible Manga · Genesis and Exodus</title>
-<meta name="description" content="The Bible as a full-color manga, in the style of 1980s cyberpunk comics, adapted from the American Standard Version: Genesis and Exodus.">
+<title>Bible Manga · {NAMES}</title>
+<meta name="description" content="The Bible as a full-color manga, in the style of 1980s cyberpunk comics, adapted from the American Standard Version: {NAMES}.">
 <meta property="og:image" content="thumbs/{thumb(first, first['pages'][0])}">
 {FONTS}
 <link rel="stylesheet" href="assets/site.css">
