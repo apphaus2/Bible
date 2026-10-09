@@ -1180,6 +1180,74 @@
               "thumb": "thumbs/2samuel-book-01-09-thou-art-the-man.jpg"
             }
           ]
+        },
+        {
+          "id": "book-02",
+          "title": "Book Two: O My Son Absalom",
+          "range": "2 Samuel 14–24",
+          "url": "2samuel/book-02/",
+          "pages": [
+            {
+              "title": "Cover",
+              "ref": "2 Samuel 14–24",
+              "url": "2samuel/book-02/00-cover.html",
+              "thumb": "thumbs/2samuel-book-02-00-cover.jpg"
+            },
+            {
+              "title": "No Blemish in Him",
+              "ref": "2 Samuel 14:25–26",
+              "url": "2samuel/book-02/01-no-blemish-in-him.html",
+              "thumb": "thumbs/2samuel-book-02-01-no-blemish-in-him.jpg"
+            },
+            {
+              "title": "He Stole the Hearts",
+              "ref": "2 Samuel 15:2–6",
+              "url": "2samuel/book-02/02-he-stole-the-hearts.html",
+              "thumb": "thumbs/2samuel-book-02-02-he-stole-the-hearts.jpg"
+            },
+            {
+              "title": "Absalom Is King in Hebron",
+              "ref": "2 Samuel 15:10–14",
+              "url": "2samuel/book-02/03-absalom-is-king-in-hebron.html",
+              "thumb": "thumbs/2samuel-book-02-03-absalom-is-king-in-hebron.jpg"
+            },
+            {
+              "title": "The Mount of Olives",
+              "ref": "2 Samuel 15:23–30",
+              "url": "2samuel/book-02/04-the-mount-of-olives.html",
+              "thumb": "thumbs/2samuel-book-02-04-the-mount-of-olives.jpg"
+            },
+            {
+              "title": "Deal Gently",
+              "ref": "2 Samuel 18:5–8",
+              "url": "2samuel/book-02/05-deal-gently.html",
+              "thumb": "thumbs/2samuel-book-02-05-deal-gently.jpg"
+            },
+            {
+              "title": "Between Heaven and Earth",
+              "ref": "2 Samuel 18:9–17",
+              "url": "2samuel/book-02/06-between-heaven-and-earth.html",
+              "thumb": "thumbs/2samuel-book-02-06-between-heaven-and-earth.jpg"
+            },
+            {
+              "title": "Tidings",
+              "ref": "2 Samuel 18:24–32",
+              "url": "2samuel/book-02/07-tidings.html",
+              "thumb": "thumbs/2samuel-book-02-07-tidings.jpg"
+            },
+            {
+              "title": "O My Son",
+              "ref": "2 Samuel 18:33 – 19:2",
+              "url": "2samuel/book-02/08-o-my-son.html",
+              "thumb": "thumbs/2samuel-book-02-08-o-my-son.jpg"
+            },
+            {
+              "title": "Which Cost Me Nothing",
+              "ref": "2 Samuel 24:18–25",
+              "url": "2samuel/book-02/09-which-cost-me-nothing.html",
+              "thumb": "thumbs/2samuel-book-02-09-which-cost-me-nothing.jpg"
+            }
+          ]
         }
       ]
     }

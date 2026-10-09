@@ -68,10 +68,12 @@ SERIES = [
      "blurb": "David anointed among his brethren, the harp for Saul, Goliath of Gath, five smooth stones and a sling, Jonathan's covenant, Saul's spear, the skirt of Saul's robe in the cave, and Saul's end on mount Gilboa."},
   ]},
   {"id": "2samuel", "name": "2 Samuel", "kanji": "サムエル記下", "thumb": "2samuel-",
-   "lede": "The tenth book of the Bible — David king over all Israel, the ark brought up to Jerusalem, the promise of a throne for ever, and Nathan's word to the king.",
+   "lede": "The tenth book of the Bible — David king over all Israel, the ark brought up to Jerusalem, the promise of a throne for ever, Nathan's word to the king, and Absalom's revolt.",
    "books": [
     {"dir": "book-01", "num": "One", "name": "Thou Art the Man", "range": "2 Samuel 1–12", "match": lambda n: n == "Main.dc.html" or n.startswith("SB1-"),
      "blurb": "David mourns Saul and Jonathan, is anointed king in Hebron and takes Zion, dances before the ark, receives the promise of a house for ever, shows kindness to Mephibosheth, sends Uriah to the forefront of the battle, and hears Nathan's parable of the ewe lamb."},
+    {"dir": "book-02", "num": "Two", "name": "O My Son Absalom", "range": "2 Samuel 14–24", "match": lambda n: n.startswith("SB2-"),
+     "blurb": "Absalom's beauty and his hair, the hearts he stole at the gate, David's flight weeping up the mount of Olives, the forest of Ephraim and the great oak, the runner with tidings, the king's cry in the chamber over the gate, and the altar on Araunah's threshing-floor."},
   ]},
 ]
 SERIES = [x for x in SERIES if x["id"] in SRC]

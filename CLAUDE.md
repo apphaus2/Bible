@@ -32,9 +32,10 @@ website from `docs/` (GitHub Pages).
 | 1 Samuel | One — Thy Servant Heareth | 1–10 | Hannah's vow → the child given → here am I → speak; for thy servant heareth → the ark taken → Dagon fallen → the kine → give us a king → Saul anointed | `manga/1samuel/book-01/` | yes |
 | 1 Samuel | Two — The Battle Is Jehovah's | 16–31 | the youngest → David anointed → Goliath of Gath → the living God → five smooth stones → in the name of Jehovah → a sling and a stone → Jonathan and Saul's spear → the cave → mount Gilboa | `manga/1samuel/book-02/` | yes |
 | 2 Samuel | One — Thou Art the Man | 1–12 | mourning for Saul and Jonathan → king over all Israel → the ark comes up → dancing before Jehovah → for ever → Mephibosheth → the letter → the ewe lamb → thou art the man | `manga/2samuel/book-01/` | yes |
+| 2 Samuel | Two — O My Son Absalom | 14–24 | no blemish in him → he stole the hearts → Absalom is king in Hebron → the mount of Olives → deal gently → between heaven and earth → tidings → O my son → which cost me nothing | `manga/2samuel/book-02/` | yes |
 
 **Genesis and Exodus are complete** (ten manga books, 89 pages). **Numbers** and **Joshua** each have one
-highlights book, **Judges** has two books (Deborah and Gideon; Samson), **Ruth** is complete in one book, and **1 Samuel** is complete in two books (Hannah to Saul, 10 pages; David, 11 pages), and **2 Samuel** has Book One (10 pages): 165 pages in all. Every quotation has been checked against the ASV source
+highlights book, **Judges** has two books (Deborah and Gideon; Samson), **Ruth** is complete in one book, and **1 Samuel** is complete in two books (Hannah to Saul, 10 pages; David, 11 pages), and **2 Samuel** is complete in two books (10 pages each): 175 pages in all. Every quotation has been checked against the ASV source
 (Exodus Book Three's check fixed two semicolons, in 12:30 and 13:21).
 
 ### The live canvases (private Claude Design artifacts)
@@ -91,6 +92,7 @@ manga/
   2samuel/
     canvas.json       2 Samuel canvas index
     book-01/          Main.dc.html (cover), SB1-P01…SB1-P09, canvas.json (ends with つづく TO BE CONTINUED)
+    book-02/          SB2-Cover, SB2-P01…SB2-P09, canvas.json (ends with 終 END OF 2 SAMUEL)
 tools/
   — shared kit —
   figures.json        silhouettes: MAN, WOMAN, HAIR, LIE_BODY, LIE_ARM (feet at 0,0, ~200 units tall)
@@ -162,6 +164,12 @@ tools/
                       over Jerusalem's rooftops), lamb_held(); DAVID_K, NATHAN dicts; David as king (also joyful,
                       wrathful, grieving), David mourning, Nathan (also stern), Michal, Mephibosheth
   samuel3_book1.py    writes 2 Samuel Book One (elders())
+  samuel4.py          absalom() (scarlet tunic, gold sash and band, heavy black hair behind), hanging() (caught in the oak,
+                      arms up), great_oak() (thick trunk, long boughs; dark=True for silhouettes), bough_over(),
+                      balance() (the hair weighed against shekels), gatehouse() (towers, gateway, chamber window, lit=),
+                      runner(), stone_heap(), threshing_floor(), altar() (unhewn stones, fire and smoke); DAVID_OLD dict;
+                      Absalom (also sly), David old (also alarmed, weeping), the Cushite, Gad
+  samuel4_book2.py    writes 2 Samuel Book Two (forest(), mourners() with covered heads, fleeing())
   — website and checking —
   build_site.py       builds docs/ from flat page folders (SERIES config lists every series and book)
   rebuild_site.py     one step: python3 tools/rebuild_site.py [--thumbs]
@@ -318,6 +326,9 @@ Never fall back to blobs or stick figures.
     Mephibosheth: blue headcloth and tunic like his father Jonathan. Bath-sheba appears only as a mother with Solomon.
   - 11:2 is caption-only (David alone on the roof); Uriah's death is a distant silhouette.
   - David's lament (1:19–27) is poetry the fetch tool won't quote; Book One uses 1:11–12 and 1:17 instead.
+  - Absalom: heavy black hair to the shoulders, gold band, scarlet tunic with a gold sash, stubble. David old:
+    grey-auburn hair, pale beard, purple headcloth with the gold band. The Cushite: white headcloth.
+  - Absalom's death (18:14–15) is not shown: 18:9 (caught in the oak) then 18:17 (the heap of stones).
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'
@@ -343,7 +354,7 @@ A static site built from the pages, served by GitHub Pages from `main` › `/doc
 - `docs/<series>/book-NN/index.html`: each book's index with page thumbnails.
 - `docs/<series>/book-NN/NN-<slug>.html`: one URL per manga page, with breadcrumbs
   (Bible Manga / series / book / page), Prev/Next (arrow keys and swipe too) and `<link rel=prev/next>`.
-  Books chain into each other across series: Genesis → Exodus → Numbers → Joshua → Judges → Ruth → 1 Samuel (two books) → 2 Samuel.
+  Books chain into each other across series: Genesis → Exodus → Numbers → Joshua → Judges → Ruth → 1 Samuel (two books) → 2 Samuel (two books).
 - `docs/manifest.json`: every series, book and page (title, verse ref, URL, thumbnail) for linking.
 - `docs/thumbs/`: 380×540 JPGs — `book-NN-<slug>.jpg` for Genesis, `<series>-book-NN-<slug>.jpg` for the others.
 
@@ -372,11 +383,11 @@ Look at people, faces, balloon tails, overlaps and cut-off art before publishing
 
 ## Roadmap
 
-- Next: 2 Samuel Book Two — Absalom (Absalom steals the hearts of the men of Israel (15:6), David flees over
-  the brook Kidron and up the ascent of the mount of Olives weeping (15:23, 15:30), Absalom caught by his head in
-  the oak (18:9), "O my son Absalom, my son, my son Absalom!" (18:33), and the end of the book). Prefix `SB2-`, board
-  titles "B2 · 0N · …" on the 2 Samuel canvas (second block at y = 2800 with a `title2` note), `book-02/` in
-  `manga/2samuel/`, a second `books` entry in the `2samuel` SERIES.
+- Next: 1 Kings — Book One (David's charge to Solomon, Solomon's dream at Gibeon "Give thy servant an understanding
+  heart" (3:9), the two harlots and the living child (3:16–28, the sword drawn but the child given), the building of
+  the house of Jehovah (6), the glory filling the house (8:10–11), the queen of Sheba (10)) and Book Two (Elijah:
+  the ravens (17), the widow's meal and oil, Carmel and the fire (18), the still small voice (19:11–12), Elijah's
+  mantle on Elisha). Kanji 列王紀上 (RETSUŌKI JŌ); series id `1kings`, prefixes `KI1-`, `KI2-`.
 - Judges 5 (the Song of Deborah) is poetry the fetch tool won't quote in fragments; skip it or check it by hand.
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.
