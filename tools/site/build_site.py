@@ -1,4 +1,4 @@
-"""Build the static website (docs/) from both editions.
+"""Build the static website (_site/, deployed by GitHub Actions) from both editions.
 
 Usage: python3 tools/site/build_site.py <out_dir> <key>=<dir> ...
   - a key naming a folder with volume.json is a FULL-EDITION volume (volumes/<id>/): canvas.json, volume.json, pages/

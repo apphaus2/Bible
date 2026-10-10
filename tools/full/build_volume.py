@@ -1,6 +1,8 @@
 """Build one volume of the full edition.
 
-Usage (from the repo root):  python3 tools/full/build_volume.py genesis
+Usage (from the repo root):  python3 tools/full/build_volume.py genesis [--check]
+  --check  writes nothing: regenerates every page in memory, fails if a committed page differs from what the
+           plan would produce, and runs the ASV text check (GitHub Actions runs this on every push).
 
 Reads tools/full/<volume>/ (META in __init__.py, cover.py, one module per manga chapter) and writes volumes/<volume>/:
   pages/*.dc.html   every page (Main.dc.html is the volume cover)
@@ -13,7 +15,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / "kit"))
 
-def main(vol):
+def main(vol, check=False):
     pkg = importlib.import_module(vol)
     META, G = pkg.META, pkg.G
     out = ROOT / "volumes" / vol; pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
@@ -27,10 +29,19 @@ def main(vol):
         prefix = names[0][0].rsplit("-", 2)[0].rsplit("-", 1)[0] + "-"     # e.g. GEN-C01-
         chapters.append(dict(c, prefixes=(["Main.dc.html"] if c is META["chapters"][0] else []) + [prefix], files=[n for n, _, _ in names]))
     written = set()
+    stale_pages = []
     for name, _, fn in order:
-        (pages_dir / name).write_text(fn()); written.add(name)
+        html_ = fn(); written.add(name)
+        if check:
+            f = pages_dir / name
+            if not f.exists() or f.read_text() != html_: stale_pages.append(name)
+        else:
+            (pages_dir / name).write_text(html_)
     for stale in pages_dir.glob("*.dc.html"):
-        if stale.name not in written: stale.unlink()
+        if stale.name not in written:
+            stale_pages.append(stale.name) if check else stale.unlink()
+    if check and stale_pages:
+        print("OUT OF DATE (re-run build_volume.py and commit):", ", ".join(stale_pages)); sys.exit(1)
 
     # canvas: the cover, then each chapter as its own block of rows (5 boards a row), with a title note above each block
     cpath = out / "canvas.json"
@@ -47,9 +58,9 @@ def main(vol):
     canvas = {"v": 3, "createdOnFiles": old.get("createdOnFiles") or {"v": 1, "at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")},
               "title": f"{META['name']} — Full Edition", "launch": {"view": "canvas"}, "pages": [],
               "boards": boards, "order": [n for n, _, _ in order], "notes": notes, "designSystems": [], "attachments": {}}
-    cpath.write_text(json.dumps(canvas, indent=1, ensure_ascii=False))
+    if not check: cpath.write_text(json.dumps(canvas, indent=1, ensure_ascii=False))
 
-    (out / "volume.json").write_text(json.dumps({k: META[k] for k in ("id", "order", "name", "kanji", "thumb", "lede")} | {
+    if not check: (out / "volume.json").write_text(json.dumps({k: META[k] for k in ("id", "order", "name", "kanji", "thumb", "lede")} | {
         "books": [{k: c[k] for k in ("dir", "num", "name", "range", "blurb", "prefixes")} for c in chapters]}, indent=1, ensure_ascii=False))
 
     # coverage report
@@ -67,7 +78,7 @@ def main(vol):
         lines += (odd or ["Every verse is on the page in full."]) + [""]
     allv = sum(tot.values())
     lines.insert(4, f"**So far:** {allv} verses — {tot['full']} full, {tot['partial']} partial, {tot['omitted']} omitted.\n")
-    (out / "coverage.md").write_text("\n".join(lines))
+    if not check: (out / "coverage.md").write_text("\n".join(lines))
 
     # text check: every uppercase text block must be a run of the ASV (… marks a cut). Labels that are not
     # scripture (titles, credits) carry data-label and are skipped.
@@ -85,4 +96,4 @@ def main(vol):
     if bad: sys.exit(1)
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], check="--check" in sys.argv)

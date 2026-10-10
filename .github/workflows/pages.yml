@@ -1,0 +1,69 @@
+# Build the Bible Manga website from volumes/ and digest/ and deploy it to GitHub Pages.
+# Repo setting needed once: Settings › Pages › Build and deployment › Source: "GitHub Actions".
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Pillow and Playwright (Chromium)
+        run: |
+          pip install pillow
+          npm install --no-save --no-package-lock playwright@1.48.2
+          npx playwright install --with-deps chromium
+
+      - name: Check the full edition against the ASV
+        run: |
+          for v in tools/full/*/__init__.py; do
+            python3 tools/full/build_volume.py "$(basename "$(dirname "$v")")" --check
+          done
+
+      - name: Restore thumbnail cache
+        uses: actions/cache@v4
+        with:
+          path: _site/thumbs
+          key: thumbs-${{ github.run_id }}
+          restore-keys: thumbs-
+
+      - name: Build the site
+        run: python3 tools/site/rebuild_site.py --thumbs --out _site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
