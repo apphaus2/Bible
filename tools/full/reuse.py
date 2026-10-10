@@ -2,7 +2,8 @@
 
     panels("digest/genesis/book-01/P05-Eden.dc.html") -> [Art(bg, w, h, svg), ...] in page order
 Each Art keeps its own viewBox size; ids inside are renamed with a unique prefix so two lifted panels can
-share a page. Only the <svg> drawing is taken: captions, balloons and sound effects are left behind."""
+share a page. Only the <svg> drawing (plus any full-panel overlay div, kept as a background layer) is taken: captions,
+balloons and sound effects are left behind."""
 import re, pathlib, itertools
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 _n = itertools.count()
@@ -21,6 +22,9 @@ def _prefix(svg):
 def panels(rel):
     s = (ROOT / rel).read_text()
     out = []
-    for m in re.finditer(r'<div style="position: relative; overflow: hidden; border: 3px solid #0D0D0F; background: ([^"]*)">\s*<svg viewBox="0 0 (\d+) (\d+)"[^>]*>(.*?)</svg>', s, re.S):
-        out.append(Art(m.group(1), int(m.group(2)), int(m.group(3)), _prefix(m.group(4))))
+    for m in re.finditer(r'<div style="position: relative; overflow: hidden; border: 3px solid #0D0D0F; background: ([^"]*)">\s*'
+                         r'((?:<div style="position: absolute; inset: 0; background: [^"]*"></div>\s*)*)<svg viewBox="0 0 (\d+) (\d+)"[^>]*>(.*?)</svg>', s, re.S):
+        # an overlay div (e.g. rain streaks) becomes an extra background layer on top of the panel's own
+        layers = re.findall(r'background: ([^"]*)"', m.group(2)) + [m.group(1)]
+        out.append(Art(", ".join(layers), int(m.group(3)), int(m.group(4)), _prefix(m.group(5))))
     return out

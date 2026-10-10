@@ -25,8 +25,9 @@ There are two editions:
 | Volume | Chapter | Bible chapters | Pages | Coverage | Folder |
 |---|---|---|---|---|---|
 | Genesis | 1 · In the Beginning (pilot) | 1–3 | cover + title + 16 | 80/80 verses full | `volumes/genesis/` |
+| Genesis | 2 · Cain to the Flood | 4–9 | title + 24 (pp. 17–40) | 155/155 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 2 (Genesis 4–9), once the pilot has been reviewed. Planned Genesis chapters:
+Next: Genesis chapter 3 (Genesis 10–15; ch. 10 and 11:10–32 are lists → scroll pages like Genesis 5). Planned Genesis chapters:
 1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
 4 Abraham (16–23) · 5 Isaac and Rebekah (24–27) · 6 Jacob (28–36) · 7 Joseph sold, Joseph raised up (37–41) ·
 8 Joseph and his brothers (42–50). Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
@@ -96,11 +97,13 @@ tools/
   full/               full-edition builder
     asv.py            Book("GEN").v("1:3", frm=…, to=…) cuts exact text out of ref/asv and records coverage
     reuse.py          panels("digest/…/P05-Eden.dc.html") lifts a digest page's drawn panels for reuse
+                      (a full-panel overlay div, e.g. rain streaks, comes along as an extra background layer)
     fx.py             page kit: use(art) / new(bg, w, h, svg) panels, vref() verse labels, day_stamp(),
                       chapter_title(), end_mark()
     build_volume.py   python3 tools/full/build_volume.py genesis  → writes volumes/genesis/ and checks the text
                       (--check writes nothing: fails if committed pages are out of date or any text isn't ASV)
-    genesis/          __init__.py (META: chapters), cover.py, art.py (new Genesis drawings), ch01.py, …
+    genesis/          __init__.py (META: chapters), cover.py, art.py (chapter 1 drawings), art2.py (chapter 2:
+                      Cain's line, Noah and his house, the ark, the flood, the dove, the bow), ch01.py, ch02.py, …
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -203,6 +206,10 @@ and the website tools in `tools/site/`):
    dialogue in `balloon()`, God's words in `god()`; a `vref("GEN 1:3–4")` label on each panel; day/chapter
    stamps. Reuse digest art with `reuse.panels()` where it fits; new drawings go in `<volume>/art.py`.
    Number pages continuously through the volume (chapter 2 starts after chapter 1's last page).
+   `ch02.py` adds two helpers worth copying: `rows(...)` (row template + the real panel heights, so each
+   viewBox matches its panel) and `entry(...)` (a "scroll" cell for genealogies: name, lifespan bar, verses —
+   Genesis 5 is two such pages, every verse in full). Size standing figures with `art2.fit(base, top)` (a
+   figure is ~200 units tall at scale 1) so heads stay clear of the captions; figures are drawn front-on.
 3. **Add the chapter to `META["chapters"]`** in `tools/full/<volume>/__init__.py`.
 4. **Build and check:** `python3 tools/full/build_volume.py genesis` (stops on any text that isn't ASV), then
    `node tools/site/shots.js /tmp/png volumes/genesis/pages/GEN-C02-*.dc.html` and look at every page.

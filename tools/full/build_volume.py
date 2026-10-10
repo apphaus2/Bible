@@ -26,7 +26,7 @@ def main(vol, check=False):
         mod = importlib.import_module(f"{vol}.{c['module']}")
         names = [(f"{n}.dc.html", t, fn) for n, t, fn in mod.PAGES]
         order += names
-        prefix = names[0][0].rsplit("-", 2)[0].rsplit("-", 1)[0] + "-"     # e.g. GEN-C01-
+        prefix = "-".join(names[0][0].split("-")[:2]) + "-"                # e.g. GEN-C01-
         chapters.append(dict(c, prefixes=(["Main.dc.html"] if c is META["chapters"][0] else []) + [prefix], files=[n for n, _, _ in names]))
     written = set()
     stale_pages = []
