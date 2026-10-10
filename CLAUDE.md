@@ -411,7 +411,7 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Working notes for Claude
 
-- **Where Claude works:** Claude Code on the user's Windows machine, in `C:\_GITHUBpphaus2\Bible` (sometimes a
+- **Where Claude works:** Claude Code on the user's Windows machine, in `C:\_GITHUB\apphaus2\Bible` (sometimes a
   worktree under `.claude/worktrees/`). Run Python as `PYTHONUTF8=1 python …` (the default code page breaks the
   UTF-8 sources). Node + Playwright for `shots.js` may need installing in a scratch folder (`NODE_PATH`).
 - **"continue"** from the user means: build the next full-edition chapter.
