@@ -26,6 +26,16 @@
    "prefixes": [
     "GEN-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "Babel to Abram's Covenant",
+   "range": "Genesis 10–15",
+   "blurb": "The table of the nations, Nimrod the mighty hunter, the tower of Babel, the generations of Shem, the call of Abram, Egypt and Pharaoh's house, Lot and the Plain, the war of the kings, Melchizedek, the stars, and the covenant between the pieces.",
+   "prefixes": [
+    "GEN-C03-"
+   ]
   }
  ]
 }

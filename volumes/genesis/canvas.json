@@ -310,6 +310,181 @@
    "w": 760,
    "h": 1080,
    "title": "40 · All the Days of Noah"
+  },
+  "GEN-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Babel to Abram's Covenant"
+  },
+  "GEN-C03-P01-Nations.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Generations of the Sons of Noah"
+  },
+  "GEN-C03-P02-Nimrod.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · A Mighty Hunter before Jehovah"
+  },
+  "GEN-C03-P03-Canaan.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · The Border of the Canaanite"
+  },
+  "GEN-C03-P04-Peleg.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · In His Days Was the Earth Divided"
+  },
+  "GEN-C03-P05-Brick.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Let Us Make Brick"
+  },
+  "GEN-C03-P06-Babel.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Confound Their Language"
+  },
+  "GEN-C03-P07-Shem.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Generations of Shem"
+  },
+  "GEN-C03-P08-Terah.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Ur of the Chaldees"
+  },
+  "GEN-C03-P09-Call.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Get Thee Out of Thy Country"
+  },
+  "GEN-C03-P10-Shechem.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Unto Thy Seed Will I Give This Land"
+  },
+  "GEN-C03-P11-Famine.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Thou Art a Fair Woman"
+  },
+  "GEN-C03-P12-Pharaoh.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Pharaoh's House"
+  },
+  "GEN-C03-P13-Strife.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Very Rich in Cattle"
+  },
+  "GEN-C03-P14-Choose.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Lot Chose Him All the Plain"
+  },
+  "GEN-C03-P15-Lift.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Lift Up Now Thine Eyes"
+  },
+  "GEN-C03-P16-Kings.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Four Kings against the Five"
+  },
+  "GEN-C03-P17-Siddim.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Vale of Siddim"
+  },
+  "GEN-C03-P18-Pursuit.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Abram the Hebrew"
+  },
+  "GEN-C03-P19-Melchizedek.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Priest of God Most High"
+  },
+  "GEN-C03-P20-Thread.dc.html": {
+   "x": 0,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · From a Thread to a Shoe-Latchet"
+  },
+  "GEN-C03-P21-Stars.dc.html": {
+   "x": 840,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Number the Stars"
+  },
+  "GEN-C03-P22-Pieces.dc.html": {
+   "x": 1680,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Between These Pieces"
+  },
+  "GEN-C03-P23-Sojourners.dc.html": {
+   "x": 2520,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Four Hundred Years"
+  },
+  "GEN-C03-P24-Furnace.dc.html": {
+   "x": 3360,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Smoking Furnace and a Flaming Torch"
   }
  },
  "order": [
@@ -355,7 +530,32 @@
   "GEN-C02-P21-Token.dc.html",
   "GEN-C02-P22-Bow.dc.html",
   "GEN-C02-P23-Vineyard.dc.html",
-  "GEN-C02-P24-Days.dc.html"
+  "GEN-C02-P24-Days.dc.html",
+  "GEN-C03-00-Title.dc.html",
+  "GEN-C03-P01-Nations.dc.html",
+  "GEN-C03-P02-Nimrod.dc.html",
+  "GEN-C03-P03-Canaan.dc.html",
+  "GEN-C03-P04-Peleg.dc.html",
+  "GEN-C03-P05-Brick.dc.html",
+  "GEN-C03-P06-Babel.dc.html",
+  "GEN-C03-P07-Shem.dc.html",
+  "GEN-C03-P08-Terah.dc.html",
+  "GEN-C03-P09-Call.dc.html",
+  "GEN-C03-P10-Shechem.dc.html",
+  "GEN-C03-P11-Famine.dc.html",
+  "GEN-C03-P12-Pharaoh.dc.html",
+  "GEN-C03-P13-Strife.dc.html",
+  "GEN-C03-P14-Choose.dc.html",
+  "GEN-C03-P15-Lift.dc.html",
+  "GEN-C03-P16-Kings.dc.html",
+  "GEN-C03-P17-Siddim.dc.html",
+  "GEN-C03-P18-Pursuit.dc.html",
+  "GEN-C03-P19-Melchizedek.dc.html",
+  "GEN-C03-P20-Thread.dc.html",
+  "GEN-C03-P21-Stars.dc.html",
+  "GEN-C03-P22-Pieces.dc.html",
+  "GEN-C03-P23-Sojourners.dc.html",
+  "GEN-C03-P24-Furnace.dc.html"
  ],
  "notes": {
   "Main": {
@@ -378,6 +578,13 @@
    "text": "Chapter 2 · Cain to the Flood (Genesis 4–9)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Babel to Abram's Covenant (Genesis 10–15)",
+   "x": 0,
+   "y": 13500
   }
  },
  "designSystems": [],

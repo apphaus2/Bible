@@ -26,8 +26,9 @@ There are two editions:
 |---|---|---|---|---|---|
 | Genesis | 1 · In the Beginning (pilot) | 1–3 | cover + title + 16 | 80/80 verses full | `volumes/genesis/` |
 | Genesis | 2 · Cain to the Flood | 4–9 | title + 24 (pp. 17–40) | 155/155 verses full | `volumes/genesis/` |
+| Genesis | 3 · Babel to Abram's Covenant | 10–15 | title + 24 (pp. 41–64) | 147/147 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 3 (Genesis 10–15; ch. 10 and 11:10–32 are lists → scroll pages like Genesis 5). Planned Genesis chapters:
+Next: Genesis chapter 4 (Abraham, Genesis 16–23; 22:20–24 is a list → a scroll page). Planned Genesis chapters:
 1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
 4 Abraham (16–23) · 5 Isaac and Rebekah (24–27) · 6 Jacob (28–36) · 7 Joseph sold, Joseph raised up (37–41) ·
 8 Joseph and his brothers (42–50). Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
@@ -103,7 +104,8 @@ tools/
     build_volume.py   python3 tools/full/build_volume.py genesis  → writes volumes/genesis/ and checks the text
                       (--check writes nothing: fails if committed pages are out of date or any text isn't ASV)
     genesis/          __init__.py (META: chapters), cover.py, art.py (chapter 1 drawings), art2.py (chapter 2:
-                      Cain's line, Noah and his house, the ark, the flood, the dove, the bow), ch01.py, ch02.py, …
+                      Cain's line, Noah and his house, the ark, the flood, the dove, the bow), art3.py (chapter 3: the
+                      nations, Babel, Abram, Sarai and Lot, Egypt, the kings, Melchizedek, map-style panels), ch01.py … ch03.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -208,7 +210,9 @@ and the website tools in `tools/site/`):
    Number pages continuously through the volume (chapter 2 starts after chapter 1's last page).
    `ch02.py` adds two helpers worth copying: `rows(...)` (row template + the real panel heights, so each
    viewBox matches its panel) and `entry(...)` (a "scroll" cell for genealogies: name, lifespan bar, verses —
-   Genesis 5 is two such pages, every verse in full). Size standing figures with `art2.fit(base, top)` (a
+   Genesis 5 is two such pages, every verse in full). `ch03.py` adds `clan(...)` (a scroll cell without a lifespan bar, for
+   the table of the nations) and `hud(...)` (a red counter tag); `art3.py` has map helpers (`grid_bg`, `node`, `route`)
+   for technical-map panels. Size standing figures with `art2.fit(base, top)` (a
    figure is ~200 units tall at scale 1) so heads stay clear of the captions; figures are drawn front-on.
 3. **Add the chapter to `META["chapters"]`** in `tools/full/<volume>/__init__.py`.
 4. **Build and check:** `python3 tools/full/build_volume.py genesis` (stops on any text that isn't ASV), then
@@ -350,6 +354,15 @@ Never fall back to blobs or stick figures.
   - Absalom: heavy black hair to the shoulders, gold band, scarlet tunic with a gold sash, stubble. David old:
     grey-auburn hair, pale beard, purple headcloth with the gold band. The Cushite: white headcloth.
   - Absalom's death (18:14–15) is not shown: 18:9 (caught in the oak) then 18:17 (the heap of stones).
+- **Character guide (Genesis 10–15, full edition, `art3.py`):**
+  - Abram: grey hair and beard, bareheaded; a slate-blue robe at a distance. Sarai: mulberry headscarf, dark hair; a
+    mulberry robe at a distance. Lot: maroon headcloth with a dark cord, brown beard; a maroon robe.
+  - Terah: white hair and beard. Nimrod: black hair and beard, gold band. Pharaoh of Abram's day: red-and-gold nemes.
+    Melchizedek: white headcloth with a gold band, white beard, white robe and a small gold crown. The king of Sodom:
+    plum headcloth with a gold band, black beard, scowl. Kings at a distance: a small gold crown on a robed figure.
+  - Noah's three sons share one skin tone and differ only by robe colour (Shem blue, Ham rust, Japheth green); the
+    table of the nations uses the same three colours.
+  - The covenant pieces (15:10, 15:17) are drawn as covered offerings on stones: no carcasses shown.
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'
