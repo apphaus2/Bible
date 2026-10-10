@@ -1,0 +1,178 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-10T09:41:10Z"
+ },
+ "title": "Genesis — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "GEN-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · In the Beginning"
+  },
+  "GEN-C01-P01-Light.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "01 · Let There Be Light"
+  },
+  "GEN-C01-P02-Firmament.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "02 · The Firmament"
+  },
+  "GEN-C01-P03-Land.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "03 · The Dry Land"
+  },
+  "GEN-C01-P04-Lights.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "04 · The Two Great Lights"
+  },
+  "GEN-C01-P05-Waters.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "05 · The Waters Swarm"
+  },
+  "GEN-C01-P06-Image.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "06 · In Our Image"
+  },
+  "GEN-C01-P07-VeryGood.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "07 · Very Good"
+  },
+  "GEN-C01-P08-Dust.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "08 · The Dust of the Ground"
+  },
+  "GEN-C01-P09-Eden.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "09 · A Garden Eastward, in Eden"
+  },
+  "GEN-C01-P10-Names.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Man Gave Names"
+  },
+  "GEN-C01-P11-Woman.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Bone of My Bones"
+  },
+  "GEN-C01-P12-Serpent.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Yea, Hath God Said?"
+  },
+  "GEN-C01-P13-Eyes.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Where Art Thou?"
+  },
+  "GEN-C01-P14-Curse.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · What Is This Thou Hast Done?"
+  },
+  "GEN-C01-P15-Thorns.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Dust Thou Art"
+  },
+  "GEN-C01-P16-East.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · East of Eden"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "GEN-C01-00-Title.dc.html",
+  "GEN-C01-P01-Light.dc.html",
+  "GEN-C01-P02-Firmament.dc.html",
+  "GEN-C01-P03-Land.dc.html",
+  "GEN-C01-P04-Lights.dc.html",
+  "GEN-C01-P05-Waters.dc.html",
+  "GEN-C01-P06-Image.dc.html",
+  "GEN-C01-P07-VeryGood.dc.html",
+  "GEN-C01-P08-Dust.dc.html",
+  "GEN-C01-P09-Eden.dc.html",
+  "GEN-C01-P10-Names.dc.html",
+  "GEN-C01-P11-Woman.dc.html",
+  "GEN-C01-P12-Serpent.dc.html",
+  "GEN-C01-P13-Eyes.dc.html",
+  "GEN-C01-P14-Curse.dc.html",
+  "GEN-C01-P15-Thorns.dc.html",
+  "GEN-C01-P16-East.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Genesis Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · In the Beginning (Genesis 1–3)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
