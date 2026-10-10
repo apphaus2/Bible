@@ -22,8 +22,18 @@ def day_stamp(n, pos, rot=-4):
             f'      <span style="font-family: \'Noto Sans JP\', sans-serif; font-weight: 900; font-size: 18px; line-height: 1">第{kanji_num(n)}日</span>\n'
             f'      <span style="font-size: 8px; font-weight: 600; letter-spacing: 0.16em">THE {words[n]} DAY</span>\n    </div>\n')
 
+FOLIO = "position: absolute; bottom: 9px; font-size: 9px; letter-spacing: 0.3em; color: #6B6862; text-transform: uppercase"
+
 def page(title, rows, body, num):
-    return mk.page(title, rows, body, num)
+    """A story page. The footer is a running foot: the verses on the page at the left, the page number in the centre
+    (from mk.page) and the translation at the right, so every page says it is the ASV."""
+    html = mk.page(title, rows, body, num)
+    num_span = f'color: #6B6862">— {num:02d} —</span>'
+    assert html.count(num_span) == 1
+    refs = title.split(" — ")[0]
+    run = (f'\n  <span data-label style="{FOLIO}; left: 28px">{refs}</span>'
+           f'\n  <span data-label style="{FOLIO}; right: 28px">ASV 1901</span>')
+    return html.replace(num_span, num_span + run)
 
 def chapter_title(num, kanji_ep, title, rng, art_svg, bg, quote_text, credit):
     """A chapter opener: full-bleed art, the episode number (第一話), the title, the verse range and one quoted line."""
@@ -34,8 +44,8 @@ def chapter_title(num, kanji_ep, title, rng, art_svg, bg, quote_text, credit):
   </div>
   <h1 data-label style="position: absolute; left: 34px; top: 100px; margin: 0; max-width: 680px; font-family: Anton, 'Archivo Narrow', sans-serif; font-weight: 400; font-size: 96px; line-height: 1.0; letter-spacing: -0.5px; color: #F3EFE6; text-transform: uppercase; text-shadow: 4px 4px 0 #0D0D0F">{title}</h1>
   <div data-label style="position: absolute; left: 38px; top: 330px; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #F3EFE6">{rng}</div>
-  <div style="position: absolute; left: 38px; bottom: 70px; max-width: 420px; padding: 9px 13px; background: #F3EFE6; color: #0D0D0F; border: 2px solid #0D0D0F; font-size: 14px; font-weight: 600; line-height: 1.45; letter-spacing: 0.04em; text-transform: uppercase">{quote_text}</div>
-  <div data-label style="position: absolute; left: 38px; right: 38px; bottom: 30px; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #F3EFE6; opacity: 0.85">{credit}</div>'''
+  <div style="position: absolute; left: 38px; bottom: 84px; max-width: 420px; padding: 9px 13px; background: #F3EFE6; color: #0D0D0F; border: 2px solid #0D0D0F; font-size: 14px; font-weight: 600; line-height: 1.45; letter-spacing: 0.04em; text-transform: uppercase">{quote_text}</div>
+  <div data-label style="position: absolute; left: 38px; right: 38px; bottom: 30px; font-size: 10px; line-height: 1.6; letter-spacing: 0.16em; text-transform: uppercase; color: #F3EFE6; opacity: 0.85">{credit}<br>Every word from the American Standard Version (1901)</div>'''
     root = f"position: relative; width: 760px; height: 1080px; overflow: hidden; background: {bg}; color: #F3EFE6; font-family: 'IBM Plex Mono', monospace"
     return mk.page(f"{rng} — Chapter {num}: {title}", None, body, root_style=root)
 

@@ -281,6 +281,9 @@ Version (1901)" and "Vol. N" at the bottom.
 - **Chapter stamp** `stamp(n)`: red-outlined rotated box, 第N章 over CHAPTER N, once per chapter.
 - **Verse ref** `ref()`: tiny mono `EX 14:22` in a corner when no caption names the verse.
 - **Speed lines** `speed()`, starfields `stars()`.
+- **Running foot** (full edition, `fx.page()`): verses at the left, `— NN —` in the centre, `ASV 1901` at the right,
+  9 px grey mono, so every page names its translation. Chapter title pages add "Every word from the American
+  Standard Version (1901)" under the credit.
 
 ## People and creatures
 
