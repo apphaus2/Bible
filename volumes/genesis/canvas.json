@@ -646,6 +646,146 @@
    "w": 760,
    "h": 1080,
    "title": "86 · Moab and Ben-ammi"
+  },
+  "GEN-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Son of Promise"
+  },
+  "GEN-C05-P01-Gerar.dc.html": {
+   "x": 840,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · She Is My Sister"
+  },
+  "GEN-C05-P02-Dream.dc.html": {
+   "x": 1680,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Restore the Man's Wife"
+  },
+  "GEN-C05-P03-Sister.dc.html": {
+   "x": 2520,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · She Is Indeed My Sister"
+  },
+  "GEN-C05-P04-Healed.dc.html": {
+   "x": 3360,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · God Healed Abimelech"
+  },
+  "GEN-C05-P05-Isaac.dc.html": {
+   "x": 0,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · God Hath Made Me to Laugh"
+  },
+  "GEN-C05-P06-CastOut.dc.html": {
+   "x": 840,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Cast Out This Handmaid"
+  },
+  "GEN-C05-P07-Bowshot.dc.html": {
+   "x": 1680,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · As It Were a Bowshot"
+  },
+  "GEN-C05-P08-Archer.dc.html": {
+   "x": 2520,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · God Heard the Voice of the Lad"
+  },
+  "GEN-C05-P09-Oath.dc.html": {
+   "x": 3360,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Swear unto Me Here by God"
+  },
+  "GEN-C05-P10-Beersheba.dc.html": {
+   "x": 0,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Everlasting God"
+  },
+  "GEN-C05-P11-Moriah.dc.html": {
+   "x": 840,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Take Now Thy Son"
+  },
+  "GEN-C05-P12-Lamb.dc.html": {
+   "x": 1680,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · God Will Provide Himself the Lamb"
+  },
+  "GEN-C05-P13-Ram.dc.html": {
+   "x": 2520,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Jehovah-jireh"
+  },
+  "GEN-C05-P14-Sand.dc.html": {
+   "x": 3360,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · As the Stars and as the Sand"
+  },
+  "GEN-C05-P15-Nahor.dc.html": {
+   "x": 0,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Bethuel Begat Rebekah"
+  },
+  "GEN-C05-P16-Heth.dc.html": {
+   "x": 840,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · A Stranger and a Sojourner"
+  },
+  "GEN-C05-P17-Ephron.dc.html": {
+   "x": 1680,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · The Cave of Machpelah"
+  },
+  "GEN-C05-P18-Shekels.dc.html": {
+   "x": 2520,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Four Hundred Shekels of Silver"
+  },
+  "GEN-C05-P19-Buried.dc.html": {
+   "x": 3360,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Abraham Buried Sarah His Wife"
   }
  },
  "order": [
@@ -739,7 +879,27 @@
   "GEN-C04-P19-Zoar.dc.html",
   "GEN-C04-P20-Brimstone.dc.html",
   "GEN-C04-P21-Cave.dc.html",
-  "GEN-C04-P22-Moab.dc.html"
+  "GEN-C04-P22-Moab.dc.html",
+  "GEN-C05-00-Title.dc.html",
+  "GEN-C05-P01-Gerar.dc.html",
+  "GEN-C05-P02-Dream.dc.html",
+  "GEN-C05-P03-Sister.dc.html",
+  "GEN-C05-P04-Healed.dc.html",
+  "GEN-C05-P05-Isaac.dc.html",
+  "GEN-C05-P06-CastOut.dc.html",
+  "GEN-C05-P07-Bowshot.dc.html",
+  "GEN-C05-P08-Archer.dc.html",
+  "GEN-C05-P09-Oath.dc.html",
+  "GEN-C05-P10-Beersheba.dc.html",
+  "GEN-C05-P11-Moriah.dc.html",
+  "GEN-C05-P12-Lamb.dc.html",
+  "GEN-C05-P13-Ram.dc.html",
+  "GEN-C05-P14-Sand.dc.html",
+  "GEN-C05-P15-Nahor.dc.html",
+  "GEN-C05-P16-Heth.dc.html",
+  "GEN-C05-P17-Ephron.dc.html",
+  "GEN-C05-P18-Shekels.dc.html",
+  "GEN-C05-P19-Buried.dc.html"
  ],
  "notes": {
   "Main": {
@@ -776,6 +936,13 @@
    "text": "Chapter 4 · The Cities of the Plain (Genesis 16–19)",
    "x": 0,
    "y": 20000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Son of Promise (Genesis 20–23)",
+   "x": 0,
+   "y": 26500
   }
  },
  "designSystems": [],

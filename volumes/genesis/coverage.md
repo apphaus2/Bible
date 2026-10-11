@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 496 verses — 496 full, 0 partial, 0 omitted.
+**So far:** 592 verses — 592 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · In the Beginning (Genesis 1–3)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · The Cities of the Plain (Genesis 16–19)
 
 114 verses: 114 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · The Son of Promise (Genesis 20–23)
+
+96 verses: 96 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -46,6 +46,16 @@
    "prefixes": [
     "GEN-C04-"
    ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "The Son of Promise",
+   "range": "Genesis 20–23",
+   "blurb": "Abimelech's dream at Gerar, the birth of Isaac and Sarah's laughter, Hagar and the lad at a bowshot in the wilderness, the oath at Beer-sheba, the mount in the land of Moriah and the ram in the thicket, and the cave of Machpelah.",
+   "prefixes": [
+    "GEN-C05-"
+   ]
   }
  ]
 }

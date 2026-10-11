@@ -17,5 +17,7 @@ META = {
      "blurb": "The table of the nations, Nimrod the mighty hunter, the tower of Babel, the generations of Shem, the call of Abram, Egypt and Pharaoh's house, Lot and the Plain, the war of the kings, Melchizedek, the stars, and the covenant between the pieces."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Cities of the Plain", "range": "Genesis 16–19", "bible_chapters": [16, 17, 18, 19],
      "blurb": "Hagar and the fountain in the way to Shur, Ishmael, the covenant and the new names Abraham and Sarah, the three men at Mamre, Sarah's laughter, Abraham pleading for the righteous, the night at Lot's door, and brimstone and fire on the cities of the Plain."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Son of Promise", "range": "Genesis 20–23", "bible_chapters": [20, 21, 22, 23],
+     "blurb": "Abimelech's dream at Gerar, the birth of Isaac and Sarah's laughter, Hagar and the lad at a bowshot in the wilderness, the oath at Beer-sheba, the mount in the land of Moriah and the ram in the thicket, and the cave of Machpelah."},
   ],
 }

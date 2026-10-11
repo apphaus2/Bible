@@ -29,8 +29,10 @@ There are two editions:
 | Genesis | 2 · Cain to the Flood | 4–9 | title + 24 (pp. 17–40) | 155/155 verses full | `volumes/genesis/` |
 | Genesis | 3 · Babel to Abram's Covenant | 10–15 | title + 24 (pp. 41–64) | 147/147 verses full | `volumes/genesis/` |
 | Genesis | 4 · The Cities of the Plain | 16–19 | title + 22 (pp. 65–86) | 114/114 verses full | `volumes/genesis/` |
+| Genesis | 5 · The Son of Promise | 20–23 | title + 19 (pp. 87–105) | 96/96 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 5 (The Son of Promise, Genesis 20–23; 22:20–24 is a list → a scroll page). Genesis 16–23 was
+Next: Genesis chapter 6 (Isaac and Rebekah, Genesis 24–27; 24:34–49 is a retelling to abridge, 25:1–4 and 25:12–18
+are lists → scroll pages). Genesis 16–23 was
 too long for one chapter (5,485 words, about 36 pages), so it is split in two and the plan runs to nine chapters:
 1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
 4 The Cities of the Plain (16–19) · 5 The Son of Promise (20–23) · 6 Isaac and Rebekah (24–27) · 7 Jacob (28–36) ·
@@ -100,7 +102,8 @@ tools/
     genesis/          __init__.py (META: chapters), cover.py, art.py (chapter 1 drawings), art2.py (chapter 2:
                       Cain's line, Noah and his house, the ark, the flood, the dove, the bow), art3.py (chapter 3: the
                       nations, Babel, Abram, Sarai and Lot, Egypt, the kings, Melchizedek, map-style panels), art4.py (chapter 4:
-                      Hagar, Sarah, the men in white, the covenant, Sodom and the cave), ch01.py … ch04.py
+                      Hagar, Sarah, the men in white, the covenant, Sodom and the cave), art5.py (chapter 5: Abimelech, Isaac,
+                      the wilderness of Beer-sheba, Moriah, Nahor's house, Machpelah), ch01.py … ch05.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -373,6 +376,14 @@ Never fall back to blobs or stick figures.
   - Restraint: Genesis 17 is drawn as covenant rings, renamed names and the household gathered; Genesis 19:4–9 as the
     crowd outside a shut door; 19:30–36 as the cave mouth from outside, a wine jar, a fire. Every word is on the page.
   - No seven-branched lamp before the tabernacle: Lot's house has a clay oil lamp (`art4.clay_lamp()`).
+- **Character guide (Genesis 20–23, `art5.py`):**
+  - Abimelech king of Gerar: blue headcloth with a gold band, black beard; a royal-blue robe and a small gold crown at a
+    distance (also afraid with sweat, stern with red light). Phicol: slate-blue tunic and a spear.
+  - Isaac as a child: cream tunic; as a lad (Genesis 22): brown curls, the digest's Isaac face. Ishmael: olive tunic.
+  - Ephron the Hittite: rust headcloth with a dark cord, brown beard; the children of Heth sit in earth-toned robes at
+    the city gate.
+  - Moriah (22:9–10): Abraham as a black silhouette on the summit, Isaac a dark shape on the wood, then the digest's raised
+    hand against the sky; no blade on a body. The angel of Jehovah speaks from heaven in the Voice box.
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'
