@@ -485,6 +485,167 @@
    "w": 760,
    "h": 1080,
    "title": "64 · A Smoking Furnace and a Flaming Torch"
+  },
+  "GEN-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Cities of the Plain"
+  },
+  "GEN-C04-P01-Hagar.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Sarai's Handmaid"
+  },
+  "GEN-C04-P02-Fountain.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · By a Fountain of Water"
+  },
+  "GEN-C04-P03-Ishmael.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Thou Art a God That Seeth"
+  },
+  "GEN-C04-P04-Almighty.dc.html": {
+   "x": 3360,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · I Am God Almighty"
+  },
+  "GEN-C04-P05-Covenant.dc.html": {
+   "x": 0,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · An Everlasting Covenant"
+  },
+  "GEN-C04-P06-Sarah.dc.html": {
+   "x": 840,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Sarah Shall Her Name Be"
+  },
+  "GEN-C04-P07-Laughed.dc.html": {
+   "x": 1680,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Abraham Fell upon His Face, and Laughed"
+  },
+  "GEN-C04-P08-Selfsame.dc.html": {
+   "x": 2520,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · In the Selfsame Day"
+  },
+  "GEN-C04-P09-Mamre.dc.html": {
+   "x": 3360,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Three Men Stood over against Him"
+  },
+  "GEN-C04-P10-Meal.dc.html": {
+   "x": 0,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Under the Tree"
+  },
+  "GEN-C04-P11-TooHard.dc.html": {
+   "x": 840,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Is Anything Too Hard for Jehovah?"
+  },
+  "GEN-C04-P12-Cry.dc.html": {
+   "x": 1680,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The Cry of Sodom"
+  },
+  "GEN-C04-P13-Fifty.dc.html": {
+   "x": 2520,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Peradventure There Are Fifty"
+  },
+  "GEN-C04-P14-Ten.dc.html": {
+   "x": 3360,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · For the Ten's Sake"
+  },
+  "GEN-C04-P15-Gate.dc.html": {
+   "x": 0,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Lot Sat in the Gate of Sodom"
+  },
+  "GEN-C04-P16-Door.dc.html": {
+   "x": 840,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · They Compassed the House Round"
+  },
+  "GEN-C04-P17-Blindness.dc.html": {
+   "x": 1680,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Bring Them out of the Place"
+  },
+  "GEN-C04-P18-Escape.dc.html": {
+   "x": 2520,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Escape for Thy Life"
+  },
+  "GEN-C04-P19-Zoar.dc.html": {
+   "x": 3360,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Is It Not a Little One?"
+  },
+  "GEN-C04-P20-Brimstone.dc.html": {
+   "x": 0,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Brimstone and Fire"
+  },
+  "GEN-C04-P21-Cave.dc.html": {
+   "x": 840,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · He Dwelt in a Cave"
+  },
+  "GEN-C04-P22-Moab.dc.html": {
+   "x": 1680,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Moab and Ben-ammi"
   }
  },
  "order": [
@@ -555,7 +716,30 @@
   "GEN-C03-P21-Stars.dc.html",
   "GEN-C03-P22-Pieces.dc.html",
   "GEN-C03-P23-Sojourners.dc.html",
-  "GEN-C03-P24-Furnace.dc.html"
+  "GEN-C03-P24-Furnace.dc.html",
+  "GEN-C04-00-Title.dc.html",
+  "GEN-C04-P01-Hagar.dc.html",
+  "GEN-C04-P02-Fountain.dc.html",
+  "GEN-C04-P03-Ishmael.dc.html",
+  "GEN-C04-P04-Almighty.dc.html",
+  "GEN-C04-P05-Covenant.dc.html",
+  "GEN-C04-P06-Sarah.dc.html",
+  "GEN-C04-P07-Laughed.dc.html",
+  "GEN-C04-P08-Selfsame.dc.html",
+  "GEN-C04-P09-Mamre.dc.html",
+  "GEN-C04-P10-Meal.dc.html",
+  "GEN-C04-P11-TooHard.dc.html",
+  "GEN-C04-P12-Cry.dc.html",
+  "GEN-C04-P13-Fifty.dc.html",
+  "GEN-C04-P14-Ten.dc.html",
+  "GEN-C04-P15-Gate.dc.html",
+  "GEN-C04-P16-Door.dc.html",
+  "GEN-C04-P17-Blindness.dc.html",
+  "GEN-C04-P18-Escape.dc.html",
+  "GEN-C04-P19-Zoar.dc.html",
+  "GEN-C04-P20-Brimstone.dc.html",
+  "GEN-C04-P21-Cave.dc.html",
+  "GEN-C04-P22-Moab.dc.html"
  ],
  "notes": {
   "Main": {
@@ -585,6 +769,13 @@
    "text": "Chapter 3 · Babel to Abram's Covenant (Genesis 10–15)",
    "x": 0,
    "y": 13500
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Cities of the Plain (Genesis 16–19)",
+   "x": 0,
+   "y": 20000
   }
  },
  "designSystems": [],

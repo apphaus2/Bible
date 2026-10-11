@@ -15,5 +15,7 @@ META = {
      "blurb": "Cain and Abel, the mark of Cain and the city of Enoch, the book of the generations of Adam, Enoch who walked with God, the ark of gopher wood, the flood, the raven and the dove, and the bow in the cloud."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Babel to Abram's Covenant", "range": "Genesis 10–15", "bible_chapters": [10, 11, 12, 13, 14, 15],
      "blurb": "The table of the nations, Nimrod the mighty hunter, the tower of Babel, the generations of Shem, the call of Abram, Egypt and Pharaoh's house, Lot and the Plain, the war of the kings, Melchizedek, the stars, and the covenant between the pieces."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Cities of the Plain", "range": "Genesis 16–19", "bible_chapters": [16, 17, 18, 19],
+     "blurb": "Hagar and the fountain in the way to Shur, Ishmael, the covenant and the new names Abraham and Sarah, the three men at Mamre, Sarah's laughter, Abraham pleading for the righteous, the night at Lot's door, and brimstone and fire on the cities of the Plain."},
   ],
 }

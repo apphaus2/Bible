@@ -28,11 +28,13 @@ There are two editions:
 | Genesis | 1 · In the Beginning (pilot) | 1–3 | cover + title + 16 | 80/80 verses full | `volumes/genesis/` |
 | Genesis | 2 · Cain to the Flood | 4–9 | title + 24 (pp. 17–40) | 155/155 verses full | `volumes/genesis/` |
 | Genesis | 3 · Babel to Abram's Covenant | 10–15 | title + 24 (pp. 41–64) | 147/147 verses full | `volumes/genesis/` |
+| Genesis | 4 · The Cities of the Plain | 16–19 | title + 22 (pp. 65–86) | 114/114 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 4 (Abraham, Genesis 16–23; 22:20–24 is a list → a scroll page). Planned Genesis chapters:
+Next: Genesis chapter 5 (The Son of Promise, Genesis 20–23; 22:20–24 is a list → a scroll page). Genesis 16–23 was
+too long for one chapter (5,485 words, about 36 pages), so it is split in two and the plan runs to nine chapters:
 1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
-4 Abraham (16–23) · 5 Isaac and Rebekah (24–27) · 6 Jacob (28–36) · 7 Joseph sold, Joseph raised up (37–41) ·
-8 Joseph and his brothers (42–50). Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
+4 The Cities of the Plain (16–19) · 5 The Son of Promise (20–23) · 6 Isaac and Rebekah (24–27) · 7 Jacob (28–36) ·
+8 Joseph sold, Joseph raised up (37–41) · 9 Joseph and his brothers (42–50). Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
 22:20–24, 25:1–4 and 12–18, ch. 36, 46:8–27 (166 verses). Retellings to abridge: 24:34–49, 41:17–24,
 42:29–34, 43:3–7.
 
@@ -97,7 +99,8 @@ tools/
                       (--check writes nothing: fails if committed pages are out of date or any text isn't ASV)
     genesis/          __init__.py (META: chapters), cover.py, art.py (chapter 1 drawings), art2.py (chapter 2:
                       Cain's line, Noah and his house, the ark, the flood, the dove, the bow), art3.py (chapter 3: the
-                      nations, Babel, Abram, Sarai and Lot, Egypt, the kings, Melchizedek, map-style panels), ch01.py … ch03.py
+                      nations, Babel, Abram, Sarai and Lot, Egypt, the kings, Melchizedek, map-style panels), art4.py (chapter 4:
+                      Hagar, Sarah, the men in white, the covenant, Sodom and the cave), ch01.py … ch04.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -359,6 +362,17 @@ Never fall back to blobs or stick figures.
   - Noah's three sons share one skin tone and differ only by robe colour (Shem blue, Ham rust, Japheth green); the
     table of the nations uses the same three colours.
   - The covenant pieces (15:10, 15:17) are drawn as covered offerings on stones: no carcasses shown.
+- **Character guide (Genesis 16–19, `art4.py`):**
+  - Abraham keeps Abram's look (grey hair and beard, slate-blue robe); Sarah from Genesis 17 is grey-haired under the
+    mulberry headscarf. Hagar: Egyptian, black hair, kohl, cerulean headscarf and robe. Lot's wife: slate-grey robe;
+    his two daughters: rose and ochre robes, seen only at a distance. The men of Sodom: black silhouettes with torches.
+  - The angel of Jehovah with Hagar is a tall shape of white light (no face, no wings) and speaks in the Voice box, as
+    does Jehovah at Mamre. The three men at Mamre and the two at Sodom are men in white with a gold rim and a soft
+    glow, no wings and no faces drawn; at Sodom they speak in balloons.
+  - Close-ups use `fc()` in `ch04.py`, which sizes a face to its panel so the eyes stay clear of the captions.
+  - Restraint: Genesis 17 is drawn as covenant rings, renamed names and the household gathered; Genesis 19:4–9 as the
+    crowd outside a shut door; 19:30–36 as the cave mouth from outside, a wine jar, a fire. Every word is on the page.
+  - No seven-branched lamp before the tabernacle: Lot's house has a clay oil lamp (`art4.clay_lamp()`).
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'

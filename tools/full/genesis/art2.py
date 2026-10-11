@@ -93,7 +93,7 @@ def line_of_cain(p, w, h, seed):
         o.append(f'<g opacity="{0.55 + i * 0.11:.2f}">' + mk.person(p, round(x), round(base + i * 2), round(s, 3), body=SKIN, cloth=cl[i], kind="Tunic", sw=3) + '</g>')
     return "".join(o)
 
-def city(x, base, w, h, seed, color="#3A2A3E", lit="#FFC14D"):
+def city(x, base, w, h, seed, color="#3A2A3E", lit="#FFC14D", wall="#5A4A4E"):
     """A walled city of mud brick with towers, its windows lit."""
     r = random.Random(seed); o = []
     n = 6
@@ -103,7 +103,7 @@ def city(x, base, w, h, seed, color="#3A2A3E", lit="#FFC14D"):
         for k in range(int(bh // 22)):
             if r.random() < 0.45:
                 o.append(f'<rect x="{f(bx + bw * r.uniform(0.2, 0.7))}" y="{f(base - bh + 10 + k * 22)}" width="5" height="8" fill="{lit}"></rect>')
-    o.append(f'<rect x="{f(x - w / 2 - 6)}" y="{f(base - h * 0.28)}" width="{f(w + 12)}" height="{f(h * 0.28)}" fill="#5A4A4E" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(f'<rect x="{f(x - w / 2 - 6)}" y="{f(base - h * 0.28)}" width="{f(w + 12)}" height="{f(h * 0.28)}" fill="{wall}" stroke="#0D0D0F" stroke-width="2"></rect>')
     o.append(f'<path d="M{f(x - 12)} {f(base)} L {f(x - 12)} {f(base - h * 0.16)} Q {f(x)} {f(base - h * 0.24)} {f(x + 12)} {f(base - h * 0.16)} L {f(x + 12)} {f(base)} Z" fill="#12090A"></path>')
     return "".join(o)
 
