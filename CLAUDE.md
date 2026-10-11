@@ -30,13 +30,14 @@ There are two editions:
 | Genesis | 3 · Babel to Abram's Covenant | 10–15 | title + 24 (pp. 41–64) | 147/147 verses full | `volumes/genesis/` |
 | Genesis | 4 · The Cities of the Plain | 16–19 | title + 22 (pp. 65–86) | 114/114 verses full | `volumes/genesis/` |
 | Genesis | 5 · The Son of Promise | 20–23 | title + 19 (pp. 87–105) | 96/96 verses full | `volumes/genesis/` |
+| Genesis | 6 · A Wife for Isaac | 24:1–25:18 | title + 13 (pp. 106–118) | 75 full, 2 partial, 8 omitted (the retelling 24:38–47) | `volumes/genesis/` |
 
-Next: Genesis chapter 6 (Isaac and Rebekah, Genesis 24–27; 24:34–49 is a retelling to abridge, 25:1–4 and 25:12–18
-are lists → scroll pages). Genesis 16–23 was
-too long for one chapter (5,485 words, about 36 pages), so it is split in two and the plan runs to nine chapters:
-1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
-4 The Cities of the Plain (16–19) · 5 The Son of Promise (20–23) · 6 Isaac and Rebekah (24–27) · 7 Jacob (28–36) ·
-8 Joseph sold, Joseph raised up (37–41) · 9 Joseph and his brothers (42–50). Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
+Next: Genesis chapter 7 (Jacob and Esau, Genesis 25:19–27:46). Genesis 16–27 was too long for two chapters, so the
+plan now runs to ten: 1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
+4 The Cities of the Plain (16–19) · 5 The Son of Promise (20–23) · 6 A Wife for Isaac (24:1–25:18) ·
+7 Jacob and Esau (25:19–27) · 8 Jacob (28–36) · 9 Joseph sold, Joseph raised up (37–41) · 10 Joseph and his brothers (42–50).
+A chapter may start or end inside a Bible chapter: give it `"span": ["24:1", "25:18"]` in META so coverage counts only
+its verses. Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
 22:20–24, 25:1–4 and 12–18, ch. 36, 46:8–27 (166 verses). Retellings to abridge: 24:34–49, 41:17–24,
 42:29–34, 43:3–7.
 
@@ -103,7 +104,8 @@ tools/
                       Cain's line, Noah and his house, the ark, the flood, the dove, the bow), art3.py (chapter 3: the
                       nations, Babel, Abram, Sarai and Lot, Egypt, the kings, Melchizedek, map-style panels), art4.py (chapter 4:
                       Hagar, Sarah, the men in white, the covenant, Sodom and the cave), art5.py (chapter 5: Abimelech, Isaac,
-                      the wilderness of Beer-sheba, Moriah, Nahor's house, Machpelah), ch01.py … ch05.py
+                      the wilderness of Beer-sheba, Moriah, Nahor's house, Machpelah), art6.py (chapter 6: Abraham's servant,
+                      the well, Rebekah, Laban, camels couched and drinking), ch01.py … ch06.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -384,6 +386,13 @@ Never fall back to blobs or stick figures.
     the city gate.
   - Moriah (22:9–10): Abraham as a black silhouette on the summit, Isaac a dark shape on the wood, then the digest's raised
     hand against the sky; no blade on a body. The angel of Jehovah speaks from heaven in the Voice box.
+- **Character guide (Genesis 24–25:18, `art6.py`):**
+  - Abraham in old age: white hair and beard. His servant, the elder of his house: tan headcloth with a dark cord, grey
+    beard, tan robe. Rebekah: green headscarf, dark hair, green robe, pitcher on her shoulder; veiled in white (24:65).
+  - Laban: rust-red headcloth with a cord, black beard, rust robe. Bethuel: white hair and beard, plum headcloth.
+    Isaac grown: brown hair and beard, cream robe. Ishmael old: olive headcloth, white beard.
+  - The retelling (24:34–49) is one page: 24:34–37 and 24:48–49 in full, the repeated middle as one balloon cut with "…",
+    tagged "AS HE TOLD IT · GEN 24:37–47 ABRIDGED".
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'

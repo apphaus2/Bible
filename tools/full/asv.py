@@ -65,10 +65,12 @@ class Book:
     def text(self):
         return " ".join(self.verses[k] for k in sorted(self.verses))
 
-    def coverage(self, chapters):
-        """[(ref, status, share)] for every verse of the given chapters."""
+    def coverage(self, chapters, span=None):
+        """[(ref, status, share)] for every verse of the given chapters; span=("24:1", "25:18") limits it to a run of
+        verses, for a manga chapter that starts or ends inside a Bible chapter."""
         rows = []
-        for k in sorted(k for k in self.verses if k[0] in chapters):
+        lo, hi = (key(span[0]), key(span[1])) if span else ((0, 0), (999, 999))
+        for k in sorted(k for k in self.verses if k[0] in chapters and lo <= k <= hi):
             t = self.verses[k]
             letters = [i for i, ch in enumerate(t) if not ch.isspace()]
             got = self.used.get(k, set())

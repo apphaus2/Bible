@@ -786,6 +786,104 @@
    "w": 760,
    "h": 1080,
    "title": "105 · Abraham Buried Sarah His Wife"
+  },
+  "GEN-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · A Wife for Isaac"
+  },
+  "GEN-C06-P01-Oath.dc.html": {
+   "x": 840,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Put Thy Hand under My Thigh"
+  },
+  "GEN-C06-P02-Camels.dc.html": {
+   "x": 1680,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · He Will Send His Angel before Thee"
+  },
+  "GEN-C06-P03-Pitcher.dc.html": {
+   "x": 2520,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Let Down Thy Pitcher"
+  },
+  "GEN-C06-P04-Trough.dc.html": {
+   "x": 3360,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · I Will Draw for Thy Camels Also"
+  },
+  "GEN-C06-P05-Bethuel.dc.html": {
+   "x": 0,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Whose Daughter Art Thou?"
+  },
+  "GEN-C06-P06-Laban.dc.html": {
+   "x": 840,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Thou Blessed of Jehovah"
+  },
+  "GEN-C06-P07-Errand.dc.html": {
+   "x": 1680,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · I Am Abraham's Servant"
+  },
+  "GEN-C06-P08-Proceedeth.dc.html": {
+   "x": 2520,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · The Thing Proceedeth from Jehovah"
+  },
+  "GEN-C06-P09-IWillGo.dc.html": {
+   "x": 3360,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · I Will Go"
+  },
+  "GEN-C06-P10-Field.dc.html": {
+   "x": 0,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Isaac Went Out to Meditate"
+  },
+  "GEN-C06-P11-Keturah.dc.html": {
+   "x": 840,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Keturah"
+  },
+  "GEN-C06-P12-FullOfYears.dc.html": {
+   "x": 1680,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Full of Years"
+  },
+  "GEN-C06-P13-Ishmael.dc.html": {
+   "x": 2520,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Twelve Princes"
   }
  },
  "order": [
@@ -899,7 +997,21 @@
   "GEN-C05-P16-Heth.dc.html",
   "GEN-C05-P17-Ephron.dc.html",
   "GEN-C05-P18-Shekels.dc.html",
-  "GEN-C05-P19-Buried.dc.html"
+  "GEN-C05-P19-Buried.dc.html",
+  "GEN-C06-00-Title.dc.html",
+  "GEN-C06-P01-Oath.dc.html",
+  "GEN-C06-P02-Camels.dc.html",
+  "GEN-C06-P03-Pitcher.dc.html",
+  "GEN-C06-P04-Trough.dc.html",
+  "GEN-C06-P05-Bethuel.dc.html",
+  "GEN-C06-P06-Laban.dc.html",
+  "GEN-C06-P07-Errand.dc.html",
+  "GEN-C06-P08-Proceedeth.dc.html",
+  "GEN-C06-P09-IWillGo.dc.html",
+  "GEN-C06-P10-Field.dc.html",
+  "GEN-C06-P11-Keturah.dc.html",
+  "GEN-C06-P12-FullOfYears.dc.html",
+  "GEN-C06-P13-Ishmael.dc.html"
  ],
  "notes": {
   "Main": {
@@ -943,6 +1055,13 @@
    "text": "Chapter 5 · The Son of Promise (Genesis 20–23)",
    "x": 0,
    "y": 26500
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · A Wife for Isaac (Genesis 24:1–25:18)",
+   "x": 0,
+   "y": 31800
   }
  },
  "designSystems": [],

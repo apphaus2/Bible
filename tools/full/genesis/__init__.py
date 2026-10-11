@@ -19,5 +19,7 @@ META = {
      "blurb": "Hagar and the fountain in the way to Shur, Ishmael, the covenant and the new names Abraham and Sarah, the three men at Mamre, Sarah's laughter, Abraham pleading for the righteous, the night at Lot's door, and brimstone and fire on the cities of the Plain."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Son of Promise", "range": "Genesis 20–23", "bible_chapters": [20, 21, 22, 23],
      "blurb": "Abimelech's dream at Gerar, the birth of Isaac and Sarah's laughter, Hagar and the lad at a bowshot in the wilderness, the oath at Beer-sheba, the mount in the land of Moriah and the ram in the thicket, and the cave of Machpelah."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "A Wife for Isaac", "range": "Genesis 24:1–25:18", "bible_chapters": [24, 25], "span": ["24:1", "25:18"],
+     "blurb": "Abraham's servant and the oath, ten camels to the city of Nahor, Rebekah at the well with her pitcher, Laban, I will go, Isaac meditating in the field at eventide, Keturah, Abraham full of years, and Ishmael's twelve princes."},
   ],
 }

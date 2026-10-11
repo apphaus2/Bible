@@ -69,7 +69,7 @@ def main(vol, check=False):
              "**partial** = abridged (cuts marked with …); **omitted** = not on any page.", ""]
     tot = {"full": 0, "partial": 0, "omitted": 0}
     for c in chapters:
-        rows = G.coverage(c["bible_chapters"])
+        rows = G.coverage(c["bible_chapters"], c.get("span"))
         n = {s: sum(1 for r in rows if r[1] == s) for s in tot}
         for s in tot: tot[s] += n[s]
         lines += [f"## Chapter {c['num']} · {c['name']} ({c['range']})", "",
