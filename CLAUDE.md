@@ -43,8 +43,14 @@ There are two editions:
 | Genesis | 16 · Israel in Egypt | 46–47 | title + 11 (pp. 240–250) | 65/65 verses full | `volumes/genesis/` |
 | Genesis | 17 · The Blessing of Jacob | 48–50 | title + 13 (pp. 251–263) | 81/81 verses full | `volumes/genesis/` |
 | **Genesis** | **complete: cover + 17 chapters** | **1–50** | **281 pages (263 numbered)** | **1,533 verses: 1,512 full, 4 partial, 17 omitted (three abridged retellings)** | `volumes/genesis/` |
+| Exodus | 1 · The Bush That Burned | 1–4 | cover + title + 20 (pp. 1–20) | 100/100 verses full | `volumes/exodus/` |
 
-**Genesis is complete.** Next: the Exodus volume (`tools/full/exodus/`: META, cover, ch01…; reuse the digest's Exodus art). 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
+**Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
+the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
+chapters (32,177 words): 1 The Bush That Burned (1–4) · 2 Let My People Go (5–8) · 3 The Passover (9–12) · 4 The Red Sea (13–15) ·
+5 Bread from Heaven (16–18) · 6 Sinai (19–21) · 7 The Book of the Covenant (22–24) · 8 The Pattern of the Tabernacle (25–27) ·
+9 Holy to Jehovah (28–31) · 10 The Golden Calf (32–34) · 11 The Glory (35–40; the making of the tabernacle repeats 25–31 almost word
+for word, so it is the one place to abridge). Page numbers restart at 1 in each volume. 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
 dialogue panels (a face plus a column of caption/balloon pieces, ovals deepened for long speeches).
 Jacob's blessing (49:3–27) is two pages of cells, one per son; the volume ends with 完 "END OF GENESIS · NEXT · EXODUS". Joseph's story (37–50, ~11,500 words) is seven
 chapters: 11 The Dreamer (37–38) · 12 The Captain of the Guard (39–40) · 13 Pharaoh's Dreams (41; 41:17–24 is a
@@ -133,6 +139,12 @@ tools/
                       `stage()`: a general scene builder — setting + cast placed by head height + props), art11.py (chapter 11: the
                       brethren, Dothan, the caravan, Judah and Tamar), art12.py (chapters 12–13: Potiphar's house, the prison,
                       the vine and the baskets, Pharaoh's court, the chariot, the storehouses), ch01.py … ch13.py
+    exo/              the Exodus volume: __init__.py (META, id "exodus"), cover.py, kit.py (talk(): Genesis ch14's dialogue panel,
+                      with short lines in balloons sized to their words), art.py (the Exodus cast at a distance — moses(),
+                      moses_prince(), aaron(), jethro(), zipporah(), pharaoh(), taskmaster(), princess(), elder(c, k), son(c, k),
+                      hebrew(c), all usable in art10.stage()'s cast; faces; sons_row, bricks, households, milk_honey, peoples_map,
+                      exodus_map() (Egypt → the wilderness → Canaan, as a technical map), burning() (the bush), black_tent(),
+                      wonders(), horeb()), ch01.py …
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -342,7 +354,12 @@ Never fall back to blobs or stick figures.
   - The new Pharaoh (from Exodus 1): black-and-gold nemes, false beard, kohl; afraid and weeping variants.
   - Pharaoh's magicians: black-and-white headcloth, kohl, purple rim light.
   - Miriam: brown hair when young; old Miriam has grey hair and a pink headscarf, with a timbrel.
-  - Pharaoh's daughter: black hair, gold band, collar, kohl. Zipporah: red headscarf.
+  - Pharaoh's daughter: black hair, gold band, collar, kohl. Zipporah: crimson headscarf with a woven gold hem along its
+    front edge (`art.HEM`; without it a warm scarf reads as long red hair); a crimson robe at a distance.
+  - Jethro (Reuel), priest of Midian: white hair and beard, dark-teal headcloth with a gold band; teal robe.
+  - The midwives: Shiphrah (teal headscarf), Puah (slate-violet headscarf). Moses' father: black beard, bareheaded;
+    Jochebed: slate-blue headscarf. Elders of Israel: grey beards, headcloths of six colours (`art.elder(c, k)`).
+  - God is never drawn, not even a hand: "I will put forth my hand" is storm and lightning over Egypt (`art.wonders`).
 - **Character guide (Numbers, Joshua):**
   - Caleb: green headcloth with cord, brown beard, gold rim light. The spies: bareheaded, stubble, sweat.
   - Balaam: purple headcloth, grey-black beard, scowl (awe variant with sweat); rides a grey ass.

@@ -20,6 +20,7 @@ SWORD = '<path d="M14 -150 L 46 -236" stroke="#C8C8D0" stroke-width="5" stroke-l
 def figure(p, who, x, y, s, flip=False, pose=None):
     """Draw one of the cast by name. who is a key below, or ("man"|"woman", colour)."""
     up = POSES.get(pose) if isinstance(pose, str) else pose
+    if callable(who): return who(p, x, y, s, flip=flip, up=up)        # any figure function (the Exodus cast)
     if isinstance(who, tuple):
         kind, c = who
         if kind == "woman": return woman(p, x, y, s, c, flip=flip, up=up)

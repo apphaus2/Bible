@@ -1,6 +1,6 @@
 """Build one volume of the full edition.
 
-Usage (from the repo root):  python3 tools/full/build_volume.py genesis [--check]
+Usage (from the repo root):  python3 tools/full/build_volume.py genesis [--check]   (Exodus: build_volume.py exo)
   --check  writes nothing: regenerates every page in memory, fails if a committed page differs from what the
            plan would produce, and runs the ASV text check (GitHub Actions runs this on every push).
 
@@ -22,7 +22,7 @@ sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / "kit"))
 def main(vol, check=False):
     pkg = importlib.import_module(vol)
     META, G = pkg.META, pkg.G
-    out = ROOT / "volumes" / vol; pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
+    out = ROOT / "volumes" / META["id"]; pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
     chapters = []

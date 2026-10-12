@@ -1,0 +1,16 @@
+"""The Exodus volume of the full edition: metadata, the volume cover, and the chapter plans (ch01.py, ...).
+The package is `exo` (not `exodus`) because tools/kit/exodus.py already owns that module name; it builds volumes/exodus/."""
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+from asv import Book
+G = Book("EXO")
+
+META = {
+  "id": "exodus", "order": 2, "name": "Exodus", "kanji": "出エジプト記", "thumb": "vol-exodus-", "book": "EXO",
+  "title": "Exodus Volume", "volume": "Volume Two",
+  "lede": "The second book of the Bible, in full: every scene and every line of dialogue in the words of the ASV.",
+  "chapters": [
+    {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Bush That Burned", "range": "Exodus 1–4", "bible_chapters": [1, 2, 3, 4],
+     "blurb": "A new king who knew not Joseph, the midwives who feared God, the ark of bulrushes, Moses drawn out of the water, the flight to Midian, the bush that was not consumed, I AM THAT I AM, the rod and the leprous hand, and Aaron sent to meet his brother."},
+  ],
+}
