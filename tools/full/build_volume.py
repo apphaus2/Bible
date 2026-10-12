@@ -11,6 +11,10 @@ Reads tools/full/<volume>/ (META in __init__.py, cover.py, one module per manga 
   coverage.md       every Bible verse in the chapters built so far: full / partial / omitted
 Then it checks every caption, balloon and title quote against the ASV text and stops on any mismatch."""
 import sys, json, re, html, pathlib, importlib, datetime
+
+def save(path, text):
+    """Write UTF-8 with LF line endings on every platform (Windows would otherwise write CRLF)."""
+    path.write_bytes(text.encode("utf-8"))
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / "kit"))
@@ -36,7 +40,7 @@ def main(vol, check=False):
             f = pages_dir / name
             if not f.exists() or f.read_text() != html_: stale_pages.append(name)
         else:
-            (pages_dir / name).write_text(html_)
+            save(pages_dir / name, html_)
     for stale in pages_dir.glob("*.dc.html"):
         if stale.name not in written:
             stale_pages.append(stale.name) if check else stale.unlink()
@@ -58,9 +62,9 @@ def main(vol, check=False):
     canvas = {"v": 3, "createdOnFiles": old.get("createdOnFiles") or {"v": 1, "at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")},
               "title": f"{META['name']} — Full Edition", "launch": {"view": "canvas"}, "pages": [],
               "boards": boards, "order": [n for n, _, _ in order], "notes": notes, "designSystems": [], "attachments": {}}
-    if not check: cpath.write_text(json.dumps(canvas, indent=1, ensure_ascii=False))
+    if not check: save(cpath, json.dumps(canvas, indent=1, ensure_ascii=False))
 
-    if not check: (out / "volume.json").write_text(json.dumps({k: META[k] for k in ("id", "order", "name", "kanji", "thumb", "lede")} | {
+    if not check: save(out / "volume.json", json.dumps({k: META[k] for k in ("id", "order", "name", "kanji", "thumb", "lede")} | {
         "books": [{k: c[k] for k in ("dir", "num", "name", "range", "blurb", "prefixes")} for c in chapters]}, indent=1, ensure_ascii=False))
 
     # coverage report
@@ -78,7 +82,7 @@ def main(vol, check=False):
         lines += (odd or ["Every verse is on the page in full."]) + [""]
     allv = sum(tot.values())
     lines.insert(4, f"**So far:** {allv} verses — {tot['full']} full, {tot['partial']} partial, {tot['omitted']} omitted.\n")
-    if not check: (out / "coverage.md").write_text("\n".join(lines))
+    if not check: save(out / "coverage.md", "\n".join(lines))
 
     # text check: every uppercase text block must be a run of the ASV (… marks a cut). Labels that are not
     # scripture (titles, credits) carry data-label and are skipped.

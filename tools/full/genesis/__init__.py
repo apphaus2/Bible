@@ -29,5 +29,7 @@ META = {
      "blurb": "The flight from Laban, the stolen teraphim, the pursuit to Gilead, the heap of witness and Mizpah, God's host at Mahanaim, the present for Esau, the night at the ford of the Jabbok, Israel, and the two brothers weeping on each other's neck."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Bethel Again", "range": "Genesis 34–36", "bible_chapters": [34, 35, 36],
      "blurb": "Dinah and the city of Shechem, the sword of Simeon and Levi, the foreign gods buried under the oak, Israel at Beth-el, the birth of Benjamin and the death of Rachel, the twelve sons, the death of Isaac, and the generations of Esau in mount Seir."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Dreamer", "range": "Genesis 37–38", "bible_chapters": [37, 38],
+     "blurb": "The coat of many colors, the sheaves and the stars, Dothan, the empty pit, twenty pieces of silver, the coat dipped in blood, Jacob refusing to be comforted, and Judah and Tamar at the gate of Enaim."},
   ],
 }

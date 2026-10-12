@@ -1360,6 +1360,111 @@
    "w": 760,
    "h": 1080,
    "title": "182 · The Kings That Reigned in Edom"
+  },
+  "GEN-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 56200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Dreamer"
+  },
+  "GEN-C11-P01-Coat.dc.html": {
+   "x": 840,
+   "y": 56200,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · A Coat of Many Colors"
+  },
+  "GEN-C11-P02-Sheaves.dc.html": {
+   "x": 1680,
+   "y": 56200,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · My Sheaf Arose"
+  },
+  "GEN-C11-P03-Stars.dc.html": {
+   "x": 2520,
+   "y": 56200,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · The Sun and the Moon and Eleven Stars"
+  },
+  "GEN-C11-P04-Dothan.dc.html": {
+   "x": 3360,
+   "y": 56200,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · I Am Seeking My Brethren"
+  },
+  "GEN-C11-P05-Conspired.dc.html": {
+   "x": 0,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Behold, This Dreamer Cometh"
+  },
+  "GEN-C11-P06-Pit.dc.html": {
+   "x": 840,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · They Cast Him into the Pit"
+  },
+  "GEN-C11-P07-Sold.dc.html": {
+   "x": 1680,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Twenty Pieces of Silver"
+  },
+  "GEN-C11-P08-Blood.dc.html": {
+   "x": 2520,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · The Child Is Not"
+  },
+  "GEN-C11-P09-Sheol.dc.html": {
+   "x": 3360,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · He Refused to Be Comforted"
+  },
+  "GEN-C11-P10-Judah.dc.html": {
+   "x": 0,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · Judah Went Down from His Brethren"
+  },
+  "GEN-C11-P11-Widow.dc.html": {
+   "x": 840,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Remain a Widow in Thy Father's House"
+  },
+  "GEN-C11-P12-Enaim.dc.html": {
+   "x": 1680,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · The Gate of Enaim"
+  },
+  "GEN-C11-P13-Pledge.dc.html": {
+   "x": 2520,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · She Is More Righteous Than I"
+  },
+  "GEN-C11-P14-Perez.dc.html": {
+   "x": 3360,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · The Scarlet Thread"
   }
  },
  "order": [
@@ -1555,7 +1660,22 @@
   "GEN-C10-P10-Esau.dc.html",
   "GEN-C10-P11-Chiefs.dc.html",
   "GEN-C10-P12-Horites.dc.html",
-  "GEN-C10-P13-Kings.dc.html"
+  "GEN-C10-P13-Kings.dc.html",
+  "GEN-C11-00-Title.dc.html",
+  "GEN-C11-P01-Coat.dc.html",
+  "GEN-C11-P02-Sheaves.dc.html",
+  "GEN-C11-P03-Stars.dc.html",
+  "GEN-C11-P04-Dothan.dc.html",
+  "GEN-C11-P05-Conspired.dc.html",
+  "GEN-C11-P06-Pit.dc.html",
+  "GEN-C11-P07-Sold.dc.html",
+  "GEN-C11-P08-Blood.dc.html",
+  "GEN-C11-P09-Sheol.dc.html",
+  "GEN-C11-P10-Judah.dc.html",
+  "GEN-C11-P11-Widow.dc.html",
+  "GEN-C11-P12-Enaim.dc.html",
+  "GEN-C11-P13-Pledge.dc.html",
+  "GEN-C11-P14-Perez.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1634,6 +1754,13 @@
    "text": "Chapter 10 · Bethel Again (Genesis 34–36)",
    "x": 0,
    "y": 51800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Dreamer (Genesis 37–38)",
+   "x": 0,
+   "y": 55900
   }
  },
  "designSystems": [],
