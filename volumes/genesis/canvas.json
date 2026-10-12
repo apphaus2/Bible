@@ -1878,6 +1878,104 @@
    "w": 760,
    "h": 1080,
    "title": "250 · Bury Me Not, I Pray Thee, in Egypt"
+  },
+  "GEN-C17-00-Title.dc.html": {
+   "x": 0,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 17 · The Blessing of Jacob"
+  },
+  "GEN-C17-P01-Sick.dc.html": {
+   "x": 840,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "251 · God Almighty Appeared unto Me at Luz"
+  },
+  "GEN-C17-P02-Sons.dc.html": {
+   "x": 1680,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "252 · Who Are These?"
+  },
+  "GEN-C17-P03-Hands.dc.html": {
+   "x": 2520,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "253 · Guiding His Hands Wittingly"
+  },
+  "GEN-C17-P04-Ephraim.dc.html": {
+   "x": 3360,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "254 · He Set Ephraim before Manasseh"
+  },
+  "GEN-C17-P05-Gather.dc.html": {
+   "x": 0,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "255 · Gather Yourselves Together"
+  },
+  "GEN-C17-P06-Tribes1.dc.html": {
+   "x": 840,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "256 · Reuben, Thou Art My First-born"
+  },
+  "GEN-C17-P07-Tribes2.dc.html": {
+   "x": 1680,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "257 · Joseph Is a Fruitful Bough"
+  },
+  "GEN-C17-P08-Gathered.dc.html": {
+   "x": 2520,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "258 · He Was Gathered unto His People"
+  },
+  "GEN-C17-P09-Embalmed.dc.html": {
+   "x": 3360,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "259 · Threescore and Ten Days"
+  },
+  "GEN-C17-P10-Atad.dc.html": {
+   "x": 0,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "260 · A Very Great Company"
+  },
+  "GEN-C17-P11-Forgive.dc.html": {
+   "x": 840,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "261 · Forgive, I Pray Thee"
+  },
+  "GEN-C17-P12-MeantGood.dc.html": {
+   "x": 1680,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "262 · God Meant It for Good"
+  },
+  "GEN-C17-P13-End.dc.html": {
+   "x": 2520,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "263 · So Joseph Died"
   }
  },
  "order": [
@@ -2147,7 +2245,21 @@
   "GEN-C16-P08-Rameses.dc.html",
   "GEN-C16-P09-Land.dc.html",
   "GEN-C16-P10-Fifth.dc.html",
-  "GEN-C16-P11-Thigh.dc.html"
+  "GEN-C16-P11-Thigh.dc.html",
+  "GEN-C17-00-Title.dc.html",
+  "GEN-C17-P01-Sick.dc.html",
+  "GEN-C17-P02-Sons.dc.html",
+  "GEN-C17-P03-Hands.dc.html",
+  "GEN-C17-P04-Ephraim.dc.html",
+  "GEN-C17-P05-Gather.dc.html",
+  "GEN-C17-P06-Tribes1.dc.html",
+  "GEN-C17-P07-Tribes2.dc.html",
+  "GEN-C17-P08-Gathered.dc.html",
+  "GEN-C17-P09-Embalmed.dc.html",
+  "GEN-C17-P10-Atad.dc.html",
+  "GEN-C17-P11-Forgive.dc.html",
+  "GEN-C17-P12-MeantGood.dc.html",
+  "GEN-C17-P13-End.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2268,6 +2380,13 @@
    "text": "Chapter 16 · Israel in Egypt (Genesis 46–47)",
    "x": 0,
    "y": 75200
+  },
+  "chapter17": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 17 · The Blessing of Jacob (Genesis 48–50)",
+   "x": 0,
+   "y": 79300
   }
  },
  "designSystems": [],

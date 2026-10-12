@@ -41,9 +41,12 @@ There are two editions:
 | Genesis | 14 · The Brothers in Egypt | 42–43 | title + 13 (pp. 216–228) | 69 full, 1 partial, 3 omitted (the retelling 42:31–34) | `volumes/genesis/` |
 | Genesis | 15 · I Am Joseph | 44–45 | title + 11 (pp. 229–239) | 62/62 verses full | `volumes/genesis/` |
 | Genesis | 16 · Israel in Egypt | 46–47 | title + 11 (pp. 240–250) | 65/65 verses full | `volumes/genesis/` |
+| Genesis | 17 · The Blessing of Jacob | 48–50 | title + 13 (pp. 251–263) | 81/81 verses full | `volumes/genesis/` |
+| **Genesis** | **complete: cover + 17 chapters** | **1–50** | **281 pages (263 numbered)** | **1,533 verses: 1,512 full, 4 partial, 17 omitted (three abridged retellings)** | `volumes/genesis/` |
 
-Next: Genesis chapter 17 (The Blessing of Jacob, Genesis 48–50), the last chapter of Genesis. 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
-dialogue panels (a face plus a column of caption/balloon pieces, ovals deepened for long speeches). Joseph's story (37–50, ~11,500 words) is seven
+**Genesis is complete.** Next: the Exodus volume (`tools/full/exodus/`: META, cover, ch01…; reuse the digest's Exodus art). 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
+dialogue panels (a face plus a column of caption/balloon pieces, ovals deepened for long speeches).
+Jacob's blessing (49:3–27) is two pages of cells, one per son; the volume ends with 完 "END OF GENESIS · NEXT · EXODUS". Joseph's story (37–50, ~11,500 words) is seven
 chapters: 11 The Dreamer (37–38) · 12 The Captain of the Guard (39–40) · 13 Pharaoh's Dreams (41; 41:17–24 is a
 retelling to abridge) · 14 The Brothers in Egypt (42–43) · 15 I Am Joseph (44–45) · 16 Israel in Egypt (46–47) ·
 17 The Blessing of Jacob (48–50). `build_volume.py` now writes LF on every platform (no line-ending churn on Windows).

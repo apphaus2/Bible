@@ -41,5 +41,7 @@ META = {
      "blurb": "The silver cup in Benjamin's sack, Judah's plea to abide instead of the lad, I am Joseph your brother, God did send me before you, the wagons of Egypt, and Jacob's spirit revived: It is enough; Joseph my son is yet alive."},
     {"module": "ch16", "dir": "chapter-16", "num": "16", "name": "Israel in Egypt", "range": "Genesis 46–47", "bible_chapters": [46, 47],
      "blurb": "Fear not to go down into Egypt, the seventy souls of the house of Jacob, Joseph falling on his father's neck, the land of Goshen, Jacob before Pharaoh, the famine and the fifth part, and Israel's oath: bury me not in Egypt."},
+    {"module": "ch17", "dir": "chapter-17", "num": "17", "name": "The Blessing of Jacob", "range": "Genesis 48–50", "bible_chapters": [48, 49, 50],
+     "blurb": "Ephraim set before Manasseh, the blessing of the twelve tribes, Jacob gathered unto his people, the great mourning at Atad, the burial at Machpelah, ye meant evil against me but God meant it for good, and the death of Joseph."},
   ],
 }
