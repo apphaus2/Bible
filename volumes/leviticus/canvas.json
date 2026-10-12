@@ -835,6 +835,76 @@
    "w": 760,
    "h": 1080,
    "title": "109 · The Jubilee"
+  },
+  "LEV-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Blessing and Curse"
+  },
+  "LEV-C09-L-P01-IfYeWalkInMyStatut.dc.html": {
+   "x": 840,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · If Ye Walk in My Statutes"
+  },
+  "LEV-C09-L-P02-ButIfYeWillNotHear.dc.html": {
+   "x": 1680,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · But If Ye Will Not Hearken"
+  },
+  "LEV-C09-L-P03-BlessingAndCurse.dc.html": {
+   "x": 2520,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Blessing and Curse"
+  },
+  "LEV-C09-L-P04-ThenShallTheLandEn.dc.html": {
+   "x": 3360,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Then Shall the Land Enjoy Its Sabbaths"
+  },
+  "LEV-C09-L-P05-BlessingAndCurse.dc.html": {
+   "x": 0,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Blessing and Curse"
+  },
+  "LEV-C09-L-P06-TheEstimationOfPer.dc.html": {
+   "x": 840,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Estimation of Persons"
+  },
+  "LEV-C09-L-P07-BeastsHousesAndFie.dc.html": {
+   "x": 1680,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Beasts, Houses and Fields"
+  },
+  "LEV-C09-L-P08-BlessingAndCurse.dc.html": {
+   "x": 2520,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Blessing and Curse"
+  },
+  "LEV-C09-L-P09-TheFirstlingTheDev.dc.html": {
+   "x": 3360,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Firstling, the Devoted, the Tithe"
   }
  },
  "order": [
@@ -955,7 +1025,17 @@
   "LEV-C08-N-P04-TheRedemptionOfThe.dc.html",
   "LEV-C08-N-P05-IfThyBrotherBeWaxe.dc.html",
   "LEV-C08-N-P06-TheJubilee.dc.html",
-  "LEV-C08-N-P07-TheJubilee.dc.html"
+  "LEV-C08-N-P07-TheJubilee.dc.html",
+  "LEV-C09-00-Title.dc.html",
+  "LEV-C09-L-P01-IfYeWalkInMyStatut.dc.html",
+  "LEV-C09-L-P02-ButIfYeWillNotHear.dc.html",
+  "LEV-C09-L-P03-BlessingAndCurse.dc.html",
+  "LEV-C09-L-P04-ThenShallTheLandEn.dc.html",
+  "LEV-C09-L-P05-BlessingAndCurse.dc.html",
+  "LEV-C09-L-P06-TheEstimationOfPer.dc.html",
+  "LEV-C09-L-P07-BeastsHousesAndFie.dc.html",
+  "LEV-C09-L-P08-BlessingAndCurse.dc.html",
+  "LEV-C09-L-P09-TheFirstlingTheDev.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1020,6 +1100,13 @@
    "text": "Chapter 8 · The Set Feasts (Leviticus 23–25)",
    "x": 0,
    "y": 31600
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Blessing and Curse (Leviticus 26–27)",
+   "x": 0,
+   "y": 36900
   }
  },
  "designSystems": [],

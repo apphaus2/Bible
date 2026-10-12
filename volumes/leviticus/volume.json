@@ -86,6 +86,16 @@
    "prefixes": [
     "LEV-C08-"
    ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "Blessing and Curse",
+   "range": "Leviticus 26–27",
+   "blurb": "If ye walk in my statutes: rain in its season, peace in the land, and I will walk among you; but if ye will not hearken: a heaven as iron and an earth as brass, the cities a waste, the land enjoying its sabbaths; and yet I will remember my covenant. Then the estimation of vows, and the tithe that is holy unto Jehovah.",
+   "prefixes": [
+    "LEV-C09-"
+   ]
   }
  ]
 }

@@ -27,5 +27,7 @@ META = {
      "blurb": "Ye shall be holy: the corners of the field for the poor, the deaf and the blind, thou shalt love thy neighbor as thyself, the stranger as the home-born, just balances; the penalties for Molech and the forbidden degrees; the holiness of the priests and of the holy things, and offerings without blemish."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Set Feasts", "range": "Leviticus 23–25", "bible_chapters": [23, 24, 25],
      "blurb": "The sabbath and the set feasts — passover and unleavened bread, the sheaf and the fifty days, the trumpets, the day of atonement, the booths; the lamp and the twelve cakes; the son of the Israelitish woman who blasphemed the Name; the sabbath of the land and the jubilee: proclaim liberty throughout the land."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Blessing and Curse", "range": "Leviticus 26–27", "bible_chapters": [26, 27],
+     "blurb": "If ye walk in my statutes: rain in its season, peace in the land, and I will walk among you; but if ye will not hearken: a heaven as iron and an earth as brass, the cities a waste, the land enjoying its sabbaths; and yet I will remember my covenant. Then the estimation of vows, and the tithe that is holy unto Jehovah."},
   ],
 }

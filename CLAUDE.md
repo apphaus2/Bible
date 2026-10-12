@@ -64,8 +64,11 @@ There are two editions:
 | Leviticus | 6 · The Day of Atonement | 16–18 | title + 14 (pp. 65–78) | 80/80 verses full (ch. 18 as kinship charts only) | `volumes/leviticus/` |
 | Leviticus | 7 · Holy unto Jehovah | 19–22 | title + 16 (pp. 79–94) | 121/121 verses full (ch. 20's penalties as charts under a red bar) | `volumes/leviticus/` |
 | Leviticus | 8 · The Set Feasts | 23–25 | title + 15 (pp. 95–109) | 122/122 verses full (24:23 caption-only over a heap of stones) | `volumes/leviticus/` |
+| Leviticus | 9 · Blessing and Curse | 26–27 | title + 9 (pp. 110–118) | 80/80 verses full | `volumes/leviticus/` |
+| **Leviticus** | **complete: cover + 9 chapters** | **1–27** | **128 pages (118 numbered)** | **859 verses: all full** | `volumes/leviticus/` |
 
-**Genesis and Exodus are complete; Leviticus is under way** in `tools/full/lev/` (9 chapters planned: 1 The Offerings 1–5 ·
+**Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
+`tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·
 2 The Consecration 6–8 · 3 Strange Fire 9–11 · 4 The Plague of Leprosy 12–13 · 5 The Cleansing 14–15 · 6 The Day of
 Atonement 16–18 · 7 Holy unto Jehovah 19–22 · 8 The Set Feasts 23–25 · 9 Blessing and Curse 26–27). The laws are
 `exo.kit.law_pages()`: items (heading, verses, pictogram, lead caption, page head) packed into pages of up to six
