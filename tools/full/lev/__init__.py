@@ -21,5 +21,7 @@ META = {
      "blurb": "The days of purifying after a birth, and the priest looking on the plague: the rising, the scab and the bright spot, the hair turned white, the raw flesh, the boil, the burning, the scall, the leper crying Unclean, unclean, without the camp, and the plague in a garment."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Cleansing", "range": "Leviticus 14–15", "bible_chapters": [14, 15],
      "blurb": "The law of the leper in the day of his cleansing: two living birds, cedar, scarlet and hyssop, the bird let go into the open field, the eighth day and the log of oil; the plague in the walls of a house; and the laws of issues, that they die not in their uncleanness."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Day of Atonement", "range": "Leviticus 16–18", "bible_chapters": [16, 17, 18],
+     "blurb": "Aaron in the holy linen garments, the two goats and the lots, the cloud of incense over the mercy-seat, the live goat bearing all their iniquities into a solitary land, the tenth day of the seventh month; the life of the flesh is in the blood; and the doings of Egypt and of Canaan ye shall not do."},
   ],
 }

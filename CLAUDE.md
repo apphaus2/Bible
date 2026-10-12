@@ -61,6 +61,7 @@ There are two editions:
 | Leviticus | 3 · Strange Fire | 9–11 | title + 14 (pp. 32–45) | 91/91 verses full (10:1–5 shown with restraint) | `volumes/leviticus/` |
 | Leviticus | 4 · The Plague of Leprosy | 12–13 | title + 9 (pp. 46–54) | 67/67 verses full (skin signs as inspection-lens diagrams) | `volumes/leviticus/` |
 | Leviticus | 5 · The Cleansing | 14–15 | title + 11 (pp. 55–65) | 90/90 verses full (issues drawn only as household things) | `volumes/leviticus/` |
+| Leviticus | 6 · The Day of Atonement | 16–18 | title + 14 (pp. 66–79) | 80/80 verses full (ch. 18 as kinship charts only) | `volumes/leviticus/` |
 
 **Genesis and Exodus are complete; Leviticus is under way** in `tools/full/lev/` (9 chapters planned: 1 The Offerings 1–5 ·
 2 The Consecration 6–8 · 3 Strange Fire 9–11 · 4 The Plague of Leprosy 12–13 · 5 The Cleansing 14–15 · 6 The Day of

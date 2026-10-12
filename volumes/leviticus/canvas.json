@@ -506,6 +506,111 @@
    "w": 760,
    "h": 1080,
    "title": "65 · The Cleansing"
+  },
+  "LEV-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Day of Atonement"
+  },
+  "LEV-C06-P01-ThatHeComeNotAtAll.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · That He Come Not at All Times"
+  },
+  "LEV-C06-P02-OneLotForJehovahTh.dc.html": {
+   "x": 1680,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · One Lot for Jehovah, the Other for Azazel"
+  },
+  "LEV-C06-P03-WithinTheVeil.dc.html": {
+   "x": 2520,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Within the Veil"
+  },
+  "LEV-C06-P04-TheDayOfAtonement.dc.html": {
+   "x": 3360,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Day of Atonement"
+  },
+  "LEV-C06-P05-TheLiveGoat.dc.html": {
+   "x": 0,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Live Goat"
+  },
+  "LEV-C06-P06-TheDayOfAtonement.dc.html": {
+   "x": 840,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Day of Atonement"
+  },
+  "LEV-C06-P07-AStatuteForEver.dc.html": {
+   "x": 1680,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · A Statute for Ever"
+  },
+  "LEV-C06-L-P01-TheLifeOfTheFleshI.dc.html": {
+   "x": 2520,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Life of the Flesh Is in the Blood"
+  },
+  "LEV-C06-L-P02-YeShallNotDoAfterT.dc.html": {
+   "x": 3360,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Ye Shall Not Do After Their Doings"
+  },
+  "LEV-C06-L-P03-YeShallNotDoAfterT.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Ye Shall Not Do After Their Doings"
+  },
+  "LEV-C06-L-P04-NoneOfYouShallAppr.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · None of You Shall Approach"
+  },
+  "LEV-C06-L-P05-YeShallNotDoAfterT.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Ye Shall Not Do After Their Doings"
+  },
+  "LEV-C06-L-P06-YeShallNotDoAfterT.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Ye Shall Not Do After Their Doings"
+  },
+  "LEV-C06-L-P07-ThatTheLandVomitNo.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · That the Land Vomit Not You Out"
   }
  },
  "order": [
@@ -579,7 +684,22 @@
   "LEV-C05-L-P08-WhenAnyManHathAnIs.dc.html",
   "LEV-C05-L-P09-TheCleansing.dc.html",
   "LEV-C05-L-P10-IfAWomanHaveAnIssu.dc.html",
-  "LEV-C05-L-P11-TheCleansing.dc.html"
+  "LEV-C05-L-P11-TheCleansing.dc.html",
+  "LEV-C06-00-Title.dc.html",
+  "LEV-C06-P01-ThatHeComeNotAtAll.dc.html",
+  "LEV-C06-P02-OneLotForJehovahTh.dc.html",
+  "LEV-C06-P03-WithinTheVeil.dc.html",
+  "LEV-C06-P04-TheDayOfAtonement.dc.html",
+  "LEV-C06-P05-TheLiveGoat.dc.html",
+  "LEV-C06-P06-TheDayOfAtonement.dc.html",
+  "LEV-C06-P07-AStatuteForEver.dc.html",
+  "LEV-C06-L-P01-TheLifeOfTheFleshI.dc.html",
+  "LEV-C06-L-P02-YeShallNotDoAfterT.dc.html",
+  "LEV-C06-L-P03-YeShallNotDoAfterT.dc.html",
+  "LEV-C06-L-P04-NoneOfYouShallAppr.dc.html",
+  "LEV-C06-L-P05-YeShallNotDoAfterT.dc.html",
+  "LEV-C06-L-P06-YeShallNotDoAfterT.dc.html",
+  "LEV-C06-L-P07-ThatTheLandVomitNo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -623,6 +743,13 @@
    "text": "Chapter 5 · The Cleansing (Leviticus 14–15)",
    "x": 0,
    "y": 19300
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Day of Atonement (Leviticus 16–18)",
+   "x": 0,
+   "y": 23400
   }
  },
  "designSystems": [],

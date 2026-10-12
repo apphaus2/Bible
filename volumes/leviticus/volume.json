@@ -56,6 +56,16 @@
    "prefixes": [
     "LEV-C05-"
    ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "The Day of Atonement",
+   "range": "Leviticus 16–18",
+   "blurb": "Aaron in the holy linen garments, the two goats and the lots, the cloud of incense over the mercy-seat, the live goat bearing all their iniquities into a solitary land, the tenth day of the seventh month; the life of the flesh is in the blood; and the doings of Egypt and of Canaan ye shall not do.",
+   "prefixes": [
+    "LEV-C06-"
+   ]
   }
  ]
 }
