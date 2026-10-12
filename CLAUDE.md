@@ -8,7 +8,7 @@ A manga adaptation of the Bible, drawn as full-color vector pages in a 1980s cyb
 (general style only: never Akira's characters, logo or imagery), with every word of text taken from the
 **American Standard Version (1901)**. Everything is built in this repo with Claude Code (Python generates every
 page; nothing is drawn by hand), and GitHub Actions builds and deploys the website to GitHub Pages on every push
-to `main`. The repo is the only source of truth: review pages with `shots.js` renders or the website.
+to `master`. The repo is the only source of truth: review pages with `shots.js` renders or the website.
 
 There are two editions:
 
@@ -423,7 +423,7 @@ Never fall back to blobs or stick figures.
 
 ## Website (built by GitHub Actions)
 
-A static site built from both editions. Nothing generated is committed: on every push to `main`,
+A static site built from both editions. Nothing generated is committed: on every push to `master`,
 `.github/workflows/pages.yml` checks each volume (`build_volume.py <vol> --check`), runs
 `rebuild_site.py --thumbs --out _site` (Python + Pillow, Node + Playwright Chromium) and deploys `_site/`
 as a GitHub Pages artifact. Thumbnails are cached between runs (actions/cache on `_site/thumbs`), so a
@@ -478,8 +478,8 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
   worktree under `.claude/worktrees/`). Run Python as `PYTHONUTF8=1 python …` (the default code page breaks the
   UTF-8 sources). Node + Playwright for `shots.js` may need installing in a scratch folder (`NODE_PATH`).
 - **"continue"** from the user means: build the next full-edition chapter.
-- **"commit" / "update github"** means: commit straight to `main` (from a worktree, commit there and fast-forward
-  `main` in the main clone), then give the push command; the user runs `git push`. The push deploys the site.
+- **"commit" / "update github"** means: commit straight to `master` (from a worktree, commit there and fast-forward
+  `master` in the main clone), then give the push command; the user runs `git push`. The push deploys the site.
   Don't fuss over Windows line endings, but don't commit files whose only change is CRLF.
 - Commit messages end with the Co-Authored-By line; the git author is Sky <sky75.morey@gmail.com>.
 
