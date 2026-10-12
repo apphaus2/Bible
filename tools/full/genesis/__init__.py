@@ -31,5 +31,9 @@ META = {
      "blurb": "Dinah and the city of Shechem, the sword of Simeon and Levi, the foreign gods buried under the oak, Israel at Beth-el, the birth of Benjamin and the death of Rachel, the twelve sons, the death of Isaac, and the generations of Esau in mount Seir."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Dreamer", "range": "Genesis 37–38", "bible_chapters": [37, 38],
      "blurb": "The coat of many colors, the sheaves and the stars, Dothan, the empty pit, twenty pieces of silver, the coat dipped in blood, Jacob refusing to be comforted, and Judah and Tamar at the gate of Enaim."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "The Captain of the Guard", "range": "Genesis 39–40", "bible_chapters": [39, 40],
+     "blurb": "Joseph in the house of Potiphar, the garment left in her hand, the king's prison, the butler's vine of three branches, the baker's three baskets, and the butler who forgat him."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Pharaoh's Dreams", "range": "Genesis 41", "bible_chapters": [41],
+     "blurb": "Seven kine and seven ears, Joseph brought hastily out of the dungeon, seven years of plenty and seven of famine, the signet ring and the second chariot, grain as the sand of the sea, and all countries coming to Joseph to buy grain."},
   ],
 }

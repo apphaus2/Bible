@@ -1465,6 +1465,153 @@
    "w": 760,
    "h": 1080,
    "title": "196 · The Scarlet Thread"
+  },
+  "GEN-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Captain of the Guard"
+  },
+  "GEN-C12-P01-Overseer.dc.html": {
+   "x": 840,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · Jehovah Was with Joseph"
+  },
+  "GEN-C12-P02-Refused.dc.html": {
+   "x": 1680,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · How Then Can I Do This Great Wickedness?"
+  },
+  "GEN-C12-P03-Garment.dc.html": {
+   "x": 2520,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · He Left His Garment in Her Hand"
+  },
+  "GEN-C12-P04-Prison.dc.html": {
+   "x": 3360,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · He Put Him into the Prison"
+  },
+  "GEN-C12-P05-Keeper.dc.html": {
+   "x": 0,
+   "y": 61500,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · The Keeper of the Prison"
+  },
+  "GEN-C12-P06-Officers.dc.html": {
+   "x": 840,
+   "y": 61500,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · Wherefore Look Ye So Sad To-day?"
+  },
+  "GEN-C12-P07-Vine.dc.html": {
+   "x": 1680,
+   "y": 61500,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · Three Branches"
+  },
+  "GEN-C12-P08-Baskets.dc.html": {
+   "x": 2520,
+   "y": 61500,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · Three Baskets"
+  },
+  "GEN-C12-P09-Forgat.dc.html": {
+   "x": 3360,
+   "y": 61500,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · He Forgat Him"
+  },
+  "GEN-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Pharaoh's Dreams"
+  },
+  "GEN-C13-P01-Kine.dc.html": {
+   "x": 840,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Seven Kine out of the River"
+  },
+  "GEN-C13-P02-Ears.dc.html": {
+   "x": 1680,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Seven Ears upon One Stalk"
+  },
+  "GEN-C13-P03-Butler.dc.html": {
+   "x": 2520,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · I Do Remember My Faults This Day"
+  },
+  "GEN-C13-P04-Answer.dc.html": {
+   "x": 3360,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · It Is Not in Me"
+  },
+  "GEN-C13-P05-One.dc.html": {
+   "x": 0,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · The Dream of Pharaoh Is One"
+  },
+  "GEN-C13-P06-Plenty.dc.html": {
+   "x": 840,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · Seven Years of Great Plenty"
+  },
+  "GEN-C13-P07-Fifth.dc.html": {
+   "x": 1680,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · The Fifth Part of the Land"
+  },
+  "GEN-C13-P08-Chariot.dc.html": {
+   "x": 2520,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · Bow the Knee"
+  },
+  "GEN-C13-P09-Granaries.dc.html": {
+   "x": 3360,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "214 · As the Sand of the Sea"
+  },
+  "GEN-C13-P10-Famine.dc.html": {
+   "x": 0,
+   "y": 65600,
+   "w": 760,
+   "h": 1080,
+   "title": "215 · Go unto Joseph"
   }
  },
  "order": [
@@ -1675,7 +1822,28 @@
   "GEN-C11-P11-Widow.dc.html",
   "GEN-C11-P12-Enaim.dc.html",
   "GEN-C11-P13-Pledge.dc.html",
-  "GEN-C11-P14-Perez.dc.html"
+  "GEN-C11-P14-Perez.dc.html",
+  "GEN-C12-00-Title.dc.html",
+  "GEN-C12-P01-Overseer.dc.html",
+  "GEN-C12-P02-Refused.dc.html",
+  "GEN-C12-P03-Garment.dc.html",
+  "GEN-C12-P04-Prison.dc.html",
+  "GEN-C12-P05-Keeper.dc.html",
+  "GEN-C12-P06-Officers.dc.html",
+  "GEN-C12-P07-Vine.dc.html",
+  "GEN-C12-P08-Baskets.dc.html",
+  "GEN-C12-P09-Forgat.dc.html",
+  "GEN-C13-00-Title.dc.html",
+  "GEN-C13-P01-Kine.dc.html",
+  "GEN-C13-P02-Ears.dc.html",
+  "GEN-C13-P03-Butler.dc.html",
+  "GEN-C13-P04-Answer.dc.html",
+  "GEN-C13-P05-One.dc.html",
+  "GEN-C13-P06-Plenty.dc.html",
+  "GEN-C13-P07-Fifth.dc.html",
+  "GEN-C13-P08-Chariot.dc.html",
+  "GEN-C13-P09-Granaries.dc.html",
+  "GEN-C13-P10-Famine.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1761,6 +1929,20 @@
    "text": "Chapter 11 · The Dreamer (Genesis 37–38)",
    "x": 0,
    "y": 55900
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Captain of the Guard (Genesis 39–40)",
+   "x": 0,
+   "y": 60000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Pharaoh's Dreams (Genesis 41)",
+   "x": 0,
+   "y": 62900
   }
  },
  "designSystems": [],

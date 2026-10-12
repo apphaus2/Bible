@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1150 verses — 1140 full, 2 partial, 8 omitted.
+**So far:** 1253 verses — 1236 full, 3 partial, 14 omitted.
 
 ## Chapter 1 · In the Beginning (Genesis 1–3)
 
@@ -78,3 +78,21 @@ Every verse is on the page in full.
 66 verses: 66 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
+
+## Chapter 12 · The Captain of the Guard (Genesis 39–40)
+
+46 verses: 46 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 13 · Pharaoh's Dreams (Genesis 41)
+
+57 verses: 50 full, 1 partial, 6 omitted.
+
+- 41:18 — omitted (0%)
+- 41:19 — omitted (0%)
+- 41:20 — omitted (0%)
+- 41:21 — omitted (0%)
+- 41:22 — omitted (0%)
+- 41:23 — omitted (0%)
+- 41:24 — partial (61%)

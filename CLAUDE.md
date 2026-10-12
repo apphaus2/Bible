@@ -36,8 +36,10 @@ There are two editions:
 | Genesis | 9 · Peniel | 31–33 | title + 18 (pp. 152–169) | 107/107 verses full | `volumes/genesis/` |
 | Genesis | 10 · Bethel Again | 34–36 | title + 13 (pp. 170–182) | 103/103 verses full | `volumes/genesis/` |
 | Genesis | 11 · The Dreamer | 37–38 | title + 14 (pp. 183–196) | 66/66 verses full | `volumes/genesis/` |
+| Genesis | 12 · The Captain of the Guard | 39–40 | title + 9 (pp. 197–205) | 46/46 verses full | `volumes/genesis/` |
+| Genesis | 13 · Pharaoh's Dreams | 41 | title + 10 (pp. 206–215) | 49 full, 2 partial, 6 omitted (the retelling 41:18–24) | `volumes/genesis/` |
 
-Next: Genesis chapter 12 (The Captain of the Guard, Genesis 39–40). Joseph's story (37–50, ~11,500 words) is seven
+Next: Genesis chapter 14 (The Brothers in Egypt, Genesis 42–43; 42:29–34 and 43:3–7 are retellings to abridge). Joseph's story (37–50, ~11,500 words) is seven
 chapters: 11 The Dreamer (37–38) · 12 The Captain of the Guard (39–40) · 13 Pharaoh's Dreams (41; 41:17–24 is a
 retelling to abridge) · 14 The Brothers in Egypt (42–43) · 15 I Am Joseph (44–45) · 16 Israel in Egypt (46–47) ·
 17 The Blessing of Jacob (48–50). `build_volume.py` now writes LF on every platform (no line-ending churn on Windows).
@@ -122,7 +124,8 @@ tools/
                       Rachel, the handmaids, the sons counter, the speckled flock and the rods), art9.py (chapter 9: the flight,
                       the teraphim, Gilead and Mizpah, the droves, the Jabbok, the meeting, Succoth), art10.py (chapter 10, and
                       `stage()`: a general scene builder — setting + cast placed by head height + props), art11.py (chapter 11: the
-                      brethren, Dothan, the caravan, Judah and Tamar), ch01.py … ch11.py
+                      brethren, Dothan, the caravan, Judah and Tamar), art12.py (chapters 12–13: Potiphar's house, the prison,
+                      the vine and the baskets, Pharaoh's court, the chariot, the storehouses), ch01.py … ch13.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -442,6 +445,12 @@ Never fall back to blobs or stick figures.
     brethren: black stubble, scowl, red light. Tamar: dark-grey widow's scarf; violet veil at Enaim.
   - Faces' `scarf=` covers the hair, so warm reds and tans read as long hair: use off-white, dark or cool colours.
   - Genesis 38 is in full; drawn as faces, the gate of Enaim, the pledge, and the twins with the scarlet thread.
+- **Character guide (Genesis 39–41, `art12.py`):**
+  - Joseph has no coat of many colours after 37:23: a plain cream tunic (`stage()` cast "joseph_plain"). In Egypt, from
+    41:14, he keeps his brown curls with an Egyptian collar and kohl (never a nemes, so he never looks like Pharaoh).
+  - Pharaoh of Joseph's day: gold-and-blue nemes, false beard. Potiphar: white-and-blue headcloth, collar, kohl.
+    Potiphar's wife: black hair, gold band, collar, kohl. The butler: white-and-red headcloth; the baker: tan.
+  - 39:7–18 is in full; drawn as faces, an empty doorway and the garment in her hand.
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'

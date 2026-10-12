@@ -35,6 +35,7 @@ def figure(p, who, x, y, s, flip=False, pose=None):
     if who == "leah": return L.leah(p, x, y, s, flip=flip, up=up)
     if who == "esau": return M.esau_old(p, x, y, s, flip=flip, up=up)
     if who == "joseph": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#F3EFE6", kind="Tunic", sw=3, flip=flip, up=up, extra=COAT)
+    if who == "joseph_plain": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#D8C8A0", kind="Tunic", sw=3, flip=flip, up=up)
     if who == "joseph_eg": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#F3EFE6", sw=3, flip=flip, up=up, extra=NEMES_BLUE)
     if who == "pharaoh": return mk.person(p, round(x), round(y), round(s, 3), body="#8A4A2E", cloth="#F3EFE6", sw=3, flip=flip, up=up, extra=NEMES_GOLD)
     if who == "dinah": return woman(p, x, y, s, "#E07A9A", flip=flip, up=up)

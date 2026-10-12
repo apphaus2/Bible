@@ -63,7 +63,7 @@ def sackcloth(p, w, h, seed):
 
 def potiphar_house(p, w, h, seed):
     """Sold into Egypt unto Potiphar, an officer of Pharaoh's, the captain of the guard: a guarded house, a spear-bearer."""
-    return T.stage(p, w, h, seed, "egypt", [(("egypt", "#F3EFE6"), 0.3, 0.44, False, "point"), ("joseph", 0.46, 0.5, True)],
+    return T.stage(p, w, h, seed, "egypt", [(("egypt", "#F3EFE6"), 0.3, 0.44, False, "point"), ("joseph_plain", 0.46, 0.5, True)],
                    props=label(w * 0.3, h * 0.96, "POTIPHAR", "#12113A", 9))
 
 # ---- Genesis 38 ----------------------------------------------------------------------------------------

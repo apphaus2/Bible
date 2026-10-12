@@ -116,6 +116,26 @@
    "prefixes": [
     "GEN-C11-"
    ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "The Captain of the Guard",
+   "range": "Genesis 39–40",
+   "blurb": "Joseph in the house of Potiphar, the garment left in her hand, the king's prison, the butler's vine of three branches, the baker's three baskets, and the butler who forgat him.",
+   "prefixes": [
+    "GEN-C12-"
+   ]
+  },
+  {
+   "dir": "chapter-13",
+   "num": "13",
+   "name": "Pharaoh's Dreams",
+   "range": "Genesis 41",
+   "blurb": "Seven kine and seven ears, Joseph brought hastily out of the dungeon, seven years of plenty and seven of famine, the signet ring and the second chariot, grain as the sand of the sea, and all countries coming to Joseph to buy grain.",
+   "prefixes": [
+    "GEN-C13-"
+   ]
   }
  ]
 }
