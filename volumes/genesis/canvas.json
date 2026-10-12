@@ -1710,6 +1710,90 @@
    "w": 760,
    "h": 1080,
    "title": "228 · Five Times So Much"
+  },
+  "GEN-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · I Am Joseph"
+  },
+  "GEN-C15-P01-Cup.dc.html": {
+   "x": 840,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "229 · My Cup, the Silver Cup"
+  },
+  "GEN-C15-P02-Search.dc.html": {
+   "x": 1680,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "230 · Found in Benjamin's Sack"
+  },
+  "GEN-C15-P03-Bondmen.dc.html": {
+   "x": 2520,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "231 · We Are My Lord's Bondmen"
+  },
+  "GEN-C15-P04-Judah1.dc.html": {
+   "x": 3360,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "232 · Oh, My Lord"
+  },
+  "GEN-C15-P05-Judah2.dc.html": {
+   "x": 0,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "233 · Ye Know That My Wife Bare Me Two Sons"
+  },
+  "GEN-C15-P06-Judah3.dc.html": {
+   "x": 840,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "234 · Let Thy Servant Abide instead of the Lad"
+  },
+  "GEN-C15-P07-IAmJoseph.dc.html": {
+   "x": 1680,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "235 · I Am Joseph"
+  },
+  "GEN-C15-P08-SentMe.dc.html": {
+   "x": 2520,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "236 · God Did Send Me before You"
+  },
+  "GEN-C15-P09-Goshen.dc.html": {
+   "x": 3360,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "237 · Thou Shalt Dwell in the Land of Goshen"
+  },
+  "GEN-C15-P10-Wagons.dc.html": {
+   "x": 0,
+   "y": 73800,
+   "w": 760,
+   "h": 1080,
+   "title": "238 · Take You Wagons out of the Land of Egypt"
+  },
+  "GEN-C15-P11-Revived.dc.html": {
+   "x": 840,
+   "y": 73800,
+   "w": 760,
+   "h": 1080,
+   "title": "239 · Joseph My Son Is Yet Alive"
   }
  },
  "order": [
@@ -1955,7 +2039,19 @@
   "GEN-C14-P10-Afraid.dc.html",
   "GEN-C14-P11-Peace.dc.html",
   "GEN-C14-P12-Benjamin.dc.html",
-  "GEN-C14-P13-Feast.dc.html"
+  "GEN-C14-P13-Feast.dc.html",
+  "GEN-C15-00-Title.dc.html",
+  "GEN-C15-P01-Cup.dc.html",
+  "GEN-C15-P02-Search.dc.html",
+  "GEN-C15-P03-Bondmen.dc.html",
+  "GEN-C15-P04-Judah1.dc.html",
+  "GEN-C15-P05-Judah2.dc.html",
+  "GEN-C15-P06-Judah3.dc.html",
+  "GEN-C15-P07-IAmJoseph.dc.html",
+  "GEN-C15-P08-SentMe.dc.html",
+  "GEN-C15-P09-Goshen.dc.html",
+  "GEN-C15-P10-Wagons.dc.html",
+  "GEN-C15-P11-Revived.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2062,6 +2158,13 @@
    "text": "Chapter 14 · The Brothers in Egypt (Genesis 42–43)",
    "x": 0,
    "y": 67000
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · I Am Joseph (Genesis 44–45)",
+   "x": 0,
+   "y": 71100
   }
  },
  "designSystems": [],

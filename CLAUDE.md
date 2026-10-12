@@ -39,8 +39,9 @@ There are two editions:
 | Genesis | 12 · The Captain of the Guard | 39–40 | title + 9 (pp. 197–205) | 46/46 verses full | `volumes/genesis/` |
 | Genesis | 13 · Pharaoh's Dreams | 41 | title + 10 (pp. 206–215) | 49 full, 2 partial, 6 omitted (the retelling 41:18–24) | `volumes/genesis/` |
 | Genesis | 14 · The Brothers in Egypt | 42–43 | title + 13 (pp. 216–228) | 69 full, 1 partial, 3 omitted (the retelling 42:31–34) | `volumes/genesis/` |
+| Genesis | 15 · I Am Joseph | 44–45 | title + 11 (pp. 229–239) | 62/62 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 15 (I Am Joseph, Genesis 44–45). 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
+Next: Genesis chapter 16 (Israel in Egypt, Genesis 46–47; 46:8–27 is a list → scroll pages). 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
 dialogue panels (a face plus a column of caption/balloon pieces, ovals deepened for long speeches). Joseph's story (37–50, ~11,500 words) is seven
 chapters: 11 The Dreamer (37–38) · 12 The Captain of the Guard (39–40) · 13 Pharaoh's Dreams (41; 41:17–24 is a
 retelling to abridge) · 14 The Brothers in Egypt (42–43) · 15 I Am Joseph (44–45) · 16 Israel in Egypt (46–47) ·
@@ -449,7 +450,8 @@ Never fall back to blobs or stick figures.
   - Genesis 38 is in full; drawn as faces, the gate of Enaim, the pledge, and the twins with the scarlet thread.
 - **Character guide (Genesis 39–41, `art12.py`):**
   - Joseph has no coat of many colours after 37:23: a plain cream tunic (`stage()` cast "joseph_plain"). In Egypt, from
-    41:14, he keeps his brown curls with an Egyptian collar and kohl (never a nemes, so he never looks like Pharaoh).
+    41:14, he keeps his brown curls with an Egyptian collar and kohl (never a nemes, so he never looks like Pharaoh;
+    the digest's nemes Joseph panels are not reused from 45:1 on). Judah's plea (44:18–34) is kept in full.
   - Pharaoh of Joseph's day: gold-and-blue nemes, false beard. Potiphar: white-and-blue headcloth, collar, kohl.
     Potiphar's wife: black hair, gold band, collar, kohl. The butler: white-and-red headcloth; the baker: tan.
   - 39:7–18 is in full; drawn as faces, an empty doorway and the garment in her hand.

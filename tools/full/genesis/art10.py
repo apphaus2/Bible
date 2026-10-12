@@ -36,7 +36,7 @@ def figure(p, who, x, y, s, flip=False, pose=None):
     if who == "esau": return M.esau_old(p, x, y, s, flip=flip, up=up)
     if who == "joseph": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#F3EFE6", kind="Tunic", sw=3, flip=flip, up=up, extra=COAT)
     if who == "joseph_plain": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#D8C8A0", kind="Tunic", sw=3, flip=flip, up=up)
-    if who == "joseph_eg": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#F3EFE6", sw=3, flip=flip, up=up, extra=NEMES_BLUE)
+    if who == "joseph_eg": return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#F3EFE6", sw=3, flip=flip, up=up, extra=COLLAR)
     if who == "pharaoh": return mk.person(p, round(x), round(y), round(s, 3), body="#8A4A2E", cloth="#F3EFE6", sw=3, flip=flip, up=up, extra=NEMES_GOLD)
     if who == "dinah": return woman(p, x, y, s, "#E07A9A", flip=flip, up=up)
     if who == "benjamin": return K.lad(p, x, y, s, cloth="#C2456A", flip=flip, up=up)
@@ -44,6 +44,8 @@ def figure(p, who, x, y, s, flip=False, pose=None):
 
 COAT = ("".join(f'<path d="M{-25 + i * 7} -160 L {-27 + i * 7.6} -60" stroke="{c}" stroke-width="7"></path>'
                 for i, c in enumerate(["#D7261E", "#FF8A3D", "#FFD23F", "#5E8F26", "#1F5FAD", "#7A3BA8", "#D7261E", "#FFD23F"])))
+COLLAR = ('<path d="M-20 -166 C -12 -150 12 -150 20 -166 L 24 -158 C 12 -138 -12 -138 -24 -158 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path>'
+          '<circle cx="0" cy="-188" r="12" fill="#3A2214"></circle>')
 NEMES_BLUE = ('<path d="M-16 -198 L 16 -198 L 22 -150 L 12 -160 L -12 -160 L -22 -150 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.8"></path>'
               '<path d="M-16 -186 L 16 -186 M-18 -174 L 18 -174 M-20 -162 L 20 -162" stroke="#1F5FAD" stroke-width="4"></path>')
 NEMES_GOLD = NEMES_BLUE.replace("#1F5FAD", "#D7261E") + A2.crown(0, -200, 0.32)

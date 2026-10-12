@@ -37,5 +37,7 @@ META = {
      "blurb": "Seven kine and seven ears, Joseph brought hastily out of the dungeon, seven years of plenty and seven of famine, the signet ring and the second chariot, grain as the sand of the sea, and all countries coming to Joseph to buy grain."},
     {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "The Brothers in Egypt", "range": "Genesis 42–43", "bible_chapters": [42, 43],
      "blurb": "Ten brethren going down to buy grain, Ye are spies, Simeon bound, the money in the sacks, Jacob refusing to let Benjamin go, Judah's surety, and the feast where Benjamin's mess was five times so much."},
+    {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "I Am Joseph", "range": "Genesis 44–45", "bible_chapters": [44, 45],
+     "blurb": "The silver cup in Benjamin's sack, Judah's plea to abide instead of the lad, I am Joseph your brother, God did send me before you, the wagons of Egypt, and Jacob's spirit revived: It is enough; Joseph my son is yet alive."},
   ],
 }
