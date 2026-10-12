@@ -13,7 +13,8 @@ from genesis.ch02 import rows, W1
 
 v, sp = G.v, G.span
 set_book(G)
-START = 17                                   # chapter 1 ends on page 16
+from lev import ch01 as _prev
+START = _prev.START + len(_prev.PAGES) - 1     # straight after the previous chapter (its title page is unnumbered)
 PAGES = []
 def P(name, title):
     def deco(fn): PAGES.append((name, title, fn)); return fn

@@ -31,98 +31,98 @@
    "h": 1080,
    "title": "1 · Jehovah Called unto Moses"
   },
-  "LEV-C01-P01-TheBurntOffering.dc.html": {
+  "LEV-C01-L-P01-TheBurntOffering.dc.html": {
    "x": 1680,
    "y": 2000,
    "w": 760,
    "h": 1080,
    "title": "2 · The Burnt-offering"
   },
-  "LEV-C01-P02-TheMealOffering.dc.html": {
+  "LEV-C01-L-P02-TheMealOffering.dc.html": {
    "x": 2520,
    "y": 2000,
    "w": 760,
    "h": 1080,
    "title": "3 · The Meal-offering"
   },
-  "LEV-C01-P03-TheOfferings.dc.html": {
+  "LEV-C01-L-P03-TheOfferings.dc.html": {
    "x": 3360,
    "y": 2000,
    "w": 760,
    "h": 1080,
    "title": "4 · The Offerings"
   },
-  "LEV-C01-P04-ThePeaceOfferings.dc.html": {
+  "LEV-C01-L-P04-ThePeaceOfferings.dc.html": {
    "x": 0,
    "y": 3200,
    "w": 760,
    "h": 1080,
    "title": "5 · The Peace-offerings"
   },
-  "LEV-C01-P05-TheOfferings.dc.html": {
+  "LEV-C01-L-P05-TheOfferings.dc.html": {
    "x": 840,
    "y": 3200,
    "w": 760,
    "h": 1080,
    "title": "6 · The Offerings"
   },
-  "LEV-C01-P06-TheSinOffering.dc.html": {
+  "LEV-C01-L-P06-TheSinOffering.dc.html": {
    "x": 1680,
    "y": 3200,
    "w": 760,
    "h": 1080,
    "title": "7 · The Sin-offering"
   },
-  "LEV-C01-P07-TheOfferings.dc.html": {
+  "LEV-C01-L-P07-TheOfferings.dc.html": {
    "x": 2520,
    "y": 3200,
    "w": 760,
    "h": 1080,
    "title": "8 · The Offerings"
   },
-  "LEV-C01-P08-IfTheWholeCongrega.dc.html": {
+  "LEV-C01-L-P08-IfTheWholeCongrega.dc.html": {
    "x": 3360,
    "y": 3200,
    "w": 760,
    "h": 1080,
    "title": "9 · If the Whole Congregation Err"
   },
-  "LEV-C01-P09-WhenARulerSinneth.dc.html": {
+  "LEV-C01-L-P09-WhenARulerSinneth.dc.html": {
    "x": 0,
    "y": 4400,
    "w": 760,
    "h": 1080,
    "title": "10 · When a Ruler Sinneth"
   },
-  "LEV-C01-P10-TheOfferings.dc.html": {
+  "LEV-C01-L-P10-TheOfferings.dc.html": {
    "x": 840,
    "y": 4400,
    "w": 760,
    "h": 1080,
    "title": "11 · The Offerings"
   },
-  "LEV-C01-P11-TheTrespassOfferin.dc.html": {
+  "LEV-C01-L-P11-TheTrespassOfferin.dc.html": {
    "x": 1680,
    "y": 4400,
    "w": 760,
    "h": 1080,
    "title": "12 · The Trespass-offering"
   },
-  "LEV-C01-P12-TheOfferings.dc.html": {
+  "LEV-C01-L-P12-TheOfferings.dc.html": {
    "x": 2520,
    "y": 4400,
    "w": 760,
    "h": 1080,
    "title": "13 · The Offerings"
   },
-  "LEV-C01-P13-TheFifthPart.dc.html": {
+  "LEV-C01-L-P13-TheFifthPart.dc.html": {
    "x": 3360,
    "y": 4400,
    "w": 760,
    "h": 1080,
    "title": "14 · The Fifth Part"
   },
-  "LEV-C01-P14-TheOfferings.dc.html": {
+  "LEV-C01-L-P14-TheOfferings.dc.html": {
    "x": 0,
    "y": 5600,
    "w": 760,
@@ -141,132 +141,237 @@
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "17 · The Law of the Trespass"
+   "title": "16 · The Law of the Trespass"
   },
   "LEV-C02-P02-TheLawOfTheBurntOf.dc.html": {
    "x": 1680,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "18 · The Law of the Burnt-offering"
+   "title": "17 · The Law of the Burnt-offering"
   },
   "LEV-C02-P03-TheLawOfTheMealOff.dc.html": {
    "x": 2520,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "19 · The Law of the Meal-offering"
+   "title": "18 · The Law of the Meal-offering"
   },
   "LEV-C02-P04-TheLawOfTheSinOffe.dc.html": {
    "x": 3360,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "20 · The Law of the Sin-offering"
+   "title": "19 · The Law of the Sin-offering"
   },
   "LEV-C02-P05-TheLawOfTheTrespas.dc.html": {
    "x": 0,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "21 · The Law of the Trespass-offering"
+   "title": "20 · The Law of the Trespass-offering"
   },
   "LEV-C02-P06-TheLawOfThePeaceOf.dc.html": {
    "x": 840,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "22 · The Law of the Peace-offerings"
+   "title": "21 · The Law of the Peace-offerings"
   },
   "LEV-C02-P07-YeShallEatNoFat.dc.html": {
    "x": 1680,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "23 · Ye Shall Eat No Fat"
+   "title": "22 · Ye Shall Eat No Fat"
   },
   "LEV-C02-P08-TheWaveBreastAndTh.dc.html": {
    "x": 2520,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "24 · The Wave-breast and the Heave-thigh"
+   "title": "23 · The Wave-breast and the Heave-thigh"
   },
   "LEV-C02-S-P01-TakeAaronAndHisSon.dc.html": {
    "x": 3360,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "25 · Take Aaron and His Sons"
+   "title": "24 · Take Aaron and His Sons"
   },
   "LEV-C02-S-P02-MosesClothedAaron.dc.html": {
    "x": 0,
    "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "26 · Moses Clothed Aaron"
+   "title": "25 · Moses Clothed Aaron"
   },
   "LEV-C02-S-P03-TheAnointingOil.dc.html": {
    "x": 840,
    "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "27 · The Anointing Oil"
+   "title": "26 · The Anointing Oil"
   },
   "LEV-C02-S-P04-TheBullockOfTheSin.dc.html": {
    "x": 1680,
    "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "28 · The Bullock of the Sin-offering"
+   "title": "27 · The Bullock of the Sin-offering"
   },
   "LEV-C02-S-P05-TheRamOfTheBurntOf.dc.html": {
    "x": 2520,
    "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "29 · The Ram of the Burnt-offering"
+   "title": "28 · The Ram of the Burnt-offering"
   },
   "LEV-C02-S-P06-TheRamOfConsecrati.dc.html": {
    "x": 3360,
    "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "30 · The Ram of Consecration"
+   "title": "29 · The Ram of Consecration"
   },
   "LEV-C02-S-P07-TheConsecration.dc.html": {
    "x": 0,
    "y": 10900,
    "w": 760,
    "h": 1080,
-   "title": "31 · The Consecration"
+   "title": "30 · The Consecration"
   },
   "LEV-C02-S-P08-SevenDays.dc.html": {
    "x": 840,
    "y": 10900,
    "w": 760,
    "h": 1080,
-   "title": "32 · Seven Days"
+   "title": "31 · Seven Days"
+  },
+  "LEV-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Strange Fire"
+  },
+  "LEV-C03-P01-EighthDay.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · On the Eighth Day"
+  },
+  "LEV-C03-P02-Draw.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Draw Near unto the Altar"
+  },
+  "LEV-C03-P03-Offered.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Aaron Drew Near unto the Altar"
+  },
+  "LEV-C03-P04-People.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The People's Oblation"
+  },
+  "LEV-C03-P05-Fire.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · There Came Forth Fire"
+  },
+  "LEV-C03-P06-Strange.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Strange Fire before Jehovah"
+  },
+  "LEV-C03-P07-Coats.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Carried in Their Coats"
+  },
+  "LEV-C03-P08-Wine.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Drink No Wine nor Strong Drink"
+  },
+  "LEV-C03-P09-Goat.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Behold, It Was Burnt"
+  },
+  "LEV-C03-L-P01-TheLivingThingsWhi.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Living Things Which Ye May Eat"
+  },
+  "LEV-C03-L-P02-InTheWaters.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · In the Waters"
+  },
+  "LEV-C03-L-P03-UncleanUntilTheEve.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Unclean until the Even"
+  },
+  "LEV-C03-L-P04-TheCleanAndTheUncl.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · The Clean and the Unclean"
+  },
+  "LEV-C03-L-P05-BeYeHoly.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Be Ye Holy"
   }
  },
  "order": [
   "Main.dc.html",
   "LEV-C01-00-Title.dc.html",
   "LEV-C01-P01-Called.dc.html",
-  "LEV-C01-P01-TheBurntOffering.dc.html",
-  "LEV-C01-P02-TheMealOffering.dc.html",
-  "LEV-C01-P03-TheOfferings.dc.html",
-  "LEV-C01-P04-ThePeaceOfferings.dc.html",
-  "LEV-C01-P05-TheOfferings.dc.html",
-  "LEV-C01-P06-TheSinOffering.dc.html",
-  "LEV-C01-P07-TheOfferings.dc.html",
-  "LEV-C01-P08-IfTheWholeCongrega.dc.html",
-  "LEV-C01-P09-WhenARulerSinneth.dc.html",
-  "LEV-C01-P10-TheOfferings.dc.html",
-  "LEV-C01-P11-TheTrespassOfferin.dc.html",
-  "LEV-C01-P12-TheOfferings.dc.html",
-  "LEV-C01-P13-TheFifthPart.dc.html",
-  "LEV-C01-P14-TheOfferings.dc.html",
+  "LEV-C01-L-P01-TheBurntOffering.dc.html",
+  "LEV-C01-L-P02-TheMealOffering.dc.html",
+  "LEV-C01-L-P03-TheOfferings.dc.html",
+  "LEV-C01-L-P04-ThePeaceOfferings.dc.html",
+  "LEV-C01-L-P05-TheOfferings.dc.html",
+  "LEV-C01-L-P06-TheSinOffering.dc.html",
+  "LEV-C01-L-P07-TheOfferings.dc.html",
+  "LEV-C01-L-P08-IfTheWholeCongrega.dc.html",
+  "LEV-C01-L-P09-WhenARulerSinneth.dc.html",
+  "LEV-C01-L-P10-TheOfferings.dc.html",
+  "LEV-C01-L-P11-TheTrespassOfferin.dc.html",
+  "LEV-C01-L-P12-TheOfferings.dc.html",
+  "LEV-C01-L-P13-TheFifthPart.dc.html",
+  "LEV-C01-L-P14-TheOfferings.dc.html",
   "LEV-C02-00-Title.dc.html",
   "LEV-C02-P01-TheLawOfTheTrespas.dc.html",
   "LEV-C02-P02-TheLawOfTheBurntOf.dc.html",
@@ -283,7 +388,22 @@
   "LEV-C02-S-P05-TheRamOfTheBurntOf.dc.html",
   "LEV-C02-S-P06-TheRamOfConsecrati.dc.html",
   "LEV-C02-S-P07-TheConsecration.dc.html",
-  "LEV-C02-S-P08-SevenDays.dc.html"
+  "LEV-C02-S-P08-SevenDays.dc.html",
+  "LEV-C03-00-Title.dc.html",
+  "LEV-C03-P01-EighthDay.dc.html",
+  "LEV-C03-P02-Draw.dc.html",
+  "LEV-C03-P03-Offered.dc.html",
+  "LEV-C03-P04-People.dc.html",
+  "LEV-C03-P05-Fire.dc.html",
+  "LEV-C03-P06-Strange.dc.html",
+  "LEV-C03-P07-Coats.dc.html",
+  "LEV-C03-P08-Wine.dc.html",
+  "LEV-C03-P09-Goat.dc.html",
+  "LEV-C03-L-P01-TheLivingThingsWhi.dc.html",
+  "LEV-C03-L-P02-InTheWaters.dc.html",
+  "LEV-C03-L-P03-UncleanUntilTheEve.dc.html",
+  "LEV-C03-L-P04-TheCleanAndTheUncl.dc.html",
+  "LEV-C03-L-P05-BeYeHoly.dc.html"
  ],
  "notes": {
   "Main": {
@@ -306,6 +426,13 @@
    "text": "Chapter 2 · The Consecration (Leviticus 6–8)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Strange Fire (Leviticus 9–11)",
+   "x": 0,
+   "y": 12300
   }
  },
  "designSystems": [],

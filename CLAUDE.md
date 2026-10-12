@@ -56,15 +56,18 @@ There are two editions:
 | Exodus | 11 · The Willing Offering | 35–38 | title + 20 (pp. 175–194) | 133/133 verses full (the making set in full as blueprints) | `volumes/exodus/` |
 | Exodus | 12 · The Glory | 39–40 | title + 12 (pp. 195–206) | 81/81 verses full | `volumes/exodus/` |
 | **Exodus** | **complete: cover + 12 chapters** | **1–40** | **219 pages (206 numbered)** | **1,213 verses: all full** | `volumes/exodus/` |
-| Leviticus | 1 · The Offerings | 1–5 | cover + title + 16 (pp. 1–16) | 104/104 verses full | `volumes/leviticus/` |
-| Leviticus | 2 · The Consecration | 6–8 | title + 16 (pp. 17–32) | 104/104 verses full (ch. 8 as narrated blueprints) | `volumes/leviticus/` |
+| Leviticus | 1 · The Offerings | 1–5 | cover + title + 15 (pp. 1–15) | 104/104 verses full | `volumes/leviticus/` |
+| Leviticus | 2 · The Consecration | 6–8 | title + 16 (pp. 16–31) | 104/104 verses full (ch. 8 as narrated blueprints) | `volumes/leviticus/` |
+| Leviticus | 3 · Strange Fire | 9–11 | title + 14 (pp. 32–45) | 91/91 verses full (10:1–5 shown with restraint) | `volumes/leviticus/` |
 
 **Genesis and Exodus are complete; Leviticus is under way** in `tools/full/lev/` (9 chapters planned: 1 The Offerings 1–5 ·
 2 The Consecration 6–8 · 3 Strange Fire 9–11 · 4 The Plague of Leprosy 12–13 · 5 The Cleansing 14–15 · 6 The Day of
 Atonement 16–18 · 7 Holy unto Jehovah 19–22 · 8 The Set Feasts 23–25 · 9 Blessing and Curse 26–27). The laws are
 `exo.kit.law_pages()`: items (heading, verses, pictogram, lead caption, page head) packed into pages of up to six
 Voice-box cells, with pictograms from `lev/art.py` (an offering is the whole beast by the brass altar, then fire: no
-carcasses). Exodus lives in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
+carcasses). Each Leviticus chapter sets `START` from the previous chapter's page count, so numbering stays continuous.
+Nadab and Abihu (10:1–5): the strange fire offered, then only their censers under the fire, then two wrapped shapes
+carried far off. Aaron as high priest: `art9.high_priest()` at a distance, a grey-bearded face with a white mitre close up. Exodus lives in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
 chapters (32,177 words): 1 The Bush That Burned (1–4) · 2 Let My People Go (5–8) · 3 The Passover (9–12) · 4 The Red Sea (13–15) ·
 5 Bread from Heaven (16–18) · 6 Sinai (19–21) · 7 The Book of the Covenant (22–24) · 8 The Pattern of the Tabernacle (25–27) ·

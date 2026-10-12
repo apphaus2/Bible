@@ -84,4 +84,4 @@ ITEMS = [
     ("THOUGH HE KNEW IT NOT", "5:17-19", L.pg_guilty, "", None),
 ]
 
-PAGES += law_pages(ITEMS, "LEV-C01", START + 1, "The Offerings", end=end_mark("NEXT · THE CONSECRATION", "right: 10px; top: 10px"))
+PAGES += law_pages(ITEMS, "LEV-C01-L", START + 1, "The Offerings", end=end_mark("NEXT · THE CONSECRATION", "right: 10px; top: 10px"))

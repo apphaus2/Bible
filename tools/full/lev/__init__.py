@@ -15,5 +15,7 @@ META = {
      "blurb": "Jehovah calls to Moses out of the tent of meeting: the burnt-offering of the herd, the flock and the birds, the meal-offering seasoned with salt, the peace-offerings, the sin-offering for the priest, the congregation, the ruler and the common people, and the trespass-offering with its fifth part."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Consecration", "range": "Leviticus 6–8", "bible_chapters": [6, 7, 8],
      "blurb": "The law of each offering — the fire on the altar that shall never go out, the portions of the priests, the sacrifice of thanksgiving, no fat and no blood, the wave-breast and the heave-thigh — and the seven days in which Moses washed, clothed and anointed Aaron and his sons."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Strange Fire", "range": "Leviticus 9–11", "bible_chapters": [9, 10, 11],
+     "blurb": "The eighth day, Aaron's first offerings and the fire that came forth from before Jehovah; the strange fire of Nadab and Abihu, and Aaron holding his peace; no wine in the tent of meeting; and the beasts, the fish, the birds and the creeping things, clean and unclean."},
   ],
 }
