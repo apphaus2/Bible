@@ -19,5 +19,7 @@ META = {
      "blurb": "The eighth day, Aaron's first offerings and the fire that came forth from before Jehovah; the strange fire of Nadab and Abihu, and Aaron holding his peace; no wine in the tent of meeting; and the beasts, the fish, the birds and the creeping things, clean and unclean."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Plague of Leprosy", "range": "Leviticus 12–13", "bible_chapters": [12, 13],
      "blurb": "The days of purifying after a birth, and the priest looking on the plague: the rising, the scab and the bright spot, the hair turned white, the raw flesh, the boil, the burning, the scall, the leper crying Unclean, unclean, without the camp, and the plague in a garment."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Cleansing", "range": "Leviticus 14–15", "bible_chapters": [14, 15],
+     "blurb": "The law of the leper in the day of his cleansing: two living birds, cedar, scarlet and hyssop, the bird let go into the open field, the eighth day and the log of oil; the plague in the walls of a house; and the laws of issues, that they die not in their uncleanness."},
   ],
 }

@@ -422,6 +422,90 @@
    "w": 760,
    "h": 1080,
    "title": "54 · The Plague of Leprosy"
+  },
+  "LEV-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Cleansing"
+  },
+  "LEV-C05-L-P01-TheLawOfTheLeper.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Law of the Leper"
+  },
+  "LEV-C05-L-P02-TheEighthDay.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Eighth Day"
+  },
+  "LEV-C05-L-P03-TheCleansing.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Cleansing"
+  },
+  "LEV-C05-L-P04-IfHeBePoor.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · If He Be Poor"
+  },
+  "LEV-C05-L-P05-TheCleansing.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · The Cleansing"
+  },
+  "LEV-C05-L-P06-ThePlagueInAHouse.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · The Plague in a House"
+  },
+  "LEV-C05-L-P07-TheCleansing.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · The Cleansing"
+  },
+  "LEV-C05-L-P08-WhenAnyManHathAnIs.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · When Any Man Hath an Issue"
+  },
+  "LEV-C05-L-P09-TheCleansing.dc.html": {
+   "x": 3360,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The Cleansing"
+  },
+  "LEV-C05-L-P10-IfAWomanHaveAnIssu.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · If a Woman Have an Issue"
+  },
+  "LEV-C05-L-P11-TheCleansing.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · The Cleansing"
   }
  },
  "order": [
@@ -483,7 +567,19 @@
   "LEV-C04-L-P06-ThePlagueOfLeprosy.dc.html",
   "LEV-C04-L-P07-BaldYetClean.dc.html",
   "LEV-C04-L-P08-HeShallDwellAlone.dc.html",
-  "LEV-C04-L-P09-ThePlagueOfLeprosy.dc.html"
+  "LEV-C04-L-P09-ThePlagueOfLeprosy.dc.html",
+  "LEV-C05-00-Title.dc.html",
+  "LEV-C05-L-P01-TheLawOfTheLeper.dc.html",
+  "LEV-C05-L-P02-TheEighthDay.dc.html",
+  "LEV-C05-L-P03-TheCleansing.dc.html",
+  "LEV-C05-L-P04-IfHeBePoor.dc.html",
+  "LEV-C05-L-P05-TheCleansing.dc.html",
+  "LEV-C05-L-P06-ThePlagueInAHouse.dc.html",
+  "LEV-C05-L-P07-TheCleansing.dc.html",
+  "LEV-C05-L-P08-WhenAnyManHathAnIs.dc.html",
+  "LEV-C05-L-P09-TheCleansing.dc.html",
+  "LEV-C05-L-P10-IfAWomanHaveAnIssu.dc.html",
+  "LEV-C05-L-P11-TheCleansing.dc.html"
  ],
  "notes": {
   "Main": {
@@ -520,6 +616,13 @@
    "text": "Chapter 4 · The Plague of Leprosy (Leviticus 12–13)",
    "x": 0,
    "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Cleansing (Leviticus 14–15)",
+   "x": 0,
+   "y": 19300
   }
  },
  "designSystems": [],

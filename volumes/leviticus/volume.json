@@ -46,6 +46,16 @@
    "prefixes": [
     "LEV-C04-"
    ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "The Cleansing",
+   "range": "Leviticus 14–15",
+   "blurb": "The law of the leper in the day of his cleansing: two living birds, cedar, scarlet and hyssop, the bird let go into the open field, the eighth day and the log of oil; the plague in the walls of a house; and the laws of issues, that they die not in their uncleanness.",
+   "prefixes": [
+    "LEV-C05-"
+   ]
   }
  ]
 }
