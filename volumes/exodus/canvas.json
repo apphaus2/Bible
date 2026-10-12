@@ -1164,6 +1164,146 @@
    "w": 760,
    "h": 1080,
    "title": "155 · Tables of Stone"
+  },
+  "EXO-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · The Golden Calf"
+  },
+  "EXO-C10-P01-MakeUsGods.dc.html": {
+   "x": 840,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · Up, Make Us Gods"
+  },
+  "EXO-C10-P02-Feast.dc.html": {
+   "x": 1680,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · These Are Thy Gods, O Israel"
+  },
+  "EXO-C10-P03-Stiffnecked.dc.html": {
+   "x": 2520,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · A Stiffnecked People"
+  },
+  "EXO-C10-P04-Remember.dc.html": {
+   "x": 3360,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Remember Abraham, Isaac, and Israel"
+  },
+  "EXO-C10-P05-Noise.dc.html": {
+   "x": 0,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · The Noise of Them That Sing"
+  },
+  "EXO-C10-P06-Broken.dc.html": {
+   "x": 840,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · He Brake Them beneath the Mount"
+  },
+  "EXO-C10-P07-ThisCalf.dc.html": {
+   "x": 1680,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · There Came Out This Calf"
+  },
+  "EXO-C10-P08-Side.dc.html": {
+   "x": 2520,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Who Is on Jehovah's Side?"
+  },
+  "EXO-C10-P09-BlotMe.dc.html": {
+   "x": 3360,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Blot Me, I Pray Thee, out of Thy Book"
+  },
+  "EXO-C10-P10-Ornaments.dc.html": {
+   "x": 0,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · No Man Did Put On Him His Ornaments"
+  },
+  "EXO-C10-P11-TentOfMeeting.dc.html": {
+   "x": 840,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · Face to Face, As a Man Speaketh unto His Friend"
+  },
+  "EXO-C10-P12-Presence.dc.html": {
+   "x": 1680,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · My Presence Shall Go with Thee"
+  },
+  "EXO-C10-P13-Glory.dc.html": {
+   "x": 2520,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · Show Me, I Pray Thee, Thy Glory"
+  },
+  "EXO-C10-P14-Hew.dc.html": {
+   "x": 3360,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · Hew Thee Two Tables of Stone"
+  },
+  "EXO-C10-P15-Covenant.dc.html": {
+   "x": 0,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · Behold, I Make a Covenant"
+  },
+  "EXO-C10-P16-Jealous.dc.html": {
+   "x": 840,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · Whose Name Is Jealous"
+  },
+  "EXO-C10-P17-Feasts.dc.html": {
+   "x": 1680,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · Three Times in the Year"
+  },
+  "EXO-C10-P18-Shone.dc.html": {
+   "x": 2520,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · The Skin of His Face Shone"
+  },
+  "EXO-C10-P19-Veil.dc.html": {
+   "x": 3360,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · He Put a Veil on His Face"
   }
  },
  "order": [
@@ -1331,7 +1471,27 @@
   "EXO-C09-P17-IncensePureAndHoly.dc.html",
   "EXO-C09-P18-IHaveCalledByNameB.dc.html",
   "EXO-C09-P19-ASignBetweenMeAndY.dc.html",
-  "EXO-C09-P20-Tables.dc.html"
+  "EXO-C09-P20-Tables.dc.html",
+  "EXO-C10-00-Title.dc.html",
+  "EXO-C10-P01-MakeUsGods.dc.html",
+  "EXO-C10-P02-Feast.dc.html",
+  "EXO-C10-P03-Stiffnecked.dc.html",
+  "EXO-C10-P04-Remember.dc.html",
+  "EXO-C10-P05-Noise.dc.html",
+  "EXO-C10-P06-Broken.dc.html",
+  "EXO-C10-P07-ThisCalf.dc.html",
+  "EXO-C10-P08-Side.dc.html",
+  "EXO-C10-P09-BlotMe.dc.html",
+  "EXO-C10-P10-Ornaments.dc.html",
+  "EXO-C10-P11-TentOfMeeting.dc.html",
+  "EXO-C10-P12-Presence.dc.html",
+  "EXO-C10-P13-Glory.dc.html",
+  "EXO-C10-P14-Hew.dc.html",
+  "EXO-C10-P15-Covenant.dc.html",
+  "EXO-C10-P16-Jealous.dc.html",
+  "EXO-C10-P17-Feasts.dc.html",
+  "EXO-C10-P18-Shone.dc.html",
+  "EXO-C10-P19-Veil.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1403,6 +1563,13 @@
    "text": "Chapter 9 · Holy to Jehovah (Exodus 28–31)",
    "x": 0,
    "y": 45300
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · The Golden Calf (Exodus 32–34)",
+   "x": 0,
+   "y": 51800
   }
  },
  "designSystems": [],

@@ -28,5 +28,7 @@ META = {
      "blurb": "The willing offering, the ark and the mercy-seat with its two cherubim of gold, the table of showbread, the candlestick of beaten work, the curtains and their loops and clasps, the boards and sockets, the veil, the altar of brass, and the court of a hundred cubits — drawn as blueprints."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Holy to Jehovah", "range": "Exodus 28–31", "bible_chapters": [28, 29, 30, 31],
      "blurb": "The holy garments of Aaron: the ephod and its onyx stones, the breastplate of twelve stones, the robe of blue with bells and pomegranates, the golden plate HOLY TO JEHOVAH; the seven days of consecration, the altar of incense, the half shekel, the laver, the anointing oil, Bezalel and Oholiab, the sabbath, and the tables of stone."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The Golden Calf", "range": "Exodus 32–34", "bible_chapters": [32, 33, 34],
+     "blurb": "Up, make us gods, the molten calf and the feast, Moses pleading on the mount, the tables broken beneath the mount, Who is on Jehovah's side?, the tent of meeting without the camp, face to face as a man with his friend, the cleft of the rock, the new tables, Jehovah proclaimed, and the shining face behind the veil."},
   ],
 }
