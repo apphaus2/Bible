@@ -611,6 +611,139 @@
    "w": 760,
    "h": 1080,
    "title": "81 · Jehovah That Healeth Thee"
+  },
+  "EXO-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Bread from Heaven"
+  },
+  "EXO-C05-P01-FleshPots.dc.html": {
+   "x": 840,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Would That We Had Died in the Land of Egypt"
+  },
+  "EXO-C05-P02-RainBread.dc.html": {
+   "x": 1680,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Will Rain Bread from Heaven"
+  },
+  "EXO-C05-P03-Glory.dc.html": {
+   "x": 2520,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · The Glory of Jehovah Appeared in the Cloud"
+  },
+  "EXO-C05-P04-WhatIsIt.dc.html": {
+   "x": 3360,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · What Is It?"
+  },
+  "EXO-C05-P05-Omer.dc.html": {
+   "x": 0,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · An Omer a Head"
+  },
+  "EXO-C05-P06-Worms.dc.html": {
+   "x": 840,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · It Bred Worms"
+  },
+  "EXO-C05-P07-Sabbath.dc.html": {
+   "x": 1680,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · To-morrow Is a Solemn Rest"
+  },
+  "EXO-C05-P08-Manna.dc.html": {
+   "x": 2520,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Like Coriander Seed, White"
+  },
+  "EXO-C05-P09-Pot.dc.html": {
+   "x": 3360,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Forty Years"
+  },
+  "EXO-C05-P10-Rephidim.dc.html": {
+   "x": 0,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Is Jehovah among Us, or Not?"
+  },
+  "EXO-C05-P11-Rock.dc.html": {
+   "x": 840,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Thou Shalt Smite the Rock"
+  },
+  "EXO-C05-P12-Amalek.dc.html": {
+   "x": 1680,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Then Came Amalek"
+  },
+  "EXO-C05-P13-Hands.dc.html": {
+   "x": 2520,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · His Hands Were Steady"
+  },
+  "EXO-C05-P14-Jethro.dc.html": {
+   "x": 3360,
+   "y": 30400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Jehovah-nissi"
+  },
+  "EXO-C05-P15-Rejoiced.dc.html": {
+   "x": 0,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Now I Know That Jehovah Is Greater than All Gods"
+  },
+  "EXO-C05-P16-Judge.dc.html": {
+   "x": 840,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Why Sittest Thou Thyself Alone?"
+  },
+  "EXO-C05-P17-Counsel.dc.html": {
+   "x": 1680,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Hearken Now unto My Voice"
+  },
+  "EXO-C05-P18-Rulers.dc.html": {
+   "x": 2520,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Rulers of Thousands"
   }
  },
  "order": [
@@ -699,7 +832,26 @@
   "EXO-C04-P13-Song2.dc.html",
   "EXO-C04-P14-Song3.dc.html",
   "EXO-C04-P15-Miriam.dc.html",
-  "EXO-C04-P16-Elim.dc.html"
+  "EXO-C04-P16-Elim.dc.html",
+  "EXO-C05-00-Title.dc.html",
+  "EXO-C05-P01-FleshPots.dc.html",
+  "EXO-C05-P02-RainBread.dc.html",
+  "EXO-C05-P03-Glory.dc.html",
+  "EXO-C05-P04-WhatIsIt.dc.html",
+  "EXO-C05-P05-Omer.dc.html",
+  "EXO-C05-P06-Worms.dc.html",
+  "EXO-C05-P07-Sabbath.dc.html",
+  "EXO-C05-P08-Manna.dc.html",
+  "EXO-C05-P09-Pot.dc.html",
+  "EXO-C05-P10-Rephidim.dc.html",
+  "EXO-C05-P11-Rock.dc.html",
+  "EXO-C05-P12-Amalek.dc.html",
+  "EXO-C05-P13-Hands.dc.html",
+  "EXO-C05-P14-Jethro.dc.html",
+  "EXO-C05-P15-Rejoiced.dc.html",
+  "EXO-C05-P16-Judge.dc.html",
+  "EXO-C05-P17-Counsel.dc.html",
+  "EXO-C05-P18-Rulers.dc.html"
  ],
  "notes": {
   "Main": {
@@ -736,6 +888,13 @@
    "text": "Chapter 4 · The Red Sea (Exodus 13–15)",
    "x": 0,
    "y": 22400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Bread from Heaven (Exodus 16–18)",
+   "x": 0,
+   "y": 27700
   }
  },
  "designSystems": [],

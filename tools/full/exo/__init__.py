@@ -18,5 +18,7 @@ META = {
      "blurb": "The murrain, the boils, the hail and fire, the locusts on the east wind, darkness which may be felt, the warning of midnight, the lamb without blemish, the blood on the lintel, the cry in Egypt, unleavened bread, and the hosts of Jehovah going out after four hundred and thirty years."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Red Sea", "range": "Exodus 13–15", "bible_chapters": [13, 14, 15],
      "blurb": "The first-born sanctified, the bones of Joseph, the pillar of cloud and the pillar of fire, six hundred chosen chariots, Fear ye not, stand still, the waters a wall on the right hand and on the left, the song of Moses, Miriam's timbrel, the bitter waters of Marah and the palms of Elim."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Bread from Heaven", "range": "Exodus 16–18", "bible_chapters": [16, 17, 18],
+     "blurb": "The flesh-pots of Egypt, quails at even, the manna on the face of the wilderness, an omer a head, the sabbath, water out of the rock at Massah and Meribah, the hands of Moses held up against Amalek, Jehovah-nissi, and Jethro's counsel: rulers of thousands, hundreds, fifties and tens."},
   ],
 }

@@ -47,6 +47,7 @@ There are two editions:
 | Exodus | 2 · Let My People Go | 5–8 | title + 20 (pp. 21–40) | 110/110 verses full (6:14–25 as two scroll pages) | `volumes/exodus/` |
 | Exodus | 3 · The Passover | 9–12 | title + 25 (pp. 41–65) | 125/125 verses full | `volumes/exodus/` |
 | Exodus | 4 · The Red Sea | 13–15 | title + 16 (pp. 66–81) | 80/80 verses full (the Song of Moses in `kit.song` boxes) | `volumes/exodus/` |
+| Exodus | 5 · Bread from Heaven | 16–18 | title + 18 (pp. 82–99) | 79/79 verses full | `volumes/exodus/` |
 
 **Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
@@ -360,6 +361,7 @@ Never fall back to blobs or stick figures.
   - Pharaoh's daughter: black hair, gold band, collar, kohl. Zipporah: crimson headscarf with a woven gold hem along its
     front edge (`art.HEM`; without it a warm scarf reads as long red hair); a crimson robe at a distance.
   - Jethro (Reuel), priest of Midian: white hair and beard, dark-teal headcloth with a gold band; teal robe.
+  - Joshua in Exodus 17: the young captain, black curly hair, bareheaded, a rust tunic at a distance (`art5.joshua`).
   - The midwives: Shiphrah (teal headscarf), Puah (slate-violet headscarf). Moses' father: black beard, bareheaded;
     Jochebed: slate-blue headscarf. Elders of Israel: grey beards, headcloths of six colours (`art.elder(c, k)`).
   - God is never drawn, not even a hand: "I will put forth my hand" is storm and lightning over Egypt (`art.wonders`).
