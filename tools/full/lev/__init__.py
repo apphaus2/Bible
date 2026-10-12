@@ -23,5 +23,7 @@ META = {
      "blurb": "The law of the leper in the day of his cleansing: two living birds, cedar, scarlet and hyssop, the bird let go into the open field, the eighth day and the log of oil; the plague in the walls of a house; and the laws of issues, that they die not in their uncleanness."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Day of Atonement", "range": "Leviticus 16–18", "bible_chapters": [16, 17, 18],
      "blurb": "Aaron in the holy linen garments, the two goats and the lots, the cloud of incense over the mercy-seat, the live goat bearing all their iniquities into a solitary land, the tenth day of the seventh month; the life of the flesh is in the blood; and the doings of Egypt and of Canaan ye shall not do."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Holy unto Jehovah", "range": "Leviticus 19–22", "bible_chapters": [19, 20, 21, 22],
+     "blurb": "Ye shall be holy: the corners of the field for the poor, the deaf and the blind, thou shalt love thy neighbor as thyself, the stranger as the home-born, just balances; the penalties for Molech and the forbidden degrees; the holiness of the priests and of the holy things, and offerings without blemish."},
   ],
 }

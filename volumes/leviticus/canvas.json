@@ -611,6 +611,125 @@
    "w": 760,
    "h": 1080,
    "title": "79 · That the Land Vomit Not You Out"
+  },
+  "LEV-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Holy unto Jehovah"
+  },
+  "LEV-C07-L-P01-YeShallBeHoly.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Ye Shall Be Holy"
+  },
+  "LEV-C07-L-P02-ForThePoorAndTheSo.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · For the Poor and the Sojourner"
+  },
+  "LEV-C07-L-P03-ThouShaltLoveThyNe.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Thou Shalt Love Thy Neighbor"
+  },
+  "LEV-C07-L-P04-HolyUntoJehovah.dc.html": {
+   "x": 3360,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Holy unto Jehovah"
+  },
+  "LEV-C07-L-P05-TheStrangerAndTheH.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · The Stranger and the Hoary Head"
+  },
+  "LEV-C07-L-P06-IWillSetMyFaceAgai.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · I Will Set My Face against That Man"
+  },
+  "LEV-C07-L-P07-TheirBloodShallBeU.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Their Blood Shall Be upon Them"
+  },
+  "LEV-C07-L-P08-HolyUntoJehovah.dc.html": {
+   "x": 2520,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Holy unto Jehovah"
+  },
+  "LEV-C07-L-P09-YeShallInheritThei.dc.html": {
+   "x": 3360,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Ye Shall Inherit Their Land"
+  },
+  "LEV-C07-L-P10-SpeakUntoThePriest.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Speak unto the Priests"
+  },
+  "LEV-C07-L-P11-TheHighPriestAmong.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · The High Priest among His Brethren"
+  },
+  "LEV-C07-L-P12-WhosoeverHathABlem.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Whosoever Hath a Blemish"
+  },
+  "LEV-C07-L-P13-TheHolyThings.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Holy Things"
+  },
+  "LEV-C07-L-P14-HolyUntoJehovah.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Holy unto Jehovah"
+  },
+  "LEV-C07-L-P15-ThatYeMayBeAccepte.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · That Ye May Be Accepted"
+  },
+  "LEV-C07-L-P16-HolyUntoJehovah.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Holy unto Jehovah"
   }
  },
  "order": [
@@ -699,7 +818,24 @@
   "LEV-C06-L-P04-NoneOfYouShallAppr.dc.html",
   "LEV-C06-L-P05-YeShallNotDoAfterT.dc.html",
   "LEV-C06-L-P06-YeShallNotDoAfterT.dc.html",
-  "LEV-C06-L-P07-ThatTheLandVomitNo.dc.html"
+  "LEV-C06-L-P07-ThatTheLandVomitNo.dc.html",
+  "LEV-C07-00-Title.dc.html",
+  "LEV-C07-L-P01-YeShallBeHoly.dc.html",
+  "LEV-C07-L-P02-ForThePoorAndTheSo.dc.html",
+  "LEV-C07-L-P03-ThouShaltLoveThyNe.dc.html",
+  "LEV-C07-L-P04-HolyUntoJehovah.dc.html",
+  "LEV-C07-L-P05-TheStrangerAndTheH.dc.html",
+  "LEV-C07-L-P06-IWillSetMyFaceAgai.dc.html",
+  "LEV-C07-L-P07-TheirBloodShallBeU.dc.html",
+  "LEV-C07-L-P08-HolyUntoJehovah.dc.html",
+  "LEV-C07-L-P09-YeShallInheritThei.dc.html",
+  "LEV-C07-L-P10-SpeakUntoThePriest.dc.html",
+  "LEV-C07-L-P11-TheHighPriestAmong.dc.html",
+  "LEV-C07-L-P12-WhosoeverHathABlem.dc.html",
+  "LEV-C07-L-P13-TheHolyThings.dc.html",
+  "LEV-C07-L-P14-HolyUntoJehovah.dc.html",
+  "LEV-C07-L-P15-ThatYeMayBeAccepte.dc.html",
+  "LEV-C07-L-P16-HolyUntoJehovah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -750,6 +886,13 @@
    "text": "Chapter 6 · The Day of Atonement (Leviticus 16–18)",
    "x": 0,
    "y": 23400
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Holy unto Jehovah (Leviticus 19–22)",
+   "x": 0,
+   "y": 27500
   }
  },
  "designSystems": [],
