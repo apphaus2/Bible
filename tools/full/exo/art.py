@@ -331,9 +331,10 @@ def exodus_map(w, h, legs=(), cur=None, color="#FFD23F", names=None):
 def burning(w, h, seed, cx=0.5, size=1.0, sky=True, bw=None, bh=None):
     """The bush that burned and was not consumed, at night on the mountain of God (bw, bh: the bush's size in px)."""
     b = h * 0.92
+    bh = bh or min(h * 0.62, w * 0.5) * size; bw = bw or bh * 1.1         # a broad, round-topped bush, whatever the panel's shape
     return ((X_COSMIC(w, h) if sky else "") + hills(w, h, b - 6, seed, color="#1A1430", amp=10) + ground(w, h, b, "#1A1430", dy=0)
-            + f'<circle cx="{f(w * cx)}" cy="{f(b - (bh or h * 0.62 * size) * 0.5)}" r="{f((bh or h * 0.62 * size) * 0.8)}" fill="#FF8A3D" opacity="0.18"></circle>'
-            + E.bush(w * cx, b, bw or w * 0.3 * size, bh or h * 0.62 * size, seed))
+            + f'<circle cx="{f(w * cx)}" cy="{f(b - bh * 0.5)}" r="{f(bh * 0.8)}" fill="#FF8A3D" opacity="0.18"></circle>'
+            + E.bush(w * cx, b, bw, bh, seed))
 
 from genesis import art as _X
 def X_COSMIC(w, h): return _X.cosmic(w, h)

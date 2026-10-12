@@ -12,5 +12,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Bush That Burned", "range": "Exodus 1–4", "bible_chapters": [1, 2, 3, 4],
      "blurb": "A new king who knew not Joseph, the midwives who feared God, the ark of bulrushes, Moses drawn out of the water, the flight to Midian, the bush that was not consumed, I AM THAT I AM, the rod and the leprous hand, and Aaron sent to meet his brother."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Let My People Go", "range": "Exodus 5–8", "bible_chapters": [5, 6, 7, 8],
+     "blurb": "Who is Jehovah?, bricks without straw, the officers beaten, I am Jehovah, the heads of the fathers' houses, Aaron's rod that swallowed up the rods of the magicians, the river turned to blood, the frogs, the lice and the finger of God, and the swarms of flies kept out of Goshen."},
   ],
 }

@@ -16,6 +16,16 @@
     "Main.dc.html",
     "EXO-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Let My People Go",
+   "range": "Exodus 5–8",
+   "blurb": "Who is Jehovah?, bricks without straw, the officers beaten, I am Jehovah, the heads of the fathers' houses, Aaron's rod that swallowed up the rods of the magicians, the river turned to blood, the frogs, the lice and the finger of God, and the swarms of flies kept out of Goshen.",
+   "prefixes": [
+    "EXO-C02-"
+   ]
   }
  ]
 }

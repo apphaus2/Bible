@@ -2,10 +2,16 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 100 verses — 100 full, 0 partial, 0 omitted.
+**So far:** 210 verses — 210 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Bush That Burned (Exodus 1–4)
 
 100 verses: 100 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 2 · Let My People Go (Exodus 5–8)
+
+110 verses: 110 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
