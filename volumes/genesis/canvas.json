@@ -1262,6 +1262,104 @@
    "w": 760,
    "h": 1080,
    "title": "169 · El-Elohe-Israel"
+  },
+  "GEN-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Bethel Again"
+  },
+  "GEN-C10-P01-Dinah.dc.html": {
+   "x": 840,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · Dinah the Daughter of Leah"
+  },
+  "GEN-C10-P02-Hamor.dc.html": {
+   "x": 1680,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · Give Her unto Him to Wife"
+  },
+  "GEN-C10-P03-Guile.dc.html": {
+   "x": 2520,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · With Guile"
+  },
+  "GEN-C10-P04-Gate.dc.html": {
+   "x": 3360,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Unto the Gate of Their City"
+  },
+  "GEN-C10-P05-Sword.dc.html": {
+   "x": 0,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · With the Edge of the Sword"
+  },
+  "GEN-C10-P06-ForeignGods.dc.html": {
+   "x": 840,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · Put Away the Foreign Gods"
+  },
+  "GEN-C10-P07-ElBethel.dc.html": {
+   "x": 1680,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · Israel Shall Be Thy Name"
+  },
+  "GEN-C10-P08-BenOni.dc.html": {
+   "x": 2520,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Ben-oni"
+  },
+  "GEN-C10-P09-Twelve.dc.html": {
+   "x": 3360,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · The Sons of Jacob Were Twelve"
+  },
+  "GEN-C10-P10-Esau.dc.html": {
+   "x": 0,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · The Generations of Esau"
+  },
+  "GEN-C10-P11-Chiefs.dc.html": {
+   "x": 840,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · The Chiefs of the Sons of Esau"
+  },
+  "GEN-C10-P12-Horites.dc.html": {
+   "x": 1680,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Anah Who Found the Hot Springs"
+  },
+  "GEN-C10-P13-Kings.dc.html": {
+   "x": 2520,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · The Kings That Reigned in Edom"
   }
  },
  "order": [
@@ -1443,7 +1541,21 @@
   "GEN-C09-P15-Israel.dc.html",
   "GEN-C09-P16-Esau.dc.html",
   "GEN-C09-P17-Gift.dc.html",
-  "GEN-C09-P18-Shechem.dc.html"
+  "GEN-C09-P18-Shechem.dc.html",
+  "GEN-C10-00-Title.dc.html",
+  "GEN-C10-P01-Dinah.dc.html",
+  "GEN-C10-P02-Hamor.dc.html",
+  "GEN-C10-P03-Guile.dc.html",
+  "GEN-C10-P04-Gate.dc.html",
+  "GEN-C10-P05-Sword.dc.html",
+  "GEN-C10-P06-ForeignGods.dc.html",
+  "GEN-C10-P07-ElBethel.dc.html",
+  "GEN-C10-P08-BenOni.dc.html",
+  "GEN-C10-P09-Twelve.dc.html",
+  "GEN-C10-P10-Esau.dc.html",
+  "GEN-C10-P11-Chiefs.dc.html",
+  "GEN-C10-P12-Horites.dc.html",
+  "GEN-C10-P13-Kings.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1515,6 +1627,13 @@
    "text": "Chapter 9 · Peniel (Genesis 31–33)",
    "x": 0,
    "y": 46500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Bethel Again (Genesis 34–36)",
+   "x": 0,
+   "y": 51800
   }
  },
  "designSystems": [],

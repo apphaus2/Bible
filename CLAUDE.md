@@ -34,8 +34,9 @@ There are two editions:
 | Genesis | 7 · Jacob and Esau | 25:19–27:46 | title + 18 (pp. 119–136) | 97/97 verses full | `volumes/genesis/` |
 | Genesis | 8 · The Ladder | 28–30 | title + 15 (pp. 137–151) | 100/100 verses full | `volumes/genesis/` |
 | Genesis | 9 · Peniel | 31–33 | title + 18 (pp. 152–169) | 107/107 verses full | `volumes/genesis/` |
+| Genesis | 10 · Bethel Again | 34–36 | title + 13 (pp. 170–182) | 103/103 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 10 (Bethel Again, Genesis 34–36; ch. 36 is a list → scroll pages).
+Next: Genesis chapter 11 (Joseph sold, Joseph raised up, Genesis 37–41; 41:17–24 is a retelling to abridge).
 Genesis 28–36 is ~7,500 words, so Jacob's story is three chapters and the Genesis plan runs to twelve:
 … 7 Jacob and Esau (25:19–27) · 8 The Ladder (28–30) · 9 Peniel (31–33) · 10 Bethel Again (34–36) ·
 11 Joseph sold, Joseph raised up (37–41) · 12 Joseph and his brothers (42–50). Genesis 16–27 was too long for two chapters, so the
@@ -115,7 +116,8 @@ tools/
                       the well, Rebekah, Laban, camels couched and drinking), art7.py (chapter 7: Esau and Jacob, the pottage,
                       Gerar and the wells, the blind father, the kids of the goats), art8.py (chapter 8: Laban's house, Leah and
                       Rachel, the handmaids, the sons counter, the speckled flock and the rods), art9.py (chapter 9: the flight,
-                      the teraphim, Gilead and Mizpah, the droves, the Jabbok, the meeting, Succoth), ch01.py … ch09.py
+                      the teraphim, Gilead and Mizpah, the droves, the Jabbok, the meeting, Succoth), art10.py (chapter 10, and
+                      `stage()`: a general scene builder — setting + cast placed by head height + props), ch01.py … ch10.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -424,6 +426,11 @@ Never fall back to blobs or stick figures.
     at the Jabbok is the digest's paired silhouette, and his words are in the Voice box.
   - Rachel's words in 31:35 are in full; drawn as her face and the camel's saddle.
 - Chapter title pages: the credit line is "Genesis · Volume One · ASV" (no edition name).
+- **Character guide (Genesis 34–36, `art10.py`):**
+  - Hamor: white beard, teal headcloth with a gold band. Shechem: teal headcloth with the band, stubble. Simeon and Levi:
+    scowling, red light. Jacob greying from here (grey-black beard). Dinah: rose-pink robe, seen only at a distance.
+  - Restraint: 34:2 is a caption over the city; the sword at Shechem is two figures at the gate under smoke; 35:22 is a
+    caption over the tower of Eder. Rachel's death is her face and the midwife's, then the pillar by the road.
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'

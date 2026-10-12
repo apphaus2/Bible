@@ -27,5 +27,7 @@ META = {
      "blurb": "Jacob sent to Paddan-aram, the stone for a pillow and the ladder to heaven, Beth-el, Rachel at the well, seven years that seemed but a few days, Leah, the eleven sons and Dinah, and the speckled and spotted flock."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Peniel", "range": "Genesis 31–33", "bible_chapters": [31, 32, 33],
      "blurb": "The flight from Laban, the stolen teraphim, the pursuit to Gilead, the heap of witness and Mizpah, God's host at Mahanaim, the present for Esau, the night at the ford of the Jabbok, Israel, and the two brothers weeping on each other's neck."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Bethel Again", "range": "Genesis 34–36", "bible_chapters": [34, 35, 36],
+     "blurb": "Dinah and the city of Shechem, the sword of Simeon and Levi, the foreign gods buried under the oak, Israel at Beth-el, the birth of Benjamin and the death of Rachel, the twelve sons, the death of Isaac, and the generations of Esau in mount Seir."},
   ],
 }
