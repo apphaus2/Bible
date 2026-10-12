@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 657 verses — 657 full, 0 partial, 0 omitted.
+**So far:** 779 verses — 779 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Offerings (Leviticus 1–5)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · Holy unto Jehovah (Leviticus 19–22)
 
 121 verses: 121 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · The Set Feasts (Leviticus 23–25)
+
+122 verses: 122 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -151,7 +151,7 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
             pages.append(cur); cur, chars = [], 0
         cur.append(it); chars += n
     if cur: pages.append(cur)
-    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and len(_sp(pages[-1][0][1])) < 450:
+    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and len(_sp(pages[-1][0][1])) < 620:
         tail = pages.pop(); pages[-1] += tail                    # no lone short cell at the end
     out = []
     for k, group in enumerate(pages):

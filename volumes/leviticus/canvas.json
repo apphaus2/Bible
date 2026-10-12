@@ -122,614 +122,719 @@
    "h": 1080,
    "title": "14 · The Fifth Part"
   },
-  "LEV-C01-L-P14-TheOfferings.dc.html": {
-   "x": 0,
-   "y": 5600,
-   "w": 760,
-   "h": 1080,
-   "title": "15 · The Offerings"
-  },
   "LEV-C02-00-Title.dc.html": {
    "x": 0,
-   "y": 7300,
+   "y": 6100,
    "w": 760,
    "h": 1080,
    "title": "Chapter 2 · The Consecration"
   },
   "LEV-C02-P01-TheLawOfTheTrespas.dc.html": {
    "x": 840,
-   "y": 7300,
+   "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "16 · The Law of the Trespass"
+   "title": "15 · The Law of the Trespass"
   },
   "LEV-C02-P02-TheLawOfTheBurntOf.dc.html": {
    "x": 1680,
-   "y": 7300,
+   "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "17 · The Law of the Burnt-offering"
+   "title": "16 · The Law of the Burnt-offering"
   },
   "LEV-C02-P03-TheLawOfTheMealOff.dc.html": {
    "x": 2520,
-   "y": 7300,
+   "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "18 · The Law of the Meal-offering"
+   "title": "17 · The Law of the Meal-offering"
   },
   "LEV-C02-P04-TheLawOfTheSinOffe.dc.html": {
    "x": 3360,
-   "y": 7300,
+   "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "19 · The Law of the Sin-offering"
+   "title": "18 · The Law of the Sin-offering"
   },
   "LEV-C02-P05-TheLawOfTheTrespas.dc.html": {
    "x": 0,
-   "y": 8500,
+   "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "20 · The Law of the Trespass-offering"
+   "title": "19 · The Law of the Trespass-offering"
   },
   "LEV-C02-P06-TheLawOfThePeaceOf.dc.html": {
    "x": 840,
-   "y": 8500,
+   "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "21 · The Law of the Peace-offerings"
+   "title": "20 · The Law of the Peace-offerings"
   },
   "LEV-C02-P07-YeShallEatNoFat.dc.html": {
    "x": 1680,
-   "y": 8500,
+   "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "22 · Ye Shall Eat No Fat"
+   "title": "21 · Ye Shall Eat No Fat"
   },
   "LEV-C02-P08-TheWaveBreastAndTh.dc.html": {
    "x": 2520,
-   "y": 8500,
+   "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "23 · The Wave-breast and the Heave-thigh"
+   "title": "22 · The Wave-breast and the Heave-thigh"
   },
   "LEV-C02-S-P01-TakeAaronAndHisSon.dc.html": {
    "x": 3360,
-   "y": 8500,
+   "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "24 · Take Aaron and His Sons"
+   "title": "23 · Take Aaron and His Sons"
   },
   "LEV-C02-S-P02-MosesClothedAaron.dc.html": {
    "x": 0,
-   "y": 9700,
+   "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "25 · Moses Clothed Aaron"
+   "title": "24 · Moses Clothed Aaron"
   },
   "LEV-C02-S-P03-TheAnointingOil.dc.html": {
    "x": 840,
-   "y": 9700,
+   "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "26 · The Anointing Oil"
+   "title": "25 · The Anointing Oil"
   },
   "LEV-C02-S-P04-TheBullockOfTheSin.dc.html": {
    "x": 1680,
-   "y": 9700,
+   "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "27 · The Bullock of the Sin-offering"
+   "title": "26 · The Bullock of the Sin-offering"
   },
   "LEV-C02-S-P05-TheRamOfTheBurntOf.dc.html": {
    "x": 2520,
-   "y": 9700,
+   "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "28 · The Ram of the Burnt-offering"
+   "title": "27 · The Ram of the Burnt-offering"
   },
   "LEV-C02-S-P06-TheRamOfConsecrati.dc.html": {
    "x": 3360,
-   "y": 9700,
+   "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "29 · The Ram of Consecration"
+   "title": "28 · The Ram of Consecration"
   },
   "LEV-C02-S-P07-TheConsecration.dc.html": {
    "x": 0,
-   "y": 10900,
+   "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "30 · The Consecration"
+   "title": "29 · The Consecration"
   },
   "LEV-C02-S-P08-SevenDays.dc.html": {
    "x": 840,
-   "y": 10900,
+   "y": 9700,
    "w": 760,
    "h": 1080,
-   "title": "31 · Seven Days"
+   "title": "30 · Seven Days"
   },
   "LEV-C03-00-Title.dc.html": {
    "x": 0,
-   "y": 12600,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "Chapter 3 · Strange Fire"
   },
   "LEV-C03-P01-EighthDay.dc.html": {
    "x": 840,
-   "y": 12600,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "33 · On the Eighth Day"
   },
   "LEV-C03-P02-Draw.dc.html": {
    "x": 1680,
-   "y": 12600,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "34 · Draw Near unto the Altar"
   },
   "LEV-C03-P03-Offered.dc.html": {
    "x": 2520,
-   "y": 12600,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "35 · Aaron Drew Near unto the Altar"
   },
   "LEV-C03-P04-People.dc.html": {
    "x": 3360,
-   "y": 12600,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "36 · The People's Oblation"
   },
   "LEV-C03-P05-Fire.dc.html": {
    "x": 0,
-   "y": 13800,
+   "y": 12600,
    "w": 760,
    "h": 1080,
    "title": "37 · There Came Forth Fire"
   },
   "LEV-C03-P06-Strange.dc.html": {
    "x": 840,
-   "y": 13800,
+   "y": 12600,
    "w": 760,
    "h": 1080,
    "title": "38 · Strange Fire before Jehovah"
   },
   "LEV-C03-P07-Coats.dc.html": {
    "x": 1680,
-   "y": 13800,
+   "y": 12600,
    "w": 760,
    "h": 1080,
    "title": "39 · Carried in Their Coats"
   },
   "LEV-C03-P08-Wine.dc.html": {
    "x": 2520,
-   "y": 13800,
+   "y": 12600,
    "w": 760,
    "h": 1080,
    "title": "40 · Drink No Wine nor Strong Drink"
   },
   "LEV-C03-P09-Goat.dc.html": {
    "x": 3360,
-   "y": 13800,
+   "y": 12600,
    "w": 760,
    "h": 1080,
    "title": "41 · Behold, It Was Burnt"
   },
   "LEV-C03-L-P01-TheLivingThingsWhi.dc.html": {
    "x": 0,
-   "y": 15000,
+   "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "41 · The Living Things Which Ye May Eat"
+   "title": "40 · The Living Things Which Ye May Eat"
   },
   "LEV-C03-L-P02-InTheWaters.dc.html": {
    "x": 840,
-   "y": 15000,
+   "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "42 · In the Waters"
+   "title": "41 · In the Waters"
   },
   "LEV-C03-L-P03-UncleanUntilTheEve.dc.html": {
    "x": 1680,
-   "y": 15000,
+   "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "43 · Unclean until the Even"
+   "title": "42 · Unclean until the Even"
   },
   "LEV-C03-L-P04-TheCleanAndTheUncl.dc.html": {
    "x": 2520,
-   "y": 15000,
+   "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "44 · The Clean and the Unclean"
+   "title": "43 · The Clean and the Unclean"
   },
   "LEV-C03-L-P05-BeYeHoly.dc.html": {
    "x": 3360,
-   "y": 15000,
+   "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "45 · Be Ye Holy"
+   "title": "44 · Be Ye Holy"
   },
   "LEV-C04-00-Title.dc.html": {
    "x": 0,
-   "y": 16700,
+   "y": 15500,
    "w": 760,
    "h": 1080,
    "title": "Chapter 4 · The Plague of Leprosy"
   },
   "LEV-C04-L-P01-TheDaysOfHerPurify.dc.html": {
    "x": 840,
-   "y": 16700,
+   "y": 15500,
    "w": 760,
    "h": 1080,
-   "title": "46 · The Days of Her Purifying"
+   "title": "45 · The Days of Her Purifying"
   },
   "LEV-C04-L-P02-ThePlagueInTheSkin.dc.html": {
    "x": 1680,
-   "y": 16700,
+   "y": 15500,
    "w": 760,
    "h": 1080,
-   "title": "47 · The Plague in the Skin"
+   "title": "46 · The Plague in the Skin"
   },
   "LEV-C04-L-P03-AnOldLeprosy.dc.html": {
    "x": 2520,
-   "y": 16700,
+   "y": 15500,
    "w": 760,
    "h": 1080,
-   "title": "48 · An Old Leprosy"
+   "title": "47 · An Old Leprosy"
   },
   "LEV-C04-L-P04-TheBoilAndTheBurni.dc.html": {
    "x": 3360,
-   "y": 16700,
+   "y": 15500,
    "w": 760,
    "h": 1080,
-   "title": "49 · The Boil and the Burning"
+   "title": "48 · The Boil and the Burning"
   },
   "LEV-C04-L-P05-TheScall.dc.html": {
    "x": 0,
-   "y": 17900,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "50 · The Scall"
+   "title": "49 · The Scall"
   },
   "LEV-C04-L-P06-ThePlagueOfLeprosy.dc.html": {
    "x": 840,
-   "y": 17900,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "51 · The Plague of Leprosy"
+   "title": "50 · The Plague of Leprosy"
   },
   "LEV-C04-L-P07-BaldYetClean.dc.html": {
    "x": 1680,
-   "y": 17900,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "52 · Bald, Yet Clean"
+   "title": "51 · Bald, Yet Clean"
   },
   "LEV-C04-L-P08-HeShallDwellAlone.dc.html": {
    "x": 2520,
-   "y": 17900,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "53 · He Shall Dwell Alone"
+   "title": "52 · He Shall Dwell Alone"
   },
   "LEV-C04-L-P09-ThePlagueOfLeprosy.dc.html": {
    "x": 3360,
-   "y": 17900,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "54 · The Plague of Leprosy"
+   "title": "53 · The Plague of Leprosy"
   },
   "LEV-C05-00-Title.dc.html": {
    "x": 0,
-   "y": 19600,
+   "y": 18400,
    "w": 760,
    "h": 1080,
    "title": "Chapter 5 · The Cleansing"
   },
   "LEV-C05-L-P01-TheLawOfTheLeper.dc.html": {
    "x": 840,
-   "y": 19600,
+   "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "55 · The Law of the Leper"
+   "title": "54 · The Law of the Leper"
   },
   "LEV-C05-L-P02-TheEighthDay.dc.html": {
    "x": 1680,
-   "y": 19600,
+   "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "56 · The Eighth Day"
+   "title": "55 · The Eighth Day"
   },
   "LEV-C05-L-P03-TheCleansing.dc.html": {
    "x": 2520,
-   "y": 19600,
+   "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "57 · The Cleansing"
+   "title": "56 · The Cleansing"
   },
   "LEV-C05-L-P04-IfHeBePoor.dc.html": {
    "x": 3360,
-   "y": 19600,
+   "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "58 · If He Be Poor"
+   "title": "57 · If He Be Poor"
   },
   "LEV-C05-L-P05-TheCleansing.dc.html": {
    "x": 0,
-   "y": 20800,
+   "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "59 · The Cleansing"
+   "title": "58 · The Cleansing"
   },
   "LEV-C05-L-P06-ThePlagueInAHouse.dc.html": {
    "x": 840,
-   "y": 20800,
+   "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "60 · The Plague in a House"
+   "title": "59 · The Plague in a House"
   },
   "LEV-C05-L-P07-TheCleansing.dc.html": {
    "x": 1680,
-   "y": 20800,
+   "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "61 · The Cleansing"
+   "title": "60 · The Cleansing"
   },
   "LEV-C05-L-P08-WhenAnyManHathAnIs.dc.html": {
    "x": 2520,
-   "y": 20800,
+   "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "62 · When Any Man Hath an Issue"
+   "title": "61 · When Any Man Hath an Issue"
   },
   "LEV-C05-L-P09-TheCleansing.dc.html": {
    "x": 3360,
-   "y": 20800,
+   "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "63 · The Cleansing"
+   "title": "62 · The Cleansing"
   },
   "LEV-C05-L-P10-IfAWomanHaveAnIssu.dc.html": {
    "x": 0,
-   "y": 22000,
+   "y": 20800,
    "w": 760,
    "h": 1080,
-   "title": "64 · If a Woman Have an Issue"
+   "title": "63 · If a Woman Have an Issue"
   },
   "LEV-C05-L-P11-TheCleansing.dc.html": {
    "x": 840,
-   "y": 22000,
+   "y": 20800,
    "w": 760,
    "h": 1080,
-   "title": "65 · The Cleansing"
+   "title": "64 · The Cleansing"
   },
   "LEV-C06-00-Title.dc.html": {
    "x": 0,
-   "y": 23700,
+   "y": 22500,
    "w": 760,
    "h": 1080,
    "title": "Chapter 6 · The Day of Atonement"
   },
   "LEV-C06-P01-ThatHeComeNotAtAll.dc.html": {
    "x": 840,
-   "y": 23700,
+   "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "66 · That He Come Not at All Times"
+   "title": "65 · That He Come Not at All Times"
   },
   "LEV-C06-P02-OneLotForJehovahTh.dc.html": {
    "x": 1680,
-   "y": 23700,
+   "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "67 · One Lot for Jehovah, the Other for Azazel"
+   "title": "66 · One Lot for Jehovah, the Other for Azazel"
   },
   "LEV-C06-P03-WithinTheVeil.dc.html": {
    "x": 2520,
-   "y": 23700,
+   "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "68 · Within the Veil"
+   "title": "67 · Within the Veil"
   },
   "LEV-C06-P04-TheDayOfAtonement.dc.html": {
    "x": 3360,
-   "y": 23700,
+   "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "69 · The Day of Atonement"
+   "title": "68 · The Day of Atonement"
   },
   "LEV-C06-P05-TheLiveGoat.dc.html": {
    "x": 0,
-   "y": 24900,
+   "y": 23700,
    "w": 760,
    "h": 1080,
-   "title": "70 · The Live Goat"
+   "title": "69 · The Live Goat"
   },
   "LEV-C06-P06-TheDayOfAtonement.dc.html": {
    "x": 840,
-   "y": 24900,
+   "y": 23700,
    "w": 760,
    "h": 1080,
-   "title": "71 · The Day of Atonement"
+   "title": "70 · The Day of Atonement"
   },
   "LEV-C06-P07-AStatuteForEver.dc.html": {
    "x": 1680,
-   "y": 24900,
+   "y": 23700,
    "w": 760,
    "h": 1080,
-   "title": "72 · A Statute for Ever"
+   "title": "71 · A Statute for Ever"
   },
   "LEV-C06-L-P01-TheLifeOfTheFleshI.dc.html": {
    "x": 2520,
-   "y": 24900,
+   "y": 23700,
    "w": 760,
    "h": 1080,
-   "title": "73 · The Life of the Flesh Is in the Blood"
+   "title": "72 · The Life of the Flesh Is in the Blood"
   },
   "LEV-C06-L-P02-YeShallNotDoAfterT.dc.html": {
    "x": 3360,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Ye Shall Not Do After Their Doings"
+  },
+  "LEV-C06-L-P03-YeShallNotDoAfterT.dc.html": {
+   "x": 0,
    "y": 24900,
    "w": 760,
    "h": 1080,
    "title": "74 · Ye Shall Not Do After Their Doings"
   },
-  "LEV-C06-L-P03-YeShallNotDoAfterT.dc.html": {
-   "x": 0,
-   "y": 26100,
-   "w": 760,
-   "h": 1080,
-   "title": "75 · Ye Shall Not Do After Their Doings"
-  },
   "LEV-C06-L-P04-NoneOfYouShallAppr.dc.html": {
    "x": 840,
-   "y": 26100,
+   "y": 24900,
    "w": 760,
    "h": 1080,
-   "title": "76 · None of You Shall Approach"
+   "title": "75 · None of You Shall Approach"
   },
   "LEV-C06-L-P05-YeShallNotDoAfterT.dc.html": {
    "x": 1680,
-   "y": 26100,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Ye Shall Not Do After Their Doings"
+  },
+  "LEV-C06-L-P06-YeShallNotDoAfterT.dc.html": {
+   "x": 2520,
+   "y": 24900,
    "w": 760,
    "h": 1080,
    "title": "77 · Ye Shall Not Do After Their Doings"
   },
-  "LEV-C06-L-P06-YeShallNotDoAfterT.dc.html": {
-   "x": 2520,
-   "y": 26100,
-   "w": 760,
-   "h": 1080,
-   "title": "78 · Ye Shall Not Do After Their Doings"
-  },
   "LEV-C06-L-P07-ThatTheLandVomitNo.dc.html": {
    "x": 3360,
-   "y": 26100,
+   "y": 24900,
    "w": 760,
    "h": 1080,
-   "title": "79 · That the Land Vomit Not You Out"
+   "title": "78 · That the Land Vomit Not You Out"
   },
   "LEV-C07-00-Title.dc.html": {
    "x": 0,
-   "y": 27800,
+   "y": 26600,
    "w": 760,
    "h": 1080,
    "title": "Chapter 7 · Holy unto Jehovah"
   },
   "LEV-C07-L-P01-YeShallBeHoly.dc.html": {
    "x": 840,
-   "y": 27800,
+   "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "80 · Ye Shall Be Holy"
+   "title": "79 · Ye Shall Be Holy"
   },
   "LEV-C07-L-P02-ForThePoorAndTheSo.dc.html": {
    "x": 1680,
-   "y": 27800,
+   "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "81 · For the Poor and the Sojourner"
+   "title": "80 · For the Poor and the Sojourner"
   },
   "LEV-C07-L-P03-ThouShaltLoveThyNe.dc.html": {
    "x": 2520,
-   "y": 27800,
+   "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "82 · Thou Shalt Love Thy Neighbor"
+   "title": "81 · Thou Shalt Love Thy Neighbor"
   },
   "LEV-C07-L-P04-HolyUntoJehovah.dc.html": {
    "x": 3360,
-   "y": 27800,
+   "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "83 · Holy unto Jehovah"
+   "title": "82 · Holy unto Jehovah"
   },
   "LEV-C07-L-P05-TheStrangerAndTheH.dc.html": {
    "x": 0,
-   "y": 29000,
+   "y": 27800,
    "w": 760,
    "h": 1080,
-   "title": "84 · The Stranger and the Hoary Head"
+   "title": "83 · The Stranger and the Hoary Head"
   },
   "LEV-C07-L-P06-IWillSetMyFaceAgai.dc.html": {
    "x": 840,
-   "y": 29000,
+   "y": 27800,
    "w": 760,
    "h": 1080,
-   "title": "85 · I Will Set My Face against That Man"
+   "title": "84 · I Will Set My Face against That Man"
   },
   "LEV-C07-L-P07-TheirBloodShallBeU.dc.html": {
    "x": 1680,
-   "y": 29000,
+   "y": 27800,
    "w": 760,
    "h": 1080,
-   "title": "86 · Their Blood Shall Be upon Them"
+   "title": "85 · Their Blood Shall Be upon Them"
   },
   "LEV-C07-L-P08-HolyUntoJehovah.dc.html": {
    "x": 2520,
-   "y": 29000,
+   "y": 27800,
    "w": 760,
    "h": 1080,
-   "title": "87 · Holy unto Jehovah"
+   "title": "86 · Holy unto Jehovah"
   },
   "LEV-C07-L-P09-YeShallInheritThei.dc.html": {
    "x": 3360,
-   "y": 29000,
+   "y": 27800,
    "w": 760,
    "h": 1080,
-   "title": "88 · Ye Shall Inherit Their Land"
+   "title": "87 · Ye Shall Inherit Their Land"
   },
   "LEV-C07-L-P10-SpeakUntoThePriest.dc.html": {
    "x": 0,
-   "y": 30200,
+   "y": 29000,
    "w": 760,
    "h": 1080,
-   "title": "89 · Speak unto the Priests"
+   "title": "88 · Speak unto the Priests"
   },
   "LEV-C07-L-P11-TheHighPriestAmong.dc.html": {
    "x": 840,
-   "y": 30200,
+   "y": 29000,
    "w": 760,
    "h": 1080,
-   "title": "90 · The High Priest among His Brethren"
+   "title": "89 · The High Priest among His Brethren"
   },
   "LEV-C07-L-P12-WhosoeverHathABlem.dc.html": {
    "x": 1680,
-   "y": 30200,
+   "y": 29000,
    "w": 760,
    "h": 1080,
-   "title": "91 · Whosoever Hath a Blemish"
+   "title": "90 · Whosoever Hath a Blemish"
   },
   "LEV-C07-L-P13-TheHolyThings.dc.html": {
    "x": 2520,
-   "y": 30200,
+   "y": 29000,
    "w": 760,
    "h": 1080,
-   "title": "92 · The Holy Things"
+   "title": "91 · The Holy Things"
   },
   "LEV-C07-L-P14-HolyUntoJehovah.dc.html": {
    "x": 3360,
-   "y": 30200,
+   "y": 29000,
    "w": 760,
    "h": 1080,
-   "title": "93 · Holy unto Jehovah"
+   "title": "92 · Holy unto Jehovah"
   },
   "LEV-C07-L-P15-ThatYeMayBeAccepte.dc.html": {
    "x": 0,
-   "y": 31400,
+   "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "94 · That Ye May Be Accepted"
+   "title": "93 · That Ye May Be Accepted"
   },
   "LEV-C07-L-P16-HolyUntoJehovah.dc.html": {
    "x": 840,
-   "y": 31400,
+   "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "95 · Holy unto Jehovah"
+   "title": "94 · Holy unto Jehovah"
+  },
+  "LEV-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Set Feasts"
+  },
+  "LEV-C08-L-P01-TheSetFeastsOfJeho.dc.html": {
+   "x": 840,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The Set Feasts of Jehovah"
+  },
+  "LEV-C08-L-P02-TheSheafOfTheFirst.dc.html": {
+   "x": 1680,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Sheaf of the First-fruits"
+  },
+  "LEV-C08-L-P03-SevenSabbathsCompl.dc.html": {
+   "x": 2520,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Seven Sabbaths Complete"
+  },
+  "LEV-C08-L-P04-TheSeventhMonth.dc.html": {
+   "x": 3360,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Seventh Month"
+  },
+  "LEV-C08-L-P05-YeShallDwellInBoot.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Ye Shall Dwell in Booths"
+  },
+  "LEV-C08-L-P06-TheLampAndTheShowb.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Lamp and the Showbread"
+  },
+  "LEV-C08-S1-Blasphemer.dc.html": {
+   "x": 1680,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · He Blasphemed the Name"
+  },
+  "LEV-C08-S2-Stoned.dc.html": {
+   "x": 2520,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Life for Life"
+  },
+  "LEV-C08-N-P01-ASabbathForTheLand.dc.html": {
+   "x": 3360,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · A Sabbath for the Land"
+  },
+  "LEV-C08-N-P02-TheJubilee.dc.html": {
+   "x": 0,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · The Jubilee"
+  },
+  "LEV-C08-N-P03-TheJubilee.dc.html": {
+   "x": 840,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · The Jubilee"
+  },
+  "LEV-C08-N-P04-TheRedemptionOfThe.dc.html": {
+   "x": 1680,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · The Redemption of the Land"
+  },
+  "LEV-C08-N-P05-IfThyBrotherBeWaxe.dc.html": {
+   "x": 2520,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · If Thy Brother Be Waxed Poor"
+  },
+  "LEV-C08-N-P06-TheJubilee.dc.html": {
+   "x": 3360,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Jubilee"
+  },
+  "LEV-C08-N-P07-TheJubilee.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · The Jubilee"
   }
  },
  "order": [
@@ -749,7 +854,6 @@
   "LEV-C01-L-P11-TheTrespassOfferin.dc.html",
   "LEV-C01-L-P12-TheOfferings.dc.html",
   "LEV-C01-L-P13-TheFifthPart.dc.html",
-  "LEV-C01-L-P14-TheOfferings.dc.html",
   "LEV-C02-00-Title.dc.html",
   "LEV-C02-P01-TheLawOfTheTrespas.dc.html",
   "LEV-C02-P02-TheLawOfTheBurntOf.dc.html",
@@ -835,7 +939,23 @@
   "LEV-C07-L-P13-TheHolyThings.dc.html",
   "LEV-C07-L-P14-HolyUntoJehovah.dc.html",
   "LEV-C07-L-P15-ThatYeMayBeAccepte.dc.html",
-  "LEV-C07-L-P16-HolyUntoJehovah.dc.html"
+  "LEV-C07-L-P16-HolyUntoJehovah.dc.html",
+  "LEV-C08-00-Title.dc.html",
+  "LEV-C08-L-P01-TheSetFeastsOfJeho.dc.html",
+  "LEV-C08-L-P02-TheSheafOfTheFirst.dc.html",
+  "LEV-C08-L-P03-SevenSabbathsCompl.dc.html",
+  "LEV-C08-L-P04-TheSeventhMonth.dc.html",
+  "LEV-C08-L-P05-YeShallDwellInBoot.dc.html",
+  "LEV-C08-L-P06-TheLampAndTheShowb.dc.html",
+  "LEV-C08-S1-Blasphemer.dc.html",
+  "LEV-C08-S2-Stoned.dc.html",
+  "LEV-C08-N-P01-ASabbathForTheLand.dc.html",
+  "LEV-C08-N-P02-TheJubilee.dc.html",
+  "LEV-C08-N-P03-TheJubilee.dc.html",
+  "LEV-C08-N-P04-TheRedemptionOfThe.dc.html",
+  "LEV-C08-N-P05-IfThyBrotherBeWaxe.dc.html",
+  "LEV-C08-N-P06-TheJubilee.dc.html",
+  "LEV-C08-N-P07-TheJubilee.dc.html"
  ],
  "notes": {
   "Main": {
@@ -857,42 +977,49 @@
    "maxW": 4120,
    "text": "Chapter 2 · The Consecration (Leviticus 6–8)",
    "x": 0,
-   "y": 7000
+   "y": 5800
   },
   "chapter03": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 3 · Strange Fire (Leviticus 9–11)",
    "x": 0,
-   "y": 12300
+   "y": 11100
   },
   "chapter04": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 4 · The Plague of Leprosy (Leviticus 12–13)",
    "x": 0,
-   "y": 16400
+   "y": 15200
   },
   "chapter05": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 5 · The Cleansing (Leviticus 14–15)",
    "x": 0,
-   "y": 19300
+   "y": 18100
   },
   "chapter06": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 6 · The Day of Atonement (Leviticus 16–18)",
    "x": 0,
-   "y": 23400
+   "y": 22200
   },
   "chapter07": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 7 · Holy unto Jehovah (Leviticus 19–22)",
    "x": 0,
-   "y": 27500
+   "y": 26300
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Set Feasts (Leviticus 23–25)",
+   "x": 0,
+   "y": 31600
   }
  },
  "designSystems": [],

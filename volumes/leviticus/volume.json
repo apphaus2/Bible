@@ -76,6 +76,16 @@
    "prefixes": [
     "LEV-C07-"
    ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "The Set Feasts",
+   "range": "Leviticus 23–25",
+   "blurb": "The sabbath and the set feasts — passover and unleavened bread, the sheaf and the fifty days, the trumpets, the day of atonement, the booths; the lamp and the twelve cakes; the son of the Israelitish woman who blasphemed the Name; the sabbath of the land and the jubilee: proclaim liberty throughout the land.",
+   "prefixes": [
+    "LEV-C08-"
+   ]
   }
  ]
 }

@@ -25,5 +25,7 @@ META = {
      "blurb": "Aaron in the holy linen garments, the two goats and the lots, the cloud of incense over the mercy-seat, the live goat bearing all their iniquities into a solitary land, the tenth day of the seventh month; the life of the flesh is in the blood; and the doings of Egypt and of Canaan ye shall not do."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Holy unto Jehovah", "range": "Leviticus 19–22", "bible_chapters": [19, 20, 21, 22],
      "blurb": "Ye shall be holy: the corners of the field for the poor, the deaf and the blind, thou shalt love thy neighbor as thyself, the stranger as the home-born, just balances; the penalties for Molech and the forbidden degrees; the holiness of the priests and of the holy things, and offerings without blemish."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Set Feasts", "range": "Leviticus 23–25", "bible_chapters": [23, 24, 25],
+     "blurb": "The sabbath and the set feasts — passover and unleavened bread, the sheaf and the fifty days, the trumpets, the day of atonement, the booths; the lamp and the twelve cakes; the son of the Israelitish woman who blasphemed the Name; the sabbath of the land and the jubilee: proclaim liberty throughout the land."},
   ],
 }
