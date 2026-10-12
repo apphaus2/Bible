@@ -31,7 +31,7 @@ def title():
 def p01():
     t, h = rows(500, None)
     r1 = new(SKY, W1, h[0], L.tent_call("c1a", W1, h[0], 111), cap(v("1:1"), "left: 12px; top: 12px", size=12, maxw=420)
-             + god(v("1:2"), "right: 12px; top: 100px", size=18, maxw=340) + mk.stamp(1, "left: 14px; bottom: 14px") + vref("LEV 1:1–2", "right: 12px; bottom: 12px"))
+             + god(v("1:2"), "right: 12px; top: 100px", size=18, maxw=340) + vref("LEV 1:1–2", "right: 12px; bottom: 12px"))
     r2 = new(SAND, W1, h[1], L.altar_scene("c1b", W1, h[1], 112), god(v("1:3") + " " + v("1:4"), "left: 12px; top: 12px", size=16, maxw=470) + vref("LEV 1:3–4", "right: 12px; bottom: 12px"))
     return page("Leviticus 1:1–4 — Jehovah Called unto Moses", t, r1 + r2, START + 0)
 

@@ -13,5 +13,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Offerings", "range": "Leviticus 1–5", "bible_chapters": [1, 2, 3, 4, 5],
      "blurb": "Jehovah calls to Moses out of the tent of meeting: the burnt-offering of the herd, the flock and the birds, the meal-offering seasoned with salt, the peace-offerings, the sin-offering for the priest, the congregation, the ruler and the common people, and the trespass-offering with its fifth part."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Consecration", "range": "Leviticus 6–8", "bible_chapters": [6, 7, 8],
+     "blurb": "The law of each offering — the fire on the altar that shall never go out, the portions of the priests, the sacrifice of thanksgiving, no fat and no blood, the wave-breast and the heave-thigh — and the seven days in which Moses washed, clothed and anointed Aaron and his sons."},
   ],
 }

@@ -27,7 +27,7 @@ def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336
     span = the cell spans both columns of its grid."""
     if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
         size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / (0.62 * len(text))) ** 0.5 * 2) / 2))
-    pic = (f'<div style="position: relative; flex: 1 1 0; min-height: 70px; background: #2A2458; border-bottom: 2px solid {accent}">'
+    pic = (f'<div style="position: relative; flex: 1 1 0; min-height: 70px; max-height: {300 if w > 400 else 220}px; background: #2A2458; border-bottom: 2px solid {accent}">'
            f'<svg viewBox="0 0 320 100" preserveAspectRatio="xMidYMax meet" style="position: absolute; inset: 0; width: 100%; height: 100%">{svg}</svg></div>' if svg else "")
     return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px {accent}; display: flex; flex-direction: column{"; grid-column: span 2" if span else ""}">'
             f'{pic}'
@@ -65,7 +65,7 @@ BP_INK = "#0B1A2E"
 
 def nchars(words): return sum(len(t) for _, t in words)
 
-def bp_panel(h, label_, words, art, extra=""):
+def bp_panel(h, label_, words, art, extra="", code="EX"):
     """One blueprint panel: the drawing, and in the left half the words, sized to fit the panel."""
     bw = 380; n = nchars(words)
     size = max(11.5, min(19, (bw * (h - 60) / (0.6 * n)) ** 0.5 * 0.82))
@@ -85,7 +85,7 @@ def bp_panel(h, label_, words, art, extra=""):
         a = art(W1, ah); m = re.search(r'<text x="14\.0" y="18\.0"[^>]*>[^<]*</text>', a)
         top = m.group(0) if m else ""
         svg = _grid(W1, h) + top + f'<g transform="translate(0 {h - ah})">{a.replace(top, "", 1) if top else a}</g>'
-    return new(BP_INK, W1, h, svg, "".join(o) + vref("EX " + label_, "right: 8px; top: 8px") + extra)
+    return new(BP_INK, W1, h, svg, "".join(o) + vref(code + " " + label_, "right: 8px; top: 8px") + extra)
 
 def _grid(w, h):
     from exo.art8 import bp
@@ -106,7 +106,7 @@ def span_label(group):
     cb, vb = group[-1][0].split(":"); vb = vb.split("–")[-1]
     return f"{a}–{vb}" if ca == cb else f"{a}–{cb}:{vb}"
 
-def blueprints(items, prefix, start, default_head, budget=1500, end=""):
+def blueprints(items, prefix, start, default_head, budget=1500, end="", book="Exodus"):
     """Pack items into blueprint pages; returns [(file name, board title, page fn)], numbered from start. Each panel's height
     is in proportion to its words; a chapter stamp goes on the panel where a Bible chapter begins; end = overlay HTML for the
     very last panel (a つづく box)."""
@@ -120,9 +120,9 @@ def blueprints(items, prefix, start, default_head, budget=1500, end=""):
         t, h = rows(*hs)
         stamp = lambda lab: mk.stamp(int(lab.split(":")[0]), "right: 14px; bottom: 14px") if lab.split(":")[1].split("–")[0] == "1" else ""
         last = k == len(groups) - 1
-        body = "".join(bp_panel(hh, it[0], it[1], it[2], stamp(it[0]) + (end if last and i == len(group) - 1 else "")) for i, (hh, it) in enumerate(zip(h, group)))
+        body = "".join(bp_panel(hh, it[0], it[1], it[2], stamp(it[0]) + (end if last and i == len(group) - 1 else ""), code=_BK.get(book, "EX")) for i, (hh, it) in enumerate(zip(h, group)))
         head = group[0][3] or default_head
-        title = f"Exodus {span_label(group)} — {head}"
+        title = f"{book} {span_label(group)} — {head}"
         slug = re.sub(r"[^A-Za-z]", "", head.title())[:18]
         out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {head}", (lambda title=title, t=t, body=body, n=start + k: page(title, t, body, n))))
     return out
@@ -146,10 +146,13 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
     pages, cur, chars = [], [], 0
     for it in items:
         n = len(_sp(it[1]))
-        if cur and (chars + n > budget or len(cur) == most or it[4]):
+        heading_break = it[4] and (len(cur) >= 3 or chars >= 700)      # a page head starts a new page unless this page is still short
+        if cur and (chars + n > budget or len(cur) == most or heading_break):
             pages.append(cur); cur, chars = [], 0
         cur.append(it); chars += n
     if cur: pages.append(cur)
+    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and len(_sp(pages[-1][0][1])) < 450:
+        tail = pages.pop(); pages[-1] += tail                    # no lone short cell at the end
     out = []
     for k, group in enumerate(pages):
         n = len(group); one = n == 1 or (n == 2 and sum(len(_sp(it[1])) for it in group) > 500)
@@ -165,10 +168,13 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
             text = _sp(refs)
             if lead and text.startswith(lead): text = text[len(lead):].strip()
             else: lead = ""
-            cells.append(law(hd, text, f"{_BK[title_book]} {c}:{a}" + (f"–{b}" if b else ""), svg, cell=cell, w=cw, lead=lead, span=span))
+            cell_html = law(hd, text, f"{_BK[title_book]} {c}:{a}" + (f"–{b}" if b else ""), svg, cell=cell, w=cw, lead=lead, span=span)
+            if a == "1":                               # a chapter stamp where a Bible chapter begins
+                cell_html = cell_html[: cell_html.rfind("</div>")] + mk.stamp(int(c), "right: 10px; top: 10px") + "</div>"
+            cells.append(cell_html)
         if end and k == len(pages) - 1:
             cells[-1] = cells[-1][: cells[-1].rfind("</div>")] + end + "</div>"
-        head = group[0][4] or default_head
+        head = next((it[4] for it in group if it[4]), None) or default_head
         a0 = group[0][1].split("-")[0]; cl, vl = group[-1][1].split(":"); vl = vl.split("-")[-1]
         rng = a0 if f"{cl}:{vl}" == a0 else (f"{a0}–{vl}" if a0.split(":")[0] == cl else f"{a0}–{cl}:{vl}")
         title = f"{title_book} {rng} — {head}"

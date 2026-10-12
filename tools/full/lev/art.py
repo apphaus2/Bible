@@ -126,7 +126,7 @@ def pg_leaven(p):    return GND + jar(120, 84, 1.0, color="#E8C88A") + jar(200, 
 def pg_salt(p):      return GND + flour(110, 84, 1.0) + salt(190, 84, 1.3) + label(190, 96, "THE SALT OF THE COVENANT", B8.CY, 7)
 def pg_ears(p):      return GND + ears(80, 84, 1.0, n=4) + E.blaze(150, 84, 26, 30, 3, n=4) + jar(220, 84, 0.9) + incense(270, 84, 0.9)
 def pg_peace_herd(p): return GND + S1.cow(90, 84, 0.42, color="#8A5A30", patch="#5A3A22") + S1.cow(160, 84, 0.38, color="#C9A27A") + altar(260, 84, 1.0)
-def pg_fat(p):       return GND + altar(110, 84, 1.3) + label(230, 50, "ALL THE FAT IS JEHOVAH'S", "#FFD23F", 9)
+def pg_fat(p):       return GND + altar(220, 84, 1.3) + label(90, 60, "ALL THE FAT IS JEHOVAH'S", "#FFD23F", 9)
 def pg_lamb(p):      return GND + E3.lamb(110, 84, 0.5) + offerer(p, 190, up=REACH, flip=True) + altar(260, 84, 0.9)
 def pg_goat(p):      return GND + goat(110, 84, 0.46) + offerer(p, 190, up=REACH, flip=True) + altar(260, 84, 0.9)
 def pg_no_blood(p):  return GND + E3.basin(130, 70, 36) + jar(200, 84, 1.0, color="#E8E2D6") + ban(165, 50, 42)
@@ -193,3 +193,40 @@ def pg_ephah(p):      return (GND + offerer(p, 60) + flour(130, 84, 1.2) + label
 def pg_ram(p):        return GND + offerer(p, 60) + goat(150, 84, 0.46, color="#E8E2D6") + coins(220, 60, 5)
 def pg_fifth(p):      return GND + coins(60, 70, 10) + label(150, 56, "+", "#FFD23F", 22) + coins(190, 70, 2) + label(205, 96, "THE FIFTH PART", B8.CY, 8)
 def pg_guilty(p):     return GND + E.kneel(120, 86, 0.36, color="#5A3A22", skin="#8A5A3E") + altar(230, 84, 1.0)
+
+# ---- Leviticus 6–7: the law of the offerings ---------------------------------------------------------------------
+def pg_deposit(p):    return GND + man(p, 60, 86, 0.34, "#5A3A22") + L7_deposit() + man(p, 260, 86, 0.34, "#4A3A6A", flip=True)
+def L7_deposit():
+    return ('<rect x="110" y="52" width="60" height="32" fill="#8A5A3E" stroke="#0D0D0F" stroke-width="2"></rect><path d="M110 64 L 170 64" stroke="#E8B830" stroke-width="3"></path>'
+            + R.sack(200, 84, 0.6))
+def pg_restore(p):    return GND + coins(70, 70, 10) + label(150, 56, "+", "#FFD23F", 22) + coins(190, 70, 2) + offerer(p, 270, flip=True)
+def pg_hearth(p):     return GND + altar(160, 84, 1.6) + label(160, 96, "ALL NIGHT UNTO THE MORNING", B8.CY, 7)
+def pg_linen_ashes(p): return GND + priest(p, 90, up=REACH) + f'<path d="M120 60 C 124 50 150 50 154 60 Z" fill="#6A6460" stroke="#0D0D0F" stroke-width="1.4"></path>' + altar(250, 84, 1.0)
+def pg_carry_ashes(p): return GND + altar(70, 84, 0.9) + priest(p, 160, up=[(-22, -158), (-18, -186), (-6, -196)]) + f'<path d="M144 26 C 148 18 168 18 172 26 Z" fill="#6A6460" stroke="#0D0D0F" stroke-width="1.4"></path>' + '<path d="M210 20 L 210 96" stroke="#FFD23F" stroke-width="2" stroke-dasharray="5 4"></path>' + label(260, 30, "WITHOUT THE CAMP", B8.CY, 7)
+def pg_continual(p):  return GND + altar(110, 84, 1.4) + "".join(f'<rect x="{196 + i * 16}" y="44" width="12" height="12" fill="#FFD23F" stroke="#2C9DB8" stroke-width="1"></rect>' for i in range(7)) + label(250, 70, "CONTINUALLY", "#FFD23F", 9)
+def pg_eat_court(p):  return GND + door(60, 84) + "".join(priest(p, 120 + i * 36) for i in range(3)) + cakes(250, 84, 1.0)
+def pg_anointed(p):   return GND + priest(p, 80, high=True) + pan(170, 84, 1.0) + flour(240, 84, 0.8) + label(170, 96, "1/10 EPHAH · MORNING AND EVENING", B8.CY, 6.5)
+def pg_wholly(p):     return GND + altar(160, 84, 1.6) + label(250, 40, "WHOLLY BURNT", "#FFD23F", 9)
+def pg_holy_touch(p): return GND + priest(p, 100) + f'<path d="M180 84 L 184 60 L 216 60 L 220 84 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.6"></path>' + f'<path d="M232 84 L 236 62 L 268 62 L 272 84 Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="1.6"></path>' + label(200, 96, "EARTHEN · BROKEN", B8.CY, 7) + label(252, 96, "BRAZEN · SCOURED", B8.CY, 7)
+def pg_no_eat(p):     return GND + veil(120, 84, 0.9) + E.blaze(230, 84, 40, 40, 5, n=5) + label(230, 96, "BURNT WITH FIRE", B8.CY, 7)
+def pg_most_holy(p):  return GND + priest(p, 100) + priest(p, 140) + altar(250, 84, 1.0) + label(170, 24, "MOST HOLY", "#FFD23F", 10)
+def pg_skin(p):       return GND + priest(p, 90) + '<path d="M150 84 C 152 70 200 66 214 84 Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.6"></path>' + oven(260, 84, 0.9)
+def pg_sons_all(p):   return GND + "".join(priest(p, 60 + i * 30) for i in range(4)) + cakes(220, 84, 1.0) + pan(280, 84, 0.7)
+def pg_thanks(p):     return GND + cakes(80, 84, 1.0) + jar(140, 84, 0.8) + cakes(210, 84, 1.0) + label(80, 96, "UNLEAVENED", B8.CY, 7) + label(210, 96, "LEAVENED", B8.CY, 7) + E3.lamb(280, 84, 0.34)
+def pg_days(p, keep=1, burn=None, title=""):
+    o = [GND]
+    for d in range(3):
+        x = 70 + d * 70; c = "#FFD23F" if d < keep else ("#D7261E" if burn and d + 1 >= burn else "#12113A")
+        o.append(f'<rect x="{x - 24}" y="34" width="48" height="36" fill="{c}" fill-opacity="0.85" stroke="#2C9DB8" stroke-width="1.4"></rect>' + label(x, 58, f"DAY {d + 1}", "#0D0D0F" if c != "#12113A" else B8.CY, 9))
+    if burn: o.append(E.blaze(70 + (burn - 1) * 70, 34, 20, 18, 3, n=3))
+    return "".join(o) + label(160, 92, title, B8.CY, 8)
+def pg_same_day(p):   return pg_days(p, keep=1, title="EATEN THE SAME DAY")
+def pg_third(p):      return pg_days(p, keep=2, burn=3, title="THE THIRD DAY · BURNT WITH FIRE")
+def pg_unclean_flesh(p): return GND + '<path d="M80 84 C 90 70 130 70 140 84 Z" fill="#3A3A3E" stroke="#0D0D0F" stroke-width="1.4"></path>' + E.blaze(220, 84, 40, 40, 6, n=5) + label(110, 96, "UNCLEAN", B8.CY, 7)
+def pg_cut_off(p):    return GND + "".join(A.black_tent(60 + i * 46, 84, 38, 26) for i in range(4)) + man(p, 280, 86, 0.32, "#5A3A22", flip=True) + '<path d="M250 20 L 250 96" stroke="#D7261E" stroke-width="2" stroke-dasharray="5 4"></path>'
+def pg_no_fat(p):     return GND + S1.cow(70, 84, 0.3, color="#5A3A22", patch="#3A2214") + E.sheep(140, 84, 0.32) + goat(200, 84, 0.32) + ban(260, 50, 30)
+def pg_blood_bird(p): return GND + dove(90, 80, 1.1) + S1.cow(170, 84, 0.3, color="#8A5A30", patch="#5A3A22") + ban(250, 50, 32)
+def pg_wave(p):       return GND + offerer(p, 80, up=[(-22, -158), (-10, -190), (10, -210)]) + f'<ellipse cx="84" cy="10" rx="14" ry="5" fill="#E8C88A" stroke="#0D0D0F" stroke-width="1.2"></ellipse>' + '<path d="M50 6 L 120 6" stroke="#FFD23F" stroke-width="2"></path>' + altar(220, 84, 1.0)
+def pg_thigh(p):      return GND + priest(p, 100) + priest(p, 140) + '<path d="M190 70 C 200 50 230 50 236 70 C 232 84 196 84 190 70 Z" fill="#C8682E" stroke="#0D0D0F" stroke-width="1.4"></path>' + label(214, 96, "THE RIGHT THIGH", B8.CY, 7)
+def pg_portion_ever(p): return GND + priest(p, 80, high=True) + "".join(priest(p, 120 + i * 30) for i in range(4)) + label(250, 30, "FOR EVER", "#FFD23F", 9)
+def pg_sinai(p):      return GND + E4.sinai(200, 84, 160, 80, 4, fire=False) + A.moses(p, 70, 86, 0.36, up=T.POSES["raise"])

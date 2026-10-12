@@ -57,6 +57,7 @@ There are two editions:
 | Exodus | 12 · The Glory | 39–40 | title + 12 (pp. 195–206) | 81/81 verses full | `volumes/exodus/` |
 | **Exodus** | **complete: cover + 12 chapters** | **1–40** | **219 pages (206 numbered)** | **1,213 verses: all full** | `volumes/exodus/` |
 | Leviticus | 1 · The Offerings | 1–5 | cover + title + 16 (pp. 1–16) | 104/104 verses full | `volumes/leviticus/` |
+| Leviticus | 2 · The Consecration | 6–8 | title + 16 (pp. 17–32) | 104/104 verses full (ch. 8 as narrated blueprints) | `volumes/leviticus/` |
 
 **Genesis and Exodus are complete; Leviticus is under way** in `tools/full/lev/` (9 chapters planned: 1 The Offerings 1–5 ·
 2 The Consecration 6–8 · 3 Strange Fire 9–11 · 4 The Plague of Leprosy 12–13 · 5 The Cleansing 14–15 · 6 The Day of

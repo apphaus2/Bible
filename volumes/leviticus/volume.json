@@ -16,6 +16,16 @@
     "Main.dc.html",
     "LEV-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Consecration",
+   "range": "Leviticus 6–8",
+   "blurb": "The law of each offering — the fire on the altar that shall never go out, the portions of the priests, the sacrifice of thanksgiving, no fat and no blood, the wave-breast and the heave-thigh — and the seven days in which Moses washed, clothed and anointed Aaron and his sons.",
+   "prefixes": [
+    "LEV-C02-"
+   ]
   }
  ]
 }
