@@ -1,5 +1,7 @@
 # Bible Manga
 
+**Read it: https://apphaus2.github.io/Bible/**
+
 The Bible as a full-color manga in a 1980s cyberpunk-manga style, in the words of the
 ASV. GitHub Actions builds the website and deploys it to
 GitHub Pages on every push to `master`.

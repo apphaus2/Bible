@@ -1017,6 +1017,118 @@
    "w": 760,
    "h": 1080,
    "title": "136 · Flee Thou to Laban My Brother"
+  },
+  "GEN-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Ladder"
+  },
+  "GEN-C08-P01-Charge.dc.html": {
+   "x": 840,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Arise, Go to Paddan-aram"
+  },
+  "GEN-C08-P02-Stone.dc.html": {
+   "x": 1680,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · A Certain Place"
+  },
+  "GEN-C08-P03-Ladder.dc.html": {
+   "x": 2520,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · The Gate of Heaven"
+  },
+  "GEN-C08-P04-Bethel.dc.html": {
+   "x": 3360,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · Beth-el"
+  },
+  "GEN-C08-P05-Well.dc.html": {
+   "x": 0,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Of Haran Are We"
+  },
+  "GEN-C08-P06-Rachel.dc.html": {
+   "x": 840,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Rachel Came with Her Father's Sheep"
+  },
+  "GEN-C08-P07-SevenYears.dc.html": {
+   "x": 1680,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · But a Few Days"
+  },
+  "GEN-C08-P08-Leah.dc.html": {
+   "x": 2520,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Behold, It Was Leah"
+  },
+  "GEN-C08-P09-Judah.dc.html": {
+   "x": 3360,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · This Time Will I Praise Jehovah"
+  },
+  "GEN-C08-P10-Bilhah.dc.html": {
+   "x": 0,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Give Me Children, or Else I Die"
+  },
+  "GEN-C08-P11-Mandrakes.dc.html": {
+   "x": 840,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · My Son's Mandrakes"
+  },
+  "GEN-C08-P12-Joseph.dc.html": {
+   "x": 1680,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Jehovah Add to Me Another Son"
+  },
+  "GEN-C08-P13-Wages.dc.html": {
+   "x": 2520,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · Appoint Me Thy Wages"
+  },
+  "GEN-C08-P14-Speckled.dc.html": {
+   "x": 3360,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Speckled and Spotted"
+  },
+  "GEN-C08-P15-Rods.dc.html": {
+   "x": 0,
+   "y": 45100,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Man Increased Exceedingly"
   }
  },
  "order": [
@@ -1163,7 +1275,23 @@
   "GEN-C07-P15-Trembled.dc.html",
   "GEN-C07-P16-BitterCry.dc.html",
   "GEN-C07-P17-Sword.dc.html",
-  "GEN-C07-P18-Flee.dc.html"
+  "GEN-C07-P18-Flee.dc.html",
+  "GEN-C08-00-Title.dc.html",
+  "GEN-C08-P01-Charge.dc.html",
+  "GEN-C08-P02-Stone.dc.html",
+  "GEN-C08-P03-Ladder.dc.html",
+  "GEN-C08-P04-Bethel.dc.html",
+  "GEN-C08-P05-Well.dc.html",
+  "GEN-C08-P06-Rachel.dc.html",
+  "GEN-C08-P07-SevenYears.dc.html",
+  "GEN-C08-P08-Leah.dc.html",
+  "GEN-C08-P09-Judah.dc.html",
+  "GEN-C08-P10-Bilhah.dc.html",
+  "GEN-C08-P11-Mandrakes.dc.html",
+  "GEN-C08-P12-Joseph.dc.html",
+  "GEN-C08-P13-Wages.dc.html",
+  "GEN-C08-P14-Speckled.dc.html",
+  "GEN-C08-P15-Rods.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1221,6 +1349,13 @@
    "text": "Chapter 7 · Jacob and Esau (Genesis 25:19–27:46)",
    "x": 0,
    "y": 35900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Ladder (Genesis 28–30)",
+   "x": 0,
+   "y": 41200
   }
  },
  "designSystems": [],

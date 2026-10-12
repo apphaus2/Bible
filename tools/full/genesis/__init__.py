@@ -23,5 +23,7 @@ META = {
      "blurb": "Abraham's servant and the oath, ten camels to the city of Nahor, Rebekah at the well with her pitcher, Laban, I will go, Isaac meditating in the field at eventide, Keturah, Abraham full of years, and Ishmael's twelve princes."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Jacob and Esau", "range": "Genesis 25:19–27:46", "bible_chapters": [25, 26, 27], "span": ["25:19", "27:46"],
      "blurb": "Two nations in the womb, the hand on Esau's heel, red pottage and the birthright, Isaac at Gerar and the wells Esek, Sitnah and Rehoboth, the blind father, the kids of the goats, the stolen blessing and Esau's bitter cry."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Ladder", "range": "Genesis 28–30", "bible_chapters": [28, 29, 30],
+     "blurb": "Jacob sent to Paddan-aram, the stone for a pillow and the ladder to heaven, Beth-el, Rachel at the well, seven years that seemed but a few days, Leah, the eleven sons and Dinah, and the speckled and spotted flock."},
   ],
 }
