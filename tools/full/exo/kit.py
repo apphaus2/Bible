@@ -19,19 +19,22 @@ def song(text, pos, size=15, maxw=None, color="#D7261E"):
             f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
             f'font-size: {size}px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>\n')
 
-def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336):
+def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336, lead="", span=False):
     """One cell of a page of ordinances (Exodus 21–23): a Voice box (God's words, indigo with the gold inner rule) with a
     pictogram above (svg in a 320 x 100 viewBox, standing on the cell's ground line and filling whatever height the words
-    leave), a heading tag and the verse label (both data-label). size=None sizes the words to the cell (cell = its height in px)."""
+    leave), a heading tag and the verse label (both data-label). size=None sizes the words to the cell (cell = its height in px).
+    lead = a narration lead-in ("And Jehovah spake unto Moses, saying,") set as a small caption line above the Voice words;
+    span = the cell spans both columns of its grid."""
     if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
-        size = max(13, min(24, round((w * (cell - 150) / (0.62 * len(text))) ** 0.5 * 2) / 2))
+        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / (0.62 * len(text))) ** 0.5 * 2) / 2))
     pic = (f'<div style="position: relative; flex: 1 1 0; min-height: 70px; background: #2A2458; border-bottom: 2px solid {accent}">'
            f'<svg viewBox="0 0 320 100" preserveAspectRatio="xMidYMax meet" style="position: absolute; inset: 0; width: 100%; height: 100%">{svg}</svg></div>' if svg else "")
-    return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px {accent}; display: flex; flex-direction: column">'
+    return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px {accent}; display: flex; flex-direction: column{"; grid-column: span 2" if span else ""}">'
             f'{pic}'
             f'\n      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 8px 12px 0"><span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.2em; color: {accent}">{heading}</span>'
             f'<span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.18em; white-space: nowrap; opacity: 0.8">{ref}</span></div>'
-            f'\n      <div style="padding: 6px 12px 12px; font-family: Anton, sans-serif; font-size: {size}px; line-height: 1.18; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n    </div>')
+            + (f'\n      <div style="margin: 6px 12px 0; align-self: flex-start; padding: 3px 7px; background: #F3EFE6; color: #0D0D0F; font-size: 9.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase">{lead}</div>' if lead else "")
+            + f'\n      <div style="padding: 6px 12px 12px; font-family: Anton, sans-serif; font-size: {size}px; line-height: 1.18; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n    </div>')
 
 def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     """lines is a list of ("cap", text) or ("say", text) in reading order."""
@@ -122,4 +125,54 @@ def blueprints(items, prefix, start, default_head, budget=1500, end=""):
         title = f"Exodus {span_label(group)} — {head}"
         slug = re.sub(r"[^A-Za-z]", "", head.title())[:18]
         out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {head}", (lambda title=title, t=t, body=body, n=start + k: page(title, t, body, n))))
+    return out
+
+
+# ---- law pages (Leviticus) -------------------------------------------------------------------------------------------
+_ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic")
+_BK = {"Leviticus": "LEV", "Exodus": "EX", "Numbers": "NUM", "Deuteronomy": "DEUT"}
+_SP = {}
+def set_book(G):
+    """law_pages() cuts text from this book (set by the volume package)."""
+    _SP["G"] = G
+def _sp(refs): return _SP["G"].span(refs)
+
+def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget=1450, most=6, end=""):
+    """Pack law cells into pages. items: (heading, refs "1:2-4", pictogram f(p) -> svg or None, lead text or "", page head
+    or None). A page holds up to `most` cells and about `budget` characters; a page head starts a new page. Cells sit two
+    to a row (one to a row when a page has only one or two long cells); an odd last cell spans both columns. The lead, if
+    the cell's text begins with it, is lifted out into its own caption line. Returns [(file name, board title, page fn)]."""
+    from genesis.ch02 import grid
+    pages, cur, chars = [], [], 0
+    for it in items:
+        n = len(_sp(it[1]))
+        if cur and (chars + n > budget or len(cur) == most or it[4]):
+            pages.append(cur); cur, chars = [], 0
+        cur.append(it); chars += n
+    if cur: pages.append(cur)
+    out = []
+    for k, group in enumerate(pages):
+        n = len(group); one = n == 1 or (n == 2 and sum(len(_sp(it[1])) for it in group) > 500)
+        ncol = 1 if one else 2; nrow = n if ncol == 1 else (n + 1) // 2
+        cell = (1022 - 12 * (nrow - 1)) // nrow
+        cells = []
+        for i, (hd, refs, pic, lead, _) in enumerate(group):
+            c, vs = refs.split(":"); a, _, b = vs.partition("-")
+            span = ncol == 2 and n % 2 == 1 and i == n - 1
+            cw = 696 if (ncol == 1 or span) else 336
+            uid = f"lw{prefix[-2:]}{k}x{i}"
+            svg = (mk.defs(uid, *_ALL) + pic(uid)) if pic else ""
+            text = _sp(refs)
+            if lead and text.startswith(lead): text = text[len(lead):].strip()
+            else: lead = ""
+            cells.append(law(hd, text, f"{_BK[title_book]} {c}:{a}" + (f"–{b}" if b else ""), svg, cell=cell, w=cw, lead=lead, span=span))
+        if end and k == len(pages) - 1:
+            cells[-1] = cells[-1][: cells[-1].rfind("</div>")] + end + "</div>"
+        head = group[0][4] or default_head
+        a0 = group[0][1].split("-")[0]; cl, vl = group[-1][1].split(":"); vl = vl.split("-")[-1]
+        rng = a0 if f"{cl}:{vl}" == a0 else (f"{a0}–{vl}" if a0.split(":")[0] == cl else f"{a0}–{cl}:{vl}")
+        title = f"{title_book} {rng} — {head}"
+        slug = re.sub(r"[^A-Za-z]", "", head.title())[:18]
+        body = grid(cells, f"repeat({nrow}, minmax(0, 1fr))", ncol=ncol)
+        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {head}", (lambda title=title, body=body, num=start + k: page(title, "minmax(0, 1fr)", body, num))))
     return out

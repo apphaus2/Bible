@@ -1,0 +1,21 @@
+{
+ "id": "leviticus",
+ "order": 3,
+ "name": "Leviticus",
+ "kanji": "レビ記",
+ "thumb": "vol-leviticus-",
+ "lede": "The third book of the Bible, in full: every law and every scene in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Offerings",
+   "range": "Leviticus 1–5",
+   "blurb": "Jehovah calls to Moses out of the tent of meeting: the burnt-offering of the herd, the flock and the birds, the meal-offering seasoned with salt, the peace-offerings, the sin-offering for the priest, the congregation, the ruler and the common people, and the trespass-offering with its fifth part.",
+   "prefixes": [
+    "Main.dc.html",
+    "LEV-C01-"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-12T22:48:26Z"
+ },
+ "title": "Leviticus — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "LEV-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Offerings"
+  },
+  "LEV-C01-P01-Called.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Jehovah Called unto Moses"
+  },
+  "LEV-C01-P01-TheBurntOffering.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Burnt-offering"
+  },
+  "LEV-C01-P02-TheOfferings.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Offerings"
+  },
+  "LEV-C01-P03-TheMealOffering.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Meal-offering"
+  },
+  "LEV-C01-P04-TheOfferings.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Offerings"
+  },
+  "LEV-C01-P05-ThePeaceOfferings.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Peace-offerings"
+  },
+  "LEV-C01-P06-TheOfferings.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Offerings"
+  },
+  "LEV-C01-P07-TheSinOffering.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Sin-offering"
+  },
+  "LEV-C01-P08-TheOfferings.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Offerings"
+  },
+  "LEV-C01-P09-IfTheWholeCongrega.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · If the Whole Congregation Err"
+  },
+  "LEV-C01-P10-WhenARulerSinneth.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · When a Ruler Sinneth"
+  },
+  "LEV-C01-P11-TheOfferings.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Offerings"
+  },
+  "LEV-C01-P12-TheTrespassOfferin.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Trespass-offering"
+  },
+  "LEV-C01-P13-TheOfferings.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Offerings"
+  },
+  "LEV-C01-P14-TheOfferings.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Offerings"
+  },
+  "LEV-C01-P15-TheFifthPart.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · The Fifth Part"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "LEV-C01-00-Title.dc.html",
+  "LEV-C01-P01-Called.dc.html",
+  "LEV-C01-P01-TheBurntOffering.dc.html",
+  "LEV-C01-P02-TheOfferings.dc.html",
+  "LEV-C01-P03-TheMealOffering.dc.html",
+  "LEV-C01-P04-TheOfferings.dc.html",
+  "LEV-C01-P05-ThePeaceOfferings.dc.html",
+  "LEV-C01-P06-TheOfferings.dc.html",
+  "LEV-C01-P07-TheSinOffering.dc.html",
+  "LEV-C01-P08-TheOfferings.dc.html",
+  "LEV-C01-P09-IfTheWholeCongrega.dc.html",
+  "LEV-C01-P10-WhenARulerSinneth.dc.html",
+  "LEV-C01-P11-TheOfferings.dc.html",
+  "LEV-C01-P12-TheTrespassOfferin.dc.html",
+  "LEV-C01-P13-TheOfferings.dc.html",
+  "LEV-C01-P14-TheOfferings.dc.html",
+  "LEV-C01-P15-TheFifthPart.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Leviticus Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Offerings (Leviticus 1–5)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
