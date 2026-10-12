@@ -89,8 +89,9 @@ def main(vol, check=False):
     norm = lambda t: re.sub(r"\s+", " ", t.replace("\u2019", "'")).strip().lower()
     full = norm(G.text()); bad = n = 0
     for p in sorted(pages_dir.glob("*.dc.html")):
-        for attrs, body in re.findall(r'<(?:div|h1)([^>]*)>(.*?)</(?:div|h1)>', p.read_text(), re.S):
-            if "text-transform: uppercase" not in attrs or "data-label" in attrs or "<" in body: continue
+        # leaf text boxes only: a div/h1 whose body holds no tags but <br> (a wider match would swallow the first caption of a panel)
+        for _, attrs, body in re.findall(r'<(div|h1)([^>]*)>((?:[^<]|<br\s*/?>)*)</\1>', p.read_text(), re.S):
+            if "text-transform: uppercase" not in attrs or "data-label" in attrs: continue
             t = html.unescape(re.sub(r"<br\s*/?>", " ", body))
             for seg in [x for x in t.split("…") if x.strip()]:
                 n += 1

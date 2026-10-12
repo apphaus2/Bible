@@ -919,6 +919,104 @@
    "w": 760,
    "h": 1080,
    "title": "122 · Forty Days and Forty Nights"
+  },
+  "EXO-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Pattern of the Tabernacle"
+  },
+  "EXO-C08-P01-Offering.dc.html": {
+   "x": 840,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Of Every Man Whose Heart Maketh Him Willing"
+  },
+  "EXO-C08-P02-Ark.dc.html": {
+   "x": 1680,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · An Ark of Acacia Wood"
+  },
+  "EXO-C08-P03-MercySeat.dc.html": {
+   "x": 2520,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · There I Will Meet with Thee"
+  },
+  "EXO-C08-P04-Table.dc.html": {
+   "x": 3360,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Showbread before Me Alway"
+  },
+  "EXO-C08-P05-Candlestick.dc.html": {
+   "x": 0,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · A Candlestick of Pure Gold"
+  },
+  "EXO-C08-P06-Curtains.dc.html": {
+   "x": 840,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · After Their Pattern"
+  },
+  "EXO-C08-P07-Loops.dc.html": {
+   "x": 1680,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Fifty Loops, Fifty Clasps"
+  },
+  "EXO-C08-P08-Coverings.dc.html": {
+   "x": 2520,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · A Covering of Rams' Skins Dyed Red"
+  },
+  "EXO-C08-P09-Boards.dc.html": {
+   "x": 3360,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Boards of Acacia Wood, Standing Up"
+  },
+  "EXO-C08-P10-Veil.dc.html": {
+   "x": 0,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Veil Shall Separate"
+  },
+  "EXO-C08-P11-Altar.dc.html": {
+   "x": 840,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · The Holy Place and the Most Holy"
+  },
+  "EXO-C08-P12-Court.dc.html": {
+   "x": 1680,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · The Court of the Tabernacle"
+  },
+  "EXO-C08-P13-Oil.dc.html": {
+   "x": 2520,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · A Lamp to Burn Continually"
   }
  },
  "order": [
@@ -1051,7 +1149,21 @@
   "EXO-C07-P07-Hornet.dc.html",
   "EXO-C07-P08-TwelvePillars.dc.html",
   "EXO-C07-P09-Sapphire.dc.html",
-  "EXO-C07-P10-FortyDays.dc.html"
+  "EXO-C07-P10-FortyDays.dc.html",
+  "EXO-C08-00-Title.dc.html",
+  "EXO-C08-P01-Offering.dc.html",
+  "EXO-C08-P02-Ark.dc.html",
+  "EXO-C08-P03-MercySeat.dc.html",
+  "EXO-C08-P04-Table.dc.html",
+  "EXO-C08-P05-Candlestick.dc.html",
+  "EXO-C08-P06-Curtains.dc.html",
+  "EXO-C08-P07-Loops.dc.html",
+  "EXO-C08-P08-Coverings.dc.html",
+  "EXO-C08-P09-Boards.dc.html",
+  "EXO-C08-P10-Veil.dc.html",
+  "EXO-C08-P11-Altar.dc.html",
+  "EXO-C08-P12-Court.dc.html",
+  "EXO-C08-P13-Oil.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1109,6 +1221,13 @@
    "text": "Chapter 7 · The Book of the Covenant (Exodus 22–24)",
    "x": 0,
    "y": 37100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Pattern of the Tabernacle (Exodus 25–27)",
+   "x": 0,
+   "y": 41200
   }
  },
  "designSystems": [],

@@ -76,6 +76,16 @@
    "prefixes": [
     "EXO-C07-"
    ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "The Pattern of the Tabernacle",
+   "range": "Exodus 25–27",
+   "blurb": "The willing offering, the ark and the mercy-seat with its two cherubim of gold, the table of showbread, the candlestick of beaten work, the curtains and their loops and clasps, the boards and sockets, the veil, the altar of brass, and the court of a hundred cubits — drawn as blueprints.",
+   "prefixes": [
+    "EXO-C08-"
+   ]
   }
  ]
 }
