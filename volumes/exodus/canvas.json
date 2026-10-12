@@ -1304,6 +1304,153 @@
    "w": 760,
    "h": 1080,
    "title": "174 · He Put a Veil on His Face"
+  },
+  "EXO-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Willing Offering"
+  },
+  "EXO-C11-P01-TheseAreTheWords.dc.html": {
+   "x": 840,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · These Are the Words"
+  },
+  "EXO-C11-P02-LetEveryWiseHearte.dc.html": {
+   "x": 1680,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · Let Every Wise-hearted Man Come"
+  },
+  "EXO-C11-P03-EveryOneWhoseHeart.dc.html": {
+   "x": 2520,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Every One Whose Heart Stirred Him Up"
+  },
+  "EXO-C11-P04-BezalelAndOholiab.dc.html": {
+   "x": 3360,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · Bezalel and Oholiab"
+  },
+  "EXO-C11-P05-MuchMoreThanEnough.dc.html": {
+   "x": 0,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Much More than Enough"
+  },
+  "EXO-C11-P06-TheyMadeTheTaberna.dc.html": {
+   "x": 840,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · They Made the Tabernacle"
+  },
+  "EXO-C11-P07-TheWillingOffering.dc.html": {
+   "x": 1680,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · The Willing Offering"
+  },
+  "EXO-C11-P08-TheBoardsAndTheSoc.dc.html": {
+   "x": 2520,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · The Boards and the Sockets"
+  },
+  "EXO-C11-P09-TheWillingOffering.dc.html": {
+   "x": 3360,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · The Willing Offering"
+  },
+  "EXO-C11-P10-TheVeilAndTheScree.dc.html": {
+   "x": 0,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · The Veil and the Screen"
+  },
+  "EXO-C11-P11-BezalelMadeTheArk.dc.html": {
+   "x": 840,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Bezalel Made the Ark"
+  },
+  "EXO-C11-P12-TheWillingOffering.dc.html": {
+   "x": 1680,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · The Willing Offering"
+  },
+  "EXO-C11-P13-TheTableAndItsVess.dc.html": {
+   "x": 2520,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · The Table and Its Vessels"
+  },
+  "EXO-C11-P14-TheCandlestick.dc.html": {
+   "x": 3360,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · The Candlestick"
+  },
+  "EXO-C11-P15-TheAltarOfIncense.dc.html": {
+   "x": 0,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · The Altar of Incense"
+  },
+  "EXO-C11-P16-TheAltarOfBurntOff.dc.html": {
+   "x": 840,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · The Altar of Burnt-offering"
+  },
+  "EXO-C11-P17-TheCourt.dc.html": {
+   "x": 1680,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · The Court"
+  },
+  "EXO-C11-P18-TheWillingOffering.dc.html": {
+   "x": 2520,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · The Willing Offering"
+  },
+  "EXO-C11-P19-TheSumOfTheThings.dc.html": {
+   "x": 3360,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · The Sum of the Things"
+  },
+  "EXO-C11-P20-TheWillingOffering.dc.html": {
+   "x": 0,
+   "y": 62200,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · The Willing Offering"
   }
  },
  "order": [
@@ -1491,7 +1638,28 @@
   "EXO-C10-P16-Jealous.dc.html",
   "EXO-C10-P17-Feasts.dc.html",
   "EXO-C10-P18-Shone.dc.html",
-  "EXO-C10-P19-Veil.dc.html"
+  "EXO-C10-P19-Veil.dc.html",
+  "EXO-C11-00-Title.dc.html",
+  "EXO-C11-P01-TheseAreTheWords.dc.html",
+  "EXO-C11-P02-LetEveryWiseHearte.dc.html",
+  "EXO-C11-P03-EveryOneWhoseHeart.dc.html",
+  "EXO-C11-P04-BezalelAndOholiab.dc.html",
+  "EXO-C11-P05-MuchMoreThanEnough.dc.html",
+  "EXO-C11-P06-TheyMadeTheTaberna.dc.html",
+  "EXO-C11-P07-TheWillingOffering.dc.html",
+  "EXO-C11-P08-TheBoardsAndTheSoc.dc.html",
+  "EXO-C11-P09-TheWillingOffering.dc.html",
+  "EXO-C11-P10-TheVeilAndTheScree.dc.html",
+  "EXO-C11-P11-BezalelMadeTheArk.dc.html",
+  "EXO-C11-P12-TheWillingOffering.dc.html",
+  "EXO-C11-P13-TheTableAndItsVess.dc.html",
+  "EXO-C11-P14-TheCandlestick.dc.html",
+  "EXO-C11-P15-TheAltarOfIncense.dc.html",
+  "EXO-C11-P16-TheAltarOfBurntOff.dc.html",
+  "EXO-C11-P17-TheCourt.dc.html",
+  "EXO-C11-P18-TheWillingOffering.dc.html",
+  "EXO-C11-P19-TheSumOfTheThings.dc.html",
+  "EXO-C11-P20-TheWillingOffering.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1570,6 +1738,13 @@
    "text": "Chapter 10 · The Golden Calf (Exodus 32–34)",
    "x": 0,
    "y": 51800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Willing Offering (Exodus 35–38)",
+   "x": 0,
+   "y": 57100
   }
  },
  "designSystems": [],

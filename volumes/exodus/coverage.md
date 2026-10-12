@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 999 verses — 999 full, 0 partial, 0 omitted.
+**So far:** 1132 verses — 1132 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Bush That Burned (Exodus 1–4)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · The Golden Calf (Exodus 32–34)
 
 93 verses: 93 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · The Willing Offering (Exodus 35–38)
+
+133 verses: 133 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -8,6 +8,7 @@ import mk
 from fx import use, new, vref, page, chapter_title, end_mark, cols, cap, god
 from reuse import panels
 from exo import G, art8 as B8, art9 as Q
+from exo.kit import blueprints
 from genesis.ch02 import rows, W1
 
 v, sp = G.v, G.span
@@ -75,57 +76,14 @@ ITEMS = [
     ("31:15–17", say("31:15-17"), lambda w, h: Q.days7(w, h, "SIX DAYS · A SABBATH OF SOLEMN REST"), None),
 ]
 
-def nchars(words): return sum(len(t) for _, t in words)
-
-def panel(h, label_, words, art, extra=""):
-    """One blueprint panel: the drawing, and in the left half the words (caption then Voice box), sized to fit."""
-    bw = 380; n = nchars(words)
-    size = max(11.5, min(19, (bw * (h - 60) / (0.6 * n)) ** 0.5 * 0.82))
-    o, y = [], 34
-    for kind, text in words:
-        if kind == "cap":
-            o.append(cap(text, f"left: 12px; top: {y}px", size=10.5, maxw=bw)); y += 38
-        else:
-            o.append(god(text, f"left: 12px; top: {y}px", size=round(size * 2) / 2, maxw=bw))
-    return new(INK, W1, h, art(W1, h), "".join(o) + vref("EX " + label_, "right: 8px; top: 8px") + extra)
-
-def pack(items, budget=1500, most=3):
-    pages, cur, chars = [], [], 0
-    for it in items:
-        n = nchars(it[1])
-        if cur and (chars + n > budget or len(cur) == most or it[3]):
-            pages.append(cur); cur, chars = [], 0
-        cur.append(it); chars += n
-    if cur: pages.append(cur)
-    return pages
-
-def span_label(group):
-    a = group[0][0].split("–")[0]; ca = a.split(":")[0]
-    cb, vb = group[-1][0].split(":"); vb = vb.split("–")[-1]
-    return f"{a}–{vb}" if ca == cb else f"{a}–{cb}:{vb}"
-
-def make(k, group):
-    total = sum(nchars(it[1]) for it in group); gaps = 12 * (len(group) - 1)
-    hs = [max(190, round((1022 - gaps) * nchars(it[1]) / total)) for it in group]
-    hs[-1] = None
-    t, h = rows(*hs)
-    stamp = lambda lab: mk.stamp(int(lab.split(":")[0]), "right: 14px; bottom: 14px") if lab.split(":")[1].split("–")[0] == "1" else ""   # a chapter stamp where a Bible chapter begins
-    body = "".join(panel(hh, it[0], it[1], it[2], stamp(it[0])) for hh, it in zip(h, group))
-    head = group[0][3] or "Holy to Jehovah"
-    title = f"Exodus {span_label(group)} — {head}"
-    def fn(): return page(title, t, body, START + k)
-    slug = re.sub(r"[^A-Za-z]", "", head.title())[:18]
-    return (f"EXO-C09-P{k + 1:02d}-{slug}", f"{START + k} · {head}", fn)
-
-
 @P("EXO-C09-00-Title", "Chapter 9 · Holy to Jehovah")
 def title():
     svg = Q.bp(760, 1080) + Q.stage("qt", 760, 1080, [(Q.high_priest, 0.3)], x0=0.3, x1=0.7)[len(Q.bp(760, 1080)):]
     return chapter_title(9, "第九話", "Holy to Jehovah", "Exodus 28 – 31", svg, INK, v("28:36", frm="HOLY TO JEHOVAH"), "Exodus · Volume Two")
 
-GROUPS = pack(ITEMS)
-for _k, _g in enumerate(GROUPS):
-    PAGES.append(make(_k, _g))
+BLUE_PAGES = blueprints(ITEMS, "EXO-C09", START, "Holy to Jehovah")
+PAGES += BLUE_PAGES
+GROUPS = BLUE_PAGES
 
 @P(f"EXO-C09-P{len(GROUPS) + 1:02d}-Tables", f"{START + len(GROUPS)} · Tables of Stone")
 def tables():

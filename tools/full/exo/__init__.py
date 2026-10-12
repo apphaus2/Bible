@@ -30,5 +30,7 @@ META = {
      "blurb": "The holy garments of Aaron: the ephod and its onyx stones, the breastplate of twelve stones, the robe of blue with bells and pomegranates, the golden plate HOLY TO JEHOVAH; the seven days of consecration, the altar of incense, the half shekel, the laver, the anointing oil, Bezalel and Oholiab, the sabbath, and the tables of stone."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The Golden Calf", "range": "Exodus 32–34", "bible_chapters": [32, 33, 34],
      "blurb": "Up, make us gods, the molten calf and the feast, Moses pleading on the mount, the tables broken beneath the mount, Who is on Jehovah's side?, the tent of meeting without the camp, face to face as a man with his friend, the cleft of the rock, the new tables, Jehovah proclaimed, and the shining face behind the veil."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Willing Offering", "range": "Exodus 35–38", "bible_chapters": [35, 36, 37, 38],
+     "blurb": "The sabbath rest, the call for a willing offering, the men and women whose hearts stirred them up, the wise-hearted women spinning, Bezalel and Oholiab, much more than enough, and the making of all the work — curtains, boards, veil, ark, mercy-seat, table, candlestick, altars, laver and court — with the sum of the gold, the silver and the brass."},
   ],
 }

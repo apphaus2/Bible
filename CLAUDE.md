@@ -53,13 +53,14 @@ There are two editions:
 | Exodus | 8 · The Pattern of the Tabernacle | 25–27 | title + 13 (pp. 123–135) | 98/98 verses full (blueprint pages, `exo/art8.py`) | `volumes/exodus/` |
 | Exodus | 9 · Holy to Jehovah | 28–31 | title + 20 (pp. 136–155) | 145/145 verses full (blueprints laid out by `ch09.pack()`) | `volumes/exodus/` |
 | Exodus | 10 · The Golden Calf | 32–34 | title + 19 (pp. 156–174) | 93/93 verses full (32:27–28 caption-only over an empty gate) | `volumes/exodus/` |
+| Exodus | 11 · The Willing Offering | 35–38 | title + 20 (pp. 175–194) | 133/133 verses full (the making set in full as blueprints) | `volumes/exodus/` |
 
 **Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
 chapters (32,177 words): 1 The Bush That Burned (1–4) · 2 Let My People Go (5–8) · 3 The Passover (9–12) · 4 The Red Sea (13–15) ·
 5 Bread from Heaven (16–18) · 6 Sinai (19–21) · 7 The Book of the Covenant (22–24) · 8 The Pattern of the Tabernacle (25–27) ·
-9 Holy to Jehovah (28–31) · 10 The Golden Calf (32–34) · 11 The Glory (35–40; the making of the tabernacle repeats 25–31 almost word
-for word, so it is the one place to abridge). Page numbers restart at 1 in each volume. 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
+9 Holy to Jehovah (28–31) · 10 The Golden Calf (32–34) · 11 The Willing Offering (35–38) · 12 The Glory (39–40). The making
+repeats 25–31 almost word for word, but `kit.blueprints()` makes it cheap enough to keep every verse in full. Page numbers restart at 1 in each volume. 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
 dialogue panels (a face plus a column of caption/balloon pieces, ovals deepened for long speeches).
 Jacob's blessing (49:3–27) is two pages of cells, one per son; the volume ends with 完 "END OF GENESIS · NEXT · EXODUS". Joseph's story (37–50, ~11,500 words) is seven
 chapters: 11 The Dreamer (37–38) · 12 The Captain of the Guard (39–40) · 13 Pharaoh's Dreams (41; 41:17–24 is a

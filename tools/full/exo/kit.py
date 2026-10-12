@@ -4,7 +4,10 @@ talk() is Genesis chapter 14's dialogue panel (a close-up face, and beside it a 
 change: a short line ("Go.", "A rod.") gets a balloon sized to its words instead of the full column width."""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
-from fx import new, vref, cap, balloon
+import re
+import mk
+from fx import new, vref, cap, balloon, god, page
+from genesis.ch02 import rows
 from genesis.ch02 import W1
 from genesis.ch04 import fc
 
@@ -50,3 +53,73 @@ def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
             y += 50 + 17 * (n // max(1, (bw - 40) // 7)) + (n // 6 if long_ else 0)
     if ref: o.append(vref(ref, "left: 12px; bottom: 12px" if not flip else "right: 12px; bottom: 12px"))
     return new(bg, w, h, fc(tok, h, w=w, flip=flip), "".join(o) + extra)
+
+
+# ---- blueprint pages (chapters 9, 11, 12) ------------------------------------------------------------------
+# items: (verse label "28:1–2", words, drawing f(w, h), heading or None); words is a list of ("god" | "cap" | "nar", text):
+# "god" = God's words in a Voice box, "cap" = a short lead-in caption, "nar" = narration set large in a caption box.
+BP_INK = "#0B1A2E"
+
+def nchars(words): return sum(len(t) for _, t in words)
+
+def bp_panel(h, label_, words, art, extra=""):
+    """One blueprint panel: the drawing, and in the left half the words, sized to fit the panel."""
+    bw = 380; n = nchars(words)
+    size = max(11.5, min(19, (bw * (h - 60) / (0.6 * n)) ** 0.5 * 0.82))
+    o, y = [], 34
+    for kind, text in words:
+        if kind == "cap":
+            o.append(cap(text, f"left: 12px; top: {y}px", size=10.5, maxw=bw)); y += 38
+        elif kind == "nar":
+            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(len(text) * size * 0.82 * 0.68 / bw) * size * 1.25
+        elif kind == "say":                    # a man's long speech: a white speech box with rounded corners
+            o.append(balloon(text, f"left: 12px; top: {y}px", bw, size=round(size * 0.86 * 2) / 2, pad="12px 16px").replace("border-radius: 50%", "border-radius: 22px"))
+        else:
+            o.append(god(text, f"left: 12px; top: {y}px", size=round(size * 2) / 2, maxw=bw))
+    ah = min(h, 520)                          # keep each drawing wide: a taller panel gets the grid above it and the drawing at the foot
+    if ah == h: svg = art(W1, h)
+    else:                                      # the drawing's title label stays at the top of the panel
+        a = art(W1, ah); m = re.search(r'<text x="14\.0" y="18\.0"[^>]*>[^<]*</text>', a)
+        top = m.group(0) if m else ""
+        svg = _grid(W1, h) + top + f'<g transform="translate(0 {h - ah})">{a.replace(top, "", 1) if top else a}</g>'
+    return new(BP_INK, W1, h, svg, "".join(o) + vref("EX " + label_, "right: 8px; top: 8px") + extra)
+
+def _grid(w, h):
+    from exo.art8 import bp
+    return bp(w, h)
+
+def bp_pack(items, budget=1500, most=3):
+    pages, cur, chars = [], [], 0
+    for it in items:
+        n = nchars(it[1])
+        if cur and (chars + n > budget or len(cur) == most or it[3]) and not (n < 150 and not it[3]):   # a short tail verse stays with its page
+            pages.append(cur); cur, chars = [], 0
+        cur.append(it); chars += n
+    if cur: pages.append(cur)
+    return pages
+
+def span_label(group):
+    a = group[0][0].split("–")[0]; ca = a.split(":")[0]
+    cb, vb = group[-1][0].split(":"); vb = vb.split("–")[-1]
+    return f"{a}–{vb}" if ca == cb else f"{a}–{cb}:{vb}"
+
+def blueprints(items, prefix, start, default_head, budget=1500, end=""):
+    """Pack items into blueprint pages; returns [(file name, board title, page fn)], numbered from start. Each panel's height
+    is in proportion to its words; a chapter stamp goes on the panel where a Bible chapter begins; end = overlay HTML for the
+    very last panel (a つづく box)."""
+    out = []; groups = bp_pack(items, budget)
+    for k, group in enumerate(groups):
+        total = sum(nchars(it[1]) for it in group); gaps = 12 * (len(group) - 1)
+        room = 1022 - gaps; low = min(190, room // len(group))
+        hs = [max(low, round(room * nchars(it[1]) / total)) for it in group]
+        while sum(hs[:-1]) > room - low: hs[hs.index(max(hs[:-1]))] -= 10      # leave the last panel at least `low`
+        hs[-1] = None
+        t, h = rows(*hs)
+        stamp = lambda lab: mk.stamp(int(lab.split(":")[0]), "right: 14px; bottom: 14px") if lab.split(":")[1].split("–")[0] == "1" else ""
+        last = k == len(groups) - 1
+        body = "".join(bp_panel(hh, it[0], it[1], it[2], stamp(it[0]) + (end if last and i == len(group) - 1 else "")) for i, (hh, it) in enumerate(zip(h, group)))
+        head = group[0][3] or default_head
+        title = f"Exodus {span_label(group)} — {head}"
+        slug = re.sub(r"[^A-Za-z]", "", head.title())[:18]
+        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {head}", (lambda title=title, t=t, body=body, n=start + k: page(title, t, body, n))))
+    return out
