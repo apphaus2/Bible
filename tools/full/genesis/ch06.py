@@ -34,7 +34,7 @@ def title():
     svg = (f'<rect x="0" y="0" width="760" height="1080" fill="#2A1430"></rect>' + defs("tt6", *ALL)
            + '<g transform="translate(0 150)">' + R6.evening_well("tt6", 760, 1080, 61) + '</g>')
     return chapter_title(6, "第六話", "A Wife for Isaac", "Genesis 24:1 – 25:18", svg, EVE,
-                         v("24:67", frm="and he loved her.", to="her."), "Genesis · Volume One · The Full Edition")
+                         v("24:67", frm="and he loved her.", to="her."), "Genesis · Volume One")
 
 
 @P("GEN-C06-P01-Oath", "106 · Put Thy Hand under My Thigh")

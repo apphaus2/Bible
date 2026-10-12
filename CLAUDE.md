@@ -33,8 +33,9 @@ There are two editions:
 | Genesis | 6 · A Wife for Isaac | 24:1–25:18 | title + 13 (pp. 106–118) | 75 full, 2 partial, 8 omitted (the retelling 24:38–47) | `volumes/genesis/` |
 | Genesis | 7 · Jacob and Esau | 25:19–27:46 | title + 18 (pp. 119–136) | 97/97 verses full | `volumes/genesis/` |
 | Genesis | 8 · The Ladder | 28–30 | title + 15 (pp. 137–151) | 100/100 verses full | `volumes/genesis/` |
+| Genesis | 9 · Peniel | 31–33 | title + 18 (pp. 152–169) | 107/107 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 9 (Peniel, Genesis 31–33), then 10 (Bethel Again, 34–36; ch. 36 is a list → scroll pages).
+Next: Genesis chapter 10 (Bethel Again, Genesis 34–36; ch. 36 is a list → scroll pages).
 Genesis 28–36 is ~7,500 words, so Jacob's story is three chapters and the Genesis plan runs to twelve:
 … 7 Jacob and Esau (25:19–27) · 8 The Ladder (28–30) · 9 Peniel (31–33) · 10 Bethel Again (34–36) ·
 11 Joseph sold, Joseph raised up (37–41) · 12 Joseph and his brothers (42–50). Genesis 16–27 was too long for two chapters, so the
@@ -113,7 +114,8 @@ tools/
                       the wilderness of Beer-sheba, Moriah, Nahor's house, Machpelah), art6.py (chapter 6: Abraham's servant,
                       the well, Rebekah, Laban, camels couched and drinking), art7.py (chapter 7: Esau and Jacob, the pottage,
                       Gerar and the wells, the blind father, the kids of the goats), art8.py (chapter 8: Laban's house, Leah and
-                      Rachel, the handmaids, the sons counter, the speckled flock and the rods), ch01.py … ch08.py
+                      Rachel, the handmaids, the sons counter, the speckled flock and the rods), art9.py (chapter 9: the flight,
+                      the teraphim, Gilead and Mizpah, the droves, the Jabbok, the meeting, Succoth), ch01.py … ch09.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -416,6 +418,12 @@ Never fall back to blobs or stick figures.
   - Jacob's children are counted on a strip of twelve nodes (`art8.sons_ring()`), the newest lit red, above scroll cells
     for each birth (`ch08.son()`), coloured by mother. 30:3–4, 9 and 14–16 are in full; drawn as faces, the tent door,
     the mandrake plant.
+- **Character guide (Genesis 31–33, `art9.py`):**
+  - Esau grown: red curls and a full red beard, rust robe (weeping at the meeting). The teraphim: three small clay
+    household figures. The angels at Mahanaim are figures of light like the angel at the fountain; the man who wrestles
+    at the Jabbok is the digest's paired silhouette, and his words are in the Voice box.
+  - Rachel's words in 31:35 are in full; drawn as her face and the camel's saddle.
+- Chapter title pages: the credit line is "Genesis · Volume One · ASV" (no edition name).
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'

@@ -37,7 +37,7 @@ def title():
            + mk.face(J7.ESAU, -40, 500, 1.4) + mk.face(J7.JACOB, 800, 500, 1.4, flip=True)
            + '<path d="M380 0 L 380 1080" stroke="#0D0D0F" stroke-width="6"></path>')
     return chapter_title(7, "第七話", "Jacob and Esau", "Genesis 25:19 – 27:46", svg, NIGHT,
-                         v("27:22", frm="The voice", to="of Esau."), "Genesis · Volume One · The Full Edition")
+                         v("27:22", frm="The voice", to="of Esau."), "Genesis · Volume One")
 
 
 @P("GEN-C07-P01-TwoNations", "119 · Two Nations Are in Thy Womb")

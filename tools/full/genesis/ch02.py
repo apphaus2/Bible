@@ -56,7 +56,7 @@ def title():
     svg = (f'<rect x="0" y="0" width="760" height="1080" fill="#0B0F2A"></rect>' + Y.rain(760, 1080, 3) + E2.bolt(560, 120, 520, 7, w=1.6)
            + Y.sea(760, 1080, 760, 5, color="#12305A", deep="#05101F", foam="#8FB8D8", amp=22) + Y.ark_afloat(150, 742, 330, "tt"))
     return chapter_title(2, "第二話", "Cain to the Flood", "Genesis 4 – 9", svg, STORM,
-                         v("6:8"), "Genesis · Volume One · The Full Edition")
+                         v("6:8"), "Genesis · Volume One")
 
 
 @P("GEN-C02-P01-Offerings", "17 · The Offerings")

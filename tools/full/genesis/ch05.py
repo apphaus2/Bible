@@ -36,7 +36,7 @@ def title():
            + '<path d="M-10 1090 L -10 860 L 300 700 L 420 680 L 770 880 L 770 1090 Z" fill="#2A140C" stroke="#0D0D0F" stroke-width="3"></path>'
            + '<path d="M0 1090 L 0 1000 C 200 980 560 980 760 1000 L 760 1090 Z" fill="#C8A06A"></path>')
     return chapter_title(5, "第五話", "The Son of Promise", "Genesis 20 – 23", svg, NIGHT,
-                         v("22:8", to="my son:"), "Genesis · Volume One · The Full Edition")
+                         v("22:8", to="my son:"), "Genesis · Volume One")
 
 
 @P("GEN-C05-P01-Gerar", "87 · She Is My Sister")

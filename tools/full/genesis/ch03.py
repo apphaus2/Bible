@@ -52,7 +52,7 @@ def title():
            + Y.hills(760, 1080, 900, 5, color="#1A0A1E", amp=10)
            + Z.TW.tower(560, 900, 300, 60, 8, 0.88, "tt", unfinished=3, light="#5A2A3A", dark="#2A0A1A", brick="#3A1424"))
     return chapter_title(3, "第三話", "Babel to Abram's Covenant", "Genesis 10 – 15", svg, NIGHT,
-                         v("15:5", frm="Look now", to="number them:"), "Genesis · Volume One · The Full Edition")
+                         v("15:5", frm="Look now", to="number them:"), "Genesis · Volume One")
 
 
 @P("GEN-C03-P01-Nations", "41 · The Generations of the Sons of Noah")

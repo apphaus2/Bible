@@ -43,7 +43,7 @@ def sons_bar(n, hi, h=70):
 @P("GEN-C08-00-Title", "Chapter 8 · The Ladder")
 def title():
     return chapter_title(8, "第八話", "The Ladder", "Genesis 28 – 30", f'<g transform="translate(-160 0) scale(1.7)">{Lad[0].svg}</g>', NIGHT,
-                         v("28:17", frm="this is none other", to="gate of heaven."), "Genesis · Volume One · The Full Edition")
+                         v("28:17", frm="this is none other", to="gate of heaven."), "Genesis · Volume One")
 
 
 @P("GEN-C08-P01-Charge", "137 · Arise, Go to Paddan-aram")

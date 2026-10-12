@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 874 verses — 864 full, 2 partial, 8 omitted.
+**So far:** 981 verses — 971 full, 2 partial, 8 omitted.
 
 ## Chapter 1 · In the Beginning (Genesis 1–3)
 
@@ -58,5 +58,11 @@ Every verse is on the page in full.
 ## Chapter 8 · The Ladder (Genesis 28–30)
 
 100 verses: 100 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · Peniel (Genesis 31–33)
+
+107 verses: 107 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

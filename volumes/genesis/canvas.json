@@ -1129,6 +1129,139 @@
    "w": 760,
    "h": 1080,
    "title": "151 · The Man Increased Exceedingly"
+  },
+  "GEN-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Peniel"
+  },
+  "GEN-C09-P01-Countenance.dc.html": {
+   "x": 840,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · Return unto the Land of Thy Fathers"
+  },
+  "GEN-C09-P02-Dream.dc.html": {
+   "x": 1680,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · I Am the God of Beth-el"
+  },
+  "GEN-C09-P03-Camels.dc.html": {
+   "x": 2520,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Whatsoever God Hath Said unto Thee, Do"
+  },
+  "GEN-C09-P04-Teraphim.dc.html": {
+   "x": 3360,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Rachel Stole the Teraphim"
+  },
+  "GEN-C09-P05-Gilead.dc.html": {
+   "x": 0,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · Wherefore Hast Thou Stolen My Gods?"
+  },
+  "GEN-C09-P06-Search.dc.html": {
+   "x": 840,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · He Searched, but Found Not"
+  },
+  "GEN-C09-P07-Chode.dc.html": {
+   "x": 1680,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · Jacob Was Wroth, and Chode with Laban"
+  },
+  "GEN-C09-P08-Twenty.dc.html": {
+   "x": 2520,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · These Twenty Years"
+  },
+  "GEN-C09-P09-Mizpah.dc.html": {
+   "x": 3360,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Jehovah Watch between Me and Thee"
+  },
+  "GEN-C09-P10-Mahanaim.dc.html": {
+   "x": 0,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · This Is God's Host"
+  },
+  "GEN-C09-P11-FourHundred.dc.html": {
+   "x": 840,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Four Hundred Men with Him"
+  },
+  "GEN-C09-P12-Prayer.dc.html": {
+   "x": 1680,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Deliver Me, I Pray Thee"
+  },
+  "GEN-C09-P13-Present.dc.html": {
+   "x": 2520,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · A Present for Esau"
+  },
+  "GEN-C09-P14-Wrestled.dc.html": {
+   "x": 3360,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · There Wrestled a Man with Him"
+  },
+  "GEN-C09-P15-Israel.dc.html": {
+   "x": 0,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · I Have Seen God Face to Face"
+  },
+  "GEN-C09-P16-Esau.dc.html": {
+   "x": 840,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Esau Ran to Meet Him"
+  },
+  "GEN-C09-P17-Gift.dc.html": {
+   "x": 1680,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · As One Seeth the Face of God"
+  },
+  "GEN-C09-P18-Shechem.dc.html": {
+   "x": 2520,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · El-Elohe-Israel"
   }
  },
  "order": [
@@ -1291,7 +1424,26 @@
   "GEN-C08-P12-Joseph.dc.html",
   "GEN-C08-P13-Wages.dc.html",
   "GEN-C08-P14-Speckled.dc.html",
-  "GEN-C08-P15-Rods.dc.html"
+  "GEN-C08-P15-Rods.dc.html",
+  "GEN-C09-00-Title.dc.html",
+  "GEN-C09-P01-Countenance.dc.html",
+  "GEN-C09-P02-Dream.dc.html",
+  "GEN-C09-P03-Camels.dc.html",
+  "GEN-C09-P04-Teraphim.dc.html",
+  "GEN-C09-P05-Gilead.dc.html",
+  "GEN-C09-P06-Search.dc.html",
+  "GEN-C09-P07-Chode.dc.html",
+  "GEN-C09-P08-Twenty.dc.html",
+  "GEN-C09-P09-Mizpah.dc.html",
+  "GEN-C09-P10-Mahanaim.dc.html",
+  "GEN-C09-P11-FourHundred.dc.html",
+  "GEN-C09-P12-Prayer.dc.html",
+  "GEN-C09-P13-Present.dc.html",
+  "GEN-C09-P14-Wrestled.dc.html",
+  "GEN-C09-P15-Israel.dc.html",
+  "GEN-C09-P16-Esau.dc.html",
+  "GEN-C09-P17-Gift.dc.html",
+  "GEN-C09-P18-Shechem.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1356,6 +1508,13 @@
    "text": "Chapter 8 · The Ladder (Genesis 28–30)",
    "x": 0,
    "y": 41200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Peniel (Genesis 31–33)",
+   "x": 0,
+   "y": 46500
   }
  },
  "designSystems": [],

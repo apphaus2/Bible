@@ -45,7 +45,7 @@ def title():
            + "".join(f'<path d="M{x} -20 L {x - 60} 700" stroke="#FFD23F" stroke-width="3" opacity="0.6"></path>' for x in range(60, 900, 70))
            + Y.ground(760, 1080, 950, "#0D0306", dy=0))
     return chapter_title(4, "第四話", "The Cities of the Plain", "Genesis 16 – 19", svg, BLOOD,
-                         v("18:14", to="Jehovah?"), "Genesis · Volume One · The Full Edition")
+                         v("18:14", to="Jehovah?"), "Genesis · Volume One")
 
 
 @P("GEN-C04-P01-Hagar", "65 · Sarai's Handmaid")

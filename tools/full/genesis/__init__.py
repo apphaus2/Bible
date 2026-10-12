@@ -25,5 +25,7 @@ META = {
      "blurb": "Two nations in the womb, the hand on Esau's heel, red pottage and the birthright, Isaac at Gerar and the wells Esek, Sitnah and Rehoboth, the blind father, the kids of the goats, the stolen blessing and Esau's bitter cry."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Ladder", "range": "Genesis 28–30", "bible_chapters": [28, 29, 30],
      "blurb": "Jacob sent to Paddan-aram, the stone for a pillow and the ladder to heaven, Beth-el, Rachel at the well, seven years that seemed but a few days, Leah, the eleven sons and Dinah, and the speckled and spotted flock."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Peniel", "range": "Genesis 31–33", "bible_chapters": [31, 32, 33],
+     "blurb": "The flight from Laban, the stolen teraphim, the pursuit to Gilead, the heap of witness and Mizpah, God's host at Mahanaim, the present for Esau, the night at the ford of the Jabbok, Israel, and the two brothers weeping on each other's neck."},
   ],
 }

@@ -24,7 +24,7 @@ def title():
     svg = (X.starfield(760, 1080, 7, 260) + V.rays(380, 640, 48, 20, 1200, color="#FFF4C2", op=0.16)
            + '<circle cx="380" cy="640" r="60" fill="#FFF4C2" opacity="0.25"></circle><circle cx="380" cy="640" r="14" fill="#FFF4C2"></circle>')
     return chapter_title(1, "第一話", "In the Beginning", "Genesis 1 – 3", svg, NIGHT,
-                         v("1:1"), "Genesis · Volume One · The Full Edition")
+                         v("1:1"), "Genesis · Volume One")
 
 
 @P("GEN-C01-P01-Light", "01 · Let There Be Light")
