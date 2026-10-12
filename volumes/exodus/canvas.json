@@ -1451,6 +1451,97 @@
    "w": 760,
    "h": 1080,
    "title": "194 · The Willing Offering"
+  },
+  "EXO-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 63900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Glory"
+  },
+  "EXO-C12-P01-TheHolyGarmentsFor.dc.html": {
+   "x": 840,
+   "y": 63900,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · The Holy Garments for Aaron"
+  },
+  "EXO-C12-P02-TheBreastplate.dc.html": {
+   "x": 1680,
+   "y": 63900,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · The Breastplate"
+  },
+  "EXO-C12-P03-TheGlory.dc.html": {
+   "x": 2520,
+   "y": 63900,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · The Glory"
+  },
+  "EXO-C12-P04-TheRobeOfTheEphod.dc.html": {
+   "x": 3360,
+   "y": 63900,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · The Robe of the Ephod"
+  },
+  "EXO-C12-P05-HolyToJehovah.dc.html": {
+   "x": 0,
+   "y": 65100,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · Holy to Jehovah"
+  },
+  "EXO-C12-P06-ThusWasFinishedAll.dc.html": {
+   "x": 840,
+   "y": 65100,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · Thus Was Finished All the Work"
+  },
+  "EXO-C12-P07-ThouShaltRearUpThe.dc.html": {
+   "x": 1680,
+   "y": 65100,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · Thou Shalt Rear Up the Tabernacle"
+  },
+  "EXO-C12-P08-TheGlory.dc.html": {
+   "x": 2520,
+   "y": 65100,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · The Glory"
+  },
+  "EXO-C12-P09-TheTabernacleWasRe.dc.html": {
+   "x": 3360,
+   "y": 65100,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · The Tabernacle Was Reared Up"
+  },
+  "EXO-C12-P10-TheGlory.dc.html": {
+   "x": 0,
+   "y": 66300,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · The Glory"
+  },
+  "EXO-C12-P11-Glory.dc.html": {
+   "x": 840,
+   "y": 66300,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · The Glory of Jehovah Filled the Tabernacle"
+  },
+  "EXO-C12-P12-Journeys.dc.html": {
+   "x": 1680,
+   "y": 66300,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Throughout All Their Journeys"
   }
  },
  "order": [
@@ -1659,7 +1750,20 @@
   "EXO-C11-P17-TheCourt.dc.html",
   "EXO-C11-P18-TheWillingOffering.dc.html",
   "EXO-C11-P19-TheSumOfTheThings.dc.html",
-  "EXO-C11-P20-TheWillingOffering.dc.html"
+  "EXO-C11-P20-TheWillingOffering.dc.html",
+  "EXO-C12-00-Title.dc.html",
+  "EXO-C12-P01-TheHolyGarmentsFor.dc.html",
+  "EXO-C12-P02-TheBreastplate.dc.html",
+  "EXO-C12-P03-TheGlory.dc.html",
+  "EXO-C12-P04-TheRobeOfTheEphod.dc.html",
+  "EXO-C12-P05-HolyToJehovah.dc.html",
+  "EXO-C12-P06-ThusWasFinishedAll.dc.html",
+  "EXO-C12-P07-ThouShaltRearUpThe.dc.html",
+  "EXO-C12-P08-TheGlory.dc.html",
+  "EXO-C12-P09-TheTabernacleWasRe.dc.html",
+  "EXO-C12-P10-TheGlory.dc.html",
+  "EXO-C12-P11-Glory.dc.html",
+  "EXO-C12-P12-Journeys.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1745,6 +1849,13 @@
    "text": "Chapter 11 · The Willing Offering (Exodus 35–38)",
    "x": 0,
    "y": 57100
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Glory (Exodus 39–40)",
+   "x": 0,
+   "y": 63600
   }
  },
  "designSystems": [],

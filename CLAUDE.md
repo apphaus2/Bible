@@ -54,8 +54,11 @@ There are two editions:
 | Exodus | 9 · Holy to Jehovah | 28–31 | title + 20 (pp. 136–155) | 145/145 verses full (blueprints laid out by `ch09.pack()`) | `volumes/exodus/` |
 | Exodus | 10 · The Golden Calf | 32–34 | title + 19 (pp. 156–174) | 93/93 verses full (32:27–28 caption-only over an empty gate) | `volumes/exodus/` |
 | Exodus | 11 · The Willing Offering | 35–38 | title + 20 (pp. 175–194) | 133/133 verses full (the making set in full as blueprints) | `volumes/exodus/` |
+| Exodus | 12 · The Glory | 39–40 | title + 12 (pp. 195–206) | 81/81 verses full | `volumes/exodus/` |
+| **Exodus** | **complete: cover + 12 chapters** | **1–40** | **219 pages (206 numbered)** | **1,213 verses: all full** | `volumes/exodus/` |
 
-**Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
+**Genesis and Exodus are complete.** Next: Leviticus (`tools/full/lev/`, a new package; much of it is ordinances, so
+`kit.law` cells and `kit.blueprints` pages will carry most of it). Exodus lives in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
 chapters (32,177 words): 1 The Bush That Burned (1–4) · 2 Let My People Go (5–8) · 3 The Passover (9–12) · 4 The Red Sea (13–15) ·
 5 Bread from Heaven (16–18) · 6 Sinai (19–21) · 7 The Book of the Covenant (22–24) · 8 The Pattern of the Tabernacle (25–27) ·

@@ -32,5 +32,7 @@ META = {
      "blurb": "Up, make us gods, the molten calf and the feast, Moses pleading on the mount, the tables broken beneath the mount, Who is on Jehovah's side?, the tent of meeting without the camp, face to face as a man with his friend, the cleft of the rock, the new tables, Jehovah proclaimed, and the shining face behind the veil."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Willing Offering", "range": "Exodus 35–38", "bible_chapters": [35, 36, 37, 38],
      "blurb": "The sabbath rest, the call for a willing offering, the men and women whose hearts stirred them up, the wise-hearted women spinning, Bezalel and Oholiab, much more than enough, and the making of all the work — curtains, boards, veil, ark, mercy-seat, table, candlestick, altars, laver and court — with the sum of the gold, the silver and the brass."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "The Glory", "range": "Exodus 39–40", "bible_chapters": [39, 40],
+     "blurb": "The holy garments made as Jehovah commanded Moses, the work brought to Moses and blessed, the tabernacle reared up on the first day of the first month, and the cloud covering the tent of meeting while the glory of Jehovah filled the tabernacle — a cloud by day and fire by night throughout all their journeys."},
   ],
 }
