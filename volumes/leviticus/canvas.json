@@ -352,6 +352,76 @@
    "w": 760,
    "h": 1080,
    "title": "45 · Be Ye Holy"
+  },
+  "LEV-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Plague of Leprosy"
+  },
+  "LEV-C04-L-P01-TheDaysOfHerPurify.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · The Days of Her Purifying"
+  },
+  "LEV-C04-L-P02-ThePlagueInTheSkin.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Plague in the Skin"
+  },
+  "LEV-C04-L-P03-AnOldLeprosy.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · An Old Leprosy"
+  },
+  "LEV-C04-L-P04-TheBoilAndTheBurni.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Boil and the Burning"
+  },
+  "LEV-C04-L-P05-TheScall.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Scall"
+  },
+  "LEV-C04-L-P06-ThePlagueOfLeprosy.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Plague of Leprosy"
+  },
+  "LEV-C04-L-P07-BaldYetClean.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Bald, Yet Clean"
+  },
+  "LEV-C04-L-P08-HeShallDwellAlone.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · He Shall Dwell Alone"
+  },
+  "LEV-C04-L-P09-ThePlagueOfLeprosy.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · The Plague of Leprosy"
   }
  },
  "order": [
@@ -403,7 +473,17 @@
   "LEV-C03-L-P02-InTheWaters.dc.html",
   "LEV-C03-L-P03-UncleanUntilTheEve.dc.html",
   "LEV-C03-L-P04-TheCleanAndTheUncl.dc.html",
-  "LEV-C03-L-P05-BeYeHoly.dc.html"
+  "LEV-C03-L-P05-BeYeHoly.dc.html",
+  "LEV-C04-00-Title.dc.html",
+  "LEV-C04-L-P01-TheDaysOfHerPurify.dc.html",
+  "LEV-C04-L-P02-ThePlagueInTheSkin.dc.html",
+  "LEV-C04-L-P03-AnOldLeprosy.dc.html",
+  "LEV-C04-L-P04-TheBoilAndTheBurni.dc.html",
+  "LEV-C04-L-P05-TheScall.dc.html",
+  "LEV-C04-L-P06-ThePlagueOfLeprosy.dc.html",
+  "LEV-C04-L-P07-BaldYetClean.dc.html",
+  "LEV-C04-L-P08-HeShallDwellAlone.dc.html",
+  "LEV-C04-L-P09-ThePlagueOfLeprosy.dc.html"
  ],
  "notes": {
   "Main": {
@@ -433,6 +513,13 @@
    "text": "Chapter 3 · Strange Fire (Leviticus 9–11)",
    "x": 0,
    "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Plague of Leprosy (Leviticus 12–13)",
+   "x": 0,
+   "y": 16400
   }
  },
  "designSystems": [],

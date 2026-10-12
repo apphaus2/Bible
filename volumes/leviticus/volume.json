@@ -36,6 +36,16 @@
    "prefixes": [
     "LEV-C03-"
    ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "The Plague of Leprosy",
+   "range": "Leviticus 12–13",
+   "blurb": "The days of purifying after a birth, and the priest looking on the plague: the rising, the scab and the bright spot, the hair turned white, the raw flesh, the boil, the burning, the scall, the leper crying Unclean, unclean, without the camp, and the plague in a garment.",
+   "prefixes": [
+    "LEV-C04-"
+   ]
   }
  ]
 }

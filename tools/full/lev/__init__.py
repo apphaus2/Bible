@@ -17,5 +17,7 @@ META = {
      "blurb": "The law of each offering — the fire on the altar that shall never go out, the portions of the priests, the sacrifice of thanksgiving, no fat and no blood, the wave-breast and the heave-thigh — and the seven days in which Moses washed, clothed and anointed Aaron and his sons."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Strange Fire", "range": "Leviticus 9–11", "bible_chapters": [9, 10, 11],
      "blurb": "The eighth day, Aaron's first offerings and the fire that came forth from before Jehovah; the strange fire of Nadab and Abihu, and Aaron holding his peace; no wine in the tent of meeting; and the beasts, the fish, the birds and the creeping things, clean and unclean."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Plague of Leprosy", "range": "Leviticus 12–13", "bible_chapters": [12, 13],
+     "blurb": "The days of purifying after a birth, and the priest looking on the plague: the rising, the scab and the bright spot, the hair turned white, the raw flesh, the boil, the burning, the scall, the leper crying Unclean, unclean, without the camp, and the plague in a garment."},
   ],
 }
