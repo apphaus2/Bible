@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 677 verses — 667 full, 2 partial, 8 omitted.
+**So far:** 774 verses — 764 full, 2 partial, 8 omitted.
 
 ## Chapter 1 · In the Beginning (Genesis 1–3)
 
@@ -48,3 +48,9 @@ Every verse is on the page in full.
 - 24:45 — partial (32%)
 - 24:46 — omitted (0%)
 - 24:47 — partial (34%)
+
+## Chapter 7 · Jacob and Esau (Genesis 25:19–27:46)
+
+97 verses: 97 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.

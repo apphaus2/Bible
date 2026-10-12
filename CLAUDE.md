@@ -31,8 +31,9 @@ There are two editions:
 | Genesis | 4 · The Cities of the Plain | 16–19 | title + 22 (pp. 65–86) | 114/114 verses full | `volumes/genesis/` |
 | Genesis | 5 · The Son of Promise | 20–23 | title + 19 (pp. 87–105) | 96/96 verses full | `volumes/genesis/` |
 | Genesis | 6 · A Wife for Isaac | 24:1–25:18 | title + 13 (pp. 106–118) | 75 full, 2 partial, 8 omitted (the retelling 24:38–47) | `volumes/genesis/` |
+| Genesis | 7 · Jacob and Esau | 25:19–27:46 | title + 18 (pp. 119–136) | 97/97 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 7 (Jacob and Esau, Genesis 25:19–27:46). Genesis 16–27 was too long for two chapters, so the
+Next: Genesis chapter 8 (Jacob, Genesis 28–36; ch. 36 is a list → scroll pages; 28–36 is ~7,000 words, so expect to split it). Genesis 16–27 was too long for two chapters, so the
 plan now runs to ten: 1 Creation and Eden (1–3) · 2 Cain to the Flood (4–9) · 3 Babel to Abram's covenant (10–15) ·
 4 The Cities of the Plain (16–19) · 5 The Son of Promise (20–23) · 6 A Wife for Isaac (24:1–25:18) ·
 7 Jacob and Esau (25:19–27) · 8 Jacob (28–36) · 9 Joseph sold, Joseph raised up (37–41) · 10 Joseph and his brothers (42–50).
@@ -105,7 +106,8 @@ tools/
                       nations, Babel, Abram, Sarai and Lot, Egypt, the kings, Melchizedek, map-style panels), art4.py (chapter 4:
                       Hagar, Sarah, the men in white, the covenant, Sodom and the cave), art5.py (chapter 5: Abimelech, Isaac,
                       the wilderness of Beer-sheba, Moriah, Nahor's house, Machpelah), art6.py (chapter 6: Abraham's servant,
-                      the well, Rebekah, Laban, camels couched and drinking), ch01.py … ch06.py
+                      the well, Rebekah, Laban, camels couched and drinking), art7.py (chapter 7: Esau and Jacob, the pottage,
+                      Gerar and the wells, the blind father, the kids of the goats), ch01.py … ch07.py
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
@@ -393,6 +395,13 @@ Never fall back to blobs or stick figures.
     Isaac grown: brown hair and beard, cream robe. Ishmael old: olive headcloth, white beard.
   - The retelling (24:34–49) is one page: 24:34–37 and 24:48–49 in full, the repeated middle as one balloon cut with "…",
     tagged "AS HE TOLD IT · GEN 24:37–47 ABRIDGED".
+- **Character guide (Genesis 25:19–27, `art7.py`):**
+  - Esau: red curly hair and red stubble, a rust-red tunic with fur marks, bow and quiver at a distance (faint, weeping
+    and hating variants). Jacob: dark curly hair, beardless, slate-blue robe; in Esau's garments and the goat skins he
+    wears Esau's rust tunic with dark gloves and collar. Both from the digest's Book Four faces.
+  - Isaac in old age: white hair and beard, blind (pale eye), lamp-lit inside the tent; trembling in violet light.
+  - Rebekah older: grey-brown hair under the green headscarf; urgent with a scowl and red light.
+  - God's words to Rebekah, and to Isaac at Gerar and Beer-sheba, use the Voice box; Isaac's blessings are balloons.
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'

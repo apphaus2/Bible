@@ -21,5 +21,7 @@ META = {
      "blurb": "Abimelech's dream at Gerar, the birth of Isaac and Sarah's laughter, Hagar and the lad at a bowshot in the wilderness, the oath at Beer-sheba, the mount in the land of Moriah and the ram in the thicket, and the cave of Machpelah."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "A Wife for Isaac", "range": "Genesis 24:1–25:18", "bible_chapters": [24, 25], "span": ["24:1", "25:18"],
      "blurb": "Abraham's servant and the oath, ten camels to the city of Nahor, Rebekah at the well with her pitcher, Laban, I will go, Isaac meditating in the field at eventide, Keturah, Abraham full of years, and Ishmael's twelve princes."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Jacob and Esau", "range": "Genesis 25:19–27:46", "bible_chapters": [25, 26, 27], "span": ["25:19", "27:46"],
+     "blurb": "Two nations in the womb, the hand on Esau's heel, red pottage and the birthright, Isaac at Gerar and the wells Esek, Sitnah and Rehoboth, the blind father, the kids of the goats, the stolen blessing and Esau's bitter cry."},
   ],
 }

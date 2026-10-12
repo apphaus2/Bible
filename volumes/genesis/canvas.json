@@ -884,6 +884,139 @@
    "w": 760,
    "h": 1080,
    "title": "118 · Twelve Princes"
+  },
+  "GEN-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Jacob and Esau"
+  },
+  "GEN-C07-P01-TwoNations.dc.html": {
+   "x": 840,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Two Nations Are in Thy Womb"
+  },
+  "GEN-C07-P02-Twins.dc.html": {
+   "x": 1680,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · His Hand Had Hold on Esau's Heel"
+  },
+  "GEN-C07-P03-Pottage.dc.html": {
+   "x": 2520,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · Sell Me First Thy Birthright"
+  },
+  "GEN-C07-P04-Famine.dc.html": {
+   "x": 3360,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Go Not Down into Egypt"
+  },
+  "GEN-C07-P05-Window.dc.html": {
+   "x": 0,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Abimelech Looked Out at a Window"
+  },
+  "GEN-C07-P06-Hundredfold.dc.html": {
+   "x": 840,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · A Hundredfold"
+  },
+  "GEN-C07-P07-Rehoboth.dc.html": {
+   "x": 1680,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Jehovah Hath Made Room for Us"
+  },
+  "GEN-C07-P08-Oath.dc.html": {
+   "x": 2520,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Thou Art Now the Blessed of Jehovah"
+  },
+  "GEN-C07-P09-Shibah.dc.html": {
+   "x": 3360,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · We Have Found Water"
+  },
+  "GEN-C07-P10-Venison.dc.html": {
+   "x": 0,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Take Me Venison"
+  },
+  "GEN-C07-P11-Kids.dc.html": {
+   "x": 840,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Obey My Voice"
+  },
+  "GEN-C07-P12-Skins.dc.html": {
+   "x": 1680,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · The Skins of the Kids of the Goats"
+  },
+  "GEN-C07-P13-Hands.dc.html": {
+   "x": 2520,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · The Hands Are the Hands of Esau"
+  },
+  "GEN-C07-P14-Blessing.dc.html": {
+   "x": 3360,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Dew of Heaven"
+  },
+  "GEN-C07-P15-Trembled.dc.html": {
+   "x": 0,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Who Art Thou?"
+  },
+  "GEN-C07-P16-BitterCry.dc.html": {
+   "x": 840,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · An Exceeding Great and Bitter Cry"
+  },
+  "GEN-C07-P17-Sword.dc.html": {
+   "x": 1680,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · By Thy Sword Shalt Thou Live"
+  },
+  "GEN-C07-P18-Flee.dc.html": {
+   "x": 2520,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Flee Thou to Laban My Brother"
   }
  },
  "order": [
@@ -1011,7 +1144,26 @@
   "GEN-C06-P10-Field.dc.html",
   "GEN-C06-P11-Keturah.dc.html",
   "GEN-C06-P12-FullOfYears.dc.html",
-  "GEN-C06-P13-Ishmael.dc.html"
+  "GEN-C06-P13-Ishmael.dc.html",
+  "GEN-C07-00-Title.dc.html",
+  "GEN-C07-P01-TwoNations.dc.html",
+  "GEN-C07-P02-Twins.dc.html",
+  "GEN-C07-P03-Pottage.dc.html",
+  "GEN-C07-P04-Famine.dc.html",
+  "GEN-C07-P05-Window.dc.html",
+  "GEN-C07-P06-Hundredfold.dc.html",
+  "GEN-C07-P07-Rehoboth.dc.html",
+  "GEN-C07-P08-Oath.dc.html",
+  "GEN-C07-P09-Shibah.dc.html",
+  "GEN-C07-P10-Venison.dc.html",
+  "GEN-C07-P11-Kids.dc.html",
+  "GEN-C07-P12-Skins.dc.html",
+  "GEN-C07-P13-Hands.dc.html",
+  "GEN-C07-P14-Blessing.dc.html",
+  "GEN-C07-P15-Trembled.dc.html",
+  "GEN-C07-P16-BitterCry.dc.html",
+  "GEN-C07-P17-Sword.dc.html",
+  "GEN-C07-P18-Flee.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1062,6 +1214,13 @@
    "text": "Chapter 6 · A Wife for Isaac (Genesis 24:1–25:18)",
    "x": 0,
    "y": 31800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Jacob and Esau (Genesis 25:19–27:46)",
+   "x": 0,
+   "y": 35900
   }
  },
  "designSystems": [],
