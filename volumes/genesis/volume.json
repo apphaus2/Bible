@@ -4,7 +4,7 @@
  "name": "Genesis",
  "kanji": "創世記",
  "thumb": "vol-genesis-",
- "lede": "The first book of the Bible, in full: every scene and every line of dialogue in the words of the American Standard Version (1901).",
+ "lede": "The first book of the Bible, in full: every scene and every line of dialogue in the words of the ASV.",
  "books": [
   {
    "dir": "chapter-01",

@@ -188,7 +188,7 @@ for ed, chain in FLAT.items():
 {bar(crumbs0 + [f'<a href="index.html">{L}</a>', f'<span aria-current="page">{esc(p["num"])}</span>'],
      f'<div class="pager">{pn}{nn}</div>')}
 <main class="stage" id="stage"><h1 class="sr">{esc(p['heading'])} — {esc(p['ref'])}</h1><div class="sheet" id="sheet">{p['body']}</div></main>
-<footer class="foot"><span>{esc(p['ref'])} · {esc(p['heading'])}</span><span>Adapted from the American Standard Version (1901)</span></footer>
+<footer class="foot"><span>{esc(p['ref'])} · {esc(p['heading'])}</span><span>ASV</span></footer>
 <script src="../../assets/site.js"></script>
 </body>
 </html>
@@ -220,7 +220,7 @@ for ed, chain in FLAT.items():
 {cards}
   </ol>
 </main>
-<footer class="foot"><span>Bible Manga · {SN}</span><span>Adapted from the American Standard Version (1901)</span></footer>
+<footer class="foot"><span>Bible Manga · {SN}</span><span>ASV</span></footer>
 </body>
 </html>
 ''')
@@ -249,7 +249,7 @@ vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bible Manga · The Full Edition</title>
-<meta name="description" content="The Bible as a full-color manga, in the style of 1980s cyberpunk comics, in the words of the American Standard Version (1901).">
+<meta name="description" content="The Bible as a full-color manga, in the style of 1980s cyberpunk comics, in the words of the ASV.">
 <meta property="og:image" content="thumbs/{thumb(first, first['pages'][0])}">
 {FONTS}
 <link rel="stylesheet" href="assets/site.css">
@@ -260,7 +260,7 @@ vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
   <section class="hero">
     <p class="kicker">Bible Manga · {" · ".join(v["kanji"] for v in VOLUMES)}</p>
     <h1>Bible Manga</h1>
-    <p class="lede">The Bible as a full-color manga — one volume per book of the Bible, every scene and every line of dialogue in the words of the American Standard Version (1901). Now in progress: {esc(vol_names)}.</p>
+    <p class="lede">The Bible as a full-color manga — one volume per book of the Bible, every scene and every line of dialogue in the words of the ASV. Now in progress: {esc(vol_names)}.</p>
     <a class="cta" href="{first['series']['path']}/{first['dir']}/{first['pages'][0]['slug']}.html">Start at the beginning ›</a>
   </section>
   <h2 class="sec">The Full Edition</h2>
@@ -273,7 +273,7 @@ vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
 {chr(10).join(toc_entry(b) for b in FLAT["full"] + FLAT["digest"])}
   </ol>
 </main>
-<footer class="foot"><span>Bible Manga</span><span>Adapted from the American Standard Version (1901)</span></footer>
+<footer class="foot"><span>Bible Manga</span><span>ASV</span></footer>
 </body>
 </html>
 ''')

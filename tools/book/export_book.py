@@ -136,7 +136,7 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
 <dc:language>en</dc:language>
 <dc:creator>Sky Morey</dc:creator>
 <dc:description>{html.escape(meta["lede"])}</dc:description>
-<dc:rights>Scripture text: American Standard Version (1901), public domain.</dc:rights>
+<dc:rights>Scripture text: ASV, public domain.</dc:rights>
 <meta property="dcterms:modified">{now}</meta>
 <meta property="rendition:layout">pre-paginated</meta>
 <meta property="rendition:orientation">portrait</meta>

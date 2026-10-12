@@ -1,7 +1,7 @@
 # Bible Manga
 
 The Bible as a full-color manga in a 1980s cyberpunk-manga style, in the words of the
-American Standard Version (1901). GitHub Actions builds the website and deploys it to
+ASV. GitHub Actions builds the website and deploys it to
 GitHub Pages on every push to `master`.
 
 - **Full edition** (`volumes/`): one volume per book of the Bible, every scene and every line of
