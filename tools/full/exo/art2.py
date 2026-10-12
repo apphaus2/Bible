@@ -106,17 +106,17 @@ def frog_heaps(w, h, seed):
     o += [f'<path d="M{f(x)} {f(b - 60)} c 8 -14 -8 -24 0 -40 c 8 -14 -6 -22 2 -34" fill="none" stroke="#8A9A5A" stroke-width="3" opacity="0.6"></path>' for x in (w * 0.2, w * 0.26, w * 0.5, w * 0.78, w * 0.84)]
     return "".join(o)
 
-def goshen_divide(w, h, seed):
+def goshen_divide(w, h, seed, plague="flies"):
     """I will put a division between my people and thy people: Goshen green and clear, Egypt dark with swarms of flies."""
-    b = h * 0.86; mid = w * 0.46
+    b = h * 0.86; mid = w * 0.46; east = {"flies": "#5A4A3A", "hail": "#2A2A4A", "dark": "#05050A", "murrain": "#C8A06A"}[plague]
     o = [f'<rect x="-10" y="-10" width="{f(mid + 10)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>',
-         f'<rect x="{f(mid)}" y="-10" width="{f(w - mid + 10)}" height="{f(h + 20)}" fill="#5A4A3A"></rect>',
+         f'<rect x="{f(mid)}" y="-10" width="{f(w - mid + 10)}" height="{f(h + 20)}" fill="{east}"></rect>',
          sun(w * 0.2, h * 0.2, 14, op=0.3), ground(w, h, b, "#9CCB5E", dy=0),
          f'<rect x="{f(mid)}" y="{f(b)}" width="{f(w - mid + 10)}" height="{f(h - b + 10)}" fill="#8A7A5A"></rect>',
          "".join(A.black_tent(w * x, b, w * 0.12, h * 0.14) for x in (0.1, 0.26)),
          Z.flock(w * 0.02, w * 0.42, b + 6, h * 0.98, 7, seed, cows=0.3, smin=0.14, smax=0.22),
          EG.pyramid(w * 0.8, b, w * 0.3, h * 0.36),
-         E2.swarm(160, w * 0.74, h * 0.5, w * 0.26, h * 0.42, seed, smin=0.5, smax=1.1),
+         {"flies": E2.swarm(160, w * 0.74, h * 0.5, w * 0.26, h * 0.42, seed, smin=0.5, smax=1.1), "hail": E2.hail(50, mid, w, 0, h, seed) + E2.bolt(w * 0.8, 0, h * 0.5, seed), "dark": "", "murrain": "".join(E2.kine_dead(w * x, b + 12, 0.24, flip=x > 0.7) for x in (0.58, 0.76, 0.9))}[plague],
          f'<path d="M{f(mid)} -10 L {f(mid)} {f(h + 10)}" stroke="#FFD23F" stroke-width="4" stroke-dasharray="12 8"></path>',
          label(w * 0.23, h * 0.94, "GOSHEN", "#0D0D0F", 11), label(w * 0.73, h * 0.94, "EGYPT", "#F3EFE6", 11)]
     return "".join(o)

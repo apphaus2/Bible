@@ -200,7 +200,7 @@ def peoples_map(w, h, seed):
     o.append(label(w * 0.94, h * 0.08, "N ↑", "#8FD0E2", 12, "end"))
     return "".join(o)
 
-def elders(p, w, h, seed, setting="egypt", bow=False, extra_cast=()):
+def elders(p, w, h, seed, setting="egypt", bow=False, extra_cast=(), top=0.5):
     """The elders of Israel gathered together: grey-bearded men in headcloths; bowing their heads when bow=True."""
     r = random.Random(seed); b = h * 0.88
     cast = list(extra_cast)
@@ -211,7 +211,7 @@ def elders(p, w, h, seed, setting="egypt", bow=False, extra_cast=()):
             x = w * (0.08 + i * 0.1)
             o.append(E.kneel(x, b + 4, 0.36 + (i % 2) * 0.04, color=r.choice(HEBREW), skin="#8A5A3E", flip=i < 5))
         return "".join(o)
-    cast += [(elder(r.choice(HEBREW), i), 0.06 + i * 0.088, 0.5 + (i % 2) * 0.04, i > 4) for i in range(9)]
+    cast += [(elder(r.choice(HEBREW), i), 0.06 + i * 0.088, top + (i % 2) * 0.04, i > 4) for i in range(9)]
     return T.stage(p, w, h, seed, setting, cast)
 
 def jewels(w, h, seed):
@@ -304,7 +304,7 @@ def meeting(p, w, h, seed):
             + aaron(p, w * 0.47, b, sc, up=[(-22, -158), (4, -150), (30, -160)]) + moses(p, w * 0.53, b, sc, flip=True, up=[(-22, -158), (4, -150), (30, -150)]))
 
 # ---- the map of the Exodus ------------------------------------------------------------------------------------
-PLACES = {"EGYPT": (0.14, 0.62), "GOSHEN": (0.26, 0.34), "RAAMSES": (0.24, 0.42), "SUCCOTH": (0.34, 0.4), "THE RED SEA": (0.42, 0.56),
+PLACES = {"EGYPT": (0.14, 0.62), "GOSHEN": (0.26, 0.27), "RAAMSES": (0.2, 0.46), "SUCCOTH": (0.36, 0.38), "THE RED SEA": (0.42, 0.56),
           "MARAH": (0.46, 0.66), "ELIM": (0.5, 0.74), "SINAI": (0.62, 0.86), "HOREB": (0.62, 0.86), "MIDIAN": (0.84, 0.82), "KADESH": (0.66, 0.3),
           "CANAAN": (0.7, 0.2), "THE WILDERNESS": (0.56, 0.48)}
 

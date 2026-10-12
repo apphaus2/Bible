@@ -26,6 +26,16 @@
    "prefixes": [
     "EXO-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Passover",
+   "range": "Exodus 9–12",
+   "blurb": "The murrain, the boils, the hail and fire, the locusts on the east wind, darkness which may be felt, the warning of midnight, the lamb without blemish, the blood on the lintel, the cry in Egypt, unleavened bread, and the hosts of Jehovah going out after four hundred and thirty years.",
+   "prefixes": [
+    "EXO-C03-"
+   ]
   }
  ]
 }

@@ -45,6 +45,7 @@ There are two editions:
 | **Genesis** | **complete: cover + 17 chapters** | **1–50** | **281 pages (263 numbered)** | **1,533 verses: 1,512 full, 4 partial, 17 omitted (three abridged retellings)** | `volumes/genesis/` |
 | Exodus | 1 · The Bush That Burned | 1–4 | cover + title + 20 (pp. 1–20) | 100/100 verses full | `volumes/exodus/` |
 | Exodus | 2 · Let My People Go | 5–8 | title + 20 (pp. 21–40) | 110/110 verses full (6:14–25 as two scroll pages) | `volumes/exodus/` |
+| Exodus | 3 · The Passover | 9–12 | title + 25 (pp. 41–65) | 125/125 verses full | `volumes/exodus/` |
 
 **Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus

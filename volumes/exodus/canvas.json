@@ -310,6 +310,188 @@
    "w": 760,
    "h": 1080,
    "title": "40 · There Remained Not One"
+  },
+  "EXO-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Passover"
+  },
+  "EXO-C03-P01-Murrain.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · A Very Grievous Murrain"
+  },
+  "EXO-C03-P02-Boils.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Ashes of the Furnace"
+  },
+  "EXO-C03-P03-Power.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · To Show Thee My Power"
+  },
+  "EXO-C03-P04-Hail.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Thunder and Hail"
+  },
+  "EXO-C03-P05-Sinned.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · I Have Sinned This Time"
+  },
+  "EXO-C03-P06-Flax.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · The Barley Was in the Ear"
+  },
+  "EXO-C03-P07-HowLong.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · How Long Wilt Thou Refuse?"
+  },
+  "EXO-C03-P08-Snare.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Knowest Thou Not Yet That Egypt Is Destroyed?"
+  },
+  "EXO-C03-P09-WhoShallGo.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Who Are They That Shall Go?"
+  },
+  "EXO-C03-P10-Locusts.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The East Wind Brought the Locusts"
+  },
+  "EXO-C03-P11-WestWind.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · An Exceeding Strong West Wind"
+  },
+  "EXO-C03-P12-Darkness.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Darkness Which May Be Felt"
+  },
+  "EXO-C03-P13-SeeMyFace.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · See My Face No More"
+  },
+  "EXO-C03-P14-Midnight.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · About Midnight"
+  },
+  "EXO-C03-P15-FirstMonth.dc.html": {
+   "x": 0,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Beginning of Months"
+  },
+  "EXO-C03-P16-Lamb.dc.html": {
+   "x": 840,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Your Lamb Shall Be without Blemish"
+  },
+  "EXO-C03-P17-PassOver.dc.html": {
+   "x": 1680,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · When I See the Blood"
+  },
+  "EXO-C03-P18-Unleavened.dc.html": {
+   "x": 2520,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · A Feast by an Ordinance for Ever"
+  },
+  "EXO-C03-P19-KillThePassover.dc.html": {
+   "x": 3360,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Draw Out, and Kill the Passover"
+  },
+  "EXO-C03-P20-Hyssop.dc.html": {
+   "x": 0,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · A Bunch of Hyssop"
+  },
+  "EXO-C03-P21-AtMidnight.dc.html": {
+   "x": 840,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · At Midnight"
+  },
+  "EXO-C03-P22-GreatCry.dc.html": {
+   "x": 1680,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · A Great Cry in Egypt"
+  },
+  "EXO-C03-P23-Succoth.dc.html": {
+   "x": 2520,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · From Rameses to Succoth"
+  },
+  "EXO-C03-P24-430.dc.html": {
+   "x": 3360,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Four Hundred and Thirty Years"
+  },
+  "EXO-C03-P25-ByTheirHosts.dc.html": {
+   "x": 0,
+   "y": 21000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · By Their Hosts"
   }
  },
  "order": [
@@ -355,7 +537,33 @@
   "EXO-C02-P17-Lice.dc.html",
   "EXO-C02-P18-Finger.dc.html",
   "EXO-C02-P19-Division.dc.html",
-  "EXO-C02-P20-NotOne.dc.html"
+  "EXO-C02-P20-NotOne.dc.html",
+  "EXO-C03-00-Title.dc.html",
+  "EXO-C03-P01-Murrain.dc.html",
+  "EXO-C03-P02-Boils.dc.html",
+  "EXO-C03-P03-Power.dc.html",
+  "EXO-C03-P04-Hail.dc.html",
+  "EXO-C03-P05-Sinned.dc.html",
+  "EXO-C03-P06-Flax.dc.html",
+  "EXO-C03-P07-HowLong.dc.html",
+  "EXO-C03-P08-Snare.dc.html",
+  "EXO-C03-P09-WhoShallGo.dc.html",
+  "EXO-C03-P10-Locusts.dc.html",
+  "EXO-C03-P11-WestWind.dc.html",
+  "EXO-C03-P12-Darkness.dc.html",
+  "EXO-C03-P13-SeeMyFace.dc.html",
+  "EXO-C03-P14-Midnight.dc.html",
+  "EXO-C03-P15-FirstMonth.dc.html",
+  "EXO-C03-P16-Lamb.dc.html",
+  "EXO-C03-P17-PassOver.dc.html",
+  "EXO-C03-P18-Unleavened.dc.html",
+  "EXO-C03-P19-KillThePassover.dc.html",
+  "EXO-C03-P20-Hyssop.dc.html",
+  "EXO-C03-P21-AtMidnight.dc.html",
+  "EXO-C03-P22-GreatCry.dc.html",
+  "EXO-C03-P23-Succoth.dc.html",
+  "EXO-C03-P24-430.dc.html",
+  "EXO-C03-P25-ByTheirHosts.dc.html"
  ],
  "notes": {
   "Main": {
@@ -378,6 +586,13 @@
    "text": "Chapter 2 · Let My People Go (Exodus 5–8)",
    "x": 0,
    "y": 8200
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Passover (Exodus 9–12)",
+   "x": 0,
+   "y": 14700
   }
  },
  "designSystems": [],

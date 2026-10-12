@@ -14,5 +14,7 @@ META = {
      "blurb": "A new king who knew not Joseph, the midwives who feared God, the ark of bulrushes, Moses drawn out of the water, the flight to Midian, the bush that was not consumed, I AM THAT I AM, the rod and the leprous hand, and Aaron sent to meet his brother."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Let My People Go", "range": "Exodus 5–8", "bible_chapters": [5, 6, 7, 8],
      "blurb": "Who is Jehovah?, bricks without straw, the officers beaten, I am Jehovah, the heads of the fathers' houses, Aaron's rod that swallowed up the rods of the magicians, the river turned to blood, the frogs, the lice and the finger of God, and the swarms of flies kept out of Goshen."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Passover", "range": "Exodus 9–12", "bible_chapters": [9, 10, 11, 12],
+     "blurb": "The murrain, the boils, the hail and fire, the locusts on the east wind, darkness which may be felt, the warning of midnight, the lamb without blemish, the blood on the lintel, the cry in Egypt, unleavened bread, and the hosts of Jehovah going out after four hundred and thirty years."},
   ],
 }
