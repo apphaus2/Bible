@@ -282,7 +282,7 @@ Usable panel widths: full 702, half 342; heights are the row height minus 6.
 
 **Covers:** "THE BOOK OF" / "No. NN", the series title in Anton 136–168 px (shrink longer names), "Book N — Name",
 "Chapters a – b", a vertical kanji block in the accent color (創世記 SŌSEIKI for Genesis,
-出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel), one short ASV caption, "Every word from the ASV" and "Vol. N" at the bottom (the digest covers predate this and
+出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
 still spell it out; leave them).
 
 **Recurring components** (all in `tools/kit/mk.py`):
@@ -295,7 +295,7 @@ still spell it out; leave them).
 - **Verse ref** `ref()`: tiny mono `EX 14:22` in a corner when no caption names the verse.
 - **Speed lines** `speed()`, starfields `stars()`.
 - **Running foot** (full edition, `fx.page()`): verses at the left, `— NN —` in the centre, `ASV` at the right,
-  9 px grey mono, so every page names its translation. Chapter title pages add "Every word from the ASV" under
+  9 px grey mono, so every page names its translation. Chapter title pages end the credit line with "· ASV"
   the credit.
 
 ## People and creatures
@@ -439,6 +439,10 @@ One-time setting: repo Settings › Pages › Source: **GitHub Actions**. Runs: 
 - Full edition: `<volume>/chapter-NN/index.html` and `<volume>/chapter-NN/NN-<slug>.html`
   (page labels use the printed page number). Digests: `digest-<series>/book-NN/…`.
   Prev/Next chains within each edition, across books.
+- Reader controls (`tools/site/assets/site.js`): arrow keys, and swipe to turn the page. A swipe is only a quick
+  one-finger flick (a quarter of the screen, at least 90 px, mostly sideways, under 0.6 s). A second finger (pinch)
+  cancels it and blocks swipes for 0.6 s; nothing turns while the page is zoomed (`visualViewport.scale` > 1) or if the
+  viewport panned during the gesture. Keep these rules if the reader changes; phones zoom to read the captions.
 - `manifest.json`: every series/volume, book/chapter and page (title, verse ref, URL, thumbnail, source).
 - `thumbs/`: 380×540 JPGs — `vol-<volume>-chapter-NN-<slug>.jpg` for the full edition; the digest
   keeps its old names (`book-NN-…` for Genesis, `<series>-book-NN-…` for the others).

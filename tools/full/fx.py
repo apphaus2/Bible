@@ -45,7 +45,7 @@ def chapter_title(num, kanji_ep, title, rng, art_svg, bg, quote_text, credit):
   <h1 data-label style="position: absolute; left: 34px; top: 100px; margin: 0; max-width: 680px; font-family: Anton, 'Archivo Narrow', sans-serif; font-weight: 400; font-size: 96px; line-height: 1.0; letter-spacing: -0.5px; color: #F3EFE6; text-transform: uppercase; text-shadow: 4px 4px 0 #0D0D0F">{title}</h1>
   <div data-label style="position: absolute; left: 38px; top: 330px; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #F3EFE6">{rng}</div>
   <div style="position: absolute; left: 38px; bottom: 84px; max-width: 420px; padding: 9px 13px; background: #F3EFE6; color: #0D0D0F; border: 2px solid #0D0D0F; font-size: 14px; font-weight: 600; line-height: 1.45; letter-spacing: 0.04em; text-transform: uppercase">{quote_text}</div>
-  <div data-label style="position: absolute; left: 38px; right: 38px; bottom: 30px; font-size: 10px; line-height: 1.6; letter-spacing: 0.16em; text-transform: uppercase; color: #F3EFE6; opacity: 0.85">{credit}<br>Every word from the ASV</div>'''
+  <div data-label style="position: absolute; left: 38px; right: 38px; bottom: 30px; font-size: 10px; line-height: 1.6; letter-spacing: 0.16em; text-transform: uppercase; color: #F3EFE6; opacity: 0.85">{credit} · ASV</div>'''
     root = f"position: relative; width: 760px; height: 1080px; overflow: hidden; background: {bg}; color: #F3EFE6; font-family: 'IBM Plex Mono', monospace"
     return mk.page(f"{rng} — Chapter {num}: {title}", None, body, root_style=root)
 

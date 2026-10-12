@@ -12,12 +12,13 @@ with the year as well.
 
 ## Decision
 
-The translation is always written **"ASV"**: never spelled out, and never with the year.
+The translation is always written **"ASV"**: never spelled out, never with the year, and on its own —
+not inside a phrase such as "Every word from the ASV".
 
 - **Story pages:** the running foot (`fx.page()`) shows the verses at the left, `— NN —` in the
   centre and `ASV` at the right.
-- **Chapter title pages** (`fx.chapter_title()`): "Every word from the ASV" under the credit.
-- **Volume covers:** "Chapters a – b · ASV" and "Every word from the ASV".
+- **Chapter title pages** (`fx.chapter_title()`): the credit line ends "· ASV".
+- **Volume covers:** "ASV" at the bottom left, opposite "Vol. N" (once only; the chapters line carries no credit).
 - **Website** (`tools/site/build_site.py`): page footers read "ASV"; descriptions say "the ASV".
 - **E-book** (`tools/book/export_book.py`): rights metadata reads "Scripture text: ASV, public domain."
 - **Docs:** README and CLAUDE.md say "ASV".
