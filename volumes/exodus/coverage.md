@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 335 verses — 335 full, 0 partial, 0 omitted.
+**So far:** 415 verses — 415 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Bush That Burned (Exodus 1–4)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · The Passover (Exodus 9–12)
 
 125 verses: 125 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · The Red Sea (Exodus 13–15)
+
+80 verses: 80 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

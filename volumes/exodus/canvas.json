@@ -492,6 +492,125 @@
    "w": 760,
    "h": 1080,
    "title": "65 · By Their Hosts"
+  },
+  "EXO-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Red Sea"
+  },
+  "EXO-C04-P01-Remember.dc.html": {
+   "x": 840,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Remember This Day"
+  },
+  "EXO-C04-P02-Sign.dc.html": {
+   "x": 1680,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · A Sign unto Thee upon Thy Hand"
+  },
+  "EXO-C04-P03-WhatIsThis.dc.html": {
+   "x": 2520,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · What Is This?"
+  },
+  "EXO-C04-P04-Pillar.dc.html": {
+   "x": 3360,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · A Pillar of Cloud, a Pillar of Fire"
+  },
+  "EXO-C04-P05-Entangled.dc.html": {
+   "x": 0,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · They Are Entangled in the Land"
+  },
+  "EXO-C04-P06-Pursued.dc.html": {
+   "x": 840,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Six Hundred Chosen Chariots"
+  },
+  "EXO-C04-P07-StandStill.dc.html": {
+   "x": 1680,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Fear Ye Not, Stand Still"
+  },
+  "EXO-C04-P08-GoForward.dc.html": {
+   "x": 2520,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Cloud and the Darkness"
+  },
+  "EXO-C04-P09-DryGround.dc.html": {
+   "x": 3360,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Waters Were a Wall unto Them"
+  },
+  "EXO-C04-P10-Wheels.dc.html": {
+   "x": 0,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · He Took Off Their Chariot Wheels"
+  },
+  "EXO-C04-P11-Saved.dc.html": {
+   "x": 840,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Thus Jehovah Saved Israel That Day"
+  },
+  "EXO-C04-P12-Song1.dc.html": {
+   "x": 1680,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Horse and His Rider"
+  },
+  "EXO-C04-P13-Song2.dc.html": {
+   "x": 2520,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Who Is Like unto Thee, O Jehovah?"
+  },
+  "EXO-C04-P14-Song3.dc.html": {
+   "x": 3360,
+   "y": 25100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Jehovah Shall Reign for Ever and Ever"
+  },
+  "EXO-C04-P15-Miriam.dc.html": {
+   "x": 0,
+   "y": 26300,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Miriam the Prophetess"
+  },
+  "EXO-C04-P16-Elim.dc.html": {
+   "x": 840,
+   "y": 26300,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Jehovah That Healeth Thee"
   }
  },
  "order": [
@@ -563,7 +682,24 @@
   "EXO-C03-P22-GreatCry.dc.html",
   "EXO-C03-P23-Succoth.dc.html",
   "EXO-C03-P24-430.dc.html",
-  "EXO-C03-P25-ByTheirHosts.dc.html"
+  "EXO-C03-P25-ByTheirHosts.dc.html",
+  "EXO-C04-00-Title.dc.html",
+  "EXO-C04-P01-Remember.dc.html",
+  "EXO-C04-P02-Sign.dc.html",
+  "EXO-C04-P03-WhatIsThis.dc.html",
+  "EXO-C04-P04-Pillar.dc.html",
+  "EXO-C04-P05-Entangled.dc.html",
+  "EXO-C04-P06-Pursued.dc.html",
+  "EXO-C04-P07-StandStill.dc.html",
+  "EXO-C04-P08-GoForward.dc.html",
+  "EXO-C04-P09-DryGround.dc.html",
+  "EXO-C04-P10-Wheels.dc.html",
+  "EXO-C04-P11-Saved.dc.html",
+  "EXO-C04-P12-Song1.dc.html",
+  "EXO-C04-P13-Song2.dc.html",
+  "EXO-C04-P14-Song3.dc.html",
+  "EXO-C04-P15-Miriam.dc.html",
+  "EXO-C04-P16-Elim.dc.html"
  ],
  "notes": {
   "Main": {
@@ -593,6 +729,13 @@
    "text": "Chapter 3 · The Passover (Exodus 9–12)",
    "x": 0,
    "y": 14700
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Red Sea (Exodus 13–15)",
+   "x": 0,
+   "y": 22400
   }
  },
  "designSystems": [],

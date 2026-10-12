@@ -8,6 +8,14 @@ from fx import new, vref, cap, balloon
 from genesis.ch02 import W1
 from genesis.ch04 import fc
 
+def song(text, pos, size=15, maxw=None, color="#D7261E"):
+    """A line of a song (the Song of Moses, Miriam's answer): a cream box with a red double rule down the left, Archivo
+    Narrow like a balloon but square, so a sung line reads apart from both narration and speech."""
+    mw = f" max-width: {maxw}px;" if maxw else ""
+    return (f'    <div style="position: absolute; {pos};{mw} padding: 10px 14px 10px 18px; background: #FFF8E6; color: #0D0D0F; border: 2.5px solid #0D0D0F; '
+            f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
+            f'font-size: {size}px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>\n')
+
 def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     """lines is a list of ("cap", text) or ("say", text) in reading order."""
     full = w > 400

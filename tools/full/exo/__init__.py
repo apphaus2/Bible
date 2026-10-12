@@ -16,5 +16,7 @@ META = {
      "blurb": "Who is Jehovah?, bricks without straw, the officers beaten, I am Jehovah, the heads of the fathers' houses, Aaron's rod that swallowed up the rods of the magicians, the river turned to blood, the frogs, the lice and the finger of God, and the swarms of flies kept out of Goshen."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Passover", "range": "Exodus 9–12", "bible_chapters": [9, 10, 11, 12],
      "blurb": "The murrain, the boils, the hail and fire, the locusts on the east wind, darkness which may be felt, the warning of midnight, the lamb without blemish, the blood on the lintel, the cry in Egypt, unleavened bread, and the hosts of Jehovah going out after four hundred and thirty years."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Red Sea", "range": "Exodus 13–15", "bible_chapters": [13, 14, 15],
+     "blurb": "The first-born sanctified, the bones of Joseph, the pillar of cloud and the pillar of fire, six hundred chosen chariots, Fear ye not, stand still, the waters a wall on the right hand and on the left, the song of Moses, Miriam's timbrel, the bitter waters of Marah and the palms of Elim."},
   ],
 }
