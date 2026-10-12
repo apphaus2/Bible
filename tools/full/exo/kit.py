@@ -16,6 +16,20 @@ def song(text, pos, size=15, maxw=None, color="#D7261E"):
             f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
             f'font-size: {size}px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>\n')
 
+def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336):
+    """One cell of a page of ordinances (Exodus 21–23): a Voice box (God's words, indigo with the gold inner rule) with a
+    pictogram above (svg in a 320 x 100 viewBox, standing on the cell's ground line and filling whatever height the words
+    leave), a heading tag and the verse label (both data-label). size=None sizes the words to the cell (cell = its height in px)."""
+    if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
+        size = max(13, min(24, round((w * (cell - 150) / (0.62 * len(text))) ** 0.5 * 2) / 2))
+    pic = (f'<div style="position: relative; flex: 1 1 0; min-height: 70px; background: #2A2458; border-bottom: 2px solid {accent}">'
+           f'<svg viewBox="0 0 320 100" preserveAspectRatio="xMidYMax meet" style="position: absolute; inset: 0; width: 100%; height: 100%">{svg}</svg></div>' if svg else "")
+    return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px {accent}; display: flex; flex-direction: column">'
+            f'{pic}'
+            f'\n      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 8px 12px 0"><span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.2em; color: {accent}">{heading}</span>'
+            f'<span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.18em; white-space: nowrap; opacity: 0.8">{ref}</span></div>'
+            f'\n      <div style="padding: 6px 12px 12px; font-family: Anton, sans-serif; font-size: {size}px; line-height: 1.18; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n    </div>')
+
 def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     """lines is a list of ("cap", text) or ("say", text) in reading order."""
     full = w > 400

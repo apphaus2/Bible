@@ -20,5 +20,7 @@ META = {
      "blurb": "The first-born sanctified, the bones of Joseph, the pillar of cloud and the pillar of fire, six hundred chosen chariots, Fear ye not, stand still, the waters a wall on the right hand and on the left, the song of Moses, Miriam's timbrel, the bitter waters of Marah and the palms of Elim."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Bread from Heaven", "range": "Exodus 16–18", "bible_chapters": [16, 17, 18],
      "blurb": "The flesh-pots of Egypt, quails at even, the manna on the face of the wilderness, an omer a head, the sabbath, water out of the rock at Massah and Meribah, the hands of Moses held up against Amalek, Jehovah-nissi, and Jethro's counsel: rulers of thousands, hundreds, fifties and tens."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Sinai", "range": "Exodus 19–21", "bible_chapters": [19, 20, 21],
+     "blurb": "Eagles' wings, a kingdom of priests, the bounds about the mount, the third day of thunders and the trumpet exceeding loud, the ten words, the people standing afar off, the altar of earth, and the first ordinances: the Hebrew servant, the place of refuge, eye for eye, and the ox that goreth."},
   ],
 }

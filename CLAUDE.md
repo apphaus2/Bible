@@ -48,6 +48,7 @@ There are two editions:
 | Exodus | 3 · The Passover | 9–12 | title + 25 (pp. 41–65) | 125/125 verses full | `volumes/exodus/` |
 | Exodus | 4 · The Red Sea | 13–15 | title + 16 (pp. 66–81) | 80/80 verses full (the Song of Moses in `kit.song` boxes) | `volumes/exodus/` |
 | Exodus | 5 · Bread from Heaven | 16–18 | title + 18 (pp. 82–99) | 79/79 verses full | `volumes/exodus/` |
+| Exodus | 6 · Sinai | 19–21 | title + 13 (pp. 100–112) | 87/87 verses full (the ordinances of ch. 21 as `kit.law` cells) | `volumes/exodus/` |
 
 **Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
@@ -144,7 +145,8 @@ tools/
                       brethren, Dothan, the caravan, Judah and Tamar), art12.py (chapters 12–13: Potiphar's house, the prison,
                       the vine and the baskets, Pharaoh's court, the chariot, the storehouses), ch01.py … ch13.py
     exo/              the Exodus volume: __init__.py (META, id "exodus"), cover.py, kit.py (talk(): Genesis ch14's dialogue panel,
-                      with short lines in balloons sized to their words), art.py (the Exodus cast at a distance — moses(),
+                      with short lines in balloons sized to their words; song(): a sung line; law(): a Voice-box cell for the
+                      ordinances with a pictogram above, words auto-sized to the cell), art.py (the Exodus cast at a distance — moses(),
                       moses_prince(), aaron(), jethro(), zipporah(), pharaoh(), taskmaster(), princess(), elder(c, k), son(c, k),
                       hebrew(c), all usable in art10.stage()'s cast; faces; sons_row, bricks, households, milk_honey, peoples_map,
                       exodus_map() (Egypt → the wilderness → Canaan, as a technical map), burning() (the bush), black_tent(),

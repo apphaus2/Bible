@@ -744,6 +744,104 @@
    "w": 760,
    "h": 1080,
    "title": "99 · Rulers of Thousands"
+  },
+  "EXO-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Sinai"
+  },
+  "EXO-C06-P01-Wings.dc.html": {
+   "x": 840,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · On Eagles' Wings"
+  },
+  "EXO-C06-P02-WeWillDo.dc.html": {
+   "x": 1680,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · All That Jehovah Hath Spoken We Will Do"
+  },
+  "EXO-C06-P03-ThirdDay.dc.html": {
+   "x": 2520,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The Third Day"
+  },
+  "EXO-C06-P04-Furnace.dc.html": {
+   "x": 3360,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · As the Smoke of a Furnace"
+  },
+  "EXO-C06-P05-GoDown.dc.html": {
+   "x": 0,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Go, Get Thee Down"
+  },
+  "EXO-C06-P06-TenWords1.dc.html": {
+   "x": 840,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · And God Spake All These Words"
+  },
+  "EXO-C06-P07-TenWords2.dc.html": {
+   "x": 1680,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Remember the Sabbath Day"
+  },
+  "EXO-C06-P08-AfarOff.dc.html": {
+   "x": 2520,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · The People Stood Afar Off"
+  },
+  "EXO-C06-P09-Altar.dc.html": {
+   "x": 3360,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · An Altar of Earth"
+  },
+  "EXO-C06-P10-Servant.dc.html": {
+   "x": 0,
+   "y": 35700,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · These Are the Ordinances"
+  },
+  "EXO-C06-P11-Refuge.dc.html": {
+   "x": 840,
+   "y": 35700,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · A Place Whither He Shall Flee"
+  },
+  "EXO-C06-P12-EyeForEye.dc.html": {
+   "x": 1680,
+   "y": 35700,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Eye for Eye"
+  },
+  "EXO-C06-P13-Ox.dc.html": {
+   "x": 2520,
+   "y": 35700,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · If an Ox Gore"
   }
  },
  "order": [
@@ -851,7 +949,21 @@
   "EXO-C05-P15-Rejoiced.dc.html",
   "EXO-C05-P16-Judge.dc.html",
   "EXO-C05-P17-Counsel.dc.html",
-  "EXO-C05-P18-Rulers.dc.html"
+  "EXO-C05-P18-Rulers.dc.html",
+  "EXO-C06-00-Title.dc.html",
+  "EXO-C06-P01-Wings.dc.html",
+  "EXO-C06-P02-WeWillDo.dc.html",
+  "EXO-C06-P03-ThirdDay.dc.html",
+  "EXO-C06-P04-Furnace.dc.html",
+  "EXO-C06-P05-GoDown.dc.html",
+  "EXO-C06-P06-TenWords1.dc.html",
+  "EXO-C06-P07-TenWords2.dc.html",
+  "EXO-C06-P08-AfarOff.dc.html",
+  "EXO-C06-P09-Altar.dc.html",
+  "EXO-C06-P10-Servant.dc.html",
+  "EXO-C06-P11-Refuge.dc.html",
+  "EXO-C06-P12-EyeForEye.dc.html",
+  "EXO-C06-P13-Ox.dc.html"
  ],
  "notes": {
   "Main": {
@@ -895,6 +1007,13 @@
    "text": "Chapter 5 · Bread from Heaven (Exodus 16–18)",
    "x": 0,
    "y": 27700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Sinai (Exodus 19–21)",
+   "x": 0,
+   "y": 33000
   }
  },
  "designSystems": [],
