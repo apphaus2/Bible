@@ -35,5 +35,7 @@ META = {
      "blurb": "Joseph in the house of Potiphar, the garment left in her hand, the king's prison, the butler's vine of three branches, the baker's three baskets, and the butler who forgat him."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Pharaoh's Dreams", "range": "Genesis 41", "bible_chapters": [41],
      "blurb": "Seven kine and seven ears, Joseph brought hastily out of the dungeon, seven years of plenty and seven of famine, the signet ring and the second chariot, grain as the sand of the sea, and all countries coming to Joseph to buy grain."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "The Brothers in Egypt", "range": "Genesis 42–43", "bible_chapters": [42, 43],
+     "blurb": "Ten brethren going down to buy grain, Ye are spies, Simeon bound, the money in the sacks, Jacob refusing to let Benjamin go, Judah's surety, and the feast where Benjamin's mess was five times so much."},
   ],
 }

@@ -1612,6 +1612,104 @@
    "w": 760,
    "h": 1080,
    "title": "215 · Go unto Joseph"
+  },
+  "GEN-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · The Brothers in Egypt"
+  },
+  "GEN-C14-P01-GoDown.dc.html": {
+   "x": 840,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "216 · Get You Down Thither"
+  },
+  "GEN-C14-P02-Bowed.dc.html": {
+   "x": 1680,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "217 · Ye Are Spies"
+  },
+  "GEN-C14-P03-Twelve.dc.html": {
+   "x": 2520,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "218 · We Are Twelve Brethren"
+  },
+  "GEN-C14-P04-Guilty.dc.html": {
+   "x": 3360,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "219 · We Are Verily Guilty"
+  },
+  "GEN-C14-P05-Simeon.dc.html": {
+   "x": 0,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "220 · He Turned Himself About, and Wept"
+  },
+  "GEN-C14-P06-Bereaved.dc.html": {
+   "x": 840,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "221 · Me Have Ye Bereaved"
+  },
+  "GEN-C14-P07-Judah.dc.html": {
+   "x": 1680,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "222 · Ye Shall Not See My Face"
+  },
+  "GEN-C14-P08-Surety.dc.html": {
+   "x": 2520,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "223 · I Will Be Surety for Him"
+  },
+  "GEN-C14-P09-Present.dc.html": {
+   "x": 3360,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "224 · A Little Balm, and a Little Honey"
+  },
+  "GEN-C14-P10-Afraid.dc.html": {
+   "x": 0,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "225 · Because of the Money"
+  },
+  "GEN-C14-P11-Peace.dc.html": {
+   "x": 840,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "226 · Peace Be to You, Fear Not"
+  },
+  "GEN-C14-P12-Benjamin.dc.html": {
+   "x": 1680,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "227 · God Be Gracious unto Thee, My Son"
+  },
+  "GEN-C14-P13-Feast.dc.html": {
+   "x": 2520,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "228 · Five Times So Much"
   }
  },
  "order": [
@@ -1843,7 +1941,21 @@
   "GEN-C13-P07-Fifth.dc.html",
   "GEN-C13-P08-Chariot.dc.html",
   "GEN-C13-P09-Granaries.dc.html",
-  "GEN-C13-P10-Famine.dc.html"
+  "GEN-C13-P10-Famine.dc.html",
+  "GEN-C14-00-Title.dc.html",
+  "GEN-C14-P01-GoDown.dc.html",
+  "GEN-C14-P02-Bowed.dc.html",
+  "GEN-C14-P03-Twelve.dc.html",
+  "GEN-C14-P04-Guilty.dc.html",
+  "GEN-C14-P05-Simeon.dc.html",
+  "GEN-C14-P06-Bereaved.dc.html",
+  "GEN-C14-P07-Judah.dc.html",
+  "GEN-C14-P08-Surety.dc.html",
+  "GEN-C14-P09-Present.dc.html",
+  "GEN-C14-P10-Afraid.dc.html",
+  "GEN-C14-P11-Peace.dc.html",
+  "GEN-C14-P12-Benjamin.dc.html",
+  "GEN-C14-P13-Feast.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1943,6 +2055,13 @@
    "text": "Chapter 13 · Pharaoh's Dreams (Genesis 41)",
    "x": 0,
    "y": 62900
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · The Brothers in Egypt (Genesis 42–43)",
+   "x": 0,
+   "y": 67000
   }
  },
  "designSystems": [],
