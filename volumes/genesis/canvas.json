@@ -1794,6 +1794,90 @@
    "w": 760,
    "h": 1080,
    "title": "239 · Joseph My Son Is Yet Alive"
+  },
+  "GEN-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · Israel in Egypt"
+  },
+  "GEN-C16-P01-Visions.dc.html": {
+   "x": 840,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "240 · Fear Not to Go Down into Egypt"
+  },
+  "GEN-C16-P02-Souls1.dc.html": {
+   "x": 1680,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "241 · The Names of the Children of Israel"
+  },
+  "GEN-C16-P03-Souls2.dc.html": {
+   "x": 2520,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "242 · Threescore and Ten"
+  },
+  "GEN-C16-P04-Neck.dc.html": {
+   "x": 3360,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "243 · He Fell on His Neck"
+  },
+  "GEN-C16-P05-Shepherds.dc.html": {
+   "x": 0,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "244 · Every Shepherd Is an Abomination unto the Egyptians"
+  },
+  "GEN-C16-P06-Pharaoh.dc.html": {
+   "x": 840,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "245 · What Is Your Occupation?"
+  },
+  "GEN-C16-P07-Blessed.dc.html": {
+   "x": 1680,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "246 · Few and Evil Have Been the Days"
+  },
+  "GEN-C16-P08-Rameses.dc.html": {
+   "x": 2520,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "247 · The Land of Rameses"
+  },
+  "GEN-C16-P09-Land.dc.html": {
+   "x": 3360,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "248 · Buy Us and Our Land for Bread"
+  },
+  "GEN-C16-P10-Fifth.dc.html": {
+   "x": 0,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "249 · A Fifth unto Pharaoh"
+  },
+  "GEN-C16-P11-Thigh.dc.html": {
+   "x": 840,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "250 · Bury Me Not, I Pray Thee, in Egypt"
   }
  },
  "order": [
@@ -2051,7 +2135,19 @@
   "GEN-C15-P08-SentMe.dc.html",
   "GEN-C15-P09-Goshen.dc.html",
   "GEN-C15-P10-Wagons.dc.html",
-  "GEN-C15-P11-Revived.dc.html"
+  "GEN-C15-P11-Revived.dc.html",
+  "GEN-C16-00-Title.dc.html",
+  "GEN-C16-P01-Visions.dc.html",
+  "GEN-C16-P02-Souls1.dc.html",
+  "GEN-C16-P03-Souls2.dc.html",
+  "GEN-C16-P04-Neck.dc.html",
+  "GEN-C16-P05-Shepherds.dc.html",
+  "GEN-C16-P06-Pharaoh.dc.html",
+  "GEN-C16-P07-Blessed.dc.html",
+  "GEN-C16-P08-Rameses.dc.html",
+  "GEN-C16-P09-Land.dc.html",
+  "GEN-C16-P10-Fifth.dc.html",
+  "GEN-C16-P11-Thigh.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2165,6 +2261,13 @@
    "text": "Chapter 15 · I Am Joseph (Genesis 44–45)",
    "x": 0,
    "y": 71100
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · Israel in Egypt (Genesis 46–47)",
+   "x": 0,
+   "y": 75200
   }
  },
  "designSystems": [],

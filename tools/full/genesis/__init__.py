@@ -39,5 +39,7 @@ META = {
      "blurb": "Ten brethren going down to buy grain, Ye are spies, Simeon bound, the money in the sacks, Jacob refusing to let Benjamin go, Judah's surety, and the feast where Benjamin's mess was five times so much."},
     {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "I Am Joseph", "range": "Genesis 44–45", "bible_chapters": [44, 45],
      "blurb": "The silver cup in Benjamin's sack, Judah's plea to abide instead of the lad, I am Joseph your brother, God did send me before you, the wagons of Egypt, and Jacob's spirit revived: It is enough; Joseph my son is yet alive."},
+    {"module": "ch16", "dir": "chapter-16", "num": "16", "name": "Israel in Egypt", "range": "Genesis 46–47", "bible_chapters": [46, 47],
+     "blurb": "Fear not to go down into Egypt, the seventy souls of the house of Jacob, Joseph falling on his father's neck, the land of Goshen, Jacob before Pharaoh, the famine and the fifth part, and Israel's oath: bury me not in Egypt."},
   ],
 }

@@ -40,8 +40,9 @@ There are two editions:
 | Genesis | 13 · Pharaoh's Dreams | 41 | title + 10 (pp. 206–215) | 49 full, 2 partial, 6 omitted (the retelling 41:18–24) | `volumes/genesis/` |
 | Genesis | 14 · The Brothers in Egypt | 42–43 | title + 13 (pp. 216–228) | 69 full, 1 partial, 3 omitted (the retelling 42:31–34) | `volumes/genesis/` |
 | Genesis | 15 · I Am Joseph | 44–45 | title + 11 (pp. 229–239) | 62/62 verses full | `volumes/genesis/` |
+| Genesis | 16 · Israel in Egypt | 46–47 | title + 11 (pp. 240–250) | 65/65 verses full | `volumes/genesis/` |
 
-Next: Genesis chapter 16 (Israel in Egypt, Genesis 46–47; 46:8–27 is a list → scroll pages). 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
+Next: Genesis chapter 17 (The Blessing of Jacob, Genesis 48–50), the last chapter of Genesis. 43:3–7 turned out short enough to keep in full. `ch14.talk()` builds
 dialogue panels (a face plus a column of caption/balloon pieces, ovals deepened for long speeches). Joseph's story (37–50, ~11,500 words) is seven
 chapters: 11 The Dreamer (37–38) · 12 The Captain of the Guard (39–40) · 13 Pharaoh's Dreams (41; 41:17–24 is a
 retelling to abridge) · 14 The Brothers in Egypt (42–43) · 15 I Am Joseph (44–45) · 16 Israel in Egypt (46–47) ·

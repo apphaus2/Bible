@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1387 verses — 1366 full, 4 partial, 17 omitted.
+**So far:** 1452 verses — 1431 full, 4 partial, 17 omitted.
 
 ## Chapter 1 · In the Beginning (Genesis 1–3)
 
@@ -109,5 +109,11 @@ Every verse is on the page in full.
 ## Chapter 15 · I Am Joseph (Genesis 44–45)
 
 62 verses: 62 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 16 · Israel in Egypt (Genesis 46–47)
+
+65 verses: 65 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
