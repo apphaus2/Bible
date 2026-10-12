@@ -1017,6 +1017,153 @@
    "w": 760,
    "h": 1080,
    "title": "135 · A Lamp to Burn Continually"
+  },
+  "EXO-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Holy to Jehovah"
+  },
+  "EXO-C09-P01-HolyGarmentsForGlo.dc.html": {
+   "x": 840,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Holy Garments for Glory and for Beauty"
+  },
+  "EXO-C09-P02-StonesOfMemorial.dc.html": {
+   "x": 1680,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Stones of Memorial"
+  },
+  "EXO-C09-P03-TheBreastplateOfJu.dc.html": {
+   "x": 2520,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · The Breastplate of Judgment"
+  },
+  "EXO-C09-P04-UponHisHeart.dc.html": {
+   "x": 3360,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Upon His Heart"
+  },
+  "EXO-C09-P05-AGoldenBellAndAPom.dc.html": {
+   "x": 0,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · A Golden Bell and a Pomegranate"
+  },
+  "EXO-C09-P06-HolyToJehovah.dc.html": {
+   "x": 840,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Holy to Jehovah"
+  },
+  "EXO-C09-P07-ToHallowThem.dc.html": {
+   "x": 1680,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · To Hallow Them"
+  },
+  "EXO-C09-P08-TheBullockOfTheSin.dc.html": {
+   "x": 2520,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · The Bullock of the Sin-offering"
+  },
+  "EXO-C09-P09-TheRamOfConsecrati.dc.html": {
+   "x": 3360,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · The Ram of Consecration"
+  },
+  "EXO-C09-P10-AWaveOfferingBefor.dc.html": {
+   "x": 0,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · A Wave-offering before Jehovah"
+  },
+  "EXO-C09-P11-SevenDaysShaltThou.dc.html": {
+   "x": 840,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Seven Days Shalt Thou Consecrate Them"
+  },
+  "EXO-C09-P12-TwoLambsDayByDay.dc.html": {
+   "x": 1680,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Two Lambs Day by Day"
+  },
+  "EXO-C09-P13-AnAltarToBurnIncen.dc.html": {
+   "x": 2520,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · An Altar to Burn Incense"
+  },
+  "EXO-C09-P14-HalfAShekel.dc.html": {
+   "x": 3360,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · Half a Shekel"
+  },
+  "EXO-C09-P15-ALaverOfBrass.dc.html": {
+   "x": 0,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · A Laver of Brass"
+  },
+  "EXO-C09-P16-AHolyAnointingOil.dc.html": {
+   "x": 840,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · A Holy Anointing Oil"
+  },
+  "EXO-C09-P17-IncensePureAndHoly.dc.html": {
+   "x": 1680,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · Incense, Pure and Holy"
+  },
+  "EXO-C09-P18-IHaveCalledByNameB.dc.html": {
+   "x": 2520,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · I Have Called by Name Bezalel"
+  },
+  "EXO-C09-P19-ASignBetweenMeAndY.dc.html": {
+   "x": 3360,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · A Sign between Me and You"
+  },
+  "EXO-C09-P20-Tables.dc.html": {
+   "x": 0,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Tables of Stone"
   }
  },
  "order": [
@@ -1163,7 +1310,28 @@
   "EXO-C08-P10-Veil.dc.html",
   "EXO-C08-P11-Altar.dc.html",
   "EXO-C08-P12-Court.dc.html",
-  "EXO-C08-P13-Oil.dc.html"
+  "EXO-C08-P13-Oil.dc.html",
+  "EXO-C09-00-Title.dc.html",
+  "EXO-C09-P01-HolyGarmentsForGlo.dc.html",
+  "EXO-C09-P02-StonesOfMemorial.dc.html",
+  "EXO-C09-P03-TheBreastplateOfJu.dc.html",
+  "EXO-C09-P04-UponHisHeart.dc.html",
+  "EXO-C09-P05-AGoldenBellAndAPom.dc.html",
+  "EXO-C09-P06-HolyToJehovah.dc.html",
+  "EXO-C09-P07-ToHallowThem.dc.html",
+  "EXO-C09-P08-TheBullockOfTheSin.dc.html",
+  "EXO-C09-P09-TheRamOfConsecrati.dc.html",
+  "EXO-C09-P10-AWaveOfferingBefor.dc.html",
+  "EXO-C09-P11-SevenDaysShaltThou.dc.html",
+  "EXO-C09-P12-TwoLambsDayByDay.dc.html",
+  "EXO-C09-P13-AnAltarToBurnIncen.dc.html",
+  "EXO-C09-P14-HalfAShekel.dc.html",
+  "EXO-C09-P15-ALaverOfBrass.dc.html",
+  "EXO-C09-P16-AHolyAnointingOil.dc.html",
+  "EXO-C09-P17-IncensePureAndHoly.dc.html",
+  "EXO-C09-P18-IHaveCalledByNameB.dc.html",
+  "EXO-C09-P19-ASignBetweenMeAndY.dc.html",
+  "EXO-C09-P20-Tables.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1228,6 +1396,13 @@
    "text": "Chapter 8 · The Pattern of the Tabernacle (Exodus 25–27)",
    "x": 0,
    "y": 41200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Holy to Jehovah (Exodus 28–31)",
+   "x": 0,
+   "y": 45300
   }
  },
  "designSystems": [],

@@ -51,6 +51,7 @@ There are two editions:
 | Exodus | 6 · Sinai | 19–21 | title + 13 (pp. 100–112) | 87/87 verses full (the ordinances of ch. 21 as `kit.law` cells) | `volumes/exodus/` |
 | Exodus | 7 · The Book of the Covenant | 22–24 | title + 10 (pp. 113–122) | 82/82 verses full (22:1–23:19 as five pages of law cells) | `volumes/exodus/` |
 | Exodus | 8 · The Pattern of the Tabernacle | 25–27 | title + 13 (pp. 123–135) | 98/98 verses full (blueprint pages, `exo/art8.py`) | `volumes/exodus/` |
+| Exodus | 9 · Holy to Jehovah | 28–31 | title + 20 (pp. 136–155) | 145/145 verses full (blueprints laid out by `ch09.pack()`) | `volumes/exodus/` |
 
 **Genesis is complete.** Exodus is under way in `tools/full/exo/` — the package is `exo` because `tools/kit/exodus.py` already owns
 the name `exodus`; `python3 tools/full/build_volume.py exo` writes `volumes/exodus/` (the output folder is META's id). Planned Exodus
