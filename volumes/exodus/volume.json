@@ -66,6 +66,16 @@
    "prefixes": [
     "EXO-C06-"
    ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "The Book of the Covenant",
+   "range": "Exodus 22–24",
+   "blurb": "Restitution, the widow and the fatherless, the garment in pledge, justice for the poor and the stranger, the sabbatical year and the three feasts, the angel sent before them and the hornet, the twelve pillars, the blood of the covenant, the paved work of sapphire, and Moses forty days in the cloud.",
+   "prefixes": [
+    "EXO-C07-"
+   ]
   }
  ]
 }

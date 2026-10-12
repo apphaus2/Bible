@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 581 verses — 581 full, 0 partial, 0 omitted.
+**So far:** 663 verses — 663 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Bush That Burned (Exodus 1–4)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · Sinai (Exodus 19–21)
 
 87 verses: 87 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · The Book of the Covenant (Exodus 22–24)
+
+82 verses: 82 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

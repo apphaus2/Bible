@@ -22,5 +22,7 @@ META = {
      "blurb": "The flesh-pots of Egypt, quails at even, the manna on the face of the wilderness, an omer a head, the sabbath, water out of the rock at Massah and Meribah, the hands of Moses held up against Amalek, Jehovah-nissi, and Jethro's counsel: rulers of thousands, hundreds, fifties and tens."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Sinai", "range": "Exodus 19–21", "bible_chapters": [19, 20, 21],
      "blurb": "Eagles' wings, a kingdom of priests, the bounds about the mount, the third day of thunders and the trumpet exceeding loud, the ten words, the people standing afar off, the altar of earth, and the first ordinances: the Hebrew servant, the place of refuge, eye for eye, and the ox that goreth."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Book of the Covenant", "range": "Exodus 22–24", "bible_chapters": [22, 23, 24],
+     "blurb": "Restitution, the widow and the fatherless, the garment in pledge, justice for the poor and the stranger, the sabbatical year and the three feasts, the angel sent before them and the hornet, the twelve pillars, the blood of the covenant, the paved work of sapphire, and Moses forty days in the cloud."},
   ],
 }

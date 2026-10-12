@@ -58,7 +58,7 @@ def p01():
 @P("EXO-C06-P02-WeWillDo", "101 · All That Jehovah Hath Spoken We Will Do")
 def p02():
     t, h = rows(240, 230, None)
-    r1 = new(SAND, W1, h[0], defs("x62a", *ALL) + A.elders("x62a", W1, h[0], 1021, extra_cast=[(A.moses, 0.92, 0.42, True, "raise")]),
+    r1 = new(SAND, W1, h[0], defs("x62a", *ALL) + A.elders("x62a", W1, h[0], 1021, setting="sand", extra_cast=[(A.moses, 0.92, 0.42, True, "raise")]),
              cap(v("19:7") + " " + v("19:8", to="and said,"), "left: 12px; top: 12px", size=10.5, maxw=440) + balloon(v("19:8", frm="All that", to="we will do."), "left: 20px; top: 80px", 250, size=14, pad="14px 20px")
              + cap(v("19:8", frm="And Moses reported"), "right: 12px; top: 12px", size=10.5, maxw=180) + vref("EX 19:7–8", "right: 12px; bottom: 12px"))
     r2 = new(MOUNT, W1, h[1], E4.sinai(W1 * 0.6, h[1], W1 * 0.8, h[1] * 0.9, 1022, fire=False) + E3.pillar_cloud(W1 * 0.6, h[1] * 0.3, -20, W1 * 0.1, 1022),

@@ -842,6 +842,83 @@
    "w": 760,
    "h": 1080,
    "title": "112 · If an Ox Gore"
+  },
+  "EXO-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Book of the Covenant"
+  },
+  "EXO-C07-P01-Restitution.dc.html": {
+   "x": 840,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · He Shall Make Restitution"
+  },
+  "EXO-C07-P02-Trespass.dc.html": {
+   "x": 1680,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · For Every Matter of Trespass"
+  },
+  "EXO-C07-P03-Widow.dc.html": {
+   "x": 2520,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Widow and the Fatherless"
+  },
+  "EXO-C07-P04-Justice.dc.html": {
+   "x": 3360,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Thou Shalt Not Wrest Justice"
+  },
+  "EXO-C07-P05-Feasts.dc.html": {
+   "x": 0,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Three Times in the Year"
+  },
+  "EXO-C07-P06-Angel.dc.html": {
+   "x": 840,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · I Send an Angel before Thee"
+  },
+  "EXO-C07-P07-Hornet.dc.html": {
+   "x": 1680,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · By Little and Little"
+  },
+  "EXO-C07-P08-TwelvePillars.dc.html": {
+   "x": 2520,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Twelve Pillars"
+  },
+  "EXO-C07-P09-Sapphire.dc.html": {
+   "x": 3360,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · A Paved Work of Sapphire Stone"
+  },
+  "EXO-C07-P10-FortyDays.dc.html": {
+   "x": 0,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Forty Days and Forty Nights"
   }
  },
  "order": [
@@ -963,7 +1040,18 @@
   "EXO-C06-P10-Servant.dc.html",
   "EXO-C06-P11-Refuge.dc.html",
   "EXO-C06-P12-EyeForEye.dc.html",
-  "EXO-C06-P13-Ox.dc.html"
+  "EXO-C06-P13-Ox.dc.html",
+  "EXO-C07-00-Title.dc.html",
+  "EXO-C07-P01-Restitution.dc.html",
+  "EXO-C07-P02-Trespass.dc.html",
+  "EXO-C07-P03-Widow.dc.html",
+  "EXO-C07-P04-Justice.dc.html",
+  "EXO-C07-P05-Feasts.dc.html",
+  "EXO-C07-P06-Angel.dc.html",
+  "EXO-C07-P07-Hornet.dc.html",
+  "EXO-C07-P08-TwelvePillars.dc.html",
+  "EXO-C07-P09-Sapphire.dc.html",
+  "EXO-C07-P10-FortyDays.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1014,6 +1102,13 @@
    "text": "Chapter 6 · Sinai (Exodus 19–21)",
    "x": 0,
    "y": 33000
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Book of the Covenant (Exodus 22–24)",
+   "x": 0,
+   "y": 37100
   }
  },
  "designSystems": [],
