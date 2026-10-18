@@ -68,3 +68,16 @@ MESSENGER = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3
 
 def face(lines, ref, tok, bg=GOLDEN, **k): return seg(lines, ref, tok=tok, bg=bg, **k)
 def drawn(lines, ref, art, bg, **k): return seg(lines, ref, bg=bg, art=art, **k)
+
+# Reigns as roll cells: Judah's kings in gold, Israel's in red (rolls.roll_pages items).
+JUDAH_C, ISRAEL_C = "#FFD23F", "#FF8A6A"
+def reign(name, refs, judah=True, head=None):
+    a, _, b = refs.partition("-")
+    c = a.split(":")[0]
+    label = f"1KGS {a}" + (f"–{b}" if b else "")
+    return (name, sp(refs), label, JUDAH_C if judah else ISRAEL_C, head)
+
+def reign_pages(items, prefix, start, **k):
+    from rolls import roll_pages
+    k.setdefault("tag", "THE KINGS OF JUDAH AND OF ISRAEL")
+    return roll_pages(items, prefix, start, "1 Kings", "1KGS", **k)

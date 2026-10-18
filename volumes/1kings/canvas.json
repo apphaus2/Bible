@@ -744,6 +744,69 @@
    "w": 760,
    "h": 1080,
    "title": "95 · A Lion in the Way"
+  },
+  "1KI-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Ahijah's Word"
+  },
+  "1KI-C10-D-P01-AbijahFellSick.dc.html": {
+   "x": 840,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Abijah Fell Sick"
+  },
+  "1KI-C10-D-P02-HeavyTidings.dc.html": {
+   "x": 1680,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Heavy Tidings"
+  },
+  "1KI-C10-D-P03-HeavyTidings.dc.html": {
+   "x": 2520,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Heavy Tidings"
+  },
+  "1KI-C10-R-P01-TheKingsOfJudahAnd.dc.html": {
+   "x": 3360,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Kings of Judah and of Israel"
+  },
+  "1KI-C10-E-P01-ShishakKingOfEgypt.dc.html": {
+   "x": 0,
+   "y": 36500,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Shishak King of Egypt"
+  },
+  "1KI-C10-S-P01-.dc.html": {
+   "x": 840,
+   "y": 36500,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · "
+  },
+  "1KI-C10-F-P01-Ramah.dc.html": {
+   "x": 1680,
+   "y": 36500,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Ramah"
+  },
+  "1KI-C10-T-P01-.dc.html": {
+   "x": 2520,
+   "y": 36500,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · "
   }
  },
  "order": [
@@ -851,7 +914,16 @@
   "1KI-C09-D-P11-TheOldProphet.dc.html",
   "1KI-C09-D-P12-TheOldProphet.dc.html",
   "1KI-C09-D-P13-ALionInTheWay.dc.html",
-  "1KI-C09-D-P14-ALionInTheWay.dc.html"
+  "1KI-C09-D-P14-ALionInTheWay.dc.html",
+  "1KI-C10-00-Title.dc.html",
+  "1KI-C10-D-P01-AbijahFellSick.dc.html",
+  "1KI-C10-D-P02-HeavyTidings.dc.html",
+  "1KI-C10-D-P03-HeavyTidings.dc.html",
+  "1KI-C10-R-P01-TheKingsOfJudahAnd.dc.html",
+  "1KI-C10-E-P01-ShishakKingOfEgypt.dc.html",
+  "1KI-C10-S-P01-.dc.html",
+  "1KI-C10-F-P01-Ramah.dc.html",
+  "1KI-C10-T-P01-.dc.html"
  ],
  "notes": {
   "Main": {
@@ -923,6 +995,13 @@
    "text": "Chapter 9 · To Your Tents, O Israel (1 Kings 12–13)",
    "x": 0,
    "y": 30900
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Ahijah's Word (1 Kings 14–15)",
+   "x": 0,
+   "y": 35000
   }
  },
  "designSystems": [],

@@ -880,3 +880,64 @@ def grave_bethel(w, h, seed):
     """The old prophet's own grave at Beth-el, a sealed tomb in the rock at evening."""
     import jos.art as JA
     return JA.cave(w, h, seed, sealed=True, dusk=True)
+
+# ---- 1 Kings 14–15 ------------------------------------------------------------------------------------------------------
+def ahijah_door(p, w, h, seed):
+    """The house of Ahijah at Shiloh: the old prophet, blind, sitting within; Jeroboam's wife disguised at the door with her
+    loaves, cakes and cruse of honey."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A2A"></rect>',
+         f'<rect x="{f(w * 0.62)}" y="{f(h * 0.14)}" width="{f(w * 0.3)}" height="{f(b - h * 0.14)}" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2.6"></rect>', ground(w, h, b, "#2A1A14", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(E.kneel(w * 0.28, b, s * 0.85, color="#5A5A6A", skin="#B98A6E"))
+    o.append(mk.person(p, round(w * 0.74), round(b), round(s * 0.9, 3), body="#3A1E14", cloth="#5A4A3A", woman=True, hair="#3A3430", sw=3, flip=True,
+                       extra='<path d="M-24 -200 C -30 -170 -28 -130 -20 -110 L 20 -110 C 28 -130 30 -170 24 -200 Z" fill="#4A4038" opacity="0.95"></path>'))
+    o.append(f'<rect x="{f(w * 0.5)}" y="{f(b - 20)}" width="34" height="20" rx="8" fill="#D9A25A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    return "".join(o)
+
+def threshold(p, w, h, seed):
+    """At Tirzah: the threshold of the house at evening, the woman's feet upon it (the child's death told in words only)."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A2A4A", "#C88A6A"), J.city_hill(w * 0.2, h * 0.6, w * 0.4, h * 0.3, seed), ground(w, h, h * 0.62, "#5A4A4A", dy=0),
+         f'<rect x="{f(w * 0.46)}" y="{f(h * 0.2)}" width="{f(w * 0.44)}" height="{f(h * 0.62)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.6"></rect>',
+         f'<rect x="{f(w * 0.6)}" y="{f(h * 0.4)}" width="{f(w * 0.16)}" height="{f(h * 0.42)}" fill="#1A0E10" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<rect x="{f(w * 0.56)}" y="{f(h * 0.82)}" width="{f(w * 0.24)}" height="{f(h * 0.04)}" fill="#A89A80" stroke="#0D0D0F" stroke-width="2"></rect>']
+    o.append(mk.person(p, round(w * 0.5), round(h * 0.86), round(fit(h * 0.86, h * 0.42), 3), body="#3A1E14", cloth="#5A4A3A", woman=True, hair="#3A3430", sw=3))
+    return "".join(o)
+
+def shishak(p, w, h, seed):
+    """Shishak king of Egypt carrying away the treasures and the shields of gold from Jerusalem: chariots and bearers on the road."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE680", "#F3D8A0"), J.city_hill(w * 0.86, h * 0.5, w * 0.3, h * 0.28, seed), ground(w, h, h * 0.52, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.34)
+    for i in range(4):
+        x = w * (0.3 + i * 0.12)
+        o.append(man(p, x, b - i * 6, s * 0.9, ["#F3EFE6", "#E8B830", "#1F5FAD", "#F3EFE6"][i], flip=True, up=[(-22, -158), (-26, -190), (-14, -210)])
+                 + f'<circle cx="{f(x - 14 * s)}" cy="{f(b - i * 6 - 218 * s * 0.9)}" r="{f(18 * s)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></circle>')
+    o.append(E3.chariot(w * 0.12, b, min(0.9, h / 360), flip=True, color="#3A2214", driver="#1F5FAD"))
+    return "".join(o)
+
+def brass_shields(w, h, seed):
+    """The shields of brass made in their stead, borne by the guard."""
+    import sa2.art as K2
+    return K2.gold_shields(w, h, seed).replace("#E8B830", BRASS).replace("#FFF4C2", "#E8B880")
+
+def ramah(p, w, h, seed):
+    """All Judah carrying away the stones and the timber of Ramah to build Geba and Mizpah."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.46, seed, color="#8A8A6A", amp=12), ground(w, h, h * 0.56, "#B89A6A", dy=0),
+         S4.stone_heap(w * 0.78, h * 0.72, w * 0.3, h * 0.14, seed)]
+    s = fit(b, h * 0.36)
+    for i in range(5):
+        x = w * (0.08 + i * 0.13)
+        o.append(man(p, x, b - (i % 2) * 8, s * 0.9, WAR[i % 4], flip=True, up=[(-22, -158), (-20, -196), (0, -210)])
+                 + f'<ellipse cx="{f(x - 4)}" cy="{f(b - (i % 2) * 8 - 218 * s * 0.9)}" rx="{f(20 * s)}" ry="{f(12 * s)}" fill="#A89E92" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    return "".join(o)
+
+def asa_idol(p, w, h, seed):
+    """Asa cutting down the abominable image made for an Asherah, burnt at the brook Kidron."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A2A3A", "#C8603A"), ground(w, h, h * 0.66, "#4A3A2A", dy=0),
+         f'<path d="M-10 {f(h * 0.76)} C {f(w * 0.3)} {f(h * 0.72)} {f(w * 0.6)} {f(h * 0.8)} {f(w + 10)} {f(h * 0.76)}" stroke="#2C7DA8" stroke-width="10" fill="none"></path>',
+         f'<path d="M{f(w * 0.36)} {f(h * 0.7)} L {f(w * 0.64)} {f(h * 0.6)}" stroke="#5A3A22" stroke-width="18" stroke-linecap="round"></path>',
+         E.blaze(w * 0.5, h * 0.7, w * 0.16, h * 0.36, seed, n=7)]
+    o.append(king_fig(p, w * 0.16, h * 0.92, fit(h * 0.92, h * 0.4), cloth="#1F3A7A"))
+    return "".join(o)

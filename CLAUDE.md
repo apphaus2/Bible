@@ -155,6 +155,7 @@ There are two editions:
 | 1 Kings | 7 · The Queen of Sheba | 9–10 | title + 10 (pp. 65–74) | 57/57 verses full (the levy's cities as a map; the throne of ivory as a blueprint) | `volumes/1kings/` |
 | 1 Kings | 8 · His Heart Turned Away | 11 | title + 7 (pp. 75–81) | 43/43 verses full (Ahijah's twelve pieces; the rent kingdom as a map of the tribes) | `volumes/1kings/` |
 | 1 Kings | 9 · To Your Tents, O Israel | 12–13 | title + 14 (pp. 82–95) | 67/67 verses full (12:18 and 13:24–28 words only: the ass and the lion standing, no body drawn) | `volumes/1kings/` |
+| 1 Kings | 10 · Ahijah's Word | 14–15 | title + 8 (pp. 96–103) | 65/65 verses full (the reigns as roll cells, Judah gold and Israel red: `kg1.common.reign`) | `volumes/1kings/` |
 
 **Genesis through 2 Samuel (ten volumes) are complete.** Next: 1 Kings. 2 Samuel is `tools/full/sa2/` (12 chapters, plan and
 restraint notes in `sa2/__init__.py`, the digest's two books lifted with `sa2.common.D("A5", 1)` / `D("B6", 0)`; `asv.Book.v(..., after=)`
