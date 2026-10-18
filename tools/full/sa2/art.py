@@ -163,14 +163,17 @@ def dawn_hebron(p, w, h, seed):
 # ---- 2 Samuel 3–4 -------------------------------------------------------------------------------------------------------
 import ruth1 as R1
 SONS = [("AMNON", "AHINOAM"), ("CHILEAB", "ABIGAIL"), ("ABSALOM", "MAACAH"), ("ADONIJAH", "HAGGITH"), ("SHEPHATIAH", "ABITAL"), ("ITHREAM", "EGLAH")]
-def sons_hebron(w, h):
-    """The six sons born to David in Hebron, as a strip of nodes, each with his mother's name."""
+def sons_hebron(w, h, names=None, hi="ABSALOM"):
+    """Sons born to David, as a strip (or two) of nodes, each with his mother's name when known."""
+    names = names or SONS
     o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
-    y = h * 0.62
-    o.append(f'<path d="M{f(w * 0.08)} {f(y)} L {f(w * 0.92)} {f(y)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="6 5"></path>')
-    for i, (son, mother) in enumerate(SONS):
-        x = w * (0.1 + i * 0.16)
-        o.append(node(x, y, son, "#FFD23F" if son != "ABSALOM" else "#D7261E", r=7, dy=-16, size=10) + label(x, y + 26, "OF " + mother, "#B8B0D8", 8))
+    rows = [names[:6], names[6:]] if len(names) > 6 else [names]
+    for k, row in enumerate(rows):
+        y = h * (0.62 if len(rows) == 1 else 0.42 + k * 0.32)
+        o.append(f'<path d="M{f(w * 0.08)} {f(y)} L {f(w * 0.92)} {f(y)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="6 5"></path>')
+        for i, (son, mother) in enumerate(row):
+            x = w * (0.1 + i * 0.16)
+            o.append(node(x, y, son, "#D7261E" if son == hi else "#FFD23F", r=7, dy=-16, size=10) + (label(x, y + 26, "OF " + mother, "#B8B0D8", 8) if mother else ""))
     return "".join(o)
 
 def taken_away(p, w, h, seed):
@@ -244,4 +247,82 @@ def pool_dusk(w, h, seed):
     o = [sky(w, h, "#2A1A3A", "#C86A4A"), J.city_hill(w * 0.5, h * 0.42, w * 0.4, h * 0.26, seed), ground(w, h, h * 0.44, "#4A3A3A", dy=0),
          f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.7)}" rx="{f(w * 0.26)}" ry="{f(h * 0.13)}" fill="#0F3A5A" stroke="#0D0D0F" stroke-width="3"></ellipse>'
          f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.68)}" rx="{f(w * 0.2)}" ry="{f(h * 0.06)}" fill="#C86A4A" opacity="0.3"></ellipse>']
+    return "".join(o)
+
+# ---- 2 Samuel 5–6 -------------------------------------------------------------------------------------------------------
+SONS_J = [(n, None) for n in ("SHAMMUA", "SHOBAB", "NATHAN", "SOLOMON", "IBHAR", "ELISHUA", "NEPHEG", "JAPHIA", "ELISHAMA", "ELIADA", "ELIPHELET")]
+
+def jebus(p, w, h, seed):
+    """Jerusalem of the Jebusites on its height, the stronghold of Zion above the valleys; David's men below."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), sun(w * 0.86, h * 0.16, 18, color="#FFE680", op=0.4),
+         f'<path d="M{f(w * 0.2)} {f(h * 0.8)} C {f(w * 0.36)} {f(h * 0.4)} {f(w * 0.8)} {f(h * 0.36)} {f(w + 10)} {f(h * 0.5)} L {f(w + 10)} {f(h + 10)} L {f(w * 0.2)} {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.6"></path>',
+         J.jericho(w * 0.42, w * 0.96, h * 0.24, h * 0.46, seed, towers=3, houses=True), ground(w, h, h * 0.86, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.62)
+    for i in range(6):
+        o.append(warrior(p, w * (0.04 + i * 0.04), b - (i % 2) * h * 0.03, s * 0.9, WAR[i % 4]))
+    o.append(king_fig(p, w * 0.32, b, s))
+    return "".join(o)
+
+def breach(w, h, seed):
+    """Jehovah hath broken mine enemies before me, like the breach of waters: a flood bursting through the hills."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#2A3A5A", "#8FD0E2"), f'<path d="M-10 {f(h * 0.3)} L {f(w * 0.36)} {f(h * 0.36)} L {f(w * 0.42)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#5A4A3A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<path d="M{f(w + 10)} {f(h * 0.28)} L {f(w * 0.64)} {f(h * 0.34)} L {f(w * 0.58)} {f(h + 10)} L {f(w + 10)} {f(h + 10)} Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.36)} {f(h * 0.36)} C {f(w * 0.44)} {f(h * 0.5)} {f(w * 0.56)} {f(h * 0.5)} {f(w * 0.64)} {f(h * 0.34)} L {f(w * 0.58)} {f(h + 10)} L {f(w * 0.42)} {f(h + 10)} Z" fill="#1F6F9A" stroke="#0D0D0F" stroke-width="2"></path>']
+    for i in range(14):
+        x = w * r.uniform(0.38, 0.62); y = h * r.uniform(0.4, 1.0)
+        o.append(f'<path d="M{f(x - 14)} {f(y)} C {f(x - 6)} {f(y - 10)} {f(x + 6)} {f(y - 10)} {f(x + 14)} {f(y)}" stroke="#E8F6FA" stroke-width="3" fill="none"></path>')
+    for i in range(6):
+        x = w * r.uniform(0.3, 0.7); y = h * r.uniform(0.3, 0.42)
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r.uniform(6, 14))}" fill="#E8F6FA" opacity="0.8"></circle>')
+    return "".join(o)
+
+def mulberry(p, w, h, seed):
+    """The sound of marching in the tops of the mulberry-trees: a row of trees bowed by a wind, David's men waiting behind them."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#14123A"), ground(w, h, h * 0.84, "#1A1A2A", dy=0)]
+    for i in range(6):
+        x = w * (0.08 + i * 0.17); base = h * 0.86; tilt = 18
+        o.append(f'<path d="M{f(x)} {f(base)} C {f(x + 4)} {f(h * 0.6)} {f(x + tilt * 0.5)} {f(h * 0.4)} {f(x + tilt)} {f(h * 0.34)}" stroke="#2A1A10" stroke-width="10" fill="none"></path>')
+        for k in range(5):
+            o.append(f'<ellipse cx="{f(x + tilt + r.uniform(-30, 40))}" cy="{f(h * r.uniform(0.18, 0.4))}" rx="{f(w * 0.06)}" ry="{f(h * 0.06)}" fill="{r.choice(["#1F4A34", "#2E6B3A", "#24503A"])}" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    for i in range(5):
+        y = h * (0.1 + i * 0.07)
+        o.append(f'<path d="M{f(w * 0.02)} {f(y)} C {f(w * 0.3)} {f(y - 10)} {f(w * 0.6)} {f(y + 10)} {f(w * 0.98)} {f(y)}" stroke="#B8C8E8" stroke-width="1.6" fill="none" opacity="0.5"></path>')
+    for i in range(7):
+        o.append(mk.person(p, round(w * (0.1 + i * 0.13)), round(h * 0.92), round(fit(h * 0.92, h * 0.68), 3), body="#0B0814", cloth="#1A1630", kind="Tunic", sw=2, extra=E4.SPEAR))
+    return "".join(o)
+
+def nacon(p, w, h, seed):
+    """The threshing-floor of Nacon under a darkening sky: the new cart with the ark of God, the oxen stumbling."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A2A4A", "#8A6A5A"), ground(w, h, h * 0.7, "#8A6A4A", dy=0), S4.threshing_floor(w * 0.5, h * 0.86, w * 0.9),
+         S1.team(w * 0.22, h * 0.86, min(1.2, h / 300), low=True)]
+    o.append(f'<path d="M{f(w * 0.8)} -10 L {f(w * 0.74)} {f(h * 0.2)} L {f(w * 0.78)} {f(h * 0.22)} L {f(w * 0.7)} {f(h * 0.44)}" stroke="#FFF4C2" stroke-width="4" fill="none"></path>')
+    return "".join(o)
+
+def obed_edom(p, w, h, seed):
+    """The house of Obed-edom the Gittite, the ark of God within, a soft light at its door; his household, the vines and
+    sheaves of a blessed house."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE680", "#F3D8A0"), ground(w, h, h * 0.8, "#C8A06A", dy=0),
+         f'<rect x="{f(w * 0.3)}" y="{f(h * 0.3)}" width="{f(w * 0.44)}" height="{f(h * 0.5)}" fill="#D8B88A" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+         f'<rect x="{f(w * 0.27)}" y="{f(h * 0.26)}" width="{f(w * 0.5)}" height="{f(h * 0.05)}" fill="#A8885A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<rect x="{f(w * 0.45)}" y="{f(h * 0.5)}" width="{f(w * 0.14)}" height="{f(h * 0.3)}" fill="#FFE680" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         V.rays(w * 0.52, h * 0.64, 20, 14, w * 0.3, color="#FFF4C2", op=0.4)]
+    s = fit(b, h * 0.3)
+    o.append(crowd_at(p, w, h, seed, w * 0.04, w * 0.26, h * 0.82, b, 4, s * 0.8, s))
+    o.append(crowd_at(p, w, h, seed + 2, w * 0.78, w * 0.96, h * 0.82, b, 4, s * 0.8, s, flip=True))
+    return "".join(o)
+
+def tent_ark(p, w, h, seed):
+    """The ark set in its place in the midst of the tent David pitched, the altar smoking, the people with their cakes."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#F3D8A0"), J.city_hill(w * 0.5, h * 0.5, w * 0.9, h * 0.24, seed), ground(w, h, h * 0.52, "#C8A06A", dy=0),
+         E4.tent(w * 0.36, h * 0.8, w * 0.36, h * 0.34, color="#E8E2D6", stripe="#8A6A3A"),
+         J.ark(w * 0.36, h * 0.8, min(0.5, h / 700), uid=p + "ak", pole=0), S4.altar(w * 0.72, h * 0.82, min(1.0, h / 360), seed=seed)]
+    s = fit(b, h * 0.26)
+    o.append(king_fig(p, w * 0.56, b, s, up=[(-22, -158), (-6, -196), (8, -228)]))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.16, h * 0.84, b + 6, 4, s * 0.8, s))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.86, w * 0.98, h * 0.84, b + 6, 4, s * 0.8, s, flip=True))
     return "".join(o)

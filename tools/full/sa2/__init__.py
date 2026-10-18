@@ -26,5 +26,7 @@ META = {
      "blurb": "The Amalekite out of Saul's camp with the crown and the bracelet; David rends his clothes; the song of the bow — how are the mighty fallen!; David anointed king over Judah in Hebron and Ish-bosheth made king at Mahanaim; the twelve by the pool of Gibeon, Asahel light of foot as a wild roe, and Abner's cry: shall the sword devour for ever?"},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Abner", "range": "2 Samuel 3–4", "bible_chapters": [3, 4],
      "blurb": "Long war between the house of Saul and the house of David; Abner's wrath — am I a dog's head?; Michal taken from Paltiel, who followed her weeping to Bahurim; Abner's league and the feast in Hebron; Joab takes him aside in the gate; David follows the bier: should Abner die as a fool dieth?; Mephibosheth lamed in the flight, and Ish-bosheth slain at noon."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The City of David", "range": "2 Samuel 5–6", "bible_chapters": [5, 6],
+     "blurb": "All the tribes at Hebron — we are thy bone and thy flesh — and David anointed king over Israel; the stronghold of Zion; Hiram's cedar; Baal-perazim and the sound of marching in the tops of the mulberry-trees; the ark on a new cart and Uzzah at the threshing-floor of Nacon; David dancing before Jehovah with all his might, and Michal at the window."},
   ],
 }

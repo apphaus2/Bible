@@ -198,6 +198,83 @@
    "w": 760,
    "h": 1080,
    "title": "24 · Mephibosheth"
+  },
+  "2SA-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The City of David"
+  },
+  "2SA-C03-D-P01-KingOverAllIsrael.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · King over All Israel"
+  },
+  "2SA-C03-D-P02-TheStrongholdOfZio.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Stronghold of Zion"
+  },
+  "2SA-C03-D-P03-TheStrongholdOfZio.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Stronghold of Zion"
+  },
+  "2SA-C03-D-P04-BaalPerazim.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Baal-perazim"
+  },
+  "2SA-C03-D-P05-BaalPerazim.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Baal-perazim"
+  },
+  "2SA-C03-D-P06-TheArkOfGod.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · The Ark of God"
+  },
+  "2SA-C03-D-P07-PerezUzzah.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Perez-uzzah"
+  },
+  "2SA-C03-D-P08-TheHouseOfObedEdom.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The House of Obed-edom"
+  },
+  "2SA-C03-D-P09-DavidDancedBeforeJ.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · David Danced before Jehovah"
+  },
+  "2SA-C03-D-P10-BeforeJehovah.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Before Jehovah"
   }
  },
  "order": [
@@ -227,7 +304,18 @@
   "2SA-C02-D-P08-ShouldAbnerDieAsAF.dc.html",
   "2SA-C02-D-P09-Mephibosheth.dc.html",
   "2SA-C02-D-P10-Mephibosheth.dc.html",
-  "2SA-C02-D-P11-Mephibosheth.dc.html"
+  "2SA-C02-D-P11-Mephibosheth.dc.html",
+  "2SA-C03-00-Title.dc.html",
+  "2SA-C03-D-P01-KingOverAllIsrael.dc.html",
+  "2SA-C03-D-P02-TheStrongholdOfZio.dc.html",
+  "2SA-C03-D-P03-TheStrongholdOfZio.dc.html",
+  "2SA-C03-D-P04-BaalPerazim.dc.html",
+  "2SA-C03-D-P05-BaalPerazim.dc.html",
+  "2SA-C03-D-P06-TheArkOfGod.dc.html",
+  "2SA-C03-D-P07-PerezUzzah.dc.html",
+  "2SA-C03-D-P08-TheHouseOfObedEdom.dc.html",
+  "2SA-C03-D-P09-DavidDancedBeforeJ.dc.html",
+  "2SA-C03-D-P10-BeforeJehovah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -250,6 +338,13 @@
    "text": "Chapter 2 · Abner (2 Samuel 3–4)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The City of David (2 Samuel 5–6)",
+   "x": 0,
+   "y": 9900
   }
  },
  "designSystems": [],
