@@ -31,5 +31,7 @@ META = {
      "blurb": "Tola and Jair; go and cry unto the gods which ye have chosen; Jephthah the Gileadite, son of a harlot, fetched home to be head over Gilead; his answer to the king of Ammon; the vow, and his daughter coming out with timbrels; Shibboleth at the fords of the Jordan; Ibzan, Elon and Abdon."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Samson", "range": "Judges 13–15", "bible_chapters": [13, 14, 15],
      "blurb": "The angel of Jehovah to Manoah's wife: no razor shall come upon his head; the name that is wonderful, and the angel ascending in the flame of the altar. Samson, the young lion and the honey, the riddle at the feast, three hundred foxes with firebrands, the new ropes like burnt flax, and the jawbone of an ass."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Delilah", "range": "Judges 16", "bible_chapters": [16],
+     "blurb": "The doors of the gate of Gaza carried to the top of the mountain; Delilah in the valley of Sorek and the lords' silver; the green withes, the new ropes, the web — the Philistines are upon thee, Samson; the seven locks shaven; the prison-house in Gaza; and the two middle pillars of the house of Dagon."},
   ],
 }
