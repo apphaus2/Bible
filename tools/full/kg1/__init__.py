@@ -26,5 +26,7 @@ META = {
      "blurb": "David's charge to Solomon — be thou strong therefore, and show thyself a man; David sleeps with his fathers; Adonijah asks for Abishag, and the throne set for the king's mother at Solomon's right hand; Abiathar sent home to Anathoth; Joab at the horns of the altar; and Shimei, who passed over the brook Kidron."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "An Understanding Heart", "range": "1 Kings 3–4", "bible_chapters": [3, 4],
      "blurb": "A thousand burnt-offerings at Gibeon and the dream by night — ask what I shall give thee; give thy servant an understanding heart; the two women and the living child — divide the living child in two; the princes and the twelve officers; every man under his vine and under his fig-tree; three thousand proverbs, from the cedar of Lebanon to the hyssop in the wall."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The House of Jehovah", "range": "1 Kings 5–6", "bible_chapters": [5, 6],
+     "blurb": "Hiram king of Tyre and the cedars of Lebanon floated in rafts by sea; the levy and the hewers; and the house of Jehovah as blueprints — threescore cubits long, built of stone made ready at the quarry so that neither hammer nor axe was heard; cedar within, the oracle overlaid with pure gold, the two cherubim of olive-wood, and seven years in building."},
   ],
 }

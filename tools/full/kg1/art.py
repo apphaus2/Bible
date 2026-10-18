@@ -234,3 +234,181 @@ def nature(w, h):
         o.append(f'<g transform="translate({f(cx)} {f(cy)}) scale({f(s)})">{g}</g>' + label(cx, cy + 66 * s, nm, "#FFD23F", 9))
         o.append(f'<rect x="{f(cw * (i % 3) + 6)}" y="{f(ch * (i // 3) + 6)}" width="{f(cw - 12)}" height="{f(ch - 12)}" fill="none" stroke="#5A4A8A" stroke-width="1.4"></rect>')
     return "".join(o)
+
+# ---- 1 Kings 5–6 --------------------------------------------------------------------------------------------------------
+from exo.art8 import bp, dim, box, tag, title_bar, CY, GOLD, INK
+CEDAR_C = "#B5793A"
+
+def lebanon(p, w, h, seed, rafts=False):
+    """Cedar-trees on the mountains of Lebanon, the hewers at work; rafts=True: the timber floated down by sea in rafts."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA")]
+    if rafts:
+        o += [hills(w, h, h * 0.3, seed, color="#4A6A4A", amp=24), f'<rect x="-10" y="{f(h * 0.4)}" width="{f(w + 20)}" height="{f(h * 0.7)}" fill="#1F6F9A"></rect>']
+        for i in range(3):
+            x = w * (0.16 + i * 0.3); y = h * (0.56 + i * 0.12)
+            o.append("".join(f'<rect x="{f(x)}" y="{f(y + k * 9)}" width="{f(w * 0.2)}" height="8" rx="4" fill="{CEDAR_C}" stroke="#0D0D0F" stroke-width="1.6"></rect>' for k in range(4)))
+            o.append(f'<path d="M{f(x - 10)} {f(y + 40)} C {f(x + w * 0.1)} {f(y + 34)} {f(x + w * 0.2)} {f(y + 46)} {f(x + w * 0.26)} {f(y + 40)}" stroke="#E8F6FA" stroke-width="2" fill="none"></path>')
+        return "".join(o)
+    o += [f'<path d="M-10 {f(h * 0.7)} L {f(w * 0.3)} {f(h * 0.14)} L {f(w * 0.56)} {f(h * 0.44)} L {f(w * 0.78)} {f(h * 0.08)} L {f(w + 10)} {f(h * 0.5)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#5A6A5A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+          f'<path d="M{f(w * 0.22)} {f(h * 0.26)} L {f(w * 0.3)} {f(h * 0.14)} L {f(w * 0.38)} {f(h * 0.26)} Z M{f(w * 0.7)} {f(h * 0.2)} L {f(w * 0.78)} {f(h * 0.08)} L {f(w * 0.86)} {f(h * 0.2)} Z" fill="#F3EFE6"></path>']
+    for i in range(9):
+        x = w * (0.06 + i * 0.11); y = h * (0.62 + (i % 3) * 0.1); s = min(1.0, h / 400) * (0.7 + 0.1 * (i % 3))
+        o.append(f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})"><path d="M0 0 L 0 -90" stroke="#5A3A22" stroke-width="8"></path>'
+                 + "".join(f'<path d="M{-60 + k * 8} {-30 - k * 22} L {60 - k * 8} {-30 - k * 22} L 0 {-50 - k * 22} Z" fill="#1F4A34" stroke="#0D0D0F" stroke-width="1.6"></path>' for k in range(4)) + '</g>')
+    s = fit(h * 0.96, h * 0.6)
+    for i in range(3):
+        o.append(mk.person(p, round(w * (0.3 + i * 0.22)), round(h * 0.96), round(s, 3), body="#3A1E14", cloth=["#6A1A5A", "#5A5A3A", "#3A4A6A"][i], kind="Tunic", sw=3,
+                           up=[(-22, -158), (-30, -200), (-10, -226)]))
+    return "".join(o)
+
+def hewers(p, w, h, seed):
+    """Burden-bearers and hewers in the mountains: great stones, costly stones, hewn for the foundation."""
+    r = random.Random(seed); b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), f'<path d="M-10 {f(h * 0.5)} L {f(w * 0.4)} {f(h * 0.3)} L {f(w + 10)} {f(h * 0.4)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#B8A890" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(5):
+        x = w * (0.1 + i * 0.18); y = h * (0.66 + (i % 2) * 0.1)
+        o.append(box(x, y, w * 0.1, w * 0.06, h * 0.1, fill="#D8CCB0", top="#E8DCC0", side="#B8AC90"))
+    s = fit(b, h * 0.4)
+    for i in range(4):
+        o.append(mk.person(p, round(w * (0.16 + i * 0.22)), round(b), round(s, 3), body="#3A1E14", cloth=WAR[i % 4], kind="Tunic", sw=3, flip=i % 2 == 1))
+    return "".join(o)
+
+def temple_elev(w, h):
+    """The house of Jehovah, front elevation: threescore cubits long, twenty broad, thirty high; the porch before it; the
+    side-chambers in three stories; windows of fixed lattice-work."""
+    o = [bp(w, h), title_bar(w, "THE HOUSE OF JEHOVAH · ELEVATION")]
+    u = min(w * 0.8 / 60, h * 0.7 / 30); x0 = w * 0.5 - 30 * u; base = h * 0.9
+    o.append(box(x0 + 10 * u, base, 40 * u, 0, 30 * u, fill="#D8CCB0"))
+    for k in range(3):
+        o.append(f'<rect x="{f(x0)}" y="{f(base - (k + 1) * 5 * u)}" width="{f(10 * u)}" height="{f(5 * u)}" fill="#C8BC9C" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 f'<rect x="{f(x0 + 50 * u)}" y="{f(base - (k + 1) * 5 * u)}" width="{f(10 * u)}" height="{f(5 * u)}" fill="#C8BC9C" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    for i in range(5):
+        wx = x0 + (14 + i * 7.5) * u; wy = base - 26 * u
+        o.append(f'<rect x="{f(wx)}" y="{f(wy)}" width="{f(3 * u)}" height="{f(3 * u)}" fill="{INK}" stroke="{CY}" stroke-width="1.2"></rect>'
+                 f'<path d="M{f(wx)} {f(wy)} L {f(wx + 3 * u)} {f(wy + 3 * u)} M{f(wx + 3 * u)} {f(wy)} L {f(wx)} {f(wy + 3 * u)}" stroke="{CY}" stroke-width="1"></path>')
+    o.append(f'<path d="M{f(x0 + 26 * u)} {f(base)} L {f(x0 + 26 * u)} {f(base - 12 * u)} L {f(x0 + 34 * u)} {f(base - 12 * u)} L {f(x0 + 34 * u)} {f(base)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></path>')
+    o.append(dim(x0 + 10 * u, base - 30 * u - 12, x0 + 50 * u, base - 30 * u - 12, "20 CUBITS"))
+    o.append(dim(x0 + 50 * u + 4, base, x0 + 50 * u + 4, base - 30 * u, "30 CUBITS", off=-14))
+    o.append(tag(x0 + 55 * u, base - 12 * u, "SIDE-CHAMBERS · THREE STORIES", x0 + 44 * u, base - 36 * u))
+    o.append(tag(x0 + 20 * u, base - 24 * u, "WINDOWS OF FIXED LATTICE-WORK", x0 + 34 * u, base - 36 * u))
+    return "".join(o)
+
+def temple_plan(w, h, oracle=False):
+    """The house in plan: the porch (20 × 10), the temple (40 × 20), the oracle (20 × 20), side-chambers round about."""
+    o = [bp(w, h), title_bar(w, "THE HOUSE OF JEHOVAH · PLAN")]
+    u = min(w * 0.86 / 74, h * 0.7 / 32); x0 = w * 0.5 - 37 * u; y0 = h * 0.56 - 16 * u
+    o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(74 * u)}" height="{f(32 * u)}" fill="none" stroke="{CY}" stroke-width="1.4" stroke-dasharray="4 3"></rect>')
+    o.append(f'<rect x="{f(x0 + 4 * u)}" y="{f(y0 + 6 * u)}" width="{f(10 * u)}" height="{f(20 * u)}" fill="#3A4A5A" stroke="{CY}" stroke-width="2"></rect>' + label(x0 + 9 * u, y0 + 16 * u, "PORCH", CY, 8))
+    o.append(f'<rect x="{f(x0 + 14 * u)}" y="{f(y0 + 6 * u)}" width="{f(40 * u)}" height="{f(20 * u)}" fill="{"#5A4A1A" if oracle else "#2A3A4A"}" stroke="{CY}" stroke-width="2"></rect>'
+             + label(x0 + 34 * u, y0 + 16 * u, "THE TEMPLE · 40 CUBITS", CY, 9))
+    o.append(f'<rect x="{f(x0 + 54 * u)}" y="{f(y0 + 6 * u)}" width="{f(20 * u)}" height="{f(20 * u)}" fill="{GOLD if oracle else "#3A3A2A"}" stroke="{CY}" stroke-width="2.4"></rect>'
+             + label(x0 + 64 * u, y0 + 13 * u, "THE ORACLE", INK if oracle else CY, 9) + label(x0 + 64 * u, y0 + 25 * u, "20 × 20 × 20", INK if oracle else CY, 8))
+    o.append(f'<rect x="{f(x0 + 60 * u)}" y="{f(y0 + 14 * u)}" width="{f(8 * u)}" height="{f(4 * u)}" fill="{GOLD}" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(dim(x0 + 14 * u, y0 + 30 * u, x0 + 74 * u, y0 + 30 * u, "THREESCORE CUBITS"))
+    o.append(dim(x0 - 6, y0 + 6 * u, x0 - 6, y0 + 26 * u, "20", off=0))
+    o.append(tag(x0 + 40 * u, y0 + 3 * u, "SIDE-CHAMBERS ROUND ABOUT", x0 + 40 * u, y0 - 4 * u))
+    return "".join(o)
+
+def stories(w, h):
+    """The stories against the wall in section: five, six and seven cubits broad, offsets in the wall so the beams rest
+    without hold; the winding stairs; each story five cubits high."""
+    o = [bp(w, h), title_bar(w, "THE SIDE-CHAMBERS · SECTION")]
+    u = min(w * 0.6 / 14, h * 0.7 / 18); x0 = w * 0.3; base = h * 0.9
+    o.append(f'<path d="M{f(x0 + 8 * u)} {f(base)} L {f(x0 + 8 * u)} {f(base - 18 * u)} L {f(x0 + 10 * u)} {f(base - 18 * u)} L {f(x0 + 10 * u)} {f(base)} Z" fill="#D8CCB0" stroke="#0D0D0F" stroke-width="2"></path>')
+    for k, wd in enumerate((5, 6, 7)):
+        y = base - k * 5 * u
+        o.append(f'<rect x="{f(x0 + (8 - wd) * u)}" y="{f(y - 5 * u)}" width="{f(wd * u)}" height="{f(5 * u)}" fill="#2A3A4A" stroke="{CY}" stroke-width="1.6"></rect>'
+                 f'<rect x="{f(x0 + (8 - wd) * u)}" y="{f(y - 5 * u)}" width="{f(wd * u)}" height="{f(0.5 * u)}" fill="{CEDAR_C}" stroke="#0D0D0F" stroke-width="1"></rect>'
+                 + dim(x0 + (8 - wd) * u, y - 2.5 * u, x0 + 8 * u, y - 2.5 * u, f"{wd} CUBITS"))
+    o.append(dim(x0 - 0.6 * u - 14, base, x0 - 0.6 * u - 14, base - 5 * u, "5", off=0))
+    o.append("".join(f'<path d="M{f(x0 + 6.5 * u + math.sin(t) * u)} {f(base - t * 2.2 * u)} L {f(x0 + 6.5 * u + math.sin(t + 0.4) * u)} {f(base - (t + 0.4) * 2.2 * u)}" stroke="{GOLD}" stroke-width="2"></path>' for t in [i * 0.4 for i in range(16)]))
+    o.append(tag(x0 + 6.5 * u, base - 7 * u, "WINDING STAIRS", x0 + 12 * u, base - 12 * u))
+    return "".join(o)
+
+def no_tool(w, h):
+    """Stone made ready at the quarry: a dressed block, and the hammer, axe and iron tool crossed out — none heard in the house."""
+    o = [bp(w, h), title_bar(w, "STONE MADE READY AT THE QUARRY")]
+    o.append(box(w * 0.12, h * 0.82, w * 0.3, w * 0.14, h * 0.32, fill="#D8CCB0", top="#E8DCC0", side="#B8AC90"))
+    for i, nm in enumerate(("HAMMER", "AXE", "TOOL OF IRON")):
+        x = w * (0.6 + i * 0.13); y = h * 0.6
+        o.append(f'<rect x="{f(x - 6)}" y="{f(y - 30)}" width="12" height="60" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="1.6"></rect><rect x="{f(x - 20)}" y="{f(y - 40)}" width="40" height="14" fill="#9AA0A8" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 f'<circle cx="{f(x)}" cy="{f(y - 10)}" r="40" fill="none" stroke="#D7261E" stroke-width="4"></circle><path d="M{f(x - 28)} {f(y - 38)} L {f(x + 28)} {f(y + 18)}" stroke="#D7261E" stroke-width="4"></path>'
+                 + label(x, y + 50, nm, CY, 8))
+    return "".join(o)
+
+def cedar_within(w, h, gold=False):
+    """The walls within of cedar carved with knops and open flowers, the floor of fir; gold=True: all overlaid with gold, the
+    chains of gold across before the oracle."""
+    o = [bp(w, h), title_bar(w, "WITHIN THE HOUSE" + (" · OVERLAID WITH GOLD" if gold else " · CEDAR"))]
+    c = GOLD if gold else CEDAR_C; x0, x1, y0, y1 = w * 0.08, w * 0.92, h * 0.16, h * 0.84
+    o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(x1 - x0)}" height="{f(y1 - y0)}" fill="{c}" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    for i in range(8):
+        for k in range(3):
+            cx = x0 + (i + 0.5) * (x1 - x0) / 8; cy = y0 + (k + 0.5) * (y1 - y0) / 3
+            o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(min(w, h) * 0.03)}" fill="none" stroke="#5A3A1A" stroke-width="2"></circle>'
+                     + "".join(f'<ellipse cx="{f(cx + math.cos(a) * min(w, h) * 0.045)}" cy="{f(cy + math.sin(a) * min(w, h) * 0.045)}" rx="5" ry="3" fill="#5A3A1A" transform="rotate({f(math.degrees(a))} {f(cx + math.cos(a) * min(w, h) * 0.045)} {f(cy + math.sin(a) * min(w, h) * 0.045)})"></ellipse>' for a in [j * 1.047 for j in range(6)]))
+    if gold:
+        o.append("".join(f'<path d="M{f(x0)} {f(y0 + 20 + k * 14)} Q {f((x0 + x1) / 2)} {f(y0 + 60 + k * 14)} {f(x1)} {f(y0 + 20 + k * 14)}" stroke="#FFF4C2" stroke-width="3" stroke-dasharray="6 3" fill="none"></path>' for k in range(2)))
+    o.append(tag(x0 + 30, y0 + 30, "KNOPS AND OPEN FLOWERS", x0 + 60, y0 - 4))
+    return "".join(o)
+
+def cherubim(w, h):
+    """The two cherubim of olive-wood in the oracle, each ten cubits high, wings five cubits each, touching the walls and one
+    another in the midst; overlaid with gold."""
+    o = [bp(w, h), title_bar(w, "THE ORACLE · THE CHERUBIM")]
+    u = min(w * 0.8 / 20, h * 0.74 / 12); x0 = w * 0.5 - 10 * u; base = h * 0.9
+    o.append(f'<rect x="{f(x0)}" y="{f(base - 11 * u)}" width="{f(20 * u)}" height="{f(11 * u)}" fill="none" stroke="{CY}" stroke-width="2"></rect>')
+    for i in range(2):
+        cx = x0 + (5 + i * 10) * u
+        o.append(f'<path d="M{f(cx - 1.2 * u)} {f(base)} L {f(cx - 0.8 * u)} {f(base - 6 * u)} L {f(cx + 0.8 * u)} {f(base - 6 * u)} L {f(cx + 1.2 * u)} {f(base)} Z" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<circle cx="{f(cx)}" cy="{f(base - 6.8 * u)}" r="{f(0.8 * u)}" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2"></circle>'
+                 + "".join(f'<path d="M{f(cx)} {f(base - 6.6 * u)} L {f(cx + d * 5 * u)} {f(base - 8.6 * u)} L {f(cx + d * 5 * u)} {f(base - 7.6 * u)} L {f(cx)} {f(base - 5.6 * u)} Z" fill="#FFD23F" stroke="#0D0D0F" stroke-width="1.6"></path>' for d in (-1, 1)))
+    o.append(dim(x0, base - 11 * u - 14, x0 + 10 * u, base - 11 * u - 14, "10 CUBITS") + dim(x0 + 10 * u, base - 11 * u - 14, x0 + 20 * u, base - 11 * u - 14, "10 CUBITS"))
+    o.append(dim(x0 + 20 * u + 10, base, x0 + 20 * u + 10, base - 10 * u, "10 CUBITS HIGH", off=-12))
+    o.append(f'<rect x="{f(w * 0.5 - 2 * u)}" y="{f(base - 1.4 * u)}" width="{f(4 * u)}" height="{f(1.4 * u)}" fill="{GOLD}" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    return "".join(o)
+
+def doors(w, h, folding=False):
+    """The doors of olive-wood carved with cherubim, palm-trees and open flowers, overlaid with gold; folding=True: the two
+    doors of fir-wood, each of two folding leaves."""
+    o = [bp(w, h), title_bar(w, "THE DOORS OF THE TEMPLE · FIR-WOOD, FOLDING" if folding else "THE DOORS OF THE ORACLE · OLIVE-WOOD")]
+    n = 4 if folding else 2; x0, x1, y0, y1 = w * 0.22, w * 0.78, h * 0.14, h * 0.9
+    lw = (x1 - x0) / n
+    for i in range(n):
+        x = x0 + i * lw
+        o.append(f'<rect x="{f(x)}" y="{f(y0)}" width="{f(lw)}" height="{f(y1 - y0)}" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+        cx = x + lw / 2
+        o.append(f'<path d="M{f(cx)} {f(y1 - 20)} L {f(cx)} {f(y0 + (y1 - y0) * 0.4)}" stroke="#8A5A1A" stroke-width="4"></path>'
+                 + "".join(f'<path d="M{f(cx)} {f(y0 + (y1 - y0) * 0.4)} Q {f(cx + d * lw * 0.3)} {f(y0 + (y1 - y0) * 0.3)} {f(cx + d * lw * 0.4)} {f(y0 + (y1 - y0) * 0.42)}" stroke="#8A5A1A" stroke-width="3" fill="none"></path>' for d in (-1, 1))
+                 + f'<path d="M{f(cx - lw * 0.3)} {f(y0 + 50)} C {f(cx - lw * 0.2)} {f(y0 + 20)} {f(cx)} {f(y0 + 30)} {f(cx + lw * 0.3)} {f(y0 + 40)}" stroke="#8A5A1A" stroke-width="3" fill="none"></path>'
+                 + f'<circle cx="{f(cx)}" cy="{f(y1 - (y1 - y0) * 0.22)}" r="{f(lw * 0.12)}" fill="none" stroke="#8A5A1A" stroke-width="2.4"></circle>')
+        if folding and i % 2 == 0: o.append(f'<path d="M{f(x + lw)} {f(y0)} L {f(x + lw)} {f(y1)}" stroke="{CY}" stroke-width="2" stroke-dasharray="6 3"></path>')
+    o.append(tag(x0 + lw * 0.5, y0 + 40, "CHERUBIM", x0 - 20, y0 + 20) + tag(x0 + lw * 0.5, y0 + (y1 - y0) * 0.5, "PALM-TREES", x0 - 20, y0 + (y1 - y0) * 0.5)
+             + tag(x0 + lw * 0.5, y1 - (y1 - y0) * 0.22, "OPEN FLOWERS", x0 - 20, y1 - (y1 - y0) * 0.2))
+    return "".join(o)
+
+def inner_court(w, h):
+    """The inner court wall: three courses of hewn stone and a course of cedar beams."""
+    o = [bp(w, h), title_bar(w, "THE INNER COURT · THE WALL")]
+    x0, x1, base = w * 0.1, w * 0.9, h * 0.84; ch = h * 0.12
+    for k in range(3):
+        for i in range(8):
+            off = (k % 2) * (x1 - x0) / 16
+            bx = x0 + off + i * (x1 - x0) / 8
+            if bx + (x1 - x0) / 8 > x1 + 1: continue
+            o.append(f'<rect x="{f(bx)}" y="{f(base - (k + 1) * ch)}" width="{f((x1 - x0) / 8)}" height="{f(ch)}" fill="#D8CCB0" stroke="#0D0D0F" stroke-width="1.8"></rect>')
+    o.append(f'<rect x="{f(x0)}" y="{f(base - 3 * ch - ch * 0.5)}" width="{f(x1 - x0)}" height="{f(ch * 0.5)}" fill="{CEDAR_C}" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(label(x0, base + 16, "THREE COURSES OF HEWN STONE · A COURSE OF CEDAR BEAMS", CY, 9, "start"))
+    return "".join(o)
+
+def years(w, h):
+    """In the fourth year, in the month Ziv, the foundation laid; in the eleventh year, in the month Bul, finished: seven years."""
+    o = [bp(w, h), title_bar(w, "SEVEN YEARS IN BUILDING")]
+    x0, x1, y = w * 0.1, w * 0.9, h * 0.36
+    o.append(f'<path d="M{f(x0)} {f(y)} L {f(x1)} {f(y)}" stroke="{CY}" stroke-width="2"></path>')
+    for i in range(8):
+        x = x0 + i * (x1 - x0) / 7; yr = 4 + i
+        o.append(node(x, y, f"YEAR {yr}", "#FFD23F" if i in (0, 7) else CY, r=6 if i in (0, 7) else 4, dy=-14, size=9))
+    o.append(label(x0, y + 34, "FOUNDATION · ZIV", "#FFD23F", 9, "start") + label(x1, y + 34, "FINISHED · BUL", "#FFD23F", 9, "end"))
+    return "".join(o)

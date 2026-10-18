@@ -261,6 +261,76 @@
    "w": 760,
    "h": 1080,
    "title": "32 · The Wisdom of Solomon"
+  },
+  "1KI-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The House of Jehovah"
+  },
+  "1KI-C04-D-P01-HiramKingOfTyre.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Hiram King of Tyre"
+  },
+  "1KI-C04-D-P02-HiramKingOfTyre.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Hiram King of Tyre"
+  },
+  "1KI-C04-D-P03-CedarOutOfLebanon.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Cedar out of Lebanon"
+  },
+  "1KI-C04-D-P04-TheHouseOfJehovah.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The House of Jehovah"
+  },
+  "1KI-C04-D-P05-TheHouseOfJehovah.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The House of Jehovah"
+  },
+  "1KI-C04-D-P06-TheWordOfJehovahCa.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · The Word of Jehovah Came to Solomon"
+  },
+  "1KI-C04-D-P07-TheOracle.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Oracle"
+  },
+  "1KI-C04-D-P08-TheCherubim.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · The Cherubim"
+  },
+  "1KI-C04-D-P09-TheDoors.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Doors"
   }
  },
  "order": [
@@ -299,7 +369,17 @@
   "1KI-C03-R-P01-ThePrincesAndTheOf.dc.html",
   "1KI-C03-R-P02-ThePrincesAndTheOf.dc.html",
   "1KI-C03-E-P01-AsTheSandByTheSea.dc.html",
-  "1KI-C03-E-P02-TheWisdomOfSolomon.dc.html"
+  "1KI-C03-E-P02-TheWisdomOfSolomon.dc.html",
+  "1KI-C04-00-Title.dc.html",
+  "1KI-C04-D-P01-HiramKingOfTyre.dc.html",
+  "1KI-C04-D-P02-HiramKingOfTyre.dc.html",
+  "1KI-C04-D-P03-CedarOutOfLebanon.dc.html",
+  "1KI-C04-D-P04-TheHouseOfJehovah.dc.html",
+  "1KI-C04-D-P05-TheHouseOfJehovah.dc.html",
+  "1KI-C04-D-P06-TheWordOfJehovahCa.dc.html",
+  "1KI-C04-D-P07-TheOracle.dc.html",
+  "1KI-C04-D-P08-TheCherubim.dc.html",
+  "1KI-C04-D-P09-TheDoors.dc.html"
  ],
  "notes": {
   "Main": {
@@ -329,6 +409,13 @@
    "text": "Chapter 3 · An Understanding Heart (1 Kings 3–4)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The House of Jehovah (1 Kings 5–6)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],

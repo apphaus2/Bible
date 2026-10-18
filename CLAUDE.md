@@ -149,6 +149,7 @@ There are two editions:
 | 1 Kings | 1 · Long Live King Solomon | 1 | cover + title + 11 (pp. 1–11) | 53/53 verses full (no digest book: all new drawings, `kg1/art.py`) | `volumes/1kings/` |
 | 1 Kings | 2 · Show Thyself a Man | 2 | title + 10 (pp. 12–21) | 46/46 verses full (2:25, 2:34 and 2:46 words over the altar alone and the road) | `volumes/1kings/` |
 | 1 Kings | 3 · An Understanding Heart | 3–4 | title + 11 (pp. 22–32) | 62/62 verses full (the officers as roll cells; the sword held, never used) | `volumes/1kings/` |
+| 1 Kings | 4 · The House of Jehovah | 5–6 | title + 9 (pp. 33–41) | 56/56 verses full (the house as blueprint plates, `kg1.art.temple_plan` …) | `volumes/1kings/` |
 
 **Genesis through 2 Samuel (ten volumes) are complete.** Next: 1 Kings. 2 Samuel is `tools/full/sa2/` (12 chapters, plan and
 restraint notes in `sa2/__init__.py`, the digest's two books lifted with `sa2.common.D("A5", 1)` / `D("B6", 0)`; `asv.Book.v(..., after=)`
