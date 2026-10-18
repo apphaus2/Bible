@@ -83,6 +83,7 @@ There are two editions:
 | Numbers | 15 · The Journeys | 32–33 | title + 12 (pp. 191–202) | 98/98 verses full (the 42 stations as a lit route map over station cells) | `volumes/numbers/` |
 | Numbers | 16 · The Borders of the Land | 34–36 | title + 11 (pp. 203–213) | 76/76 verses full (the borders as a map; refuge as law cells) | `volumes/numbers/` |
 | **Numbers** | **complete: cover + 16 chapters** | **1–36** | **230 pages (213 numbered)** | **1,288 verses: all full** | `volumes/numbers/` |
+| Deuteronomy | 1 · These Are the Words | 1–2 | cover + title + 15 (pp. 1–15) | 83/83 verses full (speech panels: `speech.orate`) | `volumes/deuteronomy/` |
 
 **Genesis, Exodus, Leviticus and Numbers are complete.** Next: Deuteronomy (`tools/full/deu/`). Numbers is `tools/full/num/`
 (16 chapters, plan in `num/__init__.py`). Its chapters number their pages with `num/pages.py` (`PG = Pages(start)`, `@PG.P(...)`,

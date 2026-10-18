@@ -1,0 +1,21 @@
+{
+ "id": "deuteronomy",
+ "order": 5,
+ "name": "Deuteronomy",
+ "kanji": "申命記",
+ "thumb": "vol-deuteronomy-",
+ "lede": "The fifth book of the Bible, in full: Moses' words to Israel in the plains of Moab, every one in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "These Are the Words",
+   "range": "Deuteronomy 1–2",
+   "blurb": "In the fortieth year, beyond the Jordan, Moses begins to declare the law: Horeb, the judges, the spies and the evil report at Kadesh-barnea, the defeat at Hormah, the long way round Seir, Moab and Ammon, and Sihon king of Heshbon delivered up.",
+   "prefixes": [
+    "Main.dc.html",
+    "DEU-C01-"
+   ]
+  }
+ ]
+}

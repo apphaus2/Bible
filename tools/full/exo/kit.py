@@ -19,22 +19,28 @@ def song(text, pos, size=15, maxw=None, color="#D7261E"):
             f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
             f'font-size: {size}px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>\n')
 
-def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336, lead="", span=False):
+def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336, lead="", span=False, spoken=False):
     """One cell of a page of ordinances (Exodus 21–23): a Voice box (God's words, indigo with the gold inner rule) with a
     pictogram above (svg in a 320 x 100 viewBox, standing on the cell's ground line and filling whatever height the words
     leave), a heading tag and the verse label (both data-label). size=None sizes the words to the cell (cell = its height in px).
     lead = a narration lead-in ("And Jehovah spake unto Moses, saying,") set as a small caption line above the Voice words;
-    span = the cell spans both columns of its grid."""
+    span = the cell spans both columns of its grid. spoken=True: the law is a man's words (Moses in Deuteronomy), not God's —
+    a cream speech panel in Archivo Narrow with a rust rule, the pictogram on sand."""
     if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
-        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / (0.62 * len(text))) ** 0.5 * 2) / 2))
-    pic = (f'<div style="position: relative; flex: 1 1 0; min-height: 70px; max-height: {300 if w > 400 else 220}px; background: #2A2458; border-bottom: 2px solid {accent}">'
+        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / ((0.58 if spoken else 0.62) * len(text))) ** 0.5 * 2) / 2))
+    if spoken:
+        bg, fg, rule, pbg, font, lh, frame = "#FFF8E6", "#0D0D0F", "#B5402A", "#E8D2A6", "'Archivo Narrow', sans-serif; font-weight: 700", 1.16, f"inset 0 0 0 4px #FFF8E6, inset 0 0 0 5.5px #B5402A"
+        accent = "#B5402A"
+    else:
+        bg, fg, pbg, font, lh, frame = "#12113A", "#F3EFE6", "#2A2458", "Anton, sans-serif", 1.18, f"inset 0 0 0 4px #12113A, inset 0 0 0 5.5px {accent}"
+    pic = (f'<div style="position: relative; flex: 1 1 0; min-height: 70px; max-height: {300 if w > 400 else 220}px; background: {pbg}; border-bottom: 2px solid {accent}">'
            f'<svg viewBox="0 0 320 100" preserveAspectRatio="xMidYMax meet" style="position: absolute; inset: 0; width: 100%; height: 100%">{svg}</svg></div>' if svg else "")
-    return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px {accent}; display: flex; flex-direction: column{"; grid-column: span 2" if span else ""}">'
+    return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: {bg}; color: {fg}; box-shadow: {frame}; display: flex; flex-direction: column{"; grid-column: span 2" if span else ""}">'
             f'{pic}'
             f'\n      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 8px 12px 0"><span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.2em; color: {accent}">{heading}</span>'
             f'<span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.18em; white-space: nowrap; opacity: 0.8">{ref}</span></div>'
-            + (f'\n      <div style="margin: 6px 12px 0; align-self: flex-start; padding: 3px 7px; background: #F3EFE6; color: #0D0D0F; font-size: 9.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase">{lead}</div>' if lead else "")
-            + f'\n      <div style="padding: 6px 12px 12px; font-family: Anton, sans-serif; font-size: {size}px; line-height: 1.18; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n    </div>')
+            + (f'\n      <div style="margin: 6px 12px 0; align-self: flex-start; padding: 3px 7px; background: #F3EFE6; color: #0D0D0F; font-size: 9.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase{"; border: 1.5px solid #0D0D0F" if spoken else ""}">{lead}</div>' if lead else "")
+            + f'\n      <div style="padding: 6px 12px 12px; font-family: {font}; font-size: {size}px; line-height: {lh}; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n    </div>')
 
 def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     """lines is a list of ("cap", text) or ("say", text) in reading order."""
@@ -137,7 +143,7 @@ def set_book(G):
     _SP["G"] = G
 def _sp(refs): return _SP["G"].span(refs)
 
-def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget=1450, most=6, end="", carry=False):
+def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget=1450, most=6, end="", carry=False, spoken=False):
     """Pack law cells into pages. items: (heading, refs "1:2-4", pictogram f(p) -> svg or None, lead text or "", page head
     or None). A page holds up to `most` cells and about `budget` characters; a page head starts a new page. Cells sit two
     to a row (one to a row when a page has only one or two long cells); an odd last cell spans both columns. The lead, if
@@ -168,7 +174,7 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
             text = _sp(refs)
             if lead and text.startswith(lead): text = text[len(lead):].strip()
             else: lead = ""
-            cell_html = law(hd, text, f"{_BK[title_book]} {c}:{a}" + (f"–{b}" if b else ""), svg, cell=cell, w=cw, lead=lead, span=span)
+            cell_html = law(hd, text, f"{_BK[title_book]} {c}:{a}" + (f"–{b}" if b else ""), svg, cell=cell, w=cw, lead=lead, span=span, spoken=spoken)
             if a == "1":                               # a chapter stamp where a Bible chapter begins
                 cell_html = cell_html[: cell_html.rfind("</div>")] + mk.stamp(int(c), "right: 10px; top: 10px") + "</div>"
             cells.append(cell_html)

@@ -1,0 +1,170 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T15:46:47Z"
+ },
+ "title": "Deuteronomy — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "DEU-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · These Are the Words"
+  },
+  "DEU-C01-P01-Words.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · These Are the Words"
+  },
+  "DEU-C01-P02-Horeb.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Ye Have Dwelt Long Enough in This Mountain"
+  },
+  "DEU-C01-P03-Alone.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · I Am Not Able to Bear You Myself Alone"
+  },
+  "DEU-C01-P04-Judges.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Judgment Is God's"
+  },
+  "DEU-C01-P05-Kadesh.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · It Is a Good Land"
+  },
+  "DEU-C01-P06-Murmured.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Ye Murmured in Your Tents"
+  },
+  "DEU-C01-P07-Sware.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Jehovah Heard the Voice of Your Words"
+  },
+  "DEU-C01-P08-NotGoIn.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Thou Also Shalt Not Go In Thither"
+  },
+  "DEU-C01-P09-Hormah.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · As Bees Do"
+  },
+  "DEU-C01-P10-Seir.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Ye Have Compassed This Mountain Long Enough"
+  },
+  "DEU-C01-P11-Moab.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Vex Not Moab"
+  },
+  "DEU-C01-P12-Zered.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Thirty and Eight Years"
+  },
+  "DEU-C01-P13-Rephaim.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Begin to Possess"
+  },
+  "DEU-C01-P14-Sihon.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Words of Peace"
+  },
+  "DEU-C01-P15-Jahaz.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Not a City Too High for Us"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "DEU-C01-00-Title.dc.html",
+  "DEU-C01-P01-Words.dc.html",
+  "DEU-C01-P02-Horeb.dc.html",
+  "DEU-C01-P03-Alone.dc.html",
+  "DEU-C01-P04-Judges.dc.html",
+  "DEU-C01-P05-Kadesh.dc.html",
+  "DEU-C01-P06-Murmured.dc.html",
+  "DEU-C01-P07-Sware.dc.html",
+  "DEU-C01-P08-NotGoIn.dc.html",
+  "DEU-C01-P09-Hormah.dc.html",
+  "DEU-C01-P10-Seir.dc.html",
+  "DEU-C01-P11-Moab.dc.html",
+  "DEU-C01-P12-Zered.dc.html",
+  "DEU-C01-P13-Rephaim.dc.html",
+  "DEU-C01-P14-Sihon.dc.html",
+  "DEU-C01-P15-Jahaz.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Deuteronomy Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · These Are the Words (Deuteronomy 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
