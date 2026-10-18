@@ -215,3 +215,114 @@ def loaves(w, h, seed):
         o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.045)}" ry="{f(h * 0.03)}" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
     o.append(f'<path d="M{f(w * 0.84)} {f(h * 0.8)} C {f(w * 0.78)} {f(h * 0.6)} {f(w * 0.8)} {f(h * 0.5)} {f(w * 0.88)} {f(h * 0.48)} C {f(w * 0.96)} {f(h * 0.5)} {f(w * 0.98)} {f(h * 0.6)} {f(w * 0.94)} {f(h * 0.8)} Z" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></path>')
     return "".join(o)
+
+# ---- 2 Kings 5–6 --------------------------------------------------------------------------------------------------------
+NAAMAN_C = "#5A3A6A"
+def naaman_fig(p, x, y, s, flip=False, up=None, cloth=NAAMAN_C):
+    """Naaman at a distance: a purple Syrian captain's tunic with a gold band."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=cloth, kind="Tunic", sw=3, flip=flip, up=up, extra=A.headcloth(cloth, cord="#E8B830") + A.BLACK_BEARD)
+
+def naaman_house(p, w, h, seed):
+    """Naaman's house in Damascus: the little maiden of Israel waiting on Naaman's wife."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84)]
+    s = fit(b, h * 0.42)
+    o.append(mk.person(p, round(w * 0.32), round(b), round(s, 3), body="#3A1E14", cloth="#6A2A5A", woman=True, hair="#1A1210", sw=3, extra=CROWN.replace("#E8B830", "#C8C2D6")))
+    o.append(mk.person(p, round(w * 0.62), round(b), round(s * 0.66, 3), body="#5A2A16", cloth="#C8B89A", woman=True, hair="#2A1A10", sw=3, flip=True))
+    return "".join(o)
+
+def chariots_door(p, w, h, seed):
+    """Naaman with his horses and his chariots standing at the door of the house of Elisha."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.7, "#B89A6A", dy=0),
+         f'<rect x="{f(w * 0.06)}" y="{f(h * 0.3)}" width="{f(w * 0.3)}" height="{f(h * 0.4)}" fill="#D8B88A" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+         f'<rect x="{f(w * 0.16)}" y="{f(h * 0.46)}" width="{f(w * 0.1)}" height="{f(h * 0.24)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2.4"></rect>']
+    k = min(1.0, h / 340)
+    o.append(E3.chariot(w * 0.66, b, k, flip=True, color="#3A2214", driver=NAAMAN_C) + E3.chariot(w * 0.92, b - h * 0.06, k * 0.8, flip=True, color="#3A2214", driver="#3A3A5A"))
+    return "".join(o)
+
+def jordan_wash(p, w, h, seed, clean=False):
+    """Naaman dipping himself in the Jordan seven times; clean=True: risen up clean, his flesh as a little child's."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.36, seed, color="#6A8A5A", amp=12), ground(w, h, h * 0.46, "#B89A6A", dy=0),
+         f'<path d="M-10 {f(h * 0.56)} C {f(w * 0.3)} {f(h * 0.52)} {f(w * 0.6)} {f(h * 0.6)} {f(w + 10)} {f(h * 0.56)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#1F6F9A" stroke="#0D0D0F" stroke-width="2"></path>']
+    s = fit(b, h * 0.5)
+    if clean:
+        o.append(V.rays(w * 0.5, h * 0.6, 24, 12, w * 0.4, color="#FFF4C2", op=0.4))
+        o.append(mk.person(p, round(w * 0.5), round(h * 0.86), round(s, 3), body="#E8B08A", cloth="#F3EFE6", kind="Tunic", sw=3, up=[(-22, -158), (-40, -196), (-46, -228)]))
+    else:
+        o.append(mk.person(p, round(w * 0.5), round(h * 0.98), round(s, 3), body=SKIN, cloth="#F3EFE6", kind="Tunic", sw=3))
+        o.append(f'<path d="M-10 {f(h * 0.8)} C {f(w * 0.3)} {f(h * 0.78)} {f(w * 0.6)} {f(h * 0.82)} {f(w + 10)} {f(h * 0.8)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#1F6F9A" opacity="0.85"></path>')
+        for i in range(7):
+            o.append(f'<circle cx="{f(w * (0.12 + i * 0.03))}" cy="{f(h * 0.2)}" r="7" fill="{"#FFD23F" if i < 7 else "none"}" stroke="#0D0D0F" stroke-width="1.6"></circle>')
+    o.append(E3.chariot(w * 0.86, h * 0.5, min(0.6, h / 560), flip=True, color="#3A2214", driver=NAAMAN_C))
+    return "".join(o)
+
+def mules_earth(p, w, h, seed):
+    """Two mules' burden of earth, Naaman's company turning home."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#8A7A5A", amp=12), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    k = min(0.9, h / 360)
+    for i, x in enumerate((0.36, 0.6)):
+        o.append(N.ass(w * x, b - i * 6, k, color="#6A5A4A", flip=True)
+                 + f'<path d="M{f(w * x - 30 * k)} {f(b - 104 * k)} C {f(w * x - 34 * k)} {f(b - 140 * k)} {f(w * x + 34 * k)} {f(b - 140 * k)} {f(w * x + 30 * k)} {f(b - 104 * k)} Z" fill="#8A6A3A" stroke="#0D0D0F" stroke-width="2"></path>')
+    o.append(naaman_fig(p, w * 0.14, b, fit(b, h * 0.4), flip=True))
+    return "".join(o)
+
+def silver_bags(p, w, h, seed):
+    """Two talents of silver bound in two bags, with two changes of raiment, borne before Gehazi."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), hills(w, h, h * 0.5, seed, color="#8A7A5A", amp=12), ground(w, h, h * 0.6, "#A89A6A", dy=0)]
+    s = fit(b, h * 0.4)
+    for i in range(2):
+        x = w * (0.44 + i * 0.16)
+        o.append(man(p, x, b, s * 0.9, "#5A4A3A", up=[(-22, -158), (-20, -196), (0, -210)]) + f'<ellipse cx="{f(x - 4)}" cy="{f(b - 216 * s * 0.9)}" rx="{f(20 * s)}" ry="{f(14 * s)}" fill="#C8C8D0" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    o.append(man(p, w * 0.2, b, s, "#7A6A4A"))
+    return "".join(o)
+
+def axe_head(p, w, h, seed):
+    """At the Jordan: the sons of the prophets felling beams; the iron axe-head swimming on the water where the stick was cast."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), ground(w, h, h * 0.52, "#9A8A5A", dy=0),
+         f'<path d="M-10 {f(h * 0.7)} C {f(w * 0.3)} {f(h * 0.66)} {f(w * 0.6)} {f(h * 0.74)} {f(w + 10)} {f(h * 0.7)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#1F6F9A" stroke="#0D0D0F" stroke-width="2"></path>']
+    for i in range(4):
+        x = w * (0.1 + i * 0.12)
+        o.append(f'<path d="M{f(x)} {f(h * 0.56)} L {f(x)} {f(h * 0.2)}" stroke="#5A3A22" stroke-width="8"></path><circle cx="{f(x)}" cy="{f(h * 0.2)}" r="{f(w * 0.05)}" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.6"></circle>')
+    o.append(f'<path d="M{f(w * 0.6)} {f(h * 0.8)} L {f(w * 0.68)} {f(h * 0.78)} L {f(w * 0.69)} {f(h * 0.82)} L {f(w * 0.61)} {f(h * 0.84)} Z" fill="#7A7A82" stroke="#0D0D0F" stroke-width="2"></path>'
+             f'<path d="M{f(w * 0.56)} {f(h * 0.86)} L {f(w * 0.72)} {f(h * 0.8)}" stroke="#8A6A3A" stroke-width="5"></path>'
+             f'<ellipse cx="{f(w * 0.64)}" cy="{f(h * 0.84)}" rx="{f(w * 0.08)}" ry="{f(h * 0.015)}" fill="none" stroke="#E8F6FA" stroke-width="2"></ellipse>')
+    o.append(elisha_fig(p, w * 0.84, h * 0.66, fit(h * 0.66, h * 0.36), flip=True, up=[(22, -158), (40, -150), (60, -146)]))
+    return "".join(o)
+
+def dothan(p, w, h, seed, fire=False):
+    """Dothan compassed about by night with horses and chariots; fire=True: the mountain full of horses and chariots of fire
+    round about Elisha."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A2A4A", "#8A6A7A"), J.city_hill(w * 0.5, h * 0.62, w * 0.4, h * 0.3, seed), ground(w, h, h * 0.62, "#3A3438", dy=0)]
+    if fire:
+        o.append(f'<path d="M-10 {f(h * 0.6)} C {f(w * 0.2)} {f(h * 0.3)} {f(w * 0.36)} {f(h * 0.3)} {f(w * 0.3)} {f(h * 0.62)} Z M{f(w + 10)} {f(h * 0.6)} C {f(w * 0.8)} {f(h * 0.3)} {f(w * 0.64)} {f(h * 0.3)} {f(w * 0.7)} {f(h * 0.62)} Z" fill="#3A2A3A" stroke="#0D0D0F" stroke-width="2"></path>')
+        for i, (x, y) in enumerate(((0.12, 0.46), (0.24, 0.4), (0.78, 0.4), (0.9, 0.46))):
+            o.append(fire_chariot(w * x, h * y, min(0.32, h / 1100), seed + i))
+    for i in range(6):
+        o.append(E3.chariot(w * (0.06 + i * 0.18), b - (i % 2) * h * 0.06, min(0.45, h / 800), color="#2A1A14", driver="#3A2A3A"))
+    o.append(elisha_fig(p, w * 0.5, h * 0.48, fit(h * 0.48, h * 0.4) * 0.6))
+    return "".join(o)
+
+def blind_host(p, w, h, seed):
+    """The host smitten with blindness led by Elisha into the midst of Samaria."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), J.jericho(w * 0.5, w + 10, h * 0.22, h * 0.62, seed, towers=3, houses=True), ground(w, h, h * 0.62, "#A89A6A", dy=0)]
+    s = fit(b, h * 0.36)
+    o.append(elisha_fig(p, w * 0.56, b, s, flip=True))
+    for i in range(6):
+        o.append(warrior(p, w * (0.06 + i * 0.07), b - (i % 2) * 8, s * 0.86, "#5A3A6A", flip=True))
+    return "".join(o)
+
+def siege_wall(p, w, h, seed, king=True):
+    """Samaria besieged: the king passing by upon the wall, a woman crying up to him (6:28–29 told in words only)."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A4A4A", "#A88A6A"), J.jericho(-10, w + 10, h * 0.36, h * 0.82, seed, towers=3, houses=False), ground(w, h, h * 0.82, "#4A3A30", dy=0)]
+    if king:
+        o.append(king_fig(p, w * 0.6, h * 0.36, fit(h * 0.36, h * 0.12), cloth="#5A5040"))
+        o.append(mk.person(p, round(w * 0.3), round(b), round(fit(b, h * 0.7) * 0.6, 3), body="#3A1E14", cloth="#3A3A3E", woman=True, hair="#3A3430", sw=3, up=[(22, -158), (40, -200), (50, -230)]))
+    return "".join(o)

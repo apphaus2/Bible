@@ -261,6 +261,139 @@
    "w": 760,
    "h": 1080,
    "title": "33 · Death in the Pot"
+  },
+  "2KI-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Naaman"
+  },
+  "2KI-C03-D-P01-NaamanTheLeper.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Naaman the Leper"
+  },
+  "2KI-C03-D-P02-NaamanTheLeper.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Naaman the Leper"
+  },
+  "2KI-C03-D-P03-WashInTheJordan.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Wash in the Jordan"
+  },
+  "2KI-C03-D-P04-ThereIsNoGodButInI.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · There Is No God but in Israel"
+  },
+  "2KI-C03-D-P05-ThereIsNoGodButInI.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · There Is No God but in Israel"
+  },
+  "2KI-C03-D-P06-Gehazi.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Gehazi"
+  },
+  "2KI-C03-D-P07-Gehazi.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Gehazi"
+  },
+  "2KI-C03-D-P08-TheIronDidSwim.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Iron Did Swim"
+  },
+  "2KI-C03-D-P09-TheIronDidSwim.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Iron Did Swim"
+  },
+  "2KI-C03-D-P10-Dothan.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Dothan"
+  },
+  "2KI-C03-D-P11-Dothan.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Dothan"
+  },
+  "2KI-C03-D-P12-Dothan.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Dothan"
+  },
+  "2KI-C03-D-P13-HorsesAndChariotsO.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Horses and Chariots of Fire"
+  },
+  "2KI-C03-D-P14-HorsesAndChariotsO.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Horses and Chariots of Fire"
+  },
+  "2KI-C03-D-P15-HorsesAndChariotsO.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Horses and Chariots of Fire"
+  },
+  "2KI-C03-D-P16-TheSiegeOfSamaria.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Siege of Samaria"
+  },
+  "2KI-C03-D-P17-TheSiegeOfSamaria.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Siege of Samaria"
+  },
+  "2KI-C03-D-P18-TheSiegeOfSamaria.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Siege of Samaria"
   }
  },
  "order": [
@@ -299,7 +432,26 @@
   "2KI-C02-D-P16-ItIsWell.dc.html",
   "2KI-C02-D-P17-ItIsWell.dc.html",
   "2KI-C02-D-P18-DeathInThePot.dc.html",
-  "2KI-C02-D-P19-DeathInThePot.dc.html"
+  "2KI-C02-D-P19-DeathInThePot.dc.html",
+  "2KI-C03-00-Title.dc.html",
+  "2KI-C03-D-P01-NaamanTheLeper.dc.html",
+  "2KI-C03-D-P02-NaamanTheLeper.dc.html",
+  "2KI-C03-D-P03-WashInTheJordan.dc.html",
+  "2KI-C03-D-P04-ThereIsNoGodButInI.dc.html",
+  "2KI-C03-D-P05-ThereIsNoGodButInI.dc.html",
+  "2KI-C03-D-P06-Gehazi.dc.html",
+  "2KI-C03-D-P07-Gehazi.dc.html",
+  "2KI-C03-D-P08-TheIronDidSwim.dc.html",
+  "2KI-C03-D-P09-TheIronDidSwim.dc.html",
+  "2KI-C03-D-P10-Dothan.dc.html",
+  "2KI-C03-D-P11-Dothan.dc.html",
+  "2KI-C03-D-P12-Dothan.dc.html",
+  "2KI-C03-D-P13-HorsesAndChariotsO.dc.html",
+  "2KI-C03-D-P14-HorsesAndChariotsO.dc.html",
+  "2KI-C03-D-P15-HorsesAndChariotsO.dc.html",
+  "2KI-C03-D-P16-TheSiegeOfSamaria.dc.html",
+  "2KI-C03-D-P17-TheSiegeOfSamaria.dc.html",
+  "2KI-C03-D-P18-TheSiegeOfSamaria.dc.html"
  ],
  "notes": {
   "Main": {
@@ -322,6 +474,13 @@
    "text": "Chapter 2 · The Pot of Oil (2 Kings 3–4)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Naaman (2 Kings 5–6)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],

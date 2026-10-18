@@ -162,6 +162,7 @@ There are two editions:
 | 1 Kings | 14 · Naboth's Vineyard | 21–22 | title + 23 (pp. 144–166) | 82/82 verses full (21:13 and 22:34–38 words over the vineyard at dusk, the chariot at sunset and the empty pool) | `volumes/1kings/` |
 | 2 Kings | 1 · The Chariot of Fire | 1–2 | cover + title + 14 (pp. 1–14) | 43/43 verses full (1:10–12 words over fire on the slope; 2:24 over the empty way) | `volumes/2kings/` |
 | 2 Kings | 2 · The Pot of Oil | 3–4 | title + 19 (pp. 15–33) | 71/71 verses full (3:27 words over Kir-hareseth's wall and smoke) | `volumes/2kings/` |
+| 2 Kings | 3 · Naaman | 5–6 | title + 18 (pp. 34–51) | 60/60 verses full (6:28–29 words over Samaria's wall, nothing drawn) | `volumes/2kings/` |
 
 **Genesis through 1 Kings (eleven volumes) are complete.** Next: 2 Kings. 1 Kings is `tools/full/kg1/` (14 chapters, plan and
 restraint notes in `kg1/__init__.py`). There is no digest book from here on, so every drawing is new (`kg1/art.py`): the temple and its
