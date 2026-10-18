@@ -523,7 +523,7 @@ def feast_fled(p, w, h, seed):
     o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#C8603A"), hills(w, h, h * 0.5, seed, color="#7A5A4A", amp=14), ground(w, h, h * 0.58, "#A88A5A", dy=0)]
     for i in range(4):
         x = w * (0.56 + i * 0.1); y = h * (0.6 + (i % 2) * 0.03)
-        o.append(N.mount(x, y, min(0.28, h / 1400), flip=False, rider_cloth=["#8A3A1E", "#3A4A6A", "#5A5A2A", "#6A2A4A"][i], p=p + str(i)))
+        o.append(N.mount(x, y, min(0.28, h / 1400), flip=False, rider_cloth=["#8A3A1E", "#3A4A6A", "#5A5A2A", "#6A2A4A"][i], p=p))
     o.append(S3.table(w * 0.3, b, w * 0.44, min(1.2, h / 300)))
     o.append(f'<g transform="translate({f(w * 0.42)} {f(b - 74 * min(1.2, h / 300))}) rotate(80)"><path d="M0 0 l -8 -20 l 16 0 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path></g>')
     return "".join(o)

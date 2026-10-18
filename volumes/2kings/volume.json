@@ -16,6 +16,16 @@
     "Main.dc.html",
     "2KI-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Pot of Oil",
+   "range": "2 Kings 3–4",
+   "blurb": "Three kings in the wilderness of Edom without water — bring me a minstrel; the valley full of trenches and the water red as blood; the widow's pot of oil and the borrowed vessels; the great woman of Shunem and the little chamber on the wall; my head, my head; it is well; the child sneezed seven times; death in the pot, and twenty loaves for a hundred men.",
+   "prefixes": [
+    "2KI-C02-"
+   ]
   }
  ]
 }

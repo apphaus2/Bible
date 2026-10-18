@@ -864,7 +864,7 @@ def oak_sitting(p, w, h, seed):
          S4.great_oak(w * 0.24, b, min(1.0, h / 360), seed)]
     s = fit(b, h * 0.4)
     o.append(E.kneel(w * 0.3, b, s * 0.8, color="#4A3A2A", skin="#B98A6E"))
-    o.append(N.mount(w * 0.74, b, min(1.0, h / 320), flip=True, rider_cloth="#6A645E", p=p + "m"))
+    o.append(N.mount(w * 0.74, b, min(1.0, h / 320), flip=True, rider_cloth="#6A645E", p=p))
     return "".join(o)
 
 def lion_way(p, w, h, seed, body=True):

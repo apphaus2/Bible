@@ -22,5 +22,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Chariot of Fire", "range": "2 Kings 1–2", "bible_chapters": [1, 2],
      "blurb": "Ahaziah fallen through the lattice inquires of Baal-zebub; a hairy man girt with a girdle of leather; fire from heaven on the captains of fifty; then Gilgal, Beth-el and Jericho — I will not leave thee; the Jordan divided by the mantle; a double portion of thy spirit; a chariot of fire and horses of fire, and Elijah went up by a whirlwind into heaven."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Pot of Oil", "range": "2 Kings 3–4", "bible_chapters": [3, 4],
+     "blurb": "Three kings in the wilderness of Edom without water — bring me a minstrel; the valley full of trenches and the water red as blood; the widow's pot of oil and the borrowed vessels; the great woman of Shunem and the little chamber on the wall; my head, my head; it is well; the child sneezed seven times; death in the pot, and twenty loaves for a hundred men."},
   ],
 }

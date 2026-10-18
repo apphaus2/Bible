@@ -83,10 +83,13 @@ def reign_pages(items, prefix, start, **k):
     return roll_pages(items, prefix, start, "2 Kings", "2KGS", **k)
 
 # 2 Kings cast
-ELISHA_OLD = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#6A645E", hl="#9A948A", beard=True, beard_color="#6A645E", light="#FFE680")
-ELISHA_STERN = F("adam", skin="#D9A27A", shadow="#5A2A2A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", brow="scowl", light="#FFD23F")
+ELISHA_OLD = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#6A645E", hl="#9A948A", beard=True, beard_color="#6A645E", scarf="#8A6A3A", cord=True, light="#FFE680")
+ELISHA_STERN = F("adam", skin="#D9A27A", shadow="#5A2A2A", hair="#3A2214", hl="#6A5A4E", stubble="#3A2214", scarf="#8A6A3A", cord=True, brow="scowl", light="#FFD23F")
 ELISHA_BARE = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", light="#FFE680")
 AHAZIAH = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", stubble="#1A1210", scarf="#7A1A2A", band=True, brow="sorrow", sweat=True, light="#9AA8C8")
 JEHORAM = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#7A1A2A", band=True, light="#FFC14D")
 CAPTAIN = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#6A2A1A", cord=True, brow="scowl", light="#D7261E")
 SONS_PROPHETS = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#6A645E", light="#FFC14D")
+SHUNAMMITE = F("eve", skin="#D9A27A", shadow="#6A4A4A", hair="#1A1210", scarf="#2A5A5A", band=True, light="#FFE680")
+SHUNAMMITE_GRIEF = F("eve", skin="#C98E66", shadow="#3A2A4A", hair="#1A1210", scarf="#2A5A5A", band=True, brow="sorrow", tear=True, light="#9AA8C8")
+GEHAZI = F("adam", skin="#C47A5A", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#7A6A4A", light="#FFC14D")
