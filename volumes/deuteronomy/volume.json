@@ -146,6 +146,16 @@
    "prefixes": [
     "DEU-C14-"
    ]
+  },
+  {
+   "dir": "chapter-15",
+   "num": "15",
+   "name": "The Death of Moses",
+   "range": "Deuteronomy 33–34",
+   "blurb": "The blessing wherewith Moses the man of God blessed the children of Israel before his death: Jehovah came from Sinai, and every tribe in turn; underneath are the everlasting arms; then Moses on the top of Pisgah, shown all the land, and dead in the land of Moab at a hundred and twenty years — no man knoweth of his sepulchre unto this day.",
+   "prefixes": [
+    "DEU-C15-"
+   ]
   }
  ]
 }

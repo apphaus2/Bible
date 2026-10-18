@@ -97,8 +97,12 @@ There are two editions:
 | Deuteronomy | 12 · The Blessings and the Curses | 27–28 | title + 14 | 94/94 verses full (the twelve curses as law cells; the siege words only) | `volumes/deuteronomy/` |
 | Deuteronomy | 13 · Choose Life | 29–31 | title + 13 | 79/79 verses full | `volumes/deuteronomy/` |
 | Deuteronomy | 14 · The Song of Moses | 32 | title + 10 | 52/52 verses full (the song in song boxes) | `volumes/deuteronomy/` |
+| Deuteronomy | 15 · The Death of Moses | 33–34 | title + 11 | 41/41 verses full (the tribes as cells; Moses' death caption only, no grave drawn) | `volumes/deuteronomy/` |
 
-**Genesis, Exodus, Leviticus and Numbers are complete.** Next: Deuteronomy (`tools/full/deu/`). Numbers is `tools/full/num/`
+**Genesis, Exodus, Leviticus, Numbers and Deuteronomy are complete.** Next: Joshua. Deuteronomy is `tools/full/deu/` (15
+chapters, plan in `deu/__init__.py`): Moses' discourses as speech panels (`speech.orate`, packed by `discourse.pack`,
+`deu.common.auto()` for long runs of his words), the statutes of 12–26 as spoken law cells (`deu.common.law_chapter`),
+the songs as song boxes (`deu.common.sing`), the blessing of the tribes as `clan()` cells. Numbers is `tools/full/num/`
 (16 chapters, plan in `num/__init__.py`). Its chapters number their pages with `num/pages.py` (`PG = Pages(start)`, `@PG.P(...)`,
 `PG.extend(packed)`), so hand-drawn pages and pages packed by `exo.kit.law_pages` / `blueprints` mix in reading order; copy that
 for new volumes. Lists are cells: `num.ch01.tally()` (a tribe and its number), `genesis.ch03.clan()`, `num.art15.station()`

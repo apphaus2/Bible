@@ -1129,6 +1129,69 @@
    "w": 760,
    "h": 1080,
    "title": "145 · It Is Your Life"
+  },
+  "DEU-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 52200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · The Death of Moses"
+  },
+  "DEU-C15-D-P01-TheBlessing.dc.html": {
+   "x": 840,
+   "y": 52200,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · The Blessing"
+  },
+  "DEU-C15-T01-LetReubenLive.dc.html": {
+   "x": 1680,
+   "y": 52200,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Let Reuben Live"
+  },
+  "DEU-C15-T02-BlessedOfJehovahBe.dc.html": {
+   "x": 2520,
+   "y": 52200,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Blessed of Jehovah Be His Land"
+  },
+  "DEU-C15-T03-AsThyDaysSoShallTh.dc.html": {
+   "x": 3360,
+   "y": 52200,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · As Thy Days, So Shall Thy Strength Be"
+  },
+  "DEU-C15-E-P01-TheEverlastingArms.dc.html": {
+   "x": 0,
+   "y": 53400,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · The Everlasting Arms"
+  },
+  "DEU-C15-E-P02-TheTopOfPisgah.dc.html": {
+   "x": 840,
+   "y": 53400,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Top of Pisgah"
+  },
+  "DEU-C15-E-P03-SoMosesTheServantO.dc.html": {
+   "x": 1680,
+   "y": 53400,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · So Moses the Servant of Jehovah Died"
+  },
+  "DEU-C15-E-P04-WhomJehovahKnewFac.dc.html": {
+   "x": 2520,
+   "y": 53400,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Whom Jehovah Knew Face to Face"
   }
  },
  "order": [
@@ -1291,7 +1354,16 @@
   "DEU-C14-D-P07-SeeNowThatIEvenIAm.dc.html",
   "DEU-C14-D-P08-SeeNowThatIEvenIAm.dc.html",
   "DEU-C14-D-P09-ItIsYourLife.dc.html",
-  "DEU-C14-D-P10-ItIsYourLife.dc.html"
+  "DEU-C14-D-P10-ItIsYourLife.dc.html",
+  "DEU-C15-00-Title.dc.html",
+  "DEU-C15-D-P01-TheBlessing.dc.html",
+  "DEU-C15-T01-LetReubenLive.dc.html",
+  "DEU-C15-T02-BlessedOfJehovahBe.dc.html",
+  "DEU-C15-T03-AsThyDaysSoShallTh.dc.html",
+  "DEU-C15-E-P01-TheEverlastingArms.dc.html",
+  "DEU-C15-E-P02-TheTopOfPisgah.dc.html",
+  "DEU-C15-E-P03-SoMosesTheServantO.dc.html",
+  "DEU-C15-E-P04-WhomJehovahKnewFac.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1398,6 +1470,13 @@
    "text": "Chapter 14 · The Song of Moses (Deuteronomy 32)",
    "x": 0,
    "y": 47800
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · The Death of Moses (Deuteronomy 33–34)",
+   "x": 0,
+   "y": 51900
   }
  },
  "designSystems": [],

@@ -48,5 +48,7 @@ META = {
      "blurb": "The covenant in the land of Moab; the secret things belong unto Jehovah; I have set before thee life and death, the blessing and the curse: therefore choose life; Moses a hundred and twenty years old, and Joshua charged to be strong and of good courage; the law written in a book and laid by the side of the ark."},
     {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "The Song of Moses", "range": "Deuteronomy 32", "bible_chapters": [32],
      "blurb": "Give ear, ye heavens, and I will speak: the Rock, his work is perfect; as an eagle that stirreth up her nest; but Jeshurun waxed fat, and kicked; vengeance is mine; see now that I, even I, am he — and Moses bidden to go up mount Nebo and see the land, and die there."},
+    {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "The Death of Moses", "range": "Deuteronomy 33–34", "bible_chapters": [33, 34],
+     "blurb": "The blessing wherewith Moses the man of God blessed the children of Israel before his death: Jehovah came from Sinai, and every tribe in turn; underneath are the everlasting arms; then Moses on the top of Pisgah, shown all the land, and dead in the land of Moab at a hundred and twenty years — no man knoweth of his sepulchre unto this day."},
   ],
 }
