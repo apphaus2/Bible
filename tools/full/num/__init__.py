@@ -43,5 +43,7 @@ META = {
      "blurb": "Israel joined unto Baal-peor in Shittim; Phinehas, jealous with the jealousy of Jehovah, and the covenant of an everlasting priesthood; and the numbering in the plains of Moab — six hundred thousand and a thousand seven hundred and thirty, the land divided by lot, and not a man left of the first numbering save Caleb and Joshua."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "The Daughters of Zelophehad", "range": "Numbers 27–29", "bible_chapters": [27, 28, 29],
      "blurb": "Mahlah, Noah, Hoglah, Milcah and Tirzah: the daughters of Zelophehad speak right; Moses shown the land from the mountain of Abarim; Joshua, a man in whom is the Spirit, set before Eleazar; and the offerings of every day, every sabbath, every new moon and every set feast."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Vows and the War with Midian", "range": "Numbers 30–31", "bible_chapters": [30, 31],
+     "blurb": "When a man voweth a vow he shall not break his word; the vows of a daughter in her father's house and of a wife; then a thousand of every tribe sent against Midian with Phinehas and the trumpets, the prey divided between the men of war and the congregation, and the officers' gold brought into the tent of meeting for a memorial."},
   ],
 }

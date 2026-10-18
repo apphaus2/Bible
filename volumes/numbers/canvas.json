@@ -1374,6 +1374,76 @@
    "w": 760,
    "h": 1080,
    "title": "181 · The Eighth Day"
+  },
+  "NUM-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 60100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Vows and the War with Midian"
+  },
+  "NUM-C14-L-P01-WhenAManVowethAVow.dc.html": {
+   "x": 840,
+   "y": 60100,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · When a Man Voweth a Vow"
+  },
+  "NUM-C14-L-P02-WhenAManVowethAVow.dc.html": {
+   "x": 1680,
+   "y": 60100,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · When a Man Voweth a Vow"
+  },
+  "NUM-C14-P01-Avenge.dc.html": {
+   "x": 2520,
+   "y": 60100,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Avenge the Children of Israel"
+  },
+  "NUM-C14-P02-Burnt.dc.html": {
+   "x": 3360,
+   "y": 60100,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · All Their Cities"
+  },
+  "NUM-C14-P03-Wroth.dc.html": {
+   "x": 0,
+   "y": 61300,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Moses Was Wroth with the Officers"
+  },
+  "NUM-C14-P04-Purify.dc.html": {
+   "x": 840,
+   "y": 61300,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Through the Fire"
+  },
+  "NUM-C14-P05-Tribute.dc.html": {
+   "x": 1680,
+   "y": 61300,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · A Tribute unto Jehovah"
+  },
+  "NUM-C14-P06-Halves.dc.html": {
+   "x": 2520,
+   "y": 61300,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · The Half"
+  },
+  "NUM-C14-P07-Gold.dc.html": {
+   "x": 3360,
+   "y": 61300,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · There Lacketh Not One Man of Us"
   }
  },
  "order": [
@@ -1571,7 +1641,17 @@
   "NUM-C13-L-P06-SevenDaysUntoJehov.dc.html",
   "NUM-C13-L-P07-SevenDaysUntoJehov.dc.html",
   "NUM-C13-L-P08-SevenDaysUntoJehov.dc.html",
-  "NUM-C13-L-P09-TheEighthDay.dc.html"
+  "NUM-C13-L-P09-TheEighthDay.dc.html",
+  "NUM-C14-00-Title.dc.html",
+  "NUM-C14-L-P01-WhenAManVowethAVow.dc.html",
+  "NUM-C14-L-P02-WhenAManVowethAVow.dc.html",
+  "NUM-C14-P01-Avenge.dc.html",
+  "NUM-C14-P02-Burnt.dc.html",
+  "NUM-C14-P03-Wroth.dc.html",
+  "NUM-C14-P04-Purify.dc.html",
+  "NUM-C14-P05-Tribute.dc.html",
+  "NUM-C14-P06-Halves.dc.html",
+  "NUM-C14-P07-Gold.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1671,6 +1751,13 @@
    "text": "Chapter 13 · The Daughters of Zelophehad (Numbers 27–29)",
    "x": 0,
    "y": 55700
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Vows and the War with Midian (Numbers 30–31)",
+   "x": 0,
+   "y": 59800
   }
  },
  "designSystems": [],
