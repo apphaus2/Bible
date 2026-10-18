@@ -454,3 +454,28 @@ def hilltop_cry(p, w, h, seed):
     o.append(S2.david(p, w * 0.74, h * 0.42 + 2, s, staff=False, bag=False, up=[(-22, -158), (-6, -196), (8, -228)])
              + f'<path d="M{f(w * 0.74 - 10 * s)} {f(h * 0.42 - 300 * s)} L {f(w * 0.74 - 2 * s)} {f(h * 0.42 - 120 * s)}" stroke="#3E2416" stroke-width="4"></path>')
     return "".join(o)
+
+# ---- 1 Samuel 27–29 -----------------------------------------------------------------------------------------------------
+def endor(p, w, h, seed, rising=True):
+    """The woman's house at En-dor by night: a clay lamp, the woman cowering, and an old man covered with a robe rising as a
+    pale shape out of the earth (no face drawn)."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1A1420"></rect>', ground(w, h, b, "#2A2026", dy=0),
+         clay_lamp(w * 0.14, h * 0.5, min(1.2, h / 260)), f'<circle cx="{f(w * 0.14)}" cy="{f(h * 0.46)}" r="{f(h * 0.4)}" fill="#FFC14D" opacity="0.08"></circle>']
+    s = fit(b, h * 0.36)
+    if rising:
+        o.append(f'<ellipse cx="{f(w * 0.62)}" cy="{f(b)}" rx="{f(w * 0.14)}" ry="{f(h * 0.04)}" fill="#8A8AB8" opacity="0.4"></ellipse>'
+                 + f'<g opacity="0.55">' + mk.person(p, round(w * 0.62), round(b), round(s * 1.05, 3), body="#C8D0E8", cloth="#E8ECF8", stroke="#8A8AB8", sw=3) + '</g>'
+                 + V.rays(w * 0.62, b - 120 * s, 24, 10, w * 0.5, color="#C8D0E8", op=0.18))
+    o.append(E.kneel(w * 0.3, b, s * 0.9, color="#4A3A4A", skin="#6A4A3A"))
+    o.append(mk.person(p, round(w * 0.88), round(b), round(s * 1.1, 3), body="#12090A", cloth="#3A3040", sw=3, flip=True))
+    return "".join(o)
+
+def unleavened(w, h, seed):
+    """The fatted calf and the unleavened bread set before Saul and his servants by night."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A18"></rect>', ground(w, h, h * 0.82, "#1A100E", dy=0),
+         S3.table(w * 0.5, h * 0.82, w * 0.62, min(1.3, h / 260))]
+    from genesis.art4 import clay_lamp
+    o.append(clay_lamp(w * 0.88, h * 0.4, min(1.2, h / 260)))
+    return "".join(o)

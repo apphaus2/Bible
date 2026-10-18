@@ -45,5 +45,7 @@ META = {
      "blurb": "The cave of Adullam and the four hundred in distress; Doeg the Edomite and the priests of Nob; Keilah and the ephod; Jonathan in the wood of Ziph: thou shalt be king over Israel; this side and that side of the mountain in Maon; and the cave at En-gedi, where David cut off the skirt of Saul's robe and spared Jehovah's anointed."},
     {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Abigail", "range": "1 Samuel 25–26", "bible_chapters": [25, 26],
      "blurb": "Samuel is dead; Nabal the churl railing at David's young men, and Abigail riding down with two hundred loaves — the soul of my lord shall be bound in the bundle of life; then the hill of Hachilah, Saul asleep with his spear stuck in the ground at his head, and David crying from the mountain top: behold the king's spear."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "The Witch of En-dor", "range": "1 Samuel 27–29", "bible_chapters": [27, 28, 29],
+     "blurb": "David a year and four months among the Philistines at Ziklag; Saul before the host at Shunem, Jehovah answering him not; the woman with a familiar spirit at En-dor by night, and an old man covered with a robe coming up out of the earth: to-morrow shalt thou and thy sons be with me; and David sent back from Aphek."},
   ],
 }

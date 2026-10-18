@@ -132,6 +132,7 @@ There are two editions:
 | 1 Samuel | 10 · Jonathan and David | 20–21 | title + 12 (pp. 118–129) | 57/57 verses full | `volumes/1samuel/` |
 | 1 Samuel | 11 · The Cave | 22–24 | title + 15 (pp. 130–144) | 74/74 verses full (22:17–19 words over Nob's smoke) | `volumes/1samuel/` |
 | 1 Samuel | 12 · Abigail | 25–26 | title + 14 (pp. 145–158) | 69/69 verses full (25:38 words only) | `volumes/1samuel/` |
+| 1 Samuel | 13 · The Witch of En-dor | 27–29 | title + 11 (pp. 159–169) | 48/48 verses full (Samuel's shade a pale shape, no face; 27:9 and 27:11 words only) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width

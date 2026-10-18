@@ -1206,6 +1206,90 @@
    "w": 760,
    "h": 1080,
    "title": "158 · I Have Played the Fool"
+  },
+  "1SA-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · The Witch of En-dor"
+  },
+  "1SA-C13-D-P01-Ziklag.dc.html": {
+   "x": 840,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Ziklag"
+  },
+  "1SA-C13-D-P02-Ziklag.dc.html": {
+   "x": 1680,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Ziklag"
+  },
+  "1SA-C13-D-P03-SaulInquiredOfJeho.dc.html": {
+   "x": 2520,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Saul Inquired of Jehovah"
+  },
+  "1SA-C13-D-P04-EnDor.dc.html": {
+   "x": 3360,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · En-dor"
+  },
+  "1SA-C13-D-P05-EnDor.dc.html": {
+   "x": 0,
+   "y": 53600,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · En-dor"
+  },
+  "1SA-C13-D-P06-EnDor.dc.html": {
+   "x": 840,
+   "y": 53600,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · En-dor"
+  },
+  "1SA-C13-D-P07-ToMorrowShaltThouB.dc.html": {
+   "x": 1680,
+   "y": 53600,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · To-morrow Shalt Thou Be with Me"
+  },
+  "1SA-C13-D-P08-ToMorrowShaltThouB.dc.html": {
+   "x": 2520,
+   "y": 53600,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · To-morrow Shalt Thou Be with Me"
+  },
+  "1SA-C13-D-P09-MakeTheManReturn.dc.html": {
+   "x": 3360,
+   "y": 53600,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Make the Man Return"
+  },
+  "1SA-C13-D-P10-MakeTheManReturn.dc.html": {
+   "x": 0,
+   "y": 54800,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · Make the Man Return"
+  },
+  "1SA-C13-D-P11-MakeTheManReturn.dc.html": {
+   "x": 840,
+   "y": 54800,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · Make the Man Return"
   }
  },
  "order": [
@@ -1379,7 +1463,19 @@
   "1SA-C12-D-P11-TheKingSSpear.dc.html",
   "1SA-C12-D-P12-TheKingSSpear.dc.html",
   "1SA-C12-D-P13-TheKingSSpear.dc.html",
-  "1SA-C12-D-P14-IHavePlayedTheFool.dc.html"
+  "1SA-C12-D-P14-IHavePlayedTheFool.dc.html",
+  "1SA-C13-00-Title.dc.html",
+  "1SA-C13-D-P01-Ziklag.dc.html",
+  "1SA-C13-D-P02-Ziklag.dc.html",
+  "1SA-C13-D-P03-SaulInquiredOfJeho.dc.html",
+  "1SA-C13-D-P04-EnDor.dc.html",
+  "1SA-C13-D-P05-EnDor.dc.html",
+  "1SA-C13-D-P06-EnDor.dc.html",
+  "1SA-C13-D-P07-ToMorrowShaltThouB.dc.html",
+  "1SA-C13-D-P08-ToMorrowShaltThouB.dc.html",
+  "1SA-C13-D-P09-MakeTheManReturn.dc.html",
+  "1SA-C13-D-P10-MakeTheManReturn.dc.html",
+  "1SA-C13-D-P11-MakeTheManReturn.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1472,6 +1568,13 @@
    "text": "Chapter 12 · Abigail (1 Samuel 25–26)",
    "x": 0,
    "y": 48000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · The Witch of En-dor (1 Samuel 27–29)",
+   "x": 0,
+   "y": 52100
   }
  },
  "designSystems": [],
