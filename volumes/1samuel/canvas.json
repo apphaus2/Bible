@@ -415,6 +415,104 @@
    "w": 760,
    "h": 1080,
    "title": "53 · Long Live the King"
+  },
+  "1SA-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · To Obey Is Better"
+  },
+  "1SA-C05-D-P01-JabeshGilead.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Jabesh-gilead"
+  },
+  "1SA-C05-D-P02-JabeshGilead.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Jabesh-gilead"
+  },
+  "1SA-C05-D-P03-JabeshGilead.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Jabesh-gilead"
+  },
+  "1SA-C05-D-P04-JabeshGilead.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Jabesh-gilead"
+  },
+  "1SA-C05-D-P05-WhoseOxHaveITaken.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Whose Ox Have I Taken?"
+  },
+  "1SA-C05-D-P06-WhoseOxHaveITaken.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Whose Ox Have I Taken?"
+  },
+  "1SA-C05-D-P07-WhoseOxHaveITaken.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Whose Ox Have I Taken?"
+  },
+  "1SA-C05-D-P08-WhoseOxHaveITaken.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Whose Ox Have I Taken?"
+  },
+  "1SA-C05-D-P09-ThunderAndRain.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Thunder and Rain"
+  },
+  "1SA-C05-D-P10-ThouHastDoneFoolis.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Thou Hast Done Foolishly"
+  },
+  "1SA-C05-D-P11-ThouHastDoneFoolis.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Thou Hast Done Foolishly"
+  },
+  "1SA-C05-D-P12-ThouHastDoneFoolis.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Thou Hast Done Foolishly"
+  },
+  "1SA-C05-D-P13-NoSmithInIsrael.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · No Smith in Israel"
   }
  },
  "order": [
@@ -475,7 +573,21 @@
   "1SA-C04-D-P11-IsSaulAlsoAmongThe.dc.html",
   "1SA-C04-D-P12-LongLiveTheKing.dc.html",
   "1SA-C04-D-P13-LongLiveTheKing.dc.html",
-  "1SA-C04-D-P14-LongLiveTheKing.dc.html"
+  "1SA-C04-D-P14-LongLiveTheKing.dc.html",
+  "1SA-C05-00-Title.dc.html",
+  "1SA-C05-D-P01-JabeshGilead.dc.html",
+  "1SA-C05-D-P02-JabeshGilead.dc.html",
+  "1SA-C05-D-P03-JabeshGilead.dc.html",
+  "1SA-C05-D-P04-JabeshGilead.dc.html",
+  "1SA-C05-D-P05-WhoseOxHaveITaken.dc.html",
+  "1SA-C05-D-P06-WhoseOxHaveITaken.dc.html",
+  "1SA-C05-D-P07-WhoseOxHaveITaken.dc.html",
+  "1SA-C05-D-P08-WhoseOxHaveITaken.dc.html",
+  "1SA-C05-D-P09-ThunderAndRain.dc.html",
+  "1SA-C05-D-P10-ThouHastDoneFoolis.dc.html",
+  "1SA-C05-D-P11-ThouHastDoneFoolis.dc.html",
+  "1SA-C05-D-P12-ThouHastDoneFoolis.dc.html",
+  "1SA-C05-D-P13-NoSmithInIsrael.dc.html"
  ],
  "notes": {
   "Main": {
@@ -512,6 +624,13 @@
    "text": "Chapter 4 · Saul Anointed (1 Samuel 9–10)",
    "x": 0,
    "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · To Obey Is Better (1 Samuel 11–13)",
+   "x": 0,
+   "y": 18100
   }
  },
  "designSystems": [],

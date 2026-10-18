@@ -124,6 +124,7 @@ There are two editions:
 | 1 Samuel | 2 · Speak, Jehovah | 3–5 | title + 14 (pp. 15–28) | 55/55 verses full (Eli's death as the empty gate; the ark's travels as a map) | `volumes/1samuel/` |
 | 1 Samuel | 3 · Give Us a King | 6–8 | title + 11 (pp. 29–39) | 60/60 verses full (the digest's kine; 6:19 words only) | `volumes/1samuel/` |
 | 1 Samuel | 4 · Saul Anointed | 9–10 | title + 14 (pp. 40–53) | 54/54 verses full | `volumes/1samuel/` |
+| 1 Samuel | 5 · To Obey Is Better | 11–13 | title + 13 (pp. 54–66) | 63/63 verses full (11:2 and 11:7 words only) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width

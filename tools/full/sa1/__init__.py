@@ -29,5 +29,7 @@ META = {
      "blurb": "The ark sent home on a new cart with golden tumors and mice, two milch kine lowing on the straight way to Beth-shemesh; Mizpah, the great thunder, and the stone Eben-ezer: hitherto hath Jehovah helped us. Then the elders at Ramah: make us a king to judge us like all the nations."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Saul Anointed", "range": "1 Samuel 9–10", "bible_chapters": [9, 10],
      "blurb": "Kish's asses lost, and Saul, higher than any of the people, sent to seek them; the seer at the high place and the thigh reserved for him; the vial of oil; the band of prophets — is Saul also among the prophets?; the lot at Mizpah, Saul hid among the baggage, and long live the king."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "To Obey Is Better", "range": "1 Samuel 11–13", "bible_chapters": [11, 12, 13],
+     "blurb": "Nahash at Jabesh-gilead and Saul following the oxen out of the field; the kingdom renewed at Gilgal; Samuel's farewell — whose ox have I taken? — and thunder in wheat harvest; the Philistines as the sand at Michmash, Saul's burnt-offering, and a man after his own heart; no smith in all the land."},
   ],
 }

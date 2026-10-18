@@ -138,3 +138,37 @@ def baggage(p, w, h, seed):
         x, y = r.uniform(w * 0.3, w * 0.7), r.uniform(h * 0.72, h * 0.96)
         o.append(f'<rect x="{f(x - 26)}" y="{f(y - 22)}" width="52" height="34" rx="8" fill="{r.choice(["#A8946A", "#8A6A4A", "#C8A06A"])}" stroke="#0D0D0F" stroke-width="2"></rect>')
     return "".join(o)
+
+# ---- 1 Samuel 11–13 -----------------------------------------------------------------------------------------------------
+import exodus2 as E2
+def oxen_field(p, w, h, seed):
+    """Saul came following the oxen out of the field at evening."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.2, h * 0.36, 26, color="#FF8A3D", op=0.4),
+         hills(w, h, h * 0.5, seed, color="#9A7A4A", amp=12), ground(w, h, h * 0.58, "#C8A06A", dy=0)]
+    o.append(S1.cow(w * 0.62, b, min(0.9, h / 360), color="#8A5A30") + S1.cow(w * 0.8, b - 6, min(0.86, h / 380), color="#6A4A2A"))
+    o.append(saul_fig(p, w * 0.36, b, fit(b, h * 0.44)))
+    return "".join(o)
+
+def harvest_thunder(w, h, seed):
+    """Thunder and rain in the wheat harvest: lightning over a field of ripe grain."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A2E4A"></rect>', E2.bolt(w * 0.62, 0, h * 0.62, seed, w=1.6),
+         ground(w, h, h * 0.62, "#B8902A", dy=0)]
+    r = random.Random(seed)
+    for _ in range(80):
+        x, y = r.uniform(0, w), r.uniform(0, h * 0.9)
+        o.append(f'<path d="M{f(x)} {f(y)} L {f(x - 4)} {f(y + 18)}" stroke="#8FB8D8" stroke-width="1.6" opacity="0.7"></path>')
+    for i in range(40):
+        x = w * (i / 40); o.append(f'<path d="M{f(x)} {f(h)} L {f(x + 3)} {f(h * 0.7)}" stroke="#E8C040" stroke-width="3"></path><ellipse cx="{f(x + 3)}" cy="{f(h * 0.68)}" rx="3" ry="8" fill="#E8C040"></ellipse>')
+    return "".join(o)
+
+def no_smith(w, h, seed):
+    """No smith in Israel: shares, coulters, axes and mattocks laid by a Philistine forge, a file beside them."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2218"></rect>', ground(w, h, h * 0.8, "#2A1810", dy=0),
+         E.blaze(w * 0.82, h * 0.82, w * 0.16, h * 0.3, seed, n=6)]
+    tools = [("M0 0 L 60 -10 L 70 4 L 4 14 Z", "#8A8A9A"), ("M0 0 L 10 -60 L 22 -58 L 12 2 Z", "#7A7A8A"), ("M0 -40 L 40 -40 L 40 -20 L 0 -30 Z", "#9A9AAA"), ("M0 0 L 50 -30 L 56 -20 L 6 10 Z", "#8A8A9A")]
+    for i, (d, c) in enumerate(tools):
+        x = w * (0.14 + i * 0.15); y = h * 0.78
+        o.append(f'<path d="M{f(x - 30)} {f(y)} L {f(x + 40)} {f(y - 30)}" stroke="#6A4A2A" stroke-width="7" stroke-linecap="round"></path>'
+                 f'<path transform="translate({f(x + 30)} {f(y - 36)})" d="{d}" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>')
+    return "".join(o)
