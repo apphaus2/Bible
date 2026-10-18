@@ -100,6 +100,24 @@ for key, d in SRC.items():
 VOLUMES.sort(key=lambda v: v.get("order", 0))
 SERIES = VOLUMES + [x for x in DIGEST if x["key"] in SRC]
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
+# ── the ASV text as a PDF (tools/book/asv_pdf.py; rebuild_site.py copies it in when it exists) ──
+ASV_PDF = "bible-asv.pdf"
+HAS_PDF = (out / ASV_PDF).exists()
+ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of each book in ref/asv
+for f in sorted((pathlib.Path(__file__).resolve().parents[2] / "ref" / "asv").glob("[0-9][0-9]-*.usfm")):
+    m = re.search(r"^\\h (.+?)\s*$", f.read_text(encoding="utf-8"), re.M)
+    if m: ASV_CODES[m.group(1)] = re.match(r"\d\d-(\w{3})", f.name).group(1)
+def asv_href(up, ref=""):
+    """Link to the ASV PDF, opened at the chapter a ref like "Genesis 24:1–25:18" or "1 Samuel 1 – 3" starts in."""
+    for name in sorted(ASV_CODES, key=len, reverse=True):
+        m = re.match(re.escape(name) + r" (\d+)", ref)
+        if m: return f"{up}{ASV_PDF}#nameddest={ASV_CODES[name]}.{m.group(1)}"
+    return up + ASV_PDF
+def asv_credit(up, ref=""):
+    """The "ASV" credit of every footer, linked to the text when the PDF is on the site."""
+    if not HAS_PDF: return "<span>ASV</span>"
+    return f'<a href="{asv_href(up, ref)}" title="Read {esc(ref) + " " if ref else ""}in the ASV (PDF)">ASV</a>'
+
 def slug(t):
     t = re.sub(r"^(B\d+ · )?\d+ · ", "", t)
     return re.sub(r"[^a-z0-9]+", "-", t.lower().replace("·", " ")).strip("-")
@@ -188,13 +206,14 @@ for ed, chain in FLAT.items():
 {bar(crumbs0 + [f'<a href="index.html">{L}</a>', f'<span aria-current="page">{esc(p["num"])}</span>'],
      f'<div class="pager">{pn}{nn}</div>')}
 <main class="stage" id="stage"><h1 class="sr">{esc(p['heading'])} — {esc(p['ref'])}</h1><div class="sheet" id="sheet">{p['body']}</div></main>
-<footer class="foot"><span>{esc(p['ref'])} · {esc(p['heading'])}</span><span>ASV</span></footer>
+<footer class="foot"><span>{esc(p['ref'])} · {esc(p['heading'])}</span>{asv_credit("../../", p['ref'])}</footer>
 <script src="../../assets/site.js"></script>
 </body>
 </html>
 ''')
     cards = "\n".join(f'''<li><a class="card" href="{p['slug']}.html"><img src="../../thumbs/{thumb(b, p)}" alt="{esc(p['heading'])}" width="380" height="540" loading="lazy"><span class="num">{esc(p['num'])}</span><span class="h">{esc(p['heading'])}</span><span class="ref">{esc(p['ref'])}</span></a></li>''' for p in P)
     note = "" if ed == "full" else '<p class="note">Digest edition: an early, abridged first draft (highlights only). The full edition is replacing it.</p>'
+    text = f'<a class="cta alt" href="{asv_href("../../", b["range"])}">{esc(b["range"])} in the ASV ›</a>' if HAS_PDF else ""
     (d / "index.html").write_text(f'''<!doctype html>
 <html lang="en">
 <head>
@@ -213,14 +232,14 @@ for ed, chain in FLAT.items():
     <p class="kicker">{SN} · {L} · {esc(b['range'])}</p>
     <h1>{esc(b['name'])}</h1>
     <p class="lede">{esc(b['blurb'])}</p>{note}
-    <a class="cta" href="{P[0]['slug']}.html">Start reading ›</a>
+    <a class="cta" href="{P[0]['slug']}.html">Start reading ›</a>{text}
   </section>
   <h2 class="sec">Pages</h2>
   <ol class="grid">
 {cards}
   </ol>
 </main>
-<footer class="foot"><span>Bible Manga · {SN}</span><span>ASV</span></footer>
+<footer class="foot"><span>Bible Manga · {SN}</span>{asv_credit("../../", b['range'])}</footer>
 </body>
 </html>
 ''')
@@ -242,6 +261,13 @@ def section(S, cls):
 full_secs = "\n".join(section(S, "sec") for S in VOLUMES)
 digest_secs = "\n".join(section(S, "sec small") for S in SERIES if S["edition"] == "digest")
 first = (FLAT["full"] or FLAT["digest"])[0]
+home_text_cta = f'<a class="cta alt" href="{ASV_PDF}">The whole Bible · PDF ›</a>' if HAS_PDF else ""
+text_sec = "" if not HAS_PDF else f'''  <h2 class="sec" id="text">The Text</h2>
+  <p class="lede">The manga quotes the ASV word for word. Here is the whole text, Genesis to Revelation, as one PDF
+  ({(out / ASV_PDF).stat().st_size / 1e6:.0f} MB): two columns, a bookmark for every book and chapter, and a contents page that links them all.
+  The ASV credit at the foot of every manga page opens it at that page's chapter.</p>
+  <a class="cta alt" href="{ASV_PDF}">Read the ASV · PDF ›</a>
+'''
 vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
 (out / "index.html").write_text(f'''<!doctype html>
 <html lang="en">
@@ -261,22 +287,23 @@ vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
     <p class="kicker">Bible Manga · {" · ".join(v["kanji"] for v in VOLUMES)}</p>
     <h1>Bible Manga</h1>
     <p class="lede">The Bible as a full-color manga — one volume per book of the Bible, every scene and every line of dialogue in the words of the ASV. Now in progress: {esc(vol_names)}.</p>
-    <a class="cta" href="{first['series']['path']}/{first['dir']}/{first['pages'][0]['slug']}.html">Start at the beginning ›</a>
+    <a class="cta" href="{first['series']['path']}/{first['dir']}/{first['pages'][0]['slug']}.html">Start at the beginning ›</a>{home_text_cta}
   </section>
   <h2 class="sec">The Full Edition</h2>
 {full_secs}
   <h2 class="sec" id="digest">Digest Editions</h2>
   <p class="note">The first drafts: short books of highlights from Genesis to 2 Samuel. They are being replaced by the full edition, volume by volume.</p>
 {digest_secs}
-  <h2 class="sec">All pages</h2>
+{text_sec}  <h2 class="sec">All pages</h2>
   <ol class="toc">
 {chr(10).join(toc_entry(b) for b in FLAT["full"] + FLAT["digest"])}
   </ol>
 </main>
-<footer class="foot"><span>Bible Manga</span><span>ASV</span></footer>
+<footer class="foot"><span>Bible Manga</span>{asv_credit("")}</footer>
 </body>
 </html>
 ''')
+if HAS_PDF: manifest["text"] = {"title": "The Holy Bible · ASV", "url": ASV_PDF, "chapter_url": ASV_PDF + "#nameddest=<BOOK>.<chapter>"}
 (out / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
 (out / ".nojekyll").write_text("")
 print("built", sum(len(b["pages"]) for e in FLAT.values() for b in e), "pages")

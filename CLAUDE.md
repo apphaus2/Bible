@@ -179,7 +179,8 @@ tools/
   kit/                the shared drawing kit (mk.py, faces, figures, every art module; see below)
   digest/             the digest book writers (exodus_book1.py … samuel4_book2.py, build3–5.py)
   site/               build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
-  book/               export_book.py + render.js: a volume as a fixed-layout EPUB and a print PDF (see Book export)
+  book/               export_book.py + render.js: a volume as a fixed-layout EPUB and a print PDF (see Book export);
+                      asv_pdf.py: the whole ASV text as bible-asv.pdf, which the website links
 ```
 
 Drawing kit reference (`tools/kit/`, except the `*_book*.py` and `build3–5.py` writers in `tools/digest/`
@@ -548,7 +549,13 @@ One-time setting: repo Settings › Pages › Source: **GitHub Actions**. Runs: 
   one-finger flick (a quarter of the screen, at least 90 px, mostly sideways, under 0.6 s). A second finger (pinch)
   cancels it and blocks swipes for 0.6 s; nothing turns while the page is zoomed (`visualViewport.scale` > 1) or if the
   viewport panned during the gesture. Keep these rules if the reader changes; phones zoom to read the captions.
-- `manifest.json`: every series/volume, book/chapter and page (title, verse ref, URL, thumbnail, source).
+- `bible-asv.pdf`: the whole ASV text (see Book export). The workflow builds it with `tools/book/asv_pdf.py` and caches
+  it (key: `ref/asv`, `asv_pdf.py`, `render.js`); `rebuild_site.py` copies `_book/bible-asv.pdf` in when it exists, and
+  only then does `build_site.py` link it: a "Whole Bible · PDF" button and a "The Text" section on the home page, a
+  "<range> in the ASV" button on every chapter/book page, and the "ASV" credit in every footer, which opens the PDF at
+  that page's chapter (`#nameddest=GEN.24`, from the page's verse ref).
+- `manifest.json`: every series/volume, book/chapter and page (title, verse ref, URL, thumbnail, source), plus `text`
+  (the PDF's URL).
 - `thumbs/`: 380×540 JPGs — `vol-<volume>-chapter-NN-<slug>.jpg` for the full edition; the digest
   keeps its old names (`book-NN-…` for Genesis, `<series>-book-NN-…` for the others).
   `thumbs/.sources.json` keeps a hash of each thumbnail's source page; changed pages are re-rendered and
@@ -576,6 +583,16 @@ pages the website uses. It needs Node + Playwright, like `shots.js`.
   `_book/fonts/` and embedded in both outputs (all four fonts are SIL Open Font License). `--no-fonts` skips this,
   and readers then substitute their own fonts (Anton's wide fallback breaks the title layouts).
 - Still to do before a real print run: a CMYK proof of the reds and golds, a printer's preflight, and an epubcheck run.
+
+**The ASV text as a PDF:** `python3 tools/book/asv_pdf.py` sets the whole Bible from `ref/asv` as `_book/bible-asv.pdf`
+(about 1,175 pages, 8 MB, ~30 s): 7 × 10 in, two columns of Source Serif 4, red verse numbers, Anton chapter numerals
+(on their own line where a chapter opens in poetry), a running head with the book name and the manga's running foot
+(`— NN —`, ASV). Title page and testament dividers in the night/gold palette with 聖書; a contents page linking every
+book and chapter; supplied words in italics; psalm titles, BOOK I–V, Psalm 119's letters and the 16 NT footnotes kept;
+front matter and preface left out (ADR 0001). Every book, chapter and testament is a named destination, so
+`bible-asv.pdf#nameddest=GEN.24` opens at Genesis 24 (`OT`, `NT`, `GEN`, `PSA.119` …). Needs Playwright ≥ 1.49
+(Chromium 131 draws the running heads with CSS page-margin boxes) and `pypdf`, which writes the bookmarks: Chromium
+only makes bookmarks in a tagged PDF, three times the size. `--books GEN,PSA` builds a quick proof.
 
 ## Checking pages
 

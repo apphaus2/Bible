@@ -30,10 +30,10 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install Pillow and Playwright (Chromium)
+      - name: Install Pillow, pypdf and Playwright (Chromium)
         run: |
-          pip install pillow
-          npm install --no-save --no-package-lock playwright@1.48.2
+          pip install pillow pypdf
+          npm install --no-save --no-package-lock playwright@1.49.1
           npx playwright install --with-deps chromium
 
       - name: Check the full edition against the ASV
@@ -48,6 +48,15 @@ jobs:
           path: _site/thumbs
           key: thumbs-${{ github.run_id }}
           restore-keys: thumbs-
+
+      - name: Restore the ASV PDF
+        uses: actions/cache@v4
+        with:
+          path: _book/bible-asv.pdf
+          key: asv-pdf-${{ hashFiles('ref/asv/*.usfm', 'tools/book/asv_pdf.py', 'tools/book/render.js') }}
+
+      - name: Build the ASV PDF (only when the text or its script changed)
+        run: test -f _book/bible-asv.pdf || python3 tools/book/asv_pdf.py
 
       - name: Build the site
         run: python3 tools/site/rebuild_site.py --thumbs --out _site

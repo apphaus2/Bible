@@ -26,6 +26,12 @@ body.reader{background:var(--night)}
 .lede{max-width:640px;margin:18px 0 24px;font-size:14px;line-height:1.7}
 .cta{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;background:var(--red);color:#fff;text-decoration:none;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:2px solid var(--ink)}
 .cta:hover{background:var(--ink)}
+.cta.alt{background:var(--paper);color:var(--ink)}
+.cta.alt:hover{background:var(--ink);color:var(--paper)}
+.cta+.cta{margin-left:10px}
+@media (max-width:520px){.cta+.cta{margin:10px 0 0}}
+.foot a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.foot a:hover{color:var(--red)}
 .sec{margin:36px 0 16px;font-family:Anton,sans-serif;font-weight:400;font-size:28px;letter-spacing:.06em;text-transform:uppercase}
 .grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:20px 16px}
 .grid.books{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
