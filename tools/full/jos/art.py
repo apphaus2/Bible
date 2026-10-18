@@ -395,3 +395,98 @@ def hewers(p, w, h, seed):
 def below(fn, k=0.42):
     """A drawing f(w, h) set in the lower part of a panel, so a column of words at the top leaves it clear."""
     return lambda w, h: f'<g transform="translate(0 {h * k:.1f})">' + fn(w, h * (1 - k)) + '</g>'
+
+# ---- Joshua 10–11 -------------------------------------------------------------------------------------------------------
+import exodus2 as E2, exodus3 as E3
+CROWN = '<path d="M-14 -200 L -14 -214 L -7 -206 L 0 -218 L 7 -206 L 14 -214 L 14 -200 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path>'
+KING_C = ("#5A1A4A", "#1F4A7A", "#7A3A1A", "#3A5A2A", "#6A2A2A")
+
+def five_kings(p, w, h, seed):
+    """The five kings of the Amorites with their hosts, encamped against Gibeon on its hill."""
+    r = random.Random(seed); b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>', sun(w * 0.14, h * 0.16, 16, color="#FF8A3D", op=0.3),
+         J.city_hill(w * 0.8, h * 0.6, w * 0.24, h * 0.34, seed), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    for i in range(18):
+        x = w * (0.04 + (i % 9) * 0.07); y = h * (0.7 + (i // 9) * 0.06)
+        o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * 0.16), 3), body="#2A1A14", cloth=r.choice(("#3A2A2A", "#4A3A2A", "#2A2A3A")), kind="Tunic", sw=2, extra=E4.SPEAR))
+    s = fit(b, h * 0.5)
+    for i in range(5):
+        o.append(mk.person(p, round(w * (0.1 + i * 0.12)), round(b), round(s, 3), body=SKIN, cloth=KING_C[i], sw=3, flip=False, extra=CROWN))
+    return "".join(o)
+
+def night_march(p, w, h, seed):
+    """Joshua went up from Gilgal all the night: the men of war climbing in file under the stars."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#0F0E2A")]
+    o.append(f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.9)} L {f(w * 0.7)} {f(h * 0.34)} L {f(w + 10)} {f(h * 0.3)} L {f(w + 10)} {f(h + 10)} Z" fill="#1E1A3A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    for i in range(12):
+        t = i / 11; x = w * (0.04 + 0.66 * t); y = h * (0.9 - 0.56 * t)
+        o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * (0.2 - 0.12 * t)), 3), body="#0B0814", cloth="#2A2440", kind="Tunic", sw=2, extra=E4.SPEAR))
+    return "".join(o)
+
+def hailstones(w, h, seed):
+    """Great stones from heaven upon them at the descent of Beth-horon, unto Azekah."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A2E4A"></rect>', V.rays(w * 0.5, -h * 0.2, 30, 20, max(w, h) * 1.4, color="#E8F0F6", op=0.12)]
+    o.append(f'<path d="M-10 {f(h * 0.5)} L {f(w * 0.4)} {f(h * 0.6)} L {f(w + 10)} {f(h * 0.94)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#4A4A5A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    o.append(E2.hail(70, 0, w, 0, h * 0.9, seed))
+    o.append(label(w * 0.1, h * 0.46, "BETH-HORON", "#E8F0F6", 9, "start") + label(w * 0.9, h * 0.88, "AZEKAH", "#E8F0F6", 9, "end"))
+    return "".join(o)
+
+def cave(w, h, seed, sealed=False, dusk=False):
+    """The cave at Makkedah; sealed=True: great stones rolled unto its mouth (dusk: at the going down of the sun)."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#4A2A3A" if dusk else "#C8A06A"}"></rect>']
+    if dusk: o.append(sun(w * 0.86, h * 0.4, 24, color="#FF6A2A", op=0.45))
+    o.append(f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.16)} C {f(w * 0.3)} {f(h * 0.06)} {f(w * 0.6)} {f(h * 0.18)} {f(w * 0.74)} {f(h + 10)} Z" fill="{"#3A2430" if dusk else "#8A6A4A"}" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    cx, cy = w * 0.36, h * 0.74
+    o.append(f'<path d="M{f(cx - w * 0.14)} {f(h * 0.92)} C {f(cx - w * 0.14)} {f(h * 0.5)} {f(cx + w * 0.14)} {f(h * 0.5)} {f(cx + w * 0.14)} {f(h * 0.92)} Z" fill="#0B0608" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    if sealed:
+        for row in range(3):
+            for i in range(4 - row):
+                x = cx + (i - (3 - row) / 2) * w * 0.07; y = h * (0.86 - row * 0.1)
+                o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.04)}" ry="{f(h * 0.06)}" fill="{r.choice(["#8A7A6A", "#6A5A4A", "#A89A86"])}" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    o.append(ground(w, h, h * 0.92, "#5A4A3A" if not dusk else "#2A1A24", dy=0))
+    return "".join(o)
+
+CAMPAIGN = [("GILGAL", 0.86, 0.36), ("GIBEON", 0.6, 0.3), ("BETH-HORON", 0.46, 0.26), ("AZEKAH", 0.34, 0.46), ("MAKKEDAH", 0.3, 0.54), ("LIBNAH", 0.24, 0.6),
+            ("LACHISH", 0.2, 0.7), ("EGLON", 0.12, 0.78), ("HEBRON", 0.5, 0.72), ("DEBIR", 0.4, 0.86)]
+def campaign(w, h, upto=None, hi=()):
+    """The southern campaign as a technical map: from Gilgal to Gibeon, down by Beth-horon to Makkedah, then city by city.
+    upto: draw the route through that city; hi: cities to mark red."""
+    o = [grid_bg(w, h)]
+    o.append(node(w * 0.26, h * 0.32, "GEZER", "#8FD0E2", r=4, dy=-10, size=8))
+    names = [c[0] for c in CAMPAIGN]
+    n = names.index(upto) + 1 if upto else len(CAMPAIGN)
+    o.append(route([(w * x, h * y) for _, x, y in CAMPAIGN[:n]], color="#FFD23F"))
+    for nm, x, y in CAMPAIGN:
+        o.append(node(w * x, h * y, nm, "#D7261E" if nm in hi else "#FFD23F", r=6 if nm in hi else 4, dy=-10, size=9 if nm in hi else 8))
+    o.append(label(w * 0.92, h * 0.94, "THE SOUTH", "#C8A06A", 9, "end"))
+    return "".join(o)
+
+def chariots(p, w, h, seed, burning=False):
+    """The hosts of the kings of the north at the waters of Merom, with horses and chariots very many; burning=True: the
+    chariots burnt with fire."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#2A0A0A" if burning else "#8FD0E2"}"></rect>',
+         hills(w, h, h * 0.36, seed, color="#5A6A4A" if not burning else "#2A1A1A", amp=16),
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.44)}" rx="{f(w * 0.3)}" ry="{f(h * 0.05)}" fill="#2C9DB8" stroke="#0D0D0F" stroke-width="2"></ellipse>',
+         ground(w, h, h * 0.52, "#B89A6A" if not burning else "#3A2A1A", dy=0)]
+    for k in range(3):
+        y = h * (0.66 + k * 0.12); s = 0.22 + k * 0.08
+        for i in range(5):
+            x = w * (0.08 + i * 0.2 + (k % 2) * 0.1)
+            o.append(E3.chariot(x, y, s, flip=False, color="#3A2214"))
+            if burning: o.append(E.blaze(x, y, w * 0.08, h * 0.16, seed + k * 10 + i, n=5))
+    return "".join(o)
+
+LAND = [("THE HILL-COUNTRY", 0.36, 0.3, 0.6, 0.62, "#9A6A3A"), ("THE LOWLAND", 0.16, 0.36, 0.34, 0.74, "#C8A030"), ("THE SOUTH", 0.2, 0.76, 0.64, 0.94, "#C8682E"),
+        ("GOSHEN", 0.42, 0.66, 0.6, 0.76, "#9CCB5E"), ("THE ARABAH", 0.62, 0.3, 0.74, 0.8, "#2C9DB8"), ("LEBANON", 0.36, 0.04, 0.7, 0.18, "#2E6B3A")]
+def land_taken(w, h):
+    """So Joshua took all that land: the regions named in Joshua 11:16–17, from mount Halak unto Baal-gad under Hermon."""
+    o = [grid_bg(w, h)]
+    for nm, x0, y0, x1, y1, c in LAND:
+        o.append(f'<rect x="{f(w * x0)}" y="{f(h * y0)}" width="{f(w * (x1 - x0))}" height="{f(h * (y1 - y0))}" fill="{c}" opacity="0.45" stroke="{c}" stroke-width="2"></rect>'
+                 + label(w * x0 + 6, h * y0 + 14, nm, "#F3EFE6", 8, "start", ls=0.08))
+    o.append(node(w * 0.74, h * 0.04, "MOUNT HERMON", "#FFD23F", r=4, dy=16, size=8) + node(w * 0.6, h * 0.2, "BAAL-GAD", "#FFD23F", r=4, dy=-8, size=8)
+             + node(w * 0.7, h * 0.94, "MOUNT HALAK", "#FFD23F", r=4, dy=-8, size=8))
+    return "".join(o)

@@ -28,5 +28,7 @@ META = {
      "blurb": "Seven priests with seven trumpets of rams' horns compass the city seven days; the great shout, and the wall falls down flat; Rahab and her father's household saved alive. Then the devoted thing: the flight before Ai, the lot that takes Achan, the Babylonish mantle and the wedge of gold, and the valley of Achor."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Ai and the Gibeonites", "range": "Joshua 8–9", "bible_chapters": [8, 9],
      "blurb": "An ambush behind the city and the javelin stretched out toward Ai; the smoke of the city ascending up to heaven; an altar of unhewn stones in mount Ebal and the law read before all Israel; then the Gibeonites with mouldy bread and rent wine-skins, a covenant made without asking counsel at the mouth of Jehovah, and the hewers of wood and drawers of water."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Sun Stood Still", "range": "Joshua 10–11", "bible_chapters": [10, 11],
+     "blurb": "Five kings against Gibeon; a night march from Gilgal and great stones from heaven; Sun, stand thou still upon Gibeon, and thou, Moon, in the valley of Aijalon; the cave at Makkedah; the southern cities taken one by one; then the kings of the north at the waters of Merom, Hazor burnt, and the land had rest from war."},
   ],
 }

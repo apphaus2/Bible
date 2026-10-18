@@ -317,6 +317,90 @@
    "w": 760,
    "h": 1080,
    "title": "39 · Let Them Live"
+  },
+  "JOS-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Sun Stood Still"
+  },
+  "JOS-C05-D-P01-FiveKingsOfTheAmor.dc.html": {
+   "x": 840,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Five Kings of the Amorites"
+  },
+  "JOS-C05-D-P02-FiveKingsOfTheAmor.dc.html": {
+   "x": 1680,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Five Kings of the Amorites"
+  },
+  "JOS-C05-D-P03-SunStandThouStill.dc.html": {
+   "x": 2520,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Sun, Stand Thou Still"
+  },
+  "JOS-C05-D-P04-TheCaveAtMakkedah.dc.html": {
+   "x": 3360,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · The Cave at Makkedah"
+  },
+  "JOS-C05-D-P05-TheCaveAtMakkedah.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · The Cave at Makkedah"
+  },
+  "JOS-C05-D-P06-AllTheseKingsAndTh.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · All These Kings and Their Land"
+  },
+  "JOS-C05-D-P07-AllTheseKingsAndTh.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · All These Kings and Their Land"
+  },
+  "JOS-C05-D-P08-TheWatersOfMerom.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Waters of Merom"
+  },
+  "JOS-C05-D-P09-TheWatersOfMerom.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Waters of Merom"
+  },
+  "JOS-C05-D-P10-Hazor.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Hazor"
+  },
+  "JOS-C05-D-P11-SoJoshuaTookTheWho.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · So Joshua Took the Whole Land"
   }
  },
  "order": [
@@ -363,7 +447,19 @@
   "JOS-C04-D-P08-TheyDidWorkWilily.dc.html",
   "JOS-C04-D-P09-TheyDidWorkWilily.dc.html",
   "JOS-C04-D-P10-LetThemLive.dc.html",
-  "JOS-C04-D-P11-LetThemLive.dc.html"
+  "JOS-C04-D-P11-LetThemLive.dc.html",
+  "JOS-C05-00-Title.dc.html",
+  "JOS-C05-D-P01-FiveKingsOfTheAmor.dc.html",
+  "JOS-C05-D-P02-FiveKingsOfTheAmor.dc.html",
+  "JOS-C05-D-P03-SunStandThouStill.dc.html",
+  "JOS-C05-D-P04-TheCaveAtMakkedah.dc.html",
+  "JOS-C05-D-P05-TheCaveAtMakkedah.dc.html",
+  "JOS-C05-D-P06-AllTheseKingsAndTh.dc.html",
+  "JOS-C05-D-P07-AllTheseKingsAndTh.dc.html",
+  "JOS-C05-D-P08-TheWatersOfMerom.dc.html",
+  "JOS-C05-D-P09-TheWatersOfMerom.dc.html",
+  "JOS-C05-D-P10-Hazor.dc.html",
+  "JOS-C05-D-P11-SoJoshuaTookTheWho.dc.html"
  ],
  "notes": {
   "Main": {
@@ -400,6 +496,13 @@
    "text": "Chapter 4 · Ai and the Gibeonites (Joshua 8–9)",
    "x": 0,
    "y": 12800
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Sun Stood Still (Joshua 10–11)",
+   "x": 0,
+   "y": 16900
   }
  },
  "designSystems": [],
