@@ -76,6 +76,7 @@ There are two editions:
 | Numbers | 8 · Korah | 15–17 | title + 19 (pp. 100–118) | 104/104 verses full (16:31–35 as tents and censers; 15:36 as the heap) | `volumes/numbers/` |
 | Numbers | 9 · The Water for Impurity | 18–19 | title + 8 (pp. 119–126) | 54/54 verses full (all law cells) | `volumes/numbers/` |
 | Numbers | 10 · Meribah and the Serpent of Brass | 20–21 | title + 14 (pp. 127–140) | 64/64 verses full (lifts seven digest panels; the songs in song boxes) | `volumes/numbers/` |
+| Numbers | 11 · Balaam | 22–24 | title + 19 (pp. 141–159) | 96/96 verses full (lifts eight digest panels; the parables in song boxes) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·

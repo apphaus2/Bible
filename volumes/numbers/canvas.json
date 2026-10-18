@@ -1066,6 +1066,146 @@
    "w": 760,
    "h": 1080,
    "title": "140 · Og the King of Bashan"
+  },
+  "NUM-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Balaam"
+  },
+  "NUM-C11-P01-Moab.dc.html": {
+   "x": 840,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Moab Was Sore Afraid"
+  },
+  "NUM-C11-P02-Curse.dc.html": {
+   "x": 1680,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Curse Me This People"
+  },
+  "NUM-C11-P03-Pethor.dc.html": {
+   "x": 2520,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · What Men Are These with Thee?"
+  },
+  "NUM-C11-P04-Refuseth.dc.html": {
+   "x": 3360,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Balaam Refuseth to Come with Us"
+  },
+  "NUM-C11-P05-HouseFull.dc.html": {
+   "x": 0,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · His House Full of Silver and Gold"
+  },
+  "NUM-C11-P06-Way.dc.html": {
+   "x": 840,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · The Angel of Jehovah in the Way"
+  },
+  "NUM-C11-P07-Ass.dc.html": {
+   "x": 1680,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · What Have I Done unto Thee?"
+  },
+  "NUM-C11-P08-Eyes.dc.html": {
+   "x": 2520,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Then Jehovah Opened the Eyes of Balaam"
+  },
+  "NUM-C11-P09-Sinned.dc.html": {
+   "x": 3360,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · I Have Sinned"
+  },
+  "NUM-C11-P10-Balak.dc.html": {
+   "x": 0,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Did I Not Earnestly Send unto Thee?"
+  },
+  "NUM-C11-P11-SevenAltars.dc.html": {
+   "x": 840,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · Build Me Here Seven Altars"
+  },
+  "NUM-C11-P12-Parable1.dc.html": {
+   "x": 1680,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · How Shall I Curse?"
+  },
+  "NUM-C11-P13-Pisgah.dc.html": {
+   "x": 2520,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Unto the Top of Pisgah"
+  },
+  "NUM-C11-P14-Parable2.dc.html": {
+   "x": 3360,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · God Is Not a Man, That He Should Lie"
+  },
+  "NUM-C11-P15-Peor.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Unto the Top of Peor"
+  },
+  "NUM-C11-P16-Tents.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · How Goodly Are Thy Tents, O Jacob"
+  },
+  "NUM-C11-P17-Flee.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · Flee Thou to Thy Place"
+  },
+  "NUM-C11-P18-Star.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · A Star out of Jacob"
+  },
+  "NUM-C11-P19-Amalek.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Amalek Was the First of the Nations"
   }
  },
  "order": [
@@ -1219,7 +1359,27 @@
   "NUM-C10-P11-Well.dc.html",
   "NUM-C10-P12-Sihon.dc.html",
   "NUM-C10-P13-Heshbon.dc.html",
-  "NUM-C10-P14-Og.dc.html"
+  "NUM-C10-P14-Og.dc.html",
+  "NUM-C11-00-Title.dc.html",
+  "NUM-C11-P01-Moab.dc.html",
+  "NUM-C11-P02-Curse.dc.html",
+  "NUM-C11-P03-Pethor.dc.html",
+  "NUM-C11-P04-Refuseth.dc.html",
+  "NUM-C11-P05-HouseFull.dc.html",
+  "NUM-C11-P06-Way.dc.html",
+  "NUM-C11-P07-Ass.dc.html",
+  "NUM-C11-P08-Eyes.dc.html",
+  "NUM-C11-P09-Sinned.dc.html",
+  "NUM-C11-P10-Balak.dc.html",
+  "NUM-C11-P11-SevenAltars.dc.html",
+  "NUM-C11-P12-Parable1.dc.html",
+  "NUM-C11-P13-Pisgah.dc.html",
+  "NUM-C11-P14-Parable2.dc.html",
+  "NUM-C11-P15-Peor.dc.html",
+  "NUM-C11-P16-Tents.dc.html",
+  "NUM-C11-P17-Flee.dc.html",
+  "NUM-C11-P18-Star.dc.html",
+  "NUM-C11-P19-Amalek.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1298,6 +1458,13 @@
    "text": "Chapter 10 · Meribah and the Serpent of Brass (Numbers 20–21)",
    "x": 0,
    "y": 43400
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Balaam (Numbers 22–24)",
+   "x": 0,
+   "y": 47500
   }
  },
  "designSystems": [],

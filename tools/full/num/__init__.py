@@ -37,5 +37,7 @@ META = {
      "blurb": "The charge of the priests and the Levites; the heave-offerings, the first-fruits and the firstlings, a covenant of salt for ever; I am thy portion and thine inheritance; the tithe and the tithe of the tithe; and the red heifer without spot, burned without the camp, whose ashes in running water are a water for impurity."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Meribah and the Serpent of Brass", "range": "Numbers 20–21", "bible_chapters": [20, 21],
      "blurb": "Miriam dead at Kadesh; the waters of Meribah, and the rock smitten twice; Edom refusing passage; Aaron gathered unto his people on mount Hor; the fiery serpents and the serpent of brass upon a standard; Spring up, O well; and Sihon and Og, the kings of the Amorites and of Bashan."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Balaam", "range": "Numbers 22–24", "bible_chapters": [22, 23, 24],
+     "blurb": "Balak king of Moab sends for Balaam to curse Israel; the ass sees the angel of Jehovah in the way, and Jehovah opens her mouth; seven altars on three heights; and four parables instead of curses — How goodly are thy tents, O Jacob; there shall come forth a star out of Jacob."},
   ],
 }
