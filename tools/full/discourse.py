@@ -38,7 +38,7 @@ def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, 
         cur.append(s); chars += n
     if cur: groups.append(cur)
     if len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) < most + 1 and _chars(groups[-1][0]) < 700 and not groups[-1][0]["head"]:
-        groups[-2] += groups.pop()                  # no lone short panel on the last page
+        last = groups.pop(); groups[-1] += last     # no lone short panel on the last page (pop first: groups[-2] += groups.pop() stores at the shifted index)
     out, head_now, side = [], default_head or "", False
     for k, g in enumerate(groups):
         needs = [_need(s) for s in g]

@@ -97,8 +97,15 @@ def main(vol, check=False):
                 n += 1
                 if norm(seg) not in full:
                     bad += 1; print("NOT ASV:", p.name, "|", seg[:100])
-    print(f"{vol}: {len(order)} pages, {n} text blocks checked, {bad} not found; coverage {tot}")
-    if bad: sys.exit(1)
+    # lost-text check: every piece of the ASV the plan cut out must be on some page (coverage counts the cuts, so a
+    # page dropped by a layout bug would otherwise still count its verses as full)
+    every = norm(html.unescape(re.sub(r"<[^>]+>", " ", " ".join(p.read_text() for p in pages_dir.glob("*.dc.html")))))
+    lost = {}
+    for r, t in G.cuts:
+        if norm(t).rstrip(":;,.") not in every: lost.setdefault(r, t)   # a trailing stop may be trimmed on the page
+    for r, t in lost.items(): print("CUT BUT NOT ON ANY PAGE:", r, "|", t[:80])
+    print(f"{vol}: {len(order)} pages, {n} text blocks checked, {bad} not found, {len(lost)} lost; coverage {tot}")
+    if bad or lost: sys.exit(1)
 
 if __name__ == "__main__":
     main(sys.argv[1], check="--check" in sys.argv)

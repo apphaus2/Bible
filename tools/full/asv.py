@@ -38,6 +38,7 @@ class Book:
         self.code = code
         self.verses = parse(ROOT / "ref" / "asv" / FILES[code])
         self.used = {}                       # (c, v) -> set of character indexes used
+        self.cuts = []                       # every (ref, text) handed out, for build_volume's lost-text check
 
     def _mark(self, k, a, b):
         self.used.setdefault(k, set()).update(range(a, b))
@@ -52,6 +53,7 @@ class Book:
             if i < 0: raise ValueError(f"{self.code} {ref}: {to!r} not after {frm!r}")
             b = i + len(to)
         self._mark(k, a, b)
+        self.cuts.append((ref, t[a:b].strip()))
         return t[a:b].strip()
 
     def span(self, refs):

@@ -353,12 +353,12 @@
    "h": 1080,
    "title": "44 · Man Doth Not Live by Bread Only"
   },
-  "DEU-C04-D-P06-BewareLestThouForg.dc.html": {
+  "DEU-C04-D-P06-ManDothNotLiveByBr.dc.html": {
    "x": 840,
    "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "45 · Beware Lest Thou Forget"
+   "title": "45 · Man Doth Not Live by Bread Only"
   },
   "DEU-C04-D-P07-BewareLestThouForg.dc.html": {
    "x": 1680,
@@ -416,12 +416,12 @@
    "h": 1080,
    "title": "52 · Hew Thee Two Tables of Stone"
   },
-  "DEU-C05-D-P07-WhatDothJehovahThy.dc.html": {
+  "DEU-C05-D-P07-HewTheeTwoTablesOf.dc.html": {
    "x": 1680,
    "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "53 · What Doth Jehovah Thy God Require of Thee"
+   "title": "53 · Hew Thee Two Tables of Stone"
   },
   "DEU-C05-D-P08-WhatDothJehovahThy.dc.html": {
    "x": 2520,
@@ -458,12 +458,12 @@
    "h": 1080,
    "title": "57 · A Land Which Jehovah Thy God Careth For"
   },
-  "DEU-C06-D-P04-ABlessingAndACurse.dc.html": {
+  "DEU-C06-D-P04-LayUpTheseMyWords.dc.html": {
    "x": 3360,
    "y": 21300,
    "w": 760,
    "h": 1080,
-   "title": "58 · A Blessing and a Curse"
+   "title": "58 · Lay Up These My Words"
   },
   "DEU-C06-D-P05-ABlessingAndACurse.dc.html": {
    "x": 0,
@@ -1244,7 +1244,7 @@
   "DEU-C04-D-P03-TheHornet.dc.html",
   "DEU-C04-D-P04-TheHornet.dc.html",
   "DEU-C04-D-P05-ManDothNotLiveByBr.dc.html",
-  "DEU-C04-D-P06-BewareLestThouForg.dc.html",
+  "DEU-C04-D-P06-ManDothNotLiveByBr.dc.html",
   "DEU-C04-D-P07-BewareLestThouForg.dc.html",
   "DEU-C05-00-Title.dc.html",
   "DEU-C05-D-P01-NotForThyRighteous.dc.html",
@@ -1253,13 +1253,13 @@
   "DEU-C05-D-P04-FortyDaysAndFortyN.dc.html",
   "DEU-C05-D-P05-FortyDaysAndFortyN.dc.html",
   "DEU-C05-D-P06-HewTheeTwoTablesOf.dc.html",
-  "DEU-C05-D-P07-WhatDothJehovahThy.dc.html",
+  "DEU-C05-D-P07-HewTheeTwoTablesOf.dc.html",
   "DEU-C05-D-P08-WhatDothJehovahThy.dc.html",
   "DEU-C06-00-Title.dc.html",
   "DEU-C06-D-P01-KnowYeThisDay.dc.html",
   "DEU-C06-D-P02-ALandWhichJehovahT.dc.html",
   "DEU-C06-D-P03-ALandWhichJehovahT.dc.html",
-  "DEU-C06-D-P04-ABlessingAndACurse.dc.html",
+  "DEU-C06-D-P04-LayUpTheseMyWords.dc.html",
   "DEU-C06-D-P05-ABlessingAndACurse.dc.html",
   "DEU-C06-L-P01-ThePlaceWhichJehov.dc.html",
   "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html",
