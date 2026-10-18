@@ -31,5 +31,7 @@ META = {
      "blurb": "The fire at Taberah; who shall give us flesh to eat?; the manna like coriander seed; Moses' burden and the seventy elders on whom the Spirit rested; Eldad and Medad; the quails and the graves of Kibroth-hattaavah; and Miriam, leprous as white as snow, shut up without the camp seven days."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Twelve Spies", "range": "Numbers 13–14", "bible_chapters": [13, 14],
      "blurb": "Twelve men sent to spy out the land of Canaan; the cluster of Eshcol borne upon a staff between two; the evil report, the children of Anak, and we were as grasshoppers; Joshua and Caleb: an exceeding good land; Moses' plea, I have pardoned; forty years in the wilderness; and the defeat at Hormah."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Korah", "range": "Numbers 15–17", "bible_chapters": [15, 16, 17],
+     "blurb": "The drink-offerings and the first of the dough; the man gathering sticks upon the sabbath; a cord of blue upon the fringes; Korah, Dathan and Abiram, and the two hundred and fifty with their censers; the ground that clave asunder; Aaron standing between the dead and the living; and the rod of Aaron that budded and bare ripe almonds."},
   ],
 }

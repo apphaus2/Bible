@@ -758,6 +758,146 @@
    "w": 760,
    "h": 1080,
    "title": "99 · Even unto Hormah"
+  },
+  "NUM-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Korah"
+  },
+  "NUM-C08-L-P01-WhenYeAreComeIntoT.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · When Ye Are Come into the Land"
+  },
+  "NUM-C08-L-P02-WhenYeAreComeIntoT.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · When Ye Are Come into the Land"
+  },
+  "NUM-C08-L-P03-TheFirstOfYourDoug.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The First of Your Dough"
+  },
+  "NUM-C08-L-P04-TheFirstOfYourDoug.dc.html": {
+   "x": 3360,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · The First of Your Dough"
+  },
+  "NUM-C08-P01-Sticks.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · A Man Gathering Sticks upon the Sabbath Day"
+  },
+  "NUM-C08-P02-Fringes.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · A Cord of Blue"
+  },
+  "NUM-C08-P03-Korah.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Ye Take Too Much upon You"
+  },
+  "NUM-C08-P04-Censers.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Take You Censers"
+  },
+  "NUM-C08-P05-Priesthood.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Seek Ye the Priesthood Also?"
+  },
+  "NUM-C08-P06-WeWillNotComeUp.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · We Will Not Come Up"
+  },
+  "NUM-C08-P07-Door.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · At the Door of the Tent of Meeting"
+  },
+  "NUM-C08-P08-GetYouUp.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Get You Up from about the Tabernacle of Korah"
+  },
+  "NUM-C08-P09-NewThing.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · If Jehovah Make a New Thing"
+  },
+  "NUM-C08-P10-Clave.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · The Ground Clave Asunder"
+  },
+  "NUM-C08-P11-Plates.dc.html": {
+   "x": 0,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · A Sign unto the Children of Israel"
+  },
+  "NUM-C08-P12-Murmured.dc.html": {
+   "x": 840,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Ye Have Killed the People of Jehovah"
+  },
+  "NUM-C08-P13-Between.dc.html": {
+   "x": 1680,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Between the Dead and the Living"
+  },
+  "NUM-C08-P14-Rods.dc.html": {
+   "x": 2520,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Twelve Rods"
+  },
+  "NUM-C08-P15-Budded.dc.html": {
+   "x": 3360,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Rod of Aaron Was Budded"
   }
  },
  "order": [
@@ -867,7 +1007,27 @@
   "NUM-C07-P14-AsILive.dc.html",
   "NUM-C07-P15-Forty.dc.html",
   "NUM-C07-P16-Remained.dc.html",
-  "NUM-C07-P17-Hormah.dc.html"
+  "NUM-C07-P17-Hormah.dc.html",
+  "NUM-C08-00-Title.dc.html",
+  "NUM-C08-L-P01-WhenYeAreComeIntoT.dc.html",
+  "NUM-C08-L-P02-WhenYeAreComeIntoT.dc.html",
+  "NUM-C08-L-P03-TheFirstOfYourDoug.dc.html",
+  "NUM-C08-L-P04-TheFirstOfYourDoug.dc.html",
+  "NUM-C08-P01-Sticks.dc.html",
+  "NUM-C08-P02-Fringes.dc.html",
+  "NUM-C08-P03-Korah.dc.html",
+  "NUM-C08-P04-Censers.dc.html",
+  "NUM-C08-P05-Priesthood.dc.html",
+  "NUM-C08-P06-WeWillNotComeUp.dc.html",
+  "NUM-C08-P07-Door.dc.html",
+  "NUM-C08-P08-GetYouUp.dc.html",
+  "NUM-C08-P09-NewThing.dc.html",
+  "NUM-C08-P10-Clave.dc.html",
+  "NUM-C08-P11-Plates.dc.html",
+  "NUM-C08-P12-Murmured.dc.html",
+  "NUM-C08-P13-Between.dc.html",
+  "NUM-C08-P14-Rods.dc.html",
+  "NUM-C08-P15-Budded.dc.html"
  ],
  "notes": {
   "Main": {
@@ -925,6 +1085,13 @@
    "text": "Chapter 7 · The Twelve Spies (Numbers 13–14)",
    "x": 0,
    "y": 29900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Korah (Numbers 15–17)",
+   "x": 0,
+   "y": 35200
   }
  },
  "designSystems": [],
