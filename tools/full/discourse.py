@@ -57,10 +57,15 @@ def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, 
             if s["stamp"]:                         # on the face's side, or above the verse label when words span the panel
                 pos = (("right" if flip else "left") + ": 14px; top: 12px") if s["tok"] else "right: 14px; bottom: 36px" if s["lines"] else "right: 14px; top: 12px"
                 extra += mk.stamp(s["stamp"], pos)
-            if end and k == len(groups) - 1 and i == len(g) - 1: extra += end
+            lines = s["lines"]
+            if end and k == len(groups) - 1 and i == len(g) - 1:
+                if s["tok"] and lines:                 # beside a face: the end mark closes the column of words, so it never overlaps them
+                    lines = lines + [("raw", re.sub(r"position: absolute; (?:(?:left|right|top|bottom): [-\d.]+px; )+", "align-self: flex-end; ", end))]
+                else:
+                    extra += end
             if s["lines"]:
                 art = (s["art"](W1, hh) if callable(s["art"]) else s["art"]) if s["art"] is not None else (X.cosmic(W1, hh) if s["tok"] is None else "")
-                body.append(speech.orate(s["tok"], hh, s["bg"], s["lines"], ref=s["ref"], flip=flip, art=art, top=s["tok"] is None and s["art"] is not None, extra=extra, hi=s["hi"]))
+                body.append(speech.orate(s["tok"], hh, s["bg"], lines, ref=s["ref"], flip=flip, art=art, top=s["tok"] is None and s["art"] is not None, extra=extra, hi=s["hi"]))
             else:
                 art = s["art"](W1, hh) if callable(s["art"]) else (s["art"] or "")
                 from fx import new

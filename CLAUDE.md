@@ -104,6 +104,7 @@ There are two editions:
 | Joshua | 4 · Ai and the Gibeonites | 8–9 | title + 11 (pp. 29–39) | 62/62 verses full (the ambush as a map; 8:21–29 words over the smoke and the heap) | `volumes/joshua/` |
 | Joshua | 5 · The Sun Stood Still | 10–11 | title + 11 (pp. 40–50) | 66/66 verses full (the southern campaign as a map; 10:24–27 words over the sealed cave) | `volumes/joshua/` |
 | Joshua | 6 · The Land That Remaineth | 12–14 | title + 8 (pp. 51–58) | 72/72 verses full (the kings and the lands beyond the Jordan as roll pages: `rolls.py`) | `volumes/joshua/` |
+| Joshua | 7 · The Lot of Judah | 15–17 | title + 8 (pp. 59–66) | 91/91 verses full (borders and cities as roll cells: `rolls.verse_cells`) | `volumes/joshua/` |
 
 **Genesis, Exodus, Leviticus, Numbers and Deuteronomy are complete.** Next: Joshua. Deuteronomy is `tools/full/deu/` (15
 chapters, plan in `deu/__init__.py`): Moses' discourses as speech panels (`speech.orate`, packed by `discourse.pack`,

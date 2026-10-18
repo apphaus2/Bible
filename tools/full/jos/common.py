@@ -32,6 +32,8 @@ KING_CANAAN = F("adam", skin="#B98A6E", shadow="#4A1A26", hair="#1A1210", hl="#4
 ELEAZAR = F("adam", skin="#C98E66", shadow="#6A4A3A", hair="#B8B2A6", hl="#8A867E", beard=True, beard_color="#B8B2A6", scarf="#F3EFE6", band=True, light="#FFE680")
 PHINEHAS = F("adam", skin="#C98E66", shadow="#6A4A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#F3EFE6", band=True, light="#FFE680")
 CALEB_OLD = F("adam", skin="#C98E66", shadow="#6A4A3A", hair="#D8D2C6", hl="#A8A296", beard=True, beard_color="#D8D2C6", scarf="#2E6B3A", cord=True, light="#FFC14D")
+ACHSAH = F("eve", skin="#C98E66", shadow="#8A5A3E", hair="#1A1210", scarf="#C8A030", light="#FFE680")
+JOSEPHITE = F("adam", skin="#C47A5A", shadow="#5A3A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A3A6A", cord=True, brow="scowl", light="#FFC14D")
 REUBENITE = F("adam", skin="#C47A5A", shadow="#5A3A2A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#C8202A", cord=True, light="#FFC14D")
 
 # moods for discourse segments: (face, background)

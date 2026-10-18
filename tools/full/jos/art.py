@@ -536,3 +536,45 @@ def hebron(p, w, h, seed):
     o.append(mk.person(p, round(w * 0.22), round(b), round(s, 3), body=SKIN, cloth=CALEB_C, sw=3, up=[(-22, -158), (-6, -196), (8, -228)],
                        extra=A.headcloth(CALEB_C) + A.WHITE_BEARD))
     return "".join(o)
+
+# ---- Joshua 15–17 -------------------------------------------------------------------------------------------------------
+def springs(p, w, h, seed):
+    """Achsah alighted from off her ass in the land of the South; the upper springs and the nether springs."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.86, h * 0.14, 16, color="#FF8A3D", op=0.3),
+         hills(w, h, h * 0.42, seed, color="#C8A06A", amp=16), ground(w, h, h * 0.5, "#D8B878", dy=0)]
+    for x, y in ((0.7, 0.56), (0.84, 0.74)):
+        o.append(f'<ellipse cx="{f(w * x)}" cy="{f(h * y)}" rx="{f(w * 0.08)}" ry="{f(h * 0.035)}" fill="#2C9DB8" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+                 f'<path d="M{f(w * x - 10)} {f(h * y - 6)} C {f(w * x - 4)} {f(h * y - 30)} {f(w * x + 4)} {f(h * y - 30)} {f(w * x + 10)} {f(h * y - 6)}" fill="none" stroke="#E8F6FA" stroke-width="3"></path>'
+                 + "".join(f'<circle cx="{f(w * x + dx)}" cy="{f(h * y - 4)}" r="6" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.2"></circle>' for dx in (-w * 0.09, w * 0.09)))
+    s = fit(b, h * 0.42)
+    o.append(N.ass(w * 0.44, b, s * 0.55, flip=True))
+    o.append(woman(p, w * 0.3, b, s, "#C8A030", flip=False))
+    o.append(mk.person(p, round(w * 0.14), round(b), round(s, 3), body=SKIN, cloth=CALEB_C, sw=3, extra=A.headcloth(CALEB_C) + A.WHITE_BEARD))
+    return "".join(o)
+
+def daughters(p, w, h, seed):
+    """Mahlah, Noah, Hoglah, Milcah and Tirzah before Eleazar the priest, Joshua and the princes."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C8A0"></rect>', sun(w * 0.5, h * 0.16, 18, op=0.3),
+         ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.4)
+    for i, c in enumerate(("#8A3A5A", "#5A6E8A", "#C8A030", "#6A3A7A", "#3A7A6A")):
+        o.append(woman(p, w * (0.08 + i * 0.09), b - (i % 2) * 4, s * (0.94 + 0.02 * (i % 2)), c))
+    from exo.art9 import high_priest
+    o.append(high_priest(p, w * 0.72, b, s, flip=True) + joshua_fig(p, w * 0.86, b, s, flip=True))
+    for i in range(2): o.append(man(p, w * (0.6 - i * 0.06), b - 6, s * 0.92, ("#5A4A3A", "#6A5A4A")[i], flip=True))
+    return "".join(o)
+
+def forest(p, w, h, seed):
+    """The forest of the hill-country to be cut down, and in the valley the Canaanites' chariots of iron."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', hills(w, h, h * 0.3, seed, color="#3F6A3A", amp=20)]
+    for i in range(16):
+        x = w * (0.02 + i * 0.065); y = h * (0.46 + (i % 3) * 0.04)
+        o.append(f'<path d="M{f(x)} {f(y - h * 0.2)} L {f(x - w * 0.035)} {f(y)} L {f(x + w * 0.035)} {f(y)} Z" fill="{r.choice(["#2E6B3A", "#1F4A34", "#3F7A3A"])}" stroke="#0D0D0F" stroke-width="1.8"></path>'
+                 f'<rect x="{f(x - 3)}" y="{f(y)}" width="6" height="{f(h * 0.04)}" fill="#5A3A22"></rect>')
+    o.append(ground(w, h, h * 0.66, "#9CCB5E", dy=0))
+    for i in range(4):
+        o.append(E3.chariot(w * (0.16 + i * 0.22), h * 0.9, 0.36, flip=i % 2 == 1, color="#4A4A5A", driver="#3A3A4A"))
+    return "".join(o)

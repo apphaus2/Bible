@@ -32,5 +32,7 @@ META = {
      "blurb": "Five kings against Gibeon; a night march from Gilgal and great stones from heaven; Sun, stand thou still upon Gibeon, and thou, Moon, in the valley of Aijalon; the cave at Makkedah; the southern cities taken one by one; then the kings of the north at the waters of Merom, Hazor burnt, and the land had rest from war."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Land That Remaineth", "range": "Joshua 12–14", "bible_chapters": [12, 13, 14],
      "blurb": "The kings smitten beyond the Jordan and the thirty and one kings on this side; Joshua old and well stricken in years, and very much land yet to be possessed; the inheritance of Reuben, Gad and the half-tribe of Manasseh beyond the Jordan; and Caleb at fourscore and five: give me this hill-country."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Lot of Judah", "range": "Joshua 15–17", "bible_chapters": [15, 16, 17],
+     "blurb": "The border of Judah and every one of its cities, with Caleb at Hebron and Achsah asking for springs of water; the lot of Joseph, Ephraim and Manasseh; the daughters of Zelophehad; and the children of Joseph, a great people, sent up to the forest though the Canaanites have chariots of iron."},
   ],
 }

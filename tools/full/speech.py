@@ -16,6 +16,8 @@ def _height(lines, bw, s):
     tot = 0
     for kind, text in lines:
         n = len(text)
+        if kind == "raw":
+            tot += 40; continue
         if kind == "cap":
             fs = min(11.5, max(9.5, s * 0.66)); cpl = max(8, (bw - 24) / (fs * 0.64))
             tot += math.ceil(n / cpl) * fs * 1.45 + 20
@@ -57,7 +59,7 @@ def column(lines, bw, h, side="left", hi=21):
     fs = min(11.5, max(9.5, s * 0.66))
     items = []
     for kind, text in lines:
-        items.append(_cap(text, fs) if kind == "cap" else _say(text, s, side) if kind == "say" else _song(text, s) if kind == "song" else _god(text, s))
+        items.append(text if kind == "raw" else _cap(text, fs) if kind == "cap" else _say(text, s, side) if kind == "say" else _song(text, s) if kind == "song" else _god(text, s))
     return items
 
 def orate(tok, h, bg, lines, w=W1, flip=False, ref=None, hi=21, art="", extra="", face_w=None, top=None):

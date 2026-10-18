@@ -66,3 +66,23 @@ def roll_pages(items, prefix, start, book, code, tag="", size=13, most=8, head="
         cells = [it[:4] for it in g]
         out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {h}", (lambda cells=cells, title=title, n=start + k: roll_page(cells, title, n, tag, ncol=ncol))))
     return out
+
+def verse_cells(G, code, c, a, b, name, accent, head=None, budget=520, brk=None):
+    """Roll items for verses c:a–b grouped into cells of about `budget` characters (a cell also ends after a verse matching
+    the regex `brk`, e.g. r"villages[.]$" for the city lists). Each cell is named `name`, or name(first verse) if callable."""
+    import re
+    out, cur, n = [], [], 0
+    for k in range(a, b + 1):
+        t = G.verses[(c, k)]
+        if cur and n + len(t) > budget:
+            out.append(cur); cur, n = [], 0
+        cur.append(k); n += len(t)
+        if brk and re.search(brk, t): out.append(cur); cur, n = [], 0
+    if cur: out.append(cur)
+    items = []
+    for i, g in enumerate(out):
+        ref = f"{c}:{g[0]}" + (f"-{g[-1]}" if len(g) > 1 else "")
+        text = G.span(ref)
+        label = f"{code} {c}:{g[0]}" + (f"–{g[-1]}" if len(g) > 1 else "")
+        items.append((name(g[0]) if callable(name) else name, text, label, accent, head if i == 0 else None))
+    return items
