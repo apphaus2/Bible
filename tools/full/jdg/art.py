@@ -411,3 +411,45 @@ def en_hakkore(w, h, seed):
     o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.2, h * 0.2, 20, color="#FF8A3D", op=0.4), ground(w, h, h * 0.78, "#B89A6A", dy=0),
          E4.rock(w * 0.3, h * 0.8, w * 0.4, h * 0.46), E4.gush(w * 0.5, h * 0.6, seed, scale=min(1.4, h / 300))]
     return "".join(o)
+
+# ---- Judges 17–18 -------------------------------------------------------------------------------------------------------
+def house_of_gods(w, h, seed, empty=False):
+    """Micah's house of gods: the graven image and the molten image on a shelf, the ephod, the teraphim (empty=True: taken away)."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1E"></rect>', clay(w, h),
+         f'<rect x="{f(w * 0.12)}" y="{f(h * 0.66)}" width="{f(w * 0.76)}" height="{f(h * 0.06)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></rect>', ground(w, h, h * 0.9, "#2A1A10", dy=0)]
+    if not empty:
+        s = min(w, h) / 300
+        cx = w * 0.32
+        o.append(f'<path d="M{f(cx - 16 * s)} {f(h * 0.66)} L {f(cx - 12 * s)} {f(h * 0.66 - 90 * s)} C {f(cx - 10 * s)} {f(h * 0.66 - 110 * s)} {f(cx + 10 * s)} {f(h * 0.66 - 110 * s)} {f(cx + 12 * s)} {f(h * 0.66 - 90 * s)} L {f(cx + 16 * s)} {f(h * 0.66)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2"></path>')
+        cx = w * 0.46
+        o.append(f'<path d="M{f(cx - 14 * s)} {f(h * 0.66)} L {f(cx - 10 * s)} {f(h * 0.66 - 80 * s)} C {f(cx - 8 * s)} {f(h * 0.66 - 100 * s)} {f(cx + 8 * s)} {f(h * 0.66 - 100 * s)} {f(cx + 10 * s)} {f(h * 0.66 - 80 * s)} L {f(cx + 14 * s)} {f(h * 0.66)} Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path>')
+        cx = w * 0.62
+        o.append(f'<path d="M{f(cx - 30 * s)} {f(h * 0.66 - 100 * s)} L {f(cx + 30 * s)} {f(h * 0.66 - 100 * s)} L {f(cx + 34 * s)} {f(h * 0.66)} L {f(cx - 34 * s)} {f(h * 0.66)} Z" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></path>')
+        for i in range(3):
+            x = w * (0.74 + i * 0.04)
+            o.append(f'<rect x="{f(x - 6 * s)}" y="{f(h * 0.66 - 34 * s)}" width="{f(12 * s)}" height="{f(34 * s)}" rx="{f(5 * s)}" fill="#6A4A3A" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.4)}" r="{f(w * 0.3)}" fill="#FFC14D" opacity="0.08"></circle>')
+    return "".join(o)
+
+def clay(w, h):
+    return "".join(f'<path d="M0 {f(y)} L {f(w)} {f(y)}" stroke="#4A3A2A" stroke-width="2" opacity="0.6"></path>' for y in range(int(h * 0.1), int(h * 0.9), 26))
+
+def laish(w, h, seed, burning_=False):
+    """Laish in the valley by Beth-rehob: a quiet city among green hills, far from Sidon."""
+    if burning_:
+        from jos.art import burning
+        return burning(w, h, seed, city="laish")
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', sun(w * 0.86, h * 0.16, 16, op=0.3),
+         hills(w, h, h * 0.4, seed, color="#5A8A4A", amp=18), J.city_hill(w * 0.5, h * 0.8, w * 0.3, h * 0.3, seed), ground(w, h, h * 0.8, "#7AAA5A", dy=0)]
+    return "".join(o)
+
+def danites_march(p, w, h, seed):
+    """The six hundred Danites going their way, the little ones, the cattle and the goods before them, the priest with the ephod."""
+    r = random.Random(seed); b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', hills(w, h, h * 0.44, seed, color="#9A8A6A", amp=12),
+         ground(w, h, h * 0.52, "#C8A06A", dy=0)]
+    for i in range(14):
+        x = w * (0.04 + i * 0.07); y = b - (i % 2) * h * 0.05
+        if i < 4: o.append(E.sheep(x, y, 0.3))
+        else: o.append(man(p, x, y, fit(y, y - h * 0.34), r.choice(WAR), flip=True, extra=E4.SPEAR))
+    return "".join(o)

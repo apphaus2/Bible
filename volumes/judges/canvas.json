@@ -744,6 +744,69 @@
    "w": 760,
    "h": 1080,
    "title": "97 · The Two Middle Pillars"
+  },
+  "JDG-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Micah and the Danites"
+  },
+  "JDG-C08-D-P01-TheHouseOfMicah.dc.html": {
+   "x": 840,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The House of Micah"
+  },
+  "JDG-C08-D-P02-AFatherAndAPriest.dc.html": {
+   "x": 1680,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · A Father and a Priest"
+  },
+  "JDG-C08-D-P03-TheDanites.dc.html": {
+   "x": 2520,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Danites"
+  },
+  "JDG-C08-D-P04-APeopleQuietAndSec.dc.html": {
+   "x": 3360,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · A People Quiet and Secure"
+  },
+  "JDG-C08-D-P05-APeopleQuietAndSec.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · A People Quiet and Secure"
+  },
+  "JDG-C08-D-P06-WhatDoYe.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · What Do Ye?"
+  },
+  "JDG-C08-D-P07-WhatDoYe.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · What Do Ye?"
+  },
+  "JDG-C08-D-P08-Dan.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Dan"
   }
  },
  "order": [
@@ -851,7 +914,16 @@
   "JDG-C07-D-P06-DagonTheirGod.dc.html",
   "JDG-C07-D-P07-DagonTheirGod.dc.html",
   "JDG-C07-D-P08-RememberMe.dc.html",
-  "JDG-C07-E-P01-TheTwoMiddlePillar.dc.html"
+  "JDG-C07-E-P01-TheTwoMiddlePillar.dc.html",
+  "JDG-C08-00-Title.dc.html",
+  "JDG-C08-D-P01-TheHouseOfMicah.dc.html",
+  "JDG-C08-D-P02-AFatherAndAPriest.dc.html",
+  "JDG-C08-D-P03-TheDanites.dc.html",
+  "JDG-C08-D-P04-APeopleQuietAndSec.dc.html",
+  "JDG-C08-D-P05-APeopleQuietAndSec.dc.html",
+  "JDG-C08-D-P06-WhatDoYe.dc.html",
+  "JDG-C08-D-P07-WhatDoYe.dc.html",
+  "JDG-C08-D-P08-Dan.dc.html"
  ],
  "notes": {
   "Main": {
@@ -909,6 +981,13 @@
    "text": "Chapter 7 · Delilah (Judges 16)",
    "x": 0,
    "y": 31100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Micah and the Danites (Judges 17–18)",
+   "x": 0,
+   "y": 34000
   }
  },
  "designSystems": [],

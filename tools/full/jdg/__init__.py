@@ -33,5 +33,7 @@ META = {
      "blurb": "The angel of Jehovah to Manoah's wife: no razor shall come upon his head; the name that is wonderful, and the angel ascending in the flame of the altar. Samson, the young lion and the honey, the riddle at the feast, three hundred foxes with firebrands, the new ropes like burnt flax, and the jawbone of an ass."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Delilah", "range": "Judges 16", "bible_chapters": [16],
      "blurb": "The doors of the gate of Gaza carried to the top of the mountain; Delilah in the valley of Sorek and the lords' silver; the green withes, the new ropes, the web — the Philistines are upon thee, Samson; the seven locks shaven; the prison-house in Gaza; and the two middle pillars of the house of Dagon."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Micah and the Danites", "range": "Judges 17–18", "bible_chapters": [17, 18],
+     "blurb": "In those days there was no king in Israel: Micah's eleven hundred pieces of silver, his house of gods, and a young Levite hired to be his priest; the five Danite spies and quiet Laish; the six hundred men carry off the graven image and the priest, and Laish becomes Dan."},
   ],
 }
