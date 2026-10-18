@@ -327,3 +327,67 @@ def gath_gate(p, w, h, seed):
     o.append(S2.david(p, w * 0.5, b, s, staff=False, bag=False, up=[(-22, -158), (-10, -190), (6, -210)]))
     o.append(J2.philistines(p, 4, w * 0.04, w * 0.22, b - 6, b, seed, s * 0.9, s, flip=False))
     return "".join(o)
+
+# ---- 1 Samuel 22–24 -----------------------------------------------------------------------------------------------------
+def adullam(p, w, h, seed):
+    """The cave of Adullam: men in distress, in debt and discontented gathered at its mouth about David."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), S2.cave(w, h, w * 0.3, w * 0.4, h * 0.86, seed)]
+    s = fit(h * 0.86, h * 0.5)
+    o.append(S2.david(p, w * 0.5, h * 0.86, s, staff=True, bag=True))
+    for i in range(8):
+        x = w * (0.12 + i * 0.1)
+        if abs(x - w * 0.5) < w * 0.06: continue
+        o.append(mk.person(p, round(x), round(h * 0.86 - (i % 2) * 4), round(s * 0.86, 3), body="#12090A", cloth=r.choice(["#3A2A2A", "#4A3A2A", "#2A2A3A"]), kind="Tunic", sw=2, flip=x > w * 0.5))
+    return "".join(o)
+
+def tamarisk(p, w, h, seed):
+    """Saul sitting under the tamarisk-tree in Ramah with his spear in his hand, his servants standing about him."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', hills(w, h, h * 0.5, seed, color="#B89A6A", amp=12),
+         ground(w, h, h * 0.56, "#C8A06A", dy=0), S4.great_oak(w * 0.22, b, min(1.3, h / 320), seed)]
+    s = fit(b, h * 0.44)
+    o.append(S3.throne(w * 0.3, b, s * 0.9) + saul_fig(p, w * 0.3, b - 26 * s, s, crown=True, up=[(-22, -158), (-8, -150), (4, -150)])
+             + f'<path d="M{f(w * 0.3 + 4 * s)} {f(b - 360 * s)} L {f(w * 0.3 + 8 * s)} {f(b)}" stroke="#3E2416" stroke-width="5"></path>')
+    for i in range(5):
+        o.append(man(p, w * (0.52 + i * 0.09), b - (i % 2) * 6, s * 0.92, random.Random(seed + i).choice(WAR), flip=True, extra=E4.SPEAR))
+    return "".join(o)
+
+def nob_smoke(w, h, seed):
+    """Nob, the city of the priests, smoke rising from it at evening (22:18–19 are words only)."""
+    from jos.art import burning
+    return burning(w, h, seed, city="nob")
+
+def ephod_inquire(p, w, h, seed):
+    """Abiathar with the ephod; David inquiring of Jehovah."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', V.rays(w * 0.5, h * 0.1, 30, 20, max(w, h), color="#FFF4C2", op=0.2),
+         ground(w, h, b, "#3A2A2A", dy=0)]
+    s = fit(b, h * 0.62)
+    o.append(S2.david(p, w * 0.32, b, s, staff=False, bag=False, up=[(-22, -158), (-6, -196), (8, -228)]))
+    o.append(mk.person(p, round(w * 0.66), round(b), round(s, 3), body=SKIN, cloth="#F3EFE6", sw=3, flip=True,
+                       extra='<path d="M-24 -160 L 24 -160 L 22 -90 L -22 -90 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path>'))
+    return "".join(o)
+
+def maon(p, w, h, seed):
+    """Saul on this side of the mountain, David and his men on that side, in the wilderness of Maon."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>', sun(w * 0.5, h * 0.12, 16, color="#FF8A3D", op=0.3),
+         f'<path d="M-10 {f(h + 10)} L {f(w * 0.5)} {f(h * 0.2)} L {f(w + 10)} {f(h + 10)} Z" fill="#9A6A4A" stroke="#0D0D0F" stroke-width="2.6"></path>']
+    for i in range(6):
+        x = w * (0.08 + i * 0.05); y = h * (0.94 - i * 0.04)
+        o.append(man(p, x, y, fit(y, y - h * 0.16), SAUL_C if i == 0 else r.choice(WAR), extra=E4.SPEAR))
+    for i in range(5):
+        x = w * (0.92 - i * 0.05); y = h * (0.94 - i * 0.04)
+        o.append(man(p, x, y, fit(y, y - h * 0.16), "#C8A06A" if i == 0 else r.choice(("#5A4A3A", "#6A5A3A")), flip=True))
+    return "".join(o)
+
+def engedi_cave(p, w, h, seed):
+    """Inside the cave by the sheepcotes: David cutting off the skirt of Saul's robe privily, his men in the innermost parts."""
+    o = [mk.defs(p, *ALL), S2.cave(w, h, w * 0.58, w * 0.34, h * 0.88, seed)]
+    s = fit(h * 0.88, h * 0.5)
+    o.append(saul_fig(p, w * 0.76, h * 0.88, s * 0.9, flip=True).replace('fill="#C98E66"', 'fill="#12090A"'))
+    o.append(mk.person(p, round(w * 0.5), round(h * 0.88), round(s * 0.7, 3), body="#12090A", cloth="#2A2220", kind="Tunic", sw=2))
+    for i in range(4):
+        o.append(f'<circle cx="{f(w * (0.08 + i * 0.07))}" cy="{f(h * (0.56 + (i % 2) * 0.04))}" r="3" fill="#FFF4C2"></circle><circle cx="{f(w * (0.08 + i * 0.07) + 9)}" cy="{f(h * (0.56 + (i % 2) * 0.04))}" r="3" fill="#FFF4C2"></circle>')
+    return "".join(o)
