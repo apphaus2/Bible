@@ -403,3 +403,46 @@ def court(p, w, h, seed):
     for i, c in enumerate([JOAB_C, "#3A4A6A", "#E8E2D6", "#E8E2D6", "#5A4A3A", "#2A4A3A"]):
         o.append(captain(p, w * (0.42 + i * 0.105), b, s * (0.72 if i % 2 else 0.68), cloth=c, flip=True, spear=i in (0, 5)))
     return "".join(o)
+
+# ---- 2 Samuel 9–10 ------------------------------------------------------------------------------------------------------
+import judges1 as J1
+def jericho_wait(p, w, h, seed):
+    """Tarry at Jericho until your beards be grown: the city of palm-trees, the king's servants sitting apart in the shade,
+    their mantles drawn about them."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), J.city_hill(w * 0.76, h * 0.6, w * 0.34, h * 0.26, seed), ground(w, h, h * 0.62, "#C8A06A", dy=0)]
+    for i, x in enumerate((0.12, 0.3, 0.54)):
+        o.append(J1.palm(w * x, h * 0.86, min(1.2, h / 300) * (0.9 + 0.1 * i)))
+    s = fit(b, h * 0.3)
+    for i in range(4):
+        o.append(E.kneel(w * (0.2 + i * 0.12), b - (i % 2) * h * 0.03, s * 0.8, color=["#5A5A6A", "#6A5A4A", "#4A4A5A", "#5A4A4A"][i], skin="#9A6A4A", flip=i % 2 == 1))
+    return "".join(o)
+
+def ammon_map(w, h, stage=0):
+    """The battle before the gate of Rabbah as a technical map: Ammon in array at the gate, the hired Syrians in the field
+    behind; Joab's choice men against the Syrians, Abishai against Ammon (stage 1); and the flight (stage 2)."""
+    o = [grid_bg(w, h)]
+    gx, gy = w * 0.82, h * 0.5
+    o.append(f'<rect x="{f(gx)}" y="{f(h * 0.2)}" width="{f(w * 0.16)}" height="{f(h * 0.6)}" fill="#1E3A5A" stroke="#8FD0E2" stroke-width="2"></rect>' + label(gx + w * 0.08, h * 0.16, "RABBAH", "#8FD0E2", 9))
+    def block(x, y, bw, bh, name, c):
+        return (f'<rect x="{f(x - bw / 2)}" y="{f(y - bh / 2)}" width="{f(bw)}" height="{f(bh)}" fill="{c}" fill-opacity="0.25" stroke="{c}" stroke-width="2"></rect>'
+                + label(x, y + 4, name, c, 8))
+    if stage < 2:
+        o.append(block(w * 0.7, gy, w * 0.12, h * 0.4, "AMMON", "#D7261E"))
+        o.append(block(w * 0.16, gy, w * 0.2, h * 0.5, "SYRIA", "#D7261E"))
+    if stage >= 1:
+        o.append(block(w * 0.36, gy, w * 0.1, h * 0.3, "JOAB", "#FFD23F") + block(w * 0.52, gy, w * 0.1, h * 0.3, "ABISHAI", "#FFD23F"))
+    if stage == 2:
+        o.append(route([(w * 0.2, gy), (w * 0.04, gy)], color="#D7261E") + label(w * 0.12, gy - h * 0.12, "SYRIA FLED", "#D7261E", 8))
+        o.append(route([(w * 0.7, gy), (w * 0.86, gy)], color="#D7261E") + label(w * 0.7, gy - h * 0.12, "AMMON INTO THE CITY", "#D7261E", 8))
+    return "".join(o)
+
+def audience(p, w, h, seed, cloth="#7A5A3A", n=1):
+    """The king on his throne in the house of cedar, and one (or more) standing before him."""
+    b = h * 0.92; k = min(1.3, h / 300)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.24, b, k)]
+    s = fit(b, h * 0.36)
+    o.append(king_fig(p, w * 0.24, b - 40 * k, s * 0.9))
+    for i in range(n):
+        o.append(captain(p, w * (0.7 + i * 0.12), b, s * 0.86, cloth=cloth, flip=True, spear=False))
+    return "".join(o)

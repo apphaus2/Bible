@@ -345,6 +345,76 @@
    "w": 760,
    "h": 1080,
    "title": "43 · Justice and Righteousness"
+  },
+  "2SA-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Mephibosheth"
+  },
+  "2SA-C05-D-P01-ForJonathanSSake.dc.html": {
+   "x": 840,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · For Jonathan's Sake"
+  },
+  "2SA-C05-D-P02-ForJonathanSSake.dc.html": {
+   "x": 1680,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · For Jonathan's Sake"
+  },
+  "2SA-C05-D-P03-ForJonathanSSake.dc.html": {
+   "x": 2520,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · For Jonathan's Sake"
+  },
+  "2SA-C05-D-P04-ThouShaltEatBreadA.dc.html": {
+   "x": 3360,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Thou Shalt Eat Bread at My Table"
+  },
+  "2SA-C05-D-P05-ThouShaltEatBreadA.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Thou Shalt Eat Bread at My Table"
+  },
+  "2SA-C05-D-P06-Hanun.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Hanun"
+  },
+  "2SA-C05-D-P07-BeforeAndBehind.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Before and Behind"
+  },
+  "2SA-C05-D-P08-BeforeAndBehind.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Before and Behind"
+  },
+  "2SA-C05-D-P09-Helam.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Helam"
   }
  },
  "order": [
@@ -395,7 +465,17 @@
   "2SA-C04-D-P06-JehovahGaveVictory.dc.html",
   "2SA-C04-D-P07-JehovahGaveVictory.dc.html",
   "2SA-C04-D-P08-JehovahGaveVictory.dc.html",
-  "2SA-C04-D-P09-JusticeAndRighteou.dc.html"
+  "2SA-C04-D-P09-JusticeAndRighteou.dc.html",
+  "2SA-C05-00-Title.dc.html",
+  "2SA-C05-D-P01-ForJonathanSSake.dc.html",
+  "2SA-C05-D-P02-ForJonathanSSake.dc.html",
+  "2SA-C05-D-P03-ForJonathanSSake.dc.html",
+  "2SA-C05-D-P04-ThouShaltEatBreadA.dc.html",
+  "2SA-C05-D-P05-ThouShaltEatBreadA.dc.html",
+  "2SA-C05-D-P06-Hanun.dc.html",
+  "2SA-C05-D-P07-BeforeAndBehind.dc.html",
+  "2SA-C05-D-P08-BeforeAndBehind.dc.html",
+  "2SA-C05-D-P09-Helam.dc.html"
  ],
  "notes": {
   "Main": {
@@ -432,6 +512,13 @@
    "text": "Chapter 4 · For Ever (2 Samuel 7–8)",
    "x": 0,
    "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Mephibosheth (2 Samuel 9–10)",
+   "x": 0,
+   "y": 16900
   }
  },
  "designSystems": [],

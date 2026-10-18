@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 205 verses — 205 full, 0 partial, 0 omitted.
+**So far:** 237 verses — 237 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · How Are the Mighty Fallen (2 Samuel 1–2)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · For Ever (2 Samuel 7–8)
 
 47 verses: 47 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · Mephibosheth (2 Samuel 9–10)
+
+32 verses: 32 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

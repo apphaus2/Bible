@@ -30,5 +30,7 @@ META = {
      "blurb": "All the tribes at Hebron — we are thy bone and thy flesh — and David anointed king over Israel; the stronghold of Zion; Hiram's cedar; Baal-perazim and the sound of marching in the tops of the mulberry-trees; the ark on a new cart and Uzzah at the threshing-floor of Nacon; David dancing before Jehovah with all his might, and Michal at the window."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "For Ever", "range": "2 Samuel 7–8", "bible_chapters": [7, 8],
      "blurb": "I dwell in a house of cedar, but the ark of God dwelleth within curtains: the word of Jehovah to Nathan by night — I took thee from the sheepcote; he shall build a house for my name, and I will establish the throne of his kingdom for ever; David before Jehovah: who am I?; and David's wars from the Philistines to the River."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Mephibosheth", "range": "2 Samuel 9–10", "bible_chapters": [9, 10],
+     "blurb": "Is there yet any that is left of the house of Saul, that I may show him kindness for Jonathan's sake?; Ziba; Mephibosheth fallen on his face — fear not; he shall eat at my table as one of the king's sons; Hanun shames David's servants — tarry at Jericho until your beards be grown; Joab before Rabbah: be of good courage, and let us play the man."},
   ],
 }

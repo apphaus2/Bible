@@ -138,6 +138,7 @@ There are two editions:
 | 2 Samuel | 2 · Abner | 3–4 | title + 11 (pp. 14–24) | 51/51 verses full (3:27, 4:5–7 and 4:12 words over the empty gate, the house at noon and the pool) | `volumes/2samuel/` |
 | 2 Samuel | 3 · The City of David | 5–6 | title + 10 (pp. 25–34) | 48/48 verses full (the digest's anointing, ark and dancing panels; 6:7 words over the cart at Nacon) | `volumes/2samuel/` |
 | 2 Samuel | 4 · For Ever | 7–8 | title + 9 (pp. 35–43) | 47/47 verses full (Nathan's oracle in the Voice box; David's wars as a map, 8:2 words only) | `volumes/2samuel/` |
+| 2 Samuel | 5 · Mephibosheth | 9–10 | title + 9 (pp. 44–52) | 32/32 verses full (the digest's Mephibosheth page; Rabbah's gate as a map) | `volumes/2samuel/` |
 
 **Genesis through 1 Samuel (nine volumes) are complete.** Next: 2 Samuel. 1 Samuel is `tools/full/sa1/` (14 chapters, plan and
 restraint notes in `sa1/__init__.py`; the digest's two books lifted with `sa1.common.D("A3", 0)` / `D("B5", 2)`). It packs with
