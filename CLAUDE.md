@@ -99,6 +99,8 @@ There are two editions:
 | Deuteronomy | 14 · The Song of Moses | 32 | title + 10 | 52/52 verses full (the song in song boxes) | `volumes/deuteronomy/` |
 | Deuteronomy | 15 · The Death of Moses | 33–34 | title + 11 | 41/41 verses full (the tribes as cells; Moses' death caption only, no grave drawn) | `volumes/deuteronomy/` |
 | Joshua | 1 · Be Strong and of Good Courage | 1–2 | cover + title + 8 (pp. 1–8) | 42/42 verses full (lifts the digest's Jericho art: `reuse.fill`) | `volumes/joshua/` |
+| Joshua | 2 · The Waters of the Jordan | 3–5 | title + 10 (pp. 9–18) | 56/56 verses full (5:2–8 as the flint knives and the camp only) | `volumes/joshua/` |
+| Joshua | 3 · The Walls of Jericho | 6–7 | title + 10 (pp. 19–28) | 53/53 verses full (6:21 and 7:25 words only, over the dust and the heap) | `volumes/joshua/` |
 
 **Genesis, Exodus, Leviticus, Numbers and Deuteronomy are complete.** Next: Joshua. Deuteronomy is `tools/full/deu/` (15
 chapters, plan in `deu/__init__.py`): Moses' discourses as speech panels (`speech.orate`, packed by `discourse.pack`,

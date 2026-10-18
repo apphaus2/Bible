@@ -26,6 +26,16 @@
    "prefixes": [
     "JOS-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Walls of Jericho",
+   "range": "Joshua 6–7",
+   "blurb": "Seven priests with seven trumpets of rams' horns compass the city seven days; the great shout, and the wall falls down flat; Rahab and her father's household saved alive. Then the devoted thing: the flight before Ai, the lot that takes Achan, the Babylonish mantle and the wedge of gold, and the valley of Achor.",
+   "prefixes": [
+    "JOS-C03-"
+   ]
   }
  ]
 }

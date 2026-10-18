@@ -24,5 +24,7 @@ META = {
      "blurb": "Moses my servant is dead: now therefore arise, go over this Jordan; be strong and of good courage. The two spies in Jericho, Rahab's house upon the wall, the stalks of flax on the roof, the cord through the window and the line of scarlet thread."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Waters of the Jordan", "range": "Joshua 3–5", "bible_chapters": [3, 4, 5],
      "blurb": "The ark goes before, and the waters that come down from above stand in one heap; all Israel passes over on dry ground; twelve stones out of the midst of the Jordan set up in Gilgal; the passover in the plains of Jericho, the manna ceased, and the prince of the host of Jehovah with his sword drawn."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Walls of Jericho", "range": "Joshua 6–7", "bible_chapters": [6, 7],
+     "blurb": "Seven priests with seven trumpets of rams' horns compass the city seven days; the great shout, and the wall falls down flat; Rahab and her father's household saved alive. Then the devoted thing: the flight before Ai, the lot that takes Achan, the Babylonish mantle and the wedge of gold, and the valley of Achor."},
   ],
 }

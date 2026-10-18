@@ -177,3 +177,117 @@ def flint(w, h, seed):
         o.append(f'<path d="M{f(cx - 50)} {f(cy)} L {f(cx + 40)} {f(cy - 14)} L {f(cx + 52)} {f(cy - 4)} L {f(cx - 40)} {f(cy + 10)} Z" fill="#4A4A5A" stroke="#0D0D0F" stroke-width="2"></path>'
                  f'<path d="M{f(cx - 30)} {f(cy + 2)} L {f(cx + 34)} {f(cy - 9)}" stroke="#8A8AA0" stroke-width="1.6"></path>')
     return "".join(o)
+
+# ---- Joshua 6–7 ---------------------------------------------------------------------------------------------------------
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "digest"))
+from genesis.art3 import node, route, grid_bg
+
+def procession(p, w, h, seed, dawn=False):
+    """Round the wall of Jericho: the armed men, seven priests blowing rams' horns, the ark, the rearward."""
+    import joshua_book1 as JB
+    b = h * 0.92
+    sky = "#FF8A3D" if dawn else "#8FD0E2"
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{sky}"></rect>']
+    if dawn: o.append(sun(w * 0.12, h * 0.4, 30, color="#FFE680", op=0.5))
+    o.append(J.jericho(-10, w + 10, h * 0.22, h * 0.76, seed, towers=3))
+    o.append(ground(w, h, h * 0.76, "#8A6A4A", dy=0))
+    s = fit(b, h * 0.5) * 0.9
+    o.append(JB.procession(p, -w * 0.02, w, round(b), s, seed))
+    return "".join(o)
+
+def rahab_out(p, w, h, seed):
+    """The two young men bring out Rahab and her father's household, the scarlet line still in the window above."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8A35A"></rect>',
+         J.jericho(-10, w * 0.6, h * 0.14, h * 0.7, seed, towers=1, window=(w * 0.32, h * 0.32), cord=h * 0.3),
+         J.collapse(w * 0.6, w + 10, h * 0.7, h * 0.4, seed), ground(w, h, h * 0.7, "#8A6A4A", dy=0)]
+    s = fit(b, h * 0.44)
+    o.append(man(p, w * 0.86, b, s, SPY_C[0], flip=True, up=[(-22, -158), (4, -150), (30, -150)]))
+    o.append(rahab_fig(p, w * 0.72, b, s * 0.96, flip=True))
+    fam = [("man", "#5A6E8A"), ("woman", "#8A5A3A"), ("man", "#6A5A3A"), ("woman", "#4A3A6A"), ("man", "#7A4A2E")]
+    for i, (k, c) in enumerate(fam):
+        x = w * (0.6 - i * 0.08); ss = s * (0.94 - 0.02 * i)
+        o.append((man if k == "man" else woman)(p, x, b - i * 3, ss, c, flip=True))
+    o.append(man(p, w * 0.14, b, s, SPY_C[1], flip=True))
+    return "".join(o)
+
+def burning(w, h, seed, city="jericho"):
+    """The city burnt with fire, seen from afar: flames along the broken wall and a column of smoke."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A0A0A"></rect>']
+    for i in range(9):
+        cx = w * (0.3 + r.uniform(0, 0.4)); cy = h * (0.1 + i * 0.05); rr = w * r.uniform(0.08, 0.16)
+        o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(rr)}" fill="#3A2A2E" opacity="0.8"></circle>')
+    if city == "jericho": o.append(J.collapse(-10, w + 10, h * 0.82, h * 0.3, seed, color="#5A3A2A"))
+    else: o.append(J.city_hill(w * 0.5, h * 0.86, w * 0.5, h * 0.5, seed))
+    o += [E.blaze(w * (0.1 + i * 0.16), h * 0.8, w * 0.14, h * 0.32, seed + i, n=7) for i in range(6)]
+    o.append(ground(w, h, h * 0.84, "#1A0A0A", dy=0))
+    return "".join(o)
+
+def devoted(w, h, seed):
+    """Inside a tent: the goodly Babylonish mantle, the wedge of gold, the shekels of silver, hid in the earth."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1408"></rect>',
+         f'<path d="M-10 {f(h * 0.7)} L {f(w * 0.5)} -10 L {f(w + 10)} {f(h * 0.7)} Z" fill="#3A2214" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.7, "#4A2A18", dy=0)]
+    cx, cy = w * 0.5, h * 0.84
+    o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(w * 0.3)}" ry="{f(h * 0.1)}" fill="#1A0A04" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    o.append(f'<path d="M{f(cx - w * 0.22)} {f(cy - 6)} C {f(cx - w * 0.1)} {f(cy - h * 0.12)} {f(cx + w * 0.02)} {f(cy - h * 0.04)} {f(cx + w * 0.06)} {f(cy - 2)} Z" fill="#6A2A7A" stroke="#0D0D0F" stroke-width="2"></path>'
+             f'<path d="M{f(cx - w * 0.2)} {f(cy - 10)} L {f(cx + w * 0.04)} {f(cy - 6)}" stroke="#E8B830" stroke-width="3" stroke-dasharray="6 4"></path>')
+    o.append(f'<path d="M{f(cx + w * 0.08)} {f(cy)} L {f(cx + w * 0.2)} {f(cy - 6)} L {f(cx + w * 0.22)} {f(cy + 4)} L {f(cx + w * 0.1)} {f(cy + 10)} Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path>')
+    for i in range(9):
+        o.append(f'<ellipse cx="{f(cx - w * 0.06 + (i % 5) * 12)}" cy="{f(cy + 18 + (i // 5) * 8)}" rx="7" ry="3.5" fill="#D8D8E0" stroke="#0D0D0F" stroke-width="1.2"></ellipse>')
+    o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(w * 0.24)}" fill="#FFE680" opacity="0.12"></circle>')
+    return "".join(o)
+
+def ai(p, w, h, seed, rout=False):
+    """Ai beside Beth-aven on its hill; rout=True: the three thousand flee down the descent, the men of Ai at the gate."""
+    r = random.Random(seed); b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.86, h * 0.14, 14, op=0.3),
+         J.city_hill(w * 0.7, h * 0.66, w * 0.34, h * 0.42, seed), ground(w, h, h * 0.66, "#B89A6A", dy=0)]
+    if rout:
+        for i in range(10):
+            x = w * (0.08 + i * 0.05 + r.uniform(-0.01, 0.01)); y = h * (0.7 + (i % 3) * 0.08)
+            o.append(man(p, x, y, fit(y, y - h * 0.18), r.choice(WAR), flip=True, up=[(-22, -158), (-46, -140), (-60, -160)]))
+        for i in range(5):
+            x = w * (0.62 + i * 0.05); y = h * 0.66
+            o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * 0.14), 3), body="#12090A", cloth="#3A2A2A", kind="Tunic", sw=2, flip=True, extra=E4.SPEAR))
+    else:
+        for i in range(3):
+            x = w * (0.12 + i * 0.07); o.append(man(p, x, b, fit(b, h * 0.5), SPY_C[i % 2]))
+    return "".join(o)
+
+ELDER_C = ("#5A4A3A", "#4A3A3A", "#6A5A4A", "#3A3430")
+def fallen(p, w, h, seed):
+    """Joshua and the elders fallen on their faces before the ark until the evening, dust upon their heads."""
+    b = h * 0.86
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A1A2E"></rect>', sun(w * 0.86, h * 0.5, 30, color="#FF6A2A", op=0.4),
+         ground(w, h, h * 0.6, "#4A2A2E", dy=0), J.ark(w * 0.8, h * 0.62, min(1.2, h / 300), f"fa{seed}", glow=True, pole=110)]
+    s = min(1.1, h / 320)
+    o.append(N.prostrate(w * 0.42, b, s, color=JOSHUA_C, skin="#8A5A3A"))
+    for i in range(4):
+        o.append(N.prostrate(w * (0.06 + i * 0.09), b - h * 0.04 - (i % 2) * h * 0.04, s * 0.8, color=ELDER_C[i], skin="#7A4A3A"))
+    return "".join(o)
+
+def lot(w, h, steps=(("TRIBE", "JUDAH"), ("FAMILY", "THE ZERAHITES"), ("HOUSEHOLD", "ZABDI"), ("MAN", "ACHAN"))):
+    """The lot taken step by step, as a technical readout: tribe, family, household, man."""
+    o = [grid_bg(w, h)]
+    n = len(steps); y = h * 0.62
+    pts = [(w * (0.12 + 0.76 * i / (n - 1)), y) for i in range(n)]
+    o.append(route(pts, color="#FFD23F"))
+    for i, ((k, name), (x, yy)) in enumerate(zip(steps, pts)):
+        last = i == n - 1
+        o.append(node(x, yy, name, "#D7261E" if last else "#FFD23F", r=8 if last else 6, dy=-20, size=11 if last else 10) + label(x, yy + 30, k, "#8FD0E2", 8))
+    return "".join(o)
+
+def achor(w, h, seed):
+    """The valley of Achor at evening and the great heap of stones raised in it, unto this day."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#4A2A3A"></rect>', sun(w * 0.8, h * 0.36, 24, color="#FF8A3D", op=0.35),
+         hills(w, h, h * 0.44, seed, color="#3A2030", amp=24, step=90)]
+    o.append(f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.7)} {f(w * 0.7)} {f(h * 0.7)} {f(w + 10)} {f(h * 0.5)} L {f(w + 10)} {f(h + 10)} Z" fill="#2A1A24" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    cx, base = w * 0.5, h * 0.9
+    for row in range(5):
+        for i in range(8 - row):
+            x = cx + (i - (7 - row) / 2) * w * 0.045; y = base - row * h * 0.05
+            o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.026)}" ry="{f(h * 0.028)}" fill="{r.choice(["#8A7A6A", "#6A5A4A", "#A89A86"])}" stroke="#0D0D0F" stroke-width="1.8"></ellipse>')
+    return "".join(o)
