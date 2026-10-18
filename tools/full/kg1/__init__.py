@@ -24,5 +24,7 @@ META = {
      "blurb": "King David old and stricken in years, and Abishag the Shunammite; Adonijah exalts himself — I will be king — and feasts by the stone of Zoheleth; Nathan and Bath-sheba go in to the king; assuredly Solomon thy son shall reign after me; Solomon on the king's mule down to Gihon, the horn of oil, and long live king Solomon; Adonijah holds the horns of the altar."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Show Thyself a Man", "range": "1 Kings 2", "bible_chapters": [2],
      "blurb": "David's charge to Solomon — be thou strong therefore, and show thyself a man; David sleeps with his fathers; Adonijah asks for Abishag, and the throne set for the king's mother at Solomon's right hand; Abiathar sent home to Anathoth; Joab at the horns of the altar; and Shimei, who passed over the brook Kidron."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "An Understanding Heart", "range": "1 Kings 3–4", "bible_chapters": [3, 4],
+     "blurb": "A thousand burnt-offerings at Gibeon and the dream by night — ask what I shall give thee; give thy servant an understanding heart; the two women and the living child — divide the living child in two; the princes and the twelve officers; every man under his vine and under his fig-tree; three thousand proverbs, from the cedar of Lebanon to the hyssop in the wall."},
   ],
 }

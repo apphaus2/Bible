@@ -157,3 +157,80 @@ def kidron(p, w, h, seed, ass=False):
         o.append(N.ass(w * 0.24, b, k, flip=True) + mk.person(p, round(w * 0.1), round(b), round(fit(b, h * 0.4) * 0.8, 3), body="#3A1E14", cloth="#6A5A3A", sw=3, flip=True,
                                                                extra=A.headcloth("#6A5A3A") + A.WHITE_BEARD))
     return "".join(o)
+
+# ---- 1 Kings 3–4 --------------------------------------------------------------------------------------------------------
+def gibeon(p, w, h, seed):
+    """The great high place at Gibeon: the altar on the height smoking with a thousand burnt-offerings, the people below."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#F3D8A0"),
+         f'<path d="M-10 {f(h * 0.8)} C {f(w * 0.2)} {f(h * 0.5)} {f(w * 0.4)} {f(h * 0.36)} {f(w * 0.56)} {f(h * 0.36)} C {f(w * 0.74)} {f(h * 0.36)} {f(w * 0.86)} {f(h * 0.56)} {f(w + 10)} {f(h * 0.76)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         S4.altar(w * 0.56, h * 0.37, min(1.0, h / 380), seed=seed)]
+    for i in range(5):
+        o.append(f'<path d="M{f(w * (0.5 + i * 0.03))} {f(h * 0.26)} C {f(w * (0.46 + i * 0.04))} {f(h * 0.16)} {f(w * (0.54 + i * 0.03))} {f(h * 0.08)} {f(w * (0.5 + i * 0.05))} -10" stroke="#6A5A5A" stroke-width="14" fill="none" opacity="0.35"></path>')
+    s = fit(b, h * 0.6)
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.98, h * 0.8, b, 14, s * 0.6, s))
+    return "".join(o)
+
+def dream(p, w, h, seed):
+    """In Gibeon Jehovah appeared to Solomon in a dream by night: the king asleep in his tent under a sky of light (God is
+    never drawn)."""
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#0F0E2A"), V.rays(w * 0.5, -h * 0.1, 40, 24, h * 1.2, color="#FFD23F", op=0.18),
+         ground(w, h, h * 0.8, "#1A1430", dy=0), E4.tent(w * 0.5, h * 0.84, w * 0.6, h * 0.5, color="#2A3A6A", stripe="#1A2040"),
+         J1.rug_sleeper(w * 0.5, h * 0.84, min(1.2, h / 280), color=SOL_C)]
+    return "".join(o)
+
+def two_women(p, w, h, seed, sword=False):
+    """Two women standing before the king on his throne, one holding the living child; sword=True: a sword brought before the
+    king (held, not used)."""
+    b = h * 0.92; k = min(1.2, h / 320)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.2, b, k)]
+    s = fit(b, h * 0.4)
+    o.append(sol_fig(p, w * 0.2, b - 40 * k, s * 0.86))
+    o.append(mk.person(p, round(w * 0.6), round(b), round(s * 0.92, 3), body="#3A1E14", cloth="#8A3A4A", woman=True, hair="#1A1210", sw=3, flip=True,
+                       up=[(-22, -158), (-10, -128), (14, -124)], extra='<g transform="translate(10 -130)"><ellipse cx="0" cy="0" rx="20" ry="11" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="2"></ellipse><circle cx="-14" cy="-4" r="6" fill="#D9A27A" stroke="#0D0D0F" stroke-width="1.4"></circle></g>'))
+    o.append(mk.person(p, round(w * 0.8), round(b), round(s * 0.92, 3), body="#3A1E14", cloth="#4A5A3A", woman=True, hair="#1A1210", sw=3, flip=True))
+    if sword:
+        o.append(mk.person(p, round(w * 0.4), round(b), round(s * 0.9, 3), body=SKIN, cloth="#3A4A6A", kind="Tunic", sw=3, flip=True, up=[(22, -158), (10, -120), (-10, -110)])
+                 + f'<path d="M{f(w * 0.4 + 10 * s)} {f(b - 110 * s)} L {f(w * 0.4 - 50 * s)} {f(b - 110 * s)}" stroke="#C8C2D6" stroke-width="{f(5 * s)}"></path>')
+    return "".join(o)
+
+def vine_fig(p, w, h, seed):
+    """Every man under his vine and under his fig-tree: a man and his household in the shade, a vineyard on the hills."""
+    r = random.Random(seed)
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.5, seed, color="#7A9A5A", amp=14), ground(w, h, h * 0.6, "#B8A86A", dy=0)]
+    for i in range(16):
+        x = w * (0.04 + i * 0.06); y = h * (0.56 + (i % 3) * 0.02)
+        o.append(f'<path d="M{f(x)} {f(y + 14)} L {f(x)} {f(y - 4)}" stroke="#5A3A22" stroke-width="3"></path><circle cx="{f(x)}" cy="{f(y - 8)}" r="8" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.4"></circle>')
+    o.append(f'<path d="M{f(w * 0.5)} {f(b)} C {f(w * 0.48)} {f(h * 0.6)} {f(w * 0.52)} {f(h * 0.44)} {f(w * 0.5)} {f(h * 0.36)}" stroke="#5A3A22" stroke-width="14" fill="none"></path>')
+    for i in range(10):
+        o.append(f'<ellipse cx="{f(w * 0.5 + r.uniform(-w * 0.22, w * 0.22))}" cy="{f(h * r.uniform(0.18, 0.4))}" rx="{f(w * 0.08)}" ry="{f(h * 0.06)}" fill="{r.choice(["#3F8A44", "#2E6A32", "#5E8F26"])}" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    s = fit(b, h * 0.44)
+    o.append(man(p, w * 0.36, b, s, "#6A5A3A") + woman(p, w * 0.64, b, s * 0.94, "#8A4A5A", flip=True))
+    return "".join(o)
+
+def stalls(p, w, h, seed):
+    """Solomon's stalls of horses for his chariots, and his horsemen."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), ground(w, h, h * 0.5, "#B89A6A", dy=0)]
+    for k in range(3):
+        y = h * (0.62 + k * 0.14)
+        for i in range(7):
+            o.append(E3.horse(w * (0.06 + i * 0.15 + (k % 2) * 0.06), y, 0.24 + k * 0.08, color=["#3A2214", "#6A4A2A", "#2A1A14"][i % 3]))
+    return "".join(o)
+
+NATURE = [("CEDAR", "tree"), ("HYSSOP", "herb"), ("BEASTS", "beast"), ("BIRDS", "bird"), ("CREEPING THINGS", "creep"), ("FISHES", "fish")]
+def nature(w, h):
+    """He spake of trees, from the cedar to the hyssop, of beasts, birds, creeping things and fishes: a plate of six cells."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    cw, ch = w / 3, h / 2
+    for i, (nm, kind) in enumerate(NATURE):
+        cx, cy = cw * (i % 3) + cw / 2, ch * (i // 3) + ch / 2 + 10; s = min(cw, ch) / 120
+        g = {"tree": f'<path d="M0 40 L 0 0" stroke="#8A5A30" stroke-width="6"></path><path d="M-40 10 L 0 -40 L 40 10 Z M-30 -10 L 0 -50 L 30 -10 Z" fill="#2E6B3A" stroke="#9CCB5E" stroke-width="2"></path>',
+             "herb": "".join(f'<path d="M{dx} 40 C {dx} 20 {dx + 6} 0 {dx + 2} -20" stroke="#9CCB5E" stroke-width="3" fill="none"></path><circle cx="{dx + 2}" cy="-22" r="5" fill="#E8F0B8"></circle>' for dx in (-14, 0, 14)),
+             "beast": '<ellipse cx="0" cy="10" rx="36" ry="18" fill="#C8A06A" stroke="#E8C88A" stroke-width="2"></ellipse><circle cx="36" cy="-6" r="12" fill="#C8A06A" stroke="#E8C88A" stroke-width="2"></circle><path d="M-24 24 L -24 44 M-8 24 L -8 44 M14 24 L 14 44 M28 24 L 28 44" stroke="#E8C88A" stroke-width="4"></path>',
+             "bird": '<path d="M-40 0 Q -20 -24 0 0 Q 20 -24 40 0" stroke="#8FD0E2" stroke-width="5" fill="none"></path><path d="M-30 30 Q -16 14 0 30 Q 16 14 30 30" stroke="#8FD0E2" stroke-width="4" fill="none"></path>',
+             "creep": '<path d="M-40 10 C -20 -10 0 30 20 10 S 40 -10 44 0" stroke="#C8B070" stroke-width="7" fill="none" stroke-linecap="round"></path>',
+             "fish": '<path d="M-36 0 C -16 -22 16 -22 30 0 C 16 22 -16 22 -36 0 Z M30 0 L 44 -14 L 44 14 Z" fill="#2C9DB8" stroke="#8FD0E2" stroke-width="2"></path>'}[kind]
+        o.append(f'<g transform="translate({f(cx)} {f(cy)}) scale({f(s)})">{g}</g>' + label(cx, cy + 66 * s, nm, "#FFD23F", 9))
+        o.append(f'<rect x="{f(cw * (i % 3) + 6)}" y="{f(ch * (i // 3) + 6)}" width="{f(cw - 12)}" height="{f(ch - 12)}" fill="none" stroke="#5A4A8A" stroke-width="1.4"></rect>')
+    return "".join(o)
