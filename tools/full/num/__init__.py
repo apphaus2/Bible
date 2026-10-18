@@ -35,5 +35,7 @@ META = {
      "blurb": "The drink-offerings and the first of the dough; the man gathering sticks upon the sabbath; a cord of blue upon the fringes; Korah, Dathan and Abiram, and the two hundred and fifty with their censers; the ground that clave asunder; Aaron standing between the dead and the living; and the rod of Aaron that budded and bare ripe almonds."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Water for Impurity", "range": "Numbers 18–19", "bible_chapters": [18, 19],
      "blurb": "The charge of the priests and the Levites; the heave-offerings, the first-fruits and the firstlings, a covenant of salt for ever; I am thy portion and thine inheritance; the tithe and the tithe of the tithe; and the red heifer without spot, burned without the camp, whose ashes in running water are a water for impurity."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Meribah and the Serpent of Brass", "range": "Numbers 20–21", "bible_chapters": [20, 21],
+     "blurb": "Miriam dead at Kadesh; the waters of Meribah, and the rock smitten twice; Edom refusing passage; Aaron gathered unto his people on mount Hor; the fiery serpents and the serpent of brass upon a standard; Spring up, O well; and Sihon and Og, the kings of the Amorites and of Bashan."},
   ],
 }

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 707 verses — 707 full, 0 partial, 0 omitted.
+**So far:** 771 verses — 771 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Numbering (Numbers 1–2)
 
@@ -55,5 +55,11 @@ Every verse is on the page in full.
 ## Chapter 9 · The Water for Impurity (Numbers 18–19)
 
 54 verses: 54 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 10 · Meribah and the Serpent of Brass (Numbers 20–21)
+
+64 verses: 64 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

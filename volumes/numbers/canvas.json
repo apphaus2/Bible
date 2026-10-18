@@ -961,6 +961,111 @@
    "w": 760,
    "h": 1080,
    "title": "126 · The Water for Impurity"
+  },
+  "NUM-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Meribah and the Serpent of Brass"
+  },
+  "NUM-C10-P01-Miriam.dc.html": {
+   "x": 840,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Miriam Died There"
+  },
+  "NUM-C10-P02-Speak.dc.html": {
+   "x": 1680,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Speak Ye unto the Rock"
+  },
+  "NUM-C10-P03-Rebels.dc.html": {
+   "x": 2520,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Hear Now, Ye Rebels"
+  },
+  "NUM-C10-P04-Edom.dc.html": {
+   "x": 3360,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Let Us Pass, I Pray Thee"
+  },
+  "NUM-C10-P05-Refused.dc.html": {
+   "x": 0,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Thus Edom Refused"
+  },
+  "NUM-C10-P06-Hor.dc.html": {
+   "x": 840,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Mount Hor"
+  },
+  "NUM-C10-P07-Aaron.dc.html": {
+   "x": 1680,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · They Wept for Aaron Thirty Days"
+  },
+  "NUM-C10-P08-Arad.dc.html": {
+   "x": 2520,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Hormah"
+  },
+  "NUM-C10-P09-Serpents.dc.html": {
+   "x": 3360,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Fiery Serpents"
+  },
+  "NUM-C10-P10-Journeys.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Valleys of the Arnon"
+  },
+  "NUM-C10-P11-Well.dc.html": {
+   "x": 840,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Spring Up, O Well"
+  },
+  "NUM-C10-P12-Sihon.dc.html": {
+   "x": 1680,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Sihon King of the Amorites"
+  },
+  "NUM-C10-P13-Heshbon.dc.html": {
+   "x": 2520,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Come Ye to Heshbon"
+  },
+  "NUM-C10-P14-Og.dc.html": {
+   "x": 3360,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · Og the King of Bashan"
   }
  },
  "order": [
@@ -1099,7 +1204,22 @@
   "NUM-C09-L-P05-TheTithe.dc.html",
   "NUM-C09-L-P06-TheRedHeifer.dc.html",
   "NUM-C09-L-P07-HeThatTouchethTheD.dc.html",
-  "NUM-C09-L-P08-TheWaterForImpurit.dc.html"
+  "NUM-C09-L-P08-TheWaterForImpurit.dc.html",
+  "NUM-C10-00-Title.dc.html",
+  "NUM-C10-P01-Miriam.dc.html",
+  "NUM-C10-P02-Speak.dc.html",
+  "NUM-C10-P03-Rebels.dc.html",
+  "NUM-C10-P04-Edom.dc.html",
+  "NUM-C10-P05-Refused.dc.html",
+  "NUM-C10-P06-Hor.dc.html",
+  "NUM-C10-P07-Aaron.dc.html",
+  "NUM-C10-P08-Arad.dc.html",
+  "NUM-C10-P09-Serpents.dc.html",
+  "NUM-C10-P10-Journeys.dc.html",
+  "NUM-C10-P11-Well.dc.html",
+  "NUM-C10-P12-Sihon.dc.html",
+  "NUM-C10-P13-Heshbon.dc.html",
+  "NUM-C10-P14-Og.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1171,6 +1291,13 @@
    "text": "Chapter 9 · The Water for Impurity (Numbers 18–19)",
    "x": 0,
    "y": 40500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Meribah and the Serpent of Brass (Numbers 20–21)",
+   "x": 0,
+   "y": 43400
   }
  },
  "designSystems": [],
