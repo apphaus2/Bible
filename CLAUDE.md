@@ -116,6 +116,7 @@ There are two editions:
 | Judges | 6 · Samson | 13–15 | title + 14 (pp. 75–88) | 65/65 verses full (the digest's Samson panels; 15:6 and the slaughters words only) | `volumes/judges/` |
 | Judges | 7 · Delilah | 16 | title + 9 (pp. 89–97) | 31/31 verses full (16:1 and 16:21 words only; the digest's Delilah and pillars panels) | `volumes/judges/` |
 | Judges | 8 · Micah and the Danites | 17–18 | title + 8 (pp. 98–105) | 44/44 verses full (18:27 words over the smoke) | `volumes/judges/` |
+| Judges | 9 · Gibeah | 19 | title + 7 (pp. 106–112) | 30/30 verses full (19:22–30 words over a shut door, the dawn and a figure of twelve routes: no one drawn) | `volumes/judges/` |
 
 **Genesis, Exodus, Leviticus, Numbers, Deuteronomy and Joshua are complete.** Next: Judges. Joshua is `tools/full/jos/` (10
 chapters, plan in `jos/__init__.py`): story chapters laid out by `discourse.pack` with `jos.common` line helpers (`face()`,

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 515 verses — 515 full, 0 partial, 0 omitted.
+**So far:** 545 verses — 545 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · After the Death of Joshua (Judges 1–2)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · Micah and the Danites (Judges 17–18)
 
 44 verses: 44 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · Gibeah (Judges 19)
+
+30 verses: 30 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

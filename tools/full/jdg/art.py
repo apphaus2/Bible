@@ -453,3 +453,70 @@ def danites_march(p, w, h, seed):
         if i < 4: o.append(E.sheep(x, y, 0.3))
         else: o.append(man(p, x, y, fit(y, y - h * 0.34), r.choice(WAR), flip=True, extra=E4.SPEAR))
     return "".join(o)
+
+# ---- Judges 19–21 -------------------------------------------------------------------------------------------------------
+def travellers(p, w, h, seed, dusk=True, city=None):
+    """The Levite, his servant and a couple of asses on the road at evening (city: a walled city far off on its hill)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#B5524A" if dusk else "#F3D8A0"}"></rect>',
+         sun(w * 0.84, h * 0.46, 26, color="#FF8A3D", op=0.45), hills(w, h, h * 0.5, seed, color="#6A3A3A" if dusk else "#9A8A6A", amp=14)]
+    if city: o.append(J.city_hill(w * 0.76, h * 0.62, w * 0.2, h * 0.2, seed))
+    o.append(ground(w, h, h * 0.62, "#5A3A2A" if dusk else "#C8A06A", dy=0))
+    s = fit(b, h * 0.38)
+    o.append(N.ass(w * 0.42, b, s * 0.55) + N.ass(w * 0.62, b - 4, s * 0.5))
+    o.append(man(p, w * 0.24, b, s, "#5A6E8A") + man(p, w * 0.78, b, s * 0.92, "#7A6A4A"))
+    return "".join(o)
+
+def bethlehem_meal(p, w, h, seed):
+    """In the damsel's father's house in Beth-lehem-judah: bread and wine on the table, a lamp, the evening coming on."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A3A2A"></rect>', ground(w, h, b, "#3A2218", dy=0),
+         S3.table(w * 0.5, b, w * 0.6, min(1.3, h / 260))]
+    from genesis.art4 import clay_lamp
+    o.append(clay_lamp(w * 0.86, h * 0.36, min(1.4, h / 240)))
+    s = fit(b, h * 0.4)
+    o.append(man(p, w * 0.16, b, s, "#5A6E8A", flip=False) + mk.person(p, round(w * 0.84), round(b), round(s, 3), body=SKIN, cloth="#7A5A3A", sw=3, flip=True, extra=A.WHITE_BEARD))
+    return "".join(o)
+
+def empty_street(p, w, h, seed):
+    """The street of Gibeah at sundown: shut doors on either side, the wayfarers sitting in the street, no man taking them in."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#6A3A4A"></rect>', sun(w * 0.5, h * 0.36, 24, color="#FF8A3D", op=0.4)]
+    for side in (0, 1):
+        for k in range(3):
+            x0 = (w * 0.02 + k * w * 0.11) if side == 0 else (w * 0.98 - (k + 1) * w * 0.11)
+            hh = h * (0.5 - k * 0.08)
+            o.append(f'<rect x="{f(x0)}" y="{f(b - hh)}" width="{f(w * 0.1)}" height="{f(hh)}" fill="#8A6A5A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                     f'<rect x="{f(x0 + w * 0.03)}" y="{f(b - hh * 0.4)}" width="{f(w * 0.04)}" height="{f(hh * 0.4)}" fill="#2A140C" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(ground(w, h, b, "#4A2A2A", dy=0))
+    s = fit(b, h * 0.62)
+    o.append(E.kneel(w * 0.44, b, s * 0.8, color="#5A6E8A", skin="#7A4A3A") + E.kneel(w * 0.56, b, s * 0.76, color="#7A6A4A", skin="#7A4A3A", flip=True))
+    return "".join(o)
+
+def shut_door(w, h, seed, dawn=False):
+    """The shut door of the old man's house in Gibeah, by night or in the grey of the dawning (no one is drawn)."""
+    b = h * 0.92
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#7A7A8A" if dawn else "#14123A"}"></rect>']
+    if not dawn: o.append(mk.stars(30, w, h * 0.2, seed))
+    o.append(f'<rect x="{f(w * 0.2)}" y="{f(h * 0.08)}" width="{f(w * 0.6)}" height="{f(b - h * 0.08)}" fill="{"#8A7A6A" if dawn else "#3A2A2E"}" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+             f'<rect x="{f(w * 0.38)}" y="{f(h * 0.34)}" width="{f(w * 0.24)}" height="{f(b - h * 0.34)}" fill="{"#5A4A3A" if dawn else "#1A0E10"}" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+             + "".join(f'<path d="M{f(w * 0.38)} {f(y)} L {f(w * 0.62)} {f(y)}" stroke="#0D0D0F" stroke-width="2" opacity="0.6"></path>' for y in range(int(h * 0.42), int(b), 24))
+             + f'<rect x="{f(w * 0.34)}" y="{f(b)}" width="{f(w * 0.32)}" height="{f(h * 0.03)}" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(ground(w, h, b + h * 0.03, "#4A4A5A" if dawn else "#0E0A14", dy=0))
+    if dawn: o.append(f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h * 0.5)}" fill="#E8C8A0" opacity="0.25"></rect>')
+    return "".join(o)
+
+TRIBES12 = ["REUBEN", "SIMEON", "JUDAH", "ISSACHAR", "ZEBULUN", "DAN", "NAPHTALI", "GAD", "ASHER", "BENJAMIN", "EPHRAIM", "MANASSEH"]
+def borders(w, h):
+    """Sent throughout all the borders of Israel: twelve routes out from the hill-country of Ephraim, as a technical figure."""
+    import math
+    o = [grid_bg(w, h)]
+    cx, cy = w * 0.5, h * 0.54
+    r = min(w * 0.4, h * 0.38)
+    for i, t in enumerate(TRIBES12):
+        a = -math.pi / 2 + i * 2 * math.pi / 12
+        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
+        o.append(route([(cx, cy), (x, y)], color="#D7261E", sw=1.8))
+        o.append(node(x, y, t, TRIBE_C[t], r=4, dy=-9 if y < cy else 16, size=8))
+    o.append(node(cx, cy, "", "#FFD23F", r=6))
+    return "".join(o)

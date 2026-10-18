@@ -807,6 +807,62 @@
    "w": 760,
    "h": 1080,
    "title": "105 · Dan"
+  },
+  "JDG-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Gibeah"
+  },
+  "JDG-C09-D-P01-ACertainLevite.dc.html": {
+   "x": 840,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · A Certain Levite"
+  },
+  "JDG-C09-D-P02-ACertainLevite.dc.html": {
+   "x": 1680,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · A Certain Levite"
+  },
+  "JDG-C09-D-P03-GibeahWhichBelonge.dc.html": {
+   "x": 2520,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Gibeah, Which Belongeth to Benjamin"
+  },
+  "JDG-C09-D-P04-GibeahWhichBelonge.dc.html": {
+   "x": 3360,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Gibeah, Which Belongeth to Benjamin"
+  },
+  "JDG-C09-D-P05-TheMenOfTheCity.dc.html": {
+   "x": 0,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · The Men of the City"
+  },
+  "JDG-C09-D-P06-InTheDawningOfTheD.dc.html": {
+   "x": 840,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · In the Dawning of the Day"
+  },
+  "JDG-C09-E-P01-ConsiderItTakeCoun.dc.html": {
+   "x": 1680,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Consider It, Take Counsel, and Speak"
   }
  },
  "order": [
@@ -923,7 +979,15 @@
   "JDG-C08-D-P05-APeopleQuietAndSec.dc.html",
   "JDG-C08-D-P06-WhatDoYe.dc.html",
   "JDG-C08-D-P07-WhatDoYe.dc.html",
-  "JDG-C08-D-P08-Dan.dc.html"
+  "JDG-C08-D-P08-Dan.dc.html",
+  "JDG-C09-00-Title.dc.html",
+  "JDG-C09-D-P01-ACertainLevite.dc.html",
+  "JDG-C09-D-P02-ACertainLevite.dc.html",
+  "JDG-C09-D-P03-GibeahWhichBelonge.dc.html",
+  "JDG-C09-D-P04-GibeahWhichBelonge.dc.html",
+  "JDG-C09-D-P05-TheMenOfTheCity.dc.html",
+  "JDG-C09-D-P06-InTheDawningOfTheD.dc.html",
+  "JDG-C09-E-P01-ConsiderItTakeCoun.dc.html"
  ],
  "notes": {
   "Main": {
@@ -988,6 +1052,13 @@
    "text": "Chapter 8 · Micah and the Danites (Judges 17–18)",
    "x": 0,
    "y": 34000
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Gibeah (Judges 19)",
+   "x": 0,
+   "y": 36900
   }
  },
  "designSystems": [],

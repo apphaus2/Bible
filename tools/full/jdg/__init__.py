@@ -35,5 +35,7 @@ META = {
      "blurb": "The doors of the gate of Gaza carried to the top of the mountain; Delilah in the valley of Sorek and the lords' silver; the green withes, the new ropes, the web — the Philistines are upon thee, Samson; the seven locks shaven; the prison-house in Gaza; and the two middle pillars of the house of Dagon."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Micah and the Danites", "range": "Judges 17–18", "bible_chapters": [17, 18],
      "blurb": "In those days there was no king in Israel: Micah's eleven hundred pieces of silver, his house of gods, and a young Levite hired to be his priest; the five Danite spies and quiet Laish; the six hundred men carry off the graven image and the priest, and Laish becomes Dan."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Gibeah", "range": "Judges 19", "bible_chapters": [19],
+     "blurb": "A Levite and his concubine on the road home from Beth-lehem-judah; Jebus passed by at evening; no man in Gibeah of Benjamin takes them in but an old man from the field; the men of the city at the door; and what was sent throughout all the borders of Israel: consider it, take counsel, and speak."},
   ],
 }
