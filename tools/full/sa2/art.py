@@ -564,3 +564,88 @@ def bowed(p, w, h, seed):
     o.append(king_fig(p, w * 0.36, b, s * 0.9, flip=False))
     o.append(N.prostrate(w * 0.6, b, s * 0.8, color="#B5121B", skin="#8A5A3A", flip=True))
     return "".join(o)
+
+# ---- 2 Samuel 15–16 -----------------------------------------------------------------------------------------------------
+OLD_C = "#4A2A7A"
+def old_king(p, x, y, s, flip=False, up=None, covered=False):
+    """David old at a distance: purple tunic, the gold crown (covered=True: his head covered, no crown, barefoot)."""
+    return mk.person(p, round(x), round(y), round(s, 3), body="#5A2A16", cloth=OLD_C, kind="Robe" if covered else "Tunic", sw=3, flip=flip, up=up,
+                     extra=(A.headcloth("#3A2A5A") if covered else S3.KING))
+
+def chariot_runners(p, w, h, seed):
+    """Absalom's chariot and horses, and fifty men running before him."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE680", "#F3D8A0"), J.city_hill(w * 0.82, h * 0.5, w * 0.3, h * 0.26, seed), ground(w, h, h * 0.52, "#C8A06A", dy=0)]
+    for k in range(2):
+        for i in range(6):
+            x = w * (0.5 + i * 0.08 + k * 0.04); y = h * (0.66 + k * 0.08)
+            o.append(S4.runner(p, x, y, fit(y, y - h * 0.18), flip=True, cloth="#E8E2D6"))
+    o.append(E3.chariot(w * 0.24, b, min(1.0, h / 360), flip=True, color="#3A2214", driver="#B5121B"))
+    return "".join(o)
+
+def gate_out(p, w, h, seed):
+    """The king went forth out of the city and all his household after him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8C8", "#E8C8A0"), S4.gatehouse(w * 0.76, b, w * 0.46, h * 0.76), ground(w, h, b, "#A88A6A", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(old_king(p, w * 0.42, b, s, flip=True))
+    o.append(crowd_at(p, w, h, seed, w * 0.04, w * 0.34, h * 0.78, b, 7, s * 0.7, s * 0.9, flip=True))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.5, w * 0.66, h * 0.84, b, 4, s * 0.7, s * 0.9, flip=True))
+    return "".join(o)
+
+def march_by(p, w, h, seed):
+    """The Cherethites, the Pelethites and the six hundred Gittites passing on before the king."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.38)
+    o.append(old_king(p, w * 0.12, b, s))
+    for k in range(3):
+        for i in range(9):
+            x = w * (0.26 + i * 0.085 + (k % 2) * 0.04); y = h * (0.7 + k * 0.1)
+            o.append(warrior(p, x, y, fit(y, y - h * (0.18 + 0.04 * k)), ["#8A2A2A", "#2A4A6A", "#5A5A2A"][k], flip=True))
+    return "".join(o)
+
+def ark_kidron(p, w, h, seed):
+    """Zadok and the Levites bearing the ark of the covenant of God, set down beside the brook Kidron."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8A9AB8", "#E8D8C8"), hills(w, h, h * 0.44, seed, color="#6A6A5A", amp=14), ground(w, h, h * 0.54, "#A8906A", dy=0),
+         f'<path d="M-10 {f(h * 0.62)} C {f(w * 0.3)} {f(h * 0.6)} {f(w * 0.6)} {f(h * 0.66)} {f(w + 10)} {f(h * 0.62)}" stroke="#2C9DB8" stroke-width="10" fill="none"></path>']
+    s = fit(b, h * 0.4)
+    o.append(J.ark_borne(p, w * 0.5, b, s * 0.9, uid=p + "ab"))
+    o.append(mk.person(p, round(w * 0.16), round(b), round(s, 3), body=SKIN, cloth="#E8E2D6", sw=3, extra=A.headcloth("#E8E2D6") + A.WHITE_BEARD))
+    return "".join(o)
+
+def ziba_asses(p, w, h, seed):
+    """Ziba with a couple of asses saddled, laden with loaves, raisins, summer fruits and a bottle of wine."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#8A7A5A", amp=14), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    k = min(1.0, h / 300)
+    for i, x in enumerate((0.42, 0.68)):
+        o.append(N.ass(w * x, b - i * 6, k, flip=True))
+        o.append(f'<rect x="{f(w * x - 34 * k)}" y="{f(b - 112 * k)}" width="{f(60 * k)}" height="{f(26 * k)}" rx="6" fill="#C8A06A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 + "".join(f'<circle cx="{f(w * x - 24 * k + j * 16 * k)}" cy="{f(b - 116 * k)}" r="{f(7 * k)}" fill="{["#D9A25A", "#6A2A4A", "#C8703A"][j % 3]}" stroke="#0D0D0F" stroke-width="1.4"></circle>' for j in range(4)))
+    o.append(captain(p, w * 0.16, b, fit(b, h * 0.36), cloth="#7A5A3A", spear=False))
+    return "".join(o)
+
+def shimei(p, w, h, seed):
+    """Shimei on the hill-side over against David, cursing and casting stones and dust; David's men on the way below."""
+    r = random.Random(seed)
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"),
+         f'<path d="M{f(w * 0.4)} {f(h * 0.5)} C {f(w * 0.6)} {f(h * 0.2)} {f(w * 0.8)} {f(h * 0.16)} {f(w + 10)} {f(h * 0.2)} L {f(w + 10)} {f(h * 0.62)} Z" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.62, "#A8906A", dy=0)]
+    sx, sy = w * 0.78, h * 0.24
+    o.append(mk.person(p, round(sx), round(sy), round(fit(sy, sy - h * 0.16), 3), body="#2A140C", cloth="#6A5A3A", sw=2, flip=True, up=[(22, -158), (40, -190), (30, -220)]))
+    for i in range(6):
+        x = r.uniform(w * 0.3, w * 0.7); y = r.uniform(h * 0.3, h * 0.6)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="6" ry="5" fill="#7A746A" stroke="#0D0D0F" stroke-width="1.4"></ellipse>')
+    o.append(f'<path d="M{f(w * 0.72)} {f(h * 0.2)} C {f(w * 0.6)} {f(h * 0.2)} {f(w * 0.5)} {f(h * 0.3)} {f(w * 0.44)} {f(h * 0.44)}" stroke="#C8B89A" stroke-width="18" fill="none" opacity="0.4"></path>')
+    s = fit(b, h * 0.6)
+    o.append(old_king(p, w * 0.2, b, s, flip=False))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.4, h * 0.76, b, 8, s * 0.6, s * 0.9))
+    return "".join(o)
+
+def roof_tent(w, h, seed):
+    """A tent spread upon the top of the king's house, over the rooftops of Jerusalem (16:22 told in words only)."""
+    o = [sky(w, h, "#5A3A5A", "#E8A06A"), S3.roof(w, h, h * 0.6, seed), E4.tent(w * 0.5, h * 0.66, w * 0.3, h * 0.24, color="#B5121B", stripe="#5A0A0A")]
+    return "".join(o)

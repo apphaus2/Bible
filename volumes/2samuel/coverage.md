@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 367 verses — 367 full, 0 partial, 0 omitted.
+**So far:** 427 verses — 427 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · How Are the Mighty Fallen (2 Samuel 1–2)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · Absalom (2 Samuel 13–14)
 
 72 verses: 72 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · The Mount of Olives (2 Samuel 15–16)
+
+60 verses: 60 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -10,7 +10,7 @@ empty roof and a shut door.
 
 Plan (20,573 words, twelve chapters): 1 How Are the Mighty Fallen (1–2) · 2 Abner (3–4) · 3 The City of David (5–6) ·
 4 For Ever (7–8) · 5 Mephibosheth (9–10) · 6 Thou Art the Man (11–12) · 7 Absalom (13–14) ·
-8 The Ascent of the Mount of Olives (15–16) · 9 O My Son Absalom (17–18) · 10 The King Returned (19–20) · 11 Jehovah Is My
+8 The Mount of Olives (15–16) · 9 O My Son Absalom (17–18) · 10 The King Returned (19–20) · 11 Jehovah Is My
 Rock (21–22) · 12 Which Cost Me Nothing (23–24)."""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
@@ -36,5 +36,7 @@ META = {
      "blurb": "At the time when kings go out to battle David tarried at Jerusalem; the roof at eventide and Bath-sheba; Uriah sleeping at the king's door; the letter sent by Uriah's hand; the poor man's one little ewe lamb — thou art the man; I have sinned against Jehovah; the child's seventh day, Solomon whom Jehovah loved, and the crown of Rabbah."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Absalom", "range": "2 Samuel 13–14", "bible_chapters": [13, 14],
      "blurb": "Amnon's sickness for his sister Tamar and Jonadab's subtle counsel; Tamar's cakes, the shut door, and her garment of divers colors rent; Absalom's two full years and the shearers' feast at Baal-hazor; Absalom fled to Geshur; the wise woman of Tekoa — we must needs die, and are as water spilt on the ground; and no blemish in him from the sole of his foot to the crown of his head."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Mount of Olives", "range": "2 Samuel 15–16", "bible_chapters": [15, 16],
+     "blurb": "Absalom beside the way of the gate — oh that I were made judge in the land — steals the hearts of the men of Israel; Absalom is king in Hebron; arise, and let us flee; Ittai: whether for death or for life; the ark carried back over the Kidron; David going up the mount of Olives weeping and barefoot; Ziba's asses, Shimei's stones, and Ahithophel's counsel."},
   ],
 }
