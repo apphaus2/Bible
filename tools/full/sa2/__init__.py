@@ -24,5 +24,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "How Are the Mighty Fallen", "range": "2 Samuel 1–2", "bible_chapters": [1, 2],
      "blurb": "The Amalekite out of Saul's camp with the crown and the bracelet; David rends his clothes; the song of the bow — how are the mighty fallen!; David anointed king over Judah in Hebron and Ish-bosheth made king at Mahanaim; the twelve by the pool of Gibeon, Asahel light of foot as a wild roe, and Abner's cry: shall the sword devour for ever?"},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Abner", "range": "2 Samuel 3–4", "bible_chapters": [3, 4],
+     "blurb": "Long war between the house of Saul and the house of David; Abner's wrath — am I a dog's head?; Michal taken from Paltiel, who followed her weeping to Bahurim; Abner's league and the feast in Hebron; Joab takes him aside in the gate; David follows the bier: should Abner die as a fool dieth?; Mephibosheth lamed in the flight, and Ish-bosheth slain at noon."},
   ],
 }

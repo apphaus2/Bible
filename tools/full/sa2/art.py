@@ -159,3 +159,89 @@ def dawn_hebron(p, w, h, seed):
         t = i / 9; x = w * (0.06 + 0.5 * t); y = b - t * h * 0.2
         o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * (0.3 - 0.12 * t)), 3), body="#0B0814", cloth="#2A2030", kind="Tunic", sw=2, extra=E4.SPEAR))
     return "".join(o)
+
+# ---- 2 Samuel 3–4 -------------------------------------------------------------------------------------------------------
+import ruth1 as R1
+SONS = [("AMNON", "AHINOAM"), ("CHILEAB", "ABIGAIL"), ("ABSALOM", "MAACAH"), ("ADONIJAH", "HAGGITH"), ("SHEPHATIAH", "ABITAL"), ("ITHREAM", "EGLAH")]
+def sons_hebron(w, h):
+    """The six sons born to David in Hebron, as a strip of nodes, each with his mother's name."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    y = h * 0.62
+    o.append(f'<path d="M{f(w * 0.08)} {f(y)} L {f(w * 0.92)} {f(y)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="6 5"></path>')
+    for i, (son, mother) in enumerate(SONS):
+        x = w * (0.1 + i * 0.16)
+        o.append(node(x, y, son, "#FFD23F" if son != "ABSALOM" else "#D7261E", r=7, dy=-16, size=10) + label(x, y + 26, "OF " + mother, "#B8B0D8", 8))
+    return "".join(o)
+
+def taken_away(p, w, h, seed):
+    """Michal taken from Paltiel: she goes on the road with Abner's men, her husband weeping behind as far as Bahurim."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8A9AB8", "#E8D8C8"), hills(w, h, h * 0.5, seed, color="#7A7A6A", amp=14), ground(w, h, h * 0.6, "#A8906A", dy=0)]
+    s = fit(b, h * 0.36)
+    o.append(captain(p, w * 0.78, b - h * 0.06, s * 0.8, cloth=ABNER_C, flip=True) + captain(p, w * 0.88, b - h * 0.04, s * 0.84, cloth="#3A3A2A", flip=True))
+    o.append(mk.person(p, round(w * 0.64), round(b), round(s * 0.92, 3), body=SKIN, cloth="#8A1E2E", woman=True, hair="#1A1210", sw=3, flip=True))
+    o.append(E.kneel(w * 0.3, b, s * 0.85, color="#5A5A6A", skin="#9A6A4A", flip=True))
+    return "".join(o)
+
+def feast_hebron(p, w, h, seed):
+    """David made Abner and the twenty men with him a feast in Hebron: the table set, lamps, the guests."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A2A1E"></rect>', S3.cedar(w, h, h * 0.8)]
+    s = fit(b, h * 0.4)
+    o.append(king_fig(p, w * 0.14, b, s))
+    o.append(captain(p, w * 0.86, b, s, cloth=ABNER_C, flip=True, spear=False))
+    for i in range(5):
+        o.append(man(p, w * (0.6 + i * 0.05), b - h * 0.04, s * 0.7, r_c(i), flip=True))
+    o.append(S3.table(w * 0.46, b, w * 0.42, min(1.2, h / 300)))
+    return "".join(o)
+
+def r_c(i): return ["#5A5A2A", "#6A4A2A", "#3A4A5A", "#5A3A2A", "#4A4A3A"][i % 5]
+
+def gate_dusk(w, h, seed, people=False):
+    """The gate of Hebron at dusk, its passage dark and empty (Abner's death is told in words only)."""
+    o = [sky(w, h, "#3A1A2A", "#C8603A"), sun(w * 0.86, h * 0.7, 22, color="#FF8A3D", op=0.4), ground(w, h, h * 0.86, "#3A2A2A", dy=0),
+         S4.gatehouse(w * 0.5, h * 0.88, min(w * 0.5, h * 0.9), h * 0.66)]
+    return "".join(o)
+
+def bier(p, w, h, seed):
+    """Abner's bier carried to the grave at Hebron, king David following it, the people with rent clothes and sackcloth."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A5A7A", "#C8B8A8"), J.city_hill(w * 0.82, h * 0.56, w * 0.3, h * 0.3, seed), ground(w, h, h * 0.58, "#7A6A5A", dy=0)]
+    s = fit(b, h * 0.32)
+    xs = [w * 0.46, w * 0.62]
+    for x in xs:
+        o.append(mk.person(p, round(x - 20 * s), round(b), round(s, 3), body="#2A140C", cloth="#3A3430", kind="Tunic", sw=3, flip=True)
+                 + mk.person(p, round(x + 20 * s), round(b), round(s, 3), body="#2A140C", cloth="#4A4038", kind="Tunic", sw=3, flip=True))
+    o.append(f'<rect x="{f(xs[0] - 40 * s)}" y="{f(b - 150 * s)}" width="{f(xs[1] - xs[0] + 80 * s)}" height="{f(22 * s)}" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    o.append(king_fig(p, w * 0.24, b, s * 1.02, flip=True))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.16, h * 0.66, b - 10, 6, s * 0.5, s * 0.8, flip=True))
+    return "".join(o)
+
+def nurse_flee(p, w, h, seed):
+    """His nurse took him up and fled when the tidings came out of Jezreel: a woman running with a child of five."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8703A", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#8A6A5A", amp=16), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(mk.person(p, round(w * 0.46), round(b), round(s, 3), body="#3A1E14", cloth="#4A5A7A", woman=True, hair="#1A1210", sw=3, flip=True, up=R1.HOLD_BABY,
+                       extra=f'<g transform="translate(10 -134)"><ellipse cx="0" cy="0" rx="14" ry="22" fill="#1F5FAD" stroke="#0D0D0F" stroke-width="2"></ellipse><circle cx="0" cy="-26" r="10" fill="#D9A27A" stroke="#0D0D0F" stroke-width="2"></circle></g>')
+             + mk.speed(w * 0.46 + 60 * s, b - 90 * s, 10, 20 * s, 120 * s, seed, color="#F3EFE6", op=0.6))
+    return "".join(o)
+
+def house_noon(w, h, seed):
+    """The house of Ish-bosheth in the heat of the day: a blazing sun, the doorway dark, sacks of wheat by the wall."""
+    o = [sky(w, h, "#FFF4C2", "#FFC14D"), V.rays(w * 0.8, h * 0.1, 30, 20, max(w, h) * 1.2, color="#FFFFFF", op=0.3), sun(w * 0.8, h * 0.1, 30, color="#FFF4C2", op=0.8),
+         ground(w, h, h * 0.86, "#C8A06A", dy=0),
+         f'<rect x="{f(w * 0.12)}" y="{f(h * 0.3)}" width="{f(w * 0.6)}" height="{f(h * 0.56)}" fill="#D8B88A" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+         f'<rect x="{f(w * 0.08)}" y="{f(h * 0.26)}" width="{f(w * 0.68)}" height="{f(h * 0.05)}" fill="#A8885A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<path d="M{f(w * 0.34)} {f(h * 0.86)} L {f(w * 0.34)} {f(h * 0.54)} C {f(w * 0.34)} {f(h * 0.44)} {f(w * 0.5)} {f(h * 0.44)} {f(w * 0.5)} {f(h * 0.54)} L {f(w * 0.5)} {f(h * 0.86)} Z" fill="#12090A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(3):
+        x = w * (0.58 + i * 0.07)
+        o.append(f'<path d="M{f(x - 18)} {f(h * 0.86)} C {f(x - 24)} {f(h * 0.74)} {f(x - 14)} {f(h * 0.7)} {f(x)} {f(h * 0.7)} C {f(x + 14)} {f(h * 0.7)} {f(x + 24)} {f(h * 0.74)} {f(x + 18)} {f(h * 0.86)} Z" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></path>')
+    return "".join(o)
+
+def pool_dusk(w, h, seed):
+    """The pool in Hebron at dusk, nothing beside it but the reeds (4:12 told in words only)."""
+    o = [sky(w, h, "#2A1A3A", "#C86A4A"), J.city_hill(w * 0.5, h * 0.42, w * 0.4, h * 0.26, seed), ground(w, h, h * 0.44, "#4A3A3A", dy=0),
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.7)}" rx="{f(w * 0.26)}" ry="{f(h * 0.13)}" fill="#0F3A5A" stroke="#0D0D0F" stroke-width="3"></ellipse>'
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.68)}" rx="{f(w * 0.2)}" ry="{f(h * 0.06)}" fill="#C86A4A" opacity="0.3"></ellipse>']
+    return "".join(o)

@@ -114,6 +114,90 @@
    "w": 760,
    "h": 1080,
    "title": "13 · Shall the Sword Devour for Ever?"
+  },
+  "2SA-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Abner"
+  },
+  "2SA-C02-D-P01-SonsBornInHebron.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Sons Born in Hebron"
+  },
+  "2SA-C02-D-P02-AmIADogSHead.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Am I a Dog's Head?"
+  },
+  "2SA-C02-D-P03-Michal.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Michal"
+  },
+  "2SA-C02-D-P04-Michal.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Michal"
+  },
+  "2SA-C02-D-P05-Joab.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Joab"
+  },
+  "2SA-C02-D-P06-Joab.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Joab"
+  },
+  "2SA-C02-D-P07-ShouldAbnerDieAsAF.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Should Abner Die as a Fool Dieth?"
+  },
+  "2SA-C02-D-P08-ShouldAbnerDieAsAF.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Should Abner Die as a Fool Dieth?"
+  },
+  "2SA-C02-D-P09-Mephibosheth.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Mephibosheth"
+  },
+  "2SA-C02-D-P10-Mephibosheth.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Mephibosheth"
+  },
+  "2SA-C02-D-P11-Mephibosheth.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Mephibosheth"
   }
  },
  "order": [
@@ -131,7 +215,19 @@
   "2SA-C01-D-P10-Asahel.dc.html",
   "2SA-C01-D-P11-Asahel.dc.html",
   "2SA-C01-D-P12-ShallTheSwordDevou.dc.html",
-  "2SA-C01-D-P13-ShallTheSwordDevou.dc.html"
+  "2SA-C01-D-P13-ShallTheSwordDevou.dc.html",
+  "2SA-C02-00-Title.dc.html",
+  "2SA-C02-D-P01-SonsBornInHebron.dc.html",
+  "2SA-C02-D-P02-AmIADogSHead.dc.html",
+  "2SA-C02-D-P03-Michal.dc.html",
+  "2SA-C02-D-P04-Michal.dc.html",
+  "2SA-C02-D-P05-Joab.dc.html",
+  "2SA-C02-D-P06-Joab.dc.html",
+  "2SA-C02-D-P07-ShouldAbnerDieAsAF.dc.html",
+  "2SA-C02-D-P08-ShouldAbnerDieAsAF.dc.html",
+  "2SA-C02-D-P09-Mephibosheth.dc.html",
+  "2SA-C02-D-P10-Mephibosheth.dc.html",
+  "2SA-C02-D-P11-Mephibosheth.dc.html"
  ],
  "notes": {
   "Main": {
@@ -147,6 +243,13 @@
    "text": "Chapter 1 · How Are the Mighty Fallen (2 Samuel 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Abner (2 Samuel 3–4)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],
