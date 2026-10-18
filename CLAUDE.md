@@ -160,6 +160,7 @@ There are two editions:
 | 1 Kings | 12 · The Fire of Jehovah | 18 | title + 12 (pp. 114–125) | 46/46 verses full (18:28 over dark figures about the altar; 18:40 over the empty brook Kishon) | `volumes/1kings/` |
 | 1 Kings | 13 · A Still Small Voice | 19–20 | title + 18 (pp. 126–143) | 64/64 verses full (Horeb: wind, earthquake, fire and the still small voice, God never drawn; Aphek as a map) | `volumes/1kings/` |
 | 1 Kings | 14 · Naboth's Vineyard | 21–22 | title + 23 (pp. 144–166) | 82/82 verses full (21:13 and 22:34–38 words over the vineyard at dusk, the chariot at sunset and the empty pool) | `volumes/1kings/` |
+| 2 Kings | 1 · The Chariot of Fire | 1–2 | cover + title + 14 (pp. 1–14) | 43/43 verses full (1:10–12 words over fire on the slope; 2:24 over the empty way) | `volumes/2kings/` |
 
 **Genesis through 1 Kings (eleven volumes) are complete.** Next: 2 Kings. 1 Kings is `tools/full/kg1/` (14 chapters, plan and
 restraint notes in `kg1/__init__.py`). There is no digest book from here on, so every drawing is new (`kg1/art.py`): the temple and its

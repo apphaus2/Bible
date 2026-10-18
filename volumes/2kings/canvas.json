@@ -1,0 +1,162 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T22:14:28Z"
+ },
+ "title": "2 Kings — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "2KI-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Chariot of Fire"
+  },
+  "2KI-C01-D-P01-BaalZebubTheGodOfE.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Baal-zebub the God of Ekron"
+  },
+  "2KI-C01-D-P02-BaalZebubTheGodOfE.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Baal-zebub the God of Ekron"
+  },
+  "2KI-C01-D-P03-CaptainsOfFifty.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Captains of Fifty"
+  },
+  "2KI-C01-D-P04-CaptainsOfFifty.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Captains of Fifty"
+  },
+  "2KI-C01-D-P05-CaptainsOfFifty.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Captains of Fifty"
+  },
+  "2KI-C01-D-P06-CaptainsOfFifty.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Captains of Fifty"
+  },
+  "2KI-C01-E-P01-IWillNotLeaveThee.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · I Will Not Leave Thee"
+  },
+  "2KI-C01-E-P02-IWillNotLeaveThee.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · I Will Not Leave Thee"
+  },
+  "2KI-C01-E-P03-IWillNotLeaveThee.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · I Will Not Leave Thee"
+  },
+  "2KI-C01-E-P04-TheChariotOfFire.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Chariot of Fire"
+  },
+  "2KI-C01-E-P05-TheChariotOfFire.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Chariot of Fire"
+  },
+  "2KI-C01-E-P06-TheChariotOfFire.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Chariot of Fire"
+  },
+  "2KI-C01-E-P07-TheWatersHealed.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Waters Healed"
+  },
+  "2KI-C01-E-P08-TheWatersHealed.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Waters Healed"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "2KI-C01-00-Title.dc.html",
+  "2KI-C01-D-P01-BaalZebubTheGodOfE.dc.html",
+  "2KI-C01-D-P02-BaalZebubTheGodOfE.dc.html",
+  "2KI-C01-D-P03-CaptainsOfFifty.dc.html",
+  "2KI-C01-D-P04-CaptainsOfFifty.dc.html",
+  "2KI-C01-D-P05-CaptainsOfFifty.dc.html",
+  "2KI-C01-D-P06-CaptainsOfFifty.dc.html",
+  "2KI-C01-E-P01-IWillNotLeaveThee.dc.html",
+  "2KI-C01-E-P02-IWillNotLeaveThee.dc.html",
+  "2KI-C01-E-P03-IWillNotLeaveThee.dc.html",
+  "2KI-C01-E-P04-TheChariotOfFire.dc.html",
+  "2KI-C01-E-P05-TheChariotOfFire.dc.html",
+  "2KI-C01-E-P06-TheChariotOfFire.dc.html",
+  "2KI-C01-E-P07-TheWatersHealed.dc.html",
+  "2KI-C01-E-P08-TheWatersHealed.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "2 Kings Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Chariot of Fire (2 Kings 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

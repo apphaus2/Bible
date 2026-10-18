@@ -1,0 +1,21 @@
+{
+ "id": "2kings",
+ "order": 12,
+ "name": "2 Kings",
+ "kanji": "列王記下",
+ "thumb": "vol-2kings-",
+ "lede": "The twelfth book of the Bible, in full: Elijah taken up in the whirlwind, Elisha's wonders, Jehu's furious driving, Hezekiah and Josiah, and Jerusalem burned by Babylon, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Chariot of Fire",
+   "range": "2 Kings 1–2",
+   "blurb": "Ahaziah fallen through the lattice inquires of Baal-zebub; a hairy man girt with a girdle of leather; fire from heaven on the captains of fifty; then Gilgal, Beth-el and Jericho — I will not leave thee; the Jordan divided by the mantle; a double portion of thy spirit; a chariot of fire and horses of fire, and Elijah went up by a whirlwind into heaven.",
+   "prefixes": [
+    "Main.dc.html",
+    "2KI-C01-"
+   ]
+  }
+ ]
+}
