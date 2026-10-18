@@ -1206,6 +1206,76 @@
    "w": 760,
    "h": 1080,
    "title": "159 · Amalek Was the First of the Nations"
+  },
+  "NUM-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Phinehas"
+  },
+  "NUM-C12-P01-Peor.dc.html": {
+   "x": 840,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Baal-peor"
+  },
+  "NUM-C12-P02-Phinehas.dc.html": {
+   "x": 1680,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Phinehas Rose Up"
+  },
+  "NUM-C12-P03-Peace.dc.html": {
+   "x": 2520,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · My Covenant of Peace"
+  },
+  "NUM-C12-P04-Vex.dc.html": {
+   "x": 3360,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Vex the Midianites"
+  },
+  "NUM-C12-P05-Reuben.dc.html": {
+   "x": 0,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · In the Plains of Moab"
+  },
+  "NUM-C12-P06-Judah.dc.html": {
+   "x": 840,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · The Families of Judah"
+  },
+  "NUM-C12-P07-Ephraim.dc.html": {
+   "x": 1680,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · Six Hundred Thousand and a Thousand"
+  },
+  "NUM-C12-P08-Lot.dc.html": {
+   "x": 2520,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · By Lot"
+  },
+  "NUM-C12-P09-Levites.dc.html": {
+   "x": 3360,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · They That Were Numbered of the Levites"
   }
  },
  "order": [
@@ -1379,7 +1449,17 @@
   "NUM-C11-P16-Tents.dc.html",
   "NUM-C11-P17-Flee.dc.html",
   "NUM-C11-P18-Star.dc.html",
-  "NUM-C11-P19-Amalek.dc.html"
+  "NUM-C11-P19-Amalek.dc.html",
+  "NUM-C12-00-Title.dc.html",
+  "NUM-C12-P01-Peor.dc.html",
+  "NUM-C12-P02-Phinehas.dc.html",
+  "NUM-C12-P03-Peace.dc.html",
+  "NUM-C12-P04-Vex.dc.html",
+  "NUM-C12-P05-Reuben.dc.html",
+  "NUM-C12-P06-Judah.dc.html",
+  "NUM-C12-P07-Ephraim.dc.html",
+  "NUM-C12-P08-Lot.dc.html",
+  "NUM-C12-P09-Levites.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1465,6 +1545,13 @@
    "text": "Chapter 11 · Balaam (Numbers 22–24)",
    "x": 0,
    "y": 47500
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Phinehas (Numbers 25–26)",
+   "x": 0,
+   "y": 52800
   }
  },
  "designSystems": [],

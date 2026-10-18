@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 867 verses — 867 full, 0 partial, 0 omitted.
+**So far:** 950 verses — 950 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Numbering (Numbers 1–2)
 
@@ -67,5 +67,11 @@ Every verse is on the page in full.
 ## Chapter 11 · Balaam (Numbers 22–24)
 
 96 verses: 96 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 12 · Phinehas (Numbers 25–26)
+
+83 verses: 83 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

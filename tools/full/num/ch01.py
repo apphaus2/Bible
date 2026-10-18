@@ -26,7 +26,8 @@ def tally(tribe, refs, count, accent=None, size=12.5, of=None):
     a, b = refs.split("-"); c = a.split(":")[0]
     accent = accent or K.TRIBE_C[tribe]
     text = sp(refs)
-    tag = f"{of} · NUM {a}–{b.split(':')[-1]}" if of else f"NUM {a}–{b.split(':')[-1]}"
+    rng = a if b.split(':')[-1] == a.split(':')[-1] else f"{a}–{b.split(':')[-1]}"
+    tag = f"{of} · NUM {rng}" if of else f"NUM {rng}"
     return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #12113A; color: #F3EFE6; padding: 9px 12px 10px; display: flex; flex-direction: column; gap: 6px; box-shadow: inset 6px 0 0 {accent}">'
             f'\n      <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-left: 6px"><span data-label style="font-family: Anton, sans-serif; font-size: 26px; line-height: 1; letter-spacing: 0.04em; color: {accent if accent not in ("#3A3A5A", "#6A6A8A") else "#B8C0E8"}">{tribe}</span>'
             f'<span data-label style="padding: 3px 9px; background: #F3EFE6; color: #D7261E; border: 2px solid #D7261E; font-family: Anton, sans-serif; font-size: 20px; letter-spacing: 0.06em">{count}</span></div>'
