@@ -1,0 +1,114 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T16:20:15Z"
+ },
+ "title": "Joshua — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JOS-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Be Strong and of Good Courage"
+  },
+  "JOS-C01-D-P01-MosesMyServantIsDe.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Moses My Servant Is Dead"
+  },
+  "JOS-C01-D-P02-MosesMyServantIsDe.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Moses My Servant Is Dead"
+  },
+  "JOS-C01-D-P03-WithinThreeDays.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Within Three Days"
+  },
+  "JOS-C01-D-P04-Rahab.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Rahab"
+  },
+  "JOS-C01-D-P05-Rahab.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Rahab"
+  },
+  "JOS-C01-D-P06-JehovahYourGodHeIs.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Jehovah Your God, He Is God"
+  },
+  "JOS-C01-D-P07-TheLineOfScarletTh.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Line of Scarlet Thread"
+  },
+  "JOS-C01-D-P08-TheLineOfScarletTh.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Line of Scarlet Thread"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JOS-C01-00-Title.dc.html",
+  "JOS-C01-D-P01-MosesMyServantIsDe.dc.html",
+  "JOS-C01-D-P02-MosesMyServantIsDe.dc.html",
+  "JOS-C01-D-P03-WithinThreeDays.dc.html",
+  "JOS-C01-D-P04-Rahab.dc.html",
+  "JOS-C01-D-P05-Rahab.dc.html",
+  "JOS-C01-D-P06-JehovahYourGodHeIs.dc.html",
+  "JOS-C01-D-P07-TheLineOfScarletTh.dc.html",
+  "JOS-C01-D-P08-TheLineOfScarletTh.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Joshua Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Be Strong and of Good Courage (Joshua 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

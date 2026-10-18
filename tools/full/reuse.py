@@ -28,3 +28,8 @@ def panels(rel):
         layers = re.findall(r'background: ([^"]*)"', m.group(2)) + [m.group(1)]
         out.append(Art(", ".join(layers), int(m.group(3)), int(m.group(4)), _prefix(m.group(5))))
     return out
+
+def fill(art):
+    """A lifted panel as a drawing for any panel size: f(w, h) -> svg, the old viewBox cropped (slice) to fill w x h."""
+    return lambda w, h: (f'<svg x="0" y="0" width="{w}" height="{h}" viewBox="0 0 {art.w} {art.h}" preserveAspectRatio="xMidYMid slice">'
+                         f'{art.svg}</svg>')

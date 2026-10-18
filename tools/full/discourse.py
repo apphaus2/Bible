@@ -54,7 +54,9 @@ def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, 
             flip = s["flip"] if s["flip"] is not None else side
             if s["tok"]: side = not side
             extra = s["extra"]
-            if s["stamp"]: extra += mk.stamp(s["stamp"], ("left" if flip else "right") + ": 14px; top: 12px")
+            if s["stamp"]:                         # on the face's side, or above the verse label when words span the panel
+                pos = (("right" if flip else "left") + ": 14px; top: 12px") if s["tok"] else "right: 14px; bottom: 36px" if s["lines"] else "right: 14px; top: 12px"
+                extra += mk.stamp(s["stamp"], pos)
             if end and k == len(groups) - 1 and i == len(g) - 1: extra += end
             if s["lines"]:
                 art = (s["art"](W1, hh) if callable(s["art"]) else s["art"]) if s["art"] is not None else (X.cosmic(W1, hh) if s["tok"] is None else "")
