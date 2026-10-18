@@ -422,6 +422,97 @@
    "w": 760,
    "h": 1080,
    "title": "54 · From Twenty and Five Years Old"
+  },
+  "NUM-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Cloud and the Trumpets"
+  },
+  "NUM-C05-P01-Passover.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Keep the Passover in Its Appointed Season"
+  },
+  "NUM-C05-P02-Unclean.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Wherefore Are We Kept Back?"
+  },
+  "NUM-C05-P03-Second.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · In the Second Month"
+  },
+  "NUM-C05-P04-Cloud.dc.html": {
+   "x": 3360,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Appearance of Fire by Night"
+  },
+  "NUM-C05-P05-Tarried.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · When the Cloud Tarried"
+  },
+  "NUM-C05-P06-Trumpets.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Two Trumpets of Silver"
+  },
+  "NUM-C05-P07-Alarm.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Ye Shall Be Remembered before Jehovah"
+  },
+  "NUM-C05-P08-SetForward.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Out of the Wilderness of Sinai"
+  },
+  "NUM-C05-P09-Order.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · And They Set Forward"
+  },
+  "NUM-C05-P10-Rearward.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · The Rearward of All the Camps"
+  },
+  "NUM-C05-P11-Hobab.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Thou Shalt Be to Us instead of Eyes"
+  },
+  "NUM-C05-P12-RiseUp.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Rise Up, O Jehovah"
   }
  },
  "order": [
@@ -483,7 +574,20 @@
   "NUM-C04-P11-Cleanse.dc.html",
   "NUM-C04-P12-Hands.dc.html",
   "NUM-C04-P13-Mine.dc.html",
-  "NUM-C04-P14-Service.dc.html"
+  "NUM-C04-P14-Service.dc.html",
+  "NUM-C05-00-Title.dc.html",
+  "NUM-C05-P01-Passover.dc.html",
+  "NUM-C05-P02-Unclean.dc.html",
+  "NUM-C05-P03-Second.dc.html",
+  "NUM-C05-P04-Cloud.dc.html",
+  "NUM-C05-P05-Tarried.dc.html",
+  "NUM-C05-P06-Trumpets.dc.html",
+  "NUM-C05-P07-Alarm.dc.html",
+  "NUM-C05-P08-SetForward.dc.html",
+  "NUM-C05-P09-Order.dc.html",
+  "NUM-C05-P10-Rearward.dc.html",
+  "NUM-C05-P11-Hobab.dc.html",
+  "NUM-C05-P12-RiseUp.dc.html"
  ],
  "notes": {
   "Main": {
@@ -520,6 +624,13 @@
    "text": "Chapter 4 · The Offerings of the Princes (Numbers 7–8)",
    "x": 0,
    "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Cloud and the Trumpets (Numbers 9–10)",
+   "x": 0,
+   "y": 20500
   }
  },
  "designSystems": [],

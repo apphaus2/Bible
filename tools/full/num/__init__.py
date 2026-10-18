@@ -25,5 +25,7 @@ META = {
      "blurb": "The unclean put out without the camp; restitution with the fifth part; the law of jealousy and the water of bitterness; the vow of a Nazirite — no wine, no razor, no dead body — and the blessing put upon the children of Israel: Jehovah bless thee, and keep thee."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Offerings of the Princes", "range": "Numbers 7–8", "bible_chapters": [7, 8],
      "blurb": "Six covered wagons and twelve oxen; the twelve princes, each on his day, with a silver platter, a silver bowl and a golden spoon full of incense, for the dedication of the altar; the Voice from above the mercy-seat; the seven lamps; and the Levites cleansed and waved before Jehovah."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Cloud and the Trumpets", "range": "Numbers 9–10", "bible_chapters": [9, 10],
+     "blurb": "The passover in the wilderness of Sinai, and a second passover for the men unclean by the dead; the cloud upon the tabernacle by day and the appearance of fire by night; two trumpets of silver; the camps setting forward by their standards; Hobab; and Rise up, O Jehovah."},
   ],
 }
