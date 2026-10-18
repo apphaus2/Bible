@@ -479,3 +479,11 @@ def unleavened(w, h, seed):
     from genesis.art4 import clay_lamp
     o.append(clay_lamp(w * 0.88, h * 0.4, min(1.2, h / 260)))
     return "".join(o)
+
+# ---- 1 Samuel 30–31 -----------------------------------------------------------------------------------------------------
+def tamarisk_alone(w, h, seed):
+    """The tamarisk-tree in Jabesh at evening, where the men of Jabesh buried the bones and fasted seven days (no grave drawn)."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A4A"></rect>', sun(w * 0.76, h * 0.56, 30, color="#FF8A3D", op=0.4),
+         hills(w, h, h * 0.62, seed, color="#2A1E30", amp=18), ground(w, h, h * 0.74, "#1E1424", dy=0),
+         S4.great_oak(w * 0.36, h * 0.86, min(1.4, h / 300), seed, dark=True)]
+    return "".join(o)

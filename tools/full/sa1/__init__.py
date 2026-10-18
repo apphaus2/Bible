@@ -47,5 +47,7 @@ META = {
      "blurb": "Samuel is dead; Nabal the churl railing at David's young men, and Abigail riding down with two hundred loaves — the soul of my lord shall be bound in the bundle of life; then the hill of Hachilah, Saul asleep with his spear stuck in the ground at his head, and David crying from the mountain top: behold the king's spear."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "The Witch of En-dor", "range": "1 Samuel 27–29", "bible_chapters": [27, 28, 29],
      "blurb": "David a year and four months among the Philistines at Ziklag; Saul before the host at Shunem, Jehovah answering him not; the woman with a familiar spirit at En-dor by night, and an old man covered with a robe coming up out of the earth: to-morrow shalt thou and thy sons be with me; and David sent back from Aphek."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Mount Gilboa", "range": "1 Samuel 30–31", "bible_chapters": [30, 31],
+     "blurb": "Ziklag burned and the wives taken; David strengthened himself in Jehovah his God and pursued past the brook Besor; all recovered, and they shall share alike; then the Philistines on mount Gilboa, Saul and his three sons dead that same day, and the men of Jabesh-gilead burying them under the tamarisk."},
   ],
 }

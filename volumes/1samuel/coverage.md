@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 766 verses — 766 full, 0 partial, 0 omitted.
+**So far:** 810 verses — 810 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Hannah (1 Samuel 1–2)
 
@@ -79,5 +79,11 @@ Every verse is on the page in full.
 ## Chapter 13 · The Witch of En-dor (1 Samuel 27–29)
 
 48 verses: 48 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 14 · Mount Gilboa (1 Samuel 30–31)
+
+44 verses: 44 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
