@@ -19,7 +19,7 @@ from genesis.ch07 import RED, BLUE
 from mk import defs, face
 
 v, sp = G.v, G.span
-SI, IA, TW, AF = [panels("digest/exodus/book-04/" + n + ".dc.html") for n in ["EX4-P05-Sinai", "EX4-P06-IAm", "EX4-P07-TenWords", "EX4-P08-AfarOff"]]
+SI, IA, TW, AF = [panels("reference/exodus/book-04/" + n + ".dc.html") for n in ["EX4-P05-Sinai", "EX4-P06-IAm", "EX4-P07-TenWords", "EX4-P08-AfarOff"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 MOUNT = "linear-gradient(180deg, #1A0E2A 0%, #4A1D3A 55%, #C8682E 100%)"
 WOMAN = A.tok("WOMAN")

@@ -1,11 +1,11 @@
 """Lift the drawn art out of a digest page so the full edition can reuse it.
 
-    panels("digest/genesis/book-01/P05-Eden.dc.html") -> [Art(bg, w, h, svg), ...] in page order
+    panels("reference/genesis/book-01/P05-Eden.dc.html") -> [Art(bg, w, h, svg), ...] in page order
 Each Art keeps its own viewBox size; ids inside are renamed with a unique prefix so two lifted panels can
 share a page. Only the <svg> drawing (plus any full-panel overlay div, kept as a background layer) is taken: captions,
 balloons and sound effects are left behind."""
 import re, pathlib, itertools
-ROOT = pathlib.Path(__file__).resolve().parents[2]
+ROOT = pathlib.Path(__file__).resolve().parent
 _n = itertools.count()
 
 class Art:

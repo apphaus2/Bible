@@ -18,7 +18,7 @@ from genesis.ch12 import NILE, COURT
 from mk import defs, face
 
 v, sp = G.v, G.span
-B1 = "digest/exodus/book-01/"
+B1 = "reference/exodus/book-01/"
 D = [panels(B1 + n + ".dc.html") for n in ["EX1-P01-King", "EX1-P02-Ark", "EX1-P03-Drawn", "EX1-P04-Egyptian", "EX1-P05-Midian", "EX1-P06-Bush", "EX1-P07-IAM", "EX1-P08-Rod"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 FIRE = "linear-gradient(180deg, #1A0408 0%, #6A1A1E 50%, #FF6A2A 100%)"

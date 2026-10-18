@@ -14,7 +14,7 @@ from genesis.ch04 import fc, TENT, EMBER, GLOW, COLD
 from mk import defs, face
 
 v, sp = G.v, G.span
-B3 = "digest/genesis/book-03/"
+B3 = "reference/genesis/book-03/"
 Mor, Prov = (panels(B3 + n + ".dc.html") for n in ["B3-P07-Moriah", "B3-P08-Provide"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 PALACE = "linear-gradient(180deg, #8FD0E2 0%, #FFE3B8 100%)"

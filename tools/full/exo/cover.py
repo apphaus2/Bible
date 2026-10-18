@@ -5,7 +5,7 @@ from reuse import panels
 from exo import G
 
 def cover():
-    a = panels("digest/exodus/book-01/EX1-P06-Bush.dc.html")[1]
+    a = panels("reference/exodus/book-01/EX1-P06-Bush.dc.html")[1]
     svg = f'<svg width="760" height="1080" viewBox="120 0 470 472" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; display: block">{a.svg}</svg>'
     svg += '<div style="position: absolute; left: 0; right: 0; top: 0; height: 420px; background: linear-gradient(180deg, rgba(13,13,15,0.92) 0%, rgba(13,13,15,0.75) 60%, rgba(13,13,15,0) 100%)"></div>'
     body = svg + f'''

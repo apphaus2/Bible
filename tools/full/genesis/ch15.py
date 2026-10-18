@@ -18,7 +18,7 @@ from genesis.ch14 import talk, BENJAMIN, STEWARD, ISRAEL
 from mk import defs, face
 
 v, sp = G.v, G.span
-B5 = "digest/genesis/book-05/"
+B5 = "reference/genesis/book-05/"
 Jos, = (panels(B5 + n + ".dc.html") for n in ["B5-P08-Joseph"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 START = 229                                  # chapter 14 ends on page 228

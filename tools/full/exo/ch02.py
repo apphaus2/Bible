@@ -19,7 +19,7 @@ from genesis.ch12 import NILE, COURT
 from mk import defs, face
 
 v, sp = G.v, G.span
-B2 = "digest/exodus/book-02/"
+B2 = "reference/exodus/book-02/"
 D = [panels(B2 + n + ".dc.html") for n in ["EX2-P01-LetGo", "EX2-P02-Rods", "EX2-P03-Blood", "EX2-P04-Frogs"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 REUBEN_C, SIMEON_C, LEVI_C = "#6A7AD8", "#8A6AB8", "#E8B830"

@@ -16,7 +16,7 @@ from genesis.ch08 import ROSE, OCHRE, PASTURE
 from mk import defs, face
 
 v, sp = G.v, G.span
-B4 = "digest/genesis/book-04/"
+B4 = "reference/genesis/book-04/"
 Pen, Reu = (panels(B4 + n + ".dc.html") for n in ["B4-P07-Peniel", "B4-P08-Reunion"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 DREAM = "linear-gradient(180deg, #0B0B2A 0%, #2A1A5E 100%)"

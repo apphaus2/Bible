@@ -36,7 +36,7 @@ _NAMES = {"P01": "RU1-P01-Moab", "P02": "RU1-P02-Return", "P03": "RU1-P03-Whithe
 _cache = {}
 def D(page, i, align="xMidYMid"):
     """(bg, f(w, h)) for panel i of a page of the digest's Ruth book."""
-    if page not in _cache: _cache[page] = panels("digest/ruth/book-01/" + _NAMES[page] + ".dc.html")
+    if page not in _cache: _cache[page] = panels("reference/ruth/book-01/" + _NAMES[page] + ".dc.html")
     a = _cache[page][i]
     return a.bg, fill(a, align)
 

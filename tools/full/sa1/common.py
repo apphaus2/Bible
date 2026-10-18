@@ -40,8 +40,8 @@ MAN_OF_GOD = F("adam", skin="#B98A6E", shadow="#3A3A5A", hair="#C8C2B6", hl="#8A
 def face(lines, ref, tok, bg=GOLDEN, **k): return seg(lines, ref, tok=tok, bg=bg, **k)
 def drawn(lines, ref, art, bg, **k): return seg(lines, ref, bg=bg, art=art, **k)
 
-_B = {"A": ("digest/1samuel/book-01/", ["SA1-P01-Hannah", "SA1-P02-Asked", "SA1-P03-HereAmI", "SA1-P04-Speak", "SA1-P05-Taken", "SA1-P06-Dagon", "SA1-P07-Kine", "SA1-P08-King", "SA1-P09-Anointed"]),
-      "B": ("digest/1samuel/book-02/", ["SA2-P01-Youngest", "SA2-P02-Anoint", "SA2-P03-Goliath", "SA2-P04-LivingGod", "SA2-P05-Stones", "SA2-P06-Name", "SA2-P07-Stone", "SA2-P08-Jonathan", "SA2-P09-Cave", "SA2-P10-Gilboa"])}
+_B = {"A": ("reference/1samuel/book-01/", ["SA1-P01-Hannah", "SA1-P02-Asked", "SA1-P03-HereAmI", "SA1-P04-Speak", "SA1-P05-Taken", "SA1-P06-Dagon", "SA1-P07-Kine", "SA1-P08-King", "SA1-P09-Anointed"]),
+      "B": ("reference/1samuel/book-02/", ["SA2-P01-Youngest", "SA2-P02-Anoint", "SA2-P03-Goliath", "SA2-P04-LivingGod", "SA2-P05-Stones", "SA2-P06-Name", "SA2-P07-Stone", "SA2-P08-Jonathan", "SA2-P09-Cave", "SA2-P10-Gilboa"])}
 _cache = {}
 def D(page, i, align="xMidYMid"):
     if page not in _cache:

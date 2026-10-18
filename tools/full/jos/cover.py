@@ -1,10 +1,8 @@
 import sys, pathlib, random
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "digest"))
 import mk, exodus5 as V, joshua1 as J
 from mk import defs
-from exodus_book3 import crowd
-from joshua_book1 import WAR
+from crowds import crowd, WAR
 from jos import G
 
 def cover():

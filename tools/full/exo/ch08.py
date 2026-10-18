@@ -13,7 +13,7 @@ from mk import defs
 
 v, sp = G.v, G.span
 INK = B8.INK
-CU, = [panels("digest/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P01-ComeUp"]]
+CU, = [panels("reference/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P01-ComeUp"]]
 START = 123                                  # chapter 7 ends on page 122
 PAGES = []
 def P(name, title):

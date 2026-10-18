@@ -14,7 +14,7 @@ from genesis.ch03 import clan, hud, SAND, HOT, BLOOD, GREEN
 from mk import defs, face
 
 v, sp = G.v, G.span
-B3 = "digest/genesis/book-03/"
+B3 = "reference/genesis/book-03/"
 Mam, Sod = (panels(B3 + n + ".dc.html") for n in ["B3-P05-Mamre", "B3-P06-Sodom"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 TENT = "linear-gradient(180deg, #FFE3B8 0%, #E8C88A 100%)"

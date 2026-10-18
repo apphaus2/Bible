@@ -16,7 +16,7 @@ from genesis.ch12 import NILE, COURT, CELL
 from mk import defs, face
 
 v, sp = G.v, G.span
-B5 = "digest/genesis/book-05/"
+B5 = "reference/genesis/book-05/"
 Dr, Ph, Gr = (panels(B5 + n + ".dc.html") for n in ["B5-P05-Dream", "B5-P06-Pharaoh", "B5-P07-Granaries"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 START = 206                                  # chapter 12 ends on page 205

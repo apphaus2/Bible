@@ -12,7 +12,7 @@ from genesis.ch02 import rows, entry, grid, W1, W2, W3, NIGHT, STORM, DUSK, SKY,
 from mk import defs, face
 
 v, sp = G.v, G.span
-B3 = "digest/genesis/book-03/"
+B3 = "reference/genesis/book-03/"
 Brk, Bab, Call = (panels(B3 + n + ".dc.html") for n in ["B3-P01-Brick", "B3-P02-Babel", "B3-P03-Call"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 SAND = "linear-gradient(180deg, #FFE3B8 0%, #E8C88A 100%)"

@@ -23,7 +23,7 @@ from num import ch06 as _prev
 v, sp = G.v, G.span
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
-B1 = "digest/numbers/book-01/"
+B1 = "reference/numbers/book-01/"
 D1, D2, D3, D4 = (panels(B1 + n + ".dc.html") for n in ["NU1-P01-Spies", "NU1-P02-Report", "NU1-P03-Wept", "NU1-P04-Forty"])
 
 def night(h, over, w=W1): return new(NIGHT, w, h, X.cosmic(w, h), over)

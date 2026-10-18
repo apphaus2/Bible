@@ -20,8 +20,8 @@ from genesis.ch12 import NILE, COURT
 from mk import defs, face
 
 v, sp = G.v, G.span
-H, L, K, M = [panels("digest/exodus/book-02/" + n + ".dc.html") for n in ["EX2-P05-Hail", "EX2-P06-Locusts", "EX2-P07-Darkness", "EX2-P08-Midnight"]]
-LB, BL, CR, EXO = [panels("digest/exodus/book-03/" + n + ".dc.html") for n in ["EX3-P01-Lamb", "EX3-P02-Blood", "EX3-P03-Cry", "EX3-P04-Exodus"]]
+H, L, K, M = [panels("reference/exodus/book-02/" + n + ".dc.html") for n in ["EX2-P05-Hail", "EX2-P06-Locusts", "EX2-P07-Darkness", "EX2-P08-Midnight"]]
+LB, BL, CR, EXO = [panels("reference/exodus/book-03/" + n + ".dc.html") for n in ["EX3-P01-Lamb", "EX3-P02-Blood", "EX3-P03-Cry", "EX3-P04-Exodus"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 CAL = "#0B1A2E"
 START = 41                                   # chapter 2 ends on page 40

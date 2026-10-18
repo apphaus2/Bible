@@ -18,7 +18,7 @@ from genesis.ch08 import ROSE, OCHRE, PASTURE
 from mk import defs, face
 
 v, sp = G.v, G.span
-B5 = "digest/genesis/book-05/"
+B5 = "reference/genesis/book-05/"
 Coat, Pit, Grief = (panels(B5 + n + ".dc.html") for n in ["B5-P01-Coat", "B5-P02-Pit", "B5-P03-Grief"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 YOUTH = "radial-gradient(circle at 70% 30%, #FFF4C2 0 20px, #FFB45A 180px, #8A3A1E 420px)"

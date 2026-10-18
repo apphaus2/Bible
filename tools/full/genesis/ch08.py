@@ -17,7 +17,7 @@ from genesis.ch07 import LAMP, RED, BLUE
 from mk import defs, face
 
 v, sp = G.v, G.span
-B4 = "digest/genesis/book-04/"
+B4 = "reference/genesis/book-04/"
 Lad, Rach = (panels(B4 + n + ".dc.html") for n in ["B4-P05-Ladder", "B4-P06-Rachel"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 ROSE = "radial-gradient(circle at 70% 30%, #FFF4C2 0 20px, #E07A9A 180px, #5A1A3A 420px)"

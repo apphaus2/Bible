@@ -19,7 +19,7 @@ from genesis.ch12 import NILE, COURT
 from mk import defs, face
 
 v, sp = G.v, G.span
-EXO, PU, SS, DG, SO = [panels("digest/exodus/book-03/" + n + ".dc.html") for n in ["EX3-P04-Exodus", "EX3-P05-Pursuit", "EX3-P06-StandStill", "EX3-P07-DryGround", "EX3-P08-Song"]]
+EXO, PU, SS, DG, SO = [panels("reference/exodus/book-03/" + n + ".dc.html") for n in ["EX3-P04-Exodus", "EX3-P05-Pursuit", "EX3-P06-StandStill", "EX3-P07-DryGround", "EX3-P08-Song"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 SEA = "linear-gradient(180deg, #0B2E4A 0%, #1F6F9A 100%)"
 MAP = "#0B1A2E"

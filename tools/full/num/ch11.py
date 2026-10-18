@@ -23,7 +23,7 @@ from num import ch10 as _prev
 v, sp = G.v, G.span
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
-B1 = "digest/numbers/book-01/"
+B1 = "reference/numbers/book-01/"
 D7, D8 = (panels(B1 + n + ".dc.html") for n in ["NU1-P07-Ass", "NU1-P08-Star"])
 VISTA = "#E8C88A"
 

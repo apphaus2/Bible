@@ -10,7 +10,7 @@ GitHub Pages on every push to `master`.
   dialogue word for word. In progress: Genesis through 2 Kings so far.
 - **The text** (`bible-asv.pdf` and `asv/<BOOK>.pdf` on the site): the whole ASV, Genesis to Revelation, as one PDF
   and as one small PDF per book; each manga page's "📖 p. N" button opens its book's PDF at that page's chapter.
-- `digest/` holds the old first drafts; they are no longer published and stay only as a source of drawings.
+- `tools/full/reference/` keeps the old first drafts' pages whose drawings the volumes reuse (never published).
 
 ## Build
 

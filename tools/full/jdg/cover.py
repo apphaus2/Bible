@@ -1,9 +1,8 @@
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "digest"))
 import mk, exodus5 as V, joshua1 as J, judges2 as S
 from mk import defs, speed
-from judges_book2 import samson_both
+from crowds import samson_both
 from jdg import G
 
 def cover():

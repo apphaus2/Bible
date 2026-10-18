@@ -9,7 +9,7 @@ from genesis import G, art as X
 from mk import defs, face
 
 v, sp = G.v, G.span
-D = {n: panels(f"digest/genesis/book-01/{n}.dc.html") for n in ["P01-Darkness", "P02-Firmament", "P03-Land", "P04-Life", "P05-Eden", "P06-Serpent", "P07-Exile"]}
+D = {n: panels(f"reference/genesis/book-01/{n}.dc.html") for n in ["P01-Darkness", "P02-Firmament", "P03-Land", "P04-Life", "P05-Eden", "P06-Serpent", "P07-Exile"]}
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic")
 NIGHT = "linear-gradient(180deg, #05050A 0%, #12113A 60%, #2A1A5E 100%)"
 DUSK = "linear-gradient(180deg, #12113A 0%, #4A1D55 45%, #FF8A3D 100%)"

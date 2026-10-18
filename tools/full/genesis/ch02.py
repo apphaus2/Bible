@@ -11,7 +11,7 @@ from genesis import G, art as X, art2 as Y
 from mk import defs, face
 
 v, sp = G.v, G.span
-B2 = "digest/genesis/book-02/"
+B2 = "reference/genesis/book-02/"
 Off, Fld, Mrk, Gen, Ark, Del, Dov, Cov = (panels(B2 + n + ".dc.html") for n in
     ["B2-P01-Offerings", "B2-P02-Field", "B2-P03-Mark", "B2-P04-Generations", "B2-P05-Ark", "B2-P06-Deluge", "B2-P07-Dove", "B2-P08-Covenant"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic")

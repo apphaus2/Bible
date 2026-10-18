@@ -49,9 +49,9 @@ MESSENGER = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3
 def face(lines, ref, tok, bg=GOLDEN, **k): return seg(lines, ref, tok=tok, bg=bg, **k)
 def drawn(lines, ref, art, bg, **k): return seg(lines, ref, bg=bg, art=art, **k)
 
-_B = {"A": ("digest/2samuel/book-01/", ["SB1-P01-Mourning", "SB1-P02-King", "SB1-P03-Ark", "SB1-P04-Dancing", "SB1-P05-ForEver", "SB1-P06-Mephibosheth",
+_B = {"A": ("reference/2samuel/book-01/", ["SB1-P01-Mourning", "SB1-P02-King", "SB1-P03-Ark", "SB1-P04-Dancing", "SB1-P05-ForEver", "SB1-P06-Mephibosheth",
                                          "SB1-P07-Letter", "SB1-P08-Lamb", "SB1-P09-Man"]),
-      "B": ("digest/2samuel/book-02/", ["SB2-P01-Absalom", "SB2-P02-Hearts", "SB2-P03-Flee", "SB2-P04-Olives", "SB2-P05-Gently", "SB2-P06-Oak", "SB2-P07-Tidings",
+      "B": ("reference/2samuel/book-02/", ["SB2-P01-Absalom", "SB2-P02-Hearts", "SB2-P03-Flee", "SB2-P04-Olives", "SB2-P05-Gently", "SB2-P06-Oak", "SB2-P07-Tidings",
                                          "SB2-P08-MySon", "SB2-P09-Altar"])}
 _cache = {}
 def D(page, i, align="xMidYMid"):

@@ -18,7 +18,7 @@ from genesis.ch06 import RUST, GREENLIT, GOLDEN
 from mk import defs, face
 
 v, sp = G.v, G.span
-CU, = [panels("digest/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P01-ComeUp"]]
+CU, = [panels("reference/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P01-ComeUp"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 CELL = 326                                   # a cell's height on a page of three rows of law cells
 START = 113                                  # chapter 6 ends on page 112

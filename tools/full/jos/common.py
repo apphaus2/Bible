@@ -43,7 +43,7 @@ from genesis.ch07 import RED
 MOODS = {"calm": (JOSHUA_CALM, GOLDEN), "lead": (JOSHUA, RED), "awe": (JOSHUA_AWE, GOLDEN), "grief": (JOSHUA_GRIEF, COLD), "old": (JOSHUA_OLD, GOLDEN)}
 
 # ---- the digest's Joshua Book One, lifted -------------------------------------------------------------------------------
-_B = "digest/joshua/book-01/"
+_B = "reference/joshua/book-01/"
 _NAMES = {"P01": "JO1-P01-Strong", "P02": "JO1-P02-Rahab", "P03": "JO1-P03-Jordan", "P04": "JO1-P04-Prince", "P05": "JO1-P05-Compass",
           "P06": "JO1-P06-Wall", "P07": "JO1-P07-Sun", "P08": "JO1-P08-Choose"}
 _cache = {}

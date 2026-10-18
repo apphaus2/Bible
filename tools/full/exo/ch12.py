@@ -14,7 +14,7 @@ from genesis.ch02 import rows, W1, W2, NIGHT
 from mk import defs
 
 v, sp = G.v, G.span
-TN, = [panels("digest/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P08-Tabernacle"]]
+TN, = [panels("reference/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P08-Tabernacle"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 START = 195                                  # chapter 11 ends on page 194
 PAGES = []

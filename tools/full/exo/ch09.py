@@ -12,7 +12,7 @@ from exo.kit import blueprints
 from genesis.ch02 import rows, W1
 
 v, sp = G.v, G.span
-TB, = [panels("digest/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P02-Tables"]]
+TB, = [panels("reference/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P02-Tables"]]
 INK = B8.INK
 START = 136                                  # chapter 8 ends on page 135
 PAGES = []

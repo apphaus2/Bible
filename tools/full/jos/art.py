@@ -179,12 +179,11 @@ def flint(w, h, seed):
     return "".join(o)
 
 # ---- Joshua 6–7 ---------------------------------------------------------------------------------------------------------
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "digest"))
 from genesis.art3 import node, route, grid_bg
 
 def procession(p, w, h, seed, dawn=False):
     """Round the wall of Jericho: the armed men, seven priests blowing rams' horns, the ark, the rearward."""
-    import joshua_book1 as JB
+    import crowds as JB
     b = h * 0.92
     sky = "#FF8A3D" if dawn else "#8FD0E2"
     o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{sky}"></rect>']

@@ -15,7 +15,7 @@ from genesis.ch06 import RUST, GREENLIT, GOLDEN
 from mk import defs, face
 
 v, sp = G.v, G.span
-B4 = "digest/genesis/book-04/"
+B4 = "reference/genesis/book-04/"
 Tw, Pot, Bl, Cry = (panels(B4 + n + ".dc.html") for n in ["B4-P01-Twins", "B4-P02-Pottage", "B4-P03-Blessing", "B4-P04-Cry"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 LAMP = "radial-gradient(circle at 60% 40%, #FFC14D 0 20px, #8A3A1E 220px, #1A0A06 460px)"

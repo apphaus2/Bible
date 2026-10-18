@@ -17,7 +17,7 @@ from genesis.ch07 import RED, BLUE
 from mk import defs, face
 
 v, sp = G.v, G.span
-MU, MA, RO, AM = [panels("digest/exodus/book-04/" + n + ".dc.html") for n in ["EX4-P01-Murmur", "EX4-P02-Manna", "EX4-P03-Rock", "EX4-P04-Amalek"]]
+MU, MA, RO, AM = [panels("reference/exodus/book-04/" + n + ".dc.html") for n in ["EX4-P01-Murmur", "EX4-P02-Manna", "EX4-P03-Rock", "EX4-P04-Amalek"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 MAP, OMER = "#0B1A2E", "#2A1A10"
 START = 82                                   # chapter 4 ends on page 81

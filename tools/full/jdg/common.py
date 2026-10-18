@@ -55,8 +55,8 @@ def drawn(lines, ref, art, bg, **k):
     return seg(lines, ref, bg=bg, art=art, **k)
 
 # ---- the digest's Judges books, lifted ----------------------------------------------------------------------------------
-_B = {"A": ("digest/judges/book-01/", ["JG1-P01-Deborah", "JG1-P02-Tabor", "JG1-P03-Jael", "JG1-P04-Valor", "JG1-P05-Fleece", "JG1-P06-Three", "JG1-P07-Sword", "JG1-P08-Rule"]),
-      "B": ("digest/judges/book-02/", ["JG2-P01-Nazirite", "JG2-P02-Lion", "JG2-P03-Foxes", "JG2-P04-Jawbone", "JG2-P05-Gaza", "JG2-P06-Delilah", "JG2-P07-Shaven", "JG2-P08-Pillars"])}
+_B = {"A": ("reference/judges/book-01/", ["JG1-P01-Deborah", "JG1-P02-Tabor", "JG1-P03-Jael", "JG1-P04-Valor", "JG1-P05-Fleece", "JG1-P06-Three", "JG1-P07-Sword", "JG1-P08-Rule"]),
+      "B": ("reference/judges/book-02/", ["JG2-P01-Nazirite", "JG2-P02-Lion", "JG2-P03-Foxes", "JG2-P04-Jawbone", "JG2-P05-Gaza", "JG2-P06-Delilah", "JG2-P07-Shaven", "JG2-P08-Pillars"])}
 _cache = {}
 def D(page, i):
     """(bg, f(w, h)) for panel i of a digest page: "A1".."A8" (Deborah, Gideon), "B1".."B8" (Samson)."""

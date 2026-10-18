@@ -158,11 +158,10 @@ def lattice(w, h, seed):
     return "".join(o)
 
 # ---- Judges 6–7 ---------------------------------------------------------------------------------------------------------
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "digest"))
 
 def midian(w, h, seed, night_=False):
     """The Midianites came in as locusts for multitude, they and their camels without number: tents and camels filling the valley."""
-    import judges_book1 as JB
+    import crowds as JB
     o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#14123A" if night_ else "#E8B880"}"></rect>']
     if night_: o.append(mk.stars(50, w, h * 0.4, seed))
     o += [hills(w, h, h * 0.36, seed, color="#3A2A4A" if night_ else "#B5824A", amp=14), ground(w, h, h * 0.42, "#2A2030" if night_ else "#C8A06A", dy=0),

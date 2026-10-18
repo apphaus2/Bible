@@ -15,7 +15,7 @@ from genesis.ch07 import LAMP, RED, BLUE
 from mk import defs, face
 
 v, sp = G.v, G.span
-B5 = "digest/genesis/book-05/"
+B5 = "reference/genesis/book-05/"
 Pri, = (panels(B5 + n + ".dc.html") for n in ["B5-P04-Prison"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 NILE = "radial-gradient(circle at 70% 30%, #FFF4C2 0 20px, #E8B830 180px, #6A3A12 420px)"

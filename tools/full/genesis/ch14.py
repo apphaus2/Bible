@@ -19,7 +19,7 @@ from genesis.ch12 import NILE, COURT, CELL
 from mk import defs, face
 
 v, sp = G.v, G.span
-B5 = "digest/genesis/book-05/"
+B5 = "reference/genesis/book-05/"
 Gr, = (panels(B5 + n + ".dc.html") for n in ["B5-P07-Granaries"])
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 BENJAMIN = F("adam", skin="#E3B08A", shadow="#B97A58", hair="#2A1A10", hl="#5A4A3E", light="#FFE680")

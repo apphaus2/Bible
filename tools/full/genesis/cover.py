@@ -5,7 +5,7 @@ from reuse import panels
 from genesis import G
 
 def cover():
-    a = panels("digest/genesis/book-01/P01-Darkness.dc.html")[3]
+    a = panels("reference/genesis/book-01/P01-Darkness.dc.html")[3]
     svg = f'<svg width="760" height="1080" viewBox="0 0 480 592" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; display: block">{a.svg}</svg>'
     svg += '<div style="position: absolute; left: 0; right: 0; top: 0; height: 420px; background: linear-gradient(180deg, rgba(13,13,15,0.92) 0%, rgba(13,13,15,0.75) 60%, rgba(13,13,15,0) 100%)"></div>'
     body = svg + f'''

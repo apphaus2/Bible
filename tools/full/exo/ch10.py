@@ -21,7 +21,7 @@ from genesis.ch07 import RED, BLUE
 from mk import defs, face
 
 v, sp = G.v, G.span
-MG, PL, BR, SI, GL, TN = [panels("digest/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P03-MakeUsGods", "EX5-P04-Play", "EX5-P05-Broken", "EX5-P06-Side", "EX5-P07-Glory", "EX5-P08-Tabernacle"]]
+MG, PL, BR, SI, GL, TN = [panels("reference/exodus/book-05/" + n + ".dc.html") for n in ["EX5-P03-MakeUsGods", "EX5-P04-Play", "EX5-P05-Broken", "EX5-P06-Side", "EX5-P07-Glory", "EX5-P08-Tabernacle"]]
 ALL = ("Man", "ManUp", "Woman", "WomanUp", "Hair", "Robe", "Tunic", "LieB", "LieA")
 SHINE = "linear-gradient(180deg, #FFF4C2 0%, #FFD23F 60%, #FF8A3D 100%)"
 START = 156                                  # chapter 9 ends on page 155

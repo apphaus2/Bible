@@ -23,7 +23,7 @@ from num import ch09 as _prev
 v, sp = G.v, G.span
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
-B1 = "digest/numbers/book-01/"
+B1 = "reference/numbers/book-01/"
 D4, D5, D6 = (panels(B1 + n + ".dc.html") for n in ["NU1-P04-Forty", "NU1-P05-Rock", "NU1-P06-Serpent"])
 INK = "#0B1A2E"
 
