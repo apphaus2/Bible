@@ -45,5 +45,7 @@ META = {
      "blurb": "Mahlah, Noah, Hoglah, Milcah and Tirzah: the daughters of Zelophehad speak right; Moses shown the land from the mountain of Abarim; Joshua, a man in whom is the Spirit, set before Eleazar; and the offerings of every day, every sabbath, every new moon and every set feast."},
     {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Vows and the War with Midian", "range": "Numbers 30–31", "bible_chapters": [30, 31],
      "blurb": "When a man voweth a vow he shall not break his word; the vows of a daughter in her father's house and of a wife; then a thousand of every tribe sent against Midian with Phinehas and the trumpets, the prey divided between the men of war and the congregation, and the officers' gold brought into the tent of meeting for a memorial."},
+    {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "The Journeys", "range": "Numbers 32–33", "bible_chapters": [32, 33],
+     "blurb": "Reuben and Gad ask for the land of Gilead, a place for cattle — shall your brethren go to the war, and shall ye sit here? be sure your sin will find you out; and the journeys of the children of Israel, every encampment from Rameses to the plains of Moab by the Jordan at Jericho."},
   ],
 }

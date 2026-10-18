@@ -1444,6 +1444,97 @@
    "w": 760,
    "h": 1080,
    "title": "190 · There Lacketh Not One Man of Us"
+  },
+  "NUM-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 63000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · The Journeys"
+  },
+  "NUM-C15-P01-Cattle.dc.html": {
+   "x": 840,
+   "y": 63000,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · A Place for Cattle"
+  },
+  "NUM-C15-P02-ShallYeSitHere.dc.html": {
+   "x": 1680,
+   "y": 63000,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · Shall Ye Sit Here?"
+  },
+  "NUM-C15-P03-Increase.dc.html": {
+   "x": 2520,
+   "y": 63000,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · An Increase of Sinful Men"
+  },
+  "NUM-C15-P04-FindYouOut.dc.html": {
+   "x": 3360,
+   "y": 63000,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Be Sure Your Sin Will Find You Out"
+  },
+  "NUM-C15-P05-Charge.dc.html": {
+   "x": 0,
+   "y": 64200,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · So Moses Gave Charge"
+  },
+  "NUM-C15-P06-Cities.dc.html": {
+   "x": 840,
+   "y": 64200,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Fortified Cities, and Folds for Sheep"
+  },
+  "NUM-C15-P07-Rameses.dc.html": {
+   "x": 1680,
+   "y": 64200,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · These Are the Journeys"
+  },
+  "NUM-C15-P08-Sinai.dc.html": {
+   "x": 2520,
+   "y": 64200,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · Unto the Wilderness of Sinai"
+  },
+  "NUM-C15-P09-Wanderings.dc.html": {
+   "x": 3360,
+   "y": 64200,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · And They Journeyed"
+  },
+  "NUM-C15-P10-Hor.dc.html": {
+   "x": 0,
+   "y": 65400,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · Aaron the Priest Went Up into Mount Hor"
+  },
+  "NUM-C15-P11-Moab.dc.html": {
+   "x": 840,
+   "y": 65400,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · In the Plains of Moab"
+  },
+  "NUM-C15-P12-Pricks.dc.html": {
+   "x": 1680,
+   "y": 65400,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · As Pricks in Your Eyes"
   }
  },
  "order": [
@@ -1651,7 +1742,20 @@
   "NUM-C14-P04-Purify.dc.html",
   "NUM-C14-P05-Tribute.dc.html",
   "NUM-C14-P06-Halves.dc.html",
-  "NUM-C14-P07-Gold.dc.html"
+  "NUM-C14-P07-Gold.dc.html",
+  "NUM-C15-00-Title.dc.html",
+  "NUM-C15-P01-Cattle.dc.html",
+  "NUM-C15-P02-ShallYeSitHere.dc.html",
+  "NUM-C15-P03-Increase.dc.html",
+  "NUM-C15-P04-FindYouOut.dc.html",
+  "NUM-C15-P05-Charge.dc.html",
+  "NUM-C15-P06-Cities.dc.html",
+  "NUM-C15-P07-Rameses.dc.html",
+  "NUM-C15-P08-Sinai.dc.html",
+  "NUM-C15-P09-Wanderings.dc.html",
+  "NUM-C15-P10-Hor.dc.html",
+  "NUM-C15-P11-Moab.dc.html",
+  "NUM-C15-P12-Pricks.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1758,6 +1862,13 @@
    "text": "Chapter 14 · Vows and the War with Midian (Numbers 30–31)",
    "x": 0,
    "y": 59800
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · The Journeys (Numbers 32–33)",
+   "x": 0,
+   "y": 62700
   }
  },
  "designSystems": [],

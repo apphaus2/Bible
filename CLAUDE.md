@@ -80,6 +80,7 @@ There are two editions:
 | Numbers | 12 · Phinehas | 25–26 | title + 9 (pp. 160–168) | 83/83 verses full (25:4–8 with restraint; the second census as tally cells) | `volumes/numbers/` |
 | Numbers | 13 · The Daughters of Zelophehad | 27–29 | title + 13 (pp. 169–181) | 94/94 verses full (the feasts as law cells with the beasts counted) | `volumes/numbers/` |
 | Numbers | 14 · Vows and the War with Midian | 30–31 | title + 9 (pp. 182–190) | 70/70 verses full (vows as law cells; the war told with restraint; the spoil as a chart) | `volumes/numbers/` |
+| Numbers | 15 · The Journeys | 32–33 | title + 12 (pp. 191–202) | 98/98 verses full (the 42 stations as a lit route map over station cells) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·
