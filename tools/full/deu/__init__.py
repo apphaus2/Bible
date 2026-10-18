@@ -30,7 +30,7 @@ META = {
      "blurb": "Seven nations greater and mightier than thou, and the hornet sent before thee; Jehovah set his love upon you, not because ye were more in number; the manna and the forty years — man doth not live by bread only; and a good land of wheat and barley, vines and fig-trees and pomegranates: beware lest thou forget."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Tables of Stone", "range": "Deuteronomy 9–10", "bible_chapters": [9, 10],
      "blurb": "Not for thy righteousness: the golden calf at Horeb remembered, the tables cast down and broken, Moses fallen down before Jehovah forty days and forty nights; the tables hewn again and put in the ark; and now, Israel, what doth Jehovah thy God require of thee?"},
-    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Place Which Jehovah Shall Choose", "range": "Deuteronomy 11–12", "bible_chapters": [11, 12],
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Place of His Name", "range": "Deuteronomy 11–12", "bible_chapters": [11, 12],
      "blurb": "A land of hills and valleys that drinketh water of the rain of heaven; lay up these my words in your heart; I set before you this day a blessing and a curse, on Gerizim and on Ebal; and the place which Jehovah your God shall choose out of all your tribes, to put his name there."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Year of Release", "range": "Deuteronomy 13–15", "bible_chapters": [13, 14, 15],
      "blurb": "The prophet and the dreamer of dreams that saith, Let us go after other gods; ye are the children of Jehovah your God; the clean and the unclean; the tithe; at the end of every seven years a release, for the poor shall never cease out of the land; the Hebrew servant; and the firstlings."},
@@ -42,5 +42,7 @@ META = {
      "blurb": "Thy brother's ox gone astray, a battlement for thy roof, no mingled seed or stuff, fringes upon the four borders; the laws of marriage; who shall not enter into the assembly of Jehovah; the camp kept holy; the servant that is escaped, usury, vows, and thy neighbor's vineyard."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Basket of First-fruits", "range": "Deuteronomy 24–26", "bible_chapters": [24, 25, 26],
      "blurb": "The bill of divorcement, the millstone taken to pledge, the hired servant's wages, the sheaf forgotten in the field for the sojourner, the fatherless and the widow; the ox that treadeth out the grain; just weights; remember what Amalek did; and the basket of first-fruits: A Syrian ready to perish was my father."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "The Blessings and the Curses", "range": "Deuteronomy 27–28", "bible_chapters": [27, 28],
+     "blurb": "Great stones plastered and written with all the words of this law, and an altar of unhewn stones on mount Ebal; six tribes on Gerizim to bless and six on Ebal for the curse, and all the people shall say, Amen; blessed shalt thou be in the city and in the field — and if thou wilt not hearken, all these curses."},
   ],
 }

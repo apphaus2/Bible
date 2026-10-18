@@ -353,12 +353,12 @@
    "h": 1080,
    "title": "44 · Man Doth Not Live by Bread Only"
   },
-  "DEU-C04-D-P06-ManDothNotLiveByBr.dc.html": {
+  "DEU-C04-D-P06-BewareLestThouForg.dc.html": {
    "x": 840,
    "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "45 · Man Doth Not Live by Bread Only"
+   "title": "45 · Beware Lest Thou Forget"
   },
   "DEU-C04-D-P07-BewareLestThouForg.dc.html": {
    "x": 1680,
@@ -366,13 +366,6 @@
    "w": 760,
    "h": 1080,
    "title": "46 · Beware Lest Thou Forget"
-  },
-  "DEU-C04-D-P08-BewareLestThouForg.dc.html": {
-   "x": 2520,
-   "y": 16700,
-   "w": 760,
-   "h": 1080,
-   "title": "47 · Beware Lest Thou Forget"
   },
   "DEU-C05-00-Title.dc.html": {
    "x": 0,
@@ -386,147 +379,133 @@
    "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "48 · Not for Thy Righteousness"
+   "title": "47 · Not for Thy Righteousness"
   },
   "DEU-C05-D-P02-AlsoInHorebYeProvo.dc.html": {
    "x": 1680,
    "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "49 · Also in Horeb Ye Provoked Jehovah"
+   "title": "48 · Also in Horeb Ye Provoked Jehovah"
   },
   "DEU-C05-D-P03-AlsoInHorebYeProvo.dc.html": {
    "x": 2520,
    "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "50 · Also in Horeb Ye Provoked Jehovah"
+   "title": "49 · Also in Horeb Ye Provoked Jehovah"
   },
   "DEU-C05-D-P04-FortyDaysAndFortyN.dc.html": {
    "x": 3360,
    "y": 18400,
    "w": 760,
    "h": 1080,
-   "title": "51 · Forty Days and Forty Nights"
+   "title": "50 · Forty Days and Forty Nights"
   },
   "DEU-C05-D-P05-FortyDaysAndFortyN.dc.html": {
    "x": 0,
    "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "52 · Forty Days and Forty Nights"
+   "title": "51 · Forty Days and Forty Nights"
   },
   "DEU-C05-D-P06-HewTheeTwoTablesOf.dc.html": {
    "x": 840,
    "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "53 · Hew Thee Two Tables of Stone"
+   "title": "52 · Hew Thee Two Tables of Stone"
   },
-  "DEU-C05-D-P07-HewTheeTwoTablesOf.dc.html": {
+  "DEU-C05-D-P07-WhatDothJehovahThy.dc.html": {
    "x": 1680,
    "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "54 · Hew Thee Two Tables of Stone"
+   "title": "53 · What Doth Jehovah Thy God Require of Thee"
   },
   "DEU-C05-D-P08-WhatDothJehovahThy.dc.html": {
    "x": 2520,
    "y": 19600,
    "w": 760,
    "h": 1080,
-   "title": "55 · What Doth Jehovah Thy God Require of Thee"
-  },
-  "DEU-C05-D-P09-WhatDothJehovahThy.dc.html": {
-   "x": 3360,
-   "y": 19600,
-   "w": 760,
-   "h": 1080,
-   "title": "56 · What Doth Jehovah Thy God Require of Thee"
+   "title": "54 · What Doth Jehovah Thy God Require of Thee"
   },
   "DEU-C06-00-Title.dc.html": {
    "x": 0,
    "y": 21300,
    "w": 760,
    "h": 1080,
-   "title": "Chapter 6 · The Place Which Jehovah Shall Choose"
+   "title": "Chapter 6 · The Place of His Name"
   },
   "DEU-C06-D-P01-KnowYeThisDay.dc.html": {
    "x": 840,
    "y": 21300,
    "w": 760,
    "h": 1080,
-   "title": "57 · Know Ye This Day"
+   "title": "55 · Know Ye This Day"
   },
   "DEU-C06-D-P02-ALandWhichJehovahT.dc.html": {
    "x": 1680,
    "y": 21300,
    "w": 760,
    "h": 1080,
-   "title": "58 · A Land Which Jehovah Thy God Careth For"
+   "title": "56 · A Land Which Jehovah Thy God Careth For"
   },
   "DEU-C06-D-P03-ALandWhichJehovahT.dc.html": {
    "x": 2520,
    "y": 21300,
    "w": 760,
    "h": 1080,
-   "title": "59 · A Land Which Jehovah Thy God Careth For"
+   "title": "57 · A Land Which Jehovah Thy God Careth For"
   },
-  "DEU-C06-D-P04-LayUpTheseMyWords.dc.html": {
+  "DEU-C06-D-P04-ABlessingAndACurse.dc.html": {
    "x": 3360,
    "y": 21300,
    "w": 760,
    "h": 1080,
-   "title": "60 · Lay Up These My Words"
+   "title": "58 · A Blessing and a Curse"
   },
   "DEU-C06-D-P05-ABlessingAndACurse.dc.html": {
    "x": 0,
    "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "61 · A Blessing and a Curse"
+   "title": "59 · A Blessing and a Curse"
   },
-  "DEU-C06-D-P06-ABlessingAndACurse.dc.html": {
+  "DEU-C06-L-P01-ThePlaceWhichJehov.dc.html": {
    "x": 840,
    "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "62 · A Blessing and a Curse"
+   "title": "60 · The Place Which Jehovah Shall Choose"
   },
-  "DEU-C06-L-P01-ThePlaceWhichJehov.dc.html": {
+  "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html": {
    "x": 1680,
    "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "63 · The Place Which Jehovah Shall Choose"
+   "title": "61 · The Place Which Jehovah Shall Choose"
   },
-  "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html": {
+  "DEU-C06-L-P03-WithinAllThyGates.dc.html": {
    "x": 2520,
    "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "64 · The Place Which Jehovah Shall Choose"
+   "title": "62 · Within All Thy Gates"
   },
-  "DEU-C06-L-P03-WithinAllThyGates.dc.html": {
+  "DEU-C06-L-P04-WithinAllThyGates.dc.html": {
    "x": 3360,
    "y": 22500,
    "w": 760,
    "h": 1080,
-   "title": "65 · Within All Thy Gates"
+   "title": "63 · Within All Thy Gates"
   },
-  "DEU-C06-L-P04-WithinAllThyGates.dc.html": {
+  "DEU-C06-L-P05-TakeHeedToThyself.dc.html": {
    "x": 0,
    "y": 23700,
    "w": 760,
    "h": 1080,
-   "title": "66 · Within All Thy Gates"
-  },
-  "DEU-C06-L-P05-TakeHeedToThyself.dc.html": {
-   "x": 840,
-   "y": 23700,
-   "w": 760,
-   "h": 1080,
-   "title": "67 · Take Heed to Thyself"
+   "title": "64 · Take Heed to Thyself"
   },
   "DEU-C07-00-Title.dc.html": {
    "x": 0,
@@ -540,63 +519,63 @@
    "y": 25400,
    "w": 760,
    "h": 1080,
-   "title": "68 · If There Arise a Prophet"
+   "title": "65 · If There Arise a Prophet"
   },
   "DEU-C07-L-P02-IfThyBrotherEntice.dc.html": {
    "x": 1680,
    "y": 25400,
    "w": 760,
    "h": 1080,
-   "title": "69 · If Thy Brother Entice Thee"
+   "title": "66 · If Thy Brother Entice Thee"
   },
   "DEU-C07-L-P03-InOneOfThyCities.dc.html": {
    "x": 2520,
    "y": 25400,
    "w": 760,
    "h": 1080,
-   "title": "70 · In One of Thy Cities"
+   "title": "67 · In One of Thy Cities"
   },
   "DEU-C07-L-P04-YeAreTheChildrenOf.dc.html": {
    "x": 3360,
    "y": 25400,
    "w": 760,
    "h": 1080,
-   "title": "71 · Ye Are the Children of Jehovah"
+   "title": "68 · Ye Are the Children of Jehovah"
   },
   "DEU-C07-L-P05-TheTithe.dc.html": {
    "x": 0,
    "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "72 · The Tithe"
+   "title": "69 · The Tithe"
   },
   "DEU-C07-L-P06-TheTithe.dc.html": {
    "x": 840,
    "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "73 · The Tithe"
+   "title": "70 · The Tithe"
   },
   "DEU-C07-L-P07-TheYearOfRelease.dc.html": {
    "x": 1680,
    "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "74 · The Year of Release"
+   "title": "71 · The Year of Release"
   },
   "DEU-C07-L-P08-IfThyBrotherBeSold.dc.html": {
    "x": 2520,
    "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "75 · If Thy Brother Be Sold unto Thee"
+   "title": "72 · If Thy Brother Be Sold unto Thee"
   },
   "DEU-C07-L-P09-TheFirstlingMales.dc.html": {
    "x": 3360,
    "y": 26600,
    "w": 760,
    "h": 1080,
-   "title": "76 · The Firstling Males"
+   "title": "73 · The Firstling Males"
   },
   "DEU-C08-00-Title.dc.html": {
    "x": 0,
@@ -610,63 +589,63 @@
    "y": 28300,
    "w": 760,
    "h": 1080,
-   "title": "77 · The Passover"
+   "title": "74 · The Passover"
   },
   "DEU-C08-L-P02-TheFeastOfWeeks.dc.html": {
    "x": 1680,
    "y": 28300,
    "w": 760,
    "h": 1080,
-   "title": "78 · The Feast of Weeks"
+   "title": "75 · The Feast of Weeks"
   },
   "DEU-C08-L-P03-TheFeastOfTabernac.dc.html": {
    "x": 2520,
    "y": 28300,
    "w": 760,
    "h": 1080,
-   "title": "79 · The Feast of Tabernacles"
+   "title": "76 · The Feast of Tabernacles"
   },
   "DEU-C08-L-P04-JudgesAndOfficers.dc.html": {
    "x": 3360,
    "y": 28300,
    "w": 760,
    "h": 1080,
-   "title": "80 · Judges and Officers"
+   "title": "77 · Judges and Officers"
   },
   "DEU-C08-L-P05-IfThereAriseAMatte.dc.html": {
    "x": 0,
    "y": 29500,
    "w": 760,
    "h": 1080,
-   "title": "81 · If There Arise a Matter Too Hard"
+   "title": "78 · If There Arise a Matter Too Hard"
   },
   "DEU-C08-L-P06-AKingOverThee.dc.html": {
    "x": 840,
    "y": 29500,
    "w": 760,
    "h": 1080,
-   "title": "82 · A King over Thee"
+   "title": "79 · A King over Thee"
   },
   "DEU-C08-L-P07-ThePriestsTheLevit.dc.html": {
    "x": 1680,
    "y": 29500,
    "w": 760,
    "h": 1080,
-   "title": "83 · The Priests the Levites"
+   "title": "80 · The Priests the Levites"
   },
   "DEU-C08-L-P08-ThouShaltNotLearnT.dc.html": {
    "x": 2520,
    "y": 29500,
    "w": 760,
    "h": 1080,
-   "title": "84 · Thou Shalt Not Learn to Do"
+   "title": "81 · Thou Shalt Not Learn to Do"
   },
   "DEU-C08-L-P09-AProphetLikeUntoMe.dc.html": {
    "x": 3360,
    "y": 29500,
    "w": 760,
    "h": 1080,
-   "title": "85 · A Prophet Like unto Me"
+   "title": "82 · A Prophet Like unto Me"
   },
   "DEU-C09-00-Title.dc.html": {
    "x": 0,
@@ -680,63 +659,63 @@
    "y": 31200,
    "w": 760,
    "h": 1080,
-   "title": "86 · Three Cities"
+   "title": "83 · Three Cities"
   },
   "DEU-C09-L-P02-ThreeCities.dc.html": {
    "x": 1680,
    "y": 31200,
    "w": 760,
    "h": 1080,
-   "title": "87 · Three Cities"
+   "title": "84 · Three Cities"
   },
   "DEU-C09-L-P03-ThyNeighborSLandma.dc.html": {
    "x": 2520,
    "y": 31200,
    "w": 760,
    "h": 1080,
-   "title": "88 · Thy Neighbor's Landmark"
+   "title": "85 · Thy Neighbor's Landmark"
   },
   "DEU-C09-L-P04-WhenThouGoestForth.dc.html": {
    "x": 3360,
    "y": 31200,
    "w": 760,
    "h": 1080,
-   "title": "89 · When Thou Goest Forth to Battle"
+   "title": "86 · When Thou Goest Forth to Battle"
   },
   "DEU-C09-L-P05-WhenThouDrawestNig.dc.html": {
    "x": 0,
    "y": 32400,
    "w": 760,
    "h": 1080,
-   "title": "90 · When Thou Drawest Nigh unto a City"
+   "title": "87 · When Thou Drawest Nigh unto a City"
   },
   "DEU-C09-L-P06-WhenThouDrawestNig.dc.html": {
    "x": 840,
    "y": 32400,
    "w": 760,
    "h": 1080,
-   "title": "91 · When Thou Drawest Nigh unto a City"
+   "title": "88 · When Thou Drawest Nigh unto a City"
   },
   "DEU-C09-L-P07-IfOneBeFoundSlain.dc.html": {
    "x": 1680,
    "y": 32400,
    "w": 760,
    "h": 1080,
-   "title": "92 · If One Be Found Slain"
+   "title": "89 · If One Be Found Slain"
   },
   "DEU-C09-L-P08-ACaptiveWoman.dc.html": {
    "x": 2520,
    "y": 32400,
    "w": 760,
    "h": 1080,
-   "title": "93 · A Captive Woman"
+   "title": "90 · A Captive Woman"
   },
   "DEU-C09-L-P09-TheRightOfTheFirst.dc.html": {
    "x": 3360,
    "y": 32400,
    "w": 760,
    "h": 1080,
-   "title": "94 · The Right of the First-born"
+   "title": "91 · The Right of the First-born"
   },
   "DEU-C10-00-Title.dc.html": {
    "x": 0,
@@ -750,56 +729,56 @@
    "y": 34100,
    "w": 760,
    "h": 1080,
-   "title": "95 · Thy Brother's Ox"
+   "title": "92 · Thy Brother's Ox"
   },
   "DEU-C10-L-P02-IfAnyManTakeAWife.dc.html": {
    "x": 1680,
    "y": 34100,
    "w": 760,
    "h": 1080,
-   "title": "96 · If Any Man Take a Wife"
+   "title": "93 · If Any Man Take a Wife"
   },
   "DEU-C10-L-P03-IfAnyManTakeAWife.dc.html": {
    "x": 2520,
    "y": 34100,
    "w": 760,
    "h": 1080,
-   "title": "97 · If Any Man Take a Wife"
+   "title": "94 · If Any Man Take a Wife"
   },
   "DEU-C10-L-P04-IfAnyManTakeAWife.dc.html": {
    "x": 3360,
    "y": 34100,
    "w": 760,
    "h": 1080,
-   "title": "98 · If Any Man Take a Wife"
+   "title": "95 · If Any Man Take a Wife"
   },
   "DEU-C10-L-P05-TheAssemblyOfJehov.dc.html": {
    "x": 0,
    "y": 35300,
    "w": 760,
    "h": 1080,
-   "title": "99 · The Assembly of Jehovah"
+   "title": "96 · The Assembly of Jehovah"
   },
   "DEU-C10-L-P06-WhenThouGoestForth.dc.html": {
    "x": 840,
    "y": 35300,
    "w": 760,
    "h": 1080,
-   "title": "100 · When Thou Goest Forth in Camp"
+   "title": "97 · When Thou Goest Forth in Camp"
   },
   "DEU-C10-L-P07-TheServantThatIsEs.dc.html": {
    "x": 1680,
    "y": 35300,
    "w": 760,
    "h": 1080,
-   "title": "101 · The Servant That Is Escaped"
+   "title": "98 · The Servant That Is Escaped"
   },
   "DEU-C10-L-P08-TheServantThatIsEs.dc.html": {
    "x": 2520,
    "y": 35300,
    "w": 760,
    "h": 1080,
-   "title": "102 · The Servant That Is Escaped"
+   "title": "99 · The Servant That Is Escaped"
   },
   "DEU-C11-00-Title.dc.html": {
    "x": 0,
@@ -813,63 +792,168 @@
    "y": 37000,
    "w": 760,
    "h": 1080,
-   "title": "103 · A Bill of Divorcement"
+   "title": "100 · A Bill of Divorcement"
   },
   "DEU-C11-L-P02-NoManShallTakeTheM.dc.html": {
    "x": 1680,
    "y": 37000,
    "w": 760,
    "h": 1080,
-   "title": "104 · No Man Shall Take the Mill"
+   "title": "101 · No Man Shall Take the Mill"
   },
   "DEU-C11-L-P03-ThouShaltNotOppres.dc.html": {
    "x": 2520,
    "y": 37000,
    "w": 760,
    "h": 1080,
-   "title": "105 · Thou Shalt Not Oppress a Hired Servant"
+   "title": "102 · Thou Shalt Not Oppress a Hired Servant"
   },
   "DEU-C11-L-P04-ThouShaltNotMuzzle.dc.html": {
    "x": 3360,
    "y": 37000,
    "w": 760,
    "h": 1080,
-   "title": "106 · Thou Shalt Not Muzzle the Ox"
+   "title": "103 · Thou Shalt Not Muzzle the Ox"
   },
   "DEU-C11-L-P05-JustWeightsAndReme.dc.html": {
    "x": 0,
    "y": 38200,
    "w": 760,
    "h": 1080,
-   "title": "107 · Just Weights and Remember Amalek"
+   "title": "104 · Just Weights and Remember Amalek"
   },
   "DEU-C11-L-P06-TheBasketOfFirstFr.dc.html": {
    "x": 840,
    "y": 38200,
    "w": 760,
    "h": 1080,
-   "title": "108 · The Basket of First-fruits"
+   "title": "105 · The Basket of First-fruits"
   },
   "DEU-C11-L-P07-TheBasketOfFirstFr.dc.html": {
    "x": 1680,
    "y": 38200,
    "w": 760,
    "h": 1080,
-   "title": "109 · The Basket of First-fruits"
+   "title": "106 · The Basket of First-fruits"
   },
   "DEU-C11-L-P08-TheYearOfTithing.dc.html": {
    "x": 2520,
    "y": 38200,
    "w": 760,
    "h": 1080,
-   "title": "110 · The Year of Tithing"
+   "title": "107 · The Year of Tithing"
   },
   "DEU-C11-L-P09-APeopleForHisOwnPo.dc.html": {
    "x": 3360,
    "y": 38200,
    "w": 760,
    "h": 1080,
-   "title": "111 · A People for His Own Possession"
+   "title": "108 · A People for His Own Possession"
+  },
+  "DEU-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 39900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Blessings and the Curses"
+  },
+  "DEU-C12-D-P01-GreatStonesAndPlas.dc.html": {
+   "x": 840,
+   "y": 39900,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Great Stones, and Plaster Them with Plaster"
+  },
+  "DEU-C12-D-P02-TheseShallStandUpo.dc.html": {
+   "x": 1680,
+   "y": 39900,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · These Shall Stand upon Mount Gerizim"
+  },
+  "DEU-C12-L-P01-AndAllThePeopleSha.dc.html": {
+   "x": 2520,
+   "y": 39900,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · And All the People Shall Say, Amen"
+  },
+  "DEU-C12-L-P02-AndAllThePeopleSha.dc.html": {
+   "x": 3360,
+   "y": 39900,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · And All the People Shall Say, Amen"
+  },
+  "DEU-C12-E-P01-AllTheseBlessingsS.dc.html": {
+   "x": 0,
+   "y": 41100,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · All These Blessings Shall Come upon Thee"
+  },
+  "DEU-C12-E-P02-AllTheseBlessingsS.dc.html": {
+   "x": 840,
+   "y": 41100,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · All These Blessings Shall Come upon Thee"
+  },
+  "DEU-C12-E-P03-AllTheseCursesShal.dc.html": {
+   "x": 1680,
+   "y": 41100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · All These Curses Shall Come upon Thee"
+  },
+  "DEU-C12-E-P04-AllTheseCursesShal.dc.html": {
+   "x": 2520,
+   "y": 41100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · All These Curses Shall Come upon Thee"
+  },
+  "DEU-C12-E-P05-AllTheseCursesShal.dc.html": {
+   "x": 3360,
+   "y": 41100,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · All These Curses Shall Come upon Thee"
+  },
+  "DEU-C12-E-P06-ANationOfFierceCou.dc.html": {
+   "x": 0,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · A Nation of Fierce Countenance"
+  },
+  "DEU-C12-E-P07-ANationOfFierceCou.dc.html": {
+   "x": 840,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · A Nation of Fierce Countenance"
+  },
+  "DEU-C12-E-P08-InTheSiegeAndInThe.dc.html": {
+   "x": 1680,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · In the Siege and in the Distress"
+  },
+  "DEU-C12-E-P09-InTheSiegeAndInThe.dc.html": {
+   "x": 2520,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · In the Siege and in the Distress"
+  },
+  "DEU-C12-E-P10-InTheSiegeAndInThe.dc.html": {
+   "x": 3360,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · In the Siege and in the Distress"
   }
  },
  "order": [
@@ -922,9 +1006,8 @@
   "DEU-C04-D-P03-TheHornet.dc.html",
   "DEU-C04-D-P04-TheHornet.dc.html",
   "DEU-C04-D-P05-ManDothNotLiveByBr.dc.html",
-  "DEU-C04-D-P06-ManDothNotLiveByBr.dc.html",
+  "DEU-C04-D-P06-BewareLestThouForg.dc.html",
   "DEU-C04-D-P07-BewareLestThouForg.dc.html",
-  "DEU-C04-D-P08-BewareLestThouForg.dc.html",
   "DEU-C05-00-Title.dc.html",
   "DEU-C05-D-P01-NotForThyRighteous.dc.html",
   "DEU-C05-D-P02-AlsoInHorebYeProvo.dc.html",
@@ -932,16 +1015,14 @@
   "DEU-C05-D-P04-FortyDaysAndFortyN.dc.html",
   "DEU-C05-D-P05-FortyDaysAndFortyN.dc.html",
   "DEU-C05-D-P06-HewTheeTwoTablesOf.dc.html",
-  "DEU-C05-D-P07-HewTheeTwoTablesOf.dc.html",
+  "DEU-C05-D-P07-WhatDothJehovahThy.dc.html",
   "DEU-C05-D-P08-WhatDothJehovahThy.dc.html",
-  "DEU-C05-D-P09-WhatDothJehovahThy.dc.html",
   "DEU-C06-00-Title.dc.html",
   "DEU-C06-D-P01-KnowYeThisDay.dc.html",
   "DEU-C06-D-P02-ALandWhichJehovahT.dc.html",
   "DEU-C06-D-P03-ALandWhichJehovahT.dc.html",
-  "DEU-C06-D-P04-LayUpTheseMyWords.dc.html",
+  "DEU-C06-D-P04-ABlessingAndACurse.dc.html",
   "DEU-C06-D-P05-ABlessingAndACurse.dc.html",
-  "DEU-C06-D-P06-ABlessingAndACurse.dc.html",
   "DEU-C06-L-P01-ThePlaceWhichJehov.dc.html",
   "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html",
   "DEU-C06-L-P03-WithinAllThyGates.dc.html",
@@ -995,7 +1076,22 @@
   "DEU-C11-L-P06-TheBasketOfFirstFr.dc.html",
   "DEU-C11-L-P07-TheBasketOfFirstFr.dc.html",
   "DEU-C11-L-P08-TheYearOfTithing.dc.html",
-  "DEU-C11-L-P09-APeopleForHisOwnPo.dc.html"
+  "DEU-C11-L-P09-APeopleForHisOwnPo.dc.html",
+  "DEU-C12-00-Title.dc.html",
+  "DEU-C12-D-P01-GreatStonesAndPlas.dc.html",
+  "DEU-C12-D-P02-TheseShallStandUpo.dc.html",
+  "DEU-C12-L-P01-AndAllThePeopleSha.dc.html",
+  "DEU-C12-L-P02-AndAllThePeopleSha.dc.html",
+  "DEU-C12-E-P01-AllTheseBlessingsS.dc.html",
+  "DEU-C12-E-P02-AllTheseBlessingsS.dc.html",
+  "DEU-C12-E-P03-AllTheseCursesShal.dc.html",
+  "DEU-C12-E-P04-AllTheseCursesShal.dc.html",
+  "DEU-C12-E-P05-AllTheseCursesShal.dc.html",
+  "DEU-C12-E-P06-ANationOfFierceCou.dc.html",
+  "DEU-C12-E-P07-ANationOfFierceCou.dc.html",
+  "DEU-C12-E-P08-InTheSiegeAndInThe.dc.html",
+  "DEU-C12-E-P09-InTheSiegeAndInThe.dc.html",
+  "DEU-C12-E-P10-InTheSiegeAndInThe.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1043,7 +1139,7 @@
   "chapter06": {
    "kind": "title1",
    "maxW": 4120,
-   "text": "Chapter 6 · The Place Which Jehovah Shall Choose (Deuteronomy 11–12)",
+   "text": "Chapter 6 · The Place of His Name (Deuteronomy 11–12)",
    "x": 0,
    "y": 21000
   },
@@ -1081,6 +1177,13 @@
    "text": "Chapter 11 · The Basket of First-fruits (Deuteronomy 24–26)",
    "x": 0,
    "y": 36700
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Blessings and the Curses (Deuteronomy 27–28)",
+   "x": 0,
+   "y": 39600
   }
  },
  "designSystems": [],

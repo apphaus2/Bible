@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 6 — The Place Which Jehovah Shall Choose (Deuteronomy 11–12). Every verse, word for word
+"""Deuteronomy volume, Chapter 6 — The Place of His Name (Deuteronomy 11–12). Every verse, word for word
 from ref/asv. Deuteronomy 11 in speech panels (the rain in its season, the words in your heart, Gerizim and Ebal); then the
 statutes begin: Deuteronomy 12 as spoken law cells (exo.kit.law_pages, spoken=True; pictograms picked by picto.pick)."""
 import sys, pathlib
@@ -8,7 +8,7 @@ from fx import chapter_title, end_mark
 from discourse import seg, pack
 from exo.kit import law_pages, set_book
 from deu import G, art as K, art3 as K3
-from deu.common import auto, codify
+from deu.common import shade, auto, codify
 from num.pages import Pages
 from genesis.ch02 import SKY
 from deu import ch05 as _prev
@@ -19,10 +19,10 @@ PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
 
 
-@P("DEU-C06-00-Title", "Chapter 6 · The Place Which Jehovah Shall Choose", title=True)
+@P("DEU-C06-00-Title", "Chapter 6 · The Place of His Name", title=True)
 def title(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#F3D8A0"></rect>' + f'<g transform="translate(0 380)">{K.gerizim_ebal(760, 700, 601)}</g>'
-    return chapter_title(6, "第六話", "The Place Which Jehovah Shall Choose", "Deuteronomy 11 – 12", svg, "#F3D8A0", v("11:26"), "Deuteronomy · Volume Five")
+    svg = shade(f'<rect x="0" y="0" width="760" height="1080" fill="#F3D8A0"></rect>' + f'<g transform="translate(0 380)">{K.gerizim_ebal(760, 700, 601)}</g>')
+    return chapter_title(6, "第六話", "The Place of His Name", "Deuteronomy 11 – 12", svg, "#F3D8A0", v("11:26"), "Deuteronomy · Volume Five")
 
 
 RAIN = ("#5A6E8A", lambda w, h: K.rain(w, h, 611))

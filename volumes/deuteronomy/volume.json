@@ -60,7 +60,7 @@
   {
    "dir": "chapter-06",
    "num": "6",
-   "name": "The Place Which Jehovah Shall Choose",
+   "name": "The Place of His Name",
    "range": "Deuteronomy 11–12",
    "blurb": "A land of hills and valleys that drinketh water of the rain of heaven; lay up these my words in your heart; I set before you this day a blessing and a curse, on Gerizim and on Ebal; and the place which Jehovah your God shall choose out of all your tribes, to put his name there.",
    "prefixes": [
@@ -115,6 +115,16 @@
    "blurb": "The bill of divorcement, the millstone taken to pledge, the hired servant's wages, the sheaf forgotten in the field for the sojourner, the fatherless and the widow; the ox that treadeth out the grain; just weights; remember what Amalek did; and the basket of first-fruits: A Syrian ready to perish was my father.",
    "prefixes": [
     "DEU-C11-"
+   ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "The Blessings and the Curses",
+   "range": "Deuteronomy 27–28",
+   "blurb": "Great stones plastered and written with all the words of this law, and an altar of unhewn stones on mount Ebal; six tribes on Gerizim to bless and six on Ebal for the curse, and all the people shall say, Amen; blessed shalt thou be in the city and in the field — and if thou wilt not hearken, all these curses.",
+   "prefixes": [
+    "DEU-C12-"
    ]
   }
  ]

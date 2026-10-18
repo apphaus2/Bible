@@ -88,7 +88,7 @@ def gerizim_ebal(w, h, seed):
     o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#F3D8A0"></rect>', sun(w * 0.24, h * 0.18, 18, color="#FFE680", op=0.35)]
     o.append(f'<path d="M-10 {f(h)} L {f(w * 0.24)} {f(h * 0.22)} L {f(w * 0.5)} {f(h)} Z" fill="#5A8A4A" stroke="#0D0D0F" stroke-width="2.4"></path>')
     o.append(f'<path d="M{f(w * 0.5)} {f(h)} L {f(w * 0.76)} {f(h * 0.2)} L {f(w + 10)} {f(h)} Z" fill="#6A5A5A" stroke="#0D0D0F" stroke-width="2.4"></path>')
-    o.append(label(w * 0.24, h * 0.94, "GERIZIM · THE BLESSING", "#F3EFE6", 10) + label(w * 0.76, h * 0.94, "EBAL · THE CURSE", "#F3EFE6", 10))
+    o.append(label(w * 0.24, h * 0.82, "GERIZIM · THE BLESSING", "#F3EFE6", 10) + label(w * 0.76, h * 0.82, "EBAL · THE CURSE", "#F3EFE6", 10))
     return "".join(o)
 
 def rain(w, h, seed, shut=False):
@@ -101,4 +101,27 @@ def rain(w, h, seed, shut=False):
         o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#5A6E8A"></rect>', ground(w, h, h * 0.62, "#6A9A4A", dy=0)]
         o.append("".join(f'<path d="M{f(x)} {f(y)} l -6 18" stroke="#CFE6FF" stroke-width="2" opacity="0.8"></path>' for x, y in ((r.uniform(0, w), r.uniform(0, h * 0.6)) for _ in range(90))))
         o.append("".join(f'<path d="M{x} {f(h * 0.62)} L {x} {f(h * 0.52)}" stroke="#C8A030" stroke-width="2"></path>' for x in range(10, int(w), 12)))
+    return "".join(o)
+
+def stones_written(w, h, seed):
+    """Great stones plastered with plaster and written with all the words of this law, and an altar of unhewn stones
+    with its fire, on mount Ebal."""
+    import samuel4 as S4
+    o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#E8C8A0"></rect>', sun(w * 0.86, h * 0.16, 16, op=0.3)]
+    o.append(f'<path d="M-10 {f(h)} L -10 {f(h * 0.5)} L {f(w * 0.4)} {f(h * 0.3)} L {f(w + 10)} {f(h * 0.56)} L {f(w + 10)} {f(h)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    s = min(1.0, h / 300)
+    for i in range(3):
+        x = w * (0.1 + i * 0.13); y0 = h * 0.4; sw, sh = w * 0.1, h * 0.46
+        o.append(f'<rect x="{f(x)}" y="{f(y0)}" width="{f(sw)}" height="{f(sh)}" rx="6" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 + "".join(f'<path d="M{f(x + 8)} {f(y0 + 12 + k * 9)} L {f(x + sw - 8)} {f(y0 + 12 + k * 9)}" stroke="#5A4A3A" stroke-width="1.6"></path>' for k in range(int((sh - 20) / 9))))
+    o.append(S4.altar(w * 0.74, h * 0.9, s * 1.4, fire=True, seed=seed))
+    return "".join(o)
+
+def city_siege(w, h, seed):
+    """A city besieged: high walls under a red sky, the camp of the enemy round about it (nothing within is shown)."""
+    from genesis.art2 import city
+    r = random.Random(seed)
+    o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#3A1A1A"></rect>', V.rays(w * 0.5, h * 0.4, 30, 20, w, color="#FF6A2A", op=0.15)]
+    o.append(city(w * 0.5, h * 0.7, w * 0.5, h * 0.4, seed, color="#2A1A1E", lit="#FF6A2A", wall="#3A2A2A"))
+    o.append(ground(w, h, h * 0.7, "#2A1A1A", dy=0) + N.camp(16, 0, w, h * 0.74, h * 0.96, seed, color=("#1A0E0E", "#2A1A16")))
     return "".join(o)

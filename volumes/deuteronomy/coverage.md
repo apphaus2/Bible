@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 693 verses — 693 full, 0 partial, 0 omitted.
+**So far:** 787 verses — 787 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · These Are the Words (Deuteronomy 1–2)
 
@@ -34,7 +34,7 @@ Every verse is on the page in full.
 
 Every verse is on the page in full.
 
-## Chapter 6 · The Place Which Jehovah Shall Choose (Deuteronomy 11–12)
+## Chapter 6 · The Place of His Name (Deuteronomy 11–12)
 
 64 verses: 64 full, 0 partial, 0 omitted.
 
@@ -67,5 +67,11 @@ Every verse is on the page in full.
 ## Chapter 11 · The Basket of First-fruits (Deuteronomy 24–26)
 
 60 verses: 60 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 12 · The Blessings and the Curses (Deuteronomy 27–28)
+
+94 verses: 94 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

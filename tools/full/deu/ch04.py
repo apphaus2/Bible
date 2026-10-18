@@ -8,7 +8,7 @@ import mk
 from fx import chapter_title, end_mark
 from discourse import seg, pack
 from deu import G, art as K
-from deu.common import auto, says
+from deu.common import shade, auto, says
 from exo import art as A, art5 as A5, art7 as A7
 from num import art7 as N7
 from num.pages import Pages
@@ -25,7 +25,7 @@ MIX = ("calm", "stern", "calm", "fire")
 
 @P("DEU-C04-00-Title", "Chapter 4 · A People for His Own Possession", title=True)
 def title(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#8FD0E2"></rect>' + f'<g transform="translate(0 380)">{N7.hill_country(760, 700, 401)}</g>'
+    svg = shade(f'<rect x="0" y="0" width="760" height="1080" fill="#8FD0E2"></rect>' + f'<g transform="translate(0 380)">{N7.hill_country(760, 700, 401)}</g>')
     return chapter_title(4, "第四話", "A People for His Own Possession", "Deuteronomy 7 – 8", svg, SKY, v("7:6", frm="Jehovah thy God hath chosen thee"), "Deuteronomy · Volume Five")
 
 

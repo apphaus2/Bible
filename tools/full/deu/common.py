@@ -109,7 +109,7 @@ def law_chapter(prev, num, kanji, name, rng, sections, title_art, title_bg, quot
     from exo.kit import law_pages, set_book
     set_book(G)
     PG = Pages(prev.START + len(prev.PAGES) - 1)
-    art = f'<g transform="translate(0 420)">{title_art}</g>' if isinstance(title_art, str) else title_art
+    art = shade(f'<rect x="0" y="0" width="760" height="1080" fill="{title_bg}"></rect><g transform="translate(0 420)">{title_art}</g>')
     PG.P(f"{prefix}-00-Title", f"Chapter {num} · {name}", title=True)(
         lambda n: chapter_title(num, kanji, name, rng, art, title_bg, quote, "Deuteronomy · Volume Five"))
     items = []
@@ -118,3 +118,9 @@ def law_chapter(prev, num, kanji, name, rng, sections, title_art, title_bg, quot
     PG.extend(law_pages(items, f"{prefix}-L", PG.next(), sections[0][3], title_book="Deuteronomy", carry=True, spoken=True,
                         end=end_mark(f"NEXT · {nxt.upper()}", "right: 10px; top: 10px")))
     return PG.start, PG.pages
+
+def shade(svg, h=440):
+    """A chapter title's art with a dark band at the top, so the title reads on a light picture."""
+    return (svg + f'<defs><linearGradient id="shd{h}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A1028" stop-opacity="0.95"></stop>'
+            f'<stop offset="0.7" stop-color="#1A1028" stop-opacity="0.7"></stop><stop offset="1" stop-color="#1A1028" stop-opacity="0"></stop></linearGradient></defs>'
+            f'<rect x="0" y="0" width="760" height="{h}" fill="url(#shd{h})"></rect>')
