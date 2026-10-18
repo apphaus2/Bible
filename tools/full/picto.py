@@ -94,6 +94,6 @@ RULES = [
 def pick(text, uid="pk"):
     t = " " + re.sub(r"[^a-z' -]", " ", text.lower()) + " "
     for keys, draw in RULES:
-        if any(re.search(r"" + re.escape(k) + r"", t) for k in keys):
+        if any(re.search(r"\b" + re.escape(k) + r"\b", t) for k in keys):
             return mk.defs(uid, *ALL) + draw(uid)
     return mk.defs(uid, *ALL) + _f(uid, scroll(160, 74, 1.4))
