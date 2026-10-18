@@ -27,5 +27,7 @@ META = {
      "blurb": "Midian as locusts for multitude; the angel of Jehovah under the oak at Ophrah — Jehovah is with thee, thou mighty man of valor; the altar of Baal thrown down by night; the fleece wet and dry; three hundred men that lapped; the cake of barley bread; trumpets, pitchers and torches: the sword of Jehovah and of Gideon."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Abimelech", "range": "Judges 8–9", "bible_chapters": [8, 9],
      "blurb": "Faint, yet pursuing: Succoth and Penuel, Zebah and Zalmunna; I will not rule over you, Jehovah shall rule over you; the golden ephod in Ophrah. Then Abimelech made king at Shechem, Jotham's fable of the trees and the bramble, Gaal and Zebul, Shechem sowed with salt, and the tower of Thebez."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Jephthah", "range": "Judges 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "Tola and Jair; go and cry unto the gods which ye have chosen; Jephthah the Gileadite, son of a harlot, fetched home to be head over Gilead; his answer to the king of Ammon; the vow, and his daughter coming out with timbrels; Shibboleth at the fords of the Jordan; Ibzan, Elon and Abdon."},
   ],
 }

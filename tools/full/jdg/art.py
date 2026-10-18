@@ -317,3 +317,47 @@ def boughs(p, w, h, seed):
         x = w * (0.06 + i * 0.11); y = b - (i % 2) * 8
         o.append(man(p, x, y, fit(y, h * 0.46) * (1.05 if i == 0 else 0.92), "#5A1A3A" if i == 0 else random.Random(seed + i).choice(WAR), up=[(-22, -158), (-28, -178), (-20, -190)], extra=BOUGH))
     return "".join(o)
+
+# ---- Judges 10–12 -------------------------------------------------------------------------------------------------------
+def ass_colts(p, w, h, seed, n=6):
+    """Sons that rode on ass colts (Jair; Abdon): a file of riders on grey asses."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12),
+         ground(w, h, h * 0.6, "#C8A06A", dy=0)]
+    for i in range(n):
+        x = w * (0.1 + i * 0.8 / max(1, n - 1)); y = h * 0.9 - (i % 2) * h * 0.04
+        o.append(N.mount(x, y, min(0.7, h / 420), color="#8A8478", rider_cloth=random.Random(seed + i).choice(WAR), p=p))
+    return "".join(o)
+
+def daughter_door(p, w, h, seed):
+    """Jephthah's house at Mizpah: his daughter coming out of the doors to meet him with timbrels and with dances."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.86, h * 0.2, 20, color="#FF8A3D", op=0.35),
+         f'<rect x="{f(w * 0.56)}" y="{f(h * 0.2)}" width="{f(w * 0.4)}" height="{f(b - h * 0.2)}" fill="#C8A06A" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<rect x="{f(w * 0.68)}" y="{f(h * 0.5)}" width="{f(w * 0.12)}" height="{f(b - h * 0.5)}" fill="#2A140C" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         ground(w, h, b, "#9A7A4A", dy=0)]
+    s = fit(b, h * 0.44)
+    tim = '<circle cx="-30" cy="-214" r="14" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2"></circle>'
+    o.append(woman(p, w * 0.56, b, s * 0.92, "#F3EFE6", flip=True, up=[(-22, -158), (-28, -190), (-30, -214)]) + "")
+    o.append(f'<circle cx="{f(w * 0.56 + 30 * s * 0.92)}" cy="{f(b - 214 * s * 0.92)}" r="{f(14 * s)}" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2"></circle>')
+    o.append(mk.person(p, round(w * 0.16), round(b), round(s, 3), body=SKIN, cloth="#4A5A2A", sw=3, extra=A.headcloth("#4A5A2A") + A.BLACK_BEARD))
+    return "".join(o)
+
+def mountains_women(p, w, h, seed):
+    """Upon the mountains: the daughter and her companions, small figures on the heights, two months."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A6E8A"></rect>', sun(w * 0.2, h * 0.3, 22, color="#FFE680", op=0.25),
+         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.6)} L {f(w * 0.3)} {f(h * 0.36)} L {f(w * 0.5)} {f(h * 0.52)} L {f(w * 0.72)} {f(h * 0.3)} L {f(w + 10)} {f(h * 0.56)} L {f(w + 10)} {f(h + 10)} Z" fill="#3A4A5A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(6):
+        x = w * (0.62 + i * 0.03); y = h * 0.36 + abs(i - 2.5) * h * 0.02
+        o.append(woman(p, x, y, fit(y, y - h * 0.12), ("#F3EFE6", "#8A6A7A", "#6A7A8A", "#9A7A6A", "#7A6A8A", "#8A7A6A")[i]))
+    return "".join(o)
+
+def fords(p, w, h, seed):
+    """The fords of the Jordan held by the men of Gilead; a fugitive of Ephraim come to pass over."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', hills(w, h, h * 0.4, seed, color="#9A8A6A", amp=12),
+         ground(w, h, h * 0.5, "#B89A6A", dy=0),
+         f'<path d="M{f(w * 0.36)} {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.7)} {f(w * 0.44)} {f(h * 0.8)} {f(w * 0.38)} {f(h + 10)} L {f(w * 0.62)} {f(h + 10)} C {f(w * 0.66)} {f(h * 0.8)} {f(w * 0.54)} {f(h * 0.7)} {f(w * 0.58)} {f(h * 0.5)} Z" fill="#2C9DB8" stroke="#0D0D0F" stroke-width="2"></path>']
+    s = fit(b, h * 0.44)
+    for i in range(3): o.append(man(p, w * (0.7 + i * 0.09), b - i * 4, s, ("#4A5A2A", "#5A6A3A", "#3A4A2A")[i], flip=True, extra=E4.SPEAR))
+    o.append(man(p, w * 0.2, b, s * 0.96, "#3A3A5A"))
+    return "".join(o)

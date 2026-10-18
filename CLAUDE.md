@@ -112,6 +112,7 @@ There are two editions:
 | Judges | 2 · Deborah | 3–5 | title + 16 (pp. 12–27) | 86/86 verses full (Eglon behind locked doors; the Song of Deborah in song boxes) | `volumes/judges/` |
 | Judges | 3 · Gideon | 6–7 | title + 15 (pp. 28–42) | 65/65 verses full (the digest's Gideon panels; 7:25 words only) | `volumes/judges/` |
 | Judges | 4 · Abimelech | 8–9 | title + 17 (pp. 43–59) | 92/92 verses full (9:5 and 9:53–54 words only; Jotham's fable over the four trees) | `volumes/judges/` |
+| Judges | 5 · Jephthah | 10–12 | title + 15 (pp. 60–74) | 73/73 verses full (11:39 words over the mountains; Jephthah's message over the map of the way round) | `volumes/judges/` |
 
 **Genesis, Exodus, Leviticus, Numbers, Deuteronomy and Joshua are complete.** Next: Judges. Joshua is `tools/full/jos/` (10
 chapters, plan in `jos/__init__.py`): story chapters laid out by `discourse.pack` with `jos.common` line helpers (`face()`,
