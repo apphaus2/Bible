@@ -46,5 +46,7 @@ META = {
      "blurb": "Obadiah who hid a hundred prophets in a cave; is it thou, thou troubler of Israel?; mount Carmel — how long go ye limping between the two sides?; O Baal, hear us, but there was no voice; twelve stones, a trench and four jars of water; the fire of Jehovah fell — Jehovah, he is God; and a cloud as small as a man's hand."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "A Still Small Voice", "range": "1 Kings 19–20", "bible_chapters": [19, 20],
      "blurb": "Elijah fled from Jezebel and sat under a juniper-tree — it is enough; the angel and the cake baken on the coals; forty days to Horeb — what doest thou here, Elijah?; the wind, the earthquake, the fire, and after the fire a still small voice; the mantle cast upon Elisha; Ben-hadad's siege, the god of the hills and the valleys, and the prophet with the headband over his eyes."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Naboth's Vineyard", "range": "1 Kings 21–22", "bible_chapters": [21, 22],
+     "blurb": "Naboth's vineyard hard by the palace — Jehovah forbid it me; Jezebel's letters and the fast; hast thou found me, O mine enemy?; Ahab in sackcloth; then Jehoshaphat and Ahab at the gate of Samaria, Zedekiah's horns of iron, and Micaiah: I saw all Israel scattered upon the mountains, as sheep that have no shepherd; the arrow drawn at a venture at Ramoth-gilead."},
   ],
 }

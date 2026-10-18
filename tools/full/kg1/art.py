@@ -1208,3 +1208,118 @@ def headband(p, w, h, seed):
     o.append(prophet_fig(p, w * 0.3, b, s, cloth="#6A645E", beard=A.BLACK_BEARD) + f'<rect x="{f(w * 0.3 - 16 * s)}" y="{f(b - 196 * s)}" width="{f(32 * s)}" height="{f(8 * s)}" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="1.4"></rect>')
     o.append(E3.chariot(w * 0.72, b, min(0.9, h / 360), flip=True, color="#3A2214", driver=AHAB_C))
     return "".join(o)
+
+# ---- 1 Kings 21–22 ------------------------------------------------------------------------------------------------------
+def vineyard(p, w, h, seed, ahab=False, empty=False):
+    """Naboth's vineyard in Jezreel hard by the palace of Ahab; ahab=True: Ahab come down to take possession, Elijah meeting
+    him; empty=True: the vineyard alone at dusk (Naboth's death told in words only)."""
+    r = random.Random(seed)
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A2A4A" if empty else "#8FD0E2", "#C8603A" if empty else "#F3E8C8"),
+         J.jericho(w * 0.6, w + 10, h * 0.24, h * 0.5, seed, towers=2, houses=True), ground(w, h, h * 0.5, "#6A5A3A" if empty else "#9A8A5A", dy=0)]
+    for k in range(4):
+        y = h * (0.58 + k * 0.1)
+        for i in range(9):
+            x = w * (0.04 + i * 0.075) + (k % 2) * w * 0.03
+            o.append(f'<path d="M{f(x)} {f(y + 12)} L {f(x)} {f(y - 8)}" stroke="#5A3A22" stroke-width="3"></path><circle cx="{f(x)}" cy="{f(y - 12)}" r="{f(9 + k)}" fill="{"#2A3A2A" if empty else "#2E6B3A"}" stroke="#0D0D0F" stroke-width="1.4"></circle>'
+                     + (f'<circle cx="{f(x + 5)}" cy="{f(y - 6)}" r="3" fill="#5A1A4A"></circle>' if not empty and r.random() < 0.5 else ""))
+    s = fit(b, h * 0.4)
+    if ahab:
+        o.append(king_fig(p, w * 0.7, b, s, cloth=AHAB_C, flip=True) + elijah_fig(p, w * 0.24, b, s, up=[(-22, -158), (-40, -196), (-46, -228)]))
+    elif not empty:
+        o.append(man(p, w * 0.3, b, s, "#6A5A3A") + king_fig(p, w * 0.72, b, s, cloth=AHAB_C, flip=True))
+    return "".join(o)
+
+def turned_away(p, w, h, seed):
+    """Ahab laid upon his bed with his face turned away, eating no bread; his food untouched."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), bed(w, h, w * 0.1, w * 0.62, b, cover=AHAB_C, head="#C98E66", hair="#1A1210"), S3.table(w * 0.82, b, w * 0.26, min(1.0, h / 320))]
+    return "".join(o)
+
+def letters(w, h, seed):
+    """Letters written in Ahab's name and sealed with his seal."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A1A2A"></rect>', V.rays(w * 0.5, h * 0.6, 30, 20, max(w, h), color="#D7261E", op=0.12)]
+    k = min(w, h) / 220
+    for i in range(3):
+        o.append(S3.letter(w * (0.26 + i * 0.24), h * (0.56 + (i % 2) * 0.1), k, rot=[-12, 6, -4][i]))
+    return "".join(o)
+
+def fast(p, w, h, seed):
+    """The fast proclaimed: Naboth set on high among the people, the elders seated, two base fellows before him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), S4.gatehouse(w * 0.5, h * 0.7, w * 0.6, h * 0.5), ground(w, h, h * 0.7, "#A89A6A", dy=0)]
+    s = fit(b, h * 0.32)
+    o.append(f'<rect x="{f(w * 0.44)}" y="{f(h * 0.62)}" width="{f(w * 0.12)}" height="{f(h * 0.08)}" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2"></rect>' + man(p, w * 0.5, h * 0.62, fit(h * 0.62, h * 0.4), "#6A5A3A"))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.3, h * 0.78, b, 6, s * 0.7, s))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.7, w * 0.98, h * 0.78, b, 6, s * 0.7, s, flip=True))
+    o.append(man(p, w * 0.42, b, s * 1.05, "#2A2420", flip=True) + man(p, w * 0.58, b, s * 1.05, "#2A2420"))
+    return "".join(o)
+
+def sackcloth(p, w, h, seed):
+    """Ahab in sackcloth, going softly."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A5A6A", "#A8A0A0"), ground(w, h, h * 0.66, "#6A6058", dy=0)]
+    o.append(mk.person(p, round(w * 0.5), round(b), round(fit(b, h * 0.5), 3), body="#5A2A16", cloth="#5A5040", sw=3, extra=A.headcloth("#5A5040") + A.BLACK_BEARD))
+    return "".join(o)
+
+def two_thrones_gate(p, w, h, seed, horns=False):
+    """The king of Israel and Jehoshaphat each on his throne in an open place at the gate of Samaria, the prophets before them;
+    horns=True: Zedekiah with his horns of iron."""
+    b = h * 0.92; k = min(1.0, h / 340)
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), S4.gatehouse(w * 0.5, h * 0.62, w * 0.5, h * 0.44), ground(w, h, h * 0.62, "#B89A6A", dy=0),
+         S3.throne(w * 0.12, b, k), S3.throne(w * 0.3, b, k)]
+    s = fit(b, h * 0.4)
+    o.append(king_fig(p, w * 0.12, b - 40 * k, s * 0.8, cloth=AHAB_C) + king_fig(p, w * 0.3, b - 40 * k, s * 0.8, cloth="#1F3A7A"))
+    for i in range(5):
+        x = w * (0.52 + i * 0.1)
+        o.append(prophet_fig(p, x, b - (i % 2) * 8, s * 0.8, cloth=["#5A3A6A", "#6A5A3A", "#3A4A6A", "#5A5A2A", "#6A3A2A"][i], flip=True,
+                             up=[(-22, -158), (-30, -200), (-20, -230)] if (horns and i == 0) else None))
+        if horns and i == 0:
+            o.append(f'<path d="M{f(x - 20 * s)} {f(b - 236 * s)} l -14 -24 m 14 24 l 4 -28" stroke="#5A5A6A" stroke-width="5" fill="none"></path>')
+    return "".join(o)
+
+def heaven_host(w, h, seed):
+    """I saw Jehovah sitting on his throne, and all the host of heaven: light and an empty throne (Jehovah is never drawn)."""
+    import sa2.art as K2
+    r = random.Random(seed)
+    o = [K2.throne_glory(w, h, seed)]
+    for i in range(16):
+        x = w * (0.06 + (i % 8) * 0.125); y = h * (0.3 + (i // 8) * 0.2)
+        if abs(x - w * 0.5) < w * 0.16: continue
+        o.append(f'<path d="M{f(x)} {f(y)} C {f(x - 10)} {f(y + 30)} {f(x - 10)} {f(y + 60)} {f(x - 8)} {f(y + 80)} L {f(x + 8)} {f(y + 80)} C {f(x + 10)} {f(y + 60)} {f(x + 10)} {f(y + 30)} {f(x)} {f(y)} Z" fill="#FFF4C2" opacity="0.6"></path>')
+    return "".join(o)
+
+def prison(w, h, seed):
+    """The prison: a barred window in a stone wall, bread and water of affliction."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A3438"></rect>']
+    for k in range(8):
+        for i in range(6):
+            o.append(f'<rect x="{f(i * w / 5 - (k % 2) * w / 10)}" y="{f(k * h / 7)}" width="{f(w / 5)}" height="{f(h / 7)}" fill="#4A4448" stroke="#2A2428" stroke-width="2"></rect>')
+    o.append(f'<rect x="{f(w * 0.4)}" y="{f(h * 0.2)}" width="{f(w * 0.2)}" height="{f(h * 0.24)}" fill="#C8D0E8" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             + "".join(f'<path d="M{f(w * (0.42 + i * 0.04))} {f(h * 0.2)} L {f(w * (0.42 + i * 0.04))} {f(h * 0.44)}" stroke="#2A2428" stroke-width="5"></path>' for i in range(5)))
+    o.append(f'<ellipse cx="{f(w * 0.4)}" cy="{f(h * 0.88)}" rx="20" ry="8" fill="#B88A4A" stroke="#0D0D0F" stroke-width="1.6"></ellipse><path d="M{f(w * 0.56)} {f(h * 0.9)} C {f(w * 0.55)} {f(h * 0.82)} {f(w * 0.6)} {f(h * 0.82)} {f(w * 0.59)} {f(h * 0.9)} Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.6"></path>')
+    return "".join(o)
+
+def ramoth(p, w, h, seed, dusk=False):
+    """Ramoth-gilead: the chariots of Syria; dusk=True: the king's chariot alone against the setting sun (22:35 in words only)."""
+    import jos.art as JA
+    if not dusk: return JA.chariots(p, w, h, seed)
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A1A2A", "#E8603A"), sun(w * 0.6, h * 0.6, 34, color="#FF8A3D", op=0.6), hills(w, h, h * 0.62, seed, color="#2A1A1A", amp=14),
+         ground(w, h, h * 0.7, "#1A0E0E", dy=0), E3.chariot(w * 0.5, b, min(1.1, h / 300), color="#12090A", driver="#12090A")]
+    return "".join(o)
+
+def pool_chariot(w, h, seed):
+    """The pool of Samaria at evening, the chariot washed beside it (the dogs told in words only)."""
+    o = [sky(w, h, "#3A2A4A", "#C88A6A"), J.city_hill(w * 0.5, h * 0.44, w * 0.7, h * 0.26, seed), ground(w, h, h * 0.46, "#4A3A3A", dy=0),
+         f'<ellipse cx="{f(w * 0.4)}" cy="{f(h * 0.72)}" rx="{f(w * 0.26)}" ry="{f(h * 0.12)}" fill="#3A3A5A" stroke="#0D0D0F" stroke-width="3"></ellipse>',
+         E3.chariot(w * 0.78, h * 0.9, min(0.8, h / 380), color="#3A2214", driver="#3A2214").replace('fill="#3A2214"', 'fill="#3A2214"')]
+    return "".join(o)
+
+def broken_ships(w, h, seed):
+    """The ships of Tarshish broken at Ezion-geber."""
+    o = [sky(w, h, "#5A5A6A", "#C8B8A8"), hills(w, h, h * 0.4, seed, color="#8A6A4A", amp=18), f'<rect x="-10" y="{f(h * 0.54)}" width="{f(w + 20)}" height="{f(h * 0.6)}" fill="#1F5F7A"></rect>']
+    k = min(1.0, h / 320)
+    for i, (x, rot) in enumerate(((0.3, 24), (0.66, -30))):
+        o.append(f'<g transform="rotate({rot} {f(w * x)} {f(h * 0.74)})">' + ship(w * x, h * 0.74, k * 0.8, sail="#8A8478") + '</g>')
+    return "".join(o)

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 734 verses — 734 full, 0 partial, 0 omitted.
+**So far:** 816 verses — 816 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Long Live King Solomon (1 Kings 1)
 
@@ -79,5 +79,11 @@ Every verse is on the page in full.
 ## Chapter 13 · A Still Small Voice (1 Kings 19–20)
 
 64 verses: 64 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 14 · Naboth's Vineyard (1 Kings 21–22)
+
+82 verses: 82 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
