@@ -36,5 +36,7 @@ META = {
      "blurb": "The border of Judah and every one of its cities, with Caleb at Hebron and Achsah asking for springs of water; the lot of Joseph, Ephraim and Manasseh; the daughters of Zelophehad; and the children of Joseph, a great people, sent up to the forest though the Canaanites have chariots of iron."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Lots of the Seven Tribes", "range": "Joshua 18–19", "bible_chapters": [18, 19],
      "blurb": "The tent of meeting set up at Shiloh; how long are ye slack to go in and possess the land? Three men of each tribe describe it into seven portions in a book, and Joshua casts lots before Jehovah: Benjamin, Simeon, Zebulun, Issachar, Asher, Naphtali and Dan; and Timnath-serah for Joshua."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Cities of Refuge", "range": "Joshua 20–22", "bible_chapters": [20, 21, 22],
+     "blurb": "Six cities of refuge for the manslayer; forty and eight cities with their suburbs for the Levites; there failed not aught of any good thing which Jehovah had spoken. Then the two and a half tribes go home over the Jordan and build a great altar by it, and Phinehas comes to ask: what trespass is this? — the altar Ed, a witness that Jehovah is God."},
   ],
 }

@@ -615,3 +615,44 @@ def timnath(p, w, h, seed):
          hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=18), J.city_hill(w * 0.62, h * 0.7, w * 0.3, h * 0.34, seed), ground(w, h, h * 0.7, "#B89A6A", dy=0)]
     o.append(joshua_fig(p, w * 0.2, b, fit(b, h * 0.4)))
     return "".join(o)
+
+# ---- Joshua 20–22 -------------------------------------------------------------------------------------------------------
+def refuge_gate(p, w, h, seed):
+    """The manslayer stands at the entrance of the gate of the city of refuge and declares his cause to the elders; the
+    avenger of blood far off on the road."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', sun(w * 0.14, h * 0.16, 14, op=0.3)]
+    o.append(J.jericho(w * 0.42, w + 10, h * 0.24, b, seed, towers=2, houses=True, color="#B5824A"))
+    o.append(f'<path d="M{f(w * 0.56)} {f(b)} L {f(w * 0.56)} {f(h * 0.56)} C {f(w * 0.56)} {f(h * 0.46)} {f(w * 0.74)} {f(h * 0.46)} {f(w * 0.74)} {f(h * 0.56)} L {f(w * 0.74)} {f(b)} Z" fill="#2A140C" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    o.append(ground(w, h, b, "#B89A6A", dy=0))
+    s = fit(b, h * 0.42)
+    o.append(man(p, w * 0.46, b, s, "#6A5A7A", up=[(-22, -158), (4, -150), (30, -150)]))
+    for i in range(3): o.append(mk.person(p, round(w * (0.62 + i * 0.06)), round(b), round(s * 0.96, 3), body=SKIN, cloth=("#5A4A3A", "#6A5A4A", "#4A3A3A")[i], sw=3, flip=True, extra=A.WHITE_BEARD))
+    o.append(man(p, w * 0.08, b - h * 0.3, s * 0.4, "#3A1A1A"))
+    return "".join(o)
+
+def refuge_map(w, h):
+    """The six cities of refuge: Kedesh, Shechem and Hebron on this side of the Jordan; Bezer, Ramoth and Golan beyond."""
+    o = [grid_bg(w, h), _jordan(w, h, 0.5)]
+    for nm, x, y in (("KEDESH", 0.38, 0.12), ("SHECHEM", 0.34, 0.42), ("HEBRON", 0.32, 0.8), ("GOLAN", 0.68, 0.16), ("RAMOTH", 0.7, 0.42), ("BEZER", 0.66, 0.74)):
+        o.append(f'<rect x="{f(w * x - 9)}" y="{f(h * y - 9)}" width="18" height="18" fill="#D7261E" stroke="#FFD23F" stroke-width="2"></rect>' + label(w * x, h * y - 16, nm, "#FFD23F", 9))
+    o.append(label(w * 0.24, h * 0.96, "THIS SIDE JORDAN", "#8FD0E2", 8) + label(w * 0.78, h * 0.96, "BEYOND THE JORDAN", "#8FD0E2", 8))
+    return "".join(o)
+
+def altar_ed(p, w, h, seed, people=True):
+    """The great altar to see to, built by the Jordan on the side that pertaineth to the children of Israel."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.84, h * 0.18, 20, color="#FF8A3D", op=0.35),
+         hills(w, h, h * 0.4, seed, color="#9A8A6A", amp=14),
+         f'<path d="M-10 {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.48)} {f(w * 0.6)} {f(h * 0.54)} {f(w + 10)} {f(h * 0.5)}" fill="none" stroke="#2C9DB8" stroke-width="8"></path>',
+         ground(w, h, h * 0.54, "#B89A6A", dy=0)]
+    ax, aw, ah = w * 0.56, w * 0.3, h * 0.34
+    r = random.Random(seed)
+    for row in range(6):
+        for i in range(7 - row // 2):
+            x = ax - aw / 2 + (i + (row % 2) * 0.5) * aw / 7; y = b - (row + 1) * ah / 6
+            if x > ax + aw / 2 - aw / 14: continue
+            o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(aw / 7 - 2)}" height="{f(ah / 6 - 2)}" rx="4" fill="{r.choice(["#8A7A6A", "#A89A86", "#7A6A5A"])}" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    if people:
+        o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.3, h * 0.66, b, 10, fit(h * 0.66, h * 0.5) * 0.8, fit(b, h * 0.56)))
+    return "".join(o)

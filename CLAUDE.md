@@ -106,6 +106,7 @@ There are two editions:
 | Joshua | 6 · The Land That Remaineth | 12–14 | title + 8 (pp. 51–58) | 72/72 verses full (the kings and the lands beyond the Jordan as roll pages: `rolls.py`) | `volumes/joshua/` |
 | Joshua | 7 · The Lot of Judah | 15–17 | title + 8 (pp. 59–66) | 91/91 verses full (borders and cities as roll cells: `rolls.verse_cells`) | `volumes/joshua/` |
 | Joshua | 8 · The Lots of the Seven Tribes | 18–19 | title + 7 (pp. 67–73) | 79/79 verses full (the seven lots as roll cells) | `volumes/joshua/` |
+| Joshua | 9 · The Cities of Refuge | 20–22 | title + 11 (pp. 74–84) | 88/88 verses full (the Levites' cities as roll cells) | `volumes/joshua/` |
 
 **Genesis, Exodus, Leviticus, Numbers and Deuteronomy are complete.** Next: Joshua. Deuteronomy is `tools/full/deu/` (15
 chapters, plan in `deu/__init__.py`): Moses' discourses as speech panels (`speech.orate`, packed by `discourse.pack`,

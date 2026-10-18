@@ -583,6 +583,90 @@
    "w": 760,
    "h": 1080,
    "title": "73 · Timnath-serah"
+  },
+  "JOS-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 30000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Cities of Refuge"
+  },
+  "JOS-C09-D-P01-AssignYouTheCities.dc.html": {
+   "x": 840,
+   "y": 30000,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Assign You the Cities of Refuge"
+  },
+  "JOS-C09-D-P02-AssignYouTheCities.dc.html": {
+   "x": 1680,
+   "y": 30000,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Assign You the Cities of Refuge"
+  },
+  "JOS-C09-D-P03-CitiesToDwellIn.dc.html": {
+   "x": 2520,
+   "y": 30000,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Cities to Dwell In"
+  },
+  "JOS-C09-L-P01-FortyAndEightCitie.dc.html": {
+   "x": 3360,
+   "y": 30000,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Forty and Eight Cities"
+  },
+  "JOS-C09-L-P02-FortyAndEightCitie.dc.html": {
+   "x": 0,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Forty and Eight Cities"
+  },
+  "JOS-C09-E-P01-AnAltarByTheJordan.dc.html": {
+   "x": 840,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · An Altar by the Jordan"
+  },
+  "JOS-C09-E-P02-AnAltarByTheJordan.dc.html": {
+   "x": 1680,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · An Altar by the Jordan"
+  },
+  "JOS-C09-E-P03-WhatTrespassIsThis.dc.html": {
+   "x": 2520,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · What Trespass Is This?"
+  },
+  "JOS-C09-E-P04-TheMightyOneGodJeh.dc.html": {
+   "x": 3360,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · The Mighty One, God, Jehovah, He Knoweth"
+  },
+  "JOS-C09-E-P05-TheMightyOneGodJeh.dc.html": {
+   "x": 0,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The Mighty One, God, Jehovah, He Knoweth"
+  },
+  "JOS-C09-E-P06-Ed.dc.html": {
+   "x": 840,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Ed"
   }
  },
  "order": [
@@ -667,7 +751,19 @@
   "JOS-C08-L-P02-TheSevenLots.dc.html",
   "JOS-C08-L-P03-TheSevenLots.dc.html",
   "JOS-C08-L-P04-TheSevenLots.dc.html",
-  "JOS-C08-E-P01-TimnathSerah.dc.html"
+  "JOS-C08-E-P01-TimnathSerah.dc.html",
+  "JOS-C09-00-Title.dc.html",
+  "JOS-C09-D-P01-AssignYouTheCities.dc.html",
+  "JOS-C09-D-P02-AssignYouTheCities.dc.html",
+  "JOS-C09-D-P03-CitiesToDwellIn.dc.html",
+  "JOS-C09-L-P01-FortyAndEightCitie.dc.html",
+  "JOS-C09-L-P02-FortyAndEightCitie.dc.html",
+  "JOS-C09-E-P01-AnAltarByTheJordan.dc.html",
+  "JOS-C09-E-P02-AnAltarByTheJordan.dc.html",
+  "JOS-C09-E-P03-WhatTrespassIsThis.dc.html",
+  "JOS-C09-E-P04-TheMightyOneGodJeh.dc.html",
+  "JOS-C09-E-P05-TheMightyOneGodJeh.dc.html",
+  "JOS-C09-E-P06-Ed.dc.html"
  ],
  "notes": {
   "Main": {
@@ -732,6 +828,13 @@
    "text": "Chapter 8 · The Lots of the Seven Tribes (Joshua 18–19)",
    "x": 0,
    "y": 26800
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Cities of Refuge (Joshua 20–22)",
+   "x": 0,
+   "y": 29700
   }
  },
  "designSystems": [],

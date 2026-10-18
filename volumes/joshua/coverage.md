@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 521 verses — 521 full, 0 partial, 0 omitted.
+**So far:** 609 verses — 609 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Be Strong and of Good Courage (Joshua 1–2)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · The Lots of the Seven Tribes (Joshua 18–19)
 
 79 verses: 79 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · The Cities of Refuge (Joshua 20–22)
+
+88 verses: 88 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
