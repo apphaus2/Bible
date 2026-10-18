@@ -716,6 +716,111 @@
    "w": 760,
    "h": 1080,
    "title": "93 · The Harp"
+  },
+  "1SA-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Goliath"
+  },
+  "1SA-C08-D-P01-AChampionOutOfGath.dc.html": {
+   "x": 840,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · A Champion out of Gath"
+  },
+  "1SA-C08-D-P02-AChampionOutOfGath.dc.html": {
+   "x": 1680,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · A Champion out of Gath"
+  },
+  "1SA-C08-D-P03-FortyDays.dc.html": {
+   "x": 2520,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Forty Days"
+  },
+  "1SA-C08-D-P04-FortyDays.dc.html": {
+   "x": 3360,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Forty Days"
+  },
+  "1SA-C08-D-P05-TheArmiesOfTheLivi.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Armies of the Living God"
+  },
+  "1SA-C08-D-P06-TheArmiesOfTheLivi.dc.html": {
+   "x": 840,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Armies of the Living God"
+  },
+  "1SA-C08-D-P07-TheLionAndTheBear.dc.html": {
+   "x": 1680,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Lion and the Bear"
+  },
+  "1SA-C08-D-P08-TheLionAndTheBear.dc.html": {
+   "x": 2520,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Lion and the Bear"
+  },
+  "1SA-C08-D-P09-FiveSmoothStones.dc.html": {
+   "x": 3360,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Five Smooth Stones"
+  },
+  "1SA-C08-D-P10-InTheNameOfJehovah.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · In the Name of Jehovah of Hosts"
+  },
+  "1SA-C08-D-P11-InTheNameOfJehovah.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · In the Name of Jehovah of Hosts"
+  },
+  "1SA-C08-D-P12-ASlingAndAStone.dc.html": {
+   "x": 1680,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · A Sling and a Stone"
+  },
+  "1SA-C08-D-P13-ASlingAndAStone.dc.html": {
+   "x": 2520,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · A Sling and a Stone"
+  },
+  "1SA-C08-D-P14-WhoseSonArtThou.dc.html": {
+   "x": 3360,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Whose Son Art Thou?"
   }
  },
  "order": [
@@ -819,7 +924,22 @@
   "1SA-C07-D-P11-JehovahLookethOnTh.dc.html",
   "1SA-C07-D-P12-JehovahLookethOnTh.dc.html",
   "1SA-C07-D-P13-TheHarp.dc.html",
-  "1SA-C07-D-P14-TheHarp.dc.html"
+  "1SA-C07-D-P14-TheHarp.dc.html",
+  "1SA-C08-00-Title.dc.html",
+  "1SA-C08-D-P01-AChampionOutOfGath.dc.html",
+  "1SA-C08-D-P02-AChampionOutOfGath.dc.html",
+  "1SA-C08-D-P03-FortyDays.dc.html",
+  "1SA-C08-D-P04-FortyDays.dc.html",
+  "1SA-C08-D-P05-TheArmiesOfTheLivi.dc.html",
+  "1SA-C08-D-P06-TheArmiesOfTheLivi.dc.html",
+  "1SA-C08-D-P07-TheLionAndTheBear.dc.html",
+  "1SA-C08-D-P08-TheLionAndTheBear.dc.html",
+  "1SA-C08-D-P09-FiveSmoothStones.dc.html",
+  "1SA-C08-D-P10-InTheNameOfJehovah.dc.html",
+  "1SA-C08-D-P11-InTheNameOfJehovah.dc.html",
+  "1SA-C08-D-P12-ASlingAndAStone.dc.html",
+  "1SA-C08-D-P13-ASlingAndAStone.dc.html",
+  "1SA-C08-D-P14-WhoseSonArtThou.dc.html"
  ],
  "notes": {
   "Main": {
@@ -877,6 +997,13 @@
    "text": "Chapter 7 · Jehovah Looketh on the Heart (1 Samuel 15–16)",
    "x": 0,
    "y": 26300
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Goliath (1 Samuel 17)",
+   "x": 0,
+   "y": 30400
   }
  },
  "designSystems": [],

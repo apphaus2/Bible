@@ -35,5 +35,7 @@ META = {
      "blurb": "Jonathan and his armorbearer climb between the crags Bozez and Seneh — there is no restraint to Jehovah to save by many or by few; the earth quaked; Saul's rash oath, the honey in the forest, the lot that took Jonathan, and the people who rescued him."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Jehovah Looketh on the Heart", "range": "1 Samuel 15–16", "bible_chapters": [15, 16],
      "blurb": "Saul spares Agag and the best of Amalek's flocks: what meaneth this bleating of the sheep? To obey is better than sacrifice; the skirt rent and the kingdom rent from Saul. Then Samuel at Beth-lehem with his horn of oil, Jesse's sons passing by, the youngest fetched from the sheep, and David's harp before Saul."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Goliath", "range": "1 Samuel 17", "bible_chapters": [17],
+     "blurb": "The vale of Elah and the champion of Gath, six cubits and a span, defying the armies of Israel forty days; a shepherd boy with parched grain and loaves; the lion and the bear; five smooth stones out of the brook; in the name of Jehovah of hosts — for the battle is Jehovah's."},
   ],
 }

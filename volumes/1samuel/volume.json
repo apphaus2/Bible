@@ -76,6 +76,16 @@
    "prefixes": [
     "1SA-C07-"
    ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "Goliath",
+   "range": "1 Samuel 17",
+   "blurb": "The vale of Elah and the champion of Gath, six cubits and a span, defying the armies of Israel forty days; a shepherd boy with parched grain and loaves; the lion and the bear; five smooth stones out of the brook; in the name of Jehovah of hosts — for the battle is Jehovah's.",
+   "prefixes": [
+    "1SA-C08-"
+   ]
   }
  ]
 }
