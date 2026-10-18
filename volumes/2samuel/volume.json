@@ -1,0 +1,21 @@
+{
+ "id": "2samuel",
+ "order": 10,
+ "name": "2 Samuel",
+ "kanji": "サムエル記下",
+ "thumb": "vol-2samuel-",
+ "lede": "The tenth book of the Bible, in full: David king in Hebron and in Jerusalem, the ark brought up with dancing, Bath-sheba and Nathan, Absalom's rebellion, and the threshing-floor of Araunah, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "How Are the Mighty Fallen",
+   "range": "2 Samuel 1–2",
+   "blurb": "The Amalekite out of Saul's camp with the crown and the bracelet; David rends his clothes; the song of the bow — how are the mighty fallen!; David anointed king over Judah in Hebron and Ish-bosheth made king at Mahanaim; the twelve by the pool of Gibeon, Asahel light of foot as a wild roe, and Abner's cry: shall the sword devour for ever?",
+   "prefixes": [
+    "Main.dc.html",
+    "2SA-C01-"
+   ]
+  }
+ ]
+}

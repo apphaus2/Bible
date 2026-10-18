@@ -1,0 +1,154 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T21:07:44Z"
+ },
+ "title": "2 Samuel — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "2SA-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · How Are the Mighty Fallen"
+  },
+  "2SA-C01-D-P01-OutOfTheCampOfIsra.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Out of the Camp of Israel"
+  },
+  "2SA-C01-D-P02-OutOfTheCampOfIsra.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Out of the Camp of Israel"
+  },
+  "2SA-C01-D-P03-TheyMournedAndWept.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · They Mourned, and Wept"
+  },
+  "2SA-C01-D-P04-TheSongOfTheBow.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Song of the Bow"
+  },
+  "2SA-C01-D-P05-TheSongOfTheBow.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Song of the Bow"
+  },
+  "2SA-C01-D-P06-TheSongOfTheBow.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Song of the Bow"
+  },
+  "2SA-C01-D-P07-KingOverTheHouseOf.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · King over the House of Judah"
+  },
+  "2SA-C01-D-P08-KingOverTheHouseOf.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · King over the House of Judah"
+  },
+  "2SA-C01-D-P09-ThePoolOfGibeon.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Pool of Gibeon"
+  },
+  "2SA-C01-D-P10-Asahel.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Asahel"
+  },
+  "2SA-C01-D-P11-Asahel.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Asahel"
+  },
+  "2SA-C01-D-P12-ShallTheSwordDevou.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Shall the Sword Devour for Ever?"
+  },
+  "2SA-C01-D-P13-ShallTheSwordDevou.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Shall the Sword Devour for Ever?"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "2SA-C01-00-Title.dc.html",
+  "2SA-C01-D-P01-OutOfTheCampOfIsra.dc.html",
+  "2SA-C01-D-P02-OutOfTheCampOfIsra.dc.html",
+  "2SA-C01-D-P03-TheyMournedAndWept.dc.html",
+  "2SA-C01-D-P04-TheSongOfTheBow.dc.html",
+  "2SA-C01-D-P05-TheSongOfTheBow.dc.html",
+  "2SA-C01-D-P06-TheSongOfTheBow.dc.html",
+  "2SA-C01-D-P07-KingOverTheHouseOf.dc.html",
+  "2SA-C01-D-P08-KingOverTheHouseOf.dc.html",
+  "2SA-C01-D-P09-ThePoolOfGibeon.dc.html",
+  "2SA-C01-D-P10-Asahel.dc.html",
+  "2SA-C01-D-P11-Asahel.dc.html",
+  "2SA-C01-D-P12-ShallTheSwordDevou.dc.html",
+  "2SA-C01-D-P13-ShallTheSwordDevou.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "2 Samuel Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · How Are the Mighty Fallen (2 Samuel 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
