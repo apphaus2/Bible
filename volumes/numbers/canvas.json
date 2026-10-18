@@ -1,0 +1,130 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T14:42:14Z"
+ },
+ "title": "Numbers — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "NUM-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Numbering"
+  },
+  "NUM-C01-P01-TakeYeTheSum.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Take Ye the Sum"
+  },
+  "NUM-C01-P02-Princes.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Men That Shall Stand with You"
+  },
+  "NUM-C01-P03-Assembled.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · They Declared Their Pedigrees"
+  },
+  "NUM-C01-P04-Judah.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · All That Were Able to Go Forth to War"
+  },
+  "NUM-C01-P05-Total.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Six Hundred Thousand"
+  },
+  "NUM-C01-P06-Levites.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Tribe of Levi Thou Shalt Not Number"
+  },
+  "NUM-C01-P07-East.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Toward the Sunrising"
+  },
+  "NUM-C01-P08-South.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · On the South Side"
+  },
+  "NUM-C01-P09-West.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · On the West Side"
+  },
+  "NUM-C01-P10-North.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · So They Encamped by Their Standards"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "NUM-C01-00-Title.dc.html",
+  "NUM-C01-P01-TakeYeTheSum.dc.html",
+  "NUM-C01-P02-Princes.dc.html",
+  "NUM-C01-P03-Assembled.dc.html",
+  "NUM-C01-P04-Judah.dc.html",
+  "NUM-C01-P05-Total.dc.html",
+  "NUM-C01-P06-Levites.dc.html",
+  "NUM-C01-P07-East.dc.html",
+  "NUM-C01-P08-South.dc.html",
+  "NUM-C01-P09-West.dc.html",
+  "NUM-C01-P10-North.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Numbers Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Numbering (Numbers 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

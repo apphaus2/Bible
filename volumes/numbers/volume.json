@@ -1,0 +1,21 @@
+{
+ "id": "numbers",
+ "order": 4,
+ "name": "Numbers",
+ "kanji": "民数記",
+ "thumb": "vol-numbers-",
+ "lede": "The fourth book of the Bible, in full: every scene, every law and every line of dialogue in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Numbering",
+   "range": "Numbers 1–2",
+   "blurb": "In the wilderness of Sinai: take ye the sum of all the congregation; the twelve princes, the men of every tribe from twenty years old and upward that were able to go forth to war, six hundred thousand and three thousand and five hundred and fifty; the Levites about the tabernacle; and every man by his own standard, east, south, west and north.",
+   "prefixes": [
+    "Main.dc.html",
+    "NUM-C01-"
+   ]
+  }
+ ]
+}

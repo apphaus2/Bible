@@ -11,9 +11,7 @@ Every call records which characters of which verse were used, so G.coverage() ca
 full / partial / omitted. Text is never typed by hand: it is always cut out of the USFM."""
 import re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-FILES = {"GEN": "02-GENeng-asv.usfm", "EXO": "03-EXOeng-asv.usfm", "LEV": "04-LEVeng-asv.usfm", "NUM": "05-NUMeng-asv.usfm",
-         "DEU": "06-DEUeng-asv.usfm", "JOS": "07-JOSeng-asv.usfm", "JDG": "08-JDGeng-asv.usfm", "RUT": "09-RUTeng-asv.usfm",
-         "1SA": "10-1SAeng-asv.usfm", "2SA": "11-2SAeng-asv.usfm", "1KI": "12-1KIeng-asv.usfm", "2KI": "13-2KIeng-asv.usfm"}
+FILES = {re.match(r"\d\d-(\w{3})eng", p.name).group(1): p.name for p in sorted((ROOT / "ref" / "asv").glob("[0-9][0-9]-*.usfm"))}  # all 66 books
 
 def parse(path):
     """{(chapter, verse): text}: Strong's tags, footnotes and cross-references stripped; supplied (italic) words kept."""
