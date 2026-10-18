@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 420 verses — 420 full, 0 partial, 0 omitted.
+**So far:** 471 verses — 471 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Numbering (Numbers 1–2)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · The Cloud and the Trumpets (Numbers 9–10)
 
 59 verses: 59 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · Graves of Lust (Numbers 11–12)
+
+51 verses: 51 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -513,6 +513,125 @@
    "w": 760,
    "h": 1080,
    "title": "66 · Rise Up, O Jehovah"
+  },
+  "NUM-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Graves of Lust"
+  },
+  "NUM-C06-P01-Taberah.dc.html": {
+   "x": 840,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Taberah"
+  },
+  "NUM-C06-P02-Flesh.dc.html": {
+   "x": 1680,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Who Shall Give Us Flesh to Eat?"
+  },
+  "NUM-C06-P03-Manna.dc.html": {
+   "x": 2520,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Like Coriander Seed"
+  },
+  "NUM-C06-P04-Burden.dc.html": {
+   "x": 3360,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Wherefore Hast Thou Dealt Ill with Thy Servant?"
+  },
+  "NUM-C06-P05-TooHeavy.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · It Is Too Heavy for Me"
+  },
+  "NUM-C06-P06-Seventy.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Gather unto Me Seventy Men"
+  },
+  "NUM-C06-P07-Nostrils.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Until It Come Out at Your Nostrils"
+  },
+  "NUM-C06-P08-HandShort.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Is Jehovah's Hand Waxed Short?"
+  },
+  "NUM-C06-P09-Prophesied.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · When the Spirit Rested upon Them"
+  },
+  "NUM-C06-P10-Eldad.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Eldad and Medad"
+  },
+  "NUM-C06-P11-Quails.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Quails from the Sea"
+  },
+  "NUM-C06-P12-Graves.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Kibroth-hattaavah"
+  },
+  "NUM-C06-P13-Against.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Hath Jehovah Indeed Spoken Only with Moses?"
+  },
+  "NUM-C06-P14-MouthToMouth.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · With Him Will I Speak Mouth to Mouth"
+  },
+  "NUM-C06-P15-Leprous.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · As White as Snow"
+  },
+  "NUM-C06-P16-SevenDays.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Shut Up without the Camp Seven Days"
   }
  },
  "order": [
@@ -587,7 +706,24 @@
   "NUM-C05-P09-Order.dc.html",
   "NUM-C05-P10-Rearward.dc.html",
   "NUM-C05-P11-Hobab.dc.html",
-  "NUM-C05-P12-RiseUp.dc.html"
+  "NUM-C05-P12-RiseUp.dc.html",
+  "NUM-C06-00-Title.dc.html",
+  "NUM-C06-P01-Taberah.dc.html",
+  "NUM-C06-P02-Flesh.dc.html",
+  "NUM-C06-P03-Manna.dc.html",
+  "NUM-C06-P04-Burden.dc.html",
+  "NUM-C06-P05-TooHeavy.dc.html",
+  "NUM-C06-P06-Seventy.dc.html",
+  "NUM-C06-P07-Nostrils.dc.html",
+  "NUM-C06-P08-HandShort.dc.html",
+  "NUM-C06-P09-Prophesied.dc.html",
+  "NUM-C06-P10-Eldad.dc.html",
+  "NUM-C06-P11-Quails.dc.html",
+  "NUM-C06-P12-Graves.dc.html",
+  "NUM-C06-P13-Against.dc.html",
+  "NUM-C06-P14-MouthToMouth.dc.html",
+  "NUM-C06-P15-Leprous.dc.html",
+  "NUM-C06-P16-SevenDays.dc.html"
  ],
  "notes": {
   "Main": {
@@ -631,6 +767,13 @@
    "text": "Chapter 5 · The Cloud and the Trumpets (Numbers 9–10)",
    "x": 0,
    "y": 20500
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Graves of Lust (Numbers 11–12)",
+   "x": 0,
+   "y": 24600
   }
  },
  "designSystems": [],

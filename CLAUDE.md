@@ -71,6 +71,7 @@ There are two editions:
 | Numbers | 3 · Jehovah Bless Thee | 5–6 | title + 10 (pp. 31–40) | 58/58 verses full (jealousy and the Nazirite as law cells; 5:11–31 with restraint) | `volumes/numbers/` |
 | Numbers | 4 · The Offerings of the Princes | 7–8 | title + 14 (pp. 41–54) | 115/115 verses full (one day a panel, each over a strip of the oblation) | `volumes/numbers/` |
 | Numbers | 5 · The Cloud and the Trumpets | 9–10 | title + 12 (pp. 55–66) | 59/59 verses full (the order of march as a plan) | `volumes/numbers/` |
+| Numbers | 6 · Graves of Lust | 11–12 | title + 16 (pp. 67–82) | 51/51 verses full (11:33 as the graves only) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·

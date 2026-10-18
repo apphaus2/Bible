@@ -27,5 +27,7 @@ META = {
      "blurb": "Six covered wagons and twelve oxen; the twelve princes, each on his day, with a silver platter, a silver bowl and a golden spoon full of incense, for the dedication of the altar; the Voice from above the mercy-seat; the seven lamps; and the Levites cleansed and waved before Jehovah."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Cloud and the Trumpets", "range": "Numbers 9–10", "bible_chapters": [9, 10],
      "blurb": "The passover in the wilderness of Sinai, and a second passover for the men unclean by the dead; the cloud upon the tabernacle by day and the appearance of fire by night; two trumpets of silver; the camps setting forward by their standards; Hobab; and Rise up, O Jehovah."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Graves of Lust", "range": "Numbers 11–12", "bible_chapters": [11, 12],
+     "blurb": "The fire at Taberah; who shall give us flesh to eat?; the manna like coriander seed; Moses' burden and the seventy elders on whom the Spirit rested; Eldad and Medad; the quails and the graves of Kibroth-hattaavah; and Miriam, leprous as white as snow, shut up without the camp seven days."},
   ],
 }
