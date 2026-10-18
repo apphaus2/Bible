@@ -23,5 +23,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Hannah", "range": "1 Samuel 1–2", "bible_chapters": [1, 2],
      "blurb": "Hannah in bitterness of soul at Shiloh, her vow, and Eli marking her mouth; Samuel born and lent to Jehovah — for this child I prayed; Hannah's song; the sons of Eli and the flesh-hook; the child Samuel in his linen ephod; and the man of God: them that honor me I will honor."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Speak, Jehovah", "range": "1 Samuel 3–5", "bible_chapters": [3, 4, 5],
+     "blurb": "The lamp of God not yet gone out: Samuel, Samuel — speak; for thy servant heareth. The ark fetched from Shiloh and taken at Eben-ezer; Eli fallen by the gate; Ichabod, the glory is departed; Dagon fallen before the ark, and the ark carried about Ashdod, Gath and Ekron."},
   ],
 }

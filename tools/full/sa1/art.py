@@ -35,3 +35,26 @@ def little_robe(w, h, seed):
              f'fill="#2A6A5A" stroke="#0D0D0F" stroke-width="2.6"></path>'
              f'<path d="M{f(cx - 58 * s)} {f(cy + 76 * s)} L {f(cx + 58 * s)} {f(cy + 76 * s)}" stroke="#E8B830" stroke-width="{f(5 * s)}" stroke-dasharray="8 5"></path>')
     return "".join(o)
+
+# ---- 1 Samuel 3–8 -------------------------------------------------------------------------------------------------------
+ARK_ROUTE = [("EBEN-EZER", 0.82, 0.3), ("ASHDOD", 0.28, 0.5), ("GATH", 0.46, 0.66), ("EKRON", 0.44, 0.34), ("BETH-SHEMESH", 0.66, 0.42), ("KIRIATH-JEARIM", 0.74, 0.24)]
+def ark_map(w, h, upto="EKRON"):
+    """The ark carried about among the Philistines, as a technical map: Eben-ezer to Ashdod, Gath, Ekron (and home)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.14)} -10 C {f(w * 0.12)} {f(h * 0.3)} {f(w * 0.1)} {f(h * 0.7)} {f(w * 0.06)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    n = [r[0] for r in ARK_ROUTE].index(upto) + 1
+    o.append(route([(w * x, h * y) for _, x, y in ARK_ROUTE[:n]], color="#FFD23F"))
+    for i, (nm, x, y) in enumerate(ARK_ROUTE[:n]):
+        o.append(node(w * x, h * y, nm, "#D7261E" if i == n - 1 else "#FFD23F", r=6 if i == n - 1 else 4, dy=-12, size=9))
+    return "".join(o)
+
+def tumors(w, h, seed):
+    """The cry of the city went up to heaven: a Philistine city at night, its people crying out on the roofs, a dark sky."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', mk.stars(30, w, h * 0.4, seed),
+         J.city_hill(w * 0.5, h * 0.92, w * 0.46, h * 0.4, seed), ground(w, h, h * 0.92, "#1A0E1A", dy=0)]
+    for _ in range(8):
+        x = r.uniform(w * 0.2, w * 0.8); y = h * r.uniform(0.5, 0.6)
+        o.append(f'<path d="M{f(x)} {f(y)} L {f(x - 6)} {f(y - 30)} M{f(x)} {f(y)} L {f(x + 6)} {f(y - 30)}" stroke="#12090A" stroke-width="3"></path><circle cx="{f(x)}" cy="{f(y + 6)}" r="6" fill="#12090A"></circle>')
+    o.append(V.rays(w * 0.5, h * 0.5, 24, 10, max(w, h), color="#D7261E", op=0.12))
+    return "".join(o)

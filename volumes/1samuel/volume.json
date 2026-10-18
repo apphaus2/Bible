@@ -16,6 +16,16 @@
     "Main.dc.html",
     "1SA-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Speak, Jehovah",
+   "range": "1 Samuel 3–5",
+   "blurb": "The lamp of God not yet gone out: Samuel, Samuel — speak; for thy servant heareth. The ark fetched from Shiloh and taken at Eben-ezer; Eli fallen by the gate; Ichabod, the glory is departed; Dagon fallen before the ark, and the ark carried about Ashdod, Gath and Ekron.",
+   "prefixes": [
+    "1SA-C02-"
+   ]
   }
  ]
 }
