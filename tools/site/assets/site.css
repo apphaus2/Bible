@@ -56,7 +56,4 @@ body.reader{background:var(--night)}
 .toc em{font-style:normal;color:var(--muted);margin-left:auto}
 @media (max-width:600px){.bar{font-size:11px}.btn{padding:0 12px}}
 .sec.small{font-size:22px;margin-top:28px;color:var(--muted)}
-.grid.books.digest{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
-.grid.books.digest .h{font-size:18px}
-.grid.books.digest .ref{display:none}
 .note{max-width:640px;margin:0 0 18px;padding:10px 14px;border:2px solid var(--ink);background:#E8E2D6;font-size:12px;line-height:1.6}

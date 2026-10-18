@@ -8,20 +8,19 @@ A manga adaptation of the Bible, drawn as full-color vector pages in a 1980s cyb
 (general style only: never Akira's characters, logo or imagery), with every word of text taken from the
 **ASV**. Everything is built in this repo with Claude Code (Python generates every
 page; nothing is drawn by hand), and GitHub Actions builds and deploys the website to GitHub Pages on every push
-to `master`. The repo is the only source of truth: review pages with `shots.js` renders or the website.
+to `master`; it is served at **https://bible.apphaus.us**. The repo is the only source of truth: review pages with `shots.js` renders or the website.
 
-There are two editions:
-
-- **The full edition (primary, in progress)** — `volumes/`. One volume per book of the Bible, split into
+The manga (`volumes/`; "the full edition" in older notes and code): one volume per book of the Bible, split into
   manga chapters of roughly 15–25 pages. Target: every scene and every line of dialogue word for word
   ("story-complete"): narrative verses in full; genealogies and lists may become one illustrated page that
   quotes key lines; retellings and technical detail may be abridged, always marked with "…". Each volume
   has a `coverage.md` listing every verse as full / partial / omitted. About 140–160 words a page.
-- **The digest edition (legacy)** — `digest/`. The first drafts: 9–11-page books of highlights from Genesis to
-  2 Samuel (175 pages, about 8% of the text). Kept for now as second-class (a smaller section lower on the
-  home page); expected to be deleted once the full edition overtakes it. Don't extend it.
 
-### Status — full edition
+`digest/` holds the first drafts (short books of highlights, Genesis to 2 Samuel). They are **no longer published**:
+the volumes replaced them. The folder stays only because volume pages lift drawings from it (`reuse.panels()`,
+`<vol>.common.D(...)`); don't extend it or link it from the site.
+
+### Status
 
 | Volume | Chapter | Bible chapters | Pages | Coverage | Folder |
 |---|---|---|---|---|---|
@@ -239,32 +238,6 @@ its verses. Genesis lists to treat as scroll pages: ch. 5, ch. 10, 11:10–32,
 22:20–24, 25:1–4 and 12–18, ch. 36, 46:8–27 (166 verses). Retellings to abridge: 24:34–49, 41:17–24,
 42:29–34, 43:3–7.
 
-### Status — digest edition (legacy)
-
-| Series | Manga book | Chapters | Story | Folder | Text checked |
-|---|---|---|---|---|---|
-| Genesis | One — The Beginning | 1–3 | Creation → Eden → the Fall | `digest/genesis/book-01/` | yes |
-| Genesis | Two — The Flood | 4–9 | Cain and Abel → the Flood → the rainbow | `digest/genesis/book-02/` | yes |
-| Genesis | Three — The Promise | 11–22 | Babel → Abram's call → Sodom → Moriah | `digest/genesis/book-03/` | yes |
-| Genesis | Four — The Ladder | 25–33 | Jacob and Esau → Bethel → Peniel → reunion | `digest/genesis/book-04/` | yes |
-| Genesis | Five — The Dreamer | 37–50 | Joseph: coat → pit → Pharaoh → reunion | `digest/genesis/book-05/` | yes |
-| Exodus | One — The Bush That Burned | 1–4 | bondage → bulrushes → Midian → the burning bush → I AM → the rod | `digest/exodus/book-01/` | yes |
-| Exodus | Two — The Plagues | 5–11 | let my people go → rod against rod → the plagues → the midnight warning | `digest/exodus/book-02/` | yes |
-| Exodus | Three — The Red Sea | 12–15 | the passover → the great cry → the pillars → the sea divided → Miriam's song | `digest/exodus/book-03/` | yes |
-| Exodus | Four — Sinai | 16–20 | manna and quails → water from the rock → Amalek → the mountain on fire → the ten commandments | `digest/exodus/book-04/` | yes |
-| Exodus | Five — The Glory | 24–40 | the tables of stone → the golden calf → the tables broken → the cleft of the rock → the shining face → the tabernacle | `digest/exodus/book-05/` | yes |
-| Numbers | One — In the Wilderness | 13–24 | the twelve spies → the evil report → forty years → the rock smitten twice → the serpent of brass → Balaam's ass → a star out of Jacob | `digest/numbers/book-01/` | yes |
-| Joshua | One — Jericho | 1–24 | be strong → Rahab → crossing Jordan → the prince of the host → the walls of Jericho → the sun stands still → choose you this day | `digest/joshua/book-01/` | yes |
-| Judges | One — The Sword of Gideon | 4–8 | Deborah → Mount Tabor → Jael's tent → Gideon in the winepress → the fleece → the three hundred → trumpets, pitchers and torches | `digest/judges/book-01/` | yes |
-| Judges | Two — Samson | 13–16 | the Nazirite → the young lion → the foxes → the jawbone → the gates of Gaza → Delilah → the seven locks → the pillars | `digest/judges/book-02/` | yes |
-| Ruth | One — Whither Thou Goest | 1–4 | Moab → Orpah and Ruth → whither thou goest → call me Mara → the field of Boaz → the threshing-floor → Obed | `digest/ruth/book-01/` | yes |
-| 1 Samuel | One — Thy Servant Heareth | 1–10 | Hannah's vow → the child given → here am I → speak; for thy servant heareth → the ark taken → Dagon fallen → the kine → give us a king → Saul anointed | `digest/1samuel/book-01/` | yes |
-| 1 Samuel | Two — The Battle Is Jehovah's | 16–31 | the youngest → David anointed → Goliath of Gath → the living God → five smooth stones → in the name of Jehovah → a sling and a stone → Jonathan and Saul's spear → the cave → mount Gilboa | `digest/1samuel/book-02/` | yes |
-| 2 Samuel | One — Thou Art the Man | 1–12 | mourning for Saul and Jonathan → king over all Israel → the ark comes up → dancing before Jehovah → for ever → Mephibosheth → the letter → the ewe lamb → thou art the man | `digest/2samuel/book-01/` | yes |
-| 2 Samuel | Two — O My Son Absalom | 14–24 | no blemish in him → he stole the hearts → Absalom is king in Hebron → the mount of Olives → deal gently → between heaven and earth → tidings → O my son → which cost me nothing | `digest/2samuel/book-02/` | yes |
-
-Every digest quotation from Exodus to 2 Samuel matches `ref/asv` exactly (657 segments). The Genesis digest
-predates the checks: 12 of its 180 segments have small slips (6 punctuation, 6 trimmed wording).
 
 ### Claude Design canvases (retired)
 
@@ -287,7 +260,7 @@ volumes/              THE FULL EDITION (generated by tools/full; never hand-edit
     canvas.json       page index (order + titles) that the website reads; old Claude Design format
     volume.json       chapters for the website (dir, num, name, range, blurb, file prefixes)
     coverage.md       every verse of the chapters built so far: full / partial / omitted
-digest/               THE DIGEST EDITION (legacy, was manga/): <series>/canvas.json, <series>/book-NN/*.dc.html
+digest/               the old first drafts (unpublished; an art source for volume pages): <series>/book-NN/*.dc.html
 _site/                the website, built locally for previews (git-ignored; Actions builds its own)
 _book/                e-book and print exports (git-ignored; see Book export)
 tools/
@@ -406,7 +379,7 @@ and the website tools in `tools/site/`):
                       Absalom (also sly), David old (also alarmed, weeping), the Cushite, Gad
   samuel4_book2.py    writes 2 Samuel Book Two (forest(), mourners() with covered heads, fleeing())
   — website and checking —
-  build_site.py       writes the site from volume folders + flat digest folders (DIGEST lists the digest books)
+  build_site.py       writes the site from the volume folders
   rebuild_site.py     one step: python3 tools/site/rebuild_site.py [--thumbs] [--out _site]
   assets/site.css, assets/site.js   reader styles and keys/swipe navigation (copied into _site/assets/)
   shots.js            Playwright renders: node tools/site/shots.js <out_dir> page.dc.html …
@@ -674,19 +647,19 @@ Never fall back to blobs or stick figures.
 
 ## Website (built by GitHub Actions)
 
-A static site built from both editions. Nothing generated is committed: on every push to `master`,
+A static site built from `volumes/`, served at https://bible.apphaus.us. Nothing generated is committed: on every push to `master`,
 `.github/workflows/pages.yml` checks each volume (`build_volume.py <vol> --check`), runs
 `rebuild_site.py --thumbs --out _site` (Python + Pillow, Node + Playwright Chromium) and deploys `_site/`
 as a GitHub Pages artifact. Thumbnails are cached between runs (actions/cache on `_site/thumbs`), so a
 push only re-renders pages whose source changed; a cold build of all ~190 thumbnails takes about 2 minutes.
-One-time setting: repo Settings › Pages › Source: **GitHub Actions**. Runs: the repo's Actions tab
-(it can also be started by hand with "Run workflow").
+One-time settings: repo Settings › Pages › Source: **GitHub Actions**, and Custom domain: **bible.apphaus.us** (with
+"Enforce HTTPS"); DNS: a CNAME record `bible` → `apphaus2.github.io` in the apphaus.us zone. (An Actions deployment
+ignores a CNAME file, so the domain lives only in the repo setting.) All links are relative, so the site works at the
+domain root and at apphaus2.github.io/Bible/ alike. Runs: the repo's Actions tab (or "Run workflow" by hand).
 
-- `index.html`: "The Full Edition" first (one section per volume, a card per chapter), then
-  "Digest Editions" (smaller cards, with a note), then a table of contents.
-- Full edition: `<volume>/chapter-NN/index.html` and `<volume>/chapter-NN/NN-<slug>.html`
-  (page labels use the printed page number). Digests: `digest-<series>/book-NN/…`.
-  Prev/Next chains within each edition, across books.
+- `index.html`: "The Books" (one section per volume, a card per chapter), "The Text", then a table of contents.
+- `<volume>/chapter-NN/index.html` and `<volume>/chapter-NN/NN-<slug>.html` (page labels use the printed page
+  number). Prev/Next chain through every chapter, across books.
 - Reader controls (`tools/site/assets/site.js`): arrow keys, and swipe to turn the page. A swipe is only a quick
   one-finger flick (a quarter of the screen, at least 90 px, mostly sideways, under 0.6 s). A second finger (pinch)
   cancels it and blocks swipes for 0.6 s; nothing turns while the page is zoomed (`visualViewport.scale` > 1) or if the
@@ -703,8 +676,7 @@ One-time setting: repo Settings › Pages › Source: **GitHub Actions**. Runs: 
   that page's chapter (`#nameddest=GEN.24`, from the page's verse ref).
 - `manifest.json`: every series/volume, book/chapter and page (title, verse ref, URL, thumbnail, source), plus `text`
   (the PDF's URL).
-- `thumbs/`: 380×540 JPGs — `vol-<volume>-chapter-NN-<slug>.jpg` for the full edition; the digest
-  keeps its old names (`book-NN-…` for Genesis, `<series>-book-NN-…` for the others).
+- `thumbs/`: 380×540 JPGs — `vol-<volume>-chapter-NN-<slug>.jpg`.
   `thumbs/.sources.json` keeps a hash of each thumbnail's source page; changed pages are re-rendered and
   unused thumbnails deleted automatically.
 
@@ -712,8 +684,7 @@ Local preview (same command the workflow runs; output in git-ignored `_site/`):
 ```
 python3 tools/site/rebuild_site.py --thumbs   # needs node + playwright + Pillow; open _site/index.html
 ```
-Volumes come from `volumes/*/volume.json` (written by `build_volume.py`); digest books are listed in
-`DIGEST` in `tools/site/build_site.py`. Always run `build_volume.py` and commit its output after changing a
+Volumes come from `volumes/*/volume.json` (written by `build_volume.py`). Always run `build_volume.py` and commit its output after changing a
 volume's sources, or the workflow's `--check` step fails the deploy.
 
 ## Book export (e-reader and print)
@@ -761,7 +732,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- Full edition: finish Genesis (chapters 2–8), then Exodus, then on through the digest's books and beyond
-  (1 Chronicles next). Delete the digest once the full edition covers its books.
+- On through the Bible, book by book (1 Chronicles next).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.

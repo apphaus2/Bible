@@ -11,7 +11,6 @@ def cover():
     body = svg + f'''
   <div style="position: absolute; top: 40px; left: 38px; right: 38px; display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #F3EFE6">
     <span>The First Book of Moses</span>
-    <span>The Full Edition</span>
   </div>
   <h1 style="position: absolute; top: 50px; left: 30px; margin: 0; font-family: Anton, 'Archivo Narrow', sans-serif; font-weight: 400; font-size: 128px; line-height: 1.2; letter-spacing: -1px; color: #F3EFE6; text-shadow: 5px 5px 0 #0D0D0F">GENESIS</h1>
   <div style="position: absolute; top: 250px; left: 38px; width: 300px; height: 3px; background: #F3EFE6"></div>
@@ -28,4 +27,4 @@ def cover():
     <span>ASV</span><span>Vol. 1</span>
   </div>'''
     root = f"position: relative; width: 760px; height: 1080px; overflow: hidden; background: {a.bg}; color: #F3EFE6; font-family: 'IBM Plex Mono', monospace"
-    return mk.page("Genesis — The Full Edition, Volume One", None, body, root_style=root)
+    return mk.page("Genesis — Volume One", None, body, root_style=root)
