@@ -899,3 +899,72 @@ def hinds(p, w, h, seed):
          f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.46)} {f(h * 0.3)} L {f(w * 0.56)} {f(h * 0.26)} L {f(w * 0.66)} {f(h * 0.44)} L {f(w * 0.8)} {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.6"></path>']
     o.append(king_fig(p, w * 0.53, h * 0.27, fit(h * 0.27, h * 0.08), up=[(-22, -158), (-6, -196), (8, -228)]))
     return "".join(o)
+
+# ---- 2 Samuel 23–24 -----------------------------------------------------------------------------------------------------
+def well_gate(p, w, h, seed, pour=False):
+    """The well of Beth-lehem which is by the gate; (pour=True) David pouring out the water unto Jehovah."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#F3D8A0"), S4.gatehouse(w * 0.74, b, w * 0.4, h * 0.6), ground(w, h, b, "#B89A6A", dy=0),
+         f'<ellipse cx="{f(w * 0.36)}" cy="{f(b - h * 0.02)}" rx="{f(w * 0.1)}" ry="{f(h * 0.03)}" fill="#8A8478" stroke="#0D0D0F" stroke-width="2.4"></ellipse>'
+         f'<rect x="{f(w * 0.26)}" y="{f(b - h * 0.1)}" width="{f(w * 0.2)}" height="{f(h * 0.08)}" fill="#A89E92" stroke="#0D0D0F" stroke-width="2.4"></rect>']
+    if pour:
+        s = fit(b, h * 0.36)
+        o.append(old_king(p, w * 0.24, b, s, up=[(22, -158), (40, -150), (62, -150)]))
+        o.append(f'<path d="M{f(w * 0.24 + 62 * s)} {f(b - 150 * s)} C {f(w * 0.24 + 70 * s)} {f(b - 100 * s)} {f(w * 0.24 + 64 * s)} {f(b - 50 * s)} {f(w * 0.24 + 70 * s)} {f(b)}" stroke="#8FD0E2" stroke-width="5" fill="none"></path>')
+        o.append(crowd_at(p, w, h, seed, w * 0.5, w * 0.62, h * 0.8, b, 3, s * 0.8, s * 0.95, flip=True))
+    return "".join(o)
+
+CENSUS = [("JERUSALEM", 0.42, 0.62), ("AROER", 0.62, 0.74), ("JAZER", 0.66, 0.56), ("GILEAD", 0.66, 0.4), ("DAN-JAAN", 0.54, 0.12), ("SIDON", 0.32, 0.08),
+          ("TYRE", 0.26, 0.18), ("BEER-SHEBA", 0.34, 0.92), ("JERUSALEM", 0.42, 0.62)]
+def census_map(w, h):
+    """Joab's numbering as a technical map: over the Jordan to Aroer and Jazer, Gilead, Dan-jaan, round to Sidon and Tyre,
+    south to Beer-sheba, and back to Jerusalem after nine months and twenty days."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.2)} -10 C {f(w * 0.2)} {f(h * 0.3)} {f(w * 0.14)} {f(h * 0.7)} {f(w * 0.1)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.52)} {f(h * 0.2)} C {f(w * 0.54)} {f(h * 0.4)} {f(w * 0.52)} {f(h * 0.6)} {f(w * 0.54)} {f(h * 0.72)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>')
+    o.append(route([(w * x, h * y) for _, x, y in CENSUS], color="#FFD23F"))
+    for nm, x, y in CENSUS[:-1]:
+        o.append(node(w * x, h * y, nm, "#D7261E" if nm == "JERUSALEM" else "#FFD23F", r=5, dy=-12, size=9))
+    return "".join(o)
+
+def sum_board(w, h):
+    """The sum of the numbering, as a tally board: Israel and Judah."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    for i, (nm, n, c) in enumerate([("ISRAEL", "800,000", "#8FD0E2"), ("JUDAH", "500,000", "#FFD23F")]):
+        x = w * (0.28 + i * 0.44)
+        o.append(f'<rect x="{f(x - w * 0.18)}" y="{f(h * 0.2)}" width="{f(w * 0.36)}" height="{f(h * 0.6)}" fill="none" stroke="{c}" stroke-width="2"></rect>'
+                 + label(x, h * 0.36, nm, c, 14) + f'<text x="{f(x)}" y="{f(h * 0.62)}" fill="{c}" font-family="Anton, sans-serif" font-size="{f(min(w * 0.08, h * 0.2))}" text-anchor="middle">{n}</text>')
+    return "".join(o)
+
+def pestilence(w, h, seed):
+    """From Dan even to Beer-sheba: the land silent under a dark sky, the tents shut (no one drawn)."""
+    o = [sky(w, h, "#1A1A2A", "#5A4A5A"), hills(w, h, h * 0.5, seed, color="#2A2430", amp=16), ground(w, h, h * 0.62, "#2A2228", dy=0),
+         N.camp(14, -10, w + 10, h * 0.7, h * 0.96, seed, color=("#3A3038", "#2A2228", "#4A3A40"))]
+    return "".join(o)
+
+def angel_city(p, w, h, seed):
+    """The angel of Jehovah by the threshing-floor of Araunah, his hand stretched out toward Jerusalem."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A1A3A", "#8A5A6A"), J.city_hill(w * 0.36, h * 0.8, w * 0.6, h * 0.36, seed), ground(w, h, h * 0.82, "#3A2A2A", dy=0),
+         S4.threshing_floor(w * 0.76, h * 0.92, w * 0.36), V.rays(w * 0.76, h * 0.4, 24, 12, w * 0.4, color="#FFF4C2", op=0.25),
+         N.angel(p, w * 0.76, h * 0.86, fit(h * 0.86, h * 0.16), sword=True, glow=True, flip=True)]
+    return "".join(o)
+
+def araunah(p, w, h, seed):
+    """Araunah bowing himself with his face to the ground before the king at his threshing-floor, his oxen beside it."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), J.city_hill(w * 0.8, h * 0.56, w * 0.36, h * 0.26, seed), ground(w, h, h * 0.58, "#C8A06A", dy=0),
+         S4.threshing_floor(w * 0.6, b, w * 0.5)]
+    s = fit(b, h * 0.38)
+    o.append(old_king(p, w * 0.2, b, s) + captain(p, w * 0.08, b, s * 0.9, cloth="#3A4A6A"))
+    o.append(N.prostrate(w * 0.44, b, s * 0.8, color="#7A6A4A", skin="#9A6A4A", flip=True))
+    o.append(S1.cow(w * 0.72, b - h * 0.06, min(0.8, h / 400), color="#8A5A30") + S1.cow(w * 0.84, b - h * 0.04, min(0.8, h / 400)))
+    return "".join(o)
+
+def altar_floor(p, w, h, seed):
+    """David's altar on the threshing-floor of Araunah, the burnt-offering burning, the king before it, Jerusalem beyond."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#FFE680"), V.rays(w * 0.56, h * 0.5, 30, 20, max(w, h), color="#FFF4C2", op=0.3),
+         J.city_hill(w * 0.86, h * 0.6, w * 0.3, h * 0.24, seed), ground(w, h, h * 0.62, "#C8A06A", dy=0), S4.threshing_floor(w * 0.56, b, w * 0.6),
+         S4.altar(w * 0.56, b - h * 0.04, min(1.2, h / 300), seed=seed)]
+    o.append(old_king(p, w * 0.2, b, fit(b, h * 0.4), up=[(-22, -158), (-6, -196), (8, -228)]))
+    return "".join(o)

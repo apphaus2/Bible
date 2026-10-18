@@ -145,8 +145,11 @@ There are two editions:
 | 2 Samuel | 9 · O My Son Absalom | 17–18 | title + 17 (pp. 97–113) | 62/62 verses full (the digest's oak and heap; 17:23 and 18:14–15 words only) | `volumes/2samuel/` |
 | 2 Samuel | 10 · The King Returned | 19–20 | title + 16 (pp. 114–129) | 69/69 verses full (20:10–12 words over the empty highway; 20:22 over Abel's wall) | `volumes/2samuel/` |
 | 2 Samuel | 11 · Jehovah Is My Rock | 21–22 | title + 15 (pp. 130–144) | 73/73 verses full (21:9 words over the mountain at harvest; David's song in song boxes) | `volumes/2samuel/` |
+| 2 Samuel | 12 · Which Cost Me Nothing | 23–24 | title + 11 (pp. 145–155) | 64/64 verses full (the mighty men as roll cells; 24:15 words over the silent tents) | `volumes/2samuel/` |
 
-**Genesis through 1 Samuel (nine volumes) are complete.** Next: 2 Samuel. 1 Samuel is `tools/full/sa1/` (14 chapters, plan and
+**Genesis through 2 Samuel (ten volumes) are complete.** Next: 1 Kings. 2 Samuel is `tools/full/sa2/` (12 chapters, plan and
+restraint notes in `sa2/__init__.py`, the digest's two books lifted with `sa2.common.D("A5", 1)` / `D("B6", 0)`; `asv.Book.v(..., after=)`
+finds a phrase said twice in one verse). 1 Samuel is `tools/full/sa1/` (14 chapters, plan and
 restraint notes in `sa1/__init__.py`; the digest's two books lifted with `sa1.common.D("A3", 0)` / `D("B5", 2)`). It packs with
 `discourse.pack(..., by_need=True, room=0.92, min_size=12.5)`: `min_size` splits any page on which a panel's words would
 fall below that size, so long dialogue chapters stay readable. Ruth is `tools/full/rut/` (2 chapters, the digest's
@@ -455,7 +458,7 @@ Usable panel widths: full 702, half 342; heights are the row height minus 6.
 
 **Covers:** "THE BOOK OF" / "No. NN", the series title in Anton 136–168 px (shrink longer names), "Book N — Name",
 "Chapters a – b", a vertical kanji block in the accent color (創世記 SŌSEIKI for Genesis,
-出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
+出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel, サムエル記下 SAMUERU-KI GE for 2 Samuel), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
 still spell it out; leave them).
 
 **Recurring components** (all in `tools/kit/mk.py`):
@@ -720,6 +723,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 ## Roadmap
 
 - Full edition: finish Genesis (chapters 2–8), then Exodus, then on through the digest's books and beyond
-  (1 Kings next after 2 Samuel). Delete the digest once the full edition covers its books.
+  (1 Kings next). Delete the digest once the full edition covers its books.
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.

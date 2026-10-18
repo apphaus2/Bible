@@ -44,5 +44,7 @@ META = {
      "blurb": "The victory turned into mourning, and Joab: thou lovest them that hate thee; the king sitting in the gate; brought back over the Jordan — Shimei forgiven, Mephibosheth unwashed, Barzillai fourscore years old; the ten parts in the king; Sheba's trumpet — every man to his tents, O Israel; Amasa at the great stone in Gibeon; and the wise woman of Abel."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Jehovah Is My Rock", "range": "2 Samuel 21–22", "bible_chapters": [21, 22],
      "blurb": "Three years of famine and the Gibeonites; Rizpah on her sackcloth upon the rock from harvest until the rain; the bones of Saul and Jonathan brought home to Zela; the four sons of the giant — that thou quench not the lamp of Israel; and David's song: Jehovah is my rock, and my fortress, and my deliverer."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Which Cost Me Nothing", "range": "2 Samuel 23–24", "bible_chapters": [23, 24],
+     "blurb": "The last words of David — as the light of the morning, when the sun riseth; the mighty men, and the water of the well of Beth-lehem poured out unto Jehovah; the numbering of the people; Gad and the three things; the pestilence and the angel by the threshing-floor — it is enough; and the altar on Araunah's floor: neither will I offer burnt-offerings unto Jehovah my God which cost me nothing."},
   ],
 }
