@@ -1118,3 +1118,93 @@ def obadiah_way(p, w, h, seed):
     o.append(elijah_fig(p, w * 0.26, b, s))
     o.append(N.prostrate(w * 0.6, b, s * 0.8, color="#2A5A6A", skin="#C98E66", flip=True))
     return "".join(o)
+
+# ---- 1 Kings 19–20 ------------------------------------------------------------------------------------------------------
+def juniper(p, w, h, seed, angel=False):
+    """Elijah asleep under a juniper-tree in the wilderness; angel=True: a figure of light touching him, and a cake baken on
+    the coals and a cruse of water at his head."""
+    b = h * 0.86
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880" if not angel else "#2A2A5A", "#F3D8A0" if not angel else "#8A7AA8"), ground(w, h, h * 0.62, "#C8A070" if not angel else "#6A5A6A", dy=0)]
+    r = random.Random(seed)
+    o.append(f'<path d="M{f(w * 0.3)} {f(b)} C {f(w * 0.28)} {f(h * 0.6)} {f(w * 0.34)} {f(h * 0.44)} {f(w * 0.3)} {f(h * 0.34)}" stroke="#5A3A22" stroke-width="8" fill="none"></path>'
+             + "".join(f'<path d="M{f(w * 0.3)} {f(h * 0.4)} L {f(w * 0.3 + math.cos(a) * w * 0.18)} {f(h * 0.4 + math.sin(a) * h * 0.18)}" stroke="#5A6A3A" stroke-width="3"></path>' for a in [-2.6 + i * 0.35 for i in range(8)]))
+    o.append(J1.rug_sleeper(w * 0.48, b, min(1.2, h / 280), color="#5A3A1E"))
+    if angel:
+        o.append(V.rays(w * 0.76, h * 0.5, 20, 12, w * 0.3, color="#FFF4C2", op=0.4))
+        o.append(f'<path d="M{f(w * 0.76)} {f(h * 0.2)} C {f(w * 0.68)} {f(h * 0.4)} {f(w * 0.66)} {f(h * 0.7)} {f(w * 0.68)} {f(b)} L {f(w * 0.84)} {f(b)} C {f(w * 0.86)} {f(h * 0.7)} {f(w * 0.84)} {f(h * 0.4)} {f(w * 0.76)} {f(h * 0.2)} Z" fill="#FFF4C2" opacity="0.85"></path>')
+        o.append(f'<ellipse cx="{f(w * 0.36)}" cy="{f(b - 6)}" rx="16" ry="7" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1.6"></ellipse>'
+                 f'<path d="M{f(w * 0.42)} {f(b)} C {f(w * 0.41)} {f(b - 20)} {f(w * 0.45)} {f(b - 20)} {f(w * 0.44)} {f(b)} Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.6"></path>')
+    return "".join(o)
+
+def horeb_cave(p, w, h, seed, stage="cave"):
+    """Horeb the mount of God: the cave mouth; stage 'wind' (rocks broken in pieces), 'quake' (the mountain split), 'fire',
+    'still' (Elijah in the entrance of the cave, his face wrapped in his mantle). Jehovah is never drawn."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#2A2A4A" if stage != "still" else "#5A5A7A", "#5A4A6A" if stage != "still" else "#C8C0D0"), A.horeb(w, h, h * 0.96, seed)]
+    o.append(f'<path d="M{f(w * 0.3)} {f(h * 0.96)} C {f(w * 0.3)} {f(h * 0.6)} {f(w * 0.5)} {f(h * 0.56)} {f(w * 0.52)} {f(h * 0.96)} Z" fill="#12090A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    if stage == "wind":
+        for i in range(10):
+            y = h * r.uniform(0.1, 0.6)
+            o.append(f'<path d="M-10 {f(y)} C {f(w * 0.3)} {f(y - 20)} {f(w * 0.6)} {f(y + 20)} {f(w + 10)} {f(y)}" stroke="#C8C8E8" stroke-width="2" fill="none" opacity="0.6"></path>')
+        for i in range(8):
+            o.append(f'<path d="M{f(w * r.uniform(0.5, 1))} {f(h * r.uniform(0.2, 0.6))} l 14 -6 l 6 12 l -12 8 Z" fill="#6A5A5A" stroke="#0D0D0F" stroke-width="1.4"></path>')
+    elif stage == "quake":
+        o.append(f'<path d="M{f(w * 0.7)} {f(h * 0.2)} l -20 60 l 26 30 l -30 80 l 20 50 l -16 70" stroke="#0D0D0F" stroke-width="6" fill="none"></path>')
+        o.append(mk.speed(w * 0.5, h * 0.5, 16, w * 0.3, w * 0.7, seed, color="#C8C0D0", op=0.4))
+    elif stage == "fire":
+        o += [E.blaze(w * (0.2 + i * 0.2), h * 0.9, w * 0.16, h * 0.4, seed + i, n=6) for i in range(4)]
+    elif stage == "still":
+        o.append(elijah_fig(p, w * 0.42, h * 0.95, fit(h * 0.95, h * 0.56) * 0.9, up=[(-22, -158), (-10, -180), (4, -186)]))
+    return "".join(o)
+
+def plowing(p, w, h, seed, mantle=False):
+    """Elisha plowing with twelve yoke of oxen before him, he with the twelfth; mantle=True: Elijah casting his mantle upon him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=12), ground(w, h, h * 0.5, "#8A6A4A", dy=0)]
+    for k in range(4):
+        y = h * (0.56 + k * 0.08)
+        o.append(f'<path d="M-10 {f(y)} L {f(w + 10)} {f(y)}" stroke="#6A4A2A" stroke-width="2"></path>')
+    for i in range(3):
+        o.append(S1.cow(w * (0.12 + i * 0.22), h * (0.6 + i * 0.03), min(0.5, h / 700), color=["#8A5A30", "#C9A27A", "#6A4A2A"][i]))
+    s = fit(b, h * 0.36)
+    o.append(S1.cow(w * 0.52, b, min(0.9, h / 400), color="#8A5A30"))
+    o.append(man(p, w * 0.82, b, s, "#8A6A3A", flip=True, extra=A.headcloth("#8A6A3A")))
+    if mantle:
+        o.append(elijah_fig(p, w * 0.96, b, s, flip=True, up=[(22, -158), (0, -200), (-30, -220)]))
+    return "".join(o)
+
+def pavilions(p, w, h, seed):
+    """Ben-hadad and the thirty and two kings drinking in their pavilions before Samaria besieged."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#F3D8A0"), samaria_hill(p, w, h, seed), N.camp(14, -10, w + 10, h * 0.7, h * 0.94, seed, color=("#7A1A2A", "#5A3A6A", "#8A6A3A"))]
+    return "".join(o)
+
+def two_flocks(w, h):
+    """At Aphek: Israel encamped like two little flocks of kids, and the Syrians filling the country — a technical map."""
+    o = [grid_bg(w, h)]
+    for x in (0.16, 0.3):
+        o.append(f'<circle cx="{f(w * x)}" cy="{f(h * 0.5)}" r="{f(min(w, h) * 0.06)}" fill="#FFD23F" fill-opacity="0.3" stroke="#FFD23F" stroke-width="2"></circle>')
+    o.append(label(w * 0.23, h * 0.72, "ISRAEL · TWO LITTLE FLOCKS", "#FFD23F", 9))
+    o.append(f'<rect x="{f(w * 0.48)}" y="{f(h * 0.12)}" width="{f(w * 0.48)}" height="{f(h * 0.76)}" fill="#D7261E" fill-opacity="0.25" stroke="#D7261E" stroke-width="2"></rect>'
+             + label(w * 0.72, h * 0.5, "SYRIA FILLED THE COUNTRY", "#D7261E", 10) + node(w * 0.86, h * 0.2, "APHEK", "#8FD0E2", r=5, dy=-10, size=9))
+    return "".join(o)
+
+def ropes(p, w, h, seed):
+    """Ben-hadad's servants with sackcloth on their loins and ropes on their heads, before the king of Israel in his chariot."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), ground(w, h, h * 0.6, "#A89A6A", dy=0)]
+    s = fit(b, h * 0.38)
+    for i in range(3):
+        x = w * (0.16 + i * 0.12)
+        o.append(E.kneel(x, b, s * 0.8, color="#8A7A5A", skin="#B98A6E", flip=True) + f'<ellipse cx="{f(x + 4)}" cy="{f(b - 112 * s * 0.8)}" rx="{f(14 * s)}" ry="{f(5 * s)}" fill="none" stroke="#C8A060" stroke-width="3"></ellipse>')
+    o.append(E3.chariot(w * 0.76, b, min(0.9, h / 360), flip=True, color="#3A2214", driver=AHAB_C))
+    return "".join(o)
+
+def headband(p, w, h, seed):
+    """The prophet waiting for the king by the way, disguised with his headband over his eyes."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(prophet_fig(p, w * 0.3, b, s, cloth="#6A645E", beard=A.BLACK_BEARD) + f'<rect x="{f(w * 0.3 - 16 * s)}" y="{f(b - 196 * s)}" width="{f(32 * s)}" height="{f(8 * s)}" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    o.append(E3.chariot(w * 0.72, b, min(0.9, h / 360), flip=True, color="#3A2214", driver=AHAB_C))
+    return "".join(o)

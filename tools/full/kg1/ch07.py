@@ -32,7 +32,7 @@ SEGS = [drawn([caps("9:1-2"), cp("9:3", to="said unto him,"), gd("9:3", frm="I h
         drawn([gods("9:6-7")], "1KGS 9:6–7", lambda w, h: K.court_scene("cs7", w, h, 704, crowd=False), "#8FD0E2"),
         drawn([gods("9:8-9")], "1KGS 9:8–9", lambda w, h: K2.rabbah("rb7", w, h, 705, camp=False, dusk=True), "#3A1A2A"),
         drawn([caps("9:10-12")], "1KGS 9:10–12", below(lambda w, h: K.cabul("cb7", w, h, 706), 0.36), "#C8C0B0", head="The Land of Cabul"),
-        face([cp("9:13", to="And he said,"), say("9:13", frm="What cities"), cp("9:13", frm="And he called"), caps("9:14")], "1KGS 9:13–14", HIRAM),
+        face([cp("9:13", to="And he said,"), say("9:13", frm="What cities", to="my brother?"), cp("9:13", frm="And he called"), caps("9:14")], "1KGS 9:13–14", HIRAM),
         drawn([caps("9:15-19")], "1KGS 9:15–19", below(lambda w, h: K.cities_map(w, h), 0.36), MAP, head="The Levy"),
         drawn([caps("9:20-23")], "1KGS 9:20–23", below(lambda w, h: K.hewers("hw7", w, h, 707), 0.36), "#E8C8A0"),
         drawn([caps("9:24-25")], "1KGS 9:24–25", below(lambda w, h: K.court_scene("sm7", w, h, 708, smoke=True), 0.3), "#8FD0E2"),

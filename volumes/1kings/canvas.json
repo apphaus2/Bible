@@ -975,6 +975,139 @@
    "w": 760,
    "h": 1080,
    "title": "125 · A Cloud as Small as a Man's Hand"
+  },
+  "1KI-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · A Still Small Voice"
+  },
+  "1KI-C13-D-P01-UnderAJuniperTree.dc.html": {
+   "x": 840,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Under a Juniper-tree"
+  },
+  "1KI-C13-D-P02-UnderAJuniperTree.dc.html": {
+   "x": 1680,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Under a Juniper-tree"
+  },
+  "1KI-C13-D-P03-HorebTheMountOfGod.dc.html": {
+   "x": 2520,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Horeb the Mount of God"
+  },
+  "1KI-C13-D-P04-AStillSmallVoice.dc.html": {
+   "x": 3360,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · A Still Small Voice"
+  },
+  "1KI-C13-D-P05-AStillSmallVoice.dc.html": {
+   "x": 0,
+   "y": 47600,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · A Still Small Voice"
+  },
+  "1KI-C13-D-P06-ElishaTheSonOfShap.dc.html": {
+   "x": 840,
+   "y": 47600,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Elisha the Son of Shaphat"
+  },
+  "1KI-C13-D-P07-BenHadadKingOfSyri.dc.html": {
+   "x": 1680,
+   "y": 47600,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Ben-hadad King of Syria"
+  },
+  "1KI-C13-D-P08-BenHadadKingOfSyri.dc.html": {
+   "x": 2520,
+   "y": 47600,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Ben-hadad King of Syria"
+  },
+  "1KI-C13-D-P09-BenHadadKingOfSyri.dc.html": {
+   "x": 3360,
+   "y": 47600,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Ben-hadad King of Syria"
+  },
+  "1KI-C13-D-P10-BenHadadKingOfSyri.dc.html": {
+   "x": 0,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Ben-hadad King of Syria"
+  },
+  "1KI-C13-D-P11-TheYoungMenOfThePr.dc.html": {
+   "x": 840,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Young Men of the Princes"
+  },
+  "1KI-C13-D-P12-AGodOfTheHills.dc.html": {
+   "x": 1680,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · A God of the Hills"
+  },
+  "1KI-C13-D-P13-AGodOfTheHills.dc.html": {
+   "x": 2520,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · A God of the Hills"
+  },
+  "1KI-C13-D-P14-RopesUponTheirHead.dc.html": {
+   "x": 3360,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Ropes upon Their Heads"
+  },
+  "1KI-C13-D-P15-RopesUponTheirHead.dc.html": {
+   "x": 0,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · Ropes upon Their Heads"
+  },
+  "1KI-C13-D-P16-RopesUponTheirHead.dc.html": {
+   "x": 840,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Ropes upon Their Heads"
+  },
+  "1KI-C13-D-P17-ThyLifeForHisLife.dc.html": {
+   "x": 1680,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Thy Life for His Life"
+  },
+  "1KI-C13-D-P18-ThyLifeForHisLife.dc.html": {
+   "x": 2520,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · Thy Life for His Life"
   }
  },
  "order": [
@@ -1115,7 +1248,26 @@
   "1KI-C12-D-P09-TheFireOfJehovahFe.dc.html",
   "1KI-C12-D-P10-TheFireOfJehovahFe.dc.html",
   "1KI-C12-D-P11-ACloudAsSmallAsAMa.dc.html",
-  "1KI-C12-D-P12-ACloudAsSmallAsAMa.dc.html"
+  "1KI-C12-D-P12-ACloudAsSmallAsAMa.dc.html",
+  "1KI-C13-00-Title.dc.html",
+  "1KI-C13-D-P01-UnderAJuniperTree.dc.html",
+  "1KI-C13-D-P02-UnderAJuniperTree.dc.html",
+  "1KI-C13-D-P03-HorebTheMountOfGod.dc.html",
+  "1KI-C13-D-P04-AStillSmallVoice.dc.html",
+  "1KI-C13-D-P05-AStillSmallVoice.dc.html",
+  "1KI-C13-D-P06-ElishaTheSonOfShap.dc.html",
+  "1KI-C13-D-P07-BenHadadKingOfSyri.dc.html",
+  "1KI-C13-D-P08-BenHadadKingOfSyri.dc.html",
+  "1KI-C13-D-P09-BenHadadKingOfSyri.dc.html",
+  "1KI-C13-D-P10-BenHadadKingOfSyri.dc.html",
+  "1KI-C13-D-P11-TheYoungMenOfThePr.dc.html",
+  "1KI-C13-D-P12-AGodOfTheHills.dc.html",
+  "1KI-C13-D-P13-AGodOfTheHills.dc.html",
+  "1KI-C13-D-P14-RopesUponTheirHead.dc.html",
+  "1KI-C13-D-P15-RopesUponTheirHead.dc.html",
+  "1KI-C13-D-P16-RopesUponTheirHead.dc.html",
+  "1KI-C13-D-P17-ThyLifeForHisLife.dc.html",
+  "1KI-C13-D-P18-ThyLifeForHisLife.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1208,6 +1360,13 @@
    "text": "Chapter 12 · The Fire of Jehovah (1 Kings 18)",
    "x": 0,
    "y": 42000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · A Still Small Voice (1 Kings 19–20)",
+   "x": 0,
+   "y": 46100
   }
  },
  "designSystems": [],
