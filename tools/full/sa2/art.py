@@ -817,3 +817,85 @@ def abel_siege(p, w, h, seed, battering=True):
     else:
         o.append(J.trumpeter(p, w * 0.2, b, fit(b, h * 0.5), body="#3A1E14") + J.blasts(w * 0.2 + 70 * fit(b, h * 0.5), b - 170 * fit(b, h * 0.5), fit(b, h * 0.5)))
     return "".join(o)
+
+# ---- 2 Samuel 21–22 -----------------------------------------------------------------------------------------------------
+def famine(w, h, seed):
+    """Famine three years: a cracked field under a white sun, the stalks withered."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#FFF4C2", "#E8B880"), sun(w * 0.7, h * 0.2, 30, color="#FFFFFF", op=0.7), ground(w, h, h * 0.5, "#C8A06A", dy=0)]
+    for i in range(14):
+        x = r.uniform(0, w); y = r.uniform(h * 0.56, h); l = r.uniform(30, 90)
+        o.append(f'<path d="M{f(x)} {f(y)} l {f(l * 0.4)} {f(-l * 0.1)} l {f(l * 0.3)} {f(l * 0.12)} l {f(l * 0.3)} {f(-l * 0.06)}" stroke="#7A5A3A" stroke-width="2" fill="none"></path>')
+    for i in range(12):
+        x = w * (0.04 + i * 0.08)
+        o.append(f'<path d="M{f(x)} {f(h * 0.6)} C {f(x + 2)} {f(h * 0.54)} {f(x + 10)} {f(h * 0.52)} {f(x + 16)} {f(h * 0.56)}" stroke="#8A6A3A" stroke-width="2.4" fill="none"></path>')
+    return "".join(o)
+
+def harvest_mount(w, h, seed):
+    """The mountain before Jehovah at the beginning of barley harvest, the ripe barley below it (21:9 told in words only)."""
+    o = [sky(w, h, "#C8B8A0", "#F3D8A0"), f'<path d="M-10 {f(h * 0.6)} C {f(w * 0.3)} {f(h * 0.2)} {f(w * 0.6)} {f(h * 0.16)} {f(w + 10)} {f(h * 0.5)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         R1.field(-10, w + 10, h * 0.76, h * 0.2, seed)]
+    return "".join(o)
+
+def rizpah(p, w, h, seed):
+    """Rizpah upon the rock on her spread sackcloth, keeping watch from harvest until the rain, birds wheeling above."""
+    r = random.Random(seed)
+    b = h * 0.62
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A4A5A", "#C8A080"),
+         f'<path d="M{f(w * 0.1)} {f(h + 10)} L {f(w * 0.2)} {f(h * 0.62)} L {f(w * 0.7)} {f(h * 0.6)} L {f(w * 0.86)} {f(h + 10)} Z" fill="#7A6A5A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.3)} {f(b)} L {f(w * 0.56)} {f(b)} L {f(w * 0.54)} {f(b + 10)} L {f(w * 0.32)} {f(b + 10)} Z" fill="#3A3430" stroke="#0D0D0F" stroke-width="1.6"></path>']
+    o.append(mk.person(p, round(w * 0.42), round(b), round(fit(b, h * 0.3), 3), body="#3A1E14", cloth="#3A3430", woman=True, hair="#6A645E", sw=3, up=[(-22, -158), (-50, -190), (-70, -220)]))
+    for i in range(6):
+        x = r.uniform(w * 0.2, w * 0.9); y = r.uniform(h * 0.08, h * 0.36); s = r.uniform(8, 14)
+        o.append(f'<path d="M{f(x - s)} {f(y)} Q {f(x - s / 2)} {f(y - s / 2)} {f(x)} {f(y)} Q {f(x + s / 2)} {f(y - s / 2)} {f(x + s)} {f(y)}" stroke="#0D0D0F" stroke-width="2.4" fill="none"></path>')
+    return "".join(o)
+
+def giant(p, w, h, seed, fallen=False):
+    """One of the sons of the giant in brass, his great spear; (fallen=True: fallen upon his face)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#9A7A5A", amp=12), ground(w, h, h * 0.62, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.1)
+    if fallen: o.append(S2.goliath_fallen(w * 0.5, b, min(1.0, h / 360)))
+    else:
+        o.append(S2.goliath(p, w * 0.62, b, s * 0.95, flip=True))
+        o.append(captain(p, w * 0.22, b, s * 0.55, cloth="#5A5A6A"))
+    return "".join(o)
+
+def waves(w, h, seed):
+    """The waves of death compassed me; the floods of ungodliness."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#0B1A2E"></rect>', E3.crash(w, h, seed)]
+    return "".join(o)
+
+def storm(w, h, seed, sea=False):
+    """The earth shook and trembled, thick darkness and the clouds, lightning out of the brightness (God is never drawn)."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#0B0B2A", "#3A2A5A"), A.horeb(w, h, h * 0.92, seed, color="#2A1E2E", lit="#5A3A4A") if not sea else
+         f'<rect x="-10" y="{f(h * 0.6)}" width="{f(w + 20)}" height="{f(h * 0.5)}" fill="#0F3A5A"></rect>']
+    for i in range(7):
+        o.append(f'<ellipse cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(0, h * 0.3))}" rx="{f(w * r.uniform(0.15, 0.3))}" ry="{f(h * 0.08)}" fill="#1A1430" opacity="0.9"></ellipse>')
+    for i in range(3):
+        x = r.uniform(w * 0.2, w * 0.8); y = h * 0.2
+        o.append(f'<path d="M{f(x)} {f(y)} l -14 {f(h * 0.14)} l 16 0 l -22 {f(h * 0.2)}" stroke="#FFF4C2" stroke-width="4" fill="none"></path>')
+    return "".join(o)
+
+def large_place(w, h, seed):
+    """He brought me forth also into a large place: a broad sunlit plain under an open sky."""
+    o = [sky(w, h, "#8FD0E2", "#F3E8C8"), sun(w * 0.5, h * 0.36, 40, color="#FFE680", op=0.6), V.rays(w * 0.5, h * 0.36, 30, 20, max(w, h), color="#FFF4C2", op=0.25),
+         hills(w, h, h * 0.6, seed, color="#9CCB5E", amp=8), ground(w, h, h * 0.66, "#B8C86A", dy=0)]
+    return "".join(o)
+
+def lamp(w, h, seed):
+    """For thou art my lamp, O Jehovah; and Jehovah will lighten my darkness."""
+    from genesis.art4 import clay_lamp
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#0B0B1A"></rect>',
+         f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.6)}" r="{f(max(w, h) * 0.5)}" fill="#FFC14D" opacity="0.12"></circle>',
+         f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.6)}" r="{f(max(w, h) * 0.25)}" fill="#FFC14D" opacity="0.15"></circle>',
+         clay_lamp(w * 0.5, h * 0.8, min(2.4, h / 140))]
+    return "".join(o)
+
+def hinds(p, w, h, seed):
+    """He maketh my feet like hinds' feet, and setteth me upon my high places: a figure on the crags above the valley."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.66, seed, color="#8A9A7A", amp=10),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.46)} {f(h * 0.3)} L {f(w * 0.56)} {f(h * 0.26)} L {f(w * 0.66)} {f(h * 0.44)} L {f(w * 0.8)} {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.6"></path>']
+    o.append(king_fig(p, w * 0.53, h * 0.27, fit(h * 0.27, h * 0.08), up=[(-22, -158), (-6, -196), (8, -228)]))
+    return "".join(o)

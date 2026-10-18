@@ -42,5 +42,7 @@ META = {
      "blurb": "Ahithophel's counsel defeated by Hushai's — as a bear robbed of her whelps; the priests' sons hidden in the well at Bahurim; over the Jordan by morning light; Barzillai's gifts at Mahanaim; deal gently for my sake with the young man; the forest of Ephraim; Absalom taken up between heaven and earth; Ahimaaz outruns the Cushite; O my son Absalom!"},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The King Returned", "range": "2 Samuel 19–20", "bible_chapters": [19, 20],
      "blurb": "The victory turned into mourning, and Joab: thou lovest them that hate thee; the king sitting in the gate; brought back over the Jordan — Shimei forgiven, Mephibosheth unwashed, Barzillai fourscore years old; the ten parts in the king; Sheba's trumpet — every man to his tents, O Israel; Amasa at the great stone in Gibeon; and the wise woman of Abel."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Jehovah Is My Rock", "range": "2 Samuel 21–22", "bible_chapters": [21, 22],
+     "blurb": "Three years of famine and the Gibeonites; Rizpah on her sackcloth upon the rock from harvest until the rain; the bones of Saul and Jonathan brought home to Zela; the four sons of the giant — that thou quench not the lamp of Israel; and David's song: Jehovah is my rock, and my fortress, and my deliverer."},
   ],
 }
