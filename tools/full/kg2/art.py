@@ -734,3 +734,43 @@ def nineveh(w, h, seed):
         wd = w * (0.7 - k * 0.14); y = h * (0.76 - k * 0.12)
         o.append(f'<rect x="{f(w * 0.5 - wd / 2)}" y="{f(y - h * 0.12)}" width="{f(wd)}" height="{f(h * 0.12)}" fill="{["#B8905A", "#A8804A", "#98703A", "#88602A"][k]}" stroke="#0D0D0F" stroke-width="2"></rect>')
     return "".join(o)
+
+# ---- 2 Kings 20–21 ------------------------------------------------------------------------------------------------------
+def dial(w, h, back=False):
+    """The dial of Ahaz: a stair of steps and the shadow upon it; back=True: the shadow gone back ten steps."""
+    o = [sky(w, h, "#FFE6A0", "#E8B880"), sun(w * 0.86, h * 0.14, 30, color="#FFF4C2", op=0.8), ground(w, h, h * 0.86, "#B89A6A", dy=0)]
+    n = 14
+    for i in range(n):
+        x = w * (0.12 + i * 0.05); top = h * (0.86 - (i + 1) * 0.04)
+        o.append(f'<rect x="{f(x)}" y="{f(top)}" width="{f(w * 0.05)}" height="{f(h * 0.86 - top)}" fill="#D8C8A8" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    k = 2 if back else 12
+    o.append(f'<path d="M{f(w * 0.12)} {f(h * 0.86)} L {f(w * (0.12 + k * 0.05))} {f(h * 0.86)} L {f(w * (0.12 + k * 0.05))} {f(h * (0.86 - k * 0.04))} L {f(w * 0.12)} {f(h * 0.86)} Z" fill="#2A2A4A" opacity="0.45"></path>')
+    o.append(f'<path d="M{f(w * 0.8)} {f(h * 0.86)} L {f(w * 0.8)} {f(h * 0.2)}" stroke="#5A3A22" stroke-width="10"></path>')
+    if back: o.append(f'<path d="M{f(w * 0.7)} {f(h * 0.2)} C {f(w * 0.5)} {f(h * 0.12)} {f(w * 0.3)} {f(h * 0.2)} {f(w * 0.24)} {f(h * 0.34)}" stroke="#D7261E" stroke-width="4" fill="none" stroke-dasharray="8 5"></path>'
+                      f'<path d="M{f(w * 0.24)} {f(h * 0.34)} l -4 -16 l 14 8 Z" fill="#D7261E"></path>')
+    return "".join(o)
+
+def treasures(p, w, h, seed):
+    """Hezekiah showing the envoys of Babylon all the house of his precious things."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84)]
+    for i in range(5):
+        x = w * (0.36 + i * 0.12)
+        o.append(f'<rect x="{f(x - 20)}" y="{f(b - 30)}" width="40" height="30" fill="{["#E8B830", "#C8C8D0", "#B5652E", "#E8B830", "#8A5A30"][i]}" stroke="#0D0D0F" stroke-width="2"></rect>')
+    s = fit(b, h * 0.42)
+    o.append(king_fig(p, w * 0.14, b, s, cloth="#1F3A7A", up=[(22, -158), (50, -150), (80, -150)]))
+    for i in range(3): o.append(captain(p, w * (0.66 + i * 0.1), b - 30, s * 0.8, cloth=["#2A4A6A", "#6A2A5A", "#3A5A6A"][i], flip=True, spear=False))
+    return "".join(o)
+
+def plumb_line(w, h):
+    """The line of Samaria and the plummet of the house of Ahab stretched over Jerusalem (a blueprint)."""
+    o = [bp(w, h), title_bar(w, "THE LINE OF SAMARIA · THE PLUMMET OF AHAB")]
+    o.append(J.jericho(w * 0.1, w * 0.9, h * 0.5, h * 0.88, 3, towers=4, houses=True).replace("#B5652E", "#3A4A5A").replace("#C8682E", "#4A5A6A"))
+    o.append(f'<path d="M{f(w * 0.06)} {f(h * 0.2)} L {f(w * 0.94)} {f(h * 0.2)}" stroke="{CY}" stroke-width="2" stroke-dasharray="6 4"></path>')
+    o.append(f'<path d="M{f(w * 0.5)} {f(h * 0.2)} L {f(w * 0.5)} {f(h * 0.44)}" stroke="#FFD23F" stroke-width="2"></path><path d="M{f(w * 0.5 - 10)} {f(h * 0.44)} L {f(w * 0.5 + 10)} {f(h * 0.44)} L {f(w * 0.5)} {f(h * 0.5)} Z" fill="#FFD23F"></path>')
+    return "".join(o)
+
+def garden_uzza(w, h, seed):
+    """The garden of Uzza, a sepulchre among its trees at dusk."""
+    import jos.art as JA
+    return JA.cave(w, h, seed, sealed=True, dusk=True)

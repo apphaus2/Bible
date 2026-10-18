@@ -40,5 +40,7 @@ META = {
      "blurb": "Hoshea and the three years' siege of Samaria; Israel carried away into Assyria, to Halah and the Habor and the cities of the Medes, because they had sinned — the high places, the two calves, the host of heaven; strangers brought into the cities of Samaria, the lions, and every nation making gods of its own."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Hezekiah", "range": "2 Kings 18–19", "bible_chapters": [18, 19],
      "blurb": "Hezekiah who trusted in Jehovah breaks the brazen serpent; Sennacherib at Lachish; Rabshakeh at the conduit of the upper pool — what confidence is this wherein thou trustest?; the men on the wall answer him not a word; the letter spread before Jehovah; the virgin daughter of Zion hath laughed thee to scorn; and that night the camp of the Assyrians."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Shadow on the Dial", "range": "2 Kings 20–21", "bible_chapters": [20, 21],
+     "blurb": "Hezekiah sick unto death turns his face to the wall — I have seen thy tears, fifteen years added; the shadow gone back ten steps on the dial of Ahaz; the envoys of Babylon shown all his treasures — all shall be carried to Babylon; then Manasseh, the line of Samaria and the plummet of the house of Ahab, and Amon."},
   ],
 }
