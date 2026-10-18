@@ -171,6 +171,7 @@ There are two editions:
 | 2 Kings | 9 · Carried Away into Assyria | 17 | title + 7 (pp. 104–110) | 41/41 verses full (the exile and the settlers as maps; 17:17 and 17:31 words only) | `volumes/2kings/` |
 | 2 Kings | 10 · Hezekiah | 18–19 | title + 13 (pp. 111–123) | 74/74 verses full (19:35 over the silent camp, 19:37 over Nineveh; God never drawn) | `volumes/2kings/` |
 | 2 Kings | 11 · The Shadow on the Dial | 20–21 | title + 8 (pp. 124–131) | 47/47 verses full (the dial of Ahaz; the line of Samaria as a blueprint; 21:16 words only) | `volumes/2kings/` |
+| 2 Kings | 12 · Josiah | 22–23 | title + 14 (pp. 132–145) | 57/57 verses full (23:20 and 23:29 words only) | `volumes/2kings/` |
 
 **Genesis through 1 Kings (eleven volumes) are complete.** Next: 2 Kings. 1 Kings is `tools/full/kg1/` (14 chapters, plan and
 restraint notes in `kg1/__init__.py`). There is no digest book from here on, so every drawing is new (`kg1/art.py`): the temple and its

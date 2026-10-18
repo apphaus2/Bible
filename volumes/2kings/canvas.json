@@ -1010,6 +1010,111 @@
    "w": 760,
    "h": 1080,
    "title": "131 · "
+  },
+  "2KI-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Josiah"
+  },
+  "2KI-C12-D-P01-Josiah.dc.html": {
+   "x": 840,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Josiah"
+  },
+  "2KI-C12-D-P02-TheBookOfTheLaw.dc.html": {
+   "x": 1680,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · The Book of the Law"
+  },
+  "2KI-C12-D-P03-TheBookOfTheLaw.dc.html": {
+   "x": 2520,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · The Book of the Law"
+  },
+  "2KI-C12-D-P04-HuldahTheProphetes.dc.html": {
+   "x": 3360,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Huldah the Prophetess"
+  },
+  "2KI-C12-D-P05-HuldahTheProphetes.dc.html": {
+   "x": 0,
+   "y": 45900,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Huldah the Prophetess"
+  },
+  "2KI-C12-D-P06-TheBookOfTheCovena.dc.html": {
+   "x": 840,
+   "y": 45900,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · The Book of the Covenant"
+  },
+  "2KI-C12-D-P07-TheBookOfTheCovena.dc.html": {
+   "x": 1680,
+   "y": 45900,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · The Book of the Covenant"
+  },
+  "2KI-C12-D-P08-TheBookOfTheCovena.dc.html": {
+   "x": 2520,
+   "y": 45900,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · The Book of the Covenant"
+  },
+  "2KI-C12-D-P09-TheBookOfTheCovena.dc.html": {
+   "x": 3360,
+   "y": 45900,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Book of the Covenant"
+  },
+  "2KI-C12-D-P10-TheAltarAtBethEl.dc.html": {
+   "x": 0,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · The Altar at Beth-el"
+  },
+  "2KI-C12-D-P11-SuchAPassover.dc.html": {
+   "x": 840,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Such a Passover"
+  },
+  "2KI-C12-D-P12-SuchAPassover.dc.html": {
+   "x": 1680,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · Such a Passover"
+  },
+  "2KI-C12-D-P13-Megiddo.dc.html": {
+   "x": 2520,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Megiddo"
+  },
+  "2KI-C12-R-P01-.dc.html": {
+   "x": 3360,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · "
   }
  },
  "order": [
@@ -1155,7 +1260,22 @@
   "2KI-C11-R-P01-TheKingsOfJudah.dc.html",
   "2KI-C11-E-P01-Manasseh.dc.html",
   "2KI-C11-E-P02-TheLineOfSamaria.dc.html",
-  "2KI-C11-S-P01-.dc.html"
+  "2KI-C11-S-P01-.dc.html",
+  "2KI-C12-00-Title.dc.html",
+  "2KI-C12-D-P01-Josiah.dc.html",
+  "2KI-C12-D-P02-TheBookOfTheLaw.dc.html",
+  "2KI-C12-D-P03-TheBookOfTheLaw.dc.html",
+  "2KI-C12-D-P04-HuldahTheProphetes.dc.html",
+  "2KI-C12-D-P05-HuldahTheProphetes.dc.html",
+  "2KI-C12-D-P06-TheBookOfTheCovena.dc.html",
+  "2KI-C12-D-P07-TheBookOfTheCovena.dc.html",
+  "2KI-C12-D-P08-TheBookOfTheCovena.dc.html",
+  "2KI-C12-D-P09-TheBookOfTheCovena.dc.html",
+  "2KI-C12-D-P10-TheAltarAtBethEl.dc.html",
+  "2KI-C12-D-P11-SuchAPassover.dc.html",
+  "2KI-C12-D-P12-SuchAPassover.dc.html",
+  "2KI-C12-D-P13-Megiddo.dc.html",
+  "2KI-C12-R-P01-.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1241,6 +1361,13 @@
    "text": "Chapter 11 · The Shadow on the Dial (2 Kings 20–21)",
    "x": 0,
    "y": 41500
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Josiah (2 Kings 22–23)",
+   "x": 0,
+   "y": 44400
   }
  },
  "designSystems": [],

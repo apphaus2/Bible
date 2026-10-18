@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 612 verses — 612 full, 0 partial, 0 omitted.
+**So far:** 669 verses — 669 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Chariot of Fire (2 Kings 1–2)
 
@@ -67,5 +67,11 @@ Every verse is on the page in full.
 ## Chapter 11 · The Shadow on the Dial (2 Kings 20–21)
 
 47 verses: 47 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 12 · Josiah (2 Kings 22–23)
+
+57 verses: 57 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

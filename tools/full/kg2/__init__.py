@@ -42,5 +42,7 @@ META = {
      "blurb": "Hezekiah who trusted in Jehovah breaks the brazen serpent; Sennacherib at Lachish; Rabshakeh at the conduit of the upper pool — what confidence is this wherein thou trustest?; the men on the wall answer him not a word; the letter spread before Jehovah; the virgin daughter of Zion hath laughed thee to scorn; and that night the camp of the Assyrians."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Shadow on the Dial", "range": "2 Kings 20–21", "bible_chapters": [20, 21],
      "blurb": "Hezekiah sick unto death turns his face to the wall — I have seen thy tears, fifteen years added; the shadow gone back ten steps on the dial of Ahaz; the envoys of Babylon shown all his treasures — all shall be carried to Babylon; then Manasseh, the line of Samaria and the plummet of the house of Ahab, and Amon."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Josiah", "range": "2 Kings 22–23", "bible_chapters": [22, 23],
+     "blurb": "Josiah of eight years and the repairing of the house; I have found the book of the law; the king rends his clothes; Huldah the prophetess — because thy heart was tender; the covenant read by the pillar; the house cleansed and the high places defiled; the altar at Beth-el; such a passover; and Megiddo."},
   ],
 }

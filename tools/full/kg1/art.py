@@ -618,7 +618,7 @@ def feast_tents(p, w, h, seed):
     b = h * 0.94
     o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#F3D8A0"), J.city_hill(w * 0.5, h * 0.44, w * 0.5, h * 0.2, seed), ground(w, h, h * 0.46, "#C8A06A", dy=0),
          N.camp(20, -10, w + 10, h * 0.5, h * 0.74, seed)]
-    s = fit(b, h * 0.3)
+    s = min(fit(b, h * 0.3), h / 600)
     o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.98, h * 0.8, b, 12, s * 0.7, s))
     return "".join(o)
 

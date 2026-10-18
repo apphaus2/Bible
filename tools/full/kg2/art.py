@@ -774,3 +774,60 @@ def garden_uzza(w, h, seed):
     """The garden of Uzza, a sepulchre among its trees at dusk."""
     import jos.art as JA
     return JA.cave(w, h, seed, sealed=True, dusk=True)
+
+# ---- 2 Kings 22–23 ------------------------------------------------------------------------------------------------------
+def book_found(p, w, h, seed, reading=False):
+    """Hilkiah the high priest holding up the book of the law found in the house of Jehovah (reading=True: Shaphan reading it
+    before the king, who rends his clothes)."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1A"></rect>', V.rays(w * 0.5, h * 0.4, 30, 20, max(w, h), color="#FFD23F", op=0.15),
+         ground(w, h, b, "#2A1A10", dy=0)]
+    s = fit(b, h * 0.42)
+    if reading:
+        o.append(king_fig(p, w * 0.24, b, s, cloth="#1F3A7A", up=[(-22, -158), (-40, -120), (-50, -80)]))
+        o.append(man(p, w * 0.66, b, s * 0.95, "#5A4A3A", flip=True, up=[(22, -158), (40, -150), (56, -140)]) + S3.letter(w * 0.66 - 70 * s, b - 150 * s, s * 0.6))
+    else:
+        o.append(priest(p, w * 0.5, b, s, up=[(-22, -158), (-30, -200), (-20, -236)]) + S3.letter(w * 0.5 - 20 * s, b - 250 * s, s * 0.7))
+    return "".join(o)
+
+def huldah(p, w, h, seed):
+    """Huldah the prophetess in her house in the second quarter of Jerusalem, the king's servants before her."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#C8A878"></rect>', ground(w, h, b, "#8A6A4A", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(mk.person(p, round(w * 0.22), round(b), round(s, 3), body="#3A1E14", cloth="#2A4A5A", woman=True, hair="#3A3430", sw=3))
+    o.append(priest(p, w * 0.54, b, s * 0.95, flip=True))
+    for i in range(3): o.append(man(p, w * (0.66 + i * 0.1), b, s * 0.9, ["#5A4A3A", "#3A4A6A", "#6A5A3A"][i], flip=True))
+    return "".join(o)
+
+def covenant_pillar(p, w, h, seed):
+    """The king standing by the pillar before the house of Jehovah reading the book of the covenant to all the people."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.62, "#C8B88A", dy=0), temple_front(w * 0.5, h * 0.62, w * 0.56, seed)]
+    s = fit(b, h * 0.36) * 0.5
+    o.append(king_fig(p, w * 0.5, h * 0.8, fit(h * 0.8, h * 0.46), cloth="#1F3A7A", up=[(22, -158), (40, -150), (56, -150)]))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.36, h * 0.78, b, 8, s * 0.7, s))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.64, w * 0.98, h * 0.78, b, 8, s * 0.7, s, flip=True))
+    return "".join(o)
+
+def kidron_fire(w, h, seed):
+    """The vessels of Baal and the Asherah burned without Jerusalem at the brook Kidron, the ashes carried away."""
+    o = [sky(w, h, "#3A2A3A", "#C8603A"), J.jericho(w * 0.4, w + 10, h * 0.2, h * 0.5, seed, towers=3, houses=True), ground(w, h, h * 0.5, "#5A4A3A", dy=0),
+         f'<path d="M-10 {f(h * 0.8)} C {f(w * 0.3)} {f(h * 0.76)} {f(w * 0.6)} {f(h * 0.84)} {f(w + 10)} {f(h * 0.8)}" stroke="#2C7DA8" stroke-width="12" fill="none"></path>',
+         E.blaze(w * 0.3, h * 0.72, w * 0.2, h * 0.3, seed, n=7), f'<path d="M{f(w * 0.24)} {f(h * 0.7)} L {f(w * 0.38)} {f(h * 0.62)}" stroke="#5A3A22" stroke-width="12"></path>']
+    return "".join(o)
+
+def bethel_tombs(p, w, h, seed):
+    """The altar at Beth-el broken down and the sepulchres in the mount; the monument of the man of God left standing."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A3A5A", "#E8A06A"), f'<path d="M-10 {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.3)} {f(w * 0.7)} {f(h * 0.3)} {f(w + 10)} {f(h * 0.46)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(4):
+        x = w * (0.14 + i * 0.2); y = h * (0.5 - (i % 2) * 0.04)
+        o.append(f'<path d="M{f(x - 22)} {f(y)} C {f(x - 22)} {f(y - 30)} {f(x + 22)} {f(y - 30)} {f(x + 22)} {f(y)} Z" fill="#1A1214" stroke="#0D0D0F" stroke-width="2"></path>')
+    o.append(f'<rect x="{f(w * 0.76)}" y="{f(h * 0.32)}" width="{f(w * 0.05)}" height="{f(h * 0.18)}" fill="#B8A890" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(S4.stone_heap(w * 0.4, h * 0.9, w * 0.4, h * 0.18, seed) + E.blaze(w * 0.4, h * 0.76, w * 0.1, h * 0.14, seed, n=4))
+    o.append(king_fig(p, w * 0.86, h * 0.9, fit(h * 0.9, h * 0.6) * 0.8, cloth="#1F3A7A", flip=True))
+    return "".join(o)
+
+def megiddo(p, w, h, seed):
+    """Megiddo: the chariot carrying the king back to Jerusalem (23:29–30 told in words only)."""
+    return ramoth(p, w, h, seed, dusk=True)
