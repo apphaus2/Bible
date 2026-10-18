@@ -136,6 +136,16 @@
    "prefixes": [
     "DEU-C13-"
    ]
+  },
+  {
+   "dir": "chapter-14",
+   "num": "14",
+   "name": "The Song of Moses",
+   "range": "Deuteronomy 32",
+   "blurb": "Give ear, ye heavens, and I will speak: the Rock, his work is perfect; as an eagle that stirreth up her nest; but Jeshurun waxed fat, and kicked; vengeance is mine; see now that I, even I, am he — and Moses bidden to go up mount Nebo and see the land, and die there.",
+   "prefixes": [
+    "DEU-C14-"
+   ]
   }
  ]
 }

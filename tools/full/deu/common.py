@@ -124,3 +124,25 @@ def shade(svg, h=440):
     return (svg + f'<defs><linearGradient id="shd{h}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A1028" stop-opacity="0.95"></stop>'
             f'<stop offset="0.7" stop-color="#1A1028" stop-opacity="0.7"></stop><stop offset="1" stop-color="#1A1028" stop-opacity="0"></stop></linearGradient></defs>'
             f'<rect x="0" y="0" width="760" height="{h}" fill="url(#shd{h})"></rect>')
+
+def sing(c, a, b, arts, budget=300, code="DEUT", **k):
+    """A song (poetry), verses c:a–b, as song lines over drawings: each panel about `budget` characters, the arts
+    (bg, f(w, h) -> svg) cycling; every third panel is the singer's face instead."""
+    out, cur, n = [], [], 0
+    for x in range(a, b + 1):
+        t = v(f"{c}:{x}")
+        if cur and n + len(t) > budget:
+            out.append(cur); cur, n = [], 0
+        cur.append(f"{c}:{x}"); n += len(t)
+    if cur: out.append(cur)
+    segs = []
+    for i, g in enumerate(out):
+        ref = f"{code} {g[0]}" + (f"–{g[-1].split(':')[1]}" if g[-1] != g[0] else "")
+        lines = [("song", v(r)) for r in g]
+        if i % 3 == 2:
+            segs.append(seg(lines, ref, tok=K.MOSES_FIRE, bg=GOLDEN, **k))
+        else:
+            bg, art = arts[i % len(arts)]
+            segs.append(seg(lines, ref, tok=None, bg=bg, art=art, **k))
+        k.pop("head", None); k.pop("stamp", None)
+    return segs

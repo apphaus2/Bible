@@ -1052,6 +1052,83 @@
    "w": 760,
    "h": 1080,
    "title": "135 · By the Side of the Ark"
+  },
+  "DEU-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 48100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · The Song of Moses"
+  },
+  "DEU-C14-D-P01-GiveEarYeHeavens.dc.html": {
+   "x": 840,
+   "y": 48100,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Give Ear, Ye Heavens"
+  },
+  "DEU-C14-D-P02-GiveEarYeHeavens.dc.html": {
+   "x": 1680,
+   "y": 48100,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Give Ear, Ye Heavens"
+  },
+  "DEU-C14-D-P03-ButJeshurunWaxedFa.dc.html": {
+   "x": 2520,
+   "y": 48100,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · But Jeshurun Waxed Fat"
+  },
+  "DEU-C14-D-P04-ButJeshurunWaxedFa.dc.html": {
+   "x": 3360,
+   "y": 48100,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · But Jeshurun Waxed Fat"
+  },
+  "DEU-C14-D-P05-ButJeshurunWaxedFa.dc.html": {
+   "x": 0,
+   "y": 49300,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · But Jeshurun Waxed Fat"
+  },
+  "DEU-C14-D-P06-SeeNowThatIEvenIAm.dc.html": {
+   "x": 840,
+   "y": 49300,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · See Now That I, Even I, Am He"
+  },
+  "DEU-C14-D-P07-SeeNowThatIEvenIAm.dc.html": {
+   "x": 1680,
+   "y": 49300,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · See Now That I, Even I, Am He"
+  },
+  "DEU-C14-D-P08-SeeNowThatIEvenIAm.dc.html": {
+   "x": 2520,
+   "y": 49300,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · See Now That I, Even I, Am He"
+  },
+  "DEU-C14-D-P09-ItIsYourLife.dc.html": {
+   "x": 3360,
+   "y": 49300,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · It Is Your Life"
+  },
+  "DEU-C14-D-P10-ItIsYourLife.dc.html": {
+   "x": 0,
+   "y": 50500,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · It Is Your Life"
   }
  },
  "order": [
@@ -1203,7 +1280,18 @@
   "DEU-C13-D-P10-BeStrongAndOfGoodC.dc.html",
   "DEU-C13-D-P11-ThyDaysApproachTha.dc.html",
   "DEU-C13-D-P12-WriteYeThisSong.dc.html",
-  "DEU-C13-D-P13-ByTheSideOfTheArk.dc.html"
+  "DEU-C13-D-P13-ByTheSideOfTheArk.dc.html",
+  "DEU-C14-00-Title.dc.html",
+  "DEU-C14-D-P01-GiveEarYeHeavens.dc.html",
+  "DEU-C14-D-P02-GiveEarYeHeavens.dc.html",
+  "DEU-C14-D-P03-ButJeshurunWaxedFa.dc.html",
+  "DEU-C14-D-P04-ButJeshurunWaxedFa.dc.html",
+  "DEU-C14-D-P05-ButJeshurunWaxedFa.dc.html",
+  "DEU-C14-D-P06-SeeNowThatIEvenIAm.dc.html",
+  "DEU-C14-D-P07-SeeNowThatIEvenIAm.dc.html",
+  "DEU-C14-D-P08-SeeNowThatIEvenIAm.dc.html",
+  "DEU-C14-D-P09-ItIsYourLife.dc.html",
+  "DEU-C14-D-P10-ItIsYourLife.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1303,6 +1391,13 @@
    "text": "Chapter 13 · Choose Life (Deuteronomy 29–31)",
    "x": 0,
    "y": 43700
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · The Song of Moses (Deuteronomy 32)",
+   "x": 0,
+   "y": 47800
   }
  },
  "designSystems": [],

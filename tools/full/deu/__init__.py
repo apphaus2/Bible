@@ -46,5 +46,7 @@ META = {
      "blurb": "Great stones plastered and written with all the words of this law, and an altar of unhewn stones on mount Ebal; six tribes on Gerizim to bless and six on Ebal for the curse, and all the people shall say, Amen; blessed shalt thou be in the city and in the field — and if thou wilt not hearken, all these curses."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Choose Life", "range": "Deuteronomy 29–31", "bible_chapters": [29, 30, 31],
      "blurb": "The covenant in the land of Moab; the secret things belong unto Jehovah; I have set before thee life and death, the blessing and the curse: therefore choose life; Moses a hundred and twenty years old, and Joshua charged to be strong and of good courage; the law written in a book and laid by the side of the ark."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "The Song of Moses", "range": "Deuteronomy 32", "bible_chapters": [32],
+     "blurb": "Give ear, ye heavens, and I will speak: the Rock, his work is perfect; as an eagle that stirreth up her nest; but Jeshurun waxed fat, and kicked; vengeance is mine; see now that I, even I, am he — and Moses bidden to go up mount Nebo and see the land, and die there."},
   ],
 }
