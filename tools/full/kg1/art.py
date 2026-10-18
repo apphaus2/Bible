@@ -804,3 +804,79 @@ def ten_two(w, h):
         o.append(node(x, y, n, c, r=6, dy=-12, size=9))
     o.append(label(w * 0.04, h * 0.84, "RED · TEN TRIBES TO JEROBOAM", "#D7261E", 9, "start") + label(w * 0.96, h * 0.84, "GOLD · ONE TRIBE FOR DAVID'S SAKE", "#FFD23F", 9, "end"))
     return "".join(o)
+
+# ---- 1 Kings 12–13 ------------------------------------------------------------------------------------------------------
+JERO_C, REHO_C = "#2E6B3A", "#1F3A7A"
+def counsel(p, w, h, seed, young=False):
+    """Rehoboam on his throne taking counsel: the old men (white beards) or the young men grown up with him."""
+    b = h * 0.92; k = min(1.2, h / 300)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.2, b, k)]
+    s = fit(b, h * 0.4)
+    o.append(king_fig(p, w * 0.2, b - 40 * k, s * 0.86, cloth=REHO_C))
+    for i in range(4):
+        c = ["#8A6A4A", "#5A5A6A", "#6A4A3A", "#4A5A4A"][i]
+        if young: o.append(mk.person(p, round(w * (0.5 + i * 0.12)), round(b), round(s * 0.86, 3), body="#5A2A16", cloth=["#B5121B", "#E8B830", "#1F5FAD", "#6A1A5A"][i], kind="Tunic", sw=3, flip=True))
+        else: o.append(prophet_fig(p, w * (0.5 + i * 0.12), b, s * 0.86, cloth=c, flip=True))
+    return "".join(o)
+
+def to_tents(p, w, h, seed):
+    """To your tents, O Israel: the people turning away to their tents, the king's chariot fleeing to Jerusalem."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), J.city_hill(w * 0.12, h * 0.5, w * 0.3, h * 0.2, seed), ground(w, h, h * 0.52, "#A89A6A", dy=0),
+         N.camp(10, w * 0.4, w + 10, h * 0.56, h * 0.7, seed)]
+    s = fit(b, h * 0.3)
+    o.append(crowd_at(p, w, h, seed, w * 0.36, w * 0.98, h * 0.74, b, 10, s * 0.7, s))
+    o.append(E3.chariot(w * 0.18, b, min(0.9, h / 360), flip=True, driver=REHO_C))
+    return "".join(o)
+
+def calves(p, w, h, seed, people=True):
+    """The two calves of gold: one in Beth-el and the other in Dan, each on its high place with an altar; the people bowing."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A3A5A", "#E8A06A"), hills(w, h, h * 0.5, seed, color="#6A5A4A", amp=14), ground(w, h, h * 0.62, "#8A7A5A", dy=0)]
+    for i, (x, nm) in enumerate(((0.28, "BETH-EL"), (0.74, "DAN"))):
+        o.append(V.calf(w * x, h * 0.66, min(0.9, h / 360), uid=f"{p}c{i}") + label(w * x, h * 0.72, nm, "#FFD23F", 10))
+        o.append(horned_altar(w * x + w * 0.12, h * 0.7, min(0.4, h / 700), fire=True, seed=seed + i))
+    if people:
+        for i in range(6):
+            o.append(N.prostrate(w * (0.08 + i * 0.16), b, fit(b, h * 0.3) * 0.6, color=WAR[i % 4], skin="#9A6A4A"))
+    return "".join(o)
+
+def bethel_altar(p, w, h, seed, rent=False, hand=False):
+    """The altar at Beth-el: Jeroboam standing by it to burn incense, the man of God out of Judah crying against it; rent=True:
+    the altar rent and its ashes poured out; hand=True: the king's hand put forth and dried up."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A3A5A", "#E8A06A"), V.calf(w * 0.86, h * 0.6, min(0.6, h / 500), uid=p + "c"), ground(w, h, h * 0.62, "#8A7A5A", dy=0)]
+    if rent:
+        o.append(f'<g transform="translate({f(w * 0.5)} {f(b)}) scale({f(min(1.3, h / 260))})"><path d="M-60 0 L -60 -90 L -6 -96 L -14 -50 L 0 0 Z" fill="#B07A3A" stroke="#0D0D0F" stroke-width="2.4" transform="rotate(-6)"></path>'
+                 '<path d="M8 0 L -2 -48 L 8 -98 L 66 -90 L 62 0 Z" fill="#B07A3A" stroke="#0D0D0F" stroke-width="2.4" transform="rotate(6)"></path>'
+                 '<path d="M-90 0 C -70 -20 -40 -16 -20 -4 Z M20 -4 C 40 -18 70 -20 96 0 Z" fill="#6A6460"></path></g>')
+    else:
+        o.append(horned_altar(w * 0.5, b, min(1.2, h / 280), fire=True, seed=seed))
+    s = fit(b, h * 0.42)
+    o.append(king_fig(p, w * 0.24, b, s, cloth=JERO_C, up=[(22, -158), (60, -150), (100, -150)] if hand else None))
+    o.append(prophet_fig(p, w * 0.8, b, s, cloth="#4A3A2A", flip=True, up=[(22, -158), (40, -200), (40, -230)] if not hand else None))
+    return "".join(o)
+
+def oak_sitting(p, w, h, seed):
+    """The man of God sitting under an oak by the way; the old prophet riding up on his ass."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.6, "#B89A6A", dy=0),
+         S4.great_oak(w * 0.24, b, min(1.0, h / 360), seed)]
+    s = fit(b, h * 0.4)
+    o.append(E.kneel(w * 0.3, b, s * 0.8, color="#4A3A2A", skin="#B98A6E"))
+    o.append(N.mount(w * 0.74, b, min(1.0, h / 320), flip=True, rider_cloth="#6A645E", p=p + "m"))
+    return "".join(o)
+
+def lion_way(p, w, h, seed, body=True):
+    """The way: the ass standing, and the lion standing still beside it (13:24–28 told in words; no body drawn)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8B880"), hills(w, h, h * 0.5, seed, color="#8A7A5A", amp=12), ground(w, h, h * 0.58, "#A89A6A", dy=0),
+         f'<path d="M{f(w * 0.2)} {f(h + 10)} C {f(w * 0.36)} {f(h * 0.78)} {f(w * 0.5)} {f(h * 0.64)} {f(w * 0.6)} {f(h * 0.58)}" stroke="#C8B890" stroke-width="{f(w * 0.08)}" fill="none"></path>']
+    k = min(1.0, h / 340)
+    o.append(N.ass(w * 0.36, b, k * 0.9) + J2.lion(w * 0.66, b, k * 0.8, flip=True, roar=False))
+    return "".join(o)
+
+def grave_bethel(w, h, seed):
+    """The old prophet's own grave at Beth-el, a sealed tomb in the rock at evening."""
+    import jos.art as JA
+    return JA.cave(w, h, seed, sealed=True, dusk=True)

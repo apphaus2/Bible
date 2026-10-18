@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 434 verses — 434 full, 0 partial, 0 omitted.
+**So far:** 501 verses — 501 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Long Live King Solomon (1 Kings 1)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · His Heart Turned Away (1 Kings 11)
 
 43 verses: 43 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · To Your Tents, O Israel (1 Kings 12–13)
+
+67 verses: 67 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

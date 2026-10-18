@@ -639,6 +639,111 @@
    "w": 760,
    "h": 1080,
    "title": "81 · Twelve Pieces"
+  },
+  "1KI-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · To Your Tents, O Israel"
+  },
+  "1KI-C09-D-P01-RehoboamAtShechem.dc.html": {
+   "x": 840,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Rehoboam at Shechem"
+  },
+  "1KI-C09-D-P02-TheCounselOfTheOld.dc.html": {
+   "x": 1680,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The Counsel of the Old Men"
+  },
+  "1KI-C09-D-P03-WhipsAndScorpions.dc.html": {
+   "x": 2520,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Whips and Scorpions"
+  },
+  "1KI-C09-D-P04-ToYourTentsOIsrael.dc.html": {
+   "x": 3360,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · To Your Tents, O Israel"
+  },
+  "1KI-C09-D-P05-ToYourTentsOIsrael.dc.html": {
+   "x": 0,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · To Your Tents, O Israel"
+  },
+  "1KI-C09-D-P06-TwoCalvesOfGold.dc.html": {
+   "x": 840,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Two Calves of Gold"
+  },
+  "1KI-C09-D-P07-TwoCalvesOfGold.dc.html": {
+   "x": 1680,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Two Calves of Gold"
+  },
+  "1KI-C09-D-P08-OAltarAltar.dc.html": {
+   "x": 2520,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · O Altar, Altar"
+  },
+  "1KI-C09-D-P09-OAltarAltar.dc.html": {
+   "x": 3360,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · O Altar, Altar"
+  },
+  "1KI-C09-D-P10-TheOldProphet.dc.html": {
+   "x": 0,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Old Prophet"
+  },
+  "1KI-C09-D-P11-TheOldProphet.dc.html": {
+   "x": 840,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Old Prophet"
+  },
+  "1KI-C09-D-P12-TheOldProphet.dc.html": {
+   "x": 1680,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Old Prophet"
+  },
+  "1KI-C09-D-P13-ALionInTheWay.dc.html": {
+   "x": 2520,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · A Lion in the Way"
+  },
+  "1KI-C09-D-P14-ALionInTheWay.dc.html": {
+   "x": 3360,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · A Lion in the Way"
   }
  },
  "order": [
@@ -731,7 +836,22 @@
   "1KI-C08-D-P04-Rezon.dc.html",
   "1KI-C08-D-P05-TwelvePieces.dc.html",
   "1KI-C08-D-P06-TwelvePieces.dc.html",
-  "1KI-C08-D-P07-TwelvePieces.dc.html"
+  "1KI-C08-D-P07-TwelvePieces.dc.html",
+  "1KI-C09-00-Title.dc.html",
+  "1KI-C09-D-P01-RehoboamAtShechem.dc.html",
+  "1KI-C09-D-P02-TheCounselOfTheOld.dc.html",
+  "1KI-C09-D-P03-WhipsAndScorpions.dc.html",
+  "1KI-C09-D-P04-ToYourTentsOIsrael.dc.html",
+  "1KI-C09-D-P05-ToYourTentsOIsrael.dc.html",
+  "1KI-C09-D-P06-TwoCalvesOfGold.dc.html",
+  "1KI-C09-D-P07-TwoCalvesOfGold.dc.html",
+  "1KI-C09-D-P08-OAltarAltar.dc.html",
+  "1KI-C09-D-P09-OAltarAltar.dc.html",
+  "1KI-C09-D-P10-TheOldProphet.dc.html",
+  "1KI-C09-D-P11-TheOldProphet.dc.html",
+  "1KI-C09-D-P12-TheOldProphet.dc.html",
+  "1KI-C09-D-P13-ALionInTheWay.dc.html",
+  "1KI-C09-D-P14-ALionInTheWay.dc.html"
  ],
  "notes": {
   "Main": {
@@ -796,6 +916,13 @@
    "text": "Chapter 8 · His Heart Turned Away (1 Kings 11)",
    "x": 0,
    "y": 28000
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · To Your Tents, O Israel (1 Kings 12–13)",
+   "x": 0,
+   "y": 30900
   }
  },
  "designSystems": [],

@@ -36,5 +36,7 @@ META = {
      "blurb": "Jehovah appears to Solomon a second time — I have hallowed this house; the land of Cabul; the cities of the levy; the navy at Ezion-geber and the gold of Ophir; the queen of Sheba with her very great train and her hard questions — behold, the half was not told me; the throne of ivory with its twelve lions; and silver in Jerusalem as stones."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "His Heart Turned Away", "range": "1 Kings 11", "bible_chapters": [11],
      "blurb": "Solomon's foreign wives turn away his heart, and the high places of Chemosh and Molech rise on the mount before Jerusalem; I will surely rend the kingdom from thee; the adversaries Hadad and Rezon; the prophet Ahijah's new garment rent in twelve pieces — take thee ten pieces; Jeroboam fled into Egypt; and Solomon slept with his fathers."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "To Your Tents, O Israel", "range": "1 Kings 12–13", "bible_chapters": [12, 13],
+     "blurb": "Rehoboam at Shechem forsakes the counsel of the old men — my father chastised you with whips, but I will chastise you with scorpions; what portion have we in David? to your tents, O Israel; Jeroboam's calves of gold in Beth-el and Dan; the man of God out of Judah crying against the altar; the old prophet's lie, and the lion in the way."},
   ],
 }
