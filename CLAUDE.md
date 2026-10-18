@@ -74,6 +74,7 @@ There are two editions:
 | Numbers | 6 · Graves of Lust | 11–12 | title + 16 (pp. 67–82) | 51/51 verses full (11:33 as the graves only) | `volumes/numbers/` |
 | Numbers | 7 · The Twelve Spies | 13–14 | title + 17 (pp. 83–99) | 78/78 verses full (lifts eleven digest panels; 14:37, 14:45 as landscape) | `volumes/numbers/` |
 | Numbers | 8 · Korah | 15–17 | title + 19 (pp. 100–118) | 104/104 verses full (16:31–35 as tents and censers; 15:36 as the heap) | `volumes/numbers/` |
+| Numbers | 9 · The Water for Impurity | 18–19 | title + 8 (pp. 119–126) | 54/54 verses full (all law cells) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·

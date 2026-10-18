@@ -33,5 +33,7 @@ META = {
      "blurb": "Twelve men sent to spy out the land of Canaan; the cluster of Eshcol borne upon a staff between two; the evil report, the children of Anak, and we were as grasshoppers; Joshua and Caleb: an exceeding good land; Moses' plea, I have pardoned; forty years in the wilderness; and the defeat at Hormah."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Korah", "range": "Numbers 15–17", "bible_chapters": [15, 16, 17],
      "blurb": "The drink-offerings and the first of the dough; the man gathering sticks upon the sabbath; a cord of blue upon the fringes; Korah, Dathan and Abiram, and the two hundred and fifty with their censers; the ground that clave asunder; Aaron standing between the dead and the living; and the rod of Aaron that budded and bare ripe almonds."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Water for Impurity", "range": "Numbers 18–19", "bible_chapters": [18, 19],
+     "blurb": "The charge of the priests and the Levites; the heave-offerings, the first-fruits and the firstlings, a covenant of salt for ever; I am thy portion and thine inheritance; the tithe and the tithe of the tithe; and the red heifer without spot, burned without the camp, whose ashes in running water are a water for impurity."},
   ],
 }

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 653 verses — 653 full, 0 partial, 0 omitted.
+**So far:** 707 verses — 707 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Numbering (Numbers 1–2)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · Korah (Numbers 15–17)
 
 104 verses: 104 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · The Water for Impurity (Numbers 18–19)
+
+54 verses: 54 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
