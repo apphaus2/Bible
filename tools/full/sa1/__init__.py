@@ -31,5 +31,7 @@ META = {
      "blurb": "Kish's asses lost, and Saul, higher than any of the people, sent to seek them; the seer at the high place and the thigh reserved for him; the vial of oil; the band of prophets — is Saul also among the prophets?; the lot at Mizpah, Saul hid among the baggage, and long live the king."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "To Obey Is Better", "range": "1 Samuel 11–13", "bible_chapters": [11, 12, 13],
      "blurb": "Nahash at Jabesh-gilead and Saul following the oxen out of the field; the kingdom renewed at Gilgal; Samuel's farewell — whose ox have I taken? — and thunder in wheat harvest; the Philistines as the sand at Michmash, Saul's burnt-offering, and a man after his own heart; no smith in all the land."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Jonathan at Michmash", "range": "1 Samuel 14", "bible_chapters": [14],
+     "blurb": "Jonathan and his armorbearer climb between the crags Bozez and Seneh — there is no restraint to Jehovah to save by many or by few; the earth quaked; Saul's rash oath, the honey in the forest, the lot that took Jonathan, and the people who rescued him."},
   ],
 }

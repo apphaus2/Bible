@@ -172,3 +172,51 @@ def no_smith(w, h, seed):
         o.append(f'<path d="M{f(x - 30)} {f(y)} L {f(x + 40)} {f(y - 30)}" stroke="#6A4A2A" stroke-width="7" stroke-linecap="round"></path>'
                  f'<path transform="translate({f(x + 30)} {f(y - 36)})" d="{d}" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>')
     return "".join(o)
+
+# ---- 1 Samuel 14 --------------------------------------------------------------------------------------------------------
+JONATHAN_C = "#2A5A9A"
+def jonathan_fig(p, x, y, s, flip=False, up=None):
+    """Jonathan at a distance: blue headcloth and tunic."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=JONATHAN_C, kind="Tunic", sw=3, flip=flip, up=up, extra=A.headcloth(JONATHAN_C))
+
+def crags(p, w, h, seed, climbing=False):
+    """The pass of Michmash between the crags Bozez and Seneh, the Philistine garrison on the height."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', sun(w * 0.86, h * 0.14, 16, op=0.3),
+         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.2)} L {f(w * 0.18)} {f(h * 0.12)} L {f(w * 0.36)} {f(h * 0.5)} L {f(w * 0.4)} {f(h + 10)} Z" fill="#9A7A5A" stroke="#0D0D0F" stroke-width="2.6"></path>',
+         f'<path d="M{f(w * 0.56)} {f(h + 10)} L {f(w * 0.6)} {f(h * 0.4)} L {f(w * 0.78)} {f(h * 0.1)} L {f(w + 10)} {f(h * 0.16)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.6"></path>',
+         label(w * 0.14, h * 0.9, "BOZEZ", "#F3EFE6", 10) + label(w * 0.86, h * 0.9, "SENEH", "#F3EFE6", 10)]
+    for i in range(4):
+        x = w * (0.72 + i * 0.06); o.append(mk.person(p, round(x), round(h * 0.16), round(fit(h * 0.16, h * 0.04), 3), body="#12090A", cloth="#1F5FAD", kind="Tunic", sw=2, flip=True, extra=E4.SPEAR))
+    if climbing:
+        s = fit(h * 0.5, h * 0.3)
+        o.append(jonathan_fig(p, w * 0.6, h * 0.46, s, up=[(-22, -158), (-6, -196), (8, -228)]) + man(p, w * 0.56, h * 0.62, s * 0.9, "#6A5A3A", up=[(-22, -158), (-6, -196), (8, -228)]))
+    else:
+        s = fit(h * 0.92, h * 0.5)
+        o.append(jonathan_fig(p, w * 0.46, h * 0.92, s) + man(p, w * 0.52, h * 0.92, s * 0.92, "#6A5A3A", extra=E4.SPEAR))
+    return "".join(o)
+
+def honey_rod(w, h, seed):
+    """The honey dropped in the forest; the end of Jonathan's rod dipped in the honeycomb."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2E4A2A"></rect>']
+    for i in range(9):
+        x = w * (0.04 + i * 0.12)
+        o.append(f'<rect x="{f(x - 10)}" y="-10" width="20" height="{f(h * 0.86)}" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<circle cx="{f(x)}" cy="{f(h * 0.08)}" r="{f(w * 0.08)}" fill="#3F7A3A" stroke="#0D0D0F" stroke-width="2"></circle>')
+    o.append(ground(w, h, h * 0.84, "#4A3A22", dy=0))
+    cx, cy = w * 0.5, h * 0.78
+    o.append(f'<path d="M{f(cx - w * 0.1)} {f(cy)} C {f(cx - w * 0.1)} {f(cy - h * 0.14)} {f(cx + w * 0.1)} {f(cy - h * 0.14)} {f(cx + w * 0.1)} {f(cy)} Z" fill="#E8A317" stroke="#8A5A10" stroke-width="2"></path>')
+    for k in range(10):
+        o.append(f'<path d="M{f(cx - w * 0.08 + k * w * 0.018)} {f(cy)} L {f(cx - w * 0.08 + k * w * 0.018)} {f(cy + r.uniform(8, 26))}" stroke="#E8A317" stroke-width="3" stroke-linecap="round"></path>')
+    o.append(f'<path d="M{f(w * 0.96)} {f(h * 0.3)} L {f(cx + w * 0.02)} {f(cy - h * 0.08)}" stroke="#6A4A2A" stroke-width="7" stroke-linecap="round"></path>')
+    return "".join(o)
+
+SAUL_WARS = [("MOAB", 0.62, 0.7), ("AMMON", 0.74, 0.42), ("EDOM", 0.5, 0.94), ("ZOBAH", 0.72, 0.08), ("THE PHILISTINES", 0.12, 0.6), ("AMALEK", 0.2, 0.92)]
+def saul_wars(w, h):
+    """Saul fought against all his enemies on every side: Moab, Ammon, Edom, Zobah, the Philistines, Amalek."""
+    o = [grid_bg(w, h)]
+    cx, cy = w * 0.42, h * 0.46
+    for nm, x, y in SAUL_WARS:
+        o.append(route([(cx, cy), (w * x, h * y)], color="#D7261E", sw=1.8) + node(w * x, h * y, nm, "#FFD23F", r=5, dy=-10 if y > 0.1 else 18, size=9))
+    o.append(node(cx, cy, "GIBEAH", "#8FD0E2", r=6, dy=18, size=9))
+    return "".join(o)

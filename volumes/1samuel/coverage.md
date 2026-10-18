@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 296 verses — 296 full, 0 partial, 0 omitted.
+**So far:** 348 verses — 348 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Hannah (1 Samuel 1–2)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · To Obey Is Better (1 Samuel 11–13)
 
 63 verses: 63 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · Jonathan at Michmash (1 Samuel 14)
+
+52 verses: 52 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

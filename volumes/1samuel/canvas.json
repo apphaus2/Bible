@@ -513,6 +513,104 @@
    "w": 760,
    "h": 1080,
    "title": "66 · No Smith in Israel"
+  },
+  "1SA-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Jonathan at Michmash"
+  },
+  "1SA-C06-D-P01-ByManyOrByFew.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · By Many or by Few"
+  },
+  "1SA-C06-D-P02-ByManyOrByFew.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · By Many or by Few"
+  },
+  "1SA-C06-D-P03-ComeUpUntoUs.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Come Up unto Us"
+  },
+  "1SA-C06-D-P04-SoJehovahSavedIsra.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · So Jehovah Saved Israel"
+  },
+  "1SA-C06-D-P05-SoJehovahSavedIsra.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · So Jehovah Saved Israel"
+  },
+  "1SA-C06-D-P06-TheHoneyDropped.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · The Honey Dropped"
+  },
+  "1SA-C06-D-P07-TheHoneyDropped.dc.html": {
+   "x": 1680,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Honey Dropped"
+  },
+  "1SA-C06-D-P08-YeHaveDealtTreache.dc.html": {
+   "x": 2520,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Ye Have Dealt Treacherously"
+  },
+  "1SA-C06-D-P09-JonathanWasTaken.dc.html": {
+   "x": 3360,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Jonathan Was Taken"
+  },
+  "1SA-C06-D-P10-JonathanWasTaken.dc.html": {
+   "x": 0,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Jonathan Was Taken"
+  },
+  "1SA-C06-D-P11-JonathanWasTaken.dc.html": {
+   "x": 840,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Jonathan Was Taken"
+  },
+  "1SA-C06-D-P12-TheHouseOfSaul.dc.html": {
+   "x": 1680,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · The House of Saul"
+  },
+  "1SA-C06-R-P01-TheHouseOfSaul.dc.html": {
+   "x": 2520,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The House of Saul"
   }
  },
  "order": [
@@ -587,7 +685,21 @@
   "1SA-C05-D-P10-ThouHastDoneFoolis.dc.html",
   "1SA-C05-D-P11-ThouHastDoneFoolis.dc.html",
   "1SA-C05-D-P12-ThouHastDoneFoolis.dc.html",
-  "1SA-C05-D-P13-NoSmithInIsrael.dc.html"
+  "1SA-C05-D-P13-NoSmithInIsrael.dc.html",
+  "1SA-C06-00-Title.dc.html",
+  "1SA-C06-D-P01-ByManyOrByFew.dc.html",
+  "1SA-C06-D-P02-ByManyOrByFew.dc.html",
+  "1SA-C06-D-P03-ComeUpUntoUs.dc.html",
+  "1SA-C06-D-P04-SoJehovahSavedIsra.dc.html",
+  "1SA-C06-D-P05-SoJehovahSavedIsra.dc.html",
+  "1SA-C06-D-P06-TheHoneyDropped.dc.html",
+  "1SA-C06-D-P07-TheHoneyDropped.dc.html",
+  "1SA-C06-D-P08-YeHaveDealtTreache.dc.html",
+  "1SA-C06-D-P09-JonathanWasTaken.dc.html",
+  "1SA-C06-D-P10-JonathanWasTaken.dc.html",
+  "1SA-C06-D-P11-JonathanWasTaken.dc.html",
+  "1SA-C06-D-P12-TheHouseOfSaul.dc.html",
+  "1SA-C06-R-P01-TheHouseOfSaul.dc.html"
  ],
  "notes": {
   "Main": {
@@ -631,6 +743,13 @@
    "text": "Chapter 5 · To Obey Is Better (1 Samuel 11–13)",
    "x": 0,
    "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Jonathan at Michmash (1 Samuel 14)",
+   "x": 0,
+   "y": 22200
   }
  },
  "designSystems": [],
