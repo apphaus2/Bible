@@ -93,7 +93,7 @@ def p04():
                   + balloon(v("37:16", frm="I am seeking"), "right: 8px; top: 212px", 220, size=11, pad="18px 20px") + vref("GEN 37:15–16", "left: 8px; bottom: 8px")),
               new("#0B1A2E", W2, h[2], U.dothan_map(W2, h[2], 1143),
                   cap(v("37:17", to="said,"), "left: 8px; top: 8px", size=10)
-                  + balloon(v("37:17", frm="They are"), "left: 8px; top: 40px", 220, size=11, pad="16px 20px")
+                  + balloon(v("37:17", frm="They are", to="to Dothan."), "left: 8px; top: 40px", 220, size=11, pad="16px 20px")
                   + cap(v("37:17", frm="And Joseph went"), "right: 8px; bottom: 8px", size=10, maxw=200) + vref("GEN 37:17", "left: 8px; bottom: 8px")))
     return page("Genesis 37:12–17 — I Am Seeking My Brethren", t, r1 + r2 + r3, START + 3)
 

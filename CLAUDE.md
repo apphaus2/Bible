@@ -109,6 +109,7 @@ There are two editions:
 | Joshua | 9 · The Cities of Refuge | 20–22 | title + 11 (pp. 74–84) | 88/88 verses full (the Levites' cities as roll cells) | `volumes/joshua/` |
 | Joshua | 10 · Choose You This Day | 23–24 | title + 8 (pp. 85–92) | 49/49 verses full (Joshua's death caption only, no grave drawn) | `volumes/joshua/` |
 | Judges | 1 · After the Death of Joshua | 1–2 | cover + title + 11 (pp. 1–11) | 59/59 verses full (1:6–7 over an empty table; the round of the judges as a diagram) | `volumes/judges/` |
+| Judges | 2 · Deborah | 3–5 | title + 16 (pp. 12–27) | 86/86 verses full (Eglon behind locked doors; the Song of Deborah in song boxes) | `volumes/judges/` |
 
 **Genesis, Exodus, Leviticus, Numbers, Deuteronomy and Joshua are complete.** Next: Judges. Joshua is `tools/full/jos/` (10
 chapters, plan in `jos/__init__.py`): story chapters laid out by `discourse.pack` with `jos.common` line helpers (`face()`,

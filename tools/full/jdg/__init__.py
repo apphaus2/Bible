@@ -21,5 +21,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "After the Death of Joshua", "range": "Judges 1–2", "bible_chapters": [1, 2],
      "blurb": "Judah shall go up: Adoni-bezek, Jerusalem and Hebron, Othniel and Achsah's springs, Beth-el taken by its entrance, and the tribes that drove not out the Canaanites; the angel of Jehovah at Bochim, a generation that knew not Jehovah, and the judges Jehovah raised up."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Deborah", "range": "Judges 3–5", "bible_chapters": [3, 4, 5],
+     "blurb": "Othniel; Ehud the left-handed and Eglon king of Moab in his cool upper room; Shamgar's ox-goad; Deborah under her palm-tree, Barak and the ten thousand on mount Tabor, nine hundred chariots of iron swept away by the Kishon, Jael's tent — and the Song of Deborah: From heaven fought the stars."},
   ],
 }

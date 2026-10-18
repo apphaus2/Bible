@@ -100,6 +100,125 @@
    "w": 760,
    "h": 1080,
    "title": "11 · That by Them I May Prove Israel"
+  },
+  "JDG-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Deborah"
+  },
+  "JDG-C02-D-P01-TheNationsWhichJeh.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Nations Which Jehovah Left"
+  },
+  "JDG-C02-D-P02-Othniel.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Othniel"
+  },
+  "JDG-C02-D-P03-Ehud.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Ehud"
+  },
+  "JDG-C02-D-P04-Ehud.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Ehud"
+  },
+  "JDG-C02-D-P05-Ehud.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Ehud"
+  },
+  "JDG-C02-D-P06-DeborahAProphetess.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Deborah, a Prophetess"
+  },
+  "JDG-C02-D-P07-DeborahAProphetess.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Deborah, a Prophetess"
+  },
+  "JDG-C02-D-P08-MountTabor.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Mount Tabor"
+  },
+  "JDG-C02-D-P09-Jael.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Jael"
+  },
+  "JDG-C02-D-P10-Jael.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Jael"
+  },
+  "JDG-C02-S-P01-ThenSangDeborahAnd.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Then Sang Deborah and Barak"
+  },
+  "JDG-C02-S-P02-ThenSangDeborahAnd.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Then Sang Deborah and Barak"
+  },
+  "JDG-C02-S-P03-ThenSangDeborahAnd.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Then Sang Deborah and Barak"
+  },
+  "JDG-C02-S-P04-ThenSangDeborahAnd.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Then Sang Deborah and Barak"
+  },
+  "JDG-C02-S-P05-ThenSangDeborahAnd.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Then Sang Deborah and Barak"
+  },
+  "JDG-C02-S-P06-ThenSangDeborahAnd.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Then Sang Deborah and Barak"
   }
  },
  "order": [
@@ -115,7 +234,24 @@
   "JDG-C01-E-P02-AnotherGeneration.dc.html",
   "JDG-C01-E-P03-AnotherGeneration.dc.html",
   "JDG-C01-E-P04-JehovahRaisedUpJud.dc.html",
-  "JDG-C01-E-P05-ThatByThemIMayProv.dc.html"
+  "JDG-C01-E-P05-ThatByThemIMayProv.dc.html",
+  "JDG-C02-00-Title.dc.html",
+  "JDG-C02-D-P01-TheNationsWhichJeh.dc.html",
+  "JDG-C02-D-P02-Othniel.dc.html",
+  "JDG-C02-D-P03-Ehud.dc.html",
+  "JDG-C02-D-P04-Ehud.dc.html",
+  "JDG-C02-D-P05-Ehud.dc.html",
+  "JDG-C02-D-P06-DeborahAProphetess.dc.html",
+  "JDG-C02-D-P07-DeborahAProphetess.dc.html",
+  "JDG-C02-D-P08-MountTabor.dc.html",
+  "JDG-C02-D-P09-Jael.dc.html",
+  "JDG-C02-D-P10-Jael.dc.html",
+  "JDG-C02-S-P01-ThenSangDeborahAnd.dc.html",
+  "JDG-C02-S-P02-ThenSangDeborahAnd.dc.html",
+  "JDG-C02-S-P03-ThenSangDeborahAnd.dc.html",
+  "JDG-C02-S-P04-ThenSangDeborahAnd.dc.html",
+  "JDG-C02-S-P05-ThenSangDeborahAnd.dc.html",
+  "JDG-C02-S-P06-ThenSangDeborahAnd.dc.html"
  ],
  "notes": {
   "Main": {
@@ -131,6 +267,13 @@
    "text": "Chapter 1 · After the Death of Joshua (Judges 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Deborah (Judges 3–5)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],
