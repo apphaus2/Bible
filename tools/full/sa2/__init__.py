@@ -9,7 +9,7 @@ Saul (21:9) are words over landscapes, gates, empty rooms, smoke or a heap of st
 empty roof and a shut door.
 
 Plan (20,573 words, twelve chapters): 1 How Are the Mighty Fallen (1–2) · 2 Abner (3–4) · 3 The City of David (5–6) ·
-4 Thy Throne Shall Be Established for Ever (7–8) · 5 Mephibosheth (9–10) · 6 Thou Art the Man (11–12) · 7 Absalom (13–14) ·
+4 For Ever (7–8) · 5 Mephibosheth (9–10) · 6 Thou Art the Man (11–12) · 7 Absalom (13–14) ·
 8 The Ascent of the Mount of Olives (15–16) · 9 O My Son Absalom (17–18) · 10 The King Returned (19–20) · 11 Jehovah Is My
 Rock (21–22) · 12 Which Cost Me Nothing (23–24)."""
 import sys, pathlib
@@ -28,5 +28,7 @@ META = {
      "blurb": "Long war between the house of Saul and the house of David; Abner's wrath — am I a dog's head?; Michal taken from Paltiel, who followed her weeping to Bahurim; Abner's league and the feast in Hebron; Joab takes him aside in the gate; David follows the bier: should Abner die as a fool dieth?; Mephibosheth lamed in the flight, and Ish-bosheth slain at noon."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The City of David", "range": "2 Samuel 5–6", "bible_chapters": [5, 6],
      "blurb": "All the tribes at Hebron — we are thy bone and thy flesh — and David anointed king over Israel; the stronghold of Zion; Hiram's cedar; Baal-perazim and the sound of marching in the tops of the mulberry-trees; the ark on a new cart and Uzzah at the threshing-floor of Nacon; David dancing before Jehovah with all his might, and Michal at the window."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "For Ever", "range": "2 Samuel 7–8", "bible_chapters": [7, 8],
+     "blurb": "I dwell in a house of cedar, but the ark of God dwelleth within curtains: the word of Jehovah to Nathan by night — I took thee from the sheepcote; he shall build a house for my name, and I will establish the throne of his kingdom for ever; David before Jehovah: who am I?; and David's wars from the Philistines to the River."},
   ],
 }

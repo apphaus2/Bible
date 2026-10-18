@@ -275,6 +275,76 @@
    "w": 760,
    "h": 1080,
    "title": "34 · Before Jehovah"
+  },
+  "2SA-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · For Ever"
+  },
+  "2SA-C04-D-P01-AHouseOfCedar.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · A House of Cedar"
+  },
+  "2SA-C04-D-P02-TheWordOfJehovahCa.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Word of Jehovah Came unto Nathan"
+  },
+  "2SA-C04-D-P03-TheWordOfJehovahCa.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Word of Jehovah Came unto Nathan"
+  },
+  "2SA-C04-D-P04-WhoAmIOLordJehovah.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Who Am I, O Lord Jehovah?"
+  },
+  "2SA-C04-D-P05-WhoAmIOLordJehovah.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Who Am I, O Lord Jehovah?"
+  },
+  "2SA-C04-D-P06-JehovahGaveVictory.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Jehovah Gave Victory to David"
+  },
+  "2SA-C04-D-P07-JehovahGaveVictory.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Jehovah Gave Victory to David"
+  },
+  "2SA-C04-D-P08-JehovahGaveVictory.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Jehovah Gave Victory to David"
+  },
+  "2SA-C04-D-P09-JusticeAndRighteou.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Justice and Righteousness"
   }
  },
  "order": [
@@ -315,7 +385,17 @@
   "2SA-C03-D-P07-PerezUzzah.dc.html",
   "2SA-C03-D-P08-TheHouseOfObedEdom.dc.html",
   "2SA-C03-D-P09-DavidDancedBeforeJ.dc.html",
-  "2SA-C03-D-P10-BeforeJehovah.dc.html"
+  "2SA-C03-D-P10-BeforeJehovah.dc.html",
+  "2SA-C04-00-Title.dc.html",
+  "2SA-C04-D-P01-AHouseOfCedar.dc.html",
+  "2SA-C04-D-P02-TheWordOfJehovahCa.dc.html",
+  "2SA-C04-D-P03-TheWordOfJehovahCa.dc.html",
+  "2SA-C04-D-P04-WhoAmIOLordJehovah.dc.html",
+  "2SA-C04-D-P05-WhoAmIOLordJehovah.dc.html",
+  "2SA-C04-D-P06-JehovahGaveVictory.dc.html",
+  "2SA-C04-D-P07-JehovahGaveVictory.dc.html",
+  "2SA-C04-D-P08-JehovahGaveVictory.dc.html",
+  "2SA-C04-D-P09-JusticeAndRighteou.dc.html"
  ],
  "notes": {
   "Main": {
@@ -345,6 +425,13 @@
    "text": "Chapter 3 · The City of David (2 Samuel 5–6)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · For Ever (2 Samuel 7–8)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],

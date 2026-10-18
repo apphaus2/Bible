@@ -326,3 +326,80 @@ def tent_ark(p, w, h, seed):
     o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.16, h * 0.84, b + 6, 4, s * 0.8, s))
     o.append(crowd_at(p, w, h, seed + 1, w * 0.86, w * 0.98, h * 0.84, b + 6, 4, s * 0.8, s, flip=True))
     return "".join(o)
+
+# ---- 2 Samuel 7–8 -------------------------------------------------------------------------------------------------------
+def nathan_night(w, h, seed):
+    """The same night: Jerusalem's rooftops under the stars, one window lit in the prophet's house."""
+    o = [night(w, h, seed, "#0F0E2A"), S3.roof(w, h, h * 0.56, seed), J.moon(w * 0.82, h * 0.18, 16)]
+    o.append(f'<rect x="{f(w * 0.3)}" y="{f(h * 0.46)}" width="16" height="20" fill="#FFE680" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+             f'<circle cx="{f(w * 0.3 + 8)}" cy="{f(h * 0.46 + 10)}" r="40" fill="#FFE680" opacity="0.12"></circle>')
+    return "".join(o)
+
+def throne_glory(w, h, seed):
+    """I will establish the throne of his kingdom for ever: an empty throne in light under the stars."""
+    o = [night(w, h, seed, "#14123A"), V.rays(w * 0.5, h * 0.62, 40, 30, max(w, h), color="#FFD23F", op=0.18),
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.92)}" rx="{f(w * 0.3)}" ry="{f(h * 0.05)}" fill="#2A2458" stroke="#FFD23F" stroke-width="1.6"></ellipse>',
+         S3.throne(w * 0.5, h * 0.92, min(1.6, h / 260))]
+    return "".join(o)
+
+def prayer(p, w, h, seed):
+    """David the king sitting before Jehovah in the tent of the ark, by lamplight."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A1A2A"></rect>']
+    for i in range(12):
+        o.append(f'<rect x="{f(i * w / 11 - 10)}" y="-10" width="{f(w / 11 + 2)}" height="{f(b + 10)}" fill="{["#5A2A6A", "#2A3A7A", "#8A1E2E"][i % 3]}" opacity="0.85"></rect>')
+    o.append(ground(w, h, b, "#2A1A14", dy=0))
+    o.append(J.ark(w * 0.72, b, min(0.9, h / 360), uid=p + "ak", pole=0))
+    o.append(E.kneel(w * 0.34, b, fit(b, h * 0.3) * 0.9, color="#4A2A7A", skin="#9A5A3A"))
+    o.append(clay_lamp(w * 0.1, h * 0.7, min(1.2, h / 260)))
+    return "".join(o)
+
+WARS = [("JERUSALEM", 0.42, 0.56), ("GATH", 0.2, 0.6), ("MOAB", 0.6, 0.72), ("RABBAH OF AMMON", 0.64, 0.5), ("VALLEY OF SALT", 0.46, 0.9),
+        ("AMALEK", 0.22, 0.88), ("DAMASCUS", 0.66, 0.24), ("ZOBAH", 0.76, 0.12), ("HAMATH", 0.64, 0.05)]
+def wars_map(w, h, hi=()):
+    """David's wars as a technical map: the Philistines, Moab, Zobah and Damascus to the River, Hamath, Ammon, Amalek, Edom."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.1)} -10 C {f(w * 0.12)} {f(h * 0.3)} {f(w * 0.08)} {f(h * 0.7)} {f(w * 0.04)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.5)} {f(h * 0.3)} C {f(w * 0.52)} {f(h * 0.5)} {f(w * 0.5)} {f(h * 0.7)} {f(w * 0.52)} {f(h * 0.78)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>'
+             f'<ellipse cx="{f(w * 0.52)}" cy="{f(h * 0.74)}" rx="{f(w * 0.015)}" ry="{f(h * 0.06)}" fill="#2C9DB8"></ellipse>')
+    o.append(f'<path d="M{f(w * 0.86)} -10 C {f(w * 0.92)} {f(h * 0.1)} {f(w * 0.94)} {f(h * 0.2)} {f(w + 10)} {f(h * 0.3)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>'
+             + label(w * 0.97, h * 0.34, "THE RIVER", "#8FD0E2", 8, "end"))
+    jx, jy = w * 0.42, h * 0.56
+    for nm, x, y in WARS[1:]:
+        if nm in hi: o.append(route([(jx, jy), (w * x, h * y)], color="#D7261E"))
+    for nm, x, y in WARS:
+        c = "#D7261E" if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2")
+        o.append(node(w * x, h * y, nm, c, r=6 if nm in hi or nm == "JERUSALEM" else 4, dy=-12, size=9))
+    return "".join(o)
+
+def gold_shields(w, h, seed):
+    """The shields of gold taken from the servants of Hadadezer, and the brass of Betah and Berothai, brought to Jerusalem."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2214"></rect>', S3.cedar(w, h, h * 0.86)]
+    for i in range(6):
+        x = w * (0.1 + i * 0.16); y = h * (0.36 + (i % 2) * 0.16); rr = min(w, h) * 0.09
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(rr)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="2.6"></circle>'
+                 f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(rr * 0.6)}" fill="none" stroke="#A8721A" stroke-width="2"></circle><circle cx="{f(x)}" cy="{f(y)}" r="{f(rr * 0.16)}" fill="#FFF4C2" stroke="#0D0D0F" stroke-width="1.4"></circle>')
+    return "".join(o)
+
+def vessels(w, h, seed):
+    """Vessels of silver, vessels of gold and vessels of brass, dedicated unto Jehovah."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', V.rays(w * 0.5, h * 0.7, 30, 20, max(w, h), color="#FFD23F", op=0.12),
+         ground(w, h, h * 0.84, "#1A1024", dy=0)]
+    cols = ["#C8C8D0", "#E8B830", "#C8703A"]
+    for i in range(7):
+        x = w * (0.12 + i * 0.126); s = min(w, h) / 260 * (0.8 + 0.3 * (i % 2)); c = cols[i % 3]; y = h * 0.86
+        o.append(f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})"><path d="M-22 0 C -30 -30 -30 -54 -12 -64 L -10 -80 L 10 -80 L 12 -64 C 30 -54 30 -30 22 0 Z" fill="{c}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+                 f'<ellipse cx="0" cy="-80" rx="14" ry="4" fill="{c}" stroke="#0D0D0F" stroke-width="2"></ellipse><path d="M-20 -40 L 20 -40" stroke="#0D0D0F" stroke-width="1.4" opacity="0.5"></path></g>')
+    return "".join(o)
+
+def court(p, w, h, seed):
+    """David reigning over all Israel: the king on his throne in the house of cedar, his officers standing before him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.2, b, min(1.3, h / 260))]
+    s = fit(b, h * 0.42)
+    o.append(king_fig(p, w * 0.2, b - 40 * min(1.3, h / 260), s * 0.9))
+    for i, c in enumerate([JOAB_C, "#3A4A6A", "#E8E2D6", "#E8E2D6", "#5A4A3A", "#2A4A3A"]):
+        o.append(captain(p, w * (0.42 + i * 0.105), b, s * (0.72 if i % 2 else 0.68), cloth=c, flip=True, spear=i in (0, 5)))
+    return "".join(o)
