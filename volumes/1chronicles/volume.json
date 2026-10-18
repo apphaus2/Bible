@@ -1,0 +1,21 @@
+{
+ "id": "1chronicles",
+ "order": 13,
+ "name": "1 Chronicles",
+ "kanji": "歴代志上",
+ "thumb": "vol-1chronicles-",
+ "lede": "The thirteenth book of the Bible, in full: the generations from Adam, David king over all Israel, the ark brought up with singing, the covenant of an everlasting throne, and the house of Jehovah made ready for Solomon, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "From Adam",
+   "range": "1 Chronicles 1–2",
+   "blurb": "Adam, Seth, Enosh — the generations from the first man to Noah and his three sons; the nations of Japheth, Ham and Shem; Abraham, Isaac and Ishmael; Esau and the kings that reigned in Edom before any king reigned over Israel; the sons of Israel; and the house of Judah down to Jesse and David, the seventh son.",
+   "prefixes": [
+    "Main.dc.html",
+    "1CH-C01-"
+   ]
+  }
+ ]
+}
