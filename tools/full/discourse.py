@@ -29,7 +29,7 @@ def _need(s, w=W1):
     if s["art"] is not None and s["tok"] is None: need = need / 0.62 + 40
     return max(220 if s["tok"] else 150, need)
 
-def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, most=3, end="", default_head=None, by_need=False, room=1.08):
+def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, most=3, end="", default_head=None, by_need=False, room=1.08, min_size=None):
     """by_need=True also breaks a page when the panels' estimated heights at a comfortable size would not fit (so a page of
     many short speeches does not shrink the type)."""
     groups, cur, chars, need = [], [], 0, 0
@@ -42,6 +42,15 @@ def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, 
     if cur: groups.append(cur)
     if len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) < most + 1 and _chars(groups[-1][0]) < 700 and not groups[-1][0]["head"]:
         last = groups.pop(); groups[-1] += last     # no lone short panel on the last page (pop first: groups[-2] += groups.pop() stores at the shifted index)
+    if min_size:                                   # split any page on which a panel's words would fall below min_size px
+        i = 0
+        while i < len(groups):
+            g = groups[i]
+            if len(g) > 1 and min(_sizes(g)) < min_size:
+                cut = max(1, len(g) // 2)
+                groups[i:i + 1] = [g[:cut], g[cut:]]
+                continue
+            i += 1
     out, head_now, side = [], default_head or "", False
     for k, g in enumerate(groups):
         needs = [_need(s) for s in g]
@@ -80,6 +89,26 @@ def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, 
         title = f"{book} {rng} — {head_now}"
         slug = re.sub(r"[^A-Za-z]", "", head_now.title())[:18]
         out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {head_now}", (lambda title=title, t=t, body="".join(body), n=start + k: page(title, t, body, n))))
+    return out
+
+def _heights(g):
+    needs = [_need(s) for s in g]
+    room = 1022 - 12 * (len(g) - 1)
+    fixed = [s["h"] for s in g]
+    flex_total = sum(nd for nd, fx in zip(needs, fixed) if not fx) or 1
+    flex_room = room - sum(fx for fx in fixed if fx)
+    hs = [fx if fx else max(150, round(flex_room * nd / flex_total)) for nd, fx in zip(needs, fixed)]
+    hs[-1] = room - sum(hs[:-1])
+    return hs
+
+def _sizes(g):
+    """The type size each panel of a page would get (speech panels only; drawings without words count as large)."""
+    out = []
+    for s, hh in zip(g, _heights(g)):
+        if not s["lines"]: out.append(99); continue
+        bw = W1 - (294 if s["tok"] else 24)
+        top = s["tok"] is None and s["art"] is not None
+        out.append(speech.fit(s["lines"], bw, hh * (0.62 if top else 1), hi=s["hi"]))
     return out
 
 def _span(refs, code):

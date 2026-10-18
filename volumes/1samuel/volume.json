@@ -96,6 +96,16 @@
    "prefixes": [
     "1SA-C09-"
    ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "Jonathan and David",
+   "range": "1 Samuel 20–21",
+   "blurb": "There is but a step between me and death: the covenant with the house of David; the new moon and David's empty place; Saul's spear cast at Jonathan; three arrows by the stone Ezel; they kissed one another and wept. Then the holy bread and Goliath's sword at Nob, and David feigning madness at the gate of Gath.",
+   "prefixes": [
+    "1SA-C10-"
+   ]
   }
  ]
 }

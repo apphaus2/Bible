@@ -280,3 +280,50 @@ def naioth(p, w, h, seed):
         x = w * (0.08 + i * 0.16) if i < 3 else w * (0.6 + (i - 3) * 0.14)
         o.append(man(p, x, b - (i % 2) * 6, s * 0.9, "#F3EFE6", flip=x > w * 0.5, up=[(-22, -158), (-30, -196), (-36, -228)]))
     return "".join(o)
+
+import judges2 as J2, samuel4 as S4
+
+# ---- 1 Samuel 20–21 -----------------------------------------------------------------------------------------------------
+def arrows(p, w, h, seed):
+    """Jonathan shoots an arrow beyond the lad in the field by the stone Ezel; David hidden behind it."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.16, h * 0.2, 18, color="#FFE680", op=0.4),
+         hills(w, h, h * 0.5, seed, color="#9AAA6A", amp=12), ground(w, h, h * 0.58, "#B8B07A", dy=0)]
+    o.append(f'<path d="M{f(w * 0.84)} {f(b)} L {f(w * 0.85)} {f(h * 0.56)} C {f(w * 0.88)} {f(h * 0.5)} {f(w * 0.94)} {f(h * 0.5)} {f(w * 0.96)} {f(h * 0.56)} L {f(w * 0.98)} {f(b)} Z" fill="#A89A86" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    s = fit(b, h * 0.42)
+    o.append(jonathan_fig(p, w * 0.18, b, s, up=[(-22, -158), (4, -170), (30, -176)]))
+    o.append(f'<path d="M{f(w * 0.22)} {f(b - 176 * s)} C {f(w * 0.4)} {f(h * 0.2)} {f(w * 0.6)} {f(h * 0.2)} {f(w * 0.74)} {f(h * 0.5)}" fill="none" stroke="#FFF4C2" stroke-width="2" stroke-dasharray="6 6"></path>'
+             f'<path d="M{f(w * 0.74)} {f(h * 0.5)} L {f(w * 0.72)} {f(h * 0.46)} M{f(w * 0.74)} {f(h * 0.5)} L {f(w * 0.7)} {f(h * 0.5)}" stroke="#3A2214" stroke-width="3"></path>')
+    o.append(S1.boy(p, w * 0.56, b, s * 0.7, up=[(-22, -158), (-46, -140), (-60, -160)]))
+    return "".join(o)
+
+def empty_seat(w, h, seed):
+    """The new moon feast: the king's table, and David's place empty by the wall."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A2A3A"></rect>', ground(w, h, h * 0.82, "#3A1A22", dy=0),
+         S3.table(w * 0.5, h * 0.82, w * 0.7, min(1.3, h / 260))]
+    o.append(S3.throne(w * 0.2, h * 0.82, min(0.9, h / 360)) + S1.seat(w * 0.8, h * 0.82, min(1.2, h / 260)))
+    o.append(V.rays(w * 0.8, h * 0.6, 20, 10, w * 0.4, color="#FFF4C2", op=0.15))
+    return "".join(o)
+
+def showbread(w, h, seed):
+    """The holy bread at Nob, and the sword of Goliath wrapped in a cloth behind the ephod."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2E"></rect>', V.rays(w * 0.5, h * 0.5, 30, 20, max(w, h), color="#FFD23F", op=0.12),
+         ground(w, h, h * 0.8, "#3A2A2A", dy=0)]
+    o.append(f'<rect x="{f(w * 0.08)}" y="{f(h * 0.6)}" width="{f(w * 0.4)}" height="{f(h * 0.08)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    for row in range(2):
+        for i in range(6):
+            o.append(f'<ellipse cx="{f(w * (0.12 + i * 0.065))}" cy="{f(h * (0.56 - row * 0.05))}" rx="{f(w * 0.03)}" ry="{f(h * 0.025)}" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    o.append(f'<path d="M{f(w * 0.62)} {f(h * 0.78)} L {f(w * 0.92)} {f(h * 0.3)}" stroke="#C8C8D0" stroke-width="9" stroke-linecap="round"></path>'
+             f'<path d="M{f(w * 0.66)} {f(h * 0.74)} L {f(w * 0.84)} {f(h * 0.44)}" stroke="#E8E2D6" stroke-width="22" opacity="0.85"></path>'
+             f'<path d="M{f(w * 0.6)} {f(h * 0.7)} L {f(w * 0.68)} {f(h * 0.76)}" stroke="#5A3A22" stroke-width="8"></path>')
+    return "".join(o)
+
+def gath_gate(p, w, h, seed):
+    """The gate of Gath, and David scrabbling on its doors, feigning himself mad before Achish's servants."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>',
+         S4.gatehouse(w * 0.5, b, w * 0.6, h * 0.8), ground(w, h, b, "#9A7A4A", dy=0)]
+    s = fit(b, h * 0.6)
+    o.append(S2.david(p, w * 0.5, b, s, staff=False, bag=False, up=[(-22, -158), (-10, -190), (6, -210)]))
+    o.append(J2.philistines(p, 4, w * 0.04, w * 0.22, b - 6, b, seed, s * 0.9, s, flip=False))
+    return "".join(o)

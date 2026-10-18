@@ -39,5 +39,7 @@ META = {
      "blurb": "The vale of Elah and the champion of Gath, six cubits and a span, defying the armies of Israel forty days; a shepherd boy with parched grain and loaves; the lion and the bear; five smooth stones out of the brook; in the name of Jehovah of hosts — for the battle is Jehovah's."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Saul Hath Slain His Thousands", "range": "1 Samuel 18–19", "bible_chapters": [18, 19],
      "blurb": "The soul of Jonathan knit with the soul of David; the women with timbrels: Saul hath slain his thousands, and David his ten thousands; the spear cast at the wall; Michal, the king's daughter; Michal lets David down through the window and lays the teraphim in his bed; and Saul among the prophets at Naioth."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Jonathan and David", "range": "1 Samuel 20–21", "bible_chapters": [20, 21],
+     "blurb": "There is but a step between me and death: the covenant with the house of David; the new moon and David's empty place; Saul's spear cast at Jonathan; three arrows by the stone Ezel; they kissed one another and wept. Then the holy bread and Goliath's sword at Nob, and David feigning madness at the gate of Gath."},
   ],
 }
