@@ -120,6 +120,7 @@ There are two editions:
 | Judges | 10 · No King in Israel | 20–21 | title + 14 (pp. 113–126) | 73/73 verses full (the third day as a map; Jabesh-gilead words over smoke) | `volumes/judges/` |
 | Ruth | 1 · Whither Thou Goest | 1–2 | cover + title + 10 (pp. 1–10) | 45/45 verses full (the digest's Ruth panels throughout) | `volumes/ruth/` |
 | Ruth | 2 · The Near Kinsman | 3–4 | title + 9 (pp. 11–19) | 40/40 verses full (the generations of Perez as a roll page) | `volumes/ruth/` |
+| 1 Samuel | 1 · Hannah | 1–2 | cover + title + 11 (pp. 1–11) | 64/64 verses full (Hannah's song in song boxes) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width

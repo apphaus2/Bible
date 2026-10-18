@@ -1,0 +1,21 @@
+{
+ "id": "1samuel",
+ "order": 9,
+ "name": "1 Samuel",
+ "kanji": "サムエル記上",
+ "thumb": "vol-1samuel-",
+ "lede": "The ninth book of the Bible, in full: Hannah's son Samuel, the ark among the Philistines, Saul the first king, and David the shepherd, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Hannah",
+   "range": "1 Samuel 1–2",
+   "blurb": "Hannah in bitterness of soul at Shiloh, her vow, and Eli marking her mouth; Samuel born and lent to Jehovah — for this child I prayed; Hannah's song; the sons of Eli and the flesh-hook; the child Samuel in his linen ephod; and the man of God: them that honor me I will honor.",
+   "prefixes": [
+    "Main.dc.html",
+    "1SA-C01-"
+   ]
+  }
+ ]
+}
