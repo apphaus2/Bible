@@ -471,6 +471,132 @@
    "w": 760,
    "h": 1080,
    "title": "61 · The Kings of Judah and of Israel"
+  },
+  "2KI-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Jehu"
+  },
+  "2KI-C05-D-P01-IHaveAnointedTheeK.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · I Have Anointed Thee King"
+  },
+  "2KI-C05-D-P02-IHaveAnointedTheeK.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · I Have Anointed Thee King"
+  },
+  "2KI-C05-D-P03-JehuIsKing.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Jehu Is King"
+  },
+  "2KI-C05-D-P04-HeDrivethFuriously.dc.html": {
+   "x": 3360,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · He Driveth Furiously"
+  },
+  "2KI-C05-D-P05-HeDrivethFuriously.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · He Driveth Furiously"
+  },
+  "2KI-C05-D-P06-HeDrivethFuriously.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · He Driveth Furiously"
+  },
+  "2KI-C05-D-P07-HeDrivethFuriously.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · He Driveth Furiously"
+  },
+  "2KI-C05-D-P08-HeDrivethFuriously.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · He Driveth Furiously"
+  },
+  "2KI-C05-D-P09-Jezebel.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Jezebel"
+  },
+  "2KI-C05-D-P10-Jezebel.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Jezebel"
+  },
+  "2KI-C05-D-P11-SeventySons.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Seventy Sons"
+  },
+  "2KI-C05-D-P12-SeventySons.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Seventy Sons"
+  },
+  "2KI-C05-D-P13-SeventySons.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Seventy Sons"
+  },
+  "2KI-C05-D-P14-JehonadabTheSonOfR.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Jehonadab the Son of Rechab"
+  },
+  "2KI-C05-D-P15-TheHouseOfBaal.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The House of Baal"
+  },
+  "2KI-C05-D-P16-TheHouseOfBaal.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The House of Baal"
+  },
+  "2KI-C05-D-P17-TheHouseOfBaal.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · The House of Baal"
   }
  },
  "order": [
@@ -539,7 +665,25 @@
   "2KI-C04-D-P07-Hazael.dc.html",
   "2KI-C04-D-P08-Hazael.dc.html",
   "2KI-C04-D-P09-Hazael.dc.html",
-  "2KI-C04-R-P01-TheKingsOfJudahAnd.dc.html"
+  "2KI-C04-R-P01-TheKingsOfJudahAnd.dc.html",
+  "2KI-C05-00-Title.dc.html",
+  "2KI-C05-D-P01-IHaveAnointedTheeK.dc.html",
+  "2KI-C05-D-P02-IHaveAnointedTheeK.dc.html",
+  "2KI-C05-D-P03-JehuIsKing.dc.html",
+  "2KI-C05-D-P04-HeDrivethFuriously.dc.html",
+  "2KI-C05-D-P05-HeDrivethFuriously.dc.html",
+  "2KI-C05-D-P06-HeDrivethFuriously.dc.html",
+  "2KI-C05-D-P07-HeDrivethFuriously.dc.html",
+  "2KI-C05-D-P08-HeDrivethFuriously.dc.html",
+  "2KI-C05-D-P09-Jezebel.dc.html",
+  "2KI-C05-D-P10-Jezebel.dc.html",
+  "2KI-C05-D-P11-SeventySons.dc.html",
+  "2KI-C05-D-P12-SeventySons.dc.html",
+  "2KI-C05-D-P13-SeventySons.dc.html",
+  "2KI-C05-D-P14-JehonadabTheSonOfR.dc.html",
+  "2KI-C05-D-P15-TheHouseOfBaal.dc.html",
+  "2KI-C05-D-P16-TheHouseOfBaal.dc.html",
+  "2KI-C05-D-P17-TheHouseOfBaal.dc.html"
  ],
  "notes": {
   "Main": {
@@ -576,6 +720,13 @@
    "text": "Chapter 4 · The Siege of Samaria (2 Kings 7–8)",
    "x": 0,
    "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Jehu (2 Kings 9–10)",
+   "x": 0,
+   "y": 20500
   }
  },
  "designSystems": [],

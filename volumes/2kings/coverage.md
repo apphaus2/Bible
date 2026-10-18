@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 223 verses — 223 full, 0 partial, 0 omitted.
+**So far:** 296 verses — 296 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Chariot of Fire (2 Kings 1–2)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · The Siege of Samaria (2 Kings 7–8)
 
 49 verses: 49 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · Jehu (2 Kings 9–10)
+
+73 verses: 73 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

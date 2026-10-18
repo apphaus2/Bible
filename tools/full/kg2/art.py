@@ -389,3 +389,94 @@ def coverlet(w, h, seed):
          f'<path d="M{f(w * 0.74)} {f(h * 0.86)} C {f(w * 0.72)} {f(h * 0.8)} {f(w * 0.86)} {f(h * 0.78)} {f(w * 0.9)} {f(h * 0.86)} Z" fill="#5A3A6A" stroke="#0D0D0F" stroke-width="2"></path>',
          f'<ellipse cx="{f(w * 0.82)}" cy="{f(h * 0.88)}" rx="{f(w * 0.08)}" ry="{f(h * 0.02)}" fill="#2C9DB8" opacity="0.6"></ellipse>']
     return "".join(o)
+
+# ---- 2 Kings 9–10 -------------------------------------------------------------------------------------------------------
+JEHU_C = "#3A5A2A"
+def inner_chamber(p, w, h, seed):
+    """The young prophet pouring the vial of oil on Jehu's head in an inner chamber, the door open behind."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#4A3A30"></rect>',
+         f'<rect x="{f(w * 0.74)}" y="{f(h * 0.2)}" width="{f(w * 0.18)}" height="{f(b - h * 0.2)}" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2.4"></rect>', ground(w, h, b, "#2A1E18", dy=0)]
+    s = fit(b, h * 0.44)
+    o.append(captain(p, w * 0.32, b, s, cloth=JEHU_C, spear=False))
+    o.append(man(p, w * 0.52, b, s * 0.95, "#6A645E", flip=True, up=[(22, -158), (0, -200), (-24, -230)]) + S1.vial(w * 0.52 - 30 * s, b - 236 * s, s * 0.7, rot=150, pour=20 * s)
+             + S1.drops(w * 0.32, b - 210 * s, 4, seed, spread=8))
+    return "".join(o)
+
+def stairs_garments(p, w, h, seed):
+    """The captains putting their garments under Jehu on the top of the stairs, and the trumpet blown: Jehu is king."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, b, "#B89A6A", dy=0)]
+    for i in range(6):
+        o.append(f'<rect x="{f(w * (0.24 + i * 0.04))}" y="{f(b - (i + 1) * h * 0.08)}" width="{f(w * (0.52 - i * 0.08))}" height="{f(h * 0.08)}" fill="#C8B898" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    top = b - 6 * h * 0.08
+    o.append("".join(f'<path d="M{f(w * (0.42 + i * 0.03))} {f(top)} l 20 0 l -6 {f(h * 0.06)} l -18 0 Z" fill="{c}" stroke="#0D0D0F" stroke-width="1.4"></path>' for i, c in enumerate(("#8A2A2A", "#3A4A6A", "#6A5A3A", "#5A3A6A"))))
+    o.append(captain(p, w * 0.5, top, fit(top, top - h * 0.36), cloth=JEHU_C, spear=False))
+    s = fit(b, h * 0.36)
+    o.append(J.trumpeter(p, w * 0.12, b, s) + J.blasts(w * 0.12 + 70 * s, b - 170 * s, s))
+    o.append(crowd_at(p, w, h, seed, w * 0.78, w * 0.98, h * 0.8, b, 5, s * 0.7, s, flip=True))
+    return "".join(o)
+
+def watchtower(p, w, h, seed, furious=True):
+    """The watchman on the tower in Jezreel; far off the company of Jehu, his chariot driving furiously in a cloud of dust."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0", "#E8B880"), hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.58, "#C8A06A", dy=0),
+         f'<rect x="{f(w * 0.06)}" y="{f(h * 0.2)}" width="{f(w * 0.2)}" height="{f(b - h * 0.2)}" fill="#B59A7A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         + "".join(f'<rect x="{f(w * 0.06 + i * w * 0.05)}" y="{f(h * 0.17)}" width="{f(w * 0.025)}" height="{f(h * 0.03)}" fill="#B59A7A" stroke="#0D0D0F" stroke-width="1.6"></rect>' for i in range(4)),
+         ground(w, h, b, "#A88A5A", dy=0)]
+    o.append(mk.person(p, round(w * 0.16), round(h * 0.17), round(fit(h * 0.17, h * 0.04) * 0.5, 3), body="#2A140C", cloth="#5A6A8A", kind="Tunic", sw=2, up=[(22, -158), (40, -170), (60, -176)]))
+    k = min(0.7, h / 500)
+    o.append(f'<ellipse cx="{f(w * 0.82)}" cy="{f(h * 0.6)}" rx="{f(w * 0.16)}" ry="{f(h * 0.06)}" fill="#E8D0A0" opacity="0.8"></ellipse>')
+    o.append(E3.chariot(w * 0.7, h * 0.66, k, flip=True, color="#3A2214", driver=JEHU_C) + mk.speed(w * 0.84, h * 0.6, 12, 10, w * 0.2, seed, color="#8A6A3A", op=0.6))
+    return "".join(o)
+
+def naboth_plat(p, w, h, seed):
+    """The portion of Naboth the Jezreelite: two chariots met in the field, one turned to flee (9:24 told in words only)."""
+    o = [vineyard(p, w, h, seed, empty=True)]
+    k = min(0.6, h / 560)
+    o.append(E3.chariot(w * 0.3, h * 0.92, k, color="#3A2214", driver=AHAB_C) + E3.chariot(w * 0.72, h * 0.96, k, flip=True, color="#3A2214", driver=JEHU_C))
+    return "".join(o)
+
+def jezebel_window(p, w, h, seed, empty=False):
+    """Jezebel with painted eyes and attired head looking out at the window over the gate; empty=True: the window empty, the
+    gate below (9:33–37 told in words only)."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), f'<rect x="{f(w * 0.2)}" y="-10" width="{f(w * 0.7)}" height="{f(b + 10)}" fill="#B59A7A" stroke="#0D0D0F" stroke-width="2.6"></rect>',
+         f'<path d="M{f(w * 0.36)} {f(b)} L {f(w * 0.36)} {f(h * 0.66)} C {f(w * 0.36)} {f(h * 0.56)} {f(w * 0.6)} {f(h * 0.56)} {f(w * 0.6)} {f(h * 0.66)} L {f(w * 0.6)} {f(b)} Z" fill="#2A1A14" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         S3.window(w * 0.62, h * 0.12, w * 0.2, h * 0.24), ground(w, h, b, "#8A7A5A", dy=0)]
+    if not empty:
+        o.append(f'<g transform="translate({f(w * 0.72)} {f(h * 0.36)})"><path d="M-20 0 C -24 -40 -16 -70 0 -76 C 16 -70 24 -40 20 0 Z" fill="#1A1214" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<circle cx="0" cy="-60" r="14" fill="#D9A27A" stroke="#0D0D0F" stroke-width="2"></circle><path d="M-14 -66 C -10 -82 10 -82 14 -66" fill="#0D0D0F"></path>'
+                 f'<path d="M-12 -76 L -8 -86 L -2 -78 L 4 -88 L 10 -76 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.2"></path></g>')
+        o.append(E3.chariot(w * 0.14, b, min(0.7, h / 480), color="#3A2214", driver=JEHU_C))
+    return "".join(o)
+
+def gate_dawn(w, h, seed):
+    """The entrance of the gate of Jezreel in the morning (10:7–9 told in words only)."""
+    return "".join([sky(w, h, "#5A5A7A", "#FFC89A"), sun(w * 0.8, h * 0.4, 24, color="#FFE680", op=0.4), S4.gatehouse(w * 0.5, h * 0.9, w * 0.6, h * 0.66), ground(w, h, h * 0.9, "#6A5A4A", dy=0)])
+
+def baal_house(p, w, h, seed, broken=False):
+    """The house of Baal in Samaria filled from one end to another; broken=True: its pillar burned and the house broken down."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A2A3A" if broken else "#C8B8A0", "#E8803A" if broken else "#E8C8A0"), ground(w, h, h * 0.8, "#6A5A4A", dy=0)]
+    if broken:
+        o.append(S4.stone_heap(w * 0.5, b, w * 0.7, h * 0.3, seed) + E.blaze(w * 0.5, h * 0.66, w * 0.16, h * 0.3, seed, n=5))
+        o.append("".join(f'<circle cx="{f(w * 0.5 + (i % 2) * 20)}" cy="{f(h * (0.3 - i * 0.06))}" r="{f(w * 0.07)}" fill="#3A2A2E" opacity="0.7"></circle>' for i in range(4)))
+    else:
+        o.append(f'<rect x="{f(w * 0.14)}" y="{f(h * 0.28)}" width="{f(w * 0.72)}" height="{f(h * 0.52)}" fill="#8A6A5A" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+                 f'<path d="M{f(w * 0.1)} {f(h * 0.28)} L {f(w * 0.5)} {f(h * 0.1)} L {f(w * 0.9)} {f(h * 0.28)} Z" fill="#6A4A3A" stroke="#0D0D0F" stroke-width="2.4"></path>'
+                 f'<rect x="{f(w * 0.4)}" y="{f(h * 0.46)}" width="{f(w * 0.2)}" height="{f(h * 0.34)}" fill="#1A1214" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+        s = fit(b, h * 0.3)
+        for i in range(6):
+            o.append(warrior(p, w * (0.06 + i * 0.05) if i < 3 else w * (0.8 + (i - 3) * 0.06), b, s * 0.8, JEHU_C, flip=i >= 3))
+    return "".join(o)
+
+def hazael_map(w, h):
+    """Hazael smiting Israel from the Jordan eastward: Gilead and Bashan, from Aroer by the Arnon (a technical map)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M{f(w * 0.42)} {f(h * 0.06)} C {f(w * 0.44)} {f(h * 0.4)} {f(w * 0.4)} {f(h * 0.7)} {f(w * 0.44)} {f(h * 0.94)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>' + label(w * 0.4, h * 0.5, "JORDAN", "#8FD0E2", 9, "end"))
+    o.append(f'<rect x="{f(w * 0.48)}" y="{f(h * 0.08)}" width="{f(w * 0.44)}" height="{f(h * 0.82)}" fill="#D7261E" fill-opacity="0.2" stroke="#D7261E" stroke-width="2" stroke-dasharray="6 4"></rect>')
+    for nm, x, y in (("BASHAN", 0.7, 0.18), ("GILEAD", 0.66, 0.46), ("AROER · ARNON", 0.62, 0.84)):
+        o.append(node(w * x, h * y, nm, "#D7261E", r=5, dy=-12, size=9))
+    o.append(node(w * 0.92, h * 0.06, "DAMASCUS", "#FFD23F", r=5, dy=14, size=9))
+    return "".join(o)

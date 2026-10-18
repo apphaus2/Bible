@@ -28,5 +28,7 @@ META = {
      "blurb": "Naaman the leper and the little maiden of Israel; go and wash in the Jordan seven times — are not Abanah and Pharpar better?; his flesh came again like the flesh of a little child; Gehazi's lie and the leprosy white as snow; the axe-head that swam; Dothan and the mountain full of horses and chariots of fire; and the siege of Samaria."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Siege of Samaria", "range": "2 Kings 7–8", "bible_chapters": [7, 8],
      "blurb": "To-morrow a measure of fine flour for a shekel — if Jehovah should make windows in heaven; four leprous men at the gate and the camp of the Syrians empty in the twilight; this day is a day of good tidings; the Shunammite's land restored; Hazael and the forty camels' burden, and the man of God wept; and the kings Jehoram and Ahaziah of Judah."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Jehu", "range": "2 Kings 9–10", "bible_chapters": [9, 10],
+     "blurb": "The vial of oil poured on Jehu's head in an inner chamber — I have anointed thee king over Israel; is it peace?; the driving is like the driving of Jehu the son of Nimshi, for he driveth furiously; the portion of Naboth; Jezebel at the window; the seventy sons; and the house of Baal broken down."},
   ],
 }

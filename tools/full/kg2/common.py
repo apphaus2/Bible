@@ -103,3 +103,8 @@ JEHORAM_SACK = F("adam", skin="#B98A6E", shadow="#3A2A3A", hair="#1A1210", hl="#
 LEPER = F("adam", skin="#D8C8C0", shadow="#8A7A80", hair="#3A3430", hl="#6A6460", stubble="#3A3430", scarf="#A8A098", brow="sorrow", light="#9AA8C8")
 HAZAEL = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#5A3A6A", cord=True, light="#FFC14D")
 LORD_CAPTAIN = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#6A2A1A", cord=True, brow="scowl", light="#FFC14D")
+JEHU = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A5A2A", cord=True, brow="scowl", light="#D7261E")
+JEHU_KING = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A5A2A", band=True, brow="scowl", light="#FFC14D")
+JORAM_AFRAID = F("adam", skin="#C98E66", shadow="#3A2A4A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#7A1A2A", band=True, brow="sorrow", sweat=True, light="#9AA8C8")
+WATCHMAN = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#5A6A8A", light="#FFE680")
+JEHONADAB = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#5A4A3A", light="#FFE680")
