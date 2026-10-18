@@ -317,6 +317,111 @@
    "w": 760,
    "h": 1080,
    "title": "40 · On This Wise Ye Shall Bless"
+  },
+  "NUM-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Offerings of the Princes"
+  },
+  "NUM-C04-P01-Wagons.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Six Covered Wagons"
+  },
+  "NUM-C04-P02-Service.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · To Every Man According to His Service"
+  },
+  "NUM-C04-P03-Day1.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · The First Day and the Second"
+  },
+  "NUM-C04-P04-Day3.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · The Third Day and the Fourth"
+  },
+  "NUM-C04-P05-Day5.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · The Fifth Day and the Sixth"
+  },
+  "NUM-C04-P06-Day7.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · The Seventh Day and the Eighth"
+  },
+  "NUM-C04-P07-Day9.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Ninth Day and the Tenth"
+  },
+  "NUM-C04-P08-Day11.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Eleventh Day and the Twelfth"
+  },
+  "NUM-C04-P09-Dedication.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · This Was the Dedication of the Altar"
+  },
+  "NUM-C04-P10-Lamps.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · When Thou Lightest the Lamps"
+  },
+  "NUM-C04-P11-Cleanse.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Cleanse Them"
+  },
+  "NUM-C04-P12-Hands.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Children of Israel Shall Lay Their Hands"
+  },
+  "NUM-C04-P13-Mine.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Levites Shall Be Mine"
+  },
+  "NUM-C04-P14-Service.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · From Twenty and Five Years Old"
   }
  },
  "order": [
@@ -363,7 +468,22 @@
   "NUM-C03-L-P06-IfHisSeparationBeD.dc.html",
   "NUM-C03-L-P07-WhenTheDaysAreFulf.dc.html",
   "NUM-C03-L-P08-WhenTheDaysAreFulf.dc.html",
-  "NUM-C03-P02-Bless.dc.html"
+  "NUM-C03-P02-Bless.dc.html",
+  "NUM-C04-00-Title.dc.html",
+  "NUM-C04-P01-Wagons.dc.html",
+  "NUM-C04-P02-Service.dc.html",
+  "NUM-C04-P03-Day1.dc.html",
+  "NUM-C04-P04-Day3.dc.html",
+  "NUM-C04-P05-Day5.dc.html",
+  "NUM-C04-P06-Day7.dc.html",
+  "NUM-C04-P07-Day9.dc.html",
+  "NUM-C04-P08-Day11.dc.html",
+  "NUM-C04-P09-Dedication.dc.html",
+  "NUM-C04-P10-Lamps.dc.html",
+  "NUM-C04-P11-Cleanse.dc.html",
+  "NUM-C04-P12-Hands.dc.html",
+  "NUM-C04-P13-Mine.dc.html",
+  "NUM-C04-P14-Service.dc.html"
  ],
  "notes": {
   "Main": {
@@ -393,6 +513,13 @@
    "text": "Chapter 3 · Jehovah Bless Thee (Numbers 5–6)",
    "x": 0,
    "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Offerings of the Princes (Numbers 7–8)",
+   "x": 0,
+   "y": 16400
   }
  },
  "designSystems": [],

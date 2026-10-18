@@ -23,5 +23,7 @@ META = {
      "blurb": "The sons of Aaron, and Nadab and Abihu who died before Jehovah; the Levites given unto Aaron instead of all the first-born, Gershon westward, Kohath southward, Merari northward, the redemption of the two hundred and threescore and thirteen; and the ark, the table and the candlestick wrapped in blue, scarlet and sealskin for the sons of Kohath to bear."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Jehovah Bless Thee", "range": "Numbers 5–6", "bible_chapters": [5, 6],
      "blurb": "The unclean put out without the camp; restitution with the fifth part; the law of jealousy and the water of bitterness; the vow of a Nazirite — no wine, no razor, no dead body — and the blessing put upon the children of Israel: Jehovah bless thee, and keep thee."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Offerings of the Princes", "range": "Numbers 7–8", "bible_chapters": [7, 8],
+     "blurb": "Six covered wagons and twelve oxen; the twelve princes, each on his day, with a silver platter, a silver bowl and a golden spoon full of incense, for the dedication of the altar; the Voice from above the mercy-seat; the seven lamps; and the Levites cleansed and waved before Jehovah."},
   ],
 }

@@ -69,6 +69,7 @@ There are two editions:
 | Numbers | 1 · The Numbering | 1–2 | cover + title + 10 (pp. 1–10) | 88/88 verses full (census as tally cells, the camp as a blueprint plan) | `volumes/numbers/` |
 | Numbers | 2 · The Charge of the Levites | 3–4 | title + 20 (pp. 11–30) | 100/100 verses full (the holy things wrapped, as blueprint plates) | `volumes/numbers/` |
 | Numbers | 3 · Jehovah Bless Thee | 5–6 | title + 10 (pp. 31–40) | 58/58 verses full (jealousy and the Nazirite as law cells; 5:11–31 with restraint) | `volumes/numbers/` |
+| Numbers | 4 · The Offerings of the Princes | 7–8 | title + 14 (pp. 41–54) | 115/115 verses full (one day a panel, each over a strip of the oblation) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·
