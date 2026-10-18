@@ -46,7 +46,7 @@ BENAIAH = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#1A1210", hl="#4A3A2
 JONATHAN_PR = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", stubble="#2A1A10", sweat=True, light="#FFE680")
 SHIMEI = F("adam", skin="#C47A5A", shadow="#5A2A1E", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#8A847A", scarf="#6A5A3A", brow="sorrow", light="#9AA8C8")
 HIRAM = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#6A1A5A", band=True, light="#FFC14D")
-SHEBA = F("eve", skin="#8A5A3A", shadow="#3A2014", hair="#0D0D0F", scarf="#E8B830", band=True, kohl=True, light="#FFE680")
+SHEBA = F("eve", skin="#8A5A3A", shadow="#3A2014", hair="#0D0D0F", scarf="#2A2A6A", band=True, kohl=True, light="#FFE680")
 JEROBOAM = F("adam", skin="#C47A5A", shadow="#4A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#2E6B3A", band=True, light="#FFC14D")
 REHOBOAM = F("adam", skin="#E3B08A", shadow="#6A4A4A", hair="#1A1210", hl="#4A3A2E", stubble="#1A1210", scarf="#1F3A7A", band=True, brow="scowl", light="#D7261E")
 AHIJAH = F("adam", skin="#B98A6E", shadow="#4A3A4A", hair="#E8E2D6", hl="#F3EFE6", beard=True, beard_color="#E8E2D6", scarf="#5A5A6A", cord=True, light="#9AA8C8")

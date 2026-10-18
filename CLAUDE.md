@@ -152,6 +152,7 @@ There are two editions:
 | 1 Kings | 4 · The House of Jehovah | 5–6 | title + 9 (pp. 33–41) | 56/56 verses full (the house as blueprint plates, `kg1.art.temple_plan` …) | `volumes/1kings/` |
 | 1 Kings | 5 · The Pillars and the Sea | 7 | title + 9 (pp. 42–50) | 51/51 verses full (Solomon's houses, Jachin and Boaz, the sea and the bases as blueprint plates) | `volumes/1kings/` |
 | 1 Kings | 6 · The Glory of Jehovah | 8 | title + 14 (pp. 51–64) | 66/66 verses full (Solomon's prayer as speech panels) | `volumes/1kings/` |
+| 1 Kings | 7 · The Queen of Sheba | 9–10 | title + 10 (pp. 65–74) | 57/57 verses full (the levy's cities as a map; the throne of ivory as a blueprint) | `volumes/1kings/` |
 
 **Genesis through 2 Samuel (ten volumes) are complete.** Next: 1 Kings. 2 Samuel is `tools/full/sa2/` (12 chapters, plan and
 restraint notes in `sa2/__init__.py`, the digest's two books lifted with `sa2.common.D("A5", 1)` / `D("B6", 0)`; `asv.Book.v(..., after=)`

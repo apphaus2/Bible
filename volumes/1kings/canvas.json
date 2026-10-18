@@ -506,6 +506,83 @@
    "w": 760,
    "h": 1080,
    "title": "64 · Not One Word Hath Failed"
+  },
+  "1KI-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Queen of Sheba"
+  },
+  "1KI-C07-D-P01-TheSecondTime.dc.html": {
+   "x": 840,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · The Second Time"
+  },
+  "1KI-C07-D-P02-TheSecondTime.dc.html": {
+   "x": 1680,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · The Second Time"
+  },
+  "1KI-C07-D-P03-TheLandOfCabul.dc.html": {
+   "x": 2520,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Land of Cabul"
+  },
+  "1KI-C07-D-P04-TheLevy.dc.html": {
+   "x": 3360,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Levy"
+  },
+  "1KI-C07-D-P05-TheLevy.dc.html": {
+   "x": 0,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Levy"
+  },
+  "1KI-C07-D-P06-TheQueenOfSheba.dc.html": {
+   "x": 840,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Queen of Sheba"
+  },
+  "1KI-C07-D-P07-TheHalfWasNotToldM.dc.html": {
+   "x": 1680,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Half Was Not Told Me"
+  },
+  "1KI-C07-D-P08-SixHundredThreesco.dc.html": {
+   "x": 2520,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Six Hundred Threescore and Six Talents"
+  },
+  "1KI-C07-D-P09-TheThroneOfIvory.dc.html": {
+   "x": 3360,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Throne of Ivory"
+  },
+  "1KI-C07-D-P10-TheThroneOfIvory.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Throne of Ivory"
   }
  },
  "order": [
@@ -579,7 +656,18 @@
   "1KI-C06-D-P11-TheForeigner.dc.html",
   "1KI-C06-D-P12-TheForeigner.dc.html",
   "1KI-C06-D-P13-NotOneWordHathFail.dc.html",
-  "1KI-C06-D-P14-NotOneWordHathFail.dc.html"
+  "1KI-C06-D-P14-NotOneWordHathFail.dc.html",
+  "1KI-C07-00-Title.dc.html",
+  "1KI-C07-D-P01-TheSecondTime.dc.html",
+  "1KI-C07-D-P02-TheSecondTime.dc.html",
+  "1KI-C07-D-P03-TheLandOfCabul.dc.html",
+  "1KI-C07-D-P04-TheLevy.dc.html",
+  "1KI-C07-D-P05-TheLevy.dc.html",
+  "1KI-C07-D-P06-TheQueenOfSheba.dc.html",
+  "1KI-C07-D-P07-TheHalfWasNotToldM.dc.html",
+  "1KI-C07-D-P08-SixHundredThreesco.dc.html",
+  "1KI-C07-D-P09-TheThroneOfIvory.dc.html",
+  "1KI-C07-D-P10-TheThroneOfIvory.dc.html"
  ],
  "notes": {
   "Main": {
@@ -630,6 +718,13 @@
    "text": "Chapter 6 · The Glory of Jehovah (1 Kings 8)",
    "x": 0,
    "y": 19800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Queen of Sheba (1 Kings 9–10)",
+   "x": 0,
+   "y": 23900
   }
  },
  "designSystems": [],

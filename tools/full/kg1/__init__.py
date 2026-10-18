@@ -32,5 +32,7 @@ META = {
      "blurb": "Solomon's own house thirteen years — the house of the forest of Lebanon on four rows of cedar pillars, and the porch of judgment; Hiram of Tyre, the worker in brass; the two pillars Jachin and Boaz with their pomegranates and lily-work; the molten sea upon twelve oxen; the ten bases and lavers; and the vessels of gold, all as blueprints."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Glory of Jehovah", "range": "1 Kings 8", "bible_chapters": [8],
      "blurb": "The ark brought up from Zion into the oracle, under the wings of the cherubim; the cloud filling the house, so that the priests could not stand to minister; Solomon's prayer with his hands spread toward heaven — will God in very deed dwell on the earth? hear thou in heaven, and forgive; not one word hath failed; and the feast of fourteen days."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Queen of Sheba", "range": "1 Kings 9–10", "bible_chapters": [9, 10],
+     "blurb": "Jehovah appears to Solomon a second time — I have hallowed this house; the land of Cabul; the cities of the levy; the navy at Ezion-geber and the gold of Ophir; the queen of Sheba with her very great train and her hard questions — behold, the half was not told me; the throne of ivory with its twelve lions; and silver in Jerusalem as stones."},
   ],
 }

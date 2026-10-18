@@ -211,11 +211,13 @@ def vine_fig(p, w, h, seed):
 
 def stalls(p, w, h, seed):
     """Solomon's stalls of horses for his chariots, and his horsemen."""
-    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), ground(w, h, h * 0.5, "#B89A6A", dy=0)]
-    for k in range(3):
-        y = h * (0.62 + k * 0.14)
-        for i in range(7):
-            o.append(E3.horse(w * (0.06 + i * 0.15 + (k % 2) * 0.06), y, 0.24 + k * 0.08, color=["#3A2214", "#6A4A2A", "#2A1A14"][i % 3]))
+    tall = h > w * 0.9; n = 4 if tall else 3; top = 0.3 if tall else 0.5
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3D8A0"), ground(w, h, h * top, "#B89A6A", dy=0)]
+    for k in range(n):
+        y = h * (top + 0.12 + k * (0.5 / n if tall else 0.14)); sc = min(1.2, h / 420) * (0.36 + k * 0.14) * (0.8 if tall else 1)
+        for i in range(6):
+            o.append(E3.horse(w * (0.06 + i * 0.18 + (k % 2) * 0.08), y, sc, color=["#3A2214", "#6A4A2A", "#2A1A14"][i % 3]))
+    o.append(E3.chariot(w * 0.7, h * 0.97, min(1.0, h / 360), color="#3A2214", driver="#1F3A7A"))
     return "".join(o)
 
 NATURE = [("CEDAR", "tree"), ("HYSSOP", "herb"), ("BEASTS", "beast"), ("BIRDS", "bird"), ("CREEPING THINGS", "creep"), ("FISHES", "fish")]
@@ -618,4 +620,117 @@ def feast_tents(p, w, h, seed):
          N.camp(20, -10, w + 10, h * 0.5, h * 0.74, seed)]
     s = fit(b, h * 0.3)
     o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.98, h * 0.8, b, 12, s * 0.7, s))
+    return "".join(o)
+
+# ---- 1 Kings 9–10 -------------------------------------------------------------------------------------------------------
+import judges2 as J2
+def ship(x, y, s=1.0, sail="#E8E2D6", flip=False):
+    """A ship of the navy: a curved hull, a mast and a square sail, a row of oars. (x, y) = waterline centre."""
+    sx = -s if flip else s
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">'
+            '<path d="M-90 -10 C -70 14 70 14 96 -16 L 100 -30 C 80 -14 -60 -14 -94 -28 Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2.4"></path>'
+            '<path d="M-94 -28 C -100 -40 -96 -52 -88 -56" stroke="#8A5A30" stroke-width="6" fill="none"></path>'
+            '<path d="M0 -20 L 0 -140" stroke="#3A2214" stroke-width="5"></path>'
+            f'<path d="M-46 -132 L 46 -132 L 40 -50 L -40 -50 Z" fill="{sail}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+            '<path d="M-48 -134 L 48 -134" stroke="#3A2214" stroke-width="4"></path>'
+            + "".join(f'<path d="M{dx} -6 L {dx - 10} 20" stroke="#5A3A22" stroke-width="3"></path>' for dx in range(-60, 70, 20)) + '</g>')
+
+def navy(p, w, h, seed, port=True):
+    """The navy of ships at Ezion-geber on the shore of the Red Sea (port=False: on the open sea, bound for Ophir)."""
+    o = [sky(w, h, "#8FD0E2", "#F3E8C8"), sun(w * 0.8, h * 0.2, 20, color="#FFE680", op=0.4)]
+    if port:
+        o += [hills(w, h, h * 0.4, seed, color="#A8704A", amp=20), f'<rect x="-10" y="{f(h * 0.54)}" width="{f(w + 20)}" height="{f(h * 0.6)}" fill="#1F6F9A"></rect>',
+              f'<path d="M-10 {f(h * 0.54)} L {f(w * 0.3)} {f(h * 0.54)} L {f(w * 0.2)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#C8A06A" stroke="#0D0D0F" stroke-width="2"></path>']
+    else:
+        o.append(f'<rect x="-10" y="{f(h * 0.5)}" width="{f(w + 20)}" height="{f(h * 0.6)}" fill="#1F6F9A"></rect>')
+    k = min(1.0, h / 320)
+    for i in range(3):
+        o.append(ship(w * (0.42 + i * 0.22), h * (0.7 + (i % 2) * 0.08), k * (0.8 + 0.1 * (i % 2)), sail=["#E8E2D6", "#B5121B", "#E8E2D6"][i]))
+    return "".join(o)
+
+def cabul(p, w, h, seed):
+    """The cities of Galilee given to Hiram: poor hill-towns among stones, Hiram looking and not pleased."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8C0B0", "#E8D8C0"), hills(w, h, h * 0.5, seed, color="#8A8070", amp=16), ground(w, h, h * 0.58, "#A89A80", dy=0)]
+    for i in range(4):
+        o.append(J.city_hill(w * (0.4 + i * 0.16), h * 0.6, w * 0.12, h * 0.1, seed + i))
+    o.append(S4.stone_heap(w * 0.6, b, w * 0.2, h * 0.1, seed))
+    o.append(king_fig(p, w * 0.16, b, fit(b, h * 0.4), cloth="#6A1A5A"))
+    return "".join(o)
+
+def cities_map(w, h):
+    """The levy's works as a technical map: Jerusalem and Millo, Hazor, Megiddo, Gezer, Beth-horon, Baalath, Tamar."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.14)} -10 C {f(w * 0.12)} {f(h * 0.3)} {f(w * 0.1)} {f(h * 0.7)} {f(w * 0.06)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    for nm, x, y in [("HAZOR", 0.56, 0.12), ("MEGIDDO", 0.4, 0.3), ("GEZER", 0.3, 0.6), ("BETH-HORON", 0.38, 0.52), ("BAALATH", 0.24, 0.7), ("JERUSALEM · MILLO", 0.5, 0.62),
+                     ("TAMAR", 0.56, 0.92)]:
+        o.append(node(w * x, h * y, nm, "#FFD23F" if "JERUSALEM" in nm else "#8FD0E2", r=5, dy=-11, size=9))
+    o.append(node(w * 0.6, h * 0.98, "EZION-GEBER", "#D7261E", r=5, dy=-11, size=9))
+    return "".join(o)
+
+def sheba_train(p, w, h, seed):
+    """The queen of Sheba coming to Jerusalem with a very great train, camels that bare spices, gold and precious stones."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#F3D8A0"), J.city_hill(w * 0.86, h * 0.5, w * 0.3, h * 0.26, seed), ground(w, h, h * 0.52, "#D8B070", dy=0)]
+    k = min(0.9, h / 360)
+    for i in range(5):
+        x = w * (0.1 + i * 0.16); y = b - (4 - i) * h * 0.04
+        o.append(J1.camel(x, y, k * (0.7 + 0.08 * i), color="#B5844A", rider="#E8B830" if i == 4 else None))
+        o.append(f'<rect x="{f(x - 20 * k)}" y="{f(y - 120 * k)}" width="{f(30 * k)}" height="{f(16 * k)}" fill="#7A3A6A" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    return "".join(o)
+
+def sheba_court(p, w, h, seed):
+    """The queen before Solomon on his throne, the gifts set down: gold, spices, precious stones."""
+    b = h * 0.92; k = min(1.2, h / 300)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.22, b, k)]
+    s = fit(b, h * 0.4)
+    o.append(sol_fig(p, w * 0.22, b - 40 * k, s * 0.86))
+    o.append(mk.person(p, round(w * 0.72), round(b), round(s * 0.95, 3), body="#5A2A16", cloth="#E8B830", woman=True, hair="#0D0D0F", sw=3, flip=True, extra=CROWN))
+    for i in range(3):
+        x = w * (0.42 + i * 0.08)
+        o.append(f'<rect x="{f(x - 18)}" y="{f(b - 26)}" width="36" height="26" fill="{["#E8B830", "#8A5A30", "#7A3A6A"][i]}" stroke="#0D0D0F" stroke-width="2"></rect>')
+    return "".join(o)
+
+def gold_shields_king(w, h, seed):
+    """Two hundred bucklers and three hundred shields of beaten gold hung in the house of the forest of Lebanon."""
+    import sa2.art as K2
+    return K2.gold_shields(w, h, seed)
+
+def ivory_throne(w, h):
+    """The great throne of ivory overlaid with gold: six steps, the top round behind, two lions by the stays, twelve lions
+    upon the steps."""
+    o = [bp(w, h), title_bar(w, "THE THRONE OF IVORY · SIX STEPS · TWELVE LIONS")]
+    cx, base = w * 0.5, h * 0.92; u = min(w / 16, h / 11)
+    for i in range(6):
+        sw = (6 - i) * 1.2 * u + 3 * u
+        o.append(f'<rect x="{f(cx - sw / 2)}" y="{f(base - (i + 1) * 0.7 * u)}" width="{f(sw)}" height="{f(0.7 * u)}" fill="#F3E8D0" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+        for d in (-1, 1):
+            o.append(J2.lion(cx + d * (sw / 2 - 0.4 * u), base - (i + 1) * 0.7 * u, u / 160, flip=d > 0, roar=False))
+    ty = base - 4.2 * u
+    o.append(f'<path d="M{f(cx - 1.6 * u)} {f(ty)} L {f(cx - 1.6 * u)} {f(ty - 3 * u)} C {f(cx - 1.6 * u)} {f(ty - 4.4 * u)} {f(cx + 1.6 * u)} {f(ty - 4.4 * u)} {f(cx + 1.6 * u)} {f(ty - 3 * u)} L {f(cx + 1.6 * u)} {f(ty)} Z" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<rect x="{f(cx - 1.8 * u)}" y="{f(ty - 0.4 * u)}" width="{f(3.6 * u)}" height="{f(0.5 * u)}" fill="#F3E8D0" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    for d in (-1, 1):
+        o.append(J2.lion(cx + d * 2.2 * u, ty, u / 120, flip=d > 0, roar=False))
+    o.append(tag(cx + 1.6 * u, ty - 3.4 * u, "THE TOP ROUND BEHIND", cx + 4 * u, ty - 4 * u) + tag(cx - 2.6 * u, ty - 0.6 * u, "TWO LIONS BESIDE THE STAYS", cx - 5 * u, ty - 3 * u))
+    return "".join(o)
+
+def tarshish(p, w, h, seed):
+    """The navy of Tarshish every three years: gold, silver, ivory, apes and peacocks."""
+    o = [navy(p, w, h, seed, port=False)]
+    cx, cy = w * 0.18, h * 0.86
+    o.append(f'<path d="M{f(cx)} {f(cy)} C {f(cx - 40)} {f(cy - 30)} {f(cx - 30)} {f(cy - 70)} {f(cx)} {f(cy - 80)} C {f(cx + 30)} {f(cy - 70)} {f(cx + 40)} {f(cy - 30)} {f(cx)} {f(cy)} Z" fill="#1F5F7A" stroke="#0D0D0F" stroke-width="2"></path>'
+             + "".join(f'<circle cx="{f(cx + 26 * math.cos(a))}" cy="{f(cy - 44 + 34 * math.sin(a))}" r="5" fill="#2C9DB8" stroke="#E8B830" stroke-width="2"></circle>' for a in [j * 0.7 - 2.6 for j in range(6)])
+             + f'<circle cx="{f(cx)}" cy="{f(cy - 4)}" r="9" fill="#1F5FAD" stroke="#0D0D0F" stroke-width="2"></circle>')
+    return "".join(o)
+
+def tribute(p, w, h, seed):
+    """All the earth bringing tribute: vessels of silver and gold, raiment, armor, spices, horses and mules."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE680", "#F3D8A0"), J.city_hill(w * 0.86, h * 0.5, w * 0.3, h * 0.26, seed), ground(w, h, h * 0.52, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.36)
+    for i in range(5):
+        x = w * (0.08 + i * 0.13)
+        o.append(man(p, x, b - (i % 2) * 8, s * 0.9, ["#6A1A5A", "#1F5FAD", "#2E6B3A", "#B5652E", "#E8E2D6"][i], up=[(22, -158), (30, -170), (36, -186)])
+                 + f'<path d="M{f(x + 36 * s * 0.9)} {f(b - 186 * s * 0.9)} l -10 -18 l 20 0 Z" fill="{["#C8C8D0", "#E8B830"][i % 2]}" stroke="#0D0D0F" stroke-width="1.6"></path>')
+    o.append(E3.horse(w * 0.78, b, min(0.7, h / 400)))
     return "".join(o)
