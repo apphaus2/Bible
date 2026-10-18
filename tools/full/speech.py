@@ -54,7 +54,7 @@ def column(lines, bw, h, side="left", hi=21):
         items.append(_cap(text, fs) if kind == "cap" else _say(text, s, side) if kind == "say" else _god(text, s))
     return items
 
-def orate(tok, h, bg, lines, w=W1, flip=False, ref=None, hi=21, art="", extra="", face_w=None):
+def orate(tok, h, bg, lines, w=W1, flip=False, ref=None, hi=21, art="", extra="", face_w=None, top=None):
     """A speech panel. Not flipped: the face at the left looking right, the words at the right. flip=True mirrors it."""
     if tok is None:
         left, bw = 12, w - 24
@@ -64,8 +64,9 @@ def orate(tok, h, bg, lines, w=W1, flip=False, ref=None, hi=21, art="", extra=""
         bw = w - fw - 24
         left = fw + 12 if not flip else 12
         svg = art + fc(tok, h, w=w, flip=flip)
-    items = column(lines, bw, h, side="left" if not flip else "right", hi=hi)
-    col = (f'\n    <div style="position: absolute; left: {left}px; top: 12px; bottom: 12px; width: {bw}px; display: flex; flex-direction: column; justify-content: center; gap: 9px">'
+    top = bool(top) and tok is None                # top=True: words over a drawing sit at the top, leaving the art below
+    items = column(lines, bw, h * (0.62 if top else 1), side="left" if not flip else "right", hi=hi)
+    col = (f'\n    <div style="position: absolute; left: {left}px; top: {34 if top else 12}px; bottom: 12px; width: {bw}px; display: flex; flex-direction: column; justify-content: {"flex-start" if top else "center"}; gap: 9px">'
            + "".join(items) + '</div>\n')
     r = vref(ref, ("left: 12px; bottom: 12px" if not flip else "right: 12px; bottom: 12px") if tok else "right: 12px; bottom: 12px") if ref else ""
     return new(bg, w, h, svg, col + r + extra)

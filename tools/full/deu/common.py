@@ -27,4 +27,4 @@ def voice(h, lines, ref, w=W1, **k):
 
 def over(h, bg, art, lines, ref, w=W1, **k):
     """Words in a column over a drawing."""
-    return orate(None, h, bg, lines, w=w, ref=ref, art=art, **k)
+    return orate(None, h, bg, lines, w=w, ref=ref, art=art, top=True, **k)

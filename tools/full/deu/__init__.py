@@ -22,5 +22,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "These Are the Words", "range": "Deuteronomy 1–2", "bible_chapters": [1, 2],
      "blurb": "In the fortieth year, beyond the Jordan, Moses begins to declare the law: Horeb, the judges, the spies and the evil report at Kadesh-barnea, the defeat at Hormah, the long way round Seir, Moab and Ammon, and Sihon king of Heshbon delivered up."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Take Heed to Thyself", "range": "Deuteronomy 3–4", "bible_chapters": [3, 4],
+     "blurb": "Og king of Bashan and his bedstead of iron; the land beyond the Jordan given to Reuben, Gad and half Manasseh; Moses' prayer to go over, and Pisgah; ye saw no manner of form on the day that Jehovah spake unto you in Horeb; a devouring fire, a jealous God; and the cities of refuge beyond the Jordan."},
   ],
 }
