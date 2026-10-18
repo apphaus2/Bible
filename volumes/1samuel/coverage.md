@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 649 verses — 649 full, 0 partial, 0 omitted.
+**So far:** 718 verses — 718 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Hannah (1 Samuel 1–2)
 
@@ -67,5 +67,11 @@ Every verse is on the page in full.
 ## Chapter 11 · The Cave (1 Samuel 22–24)
 
 74 verses: 74 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 12 · Abigail (1 Samuel 25–26)
+
+69 verses: 69 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

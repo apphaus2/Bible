@@ -131,6 +131,7 @@ There are two editions:
 | 1 Samuel | 9 · Saul Hath Slain His Thousands | 18–19 | title + 10 (pp. 108–117) | 54/54 verses full (18:25–27 and 19:24 words only) | `volumes/1samuel/` |
 | 1 Samuel | 10 · Jonathan and David | 20–21 | title + 12 (pp. 118–129) | 57/57 verses full | `volumes/1samuel/` |
 | 1 Samuel | 11 · The Cave | 22–24 | title + 15 (pp. 130–144) | 74/74 verses full (22:17–19 words over Nob's smoke) | `volumes/1samuel/` |
+| 1 Samuel | 12 · Abigail | 25–26 | title + 14 (pp. 145–158) | 69/69 verses full (25:38 words only) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width

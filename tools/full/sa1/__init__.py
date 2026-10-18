@@ -43,5 +43,7 @@ META = {
      "blurb": "There is but a step between me and death: the covenant with the house of David; the new moon and David's empty place; Saul's spear cast at Jonathan; three arrows by the stone Ezel; they kissed one another and wept. Then the holy bread and Goliath's sword at Nob, and David feigning madness at the gate of Gath."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Cave", "range": "1 Samuel 22–24", "bible_chapters": [22, 23, 24],
      "blurb": "The cave of Adullam and the four hundred in distress; Doeg the Edomite and the priests of Nob; Keilah and the ephod; Jonathan in the wood of Ziph: thou shalt be king over Israel; this side and that side of the mountain in Maon; and the cave at En-gedi, where David cut off the skirt of Saul's robe and spared Jehovah's anointed."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Abigail", "range": "1 Samuel 25–26", "bible_chapters": [25, 26],
+     "blurb": "Samuel is dead; Nabal the churl railing at David's young men, and Abigail riding down with two hundred loaves — the soul of my lord shall be bound in the bundle of life; then the hill of Hachilah, Saul asleep with his spear stuck in the ground at his head, and David crying from the mountain top: behold the king's spear."},
   ],
 }

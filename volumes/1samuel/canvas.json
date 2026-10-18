@@ -1101,6 +1101,111 @@
    "w": 760,
    "h": 1080,
    "title": "144 · Is This Thy Voice, My Son David?"
+  },
+  "1SA-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Abigail"
+  },
+  "1SA-C12-D-P01-Nabal.dc.html": {
+   "x": 840,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Nabal"
+  },
+  "1SA-C12-D-P02-Nabal.dc.html": {
+   "x": 1680,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Nabal"
+  },
+  "1SA-C12-D-P03-Abigail.dc.html": {
+   "x": 2520,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Abigail"
+  },
+  "1SA-C12-D-P04-Abigail.dc.html": {
+   "x": 3360,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Abigail"
+  },
+  "1SA-C12-D-P05-TheBundleOfLife.dc.html": {
+   "x": 0,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The Bundle of Life"
+  },
+  "1SA-C12-D-P06-TheBundleOfLife.dc.html": {
+   "x": 840,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · The Bundle of Life"
+  },
+  "1SA-C12-D-P07-TheBundleOfLife.dc.html": {
+   "x": 1680,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Bundle of Life"
+  },
+  "1SA-C12-D-P08-SheBecameHisWife.dc.html": {
+   "x": 2520,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · She Became His Wife"
+  },
+  "1SA-C12-D-P09-TheHillOfHachilah.dc.html": {
+   "x": 3360,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The Hill of Hachilah"
+  },
+  "1SA-C12-D-P10-DestroyHimNot.dc.html": {
+   "x": 0,
+   "y": 50700,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Destroy Him Not"
+  },
+  "1SA-C12-D-P11-TheKingSSpear.dc.html": {
+   "x": 840,
+   "y": 50700,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · The King's Spear"
+  },
+  "1SA-C12-D-P12-TheKingSSpear.dc.html": {
+   "x": 1680,
+   "y": 50700,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · The King's Spear"
+  },
+  "1SA-C12-D-P13-TheKingSSpear.dc.html": {
+   "x": 2520,
+   "y": 50700,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · The King's Spear"
+  },
+  "1SA-C12-D-P14-IHavePlayedTheFool.dc.html": {
+   "x": 3360,
+   "y": 50700,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · I Have Played the Fool"
   }
  },
  "order": [
@@ -1259,7 +1364,22 @@
   "1SA-C11-D-P12-EnGedi.dc.html",
   "1SA-C11-D-P13-IsThisThyVoiceMySo.dc.html",
   "1SA-C11-D-P14-IsThisThyVoiceMySo.dc.html",
-  "1SA-C11-D-P15-IsThisThyVoiceMySo.dc.html"
+  "1SA-C11-D-P15-IsThisThyVoiceMySo.dc.html",
+  "1SA-C12-00-Title.dc.html",
+  "1SA-C12-D-P01-Nabal.dc.html",
+  "1SA-C12-D-P02-Nabal.dc.html",
+  "1SA-C12-D-P03-Abigail.dc.html",
+  "1SA-C12-D-P04-Abigail.dc.html",
+  "1SA-C12-D-P05-TheBundleOfLife.dc.html",
+  "1SA-C12-D-P06-TheBundleOfLife.dc.html",
+  "1SA-C12-D-P07-TheBundleOfLife.dc.html",
+  "1SA-C12-D-P08-SheBecameHisWife.dc.html",
+  "1SA-C12-D-P09-TheHillOfHachilah.dc.html",
+  "1SA-C12-D-P10-DestroyHimNot.dc.html",
+  "1SA-C12-D-P11-TheKingSSpear.dc.html",
+  "1SA-C12-D-P12-TheKingSSpear.dc.html",
+  "1SA-C12-D-P13-TheKingSSpear.dc.html",
+  "1SA-C12-D-P14-IHavePlayedTheFool.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1345,6 +1465,13 @@
    "text": "Chapter 11 · The Cave (1 Samuel 22–24)",
    "x": 0,
    "y": 42700
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Abigail (1 Samuel 25–26)",
+   "x": 0,
+   "y": 48000
   }
  },
  "designSystems": [],

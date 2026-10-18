@@ -391,3 +391,66 @@ def engedi_cave(p, w, h, seed):
     for i in range(4):
         o.append(f'<circle cx="{f(w * (0.08 + i * 0.07))}" cy="{f(h * (0.56 + (i % 2) * 0.04))}" r="3" fill="#FFF4C2"></circle><circle cx="{f(w * (0.08 + i * 0.07) + 9)}" cy="{f(h * (0.56 + (i % 2) * 0.04))}" r="3" fill="#FFF4C2"></circle>')
     return "".join(o)
+
+import judges1 as J1
+
+# ---- 1 Samuel 25–26 -----------------------------------------------------------------------------------------------------
+ABIGAIL_C = "#3A7A6A"
+def abigail_fig(p, x, y, s, flip=False, up=None):
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=ABIGAIL_C, woman=True, hair="#1A1210", sw=3, flip=flip, up=up, extra=A.headcloth("#E8B830"))
+
+def shearing(p, w, h, seed):
+    """Nabal shearing his three thousand sheep in Carmel."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=14),
+         ground(w, h, h * 0.48, "#9CCB5E", dy=0)]
+    for _ in range(30):
+        y = r.uniform(h * 0.52, h * 0.96); o.append(E.sheep(r.uniform(0, w), y, 0.16 + 0.26 * (y - h * 0.52) / (h * 0.44), flip=r.random() < 0.5))
+    return "".join(o)
+
+def abigail_gifts(p, w, h, seed):
+    """Abigail on her ass coming down by the covert of the mountain, asses laden with loaves, wine, raisins and figs before her."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>',
+         f'<path d="M-10 {f(h * 0.4)} C {f(w * 0.3)} {f(h * 0.3)} {f(w * 0.5)} {f(h * 0.5)} {f(w + 10)} {f(h * 0.44)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#B89A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    s = fit(b, h * 0.44)
+    for i in range(3):
+        x = w * (0.1 + i * 0.16)
+        o.append(N.ass(x, b - i * 4, s * 0.5, flip=True) + f'<rect x="{f(x - 28 * s * 0.5)}" y="{f(b - 130 * s * 0.5)}" width="{f(56 * s * 0.5)}" height="{f(40 * s * 0.5)}" rx="6" fill="#C8A06A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(N.mount(w * 0.72, b, s * 0.6, flip=True, rider_cloth=ABIGAIL_C, p=p))
+    return "".join(o)
+
+def at_feet(p, w, h, seed):
+    """Abigail fallen at David's feet on her face; his men behind him with swords girded."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>', hills(w, h, h * 0.5, seed, color="#B89A6A", amp=12),
+         ground(w, h, h * 0.58, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(E.kneel(w * 0.36, b, s * 0.9, color=ABIGAIL_C, skin="#8A5A3A"))
+    o.append(S2.david(p, w * 0.58, b, s, staff=False, bag=False, flip=True))
+    for i in range(5):
+        o.append(man(p, w * (0.72 + i * 0.06), b - (i % 2) * 6, s * 0.9, random.Random(seed + i).choice(WAR), flip=True, extra=E4.SPEAR))
+    return "".join(o)
+
+def saul_asleep(p, w, h, seed, taken=False):
+    """Saul asleep within the place of the wagons, his spear stuck in the ground at his head, the cruse beside it, by night."""
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#14123A"), ground(w, h, h * 0.62, "#2A2030", dy=0)]
+    for i in range(5):
+        x = w * (0.06 + i * 0.22); o.append(f'<circle cx="{f(x)}" cy="{f(h * 0.62)}" r="{f(h * 0.08)}" fill="none" stroke="#5A4A3A" stroke-width="5"></circle>')
+    o.append(J1.rug_sleeper(w * 0.46, h * 0.86, min(1.2, h / 280), color=SAUL_C))
+    if not taken:
+        o.append(f'<path d="M{f(w * 0.72)} {f(h * 0.9)} L {f(w * 0.74)} {f(h * 0.3)}" stroke="#3E2416" stroke-width="6"></path><path d="M{f(w * 0.74)} {f(h * 0.3)} L {f(w * 0.73)} {f(h * 0.24)} L {f(w * 0.76)} {f(h * 0.3)} Z" fill="#C8C2D6" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<path d="M{f(w * 0.78)} {f(h * 0.9)} C {f(w * 0.76)} {f(h * 0.8)} {f(w * 0.84)} {f(h * 0.8)} {f(w * 0.82)} {f(h * 0.9)} Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path>')
+    for i in range(6):
+        o.append(J1.rug_sleeper(w * (0.1 + i * 0.16), h * (0.72 + (i % 2) * 0.04), min(0.6, h / 520), color="#3A3448"))
+    return "".join(o)
+
+def hilltop_cry(p, w, h, seed):
+    """David on the top of the mountain afar off, a great space between, holding up the king's spear and the cruse."""
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#2A2458"), sun(w * 0.86, h * 0.2, 14, color="#E8F0F6", op=0.3),
+         f'<path d="M{f(w * 0.5)} {f(h + 10)} L {f(w * 0.74)} {f(h * 0.42)} L {f(w + 10)} {f(h * 0.6)} L {f(w + 10)} {f(h + 10)} Z" fill="#3A3048" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.86, "#1E1A2E", dy=0), N.camp(10, -10, w * 0.4, h * 0.84, h * 0.96, seed, color=("#2A2030", "#3A2A3A", "#1A1420"))]
+    s = fit(h * 0.42, h * 0.18)
+    o.append(S2.david(p, w * 0.74, h * 0.42 + 2, s, staff=False, bag=False, up=[(-22, -158), (-6, -196), (8, -228)])
+             + f'<path d="M{f(w * 0.74 - 10 * s)} {f(h * 0.42 - 300 * s)} L {f(w * 0.74 - 2 * s)} {f(h * 0.42 - 120 * s)}" stroke="#3E2416" stroke-width="4"></path>')
+    return "".join(o)
