@@ -78,6 +78,7 @@ There are two editions:
 | Numbers | 10 · Meribah and the Serpent of Brass | 20–21 | title + 14 (pp. 127–140) | 64/64 verses full (lifts seven digest panels; the songs in song boxes) | `volumes/numbers/` |
 | Numbers | 11 · Balaam | 22–24 | title + 19 (pp. 141–159) | 96/96 verses full (lifts eight digest panels; the parables in song boxes) | `volumes/numbers/` |
 | Numbers | 12 · Phinehas | 25–26 | title + 9 (pp. 160–168) | 83/83 verses full (25:4–8 with restraint; the second census as tally cells) | `volumes/numbers/` |
+| Numbers | 13 · The Daughters of Zelophehad | 27–29 | title + 13 (pp. 169–181) | 94/94 verses full (the feasts as law cells with the beasts counted) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·

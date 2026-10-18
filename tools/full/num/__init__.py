@@ -41,5 +41,7 @@ META = {
      "blurb": "Balak king of Moab sends for Balaam to curse Israel; the ass sees the angel of Jehovah in the way, and Jehovah opens her mouth; seven altars on three heights; and four parables instead of curses — How goodly are thy tents, O Jacob; there shall come forth a star out of Jacob."},
     {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Phinehas", "range": "Numbers 25–26", "bible_chapters": [25, 26],
      "blurb": "Israel joined unto Baal-peor in Shittim; Phinehas, jealous with the jealousy of Jehovah, and the covenant of an everlasting priesthood; and the numbering in the plains of Moab — six hundred thousand and a thousand seven hundred and thirty, the land divided by lot, and not a man left of the first numbering save Caleb and Joshua."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "The Daughters of Zelophehad", "range": "Numbers 27–29", "bible_chapters": [27, 28, 29],
+     "blurb": "Mahlah, Noah, Hoglah, Milcah and Tirzah: the daughters of Zelophehad speak right; Moses shown the land from the mountain of Abarim; Joshua, a man in whom is the Spirit, set before Eleazar; and the offerings of every day, every sabbath, every new moon and every set feast."},
   ],
 }
