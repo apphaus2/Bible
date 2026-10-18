@@ -32,5 +32,7 @@ META = {
      "blurb": "I dwell in a house of cedar, but the ark of God dwelleth within curtains: the word of Jehovah to Nathan by night — I took thee from the sheepcote; he shall build a house for my name, and I will establish the throne of his kingdom for ever; David before Jehovah: who am I?; and David's wars from the Philistines to the River."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Mephibosheth", "range": "2 Samuel 9–10", "bible_chapters": [9, 10],
      "blurb": "Is there yet any that is left of the house of Saul, that I may show him kindness for Jonathan's sake?; Ziba; Mephibosheth fallen on his face — fear not; he shall eat at my table as one of the king's sons; Hanun shames David's servants — tarry at Jericho until your beards be grown; Joab before Rabbah: be of good courage, and let us play the man."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Thou Art the Man", "range": "2 Samuel 11–12", "bible_chapters": [11, 12],
+     "blurb": "At the time when kings go out to battle David tarried at Jerusalem; the roof at eventide and Bath-sheba; Uriah sleeping at the king's door; the letter sent by Uriah's hand; the poor man's one little ewe lamb — thou art the man; I have sinned against Jehovah; the child's seventh day, Solomon whom Jehovah loved, and the crown of Rabbah."},
   ],
 }

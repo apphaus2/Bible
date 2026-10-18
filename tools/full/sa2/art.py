@@ -446,3 +446,41 @@ def audience(p, w, h, seed, cloth="#7A5A3A", n=1):
     for i in range(n):
         o.append(captain(p, w * (0.7 + i * 0.12), b, s * 0.86, cloth=cloth, flip=True, spear=False))
     return "".join(o)
+
+# ---- 2 Samuel 11–12 -----------------------------------------------------------------------------------------------------
+def rabbah(p, w, h, seed, camp=True, dusk=False):
+    """Rabbah of the children of Ammon, the city of waters, walled on its hill; Israel's tents about it (camp=False: the
+    city alone at dusk)."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A1A2A" if dusk else "#8FD0E2", "#C8603A" if dusk else "#F3E8C8"),
+         f'<path d="M{f(w * 0.1)} {f(h * 0.7)} C {f(w * 0.3)} {f(h * 0.36)} {f(w * 0.7)} {f(h * 0.34)} {f(w * 0.94)} {f(h * 0.7)} Z" fill="{"#3A2A2A" if dusk else "#8A6A4A"}" stroke="#0D0D0F" stroke-width="2.6"></path>',
+         J.jericho(w * 0.28, w * 0.76, h * 0.22, h * 0.44, seed, towers=4, houses=True), ground(w, h, h * 0.68, "#2A1E1E" if dusk else "#B89A6A", dy=0),
+         f'<path d="M-10 {f(h * 0.74)} C {f(w * 0.3)} {f(h * 0.72)} {f(w * 0.6)} {f(h * 0.78)} {f(w + 10)} {f(h * 0.74)}" stroke="#2C9DB8" stroke-width="6" fill="none"></path>']
+    if camp: o.append(N.camp(16, -10, w + 10, h * 0.82, h * 0.98, seed))
+    return "".join(o)
+
+def uriah_door(p, w, h, seed):
+    """Uriah asleep at the door of the king's house among the servants of his lord, by night."""
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#14123A"), f'<rect x="{f(w * 0.08)}" y="{f(h * 0.12)}" width="{f(w * 0.84)}" height="{f(h * 0.64)}" fill="#5A4A5A" stroke="#0D0D0F" stroke-width="2.6"></rect>',
+         f'<path d="M{f(w * 0.42)} {f(h * 0.76)} L {f(w * 0.42)} {f(h * 0.4)} C {f(w * 0.42)} {f(h * 0.3)} {f(w * 0.58)} {f(h * 0.3)} {f(w * 0.58)} {f(h * 0.4)} L {f(w * 0.58)} {f(h * 0.76)} Z" fill="#2A1A14" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.76, "#2A2030", dy=0)]
+    for i in range(6):
+        o.append(J1.rug_sleeper(w * (0.1 + i * 0.16), h * (0.86 + (i % 2) * 0.04), min(0.8, h / 400), color="#8A2A2A" if i == 2 else "#3A3448"))
+    return "".join(o)
+
+def night_vigil(p, w, h, seed):
+    """David lying all night upon the earth, the elders of his house standing beside him, a single lamp."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1A1430"></rect>', ground(w, h, b, "#120E1E", dy=0),
+         clay_lamp(w * 0.5, h * 0.62, min(1.2, h / 260)), f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.58)}" r="{f(h * 0.4)}" fill="#FFC14D" opacity="0.08"></circle>']
+    s = fit(b, h * 0.42)
+    o.append(N.prostrate(w * 0.32, b, s * 0.9, color="#4A2A7A", skin="#9A5A3A"))
+    for i in range(3):
+        o.append(mk.person(p, round(w * (0.66 + i * 0.1)), round(b), round(s * 0.8, 3), body="#0B0814", cloth=["#3A3040", "#4A3A3A", "#2A3040"][i], sw=3, flip=True, extra=A.WHITE_BEARD))
+    return "".join(o)
+
+def crown_talent(w, h, seed):
+    """The crown of the king of Ammon, a talent of gold set with precious stones."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', V.rays(w * 0.5, h * 0.6, 36, 20, max(w, h), color="#FFD23F", op=0.2),
+         S2.crown(w * 0.5, h * 0.78, min(w, h) / 90)]
+    return "".join(o)

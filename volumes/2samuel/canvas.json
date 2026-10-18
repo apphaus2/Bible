@@ -415,6 +415,97 @@
    "w": 760,
    "h": 1080,
    "title": "52 · Helam"
+  },
+  "2SA-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Thou Art the Man"
+  },
+  "2SA-C06-D-P01-DavidTarriedAtJeru.dc.html": {
+   "x": 840,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · David Tarried at Jerusalem"
+  },
+  "2SA-C06-D-P02-UriahTheHittite.dc.html": {
+   "x": 1680,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Uriah the Hittite"
+  },
+  "2SA-C06-D-P03-UriahTheHittite.dc.html": {
+   "x": 2520,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Uriah the Hittite"
+  },
+  "2SA-C06-D-P04-TheLetter.dc.html": {
+   "x": 3360,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Letter"
+  },
+  "2SA-C06-D-P05-TheLetter.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Letter"
+  },
+  "2SA-C06-D-P06-TheEweLamb.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Ewe Lamb"
+  },
+  "2SA-C06-D-P07-TheEweLamb.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · The Ewe Lamb"
+  },
+  "2SA-C06-D-P08-ThouArtTheMan.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Thou Art the Man"
+  },
+  "2SA-C06-D-P09-ThouArtTheMan.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Thou Art the Man"
+  },
+  "2SA-C06-D-P10-TheSeventhDay.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The Seventh Day"
+  },
+  "2SA-C06-D-P11-TheSeventhDay.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The Seventh Day"
+  },
+  "2SA-C06-E-P01-TheCityOfWaters.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · The City of Waters"
   }
  },
  "order": [
@@ -475,7 +566,20 @@
   "2SA-C05-D-P06-Hanun.dc.html",
   "2SA-C05-D-P07-BeforeAndBehind.dc.html",
   "2SA-C05-D-P08-BeforeAndBehind.dc.html",
-  "2SA-C05-D-P09-Helam.dc.html"
+  "2SA-C05-D-P09-Helam.dc.html",
+  "2SA-C06-00-Title.dc.html",
+  "2SA-C06-D-P01-DavidTarriedAtJeru.dc.html",
+  "2SA-C06-D-P02-UriahTheHittite.dc.html",
+  "2SA-C06-D-P03-UriahTheHittite.dc.html",
+  "2SA-C06-D-P04-TheLetter.dc.html",
+  "2SA-C06-D-P05-TheLetter.dc.html",
+  "2SA-C06-D-P06-TheEweLamb.dc.html",
+  "2SA-C06-D-P07-TheEweLamb.dc.html",
+  "2SA-C06-D-P08-ThouArtTheMan.dc.html",
+  "2SA-C06-D-P09-ThouArtTheMan.dc.html",
+  "2SA-C06-D-P10-TheSeventhDay.dc.html",
+  "2SA-C06-D-P11-TheSeventhDay.dc.html",
+  "2SA-C06-E-P01-TheCityOfWaters.dc.html"
  ],
  "notes": {
   "Main": {
@@ -519,6 +623,13 @@
    "text": "Chapter 5 · Mephibosheth (2 Samuel 9–10)",
    "x": 0,
    "y": 16900
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Thou Art the Man (2 Samuel 11–12)",
+   "x": 0,
+   "y": 19800
   }
  },
  "designSystems": [],
