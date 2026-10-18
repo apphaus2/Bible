@@ -81,3 +81,60 @@ def eben_ezer(p, w, h, seed):
     s = fit(b, h * 0.4)
     o.append(mk.person(p, round(w * 0.3), round(b), round(s, 3), body=SKIN, cloth="#1E2A5A", sw=3, up=[(-22, -158), (-6, -196), (8, -228)], extra=A.headcloth("#1E2A5A") + A.WHITE_BEARD))
     return "".join(o)
+
+# ---- 1 Samuel 9–10 ------------------------------------------------------------------------------------------------------
+SAUL_C = "#8A1A2A"
+def saul_fig(p, x, y, s, flip=False, up=None, crown=False):
+    """Saul at a distance: crimson headcloth and tunic, a head taller than everyone."""
+    ex = A.headcloth(SAUL_C) + A.BLACK_BEARD + ('<path d="M-14 -200 L -14 -214 L -7 -206 L 0 -218 L 7 -206 L 14 -214 L 14 -200 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path>' if crown else "")
+    return mk.person(p, round(x), round(y), round(s * 1.12, 3), body=SKIN, cloth=SAUL_C, kind="Tunic", sw=3, flip=flip, up=up, extra=ex)
+
+def samuel_fig(p, x, y, s, flip=False, up=None):
+    """Samuel grown old: midnight-blue headcloth and robe, grey beard."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#1E2A5A", sw=3, flip=flip, up=up, extra=A.headcloth("#1E2A5A") + A.WHITE_BEARD)
+
+def asses_search(p, w, h, seed):
+    """Saul and his servant seeking the lost asses through the hill-country, an empty land."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.84, h * 0.2, 18, color="#FF8A3D", op=0.3),
+         hills(w, h, h * 0.42, seed, color="#9A8A6A", amp=18), hills(w, h, h * 0.56, seed + 1, color="#B89A6A", amp=12), ground(w, h, h * 0.64, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(saul_fig(p, w * 0.3, b, s, up=[(-22, -158), (4, -170), (30, -176)]) + man(p, w * 0.44, b, s * 0.9, "#7A6A4A"))
+    return "".join(o)
+
+def high_place(p, w, h, seed):
+    """The city on its hill with the high place above, maidens going out to draw water."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', sun(w * 0.86, h * 0.16, 16, op=0.3),
+         J.city_hill(w * 0.6, h * 0.66, w * 0.34, h * 0.42, seed), ground(w, h, h * 0.66, "#B89A6A", dy=0)]
+    o.append(f'<path d="M{f(w * 0.56)} {f(h * 0.26)} L {f(w * 0.6)} {f(h * 0.18)} L {f(w * 0.64)} {f(h * 0.26)} Z" fill="#A89A86" stroke="#0D0D0F" stroke-width="2"></path>' + E.blaze(w * 0.6, h * 0.19, w * 0.04, h * 0.08, seed, n=4))
+    s = fit(b, h * 0.42)
+    o.append(saul_fig(p, w * 0.14, b, s) + man(p, w * 0.24, b, s * 0.9, "#7A6A4A"))
+    for i in range(3):
+        o.append(woman(p, w * (0.66 + i * 0.08), b, s * 0.86, ("#C2456A", "#5AC8C8", "#E8B830")[i], flip=True)
+                 + f'<path d="M{f(w * (0.66 + i * 0.08) - 10)} {f(b - 210 * s * 0.86)} C {f(w * (0.66 + i * 0.08) - 20)} {f(b - 240 * s * 0.86)} {f(w * (0.66 + i * 0.08) + 10)} {f(b - 250 * s * 0.86)} {f(w * (0.66 + i * 0.08) + 4)} {f(b - 210 * s * 0.86)} Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.6"></path>')
+    return "".join(o)
+
+def prophets(p, w, h, seed):
+    """A band of prophets coming down from the high place with psaltery, timbrel, pipe and harp; Saul among them."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', V.rays(w * 0.5, h * 0.1, 30, 20, max(w, h), color="#FFF4C2", op=0.3),
+         f'<path d="M-10 {f(h * 0.5)} L {f(w * 0.5)} {f(h * 0.3)} L {f(w + 10)} {f(h * 0.5)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#B89A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    s = fit(b, h * 0.42)
+    for i in range(6):
+        x = w * (0.08 + i * 0.13)
+        if i == 3: o.append(saul_fig(p, x, b, s, up=[(-22, -158), (-6, -196), (8, -228)])); continue
+        o.append(man(p, x, b - (i % 2) * 6, s * 0.92, ("#F3EFE6", "#E8D8B0", "#D8C8A0")[i % 3], up=[(-22, -158), (-6, -176), (12, -182)])
+                 + S2.harp(x + 16 * s, b - 170 * s, 0.3 * s * 3) if i % 2 == 0 else man(p, x, b - (i % 2) * 6, s * 0.92, "#E8D8B0", up=[(-22, -158), (-30, -196), (-36, -228)]))
+    return "".join(o)
+
+def baggage(p, w, h, seed):
+    """Saul hid himself among the baggage: bundles and stuff heaped in the camp at Mizpah, a head taller than the heap."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    o.append(N.camp(14, -10, w + 10, h * 0.6, h * 0.7, seed))
+    o.append(saul_fig(p, w * 0.5, h * 0.92, fit(h * 0.92, h * 0.5) * 0.9))
+    for _ in range(14):
+        x, y = r.uniform(w * 0.3, w * 0.7), r.uniform(h * 0.72, h * 0.96)
+        o.append(f'<rect x="{f(x - 26)}" y="{f(y - 22)}" width="52" height="34" rx="8" fill="{r.choice(["#A8946A", "#8A6A4A", "#C8A06A"])}" stroke="#0D0D0F" stroke-width="2"></rect>')
+    return "".join(o)

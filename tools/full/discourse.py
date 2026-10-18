@@ -29,14 +29,14 @@ def _need(s, w=W1):
     if s["art"] is not None and s["tok"] is None: need = need / 0.62 + 40
     return max(220 if s["tok"] else 150, need)
 
-def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, most=3, end="", default_head=None, by_need=False):
+def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, most=3, end="", default_head=None, by_need=False, room=1.08):
     """by_need=True also breaks a page when the panels' estimated heights at a comfortable size would not fit (so a page of
     many short speeches does not shrink the type)."""
     groups, cur, chars, need = [], [], 0, 0
     for s in segments:
         n = _chars(s) + (250 if s["h"] else 0)
         nd = _need(s)
-        if cur and (chars + n > budget or len(cur) == most or (s["head"] and chars > budget * 0.45) or (by_need and need + nd > 1022 * 1.08 - 12 * len(cur))):
+        if cur and (chars + n > budget or len(cur) == most or (s["head"] and chars > budget * 0.45) or (by_need and need + nd > 1022 * room - 12 * len(cur))):
             groups.append(cur); cur, chars, need = [], 0, 0
         cur.append(s); chars += n; need += nd
     if cur: groups.append(cur)

@@ -38,12 +38,12 @@
    "h": 1080,
    "title": "2 · She Vowed a Vow"
   },
-  "1SA-C01-D-P03-IHaveAskedHimOfJeh.dc.html": {
+  "1SA-C01-D-P03-SheVowedAVow.dc.html": {
    "x": 2520,
    "y": 2000,
    "w": 760,
    "h": 1080,
-   "title": "3 · I Have Asked Him of Jehovah"
+   "title": "3 · She Vowed a Vow"
   },
   "1SA-C01-D-P04-IHaveAskedHimOfJeh.dc.html": {
    "x": 3360,
@@ -52,12 +52,12 @@
    "h": 1080,
    "title": "4 · I Have Asked Him of Jehovah"
   },
-  "1SA-C01-D-P05-MyHeartExultethInJ.dc.html": {
+  "1SA-C01-D-P05-ForThisChildIPraye.dc.html": {
    "x": 0,
    "y": 3200,
    "w": 760,
    "h": 1080,
-   "title": "5 · My Heart Exulteth in Jehovah"
+   "title": "5 · For This Child I Prayed"
   },
   "1SA-C01-D-P06-MyHeartExultethInJ.dc.html": {
    "x": 840,
@@ -73,12 +73,12 @@
    "h": 1080,
    "title": "7 · My Heart Exulteth in Jehovah"
   },
-  "1SA-C01-D-P08-TheSonsOfEli.dc.html": {
+  "1SA-C01-D-P08-MyHeartExultethInJ.dc.html": {
    "x": 2520,
    "y": 3200,
    "w": 760,
    "h": 1080,
-   "title": "8 · The Sons of Eli"
+   "title": "8 · My Heart Exulteth in Jehovah"
   },
   "1SA-C01-D-P09-TheSonsOfEli.dc.html": {
    "x": 3360,
@@ -87,19 +87,40 @@
    "h": 1080,
    "title": "9 · The Sons of Eli"
   },
-  "1SA-C01-D-P10-ThemThatHonorMeIWi.dc.html": {
+  "1SA-C01-D-P10-TheSonsOfEli.dc.html": {
    "x": 0,
    "y": 4400,
    "w": 760,
    "h": 1080,
-   "title": "10 · Them That Honor Me I Will Honor"
+   "title": "10 · The Sons of Eli"
   },
-  "1SA-C01-D-P11-ThemThatHonorMeIWi.dc.html": {
+  "1SA-C01-D-P11-TheSonsOfEli.dc.html": {
    "x": 840,
    "y": 4400,
    "w": 760,
    "h": 1080,
-   "title": "11 · Them That Honor Me I Will Honor"
+   "title": "11 · The Sons of Eli"
+  },
+  "1SA-C01-D-P12-TheSonsOfEli.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Sons of Eli"
+  },
+  "1SA-C01-D-P13-ThemThatHonorMeIWi.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Them That Honor Me I Will Honor"
+  },
+  "1SA-C01-D-P14-ThemThatHonorMeIWi.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Them That Honor Me I Will Honor"
   },
   "1SA-C02-00-Title.dc.html": {
    "x": 0,
@@ -113,77 +134,98 @@
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "12 · Here Am I"
+   "title": "15 · Here Am I"
   },
-  "1SA-C02-D-P02-SpeakForThyServant.dc.html": {
+  "1SA-C02-D-P02-HereAmI.dc.html": {
    "x": 1680,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "13 · Speak; for Thy Servant Heareth"
+   "title": "16 · Here Am I"
   },
   "1SA-C02-D-P03-SpeakForThyServant.dc.html": {
    "x": 2520,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "14 · Speak; for Thy Servant Heareth"
+   "title": "17 · Speak; for Thy Servant Heareth"
   },
   "1SA-C02-D-P04-SpeakForThyServant.dc.html": {
    "x": 3360,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "15 · Speak; for Thy Servant Heareth"
+   "title": "18 · Speak; for Thy Servant Heareth"
   },
-  "1SA-C02-D-P05-TheArkOfGodWasTake.dc.html": {
+  "1SA-C02-D-P05-SpeakForThyServant.dc.html": {
    "x": 0,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "16 · The Ark of God Was Taken"
+   "title": "19 · Speak; for Thy Servant Heareth"
   },
   "1SA-C02-D-P06-TheArkOfGodWasTake.dc.html": {
    "x": 840,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "17 · The Ark of God Was Taken"
+   "title": "20 · The Ark of God Was Taken"
   },
-  "1SA-C02-D-P07-Eli.dc.html": {
+  "1SA-C02-D-P07-TheArkOfGodWasTake.dc.html": {
    "x": 1680,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "18 · Eli"
+   "title": "21 · The Ark of God Was Taken"
   },
-  "1SA-C02-D-P08-Ichabod.dc.html": {
+  "1SA-C02-D-P08-TheArkOfGodWasTake.dc.html": {
    "x": 2520,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "19 · Ichabod"
+   "title": "22 · The Ark of God Was Taken"
   },
-  "1SA-C02-D-P09-TheHouseOfDagon.dc.html": {
+  "1SA-C02-D-P09-Eli.dc.html": {
    "x": 3360,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "20 · The House of Dagon"
+   "title": "23 · Eli"
   },
-  "1SA-C02-D-P10-AshdodGathAndEkron.dc.html": {
+  "1SA-C02-D-P10-Eli.dc.html": {
    "x": 0,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "21 · Ashdod, Gath and Ekron"
+   "title": "24 · Eli"
   },
-  "1SA-C02-D-P11-AshdodGathAndEkron.dc.html": {
+  "1SA-C02-D-P11-Ichabod.dc.html": {
    "x": 840,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "22 · Ashdod, Gath and Ekron"
+   "title": "25 · Ichabod"
+  },
+  "1SA-C02-D-P12-TheHouseOfDagon.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The House of Dagon"
+  },
+  "1SA-C02-D-P13-AshdodGathAndEkron.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Ashdod, Gath and Ekron"
+  },
+  "1SA-C02-D-P14-AshdodGathAndEkron.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Ashdod, Gath and Ekron"
   },
   "1SA-C03-00-Title.dc.html": {
    "x": 0,
@@ -197,77 +239,182 @@
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "23 · Send It Not Empty"
+   "title": "29 · Send It Not Empty"
   },
   "1SA-C03-D-P02-SendItNotEmpty.dc.html": {
    "x": 1680,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "24 · Send It Not Empty"
+   "title": "30 · Send It Not Empty"
   },
   "1SA-C03-D-P03-TheKineTookTheStra.dc.html": {
    "x": 2520,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "25 · The Kine Took the Straight Way"
+   "title": "31 · The Kine Took the Straight Way"
   },
   "1SA-C03-D-P04-TheKineTookTheStra.dc.html": {
    "x": 3360,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "26 · The Kine Took the Straight Way"
+   "title": "32 · The Kine Took the Straight Way"
   },
   "1SA-C03-D-P05-HithertoHathJehova.dc.html": {
    "x": 0,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "27 · Hitherto Hath Jehovah Helped Us"
+   "title": "33 · Hitherto Hath Jehovah Helped Us"
   },
   "1SA-C03-D-P06-HithertoHathJehova.dc.html": {
    "x": 840,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "28 · Hitherto Hath Jehovah Helped Us"
+   "title": "34 · Hitherto Hath Jehovah Helped Us"
   },
   "1SA-C03-D-P07-HithertoHathJehova.dc.html": {
    "x": 1680,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "29 · Hitherto Hath Jehovah Helped Us"
+   "title": "35 · Hitherto Hath Jehovah Helped Us"
   },
   "1SA-C03-D-P08-GiveUsAKing.dc.html": {
    "x": 2520,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "30 · Give Us a King"
+   "title": "36 · Give Us a King"
   },
   "1SA-C03-D-P09-GiveUsAKing.dc.html": {
    "x": 3360,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "31 · Give Us a King"
+   "title": "37 · Give Us a King"
   },
   "1SA-C03-D-P10-TheMannerOfTheKing.dc.html": {
    "x": 0,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "32 · The Manner of the King"
+   "title": "38 · The Manner of the King"
   },
   "1SA-C03-D-P11-TheMannerOfTheKing.dc.html": {
    "x": 840,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "33 · The Manner of the King"
+   "title": "39 · The Manner of the King"
+  },
+  "1SA-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Saul Anointed"
+  },
+  "1SA-C04-D-P01-TheAssesOfKish.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · The Asses of Kish"
+  },
+  "1SA-C04-D-P02-TheAssesOfKish.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Asses of Kish"
+  },
+  "1SA-C04-D-P03-IsTheSeerHere.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Is the Seer Here?"
+  },
+  "1SA-C04-D-P04-IAmTheSeer.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · I Am the Seer"
+  },
+  "1SA-C04-D-P05-IAmTheSeer.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · I Am the Seer"
+  },
+  "1SA-C04-D-P06-IAmTheSeer.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · I Am the Seer"
+  },
+  "1SA-C04-D-P07-IAmTheSeer.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · I Am the Seer"
+  },
+  "1SA-C04-D-P08-TheVialOfOil.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Vial of Oil"
+  },
+  "1SA-C04-D-P09-TheVialOfOil.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Vial of Oil"
+  },
+  "1SA-C04-D-P10-IsSaulAlsoAmongThe.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Is Saul Also among the Prophets?"
+  },
+  "1SA-C04-D-P11-IsSaulAlsoAmongThe.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Is Saul Also among the Prophets?"
+  },
+  "1SA-C04-D-P12-LongLiveTheKing.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Long Live the King"
+  },
+  "1SA-C04-D-P13-LongLiveTheKing.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Long Live the King"
+  },
+  "1SA-C04-D-P14-LongLiveTheKing.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Long Live the King"
   }
  },
  "order": [
@@ -275,27 +422,33 @@
   "1SA-C01-00-Title.dc.html",
   "1SA-C01-D-P01-HannahHadNoChildre.dc.html",
   "1SA-C01-D-P02-SheVowedAVow.dc.html",
-  "1SA-C01-D-P03-IHaveAskedHimOfJeh.dc.html",
+  "1SA-C01-D-P03-SheVowedAVow.dc.html",
   "1SA-C01-D-P04-IHaveAskedHimOfJeh.dc.html",
-  "1SA-C01-D-P05-MyHeartExultethInJ.dc.html",
+  "1SA-C01-D-P05-ForThisChildIPraye.dc.html",
   "1SA-C01-D-P06-MyHeartExultethInJ.dc.html",
   "1SA-C01-D-P07-MyHeartExultethInJ.dc.html",
-  "1SA-C01-D-P08-TheSonsOfEli.dc.html",
+  "1SA-C01-D-P08-MyHeartExultethInJ.dc.html",
   "1SA-C01-D-P09-TheSonsOfEli.dc.html",
-  "1SA-C01-D-P10-ThemThatHonorMeIWi.dc.html",
-  "1SA-C01-D-P11-ThemThatHonorMeIWi.dc.html",
+  "1SA-C01-D-P10-TheSonsOfEli.dc.html",
+  "1SA-C01-D-P11-TheSonsOfEli.dc.html",
+  "1SA-C01-D-P12-TheSonsOfEli.dc.html",
+  "1SA-C01-D-P13-ThemThatHonorMeIWi.dc.html",
+  "1SA-C01-D-P14-ThemThatHonorMeIWi.dc.html",
   "1SA-C02-00-Title.dc.html",
   "1SA-C02-D-P01-HereAmI.dc.html",
-  "1SA-C02-D-P02-SpeakForThyServant.dc.html",
+  "1SA-C02-D-P02-HereAmI.dc.html",
   "1SA-C02-D-P03-SpeakForThyServant.dc.html",
   "1SA-C02-D-P04-SpeakForThyServant.dc.html",
-  "1SA-C02-D-P05-TheArkOfGodWasTake.dc.html",
+  "1SA-C02-D-P05-SpeakForThyServant.dc.html",
   "1SA-C02-D-P06-TheArkOfGodWasTake.dc.html",
-  "1SA-C02-D-P07-Eli.dc.html",
-  "1SA-C02-D-P08-Ichabod.dc.html",
-  "1SA-C02-D-P09-TheHouseOfDagon.dc.html",
-  "1SA-C02-D-P10-AshdodGathAndEkron.dc.html",
-  "1SA-C02-D-P11-AshdodGathAndEkron.dc.html",
+  "1SA-C02-D-P07-TheArkOfGodWasTake.dc.html",
+  "1SA-C02-D-P08-TheArkOfGodWasTake.dc.html",
+  "1SA-C02-D-P09-Eli.dc.html",
+  "1SA-C02-D-P10-Eli.dc.html",
+  "1SA-C02-D-P11-Ichabod.dc.html",
+  "1SA-C02-D-P12-TheHouseOfDagon.dc.html",
+  "1SA-C02-D-P13-AshdodGathAndEkron.dc.html",
+  "1SA-C02-D-P14-AshdodGathAndEkron.dc.html",
   "1SA-C03-00-Title.dc.html",
   "1SA-C03-D-P01-SendItNotEmpty.dc.html",
   "1SA-C03-D-P02-SendItNotEmpty.dc.html",
@@ -307,7 +460,22 @@
   "1SA-C03-D-P08-GiveUsAKing.dc.html",
   "1SA-C03-D-P09-GiveUsAKing.dc.html",
   "1SA-C03-D-P10-TheMannerOfTheKing.dc.html",
-  "1SA-C03-D-P11-TheMannerOfTheKing.dc.html"
+  "1SA-C03-D-P11-TheMannerOfTheKing.dc.html",
+  "1SA-C04-00-Title.dc.html",
+  "1SA-C04-D-P01-TheAssesOfKish.dc.html",
+  "1SA-C04-D-P02-TheAssesOfKish.dc.html",
+  "1SA-C04-D-P03-IsTheSeerHere.dc.html",
+  "1SA-C04-D-P04-IAmTheSeer.dc.html",
+  "1SA-C04-D-P05-IAmTheSeer.dc.html",
+  "1SA-C04-D-P06-IAmTheSeer.dc.html",
+  "1SA-C04-D-P07-IAmTheSeer.dc.html",
+  "1SA-C04-D-P08-TheVialOfOil.dc.html",
+  "1SA-C04-D-P09-TheVialOfOil.dc.html",
+  "1SA-C04-D-P10-IsSaulAlsoAmongThe.dc.html",
+  "1SA-C04-D-P11-IsSaulAlsoAmongThe.dc.html",
+  "1SA-C04-D-P12-LongLiveTheKing.dc.html",
+  "1SA-C04-D-P13-LongLiveTheKing.dc.html",
+  "1SA-C04-D-P14-LongLiveTheKing.dc.html"
  ],
  "notes": {
   "Main": {
@@ -337,6 +505,13 @@
    "text": "Chapter 3 · Give Us a King (1 Samuel 6–8)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Saul Anointed (1 Samuel 9–10)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],

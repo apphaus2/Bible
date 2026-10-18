@@ -27,5 +27,7 @@ META = {
      "blurb": "The lamp of God not yet gone out: Samuel, Samuel — speak; for thy servant heareth. The ark fetched from Shiloh and taken at Eben-ezer; Eli fallen by the gate; Ichabod, the glory is departed; Dagon fallen before the ark, and the ark carried about Ashdod, Gath and Ekron."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Give Us a King", "range": "1 Samuel 6–8", "bible_chapters": [6, 7, 8],
      "blurb": "The ark sent home on a new cart with golden tumors and mice, two milch kine lowing on the straight way to Beth-shemesh; Mizpah, the great thunder, and the stone Eben-ezer: hitherto hath Jehovah helped us. Then the elders at Ramah: make us a king to judge us like all the nations."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Saul Anointed", "range": "1 Samuel 9–10", "bible_chapters": [9, 10],
+     "blurb": "Kish's asses lost, and Saul, higher than any of the people, sent to seek them; the seer at the high place and the thigh reserved for him; the vial of oil; the band of prophets — is Saul also among the prophets?; the lot at Mizpah, Saul hid among the baggage, and long live the king."},
   ],
 }

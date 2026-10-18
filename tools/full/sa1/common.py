@@ -22,6 +22,7 @@ def caps(refs): return ("cap", sp(refs))
 
 def pack(segs, prefix, start, **k):
     k.setdefault("by_need", True)
+    k.setdefault("room", 0.92)
     return _pack(segs, prefix, start, book="1 Samuel", code="1SAM", **k)
 
 _T = {**S1.tokens(), **S2.tokens()}
