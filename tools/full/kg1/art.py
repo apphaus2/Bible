@@ -941,3 +941,88 @@ def asa_idol(p, w, h, seed):
          E.blaze(w * 0.5, h * 0.7, w * 0.16, h * 0.36, seed, n=7)]
     o.append(king_fig(p, w * 0.16, h * 0.92, fit(h * 0.92, h * 0.4), cloth="#1F3A7A"))
     return "".join(o)
+
+# ---- 1 Kings 16–17 ------------------------------------------------------------------------------------------------------
+MANTLE = ('<path d="M-30 -168 C -40 -150 -42 -120 -38 -90 L 38 -90 C 42 -120 40 -150 30 -168 Z" fill="#5A3A1E" stroke="#0D0D0F" stroke-width="2.4"></path>'
+          + "".join(f'<path d="M{x} -160 l -3 10 M{x + 6} -140 l -3 10 M{x - 4} -120 l -3 10" stroke="#3A2210" stroke-width="2"></path>' for x in (-24, -10, 4, 18))
+          + '<path d="M-26 -110 L 26 -110" stroke="#2A1408" stroke-width="5"></path>')
+def elijah_fig(p, x, y, s, flip=False, up=None):
+    """Elijah at a distance: a hairy mantle of brown over a dark tunic, a girdle of leather, bareheaded, black beard."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#4A3A2A", kind="Tunic", sw=3, flip=flip, up=up, extra=MANTLE + A.BLACK_BEARD)
+
+def baal_altar(p, w, h, seed):
+    """The house of Baal in Samaria: an altar for Baal and the Asherah pole, Ahab and Jezebel before it."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A2A3A", "#E8803A"), ground(w, h, h * 0.66, "#6A5A4A", dy=0),
+         f'<path d="M{f(w * 0.46)} {f(h * 0.2)} L {f(w * 0.54)} {f(h * 0.2)} L {f(w * 0.53)} {f(h * 0.7)} L {f(w * 0.47)} {f(h * 0.7)} Z" fill="#7A5A3A" stroke="#0D0D0F" stroke-width="2.4"></path>'
+         f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.2)}" r="{f(w * 0.04)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></circle>',
+         horned_altar(w * 0.5, h * 0.84, min(0.8, h / 380), fire=True, seed=seed)]
+    s = fit(b, h * 0.42)
+    o.append(king_fig(p, w * 0.18, b, s, cloth=AHAB_C))
+    o.append(mk.person(p, round(w * 0.82), round(b), round(s * 0.95, 3), body="#5A2A16", cloth="#1A1214", woman=True, hair="#0D0D0F", sw=3, flip=True, extra=CROWN))
+    return "".join(o)
+
+def samaria_hill(p, w, h, seed, city=True):
+    """The hill Samaria bought of Shemer for two talents of silver, and the city built upon it."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.5, seed, color="#7A8A6A", amp=12),
+         f'<path d="M{f(w * 0.1)} {f(h * 0.86)} C {f(w * 0.3)} {f(h * 0.4)} {f(w * 0.7)} {f(h * 0.4)} {f(w * 0.9)} {f(h * 0.86)} Z" fill="#8A9A5A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.86, "#A89A6A", dy=0)]
+    if city: o.append(J.jericho(w * 0.3, w * 0.7, h * 0.3, h * 0.52, seed, towers=3, houses=True))
+    return "".join(o)
+
+def cherith(p, w, h, seed, dry=False):
+    """Elijah hidden by the brook Cherith before the Jordan, the ravens bringing bread and flesh; dry=True: the brook dried up."""
+    r = random.Random(seed)
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0" if dry else "#8FD0E2", "#F3D8A0" if dry else "#E8F6FA"),
+         f'<path d="M-10 {f(h * 0.3)} L {f(w * 0.3)} {f(h * 0.36)} L {f(w * 0.36)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<path d="M{f(w + 10)} {f(h * 0.26)} L {f(w * 0.7)} {f(h * 0.34)} L {f(w * 0.64)} {f(h + 10)} L {f(w + 10)} {f(h + 10)} Z" fill="#7A5A3A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.72, "#A89070", dy=0)]
+    if dry: o.append(f'<path d="M{f(w * 0.36)} {f(h * 0.8)} C {f(w * 0.46)} {f(h * 0.76)} {f(w * 0.56)} {f(h * 0.84)} {f(w * 0.66)} {f(h * 0.8)}" stroke="#C8B080" stroke-width="18" fill="none"></path>'
+                     + "".join(f'<path d="M{f(w * (0.4 + i * 0.06))} {f(h * 0.8)} l 8 6 l -4 6" stroke="#7A5A3A" stroke-width="2" fill="none"></path>' for i in range(4)))
+    else: o.append(f'<path d="M{f(w * 0.36)} {f(h * 0.8)} C {f(w * 0.46)} {f(h * 0.76)} {f(w * 0.56)} {f(h * 0.84)} {f(w * 0.66)} {f(h * 0.8)}" stroke="#2C9DB8" stroke-width="16" fill="none"></path>')
+    s = fit(b, h * 0.4)
+    o.append(elijah_fig(p, w * 0.24, b, s))
+    if not dry:
+        for i in range(2):
+            x = w * (0.46 + i * 0.16); y = h * (0.2 + i * 0.08)
+            o.append(f'<path d="M{f(x - 30)} {f(y)} Q {f(x - 14)} {f(y - 20)} {f(x)} {f(y)} Q {f(x + 14)} {f(y - 20)} {f(x + 30)} {f(y)}" fill="#0D0D0F" stroke="#0D0D0F" stroke-width="3"></path>'
+                     f'<ellipse cx="{f(x)}" cy="{f(y + 4)}" rx="10" ry="6" fill="#0D0D0F"></ellipse><rect x="{f(x - 6)}" y="{f(y + 8)}" width="12" height="8" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1"></rect>')
+    return "".join(o)
+
+def zarephath(p, w, h, seed):
+    """At the gate of Zarephath a widow gathering sticks; Elijah calling to her."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0", "#F3D8A0"), S4.gatehouse(w * 0.76, b, w * 0.4, h * 0.6), ground(w, h, b, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(E.kneel(w * 0.52, b, s * 0.8, color="#3A3A3E", skin="#B98A6E", flip=True))
+    o.append("".join(f'<path d="M{f(w * 0.44 + i * 8)} {f(b - 4)} L {f(w * 0.5 + i * 8)} {f(b - 20)}" stroke="#5A3A22" stroke-width="4"></path>' for i in range(2)))
+    o.append(elijah_fig(p, w * 0.16, b, s))
+    return "".join(o)
+
+def jar_cruse(w, h, seed):
+    """The jar of meal and the cruse of oil that failed not."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1E"></rect>', V.rays(w * 0.5, h * 0.6, 30, 20, max(w, h), color="#FFE680", op=0.15),
+         ground(w, h, h * 0.84, "#2A1A10", dy=0)]
+    k = min(w, h) / 260
+    o.append(f'<g transform="translate({f(w * 0.38)} {f(h * 0.86)}) scale({f(k)})"><path d="M-40 0 C -56 -40 -52 -90 -30 -110 L -26 -126 L 26 -126 L 30 -110 C 52 -90 56 -40 40 0 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2.6"></path>'
+             '<ellipse cx="0" cy="-126" rx="26" ry="7" fill="#F3E8D0" stroke="#0D0D0F" stroke-width="2"></ellipse></g>'
+             f'<g transform="translate({f(w * 0.64)} {f(h * 0.86)}) scale({f(k)})"><path d="M-22 0 C -30 -20 -28 -44 -12 -54 L -10 -66 L 10 -66 L 12 -54 C 28 -44 30 -20 22 0 Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             '<path d="M12 -54 C 30 -60 36 -66 40 -76" stroke="#8A5A30" stroke-width="6" fill="none"></path><ellipse cx="0" cy="-66" rx="10" ry="3" fill="#E8C840"></ellipse></g>')
+    return "".join(o)
+
+def upper_chamber(p, w, h, seed, down=False):
+    """The chamber where Elijah abode, his own bed and a lamp; down=True: Elijah coming down the stair with the child to his
+    mother."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#D8B88A"></rect>', ground(w, h, b, "#8A6A4A", dy=0)]
+    s = fit(b, h * 0.42)
+    if down:
+        o.append("".join(f'<rect x="{f(w * (0.1 + i * 0.06))}" y="{f(b - (6 - i) * h * 0.06)}" width="{f(w * 0.06)}" height="{f(h * 0.06)}" fill="#A88A5A" stroke="#0D0D0F" stroke-width="1.6"></rect>' for i in range(6)))
+        o.append(elijah_fig(p, w * 0.46, b, s, up=[(-22, -158), (-10, -128), (14, -124)]) + f'<ellipse cx="{f(w * 0.46 + 12 * s)}" cy="{f(b - 128 * s)}" rx="{f(18 * s)}" ry="{f(10 * s)}" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+        o.append(mk.person(p, round(w * 0.74), round(b), round(s * 0.92, 3), body="#3A1E14", cloth="#3A3A3E", woman=True, hair="#3A3430", sw=3, flip=True, up=[(22, -158), (0, -150), (-20, -146)]))
+    else:
+        o.append(bed(w, h, w * 0.3, w * 0.8, b, cover="#E8E2D6", head="#D9A27A", hair="#2A1A10") + clay_lamp(w * 0.12, h * 0.5, min(1.2, h / 260)))
+        o.append(E.kneel(w * 0.2, b, s * 0.8, color="#4A3A2A", skin="#B98A6E"))
+    return "".join(o)

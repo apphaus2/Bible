@@ -807,6 +807,83 @@
    "w": 760,
    "h": 1080,
    "title": "103 · "
+  },
+  "1KI-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Elijah"
+  },
+  "1KI-C11-D-P01-JehuTheSonOfHanani.dc.html": {
+   "x": 840,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Jehu the Son of Hanani"
+  },
+  "1KI-C11-R-P01-.dc.html": {
+   "x": 1680,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · "
+  },
+  "1KI-C11-E-P01-OmriAndTheHillSama.dc.html": {
+   "x": 2520,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Omri and the Hill Samaria"
+  },
+  "1KI-C11-E-P02-OmriAndTheHillSama.dc.html": {
+   "x": 3360,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Omri and the Hill Samaria"
+  },
+  "1KI-C11-E-P03-AhabAndJezebel.dc.html": {
+   "x": 0,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Ahab and Jezebel"
+  },
+  "1KI-C11-E-P04-TheBrookCherith.dc.html": {
+   "x": 840,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · The Brook Cherith"
+  },
+  "1KI-C11-E-P05-TheWidowOfZarephat.dc.html": {
+   "x": 1680,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · The Widow of Zarephath"
+  },
+  "1KI-C11-E-P06-TheWidowOfZarephat.dc.html": {
+   "x": 2520,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · The Widow of Zarephath"
+  },
+  "1KI-C11-E-P07-SeeThySonLiveth.dc.html": {
+   "x": 3360,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · See, Thy Son Liveth"
+  },
+  "1KI-C11-E-P08-SeeThySonLiveth.dc.html": {
+   "x": 0,
+   "y": 40600,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · See, Thy Son Liveth"
   }
  },
  "order": [
@@ -923,7 +1000,18 @@
   "1KI-C10-E-P01-ShishakKingOfEgypt.dc.html",
   "1KI-C10-S-P01-.dc.html",
   "1KI-C10-F-P01-Ramah.dc.html",
-  "1KI-C10-T-P01-.dc.html"
+  "1KI-C10-T-P01-.dc.html",
+  "1KI-C11-00-Title.dc.html",
+  "1KI-C11-D-P01-JehuTheSonOfHanani.dc.html",
+  "1KI-C11-R-P01-.dc.html",
+  "1KI-C11-E-P01-OmriAndTheHillSama.dc.html",
+  "1KI-C11-E-P02-OmriAndTheHillSama.dc.html",
+  "1KI-C11-E-P03-AhabAndJezebel.dc.html",
+  "1KI-C11-E-P04-TheBrookCherith.dc.html",
+  "1KI-C11-E-P05-TheWidowOfZarephat.dc.html",
+  "1KI-C11-E-P06-TheWidowOfZarephat.dc.html",
+  "1KI-C11-E-P07-SeeThySonLiveth.dc.html",
+  "1KI-C11-E-P08-SeeThySonLiveth.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1002,6 +1090,13 @@
    "text": "Chapter 10 · Ahijah's Word (1 Kings 14–15)",
    "x": 0,
    "y": 35000
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Elijah (1 Kings 16–17)",
+   "x": 0,
+   "y": 37900
   }
  },
  "designSystems": [],

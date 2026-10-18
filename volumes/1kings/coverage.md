@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 566 verses — 566 full, 0 partial, 0 omitted.
+**So far:** 624 verses — 624 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Long Live King Solomon (1 Kings 1)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · Ahijah's Word (1 Kings 14–15)
 
 65 verses: 65 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · Elijah (1 Kings 16–17)
+
+58 verses: 58 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
