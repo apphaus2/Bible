@@ -550,3 +550,72 @@ def gold_vessels(w, h):
         o.append(re.sub(r'<path d="M[^"]*" fill="none" stroke="#8A8478"[^>]*></path>', "", S1.lamp(x, h * 0.9, s, lit=True)))
     o.append(f'<rect x="{f(w * 0.47)}" y="{f(h * 0.3)}" width="{f(w * 0.06)}" height="{f(h * 0.6)}" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2"></rect>' + label(w * 0.5, h * 0.26, "ORACLE", CY, 8))
     return "".join(o)
+
+# ---- 1 Kings 8 ----------------------------------------------------------------------------------------------------------
+def temple_front(x, base, wd, seed=1):
+    """The house of Jehovah seen from the court: the stone house, the porch, Jachin and Boaz, the side-chambers. wd = width."""
+    u = wd / 60
+    o = [f'<rect x="{f(x - 30 * u)}" y="{f(base - 18 * u)}" width="{f(60 * u)}" height="{f(18 * u)}" fill="#C8BC9C" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<rect x="{f(x - 20 * u)}" y="{f(base - 34 * u)}" width="{f(40 * u)}" height="{f(34 * u)}" fill="#E8DCC0" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<rect x="{f(x - 22 * u)}" y="{f(base - 36 * u)}" width="{f(44 * u)}" height="{f(3 * u)}" fill="#B8AC90" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<path d="M{f(x - 6 * u)} {f(base)} L {f(x - 6 * u)} {f(base - 16 * u)} L {f(x + 6 * u)} {f(base - 16 * u)} L {f(x + 6 * u)} {f(base)} Z" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2"></path>']
+    for dx in (-12, 12):
+        px = x + dx * u
+        o.append(f'<rect x="{f(px - 1.4 * u)}" y="{f(base - 20 * u)}" width="{f(2.8 * u)}" height="{f(20 * u)}" fill="{BRASS}" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 f'<ellipse cx="{f(px)}" cy="{f(base - 21.5 * u)}" rx="{f(2.4 * u)}" ry="{f(2 * u)}" fill="#C8863E" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    for i in range(5):
+        wx = x + (-16 + i * 7.5) * u
+        o.append(f'<rect x="{f(wx)}" y="{f(base - 30 * u)}" width="{f(2.4 * u)}" height="{f(2.4 * u)}" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="1"></rect>')
+    return "".join(o)
+
+def court_scene(p, w, h, seed, cloud=False, solomon=None, crowd=True, smoke=False):
+    """The court before the house of Jehovah full of the assembly; cloud=True: the cloud filling the house; solomon='pray'
+    (hands spread toward heaven before the altar) or 'bless' (standing, turned to the people)."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2" if not cloud else "#E8E2D6", "#F3E8C8" if not cloud else "#FFF4C2"),
+         ground(w, h, h * 0.66, "#C8B88A", dy=0), temple_front(w * 0.5, h * 0.66, w * 0.6, seed)]
+    if cloud:
+        r = random.Random(seed)
+        for i in range(14):
+            o.append(f'<circle cx="{f(w * 0.5 + r.uniform(-w * 0.3, w * 0.3))}" cy="{f(h * r.uniform(0.1, 0.5))}" r="{f(w * r.uniform(0.06, 0.12))}" fill="#F3EFE6" opacity="0.85"></circle>')
+        o.append(V.rays(w * 0.5, h * 0.4, 30, 20, max(w, h), color="#FFD23F", op=0.25))
+    if smoke:
+        o.append(horned_altar(w * 0.5, h * 0.86, min(0.8, h / 400), fire=True, seed=seed))
+    s = fit(b, h * 0.3)
+    if solomon == "pray":
+        o.append(horned_altar(w * 0.5, h * 0.82, min(0.7, h / 440)))
+        o.append(S3.dancer(w * 0.5, b, s * 1.1, p + "sd", [(-22, -158), (-40, -200), (-46, -238)], [(22, -158), (40, -200), (46, -238)], cloth=SOL_C, body="#5A2A16"))
+    elif solomon == "bless":
+        o.append(sol_fig(p, w * 0.5, b, s * 1.1, up=[(-22, -158), (-40, -190), (-50, -220)]))
+    if crowd:
+        o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.3, h * 0.74, b, 8, s * 0.6, s))
+        o.append(crowd_at(p, w, h, seed + 1, w * 0.7, w * 0.98, h * 0.74, b, 8, s * 0.6, s, flip=True))
+    return "".join(o)
+
+def ark_up(p, w, h, seed):
+    """The priests bringing up the ark of the covenant out of the city of David, the elders following, sacrifices by the way."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE680", "#F3D8A0"), J.city_hill(w * 0.84, h * 0.6, w * 0.3, h * 0.3, seed), ground(w, h, h * 0.62, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(J.ark_borne(p, w * 0.46, b, s, uid=p + "ab"))
+    o.append(crowd_at(p, w, h, seed, w * 0.7, w * 0.98, h * 0.7, b, 8, s * 0.6, s * 0.9, flip=True))
+    o.append(S4.altar(w * 0.1, b, min(0.9, h / 360), seed=seed))
+    return "".join(o)
+
+def ark_oracle(w, h):
+    """The ark in its place in the oracle under the wings of the cherubim, the ends of the staves seen from the holy place;
+    nothing in it save the two tables of stone."""
+    o = [cherubim(w, h)]
+    u = min(w * 0.8 / 20, h * 0.74 / 12); base = h * 0.9
+    o.append(f'<path d="M{f(w * 0.5 - 6 * u)} {f(base - 0.9 * u)} L {f(w * 0.5 + 6 * u)} {f(base - 0.9 * u)}" stroke="#8A5A1A" stroke-width="{f(0.25 * u)}"></path>')
+    o.append(tag(w * 0.5 + 5.6 * u, base - 0.9 * u, "THE STAVES", w * 0.5 + 7 * u, base - 3 * u) + tag(w * 0.5, base - 0.7 * u, "THE TWO TABLES OF STONE WITHIN", w * 0.5 - 6 * u, base - 4 * u))
+    return "".join(o)
+
+def feast_tents(p, w, h, seed):
+    """Fourteen days of feast, from the entrance of Hamath to the brook of Egypt; then the people going to their tents."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#F3D8A0"), J.city_hill(w * 0.5, h * 0.44, w * 0.5, h * 0.2, seed), ground(w, h, h * 0.46, "#C8A06A", dy=0),
+         N.camp(20, -10, w + 10, h * 0.5, h * 0.74, seed)]
+    s = fit(b, h * 0.3)
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.98, h * 0.8, b, 12, s * 0.7, s))
+    return "".join(o)

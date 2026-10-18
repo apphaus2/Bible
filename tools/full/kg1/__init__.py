@@ -30,5 +30,7 @@ META = {
      "blurb": "Hiram king of Tyre and the cedars of Lebanon floated in rafts by sea; the levy and the hewers; and the house of Jehovah as blueprints — threescore cubits long, built of stone made ready at the quarry so that neither hammer nor axe was heard; cedar within, the oracle overlaid with pure gold, the two cherubim of olive-wood, and seven years in building."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Pillars and the Sea", "range": "1 Kings 7", "bible_chapters": [7],
      "blurb": "Solomon's own house thirteen years — the house of the forest of Lebanon on four rows of cedar pillars, and the porch of judgment; Hiram of Tyre, the worker in brass; the two pillars Jachin and Boaz with their pomegranates and lily-work; the molten sea upon twelve oxen; the ten bases and lavers; and the vessels of gold, all as blueprints."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Glory of Jehovah", "range": "1 Kings 8", "bible_chapters": [8],
+     "blurb": "The ark brought up from Zion into the oracle, under the wings of the cherubim; the cloud filling the house, so that the priests could not stand to minister; Solomon's prayer with his hands spread toward heaven — will God in very deed dwell on the earth? hear thou in heaven, and forgive; not one word hath failed; and the feast of fourteen days."},
   ],
 }

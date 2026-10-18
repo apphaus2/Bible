@@ -401,6 +401,111 @@
    "w": 760,
    "h": 1080,
    "title": "50 · The Vessels of Gold"
+  },
+  "1KI-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Glory of Jehovah"
+  },
+  "1KI-C06-D-P01-TheArkIntoItsPlace.dc.html": {
+   "x": 840,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Ark into Its Place"
+  },
+  "1KI-C06-D-P02-TheArkIntoItsPlace.dc.html": {
+   "x": 1680,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Ark into Its Place"
+  },
+  "1KI-C06-D-P03-TheCloudFilledTheH.dc.html": {
+   "x": 2520,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Cloud Filled the House"
+  },
+  "1KI-C06-D-P04-BlessedBeJehovah.dc.html": {
+   "x": 3360,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Blessed Be Jehovah"
+  },
+  "1KI-C06-D-P05-ThePrayerOfSolomon.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Prayer of Solomon"
+  },
+  "1KI-C06-D-P06-ThePrayerOfSolomon.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Prayer of Solomon"
+  },
+  "1KI-C06-D-P07-WillGodDwellOnTheE.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Will God Dwell on the Earth?"
+  },
+  "1KI-C06-D-P08-WillGodDwellOnTheE.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Will God Dwell on the Earth?"
+  },
+  "1KI-C06-D-P09-WillGodDwellOnTheE.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Will God Dwell on the Earth?"
+  },
+  "1KI-C06-D-P10-TheForeigner.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · The Foreigner"
+  },
+  "1KI-C06-D-P11-TheForeigner.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · The Foreigner"
+  },
+  "1KI-C06-D-P12-TheForeigner.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The Foreigner"
+  },
+  "1KI-C06-D-P13-NotOneWordHathFail.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Not One Word Hath Failed"
+  },
+  "1KI-C06-D-P14-NotOneWordHathFail.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Not One Word Hath Failed"
   }
  },
  "order": [
@@ -459,7 +564,22 @@
   "1KI-C05-D-P06-TheTenBases.dc.html",
   "1KI-C05-D-P07-TheTenLavers.dc.html",
   "1KI-C05-D-P08-TheTenLavers.dc.html",
-  "1KI-C05-D-P09-TheVesselsOfGold.dc.html"
+  "1KI-C05-D-P09-TheVesselsOfGold.dc.html",
+  "1KI-C06-00-Title.dc.html",
+  "1KI-C06-D-P01-TheArkIntoItsPlace.dc.html",
+  "1KI-C06-D-P02-TheArkIntoItsPlace.dc.html",
+  "1KI-C06-D-P03-TheCloudFilledTheH.dc.html",
+  "1KI-C06-D-P04-BlessedBeJehovah.dc.html",
+  "1KI-C06-D-P05-ThePrayerOfSolomon.dc.html",
+  "1KI-C06-D-P06-ThePrayerOfSolomon.dc.html",
+  "1KI-C06-D-P07-WillGodDwellOnTheE.dc.html",
+  "1KI-C06-D-P08-WillGodDwellOnTheE.dc.html",
+  "1KI-C06-D-P09-WillGodDwellOnTheE.dc.html",
+  "1KI-C06-D-P10-TheForeigner.dc.html",
+  "1KI-C06-D-P11-TheForeigner.dc.html",
+  "1KI-C06-D-P12-TheForeigner.dc.html",
+  "1KI-C06-D-P13-NotOneWordHathFail.dc.html",
+  "1KI-C06-D-P14-NotOneWordHathFail.dc.html"
  ],
  "notes": {
   "Main": {
@@ -503,6 +623,13 @@
    "text": "Chapter 5 · The Pillars and the Sea (1 Kings 7)",
    "x": 0,
    "y": 16900
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Glory of Jehovah (1 Kings 8)",
+   "x": 0,
+   "y": 19800
   }
  },
  "designSystems": [],
