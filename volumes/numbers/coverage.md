@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1212 verses — 1212 full, 0 partial, 0 omitted.
+**So far:** 1288 verses — 1288 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Numbering (Numbers 1–2)
 
@@ -91,5 +91,11 @@ Every verse is on the page in full.
 ## Chapter 15 · The Journeys (Numbers 32–33)
 
 98 verses: 98 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 16 · The Borders of the Land (Numbers 34–36)
+
+76 verses: 76 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

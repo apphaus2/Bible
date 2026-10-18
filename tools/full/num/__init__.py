@@ -47,5 +47,7 @@ META = {
      "blurb": "When a man voweth a vow he shall not break his word; the vows of a daughter in her father's house and of a wife; then a thousand of every tribe sent against Midian with Phinehas and the trumpets, the prey divided between the men of war and the congregation, and the officers' gold brought into the tent of meeting for a memorial."},
     {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "The Journeys", "range": "Numbers 32–33", "bible_chapters": [32, 33],
      "blurb": "Reuben and Gad ask for the land of Gilead, a place for cattle — shall your brethren go to the war, and shall ye sit here? be sure your sin will find you out; and the journeys of the children of Israel, every encampment from Rameses to the plains of Moab by the Jordan at Jericho."},
+    {"module": "ch16", "dir": "chapter-16", "num": "16", "name": "The Borders of the Land", "range": "Numbers 34–36", "bible_chapters": [34, 35, 36],
+     "blurb": "The land of Canaan according to the borders thereof, from the wilderness of Zin to the entrance of Hamath and from the great sea to the Jordan; the princes that shall divide it; forty and eight cities for the Levites and six cities of refuge for the manslayer; and the daughters of Zelophehad married within the tribe of their father."},
   ],
 }

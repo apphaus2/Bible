@@ -81,8 +81,17 @@ There are two editions:
 | Numbers | 13 · The Daughters of Zelophehad | 27–29 | title + 13 (pp. 169–181) | 94/94 verses full (the feasts as law cells with the beasts counted) | `volumes/numbers/` |
 | Numbers | 14 · Vows and the War with Midian | 30–31 | title + 9 (pp. 182–190) | 70/70 verses full (vows as law cells; the war told with restraint; the spoil as a chart) | `volumes/numbers/` |
 | Numbers | 15 · The Journeys | 32–33 | title + 12 (pp. 191–202) | 98/98 verses full (the 42 stations as a lit route map over station cells) | `volumes/numbers/` |
+| Numbers | 16 · The Borders of the Land | 34–36 | title + 11 (pp. 203–213) | 76/76 verses full (the borders as a map; refuge as law cells) | `volumes/numbers/` |
+| **Numbers** | **complete: cover + 16 chapters** | **1–36** | **230 pages (213 numbered)** | **1,288 verses: all full** | `volumes/numbers/` |
 
-**Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
+**Genesis, Exodus, Leviticus and Numbers are complete.** Next: Deuteronomy (`tools/full/deu/`). Numbers is `tools/full/num/`
+(16 chapters, plan in `num/__init__.py`). Its chapters number their pages with `num/pages.py` (`PG = Pages(start)`, `@PG.P(...)`,
+`PG.extend(packed)`), so hand-drawn pages and pages packed by `exo.kit.law_pages` / `blueprints` mix in reading order; copy that
+for new volumes. Lists are cells: `num.ch01.tally()` (a tribe and its number), `genesis.ch03.clan()`, `num.art15.station()`
+(one encampment). Maps: `num/art.camp_plan()`, `art5.march_plan()`, `art7.spy_map()`, `art10.journeys()`, `art15.stations_map()`,
+`art16.borders()`. Restraint in Numbers: 15:36 as the heap of stones; 16:31–35 as tents going down and censers; 25:4–8 as an empty
+plain and a shut pavilion; 31 (the war with Midian) as distant smoke and the column of the prey, Moses' words over his face.
+`exo.kit.law_pages(..., carry=True)` keeps the last page head on pages without one. Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·
 2 The Consecration 6–8 · 3 Strange Fire 9–11 · 4 The Plague of Leprosy 12–13 · 5 The Cleansing 14–15 · 6 The Day of
 Atonement 16–18 · 7 Holy unto Jehovah 19–22 · 8 The Set Feasts 23–25 · 9 Blessing and Curse 26–27). The laws are

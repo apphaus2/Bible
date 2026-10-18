@@ -1535,6 +1535,90 @@
    "w": 760,
    "h": 1080,
    "title": "202 · As Pricks in Your Eyes"
+  },
+  "NUM-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 67100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · The Borders of the Land"
+  },
+  "NUM-C16-P01-South.dc.html": {
+   "x": 840,
+   "y": 67100,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · When Ye Come into the Land of Canaan"
+  },
+  "NUM-C16-P02-North.dc.html": {
+   "x": 1680,
+   "y": 67100,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · This Shall Be Your North Border"
+  },
+  "NUM-C16-P03-East.dc.html": {
+   "x": 2520,
+   "y": 67100,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · According to the Borders Thereof Round About"
+  },
+  "NUM-C16-P04-Dividers.dc.html": {
+   "x": 3360,
+   "y": 67100,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · The Men That Shall Divide the Land"
+  },
+  "NUM-C16-L-P01-TheCitiesOfTheLevi.dc.html": {
+   "x": 0,
+   "y": 68300,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · The Cities of the Levites"
+  },
+  "NUM-C16-L-P02-CitiesOfRefuge.dc.html": {
+   "x": 840,
+   "y": 68300,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · Cities of Refuge"
+  },
+  "NUM-C16-L-P03-HeIsAMurderer.dc.html": {
+   "x": 1680,
+   "y": 68300,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · He Is a Murderer"
+  },
+  "NUM-C16-L-P04-IfHeThrustHimSudde.dc.html": {
+   "x": 2520,
+   "y": 68300,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · If He Thrust Him Suddenly"
+  },
+  "NUM-C16-L-P05-YeShallNotPolluteT.dc.html": {
+   "x": 3360,
+   "y": 68300,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · Ye Shall Not Pollute the Land"
+  },
+  "NUM-C16-P05-Gilead.dc.html": {
+   "x": 0,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · The Tribe of the Sons of Joseph Speaketh Right"
+  },
+  "NUM-C16-P06-End.dc.html": {
+   "x": 840,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · In the Plains of Moab"
   }
  },
  "order": [
@@ -1755,7 +1839,19 @@
   "NUM-C15-P09-Wanderings.dc.html",
   "NUM-C15-P10-Hor.dc.html",
   "NUM-C15-P11-Moab.dc.html",
-  "NUM-C15-P12-Pricks.dc.html"
+  "NUM-C15-P12-Pricks.dc.html",
+  "NUM-C16-00-Title.dc.html",
+  "NUM-C16-P01-South.dc.html",
+  "NUM-C16-P02-North.dc.html",
+  "NUM-C16-P03-East.dc.html",
+  "NUM-C16-P04-Dividers.dc.html",
+  "NUM-C16-L-P01-TheCitiesOfTheLevi.dc.html",
+  "NUM-C16-L-P02-CitiesOfRefuge.dc.html",
+  "NUM-C16-L-P03-HeIsAMurderer.dc.html",
+  "NUM-C16-L-P04-IfHeThrustHimSudde.dc.html",
+  "NUM-C16-L-P05-YeShallNotPolluteT.dc.html",
+  "NUM-C16-P05-Gilead.dc.html",
+  "NUM-C16-P06-End.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1869,6 +1965,13 @@
    "text": "Chapter 15 · The Journeys (Numbers 32–33)",
    "x": 0,
    "y": 62700
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · The Borders of the Land (Numbers 34–36)",
+   "x": 0,
+   "y": 66800
   }
  },
  "designSystems": [],
