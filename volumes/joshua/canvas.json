@@ -527,6 +527,62 @@
    "w": 760,
    "h": 1080,
    "title": "66 · Thou Art a Great People"
+  },
+  "JOS-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 27100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Lots of the Seven Tribes"
+  },
+  "JOS-C08-D-P01-AtShiloh.dc.html": {
+   "x": 840,
+   "y": 27100,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · At Shiloh"
+  },
+  "JOS-C08-D-P02-AtShiloh.dc.html": {
+   "x": 1680,
+   "y": 27100,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · At Shiloh"
+  },
+  "JOS-C08-L-P01-TheSevenLots.dc.html": {
+   "x": 2520,
+   "y": 27100,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Seven Lots"
+  },
+  "JOS-C08-L-P02-TheSevenLots.dc.html": {
+   "x": 3360,
+   "y": 27100,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Seven Lots"
+  },
+  "JOS-C08-L-P03-TheSevenLots.dc.html": {
+   "x": 0,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Seven Lots"
+  },
+  "JOS-C08-L-P04-TheSevenLots.dc.html": {
+   "x": 840,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · The Seven Lots"
+  },
+  "JOS-C08-E-P01-TimnathSerah.dc.html": {
+   "x": 1680,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Timnath-serah"
   }
  },
  "order": [
@@ -603,7 +659,15 @@
   "JOS-C07-J-P01-TheLotOfJoseph.dc.html",
   "JOS-C07-E-P01-TheDaughtersOfZelo.dc.html",
   "JOS-C07-M-P01-TheBorderOfManasse.dc.html",
-  "JOS-C07-F-P01-ThouArtAGreatPeopl.dc.html"
+  "JOS-C07-F-P01-ThouArtAGreatPeopl.dc.html",
+  "JOS-C08-00-Title.dc.html",
+  "JOS-C08-D-P01-AtShiloh.dc.html",
+  "JOS-C08-D-P02-AtShiloh.dc.html",
+  "JOS-C08-L-P01-TheSevenLots.dc.html",
+  "JOS-C08-L-P02-TheSevenLots.dc.html",
+  "JOS-C08-L-P03-TheSevenLots.dc.html",
+  "JOS-C08-L-P04-TheSevenLots.dc.html",
+  "JOS-C08-E-P01-TimnathSerah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -661,6 +725,13 @@
    "text": "Chapter 7 · The Lot of Judah (Joshua 15–17)",
    "x": 0,
    "y": 23900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Lots of the Seven Tribes (Joshua 18–19)",
+   "x": 0,
+   "y": 26800
   }
  },
  "designSystems": [],

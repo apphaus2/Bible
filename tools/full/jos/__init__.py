@@ -34,5 +34,7 @@ META = {
      "blurb": "The kings smitten beyond the Jordan and the thirty and one kings on this side; Joshua old and well stricken in years, and very much land yet to be possessed; the inheritance of Reuben, Gad and the half-tribe of Manasseh beyond the Jordan; and Caleb at fourscore and five: give me this hill-country."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Lot of Judah", "range": "Joshua 15–17", "bible_chapters": [15, 16, 17],
      "blurb": "The border of Judah and every one of its cities, with Caleb at Hebron and Achsah asking for springs of water; the lot of Joseph, Ephraim and Manasseh; the daughters of Zelophehad; and the children of Joseph, a great people, sent up to the forest though the Canaanites have chariots of iron."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Lots of the Seven Tribes", "range": "Joshua 18–19", "bible_chapters": [18, 19],
+     "blurb": "The tent of meeting set up at Shiloh; how long are ye slack to go in and possess the land? Three men of each tribe describe it into seven portions in a book, and Joshua casts lots before Jehovah: Benjamin, Simeon, Zebulun, Issachar, Asher, Naphtali and Dan; and Timnath-serah for Joshua."},
   ],
 }

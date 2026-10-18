@@ -578,3 +578,40 @@ def forest(p, w, h, seed):
     for i in range(4):
         o.append(E3.chariot(w * (0.16 + i * 0.22), h * 0.9, 0.36, flip=i % 2 == 1, color="#4A4A5A", driver="#3A3A4A"))
     return "".join(o)
+
+# ---- Joshua 18–19 -------------------------------------------------------------------------------------------------------
+import samuel1 as S1, samuel3 as S3
+def shiloh(p, w, h, seed, lots=False, people=True):
+    """Shiloh: the tent of meeting set up in its linen court on the hill; lots=True: Joshua casting lots before it, the
+    three men of each tribe with the book of the land described by cities into seven portions."""
+    r = random.Random(seed); b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8D8B0"></rect>', sun(w * 0.86, h * 0.14, 16, op=0.3),
+         hills(w, h, h * 0.42, seed, color="#9AAA6A", amp=14), S1.shiloh(w * 0.62, h * 0.6, w * 0.5, h * 0.36), ground(w, h, h * 0.6, "#B8A878", dy=0)]
+    s = fit(b, h * 0.42)
+    if lots:
+        o.append(joshua_fig(p, w * 0.5, b, s, up=[(-22, -158), (4, -150), (30, -150)]))
+        o.append(f'<circle cx="{f(w * 0.5 + 34 * s)}" cy="{f(b - 150 * s)}" r="{f(7 * s)}" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.6"></circle>')
+        for i in range(6):
+            x = w * (0.06 + i * 0.06)
+            o.append(man(p, x, b - (i % 2) * 4, s * 0.92, r.choice(list(TRIBE_C.values()))))
+        o.append(S3.letter(w * 0.24, b - 110 * s, 0.7 * s * 2))
+    elif people:
+        o.append(crowd_at(p, w, h, seed, 0, w * 0.36, h * 0.68, b, 14, fit(h * 0.68, h * 0.5) * 0.8, s))
+    return "".join(o)
+
+def surveyors(p, w, h, seed):
+    """Three men of each tribe walk through the land and describe it by cities into seven portions in a book."""
+    o = [grid_bg(w, h)]
+    regions = [(0.1, 0.1, 0.4, 0.32), (0.42, 0.1, 0.9, 0.3), (0.1, 0.34, 0.5, 0.56), (0.52, 0.32, 0.9, 0.56), (0.1, 0.58, 0.46, 0.8), (0.48, 0.58, 0.9, 0.8), (0.2, 0.82, 0.8, 0.94)]
+    for i, (x0, y0, x1, y1) in enumerate(regions):
+        o.append(f'<rect x="{f(w * x0)}" y="{f(h * y0)}" width="{f(w * (x1 - x0))}" height="{f(h * (y1 - y0))}" fill="none" stroke="#FFD23F" stroke-width="1.6" stroke-dasharray="6 4"></rect>'
+                 + label(w * x0 + 8, h * y0 + 16, f"PORTION {i + 1}", "#FFD23F", 8, "start"))
+    return "".join(o)
+
+def timnath(p, w, h, seed):
+    """Timnath-serah in the hill-country of Ephraim: Joshua built the city, and dwelt therein."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.2, h * 0.2, 18, color="#FF8A3D", op=0.35),
+         hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=18), J.city_hill(w * 0.62, h * 0.7, w * 0.3, h * 0.34, seed), ground(w, h, h * 0.7, "#B89A6A", dy=0)]
+    o.append(joshua_fig(p, w * 0.2, b, fit(b, h * 0.4)))
+    return "".join(o)
