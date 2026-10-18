@@ -34,5 +34,7 @@ META = {
      "blurb": "The ark brought up from Zion into the oracle, under the wings of the cherubim; the cloud filling the house, so that the priests could not stand to minister; Solomon's prayer with his hands spread toward heaven — will God in very deed dwell on the earth? hear thou in heaven, and forgive; not one word hath failed; and the feast of fourteen days."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Queen of Sheba", "range": "1 Kings 9–10", "bible_chapters": [9, 10],
      "blurb": "Jehovah appears to Solomon a second time — I have hallowed this house; the land of Cabul; the cities of the levy; the navy at Ezion-geber and the gold of Ophir; the queen of Sheba with her very great train and her hard questions — behold, the half was not told me; the throne of ivory with its twelve lions; and silver in Jerusalem as stones."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "His Heart Turned Away", "range": "1 Kings 11", "bible_chapters": [11],
+     "blurb": "Solomon's foreign wives turn away his heart, and the high places of Chemosh and Molech rise on the mount before Jerusalem; I will surely rend the kingdom from thee; the adversaries Hadad and Rezon; the prophet Ahijah's new garment rent in twelve pieces — take thee ten pieces; Jeroboam fled into Egypt; and Solomon slept with his fathers."},
   ],
 }

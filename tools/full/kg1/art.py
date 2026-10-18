@@ -623,7 +623,7 @@ def feast_tents(p, w, h, seed):
     return "".join(o)
 
 # ---- 1 Kings 9–10 -------------------------------------------------------------------------------------------------------
-import judges2 as J2
+import judges2 as J2, egypt as EG
 def ship(x, y, s=1.0, sail="#E8E2D6", flip=False):
     """A ship of the navy: a curved hull, a mast and a square sail, a row of oars. (x, y) = waterline centre."""
     sx = -s if flip else s
@@ -733,4 +733,74 @@ def tribute(p, w, h, seed):
         o.append(man(p, x, b - (i % 2) * 8, s * 0.9, ["#6A1A5A", "#1F5FAD", "#2E6B3A", "#B5652E", "#E8E2D6"][i], up=[(22, -158), (30, -170), (36, -186)])
                  + f'<path d="M{f(x + 36 * s * 0.9)} {f(b - 186 * s * 0.9)} l -10 -18 l 20 0 Z" fill="{["#C8C8D0", "#E8B830"][i % 2]}" stroke="#0D0D0F" stroke-width="1.6"></path>')
     o.append(E3.horse(w * 0.78, b, min(0.7, h / 400)))
+    return "".join(o)
+
+# ---- 1 Kings 11 ---------------------------------------------------------------------------------------------------------
+def high_places(p, w, h, seed):
+    """The mount before Jerusalem with the high places of Chemosh and Molech, smoke going up from strange altars; the city
+    below at dusk."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A1A3A", "#C8603A"),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} C {f(w * 0.46)} {f(h * 0.3)} {f(w * 0.8)} {f(h * 0.26)} {f(w + 10)} {f(h * 0.36)} L {f(w + 10)} {f(h + 10)} Z" fill="#4A3A3A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         J.city_hill(w * 0.2, h * 0.92, w * 0.4, h * 0.3, seed), ground(w, h, h * 0.92, "#2A1E1E", dy=0)]
+    for i, (x, y) in enumerate(((0.6, 0.36), (0.78, 0.3), (0.92, 0.36))):
+        o.append(f'<path d="M{f(w * x - 14)} {f(h * y)} L {f(w * x - 10)} {f(h * y - 20)} L {f(w * x + 10)} {f(h * y - 20)} L {f(w * x + 14)} {f(h * y)} Z" fill="#5A5A6A" stroke="#0D0D0F" stroke-width="2"></path>'
+                 + E.blaze(w * x, h * y - 20, 12, 24, seed + i, n=3)
+                 + f'<path d="M{f(w * x)} {f(h * y - 30)} C {f(w * x - 14)} {f(h * y - 60)} {f(w * x + 14)} {f(h * y - 90)} {f(w * x)} -10" stroke="#5A4A5A" stroke-width="10" fill="none" opacity="0.5"></path>')
+    return "".join(o)
+
+def wives(p, w, h, seed):
+    """Solomon among his foreign wives, each with her own god's incense burning."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84)]
+    s = fit(b, h * 0.4)
+    o.append(sol_fig(p, w * 0.5, b, s * 0.95))
+    for i, c in enumerate(("#8A1E2E", "#2E6B3A", "#B5652E", "#6A1A5A", "#1F5F7A", "#C8A030")):
+        x = w * (0.08 + i * 0.17) if i < 3 else w * (0.08 + i * 0.17 + 0.06)
+        o.append(mk.person(p, round(x), round(b - (i % 2) * 6), round(s * 0.84, 3), body="#5A2A16", cloth=c, woman=True, hair="#1A1210", sw=3, flip=i >= 3))
+    return "".join(o)
+
+def hadad(p, w, h, seed):
+    """Hadad the Edomite, a little child, fled into Egypt; Pharaoh's house by the Nile."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE680", "#F3D8A0"), EG.pyramid(w * 0.78, h * 0.62, w * 0.3, h * 0.3), ground(w, h, h * 0.62, "#E8C88A", dy=0),
+         f'<path d="M-10 {f(h * 0.7)} C {f(w * 0.3)} {f(h * 0.68)} {f(w * 0.6)} {f(h * 0.74)} {f(w + 10)} {f(h * 0.7)}" stroke="#2C7DA8" stroke-width="10" fill="none"></path>']
+    s = fit(b, h * 0.36)
+    for i in range(3):
+        o.append(man(p, w * (0.2 + i * 0.1), b, s * (0.9 if i != 1 else 0.5), ["#8A6A4A", "#C8703A", "#6A5A3A"][i]))
+    return "".join(o)
+
+def damascus(p, w, h, seed):
+    """Rezon reigning in Damascus, a walled city on the plain under the mountains."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.36, seed, color="#8A8A9A", amp=30),
+         ground(w, h, h * 0.6, "#B8A86A", dy=0), J.jericho(w * 0.2, w * 0.8, h * 0.4, h * 0.7, seed, towers=4, houses=True)]
+    return "".join(o)
+
+def rent_garment(p, w, h, seed, pieces=False):
+    """Ahijah and Jeroboam alone in the field, Ahijah's new garment; pieces=True: the garment rent in twelve pieces, ten held
+    out to Jeroboam."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.5, seed, color="#7A9A5A", amp=12), ground(w, h, h * 0.6, "#9CCB5E", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(prophet_fig(p, w * 0.32, b, s, cloth="#5A5A6A", up=[(22, -158), (40, -150), (60, -146)] if pieces else None))
+    o.append(mk.person(p, round(w * 0.7), round(b), round(s, 3), body=SKIN, cloth="#2E6B3A", kind="Tunic", sw=3, flip=True, extra=A.headcloth("#2E6B3A") + A.BLACK_BEARD))
+    if pieces:
+        r = random.Random(seed)
+        for i in range(12):
+            x = w * 0.5 + (i % 6 - 2.5) * w * 0.04; y = b - (150 if i < 10 else 40) * s - (i // 6) * 22
+            if i >= 10: x = w * (0.2 + (i - 10) * 0.06); y = b - 4
+            o.append(f'<rect x="{f(x - 10)}" y="{f(y - 8)}" width="20" height="16" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="1.6" transform="rotate({f(r.uniform(-20, 20))} {f(x)} {f(y)})"></rect>')
+    else:
+        o.append(f'<path d="M{f(w * 0.32 - 30 * s)} {f(b - 150 * s)} L {f(w * 0.32 + 30 * s)} {f(b - 150 * s)} L {f(w * 0.32 + 40 * s)} {f(b - 10 * s)} L {f(w * 0.32 - 40 * s)} {f(b - 10 * s)} Z" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="2" opacity="0.9"></path>')
+    return "".join(o)
+
+def ten_two(w, h):
+    """The kingdom rent: twelve tribes, ten given to Jeroboam, one kept for David's sake (a technical map of the tribes)."""
+    o = [grid_bg(w, h)]
+    names = ["REUBEN", "SIMEON", "LEVI", "JUDAH", "ISSACHAR", "ZEBULUN", "DAN", "NAPHTALI", "GAD", "ASHER", "EPHRAIM", "MANASSEH", "BENJAMIN"]
+    tribes = [n for n in names if n not in ("LEVI",)]
+    for i, n in enumerate(tribes):
+        x = w * (0.08 + (i % 6) * 0.17); y = h * (0.3 + (i // 6) * 0.3)
+        c = "#FFD23F" if n == "JUDAH" else ("#8FD0E2" if n == "BENJAMIN" else "#D7261E")
+        o.append(node(x, y, n, c, r=6, dy=-12, size=9))
+    o.append(label(w * 0.04, h * 0.84, "RED · TEN TRIBES TO JEROBOAM", "#D7261E", 9, "start") + label(w * 0.96, h * 0.84, "GOLD · ONE TRIBE FOR DAVID'S SAKE", "#FFD23F", 9, "end"))
     return "".join(o)

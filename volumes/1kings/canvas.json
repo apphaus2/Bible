@@ -583,6 +583,62 @@
    "w": 760,
    "h": 1080,
    "title": "74 · The Throne of Ivory"
+  },
+  "1KI-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · His Heart Turned Away"
+  },
+  "1KI-C08-D-P01-ManyForeignWomen.dc.html": {
+   "x": 840,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Many Foreign Women"
+  },
+  "1KI-C08-D-P02-IWillRendTheKingdo.dc.html": {
+   "x": 1680,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · I Will Rend the Kingdom"
+  },
+  "1KI-C08-D-P03-HadadTheEdomite.dc.html": {
+   "x": 2520,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Hadad the Edomite"
+  },
+  "1KI-C08-D-P04-Rezon.dc.html": {
+   "x": 3360,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Rezon"
+  },
+  "1KI-C08-D-P05-TwelvePieces.dc.html": {
+   "x": 0,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Twelve Pieces"
+  },
+  "1KI-C08-D-P06-TwelvePieces.dc.html": {
+   "x": 840,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Twelve Pieces"
+  },
+  "1KI-C08-D-P07-TwelvePieces.dc.html": {
+   "x": 1680,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Twelve Pieces"
   }
  },
  "order": [
@@ -667,7 +723,15 @@
   "1KI-C07-D-P07-TheHalfWasNotToldM.dc.html",
   "1KI-C07-D-P08-SixHundredThreesco.dc.html",
   "1KI-C07-D-P09-TheThroneOfIvory.dc.html",
-  "1KI-C07-D-P10-TheThroneOfIvory.dc.html"
+  "1KI-C07-D-P10-TheThroneOfIvory.dc.html",
+  "1KI-C08-00-Title.dc.html",
+  "1KI-C08-D-P01-ManyForeignWomen.dc.html",
+  "1KI-C08-D-P02-IWillRendTheKingdo.dc.html",
+  "1KI-C08-D-P03-HadadTheEdomite.dc.html",
+  "1KI-C08-D-P04-Rezon.dc.html",
+  "1KI-C08-D-P05-TwelvePieces.dc.html",
+  "1KI-C08-D-P06-TwelvePieces.dc.html",
+  "1KI-C08-D-P07-TwelvePieces.dc.html"
  ],
  "notes": {
   "Main": {
@@ -725,6 +789,13 @@
    "text": "Chapter 7 · The Queen of Sheba (1 Kings 9–10)",
    "x": 0,
    "y": 23900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · His Heart Turned Away (1 Kings 11)",
+   "x": 0,
+   "y": 28000
   }
  },
  "designSystems": [],
