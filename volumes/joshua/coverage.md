@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 279 verses — 279 full, 0 partial, 0 omitted.
+**So far:** 351 verses — 351 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Be Strong and of Good Courage (Joshua 1–2)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · The Sun Stood Still (Joshua 10–11)
 
 66 verses: 66 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · The Land That Remaineth (Joshua 12–14)
+
+72 verses: 72 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -30,5 +30,7 @@ META = {
      "blurb": "An ambush behind the city and the javelin stretched out toward Ai; the smoke of the city ascending up to heaven; an altar of unhewn stones in mount Ebal and the law read before all Israel; then the Gibeonites with mouldy bread and rent wine-skins, a covenant made without asking counsel at the mouth of Jehovah, and the hewers of wood and drawers of water."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Sun Stood Still", "range": "Joshua 10–11", "bible_chapters": [10, 11],
      "blurb": "Five kings against Gibeon; a night march from Gilgal and great stones from heaven; Sun, stand thou still upon Gibeon, and thou, Moon, in the valley of Aijalon; the cave at Makkedah; the southern cities taken one by one; then the kings of the north at the waters of Merom, Hazor burnt, and the land had rest from war."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Land That Remaineth", "range": "Joshua 12–14", "bible_chapters": [12, 13, 14],
+     "blurb": "The kings smitten beyond the Jordan and the thirty and one kings on this side; Joshua old and well stricken in years, and very much land yet to be possessed; the inheritance of Reuben, Gad and the half-tribe of Manasseh beyond the Jordan; and Caleb at fourscore and five: give me this hill-country."},
   ],
 }

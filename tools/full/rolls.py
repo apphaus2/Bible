@@ -13,16 +13,23 @@ from genesis.ch03 import clan
 
 ROOM = 1022 - 22
 
-def need(text, s):
-    return 66 + math.ceil(len(text) / (672 / (s * 0.64))) * s * 1.5
+def need(text, s, ncol=1):
+    width = (672 - 12 * (ncol - 1)) / ncol - (0 if ncol == 1 else 6)
+    return 66 + math.ceil(len(text) / (width / (s * 0.64))) * s * 1.5
 
-def roll_page(cells, title, n, tag="", hi=22.0):
-    """One page of cells (name, text, ref, accent)."""
-    room = ROOM - 12 * (len(cells) - 1)
+def _rows(cells, s, ncol):
+    """Row heights: each row as tall as its tallest cell."""
+    hs = [need(t, s, ncol) for _, t, _, _ in cells]
+    return [max(hs[i:i + ncol]) for i in range(0, len(hs), ncol)]
+
+def roll_page(cells, title, n, tag="", hi=22.0, ncol=1):
+    """One page of cells (name, text, ref, accent), in ncol columns."""
+    nrow = math.ceil(len(cells) / ncol)
+    room = ROOM - 12 * (nrow - 1)
     s = hi
-    while s > 10 and sum(need(t, s) for _, t, _, _ in cells) > room: s -= 0.5
-    fr = " ".join(f"{need(t, s):.0f}fr" for _, t, _, _ in cells)
-    body = grid([clan(nm, t, ref, c, size=s) for nm, t, ref, c in cells], fr, ncol=1)
+    while s > 10 and sum(_rows(cells, s, ncol)) > room: s -= 0.5
+    fr = " ".join(f"{x:.0f}fr" for x in _rows(cells, s, ncol))
+    body = grid([clan(nm, t, ref, c, size=s) for nm, t, ref, c in cells], fr, ncol=ncol)
     if tag:
         body += (f'\n  <div data-label style="position: absolute; left: 26px; right: 26px; top: 8px; text-align: center; font-size: 9px; font-weight: 600; '
                  f'letter-spacing: 0.24em; color: #6B6862">{tag}</div>')
@@ -36,16 +43,19 @@ def _span(refs, code):
     if a == b: return a
     return f"{a}–{b.split(':')[1]}" if a.split(":")[0] == b.split(":")[0] else f"{a}–{b}"
 
-def roll_pages(items, prefix, start, book, code, tag="", size=15, most=7, head=""):
+def roll_pages(items, prefix, start, book, code, tag="", size=13, most=8, head="", ncol=1):
     """Pack items (name, text, ref, accent, head-or-None) into pages; returns [(file, board title, fn)] like discourse.pack.
     A page breaks when the cells would not fit at `size` px, after `most` cells, or before an item with a new head."""
     groups, cur = [], []
     for it in items:
-        if cur and (len(cur) == most or sum(need(c[1], size) for c in cur + [it]) > ROOM - 12 * len(cur) or (it[4] and it[4] != head)):
+        if cur and (len(cur) == most or sum(_rows([c[:4] for c in cur + [it]], size, ncol)) > ROOM - 12 * (math.ceil((len(cur) + 1) / ncol) - 1) or (it[4] and it[4] != head)):
             groups.append(cur); cur = []
         cur.append(it)
         if it[4]: head = it[4]
     if cur: groups.append(cur)
+    def fits(g, sz): return sum(_rows([c[:4] for c in g], sz, ncol)) <= ROOM - 12 * (math.ceil(len(g) / ncol) - 1)
+    if len(groups) > 1 and len(groups[-1]) <= ncol and not groups[-1][0][4] and fits(groups[-2] + groups[-1], 11):
+        last = groups.pop(); groups[-1] = groups[-1] + last          # no lone cell on the last page
     out, h = [], ""
     for k, g in enumerate(groups):
         for it in g:
@@ -54,5 +64,5 @@ def roll_pages(items, prefix, start, book, code, tag="", size=15, most=7, head="
         title = f"{book} {rng} — {h}"
         slug = "".join(ch for ch in h.title() if ch.isalpha())[:18]
         cells = [it[:4] for it in g]
-        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {h}", (lambda cells=cells, title=title, n=start + k: roll_page(cells, title, n, tag))))
+        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {h}", (lambda cells=cells, title=title, n=start + k: roll_page(cells, title, n, tag, ncol=ncol))))
     return out

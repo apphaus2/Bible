@@ -490,3 +490,49 @@ def land_taken(w, h):
     o.append(node(w * 0.74, h * 0.04, "MOUNT HERMON", "#FFD23F", r=4, dy=16, size=8) + node(w * 0.6, h * 0.2, "BAAL-GAD", "#FFD23F", r=4, dy=-8, size=8)
              + node(w * 0.7, h * 0.94, "MOUNT HALAK", "#FFD23F", r=4, dy=-8, size=8))
     return "".join(o)
+
+# ---- Joshua 12–14 -------------------------------------------------------------------------------------------------------
+def _sea(cx, cy, rx, ry, name=None, side="end"):
+    o = f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(rx)}" ry="{f(ry)}" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></ellipse>'
+    return o + (label(cx - rx - 6 if side == "end" else cx + rx + 6, cy + 3, name, "#8FD0E2", 8, side) if name else "")
+
+def _jordan(w, h, x=0.5):
+    return (_sea(w * x, h * 0.18, w * 0.02, h * 0.05, "CHINNEROTH") + _sea(w * x, h * 0.74, w * 0.03, h * 0.11, "THE SALT SEA")
+            + f'<path d="M{f(w * x)} {f(h * 0.23)} C {f(w * (x - 0.02))} {f(h * 0.4)} {f(w * (x + 0.02))} {f(h * 0.5)} {f(w * x)} {f(h * 0.63)}" fill="none" stroke="#8FD0E2" stroke-width="3"></path>')
+
+def east_map(w, h):
+    """Beyond the Jordan toward the sunrising: Sihon's kingdom from the Arnon to the Jabbok, Og's Bashan unto Hermon."""
+    o = [grid_bg(w, h), _jordan(w, h, 0.36)]
+    regions = [("SIHON · HESHBON", 0.42, 0.44, 0.78, 0.7, "#6A4A3A"), ("GILEAD", 0.42, 0.28, 0.82, 0.44, "#E87A2A"), ("OG · BASHAN", 0.42, 0.06, 0.86, 0.28, "#6A6A8A")]
+    for nm, x0, y0, x1, y1, c in regions:
+        o.append(f'<rect x="{f(w * x0)}" y="{f(h * y0)}" width="{f(w * (x1 - x0))}" height="{f(h * (y1 - y0))}" fill="{c}" opacity="0.45" stroke="{c}" stroke-width="2"></rect>'
+                 + label(w * x0 + 6, h * y0 + 14, nm, "#F3EFE6", 9, "start", ls=0.08))
+    o.append(f'<path d="M{f(w * 0.38)} {f(h * 0.72)} L {f(w * 0.8)} {f(h * 0.72)}" stroke="#8FD0E2" stroke-width="2.4"></path>' + label(w * 0.8, h * 0.76, "ARNON", "#8FD0E2", 8, "end"))
+    o.append(f'<path d="M{f(w * 0.37)} {f(h * 0.44)} L {f(w * 0.74)} {f(h * 0.46)}" stroke="#8FD0E2" stroke-width="2.4"></path>' + label(w * 0.74, h * 0.5, "JABBOK", "#8FD0E2", 8, "end"))
+    o.append(node(w * 0.8, h * 0.05, "MOUNT HERMON", "#FFD23F", r=4, dy=18, size=8))
+    o.append(label(w * 0.12, h * 0.5, "CANAAN", "#8A9AB0", 10))
+    return "".join(o)
+
+def remaineth_map(w, h):
+    """The land that yet remaineth: the five lords of the Philistines by the sea, the Sidonians, Lebanon unto Hamath."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.14)} -10 C {f(w * 0.12)} {f(h * 0.3)} {f(w * 0.08)} {f(h * 0.7)} {f(w * 0.04)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    phil = [("GAZA", 0.12, 0.9), ("ASHKELON", 0.15, 0.78), ("ASHDOD", 0.18, 0.68), ("GATH", 0.3, 0.74), ("EKRON", 0.28, 0.6)]
+    o.append(f'<rect x="{f(w * 0.08)}" y="{f(h * 0.54)}" width="{f(w * 0.3)}" height="{f(h * 0.42)}" fill="#D7261E" opacity="0.25" stroke="#D7261E" stroke-width="2" stroke-dasharray="6 4"></rect>'
+             + label(w * 0.24, h * 0.53, "THE FIVE LORDS OF THE PHILISTINES", "#FF6A5A", 8))
+    for nm, x, y in phil: o.append(node(w * x, h * y, nm, "#FFD23F", r=4, dy=-8, size=8))
+    o.append(f'<rect x="{f(w * 0.2)}" y="{f(h * 0.04)}" width="{f(w * 0.6)}" height="{f(h * 0.2)}" fill="#2E6B3A" opacity="0.4" stroke="#5AD87A" stroke-width="2" stroke-dasharray="6 4"></rect>'
+             + label(w * 0.5, h * 0.15, "LEBANON · THE SIDONIANS · UNTO HAMATH", "#5AD87A", 8))
+    o.append(node(w * 0.6, h * 0.5, "ISRAEL'S CAMPS", "#8FD0E2", r=5, dy=-10, size=8))
+    return "".join(o)
+
+CALEB_C = "#2E6B3A"
+def hebron(p, w, h, seed):
+    """Caleb, fourscore and five years old and as strong as in the day Moses sent him, before Hebron on its hill."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.2, h * 0.16, 16, color="#FF8A3D", op=0.3),
+         J.city_hill(w * 0.66, h * 0.66, w * 0.32, h * 0.44, seed), ground(w, h, h * 0.66, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.32)
+    o.append(mk.person(p, round(w * 0.22), round(b), round(s, 3), body=SKIN, cloth=CALEB_C, sw=3, up=[(-22, -158), (-6, -196), (8, -228)],
+                       extra=A.headcloth(CALEB_C) + A.WHITE_BEARD))
+    return "".join(o)
