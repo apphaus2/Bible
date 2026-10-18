@@ -1115,6 +1115,83 @@
    "w": 760,
    "h": 1080,
    "title": "145 · "
+  },
+  "2KI-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · The Fall of Jerusalem"
+  },
+  "2KI-C13-D-P01-NebuchadnezzarKing.dc.html": {
+   "x": 840,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Nebuchadnezzar King of Babylon"
+  },
+  "2KI-C13-D-P02-NebuchadnezzarKing.dc.html": {
+   "x": 1680,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Nebuchadnezzar King of Babylon"
+  },
+  "2KI-C13-D-P03-JehoiachinCarriedA.dc.html": {
+   "x": 2520,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Jehoiachin Carried Away"
+  },
+  "2KI-C13-D-P04-Zedekiah.dc.html": {
+   "x": 3360,
+   "y": 48800,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · Zedekiah"
+  },
+  "2KI-C13-D-P05-TheSiege.dc.html": {
+   "x": 0,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · The Siege"
+  },
+  "2KI-C13-D-P06-TheHouseOfJehovahB.dc.html": {
+   "x": 840,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The House of Jehovah Burned"
+  },
+  "2KI-C13-D-P07-TheHouseOfJehovahB.dc.html": {
+   "x": 1680,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · The House of Jehovah Burned"
+  },
+  "2KI-C13-D-P08-TheHouseOfJehovahB.dc.html": {
+   "x": 2520,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The House of Jehovah Burned"
+  },
+  "2KI-C13-D-P09-Gedaliah.dc.html": {
+   "x": 3360,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Gedaliah"
+  },
+  "2KI-C13-D-P10-AllTheDaysOfHisLif.dc.html": {
+   "x": 0,
+   "y": 51200,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · All the Days of His Life"
   }
  },
  "order": [
@@ -1275,7 +1352,18 @@
   "2KI-C12-D-P11-SuchAPassover.dc.html",
   "2KI-C12-D-P12-SuchAPassover.dc.html",
   "2KI-C12-D-P13-Megiddo.dc.html",
-  "2KI-C12-R-P01-.dc.html"
+  "2KI-C12-R-P01-.dc.html",
+  "2KI-C13-00-Title.dc.html",
+  "2KI-C13-D-P01-NebuchadnezzarKing.dc.html",
+  "2KI-C13-D-P02-NebuchadnezzarKing.dc.html",
+  "2KI-C13-D-P03-JehoiachinCarriedA.dc.html",
+  "2KI-C13-D-P04-Zedekiah.dc.html",
+  "2KI-C13-D-P05-TheSiege.dc.html",
+  "2KI-C13-D-P06-TheHouseOfJehovahB.dc.html",
+  "2KI-C13-D-P07-TheHouseOfJehovahB.dc.html",
+  "2KI-C13-D-P08-TheHouseOfJehovahB.dc.html",
+  "2KI-C13-D-P09-Gedaliah.dc.html",
+  "2KI-C13-D-P10-AllTheDaysOfHisLif.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1368,6 +1456,13 @@
    "text": "Chapter 12 · Josiah (2 Kings 22–23)",
    "x": 0,
    "y": 44400
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · The Fall of Jerusalem (2 Kings 24–25)",
+   "x": 0,
+   "y": 48500
   }
  },
  "designSystems": [],

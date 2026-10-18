@@ -44,5 +44,7 @@ META = {
      "blurb": "Hezekiah sick unto death turns his face to the wall — I have seen thy tears, fifteen years added; the shadow gone back ten steps on the dial of Ahaz; the envoys of Babylon shown all his treasures — all shall be carried to Babylon; then Manasseh, the line of Samaria and the plummet of the house of Ahab, and Amon."},
     {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Josiah", "range": "2 Kings 22–23", "bible_chapters": [22, 23],
      "blurb": "Josiah of eight years and the repairing of the house; I have found the book of the law; the king rends his clothes; Huldah the prophetess — because thy heart was tender; the covenant read by the pillar; the house cleansed and the high places defiled; the altar at Beth-el; such a passover; and Megiddo."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "The Fall of Jerusalem", "range": "2 Kings 24–25", "bible_chapters": [24, 25],
+     "blurb": "Nebuchadnezzar king of Babylon; Jehoiachin carried away with the treasures and ten thousand captives; Zedekiah and the siege; the breach in the wall and the flight by the Arabah; the house of Jehovah and every great house burned with fire; the pillars and the sea broken in pieces; Gedaliah at Mizpah; and Jehoiachin eating bread before the king of Babylon all the days of his life."},
   ],
 }

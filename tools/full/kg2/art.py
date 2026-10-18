@@ -831,3 +831,54 @@ def bethel_tombs(p, w, h, seed):
 def megiddo(p, w, h, seed):
     """Megiddo: the chariot carrying the king back to Jerusalem (23:29–30 told in words only)."""
     return ramoth(p, w, h, seed, dusk=True)
+
+# ---- 2 Kings 24–25 ------------------------------------------------------------------------------------------------------
+BABEL_C = "#2A4A6A"
+def siege_forts(p, w, h, seed):
+    """Jerusalem besieged by the army of Babylon, forts built against it round about."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A4A5A", "#C8A080"), J.jericho(w * 0.24, w * 0.86, h * 0.24, h * 0.62, seed, towers=4, houses=True), ground(w, h, h * 0.62, "#8A7A5A", dy=0)]
+    for i, x in enumerate((0.08, 0.92)):
+        o.append(f'<path d="M{f(w * x - 40)} {f(h * 0.74)} L {f(w * x - 30)} {f(h * 0.5)} L {f(w * x + 30)} {f(h * 0.5)} L {f(w * x + 40)} {f(h * 0.74)} Z" fill="#7A6A4A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    o.append(N.camp(10, -10, w + 10, h * 0.7, h * 0.8, seed, color=(BABEL_C, "#3A3A5A", "#5A4A3A")))
+    s = min(fit(b, h * 0.3), h / 700)
+    for i in range(10): o.append(warrior(p, w * (0.04 + i * 0.1), b - (i % 2) * h * 0.03, s * 0.8, BABEL_C))
+    return "".join(o)
+
+def burning_city(w, h, seed):
+    """The house of Jehovah and every great house of Jerusalem burned with fire, the walls broken down (no one drawn)."""
+    o = [sky(w, h, "#2A0A0A", "#8A2A1A"), J.collapse(-10, w * 0.4, h * 0.8, h * 0.36, seed, color="#8A5A3A"), temple_front(w * 0.66, h * 0.8, w * 0.46, seed),
+         J.collapse(w * 0.86, w + 10, h * 0.8, h * 0.3, seed + 1, color="#8A5A3A")]
+    o += [E.blaze(w * (0.08 + i * 0.16), h * 0.82, w * 0.14, h * 0.4, seed + i, n=7) for i in range(6)]
+    for i in range(8): o.append(f'<circle cx="{f(w * (0.1 + i * 0.12))}" cy="{f(h * (0.24 - (i % 3) * 0.06))}" r="{f(w * 0.08)}" fill="#3A2A2E" opacity="0.7"></circle>')
+    o.append(ground(w, h, h * 0.84, "#1A0A0A", dy=0))
+    return "".join(o)
+
+def brass_carried(p, w, h, seed):
+    """The pillars, the sea and the bases broken in pieces, the brass carried away to Babylon on carts."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A3A2A", "#C8803A"), ground(w, h, h * 0.62, "#6A5A4A", dy=0)]
+    for i in range(5):
+        x = w * (0.1 + i * 0.18); y = h * (0.72 + (i % 2) * 0.06)
+        o.append(f'<path d="M{f(x)} {f(y)} l 30 -14 l 20 18 l -26 10 Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2"></path>')
+    o.append(S1.cart(w * 0.5, b, min(1.0, h / 360), load=f'<path d="M-60 -80 l 40 -30 l 50 10 l 20 20 Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2"></path>'))
+    s = fit(b, h * 0.36)
+    for i in range(3): o.append(warrior(p, w * (0.76 + i * 0.08), b, s * 0.8, BABEL_C, flip=True))
+    return "".join(o)
+
+def mizpah(p, w, h, seed):
+    """Mizpah: the captains of the forces come to Gedaliah the governor."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), J.city_hill(w * 0.76, h * 0.5, w * 0.36, h * 0.26, seed), ground(w, h, h * 0.52, "#A89A6A", dy=0)]
+    s = fit(b, h * 0.38)
+    o.append(man(p, w * 0.2, b, s, "#5A4A3A", extra=A.headcloth("#5A4A3A") + A.BLACK_BEARD))
+    for i in range(4): o.append(captain(p, w * (0.44 + i * 0.12), b, s * 0.9, cloth=WAR[i % 4], flip=True))
+    return "".join(o)
+
+def prison_garments(p, w, h, seed):
+    """Jehoiachin's prison garments changed; he eats bread before the king of Babylon continually."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.table(w * 0.5, b, w * 0.56, min(1.2, h / 300))]
+    s = fit(b, h * 0.4)
+    o.append(king_fig(p, w * 0.16, b, s, cloth=BABEL_C) + king_fig(p, w * 0.84, b, s * 0.95, cloth="#E8E2D6", flip=True))
+    return "".join(o)
