@@ -28,5 +28,7 @@ META = {
      "blurb": "The covenant made at Horeb and the ten commandments spoken out of the midst of the fire; go thou near, and hear; Hear, O Israel: Jehovah our God is one Jehovah, and thou shalt love Jehovah thy God with all thy heart; the words upon the door-posts; and when thy son asketh thee in time to come."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "A People for His Own Possession", "range": "Deuteronomy 7–8", "bible_chapters": [7, 8],
      "blurb": "Seven nations greater and mightier than thou, and the hornet sent before thee; Jehovah set his love upon you, not because ye were more in number; the manna and the forty years — man doth not live by bread only; and a good land of wheat and barley, vines and fig-trees and pomegranates: beware lest thou forget."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Tables of Stone", "range": "Deuteronomy 9–10", "bible_chapters": [9, 10],
+     "blurb": "Not for thy righteousness: the golden calf at Horeb remembered, the tables cast down and broken, Moses fallen down before Jehovah forty days and forty nights; the tables hewn again and put in the ark; and now, Israel, what doth Jehovah thy God require of thee?"},
   ],
 }

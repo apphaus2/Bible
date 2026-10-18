@@ -80,3 +80,18 @@ def laws(c, groups, head=None, lead=None):
         uid = f"lw{c}x{a}"
         items.append((heading(text), refs, (lambda p, text=text: picto.pick(text, p)), "", head if i == 0 else None))
     return items
+
+def law_groups(c, a, b, budget=380):
+    """Consecutive verses c:a–b grouped into law cells of about `budget` characters."""
+    out, cur, n = [], [], 0
+    for k in range(a, b + 1):
+        t = v(f"{c}:{k}")
+        if cur and n + len(t) > budget:
+            out.append((cur[0], cur[-1])); cur, n = [], 0
+        cur.append(k); n += len(t)
+    if cur: out.append((cur[0], cur[-1]))
+    return out
+
+def codify(c, a, b, head=None, budget=380):
+    """Law cells for verses c:a–b (deu.common.laws over law_groups)."""
+    return laws(c, law_groups(c, a, b, budget), head=head)
