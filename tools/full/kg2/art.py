@@ -326,3 +326,66 @@ def siege_wall(p, w, h, seed, king=True):
         o.append(king_fig(p, w * 0.6, h * 0.36, fit(h * 0.36, h * 0.12), cloth="#5A5040"))
         o.append(mk.person(p, round(w * 0.3), round(b), round(fit(b, h * 0.7) * 0.6, 3), body="#3A1E14", cloth="#3A3A3E", woman=True, hair="#3A3430", sw=3, up=[(22, -158), (40, -200), (50, -230)]))
     return "".join(o)
+
+# ---- 2 Kings 7–8 --------------------------------------------------------------------------------------------------------
+def lepers_gate(p, w, h, seed):
+    """Four leprous men sitting at the entrance of the gate of Samaria in the twilight."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A2A4A", "#C8906A"), S4.gatehouse(w * 0.3, b, w * 0.5, h * 0.76), ground(w, h, b, "#5A4A40", dy=0)]
+    s = fit(b, h * 0.4)
+    for i in range(4):
+        o.append(E.kneel(w * (0.56 + i * 0.1), b, s * 0.7, color=["#C8C0B0", "#A8A098", "#B8B0A0", "#988E86"][i], skin="#C8B8A8", flip=True))
+    return "".join(o)
+
+def empty_camp(p, w, h, seed, lepers=False):
+    """The camp of the Syrians in the twilight with no man there: tents, horses tied, asses tied (lepers=True: four men
+    carrying silver and raiment from a tent)."""
+    r = random.Random(seed)
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A2A4A", "#A87A7A"), ground(w, h, h * 0.5, "#5A4A40", dy=0), N.camp(14, -10, w + 10, h * 0.56, h * 0.86, seed, color=("#5A3A6A", "#4A3A3A", "#6A5A4A"))]
+    for i in range(3):
+        o.append(E3.horse(w * (0.12 + i * 0.12), b, min(0.5, h / 600), color="#3A2214") + N.ass(w * (0.7 + i * 0.1), b, min(0.5, h / 600)))
+    if lepers:
+        s = fit(b, h * 0.36)
+        for i in range(2):
+            o.append(man(p, w * (0.44 + i * 0.08), b, s * 0.8, "#C8C0B0", up=[(-22, -158), (-20, -196), (0, -210)]) + f'<ellipse cx="{f(w * (0.44 + i * 0.08) - 4)}" cy="{f(b - 214 * s * 0.8)}" rx="12" ry="8" fill="#C8C8D0" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    return "".join(o)
+
+def strewn_way(w, h, seed):
+    """All the way to the Jordan full of garments and vessels which the Syrians had cast away."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.4, seed, color="#7A8A5A", amp=12), ground(w, h, h * 0.5, "#B89A6A", dy=0),
+         f'<path d="M{f(w * 0.1)} {f(h + 10)} C {f(w * 0.4)} {f(h * 0.8)} {f(w * 0.6)} {f(h * 0.6)} {f(w * 0.86)} {f(h * 0.5)}" stroke="#C8B890" stroke-width="{f(w * 0.12)}" fill="none"></path>']
+    for i in range(16):
+        t = r.uniform(0, 1); x = w * (0.14 + 0.7 * t) + r.uniform(-30, 30); y = h * (1.0 - 0.5 * t) + r.uniform(-10, 10)
+        if r.random() < 0.5: o.append(f'<path d="M{f(x - 14)} {f(y)} L {f(x + 14)} {f(y - 6)} L {f(x + 10)} {f(y + 8)} Z" fill="{r.choice(["#5A3A6A", "#8A2A2A", "#3A4A6A"])}" stroke="#0D0D0F" stroke-width="1.4"></path>')
+        else: o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="9" ry="6" fill="{r.choice(["#C8C8D0", "#E8B830", "#B5652E"])}" stroke="#0D0D0F" stroke-width="1.4"></ellipse>')
+    return "".join(o)
+
+def gate_press(p, w, h, seed):
+    """The gate of Samaria thronged with the people going out to the spoil; measures of flour and barley sold (7:17 told in
+    words only)."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0", "#E8C890"), S4.gatehouse(w * 0.5, h * 0.8, w * 0.7, h * 0.66), ground(w, h, h * 0.8, "#A89A6A", dy=0)]
+    s = fit(b, h * 0.3) * 0.45
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.98, h * 0.84, b, 16, s * 0.7, s))
+    return "".join(o)
+
+def hazael(p, w, h, seed):
+    """Hazael coming to meet the man of God with forty camels' burden of every good thing of Damascus."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0", "#F3D8A0"), hills(w, h, h * 0.44, seed, color="#8A8A9A", amp=24), ground(w, h, h * 0.56, "#C8B080", dy=0)]
+    k = min(0.7, h / 460)
+    for i in range(4):
+        o.append(J1.camel(w * (0.5 + i * 0.12), b - (3 - i) * h * 0.03, k * (0.8 + 0.05 * i), color="#B5844A"))
+    o.append(captain(p, w * 0.32, b, fit(b, h * 0.42), cloth="#5A3A6A", spear=False, flip=True))
+    o.append(elisha_fig(p, w * 0.12, b, fit(b, h * 0.42)))
+    return "".join(o)
+
+def coverlet(w, h, seed):
+    """The king's bedchamber in Damascus on the morrow: a coverlet dipped in water by the bed (8:15 told in words only)."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2A"></rect>', S3.cedar(w, h, h * 0.84).replace("#8A4A26", "#5A3A26").replace("#9A5A30", "#6A4A30"),
+         f'<rect x="{f(w * 0.14)}" y="{f(h * 0.7)}" width="{f(w * 0.56)}" height="{f(h * 0.08)}" fill="#6A3A2A" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<path d="M{f(w * 0.74)} {f(h * 0.86)} C {f(w * 0.72)} {f(h * 0.8)} {f(w * 0.86)} {f(h * 0.78)} {f(w * 0.9)} {f(h * 0.86)} Z" fill="#5A3A6A" stroke="#0D0D0F" stroke-width="2"></path>',
+         f'<ellipse cx="{f(w * 0.82)}" cy="{f(h * 0.88)}" rx="{f(w * 0.08)}" ry="{f(h * 0.02)}" fill="#2C9DB8" opacity="0.6"></ellipse>']
+    return "".join(o)

@@ -26,5 +26,7 @@ META = {
      "blurb": "Three kings in the wilderness of Edom without water — bring me a minstrel; the valley full of trenches and the water red as blood; the widow's pot of oil and the borrowed vessels; the great woman of Shunem and the little chamber on the wall; my head, my head; it is well; the child sneezed seven times; death in the pot, and twenty loaves for a hundred men."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Naaman", "range": "2 Kings 5–6", "bible_chapters": [5, 6],
      "blurb": "Naaman the leper and the little maiden of Israel; go and wash in the Jordan seven times — are not Abanah and Pharpar better?; his flesh came again like the flesh of a little child; Gehazi's lie and the leprosy white as snow; the axe-head that swam; Dothan and the mountain full of horses and chariots of fire; and the siege of Samaria."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Siege of Samaria", "range": "2 Kings 7–8", "bible_chapters": [7, 8],
+     "blurb": "To-morrow a measure of fine flour for a shekel — if Jehovah should make windows in heaven; four leprous men at the gate and the camp of the Syrians empty in the twilight; this day is a day of good tidings; the Shunammite's land restored; Hazael and the forty camels' burden, and the man of God wept; and the kings Jehoram and Ahaziah of Judah."},
   ],
 }

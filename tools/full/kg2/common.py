@@ -100,3 +100,6 @@ MAIDEN = F("eve", skin="#E3B08A", shadow="#A8705A", hair="#2A1A10", light="#FFE6
 SYRIA_KING = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#5A3A6A", band=True, brow="scowl", light="#D7261E")
 GEHAZI_LEPER = F("adam", skin="#E8E2E0", shadow="#A8A0A8", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#7A6A4A", brow="sorrow", light="#E8ECF8")
 JEHORAM_SACK = F("adam", skin="#B98A6E", shadow="#3A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#5A5040", band=True, brow="scowl", light="#9AA8C8")
+LEPER = F("adam", skin="#D8C8C0", shadow="#8A7A80", hair="#3A3430", hl="#6A6460", stubble="#3A3430", scarf="#A8A098", brow="sorrow", light="#9AA8C8")
+HAZAEL = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#5A3A6A", cord=True, light="#FFC14D")
+LORD_CAPTAIN = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#6A2A1A", cord=True, brow="scowl", light="#FFC14D")

@@ -22,18 +22,20 @@ def _rows(cells, s, ncol):
     hs = [need(t, s, ncol) for _, t, _, _ in cells]
     return [max(hs[i:i + ncol]) for i in range(0, len(hs), ncol)]
 
-def roll_page(cells, title, n, tag="", hi=22.0, ncol=1):
+def roll_page(cells, title, n, tag="", hi=22.0, ncol=1, end=""):
     """One page of cells (name, text, ref, accent), in ncol columns."""
     nrow = math.ceil(len(cells) / ncol)
-    room = ROOM - 12 * (nrow - 1)
+    room = ROOM - 12 * (nrow - 1) - (70 if end else 0)
     s = hi
     while s > 10 and sum(_rows(cells, s, ncol)) > room: s -= 0.5
-    fr = " ".join(f"{x:.0f}fr" for x in _rows(cells, s, ncol))
+    rows_ = _rows(cells, s, ncol)
+    if end: rows_[-1] += 70
+    fr = " ".join(f"{x:.0f}fr" for x in rows_)
     body = grid([clan(nm, t, ref, c, size=s) for nm, t, ref, c in cells], fr, ncol=ncol)
     if tag:
         body += (f'\n  <div data-label style="position: absolute; left: 26px; right: 26px; top: 8px; text-align: center; font-size: 9px; font-weight: 600; '
                  f'letter-spacing: 0.24em; color: #6B6862">{tag}</div>')
-    return page(title, "minmax(0, 1fr)", body, n)
+    return page(title, "minmax(0, 1fr)", body + end, n)
 
 def _span(refs, code):
     a = refs[0].replace(code + " ", "").split("–")[0]
@@ -43,7 +45,7 @@ def _span(refs, code):
     if a == b: return a
     return f"{a}–{b.split(':')[1]}" if a.split(":")[0] == b.split(":")[0] else f"{a}–{b}"
 
-def roll_pages(items, prefix, start, book, code, tag="", size=13, most=8, head="", ncol=1):
+def roll_pages(items, prefix, start, book, code, tag="", size=13, most=8, head="", ncol=1, end=""):
     """Pack items (name, text, ref, accent, head-or-None) into pages; returns [(file, board title, fn)] like discourse.pack.
     A page breaks when the cells would not fit at `size` px, after `most` cells, or before an item with a new head."""
     groups, cur = [], []
@@ -64,7 +66,7 @@ def roll_pages(items, prefix, start, book, code, tag="", size=13, most=8, head="
         title = f"{book} {rng} — {h}"
         slug = "".join(ch for ch in h.title() if ch.isalpha())[:18]
         cells = [it[:4] for it in g]
-        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {h}", (lambda cells=cells, title=title, n=start + k: roll_page(cells, title, n, tag, ncol=ncol))))
+        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {h}", (lambda cells=cells, title=title, n=start + k, e=(end if k == len(groups) - 1 else ""): roll_page(cells, title, n, tag, ncol=ncol, end=e))))
     return out
 
 def verse_cells(G, code, c, a, b, name, accent, head=None, budget=520, brk=None):

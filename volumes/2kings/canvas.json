@@ -394,6 +394,83 @@
    "w": 760,
    "h": 1080,
    "title": "51 · The Siege of Samaria"
+  },
+  "2KI-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Siege of Samaria"
+  },
+  "2KI-C04-D-P01-FourLeprousMen.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Four Leprous Men"
+  },
+  "2KI-C04-D-P02-FourLeprousMen.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Four Leprous Men"
+  },
+  "2KI-C04-D-P03-ADayOfGoodTidings.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · A Day of Good Tidings"
+  },
+  "2KI-C04-D-P04-ADayOfGoodTidings.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · A Day of Good Tidings"
+  },
+  "2KI-C04-D-P05-ADayOfGoodTidings.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · A Day of Good Tidings"
+  },
+  "2KI-C04-D-P06-HerHouseAndHerLand.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Her House and Her Land"
+  },
+  "2KI-C04-D-P07-Hazael.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Hazael"
+  },
+  "2KI-C04-D-P08-Hazael.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Hazael"
+  },
+  "2KI-C04-D-P09-Hazael.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Hazael"
+  },
+  "2KI-C04-R-P01-TheKingsOfJudahAnd.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · The Kings of Judah and of Israel"
   }
  },
  "order": [
@@ -451,7 +528,18 @@
   "2KI-C03-D-P15-HorsesAndChariotsO.dc.html",
   "2KI-C03-D-P16-TheSiegeOfSamaria.dc.html",
   "2KI-C03-D-P17-TheSiegeOfSamaria.dc.html",
-  "2KI-C03-D-P18-TheSiegeOfSamaria.dc.html"
+  "2KI-C03-D-P18-TheSiegeOfSamaria.dc.html",
+  "2KI-C04-00-Title.dc.html",
+  "2KI-C04-D-P01-FourLeprousMen.dc.html",
+  "2KI-C04-D-P02-FourLeprousMen.dc.html",
+  "2KI-C04-D-P03-ADayOfGoodTidings.dc.html",
+  "2KI-C04-D-P04-ADayOfGoodTidings.dc.html",
+  "2KI-C04-D-P05-ADayOfGoodTidings.dc.html",
+  "2KI-C04-D-P06-HerHouseAndHerLand.dc.html",
+  "2KI-C04-D-P07-Hazael.dc.html",
+  "2KI-C04-D-P08-Hazael.dc.html",
+  "2KI-C04-D-P09-Hazael.dc.html",
+  "2KI-C04-R-P01-TheKingsOfJudahAnd.dc.html"
  ],
  "notes": {
   "Main": {
@@ -481,6 +569,13 @@
    "text": "Chapter 3 · Naaman (2 Kings 5–6)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Siege of Samaria (2 Kings 7–8)",
+   "x": 0,
+   "y": 16400
   }
  },
  "designSystems": [],
