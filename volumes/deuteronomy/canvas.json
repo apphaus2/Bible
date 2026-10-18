@@ -527,6 +527,349 @@
    "w": 760,
    "h": 1080,
    "title": "67 · Take Heed to Thyself"
+  },
+  "DEU-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Year of Release"
+  },
+  "DEU-C07-L-P01-IfThereAriseAProph.dc.html": {
+   "x": 840,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · If There Arise a Prophet"
+  },
+  "DEU-C07-L-P02-IfThyBrotherEntice.dc.html": {
+   "x": 1680,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · If Thy Brother Entice Thee"
+  },
+  "DEU-C07-L-P03-InOneOfThyCities.dc.html": {
+   "x": 2520,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · In One of Thy Cities"
+  },
+  "DEU-C07-L-P04-YeAreTheChildrenOf.dc.html": {
+   "x": 3360,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Ye Are the Children of Jehovah"
+  },
+  "DEU-C07-L-P05-TheTithe.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · The Tithe"
+  },
+  "DEU-C07-L-P06-TheTithe.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Tithe"
+  },
+  "DEU-C07-L-P07-TheYearOfRelease.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Year of Release"
+  },
+  "DEU-C07-L-P08-IfThyBrotherBeSold.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · If Thy Brother Be Sold unto Thee"
+  },
+  "DEU-C07-L-P09-TheFirstlingMales.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The Firstling Males"
+  },
+  "DEU-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Justice, Only Justice"
+  },
+  "DEU-C08-L-P01-ThePassover.dc.html": {
+   "x": 840,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Passover"
+  },
+  "DEU-C08-L-P02-TheFeastOfWeeks.dc.html": {
+   "x": 1680,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · The Feast of Weeks"
+  },
+  "DEU-C08-L-P03-TheFeastOfTabernac.dc.html": {
+   "x": 2520,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The Feast of Tabernacles"
+  },
+  "DEU-C08-L-P04-JudgesAndOfficers.dc.html": {
+   "x": 3360,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Judges and Officers"
+  },
+  "DEU-C08-L-P05-IfThereAriseAMatte.dc.html": {
+   "x": 0,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · If There Arise a Matter Too Hard"
+  },
+  "DEU-C08-L-P06-AKingOverThee.dc.html": {
+   "x": 840,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · A King over Thee"
+  },
+  "DEU-C08-L-P07-ThePriestsTheLevit.dc.html": {
+   "x": 1680,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The Priests the Levites"
+  },
+  "DEU-C08-L-P08-ThouShaltNotLearnT.dc.html": {
+   "x": 2520,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Thou Shalt Not Learn to Do"
+  },
+  "DEU-C08-L-P09-AProphetLikeUntoMe.dc.html": {
+   "x": 3360,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · A Prophet Like unto Me"
+  },
+  "DEU-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · When Thou Goest Forth to Battle"
+  },
+  "DEU-C09-L-P01-ThreeCities.dc.html": {
+   "x": 840,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Three Cities"
+  },
+  "DEU-C09-L-P02-ThreeCities.dc.html": {
+   "x": 1680,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Three Cities"
+  },
+  "DEU-C09-L-P03-ThyNeighborSLandma.dc.html": {
+   "x": 2520,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Thy Neighbor's Landmark"
+  },
+  "DEU-C09-L-P04-WhenThouGoestForth.dc.html": {
+   "x": 3360,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · When Thou Goest Forth to Battle"
+  },
+  "DEU-C09-L-P05-WhenThouDrawestNig.dc.html": {
+   "x": 0,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · When Thou Drawest Nigh unto a City"
+  },
+  "DEU-C09-L-P06-WhenThouDrawestNig.dc.html": {
+   "x": 840,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · When Thou Drawest Nigh unto a City"
+  },
+  "DEU-C09-L-P07-IfOneBeFoundSlain.dc.html": {
+   "x": 1680,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · If One Be Found Slain"
+  },
+  "DEU-C09-L-P08-ACaptiveWoman.dc.html": {
+   "x": 2520,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · A Captive Woman"
+  },
+  "DEU-C09-L-P09-TheRightOfTheFirst.dc.html": {
+   "x": 3360,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · The Right of the First-born"
+  },
+  "DEU-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Thou Shalt Not"
+  },
+  "DEU-C10-L-P01-ThyBrotherSOx.dc.html": {
+   "x": 840,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Thy Brother's Ox"
+  },
+  "DEU-C10-L-P02-IfAnyManTakeAWife.dc.html": {
+   "x": 1680,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · If Any Man Take a Wife"
+  },
+  "DEU-C10-L-P03-IfAnyManTakeAWife.dc.html": {
+   "x": 2520,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · If Any Man Take a Wife"
+  },
+  "DEU-C10-L-P04-IfAnyManTakeAWife.dc.html": {
+   "x": 3360,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · If Any Man Take a Wife"
+  },
+  "DEU-C10-L-P05-TheAssemblyOfJehov.dc.html": {
+   "x": 0,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Assembly of Jehovah"
+  },
+  "DEU-C10-L-P06-WhenThouGoestForth.dc.html": {
+   "x": 840,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · When Thou Goest Forth in Camp"
+  },
+  "DEU-C10-L-P07-TheServantThatIsEs.dc.html": {
+   "x": 1680,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Servant That Is Escaped"
+  },
+  "DEU-C10-L-P08-TheServantThatIsEs.dc.html": {
+   "x": 2520,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The Servant That Is Escaped"
+  },
+  "DEU-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Basket of First-fruits"
+  },
+  "DEU-C11-L-P01-ABillOfDivorcement.dc.html": {
+   "x": 840,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · A Bill of Divorcement"
+  },
+  "DEU-C11-L-P02-NoManShallTakeTheM.dc.html": {
+   "x": 1680,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · No Man Shall Take the Mill"
+  },
+  "DEU-C11-L-P03-ThouShaltNotOppres.dc.html": {
+   "x": 2520,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Thou Shalt Not Oppress a Hired Servant"
+  },
+  "DEU-C11-L-P04-ThouShaltNotMuzzle.dc.html": {
+   "x": 3360,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Thou Shalt Not Muzzle the Ox"
+  },
+  "DEU-C11-L-P05-JustWeightsAndReme.dc.html": {
+   "x": 0,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Just Weights and Remember Amalek"
+  },
+  "DEU-C11-L-P06-TheBasketOfFirstFr.dc.html": {
+   "x": 840,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Basket of First-fruits"
+  },
+  "DEU-C11-L-P07-TheBasketOfFirstFr.dc.html": {
+   "x": 1680,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · The Basket of First-fruits"
+  },
+  "DEU-C11-L-P08-TheYearOfTithing.dc.html": {
+   "x": 2520,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · The Year of Tithing"
+  },
+  "DEU-C11-L-P09-APeopleForHisOwnPo.dc.html": {
+   "x": 3360,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · A People for His Own Possession"
   }
  },
  "order": [
@@ -603,7 +946,56 @@
   "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html",
   "DEU-C06-L-P03-WithinAllThyGates.dc.html",
   "DEU-C06-L-P04-WithinAllThyGates.dc.html",
-  "DEU-C06-L-P05-TakeHeedToThyself.dc.html"
+  "DEU-C06-L-P05-TakeHeedToThyself.dc.html",
+  "DEU-C07-00-Title.dc.html",
+  "DEU-C07-L-P01-IfThereAriseAProph.dc.html",
+  "DEU-C07-L-P02-IfThyBrotherEntice.dc.html",
+  "DEU-C07-L-P03-InOneOfThyCities.dc.html",
+  "DEU-C07-L-P04-YeAreTheChildrenOf.dc.html",
+  "DEU-C07-L-P05-TheTithe.dc.html",
+  "DEU-C07-L-P06-TheTithe.dc.html",
+  "DEU-C07-L-P07-TheYearOfRelease.dc.html",
+  "DEU-C07-L-P08-IfThyBrotherBeSold.dc.html",
+  "DEU-C07-L-P09-TheFirstlingMales.dc.html",
+  "DEU-C08-00-Title.dc.html",
+  "DEU-C08-L-P01-ThePassover.dc.html",
+  "DEU-C08-L-P02-TheFeastOfWeeks.dc.html",
+  "DEU-C08-L-P03-TheFeastOfTabernac.dc.html",
+  "DEU-C08-L-P04-JudgesAndOfficers.dc.html",
+  "DEU-C08-L-P05-IfThereAriseAMatte.dc.html",
+  "DEU-C08-L-P06-AKingOverThee.dc.html",
+  "DEU-C08-L-P07-ThePriestsTheLevit.dc.html",
+  "DEU-C08-L-P08-ThouShaltNotLearnT.dc.html",
+  "DEU-C08-L-P09-AProphetLikeUntoMe.dc.html",
+  "DEU-C09-00-Title.dc.html",
+  "DEU-C09-L-P01-ThreeCities.dc.html",
+  "DEU-C09-L-P02-ThreeCities.dc.html",
+  "DEU-C09-L-P03-ThyNeighborSLandma.dc.html",
+  "DEU-C09-L-P04-WhenThouGoestForth.dc.html",
+  "DEU-C09-L-P05-WhenThouDrawestNig.dc.html",
+  "DEU-C09-L-P06-WhenThouDrawestNig.dc.html",
+  "DEU-C09-L-P07-IfOneBeFoundSlain.dc.html",
+  "DEU-C09-L-P08-ACaptiveWoman.dc.html",
+  "DEU-C09-L-P09-TheRightOfTheFirst.dc.html",
+  "DEU-C10-00-Title.dc.html",
+  "DEU-C10-L-P01-ThyBrotherSOx.dc.html",
+  "DEU-C10-L-P02-IfAnyManTakeAWife.dc.html",
+  "DEU-C10-L-P03-IfAnyManTakeAWife.dc.html",
+  "DEU-C10-L-P04-IfAnyManTakeAWife.dc.html",
+  "DEU-C10-L-P05-TheAssemblyOfJehov.dc.html",
+  "DEU-C10-L-P06-WhenThouGoestForth.dc.html",
+  "DEU-C10-L-P07-TheServantThatIsEs.dc.html",
+  "DEU-C10-L-P08-TheServantThatIsEs.dc.html",
+  "DEU-C11-00-Title.dc.html",
+  "DEU-C11-L-P01-ABillOfDivorcement.dc.html",
+  "DEU-C11-L-P02-NoManShallTakeTheM.dc.html",
+  "DEU-C11-L-P03-ThouShaltNotOppres.dc.html",
+  "DEU-C11-L-P04-ThouShaltNotMuzzle.dc.html",
+  "DEU-C11-L-P05-JustWeightsAndReme.dc.html",
+  "DEU-C11-L-P06-TheBasketOfFirstFr.dc.html",
+  "DEU-C11-L-P07-TheBasketOfFirstFr.dc.html",
+  "DEU-C11-L-P08-TheYearOfTithing.dc.html",
+  "DEU-C11-L-P09-APeopleForHisOwnPo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -654,6 +1046,41 @@
    "text": "Chapter 6 · The Place Which Jehovah Shall Choose (Deuteronomy 11–12)",
    "x": 0,
    "y": 21000
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Year of Release (Deuteronomy 13–15)",
+   "x": 0,
+   "y": 25100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Justice, Only Justice (Deuteronomy 16–18)",
+   "x": 0,
+   "y": 28000
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · When Thou Goest Forth to Battle (Deuteronomy 19–21)",
+   "x": 0,
+   "y": 30900
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Thou Shalt Not (Deuteronomy 22–23)",
+   "x": 0,
+   "y": 33800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Basket of First-fruits (Deuteronomy 24–26)",
+   "x": 0,
+   "y": 36700
   }
  },
  "designSystems": [],

@@ -67,7 +67,10 @@ def auto(c, a, b, moods=("calm",), budget=620, code="DEUT", arts=None, every=3, 
 def heading(text, n=6):
     """A cell heading from a law's opening words: up to the first stop if that comes within n+1 words, else n words."""
     import re as _re
-    t = _re.sub(r"^(And|But|For|Moreover|Also|Then|Now|Notwithstanding,)\s+", "", text.strip())
+    t = text.strip()
+    for _ in range(3):                         # drop filler openings: "And it shall be, when ..." → "When ..."
+        t = _re.sub(r"^(And it shall come to pass,?|And it shall be,?|It shall be,?|And|But|For|Moreover|Also|Then|Now|Notwithstanding,|Therefore)\s+", "", t)
+    t = t[:1].upper() + t[1:]
     first = _re.split(r"[,;:.!?(]", t)[0].split()
     words = first if len(first) <= n + 1 else _re.split(r"\s+", t)[:n]
     return _re.sub(r"[,;:.!?()]+$", "", " ".join(words)).upper()
@@ -97,3 +100,21 @@ def law_groups(c, a, b, budget=380):
 def codify(c, a, b, head=None, budget=380):
     """Law cells for verses c:a–b (deu.common.laws over law_groups)."""
     return laws(c, law_groups(c, a, b, budget), head=head)
+
+def law_chapter(prev, num, kanji, name, rng, sections, title_art, title_bg, quote, nxt, prefix):
+    """A whole chapter of statutes: a title page, then law cells for each section (c, a, b, page head), spoken by Moses.
+    Returns (START, PAGES)."""
+    from num.pages import Pages
+    from fx import chapter_title, end_mark
+    from exo.kit import law_pages, set_book
+    set_book(G)
+    PG = Pages(prev.START + len(prev.PAGES) - 1)
+    art = f'<g transform="translate(0 420)">{title_art}</g>' if isinstance(title_art, str) else title_art
+    PG.P(f"{prefix}-00-Title", f"Chapter {num} · {name}", title=True)(
+        lambda n: chapter_title(num, kanji, name, rng, art, title_bg, quote, "Deuteronomy · Volume Five"))
+    items = []
+    for c, a, b, head in sections:
+        items += codify(c, a, b, head=head)
+    PG.extend(law_pages(items, f"{prefix}-L", PG.next(), sections[0][3], title_book="Deuteronomy", carry=True, spoken=True,
+                        end=end_mark(f"NEXT · {nxt.upper()}", "right: 10px; top: 10px")))
+    return PG.start, PG.pages

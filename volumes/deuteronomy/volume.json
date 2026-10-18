@@ -66,6 +66,56 @@
    "prefixes": [
     "DEU-C06-"
    ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "The Year of Release",
+   "range": "Deuteronomy 13–15",
+   "blurb": "The prophet and the dreamer of dreams that saith, Let us go after other gods; ye are the children of Jehovah your God; the clean and the unclean; the tithe; at the end of every seven years a release, for the poor shall never cease out of the land; the Hebrew servant; and the firstlings.",
+   "prefixes": [
+    "DEU-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "Justice, Only Justice",
+   "range": "Deuteronomy 16–18",
+   "blurb": "Three times in a year: the passover, the feast of weeks and the feast of tabernacles; judges and officers in all thy gates — justice, only justice; the matter too hard, the king that shall write him a copy of this law, the portion of the priests, the abominations of the nations, and a prophet like unto me.",
+   "prefixes": [
+    "DEU-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "When Thou Goest Forth to Battle",
+   "range": "Deuteronomy 19–21",
+   "blurb": "The cities of refuge, thy neighbor's landmark and the two witnesses; when thou goest forth to battle, be not afraid; the fruit-trees in a siege; the one found slain in the field; the captive woman, the right of the first-born, the stubborn son, and him that is hanged on a tree.",
+   "prefixes": [
+    "DEU-C09-"
+   ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "Thou Shalt Not",
+   "range": "Deuteronomy 22–23",
+   "blurb": "Thy brother's ox gone astray, a battlement for thy roof, no mingled seed or stuff, fringes upon the four borders; the laws of marriage; who shall not enter into the assembly of Jehovah; the camp kept holy; the servant that is escaped, usury, vows, and thy neighbor's vineyard.",
+   "prefixes": [
+    "DEU-C10-"
+   ]
+  },
+  {
+   "dir": "chapter-11",
+   "num": "11",
+   "name": "The Basket of First-fruits",
+   "range": "Deuteronomy 24–26",
+   "blurb": "The bill of divorcement, the millstone taken to pledge, the hired servant's wages, the sheaf forgotten in the field for the sojourner, the fatherless and the widow; the ox that treadeth out the grain; just weights; remember what Amalek did; and the basket of first-fruits: A Syrian ready to perish was my father.",
+   "prefixes": [
+    "DEU-C11-"
+   ]
   }
  ]
 }

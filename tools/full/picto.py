@@ -49,6 +49,8 @@ def _f(p, *parts): return GND + "".join(x(p) if callable(x) else x for x in part
 
 # (keywords, drawing) — first match wins
 RULES = [
+    (("hang him on a tree", "hanged", "bury him"), lambda p: _f(p, shroud(160, 84, 1.2))),
+    (("let her go", "humbled her", "captive", "captivity"), lambda p: _f(p, woman(p, 120, 86, 0.36, "#5A4A6A"), A.black_tent(230, 84, 80, 50))),
     (("king over thee", "the king", "a king"), lambda p: _f(p, _crown(p, 120), scroll(220, 74, 1.0))),
     (("prophet", "dreamer of dreams", "diviner", "enchanter", "sorcerer", "necromancer", "augury"), lambda p: _f(p, man(p, 100, 86, 0.36, "#4A3A6A", up=[(-22, -158), (-6, -196), (8, -228)]), ban(220, 50, 30))),
     (("other gods", "serve them", "graven image", "asherah", "pillar", "molten", "idol"), lambda p: _f(p, _idol(100), _idol(150), ban(240, 50, 30))),
@@ -64,7 +66,8 @@ RULES = [
     (("release", "seventh year", "sabbath"), lambda p: _f(p, coins(50, 70, 6), label(170, 50, "THE YEAR OF RELEASE", "#FFD23F", 9))),
     (("poor", "needy", "widow", "fatherless", "sojourner", "stranger"), lambda p: _f(p, woman(p, 90, 86, 0.34, "#3A3A4A"), _child(p, 120), man(p, 210, 86, 0.36, "#5A3A22", flip=True, up=REACH))),
     (("hire", "wages", "hired servant"), lambda p: _f(p, man(p, 90, 86, 0.36, "#6A5A3A"), coins(150, 70, 4), A.black_tent(250, 84, 70, 44))),
-    (("servant", "bondman", "bondmaid", "slave"), lambda p: _f(p, man(p, 100, 86, 0.36, "#6A5A3A"), door(200, 84, 1.0), label(260, 50, "THE AWL", CY, 8))),
+    (("bore his ear", "an awl", "awl"), lambda p: _f(p, man(p, 100, 86, 0.36, "#6A5A3A"), door(200, 84, 1.0), label(260, 50, "THE AWL", CY, 8))),
+    (("servant", "bondman", "bondmaid", "slave"), lambda p: _f(p, man(p, 100, 86, 0.36, "#6A5A3A"), A.black_tent(220, 84, 80, 50))),
     (("pledge", "lend", "usury", "loan", "debt", "creditor"), lambda p: _f(p, coins(60, 70, 8), _millstone(200), _garment(270))),
     (("weights", "balance", "measure", "ephah"), lambda p: _f(p, _scales(160, 30))),
     (("money", "silver", "shekels", "gold"), lambda p: _f(p, coins(80, 70, 10))),
@@ -89,8 +92,8 @@ RULES = [
 ]
 
 def pick(text, uid="pk"):
-    t = text.lower()
+    t = " " + re.sub(r"[^a-z' -]", " ", text.lower()) + " "
     for keys, draw in RULES:
-        if any(k in t for k in keys):
+        if any(re.search(r"" + re.escape(k) + r"", t) for k in keys):
             return mk.defs(uid, *ALL) + draw(uid)
     return mk.defs(uid, *ALL) + _f(uid, scroll(160, 74, 1.4))
