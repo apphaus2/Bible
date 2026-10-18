@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 217 verses — 217 full, 0 partial, 0 omitted.
+**So far:** 268 verses — 268 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Long Live King Solomon (1 Kings 1)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · The House of Jehovah (1 Kings 5–6)
 
 56 verses: 56 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · The Pillars and the Sea (1 Kings 7)
+
+51 verses: 51 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

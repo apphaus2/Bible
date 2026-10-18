@@ -331,6 +331,76 @@
    "w": 760,
    "h": 1080,
    "title": "41 · The Doors"
+  },
+  "1KI-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Pillars and the Sea"
+  },
+  "1KI-C05-D-P01-SolomonSHouse.dc.html": {
+   "x": 840,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Solomon's House"
+  },
+  "1KI-C05-D-P02-SolomonSHouse.dc.html": {
+   "x": 1680,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Solomon's House"
+  },
+  "1KI-C05-D-P03-ThePillars.dc.html": {
+   "x": 2520,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · The Pillars"
+  },
+  "1KI-C05-D-P04-ThePillars.dc.html": {
+   "x": 3360,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · The Pillars"
+  },
+  "1KI-C05-D-P05-TheMoltenSea.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · The Molten Sea"
+  },
+  "1KI-C05-D-P06-TheTenBases.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Ten Bases"
+  },
+  "1KI-C05-D-P07-TheTenLavers.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Ten Lavers"
+  },
+  "1KI-C05-D-P08-TheTenLavers.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Ten Lavers"
+  },
+  "1KI-C05-D-P09-TheVesselsOfGold.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Vessels of Gold"
   }
  },
  "order": [
@@ -379,7 +449,17 @@
   "1KI-C04-D-P06-TheWordOfJehovahCa.dc.html",
   "1KI-C04-D-P07-TheOracle.dc.html",
   "1KI-C04-D-P08-TheCherubim.dc.html",
-  "1KI-C04-D-P09-TheDoors.dc.html"
+  "1KI-C04-D-P09-TheDoors.dc.html",
+  "1KI-C05-00-Title.dc.html",
+  "1KI-C05-D-P01-SolomonSHouse.dc.html",
+  "1KI-C05-D-P02-SolomonSHouse.dc.html",
+  "1KI-C05-D-P03-ThePillars.dc.html",
+  "1KI-C05-D-P04-ThePillars.dc.html",
+  "1KI-C05-D-P05-TheMoltenSea.dc.html",
+  "1KI-C05-D-P06-TheTenBases.dc.html",
+  "1KI-C05-D-P07-TheTenLavers.dc.html",
+  "1KI-C05-D-P08-TheTenLavers.dc.html",
+  "1KI-C05-D-P09-TheVesselsOfGold.dc.html"
  ],
  "notes": {
   "Main": {
@@ -416,6 +496,13 @@
    "text": "Chapter 4 · The House of Jehovah (1 Kings 5–6)",
    "x": 0,
    "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Pillars and the Sea (1 Kings 7)",
+   "x": 0,
+   "y": 16900
   }
  },
  "designSystems": [],

@@ -28,5 +28,7 @@ META = {
      "blurb": "A thousand burnt-offerings at Gibeon and the dream by night — ask what I shall give thee; give thy servant an understanding heart; the two women and the living child — divide the living child in two; the princes and the twelve officers; every man under his vine and under his fig-tree; three thousand proverbs, from the cedar of Lebanon to the hyssop in the wall."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The House of Jehovah", "range": "1 Kings 5–6", "bible_chapters": [5, 6],
      "blurb": "Hiram king of Tyre and the cedars of Lebanon floated in rafts by sea; the levy and the hewers; and the house of Jehovah as blueprints — threescore cubits long, built of stone made ready at the quarry so that neither hammer nor axe was heard; cedar within, the oracle overlaid with pure gold, the two cherubim of olive-wood, and seven years in building."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Pillars and the Sea", "range": "1 Kings 7", "bible_chapters": [7],
+     "blurb": "Solomon's own house thirteen years — the house of the forest of Lebanon on four rows of cedar pillars, and the porch of judgment; Hiram of Tyre, the worker in brass; the two pillars Jachin and Boaz with their pomegranates and lily-work; the molten sea upon twelve oxen; the ten bases and lavers; and the vessels of gold, all as blueprints."},
   ],
 }

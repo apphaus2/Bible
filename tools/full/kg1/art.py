@@ -4,7 +4,7 @@ reused where they fit (sa2.art, sa1.art, jdg.art, jos.art).
 Solomon at a distance: a deep-blue tunic and the gold crown (sol_fig). David old: purple (sa2.art.old_king). Bath-sheba:
 a plum robe. Elijah: a brown hairy mantle with a leather girdle, bareheaded. Ahab: crimson with the crown. Jezebel: black
 and gold."""
-import sys, pathlib, random, math
+import sys, pathlib, random, math, re
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 import mk, exodus as E, exodus3 as E3, exodus4 as E4, exodus5 as V, numbers1 as N, joshua1 as J, judges1 as J1, samuel1 as S1, samuel2 as S2, samuel3 as S3, samuel4 as S4
 from genesis.art2 import fit, ground, hills, SKIN
@@ -411,4 +411,142 @@ def years(w, h):
         x = x0 + i * (x1 - x0) / 7; yr = 4 + i
         o.append(node(x, y, f"YEAR {yr}", "#FFD23F" if i in (0, 7) else CY, r=6 if i in (0, 7) else 4, dy=-14, size=9))
     o.append(label(x0, y + 34, "FOUNDATION · ZIV", "#FFD23F", 9, "start") + label(x1, y + 34, "FINISHED · BUL", "#FFD23F", 9, "end"))
+    return "".join(o)
+
+# ---- 1 Kings 7 ----------------------------------------------------------------------------------------------------------
+BRASS = "#B87333"
+
+def forest_house(w, h):
+    """The house of the forest of Lebanon: a hundred cubits long, fifty broad, thirty high, upon four rows of cedar pillars with
+    cedar beams; windows over against window in three ranks."""
+    o = [bp(w, h), title_bar(w, "THE HOUSE OF THE FOREST OF LEBANON")]
+    u = min(w * 0.84 / 100, h * 0.66 / 30); x0 = w * 0.5 - 50 * u; base = h * 0.9
+    o.append(f'<rect x="{f(x0)}" y="{f(base - 30 * u)}" width="{f(100 * u)}" height="{f(30 * u)}" fill="#D8CCB0" stroke="#0D0D0F" stroke-width="2"></rect>')
+    for i in range(15):
+        x = x0 + (3 + i * 6.7) * u
+        o.append(f'<rect x="{f(x - 0.8 * u)}" y="{f(base - 14 * u)}" width="{f(1.6 * u)}" height="{f(14 * u)}" fill="{CEDAR_C}" stroke="#0D0D0F" stroke-width="1.2"></rect>')
+    o.append(f'<rect x="{f(x0)}" y="{f(base - 15.6 * u)}" width="{f(100 * u)}" height="{f(1.6 * u)}" fill="{CEDAR_C}" stroke="#0D0D0F" stroke-width="1.2"></rect>')
+    for k in range(3):
+        for i in range(10):
+            x = x0 + (5 + i * 10) * u; y = base - (19 + k * 4) * u
+            o.append(f'<rect x="{f(x - 1.2 * u)}" y="{f(y - 1.4 * u)}" width="{f(2.4 * u)}" height="{f(2.4 * u)}" fill="{INK}" stroke="{CY}" stroke-width="1"></rect>')
+    o.append(dim(x0, base - 30 * u - 12, x0 + 100 * u, base - 30 * u - 12, "100 CUBITS") + dim(x0 + 100 * u + 8, base, x0 + 100 * u + 8, base - 30 * u, "30", off=-10))
+    o.append(tag(x0 + 3 * u, base - 8 * u, "CEDAR PILLARS · FOUR ROWS", x0 + 10 * u, base + 8))
+    return "".join(o)
+
+def judgment_porch(p, w, h, seed):
+    """The porch of the throne where he was to judge, covered with cedar from floor to floor."""
+    b = h * 0.92; k = min(1.3, h / 280)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84)]
+    for x in (0.12, 0.88):
+        o.append(f'<rect x="{f(w * x - 14)}" y="0" width="28" height="{f(b)}" fill="#9A5A30" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(S3.throne(w * 0.5, b, k) + sol_fig(p, w * 0.5, b - 40 * k, fit(b, h * 0.4) * 0.86))
+    return "".join(o)
+
+def great_stones(w, h):
+    """Costly stones, great stones, stones of ten cubits and of eight cubits, sawed with saws, for the foundation."""
+    o = [bp(w, h), title_bar(w, "THE FOUNDATION · COSTLY STONES")]
+    u = min(w * 0.8 / 22, h * 0.5 / 6); x0 = w * 0.1; base = h * 0.84
+    o.append(box(x0, base, 10 * u, 3 * u, 3 * u, fill="#D8CCB0", top="#E8DCC0", side="#B8AC90") + dim(x0, base + 10, x0 + 10 * u, base + 10, "10 CUBITS"))
+    o.append(box(x0 + 12 * u, base, 8 * u, 3 * u, 3 * u, fill="#D8CCB0", top="#E8DCC0", side="#B8AC90") + dim(x0 + 12 * u, base + 10, x0 + 20 * u, base + 10, "8 CUBITS"))
+    return "".join(o)
+
+def casting(p, w, h, seed):
+    """Hiram casting the brass in the clay ground of the plain of the Jordan: furnace, crucible and moulds."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A2A1E", "#C8603A"), ground(w, h, h * 0.6, "#6A4A2A", dy=0),
+         f'<path d="M{f(w * 0.2)} {f(b)} L {f(w * 0.24)} {f(h * 0.5)} L {f(w * 0.36)} {f(h * 0.5)} L {f(w * 0.4)} {f(b)} Z" fill="#7A5A3A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         E.blaze(w * 0.3, h * 0.52, w * 0.08, h * 0.2, seed, n=6),
+         f'<path d="M{f(w * 0.42)} {f(h * 0.7)} C {f(w * 0.5)} {f(h * 0.74)} {f(w * 0.56)} {f(h * 0.8)} {f(w * 0.62)} {f(h * 0.82)}" stroke="#FFB04A" stroke-width="8" fill="none"></path>']
+    for i in range(3):
+        x = w * (0.64 + i * 0.1)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(h * 0.86)}" rx="{f(w * 0.04)}" ry="{f(h * 0.03)}" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="2"></ellipse><ellipse cx="{f(x)}" cy="{f(h * 0.855)}" rx="{f(w * 0.03)}" ry="{f(h * 0.018)}" fill="#FF8A3D"></ellipse>')
+    o.append(mk.person(p, round(w * 0.5), round(b), round(fit(b, h * 0.4), 3), body="#3A1E14", cloth="#6A3A2A", kind="Tunic", sw=3, extra=A.headcloth("#6A1A5A") + A.BLACK_BEARD))
+    return "".join(o)
+
+def pillar_elev(w, h, names=False):
+    """A pillar of brass, eighteen cubits high, twelve round; the capital five cubits, nets of checker-work, wreaths of chain-work,
+    two rows of pomegranates, lily-work at the top; names=True: the two pillars at the porch, Jachin and Boaz."""
+    o = [bp(w, h), title_bar(w, "JACHIN AND BOAZ" if names else "THE PILLARS OF BRASS · ELEVATION")]
+    u = h * 0.74 / 23; base = h * 0.92
+    xs = (w * 0.32, w * 0.68) if names else (w * 0.4,)
+    for x in xs:
+        o.append(f'<rect x="{f(x - 1.9 * u)}" y="{f(base - 18 * u)}" width="{f(3.8 * u)}" height="{f(18 * u)}" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2"></rect>')
+        cy = base - 18 * u
+        o.append(f'<path d="M{f(x - 1.9 * u)} {f(cy)} C {f(x - 3.4 * u)} {f(cy - 1.5 * u)} {f(x - 3.4 * u)} {f(cy - 3.5 * u)} {f(x - 2.4 * u)} {f(cy - 5 * u)} L {f(x + 2.4 * u)} {f(cy - 5 * u)} C {f(x + 3.4 * u)} {f(cy - 3.5 * u)} {f(x + 3.4 * u)} {f(cy - 1.5 * u)} {f(x + 1.9 * u)} {f(cy)} Z" fill="#C8863E" stroke="#0D0D0F" stroke-width="2"></path>')
+        for i in range(7):
+            o.append(f'<path d="M{f(x - 3 * u)} {f(cy - (0.6 + i * 0.5) * u)} L {f(x + 3 * u)} {f(cy - (0.6 + i * 0.5) * u)}" stroke="#7A4A1A" stroke-width="1" opacity="0.7"></path>')
+        for row in range(2):
+            for i in range(6):
+                o.append(f'<circle cx="{f(x - 2.5 * u + i * u)}" cy="{f(cy - (1 + row * 2.2) * u)}" r="{f(0.32 * u)}" fill="#B5121B" stroke="#0D0D0F" stroke-width="1"></circle>')
+        for i in range(5):
+            o.append(f'<path d="M{f(x - 2.4 * u + i * 1.2 * u)} {f(cy - 5 * u)} C {f(x - 2.8 * u + i * 1.2 * u)} {f(cy - 6.4 * u)} {f(x - 1.6 * u + i * 1.2 * u)} {f(cy - 6.4 * u)} {f(x - 2 * u + i * 1.2 * u)} {f(cy - 5 * u)}" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.4"></path>')
+        if names:
+            o.append(label(x, base + 2 - 9 * u, "JACHIN" if x < w * 0.5 else "BOAZ", "#FFD23F", 13))
+    x = xs[-1]
+    if not names:
+        o.append(dim(x + 4 * u, base, x + 4 * u, base - 18 * u, "18 CUBITS", off=-14) + dim(x + 4 * u, base - 18 * u, x + 4 * u, base - 23 * u, "5", off=-14))
+        o.append(tag(x + 3 * u, base - 21 * u, "NETS OF CHECKER-WORK", x + 8 * u, base - 21 * u) + tag(x - 2.5 * u, base - 19 * u, "POMEGRANATES", x - 7 * u, base - 15 * u)
+                 + tag(x, base - 23.4 * u, "LILY-WORK", x - 7 * u, base - 23 * u))
+    return "".join(o)
+
+def molten_sea(w, h):
+    """The molten sea: ten cubits brim to brim, five high, a line of thirty compassing it; knops under the brim in two rows; set
+    upon twelve oxen, three toward each quarter."""
+    o = [bp(w, h), title_bar(w, "THE MOLTEN SEA")]
+    u = min(w * 0.7 / 12, h * 0.66 / 7); cx = w * 0.5; base = h * 0.9; top = base - 6.6 * u
+    for i in range(6):
+        x = cx - 5 * u + i * 2 * u
+        o.append(S1.cow(x + (u if i >= 3 else 0), base, u / 80, color=BRASS, patch="#C8863E", flip=i >= 3))
+    o.append(f'<path d="M{f(cx - 5 * u)} {f(top)} C {f(cx - 5 * u)} {f(top + 4 * u)} {f(cx - 3 * u)} {f(top + 5 * u)} {f(cx)} {f(top + 5 * u)} C {f(cx + 3 * u)} {f(top + 5 * u)} {f(cx + 5 * u)} {f(top + 4 * u)} {f(cx + 5 * u)} {f(top)} Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<ellipse cx="{f(cx)}" cy="{f(top)}" rx="{f(5.3 * u)}" ry="{f(0.9 * u)}" fill="#C8863E" stroke="#0D0D0F" stroke-width="2.4"></ellipse>'
+             f'<ellipse cx="{f(cx)}" cy="{f(top + 0.1 * u)}" rx="{f(4.6 * u)}" ry="{f(0.6 * u)}" fill="#1F6F9A"></ellipse>')
+    for row in range(2):
+        for i in range(11):
+            o.append(f'<circle cx="{f(cx - 4.5 * u + i * 0.9 * u)}" cy="{f(top + (0.9 + row * 0.6) * u)}" r="{f(0.2 * u)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="0.8"></circle>')
+    o.append(dim(cx - 5.3 * u, top - 1.6 * u, cx + 5.3 * u, top - 1.6 * u, "10 CUBITS · BRIM TO BRIM") + dim(cx + 6 * u, top, cx + 6 * u, top + 5 * u, "5", off=-10))
+    o.append(tag(cx - 4 * u, base - 0.6 * u, "TWELVE OXEN", cx - 7 * u, base - 4 * u))
+    return "".join(o)
+
+def base_laver(w, h, laver=True):
+    """A base of brass: four cubits by four, three high; panels between the ledges with lions, oxen and cherubim; four
+    wheels like chariot wheels; laver=True: a laver of forty baths upon it."""
+    o = [bp(w, h), title_bar(w, "A BASE OF BRASS" + (" · AND ITS LAVER" if laver else ""))]
+    u = min(w * 0.5 / 5, h * 0.66 / (7 if laver else 4.5)); cx = w * 0.46; base = h * 0.9
+    o.append(box(cx - 2 * u, base - 0.8 * u, 4 * u, 2 * u, 2.4 * u, fill=BRASS, top="#C8863E", side="#8A5A2A"))
+    for i, nm in enumerate(("LION", "OX", "CHERUB")):
+        x = cx - 1.4 * u + i * 1.4 * u; y = base - 2 * u
+        o.append(f'<rect x="{f(x - 0.55 * u)}" y="{f(y - 0.9 * u)}" width="{f(1.1 * u)}" height="{f(1.8 * u)}" fill="none" stroke="#5A3A1A" stroke-width="1.6"></rect>' + label(x, y + 4, nm, "#3A2210", 7))
+    for dx in (-1.6, 1.6):
+        o.append(f'<circle cx="{f(cx + dx * u)}" cy="{f(base - 0.75 * u)}" r="{f(0.75 * u)}" fill="none" stroke="#0D0D0F" stroke-width="{f(0.18 * u)}"></circle>'
+                 f'<circle cx="{f(cx + dx * u)}" cy="{f(base - 0.75 * u)}" r="{f(0.75 * u)}" fill="none" stroke="{BRASS}" stroke-width="{f(0.12 * u)}"></circle>'
+                 + "".join(f'<path d="M{f(cx + dx * u)} {f(base - 0.75 * u)} l {f(0.7 * u * math.cos(a))} {f(0.7 * u * math.sin(a))}" stroke="{BRASS}" stroke-width="2"></path>' for a in [j * 0.785 for j in range(8)]))
+    if laver:
+        ly = base - 3.2 * u
+        o.append(f'<path d="M{f(cx - 2 * u)} {f(ly - 2.4 * u)} C {f(cx - 2 * u)} {f(ly - 0.4 * u)} {f(cx - 1 * u)} {f(ly)} {f(cx + 0.2 * u)} {f(ly)} C {f(cx + 1.4 * u)} {f(ly)} {f(cx + 2.4 * u)} {f(ly - 0.4 * u)} {f(cx + 2.4 * u)} {f(ly - 2.4 * u)} Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<ellipse cx="{f(cx + 0.2 * u)}" cy="{f(ly - 2.4 * u)}" rx="{f(2.2 * u)}" ry="{f(0.4 * u)}" fill="#1F6F9A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+        o.append(tag(cx + 2.2 * u, ly - 1.4 * u, "A LAVER · FORTY BATHS", cx + 3.4 * u, ly - 3 * u))
+    o.append(dim(cx - 2 * u, base + 8, cx + 2 * u, base + 8, "4 CUBITS") + tag(cx + 1.6 * u, base - 0.75 * u, "WHEELS · 1½ CUBITS", cx + 3.4 * u, base - 0.4 * u))
+    return "".join(o)
+
+def court_plan(w, h):
+    """The bases set five on the right side of the house and five on the left; the sea on the right side eastward."""
+    o = [bp(w, h), title_bar(w, "THE COURT · THE BASES AND THE SEA")]
+    u = min(w * 0.8 / 60, h * 0.7 / 40); x0 = w * 0.5 - 30 * u; y0 = h * 0.54 - 10 * u
+    o.append(f'<rect x="{f(x0 + 14 * u)}" y="{f(y0)}" width="{f(46 * u)}" height="{f(20 * u)}" fill="#2A3A4A" stroke="{CY}" stroke-width="2"></rect>' + label(x0 + 37 * u, y0 + 10 * u, "THE HOUSE", CY, 9))
+    for i in range(5):
+        o.append(f'<rect x="{f(x0 + (18 + i * 8) * u)}" y="{f(y0 - 6 * u)}" width="{f(3 * u)}" height="{f(3 * u)}" fill="{BRASS}" stroke="#0D0D0F" stroke-width="1.4"></rect>'
+                 f'<rect x="{f(x0 + (18 + i * 8) * u)}" y="{f(y0 + 23 * u)}" width="{f(3 * u)}" height="{f(3 * u)}" fill="{BRASS}" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    o.append(f'<circle cx="{f(x0 + 6 * u)}" cy="{f(y0 + 25 * u)}" r="{f(5 * u)}" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2"></circle>' + label(x0 + 6 * u, y0 + 25.5 * u, "SEA", INK, 8))
+    o.append(label(x0 + 2 * u, y0 + 10 * u, "EAST", "#FFD23F", 9) + label(x0 + 37 * u, y0 + 31 * u, "SOUTH · THE RIGHT SIDE", "#FFD23F", 9))
+    return "".join(o)
+
+def gold_vessels(w, h):
+    """The candlesticks of pure gold, five on the right side and five on the left, before the oracle."""
+    o = [bp(w, h), title_bar(w, "THE VESSELS OF GOLD · TEN CANDLESTICKS")]
+    s = min(w / 1900, h / 260)
+    for i in range(10):
+        x = w * (0.06 + i * 0.08) + (w * 0.12 if i >= 5 else 0)
+        o.append(re.sub(r'<path d="M[^"]*" fill="none" stroke="#8A8478"[^>]*></path>', "", S1.lamp(x, h * 0.9, s, lit=True)))
+    o.append(f'<rect x="{f(w * 0.47)}" y="{f(h * 0.3)}" width="{f(w * 0.06)}" height="{f(h * 0.6)}" fill="{GOLD}" stroke="#0D0D0F" stroke-width="2"></rect>' + label(w * 0.5, h * 0.26, "ORACLE", CY, 8))
     return "".join(o)
