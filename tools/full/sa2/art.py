@@ -484,3 +484,83 @@ def crown_talent(w, h, seed):
     o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', V.rays(w * 0.5, h * 0.6, 36, 20, max(w, h), color="#FFD23F", op=0.2),
          S2.crown(w * 0.5, h * 0.78, min(w, h) / 90)]
     return "".join(o)
+
+# ---- 2 Samuel 13–14 -----------------------------------------------------------------------------------------------------
+import judges2 as J2
+def kitchen(w, h, seed):
+    """Tamar's dough, the kneading-trough, the cakes and the pan by the fire in Amnon's house."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#4A2A1E"></rect>', ground(w, h, h * 0.76, "#2A1810", dy=0),
+         E.blaze(w * 0.7, h * 0.9, w * 0.2, h * 0.24, seed, n=6),
+         f'<ellipse cx="{f(w * 0.7)}" cy="{f(h * 0.66)}" rx="{f(w * 0.14)}" ry="{f(h * 0.03)}" fill="#3A3A42" stroke="#0D0D0F" stroke-width="2.4"></ellipse>',
+         f'<path d="M{f(w * 0.12)} {f(h * 0.7)} L {f(w * 0.46)} {f(h * 0.7)} L {f(w * 0.42)} {f(h * 0.84)} L {f(w * 0.16)} {f(h * 0.84)} Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<ellipse cx="{f(w * 0.29)}" cy="{f(h * 0.7)}" rx="{f(w * 0.14)}" ry="{f(h * 0.04)}" fill="#F3E0B8" stroke="#0D0D0F" stroke-width="2"></ellipse>']
+    for i in range(4):
+        o.append(f'<ellipse cx="{f(w * (0.62 + i * 0.05))}" cy="{f(h * 0.64)}" rx="{f(w * 0.022)}" ry="{f(h * 0.012)}" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1.4"></ellipse>')
+    return "".join(o)
+
+def chamber(w, h, seed):
+    """The door of Amnon's inner chamber, a lamp's light within; the cakes in the doorway."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A2E"></rect>',
+         f'<rect x="{f(w * 0.36)}" y="{f(h * 0.2)}" width="{f(w * 0.28)}" height="{f(h * 0.7)}" fill="#FFC14D" stroke="#0D0D0F" stroke-width="2.6"></rect>',
+         f'<path d="M{f(w * 0.64)} {f(h * 0.2)} L {f(w * 0.78)} {f(h * 0.14)} L {f(w * 0.78)} {f(h * 0.96)} L {f(w * 0.64)} {f(h * 0.9)} Z" fill="#5A3A22" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.9, "#1A0E10", dy=0)]
+    return "".join(o)
+
+def tamar_away(p, w, h, seed):
+    """Tamar going her way with ashes on her head, her rent garment of divers colors, her hand laid on her head."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A5A7A", "#C8B8C8"), ground(w, h, h * 0.62, "#6A6070", dy=0)]
+    s = fit(b, h * 0.44)
+    stripes = "".join(f'<path d="M{x} -150 L {x + 2} -10" stroke="{c}" stroke-width="6"></path>' for x, c in zip(range(-24, 30, 12), ["#D7261E", "#FFD23F", "#1F5FAD", "#2E6B3A", "#C2456A"]))
+    o.append(mk.person(p, round(w * 0.5), round(b), round(s, 3), body="#3A1E14", cloth="#8A6A9A", woman=True, hair="#1A1210", sw=3, up=[(-22, -158), (-16, -196), (0, -206)],
+                       extra=stripes + '<path d="M-8 -150 L 4 -100 L -6 -60" stroke="#0D0D0F" stroke-width="2"></path><ellipse cx="0" cy="-200" rx="14" ry="6" fill="#8A8478" opacity="0.8"></ellipse>'))
+    return "".join(o)
+
+def feast_fled(p, w, h, seed):
+    """The shearers' feast at Baal-hazor left empty: the table, a cup overturned, and the king's sons fleeing on their mules
+    far off."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#C8603A"), hills(w, h, h * 0.5, seed, color="#7A5A4A", amp=14), ground(w, h, h * 0.58, "#A88A5A", dy=0)]
+    for i in range(4):
+        x = w * (0.56 + i * 0.1); y = h * (0.6 + (i % 2) * 0.03)
+        o.append(N.mount(x, y, min(0.28, h / 1400), flip=False, rider_cloth=["#8A3A1E", "#3A4A6A", "#5A5A2A", "#6A2A4A"][i], p=p + str(i)))
+    o.append(S3.table(w * 0.3, b, w * 0.44, min(1.2, h / 300)))
+    o.append(f'<g transform="translate({f(w * 0.42)} {f(b - 74 * min(1.2, h / 300))}) rotate(80)"><path d="M0 0 l -8 -20 l 16 0 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path></g>')
+    return "".join(o)
+
+def watch(p, w, h, seed):
+    """The young man that kept the watch on the wall, and much people coming by the way of the hill-side behind him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#F3D8A0", "#E8B880"), f'<path d="M-10 {f(h * 0.7)} C {f(w * 0.3)} {f(h * 0.6)} {f(w * 0.5)} {f(h * 0.3)} {f(w + 10)} {f(h * 0.34)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#B89A6A" stroke="#0D0D0F" stroke-width="2"></path>',
+         S4.gatehouse(w * 0.24, b, w * 0.36, h * 0.6)]
+    o.append(mk.person(p, round(w * 0.24), round(b - h * 0.62), round(fit(b, h * 0.6) * 0.5, 3), body="#2A140C", cloth="#5A6A8A", kind="Tunic", sw=3, up=[(22, -158), (40, -170), (60, -176)]))
+    for i in range(8):
+        t = i / 7; x = w * (0.6 + 0.36 * t); y = h * (0.62 - 0.22 * t)
+        o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * (0.14 - 0.06 * t)), 3), body="#2A140C", cloth=WAR[i % 4], kind="Tunic", sw=2, flip=True))
+    return "".join(o)
+
+def tekoa(p, w, h, seed):
+    """The woman of Tekoa in mourning apparel fallen on her face before the king on his throne."""
+    b = h * 0.92; k = min(1.3, h / 300)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.24, b, k)]
+    s = fit(b, h * 0.36)
+    o.append(king_fig(p, w * 0.24, b - 40 * k, s * 0.9))
+    o.append(N.prostrate(w * 0.56, b, s * 0.8, color="#2A2A2E", skin="#8A5A3A", flip=True))
+    return "".join(o)
+
+def barley_fire(w, h, seed):
+    """Joab's field of barley set on fire by Absalom's servants."""
+    o = [sky(w, h, "#3A1A1A", "#C8603A"), ground(w, h, h * 0.6, "#5A4A2A", dy=0), J2.grain(-10, w + 10, h * 0.8, h * 0.24, seed, burning=True),
+         J2.grain(-10, w + 10, h * 0.98, h * 0.3, seed + 1, burning=True)]
+    for i in range(5):
+        o.append(f'<circle cx="{f(w * (0.1 + i * 0.2))}" cy="{f(h * 0.3)}" r="{f(w * 0.1)}" fill="#3A2A2E" opacity="0.6"></circle>')
+    return "".join(o)
+
+def bowed(p, w, h, seed):
+    """Absalom bowed himself on his face to the ground before the king."""
+    b = h * 0.92; k = min(1.3, h / 300)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.24, b, k)]
+    s = fit(b, h * 0.36)
+    o.append(king_fig(p, w * 0.36, b, s * 0.9, flip=False))
+    o.append(N.prostrate(w * 0.6, b, s * 0.8, color="#B5121B", skin="#8A5A3A", flip=True))
+    return "".join(o)

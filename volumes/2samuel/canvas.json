@@ -506,6 +506,132 @@
    "w": 760,
    "h": 1080,
    "title": "64 · The City of Waters"
+  },
+  "2SA-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Absalom"
+  },
+  "2SA-C07-D-P01-Tamar.dc.html": {
+   "x": 840,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Tamar"
+  },
+  "2SA-C07-D-P02-Tamar.dc.html": {
+   "x": 1680,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Tamar"
+  },
+  "2SA-C07-D-P03-Tamar.dc.html": {
+   "x": 2520,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Tamar"
+  },
+  "2SA-C07-D-P04-Tamar.dc.html": {
+   "x": 3360,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Tamar"
+  },
+  "2SA-C07-D-P05-Tamar.dc.html": {
+   "x": 0,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Tamar"
+  },
+  "2SA-C07-D-P06-BaalHazor.dc.html": {
+   "x": 840,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Baal-hazor"
+  },
+  "2SA-C07-D-P07-AmnonOnlyIsDead.dc.html": {
+   "x": 1680,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Amnon Only Is Dead"
+  },
+  "2SA-C07-D-P08-AmnonOnlyIsDead.dc.html": {
+   "x": 2520,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Amnon Only Is Dead"
+  },
+  "2SA-C07-D-P09-TheWiseWomanOfTeko.dc.html": {
+   "x": 3360,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Wise Woman of Tekoa"
+  },
+  "2SA-C07-D-P10-TheWiseWomanOfTeko.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Wise Woman of Tekoa"
+  },
+  "2SA-C07-D-P11-TheWiseWomanOfTeko.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The Wise Woman of Tekoa"
+  },
+  "2SA-C07-D-P12-TheWiseWomanOfTeko.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The Wise Woman of Tekoa"
+  },
+  "2SA-C07-D-P13-TheWiseWomanOfTeko.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Wise Woman of Tekoa"
+  },
+  "2SA-C07-D-P14-IsTheHandOfJoabWit.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Is the Hand of Joab with Thee?"
+  },
+  "2SA-C07-D-P15-IsTheHandOfJoabWit.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Is the Hand of Joab with Thee?"
+  },
+  "2SA-C07-D-P16-NoBlemishInHim.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · No Blemish in Him"
+  },
+  "2SA-C07-D-P17-NoBlemishInHim.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · No Blemish in Him"
   }
  },
  "order": [
@@ -579,7 +705,25 @@
   "2SA-C06-D-P09-ThouArtTheMan.dc.html",
   "2SA-C06-D-P10-TheSeventhDay.dc.html",
   "2SA-C06-D-P11-TheSeventhDay.dc.html",
-  "2SA-C06-E-P01-TheCityOfWaters.dc.html"
+  "2SA-C06-E-P01-TheCityOfWaters.dc.html",
+  "2SA-C07-00-Title.dc.html",
+  "2SA-C07-D-P01-Tamar.dc.html",
+  "2SA-C07-D-P02-Tamar.dc.html",
+  "2SA-C07-D-P03-Tamar.dc.html",
+  "2SA-C07-D-P04-Tamar.dc.html",
+  "2SA-C07-D-P05-Tamar.dc.html",
+  "2SA-C07-D-P06-BaalHazor.dc.html",
+  "2SA-C07-D-P07-AmnonOnlyIsDead.dc.html",
+  "2SA-C07-D-P08-AmnonOnlyIsDead.dc.html",
+  "2SA-C07-D-P09-TheWiseWomanOfTeko.dc.html",
+  "2SA-C07-D-P10-TheWiseWomanOfTeko.dc.html",
+  "2SA-C07-D-P11-TheWiseWomanOfTeko.dc.html",
+  "2SA-C07-D-P12-TheWiseWomanOfTeko.dc.html",
+  "2SA-C07-D-P13-TheWiseWomanOfTeko.dc.html",
+  "2SA-C07-D-P14-IsTheHandOfJoabWit.dc.html",
+  "2SA-C07-D-P15-IsTheHandOfJoabWit.dc.html",
+  "2SA-C07-D-P16-NoBlemishInHim.dc.html",
+  "2SA-C07-D-P17-NoBlemishInHim.dc.html"
  ],
  "notes": {
   "Main": {
@@ -630,6 +774,13 @@
    "text": "Chapter 6 · Thou Art the Man (2 Samuel 11–12)",
    "x": 0,
    "y": 19800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Absalom (2 Samuel 13–14)",
+   "x": 0,
+   "y": 23900
   }
  },
  "designSystems": [],

@@ -34,5 +34,7 @@ META = {
      "blurb": "Is there yet any that is left of the house of Saul, that I may show him kindness for Jonathan's sake?; Ziba; Mephibosheth fallen on his face — fear not; he shall eat at my table as one of the king's sons; Hanun shames David's servants — tarry at Jericho until your beards be grown; Joab before Rabbah: be of good courage, and let us play the man."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Thou Art the Man", "range": "2 Samuel 11–12", "bible_chapters": [11, 12],
      "blurb": "At the time when kings go out to battle David tarried at Jerusalem; the roof at eventide and Bath-sheba; Uriah sleeping at the king's door; the letter sent by Uriah's hand; the poor man's one little ewe lamb — thou art the man; I have sinned against Jehovah; the child's seventh day, Solomon whom Jehovah loved, and the crown of Rabbah."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Absalom", "range": "2 Samuel 13–14", "bible_chapters": [13, 14],
+     "blurb": "Amnon's sickness for his sister Tamar and Jonadab's subtle counsel; Tamar's cakes, the shut door, and her garment of divers colors rent; Absalom's two full years and the shearers' feast at Baal-hazor; Absalom fled to Geshur; the wise woman of Tekoa — we must needs die, and are as water spilt on the ground; and no blemish in him from the sole of his foot to the crown of his head."},
   ],
 }
