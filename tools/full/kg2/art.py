@@ -596,3 +596,42 @@ def border_map(w, h):
     o.append(node(w * 0.6, h * 0.06, "ENTRANCE OF HAMATH", "#FFD23F", r=5, dy=14, size=9) + node(w * 0.52, h * 0.86, "SEA OF THE ARABAH", "#FFD23F", r=5, dy=-12, size=9)
              + node(w * 0.7, h * 0.24, "DAMASCUS", "#8FD0E2", r=4, dy=-10, size=9) + node(w * 0.4, h * 0.56, "SAMARIA", "#D7261E", r=5, dy=-10, size=9))
     return "".join(o)
+
+# ---- 2 Kings 15–16 ------------------------------------------------------------------------------------------------------
+def separate_house(p, w, h, seed):
+    """The leper king dwelling in a separate house, its door shut, outside the bustle of the king's house."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#8A9AB8", "#E8D8C8"), J.city_hill(w * 0.76, h * 0.6, w * 0.4, h * 0.3, seed), ground(w, h, h * 0.62, "#A89A80", dy=0),
+         f'<rect x="{f(w * 0.12)}" y="{f(h * 0.42)}" width="{f(w * 0.3)}" height="{f(h * 0.34)}" fill="#C8B8A0" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<rect x="{f(w * 0.24)}" y="{f(h * 0.56)}" width="{f(w * 0.08)}" height="{f(h * 0.2)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></rect>'
+         f'<rect x="{f(w * 0.16)}" y="{f(h * 0.48)}" width="{f(w * 0.05)}" height="{f(h * 0.05)}" fill="#FFC14D" stroke="#0D0D0F" stroke-width="1.6"></rect>']
+    return "".join(o)
+
+ASSYRIA = [("SAMARIA", 0.32, 0.56), ("DAMASCUS", 0.52, 0.32), ("IJON", 0.4, 0.2), ("HAZOR", 0.36, 0.34), ("GILEAD", 0.5, 0.56), ("NINEVEH", 0.9, 0.12), ("KIR", 0.92, 0.42)]
+def assyria_map(w, h, hi=(), arrows=()):
+    """Assyria's march westward as a technical map (hi: places taken; arrows: (from, to) pairs)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.14)} -10 C {f(w * 0.12)} {f(h * 0.3)} {f(w * 0.1)} {f(h * 0.7)} {f(w * 0.06)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.78)} -10 C {f(w * 0.8)} {f(h * 0.3)} {f(w * 0.84)} {f(h * 0.6)} {f(w * 0.86)} {f(h + 10)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>' + label(w * 0.76, h * 0.7, "EUPHRATES", "#8FD0E2", 8, "end"))
+    pos = {n: (w * x, h * y) for n, x, y in ASSYRIA}
+    for a, b in arrows: o.append(route([pos[a], pos[b]], color="#D7261E"))
+    for nm, x, y in ASSYRIA:
+        o.append(node(w * x, h * y, nm, "#D7261E" if nm in hi else ("#FFD23F" if nm == "NINEVEH" else "#8FD0E2"), r=5, dy=-11, size=9))
+    return "".join(o)
+
+def two_altars(w, h, damascus_new=True):
+    """The great altar after the fashion of the altar at Damascus, and the brazen altar moved to the north side of it."""
+    o = [bp(w, h), title_bar(w, "THE ALTAR AFTER THE PATTERN OF DAMASCUS")]
+    o.append(box(w * 0.18, h * 0.86, w * 0.4, w * 0.16, h * 0.3, fill="#C8BC9C", top="#D8CCB0", side="#A89C80") + tag(w * 0.38, h * 0.64, "THE GREAT ALTAR", w * 0.3, h * 0.3))
+    o.append(box(w * 0.7, h * 0.86, w * 0.16, w * 0.08, h * 0.16, fill=BRASS, top="#C8863E", side="#8A5A2A") + tag(w * 0.78, h * 0.74, "THE BRAZEN ALTAR · NORTH SIDE", w * 0.6, h * 0.48))
+    return "".join(o)
+
+def sea_pavement(w, h):
+    """The sea taken down from off the brazen oxen and set upon a pavement of stone; the bases stripped of their panels."""
+    o = [bp(w, h), title_bar(w, "THE SEA UPON A PAVEMENT OF STONE")]
+    u = min(w * 0.7 / 12, h * 0.66 / 7); cx = w * 0.42; base = h * 0.86
+    o.append(f'<rect x="{f(cx - 6 * u)}" y="{f(base - 0.6 * u)}" width="{f(12 * u)}" height="{f(0.6 * u)}" fill="#D8CCB0" stroke="#0D0D0F" stroke-width="2"></rect>')
+    top = base - 5.6 * u
+    o.append(f'<path d="M{f(cx - 5 * u)} {f(top)} C {f(cx - 5 * u)} {f(top + 4 * u)} {f(cx - 3 * u)} {f(top + 5 * u)} {f(cx)} {f(top + 5 * u)} C {f(cx + 3 * u)} {f(top + 5 * u)} {f(cx + 5 * u)} {f(top + 4 * u)} {f(cx + 5 * u)} {f(top)} Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<ellipse cx="{f(cx)}" cy="{f(top)}" rx="{f(5.3 * u)}" ry="{f(0.9 * u)}" fill="#C8863E" stroke="#0D0D0F" stroke-width="2.4"></ellipse>')
+    o.append(f'<g opacity="0.4">' + S1.cow(w * 0.84, base, u / 80, color=BRASS, patch="#C8863E") + '</g>' + tag(w * 0.84, base - u, "THE BRAZEN OXEN, REMOVED", w * 0.7, base - 4 * u))
+    return "".join(o)

@@ -34,5 +34,7 @@ META = {
      "blurb": "Athaliah destroys the seed royal, and Jehosheba hides the child Joash six years in the house of Jehovah; Jehoiada's covenant with the captains; the crown and the testimony — long live the king; Athaliah's cry, Treason! treason!; then Jehoash and the breaches of the house, the chest with a hole in its lid, and the hallowed things sent to Hazael."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Bones of Elisha", "range": "2 Kings 13–14", "bible_chapters": [13, 14],
      "blurb": "Elisha sick unto death — my father, my father, the chariots of Israel; the arrow of victory shot out of the window eastward, and the ground smitten thrice; the dead man who touched the bones of Elisha and revived; Amaziah and the parable of the thistle and the cedar of Lebanon; the wall of Jerusalem broken down; and Jeroboam the son of Joash."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Ahaz", "range": "2 Kings 15–16", "bible_chapters": [15, 16],
+     "blurb": "Azariah the leper king in his separate house; Zechariah, Shallum, Menahem, Pekahiah and Pekah, king after king in Samaria; Pul and Tiglath-pileser of Assyria; then Ahaz — I am thy servant and thy son; the altar after the fashion of the altar at Damascus, and the sea set down from off the brazen oxen."},
   ],
 }

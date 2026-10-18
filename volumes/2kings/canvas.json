@@ -737,6 +737,62 @@
    "w": 760,
    "h": 1080,
    "title": "96 · Jeroboam the Son of Joash"
+  },
+  "2KI-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Ahaz"
+  },
+  "2KI-C08-R-P01-TheKingsOfJudahAnd.dc.html": {
+   "x": 840,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Kings of Judah and of Israel"
+  },
+  "2KI-C08-R-P02-TheKingsOfJudahAnd.dc.html": {
+   "x": 1680,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Kings of Judah and of Israel"
+  },
+  "2KI-C08-R-P03-TheKingsOfJudahAnd.dc.html": {
+   "x": 2520,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Kings of Judah and of Israel"
+  },
+  "2KI-C08-G-P01-Ahaz.dc.html": {
+   "x": 3360,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Ahaz"
+  },
+  "2KI-C08-G-P02-TheAltarAtDamascus.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Altar at Damascus"
+  },
+  "2KI-C08-G-P03-TheAltarAtDamascus.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The Altar at Damascus"
+  },
+  "2KI-C08-G-P04-TheAltarAtDamascus.dc.html": {
+   "x": 1680,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · The Altar at Damascus"
   }
  },
  "order": [
@@ -843,7 +899,15 @@
   "2KI-C07-S-P01-Amaziah.dc.html",
   "2KI-C07-E-P01-TheThistleAndTheCe.dc.html",
   "2KI-C07-T-P01-.dc.html",
-  "2KI-C07-F-P01-JeroboamTheSonOfJo.dc.html"
+  "2KI-C07-F-P01-JeroboamTheSonOfJo.dc.html",
+  "2KI-C08-00-Title.dc.html",
+  "2KI-C08-R-P01-TheKingsOfJudahAnd.dc.html",
+  "2KI-C08-R-P02-TheKingsOfJudahAnd.dc.html",
+  "2KI-C08-R-P03-TheKingsOfJudahAnd.dc.html",
+  "2KI-C08-G-P01-Ahaz.dc.html",
+  "2KI-C08-G-P02-TheAltarAtDamascus.dc.html",
+  "2KI-C08-G-P03-TheAltarAtDamascus.dc.html",
+  "2KI-C08-G-P04-TheAltarAtDamascus.dc.html"
  ],
  "notes": {
   "Main": {
@@ -901,6 +965,13 @@
    "text": "Chapter 7 · The Bones of Elisha (2 Kings 13–14)",
    "x": 0,
    "y": 28700
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Ahaz (2 Kings 15–16)",
+   "x": 0,
+   "y": 31600
   }
  },
  "designSystems": [],
