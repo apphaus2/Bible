@@ -79,6 +79,83 @@
    "w": 760,
    "h": 1080,
    "title": "8 · The Line of Scarlet Thread"
+  },
+  "JOS-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Waters of the Jordan"
+  },
+  "JOS-C02-D-P01-TheArkOfTheCovenan.dc.html": {
+   "x": 840,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Ark of the Covenant"
+  },
+  "JOS-C02-D-P02-TheyShallStandInOn.dc.html": {
+   "x": 1680,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · They Shall Stand in One Heap"
+  },
+  "JOS-C02-D-P03-TheyShallStandInOn.dc.html": {
+   "x": 2520,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · They Shall Stand in One Heap"
+  },
+  "JOS-C02-D-P04-TwelveStones.dc.html": {
+   "x": 3360,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Twelve Stones"
+  },
+  "JOS-C02-D-P05-TwelveStones.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Twelve Stones"
+  },
+  "JOS-C02-D-P06-TwelveStones.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Twelve Stones"
+  },
+  "JOS-C02-D-P07-WhatMeanTheseStone.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · What Mean These Stones?"
+  },
+  "JOS-C02-D-P08-KnivesOfFlint.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Knives of Flint"
+  },
+  "JOS-C02-D-P09-KnivesOfFlint.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Knives of Flint"
+  },
+  "JOS-C02-D-P10-ThePrinceOfTheHost.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Prince of the Host of Jehovah"
   }
  },
  "order": [
@@ -91,7 +168,18 @@
   "JOS-C01-D-P05-Rahab.dc.html",
   "JOS-C01-D-P06-JehovahYourGodHeIs.dc.html",
   "JOS-C01-D-P07-TheLineOfScarletTh.dc.html",
-  "JOS-C01-D-P08-TheLineOfScarletTh.dc.html"
+  "JOS-C01-D-P08-TheLineOfScarletTh.dc.html",
+  "JOS-C02-00-Title.dc.html",
+  "JOS-C02-D-P01-TheArkOfTheCovenan.dc.html",
+  "JOS-C02-D-P02-TheyShallStandInOn.dc.html",
+  "JOS-C02-D-P03-TheyShallStandInOn.dc.html",
+  "JOS-C02-D-P04-TwelveStones.dc.html",
+  "JOS-C02-D-P05-TwelveStones.dc.html",
+  "JOS-C02-D-P06-TwelveStones.dc.html",
+  "JOS-C02-D-P07-WhatMeanTheseStone.dc.html",
+  "JOS-C02-D-P08-KnivesOfFlint.dc.html",
+  "JOS-C02-D-P09-KnivesOfFlint.dc.html",
+  "JOS-C02-D-P10-ThePrinceOfTheHost.dc.html"
  ],
  "notes": {
   "Main": {
@@ -107,6 +195,13 @@
    "text": "Chapter 1 · Be Strong and of Good Courage (Joshua 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Waters of the Jordan (Joshua 3–5)",
+   "x": 0,
+   "y": 4600
   }
  },
  "designSystems": [],

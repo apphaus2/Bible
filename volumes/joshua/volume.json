@@ -16,6 +16,16 @@
     "Main.dc.html",
     "JOS-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Waters of the Jordan",
+   "range": "Joshua 3–5",
+   "blurb": "The ark goes before, and the waters that come down from above stand in one heap; all Israel passes over on dry ground; twelve stones out of the midst of the Jordan set up in Gilgal; the passover in the plains of Jericho, the manna ceased, and the prince of the host of Jehovah with his sword drawn.",
+   "prefixes": [
+    "JOS-C02-"
+   ]
   }
  ]
 }

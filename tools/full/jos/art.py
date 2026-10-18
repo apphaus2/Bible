@@ -91,3 +91,89 @@ def report(p, w, h, seed):
     o.append(joshua_fig(p, w * 0.66, b, s, flip=True))
     o.append(man(p, w * 0.36, b, s * 0.96, SPY_C[0], up=[(-22, -158), (4, -150), (30, -150)]) + man(p, w * 0.46, b, s * 0.94, SPY_C[1]))
     return "".join(o)
+
+# ---- Joshua 3–5 ---------------------------------------------------------------------------------------------------------
+def crowd_at(p, w, h, seed, x0, x1, y0, y1, n, smin, smax, flip=False):
+    """People of Israel at a distance, scaled by depth (nearer = lower = larger)."""
+    r = random.Random(seed); items = sorted((r.uniform(y0, y1), r.uniform(x0, x1)) for _ in range(n)); o = []
+    for y, x in items:
+        k = (y - y0) / max(1, y1 - y0); s = smin + (smax - smin) * k
+        o.append((man if r.random() < 0.6 else woman)(p, x, y, s, r.choice(A.HEBREW + ["#C2456A", "#5A6E8A"]), flip=flip))
+    return "".join(o)
+
+def ark_ahead(p, w, h, seed):
+    """The ark goes before toward the Jordan; the people follow with a space of about two thousand cubits between."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.86, h * 0.16, 16, color="#FF8A3D", op=0.3),
+         hills(w, h, h * 0.4, seed, color="#9A8A6A", amp=12), f'<path d="M-10 {f(h * 0.46)} C {f(w * 0.3)} {f(h * 0.44)} {f(w * 0.6)} {f(h * 0.5)} {f(w + 10)} {f(h * 0.46)}" fill="none" stroke="#2C9DB8" stroke-width="7"></path>',
+         ground(w, h, h * 0.5, "#B89A6A", dy=0)]
+    o.append(J.ark_borne(p, w * 0.78, h * 0.72, fit(h * 0.72, h * 0.5) * 0.9, f"aa{seed}", glow=True))
+    o.append(crowd_at(p, w, h, seed, -10, w * 0.32, h * 0.66, b, 26, fit(h * 0.66, h * 0.5) * 0.8, fit(b, h * 0.6)))
+    y = h * 0.6
+    o.append(f'<path d="M{f(w * 0.34)} {f(y)} L {f(w * 0.66)} {f(y)}" stroke="#D7261E" stroke-width="2.4" stroke-dasharray="8 6"></path>'
+             f'<path d="M{f(w * 0.34)} {f(y - 8)} L {f(w * 0.34)} {f(y + 8)} M{f(w * 0.66)} {f(y - 8)} L {f(w * 0.66)} {f(y + 8)}" stroke="#D7261E" stroke-width="2.4"></path>'
+             + label(w * 0.5, y - 10, "≈ 2000 CUBITS", "#D7261E", 11))
+    return "".join(o)
+
+def stones_carried(p, w, h, seed):
+    """Twelve men, a man of every tribe, each with a stone upon his shoulder, coming up out of the dry bed of the Jordan."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>',
+         J.heap(w * 0.12, h * 0.62, w * 0.3, h * 0.5, f"sc{seed}"), ground(w, h, h * 0.6, "#8A7A6A", dy=0), J.riverbed(0, w, h * 0.62, h, seed)]
+    names = list(TRIBE_C)[:13]; names.remove("LEVI")
+    s = fit(b, h * 0.42)
+    for i, t in enumerate(names):
+        x = w * (0.2 + i * 0.065); y = b - (i % 2) * h * 0.05
+        o.append(man(p, x, y, s * (0.92 if i % 2 else 1), TRIBE_C[t], up=[(-22, -158), (-30, -186), (-14, -204)])
+                 + f'<ellipse cx="{f(x - 16 * s)}" cy="{f(y - 214 * s)}" rx="{f(22 * s)}" ry="{f(15 * s)}" fill="#A89A86" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    return "".join(o)
+
+def waters_return(p, w, h, seed):
+    """The priests come up out of the Jordan with the ark, and the waters return and go over all its banks."""
+    b = h * 0.62
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', hills(w, h, h * 0.36, seed, color="#5A8A4A", amp=14),
+         f'<path d="M-10 {f(h * 0.44)} C {f(w * 0.3)} {f(h * 0.4)} {f(w * 0.6)} {f(h * 0.52)} {f(w + 10)} {f(h * 0.44)} L {f(w + 10)} {f(h * 0.7)} C {f(w * 0.6)} {f(h * 0.76)} {f(w * 0.3)} {f(h * 0.66)} -10 {f(h * 0.72)} Z" fill="#1F6F9A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(7):
+        y = h * (0.48 + i * 0.03)
+        o.append(f'<path d="M{f(w * 0.05 + i * 30)} {f(y)} C {f(w * 0.3)} {f(y - 8)} {f(w * 0.6)} {f(y + 8)} {f(w * 0.95 - i * 20)} {f(y)}" fill="none" stroke="#E8F6FA" stroke-width="2" opacity="0.6"></path>')
+    o.append(ground(w, h, h * 0.74, "#B89A6A", dy=0))
+    o.append(J.ark_borne(p, w * 0.5, h * 0.95, fit(h * 0.95, h * 0.62) * 0.85, f"wr{seed}", glow=True))
+    return "".join(o)
+
+def gilgal(p, w, h, seed, people=True):
+    """Gilgal on the east border of Jericho: the twelve stones out of the Jordan set up, the camp beyond, Jericho far off."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.14, h * 0.16, 16, color="#FF8A3D", op=0.3),
+         hills(w, h, h * 0.38, seed, color="#9A8A6A", amp=12), J.jericho(w * 0.66, w * 0.96, h * 0.34, h * 0.42, seed, towers=1, houses=False), ground(w, h, h * 0.42, "#B89A6A", dy=0),
+         N.camp(18, w * 0.02, w * 0.6, h * 0.44, h * 0.56, seed)]
+    for i in range(12):
+        col, row = i % 6, i // 6
+        x = w * (0.32 + col * 0.07 + row * 0.035); y = h * (0.68 + row * 0.08); rw = w * 0.026; rh = h * (0.08 + 0.02 * ((i * 7) % 3))
+        o.append(f'<path d="M{f(x - rw)} {f(y)} L {f(x - rw * 0.8)} {f(y - rh)} L {f(x + rw * 0.7)} {f(y - rh * 1.06)} L {f(x + rw)} {f(y)} Z" fill="#A89A86" stroke="#0D0D0F" stroke-width="2.2"></path>')
+    if people:
+        o.append(joshua_fig(p, w * 0.86, b, fit(b, h * 0.48), flip=True))
+        o.append(crowd_at(p, w, h, seed + 1, w * 0.02, w * 0.24, h * 0.7, b, 9, fit(h * 0.7, h * 0.52) * 0.8, fit(b, h * 0.6)))
+    return "".join(o)
+
+def kings_afar(p, w, h, seed):
+    """The kings of the Amorites and of the Canaanites on a ridge at evening, looking toward the Jordan."""
+    b = h * 0.62
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A1A2E"></rect>', sun(w * 0.8, h * 0.5, 30, color="#FF6A2A", op=0.4),
+         f'<path d="M-10 {f(h + 10)} L -10 {f(b)} C {f(w * 0.3)} {f(b - h * 0.06)} {f(w * 0.6)} {f(b - h * 0.04)} {f(w + 10)} {f(b + h * 0.06)} L {f(w + 10)} {f(h + 10)} Z" fill="#1A0A14" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    s = fit(b, h * 0.22)
+    for i in range(7):
+        x = w * (0.08 + i * 0.12); y = b - h * 0.04 + abs(i - 3) * h * 0.005
+        o.append(mk.person(p, round(x), round(y), round(s, 3), body="#12090A", cloth="#12090A", sw=3, flip=True,
+                           extra='<path d="M-14 -200 L -14 -214 L -7 -206 L 0 -218 L 7 -206 L 14 -214 L 14 -200 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path>'))
+    return "".join(o)
+
+def flint(w, h, seed):
+    """Knives of flint laid on a stone at Gilgal (Joshua 5:2–3); the camp abiding in its place beyond."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', hills(w, h, h * 0.4, seed, color="#9A8A6A", amp=12),
+         ground(w, h, h * 0.46, "#B89A6A", dy=0), N.camp(22, -10, w + 10, h * 0.48, h * 0.62, seed)]
+    o.append(f'<path d="M{f(w * 0.2)} {f(h * 0.96)} C {f(w * 0.22)} {f(h * 0.74)} {f(w * 0.78)} {f(h * 0.72)} {f(w * 0.8)} {f(h * 0.96)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    for i in range(3):
+        cx = w * (0.34 + i * 0.16); cy = h * 0.82
+        o.append(f'<path d="M{f(cx - 50)} {f(cy)} L {f(cx + 40)} {f(cy - 14)} L {f(cx + 52)} {f(cy - 4)} L {f(cx - 40)} {f(cy + 10)} Z" fill="#4A4A5A" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<path d="M{f(cx - 30)} {f(cy + 2)} L {f(cx + 34)} {f(cy - 9)}" stroke="#8A8AA0" stroke-width="1.6"></path>')
+    return "".join(o)
