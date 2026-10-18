@@ -16,6 +16,16 @@
     "Main.dc.html",
     "1KI-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Show Thyself a Man",
+   "range": "1 Kings 2",
+   "blurb": "David's charge to Solomon — be thou strong therefore, and show thyself a man; David sleeps with his fathers; Adonijah asks for Abishag, and the throne set for the king's mother at Solomon's right hand; Abiathar sent home to Anathoth; Joab at the horns of the altar; and Shimei, who passed over the brook Kidron.",
+   "prefixes": [
+    "1KI-C02-"
+   ]
   }
  ]
 }

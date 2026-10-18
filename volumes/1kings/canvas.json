@@ -100,6 +100,83 @@
    "w": 760,
    "h": 1080,
    "title": "11 · "
+  },
+  "1KI-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Show Thyself a Man"
+  },
+  "1KI-C02-D-P01-DavidSCharge.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · David's Charge"
+  },
+  "1KI-C02-D-P02-DavidSCharge.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · David's Charge"
+  },
+  "1KI-C02-D-P03-OnePetition.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · One Petition"
+  },
+  "1KI-C02-D-P04-OnePetition.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · One Petition"
+  },
+  "1KI-C02-D-P05-OnePetition.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · One Petition"
+  },
+  "1KI-C02-D-P06-Abiathar.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Abiathar"
+  },
+  "1KI-C02-D-P07-Joab.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Joab"
+  },
+  "1KI-C02-D-P08-Joab.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Joab"
+  },
+  "1KI-C02-D-P09-Shimei.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Shimei"
+  },
+  "1KI-C02-D-P10-Shimei.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Shimei"
   }
  },
  "order": [
@@ -115,7 +192,18 @@
   "1KI-C01-D-P08-Gihon.dc.html",
   "1KI-C01-D-P09-TheCityRangAgain.dc.html",
   "1KI-C01-D-P10-TheHornsOfTheAltar.dc.html",
-  "1KI-C01-E-P01-.dc.html"
+  "1KI-C01-E-P01-.dc.html",
+  "1KI-C02-00-Title.dc.html",
+  "1KI-C02-D-P01-DavidSCharge.dc.html",
+  "1KI-C02-D-P02-DavidSCharge.dc.html",
+  "1KI-C02-D-P03-OnePetition.dc.html",
+  "1KI-C02-D-P04-OnePetition.dc.html",
+  "1KI-C02-D-P05-OnePetition.dc.html",
+  "1KI-C02-D-P06-Abiathar.dc.html",
+  "1KI-C02-D-P07-Joab.dc.html",
+  "1KI-C02-D-P08-Joab.dc.html",
+  "1KI-C02-D-P09-Shimei.dc.html",
+  "1KI-C02-D-P10-Shimei.dc.html"
  ],
  "notes": {
   "Main": {
@@ -131,6 +219,13 @@
    "text": "Chapter 1 · Long Live King Solomon (1 Kings 1)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Show Thyself a Man (1 Kings 2)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],

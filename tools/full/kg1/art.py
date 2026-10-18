@@ -107,10 +107,53 @@ def rejoicing(p, w, h, seed):
     o.append(S3.notes(w * 0.5, h * 0.3, 8, seed))
     return "".join(o)
 
-def altar_horns(p, w, h, seed):
-    """Adonijah laid hold on the horns of the altar before the Tent."""
+def altar_horns(p, w, h, seed, who="#B5652E", empty=False):
+    """Adonijah (or Joab: who=his colour) laid hold on the horns of the altar before the Tent; empty=True: the altar alone."""
     b = h * 0.92
     o = [mk.defs(p, *ALL), sky(w, h, "#3A2A4A", "#C88A6A"), E4.tent(w * 0.76, b, w * 0.4, h * 0.6, color="#E8E2D6", stripe="#8A6A3A"), ground(w, h, b, "#7A6A5A", dy=0),
          horned_altar(w * 0.4, b, min(1.3, h / 260))]
-    o.append(E.kneel(w * 0.22, b, fit(b, h * 0.4) * 0.8, color="#B5652E", skin="#E3B08A"))
+    if not empty: o.append(E.kneel(w * 0.22, b, fit(b, h * 0.4) * 0.8, color=who, skin="#E3B08A"))
+    return "".join(o)
+
+# ---- 1 Kings 2 ----------------------------------------------------------------------------------------------------------
+import ruth1 as R1
+def charge(p, w, h, seed):
+    """David on his bed charging Solomon his son, who stands beside it."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), bed(w, h, w * 0.06, w * 0.5, b)]
+    o.append(sol_fig(p, w * 0.7, b, fit(b, h * 0.4), flip=True))
+    return "".join(o)
+
+def city_dusk(p, w, h, seed):
+    """The city of David at dusk, its towers dark against the sky (David slept with his fathers)."""
+    o = [sky(w, h, "#2A1A3A", "#E8803A"), sun(w * 0.8, h * 0.62, 26, color="#FF8A3D", op=0.5), J.city_hill(w * 0.46, h * 0.84, w * 0.8, h * 0.46, seed),
+         ground(w, h, h * 0.86, "#2A1E2A", dy=0)]
+    return "".join(o)
+
+def two_thrones(p, w, h, seed):
+    """King Solomon on his throne, and a throne set for the king's mother on his right hand."""
+    b = h * 0.92; k = min(1.2, h / 300)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.throne(w * 0.38, b, k), S3.throne(w * 0.66, b, k * 0.9)]
+    s = fit(b, h * 0.4)
+    o.append(sol_fig(p, w * 0.38, b - 40 * k, s * 0.86))
+    o.append(mk.person(p, round(w * 0.66), round(b - 36 * k), round(s * 0.8, 3), body="#3A1E14", cloth=BATH_C, woman=True, hair="#1A1210", sw=3, flip=True))
+    return "".join(o)
+
+def anathoth(p, w, h, seed):
+    """Abiathar the priest going home to his fields at Anathoth."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8D8E8", "#F3E8C8"), hills(w, h, h * 0.5, seed, color="#8A9A6A", amp=12),
+         R1.field(-10, w + 10, h * 0.72, h * 0.18, seed), ground(w, h, h * 0.8, "#A89A6A", dy=0)]
+    o.append(prophet_fig(p, w * 0.3, b, fit(b, h * 0.4), cloth="#E8E2D6"))
+    return "".join(o)
+
+def kidron(p, w, h, seed, ass=False):
+    """The brook Kidron below the city wall; ass=True: Shimei with his saddled ass going out on the road toward Gath."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), J.jericho(w * 0.4, w + 10, h * 0.2, h * 0.5, seed, towers=3, houses=True), ground(w, h, h * 0.5, "#A89A6A", dy=0),
+         f'<path d="M-10 {f(h * 0.7)} C {f(w * 0.3)} {f(h * 0.66)} {f(w * 0.6)} {f(h * 0.74)} {f(w + 10)} {f(h * 0.7)}" stroke="#2C9DB8" stroke-width="12" fill="none"></path>']
+    if ass:
+        k = min(0.9, h / 360)
+        o.append(N.ass(w * 0.24, b, k, flip=True) + mk.person(p, round(w * 0.1), round(b), round(fit(b, h * 0.4) * 0.8, 3), body="#3A1E14", cloth="#6A5A3A", sw=3, flip=True,
+                                                               extra=A.headcloth("#6A5A3A") + A.WHITE_BEARD))
     return "".join(o)
