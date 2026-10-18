@@ -649,3 +649,81 @@ def roof_tent(w, h, seed):
     """A tent spread upon the top of the king's house, over the rooftops of Jerusalem (16:22 told in words only)."""
     o = [sky(w, h, "#5A3A5A", "#E8A06A"), S3.roof(w, h, h * 0.6, seed), E4.tent(w * 0.5, h * 0.66, w * 0.3, h * 0.24, color="#B5121B", stripe="#5A0A0A")]
     return "".join(o)
+
+# ---- 2 Samuel 17–18 -----------------------------------------------------------------------------------------------------
+def well_court(p, w, h, seed, men=False):
+    """The court of a house in Bahurim: the well's mouth covered with a spread covering and bruised grain strewn on it, the
+    woman of the house beside it (men=True: Absalom's servants at the door)."""
+    r = random.Random(seed)
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#D8B88A"></rect>',
+         f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h * 0.5)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></rect>', ground(w, h, h * 0.6, "#B89A6A", dy=0),
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.8)}" rx="{f(w * 0.16)}" ry="{f(h * 0.06)}" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="2.4"></ellipse>'
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.79)}" rx="{f(w * 0.15)}" ry="{f(h * 0.05)}" fill="#C8A060" stroke="#0D0D0F" stroke-width="1.6"></ellipse>']
+    for i in range(30):
+        o.append(f'<circle cx="{f(w * 0.5 + r.uniform(-w * 0.12, w * 0.12))}" cy="{f(h * 0.79 + r.uniform(-h * 0.03, h * 0.03))}" r="2" fill="#E8D8A0"></circle>')
+    s = fit(b, h * 0.4)
+    o.append(woman(p, w * 0.76, b, s, "#6A4A6A", flip=True))
+    if men:
+        for i in range(3): o.append(captain(p, w * (0.08 + i * 0.1), b, s * 0.95, cloth=["#B5121B", "#5A3A2A", "#3A3A5A"][i]))
+    return "".join(o)
+
+def jordan_dawn(p, w, h, seed):
+    """By the morning light all the people gone over the Jordan."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A5A8A", "#FFC89A"), sun(w * 0.8, h * 0.4, 26, color="#FFE680", op=0.5), hills(w, h, h * 0.44, seed, color="#5A5A6A", amp=14),
+         f'<path d="M-10 {f(h * 0.58)} C {f(w * 0.3)} {f(h * 0.54)} {f(w * 0.6)} {f(h * 0.64)} {f(w + 10)} {f(h * 0.58)} L {f(w + 10)} {f(h * 0.7)} C {f(w * 0.6)} {f(h * 0.76)} {f(w * 0.3)} {f(h * 0.66)} -10 {f(h * 0.7)} Z" fill="#2C7DA8" stroke="#0D0D0F" stroke-width="2"></path>',
+         ground(w, h, h * 0.7, "#8A7A5A", dy=0)]
+    s = fit(b, h * 0.3)
+    o.append(old_king(p, w * 0.7, b, s))
+    o.append(crowd_at(p, w, h, seed, w * 0.04, w * 0.96, h * 0.76, b, 14, s * 0.6, s * 0.9))
+    return "".join(o)
+
+def ahithophel_home(p, w, h, seed):
+    """Ahithophel's city at dusk, the ass he saddled standing at the door (17:23 told in words only)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A1A3A", "#C8603A"), J.city_hill(w * 0.5, h * 0.66, w * 0.6, h * 0.36, seed), ground(w, h, h * 0.68, "#3A2A2A", dy=0),
+         N.ass(w * 0.3, b, min(1.0, h / 320), color="#5A5650")]
+    return "".join(o)
+
+def gilead_camp(p, w, h, seed):
+    """Israel and Absalom encamped in the land of Gilead: tents and watch-fires on the hills by night."""
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#14123A"), hills(w, h, h * 0.4, seed, color="#1E1A3A", amp=20), ground(w, h, h * 0.56, "#1A1628", dy=0),
+         N.camp(18, -10, w + 10, h * 0.62, h * 0.96, seed, color=("#2A2040", "#3A2A4A", "#1A1428"))]
+    for i in range(5):
+        o.append(E.blaze(w * (0.1 + i * 0.2), h * (0.7 + (i % 2) * 0.1), w * 0.03, h * 0.06, seed + i, n=3))
+    return "".join(o)
+
+def provisions(w, h, seed):
+    """Beds, basins and earthen vessels, wheat, barley, meal, parched grain, beans and lentils, honey, butter, sheep and cheese,
+    brought to David at Mahanaim."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#E8B880", "#F3D8A0"), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    for i in range(6):
+        x = w * (0.08 + i * 0.12); c = ["#C8A060", "#E8D8A0", "#D9A25A", "#8A5A30", "#C8B070", "#6A4A2A"][i]
+        o.append(f'<path d="M{f(x - 22)} {f(h * 0.88)} C {f(x - 30)} {f(h * 0.7)} {f(x - 16)} {f(h * 0.64)} {f(x)} {f(h * 0.64)} C {f(x + 16)} {f(h * 0.64)} {f(x + 30)} {f(h * 0.7)} {f(x + 22)} {f(h * 0.88)} Z" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>')
+    for i in range(3):
+        x = w * (0.8 + i * 0.07)
+        o.append(f'<g transform="translate({f(x)} {f(h * 0.88)}) scale({f(min(1.0, h / 300))})"><path d="M-18 0 C -24 -26 -22 -44 -10 -50 L -8 -60 L 8 -60 L 10 -50 C 22 -44 24 -26 18 0 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path></g>')
+    o.append(E.sheep(w * 0.62, h * 0.94, min(0.8, h / 400)))
+    return "".join(o)
+
+def dark_oak(w, h, seed):
+    """The great oak in the forest of Ephraim, a black shape against a red sky (18:14–15 told in words only)."""
+    o = [sky(w, h, "#2A0A0A", "#C8402A"), ground(w, h, h * 0.86, "#1A0A0A", dy=0), S4.great_oak(w * 0.5, h * 0.9, min(1.6, h / 260), seed, dark=True)]
+    return "".join(o)
+
+def pillar(w, h, seed):
+    """Absalom's monument: the pillar he reared up for himself in the king's dale."""
+    o = [sky(w, h, "#5A4A6A", "#E8B880"), hills(w, h, h * 0.5, seed, color="#6A5A5A", amp=20), ground(w, h, h * 0.7, "#8A7A5A", dy=0),
+         f'<path d="M{f(w * 0.46)} {f(h * 0.86)} L {f(w * 0.47)} {f(h * 0.14)} L {f(w * 0.5)} {f(h * 0.08)} L {f(w * 0.53)} {f(h * 0.14)} L {f(w * 0.54)} {f(h * 0.86)} Z" fill="#B8A890" stroke="#0D0D0F" stroke-width="2.6"></path>'
+         f'<rect x="{f(w * 0.42)}" y="{f(h * 0.84)}" width="{f(w * 0.16)}" height="{f(h * 0.06)}" fill="#9A8A72" stroke="#0D0D0F" stroke-width="2.4"></rect>']
+    return "".join(o)
+
+def two_runners(p, w, h, seed):
+    """The watchman on the roof of the gate, and two men running alone, one far behind the other."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0", "#E8B880"), ground(w, h, h * 0.6, "#C8A06A", dy=0), S4.gatehouse(w * 0.24, b, w * 0.36, h * 0.66)]
+    o.append(mk.person(p, round(w * 0.24), round(b - h * 0.68), round(fit(b, h * 0.6) * 0.5, 3), body="#2A140C", cloth="#5A6A8A", kind="Tunic", sw=3, up=[(22, -158), (40, -170), (60, -176)]))
+    o.append(S4.runner(p, w * 0.62, h * 0.78, fit(h * 0.78, h * 0.6), flip=True) + S4.runner(p, w * 0.9, h * 0.66, fit(h * 0.66, h * 0.56), flip=True, cloth="#F3EFE6", body="#2A140C"))
+    return "".join(o)

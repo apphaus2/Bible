@@ -38,5 +38,7 @@ META = {
      "blurb": "Amnon's sickness for his sister Tamar and Jonadab's subtle counsel; Tamar's cakes, the shut door, and her garment of divers colors rent; Absalom's two full years and the shearers' feast at Baal-hazor; Absalom fled to Geshur; the wise woman of Tekoa — we must needs die, and are as water spilt on the ground; and no blemish in him from the sole of his foot to the crown of his head."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Mount of Olives", "range": "2 Samuel 15–16", "bible_chapters": [15, 16],
      "blurb": "Absalom beside the way of the gate — oh that I were made judge in the land — steals the hearts of the men of Israel; Absalom is king in Hebron; arise, and let us flee; Ittai: whether for death or for life; the ark carried back over the Kidron; David going up the mount of Olives weeping and barefoot; Ziba's asses, Shimei's stones, and Ahithophel's counsel."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "O My Son Absalom", "range": "2 Samuel 17–18", "bible_chapters": [17, 18],
+     "blurb": "Ahithophel's counsel defeated by Hushai's — as a bear robbed of her whelps; the priests' sons hidden in the well at Bahurim; over the Jordan by morning light; Barzillai's gifts at Mahanaim; deal gently for my sake with the young man; the forest of Ephraim; Absalom taken up between heaven and earth; Ahimaaz outruns the Cushite; O my son Absalom!"},
   ],
 }

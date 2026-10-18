@@ -744,6 +744,132 @@
    "w": 760,
    "h": 1080,
    "title": "96 · Long Live the King"
+  },
+  "2SA-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · O My Son Absalom"
+  },
+  "2SA-C09-D-P01-TheCounselOfHushai.dc.html": {
+   "x": 840,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Counsel of Hushai"
+  },
+  "2SA-C09-D-P02-TheCounselOfHushai.dc.html": {
+   "x": 1680,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Counsel of Hushai"
+  },
+  "2SA-C09-D-P03-TheCounselOfHushai.dc.html": {
+   "x": 2520,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Counsel of Hushai"
+  },
+  "2SA-C09-D-P04-TheWellInBahurim.dc.html": {
+   "x": 3360,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Well in Bahurim"
+  },
+  "2SA-C09-D-P05-TheWellInBahurim.dc.html": {
+   "x": 0,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Well in Bahurim"
+  },
+  "2SA-C09-D-P06-DealGentlyForMySak.dc.html": {
+   "x": 840,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Deal Gently for My Sake"
+  },
+  "2SA-C09-D-P07-DealGentlyForMySak.dc.html": {
+   "x": 1680,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Deal Gently for My Sake"
+  },
+  "2SA-C09-D-P08-BetweenHeavenAndEa.dc.html": {
+   "x": 2520,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Between Heaven and Earth"
+  },
+  "2SA-C09-D-P09-BetweenHeavenAndEa.dc.html": {
+   "x": 3360,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Between Heaven and Earth"
+  },
+  "2SA-C09-D-P10-BetweenHeavenAndEa.dc.html": {
+   "x": 0,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Between Heaven and Earth"
+  },
+  "2SA-C09-D-P11-Tidings.dc.html": {
+   "x": 840,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Tidings"
+  },
+  "2SA-C09-D-P12-Tidings.dc.html": {
+   "x": 1680,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Tidings"
+  },
+  "2SA-C09-D-P13-Tidings.dc.html": {
+   "x": 2520,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Tidings"
+  },
+  "2SA-C09-D-P14-Tidings.dc.html": {
+   "x": 3360,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Tidings"
+  },
+  "2SA-C09-D-P15-Tidings.dc.html": {
+   "x": 0,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Tidings"
+  },
+  "2SA-C09-D-P16-Tidings.dc.html": {
+   "x": 840,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Tidings"
+  },
+  "2SA-C09-E-P01-OMySonAbsalom.dc.html": {
+   "x": 1680,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · O My Son Absalom"
   }
  },
  "order": [
@@ -851,7 +977,25 @@
   "2SA-C08-D-P12-Shimei.dc.html",
   "2SA-C08-D-P13-Shimei.dc.html",
   "2SA-C08-D-P14-LongLiveTheKing.dc.html",
-  "2SA-C08-D-P15-LongLiveTheKing.dc.html"
+  "2SA-C08-D-P15-LongLiveTheKing.dc.html",
+  "2SA-C09-00-Title.dc.html",
+  "2SA-C09-D-P01-TheCounselOfHushai.dc.html",
+  "2SA-C09-D-P02-TheCounselOfHushai.dc.html",
+  "2SA-C09-D-P03-TheCounselOfHushai.dc.html",
+  "2SA-C09-D-P04-TheWellInBahurim.dc.html",
+  "2SA-C09-D-P05-TheWellInBahurim.dc.html",
+  "2SA-C09-D-P06-DealGentlyForMySak.dc.html",
+  "2SA-C09-D-P07-DealGentlyForMySak.dc.html",
+  "2SA-C09-D-P08-BetweenHeavenAndEa.dc.html",
+  "2SA-C09-D-P09-BetweenHeavenAndEa.dc.html",
+  "2SA-C09-D-P10-BetweenHeavenAndEa.dc.html",
+  "2SA-C09-D-P11-Tidings.dc.html",
+  "2SA-C09-D-P12-Tidings.dc.html",
+  "2SA-C09-D-P13-Tidings.dc.html",
+  "2SA-C09-D-P14-Tidings.dc.html",
+  "2SA-C09-D-P15-Tidings.dc.html",
+  "2SA-C09-D-P16-Tidings.dc.html",
+  "2SA-C09-E-P01-OMySonAbsalom.dc.html"
  ],
  "notes": {
   "Main": {
@@ -916,6 +1060,13 @@
    "text": "Chapter 8 · The Mount of Olives (2 Samuel 15–16)",
    "x": 0,
    "y": 29200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · O My Son Absalom (2 Samuel 17–18)",
+   "x": 0,
+   "y": 34500
   }
  },
  "designSystems": [],
