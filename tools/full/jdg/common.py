@@ -35,6 +35,12 @@ SAMSON, SAMSON_SLEEP, SAMSON_PRAY, DELILAH, MANOAH_WIFE = tok("SAMSON"), tok("SA
 KING_CANAAN = F("adam", skin="#B98A6E", shadow="#4A1A26", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A2A5A", band=True, brow="scowl", light="#D7261E")
 ISRAELITE = F("adam", skin="#C47A5A", shadow="#5A3A2A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#6A5A3A", cord=True, light="#FFC14D")
 CALEB_OLD = F("adam", skin="#C98E66", shadow="#6A4A3A", hair="#D8D2C6", hl="#A8A296", beard=True, beard_color="#D8D2C6", scarf="#2E6B3A", cord=True, light="#FFC14D")
+GIDEON_OLD = F("adam", skin="#C98E66", shadow="#7A4A3A", hair="#B8B2A6", hl="#8A867E", beard=True, beard_color="#B8B2A6", scarf="#C9A86A", cord=True, light="#FFE680")
+ABIMELECH = F("adam", skin="#C47A5A", shadow="#4A1A26", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#5A1A3A", band=True, brow="scowl", light="#D7261E")
+JOTHAM = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#3A2214", hl="#6A5A4E", stubble="#3A2214", light="#FFE680")
+GAAL = F("adam", skin="#B98A6E", shadow="#5A3A2A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#8A6A2A", cord=True, light="#FF8A3D")
+ZEBUL = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#6A6460", hl="#8A867E", beard=True, beard_color="#6A6460", scarf="#2A4A5A", cord=True, light="#9AA8C8")
+KING_MIDIAN = F("adam", skin="#B98A6E", shadow="#4A1A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#6A2A7A", band=True, light="#FFC14D")
 ACHSAH = F("eve", skin="#C98E66", shadow="#8A5A3E", hair="#1A1210", scarf="#C8A030", light="#FFE680")
 
 def over(lines, ref, page, i, **k):

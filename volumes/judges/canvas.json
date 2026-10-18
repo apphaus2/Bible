@@ -331,6 +331,132 @@
    "w": 760,
    "h": 1080,
    "title": "42 · Oreb and Zeeb"
+  },
+  "JDG-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Abimelech"
+  },
+  "JDG-C04-D-P01-FaintYetPursuing.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Faint, Yet Pursuing"
+  },
+  "JDG-C04-D-P02-FaintYetPursuing.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Faint, Yet Pursuing"
+  },
+  "JDG-C04-D-P03-ZebahAndZalmunna.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Zebah and Zalmunna"
+  },
+  "JDG-C04-D-P04-ZebahAndZalmunna.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Zebah and Zalmunna"
+  },
+  "JDG-C04-D-P05-JehovahShallRuleOv.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Jehovah Shall Rule over You"
+  },
+  "JDG-C04-D-P06-JehovahShallRuleOv.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Jehovah Shall Rule over You"
+  },
+  "JDG-C04-D-P07-GideonDiedInAGoodO.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Gideon Died in a Good Old Age"
+  },
+  "JDG-C04-D-P08-Abimelech.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Abimelech"
+  },
+  "JDG-C04-D-P09-JothamSFable.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Jotham's Fable"
+  },
+  "JDG-C04-D-P10-JothamSFable.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Jotham's Fable"
+  },
+  "JDG-C04-D-P11-GaalTheSonOfEbed.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Gaal the Son of Ebed"
+  },
+  "JDG-C04-D-P12-GaalTheSonOfEbed.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Gaal the Son of Ebed"
+  },
+  "JDG-C04-D-P13-GaalTheSonOfEbed.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Gaal the Son of Ebed"
+  },
+  "JDG-C04-D-P14-GaalTheSonOfEbed.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Gaal the Son of Ebed"
+  },
+  "JDG-C04-D-P15-SowedItWithSalt.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Sowed It with Salt"
+  },
+  "JDG-C04-D-P16-SowedItWithSalt.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Sowed It with Salt"
+  },
+  "JDG-C04-D-P17-TheTowerOfThebez.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · The Tower of Thebez"
   }
  },
  "order": [
@@ -379,7 +505,25 @@
   "JDG-C03-D-P12-ACakeOfBarleyBread.dc.html",
   "JDG-C03-D-P13-ACakeOfBarleyBread.dc.html",
   "JDG-C03-D-P14-TheSwordOfJehovahA.dc.html",
-  "JDG-C03-D-P15-OrebAndZeeb.dc.html"
+  "JDG-C03-D-P15-OrebAndZeeb.dc.html",
+  "JDG-C04-00-Title.dc.html",
+  "JDG-C04-D-P01-FaintYetPursuing.dc.html",
+  "JDG-C04-D-P02-FaintYetPursuing.dc.html",
+  "JDG-C04-D-P03-ZebahAndZalmunna.dc.html",
+  "JDG-C04-D-P04-ZebahAndZalmunna.dc.html",
+  "JDG-C04-D-P05-JehovahShallRuleOv.dc.html",
+  "JDG-C04-D-P06-JehovahShallRuleOv.dc.html",
+  "JDG-C04-D-P07-GideonDiedInAGoodO.dc.html",
+  "JDG-C04-D-P08-Abimelech.dc.html",
+  "JDG-C04-D-P09-JothamSFable.dc.html",
+  "JDG-C04-D-P10-JothamSFable.dc.html",
+  "JDG-C04-D-P11-GaalTheSonOfEbed.dc.html",
+  "JDG-C04-D-P12-GaalTheSonOfEbed.dc.html",
+  "JDG-C04-D-P13-GaalTheSonOfEbed.dc.html",
+  "JDG-C04-D-P14-GaalTheSonOfEbed.dc.html",
+  "JDG-C04-D-P15-SowedItWithSalt.dc.html",
+  "JDG-C04-D-P16-SowedItWithSalt.dc.html",
+  "JDG-C04-D-P17-TheTowerOfThebez.dc.html"
  ],
  "notes": {
   "Main": {
@@ -409,6 +553,13 @@
    "text": "Chapter 3 · Gideon (Judges 6–7)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Abimelech (Judges 8–9)",
+   "x": 0,
+   "y": 16400
   }
  },
  "designSystems": [],

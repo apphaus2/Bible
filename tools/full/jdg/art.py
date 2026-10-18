@@ -217,3 +217,103 @@ def ephraim_waters(p, w, h, seed):
         x = w * (0.04 + i * 0.06); y = h * 0.9 + (i % 2) * 6
         o.append(man(p, x, y, fit(y, y - h * 0.34), random.Random(seed + i).choice(WAR), extra=E4.SPEAR))
     return "".join(o)
+
+# ---- Judges 8–9 ---------------------------------------------------------------------------------------------------------
+def tower(w, h, seed, night_=False, people_on_roof=False, fire=False):
+    """A strong tower of a city (Penuel, Shechem, Thebez): a tall square tower with its door and roof."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#14123A" if night_ else "#E8B880"}"></rect>']
+    if night_: o.append(mk.stars(40, w, h * 0.5, seed))
+    tx, tw, top, b = w * 0.5, w * 0.26, h * 0.16, h * 0.88
+    o.append(hills(w, h, h * 0.6, seed, color="#5A3A3A" if night_ else "#B5824A", amp=12) + ground(w, h, b, "#4A3A2A" if night_ else "#9A7A4A", dy=0))
+    o.append(f'<rect x="{f(tx - tw / 2)}" y="{f(top)}" width="{f(tw)}" height="{f(b - top)}" fill="#B5824A" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+             + "".join(f'<rect x="{f(tx - tw / 2 + i * tw / 5)}" y="{f(top - 16)}" width="{f(tw / 8)}" height="17" fill="#B5824A" stroke="#0D0D0F" stroke-width="2"></rect>' for i in range(5))
+             + f'<path d="M{f(tx - tw * 0.14)} {f(b)} L {f(tx - tw * 0.14)} {f(b - h * 0.12)} C {f(tx - tw * 0.14)} {f(b - h * 0.18)} {f(tx + tw * 0.14)} {f(b - h * 0.18)} {f(tx + tw * 0.14)} {f(b - h * 0.12)} L {f(tx + tw * 0.14)} {f(b)} Z" fill="#2A140C" stroke="#0D0D0F" stroke-width="2"></path>'
+             + f'<rect x="{f(tx - 6)}" y="{f(top + h * 0.12)}" width="12" height="22" fill="#2A140C"></rect>')
+    if people_on_roof:
+        for i in range(5):
+            o.append(f'<circle cx="{f(tx - tw * 0.36 + i * tw * 0.18)}" cy="{f(top - 26)}" r="7" fill="#2A1A14" stroke="#0D0D0F" stroke-width="1.4"></circle>')
+    if fire:
+        o += [E.blaze(tx + dx * tw, b, tw * 0.5, h * 0.4, seed + i, n=7) for i, dx in enumerate((-0.6, 0, 0.6))]
+    return "".join(o)
+
+def earrings(w, h, seed):
+    """A garment spread, and every man casting therein the golden ear-rings of his spoil; the crescents too."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1E"></rect>', ground(w, h, h * 0.4, "#5A4A3A", dy=0),
+         f'<path d="M{f(w * 0.1)} {f(h * 0.62)} L {f(w * 0.9)} {f(h * 0.56)} L {f(w * 0.94)} {f(h * 0.94)} L {f(w * 0.06)} {f(h * 0.96)} Z" fill="#6A2A7A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for _ in range(60):
+        x, y = r.uniform(w * 0.2, w * 0.8), r.uniform(h * 0.66, h * 0.9); rr = r.uniform(4, 8)
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(rr)}" fill="none" stroke="#E8B830" stroke-width="2.6"></circle>')
+    for x in (0.26, 0.7):
+        o.append(f'<path d="M{f(w * x - 16)} {f(h * 0.74)} A 16 16 0 1 0 {f(w * x + 16)} {f(h * 0.74)}" fill="none" stroke="#FFD23F" stroke-width="5"></path>')
+    return "".join(o)
+
+def ephod(w, h, seed):
+    """The ephod Gideon made of the gold and set in Ophrah: a gold garment on a stand, glowing."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2E"></rect>', V.rays(w * 0.5, h * 0.5, 30, 20, max(w, h), color="#FFD23F", op=0.18),
+         ground(w, h, h * 0.86, "#3A2A2A", dy=0)]
+    cx, cy, s = w * 0.5, h * 0.5, min(w, h) / 300
+    o.append(f'<rect x="{f(cx - 4)}" y="{f(cy + 80 * s)}" width="8" height="{f(h * 0.86 - cy - 80 * s)}" fill="#5A3A22"></rect>'
+             f'<path d="M{f(cx - 60 * s)} {f(cy - 80 * s)} L {f(cx + 60 * s)} {f(cy - 80 * s)} L {f(cx + 70 * s)} {f(cy + 90 * s)} L {f(cx - 70 * s)} {f(cy + 90 * s)} Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2.6"></path>'
+             f'<path d="M{f(cx - 64 * s)} {f(cy)} L {f(cx + 64 * s)} {f(cy)}" stroke="#7A3BA8" stroke-width="{f(10 * s)}"></path>')
+    for dx, dy, c in ((-20, -40, "#D7261E"), (0, -40, "#1F5FAD"), (20, -40, "#2E9A4A"), (-20, -20, "#E8F0F6"), (0, -20, "#7A3BA8"), (20, -20, "#FF8A3D")):
+        o.append(f'<circle cx="{f(cx + dx * s)}" cy="{f(cy + dy * s)}" r="{f(6 * s)}" fill="{c}" stroke="#0D0D0F" stroke-width="1.2"></circle>')
+    return "".join(o)
+
+def jotham(p, w, h, seed):
+    """Jotham on the top of mount Gerizim, lifting up his voice to the men of Shechem far below."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', sun(w * 0.86, h * 0.16, 16, op=0.3)]
+    o.append(f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.5)} L {f(w * 0.24)} {f(h * 0.3)} L {f(w * 0.5)} {f(h * 0.6)} L {f(w * 0.5)} {f(h + 10)} Z" fill="#5A8A4A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    o.append(ground(w, h, h * 0.8, "#B89A6A", dy=0) + J.city_hill(w * 0.78, h * 0.86, w * 0.2, h * 0.14, seed))
+    s = fit(h * 0.3, h * 0.12)
+    o.append(man(p, w * 0.24, h * 0.3 + 2, s, "#3A6A8A", up=[(-22, -158), (-6, -196), (8, -228)]))
+    return "".join(o)
+
+LEAF = "M0 0 c -26 -6 -30 -30 -10 -38 c 6 10 20 6 24 -6 c 16 14 8 38 -14 44 Z"
+def fable(w, h, which, seed):
+    """Jotham's fable: the olive-tree, the fig-tree, the vine, the bramble with fire coming out of it."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#2A0A0A" if which == "bramble" else "#E8E2C8"}"></rect>',
+         ground(w, h, h * 0.82, "#3A1A14" if which == "bramble" else "#8A7A4A", dy=0)]
+    cx, b = w * 0.5, h * 0.82
+    if which == "olive":
+        o.append(J2.olive(cx, b, min(1.6, h / 220), seed=seed))
+    elif which == "fig":
+        o.append(f'<path d="M{f(cx - 10)} {f(b)} L {f(cx - 8)} {f(b - h * 0.3)} L {f(cx + 8)} {f(b - h * 0.3)} L {f(cx + 10)} {f(b)} Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2"></path>')
+        for _ in range(9):
+            x, y = cx + r.uniform(-w * 0.16, w * 0.16), b - h * r.uniform(0.32, 0.6)
+            o.append(f'<path transform="translate({f(x)} {f(y)})" d="{LEAF}" fill="#3F7A3A" stroke="#0D0D0F" stroke-width="1.6"></path>')
+        for _ in range(7):
+            o.append(f'<circle cx="{f(cx + r.uniform(-w * 0.12, w * 0.12))}" cy="{f(b - h * r.uniform(0.3, 0.5))}" r="7" fill="#6A2A5A" stroke="#0D0D0F" stroke-width="1.2"></circle>')
+    elif which == "vine":
+        o.append(f'<path d="M{f(cx)} {f(b)} C {f(cx - 30)} {f(b - h * 0.2)} {f(cx + 30)} {f(b - h * 0.3)} {f(cx)} {f(b - h * 0.5)}" fill="none" stroke="#5A3A22" stroke-width="8"></path>')
+        for k in range(4):
+            x, y = cx + (-1) ** k * w * 0.08, b - h * (0.2 + k * 0.08)
+            o.append("".join(f'<circle cx="{f(x + (i % 3) * 8 - 8)}" cy="{f(y + (i // 3) * 8)}" r="5" fill="#6A2A7A" stroke="#0D0D0F" stroke-width="1"></circle>' for i in range(9)))
+    else:
+        for _ in range(14):
+            a = r.uniform(-1, 1)
+            o.append(f'<path d="M{f(cx)} {f(b)} Q {f(cx + a * w * 0.1)} {f(b - h * 0.14)} {f(cx + a * w * 0.18)} {f(b - h * r.uniform(0.12, 0.26))}" fill="none" stroke="#3A2A1A" stroke-width="3"></path>')
+        o.append(E.blaze(cx, b - h * 0.08, w * 0.3, h * 0.5, seed, n=8))
+    return "".join(o)
+
+def salt(w, h, seed):
+    """Shechem beaten down and sowed with salt: rubble, and white salt scattered over it."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8A8A9A"></rect>', J.collapse(-10, w + 10, h * 0.8, h * 0.2, seed, color="#7A6A5A"),
+         ground(w, h, h * 0.8, "#6A5A4A", dy=0)]
+    for _ in range(140):
+        o.append(f'<circle cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(h * 0.6, h))}" r="{f(r.uniform(1, 2.6))}" fill="#F3F7FA"></circle>')
+    return "".join(o)
+
+BOUGH = ('<path d="M-30 -186 L 40 -176" stroke="#5A3A22" stroke-width="6"></path><circle cx="40" cy="-180" r="16" fill="#3F7A3A" stroke="#0D0D0F" stroke-width="1.4"></circle>'
+         '<circle cx="22" cy="-190" r="12" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.4"></circle>')
+def boughs(p, w, h, seed):
+    """Abimelech and his people each with a bough cut down from the trees of mount Zalmon on his shoulder."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>', hills(w, h, h * 0.42, seed, color="#3F6A3A", amp=18),
+         ground(w, h, h * 0.56, "#9A7A4A", dy=0)]
+    for i in range(9):
+        x = w * (0.06 + i * 0.11); y = b - (i % 2) * 8
+        o.append(man(p, x, y, fit(y, h * 0.46) * (1.05 if i == 0 else 0.92), "#5A1A3A" if i == 0 else random.Random(seed + i).choice(WAR), up=[(-22, -158), (-28, -178), (-20, -190)], extra=BOUGH))
+    return "".join(o)
