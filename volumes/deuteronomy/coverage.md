@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 787 verses — 787 full, 0 partial, 0 omitted.
+**So far:** 866 verses — 866 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · These Are the Words (Deuteronomy 1–2)
 
@@ -73,5 +73,11 @@ Every verse is on the page in full.
 ## Chapter 12 · The Blessings and the Curses (Deuteronomy 27–28)
 
 94 verses: 94 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 13 · Choose Life (Deuteronomy 29–31)
+
+79 verses: 79 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

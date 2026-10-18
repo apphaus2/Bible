@@ -95,6 +95,7 @@ There are two editions:
 | Deuteronomy | 10 · Thou Shalt Not | 22–23 | title + 8 | 55/55 verses full (law cells) | `volumes/deuteronomy/` |
 | Deuteronomy | 11 · The Basket of First-fruits | 24–26 | title + 9 | 60/60 verses full (law cells) | `volumes/deuteronomy/` |
 | Deuteronomy | 12 · The Blessings and the Curses | 27–28 | title + 14 | 94/94 verses full (the twelve curses as law cells; the siege words only) | `volumes/deuteronomy/` |
+| Deuteronomy | 13 · Choose Life | 29–31 | title + 13 | 79/79 verses full | `volumes/deuteronomy/` |
 
 **Genesis, Exodus, Leviticus and Numbers are complete.** Next: Deuteronomy (`tools/full/deu/`). Numbers is `tools/full/num/`
 (16 chapters, plan in `num/__init__.py`). Its chapters number their pages with `num/pages.py` (`PG = Pages(start)`, `@PG.P(...)`,

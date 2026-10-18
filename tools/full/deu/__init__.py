@@ -44,5 +44,7 @@ META = {
      "blurb": "The bill of divorcement, the millstone taken to pledge, the hired servant's wages, the sheaf forgotten in the field for the sojourner, the fatherless and the widow; the ox that treadeth out the grain; just weights; remember what Amalek did; and the basket of first-fruits: A Syrian ready to perish was my father."},
     {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "The Blessings and the Curses", "range": "Deuteronomy 27–28", "bible_chapters": [27, 28],
      "blurb": "Great stones plastered and written with all the words of this law, and an altar of unhewn stones on mount Ebal; six tribes on Gerizim to bless and six on Ebal for the curse, and all the people shall say, Amen; blessed shalt thou be in the city and in the field — and if thou wilt not hearken, all these curses."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Choose Life", "range": "Deuteronomy 29–31", "bible_chapters": [29, 30, 31],
+     "blurb": "The covenant in the land of Moab; the secret things belong unto Jehovah; I have set before thee life and death, the blessing and the curse: therefore choose life; Moses a hundred and twenty years old, and Joshua charged to be strong and of good courage; the law written in a book and laid by the side of the ark."},
   ],
 }

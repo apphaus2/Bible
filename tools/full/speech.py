@@ -19,7 +19,7 @@ def _height(lines, bw, s):
         if kind == "cap":
             fs = min(11.5, max(9.5, s * 0.66)); cpl = max(8, (bw - 24) / (fs * 0.64))
             tot += math.ceil(n / cpl) * fs * 1.45 + 20
-        elif kind == "say":
+        elif kind in ("say", "song"):
             cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(n / cpl) * s * 1.16 + 30
         else:
             cpl = max(6, (bw - 36) / (s * 0.53)); tot += math.ceil(n / cpl) * s * 1.15 + 32
@@ -42,6 +42,12 @@ def _say(text, s, side):
     return (f'<div style="position: relative">{notch}<div style="padding: 11px 16px 12px; background: #ffffff; color: #0D0D0F; border: 2.5px solid #0D0D0F; border-radius: 18px; '
             f"font-family: 'Archivo Narrow', sans-serif; font-weight: 700; font-size: {s}px; line-height: 1.16; text-transform: uppercase\">{text}</div></div>")
 
+def _song(text, s, color="#7A3BA8"):
+    """A line of a song: a cream box with a coloured double rule down the left (as exo.kit.song)."""
+    return (f'<div style="padding: 10px 14px 10px 20px; background: #FFF8E6; color: #0D0D0F; border: 2.5px solid #0D0D0F; '
+            f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: 'Archivo Narrow', sans-serif; font-weight: 700; '
+            f'font-size: {s}px; line-height: 1.18; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>')
+
 def _god(text, s):
     return (f'<div style="padding: 12px 16px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
             f'font-family: Anton, sans-serif; font-size: {s}px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>')
@@ -51,7 +57,7 @@ def column(lines, bw, h, side="left", hi=21):
     fs = min(11.5, max(9.5, s * 0.66))
     items = []
     for kind, text in lines:
-        items.append(_cap(text, fs) if kind == "cap" else _say(text, s, side) if kind == "say" else _god(text, s))
+        items.append(_cap(text, fs) if kind == "cap" else _say(text, s, side) if kind == "say" else _song(text, s) if kind == "song" else _god(text, s))
     return items
 
 def orate(tok, h, bg, lines, w=W1, flip=False, ref=None, hi=21, art="", extra="", face_w=None, top=None):

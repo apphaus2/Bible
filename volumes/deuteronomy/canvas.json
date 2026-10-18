@@ -954,6 +954,104 @@
    "w": 760,
    "h": 1080,
    "title": "122 · In the Siege and in the Distress"
+  },
+  "DEU-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 44000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Choose Life"
+  },
+  "DEU-C13-D-P01-TheWordsOfTheCoven.dc.html": {
+   "x": 840,
+   "y": 44000,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · The Words of the Covenant"
+  },
+  "DEU-C13-D-P02-TheWordsOfTheCoven.dc.html": {
+   "x": 1680,
+   "y": 44000,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · The Words of the Covenant"
+  },
+  "DEU-C13-D-P03-LestThereShouldBeA.dc.html": {
+   "x": 2520,
+   "y": 44000,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Lest There Should Be among You a Root"
+  },
+  "DEU-C13-D-P04-TheSecretThings.dc.html": {
+   "x": 3360,
+   "y": 44000,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · The Secret Things"
+  },
+  "DEU-C13-D-P05-WhenAllTheseThings.dc.html": {
+   "x": 0,
+   "y": 45200,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · When All These Things Are Come upon Thee"
+  },
+  "DEU-C13-D-P06-WhenAllTheseThings.dc.html": {
+   "x": 840,
+   "y": 45200,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · When All These Things Are Come upon Thee"
+  },
+  "DEU-C13-D-P07-ThereforeChooseLif.dc.html": {
+   "x": 1680,
+   "y": 45200,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Therefore Choose Life"
+  },
+  "DEU-C13-D-P08-ThereforeChooseLif.dc.html": {
+   "x": 2520,
+   "y": 45200,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Therefore Choose Life"
+  },
+  "DEU-C13-D-P09-IAmAHundredAndTwen.dc.html": {
+   "x": 3360,
+   "y": 45200,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · I Am a Hundred and Twenty Years Old"
+  },
+  "DEU-C13-D-P10-BeStrongAndOfGoodC.dc.html": {
+   "x": 0,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Be Strong and of Good Courage"
+  },
+  "DEU-C13-D-P11-ThyDaysApproachTha.dc.html": {
+   "x": 840,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Thy Days Approach That Thou Must Die"
+  },
+  "DEU-C13-D-P12-WriteYeThisSong.dc.html": {
+   "x": 1680,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Write Ye This Song"
+  },
+  "DEU-C13-D-P13-ByTheSideOfTheArk.dc.html": {
+   "x": 2520,
+   "y": 46400,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · By the Side of the Ark"
   }
  },
  "order": [
@@ -1091,7 +1189,21 @@
   "DEU-C12-E-P07-ANationOfFierceCou.dc.html",
   "DEU-C12-E-P08-InTheSiegeAndInThe.dc.html",
   "DEU-C12-E-P09-InTheSiegeAndInThe.dc.html",
-  "DEU-C12-E-P10-InTheSiegeAndInThe.dc.html"
+  "DEU-C12-E-P10-InTheSiegeAndInThe.dc.html",
+  "DEU-C13-00-Title.dc.html",
+  "DEU-C13-D-P01-TheWordsOfTheCoven.dc.html",
+  "DEU-C13-D-P02-TheWordsOfTheCoven.dc.html",
+  "DEU-C13-D-P03-LestThereShouldBeA.dc.html",
+  "DEU-C13-D-P04-TheSecretThings.dc.html",
+  "DEU-C13-D-P05-WhenAllTheseThings.dc.html",
+  "DEU-C13-D-P06-WhenAllTheseThings.dc.html",
+  "DEU-C13-D-P07-ThereforeChooseLif.dc.html",
+  "DEU-C13-D-P08-ThereforeChooseLif.dc.html",
+  "DEU-C13-D-P09-IAmAHundredAndTwen.dc.html",
+  "DEU-C13-D-P10-BeStrongAndOfGoodC.dc.html",
+  "DEU-C13-D-P11-ThyDaysApproachTha.dc.html",
+  "DEU-C13-D-P12-WriteYeThisSong.dc.html",
+  "DEU-C13-D-P13-ByTheSideOfTheArk.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1184,6 +1296,13 @@
    "text": "Chapter 12 · The Blessings and the Curses (Deuteronomy 27–28)",
    "x": 0,
    "y": 39600
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Choose Life (Deuteronomy 29–31)",
+   "x": 0,
+   "y": 43700
   }
  },
  "designSystems": [],
