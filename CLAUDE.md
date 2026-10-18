@@ -117,8 +117,13 @@ There are two editions:
 | Judges | 7 · Delilah | 16 | title + 9 (pp. 89–97) | 31/31 verses full (16:1 and 16:21 words only; the digest's Delilah and pillars panels) | `volumes/judges/` |
 | Judges | 8 · Micah and the Danites | 17–18 | title + 8 (pp. 98–105) | 44/44 verses full (18:27 words over the smoke) | `volumes/judges/` |
 | Judges | 9 · Gibeah | 19 | title + 7 (pp. 106–112) | 30/30 verses full (19:22–30 words over a shut door, the dawn and a figure of twelve routes: no one drawn) | `volumes/judges/` |
+| Judges | 10 · No King in Israel | 20–21 | title + 14 (pp. 113–126) | 73/73 verses full (the third day as a map; Jabesh-gilead words over smoke) | `volumes/judges/` |
 
-**Genesis, Exodus, Leviticus, Numbers, Deuteronomy and Joshua are complete.** Next: Judges. Joshua is `tools/full/jos/` (10
+**Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua and Judges are complete.** Next: Ruth. Judges is `tools/full/jdg/`
+(10 chapters, plan and restraint notes in `jdg/__init__.py`): like Joshua (`jdg.common` helpers, `D("A3", 0)` lifts the digest's
+Deborah/Gideon book, `"B…"` the Samson book), packed with `by_need=True` so a page of short speeches keeps a readable size.
+Judges 19 is drawn only as shut doors, dawn and a figure of twelve routes. `scratchpad`-style check worth repeating: a caption
+whose words also sit inside a speech box on the same page means a `say(..., frm=)` is missing its `to=`. Joshua is `tools/full/jos/` (10
 chapters, plan in `jos/__init__.py`): story chapters laid out by `discourse.pack` with `jos.common` line helpers (`face()`,
 `drawn()`, `over()` for the digest's Jericho panels lifted with `reuse.fill`), battles as technical maps (`jos.art.ai_plan`,
 `campaign`, `land_taken`) set under the words with `jos.art.below()`, and the lists of 12–21 as roll pages (`rolls.py`:

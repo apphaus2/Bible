@@ -520,3 +520,45 @@ def borders(w, h):
         o.append(node(x, y, t, TRIBE_C[t], r=4, dy=-9 if y < cy else 16, size=8))
     o.append(node(cx, cy, "", "#FFD23F", r=6))
     return "".join(o)
+
+def gibeah_plan(w, h, stage=0):
+    """The third day at Gibeah as a technical map: the city, the two highways to Beth-el and to Gibeah, the array at
+    Baal-tamar, the liers-in-wait at Maareh-geba; stage=1 adds the pillar of smoke and the flight toward the wilderness."""
+    o = [grid_bg(w, h)]
+    gx, gy = w * 0.5, h * 0.36
+    o.append(f'<rect x="{f(gx - 34)}" y="{f(gy - 20)}" width="68" height="40" fill="#B5824A" opacity="0.7" stroke="#FFD23F" stroke-width="2"></rect>' + label(gx, gy + 5, "GIBEAH", "#F3EFE6", 11))
+    o.append(route([(gx, gy + 20), (w * 0.2, h * 0.86)], color="#8FD0E2", arrow=False) + label(w * 0.2, h * 0.92, "TO BETH-EL", "#8FD0E2", 8))
+    o.append(route([(gx + 20, gy + 20), (w * 0.62, h * 0.9)], color="#8FD0E2", arrow=False) + label(w * 0.62, h * 0.95, "THE FIELD", "#8FD0E2", 8))
+    o.append(node(w * 0.36, h * 0.74, "BAAL-TAMAR", "#5AD87A", r=5, dy=18, size=8))
+    o.append(f'<rect x="{f(w * 0.68)}" y="{f(h * 0.2)}" width="{f(w * 0.14)}" height="{f(h * 0.14)}" fill="#D7261E" opacity="0.3" stroke="#D7261E" stroke-width="2" stroke-dasharray="5 4"></rect>'
+             + label(w * 0.75, h * 0.18, "MAAREH-GEBA", "#FF6A5A", 8))
+    if stage:
+        o.append(f'<path d="M{f(gx)} {f(gy - 20)} C {f(gx - 20)} {f(h * 0.2)} {f(gx + 20)} {f(h * 0.12)} {f(gx)} {f(h * 0.02)}" fill="none" stroke="#C8C2D6" stroke-width="14" opacity="0.6"></path>')
+        o.append(route([(w * 0.68, h * 0.27), (gx + 36, gy)], color="#FF6A5A"))
+        o.append(route([(w * 0.4, h * 0.6), (w * 0.9, h * 0.72)], color="#FFB04A") + label(w * 0.9, h * 0.68, "THE WILDERNESS", "#C8A06A", 8, "end"))
+    return "".join(o)
+
+def rimmon(p, w, h, seed):
+    """The rock of Rimmon in the wilderness, where six hundred men of Benjamin abode four months."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>', sun(w * 0.86, h * 0.18, 18, color="#FF8A3D", op=0.35),
+         ground(w, h, h * 0.8, "#C8A06A", dy=0), E4.rock(w * 0.2, h * 0.82, w * 0.6, h * 0.6, color="#9A6A4A", dark="#5A3A2A")]
+    for i in range(7):
+        x = w * (0.34 + i * 0.05); y = h * 0.3 + abs(i - 3) * h * 0.03
+        o.append(man(p, x, y, fit(y, y - h * 0.08), "#3A2A2A"))
+    return "".join(o)
+
+def dances(p, w, h, seed):
+    """The feast of Jehovah at Shiloh: the daughters of Shiloh coming out to dance in the dances, the vineyards about."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.86, h * 0.14, 16, op=0.3),
+         hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=14), ground(w, h, h * 0.48, "#9CCB5E", dy=0)]
+    for k in range(2):
+        for i in range(9):
+            x = w * (0.04 + i * 0.12) + (k % 2) * w * 0.06; y = h * (0.56 + k * 0.08) if i % 4 else h * (0.86 + k * 0.06)
+            if i % 4 == 0: continue
+            o.append(f'<path d="M{f(x)} {f(y)} L {f(x)} {f(y - 20)}" stroke="#5A3A22" stroke-width="3"></path><circle cx="{f(x - 6)}" cy="{f(y - 22)}" r="8" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.2"></circle><circle cx="{f(x + 5)}" cy="{f(y - 16)}" r="4" fill="#6A2A7A"></circle>')
+    b = h * 0.9
+    for i in range(7):
+        x = w * (0.2 + i * 0.1); y = b - (i % 2) * 8
+        o.append(woman(p, x, y, fit(y, h * 0.56), r.choice(["#F3EFE6", "#E8B830", "#C2456A", "#5AC8C8", "#B88AE8"]), flip=i % 2 == 1))
+    return "".join(o)

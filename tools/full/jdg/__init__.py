@@ -37,5 +37,7 @@ META = {
      "blurb": "In those days there was no king in Israel: Micah's eleven hundred pieces of silver, his house of gods, and a young Levite hired to be his priest; the five Danite spies and quiet Laish; the six hundred men carry off the graven image and the priest, and Laish becomes Dan."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Gibeah", "range": "Judges 19", "bible_chapters": [19],
      "blurb": "A Levite and his concubine on the road home from Beth-lehem-judah; Jebus passed by at evening; no man in Gibeah of Benjamin takes them in but an old man from the field; the men of the city at the door; and what was sent throughout all the borders of Israel: consider it, take counsel, and speak."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "No King in Israel", "range": "Judges 20–21", "bible_chapters": [20, 21],
+     "blurb": "All Israel gathered as one man at Mizpah against Gibeah; Benjamin will not hearken; two days lost and weeping at Beth-el before the ark; the third day and the pillar of smoke; six hundred in the rock of Rimmon; one tribe lacking in Israel; the daughters of Shiloh; and every man did that which was right in his own eyes."},
   ],
 }

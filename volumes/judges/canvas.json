@@ -863,6 +863,111 @@
    "w": 760,
    "h": 1080,
    "title": "112 · Consider It, Take Counsel, and Speak"
+  },
+  "JDG-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · No King in Israel"
+  },
+  "JDG-C10-D-P01-AsOneMan.dc.html": {
+   "x": 840,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · As One Man"
+  },
+  "JDG-C10-D-P02-AsOneMan.dc.html": {
+   "x": 1680,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · As One Man"
+  },
+  "JDG-C10-D-P03-SevenHundredChosen.dc.html": {
+   "x": 2520,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Seven Hundred Chosen Men Lefthanded"
+  },
+  "JDG-C10-D-P04-SevenHundredChosen.dc.html": {
+   "x": 3360,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Seven Hundred Chosen Men Lefthanded"
+  },
+  "JDG-C10-D-P05-ShallIYetAgainGoOu.dc.html": {
+   "x": 0,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Shall I Yet Again Go Out?"
+  },
+  "JDG-C10-D-P06-TheThirdDay.dc.html": {
+   "x": 840,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Third Day"
+  },
+  "JDG-C10-D-P07-TheThirdDay.dc.html": {
+   "x": 1680,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · The Third Day"
+  },
+  "JDG-C10-D-P08-TheThirdDay.dc.html": {
+   "x": 2520,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Third Day"
+  },
+  "JDG-C10-D-P09-TheThirdDay.dc.html": {
+   "x": 3360,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Third Day"
+  },
+  "JDG-C10-D-P10-OneTribeLackingInI.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · One Tribe Lacking in Israel"
+  },
+  "JDG-C10-D-P11-OneTribeLackingInI.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · One Tribe Lacking in Israel"
+  },
+  "JDG-C10-D-P12-JabeshGilead.dc.html": {
+   "x": 1680,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Jabesh-gilead"
+  },
+  "JDG-C10-D-P13-TheDaughtersOfShil.dc.html": {
+   "x": 2520,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · The Daughters of Shiloh"
+  },
+  "JDG-C10-D-P14-EveryManDidThatWhi.dc.html": {
+   "x": 3360,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Every Man Did That Which Was Right in His Own Eyes"
   }
  },
  "order": [
@@ -987,7 +1092,22 @@
   "JDG-C09-D-P04-GibeahWhichBelonge.dc.html",
   "JDG-C09-D-P05-TheMenOfTheCity.dc.html",
   "JDG-C09-D-P06-InTheDawningOfTheD.dc.html",
-  "JDG-C09-E-P01-ConsiderItTakeCoun.dc.html"
+  "JDG-C09-E-P01-ConsiderItTakeCoun.dc.html",
+  "JDG-C10-00-Title.dc.html",
+  "JDG-C10-D-P01-AsOneMan.dc.html",
+  "JDG-C10-D-P02-AsOneMan.dc.html",
+  "JDG-C10-D-P03-SevenHundredChosen.dc.html",
+  "JDG-C10-D-P04-SevenHundredChosen.dc.html",
+  "JDG-C10-D-P05-ShallIYetAgainGoOu.dc.html",
+  "JDG-C10-D-P06-TheThirdDay.dc.html",
+  "JDG-C10-D-P07-TheThirdDay.dc.html",
+  "JDG-C10-D-P08-TheThirdDay.dc.html",
+  "JDG-C10-D-P09-TheThirdDay.dc.html",
+  "JDG-C10-D-P10-OneTribeLackingInI.dc.html",
+  "JDG-C10-D-P11-OneTribeLackingInI.dc.html",
+  "JDG-C10-D-P12-JabeshGilead.dc.html",
+  "JDG-C10-D-P13-TheDaughtersOfShil.dc.html",
+  "JDG-C10-D-P14-EveryManDidThatWhi.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1059,6 +1179,13 @@
    "text": "Chapter 9 · Gibeah (Judges 19)",
    "x": 0,
    "y": 36900
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · No King in Israel (Judges 20–21)",
+   "x": 0,
+   "y": 39800
   }
  },
  "designSystems": [],

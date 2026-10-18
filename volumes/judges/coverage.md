@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 545 verses — 545 full, 0 partial, 0 omitted.
+**So far:** 618 verses — 618 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · After the Death of Joshua (Judges 1–2)
 
@@ -55,5 +55,11 @@ Every verse is on the page in full.
 ## Chapter 9 · Gibeah (Judges 19)
 
 30 verses: 30 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 10 · No King in Israel (Judges 20–21)
+
+73 verses: 73 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
