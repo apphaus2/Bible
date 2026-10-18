@@ -29,13 +29,16 @@ def _need(s, w=W1):
     if s["art"] is not None and s["tok"] is None: need = need / 0.62 + 40
     return max(220 if s["tok"] else 150, need)
 
-def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, most=3, end="", default_head=None):
-    groups, cur, chars = [], [], 0
+def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, most=3, end="", default_head=None, by_need=False):
+    """by_need=True also breaks a page when the panels' estimated heights at a comfortable size would not fit (so a page of
+    many short speeches does not shrink the type)."""
+    groups, cur, chars, need = [], [], 0, 0
     for s in segments:
         n = _chars(s) + (250 if s["h"] else 0)
-        if cur and (chars + n > budget or len(cur) == most or (s["head"] and chars > budget * 0.45)):
-            groups.append(cur); cur, chars = [], 0
-        cur.append(s); chars += n
+        nd = _need(s)
+        if cur and (chars + n > budget or len(cur) == most or (s["head"] and chars > budget * 0.45) or (by_need and need + nd > 1022 * 1.08 - 12 * len(cur))):
+            groups.append(cur); cur, chars, need = [], 0, 0
+        cur.append(s); chars += n; need += nd
     if cur: groups.append(cur)
     if len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) < most + 1 and _chars(groups[-1][0]) < 700 and not groups[-1][0]["head"]:
         last = groups.pop(); groups[-1] += last     # no lone short panel on the last page (pop first: groups[-2] += groups.pop() stores at the shifted index)

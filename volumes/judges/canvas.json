@@ -1,0 +1,138 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T16:53:16Z"
+ },
+ "title": "Judges — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JDG-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · After the Death of Joshua"
+  },
+  "JDG-C01-D-P01-WhoShallGoUpForUsF.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Who Shall Go Up for Us First?"
+  },
+  "JDG-C01-D-P02-WhoShallGoUpForUsF.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Who Shall Go Up for Us First?"
+  },
+  "JDG-C01-D-P03-GiveMeAlsoSpringsO.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Give Me Also Springs of Water"
+  },
+  "JDG-C01-D-P04-GiveMeAlsoSpringsO.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Give Me Also Springs of Water"
+  },
+  "JDG-C01-D-P05-BethEl.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Beth-el"
+  },
+  "JDG-C01-R-P01-TheyDroveNotOutThe.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · They Drove Not Out the Canaanites"
+  },
+  "JDG-C01-E-P01-Bochim.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Bochim"
+  },
+  "JDG-C01-E-P02-AnotherGeneration.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Another Generation"
+  },
+  "JDG-C01-E-P03-AnotherGeneration.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Another Generation"
+  },
+  "JDG-C01-E-P04-JehovahRaisedUpJud.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Jehovah Raised Up Judges"
+  },
+  "JDG-C01-E-P05-ThatByThemIMayProv.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · That by Them I May Prove Israel"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JDG-C01-00-Title.dc.html",
+  "JDG-C01-D-P01-WhoShallGoUpForUsF.dc.html",
+  "JDG-C01-D-P02-WhoShallGoUpForUsF.dc.html",
+  "JDG-C01-D-P03-GiveMeAlsoSpringsO.dc.html",
+  "JDG-C01-D-P04-GiveMeAlsoSpringsO.dc.html",
+  "JDG-C01-D-P05-BethEl.dc.html",
+  "JDG-C01-R-P01-TheyDroveNotOutThe.dc.html",
+  "JDG-C01-E-P01-Bochim.dc.html",
+  "JDG-C01-E-P02-AnotherGeneration.dc.html",
+  "JDG-C01-E-P03-AnotherGeneration.dc.html",
+  "JDG-C01-E-P04-JehovahRaisedUpJud.dc.html",
+  "JDG-C01-E-P05-ThatByThemIMayProv.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Judges Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · After the Death of Joshua (Judges 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
