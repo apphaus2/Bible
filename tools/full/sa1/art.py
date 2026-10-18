@@ -220,3 +220,20 @@ def saul_wars(w, h):
         o.append(route([(cx, cy), (w * x, h * y)], color="#D7261E", sw=1.8) + node(w * x, h * y, nm, "#FFD23F", r=5, dy=-10 if y > 0.1 else 18, size=9))
     o.append(node(cx, cy, "GIBEAH", "#8FD0E2", r=6, dy=18, size=9))
     return "".join(o)
+
+# ---- 1 Samuel 15–16 -----------------------------------------------------------------------------------------------------
+def spoil_flocks(w, h, seed):
+    """The bleating of the sheep and the lowing of the oxen: the best of the spoil of Amalek driven to Gilgal."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', hills(w, h, h * 0.44, seed, color="#B89A6A", amp=12), ground(w, h, h * 0.5, "#C8A06A", dy=0)]
+    items = sorted((r.uniform(h * 0.56, h * 0.96), r.uniform(0, w), r.random()) for _ in range(26))
+    for y, x, q in items:
+        k = (y - h * 0.56) / (h * 0.4); s = 0.2 + 0.3 * k
+        o.append(S1.cow(x, y, s * 0.9, color=r.choice(["#8A5A30", "#C9A27A", "#6A4A2A"]), flip=q < 0.5) if q < 0.3 else E.sheep(x, y, s * 1.1, flip=q < 0.6))
+    return "".join(o)
+
+def rent_skirt(w, h, seed):
+    """The skirt of Samuel's robe rent in Saul's hand."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', V.rays(w * 0.5, h * 0.5, 24, 10, max(w, h), color="#9AA8C8", op=0.15)]
+    o.append(S2.skirt_piece(w * 0.5, h * 0.56, min(2.6, h / 120), color="#1E2A5A"))
+    return "".join(o)

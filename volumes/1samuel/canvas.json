@@ -611,6 +611,111 @@
    "w": 760,
    "h": 1080,
    "title": "79 · The House of Saul"
+  },
+  "1SA-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Jehovah Looketh on the Heart"
+  },
+  "1SA-C07-D-P01-GoAndSmiteAmalek.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Go and Smite Amalek"
+  },
+  "1SA-C07-D-P02-GoAndSmiteAmalek.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Go and Smite Amalek"
+  },
+  "1SA-C07-D-P03-ToObeyIsBetterThan.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · To Obey Is Better than Sacrifice"
+  },
+  "1SA-C07-D-P04-ToObeyIsBetterThan.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · To Obey Is Better than Sacrifice"
+  },
+  "1SA-C07-D-P05-ToObeyIsBetterThan.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · To Obey Is Better than Sacrifice"
+  },
+  "1SA-C07-D-P06-TheKingdomRentFrom.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · The Kingdom Rent from Thee"
+  },
+  "1SA-C07-D-P07-TheKingdomRentFrom.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · The Kingdom Rent from Thee"
+  },
+  "1SA-C07-D-P08-TheKingdomRentFrom.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · The Kingdom Rent from Thee"
+  },
+  "1SA-C07-D-P09-FillThyHornWithOil.dc.html": {
+   "x": 3360,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Fill Thy Horn with Oil"
+  },
+  "1SA-C07-D-P10-JehovahLookethOnTh.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Jehovah Looketh on the Heart"
+  },
+  "1SA-C07-D-P11-JehovahLookethOnTh.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Jehovah Looketh on the Heart"
+  },
+  "1SA-C07-D-P12-JehovahLookethOnTh.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Jehovah Looketh on the Heart"
+  },
+  "1SA-C07-D-P13-TheHarp.dc.html": {
+   "x": 2520,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Harp"
+  },
+  "1SA-C07-D-P14-TheHarp.dc.html": {
+   "x": 3360,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Harp"
   }
  },
  "order": [
@@ -699,7 +804,22 @@
   "1SA-C06-D-P10-JonathanWasTaken.dc.html",
   "1SA-C06-D-P11-JonathanWasTaken.dc.html",
   "1SA-C06-D-P12-TheHouseOfSaul.dc.html",
-  "1SA-C06-R-P01-TheHouseOfSaul.dc.html"
+  "1SA-C06-R-P01-TheHouseOfSaul.dc.html",
+  "1SA-C07-00-Title.dc.html",
+  "1SA-C07-D-P01-GoAndSmiteAmalek.dc.html",
+  "1SA-C07-D-P02-GoAndSmiteAmalek.dc.html",
+  "1SA-C07-D-P03-ToObeyIsBetterThan.dc.html",
+  "1SA-C07-D-P04-ToObeyIsBetterThan.dc.html",
+  "1SA-C07-D-P05-ToObeyIsBetterThan.dc.html",
+  "1SA-C07-D-P06-TheKingdomRentFrom.dc.html",
+  "1SA-C07-D-P07-TheKingdomRentFrom.dc.html",
+  "1SA-C07-D-P08-TheKingdomRentFrom.dc.html",
+  "1SA-C07-D-P09-FillThyHornWithOil.dc.html",
+  "1SA-C07-D-P10-JehovahLookethOnTh.dc.html",
+  "1SA-C07-D-P11-JehovahLookethOnTh.dc.html",
+  "1SA-C07-D-P12-JehovahLookethOnTh.dc.html",
+  "1SA-C07-D-P13-TheHarp.dc.html",
+  "1SA-C07-D-P14-TheHarp.dc.html"
  ],
  "notes": {
   "Main": {
@@ -750,6 +870,13 @@
    "text": "Chapter 6 · Jonathan at Michmash (1 Samuel 14)",
    "x": 0,
    "y": 22200
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Jehovah Looketh on the Heart (1 Samuel 15–16)",
+   "x": 0,
+   "y": 26300
   }
  },
  "designSystems": [],

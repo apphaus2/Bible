@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 348 verses — 348 full, 0 partial, 0 omitted.
+**So far:** 406 verses — 406 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Hannah (1 Samuel 1–2)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · Jonathan at Michmash (1 Samuel 14)
 
 52 verses: 52 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · Jehovah Looketh on the Heart (1 Samuel 15–16)
+
+58 verses: 58 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -33,5 +33,7 @@ META = {
      "blurb": "Nahash at Jabesh-gilead and Saul following the oxen out of the field; the kingdom renewed at Gilgal; Samuel's farewell — whose ox have I taken? — and thunder in wheat harvest; the Philistines as the sand at Michmash, Saul's burnt-offering, and a man after his own heart; no smith in all the land."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Jonathan at Michmash", "range": "1 Samuel 14", "bible_chapters": [14],
      "blurb": "Jonathan and his armorbearer climb between the crags Bozez and Seneh — there is no restraint to Jehovah to save by many or by few; the earth quaked; Saul's rash oath, the honey in the forest, the lot that took Jonathan, and the people who rescued him."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Jehovah Looketh on the Heart", "range": "1 Samuel 15–16", "bible_chapters": [15, 16],
+     "blurb": "Saul spares Agag and the best of Amalek's flocks: what meaneth this bleating of the sheep? To obey is better than sacrifice; the skirt rent and the kingdom rent from Saul. Then Samuel at Beth-lehem with his horn of oil, Jesse's sons passing by, the youngest fetched from the sheep, and David's harp before Saul."},
   ],
 }

@@ -126,6 +126,7 @@ There are two editions:
 | 1 Samuel | 4 · Saul Anointed | 9–10 | title + 14 (pp. 40–53) | 54/54 verses full | `volumes/1samuel/` |
 | 1 Samuel | 5 · To Obey Is Better | 11–13 | title + 13 (pp. 54–66) | 63/63 verses full (11:2 and 11:7 words only) | `volumes/1samuel/` |
 | 1 Samuel | 6 · Jonathan at Michmash | 14 | title + 13 (pp. 67–79) | 52/52 verses full (the crags as drawings; Saul's wars as a map) | `volumes/1samuel/` |
+| 1 Samuel | 7 · Jehovah Looketh on the Heart | 15–16 | title + 14 (pp. 80–93) | 58/58 verses full (15:33 words only; the digest's anointing panels) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width
