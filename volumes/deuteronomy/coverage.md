@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 219 verses — 219 full, 0 partial, 0 omitted.
+**So far:** 265 verses — 265 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · These Are the Words (Deuteronomy 1–2)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · Hear, O Israel (Deuteronomy 5–6)
 
 58 verses: 58 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · A People for His Own Possession (Deuteronomy 7–8)
+
+46 verses: 46 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

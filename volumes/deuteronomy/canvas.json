@@ -310,6 +310,69 @@
    "w": 760,
    "h": 1080,
    "title": "39 · When Thy Son Asketh Thee"
+  },
+  "DEU-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · A People for His Own Possession"
+  },
+  "DEU-C04-D-P01-SevenNationsGreate.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Seven Nations Greater and Mightier"
+  },
+  "DEU-C04-D-P02-SevenNationsGreate.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Seven Nations Greater and Mightier"
+  },
+  "DEU-C04-D-P03-TheHornet.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Hornet"
+  },
+  "DEU-C04-D-P04-TheHornet.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · The Hornet"
+  },
+  "DEU-C04-D-P05-ManDothNotLiveByBr.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Man Doth Not Live by Bread Only"
+  },
+  "DEU-C04-D-P06-ManDothNotLiveByBr.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Man Doth Not Live by Bread Only"
+  },
+  "DEU-C04-D-P07-BewareLestThouForg.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Beware Lest Thou Forget"
+  },
+  "DEU-C04-D-P08-BewareLestThouForg.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Beware Lest Thou Forget"
   }
  },
  "order": [
@@ -355,7 +418,16 @@
   "DEU-C03-D-P07-GoThouNear.dc.html",
   "DEU-C03-D-P08-HearOIsrael.dc.html",
   "DEU-C03-D-P09-BewareLestThouForg.dc.html",
-  "DEU-C03-D-P10-WhenThySonAskethTh.dc.html"
+  "DEU-C03-D-P10-WhenThySonAskethTh.dc.html",
+  "DEU-C04-00-Title.dc.html",
+  "DEU-C04-D-P01-SevenNationsGreate.dc.html",
+  "DEU-C04-D-P02-SevenNationsGreate.dc.html",
+  "DEU-C04-D-P03-TheHornet.dc.html",
+  "DEU-C04-D-P04-TheHornet.dc.html",
+  "DEU-C04-D-P05-ManDothNotLiveByBr.dc.html",
+  "DEU-C04-D-P06-ManDothNotLiveByBr.dc.html",
+  "DEU-C04-D-P07-BewareLestThouForg.dc.html",
+  "DEU-C04-D-P08-BewareLestThouForg.dc.html"
  ],
  "notes": {
   "Main": {
@@ -385,6 +457,13 @@
    "text": "Chapter 3 · Hear, O Israel (Deuteronomy 5–6)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · A People for His Own Possession (Deuteronomy 7–8)",
+   "x": 0,
+   "y": 15200
   }
  },
  "designSystems": [],

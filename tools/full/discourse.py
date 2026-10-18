@@ -63,7 +63,7 @@ def pack(segments, prefix, start, book="Deuteronomy", code="DEUT", budget=1250, 
                 body.append(new(s["bg"], W1, hh, art, (vref(s["ref"], "right: 12px; bottom: 12px") if s["ref"] else "") + extra))
         for s in g:
             if s["head"]: head_now = s["head"]
-        refs = [s["ref"] for s in g if s["ref"]]
+        refs = [s["ref"] for s in g if s["ref"] and s["lines"]] or [s["ref"] for s in g if s["ref"]]
         rng = _span(refs, code)
         title = f"{book} {rng} — {head_now}"
         slug = re.sub(r"[^A-Za-z]", "", head_now.title())[:18]

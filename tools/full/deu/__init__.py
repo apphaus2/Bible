@@ -26,5 +26,7 @@ META = {
      "blurb": "Og king of Bashan and his bedstead of iron; the land beyond the Jordan given to Reuben, Gad and half Manasseh; Moses' prayer to go over, and Pisgah; ye saw no manner of form on the day that Jehovah spake unto you in Horeb; a devouring fire, a jealous God; and the cities of refuge beyond the Jordan."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Hear, O Israel", "range": "Deuteronomy 5–6", "bible_chapters": [5, 6],
      "blurb": "The covenant made at Horeb and the ten commandments spoken out of the midst of the fire; go thou near, and hear; Hear, O Israel: Jehovah our God is one Jehovah, and thou shalt love Jehovah thy God with all thy heart; the words upon the door-posts; and when thy son asketh thee in time to come."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "A People for His Own Possession", "range": "Deuteronomy 7–8", "bible_chapters": [7, 8],
+     "blurb": "Seven nations greater and mightier than thou, and the hornet sent before thee; Jehovah set his love upon you, not because ye were more in number; the manna and the forty years — man doth not live by bread only; and a good land of wheat and barley, vines and fig-trees and pomegranates: beware lest thou forget."},
   ],
 }
