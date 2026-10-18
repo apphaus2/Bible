@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 464 verses — 464 full, 0 partial, 0 omitted.
+**So far:** 518 verses — 518 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Hannah (1 Samuel 1–2)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · Goliath (1 Samuel 17)
 
 58 verses: 58 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · Saul Hath Slain His Thousands (1 Samuel 18–19)
+
+54 verses: 54 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

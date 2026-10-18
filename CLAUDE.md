@@ -128,6 +128,7 @@ There are two editions:
 | 1 Samuel | 6 · Jonathan at Michmash | 14 | title + 13 (pp. 67–79) | 52/52 verses full (the crags as drawings; Saul's wars as a map) | `volumes/1samuel/` |
 | 1 Samuel | 7 · Jehovah Looketh on the Heart | 15–16 | title + 14 (pp. 80–93) | 58/58 verses full (15:33 words only; the digest's anointing panels) | `volumes/1samuel/` |
 | 1 Samuel | 8 · Goliath | 17 | title + 14 (pp. 94–107) | 58/58 verses full (the digest's David and Goliath book; 17:51, 17:54, 17:57 words only) | `volumes/1samuel/` |
+| 1 Samuel | 9 · Saul Hath Slain His Thousands | 18–19 | title + 10 (pp. 108–117) | 54/54 verses full (18:25–27 and 19:24 words only) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width

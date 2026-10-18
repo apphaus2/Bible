@@ -237,3 +237,46 @@ def rent_skirt(w, h, seed):
     o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A3A"></rect>', V.rays(w * 0.5, h * 0.5, 24, 10, max(w, h), color="#9AA8C8", op=0.15)]
     o.append(S2.skirt_piece(w * 0.5, h * 0.56, min(2.6, h / 120), color="#1E2A5A"))
     return "".join(o)
+
+# ---- 1 Samuel 18–19 -----------------------------------------------------------------------------------------------------
+def women_singing(p, w, h, seed):
+    """The women came out of all the cities of Israel, singing and dancing, with timbrels: Saul hath slain his thousands."""
+    r = random.Random(seed); b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', V.rays(w * 0.5, h * 0.2, 30, 20, max(w, h), color="#FFF4C2", op=0.3),
+         J.city_hill(w * 0.82, h * 0.6, w * 0.2, h * 0.24, seed), ground(w, h, h * 0.6, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.44)
+    for i in range(7):
+        o.append(S3.musician(p, w * (0.06 + i * 0.13), b - (i % 2) * 8, s * (0.94 + 0.04 * (i % 2)), kind="timbrel", cloth=r.choice(["#C2456A", "#E8B830", "#5AC8C8", "#B88AE8", "#F3EFE6"]), seed=seed + i))
+    return "".join(o)
+
+def let_down(p, w, h, seed):
+    """Michal let David down through the window by night."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#14123A"></rect>', mk.stars(30, w, h * 0.4, seed),
+         f'<rect x="{f(w * 0.3)}" y="{f(h * 0.06)}" width="{f(w * 0.5)}" height="{f(h + 10)}" fill="#6A5A6A" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         S3.window(w * 0.55, h * 0.22, w * 0.12, h * 0.16, inner="#FFC14D")]
+    o.append(f'<path d="M{f(w * 0.55)} {f(h * 0.34)} L {f(w * 0.56)} {f(h * 0.7)}" stroke="#C8A06A" stroke-width="3"></path>')
+    s = fit(h * 0.84, h * 0.6)
+    o.append(S2.david(p, w * 0.56, h * 0.84, s, staff=False, bag=False, up=[(-22, -158), (-6, -196), (8, -228)]))
+    return "".join(o)
+
+def teraphim_bed(w, h, seed):
+    """The teraphim laid in the bed, a pillow of goats' hair at the head thereof, covered with the clothes."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A2A"></rect>', ground(w, h, h * 0.84, "#2A1A18", dy=0)]
+    o.append(f'<rect x="{f(w * 0.14)}" y="{f(h * 0.6)}" width="{f(w * 0.72)}" height="{f(h * 0.14)}" rx="10" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             f'<path d="M{f(w * 0.24)} {f(h * 0.6)} C {f(w * 0.3)} {f(h * 0.44)} {f(w * 0.7)} {f(h * 0.46)} {f(w * 0.8)} {f(h * 0.6)} Z" fill="#8A6A8A" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<ellipse cx="{f(w * 0.2)}" cy="{f(h * 0.54)}" rx="{f(w * 0.06)}" ry="{f(h * 0.06)}" fill="#3A2A20" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    from genesis.art4 import clay_lamp
+    o.append(clay_lamp(w * 0.9, h * 0.44, min(1.2, h / 260)))
+    return "".join(o)
+
+def naioth(p, w, h, seed):
+    """Naioth in Ramah: the company of the prophets prophesying, Samuel standing as head over them."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', V.rays(w * 0.5, h * 0.1, 30, 20, max(w, h), color="#FFF4C2", op=0.3),
+         hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.6, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(samuel_fig(p, w * 0.5, b, s * 1.04, up=[(-22, -158), (-6, -196), (8, -228)]))
+    for i in range(6):
+        x = w * (0.08 + i * 0.16) if i < 3 else w * (0.6 + (i - 3) * 0.14)
+        o.append(man(p, x, b - (i % 2) * 6, s * 0.9, "#F3EFE6", flip=x > w * 0.5, up=[(-22, -158), (-30, -196), (-36, -228)]))
+    return "".join(o)

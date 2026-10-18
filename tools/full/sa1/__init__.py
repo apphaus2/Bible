@@ -37,5 +37,7 @@ META = {
      "blurb": "Saul spares Agag and the best of Amalek's flocks: what meaneth this bleating of the sheep? To obey is better than sacrifice; the skirt rent and the kingdom rent from Saul. Then Samuel at Beth-lehem with his horn of oil, Jesse's sons passing by, the youngest fetched from the sheep, and David's harp before Saul."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Goliath", "range": "1 Samuel 17", "bible_chapters": [17],
      "blurb": "The vale of Elah and the champion of Gath, six cubits and a span, defying the armies of Israel forty days; a shepherd boy with parched grain and loaves; the lion and the bear; five smooth stones out of the brook; in the name of Jehovah of hosts — for the battle is Jehovah's."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Saul Hath Slain His Thousands", "range": "1 Samuel 18–19", "bible_chapters": [18, 19],
+     "blurb": "The soul of Jonathan knit with the soul of David; the women with timbrels: Saul hath slain his thousands, and David his ten thousands; the spear cast at the wall; Michal, the king's daughter; Michal lets David down through the window and lays the teraphim in his bed; and Saul among the prophets at Naioth."},
   ],
 }
