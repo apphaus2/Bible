@@ -108,3 +108,6 @@ JEHU_KING = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#1A1210", hl="#4A3
 JORAM_AFRAID = F("adam", skin="#C98E66", shadow="#3A2A4A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#7A1A2A", band=True, brow="sorrow", sweat=True, light="#9AA8C8")
 WATCHMAN = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#5A6A8A", light="#FFE680")
 JEHONADAB = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#5A4A3A", light="#FFE680")
+JEHOIADA = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#E8E2D6", hl="#F3EFE6", beard=True, beard_color="#E8E2D6", scarf="#F3EFE6", band=True, light="#FFE680")
+ATHALIAH = F("eve", skin="#D9A27A", shadow="#5A2A3A", hair="#0D0D0F", band=True, kohl=True, collar=True, brow="scowl", sweat=True, light="#D7261E")
+JOASH = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", stubble="#2A1A10", scarf="#1F3A7A", band=True, light="#FFE680")

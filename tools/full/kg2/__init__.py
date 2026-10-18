@@ -30,5 +30,7 @@ META = {
      "blurb": "To-morrow a measure of fine flour for a shekel — if Jehovah should make windows in heaven; four leprous men at the gate and the camp of the Syrians empty in the twilight; this day is a day of good tidings; the Shunammite's land restored; Hazael and the forty camels' burden, and the man of God wept; and the kings Jehoram and Ahaziah of Judah."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Jehu", "range": "2 Kings 9–10", "bible_chapters": [9, 10],
      "blurb": "The vial of oil poured on Jehu's head in an inner chamber — I have anointed thee king over Israel; is it peace?; the driving is like the driving of Jehu the son of Nimshi, for he driveth furiously; the portion of Naboth; Jezebel at the window; the seventy sons; and the house of Baal broken down."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Joash", "range": "2 Kings 11–12", "bible_chapters": [11, 12],
+     "blurb": "Athaliah destroys the seed royal, and Jehosheba hides the child Joash six years in the house of Jehovah; Jehoiada's covenant with the captains; the crown and the testimony — long live the king; Athaliah's cry, Treason! treason!; then Jehoash and the breaches of the house, the chest with a hole in its lid, and the hallowed things sent to Hazael."},
   ],
 }

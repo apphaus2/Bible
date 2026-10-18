@@ -480,3 +480,67 @@ def hazael_map(w, h):
         o.append(node(w * x, h * y, nm, "#D7261E", r=5, dy=-12, size=9))
     o.append(node(w * 0.92, h * 0.06, "DAMASCUS", "#FFD23F", r=5, dy=14, size=9))
     return "".join(o)
+
+# ---- 2 Kings 11–12 ------------------------------------------------------------------------------------------------------
+import ruth1 as R1
+def hidden_child(p, w, h, seed):
+    """Jehosheba and the nurse hiding the child Joash in a bedchamber of the house of Jehovah, a lamp burning."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A2A"></rect>', S3.cedar(w, h, h * 0.84).replace("#8A4A26", "#6A3A20"),
+         clay_lamp(w * 0.82, h * 0.5, min(1.2, h / 260)), f'<circle cx="{f(w * 0.82)}" cy="{f(h * 0.46)}" r="{f(h * 0.36)}" fill="#FFC14D" opacity="0.1"></circle>']
+    s = fit(b, h * 0.4)
+    o.append(mk.person(p, round(w * 0.36), round(b), round(s, 3), body="#3A1E14", cloth="#2A4A6A", woman=True, hair="#1A1210", sw=3, up=R1.HOLD_BABY, extra=R1.baby(10, -130, 0.8)))
+    o.append(mk.person(p, round(w * 0.56), round(b), round(s * 0.95, 3), body="#3A1E14", cloth="#6A5A4A", woman=True, hair="#3A3430", sw=3, flip=True))
+    return "".join(o)
+
+def child_king(p, w, h, seed, athaliah=False):
+    """The young king by the pillar in the house of Jehovah with the crown upon him, the guard round about with David's spears
+    and shields, the trumpets; athaliah=True: Athaliah crying Treason at the side."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.62, "#C8B88A", dy=0), temple_front(w * 0.5, h * 0.62, w * 0.56, seed)]
+    s = fit(b, h * 0.38)
+    o.append(mk.person(p, round(w * 0.5), round(b), round(s * 0.55, 3), body="#5A2A16", cloth="#F3EFE6", kind="Tunic", sw=3, extra=S3.KING))
+    for i in range(4):
+        for d in (-1, 1):
+            x = w * 0.5 + d * w * (0.12 + i * 0.08)
+            o.append(warrior(p, x, b - i * 4, s * (0.95 - i * 0.05), "#8A3A1E" if i % 2 else "#3A4A6A", flip=d > 0))
+    if athaliah:
+        o.append(mk.person(p, round(w * 0.06), round(b), round(s, 3), body="#5A2A16", cloth="#7A1A2A", woman=True, hair="#0D0D0F", sw=3, up=[(22, -158), (40, -196), (50, -228)], extra=CROWN))
+    else:
+        o.append(J.trumpeter(p, w * 0.06, b, s * 0.9) + J.blasts(w * 0.06 + 60 * s, b - 160 * s, s * 0.9))
+    return "".join(o)
+
+def horses_entry(w, h, seed):
+    """The way of the horses' entry to the king's house, empty (11:16 told in words only)."""
+    return "".join([sky(w, h, "#5A4A5A", "#C8A080"), S4.gatehouse(w * 0.6, h * 0.9, w * 0.56, h * 0.62), ground(w, h, h * 0.9, "#6A5A4A", dy=0),
+                    f'<path d="M{f(w * 0.1)} {f(h + 10)} C {f(w * 0.3)} {f(h * 0.92)} {f(w * 0.5)} {f(h * 0.9)} {f(w * 0.6)} {f(h * 0.9)}" stroke="#8A7A5A" stroke-width="{f(w * 0.08)}" fill="none"></path>'])
+
+def chest(p, w, h, seed):
+    """Jehoiada's chest with a hole bored in its lid, beside the altar; the people bringing money."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.6, "#C8B88A", dy=0), horned_altar(w * 0.2, b, min(1.0, h / 360), fire=True, seed=seed),
+         f'<rect x="{f(w * 0.4)}" y="{f(b - h * 0.16)}" width="{f(w * 0.18)}" height="{f(h * 0.16)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2.6"></rect>'
+         f'<rect x="{f(w * 0.39)}" y="{f(b - h * 0.18)}" width="{f(w * 0.2)}" height="{f(h * 0.03)}" fill="#A8703A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<ellipse cx="{f(w * 0.49)}" cy="{f(b - h * 0.165)}" rx="8" ry="3" fill="#0D0D0F"></ellipse>']
+    s = fit(b, h * 0.4)
+    o.append(K1.priest(p, w * 0.66, b, s, flip=True))
+    o.append(crowd_at(p, w, h, seed, w * 0.74, w * 0.98, h * 0.7, b, 5, s * 0.6, s * 0.9, flip=True))
+    return "".join(o)
+
+def repairers(p, w, h, seed):
+    """Carpenters, builders, masons and hewers of stone repairing the breaches of the house of Jehovah."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.66, "#C8B88A", dy=0), temple_front(w * 0.5, h * 0.66, w * 0.5, seed)]
+    o.append(f'<path d="M{f(w * 0.3)} {f(h * 0.66)} L {f(w * 0.3)} {f(h * 0.3)} M{f(w * 0.36)} {f(h * 0.66)} L {f(w * 0.36)} {f(h * 0.3)}" stroke="#8A6A3A" stroke-width="4"></path>'
+             + "".join(f'<path d="M{f(w * 0.3)} {f(h * (0.36 + i * 0.08))} L {f(w * 0.36)} {f(h * (0.36 + i * 0.08))}" stroke="#8A6A3A" stroke-width="3"></path>' for i in range(4)))
+    s = fit(b, h * 0.3)
+    for i in range(5):
+        o.append(man(p, w * (0.06 + i * 0.07) if i < 3 else w * (0.8 + (i - 3) * 0.1), b, s, WAR[i % 4], flip=i >= 3, up=[(-22, -158), (-30, -190), (-20, -214)]))
+    o.append(box(w * 0.14, b, w * 0.08, w * 0.04, h * 0.06, fill="#D8CCB0", top="#E8DCC0", side="#B8AC90"))
+    return "".join(o)
+
+def millo(w, h, seed):
+    """The house of Millo on the way down to Silla at dusk (12:20–21 told in words only)."""
+    return "".join([sky(w, h, "#3A1A2A", "#C8603A"), J.city_hill(w * 0.5, h * 0.7, w * 0.8, h * 0.4, seed), ground(w, h, h * 0.72, "#2A1E1E", dy=0),
+                    f'<path d="M{f(w * 0.6)} {f(h * 0.72)} C {f(w * 0.7)} {f(h * 0.82)} {f(w * 0.8)} {f(h * 0.92)} {f(w * 0.96)} {f(h + 10)}" stroke="#5A4A3A" stroke-width="{f(w * 0.05)}" fill="none"></path>'])

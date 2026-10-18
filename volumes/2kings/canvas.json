@@ -597,6 +597,76 @@
    "w": 760,
    "h": 1080,
    "title": "78 · The House of Baal"
+  },
+  "2KI-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Joash"
+  },
+  "2KI-C06-D-P01-HidSixYears.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Hid Six Years"
+  },
+  "2KI-C06-D-P02-JehoiadaThePriest.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Jehoiada the Priest"
+  },
+  "2KI-C06-D-P03-JehoiadaThePriest.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Jehoiada the Priest"
+  },
+  "2KI-C06-D-P04-LongLiveTheKing.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Long Live the King"
+  },
+  "2KI-C06-D-P05-LongLiveTheKing.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Long Live the King"
+  },
+  "2KI-C06-E-P01-TheBreachesOfTheHo.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · The Breaches of the House"
+  },
+  "2KI-C06-E-P02-AChestWithAHoleInT.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · A Chest with a Hole in the Lid"
+  },
+  "2KI-C06-E-P03-AChestWithAHoleInT.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · A Chest with a Hole in the Lid"
+  },
+  "2KI-C06-E-P04-Hazael.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Hazael"
   }
  },
  "order": [
@@ -683,7 +753,17 @@
   "2KI-C05-D-P14-JehonadabTheSonOfR.dc.html",
   "2KI-C05-D-P15-TheHouseOfBaal.dc.html",
   "2KI-C05-D-P16-TheHouseOfBaal.dc.html",
-  "2KI-C05-D-P17-TheHouseOfBaal.dc.html"
+  "2KI-C05-D-P17-TheHouseOfBaal.dc.html",
+  "2KI-C06-00-Title.dc.html",
+  "2KI-C06-D-P01-HidSixYears.dc.html",
+  "2KI-C06-D-P02-JehoiadaThePriest.dc.html",
+  "2KI-C06-D-P03-JehoiadaThePriest.dc.html",
+  "2KI-C06-D-P04-LongLiveTheKing.dc.html",
+  "2KI-C06-D-P05-LongLiveTheKing.dc.html",
+  "2KI-C06-E-P01-TheBreachesOfTheHo.dc.html",
+  "2KI-C06-E-P02-AChestWithAHoleInT.dc.html",
+  "2KI-C06-E-P03-AChestWithAHoleInT.dc.html",
+  "2KI-C06-E-P04-Hazael.dc.html"
  ],
  "notes": {
   "Main": {
@@ -727,6 +807,13 @@
    "text": "Chapter 5 · Jehu (2 Kings 9–10)",
    "x": 0,
    "y": 20500
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Joash (2 Kings 11–12)",
+   "x": 0,
+   "y": 25800
   }
  },
  "designSystems": [],
