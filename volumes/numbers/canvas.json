@@ -632,6 +632,132 @@
    "w": 760,
    "h": 1080,
    "title": "82 · Shut Up without the Camp Seven Days"
+  },
+  "NUM-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Twelve Spies"
+  },
+  "NUM-C07-P01-Send.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Send Thou Men"
+  },
+  "NUM-C07-P02-Names.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · These Were Their Names"
+  },
+  "NUM-C07-P03-SeeTheLand.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · See the Land, What It Is"
+  },
+  "NUM-C07-P04-Eshcol.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · The Valley of Eshcol"
+  },
+  "NUM-C07-P05-Report.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · It Floweth with Milk and Honey"
+  },
+  "NUM-C07-P06-Anak.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · The Children of Anak"
+  },
+  "NUM-C07-P07-Grasshoppers.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · As Grasshoppers"
+  },
+  "NUM-C07-P08-Wept.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · The People Wept That Night"
+  },
+  "NUM-C07-P09-Rent.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · An Exceeding Good Land"
+  },
+  "NUM-C07-P10-HowLong.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · How Long Will This People Despise Me?"
+  },
+  "NUM-C07-P11-Plea.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Then the Egyptians Will Hear It"
+  },
+  "NUM-C07-P12-Pardon.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · Pardon, I Pray Thee"
+  },
+  "NUM-C07-P13-Caleb.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · My Servant Caleb"
+  },
+  "NUM-C07-P14-AsILive.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · As I Live, Saith Jehovah"
+  },
+  "NUM-C07-P15-Forty.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Forty Years"
+  },
+  "NUM-C07-P16-Remained.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Joshua and Caleb Remained Alive"
+  },
+  "NUM-C07-P17-Hormah.dc.html": {
+   "x": 1680,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Even unto Hormah"
   }
  },
  "order": [
@@ -723,7 +849,25 @@
   "NUM-C06-P13-Against.dc.html",
   "NUM-C06-P14-MouthToMouth.dc.html",
   "NUM-C06-P15-Leprous.dc.html",
-  "NUM-C06-P16-SevenDays.dc.html"
+  "NUM-C06-P16-SevenDays.dc.html",
+  "NUM-C07-00-Title.dc.html",
+  "NUM-C07-P01-Send.dc.html",
+  "NUM-C07-P02-Names.dc.html",
+  "NUM-C07-P03-SeeTheLand.dc.html",
+  "NUM-C07-P04-Eshcol.dc.html",
+  "NUM-C07-P05-Report.dc.html",
+  "NUM-C07-P06-Anak.dc.html",
+  "NUM-C07-P07-Grasshoppers.dc.html",
+  "NUM-C07-P08-Wept.dc.html",
+  "NUM-C07-P09-Rent.dc.html",
+  "NUM-C07-P10-HowLong.dc.html",
+  "NUM-C07-P11-Plea.dc.html",
+  "NUM-C07-P12-Pardon.dc.html",
+  "NUM-C07-P13-Caleb.dc.html",
+  "NUM-C07-P14-AsILive.dc.html",
+  "NUM-C07-P15-Forty.dc.html",
+  "NUM-C07-P16-Remained.dc.html",
+  "NUM-C07-P17-Hormah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -774,6 +918,13 @@
    "text": "Chapter 6 · Graves of Lust (Numbers 11–12)",
    "x": 0,
    "y": 24600
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Twelve Spies (Numbers 13–14)",
+   "x": 0,
+   "y": 29900
   }
  },
  "designSystems": [],

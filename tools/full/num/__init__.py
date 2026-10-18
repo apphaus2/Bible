@@ -29,5 +29,7 @@ META = {
      "blurb": "The passover in the wilderness of Sinai, and a second passover for the men unclean by the dead; the cloud upon the tabernacle by day and the appearance of fire by night; two trumpets of silver; the camps setting forward by their standards; Hobab; and Rise up, O Jehovah."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Graves of Lust", "range": "Numbers 11–12", "bible_chapters": [11, 12],
      "blurb": "The fire at Taberah; who shall give us flesh to eat?; the manna like coriander seed; Moses' burden and the seventy elders on whom the Spirit rested; Eldad and Medad; the quails and the graves of Kibroth-hattaavah; and Miriam, leprous as white as snow, shut up without the camp seven days."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Twelve Spies", "range": "Numbers 13–14", "bible_chapters": [13, 14],
+     "blurb": "Twelve men sent to spy out the land of Canaan; the cluster of Eshcol borne upon a staff between two; the evil report, the children of Anak, and we were as grasshoppers; Joshua and Caleb: an exceeding good land; Moses' plea, I have pardoned; forty years in the wilderness; and the defeat at Hormah."},
   ],
 }
