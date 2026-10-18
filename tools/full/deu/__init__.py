@@ -24,5 +24,7 @@ META = {
      "blurb": "In the fortieth year, beyond the Jordan, Moses begins to declare the law: Horeb, the judges, the spies and the evil report at Kadesh-barnea, the defeat at Hormah, the long way round Seir, Moab and Ammon, and Sihon king of Heshbon delivered up."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Take Heed to Thyself", "range": "Deuteronomy 3–4", "bible_chapters": [3, 4],
      "blurb": "Og king of Bashan and his bedstead of iron; the land beyond the Jordan given to Reuben, Gad and half Manasseh; Moses' prayer to go over, and Pisgah; ye saw no manner of form on the day that Jehovah spake unto you in Horeb; a devouring fire, a jealous God; and the cities of refuge beyond the Jordan."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Hear, O Israel", "range": "Deuteronomy 5–6", "bible_chapters": [5, 6],
+     "blurb": "The covenant made at Horeb and the ten commandments spoken out of the midst of the fire; go thou near, and hear; Hear, O Israel: Jehovah our God is one Jehovah, and thou shalt love Jehovah thy God with all thy heart; the words upon the door-posts; and when thy son asketh thee in time to come."},
   ],
 }

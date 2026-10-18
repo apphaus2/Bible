@@ -26,6 +26,16 @@
    "prefixes": [
     "DEU-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "Hear, O Israel",
+   "range": "Deuteronomy 5–6",
+   "blurb": "The covenant made at Horeb and the ten commandments spoken out of the midst of the fire; go thou near, and hear; Hear, O Israel: Jehovah our God is one Jehovah, and thou shalt love Jehovah thy God with all thy heart; the words upon the door-posts; and when thy son asketh thee in time to come.",
+   "prefixes": [
+    "DEU-C03-"
+   ]
   }
  ]
 }

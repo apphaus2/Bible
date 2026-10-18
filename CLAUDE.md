@@ -85,6 +85,7 @@ There are two editions:
 | **Numbers** | **complete: cover + 16 chapters** | **1–36** | **230 pages (213 numbered)** | **1,288 verses: all full** | `volumes/numbers/` |
 | Deuteronomy | 1 · These Are the Words | 1–2 | cover + title + 15 (pp. 1–15) | 83/83 verses full (speech panels: `speech.orate`) | `volumes/deuteronomy/` |
 | Deuteronomy | 2 · Take Heed to Thyself | 3–4 | title + 14 (pp. 16–29) | 78/78 verses full | `volumes/deuteronomy/` |
+| Deuteronomy | 3 · Hear, O Israel | 5–6 | title + 10 (pp. 30–39) | 58/58 verses full (laid out by `discourse.pack`) | `volumes/deuteronomy/` |
 
 **Genesis, Exodus, Leviticus and Numbers are complete.** Next: Deuteronomy (`tools/full/deu/`). Numbers is `tools/full/num/`
 (16 chapters, plan in `num/__init__.py`). Its chapters number their pages with `num/pages.py` (`PG = Pages(start)`, `@PG.P(...)`,
