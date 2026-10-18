@@ -1,0 +1,31 @@
+{
+ "id": "ruth",
+ "order": 8,
+ "name": "Ruth",
+ "kanji": "ルツ記",
+ "thumb": "vol-ruth-",
+ "lede": "The eighth book of the Bible, in full: Naomi and Ruth the Moabitess, the field of Boaz, and the near kinsman, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Whither Thou Goest",
+   "range": "Ruth 1–2",
+   "blurb": "Famine, Moab and three graves; Naomi turns home, Orpah kisses her, but Ruth clave unto her: whither thou goest, I will go. Call me Mara. Then the barley harvest, the field of Boaz, and under whose wings thou art come to take refuge.",
+   "prefixes": [
+    "Main.dc.html",
+    "RUT-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Near Kinsman",
+   "range": "Ruth 3–4",
+   "blurb": "The threshing-floor at midnight and the skirt spread over the handmaid; six measures of barley; the near kinsman at the gate draws off his shoe; ye are witnesses; and Obed in Naomi's bosom, the father of Jesse, the father of David.",
+   "prefixes": [
+    "RUT-C02-"
+   ]
+  }
+ ]
+}

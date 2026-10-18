@@ -118,8 +118,12 @@ There are two editions:
 | Judges | 8 · Micah and the Danites | 17–18 | title + 8 (pp. 98–105) | 44/44 verses full (18:27 words over the smoke) | `volumes/judges/` |
 | Judges | 9 · Gibeah | 19 | title + 7 (pp. 106–112) | 30/30 verses full (19:22–30 words over a shut door, the dawn and a figure of twelve routes: no one drawn) | `volumes/judges/` |
 | Judges | 10 · No King in Israel | 20–21 | title + 14 (pp. 113–126) | 73/73 verses full (the third day as a map; Jabesh-gilead words over smoke) | `volumes/judges/` |
+| Ruth | 1 · Whither Thou Goest | 1–2 | cover + title + 10 (pp. 1–10) | 45/45 verses full (the digest's Ruth panels throughout) | `volumes/ruth/` |
+| Ruth | 2 · The Near Kinsman | 3–4 | title + 9 (pp. 11–19) | 40/40 verses full (the generations of Perez as a roll page) | `volumes/ruth/` |
 
-**Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua and Judges are complete.** Next: Ruth. Judges is `tools/full/jdg/`
+**Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
+Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width
+panel is widened). Judges is `tools/full/jdg/`
 (10 chapters, plan and restraint notes in `jdg/__init__.py`): like Joshua (`jdg.common` helpers, `D("A3", 0)` lifts the digest's
 Deborah/Gideon book, `"B…"` the Samson book), packed with `by_need=True` so a page of short speeches keeps a readable size.
 Judges 19 is drawn only as shut doors, dawn and a figure of twelve routes. `scratchpad`-style check worth repeating: a caption

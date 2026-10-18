@@ -29,7 +29,8 @@ def panels(rel):
         out.append(Art(", ".join(layers), int(m.group(3)), int(m.group(4)), _prefix(m.group(5))))
     return out
 
-def fill(art):
-    """A lifted panel as a drawing for any panel size: f(w, h) -> svg, the old viewBox cropped (slice) to fill w x h."""
-    return lambda w, h: (f'<svg x="0" y="0" width="{w}" height="{h}" viewBox="0 0 {art.w} {art.h}" preserveAspectRatio="xMidYMid slice">'
+def fill(art, align="xMidYMid"):
+    """A lifted panel as a drawing for any panel size: f(w, h) -> svg, the old viewBox cropped (slice) to fill w x h
+    (align="xMidYMax" keeps the bottom, where the figures stand, when a narrow panel is widened)."""
+    return lambda w, h: (f'<svg x="0" y="0" width="{w}" height="{h}" viewBox="0 0 {art.w} {art.h}" preserveAspectRatio="{align} slice">'
                          f'{art.svg}</svg>')

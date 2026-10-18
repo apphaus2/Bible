@@ -1,0 +1,217 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T17:20:06Z"
+ },
+ "title": "Ruth — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "RUT-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Whither Thou Goest"
+  },
+  "RUT-C01-D-P01-InTheDaysWhenTheJu.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · In the Days When the Judges Judged"
+  },
+  "RUT-C01-D-P02-GoReturn.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Go, Return"
+  },
+  "RUT-C01-D-P03-GoReturn.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Go, Return"
+  },
+  "RUT-C01-D-P04-EntreatMeNotToLeav.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Entreat Me Not to Leave Thee"
+  },
+  "RUT-C01-D-P05-CallMeMara.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Call Me Mara"
+  },
+  "RUT-C01-D-P06-TheFieldOfBoaz.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Field of Boaz"
+  },
+  "RUT-C01-D-P07-UnderWhoseWings.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Under Whose Wings"
+  },
+  "RUT-C01-D-P08-UnderWhoseWings.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Under Whose Wings"
+  },
+  "RUT-C01-D-P09-AnEphahOfBarley.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · An Ephah of Barley"
+  },
+  "RUT-C01-D-P10-OneOfOurNearKinsme.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · One of Our Near Kinsmen"
+  },
+  "RUT-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Near Kinsman"
+  },
+  "RUT-C02-D-P01-TheThreshingFloor.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Threshing-floor"
+  },
+  "RUT-C02-D-P02-AWorthyWoman.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Worthy Woman"
+  },
+  "RUT-C02-D-P03-AWorthyWoman.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · A Worthy Woman"
+  },
+  "RUT-C02-D-P04-AWorthyWoman.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · A Worthy Woman"
+  },
+  "RUT-C02-D-P05-AtTheGate.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · At the Gate"
+  },
+  "RUT-C02-D-P06-HeDrewOffHisShoe.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · He Drew Off His Shoe"
+  },
+  "RUT-C02-D-P07-YeAreWitnesses.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Ye Are Witnesses"
+  },
+  "RUT-C02-D-P08-ARestorerOfLife.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · A Restorer of Life"
+  },
+  "RUT-C02-R-P01-TheGenerationsOfPe.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · The Generations of Perez"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "RUT-C01-00-Title.dc.html",
+  "RUT-C01-D-P01-InTheDaysWhenTheJu.dc.html",
+  "RUT-C01-D-P02-GoReturn.dc.html",
+  "RUT-C01-D-P03-GoReturn.dc.html",
+  "RUT-C01-D-P04-EntreatMeNotToLeav.dc.html",
+  "RUT-C01-D-P05-CallMeMara.dc.html",
+  "RUT-C01-D-P06-TheFieldOfBoaz.dc.html",
+  "RUT-C01-D-P07-UnderWhoseWings.dc.html",
+  "RUT-C01-D-P08-UnderWhoseWings.dc.html",
+  "RUT-C01-D-P09-AnEphahOfBarley.dc.html",
+  "RUT-C01-D-P10-OneOfOurNearKinsme.dc.html",
+  "RUT-C02-00-Title.dc.html",
+  "RUT-C02-D-P01-TheThreshingFloor.dc.html",
+  "RUT-C02-D-P02-AWorthyWoman.dc.html",
+  "RUT-C02-D-P03-AWorthyWoman.dc.html",
+  "RUT-C02-D-P04-AWorthyWoman.dc.html",
+  "RUT-C02-D-P05-AtTheGate.dc.html",
+  "RUT-C02-D-P06-HeDrewOffHisShoe.dc.html",
+  "RUT-C02-D-P07-YeAreWitnesses.dc.html",
+  "RUT-C02-D-P08-ARestorerOfLife.dc.html",
+  "RUT-C02-R-P01-TheGenerationsOfPe.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Ruth Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Whither Thou Goest (Ruth 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Near Kinsman (Ruth 3–4)",
+   "x": 0,
+   "y": 5800
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
