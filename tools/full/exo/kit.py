@@ -137,7 +137,7 @@ def set_book(G):
     _SP["G"] = G
 def _sp(refs): return _SP["G"].span(refs)
 
-def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget=1450, most=6, end=""):
+def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget=1450, most=6, end="", carry=False):
     """Pack law cells into pages. items: (heading, refs "1:2-4", pictogram f(p) -> svg or None, lead text or "", page head
     or None). A page holds up to `most` cells and about `budget` characters; a page head starts a new page. Cells sit two
     to a row (one to a row when a page has only one or two long cells); an odd last cell spans both columns. The lead, if
@@ -175,6 +175,7 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
         if end and k == len(pages) - 1:
             cells[-1] = cells[-1][: cells[-1].rfind("</div>")] + end + "</div>"
         head = next((it[4] for it in group if it[4]), None) or default_head
+        if carry: default_head = head                  # carry=True: a page without a head of its own keeps the last one
         a0 = group[0][1].split("-")[0]; cl, vl = group[-1][1].split(":"); vl = vl.split("-")[-1]
         rng = a0 if f"{cl}:{vl}" == a0 else (f"{a0}–{vl}" if a0.split(":")[0] == cl else f"{a0}–{cl}:{vl}")
         title = f"{title_book} {rng} — {head}"

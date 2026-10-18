@@ -240,6 +240,83 @@
    "w": 760,
    "h": 1080,
    "title": "30 · Every One According to His Service"
+  },
+  "NUM-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Jehovah Bless Thee"
+  },
+  "NUM-C03-P01-Without.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Without the Camp"
+  },
+  "NUM-C03-L-P01-IfAManTrespass.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · If a Man Trespass"
+  },
+  "NUM-C03-L-P02-TheLawOfJealousy.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Law of Jealousy"
+  },
+  "NUM-C03-L-P03-TheLawOfJealousy.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Law of Jealousy"
+  },
+  "NUM-C03-L-P04-TheLawOfJealousy.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Law of Jealousy"
+  },
+  "NUM-C03-L-P05-TheVowOfANazirite.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Vow of a Nazirite"
+  },
+  "NUM-C03-L-P06-IfHisSeparationBeD.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · If His Separation Be Defiled"
+  },
+  "NUM-C03-L-P07-WhenTheDaysAreFulf.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · When the Days Are Fulfilled"
+  },
+  "NUM-C03-L-P08-WhenTheDaysAreFulf.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · When the Days Are Fulfilled"
+  },
+  "NUM-C03-P02-Bless.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · On This Wise Ye Shall Bless"
   }
  },
  "order": [
@@ -275,7 +352,18 @@
   "NUM-C02-C-P02-TheServiceOfTheGer.dc.html",
   "NUM-C02-C-P03-TheServiceOfTheSon.dc.html",
   "NUM-C02-P13-NumberedKohath.dc.html",
-  "NUM-C02-P14-EightThousand.dc.html"
+  "NUM-C02-P14-EightThousand.dc.html",
+  "NUM-C03-00-Title.dc.html",
+  "NUM-C03-P01-Without.dc.html",
+  "NUM-C03-L-P01-IfAManTrespass.dc.html",
+  "NUM-C03-L-P02-TheLawOfJealousy.dc.html",
+  "NUM-C03-L-P03-TheLawOfJealousy.dc.html",
+  "NUM-C03-L-P04-TheLawOfJealousy.dc.html",
+  "NUM-C03-L-P05-TheVowOfANazirite.dc.html",
+  "NUM-C03-L-P06-IfHisSeparationBeD.dc.html",
+  "NUM-C03-L-P07-WhenTheDaysAreFulf.dc.html",
+  "NUM-C03-L-P08-WhenTheDaysAreFulf.dc.html",
+  "NUM-C03-P02-Bless.dc.html"
  ],
  "notes": {
   "Main": {
@@ -298,6 +386,13 @@
    "text": "Chapter 2 · The Charge of the Levites (Numbers 3–4)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Jehovah Bless Thee (Numbers 5–6)",
+   "x": 0,
+   "y": 12300
   }
  },
  "designSystems": [],
