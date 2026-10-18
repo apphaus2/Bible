@@ -1,0 +1,21 @@
+{
+ "id": "1kings",
+ "order": 11,
+ "name": "1 Kings",
+ "kanji": "列王記上",
+ "thumb": "vol-1kings-",
+ "lede": "The eleventh book of the Bible, in full: Solomon's wisdom and the house of Jehovah, the kingdom torn in two, and Elijah on mount Carmel, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Long Live King Solomon",
+   "range": "1 Kings 1",
+   "blurb": "King David old and stricken in years, and Abishag the Shunammite; Adonijah exalts himself — I will be king — and feasts by the stone of Zoheleth; Nathan and Bath-sheba go in to the king; assuredly Solomon thy son shall reign after me; Solomon on the king's mule down to Gihon, the horn of oil, and long live king Solomon; Adonijah holds the horns of the altar.",
+   "prefixes": [
+    "Main.dc.html",
+    "1KI-C01-"
+   ]
+  }
+ ]
+}

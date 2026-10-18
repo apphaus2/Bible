@@ -146,6 +146,7 @@ There are two editions:
 | 2 Samuel | 10 · The King Returned | 19–20 | title + 16 (pp. 114–129) | 69/69 verses full (20:10–12 words over the empty highway; 20:22 over Abel's wall) | `volumes/2samuel/` |
 | 2 Samuel | 11 · Jehovah Is My Rock | 21–22 | title + 15 (pp. 130–144) | 73/73 verses full (21:9 words over the mountain at harvest; David's song in song boxes) | `volumes/2samuel/` |
 | 2 Samuel | 12 · Which Cost Me Nothing | 23–24 | title + 11 (pp. 145–155) | 64/64 verses full (the mighty men as roll cells; 24:15 words over the silent tents) | `volumes/2samuel/` |
+| 1 Kings | 1 · Long Live King Solomon | 1 | cover + title + 11 (pp. 1–11) | 53/53 verses full (no digest book: all new drawings, `kg1/art.py`) | `volumes/1kings/` |
 
 **Genesis through 2 Samuel (ten volumes) are complete.** Next: 1 Kings. 2 Samuel is `tools/full/sa2/` (12 chapters, plan and
 restraint notes in `sa2/__init__.py`, the digest's two books lifted with `sa2.common.D("A5", 1)` / `D("B6", 0)`; `asv.Book.v(..., after=)`

@@ -1,0 +1,138 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-18T21:40:45Z"
+ },
+ "title": "1 Kings — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "1KI-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Long Live King Solomon"
+  },
+  "1KI-C01-D-P01-KingDavidWasOld.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · King David Was Old"
+  },
+  "1KI-C01-D-P02-TheStoneOfZoheleth.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Stone of Zoheleth"
+  },
+  "1KI-C01-D-P03-NathanAndBathSheba.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Nathan and Bath-sheba"
+  },
+  "1KI-C01-D-P04-NathanAndBathSheba.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Nathan and Bath-sheba"
+  },
+  "1KI-C01-D-P05-NathanAndBathSheba.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Nathan and Bath-sheba"
+  },
+  "1KI-C01-D-P06-AssuredlySolomonSh.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Assuredly Solomon Shall Reign"
+  },
+  "1KI-C01-D-P07-AssuredlySolomonSh.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Assuredly Solomon Shall Reign"
+  },
+  "1KI-C01-D-P08-Gihon.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Gihon"
+  },
+  "1KI-C01-D-P09-TheCityRangAgain.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The City Rang Again"
+  },
+  "1KI-C01-D-P10-TheHornsOfTheAltar.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Horns of the Altar"
+  },
+  "1KI-C01-E-P01-.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · "
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "1KI-C01-00-Title.dc.html",
+  "1KI-C01-D-P01-KingDavidWasOld.dc.html",
+  "1KI-C01-D-P02-TheStoneOfZoheleth.dc.html",
+  "1KI-C01-D-P03-NathanAndBathSheba.dc.html",
+  "1KI-C01-D-P04-NathanAndBathSheba.dc.html",
+  "1KI-C01-D-P05-NathanAndBathSheba.dc.html",
+  "1KI-C01-D-P06-AssuredlySolomonSh.dc.html",
+  "1KI-C01-D-P07-AssuredlySolomonSh.dc.html",
+  "1KI-C01-D-P08-Gihon.dc.html",
+  "1KI-C01-D-P09-TheCityRangAgain.dc.html",
+  "1KI-C01-D-P10-TheHornsOfTheAltar.dc.html",
+  "1KI-C01-E-P01-.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "1 Kings Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Long Live King Solomon (1 Kings 1)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
