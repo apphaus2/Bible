@@ -219,6 +219,118 @@
    "w": 760,
    "h": 1080,
    "title": "27 · Then Sang Deborah and Barak"
+  },
+  "JDG-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Gideon"
+  },
+  "JDG-C03-D-P01-AsLocustsForMultit.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · As Locusts for Multitude"
+  },
+  "JDG-C03-D-P02-AsLocustsForMultit.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · As Locusts for Multitude"
+  },
+  "JDG-C03-D-P03-ThouMightyManOfVal.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Thou Mighty Man of Valor"
+  },
+  "JDG-C03-D-P04-ThouMightyManOfVal.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Thou Mighty Man of Valor"
+  },
+  "JDG-C03-D-P05-FireOutOfTheRock.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Fire out of the Rock"
+  },
+  "JDG-C03-D-P06-Jerubbaal.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Jerubbaal"
+  },
+  "JDG-C03-D-P07-Jerubbaal.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Jerubbaal"
+  },
+  "JDG-C03-D-P08-TheFleece.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Fleece"
+  },
+  "JDG-C03-D-P09-ThreeHundredMen.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Three Hundred Men"
+  },
+  "JDG-C03-D-P10-ThreeHundredMen.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Three Hundred Men"
+  },
+  "JDG-C03-D-P11-ThreeHundredMen.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Three Hundred Men"
+  },
+  "JDG-C03-D-P12-ACakeOfBarleyBread.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · A Cake of Barley Bread"
+  },
+  "JDG-C03-D-P13-ACakeOfBarleyBread.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · A Cake of Barley Bread"
+  },
+  "JDG-C03-D-P14-TheSwordOfJehovahA.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Sword of Jehovah and of Gideon"
+  },
+  "JDG-C03-D-P15-OrebAndZeeb.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Oreb and Zeeb"
   }
  },
  "order": [
@@ -251,7 +363,23 @@
   "JDG-C02-S-P03-ThenSangDeborahAnd.dc.html",
   "JDG-C02-S-P04-ThenSangDeborahAnd.dc.html",
   "JDG-C02-S-P05-ThenSangDeborahAnd.dc.html",
-  "JDG-C02-S-P06-ThenSangDeborahAnd.dc.html"
+  "JDG-C02-S-P06-ThenSangDeborahAnd.dc.html",
+  "JDG-C03-00-Title.dc.html",
+  "JDG-C03-D-P01-AsLocustsForMultit.dc.html",
+  "JDG-C03-D-P02-AsLocustsForMultit.dc.html",
+  "JDG-C03-D-P03-ThouMightyManOfVal.dc.html",
+  "JDG-C03-D-P04-ThouMightyManOfVal.dc.html",
+  "JDG-C03-D-P05-FireOutOfTheRock.dc.html",
+  "JDG-C03-D-P06-Jerubbaal.dc.html",
+  "JDG-C03-D-P07-Jerubbaal.dc.html",
+  "JDG-C03-D-P08-TheFleece.dc.html",
+  "JDG-C03-D-P09-ThreeHundredMen.dc.html",
+  "JDG-C03-D-P10-ThreeHundredMen.dc.html",
+  "JDG-C03-D-P11-ThreeHundredMen.dc.html",
+  "JDG-C03-D-P12-ACakeOfBarleyBread.dc.html",
+  "JDG-C03-D-P13-ACakeOfBarleyBread.dc.html",
+  "JDG-C03-D-P14-TheSwordOfJehovahA.dc.html",
+  "JDG-C03-D-P15-OrebAndZeeb.dc.html"
  ],
  "notes": {
   "Main": {
@@ -274,6 +402,13 @@
    "text": "Chapter 2 · Deborah (Judges 3–5)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Gideon (Judges 6–7)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],

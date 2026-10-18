@@ -156,3 +156,64 @@ def lattice(w, h, seed):
         y = h * 0.36 + (k - 1) * wh / 5
         o.append(f'<path d="M{f(w * 0.5 - ww / 2)} {f(y)} L {f(w * 0.5 + ww / 2)} {f(y)}" stroke="#5A3A22" stroke-width="4"></path>')
     return "".join(o)
+
+# ---- Judges 6–7 ---------------------------------------------------------------------------------------------------------
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "digest"))
+
+def midian(w, h, seed, night_=False):
+    """The Midianites came in as locusts for multitude, they and their camels without number: tents and camels filling the valley."""
+    import judges_book1 as JB
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#14123A" if night_ else "#E8B880"}"></rect>']
+    if night_: o.append(mk.stars(50, w, h * 0.4, seed))
+    o += [hills(w, h, h * 0.36, seed, color="#3A2A4A" if night_ else "#B5824A", amp=14), ground(w, h, h * 0.42, "#2A2030" if night_ else "#C8A06A", dy=0),
+          JB.midian_camp(44, -20, w + 20, h * 0.46, h * 0.96, seed)]
+    return "".join(o)
+
+def dens(w, h, seed):
+    """The dens which are in the mountains, and the caves, and the strongholds."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8A6A4A"></rect>',
+         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.2)} L {f(w * 0.3)} {f(h * 0.1)} L {f(w * 0.6)} {f(h * 0.24)} L {f(w + 10)} {f(h * 0.16)} L {f(w + 10)} {f(h + 10)} Z" fill="#6A4A3A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for x, y, s in ((0.18, 0.5, 1), (0.5, 0.66, 1.3), (0.8, 0.44, 0.8), (0.34, 0.86, 0.9), (0.72, 0.84, 1.1)):
+        o.append(f'<path d="M{f(w * x - w * 0.07 * s)} {f(h * y)} C {f(w * x - w * 0.07 * s)} {f(h * y - h * 0.16 * s)} {f(w * x + w * 0.07 * s)} {f(h * y - h * 0.16 * s)} {f(w * x + w * 0.07 * s)} {f(h * y)} Z" fill="#12090A" stroke="#0D0D0F" stroke-width="2"></path>')
+    return "".join(o)
+
+def rock_fire(w, h, seed):
+    """The flesh and the unleavened cakes upon the rock, and fire going up out of the rock and consuming them."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1E"></rect>', V.rays(w * 0.5, h * 0.5, 30, 20, max(w, h), color="#FFE680", op=0.25),
+         ground(w, h, h * 0.8, "#4A3A2A", dy=0),
+         f'<path d="M{f(w * 0.3)} {f(h * 0.82)} C {f(w * 0.32)} {f(h * 0.64)} {f(w * 0.68)} {f(h * 0.62)} {f(w * 0.7)} {f(h * 0.82)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         E.blaze(w * 0.5, h * 0.68, w * 0.26, h * 0.5, seed, n=8)]
+    return "".join(o)
+
+def baal_down(w, h, seed, dawn=True):
+    """In the morning: the altar of Baal broken down, the Asherah cut down by it, and a new altar with the offering burning."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="{"#F3B86A" if dawn else "#14123A"}"></rect>', sun(w * 0.86, h * 0.3, 20, color="#FF8A3D", op=0.35),
+         ground(w, h, h * 0.74, "#8A6A4A", dy=0)]
+    for i in range(9):
+        x = w * (0.08 + r.uniform(0, 0.3)); y = h * (0.7 + r.uniform(0, 0.12))
+        o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w * 0.05)}" height="{f(h * 0.05)}" fill="#5A4A4A" stroke="#0D0D0F" stroke-width="1.6" transform="rotate({r.randint(-40, 40)} {f(x)} {f(y)})"></rect>')
+    o.append(f'<path d="M{f(w * 0.42)} {f(h * 0.8)} L {f(w * 0.56)} {f(h * 0.74)}" stroke="#3A2214" stroke-width="10" stroke-linecap="round"></path>')
+    o.append(f'<rect x="{f(w * 0.66)}" y="{f(h * 0.6)}" width="{f(w * 0.18)}" height="{f(h * 0.14)}" fill="#A89A86" stroke="#0D0D0F" stroke-width="2.4"></rect>' + E.blaze(w * 0.75, h * 0.6, w * 0.12, h * 0.26, seed, n=6))
+    return "".join(o)
+
+def dream_cake(w, h, seed):
+    """The dream: a cake of barley bread tumbling into the camp of Midian and turning the tent upside down."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#14123A"></rect>', mk.stars(50, w, h * 0.5, seed), ground(w, h, h * 0.78, "#2A2030", dy=0)]
+    o.append(E4.tent(w * 0.66, h * 0.8, w * 0.3, h * 0.24, color="#3A2A3E").replace("<path", f'<path transform="rotate(160 {f(w * 0.66)} {f(h * 0.72)})"', 1))
+    cx, cy, rr = w * 0.32, h * 0.6, h * 0.14
+    o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(rr)}" fill="#D9A25A" stroke="#0D0D0F" stroke-width="2.4"></circle>'
+             + "".join(f'<circle cx="{f(cx + dx * rr)}" cy="{f(cy + dy * rr)}" r="3" fill="#8A5A2E"></circle>' for dx, dy in ((-0.4, -0.2), (0.3, 0.1), (0, 0.5), (-0.2, 0.4), (0.4, -0.4)))
+             + "".join(f'<path d="M{f(cx - rr - 10 - k * 18)} {f(cy - 10 + k * 10)} L {f(cx - rr - 40 - k * 18)} {f(cy - 14 + k * 10)}" stroke="#FFE680" stroke-width="3" opacity="0.7"></path>' for k in range(3)))
+    return "".join(o)
+
+def ephraim_waters(p, w, h, seed):
+    """The men of Ephraim take the waters as far as Beth-barah, even the Jordan, by the rock of Oreb."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.14, h * 0.2, 18, color="#FF8A3D", op=0.35),
+         hills(w, h, h * 0.4, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.5, "#B89A6A", dy=0),
+         f'<path d="M-10 {f(h * 0.6)} C {f(w * 0.3)} {f(h * 0.56)} {f(w * 0.6)} {f(h * 0.66)} {f(w + 10)} {f(h * 0.6)} L {f(w + 10)} {f(h * 0.7)} C {f(w * 0.6)} {f(h * 0.76)} {f(w * 0.3)} {f(h * 0.66)} -10 {f(h * 0.7)} Z" fill="#2C9DB8" stroke="#0D0D0F" stroke-width="2"></path>',
+         f'<path d="M{f(w * 0.74)} {f(h * 0.6)} L {f(w * 0.78)} {f(h * 0.36)} L {f(w * 0.9)} {f(h * 0.34)} L {f(w * 0.96)} {f(h * 0.6)} Z" fill="#7A6A5A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(12):
+        x = w * (0.04 + i * 0.06); y = h * 0.9 + (i % 2) * 6
+        o.append(man(p, x, y, fit(y, y - h * 0.34), random.Random(seed + i).choice(WAR), extra=E4.SPEAR))
+    return "".join(o)
