@@ -43,9 +43,11 @@ class Book:
     def _mark(self, k, a, b):
         self.used.setdefault(k, set()).update(range(a, b))
 
-    def v(self, ref, frm=None, to=None):
+    def v(self, ref, frm=None, to=None, after=None):
+        """after: start looking for frm only past the first occurrence of this text (for a phrase said twice in a verse)."""
         k = key(ref); t = self.verses[k]
-        a = 0 if frm is None else t.find(frm)
+        s0 = 0 if after is None else t.index(after) + len(after)
+        a = s0 if frm is None else t.find(frm, s0)
         if a < 0: raise ValueError(f"{self.code} {ref}: {frm!r} not in verse")
         if to is None: b = len(t)
         else:

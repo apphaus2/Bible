@@ -870,6 +870,125 @@
    "w": 760,
    "h": 1080,
    "title": "113 · O My Son Absalom"
+  },
+  "2SA-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · The King Returned"
+  },
+  "2SA-C10-D-P01-TheVictoryWasTurne.dc.html": {
+   "x": 840,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · The Victory Was Turned into Mourning"
+  },
+  "2SA-C10-D-P02-TheVictoryWasTurne.dc.html": {
+   "x": 1680,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Victory Was Turned into Mourning"
+  },
+  "2SA-C10-D-P03-BringTheKingBack.dc.html": {
+   "x": 2520,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Bring the King Back"
+  },
+  "2SA-C10-D-P04-Shimei.dc.html": {
+   "x": 3360,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Shimei"
+  },
+  "2SA-C10-D-P05-Shimei.dc.html": {
+   "x": 0,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Shimei"
+  },
+  "2SA-C10-D-P06-Mephibosheth.dc.html": {
+   "x": 840,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Mephibosheth"
+  },
+  "2SA-C10-D-P07-Barzillai.dc.html": {
+   "x": 1680,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Barzillai"
+  },
+  "2SA-C10-D-P08-Barzillai.dc.html": {
+   "x": 2520,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · Barzillai"
+  },
+  "2SA-C10-D-P09-TenPartsInTheKing.dc.html": {
+   "x": 3360,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Ten Parts in the King"
+  },
+  "2SA-C10-D-P10-ShebaTheSonOfBichr.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Sheba the Son of Bichri"
+  },
+  "2SA-C10-D-P11-ShebaTheSonOfBichr.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Sheba the Son of Bichri"
+  },
+  "2SA-C10-D-P12-TheGreatStoneInGib.dc.html": {
+   "x": 1680,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · The Great Stone in Gibeon"
+  },
+  "2SA-C10-D-P13-TheGreatStoneInGib.dc.html": {
+   "x": 2520,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · The Great Stone in Gibeon"
+  },
+  "2SA-C10-D-P14-AWiseWomanOfAbel.dc.html": {
+   "x": 3360,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · A Wise Woman of Abel"
+  },
+  "2SA-C10-D-P15-AWiseWomanOfAbel.dc.html": {
+   "x": 0,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · A Wise Woman of Abel"
+  },
+  "2SA-C10-D-P16-TheOfficersOfTheKi.dc.html": {
+   "x": 840,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · The Officers of the King"
   }
  },
  "order": [
@@ -995,7 +1114,24 @@
   "2SA-C09-D-P14-Tidings.dc.html",
   "2SA-C09-D-P15-Tidings.dc.html",
   "2SA-C09-D-P16-Tidings.dc.html",
-  "2SA-C09-E-P01-OMySonAbsalom.dc.html"
+  "2SA-C09-E-P01-OMySonAbsalom.dc.html",
+  "2SA-C10-00-Title.dc.html",
+  "2SA-C10-D-P01-TheVictoryWasTurne.dc.html",
+  "2SA-C10-D-P02-TheVictoryWasTurne.dc.html",
+  "2SA-C10-D-P03-BringTheKingBack.dc.html",
+  "2SA-C10-D-P04-Shimei.dc.html",
+  "2SA-C10-D-P05-Shimei.dc.html",
+  "2SA-C10-D-P06-Mephibosheth.dc.html",
+  "2SA-C10-D-P07-Barzillai.dc.html",
+  "2SA-C10-D-P08-Barzillai.dc.html",
+  "2SA-C10-D-P09-TenPartsInTheKing.dc.html",
+  "2SA-C10-D-P10-ShebaTheSonOfBichr.dc.html",
+  "2SA-C10-D-P11-ShebaTheSonOfBichr.dc.html",
+  "2SA-C10-D-P12-TheGreatStoneInGib.dc.html",
+  "2SA-C10-D-P13-TheGreatStoneInGib.dc.html",
+  "2SA-C10-D-P14-AWiseWomanOfAbel.dc.html",
+  "2SA-C10-D-P15-AWiseWomanOfAbel.dc.html",
+  "2SA-C10-D-P16-TheOfficersOfTheKi.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1067,6 +1203,13 @@
    "text": "Chapter 9 · O My Son Absalom (2 Samuel 17–18)",
    "x": 0,
    "y": 34500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · The King Returned (2 Samuel 19–20)",
+   "x": 0,
+   "y": 39800
   }
  },
  "designSystems": [],

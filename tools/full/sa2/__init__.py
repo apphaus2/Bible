@@ -40,5 +40,7 @@ META = {
      "blurb": "Absalom beside the way of the gate — oh that I were made judge in the land — steals the hearts of the men of Israel; Absalom is king in Hebron; arise, and let us flee; Ittai: whether for death or for life; the ark carried back over the Kidron; David going up the mount of Olives weeping and barefoot; Ziba's asses, Shimei's stones, and Ahithophel's counsel."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "O My Son Absalom", "range": "2 Samuel 17–18", "bible_chapters": [17, 18],
      "blurb": "Ahithophel's counsel defeated by Hushai's — as a bear robbed of her whelps; the priests' sons hidden in the well at Bahurim; over the Jordan by morning light; Barzillai's gifts at Mahanaim; deal gently for my sake with the young man; the forest of Ephraim; Absalom taken up between heaven and earth; Ahimaaz outruns the Cushite; O my son Absalom!"},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The King Returned", "range": "2 Samuel 19–20", "bible_chapters": [19, 20],
+     "blurb": "The victory turned into mourning, and Joab: thou lovest them that hate thee; the king sitting in the gate; brought back over the Jordan — Shimei forgiven, Mephibosheth unwashed, Barzillai fourscore years old; the ten parts in the king; Sheba's trumpet — every man to his tents, O Israel; Amasa at the great stone in Gibeon; and the wise woman of Abel."},
   ],
 }

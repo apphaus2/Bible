@@ -12,9 +12,9 @@ from genesis.ch07 import RED
 from sa2 import G
 
 v, sp = G.v, G.span
-def say(ref, frm=None, to=None): return ("say", v(ref, frm=frm, to=to))
-def gd(ref, frm=None, to=None): return ("god", v(ref, frm=frm, to=to))
-def cp(ref, frm=None, to=None): return ("cap", v(ref, frm=frm, to=to))
+def say(ref, frm=None, to=None, after=None): return ("say", v(ref, frm=frm, to=to, after=after))
+def gd(ref, frm=None, to=None, after=None): return ("god", v(ref, frm=frm, to=to, after=after))
+def cp(ref, frm=None, to=None, after=None): return ("cap", v(ref, frm=frm, to=to, after=after))
 def sg(ref, frm=None, to=None): return ("song", v(ref, frm=frm, to=to))
 def says(refs): return ("say", sp(refs))
 def gods(refs): return ("god", sp(refs))

@@ -143,6 +143,7 @@ There are two editions:
 | 2 Samuel | 7 · Absalom | 13–14 | title + 17 (pp. 65–81) | 72/72 verses full (13:11–14 words over the chamber and the shut door; 13:28–29 over the empty feast) | `volumes/2samuel/` |
 | 2 Samuel | 8 · The Mount of Olives | 15–16 | title + 15 (pp. 82–96) | 60/60 verses full (the digest's gate, Kidron and Olives panels; 16:22 words over a tent on the roof) | `volumes/2samuel/` |
 | 2 Samuel | 9 · O My Son Absalom | 17–18 | title + 17 (pp. 97–113) | 62/62 verses full (the digest's oak and heap; 17:23 and 18:14–15 words only) | `volumes/2samuel/` |
+| 2 Samuel | 10 · The King Returned | 19–20 | title + 16 (pp. 114–129) | 69/69 verses full (20:10–12 words over the empty highway; 20:22 over Abel's wall) | `volumes/2samuel/` |
 
 **Genesis through 1 Samuel (nine volumes) are complete.** Next: 2 Samuel. 1 Samuel is `tools/full/sa1/` (14 chapters, plan and
 restraint notes in `sa1/__init__.py`; the digest's two books lifted with `sa1.common.D("A3", 0)` / `D("B5", 2)`). It packs with

@@ -727,3 +727,93 @@ def two_runners(p, w, h, seed):
     o.append(mk.person(p, round(w * 0.24), round(b - h * 0.68), round(fit(b, h * 0.6) * 0.5, 3), body="#2A140C", cloth="#5A6A8A", kind="Tunic", sw=3, up=[(22, -158), (40, -170), (60, -176)]))
     o.append(S4.runner(p, w * 0.62, h * 0.78, fit(h * 0.78, h * 0.6), flip=True) + S4.runner(p, w * 0.9, h * 0.66, fit(h * 0.66, h * 0.56), flip=True, cloth="#F3EFE6", body="#2A140C"))
     return "".join(o)
+
+# ---- 2 Samuel 19–20 -----------------------------------------------------------------------------------------------------
+def gate_king(p, w, h, seed):
+    """The king sitting in the gate, and all the people coming before him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#F3D8A0"), S4.gatehouse(w * 0.3, b, w * 0.5, h * 0.8), ground(w, h, b, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(f'<rect x="{f(w * 0.3 - 30 * s)}" y="{f(b - 50 * s)}" width="{f(60 * s)}" height="{f(50 * s)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(old_king(p, w * 0.3, b - 40 * s, s * 0.9))
+    o.append(crowd_at(p, w, h, seed, w * 0.6, w * 0.98, h * 0.76, b, 9, s * 0.7, s * 0.95, flip=True))
+    return "".join(o)
+
+def ferry(p, w, h, seed):
+    """The ferry-boat over the Jordan bringing the king's household, the men of Judah on the bank, Shimei fallen down
+    before the king."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.36, seed, color="#6A7A5A", amp=14),
+         f'<rect x="-10" y="{f(h * 0.44)}" width="{f(w + 20)}" height="{f(h * 0.2)}" fill="#2C7DA8" stroke="#0D0D0F" stroke-width="2"></rect>', ground(w, h, h * 0.64, "#A89A6A", dy=0),
+         f'<path d="M{f(w * 0.2)} {f(h * 0.54)} L {f(w * 0.56)} {f(h * 0.54)} L {f(w * 0.52)} {f(h * 0.6)} L {f(w * 0.24)} {f(h * 0.6)} Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(5):
+        o.append(mk.person(p, round(w * (0.26 + i * 0.06)), round(h * 0.55), round(fit(h * 0.55, h * 0.42), 3), body="#2A140C", cloth=WAR[i % 4], sw=2))
+    s = fit(b, h * 0.36)
+    o.append(old_king(p, w * 0.72, b, s, flip=True))
+    o.append(N.prostrate(w * 0.42, b, s * 0.8, color="#6A5A3A", skin="#9A6A4A", flip=False))
+    return "".join(o)
+
+def judah_israel(p, w, h, seed):
+    """The men of Judah and the men of Israel face to face, their words fierce."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#C8603A"), ground(w, h, h * 0.6, "#A88A5A", dy=0)]
+    s = fit(b, h * 0.42)
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.42, h * 0.7, b, 10, s * 0.6, s))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.58, w * 0.98, h * 0.7, b, 10, s * 0.6, s, flip=True))
+    o.append(V.rays(w * 0.5, h * 0.66, 12, 8, w * 0.2, color="#FFF4C2", op=0.6))
+    return "".join(o)
+
+def sheba(p, w, h, seed):
+    """Sheba the son of Bichri blowing the trumpet on a hill: every man to his tents, O Israel."""
+    b = h * 0.6
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A3A5A", "#E8803A"), sun(w * 0.7, h * 0.5, 30, color="#FFB04A", op=0.4),
+         f'<path d="M{f(w * 0.2)} {f(h + 10)} C {f(w * 0.3)} {f(h * 0.6)} {f(w * 0.5)} {f(h * 0.58)} {f(w * 0.64)} {f(h * 0.62)} C {f(w * 0.8)} {f(h * 0.7)} {f(w * 0.9)} {f(h * 0.9)} {f(w + 10)} {f(h + 10)} Z" fill="#3A2A2A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    s = fit(b, h * 0.26)
+    o.append(J.trumpeter(p, w * 0.46, b, s, body="#2A140C") + J.blasts(w * 0.46 + 70 * s, b - 170 * s, s))
+    for i in range(6):
+        x = w * (0.04 + i * 0.06); y = h * (0.86 + (i % 2) * 0.06)
+        o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * 0.18), 3), body="#0B0814", cloth="#2A2030", kind="Tunic", sw=2, flip=True))
+    return "".join(o)
+
+def ward(w, h, seed):
+    """The house of ward: a shut house with barred lattices, a lamp in one window."""
+    o = [sky(w, h, "#3A3A5A", "#8A7A8A"), ground(w, h, h * 0.88, "#3A3440", dy=0),
+         f'<rect x="{f(w * 0.14)}" y="{f(h * 0.2)}" width="{f(w * 0.72)}" height="{f(h * 0.68)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.6"></rect>']
+    for i in range(4):
+        x = w * (0.2 + i * 0.16); y = h * 0.34
+        lit = i == 2
+        o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w * 0.08)}" height="{f(h * 0.14)}" fill="{"#FFC14D" if lit else "#1A1214"}" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 + "".join(f'<path d="M{f(x + k * w * 0.02)} {f(y)} L {f(x + k * w * 0.02)} {f(y + h * 0.14)}" stroke="#3A2A1A" stroke-width="2.4"></path>' for k in range(1, 4)))
+    o.append(f'<rect x="{f(w * 0.44)}" y="{f(h * 0.6)}" width="{f(w * 0.12)}" height="{f(h * 0.28)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    return "".join(o)
+
+def great_stone(p, w, h, seed):
+    """The great stone which is in Gibeon, and Amasa coming to meet Joab's men."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), ground(w, h, h * 0.66, "#A8906A", dy=0),
+         f'<path d="M{f(w * 0.36)} {f(b)} C {f(w * 0.34)} {f(h * 0.5)} {f(w * 0.44)} {f(h * 0.34)} {f(w * 0.52)} {f(h * 0.36)} C {f(w * 0.62)} {f(h * 0.38)} {f(w * 0.68)} {f(h * 0.6)} {f(w * 0.66)} {f(b)} Z" fill="#8A8478" stroke="#0D0D0F" stroke-width="2.6"></path>']
+    s = fit(b, h * 0.4)
+    o.append(captain(p, w * 0.24, b, s) + captain(p, w * 0.8, b, s, cloth="#3A5A4A", flip=True))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.16, h * 0.74, b, 5, s * 0.6, s * 0.85))
+    return "".join(o)
+
+def highway(w, h, seed):
+    """The highway, and a garment cast over something in the field beside it (20:10–12 told in words only)."""
+    o = [sky(w, h, "#5A4A5A", "#C88A6A"), hills(w, h, h * 0.44, seed, color="#5A4A4A", amp=12), ground(w, h, h * 0.54, "#8A7A5A", dy=0),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.46)} {f(h * 0.54)} L {f(w * 0.54)} {f(h * 0.54)} L {f(w * 0.7)} {f(h + 10)} Z" fill="#B8A88A" stroke="#0D0D0F" stroke-width="2"></path>',
+         f'<path d="M{f(w * 0.06)} {f(h * 0.86)} C {f(w * 0.1)} {f(h * 0.78)} {f(w * 0.2)} {f(h * 0.76)} {f(w * 0.26)} {f(h * 0.84)} L {f(w * 0.24)} {f(h * 0.88)} L {f(w * 0.08)} {f(h * 0.88)} Z" fill="#6A2A2A" stroke="#0D0D0F" stroke-width="2"></path>']
+    return "".join(o)
+
+def abel_siege(p, w, h, seed, battering=True):
+    """Abel of Beth-maacah besieged: a mound cast up against the wall, the people battering it; the wise woman on the wall."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), J.jericho(w * 0.4, w + 10, h * 0.16, h * 0.62, seed, towers=3, houses=True), ground(w, h, h * 0.62, "#B89A6A", dy=0),
+         f'<path d="M{f(w * 0.04)} {f(b)} L {f(w * 0.36)} {f(h * 0.6)} L {f(w * 0.46)} {f(h * 0.6)} L {f(w * 0.5)} {f(b)} Z" fill="#9A7A4A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    o.append(mk.person(p, round(w * 0.62), round(h * 0.16), round(fit(h * 0.16, h * 0.04), 3), body="#3A1E14", cloth="#6A4A6A", woman=True, hair="#1A1210", sw=2))
+    if battering:
+        s = fit(b, h * 0.3)
+        for i in range(5):
+            o.append(warrior(p, w * (0.14 + i * 0.06), b - i * h * 0.05, s * (1 - i * 0.08), WAR[i % 4]))
+    else:
+        o.append(J.trumpeter(p, w * 0.2, b, fit(b, h * 0.5), body="#3A1E14") + J.blasts(w * 0.2 + 70 * fit(b, h * 0.5), b - 170 * fit(b, h * 0.5), fit(b, h * 0.5)))
+    return "".join(o)
