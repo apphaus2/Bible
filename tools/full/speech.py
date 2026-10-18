@@ -45,7 +45,7 @@ def _say(text, s, side):
 def _song(text, s, color="#7A3BA8"):
     """A line of a song: a cream box with a coloured double rule down the left (as exo.kit.song)."""
     return (f'<div style="padding: 10px 14px 10px 20px; background: #FFF8E6; color: #0D0D0F; border: 2.5px solid #0D0D0F; '
-            f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: 'Archivo Narrow', sans-serif; font-weight: 700; '
+            f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
             f'font-size: {s}px; line-height: 1.18; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>')
 
 def _god(text, s):
