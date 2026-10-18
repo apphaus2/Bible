@@ -667,6 +667,69 @@
    "w": 760,
    "h": 1080,
    "title": "84 · Ed"
+  },
+  "JOS-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Choose You This Day"
+  },
+  "JOS-C10-D-P01-IAmOldAndWellStric.dc.html": {
+   "x": 840,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · I Am Old and Well Stricken in Years"
+  },
+  "JOS-C10-D-P02-IAmOldAndWellStric.dc.html": {
+   "x": 1680,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · I Am Old and Well Stricken in Years"
+  },
+  "JOS-C10-D-P03-TheWayOfAllTheEart.dc.html": {
+   "x": 2520,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · The Way of All the Earth"
+  },
+  "JOS-C10-D-P04-ThusSaithJehovah.dc.html": {
+   "x": 3360,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Thus Saith Jehovah"
+  },
+  "JOS-C10-D-P05-ThusSaithJehovah.dc.html": {
+   "x": 0,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Thus Saith Jehovah"
+  },
+  "JOS-C10-D-P06-ChooseYouThisDay.dc.html": {
+   "x": 840,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Choose You This Day"
+  },
+  "JOS-C10-D-P07-YeAreWitnesses.dc.html": {
+   "x": 1680,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Ye Are Witnesses"
+  },
+  "JOS-C10-D-P08-AHundredAndTenYear.dc.html": {
+   "x": 2520,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · A Hundred and Ten Years Old"
   }
  },
  "order": [
@@ -763,7 +826,16 @@
   "JOS-C09-E-P03-WhatTrespassIsThis.dc.html",
   "JOS-C09-E-P04-TheMightyOneGodJeh.dc.html",
   "JOS-C09-E-P05-TheMightyOneGodJeh.dc.html",
-  "JOS-C09-E-P06-Ed.dc.html"
+  "JOS-C09-E-P06-Ed.dc.html",
+  "JOS-C10-00-Title.dc.html",
+  "JOS-C10-D-P01-IAmOldAndWellStric.dc.html",
+  "JOS-C10-D-P02-IAmOldAndWellStric.dc.html",
+  "JOS-C10-D-P03-TheWayOfAllTheEart.dc.html",
+  "JOS-C10-D-P04-ThusSaithJehovah.dc.html",
+  "JOS-C10-D-P05-ThusSaithJehovah.dc.html",
+  "JOS-C10-D-P06-ChooseYouThisDay.dc.html",
+  "JOS-C10-D-P07-YeAreWitnesses.dc.html",
+  "JOS-C10-D-P08-AHundredAndTenYear.dc.html"
  ],
  "notes": {
   "Main": {
@@ -835,6 +907,13 @@
    "text": "Chapter 9 · The Cities of Refuge (Joshua 20–22)",
    "x": 0,
    "y": 29700
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Choose You This Day (Joshua 23–24)",
+   "x": 0,
+   "y": 33800
   }
  },
  "designSystems": [],

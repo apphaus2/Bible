@@ -38,5 +38,7 @@ META = {
      "blurb": "The tent of meeting set up at Shiloh; how long are ye slack to go in and possess the land? Three men of each tribe describe it into seven portions in a book, and Joshua casts lots before Jehovah: Benjamin, Simeon, Zebulun, Issachar, Asher, Naphtali and Dan; and Timnath-serah for Joshua."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Cities of Refuge", "range": "Joshua 20–22", "bible_chapters": [20, 21, 22],
      "blurb": "Six cities of refuge for the manslayer; forty and eight cities with their suburbs for the Levites; there failed not aught of any good thing which Jehovah had spoken. Then the two and a half tribes go home over the Jordan and build a great altar by it, and Phinehas comes to ask: what trespass is this? — the altar Ed, a witness that Jehovah is God."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Choose You This Day", "range": "Joshua 23–24", "bible_chapters": [23, 24],
+     "blurb": "Joshua old and well stricken in years: one man of you shall chase a thousand. At Shechem all Israel hears what Jehovah has done since the fathers dwelt beyond the River; choose you this day whom ye will serve — as for me and my house, we will serve Jehovah. The great stone under the oak, and Joshua dies at a hundred and ten."},
   ],
 }

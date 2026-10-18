@@ -608,12 +608,12 @@ def surveyors(p, w, h, seed):
                  + label(w * x0 + 8, h * y0 + 16, f"PORTION {i + 1}", "#FFD23F", 8, "start"))
     return "".join(o)
 
-def timnath(p, w, h, seed):
+def timnath(p, w, h, seed, figure=True):
     """Timnath-serah in the hill-country of Ephraim: Joshua built the city, and dwelt therein."""
     b = h * 0.92
     o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.2, h * 0.2, 18, color="#FF8A3D", op=0.35),
          hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=18), J.city_hill(w * 0.62, h * 0.7, w * 0.3, h * 0.34, seed), ground(w, h, h * 0.7, "#B89A6A", dy=0)]
-    o.append(joshua_fig(p, w * 0.2, b, fit(b, h * 0.4)))
+    if figure: o.append(joshua_fig(p, w * 0.2, b, fit(b, h * 0.4)))
     return "".join(o)
 
 # ---- Joshua 20–22 -------------------------------------------------------------------------------------------------------
@@ -655,4 +655,54 @@ def altar_ed(p, w, h, seed, people=True):
             o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(aw / 7 - 2)}" height="{f(ah / 6 - 2)}" rx="4" fill="{r.choice(["#8A7A6A", "#A89A86", "#7A6A5A"])}" stroke="#0D0D0F" stroke-width="1.6"></rect>')
     if people:
         o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.3, h * 0.66, b, 10, fit(h * 0.66, h * 0.5) * 0.8, fit(b, h * 0.56)))
+    return "".join(o)
+
+# ---- Joshua 23–24 -------------------------------------------------------------------------------------------------------
+JOSHUA_OLD_C = "#B5421E"
+def joshua_old_fig(p, x, y, s, flip=False, up=None):
+    """Joshua at a hundred and ten: white hair and beard under the rust-red headcloth."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=JOSHUA_OLD_C, sw=3, flip=flip, up=up, extra=A.headcloth(JOSHUA_OLD_C) + A.WHITE_BEARD)
+
+def shechem(p, w, h, seed, stone=True, people=True, joshua=True):
+    """Shechem: the oak by the sanctuary of Jehovah, the great stone set up under it, all the tribes gathered."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.86, h * 0.16, 18, color="#FF8A3D", op=0.3),
+         hills(w, h, h * 0.4, seed, color="#7A9A5A", amp=18), ground(w, h, h * 0.56, "#B89A6A", dy=0)]
+    o.append(J.oak(w * 0.2, h * 0.7, min(1.4, h / 300), seed))
+    if stone:
+        o.append(f'<path d="M{f(w * 0.3)} {f(h * 0.72)} L {f(w * 0.31)} {f(h * 0.44)} C {f(w * 0.33)} {f(h * 0.38)} {f(w * 0.39)} {f(h * 0.38)} {f(w * 0.41)} {f(h * 0.44)} L {f(w * 0.42)} {f(h * 0.72)} Z" '
+                 f'fill="#A89A86" stroke="#0D0D0F" stroke-width="2.4"></path><path d="M{f(w * 0.33)} {f(h * 0.5)} L {f(w * 0.36)} {f(h * 0.56)}" stroke="#7A6A5A" stroke-width="2"></path>')
+    s = fit(b, h * 0.42)
+    if joshua: o.append(joshua_old_fig(p, w * 0.5, b, s, up=[(-22, -158), (-6, -196), (8, -228)]))
+    if people: o.append(crowd_at(p, w, h, seed, w * 0.58, w + 10, h * 0.62, b, 24, fit(h * 0.62, h * 0.48) * 0.8, s * 0.94, flip=True))
+    return "".join(o)
+
+def hornet(w, h, seed):
+    """The hornet sent before you (Joshua 24:12): a swarm over the hills, as a technical figure."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8B880"></rect>', hills(w, h, h * 0.6, seed, color="#9A6A3A", amp=16)]
+    for _ in range(60):
+        x, y = r.uniform(0, w), r.uniform(h * 0.1, h * 0.7); s = r.uniform(0.6, 1.4)
+        o.append(f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})"><ellipse cx="0" cy="0" rx="7" ry="3.4" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.2"></ellipse>'
+                 '<path d="M-2 -3 L -2 3 M2 -3 L 2 3" stroke="#0D0D0F" stroke-width="1.4"></path><ellipse cx="-1" cy="-5" rx="4" ry="2" fill="#F3EFE6" opacity="0.8"></ellipse></g>')
+    return "".join(o)
+
+def vineyards(w, h, seed):
+    """A land whereon thou hadst not labored: cities which ye built not, vineyards and oliveyards which ye planted not."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#8FD0E2"></rect>', sun(w * 0.84, h * 0.16, 18, op=0.3),
+         J.city_hill(w * 0.5, h * 0.5, w * 0.24, h * 0.24, seed), ground(w, h, h * 0.5, "#9CCB5E", dy=0)]
+    r = random.Random(seed)
+    for k in range(3):
+        for i in range(9):
+            x = w * (0.05 + i * 0.11 + (k % 2) * 0.05); y = h * (0.62 + k * 0.12)
+            if k == 1: o.append(f'<circle cx="{f(x)}" cy="{f(y - 16)}" r="14" fill="#6A8A4A" stroke="#0D0D0F" stroke-width="1.6"></circle><rect x="{f(x - 2)}" y="{f(y - 4)}" width="4" height="12" fill="#5A3A22"></rect>')
+            else: o.append(f'<path d="M{f(x)} {f(y)} L {f(x)} {f(y - 20)}" stroke="#5A3A22" stroke-width="3"></path><circle cx="{f(x - 6)}" cy="{f(y - 22)}" r="7" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.2"></circle><circle cx="{f(x + 5)}" cy="{f(y - 16)}" r="4" fill="#6A2A7A"></circle>')
+    return "".join(o)
+
+def three_graves(w, h, seed):
+    """Timnath-serah, Shechem and the hill of Phinehas at evening: three hills in the hill-country of Ephraim (no grave drawn)."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A4A"></rect>', sun(w * 0.5, h * 0.62, 34, color="#FF8A3D", op=0.4),
+         hills(w, h, h * 0.56, seed, color="#4A3050", amp=36, step=110), hills(w, h, h * 0.7, seed + 1, color="#2A1E30", amp=22)]
+    for nm, x in (("TIMNATH-SERAH", 0.18), ("SHECHEM", 0.5), ("THE HILL OF PHINEHAS", 0.82)):
+        o.append(label(w * x, h * 0.72, nm, "#F3D8A0", 9))
     return "".join(o)

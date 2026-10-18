@@ -107,8 +107,16 @@ There are two editions:
 | Joshua | 7 · The Lot of Judah | 15–17 | title + 8 (pp. 59–66) | 91/91 verses full (borders and cities as roll cells: `rolls.verse_cells`) | `volumes/joshua/` |
 | Joshua | 8 · The Lots of the Seven Tribes | 18–19 | title + 7 (pp. 67–73) | 79/79 verses full (the seven lots as roll cells) | `volumes/joshua/` |
 | Joshua | 9 · The Cities of Refuge | 20–22 | title + 11 (pp. 74–84) | 88/88 verses full (the Levites' cities as roll cells) | `volumes/joshua/` |
+| Joshua | 10 · Choose You This Day | 23–24 | title + 8 (pp. 85–92) | 49/49 verses full (Joshua's death caption only, no grave drawn) | `volumes/joshua/` |
 
-**Genesis, Exodus, Leviticus, Numbers and Deuteronomy are complete.** Next: Joshua. Deuteronomy is `tools/full/deu/` (15
+**Genesis, Exodus, Leviticus, Numbers, Deuteronomy and Joshua are complete.** Next: Judges. Joshua is `tools/full/jos/` (10
+chapters, plan in `jos/__init__.py`): story chapters laid out by `discourse.pack` with `jos.common` line helpers (`face()`,
+`drawn()`, `over()` for the digest's Jericho panels lifted with `reuse.fill`), battles as technical maps (`jos.art.ai_plan`,
+`campaign`, `land_taken`) set under the words with `jos.art.below()`, and the lists of 12–21 as roll pages (`rolls.py`:
+`roll_pages` packs cells, `verse_cells` groups a run of verses, two columns for the thirty and one kings). Restraint in Joshua:
+6:21, 8:21–29, 10:24–28 and 11:11 are words over smoke, dust, a sealed cave or a heap; 7:25 over the heap of Achor.
+`build_volume.py` also fails if any text cut from the ASV is on no page (it caught `discourse.pack` dropping pages).
+Deuteronomy is `tools/full/deu/` (15
 chapters, plan in `deu/__init__.py`): Moses' discourses as speech panels (`speech.orate`, packed by `discourse.pack`,
 `deu.common.auto()` for long runs of his words), the statutes of 12–26 as spoken law cells (`deu.common.law_chapter`),
 the songs as song boxes (`deu.common.sing`), the blessing of the tribes as `clan()` cells. Numbers is `tools/full/num/`
