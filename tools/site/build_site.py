@@ -107,15 +107,30 @@ ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of e
 for f in sorted((pathlib.Path(__file__).resolve().parents[2] / "ref" / "asv").glob("[0-9][0-9]-*.usfm")):
     m = re.search(r"^\\h (.+?)\s*$", f.read_text(encoding="utf-8"), re.M)
     if m: ASV_CODES[m.group(1)] = re.match(r"\d\d-(\w{3})", f.name).group(1)
-def asv_href(up, ref=""):
-    """Link to the ASV PDF, opened at the chapter a ref like "Genesis 24:1–25:18" or "1 Samuel 1 – 3" starts in."""
+ASV_BOOKS = json.loads((out / "asv" / "index.json").read_text(encoding="utf-8")) if (out / "asv" / "index.json").exists() else {}
+def asv_where(ref):
+    """(book code, chapter) that a ref like "Genesis 24:1–25:18" or "1 Samuel 1 – 3" starts in, or None."""
     for name in sorted(ASV_CODES, key=len, reverse=True):
         m = re.match(re.escape(name) + r" (\d+)", ref)
-        if m: return f"{up}{ASV_PDF}#nameddest={ASV_CODES[name]}.{m.group(1)}"
+        if m: return ASV_CODES[name], m.group(1)
+def asv_href(up, ref=""):
+    """Link to the ASV text at the chapter a ref starts in: the book's own PDF (asv/GEN.pdf#page=N, small files like the
+    HistoryX reader's) when the split is on the site, else the whole PDF at its named destination."""
+    w = asv_where(ref)
+    if w and w[0] in ASV_BOOKS:
+        b = ASV_BOOKS[w[0]]; pg = b["chapters"].get(w[1]) or next(iter(b["chapters"].values()))
+        return f"{up}{b['file']}#page={pg[0]}"
+    if w: return f"{up}{ASV_PDF}#nameddest={w[0]}.{w[1]}"
     return up + ASV_PDF
+def asv_button(up, ref=""):
+    """The reader's top-right link to the text of the page (📖 p. N: the page of the ASV PDF where its chapter starts)."""
+    w = asv_where(ref)
+    if not w or w[0] not in ASV_BOOKS: return ""
+    b = ASV_BOOKS[w[0]]; pg = b["chapters"].get(w[1]) or next(iter(b["chapters"].values()))
+    return f'<a class="btn asv" href="{asv_href(up, ref)}" title="{esc(b["title"])} {w[1]} in the ASV (PDF)">📖 p. {pg[1]}</a>'
 def asv_credit(up, ref=""):
     """The "ASV" credit of every footer, linked to the text when the PDF is on the site."""
-    if not HAS_PDF: return "<span>ASV</span>"
+    if not HAS_PDF and not ASV_BOOKS: return "<span>ASV</span>"
     return f'<a href="{asv_href(up, ref)}" title="Read {esc(ref) + " " if ref else ""}in the ASV (PDF)">ASV</a>'
 
 def slug(t):
@@ -204,7 +219,7 @@ for ed, chain in FLAT.items():
 </head>
 <body class="reader">
 {bar(crumbs0 + [f'<a href="index.html">{L}</a>', f'<span aria-current="page">{esc(p["num"])}</span>'],
-     f'<div class="pager">{pn}{nn}</div>')}
+     f'<div class="pager">{asv_button("../../", p["ref"])}{pn}{nn}</div>')}
 <main class="stage" id="stage"><h1 class="sr">{esc(p['heading'])} — {esc(p['ref'])}</h1><div class="sheet" id="sheet">{p['body']}</div></main>
 <footer class="foot"><span>{esc(p['ref'])} · {esc(p['heading'])}</span>{asv_credit("../../", p['ref'])}</footer>
 <script src="../../assets/site.js"></script>
@@ -304,6 +319,7 @@ vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
 </html>
 ''')
 if HAS_PDF: manifest["text"] = {"title": "The Holy Bible · ASV", "url": ASV_PDF, "chapter_url": ASV_PDF + "#nameddest=<BOOK>.<chapter>"}
+if ASV_BOOKS: manifest.setdefault("text", {})["books"] = {c: {"title": b["title"], "url": b["file"]} for c, b in ASV_BOOKS.items()}
 (out / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
 (out / ".nojekyll").write_text("")
 print("built", sum(len(b["pages"]) for e in FLAT.values() for b in e), "pages")

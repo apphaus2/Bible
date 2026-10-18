@@ -684,6 +684,11 @@ One-time setting: repo Settings › Pages › Source: **GitHub Actions**. Runs: 
   one-finger flick (a quarter of the screen, at least 90 px, mostly sideways, under 0.6 s). A second finger (pinch)
   cancels it and blocks swipes for 0.6 s; nothing turns while the page is zoomed (`visualViewport.scale` > 1) or if the
   viewport panned during the gesture. Keep these rules if the reader changes; phones zoom to read the captions.
+- `asv/GEN.pdf` …: the ASV split into one small PDF per book (66 files, the largest about 540 KB), like the HistoryX reader's
+  book: every reader page has a top-right "📖 p. N" button that opens its book's PDF at the page where the page's chapter starts
+  (`asv/2SA.pdf#page=18`; N is the printed page of the whole Bible). `asv/index.json` (chapter → page in the book file and in
+  the whole PDF) is written by `asv_pdf.py` (`--split-only` redoes it from an existing `bible-asv.pdf`); the footer "ASV" credit
+  opens the same place.
 - `bible-asv.pdf`: the whole ASV text (see Book export). The workflow builds it with `tools/book/asv_pdf.py` and caches
   it (key: `ref/asv`, `asv_pdf.py`, `render.js`); `rebuild_site.py` copies `_book/bible-asv.pdf` in when it exists, and
   only then does `build_site.py` link it: a "Whole Bible · PDF" button and a "The Text" section on the home page, a

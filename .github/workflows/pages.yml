@@ -52,11 +52,15 @@ jobs:
       - name: Restore the ASV PDF
         uses: actions/cache@v4
         with:
-          path: _book/bible-asv.pdf
+          path: |
+            _book/bible-asv.pdf
+            _book/asv
           key: asv-pdf-${{ hashFiles('ref/asv/*.usfm', 'tools/book/asv_pdf.py', 'tools/book/render.js') }}
 
-      - name: Build the ASV PDF (only when the text or its script changed)
-        run: test -f _book/bible-asv.pdf || python3 tools/book/asv_pdf.py
+      - name: Build the ASV PDF and its per-book PDFs (only when the text or its script changed)
+        run: |
+          test -f _book/bible-asv.pdf || python3 tools/book/asv_pdf.py
+          test -f _book/asv/index.json || python3 tools/book/asv_pdf.py --split-only
 
       - name: Build the site
         run: python3 tools/site/rebuild_site.py --thumbs --out _site

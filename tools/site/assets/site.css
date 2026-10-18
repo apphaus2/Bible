@@ -11,6 +11,8 @@ a{color:inherit}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--paper);text-decoration:none;font-weight:600;letter-spacing:.12em}
 .btn:hover{background:var(--paper);color:var(--ink)}
 .btn.off{opacity:.3}
+.btn.asv{border-color:#FFD23F;color:#FFD23F;letter-spacing:.06em}
+.btn.asv:hover{background:#FFD23F;color:var(--ink)}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:18px 16px 28px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 /* reader */
 body.reader{background:var(--night)}

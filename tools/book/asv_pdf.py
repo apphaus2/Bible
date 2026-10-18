@@ -10,6 +10,12 @@ chapter, and the PDF has bookmarks for the two testaments, every book and every 
 Named destinations: every chapter is a link target, so a URL can open the PDF at it —
 bible-asv.pdf#nameddest=GEN.24 (Chrome, Edge, Firefox). Books are #nameddest=GEN, testaments #nameddest=OT / NT.
 
+Book PDFs: the whole Bible is also split into one small PDF per book, _book/asv/GEN.pdf …, with chapter bookmarks, and
+_book/asv/index.json maps every chapter to its page in that file and in the whole PDF ({"GEN": {"title": "Genesis",
+"file": "asv/GEN.pdf", "chapters": {"24": [page in GEN.pdf, page in bible-asv.pdf]}}}), so the website can link each
+manga page to asv/GEN.pdf#page=N, the way the HistoryX reader links its book. --split-only redoes the split from an
+existing _book/bible-asv.pdf.
+
 Text: the USFM with Strong's numbers stripped; the translators' supplied words (\\add) in italics, as the printed
 edition sets them; psalm titles, the BOOK I–V divisions, the acrostic letters of Psalm 119 and "[Selah" kept; the 16
 textual footnotes (all in the New Testament) set at the end of their chapter. The front matter and preface are left out
@@ -310,7 +316,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="_book"); ap.add_argument("--books", help="comma-separated book codes, for proofs")
     ap.add_argument("--html-only", action="store_true")
+    ap.add_argument("--split-only", action="store_true", help="only split an existing bible-asv.pdf into book PDFs")
     a = ap.parse_args()
+    if a.split_only:
+        split_books((ROOT / a.out).resolve()); return
     want = set(a.books.split(",")) if a.books else None
     out = (ROOT / a.out).resolve(); out.mkdir(parents=True, exist_ok=True)
     books = []
@@ -329,6 +338,7 @@ def main():
     subprocess.run(["node", str(HERE / "render.js"), "text", str(src), str(raw)], check=True)
     bookmark(raw, pdf, books)
     print(f"  {pdf.relative_to(ROOT)}  ({pdf.stat().st_size // 1024} KB)")
+    split_books(out)
 
 def bookmark(raw, pdf, books):
     """Bookmarks (testament › book › chapter) and document info, found through the PDF's own named destinations."""
@@ -351,6 +361,36 @@ def bookmark(raw, pdf, books):
                     "/Author": "Bible Manga", "/Keywords": "Bible, ASV, public domain"})
     w.page_mode = "/UseOutlines"
     with open(pdf, "wb") as f: w.write(f)
+
+def split_books(out):
+    """Split bible-asv.pdf into one PDF per book (asv/<CODE>.pdf, chapter bookmarks) and write asv/index.json."""
+    from pypdf import PdfReader, PdfWriter
+    reader = PdfReader(out / OUT_NAME)
+    page_of = {name.lstrip("/"): reader.get_destination_page_number(d) for name, d in reader.named_destinations.items()}
+    order = [code for code, _ in book_files() if code in page_of]
+    titles = {}
+    for code, path in book_files():
+        m = re.search(r"^\\h (.+?)\s*$", path.read_text(encoding="utf-8"), re.M)
+        titles[code] = m.group(1) if m else code
+    d = out / "asv"; d.mkdir(exist_ok=True)
+    index, total = {}, 0
+    for i, code in enumerate(order):
+        first = page_of[code]
+        nxt = [page_of[c] for c in order[i + 1:]] + [page_of.get("NT", 10 ** 9) if code == "MAL" else 10 ** 9] + [len(reader.pages)]
+        last = min(p for p in nxt if p > first) - 1
+        w = PdfWriter()
+        for k in range(first, last + 1): w.add_page(reader.pages[k])
+        chs = sorted(((int(n.split(".")[1]), pg) for n, pg in page_of.items() if n.startswith(code + ".") and n.split(".")[1].isdigit()))
+        for n, pg in chs:
+            w.add_outline_item(f"{titles[code]} {n}", pg - first)
+        w.add_metadata({"/Title": f"{titles[code]} · ASV", "/Author": "Bible Manga"})
+        w.page_mode = "/UseOutlines"
+        with open(d / f"{code}.pdf", "wb") as f: w.write(f)
+        index[code] = {"title": titles[code], "file": f"asv/{code}.pdf", "chapters": {str(n): [pg - first + 1, pg + 1] for n, pg in chs} or {"1": [1, first + 1]}}
+        total += (d / f"{code}.pdf").stat().st_size
+    (d / "index.json").write_text(json.dumps(index, separators=(",", ":")), encoding="utf-8")
+    big = max((d / f"{c}.pdf").stat().st_size for c in order)
+    print(f"  {len(order)} book PDFs in {d.relative_to(ROOT)} ({total // 1024} KB, largest {big // 1024} KB)")
 
 if __name__ == "__main__":
     main()

@@ -4,7 +4,7 @@ Usage (from the repo root):  python3 tools/site/rebuild_site.py [--thumbs] [--ou
 
 - Full edition: every volumes/<id>/ that has a volume.json (pages/ + canvas.json) is passed straight through.
 - Digest edition: each digest/<series>/ is flattened (its book-*/ pages + the series canvas.json) into a temp folder.
-- The ASV text: _book/bible-asv.pdf (tools/book/asv_pdf.py), if it has been built, is copied to the site root and
+- The ASV text: _book/bible-asv.pdf and the per-book PDFs in _book/asv/ (tools/book/asv_pdf.py), if built, are copied to the site root and
   linked from the home page, every chapter page and every page's "ASV" credit.
 The output folder (default _site/, which is git-ignored) is cleared except for thumbs/ (a cache), then
 tools/site/build_site.py writes the pages and tools/site/assets/* is copied in. With --thumbs, any thumbnail
@@ -34,6 +34,8 @@ def main():
         shutil.rmtree(d) if d.is_dir() else d.unlink()
     pdf = ROOT / "_book" / "bible-asv.pdf"                 # the ASV text (tools/book/asv_pdf.py); the site links it if present
     if pdf.exists(): shutil.copy(pdf, out / pdf.name)
+    if (ROOT / "_book" / "asv" / "index.json").exists():       # one PDF per book (asv_pdf.py splits them): the reader links these
+        shutil.copytree(ROOT / "_book" / "asv", out / "asv")
     else: print("no _book/bible-asv.pdf: the site is built without the ASV text links (run tools/book/asv_pdf.py)")
     subprocess.run([sys.executable, str(SITE / "build_site.py"), str(out), *args], check=True)
     (out / "assets").mkdir(exist_ok=True)
