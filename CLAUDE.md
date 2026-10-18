@@ -122,6 +122,7 @@ There are two editions:
 | Ruth | 2 · The Near Kinsman | 3–4 | title + 9 (pp. 11–19) | 40/40 verses full (the generations of Perez as a roll page) | `volumes/ruth/` |
 | 1 Samuel | 1 · Hannah | 1–2 | cover + title + 11 (pp. 1–11) | 64/64 verses full (Hannah's song in song boxes) | `volumes/1samuel/` |
 | 1 Samuel | 2 · Speak, Jehovah | 3–5 | title + 11 (pp. 12–22) | 55/55 verses full (Eli's death as the empty gate; the ark's travels as a map) | `volumes/1samuel/` |
+| 1 Samuel | 3 · Give Us a King | 6–8 | title + 11 (pp. 23–33) | 60/60 verses full (the digest's kine; 6:19 words only) | `volumes/1samuel/` |
 
 **Genesis through Ruth (eight volumes) are complete.** Next: 1 Samuel. Ruth is `tools/full/rut/` (2 chapters, the digest's
 Ruth book lifted with `rut.common.D(page, i, align)`; `reuse.fill(art, "xMidYMax")` keeps the figures when a half-width

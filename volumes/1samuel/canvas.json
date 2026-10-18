@@ -184,6 +184,90 @@
    "w": 760,
    "h": 1080,
    "title": "22 · Ashdod, Gath and Ekron"
+  },
+  "1SA-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Give Us a King"
+  },
+  "1SA-C03-D-P01-SendItNotEmpty.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Send It Not Empty"
+  },
+  "1SA-C03-D-P02-SendItNotEmpty.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Send It Not Empty"
+  },
+  "1SA-C03-D-P03-TheKineTookTheStra.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · The Kine Took the Straight Way"
+  },
+  "1SA-C03-D-P04-TheKineTookTheStra.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Kine Took the Straight Way"
+  },
+  "1SA-C03-D-P05-HithertoHathJehova.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Hitherto Hath Jehovah Helped Us"
+  },
+  "1SA-C03-D-P06-HithertoHathJehova.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Hitherto Hath Jehovah Helped Us"
+  },
+  "1SA-C03-D-P07-HithertoHathJehova.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Hitherto Hath Jehovah Helped Us"
+  },
+  "1SA-C03-D-P08-GiveUsAKing.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Give Us a King"
+  },
+  "1SA-C03-D-P09-GiveUsAKing.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Give Us a King"
+  },
+  "1SA-C03-D-P10-TheMannerOfTheKing.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Manner of the King"
+  },
+  "1SA-C03-D-P11-TheMannerOfTheKing.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Manner of the King"
   }
  },
  "order": [
@@ -211,7 +295,19 @@
   "1SA-C02-D-P08-Ichabod.dc.html",
   "1SA-C02-D-P09-TheHouseOfDagon.dc.html",
   "1SA-C02-D-P10-AshdodGathAndEkron.dc.html",
-  "1SA-C02-D-P11-AshdodGathAndEkron.dc.html"
+  "1SA-C02-D-P11-AshdodGathAndEkron.dc.html",
+  "1SA-C03-00-Title.dc.html",
+  "1SA-C03-D-P01-SendItNotEmpty.dc.html",
+  "1SA-C03-D-P02-SendItNotEmpty.dc.html",
+  "1SA-C03-D-P03-TheKineTookTheStra.dc.html",
+  "1SA-C03-D-P04-TheKineTookTheStra.dc.html",
+  "1SA-C03-D-P05-HithertoHathJehova.dc.html",
+  "1SA-C03-D-P06-HithertoHathJehova.dc.html",
+  "1SA-C03-D-P07-HithertoHathJehova.dc.html",
+  "1SA-C03-D-P08-GiveUsAKing.dc.html",
+  "1SA-C03-D-P09-GiveUsAKing.dc.html",
+  "1SA-C03-D-P10-TheMannerOfTheKing.dc.html",
+  "1SA-C03-D-P11-TheMannerOfTheKing.dc.html"
  ],
  "notes": {
   "Main": {
@@ -234,6 +330,13 @@
    "text": "Chapter 2 · Speak, Jehovah (1 Samuel 3–5)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Give Us a King (1 Samuel 6–8)",
+   "x": 0,
+   "y": 9900
   }
  },
  "designSystems": [],

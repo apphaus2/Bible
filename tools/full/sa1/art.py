@@ -58,3 +58,26 @@ def tumors(w, h, seed):
         o.append(f'<path d="M{f(x)} {f(y)} L {f(x - 6)} {f(y - 30)} M{f(x)} {f(y)} L {f(x + 6)} {f(y - 30)}" stroke="#12090A" stroke-width="3"></path><circle cx="{f(x)}" cy="{f(y + 6)}" r="6" fill="#12090A"></circle>')
     o.append(V.rays(w * 0.5, h * 0.5, 24, 10, max(w, h), color="#D7261E", op=0.12))
     return "".join(o)
+
+def golden(w, h, seed):
+    """The trespass-offering: five golden tumors and five golden mice in a coffer."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2E"></rect>', V.rays(w * 0.5, h * 0.5, 30, 20, max(w, h), color="#FFD23F", op=0.16),
+         ground(w, h, h * 0.84, "#3A2A2A", dy=0)]
+    cx, cy = w * 0.5, h * 0.74
+    o.append(f'<rect x="{f(cx - w * 0.3)}" y="{f(cy - h * 0.04)}" width="{f(w * 0.6)}" height="{f(h * 0.14)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    for i in range(5):
+        x = cx - w * 0.24 + i * w * 0.12
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(cy - h * 0.12)}" rx="{f(w * 0.035)}" ry="{f(h * 0.05)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+        o.append(f'<g transform="translate({f(x)} {f(cy - h * 0.02)})"><ellipse cx="0" cy="0" rx="14" ry="8" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></ellipse>'
+                 '<circle cx="12" cy="-4" r="5" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.4"></circle><path d="M-14 0 C -24 4 -28 -6 -34 -2" fill="none" stroke="#E8B830" stroke-width="2"></path></g>')
+    return "".join(o)
+
+def eben_ezer(p, w, h, seed):
+    """Samuel set a stone between Mizpah and Shen and called it Eben-ezer: a standing stone on the hill, thunder far off."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A6E8A"></rect>',
+         hills(w, h, h * 0.5, seed, color="#4A5A3A", amp=16), ground(w, h, h * 0.62, "#8A7A5A", dy=0)]
+    o.append(f'<path d="M{f(w * 0.46)} {f(h * 0.66)} L {f(w * 0.47)} {f(h * 0.3)} C {f(w * 0.5)} {f(h * 0.24)} {f(w * 0.56)} {f(h * 0.24)} {f(w * 0.58)} {f(h * 0.3)} L {f(w * 0.6)} {f(h * 0.66)} Z" fill="#A89A86" stroke="#0D0D0F" stroke-width="2.6"></path>')
+    s = fit(b, h * 0.4)
+    o.append(mk.person(p, round(w * 0.3), round(b), round(s, 3), body=SKIN, cloth="#1E2A5A", sw=3, up=[(-22, -158), (-6, -196), (8, -228)], extra=A.headcloth("#1E2A5A") + A.WHITE_BEARD))
+    return "".join(o)

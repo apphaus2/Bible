@@ -26,6 +26,16 @@
    "prefixes": [
     "1SA-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "Give Us a King",
+   "range": "1 Samuel 6–8",
+   "blurb": "The ark sent home on a new cart with golden tumors and mice, two milch kine lowing on the straight way to Beth-shemesh; Mizpah, the great thunder, and the stone Eben-ezer: hitherto hath Jehovah helped us. Then the elders at Ramah: make us a king to judge us like all the nations.",
+   "prefixes": [
+    "1SA-C03-"
+   ]
   }
  ]
 }
