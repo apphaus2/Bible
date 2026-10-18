@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 491 verses — 491 full, 0 partial, 0 omitted.
+**So far:** 565 verses — 565 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Chariot of Fire (2 Kings 1–2)
 
@@ -55,5 +55,11 @@ Every verse is on the page in full.
 ## Chapter 9 · Carried Away into Assyria (2 Kings 17)
 
 41 verses: 41 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 10 · Hezekiah (2 Kings 18–19)
+
+74 verses: 74 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

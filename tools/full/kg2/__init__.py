@@ -38,5 +38,7 @@ META = {
      "blurb": "Azariah the leper king in his separate house; Zechariah, Shallum, Menahem, Pekahiah and Pekah, king after king in Samaria; Pul and Tiglath-pileser of Assyria; then Ahaz — I am thy servant and thy son; the altar after the fashion of the altar at Damascus, and the sea set down from off the brazen oxen."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Carried Away into Assyria", "range": "2 Kings 17", "bible_chapters": [17],
      "blurb": "Hoshea and the three years' siege of Samaria; Israel carried away into Assyria, to Halah and the Habor and the cities of the Medes, because they had sinned — the high places, the two calves, the host of heaven; strangers brought into the cities of Samaria, the lions, and every nation making gods of its own."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Hezekiah", "range": "2 Kings 18–19", "bible_chapters": [18, 19],
+     "blurb": "Hezekiah who trusted in Jehovah breaks the brazen serpent; Sennacherib at Lachish; Rabshakeh at the conduit of the upper pool — what confidence is this wherein thou trustest?; the men on the wall answer him not a word; the letter spread before Jehovah; the virgin daughter of Zion hath laughed thee to scorn; and that night the camp of the Assyrians."},
   ],
 }

@@ -688,3 +688,49 @@ def strange_gods(w, h, seed):
                  f'<circle cx="0" cy="-112" r="14" fill="{r.choice(["#B5652E", "#C8A030"])}" stroke="#0D0D0F" stroke-width="2"></circle></g>')
         o.append(E.blaze(x, h * 0.86, w * 0.03, h * 0.05, seed + i, n=3))
     return "".join(o)
+
+# ---- 2 Kings 18–19 ------------------------------------------------------------------------------------------------------
+ASSY_C = "#8A5A1A"
+def brazen_serpent(w, h, seed):
+    """The brazen serpent that Moses had made, broken in pieces; the Asherah cut down."""
+    o = [sky(w, h, "#5A3A3A", "#E8A06A"), ground(w, h, h * 0.8, "#5A4A3A", dy=0), N.brass_serpent(w * 0.4, h * 0.2, h * 0.6, "bz%d" % seed)]
+    o.append(f'<path d="M{f(w * 0.3)} {f(h * 0.3)} L {f(w * 0.5)} {f(h * 0.5)}" stroke="#D7261E" stroke-width="5"></path>')
+    o.append(f'<path d="M{f(w * 0.7)} {f(h * 0.82)} L {f(w * 0.9)} {f(h * 0.76)}" stroke="#5A3A22" stroke-width="16" stroke-linecap="round"></path>')
+    return "".join(o)
+
+def upper_pool(p, w, h, seed, wall_people=True):
+    """Rabshakeh and the great army by the conduit of the upper pool, the people of Jerusalem on the wall above."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), J.jericho(w * 0.5, w + 10, h * 0.2, h * 0.62, seed, towers=3, houses=True), ground(w, h, h * 0.62, "#A89A6A", dy=0),
+         f'<ellipse cx="{f(w * 0.36)}" cy="{f(h * 0.7)}" rx="{f(w * 0.14)}" ry="{f(h * 0.04)}" fill="#2C9DB8" stroke="#0D0D0F" stroke-width="2"></ellipse>']
+    if wall_people:
+        for i in range(8):
+            o.append(f'<circle cx="{f(w * (0.54 + i * 0.055))}" cy="{f(h * 0.18)}" r="{f(h * 0.018)}" fill="#3A1E14" stroke="#0D0D0F" stroke-width="1"></circle>')
+    s = fit(b, h * 0.36)
+    o.append(captain(p, w * 0.24, b, s, cloth=ASSY_C, flip=True, up=[(22, -158), (40, -200), (50, -230)]))
+    for i in range(7):
+        o.append(warrior(p, w * (0.02 + i * 0.04), b - (i % 2) * h * 0.04, s * 0.7, ASSY_C))
+    return "".join(o)
+
+def letter_spread(p, w, h, seed):
+    """Hezekiah spreading the letter before Jehovah in the house of Jehovah."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1A"></rect>', V.rays(w * 0.6, h * 0.3, 30, 20, max(w, h), color="#FFD23F", op=0.12),
+         ground(w, h, b, "#2A1A10", dy=0), S3.letter(w * 0.62, b - h * 0.04, min(1.2, h / 260), rot=0)]
+    o.append(E.kneel(w * 0.34, b, fit(b, h * 0.4) * 0.85, color="#5A5040", skin="#C98E66"))
+    return "".join(o)
+
+def silent_camp(p, w, h, seed):
+    """The camp of the Assyrians at morning, silent: tents and standards, no one moving (19:35 told in words only)."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#8A8AA8", "#F3D8C0"), sun(w * 0.8, h * 0.36, 22, color="#FFE680", op=0.4), hills(w, h, h * 0.44, seed, color="#6A6A6A", amp=16),
+         ground(w, h, h * 0.54, "#8A7A6A", dy=0), N.camp(22, -10, w + 10, h * 0.58, h * 0.96, seed, color=("#8A5A1A", "#6A4A2A", "#5A4A3A"))]
+    return "".join(o)
+
+def nineveh(w, h, seed):
+    """Nineveh on the Tigris, the house of Nisroch with its winged bulls (19:37 told in words only)."""
+    o = [sky(w, h, "#3A2A2A", "#C8803A"), ground(w, h, h * 0.76, "#8A6A4A", dy=0),
+         f'<path d="M-10 {f(h * 0.86)} C {f(w * 0.3)} {f(h * 0.82)} {f(w * 0.6)} {f(h * 0.9)} {f(w + 10)} {f(h * 0.86)}" stroke="#2C7DA8" stroke-width="12" fill="none"></path>']
+    for k in range(4):
+        wd = w * (0.7 - k * 0.14); y = h * (0.76 - k * 0.12)
+        o.append(f'<rect x="{f(w * 0.5 - wd / 2)}" y="{f(y - h * 0.12)}" width="{f(wd)}" height="{f(h * 0.12)}" fill="{["#B8905A", "#A8804A", "#98703A", "#88602A"][k]}" stroke="#0D0D0F" stroke-width="2"></rect>')
+    return "".join(o)

@@ -849,6 +849,104 @@
    "w": 760,
    "h": 1080,
    "title": "110 · Him Shall Ye Fear"
+  },
+  "2KI-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Hezekiah"
+  },
+  "2KI-C10-D-P01-HeTrustedInJehovah.dc.html": {
+   "x": 840,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · He Trusted in Jehovah"
+  },
+  "2KI-C10-D-P02-HeTrustedInJehovah.dc.html": {
+   "x": 1680,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · He Trusted in Jehovah"
+  },
+  "2KI-C10-D-P03-Sennacherib.dc.html": {
+   "x": 2520,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Sennacherib"
+  },
+  "2KI-C10-D-P04-Rabshakeh.dc.html": {
+   "x": 3360,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Rabshakeh"
+  },
+  "2KI-C10-D-P05-Rabshakeh.dc.html": {
+   "x": 0,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Rabshakeh"
+  },
+  "2KI-C10-D-P06-InTheJewsLanguage.dc.html": {
+   "x": 840,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · In the Jews' Language"
+  },
+  "2KI-C10-D-P07-InTheJewsLanguage.dc.html": {
+   "x": 1680,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · In the Jews' Language"
+  },
+  "2KI-C10-D-P08-IsaiahTheProphet.dc.html": {
+   "x": 2520,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Isaiah the Prophet"
+  },
+  "2KI-C10-D-P09-IsaiahTheProphet.dc.html": {
+   "x": 3360,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Isaiah the Prophet"
+  },
+  "2KI-C10-D-P10-TheLetterSpreadBef.dc.html": {
+   "x": 0,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Letter Spread before Jehovah"
+  },
+  "2KI-C10-D-P11-TheVirginDaughterO.dc.html": {
+   "x": 840,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Virgin Daughter of Zion"
+  },
+  "2KI-C10-D-P12-TheVirginDaughterO.dc.html": {
+   "x": 1680,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · The Virgin Daughter of Zion"
+  },
+  "2KI-C10-D-P13-ThatNight.dc.html": {
+   "x": 2520,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · That Night"
   }
  },
  "order": [
@@ -971,7 +1069,21 @@
   "2KI-C09-D-P04-BecauseTheyHadSinn.dc.html",
   "2KI-C09-D-P05-StrangersInTheCiti.dc.html",
   "2KI-C09-D-P06-StrangersInTheCiti.dc.html",
-  "2KI-C09-D-P07-HimShallYeFear.dc.html"
+  "2KI-C09-D-P07-HimShallYeFear.dc.html",
+  "2KI-C10-00-Title.dc.html",
+  "2KI-C10-D-P01-HeTrustedInJehovah.dc.html",
+  "2KI-C10-D-P02-HeTrustedInJehovah.dc.html",
+  "2KI-C10-D-P03-Sennacherib.dc.html",
+  "2KI-C10-D-P04-Rabshakeh.dc.html",
+  "2KI-C10-D-P05-Rabshakeh.dc.html",
+  "2KI-C10-D-P06-InTheJewsLanguage.dc.html",
+  "2KI-C10-D-P07-InTheJewsLanguage.dc.html",
+  "2KI-C10-D-P08-IsaiahTheProphet.dc.html",
+  "2KI-C10-D-P09-IsaiahTheProphet.dc.html",
+  "2KI-C10-D-P10-TheLetterSpreadBef.dc.html",
+  "2KI-C10-D-P11-TheVirginDaughterO.dc.html",
+  "2KI-C10-D-P12-TheVirginDaughterO.dc.html",
+  "2KI-C10-D-P13-ThatNight.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1043,6 +1155,13 @@
    "text": "Chapter 9 · Carried Away into Assyria (2 Kings 17)",
    "x": 0,
    "y": 34500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Hezekiah (2 Kings 18–19)",
+   "x": 0,
+   "y": 37400
   }
  },
  "designSystems": [],

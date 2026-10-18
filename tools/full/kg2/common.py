@@ -111,3 +111,8 @@ JEHONADAB = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#C8C2B6", hl="#E8E
 JEHOIADA = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#E8E2D6", hl="#F3EFE6", beard=True, beard_color="#E8E2D6", scarf="#F3EFE6", band=True, light="#FFE680")
 ATHALIAH = F("eve", skin="#D9A27A", shadow="#5A2A3A", hair="#0D0D0F", band=True, kohl=True, collar=True, brow="scowl", sweat=True, light="#D7261E")
 JOASH = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", stubble="#2A1A10", scarf="#1F3A7A", band=True, light="#FFE680")
+HEZEKIAH = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#1F3A7A", band=True, light="#FFE680")
+HEZEKIAH_GRIEF = F("adam", skin="#C98E66", shadow="#3A2A4A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#5A5040", brow="sorrow", tear=True, light="#9AA8C8")
+RABSHAKEH = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#8A5A1A", band=True, brow="scowl", light="#D7261E")
+ELIAKIM = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#3A4A6A", cord=True, sweat=True, light="#FFE680")
+ISAIAH = F("adam", skin="#B98A6E", shadow="#3A3A5A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#4A3A6A", cord=True, light="#FFF4C2")
