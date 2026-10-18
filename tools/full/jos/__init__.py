@@ -26,5 +26,7 @@ META = {
      "blurb": "The ark goes before, and the waters that come down from above stand in one heap; all Israel passes over on dry ground; twelve stones out of the midst of the Jordan set up in Gilgal; the passover in the plains of Jericho, the manna ceased, and the prince of the host of Jehovah with his sword drawn."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Walls of Jericho", "range": "Joshua 6–7", "bible_chapters": [6, 7],
      "blurb": "Seven priests with seven trumpets of rams' horns compass the city seven days; the great shout, and the wall falls down flat; Rahab and her father's household saved alive. Then the devoted thing: the flight before Ai, the lot that takes Achan, the Babylonish mantle and the wedge of gold, and the valley of Achor."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Ai and the Gibeonites", "range": "Joshua 8–9", "bible_chapters": [8, 9],
+     "blurb": "An ambush behind the city and the javelin stretched out toward Ai; the smoke of the city ascending up to heaven; an altar of unhewn stones in mount Ebal and the law read before all Israel; then the Gibeonites with mouldy bread and rent wine-skins, a covenant made without asking counsel at the mouth of Jehovah, and the hewers of wood and drawers of water."},
   ],
 }

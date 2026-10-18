@@ -291,3 +291,107 @@ def achor(w, h, seed):
             x = cx + (i - (7 - row) / 2) * w * 0.045; y = base - row * h * 0.05
             o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.026)}" ry="{f(h * 0.028)}" fill="{r.choice(["#8A7A6A", "#6A5A4A", "#A89A86"])}" stroke="#0D0D0F" stroke-width="1.8"></ellipse>')
     return "".join(o)
+
+# ---- Joshua 8–9 ---------------------------------------------------------------------------------------------------------
+def ai_plan(w, h, stage=0):
+    """The taking of Ai as a technical map: Ai and Beth-el, the ambush on the west, the host on the north beyond the
+    valley, the way of the wilderness. stage=1 adds the feigned flight and the ambush entering the city."""
+    o = [grid_bg(w, h)]
+    ax, ay = w * 0.6, h * 0.5
+    o.append(f'<rect x="{f(ax - 34)}" y="{f(ay - 22)}" width="68" height="44" fill="#B5652E" opacity="0.7" stroke="#FFD23F" stroke-width="2"></rect>' + label(ax, ay + 5, "AI", "#F3EFE6", 12))
+    o.append(node(w * 0.16, h * 0.42, "BETH-EL", "#8FD0E2", r=5, dy=-12, size=9))
+    o.append(f'<path d="M{f(w * 0.3)} {f(h * 0.2)} C {f(w * 0.45)} {f(h * 0.3)} {f(w * 0.7)} {f(h * 0.28)} {f(w * 0.92)} {f(h * 0.22)}" fill="none" stroke="#3A5A7A" stroke-width="10" opacity="0.6"></path>'
+             + label(w * 0.62, h * 0.24, "THE VALLEY", "#8FD0E2", 8))
+    o.append(f'<rect x="{f(w * 0.5)}" y="{f(h * 0.04)}" width="{f(w * 0.24)}" height="{f(h * 0.12)}" fill="#2E9A4A" opacity="0.4" stroke="#5AD87A" stroke-width="2"></rect>'
+             + label(w * 0.62, h * 0.11, "THE HOST · NORTH", "#5AD87A", 9))
+    o.append(f'<rect x="{f(w * 0.3)}" y="{f(h * 0.44)}" width="{f(w * 0.14)}" height="{f(h * 0.14)}" fill="#D7261E" opacity="0.35" stroke="#D7261E" stroke-width="2" stroke-dasharray="5 4"></rect>'
+             + label(w * 0.37, h * 0.63, "AMBUSH · WEST", "#FF6A5A", 9))
+    o.append(label(w * 0.86, h * 0.9, "THE WILDERNESS", "#C8A06A", 9))
+    if stage:
+        o.append(route([(w * 0.62, h * 0.18), (w * 0.72, h * 0.6), (w * 0.84, h * 0.84)], color="#5AD87A"))
+        o.append(route([(ax + 30, ay + 10), (w * 0.76, h * 0.7)], color="#FFB04A", arrow=True))
+        o.append(route([(w * 0.44, h * 0.5), (ax - 36, ay)], color="#FF6A5A"))
+    return "".join(o)
+
+def javelin(p, w, h, seed):
+    """Joshua stretches out the javelin that is in his hand toward Ai, far off on its hill."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.86, h * 0.2, 18, color="#FF8A3D", op=0.4),
+         J.city_hill(w * 0.82, h * 0.6, w * 0.22, h * 0.3, seed), ground(w, h, h * 0.6, "#B89A6A", dy=0)]
+    s = fit(b, h * 0.3)
+    spear = '<path d="M30 -150 L 150 -196" stroke="#3E2416" stroke-width="5"></path><path d="M150 -196 L 174 -205 L 156 -186 Z" fill="#C8C2D6" stroke="#0D0D0F" stroke-width="2"></path>'
+    o.append(mk.person(p, round(w * 0.24), round(b), round(s, 3), body=SKIN, cloth=JOSHUA_C, sw=3, up=[(-22, -158), (4, -150), (30, -150)],
+                       extra=A.headcloth(JOSHUA_C) + A.BLACK_BEARD + spear))
+    return "".join(o)
+
+def ruin_heap(w, h, seed):
+    """Ai a heap for ever, at the going down of the sun, and a great heap of stones at the entrance of the gate."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#4A2A3A"></rect>', sun(w * 0.2, h * 0.5, 30, color="#FF6A2A", op=0.45),
+         J.collapse(w * 0.3, w + 10, h * 0.7, h * 0.3, seed, color="#5A3A2A"), ground(w, h, h * 0.7, "#2A1A1A", dy=0)]
+    cx, base = w * 0.2, h * 0.92
+    for row in range(4):
+        for i in range(6 - row):
+            x = cx + (i - (5 - row) / 2) * w * 0.04; y = base - row * h * 0.045
+            o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.022)}" ry="{f(h * 0.025)}" fill="{r.choice(["#8A7A6A", "#6A5A4A", "#A89A86"])}" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    return "".join(o)
+
+def gibeonites(p, w, h, seed):
+    """The men of Gibeon as from a far country: old sacks upon their asses, rent wine-skins bound up, patched garments."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', sun(w * 0.84, h * 0.16, 16, op=0.3),
+         hills(w, h, h * 0.5, seed, color="#C8A06A", amp=10), ground(w, h, h * 0.56, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.42)
+    patch = '<rect x="-12" y="-120" width="12" height="14" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="1.2"></rect><rect x="4" y="-80" width="10" height="12" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="1.2"></rect>'
+    for i, x in enumerate((0.18, 0.5)):
+        sa = s * 0.5
+        o.append(N.ass(w * (x + 0.14), b, sa, flip=True)
+                 + f'<rect x="{f(w * (x + 0.14) - 30 * sa)}" y="{f(b - 120 * sa)}" width="{f(60 * sa)}" height="{f(34 * sa)}" rx="6" fill="#A8946A" stroke="#0D0D0F" stroke-width="2"></rect>')
+        o.append(man(p, w * x, b, s, "#7A6A5A", flip=True, extra=patch))
+        o.append(f'<ellipse cx="{f(w * x + 14 * s)}" cy="{f(b - 100 * s)}" rx="{f(14 * s)}" ry="{f(20 * s)}" fill="#5A3A22" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+                 f'<path d="M{f(w * x + 4 * s)} {f(b - 104 * s)} L {f(w * x + 24 * s)} {f(b - 94 * s)}" stroke="#C8A06A" stroke-width="2"></path>')
+    o.append(man(p, w * 0.86, b, s, "#6A5A4A", flip=True, extra=patch))
+    return "".join(o)
+
+def provision(w, h, seed):
+    """Their provision: the bread dry and become mouldy, the wine-skins rent and bound up, the shoes old and patched."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A1E"></rect>', ground(w, h, h * 0.6, "#5A4A3A", dy=0)]
+    for i in range(3):
+        x = w * (0.16 + i * 0.12); y = h * 0.72
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.05)}" ry="{f(h * 0.06)}" fill="#C8A06A" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+                 + "".join(f'<circle cx="{f(x + r.uniform(-1, 1) * w * 0.035)}" cy="{f(y + r.uniform(-1, 1) * h * 0.04)}" r="{f(r.uniform(2, 5))}" fill="#6A8A5A"></circle>' for _ in range(7)))
+    sx = w * 0.66
+    o.append(f'<path d="M{f(sx - w * 0.1)} {f(h * 0.82)} C {f(sx - w * 0.12)} {f(h * 0.5)} {f(sx + w * 0.12)} {f(h * 0.5)} {f(sx + w * 0.1)} {f(h * 0.82)} Z" fill="#5A3A22" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<path d="M{f(sx - w * 0.04)} {f(h * 0.6)} L {f(sx + w * 0.02)} {f(h * 0.7)} M{f(sx + w * 0.04)} {f(h * 0.58)} L {f(sx - w * 0.01)} {f(h * 0.66)}" stroke="#C8A06A" stroke-width="3"></path>')
+    o.append(f'<path d="M{f(w * 0.82)} {f(h * 0.86)} L {f(w * 0.96)} {f(h * 0.86)} L {f(w * 0.96)} {f(h * 0.8)} L {f(w * 0.86)} {f(h * 0.78)} Z" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></path>'
+             f'<rect x="{f(w * 0.88)}" y="{f(h * 0.8)}" width="{f(w * 0.03)}" height="{f(h * 0.03)}" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="1"></rect>')
+    return "".join(o)
+
+def four_cities(w, h):
+    """The cities of the Gibeonites: Gibeon, Chephirah, Beeroth and Kiriath-jearim, three days from Gilgal."""
+    o = [grid_bg(w, h)]
+    pts = [("GILGAL", 0.86, 0.6, "#8FD0E2"), ("GIBEON", 0.42, 0.42, "#FFD23F"), ("CHEPHIRAH", 0.24, 0.5, "#FFD23F"), ("BEEROTH", 0.5, 0.3, "#FFD23F"), ("KIRIATH-JEARIM", 0.2, 0.68, "#FFD23F")]
+    o.append(route([(w * 0.86, h * 0.6), (w * 0.62, h * 0.5), (w * 0.44, h * 0.44)], color="#8FD0E2"))
+    for nm, x, y, c in pts: o.append(node(w * x, h * y, nm, c, r=5, dy=-12, size=9))
+    o.append(label(w * 0.7, h * 0.46, "THREE DAYS", "#8FD0E2", 8))
+    return "".join(o)
+
+def hewers(p, w, h, seed):
+    """Hewers of wood and drawers of water for the congregation and for the altar of Jehovah."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3D8A0"></rect>', sun(w * 0.84, h * 0.16, 16, op=0.3),
+         ground(w, h, h * 0.62, "#B89A6A", dy=0)]
+    ax = w * 0.84
+    o.append(f'<rect x="{f(ax - w * 0.07)}" y="{f(h * 0.62)}" width="{f(w * 0.14)}" height="{f(h * 0.16)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></rect>' + E.blaze(ax, h * 0.62, w * 0.1, h * 0.18, seed, n=6))
+    s = fit(b, h * 0.44)
+    wood = '<path d="M-30 -186 L 22 -200 M-30 -180 L 24 -192 M-28 -174 L 26 -186" stroke="#6A4A2A" stroke-width="7" stroke-linecap="round"></path>'
+    jar = '<path d="M-14 -190 C -22 -214 -4 -232 0 -232 C 4 -232 22 -214 14 -190 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path>'
+    for i in range(5):
+        x = w * (0.08 + i * 0.13)
+        o.append(man(p, x, b - (i % 2) * 6, s * (0.96 if i % 2 else 1), "#7A6A5A", up=[(-22, -158), (-28, -180), (-16, -196)], extra=wood if i % 2 == 0 else jar))
+    return "".join(o)
+
+def below(fn, k=0.42):
+    """A drawing f(w, h) set in the lower part of a panel, so a column of words at the top leaves it clear."""
+    return lambda w, h: f'<g transform="translate(0 {h * k:.1f})">' + fn(w, h * (1 - k)) + '</g>'

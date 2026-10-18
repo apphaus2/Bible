@@ -101,6 +101,7 @@ There are two editions:
 | Joshua | 1 · Be Strong and of Good Courage | 1–2 | cover + title + 8 (pp. 1–8) | 42/42 verses full (lifts the digest's Jericho art: `reuse.fill`) | `volumes/joshua/` |
 | Joshua | 2 · The Waters of the Jordan | 3–5 | title + 10 (pp. 9–18) | 56/56 verses full (5:2–8 as the flint knives and the camp only) | `volumes/joshua/` |
 | Joshua | 3 · The Walls of Jericho | 6–7 | title + 10 (pp. 19–28) | 53/53 verses full (6:21 and 7:25 words only, over the dust and the heap) | `volumes/joshua/` |
+| Joshua | 4 · Ai and the Gibeonites | 8–9 | title + 11 (pp. 29–39) | 62/62 verses full (the ambush as a map; 8:21–29 words over the smoke and the heap) | `volumes/joshua/` |
 
 **Genesis, Exodus, Leviticus, Numbers and Deuteronomy are complete.** Next: Joshua. Deuteronomy is `tools/full/deu/` (15
 chapters, plan in `deu/__init__.py`): Moses' discourses as speech panels (`speech.orate`, packed by `discourse.pack`,

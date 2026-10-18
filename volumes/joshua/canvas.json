@@ -233,6 +233,90 @@
    "w": 760,
    "h": 1080,
    "title": "28 · The Valley of Achor"
+  },
+  "JOS-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Ai and the Gibeonites"
+  },
+  "JOS-C04-D-P01-SetTheeAnAmbush.dc.html": {
+   "x": 840,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Set Thee an Ambush"
+  },
+  "JOS-C04-D-P02-SetTheeAnAmbush.dc.html": {
+   "x": 1680,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Set Thee an Ambush"
+  },
+  "JOS-C04-D-P03-SetTheeAnAmbush.dc.html": {
+   "x": 2520,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Set Thee an Ambush"
+  },
+  "JOS-C04-D-P04-TheyLeftTheCityOpe.dc.html": {
+   "x": 3360,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · They Left the City Open"
+  },
+  "JOS-C04-D-P05-TheSmokeOfTheCity.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Smoke of the City"
+  },
+  "JOS-C04-D-P06-TheSmokeOfTheCity.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Smoke of the City"
+  },
+  "JOS-C04-D-P07-AnAltarInMountEbal.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · An Altar in Mount Ebal"
+  },
+  "JOS-C04-D-P08-TheyDidWorkWilily.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · They Did Work Wilily"
+  },
+  "JOS-C04-D-P09-TheyDidWorkWilily.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · They Did Work Wilily"
+  },
+  "JOS-C04-D-P10-LetThemLive.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Let Them Live"
+  },
+  "JOS-C04-D-P11-LetThemLive.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Let Them Live"
   }
  },
  "order": [
@@ -267,7 +351,19 @@
   "JOS-C03-D-P07-IsraelHathSinned.dc.html",
   "JOS-C03-D-P08-IsraelHathSinned.dc.html",
   "JOS-C03-D-P09-AchanWasTaken.dc.html",
-  "JOS-C03-D-P10-TheValleyOfAchor.dc.html"
+  "JOS-C03-D-P10-TheValleyOfAchor.dc.html",
+  "JOS-C04-00-Title.dc.html",
+  "JOS-C04-D-P01-SetTheeAnAmbush.dc.html",
+  "JOS-C04-D-P02-SetTheeAnAmbush.dc.html",
+  "JOS-C04-D-P03-SetTheeAnAmbush.dc.html",
+  "JOS-C04-D-P04-TheyLeftTheCityOpe.dc.html",
+  "JOS-C04-D-P05-TheSmokeOfTheCity.dc.html",
+  "JOS-C04-D-P06-TheSmokeOfTheCity.dc.html",
+  "JOS-C04-D-P07-AnAltarInMountEbal.dc.html",
+  "JOS-C04-D-P08-TheyDidWorkWilily.dc.html",
+  "JOS-C04-D-P09-TheyDidWorkWilily.dc.html",
+  "JOS-C04-D-P10-LetThemLive.dc.html",
+  "JOS-C04-D-P11-LetThemLive.dc.html"
  ],
  "notes": {
   "Main": {
@@ -297,6 +393,13 @@
    "text": "Chapter 3 · The Walls of Jericho (Joshua 6–7)",
    "x": 0,
    "y": 8700
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Ai and the Gibeonites (Joshua 8–9)",
+   "x": 0,
+   "y": 12800
   }
  },
  "designSystems": [],
