@@ -140,5 +140,5 @@ def levites_round(p, w, h, seed):
     o.append(E3.pillar_cloud(w * 0.56, h * 0.56, -20, w * 0.04, seed))
     for i in range(9):                                       # Levites in white tunics round the court
         x = w * (0.18 + 0.64 * i / 8); y = b - (i % 2) * 4
-        o.append(man(p, x, y, fit(y, h * 0.56), "#E8E2D6", flip=x > w / 2))
+        o.append(man(p, x, y, fit(y, max(h * 0.56, y - 220)), "#E8E2D6", flip=x > w / 2))
     return "".join(o)

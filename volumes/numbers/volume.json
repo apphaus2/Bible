@@ -16,6 +16,16 @@
     "Main.dc.html",
     "NUM-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Charge of the Levites",
+   "range": "Numbers 3–4",
+   "blurb": "The sons of Aaron, and Nadab and Abihu who died before Jehovah; the Levites given unto Aaron instead of all the first-born, Gershon westward, Kohath southward, Merari northward, the redemption of the two hundred and threescore and thirteen; and the ark, the table and the candlestick wrapped in blue, scarlet and sealskin for the sons of Kohath to bear.",
+   "prefixes": [
+    "NUM-C02-"
+   ]
   }
  ]
 }

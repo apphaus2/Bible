@@ -67,6 +67,7 @@ There are two editions:
 | Leviticus | 9 · Blessing and Curse | 26–27 | title + 9 (pp. 110–118) | 80/80 verses full | `volumes/leviticus/` |
 | **Leviticus** | **complete: cover + 9 chapters** | **1–27** | **128 pages (118 numbered)** | **859 verses: all full** | `volumes/leviticus/` |
 | Numbers | 1 · The Numbering | 1–2 | cover + title + 10 (pp. 1–10) | 88/88 verses full (census as tally cells, the camp as a blueprint plan) | `volumes/numbers/` |
+| Numbers | 2 · The Charge of the Levites | 3–4 | title + 20 (pp. 11–30) | 100/100 verses full (the holy things wrapped, as blueprint plates) | `volumes/numbers/` |
 
 **Genesis, Exodus and Leviticus are complete.** Next: Numbers (`tools/full/num/`; reuse the digest's Numbers art). Leviticus is
 `tools/full/lev/` (9 chapters: 1 The Offerings 1–5 ·

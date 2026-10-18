@@ -93,6 +93,153 @@
    "w": 760,
    "h": 1080,
    "title": "10 · So They Encamped by Their Standards"
+  },
+  "NUM-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Charge of the Levites"
+  },
+  "NUM-C02-P01-Generations.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Generations of Aaron and Moses"
+  },
+  "NUM-C02-P02-Given.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Wholly Given unto Him"
+  },
+  "NUM-C02-P03-Mine.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · All the First-born Are Mine"
+  },
+  "NUM-C02-P04-SonsOfLevi.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Sons of Levi by Their Names"
+  },
+  "NUM-C02-P05-Gershon.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Behind the Tabernacle Westward"
+  },
+  "NUM-C02-P06-Kohath.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · The Charge of the Sanctuary"
+  },
+  "NUM-C02-P07-Merari.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · On the Side of the Tabernacle Northward"
+  },
+  "NUM-C02-P08-Eastward.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Before the Tent of Meeting toward the Sunrising"
+  },
+  "NUM-C02-P09-FirstBorn.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Number All the First-born"
+  },
+  "NUM-C02-P10-Redemption.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · The Redemption-money"
+  },
+  "NUM-C02-P11-Thirty.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · From Thirty Years Old until Fifty"
+  },
+  "NUM-C02-B-P01-TheBurdenOfTheSons.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · The Burden of the Sons of Kohath"
+  },
+  "NUM-C02-B-P02-TheBurdenOfTheSons.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The Burden of the Sons of Kohath"
+  },
+  "NUM-C02-B-P03-TheBurdenOfTheSons.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · The Burden of the Sons of Kohath"
+  },
+  "NUM-C02-P12-LestTheyDie.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Lest They Die"
+  },
+  "NUM-C02-C-P01-TheServiceOfTheGer.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Service of the Gershonites"
+  },
+  "NUM-C02-C-P02-TheServiceOfTheGer.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Service of the Gershonites"
+  },
+  "NUM-C02-C-P03-TheServiceOfTheSon.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · The Service of the Sons of Merari"
+  },
+  "NUM-C02-P13-NumberedKohath.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Those That Were Numbered"
+  },
+  "NUM-C02-P14-EightThousand.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Every One According to His Service"
   }
  },
  "order": [
@@ -107,7 +254,28 @@
   "NUM-C01-P07-East.dc.html",
   "NUM-C01-P08-South.dc.html",
   "NUM-C01-P09-West.dc.html",
-  "NUM-C01-P10-North.dc.html"
+  "NUM-C01-P10-North.dc.html",
+  "NUM-C02-00-Title.dc.html",
+  "NUM-C02-P01-Generations.dc.html",
+  "NUM-C02-P02-Given.dc.html",
+  "NUM-C02-P03-Mine.dc.html",
+  "NUM-C02-P04-SonsOfLevi.dc.html",
+  "NUM-C02-P05-Gershon.dc.html",
+  "NUM-C02-P06-Kohath.dc.html",
+  "NUM-C02-P07-Merari.dc.html",
+  "NUM-C02-P08-Eastward.dc.html",
+  "NUM-C02-P09-FirstBorn.dc.html",
+  "NUM-C02-P10-Redemption.dc.html",
+  "NUM-C02-P11-Thirty.dc.html",
+  "NUM-C02-B-P01-TheBurdenOfTheSons.dc.html",
+  "NUM-C02-B-P02-TheBurdenOfTheSons.dc.html",
+  "NUM-C02-B-P03-TheBurdenOfTheSons.dc.html",
+  "NUM-C02-P12-LestTheyDie.dc.html",
+  "NUM-C02-C-P01-TheServiceOfTheGer.dc.html",
+  "NUM-C02-C-P02-TheServiceOfTheGer.dc.html",
+  "NUM-C02-C-P03-TheServiceOfTheSon.dc.html",
+  "NUM-C02-P13-NumberedKohath.dc.html",
+  "NUM-C02-P14-EightThousand.dc.html"
  ],
  "notes": {
   "Main": {
@@ -123,6 +291,13 @@
    "text": "Chapter 1 · The Numbering (Numbers 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Charge of the Levites (Numbers 3–4)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],
