@@ -29,5 +29,7 @@ META = {
      "blurb": "Faint, yet pursuing: Succoth and Penuel, Zebah and Zalmunna; I will not rule over you, Jehovah shall rule over you; the golden ephod in Ophrah. Then Abimelech made king at Shechem, Jotham's fable of the trees and the bramble, Gaal and Zebul, Shechem sowed with salt, and the tower of Thebez."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Jephthah", "range": "Judges 10–12", "bible_chapters": [10, 11, 12],
      "blurb": "Tola and Jair; go and cry unto the gods which ye have chosen; Jephthah the Gileadite, son of a harlot, fetched home to be head over Gilead; his answer to the king of Ammon; the vow, and his daughter coming out with timbrels; Shibboleth at the fords of the Jordan; Ibzan, Elon and Abdon."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Samson", "range": "Judges 13–15", "bible_chapters": [13, 14, 15],
+     "blurb": "The angel of Jehovah to Manoah's wife: no razor shall come upon his head; the name that is wonderful, and the angel ascending in the flame of the altar. Samson, the young lion and the honey, the riddle at the feast, three hundred foxes with firebrands, the new ropes like burnt flax, and the jawbone of an ass."},
   ],
 }

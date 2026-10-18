@@ -361,3 +361,53 @@ def fords(p, w, h, seed):
     for i in range(3): o.append(man(p, w * (0.7 + i * 0.09), b - i * 4, s, ("#4A5A2A", "#5A6A3A", "#3A4A2A")[i], flip=True, extra=E4.SPEAR))
     o.append(man(p, w * 0.2, b, s * 0.96, "#3A3A5A"))
     return "".join(o)
+
+# ---- Judges 13–15 -------------------------------------------------------------------------------------------------------
+def honey(w, h, seed):
+    """A swarm of bees and honey: a honeycomb in the dry bones of the lion under a vine, bees about it."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8C88A"></rect>', ground(w, h, h * 0.76, "#C8A06A", dy=0)]
+    cx, cy = w * 0.5, h * 0.7
+    for i in range(6):
+        o.append(f'<path d="M{f(cx - w * 0.16 + i * w * 0.06)} {f(cy + 10)} C {f(cx - w * 0.16 + i * w * 0.06)} {f(cy - h * 0.18)} {f(cx - w * 0.1 + i * w * 0.06)} {f(cy - h * 0.2)} {f(cx - w * 0.1 + i * w * 0.06)} {f(cy - h * 0.12)}" fill="none" stroke="#F3EFE6" stroke-width="6" stroke-linecap="round"></path>')
+    for k in range(12):
+        x = cx - w * 0.08 + (k % 4) * 16; y = cy - h * 0.08 + (k // 4) * 14
+        o.append(f'<path d="M{f(x)} {f(y - 8)} L {f(x + 7)} {f(y - 4)} L {f(x + 7)} {f(y + 4)} L {f(x)} {f(y + 8)} L {f(x - 7)} {f(y + 4)} L {f(x - 7)} {f(y - 4)} Z" fill="#E8A317" stroke="#8A5A10" stroke-width="1.4"></path>')
+    for _ in range(40):
+        x, y = cx + r.uniform(-w * 0.3, w * 0.3), cy - r.uniform(0, h * 0.5)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="4" ry="2.4" fill="#E8B830" stroke="#0D0D0F" stroke-width="1"></ellipse>')
+    return "".join(o)
+
+def feast(p, w, h, seed):
+    """The feast at Timnah: Samson and the thirty companions about a table, seven days."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#6A3A2A"></rect>', ground(w, h, b, "#3A2218", dy=0),
+         S3.table(w * 0.5, b, w * 0.7, min(1.3, h / 260))]
+    s = fit(b, h * 0.36)
+    for i in range(10):
+        x = w * (0.04 + i * 0.105)
+        if abs(x - w * 0.5) < w * 0.06: continue
+        o.append(man(p, x, b - h * 0.14, s * 0.8, ("#1F5FAD", "#B5121B", "#E8B830", "#7A3BA8")[i % 4], flip=x > w * 0.5,
+                     extra='<path d="M-12 -200 L -8 -224 L -2 -204 L 4 -226 L 8 -204 L 14 -222 L 14 -198 Z" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.2"></path>'))
+    o.append(J2.samson(p, w * 0.5, b - h * 0.14, s * 0.84))
+    return "".join(o)
+
+def etam(p, w, h, seed, judah=False):
+    """The cleft of the rock of Etam; judah=True: the men of Judah come down to it with new ropes."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#C8A06A"></rect>',
+         f'<path d="M{f(w * 0.4)} {f(h + 10)} L {f(w * 0.46)} -10 L {f(w + 10)} -10 L {f(w + 10)} {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.62)} {f(h * 0.3)} L {f(w * 0.66)} {f(h * 0.6)} L {f(w * 0.6)} {f(h * 0.62)} Z" fill="#12090A"></path>',
+         ground(w, h, b, "#9A7A4A", dy=0)]
+    o.append(J2.samson(p, w * 0.64, h * 0.62, fit(h * 0.62, h * 0.4)))
+    if judah:
+        for i in range(8):
+            x = w * (0.04 + i * 0.045); o.append(man(p, x, b - (i % 2) * 6, fit(b, h * 0.5) * 0.9, random.Random(seed + i).choice(WAR)))
+        o.append(f'<path d="M{f(w * 0.3)} {f(b - h * 0.12)} C {f(w * 0.34)} {f(b - h * 0.04)} {f(w * 0.36)} {f(b - h * 0.16)} {f(w * 0.4)} {f(b - h * 0.08)}" fill="none" stroke="#C8A06A" stroke-width="5"></path>')
+    return "".join(o)
+
+def en_hakkore(w, h, seed):
+    """En-hakkore: God clave the hollow place in Lehi, and water came out of it."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#F3B86A"></rect>', sun(w * 0.2, h * 0.2, 20, color="#FF8A3D", op=0.4), ground(w, h, h * 0.78, "#B89A6A", dy=0),
+         E4.rock(w * 0.3, h * 0.8, w * 0.4, h * 0.46), E4.gush(w * 0.5, h * 0.6, seed, scale=min(1.4, h / 300))]
+    return "".join(o)

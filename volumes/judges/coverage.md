@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 375 verses — 375 full, 0 partial, 0 omitted.
+**So far:** 440 verses — 440 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · After the Death of Joshua (Judges 1–2)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · Jephthah (Judges 10–12)
 
 73 verses: 73 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · Samson (Judges 13–15)
+
+65 verses: 65 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

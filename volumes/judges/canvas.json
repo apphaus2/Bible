@@ -569,6 +569,111 @@
    "w": 760,
    "h": 1080,
    "title": "74 · Ibzan, Elon and Abdon"
+  },
+  "JDG-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Samson"
+  },
+  "JDG-C06-D-P01-ANaziriteUntoGod.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · A Nazirite unto God"
+  },
+  "JDG-C06-D-P02-ANaziriteUntoGod.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · A Nazirite unto God"
+  },
+  "JDG-C06-D-P03-SeeingItIsWonderfu.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Seeing It Is Wonderful"
+  },
+  "JDG-C06-D-P04-SeeingItIsWonderfu.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Seeing It Is Wonderful"
+  },
+  "JDG-C06-D-P05-TheYoungLion.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The Young Lion"
+  },
+  "JDG-C06-D-P06-TheYoungLion.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The Young Lion"
+  },
+  "JDG-C06-D-P07-OutOfTheEaterCameF.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Out of the Eater Came Forth Food"
+  },
+  "JDG-C06-D-P08-OutOfTheEaterCameF.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Out of the Eater Came Forth Food"
+  },
+  "JDG-C06-D-P09-ThreeHundredFoxes.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Three Hundred Foxes"
+  },
+  "JDG-C06-D-P10-ThreeHundredFoxes.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Three Hundred Foxes"
+  },
+  "JDG-C06-D-P11-TheRockOfEtam.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · The Rock of Etam"
+  },
+  "JDG-C06-D-P12-TheRockOfEtam.dc.html": {
+   "x": 1680,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · The Rock of Etam"
+  },
+  "JDG-C06-D-P13-TheJawboneOfAnAss.dc.html": {
+   "x": 2520,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · The Jawbone of an Ass"
+  },
+  "JDG-C06-D-P14-EnHakkore.dc.html": {
+   "x": 3360,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · En-hakkore"
   }
  },
  "order": [
@@ -651,7 +756,22 @@
   "JDG-C05-D-P12-HisDaughterCameOut.dc.html",
   "JDG-C05-D-P13-Shibboleth.dc.html",
   "JDG-C05-D-P14-Shibboleth.dc.html",
-  "JDG-C05-D-P15-IbzanElonAndAbdon.dc.html"
+  "JDG-C05-D-P15-IbzanElonAndAbdon.dc.html",
+  "JDG-C06-00-Title.dc.html",
+  "JDG-C06-D-P01-ANaziriteUntoGod.dc.html",
+  "JDG-C06-D-P02-ANaziriteUntoGod.dc.html",
+  "JDG-C06-D-P03-SeeingItIsWonderfu.dc.html",
+  "JDG-C06-D-P04-SeeingItIsWonderfu.dc.html",
+  "JDG-C06-D-P05-TheYoungLion.dc.html",
+  "JDG-C06-D-P06-TheYoungLion.dc.html",
+  "JDG-C06-D-P07-OutOfTheEaterCameF.dc.html",
+  "JDG-C06-D-P08-OutOfTheEaterCameF.dc.html",
+  "JDG-C06-D-P09-ThreeHundredFoxes.dc.html",
+  "JDG-C06-D-P10-ThreeHundredFoxes.dc.html",
+  "JDG-C06-D-P11-TheRockOfEtam.dc.html",
+  "JDG-C06-D-P12-TheRockOfEtam.dc.html",
+  "JDG-C06-D-P13-TheJawboneOfAnAss.dc.html",
+  "JDG-C06-D-P14-EnHakkore.dc.html"
  ],
  "notes": {
   "Main": {
@@ -695,6 +815,13 @@
    "text": "Chapter 5 · Jephthah (Judges 10–12)",
    "x": 0,
    "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Samson (Judges 13–15)",
+   "x": 0,
+   "y": 27000
   }
  },
  "designSystems": [],
