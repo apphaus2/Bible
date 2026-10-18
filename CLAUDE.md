@@ -168,6 +168,7 @@ There are two editions:
 | 2 Kings | 6 · Joash | 11–12 | title + 9 (pp. 79–87) | 42/42 verses full (11:16 and 12:20–21 words over the horses' entry and Millo, empty) | `volumes/2kings/` |
 | 2 Kings | 7 · The Bones of Elisha | 13–14 | title + 9 (pp. 88–96) | 54/54 verses full (the reigns as roll cells; Jeroboam's border as a map) | `volumes/2kings/` |
 | 2 Kings | 8 · Ahaz | 15–16 | title + 7 (pp. 97–103) | 58/58 verses full (ch. 15 as roll cells; Assyria as a map; the Damascus altar as a blueprint) | `volumes/2kings/` |
+| 2 Kings | 9 · Carried Away into Assyria | 17 | title + 7 (pp. 104–110) | 41/41 verses full (the exile and the settlers as maps; 17:17 and 17:31 words only) | `volumes/2kings/` |
 
 **Genesis through 1 Kings (eleven volumes) are complete.** Next: 2 Kings. 1 Kings is `tools/full/kg1/` (14 chapters, plan and
 restraint notes in `kg1/__init__.py`). There is no digest book from here on, so every drawing is new (`kg1/art.py`): the temple and its

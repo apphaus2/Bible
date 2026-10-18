@@ -36,5 +36,7 @@ META = {
      "blurb": "Elisha sick unto death — my father, my father, the chariots of Israel; the arrow of victory shot out of the window eastward, and the ground smitten thrice; the dead man who touched the bones of Elisha and revived; Amaziah and the parable of the thistle and the cedar of Lebanon; the wall of Jerusalem broken down; and Jeroboam the son of Joash."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Ahaz", "range": "2 Kings 15–16", "bible_chapters": [15, 16],
      "blurb": "Azariah the leper king in his separate house; Zechariah, Shallum, Menahem, Pekahiah and Pekah, king after king in Samaria; Pul and Tiglath-pileser of Assyria; then Ahaz — I am thy servant and thy son; the altar after the fashion of the altar at Damascus, and the sea set down from off the brazen oxen."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Carried Away into Assyria", "range": "2 Kings 17", "bible_chapters": [17],
+     "blurb": "Hoshea and the three years' siege of Samaria; Israel carried away into Assyria, to Halah and the Habor and the cities of the Medes, because they had sinned — the high places, the two calves, the host of heaven; strangers brought into the cities of Samaria, the lions, and every nation making gods of its own."},
   ],
 }

@@ -793,6 +793,62 @@
    "w": 760,
    "h": 1080,
    "title": "103 · The Altar at Damascus"
+  },
+  "2KI-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Carried Away into Assyria"
+  },
+  "2KI-C09-D-P01-Hoshea.dc.html": {
+   "x": 840,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Hoshea"
+  },
+  "2KI-C09-D-P02-BecauseTheyHadSinn.dc.html": {
+   "x": 1680,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Because They Had Sinned"
+  },
+  "2KI-C09-D-P03-BecauseTheyHadSinn.dc.html": {
+   "x": 2520,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Because They Had Sinned"
+  },
+  "2KI-C09-D-P04-BecauseTheyHadSinn.dc.html": {
+   "x": 3360,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Because They Had Sinned"
+  },
+  "2KI-C09-D-P05-StrangersInTheCiti.dc.html": {
+   "x": 0,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Strangers in the Cities of Samaria"
+  },
+  "2KI-C09-D-P06-StrangersInTheCiti.dc.html": {
+   "x": 840,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Strangers in the Cities of Samaria"
+  },
+  "2KI-C09-D-P07-HimShallYeFear.dc.html": {
+   "x": 1680,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Him Shall Ye Fear"
   }
  },
  "order": [
@@ -907,7 +963,15 @@
   "2KI-C08-G-P01-Ahaz.dc.html",
   "2KI-C08-G-P02-TheAltarAtDamascus.dc.html",
   "2KI-C08-G-P03-TheAltarAtDamascus.dc.html",
-  "2KI-C08-G-P04-TheAltarAtDamascus.dc.html"
+  "2KI-C08-G-P04-TheAltarAtDamascus.dc.html",
+  "2KI-C09-00-Title.dc.html",
+  "2KI-C09-D-P01-Hoshea.dc.html",
+  "2KI-C09-D-P02-BecauseTheyHadSinn.dc.html",
+  "2KI-C09-D-P03-BecauseTheyHadSinn.dc.html",
+  "2KI-C09-D-P04-BecauseTheyHadSinn.dc.html",
+  "2KI-C09-D-P05-StrangersInTheCiti.dc.html",
+  "2KI-C09-D-P06-StrangersInTheCiti.dc.html",
+  "2KI-C09-D-P07-HimShallYeFear.dc.html"
  ],
  "notes": {
   "Main": {
@@ -972,6 +1036,13 @@
    "text": "Chapter 8 · Ahaz (2 Kings 15–16)",
    "x": 0,
    "y": 31600
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Carried Away into Assyria (2 Kings 17)",
+   "x": 0,
+   "y": 34500
   }
  },
  "designSystems": [],

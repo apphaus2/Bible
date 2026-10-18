@@ -635,3 +635,56 @@ def sea_pavement(w, h):
              f'<ellipse cx="{f(cx)}" cy="{f(top)}" rx="{f(5.3 * u)}" ry="{f(0.9 * u)}" fill="#C8863E" stroke="#0D0D0F" stroke-width="2.4"></ellipse>')
     o.append(f'<g opacity="0.4">' + S1.cow(w * 0.84, base, u / 80, color=BRASS, patch="#C8863E") + '</g>' + tag(w * 0.84, base - u, "THE BRAZEN OXEN, REMOVED", w * 0.7, base - 4 * u))
     return "".join(o)
+
+# ---- 2 Kings 17 ---------------------------------------------------------------------------------------------------------
+def captives(p, w, h, seed, city="samaria"):
+    """A long column of captives carried away eastward, soldiers with spears beside them, the city smoking behind."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A4A5A", "#E8A06A"), J.city_hill(w * 0.12, h * 0.56, w * 0.3, h * 0.24, seed), ground(w, h, h * 0.58, "#A88A6A", dy=0)]
+    o.append("".join(f'<circle cx="{f(w * 0.12 + (i % 2) * 14)}" cy="{f(h * (0.3 - i * 0.06))}" r="{f(w * 0.05)}" fill="#3A2A2E" opacity="0.6"></circle>' for i in range(4)))
+    for i in range(14):
+        t = i / 13; x = w * (0.22 + 0.74 * t); y = h * (0.66 + 0.26 * t)
+        s = fit(y, y - h * (0.14 + 0.16 * t))
+        if i % 4 == 3: o.append(warrior(p, x, y, s, "#7A5A2A", flip=True))
+        else: o.append(mk.person(p, round(x), round(y), round(s, 3), body="#3A1E14", cloth=["#5A5A6A", "#6A5A4A", "#4A4A5A"][i % 3], woman=i % 3 == 1, hair="#1A1210" if i % 3 == 1 else False, sw=2, flip=True))
+    return "".join(o)
+
+EXILE = [("SAMARIA", 0.14, 0.6), ("NINEVEH", 0.6, 0.16), ("HALAH", 0.7, 0.3), ("GOZAN · THE HABOR", 0.5, 0.12), ("CITIES OF THE MEDES", 0.9, 0.3),
+         ("BABYLON", 0.72, 0.74), ("CUTHAH", 0.76, 0.66), ("HAMATH", 0.28, 0.28), ("SEPHARVAIM", 0.66, 0.6)]
+def exile_map(w, h, inward=False):
+    """Israel carried away into Assyria (or, inward=True, the nations brought from Babylon, Cuthah, Avva, Hamath and
+    Sepharvaim into the cities of Samaria) as a technical map."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.08)} -10 C {f(w * 0.06)} {f(h * 0.3)} {f(w * 0.05)} {f(h * 0.7)} {f(w * 0.03)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.46)} -10 C {f(w * 0.5)} {f(h * 0.3)} {f(w * 0.6)} {f(h * 0.6)} {f(w * 0.74)} {f(h + 10)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>'
+             f'<path d="M{f(w * 0.6)} -10 C {f(w * 0.66)} {f(h * 0.3)} {f(w * 0.76)} {f(h * 0.6)} {f(w * 0.8)} {f(h + 10)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>')
+    pos = {n: (w * x, h * y) for n, x, y in EXILE}
+    if inward:
+        for n in ("BABYLON", "CUTHAH", "HAMATH", "SEPHARVAIM"): o.append(route([pos[n], pos["SAMARIA"]], color="#D7261E"))
+        show = ("SAMARIA", "BABYLON", "CUTHAH", "HAMATH", "SEPHARVAIM")
+    else:
+        for n in ("HALAH", "GOZAN · THE HABOR", "CITIES OF THE MEDES"): o.append(route([pos["SAMARIA"], pos[n]], color="#D7261E"))
+        show = ("SAMARIA", "NINEVEH", "HALAH", "GOZAN · THE HABOR", "CITIES OF THE MEDES")
+    for n in show:
+        x, y = pos[n]; o.append(node(x, y, n, "#FFD23F" if n == "SAMARIA" else "#D7261E", r=5, dy=-11, size=9))
+    return "".join(o)
+
+def lions_samaria(p, w, h, seed):
+    """Lions among the strangers settled in the cities of Samaria (17:25 told without harm drawn)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#C8B8A0", "#E8C8A0"), J.city_hill(w * 0.7, h * 0.56, w * 0.5, h * 0.3, seed), ground(w, h, h * 0.58, "#A89A6A", dy=0)]
+    k = min(0.8, h / 400)
+    o.append(J2.lion(w * 0.24, b, k, roar=True) + J2.lion(w * 0.5, b - h * 0.04, k * 0.8, roar=False))
+    return "".join(o)
+
+def strange_gods(w, h, seed):
+    """Every nation making gods of its own in the houses of the high places: idols on their pedestals."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#3A2A3A", "#A86A5A"), ground(w, h, h * 0.8, "#4A3A30", dy=0)]
+    for i in range(5):
+        x = w * (0.12 + i * 0.19); s = min(w, h) / 360
+        o.append(f'<g transform="translate({f(x)} {f(h * 0.82)}) scale({f(s)})"><rect x="-26" y="-20" width="52" height="20" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<path d="M-14 -20 L -18 -90 C -16 -110 16 -110 18 -90 L 14 -20 Z" fill="{r.choice(["#B5652E", "#8A8478", "#C8A030", "#5A4A6A"])}" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<circle cx="0" cy="-112" r="14" fill="{r.choice(["#B5652E", "#C8A030"])}" stroke="#0D0D0F" stroke-width="2"></circle></g>')
+        o.append(E.blaze(x, h * 0.86, w * 0.03, h * 0.05, seed + i, n=3))
+    return "".join(o)
