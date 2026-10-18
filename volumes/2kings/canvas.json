@@ -667,6 +667,76 @@
    "w": 760,
    "h": 1080,
    "title": "87 · Hazael"
+  },
+  "2KI-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Bones of Elisha"
+  },
+  "2KI-C07-R-P01-TheKingsOfJudahAnd.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · The Kings of Judah and of Israel"
+  },
+  "2KI-C07-D-P01-TheArrowOfVictory.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Arrow of Victory"
+  },
+  "2KI-C07-D-P02-TheArrowOfVictory.dc.html": {
+   "x": 2520,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · The Arrow of Victory"
+  },
+  "2KI-C07-D-P03-TheArrowOfVictory.dc.html": {
+   "x": 3360,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Arrow of Victory"
+  },
+  "2KI-C07-D-P04-TheBonesOfElisha.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Bones of Elisha"
+  },
+  "2KI-C07-S-P01-Amaziah.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Amaziah"
+  },
+  "2KI-C07-E-P01-TheThistleAndTheCe.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · The Thistle and the Cedar"
+  },
+  "2KI-C07-T-P01-.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · "
+  },
+  "2KI-C07-F-P01-JeroboamTheSonOfJo.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Jeroboam the Son of Joash"
   }
  },
  "order": [
@@ -763,7 +833,17 @@
   "2KI-C06-E-P01-TheBreachesOfTheHo.dc.html",
   "2KI-C06-E-P02-AChestWithAHoleInT.dc.html",
   "2KI-C06-E-P03-AChestWithAHoleInT.dc.html",
-  "2KI-C06-E-P04-Hazael.dc.html"
+  "2KI-C06-E-P04-Hazael.dc.html",
+  "2KI-C07-00-Title.dc.html",
+  "2KI-C07-R-P01-TheKingsOfJudahAnd.dc.html",
+  "2KI-C07-D-P01-TheArrowOfVictory.dc.html",
+  "2KI-C07-D-P02-TheArrowOfVictory.dc.html",
+  "2KI-C07-D-P03-TheArrowOfVictory.dc.html",
+  "2KI-C07-D-P04-TheBonesOfElisha.dc.html",
+  "2KI-C07-S-P01-Amaziah.dc.html",
+  "2KI-C07-E-P01-TheThistleAndTheCe.dc.html",
+  "2KI-C07-T-P01-.dc.html",
+  "2KI-C07-F-P01-JeroboamTheSonOfJo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -814,6 +894,13 @@
    "text": "Chapter 6 · Joash (2 Kings 11–12)",
    "x": 0,
    "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Bones of Elisha (2 Kings 13–14)",
+   "x": 0,
+   "y": 28700
   }
  },
  "designSystems": [],

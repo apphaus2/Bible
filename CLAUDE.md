@@ -166,6 +166,7 @@ There are two editions:
 | 2 Kings | 4 · The Siege of Samaria | 7–8 | title + 10 (pp. 52–61) | 49/49 verses full (7:17–20 and 8:15 words only; `rolls.roll_pages(..., end=)` closes a chapter on a roll page) | `volumes/2kings/` |
 | 2 Kings | 5 · Jehu | 9–10 | title + 17 (pp. 62–78) | 73/73 verses full (9:24–37, 10:7–8 and 10:25 words over the field, the empty window, the gate and the broken house) | `volumes/2kings/` |
 | 2 Kings | 6 · Joash | 11–12 | title + 9 (pp. 79–87) | 42/42 verses full (11:16 and 12:20–21 words over the horses' entry and Millo, empty) | `volumes/2kings/` |
+| 2 Kings | 7 · The Bones of Elisha | 13–14 | title + 9 (pp. 88–96) | 54/54 verses full (the reigns as roll cells; Jeroboam's border as a map) | `volumes/2kings/` |
 
 **Genesis through 1 Kings (eleven volumes) are complete.** Next: 2 Kings. 1 Kings is `tools/full/kg1/` (14 chapters, plan and
 restraint notes in `kg1/__init__.py`). There is no digest book from here on, so every drawing is new (`kg1/art.py`): the temple and its

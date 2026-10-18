@@ -544,3 +544,55 @@ def millo(w, h, seed):
     """The house of Millo on the way down to Silla at dusk (12:20–21 told in words only)."""
     return "".join([sky(w, h, "#3A1A2A", "#C8603A"), J.city_hill(w * 0.5, h * 0.7, w * 0.8, h * 0.4, seed), ground(w, h, h * 0.72, "#2A1E1E", dy=0),
                     f'<path d="M{f(w * 0.6)} {f(h * 0.72)} C {f(w * 0.7)} {f(h * 0.82)} {f(w * 0.8)} {f(h * 0.92)} {f(w * 0.96)} {f(h + 10)}" stroke="#5A4A3A" stroke-width="{f(w * 0.05)}" fill="none"></path>'])
+
+# ---- 2 Kings 13–14 ------------------------------------------------------------------------------------------------------
+def arrow_window(p, w, h, seed, ground_smite=False):
+    """Elisha sick upon his bed, his hands upon the king's hands on the bow, the window opened eastward and the arrow of
+    victory flying out; ground_smite=True: the king smiting the ground with the arrows."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), S3.window(w * 0.66, h * 0.1, w * 0.26, h * 0.34, inner="#FFE6A0"),
+         bed(w, h, w * 0.04, w * 0.42, b, cover="#8A6A3A", head="#C98E66", hair="#8A847A")]
+    s = fit(b, h * 0.42)
+    if ground_smite:
+        o.append(king_fig(p, w * 0.62, b, s, cloth="#7A1A2A", up=[(-22, -158), (-30, -110), (-40, -40)]))
+        o.append("".join(f'<path d="M{f(w * 0.6 - 40 * s + i * 6)} {f(b)} L {f(w * 0.6 - 30 * s + i * 6)} {f(b - 40 * s)}" stroke="#3E2416" stroke-width="3"></path>' for i in range(3)))
+    else:
+        o.append(king_fig(p, w * 0.56, b, s, cloth="#7A1A2A", up=[(22, -158), (50, -170), (80, -180)]))
+        o.append(f'<path d="M{f(w * 0.56 + 80 * s)} {f(b - 210 * s)} C {f(w * 0.56 + 100 * s)} {f(b - 180 * s)} {f(w * 0.56 + 100 * s)} {f(b - 150 * s)} {f(w * 0.56 + 80 * s)} {f(b - 120 * s)}" stroke="#5A3A22" stroke-width="4" fill="none"></path>')
+        o.append(f'<path d="M{f(w * 0.72)} {f(h * 0.26)} L {f(w * 0.86)} {f(h * 0.2)}" stroke="#3E2416" stroke-width="3"></path><path d="M{f(w * 0.86)} {f(h * 0.2)} l -10 -2 l 4 8 Z" fill="#C8C2D6"></path>')
+    return "".join(o)
+
+def elisha_tomb(p, w, h, seed):
+    """The sepulchre of Elisha, a band of Moabites seen on the hills, the burying party hurrying (13:21)."""
+    o = [JA_cave(w, h, seed)]
+    o.append("".join(mk.person(p, round(w * (0.7 + i * 0.05)), round(h * 0.34), round(fit(h * 0.34, h * 0.26) * 0.4, 3), body="#1A0E10", cloth="#5A3A2A", kind="Tunic", sw=2, flip=True, extra=E4.SPEAR) for i in range(4)))
+    return "".join(o)
+import jos.art as _JA
+def JA_cave(w, h, seed): return _JA.cave(w, h, seed, sealed=False, dusk=True)
+
+def thistle_cedar(w, h, seed):
+    """The thistle that was in Lebanon and the cedar that was in Lebanon, and a wild beast passing by that trod down the thistle."""
+    o = [sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.5, seed, color="#6A7A5A", amp=24), ground(w, h, h * 0.76, "#8A7A5A", dy=0)]
+    x, y, s = w * 0.68, h * 0.8, min(1.2, h / 300)
+    o.append(f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})"><path d="M0 0 L 0 -140" stroke="#5A3A22" stroke-width="10"></path>'
+             + "".join(f'<path d="M{-80 + k * 12} {-40 - k * 26} L {80 - k * 12} {-40 - k * 26} L 0 {-66 - k * 26} Z" fill="#1F4A34" stroke="#0D0D0F" stroke-width="1.6"></path>' for k in range(5)) + '</g>')
+    tx = w * 0.24
+    o.append("".join(f'<path d="M{f(tx)} {f(y)} L {f(tx + dx)} {f(y - 40)}" stroke="#5A6A3A" stroke-width="3"></path><circle cx="{f(tx + dx)}" cy="{f(y - 44)}" r="6" fill="#8A4A8A" stroke="#0D0D0F" stroke-width="1.4"></circle>' for dx in (-14, 0, 14)))
+    o.append(J2.lion(w * 0.36, y + 4, min(0.6, h / 500), flip=True, roar=False))
+    return "".join(o)
+
+def wall_breach(w, h, seed):
+    """The wall of Jerusalem broken down from the gate of Ephraim unto the corner gate, four hundred cubits."""
+    return "".join([sky(w, h, "#5A4A5A", "#C8A080"), J.jericho(-10, w * 0.3, h * 0.36, h * 0.84, seed, towers=1, houses=True),
+                    J.collapse(w * 0.3, w * 0.74, h * 0.84, h * 0.3, seed, color="#B5652E"), J.jericho(w * 0.74, w + 10, h * 0.36, h * 0.84, seed + 1, towers=1, houses=True),
+                    ground(w, h, h * 0.84, "#4A3A30", dy=0), dim(w * 0.3, h * 0.92, w * 0.74, h * 0.92, "400 CUBITS")])
+
+def border_map(w, h):
+    """Jeroboam restoring the border of Israel from the entrance of Hamath unto the sea of the Arabah (a technical map)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M{f(w * 0.5)} {f(h * 0.1)} C {f(w * 0.52)} {f(h * 0.4)} {f(w * 0.5)} {f(h * 0.7)} {f(w * 0.52)} {f(h * 0.8)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>'
+             f'<ellipse cx="{f(w * 0.52)}" cy="{f(h * 0.86)}" rx="{f(w * 0.02)}" ry="{f(h * 0.06)}" fill="#2C9DB8"></ellipse>')
+    o.append(route([(w * 0.6, h * 0.06), (w * 0.52, h * 0.86)], color="#FFD23F"))
+    o.append(node(w * 0.6, h * 0.06, "ENTRANCE OF HAMATH", "#FFD23F", r=5, dy=14, size=9) + node(w * 0.52, h * 0.86, "SEA OF THE ARABAH", "#FFD23F", r=5, dy=-12, size=9)
+             + node(w * 0.7, h * 0.24, "DAMASCUS", "#8FD0E2", r=4, dy=-10, size=9) + node(w * 0.4, h * 0.56, "SAMARIA", "#D7261E", r=5, dy=-10, size=9))
+    return "".join(o)

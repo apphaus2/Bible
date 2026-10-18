@@ -32,5 +32,7 @@ META = {
      "blurb": "The vial of oil poured on Jehu's head in an inner chamber — I have anointed thee king over Israel; is it peace?; the driving is like the driving of Jehu the son of Nimshi, for he driveth furiously; the portion of Naboth; Jezebel at the window; the seventy sons; and the house of Baal broken down."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Joash", "range": "2 Kings 11–12", "bible_chapters": [11, 12],
      "blurb": "Athaliah destroys the seed royal, and Jehosheba hides the child Joash six years in the house of Jehovah; Jehoiada's covenant with the captains; the crown and the testimony — long live the king; Athaliah's cry, Treason! treason!; then Jehoash and the breaches of the house, the chest with a hole in its lid, and the hallowed things sent to Hazael."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Bones of Elisha", "range": "2 Kings 13–14", "bible_chapters": [13, 14],
+     "blurb": "Elisha sick unto death — my father, my father, the chariots of Israel; the arrow of victory shot out of the window eastward, and the ground smitten thrice; the dead man who touched the bones of Elisha and revived; Amaziah and the parable of the thistle and the cedar of Lebanon; the wall of Jerusalem broken down; and Jeroboam the son of Joash."},
   ],
 }
