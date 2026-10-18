@@ -56,6 +56,16 @@
    "prefixes": [
     "DEU-C05-"
    ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "The Place Which Jehovah Shall Choose",
+   "range": "Deuteronomy 11–12",
+   "blurb": "A land of hills and valleys that drinketh water of the rain of heaven; lay up these my words in your heart; I set before you this day a blessing and a curse, on Gerizim and on Ebal; and the place which Jehovah your God shall choose out of all your tribes, to put his name there.",
+   "prefixes": [
+    "DEU-C06-"
+   ]
   }
  ]
 }

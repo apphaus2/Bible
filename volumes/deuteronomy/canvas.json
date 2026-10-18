@@ -443,6 +443,90 @@
    "w": 760,
    "h": 1080,
    "title": "56 · What Doth Jehovah Thy God Require of Thee"
+  },
+  "DEU-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Place Which Jehovah Shall Choose"
+  },
+  "DEU-C06-D-P01-KnowYeThisDay.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Know Ye This Day"
+  },
+  "DEU-C06-D-P02-ALandWhichJehovahT.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · A Land Which Jehovah Thy God Careth For"
+  },
+  "DEU-C06-D-P03-ALandWhichJehovahT.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · A Land Which Jehovah Thy God Careth For"
+  },
+  "DEU-C06-D-P04-LayUpTheseMyWords.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Lay Up These My Words"
+  },
+  "DEU-C06-D-P05-ABlessingAndACurse.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · A Blessing and a Curse"
+  },
+  "DEU-C06-D-P06-ABlessingAndACurse.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · A Blessing and a Curse"
+  },
+  "DEU-C06-L-P01-ThePlaceWhichJehov.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The Place Which Jehovah Shall Choose"
+  },
+  "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · The Place Which Jehovah Shall Choose"
+  },
+  "DEU-C06-L-P03-WithinAllThyGates.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Within All Thy Gates"
+  },
+  "DEU-C06-L-P04-WithinAllThyGates.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Within All Thy Gates"
+  },
+  "DEU-C06-L-P05-TakeHeedToThyself.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Take Heed to Thyself"
   }
  },
  "order": [
@@ -507,7 +591,19 @@
   "DEU-C05-D-P06-HewTheeTwoTablesOf.dc.html",
   "DEU-C05-D-P07-HewTheeTwoTablesOf.dc.html",
   "DEU-C05-D-P08-WhatDothJehovahThy.dc.html",
-  "DEU-C05-D-P09-WhatDothJehovahThy.dc.html"
+  "DEU-C05-D-P09-WhatDothJehovahThy.dc.html",
+  "DEU-C06-00-Title.dc.html",
+  "DEU-C06-D-P01-KnowYeThisDay.dc.html",
+  "DEU-C06-D-P02-ALandWhichJehovahT.dc.html",
+  "DEU-C06-D-P03-ALandWhichJehovahT.dc.html",
+  "DEU-C06-D-P04-LayUpTheseMyWords.dc.html",
+  "DEU-C06-D-P05-ABlessingAndACurse.dc.html",
+  "DEU-C06-D-P06-ABlessingAndACurse.dc.html",
+  "DEU-C06-L-P01-ThePlaceWhichJehov.dc.html",
+  "DEU-C06-L-P02-ThePlaceWhichJehov.dc.html",
+  "DEU-C06-L-P03-WithinAllThyGates.dc.html",
+  "DEU-C06-L-P04-WithinAllThyGates.dc.html",
+  "DEU-C06-L-P05-TakeHeedToThyself.dc.html"
  ],
  "notes": {
   "Main": {
@@ -551,6 +647,13 @@
    "text": "Chapter 5 · The Tables of Stone (Deuteronomy 9–10)",
    "x": 0,
    "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Place Which Jehovah Shall Choose (Deuteronomy 11–12)",
+   "x": 0,
+   "y": 21000
   }
  },
  "designSystems": [],

@@ -88,6 +88,7 @@ There are two editions:
 | Deuteronomy | 3 · Hear, O Israel | 5–6 | title + 10 (pp. 30–39) | 58/58 verses full (laid out by `discourse.pack`) | `volumes/deuteronomy/` |
 | Deuteronomy | 4 · A People for His Own Possession | 7–8 | title + 8 (pp. 40–47) | 46/46 verses full | `volumes/deuteronomy/` |
 | Deuteronomy | 5 · The Tables of Stone | 9–10 | title + 9 (pp. 48–56) | 51/51 verses full | `volumes/deuteronomy/` |
+| Deuteronomy | 6 · The Place Which Jehovah Shall Choose | 11–12 | title + 11 (pp. 57–67) | 64/64 verses full (the statutes as spoken law cells, `picto.pick`) | `volumes/deuteronomy/` |
 
 **Genesis, Exodus, Leviticus and Numbers are complete.** Next: Deuteronomy (`tools/full/deu/`). Numbers is `tools/full/num/`
 (16 chapters, plan in `num/__init__.py`). Its chapters number their pages with `num/pages.py` (`PG = Pages(start)`, `@PG.P(...)`,

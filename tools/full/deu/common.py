@@ -64,10 +64,12 @@ def auto(c, a, b, moods=("calm",), budget=620, code="DEUT", arts=None, every=3, 
         k.pop("head", None); k.pop("stamp", None)
     return segs
 
-def heading(text, n=5):
+def heading(text, n=6):
+    """A cell heading from a law's opening words: up to the first stop if that comes within n+1 words, else n words."""
     import re as _re
-    t = _re.sub(r"^(And|But|For|Moreover|Also|Then|Now)\s+", "", text.strip())
-    words = _re.split(r"\s+", t)[:n]
+    t = _re.sub(r"^(And|But|For|Moreover|Also|Then|Now|Notwithstanding,)\s+", "", text.strip())
+    first = _re.split(r"[,;:.!?(]", t)[0].split()
+    words = first if len(first) <= n + 1 else _re.split(r"\s+", t)[:n]
     return _re.sub(r"[,;:.!?()]+$", "", " ".join(words)).upper()
 
 def laws(c, groups, head=None, lead=None):

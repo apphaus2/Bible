@@ -30,5 +30,7 @@ META = {
      "blurb": "Seven nations greater and mightier than thou, and the hornet sent before thee; Jehovah set his love upon you, not because ye were more in number; the manna and the forty years — man doth not live by bread only; and a good land of wheat and barley, vines and fig-trees and pomegranates: beware lest thou forget."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Tables of Stone", "range": "Deuteronomy 9–10", "bible_chapters": [9, 10],
      "blurb": "Not for thy righteousness: the golden calf at Horeb remembered, the tables cast down and broken, Moses fallen down before Jehovah forty days and forty nights; the tables hewn again and put in the ark; and now, Israel, what doth Jehovah thy God require of thee?"},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Place Which Jehovah Shall Choose", "range": "Deuteronomy 11–12", "bible_chapters": [11, 12],
+     "blurb": "A land of hills and valleys that drinketh water of the rain of heaven; lay up these my words in your heart; I set before you this day a blessing and a curse, on Gerizim and on Ebal; and the place which Jehovah your God shall choose out of all your tribes, to put his name there."},
   ],
 }

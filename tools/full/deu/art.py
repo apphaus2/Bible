@@ -82,3 +82,23 @@ def giants(w, h, seed):
     for i, x in enumerate((0.2, 0.42, 0.66, 0.86)):
         o.append(man("gi", w * x, h * 0.9, fit(h * 0.9, h * 0.1) * (1 - 0.1 * (i % 2)), "#1A0E1A"))
     return "".join(o)
+
+def gerizim_ebal(w, h, seed):
+    """Mount Gerizim (the blessing, green and lit) and mount Ebal (the curse, bare and dark), the valley between."""
+    o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#F3D8A0"></rect>', sun(w * 0.24, h * 0.18, 18, color="#FFE680", op=0.35)]
+    o.append(f'<path d="M-10 {f(h)} L {f(w * 0.24)} {f(h * 0.22)} L {f(w * 0.5)} {f(h)} Z" fill="#5A8A4A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    o.append(f'<path d="M{f(w * 0.5)} {f(h)} L {f(w * 0.76)} {f(h * 0.2)} L {f(w + 10)} {f(h)} Z" fill="#6A5A5A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    o.append(label(w * 0.24, h * 0.94, "GERIZIM · THE BLESSING", "#F3EFE6", 10) + label(w * 0.76, h * 0.94, "EBAL · THE CURSE", "#F3EFE6", 10))
+    return "".join(o)
+
+def rain(w, h, seed, shut=False):
+    """The rain of your land in its season (shut=True: the heavens shut up, the land cracked and bare)."""
+    r = random.Random(seed)
+    if shut:
+        o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#E8B880"></rect>', sun(w * 0.5, h * 0.2, 30, color="#FF8A3D", op=0.4), ground(w, h, h * 0.62, "#B8946A", dy=0)]
+        o.append("".join(f'<path d="M{f(r.uniform(0, w))} {f(r.uniform(h * 0.66, h))} l {f(r.uniform(-30, 30))} {f(r.uniform(6, 18))} l {f(r.uniform(-20, 20))} {f(r.uniform(6, 14))}" fill="none" stroke="#7A5A3A" stroke-width="2"></path>' for _ in range(24)))
+    else:
+        o = [f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="#5A6E8A"></rect>', ground(w, h, h * 0.62, "#6A9A4A", dy=0)]
+        o.append("".join(f'<path d="M{f(x)} {f(y)} l -6 18" stroke="#CFE6FF" stroke-width="2" opacity="0.8"></path>' for x, y in ((r.uniform(0, w), r.uniform(0, h * 0.6)) for _ in range(90))))
+        o.append("".join(f'<path d="M{x} {f(h * 0.62)} L {x} {f(h * 0.52)}" stroke="#C8A030" stroke-width="2"></path>' for x in range(10, int(w), 12)))
+    return "".join(o)

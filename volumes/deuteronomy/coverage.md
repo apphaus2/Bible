@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 316 verses — 316 full, 0 partial, 0 omitted.
+**So far:** 380 verses — 380 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · These Are the Words (Deuteronomy 1–2)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · The Tables of Stone (Deuteronomy 9–10)
 
 51 verses: 51 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · The Place Which Jehovah Shall Choose (Deuteronomy 11–12)
+
+64 verses: 64 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
