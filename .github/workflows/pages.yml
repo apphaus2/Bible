@@ -1,5 +1,7 @@
-# Build the Bible Manga website from volumes/ and deploy it to GitHub Pages (custom domain: bible.apphaus.us).
-# Repo setting needed once: Settings › Pages › Build and deployment › Source: "GitHub Actions".
+# Build the Bible Manga website from volumes/ and deploy it twice: to GitHub Pages (apphaus2.github.io/Bible) and to
+# Cloudflare Pages, which serves bible.apphaus.us (tools/site/cloudflare.sh creates the project, domain and DNS record).
+# Repo settings needed once: Settings › Pages › Source: "GitHub Actions" (no custom domain there), and the Actions
+# secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID; without them the Cloudflare step is skipped.
 name: Build and deploy site
 
 on:
@@ -19,6 +21,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -64,6 +68,13 @@ jobs:
 
       - name: Build the site
         run: python3 tools/site/rebuild_site.py --thumbs --out _site
+
+      - name: Deploy to Cloudflare Pages (bible.apphaus.us)
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: bash tools/site/cloudflare.sh
 
       - uses: actions/configure-pages@v5
 

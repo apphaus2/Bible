@@ -10,7 +10,7 @@ The output folder (default _site/, which is git-ignored) is cleared except for t
 tools/site/build_site.py writes the pages and tools/site/assets/* is copied in. With --thumbs, any thumbnail
 that is missing or whose source page changed (tracked by a hash in thumbs/.sources.json) is rendered with
 Playwright (needs node + the `playwright` package + Pillow); thumbnails no page uses any more are deleted.
-GitHub Actions (.github/workflows/pages.yml) runs exactly this and deploys _site/ to GitHub Pages (custom domain bible.apphaus.us)."""
+GitHub Actions (.github/workflows/pages.yml) runs exactly this and deploys _site/ to Cloudflare Pages (bible.apphaus.us) and GitHub Pages."""
 import hashlib, json, pathlib, shutil, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]

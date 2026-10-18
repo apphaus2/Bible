@@ -1,4 +1,4 @@
-"""Build the static website (_site/, deployed by GitHub Actions to bible.apphaus.us) from the volumes.
+"""Build the static website (_site/, deployed by GitHub Actions to bible.apphaus.us and GitHub Pages) from the volumes.
 
 Usage: python3 tools/site/build_site.py <out_dir> <key>=<dir> ...
   - each key names a volume folder (volumes/<id>/): canvas.json, volume.json, pages/

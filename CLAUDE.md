@@ -638,12 +638,15 @@ Never fall back to blobs or stick figures.
 A static site built from `volumes/`, served at https://bible.apphaus.us. Nothing generated is committed: on every push to `master`,
 `.github/workflows/pages.yml` checks each volume (`build_volume.py <vol> --check`), runs
 `rebuild_site.py --thumbs --out _site` (Python + Pillow, Node + Playwright Chromium) and deploys `_site/`
-as a GitHub Pages artifact. Thumbnails are cached between runs (actions/cache on `_site/thumbs`), so a
+twice: to GitHub Pages (https://apphaus2.github.io/Bible/) and, with `tools/site/cloudflare.sh`, to the Cloudflare
+Pages project `bible`, which serves https://bible.apphaus.us. Thumbnails are cached between runs (actions/cache on `_site/thumbs`), so a
 push only re-renders pages whose source changed; a cold build of all ~190 thumbnails takes about 2 minutes.
-One-time settings: repo Settings › Pages › Source: **GitHub Actions**, and Custom domain: **bible.apphaus.us** (with
-"Enforce HTTPS"); DNS: a CNAME record `bible` → `apphaus2.github.io` in the apphaus.us zone. (An Actions deployment
-ignores a CNAME file, so the domain lives only in the repo setting.) All links are relative, so the site works at the
-domain root and at apphaus2.github.io/Bible/ alike. Runs: the repo's Actions tab (or "Run workflow" by hand).
+One-time settings: repo Settings › Pages › Source: **GitHub Actions** (leave its custom domain empty: the domain belongs
+to Cloudflare), and two Actions secrets, `CLOUDFLARE_API_TOKEN` (permissions: Account › Cloudflare Pages › Edit; Zone ›
+DNS › Edit and Zone › Zone › Read on apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`. Without the secrets the Cloudflare step is
+skipped. `cloudflare.sh` is idempotent: the first run creates the Pages project, attaches bible.apphaus.us and adds the
+proxied CNAME `bible` → the project's pages.dev name in the apphaus.us zone; later runs only upload. All links are
+relative, so the site works at the domain root and at apphaus2.github.io/Bible/ alike. Runs: the repo's Actions tab (or "Run workflow" by hand).
 
 - `index.html`: "The Books" (one section per volume, a card per chapter), "The Text", then a table of contents.
 - `<volume>/chapter-NN/index.html` and `<volume>/chapter-NN/NN-<slug>.html` (page labels use the printed page

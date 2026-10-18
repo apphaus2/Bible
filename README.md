@@ -3,8 +3,8 @@
 **Read it: https://bible.apphaus.us**
 
 The Bible as a full-color manga in a 1980s cyberpunk-manga style, in the words of the
-ASV. GitHub Actions builds the website and deploys it to
-GitHub Pages on every push to `master`.
+ASV. On every push to `master` GitHub Actions builds the website and deploys it to Cloudflare Pages
+(bible.apphaus.us) and to GitHub Pages (apphaus2.github.io/Bible).
 
 - **The manga** (`volumes/`): one volume per book of the Bible, every scene and every line of
   dialogue word for word. In progress: Genesis through 2 Kings so far.
