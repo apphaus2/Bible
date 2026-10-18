@@ -884,6 +884,97 @@
    "w": 760,
    "h": 1080,
    "title": "113 · See, Thy Son Liveth"
+  },
+  "1KI-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Fire of Jehovah"
+  },
+  "1KI-C12-D-P01-InTheThirdYear.dc.html": {
+   "x": 840,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · In the Third Year"
+  },
+  "1KI-C12-D-P02-Obadiah.dc.html": {
+   "x": 1680,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Obadiah"
+  },
+  "1KI-C12-D-P03-Obadiah.dc.html": {
+   "x": 2520,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Obadiah"
+  },
+  "1KI-C12-D-P04-ThouTroublerOfIsra.dc.html": {
+   "x": 3360,
+   "y": 42300,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Thou Troubler of Israel"
+  },
+  "1KI-C12-D-P05-MountCarmel.dc.html": {
+   "x": 0,
+   "y": 43500,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Mount Carmel"
+  },
+  "1KI-C12-D-P06-OBaalHearUs.dc.html": {
+   "x": 840,
+   "y": 43500,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · O Baal, Hear Us"
+  },
+  "1KI-C12-D-P07-TwelveStones.dc.html": {
+   "x": 1680,
+   "y": 43500,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Twelve Stones"
+  },
+  "1KI-C12-D-P08-TwelveStones.dc.html": {
+   "x": 2520,
+   "y": 43500,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · Twelve Stones"
+  },
+  "1KI-C12-D-P09-TheFireOfJehovahFe.dc.html": {
+   "x": 3360,
+   "y": 43500,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · The Fire of Jehovah Fell"
+  },
+  "1KI-C12-D-P10-TheFireOfJehovahFe.dc.html": {
+   "x": 0,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · The Fire of Jehovah Fell"
+  },
+  "1KI-C12-D-P11-ACloudAsSmallAsAMa.dc.html": {
+   "x": 840,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · A Cloud as Small as a Man's Hand"
+  },
+  "1KI-C12-D-P12-ACloudAsSmallAsAMa.dc.html": {
+   "x": 1680,
+   "y": 44700,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · A Cloud as Small as a Man's Hand"
   }
  },
  "order": [
@@ -1011,7 +1102,20 @@
   "1KI-C11-E-P05-TheWidowOfZarephat.dc.html",
   "1KI-C11-E-P06-TheWidowOfZarephat.dc.html",
   "1KI-C11-E-P07-SeeThySonLiveth.dc.html",
-  "1KI-C11-E-P08-SeeThySonLiveth.dc.html"
+  "1KI-C11-E-P08-SeeThySonLiveth.dc.html",
+  "1KI-C12-00-Title.dc.html",
+  "1KI-C12-D-P01-InTheThirdYear.dc.html",
+  "1KI-C12-D-P02-Obadiah.dc.html",
+  "1KI-C12-D-P03-Obadiah.dc.html",
+  "1KI-C12-D-P04-ThouTroublerOfIsra.dc.html",
+  "1KI-C12-D-P05-MountCarmel.dc.html",
+  "1KI-C12-D-P06-OBaalHearUs.dc.html",
+  "1KI-C12-D-P07-TwelveStones.dc.html",
+  "1KI-C12-D-P08-TwelveStones.dc.html",
+  "1KI-C12-D-P09-TheFireOfJehovahFe.dc.html",
+  "1KI-C12-D-P10-TheFireOfJehovahFe.dc.html",
+  "1KI-C12-D-P11-ACloudAsSmallAsAMa.dc.html",
+  "1KI-C12-D-P12-ACloudAsSmallAsAMa.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1097,6 +1201,13 @@
    "text": "Chapter 11 · Elijah (1 Kings 16–17)",
    "x": 0,
    "y": 37900
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Fire of Jehovah (1 Kings 18)",
+   "x": 0,
+   "y": 42000
   }
  },
  "designSystems": [],

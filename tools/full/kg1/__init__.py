@@ -42,5 +42,7 @@ META = {
      "blurb": "Jeroboam's wife disguised at the door of the blind prophet at Shiloh — come in, thou wife of Jeroboam, for I am sent to thee with heavy tidings; the child dies at the threshold of Tirzah; Shishak carries away the shields of gold; and the reigns of Rehoboam, Abijam and Asa in Judah, Nadab and Baasha in Israel."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Elijah", "range": "1 Kings 16–17", "bible_chapters": [16, 17],
      "blurb": "Baasha, Elah, Zimri's seven days, and Omri who bought the hill Samaria; Ahab and Jezebel and the altar of Baal; then Elijah the Tishbite — there shall not be dew nor rain these years, but according to my word; the ravens at the brook Cherith; the widow of Zarephath, the jar of meal and the cruse of oil; and see, thy son liveth."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "The Fire of Jehovah", "range": "1 Kings 18", "bible_chapters": [18],
+     "blurb": "Obadiah who hid a hundred prophets in a cave; is it thou, thou troubler of Israel?; mount Carmel — how long go ye limping between the two sides?; O Baal, hear us, but there was no voice; twelve stones, a trench and four jars of water; the fire of Jehovah fell — Jehovah, he is God; and a cloud as small as a man's hand."},
   ],
 }

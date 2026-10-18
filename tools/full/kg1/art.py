@@ -1026,3 +1026,95 @@ def upper_chamber(p, w, h, seed, down=False):
         o.append(bed(w, h, w * 0.3, w * 0.8, b, cover="#E8E2D6", head="#D9A27A", hair="#2A1A10") + clay_lamp(w * 0.12, h * 0.5, min(1.2, h / 260)))
         o.append(E.kneel(w * 0.2, b, s * 0.8, color="#4A3A2A", skin="#B98A6E"))
     return "".join(o)
+
+# ---- 1 Kings 18 ---------------------------------------------------------------------------------------------------------
+def stone_altar(x, y, s=1.0, wet=False, fire=False, seed=1, trench=True):
+    """Elijah's altar of twelve stones with the wood and the offering upon it, a trench about it (wet: water running round)."""
+    r = random.Random(seed)
+    o = []
+    if trench:
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(110 * s)}" ry="{f(22 * s)}" fill="{"#2C9DB8" if wet else "#5A4A3A"}" stroke="#0D0D0F" stroke-width="2.4"></ellipse>'
+                 f'<ellipse cx="{f(x)}" cy="{f(y - 4 * s)}" rx="{f(84 * s)}" ry="{f(14 * s)}" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    for row, n in enumerate((5, 4, 3)):
+        for i in range(n):
+            sx = x + (i - (n - 1) / 2) * 30 * s; sy = y - 18 * s - row * 22 * s
+            o.append(f'<ellipse cx="{f(sx)}" cy="{f(sy)}" rx="{f(16 * s)}" ry="{f(12 * s)}" fill="{r.choice(["#8A8478", "#A89E92", "#7A746A"])}" stroke="#0D0D0F" stroke-width="1.8"></ellipse>')
+    wy = y - 18 * s - 3 * 22 * s
+    o.append("".join(f'<path d="M{f(x - 50 * s)} {f(wy - k * 7 * s)} L {f(x + 50 * s)} {f(wy - k * 7 * s - 4 * s)}" stroke="#6A4A2A" stroke-width="{f(6 * s)}" stroke-linecap="round"></path>' for k in range(3)))
+    o.append(f'<path d="M{f(x - 34 * s)} {f(wy - 24 * s)} C {f(x - 30 * s)} {f(wy - 46 * s)} {f(x + 30 * s)} {f(wy - 46 * s)} {f(x + 34 * s)} {f(wy - 24 * s)} Z" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="2"></path>')
+    if wet:
+        o.append("".join(f'<path d="M{f(x + d * 40 * s)} {f(wy - 10 * s)} C {f(x + d * 46 * s)} {f(wy + 20 * s)} {f(x + d * 52 * s)} {f(y - 30 * s)} {f(x + d * 60 * s)} {f(y - 6 * s)}" stroke="#8FD0E2" stroke-width="3" fill="none"></path>' for d in (-1, 1)))
+    if fire:
+        o.append(E.blaze(x, y - 10 * s, 120 * s, 220 * s, seed, n=9))
+    return "".join(o)
+
+def carmel(p, w, h, seed, stage="gather"):
+    """Mount Carmel: the people on the slopes; stage 'gather' (Elijah before the people, the prophets of Baal massed), 'baal'
+    (the prophets leaping about their altar, dark figures, nothing else drawn), 'water' (jars poured on Elijah's altar), 'fire'
+    (the fire of Jehovah falling from a dark sky; the people on their faces)."""
+    r = random.Random(seed); b = h * 0.94
+    dark = stage == "fire"
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A1A3A" if dark else "#8FD0E2", "#C8603A" if dark else "#F3E8C8"),
+         f'<path d="M-10 {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.3)} {f(w * 0.6)} {f(h * 0.26)} {f(w + 10)} {f(h * 0.4)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="{"#3A3A2A" if dark else "#7A8A5A"}" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         ground(w, h, h * 0.64, "#4A4A3A" if dark else "#9A9A6A", dy=0)]
+    s = fit(b, h * 0.36)
+    if stage == "gather":
+        o.append(elijah_fig(p, w * 0.5, b, s, up=[(-22, -158), (-40, -196), (-46, -228)]))
+        o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.36, h * 0.66, b, 10, s * 0.5, s * 0.9))
+        for i in range(10):
+            x = w * (0.66 + (i % 5) * 0.07); y = h * (0.7 + (i // 5) * 0.1)
+            o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * 0.24), 3), body="#2A140C", cloth="#5A1A2A", sw=2, flip=True, extra=A.headcloth("#5A1A2A")))
+    elif stage == "baal":
+        o.append(horned_altar(w * 0.5, h * 0.78, min(0.9, h / 360)))
+        o.append(f'<path d="M{f(w * 0.44)} {f(h * 0.56)} L {f(w * 0.56)} {f(h * 0.56)}" stroke="#6A4A2A" stroke-width="10"></path>')
+        for i in range(8):
+            a = i * 0.785; x = w * 0.5 + math.cos(a) * w * 0.3; y = h * 0.82 + math.sin(a) * h * 0.08
+            o.append(mk.person(p, round(x), round(y), round(fit(y, y - h * 0.3), 3), body="#1A0E10", cloth="#3A1A2A", sw=2, flip=i % 2 == 1,
+                               up=[(-22, -158), (-50, -200), (-40, -240)] if i % 2 else [(-22, -158), (-46, -176), (-66, -200)]))
+        o.append(sun(w * 0.8, h * 0.16, 24, color="#FFF4C2", op=0.6))
+    elif stage == "water":
+        o.append(stone_altar(w * 0.5, h * 0.86, min(1.1, h / 300), wet=True, seed=seed))
+        for i, x in enumerate((0.22, 0.78)):
+            o.append(man(p, w * x, b, s, ["#6A5A3A", "#3A4A6A"][i], flip=i == 1, up=[(22, -158), (40, -200), (56, -210)] if i == 0 else [(22, -158), (40, -200), (56, -210)]))
+        o.append(elijah_fig(p, w * 0.08, b, s * 0.9))
+    else:
+        o.append(V.rays(w * 0.5, -h * 0.2, 30, 14, h * 1.2, color="#FFB04A", op=0.35))
+        o.append(f'<path d="M{f(w * 0.4)} -10 L {f(w * 0.46)} {f(h * 0.4)} L {f(w * 0.42)} {f(h * 0.42)} L {f(w * 0.5)} {f(h * 0.7)} L {f(w * 0.56)} {f(h * 0.4)} L {f(w * 0.6)} -10 Z" fill="#FFE680" opacity="0.8"></path>')
+        o.append(stone_altar(w * 0.5, h * 0.86, min(1.1, h / 300), fire=True, seed=seed))
+        for i in range(8):
+            o.append(N.prostrate(w * (0.04 + i * 0.12) if i < 4 else w * (0.52 + (i - 4) * 0.12 + 0.08), b - (i % 2) * 10, s * 0.5, color=WAR[i % 4], skin="#9A6A4A", flip=i >= 4))
+    return "".join(o)
+
+def kishon(p, w, h, seed):
+    """The brook Kishon below Carmel at evening, its banks empty (18:40 told in words only)."""
+    return "".join([sky(w, h, "#2A1A3A", "#C8603A"), hills(w, h, h * 0.4, seed, color="#3A2A2A", amp=18), ground(w, h, h * 0.56, "#3A2A22", dy=0),
+                    f'<path d="M-10 {f(h * 0.72)} C {f(w * 0.3)} {f(h * 0.66)} {f(w * 0.6)} {f(h * 0.8)} {f(w + 10)} {f(h * 0.72)}" stroke="#5A3A4A" stroke-width="22" fill="none"></path>',
+                    f'<path d="M-10 {f(h * 0.72)} C {f(w * 0.3)} {f(h * 0.66)} {f(w * 0.6)} {f(h * 0.8)} {f(w + 10)} {f(h * 0.72)}" stroke="#C86A4A" stroke-width="4" fill="none" opacity="0.5"></path>'])
+
+def small_cloud(p, w, h, seed, rain=False):
+    """The top of Carmel: Elijah bowed down with his face between his knees, his servant looking toward the sea, a cloud as
+    small as a man's hand; rain=True: the heavens black with clouds and wind, and a great rain."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A2A3A" if rain else "#8FD0E2", "#5A5A6A" if rain else "#E8F6FA"),
+         f'<rect x="-10" y="{f(h * 0.5)}" width="{f(w + 20)}" height="{f(h * 0.1)}" fill="#1F6F9A"></rect>',
+         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.7)} L {f(w * 0.5)} {f(h * 0.6)} L {f(w + 10)} {f(h * 0.66)} L {f(w + 10)} {f(h + 10)} Z" fill="#6A7A4A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    s = fit(b, h * 0.36)
+    if rain:
+        r = random.Random(seed)
+        o.append("".join(f'<path d="M{f(r.uniform(0, w))} {f(r.uniform(0, h))} l -8 26" stroke="#B8C8E8" stroke-width="2" opacity="0.7"></path>' for _ in range(90)))
+        o.append(E3.chariot(w * 0.66, b, min(0.9, h / 360), color="#3A2214", driver=AHAB_C))
+        o.append(S4.runner(p, w * 0.3, b, s, cloth="#4A3A2A", body=SKIN))
+    else:
+        o.append(f'<ellipse cx="{f(w * 0.74)}" cy="{f(h * 0.44)}" rx="{f(w * 0.03)}" ry="{f(h * 0.015)}" fill="#F3EFE6"></ellipse>')
+        o.append(E.kneel(w * 0.3, b, s * 0.8, color="#5A3A1E", skin="#B98A6E"))
+        o.append(man(p, w * 0.6, b - h * 0.04, s * 0.9, "#6A5A3A", up=[(22, -158), (30, -180), (26, -200)]))
+    return "".join(o)
+
+def obadiah_way(p, w, h, seed):
+    """Obadiah in the way fallen on his face before Elijah."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFE6A0", "#E8C890"), hills(w, h, h * 0.5, seed, color="#9A8A6A", amp=12), ground(w, h, h * 0.6, "#C8B080", dy=0)]
+    s = fit(b, h * 0.4)
+    o.append(elijah_fig(p, w * 0.26, b, s))
+    o.append(N.prostrate(w * 0.6, b, s * 0.8, color="#2A5A6A", skin="#C98E66", flip=True))
+    return "".join(o)
