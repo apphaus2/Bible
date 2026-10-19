@@ -1,0 +1,114 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:04:43Z"
+ },
+ "title": "Nehemiah — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "NEH-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Wall of Jerusalem"
+  },
+  "NEH-C01-D-P01-ISatDownAndWept.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · I Sat Down and Wept"
+  },
+  "NEH-C01-D-P02-ISatDownAndWept.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · I Sat Down and Wept"
+  },
+  "NEH-C01-E-P01-WhyIsThyCountenanc.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Why Is Thy Countenance Sad?"
+  },
+  "NEH-C01-E-P02-WhyIsThyCountenanc.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Why Is Thy Countenance Sad?"
+  },
+  "NEH-C01-E-P03-BeyondTheRiver.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Beyond the River"
+  },
+  "NEH-C01-F-P01-IAroseInTheNight.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · I Arose in the Night"
+  },
+  "NEH-C01-F-P02-LetUsRiseUpAndBuil.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Let Us Rise Up and Build"
+  },
+  "NEH-C01-F-P03-TheyLaughedUsToSco.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · They Laughed Us to Scorn"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "NEH-C01-00-Title.dc.html",
+  "NEH-C01-D-P01-ISatDownAndWept.dc.html",
+  "NEH-C01-D-P02-ISatDownAndWept.dc.html",
+  "NEH-C01-E-P01-WhyIsThyCountenanc.dc.html",
+  "NEH-C01-E-P02-WhyIsThyCountenanc.dc.html",
+  "NEH-C01-E-P03-BeyondTheRiver.dc.html",
+  "NEH-C01-F-P01-IAroseInTheNight.dc.html",
+  "NEH-C01-F-P02-LetUsRiseUpAndBuil.dc.html",
+  "NEH-C01-F-P03-TheyLaughedUsToSco.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Nehemiah Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Wall of Jerusalem (Nehemiah 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

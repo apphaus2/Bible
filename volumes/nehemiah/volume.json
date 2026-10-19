@@ -1,0 +1,21 @@
+{
+ "id": "nehemiah",
+ "order": 16,
+ "name": "Nehemiah",
+ "kanji": "ネヘミヤ記",
+ "thumb": "vol-nehemiah-",
+ "lede": "The sixteenth book of the Bible, in full: Nehemiah the cupbearer weeping for Jerusalem, the night ride round the broken wall, the builders with a weapon in one hand, the wall finished in fifty and two days, Ezra reading the law from the pulpit of wood, the sealed covenant and the dedication of the wall with singing, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Wall of Jerusalem",
+   "range": "Nehemiah 1–2",
+   "blurb": "In Shushan the palace word comes from Judah: the wall of Jerusalem is broken down, and the gates thereof are burned with fire; Nehemiah weeps and prays; the cupbearer before Artaxerxes — why is thy countenance sad?; the king's letters and the captains; then by night, round the broken walls, and the call: let us rise up and build.",
+   "prefixes": [
+    "Main.dc.html",
+    "NEH-C01-"
+   ]
+  }
+ ]
+}
