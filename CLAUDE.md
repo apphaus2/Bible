@@ -270,6 +270,25 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Song of Solomon | 2 · A Garden Shut Up | 3–5 | title + 12 (pp. 9–20) | 43/43 verses full (4:1–5 and 5:10–16 as plates of likeness cells only) | `volumes/songofsolomon/` |
 | Song of Solomon | 3 · Love Is Strong as Death | 6–8 | title + 9 (pp. 21–29) | 40/40 verses full (7:1–9 as plates of cells only; 8:6–7 a flame over the floods) | `volumes/songofsolomon/` |
 | **Song of Solomon** | **complete: cover + 3 chapters** | **1–8** | **33 pages (29 numbered)** | **117 verses: all full** | `volumes/songofsolomon/` |
+| Isaiah | 1 · The Vineyard of Jehovah | 1–5 | cover + title + 20 (pp. 1–20) | 115/115 verses full (the vineyard, scarlet and snow, the ornaments of 3:18–23 as a plate) | `volumes/isaiah/` |
+| Isaiah | 2 · Holy, Holy, Holy | 6–9 | title + 17 (pp. 21–37) | 81/81 verses full (the vision as light, smoke, an empty throne and six-winged seraphim, God never drawn) | `volumes/isaiah/` |
+| Isaiah | 3 · The Root of Jesse | 10–12 | title + 10 (pp. 38–47) | 56/56 verses full (the march from Aiath to Nob as a map; the peaceable kingdom) | `volumes/isaiah/` |
+| Isaiah | 4 · How Art Thou Fallen | 13–16 | title + 15 (pp. 48–62) | 77/77 verses full (13:15–16 and 14:19–21 words only; Moab as a map) | `volumes/isaiah/` |
+| Isaiah | 5 · The Burden of Egypt | 17–20 | title + 12 (pp. 63–74) | 52/52 verses full (Isaiah's sign as sackcloth and sandals by the road) | `volumes/isaiah/` |
+| Isaiah | 6 · Watchman, What of the Night? | 21–23 | title + 13 (pp. 75–87) | 60/60 verses full (the valley of vision as a plan; Tyre) | `volumes/isaiah/` |
+| Isaiah | 7 · Thy Dead Shall Live | 24–27 | title + 13 (pp. 88–100) | 69/69 verses full (the feast on the mountain and the veil) | `volumes/isaiah/` |
+| Isaiah | 8 · In Returning and Rest | 28–30 | title + 18 (pp. 101–118) | 86/86 verses full (the tried corner-stone and the threshing as plates) | `volumes/isaiah/` |
+| Isaiah | 9 · The Desert Shall Blossom | 31–35 | title + 16 (pp. 119–134) | 80/80 verses full (34:2–7 words over Edom's mountains; the way of holiness) | `volumes/isaiah/` |
+| Isaiah | 10 · On Whom Dost Thou Trust? | 36–39 | title + 19 (pp. 135–153) | 90/90 verses full (2 Kings' drawings and faces; 37:36–38 words over the silent camp) | `volumes/isaiah/` |
+| Isaiah | 11 · Comfort Ye My People | 40–42 | title + 17 (pp. 154–170) | 85/85 verses full (the measures plate; one from the east as a map) | `volumes/isaiah/` |
+| Isaiah | 12 · Ye Are My Witnesses | 43–45 | title + 14 (pp. 171–184) | 81/81 verses full (the idol's making as a plate; the doors of brass before Cyrus) | `volumes/isaiah/` |
+| Isaiah | 13 · Go Ye Forth from Babylon | 46–48 | title + 10 (pp. 185–194) | 50/50 verses full (Bel and Nebo on the beasts) | `volumes/isaiah/` |
+| Isaiah | 14 · A Light to the Gentiles | 49–51 | title + 15 (pp. 195–209) | 60/60 verses full (the servant never drawn) | `volumes/isaiah/` |
+| Isaiah | 15 · A Man of Sorrows | 52–55 | title + 13 (pp. 210–222) | 57/57 verses full (52:13–53:12 words over a dry root, an empty road, stray sheep, a silent lamb; the servant never drawn) | `volumes/isaiah/` |
+| Isaiah | 16 · The Fast That I Have Chosen | 56–59 | title + 15 (pp. 223–237) | 68/68 verses full (the armor laid out as a plate) | `volumes/isaiah/` |
+| Isaiah | 17 · Arise, Shine | 60–62 | title + 9 (pp. 238–246) | 45/45 verses full (the anointed one never drawn: oil, scroll, opened prison) | `volumes/isaiah/` |
+| Isaiah | 18 · New Heavens and a New Earth | 63–66 | title + 17 (pp. 247–263) | 80/80 verses full (63:1–6 over an empty winepress at sunset) | `volumes/isaiah/` |
+| **Isaiah** | **complete: cover + 18 chapters** | **1–66** | **282 pages (263 numbered)** | **1,292 verses: all full** | `volumes/isaiah/` |
 | Jeremiah | 1 · The Almond Rod | 1–3 | cover + title + 16 (pp. 1–16) | 81/81 verses full (his mouth touched as a shaft of light, the prophet kneeling; the almond rod and the caldron) | `volumes/jeremiah/` |
 | Jeremiah | 2 · Evil from the North | 4–6 | title + 17 (pp. 17–33) | 92/92 verses full (waste and void as dark trembling hills) | `volumes/jeremiah/` |
 | Jeremiah | 3 · The Temple of Jehovah | 7–9 | title + 17 (pp. 34–50) | 82/82 verses full (Topheth as altars and smoke, no one drawn) | `volumes/jeremiah/` |
@@ -294,8 +313,11 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Lamentations | 2 · His Compassions Fail Not | 3–5 | title + 21 (pp. 13–33) | 110/110 verses full (4:4–10 and 5:9–12 in words over empty streets) | `volumes/lamentations/` |
 | **Lamentations** | **complete: cover + 2 chapters** | **1–5** | **36 pages (33 numbered)** | **154 verses: all full** | `volumes/lamentations/` |
 
-**Genesis through the Song of Solomon, and Jeremiah and Lamentations (twenty-four volumes), are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Jeremiah is `tools/full/jer/` (19 chapters): prophecy by `jer.common.O`/`S` (whole verses in the Voice box beside Jeremiah's face or over a
+**Genesis through Lamentations (twenty-five volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Isaiah is `tools/full/isa/` (18 chapters): prophecy by `isa.common.S("c:a-b", kind, looks, ...)`, which cuts a run of verses into panels
+alternating Isaiah's face (`kg2.common.ISAIAH` + moods) with drawings `A(fn, bg, h=)`; `art2.nations_map(hi=, arrows=, show=)` serves every
+burden of the nations; the servant and the anointed one are never drawn (a dry root, an empty road, a silent lamb).
+Jeremiah is `tools/full/jer/` (19 chapters): prophecy by `jer.common.O`/`S` (whole verses in the Voice box beside Jeremiah's face or over a
 drawing; `cut(ref, at)` splits "Jehovah said unto me,"), Jeremiah's face `jer.common.jer(age, mood)` (dark blue-grey headcloth, beardless
 at his call, greying), `jer.art.near_east(...)` a map of the nations, `jer/pagepack.py` merges lone panels. Lamentations is
 `tools/full/lam/`: `lam.common.L(c, a, b, d=… | t=…)` one song box per verse over a drawing or beside a mourner's face.
@@ -319,8 +341,7 @@ Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` 
 above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
-`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Isaiah,
-Ezekiel, Daniel–Amos and Obadiah–Malachi are being built in parallel worktrees (packages `isa`, `ezk`, `dan`, `hos`, `jol`, `amo`, `oba` … `mal`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Ezekiel, Daniel–Amos and Obadiah–Malachi are being built in parallel worktrees (packages `ezk`, `dan`, `hos`, `jol`, `amo`, `oba` … `mal`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
@@ -878,6 +899,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (Isaiah through Malachi in progress; then the New Testament).
+- On through the Bible, book by book (Ezekiel through Malachi in progress; then the New Testament).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.
