@@ -270,9 +270,36 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Song of Solomon | 2 · A Garden Shut Up | 3–5 | title + 12 (pp. 9–20) | 43/43 verses full (4:1–5 and 5:10–16 as plates of likeness cells only) | `volumes/songofsolomon/` |
 | Song of Solomon | 3 · Love Is Strong as Death | 6–8 | title + 9 (pp. 21–29) | 40/40 verses full (7:1–9 as plates of cells only; 8:6–7 a flame over the floods) | `volumes/songofsolomon/` |
 | **Song of Solomon** | **complete: cover + 3 chapters** | **1–8** | **33 pages (29 numbered)** | **117 verses: all full** | `volumes/songofsolomon/` |
+| Jeremiah | 1 · The Almond Rod | 1–3 | cover + title + 16 (pp. 1–16) | 81/81 verses full (his mouth touched as a shaft of light, the prophet kneeling; the almond rod and the caldron) | `volumes/jeremiah/` |
+| Jeremiah | 2 · Evil from the North | 4–6 | title + 17 (pp. 17–33) | 92/92 verses full (waste and void as dark trembling hills) | `volumes/jeremiah/` |
+| Jeremiah | 3 · The Temple of Jehovah | 7–9 | title + 17 (pp. 34–50) | 82/82 verses full (Topheth as altars and smoke, no one drawn) | `volumes/jeremiah/` |
+| Jeremiah | 4 · The Broken Covenant | 10–12 | title + 13 (pp. 51–63) | 65/65 verses full | `volumes/jeremiah/` |
+| Jeremiah | 5 · The Marred Girdle | 13–15 | title + 14 (pp. 64–77) | 70/70 verses full | `volumes/jeremiah/` |
+| Jeremiah | 6 · The Potter's House | 16–18 | title + 16 (pp. 78–93) | 71/71 verses full | `volumes/jeremiah/` |
+| Jeremiah | 7 · The Earthen Bottle | 19–22 | title + 16 (pp. 94–109) | 77/77 verses full (19:9 in words over the walls at night) | `volumes/jeremiah/` |
+| Jeremiah | 8 · The Cup of the Wine of Wrath | 23–25 | title + 16 (pp. 110–125) | 88/88 verses full (the nations that drink the cup as lot boards and a map) | `volumes/jeremiah/` |
+| Jeremiah | 9 · The Yoke | 26–28 | title + 14 (pp. 126–139) | 63/63 verses full (Uriah's death in words only) | `volumes/jeremiah/` |
+| Jeremiah | 10 · A New Covenant | 29–31 | title + 18 (pp. 140–157) | 96/96 verses full (the measuring line of the city as a plan) | `volumes/jeremiah/` |
+| Jeremiah | 11 · The Field at Anathoth | 32–33 | title + 15 (pp. 158–172) | 70/70 verses full | `volumes/jeremiah/` |
+| Jeremiah | 12 · The Roll | 34–36 | title + 16 (pp. 173–188) | 73/73 verses full | `volumes/jeremiah/` |
+| Jeremiah | 13 · The Dungeon | 37–39 | title + 15 (pp. 189–203) | 67/67 verses full (39:5–7 in words over the empty plain of Riblah) | `volumes/jeremiah/` |
+| Jeremiah | 14 · Gedaliah | 40–42 | title + 13 (pp. 204–216) | 56/56 verses full (41:2–9 in words over the shut house and the pit's mouth) | `volumes/jeremiah/` |
+| Jeremiah | 15 · Into Egypt | 43–45 | title + 11 (pp. 217–227) | 48/48 verses full | `volumes/jeremiah/` |
+| Jeremiah | 16 · Against the Nations | 46–48 | title + 15 (pp. 228–242) | 82/82 verses full (Egypt, the Philistines and Moab as maps) | `volumes/jeremiah/` |
+| Jeremiah | 17 · Babylon Is Taken | 49–50 | title + 17 (pp. 243–259) | 85/85 verses full | `volumes/jeremiah/` |
+| Jeremiah | 18 · The Hammer of the Whole Earth | 51 | title + 13 (pp. 260–272) | 64/64 verses full (Seraiah's book sunk in the Euphrates) | `volumes/jeremiah/` |
+| Jeremiah | 19 · The Fall of Jerusalem | 52 | title + 7 (pp. 273–279) | 34/34 verses full (2 Kings' drawings reused; Riblah in words only) | `volumes/jeremiah/` |
+| **Jeremiah** | **complete: cover + 19 chapters** | **1–52** | **299 pages (279 numbered)** | **1,364 verses: all full** | `volumes/jeremiah/` |
+| Lamentations | 1 · How Doth the City Sit Solitary | 1–2 | cover + title + 12 (pp. 1–12) | 44/44 verses full (one song box per verse; 2:11–12 and 2:20–21 in words over empty streets) | `volumes/lamentations/` |
+| Lamentations | 2 · His Compassions Fail Not | 3–5 | title + 21 (pp. 13–33) | 110/110 verses full (4:4–10 and 5:9–12 in words over empty streets) | `volumes/lamentations/` |
+| **Lamentations** | **complete: cover + 2 chapters** | **1–5** | **36 pages (33 numbered)** | **154 verses: all full** | `volumes/lamentations/` |
 
-**Genesis through the Song of Solomon (twenty-two volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Psalms is `tools/full/psa/` (17 chapters by the five books): `psa.text` cuts what `asv.Book` drops — the superscriptions (`TITLES`), the
+**Genesis through the Song of Solomon, and Jeremiah and Lamentations (twenty-four volumes), are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Jeremiah is `tools/full/jer/` (19 chapters): prophecy by `jer.common.O`/`S` (whole verses in the Voice box beside Jeremiah's face or over a
+drawing; `cut(ref, at)` splits "Jehovah said unto me,"), Jeremiah's face `jer.common.jer(age, mood)` (dark blue-grey headcloth, beardless
+at his call, greying), `jer.art.near_east(...)` a map of the nations, `jer/pagepack.py` merges lone panels. Lamentations is
+`tools/full/lam/`: `lam.common.L(c, a, b, d=… | t=…)` one song box per verse over a drawing or beside a mourner's face.
+Psalms is `tools/full/psa/` (17 chapters by the five books): `psa.text` cuts what `asv.Book` drops — the superscriptions (`TITLES`), the
 book heads (`BOOKS`), Psalm 119's first letter head and each verse's poetic line breaks — straight from `ref/asv`; they are `data-label`
 heads, so the text check skips them. `psa.layout` copies `discourse.pack` with a red PSALM N head and song boxes one poetic line to a
 row; a chapter is a list of `psa.common.psalm(n, "1 tree | 4 chaff | 10 DAVID_KING", god={...})` plans (scenes from `psa.art.SCENES`,
@@ -293,7 +320,7 @@ above roll cells on every page of a list chapter). Nehemiah: black beard, slate-
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
 `pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Isaiah,
-Jeremiah–Lamentations, Ezekiel, Daniel–Amos and Obadiah–Malachi are being built in parallel worktrees (packages `isa`, `jer`, `lam`, `ezk`, `dan`, `hos`, `jol`, `amo`, `oba` … `mal`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+Ezekiel, Daniel–Amos and Obadiah–Malachi are being built in parallel worktrees (packages `isa`, `ezk`, `dan`, `hos`, `jol`, `amo`, `oba` … `mal`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
