@@ -21,5 +21,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Vanity of Vanities", "range": "Ecclesiastes 1–3", "bible_chapters": [1, 2, 3],
      "blurb": "The words of the Preacher: vanity of vanities, all is vanity; the sun ariseth and goeth down, the wind turneth about, all the rivers run into the sea, and there is no new thing under the sun; his great works, his houses and pools and singers, and all a striving after wind; and for everything there is a season — a time to be born, and a time to die."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Two Are Better than One", "range": "Ecclesiastes 4–6", "bible_chapters": [4, 5, 6],
+     "blurb": "The tears of the oppressed, and they had no comforter; better is a handful with quietness; one that is alone, and he hath not a second; two are better than one, and a threefold cord is not quickly broken; keep thy foot when thou goest to the house of God — let thy words be few; the sleep of a laboring man is sweet; naked shall he go again as he came; and his days as a shadow."},
   ],
 }

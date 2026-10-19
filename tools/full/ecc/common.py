@@ -28,6 +28,15 @@ def pack(segs, prefix, start, **k):
     k.setdefault("min_size", 12.5)
     return _pack(segs, prefix, start, book="Ecclesiastes", code=CODE, **k)
 
+def paged(groups, prefix, start, end="", **k):
+    """Pack each group of segments onto a page of its own (pack may still split a group that will not fit): for laying out
+    a chapter page by page. The last head seen carries over to the following pages; the end mark goes on the last."""
+    out, head = [], ""
+    for i, g in enumerate(groups):
+        out += pack(g, f"{prefix}{chr(65 + i)}", start + len(out), default_head=head, end=end if i == len(groups) - 1 else "", **k)
+        head = next((s["head"] for s in reversed(g) if s["head"]), head)
+    return out
+
 def label(refs):
     a, _, b = refs.partition("-")
     return f"{CODE} {a}" + (f"–{b}" if b else "")
@@ -36,9 +45,23 @@ def face(refs, tok, lines=None, bg=GOLDEN, **k):
     """The Preacher's face beside his words: refs "1:8-9" (each verse its own speech box) unless lines are given."""
     return seg(lines or says(refs), label(refs), tok=tok, bg=bg, **k)
 
-def drawn(refs, art, bg, lines=None, **k):
-    """Song lines (each verse its own box) over a drawing: words at the top, the drawing below."""
-    return seg(lines or sgs(refs), label(refs), bg=bg, art=art, **k)
+def under(fn, lines, k=None):
+    """A drawing fn(w, h) set just under the column of words at the top of its panel: the words' height is estimated for the
+    panel's real size (as speech.orate sets them), so the drawing fills all the room left below them."""
+    import speech
+    def art(w, h):
+        kk = k
+        if kk is None:
+            bw = w - 24
+            s = speech.fit(lines, bw, h * 0.62)
+            kk = min(0.62, (speech._height(lines, bw, s) + 34 + 10) / h)
+        return f'<g transform="translate(0 {h * kk:.1f})">' + fn(w, h * (1 - kk)) + '</g>'
+    return art
+
+def drawn(refs, art, bg, lines=None, k=None, **kw):
+    """Song lines (each verse its own box) over a drawing fn(w, h): words at the top, the drawing filling the room below."""
+    lines = lines or sgs(refs)
+    return seg(lines, label(refs), bg=bg, art=under(art, lines, k), **kw)
 
 DUSK = "radial-gradient(circle at 70% 30%, #FFB04A 0 20px, #8A3A5A 200px, #1A1028 420px)"
 DAWN = "radial-gradient(circle at 70% 30%, #FFF4C2 0 24px, #8FD0E2 170px, #2A4A6A 420px)"

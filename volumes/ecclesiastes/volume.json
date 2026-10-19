@@ -16,6 +16,16 @@
     "Main.dc.html",
     "ECC-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Two Are Better than One",
+   "range": "Ecclesiastes 4–6",
+   "blurb": "The tears of the oppressed, and they had no comforter; better is a handful with quietness; one that is alone, and he hath not a second; two are better than one, and a threefold cord is not quickly broken; keep thy foot when thou goest to the house of God — let thy words be few; the sleep of a laboring man is sweet; naked shall he go again as he came; and his days as a shadow.",
+   "prefixes": [
+    "ECC-C02-"
+   ]
   }
  ]
 }

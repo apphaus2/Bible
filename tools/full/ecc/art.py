@@ -356,3 +356,215 @@ def man_beast(p, w, h, seed):
         x, y = r.uniform(0, w), r.uniform(h * 0.3, h * 0.9)
         o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * r.uniform(0.04, 0.12))}" ry="{f(h * 0.02)}" fill="#C8A07A" opacity="0.35"></ellipse>')
     return "".join(o)
+
+# ---- Ecclesiastes 4 -----------------------------------------------------------------------------------------------------
+ROD_UP = '<path d="M-64 -190 L -96 -250" stroke="#3A2214" stroke-width="5" stroke-linecap="round"></path>'
+
+def oppressed(p, w, h, seed):
+    """The tears of such as were oppressed, and they had no comforter: bowed figures at their labor among the stacks of a
+    brick field at dusk, an overseer standing over them with his rod raised — on the side of the oppressors there was power."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#4A2A3A", "#C86A4A"), hills(w, h, h * 0.5, seed, color="#6A3A3A", amp=8, step=90), ground(w, h, h * 0.6, "#A8704A", dy=0)]
+    for x in (0.08, 0.5, 0.62):
+        for row in range(3):
+            for col in range(3 - row):
+                bx = w * x + col * 22 + row * 11; by = h * 0.66 - row * 12
+                o.append(f'<rect x="{f(bx)}" y="{f(by)}" width="20" height="11" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.2"></rect>')
+    s = fit(b, max(h * 0.34, b - 210))
+    for i in range(4):
+        o.append(E.kneel(w * (0.12 + i * 0.15), b - (i % 2) * 4, s * 0.72, color=["#5A4A3A", "#4A3A3A", "#6A5A4A", "#3A3A4A"][i], skin="#3A1E14"))
+    o.append(man(p, w * 0.86, b, s * 1.05, "#E8E2D6", flip=True, up=[(-22, -158), (-46, -176), (-64, -190)], extra=ROD_UP))
+    return "".join(o)
+
+def handful(w, h, seed):
+    """Better is a handful, with quietness, than two handfuls with labor and striving after wind: on the left, in the still
+    blue, one bowl of grain at rest; on the right, two bowls heaped and spilling, the wind tearing the grain away."""
+    r = random.Random(seed)
+    gid = f"hf{seed}"
+    o = [hgrad(gid, [(0, "#2A4A6A"), (0.48, "#3A5A7A"), (0.52, "#6A4A3A"), (1, "#8A5A3A")]),
+         f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#{gid})"></rect>',
+         f'<rect x="-10" y="{f(h * 0.78)}" width="{f(w + 20)}" height="{f(h)}" fill="#2A1E1A" stroke="#0D0D0F" stroke-width="2"></rect>']
+    bw = min(w * 0.2, h * 0.5)
+    o.append(R1.heap(w * 0.25, h * 0.78 - bw * 0.3 + 4, bw * 0.7, bw * 0.28) + J1.bowl(w * 0.25, h * 0.78, bw, full=False))
+    for x in (0.64, 0.84):
+        o.append(R1.heap(w * x, h * 0.78 - bw * 0.3 + 4, bw * 0.9, bw * 0.62) + J1.bowl(w * x, h * 0.78, bw, full=False))
+    for _ in range(8):
+        x = r.uniform(w * 0.52, w * 0.9); y = r.uniform(h * 0.12, h * 0.55); L = r.uniform(w * 0.1, w * 0.2)
+        o.append(f'<path d="M{f(x)} {f(y)} C {f(x + L * 0.4)} {f(y - 10)} {f(x + L * 0.7)} {f(y + 8)} {f(x + L)} {f(y - 4)}" stroke="#F3E0C0" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.75"></path>')
+    for _ in range(40):
+        x = r.uniform(w * 0.6, w * 1.0); y = r.uniform(h * 0.2, h * 0.7)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="2.6" ry="1.4" fill="#E8C88A" transform="rotate({r.randint(0, 180)} {f(x)} {f(y)})"></ellipse>')
+    return "".join(o)
+
+def alone(p, w, h, seed):
+    """One that is alone, and he hath not a second: a man by himself at night at a table heaped with silver, one lamp, the
+    benches about him empty."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1A1430"></rect>',
+         f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.62)}" r="{f(max(w, h) * 0.34)}" fill="#FFC14D" opacity="0.1"></circle>', ground(w, h, h * 0.8, "#2A2238", dy=0)]
+    s = fit(b, max(h * 0.3, b - 220))
+    o.append(man(p, w * 0.5, b, s, "#6A2A3A", extra=GREY_BEARD))
+    tx0, tx1, ty = w * 0.3, w * 0.7, b - 80 * s
+    o.append(f'<rect x="{f(tx0)}" y="{f(ty)}" width="{f(tx1 - tx0)}" height="{f(12 * s)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(tx0 + 10)} {f(ty + 12 * s)} L {f(tx0 + 16)} {f(b)} M{f(tx1 - 10)} {f(ty + 12 * s)} L {f(tx1 - 16)} {f(b)}" stroke="#5A3A22" stroke-width="{f(6 * s)}"></path>')
+    o.append(JG2.silver(w * 0.42, ty - 5, 9, seed, spread=w * 0.05) + JG2.silver(w * 0.58, ty - 8, 9, seed + 1, spread=w * 0.05) + clay_lamp(w * 0.66, ty - 2, min(0.8, s)))
+    for x in (0.1, 0.82):
+        o.append(f'<rect x="{f(w * x)}" y="{f(b - 46 * s)}" width="{f(w * 0.08)}" height="{f(8 * s)}" fill="#5A3A22" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 f'<path d="M{f(w * x + 6)} {f(b - 38 * s)} L {f(w * x + 6)} {f(b)} M{f(w * (x + 0.08) - 6)} {f(b - 38 * s)} L {f(w * (x + 0.08) - 6)} {f(b)}" stroke="#3A2214" stroke-width="4"></path>')
+    return "".join(o)
+
+def two_better(p, w, h, seed):
+    """If they fall, the one will lift up his fellow: two travellers on a stony road in the hills, one fallen, the other
+    stooping to lift him up."""
+    r = random.Random(seed)
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.44, seed, color="#8A9A6A", amp=16, step=80), ground(w, h, h * 0.58, "#B89A6A", dy=0),
+         f'<path d="M{f(w * 0.56)} {f(h * 0.58)} L {f(w * 0.62)} {f(h * 0.58)} L {f(w * 0.9)} {f(h + 10)} L {f(w * 0.2)} {f(h + 10)} Z" fill="#C8B08A" stroke="#0D0D0F" stroke-width="1.6"></path>']
+    for _ in range(14):
+        x, y = r.uniform(w * 0.2, w * 0.9), r.uniform(h * 0.7, h)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(r.uniform(5, 12))}" ry="{f(r.uniform(3, 6))}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="1.2"></ellipse>')
+    s = fit(b, max(h * 0.34, b - 210))
+    o.append(E.kneel(w * 0.56, b, s * 0.8, color="#3A5A8A", skin="#5A2A16", flip=True))
+    o.append(mk.person(p, round(w * 0.36), round(b), round(s, 3), body=SKIN, cloth="#8A3A1E", kind="Tunic", sw=3, flip=True, up=[(-22, -158), (-46, -120), (-74, -104)]))
+    return "".join(o)
+
+def threefold(w, h, seed):
+    """A threefold cord is not quickly broken: three strands — gold, red and blue — twisted into one rope across the panel,
+    and beneath it a single strand snapped."""
+    o = [bp(w, h)]
+    cy = h * 0.42; amp = min(h * 0.08, 26); x0, x1 = w * 0.06, w * 0.94
+    cols = ["#E8B830", "#D7261E", "#1F5FAD"]
+    n = 60
+    for k in range(3):
+        pts = [(x0 + (x1 - x0) * i / n, cy + amp * math.sin(i * 0.5 + k * 2.094)) for i in range(n + 1)]
+        d = "M" + " L ".join(f"{f(a)} {f(c)}" for a, c in pts)
+        o.append(f'<path d="{d}" stroke="#0D0D0F" stroke-width="{f(amp * 0.9 + 4)}" fill="none" stroke-linecap="round"></path><path d="{d}" stroke="{cols[k]}" stroke-width="{f(amp * 0.9)}" fill="none" stroke-linecap="round"></path>')
+    sy = h * 0.8
+    o.append(f'<path d="M{f(w * 0.12)} {f(sy)} L {f(w * 0.44)} {f(sy)}" stroke="#0D0D0F" stroke-width="10" stroke-linecap="round"></path><path d="M{f(w * 0.12)} {f(sy)} L {f(w * 0.44)} {f(sy)}" stroke="#E8B830" stroke-width="6" stroke-linecap="round"></path>'
+             f'<path d="M{f(w * 0.52)} {f(sy + 6)} L {f(w * 0.84)} {f(sy + 14)}" stroke="#0D0D0F" stroke-width="10" stroke-linecap="round"></path><path d="M{f(w * 0.52)} {f(sy + 6)} L {f(w * 0.84)} {f(sy + 14)}" stroke="#E8B830" stroke-width="6" stroke-linecap="round"></path>'
+             f'<path d="M{f(w * 0.46)} {f(sy - 12)} l 8 10 l -6 4 l 8 12" stroke="#D7261E" stroke-width="2.4" fill="none"></path>')
+    return "".join(o)
+
+def youth_king(p, w, h, seed):
+    """Better is a poor and wise youth than an old and foolish king: on the left the old king alone on his throne in a dim
+    hall; on the right the prison door open and the youth come out into the light, all the people following after him."""
+    b = h * 0.94; k = min(1.1, h / 340)
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.8, "#B89A6A", dy=0),
+         f'<rect x="-10" y="-10" width="{f(w * 0.42 + 10)}" height="{f(h + 20)}" fill="#2A1E2A"></rect>',
+         f'<rect x="-10" y="{f(h * 0.8)}" width="{f(w * 0.42 + 10)}" height="{f(h)}" fill="#3A2A2A" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<path d="M{f(w * 0.42)} -10 L {f(w * 0.42)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="4"></path>', S3.throne(w * 0.18, b, k)]
+    s = fit(b, max(h * 0.32, b - 220))
+    o.append(old_king(p, w * 0.18, b - 38 * k, s * 0.86))
+    gx = w * 0.52
+    o.append(f'<rect x="{f(gx - w * 0.06)}" y="{f(b - h * 0.5)}" width="{f(w * 0.12)}" height="{f(h * 0.5)}" fill="#5A5A62" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             f'<rect x="{f(gx - w * 0.035)}" y="{f(b - h * 0.36)}" width="{f(w * 0.07)}" height="{f(h * 0.36)}" fill="#1A1214" stroke="#0D0D0F" stroke-width="2"></rect>'
+             + "".join(f'<path d="M{f(gx - w * 0.03 + q * w * 0.015)} {f(b - h * 0.48)} L {f(gx - w * 0.03 + q * w * 0.015)} {f(b - h * 0.4)}" stroke="#0D0D0F" stroke-width="2"></path>' for q in range(5)))
+    o.append(man(p, w * 0.64, b, s, "#E8D8B0", flip=True))
+    o.append(crowd_at(p, w, h, seed, w * 0.72, w * 0.98, h * 0.82, b, 7, s * 0.7, s * 0.95, flip=True))
+    return "".join(o)
+
+# ---- Ecclesiastes 5 -----------------------------------------------------------------------------------------------------
+def house_of_god(p, w, h, seed):
+    """Keep thy foot when thou goest to the house of God: the house above its court, a man coming quietly to it, the smoke
+    of the altar rising."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), temple_front(w * 0.56, h * 0.62, w * 0.5, seed), ground(w, h, h * 0.62, "#C8B88A", dy=0),
+         horned_altar(w * 0.24, h * 0.8, min(0.6, h / 500), fire=True, seed=seed)]
+    s = fit(b, max(h * 0.4, b - 200))
+    o.append(man(p, w * 0.8, b, s, "#5A6A8A", flip=True))
+    return "".join(o)
+
+def vow(p, w, h, seed):
+    """When thou vowest a vow unto God, defer not to pay it: a man kneeling before the altar with his offering in a bowl,
+    the fire burning (God is never drawn)."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A1A3A", "#E8A06A"), mk.stars(30, w, h * 0.4, seed), ground(w, h, h * 0.8, "#8A6A5A", dy=0)]
+    ax, k = w * 0.6, min(1.1, h / 300)
+    for i in range(4):
+        o.append(f'<path d="M{f(ax + (i - 1.5) * 12)} {f(b - 130 * k)} C {f(ax - 40 + i * 20)} {f(h * 0.5)} {f(ax + 40 - i * 10)} {f(h * 0.3)} {f(ax + (i - 1.5) * 30)} -10" stroke="#C8C2D6" stroke-width="{f(10 + i * 4)}" fill="none" opacity="{0.3 - i * 0.05:.2f}"></path>')
+    o.append(horned_altar(ax, b, k, fire=True, seed=seed))
+    s = fit(b, max(h * 0.4, b - 220))
+    o.append(E.kneel(w * 0.28, b, s * 0.85, color="#2C5F9A", skin="#5A2A16"))
+    return "".join(o)
+
+def field_king(p, w, h, seed):
+    """The profit of the earth is for all: the king himself is served by the field — reapers in the ripe field, sheaves,
+    and the king standing at its edge, his house on the hill above it."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.36, seed, color="#9AA06A", amp=10, step=90),
+         J.city_hill(w * 0.76, h * 0.44, w * 0.36, h * 0.2, seed), R1.field(-10, w + 10, h * 0.5, h * 0.4, seed, rows=4)]
+    s = fit(b, max(h * 0.4, b - 210))
+    for i in range(3): o.append(R1.reaper(p, w * (0.14 + i * 0.22), b - (i % 2) * h * 0.04, s * (0.9 + 0.05 * i), cloth=["#8A6A4A", "#6A4A2A", "#5A6A3A"][i]))
+    for i in range(3): o.append(R1.sheaf(w * (0.24 + i * 0.22), b, s * 0.7))
+    o.append(king_fig(p, w * 0.9, b, s * 0.95, flip=True, cloth=SOL_C))
+    return "".join(o)
+
+def sleep_two(p, w, h, seed):
+    """The sleep of a laboring man is sweet; the fulness of the rich will not suffer him to sleep: on the left a laborer
+    asleep on his mat under the stars, his mattock beside him; on the right a rich man's chamber, the lamp burning, the
+    silver heaped, the man standing awake."""
+    from genesis.art4 import clay_lamp
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w * 0.5 + 10)}" height="{f(h + 20)}" fill="#14123A"></rect>', mk.stars(40, w * 0.48, h * 0.6, seed),
+         f'<circle cx="{f(w * 0.36)}" cy="{f(h * 0.2)}" r="{f(min(w, h) * 0.04)}" fill="#F3EFE6"></circle>',
+         f'<rect x="{f(w * 0.5)}" y="-10" width="{f(w * 0.5 + 10)}" height="{f(h + 20)}" fill="#5A3A2A"></rect>',
+         f'<rect x="-10" y="{f(h * 0.82)}" width="{f(w * 0.5 + 10)}" height="{f(h)}" fill="#3A3A2A" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<rect x="{f(w * 0.5)}" y="{f(h * 0.82)}" width="{f(w * 0.5 + 10)}" height="{f(h)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<path d="M{f(w * 0.5)} -10 L {f(w * 0.5)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="4"></path>',
+         f'<circle cx="{f(w * 0.66)}" cy="{f(h * 0.6)}" r="{f(min(w, h) * 0.3)}" fill="#FFC14D" opacity="0.14"></circle>']
+    k = min(1.0, h / 300)
+    o.append(J1.rug_sleeper(w * 0.24, h * 0.9, k, color="#8A6A4A") + f'<path d="M{f(w * 0.38)} {f(h * 0.9)} L {f(w * 0.44)} {f(h * 0.72)}" stroke="#5A3A22" stroke-width="5"></path>')
+    s = fit(b, max(h * 0.34, b - 210))
+    o.append(R1.heap(w * 0.66, b, w * 0.14, h * 0.12, color="#C8C8D0") + JG2.silver(w * 0.66, b - h * 0.08, 7, seed, spread=w * 0.04) + clay_lamp(w * 0.58, h * 0.56, k * 0.9)
+             + man(p, w * 0.86, b, s, "#7A2A6A", flip=True, extra=GREY_BEARD))
+    return "".join(o)
+
+def naked_road(p, w, h, seed):
+    """Naked shall he go again as he came, and shall take nothing for his labor: a man walking away down the long road into
+    the sunset, his hands empty, his heaped silver left behind by the way."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#4A2A4A", "#FF9A4A"), sun(w * 0.62, h * 0.5, max(12, h * 0.07), color="#FFD23F", op=0.35),
+         hills(w, h, h * 0.54, seed, color="#5A3A4A", amp=8, step=80), ground(w, h, h * 0.58, "#8A6A5A", dy=0),
+         f'<path d="M{f(w * 0.6)} {f(h * 0.58)} L {f(w * 0.64)} {f(h * 0.58)} L {f(w * 0.82)} {f(h + 10)} L {f(w * 0.36)} {f(h + 10)} Z" fill="#B8906A" stroke="#0D0D0F" stroke-width="1.6"></path>']
+    o.append(man(p, w * 0.63, h * 0.76, fit(h * 0.76, h * 0.54), "#E8E2D6"))
+    o.append(R1.heap(w * 0.24, b, w * 0.16, h * 0.12, color="#C8C8D0") + JG2.silver(w * 0.24, b - h * 0.07, 9, seed, spread=w * 0.05) + R1.heap(w * 0.1, b, w * 0.1, h * 0.08, color="#E8B830"))
+    return "".join(o)
+
+# ---- Ecclesiastes 6 -----------------------------------------------------------------------------------------------------
+def alien_eats(p, w, h, seed):
+    """A man to whom God giveth riches, yet giveth him not power to eat thereof, but an alien eateth it: a stranger at the
+    laden table, the owner standing apart with empty hands."""
+    b = h * 0.94; k = min(1.2, h / 330)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.82), S3.window(w * 0.3, h * 0.24, w * 0.12, h * 0.22, inner="#E8A06A"), S3.window(w * 0.7, h * 0.24, w * 0.12, h * 0.22, inner="#E8A06A")]
+    for i in range(3): o.append(jar(w * (0.78 + i * 0.05), b, k * 0.7, ["#B5652E", "#8A3A1E", "#C87A3E"][i]))
+    s = min(fit(b, max(h * 0.3, b - 220)), k)
+    o.append(man(p, w * 0.5, b, s * 0.9, "#2C7DA8", extra=A.headcloth("#E8A317")) + S3.table(w * 0.5, b, w * 0.4, k) + man(p, w * 0.12, b, s, "#7A2A6A", extra=GREY_BEARD))
+    return "".join(o)
+
+def one_place(p, w, h, seed):
+    """Do not all go to one place? Paths from every side of the plain running together toward one dark gate on the
+    horizon at dusk, small figures walking on them."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A1A3A", "#C87A5A"), ground(w, h, h * 0.42, "#6A5A4A", dy=0)]
+    gx, gy = w * 0.5, h * 0.42
+    for x in (-0.1, 0.12, 0.32, 0.68, 0.88, 1.1):
+        o.append(f'<path d="M{f(w * x - w * 0.04)} {f(h + 10)} L {f(gx - w * 0.01)} {f(gy)} L {f(gx + w * 0.01)} {f(gy)} L {f(w * x + w * 0.04)} {f(h + 10)} Z" fill="#9A8060" stroke="#0D0D0F" stroke-width="1.2"></path>')
+    o.append(f'<path d="M{f(gx - w * 0.05)} {f(gy)} L {f(gx - w * 0.05)} {f(gy - h * 0.14)} C {f(gx - w * 0.05)} {f(gy - h * 0.22)} {f(gx + w * 0.05)} {f(gy - h * 0.22)} {f(gx + w * 0.05)} {f(gy - h * 0.14)} L {f(gx + w * 0.05)} {f(gy)} Z" fill="#0D0B14" stroke="#0D0D0F" stroke-width="2"></path>'
+             f'<path d="M{f(gx - w * 0.09)} {f(gy)} L {f(gx - w * 0.09)} {f(gy - h * 0.18)} L {f(gx - w * 0.06)} {f(gy - h * 0.2)} L {f(gx - w * 0.06)} {f(gy)} Z M{f(gx + w * 0.06)} {f(gy)} L {f(gx + w * 0.06)} {f(gy - h * 0.2)} L {f(gx + w * 0.09)} {f(gy - h * 0.18)} L {f(gx + w * 0.09)} {f(gy)} Z" fill="#3A2A3A" stroke="#0D0D0F" stroke-width="2"></path>')
+    for k, x in enumerate((0.12, 0.32, 0.68, 0.88)):
+        t = 0.5
+        fx, fy = w * x + (gx - w * x) * t, h - (h - gy) * t
+        o.append(man(p, fx, fy, fit(fy, fy - h * 0.14), ["#5A4A6A", "#6A4A3A", "#3A4A5A", "#5A3A3A"][k], flip=x > 0.5))
+    return "".join(o)
+
+def shadow(p, w, h, seed):
+    """All the days of his vain life which he spendeth as a shadow: a man standing alone on the plain at sunset, his long
+    shadow stretched behind him across the ground."""
+    b = h * 0.86
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A2A4A", "#FFB04A"), sun(w * 0.86, h * 0.6, max(12, h * 0.06), color="#FF6A2A", op=0.35),
+         hills(w, h, h * 0.6, seed, color="#6A3A3A", amp=6, step=90), ground(w, h, h * 0.64, "#C8905A", dy=0)]
+    s = fit(b, max(h * 0.38, b - 200))
+    x = w * 0.62
+    o.append(f'<path d="M{f(x - 14 * s)} {f(b)} L {f(x + 14 * s)} {f(b)} L {f(x - w * 0.5)} {f(b + h * 0.1)} L {f(x - w * 0.62)} {f(b + h * 0.08)} Z" fill="#3A1E1A" opacity="0.7"></path>')
+    o.append(man(p, x, b, s, "#5A4A6A"))
+    return "".join(o)
