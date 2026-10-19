@@ -611,6 +611,76 @@
    "w": 760,
    "h": 1080,
    "title": "78 · Born unto the Giant"
+  },
+  "1CH-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Threshing-floor of Ornan"
+  },
+  "1CH-C08-D-P01-GoNumberIsrael.dc.html": {
+   "x": 840,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Go, Number Israel"
+  },
+  "1CH-C08-D-P02-GadDavidSSeer.dc.html": {
+   "x": 1680,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Gad, David's Seer"
+  },
+  "1CH-C08-D-P03-ItIsEnough.dc.html": {
+   "x": 2520,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · It Is Enough"
+  },
+  "1CH-C08-D-P04-TheThreshingFloorO.dc.html": {
+   "x": 3360,
+   "y": 28300,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · The Threshing-floor of Ornan"
+  },
+  "1CH-C08-D-P05-TheThreshingFloorO.dc.html": {
+   "x": 0,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The Threshing-floor of Ornan"
+  },
+  "1CH-C08-D-P06-HeAnsweredHimByFir.dc.html": {
+   "x": 840,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · He Answered Him by Fire"
+  },
+  "1CH-C08-E-P01-ThisIsTheHouseOfJe.dc.html": {
+   "x": 1680,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · This Is the House of Jehovah God"
+  },
+  "1CH-C08-E-P02-BuildTheHouseOfJeh.dc.html": {
+   "x": 2520,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Build the House of Jehovah"
+  },
+  "1CH-C08-E-P03-BuildTheHouseOfJeh.dc.html": {
+   "x": 3360,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Build the House of Jehovah"
   }
  },
  "order": [
@@ -699,7 +769,17 @@
   "1CH-C07-F-P03-Hanun.dc.html",
   "1CH-C07-F-P04-Shophach.dc.html",
   "1CH-C07-G-P01-Rabbah.dc.html",
-  "1CH-C07-G-P02-BornUntoTheGiant.dc.html"
+  "1CH-C07-G-P02-BornUntoTheGiant.dc.html",
+  "1CH-C08-00-Title.dc.html",
+  "1CH-C08-D-P01-GoNumberIsrael.dc.html",
+  "1CH-C08-D-P02-GadDavidSSeer.dc.html",
+  "1CH-C08-D-P03-ItIsEnough.dc.html",
+  "1CH-C08-D-P04-TheThreshingFloorO.dc.html",
+  "1CH-C08-D-P05-TheThreshingFloorO.dc.html",
+  "1CH-C08-D-P06-HeAnsweredHimByFir.dc.html",
+  "1CH-C08-E-P01-ThisIsTheHouseOfJe.dc.html",
+  "1CH-C08-E-P02-BuildTheHouseOfJeh.dc.html",
+  "1CH-C08-E-P03-BuildTheHouseOfJeh.dc.html"
  ],
  "notes": {
   "Main": {
@@ -757,6 +837,13 @@
    "text": "Chapter 7 · Thy Throne for Ever (1 Chronicles 17–20)",
    "x": 0,
    "y": 23900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Threshing-floor of Ornan (1 Chronicles 21–22)",
+   "x": 0,
+   "y": 28000
   }
  },
  "designSystems": [],

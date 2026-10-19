@@ -270,3 +270,58 @@ def bringing(p, w, h, seed):
         else: o.append(S1.cow(x, y - h * 0.02, s * min(1.0, h / 360), color="#8A5A30"))
         o.append(f'<rect x="{f(x - 14 * s)}" y="{f(y - h * 0.22 * s - 10)}" width="{f(28 * s)}" height="{f(18 * s)}" rx="4" fill="{r.choice(["#E8D8A0", "#C8A060", "#8A3A4A"])}" stroke="#0D0D0F" stroke-width="1.4"></rect>')
     return "".join(o)
+
+# ---- 1 Chronicles 21–22 -------------------------------------------------------------------------------------------------
+def tally(w, h, rows, title=""):
+    """A tally board: rows of (name, number, colour) in framed columns."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    n = len(rows)
+    for i, (nm, num, c) in enumerate(rows):
+        x = w * (0.5 + (i - (n - 1) / 2) * (0.9 / n))
+        bw = w * 0.82 / n
+        o.append(f'<rect x="{f(x - bw / 2)}" y="{f(h * 0.2)}" width="{f(bw)}" height="{f(h * 0.6)}" fill="none" stroke="{c}" stroke-width="2"></rect>'
+                 + label(x, h * 0.34, nm, c, 12) + f'<text x="{f(x)}" y="{f(h * 0.62)}" fill="{c}" font-family="Anton, sans-serif" font-size="{f(min(bw * 0.18, h * 0.18))}" text-anchor="middle">{num}</text>')
+    if title: o.append(label(w * 0.5, h * 0.92, title, "#C8C2D6", 9))
+    return "".join(o)
+
+def sackcloth_elders(p, w, h, seed):
+    """The angel of Jehovah between earth and heaven with his sword stretched out over Jerusalem; David and the elders in
+    sackcloth fallen upon their faces below."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#2A1A3A", "#8A5A6A"), J.city_hill(w * 0.7, h * 0.74, w * 0.5, h * 0.3, seed), ground(w, h, h * 0.78, "#3A2A2A", dy=0),
+         V.rays(w * 0.62, h * 0.24, 24, 12, w * 0.5, color="#FFF4C2", op=0.25), N.angel(p, w * 0.62, h * 0.6, fit(h * 0.6, h * 0.06), sword=True, glow=True, flip=True)]
+    s = fit(b, h * 0.6)
+    for i in range(4):
+        o.append(N.prostrate(w * (0.06 + i * 0.12), b - i * h * 0.01, s * 0.7, color="#5A5040", skin="#9A6A4A"))
+    return "".join(o)
+
+def stores(w, h, seed):
+    """Prepared in abundance: stacks of gold and silver talents, brass and iron without weight, cedar logs, hewn stones."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#3A2A1A", "#8A6A4A"), ground(w, h, h * 0.62, "#6A5040", dy=0)]
+    piles = [("#E8B830", "GOLD"), ("#C8C8D0", "SILVER"), ("#B87333", "BRASS"), ("#5A5A62", "IRON")]
+    for i, (c, nm) in enumerate(piles):
+        x0 = w * (0.04 + i * 0.16); base = h * 0.94
+        for row in range(5):
+            for k in range(4 - row // 2):
+                x = x0 + k * w * 0.032 + row * w * 0.008
+                o.append(f'<rect x="{f(x)}" y="{f(base - (row + 1) * h * 0.06)}" width="{f(w * 0.03)}" height="{f(h * 0.055)}" rx="2" fill="{c}" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+        o.append(label(x0 + w * 0.06, h * 0.6, nm, c, 9))
+    for k in range(5):
+        y = h * (0.92 - k * 0.07)
+        o.append(f'<rect x="{f(w * 0.7)}" y="{f(y - h * 0.06)}" width="{f(w * 0.26)}" height="{f(h * 0.06)}" rx="{f(h * 0.03)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 f'<ellipse cx="{f(w * 0.96)}" cy="{f(y - h * 0.03)}" rx="{f(h * 0.012)}" ry="{f(h * 0.03)}" fill="#C8965A" stroke="#0D0D0F" stroke-width="1.4"></ellipse>')
+    o.append(label(w * 0.83, h * 0.48, "CEDAR", "#E8C88A", 9))
+    return "".join(o)
+
+def charge_son(p, w, h, seed, princes=False):
+    """David old charging Solomon his son in the cedar hall (princes=True: the princes of Israel standing by)."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84)]
+    s = fit(b, max(h * 0.3, b - 260))
+    o.append(K2.old_king(p, w * 0.32, b, s) + sol_fig(p, w * 0.56, b, s * 0.95, flip=True))
+    if princes:
+        for i in range(4):
+            o.append(man(p, w * (0.72 + i * 0.07), b, s * 0.85, ["#3A4A6A", "#6A3A2A", "#4A5A3A", "#5A4A6A"][i], flip=True))
+    return "".join(o)
+from genesis.art3 import man

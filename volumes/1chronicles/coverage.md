@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 682 verses — 682 full, 0 partial, 0 omitted.
+**So far:** 731 verses — 731 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · From Adam (1 Chronicles 1–2)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · Thy Throne for Ever (1 Chronicles 17–20)
 
 71 verses: 71 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · The Threshing-floor of Ornan (1 Chronicles 21–22)
+
+49 verses: 49 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

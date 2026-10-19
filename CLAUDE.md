@@ -179,6 +179,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 1 Chronicles | 5 · David King over Israel | 10–12 | title + 13 (pp. 38–50) | 101/101 verses full (the digest Gilboa and Hebron panels; 10:4–6 and 10:9–10 words over the crown, spear and burning city) | `volumes/1chronicles/` |
 | 1 Chronicles | 6 · The Ark of God | 13–16 | title + 16 (pp. 51–66) | 103/103 verses full (13:10 words over the cart; the digest ark and dancing panels; the psalm of thanks in song boxes) | `volumes/1chronicles/` |
 | 1 Chronicles | 7 · Thy Throne for Ever | 17–20 | title + 13 (pp. 66–78) | 71/71 verses full (Nathan's oracle in the Voice box; David's wars as maps; 20:3 words over Rabbah at dusk) | `volumes/1chronicles/` |
+| 1 Chronicles | 8 · The Threshing-floor of Ornan | 21–22 | title + 9 (pp. 79–87) | 49/49 verses full (21:14 words over the silent tents; the answer by fire; the stores for the house) | `volumes/1chronicles/` |
 
 **Genesis through 2 Kings (twelve volumes) are complete; 1 Chronicles is in progress.** 1 Chronicles is `tools/full/chr1/` (a module
 name cannot start with a digit; eleven chapters planned in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts

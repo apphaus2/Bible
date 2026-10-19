@@ -36,5 +36,7 @@ META = {
      "blurb": "Let us bring again the ark of our God: the new cart, Uzza at the threshing-floor of Chidon, and three months in the house of Obed-edom; Hiram's cedars and the sound of marching in the tops of the mulberry-trees; then the Levites bear the ark on their shoulders, the singers sound aloud, David dances, and Asaph sings — O give thanks unto Jehovah, for his lovingkindness endureth for ever."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Thy Throne for Ever", "range": "1 Chronicles 17–20", "bible_chapters": [17, 18, 19, 20],
      "blurb": "Lo, I dwell in a house of cedar, but the ark dwelleth under curtains; the word of God to Nathan by night — I will build thee a house, and I will establish his throne for ever; who am I, O Jehovah God?; David's wars and the shields of gold; Hanun and the messengers shamed; Joab before and behind; Rabbah and the crown of gold; and the sons of the giant in Gath."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Threshing-floor of Ornan", "range": "1 Chronicles 21–22", "bible_chapters": [21, 22],
+     "blurb": "Satan moves David to number Israel; Joab's protest; I have done very foolishly; Gad and the three things; the pestilence, and it is enough, now stay thy hand; the angel's sword over Jerusalem; Ornan's threshing-floor bought for the full price, and the answer by fire from heaven; then the stores of gold and cedar, and David's charge to Solomon: arise and be doing."},
   ],
 }
