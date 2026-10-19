@@ -146,6 +146,16 @@
    "prefixes": [
     "ISA-C14-"
    ]
+  },
+  {
+   "dir": "chapter-15",
+   "num": "15",
+   "name": "A Man of Sorrows",
+   "range": "Isaiah 52–55",
+   "blurb": "Awake, awake, put on thy strength, O Zion; how beautiful upon the mountains are the feet of him that bringeth good tidings; behold, my servant shall deal wisely — he was despised, and rejected of men, a man of sorrows; he was wounded for our transgressions; all we like sheep have gone astray; as a lamb that is led to the slaughter; sing, O barren, enlarge the place of thy tent; ho, every one that thirsteth, come ye to the waters; and the trees of the field shall clap their hands.",
+   "prefixes": [
+    "ISA-C15-"
+   ]
   }
  ]
 }

@@ -1270,6 +1270,13 @@
    "h": 1080,
    "title": "168 · Hear, Ye Deaf"
   },
+  "ISA-C11-D-P17-HearYeDeaf.dc.html": {
+   "x": 1680,
+   "y": 55000,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · Hear, Ye Deaf"
+  },
   "ISA-C12-00-Title.dc.html": {
    "x": 0,
    "y": 56700,
@@ -1282,98 +1289,98 @@
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "169 · Fear Not, for I Have Redeemed Thee"
+   "title": "170 · Fear Not, for I Have Redeemed Thee"
   },
   "ISA-C12-D-P02-YeAreMyWitnesses.dc.html": {
    "x": 1680,
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "170 · Ye Are My Witnesses"
+   "title": "171 · Ye Are My Witnesses"
   },
   "ISA-C12-D-P03-AWayInTheSea.dc.html": {
    "x": 2520,
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "171 · A Way in the Sea"
+   "title": "172 · A Way in the Sea"
   },
   "ISA-C12-D-P04-AWayInTheSea.dc.html": {
    "x": 3360,
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "172 · A Way in the Sea"
+   "title": "173 · A Way in the Sea"
   },
   "ISA-C12-D-P05-FearNotOJacobMySer.dc.html": {
    "x": 0,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "173 · Fear Not, O Jacob My Servant"
+   "title": "174 · Fear Not, O Jacob My Servant"
   },
   "ISA-C12-D-P06-TheyThatFashionAGr.dc.html": {
    "x": 840,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "174 · They That Fashion a Graven Image"
+   "title": "175 · They That Fashion a Graven Image"
   },
   "ISA-C12-D-P07-TheyThatFashionAGr.dc.html": {
    "x": 1680,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "175 · They That Fashion a Graven Image"
+   "title": "176 · They That Fashion a Graven Image"
   },
   "ISA-C12-D-P08-TheyThatFashionAGr.dc.html": {
    "x": 2520,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "176 · They That Fashion a Graven Image"
+   "title": "177 · They That Fashion a Graven Image"
   },
   "ISA-C12-D-P09-CyrusMyShepherd.dc.html": {
    "x": 3360,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "177 · Cyrus, My Shepherd"
+   "title": "178 · Cyrus, My Shepherd"
   },
   "ISA-C12-D-P10-ToHisAnointedToCyr.dc.html": {
    "x": 0,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "178 · To His Anointed, to Cyrus"
+   "title": "179 · To His Anointed, to Cyrus"
   },
   "ISA-C12-D-P11-WoeUntoHimThatStri.dc.html": {
    "x": 840,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "179 · Woe unto Him That Striveth with His Maker"
+   "title": "180 · Woe unto Him That Striveth with His Maker"
   },
   "ISA-C12-D-P12-WoeUntoHimThatStri.dc.html": {
    "x": 1680,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "180 · Woe unto Him That Striveth with His Maker"
+   "title": "181 · Woe unto Him That Striveth with His Maker"
   },
   "ISA-C12-D-P13-WoeUntoHimThatStri.dc.html": {
    "x": 2520,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "181 · Woe unto Him That Striveth with His Maker"
+   "title": "182 · Woe unto Him That Striveth with His Maker"
   },
   "ISA-C12-D-P14-EveryKneeShallBow.dc.html": {
    "x": 3360,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "182 · Every Knee Shall Bow"
+   "title": "183 · Every Knee Shall Bow"
   },
   "ISA-C13-00-Title.dc.html": {
    "x": 0,
@@ -1387,70 +1394,70 @@
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "183 · Bel Boweth Down, Nebo Stoopeth"
+   "title": "184 · Bel Boweth Down, Nebo Stoopeth"
   },
   "ISA-C13-D-P02-BelBowethDownNeboS.dc.html": {
    "x": 1680,
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "184 · Bel Boweth Down, Nebo Stoopeth"
+   "title": "185 · Bel Boweth Down, Nebo Stoopeth"
   },
   "ISA-C13-D-P03-OVirginDaughterOfB.dc.html": {
    "x": 2520,
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "185 · O Virgin Daughter of Babylon"
+   "title": "186 · O Virgin Daughter of Babylon"
   },
   "ISA-C13-D-P04-OVirginDaughterOfB.dc.html": {
    "x": 3360,
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "186 · O Virgin Daughter of Babylon"
+   "title": "187 · O Virgin Daughter of Babylon"
   },
   "ISA-C13-D-P05-OVirginDaughterOfB.dc.html": {
    "x": 0,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "187 · O Virgin Daughter of Babylon"
+   "title": "188 · O Virgin Daughter of Babylon"
   },
   "ISA-C13-D-P06-TheStarGazers.dc.html": {
    "x": 840,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "188 · The Star-gazers"
+   "title": "189 · The Star-gazers"
   },
   "ISA-C13-D-P07-HearYeThisOHouseOf.dc.html": {
    "x": 1680,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "189 · Hear Ye This, O House of Jacob"
+   "title": "190 · Hear Ye This, O House of Jacob"
   },
   "ISA-C13-D-P08-IAmTheFirstIAlsoAm.dc.html": {
    "x": 2520,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "190 · I Am the First, I Also Am the Last"
+   "title": "191 · I Am the First, I Also Am the Last"
   },
   "ISA-C13-D-P09-IAmTheFirstIAlsoAm.dc.html": {
    "x": 3360,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "191 · I Am the First, I Also Am the Last"
+   "title": "192 · I Am the First, I Also Am the Last"
   },
   "ISA-C13-D-P10-GoYeForthFromBabyl.dc.html": {
    "x": 0,
    "y": 63200,
    "w": 760,
    "h": 1080,
-   "title": "192 · Go Ye Forth from Babylon"
+   "title": "193 · Go Ye Forth from Babylon"
   },
   "ISA-C14-00-Title.dc.html": {
    "x": 0,
@@ -1464,105 +1471,203 @@
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "193 · Listen, O Isles, unto Me"
+   "title": "194 · Listen, O Isles, unto Me"
   },
   "ISA-C14-D-P02-ListenOIslesUntoMe.dc.html": {
    "x": 1680,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "194 · Listen, O Isles, unto Me"
+   "title": "195 · Listen, O Isles, unto Me"
   },
   "ISA-C14-D-P03-ListenOIslesUntoMe.dc.html": {
    "x": 2520,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "195 · Listen, O Isles, unto Me"
+   "title": "196 · Listen, O Isles, unto Me"
   },
   "ISA-C14-D-P04-CanAWomanForgetHer.dc.html": {
    "x": 3360,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "196 · Can a Woman Forget Her Sucking Child?"
+   "title": "197 · Can a Woman Forget Her Sucking Child?"
   },
   "ISA-C14-D-P05-CanAWomanForgetHer.dc.html": {
    "x": 0,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "197 · Can a Woman Forget Her Sucking Child?"
+   "title": "198 · Can a Woman Forget Her Sucking Child?"
   },
   "ISA-C14-D-P06-CanAWomanForgetHer.dc.html": {
    "x": 840,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "198 · Can a Woman Forget Her Sucking Child?"
+   "title": "199 · Can a Woman Forget Her Sucking Child?"
   },
   "ISA-C14-D-P07-TheBillOfYourMothe.dc.html": {
    "x": 1680,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "199 · The Bill of Your Mother's Divorcement"
+   "title": "200 · The Bill of Your Mother's Divorcement"
   },
   "ISA-C14-D-P08-HeWakenethMineEar.dc.html": {
    "x": 2520,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "200 · He Wakeneth Mine Ear"
+   "title": "201 · He Wakeneth Mine Ear"
   },
   "ISA-C14-D-P09-HeWakenethMineEar.dc.html": {
    "x": 3360,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "201 · He Wakeneth Mine Ear"
+   "title": "202 · He Wakeneth Mine Ear"
   },
   "ISA-C14-D-P10-LookUntoTheRockWhe.dc.html": {
    "x": 0,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "202 · Look unto the Rock Whence Ye Were Hewn"
+   "title": "203 · Look unto the Rock Whence Ye Were Hewn"
   },
   "ISA-C14-D-P11-LookUntoTheRockWhe.dc.html": {
    "x": 840,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "203 · Look unto the Rock Whence Ye Were Hewn"
+   "title": "204 · Look unto the Rock Whence Ye Were Hewn"
   },
   "ISA-C14-D-P12-AwakeOArmOfJehovah.dc.html": {
    "x": 1680,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "204 · Awake, O Arm of Jehovah"
+   "title": "205 · Awake, O Arm of Jehovah"
   },
   "ISA-C14-D-P13-AwakeOArmOfJehovah.dc.html": {
    "x": 2520,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "205 · Awake, O Arm of Jehovah"
+   "title": "206 · Awake, O Arm of Jehovah"
   },
   "ISA-C14-D-P14-AwakeAwakeOJerusal.dc.html": {
    "x": 3360,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "206 · Awake, Awake, O Jerusalem"
+   "title": "207 · Awake, Awake, O Jerusalem"
   },
   "ISA-C14-D-P15-AwakeAwakeOJerusal.dc.html": {
    "x": 0,
    "y": 68500,
    "w": 760,
    "h": 1080,
-   "title": "207 · Awake, Awake, O Jerusalem"
+   "title": "208 · Awake, Awake, O Jerusalem"
+  },
+  "ISA-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · A Man of Sorrows"
+  },
+  "ISA-C15-D-P01-AwakeAwakeOZion.dc.html": {
+   "x": 840,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · Awake, Awake, O Zion"
+  },
+  "ISA-C15-D-P02-HowBeautifulUponTh.dc.html": {
+   "x": 1680,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · How Beautiful upon the Mountains"
+  },
+  "ISA-C15-D-P03-HowBeautifulUponTh.dc.html": {
+   "x": 2520,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · How Beautiful upon the Mountains"
+  },
+  "ISA-C15-D-P04-ARootOutOfADryGrou.dc.html": {
+   "x": 3360,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · A Root out of a Dry Ground"
+  },
+  "ISA-C15-D-P05-AManOfSorrows.dc.html": {
+   "x": 0,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · A Man of Sorrows"
+  },
+  "ISA-C15-D-P06-AManOfSorrows.dc.html": {
+   "x": 840,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "214 · A Man of Sorrows"
+  },
+  "ISA-C15-D-P07-SingOBarren.dc.html": {
+   "x": 1680,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "215 · Sing, O Barren"
+  },
+  "ISA-C15-D-P08-SingOBarren.dc.html": {
+   "x": 2520,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "216 · Sing, O Barren"
+  },
+  "ISA-C15-D-P09-TheWatersOfNoah.dc.html": {
+   "x": 3360,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "217 · The Waters of Noah"
+  },
+  "ISA-C15-D-P10-TheWatersOfNoah.dc.html": {
+   "x": 0,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "218 · The Waters of Noah"
+  },
+  "ISA-C15-D-P11-HoEveryOneThatThir.dc.html": {
+   "x": 840,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "219 · Ho, Every One That Thirsteth"
+  },
+  "ISA-C15-D-P12-SeekYeJehovahWhile.dc.html": {
+   "x": 1680,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "220 · Seek Ye Jehovah While He May Be Found"
+  },
+  "ISA-C15-D-P13-SeekYeJehovahWhile.dc.html": {
+   "x": 2520,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "221 · Seek Ye Jehovah While He May Be Found"
   }
  },
  "order": [
@@ -1746,6 +1851,7 @@
   "ISA-C11-D-P14-SingUntoJehovahANe.dc.html",
   "ISA-C11-D-P15-SingUntoJehovahANe.dc.html",
   "ISA-C11-D-P16-HearYeDeaf.dc.html",
+  "ISA-C11-D-P17-HearYeDeaf.dc.html",
   "ISA-C12-00-Title.dc.html",
   "ISA-C12-D-P01-FearNotForIHaveRed.dc.html",
   "ISA-C12-D-P02-YeAreMyWitnesses.dc.html",
@@ -1787,7 +1893,21 @@
   "ISA-C14-D-P12-AwakeOArmOfJehovah.dc.html",
   "ISA-C14-D-P13-AwakeOArmOfJehovah.dc.html",
   "ISA-C14-D-P14-AwakeAwakeOJerusal.dc.html",
-  "ISA-C14-D-P15-AwakeAwakeOJerusal.dc.html"
+  "ISA-C14-D-P15-AwakeAwakeOJerusal.dc.html",
+  "ISA-C15-00-Title.dc.html",
+  "ISA-C15-D-P01-AwakeAwakeOZion.dc.html",
+  "ISA-C15-D-P02-HowBeautifulUponTh.dc.html",
+  "ISA-C15-D-P03-HowBeautifulUponTh.dc.html",
+  "ISA-C15-D-P04-ARootOutOfADryGrou.dc.html",
+  "ISA-C15-D-P05-AManOfSorrows.dc.html",
+  "ISA-C15-D-P06-AManOfSorrows.dc.html",
+  "ISA-C15-D-P07-SingOBarren.dc.html",
+  "ISA-C15-D-P08-SingOBarren.dc.html",
+  "ISA-C15-D-P09-TheWatersOfNoah.dc.html",
+  "ISA-C15-D-P10-TheWatersOfNoah.dc.html",
+  "ISA-C15-D-P11-HoEveryOneThatThir.dc.html",
+  "ISA-C15-D-P12-SeekYeJehovahWhile.dc.html",
+  "ISA-C15-D-P13-SeekYeJehovahWhile.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1894,6 +2014,13 @@
    "text": "Chapter 14 · A Light to the Gentiles (Isaiah 49–51)",
    "x": 0,
    "y": 64600
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · A Man of Sorrows (Isaiah 52–55)",
+   "x": 0,
+   "y": 69900
   }
  },
  "designSystems": [],

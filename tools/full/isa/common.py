@@ -13,7 +13,8 @@ opening through phrase in another box."""
 import sys, pathlib, re
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 from faces_ex import F
-from discourse import seg, pack as _pack
+from discourse import seg
+from isa.layout import pack as _pack
 import speech
 from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
