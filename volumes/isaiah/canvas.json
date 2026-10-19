@@ -163,6 +163,132 @@
    "w": 760,
    "h": 1080,
    "title": "20 · An Ensign to the Nations"
+  },
+  "ISA-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Holy, Holy, Holy"
+  },
+  "ISA-C02-D-P01-InTheYearThatKingU.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · In the Year That King Uzziah Died"
+  },
+  "ISA-C02-D-P02-HereAmISendMe.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Here Am I; Send Me"
+  },
+  "ISA-C02-D-P03-HereAmISendMe.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Here Am I; Send Me"
+  },
+  "ISA-C02-D-P04-AskTheeASign.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Ask Thee a Sign"
+  },
+  "ISA-C02-D-P05-AskTheeASign.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Ask Thee a Sign"
+  },
+  "ISA-C02-D-P06-AskTheeASign.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Ask Thee a Sign"
+  },
+  "ISA-C02-D-P07-Immanuel.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Immanuel"
+  },
+  "ISA-C02-D-P08-Immanuel.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Immanuel"
+  },
+  "ISA-C02-D-P09-MaherShalalHashBaz.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Maher-shalal-hash-baz"
+  },
+  "ISA-C02-D-P10-TheWatersOfTheRive.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · The Waters of the River"
+  },
+  "ISA-C02-D-P11-TheWatersOfTheRive.dc.html": {
+   "x": 840,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Waters of the River"
+  },
+  "ISA-C02-D-P12-BindUpTheTestimony.dc.html": {
+   "x": 1680,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Bind Up the Testimony"
+  },
+  "ISA-C02-D-P13-AGreatLight.dc.html": {
+   "x": 2520,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · A Great Light"
+  },
+  "ISA-C02-D-P14-UntoUsAChildIsBorn.dc.html": {
+   "x": 3360,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Unto Us a Child Is Born"
+  },
+  "ISA-C02-D-P15-HisHandIsStretched.dc.html": {
+   "x": 0,
+   "y": 12100,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · His Hand Is Stretched Out Still"
+  },
+  "ISA-C02-D-P16-HisHandIsStretched.dc.html": {
+   "x": 840,
+   "y": 12100,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · His Hand Is Stretched Out Still"
+  },
+  "ISA-C02-D-P17-HisHandIsStretched.dc.html": {
+   "x": 1680,
+   "y": 12100,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · His Hand Is Stretched Out Still"
   }
  },
  "order": [
@@ -187,7 +313,25 @@
   "ISA-C01-D-P17-WoeUntoThem.dc.html",
   "ISA-C01-D-P18-WoeUntoThem.dc.html",
   "ISA-C01-D-P19-WoeUntoThem.dc.html",
-  "ISA-C01-D-P20-AnEnsignToTheNatio.dc.html"
+  "ISA-C01-D-P20-AnEnsignToTheNatio.dc.html",
+  "ISA-C02-00-Title.dc.html",
+  "ISA-C02-D-P01-InTheYearThatKingU.dc.html",
+  "ISA-C02-D-P02-HereAmISendMe.dc.html",
+  "ISA-C02-D-P03-HereAmISendMe.dc.html",
+  "ISA-C02-D-P04-AskTheeASign.dc.html",
+  "ISA-C02-D-P05-AskTheeASign.dc.html",
+  "ISA-C02-D-P06-AskTheeASign.dc.html",
+  "ISA-C02-D-P07-Immanuel.dc.html",
+  "ISA-C02-D-P08-Immanuel.dc.html",
+  "ISA-C02-D-P09-MaherShalalHashBaz.dc.html",
+  "ISA-C02-D-P10-TheWatersOfTheRive.dc.html",
+  "ISA-C02-D-P11-TheWatersOfTheRive.dc.html",
+  "ISA-C02-D-P12-BindUpTheTestimony.dc.html",
+  "ISA-C02-D-P13-AGreatLight.dc.html",
+  "ISA-C02-D-P14-UntoUsAChildIsBorn.dc.html",
+  "ISA-C02-D-P15-HisHandIsStretched.dc.html",
+  "ISA-C02-D-P16-HisHandIsStretched.dc.html",
+  "ISA-C02-D-P17-HisHandIsStretched.dc.html"
  ],
  "notes": {
   "Main": {
@@ -203,6 +347,13 @@
    "text": "Chapter 1 · The Vineyard of Jehovah (Isaiah 1–5)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Holy, Holy, Holy (Isaiah 6–9)",
+   "x": 0,
+   "y": 8200
   }
  },
  "designSystems": [],

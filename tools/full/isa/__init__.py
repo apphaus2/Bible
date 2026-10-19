@@ -28,5 +28,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Vineyard of Jehovah", "range": "Isaiah 1–5", "bible_chapters": [1, 2, 3, 4, 5],
      "blurb": "Hear, O heavens, and give ear, O earth: the ox knoweth his owner, but Israel doth not know; come now, and let us reason together — though your sins be as scarlet, they shall be as white as snow; the mountain of Jehovah's house, and swords beaten into plowshares; the day of Jehovah upon all that is lifted up; the daughters of Zion; and the song of the vineyard that brought forth wild grapes."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Holy, Holy, Holy", "range": "Isaiah 6–9", "bible_chapters": [6, 7, 8, 9],
+     "blurb": "In the year that king Uzziah died: the Lord upon a throne, high and lifted up, and the seraphim crying holy, holy, holy; woe is me; the live coal; here am I, send me; then Ahaz at the conduit of the upper pool — ask thee a sign; behold, a virgin shall conceive, and shall call his name Immanuel; the River to the neck; the people that walked in darkness have seen a great light; unto us a child is born."},
   ],
 }
