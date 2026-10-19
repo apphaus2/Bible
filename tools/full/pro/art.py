@@ -232,3 +232,8 @@ def neighbor_door(p, w, h, seed):
     o.append("".join(f'<ellipse cx="{f(dx + dw + 40 * s + i * 30 * s)}" cy="{f(b - 6 * s)}" rx="{f(14 * s)}" ry="{f(7 * s)}" fill="#C8862E" stroke="{INK}" stroke-width="1.6"></ellipse>' for i in range(2)))
     o.append(man(p, w * 0.3, b, s, "#5A6A3A", up=[(-22, -158), (2, -140), (26, -146)], flip=True))
     return "".join(o)
+
+def emb_art(name, w, h, seed=0, k=None):
+    """An emblem (pro.emblems) scaled up to fill a panel, centred: its background runs past every edge."""
+    k = k or h / 120
+    return f'<g transform="translate({f((w - 320 * k) / 2)} {f((h - 120 * k) / 2)}) scale({f(k)})">{EM.EMB[name](f"ea{name}{seed}")}</g>'

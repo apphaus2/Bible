@@ -25,5 +25,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Beginning of Knowledge", "range": "Proverbs 1–3", "bible_chapters": [1, 2, 3],
      "blurb": "The proverbs of Solomon the son of David — the fear of Jehovah is the beginning of knowledge; my son, if sinners entice thee, consent thou not; Wisdom crieth aloud in the street: how long, ye simple ones?; if thou seek her as silver; trust in Jehovah with all thy heart; she is a tree of life to them that lay hold upon her."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Get Wisdom", "range": "Proverbs 4–6", "bible_chapters": [4, 5, 6],
+     "blurb": "Hear, my sons, the instruction of a father — for I was a son unto my father; wisdom is the principal thing, therefore get wisdom; the path of the righteous is as the dawning light; keep thy heart with all diligence; drink waters out of thine own cistern; go to the ant, thou sluggard; six things which Jehovah hateth, yea, seven; for the commandment is a lamp, and the law is light."},
   ],
 }

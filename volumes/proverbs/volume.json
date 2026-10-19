@@ -16,6 +16,16 @@
     "Main.dc.html",
     "PRO-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Get Wisdom",
+   "range": "Proverbs 4–6",
+   "blurb": "Hear, my sons, the instruction of a father — for I was a son unto my father; wisdom is the principal thing, therefore get wisdom; the path of the righteous is as the dawning light; keep thy heart with all diligence; drink waters out of thine own cistern; go to the ant, thou sluggard; six things which Jehovah hateth, yea, seven; for the commandment is a lamp, and the law is light.",
+   "prefixes": [
+    "PRO-C02-"
+   ]
   }
  ]
 }
