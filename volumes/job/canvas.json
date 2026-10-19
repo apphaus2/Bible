@@ -275,6 +275,97 @@
    "w": 760,
    "h": 1080,
    "title": "34 · Thou Hast Fashioned Me as Clay"
+  },
+  "JOB-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · If a Man Die"
+  },
+  "JOB-C04-D-P01-ZopharTheNaamathit.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Zophar the Naamathite"
+  },
+  "JOB-C04-D-P02-CanstThouBySearchi.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Canst Thou by Searching Find Out God?"
+  },
+  "JOB-C04-D-P03-AskNowTheBeasts.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P04-AskNowTheBeasts.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P05-AskNowTheBeasts.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P06-AskNowTheBeasts.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P07-AskNowTheBeasts.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P08-BeholdHeWillSlayMe.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Behold, He Will Slay Me"
+  },
+  "JOB-C04-D-P09-BeholdHeWillSlayMe.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Behold, He Will Slay Me"
+  },
+  "JOB-C04-D-P10-ManThatIsBornOfAWo.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Man That Is Born of a Woman"
+  },
+  "JOB-C04-D-P11-IfAManDie.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · If a Man Die"
+  },
+  "JOB-C04-D-P12-IfAManDie.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · If a Man Die"
   }
  },
  "order": [
@@ -315,7 +406,20 @@
   "JOB-C03-D-P08-NoUmpireBetwixtUs.dc.html",
   "JOB-C03-D-P09-NoUmpireBetwixtUs.dc.html",
   "JOB-C03-D-P10-ThouHastFashionedM.dc.html",
-  "JOB-C03-D-P11-ThouHastFashionedM.dc.html"
+  "JOB-C03-D-P11-ThouHastFashionedM.dc.html",
+  "JOB-C04-00-Title.dc.html",
+  "JOB-C04-D-P01-ZopharTheNaamathit.dc.html",
+  "JOB-C04-D-P02-CanstThouBySearchi.dc.html",
+  "JOB-C04-D-P03-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P04-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P05-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P06-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P07-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P08-BeholdHeWillSlayMe.dc.html",
+  "JOB-C04-D-P09-BeholdHeWillSlayMe.dc.html",
+  "JOB-C04-D-P10-ManThatIsBornOfAWo.dc.html",
+  "JOB-C04-D-P11-IfAManDie.dc.html",
+  "JOB-C04-D-P12-IfAManDie.dc.html"
  ],
  "notes": {
   "Main": {
@@ -345,6 +449,13 @@
    "text": "Chapter 3 · No Umpire Betwixt Us (Job 8–10)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · If a Man Die (Job 11–14)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],

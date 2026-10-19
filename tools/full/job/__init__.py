@@ -28,5 +28,7 @@ META = {
      "blurb": "Eliphaz the Temanite: who ever perished, being innocent?; a spirit passed before my face — shall mortal man be more just than God?; man is born unto trouble, as the sparks fly upward; happy is the man whom God correcteth. Job answers: oh that my vexation were but weighed; my brethren have dealt deceitfully as a brook; my days are swifter than a weaver's shuttle; what is man, that thou shouldest magnify him?"},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "No Umpire Betwixt Us", "range": "Job 8–10", "bible_chapters": [8, 9, 10],
      "blurb": "Bildad the Shuhite: doth God pervert justice?; inquire of the former age; can the rush grow up without mire?; whose trust is a spider's web. Job answers: how can man be just with God? — he maketh the Bear, Orion, and the Pleiades; he goeth by me, and I see him not; there is no umpire betwixt us; thou hast fashioned me as clay; the land of darkness and of the shadow of death."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "If a Man Die", "range": "Job 11–14", "bible_chapters": [11, 12, 13, 14],
+     "blurb": "Zophar the Naamathite: canst thou by searching find out God? — it is high as heaven, deeper than Sheol. Job answers: no doubt but ye are the people; ask now the beasts, and they shall teach thee; behold, he will slay me, nevertheless I will maintain my ways; man, that is born of a woman, is of few days, and full of trouble; there is hope of a tree; if a man die, shall he live again?"},
   ],
 }
