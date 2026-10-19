@@ -520,6 +520,104 @@
    "w": 760,
    "h": 1080,
    "title": "66 · Zophar Answered Again"
+  },
+  "JOB-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Where I Might Find Him"
+  },
+  "JOB-C07-D-P01-WhereforeDoTheWick.dc.html": {
+   "x": 840,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P02-WhereforeDoTheWick.dc.html": {
+   "x": 1680,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P03-WhereforeDoTheWick.dc.html": {
+   "x": 2520,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P04-WhereforeDoTheWick.dc.html": {
+   "x": 3360,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P05-EliphazTheThirdTim.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P06-EliphazTheThirdTim.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P07-EliphazTheThirdTim.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P08-EliphazTheThirdTim.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P09-OhThatIKnewWhereIM.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Oh That I Knew Where I Might Find Him"
+  },
+  "JOB-C07-D-P10-OhThatIKnewWhereIM.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Oh That I Knew Where I Might Find Him"
+  },
+  "JOB-C07-D-P11-TheyRemoveTheLandm.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · They Remove the Landmarks"
+  },
+  "JOB-C07-D-P12-TheyRemoveTheLandm.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · They Remove the Landmarks"
+  },
+  "JOB-C07-D-P13-TheyRemoveTheLandm.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · They Remove the Landmarks"
   }
  },
  "order": [
@@ -595,7 +693,21 @@
   "JOB-C06-D-P08-ZopharAnsweredAgai.dc.html",
   "JOB-C06-D-P09-ZopharAnsweredAgai.dc.html",
   "JOB-C06-D-P10-ZopharAnsweredAgai.dc.html",
-  "JOB-C06-D-P11-ZopharAnsweredAgai.dc.html"
+  "JOB-C06-D-P11-ZopharAnsweredAgai.dc.html",
+  "JOB-C07-00-Title.dc.html",
+  "JOB-C07-D-P01-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P02-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P03-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P04-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P05-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P06-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P07-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P08-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P09-OhThatIKnewWhereIM.dc.html",
+  "JOB-C07-D-P10-OhThatIKnewWhereIM.dc.html",
+  "JOB-C07-D-P11-TheyRemoveTheLandm.dc.html",
+  "JOB-C07-D-P12-TheyRemoveTheLandm.dc.html",
+  "JOB-C07-D-P13-TheyRemoveTheLandm.dc.html"
  ],
  "notes": {
   "Main": {
@@ -646,6 +758,13 @@
    "text": "Chapter 6 · My Redeemer Liveth (Job 18–20)",
    "x": 0,
    "y": 21000
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Where I Might Find Him (Job 21–24)",
+   "x": 0,
+   "y": 25100
   }
  },
  "designSystems": [],
