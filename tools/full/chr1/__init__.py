@@ -26,5 +26,7 @@ META = {
      "blurb": "Adam, Seth, Enosh — the generations from the first man to Noah and his three sons; the nations of Japheth, Ham and Shem; Abraham, Isaac and Ishmael; Esau and the kings that reigned in Edom before any king reigned over Israel; the sons of Israel; and the house of Judah down to Jesse and David, the seventh son."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Sons of David", "range": "1 Chronicles 3–4", "bible_chapters": [3, 4],
      "blurb": "The sons born to David in Hebron and in Jerusalem; the kings of Judah from Solomon to Josiah, son after son; Jeconiah the captive and Zerubbabel; the families of Judah, and Jabez, more honorable than his brethren — oh that thou wouldest bless me indeed, and enlarge my border; the potters who dwelt with the king; and Simeon at the fat pasture of Gedor."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Sons of Levi", "range": "1 Chronicles 5–6", "bible_chapters": [5, 6],
+     "blurb": "Reuben, whose birthright was given to the sons of Joseph; Gad in Bashan; the war with the Hagrites, for they cried to God in the battle; the two tribes and a half carried away beyond the river; then the sons of Levi: the high priests from Aaron to Jehozadak, the singers David set over the service of song, and the cities of the Levites."},
   ],
 }

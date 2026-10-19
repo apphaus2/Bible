@@ -149,6 +149,76 @@
    "w": 760,
    "h": 1080,
    "title": "17 · The Entrance of Gedor"
+  },
+  "1CH-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Sons of Levi"
+  },
+  "1CH-C03-R-P01-TheSonsOfReuben.dc.html": {
+   "x": 840,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Sons of Reuben"
+  },
+  "1CH-C03-D-P01-TheWarWithTheHagri.dc.html": {
+   "x": 1680,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · The War with the Hagrites"
+  },
+  "1CH-C03-D-P02-TheHalfTribeOfMana.dc.html": {
+   "x": 2520,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · The Half-tribe of Manasseh"
+  },
+  "1CH-C03-E-P01-TheSonsOfLevi.dc.html": {
+   "x": 3360,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · The Sons of Levi"
+  },
+  "1CH-C03-S-P01-TheFamiliesOfTheLe.dc.html": {
+   "x": 0,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · The Families of the Levites"
+  },
+  "1CH-C03-F-P01-TheServiceOfSong.dc.html": {
+   "x": 840,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The Service of Song"
+  },
+  "1CH-C03-F-P02-TheServiceOfSong.dc.html": {
+   "x": 1680,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · The Service of Song"
+  },
+  "1CH-C03-U-P01-TheirDwellingPlace.dc.html": {
+   "x": 2520,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Their Dwelling-places"
+  },
+  "1CH-C03-U-P02-TheirDwellingPlace.dc.html": {
+   "x": 3360,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Their Dwelling-places"
   }
  },
  "order": [
@@ -171,7 +241,17 @@
   "1CH-C02-E-P01-Jabez.dc.html",
   "1CH-C02-S-P01-TheMenOfRecah.dc.html",
   "1CH-C02-S-P02-TheSonsOfSimeon.dc.html",
-  "1CH-C02-F-P01-TheEntranceOfGedor.dc.html"
+  "1CH-C02-F-P01-TheEntranceOfGedor.dc.html",
+  "1CH-C03-00-Title.dc.html",
+  "1CH-C03-R-P01-TheSonsOfReuben.dc.html",
+  "1CH-C03-D-P01-TheWarWithTheHagri.dc.html",
+  "1CH-C03-D-P02-TheHalfTribeOfMana.dc.html",
+  "1CH-C03-E-P01-TheSonsOfLevi.dc.html",
+  "1CH-C03-S-P01-TheFamiliesOfTheLe.dc.html",
+  "1CH-C03-F-P01-TheServiceOfSong.dc.html",
+  "1CH-C03-F-P02-TheServiceOfSong.dc.html",
+  "1CH-C03-U-P01-TheirDwellingPlace.dc.html",
+  "1CH-C03-U-P02-TheirDwellingPlace.dc.html"
  ],
  "notes": {
   "Main": {
@@ -194,6 +274,13 @@
    "text": "Chapter 2 · The Sons of David (1 Chronicles 3–4)",
    "x": 0,
    "y": 4600
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Sons of Levi (1 Chronicles 5–6)",
+   "x": 0,
+   "y": 7500
   }
  },
  "designSystems": [],

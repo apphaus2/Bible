@@ -45,7 +45,7 @@ def branch(w, h, root, kids, hi=(), color=CYAN, per=None):
         r, c = divmod(i, per)
         m = min(per, n - r * per)
         x = w * (0.5 if m == 1 else (0.06 + 0.07 * r) + (0.8 - 0.07 * r) * c / (m - 1))   # a second row sits half a step over, so no line crosses a name
-        y = h * (0.5 + 0.22 * r) if rows > 1 else h * 0.74
+        y = h * (0.5 + 0.22 * r) if rows > 1 else h * 0.66
         pts.append((x, y))
     for x, y in pts:
         o.append(f'<path d="M{f(rx)} {f(ry)} L {f(rx)} {f((ry + y) / 2)} L {f(x)} {f((ry + y) / 2)} L {f(x)} {f(y)}" fill="none" stroke="#4A7A9A" stroke-width="2"></path>')
@@ -118,4 +118,59 @@ def seir(p, w, h, seed):
         k = i / 13
         x, y = w * (0.06 + 0.7 * k), h * (0.98 - 0.12 * k)
         o.append(man(p, x, y, fit(y, y - h * (0.3 - 0.18 * k)), r.choice(["#8A3A1E", "#5A2A16", "#3A2214", "#5A6E8A"])))
+    return "".join(o)
+
+# ---- 1 Chronicles 5–6 ---------------------------------------------------------------------------------------------------
+import samuel1 as S1, samuel3 as S3, judges1 as J1, exodus4 as E4
+
+EAST = [("AROER", 0.34, 0.82), ("NEBO", 0.3, 0.64), ("BAAL-MEON", 0.4, 0.7), ("GILEAD", 0.36, 0.46), ("BASHAN", 0.4, 0.26), ("SALECAH", 0.56, 0.3),
+        ("HERMON", 0.34, 0.08), ("HAGRITES", 0.66, 0.6)]
+def east_jordan(w, h, hi=("GILEAD",), war=False):
+    """The land beyond the Jordan as a technical map: Reuben, Gad and the half-tribe of Manasseh from Aroer up to Hermon,
+    the wilderness eastward to the Euphrates (war=True: the Hagrites' country marked and the march toward it)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M{f(w * 0.2)} -10 C {f(w * 0.22)} {f(h * 0.3)} {f(w * 0.18)} {f(h * 0.6)} {f(w * 0.2)} {f(h + 10)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>'
+             + label(w * 0.17, h * 0.5, "JORDAN", "#8FD0E2", 9, "end"))
+    o.append(f'<rect x="{f(w * 0.26)}" y="{f(h * 0.04)}" width="{f(w * 0.34)}" height="{f(h * 0.88)}" fill="#FFD23F" fill-opacity="0.07" stroke="#FFD23F" stroke-width="1.6" stroke-dasharray="8 6"></rect>')
+    o.append(label(w * 0.94, h * 0.12, "TO THE RIVER EUPHRATES →", "#8FD0E2", 9, "end"))
+    pos = {n: (w * x, h * y) for n, x, y in EAST}
+    if war:
+        o.append(f'<ellipse cx="{f(w * 0.74)}" cy="{f(h * 0.6)}" rx="{f(w * 0.16)}" ry="{f(h * 0.2)}" fill="#D7261E" fill-opacity="0.2" stroke="#D7261E" stroke-width="2"></ellipse>')
+        o.append(route([pos["GILEAD"], (w * 0.6, h * 0.58)], color="#FFD23F"))
+    for nm, x, y in EAST:
+        if nm == "HAGRITES" and not war: continue
+        o.append(node(w * x, h * y, nm, RED_C if nm == "HAGRITES" else (GOLD if nm in hi else CYAN), r=5, dy=-11, size=9))
+    return "".join(o)
+
+def spoil(p, w, h, seed):
+    """The cattle taken away: camels, sheep and asses driven in a long stream across the plain."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C8A878", "#F3E0B0"), hills(w, h, h * 0.44, seed, "#A8784A", amp=12, step=80), ground(w, h, h * 0.52, "#C8A06A", dy=0)]
+    items = sorted((r.uniform(h * 0.56, h * 0.96), r.uniform(-20, w + 20), r.random()) for _ in range(30))
+    for y, x, q in items:
+        k = (y - h * 0.56) / (h * 0.4); s = 0.12 + 0.3 * k
+        if q < 0.3: o.append(J1.camel(x, y, s, color="#B5844A"))
+        elif q < 0.85: o.append(E.sheep(x, y, s * 0.9))
+        else: o.append(N.ass(x, y, s * 0.8))
+    return "".join(o)
+
+def singers(p, w, h, seed, n=6, top=0.42):
+    """They that ministered with song before the tabernacle of the tent of meeting: the tent in its linen court, singers
+    with harps and cymbals before it."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFB04A", "#F3E0B0"), ground(w, h, h * 0.6, "#C8A06A", dy=0), S1.shiloh(w * 0.5, h * 0.64, w * 0.7, h * 0.44)]
+    s = fit(b, h * top)
+    for i in range(n):
+        o.append(S3.musician(p, w * (0.08 + i * 0.84 / max(1, n - 1)), b, s, kind=("harp", "cymbals")[i % 2], cloth="#F3EFE6", woman=False, seed=seed + i))
+    o.append(S3.notes(w * 0.5, h * 0.3, 8, seed))
+    return "".join(o)
+
+def altar_service(p, w, h, seed):
+    """Aaron and his sons at the altar of burnt-offering and the altar of incense: the priests in white at the two altars."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A4A6A", "#E8C890"), ground(w, h, h * 0.66, "#C8B88A", dy=0),
+         horned_altar(w * 0.3, b, min(1.2, h / 280), fire=True, seed=seed), horned_altar(w * 0.72, b, min(0.7, h / 480), seed=seed + 1),
+         f'<path d="M{f(w * 0.72)} {f(b - h * 0.24)} C {f(w * 0.68)} {f(h * 0.4)} {f(w * 0.78)} {f(h * 0.3)} {f(w * 0.72)} {f(h * 0.08)}" stroke="#E8E2D6" stroke-width="10" fill="none" opacity="0.6"></path>']
+    s = fit(b, max(h * 0.42, b - 220))
+    o.append(priest(p, w * 0.12, b, s) + priest(p, w * 0.5, b, s * 0.94, flip=True) + priest(p, w * 0.9, b, s, flip=True))
     return "".join(o)
