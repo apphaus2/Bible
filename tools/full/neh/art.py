@@ -444,3 +444,83 @@ def families_armed(p, w, h, seed):
                 o.append(f'<path d="M{f(bx)} {f(by - 50 * s)} Q {f(bx + 24 * s)} {f(by)} {f(bx)} {f(by + 50 * s)}" fill="none" stroke="#5A3A1E" stroke-width="{f(4 * s)}"></path>'
                          f'<path d="M{f(bx)} {f(by - 50 * s)} L {f(bx)} {f(by + 50 * s)}" stroke="#E8E2D6" stroke-width="1.4"></path>')
     return "".join(o)
+
+# ---- Nehemiah 5–6 -------------------------------------------------------------------------------------------------------
+NOBLE_C = ("#6A3A5A", "#2A5A5A", "#7A4A1E")
+
+def noble(p, x, y, s, cloth, flip=False, up=None):
+    """A noble or ruler of Judah at a distance: a rich robe and headcloth with a gold cord, black beard."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=cloth, kind="Robe", sw=3, flip=flip, up=up,
+                     extra=A.headcloth(cloth, cord="#E8B830") + A.BLACK_BEARD)
+
+def outcry(p, w, h, seed):
+    """A great cry of the people and of their wives against their brethren: the poor with their arms raised and their
+    children, the nobles before their houses, the empty grain sacks between them."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C8A890", "#F3E0B0"), J.city_hill(w * 0.82, h * 0.62, w * 0.3, h * 0.2, seed), ground(w, h, h * 0.62, "#C8A06A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 220))
+    raise_ = [(-22, -158), (-40, -190), (-52, -222)]
+    for i in range(5):
+        x = w * (0.06 + i * 0.1)
+        if i == 2:
+            o.append(woman(p, x, b, s * 0.94, "#4A3A5A", up=raise_) + mk.person(p, round(x + 28 * s), round(b), round(s * 0.5, 3), body=SKIN, cloth="#E8D8B0", kind="Tunic", sw=3))
+        else:
+            o.append(man(p, x, b - (i % 2) * 4, s * (0.96 - (i % 2) * 0.04), ("#6A5A4A", "#5A5A4A", "#7A6A5A", "#4A4A3A", "#6A5040")[i], up=raise_ if i % 2 == 0 else None))
+    for i in range(3):
+        o.append(R1.sack(w * (0.56 + i * 0.05), b, s * 0.9))
+    for i in range(3):
+        o.append(noble(p, w * (0.66 + i * 0.08), b - (i % 2) * 4, s, NOBLE_C[i], flip=True))
+    return "".join(o)
+
+def shake_lap(p, w, h, seed):
+    """Nehemiah shaking out his lap before the assembly — so God shake out every man that performeth not this promise —
+    the priests by him, and all the assembly saying Amen."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), K1.temple_front(w * 0.5, h * 0.6, w * 0.4, seed), ground(w, h, h * 0.6, "#C8B88A", dy=0)]
+    s = fit(b, max(h * 0.36, b - 240))
+    x = w * 0.5
+    o.append(neh_fig(p, x, b, s * 1.05, up=[(22, -158), (48, -132), (58, -104)]))
+    lx, ly = x + 58 * s * 1.05, b - 104 * s * 1.05
+    o.append(f'<path d="M{f(lx - 10 * s)} {f(ly)} C {f(lx + 20 * s)} {f(ly + 10 * s)} {f(lx + 26 * s)} {f(ly + 40 * s)} {f(lx + 14 * s)} {f(ly + 54 * s)} L {f(lx - 4 * s)} {f(ly + 30 * s)} Z" fill="{NEH_C}" stroke="#0D0D0F" stroke-width="2"></path>')
+    r = random.Random(seed)
+    for _ in range(8):
+        o.append(f'<circle cx="{f(lx + r.uniform(0, 30) * s)}" cy="{f(ly + r.uniform(60, 110) * s)}" r="{f(r.uniform(1.4, 3) * s)}" fill="#8A6A3A"></circle>')
+    for i in range(2): o.append(K1.priest(p, w * (0.28 + i * 0.09), b, s * 0.96))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.16, h * 0.7, b, 4, s * 0.6, s * 0.9))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.7, w * 0.98, h * 0.7, b, 6, s * 0.6, s * 0.9, flip=True))
+    return "".join(o)
+
+def ono_map(w, h, letter=False):
+    """Come, let us meet together in one of the villages in the plain of Ono: Jerusalem in the hills, Ono in the plain to
+    the north-west, the messengers going between four times (letter=True: the fifth time, with an open letter)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.08)} -10 C {f(w * 0.1)} {f(h * 0.4)} {f(w * 0.06)} {f(h * 0.7)} {f(w * 0.04)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>'
+             + label(w * 0.05, h * 0.5, "THE SEA", "#8FD0E2", 8, "start"))
+    o.append(f'<path d="M{f(w * 0.48)} -10 C {f(w * 0.46)} {f(h * 0.4)} {f(w * 0.52)} {f(h * 0.7)} {f(w * 0.5)} {f(h + 10)}" stroke="#4A7A9A" stroke-width="1.6" stroke-dasharray="4 5" fill="none"></path>'
+             + label(w * 0.53, h * 0.94, "THE HILL COUNTRY", "#4A7A9A", 8, "start") + label(w * 0.3, h * 0.94, "THE PLAIN", "#4A7A9A", 8))
+    J_, O_ = (w * 0.7, h * 0.62), (w * 0.24, h * 0.36)
+    o.append(f'<ellipse cx="{f(O_[0])}" cy="{f(O_[1])}" rx="{f(w * 0.1)}" ry="{f(h * 0.12)}" fill="#D7261E" fill-opacity="0.12" stroke="#D7261E" stroke-width="1.6" stroke-dasharray="5 4"></ellipse>')
+    for k in range(4):
+        dy = (k - 1.5) * h * 0.04
+        o.append(route([(O_[0] + w * 0.06, O_[1] + dy), (J_[0] - w * 0.05, J_[1] + dy - h * 0.06)], color="#FF8A6A", sw=1.8, dash="6 5"))
+    if letter:
+        o.append(route([(O_[0] + w * 0.08, O_[1] + h * 0.16), (J_[0] - w * 0.04, J_[1] + h * 0.06)], color=GOLD, sw=3, dash="10 4")
+                 + label((O_[0] + J_[0]) / 2, (O_[1] + J_[1]) / 2 + h * 0.2, "THE FIFTH TIME · AN OPEN LETTER", GOLD, 9))
+    else:
+        o.append(label((O_[0] + J_[0]) / 2 - w * 0.04, (O_[1] + J_[1]) / 2 - h * 0.14, "FOUR TIMES", "#FF8A6A", 9))
+    o.append(node(*O_, "ONO", "#FF8A6A", r=5, dy=-12, size=10) + node(*J_, "JERUSALEM", GOLD, r=7, dy=-14, size=11)
+             + node(w * 0.66, h * 0.12, "SAMARIA", "#FF8A6A", r=4, dy=-10, size=8))
+    return "".join(o)
+
+def wall_done(p, w, h, seed):
+    """The wall finished in fifty and two days: the whole wall standing with its towers, a gate with its doors set up,
+    Jerusalem's houses behind, the morning sun."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFC890", "#FFF4C2"), sun(w * 0.12, h * 0.2, 22), hills(w, h, h * 0.42, seed, "#B8A07A", amp=10, step=90),
+         J.jericho(-10, w + 10, h * 0.42, h * 0.82, seed, color=STONE, towers=3, houses=True),
+         S4b.gatehouse(w * 0.5, h * 0.82, w * 0.22, h * 0.5),
+         f'<rect x="{f(w * 0.5 - w * 0.04)}" y="{f(h * 0.82 - h * 0.2)}" width="{f(w * 0.04)}" height="{f(h * 0.2)}" fill="#B5793A" stroke="#0D0D0F" stroke-width="2"></rect>'
+         f'<rect x="{f(w * 0.5)}" y="{f(h * 0.82 - h * 0.2)}" width="{f(w * 0.04)}" height="{f(h * 0.2)}" fill="#B5793A" stroke="#0D0D0F" stroke-width="2"></rect>'
+         f'<rect x="{f(w * 0.46)}" y="{f(h * 0.82 - h * 0.12)}" width="{f(w * 0.08)}" height="{f(h * 0.02)}" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="1.4"></rect>',
+         ground(w, h, h * 0.82, "#C8A06A", dy=0)]
+    return "".join(o)

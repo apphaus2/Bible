@@ -25,5 +25,7 @@ META = {
      "blurb": "In Shushan the palace word comes from Judah: the wall of Jerusalem is broken down, and the gates thereof are burned with fire; Nehemiah weeps and prays; the cupbearer before Artaxerxes — why is thy countenance sad?; the king's letters and the captains; then by night, round the broken walls, and the call: let us rise up and build."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Builders", "range": "Nehemiah 3–4", "bible_chapters": [3, 4],
      "blurb": "Eliashib the high priest and his brethren the priests rose up and builded the sheep gate, and next unto him builded the men of Jericho — portion by portion round the wall, gate by gate, Shallum with his daughters; then Sanballat's mockery: if a fox go up, he shall break down their stone wall; the adversaries conspiring on every side — remember the Lord, who is great and terrible; and every one with one of his hands wrought in the work, and with the other held his weapon."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Work Finished", "range": "Nehemiah 5–6", "bible_chapters": [5, 6],
+     "blurb": "A great cry of the people against their brethren — we are mortgaging our fields; ye exact usury, every one of his brother; Nehemiah shakes out his lap, and all the assembly said, Amen; then the plain of Ono — I am doing a great work, so that I cannot come down; the open letter; Shemaiah shut up — should such a man as I flee?; and the wall finished in fifty and two days."},
   ],
 }
