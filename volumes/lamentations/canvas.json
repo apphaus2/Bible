@@ -1,0 +1,146 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T02:42:47Z"
+ },
+ "title": "Lamentations — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "LAM-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · How Doth the City Sit Solitary"
+  },
+  "LAM-C01-D-P01-HowDothTheCitySitS.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · How Doth the City Sit Solitary"
+  },
+  "LAM-C01-D-P02-HowDothTheCitySitS.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · How Doth the City Sit Solitary"
+  },
+  "LAM-C01-D-P03-HowDothTheCitySitS.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · How Doth the City Sit Solitary"
+  },
+  "LAM-C01-D-P04-IsItNothingToYou.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Is It Nothing to You?"
+  },
+  "LAM-C01-D-P05-ZionSpreadethForth.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Zion Spreadeth Forth Her Hands"
+  },
+  "LAM-C01-D-P06-ZionSpreadethForth.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Zion Spreadeth Forth Her Hands"
+  },
+  "LAM-C01-D-P07-CoveredWithACloudI.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Covered with a Cloud in His Anger"
+  },
+  "LAM-C01-D-P08-CoveredWithACloudI.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Covered with a Cloud in His Anger"
+  },
+  "LAM-C01-D-P09-HerGatesAreSunkInt.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Her Gates Are Sunk into the Ground"
+  },
+  "LAM-C01-D-P10-ThyBreachIsGreatLi.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Thy Breach Is Great like the Sea"
+  },
+  "LAM-C01-D-P11-ThyBreachIsGreatLi.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Thy Breach Is Great like the Sea"
+  },
+  "LAM-C01-D-P12-PourOutThyHeartLik.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Pour Out Thy Heart like Water"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "LAM-C01-00-Title.dc.html",
+  "LAM-C01-D-P01-HowDothTheCitySitS.dc.html",
+  "LAM-C01-D-P02-HowDothTheCitySitS.dc.html",
+  "LAM-C01-D-P03-HowDothTheCitySitS.dc.html",
+  "LAM-C01-D-P04-IsItNothingToYou.dc.html",
+  "LAM-C01-D-P05-ZionSpreadethForth.dc.html",
+  "LAM-C01-D-P06-ZionSpreadethForth.dc.html",
+  "LAM-C01-D-P07-CoveredWithACloudI.dc.html",
+  "LAM-C01-D-P08-CoveredWithACloudI.dc.html",
+  "LAM-C01-D-P09-HerGatesAreSunkInt.dc.html",
+  "LAM-C01-D-P10-ThyBreachIsGreatLi.dc.html",
+  "LAM-C01-D-P11-ThyBreachIsGreatLi.dc.html",
+  "LAM-C01-D-P12-PourOutThyHeartLik.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Lamentations Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · How Doth the City Sit Solitary (Lamentations 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
