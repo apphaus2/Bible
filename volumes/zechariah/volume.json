@@ -1,0 +1,21 @@
+{
+ "id": "zechariah",
+ "order": 38,
+ "name": "Zechariah",
+ "kanji": "ゼカリヤ書",
+ "thumb": "vol-zechariah-",
+ "lede": "The thirty-eighth book of the Bible, in full: the night visions of Zechariah — the horses among the myrtles, the measuring line, Joshua the high priest, the candlestick of gold and the two olive-trees, the flying roll and the four chariots; then thy king cometh unto thee, lowly, and riding upon an ass; the thirty pieces of silver; a fountain opened; and the day of Jehovah, when his feet shall stand upon the mount of Olives — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Night Visions",
+   "range": "Zechariah 1–4",
+   "blurb": "Return unto me, and I will return unto you; a man riding upon a red horse among the myrtle-trees in the bottom; four horns and four smiths; a man with a measuring line — I will be unto her a wall of fire round about; Joshua the high priest in filthy garments, and a clean mitre upon his head; the stone with seven eyes; a candlestick all of gold and two olive-trees — not by might, nor by power, but by my Spirit, saith Jehovah of hosts.",
+   "prefixes": [
+    "Main.dc.html",
+    "ZEC-C01-"
+   ]
+  }
+ ]
+}
