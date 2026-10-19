@@ -1,0 +1,21 @@
+{
+ "id": "songofsolomon",
+ "order": 22,
+ "name": "Song of Solomon",
+ "kanji": "雅歌",
+ "thumb": "vol-songofsolomon-",
+ "lede": "The twenty-second book of the Bible, in full: the Song of songs, which is Solomon's — the bride in the vineyards, the beloved like a roe upon the mountains, the winter past and the voice of the turtle-dove, a garden shut up, and love strong as death — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "I Am a Rose of Sharon",
+   "range": "Song of Solomon 1–2",
+   "blurb": "The Song of songs, which is Solomon's: I am black, but comely, as the tents of Kedar; tell me, O thou whom my soul loveth, where thou feedest thy flock; I am a rose of Sharon, a lily of the valleys; his banner over me was love; the voice of my beloved, leaping upon the mountains — rise up, my love, my fair one, and come away, for, lo, the winter is past; the little foxes; my beloved is mine, and I am his.",
+   "prefixes": [
+    "Main.dc.html",
+    "SNG-C01-"
+   ]
+  }
+ ]
+}
