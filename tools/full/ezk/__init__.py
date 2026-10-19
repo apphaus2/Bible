@@ -37,5 +37,7 @@ META = {
      "blurb": "The prophet a sign: stuff for removing carried out by day, the wall digged through in the dark — I am your sign; the net spread for the prince in Jerusalem; bread eaten with quaking; the foolish prophets like foxes in the waste places, and the wall daubed with untempered mortar brought down by the stormy wind; and though these three men, Noah, Daniel, and Job, were in it."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Vine and the Foundling", "range": "Ezekiel 15–16", "bible_chapters": [15, 16],
      "blurb": "What is the vine-tree more than any tree? — cast into the fire for fuel; then Jerusalem, cast out in the open field in the day that she was born, washed and clothed and decked with ornaments, who trusted in her beauty; her lovers and her judgment; Samaria and Sodom her sisters; and nevertheless I will remember my covenant with thee in the days of thy youth."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Eagles and the Cedar", "range": "Ezekiel 17–19", "bible_chapters": [17, 18, 19],
+     "blurb": "A riddle of two great eagles, the top of the cedar and the vine of low stature, and its meaning — the king that despised the oath; a tender twig planted upon the mountain of the height of Israel; the fathers have eaten sour grapes — the soul that sinneth, it shall die, and turn yourselves, and live; and a lamentation for the princes of Israel: the lioness and her whelps, and the vine plucked up in fury."},
   ],
 }

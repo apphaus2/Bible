@@ -534,6 +534,104 @@
    "w": 760,
    "h": 1080,
    "title": "69 · An Everlasting Covenant"
+  },
+  "EZK-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Eagles and the Cedar"
+  },
+  "EZK-C06-D-P01-TwoGreatEagles.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Two Great Eagles"
+  },
+  "EZK-C06-D-P02-TwoGreatEagles.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Two Great Eagles"
+  },
+  "EZK-C06-D-P03-KnowYeNotWhatThese.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Know Ye Not What These Things Mean?"
+  },
+  "EZK-C06-D-P04-KnowYeNotWhatThese.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Know Ye Not What These Things Mean?"
+  },
+  "EZK-C06-D-P05-ATenderTwig.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · A Tender Twig"
+  },
+  "EZK-C06-D-P06-IfAManBeJust.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · If a Man Be Just"
+  },
+  "EZK-C06-D-P07-IfAManBeJust.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · If a Man Be Just"
+  },
+  "EZK-C06-D-P08-IfHeBegetASon.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · If He Beget a Son"
+  },
+  "EZK-C06-D-P09-TurnYourselvesAndL.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Turn Yourselves, and Live"
+  },
+  "EZK-C06-D-P10-IsNotMyWayEqual.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Is Not My Way Equal?"
+  },
+  "EZK-C06-D-P11-ALamentationForThe.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · A Lamentation for the Princes of Israel"
+  },
+  "EZK-C06-D-P12-ALamentationForThe.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · A Lamentation for the Princes of Israel"
+  },
+  "EZK-C06-D-P13-ThyMotherWasLikeAV.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Thy Mother Was Like a Vine"
   }
  },
  "order": [
@@ -611,7 +709,21 @@
   "EZK-C05-D-P09-IWillJudgeThee.dc.html",
   "EZK-C05-D-P10-AsIsTheMotherSoIsH.dc.html",
   "EZK-C05-D-P11-AsIsTheMotherSoIsH.dc.html",
-  "EZK-C05-D-P12-AnEverlastingCoven.dc.html"
+  "EZK-C05-D-P12-AnEverlastingCoven.dc.html",
+  "EZK-C06-00-Title.dc.html",
+  "EZK-C06-D-P01-TwoGreatEagles.dc.html",
+  "EZK-C06-D-P02-TwoGreatEagles.dc.html",
+  "EZK-C06-D-P03-KnowYeNotWhatThese.dc.html",
+  "EZK-C06-D-P04-KnowYeNotWhatThese.dc.html",
+  "EZK-C06-D-P05-ATenderTwig.dc.html",
+  "EZK-C06-D-P06-IfAManBeJust.dc.html",
+  "EZK-C06-D-P07-IfAManBeJust.dc.html",
+  "EZK-C06-D-P08-IfHeBegetASon.dc.html",
+  "EZK-C06-D-P09-TurnYourselvesAndL.dc.html",
+  "EZK-C06-D-P10-IsNotMyWayEqual.dc.html",
+  "EZK-C06-D-P11-ALamentationForThe.dc.html",
+  "EZK-C06-D-P12-ALamentationForThe.dc.html",
+  "EZK-C06-D-P13-ThyMotherWasLikeAV.dc.html"
  ],
  "notes": {
   "Main": {
@@ -655,6 +767,13 @@
    "text": "Chapter 5 · The Vine and the Foundling (Ezekiel 15–16)",
    "x": 0,
    "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Eagles and the Cedar (Ezekiel 17–19)",
+   "x": 0,
+   "y": 25800
   }
  },
  "designSystems": [],
