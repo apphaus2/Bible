@@ -401,6 +401,118 @@
    "w": 760,
    "h": 1080,
    "title": "50 · There Was Joy in Israel"
+  },
+  "1CH-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Ark of God"
+  },
+  "1CH-C06-D-P01-TheArkOfGod.dc.html": {
+   "x": 840,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Ark of God"
+  },
+  "1CH-C06-D-P02-PerezUzza.dc.html": {
+   "x": 1680,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Perez-uzza"
+  },
+  "1CH-C06-E-P01-BaalPerazim.dc.html": {
+   "x": 2520,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Baal-perazim"
+  },
+  "1CH-C06-E-P02-BaalPerazim.dc.html": {
+   "x": 3360,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Baal-perazim"
+  },
+  "1CH-C06-E-P03-TheTopsOfTheMulber.dc.html": {
+   "x": 0,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Tops of the Mulberry-trees"
+  },
+  "1CH-C06-F-P01-NoneOughtToCarryTh.dc.html": {
+   "x": 840,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · None Ought to Carry the Ark"
+  },
+  "1CH-C06-G-P01-SanctifyYourselves.dc.html": {
+   "x": 1680,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Sanctify Yourselves"
+  },
+  "1CH-C06-S-P01-TheSingers.dc.html": {
+   "x": 2520,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Singers"
+  },
+  "1CH-C06-H-P01-WithJoy.dc.html": {
+   "x": 3360,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · With Joy"
+  },
+  "1CH-C06-H-P02-InTheMidstOfTheTen.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · In the Midst of the Tent"
+  },
+  "1CH-C06-U-P01-OGiveThanksUntoJeh.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · O Give Thanks unto Jehovah"
+  },
+  "1CH-C06-U-P02-OGiveThanksUntoJeh.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · O Give Thanks unto Jehovah"
+  },
+  "1CH-C06-U-P03-OGiveThanksUntoJeh.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · O Give Thanks unto Jehovah"
+  },
+  "1CH-C06-U-P04-OGiveThanksUntoJeh.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · O Give Thanks unto Jehovah"
+  },
+  "1CH-C06-V-P01-BeforeTheArkContin.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Before the Ark Continually"
   }
  },
  "order": [
@@ -459,7 +571,23 @@
   "1CH-C05-G-P01-ThineAreWeDavid.dc.html",
   "1CH-C05-U-P01-ToMakeDavidKing.dc.html",
   "1CH-C05-U-P02-ToMakeDavidKing.dc.html",
-  "1CH-C05-H-P01-ThereWasJoyInIsrae.dc.html"
+  "1CH-C05-H-P01-ThereWasJoyInIsrae.dc.html",
+  "1CH-C06-00-Title.dc.html",
+  "1CH-C06-D-P01-TheArkOfGod.dc.html",
+  "1CH-C06-D-P02-PerezUzza.dc.html",
+  "1CH-C06-E-P01-BaalPerazim.dc.html",
+  "1CH-C06-E-P02-BaalPerazim.dc.html",
+  "1CH-C06-E-P03-TheTopsOfTheMulber.dc.html",
+  "1CH-C06-F-P01-NoneOughtToCarryTh.dc.html",
+  "1CH-C06-G-P01-SanctifyYourselves.dc.html",
+  "1CH-C06-S-P01-TheSingers.dc.html",
+  "1CH-C06-H-P01-WithJoy.dc.html",
+  "1CH-C06-H-P02-InTheMidstOfTheTen.dc.html",
+  "1CH-C06-U-P01-OGiveThanksUntoJeh.dc.html",
+  "1CH-C06-U-P02-OGiveThanksUntoJeh.dc.html",
+  "1CH-C06-U-P03-OGiveThanksUntoJeh.dc.html",
+  "1CH-C06-U-P04-OGiveThanksUntoJeh.dc.html",
+  "1CH-C06-V-P01-BeforeTheArkContin.dc.html"
  ],
  "notes": {
   "Main": {
@@ -503,6 +631,13 @@
    "text": "Chapter 5 · David King over Israel (1 Chronicles 10–12)",
    "x": 0,
    "y": 14500
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Ark of God (1 Chronicles 13–16)",
+   "x": 0,
+   "y": 18600
   }
  },
  "designSystems": [],
