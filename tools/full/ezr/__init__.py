@@ -25,5 +25,7 @@ META = {
      "blurb": "Haggai and Zechariah prophesy, and the building begins again; Tattenai — who gave you a decree to build this house?; the elders answer, we are the servants of the God of heaven and earth; the roll found at Achmetha; Darius decrees, let the work of this house of God alone; the house finished, dedicated with joy, and the passover kept."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Ezra the Scribe", "range": "Ezra 7–8", "bible_chapters": [7, 8],
      "blurb": "Ezra, a ready scribe in the law of Moses, who had set his heart to seek the law of Jehovah, and to do it, and to teach; the letter of Artaxerxes, king of kings; blessed be Jehovah, who hath put such a thing in the king's heart; the river Ahava and the fast — I was ashamed to ask of the king a band of soldiers; the silver and the gold weighed to the priests; and Jerusalem."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Strange Wives", "range": "Ezra 9–10", "bible_chapters": [9, 10],
+     "blurb": "The holy seed mingled with the peoples of the lands; Ezra rends his garment and sits confounded until the evening oblation — O my God, I am ashamed and blush to lift up my face to thee; the people weep very sore; Shecaniah — yet now there is hope for Israel; the great assembly trembling in the rain; and the names of those who had taken foreign wives."},
   ],
 }

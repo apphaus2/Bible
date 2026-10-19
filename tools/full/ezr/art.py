@@ -120,3 +120,30 @@ def weighing(p, w, h, seed):
     for i in range(3):
         o.append(priest(p, w * (0.06 + i * 0.08), b, s) + priest(p, w * (0.94 - i * 0.08), b, s, flip=True))
     return "".join(o)
+
+# ---- Ezra 9–10 ----------------------------------------------------------------------------------------------------------
+def rain_square(p, w, h, seed):
+    """The people sitting in the broad place before the house of God in the ninth month, trembling because of the great rain:
+    a dark sky, slanting rain, the crowd hunched in their cloaks."""
+    r = random.Random(seed)
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#2A2A3A", "#6A6A7A"), temple_front(w * 0.5, h * 0.62, w * 0.5, seed), ground(w, h, h * 0.62, "#6A6458", dy=0)]
+    s = fit(b, max(h * 0.66, b - 150))
+    for i in range(12):
+        x = w * (0.04 + i * 0.083) + r.uniform(-8, 8)
+        o.append(E.kneel(x, b - r.randint(0, 10), s * 0.7, color=r.choice(["#3A3438", "#4A4040", "#3A3A4A"]), skin="#8A6A5A", flip=i % 2 == 1))
+    for _ in range(90):
+        x, y = r.uniform(-20, w), r.uniform(0, h)
+        o.append(f'<path d="M{f(x)} {f(y)} l {f(-h * 0.02)} {f(h * 0.06)}" stroke="#C8D8E8" stroke-width="1.6" opacity="0.6"></path>')
+    return "".join(o)
+
+def prayer_evening(p, w, h, seed):
+    """At the evening oblation: Ezra on his knees, his garment rent, his hands spread out before the house, the people who
+    trembled sitting about him in the dusk."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#3A2A4A", "#E8907A"), temple_front(w * 0.5, h * 0.66, w * 0.46, seed), ground(w, h, h * 0.66, "#8A7A6A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 240))
+    o.append(S3.dancer(w * 0.5, b, s * 0.9, p + "ez", [(-22, -158), (-40, -200), (-46, -238)], [(22, -158), (40, -200), (46, -238)], cloth="#E8E2D6", body="#5A2A16", crown=False))
+    for i in range(6):
+        o.append(E.kneel(w * (0.06 + i * 0.07) if i < 3 else w * (0.74 + (i - 3) * 0.08), b, s * 0.62, color="#5A5040", skin="#9A6A4A", flip=i >= 3))
+    return "".join(o)

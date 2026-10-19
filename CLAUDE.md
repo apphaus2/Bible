@@ -203,9 +203,12 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Ezra | 2 · The Foundation of the House | 3–4 | title + 6 (pp. 9–14) | 37/37 verses full (the letters beyond the River as sealed scrolls, their words in speech boxes) | `volumes/ezra/` |
 | Ezra | 3 · The House Finished | 5–6 | title + 6 (pp. 15–20) | 39/39 verses full (the roll at Achmetha and the measures of the house as a plan; 6:11 words only) | `volumes/ezra/` |
 | Ezra | 4 · Ezra the Scribe | 7–8 | title + 9 (pp. 21–29) | 64/64 verses full (Ezra's line to Aaron as a chart; the silver and gold weighed on a great balance) | `volumes/ezra/` |
+| Ezra | 5 · The Strange Wives | 9–10 | title + 8 (pp. 30–37) | 59/59 verses full (Ezra's prayer on his knees; the people trembling in the rain; the names as roll cells) | `volumes/ezra/` |
+| **Ezra** | **complete: cover + 5 chapters** | **1–10** | **43 pages (37 numbered)** | **280 verses: all full** | `volumes/ezra/` |
 
-**Genesis through 2 Chronicles (fourteen volumes) are complete; Ezra is in progress** (`tools/full/ezr/`, five chapters planned in
-`ezr/__init__.py`, `ezr.art` carries `chr2.art`). 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+**Genesis through Ezra (fifteen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Nehemiah, Esther,
+Job and Proverbs are being built in parallel worktrees (packages `neh`, `est`, `job`, `pro`) from one brief; Psalms comes after Job. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
@@ -763,6 +766,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (Ezra next).
+- On through the Bible, book by book (Nehemiah, Esther, Job, Proverbs in progress; then Psalms, Ecclesiastes …).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 221 verses — 221 full, 0 partial, 0 omitted.
+**So far:** 280 verses — 280 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Decree of Cyrus (Ezra 1–2)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · Ezra the Scribe (Ezra 7–8)
 
 64 verses: 64 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · The Strange Wives (Ezra 9–10)
+
+59 verses: 59 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
