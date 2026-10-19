@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 152 verses — 152 full, 0 partial, 0 omitted.
+**So far:** 201 verses — 201 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Wisdom and Knowledge (2 Chronicles 1–4)
 
@@ -13,5 +13,11 @@ Every verse is on the page in full.
 ## Chapter 2 · The Glory Filled the House (2 Chronicles 5–7)
 
 78 verses: 78 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 3 · The Queen of Sheba (2 Chronicles 8–9)
+
+49 verses: 49 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

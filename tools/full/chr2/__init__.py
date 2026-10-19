@@ -26,5 +26,7 @@ META = {
      "blurb": "Solomon at the high place at Gibeon, and in that night, ask what I shall give thee — give me now wisdom and knowledge; chariots and horsemen, and silver and gold as stones; Huram king of Tyre and the cedars of Lebanon; then the house of Jehovah on mount Moriah: the most holy house and its cherubim, Jachin and Boaz, the molten sea upon twelve oxen, and the vessels of gold."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Glory Filled the House", "range": "2 Chronicles 5–7", "bible_chapters": [5, 6, 7],
      "blurb": "The ark brought into the oracle under the wings of the cherubim; the trumpeters and singers as one — for he is good, for his lovingkindness endureth for ever — and the house filled with a cloud; Solomon's prayer from the brazen scaffold; the fire came down from heaven; and Jehovah's answer by night: if my people, who are called by my name, shall humble themselves, and pray."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Queen of Sheba", "range": "2 Chronicles 8–9", "bible_chapters": [8, 9],
+     "blurb": "Tadmor in the wilderness and the store-cities; Pharaoh's daughter brought up to her own house, for the places are holy whereunto the ark hath come; the ships of Ophir; then the queen of Sheba with hard questions — the half of the greatness of thy wisdom was not told me; the throne of ivory and its twelve lions; and Solomon slept with his fathers."},
   ],
 }
