@@ -1185,6 +1185,118 @@
    "w": 760,
    "h": 1080,
    "title": "157 · Holy unto Jehovah"
+  },
+  "JER-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Field at Anathoth"
+  },
+  "JER-C11-D-P01-ShutUpInTheCourtOf.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · Shut Up in the Court of the Guard"
+  },
+  "JER-C11-D-P02-BuyTheeMyField.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Buy Thee My Field"
+  },
+  "JER-C11-D-P03-SeventeenShekelsOf.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Seventeen Shekels of Silver"
+  },
+  "JER-C11-D-P04-ThereIsNothingTooH.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · There Is Nothing Too Hard for Thee"
+  },
+  "JER-C11-D-P05-ThereIsNothingTooH.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · There Is Nothing Too Hard for Thee"
+  },
+  "JER-C11-D-P06-IsThereAnythingToo.dc.html": {
+   "x": 840,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Is There Anything Too Hard for Me?"
+  },
+  "JER-C11-D-P07-IsThereAnythingToo.dc.html": {
+   "x": 1680,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Is There Anything Too Hard for Me?"
+  },
+  "JER-C11-D-P08-AnEverlastingCoven.dc.html": {
+   "x": 2520,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · An Everlasting Covenant"
+  },
+  "JER-C11-D-P09-AnEverlastingCoven.dc.html": {
+   "x": 3360,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · An Everlasting Covenant"
+  },
+  "JER-C11-E-P01-CallUntoMe.dc.html": {
+   "x": 0,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Call unto Me"
+  },
+  "JER-C11-E-P02-CallUntoMe.dc.html": {
+   "x": 840,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · Call unto Me"
+  },
+  "JER-C11-E-P03-TheVoiceOfTheBride.dc.html": {
+   "x": 1680,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · The Voice of the Bridegroom"
+  },
+  "JER-C11-E-P04-ABranchOfRighteous.dc.html": {
+   "x": 2520,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · A Branch of Righteousness"
+  },
+  "JER-C11-E-P05-MyCovenantOfTheDay.dc.html": {
+   "x": 3360,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · My Covenant of the Day and of the Night"
+  },
+  "JER-C11-E-P06-MyCovenantOfTheDay.dc.html": {
+   "x": 0,
+   "y": 55000,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · My Covenant of the Day and of the Night"
   }
  },
  "order": [
@@ -1355,7 +1467,23 @@
   "JER-C10-D-P15-EphraimBemoaningHi.dc.html",
   "JER-C10-D-P16-EphraimBemoaningHi.dc.html",
   "JER-C10-D-P17-ANewCovenant.dc.html",
-  "JER-C10-D-P18-HolyUntoJehovah.dc.html"
+  "JER-C10-D-P18-HolyUntoJehovah.dc.html",
+  "JER-C11-00-Title.dc.html",
+  "JER-C11-D-P01-ShutUpInTheCourtOf.dc.html",
+  "JER-C11-D-P02-BuyTheeMyField.dc.html",
+  "JER-C11-D-P03-SeventeenShekelsOf.dc.html",
+  "JER-C11-D-P04-ThereIsNothingTooH.dc.html",
+  "JER-C11-D-P05-ThereIsNothingTooH.dc.html",
+  "JER-C11-D-P06-IsThereAnythingToo.dc.html",
+  "JER-C11-D-P07-IsThereAnythingToo.dc.html",
+  "JER-C11-D-P08-AnEverlastingCoven.dc.html",
+  "JER-C11-D-P09-AnEverlastingCoven.dc.html",
+  "JER-C11-E-P01-CallUntoMe.dc.html",
+  "JER-C11-E-P02-CallUntoMe.dc.html",
+  "JER-C11-E-P03-TheVoiceOfTheBride.dc.html",
+  "JER-C11-E-P04-ABranchOfRighteous.dc.html",
+  "JER-C11-E-P05-MyCovenantOfTheDay.dc.html",
+  "JER-C11-E-P06-MyCovenantOfTheDay.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1434,6 +1562,13 @@
    "text": "Chapter 10 · A New Covenant (Jeremiah 29–31)",
    "x": 0,
    "y": 45800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Field at Anathoth (Jeremiah 32–33)",
+   "x": 0,
+   "y": 51100
   }
  },
  "designSystems": [],
