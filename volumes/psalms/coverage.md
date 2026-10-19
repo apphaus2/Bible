@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 752 verses — 752 full, 0 partial, 0 omitted.
+**So far:** 900 verses — 900 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Blessed Is the Man (Psalms 1–12)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · As the Hart Panteth (Psalms 42–50)
 
 136 verses: 136 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · A Clean Heart (Psalms 51–62)
+
+148 verses: 148 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -8,7 +8,8 @@ exodus' sheep and fire, judges' lion and chaff, ruth's field and reapers)."""
 import sys, pathlib, random, math
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 import mk, exodus as E, exodus3 as E3, exodus4 as E4, exodus5 as V, joshua1 as J, judges1 as J1, judges2 as J2, ruth1 as R1, samuel1 as S1, samuel2 as S2, samuel3 as S3, samuel4 as S4
-from genesis.art2 import fit, ground, hills, bird, birds, rain as rain_lines, sea as sea_band, SKIN
+from genesis.art2 import fit as _fit, ground, hills, bird, birds, rain as rain_lines, sea as sea_band, SKIN
+def fit(base, top): return min(_fit(base, top), 1.05)      # standing figures never taller than ~210 px, so they stay below the words
 from genesis.art3 import sun, label, man, woman, king, grid_bg, node, route
 from genesis import art as GA
 from exo import art as A, art6 as A6
@@ -549,13 +550,14 @@ def s_nations(p, w, h, seed):
     """All the ends of the earth shall remember and turn unto Jehovah: the lands about the great sea as a technical map, every
     route leading to Zion."""
     o = [grid_bg(w, h)]
+    Y = lambda y: h * (0.4 + 0.58 * y)
     pts = [("ZION", 0.5, 0.56), ("EGYPT", 0.2, 0.86), ("ETHIOPIA", 0.16, 0.98), ("TARSHISH", 0.05, 0.3), ("THE ISLES", 0.22, 0.2), ("SHEBA", 0.62, 0.95),
            ("ASSHUR", 0.84, 0.18), ("BABYLON", 0.92, 0.5), ("TYRE", 0.42, 0.34), ("SEIR", 0.58, 0.8), ("KEDAR", 0.82, 0.76)]
-    o.append(f'<path d="M-10 {f(h * 0.1)} C {f(w * 0.2)} {f(h * 0.2)} {f(w * 0.36)} {f(h * 0.4)} {f(w * 0.38)} {f(h * 0.7)} C {f(w * 0.3)} {f(h * 0.76)} {f(w * 0.1)} {f(h * 0.7)} -10 {f(h * 0.72)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M-10 {f(Y(0.1))} C {f(w * 0.2)} {f(Y(0.2))} {f(w * 0.36)} {f(Y(0.4))} {f(w * 0.38)} {f(Y(0.7))} C {f(w * 0.3)} {f(Y(0.76))} {f(w * 0.1)} {f(Y(0.7))} -10 {f(Y(0.72))} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
     for name, x, y in pts[1:]:
-        o.append(route([(w * x, h * y), (w * 0.5, h * 0.56)], color="#8FD0E2"))
+        o.append(route([(w * x, Y(y)), (w * 0.5, Y(0.56))], color="#8FD0E2"))
     for name, x, y in pts:
-        o.append(node(w * x, h * y, name, color="#FFD23F" if name == "ZION" else "#8FD0E2", r=8 if name == "ZION" else 5))
+        o.append(node(w * x, Y(y), name, color="#FFD23F" if name == "ZION" else "#8FD0E2", r=8 if name == "ZION" else 5))
     return "".join(o)
 
 def s_pasture(p, w, h, seed):
@@ -966,7 +968,73 @@ def s_tomb(p, w, h, seed):
     o.append(f'<path d="M{f(w * 0.9)} {f(h * 0.9)} C {f(w * 0.88)} {f(h * 0.7)} {f(w * 0.9)} {f(h * 0.5)} {f(w * 0.9)} {f(h * 0.44)} C {f(w * 0.92)} {f(h * 0.5)} {f(w * 0.94)} {f(h * 0.7)} {f(w * 0.92)} {f(h * 0.9)} Z" fill="#1F3A2A" stroke="#0D0D0F" stroke-width="2"></path>')
     return "".join(o)
 
-NOMIRROR = {"nations"}
+
+def s_cave(p, w, h, seed):
+    """When he fled from Saul, in the cave: inside the dark cave, the bright mouth, a man kneeling in the shadow."""
+    o = [mk.defs(p, *ALL), S2.cave(w, h, w * 0.52, w * 0.36, h * 0.92, seed), f'<rect x="-10" y="{f(h * 0.92)}" width="{f(w + 20)}" height="{f(h)}" fill="#2A2220"></rect>']
+    o.append(E.kneel(w * 0.3, h * 0.94, min(1.2, h / 300), color="#0D0D0F"))
+    return "".join(o)
+
+def s_dove(p, w, h, seed):
+    """Oh that I had wings like a dove! then would I fly away, and be at rest; I would lodge in the wilderness: a dove over
+    the empty hills at evening."""
+    from genesis.art2 import dove
+    o = [sky(w, h, *tod(seed, (DUSK, DAWN))), sun(w * 0.8, h * 0.74, 20, color="#FFE680", op=0.4), hills(w, h, h * 0.76, seed, color="#6A4A4A", amp=12),
+         ground(w, h, h * 0.84, "#B8946A", dy=0), dove(w * 0.42, h * 0.66, min(1.8, h / 200)), dove(w * 0.7, h * 0.58, min(0.8, h / 400), wings="down")]
+    return "".join(o)
+
+def s_serpent(p, w, h, seed):
+    """Their poison is like the poison of a serpent; like the deaf adder that stoppeth her ear: an adder coiled among the
+    stones."""
+    import snake as SN
+    b = h * 0.86
+    o = [sky(w, h, "#3A2A2A", "#A8784A"), ground(w, h, h * 0.68, "#8A6A4A", dy=0)]
+    for i in range(6):
+        o.append(f'<ellipse cx="{f(w * (0.1 + i * 0.16))}" cy="{f(h * (0.9 + (i % 2) * 0.04))}" rx="{f(w * 0.05)}" ry="{f(h * 0.03)}" fill="#8A8478" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    k = min(1.4, h / 260)
+    pts = [(w * 0.24, b), (w * 0.34, b - 20 * k), (w * 0.46, b + 6 * k), (w * 0.56, b - 16 * k), (w * 0.62, b - 50 * k), (w * 0.66, b - 70 * k)]
+    o.append(SN.snake(pts, 10 * k, f"sn{p}", head_scale=1.2 * k))
+    return "".join(o)
+
+def s_lands(p, w, h, seed):
+    """God hath spoken in his holiness: Shechem, the valley of Succoth, Gilead, Manasseh, Ephraim the defence of my head,
+    Judah my sceptre; Moab my washpot; upon Edom will I cast my shoe; Philistia — the lands as a technical map."""
+    o = [grid_bg(w, h)]
+    Y = lambda y: h * (0.44 + 0.54 * y)          # the map sits in the lower part of the panel, under the words
+    o.append(f'<path d="M-10 -10 L {f(w * 0.18)} -10 C {f(w * 0.2)} {f(h * 0.3)} {f(w * 0.14)} {f(h * 0.7)} {f(w * 0.1)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.52)} {f(Y(0.08))} C {f(w * 0.54)} {f(Y(0.3))} {f(w * 0.5)} {f(Y(0.5))} {f(w * 0.53)} {f(Y(0.66))}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>')
+    o.append(f'<ellipse cx="{f(w * 0.54)}" cy="{f(Y(0.76))}" rx="{f(w * 0.025)}" ry="{f(h * 0.06)}" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></ellipse>')
+    for name, x, y, c in (("SHECHEM", 0.4, 0.3, "#FFD23F"), ("SUCCOTH", 0.58, 0.36, "#FFD23F"), ("GILEAD", 0.7, 0.24, "#FFD23F"), ("MANASSEH", 0.36, 0.14, "#FFD23F"),
+                          ("EPHRAIM", 0.36, 0.44, "#FFD23F"), ("JUDAH", 0.36, 0.66, "#FFD23F"), ("MOAB", 0.7, 0.74, "#FF8A6A"), ("EDOM", 0.56, 0.94, "#FF8A6A"),
+                          ("PHILISTIA", 0.16, 0.72, "#FF8A6A")):
+        o.append(node(w * x, Y(y), name, color=c, r=6))
+    return "".join(o)
+
+def s_hyssop(p, w, h, seed):
+    """Purify me with hyssop, and I shall be clean: wash me, and I shall be whiter than snow."""
+    r = R(seed)
+    o = [sky(w, h, "#5A6A8A", "#E8ECF8"), ground(w, h, h * 0.78, "#E8ECF8", dy=0)]
+    for _ in range(60):
+        o.append(f'<circle cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(0, h))}" r="{f(r.uniform(1.5, 3.5))}" fill="#FFFFFF" opacity="0.9"></circle>')
+    bx, by, bw = w * 0.4, h * 0.92, w * 0.12
+    o.append(f'<path d="M{f(bx - bw)} {f(by - h * 0.06)} C {f(bx - bw)} {f(by + h * 0.02)} {f(bx + bw)} {f(by + h * 0.02)} {f(bx + bw)} {f(by - h * 0.06)} Z" fill="#B59A7A" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<ellipse cx="{f(bx)}" cy="{f(by - h * 0.06)}" rx="{f(bw)}" ry="{f(h * 0.02)}" fill="#8FD0E2" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    o.append(E3.hyssop(w * 0.62, h * 0.86, min(1.6, h / 240), rot=-30, dipped=False))
+    return "".join(o)
+
+def s_wall(p, w, h, seed):
+    """Like a leaning wall, like a tottering fence: an old wall on the hillside bowed outward and cracked."""
+    o = [sky(w, h, *tod(seed, (DAY, DUSK))), hills(w, h, h * 0.7, seed, color="#8A8A6A", amp=8), ground(w, h, h * 0.8, "#A89A6A", dy=0)]
+    x0, x1, b, ht = w * 0.2, w * 0.8, h * 0.9, h * 0.22
+    o.append(f'<g transform="rotate(-7 {f(x0)} {f(b)})"><rect x="{f(x0)}" y="{f(b - ht)}" width="{f(x1 - x0)}" height="{f(ht)}" fill="#B59A7A" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    for i in range(1, 4):
+        o.append(f'<path d="M{f(x0)} {f(b - ht * i / 4)} L {f(x1)} {f(b - ht * i / 4)}" stroke="#7A6A5A" stroke-width="1.6"></path>')
+    o.append(f'<path d="M{f(w * 0.5)} {f(b - ht)} l -10 {f(ht * 0.3)} l 14 {f(ht * 0.2)} l -8 {f(ht * 0.5)}" stroke="#0D0D0F" stroke-width="2.4" fill="none"></path></g>')
+    for i in range(4):
+        o.append(f'<rect x="{f(w * (0.62 + i * 0.05))}" y="{f(b - 10)}" width="16" height="10" fill="#B59A7A" stroke="#0D0D0F" stroke-width="1.6" transform="rotate({i * 17} {f(w * (0.62 + i * 0.05))} {f(b)})"></rect>')
+    return "".join(o)
+
+NOMIRROR = {"nations", "lands"}
 
 SCENES = {
     "tree": ("#8FD0E2", s_tree), "chaff": ("#5A3A5A", s_chaff), "path": ("#5A5A8A", s_path), "kings": ("#3A0A1A", s_kings), "throne": ("#FFB04A", s_throne),
@@ -987,4 +1055,6 @@ SCENES = {
     "large": ("#8FD0E2", s_large), "hinds": ("#8FD0E2", s_hinds),
     "flock": ("#3A2A5A", s_flock), "bride": ("#5A2A3A", s_bride), "river": ("#8FD0E2", s_river), "trumpets": ("#FFB04A", s_trumpets),
     "tempest": ("#1A1A3A", s_tempest), "riches": ("#1A140E", s_riches), "tomb": ("#3A2A5A", s_tomb),
+    "cave": ("#1A1412", s_cave), "dove": ("#3A2A5A", s_dove), "serpent": ("#3A2A2A", s_serpent), "lands": ("#0B1A2E", s_lands), "hyssop": ("#5A6A8A", s_hyssop),
+    "wall": ("#8FD0E2", s_wall),
 }
