@@ -1,0 +1,122 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:07:36Z"
+ },
+ "title": "Esther — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "EST-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Vashti and Esther"
+  },
+  "EST-C01-D-P01-TheFeastInShushan.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Feast in Shushan"
+  },
+  "EST-C01-D-P02-VashtiTheQueen.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Vashti the Queen"
+  },
+  "EST-C01-D-P03-TheSevenPrinces.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Seven Princes"
+  },
+  "EST-C01-D-P04-TheWordOfMemucan.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Word of Memucan"
+  },
+  "EST-C01-E-P01-FairYoungVirgins.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Fair Young Virgins"
+  },
+  "EST-C01-E-P02-HegaiKeeperOfTheWo.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Hegai, Keeper of the Women"
+  },
+  "EST-C01-E-P03-HegaiKeeperOfTheWo.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Hegai, Keeper of the Women"
+  },
+  "EST-C01-E-P04-QueenInsteadOfVash.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Queen instead of Vashti"
+  },
+  "EST-C01-E-P05-InTheKingSGate.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · In the King's Gate"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "EST-C01-00-Title.dc.html",
+  "EST-C01-D-P01-TheFeastInShushan.dc.html",
+  "EST-C01-D-P02-VashtiTheQueen.dc.html",
+  "EST-C01-D-P03-TheSevenPrinces.dc.html",
+  "EST-C01-D-P04-TheWordOfMemucan.dc.html",
+  "EST-C01-E-P01-FairYoungVirgins.dc.html",
+  "EST-C01-E-P02-HegaiKeeperOfTheWo.dc.html",
+  "EST-C01-E-P03-HegaiKeeperOfTheWo.dc.html",
+  "EST-C01-E-P04-QueenInsteadOfVash.dc.html",
+  "EST-C01-E-P05-InTheKingSGate.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Esther Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Vashti and Esther (Esther 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
