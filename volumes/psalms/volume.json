@@ -66,6 +66,26 @@
    "prefixes": [
     "PS-C06-"
    ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "Let God Arise",
+   "range": "Psalms 63–68",
+   "blurb": "My soul thirsteth for thee in a dry and weary land; thy lovingkindness is better than life; thou visitest the earth, and waterest it — the pastures are clothed with flocks; he turned the sea into dry land; God be merciful unto us, and bless us; and let God arise, let his enemies be scattered — the chariots of God, the singers before, the damsels playing with timbrels.",
+   "prefixes": [
+    "PS-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "He Shall Have Dominion",
+   "range": "Psalms 69–72",
+   "blurb": "The close of Book II: save me, O God, for the waters are come in unto my soul; make haste to help me; now also when I am old and grayheaded, forsake me not; and Solomon's psalm — he shall come down like rain upon the mown grass, he shall have dominion from sea to sea, the kings of Sheba and Seba shall offer gifts. The prayers of David the son of Jesse are ended.",
+   "prefixes": [
+    "PS-C08-"
+   ]
   }
  ]
 }

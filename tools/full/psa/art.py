@@ -1034,6 +1034,43 @@ def s_wall(p, w, h, seed):
         o.append(f'<rect x="{f(w * (0.62 + i * 0.05))}" y="{f(b - 10)}" width="16" height="10" fill="#B59A7A" stroke="#0D0D0F" stroke-width="1.6" transform="rotate({i * 17} {f(w * (0.62 + i * 0.05))} {f(b)})"></rect>')
     return "".join(o)
 
+
+def s_desert(p, w, h, seed):
+    """My soul thirsteth for thee, in a dry and weary land, where no water is: the wilderness of Judah, bare ridges under a
+    hard sky, a lone man walking."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8B880", "#F3E0B0"), sun(w * 0.8, h * 0.5, 22, color="#FFF4C2", op=0.4),
+         hills(w, h, h * 0.66, seed, color="#C8946A", amp=18, step=90), hills(w, h, h * 0.78, seed + 1, color="#D8A878", amp=12, step=120)]
+    o.append(walker(p, w * 0.3, b, fit(b, h * 0.62), cloth="#8A6A4A"))
+    return "".join(o)
+
+def s_redsea(p, w, h, seed):
+    """He turned the sea into dry land; they went through the river on foot: the sea parted, dry ground between the walls."""
+    return (sky(w, h, "#2A3A6A", "#8FD0E2") + E3.sea_corridor(w, h, (w * 0.5, h * 0.42), w * 0.18, w * 0.82, seed, uid=f"rs{p}"))
+
+def s_sinai(p, w, h, seed):
+    """Sinai itself was moved at the presence of God: the mountain on fire, its smoke going up (God is never drawn)."""
+    o = [sky(w, h, "#2A1A2A", "#C86A3A"), E4.sinai(w * 0.5, h * 0.94, w * 0.7, h * 0.48, seed), ground(w, h, h * 0.94, "#5A3A2A", dy=0)]
+    return "".join(o)
+
+def s_family(p, w, h, seed):
+    """God setteth the solitary in families; thy children like olive plants round about thy table: a father, a mother and
+    their children before the house."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, *tod(seed, (GOLD, DAY))), ground(w, h, h * 0.72, "#C8A06A", dy=0),
+         f'<rect x="{f(w * 0.56)}" y="{f(h * 0.46)}" width="{f(w * 0.36)}" height="{f(h * 0.3)}" fill="#D8C0A0" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<rect x="{f(w * 0.7)}" y="{f(h * 0.58)}" width="{f(w * 0.07)}" height="{f(h * 0.18)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></rect>',
+         J2.olive(w * 0.94, h * 0.78, min(0.6, h / 600), seed=seed)]
+    s = fit(b, h * 0.56)
+    o.append(walker(p, w * 0.14, b, s, cloth="#4A5A7A") + woman(p, w * 0.24, b, s * 0.94, "#8A3A5A"))
+    for i in range(4):
+        o.append(man(p, w * (0.34 + i * 0.07), b, s * (0.5 + 0.06 * i), ("#C8A06A", "#7A9A5A", "#C2456A", "#5A7AA8")[i]))
+    return "".join(o)
+
+def s_tribute(p, w, h, seed):
+    """The kings of Tarshish and of the isles shall render tribute; the kings of Sheba and Seba shall offer gifts."""
+    return K1.sheba_train(p, w, h, seed)
+
 NOMIRROR = {"nations", "lands"}
 
 SCENES = {
@@ -1056,5 +1093,6 @@ SCENES = {
     "flock": ("#3A2A5A", s_flock), "bride": ("#5A2A3A", s_bride), "river": ("#8FD0E2", s_river), "trumpets": ("#FFB04A", s_trumpets),
     "tempest": ("#1A1A3A", s_tempest), "riches": ("#1A140E", s_riches), "tomb": ("#3A2A5A", s_tomb),
     "cave": ("#1A1412", s_cave), "dove": ("#3A2A5A", s_dove), "serpent": ("#3A2A2A", s_serpent), "lands": ("#0B1A2E", s_lands), "hyssop": ("#5A6A8A", s_hyssop),
-    "wall": ("#8FD0E2", s_wall),
+    "wall": ("#8FD0E2", s_wall), "desert": ("#E8B880", s_desert), "redsea": ("#2A3A6A", s_redsea), "sinai": ("#2A1A2A", s_sinai), "family": ("#FFB04A", s_family),
+    "tribute": ("#FFB04A", s_tribute),
 }
