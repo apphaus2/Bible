@@ -32,5 +32,7 @@ META = {
      "blurb": "Rehoboam at Shechem: the counsel of the old men and of the young — my little finger is thicker than my father's loins; whips and scorpions; every man to your tents, O Israel; ye shall not fight against your brethren; the cities for defence and the Levites who came to Judah; Shishak king of Egypt — Jehovah is righteous; and shields of brass for the shields of gold."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Abijah and Asa", "range": "2 Chronicles 13–16", "bible_chapters": [13, 14, 15, 16],
      "blurb": "Abijah upon mount Zemaraim — God is with us at our head — and the shout of Judah; Asa who sought Jehovah, and Zerah the Ethiopian with a thousand thousand: help us, O Jehovah our God, for we rely on thee; Azariah's word and the covenant sworn with trumpets; then Ramah, the silver sent to Ben-hadad, and Hanani the seer: the eyes of Jehovah run to and fro throughout the whole earth."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Jehoshaphat", "range": "2 Chronicles 17–19", "bible_chapters": [17, 18, 19],
+     "blurb": "Jehoshaphat who walked in the first ways of David, and the princes and Levites teaching in the cities with the book of the law; then affinity with Ahab — I am as thou art; the four hundred prophets and Micaiah: as Jehovah liveth, what my God saith, that will I speak; the arrow at a venture; Jehu the seer; and the judges set city by city — ye judge not for man, but for Jehovah."},
   ],
 }

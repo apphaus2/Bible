@@ -116,3 +116,27 @@ def spice_burning(w, h, seed):
         o.append(f'<circle cx="{f(x + i * 6)}" cy="{f(y)}" r="{f(w * (0.05 + i * 0.006))}" fill="#E8E2D6" opacity="{0.6 - i * 0.03:.2f}"></circle>')
     o.append(E.blaze(w * 0.66, h * 0.9, w * 0.16, h * 0.18, seed, n=6))
     return "".join(o)
+
+# ---- 2 Chronicles 17–19 -------------------------------------------------------------------------------------------------
+def teachers(p, w, h, seed):
+    """The princes, Levites and priests going about the cities of Judah with the book of the law, teaching at a city gate,
+    the people sitting before them."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), J.city_hill(w * 0.78, h * 0.62, w * 0.3, h * 0.26, seed), ground(w, h, h * 0.64, "#C8A06A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 230))
+    o.append(priest(p, w * 0.22, b, s, up=[(22, -158), (34, -176), (40, -150)]))
+    o.append(f'<rect x="{f(w * 0.22 + 30 * s)}" y="{f(b - 172 * s)}" width="{f(30 * s)}" height="{f(24 * s)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(man(p, w * 0.1, b, s * 0.96, "#3A4A6A"))
+    for i in range(6):
+        o.append(E.kneel(w * (0.4 + i * 0.09), b, s * 0.62, color=["#6A3A2A", "#3A4A6A", "#5A4A3A", "#4A5A3A", "#6A5A3A", "#5A3A5A"][i], skin="#9A6A4A", flip=True))
+    return "".join(o)
+
+def judges_gate(p, w, h, seed):
+    """Judges set in the land city by city: elders seated at a gate, a man standing before them with his cause."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C8B8A0", "#F3E0B0"), S4b.gatehouse(w * 0.5, h * 0.8, w * 0.7, h * 0.66), ground(w, h, h * 0.8, "#B8A07A", dy=0)]
+    s = fit(b, max(h * 0.44, b - 220))
+    for i in range(3):
+        o.append(E.kneel(w * (0.3 + i * 0.12), b, s * 0.7, color=["#5A4A3A", "#3A4A6A", "#6A5A3A"][i], skin="#9A6A4A"))
+    o.append(man(p, w * 0.8, b, s, "#8A5A30", flip=True))
+    return "".join(o)
