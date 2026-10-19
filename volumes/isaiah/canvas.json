@@ -1451,6 +1451,118 @@
    "w": 760,
    "h": 1080,
    "title": "192 · Go Ye Forth from Babylon"
+  },
+  "ISA-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · A Light to the Gentiles"
+  },
+  "ISA-C14-D-P01-ListenOIslesUntoMe.dc.html": {
+   "x": 840,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Listen, O Isles, unto Me"
+  },
+  "ISA-C14-D-P02-ListenOIslesUntoMe.dc.html": {
+   "x": 1680,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Listen, O Isles, unto Me"
+  },
+  "ISA-C14-D-P03-ListenOIslesUntoMe.dc.html": {
+   "x": 2520,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · Listen, O Isles, unto Me"
+  },
+  "ISA-C14-D-P04-CanAWomanForgetHer.dc.html": {
+   "x": 3360,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Can a Woman Forget Her Sucking Child?"
+  },
+  "ISA-C14-D-P05-CanAWomanForgetHer.dc.html": {
+   "x": 0,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · Can a Woman Forget Her Sucking Child?"
+  },
+  "ISA-C14-D-P06-CanAWomanForgetHer.dc.html": {
+   "x": 840,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · Can a Woman Forget Her Sucking Child?"
+  },
+  "ISA-C14-D-P07-TheBillOfYourMothe.dc.html": {
+   "x": 1680,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · The Bill of Your Mother's Divorcement"
+  },
+  "ISA-C14-D-P08-HeWakenethMineEar.dc.html": {
+   "x": 2520,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · He Wakeneth Mine Ear"
+  },
+  "ISA-C14-D-P09-HeWakenethMineEar.dc.html": {
+   "x": 3360,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · He Wakeneth Mine Ear"
+  },
+  "ISA-C14-D-P10-LookUntoTheRockWhe.dc.html": {
+   "x": 0,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · Look unto the Rock Whence Ye Were Hewn"
+  },
+  "ISA-C14-D-P11-LookUntoTheRockWhe.dc.html": {
+   "x": 840,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · Look unto the Rock Whence Ye Were Hewn"
+  },
+  "ISA-C14-D-P12-AwakeOArmOfJehovah.dc.html": {
+   "x": 1680,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · Awake, O Arm of Jehovah"
+  },
+  "ISA-C14-D-P13-AwakeOArmOfJehovah.dc.html": {
+   "x": 2520,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · Awake, O Arm of Jehovah"
+  },
+  "ISA-C14-D-P14-AwakeAwakeOJerusal.dc.html": {
+   "x": 3360,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Awake, Awake, O Jerusalem"
+  },
+  "ISA-C14-D-P15-AwakeAwakeOJerusal.dc.html": {
+   "x": 0,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Awake, Awake, O Jerusalem"
   }
  },
  "order": [
@@ -1659,7 +1771,23 @@
   "ISA-C13-D-P07-HearYeThisOHouseOf.dc.html",
   "ISA-C13-D-P08-IAmTheFirstIAlsoAm.dc.html",
   "ISA-C13-D-P09-IAmTheFirstIAlsoAm.dc.html",
-  "ISA-C13-D-P10-GoYeForthFromBabyl.dc.html"
+  "ISA-C13-D-P10-GoYeForthFromBabyl.dc.html",
+  "ISA-C14-00-Title.dc.html",
+  "ISA-C14-D-P01-ListenOIslesUntoMe.dc.html",
+  "ISA-C14-D-P02-ListenOIslesUntoMe.dc.html",
+  "ISA-C14-D-P03-ListenOIslesUntoMe.dc.html",
+  "ISA-C14-D-P04-CanAWomanForgetHer.dc.html",
+  "ISA-C14-D-P05-CanAWomanForgetHer.dc.html",
+  "ISA-C14-D-P06-CanAWomanForgetHer.dc.html",
+  "ISA-C14-D-P07-TheBillOfYourMothe.dc.html",
+  "ISA-C14-D-P08-HeWakenethMineEar.dc.html",
+  "ISA-C14-D-P09-HeWakenethMineEar.dc.html",
+  "ISA-C14-D-P10-LookUntoTheRockWhe.dc.html",
+  "ISA-C14-D-P11-LookUntoTheRockWhe.dc.html",
+  "ISA-C14-D-P12-AwakeOArmOfJehovah.dc.html",
+  "ISA-C14-D-P13-AwakeOArmOfJehovah.dc.html",
+  "ISA-C14-D-P14-AwakeAwakeOJerusal.dc.html",
+  "ISA-C14-D-P15-AwakeAwakeOJerusal.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1759,6 +1887,13 @@
    "text": "Chapter 13 · Go Ye Forth from Babylon (Isaiah 46–48)",
    "x": 0,
    "y": 60500
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · A Light to the Gentiles (Isaiah 49–51)",
+   "x": 0,
+   "y": 64600
   }
  },
  "designSystems": [],
