@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 851 verses — 851 full, 0 partial, 0 omitted.
+**So far:** 915 verses — 915 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Beginning of Knowledge (Proverbs 1–3)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · Bold as a Lion (Proverbs 28–29)
 
 55 verses: 55 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · A Worthy Woman (Proverbs 30–31)
+
+64 verses: 64 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

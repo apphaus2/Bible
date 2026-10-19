@@ -41,7 +41,7 @@ def joined(kind, *parts):
 def pack(segs, prefix, start, **k):
     k.setdefault("by_need", True)
     k.setdefault("room", 1.04)
-    k.setdefault("min_size", 14.5)
+    k.setdefault("min_size", 15.5)
     k.setdefault("budget", 1500)
     return _pack(segs, prefix, start, book="Proverbs", code=CODE, **k)
 
@@ -56,12 +56,18 @@ def drawn(lines, refs, art, bg, full=False, h=None, **k):
     them, over the whole panel)."""
     if lines:
         import speech
-        extra = sum(t.count("<br>") for _, t in lines) * 17 * 1.17 * 0.6     # each verse break wastes part of a line
-        th = speech._height(lines, 678, 17) + extra + 34
-        hh = int(min(600, max(h or 250, th / 0.56 + 16)))
+        hi = k.setdefault("hi", 19)
+        def words_h(s, bw=678):                # the words' height at s px, with room for the fallback fonts' wider lines
+            return (speech._height(lines, bw, s) + sum(t.count("<br>") for _, t in lines) * s * 1.17 * 0.6) * 1.12 + 34
+        th = words_h(17)
+        hh = int(min(640, max(h or 250, th / 0.56 + 16, words_h(hi) + 190 if not full else 0)))   # at least 190 px of drawing below the words
         if not full:
             from jos.art import below
-            art = below(art, min(0.62, (th + 12) / hh))
+            fn = art
+            def art(w, hr, fn=fn, lines=lines, hi=hi):
+                """Set the drawing just below the words at the size the panel actually gives them (speech.fit)."""
+                s = speech.fit(lines, w - 24, hr * 0.62, hi=hi)
+                return below(fn, min(0.66, (words_h(s, w - 24) + 10) / hr))(w, hr)
         k["h"] = hh
     elif h: k["h"] = h
     return seg(lines, label(refs), bg=bg, art=art, **k)
@@ -75,8 +81,8 @@ YOUTH = F("adam", skin="#D9A27A", shadow="#5A3A4A", hair="#3A2214", hl="#6A4A2E"
 YOUTH_RUE = F("adam", skin="#C98E66", shadow="#3A3A5A", hair="#3A2214", hl="#6A4A2E", stubble="#3A2214", brow="sorrow", tear=True, light="#9AA8C8")
 WISDOM = F("eve", skin="#E3B08A", shadow="#B97A58", hair="#1A1210", scarf="#F3EFE6", band=True, light="#FFE680")
 WISDOM_STERN = F("eve", skin="#E3B08A", shadow="#9A5A48", hair="#1A1210", scarf="#F3EFE6", band=True, brow="scowl", light="#FFC14D")
-AGUR = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#6A4A2A", cord=True, light="#FFF4C2")
-AGUR_LOW = F("adam", skin="#B98A6E", shadow="#3A3A5A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#6A4A2A", cord=True, brow="sorrow", light="#9AA8C8")
+AGUR = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#3A4A5A", cord=True, light="#FFF4C2")
+AGUR_LOW = F("adam", skin="#B98A6E", shadow="#3A3A5A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#3A4A5A", cord=True, brow="sorrow", light="#9AA8C8")
 LEMUEL = F("adam", skin="#C98E66", shadow="#5A3A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A1A4A", band=True, light="#FFE680")
 QUEEN_MOTHER = F("eve", skin="#C98E66", shadow="#8A5A3E", hair="#8A847A", scarf="#5A2470", band=True, light="#FFE680")
 WORTHY = F("eve", skin="#D9A27A", shadow="#9A6A4A", hair="#2A1A10", scarf="#2C6A7A", light="#FFE680")

@@ -148,13 +148,15 @@ def numbered(w, h, signs, red_last=True, bg="#14102A", line="#2A1A3A"):
     """Numbered roundels in a row on the blueprint grid, each with its small sign (for the lists of Proverbs 6 and 30)."""
     o = [grid_bg(w, h, color=line, bg=bg)]
     n = len(signs)
-    r = min(h * 0.3, w / (n * 2.4))
-    cy = h * 0.42
+    r = min(h * 0.36, w / (n * 2.4))
+    cy = h * 0.5
     for i, sg in enumerate(signs):
         cx = w * (i + 0.5) / n
+        bx, by, br = cx - r * 0.74, cy - r * 0.74, r * 0.3          # the number on a badge at the roundel's upper left
         o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="#2A2458" stroke="#FFD23F" stroke-width="2"></circle>'
-                 f'<text x="{f(cx)}" y="{f(cy + r + r * 0.62)}" text-anchor="middle" font-family="Anton, sans-serif" font-size="{f(r * 0.55)}" fill="{"#D7261E" if red_last and i == n - 1 else "#FFD23F"}">{i + 1}</text>'
-                 f'<g transform="translate({f(cx)} {f(cy)}) scale({f(r / 30)})">{sg}</g>')
+                 f'<g transform="translate({f(cx)} {f(cy)}) scale({f(r / 30)})">{sg}</g>'
+                 f'<circle cx="{f(bx)}" cy="{f(by)}" r="{f(br)}" fill="{"#D7261E" if red_last and i == n - 1 else "#FFD23F"}" stroke="#0D0D0F" stroke-width="2"></circle>'
+                 f'<text x="{f(bx)}" y="{f(by + br * 0.42)}" text-anchor="middle" font-family="Anton, sans-serif" font-size="{f(br * 1.2)}" fill="#0D0D0F">{i + 1}</text>')
     return "".join(o)
 
 def seven(w, h, seed):

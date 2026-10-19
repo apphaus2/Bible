@@ -43,5 +43,7 @@ META = {
      "blurb": "These also are proverbs of Solomon, which the men of Hezekiah king of Judah copied out: a word fitly spoken is like apples of gold in network of silver; as cold waters to a thirsty soul; as a dog that returneth to his vomit; as the door turneth upon its hinges, so doth the sluggard upon his bed; iron sharpeneth iron; be thou diligent to know the state of thy flocks."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Bold as a Lion", "range": "Proverbs 28–29", "bible_chapters": [28, 29],
      "blurb": "The wicked flee when no man pursueth, but the righteous are bold as a lion; better is the poor that walketh in his integrity; he that tilleth his land shall have plenty of bread; the king by justice establisheth the land; where there is no vision, the people cast off restraint; the fear of man bringeth a snare, but whoso putteth his trust in Jehovah shall be safe."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "A Worthy Woman", "range": "Proverbs 30–31", "bible_chapters": [30, 31],
+     "blurb": "The words of Agur the son of Jakeh — who hath ascended up into heaven, and descended?; give me neither poverty nor riches; three things, yea four: the way of an eagle in the air, of a serpent upon a rock, of a ship in the midst of the sea; the ants, the conies, the locusts and the lizard; the words of king Lemuel which his mother taught him; and a worthy woman who can find? — her price is far above rubies; her children rise up, and call her blessed."},
   ],
 }
