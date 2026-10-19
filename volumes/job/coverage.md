@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 334 verses — 334 full, 0 partial, 0 omitted.
+**So far:** 407 verses — 407 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Land of Uz (Job 1–3)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · If a Man Die (Job 11–14)
 
 95 verses: 95 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · My Witness Is in Heaven (Job 15–17)
+
+73 verses: 73 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

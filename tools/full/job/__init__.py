@@ -30,5 +30,7 @@ META = {
      "blurb": "Bildad the Shuhite: doth God pervert justice?; inquire of the former age; can the rush grow up without mire?; whose trust is a spider's web. Job answers: how can man be just with God? — he maketh the Bear, Orion, and the Pleiades; he goeth by me, and I see him not; there is no umpire betwixt us; thou hast fashioned me as clay; the land of darkness and of the shadow of death."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "If a Man Die", "range": "Job 11–14", "bible_chapters": [11, 12, 13, 14],
      "blurb": "Zophar the Naamathite: canst thou by searching find out God? — it is high as heaven, deeper than Sheol. Job answers: no doubt but ye are the people; ask now the beasts, and they shall teach thee; behold, he will slay me, nevertheless I will maintain my ways; man, that is born of a woman, is of few days, and full of trouble; there is hope of a tree; if a man die, shall he live again?"},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "My Witness Is in Heaven", "range": "Job 15–17", "bible_chapters": [15, 16, 17],
+     "blurb": "Eliphaz again: should a wise man fill himself with the east wind?; art thou the first man that was born?; the wicked man travaileth with pain all his days. Job answers: miserable comforters are ye all; his archers compass me round about; O earth, cover not thou my blood — even now, behold, my witness is in heaven; who is there that will strike hands with me?; the bars of Sheol."},
   ],
 }

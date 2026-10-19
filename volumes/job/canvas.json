@@ -366,6 +366,76 @@
    "w": 760,
    "h": 1080,
    "title": "46 · If a Man Die"
+  },
+  "JOB-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · My Witness Is in Heaven"
+  },
+  "JOB-C05-D-P01-EliphazAnsweredAga.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Eliphaz Answered Again"
+  },
+  "JOB-C05-D-P02-EliphazAnsweredAga.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Eliphaz Answered Again"
+  },
+  "JOB-C05-D-P03-TheWickedManTravai.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Wicked Man Travaileth with Pain"
+  },
+  "JOB-C05-D-P04-TheWickedManTravai.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Wicked Man Travaileth with Pain"
+  },
+  "JOB-C05-D-P05-MiserableComforter.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Miserable Comforters Are Ye All"
+  },
+  "JOB-C05-D-P06-MiserableComforter.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Miserable Comforters Are Ye All"
+  },
+  "JOB-C05-D-P07-MyWitnessIsInHeave.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · My Witness Is in Heaven"
+  },
+  "JOB-C05-D-P08-MyWitnessIsInHeave.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · My Witness Is in Heaven"
+  },
+  "JOB-C05-D-P09-MyWitnessIsInHeave.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · My Witness Is in Heaven"
   }
  },
  "order": [
@@ -419,7 +489,17 @@
   "JOB-C04-D-P09-BeholdHeWillSlayMe.dc.html",
   "JOB-C04-D-P10-ManThatIsBornOfAWo.dc.html",
   "JOB-C04-D-P11-IfAManDie.dc.html",
-  "JOB-C04-D-P12-IfAManDie.dc.html"
+  "JOB-C04-D-P12-IfAManDie.dc.html",
+  "JOB-C05-00-Title.dc.html",
+  "JOB-C05-D-P01-EliphazAnsweredAga.dc.html",
+  "JOB-C05-D-P02-EliphazAnsweredAga.dc.html",
+  "JOB-C05-D-P03-TheWickedManTravai.dc.html",
+  "JOB-C05-D-P04-TheWickedManTravai.dc.html",
+  "JOB-C05-D-P05-MiserableComforter.dc.html",
+  "JOB-C05-D-P06-MiserableComforter.dc.html",
+  "JOB-C05-D-P07-MyWitnessIsInHeave.dc.html",
+  "JOB-C05-D-P08-MyWitnessIsInHeave.dc.html",
+  "JOB-C05-D-P09-MyWitnessIsInHeave.dc.html"
  ],
  "notes": {
   "Main": {
@@ -456,6 +536,13 @@
    "text": "Chapter 4 · If a Man Die (Job 11–14)",
    "x": 0,
    "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · My Witness Is in Heaven (Job 15–17)",
+   "x": 0,
+   "y": 18100
   }
  },
  "designSystems": [],
