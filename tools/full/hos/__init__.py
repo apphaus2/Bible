@@ -22,5 +22,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "A Door of Hope", "range": "Hosea 1–3", "bible_chapters": [1, 2, 3],
      "blurb": "The word of Jehovah to Hosea — go, take unto thee a wife; the children Jezreel, Lo-ruhamah and Lo-ammi; yet the number of the children of Israel shall be as the sand of the sea; contend with your mother; I will hedge up thy way with thorns; the valley of Achor for a door of hope; I will betroth thee unto me for ever; and Hosea's own words: go again, love a woman, and Israel many days without king and without prince."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Cake Not Turned", "range": "Hosea 4–8", "bible_chapters": [4, 5, 6, 7, 8],
+     "blurb": "Jehovah's controversy with the land: my people are destroyed for lack of knowledge; a stubborn heifer; a snare at Mizpah and a net spread upon Tabor; come, and let us return unto Jehovah — your goodness is as a morning cloud; I desire goodness, and not sacrifice; an oven heated by the baker, and Ephraim a cake not turned; a silly dove; then the trumpet, the calf of Samaria, and they sow the wind, and they shall reap the whirlwind."},
   ],
 }
