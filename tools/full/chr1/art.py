@@ -183,12 +183,12 @@ def altar_service(p, w, h, seed):
 from exo.art8 import bp, dim, tag
 import samuel4 as S4b
 
-def porters_plan(w, h, lit=()):
+def porters_plan(w, h, lit=(), names=None):
     """The porters on the four sides of the house of the tent, toward the east, west, north and south, as a blueprint:
     the court and the tent in plan, a gate on each side with its ward (lit: sides drawn gold)."""
     o = [bp(w, h)]
     cx, cy = w * 0.5, h * 0.54
-    cw, ch = min(w * 0.56, h * 1.1), min(h * 0.6, w * 0.4)
+    cw, ch = min(w * 0.56, h * 1.1), min(h * (0.44 if names else 0.6), w * 0.4)
     o.append(f'<rect x="{f(cx - cw / 2)}" y="{f(cy - ch / 2)}" width="{f(cw)}" height="{f(ch)}" fill="none" stroke="#8FD0E2" stroke-width="2.4"></rect>'
              f'<rect x="{f(cx - cw * 0.16)}" y="{f(cy - ch * 0.2)}" width="{f(cw * 0.32)}" height="{f(ch * 0.4)}" fill="#8FD0E2" fill-opacity="0.12" stroke="#8FD0E2" stroke-width="2"></rect>'
              + label(cx, cy + 4, "THE HOUSE OF THE TENT", "#8FD0E2", 9))
@@ -202,7 +202,10 @@ def porters_plan(w, h, lit=()):
         tx = x + (w * 0.1 if nm == "EAST" else -w * 0.1 if nm == "WEST" else 0)
         ty = y + (-h * 0.1 if nm == "NORTH" else h * 0.12 if nm == "SOUTH" else 4)
         o.append(label(tx, ty, nm, col, 11))
-    o.append(dim(cx - cw / 2, cy + ch / 2 + h * 0.06, cx + cw / 2, cy + ch / 2 + h * 0.06, "FOUR SIDES · BY WARDS", size=8))
+        if names and nm in names:
+            for k, line in enumerate(names[nm].split("|")):
+                o.append(label(tx, ty + 14 + k * 12, line, "#F3EFE6", 9))
+    if not names: o.append(dim(cx - cw / 2, cy + ch / 2 + h * 0.06, cx + cw / 2, cy + ch / 2 + h * 0.06, "FOUR SIDES · BY WARDS", size=8))
     return "".join(o)
 
 EPHRAIM_M = [("BETH-EL", 0.44, 0.78), ("NAARAN", 0.66, 0.74), ("GEZER", 0.14, 0.86), ("SHECHEM", 0.48, 0.52), ("BETH-SHEAN", 0.72, 0.26),
@@ -347,4 +350,27 @@ def lot_grid(w, h, names, lit=None, cols=6, color=GOLD, top=0.06):
         o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(tw)}" height="{f(th)}" rx="4" fill="{col}" fill-opacity="{0.16 if on else 0.06}" stroke="{col}" stroke-width="{2 if on else 1.2}"></rect>'
                  f'<text x="{f(x + tw / 2)}" y="{f(y + th * 0.56)}" fill="{col}" font-family="Anton, sans-serif" font-size="{f(min(th * 0.46, tw * 0.4))}" text-anchor="middle">{i + 1}</text>'
                  + label(x + tw / 2, y + th * 0.86, nm, col if on else "#7A7498", max(7, min(10, tw / (len(nm) * 0.7 + 1))), ls=0.06))
+    return "".join(o)
+
+def month_wheel(w, h, names, lit=None):
+    """The twelve courses of the captains as a calendar wheel: twelve sectors for the twelve months, each with its captain
+    (lit: the month indices drawn in gold)."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    cx, cy = w * 0.5, h * 0.52
+    R = min(w * 0.4, h * 0.42); r0 = R * 0.34
+    for i, nm in enumerate(names):
+        a0, a1 = math.radians(-90 + i * 30), math.radians(-90 + (i + 1) * 30)
+        on = lit is None or i in lit
+        col = GOLD if on else "#5A5480"
+        pts = (f"M{f(cx + r0 * math.cos(a0))} {f(cy + r0 * math.sin(a0))} L {f(cx + R * math.cos(a0))} {f(cy + R * math.sin(a0))} "
+               f"A {f(R)} {f(R)} 0 0 1 {f(cx + R * math.cos(a1))} {f(cy + R * math.sin(a1))} L {f(cx + r0 * math.cos(a1))} {f(cy + r0 * math.sin(a1))} "
+               f"A {f(r0)} {f(r0)} 0 0 0 {f(cx + r0 * math.cos(a0))} {f(cy + r0 * math.sin(a0))} Z")
+        o.append(f'<path d="{pts}" fill="{col}" fill-opacity="{0.18 if on else 0.05}" stroke="{col}" stroke-width="{1.8 if on else 1}"></path>')
+        am = (a0 + a1) / 2
+        o.append(f'<text x="{f(cx + (r0 + (R - r0) * 0.3) * math.cos(am))}" y="{f(cy + (r0 + (R - r0) * 0.3) * math.sin(am) + 7)}" fill="{col}" font-family="Anton, sans-serif" '
+                 f'font-size="{f(R * 0.12)}" text-anchor="middle">{i + 1}</text>')
+        lx, ly = cx + (R + 12) * math.cos(am), cy + (R + 12) * math.sin(am)
+        anchor = "start" if math.cos(am) > 0.2 else ("end" if math.cos(am) < -0.2 else "middle")
+        o.append(label(lx, ly + 4, nm, col if on else "#7A7498", 9, anchor, ls=0.06))
+    o.append(label(cx, cy - 2, "24,000", "#F3EFE6", 12) + label(cx, cy + 12, "EACH COURSE", "#C8C2D6", 7))
     return "".join(o)

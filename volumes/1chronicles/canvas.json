@@ -751,6 +751,69 @@
    "w": 760,
    "h": 1080,
    "title": "96 · The Lots of the Singers"
+  },
+  "1CH-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · The Porters and the Captains"
+  },
+  "1CH-C10-R-P01-TheCoursesOfTheDoo.dc.html": {
+   "x": 840,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Courses of the Doorkeepers"
+  },
+  "1CH-C10-D-P01-ForEveryGate.dc.html": {
+   "x": 1680,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · For Every Gate"
+  },
+  "1CH-C10-S-P01-OverTheTreasures.dc.html": {
+   "x": 2520,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Over the Treasures"
+  },
+  "1CH-C10-S-P02-TheOutwardBusiness.dc.html": {
+   "x": 3360,
+   "y": 34100,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Outward Business"
+  },
+  "1CH-C10-E-P01-MonthByMonth.dc.html": {
+   "x": 0,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Month by Month"
+  },
+  "1CH-C10-E-P02-MonthByMonth.dc.html": {
+   "x": 840,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Month by Month"
+  },
+  "1CH-C10-T-P01-OverTheTribesOfIsr.dc.html": {
+   "x": 1680,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Over the Tribes of Israel"
+  },
+  "1CH-C10-T-P02-TheRulersOfTheSubs.dc.html": {
+   "x": 2520,
+   "y": 35300,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · The Rulers of the Substance"
   }
  },
  "order": [
@@ -859,7 +922,16 @@
   "1CH-C09-S-P01-TheRestOfTheSonsOf.dc.html",
   "1CH-C09-H-P01-ToProphesyWithHarp.dc.html",
   "1CH-C09-J-P01-TheLotsOfTheSinger.dc.html",
-  "1CH-C09-J-P02-TheLotsOfTheSinger.dc.html"
+  "1CH-C09-J-P02-TheLotsOfTheSinger.dc.html",
+  "1CH-C10-00-Title.dc.html",
+  "1CH-C10-R-P01-TheCoursesOfTheDoo.dc.html",
+  "1CH-C10-D-P01-ForEveryGate.dc.html",
+  "1CH-C10-S-P01-OverTheTreasures.dc.html",
+  "1CH-C10-S-P02-TheOutwardBusiness.dc.html",
+  "1CH-C10-E-P01-MonthByMonth.dc.html",
+  "1CH-C10-E-P02-MonthByMonth.dc.html",
+  "1CH-C10-T-P01-OverTheTribesOfIsr.dc.html",
+  "1CH-C10-T-P02-TheRulersOfTheSubs.dc.html"
  ],
  "notes": {
   "Main": {
@@ -931,6 +1003,13 @@
    "text": "Chapter 9 · The Courses (1 Chronicles 23–25)",
    "x": 0,
    "y": 30900
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · The Porters and the Captains (1 Chronicles 26–27)",
+   "x": 0,
+   "y": 33800
   }
  },
  "designSystems": [],

@@ -40,5 +40,7 @@ META = {
      "blurb": "Satan moves David to number Israel; Joab's protest; I have done very foolishly; Gad and the three things; the pestilence, and it is enough, now stay thy hand; the angel's sword over Jerusalem; Ornan's threshing-floor bought for the full price, and the answer by fire from heaven; then the stores of gold and cedar, and David's charge to Solomon: arise and be doing."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Courses", "range": "1 Chronicles 23–25", "bible_chapters": [23, 24, 25],
      "blurb": "David old and full of days makes Solomon king; the Levites numbered and divided into courses, to stand every morning to thank and praise Jehovah, and likewise at even; the sons of Aaron divided by lot into four and twenty courses; and the sons of Asaph, Heman and Jeduthun set apart to prophesy with harps, lot by lot, twelve to each."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The Porters and the Captains", "range": "1 Chronicles 26–27", "bible_chapters": [26, 27],
+     "blurb": "The courses of the doorkeepers, and the lots cast for every gate, east, north, south and west; the treasures of the house of God and of the dedicated things; the twelve captains, a course for every month of twenty and four thousand; the princes of the tribes; the rulers of the king's substance; and the king's counsellors."},
   ],
 }
