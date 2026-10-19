@@ -1024,6 +1024,62 @@
    "w": 760,
    "h": 1080,
    "title": "133 · Chambers in the House of Jehovah"
+  },
+  "2CH-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Sennacherib"
+  },
+  "2CH-C12-D-P01-SennacheribKingOfA.dc.html": {
+   "x": 840,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Sennacherib King of Assyria"
+  },
+  "2CH-C12-D-P02-WhereonDoYeTrust.dc.html": {
+   "x": 1680,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Whereon Do Ye Trust?"
+  },
+  "2CH-C12-D-P03-WhereonDoYeTrust.dc.html": {
+   "x": 2520,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Whereon Do Ye Trust?"
+  },
+  "2CH-C12-D-P04-WhereonDoYeTrust.dc.html": {
+   "x": 3360,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Whereon Do Ye Trust?"
+  },
+  "2CH-C12-D-P05-TheyCriedToHeaven.dc.html": {
+   "x": 0,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · They Cried to Heaven"
+  },
+  "2CH-C12-E-P01-ExceedingMuchRiche.dc.html": {
+   "x": 840,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Exceeding Much Riches"
+  },
+  "2CH-C12-E-P02-TheUpperSpringOfGi.dc.html": {
+   "x": 1680,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Upper Spring of Gihon"
   }
  },
  "order": [
@@ -1171,7 +1227,15 @@
   "2CH-C11-D-P05-NotTheLikeInJerusa.dc.html",
   "2CH-C11-E-P01-ThePillarsBrokenIn.dc.html",
   "2CH-C11-E-P02-Heaps.dc.html",
-  "2CH-C11-R-P01-ChambersInTheHouse.dc.html"
+  "2CH-C11-R-P01-ChambersInTheHouse.dc.html",
+  "2CH-C12-00-Title.dc.html",
+  "2CH-C12-D-P01-SennacheribKingOfA.dc.html",
+  "2CH-C12-D-P02-WhereonDoYeTrust.dc.html",
+  "2CH-C12-D-P03-WhereonDoYeTrust.dc.html",
+  "2CH-C12-D-P04-WhereonDoYeTrust.dc.html",
+  "2CH-C12-D-P05-TheyCriedToHeaven.dc.html",
+  "2CH-C12-E-P01-ExceedingMuchRiche.dc.html",
+  "2CH-C12-E-P02-TheUpperSpringOfGi.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1257,6 +1321,13 @@
    "text": "Chapter 11 · The Passover of Hezekiah (2 Chronicles 30–31)",
    "x": 0,
    "y": 43900
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Sennacherib (2 Chronicles 32)",
+   "x": 0,
+   "y": 46800
   }
  },
  "designSystems": [],

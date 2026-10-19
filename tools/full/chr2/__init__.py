@@ -44,5 +44,7 @@ META = {
      "blurb": "Ahaz who walked in the ways of the kings of Israel; Judah carried captive to Samaria, and Oded the prophet — send back the captives; the captives clothed and brought to Jericho, the city of palm-trees; the gods of Damascus and the doors shut; then Hezekiah opening the doors in the first month, the house cleansed, and the song of Jehovah with the trumpets."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Passover of Hezekiah", "range": "2 Chronicles 30–31", "bible_chapters": [30, 31],
      "blurb": "Letters from Beer-sheba even to Dan — ye children of Israel, turn again unto Jehovah; laughed to scorn, yet some humbled themselves and came; the passover in the second month — the good Jehovah pardon every one that setteth his heart to seek God; great joy in Jerusalem, not the like since Solomon; and the heaps of the first-fruits and the tithes."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Sennacherib", "range": "2 Chronicles 32", "bible_chapters": [32],
+     "blurb": "Sennacherib come into Judah; the fountains stopped and the wall built up — with him is an arm of flesh, but with us is Jehovah our God; whereon do ye trust?; the letters railing on Jehovah; Hezekiah and Isaiah cry to heaven, and the camp of Assyria cut off; Hezekiah sick and humbled; the upper spring of Gihon; and the ambassadors of Babylon."},
   ],
 }

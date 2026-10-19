@@ -324,3 +324,23 @@ def heaps(p, w, h, seed):
     s = fit(b, max(h * 0.42, b - 230))
     o.append(king_fig(p, w * 0.08, b, s, up=[(22, -158), (40, -190), (50, -222)], cloth=REHO_C))
     return "".join(o)
+
+def stopped_springs(w, h, upper=False):
+    """The waters of the fountains stopped without the city, and (upper=True) the upper spring of Gihon brought straight
+    down on the west side of the city of David — a technical plan."""
+    o = [bp(w, h)]
+    cx, cy = w * 0.56, h * 0.48
+    o.append(f'<path d="M{f(cx - w * 0.18)} {f(cy - h * 0.3)} L {f(cx + w * 0.16)} {f(cy - h * 0.34)} L {f(cx + w * 0.2)} {f(cy + h * 0.32)} L {f(cx - w * 0.14)} {f(cy + h * 0.36)} Z" fill="#8FD0E2" fill-opacity="0.08" stroke="#8FD0E2" stroke-width="2.4"></path>'
+             + label(cx, cy, "THE CITY OF DAVID", "#8FD0E2", 10))
+    gx, gy = cx + w * 0.3, cy - h * 0.06
+    o.append(node(gx, gy, "GIHON", "#FFD23F", r=6, dy=-12, size=10))
+    if upper:
+        o.append(route([(gx, gy), (cx + w * 0.02, cy - h * 0.08), (cx - w * 0.22, cy + h * 0.1)], color="#2C9DB8", sw=3, dash="2 0"))
+        o.append(node(cx - w * 0.22, cy + h * 0.1, "WEST SIDE", "#2C9DB8", r=5, dy=18, size=9) + label(cx - w * 0.02, cy - h * 0.14, "BROUGHT STRAIGHT DOWN", "#2C9DB8", 8))
+    else:
+        for x, y in ((0.14, 0.2), (0.12, 0.7), (0.9, 0.82)):
+            o.append(f'<circle cx="{f(w * x)}" cy="{f(h * y)}" r="10" fill="none" stroke="#D7261E" stroke-width="2"></circle>'
+                     f'<path d="M{f(w * x - 8)} {f(h * y - 8)} L {f(w * x + 8)} {f(h * y + 8)} M{f(w * x + 8)} {f(h * y - 8)} L {f(w * x - 8)} {f(h * y + 8)}" stroke="#D7261E" stroke-width="2.4"></path>')
+        o.append(f'<path d="M-10 {f(h * 0.96)} C {f(w * 0.3)} {f(h * 0.88)} {f(w * 0.6)} {f(h * 0.98)} {f(w + 10)} {f(h * 0.9)}" stroke="#2C9DB8" stroke-width="3" stroke-dasharray="10 8" fill="none"></path>'
+                 + label(w * 0.5, h * 0.86, "THE FOUNTAINS STOPPED", "#D7261E", 9))
+    return "".join(o)

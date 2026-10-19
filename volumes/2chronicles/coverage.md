@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 681 verses — 681 full, 0 partial, 0 omitted.
+**So far:** 714 verses — 714 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Wisdom and Knowledge (2 Chronicles 1–4)
 
@@ -67,5 +67,11 @@ Every verse is on the page in full.
 ## Chapter 11 · The Passover of Hezekiah (2 Chronicles 30–31)
 
 48 verses: 48 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 12 · Sennacherib (2 Chronicles 32)
+
+33 verses: 33 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
