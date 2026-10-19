@@ -312,7 +312,7 @@ def seasons(w, h, lit=range(14), top=None):
         x, y = pos[i]
         on = i in lit
         o.append(f'<rect x="{f(x - cw / 2)}" y="{f(y - chh / 2)}" width="{f(cw)}" height="{f(chh)}" rx="6" fill="{"#0B0B2A" if on else "#16163A"}" stroke="{GOLD if on else "#3A3A6A"}" stroke-width="{2 if on else 1.4}"></rect>'
-                 + label(x, y - 3, a.upper(), GOLD if on else "#5A5A8A", fs) + label(x, y + fs + 2, b.upper(), ROSE if on else "#5A5A8A", fs))
+                 + label(x, y - 3, a.upper(), GOLD if on else "#5A5A8A", min(fs, cw * 0.9 / (len(a) * 0.74))) + label(x, y + fs + 2, b.upper(), ROSE if on else "#5A5A8A", min(fs, cw * 0.9 / (len(b) * 0.74))))
     return "".join(o)
 
 def eternity(p, w, h, seed):
@@ -856,6 +856,284 @@ def little_city(p, w, h, seed):
     s = fit(h * 0.32, h * 0.2)
     o.append(man(p, w * 0.5, h * 0.32, s, "#8A7A6A", up=[(-22, -158), (-36, -196), (-40, -232)]))
     o.append(warriors_row(p, w, h, b, seed))
+    return "".join(o)
+
+# ---- Ecclesiastes 10 ----------------------------------------------------------------------------------------------------
+import snake as SN
+from genesis.art3 import STAFF, HOLD_STAFF
+
+def ointment(w, h, seed):
+    """Dead flies cause the oil of the perfumer to send forth an evil odor: the perfumer's jar with its lid off, dead flies
+    on the rim and in the oil, the scent rising dark."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A2A"></rect>', ground(w, h, h * 0.84, "#5A4A3A", dy=0)]
+    k = min(1.6, h / 220); cx, by = w * 0.5, h * 0.86
+    o.append(f'<g transform="translate({f(cx)} {f(by)}) scale({f(k)})"><path d="M-30 -96 L -30 -84 C -64 -76 -70 -20 -44 -2 L 44 -2 C 70 -20 64 -76 30 -84 L 30 -96 Z" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             '<ellipse cx="0" cy="-96" rx="32" ry="8" fill="#C8A040" stroke="#0D0D0F" stroke-width="2"></ellipse><path d="M-50 -40 C -20 -48 20 -48 50 -40" stroke="#C8B8A0" stroke-width="3" fill="none"></path></g>')
+    for i in range(4):
+        x = cx + (i - 1.5) * 30 * k; y = by - 100 * k - r.uniform(-4, 4)
+        o.append(f'<g transform="translate({f(x)} {f(y)}) scale({f(k * 1.1)}) rotate({r.randint(150, 210)})"><ellipse cx="0" cy="0" rx="6" ry="4" fill="#1A1214"></ellipse><ellipse cx="-4" cy="-5" rx="5" ry="3" fill="#8A9AAA" opacity="0.7"></ellipse><ellipse cx="4" cy="-5" rx="5" ry="3" fill="#8A9AAA" opacity="0.7"></ellipse></g>')
+    for i in range(3):
+        o.append(f'<path d="M{f(cx + (i - 1) * 18 * k)} {f(by - 110 * k)} C {f(cx + (i - 1) * 40 * k)} {f(by - 160 * k)} {f(cx - (i - 1) * 30 * k)} {f(by - 200 * k)} {f(cx + (i - 1) * 50 * k)} {f(by - 260 * k)}" stroke="#4A5A3A" stroke-width="{f(8 * k)}" fill="none" opacity="0.6"></path>')
+    return "".join(o)
+
+def servants_horses(p, w, h, seed):
+    """I have seen servants upon horses, and princes walking like servants upon the earth: servants riding high on the road,
+    and princes with their crowns going on foot in the dust behind."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#E8C8A0", "#F3E0B0"), hills(w, h, h * 0.5, seed, color="#A8906A", amp=10, step=90), ground(w, h, h * 0.6, "#C8A06A", dy=0)]
+    k = min(1.0, h / 320)
+    for i in range(2):
+        x = w * (0.62 + i * 0.22)
+        sh = k * 0.9
+        o.append(mk.person(p, round(x + 8 * sh), round(b - 52 * sh), round(sh * 0.66, 3), body="#3A1E14", cloth="#8A7A5A", kind="Tunic") + E3.horse(x, b, sh, color=["#3A2214", "#6A4A2A"][i], flip=True))
+    s = fit(b, max(h * 0.4, b - 190))
+    for i in range(3):
+        o.append(king_fig(p, w * (0.1 + i * 0.12), b, s * 0.9, cloth=["#7A1A2A", "#1F3A7A", "#5A2A6A"][i], flip=True))
+    return "".join(o)
+
+def hazards(w, h, seed=1):
+    """He that diggeth a pit shall fall into it; whoso breaketh through a wall, a serpent shall bite him; whoso heweth out
+    stones, he that cleaveth wood; the blunt iron; the serpent before it is charmed: a plate of six cells."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    cw, ch = w / 3, h / 2
+    def cell(i, g, ref):
+        cx, cy = cw * (i % 3) + cw / 2, ch * (i // 3) + ch / 2 + 6; s = min(cw, ch) / 130
+        return (f'<rect x="{f(cw * (i % 3) + 6)}" y="{f(ch * (i // 3) + 6)}" width="{f(cw - 12)}" height="{f(ch - 12)}" fill="none" stroke="#5A4A8A" stroke-width="1.4"></rect>'
+                + f'<g transform="translate({f(cx)} {f(cy)}) scale({f(s)})">{g}</g>' + label(cw * (i % 3) + 16, ch * (i // 3) + 22, ref, GOLD, 9, "start"))
+    pit = ('<path d="M-60 -10 L 60 -10" stroke="#C8A06A" stroke-width="4"></path><path d="M-40 -10 L -30 50 L 30 50 L 40 -10 Z" fill="#0D0B14" stroke="#C8A06A" stroke-width="3"></path>'
+           '<path d="M-6 -60 L -6 -24 M-16 -34 L -6 -24 L 4 -34" stroke="#FF8A6A" stroke-width="3" fill="none"></path>')
+    wall = "".join(f'<rect x="{-60 + (r % 2) * 14 + c * 28}" y="{-50 + r * 18}" width="26" height="16" fill="#8A6A4A" stroke="#E8C88A" stroke-width="1.4"></rect>' for r in range(5) for c in range(4) if not (r in (1, 2) and c == 2))
+    wall += SN.snake([(16, -18), (28, -24), (40, -16), (50, -26)], 8, f"hz{seed}", head_scale=0.7)
+    stones = '<path d="M-50 40 L -40 0 L 0 -10 L 30 10 L 40 40 Z" fill="#8A8478" stroke="#E8E2D6" stroke-width="2"></path><path d="M10 -30 L 30 -50 L 50 -40" stroke="#C8C2B6" stroke-width="5" fill="none"></path><path d="M30 -50 L 34 -20" stroke="#5A3A22" stroke-width="6"></path>'
+    wood = '<rect x="-50" y="10" width="100" height="30" rx="12" fill="#8A5A30" stroke="#E8C88A" stroke-width="2"></rect><path d="M0 10 L 0 -10" stroke="#E8C88A" stroke-width="3"></path><path d="M-6 -60 L 30 -10" stroke="#5A3A22" stroke-width="6"></path><path d="M24 -14 L 44 -24 L 40 0 Z" fill="#A8A8B8" stroke="#E8E2D6" stroke-width="1.6"></path>'
+    iron = '<path d="M-50 20 L 30 -20" stroke="#5A3A22" stroke-width="8"></path><path d="M24 -36 L 54 -40 L 50 -2 L 26 -10 Z" fill="#8A8A9A" stroke="#E8E2D6" stroke-width="2"></path><rect x="-40" y="34" width="70" height="14" rx="5" fill="#6A6A7A" stroke="#E8E2D6" stroke-width="1.6"></rect>'
+    charm = SN.snake([(-40, 40), (-20, 30), (0, 40), (10, 10), (0, -20), (14, -40)], 10, f"hc{seed}", head_scale=0.8) + '<path d="M30 30 C 40 10 60 10 56 -14" stroke="#E8B830" stroke-width="4" fill="none"></path>'
+    for i, (g, ref) in enumerate([(pit, "10:8"), (wall, "10:8"), (stones, "10:9"), (wood, "10:9"), (iron, "10:10"), (charm, "10:11")]):
+        o.append(cell(i, g, ref))
+    return "".join(o)
+
+def child_king(p, w, h, seed):
+    """Woe to thee, O land, when thy king is a child, and thy princes eat in the morning: a child on the great throne, the
+    princes at the feast table in the early light."""
+    b = h * 0.94; k = min(1.2, h / 320)
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.82), S3.window(w * 0.5, h * 0.2, w * 0.12, h * 0.22, inner="#FFD8A0"), S3.throne(w * 0.16, b, k)]
+    s = min(fit(b, max(h * 0.3, b - 220)), k)
+    o.append(S1.boy(p, w * 0.16, b - 40 * k, s * 0.6, extra=S3.KING))
+    for i in range(3):
+        o.append(man(p, w * (0.46 + i * 0.16), b, s * 0.92, ["#5A2A6A", "#2C5F9A", "#8A3A1E"][i], extra=A.headcloth(["#E8B830", "#F3EFE6", "#E8B830"][i])))
+    o.append(S3.table(w * 0.62, b, w * 0.5, k * 0.9))
+    for i in range(3): o.append(jar(w * (0.88 + i * 0.04), b, k * 0.6, "#8A3A1E"))
+    return "".join(o)
+
+def leaky_house(w, h, seed):
+    """By slothfulness the roof sinketh in; and through idleness of the hands the house leaketh: a house in the rain, its
+    roof-beam sagging, water dripping through into the room."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#4A5A6A", "#8A9AAA"), ground(w, h, h * 0.86, "#5A5A4A", dy=0)]
+    x0, x1, top, base = w * 0.18, w * 0.82, h * 0.34, h * 0.86
+    o.append(f'<rect x="{f(x0)}" y="{f(top)}" width="{f(x1 - x0)}" height="{f(base - top)}" fill="#A8906A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             f'<rect x="{f(x0 + 16)}" y="{f(top + 16)}" width="{f(x1 - x0 - 32)}" height="{f(base - top - 16)}" fill="#3A3028" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(x0 - 16)} {f(top)} C {f(w * 0.4)} {f(top + h * 0.1)} {f(w * 0.6)} {f(top + h * 0.1)} {f(x1 + 16)} {f(top)} L {f(x1 + 16)} {f(top - 14)} C {f(w * 0.6)} {f(top + h * 0.08)} {f(w * 0.4)} {f(top + h * 0.08)} {f(x0 - 16)} {f(top - 14)} Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    for _ in range(50):
+        x, y = r.uniform(0, w), r.uniform(0, h * 0.86)
+        if x0 < x < x1 and y > top: continue
+        o.append(f'<path d="M{f(x)} {f(y)} l -4 12" stroke="#C8D8E8" stroke-width="1.4"></path>')
+    for i in range(5):
+        x = w * (0.36 + i * 0.07); y = top + h * (0.1 + (i % 3) * 0.12)
+        o.append(f'<path d="M{f(x)} {f(y)} c 3 6 3 10 0 12 c -3 -2 -3 -6 0 -12 Z" fill="#8FD0E2" stroke="#2C7DA0" stroke-width="1"></path>')
+    o.append(f'<ellipse cx="{f(w * 0.5)}" cy="{f(base - 6)}" rx="{f(w * 0.14)}" ry="6" fill="#4A6A8A" opacity="0.8"></ellipse>')
+    return "".join(o)
+
+def bird_tell(w, h, seed):
+    """A bird of the heavens shall carry the voice: a bird flying out of the bedchamber window into the night, across the moon."""
+    o = [sky(w, h, "#0B0B2A", "#2A1E5A"), mk.stars(50, w, h * 0.6, seed), f'<circle cx="{f(w * 0.7)}" cy="{f(h * 0.3)}" r="{f(min(w, h) * 0.14)}" fill="#F3EFE6" opacity="0.9"></circle>',
+         f'<rect x="-10" y="{f(h * 0.3)}" width="{f(w * 0.36)}" height="{f(h)}" fill="#3A2E44" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         S3.window(w * 0.16, h * 0.5, w * 0.1, h * 0.22, inner="#FFC14D")]
+    k = min(1.6, h / 200)
+    o.append(bird(w * 0.62, h * 0.32, k * 1.6, "#0D0D0F") + bird(w * 0.42, h * 0.46, k * 0.7, "#2A2238"))
+    o.append(f'<path d="M{f(w * 0.24)} {f(h * 0.56)} C {f(w * 0.34)} {f(h * 0.5)} {f(w * 0.44)} {f(h * 0.44)} {f(w * 0.58)} {f(h * 0.34)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="5 6" fill="none" opacity="0.7"></path>')
+    return "".join(o)
+
+# ---- Ecclesiastes 11 ----------------------------------------------------------------------------------------------------
+def loaf(x, y, s=1.0):
+    return f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(16 * s)}" ry="{f(8 * s)}" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1.6"></ellipse><path d="M{f(x - 8 * s)} {f(y - 3 * s)} l {f(16 * s)} 0" stroke="#8A5A2A" stroke-width="1.2"></path>'
+
+def bread_waters(w, h, seed):
+    """Cast thy bread upon the waters; give a portion to seven, yea, even unto eight: loaves going down the river to the sea,
+    and on the bank eight portions laid out in a row."""
+    o = [sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.36, seed, color="#8AA06A", amp=10, step=90), ground(w, h, h * 0.44, "#9CB86A", dy=0),
+         f'<path d="M-10 {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.46)} {f(w * 0.6)} {f(h * 0.6)} {f(w + 10)} {f(h * 0.52)} L {f(w + 10)} {f(h * 0.74)} C {f(w * 0.6)} {f(h * 0.8)} {f(w * 0.3)} {f(h * 0.66)} -10 {f(h * 0.72)} Z" fill="#2C7DA8" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    k = min(1.4, h / 260)
+    for i, (x, y) in enumerate(((0.16, 0.6), (0.36, 0.6), (0.56, 0.66), (0.78, 0.63))):
+        o.append(loaf(w * x, h * y, k * (1.1 - i * 0.12)) + f'<path d="M{f(w * x - 24 * k)} {f(h * y + 8)} q 12 -5 24 0 t 24 0" stroke="#E8F6FA" stroke-width="1.6" fill="none"></path>')
+    for i in range(8):
+        o.append(loaf(w * (0.08 + i * 0.09), h * 0.9, k))
+    return "".join(o)
+
+def clouds_tree(p, w, h, seed):
+    """If the clouds be full of rain, they empty themselves upon the earth; and if a tree fall, there shall it be: rain from
+    heavy clouds, a tree lying where it fell, and a man by the field watching the wind, not sowing."""
+    r = random.Random(seed)
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A6A7A", "#B8C0C0"), ground(w, h, h * 0.66, "#7A8A5A", dy=0)]
+    for i in range(5):
+        o.append(f'<ellipse cx="{f(w * (0.1 + i * 0.2))}" cy="{f(h * 0.12)}" rx="{f(w * 0.14)}" ry="{f(h * 0.1)}" fill="#3A4250" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    for _ in range(50):
+        x, y = r.uniform(0, w * 0.6), r.uniform(h * 0.2, h * 0.66)
+        o.append(f'<path d="M{f(x)} {f(y)} l -4 12" stroke="#C8D8E8" stroke-width="1.4"></path>')
+    k = min(1.2, h / 300)
+    fx, fy = w * 0.12, h * 0.86
+    o.append(f'<circle cx="{f(fx)}" cy="{f(fy - 22 * k)}" r="{f(26 * k)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></circle>'
+             + "".join(f'<path d="M{f(fx)} {f(fy - 22 * k)} l {f(dx * k)} {f(dy * k)}" stroke="#4A2A1A" stroke-width="3"></path>' for dx, dy in ((-30, -20), (-34, 6), (-20, 26), (6, -40), (-10, -44)))
+             + f'<path d="M{f(fx)} {f(fy - 34 * k)} L {f(fx + w * 0.3)} {f(fy - 18 * k)} L {f(fx + w * 0.3)} {f(fy - 4 * k)} L {f(fx)} {f(fy - 10 * k)} Z" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2.2"></path>')
+    for dx, dy, rr in ((0.3, -30, 30), (0.36, -22, 34), (0.42, -26, 28), (0.33, -6, 24), (0.4, -4, 26)):
+        o.append(f'<circle cx="{f(fx + w * dx)}" cy="{f(fy + dy * k)}" r="{f(rr * k)}" fill="#3F7A44" stroke="#0D0D0F" stroke-width="1.8"></circle>')
+    s = fit(b, max(h * 0.4, b - 200))
+    o.append(man(p, w * 0.84, b, s, "#8A6A4A", flip=True, up=[(-22, -158), (-40, -190), (-30, -226)]) + wind_lines(w, h, seed, n=5, color="#E8E2D6", op=0.6, y0=0.3, y1=0.6))
+    return "".join(o)
+
+def sowers(p, w, h, seed):
+    """In the morning sow thy seed, and in the evening withhold not thy hand: one field from dawn on the left to evening on
+    the right, a sower in each light casting seed."""
+    r = random.Random(seed)
+    gid = f"sw{p}"
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), hgrad(gid, [(0, "#FFE6A0"), (0.4, "#8FD0E2"), (0.6, "#8FD0E2"), (1, "#E8803A")]),
+         f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#{gid})"></rect>',
+         sun(w * 0.06, h * 0.5, max(10, h * 0.05), color="#FFE680", op=0.35), sun(w * 0.94, h * 0.5, max(10, h * 0.05), color="#FF6A2A", op=0.3),
+         hills(w, h, h * 0.54, seed, color="#7A8A5A", amp=8, step=90), ground(w, h, h * 0.62, "#8A6A4A", dy=0)]
+    for k in range(6):
+        y = h * (0.66 + k * 0.06)
+        o.append(f'<path d="M-10 {f(y)} L {f(w + 10)} {f(y - 4)}" stroke="#6A4A2A" stroke-width="2"></path>')
+    s = fit(b, max(h * 0.4, b - 200))
+    for x, fl in ((0.24, False), (0.74, True)):
+        o.append(man(p, w * x, b, s, "#C8A878", flip=fl, up=[(-22, -158), (-50, -150), (-74, -170)]))
+        for _ in range(12):
+            sx = w * x + (-1 if not fl else 1) * r.uniform(60, 140) * s; sy = b - r.uniform(40, 170) * s
+            o.append(f'<circle cx="{f(sx)}" cy="{f(sy)}" r="2" fill="#F3E0B0" stroke="#0D0D0F" stroke-width="0.6"></circle>')
+    return "".join(o)
+
+def sweet_light(w, h, seed):
+    """Truly the light is sweet, and a pleasant thing it is for the eyes to behold the sun: the sun rising over the hills."""
+    o = [sky(w, h, "#FFB04A", "#FFF4C2"), sun(w * 0.5, h * 0.62, max(18, h * 0.12), color="#FFE680", op=0.5),
+         hills(w, h, h * 0.62, seed, color="#8A6A7A", amp=14, step=80), hills(w, h, h * 0.74, seed + 1, color="#6A5A6A", amp=10, step=60), ground(w, h, h * 0.86, "#4A3A4A", dy=0)]
+    return "".join(o)
+
+def youth(p, w, h, seed):
+    """Rejoice, O young man, in thy youth: a young man walking out through a field in spring, flowers about his feet."""
+    r = random.Random(seed)
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3F8E8"), sun(w * 0.84, h * 0.18, max(12, h * 0.06), color="#FFE680", op=0.4),
+         hills(w, h, h * 0.5, seed, color="#9CCB5E", amp=12, step=90), ground(w, h, h * 0.6, "#9CCB5E", dy=0)]
+    for _ in range(60):
+        x, y = r.uniform(0, w), r.uniform(h * 0.62, h)
+        c = r.choice(["#FFD23F", "#F3EFE6", "#E85A7A", "#C2456A"])
+        o.append(f'<path d="M{f(x)} {f(y)} l 0 -8" stroke="#3F7A44" stroke-width="1.6"></path><circle cx="{f(x)}" cy="{f(y - 9)}" r="3" fill="{c}" stroke="#0D0D0F" stroke-width="0.8"></circle>')
+    s = fit(b, max(h * 0.38, b - 210))
+    o.append(man(p, w * 0.44, b, s, "#2C7DA8", up=[(-22, -158), (-50, -170), (-70, -196)]))
+    return "".join(o)
+
+# ---- Ecclesiastes 12 ----------------------------------------------------------------------------------------------------
+def darkening(w, h, seed):
+    """Before the sun, and the light, and the moon, and the stars, are darkened, and the clouds return after the rain: the
+    sun and the moon dimmed in a grey sky, the stars faint, the clouds coming back."""
+    o = [sky(w, h, "#2A2A34", "#6A6A74"), mk.stars(40, w, h * 0.5, seed, color="#6A6A7A"),
+         f'<circle cx="{f(w * 0.26)}" cy="{f(h * 0.34)}" r="{f(min(w, h) * 0.1)}" fill="#A89A6A" opacity="0.6"></circle>',
+         f'<circle cx="{f(w * 0.72)}" cy="{f(h * 0.26)}" r="{f(min(w, h) * 0.07)}" fill="#8A8A9A" opacity="0.6"></circle>']
+    for i in range(6):
+        o.append(f'<ellipse cx="{f(w * (0.05 + i * 0.19))}" cy="{f(h * (0.5 + (i % 2) * 0.06))}" rx="{f(w * 0.16)}" ry="{f(h * 0.1)}" fill="#3A3A46" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    o.append(hills(w, h, h * 0.76, seed, color="#2A2A30", amp=10, step=70))
+    return "".join(o)
+
+def old_house(p, w, h, seed):
+    """In the day when the keepers of the house shall tremble: an old house at dusk — an old man bowed on his staff at the
+    door, the millstones idle in the court, the windows dark, the street door shut, a bird on the roof."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#4A3A5A", "#C88A6A"), ground(w, h, h * 0.84, "#7A6A5A", dy=0)]
+    x0, x1, top = w * 0.3, w * 0.94, h * 0.26
+    o.append(f'<rect x="{f(x0)}" y="{f(top)}" width="{f(x1 - x0)}" height="{f(h * 0.58)}" fill="#A89070" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             f'<rect x="{f(x0 - 8)}" y="{f(top - 12)}" width="{f(x1 - x0 + 16)}" height="14" fill="#7A6A5A" stroke="#0D0D0F" stroke-width="2"></rect>'
+             + "".join(f'<rect x="{f(x0 + (x1 - x0) * q)}" y="{f(top + h * 0.08)}" width="{f(w * 0.06)}" height="{f(h * 0.1)}" fill="#1A1214" stroke="#0D0D0F" stroke-width="1.8"></rect>' for q in (0.12, 0.44, 0.76))
+             + f'<rect x="{f(x0 + (x1 - x0) * 0.62)}" y="{f(h * 0.56)}" width="{f(w * 0.1)}" height="{f(h * 0.28)}" fill="#5A3A22" stroke="#0D0D0F" stroke-width="2"></rect>'
+             + f'<path d="M{f(x0 + (x1 - x0) * 0.62)} {f(h * 0.7)} L {f(x0 + (x1 - x0) * 0.62 + w * 0.1)} {f(h * 0.7)}" stroke="#2A1A10" stroke-width="5"></path>')
+    o.append(bird(w * 0.6, top - 22, min(1.6, h / 200)) + JG2.mill(w * 0.16, h * 0.88, min(0.5, h / 700)))
+    s = fit(b, max(h * 0.4, b - 190))
+    o.append(f'<g transform="rotate(10 {f(w * 0.36)} {f(b)})">' + man(p, w * 0.36, b, s, "#6A5A6A", up=HOLD_STAFF, extra=GREY_BEARD + STAFF) + '</g>')
+    return "".join(o)
+
+def almond(p, w, h, seed):
+    """The almond-tree shall blossom, and the grasshopper shall be a burden; man goeth to his everlasting home, and the
+    mourners go about the streets: an almond-tree white with blossom, a grasshopper on a stalk, and far off in the street the
+    mourners with covered heads."""
+    r = random.Random(seed)
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, "#8A9AB0", "#E8E0D8"), J.city_hill(w * 0.76, h * 0.62, w * 0.44, h * 0.18, seed), ground(w, h, h * 0.66, "#A89A7A", dy=0)]
+    tx, ty = w * 0.28, h * 0.94; k = min(1.6, h / 260)
+    o.append(f'<path d="M{f(tx)} {f(ty)} C {f(tx - 8 * k)} {f(ty - 60 * k)} {f(tx + 10 * k)} {f(ty - 100 * k)} {f(tx)} {f(ty - 130 * k)} M{f(tx)} {f(ty - 90 * k)} C {f(tx + 30 * k)} {f(ty - 110 * k)} {f(tx + 50 * k)} {f(ty - 120 * k)} {f(tx + 70 * k)} {f(ty - 140 * k)} M{f(tx)} {f(ty - 100 * k)} C {f(tx - 30 * k)} {f(ty - 120 * k)} {f(tx - 50 * k)} {f(ty - 130 * k)} {f(tx - 70 * k)} {f(ty - 150 * k)}" stroke="#4A3A2A" stroke-width="{f(8 * k)}" fill="none" stroke-linecap="round"></path>')
+    for _ in range(70):
+        x, y = tx + r.uniform(-90, 90) * k, ty - r.uniform(110, 190) * k
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r.uniform(4, 7) * k)}" fill="{r.choice(["#F3EFE6", "#FFE8EE", "#F8D8E0"])}" stroke="#C8A8B0" stroke-width="0.8"></circle>')
+    gx, gy = w * 0.56, h * 0.9
+    o.append(f'<path d="M{f(gx)} {f(h + 10)} C {f(gx + 4)} {f(gy)} {f(gx - 4)} {f(gy - 40 * k)} {f(gx + 6)} {f(gy - 70 * k)}" stroke="#5A7A3A" stroke-width="3" fill="none"></path>'
+             f'<g transform="translate({f(gx + 4)} {f(gy - 50 * k)}) scale({f(k * 0.8)}) rotate(-60)"><ellipse cx="0" cy="0" rx="18" ry="6" fill="#7A8A3A" stroke="#0D0D0F" stroke-width="1.4"></ellipse>'
+             '<path d="M8 -2 L 30 -16 L 34 6" stroke="#0D0D0F" stroke-width="2" fill="none"></path><circle cx="-16" cy="-2" r="5" fill="#7A8A3A" stroke="#0D0D0F" stroke-width="1.2"></circle><path d="M-18 -6 C -26 -20 -30 -22 -36 -24" stroke="#0D0D0F" stroke-width="1.2" fill="none"></path></g>')
+    s = fit(h * 0.7, h * 0.62)
+    for i in range(4):
+        o.append(mk.person(p, round(w * (0.66 + i * 0.07)), round(h * 0.7), round(s, 3), body="#2A1E1A", cloth="#3A3440", kind="Tunic", sw=3, flip=True, extra=A.headcloth("#4A4450")))
+    return "".join(o)
+
+def silver_cord(w, h, seed=1):
+    """Before the silver cord is loosed, or the golden bowl is broken, or the pitcher is broken at the fountain, or the wheel
+    broken at the cistern: a plate of four cells — the golden lamp-bowl fallen from its silver cord, the shards of the pitcher
+    by the spring, the broken wheel over the cistern's mouth, and the cord itself."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    cw = w / 4
+    def frame(i, g, s):
+        cx, cy = cw * i + cw / 2, h * 0.54
+        return (f'<rect x="{f(cw * i + 6)}" y="6" width="{f(cw - 12)}" height="{f(h - 12)}" fill="none" stroke="#5A4A8A" stroke-width="1.4"></rect>'
+                + f'<g transform="translate({f(cx)} {f(cy)}) scale({f(s)})">{g}</g>')
+    s = min(cw, h) / 150
+    cord = ('<path d="M0 -80 L 0 -20" stroke="#E8E8F0" stroke-width="3"></path><path d="M0 -20 C 6 -10 -6 0 2 10" stroke="#E8E8F0" stroke-width="3" fill="none" stroke-dasharray="4 3"></path>'
+            '<path d="M-6 30 C 0 24 4 26 6 32" stroke="#E8E8F0" stroke-width="3" fill="none"></path>')
+    bowl = ('<path d="M-40 20 C -36 46 36 46 40 20 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path><path d="M-6 20 L 2 34 L -4 44" stroke="#0D0D0F" stroke-width="2" fill="none"></path>'
+            '<path d="M-44 60 L -20 56 L -30 70 Z M20 58 L 40 62 L 30 72 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path><path d="M0 -80 L 0 0" stroke="#E8E8F0" stroke-width="3"></path>')
+    pitcher = ('<path d="M-60 60 C -20 54 20 54 60 60" stroke="#2C9DB8" stroke-width="6" fill="none"></path><path d="M-30 50 L -20 10 L 0 20 L -6 50 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path>'
+               '<path d="M6 50 L 14 18 L 32 26 L 26 52 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path><path d="M-10 -10 L 0 -30 L 14 -10 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path>')
+    wheel = ('<rect x="-50" y="40" width="100" height="24" fill="#6A6A7A" stroke="#0D0D0F" stroke-width="2"></rect><ellipse cx="0" cy="40" rx="50" ry="10" fill="#0D0B14" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+             '<path d="M-44 40 L -44 -40 M44 40 L 44 -40" stroke="#5A3A22" stroke-width="6"></path><path d="M-36 -36 A 30 30 0 0 1 20 -60" stroke="#8A5A30" stroke-width="8" fill="none"></path>'
+             '<path d="M-20 -30 L -8 -50 M4 -40 L 0 -60" stroke="#8A5A30" stroke-width="4"></path><path d="M14 -30 A 30 30 0 0 1 30 -10" stroke="#8A5A30" stroke-width="8" fill="none" transform="translate(10 30)"></path>')
+    for i, g in enumerate((cord, bowl, pitcher, wheel)):
+        o.append(frame(i, g, s))
+    return "".join(o)
+
+def dust_spirit(w, h, seed):
+    """The dust returneth to the earth as it was, and the spirit returneth unto God who gave it: dust settling over the
+    earth at evening, and a light going up from it into the sky (God is never drawn)."""
+    r = random.Random(seed)
+    o = [sky(w, h, "#2A2A5A", "#E8B88A"), V.rays(w * 0.5, -h * 0.2, 30, 20, h * 1.2, color="#FFF4C2", op=0.18),
+         hills(w, h, h * 0.66, seed, color="#6A5A5A", amp=8, step=80), ground(w, h, h * 0.74, "#A8906A", dy=0)]
+    for _ in range(40):
+        x, y = r.uniform(0, w), r.uniform(h * 0.6, h * 0.86)
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r.uniform(1, 3))}" fill="#C8A07A" opacity="0.6"></circle>')
+    for i in range(14):
+        o.append(f'<circle cx="{f(w * 0.5 + r.uniform(-30, 30))}" cy="{f(h * (0.7 - i * 0.05))}" r="{f(r.uniform(2, 4))}" fill="#FFF4C2" opacity="{0.9 - i * 0.05:.2f}"></circle>')
+    return "".join(o)
+
+def goads_books(w, h, seed):
+    """The words of the wise are as goads, and as nails well fastened; of making many books there is no end: an ox-goad and
+    a row of nails driven into a beam, and beside them scrolls heaped without end."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#3A2A22"></rect>', S3.cedar(w, h, h * 0.86)]
+    k = min(1.4, h / 260)
+    o.append(f'<rect x="-10" y="{f(h * 0.22)}" width="{f(w * 0.46)}" height="{f(h * 0.08)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></rect>'
+             + "".join(f'<path d="M{f(w * (0.06 + i * 0.08))} {f(h * 0.24)} L {f(w * (0.06 + i * 0.08))} {f(h * 0.3)}" stroke="#8A8A9A" stroke-width="4"></path><circle cx="{f(w * (0.06 + i * 0.08))}" cy="{f(h * 0.24)}" r="5" fill="#A8A8B8" stroke="#0D0D0F" stroke-width="1.4"></circle>' for i in range(5))
+             + f'<path d="M{f(w * 0.04)} {f(h * 0.8)} L {f(w * 0.42)} {f(h * 0.44)}" stroke="#0D0D0F" stroke-width="{f(10 * k)}" stroke-linecap="round"></path><path d="M{f(w * 0.04)} {f(h * 0.8)} L {f(w * 0.42)} {f(h * 0.44)}" stroke="#8A5A30" stroke-width="{f(6 * k)}" stroke-linecap="round"></path>'
+             + f'<path d="M{f(w * 0.42)} {f(h * 0.44)} L {f(w * 0.46)} {f(h * 0.38)}" stroke="#C8C8D0" stroke-width="{f(4 * k)}" stroke-linecap="round"></path>')
+    for i in range(18):
+        x = w * (0.56 + (i % 6) * 0.07) + (i // 6) * w * 0.03; y = h * 0.84 - (i // 6) * 22 * k
+        o.append(f'<rect x="{f(x - 22 * k)}" y="{f(y - 10 * k)}" width="{f(44 * k)}" height="{f(20 * k)}" rx="{f(9 * k)}" fill="{r.choice(["#E8D8B0", "#F3E0B8", "#D8C8A0"])}" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 f'<ellipse cx="{f(x + 22 * k)}" cy="{f(y)}" rx="{f(5 * k)}" ry="{f(10 * k)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="1.4"></ellipse>')
     return "".join(o)
 
 def warriors_row(p, w, h, b, seed):

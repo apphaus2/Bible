@@ -310,6 +310,83 @@
    "w": 760,
    "h": 1080,
    "title": "39 · The Poor Wise Man"
+  },
+  "ECC-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Remember Thy Creator"
+  },
+  "ECC-C04-A-P01-DeadFlies.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Dead Flies"
+  },
+  "ECC-C04-B-P01-DeadFlies.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Dead Flies"
+  },
+  "ECC-C04-C-P01-DeadFlies.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Dead Flies"
+  },
+  "ECC-C04-D-P01-CastThyBreadUponTh.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Cast Thy Bread upon the Waters"
+  },
+  "ECC-C04-E-P01-CastThyBreadUponTh.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Cast Thy Bread upon the Waters"
+  },
+  "ECC-C04-F-P01-RejoiceOYoungMan.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Rejoice, O Young Man"
+  },
+  "ECC-C04-G-P01-RememberThyCreator.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Remember Thy Creator"
+  },
+  "ECC-C04-H-P01-RememberThyCreator.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Remember Thy Creator"
+  },
+  "ECC-C04-I-P01-TheEndOfTheMatter.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The End of the Matter"
+  },
+  "ECC-C04-J-P01-TheEndOfTheMatter.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The End of the Matter"
   }
  },
  "order": [
@@ -355,7 +432,18 @@
   "ECC-C03-J-P02-OneEventUntoAll.dc.html",
   "ECC-C03-K-P01-OneEventUntoAll.dc.html",
   "ECC-C03-L-P01-OneEventUntoAll.dc.html",
-  "ECC-C03-M-P01-ThePoorWiseMan.dc.html"
+  "ECC-C03-M-P01-ThePoorWiseMan.dc.html",
+  "ECC-C04-00-Title.dc.html",
+  "ECC-C04-A-P01-DeadFlies.dc.html",
+  "ECC-C04-B-P01-DeadFlies.dc.html",
+  "ECC-C04-C-P01-DeadFlies.dc.html",
+  "ECC-C04-D-P01-CastThyBreadUponTh.dc.html",
+  "ECC-C04-E-P01-CastThyBreadUponTh.dc.html",
+  "ECC-C04-F-P01-RejoiceOYoungMan.dc.html",
+  "ECC-C04-G-P01-RememberThyCreator.dc.html",
+  "ECC-C04-H-P01-RememberThyCreator.dc.html",
+  "ECC-C04-I-P01-TheEndOfTheMatter.dc.html",
+  "ECC-C04-J-P01-TheEndOfTheMatter.dc.html"
  ],
  "notes": {
   "Main": {
@@ -385,6 +473,13 @@
    "text": "Chapter 3 · A Good Name (Ecclesiastes 7–9)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Remember Thy Creator (Ecclesiastes 10–12)",
+   "x": 0,
+   "y": 15200
   }
  },
  "designSystems": [],

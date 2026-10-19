@@ -36,6 +36,16 @@
    "prefixes": [
     "ECC-C03-"
    ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "Remember Thy Creator",
+   "range": "Ecclesiastes 10–12",
+   "blurb": "Dead flies in the perfumer's oil; he that diggeth a pit shall fall into it; a bird of the heavens shall carry the voice; cast thy bread upon the waters; truly the light is sweet; rejoice, O young man, in thy youth; then remember also thy Creator — before the silver cord is loosed, or the golden bowl is broken, and the dust returneth to the earth; and the end of the matter: fear God, and keep his commandments.",
+   "prefixes": [
+    "ECC-C04-"
+   ]
   }
  ]
 }

@@ -25,5 +25,7 @@ META = {
      "blurb": "The tears of the oppressed, and they had no comforter; better is a handful with quietness; one that is alone, and he hath not a second; two are better than one, and a threefold cord is not quickly broken; keep thy foot when thou goest to the house of God — let thy words be few; the sleep of a laboring man is sweet; naked shall he go again as he came; and his days as a shadow."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "A Good Name", "range": "Ecclesiastes 7–9", "bible_chapters": [7, 8, 9],
      "blurb": "A good name is better than precious oil; the house of mourning and the crackling of thorns under a pot; consider the work of God; one man among a thousand have I found; keep the king's command; a man's wisdom maketh his face to shine; a living dog is better than a dead lion; whatsoever thy hand findeth to do, do it with thy might; the race is not to the swift; and the little city and the poor wise man."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Remember Thy Creator", "range": "Ecclesiastes 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "Dead flies in the perfumer's oil; he that diggeth a pit shall fall into it; a bird of the heavens shall carry the voice; cast thy bread upon the waters; truly the light is sweet; rejoice, O young man, in thy youth; then remember also thy Creator — before the silver cord is loosed, or the golden bowl is broken, and the dust returneth to the earth; and the end of the matter: fear God, and keep his commandments."},
   ],
 }

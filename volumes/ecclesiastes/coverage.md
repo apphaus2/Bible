@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 178 verses — 178 full, 0 partial, 0 omitted.
+**So far:** 222 verses — 222 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Vanity of Vanities (Ecclesiastes 1–3)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · A Good Name (Ecclesiastes 7–9)
 
 64 verses: 64 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · Remember Thy Creator (Ecclesiastes 10–12)
+
+44 verses: 44 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
