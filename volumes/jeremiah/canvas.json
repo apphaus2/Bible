@@ -1710,6 +1710,118 @@
    "w": 760,
    "h": 1080,
    "title": "227 · O Baruch"
+  },
+  "JER-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · Against the Nations"
+  },
+  "JER-C16-D-P01-OfEgypt.dc.html": {
+   "x": 840,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "228 · Of Egypt"
+  },
+  "JER-C16-D-P02-EgyptRisethUpLikeT.dc.html": {
+   "x": 1680,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "229 · Egypt Riseth Up like the Nile"
+  },
+  "JER-C16-D-P03-NebuchadrezzarShal.dc.html": {
+   "x": 2520,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "230 · Nebuchadrezzar Shall Smite the Land of Egypt"
+  },
+  "JER-C16-D-P04-AVeryFairHeifer.dc.html": {
+   "x": 3360,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "231 · A Very Fair Heifer"
+  },
+  "JER-C16-D-P05-AVeryFairHeifer.dc.html": {
+   "x": 0,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "232 · A Very Fair Heifer"
+  },
+  "JER-C16-D-P06-ConcerningThePhili.dc.html": {
+   "x": 840,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "233 · Concerning the Philistines"
+  },
+  "JER-C16-D-P07-ConcerningThePhili.dc.html": {
+   "x": 1680,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "234 · Concerning the Philistines"
+  },
+  "JER-C16-D-P08-OfMoab.dc.html": {
+   "x": 2520,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "235 · Of Moab"
+  },
+  "JER-C16-D-P09-OfMoab.dc.html": {
+   "x": 3360,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "236 · Of Moab"
+  },
+  "JER-C16-D-P10-SettledOnHisLees.dc.html": {
+   "x": 0,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "237 · Settled on His Lees"
+  },
+  "JER-C16-D-P11-JudgmentUponThePla.dc.html": {
+   "x": 840,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "238 · Judgment upon the Plain Country"
+  },
+  "JER-C16-D-P12-OVineOfSibmah.dc.html": {
+   "x": 1680,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "239 · O Vine of Sibmah"
+  },
+  "JER-C16-D-P13-OVineOfSibmah.dc.html": {
+   "x": 2520,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "240 · O Vine of Sibmah"
+  },
+  "JER-C16-D-P14-HeShallFlyAsAnEagl.dc.html": {
+   "x": 3360,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "241 · He Shall Fly as an Eagle"
+  },
+  "JER-C16-D-P15-FearAndThePitAndTh.dc.html": {
+   "x": 0,
+   "y": 79100,
+   "w": 760,
+   "h": 1080,
+   "title": "242 · Fear, and the Pit, and the Snare"
   }
  },
  "order": [
@@ -1955,7 +2067,23 @@
   "JER-C15-D-P08-TheQueenOfHeaven.dc.html",
   "JER-C15-D-P09-TheQueenOfHeaven.dc.html",
   "JER-C15-D-P10-OBaruch.dc.html",
-  "JER-C15-D-P11-OBaruch.dc.html"
+  "JER-C15-D-P11-OBaruch.dc.html",
+  "JER-C16-00-Title.dc.html",
+  "JER-C16-D-P01-OfEgypt.dc.html",
+  "JER-C16-D-P02-EgyptRisethUpLikeT.dc.html",
+  "JER-C16-D-P03-NebuchadrezzarShal.dc.html",
+  "JER-C16-D-P04-AVeryFairHeifer.dc.html",
+  "JER-C16-D-P05-AVeryFairHeifer.dc.html",
+  "JER-C16-D-P06-ConcerningThePhili.dc.html",
+  "JER-C16-D-P07-ConcerningThePhili.dc.html",
+  "JER-C16-D-P08-OfMoab.dc.html",
+  "JER-C16-D-P09-OfMoab.dc.html",
+  "JER-C16-D-P10-SettledOnHisLees.dc.html",
+  "JER-C16-D-P11-JudgmentUponThePla.dc.html",
+  "JER-C16-D-P12-OVineOfSibmah.dc.html",
+  "JER-C16-D-P13-OVineOfSibmah.dc.html",
+  "JER-C16-D-P14-HeShallFlyAsAnEagl.dc.html",
+  "JER-C16-D-P15-FearAndThePitAndTh.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2069,6 +2197,13 @@
    "text": "Chapter 15 · Into Egypt (Jeremiah 43–45)",
    "x": 0,
    "y": 71100
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · Against the Nations (Jeremiah 46–48)",
+   "x": 0,
+   "y": 75200
   }
  },
  "designSystems": [],

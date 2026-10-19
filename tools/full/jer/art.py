@@ -630,7 +630,17 @@ PLACES = {"JERUSALEM": (35.2, 31.8), "JUDAH": (35.0, 31.45), "GAZA": (34.45, 31.
           "THE MEDES": (47.8, 35.2), "EGYPT": (31.4, 28.2), "NOPH": (31.25, 29.85), "TAHPANHES": (32.0, 30.9), "MIGDOL": (32.5, 30.9), "PATHROS": (32.0, 26.4),
           "ON": (31.3, 30.13), "RIBLAH": (36.55, 34.45), "ISRAEL": (35.3, 32.6), "SAMARIA": (35.2, 32.28), "GILEAD": (35.8, 32.3), "LEBANON": (35.9, 34.0),
           "KITTIM": (33.2, 35.1), "MIZPAH": (35.22, 31.88), "ANATHOTH": (35.26, 31.81), "BETH-LEHEM": (35.2, 31.7), "RAMAH": (35.23, 31.86), "UZ": (36.6, 29.6),
-          "ARAM": (37.2, 34.6), "ASSYRIA": (42.8, 35.6), "PERSIA": (49.0, 30.5)}
+          "ARAM": (37.2, 34.6), "ASSYRIA": (42.8, 35.6), "PERSIA": (49.0, 30.5),
+          # Moab (Jeremiah 48)
+          "NEBO": (35.73, 31.77), "KIRIATHAIM": (35.66, 31.6), "HESHBON": (35.81, 31.8), "MADMEN": (35.76, 31.12), "HORONAIM": (35.6, 31.22), "LUHITH": (35.66, 31.16),
+          "DIBON": (35.78, 31.5), "AROER": (35.85, 31.46), "HOLON": (35.96, 31.6), "JAHZAH": (35.9, 31.7), "MEPHAATH": (36.06, 31.77), "BETH-DIBLATHAIM": (35.83, 31.61),
+          "BETH-GAMUL": (36.02, 31.42), "BETH-MEON": (35.74, 31.7), "KERIOTH": (35.7, 31.36), "BOZRAH OF MOAB": (35.88, 31.28), "KIR-HERES": (35.7, 31.18),
+          "JAZER": (35.76, 31.98), "SIBMAH": (35.78, 31.84), "ELEALEH": (35.84, 31.86), "JAHAZ": (35.88, 31.66), "ZOAR": (35.47, 31.0), "NIMRIM": (35.58, 31.13),
+          "EGLATH-SHELISHIYAH": (35.74, 31.02), "MISGAB": (35.68, 31.7), "THE ARNON": (35.7, 31.45),
+          # the nations of Jeremiah 46–51
+          "CARCHEMISH": (38.0, 36.83), "NO": (32.65, 25.7), "TABOR": (35.39, 32.69), "CARMEL": (35.0, 32.73), "CAPHTOR": (25.0, 35.2),
+          "AI": (35.85, 32.05), "SENIR": (35.8, 33.4), "HAMATH": (36.75, 35.13), "KEDAR": (38.6, 30.6), "HAZOR": (40.2, 29.6), "SUSA": (48.25, 32.19),
+          "MERATHAIM": (46.5, 31.0), "PEKOD": (45.8, 32.2), "ARARAT": (44.3, 39.7), "MINNI": (45.8, 37.6), "ASHKENAZ": (42.8, 39.6), "SHESHACH": (44.42, 32.54)}
 COAST = [(29.4, 31.1), (30.6, 31.5), (32.3, 31.2), (33.6, 31.1), (34.3, 31.35), (34.8, 32.1), (35.1, 33.2), (35.6, 34.0), (35.95, 34.8), (35.8, 35.9), (36.1, 36.6), (35.6, 36.9), (34.0, 36.4), (32.0, 36.4), (29.4, 36.6)]
 NILE = [(31.0, 24.0), (32.0, 25.4), (31.2, 27.2), (30.9, 28.4), (31.25, 30.1), (30.6, 31.4)]
 NILE2 = [(31.25, 30.1), (31.9, 31.35)]
@@ -639,6 +649,7 @@ TIGRIS = [(41.6, 38.2), (43.15, 36.3), (43.6, 35.3), (44.3, 33.6), (45.8, 32.4),
 JORDAN = [(35.62, 33.2), (35.6, 32.8), (35.55, 32.3), (35.55, 31.78)]
 ARNON = [(36.2, 31.5), (35.9, 31.45), (35.58, 31.47)]
 RED = [(32.55, 29.95), (32.7, 29.9), (33.6, 28.3), (34.25, 27.9), (34.5, 28.4), (34.9, 29.5), (35.05, 29.5), (34.7, 28.1), (34.6, 27.6), (36.6, 24.5), (35.6, 23.8), (33.9, 26.0), (33.6, 27.4), (32.6, 29.5)]
+DEAD = [(35.5, 31.78), (35.58, 31.75), (35.6, 31.5), (35.57, 31.25), (35.5, 31.05), (35.42, 31.1), (35.4, 31.4), (35.45, 31.7)]
 GULF = [(47.9, 30.1), (48.6, 29.9), (50.6, 29.2), (50.6, 24.0), (49.2, 24.0), (48.6, 27.6), (47.9, 29.4)]
 
 def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), lit="#D7261E", title=None, dead_sea=True, size=10, under=("MIGDOL", "EKRON", "RABBAH", "BUZ", "SIDON", "BETH-LEHEM", "ANATHOTH", "DAMASCUS")):
@@ -654,8 +665,11 @@ def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), l
     for rv in (NILE, NILE2, EUPHRATES, TIGRIS, JORDAN, ARNON):
         o.append(f'<path d="M{path(rv)}" fill="none" stroke="#2C9DB8" stroke-width="{3 if rv not in (JORDAN, ARNON) else 2}"></path>')
     if dead_sea:
-        cx, cy = P(35.5, 31.5); rx = w * 0.12 / (x1 - x0); ry = h * 0.32 / (y1 - y0)
-        o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(max(2, rx))}" ry="{f(max(4, ry))}" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.4"></ellipse>')
+        if x1 - x0 > 4:
+            cx, cy = P(35.5, 31.5); rx = w * 0.12 / (x1 - x0); ry = h * 0.32 / (y1 - y0)
+            o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(max(2, rx))}" ry="{f(max(4, ry))}" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.4"></ellipse>')
+        else:
+            o.append(f'<path d="M{path(DEAD)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.6"></path>' + label(*P(35.49, 31.45), "THE SALT SEA", "#8FD0E2", 8))
     for a, b in arrows:
         o.append(route([P(*PLACES[a]), P(*PLACES[b])], color=lit, sw=2.6))
     for nm in places:

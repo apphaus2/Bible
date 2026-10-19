@@ -58,5 +58,7 @@ META = {
      "blurb": "The chains loosed at Ramah — behold, all the land is before thee; Gedaliah the governor at Mizpah: fear not to serve the Chaldeans; wine and summer fruits gathered very much; Ishmael the son of Nethaniah at table in Mizpah, and the evil that he did; the captives turned back at the great waters of Gibeon; and the remnant before the prophet: pray for us — go ye not into Egypt."},
     {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "Into Egypt", "range": "Jeremiah 43–45", "bible_chapters": [43, 44, 45],
      "blurb": "Thou speakest falsely; the remnant of Judah carried into Egypt, unto Tahpanhes; great stones hid in the brickwork at the entry of Pharaoh's house, where the king of Babylon shall spread his royal pavilion; the women of Pathros and the queen of heaven — we will not hearken unto thee; the sign of Pharaoh Hophra; and to Baruch: seekest thou great things for thyself? seek them not."},
+    {"module": "ch16", "dir": "chapter-16", "num": "16", "name": "Against the Nations", "range": "Jeremiah 46–48", "bible_chapters": [46, 47, 48],
+     "blurb": "The word concerning the nations: Egypt at Carchemish — prepare ye the buckler and shield; Egypt riseth up like the Nile, a very fair heifer, and destruction out of the north is come; fear not, O Jacob my servant; the Philistines and the waters out of the north — O thou sword of Jehovah, how long ere thou be quiet?; and Moab, settled on his lees: fear, and the pit, and the snare."},
   ],
 }
