@@ -485,6 +485,97 @@
    "w": 760,
    "h": 1080,
    "title": "63 · The Vine of Sibmah"
+  },
+  "ISA-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Burden of Egypt"
+  },
+  "ISA-C05-D-P01-TheBurdenOfDamascu.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · The Burden of Damascus"
+  },
+  "ISA-C05-D-P02-TheBurdenOfDamascu.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · The Burden of Damascus"
+  },
+  "ISA-C05-D-P03-TheBurdenOfDamascu.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · The Burden of Damascus"
+  },
+  "ISA-C05-D-P04-BeyondTheRiversOfE.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Beyond the Rivers of Ethiopia"
+  },
+  "ISA-C05-D-P05-BeyondTheRiversOfE.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Beyond the Rivers of Ethiopia"
+  },
+  "ISA-C05-D-P06-TheBurdenOfEgypt.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Burden of Egypt"
+  },
+  "ISA-C05-D-P07-TheBurdenOfEgypt.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Burden of Egypt"
+  },
+  "ISA-C05-D-P08-ThePrincesOfZoan.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Princes of Zoan"
+  },
+  "ISA-C05-D-P09-AnAltarToJehovahIn.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · An Altar to Jehovah in Egypt"
+  },
+  "ISA-C05-D-P10-AnAltarToJehovahIn.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · An Altar to Jehovah in Egypt"
+  },
+  "ISA-C05-D-P11-NakedAndBarefoot.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Naked and Barefoot"
+  },
+  "ISA-C05-D-P12-NakedAndBarefoot.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Naked and Barefoot"
   }
  },
  "order": [
@@ -555,7 +646,20 @@
   "ISA-C04-D-P12-TheBurdenOfMoab.dc.html",
   "ISA-C04-D-P13-TheBurdenOfMoab.dc.html",
   "ISA-C04-D-P14-TheVineOfSibmah.dc.html",
-  "ISA-C04-D-P15-TheVineOfSibmah.dc.html"
+  "ISA-C04-D-P15-TheVineOfSibmah.dc.html",
+  "ISA-C05-00-Title.dc.html",
+  "ISA-C05-D-P01-TheBurdenOfDamascu.dc.html",
+  "ISA-C05-D-P02-TheBurdenOfDamascu.dc.html",
+  "ISA-C05-D-P03-TheBurdenOfDamascu.dc.html",
+  "ISA-C05-D-P04-BeyondTheRiversOfE.dc.html",
+  "ISA-C05-D-P05-BeyondTheRiversOfE.dc.html",
+  "ISA-C05-D-P06-TheBurdenOfEgypt.dc.html",
+  "ISA-C05-D-P07-TheBurdenOfEgypt.dc.html",
+  "ISA-C05-D-P08-ThePrincesOfZoan.dc.html",
+  "ISA-C05-D-P09-AnAltarToJehovahIn.dc.html",
+  "ISA-C05-D-P10-AnAltarToJehovahIn.dc.html",
+  "ISA-C05-D-P11-NakedAndBarefoot.dc.html",
+  "ISA-C05-D-P12-NakedAndBarefoot.dc.html"
  ],
  "notes": {
   "Main": {
@@ -592,6 +696,13 @@
    "text": "Chapter 4 · How Art Thou Fallen (Isaiah 13–16)",
    "x": 0,
    "y": 17600
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Burden of Egypt (Isaiah 17–20)",
+   "x": 0,
+   "y": 22900
   }
  },
  "designSystems": [],

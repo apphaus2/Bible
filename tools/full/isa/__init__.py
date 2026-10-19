@@ -34,5 +34,7 @@ META = {
      "blurb": "Ho Assyrian, the rod of mine anger — shall the axe boast itself against him that heweth therewith?; a remnant shall return; he is come to Aiath, he halteth at Nob; then a shoot out of the stock of Jesse: the wolf shall dwell with the lamb, and a little child shall lead them; an ensign for the nations; and the song of that day — with joy shall ye draw water out of the wells of salvation."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "How Art Thou Fallen", "range": "Isaiah 13–16", "bible_chapters": [13, 14, 15, 16],
      "blurb": "The burden of Babylon: the day of Jehovah, the sun darkened, the Medes stirred up, and Babylon, the glory of kingdoms, never inhabited; the parable against the king of Babylon — how art thou fallen from heaven, O day-star, son of the morning!; the burden of Philistia and the fiery flying serpent; and the burden of Moab — my heart soundeth like a harp for Moab."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Burden of Egypt", "range": "Isaiah 17–20", "bible_chapters": [17, 18, 19, 20],
+     "blurb": "The burden of Damascus, a ruinous heap, and the gleanings of the olive-tree; the uproar of the nations chased as chaff; the land of the rustling of wings beyond the rivers of Ethiopia; the burden of Egypt — Jehovah rideth upon a swift cloud, the Nile dried up, an altar to Jehovah in the midst of Egypt, and a highway out of Egypt to Assyria; and Isaiah's sign, three years barefoot, against Egypt and Ethiopia."},
   ],
 }

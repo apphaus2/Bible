@@ -30,7 +30,7 @@ def nations_map(w, h, hi=(), arrows=(), show=None, lit="#D7261E", note=None):
     for nm in names:
         x, y = pos[nm]
         o.append(node(x, y, nm, lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2"), r=6 if nm in hi else 4, dy=-11, size=size + (1 if nm in hi else 0)))
-    if note: o.append(label(w * 0.98, h * 0.94, note, "#FF8A6A", 10, "end"))
+    if note: o.append(label(w * 0.97, h * 0.08, note, "#FF8A6A", 10, "end"))
     return "".join(o)
 
 # ---- Isaiah 6–9 ----------------------------------------------------------------------------------------------------------
