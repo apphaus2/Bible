@@ -27,5 +27,7 @@ META = {
      "blurb": "The proverbs of Solomon the son of David — the fear of Jehovah is the beginning of knowledge; my son, if sinners entice thee, consent thou not; Wisdom crieth aloud in the street: how long, ye simple ones?; if thou seek her as silver; trust in Jehovah with all thy heart; she is a tree of life to them that lay hold upon her."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Get Wisdom", "range": "Proverbs 4–6", "bible_chapters": [4, 5, 6],
      "blurb": "Hear, my sons, the instruction of a father — for I was a son unto my father; wisdom is the principal thing, therefore get wisdom; the path of the righteous is as the dawning light; keep thy heart with all diligence; drink waters out of thine own cistern; go to the ant, thou sluggard; six things which Jehovah hateth, yea, seven; for the commandment is a lamp, and the law is light."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Wisdom Hath Builded Her House", "range": "Proverbs 7–9", "bible_chapters": [7, 8, 9],
+     "blurb": "Say unto wisdom, Thou art my sister; at the window of my house I looked forth, and beheld a young man void of understanding in the twilight; doth not wisdom cry? — by me kings reign; Jehovah possessed me in the beginning of his way, when he set a circle upon the face of the deep; Wisdom hath builded her house, she hath hewn out her seven pillars; stolen waters are sweet."},
   ],
 }

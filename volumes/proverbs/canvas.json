@@ -170,6 +170,83 @@
    "w": 760,
    "h": 1080,
    "title": "20 · The Commandment Is a Lamp"
+  },
+  "PRO-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Wisdom Hath Builded Her House"
+  },
+  "PRO-C03-D-P01-AtTheWindowOfMyHou.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · At the Window of My House"
+  },
+  "PRO-C03-D-P02-AtTheWindowOfMyHou.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · At the Window of My House"
+  },
+  "PRO-C03-D-P03-AtTheWindowOfMyHou.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · At the Window of My House"
+  },
+  "PRO-C03-D-P04-DothNotWisdomCry.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Doth Not Wisdom Cry?"
+  },
+  "PRO-C03-D-P05-DothNotWisdomCry.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Doth Not Wisdom Cry?"
+  },
+  "PRO-C03-D-P06-DothNotWisdomCry.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Doth Not Wisdom Cry?"
+  },
+  "PRO-C03-D-P07-JehovahPossessedMe.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Jehovah Possessed Me in the Beginning"
+  },
+  "PRO-C03-D-P08-JehovahPossessedMe.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Jehovah Possessed Me in the Beginning"
+  },
+  "PRO-C03-D-P09-HerSevenPillars.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Her Seven Pillars"
+  },
+  "PRO-C03-D-P10-TheFoolishWoman.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · The Foolish Woman"
   }
  },
  "order": [
@@ -195,7 +272,18 @@
   "PRO-C02-D-P07-SuretyForThyNeighb.dc.html",
   "PRO-C02-D-P08-AWorthlessPerson.dc.html",
   "PRO-C02-D-P09-TheCommandmentIsAL.dc.html",
-  "PRO-C02-D-P10-TheCommandmentIsAL.dc.html"
+  "PRO-C02-D-P10-TheCommandmentIsAL.dc.html",
+  "PRO-C03-00-Title.dc.html",
+  "PRO-C03-D-P01-AtTheWindowOfMyHou.dc.html",
+  "PRO-C03-D-P02-AtTheWindowOfMyHou.dc.html",
+  "PRO-C03-D-P03-AtTheWindowOfMyHou.dc.html",
+  "PRO-C03-D-P04-DothNotWisdomCry.dc.html",
+  "PRO-C03-D-P05-DothNotWisdomCry.dc.html",
+  "PRO-C03-D-P06-DothNotWisdomCry.dc.html",
+  "PRO-C03-D-P07-JehovahPossessedMe.dc.html",
+  "PRO-C03-D-P08-JehovahPossessedMe.dc.html",
+  "PRO-C03-D-P09-HerSevenPillars.dc.html",
+  "PRO-C03-D-P10-TheFoolishWoman.dc.html"
  ],
  "notes": {
   "Main": {
@@ -218,6 +306,13 @@
    "text": "Chapter 2 · Get Wisdom (Proverbs 4–6)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Wisdom Hath Builded Her House (Proverbs 7–9)",
+   "x": 0,
+   "y": 9900
   }
  },
  "designSystems": [],
