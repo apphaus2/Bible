@@ -1,0 +1,312 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:51:15Z"
+ },
+ "title": "Song of Solomon — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "SNG-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · I Am a Rose of Sharon"
+  },
+  "SNG-C01-A-P01-TheSongOfSongs.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Song of Songs"
+  },
+  "SNG-C01-B-P01-TheSongOfSongs.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Song of Songs"
+  },
+  "SNG-C01-C-P01-TheSongOfSongs.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Song of Songs"
+  },
+  "SNG-C01-D-P01-ARoseOfSharon.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · A Rose of Sharon"
+  },
+  "SNG-C01-E-P01-ARoseOfSharon.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · A Rose of Sharon"
+  },
+  "SNG-C01-F-P01-ARoseOfSharon.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · A Rose of Sharon"
+  },
+  "SNG-C01-G-P01-TheWinterIsPast.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Winter Is Past"
+  },
+  "SNG-C01-H-P01-TheWinterIsPast.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Winter Is Past"
+  },
+  "SNG-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · A Garden Shut Up"
+  },
+  "SNG-C02-A-P01-ByNightOnMyBed.dc.html": {
+   "x": 840,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · By Night on My Bed"
+  },
+  "SNG-C02-B-P01-TheLitterOfSolomon.dc.html": {
+   "x": 1680,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Litter of Solomon"
+  },
+  "SNG-C02-C-P01-TheLitterOfSolomon.dc.html": {
+   "x": 2520,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Litter of Solomon"
+  },
+  "SNG-C02-D-P01-ThouArtFairMyLove.dc.html": {
+   "x": 3360,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Thou Art Fair, My Love"
+  },
+  "SNG-C02-E-P01-ThouArtFairMyLove.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Thou Art Fair, My Love"
+  },
+  "SNG-C02-F-P01-ThouArtFairMyLove.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Thou Art Fair, My Love"
+  },
+  "SNG-C02-F-P02-AGardenShutUp.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · A Garden Shut Up"
+  },
+  "SNG-C02-G-P01-AGardenShutUp.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · A Garden Shut Up"
+  },
+  "SNG-C02-H-P01-IAmComeIntoMyGarde.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · I Am Come into My Garden"
+  },
+  "SNG-C02-I-P01-IAmComeIntoMyGarde.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · I Am Come into My Garden"
+  },
+  "SNG-C02-J-P01-MyBelovedIsWhiteAn.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · My Beloved Is White and Ruddy"
+  },
+  "SNG-C02-K-P01-MyBelovedIsWhiteAn.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · My Beloved Is White and Ruddy"
+  },
+  "SNG-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Love Is Strong as Death"
+  },
+  "SNG-C03-A-P01-WhitherIsThyBelove.dc.html": {
+   "x": 840,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Whither Is Thy Beloved Gone"
+  },
+  "SNG-C03-B-P01-WhitherIsThyBelove.dc.html": {
+   "x": 1680,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Whither Is Thy Beloved Gone"
+  },
+  "SNG-C03-C-P01-WhitherIsThyBelove.dc.html": {
+   "x": 2520,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Whither Is Thy Beloved Gone"
+  },
+  "SNG-C03-D-P01-WhitherIsThyBelove.dc.html": {
+   "x": 3360,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Whither Is Thy Beloved Gone"
+  },
+  "SNG-C03-E-P01-HowBeautifulAreThy.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · How Beautiful Are Thy Feet"
+  },
+  "SNG-C03-F-P01-HowBeautifulAreThy.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · How Beautiful Are Thy Feet"
+  },
+  "SNG-C03-G-P01-HowBeautifulAreThy.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · How Beautiful Are Thy Feet"
+  },
+  "SNG-C03-H-P01-SetMeAsASeal.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Set Me as a Seal"
+  },
+  "SNG-C03-I-P01-SetMeAsASeal.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Set Me as a Seal"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "SNG-C01-00-Title.dc.html",
+  "SNG-C01-A-P01-TheSongOfSongs.dc.html",
+  "SNG-C01-B-P01-TheSongOfSongs.dc.html",
+  "SNG-C01-C-P01-TheSongOfSongs.dc.html",
+  "SNG-C01-D-P01-ARoseOfSharon.dc.html",
+  "SNG-C01-E-P01-ARoseOfSharon.dc.html",
+  "SNG-C01-F-P01-ARoseOfSharon.dc.html",
+  "SNG-C01-G-P01-TheWinterIsPast.dc.html",
+  "SNG-C01-H-P01-TheWinterIsPast.dc.html",
+  "SNG-C02-00-Title.dc.html",
+  "SNG-C02-A-P01-ByNightOnMyBed.dc.html",
+  "SNG-C02-B-P01-TheLitterOfSolomon.dc.html",
+  "SNG-C02-C-P01-TheLitterOfSolomon.dc.html",
+  "SNG-C02-D-P01-ThouArtFairMyLove.dc.html",
+  "SNG-C02-E-P01-ThouArtFairMyLove.dc.html",
+  "SNG-C02-F-P01-ThouArtFairMyLove.dc.html",
+  "SNG-C02-F-P02-AGardenShutUp.dc.html",
+  "SNG-C02-G-P01-AGardenShutUp.dc.html",
+  "SNG-C02-H-P01-IAmComeIntoMyGarde.dc.html",
+  "SNG-C02-I-P01-IAmComeIntoMyGarde.dc.html",
+  "SNG-C02-J-P01-MyBelovedIsWhiteAn.dc.html",
+  "SNG-C02-K-P01-MyBelovedIsWhiteAn.dc.html",
+  "SNG-C03-00-Title.dc.html",
+  "SNG-C03-A-P01-WhitherIsThyBelove.dc.html",
+  "SNG-C03-B-P01-WhitherIsThyBelove.dc.html",
+  "SNG-C03-C-P01-WhitherIsThyBelove.dc.html",
+  "SNG-C03-D-P01-WhitherIsThyBelove.dc.html",
+  "SNG-C03-E-P01-HowBeautifulAreThy.dc.html",
+  "SNG-C03-F-P01-HowBeautifulAreThy.dc.html",
+  "SNG-C03-G-P01-HowBeautifulAreThy.dc.html",
+  "SNG-C03-H-P01-SetMeAsASeal.dc.html",
+  "SNG-C03-I-P01-SetMeAsASeal.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Song of Solomon Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · I Am a Rose of Sharon (Song of Solomon 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · A Garden Shut Up (Song of Solomon 3–5)",
+   "x": 0,
+   "y": 4600
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Love Is Strong as Death (Song of Solomon 6–8)",
+   "x": 0,
+   "y": 8700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

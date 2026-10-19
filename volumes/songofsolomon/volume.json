@@ -1,0 +1,41 @@
+{
+ "id": "songofsolomon",
+ "order": 22,
+ "name": "Song of Solomon",
+ "kanji": "雅歌",
+ "thumb": "vol-songofsolomon-",
+ "lede": "The twenty-second book of the Bible, in full: the Song of songs, which is Solomon's — the bride in the vineyards, the beloved like a roe upon the mountains, the winter past and the voice of the turtle-dove, a garden shut up, and love strong as death — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "I Am a Rose of Sharon",
+   "range": "Song of Solomon 1–2",
+   "blurb": "The Song of songs, which is Solomon's: I am black, but comely, as the tents of Kedar; tell me, O thou whom my soul loveth, where thou feedest thy flock; I am a rose of Sharon, a lily of the valleys; his banner over me was love; the voice of my beloved, leaping upon the mountains — rise up, my love, my fair one, and come away, for, lo, the winter is past; the little foxes; my beloved is mine, and I am his.",
+   "prefixes": [
+    "Main.dc.html",
+    "SNG-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "A Garden Shut Up",
+   "range": "Song of Solomon 3–5",
+   "blurb": "By night on my bed I sought him whom my soul loveth; who is this that cometh up from the wilderness like pillars of smoke? — the litter of Solomon and the crown of his espousals; behold, thou art fair, my love; come with me from Lebanon; a garden shut up, a spring shut up, a fountain sealed; awake, O north wind; I was asleep, but my heart waked; and my beloved is white and ruddy, the chiefest among ten thousand.",
+   "prefixes": [
+    "SNG-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "Love Is Strong as Death",
+   "range": "Song of Solomon 6–8",
+   "blurb": "Whither is thy beloved gone? — to his garden, to gather lilies; fair as Tirzah, terrible as an army with banners; who is she that looketh forth as the morning?; return, return, O Shulammite; let us get up early to the vineyards; who is this that cometh up from the wilderness, leaning upon her beloved?; set me as a seal upon thy heart, for love is strong as death, and many waters cannot quench love; make haste, my beloved, upon the mountains of spices.",
+   "prefixes": [
+    "SNG-C03-"
+   ]
+  }
+ ]
+}
