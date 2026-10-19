@@ -560,6 +560,9 @@ def inner_court(p, w, h, seed, stage="stand", fig=0.42, mirror=False):
         xe = tip[0] - 70 * se
         hx, hy = -(tip[0] - xe) / se, (tip[1] - b) / se
         o.append(queen(p, xe, b, se, ESTHER_C, flip=True, up=[(-22, -158), ((-22 + hx) / 2, (-158 + hy) / 2 + 10), (hx, hy)]))
+    elif stage == "kneel" and tip:
+        o.append(E.kneel(tip[0] - 60 * se, b, se * 0.78, color=ESTHER_C, skin="#C98E66"))
+        o.append(f'<g transform="translate({f(tip[0] - 60 * se)} {f(b)}) scale({f(se * 0.78)})"><path d="M5 -128 L 5 -144 L 10 -140 L 14 -146 L 20 -146 L 24 -140 L 29 -144 L 29 -128 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path></g>')
     else:
         o.append(queen(p, w * 0.26 if stage == "stand" else w * 0.34, b, se, ESTHER_C, flip=True))
     o.append(guard(p, w * 0.06, b, se * 1.02) + guard(p, w * 0.97, b, se * 1.02, flip=True))
@@ -836,4 +839,140 @@ def gallows_far(w, h, seed, ten=False):
         x = r.uniform(-0.02, 0.96) * w; bw = r.uniform(30, 70); bh = r.uniform(20, 60)
         o.append(f'<rect x="{f(x)}" y="{f(h * 0.76 - bh)}" width="{f(bw)}" height="{f(bh + h * 0.3)}" fill="#1A1018" stroke="#0D0D0F" stroke-width="1.6"></rect>')
     o.append(f'<rect x="-10" y="{f(h * 0.76)}" width="{f(w + 20)}" height="{f(h * 0.3)}" fill="#120A12"></rect>')
+    return "".join(o)
+
+
+# ---- Esther 8–10 --------------------------------------------------------------------------------------------------------------
+RING_HAND = (-70, -136)
+def ring_mordecai(p, w, h, seed):
+    """The king took off his ring and gave it unto Mordecai: the king on his throne holding out the ring, Mordecai come before
+    him, Esther the queen standing by."""
+    b = h * 0.92
+    o = [hall(p, w, h, seed, n=4, floor=0.62)]
+    s = fit(b, max(h * 0.42, b - 200))
+    kk = (s * 0.95 * 195 - 10) / 124
+    ring = (f'<circle cx="{RING_HAND[0] - 10}" cy="{RING_HAND[1] - 4}" r="9" fill="none" stroke="#0D0D0F" stroke-width="6"></circle>'
+            f'<circle cx="{RING_HAND[0] - 10}" cy="{RING_HAND[1] - 4}" r="9" fill="none" stroke="#E8B830" stroke-width="3.6"></circle>'
+            f'<circle cx="{RING_HAND[0] - 10}" cy="{RING_HAND[1] - 4}" r="20" fill="#FFF4C2" opacity="0.4"></circle>')
+    o.append(seated_king(p, w * 0.78, b, kk, up=[(-22, -158), (-46, -148), RING_HAND], extra=ring)[0])
+    o.append(mordecai(p, w * 0.5, b, s, flip=True, up=[(-22, -158), (-40, -150), (-58, -150)]))
+    o.append(queen(p, w * 0.32, b, s * 0.9, ESTHER_C, flip=True))
+    for i in range(2):
+        o.append(prince(p, w * (0.06 + i * 0.1), b - (i % 2) * 8, s * 0.86, PRINCE[i + 2]))
+    return "".join(o)
+
+def going_forth(p, w, h, seed):
+    """Mordecai went forth from the presence of the king in royal apparel of blue and white and a great crown of gold, and
+    the city of Shushan shouted and was glad: Mordecai before the gate, the people with their arms raised."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFE680", "#FFF4C2"), V.rays(w * 0.5, h * 0.5, 36, 30, max(w, h), color="#FFFFFF", op=0.25),
+         kings_gate_bg(w * 0.5, h * 0.72, w * 0.56, h * 0.56, lit=True), ground(w, h, h * 0.72, "#E0C890", dy=0)]
+    s = fit(b, max(h * 0.36, b - 240))
+    o.append(mordecai(p, w * 0.5, b, s, state="royal"))
+    r = random.Random(seed)
+    for i in range(10):
+        x = w * (0.03 + i * 0.1) if i < 4 else w * (0.97 - (i - 4) * 0.07)
+        if 0.38 * w < x < 0.62 * w: continue
+        up = [(-22, -158), (-40, -196), (-34, -230)] if i % 2 == 0 else None
+        fig = (man if i % 3 else woman)(p, x, b - (i % 2) * 10, s * (0.78 - (i % 3) * 0.04), r.choice(A.HEBREW + ["#C2456A", "#5A6E8A", "#2E7DB8"]), flip=x > w * 0.5, up=up)
+        o.append(fig)
+    return "".join(o)
+
+def feast_town(p, w, h, seed, portions=False):
+    """In every province and every city a feast and a good day: a town street with a long table set outside the houses,
+    families at it; portions=True: baskets of portions carried from house to house and gifts given to the poor (Purim)."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFB04A", "#FFF0C8"), hills(w, h, h * 0.44, seed, "#A8946A", amp=10, step=80)]
+    r = random.Random(seed)
+    for i in range(6):
+        x = w * (0.0 + i * 0.17); hh = h * r.uniform(0.2, 0.32)
+        o.append(f'<rect x="{f(x)}" y="{f(h * 0.62 - hh)}" width="{f(w * 0.15)}" height="{f(hh)}" fill="{["#E0CCAA", "#D8C0A0", "#C8B090"][i % 3]}" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<rect x="{f(x + w * 0.06)}" y="{f(h * 0.62 - hh * 0.5)}" width="{f(w * 0.03)}" height="{f(hh * 0.5)}" fill="#3A2A2A" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+                 + "".join(f'<path d="M{f(x + w * 0.01 + j * w * 0.035)} {f(h * 0.62 - hh)} l {f(w * 0.017)} -8 l {f(w * 0.017)} 8" fill="#C2456A" stroke="#0D0D0F" stroke-width="1.2"></path>' for j in range(4)))
+    o.append(ground(w, h, h * 0.62, "#D8BC88", dy=0))
+    s = fit(b, max(h * 0.42, b - 210))
+    if portions:
+        for i, x in enumerate((0.12, 0.42, 0.72)):
+            fig = (woman if i % 2 else man)(p, w * x, b, s * 0.86, ["#2E7DB8", "#C2456A", "#4A6A4A"][i])
+            basket = f'<path d="M{f(w * x + 26 * s)} {f(b - 120 * s)} l {f(36 * s)} 0 l {f(-6 * s)} {f(22 * s)} l {f(-24 * s)} 0 Z" fill="#C8963E" stroke="#0D0D0F" stroke-width="1.8"></path>' + \
+                     "".join(f'<circle cx="{f(w * x + (34 + j * 10) * s)}" cy="{f(b - 124 * s)}" r="{f(5 * s)}" fill="{c}" stroke="#0D0D0F" stroke-width="1"></circle>' for j, c in enumerate(("#D7261E", "#E8C040", "#7A3A6A")))
+            o.append(fig + basket)
+        o.append(E.kneel(w * 0.92, b, s * 0.62, color="#7A6A58", skin="#A88A70", flip=True) + man(p, w * 0.84, b, s * 0.84, "#C2456A", flip=True, up=[(-22, -158), (-40, -146), (-60, -140)]))
+    else:
+        tx0, tx1 = w * 0.08, w * 0.92
+        for i in range(8):
+            o.append((man if i % 2 else woman)(p, w * (0.12 + i * 0.11), b - 30 * s, s * 0.8, r.choice(A.HEBREW + ["#C2456A", "#2E7DB8", "#E8D8B0"])))
+        o.append(f'<rect x="{f(tx0)}" y="{f(b - 60 * s)}" width="{f(tx1 - tx0)}" height="{f(14 * s)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<rect x="{f(tx0 + 6)}" y="{f(b - 46 * s)}" width="{f(tx1 - tx0 - 12)}" height="{f(46 * s)}" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="2"></rect>')
+        for i in range(9):
+            x = tx0 + (i + 0.5) * (tx1 - tx0) / 9
+            o.append([f'<ellipse cx="{f(x)}" cy="{f(b - 64 * s)}" rx="{f(12 * s)}" ry="{f(6 * s)}" fill="#D9A25A" stroke="#0D0D0F" stroke-width="1.4"></ellipse>',
+                      f'<path d="M{f(x - 6 * s)} {f(b - 80 * s)} l {f(12 * s)} 0 l {f(-3 * s)} {f(16 * s)} l {f(-6 * s)} 0 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.4"></path>',
+                      f'<circle cx="{f(x)}" cy="{f(b - 66 * s)}" r="{f(6 * s)}" fill="#7A3A6A" stroke="#0D0D0F" stroke-width="1.2"></circle>'][i % 3])
+    return "".join(o)
+
+def mordecai_great(p, w, h, seed):
+    """Mordecai great in the king's house: Mordecai in royal apparel standing next unto the king on his throne, the princes,
+    satraps and governors of the provinces bowing before them."""
+    b = h * 0.92
+    o = [hall(p, w, h, seed, n=4, floor=0.62)]
+    s = fit(b, max(h * 0.42, b - 200))
+    kk = (s * 0.95 * 195 - 10) / 124
+    o.append(seated_king(p, w * 0.16, b, kk)[0])
+    o.append(mordecai(p, w * 0.34, b, s, state="royal"))
+    for i in range(4):
+        o.append(N.prostrate(w * (0.5 + i * 0.12), b - (i % 2) * 8, s * 0.56, color=PRINCE[i], skin="#B98A6E", flip=True))
+    return "".join(o)
+
+def adar_days(w, h):
+    """The month Adar as a strip of days: the thirteenth (the day of the decree), the fourteenth (rest and feasting in the
+    villages and unwalled towns), the fifteenth (rest and feasting in Shushan)."""
+    o = [grid_bg(w, h, color="#3A2A2A", bg="#1A0E14")]
+    n = 7; x0, x1 = w * 0.04, w * 0.96; cw = (x1 - x0) / n; y0, hh = h * 0.24, h * 0.4
+    for i in range(n):
+        d = 11 + i
+        col = {13: "#FF8A6A", 14: "#FFD23F", 15: "#FFD23F"}.get(d, "#5A4A4A")
+        on = d in (13, 14, 15)
+        o.append(f'<rect x="{f(x0 + i * cw + 3)}" y="{f(y0)}" width="{f(cw - 6)}" height="{f(hh)}" fill="{col}" fill-opacity="{0.22 if on else 0.05}" stroke="{col}" stroke-width="{2 if on else 1}"></rect>'
+                 f'<text x="{f(x0 + i * cw + cw / 2)}" y="{f(y0 + hh * 0.62)}" fill="{col}" font-family="Anton, sans-serif" font-size="{f(min(cw * 0.5, hh * 0.5))}" text-anchor="middle">{d}</text>')
+    lab = {13: ("THE DAY", "#FF8A6A"), 14: ("REST · FEASTING", "#FFD23F"), 15: ("REST · FEASTING", "#FFD23F")}
+    for d, (t, c) in lab.items():
+        i = d - 11
+        o.append(label(x0 + i * cw + cw / 2, y0 + hh + 16, t, c, 7, ls=0.04))
+    o.append(label(x0 + 3.5 * cw, y0 + hh + 38, "14 · THE VILLAGES, THE UNWALLED TOWNS", "#FFD23F", 9) + label(x0 + 4.5 * cw, y0 + hh + 56, "15 · SHUSHAN", "#FFD23F", 9))
+    o.append(label(w * 0.5, y0 - 14, "THE TWELFTH MONTH · ADAR", "#C8B8A8", 10))
+    return "".join(o)
+
+def every_year(w, h):
+    """These days remembered and kept every year, throughout every generation: three year-wheels in a row, Adar's fourteenth
+    and fifteenth lit in each, and the line running on."""
+    o = [grid_bg(w, h, color="#3A2A2A", bg="#1A0E14")]
+    R = min(w * 0.13, h * 0.32)
+    cy = h * 0.5
+    o.append(f'<path d="M{f(w * 0.02)} {f(cy)} L {f(w * 0.98)} {f(cy)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="8 6"></path>'
+             f'<path d="M{f(w * 0.98)} {f(cy)} l -12 -7 l 0 14 Z" fill="#FFD23F"></path>')
+    for k in range(3):
+        cx = w * (0.17 + k * 0.29)
+        o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R)}" fill="#1A0E14" stroke="#7A6A5A" stroke-width="1.6"></circle>')
+        for i in range(12):
+            a0, a1 = math.radians(-90 + i * 30), math.radians(-90 + (i + 1) * 30)
+            on = i == 11
+            col = "#FFD23F" if on else "#5A4A4A"
+            pts = (f"M{f(cx)} {f(cy)} L {f(cx + R * math.cos(a0))} {f(cy + R * math.sin(a0))} A {f(R)} {f(R)} 0 0 1 {f(cx + R * math.cos(a1))} {f(cy + R * math.sin(a1))} Z")
+            o.append(f'<path d="{pts}" fill="{col}" fill-opacity="{0.45 if on else 0.05}" stroke="{col}" stroke-width="{1.8 if on else 0.8}"></path>')
+        o.append(label(cx, cy + R + 18, ["EVERY YEAR", "EVERY GENERATION", "THEIR SEED"][k], "#FFD23F", 9))
+    return "".join(o)
+
+def second_letter(p, w, h, seed):
+    """Esther the queen and Mordecai the Jew writing with all authority the second letter of Purim: the two at a table in
+    the hall with the letter and the book, the king's ring to seal it."""
+    b = h * 0.92
+    o = [hall(p, w, h, seed, n=3, floor=0.62)]
+    s = fit(b, max(h * 0.42, b - 210))
+    o.append(queen(p, w * 0.3, b - 10, s * 0.92, ESTHER_C) + mordecai(p, w * 0.62, b - 10, s, state="royal"))
+    tx0, tx1 = w * 0.18, w * 0.78
+    o.append(f'<rect x="{f(tx0)}" y="{f(b - 74 * s)}" width="{f(tx1 - tx0)}" height="{f(14 * s)}" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<rect x="{f(tx0 + 10)}" y="{f(b - 60 * s)}" width="{f(tx1 - tx0 - 20)}" height="{f(60 * s)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(S3.letter(w * 0.42, b - 86 * s, s * 0.6, rot=-4) + S3.letter(w * 0.56, b - 84 * s, s * 0.5, rot=6))
+    o.append(signet(w * 0.88, b - 50 * s, s * 0.4))
     return "".join(o)

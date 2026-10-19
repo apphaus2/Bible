@@ -233,6 +233,83 @@
    "w": 760,
    "h": 1080,
    "title": "28 · Behold Also, the Gallows"
+  },
+  "EST-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Days of Purim"
+  },
+  "EST-C04-D-P01-TheHouseOfHaman.dc.html": {
+   "x": 840,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · The House of Haman"
+  },
+  "EST-C04-D-P02-HowCanIEndure.dc.html": {
+   "x": 1680,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · How Can I Endure"
+  },
+  "EST-C04-D-P03-InTheKingSName.dc.html": {
+   "x": 2520,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · In the King's Name"
+  },
+  "EST-C04-D-P04-LightAndGladness.dc.html": {
+   "x": 3360,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Light and Gladness"
+  },
+  "EST-C04-E-P01-TheThirteenthDayOf.dc.html": {
+   "x": 0,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Thirteenth Day of Adar"
+  },
+  "EST-C04-E-P02-InShushanThePalace.dc.html": {
+   "x": 840,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · In Shushan the Palace"
+  },
+  "EST-C04-E-P03-InShushanThePalace.dc.html": {
+   "x": 1680,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · In Shushan the Palace"
+  },
+  "EST-C04-E-P04-FeastingAndGladnes.dc.html": {
+   "x": 2520,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Feasting and Gladness"
+  },
+  "EST-C04-E-P05-Purim.dc.html": {
+   "x": 3360,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Purim"
+  },
+  "EST-C04-F-P01-NextUntoKingAhasue.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Next unto King Ahasuerus"
   }
  },
  "order": [
@@ -267,7 +344,18 @@
   "EST-C03-E-P05-ThusShallItBeDone.dc.html",
   "EST-C03-F-P01-LetMyLifeBeGivenMe.dc.html",
   "EST-C03-F-P02-ThisWickedHaman.dc.html",
-  "EST-C03-F-P03-BeholdAlsoTheGallo.dc.html"
+  "EST-C03-F-P03-BeholdAlsoTheGallo.dc.html",
+  "EST-C04-00-Title.dc.html",
+  "EST-C04-D-P01-TheHouseOfHaman.dc.html",
+  "EST-C04-D-P02-HowCanIEndure.dc.html",
+  "EST-C04-D-P03-InTheKingSName.dc.html",
+  "EST-C04-D-P04-LightAndGladness.dc.html",
+  "EST-C04-E-P01-TheThirteenthDayOf.dc.html",
+  "EST-C04-E-P02-InShushanThePalace.dc.html",
+  "EST-C04-E-P03-InShushanThePalace.dc.html",
+  "EST-C04-E-P04-FeastingAndGladnes.dc.html",
+  "EST-C04-E-P05-Purim.dc.html",
+  "EST-C04-F-P01-NextUntoKingAhasue.dc.html"
  ],
  "notes": {
   "Main": {
@@ -297,6 +385,13 @@
    "text": "Chapter 3 · The King Could Not Sleep (Esther 5–7)",
    "x": 0,
    "y": 7500
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Days of Purim (Esther 8–10)",
+   "x": 0,
+   "y": 11600
   }
  },
  "designSystems": [],

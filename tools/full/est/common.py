@@ -88,7 +88,7 @@ SACK = ('\n<g stroke="#2A2218" stroke-width="1.6" opacity="0.55">' + "".join(f'<
         '\n<path d="M238 106 C 220 108 202 112 184 122 C 166 132 154 152 150 182 C 146 214 152 300 158 392" fill="none" stroke="#C8B89A" stroke-width="4" stroke-dasharray="2 3"></path>'
         + "".join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#C8C2BA" stroke="#5A5450" stroke-width="0.8"></circle>' for x, y, r in ((150, 40, 5), (172, 36, 4), (196, 42, 5), (128, 52, 4), (214, 54, 3.5), (182, 48, 3))))
 MORDECAI_SACK = F("adam", skin="#A89A90", shadow="#4A4448", hair="#5A5450", hl="#8A847A", beard=True, beard_color="#6A645E", scarf="#5A4E3E", brow="sorrow", tear=True, light="#9AA8C8") + SACK
-MORDECAI_ROYAL = crowned(F("adam", skin="#C98E66", shadow="#4A4A6A", hair="#4A4440", hl="#7A746A", beard=True, beard_color="#5A5450", scarf="#F3EFE6", light="#8FD0E2"), big=True)
+MORDECAI_ROYAL = crowned(F("adam", skin="#C98E66", shadow="#4A4A6A", hair="#4A4440", hl="#7A746A", beard=True, beard_color="#5A5450", scarf="#F3EFE6", light="#8FD0E2") + HEM.replace("#E8B830", "#1F5FAD"), big=True)
 HAMAN = F("adam", skin="#C47A5A", shadow="#4A1A1A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#7A1A1A", band=True, brow="scowl", light="#D7261E") + HEM
 HAMAN_GLAD = F("adam", skin="#D99A6E", shadow="#6A3A2A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#7A1A1A", band=True, laugh=True, light="#FFC14D") + HEM
 HAMAN_AFRAID = F("adam", skin="#B8A0A0", shadow="#3A2A4A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#7A1A1A", band=True, brow="sorrow", sweat=True, light="#9AA8C8") + HEM
