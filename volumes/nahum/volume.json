@@ -1,0 +1,21 @@
+{
+ "id": "nahum",
+ "order": 34,
+ "name": "Nahum",
+ "kanji": "ナホム書",
+ "thumb": "vol-nahum-",
+ "lede": "The thirty-fourth book of the Bible, in full: the burden of Nineveh, the book of the vision of Nahum the Elkoshite — Jehovah hath his way in the whirlwind and in the storm; behold, upon the mountains the feet of him that bringeth good tidings; the chariots rage in the streets, the gates of the rivers are opened; woe to the bloody city — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Burden of Nineveh",
+   "range": "Nahum 1–3",
+   "blurb": "Jehovah is a jealous God and avengeth; he hath his way in the whirlwind and in the storm, and the clouds are the dust of his feet; Jehovah is good, a stronghold in the day of trouble; behold, upon the mountains the feet of him that bringeth good tidings; he that dasheth in pieces is come up — the chariots rage in the streets, the gates of the rivers are opened, and the palace is dissolved; where is the den of the lions?; woe to the bloody city; art thou better than No-amon?; thy shepherds slumber, O king of Assyria.",
+   "prefixes": [
+    "Main.dc.html",
+    "NAM-C01-"
+   ]
+  }
+ ]
+}
