@@ -231,6 +231,24 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Job | 11 · Out of the Whirlwind | 38–39 | title + 8 (pp. 124–131) | 71/71 verses full (Jehovah in the Voice box over the whirlwind; the foundations as a blueprint; 39:30 words only) | `volumes/job/` |
 | Job | 12 · Mine Eye Seeth Thee | 40–42 | title + 10 (pp. 132–141) | 75/75 verses full (behemoth as the river-horse, leviathan as the crocodile; the latter end as a tally board) | `volumes/job/` |
 | **Job** | **complete: cover + 12 chapters** | **1–42** | **154 pages (141 numbered)** | **1,070 verses: all full** | `volumes/job/` |
+| Psalms | 1 · Blessed Is the Man | 1–12 | cover + title + 21 (pp. 1–21) | 135/135 verses full (2:6–9 and 12:5 in the Voice box) | `volumes/psalms/` |
+| Psalms | 2 · The Heavens Declare | 13–22 | title + 25 (pp. 22–46) | 161/161 verses full (Psalm 18's storm as cloud, hail and lightning) | `volumes/psalms/` |
+| Psalms | 3 · Jehovah Is My Shepherd | 23–33 | title + 25 (pp. 47–71) | 153/153 verses full (Psalm 29's voice as storm, cedars and flood) | `volumes/psalms/` |
+| Psalms | 4 · Wait for Jehovah | 34–41 | title + 26 (pp. 72–97) | 167/167 verses full | `volumes/psalms/` |
+| Psalms | 5 · As the Hart Panteth | 42–50 | title + 22 (pp. 98–119) | 136/136 verses full (the sons of Korah as Levite singers) | `volumes/psalms/` |
+| Psalms | 6 · A Clean Heart | 51–62 | title + 25 (pp. 120–144) | 148/148 verses full (60:6–8 in the Voice box over a map of the lands) | `volumes/psalms/` |
+| Psalms | 7 · Let God Arise | 63–68 | title + 18 (pp. 145–162) | 96/96 verses full (68:21–23 words over the deep) | `volumes/psalms/` |
+| Psalms | 8 · He Shall Have Dominion | 69–72 | title + 14 (pp. 163–176) | 85/85 verses full (Solomon for Psalm 72) | `volumes/psalms/` |
+| Psalms | 9 · Whom Have I in Heaven | 73–78 | title + 27 (pp. 177–203) | 165/165 verses full (Asaph; Psalm 78's slain words over the empty camp) | `volumes/psalms/` |
+| Psalms | 10 · How Amiable Are Thy Tabernacles | 79–89 | title + 32 (pp. 204–235) | 193/193 verses full (the confederate nations as a map; Heman and Ethan) | `volumes/psalms/` |
+| Psalms | 11 · Our Dwelling-place | 90–100 | title + 23 (pp. 236–258) | 135/135 verses full (Moses' face for Psalm 90) | `volumes/psalms/` |
+| Psalms | 12 · Bless Jehovah, O My Soul | 101–104 | title + 17 (pp. 259–275) | 93/93 verses full | `volumes/psalms/` |
+| Psalms | 13 · He Remembered His Covenant | 105–106 | title + 17 (pp. 276–292) | 93/93 verses full (106:37–38 words over the idols and smoke) | `volumes/psalms/` |
+| Psalms | 14 · They That Go Down to the Sea | 107–118 | title + 34 (pp. 293–326) | 199/199 verses full (110:1 and 110:4 in the Voice box) | `volumes/psalms/` |
+| Psalms | 15 · Thy Word Is a Lamp | 119 | title + 27 (pp. 327–353) | 176/176 verses full (22 sections under their letter heads) | `volumes/psalms/` |
+| Psalms | 16 · I Will Lift Up Mine Eyes | 120–137 | title + 28 (pp. 354–381) | 157/157 verses full (the Songs of Ascents; 137:7–9 words over the ruins) | `volumes/psalms/` |
+| Psalms | 17 · Praise Ye Jehovah | 138–150 | title + 29 (pp. 382–410) | 169/169 verses full (Psalm 150 on its own last page) | `volumes/psalms/` |
+| **Psalms** | **complete: cover + 17 chapters** | **1–150** | **428 pages (410 numbered)** | **2,461 verses: all full** | `volumes/psalms/` |
 | Proverbs | 1 · The Beginning of Knowledge | 1–3 | cover + title + 12 (pp. 1–12) | 90/90 verses full (the father's words beside Solomon's face; Wisdom at the gate in white and gold light; the strange woman's house with no one drawn) | `volumes/proverbs/` |
 | Proverbs | 2 · Get Wisdom | 4–6 | title + 12 (pp. 13–24) | 85/85 verses full (the strange woman never drawn, only a shut door at dusk; the ant; the six things, yea seven, as numbered signs) | `volumes/proverbs/` |
 | Proverbs | 3 · Wisdom Hath Builded Her House | 7–9 | title + 12 (pp. 25–36) | 81/81 verses full (Proverbs 7 as the lattice, the street at twilight, a far veiled figure; the seven pillars) | `volumes/proverbs/` |
@@ -253,8 +271,13 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Song of Solomon | 3 · Love Is Strong as Death | 6–8 | title + 9 (pp. 21–29) | 40/40 verses full (7:1–9 as plates of cells only; 8:6–7 a flame over the floods) | `volumes/songofsolomon/` |
 | **Song of Solomon** | **complete: cover + 3 chapters** | **1–8** | **33 pages (29 numbered)** | **117 verses: all full** | `volumes/songofsolomon/` |
 
-**Genesis through Job, and Proverbs through the Song of Solomon (twenty-one volumes), are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Proverbs is `tools/full/pro/` (11 chapters): 1–9 and 30–31 by `discourse.pack` through `pro.common`; 10–29 as saying cells, two to a row
+**Genesis through the Song of Solomon (twenty-two volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Psalms is `tools/full/psa/` (17 chapters by the five books): `psa.text` cuts what `asv.Book` drops — the superscriptions (`TITLES`), the
+book heads (`BOOKS`), Psalm 119's first letter head and each verse's poetic line breaks — straight from `ref/asv`; they are `data-label`
+heads, so the text check skips them. `psa.layout` copies `discourse.pack` with a red PSALM N head and song boxes one poetic line to a
+row; a chapter is a list of `psa.common.psalm(n, "1 tree | 4 chaff | 10 DAVID_KING", god={...})` plans (scenes from `psa.art.SCENES`,
+~120 drawings; faces from `FACES`).
+Proverbs is `tools/full/pro/` (11 chapters): 1–9 and 30–31 by `discourse.pack` through `pro.common`; 10–29 as saying cells, two to a row
 under an emblem (`pro.common.sayings`, `cellv`, `run`; ~117 emblems in `pro/emblems.py`, `pick()` chooses by the saying's words); Wisdom
 in white with a gold band in gold light (`wisdom_fig`), the strange woman only far off and veiled. Ecclesiastes is `tools/full/ecc/` (the
 Preacher is old Solomon) and the Song `tools/full/sng/` (the bride, the beloved and the daughters as faces; the likenesses only as the
@@ -269,8 +292,8 @@ Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` 
 above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
-`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Psalms,
-Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `psa`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Isaiah,
+Jeremiah–Lamentations, Ezekiel, Daniel–Amos and Obadiah–Malachi are being built in parallel worktrees (packages `isa`, `jer`, `lam`, `ezk`, `dan`, `hos`, `jol`, `amo`, `oba` … `mal`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
@@ -828,6 +851,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (Psalms, Isaiah, Jeremiah and Lamentations in progress; then Ezekiel …).
+- On through the Bible, book by book (Isaiah through Malachi in progress; then the New Testament).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.
