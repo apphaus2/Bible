@@ -1269,6 +1269,111 @@
    "w": 760,
    "h": 1080,
    "title": "168 · Hear, Ye Deaf"
+  },
+  "ISA-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Ye Are My Witnesses"
+  },
+  "ISA-C12-D-P01-FearNotForIHaveRed.dc.html": {
+   "x": 840,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · Fear Not, for I Have Redeemed Thee"
+  },
+  "ISA-C12-D-P02-YeAreMyWitnesses.dc.html": {
+   "x": 1680,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · Ye Are My Witnesses"
+  },
+  "ISA-C12-D-P03-AWayInTheSea.dc.html": {
+   "x": 2520,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · A Way in the Sea"
+  },
+  "ISA-C12-D-P04-AWayInTheSea.dc.html": {
+   "x": 3360,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · A Way in the Sea"
+  },
+  "ISA-C12-D-P05-FearNotOJacobMySer.dc.html": {
+   "x": 0,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Fear Not, O Jacob My Servant"
+  },
+  "ISA-C12-D-P06-TheyThatFashionAGr.dc.html": {
+   "x": 840,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · They That Fashion a Graven Image"
+  },
+  "ISA-C12-D-P07-TheyThatFashionAGr.dc.html": {
+   "x": 1680,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · They That Fashion a Graven Image"
+  },
+  "ISA-C12-D-P08-TheyThatFashionAGr.dc.html": {
+   "x": 2520,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · They That Fashion a Graven Image"
+  },
+  "ISA-C12-D-P09-CyrusMyShepherd.dc.html": {
+   "x": 3360,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Cyrus, My Shepherd"
+  },
+  "ISA-C12-D-P10-ToHisAnointedToCyr.dc.html": {
+   "x": 0,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · To His Anointed, to Cyrus"
+  },
+  "ISA-C12-D-P11-WoeUntoHimThatStri.dc.html": {
+   "x": 840,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Woe unto Him That Striveth with His Maker"
+  },
+  "ISA-C12-D-P12-WoeUntoHimThatStri.dc.html": {
+   "x": 1680,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Woe unto Him That Striveth with His Maker"
+  },
+  "ISA-C12-D-P13-WoeUntoHimThatStri.dc.html": {
+   "x": 2520,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Woe unto Him That Striveth with His Maker"
+  },
+  "ISA-C12-D-P14-EveryKneeShallBow.dc.html": {
+   "x": 3360,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Every Knee Shall Bow"
   }
  },
  "order": [
@@ -1451,7 +1556,22 @@
   "ISA-C11-D-P13-BeholdMyServant.dc.html",
   "ISA-C11-D-P14-SingUntoJehovahANe.dc.html",
   "ISA-C11-D-P15-SingUntoJehovahANe.dc.html",
-  "ISA-C11-D-P16-HearYeDeaf.dc.html"
+  "ISA-C11-D-P16-HearYeDeaf.dc.html",
+  "ISA-C12-00-Title.dc.html",
+  "ISA-C12-D-P01-FearNotForIHaveRed.dc.html",
+  "ISA-C12-D-P02-YeAreMyWitnesses.dc.html",
+  "ISA-C12-D-P03-AWayInTheSea.dc.html",
+  "ISA-C12-D-P04-AWayInTheSea.dc.html",
+  "ISA-C12-D-P05-FearNotOJacobMySer.dc.html",
+  "ISA-C12-D-P06-TheyThatFashionAGr.dc.html",
+  "ISA-C12-D-P07-TheyThatFashionAGr.dc.html",
+  "ISA-C12-D-P08-TheyThatFashionAGr.dc.html",
+  "ISA-C12-D-P09-CyrusMyShepherd.dc.html",
+  "ISA-C12-D-P10-ToHisAnointedToCyr.dc.html",
+  "ISA-C12-D-P11-WoeUntoHimThatStri.dc.html",
+  "ISA-C12-D-P12-WoeUntoHimThatStri.dc.html",
+  "ISA-C12-D-P13-WoeUntoHimThatStri.dc.html",
+  "ISA-C12-D-P14-EveryKneeShallBow.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1537,6 +1657,13 @@
    "text": "Chapter 11 · Comfort Ye My People (Isaiah 40–42)",
    "x": 0,
    "y": 51100
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Ye Are My Witnesses (Isaiah 43–45)",
+   "x": 0,
+   "y": 56400
   }
  },
  "designSystems": [],

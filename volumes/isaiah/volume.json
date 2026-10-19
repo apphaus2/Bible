@@ -116,6 +116,16 @@
    "prefixes": [
     "ISA-C11-"
    ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "Ye Are My Witnesses",
+   "range": "Isaiah 43–45",
+   "blurb": "Fear not, for I have redeemed thee: when thou passest through the waters, I will be with thee; ye are my witnesses, saith Jehovah; a way in the sea, and rivers in the desert; I am the first, and I am the last; the smith, the carpenter, and the tree half burned and half a god; I have blotted out, as a thick cloud, thy transgressions; Cyrus, my shepherd, mine anointed; I form the light, and create darkness; look unto me, and be ye saved, all the ends of the earth.",
+   "prefixes": [
+    "ISA-C12-"
+   ]
   }
  ]
 }

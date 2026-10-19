@@ -96,7 +96,7 @@ def night(lines, ref, **k):
     """Words over the night sky (no face, no drawing)."""
     return seg(lines, ref, tok=None, bg=NIGHT, **k)
 
-FORMULA = re.compile(r"^((?:(?:And|For|But|Therefore|Yea|Now|Moreover|Behold|Yet)[, ]+)?(?:thus|Thus) (?:saith|hath said|said) (?:the Lord,? )?Jehovah)")
+FORMULA = re.compile(r"^((?:(?:And|For|But|Therefore|Yea|Now|Moreover|Behold|Yet|now)[, ]+){0,2}(?:thus|Thus) (?:saith|hath said|said) (?:the Lord,? )?Jehovah)")
 
 def _verse_lines(c, n, kind, pre=None):
     ref = f"{c}:{n}"
