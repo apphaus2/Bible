@@ -1626,6 +1626,90 @@
    "w": 760,
    "h": 1080,
    "title": "216 · Go Ye Not into Egypt"
+  },
+  "JER-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · Into Egypt"
+  },
+  "JER-C15-D-P01-ThouSpeakestFalsel.dc.html": {
+   "x": 840,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "217 · Thou Speakest Falsely"
+  },
+  "JER-C15-D-P02-GreatStonesInTheBr.dc.html": {
+   "x": 1680,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "218 · Great Stones in the Brickwork"
+  },
+  "JER-C15-D-P03-GreatStonesInTheBr.dc.html": {
+   "x": 2520,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "219 · Great Stones in the Brickwork"
+  },
+  "JER-C15-D-P04-AllTheJewsThatDwel.dc.html": {
+   "x": 3360,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "220 · All the Jews That Dwelt in the Land of Egypt"
+  },
+  "JER-C15-D-P05-AllTheJewsThatDwel.dc.html": {
+   "x": 0,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "221 · All the Jews That Dwelt in the Land of Egypt"
+  },
+  "JER-C15-D-P06-AllTheJewsThatDwel.dc.html": {
+   "x": 840,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "222 · All the Jews That Dwelt in the Land of Egypt"
+  },
+  "JER-C15-D-P07-TheQueenOfHeaven.dc.html": {
+   "x": 1680,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "223 · The Queen of Heaven"
+  },
+  "JER-C15-D-P08-TheQueenOfHeaven.dc.html": {
+   "x": 2520,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "224 · The Queen of Heaven"
+  },
+  "JER-C15-D-P09-TheQueenOfHeaven.dc.html": {
+   "x": 3360,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "225 · The Queen of Heaven"
+  },
+  "JER-C15-D-P10-OBaruch.dc.html": {
+   "x": 0,
+   "y": 73800,
+   "w": 760,
+   "h": 1080,
+   "title": "226 · O Baruch"
+  },
+  "JER-C15-D-P11-OBaruch.dc.html": {
+   "x": 840,
+   "y": 73800,
+   "w": 760,
+   "h": 1080,
+   "title": "227 · O Baruch"
   }
  },
  "order": [
@@ -1859,7 +1943,19 @@
   "JER-C14-D-P10-PrayForUs.dc.html",
   "JER-C14-D-P11-AfterTenDays.dc.html",
   "JER-C14-D-P12-GoYeNotIntoEgypt.dc.html",
-  "JER-C14-D-P13-GoYeNotIntoEgypt.dc.html"
+  "JER-C14-D-P13-GoYeNotIntoEgypt.dc.html",
+  "JER-C15-00-Title.dc.html",
+  "JER-C15-D-P01-ThouSpeakestFalsel.dc.html",
+  "JER-C15-D-P02-GreatStonesInTheBr.dc.html",
+  "JER-C15-D-P03-GreatStonesInTheBr.dc.html",
+  "JER-C15-D-P04-AllTheJewsThatDwel.dc.html",
+  "JER-C15-D-P05-AllTheJewsThatDwel.dc.html",
+  "JER-C15-D-P06-AllTheJewsThatDwel.dc.html",
+  "JER-C15-D-P07-TheQueenOfHeaven.dc.html",
+  "JER-C15-D-P08-TheQueenOfHeaven.dc.html",
+  "JER-C15-D-P09-TheQueenOfHeaven.dc.html",
+  "JER-C15-D-P10-OBaruch.dc.html",
+  "JER-C15-D-P11-OBaruch.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1966,6 +2062,13 @@
    "text": "Chapter 14 · Gedaliah (Jeremiah 40–42)",
    "x": 0,
    "y": 67000
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · Into Egypt (Jeremiah 43–45)",
+   "x": 0,
+   "y": 71100
   }
  },
  "designSystems": [],

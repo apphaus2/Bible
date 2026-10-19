@@ -641,7 +641,7 @@ ARNON = [(36.2, 31.5), (35.9, 31.45), (35.58, 31.47)]
 RED = [(32.55, 29.95), (32.7, 29.9), (33.6, 28.3), (34.25, 27.9), (34.5, 28.4), (34.9, 29.5), (35.05, 29.5), (34.7, 28.1), (34.6, 27.6), (36.6, 24.5), (35.6, 23.8), (33.9, 26.0), (33.6, 27.4), (32.6, 29.5)]
 GULF = [(47.9, 30.1), (48.6, 29.9), (50.6, 29.2), (50.6, 24.0), (49.2, 24.0), (48.6, 27.6), (47.9, 29.4)]
 
-def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), lit="#D7261E", title=None, dead_sea=True, size=10):
+def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), lit="#D7261E", title=None, dead_sea=True, size=10, under=("MIGDOL", "EKRON", "RABBAH", "BUZ", "SIDON", "BETH-LEHEM", "ANATHOTH", "DAMASCUS")):
     """A technical map of the nations round about Judah: the Great Sea, the Nile, the Euphrates and the Tigris, the Jordan; each
     name in places marked (hi in red), arrows = [(from, to)] between named places; box = (lon0, lon1, lat0, lat1) to zoom."""
     x0, x1, y0, y1 = box
@@ -661,7 +661,7 @@ def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), l
     for nm in places:
         x, y = P(*PLACES[nm])
         c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2")
-        o.append(node(x, y, nm, c, r=5 if nm in hi else 3.5, dy=-9, size=size))
+        o.append(node(x, y, nm, c, r=5 if nm in hi else 3.5, dy=18 if nm in under else -9, size=size))
     if title: o.append(label(w - 12, h - 14, title, "#8FD0E2", 9, anchor="end"))
     return "".join(o)
 

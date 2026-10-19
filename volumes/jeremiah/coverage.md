@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1051 verses — 1051 full, 0 partial, 0 omitted.
+**So far:** 1099 verses — 1099 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Almond Rod (Jeremiah 1–3)
 
@@ -85,5 +85,11 @@ Every verse is on the page in full.
 ## Chapter 14 · Gedaliah (Jeremiah 40–42)
 
 56 verses: 56 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 15 · Into Egypt (Jeremiah 43–45)
+
+48 verses: 48 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

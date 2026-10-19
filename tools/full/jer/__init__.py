@@ -56,5 +56,7 @@ META = {
      "blurb": "Thou art falling away to the Chaldeans — it is false; the dungeon-house; is there any word from Jehovah? There is; the daily loaf until all the bread was spent; the dungeon of Malchijah, no water but mire; Ebed-melech the Ethiopian and the rags and worn-out garments let down by cords; I will ask thee a thing, hide nothing from me; and in the eleventh year of Zedekiah a breach was made in the city."},
     {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Gedaliah", "range": "Jeremiah 40–42", "bible_chapters": [40, 41, 42],
      "blurb": "The chains loosed at Ramah — behold, all the land is before thee; Gedaliah the governor at Mizpah: fear not to serve the Chaldeans; wine and summer fruits gathered very much; Ishmael the son of Nethaniah at table in Mizpah, and the evil that he did; the captives turned back at the great waters of Gibeon; and the remnant before the prophet: pray for us — go ye not into Egypt."},
+    {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "Into Egypt", "range": "Jeremiah 43–45", "bible_chapters": [43, 44, 45],
+     "blurb": "Thou speakest falsely; the remnant of Judah carried into Egypt, unto Tahpanhes; great stones hid in the brickwork at the entry of Pharaoh's house, where the king of Babylon shall spread his royal pavilion; the women of Pathros and the queen of heaven — we will not hearken unto thee; the sign of Pharaoh Hophra; and to Baruch: seekest thou great things for thyself? seek them not."},
   ],
 }
