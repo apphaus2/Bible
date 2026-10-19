@@ -96,6 +96,16 @@
    "prefixes": [
     "PRO-C09-"
    ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "Bold as a Lion",
+   "range": "Proverbs 28–29",
+   "blurb": "The wicked flee when no man pursueth, but the righteous are bold as a lion; better is the poor that walketh in his integrity; he that tilleth his land shall have plenty of bread; the king by justice establisheth the land; where there is no vision, the people cast off restraint; the fear of man bringeth a snare, but whoso putteth his trust in Jehovah shall be safe.",
+   "prefixes": [
+    "PRO-C10-"
+   ]
   }
  ]
 }

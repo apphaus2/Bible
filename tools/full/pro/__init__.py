@@ -41,5 +41,7 @@ META = {
      "blurb": "A good name is rather to be chosen than great riches; train up a child in the way he should go; incline thine ear, and hear the words of the wise; remove not the ancient landmark; riches make themselves wings like an eagle; who hath woe? — look not thou upon the wine when it is red; through wisdom is a house builded; a righteous man falleth seven times, and riseth up again; I went by the field of the sluggard."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Apples of Gold", "range": "Proverbs 25–27", "bible_chapters": [25, 26, 27],
      "blurb": "These also are proverbs of Solomon, which the men of Hezekiah king of Judah copied out: a word fitly spoken is like apples of gold in network of silver; as cold waters to a thirsty soul; as a dog that returneth to his vomit; as the door turneth upon its hinges, so doth the sluggard upon his bed; iron sharpeneth iron; be thou diligent to know the state of thy flocks."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Bold as a Lion", "range": "Proverbs 28–29", "bible_chapters": [28, 29],
+     "blurb": "The wicked flee when no man pursueth, but the righteous are bold as a lion; better is the poor that walketh in his integrity; he that tilleth his land shall have plenty of bread; the king by justice establisheth the land; where there is no vision, the people cast off restraint; the fear of man bringeth a snare, but whoso putteth his trust in Jehovah shall be safe."},
   ],
 }
