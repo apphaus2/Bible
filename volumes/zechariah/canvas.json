@@ -191,6 +191,90 @@
    "w": 760,
    "h": 1080,
    "title": "23 · Joy and Gladness"
+  },
+  "ZEC-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Thy King Cometh"
+  },
+  "ZEC-C03-D-P01-TheBurdenOfTheWord.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · The Burden of the Word of Jehovah"
+  },
+  "ZEC-C03-D-P02-TheBurdenOfTheWord.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · The Burden of the Word of Jehovah"
+  },
+  "ZEC-C03-D-P03-PrisonersOfHope.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Prisoners of Hope"
+  },
+  "ZEC-C03-D-P04-PrisonersOfHope.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Prisoners of Hope"
+  },
+  "ZEC-C03-E-P01-AskYeOfJehovahRain.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Ask Ye of Jehovah Rain"
+  },
+  "ZEC-C03-E-P02-AskYeOfJehovahRain.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Ask Ye of Jehovah Rain"
+  },
+  "ZEC-C03-E-P03-IWillHissForThem.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · I Will Hiss for Them"
+  },
+  "ZEC-C03-F-P01-TheFlockOfSlaughte.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Flock of Slaughter"
+  },
+  "ZEC-C03-F-P02-TheFlockOfSlaughte.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Flock of Slaughter"
+  },
+  "ZEC-C03-F-P03-ThirtyPiecesOfSilv.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Thirty Pieces of Silver"
+  },
+  "ZEC-C03-F-P04-TheWorthlessShephe.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Worthless Shepherd"
   }
  },
  "order": [
@@ -219,7 +303,19 @@
   "ZEC-C02-G-P01-TheCityOfTruth.dc.html",
   "ZEC-C02-G-P02-LetYourHandsBeStro.dc.html",
   "ZEC-C02-G-P03-LetYourHandsBeStro.dc.html",
-  "ZEC-C02-G-P04-JoyAndGladness.dc.html"
+  "ZEC-C02-G-P04-JoyAndGladness.dc.html",
+  "ZEC-C03-00-Title.dc.html",
+  "ZEC-C03-D-P01-TheBurdenOfTheWord.dc.html",
+  "ZEC-C03-D-P02-TheBurdenOfTheWord.dc.html",
+  "ZEC-C03-D-P03-PrisonersOfHope.dc.html",
+  "ZEC-C03-D-P04-PrisonersOfHope.dc.html",
+  "ZEC-C03-E-P01-AskYeOfJehovahRain.dc.html",
+  "ZEC-C03-E-P02-AskYeOfJehovahRain.dc.html",
+  "ZEC-C03-E-P03-IWillHissForThem.dc.html",
+  "ZEC-C03-F-P01-TheFlockOfSlaughte.dc.html",
+  "ZEC-C03-F-P02-TheFlockOfSlaughte.dc.html",
+  "ZEC-C03-F-P03-ThirtyPiecesOfSilv.dc.html",
+  "ZEC-C03-F-P04-TheWorthlessShephe.dc.html"
  ],
  "notes": {
   "Main": {
@@ -242,6 +338,13 @@
    "text": "Chapter 2 · The Four Chariots (Zechariah 5–8)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Thy King Cometh (Zechariah 9–11)",
+   "x": 0,
+   "y": 9900
   }
  },
  "designSystems": [],
