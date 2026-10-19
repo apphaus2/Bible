@@ -61,9 +61,10 @@ ZION = F("eve", skin="#C98E66", shadow="#3A2A4A", hair="#1A1210", scarf="#3A4A7A
 ZION_JOY = F("eve", skin="#D9A27A", shadow="#6A4A4A", hair="#1A1210", scarf="#3A4A7A", band=True, light="#FFE680")
 BABYLON_Q = F("eve", skin="#D9A27A", shadow="#5A2A3A", hair="#0D0D0F", band=True, kohl=True, collar=True, brow="scowl", light="#D7261E")
 KING_BABYLON = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#2A4A6A", band=True, brow="scowl", light="#D7261E")
+KING_ASSYRIA = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#8A1A1A", band=True, brow="scowl", light="#D7261E")
 HEZEKIAH_JOY = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#1F3A7A", band=True, light="#FFF4C2")
 MOOD_BG = {ISAIAH: GOLDEN, ISAIAH_STERN: RED, ISAIAH_GRIEF: COLD, ISAIAH_AWE: GOLDEN, ISAIAH_JOY: GOLDEN, WATCHMAN: COLD, ZION: COLD, ZION_JOY: GOLDEN,
-           BABYLON_Q: RED, KING_BABYLON: RED, RABSHAKEH: RED, HEZEKIAH_GRIEF: COLD, HEZEKIAH_SICK: COLD, SHEBNA: RED, AHAZ: RED}
+           BABYLON_Q: RED, KING_BABYLON: RED, RABSHAKEH: RED, HEZEKIAH_GRIEF: COLD, HEZEKIAH_SICK: COLD, SHEBNA: RED, AHAZ: RED, KING_ASSYRIA: RED}
 
 # ---- segments ----------------------------------------------------------------------------------------------------------
 def face(lines, ref, tok, bg=None, **k): return seg(lines, ref, tok=tok, bg=bg or MOOD_BG.get(tok, GOLDEN), **k)
@@ -95,7 +96,7 @@ def night(lines, ref, **k):
     """Words over the night sky (no face, no drawing)."""
     return seg(lines, ref, tok=None, bg=NIGHT, **k)
 
-FORMULA = re.compile(r"^((?:(?:And|For|But|Therefore|Yea|Now|Moreover|Behold|Yet)[, ]+)?(?:thus|Thus) (?:saith|hath said|said) (?:the Lord )?Jehovah)")
+FORMULA = re.compile(r"^((?:(?:And|For|But|Therefore|Yea|Now|Moreover|Behold|Yet)[, ]+)?(?:thus|Thus) (?:saith|hath said|said) (?:the Lord,? )?Jehovah)")
 
 def _verse_lines(c, n, kind, pre=None):
     ref = f"{c}:{n}"

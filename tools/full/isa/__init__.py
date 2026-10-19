@@ -30,5 +30,7 @@ META = {
      "blurb": "Hear, O heavens, and give ear, O earth: the ox knoweth his owner, but Israel doth not know; come now, and let us reason together — though your sins be as scarlet, they shall be as white as snow; the mountain of Jehovah's house, and swords beaten into plowshares; the day of Jehovah upon all that is lifted up; the daughters of Zion; and the song of the vineyard that brought forth wild grapes."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Holy, Holy, Holy", "range": "Isaiah 6–9", "bible_chapters": [6, 7, 8, 9],
      "blurb": "In the year that king Uzziah died: the Lord upon a throne, high and lifted up, and the seraphim crying holy, holy, holy; woe is me; the live coal; here am I, send me; then Ahaz at the conduit of the upper pool — ask thee a sign; behold, a virgin shall conceive, and shall call his name Immanuel; the River to the neck; the people that walked in darkness have seen a great light; unto us a child is born."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Root of Jesse", "range": "Isaiah 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "Ho Assyrian, the rod of mine anger — shall the axe boast itself against him that heweth therewith?; a remnant shall return; he is come to Aiath, he halteth at Nob; then a shoot out of the stock of Jesse: the wolf shall dwell with the lamb, and a little child shall lead them; an ensign for the nations; and the song of that day — with joy shall ye draw water out of the wells of salvation."},
   ],
 }

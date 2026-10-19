@@ -44,7 +44,7 @@ def stump(w, h, seed, shoot=False, waste=True):
             x = w * (0.08 + i * 0.2) + r.uniform(-20, 20); y = h * 0.58
             o.append(f'<path d="M{f(x - 18)} {f(y)} L {f(x - 18)} {f(y - 16)} L {f(x - 4)} {f(y - 10)} L {f(x + 4)} {f(y - 20)} L {f(x + 18)} {f(y - 12)} L {f(x + 18)} {f(y)} Z" fill="#5A4A4A" stroke="#0D0D0F" stroke-width="1.4"></path>')
     o.append(ground(w, h, h * 0.7, "#A89068" if waste else "#8AA05A", dy=0))
-    s = min(1.3, h / 230); cx, b = w * 0.5, h * 0.9
+    s = min(2.2, h / 230); cx, b = w * 0.5, h * 0.9
     o.append(f'<path d="M{f(cx - 80 * s)} {f(b)} C {f(cx - 60 * s)} {f(b - 10 * s)} {f(cx - 50 * s)} {f(b - 40 * s)} {f(cx - 46 * s)} {f(b - 70 * s)} L {f(cx + 46 * s)} {f(b - 70 * s)} C {f(cx + 50 * s)} {f(b - 40 * s)} {f(cx + 60 * s)} {f(b - 10 * s)} {f(cx + 84 * s)} {f(b)} Z" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2.6"></path>'
              f'<ellipse cx="{f(cx)}" cy="{f(b - 70 * s)}" rx="{f(46 * s)}" ry="{f(12 * s)}" fill="#C8A070" stroke="#0D0D0F" stroke-width="2.4"></ellipse>'
              + "".join(f'<ellipse cx="{f(cx)}" cy="{f(b - 70 * s)}" rx="{f(46 * s * k / 5)}" ry="{f(12 * s * k / 5)}" fill="none" stroke="#8A6A3A" stroke-width="1.2"></ellipse>' for k in range(1, 5)))

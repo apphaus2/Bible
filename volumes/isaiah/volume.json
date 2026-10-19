@@ -26,6 +26,16 @@
    "prefixes": [
     "ISA-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Root of Jesse",
+   "range": "Isaiah 10–12",
+   "blurb": "Ho Assyrian, the rod of mine anger — shall the axe boast itself against him that heweth therewith?; a remnant shall return; he is come to Aiath, he halteth at Nob; then a shoot out of the stock of Jesse: the wolf shall dwell with the lamb, and a little child shall lead them; an ensign for the nations; and the song of that day — with joy shall ye draw water out of the wells of salvation.",
+   "prefixes": [
+    "ISA-C03-"
+   ]
   }
  ]
 }

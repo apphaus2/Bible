@@ -289,6 +289,90 @@
    "w": 760,
    "h": 1080,
    "title": "37 · His Hand Is Stretched Out Still"
+  },
+  "ISA-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Root of Jesse"
+  },
+  "ISA-C03-D-P01-WoeUntoThemThatDec.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Woe unto Them That Decree"
+  },
+  "ISA-C03-D-P02-OAssyrianTheRodOfM.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · O Assyrian, the Rod of Mine Anger"
+  },
+  "ISA-C03-D-P03-OAssyrianTheRodOfM.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · O Assyrian, the Rod of Mine Anger"
+  },
+  "ISA-C03-D-P04-ARemnantShallRetur.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · A Remnant Shall Return"
+  },
+  "ISA-C03-D-P05-ARemnantShallRetur.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · A Remnant Shall Return"
+  },
+  "ISA-C03-D-P06-HeIsComeToAiath.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · He Is Come to Aiath"
+  },
+  "ISA-C03-D-P07-AShootOutOfTheStoc.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · A Shoot out of the Stock of Jesse"
+  },
+  "ISA-C03-D-P08-AnEnsignForTheNati.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · An Ensign for the Nations"
+  },
+  "ISA-C03-D-P09-AnEnsignForTheNati.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · An Ensign for the Nations"
+  },
+  "ISA-C03-D-P10-AnEnsignForTheNati.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · An Ensign for the Nations"
+  },
+  "ISA-C03-D-P11-TheWellsOfSalvatio.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Wells of Salvation"
   }
  },
  "order": [
@@ -331,7 +415,19 @@
   "ISA-C02-D-P14-UntoUsAChildIsBorn.dc.html",
   "ISA-C02-D-P15-HisHandIsStretched.dc.html",
   "ISA-C02-D-P16-HisHandIsStretched.dc.html",
-  "ISA-C02-D-P17-HisHandIsStretched.dc.html"
+  "ISA-C02-D-P17-HisHandIsStretched.dc.html",
+  "ISA-C03-00-Title.dc.html",
+  "ISA-C03-D-P01-WoeUntoThemThatDec.dc.html",
+  "ISA-C03-D-P02-OAssyrianTheRodOfM.dc.html",
+  "ISA-C03-D-P03-OAssyrianTheRodOfM.dc.html",
+  "ISA-C03-D-P04-ARemnantShallRetur.dc.html",
+  "ISA-C03-D-P05-ARemnantShallRetur.dc.html",
+  "ISA-C03-D-P06-HeIsComeToAiath.dc.html",
+  "ISA-C03-D-P07-AShootOutOfTheStoc.dc.html",
+  "ISA-C03-D-P08-AnEnsignForTheNati.dc.html",
+  "ISA-C03-D-P09-AnEnsignForTheNati.dc.html",
+  "ISA-C03-D-P10-AnEnsignForTheNati.dc.html",
+  "ISA-C03-D-P11-TheWellsOfSalvatio.dc.html"
  ],
  "notes": {
   "Main": {
@@ -354,6 +450,13 @@
    "text": "Chapter 2 · Holy, Holy, Holy (Isaiah 6–9)",
    "x": 0,
    "y": 8200
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Root of Jesse (Isaiah 10–12)",
+   "x": 0,
+   "y": 13500
   }
  },
  "designSystems": [],
