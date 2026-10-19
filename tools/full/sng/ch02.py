@@ -38,7 +38,7 @@ PAGE = [[face("3:1-2", BRIDE_NIGHT, bg=COLD, head="By Night on My Bed", stamp=3)
          drawn("3:6-8", lambda w, h: K.litter("lt2", w, h, 204), "#E8A06A", head="The Litter of Solomon")],
         [drawn("3:9-10", lambda w, h: K.palanquin(w, h), "#0B1A2E"),
          drawn("3:11", lambda w, h: K.crowned("cr2", w, h, 205), "#8FD0E2")],
-        [drawn("4:1-2", lambda w, h: K.likeness(w, h, ["dove_veil", "gilead", "ewes"]), "#1A1430", head="Thou Art Fair, My Love", stamp=4),
+        [drawn("4:1-2", lambda w, h: K.plate(w, h, [(K.CELL[k], "") for k in ("dove_veil", "gilead", "ewes")] + [("", "")]), "#1A1430", head="Thou Art Fair, My Love", stamp=4),
          drawn("4:3-5", lambda w, h: K.likeness(w, h, ["scarlet", "tower", "fawns"]), "#1A1430")],
         [drawn("4:6-7", lambda w, h: K.myrrh_hill(w, h, 206), "#5A4A7A"),
          drawn("4:8", lambda w, h: K.lebanon_peaks(w, h, 207), "#8FB8D8")],
