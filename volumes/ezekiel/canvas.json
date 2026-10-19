@@ -751,6 +751,111 @@
    "w": 760,
    "h": 1080,
    "title": "98 · Concerning the Children of Ammon"
+  },
+  "EZK-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Oholah and Oholibah"
+  },
+  "EZK-C08-D-P01-TheBloodyCity.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Bloody City"
+  },
+  "EZK-C08-D-P02-TheBloodyCity.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Bloody City"
+  },
+  "EZK-C08-D-P03-TheBloodyCity.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Bloody City"
+  },
+  "EZK-C08-D-P04-DrossInTheFurnace.dc.html": {
+   "x": 3360,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Dross in the Furnace"
+  },
+  "EZK-C08-D-P05-ALandNotCleansed.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · A Land Not Cleansed"
+  },
+  "EZK-C08-D-P06-ISoughtForAMan.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · I Sought for a Man"
+  },
+  "EZK-C08-D-P07-TwoWomenTheDaughte.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Two Women, the Daughters of One Mother"
+  },
+  "EZK-C08-D-P08-HerSisterOholibah.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Her Sister Oholibah"
+  },
+  "EZK-C08-D-P09-HerSisterOholibah.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Her Sister Oholibah"
+  },
+  "EZK-C08-D-P10-ThereforeOOholibah.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Therefore, O Oholibah"
+  },
+  "EZK-C08-D-P11-ThySisterSCup.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Thy Sister's Cup"
+  },
+  "EZK-C08-D-P12-WiltThouJudgeOhola.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Wilt Thou Judge Oholah and Oholibah?"
+  },
+  "EZK-C08-D-P13-WiltThouJudgeOhola.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Wilt Thou Judge Oholah and Oholibah?"
+  },
+  "EZK-C08-D-P14-RighteousMenShallJ.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Righteous Men Shall Judge Them"
   }
  },
  "order": [
@@ -859,7 +964,22 @@
   "EZK-C07-D-P13-ASwordASword.dc.html",
   "EZK-C07-D-P14-ThePartingOfTheWay.dc.html",
   "EZK-C07-D-P15-ThePartingOfTheWay.dc.html",
-  "EZK-C07-D-P16-ConcerningTheChild.dc.html"
+  "EZK-C07-D-P16-ConcerningTheChild.dc.html",
+  "EZK-C08-00-Title.dc.html",
+  "EZK-C08-D-P01-TheBloodyCity.dc.html",
+  "EZK-C08-D-P02-TheBloodyCity.dc.html",
+  "EZK-C08-D-P03-TheBloodyCity.dc.html",
+  "EZK-C08-D-P04-DrossInTheFurnace.dc.html",
+  "EZK-C08-D-P05-ALandNotCleansed.dc.html",
+  "EZK-C08-D-P06-ISoughtForAMan.dc.html",
+  "EZK-C08-D-P07-TwoWomenTheDaughte.dc.html",
+  "EZK-C08-D-P08-HerSisterOholibah.dc.html",
+  "EZK-C08-D-P09-HerSisterOholibah.dc.html",
+  "EZK-C08-D-P10-ThereforeOOholibah.dc.html",
+  "EZK-C08-D-P11-ThySisterSCup.dc.html",
+  "EZK-C08-D-P12-WiltThouJudgeOhola.dc.html",
+  "EZK-C08-D-P13-WiltThouJudgeOhola.dc.html",
+  "EZK-C08-D-P14-RighteousMenShallJ.dc.html"
  ],
  "notes": {
   "Main": {
@@ -917,6 +1037,13 @@
    "text": "Chapter 7 · A Sword, a Sword (Ezekiel 20–21)",
    "x": 0,
    "y": 29900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Oholah and Oholibah (Ezekiel 22–23)",
+   "x": 0,
+   "y": 35200
   }
  },
  "designSystems": [],
