@@ -296,6 +296,104 @@
    "w": 760,
    "h": 1080,
    "title": "36 · The Whole Assembly Together"
+  },
+  "NEH-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Book of the Law"
+  },
+  "NEH-C05-D-P01-EzraTheScribe.dc.html": {
+   "x": 840,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Ezra the Scribe"
+  },
+  "NEH-C05-D-P02-EzraTheScribe.dc.html": {
+   "x": 1680,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Ezra the Scribe"
+  },
+  "NEH-C05-D-P03-TheJoyOfJehovah.dc.html": {
+   "x": 2520,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Joy of Jehovah"
+  },
+  "NEH-C05-D-P04-Booths.dc.html": {
+   "x": 3360,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Booths"
+  },
+  "NEH-C05-D-P05-Booths.dc.html": {
+   "x": 0,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Booths"
+  },
+  "NEH-C05-E-P01-WithFastingAndSack.dc.html": {
+   "x": 840,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · With Fasting and Sackcloth"
+  },
+  "NEH-C05-E-P02-ThouArtJehovah.dc.html": {
+   "x": 1680,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Thou Art Jehovah"
+  },
+  "NEH-C05-E-P03-ThouArtJehovah.dc.html": {
+   "x": 2520,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Thou Art Jehovah"
+  },
+  "NEH-C05-E-P04-AGodReadyToPardon.dc.html": {
+   "x": 3360,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · A God Ready to Pardon"
+  },
+  "NEH-C05-E-P05-AGodReadyToPardon.dc.html": {
+   "x": 0,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · A God Ready to Pardon"
+  },
+  "NEH-C05-E-P06-AGodReadyToPardon.dc.html": {
+   "x": 840,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · A God Ready to Pardon"
+  },
+  "NEH-C05-E-P07-AGodReadyToPardon.dc.html": {
+   "x": 1680,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · A God Ready to Pardon"
+  },
+  "NEH-C05-E-P08-NowThereforeOurGod.dc.html": {
+   "x": 2520,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Now Therefore, Our God"
   }
  },
  "order": [
@@ -339,7 +437,21 @@
   "NEH-C04-E-P03-ThePriestsAndTheLe.dc.html",
   "NEH-C04-E-P04-TheNethinim.dc.html",
   "NEH-C04-F-P01-TheirRegisterWasNo.dc.html",
-  "NEH-C04-F-P02-TheWholeAssemblyTo.dc.html"
+  "NEH-C04-F-P02-TheWholeAssemblyTo.dc.html",
+  "NEH-C05-00-Title.dc.html",
+  "NEH-C05-D-P01-EzraTheScribe.dc.html",
+  "NEH-C05-D-P02-EzraTheScribe.dc.html",
+  "NEH-C05-D-P03-TheJoyOfJehovah.dc.html",
+  "NEH-C05-D-P04-Booths.dc.html",
+  "NEH-C05-D-P05-Booths.dc.html",
+  "NEH-C05-E-P01-WithFastingAndSack.dc.html",
+  "NEH-C05-E-P02-ThouArtJehovah.dc.html",
+  "NEH-C05-E-P03-ThouArtJehovah.dc.html",
+  "NEH-C05-E-P04-AGodReadyToPardon.dc.html",
+  "NEH-C05-E-P05-AGodReadyToPardon.dc.html",
+  "NEH-C05-E-P06-AGodReadyToPardon.dc.html",
+  "NEH-C05-E-P07-AGodReadyToPardon.dc.html",
+  "NEH-C05-E-P08-NowThereforeOurGod.dc.html"
  ],
  "notes": {
   "Main": {
@@ -376,6 +488,13 @@
    "text": "Chapter 4 · The Genealogy of the Return (Nehemiah 7)",
    "x": 0,
    "y": 11600
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Book of the Law (Nehemiah 8–9)",
+   "x": 0,
+   "y": 14500
   }
  },
  "designSystems": [],

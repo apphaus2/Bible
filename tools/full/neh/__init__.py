@@ -29,5 +29,7 @@ META = {
      "blurb": "A great cry of the people against their brethren — we are mortgaging our fields; ye exact usury, every one of his brother; Nehemiah shakes out his lap, and all the assembly said, Amen; then the plain of Ono — I am doing a great work, so that I cannot come down; the open letter; Shemaiah shut up — should such a man as I flee?; and the wall finished in fifty and two days."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Genealogy of the Return", "range": "Nehemiah 7", "bible_chapters": [7],
      "blurb": "The doors set up, and the gates not opened until the sun be hot; the city wide and large, but the people few therein; the book of the genealogy of them that came up at the first: the children of Parosh, two thousand a hundred and seventy and two, family by family and city by city; the priests, the Levites, the singers, the porters and the Nethinim; and the whole assembly together, forty and two thousand three hundred and threescore."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Book of the Law", "range": "Nehemiah 8–9", "bible_chapters": [8, 9],
+     "blurb": "All the people gathered as one man before the water gate; Ezra the scribe upon a pulpit of wood, reading from early morning until midday — Amen, Amen; the Levites gave the sense; this day is holy unto Jehovah, for the joy of Jehovah is your strength; booths upon every roof; then fasting and sackcloth, and the Levites' prayer: thou art Jehovah, even thou alone — and yet for all this we make a sure covenant."},
   ],
 }

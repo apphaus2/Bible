@@ -627,3 +627,232 @@ def villages(p, w, h, seed):
         x = w * (0.08 + i * 0.2)
         o.append(man(p, x, b - (i % 2) * 5, s * 0.8, ("#5A4A3A", "#3A4A6A", "#6A3A2A", "#4A5A3A", "#5A3A5A")[i]) if i % 2 == 0 else woman(p, x, b - 5, s * 0.78, ("#C2456A", "#2E6B8A")[i // 2 % 2]))
     return "".join(o)
+
+# ---- Nehemiah 8–9 -------------------------------------------------------------------------------------------------------
+EZRA_C = "#2A2A6A"
+
+def ezra_fig(p, x, y, s, flip=False, up=None):
+    """Ezra the priest the scribe at a distance: a white robe, the indigo headcloth with a gold band, white beard."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth="#F3EFE6", kind="Robe", sw=3, flip=flip, up=up,
+                     extra=A.headcloth(EZRA_C, cord="#E8B830") + A.WHITE_BEARD)
+
+def book_open(x, y, s):
+    """An open book of the law held up: two pages with ruled lines."""
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})"><path d="M-30 -10 L 0 -4 L 30 -10 L 30 12 L 0 18 L -30 12 Z" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="2"></path>'
+            '<path d="M0 -4 L 0 18" stroke="#0D0D0F" stroke-width="1.6"></path>'
+            + "".join(f'<path d="M{-26 + k * 30} {-2 + j * 5} L {-6 + k * 30} {j * 5}" stroke="#8A6A4A" stroke-width="1.2"></path>' for k in (0, 1) for j in range(3)) + '</g>')
+
+RIGHT8 = ["MATTITHIAH", "SHEMA", "ANAIAH", "URIAH", "HILKIAH", "MAASEIAH"]
+LEFT8 = ["PEDAIAH", "MISHAEL", "MALCHIJAH", "HASHUM", "HASHBADDANAH", "ZECHARIAH", "MESHULLAM"]
+
+def pulpit(p, w, h, seed, names=False, crowd=True, read=True):
+    """Ezra upon the pulpit of wood which they had made for the purpose, before the broad place at the water gate, the book
+    open, six men beside him on his right hand and seven on his left (names=True: their names beside them), the people
+    standing."""
+    b = h * 0.96
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFE6B0", "#F3E8C8"), J.jericho(-10, w + 10, h * 0.16, h * 0.4, seed, color=STONE, towers=2, houses=False),
+         S4b.gatehouse(w * 0.5, h * 0.4, w * 0.2, h * 0.3), ground(w, h, h * 0.4, "#D8C8A0", dy=0)]
+    pw, ph_ = w * 0.3, h * 0.14                                 # the pulpit: a broad raised platform of wood
+    px, py = w * 0.5, h * 0.66
+    o.append(f'<rect x="{f(px - pw)}" y="{f(py)}" width="{f(pw * 2)}" height="{f(ph_)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             + "".join(f'<path d="M{f(px - pw)} {f(py + ph_ * k / 3)} L {f(px + pw)} {f(py + ph_ * k / 3)}" stroke="#5A3A1E" stroke-width="1.6"></path>' for k in range(1, 3))
+             + f'<rect x="{f(px - pw * 1.03)}" y="{f(py - 6)}" width="{f(pw * 2.06)}" height="8" fill="#B5793A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    s = fit(py, py - h * 0.42)
+    up = [(22, -158), (40, -186), (44, -214)] if read else None
+    o.append(ezra_fig(p, px, py, s, up=up))
+    if read: o.append(book_open(px + 44 * s, py - 222 * s, s * 0.9))
+    k = s * 0.66
+    for i in range(6):                                          # Ezra's right hand is the viewer's left
+        o.append(man(p, px - pw * 0.24 - i * pw * 0.13, py, k, ("#3A4A6A", "#5A4A3A", "#4A5A3A", "#6A3A2A", "#3A3A5A", "#5A5A3A")[i], flip=True))
+    for i in range(7):
+        o.append(man(p, px + pw * 0.24 + i * pw * 0.115, py, k, ("#5A3A5A", "#3A5A5A", "#6A5A3A", "#3A4A6A", "#5A4A3A", "#4A3A5A", "#6A4A3A")[i]))
+    if names:
+        for i, nm in enumerate(RIGHT8): o.append(label(px - pw * 0.24 - i * pw * 0.13, py + ph_ * (0.42 + (i % 2) * 0.36), nm, GOLD, 7.5, ls=0.04))
+        for i, nm in enumerate(LEFT8): o.append(label(px + pw * 0.24 + i * pw * 0.115, py + ph_ * (0.42 + (i % 2) * 0.36), nm, GOLD, 7.5, ls=0.04))
+    if crowd:
+        o.append(crowd_at(p, w, h, seed, w * 0.0, w * 0.2, h * 0.78, b, 6, s * 0.7, s * 1.0))
+        o.append(crowd_at(p, w, h, seed + 1, w * 0.8, w * 1.0, h * 0.78, b, 6, s * 0.7, s * 1.0, flip=True))
+    return "".join(o)
+
+def amen(p, w, h, seed):
+    """All the people answered, Amen, Amen, with the lifting up of their hands; and they bowed their heads and worshipped
+    with their faces to the ground."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFE6B0", "#F3E8C8"), J.jericho(-10, w + 10, h * 0.2, h * 0.44, seed, color=STONE, towers=2, houses=False), ground(w, h, h * 0.44, "#D8C8A0", dy=0)]
+    s = fit(b, max(h * 0.4, b - 220))
+    raise2 = [(-22, -158), (-40, -190), (-50, -224)]
+    cl = ("#5A4A3A", "#3A4A6A", "#6A3A2A", "#4A5A3A", "#5A3A5A")
+    for i in range(5):
+        x = w * (0.05 + i * 0.09)
+        o.append(man(p, x, b - (i % 2) * 6, s * 0.95, cl[i], up=raise2) if i % 2 == 0 else woman(p, x, b - 6, s * 0.9, ("#C2456A", "#2E6B8A")[i // 2 % 2], up=raise2))
+    for i in range(4):
+        o.append(N.prostrate(w * (0.5 + i * 0.12), b - (i % 2) * 8, s * 0.95, color=cl[i], skin="#9A6A4A"))
+    return "".join(o)
+
+def branches(w, h, seed):
+    """Olive branches, and branches of wild olive, and myrtle, and palm, and branches of thick trees: the five kinds laid
+    out as a plate, each labelled."""
+    o = [bp(w, h)]
+    kinds = [("OLIVE", "#7A9A4A", "#C8D8A0"), ("WILD OLIVE", "#5A7A3A", "#9AB06A"), ("MYRTLE", "#2E6B3A", "#5A9A5A"), ("PALM", "#3A7A3A", "#9CCB5E"), ("THICK TREES", "#1F4A34", "#3F8A44")]
+    for i, (nm, dark, light) in enumerate(kinds):
+        cx = w * (0.1 + i * 0.2); base, top = h * 0.82, h * 0.12
+        o.append(f'<path d="M{f(cx)} {f(base)} C {f(cx - 6)} {f((base + top) / 2)} {f(cx + 6)} {f(top + h * 0.1)} {f(cx)} {f(top)}" stroke="#8A6A3A" stroke-width="3" fill="none"></path>')
+        r = random.Random(seed + i)
+        if nm == "PALM":
+            for k in range(14):
+                y = top + k * (base - top) * 0.05; L = w * 0.06 * (1 - k * 0.03)
+                for sg in (-1, 1):
+                    o.append(f'<path d="M{f(cx)} {f(y)} Q {f(cx + sg * L * 0.6)} {f(y - 4)} {f(cx + sg * L)} {f(y + 10)}" stroke="{light}" stroke-width="2.4" fill="none"></path>')
+        else:
+            for k in range(16 if nm != "THICK TREES" else 24):
+                y = r.uniform(top + h * 0.02, base - h * 0.12); sg = r.choice((-1, 1)); lx = cx + sg * r.uniform(4, w * 0.05)
+                rx, ry = (w * 0.016, h * 0.012) if nm != "THICK TREES" else (w * 0.022, h * 0.022)
+                o.append(f'<ellipse cx="{f(lx)}" cy="{f(y)}" rx="{f(rx)}" ry="{f(ry)}" fill="{r.choice((dark, light))}" stroke="#0D0D0F" stroke-width="1" transform="rotate({f(sg * 30)} {f(lx)} {f(y)})"></ellipse>')
+        o.append(label(cx, h * 0.93, nm, "#8FD0E2", 9))
+    return "".join(o)
+
+def booth(x, base, wd, ht, seed):
+    """A booth of branches: four poles of new wood, a thick roof of leafy boughs with fronds hanging down at the front."""
+    r = random.Random(seed)
+    o = [f'<rect x="{f(x - wd / 2)}" y="{f(base - ht)}" width="{f(wd)}" height="{f(ht)}" fill="#3A5A2A" opacity="0.35"></rect>']
+    for dx in (-0.5, -0.3, 0.3, 0.5):
+        o.append(f'<path d="M{f(x + dx * wd)} {f(base)} L {f(x + dx * wd)} {f(base - ht)}" stroke="#6A4A2A" stroke-width="{f(max(2.4, wd * 0.035))}"></path>')
+    rt = ht * 0.3
+    o.append(f'<rect x="{f(x - wd * 0.58)}" y="{f(base - ht - rt * 0.6)}" width="{f(wd * 1.16)}" height="{f(rt)}" rx="{f(rt * 0.4)}" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="1.8"></rect>')
+    for _ in range(int(wd / 5) + 6):
+        cx, cy = r.uniform(x - wd * 0.56, x + wd * 0.56), base - ht - rt * 0.6 + r.uniform(0, rt)
+        o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(wd * 0.07)}" ry="{f(rt * 0.22)}" fill="{r.choice(("#3F8A44", "#5E8F26", "#9CCB5E", "#7A9A4A"))}" stroke="#0D0D0F" stroke-width="1" transform="rotate({f(r.uniform(-40, 40))} {f(cx)} {f(cy)})"></ellipse>')
+    for k in range(int(wd / 14) + 2):
+        fx = x - wd * 0.5 + k * wd / (int(wd / 14) + 1)
+        o.append(f'<path d="M{f(fx)} {f(base - ht + rt * 0.3)} q {f(wd * 0.02)} {f(ht * 0.14)} {f(-wd * 0.01)} {f(ht * 0.24)}" stroke="#5E8F26" stroke-width="2.4" fill="none"></path>')
+    return "".join(o)
+
+def booths(p, w, h, seed):
+    """Booths every one upon the roof of his house, and in their courts, and in the broad place of the water gate: a family
+    sitting under one in the foreground."""
+    r = random.Random(seed); b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.3, seed, "#9AAA6A", amp=10, step=90)]
+    for i in range(5):                                        # flat-roofed houses with a booth on each roof
+        x = w * (0.42 + i * 0.12); top = h * r.uniform(0.4, 0.48); wd = w * 0.11
+        o.append(f'<rect x="{f(x)}" y="{f(top)}" width="{f(wd)}" height="{f(h * 0.7 - top)}" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<rect x="{f(x + wd * 0.4)}" y="{f(h * 0.58)}" width="{f(wd * 0.2)}" height="{f(h * 0.12)}" fill="#3A2214"></rect>' + booth(x + wd / 2, top, wd * 0.8, h * 0.13, seed + i))
+    o.append(ground(w, h, h * 0.7, "#D8C8A0", dy=0))
+    s = fit(b, max(h * 0.4, b - 220))
+    bx, bw = w * 0.2, w * 0.34
+    o.append(booth(bx, b, bw, 230 * s, seed + 10))
+    for i, (c, k) in enumerate((("#3A4A6A", 1.0), ("#C2456A", 0.94), ("#E8D8B0", 0.55))):
+        x = bx - bw * 0.3 + i * bw * 0.28
+        o.append(man(p, x, b, s * k, c) if i != 1 else woman(p, x, b, s * k, c))
+    return "".join(o)
+
+def fasting(p, w, h, seed):
+    """The children of Israel assembled with fasting, and with sackcloth, and earth upon them: figures kneeling in
+    sackcloth, dust upon their heads, before the house of God."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#6A6A7A", "#C8B8A0"), K1.temple_front(w * 0.5, h * 0.56, w * 0.36, seed), ground(w, h, h * 0.56, "#A89A7A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 220))
+    r = random.Random(seed)
+    for i in range(7):
+        x = w * (0.06 + i * 0.145)
+        o.append(E.kneel(x, b - (i % 2) * 6, s * 0.7, color="#6A5A44", skin="#9A6A4A", flip=i >= 4))
+        for _ in range(5):
+            o.append(f'<circle cx="{f(x + r.uniform(-16, 16) * s + (0 if i < 4 else -20 * s))}" cy="{f(b - r.uniform(120, 170) * s * 0.7)}" r="{f(r.uniform(1.4, 2.6))}" fill="#7A6A54"></circle>')
+    return "".join(o)
+
+def stairs(p, w, h, seed):
+    """The Levites standing up upon the stairs, crying with a loud voice unto Jehovah their God."""
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), K1.temple_front(w * 0.5, h * 0.42, w * 0.44, seed), ground(w, h, h * 0.42, "#C8B88A", dy=0)]
+    for k in range(5):
+        y0 = h * 0.44 + k * h * 0.11; x0 = w * (0.2 - k * 0.03); x1 = w * (0.8 + k * 0.03)
+        o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(x1 - x0)}" height="{f(h * 0.11)}" fill="#D8CCB0" stroke="#0D0D0F" stroke-width="2"></rect>')
+    y = h * 0.55
+    s = fit(y, h * 0.2)
+    for i in range(8):
+        o.append(K1.priest(p, w * (0.26 + i * 0.068), y, s, up=[(-22, -158), (-36, -190), (-44, -222)] if i % 2 else [(22, -158), (36, -190), (44, -222)]))
+    return "".join(o)
+
+def heavens(w, h, seed):
+    """Thou hast made heaven, the heaven of heavens, with all their host, the earth and the seas."""
+    return "".join([K2.sky(w, h, "#0B0B2A", "#5B2470"), mk.stars(140, w, h * 0.7, seed), mk.stars(30, w, h * 0.6, seed + 1, color="#FFE680"),
+                    V.rays(w * 0.5, -h * 0.2, 30, 30, max(w, h) * 1.4, color="#FFF4C2", op=0.12),
+                    f'<path d="M-10 {f(h * 0.8)} Q {f(w * 0.5)} {f(h * 0.6)} {f(w + 10)} {f(h * 0.8)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#1F6F9A" stroke="#0D0D0F" stroke-width="2"></path>',
+                    f'<path d="M{f(w * 0.12)} {f(h * 0.76)} Q {f(w * 0.4)} {f(h * 0.62)} {f(w * 0.62)} {f(h * 0.68)} L {f(w * 0.66)} {f(h + 10)} L {f(w * 0.1)} {f(h + 10)} Z" fill="#2E6B3A" stroke="#0D0D0F" stroke-width="2"></path>'])
+
+def abram_stars(p, w, h, seed):
+    """Abram brought forth out of Ur of the Chaldees: a lone figure on a hill under the stars."""
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#0B0B2A", "#3A2A5A"), mk.stars(110, w, h * 0.7, seed), hills(w, h, h * 0.8, seed, "#1A1430", amp=10, step=80)]
+    s = fit(h * 0.86, h * 0.12)
+    o.append(mk.person(p, round(w * 0.3), round(h * 0.86), round(s, 3), body="#2A1A14", cloth="#3A4A6A", kind="Robe", sw=3, up=[(-22, -158), (-40, -190), (-50, -222)],
+                       extra=A.headcloth("#3A4A6A") + A.WHITE_BEARD))
+    return "".join(o)
+
+def red_sea(w, h, seed):
+    """Thou didst divide the sea before them, so that they went through the midst of the sea on the dry land."""
+    return E3.sea_corridor(w, h, (w * 0.5, h * 0.36), w * 0.24, w * 0.76, seed, uid=f"rs{seed}")
+
+def pillars(w, h, seed):
+    """In a pillar of cloud by day, and in a pillar of fire by night: the cloud and the fire over the camp, the tents below."""
+    o = [K2.sky(w, h, "#2A2A5A", "#E8A06A"), ground(w, h, h * 0.76, "#B89A6A", dy=0),
+         E3.pillar_cloud(w * 0.3, h * 0.76, h * 0.04, w * 0.08, seed), E3.pillar_fire(w * 0.72, h * 0.76, h * 0.04, w * 0.06, seed)]
+    for i in range(9):
+        o.append(E4.tent(w * (0.06 + i * 0.11), h * (0.88 + (i % 2) * 0.06), w * 0.08, h * 0.1, color=("#5A3A22", "#6B4A2A", "#3A2214")[i % 3]))
+    return "".join(o)
+
+def sinai_scene(w, h, seed):
+    """Thou camest down also upon mount Sinai, and spakest with them from heaven: the mountain on fire, the two tables."""
+    return "".join([K2.sky(w, h, "#2A1A2A", "#8A3A2A"), E4.sinai(w * 0.46, h * 0.98, w * 0.7, h * 0.72, seed), V.tables(w * 0.86, h * 0.94, min(0.6, h / 400), uid=f"tb{seed}")])
+
+def manna_rock(w, h, seed):
+    """Bread from heaven for their hunger, and water out of the rock for their thirst."""
+    return "".join([K2.sky(w, h, "#FFC890", "#F3E8C8"), ground(w, h, h * 0.66, "#D8C08A", dy=0), E4.manna(160, 0, w * 0.56, h * 0.7, h * 0.98, seed),
+                    E4.rock(w * 0.62, h * 0.96, w * 0.32, h * 0.6), E4.gush(w * 0.7, h * 0.56, seed, scale=min(1.0, h / 300))])
+
+def calf_scene(w, h, seed):
+    """They had made them a molten calf: the gold calf on its pedestal in the camp."""
+    return "".join([K2.sky(w, h, "#5A2A1A", "#E8A06A"), ground(w, h, h * 0.8, "#A88A5A", dy=0), V.calf(w * 0.5, h * 0.92, min(1.2, h / 220), uid=f"cf{seed}"),
+                    E4.tent(w * 0.12, h * 0.9, w * 0.14, h * 0.18), E4.tent(w * 0.86, h * 0.9, w * 0.14, h * 0.18, color="#6B4A2A")])
+
+def good_land(w, h, seed):
+    """Fortified cities, and a fat land, cisterns hewn out, vineyards, and oliveyards, and fruit-trees in abundance."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.36, seed, "#8AA05A", amp=12, step=90), J.city_hill(w * 0.72, h * 0.48, w * 0.24, h * 0.18, seed),
+         ground(w, h, h * 0.5, "#9CCB5E", dy=0)]
+    for row in range(3):                                      # vineyard rows
+        y = h * (0.62 + row * 0.1)
+        o.append(f'<path d="M{f(w * 0.04)} {f(y)} L {f(w * 0.46)} {f(y)}" stroke="#6A4A2A" stroke-width="2"></path>')
+        for k in range(10):
+            cx = w * (0.06 + k * 0.042)
+            o.append(f'<circle cx="{f(cx)}" cy="{f(y - 8)}" r="{f(min(w, h) * 0.022)}" fill="{r.choice(("#2E6B3A", "#3F8A44"))}" stroke="#0D0D0F" stroke-width="1.2"></circle>'
+                     + (f'<circle cx="{f(cx + 4)}" cy="{f(y - 2)}" r="3" fill="#6A2A6A"></circle>' if k % 2 else ""))
+    for k in range(5):                                        # olive trees
+        x = w * (0.56 + k * 0.09); y = h * 0.86
+        o.append(f'<path d="M{f(x)} {f(y)} L {f(x)} {f(y - h * 0.12)}" stroke="#5A4A3A" stroke-width="4"></path>'
+                 f'<ellipse cx="{f(x)}" cy="{f(y - h * 0.16)}" rx="{f(w * 0.04)}" ry="{f(h * 0.06)}" fill="#8AA06A" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    o.append(f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.95)}" rx="{f(w * 0.05)}" ry="{f(h * 0.025)}" fill="#2C5A7A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    return "".join(o)
+
+def servants(p, w, h, seed):
+    """We are servants this day in the land: men bowed at the harvest, the grain in sacks for the kings, an overseer with
+    a spear."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C8A890", "#F3E0B0"), hills(w, h, h * 0.44, seed, "#A89A6A", amp=10, step=90), ground(w, h, h * 0.62, "#D8C08A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 220))
+    for i in range(3):
+        o.append(E.kneel(w * (0.08 + i * 0.14), b, s * 0.7, color="#6A5A44", skin="#9A6A4A"))
+    for i in range(3): o.append(R1.sack(w * (0.52 + i * 0.06), b, s * 0.8))
+    o.append(warrior(p, w * 0.86, b, s, "#5A1A6A", flip=True))
+    return "".join(o)
+
+def sealed_scroll(w, h, seed, n=7):
+    """A sure covenant, written and sealed: a scroll, a row of clay seals hanging from its foot."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2A"></rect>', V.rays(w * 0.5, h * 0.5, 24, 12, max(w, h), color="#E8C88A", op=0.1)]
+    x0, x1, y0, y1 = w * 0.16, w * 0.84, h * 0.08, h * 0.74
+    o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(x1 - x0)}" height="{f(y1 - y0)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    for k in range(6):
+        y = y0 + (k + 1) * (y1 - y0) * 0.13
+        o.append(f'<path d="M{f(x0 + w * 0.04)} {f(y)} L {f(x1 - w * (0.04 + (k == 5) * 0.2))} {f(y)}" stroke="#8A6A4A" stroke-width="2"></path>')
+    for i in range(n):
+        x = x0 + (i + 0.5) * (x1 - x0) / n
+        o.append(f'<path d="M{f(x)} {f(y1)} L {f(x)} {f(y1 + h * 0.08)}" stroke="#7A2A6A" stroke-width="2"></path>'
+                 f'<circle cx="{f(x)}" cy="{f(y1 + h * 0.12)}" r="{f(min(w / n * 0.3, h * 0.05))}" fill="#B5121B" stroke="#0D0D0F" stroke-width="1.8"></circle>')
+    return "".join(o)
