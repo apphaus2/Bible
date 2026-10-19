@@ -34,5 +34,7 @@ META = {
      "blurb": "Abijah upon mount Zemaraim — God is with us at our head — and the shout of Judah; Asa who sought Jehovah, and Zerah the Ethiopian with a thousand thousand: help us, O Jehovah our God, for we rely on thee; Azariah's word and the covenant sworn with trumpets; then Ramah, the silver sent to Ben-hadad, and Hanani the seer: the eyes of Jehovah run to and fro throughout the whole earth."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Jehoshaphat", "range": "2 Chronicles 17–19", "bible_chapters": [17, 18, 19],
      "blurb": "Jehoshaphat who walked in the first ways of David, and the princes and Levites teaching in the cities with the book of the law; then affinity with Ahab — I am as thou art; the four hundred prophets and Micaiah: as Jehovah liveth, what my God saith, that will I speak; the arrow at a venture; Jehu the seer; and the judges set city by city — ye judge not for man, but for Jehovah."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Battle Is Not Yours", "range": "2 Chronicles 20–21", "bible_chapters": [20, 21],
+     "blurb": "A great multitude from beyond the sea; Jehoshaphat's prayer — neither know we what to do, but our eyes are upon thee; Jahaziel: the battle is not yours, but God's — stand ye still, and see the salvation of Jehovah; the singers going out before the army, and the valley of Beracah; then Jehoram, Edom's revolt, and a writing from Elijah the prophet."},
   ],
 }

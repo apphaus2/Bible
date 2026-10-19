@@ -604,6 +604,90 @@
    "w": 760,
    "h": 1080,
    "title": "78 · Ye Judge Not for Man"
+  },
+  "2CH-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Battle Is Not Yours"
+  },
+  "2CH-C07-D-P01-AGreatMultitude.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · A Great Multitude"
+  },
+  "2CH-C07-D-P02-OurEyesAreUponThee.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Our Eyes Are upon Thee"
+  },
+  "2CH-C07-D-P03-TheBattleIsNotYour.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · The Battle Is Not Yours, but God's"
+  },
+  "2CH-C07-E-P01-BelieveInJehovah.dc.html": {
+   "x": 3360,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Believe in Jehovah"
+  },
+  "2CH-C07-E-P02-TheValleyOfBeracah.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The Valley of Beracah"
+  },
+  "2CH-C07-E-P03-TheValleyOfBeracah.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · The Valley of Beracah"
+  },
+  "2CH-C07-E-P04-TheShipsWereBroken.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · The Ships Were Broken"
+  },
+  "2CH-C07-R-P01-Jehoram.dc.html": {
+   "x": 2520,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Jehoram"
+  },
+  "2CH-C07-G-P01-EdomRevolted.dc.html": {
+   "x": 3360,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Edom Revolted"
+  },
+  "2CH-C07-G-P02-AWritingFromElijah.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · A Writing from Elijah"
+  },
+  "2CH-C07-G-P03-AWritingFromElijah.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · A Writing from Elijah"
   }
  },
  "order": [
@@ -691,7 +775,19 @@
   "2CH-C06-E-P11-AtAVenture.dc.html",
   "2CH-C06-E-P12-AtAVenture.dc.html",
   "2CH-C06-F-P01-YeJudgeNotForMan.dc.html",
-  "2CH-C06-F-P02-YeJudgeNotForMan.dc.html"
+  "2CH-C06-F-P02-YeJudgeNotForMan.dc.html",
+  "2CH-C07-00-Title.dc.html",
+  "2CH-C07-D-P01-AGreatMultitude.dc.html",
+  "2CH-C07-D-P02-OurEyesAreUponThee.dc.html",
+  "2CH-C07-D-P03-TheBattleIsNotYour.dc.html",
+  "2CH-C07-E-P01-BelieveInJehovah.dc.html",
+  "2CH-C07-E-P02-TheValleyOfBeracah.dc.html",
+  "2CH-C07-E-P03-TheValleyOfBeracah.dc.html",
+  "2CH-C07-E-P04-TheShipsWereBroken.dc.html",
+  "2CH-C07-R-P01-Jehoram.dc.html",
+  "2CH-C07-G-P01-EdomRevolted.dc.html",
+  "2CH-C07-G-P02-AWritingFromElijah.dc.html",
+  "2CH-C07-G-P03-AWritingFromElijah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -742,6 +838,13 @@
    "text": "Chapter 6 · Jehoshaphat (2 Chronicles 17–19)",
    "x": 0,
    "y": 22200
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Battle Is Not Yours (2 Chronicles 20–21)",
+   "x": 0,
+   "y": 27500
   }
  },
  "designSystems": [],

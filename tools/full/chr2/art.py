@@ -140,3 +140,54 @@ def judges_gate(p, w, h, seed):
         o.append(E.kneel(w * (0.3 + i * 0.12), b, s * 0.7, color=["#5A4A3A", "#3A4A6A", "#6A5A3A"][i], skin="#9A6A4A"))
     o.append(man(p, w * 0.8, b, s, "#8A5A30", flip=True))
     return "".join(o)
+
+# ---- 2 Chronicles 20–21 -------------------------------------------------------------------------------------------------
+TEKOA_M = [("JERUSALEM", 0.42, 0.14), ("TEKOA", 0.44, 0.42), ("EN-GEDI", 0.74, 0.56), ("ASCENT OF ZIZ", 0.66, 0.42), ("WILDERNESS OF JERUEL", 0.6, 0.3), ("BERACAH", 0.32, 0.5)]
+def tekoa_map(w, h, stage=0):
+    """The great multitude come up from beyond the sea to Hazazon-tamar (En-gedi), the ascent of Ziz, the wilderness of
+    Jeruel; Judah's way out by Tekoa (stage 1: the singers going out before the army; stage 2: the valley of Beracah)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M{f(w * 0.86)} -10 C {f(w * 0.84)} {f(h * 0.3)} {f(w * 0.9)} {f(h * 0.6)} {f(w * 0.86)} {f(h + 10)} L {f(w + 10)} {f(h + 10)} L {f(w + 10)} -10 Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>'
+             + label(w * 0.93, h * 0.7, "THE SEA", "#8FD0E2", 8))
+    pos = {n: (w * x, h * y) for n, x, y in TEKOA_M}
+    o.append(f'<ellipse cx="{f(w * 0.74)}" cy="{f(h * 0.62)}" rx="{f(w * 0.08)}" ry="{f(h * 0.12)}" fill="#D7261E" fill-opacity="0.22" stroke="#D7261E" stroke-width="2"></ellipse>'
+             + label(w * 0.74, h * 0.82, "AMMON · MOAB · MOUNT SEIR", "#FF8A6A", 8))
+    if stage >= 1: o.append(route([pos["JERUSALEM"], pos["TEKOA"]], color="#FFD23F") + label(w * 0.3, h * 0.3, "THE SINGERS BEFORE THE ARMY", "#FFD23F", 8))
+    if stage >= 2: o.append(route([pos["TEKOA"], pos["BERACAH"]], color="#9CCB5E"))
+    for nm, x, y in TEKOA_M:
+        o.append(node(w * x, h * y, nm, "#9CCB5E" if nm == "BERACAH" and stage >= 2 else ("#FFD23F" if nm in ("JERUSALEM", "TEKOA") else CYAN), r=4, dy=-10, size=8))
+    return "".join(o)
+
+def singers_march(p, w, h, seed):
+    """The singers in holy array going out before the army into the wilderness of Tekoa at dawn, harps and cymbals raised,
+    the men of war behind them."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A4A7A", "#FFC890"), sun(w * 0.82, h * 0.5, 22, color="#FFE680", op=0.4), hills(w, h, h * 0.56, seed, "#8A6A5A", amp=12, step=80),
+         ground(w, h, h * 0.66, "#C8A06A", dy=0)]
+    s = fit(b, max(h * 0.44, b - 220))
+    for i in range(4):
+        o.append(S3.musician(p, w * (0.5 + i * 0.12), b, s, kind=("harp", "cymbals")[i % 2], cloth="#F3EFE6", woman=False, seed=seed + i))
+    for i in range(6): o.append(warrior(p, w * (0.04 + i * 0.065), b - (i % 2) * 5, s * 0.86, WAR[i % 4]))
+    return "".join(o)
+
+def watchtower_view(w, h, seed):
+    """From the watch-tower of the wilderness: the valley below silent, spears and shields strewn on the ground, no one standing."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#8A7A8A", "#E8C8A0"), hills(w, h, h * 0.4, seed, "#8A6A5A", amp=16, step=70), ground(w, h, h * 0.5, "#B8946A", dy=0)]
+    for _ in range(26):
+        x, y = r.uniform(0, w), r.uniform(h * 0.56, h * 0.96); a = r.uniform(-30, 30); L = w * r.uniform(0.04, 0.08)
+        o.append(f'<path d="M{f(x)} {f(y)} l {f(L * math.cos(math.radians(a)))} {f(L * math.sin(math.radians(a)) * 0.3)}" stroke="#3A2A1E" stroke-width="2.4"></path>')
+        if r.random() < 0.4: o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(w * 0.014)}" ry="{f(w * 0.008)}" fill="#B87333" stroke="#0D0D0F" stroke-width="1.2"></ellipse>')
+    o.append(f'<path d="M{f(w * 0.06)} {f(h + 10)} L {f(w * 0.06)} {f(h * 0.62)} L {f(w * 0.2)} {f(h * 0.62)} L {f(w * 0.2)} {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    return "".join(o)
+
+def writing(w, h, seed):
+    """A writing come from Elijah the prophet: a sealed scroll unrolled on a dark table."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2A"></rect>', V.rays(w * 0.5, h * 0.5, 24, 12, max(w, h), color="#E8C88A", op=0.1),
+         f'<rect x="{f(w * 0.24)}" y="{f(h * 0.24)}" width="{f(w * 0.52)}" height="{f(h * 0.52)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="2.4"></rect>']
+    for k in range(7):
+        o.append(f'<path d="M{f(w * 0.3)} {f(h * (0.32 + k * 0.055))} L {f(w * (0.7 - (k == 6) * 0.2))} {f(h * (0.32 + k * 0.055))}" stroke="#8A6A4A" stroke-width="2"></path>')
+    o.append(f'<ellipse cx="{f(w * 0.24)}" cy="{f(h * 0.5)}" rx="{f(w * 0.03)}" ry="{f(h * 0.27)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+             f'<ellipse cx="{f(w * 0.76)}" cy="{f(h * 0.5)}" rx="{f(w * 0.03)}" ry="{f(h * 0.27)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+             f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.8)}" r="{f(min(w, h) * 0.04)}" fill="#B5121B" stroke="#0D0D0F" stroke-width="2"></circle>')
+    return "".join(o)
