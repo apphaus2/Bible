@@ -1,0 +1,21 @@
+{
+ "id": "proverbs",
+ "order": 20,
+ "name": "Proverbs",
+ "kanji": "箴言",
+ "thumb": "vol-proverbs-",
+ "lede": "The twentieth book of the Bible, in full: a father's instruction to his son, Wisdom crying aloud at the gates and building her house of seven pillars, the proverbs of Solomon one by one, the words of the wise, the sayings copied out by the men of Hezekiah, the words of Agur and of king Lemuel, and the worthy woman, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Beginning of Knowledge",
+   "range": "Proverbs 1–3",
+   "blurb": "The proverbs of Solomon the son of David — the fear of Jehovah is the beginning of knowledge; my son, if sinners entice thee, consent thou not; Wisdom crieth aloud in the street: how long, ye simple ones?; if thou seek her as silver; trust in Jehovah with all thy heart; she is a tree of life to them that lay hold upon her.",
+   "prefixes": [
+    "Main.dc.html",
+    "PRO-C01-"
+   ]
+  }
+ ]
+}
