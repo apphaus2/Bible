@@ -114,6 +114,90 @@
    "w": 760,
    "h": 1080,
    "title": "13 · A Kingdom Which Shall Never Be Destroyed"
+  },
+  "DAN-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Burning Fiery Furnace"
+  },
+  "DAN-C02-D-P01-TheImageOfGold.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Image of Gold"
+  },
+  "DAN-C02-D-P02-CertainChaldeansCa.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Certain Chaldeans Came Near"
+  },
+  "DAN-C02-D-P03-SevenTimesMore.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Seven Times More"
+  },
+  "DAN-C02-D-P04-FourMenLoose.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Four Men Loose"
+  },
+  "DAN-C02-D-P05-FourMenLoose.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Four Men Loose"
+  },
+  "DAN-C02-E-P01-UntoAllThePeoples.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Unto All the Peoples"
+  },
+  "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · A Tree in the Midst of the Earth"
+  },
+  "DAN-C02-E-P03-ItIsThouOKing.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · It Is Thou, O King"
+  },
+  "DAN-C02-E-P04-ItIsThouOKing.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · It Is Thou, O King"
+  },
+  "DAN-C02-E-P05-IsNotThisGreatBaby.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Is Not This Great Babylon?"
+  },
+  "DAN-C02-E-P06-MineUnderstandingR.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Mine Understanding Returned"
   }
  },
  "order": [
@@ -131,7 +215,19 @@
   "DAN-C01-E-P06-AGreatImage.dc.html",
   "DAN-C01-E-P07-AGreatImage.dc.html",
   "DAN-C01-E-P08-ThouArtTheHeadOfGo.dc.html",
-  "DAN-C01-E-P09-AKingdomWhichShall.dc.html"
+  "DAN-C01-E-P09-AKingdomWhichShall.dc.html",
+  "DAN-C02-00-Title.dc.html",
+  "DAN-C02-D-P01-TheImageOfGold.dc.html",
+  "DAN-C02-D-P02-CertainChaldeansCa.dc.html",
+  "DAN-C02-D-P03-SevenTimesMore.dc.html",
+  "DAN-C02-D-P04-FourMenLoose.dc.html",
+  "DAN-C02-D-P05-FourMenLoose.dc.html",
+  "DAN-C02-E-P01-UntoAllThePeoples.dc.html",
+  "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html",
+  "DAN-C02-E-P03-ItIsThouOKing.dc.html",
+  "DAN-C02-E-P04-ItIsThouOKing.dc.html",
+  "DAN-C02-E-P05-IsNotThisGreatBaby.dc.html",
+  "DAN-C02-E-P06-MineUnderstandingR.dc.html"
  ],
  "notes": {
   "Main": {
@@ -147,6 +243,13 @@
    "text": "Chapter 1 · A Stone Cut Out Without Hands (Daniel 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Burning Fiery Furnace (Daniel 3–4)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],

@@ -27,5 +27,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "A Stone Cut Out Without Hands", "range": "Daniel 1–2", "bible_chapters": [1, 2],
      "blurb": "Jerusalem besieged and the vessels carried to Shinar; Daniel, Hananiah, Mishael and Azariah in the king's palace, renamed, who would not defile themselves with the king's dainties — prove thy servants ten days; then Nebuchadnezzar's dream that none could tell, the decree to slay the wise men, the secret revealed in a vision of the night, and the great image: head of gold, breast of silver, belly of brass, legs of iron, feet of iron and clay, and the stone that became a great mountain."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Burning Fiery Furnace", "range": "Daniel 3–4", "bible_chapters": [3, 4],
+     "blurb": "The image of gold in the plain of Dura, and the cornet, flute, harp, sackbut, psaltery and dulcimer; three men who would not bow down — our God whom we serve is able to deliver us, but if not; the furnace heated seven times more, and four men loose walking in the midst of the fire; then the king's own letter: the tree whose height reached unto heaven, the watcher and the holy one, is not this great Babylon?, seven times, and the King of heaven praised."},
   ],
 }
