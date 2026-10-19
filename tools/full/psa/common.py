@@ -164,7 +164,7 @@ def psalm(n, plan, god=None, budget=380, fbudget=440, face=None, head=None, upto
             if first and (head is None):
                 lines.append(("head", (n, TITLES.get(n), BOOKS.get(n) if book else None)))
             elif first and head:
-                lines.append(("head", head))
+                lines += [("head", hd) for hd in (head if isinstance(head, list) else [head])]
             for x in ch:
                 if n == 119:
                     main, nxt = _plain(n, x)
@@ -176,7 +176,7 @@ def psalm(n, plan, god=None, budget=380, fbudget=440, face=None, head=None, upto
             elif len(keys) > 1: k = keys[ci % len(keys)]
             else: k = key if ci % 2 == 0 else (face or singer(n))     # a long run over one drawing alternates with the singer's face
             seed = n * 100 + ix
-            nm = f"Psalm {n}" if first else None
+            nm = (title or f"Psalm {n}") if first else None
             if k.isupper():
                 tok, bg = FACES[k]
                 segs.append(seg(lines, ref, tok=tok, bg=bg, head=nm, title=title or nm))

@@ -2410,6 +2410,202 @@
    "w": 760,
    "h": 1080,
    "title": "328 · Psalm 118"
+  },
+  "PS-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 97800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · Thy Word Is a Lamp"
+  },
+  "PS-C15-D-P01-Psalm119Aleph.dc.html": {
+   "x": 840,
+   "y": 97800,
+   "w": 760,
+   "h": 1080,
+   "title": "329 · Psalm 119 · Aleph"
+  },
+  "PS-C15-D-P02-Psalm119Beth.dc.html": {
+   "x": 1680,
+   "y": 97800,
+   "w": 760,
+   "h": 1080,
+   "title": "330 · Psalm 119 · Beth"
+  },
+  "PS-C15-D-P03-Psalm119Gimel.dc.html": {
+   "x": 2520,
+   "y": 97800,
+   "w": 760,
+   "h": 1080,
+   "title": "331 · Psalm 119 · Gimel"
+  },
+  "PS-C15-D-P04-Psalm119Gimel.dc.html": {
+   "x": 3360,
+   "y": 97800,
+   "w": 760,
+   "h": 1080,
+   "title": "332 · Psalm 119 · Gimel"
+  },
+  "PS-C15-D-P05-Psalm119Daleth.dc.html": {
+   "x": 0,
+   "y": 99000,
+   "w": 760,
+   "h": 1080,
+   "title": "333 · Psalm 119 · Daleth"
+  },
+  "PS-C15-D-P06-Psalm119He.dc.html": {
+   "x": 840,
+   "y": 99000,
+   "w": 760,
+   "h": 1080,
+   "title": "334 · Psalm 119 · He"
+  },
+  "PS-C15-D-P07-Psalm119Vav.dc.html": {
+   "x": 1680,
+   "y": 99000,
+   "w": 760,
+   "h": 1080,
+   "title": "335 · Psalm 119 · Vav"
+  },
+  "PS-C15-D-P08-Psalm119Zayin.dc.html": {
+   "x": 2520,
+   "y": 99000,
+   "w": 760,
+   "h": 1080,
+   "title": "336 · Psalm 119 · Zayin"
+  },
+  "PS-C15-D-P09-Psalm119Hheth.dc.html": {
+   "x": 3360,
+   "y": 99000,
+   "w": 760,
+   "h": 1080,
+   "title": "337 · Psalm 119 · Hheth"
+  },
+  "PS-C15-D-P10-Psalm119Hheth.dc.html": {
+   "x": 0,
+   "y": 100200,
+   "w": 760,
+   "h": 1080,
+   "title": "338 · Psalm 119 · Hheth"
+  },
+  "PS-C15-D-P11-Psalm119Teth.dc.html": {
+   "x": 840,
+   "y": 100200,
+   "w": 760,
+   "h": 1080,
+   "title": "339 · Psalm 119 · Teth"
+  },
+  "PS-C15-D-P12-Psalm119Yodh.dc.html": {
+   "x": 1680,
+   "y": 100200,
+   "w": 760,
+   "h": 1080,
+   "title": "340 · Psalm 119 · Yodh"
+  },
+  "PS-C15-D-P13-Psalm119Kaph.dc.html": {
+   "x": 2520,
+   "y": 100200,
+   "w": 760,
+   "h": 1080,
+   "title": "341 · Psalm 119 · Kaph"
+  },
+  "PS-C15-D-P14-Psalm119Lamedh.dc.html": {
+   "x": 3360,
+   "y": 100200,
+   "w": 760,
+   "h": 1080,
+   "title": "342 · Psalm 119 · Lamedh"
+  },
+  "PS-C15-D-P15-Psalm119Mem.dc.html": {
+   "x": 0,
+   "y": 101400,
+   "w": 760,
+   "h": 1080,
+   "title": "343 · Psalm 119 · Mem"
+  },
+  "PS-C15-D-P16-Psalm119Mem.dc.html": {
+   "x": 840,
+   "y": 101400,
+   "w": 760,
+   "h": 1080,
+   "title": "344 · Psalm 119 · Mem"
+  },
+  "PS-C15-D-P17-Psalm119Nun.dc.html": {
+   "x": 1680,
+   "y": 101400,
+   "w": 760,
+   "h": 1080,
+   "title": "345 · Psalm 119 · Nun"
+  },
+  "PS-C15-D-P18-Psalm119Samekh.dc.html": {
+   "x": 2520,
+   "y": 101400,
+   "w": 760,
+   "h": 1080,
+   "title": "346 · Psalm 119 · Samekh"
+  },
+  "PS-C15-D-P19-Psalm119Ayin.dc.html": {
+   "x": 3360,
+   "y": 101400,
+   "w": 760,
+   "h": 1080,
+   "title": "347 · Psalm 119 · Ayin"
+  },
+  "PS-C15-D-P20-Psalm119Pe.dc.html": {
+   "x": 0,
+   "y": 102600,
+   "w": 760,
+   "h": 1080,
+   "title": "348 · Psalm 119 · Pe"
+  },
+  "PS-C15-D-P21-Psalm119Pe.dc.html": {
+   "x": 840,
+   "y": 102600,
+   "w": 760,
+   "h": 1080,
+   "title": "349 · Psalm 119 · Pe"
+  },
+  "PS-C15-D-P22-Psalm119Tsadhe.dc.html": {
+   "x": 1680,
+   "y": 102600,
+   "w": 760,
+   "h": 1080,
+   "title": "350 · Psalm 119 · Tsadhe"
+  },
+  "PS-C15-D-P23-Psalm119Qoph.dc.html": {
+   "x": 2520,
+   "y": 102600,
+   "w": 760,
+   "h": 1080,
+   "title": "351 · Psalm 119 · Qoph"
+  },
+  "PS-C15-D-P24-Psalm119Resh.dc.html": {
+   "x": 3360,
+   "y": 102600,
+   "w": 760,
+   "h": 1080,
+   "title": "352 · Psalm 119 · Resh"
+  },
+  "PS-C15-D-P25-Psalm119Resh.dc.html": {
+   "x": 0,
+   "y": 103800,
+   "w": 760,
+   "h": 1080,
+   "title": "353 · Psalm 119 · Resh"
+  },
+  "PS-C15-D-P26-Psalm119Shin.dc.html": {
+   "x": 840,
+   "y": 103800,
+   "w": 760,
+   "h": 1080,
+   "title": "354 · Psalm 119 · Shin"
+  },
+  "PS-C15-D-P27-Psalm119Tav.dc.html": {
+   "x": 1680,
+   "y": 103800,
+   "w": 760,
+   "h": 1080,
+   "title": "355 · Psalm 119 · Tav"
   }
  },
  "order": [
@@ -2755,7 +2951,35 @@
   "PS-C14-D-P31-Psalm118.dc.html",
   "PS-C14-D-P32-Psalm118.dc.html",
   "PS-C14-D-P33-Psalm118.dc.html",
-  "PS-C14-D-P34-Psalm118.dc.html"
+  "PS-C14-D-P34-Psalm118.dc.html",
+  "PS-C15-00-Title.dc.html",
+  "PS-C15-D-P01-Psalm119Aleph.dc.html",
+  "PS-C15-D-P02-Psalm119Beth.dc.html",
+  "PS-C15-D-P03-Psalm119Gimel.dc.html",
+  "PS-C15-D-P04-Psalm119Gimel.dc.html",
+  "PS-C15-D-P05-Psalm119Daleth.dc.html",
+  "PS-C15-D-P06-Psalm119He.dc.html",
+  "PS-C15-D-P07-Psalm119Vav.dc.html",
+  "PS-C15-D-P08-Psalm119Zayin.dc.html",
+  "PS-C15-D-P09-Psalm119Hheth.dc.html",
+  "PS-C15-D-P10-Psalm119Hheth.dc.html",
+  "PS-C15-D-P11-Psalm119Teth.dc.html",
+  "PS-C15-D-P12-Psalm119Yodh.dc.html",
+  "PS-C15-D-P13-Psalm119Kaph.dc.html",
+  "PS-C15-D-P14-Psalm119Lamedh.dc.html",
+  "PS-C15-D-P15-Psalm119Mem.dc.html",
+  "PS-C15-D-P16-Psalm119Mem.dc.html",
+  "PS-C15-D-P17-Psalm119Nun.dc.html",
+  "PS-C15-D-P18-Psalm119Samekh.dc.html",
+  "PS-C15-D-P19-Psalm119Ayin.dc.html",
+  "PS-C15-D-P20-Psalm119Pe.dc.html",
+  "PS-C15-D-P21-Psalm119Pe.dc.html",
+  "PS-C15-D-P22-Psalm119Tsadhe.dc.html",
+  "PS-C15-D-P23-Psalm119Qoph.dc.html",
+  "PS-C15-D-P24-Psalm119Resh.dc.html",
+  "PS-C15-D-P25-Psalm119Resh.dc.html",
+  "PS-C15-D-P26-Psalm119Shin.dc.html",
+  "PS-C15-D-P27-Psalm119Tav.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2862,6 +3086,13 @@
    "text": "Chapter 14 · They That Go Down to the Sea (Psalms 107–118)",
    "x": 0,
    "y": 88600
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · Thy Word Is a Lamp (Psalm 119)",
+   "x": 0,
+   "y": 97500
   }
  },
  "designSystems": [],
