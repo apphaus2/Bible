@@ -44,8 +44,12 @@ def branch(w, h, root, kids, hi=(), color=CYAN, per=None):
     for i, nm in enumerate(kids):
         r, c = divmod(i, per)
         m = min(per, n - r * per)
-        x = w * (0.5 if m == 1 else (0.06 + 0.07 * r) + (0.8 - 0.07 * r) * c / (m - 1))   # a second row sits half a step over, so no line crosses a name
-        y = h * (0.5 + 0.22 * r) if rows > 1 else h * 0.66
+        if rows > 1:                       # rows staggered by half a step, so no line crosses a name
+            step = 0.82 / (per - 1 + (rows - 1) / rows)
+            x = w * (0.08 + r * step / rows + c * step)
+        else:
+            x = w * (0.5 if m == 1 else 0.06 + 0.8 * c / (m - 1))
+        y = h * (0.5 + (0.22 if rows == 2 else 0.38 / (rows - 1)) * r) if rows > 1 else h * 0.66
         pts.append((x, y))
     for x, y in pts:
         o.append(f'<path d="M{f(rx)} {f(ry)} L {f(rx)} {f((ry + y) / 2)} L {f(x)} {f((ry + y) / 2)} L {f(x)} {f(y)}" fill="none" stroke="#4A7A9A" stroke-width="2"></path>')
@@ -325,3 +329,22 @@ def charge_son(p, w, h, seed, princes=False):
             o.append(man(p, w * (0.72 + i * 0.07), b, s * 0.85, ["#3A4A6A", "#6A3A2A", "#4A5A3A", "#5A4A6A"][i], flip=True))
     return "".join(o)
 from genesis.art3 import man
+
+# ---- 1 Chronicles 23–27 -------------------------------------------------------------------------------------------------
+def lot_grid(w, h, names, lit=None, cols=6, color=GOLD, top=0.06):
+    """The courses drawn by lot as a board of numbered tiles: the lot's number large, the name beneath (lit: the indices
+    drawn in colour, the rest dimmed)."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    n = len(names); rows = math.ceil(n / cols)
+    gx, gy = w * 0.03, h * 0.03
+    tw = (w * 0.94 - gx * (cols - 1)) / cols
+    th = (h * (0.96 - top) - gy * (rows - 1)) / rows
+    for i, nm in enumerate(names):
+        r, c = divmod(i, cols)
+        x, y = w * 0.03 + c * (tw + gx), h * top + r * (th + gy)
+        on = lit is None or i in lit
+        col = color if on else "#5A5480"
+        o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(tw)}" height="{f(th)}" rx="4" fill="{col}" fill-opacity="{0.16 if on else 0.06}" stroke="{col}" stroke-width="{2 if on else 1.2}"></rect>'
+                 f'<text x="{f(x + tw / 2)}" y="{f(y + th * 0.56)}" fill="{col}" font-family="Anton, sans-serif" font-size="{f(min(th * 0.46, tw * 0.4))}" text-anchor="middle">{i + 1}</text>'
+                 + label(x + tw / 2, y + th * 0.86, nm, col if on else "#7A7498", max(7, min(10, tw / (len(nm) * 0.7 + 1))), ls=0.06))
+    return "".join(o)

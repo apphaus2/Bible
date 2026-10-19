@@ -38,5 +38,7 @@ META = {
      "blurb": "Lo, I dwell in a house of cedar, but the ark dwelleth under curtains; the word of God to Nathan by night — I will build thee a house, and I will establish his throne for ever; who am I, O Jehovah God?; David's wars and the shields of gold; Hanun and the messengers shamed; Joab before and behind; Rabbah and the crown of gold; and the sons of the giant in Gath."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Threshing-floor of Ornan", "range": "1 Chronicles 21–22", "bible_chapters": [21, 22],
      "blurb": "Satan moves David to number Israel; Joab's protest; I have done very foolishly; Gad and the three things; the pestilence, and it is enough, now stay thy hand; the angel's sword over Jerusalem; Ornan's threshing-floor bought for the full price, and the answer by fire from heaven; then the stores of gold and cedar, and David's charge to Solomon: arise and be doing."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Courses", "range": "1 Chronicles 23–25", "bible_chapters": [23, 24, 25],
+     "blurb": "David old and full of days makes Solomon king; the Levites numbered and divided into courses, to stand every morning to thank and praise Jehovah, and likewise at even; the sons of Aaron divided by lot into four and twenty courses; and the sons of Asaph, Heman and Jeduthun set apart to prophesy with harps, lot by lot, twelve to each."},
   ],
 }

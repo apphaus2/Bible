@@ -681,6 +681,76 @@
    "w": 760,
    "h": 1080,
    "title": "87 · Build the House of Jehovah"
+  },
+  "1CH-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Courses"
+  },
+  "1CH-C09-D-P01-DavidWasOldAndFull.dc.html": {
+   "x": 840,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · David Was Old and Full of Days"
+  },
+  "1CH-C09-R-P01-TheCoursesOfTheLev.dc.html": {
+   "x": 1680,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Courses of the Levites"
+  },
+  "1CH-C09-R-P02-TheirOffice.dc.html": {
+   "x": 2520,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Their Office"
+  },
+  "1CH-C09-F-P01-TheCoursesOfTheSon.dc.html": {
+   "x": 3360,
+   "y": 31200,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Courses of the Sons of Aaron"
+  },
+  "1CH-C09-G-P01-TheFourAndTwentyLo.dc.html": {
+   "x": 0,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Four and Twenty Lots"
+  },
+  "1CH-C09-S-P01-TheRestOfTheSonsOf.dc.html": {
+   "x": 840,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Rest of the Sons of Levi"
+  },
+  "1CH-C09-H-P01-ToProphesyWithHarp.dc.html": {
+   "x": 1680,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · To Prophesy with Harps"
+  },
+  "1CH-C09-J-P01-TheLotsOfTheSinger.dc.html": {
+   "x": 2520,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The Lots of the Singers"
+  },
+  "1CH-C09-J-P02-TheLotsOfTheSinger.dc.html": {
+   "x": 3360,
+   "y": 32400,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Lots of the Singers"
   }
  },
  "order": [
@@ -779,7 +849,17 @@
   "1CH-C08-D-P06-HeAnsweredHimByFir.dc.html",
   "1CH-C08-E-P01-ThisIsTheHouseOfJe.dc.html",
   "1CH-C08-E-P02-BuildTheHouseOfJeh.dc.html",
-  "1CH-C08-E-P03-BuildTheHouseOfJeh.dc.html"
+  "1CH-C08-E-P03-BuildTheHouseOfJeh.dc.html",
+  "1CH-C09-00-Title.dc.html",
+  "1CH-C09-D-P01-DavidWasOldAndFull.dc.html",
+  "1CH-C09-R-P01-TheCoursesOfTheLev.dc.html",
+  "1CH-C09-R-P02-TheirOffice.dc.html",
+  "1CH-C09-F-P01-TheCoursesOfTheSon.dc.html",
+  "1CH-C09-G-P01-TheFourAndTwentyLo.dc.html",
+  "1CH-C09-S-P01-TheRestOfTheSonsOf.dc.html",
+  "1CH-C09-H-P01-ToProphesyWithHarp.dc.html",
+  "1CH-C09-J-P01-TheLotsOfTheSinger.dc.html",
+  "1CH-C09-J-P02-TheLotsOfTheSinger.dc.html"
  ],
  "notes": {
   "Main": {
@@ -844,6 +924,13 @@
    "text": "Chapter 8 · The Threshing-floor of Ornan (1 Chronicles 21–22)",
    "x": 0,
    "y": 28000
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Courses (1 Chronicles 23–25)",
+   "x": 0,
+   "y": 30900
   }
  },
  "designSystems": [],

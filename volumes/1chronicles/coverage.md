@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 731 verses — 731 full, 0 partial, 0 omitted.
+**So far:** 825 verses — 825 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · From Adam (1 Chronicles 1–2)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · The Threshing-floor of Ornan (1 Chronicles 21–22)
 
 49 verses: 49 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · The Courses (1 Chronicles 23–25)
+
+94 verses: 94 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
