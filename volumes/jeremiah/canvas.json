@@ -261,6 +261,132 @@
    "w": 760,
    "h": 1080,
    "title": "33 · A Trier among My People"
+  },
+  "JER-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Temple of Jehovah"
+  },
+  "JER-C03-D-P01-StandInTheGateOfJe.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Stand in the Gate of Jehovah's House"
+  },
+  "JER-C03-D-P02-GoYeNowUntoShiloh.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Go Ye Now unto Shiloh"
+  },
+  "JER-C03-D-P03-TheQueenOfHeaven.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Queen of Heaven"
+  },
+  "JER-C03-D-P04-TheQueenOfHeaven.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Queen of Heaven"
+  },
+  "JER-C03-D-P05-TheValleyOfSlaught.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · The Valley of Slaughter"
+  },
+  "JER-C03-D-P06-TheValleyOfSlaught.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Valley of Slaughter"
+  },
+  "JER-C03-E-P01-SpreadBeforeTheSun.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Spread before the Sun"
+  },
+  "JER-C03-E-P02-TheStorkInTheHeave.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Stork in the Heavens"
+  },
+  "JER-C03-E-P03-TheStorkInTheHeave.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Stork in the Heavens"
+  },
+  "JER-C03-E-P04-IsThereNoBalmInGil.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Is There No Balm in Gilead?"
+  },
+  "JER-C03-E-P05-IsThereNoBalmInGil.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Is There No Balm in Gilead?"
+  },
+  "JER-C03-F-P01-AFountainOfTears.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · A Fountain of Tears"
+  },
+  "JER-C03-F-P02-AFountainOfTears.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · A Fountain of Tears"
+  },
+  "JER-C03-F-P03-AFountainOfTears.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · A Fountain of Tears"
+  },
+  "JER-C03-F-P04-CallForTheMourning.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Call for the Mourning Women"
+  },
+  "JER-C03-F-P05-CallForTheMourning.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Call for the Mourning Women"
+  },
+  "JER-C03-F-P06-LetHimThatGlorieth.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Let Him That Glorieth"
   }
  },
  "order": [
@@ -299,7 +425,25 @@
   "JER-C02-F-P03-FleeForSafety.dc.html",
   "JER-C02-F-P04-AskForTheOldPaths.dc.html",
   "JER-C02-F-P05-APeopleFromTheNort.dc.html",
-  "JER-C02-F-P06-ATrierAmongMyPeopl.dc.html"
+  "JER-C02-F-P06-ATrierAmongMyPeopl.dc.html",
+  "JER-C03-00-Title.dc.html",
+  "JER-C03-D-P01-StandInTheGateOfJe.dc.html",
+  "JER-C03-D-P02-GoYeNowUntoShiloh.dc.html",
+  "JER-C03-D-P03-TheQueenOfHeaven.dc.html",
+  "JER-C03-D-P04-TheQueenOfHeaven.dc.html",
+  "JER-C03-D-P05-TheValleyOfSlaught.dc.html",
+  "JER-C03-D-P06-TheValleyOfSlaught.dc.html",
+  "JER-C03-E-P01-SpreadBeforeTheSun.dc.html",
+  "JER-C03-E-P02-TheStorkInTheHeave.dc.html",
+  "JER-C03-E-P03-TheStorkInTheHeave.dc.html",
+  "JER-C03-E-P04-IsThereNoBalmInGil.dc.html",
+  "JER-C03-E-P05-IsThereNoBalmInGil.dc.html",
+  "JER-C03-F-P01-AFountainOfTears.dc.html",
+  "JER-C03-F-P02-AFountainOfTears.dc.html",
+  "JER-C03-F-P03-AFountainOfTears.dc.html",
+  "JER-C03-F-P04-CallForTheMourning.dc.html",
+  "JER-C03-F-P05-CallForTheMourning.dc.html",
+  "JER-C03-F-P06-LetHimThatGlorieth.dc.html"
  ],
  "notes": {
   "Main": {
@@ -322,6 +466,13 @@
    "text": "Chapter 2 · Evil from the North (Jeremiah 4–6)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Temple of Jehovah (Jeremiah 7–9)",
+   "x": 0,
+   "y": 12300
   }
  },
  "designSystems": [],

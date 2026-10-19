@@ -32,5 +32,7 @@ META = {
      "blurb": "Before I formed thee in the belly I knew thee — ah, Lord Jehovah! I know not how to speak, for I am a child; I have put my words in thy mouth; the rod of an almond-tree and the boiling caldron from the north; the kindness of thy youth; they have forsaken me, the fountain of living waters, and hewed them out broken cisterns; and return, O backsliding children."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Evil from the North", "range": "Jeremiah 4–6", "bible_chapters": [4, 5, 6],
      "blurb": "Blow ye the trumpet in the land, set up a standard toward Zion; a lion is gone up from his thicket; my anguish, my anguish! I beheld the earth, and, lo, it was waste and void; run ye to and fro through the streets of Jerusalem, if ye can find a man; peace, peace, when there is no peace; ask for the old paths; and a people cometh from the north country."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Temple of Jehovah", "range": "Jeremiah 7–9", "bible_chapters": [7, 8, 9],
+     "blurb": "Stand in the gate of Jehovah's house: trust ye not in lying words, the temple of Jehovah, the temple of Jehovah; is this house become a den of robbers?; go ye now unto Shiloh; cakes to the queen of heaven and the valley of Slaughter; the stork knoweth her appointed times; is there no balm in Gilead?; oh that my head were waters; and let him that glorieth glory in this, that he knoweth me."},
   ],
 }

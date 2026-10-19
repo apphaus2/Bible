@@ -23,7 +23,7 @@ BABEL_C = "#2A4A6A"
 def jer_fig(p, x, y, s, age=1, flip=False, up=None, kind="Robe"):
     """Jeremiah at a distance: dark blue-grey robe and headcloth; no beard at his call (age 0), black (1), greying (2), grey (3)."""
     beard = ["", A.BLACK_BEARD, GREY_BEARD, OLD_BEARD][age]
-    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=JER_C, kind=kind, sw=3, flip=flip, up=up, extra=A.headcloth(JER_C, cord="#1A2230") + beard)
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=JER_C, kind=kind, sw=3, flip=flip, up=up, extra=A.headcloth("#56677E", cord="#1A2230") + beard)
 
 def jer_kneel(x, y, s, flip=False):
     return E.kneel(x, y, s, color=JER_C, skin="#9A6A4A", flip=flip)
@@ -597,4 +597,232 @@ def refiner(w, h, seed):
     o.append("".join(f'<ellipse cx="{f(w * r.uniform(0.7, 0.95))}" cy="{f(fy - r.uniform(0, h * 0.04))}" rx="{f(w * r.uniform(0.01, 0.025))}" ry="{f(h * 0.015)}" fill="#6A6A70" stroke="#0D0D0F" stroke-width="1.2"></ellipse>' for _ in range(12)))
     return "".join(o)
 
+# ---- the map of the nations (Jeremiah 9, 25, 46–51) -------------------------------------------------------------------------
+PLACES = {"JERUSALEM": (35.2, 31.8), "JUDAH": (35.0, 31.45), "GAZA": (34.45, 31.5), "ASHKELON": (34.55, 31.67), "ASHDOD": (34.65, 31.8), "EKRON": (34.85, 31.78),
+          "PHILISTIA": (34.5, 31.6), "TYRE": (35.2, 33.27), "SIDON": (35.37, 33.56), "DAMASCUS": (36.3, 33.5), "HAMATH": (36.75, 35.13), "ARPAD": (37.1, 36.5),
+          "AMMON": (36.0, 31.95), "RABBAH": (35.93, 31.95), "MOAB": (35.8, 31.3), "EDOM": (35.6, 30.6), "BOZRAH": (35.6, 30.7), "TEMAN": (35.4, 30.3),
+          "DEDAN": (37.9, 26.6), "TEMA": (38.55, 27.6), "BUZ": (39.2, 28.4), "KEDAR": (38.6, 30.6), "HAZOR": (40.2, 29.6), "ARABIA": (40.6, 29.2),
+          "BABYLON": (44.42, 32.54), "CHALDEA": (45.5, 31.3), "CARCHEMISH": (38.0, 36.83), "NINEVEH": (43.15, 36.36), "ELAM": (48.2, 32.2),
+          "THE MEDES": (47.8, 35.2), "EGYPT": (31.4, 28.2), "NOPH": (31.25, 29.85), "TAHPANHES": (32.0, 30.9), "MIGDOL": (32.5, 30.9), "PATHROS": (32.0, 26.4),
+          "ON": (31.3, 30.13), "RIBLAH": (36.55, 34.45), "ISRAEL": (35.3, 32.6), "SAMARIA": (35.2, 32.28), "GILEAD": (35.8, 32.3), "LEBANON": (35.9, 34.0),
+          "KITTIM": (33.2, 35.1), "MIZPAH": (35.22, 31.88), "ANATHOTH": (35.26, 31.81), "BETH-LEHEM": (35.2, 31.7), "RAMAH": (35.23, 31.86), "UZ": (36.6, 29.6),
+          "ARAM": (37.2, 34.6), "ASSYRIA": (42.8, 35.6), "PERSIA": (49.0, 30.5)}
+COAST = [(29.4, 31.1), (30.6, 31.5), (32.3, 31.2), (33.6, 31.1), (34.3, 31.35), (34.8, 32.1), (35.1, 33.2), (35.6, 34.0), (35.95, 34.8), (35.8, 35.9), (36.1, 36.6), (35.6, 36.9), (34.0, 36.4), (32.0, 36.4), (29.4, 36.6)]
+NILE = [(31.0, 24.0), (32.0, 25.4), (31.2, 27.2), (30.9, 28.4), (31.25, 30.1), (30.6, 31.4)]
+NILE2 = [(31.25, 30.1), (31.9, 31.35)]
+EUPHRATES = [(38.4, 38.2), (38.0, 36.8), (39.0, 35.9), (40.1, 35.0), (41.5, 34.4), (43.3, 33.3), (44.4, 32.5), (46.4, 31.0), (47.8, 30.4), (48.4, 30.0)]
+TIGRIS = [(41.6, 38.2), (43.15, 36.3), (43.6, 35.3), (44.3, 33.6), (45.8, 32.4), (47.4, 31.0), (47.8, 30.4)]
+JORDAN = [(35.62, 33.2), (35.6, 32.8), (35.55, 32.3), (35.55, 31.78)]
+ARNON = [(36.2, 31.5), (35.9, 31.45), (35.58, 31.47)]
+RED = [(32.55, 29.95), (32.7, 29.9), (33.6, 28.3), (34.25, 27.9), (34.5, 28.4), (34.9, 29.5), (35.05, 29.5), (34.7, 28.1), (34.6, 27.6), (36.6, 24.5), (35.6, 23.8), (33.9, 26.0), (33.6, 27.4), (32.6, 29.5)]
+GULF = [(47.9, 30.1), (48.6, 29.9), (50.6, 29.2), (50.6, 24.0), (49.2, 24.0), (48.6, 27.6), (47.9, 29.4)]
+
+def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), lit="#D7261E", title=None, dead_sea=True, size=10):
+    """A technical map of the nations round about Judah: the Great Sea, the Nile, the Euphrates and the Tigris, the Jordan; each
+    name in places marked (hi in red), arrows = [(from, to)] between named places; box = (lon0, lon1, lat0, lat1) to zoom."""
+    x0, x1, y0, y1 = box
+    def P(lon, lat): return (w * (lon - x0) / (x1 - x0), h * (1 - (lat - y0) / (y1 - y0)))
+    def path(pts): return " L ".join(f"{f(a)} {f(b)}" for a, b in (P(*q) for q in pts))
+    o = [grid_bg(w, h)]
+    sea = COAST + [(29.4, 38.5), (20.0, 38.5), (20.0, 31.0)]
+    o.append(f'<path d="M{path(sea)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.8"></path>')
+    o.append(f'<path d="M{path(RED)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.4"></path><path d="M{path(GULF)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.4"></path>')
+    for rv in (NILE, NILE2, EUPHRATES, TIGRIS, JORDAN, ARNON):
+        o.append(f'<path d="M{path(rv)}" fill="none" stroke="#2C9DB8" stroke-width="{3 if rv not in (JORDAN, ARNON) else 2}"></path>')
+    if dead_sea:
+        cx, cy = P(35.5, 31.5); rx = w * 0.12 / (x1 - x0); ry = h * 0.32 / (y1 - y0)
+        o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(max(2, rx))}" ry="{f(max(4, ry))}" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.4"></ellipse>')
+    for a, b in arrows:
+        o.append(route([P(*PLACES[a]), P(*PLACES[b])], color=lit, sw=2.6))
+    for nm in places:
+        x, y = P(*PLACES[nm])
+        c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2")
+        o.append(node(x, y, nm, c, r=5 if nm in hi else 3.5, dy=-9, size=size))
+    if title: o.append(label(w - 12, h - 14, title, "#8FD0E2", 9, anchor="end"))
+    return "".join(o)
+
 # ---- Jeremiah 7–9 ---------------------------------------------------------------------------------------------------------
+def temple_gate(p, w, h, seed, age=1):
+    """Stand in the gate of Jehovah's house, and proclaim there this word: the prophet in the gate, his arm raised, the people
+    of Judah going in to worship."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FB0C8", "#F3E0B0"), temple_front(w * 0.66, h * 0.62, w * 0.5, seed), ground(w, h, h * 0.62, "#D8C8A0", dy=0),
+         f'<rect x="{f(w * 0.02)}" y="{f(h * 0.24)}" width="{f(w * 0.06)}" height="{f(h * 0.7)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<rect x="{f(w * 0.26)}" y="{f(h * 0.24)}" width="{f(w * 0.06)}" height="{f(h * 0.7)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<rect x="{f(w * 0.0)}" y="{f(h * 0.18)}" width="{f(w * 0.34)}" height="{f(h * 0.07)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2.4"></rect>']
+    s = fit(b, max(h * 0.4, b - 230))
+    o.append(jer_fig(p, w * 0.17, b, s, age=age, up=[(-22, -158), (-44, -186), (-56, -220)]))
+    o.append(crowd_at(p, w, h, seed, w * 0.4, w * 0.98, h * 0.68, b, 14, s * 0.55, s * 0.95))
+    return "".join(o)
+
+def shiloh_ruins(w, h, seed):
+    """Go ye now unto my place which was in Shiloh, and see what I did to it: an empty hilltop, the stones of the court thrown
+    down, grass growing through."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#8A9AA8", "#E8D8C0"), hills(w, h, h * 0.5, seed, "#7A8A5A", amp=10, step=90),
+         f'<path d="M-10 {f(h + 10)} C {f(w * 0.2)} {f(h * 0.56)} {f(w * 0.7)} {f(h * 0.5)} {f(w + 10)} {f(h * 0.7)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A9A5A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(16):
+        x = w * (0.2 + i * 0.04) + r.uniform(-6, 6); y = h * 0.66 + r.uniform(-8, 12)
+        o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w * 0.03)}" height="{f(h * r.uniform(0.03, 0.08))}" transform="rotate({r.uniform(-30, 30):.0f} {f(x)} {f(y)})" fill="#B8A88A" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    for i in range(3):
+        x = w * (0.32 + i * 0.16)
+        o.append(f'<rect x="{f(x)}" y="{f(h * 0.5)}" width="{f(w * 0.025)}" height="{f(h * (0.16 - i * 0.04))}" fill="#B8A88A" stroke="#0D0D0F" stroke-width="1.8"></rect>')
+    return "".join(o)
+
+def queen_heaven(p, w, h, seed):
+    """The children gather wood, the fathers kindle the fire, the women knead the dough, to make cakes to the queen of heaven:
+    a household at an outdoor oven under the night sky and the moon."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), night(w, h, seed, "#1A1430"), J.moon(w * 0.84, h * 0.18, min(w, h) * 0.06), ground(w, h, h * 0.66, "#3A2E28", dy=0),
+         f'<path d="M{f(w * 0.48)} {f(b)} L {f(w * 0.5)} {f(h * 0.62)} Q {f(w * 0.56)} {f(h * 0.54)} {f(w * 0.62)} {f(h * 0.62)} L {f(w * 0.64)} {f(b)} Z" fill="#8A5A3A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         E.blaze(w * 0.56, b - 4, w * 0.06, h * 0.14, seed, n=4)]
+    s = fit(b, max(h * 0.4, b - 220))
+    o.append(man(p, w * 0.38, b, s, "#5A3A2A", extra=A.headcloth("#5A3A2A") + A.BLACK_BEARD))
+    o.append(S1.boy(p, w * 0.24, b, s * 0.62).replace("#F3EFE6", "#8A6A4A"))
+    for i in range(2): o.append(E.kneel(w * (0.74 + i * 0.12), b, s * 0.8, color=["#7A3A4A", "#5A4A6A"][i], skin="#9A6A4A", flip=True))
+    o.append(f'<ellipse cx="{f(w * 0.8)}" cy="{f(b - 6)}" rx="{f(w * 0.06)}" ry="{f(h * 0.02)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    return "".join(o)
+
+def topheth(w, h, seed):
+    """The high places of Topheth in the valley of the son of Hinnom: a dark valley below the city wall, altars smoking (no one
+    drawn) — the valley of Slaughter."""
+    o = [K2.sky(w, h, "#1A0A12", "#6A2A1A"), wall(w * 0.5, w + 10, h * 0.18, h * 0.42, seed, towers=3, color="#8A7A6A"),
+         f'<path d="M-10 {f(h * 0.4)} C {f(w * 0.2)} {f(h * 0.44)} {f(w * 0.4)} {f(h * 0.74)} {f(w * 0.5)} {f(h * 0.8)} C {f(w * 0.6)} {f(h * 0.74)} {f(w * 0.8)} {f(h * 0.5)} {f(w + 10)} {f(h * 0.42)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#2A1A1A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i, x in enumerate((0.3, 0.5, 0.68)):
+        y = h * (0.78 + (i % 2) * 0.04)
+        o.append(f'<rect x="{f(w * x - 14)}" y="{f(y - 18)}" width="28" height="18" fill="#5A4A4A" stroke="#0D0D0F" stroke-width="1.8"></rect>')
+        o.append(E.blaze(w * x, y - 18, 26, h * 0.1, seed + i, n=4) + smoke(w * x, y - h * 0.16, 7, seed + i, w=0.6))
+    return "".join(o)
+
+def open_tombs(w, h, seed):
+    """The graves opened under the sun and the moon and all the host of heaven which they worshipped: sepulchres cut in the
+    hillside, their stones rolled away, the sky above both day and night."""
+    o = [K2.sky(w, h, "#1A1A3A", "#C88A5A"), mk.stars(30, w, h * 0.4, seed), J.moon(w * 0.18, h * 0.16, min(w, h) * 0.05),
+         sun(w * 0.84, h * 0.3, min(w, h) * 0.05, color="#FFC14D", op=0.25),
+         f'<path d="M-10 {f(h * 0.5)} C {f(w * 0.3)} {f(h * 0.4)} {f(w * 0.7)} {f(h * 0.46)} {f(w + 10)} {f(h * 0.42)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#8A6A5A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i in range(5):
+        x = w * (0.12 + i * 0.19); y = h * (0.66 + (i % 2) * 0.08); r_ = min(w * 0.05, h * 0.1)
+        o.append(f'<path d="M{f(x - r_)} {f(y + r_)} L {f(x - r_)} {f(y)} Q {f(x)} {f(y - r_ * 1.2)} {f(x + r_)} {f(y)} L {f(x + r_)} {f(y + r_)} Z" fill="#1A1210" stroke="#0D0D0F" stroke-width="2.2"></path>'
+                 f'<circle cx="{f(x + r_ * 1.8)}" cy="{f(y + r_ * 0.4)}" r="{f(r_ * 0.7)}" fill="#A89A8A" stroke="#0D0D0F" stroke-width="2"></circle>')
+    return "".join(o)
+
+def migrants(w, h, seed):
+    """The stork in the heavens knoweth her appointed times; the turtle-dove and the swallow and the crane observe the time of
+    their coming: long lines of birds crossing the sky over the hills."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#6A8AB0", "#F3D8B0"), hills(w, h, h * 0.78, seed, "#6A7A5A", amp=10, step=80)]
+    for k in range(3):
+        bx, by = w * (0.2 + k * 0.28), h * (0.24 + k * 0.12)
+        for i in range(7):
+            o.append(bird(bx + i * 14 * (1 + k * 0.3), by + abs(i - 3) * 8, 1.0 + k * 0.4))
+    return "".join(o)
+
+def withered(w, h, seed):
+    """No grapes on the vine, nor figs on the fig-tree, and the leaf shall fade."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#C8A070", "#F3E0B0"), ground(w, h, h * 0.8, "#A8845A", dy=0)]
+    for k in range(2):
+        x = w * (0.3 + k * 0.4)
+        o.append(f'<path d="M{f(x)} {f(h * 0.82)} C {f(x - 10)} {f(h * 0.6)} {f(x + 20)} {f(h * 0.5)} {f(x)} {f(h * 0.3)}" stroke="#5A3A1E" stroke-width="{8 if k else 5}" fill="none"></path>')
+        for _ in range(9):
+            a = r.uniform(-1, 1); y = h * r.uniform(0.3, 0.6)
+            o.append(f'<path d="M{f(x)} {f(y)} l {f(a * w * 0.12)} {f(-h * 0.06)}" stroke="#5A3A1E" stroke-width="3"></path>'
+                     f'<path d="M{f(x + a * w * 0.12)} {f(y - h * 0.06)} l 8 -4 l 2 10 Z" fill="{r.choice(["#A88A3A", "#8A6A2A", "#C8A050"])}" stroke="#0D0D0F" stroke-width="1"></path>')
+        for _ in range(5):
+            o.append(f'<path d="M{f(x + r.uniform(-60, 60))} {f(h * r.uniform(0.84, 0.95))} l 8 -3 l 2 8 Z" fill="#8A6A2A" stroke="#0D0D0F" stroke-width="1"></path>')
+    return "".join(o)
+
+def adders(w, h, seed):
+    """I will send serpents, adders, among you, which will not be charmed: two vipers on the stony ground."""
+    import snake as SN
+    o = [K2.sky(w, h, "#8A6A4A", "#E8C890"), ground(w, h, h * 0.5, "#C8A06A", dy=0)]
+    r = random.Random(seed)
+    o.append("".join(f'<ellipse cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(h * 0.55, h))}" rx="{f(r.uniform(6, 16))}" ry="{f(r.uniform(4, 8))}" fill="#A88A5A" stroke="#0D0D0F" stroke-width="1.2"></ellipse>' for _ in range(16)))
+    s = min(1.0, h / 260)
+    o.append(SN.snake([(w * 0.1, h * 0.86), (w * 0.2, h * 0.76), (w * 0.3, h * 0.86), (w * 0.4, h * 0.74), (w * 0.46, h * 0.66)], 16 * s, f"ad{seed}a"))
+    o.append(SN.snake([(w * 0.6, h * 0.92), (w * 0.68, h * 0.84), (w * 0.76, h * 0.92), (w * 0.84, h * 0.82), (w * 0.9, h * 0.7)], 14 * s, f"ad{seed}b"))
+    return "".join(o)
+
+def harvest_past(w, h, seed):
+    """The harvest is past, the summer is ended, and we are not saved: a reaped field of stubble at the end of the year."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#4A3A5A", "#E8906A"), sun(w * 0.7, h * 0.52, min(w, h) * 0.05, color="#FF8A3D", op=0.3), hills(w, h, h * 0.56, seed, "#5A4A4A", amp=8, step=90),
+         ground(w, h, h * 0.62, "#B8945A", dy=0)]
+    o.append("".join(f'<path d="M{f(x)} {f(y)} l -2 -10 M{f(x + 4)} {f(y)} l 2 -9" stroke="#8A6A3A" stroke-width="1.6"></path>'
+                     for x, y in ((r.uniform(0, w), r.uniform(h * 0.66, h)) for _ in range(70))))
+    return "".join(o)
+
+def gilead(w, h, seed):
+    """Is there no balm in Gilead? is there no physician there?: the wooded hills of Gilead beyond the Jordan, a sealed jar of
+    balm in the foreground."""
+    o = [K2.sky(w, h, "#7A9AB8", "#F3E0B0"), hills(w, h, h * 0.42, seed, "#3E6A3A", amp=18, step=60), hills(w, h, h * 0.56, seed + 1, "#2E5A2A", amp=12, step=50),
+         f'<path d="M-10 {f(h * 0.72)} C {f(w * 0.3)} {f(h * 0.66)} {f(w * 0.6)} {f(h * 0.76)} {f(w + 10)} {f(h * 0.7)}" stroke="#2C9DB8" stroke-width="5" fill="none"></path>',
+         ground(w, h, h * 0.76, "#C8A870", dy=0)]
+    jx, jy, s = w * 0.78, h * 0.96, min(1.0, h / 260)
+    o.append(f'<path d="M{f(jx - 22 * s)} {f(jy)} C {f(jx - 34 * s)} {f(jy - 50 * s)} {f(jx - 20 * s)} {f(jy - 70 * s)} {f(jx - 10 * s)} {f(jy - 78 * s)} L {f(jx + 10 * s)} {f(jy - 78 * s)} C {f(jx + 20 * s)} {f(jy - 70 * s)} {f(jx + 34 * s)} {f(jy - 50 * s)} {f(jx + 22 * s)} {f(jy)} Z" fill="#C8783A" stroke="#0D0D0F" stroke-width="2.2"></path>'
+             f'<rect x="{f(jx - 12 * s)}" y="{f(jy - 88 * s)}" width="{f(24 * s)}" height="{f(12 * s)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.8"></rect>')
+    return "".join(o)
+
+def lodging(w, h, seed):
+    """Oh that I had in the wilderness a lodging-place of wayfaring men: a lone khan of stone in the desert at evening."""
+    o = [K2.sky(w, h, "#3A2A4A", "#E8A070"), hills(w, h, h * 0.6, seed, "#8A5A4A", amp=14, step=80), ground(w, h, h * 0.7, "#C8946A", dy=0),
+         f'<rect x="{f(w * 0.56)}" y="{f(h * 0.5)}" width="{f(w * 0.24)}" height="{f(h * 0.22)}" fill="#B89A7A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+         f'<rect x="{f(w * 0.65)}" y="{f(h * 0.6)}" width="{f(w * 0.05)}" height="{f(h * 0.12)}" fill="#2A1E1A" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+         f'<path d="M{f(w * 0.2)} {f(h + 10)} C {f(w * 0.4)} {f(h * 0.86)} {f(w * 0.5)} {f(h * 0.76)} {f(w * 0.66)} {f(h * 0.72)}" stroke="#E8D0A0" stroke-width="4" fill="none" stroke-dasharray="12 8"></path>']
+    return "".join(o)
+
+def bow_arrows(w, h, seed):
+    """They bend their tongue as it were their bow, for falsehood; their tongue is a deadly arrow: a drawn bow and arrows."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2A"></rect>', V.rays(w * 0.5, h * 0.6, 24, 10, max(w, h), color="#D7261E", op=0.12)]
+    cx, cy, R = w * 0.4, h * 0.6, min(w * 0.3, h * 0.4)
+    o.append(f'<path d="M{f(cx)} {f(cy - R)} Q {f(cx - R * 0.9)} {f(cy)} {f(cx)} {f(cy + R)}" stroke="#8A5A2A" stroke-width="7" fill="none" stroke-linecap="round"></path>'
+             f'<path d="M{f(cx)} {f(cy - R)} L {f(cx - R * 0.3)} {f(cy)} L {f(cx)} {f(cy + R)}" stroke="#E8D8B0" stroke-width="2" fill="none"></path>'
+             f'<path d="M{f(cx - R * 0.3)} {f(cy)} L {f(cx + R * 1.2)} {f(cy)}" stroke="#5A3A1E" stroke-width="4"></path>'
+             f'<path d="M{f(cx + R * 1.2)} {f(cy - 8)} L {f(cx + R * 1.32)} {f(cy)} L {f(cx + R * 1.2)} {f(cy + 8)} Z" fill="#A8A8B0" stroke="#0D0D0F" stroke-width="1.6"></path>')
+    return "".join(o)
+
+def jackal_heaps(w, h, seed):
+    """I will make Jerusalem heaps, a dwelling-place of jackals: broken walls and heaps of stones, a jackal among them."""
+    o = [K2.sky(w, h, "#5A4A5A", "#D8A880"), wall(-10, w * 0.4, h * 0.44, h * 0.76, seed, towers=2, breach=(w * 0.1, w * 0.28), color="#B8A07A"),
+         J.collapse(w * 0.4, w + 10, h * 0.78, h * 0.3, seed + 1, color="#B8A07A"), ground(w, h, h * 0.78, "#8A7A5A", dy=0),
+         S4b.stone_heap(w * 0.7, h * 0.92, w * 0.24, h * 0.16, seed), grey_fox(w * 0.36, h * 0.94, min(1.0, h / 280), flip=False)]
+    return "".join(o)
+
+def wormwood(w, h, seed):
+    """I will feed them with wormwood, and give them water of gall to drink: a grey-green bitter herb and a dark cup."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#3A3A3A", "#8A8A7A"), ground(w, h, h * 0.8, "#5A5048", dy=0)]
+    for _ in range(9):
+        x = w * r.uniform(0.1, 0.5)
+        o.append(f'<path d="M{f(x)} {f(h * 0.82)} q {f(r.uniform(-20, 20))} {f(-h * 0.2)} {f(r.uniform(-10, 10))} {f(-h * r.uniform(0.3, 0.5))}" stroke="#7A8A6A" stroke-width="3" fill="none"></path>')
+        for k in range(4):
+            o.append(f'<ellipse cx="{f(x + r.uniform(-14, 14))}" cy="{f(h * r.uniform(0.4, 0.78))}" rx="7" ry="3" fill="#9AA88A" stroke="#0D0D0F" stroke-width="1"></ellipse>')
+    cx, cy, s = w * 0.72, h * 0.8, min(1.2, h / 220)
+    o.append(f'<path d="M{f(cx - 36 * s)} {f(cy - 60 * s)} L {f(cx + 36 * s)} {f(cy - 60 * s)} Q {f(cx + 30 * s)} {f(cy - 20 * s)} {f(cx + 6 * s)} {f(cy - 14 * s)} L {f(cx + 6 * s)} {f(cy - 4 * s)} L {f(cx + 20 * s)} {f(cy)} L {f(cx - 20 * s)} {f(cy)} L {f(cx - 6 * s)} {f(cy - 4 * s)} L {f(cx - 6 * s)} {f(cy - 14 * s)} Q {f(cx - 30 * s)} {f(cy - 20 * s)} {f(cx - 36 * s)} {f(cy - 60 * s)} Z" fill="#6A6A70" stroke="#0D0D0F" stroke-width="2.2"></path>'
+             f'<ellipse cx="{f(cx)}" cy="{f(cy - 60 * s)}" rx="{f(36 * s)}" ry="{f(6 * s)}" fill="#2A3A1A" stroke="#0D0D0F" stroke-width="1.6"></ellipse>')
+    return "".join(o)
+
+def mourners(p, w, h, seed, standing=True):
+    """Call for the mourning women, and let them take up a wailing for us: women in dark mantles, their hands raised, by the gate."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#3A3A4A", "#A89A9A"), wall(-10, w + 10, h * 0.42, h * 0.74, seed, towers=4, gate=w * 0.8, color="#A89A8A"), ground(w, h, h * 0.74, "#7A7068", dy=0)]
+    s = fit(b, max(h * 0.44, b - 210))
+    for i in range(5):
+        x = w * (0.1 + i * 0.13)
+        if i % 2 == 0 and standing: o.append(woman(p, x, b, s * (0.94 + (i % 3) * 0.03), ["#3A3440", "#4A3A3A", "#2E2E3A"][i % 3], up=[(-22, -158), (-40, -190), (-46, -226)]))
+        else: o.append(E.kneel(x, b, s * 0.85, color=["#3A3440", "#4A3A3A", "#2E2E3A"][i % 3], skin="#8A6A5A"))
+    return "".join(o)
+
+def handful(w, h, seed):
+    """As the handful after the harvestman, and none shall gather them: an open field, single sheaves left lying where they fell
+    (told in words; no one drawn)."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#5A4A5A", "#D8B080"), hills(w, h, h * 0.5, seed, "#6A5A4A", amp=8, step=90), ground(w, h, h * 0.56, "#B8945A", dy=0)]
+    for _ in range(9):
+        x, y = r.uniform(w * 0.05, w * 0.95), r.uniform(h * 0.64, h * 0.95)
+        o.append(f'<g transform="rotate({r.uniform(-70, 70):.0f} {f(x)} {f(y)})">' + R1.sheaf(x, y, min(0.6, h / 500)) + '</g>')
+    return "".join(o)
+
+def glory_knowledge(w, h, seed):
+    """Let him that glorieth glory in this, that he knoweth me: dawn over the hills, a light on the land (no figure)."""
+    return K2.sky(w, h, "#3A3A7A", "#FFD890") + sun(w * 0.5, h * 0.7, min(w, h) * 0.07, color="#FFE680", op=0.4) + hills(w, h, h * 0.72, seed, "#3A4A3A", amp=12, step=70)
