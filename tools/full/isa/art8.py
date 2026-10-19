@@ -65,7 +65,7 @@ def cornerstone(w, h):
     o.append(f'<path d="M{f(lx)} {f(h * 0.14)} L {f(lx)} {f(base - 30)}" stroke="#F3EFE6" stroke-width="1.6"></path>'
              f'<path d="M{f(lx - 10)} {f(base - 30)} L {f(lx + 10)} {f(base - 30)} L {f(lx)} {f(base - 6)} Z" fill="#B87333" stroke="#0D0D0F" stroke-width="1.4"></path>'
              f'<path d="M{f(w * 0.5)} {f(base - u * 0.62)} L {f(w * 0.96)} {f(base - u * 0.62)}" stroke="#FFD23F" stroke-width="1.6" stroke-dasharray="10 4"></path>')
-    o.append(tag(lx, h * 0.5, "RIGHTEOUSNESS · THE PLUMMET", lx - 20, h * 0.36) + tag(w * 0.62, base - u * 0.62, "JUSTICE · THE LINE", w * 0.56, base - u * 0.8, color=GOLD))
+    o.append(tag(lx, h * 0.5, "RIGHTEOUSNESS · THE PLUMMET", lx - 20, h * 0.36) + tag(w * 0.64, base - u * 0.62, "JUSTICE · THE LINE", w * 0.6, base - u * 0.62 + 34, color=GOLD))
     return "".join(o)
 
 def short_bed(w, h):
@@ -101,8 +101,8 @@ def threshing(w, h):
     """The fitches are beaten out with a staff, and the cummin with a rod; bread grain is ground, the cart wheel turned upon
     it: three cells of a plate."""
     o = [bp(w, h), title_bar(w, "THE FITCHES · THE CUMMIN · BREAD GRAIN")]
-    s = min(1.0, h / 200); cw = w / 3; b = h * 0.8
-    for i, (nm, tool) in enumerate((("THE FITCHES · A STAFF", "staff"), ("THE CUMMIN · A ROD", "rod"), ("BREAD GRAIN · THE CART WHEEL", "wheel"))):
+    s = min(1.0, h / 200); cw = w / 3; b = h * 0.72
+    for i, (nm, tool) in enumerate((("THE FITCHES · A STAFF", "staff"), ("THE CUMMIN · A ROD", "rod"), ("BREAD GRAIN · A CART WHEEL", "wheel"))):
         cx = cw * (i + 0.5)
         o.append(f'<ellipse cx="{f(cx)}" cy="{f(b)}" rx="{f(cw * 0.36)}" ry="{f(10 * s)}" fill="#C8A060" stroke="#8FD0E2" stroke-width="1.4"></ellipse>')
         if tool == "wheel":
@@ -111,7 +111,7 @@ def threshing(w, h):
         else:
             ln = 90 if tool == "staff" else 60
             o.append(f'<path d="M{f(cx - ln * 0.5 * s)} {f(b - 70 * s)} L {f(cx + ln * 0.5 * s)} {f(b - 10 * s)}" stroke="#8A5A2A" stroke-width="{f((7 if tool == "staff" else 4) * s)}" stroke-linecap="round"></path>')
-        o.append(label(cx, b + 26 * s, nm, CYAN, 9))
+        o.append(label(cx, b - 96 * s, nm, CYAN, 9))
     return "".join(o)
 
 def dreamer(w, h, seed):

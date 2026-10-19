@@ -50,7 +50,7 @@ SEGS = (
     + S("14:28-32", "god", [A(lambda w, h: K.serpents_root(w, h, 412), MAP), ISAIAH_STERN], kinds={28: "cap", 31: "say", 32: "say"}, head="The Burden of Philistia", split=[30])
     + S("15:1-4", "say", [A(lambda w, h: K.moab_map(w, h, hi=("AR", "KIR", "DIBON", "NEBO", "MEDEBA", "HESHBON", "ELEALEH", "JAHAZ")), MAP), A(lambda w, h: K.housetops("ht4", w, h, 413), "#4A3A5A")],
         pre=("cap", "The burden of Moab."), head="The Burden of Moab", split=[3])
-    + S("15:5-9", "say", [ISAIAH_GRIEF, A(lambda w, h: K.moab_map(w, h, hi=("ZOAR", "LUHITH", "HORONAIM", "EGLAIM", "BEER-ELIM")), MAP)], at={9: A(lambda w, h: K.dimon("dm4", w, h, 414), "#5A1A1A")}, split=[8])
+    + S("15:5-9", "say", [ISAIAH_GRIEF, A(lambda w, h: K.moab_map(w, h, hi=("ZOAR", "LUHITH", "HORONAIM", "EGLAIM", "BEER-ELIM")), MAP, h=330)], at={9: A(lambda w, h: K.dimon("dm4", w, h, 414), "#5A1A1A")}, split=[8])
     + S("16:1-2", "say", [A(lambda w, h: K.lambs_selah("ls4", w, h, 415), "#C8A880"), A(lambda w, h: K.arnon_fords(w, h, 416), "#8FB0C8")], split=[2])
     + S("16:3-5", "say", [ISAIAH, A(lambda w, h: K.tent_throne("tt4", w, h, 417), "#8FB0D8")], split=[5])
     + S("16:6-8", "say", [ISAIAH_GRIEF, A(lambda w, h: K.sibmah(w, h, 418), "#A88A6A")], split=[8], head="The Vine of Sibmah")

@@ -360,19 +360,12 @@
    "h": 1080,
    "title": "46 · An Ensign for the Nations"
   },
-  "ISA-C03-D-P10-AnEnsignForTheNati.dc.html": {
+  "ISA-C03-D-P10-TheWellsOfSalvatio.dc.html": {
    "x": 0,
    "y": 16200,
    "w": 760,
    "h": 1080,
-   "title": "47 · An Ensign for the Nations"
-  },
-  "ISA-C03-D-P11-TheWellsOfSalvatio.dc.html": {
-   "x": 840,
-   "y": 16200,
-   "w": 760,
-   "h": 1080,
-   "title": "48 · The Wells of Salvation"
+   "title": "47 · The Wells of Salvation"
   },
   "ISA-C04-00-Title.dc.html": {
    "x": 0,
@@ -386,105 +379,105 @@
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "49 · The Burden of Babylon"
+   "title": "48 · The Burden of Babylon"
   },
   "ISA-C04-D-P02-TheDayOfJehovah.dc.html": {
    "x": 1680,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "50 · The Day of Jehovah"
+   "title": "49 · The Day of Jehovah"
   },
   "ISA-C04-D-P03-TheDayOfJehovah.dc.html": {
    "x": 2520,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "51 · The Day of Jehovah"
+   "title": "50 · The Day of Jehovah"
   },
   "ISA-C04-D-P04-BabylonTheGloryOfK.dc.html": {
    "x": 3360,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "52 · Babylon, the Glory of Kingdoms"
+   "title": "51 · Babylon, the Glory of Kingdoms"
   },
   "ISA-C04-D-P05-TheParableAgainstT.dc.html": {
    "x": 0,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "53 · The Parable against the King of Babylon"
+   "title": "52 · The Parable against the King of Babylon"
   },
   "ISA-C04-D-P06-HowArtThouFallenFr.dc.html": {
    "x": 840,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "54 · How Art Thou Fallen from Heaven"
+   "title": "53 · How Art Thou Fallen from Heaven"
   },
   "ISA-C04-D-P07-HowArtThouFallenFr.dc.html": {
    "x": 1680,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "55 · How Art Thou Fallen from Heaven"
+   "title": "54 · How Art Thou Fallen from Heaven"
   },
   "ISA-C04-D-P08-HowArtThouFallenFr.dc.html": {
    "x": 2520,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "56 · How Art Thou Fallen from Heaven"
+   "title": "55 · How Art Thou Fallen from Heaven"
   },
   "ISA-C04-D-P09-HowArtThouFallenFr.dc.html": {
    "x": 3360,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "57 · How Art Thou Fallen from Heaven"
+   "title": "56 · How Art Thou Fallen from Heaven"
   },
   "ISA-C04-D-P10-TheBurdenOfPhilist.dc.html": {
    "x": 0,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "58 · The Burden of Philistia"
+   "title": "57 · The Burden of Philistia"
   },
   "ISA-C04-D-P11-TheBurdenOfMoab.dc.html": {
    "x": 840,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "59 · The Burden of Moab"
+   "title": "58 · The Burden of Moab"
   },
   "ISA-C04-D-P12-TheBurdenOfMoab.dc.html": {
    "x": 1680,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "60 · The Burden of Moab"
+   "title": "59 · The Burden of Moab"
   },
   "ISA-C04-D-P13-TheBurdenOfMoab.dc.html": {
    "x": 2520,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "61 · The Burden of Moab"
+   "title": "60 · The Burden of Moab"
   },
   "ISA-C04-D-P14-TheVineOfSibmah.dc.html": {
    "x": 3360,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "62 · The Vine of Sibmah"
+   "title": "61 · The Vine of Sibmah"
   },
   "ISA-C04-D-P15-TheVineOfSibmah.dc.html": {
    "x": 0,
    "y": 21500,
    "w": 760,
    "h": 1080,
-   "title": "63 · The Vine of Sibmah"
+   "title": "62 · The Vine of Sibmah"
   },
   "ISA-C05-00-Title.dc.html": {
    "x": 0,
@@ -498,84 +491,84 @@
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "64 · The Burden of Damascus"
+   "title": "63 · The Burden of Damascus"
   },
   "ISA-C05-D-P02-TheBurdenOfDamascu.dc.html": {
    "x": 1680,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "65 · The Burden of Damascus"
+   "title": "64 · The Burden of Damascus"
   },
   "ISA-C05-D-P03-TheBurdenOfDamascu.dc.html": {
    "x": 2520,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "66 · The Burden of Damascus"
+   "title": "65 · The Burden of Damascus"
   },
   "ISA-C05-D-P04-BeyondTheRiversOfE.dc.html": {
    "x": 3360,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "67 · Beyond the Rivers of Ethiopia"
+   "title": "66 · Beyond the Rivers of Ethiopia"
   },
   "ISA-C05-D-P05-BeyondTheRiversOfE.dc.html": {
    "x": 0,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "68 · Beyond the Rivers of Ethiopia"
+   "title": "67 · Beyond the Rivers of Ethiopia"
   },
   "ISA-C05-D-P06-TheBurdenOfEgypt.dc.html": {
    "x": 840,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "69 · The Burden of Egypt"
+   "title": "68 · The Burden of Egypt"
   },
   "ISA-C05-D-P07-TheBurdenOfEgypt.dc.html": {
    "x": 1680,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "70 · The Burden of Egypt"
+   "title": "69 · The Burden of Egypt"
   },
   "ISA-C05-D-P08-ThePrincesOfZoan.dc.html": {
    "x": 2520,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "71 · The Princes of Zoan"
+   "title": "70 · The Princes of Zoan"
   },
   "ISA-C05-D-P09-AnAltarToJehovahIn.dc.html": {
    "x": 3360,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "72 · An Altar to Jehovah in Egypt"
+   "title": "71 · An Altar to Jehovah in Egypt"
   },
   "ISA-C05-D-P10-AnAltarToJehovahIn.dc.html": {
    "x": 0,
    "y": 25600,
    "w": 760,
    "h": 1080,
-   "title": "73 · An Altar to Jehovah in Egypt"
+   "title": "72 · An Altar to Jehovah in Egypt"
   },
   "ISA-C05-D-P11-NakedAndBarefoot.dc.html": {
    "x": 840,
    "y": 25600,
    "w": 760,
    "h": 1080,
-   "title": "74 · Naked and Barefoot"
+   "title": "73 · Naked and Barefoot"
   },
   "ISA-C05-D-P12-NakedAndBarefoot.dc.html": {
    "x": 1680,
    "y": 25600,
    "w": 760,
    "h": 1080,
-   "title": "75 · Naked and Barefoot"
+   "title": "74 · Naked and Barefoot"
   },
   "ISA-C06-00-Title.dc.html": {
    "x": 0,
@@ -589,80 +582,87 @@
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "76 · The Wilderness of the Sea"
+   "title": "75 · The Wilderness of the Sea"
   },
   "ISA-C06-D-P02-SetAWatchman.dc.html": {
    "x": 1680,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "77 · Set a Watchman"
+   "title": "76 · Set a Watchman"
   },
   "ISA-C06-D-P03-WatchmanWhatOfTheN.dc.html": {
    "x": 2520,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "78 · Watchman, What of the Night?"
+   "title": "77 · Watchman, What of the Night?"
   },
   "ISA-C06-D-P04-TheBurdenUponArabi.dc.html": {
    "x": 3360,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "79 · The Burden upon Arabia"
+   "title": "78 · The Burden upon Arabia"
   },
   "ISA-C06-D-P05-TheValleyOfVision.dc.html": {
    "x": 0,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "80 · The Valley of Vision"
+   "title": "79 · The Valley of Vision"
   },
   "ISA-C06-D-P06-TheValleyOfVision.dc.html": {
    "x": 840,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "81 · The Valley of Vision"
+   "title": "80 · The Valley of Vision"
   },
   "ISA-C06-D-P07-ShebnaTheTreasurer.dc.html": {
    "x": 1680,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "82 · Shebna the Treasurer"
+   "title": "81 · Shebna the Treasurer"
   },
   "ISA-C06-D-P08-EliakimTheSonOfHil.dc.html": {
    "x": 2520,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "83 · Eliakim the Son of Hilkiah"
+   "title": "82 · Eliakim the Son of Hilkiah"
   },
   "ISA-C06-D-P09-HowlYeShipsOfTarsh.dc.html": {
    "x": 3360,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "84 · Howl, Ye Ships of Tarshish"
+   "title": "83 · Howl, Ye Ships of Tarshish"
   },
   "ISA-C06-D-P10-HowlYeShipsOfTarsh.dc.html": {
    "x": 0,
    "y": 29700,
    "w": 760,
    "h": 1080,
+   "title": "84 · Howl, Ye Ships of Tarshish"
+  },
+  "ISA-C06-D-P11-HowlYeShipsOfTarsh.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
    "title": "85 · Howl, Ye Ships of Tarshish"
   },
-  "ISA-C06-D-P11-SeventyYears.dc.html": {
-   "x": 840,
+  "ISA-C06-D-P12-SeventyYears.dc.html": {
+   "x": 1680,
    "y": 29700,
    "w": 760,
    "h": 1080,
    "title": "86 · Seventy Years"
   },
-  "ISA-C06-D-P12-SeventyYears.dc.html": {
-   "x": 1680,
+  "ISA-C06-D-P13-SeventyYears.dc.html": {
+   "x": 2520,
    "y": 29700,
    "w": 760,
    "h": 1080,
@@ -808,12 +808,12 @@
    "h": 1080,
    "title": "105 · Doth He That Ploweth Plow Continually?"
   },
-  "ISA-C08-D-P06-HoAriel.dc.html": {
+  "ISA-C08-D-P06-DothHeThatPlowethP.dc.html": {
    "x": 840,
    "y": 36700,
    "w": 760,
    "h": 1080,
-   "title": "106 · Ho Ariel"
+   "title": "106 · Doth He That Ploweth Plow Continually?"
   },
   "ISA-C08-D-P07-HoAriel.dc.html": {
    "x": 1680,
@@ -822,19 +822,19 @@
    "h": 1080,
    "title": "107 · Ho Ariel"
   },
-  "ISA-C08-D-P08-ABookThatIsSealed.dc.html": {
+  "ISA-C08-D-P08-HoAriel.dc.html": {
    "x": 2520,
    "y": 36700,
    "w": 760,
    "h": 1080,
-   "title": "108 · A Book That Is Sealed"
+   "title": "108 · Ho Ariel"
   },
-  "ISA-C08-D-P09-ThePotterAndTheCla.dc.html": {
+  "ISA-C08-D-P09-ABookThatIsSealed.dc.html": {
    "x": 3360,
    "y": 36700,
    "w": 760,
    "h": 1080,
-   "title": "109 · The Potter and the Clay"
+   "title": "109 · A Book That Is Sealed"
   },
   "ISA-C08-D-P10-ThePotterAndTheCla.dc.html": {
    "x": 0,
@@ -857,12 +857,12 @@
    "h": 1080,
    "title": "112 · Woe to the Rebellious Children"
   },
-  "ISA-C08-D-P13-InReturningAndRest.dc.html": {
+  "ISA-C08-D-P13-WoeToTheRebellious.dc.html": {
    "x": 2520,
    "y": 37900,
    "w": 760,
    "h": 1080,
-   "title": "113 · In Returning and Rest"
+   "title": "113 · Woe to the Rebellious Children"
   },
   "ISA-C08-D-P14-ThisIsTheWayWalkYe.dc.html": {
    "x": 3360,
@@ -892,6 +892,13 @@
    "h": 1080,
    "title": "117 · The Name of Jehovah Cometh from Far"
   },
+  "ISA-C08-D-P18-TheNameOfJehovahCo.dc.html": {
+   "x": 2520,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Name of Jehovah Cometh from Far"
+  },
   "ISA-C09-00-Title.dc.html": {
    "x": 0,
    "y": 40800,
@@ -904,112 +911,112 @@
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "118 · Woe to Them That Go Down to Egypt"
+   "title": "119 · Woe to Them That Go Down to Egypt"
   },
   "ISA-C09-D-P02-WoeToThemThatGoDow.dc.html": {
    "x": 1680,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "119 · Woe to Them That Go Down to Egypt"
+   "title": "120 · Woe to Them That Go Down to Egypt"
   },
   "ISA-C09-D-P03-AKingShallReignInR.dc.html": {
    "x": 2520,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "120 · A King Shall Reign in Righteousness"
+   "title": "121 · A King Shall Reign in Righteousness"
   },
   "ISA-C09-D-P04-AKingShallReignInR.dc.html": {
    "x": 3360,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "121 · A King Shall Reign in Righteousness"
+   "title": "122 · A King Shall Reign in Righteousness"
   },
   "ISA-C09-D-P05-YeWomenThatAreAtEa.dc.html": {
    "x": 0,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "122 · Ye Women That Are at Ease"
+   "title": "123 · Ye Women That Are at Ease"
   },
   "ISA-C09-D-P06-WoeToTheeThatDestr.dc.html": {
    "x": 840,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "123 · Woe to Thee That Destroyest"
+   "title": "124 · Woe to Thee That Destroyest"
   },
   "ISA-C09-D-P07-WoeToTheeThatDestr.dc.html": {
    "x": 1680,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "124 · Woe to Thee That Destroyest"
+   "title": "125 · Woe to Thee That Destroyest"
   },
   "ISA-C09-D-P08-WoeToTheeThatDestr.dc.html": {
    "x": 2520,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "125 · Woe to Thee That Destroyest"
+   "title": "126 · Woe to Thee That Destroyest"
   },
   "ISA-C09-D-P09-WhoAmongUsCanDwell.dc.html": {
    "x": 3360,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "126 · Who Among Us Can Dwell with the Devouring Fire?"
+   "title": "127 · Who Among Us Can Dwell with the Devouring Fire?"
   },
   "ISA-C09-D-P10-LookUponZion.dc.html": {
    "x": 0,
    "y": 43200,
    "w": 760,
    "h": 1080,
-   "title": "127 · Look upon Zion"
+   "title": "128 · Look upon Zion"
   },
   "ISA-C09-D-P11-ComeNearYeNationsT.dc.html": {
    "x": 840,
    "y": 43200,
    "w": 760,
    "h": 1080,
-   "title": "128 · Come Near, Ye Nations, to Hear"
+   "title": "129 · Come Near, Ye Nations, to Hear"
   },
   "ISA-C09-D-P12-ComeNearYeNationsT.dc.html": {
    "x": 1680,
    "y": 43200,
    "w": 760,
    "h": 1080,
-   "title": "129 · Come Near, Ye Nations, to Hear"
+   "title": "130 · Come Near, Ye Nations, to Hear"
   },
   "ISA-C09-D-P13-ComeNearYeNationsT.dc.html": {
    "x": 2520,
    "y": 43200,
    "w": 760,
    "h": 1080,
-   "title": "130 · Come Near, Ye Nations, to Hear"
+   "title": "131 · Come Near, Ye Nations, to Hear"
   },
   "ISA-C09-D-P14-ComeNearYeNationsT.dc.html": {
    "x": 3360,
    "y": 43200,
    "w": 760,
    "h": 1080,
-   "title": "131 · Come Near, Ye Nations, to Hear"
+   "title": "132 · Come Near, Ye Nations, to Hear"
   },
   "ISA-C09-D-P15-TheDesertShallRejo.dc.html": {
    "x": 0,
    "y": 44400,
    "w": 760,
    "h": 1080,
-   "title": "132 · The Desert Shall Rejoice"
+   "title": "133 · The Desert Shall Rejoice"
   },
   "ISA-C09-D-P16-TheWayOfHoliness.dc.html": {
    "x": 840,
    "y": 44400,
    "w": 760,
    "h": 1080,
-   "title": "133 · The Way of Holiness"
+   "title": "134 · The Way of Holiness"
   },
   "ISA-C10-00-Title.dc.html": {
    "x": 0,
@@ -1023,133 +1030,133 @@
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "134 · Rabshakeh"
+   "title": "135 · Rabshakeh"
   },
   "ISA-C10-D-P02-Rabshakeh.dc.html": {
    "x": 1680,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "135 · Rabshakeh"
+   "title": "136 · Rabshakeh"
   },
   "ISA-C10-D-P03-InTheJewsLanguage.dc.html": {
    "x": 2520,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "136 · In the Jews' Language"
+   "title": "137 · In the Jews' Language"
   },
   "ISA-C10-D-P04-InTheJewsLanguage.dc.html": {
    "x": 3360,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "137 · In the Jews' Language"
+   "title": "138 · In the Jews' Language"
   },
   "ISA-C10-D-P05-IsaiahTheProphet.dc.html": {
    "x": 0,
    "y": 47300,
    "w": 760,
    "h": 1080,
-   "title": "138 · Isaiah the Prophet"
+   "title": "139 · Isaiah the Prophet"
   },
   "ISA-C10-D-P06-IsaiahTheProphet.dc.html": {
    "x": 840,
    "y": 47300,
    "w": 760,
    "h": 1080,
-   "title": "139 · Isaiah the Prophet"
+   "title": "140 · Isaiah the Prophet"
   },
   "ISA-C10-D-P07-IsaiahTheProphet.dc.html": {
    "x": 1680,
    "y": 47300,
    "w": 760,
    "h": 1080,
-   "title": "140 · Isaiah the Prophet"
+   "title": "141 · Isaiah the Prophet"
   },
   "ISA-C10-D-P08-HezekiahPrayedUnto.dc.html": {
    "x": 2520,
    "y": 47300,
    "w": 760,
    "h": 1080,
-   "title": "141 · Hezekiah Prayed unto Jehovah"
+   "title": "142 · Hezekiah Prayed unto Jehovah"
   },
   "ISA-C10-D-P09-TheVirginDaughterO.dc.html": {
    "x": 3360,
    "y": 47300,
    "w": 760,
    "h": 1080,
-   "title": "142 · The Virgin Daughter of Zion"
+   "title": "143 · The Virgin Daughter of Zion"
   },
   "ISA-C10-D-P10-TheVirginDaughterO.dc.html": {
    "x": 0,
    "y": 48500,
    "w": 760,
    "h": 1080,
-   "title": "143 · The Virgin Daughter of Zion"
+   "title": "144 · The Virgin Daughter of Zion"
   },
   "ISA-C10-D-P11-TheCampOfTheAssyri.dc.html": {
    "x": 840,
    "y": 48500,
    "w": 760,
    "h": 1080,
-   "title": "144 · The Camp of the Assyrians"
+   "title": "145 · The Camp of the Assyrians"
   },
   "ISA-C10-D-P12-SickUntoDeath.dc.html": {
    "x": 1680,
    "y": 48500,
    "w": 760,
    "h": 1080,
-   "title": "145 · Sick unto Death"
+   "title": "146 · Sick unto Death"
   },
   "ISA-C10-D-P13-TheShadowOnTheDial.dc.html": {
    "x": 2520,
    "y": 48500,
    "w": 760,
    "h": 1080,
-   "title": "146 · The Shadow on the Dial"
+   "title": "147 · The Shadow on the Dial"
   },
   "ISA-C10-D-P14-TheWritingOfHezeki.dc.html": {
    "x": 3360,
    "y": 48500,
    "w": 760,
    "h": 1080,
-   "title": "147 · The Writing of Hezekiah"
+   "title": "148 · The Writing of Hezekiah"
   },
   "ISA-C10-D-P15-TheWritingOfHezeki.dc.html": {
    "x": 0,
    "y": 49700,
    "w": 760,
    "h": 1080,
-   "title": "148 · The Writing of Hezekiah"
+   "title": "149 · The Writing of Hezekiah"
   },
   "ISA-C10-D-P16-TheWritingOfHezeki.dc.html": {
    "x": 840,
    "y": 49700,
    "w": 760,
    "h": 1080,
-   "title": "149 · The Writing of Hezekiah"
+   "title": "150 · The Writing of Hezekiah"
   },
   "ISA-C10-D-P17-TheEnvoysOfBabylon.dc.html": {
    "x": 1680,
    "y": 49700,
    "w": 760,
    "h": 1080,
-   "title": "150 · The Envoys of Babylon"
+   "title": "151 · The Envoys of Babylon"
   },
   "ISA-C10-D-P18-TheEnvoysOfBabylon.dc.html": {
    "x": 2520,
    "y": 49700,
    "w": 760,
    "h": 1080,
-   "title": "151 · The Envoys of Babylon"
+   "title": "152 · The Envoys of Babylon"
   },
   "ISA-C10-D-P19-TheEnvoysOfBabylon.dc.html": {
    "x": 3360,
    "y": 49700,
    "w": 760,
    "h": 1080,
-   "title": "152 · The Envoys of Babylon"
+   "title": "153 · The Envoys of Babylon"
   },
   "ISA-C11-00-Title.dc.html": {
    "x": 0,
@@ -1163,119 +1170,119 @@
    "y": 51400,
    "w": 760,
    "h": 1080,
-   "title": "153 · The Voice of One That Crieth"
+   "title": "154 · The Voice of One That Crieth"
   },
   "ISA-C11-D-P02-BeholdYourGod.dc.html": {
    "x": 1680,
    "y": 51400,
    "w": 760,
    "h": 1080,
-   "title": "154 · Behold, Your God!"
+   "title": "155 · Behold, Your God!"
   },
   "ISA-C11-D-P03-WhoHathMeasuredThe.dc.html": {
    "x": 2520,
    "y": 51400,
    "w": 760,
    "h": 1080,
-   "title": "155 · Who Hath Measured the Waters?"
+   "title": "156 · Who Hath Measured the Waters?"
   },
   "ISA-C11-D-P04-WhoHathMeasuredThe.dc.html": {
    "x": 3360,
    "y": 51400,
    "w": 760,
    "h": 1080,
-   "title": "156 · Who Hath Measured the Waters?"
+   "title": "157 · Who Hath Measured the Waters?"
   },
   "ISA-C11-D-P05-WhoHathMeasuredThe.dc.html": {
    "x": 0,
    "y": 52600,
    "w": 760,
    "h": 1080,
-   "title": "157 · Who Hath Measured the Waters?"
+   "title": "158 · Who Hath Measured the Waters?"
   },
   "ISA-C11-D-P06-TheyShallMountUpWi.dc.html": {
    "x": 840,
    "y": 52600,
    "w": 760,
    "h": 1080,
-   "title": "158 · They Shall Mount Up with Wings as Eagles"
+   "title": "159 · They Shall Mount Up with Wings as Eagles"
   },
   "ISA-C11-D-P07-OneFromTheEast.dc.html": {
    "x": 1680,
    "y": 52600,
    "w": 760,
    "h": 1080,
-   "title": "159 · One from the East"
+   "title": "160 · One from the East"
   },
   "ISA-C11-D-P08-FearThouNot.dc.html": {
    "x": 2520,
    "y": 52600,
    "w": 760,
    "h": 1080,
-   "title": "160 · Fear Thou Not"
+   "title": "161 · Fear Thou Not"
   },
   "ISA-C11-D-P09-FearThouNot.dc.html": {
    "x": 3360,
    "y": 52600,
    "w": 760,
    "h": 1080,
-   "title": "161 · Fear Thou Not"
+   "title": "162 · Fear Thou Not"
   },
   "ISA-C11-D-P10-FearThouNot.dc.html": {
    "x": 0,
    "y": 53800,
    "w": 760,
    "h": 1080,
-   "title": "162 · Fear Thou Not"
+   "title": "163 · Fear Thou Not"
   },
   "ISA-C11-D-P11-ProduceYourCause.dc.html": {
    "x": 840,
    "y": 53800,
    "w": 760,
    "h": 1080,
-   "title": "163 · Produce Your Cause"
+   "title": "164 · Produce Your Cause"
   },
   "ISA-C11-D-P12-BeholdMyServant.dc.html": {
    "x": 1680,
    "y": 53800,
    "w": 760,
    "h": 1080,
-   "title": "164 · Behold My Servant"
+   "title": "165 · Behold My Servant"
   },
   "ISA-C11-D-P13-BeholdMyServant.dc.html": {
    "x": 2520,
    "y": 53800,
    "w": 760,
    "h": 1080,
-   "title": "165 · Behold My Servant"
+   "title": "166 · Behold My Servant"
   },
   "ISA-C11-D-P14-SingUntoJehovahANe.dc.html": {
    "x": 3360,
    "y": 53800,
    "w": 760,
    "h": 1080,
-   "title": "166 · Sing unto Jehovah a New Song"
+   "title": "167 · Sing unto Jehovah a New Song"
   },
   "ISA-C11-D-P15-SingUntoJehovahANe.dc.html": {
    "x": 0,
    "y": 55000,
    "w": 760,
    "h": 1080,
-   "title": "167 · Sing unto Jehovah a New Song"
+   "title": "168 · Sing unto Jehovah a New Song"
   },
   "ISA-C11-D-P16-HearYeDeaf.dc.html": {
    "x": 840,
    "y": 55000,
    "w": 760,
    "h": 1080,
-   "title": "168 · Hear, Ye Deaf"
+   "title": "169 · Hear, Ye Deaf"
   },
   "ISA-C11-D-P17-HearYeDeaf.dc.html": {
    "x": 1680,
    "y": 55000,
    "w": 760,
    "h": 1080,
-   "title": "169 · Hear, Ye Deaf"
+   "title": "170 · Hear, Ye Deaf"
   },
   "ISA-C12-00-Title.dc.html": {
    "x": 0,
@@ -1289,98 +1296,98 @@
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "170 · Fear Not, for I Have Redeemed Thee"
+   "title": "171 · Fear Not, for I Have Redeemed Thee"
   },
   "ISA-C12-D-P02-YeAreMyWitnesses.dc.html": {
    "x": 1680,
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "171 · Ye Are My Witnesses"
+   "title": "172 · Ye Are My Witnesses"
   },
   "ISA-C12-D-P03-AWayInTheSea.dc.html": {
    "x": 2520,
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "172 · A Way in the Sea"
+   "title": "173 · A Way in the Sea"
   },
   "ISA-C12-D-P04-AWayInTheSea.dc.html": {
    "x": 3360,
    "y": 56700,
    "w": 760,
    "h": 1080,
-   "title": "173 · A Way in the Sea"
+   "title": "174 · A Way in the Sea"
   },
   "ISA-C12-D-P05-FearNotOJacobMySer.dc.html": {
    "x": 0,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "174 · Fear Not, O Jacob My Servant"
+   "title": "175 · Fear Not, O Jacob My Servant"
   },
   "ISA-C12-D-P06-TheyThatFashionAGr.dc.html": {
    "x": 840,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "175 · They That Fashion a Graven Image"
+   "title": "176 · They That Fashion a Graven Image"
   },
   "ISA-C12-D-P07-TheyThatFashionAGr.dc.html": {
    "x": 1680,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "176 · They That Fashion a Graven Image"
+   "title": "177 · They That Fashion a Graven Image"
   },
   "ISA-C12-D-P08-TheyThatFashionAGr.dc.html": {
    "x": 2520,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "177 · They That Fashion a Graven Image"
+   "title": "178 · They That Fashion a Graven Image"
   },
   "ISA-C12-D-P09-CyrusMyShepherd.dc.html": {
    "x": 3360,
    "y": 57900,
    "w": 760,
    "h": 1080,
-   "title": "178 · Cyrus, My Shepherd"
+   "title": "179 · Cyrus, My Shepherd"
   },
   "ISA-C12-D-P10-ToHisAnointedToCyr.dc.html": {
    "x": 0,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "179 · To His Anointed, to Cyrus"
+   "title": "180 · To His Anointed, to Cyrus"
   },
   "ISA-C12-D-P11-WoeUntoHimThatStri.dc.html": {
    "x": 840,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "180 · Woe unto Him That Striveth with His Maker"
+   "title": "181 · Woe unto Him That Striveth with His Maker"
   },
   "ISA-C12-D-P12-WoeUntoHimThatStri.dc.html": {
    "x": 1680,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "181 · Woe unto Him That Striveth with His Maker"
+   "title": "182 · Woe unto Him That Striveth with His Maker"
   },
   "ISA-C12-D-P13-WoeUntoHimThatStri.dc.html": {
    "x": 2520,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "182 · Woe unto Him That Striveth with His Maker"
+   "title": "183 · Woe unto Him That Striveth with His Maker"
   },
   "ISA-C12-D-P14-EveryKneeShallBow.dc.html": {
    "x": 3360,
    "y": 59100,
    "w": 760,
    "h": 1080,
-   "title": "183 · Every Knee Shall Bow"
+   "title": "184 · Every Knee Shall Bow"
   },
   "ISA-C13-00-Title.dc.html": {
    "x": 0,
@@ -1394,70 +1401,70 @@
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "184 · Bel Boweth Down, Nebo Stoopeth"
+   "title": "185 · Bel Boweth Down, Nebo Stoopeth"
   },
   "ISA-C13-D-P02-BelBowethDownNeboS.dc.html": {
    "x": 1680,
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "185 · Bel Boweth Down, Nebo Stoopeth"
+   "title": "186 · Bel Boweth Down, Nebo Stoopeth"
   },
   "ISA-C13-D-P03-OVirginDaughterOfB.dc.html": {
    "x": 2520,
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "186 · O Virgin Daughter of Babylon"
+   "title": "187 · O Virgin Daughter of Babylon"
   },
   "ISA-C13-D-P04-OVirginDaughterOfB.dc.html": {
    "x": 3360,
    "y": 60800,
    "w": 760,
    "h": 1080,
-   "title": "187 · O Virgin Daughter of Babylon"
+   "title": "188 · O Virgin Daughter of Babylon"
   },
   "ISA-C13-D-P05-OVirginDaughterOfB.dc.html": {
    "x": 0,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "188 · O Virgin Daughter of Babylon"
+   "title": "189 · O Virgin Daughter of Babylon"
   },
   "ISA-C13-D-P06-TheStarGazers.dc.html": {
    "x": 840,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "189 · The Star-gazers"
+   "title": "190 · The Star-gazers"
   },
   "ISA-C13-D-P07-HearYeThisOHouseOf.dc.html": {
    "x": 1680,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "190 · Hear Ye This, O House of Jacob"
+   "title": "191 · Hear Ye This, O House of Jacob"
   },
   "ISA-C13-D-P08-IAmTheFirstIAlsoAm.dc.html": {
    "x": 2520,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "191 · I Am the First, I Also Am the Last"
+   "title": "192 · I Am the First, I Also Am the Last"
   },
   "ISA-C13-D-P09-IAmTheFirstIAlsoAm.dc.html": {
    "x": 3360,
    "y": 62000,
    "w": 760,
    "h": 1080,
-   "title": "192 · I Am the First, I Also Am the Last"
+   "title": "193 · I Am the First, I Also Am the Last"
   },
   "ISA-C13-D-P10-GoYeForthFromBabyl.dc.html": {
    "x": 0,
    "y": 63200,
    "w": 760,
    "h": 1080,
-   "title": "193 · Go Ye Forth from Babylon"
+   "title": "194 · Go Ye Forth from Babylon"
   },
   "ISA-C14-00-Title.dc.html": {
    "x": 0,
@@ -1471,105 +1478,105 @@
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "194 · Listen, O Isles, unto Me"
+   "title": "195 · Listen, O Isles, unto Me"
   },
   "ISA-C14-D-P02-ListenOIslesUntoMe.dc.html": {
    "x": 1680,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "195 · Listen, O Isles, unto Me"
+   "title": "196 · Listen, O Isles, unto Me"
   },
   "ISA-C14-D-P03-ListenOIslesUntoMe.dc.html": {
    "x": 2520,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "196 · Listen, O Isles, unto Me"
+   "title": "197 · Listen, O Isles, unto Me"
   },
   "ISA-C14-D-P04-CanAWomanForgetHer.dc.html": {
    "x": 3360,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "197 · Can a Woman Forget Her Sucking Child?"
+   "title": "198 · Can a Woman Forget Her Sucking Child?"
   },
   "ISA-C14-D-P05-CanAWomanForgetHer.dc.html": {
    "x": 0,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "198 · Can a Woman Forget Her Sucking Child?"
+   "title": "199 · Can a Woman Forget Her Sucking Child?"
   },
   "ISA-C14-D-P06-CanAWomanForgetHer.dc.html": {
    "x": 840,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "199 · Can a Woman Forget Her Sucking Child?"
+   "title": "200 · Can a Woman Forget Her Sucking Child?"
   },
   "ISA-C14-D-P07-TheBillOfYourMothe.dc.html": {
    "x": 1680,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "200 · The Bill of Your Mother's Divorcement"
+   "title": "201 · The Bill of Your Mother's Divorcement"
   },
   "ISA-C14-D-P08-HeWakenethMineEar.dc.html": {
    "x": 2520,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "201 · He Wakeneth Mine Ear"
+   "title": "202 · He Wakeneth Mine Ear"
   },
   "ISA-C14-D-P09-HeWakenethMineEar.dc.html": {
    "x": 3360,
    "y": 66100,
    "w": 760,
    "h": 1080,
-   "title": "202 · He Wakeneth Mine Ear"
+   "title": "203 · He Wakeneth Mine Ear"
   },
   "ISA-C14-D-P10-LookUntoTheRockWhe.dc.html": {
    "x": 0,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "203 · Look unto the Rock Whence Ye Were Hewn"
+   "title": "204 · Look unto the Rock Whence Ye Were Hewn"
   },
   "ISA-C14-D-P11-LookUntoTheRockWhe.dc.html": {
    "x": 840,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "204 · Look unto the Rock Whence Ye Were Hewn"
+   "title": "205 · Look unto the Rock Whence Ye Were Hewn"
   },
   "ISA-C14-D-P12-AwakeOArmOfJehovah.dc.html": {
    "x": 1680,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "205 · Awake, O Arm of Jehovah"
+   "title": "206 · Awake, O Arm of Jehovah"
   },
   "ISA-C14-D-P13-AwakeOArmOfJehovah.dc.html": {
    "x": 2520,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "206 · Awake, O Arm of Jehovah"
+   "title": "207 · Awake, O Arm of Jehovah"
   },
   "ISA-C14-D-P14-AwakeAwakeOJerusal.dc.html": {
    "x": 3360,
    "y": 67300,
    "w": 760,
    "h": 1080,
-   "title": "207 · Awake, Awake, O Jerusalem"
+   "title": "208 · Awake, Awake, O Jerusalem"
   },
   "ISA-C14-D-P15-AwakeAwakeOJerusal.dc.html": {
    "x": 0,
    "y": 68500,
    "w": 760,
    "h": 1080,
-   "title": "208 · Awake, Awake, O Jerusalem"
+   "title": "209 · Awake, Awake, O Jerusalem"
   },
   "ISA-C15-00-Title.dc.html": {
    "x": 0,
@@ -1583,91 +1590,91 @@
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "209 · Awake, Awake, O Zion"
+   "title": "210 · Awake, Awake, O Zion"
   },
   "ISA-C15-D-P02-HowBeautifulUponTh.dc.html": {
    "x": 1680,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "210 · How Beautiful upon the Mountains"
+   "title": "211 · How Beautiful upon the Mountains"
   },
   "ISA-C15-D-P03-HowBeautifulUponTh.dc.html": {
    "x": 2520,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "211 · How Beautiful upon the Mountains"
+   "title": "212 · How Beautiful upon the Mountains"
   },
   "ISA-C15-D-P04-ARootOutOfADryGrou.dc.html": {
    "x": 3360,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "212 · A Root out of a Dry Ground"
+   "title": "213 · A Root out of a Dry Ground"
   },
   "ISA-C15-D-P05-AManOfSorrows.dc.html": {
    "x": 0,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "213 · A Man of Sorrows"
+   "title": "214 · A Man of Sorrows"
   },
   "ISA-C15-D-P06-AManOfSorrows.dc.html": {
    "x": 840,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "214 · A Man of Sorrows"
+   "title": "215 · A Man of Sorrows"
   },
   "ISA-C15-D-P07-SingOBarren.dc.html": {
    "x": 1680,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "215 · Sing, O Barren"
+   "title": "216 · Sing, O Barren"
   },
   "ISA-C15-D-P08-SingOBarren.dc.html": {
    "x": 2520,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "216 · Sing, O Barren"
+   "title": "217 · Sing, O Barren"
   },
   "ISA-C15-D-P09-TheWatersOfNoah.dc.html": {
    "x": 3360,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "217 · The Waters of Noah"
+   "title": "218 · The Waters of Noah"
   },
   "ISA-C15-D-P10-TheWatersOfNoah.dc.html": {
    "x": 0,
    "y": 72600,
    "w": 760,
    "h": 1080,
-   "title": "218 · The Waters of Noah"
+   "title": "219 · The Waters of Noah"
   },
   "ISA-C15-D-P11-HoEveryOneThatThir.dc.html": {
    "x": 840,
    "y": 72600,
    "w": 760,
    "h": 1080,
-   "title": "219 · Ho, Every One That Thirsteth"
+   "title": "220 · Ho, Every One That Thirsteth"
   },
   "ISA-C15-D-P12-SeekYeJehovahWhile.dc.html": {
    "x": 1680,
    "y": 72600,
    "w": 760,
    "h": 1080,
-   "title": "220 · Seek Ye Jehovah While He May Be Found"
+   "title": "221 · Seek Ye Jehovah While He May Be Found"
   },
   "ISA-C15-D-P13-SeekYeJehovahWhile.dc.html": {
    "x": 2520,
    "y": 72600,
    "w": 760,
    "h": 1080,
-   "title": "221 · Seek Ye Jehovah While He May Be Found"
+   "title": "222 · Seek Ye Jehovah While He May Be Found"
   },
   "ISA-C16-00-Title.dc.html": {
    "x": 0,
@@ -1681,105 +1688,105 @@
    "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "222 · Keep Ye Justice"
+   "title": "223 · Keep Ye Justice"
   },
   "ISA-C16-D-P02-AHouseOfPrayerForA.dc.html": {
    "x": 1680,
    "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "223 · A House of Prayer for All Peoples"
+   "title": "224 · A House of Prayer for All Peoples"
   },
   "ISA-C16-D-P03-TheRighteousPerish.dc.html": {
    "x": 2520,
    "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "224 · The Righteous Perisheth"
+   "title": "225 · The Righteous Perisheth"
   },
   "ISA-C16-D-P04-TheRighteousPerish.dc.html": {
    "x": 3360,
    "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "225 · The Righteous Perisheth"
+   "title": "226 · The Righteous Perisheth"
   },
   "ISA-C16-D-P05-TheRighteousPerish.dc.html": {
    "x": 0,
    "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "226 · The Righteous Perisheth"
+   "title": "227 · The Righteous Perisheth"
   },
   "ISA-C16-D-P06-TheHighAndHolyPlac.dc.html": {
    "x": 840,
    "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "227 · The High and Holy Place"
+   "title": "228 · The High and Holy Place"
   },
   "ISA-C16-D-P07-CryAloudSpareNot.dc.html": {
    "x": 1680,
    "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "228 · Cry Aloud, Spare Not"
+   "title": "229 · Cry Aloud, Spare Not"
   },
   "ISA-C16-D-P08-IsNotThisTheFastTh.dc.html": {
    "x": 2520,
    "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "229 · Is Not This the Fast That I Have Chosen?"
+   "title": "230 · Is Not This the Fast That I Have Chosen?"
   },
   "ISA-C16-D-P09-IsNotThisTheFastTh.dc.html": {
    "x": 3360,
    "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "230 · Is Not This the Fast That I Have Chosen?"
+   "title": "231 · Is Not This the Fast That I Have Chosen?"
   },
   "ISA-C16-D-P10-IsNotThisTheFastTh.dc.html": {
    "x": 0,
    "y": 76700,
    "w": 760,
    "h": 1080,
-   "title": "231 · Is Not This the Fast That I Have Chosen?"
+   "title": "232 · Is Not This the Fast That I Have Chosen?"
   },
   "ISA-C16-D-P11-YourIniquitiesHave.dc.html": {
    "x": 840,
    "y": 76700,
    "w": 760,
    "h": 1080,
-   "title": "232 · Your Iniquities Have Separated"
+   "title": "233 · Your Iniquities Have Separated"
   },
   "ISA-C16-D-P12-WeGropeForTheWall.dc.html": {
    "x": 1680,
    "y": 76700,
    "w": 760,
    "h": 1080,
-   "title": "233 · We Grope for the Wall"
+   "title": "234 · We Grope for the Wall"
   },
   "ISA-C16-D-P13-WeGropeForTheWall.dc.html": {
    "x": 2520,
    "y": 76700,
    "w": 760,
    "h": 1080,
-   "title": "234 · We Grope for the Wall"
+   "title": "235 · We Grope for the Wall"
   },
   "ISA-C16-D-P14-RighteousnessAsABr.dc.html": {
    "x": 3360,
    "y": 76700,
    "w": 760,
    "h": 1080,
-   "title": "235 · Righteousness as a Breastplate"
+   "title": "236 · Righteousness as a Breastplate"
   },
   "ISA-C16-D-P15-ARedeemerWillComeT.dc.html": {
    "x": 0,
    "y": 77900,
    "w": 760,
    "h": 1080,
-   "title": "236 · A Redeemer Will Come to Zion"
+   "title": "237 · A Redeemer Will Come to Zion"
   },
   "ISA-C17-00-Title.dc.html": {
    "x": 0,
@@ -1793,63 +1800,63 @@
    "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "237 · Arise, Shine"
+   "title": "238 · Arise, Shine"
   },
   "ISA-C17-D-P02-ThyGatesShallBeOpe.dc.html": {
    "x": 1680,
    "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "238 · Thy Gates Shall Be Open Continually"
+   "title": "239 · Thy Gates Shall Be Open Continually"
   },
   "ISA-C17-D-P03-ThyGatesShallBeOpe.dc.html": {
    "x": 2520,
    "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "239 · Thy Gates Shall Be Open Continually"
+   "title": "240 · Thy Gates Shall Be Open Continually"
   },
   "ISA-C17-D-P04-ThyGatesShallBeOpe.dc.html": {
    "x": 3360,
    "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "240 · Thy Gates Shall Be Open Continually"
+   "title": "241 · Thy Gates Shall Be Open Continually"
   },
   "ISA-C17-D-P05-TheSpiritOfTheLord.dc.html": {
    "x": 0,
    "y": 80800,
    "w": 760,
    "h": 1080,
-   "title": "241 · The Spirit of the Lord Jehovah Is upon Me"
+   "title": "242 · The Spirit of the Lord Jehovah Is upon Me"
   },
   "ISA-C17-D-P06-TheSpiritOfTheLord.dc.html": {
    "x": 840,
    "y": 80800,
    "w": 760,
    "h": 1080,
-   "title": "242 · The Spirit of the Lord Jehovah Is upon Me"
+   "title": "243 · The Spirit of the Lord Jehovah Is upon Me"
   },
   "ISA-C17-D-P07-ForZionSSake.dc.html": {
    "x": 1680,
    "y": 80800,
    "w": 760,
    "h": 1080,
-   "title": "243 · For Zion's Sake"
+   "title": "244 · For Zion's Sake"
   },
   "ISA-C17-D-P08-ForZionSSake.dc.html": {
    "x": 2520,
    "y": 80800,
    "w": 760,
    "h": 1080,
-   "title": "244 · For Zion's Sake"
+   "title": "245 · For Zion's Sake"
   },
   "ISA-C17-D-P09-CastUpTheHighway.dc.html": {
    "x": 3360,
    "y": 80800,
    "w": 760,
    "h": 1080,
-   "title": "245 · Cast Up the Highway"
+   "title": "246 · Cast Up the Highway"
   },
   "ISA-C18-00-Title.dc.html": {
    "x": 0,
@@ -1863,119 +1870,119 @@
    "y": 82500,
    "w": 760,
    "h": 1080,
-   "title": "246 · Who Is This That Cometh from Edom?"
+   "title": "247 · Who Is This That Cometh from Edom?"
   },
   "ISA-C18-D-P02-TheLovingkindnesse.dc.html": {
    "x": 1680,
    "y": 82500,
    "w": 760,
    "h": 1080,
-   "title": "247 · The Lovingkindnesses of Jehovah"
+   "title": "248 · The Lovingkindnesses of Jehovah"
   },
   "ISA-C18-D-P03-TheLovingkindnesse.dc.html": {
    "x": 2520,
    "y": 82500,
    "w": 760,
    "h": 1080,
-   "title": "248 · The Lovingkindnesses of Jehovah"
+   "title": "249 · The Lovingkindnesses of Jehovah"
   },
   "ISA-C18-D-P04-LookDownFromHeaven.dc.html": {
    "x": 3360,
    "y": 82500,
    "w": 760,
    "h": 1080,
-   "title": "249 · Look Down from Heaven"
+   "title": "250 · Look Down from Heaven"
   },
   "ISA-C18-D-P05-OhThatThouWouldest.dc.html": {
    "x": 0,
    "y": 83700,
    "w": 760,
    "h": 1080,
-   "title": "250 · Oh That Thou Wouldest Rend the Heavens"
+   "title": "251 · Oh That Thou Wouldest Rend the Heavens"
   },
   "ISA-C18-D-P06-OhThatThouWouldest.dc.html": {
    "x": 840,
    "y": 83700,
    "w": 760,
    "h": 1080,
-   "title": "251 · Oh That Thou Wouldest Rend the Heavens"
+   "title": "252 · Oh That Thou Wouldest Rend the Heavens"
   },
   "ISA-C18-D-P07-IAmFoundOfThemThat.dc.html": {
    "x": 1680,
    "y": 83700,
    "w": 760,
    "h": 1080,
-   "title": "252 · I Am Found of Them That Sought Me Not"
+   "title": "253 · I Am Found of Them That Sought Me Not"
   },
   "ISA-C18-D-P08-IAmFoundOfThemThat.dc.html": {
    "x": 2520,
    "y": 83700,
    "w": 760,
    "h": 1080,
-   "title": "253 · I Am Found of Them That Sought Me Not"
+   "title": "254 · I Am Found of Them That Sought Me Not"
   },
   "ISA-C18-D-P09-IAmFoundOfThemThat.dc.html": {
    "x": 3360,
    "y": 83700,
    "w": 760,
    "h": 1080,
-   "title": "254 · I Am Found of Them That Sought Me Not"
+   "title": "255 · I Am Found of Them That Sought Me Not"
   },
   "ISA-C18-D-P10-NewHeavensAndANewE.dc.html": {
    "x": 0,
    "y": 84900,
    "w": 760,
    "h": 1080,
-   "title": "255 · New Heavens and a New Earth"
+   "title": "256 · New Heavens and a New Earth"
   },
   "ISA-C18-D-P11-NewHeavensAndANewE.dc.html": {
    "x": 840,
    "y": 84900,
    "w": 760,
    "h": 1080,
-   "title": "256 · New Heavens and a New Earth"
+   "title": "257 · New Heavens and a New Earth"
   },
   "ISA-C18-D-P12-HeavenIsMyThrone.dc.html": {
    "x": 1680,
    "y": 84900,
    "w": 760,
    "h": 1080,
-   "title": "257 · Heaven Is My Throne"
+   "title": "258 · Heaven Is My Throne"
   },
   "ISA-C18-D-P13-HeavenIsMyThrone.dc.html": {
    "x": 2520,
    "y": 84900,
    "w": 760,
    "h": 1080,
-   "title": "258 · Heaven Is My Throne"
+   "title": "259 · Heaven Is My Throne"
   },
   "ISA-C18-D-P14-ShallALandBeBornIn.dc.html": {
    "x": 3360,
    "y": 84900,
    "w": 760,
    "h": 1080,
-   "title": "259 · Shall a Land Be Born in One Day?"
+   "title": "260 · Shall a Land Be Born in One Day?"
   },
   "ISA-C18-D-P15-ShallALandBeBornIn.dc.html": {
    "x": 0,
    "y": 86100,
    "w": 760,
    "h": 1080,
-   "title": "260 · Shall a Land Be Born in One Day?"
+   "title": "261 · Shall a Land Be Born in One Day?"
   },
   "ISA-C18-D-P16-IWillGatherAllNati.dc.html": {
    "x": 840,
    "y": 86100,
    "w": 760,
    "h": 1080,
-   "title": "261 · I Will Gather All Nations"
+   "title": "262 · I Will Gather All Nations"
   },
   "ISA-C18-D-P17-IWillGatherAllNati.dc.html": {
    "x": 1680,
    "y": 86100,
    "w": 760,
    "h": 1080,
-   "title": "262 · I Will Gather All Nations"
+   "title": "263 · I Will Gather All Nations"
   }
  },
  "order": [
@@ -2029,8 +2036,7 @@
   "ISA-C03-D-P07-AShootOutOfTheStoc.dc.html",
   "ISA-C03-D-P08-AnEnsignForTheNati.dc.html",
   "ISA-C03-D-P09-AnEnsignForTheNati.dc.html",
-  "ISA-C03-D-P10-AnEnsignForTheNati.dc.html",
-  "ISA-C03-D-P11-TheWellsOfSalvatio.dc.html",
+  "ISA-C03-D-P10-TheWellsOfSalvatio.dc.html",
   "ISA-C04-00-Title.dc.html",
   "ISA-C04-D-P01-TheBurdenOfBabylon.dc.html",
   "ISA-C04-D-P02-TheDayOfJehovah.dc.html",
@@ -2071,8 +2077,9 @@
   "ISA-C06-D-P08-EliakimTheSonOfHil.dc.html",
   "ISA-C06-D-P09-HowlYeShipsOfTarsh.dc.html",
   "ISA-C06-D-P10-HowlYeShipsOfTarsh.dc.html",
-  "ISA-C06-D-P11-SeventyYears.dc.html",
+  "ISA-C06-D-P11-HowlYeShipsOfTarsh.dc.html",
   "ISA-C06-D-P12-SeventyYears.dc.html",
+  "ISA-C06-D-P13-SeventyYears.dc.html",
   "ISA-C07-00-Title.dc.html",
   "ISA-C07-D-P01-TheEarthMadeEmpty.dc.html",
   "ISA-C07-D-P02-TheEarthMadeEmpty.dc.html",
@@ -2093,18 +2100,19 @@
   "ISA-C08-D-P03-ACovenantWithDeath.dc.html",
   "ISA-C08-D-P04-ATriedStone.dc.html",
   "ISA-C08-D-P05-DothHeThatPlowethP.dc.html",
-  "ISA-C08-D-P06-HoAriel.dc.html",
+  "ISA-C08-D-P06-DothHeThatPlowethP.dc.html",
   "ISA-C08-D-P07-HoAriel.dc.html",
-  "ISA-C08-D-P08-ABookThatIsSealed.dc.html",
-  "ISA-C08-D-P09-ThePotterAndTheCla.dc.html",
+  "ISA-C08-D-P08-HoAriel.dc.html",
+  "ISA-C08-D-P09-ABookThatIsSealed.dc.html",
   "ISA-C08-D-P10-ThePotterAndTheCla.dc.html",
   "ISA-C08-D-P11-WoeToTheRebellious.dc.html",
   "ISA-C08-D-P12-WoeToTheRebellious.dc.html",
-  "ISA-C08-D-P13-InReturningAndRest.dc.html",
+  "ISA-C08-D-P13-WoeToTheRebellious.dc.html",
   "ISA-C08-D-P14-ThisIsTheWayWalkYe.dc.html",
   "ISA-C08-D-P15-ThisIsTheWayWalkYe.dc.html",
   "ISA-C08-D-P16-TheNameOfJehovahCo.dc.html",
   "ISA-C08-D-P17-TheNameOfJehovahCo.dc.html",
+  "ISA-C08-D-P18-TheNameOfJehovahCo.dc.html",
   "ISA-C09-00-Title.dc.html",
   "ISA-C09-D-P01-WoeToThemThatGoDow.dc.html",
   "ISA-C09-D-P02-WoeToThemThatGoDow.dc.html",

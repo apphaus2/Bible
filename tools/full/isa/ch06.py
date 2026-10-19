@@ -43,7 +43,7 @@ SEGS = (
         pre=("cap", "For thus hath the Lord said unto me,"))
     + S("22:1-3", "say", A(lambda w, h: K.valley_vision("vv6", w, h, 607), "#5A4A7A"), pre=("cap", "The burden of the valley of vision."), head="The Valley of Vision")
     + S("22:4-7", "say", [ISAIAH_GRIEF, A(lambda w, h: K.valley_chariots(w, h, 608), "#6A5A7A")], split=[5])
-    + S("22:8-11", "say", A(lambda w, h: K.jerusalem_plan(w, h), MAP), budget=700)
+    + S("22:8-11", "say", A(lambda w, h: K.jerusalem_plan(w, h), MAP, h=560), budget=700)
     + S("22:12-13", "say", A(lambda w, h: K.feast("fs6b", w, h, 609), "#2A1428"))
     + S("22:14", "god", ISAIAH_STERN, pre=("cap", "revealed himself in mine ears,"))
     + S("22:15-19", "god", [A(lambda w, h: K.sepulchre_high("sh6", w, h, 610), "#8FB0D8"), ISAIAH_STERN], head="Shebna the Treasurer", split=[17])

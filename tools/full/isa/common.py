@@ -56,13 +56,13 @@ ISAIAH_AWE = F("adam", shadow="#3A3A5A", brow="sorrow", sweat=True, light="#FFD2
 ISAIAH_JOY = F("adam", shadow="#5A4A3A", light="#FFE680", **_IS)
 SHEARJASHUB = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", light="#FFE680")
 SHEBNA = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#7A5A1A", band=True, brow="scowl", light="#FFC14D")
-WATCHMAN = F("adam", skin="#B98A6E", shadow="#3A3A5A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#5A6A8A", light="#9AA8C8")
+WATCHMAN = F("adam", skin="#B98A6E", shadow="#3A3A5A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#2A2A3A", cord=True, light="#9AA8C8")
 CYRUS = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#7A2A6A", band=True, light="#FFE680")
 ZION = F("eve", skin="#C98E66", shadow="#3A2A4A", hair="#1A1210", scarf="#3A4A7A", brow="sorrow", tear=True, light="#9AA8C8")
 ZION_JOY = F("eve", skin="#D9A27A", shadow="#6A4A4A", hair="#1A1210", scarf="#3A4A7A", band=True, light="#FFE680")
 BABYLON_Q = F("eve", skin="#D9A27A", shadow="#5A2A3A", hair="#0D0D0F", band=True, kohl=True, collar=True, brow="scowl", light="#D7261E")
 KING_BABYLON = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#2A4A6A", band=True, brow="scowl", light="#D7261E")
-KING_ASSYRIA = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#8A1A1A", band=True, brow="scowl", light="#D7261E")
+KING_ASSYRIA = F("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#2A2A3A", band=True, brow="scowl", light="#D7261E")
 HEZEKIAH_JOY = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#1F3A7A", band=True, light="#FFF4C2")
 MOOD_BG = {ISAIAH: GOLDEN, ISAIAH_STERN: RED, ISAIAH_GRIEF: COLD, ISAIAH_AWE: GOLDEN, ISAIAH_JOY: GOLDEN, WATCHMAN: COLD, ZION: COLD, ZION_JOY: GOLDEN,
            BABYLON_Q: RED, KING_BABYLON: RED, RABSHAKEH: RED, HEZEKIAH_GRIEF: COLD, HEZEKIAH_SICK: COLD, SHEBNA: RED, AHAZ: RED, KING_ASSYRIA: RED}
