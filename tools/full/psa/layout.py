@@ -156,8 +156,10 @@ def pack(segments, prefix, start, book="Psalms", code="PS", budget=1250, most=3,
             groups.append(cur); cur, chars, need = [], 0, 0
         cur.append(s); chars += n; need += nd
     if cur: groups.append(cur)
-    if len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) < most and _chars(groups[-1][0]) < 500 and not groups[-1][0]["head"]:
+    if len(groups) > 1 and len(groups[-2]) + len(groups[-1]) <= most and sum(_chars(x) for x in groups[-1]) < 520 and not groups[-1][0]["head"]:
         last = groups.pop(); groups[-1] += last
+    elif len(groups) > 1 and len(groups[-1]) == 1 and len(groups[-2]) >= 2 and _chars(groups[-1][0]) < 700:
+        groups[-1].insert(0, groups[-2].pop())          # no lone panel on the last page: it takes the panel before it
     if min_size:
         i = 0
         while i < len(groups):

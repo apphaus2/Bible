@@ -117,16 +117,22 @@ def bull(x, y, s=1.0, flip=False, color="#3A2418"):
             f'<path d="M66 -80 C 76 -96 92 -98 98 -90 C 88 -90 80 -86 74 -76 Z" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="1.6"></path><circle cx="80" cy="-62" r="2.4" fill="#D7261E"></circle></g>')
 
 def hart(x, y, s=1.0, flip=False, color="#A8642E", drink=False):
-    """A hart with antlers (side view, facing right), about 110 units long; drink=True: head lowered to the water."""
+    """A hart with antlers (side view, facing right), about 120 units long; drink=True: neck stretched down to the water."""
     sx = -s if flip else s
-    legs = "".join(f'<path d="M{a} -46 L {b} 0" stroke="{color}" stroke-width="6" stroke-linecap="round"></path><path d="M{a} -46 L {b} 0" stroke="#0D0D0F" stroke-width="1.2" opacity="0.5"></path>'
-                   for a, b in ((-40, -44), (-30, -26), (24, 20), (34, 38)))
-    neck = ("M28 -66 L 50 -34 L 60 -16 L 52 -12 L 40 -28 L 22 -52 Z" if drink else "M26 -68 L 42 -100 L 54 -104 L 66 -98 L 56 -92 L 44 -62 Z")
-    ant = ("M56 -24 l 8 -22 m -4 10 l 12 -4 M50 -30 l 0 -22 m 0 8 l -9 -5" if drink else "M50 -104 l -6 -30 m 2 12 l -12 -8 m 14 -8 l 8 -10 M56 -104 l 8 -26 m -3 12 l 12 -6")
+    legs = "".join(f'<path d="M{a} -46 L {b} 0" stroke="{color}" stroke-width="6" stroke-linecap="round"></path>' for a, b in ((-40, -44), (-30, -26), (24, 20), (34, 38)))
+    if drink:
+        neck = '<path d="M24 -70 L 52 -28 L 66 -30 L 44 -62 Z" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>'
+        head = '<ellipse cx="0" cy="0" rx="14" ry="8" transform="translate(64 -20) rotate(62)" fill="{c}" stroke="#0D0D0F" stroke-width="2"></ellipse><path d="M54 -36 l -10 -6 l 6 10 Z" fill="{c}" stroke="#0D0D0F" stroke-width="1.4"></path>'
+        ant = "M56 -34 l -8 -24 m 4 12 l -12 -4 M60 -36 l 0 -26 m 0 10 l 10 -8"
+    else:
+        neck = '<path d="M24 -72 L 40 -106 L 54 -104 L 44 -64 Z" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>'
+        head = '<ellipse cx="0" cy="0" rx="15" ry="8" transform="translate(58 -104) rotate(24)" fill="{c}" stroke="#0D0D0F" stroke-width="2"></ellipse><path d="M42 -112 l -12 -8 l 4 12 Z" fill="{c}" stroke="#0D0D0F" stroke-width="1.4"></path>'
+        ant = "M46 -112 l -8 -28 m 3 12 l -12 -8 m 14 -6 l 6 -12 M52 -112 l 6 -28 m -2 12 l 12 -8"
     return (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">{legs}'
-            f'<path d="M-50 -62 C -46 -78 26 -80 40 -68 C 46 -60 44 -48 36 -44 L -42 -44 C -52 -48 -54 -56 -50 -62 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.2"></path>'
-            f'<path d="{neck}" fill="{color}" stroke="#0D0D0F" stroke-width="2"></path><path d="M-50 -64 l -8 -4 l 4 8 Z" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.2"></path>'
-            f'<path d="{ant}" stroke="#4A2A14" stroke-width="3" fill="none" stroke-linecap="round"></path></g>')
+            f'<path d="M-50 -62 C -46 -80 26 -82 40 -70 C 46 -60 44 -48 36 -44 L -42 -44 C -52 -48 -54 -56 -50 -62 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.2"></path>'
+            + neck.format(c=color) + head.format(c=color)
+            + f'<path d="M-50 -64 l -8 -4 l 4 8 Z" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.2"></path>'
+            f'<path d="{ant}" stroke="#4A2A14" stroke-width="3.4" fill="none" stroke-linecap="round"></path></g>')
 
 def cedar(x, base, s, seed=1):
     """A cedar of Lebanon: a thick trunk and broad flat tiers of dark green, about 300 units tall at s=1."""
@@ -869,6 +875,97 @@ def s_hinds(p, w, h, seed):
     o.append(hart(w * 0.84, h * 0.83, min(0.9, h / 360), color="#A8742E"))
     return "".join(o)
 
+
+# ---- Book II ---------------------------------------------------------------------------------------------------------------
+def s_flock(p, w, h, seed):
+    """We are accounted as sheep for the slaughter; like sheep they are laid in Sheol: a flock crowded together at dusk,
+    no shepherd with them."""
+    r = R(seed); b = h * 0.94
+    o = [sky(w, h, *tod(seed, (DUSK, ("#4A4A6A", "#B8A0A0")))), hills(w, h, h * 0.66, seed, color="#4A4A3A", amp=10), ground(w, h, h * 0.72, "#6A6A4A", dy=0)]
+    k = min(0.9, h / 400)
+    pts = sorted(((r.uniform(0.05, 0.95), r.uniform(0.76, 0.96)) for _ in range(14)), key=lambda t: t[1])
+    for x, y in pts:
+        o.append(E.sheep(w * x, h * y, k * (0.7 + (y - 0.76) * 2), flip=r.random() < 0.5, wool=r.choice(["#E8E2D6", "#D8D0C0", "#C8C0B0"])))
+    return "".join(o)
+
+def s_bride(p, w, h, seed):
+    """The queen in gold of Ophir at thy right hand; the king's daughter brought in raiment of needlework, the virgins her
+    companions after her: the hall of the palace of ivory."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), bgrect(w, h, "#5A2A3A"), glow(w * 0.7, h * 0.6, h * 0.6, "#FFE680", 0.18)]
+    for i in range(5):
+        x = w * (0.08 + i * 0.22)
+        o.append(f'<rect x="{f(x - 12)}" y="{f(h * 0.2)}" width="24" height="{f(h * 0.8)}" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<rect x="{f(x - 18)}" y="{f(h * 0.2)}" width="36" height="10" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(f'<rect x="-10" y="{f(h * 0.86)}" width="{f(w + 20)}" height="{f(h)}" fill="#C8A86A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    s = fit(b, h * 0.52)
+    o.append(S3.throne(w * 0.82, b, s * 0.9) + king_fig(p, w * 0.82, b - 50 * s, s * 0.8))
+    o.append(woman(p, w * 0.66, b, s * 0.95, "#E8B830"))
+    for i, c in enumerate(("#F3EFE6", "#C2456A", "#F3EFE6", "#7A3BA8")):
+        o.append(woman(p, w * (0.14 + i * 0.1), b, s * (0.8 + 0.03 * i), c))
+    return "".join(o)
+
+def s_river(p, w, h, seed):
+    """There is a river, the streams whereof make glad the city of God: the river running below the walled city on its
+    hill, trees along its banks."""
+    o = [sky(w, h, *tod(seed, (DAY, GOLD))), zion_city(w * 0.6, h * 0.76, w * 0.6, h * 0.42, seed), ground(w, h, h * 0.76, "#8AB85A", dy=0),
+         stream(w, h * 0.82, h * 0.92, seed)]
+    for i in range(3):
+        o.append(tree(w * (0.08 + i * 0.12), h * 0.84, min(0.4, h * 0.2 / 260), seed + i, fruit=False))
+    return "".join(o)
+
+def s_trumpets(p, w, h, seed):
+    """Clap your hands, all ye peoples; God is gone up with a shout, Jehovah with the sound of a trumpet: the people with
+    their hands lifted and the trumpeters before Zion."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, *GOLD), V.rays(w * 0.7, h * 0.5, 30, 20, max(w, h), color="#FFF4C2", op=0.25),
+         zion_city(w * 0.72, h * 0.74, w * 0.44, h * 0.34, seed), ground(w, h, h * 0.74, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.6)
+    o.append(J.trumpeter(p, w * 0.08, b, s) + J.trumpeter(p, w * 0.2, b, s * 0.95))
+    for i in range(5):
+        o.append(prayer(p, w * (0.34 + i * 0.12), b - (i % 2) * 6, s * (0.8 + 0.04 * (i % 3)), cloth=("#5A6A8A", "#8A5A3A", "#3A6A5A", "#7A3A4A", "#6A5A2A")[i]))
+    return "".join(o)
+
+def s_tempest(p, w, h, seed):
+    """With the east wind thou breakest the ships of Tarshish: ships tossed on the great waves under a black sky."""
+    r = R(seed)
+    o = [sky(w, h, "#1A1A3A", "#4A4A6A")]
+    for i in range(7):
+        o.append(f'<ellipse cx="{f(r.uniform(0, w))}" cy="{f(h * r.uniform(0.25, 0.45))}" rx="{f(w * 0.2)}" ry="{f(h * 0.07)}" fill="#14142A" opacity="0.9"></ellipse>')
+    o.append(sea_band(w, h, h * 0.74, seed, color="#0F3A5A", deep="#05101A", foam="#CFEFFF", amp=22))
+    o.append(f'<g transform="rotate(-14 {f(w * 0.32)} {f(h * 0.78)})">' + K1.ship(w * 0.32, h * 0.8, min(1.0, h / 330), sail="#B8B0A0") + '</g>')
+    o.append(f'<g transform="rotate(18 {f(w * 0.72)} {f(h * 0.82)})">' + K1.ship(w * 0.72, h * 0.84, min(0.8, h / 400), sail="#8A8478", flip=True) + '</g>')
+    o.append(lightning(w * 0.55, h * 0.4, h * 0.36, sw=4))
+    for i in range(12):
+        x = r.uniform(0, w)
+        o.append(f'<path d="M{f(x)} {f(h * 0.5)} l -40 {f(h * 0.12)}" stroke="#CFEFFF" stroke-width="1.6" opacity="0.6"></path>')
+    return "".join(o)
+
+def s_riches(p, w, h, seed):
+    """They that trust in their wealth, and boast themselves in the multitude of their riches: the gold and silver heaped
+    in the dark treasure-house."""
+    r = R(seed); b = h * 0.92
+    o = [bgrect(w, h, "#1A140E"), glow(w * 0.5, b, h * 0.6, "#FFC14D", 0.14), f'<rect x="-10" y="{f(h * 0.84)}" width="{f(w + 20)}" height="{f(h)}" fill="#2A2018" stroke="#0D0D0F" stroke-width="2"></rect>']
+    k = min(1.4, h / 260)
+    for cx, wd in ((0.3, 0.22), (0.62, 0.16)):
+        o.append(f'<path d="M{f(w * (cx - wd))} {f(b)} C {f(w * (cx - wd * 0.5))} {f(b - 70 * k)} {f(w * (cx + wd * 0.5))} {f(b - 70 * k)} {f(w * (cx + wd))} {f(b)} Z" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></path>')
+        for _ in range(16):
+            x = w * cx + r.uniform(-wd * 0.7, wd * 0.7) * w; y = b - r.uniform(4, 50) * k
+            o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(7 * k)}" ry="{f(3 * k)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.2"></ellipse>')
+    for i in range(4):
+        o.append(f'<rect x="{f(w * 0.8 - 30 * k + i * 6)}" y="{f(b - 12 * k - i * 12 * k)}" width="{f(60 * k)}" height="{f(10 * k)}" fill="#C8C8D8" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    return "".join(o)
+
+def s_tomb(p, w, h, seed):
+    """Their graves are their houses for ever: tombs hewn in the rock of the hillside, their doors sealed with stones."""
+    o = [sky(w, h, *tod(seed, (DUSK, ("#6A6A7A", "#C8B8A8")))), f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.6)} C {f(w * 0.3)} {f(h * 0.5)} {f(w * 0.7)} {f(h * 0.54)} {f(w + 10)} {f(h * 0.62)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    for i, x in enumerate((0.2, 0.46, 0.72)):
+        X, Y, rw = w * x, h * 0.84, min(w * 0.08, h * 0.12)
+        o.append(f'<path d="M{f(X - rw)} {f(Y)} L {f(X - rw)} {f(Y - rw * 1.2)} C {f(X - rw)} {f(Y - rw * 2)} {f(X + rw)} {f(Y - rw * 2)} {f(X + rw)} {f(Y - rw * 1.2)} L {f(X + rw)} {f(Y)} Z" fill="#1A1410" stroke="#0D0D0F" stroke-width="2"></path>')
+        o.append(f'<circle cx="{f(X + rw * 0.9)}" cy="{f(Y - rw * 0.9)}" r="{f(rw)}" fill="#A89E92" stroke="#0D0D0F" stroke-width="2.4"></circle>')
+    o.append(f'<path d="M{f(w * 0.9)} {f(h * 0.9)} C {f(w * 0.88)} {f(h * 0.7)} {f(w * 0.9)} {f(h * 0.5)} {f(w * 0.9)} {f(h * 0.44)} C {f(w * 0.92)} {f(h * 0.5)} {f(w * 0.94)} {f(h * 0.7)} {f(w * 0.92)} {f(h * 0.9)} Z" fill="#1F3A2A" stroke="#0D0D0F" stroke-width="2"></path>')
+    return "".join(o)
+
 NOMIRROR = {"nations"}
 
 SCENES = {
@@ -888,4 +985,6 @@ SCENES = {
     "hart": ("#8FD0E2", s_hart), "nest": ("#FFB04A", s_nest), "willows": ("#3A3A6A", s_willows), "watch": ("#0B0B2A", s_watch), "rain": ("#5A6A8A", s_rain),
     "ships": ("#8FD0E2", s_ships), "dark": ("#05051A", s_dark), "vine": ("#8FD0E2", s_vine), "olive": ("#8FD0E2", s_olive),
     "large": ("#8FD0E2", s_large), "hinds": ("#8FD0E2", s_hinds),
+    "flock": ("#3A2A5A", s_flock), "bride": ("#5A2A3A", s_bride), "river": ("#8FD0E2", s_river), "trumpets": ("#FFB04A", s_trumpets),
+    "tempest": ("#1A1A3A", s_tempest), "riches": ("#1A140E", s_riches), "tomb": ("#3A2A5A", s_tomb),
 }

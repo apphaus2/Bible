@@ -46,6 +46,16 @@
    "prefixes": [
     "PS-C04-"
    ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "As the Hart Panteth",
+   "range": "Psalms 42–50",
+   "blurb": "Book II opens with the sons of Korah: as the hart panteth after the water brooks; deep calleth unto deep; oh send out thy light and thy truth; the king's wedding song and the queen in gold of Ophir; God is our refuge and strength — there is a river, the streams whereof make glad the city of God; be still, and know that I am God; walk about Zion; man that is in honor abideth not; and Asaph: every beast of the forest is mine, and the cattle upon a thousand hills.",
+   "prefixes": [
+    "PS-C05-"
+   ]
   }
  ]
 }

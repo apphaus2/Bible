@@ -723,6 +723,167 @@
    "w": 760,
    "h": 1080,
    "title": "97 · Psalm 41"
+  },
+  "PS-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · As the Hart Panteth"
+  },
+  "PS-C05-D-P01-Psalm42.dc.html": {
+   "x": 840,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Psalm 42"
+  },
+  "PS-C05-D-P02-Psalm42.dc.html": {
+   "x": 1680,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Psalm 42"
+  },
+  "PS-C05-D-P03-Psalm43.dc.html": {
+   "x": 2520,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Psalm 43"
+  },
+  "PS-C05-D-P04-Psalm44.dc.html": {
+   "x": 3360,
+   "y": 31600,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Psalm 44"
+  },
+  "PS-C05-D-P05-Psalm44.dc.html": {
+   "x": 0,
+   "y": 32800,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Psalm 44"
+  },
+  "PS-C05-D-P06-Psalm44.dc.html": {
+   "x": 840,
+   "y": 32800,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Psalm 44"
+  },
+  "PS-C05-D-P07-Psalm45.dc.html": {
+   "x": 1680,
+   "y": 32800,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Psalm 45"
+  },
+  "PS-C05-D-P08-Psalm45.dc.html": {
+   "x": 2520,
+   "y": 32800,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Psalm 45"
+  },
+  "PS-C05-D-P09-Psalm45.dc.html": {
+   "x": 3360,
+   "y": 32800,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Psalm 45"
+  },
+  "PS-C05-D-P10-Psalm46.dc.html": {
+   "x": 0,
+   "y": 34000,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Psalm 46"
+  },
+  "PS-C05-D-P11-Psalm46.dc.html": {
+   "x": 840,
+   "y": 34000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Psalm 46"
+  },
+  "PS-C05-D-P12-Psalm47.dc.html": {
+   "x": 1680,
+   "y": 34000,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Psalm 47"
+  },
+  "PS-C05-D-P13-Psalm47.dc.html": {
+   "x": 2520,
+   "y": 34000,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Psalm 47"
+  },
+  "PS-C05-D-P14-Psalm48.dc.html": {
+   "x": 3360,
+   "y": 34000,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Psalm 48"
+  },
+  "PS-C05-D-P15-Psalm48.dc.html": {
+   "x": 0,
+   "y": 35200,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Psalm 48"
+  },
+  "PS-C05-D-P16-Psalm49.dc.html": {
+   "x": 840,
+   "y": 35200,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Psalm 49"
+  },
+  "PS-C05-D-P17-Psalm49.dc.html": {
+   "x": 1680,
+   "y": 35200,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Psalm 49"
+  },
+  "PS-C05-D-P18-Psalm50.dc.html": {
+   "x": 2520,
+   "y": 35200,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Psalm 50"
+  },
+  "PS-C05-D-P19-Psalm50.dc.html": {
+   "x": 3360,
+   "y": 35200,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Psalm 50"
+  },
+  "PS-C05-D-P20-Psalm50.dc.html": {
+   "x": 0,
+   "y": 36400,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Psalm 50"
+  },
+  "PS-C05-D-P21-Psalm50.dc.html": {
+   "x": 840,
+   "y": 36400,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Psalm 50"
+  },
+  "PS-C05-D-P22-Psalm50.dc.html": {
+   "x": 1680,
+   "y": 36400,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Psalm 50"
   }
  },
  "order": [
@@ -827,7 +988,30 @@
   "PS-C04-D-P23-Psalm40.dc.html",
   "PS-C04-D-P24-Psalm40.dc.html",
   "PS-C04-D-P25-Psalm41.dc.html",
-  "PS-C04-D-P26-Psalm41.dc.html"
+  "PS-C04-D-P26-Psalm41.dc.html",
+  "PS-C05-00-Title.dc.html",
+  "PS-C05-D-P01-Psalm42.dc.html",
+  "PS-C05-D-P02-Psalm42.dc.html",
+  "PS-C05-D-P03-Psalm43.dc.html",
+  "PS-C05-D-P04-Psalm44.dc.html",
+  "PS-C05-D-P05-Psalm44.dc.html",
+  "PS-C05-D-P06-Psalm44.dc.html",
+  "PS-C05-D-P07-Psalm45.dc.html",
+  "PS-C05-D-P08-Psalm45.dc.html",
+  "PS-C05-D-P09-Psalm45.dc.html",
+  "PS-C05-D-P10-Psalm46.dc.html",
+  "PS-C05-D-P11-Psalm46.dc.html",
+  "PS-C05-D-P12-Psalm47.dc.html",
+  "PS-C05-D-P13-Psalm47.dc.html",
+  "PS-C05-D-P14-Psalm48.dc.html",
+  "PS-C05-D-P15-Psalm48.dc.html",
+  "PS-C05-D-P16-Psalm49.dc.html",
+  "PS-C05-D-P17-Psalm49.dc.html",
+  "PS-C05-D-P18-Psalm50.dc.html",
+  "PS-C05-D-P19-Psalm50.dc.html",
+  "PS-C05-D-P20-Psalm50.dc.html",
+  "PS-C05-D-P21-Psalm50.dc.html",
+  "PS-C05-D-P22-Psalm50.dc.html"
  ],
  "notes": {
   "Main": {
@@ -864,6 +1048,13 @@
    "text": "Chapter 4 · Wait for Jehovah (Psalms 34–41)",
    "x": 0,
    "y": 23600
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · As the Hart Panteth (Psalms 42–50)",
+   "x": 0,
+   "y": 31300
   }
  },
  "designSystems": [],
