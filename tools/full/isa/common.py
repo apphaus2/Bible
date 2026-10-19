@@ -116,6 +116,8 @@ def _verse_lines(c, n, kind, pre=None):
             i = t.find(":", m.end())
             j = t.find(",", m.end())
             end = i if 0 <= i < m.end() + 110 else (j if j >= 0 else -1)
+            if 0 <= j < end and t[j + 1:].lstrip()[:1].isupper() and not t[j + 1:].lstrip().startswith("O "):   # "Thus saith Jehovah, Heaven is my throne": the words begin after the comma
+                end = j
             if end < 0 or end > len(t) - 6: return [(kind, v(ref))]
             phrase = t[:end + 1]
             rest = t[end + 1:].strip()

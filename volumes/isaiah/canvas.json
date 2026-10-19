@@ -1850,6 +1850,132 @@
    "w": 760,
    "h": 1080,
    "title": "245 · Cast Up the Highway"
+  },
+  "ISA-C18-00-Title.dc.html": {
+   "x": 0,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 18 · New Heavens and a New Earth"
+  },
+  "ISA-C18-D-P01-WhoIsThisThatComet.dc.html": {
+   "x": 840,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "246 · Who Is This That Cometh from Edom?"
+  },
+  "ISA-C18-D-P02-TheLovingkindnesse.dc.html": {
+   "x": 1680,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "247 · The Lovingkindnesses of Jehovah"
+  },
+  "ISA-C18-D-P03-TheLovingkindnesse.dc.html": {
+   "x": 2520,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "248 · The Lovingkindnesses of Jehovah"
+  },
+  "ISA-C18-D-P04-LookDownFromHeaven.dc.html": {
+   "x": 3360,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "249 · Look Down from Heaven"
+  },
+  "ISA-C18-D-P05-OhThatThouWouldest.dc.html": {
+   "x": 0,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "250 · Oh That Thou Wouldest Rend the Heavens"
+  },
+  "ISA-C18-D-P06-OhThatThouWouldest.dc.html": {
+   "x": 840,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "251 · Oh That Thou Wouldest Rend the Heavens"
+  },
+  "ISA-C18-D-P07-IAmFoundOfThemThat.dc.html": {
+   "x": 1680,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "252 · I Am Found of Them That Sought Me Not"
+  },
+  "ISA-C18-D-P08-IAmFoundOfThemThat.dc.html": {
+   "x": 2520,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "253 · I Am Found of Them That Sought Me Not"
+  },
+  "ISA-C18-D-P09-IAmFoundOfThemThat.dc.html": {
+   "x": 3360,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "254 · I Am Found of Them That Sought Me Not"
+  },
+  "ISA-C18-D-P10-NewHeavensAndANewE.dc.html": {
+   "x": 0,
+   "y": 84900,
+   "w": 760,
+   "h": 1080,
+   "title": "255 · New Heavens and a New Earth"
+  },
+  "ISA-C18-D-P11-NewHeavensAndANewE.dc.html": {
+   "x": 840,
+   "y": 84900,
+   "w": 760,
+   "h": 1080,
+   "title": "256 · New Heavens and a New Earth"
+  },
+  "ISA-C18-D-P12-HeavenIsMyThrone.dc.html": {
+   "x": 1680,
+   "y": 84900,
+   "w": 760,
+   "h": 1080,
+   "title": "257 · Heaven Is My Throne"
+  },
+  "ISA-C18-D-P13-HeavenIsMyThrone.dc.html": {
+   "x": 2520,
+   "y": 84900,
+   "w": 760,
+   "h": 1080,
+   "title": "258 · Heaven Is My Throne"
+  },
+  "ISA-C18-D-P14-ShallALandBeBornIn.dc.html": {
+   "x": 3360,
+   "y": 84900,
+   "w": 760,
+   "h": 1080,
+   "title": "259 · Shall a Land Be Born in One Day?"
+  },
+  "ISA-C18-D-P15-ShallALandBeBornIn.dc.html": {
+   "x": 0,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "260 · Shall a Land Be Born in One Day?"
+  },
+  "ISA-C18-D-P16-IWillGatherAllNati.dc.html": {
+   "x": 840,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "261 · I Will Gather All Nations"
+  },
+  "ISA-C18-D-P17-IWillGatherAllNati.dc.html": {
+   "x": 1680,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "262 · I Will Gather All Nations"
   }
  },
  "order": [
@@ -2115,7 +2241,25 @@
   "ISA-C17-D-P06-TheSpiritOfTheLord.dc.html",
   "ISA-C17-D-P07-ForZionSSake.dc.html",
   "ISA-C17-D-P08-ForZionSSake.dc.html",
-  "ISA-C17-D-P09-CastUpTheHighway.dc.html"
+  "ISA-C17-D-P09-CastUpTheHighway.dc.html",
+  "ISA-C18-00-Title.dc.html",
+  "ISA-C18-D-P01-WhoIsThisThatComet.dc.html",
+  "ISA-C18-D-P02-TheLovingkindnesse.dc.html",
+  "ISA-C18-D-P03-TheLovingkindnesse.dc.html",
+  "ISA-C18-D-P04-LookDownFromHeaven.dc.html",
+  "ISA-C18-D-P05-OhThatThouWouldest.dc.html",
+  "ISA-C18-D-P06-OhThatThouWouldest.dc.html",
+  "ISA-C18-D-P07-IAmFoundOfThemThat.dc.html",
+  "ISA-C18-D-P08-IAmFoundOfThemThat.dc.html",
+  "ISA-C18-D-P09-IAmFoundOfThemThat.dc.html",
+  "ISA-C18-D-P10-NewHeavensAndANewE.dc.html",
+  "ISA-C18-D-P11-NewHeavensAndANewE.dc.html",
+  "ISA-C18-D-P12-HeavenIsMyThrone.dc.html",
+  "ISA-C18-D-P13-HeavenIsMyThrone.dc.html",
+  "ISA-C18-D-P14-ShallALandBeBornIn.dc.html",
+  "ISA-C18-D-P15-ShallALandBeBornIn.dc.html",
+  "ISA-C18-D-P16-IWillGatherAllNati.dc.html",
+  "ISA-C18-D-P17-IWillGatherAllNati.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2243,6 +2387,13 @@
    "text": "Chapter 17 · Arise, Shine (Isaiah 60–62)",
    "x": 0,
    "y": 79300
+  },
+  "chapter18": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 18 · New Heavens and a New Earth (Isaiah 63–66)",
+   "x": 0,
+   "y": 82200
   }
  },
  "designSystems": [],

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1212 verses — 1212 full, 0 partial, 0 omitted.
+**So far:** 1292 verses — 1292 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Vineyard of Jehovah (Isaiah 1–5)
 
@@ -103,5 +103,11 @@ Every verse is on the page in full.
 ## Chapter 17 · Arise, Shine (Isaiah 60–62)
 
 45 verses: 45 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 18 · New Heavens and a New Earth (Isaiah 63–66)
+
+80 verses: 80 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
