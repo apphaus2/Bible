@@ -44,5 +44,7 @@ META = {
      "blurb": "The potter's earthen bottle broken at the gate Harsith — even so will I break this people and this city; Pashhur and the stocks in the gate of Benjamin; O Jehovah, thou hast persuaded me, and I was persuaded; a burning fire shut up in my bones; the way of life and the way of death; woe unto him that buildeth his house by unrighteousness; and Coniah, a despised broken vessel — O earth, earth, earth, hear the word of Jehovah."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Cup of the Wine of Wrath", "range": "Jeremiah 23–25", "bible_chapters": [23, 24, 25],
      "blurb": "Woe unto the shepherds; a righteous Branch unto David, and his name, Jehovah our righteousness; I have dreamed, I have dreamed; is not my word like fire, and like a hammer that breaketh the rock in pieces?; two baskets of figs before the temple; seventy years; and the cup of the wine of wrath, carried from Jerusalem to all the kingdoms of the earth."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Yoke", "range": "Jeremiah 26–28", "bible_chapters": [26, 27, 28],
+     "blurb": "Stand in the court of Jehovah's house, diminish not a word; thou shalt surely die — but as for me, behold, I am in your hand; Micah the Morashtite remembered, and Uriah who fled into Egypt; then bonds and bars upon his neck — bring your necks under the yoke of the king of Babylon, and live; Hananiah breaks the bar: thou hast broken the bars of wood, but thou hast made in their stead bars of iron."},
   ],
 }

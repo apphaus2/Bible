@@ -128,7 +128,7 @@ def J(age=1, *moods):
 JEHOIAKIM = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#1F3A7A", band=True, brow="scowl", light="#D7261E")
 PASHHUR = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#F3EFE6", band=True, brow="scowl", light="#FFC14D")
 PRIEST = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#F3EFE6", band=True, light="#FFE680")
-HANANIAH = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#8A6A2A", cord=True, light="#FFC14D")
+HANANIAH = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#5A3A5A", cord=True, light="#FFC14D")
 BARUCH = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#5A6A4A", cord=True, light="#FFE680")
 BARUCH_GRIEF = F("adam", skin="#C98E66", shadow="#3A2A4A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#5A6A4A", cord=True, brow="sorrow", tear=True, light="#9AA8C8")
 EBEDMELECH = F("adam", skin="#6A4030", shadow="#2A1410", hair="#0D0D0F", hl="#2A2220", stubble="#0D0D0F", scarf="#E8B830", light="#FFE680")

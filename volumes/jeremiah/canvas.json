@@ -947,6 +947,111 @@
    "w": 760,
    "h": 1080,
    "title": "125 · Wail, Ye Shepherds"
+  },
+  "JER-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Yoke"
+  },
+  "JER-C09-D-P01-DiminishNotAWord.dc.html": {
+   "x": 840,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Diminish Not a Word"
+  },
+  "JER-C09-D-P02-ThouShaltSurelyDie.dc.html": {
+   "x": 1680,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Thou Shalt Surely Die"
+  },
+  "JER-C09-D-P03-IAmInYourHand.dc.html": {
+   "x": 2520,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · I Am in Your Hand"
+  },
+  "JER-C09-D-P04-IAmInYourHand.dc.html": {
+   "x": 3360,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · I Am in Your Hand"
+  },
+  "JER-C09-D-P05-MicahTheMorashtite.dc.html": {
+   "x": 0,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Micah the Morashtite"
+  },
+  "JER-C09-D-P06-UriahTheSonOfShema.dc.html": {
+   "x": 840,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Uriah the Son of Shemaiah"
+  },
+  "JER-C09-E-P01-BondsAndBars.dc.html": {
+   "x": 1680,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Bonds and Bars"
+  },
+  "JER-C09-E-P02-BondsAndBars.dc.html": {
+   "x": 2520,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Bonds and Bars"
+  },
+  "JER-C09-E-P03-ServeTheKingOfBaby.dc.html": {
+   "x": 3360,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Serve the King of Babylon, and Live"
+  },
+  "JER-C09-E-P04-ServeTheKingOfBaby.dc.html": {
+   "x": 0,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Serve the King of Babylon, and Live"
+  },
+  "JER-C09-E-P05-TheVesselsThatAreL.dc.html": {
+   "x": 840,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Vessels That Are Left"
+  },
+  "JER-C09-F-P01-HananiahTheSonOfAz.dc.html": {
+   "x": 1680,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Hananiah the Son of Azzur"
+  },
+  "JER-C09-F-P02-HananiahBrakeTheBa.dc.html": {
+   "x": 2520,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Hananiah Brake the Bar"
+  },
+  "JER-C09-F-P03-BarsOfIron.dc.html": {
+   "x": 3360,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Bars of Iron"
   }
  },
  "order": [
@@ -1083,7 +1188,22 @@
   "JER-C08-D-P13-TheCupOfTheWineOfW.dc.html",
   "JER-C08-D-P14-TheCupOfTheWineOfW.dc.html",
   "JER-C08-D-P15-JehovahWillRoarFro.dc.html",
-  "JER-C08-D-P16-WailYeShepherds.dc.html"
+  "JER-C08-D-P16-WailYeShepherds.dc.html",
+  "JER-C09-00-Title.dc.html",
+  "JER-C09-D-P01-DiminishNotAWord.dc.html",
+  "JER-C09-D-P02-ThouShaltSurelyDie.dc.html",
+  "JER-C09-D-P03-IAmInYourHand.dc.html",
+  "JER-C09-D-P04-IAmInYourHand.dc.html",
+  "JER-C09-D-P05-MicahTheMorashtite.dc.html",
+  "JER-C09-D-P06-UriahTheSonOfShema.dc.html",
+  "JER-C09-E-P01-BondsAndBars.dc.html",
+  "JER-C09-E-P02-BondsAndBars.dc.html",
+  "JER-C09-E-P03-ServeTheKingOfBaby.dc.html",
+  "JER-C09-E-P04-ServeTheKingOfBaby.dc.html",
+  "JER-C09-E-P05-TheVesselsThatAreL.dc.html",
+  "JER-C09-F-P01-HananiahTheSonOfAz.dc.html",
+  "JER-C09-F-P02-HananiahBrakeTheBa.dc.html",
+  "JER-C09-F-P03-BarsOfIron.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1148,6 +1268,13 @@
    "text": "Chapter 8 · The Cup of the Wine of Wrath (Jeremiah 23–25)",
    "x": 0,
    "y": 36400
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Yoke (Jeremiah 26–28)",
+   "x": 0,
+   "y": 41700
   }
  },
  "designSystems": [],
