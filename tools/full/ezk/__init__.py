@@ -39,5 +39,7 @@ META = {
      "blurb": "What is the vine-tree more than any tree? — cast into the fire for fuel; then Jerusalem, cast out in the open field in the day that she was born, washed and clothed and decked with ornaments, who trusted in her beauty; her lovers and her judgment; Samaria and Sodom her sisters; and nevertheless I will remember my covenant with thee in the days of thy youth."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Eagles and the Cedar", "range": "Ezekiel 17–19", "bible_chapters": [17, 18, 19],
      "blurb": "A riddle of two great eagles, the top of the cedar and the vine of low stature, and its meaning — the king that despised the oath; a tender twig planted upon the mountain of the height of Israel; the fathers have eaten sour grapes — the soul that sinneth, it shall die, and turn yourselves, and live; and a lamentation for the princes of Israel: the lioness and her whelps, and the vine plucked up in fury."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "A Sword, a Sword", "range": "Ezekiel 20–21", "bible_chapters": [20, 21],
+     "blurb": "The elders come to inquire, and hear the history of their fathers: Egypt, the wilderness, the sabbaths profaned, and I wrought for my name's sake; I will cause you to pass under the rod; the forest of the South set on fire; then a sword, a sword, sharpened and furbished; the king of Babylon at the parting of the way; remove the mitre, and take off the crown — until he come whose right it is."},
   ],
 }

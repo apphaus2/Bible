@@ -632,6 +632,125 @@
    "w": 760,
    "h": 1080,
    "title": "82 · Thy Mother Was Like a Vine"
+  },
+  "EZK-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · A Sword, a Sword"
+  },
+  "EZK-C07-D-P01-InTheDayWhenIChose.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · In the Day When I Chose Israel"
+  },
+  "EZK-C07-D-P02-InTheDayWhenIChose.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · In the Day When I Chose Israel"
+  },
+  "EZK-C07-D-P03-InTheWilderness.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · In the Wilderness"
+  },
+  "EZK-C07-D-P04-InTheWilderness.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · In the Wilderness"
+  },
+  "EZK-C07-D-P05-InTheWilderness.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · In the Wilderness"
+  },
+  "EZK-C07-D-P06-WhenIHadBroughtThe.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · When I Had Brought Them into the Land"
+  },
+  "EZK-C07-D-P07-IWillBeKingOverYou.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · I Will Be King over You"
+  },
+  "EZK-C07-D-P08-InMyHolyMountain.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · In My Holy Mountain"
+  },
+  "EZK-C07-D-P09-InMyHolyMountain.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · In My Holy Mountain"
+  },
+  "EZK-C07-D-P10-TheForestOfTheSout.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Forest of the South"
+  },
+  "EZK-C07-D-P11-IHaveDrawnForthMyS.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · I Have Drawn Forth My Sword"
+  },
+  "EZK-C07-D-P12-ASwordASword.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · A Sword, a Sword"
+  },
+  "EZK-C07-D-P13-ASwordASword.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · A Sword, a Sword"
+  },
+  "EZK-C07-D-P14-ThePartingOfTheWay.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Parting of the Way"
+  },
+  "EZK-C07-D-P15-ThePartingOfTheWay.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Parting of the Way"
+  },
+  "EZK-C07-D-P16-ConcerningTheChild.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Concerning the Children of Ammon"
   }
  },
  "order": [
@@ -723,7 +842,24 @@
   "EZK-C06-D-P10-IsNotMyWayEqual.dc.html",
   "EZK-C06-D-P11-ALamentationForThe.dc.html",
   "EZK-C06-D-P12-ALamentationForThe.dc.html",
-  "EZK-C06-D-P13-ThyMotherWasLikeAV.dc.html"
+  "EZK-C06-D-P13-ThyMotherWasLikeAV.dc.html",
+  "EZK-C07-00-Title.dc.html",
+  "EZK-C07-D-P01-InTheDayWhenIChose.dc.html",
+  "EZK-C07-D-P02-InTheDayWhenIChose.dc.html",
+  "EZK-C07-D-P03-InTheWilderness.dc.html",
+  "EZK-C07-D-P04-InTheWilderness.dc.html",
+  "EZK-C07-D-P05-InTheWilderness.dc.html",
+  "EZK-C07-D-P06-WhenIHadBroughtThe.dc.html",
+  "EZK-C07-D-P07-IWillBeKingOverYou.dc.html",
+  "EZK-C07-D-P08-InMyHolyMountain.dc.html",
+  "EZK-C07-D-P09-InMyHolyMountain.dc.html",
+  "EZK-C07-D-P10-TheForestOfTheSout.dc.html",
+  "EZK-C07-D-P11-IHaveDrawnForthMyS.dc.html",
+  "EZK-C07-D-P12-ASwordASword.dc.html",
+  "EZK-C07-D-P13-ASwordASword.dc.html",
+  "EZK-C07-D-P14-ThePartingOfTheWay.dc.html",
+  "EZK-C07-D-P15-ThePartingOfTheWay.dc.html",
+  "EZK-C07-D-P16-ConcerningTheChild.dc.html"
  ],
  "notes": {
   "Main": {
@@ -774,6 +910,13 @@
    "text": "Chapter 6 · The Eagles and the Cedar (Ezekiel 17–19)",
    "x": 0,
    "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · A Sword, a Sword (Ezekiel 20–21)",
+   "x": 0,
+   "y": 29900
   }
  },
  "designSystems": [],
