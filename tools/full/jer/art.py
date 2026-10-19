@@ -73,6 +73,30 @@ def wall(x0, x1, top, base, seed, color="#C8A878", towers=4, gate=None, breach=N
         o.append(f'<path d="M{f(gate - gw / 2)} {f(base)} L {f(gate - gw / 2)} {f(base - hh * 0.6)} Q {f(gate)} {f(base - hh * 0.85)} {f(gate + gw / 2)} {f(base - hh * 0.6)} L {f(gate + gw / 2)} {f(base)} Z" fill="#1A1210" stroke="#0D0D0F" stroke-width="2"></path>')
     return "".join(o)
 
+def crag(x0, x1, base, top, color="#8A6A5A", dark="#5A4038"):
+    """A rocky crag standing on the ground between x0 and x1, its peak at top."""
+    w = x1 - x0; hh = base - top
+    return (f'<path d="M{f(x0)} {f(base)} L {f(x0 + w * 0.1)} {f(top + hh * 0.4)} L {f(x0 + w * 0.3)} {f(top + hh * 0.1)} L {f(x0 + w * 0.5)} {f(top)} '
+            f'L {f(x0 + w * 0.72)} {f(top + hh * 0.16)} L {f(x0 + w * 0.9)} {f(top + hh * 0.46)} L {f(x1)} {f(base)} Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+            f'<path d="M{f(x0 + w * 0.5)} {f(top)} L {f(x0 + w * 0.62)} {f(top + hh * 0.5)} L {f(x0 + w * 0.6)} {f(base)} L {f(x1)} {f(base)} L {f(x0 + w * 0.9)} {f(top + hh * 0.46)} L {f(x0 + w * 0.72)} {f(top + hh * 0.16)} Z" fill="{dark}" opacity="0.6"></path>')
+
+def jar(x, y, s=1.0, color="#B8703A", handles=True, stopper="#6A1A2A", broken=False):
+    """An earthen jar with a narrow neck, round shoulders and two handles; (x, y) = its foot. broken=True: in pieces."""
+    if broken:
+        return (f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})">'
+                f'<path d="M-40 0 L -30 -26 L -12 -20 L -16 0 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2"></path>'
+                f'<path d="M-6 0 L 0 -34 L 16 -30 L 20 -8 L 10 0 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2"></path>'
+                f'<path d="M26 0 L 30 -18 L 46 -14 L 44 0 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2"></path>'
+                f'<path d="M-30 -44 L -18 -60 L -8 -50 L -14 -38 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2"></path></g>')
+    o = (f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})">'
+         f'<path d="M-10 0 C -20 -6 -30 -30 -30 -54 C -30 -74 -20 -84 -10 -88 L -8 -104 L 8 -104 L 10 -88 C 20 -84 30 -74 30 -54 C 30 -30 20 -6 10 0 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.4"></path>'
+         f'<path d="M-24 -40 Q 0 -32 24 -40" stroke="#6A3A1A" stroke-width="1.6" fill="none"></path>'
+         + (f'<path d="M-9 -98 C -26 -98 -30 -84 -26 -76 M9 -98 C 26 -98 30 -84 26 -76" stroke="#0D0D0F" stroke-width="5" fill="none"></path>'
+            f'<path d="M-9 -98 C -26 -98 -30 -84 -26 -76 M9 -98 C 26 -98 30 -84 26 -76" stroke="{color}" stroke-width="2.4" fill="none"></path>' if handles else "")
+         + (f'<rect x="-9" y="-112" width="18" height="9" fill="{stopper}" stroke="#0D0D0F" stroke-width="1.6"></rect>' if stopper else "")
+         + '</g>')
+    return o
+
 def jerusalem(x0, x1, base, top, seed, color="#B89A6A", temple=True, broken=False, fire=False):
     """Jerusalem on its hill: the wall and towers (joshua1.jericho), the house of Jehovah above; broken=True: the wall breached;
     fire=True: smoke and flames over it."""

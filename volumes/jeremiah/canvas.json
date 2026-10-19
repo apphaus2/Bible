@@ -485,6 +485,111 @@
    "w": 760,
    "h": 1080,
    "title": "63 · Mine Evil Neighbours"
+  },
+  "JER-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Marred Girdle"
+  },
+  "JER-C05-D-P01-ByTheEuphrates.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · By the Euphrates"
+  },
+  "JER-C05-D-P02-ByTheEuphrates.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · By the Euphrates"
+  },
+  "JER-C05-D-P03-EveryBottleShallBe.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Every Bottle Shall Be Filled with Wine"
+  },
+  "JER-C05-D-P04-HumbleYourselvesSi.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Humble Yourselves, Sit Down"
+  },
+  "JER-C05-D-P05-CanTheEthiopianCha.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Can the Ethiopian Change His Skin?"
+  },
+  "JER-C05-E-P01-ConcerningTheDroug.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Concerning the Drought"
+  },
+  "JER-C05-E-P02-ConcerningTheDroug.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Concerning the Drought"
+  },
+  "JER-C05-E-P03-TheProphetsProphes.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Prophets Prophesy Lies"
+  },
+  "JER-C05-E-P04-HastThouUtterlyRej.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Hast Thou Utterly Rejected Judah?"
+  },
+  "JER-C05-F-P01-ThoughMosesAndSamu.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Though Moses and Samuel Stood before Me"
+  },
+  "JER-C05-F-P02-ThoughMosesAndSamu.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Though Moses and Samuel Stood before Me"
+  },
+  "JER-C05-F-P03-WoeIsMeMyMother.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Woe Is Me, My Mother"
+  },
+  "JER-C05-F-P04-ThyWordsWereFound.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Thy Words Were Found"
+  },
+  "JER-C05-F-P05-AFortifiedBrazenWa.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · A Fortified Brazen Wall"
   }
  },
  "order": [
@@ -555,7 +660,22 @@
   "JER-C04-F-P01-WhereforeDothTheWa.dc.html",
   "JER-C04-F-P02-IHaveForsakenMyHou.dc.html",
   "JER-C04-F-P03-IHaveForsakenMyHou.dc.html",
-  "JER-C04-F-P04-MineEvilNeighbours.dc.html"
+  "JER-C04-F-P04-MineEvilNeighbours.dc.html",
+  "JER-C05-00-Title.dc.html",
+  "JER-C05-D-P01-ByTheEuphrates.dc.html",
+  "JER-C05-D-P02-ByTheEuphrates.dc.html",
+  "JER-C05-D-P03-EveryBottleShallBe.dc.html",
+  "JER-C05-D-P04-HumbleYourselvesSi.dc.html",
+  "JER-C05-D-P05-CanTheEthiopianCha.dc.html",
+  "JER-C05-E-P01-ConcerningTheDroug.dc.html",
+  "JER-C05-E-P02-ConcerningTheDroug.dc.html",
+  "JER-C05-E-P03-TheProphetsProphes.dc.html",
+  "JER-C05-E-P04-HastThouUtterlyRej.dc.html",
+  "JER-C05-F-P01-ThoughMosesAndSamu.dc.html",
+  "JER-C05-F-P02-ThoughMosesAndSamu.dc.html",
+  "JER-C05-F-P03-WoeIsMeMyMother.dc.html",
+  "JER-C05-F-P04-ThyWordsWereFound.dc.html",
+  "JER-C05-F-P05-AFortifiedBrazenWa.dc.html"
  ],
  "notes": {
   "Main": {
@@ -592,6 +712,13 @@
    "text": "Chapter 4 · The Broken Covenant (Jeremiah 10–12)",
    "x": 0,
    "y": 17600
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Marred Girdle (Jeremiah 13–15)",
+   "x": 0,
+   "y": 21700
   }
  },
  "designSystems": [],

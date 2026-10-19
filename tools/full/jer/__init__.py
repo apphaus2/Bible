@@ -36,5 +36,7 @@ META = {
      "blurb": "Stand in the gate of Jehovah's house: trust ye not in lying words, the temple of Jehovah, the temple of Jehovah; is this house become a den of robbers?; go ye now unto Shiloh; cakes to the queen of heaven and the valley of Slaughter; the stork knoweth her appointed times; is there no balm in Gilead?; oh that my head were waters; and let him that glorieth glory in this, that he knoweth me."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Broken Covenant", "range": "Jeremiah 10–12", "bible_chapters": [10, 11, 12],
      "blurb": "Learn not the way of the nations: they deck the tree with silver and with gold, and fasten it with nails; but Jehovah is the true God; my tent is destroyed; O Jehovah, correct me, but in measure; hear ye the words of this covenant; I was like a gentle lamb that is led to the slaughter; wherefore doth the way of the wicked prosper?; if thou hast run with the footmen, how canst thou contend with horses?"},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Marred Girdle", "range": "Jeremiah 13–15", "bible_chapters": [13, 14, 15],
+     "blurb": "A linen girdle hidden in a cleft of the rock by the Euphrates, and, behold, the girdle was marred; every bottle shall be filled with wine; can the Ethiopian change his skin, or the leopard his spots?; the drought, and the gates sitting in black; though Moses and Samuel stood before me; woe is me, my mother; thy words were found, and I did eat them; and a fortified brazen wall."},
   ],
 }
