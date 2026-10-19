@@ -29,7 +29,7 @@ def _height(lines, bw, s):
         elif kind == "say":
             cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(n / cpl) * s * 1.16 + 30
         else:
-            cpl = max(6, (bw - 36) / (s * 0.53)); tot += sum(math.ceil(len(t) / cpl) for t in text.split("<br>")) * s * 1.15 + 32
+            cpl = max(6, (bw - 36) / (s * 0.53)); tot += sum(math.ceil(len(t) / cpl) for t in text.split("<br>")) * s * 1.15 + 22
         tot += 9
     return tot
 
@@ -56,7 +56,7 @@ def _song(text, s, color="#7A3BA8"):
             f'font-size: {s}px; line-height: 1.18; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>')
 
 def _god(text, s):
-    return (f'<div style="padding: 12px 16px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
+    return (f'<div style="padding: 8px 14px 9px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
             f'font-family: Anton, sans-serif; font-size: {s}px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>')
 
 def column(lines, bw, h, side="left", hi=21):

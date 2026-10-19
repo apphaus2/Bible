@@ -52,7 +52,8 @@ def gdl(refs):
     """Jehovah's words, a Voice box a verse."""
     return [gl(r) for r in _refs(refs)]
 def gpd(refs, art, bg, **k):
-    """Jehovah's verses over a drawing (God is never drawn: storm and creation only)."""
+    """Jehovah's verses over a drawing (God is never drawn: storm and creation only); the words may take 80% of the panel."""
+    k.setdefault("wk", 0.8)
     return drawn(gdl(refs), label(refs), art, bg, **k)
 
 def pack(segs, prefix, start, **k):

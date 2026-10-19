@@ -976,61 +976,117 @@
    "h": 1080,
    "title": "126 · Where Wast Thou?"
   },
-  "JOB-C11-D-P04-WhereWastThou.dc.html": {
+  "JOB-C11-D-P04-CanstThouBindThePl.dc.html": {
    "x": 3360,
    "y": 44200,
    "w": 760,
    "h": 1080,
-   "title": "127 · Where Wast Thou?"
+   "title": "127 · Canst Thou Bind the Pleiades?"
   },
-  "JOB-C11-D-P05-CanstThouBindThePl.dc.html": {
+  "JOB-C11-D-P05-TheWildGoatsOfTheR.dc.html": {
    "x": 0,
    "y": 45400,
    "w": 760,
    "h": 1080,
-   "title": "128 · Canst Thou Bind the Pleiades?"
+   "title": "128 · The Wild Goats of the Rock"
   },
-  "JOB-C11-D-P06-CanstThouBindThePl.dc.html": {
+  "JOB-C11-D-P06-TheWildGoatsOfTheR.dc.html": {
    "x": 840,
    "y": 45400,
    "w": 760,
    "h": 1080,
-   "title": "129 · Canst Thou Bind the Pleiades?"
+   "title": "129 · The Wild Goats of the Rock"
   },
-  "JOB-C11-D-P07-TheWildGoatsOfTheR.dc.html": {
+  "JOB-C11-D-P07-HastThouGivenTheHo.dc.html": {
    "x": 1680,
    "y": 45400,
    "w": 760,
    "h": 1080,
-   "title": "130 · The Wild Goats of the Rock"
+   "title": "130 · Hast Thou Given the Horse His Might?"
   },
-  "JOB-C11-D-P08-TheWildGoatsOfTheR.dc.html": {
+  "JOB-C11-D-P08-HastThouGivenTheHo.dc.html": {
    "x": 2520,
    "y": 45400,
    "w": 760,
    "h": 1080,
-   "title": "131 · The Wild Goats of the Rock"
+   "title": "131 · Hast Thou Given the Horse His Might?"
   },
-  "JOB-C11-D-P09-TheWingsOfTheOstri.dc.html": {
-   "x": 3360,
-   "y": 45400,
-   "w": 760,
-   "h": 1080,
-   "title": "132 · The Wings of the Ostrich"
-  },
-  "JOB-C11-D-P10-HastThouGivenTheHo.dc.html": {
+  "JOB-C12-00-Title.dc.html": {
    "x": 0,
-   "y": 46600,
+   "y": 47100,
    "w": 760,
    "h": 1080,
-   "title": "133 · Hast Thou Given the Horse His Might?"
+   "title": "Chapter 12 · Mine Eye Seeth Thee"
   },
-  "JOB-C11-D-P11-HastThouGivenTheHo.dc.html": {
+  "JOB-C12-D-P01-ShallHeThatCaville.dc.html": {
    "x": 840,
-   "y": 46600,
+   "y": 47100,
    "w": 760,
    "h": 1080,
-   "title": "134 · Hast Thou Given the Horse His Might?"
+   "title": "132 · Shall He That Cavilleth Contend?"
+  },
+  "JOB-C12-D-P02-ShallHeThatCaville.dc.html": {
+   "x": 1680,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Shall He That Cavilleth Contend?"
+  },
+  "JOB-C12-D-P03-BeholdNowBehemoth.dc.html": {
+   "x": 2520,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Behold Now, Behemoth"
+  },
+  "JOB-C12-D-P04-CanstThouDrawOutLe.dc.html": {
+   "x": 3360,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Canst Thou Draw Out Leviathan?"
+  },
+  "JOB-C12-D-P05-CanstThouDrawOutLe.dc.html": {
+   "x": 0,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Canst Thou Draw Out Leviathan?"
+  },
+  "JOB-C12-D-P06-CanstThouDrawOutLe.dc.html": {
+   "x": 840,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Canst Thou Draw Out Leviathan?"
+  },
+  "JOB-C12-D-P07-MineEyeSeethThee.dc.html": {
+   "x": 1680,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Mine Eye Seeth Thee"
+  },
+  "JOB-C12-D-P08-MyServantJobShallP.dc.html": {
+   "x": 2520,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · My Servant Job Shall Pray for You"
+  },
+  "JOB-C12-D-P09-TheLatterEndOfJob.dc.html": {
+   "x": 3360,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Latter End of Job"
+  },
+  "JOB-C12-D-P10-TheLatterEndOfJob.dc.html": {
+   "x": 0,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · The Latter End of Job"
   }
  },
  "order": [
@@ -1172,14 +1228,22 @@
   "JOB-C11-D-P01-WhereWastThou.dc.html",
   "JOB-C11-D-P02-WhereWastThou.dc.html",
   "JOB-C11-D-P03-WhereWastThou.dc.html",
-  "JOB-C11-D-P04-WhereWastThou.dc.html",
-  "JOB-C11-D-P05-CanstThouBindThePl.dc.html",
-  "JOB-C11-D-P06-CanstThouBindThePl.dc.html",
-  "JOB-C11-D-P07-TheWildGoatsOfTheR.dc.html",
-  "JOB-C11-D-P08-TheWildGoatsOfTheR.dc.html",
-  "JOB-C11-D-P09-TheWingsOfTheOstri.dc.html",
-  "JOB-C11-D-P10-HastThouGivenTheHo.dc.html",
-  "JOB-C11-D-P11-HastThouGivenTheHo.dc.html"
+  "JOB-C11-D-P04-CanstThouBindThePl.dc.html",
+  "JOB-C11-D-P05-TheWildGoatsOfTheR.dc.html",
+  "JOB-C11-D-P06-TheWildGoatsOfTheR.dc.html",
+  "JOB-C11-D-P07-HastThouGivenTheHo.dc.html",
+  "JOB-C11-D-P08-HastThouGivenTheHo.dc.html",
+  "JOB-C12-00-Title.dc.html",
+  "JOB-C12-D-P01-ShallHeThatCaville.dc.html",
+  "JOB-C12-D-P02-ShallHeThatCaville.dc.html",
+  "JOB-C12-D-P03-BeholdNowBehemoth.dc.html",
+  "JOB-C12-D-P04-CanstThouDrawOutLe.dc.html",
+  "JOB-C12-D-P05-CanstThouDrawOutLe.dc.html",
+  "JOB-C12-D-P06-CanstThouDrawOutLe.dc.html",
+  "JOB-C12-D-P07-MineEyeSeethThee.dc.html",
+  "JOB-C12-D-P08-MyServantJobShallP.dc.html",
+  "JOB-C12-D-P09-TheLatterEndOfJob.dc.html",
+  "JOB-C12-D-P10-TheLatterEndOfJob.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1265,6 +1329,13 @@
    "text": "Chapter 11 · Out of the Whirlwind (Job 38–39)",
    "x": 0,
    "y": 43900
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Mine Eye Seeth Thee (Job 40–42)",
+   "x": 0,
+   "y": 46800
   }
  },
  "designSystems": [],
