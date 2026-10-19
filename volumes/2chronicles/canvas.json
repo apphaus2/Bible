@@ -107,6 +107,125 @@
    "w": 760,
    "h": 1080,
    "title": "12 · The Work of Huram"
+  },
+  "2CH-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Glory Filled the House"
+  },
+  "2CH-C02-D-P01-TheArkIntoItsPlace.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Ark into Its Place"
+  },
+  "2CH-C02-D-P02-TheArkIntoItsPlace.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Ark into Its Place"
+  },
+  "2CH-C02-D-P03-AsOne.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · As One"
+  },
+  "2CH-C02-E-P01-BlessedBeJehovah.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Blessed Be Jehovah"
+  },
+  "2CH-C02-E-P02-BlessedBeJehovah.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Blessed Be Jehovah"
+  },
+  "2CH-C02-E-P03-TheBrazenScaffold.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Brazen Scaffold"
+  },
+  "2CH-C02-E-P04-WillGodInVeryDeedD.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Will God in Very Deed Dwell with Men?"
+  },
+  "2CH-C02-E-P05-WillGodInVeryDeedD.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Will God in Very Deed Dwell with Men?"
+  },
+  "2CH-C02-E-P06-WillGodInVeryDeedD.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Will God in Very Deed Dwell with Men?"
+  },
+  "2CH-C02-E-P07-TheForeigner.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · The Foreigner"
+  },
+  "2CH-C02-E-P08-TheForeigner.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The Foreigner"
+  },
+  "2CH-C02-E-P09-AriseOJehovahGod.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Arise, O Jehovah God"
+  },
+  "2CH-C02-F-P01-TheFireCameDownFro.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · The Fire Came Down from Heaven"
+  },
+  "2CH-C02-F-P02-JoyfulAndGladOfHea.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Joyful and Glad of Heart"
+  },
+  "2CH-C02-F-P03-IfMyPeople.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · If My People"
+  },
+  "2CH-C02-F-P04-IfMyPeople.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · If My People"
   }
  },
  "order": [
@@ -123,7 +242,24 @@
   "2CH-C01-F-P03-JachinAndBoaz.dc.html",
   "2CH-C01-G-P01-TheAltarAndTheSea.dc.html",
   "2CH-C01-G-P02-TheAltarAndTheSea.dc.html",
-  "2CH-C01-G-P03-TheWorkOfHuram.dc.html"
+  "2CH-C01-G-P03-TheWorkOfHuram.dc.html",
+  "2CH-C02-00-Title.dc.html",
+  "2CH-C02-D-P01-TheArkIntoItsPlace.dc.html",
+  "2CH-C02-D-P02-TheArkIntoItsPlace.dc.html",
+  "2CH-C02-D-P03-AsOne.dc.html",
+  "2CH-C02-E-P01-BlessedBeJehovah.dc.html",
+  "2CH-C02-E-P02-BlessedBeJehovah.dc.html",
+  "2CH-C02-E-P03-TheBrazenScaffold.dc.html",
+  "2CH-C02-E-P04-WillGodInVeryDeedD.dc.html",
+  "2CH-C02-E-P05-WillGodInVeryDeedD.dc.html",
+  "2CH-C02-E-P06-WillGodInVeryDeedD.dc.html",
+  "2CH-C02-E-P07-TheForeigner.dc.html",
+  "2CH-C02-E-P08-TheForeigner.dc.html",
+  "2CH-C02-E-P09-AriseOJehovahGod.dc.html",
+  "2CH-C02-F-P01-TheFireCameDownFro.dc.html",
+  "2CH-C02-F-P02-JoyfulAndGladOfHea.dc.html",
+  "2CH-C02-F-P03-IfMyPeople.dc.html",
+  "2CH-C02-F-P04-IfMyPeople.dc.html"
  ],
  "notes": {
   "Main": {
@@ -139,6 +275,13 @@
    "text": "Chapter 1 · Wisdom and Knowledge (2 Chronicles 1–4)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Glory Filled the House (2 Chronicles 5–7)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],

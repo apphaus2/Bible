@@ -185,6 +185,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 1 Chronicles | 11 · Thine Is the Kingdom | 28–29 | title + 11 (pp. 105–115) | 51/51 verses full (the pattern as 1 Kings' blueprints; David's death words only, over the crown laid down) | `volumes/1chronicles/` |
 | **1 Chronicles** | **complete: cover + 11 chapters** | **1–29** | **127 pages (115 numbered)** | **942 verses: all full** | `volumes/1chronicles/` |
 | 2 Chronicles | 1 · Wisdom and Knowledge | 1–4 | cover + title + 12 (pp. 1–12) | 74/74 verses full (the house as 1 Kings' blueprints) | `volumes/2chronicles/` |
+| 2 Chronicles | 2 · The Glory Filled the House | 5–7 | title + 16 (pp. 13–28) | 78/78 verses full (Solomon's prayer in full as speech panels; God's answer in the Voice box) | `volumes/2chronicles/` |
 
 **Genesis through 1 Chronicles (thirteen volumes) are complete; 2 Chronicles is in progress** (`tools/full/chr2/`, fourteen chapters
 planned in `chr2/__init__.py`; Solomon's house reuses 1 Kings' blueprints, the kings of Judah reuse 1–2 Kings' faces and drawings). 1 Chronicles is `tools/full/chr1/` (a module

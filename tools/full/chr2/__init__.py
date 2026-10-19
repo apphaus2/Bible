@@ -24,5 +24,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Wisdom and Knowledge", "range": "2 Chronicles 1–4", "bible_chapters": [1, 2, 3, 4],
      "blurb": "Solomon at the high place at Gibeon, and in that night, ask what I shall give thee — give me now wisdom and knowledge; chariots and horsemen, and silver and gold as stones; Huram king of Tyre and the cedars of Lebanon; then the house of Jehovah on mount Moriah: the most holy house and its cherubim, Jachin and Boaz, the molten sea upon twelve oxen, and the vessels of gold."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Glory Filled the House", "range": "2 Chronicles 5–7", "bible_chapters": [5, 6, 7],
+     "blurb": "The ark brought into the oracle under the wings of the cherubim; the trumpeters and singers as one — for he is good, for his lovingkindness endureth for ever — and the house filled with a cloud; Solomon's prayer from the brazen scaffold; the fire came down from heaven; and Jehovah's answer by night: if my people, who are called by my name, shall humble themselves, and pray."},
   ],
 }
