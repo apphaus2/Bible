@@ -9,6 +9,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from ezk.art10 import *
 from ezk.art10 import f, K2, K3, P, rect, seated, clouds, smoke, house, INK, EZ_C, GB_BEARD, CAPT, bg, glow, vgrad, rgrad, KK2, JJ2, J1, SEA, SEA_D
 import egypt as EG
+from neh.art import horseman
 
 NILE, NILE_D = "#2C7DA8", "#1A5A7A"
 

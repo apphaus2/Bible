@@ -1416,6 +1416,90 @@
    "w": 760,
    "h": 1080,
    "title": "187 · My Sanctuary in the Midst of Them"
+  },
+  "EZK-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Gog"
+  },
+  "EZK-C14-D-P01-GogOfTheLandOfMago.dc.html": {
+   "x": 840,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Gog, of the Land of Magog"
+  },
+  "EZK-C14-D-P02-TheLandOfUnwalledV.dc.html": {
+   "x": 1680,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · The Land of Unwalled Villages"
+  },
+  "EZK-C14-D-P03-TheLandOfUnwalledV.dc.html": {
+   "x": 2520,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · The Land of Unwalled Villages"
+  },
+  "EZK-C14-D-P04-OutOfTheUttermostP.dc.html": {
+   "x": 3360,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · Out of the Uttermost Parts of the North"
+  },
+  "EZK-C14-D-P05-AGreatShaking.dc.html": {
+   "x": 0,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · A Great Shaking"
+  },
+  "EZK-C14-D-P06-BeholdIAmAgainstTh.dc.html": {
+   "x": 840,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Behold, I Am against Thee, O Gog"
+  },
+  "EZK-C14-D-P07-FiresOfTheWeapons.dc.html": {
+   "x": 1680,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Fires of the Weapons"
+  },
+  "EZK-C14-D-P08-TheValleyOfHamonGo.dc.html": {
+   "x": 2520,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · The Valley of Hamon-gog"
+  },
+  "EZK-C14-D-P09-AssembleYourselves.dc.html": {
+   "x": 3360,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Assemble Yourselves"
+  },
+  "EZK-C14-D-P10-IWillSetMyGloryAmo.dc.html": {
+   "x": 0,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · I Will Set My Glory among the Nations"
+  },
+  "EZK-C14-D-P11-NowWillIBringBackT.dc.html": {
+   "x": 840,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · Now Will I Bring Back the Captivity of Jacob"
   }
  },
  "order": [
@@ -1619,7 +1703,19 @@
   "EZK-C13-D-P15-OneStick.dc.html",
   "EZK-C13-D-P16-OneNationUponTheMo.dc.html",
   "EZK-C13-D-P17-OneNationUponTheMo.dc.html",
-  "EZK-C13-D-P18-MySanctuaryInTheMi.dc.html"
+  "EZK-C13-D-P18-MySanctuaryInTheMi.dc.html",
+  "EZK-C14-00-Title.dc.html",
+  "EZK-C14-D-P01-GogOfTheLandOfMago.dc.html",
+  "EZK-C14-D-P02-TheLandOfUnwalledV.dc.html",
+  "EZK-C14-D-P03-TheLandOfUnwalledV.dc.html",
+  "EZK-C14-D-P04-OutOfTheUttermostP.dc.html",
+  "EZK-C14-D-P05-AGreatShaking.dc.html",
+  "EZK-C14-D-P06-BeholdIAmAgainstTh.dc.html",
+  "EZK-C14-D-P07-FiresOfTheWeapons.dc.html",
+  "EZK-C14-D-P08-TheValleyOfHamonGo.dc.html",
+  "EZK-C14-D-P09-AssembleYourselves.dc.html",
+  "EZK-C14-D-P10-IWillSetMyGloryAmo.dc.html",
+  "EZK-C14-D-P11-NowWillIBringBackT.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1719,6 +1815,13 @@
    "text": "Chapter 13 · The Valley of Dry Bones (Ezekiel 35–37)",
    "x": 0,
    "y": 58100
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Gog (Ezekiel 38–39)",
+   "x": 0,
+   "y": 63400
   }
  },
  "designSystems": [],
