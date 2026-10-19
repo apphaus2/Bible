@@ -1150,6 +1150,125 @@
    "w": 760,
    "h": 1080,
    "title": "152 · The Envoys of Babylon"
+  },
+  "ISA-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Comfort Ye My People"
+  },
+  "ISA-C11-D-P01-TheVoiceOfOneThatC.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The Voice of One That Crieth"
+  },
+  "ISA-C11-D-P02-BeholdYourGod.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Behold, Your God!"
+  },
+  "ISA-C11-D-P03-WhoHathMeasuredThe.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Who Hath Measured the Waters?"
+  },
+  "ISA-C11-D-P04-WhoHathMeasuredThe.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · Who Hath Measured the Waters?"
+  },
+  "ISA-C11-D-P05-WhoHathMeasuredThe.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · Who Hath Measured the Waters?"
+  },
+  "ISA-C11-D-P06-TheyShallMountUpWi.dc.html": {
+   "x": 840,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · They Shall Mount Up with Wings as Eagles"
+  },
+  "ISA-C11-D-P07-OneFromTheEast.dc.html": {
+   "x": 1680,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · One from the East"
+  },
+  "ISA-C11-D-P08-FearThouNot.dc.html": {
+   "x": 2520,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Fear Thou Not"
+  },
+  "ISA-C11-D-P09-FearThouNot.dc.html": {
+   "x": 3360,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Fear Thou Not"
+  },
+  "ISA-C11-D-P10-FearThouNot.dc.html": {
+   "x": 0,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Fear Thou Not"
+  },
+  "ISA-C11-D-P11-ProduceYourCause.dc.html": {
+   "x": 840,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Produce Your Cause"
+  },
+  "ISA-C11-D-P12-BeholdMyServant.dc.html": {
+   "x": 1680,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Behold My Servant"
+  },
+  "ISA-C11-D-P13-BeholdMyServant.dc.html": {
+   "x": 2520,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · Behold My Servant"
+  },
+  "ISA-C11-D-P14-SingUntoJehovahANe.dc.html": {
+   "x": 3360,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · Sing unto Jehovah a New Song"
+  },
+  "ISA-C11-D-P15-SingUntoJehovahANe.dc.html": {
+   "x": 0,
+   "y": 55000,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Sing unto Jehovah a New Song"
+  },
+  "ISA-C11-D-P16-HearYeDeaf.dc.html": {
+   "x": 840,
+   "y": 55000,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · Hear, Ye Deaf"
   }
  },
  "order": [
@@ -1315,7 +1434,24 @@
   "ISA-C10-D-P16-TheWritingOfHezeki.dc.html",
   "ISA-C10-D-P17-TheEnvoysOfBabylon.dc.html",
   "ISA-C10-D-P18-TheEnvoysOfBabylon.dc.html",
-  "ISA-C10-D-P19-TheEnvoysOfBabylon.dc.html"
+  "ISA-C10-D-P19-TheEnvoysOfBabylon.dc.html",
+  "ISA-C11-00-Title.dc.html",
+  "ISA-C11-D-P01-TheVoiceOfOneThatC.dc.html",
+  "ISA-C11-D-P02-BeholdYourGod.dc.html",
+  "ISA-C11-D-P03-WhoHathMeasuredThe.dc.html",
+  "ISA-C11-D-P04-WhoHathMeasuredThe.dc.html",
+  "ISA-C11-D-P05-WhoHathMeasuredThe.dc.html",
+  "ISA-C11-D-P06-TheyShallMountUpWi.dc.html",
+  "ISA-C11-D-P07-OneFromTheEast.dc.html",
+  "ISA-C11-D-P08-FearThouNot.dc.html",
+  "ISA-C11-D-P09-FearThouNot.dc.html",
+  "ISA-C11-D-P10-FearThouNot.dc.html",
+  "ISA-C11-D-P11-ProduceYourCause.dc.html",
+  "ISA-C11-D-P12-BeholdMyServant.dc.html",
+  "ISA-C11-D-P13-BeholdMyServant.dc.html",
+  "ISA-C11-D-P14-SingUntoJehovahANe.dc.html",
+  "ISA-C11-D-P15-SingUntoJehovahANe.dc.html",
+  "ISA-C11-D-P16-HearYeDeaf.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1394,6 +1530,13 @@
    "text": "Chapter 10 · On Whom Dost Thou Trust? (Isaiah 36–39)",
    "x": 0,
    "y": 45800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Comfort Ye My People (Isaiah 40–42)",
+   "x": 0,
+   "y": 51100
   }
  },
  "designSystems": [],

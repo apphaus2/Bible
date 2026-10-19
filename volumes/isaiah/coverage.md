@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 766 verses — 766 full, 0 partial, 0 omitted.
+**So far:** 851 verses — 851 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Vineyard of Jehovah (Isaiah 1–5)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · On Whom Dost Thou Trust? (Isaiah 36–39)
 
 90 verses: 90 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · Comfort Ye My People (Isaiah 40–42)
+
+85 verses: 85 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
