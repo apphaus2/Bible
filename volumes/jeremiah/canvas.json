@@ -709,6 +709,125 @@
    "w": 760,
    "h": 1080,
    "title": "93 · Let Us Devise Devices against Jeremiah"
+  },
+  "JER-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Earthen Bottle"
+  },
+  "JER-C07-D-P01-APotterSEarthenBot.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · A Potter's Earthen Bottle"
+  },
+  "JER-C07-D-P02-TheValleyOfSlaught.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The Valley of Slaughter"
+  },
+  "JER-C07-D-P03-EvenSoWillIBreakTh.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Even So Will I Break This People"
+  },
+  "JER-C07-D-P04-TheStocksInTheGate.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Stocks in the Gate of Benjamin"
+  },
+  "JER-C07-D-P05-TheStocksInTheGate.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Stocks in the Gate of Benjamin"
+  },
+  "JER-C07-D-P06-ThouHastPersuadedM.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Thou Hast Persuaded Me"
+  },
+  "JER-C07-D-P07-CursedBeTheDay.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Cursed Be the Day"
+  },
+  "JER-C07-D-P08-ZedekiahSentUntoHi.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Zedekiah Sent unto Him"
+  },
+  "JER-C07-D-P09-ZedekiahSentUntoHi.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Zedekiah Sent unto Him"
+  },
+  "JER-C07-D-P10-OHouseOfDavid.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · O House of David"
+  },
+  "JER-C07-D-P11-GoDownToTheHouseOf.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Go Down to the House of the King"
+  },
+  "JER-C07-D-P12-GoDownToTheHouseOf.dc.html": {
+   "x": 1680,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Go Down to the House of the King"
+  },
+  "JER-C07-D-P13-WeepSoreForHimThat.dc.html": {
+   "x": 2520,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Weep Sore for Him That Goeth Away"
+  },
+  "JER-C07-D-P14-WoeUntoHimThatBuil.dc.html": {
+   "x": 3360,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Woe unto Him That Buildeth His House by Unrighteousness"
+  },
+  "JER-C07-D-P15-TheBurialOfAnAss.dc.html": {
+   "x": 0,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Burial of an Ass"
+  },
+  "JER-C07-D-P16-Coniah.dc.html": {
+   "x": 840,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Coniah"
   }
  },
  "order": [
@@ -811,7 +930,24 @@
   "JER-C06-F-P02-AsTheClayInThePott.dc.html",
   "JER-C06-F-P03-AsTheClayInThePott.dc.html",
   "JER-C06-F-P04-LetUsDeviseDevices.dc.html",
-  "JER-C06-F-P05-LetUsDeviseDevices.dc.html"
+  "JER-C06-F-P05-LetUsDeviseDevices.dc.html",
+  "JER-C07-00-Title.dc.html",
+  "JER-C07-D-P01-APotterSEarthenBot.dc.html",
+  "JER-C07-D-P02-TheValleyOfSlaught.dc.html",
+  "JER-C07-D-P03-EvenSoWillIBreakTh.dc.html",
+  "JER-C07-D-P04-TheStocksInTheGate.dc.html",
+  "JER-C07-D-P05-TheStocksInTheGate.dc.html",
+  "JER-C07-D-P06-ThouHastPersuadedM.dc.html",
+  "JER-C07-D-P07-CursedBeTheDay.dc.html",
+  "JER-C07-D-P08-ZedekiahSentUntoHi.dc.html",
+  "JER-C07-D-P09-ZedekiahSentUntoHi.dc.html",
+  "JER-C07-D-P10-OHouseOfDavid.dc.html",
+  "JER-C07-D-P11-GoDownToTheHouseOf.dc.html",
+  "JER-C07-D-P12-GoDownToTheHouseOf.dc.html",
+  "JER-C07-D-P13-WeepSoreForHimThat.dc.html",
+  "JER-C07-D-P14-WoeUntoHimThatBuil.dc.html",
+  "JER-C07-D-P15-TheBurialOfAnAss.dc.html",
+  "JER-C07-D-P16-Coniah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -862,6 +998,13 @@
    "text": "Chapter 6 · The Potter's House (Jeremiah 16–18)",
    "x": 0,
    "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Earthen Bottle (Jeremiah 19–22)",
+   "x": 0,
+   "y": 31100
   }
  },
  "designSystems": [],

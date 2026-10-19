@@ -40,5 +40,7 @@ META = {
      "blurb": "A linen girdle hidden in a cleft of the rock by the Euphrates, and, behold, the girdle was marred; every bottle shall be filled with wine; can the Ethiopian change his skin, or the leopard his spots?; the drought, and the gates sitting in black; though Moses and Samuel stood before me; woe is me, my mother; thy words were found, and I did eat them; and a fortified brazen wall."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Potter's House", "range": "Jeremiah 16–18", "bible_chapters": [16, 17, 18],
      "blurb": "Thou shalt not take thee a wife; enter not into the house of mourning; many fishers and many hunters; the sin of Judah is written with a pen of iron; blessed is the man that trusteth in Jehovah, as a tree planted by the waters; the heart is deceitful above all things; hallow the sabbath day; and the potter's house — behold, as the clay in the potter's hand, so are ye in my hand, O house of Israel."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Earthen Bottle", "range": "Jeremiah 19–22", "bible_chapters": [19, 20, 21, 22],
+     "blurb": "The potter's earthen bottle broken at the gate Harsith — even so will I break this people and this city; Pashhur and the stocks in the gate of Benjamin; O Jehovah, thou hast persuaded me, and I was persuaded; a burning fire shut up in my bones; the way of life and the way of death; woe unto him that buildeth his house by unrighteousness; and Coniah, a despised broken vessel — O earth, earth, earth, hear the word of Jehovah."},
   ],
 }

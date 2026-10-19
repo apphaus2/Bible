@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 461 verses — 461 full, 0 partial, 0 omitted.
+**So far:** 538 verses — 538 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Almond Rod (Jeremiah 1–3)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · The Potter's House (Jeremiah 16–18)
 
 71 verses: 71 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · The Earthen Bottle (Jeremiah 19–22)
+
+77 verses: 77 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
