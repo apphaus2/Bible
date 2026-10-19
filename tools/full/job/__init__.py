@@ -1,0 +1,30 @@
+"""The Job volume of the full edition: metadata, the volume cover, and the chapter plans (ch01.py, ...).
+
+The prologue (1–2) is told as story; the speeches of Job, Eliphaz, Bildad, Zophar and Elihu are song lines (one box a verse,
+the poem's lines kept, the rule in the speaker's colour) beside their faces or over drawings of the images in the poetry,
+each panel tagged with the speaker's name (job.jdiscourse, job.jspeech: copies of discourse.py and speech.py). Jehovah's
+speeches out of the whirlwind (38–41) are in the Voice box over storm and creation; God is never drawn. Satan is never drawn
+either: his words are set over the heavens. Restraint: the servants slain and the house fallen on the young men (1:15–19)
+words over the empty field, the burnt pasture, the dust of the bands and the fallen house; the boils (2:7) as sackcloth, a
+potsherd and the ash heap; behemoth and leviathan drawn as the natural river-horse and crocodile.
+
+Plan (18,263 words, twelve chapters): 1 The Land of Uz (1–3) · 2 The Vision of the Night (4–7) · 3 A Daysman Betwixt Us
+(8–10) · 4 If a Man Die (11–14) · 5 My Witness Is in Heaven (15–17) · 6 My Redeemer Liveth (18–20) · 7 Where I Might Find
+Him (21–24) · 8 Where Shall Wisdom Be Found? (25–28) · 9 The Months of Old (29–31) · 10 Elihu (32–37) · 11 Out of the
+Whirlwind (38–39) · 12 Mine Eye Seeth Thee (40–42)."""
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+from asv import Book
+G = Book("JOB")
+
+META = {
+  "id": "job", "order": 18, "name": "Job", "kanji": "ヨブ記", "thumb": "vol-job-", "book": "JOB",
+  "title": "Job Volume", "volume": "Volume Eighteen",
+  "lede": "The eighteenth book of the Bible, in full: a man in the land of Uz, perfect and upright, stripped of all he had; his three friends and their counsel; Elihu; Jehovah answering out of the whirlwind; and the latter end of Job blessed more than his beginning, every word in the words of the ASV.",
+  "chapters": [
+    {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Land of Uz", "range": "Job 1–3", "bible_chapters": [1, 2, 3],
+     "blurb": "A man in the land of Uz, perfect and upright, with seven sons and three daughters and the greatest substance of the children of the east; Satan before Jehovah — doth Job fear God for nought?; four messengers, each escaped alone to tell thee; Jehovah gave, and Jehovah hath taken away; the boils, the potsherd and the ashes; three friends sitting silent seven days; then Job opened his mouth: let the day perish wherein I was born."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Vision of the Night", "range": "Job 4–7", "bible_chapters": [4, 5, 6, 7],
+     "blurb": "Eliphaz the Temanite: who ever perished, being innocent?; a spirit passed before my face — shall mortal man be more just than God?; man is born unto trouble, as the sparks fly upward; happy is the man whom God correcteth. Job answers: oh that my vexation were but weighed; my brethren have dealt deceitfully as a brook; my days are swifter than a weaver's shuttle; what is man, that thou shouldest magnify him?"},
+  ],
+}
