@@ -177,6 +177,76 @@
    "w": 760,
    "h": 1080,
    "title": "20 · This House Was Finished"
+  },
+  "EZR-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Ezra the Scribe"
+  },
+  "EZR-C04-D-P01-AReadyScribe.dc.html": {
+   "x": 840,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · A Ready Scribe"
+  },
+  "EZR-C04-D-P02-ArtaxerxesKingOfKi.dc.html": {
+   "x": 1680,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Artaxerxes, King of Kings"
+  },
+  "EZR-C04-D-P03-ArtaxerxesKingOfKi.dc.html": {
+   "x": 2520,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Artaxerxes, King of Kings"
+  },
+  "EZR-C04-D-P04-ArtaxerxesKingOfKi.dc.html": {
+   "x": 3360,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Artaxerxes, King of Kings"
+  },
+  "EZR-C04-D-P05-BlessedBeJehovah.dc.html": {
+   "x": 0,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Blessed Be Jehovah"
+  },
+  "EZR-C04-R-P01-TheyThatWentUpWith.dc.html": {
+   "x": 840,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · They That Went Up with Me"
+  },
+  "EZR-C04-E-P01-TheRiverAhava.dc.html": {
+   "x": 1680,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The River Ahava"
+  },
+  "EZR-C04-E-P02-HolyUntoJehovah.dc.html": {
+   "x": 2520,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Holy unto Jehovah"
+  },
+  "EZR-C04-E-P03-HolyUntoJehovah.dc.html": {
+   "x": 3360,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Holy unto Jehovah"
   }
  },
  "order": [
@@ -203,7 +273,17 @@
   "EZR-C03-D-P03-TheLetterToDarius.dc.html",
   "EZR-C03-E-P01-TheRollAtAchmetha.dc.html",
   "EZR-C03-E-P02-LetTheWorkOfThisHo.dc.html",
-  "EZR-C03-F-P01-ThisHouseWasFinish.dc.html"
+  "EZR-C03-F-P01-ThisHouseWasFinish.dc.html",
+  "EZR-C04-00-Title.dc.html",
+  "EZR-C04-D-P01-AReadyScribe.dc.html",
+  "EZR-C04-D-P02-ArtaxerxesKingOfKi.dc.html",
+  "EZR-C04-D-P03-ArtaxerxesKingOfKi.dc.html",
+  "EZR-C04-D-P04-ArtaxerxesKingOfKi.dc.html",
+  "EZR-C04-D-P05-BlessedBeJehovah.dc.html",
+  "EZR-C04-R-P01-TheyThatWentUpWith.dc.html",
+  "EZR-C04-E-P01-TheRiverAhava.dc.html",
+  "EZR-C04-E-P02-HolyUntoJehovah.dc.html",
+  "EZR-C04-E-P03-HolyUntoJehovah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -233,6 +313,13 @@
    "text": "Chapter 3 · The House Finished (Ezra 5–6)",
    "x": 0,
    "y": 7500
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Ezra the Scribe (Ezra 7–8)",
+   "x": 0,
+   "y": 10400
   }
  },
  "designSystems": [],

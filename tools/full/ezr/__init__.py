@@ -23,5 +23,7 @@ META = {
      "blurb": "The people gathered as one man and the altar set upon its base; the foundation of the house laid with trumpets — for he is good — and the old men that had seen the first house weeping, so that the noise of the shout could not be told from the weeping; then the adversaries, the letter to Artaxerxes, and the work made to cease."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The House Finished", "range": "Ezra 5–6", "bible_chapters": [5, 6],
      "blurb": "Haggai and Zechariah prophesy, and the building begins again; Tattenai — who gave you a decree to build this house?; the elders answer, we are the servants of the God of heaven and earth; the roll found at Achmetha; Darius decrees, let the work of this house of God alone; the house finished, dedicated with joy, and the passover kept."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Ezra the Scribe", "range": "Ezra 7–8", "bible_chapters": [7, 8],
+     "blurb": "Ezra, a ready scribe in the law of Moses, who had set his heart to seek the law of Jehovah, and to do it, and to teach; the letter of Artaxerxes, king of kings; blessed be Jehovah, who hath put such a thing in the king's heart; the river Ahava and the fast — I was ashamed to ask of the king a band of soldiers; the silver and the gold weighed to the priests; and Jerusalem."},
   ],
 }

@@ -84,3 +84,39 @@ def work_ceased(p, w, h, seed):
     for i in range(3):
         o.append(E3.horse(w * (0.84 + i * 0.05), b, min(0.36, h / 900), color="#3A2214", flip=True))
     return "".join(o)
+
+# ---- Ezra 7–8 -----------------------------------------------------------------------------------------------------------
+def ahava(p, w, h, seed, fast=False):
+    """By the river that runneth to Ahava: tents pitched along the water three days, the people gathered (fast=True: bowed
+    in sackcloth, dusk)."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A4A7A" if fast else "#8FD0E2", "#C89A8A" if fast else "#F3E8C8"), hills(w, h, h * 0.44, seed, "#8A7A6A", amp=10, step=90),
+         ground(w, h, h * 0.5, "#B8A07A", dy=0),
+         f'<path d="M-10 {f(h * 0.6)} C {f(w * 0.3)} {f(h * 0.56)} {f(w * 0.6)} {f(h * 0.64)} {f(w + 10)} {f(h * 0.58)} L {f(w + 10)} {f(h * 0.66)} C {f(w * 0.6)} {f(h * 0.72)} {f(w * 0.3)} {f(h * 0.64)} -10 {f(h * 0.68)} Z" fill="#2C7DA8" stroke="#0D0D0F" stroke-width="2"></path>',
+         N.camp(10, -10, w + 10, h * 0.42, h * 0.54, seed, color=("#5A3A22", "#6B4A2A", "#3A2214"))]
+    s = fit(b, max(h * 0.7, b - 160))
+    r = random.Random(seed)
+    for i in range(9):
+        x = w * (0.06 + i * 0.11)
+        if fast: o.append(E.kneel(x, b, s * 0.8, color="#5A5040", skin="#9A6A4A", flip=i % 2 == 1))
+        else: o.append(man(p, x, b - r.randint(0, 6), s, r.choice(["#6A3A2A", "#3A4A6A", "#5A4A3A", "#E8D8B0", "#4A5A3A"])))
+    return "".join(o)
+
+def weighing(p, w, h, seed):
+    """The silver, the gold and the vessels weighed into the hands of the priests: a great balance, ingots and bowls on
+    the scales, the twelve chiefs of the priests in white beside it."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), S3.cedar(w, h, h * 0.84), ground(w, h, h * 0.84, "#6A4A2A", dy=0)]
+    cx, top = w * 0.5, h * 0.3
+    o.append(f'<path d="M{f(cx)} {f(b)} L {f(cx)} {f(top)}" stroke="#B87333" stroke-width="8"></path>'
+             f'<path d="M{f(cx - w * 0.2)} {f(top + 6)} L {f(cx + w * 0.2)} {f(top - 6)}" stroke="#B87333" stroke-width="6"></path>')
+    for side, dy, c in ((-1, 6, "#C8C8D0"), (1, -6, "#E8B830")):
+        px = cx + side * w * 0.2
+        o.append(f'<path d="M{f(px)} {f(top + dy)} L {f(px - w * 0.05)} {f(top + dy + h * 0.2)} M{f(px)} {f(top + dy)} L {f(px + w * 0.05)} {f(top + dy + h * 0.2)}" stroke="#6A4A2A" stroke-width="2"></path>'
+                 f'<path d="M{f(px - w * 0.07)} {f(top + dy + h * 0.2)} Q {f(px)} {f(top + dy + h * 0.28)} {f(px + w * 0.07)} {f(top + dy + h * 0.2)} Z" fill="#B87333" stroke="#0D0D0F" stroke-width="2"></path>')
+        for k in range(3):
+            o.append(f'<rect x="{f(px - w * 0.04 + k * w * 0.027)}" y="{f(top + dy + h * 0.16)}" width="{f(w * 0.024)}" height="{f(h * 0.04)}" rx="2" fill="{c}" stroke="#0D0D0F" stroke-width="1.2"></rect>')
+    s = fit(b, max(h * 0.4, b - 240))
+    for i in range(3):
+        o.append(priest(p, w * (0.06 + i * 0.08), b, s) + priest(p, w * (0.94 - i * 0.08), b, s, flip=True))
+    return "".join(o)

@@ -202,6 +202,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Ezra | 1 · The Decree of Cyrus | 1–2 | cover + title + 8 (pp. 1–8) | 81/81 verses full (the vessels and the assembly as tally boards; the families of the return as roll cells) | `volumes/ezra/` |
 | Ezra | 2 · The Foundation of the House | 3–4 | title + 6 (pp. 9–14) | 37/37 verses full (the letters beyond the River as sealed scrolls, their words in speech boxes) | `volumes/ezra/` |
 | Ezra | 3 · The House Finished | 5–6 | title + 6 (pp. 15–20) | 39/39 verses full (the roll at Achmetha and the measures of the house as a plan; 6:11 words only) | `volumes/ezra/` |
+| Ezra | 4 · Ezra the Scribe | 7–8 | title + 9 (pp. 21–29) | 64/64 verses full (Ezra's line to Aaron as a chart; the silver and gold weighed on a great balance) | `volumes/ezra/` |
 
 **Genesis through 2 Chronicles (fourteen volumes) are complete; Ezra is in progress** (`tools/full/ezr/`, five chapters planned in
 `ezr/__init__.py`, `ezr.art` carries `chr2.art`). 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
