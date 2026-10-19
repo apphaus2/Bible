@@ -205,6 +205,14 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Ezra | 4 · Ezra the Scribe | 7–8 | title + 9 (pp. 21–29) | 64/64 verses full (Ezra's line to Aaron as a chart; the silver and gold weighed on a great balance) | `volumes/ezra/` |
 | Ezra | 5 · The Strange Wives | 9–10 | title + 8 (pp. 30–37) | 59/59 verses full (Ezra's prayer on his knees; the people trembling in the rain; the names as roll cells) | `volumes/ezra/` |
 | **Ezra** | **complete: cover + 5 chapters** | **1–10** | **43 pages (37 numbered)** | **280 verses: all full** | `volumes/ezra/` |
+| Nehemiah | 1 · The Wall of Jerusalem | 1–2 | cover + title + 8 (pp. 1–8) | 31/31 verses full (God's word to Moses in 1:8–9 in the Voice box; the night ride as a plan of the wall) | `volumes/nehemiah/` |
+| Nehemiah | 2 · The Builders | 3–4 | title + 12 (pp. 9–20) | 55/55 verses full (ch. 3 as roll cells under the plan of the wall, its stretch lit page by page: `neh.common.plan_pages`) | `volumes/nehemiah/` |
+| Nehemiah | 3 · The Work Finished | 5–6 | title + 8 (pp. 21–28) | 38/38 verses full (the plain of Ono as a map; the governor's table as a tally board) | `volumes/nehemiah/` |
+| Nehemiah | 4 · The Genealogy of the Return | 7 | title + 8 (pp. 29–36) | 73/73 verses full (the register as bar charts and tally boards over roll cells) | `volumes/nehemiah/` |
+| Nehemiah | 5 · The Book of the Law | 8–9 | title + 13 (pp. 37–49) | 56/56 verses full (Ezra on the pulpit of wood; the Levites' prayer drawn over the history it tells) | `volumes/nehemiah/` |
+| Nehemiah | 6 · The Sealed Covenant | 10–11 | title + 8 (pp. 50–57) | 75/75 verses full (they that sealed and they that dwelt as roll cells; the villages as a map) | `volumes/nehemiah/` |
+| Nehemiah | 7 · The Dedication of the Wall | 12–13 | title + 12 (pp. 58–69) | 78/78 verses full (the two companies on the plan of the wall; 13:25 words only over the shut gate) | `volumes/nehemiah/` |
+| **Nehemiah** | **complete: cover + 7 chapters** | **1–13** | **77 pages (69 numbered)** | **406 verses: all full** | `volumes/nehemiah/` |
 | Esther | 1 · Vashti and Esther | 1–2 | cover + title + 9 (pp. 1–9) | 45/45 verses full (all new drawings, `est/art.py`; 2:23 words over the threshold and the book of the chronicles) | `volumes/esther/` |
 | Esther | 2 · For Such a Time as This | 3–4 | title + 7 (pp. 10–16) | 32/32 verses full (Pur as a wheel of the twelve months; Mordecai in sackcloth) | `volumes/esther/` |
 | Esther | 3 · The King Could Not Sleep | 5–7 | title + 12 (pp. 17–28) | 38/38 verses full (the gallows only ever standing and empty; 7:10 words over the empty gallows far off at dusk) | `volumes/esther/` |
@@ -212,10 +220,13 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | **Esther** | **complete: cover + 4 chapters** | **1–10** | **43 pages (38 numbered)** | **167 verses: all full** | `volumes/esther/` |
 
 **Genesis through Ezra (fifteen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` has the wall and its gates as a plan,
+`wall_plan(lit=, night=, companies=)`, the builders with a weapon in one hand, the pulpit of wood; `neh.common.plan_pages` sets one picture
+above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
+(in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
-`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Nehemiah,
-Job, Psalms, Proverbs, Ecclesiastes, the Song, Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `neh`, `job`, `psa`, `pro`, `ecc`, `sng`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Job,
+Psalms, Proverbs, Ecclesiastes, the Song, Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `job`, `psa`, `pro`, `ecc`, `sng`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module

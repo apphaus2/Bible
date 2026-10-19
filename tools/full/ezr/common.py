@@ -61,6 +61,6 @@ ZECHARIAH = F("adam", skin="#D9A27A", shadow="#4A3A4A", hair="#2A1A10", hl="#4A3
 TATTENAI = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#8A5A1A", band=True, light="#FFC14D")
 DARIUS = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#7A2A6A", band=True, brow="scowl", light="#FFD23F")
 ARTAXERXES = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#7A2A6A", band=True, light="#FFE680")
-EZRA = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#5A5450", scarf="#E8E2D6", cord=True, light="#FFE680")
-EZRA_GRIEF = F("adam", skin="#B98A6E", shadow="#3A2A4A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#5A5450", scarf="#E8E2D6", cord=True, brow="sorrow", tear=True, light="#9AA8C8")
+EZRA = F("adam", skin="#C98E66", shadow="#5A4A4A", hair="#E8E2D6", hl="#F3EFE6", beard=True, beard_color="#E8E2D6", scarf="#2A2A6A", band=True, light="#FFE680")
+EZRA_GRIEF = F("adam", skin="#B98A6E", shadow="#3A2A4A", hair="#E8E2D6", hl="#F3EFE6", beard=True, beard_color="#E8E2D6", scarf="#2A2A6A", band=True, brow="sorrow", tear=True, light="#9AA8C8")
 SHECANIAH = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#6A5A3A", cord=True, light="#FFC14D")
