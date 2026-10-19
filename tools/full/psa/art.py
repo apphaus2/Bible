@@ -344,8 +344,16 @@ def s_gates(p, w, h, seed):
     return "".join(o)
 
 def s_court(p, w, h, seed):
-    """The house of Jehovah and its courts, the people gathered."""
-    return K1.court_scene(p, w, h, seed, crowd=h > 440, smoke=seed % 2 == 0)
+    """The house of Jehovah and its courts, the people gathered (seed even: the altar's fire before the house)."""
+    from jos.art import crowd_at
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), ground(w, h, h * 0.66, "#C8B88A", dy=0), K1.temple_front(w * 0.5, h * 0.66, min(w * 0.5, h * 0.9), seed)]
+    if seed % 2 == 0:
+        o.append(K1.horned_altar(w * 0.5, h * 0.86, min(0.7, h / 460), fire=True, seed=seed))
+    s = fit(b, h * 0.62)
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.3, h * 0.78, b, 6, s * 0.7, s))
+    o.append(crowd_at(p, w, h, seed + 1, w * 0.7, w * 0.98, h * 0.78, b, 6, s * 0.7, s, flip=True))
+    return "".join(o)
 
 def s_music(p, w, h, seed):
     """Sing praises unto Jehovah: Levites with harps and cymbals."""
@@ -1363,6 +1371,33 @@ def s_lift(p, w, h, seed):
     o.append(walker(p, w * 0.24, b, fit(b, h * 0.6), cloth="#5A6A8A"))
     return "".join(o)
 
+
+def s_snow(p, w, h, seed):
+    """He giveth snow like wool; he scattereth the hoar-frost like ashes; he casteth forth his ice like morsels: the hills
+    under snow, the flakes falling."""
+    r = R(seed)
+    o = [sky(w, h, "#7A8AA8", "#E8ECF8"), mountain(w * 0.3, h * 0.84, w * 0.6, h * 0.36, color="#C8D0E0", lit="#F3F6FA", snow=True),
+         mountain(w * 0.76, h * 0.84, w * 0.6, h * 0.3, color="#B8C0D0", lit="#E8ECF8", snow=True), ground(w, h, h * 0.84, "#F3F6FA", dy=0)]
+    for i in range(3):
+        o.append(cedar(w * (0.12 + i * 0.36), h * 0.96, min(0.4, h * 0.24 / 300), seed + i).replace("#1F4A34", "#3A5A4A").replace("#2E6A32", "#4A6A5A"))
+    for _ in range(120):
+        o.append(f'<circle cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(0, h))}" r="{f(r.uniform(1.5, 3.5))}" fill="#FFFFFF" opacity="0.95"></circle>')
+    return "".join(o)
+
+def s_finale(p, w, h, seed):
+    """Praise him with trumpet sound, with psaltery and harp, with timbrel and dance, with loud cymbals: all the singers and
+    players before the house of Jehovah in the light."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#FFB04A", "#FFF4C2"), V.rays(w * 0.5, h * 0.5, 40, 20, max(w, h) * 1.2, color="#FFFFFF", op=0.25),
+         K1.temple_front(w * 0.5, h * 0.74, w * 0.36, seed), ground(w, h, h * 0.74, "#D8B87A", dy=0)]
+    s = fit(b, h * 0.72)
+    o.append(J.trumpeter(p, w * 0.06, b, s) + J.trumpeter(p, w * 0.94, b, s, flip=True))
+    for i, (kind, cloth, wm) in enumerate((("harp", "#F3EFE6", False), ("timbrel", "#C2456A", True), ("cymbals", "#F3EFE6", False), ("timbrel", "#E8A317", True),
+                                            ("harp", "#F3EFE6", False), ("timbrel", "#7A3BA8", True))):
+        o.append(S3.musician(p, w * (0.2 + i * 0.12), b - (i % 2) * 4, s * 0.92, kind=kind, cloth=cloth, woman=wm, seed=seed + i))
+    o.append(S3.notes(w * 0.5, h * 0.3, 12, seed))
+    return "".join(o)
+
 NOMIRROR = {"nations", "lands", "confed"}
 
 SCENES = {
@@ -1394,6 +1429,7 @@ SCENES = {
     "tents": ("#8FD0E2", s_tents), "going": ("#5A5A8A", s_going),
     "haven": ("#3A2A5A", s_haven), "oasis": ("#C8A07A", s_oasis), "skip": ("#8FD0E2", s_skip), "corner": ("#FFB04A", s_corner), "bees": ("#5A3A2A", s_bees),
     "child": ("#FFB04A", s_child), "hermon": ("#5A5A8A", s_hermon), "templenight": ("#0B0B2A", s_templenight), "crag": ("#1A1A3A", s_crag), "lift": ("#8FD0E2", s_lift),
+    "snow": ("#7A8AA8", s_snow), "finale": ("#FFB04A", s_finale),
     "captives": ("#5A4A5A", s_captives), "judges": ("#C8A07A", s_judges), "confed": ("#0B1A2E", s_confed),
     "hail": ("#14142A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 2)), "darkness": ("#05050F", lambda p, w, h, seed: s_plagues(p, w, h, seed, 3)),
 }
