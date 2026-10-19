@@ -176,6 +176,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 1 Chronicles | 2 · The Sons of David | 3–4 | title + 8 (pp. 10–17) | 67/67 verses full (Jabez as faces and a survey plan; 4:41 words over smoke) | `volumes/1chronicles/` |
 | 1 Chronicles | 3 · The Sons of Levi | 5–6 | title + 10 (pp. 18–27) | 107/107 verses full (the Hagrites as a map; the high priests and the singers as lineage charts) | `volumes/1chronicles/` |
 | 1 Chronicles | 4 · They That Dwelt in Jerusalem | 7–9 | title + 12 (pp. 27–38) | 124/124 verses full (7:21 words over the gate; the porters on four sides as a blueprint) | `volumes/1chronicles/` |
+| 1 Chronicles | 5 · David King over Israel | 10–12 | title + 13 (pp. 38–50) | 101/101 verses full (the digest Gilboa and Hebron panels; 10:4–6 and 10:9–10 words over the crown, spear and burning city) | `volumes/1chronicles/` |
 
 **Genesis through 2 Kings (twelve volumes) are complete; 1 Chronicles is in progress.** 1 Chronicles is `tools/full/chr1/` (a module
 name cannot start with a digit; eleven chapters planned in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts

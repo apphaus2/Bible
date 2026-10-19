@@ -30,5 +30,7 @@ META = {
      "blurb": "Reuben, whose birthright was given to the sons of Joseph; Gad in Bashan; the war with the Hagrites, for they cried to God in the battle; the two tribes and a half carried away beyond the river; then the sons of Levi: the high priests from Aaron to Jehozadak, the singers David set over the service of song, and the cities of the Levites."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "They That Dwelt in Jerusalem", "range": "1 Chronicles 7–9", "bible_chapters": [7, 8, 9],
      "blurb": "Issachar, Benjamin, Naphtali and Manasseh; Ephraim mourning many days, and Sheerah who built Beth-horon; the line from Ephraim to Joshua; Asher; Benjamin and the house of Saul; then all Israel reckoned by genealogies, and those who dwelt in Jerusalem: priests, Levites, and the porters on the four sides of the house, opening it morning by morning."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "David King over Israel", "range": "1 Chronicles 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "Saul and his sons fallen on mount Gilboa, and the valiant men of Jabesh who buried their bones under the oak; then all Israel at Hebron — behold, we are thy bone and thy flesh; the stronghold of Zion; the mighty men, and the water of the well of Beth-lehem poured out unto Jehovah; thine are we, David; and three days of feasting, for there was joy in Israel."},
   ],
 }

@@ -242,3 +242,31 @@ def night_song(p, w, h, seed):
     for i in range(4):
         o.append(S3.musician(p, w * (0.1 + i * 0.26), b, s, kind="harp", cloth="#C8C2D6", woman=False, seed=seed + i))
     return "".join(o)
+
+# ---- 1 Chronicles 10–12 -------------------------------------------------------------------------------------------------
+import exodus3 as E3
+
+def oak_jabesh(w, h, seed):
+    """The oak in Jabesh at dusk, the ground beneath it fresh-turned, the men of Jabesh-gilead small and still."""
+    o = [K2.sky(w, h, "#2A1A3A", "#C8807A"), hills(w, h, h * 0.6, seed, "#3A2A3A", amp=12, step=80), ground(w, h, h * 0.78, "#4A3A30", dy=0),
+         S4b.great_oak(w * 0.42, h * 0.8, min(1.4, h / 300), seed=seed, dark=True),
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.82)}" rx="{f(w * 0.12)}" ry="{f(h * 0.025)}" fill="#6A4A30" stroke="#0D0D0F" stroke-width="1.6"></ellipse>']
+    for i in range(7):
+        x = w * (0.68 + i * 0.045)
+        o.append(f'<path d="M{f(x)} {f(h * 0.9)} l 0 {f(-h * 0.08)}" stroke="#1A1218" stroke-width="{f(w * 0.014)}" stroke-linecap="round"></path>'
+                 f'<circle cx="{f(x)}" cy="{f(h * 0.8)}" r="{f(w * 0.009)}" fill="#1A1218"></circle>')
+    return "".join(o)
+
+def bringing(p, w, h, seed):
+    """Bread on asses, on camels, on mules and on oxen, coming to Hebron: a long train of beasts laden with sacks, figs and
+    raisins, wine-skins and oil, Hebron on its hill with the feast."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFE680", "#FFB04A"), J.city_hill(w * 0.84, h * 0.6, w * 0.26, h * 0.26, seed), ground(w, h, h * 0.62, "#C8A06A", dy=0)]
+    for i in range(9):
+        k = i / 8; x = w * (0.04 + 0.7 * k); y = h * (0.96 - 0.26 * k); s = 0.5 - 0.3 * k
+        q = i % 3
+        if q == 0: o.append(J1.camel(x, y, s * min(1.0, h / 360), color="#B5844A"))
+        elif q == 1: o.append(N.ass(x, y, s * min(1.0, h / 360)))
+        else: o.append(S1.cow(x, y - h * 0.02, s * min(1.0, h / 360), color="#8A5A30"))
+        o.append(f'<rect x="{f(x - 14 * s)}" y="{f(y - h * 0.22 * s - 10)}" width="{f(28 * s)}" height="{f(18 * s)}" rx="4" fill="{r.choice(["#E8D8A0", "#C8A060", "#8A3A4A"])}" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    return "".join(o)

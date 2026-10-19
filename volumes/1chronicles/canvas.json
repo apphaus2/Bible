@@ -303,6 +303,104 @@
    "w": 760,
    "h": 1080,
    "title": "37 · The House of Saul"
+  },
+  "1CH-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · David King over Israel"
+  },
+  "1CH-C05-D-P01-MountGilboa.dc.html": {
+   "x": 840,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Mount Gilboa"
+  },
+  "1CH-C05-D-P02-MountGilboa.dc.html": {
+   "x": 1680,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Mount Gilboa"
+  },
+  "1CH-C05-E-P01-KingOverAllIsrael.dc.html": {
+   "x": 2520,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · King over All Israel"
+  },
+  "1CH-C05-E-P02-TheStrongholdOfZio.dc.html": {
+   "x": 3360,
+   "y": 14800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Stronghold of Zion"
+  },
+  "1CH-C05-R-P01-TheMightyMen.dc.html": {
+   "x": 0,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Mighty Men"
+  },
+  "1CH-C05-F-P01-TheWellOfBethLehem.dc.html": {
+   "x": 840,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · The Well of Beth-lehem"
+  },
+  "1CH-C05-S-P01-ChiefOfTheThree.dc.html": {
+   "x": 1680,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Chief of the Three"
+  },
+  "1CH-C05-S-P02-TheMightyMenOfTheA.dc.html": {
+   "x": 2520,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · The Mighty Men of the Armies"
+  },
+  "1CH-C05-T-P01-TheyThatCameToDavi.dc.html": {
+   "x": 3360,
+   "y": 16000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · They That Came to David to Ziklag"
+  },
+  "1CH-C05-G-P01-ThineAreWeDavid.dc.html": {
+   "x": 0,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Thine Are We, David"
+  },
+  "1CH-C05-U-P01-ToMakeDavidKing.dc.html": {
+   "x": 840,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · To Make David King"
+  },
+  "1CH-C05-U-P02-ToMakeDavidKing.dc.html": {
+   "x": 1680,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · To Make David King"
+  },
+  "1CH-C05-H-P01-ThereWasJoyInIsrae.dc.html": {
+   "x": 2520,
+   "y": 17200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · There Was Joy in Israel"
   }
  },
  "order": [
@@ -347,7 +445,21 @@
   "1CH-C04-T-P01-TheyThatDweltInJer.dc.html",
   "1CH-C04-F-P01-ThePorters.dc.html",
   "1CH-C04-F-P02-TheVesselsOfServic.dc.html",
-  "1CH-C04-U-P01-TheHouseOfSaul.dc.html"
+  "1CH-C04-U-P01-TheHouseOfSaul.dc.html",
+  "1CH-C05-00-Title.dc.html",
+  "1CH-C05-D-P01-MountGilboa.dc.html",
+  "1CH-C05-D-P02-MountGilboa.dc.html",
+  "1CH-C05-E-P01-KingOverAllIsrael.dc.html",
+  "1CH-C05-E-P02-TheStrongholdOfZio.dc.html",
+  "1CH-C05-R-P01-TheMightyMen.dc.html",
+  "1CH-C05-F-P01-TheWellOfBethLehem.dc.html",
+  "1CH-C05-S-P01-ChiefOfTheThree.dc.html",
+  "1CH-C05-S-P02-TheMightyMenOfTheA.dc.html",
+  "1CH-C05-T-P01-TheyThatCameToDavi.dc.html",
+  "1CH-C05-G-P01-ThineAreWeDavid.dc.html",
+  "1CH-C05-U-P01-ToMakeDavidKing.dc.html",
+  "1CH-C05-U-P02-ToMakeDavidKing.dc.html",
+  "1CH-C05-H-P01-ThereWasJoyInIsrae.dc.html"
  ],
  "notes": {
   "Main": {
@@ -384,6 +496,13 @@
    "text": "Chapter 4 · They That Dwelt in Jerusalem (1 Chronicles 7–9)",
    "x": 0,
    "y": 10400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · David King over Israel (1 Chronicles 10–12)",
+   "x": 0,
+   "y": 14500
   }
  },
  "designSystems": [],
