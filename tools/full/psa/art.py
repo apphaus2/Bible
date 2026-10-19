@@ -267,7 +267,7 @@ def s_harvest(p, w, h, seed):
     o = [mk.defs(p, *ALL), sky(w, h, *GOLD), sun(w * 0.15, h * 0.3, 20, color="#FFE680", op=0.4), hills(w, h, h * 0.56, seed, color="#8A9A4A", amp=10),
          ground(w, h, h * 0.64, "#D8B86A", dy=0), R1.field(-10, w + 10, h * 0.66, h * 0.16, seed, rows=3)]
     s = fit(b, h * 0.56)
-    o.append(R1.reaper(p, w * 0.3, b, s) + R1.sheaf(w * 0.5, b, s * 0.9) + R1.sheaf(w * 0.62, b - 6, s * 0.8) + R1.reaper(p, w * 0.8, b, s * 0.95, flip=True, cloth="#6A5A3A"))
+    o.append(R1.reaper(p, w * 0.3, b, s) + R1.sheaf(w * 0.5, b, s * 2.4) + R1.sheaf(w * 0.62, b - 6, s * 2.1) + R1.reaper(p, w * 0.8, b, s * 0.95, flip=True, cloth="#6A5A3A"))
     return "".join(o)
 
 def s_lions(p, w, h, seed):
@@ -302,7 +302,7 @@ def s_pit(p, w, h, seed):
          f'<path d="M{f(w * 0.08)} {f(b)} C {f(w * 0.1)} {f(h * 1.1)} {f(w * 0.4)} {f(h * 1.1)} {f(w * 0.46)} {f(b)} Z" fill="#0D0A08" stroke="#0D0D0F" stroke-width="2"></path>',
          f'<path d="M{f(w * 0.12)} {f(h * 0.96)} C {f(w * 0.2)} {f(h * 0.92)} {f(w * 0.34)} {f(h * 0.94)} {f(w * 0.42)} {f(h * 0.9)} L {f(w * 0.44)} {f(h * 1.0)} L {f(w * 0.14)} {f(h * 1.0)} Z" fill="#4A3A22" opacity="0.8"></path>',
          f'<path d="M{f(w * 0.56)} {f(b)} L {f(w * 0.62)} {f(b - h * 0.08)} L {f(w * 0.8)} {f(b - h * 0.1)} L {f(w * 0.88)} {f(b)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
-    o.append(walker(p, w * 0.72, b - h * 0.09, fit(b - h * 0.09, h * 0.42), cloth="#5A4A7A", up=PRAY))
+    o.append(prayer(p, w * 0.72, b - h * 0.09, fit(b - h * 0.09, h * 0.42), cloth="#5A4A7A"))
     return "".join(o)
 
 def s_heavens(p, w, h, seed):
@@ -613,7 +613,7 @@ def s_rock(p, w, h, seed):
     """Lead me to the rock that is higher than I: a high rock in the sea, a man standing on it above the waves."""
     o = [mk.defs(p, *ALL), sky(w, h, *tod(seed, (DAWN, DAY, DUSK))), sea_band(w, h, h * 0.8, seed, color="#1F6F9A"),
          f'<path d="M{f(w * 0.36)} {f(h + 10)} L {f(w * 0.42)} {f(h * 0.72)} L {f(w * 0.5)} {f(h * 0.66)} L {f(w * 0.6)} {f(h * 0.7)} L {f(w * 0.66)} {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
-    o.append(walker(p, w * 0.52, h * 0.68, fit(h * 0.68, h * 0.42), cloth="#5A4A7A", up=PRAY))
+    o.append(prayer(p, w * 0.52, h * 0.68, fit(h * 0.68, h * 0.42), cloth="#5A4A7A"))
     return "".join(o)
 
 def s_cedars(p, w, h, seed):
@@ -868,6 +868,8 @@ def s_hinds(p, w, h, seed):
     o.append(king_fig(p, w * 0.5, h * 0.71, fit(h * 0.71, h * 0.44), up=[(-22, -158), (-6, -196), (8, -228)]))
     o.append(hart(w * 0.84, h * 0.83, min(0.9, h / 360), color="#A8742E"))
     return "".join(o)
+
+NOMIRROR = {"nations"}
 
 SCENES = {
     "tree": ("#8FD0E2", s_tree), "chaff": ("#5A3A5A", s_chaff), "path": ("#5A5A8A", s_path), "kings": ("#3A0A1A", s_kings), "throne": ("#FFB04A", s_throne),

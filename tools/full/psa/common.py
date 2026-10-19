@@ -100,6 +100,10 @@ def _plain(c, x):
     m = re.search(r"[א-ת]", t)
     return (t[:m.start()].strip(), t[m.start():]) if m else (t, None)
 
+def mirror(svg, w, on):
+    """A drawing used twice in a run is flipped left to right the second time (maps and labelled plates never are)."""
+    return f'<g transform="translate({w} 0) scale(-1 1)">{svg}</g>' if on else svg
+
 def balance(n, verses, bud):
     """Split a run of verses into the fewest panels of about `bud` characters, as even as the verses allow."""
     import math
@@ -177,7 +181,7 @@ def psalm(n, plan, god=None, budget=380, fbudget=440, face=None, head=None, upto
                 segs.append(seg(lines, ref, tok=tok, bg=bg, head=nm, title=title or nm))
             else:
                 bg, fn = K.SCENES[k]
-                segs.append(seg(lines, ref, bg=bg, art=(lambda w, h, fn=fn, p=f"q{n}x{ix}", s=seed: fn(p, w, h, s)), head=nm, title=title or nm))
+                segs.append(seg(lines, ref, bg=bg, art=(lambda w, h, fn=fn, p=f"q{n}x{ix}", s=seed, k=k: mirror(fn(p, w, h, s), w, s % 2 == 1 and k not in K.NOMIRROR)), head=nm, title=title or nm))
             ix += 1
     return segs
 
