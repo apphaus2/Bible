@@ -1,0 +1,114 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T00:54:47Z"
+ },
+ "title": "Ezra — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "EZR-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Decree of Cyrus"
+  },
+  "EZR-C01-D-P01-LetHimGoUp.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Let Him Go Up"
+  },
+  "EZR-C01-D-P02-TheVesselsOfTheHou.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Vessels of the House of Jehovah"
+  },
+  "EZR-C01-D-P03-TheVesselsOfTheHou.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Vessels of the House of Jehovah"
+  },
+  "EZR-C01-R-P01-TheMenOfThePeople.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Men of the People"
+  },
+  "EZR-C01-R-P02-ThePriestsAndTheLe.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Priests and the Levites"
+  },
+  "EZR-C01-R-P03-TheNethinim.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Nethinim"
+  },
+  "EZR-C01-R-P04-NotFoundInTheRegis.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Not Found in the Register"
+  },
+  "EZR-C01-F-P01-TheWholeAssemblyTo.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Whole Assembly Together"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "EZR-C01-00-Title.dc.html",
+  "EZR-C01-D-P01-LetHimGoUp.dc.html",
+  "EZR-C01-D-P02-TheVesselsOfTheHou.dc.html",
+  "EZR-C01-D-P03-TheVesselsOfTheHou.dc.html",
+  "EZR-C01-R-P01-TheMenOfThePeople.dc.html",
+  "EZR-C01-R-P02-ThePriestsAndTheLe.dc.html",
+  "EZR-C01-R-P03-TheNethinim.dc.html",
+  "EZR-C01-R-P04-NotFoundInTheRegis.dc.html",
+  "EZR-C01-F-P01-TheWholeAssemblyTo.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Ezra Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Decree of Cyrus (Ezra 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

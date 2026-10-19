@@ -199,8 +199,10 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 2 Chronicles | 13 · Manasseh and Josiah | 33–34 | title + 11 (pp. 141–151) | 58/58 verses full (33:6 and 33:24 words only; Manasseh in chains and humbled; the outer wall as a plan) | `volumes/2chronicles/` |
 | 2 Chronicles | 14 · The Seventy Years | 35–36 | title + 8 (pp. 152–159) | 50/50 verses full (35:23–24 and 36:17–19 words over the chariot and the burning city; the decree of Cyrus) | `volumes/2chronicles/` |
 | **2 Chronicles** | **complete: cover + 14 chapters** | **1–36** | **174 pages (159 numbered)** | **822 verses: all full** | `volumes/2chronicles/` |
+| Ezra | 1 · The Decree of Cyrus | 1–2 | cover + title + 8 (pp. 1–8) | 81/81 verses full (the vessels and the assembly as tally boards; the families of the return as roll cells) | `volumes/ezra/` |
 
-**Genesis through 2 Chronicles (fourteen volumes) are complete.** Next: Ezra. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+**Genesis through 2 Chronicles (fourteen volumes) are complete; Ezra is in progress** (`tools/full/ezr/`, five chapters planned in
+`ezr/__init__.py`, `ezr.art` carries `chr2.art`). 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
@@ -488,7 +490,7 @@ Usable panel widths: full 702, half 342; heights are the row height minus 6.
 
 **Covers:** "THE BOOK OF" / "No. NN", the series title in Anton 136–168 px (shrink longer names), "Book N — Name",
 "Chapters a – b", a vertical kanji block in the accent color (創世記 SŌSEIKI for Genesis,
-出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel, サムエル記下 SAMUERU-KI GE for 2 Samuel, 列王記上 RETSUŌKI JŌ for 1 Kings, 列王記下 RETSUŌKI GE for 2 Kings, 歴代志上 REKIDAISHI JŌ for 1 Chronicles, 歴代志下 REKIDAISHI GE for 2 Chronicles), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
+出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel, エズラ記 EZURA-KI for Ezra, サムエル記下 SAMUERU-KI GE for 2 Samuel, 列王記上 RETSUŌKI JŌ for 1 Kings, 列王記下 RETSUŌKI GE for 2 Kings, 歴代志上 REKIDAISHI JŌ for 1 Chronicles, 歴代志下 REKIDAISHI GE for 2 Chronicles), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
 still spell it out; leave them).
 
 **Recurring components** (all in `tools/kit/mk.py`):

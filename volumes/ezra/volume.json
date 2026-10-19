@@ -1,0 +1,21 @@
+{
+ "id": "ezra",
+ "order": 15,
+ "name": "Ezra",
+ "kanji": "エズラ記",
+ "thumb": "vol-ezra-",
+ "lede": "The fifteenth book of the Bible, in full: the decree of Cyrus and the exiles going up to Jerusalem, the foundation of the house laid with shouting and weeping, the house finished in the days of Darius, and Ezra the scribe, ready in the law of Moses, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Decree of Cyrus",
+   "range": "Ezra 1–2",
+   "blurb": "In the first year of Cyrus king of Persia, Jehovah stirred up his spirit: whosoever there is among you of all his people, let him go up to Jerusalem; the vessels of the house of Jehovah numbered to Sheshbazzar; and the children of the province that went up out of the captivity, family by family, forty and two thousand three hundred and threescore.",
+   "prefixes": [
+    "Main.dc.html",
+    "EZR-C01-"
+   ]
+  }
+ ]
+}
