@@ -16,6 +16,16 @@
     "Main.dc.html",
     "PS-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Heavens Declare",
+   "range": "Psalms 13–22",
+   "blurb": "How long, O Jehovah?; the fool hath said in his heart, There is no God; who shall sojourn in thy tabernacle?; the lines are fallen unto me in pleasant places; hide me under the shadow of thy wings; Jehovah is my rock and my fortress — the cords of death, the earth that shook, the large place; the heavens declare the glory of God; some trust in chariots; and my God, my God, why hast thou forsaken me?",
+   "prefixes": [
+    "PS-C02-"
+   ]
   }
  ]
 }

@@ -38,6 +38,12 @@ PRAY = [(-22, -158), (-14, -200), (-4, -236)]          # one arm lifted (the fig
 def singer(p, x, y, s, cloth="#F3EFE6", flip=False, up=None, beard=None):
     """A Levite singer at a distance: white linen robe and headcloth."""
     return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=cloth, sw=3, flip=flip, up=up, extra=A.headcloth(cloth) + (beard or A.BLACK_BEARD))
+def prayer(p, x, y, s, cloth="#5A4A7A"):
+    """A man with both hands lifted up (front-on), headcloth and beard."""
+    uid = f"{p}pb{int(x)}"
+    return (E4.figure_both(x, y, s, SKIN, cloth, [(-22, -158), (-44, -194), (-54, -230)], [(22, -158), (44, -194), (54, -230)], uid)
+            + f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})">' + A.headcloth(cloth) + A.BLACK_BEARD + '</g>')
+
 def walker(p, x, y, s, cloth="#6A5A3A", flip=False, up=None):
     return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=cloth, kind="Tunic", sw=3, flip=flip, up=up, extra=A.headcloth(cloth) + A.BLACK_BEARD)
 def shepherd(p, x, y, s, flip=False):
@@ -254,14 +260,6 @@ def s_night(p, w, h, seed):
          S1.mat_sleeper(w * 0.4, b, min(1.4, h / 300), color="#E8E2D6"), glow(w * 0.12, b - 20, h * 0.3, "#FFC14D", 0.12), clay_lamp(w * 0.12, b, min(1.4, h / 300))]
     return "".join(o)
 
-def s_dawn(p, w, h, seed):
-    """In the morning will I order my prayer unto thee, and will keep watch: a man with hands lifted on a hill at sunrise."""
-    b = h * 0.86
-    o = [mk.defs(p, *ALL), sky(w, h, *DAWN), sun(w * 0.7, h * 0.66, 30, color="#FFE680", op=0.5), hills(w, h, h * 0.66, seed, color="#4A3A5A", amp=12),
-         f'<path d="M-10 {f(h + 10)} L -10 {f(b)} C {f(w * 0.2)} {f(b - h * 0.04)} {f(w * 0.4)} {f(b - h * 0.02)} {f(w * 0.55)} {f(b + h * 0.06)} L {f(w * 0.55)} {f(h + 10)} Z" fill="#3A2A3A" stroke="#0D0D0F" stroke-width="2"></path>']
-    o.append(walker(p, w * 0.24, b - h * 0.02, fit(b, h * 0.56), cloth="#5A4A7A", up=PRAY))
-    return "".join(o)
-
 def s_harvest(p, w, h, seed):
     """Thou hast put gladness in my heart, more than when their grain and their new wine are increased: reapers in the ripe
     field, sheaves standing, the vineyard on the hill."""
@@ -352,9 +350,6 @@ def s_glory(p, w, h, seed):
          glow(w * 0.5, h * 0.12, h * 0.4, "#FFF4C2", 0.25), clouds(w, h, seed, 8, "#E8E2F0", 0.85, 0.05, 0.3), hills(w, h, h * 0.84, seed, color="#3A3A5A", amp=10)]
     return "".join(o)
 
-def s_storm(p, w, h, seed):
-    return SA.storm(w, h, seed, sea=seed % 2 == 1)
-
 def s_waves(p, w, h, seed):
     return SA.waves(w, h, seed)
 
@@ -437,18 +432,6 @@ def s_wings(p, w, h, seed):
              f'<path d="M6 -14 l 8 3 l -8 3 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1"></path></g>')
     return "".join(o)
 
-def s_fortress(p, w, h, seed):
-    """Jehovah is my rock, and my fortress: a stronghold on the crags, a high tower over the valley."""
-    o = [sky(w, h, *tod(seed, (DAY, DUSK, DAWN))), clouds(w, h, seed, 4), hills(w, h, h * 0.76, seed, color="#6A7A5A", amp=10),
-         f'<path d="M{f(w * 0.36)} {f(h + 10)} L {f(w * 0.44)} {f(h * 0.62)} L {f(w * 0.5)} {f(h * 0.56)} L {f(w * 0.6)} {f(h * 0.58)} L {f(w * 0.7)} {f(h * 0.7)} L {f(w * 0.8)} {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
-    tx, tb = w * 0.54, h * 0.58
-    tw, th = min(w * 0.12, h * 0.16), h * 0.26
-    o.append(f'<rect x="{f(tx - tw / 2)}" y="{f(tb - th)}" width="{f(tw)}" height="{f(th)}" fill="#B59A7A" stroke="#0D0D0F" stroke-width="2.4"></rect>')
-    o.append("".join(f'<rect x="{f(tx - tw / 2 + i * tw / 5)}" y="{f(tb - th - 10)}" width="{f(tw / 10)}" height="10" fill="#B59A7A" stroke="#0D0D0F" stroke-width="1.6"></rect>' for i in range(5)))
-    o.append(f'<rect x="{f(tx - tw * 0.1)}" y="{f(tb - th * 0.7)}" width="{f(tw * 0.2)}" height="{f(th * 0.14)}" fill="#12090A"></rect>')
-    o.append(f'<rect x="{f(tx - tw * 1.3)}" y="{f(tb - th * 0.45)}" width="{f(tw * 0.9)}" height="{f(th * 0.45)}" fill="#A88A6A" stroke="#0D0D0F" stroke-width="2"></rect>')
-    return "".join(o)
-
 def s_war(p, w, h, seed):
     """Some trust in chariots, and some in horses: chariots and horsemen on the plain in a cloud of dust."""
     r = R(seed); b = h * 0.92
@@ -512,10 +495,10 @@ def s_banners(p, w, h, seed):
     """In the name of our God we will set up our banners: the host with its standards raised and the trumpets sounding."""
     b = h * 0.92
     o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E0B0"), hills(w, h, h * 0.66, seed, color="#8A8A5A", amp=10), ground(w, h, h * 0.72, "#C8A06A", dy=0)]
-    s = fit(b, h * 0.58)
+    s = fit(b, h * 0.66)
     for i, c in enumerate(("#D7261E", "#1F5FAD", "#E8B830", "#2E6B3A")):
         x = w * (0.16 + i * 0.22)
-        o.append(f'<path d="M{f(x)} {f(b)} L {f(x)} {f(h * 0.3)}" stroke="#3A2214" stroke-width="4"></path><path d="M{f(x)} {f(h * 0.3)} L {f(x + 60)} {f(h * 0.34)} L {f(x)} {f(h * 0.4)} Z" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>')
+        o.append(f'<path d="M{f(x)} {f(b)} L {f(x)} {f(h * 0.58)}" stroke="#3A2214" stroke-width="4"></path><path d="M{f(x)} {f(h * 0.58)} L {f(x + 60)} {f(h * 0.62)} L {f(x)} {f(h * 0.66)} Z" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>')
         o.append(walker(p, x + 22, b, s * (0.92 + 0.06 * (i % 2)), cloth=("#8A3A1E", "#5A5A2A", "#3A4A6A", "#6A2A1A")[i]))
     o.append(J.trumpeter(p, w * 0.06, b, s))
     return "".join(o)
@@ -828,6 +811,64 @@ def s_olive(p, w, h, seed):
     if w > 500: o.append(K1.temple_front(w * 0.8, h * 0.76, w * 0.22, seed))
     return "".join(o)
 
+def s_dawn(p, w, h, seed):
+    """In the morning will I order my prayer unto thee, and will keep watch: a man with hands lifted on a hill at sunrise."""
+    b = h * 0.9
+    o = [sky(w, h, *DAWN), sun(w * 0.7, h * 0.74, 30, color="#FFE680", op=0.5), hills(w, h, h * 0.74, seed, color="#4A3A5A", amp=10),
+         f'<path d="M-10 {f(h + 10)} L -10 {f(b)} C {f(w * 0.2)} {f(b - h * 0.04)} {f(w * 0.4)} {f(b - h * 0.02)} {f(w * 0.55)} {f(b + h * 0.06)} L {f(w * 0.55)} {f(h + 10)} Z" fill="#3A2A3A" stroke="#0D0D0F" stroke-width="2"></path>']
+    o.append(prayer(p, w * 0.24, b - h * 0.01, fit(b, h * 0.62), cloth="#5A4A7A"))
+    return "".join(o)
+
+def s_fortress(p, w, h, seed):
+    """Jehovah is my rock, and my fortress: a stronghold on the crags, a high tower over the valley."""
+    o = [sky(w, h, *tod(seed, (DAY, DUSK, DAWN))), clouds(w, h, seed, 4, y0=0.3, y1=0.5), hills(w, h, h * 0.84, seed, color="#6A7A5A", amp=8),
+         f'<path d="M{f(w * 0.36)} {f(h + 10)} L {f(w * 0.44)} {f(h * 0.8)} L {f(w * 0.5)} {f(h * 0.74)} L {f(w * 0.62)} {f(h * 0.76)} L {f(w * 0.7)} {f(h * 0.84)} L {f(w * 0.8)} {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    tx, tb = w * 0.55, h * 0.76
+    tw, th = min(w * 0.1, h * 0.12), h * 0.2
+    o.append(f'<rect x="{f(tx - tw / 2)}" y="{f(tb - th)}" width="{f(tw)}" height="{f(th)}" fill="#B59A7A" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    o.append("".join(f'<rect x="{f(tx - tw / 2 + i * tw / 5)}" y="{f(tb - th - 8)}" width="{f(tw / 10)}" height="8" fill="#B59A7A" stroke="#0D0D0F" stroke-width="1.6"></rect>' for i in range(5)))
+    o.append(f'<rect x="{f(tx - tw * 0.1)}" y="{f(tb - th * 0.7)}" width="{f(tw * 0.2)}" height="{f(th * 0.14)}" fill="#12090A"></rect>')
+    o.append(f'<rect x="{f(tx - tw * 1.4)}" y="{f(tb - th * 0.45)}" width="{f(tw * 0.9)}" height="{f(th * 0.45)}" fill="#A88A6A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(f'<path d="M{f(tx + tw * 0.5)} {f(tb - th * 0.5)} L {f(tx + tw * 1.6)} {f(tb - th * 0.5)} L {f(tx + tw * 1.6)} {f(tb)} L {f(tx + tw * 0.5)} {f(tb)} Z" fill="#9A7E5E" stroke="#0D0D0F" stroke-width="2"></path>')
+    return "".join(o)
+
+def s_storm(p, w, h, seed):
+    """The earth shook and trembled; thick darkness and the clouds, hailstones and coals of fire, the lightnings manifold
+    (God is never drawn: only the storm)."""
+    r = R(seed); sea = seed % 2 == 1
+    o = [sky(w, h, "#0B0B2A", "#3A2A5A")]
+    for i in range(9):
+        o.append(f'<ellipse cx="{f(r.uniform(0, w))}" cy="{f(h * r.uniform(0.3, 0.55))}" rx="{f(w * r.uniform(0.15, 0.3))}" ry="{f(h * 0.08)}" fill="{r.choice(["#1A1430", "#2A2440", "#14102A"])}" opacity="0.95"></ellipse>')
+    if sea:
+        o.append(sea_band(w, h, h * 0.8, seed, color="#0F3A5A", deep="#05101A", foam="#8FA8C8", amp=14))
+    else:
+        o.append(mountain(w * 0.3, h * 0.92, w * 0.6, h * 0.3, color="#2A1E2E", lit="#5A3A4A") + mountain(w * 0.76, h * 0.92, w * 0.6, h * 0.24, color="#241A2A", lit="#4A3A4A"))
+        o.append(ground(w, h, h * 0.92, "#1A1420", dy=0))
+    for i in range(3):
+        x = w * (0.2 + i * 0.3) + r.uniform(-30, 30)
+        o.append(lightning(x, h * 0.5, h * 0.4, sw=5) + lightning(x, h * 0.5, h * 0.4, sw=2, color="#FFFFFF"))
+    for i in range(40):
+        o.append(f'<circle cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(h * 0.55, h * 0.95))}" r="{f(r.uniform(1.5, 3))}" fill="{r.choice(["#E8ECF8", "#FF8A3D"])}"></circle>')
+    return "".join(o)
+
+def s_large(p, w, h, seed):
+    """He brought me forth also into a large place: a broad sunlit plain under an open sky, a man with his hands lifted."""
+    b = h * 0.94
+    o = [sky(w, h, "#8FD0E2", "#F3E8C8"), sun(w * 0.7, h * 0.62, 26, color="#FFE680", op=0.5),
+         hills(w, h, h * 0.72, seed, color="#9CCB5E", amp=6), ground(w, h, h * 0.76, "#B8C86A", dy=0)]
+    o.append(prayer(p, w * 0.3, b, fit(b, h * 0.62), cloth="#4A2A7A"))
+    return "".join(o)
+
+def s_hinds(p, w, h, seed):
+    """He maketh my feet like hinds' feet, and setteth me upon my high places: a man on the crag above the valley, hinds
+    leaping on the rocks beside him."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#E8F6FA"), hills(w, h, h * 0.86, seed, color="#8A9A7A", amp=8),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.42)} {f(h * 0.74)} L {f(w * 0.52)} {f(h * 0.7)} L {f(w * 0.6)} {f(h * 0.78)} L {f(w * 0.74)} {f(h + 10)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2.6"></path>',
+         f'<path d="M{f(w * 0.7)} {f(h + 10)} L {f(w * 0.8)} {f(h * 0.82)} L {f(w * 0.92)} {f(h * 0.84)} L {f(w + 10)} {f(h + 10)} Z" fill="#7A5A3A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    o.append(king_fig(p, w * 0.5, h * 0.71, fit(h * 0.71, h * 0.44), up=[(-22, -158), (-6, -196), (8, -228)]))
+    o.append(hart(w * 0.84, h * 0.83, min(0.9, h / 360), color="#A8742E"))
+    return "".join(o)
+
 SCENES = {
     "tree": ("#8FD0E2", s_tree), "chaff": ("#5A3A5A", s_chaff), "path": ("#5A5A8A", s_path), "kings": ("#3A0A1A", s_kings), "throne": ("#FFB04A", s_throne),
     "potsherd": ("#3A2A3A", s_potsherd), "camp": ("#0B0B2A", s_camp_round), "night": ("#1A1430", s_night), "dawn": ("#5A5A8A", s_dawn),
@@ -844,4 +885,5 @@ SCENES = {
     "mist": ("#8A8A9A", s_mist), "city": ("#2A1A3A", s_city), "ruins": ("#2A0A0A", s_ruins), "sickbed": ("#2A2034", s_sickbed), "brook": ("#8FD0E2", s_brook),
     "hart": ("#8FD0E2", s_hart), "nest": ("#FFB04A", s_nest), "willows": ("#3A3A6A", s_willows), "watch": ("#0B0B2A", s_watch), "rain": ("#5A6A8A", s_rain),
     "ships": ("#8FD0E2", s_ships), "dark": ("#05051A", s_dark), "vine": ("#8FD0E2", s_vine), "olive": ("#8FD0E2", s_olive),
+    "large": ("#8FD0E2", s_large), "hinds": ("#8FD0E2", s_hinds),
 }

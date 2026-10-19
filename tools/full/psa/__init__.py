@@ -26,5 +26,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Blessed Is the Man", "range": "Psalms 1–12", "bible_chapters": list(range(1, 13)),
      "blurb": "Book I opens: the blessed man like a tree planted by the streams of water, and the wicked like the chaff; why do the nations rage — thou art my son; I laid me down and slept; in the morning will I order my prayer; every night make I my bed to swim; when I consider thy heavens, what is man?; the lurking lion and the net; and the words of Jehovah, pure words, as silver tried in a furnace."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Heavens Declare", "range": "Psalms 13–22", "bible_chapters": list(range(13, 23)),
+     "blurb": "How long, O Jehovah?; the fool hath said in his heart, There is no God; who shall sojourn in thy tabernacle?; the lines are fallen unto me in pleasant places; hide me under the shadow of thy wings; Jehovah is my rock and my fortress — the cords of death, the earth that shook, the large place; the heavens declare the glory of God; some trust in chariots; and my God, my God, why hast thou forsaken me?"},
   ],
 }

@@ -183,3 +183,13 @@ def psalm(n, plan, god=None, budget=380, fbudget=440, face=None, head=None, upto
 
 def pack(segs, prefix, start, **k):
     return _pack(segs, prefix, start, book="Psalms", code=CODE, **k)
+
+def chapter_open(num, name, rng, scene, quote, bg=None, seed=None):
+    """A chapter's title page: the scene full-bleed under the title band, one line of the psalms as its quote."""
+    import mk
+    from fx import chapter_title
+    from deu.common import shade
+    from psa import art as K
+    bgc, fn = K.SCENES[scene]
+    svg = shade(f'<rect x="0" y="0" width="760" height="1080" fill="{bgc}"></rect><g transform="translate(0 300)">{fn("t%d" % num, 760, 780, seed or num * 1000 + 1)}</g>')
+    return chapter_title(num, f"第{mk.kanji_num(num)}話", name, rng, svg, bg or bgc, quote, "Psalms · Volume Nineteen")
