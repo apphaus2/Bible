@@ -1500,6 +1500,132 @@
    "w": 760,
    "h": 1080,
    "title": "198 · Now Will I Bring Back the Captivity of Jacob"
+  },
+  "EZK-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · The Measuring Reed"
+  },
+  "EZK-C15-D-P01-AManLikeBrass.dc.html": {
+   "x": 840,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · A Man like Brass"
+  },
+  "EZK-C15-D-P02-TheGateTowardTheEa.dc.html": {
+   "x": 1680,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · The Gate toward the East"
+  },
+  "EZK-C15-D-P03-TheGateTowardTheEa.dc.html": {
+   "x": 2520,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · The Gate toward the East"
+  },
+  "EZK-C15-D-P04-TheNorthGate.dc.html": {
+   "x": 3360,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · The North Gate"
+  },
+  "EZK-C15-D-P05-TheSouthGate.dc.html": {
+   "x": 0,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · The South Gate"
+  },
+  "EZK-C15-D-P06-TheInnerCourt.dc.html": {
+   "x": 840,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · The Inner Court"
+  },
+  "EZK-C15-D-P07-TheTablesOfHewnSto.dc.html": {
+   "x": 1680,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · The Tables of Hewn Stone"
+  },
+  "EZK-C15-D-P08-TheChambersOfThePr.dc.html": {
+   "x": 2520,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · The Chambers of the Priests"
+  },
+  "EZK-C15-D-P09-TheTempleAndTheMos.dc.html": {
+   "x": 3360,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · The Temple and the Most Holy Place"
+  },
+  "EZK-C15-D-P10-TheSideChambers.dc.html": {
+   "x": 0,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · The Side-Chambers"
+  },
+  "EZK-C15-D-P11-TheBuildingTowardT.dc.html": {
+   "x": 840,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · The Building toward the West"
+  },
+  "EZK-C15-D-P12-CherubimAndPalmTre.dc.html": {
+   "x": 1680,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · Cherubim and Palm-Trees"
+  },
+  "EZK-C15-D-P13-TheTableThatIsBefo.dc.html": {
+   "x": 2520,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · The Table That Is before Jehovah"
+  },
+  "EZK-C15-D-P14-TheChambersTowardT.dc.html": {
+   "x": 3360,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · The Chambers toward the North"
+  },
+  "EZK-C15-D-P15-TheChambersTowardT.dc.html": {
+   "x": 0,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · The Chambers toward the North"
+  },
+  "EZK-C15-D-P16-TheHolyChambers.dc.html": {
+   "x": 840,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "214 · The Holy Chambers"
+  },
+  "EZK-C15-D-P17-FiveHundredReeds.dc.html": {
+   "x": 1680,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "215 · Five Hundred Reeds"
   }
  },
  "order": [
@@ -1715,7 +1841,25 @@
   "EZK-C14-D-P08-TheValleyOfHamonGo.dc.html",
   "EZK-C14-D-P09-AssembleYourselves.dc.html",
   "EZK-C14-D-P10-IWillSetMyGloryAmo.dc.html",
-  "EZK-C14-D-P11-NowWillIBringBackT.dc.html"
+  "EZK-C14-D-P11-NowWillIBringBackT.dc.html",
+  "EZK-C15-00-Title.dc.html",
+  "EZK-C15-D-P01-AManLikeBrass.dc.html",
+  "EZK-C15-D-P02-TheGateTowardTheEa.dc.html",
+  "EZK-C15-D-P03-TheGateTowardTheEa.dc.html",
+  "EZK-C15-D-P04-TheNorthGate.dc.html",
+  "EZK-C15-D-P05-TheSouthGate.dc.html",
+  "EZK-C15-D-P06-TheInnerCourt.dc.html",
+  "EZK-C15-D-P07-TheTablesOfHewnSto.dc.html",
+  "EZK-C15-D-P08-TheChambersOfThePr.dc.html",
+  "EZK-C15-D-P09-TheTempleAndTheMos.dc.html",
+  "EZK-C15-D-P10-TheSideChambers.dc.html",
+  "EZK-C15-D-P11-TheBuildingTowardT.dc.html",
+  "EZK-C15-D-P12-CherubimAndPalmTre.dc.html",
+  "EZK-C15-D-P13-TheTableThatIsBefo.dc.html",
+  "EZK-C15-D-P14-TheChambersTowardT.dc.html",
+  "EZK-C15-D-P15-TheChambersTowardT.dc.html",
+  "EZK-C15-D-P16-TheHolyChambers.dc.html",
+  "EZK-C15-D-P17-FiveHundredReeds.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1822,6 +1966,13 @@
    "text": "Chapter 14 · Gog (Ezekiel 38–39)",
    "x": 0,
    "y": 63400
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · The Measuring Reed (Ezekiel 40–42)",
+   "x": 0,
+   "y": 67500
   }
  },
  "designSystems": [],

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1013 verses — 1013 full, 0 partial, 0 omitted.
+**So far:** 1108 verses — 1108 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Visions of God (Ezekiel 1–3)
 
@@ -85,5 +85,11 @@ Every verse is on the page in full.
 ## Chapter 14 · Gog (Ezekiel 38–39)
 
 52 verses: 52 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 15 · The Measuring Reed (Ezekiel 40–42)
+
+95 verses: 95 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
