@@ -1,0 +1,218 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:29:23Z"
+ },
+ "title": "Psalms — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "PS-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Blessed Is the Man"
+  },
+  "PS-C01-D-P01-Psalm1.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Psalm 1"
+  },
+  "PS-C01-D-P02-Psalm2.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Psalm 2"
+  },
+  "PS-C01-D-P03-Psalm2.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Psalm 2"
+  },
+  "PS-C01-D-P04-Psalm3.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Psalm 3"
+  },
+  "PS-C01-D-P05-Psalm4.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Psalm 4"
+  },
+  "PS-C01-D-P06-Psalm5.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Psalm 5"
+  },
+  "PS-C01-D-P07-Psalm5.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Psalm 5"
+  },
+  "PS-C01-D-P08-Psalm6.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Psalm 6"
+  },
+  "PS-C01-D-P09-Psalm7.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Psalm 7"
+  },
+  "PS-C01-D-P10-Psalm7.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Psalm 7"
+  },
+  "PS-C01-D-P11-Psalm7.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Psalm 7"
+  },
+  "PS-C01-D-P12-Psalm8.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Psalm 8"
+  },
+  "PS-C01-D-P13-Psalm9.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Psalm 9"
+  },
+  "PS-C01-D-P14-Psalm9.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Psalm 9"
+  },
+  "PS-C01-D-P15-Psalm9.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Psalm 9"
+  },
+  "PS-C01-D-P16-Psalm10.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Psalm 10"
+  },
+  "PS-C01-D-P17-Psalm10.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Psalm 10"
+  },
+  "PS-C01-D-P18-Psalm10.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Psalm 10"
+  },
+  "PS-C01-D-P19-Psalm11.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Psalm 11"
+  },
+  "PS-C01-D-P20-Psalm11.dc.html": {
+   "x": 0,
+   "y": 6800,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Psalm 11"
+  },
+  "PS-C01-D-P21-Psalm12.dc.html": {
+   "x": 840,
+   "y": 6800,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Psalm 12"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "PS-C01-00-Title.dc.html",
+  "PS-C01-D-P01-Psalm1.dc.html",
+  "PS-C01-D-P02-Psalm2.dc.html",
+  "PS-C01-D-P03-Psalm2.dc.html",
+  "PS-C01-D-P04-Psalm3.dc.html",
+  "PS-C01-D-P05-Psalm4.dc.html",
+  "PS-C01-D-P06-Psalm5.dc.html",
+  "PS-C01-D-P07-Psalm5.dc.html",
+  "PS-C01-D-P08-Psalm6.dc.html",
+  "PS-C01-D-P09-Psalm7.dc.html",
+  "PS-C01-D-P10-Psalm7.dc.html",
+  "PS-C01-D-P11-Psalm7.dc.html",
+  "PS-C01-D-P12-Psalm8.dc.html",
+  "PS-C01-D-P13-Psalm9.dc.html",
+  "PS-C01-D-P14-Psalm9.dc.html",
+  "PS-C01-D-P15-Psalm9.dc.html",
+  "PS-C01-D-P16-Psalm10.dc.html",
+  "PS-C01-D-P17-Psalm10.dc.html",
+  "PS-C01-D-P18-Psalm10.dc.html",
+  "PS-C01-D-P19-Psalm11.dc.html",
+  "PS-C01-D-P20-Psalm11.dc.html",
+  "PS-C01-D-P21-Psalm12.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Psalms Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Blessed Is the Man (Psalms 1–12)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

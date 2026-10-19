@@ -1,0 +1,21 @@
+{
+ "id": "psalms",
+ "order": 19,
+ "name": "Psalms",
+ "kanji": "詩篇",
+ "thumb": "vol-psalms-",
+ "lede": "The nineteenth book of the Bible, in full: the hundred and fifty psalms in their five books — the blessed man and the tree by the streams, the heavens declaring the glory of God, Jehovah my shepherd, the hart panting after the water brooks, the harps hung on the willows, the songs of ascents and the last great hallelujahs — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Blessed Is the Man",
+   "range": "Psalms 1–12",
+   "blurb": "Book I opens: the blessed man like a tree planted by the streams of water, and the wicked like the chaff; why do the nations rage — thou art my son; I laid me down and slept; in the morning will I order my prayer; every night make I my bed to swim; when I consider thy heavens, what is man?; the lurking lion and the net; and the words of Jehovah, pure words, as silver tried in a furnace.",
+   "prefixes": [
+    "Main.dc.html",
+    "PS-C01-"
+   ]
+  }
+ ]
+}
