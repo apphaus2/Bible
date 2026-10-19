@@ -70,9 +70,10 @@ MOOD_BG = {ISAIAH: GOLDEN, ISAIAH_STERN: RED, ISAIAH_GRIEF: COLD, ISAIAH_AWE: GO
 def face(lines, ref, tok, bg=None, **k): return seg(lines, ref, tok=tok, bg=bg or MOOD_BG.get(tok, GOLDEN), **k)
 
 class A:
-    """A drawing look: fn(w, h) -> svg, set below the words; bg is the panel colour above the drawing."""
-    def __init__(self, fn, bg, k=None):
-        self.fn, self.bg, self.k = fn, bg, k
+    """A drawing look: fn(w, h) -> svg, set below the words; bg is the panel colour above the drawing; h: a fixed panel
+    height (px), for a drawing that needs more room than the words would give it."""
+    def __init__(self, fn, bg, k=None, h=None):
+        self.fn, self.bg, self.k, self.h = fn, bg, k, h
 
 def under(fn, lines, k=None):
     """fn pushed down below a column of words at the top of the panel (k: a fixed share instead of the estimate)."""
@@ -88,7 +89,9 @@ def under(fn, lines, k=None):
 def drawn(lines, ref, art, bg, **k):
     """Words at the top of a drawing: art is A(...), or fn(w, h) (pushed below the words), or a full-panel svg callable with full=True."""
     full = k.pop("full", False)
-    if isinstance(art, A): bg, kk, art = art.bg, art.k, art.fn
+    if isinstance(art, A):
+        if art.h and "h" not in k: k["h"] = art.h
+        bg, kk, art = art.bg, art.k, art.fn
     else: kk = None
     return seg(lines, ref, bg=bg, art=art if full else under(art, lines, kk), **k)
 

@@ -1374,6 +1374,83 @@
    "w": 760,
    "h": 1080,
    "title": "182 · Every Knee Shall Bow"
+  },
+  "ISA-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Go Ye Forth from Babylon"
+  },
+  "ISA-C13-D-P01-BelBowethDownNeboS.dc.html": {
+   "x": 840,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Bel Boweth Down, Nebo Stoopeth"
+  },
+  "ISA-C13-D-P02-BelBowethDownNeboS.dc.html": {
+   "x": 1680,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Bel Boweth Down, Nebo Stoopeth"
+  },
+  "ISA-C13-D-P03-OVirginDaughterOfB.dc.html": {
+   "x": 2520,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · O Virgin Daughter of Babylon"
+  },
+  "ISA-C13-D-P04-OVirginDaughterOfB.dc.html": {
+   "x": 3360,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · O Virgin Daughter of Babylon"
+  },
+  "ISA-C13-D-P05-OVirginDaughterOfB.dc.html": {
+   "x": 0,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · O Virgin Daughter of Babylon"
+  },
+  "ISA-C13-D-P06-TheStarGazers.dc.html": {
+   "x": 840,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · The Star-gazers"
+  },
+  "ISA-C13-D-P07-HearYeThisOHouseOf.dc.html": {
+   "x": 1680,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Hear Ye This, O House of Jacob"
+  },
+  "ISA-C13-D-P08-IAmTheFirstIAlsoAm.dc.html": {
+   "x": 2520,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · I Am the First, I Also Am the Last"
+  },
+  "ISA-C13-D-P09-IAmTheFirstIAlsoAm.dc.html": {
+   "x": 3360,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · I Am the First, I Also Am the Last"
+  },
+  "ISA-C13-D-P10-GoYeForthFromBabyl.dc.html": {
+   "x": 0,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · Go Ye Forth from Babylon"
   }
  },
  "order": [
@@ -1571,7 +1648,18 @@
   "ISA-C12-D-P11-WoeUntoHimThatStri.dc.html",
   "ISA-C12-D-P12-WoeUntoHimThatStri.dc.html",
   "ISA-C12-D-P13-WoeUntoHimThatStri.dc.html",
-  "ISA-C12-D-P14-EveryKneeShallBow.dc.html"
+  "ISA-C12-D-P14-EveryKneeShallBow.dc.html",
+  "ISA-C13-00-Title.dc.html",
+  "ISA-C13-D-P01-BelBowethDownNeboS.dc.html",
+  "ISA-C13-D-P02-BelBowethDownNeboS.dc.html",
+  "ISA-C13-D-P03-OVirginDaughterOfB.dc.html",
+  "ISA-C13-D-P04-OVirginDaughterOfB.dc.html",
+  "ISA-C13-D-P05-OVirginDaughterOfB.dc.html",
+  "ISA-C13-D-P06-TheStarGazers.dc.html",
+  "ISA-C13-D-P07-HearYeThisOHouseOf.dc.html",
+  "ISA-C13-D-P08-IAmTheFirstIAlsoAm.dc.html",
+  "ISA-C13-D-P09-IAmTheFirstIAlsoAm.dc.html",
+  "ISA-C13-D-P10-GoYeForthFromBabyl.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1664,6 +1752,13 @@
    "text": "Chapter 12 · Ye Are My Witnesses (Isaiah 43–45)",
    "x": 0,
    "y": 56400
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Go Ye Forth from Babylon (Isaiah 46–48)",
+   "x": 0,
+   "y": 60500
   }
  },
  "designSystems": [],

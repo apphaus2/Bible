@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 932 verses — 932 full, 0 partial, 0 omitted.
+**So far:** 982 verses — 982 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Vineyard of Jehovah (Isaiah 1–5)
 
@@ -73,5 +73,11 @@ Every verse is on the page in full.
 ## Chapter 12 · Ye Are My Witnesses (Isaiah 43–45)
 
 81 verses: 81 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 13 · Go Ye Forth from Babylon (Isaiah 46–48)
+
+50 verses: 50 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
