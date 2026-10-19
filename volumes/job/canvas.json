@@ -1,0 +1,1343 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:07:35Z"
+ },
+ "title": "Job — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JOB-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Land of Uz"
+  },
+  "JOB-C01-D-P01-AManInTheLandOfUz.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · A Man in the Land of Uz"
+  },
+  "JOB-C01-D-P02-BeforeJehovah.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Before Jehovah"
+  },
+  "JOB-C01-D-P03-IOnlyAmEscapedAlon.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · I Only Am Escaped Alone"
+  },
+  "JOB-C01-D-P04-IOnlyAmEscapedAlon.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · I Only Am Escaped Alone"
+  },
+  "JOB-C01-D-P05-SkinForSkin.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Skin for Skin"
+  },
+  "JOB-C01-D-P06-AmongTheAshes.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Among the Ashes"
+  },
+  "JOB-C01-D-P07-JobSThreeFriends.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Job's Three Friends"
+  },
+  "JOB-C01-D-P08-LetTheDayPerish.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Let the Day Perish"
+  },
+  "JOB-C01-D-P09-LetTheDayPerish.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Let the Day Perish"
+  },
+  "JOB-C01-D-P10-LetTheDayPerish.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Let the Day Perish"
+  },
+  "JOB-C01-D-P11-LetTheDayPerish.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Let the Day Perish"
+  },
+  "JOB-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Vision of the Night"
+  },
+  "JOB-C02-D-P01-EliphazTheTemanite.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Eliphaz the Temanite"
+  },
+  "JOB-C02-D-P02-ASpiritPassedBefor.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · A Spirit Passed Before My Face"
+  },
+  "JOB-C02-D-P03-ASpiritPassedBefor.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · A Spirit Passed Before My Face"
+  },
+  "JOB-C02-D-P04-ASpiritPassedBefor.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · A Spirit Passed Before My Face"
+  },
+  "JOB-C02-D-P05-ASpiritPassedBefor.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · A Spirit Passed Before My Face"
+  },
+  "JOB-C02-D-P06-OhThatMyVexationWe.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Oh That My Vexation Were Weighed"
+  },
+  "JOB-C02-D-P07-OhThatMyVexationWe.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Oh That My Vexation Were Weighed"
+  },
+  "JOB-C02-D-P08-OhThatMyVexationWe.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Oh That My Vexation Were Weighed"
+  },
+  "JOB-C02-D-P09-OhThatMyVexationWe.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Oh That My Vexation Were Weighed"
+  },
+  "JOB-C02-D-P10-SwifterThanAWeaver.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Swifter Than a Weaver's Shuttle"
+  },
+  "JOB-C02-D-P11-SwifterThanAWeaver.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Swifter Than a Weaver's Shuttle"
+  },
+  "JOB-C02-D-P12-SwifterThanAWeaver.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Swifter Than a Weaver's Shuttle"
+  },
+  "JOB-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · No Umpire Betwixt Us"
+  },
+  "JOB-C03-D-P01-BildadTheShuhite.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Bildad the Shuhite"
+  },
+  "JOB-C03-D-P02-BildadTheShuhite.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Bildad the Shuhite"
+  },
+  "JOB-C03-D-P03-BildadTheShuhite.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Bildad the Shuhite"
+  },
+  "JOB-C03-D-P04-HowCanManBeJustWit.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P05-HowCanManBeJustWit.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P06-HowCanManBeJustWit.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P07-HowCanManBeJustWit.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P08-NoUmpireBetwixtUs.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · No Umpire Betwixt Us"
+  },
+  "JOB-C03-D-P09-NoUmpireBetwixtUs.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · No Umpire Betwixt Us"
+  },
+  "JOB-C03-D-P10-ThouHastFashionedM.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Thou Hast Fashioned Me as Clay"
+  },
+  "JOB-C03-D-P11-ThouHastFashionedM.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Thou Hast Fashioned Me as Clay"
+  },
+  "JOB-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · If a Man Die"
+  },
+  "JOB-C04-D-P01-ZopharTheNaamathit.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Zophar the Naamathite"
+  },
+  "JOB-C04-D-P02-CanstThouBySearchi.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Canst Thou by Searching Find Out God?"
+  },
+  "JOB-C04-D-P03-AskNowTheBeasts.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P04-AskNowTheBeasts.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P05-AskNowTheBeasts.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P06-AskNowTheBeasts.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P07-AskNowTheBeasts.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Ask Now the Beasts"
+  },
+  "JOB-C04-D-P08-BeholdHeWillSlayMe.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Behold, He Will Slay Me"
+  },
+  "JOB-C04-D-P09-BeholdHeWillSlayMe.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Behold, He Will Slay Me"
+  },
+  "JOB-C04-D-P10-ManThatIsBornOfAWo.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Man That Is Born of a Woman"
+  },
+  "JOB-C04-D-P11-IfAManDie.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · If a Man Die"
+  },
+  "JOB-C04-D-P12-IfAManDie.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · If a Man Die"
+  },
+  "JOB-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · My Witness Is in Heaven"
+  },
+  "JOB-C05-D-P01-EliphazAnsweredAga.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Eliphaz Answered Again"
+  },
+  "JOB-C05-D-P02-EliphazAnsweredAga.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Eliphaz Answered Again"
+  },
+  "JOB-C05-D-P03-TheWickedManTravai.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Wicked Man Travaileth with Pain"
+  },
+  "JOB-C05-D-P04-TheWickedManTravai.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Wicked Man Travaileth with Pain"
+  },
+  "JOB-C05-D-P05-MiserableComforter.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Miserable Comforters Are Ye All"
+  },
+  "JOB-C05-D-P06-MiserableComforter.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Miserable Comforters Are Ye All"
+  },
+  "JOB-C05-D-P07-MyWitnessIsInHeave.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · My Witness Is in Heaven"
+  },
+  "JOB-C05-D-P08-MyWitnessIsInHeave.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · My Witness Is in Heaven"
+  },
+  "JOB-C05-D-P09-MyWitnessIsInHeave.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · My Witness Is in Heaven"
+  },
+  "JOB-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · My Redeemer Liveth"
+  },
+  "JOB-C06-D-P01-BildadAnsweredAgai.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Bildad Answered Again"
+  },
+  "JOB-C06-D-P02-BildadAnsweredAgai.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Bildad Answered Again"
+  },
+  "JOB-C06-D-P03-BildadAnsweredAgai.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Bildad Answered Again"
+  },
+  "JOB-C06-D-P04-HavePityUponMe.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Have Pity upon Me"
+  },
+  "JOB-C06-D-P05-HavePityUponMe.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Have Pity upon Me"
+  },
+  "JOB-C06-D-P06-HavePityUponMe.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Have Pity upon Me"
+  },
+  "JOB-C06-D-P07-MyRedeemerLiveth.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · My Redeemer Liveth"
+  },
+  "JOB-C06-D-P08-ZopharAnsweredAgai.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Zophar Answered Again"
+  },
+  "JOB-C06-D-P09-ZopharAnsweredAgai.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Zophar Answered Again"
+  },
+  "JOB-C06-D-P10-ZopharAnsweredAgai.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Zophar Answered Again"
+  },
+  "JOB-C06-D-P11-ZopharAnsweredAgai.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Zophar Answered Again"
+  },
+  "JOB-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Where I Might Find Him"
+  },
+  "JOB-C07-D-P01-WhereforeDoTheWick.dc.html": {
+   "x": 840,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P02-WhereforeDoTheWick.dc.html": {
+   "x": 1680,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P03-WhereforeDoTheWick.dc.html": {
+   "x": 2520,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P04-WhereforeDoTheWick.dc.html": {
+   "x": 3360,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Wherefore Do the Wicked Live?"
+  },
+  "JOB-C07-D-P05-EliphazTheThirdTim.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P06-EliphazTheThirdTim.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P07-EliphazTheThirdTim.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P08-EliphazTheThirdTim.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Eliphaz the Third Time"
+  },
+  "JOB-C07-D-P09-OhThatIKnewWhereIM.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Oh That I Knew Where I Might Find Him"
+  },
+  "JOB-C07-D-P10-OhThatIKnewWhereIM.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Oh That I Knew Where I Might Find Him"
+  },
+  "JOB-C07-D-P11-TheyRemoveTheLandm.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · They Remove the Landmarks"
+  },
+  "JOB-C07-D-P12-TheyRemoveTheLandm.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · They Remove the Landmarks"
+  },
+  "JOB-C07-D-P13-TheyRemoveTheLandm.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · They Remove the Landmarks"
+  },
+  "JOB-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Price of Wisdom"
+  },
+  "JOB-C08-D-P01-BildadTheThirdTime.dc.html": {
+   "x": 840,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Bildad the Third Time"
+  },
+  "JOB-C08-D-P02-HeHangethTheEarthU.dc.html": {
+   "x": 1680,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · He Hangeth the Earth upon Nothing"
+  },
+  "JOB-C08-D-P03-HeHangethTheEarthU.dc.html": {
+   "x": 2520,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · He Hangeth the Earth upon Nothing"
+  },
+  "JOB-C08-D-P04-IWillNotPutAwayMin.dc.html": {
+   "x": 3360,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Will Not Put Away Mine Integrity"
+  },
+  "JOB-C08-D-P05-IWillNotPutAwayMin.dc.html": {
+   "x": 0,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · I Will Not Put Away Mine Integrity"
+  },
+  "JOB-C08-D-P06-IWillNotPutAwayMin.dc.html": {
+   "x": 840,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · I Will Not Put Away Mine Integrity"
+  },
+  "JOB-C08-D-P07-SurelyThereIsAMine.dc.html": {
+   "x": 1680,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Surely There Is a Mine for Silver"
+  },
+  "JOB-C08-D-P08-WhereShallWisdomBe.dc.html": {
+   "x": 2520,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Where Shall Wisdom Be Found?"
+  },
+  "JOB-C08-D-P09-WhereShallWisdomBe.dc.html": {
+   "x": 3360,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Where Shall Wisdom Be Found?"
+  },
+  "JOB-C08-D-P10-TheFearOfTheLordTh.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Fear of the Lord, That Is Wisdom"
+  },
+  "JOB-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Months of Old"
+  },
+  "JOB-C09-D-P01-OhThatIWereAsInThe.dc.html": {
+   "x": 840,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Oh That I Were as in the Months of Old"
+  },
+  "JOB-C09-D-P02-OhThatIWereAsInThe.dc.html": {
+   "x": 1680,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Oh That I Were as in the Months of Old"
+  },
+  "JOB-C09-D-P03-OhThatIWereAsInThe.dc.html": {
+   "x": 2520,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Oh That I Were as in the Months of Old"
+  },
+  "JOB-C09-D-P04-ButNowTheyHaveMeIn.dc.html": {
+   "x": 3360,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P05-ButNowTheyHaveMeIn.dc.html": {
+   "x": 0,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P06-ButNowTheyHaveMeIn.dc.html": {
+   "x": 840,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P07-ButNowTheyHaveMeIn.dc.html": {
+   "x": 1680,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P08-IMadeACovenantWith.dc.html": {
+   "x": 2520,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P09-IMadeACovenantWith.dc.html": {
+   "x": 3360,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P10-IMadeACovenantWith.dc.html": {
+   "x": 0,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P11-IMadeACovenantWith.dc.html": {
+   "x": 840,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P12-IMadeACovenantWith.dc.html": {
+   "x": 1680,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P13-HereIsMySignature.dc.html": {
+   "x": 2520,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Here Is My Signature"
+  },
+  "JOB-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Elihu"
+  },
+  "JOB-C10-D-P01-ElihuTheSonOfBarac.dc.html": {
+   "x": 840,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Elihu the Son of Barachel"
+  },
+  "JOB-C10-D-P02-ElihuTheSonOfBarac.dc.html": {
+   "x": 1680,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Elihu the Son of Barachel"
+  },
+  "JOB-C10-D-P03-ElihuTheSonOfBarac.dc.html": {
+   "x": 2520,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Elihu the Son of Barachel"
+  },
+  "JOB-C10-D-P04-IAlsoAmFormedOutOf.dc.html": {
+   "x": 3360,
+   "y": 37700,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · I Also Am Formed out of the Clay"
+  },
+  "JOB-C10-D-P05-IAlsoAmFormedOutOf.dc.html": {
+   "x": 0,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · I Also Am Formed out of the Clay"
+  },
+  "JOB-C10-D-P06-InADreamInAVisionO.dc.html": {
+   "x": 840,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · In a Dream, in a Vision of the Night"
+  },
+  "JOB-C10-D-P07-IHaveFoundARansom.dc.html": {
+   "x": 1680,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · I Have Found a Ransom"
+  },
+  "JOB-C10-D-P08-HearMyWordsYeWiseM.dc.html": {
+   "x": 2520,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Hear My Words, Ye Wise Men"
+  },
+  "JOB-C10-D-P09-HearMyWordsYeWiseM.dc.html": {
+   "x": 3360,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Hear My Words, Ye Wise Men"
+  },
+  "JOB-C10-D-P10-HearMyWordsYeWiseM.dc.html": {
+   "x": 0,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Hear My Words, Ye Wise Men"
+  },
+  "JOB-C10-D-P11-HearMyWordsYeWiseM.dc.html": {
+   "x": 840,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Hear My Words, Ye Wise Men"
+  },
+  "JOB-C10-D-P12-HearMyWordsYeWiseM.dc.html": {
+   "x": 1680,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Hear My Words, Ye Wise Men"
+  },
+  "JOB-C10-D-P13-LookUntoTheHeavens.dc.html": {
+   "x": 2520,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Look unto the Heavens"
+  },
+  "JOB-C10-D-P14-BeholdGodIsMighty.dc.html": {
+   "x": 3360,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Behold, God Is Mighty"
+  },
+  "JOB-C10-D-P15-BeholdGodIsMighty.dc.html": {
+   "x": 0,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Behold, God Is Mighty"
+  },
+  "JOB-C10-D-P16-BeholdGodIsMighty.dc.html": {
+   "x": 840,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Behold, God Is Mighty"
+  },
+  "JOB-C10-D-P17-BeholdGodIsGreat.dc.html": {
+   "x": 1680,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Behold, God Is Great"
+  },
+  "JOB-C10-D-P18-HearTheNoiseOfHisV.dc.html": {
+   "x": 2520,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Hear the Noise of His Voice"
+  },
+  "JOB-C10-D-P19-HearTheNoiseOfHisV.dc.html": {
+   "x": 3360,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · Hear the Noise of His Voice"
+  },
+  "JOB-C10-D-P20-ConsiderTheWondrou.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Consider the Wondrous Works of God"
+  },
+  "JOB-C10-D-P21-ConsiderTheWondrou.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Consider the Wondrous Works of God"
+  },
+  "JOB-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Out of the Whirlwind"
+  },
+  "JOB-C11-D-P01-WhereWastThou.dc.html": {
+   "x": 840,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Where Wast Thou?"
+  },
+  "JOB-C11-D-P02-WhereWastThou.dc.html": {
+   "x": 1680,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Where Wast Thou?"
+  },
+  "JOB-C11-D-P03-WhereWastThou.dc.html": {
+   "x": 2520,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Where Wast Thou?"
+  },
+  "JOB-C11-D-P04-CanstThouBindThePl.dc.html": {
+   "x": 3360,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Canst Thou Bind the Pleiades?"
+  },
+  "JOB-C11-D-P05-TheWildGoatsOfTheR.dc.html": {
+   "x": 0,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · The Wild Goats of the Rock"
+  },
+  "JOB-C11-D-P06-TheWildGoatsOfTheR.dc.html": {
+   "x": 840,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · The Wild Goats of the Rock"
+  },
+  "JOB-C11-D-P07-HastThouGivenTheHo.dc.html": {
+   "x": 1680,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Hast Thou Given the Horse His Might?"
+  },
+  "JOB-C11-D-P08-HastThouGivenTheHo.dc.html": {
+   "x": 2520,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Hast Thou Given the Horse His Might?"
+  },
+  "JOB-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Mine Eye Seeth Thee"
+  },
+  "JOB-C12-D-P01-ShallHeThatCaville.dc.html": {
+   "x": 840,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Shall He That Cavilleth Contend?"
+  },
+  "JOB-C12-D-P02-ShallHeThatCaville.dc.html": {
+   "x": 1680,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Shall He That Cavilleth Contend?"
+  },
+  "JOB-C12-D-P03-BeholdNowBehemoth.dc.html": {
+   "x": 2520,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Behold Now, Behemoth"
+  },
+  "JOB-C12-D-P04-CanstThouDrawOutLe.dc.html": {
+   "x": 3360,
+   "y": 47100,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Canst Thou Draw Out Leviathan?"
+  },
+  "JOB-C12-D-P05-CanstThouDrawOutLe.dc.html": {
+   "x": 0,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Canst Thou Draw Out Leviathan?"
+  },
+  "JOB-C12-D-P06-CanstThouDrawOutLe.dc.html": {
+   "x": 840,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Canst Thou Draw Out Leviathan?"
+  },
+  "JOB-C12-D-P07-MineEyeSeethThee.dc.html": {
+   "x": 1680,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Mine Eye Seeth Thee"
+  },
+  "JOB-C12-D-P08-MyServantJobShallP.dc.html": {
+   "x": 2520,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · My Servant Job Shall Pray for You"
+  },
+  "JOB-C12-D-P09-TheLatterEndOfJob.dc.html": {
+   "x": 3360,
+   "y": 48300,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Latter End of Job"
+  },
+  "JOB-C12-D-P10-TheLatterEndOfJob.dc.html": {
+   "x": 0,
+   "y": 49500,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · The Latter End of Job"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JOB-C01-00-Title.dc.html",
+  "JOB-C01-D-P01-AManInTheLandOfUz.dc.html",
+  "JOB-C01-D-P02-BeforeJehovah.dc.html",
+  "JOB-C01-D-P03-IOnlyAmEscapedAlon.dc.html",
+  "JOB-C01-D-P04-IOnlyAmEscapedAlon.dc.html",
+  "JOB-C01-D-P05-SkinForSkin.dc.html",
+  "JOB-C01-D-P06-AmongTheAshes.dc.html",
+  "JOB-C01-D-P07-JobSThreeFriends.dc.html",
+  "JOB-C01-D-P08-LetTheDayPerish.dc.html",
+  "JOB-C01-D-P09-LetTheDayPerish.dc.html",
+  "JOB-C01-D-P10-LetTheDayPerish.dc.html",
+  "JOB-C01-D-P11-LetTheDayPerish.dc.html",
+  "JOB-C02-00-Title.dc.html",
+  "JOB-C02-D-P01-EliphazTheTemanite.dc.html",
+  "JOB-C02-D-P02-ASpiritPassedBefor.dc.html",
+  "JOB-C02-D-P03-ASpiritPassedBefor.dc.html",
+  "JOB-C02-D-P04-ASpiritPassedBefor.dc.html",
+  "JOB-C02-D-P05-ASpiritPassedBefor.dc.html",
+  "JOB-C02-D-P06-OhThatMyVexationWe.dc.html",
+  "JOB-C02-D-P07-OhThatMyVexationWe.dc.html",
+  "JOB-C02-D-P08-OhThatMyVexationWe.dc.html",
+  "JOB-C02-D-P09-OhThatMyVexationWe.dc.html",
+  "JOB-C02-D-P10-SwifterThanAWeaver.dc.html",
+  "JOB-C02-D-P11-SwifterThanAWeaver.dc.html",
+  "JOB-C02-D-P12-SwifterThanAWeaver.dc.html",
+  "JOB-C03-00-Title.dc.html",
+  "JOB-C03-D-P01-BildadTheShuhite.dc.html",
+  "JOB-C03-D-P02-BildadTheShuhite.dc.html",
+  "JOB-C03-D-P03-BildadTheShuhite.dc.html",
+  "JOB-C03-D-P04-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P05-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P06-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P07-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P08-NoUmpireBetwixtUs.dc.html",
+  "JOB-C03-D-P09-NoUmpireBetwixtUs.dc.html",
+  "JOB-C03-D-P10-ThouHastFashionedM.dc.html",
+  "JOB-C03-D-P11-ThouHastFashionedM.dc.html",
+  "JOB-C04-00-Title.dc.html",
+  "JOB-C04-D-P01-ZopharTheNaamathit.dc.html",
+  "JOB-C04-D-P02-CanstThouBySearchi.dc.html",
+  "JOB-C04-D-P03-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P04-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P05-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P06-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P07-AskNowTheBeasts.dc.html",
+  "JOB-C04-D-P08-BeholdHeWillSlayMe.dc.html",
+  "JOB-C04-D-P09-BeholdHeWillSlayMe.dc.html",
+  "JOB-C04-D-P10-ManThatIsBornOfAWo.dc.html",
+  "JOB-C04-D-P11-IfAManDie.dc.html",
+  "JOB-C04-D-P12-IfAManDie.dc.html",
+  "JOB-C05-00-Title.dc.html",
+  "JOB-C05-D-P01-EliphazAnsweredAga.dc.html",
+  "JOB-C05-D-P02-EliphazAnsweredAga.dc.html",
+  "JOB-C05-D-P03-TheWickedManTravai.dc.html",
+  "JOB-C05-D-P04-TheWickedManTravai.dc.html",
+  "JOB-C05-D-P05-MiserableComforter.dc.html",
+  "JOB-C05-D-P06-MiserableComforter.dc.html",
+  "JOB-C05-D-P07-MyWitnessIsInHeave.dc.html",
+  "JOB-C05-D-P08-MyWitnessIsInHeave.dc.html",
+  "JOB-C05-D-P09-MyWitnessIsInHeave.dc.html",
+  "JOB-C06-00-Title.dc.html",
+  "JOB-C06-D-P01-BildadAnsweredAgai.dc.html",
+  "JOB-C06-D-P02-BildadAnsweredAgai.dc.html",
+  "JOB-C06-D-P03-BildadAnsweredAgai.dc.html",
+  "JOB-C06-D-P04-HavePityUponMe.dc.html",
+  "JOB-C06-D-P05-HavePityUponMe.dc.html",
+  "JOB-C06-D-P06-HavePityUponMe.dc.html",
+  "JOB-C06-D-P07-MyRedeemerLiveth.dc.html",
+  "JOB-C06-D-P08-ZopharAnsweredAgai.dc.html",
+  "JOB-C06-D-P09-ZopharAnsweredAgai.dc.html",
+  "JOB-C06-D-P10-ZopharAnsweredAgai.dc.html",
+  "JOB-C06-D-P11-ZopharAnsweredAgai.dc.html",
+  "JOB-C07-00-Title.dc.html",
+  "JOB-C07-D-P01-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P02-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P03-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P04-WhereforeDoTheWick.dc.html",
+  "JOB-C07-D-P05-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P06-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P07-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P08-EliphazTheThirdTim.dc.html",
+  "JOB-C07-D-P09-OhThatIKnewWhereIM.dc.html",
+  "JOB-C07-D-P10-OhThatIKnewWhereIM.dc.html",
+  "JOB-C07-D-P11-TheyRemoveTheLandm.dc.html",
+  "JOB-C07-D-P12-TheyRemoveTheLandm.dc.html",
+  "JOB-C07-D-P13-TheyRemoveTheLandm.dc.html",
+  "JOB-C08-00-Title.dc.html",
+  "JOB-C08-D-P01-BildadTheThirdTime.dc.html",
+  "JOB-C08-D-P02-HeHangethTheEarthU.dc.html",
+  "JOB-C08-D-P03-HeHangethTheEarthU.dc.html",
+  "JOB-C08-D-P04-IWillNotPutAwayMin.dc.html",
+  "JOB-C08-D-P05-IWillNotPutAwayMin.dc.html",
+  "JOB-C08-D-P06-IWillNotPutAwayMin.dc.html",
+  "JOB-C08-D-P07-SurelyThereIsAMine.dc.html",
+  "JOB-C08-D-P08-WhereShallWisdomBe.dc.html",
+  "JOB-C08-D-P09-WhereShallWisdomBe.dc.html",
+  "JOB-C08-D-P10-TheFearOfTheLordTh.dc.html",
+  "JOB-C09-00-Title.dc.html",
+  "JOB-C09-D-P01-OhThatIWereAsInThe.dc.html",
+  "JOB-C09-D-P02-OhThatIWereAsInThe.dc.html",
+  "JOB-C09-D-P03-OhThatIWereAsInThe.dc.html",
+  "JOB-C09-D-P04-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P05-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P06-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P07-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P08-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P09-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P10-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P11-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P12-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P13-HereIsMySignature.dc.html",
+  "JOB-C10-00-Title.dc.html",
+  "JOB-C10-D-P01-ElihuTheSonOfBarac.dc.html",
+  "JOB-C10-D-P02-ElihuTheSonOfBarac.dc.html",
+  "JOB-C10-D-P03-ElihuTheSonOfBarac.dc.html",
+  "JOB-C10-D-P04-IAlsoAmFormedOutOf.dc.html",
+  "JOB-C10-D-P05-IAlsoAmFormedOutOf.dc.html",
+  "JOB-C10-D-P06-InADreamInAVisionO.dc.html",
+  "JOB-C10-D-P07-IHaveFoundARansom.dc.html",
+  "JOB-C10-D-P08-HearMyWordsYeWiseM.dc.html",
+  "JOB-C10-D-P09-HearMyWordsYeWiseM.dc.html",
+  "JOB-C10-D-P10-HearMyWordsYeWiseM.dc.html",
+  "JOB-C10-D-P11-HearMyWordsYeWiseM.dc.html",
+  "JOB-C10-D-P12-HearMyWordsYeWiseM.dc.html",
+  "JOB-C10-D-P13-LookUntoTheHeavens.dc.html",
+  "JOB-C10-D-P14-BeholdGodIsMighty.dc.html",
+  "JOB-C10-D-P15-BeholdGodIsMighty.dc.html",
+  "JOB-C10-D-P16-BeholdGodIsMighty.dc.html",
+  "JOB-C10-D-P17-BeholdGodIsGreat.dc.html",
+  "JOB-C10-D-P18-HearTheNoiseOfHisV.dc.html",
+  "JOB-C10-D-P19-HearTheNoiseOfHisV.dc.html",
+  "JOB-C10-D-P20-ConsiderTheWondrou.dc.html",
+  "JOB-C10-D-P21-ConsiderTheWondrou.dc.html",
+  "JOB-C11-00-Title.dc.html",
+  "JOB-C11-D-P01-WhereWastThou.dc.html",
+  "JOB-C11-D-P02-WhereWastThou.dc.html",
+  "JOB-C11-D-P03-WhereWastThou.dc.html",
+  "JOB-C11-D-P04-CanstThouBindThePl.dc.html",
+  "JOB-C11-D-P05-TheWildGoatsOfTheR.dc.html",
+  "JOB-C11-D-P06-TheWildGoatsOfTheR.dc.html",
+  "JOB-C11-D-P07-HastThouGivenTheHo.dc.html",
+  "JOB-C11-D-P08-HastThouGivenTheHo.dc.html",
+  "JOB-C12-00-Title.dc.html",
+  "JOB-C12-D-P01-ShallHeThatCaville.dc.html",
+  "JOB-C12-D-P02-ShallHeThatCaville.dc.html",
+  "JOB-C12-D-P03-BeholdNowBehemoth.dc.html",
+  "JOB-C12-D-P04-CanstThouDrawOutLe.dc.html",
+  "JOB-C12-D-P05-CanstThouDrawOutLe.dc.html",
+  "JOB-C12-D-P06-CanstThouDrawOutLe.dc.html",
+  "JOB-C12-D-P07-MineEyeSeethThee.dc.html",
+  "JOB-C12-D-P08-MyServantJobShallP.dc.html",
+  "JOB-C12-D-P09-TheLatterEndOfJob.dc.html",
+  "JOB-C12-D-P10-TheLatterEndOfJob.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Job Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Land of Uz (Job 1–3)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Vision of the Night (Job 4–7)",
+   "x": 0,
+   "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · No Umpire Betwixt Us (Job 8–10)",
+   "x": 0,
+   "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · If a Man Die (Job 11–14)",
+   "x": 0,
+   "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · My Witness Is in Heaven (Job 15–17)",
+   "x": 0,
+   "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · My Redeemer Liveth (Job 18–20)",
+   "x": 0,
+   "y": 21000
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Where I Might Find Him (Job 21–24)",
+   "x": 0,
+   "y": 25100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Price of Wisdom (Job 25–28)",
+   "x": 0,
+   "y": 29200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Months of Old (Job 29–31)",
+   "x": 0,
+   "y": 33300
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Elihu (Job 32–37)",
+   "x": 0,
+   "y": 37400
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Out of the Whirlwind (Job 38–39)",
+   "x": 0,
+   "y": 43900
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Mine Eye Seeth Thee (Job 40–42)",
+   "x": 0,
+   "y": 46800
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

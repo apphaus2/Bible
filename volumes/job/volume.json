@@ -1,0 +1,131 @@
+{
+ "id": "job",
+ "order": 18,
+ "name": "Job",
+ "kanji": "ヨブ記",
+ "thumb": "vol-job-",
+ "lede": "The eighteenth book of the Bible, in full: a man in the land of Uz, perfect and upright, stripped of all he had; his three friends and their counsel; Elihu; Jehovah answering out of the whirlwind; and the latter end of Job blessed more than his beginning, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Land of Uz",
+   "range": "Job 1–3",
+   "blurb": "A man in the land of Uz, perfect and upright, with seven sons and three daughters and the greatest substance of the children of the east; Satan before Jehovah — doth Job fear God for nought?; four messengers, each escaped alone to tell thee; Jehovah gave, and Jehovah hath taken away; the boils, the potsherd and the ashes; three friends sitting silent seven days; then Job opened his mouth: let the day perish wherein I was born.",
+   "prefixes": [
+    "Main.dc.html",
+    "JOB-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Vision of the Night",
+   "range": "Job 4–7",
+   "blurb": "Eliphaz the Temanite: who ever perished, being innocent?; a spirit passed before my face — shall mortal man be more just than God?; man is born unto trouble, as the sparks fly upward; happy is the man whom God correcteth. Job answers: oh that my vexation were but weighed; my brethren have dealt deceitfully as a brook; my days are swifter than a weaver's shuttle; what is man, that thou shouldest magnify him?",
+   "prefixes": [
+    "JOB-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "No Umpire Betwixt Us",
+   "range": "Job 8–10",
+   "blurb": "Bildad the Shuhite: doth God pervert justice?; inquire of the former age; can the rush grow up without mire?; whose trust is a spider's web. Job answers: how can man be just with God? — he maketh the Bear, Orion, and the Pleiades; he goeth by me, and I see him not; there is no umpire betwixt us; thou hast fashioned me as clay; the land of darkness and of the shadow of death.",
+   "prefixes": [
+    "JOB-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "If a Man Die",
+   "range": "Job 11–14",
+   "blurb": "Zophar the Naamathite: canst thou by searching find out God? — it is high as heaven, deeper than Sheol. Job answers: no doubt but ye are the people; ask now the beasts, and they shall teach thee; behold, he will slay me, nevertheless I will maintain my ways; man, that is born of a woman, is of few days, and full of trouble; there is hope of a tree; if a man die, shall he live again?",
+   "prefixes": [
+    "JOB-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "My Witness Is in Heaven",
+   "range": "Job 15–17",
+   "blurb": "Eliphaz again: should a wise man fill himself with the east wind?; art thou the first man that was born?; the wicked man travaileth with pain all his days. Job answers: miserable comforters are ye all; his archers compass me round about; O earth, cover not thou my blood — even now, behold, my witness is in heaven; who is there that will strike hands with me?; the bars of Sheol.",
+   "prefixes": [
+    "JOB-C05-"
+   ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "My Redeemer Liveth",
+   "range": "Job 18–20",
+   "blurb": "Bildad again: the light of the wicked shall be put out; a gin shall take him by the heel. Job answers: he hath walled up my way; my kinsfolk have failed; have pity upon me, O ye my friends; oh that my words were graven in the rock for ever! — but as for me I know that my Redeemer liveth. Zophar again: the triumphing of the wicked is short; the viper's tongue; the bow of brass.",
+   "prefixes": [
+    "JOB-C06-"
+   ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "Where I Might Find Him",
+   "range": "Job 21–24",
+   "blurb": "Job: wherefore do the wicked live? — their children dance, they sing to the timbrel and harp; they lie down alike in the dust. Eliphaz the third time: is not thy wickedness great?; acquaint now thyself with him, and be at peace. Job: oh that I knew where I might find him! — I go forward, but he is not there; when he hath tried me, I shall come forth as gold; the poor of the earth, wet with the showers of the mountains.",
+   "prefixes": [
+    "JOB-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "The Price of Wisdom",
+   "range": "Job 25–28",
+   "blurb": "Bildad the last time: how much less man, that is a worm! Job: he hangeth the earth upon nothing; these are but the outskirts of his ways; till I die I will not put away mine integrity from me. Surely there is a mine for silver — but where shall wisdom be found? It cannot be gotten for gold; the price of wisdom is above rubies; God understandeth the way thereof: behold, the fear of the Lord, that is wisdom.",
+   "prefixes": [
+    "JOB-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "The Months of Old",
+   "range": "Job 29–31",
+   "blurb": "Oh that I were as in the months of old, when his lamp shined upon my head — the seat in the gate, eyes to the blind and feet to the lame. But now they that are younger than I have me in derision; I am a brother to jackals, and a companion to ostriches; my harp is turned to mourning. I made a covenant with mine eyes; let me be weighed in an even balance; lo, here is my signature. The words of Job are ended.",
+   "prefixes": [
+    "JOB-C09-"
+   ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "Elihu",
+   "range": "Job 32–37",
+   "blurb": "Elihu the son of Barachel the Buzite, young, his wrath kindled: I am young, and ye are very old; my breast is as new wine-skins ready to burst; God speaketh in a dream, in a vision of the night — I have found a ransom; far be it from God, that he should do wickedness; who giveth songs in the night; behold, God is great — the clouds, the lightning, the snow and the ice; out of the north cometh golden splendor.",
+   "prefixes": [
+    "JOB-C10-"
+   ]
+  },
+  {
+   "dir": "chapter-11",
+   "num": "11",
+   "name": "Out of the Whirlwind",
+   "range": "Job 38–39",
+   "blurb": "Then Jehovah answered Job out of the whirlwind: where wast thou when I laid the foundations of the earth, when the morning stars sang together?; who shut up the sea with doors?; hast thou entered the treasuries of the snow?; canst thou bind the cluster of the Pleiades, or loose the bands of Orion?; the lioness and the raven, the wild goats and the wild ass, the ostrich, the war-horse that saith Aha!, and the eagle on the point of the cliff.",
+   "prefixes": [
+    "JOB-C11-"
+   ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "Mine Eye Seeth Thee",
+   "range": "Job 40–42",
+   "blurb": "Shall he that cavilleth contend with the Almighty? — I lay my hand upon my mouth. Behold now, behemoth, which I made as well as thee; canst thou draw out leviathan with a fishhook? Job: I had heard of thee by the hearing of the ear, but now mine eye seeth thee; my servant Job shall pray for you; and Jehovah blessed the latter end of Job more than his beginning — Jemimah, Keziah and Keren-happuch; so Job died, being old and full of days.",
+   "prefixes": [
+    "JOB-C12-"
+   ]
+  }
+ ]
+}
