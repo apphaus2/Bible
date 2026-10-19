@@ -1,0 +1,21 @@
+{
+ "id": "ezekiel",
+ "order": 26,
+ "name": "Ezekiel",
+ "kanji": "エゼキエル書",
+ "thumb": "vol-ezekiel-",
+ "lede": "The twenty-sixth book of the Bible, in full: the visions of God by the river Chebar, the watchman of the house of Israel, the glory departing from the temple, the parables and the burdens of the nations, the valley of dry bones, and the house of the vision with the river flowing from under its threshold, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Visions of God",
+   "range": "Ezekiel 1–3",
+   "blurb": "Among the captives by the river Chebar the heavens were opened: a stormy wind out of the north, the four living creatures, the wheels with their rims full of eyes, the firmament like the terrible crystal, and above it a throne of sapphire, fire and brightness — the appearance of the likeness of the glory of Jehovah; the roll of a book eaten, in the mouth as honey; and I have made thee a watchman unto the house of Israel.",
+   "prefixes": [
+    "Main.dc.html",
+    "EZK-C01-"
+   ]
+  }
+ ]
+}
