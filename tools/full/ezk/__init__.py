@@ -33,5 +33,7 @@ META = {
      "blurb": "Take thee a tile, and portray upon it a city, even Jerusalem: the forts and the mound and the iron pan; the prophet lying on his left side and on his right, each day for a year; the bread of the siege by weight; the hair shaven with a sword and divided in three; set thy face toward the mountains of Israel; and an end, the end is come upon the four corners of the land."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Glory Departs", "range": "Ezekiel 8–11", "bible_chapters": [8, 9, 10, 11],
      "blurb": "Lifted up between earth and heaven and brought in the visions of God to Jerusalem: the image of jealousy, the chamber of imagery and the seventy elders with their censers, the women weeping for Tammuz, the men worshipping the sun; the man clothed in linen and the mark upon the foreheads; coals of fire from between the cherubim; and the glory of Jehovah going up from the threshold to the east gate, and to the mountain east of the city."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Stuff for Removing", "range": "Ezekiel 12–14", "bible_chapters": [12, 13, 14],
+     "blurb": "The prophet a sign: stuff for removing carried out by day, the wall digged through in the dark — I am your sign; the net spread for the prince in Jerusalem; bread eaten with quaking; the foolish prophets like foxes in the waste places, and the wall daubed with untempered mortar brought down by the stormy wind; and though these three men, Noah, Daniel, and Job, were in it."},
   ],
 }

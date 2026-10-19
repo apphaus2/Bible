@@ -31,7 +31,7 @@ def joined(kind, *parts):
     return (kind, " ".join(v(p) if isinstance(p, str) else v(p[0], frm=p[1], to=p[2] if len(p) > 2 else None) for p in parts))
 
 # ---- the automatic splitter --------------------------------------------------------------------------------------------
-LEAD = [re.compile(r"^(.*?word of Jehovah came (?:again )?unto me[^,]*?, saying,)\s*"),
+LEAD = [re.compile(r"^(.*?(?:word of Jehovah (?:also |again )?came (?:again |also )?(?:unto|to) me|came the word of Jehovah (?:unto|to) me)[^,]*?, saying,)\s*"),
         re.compile(r"^((?:And |Then |Moreover |Furthermore |Again |So |But )?(?:he|Jehovah) (?:said|spake)(?: (?:also )?(?:unto|to|with) me)?,(?: and said unto me,)?)\s*"),
         re.compile(r"^((?:And|Then|Moreover|So|Again) said he (?:also )?unto me,)\s*"),
         re.compile(r"^(He said (?:also )?unto me,)\s*")]
@@ -110,12 +110,12 @@ def groups(c, a, b, budget=480, starts=()):
     out, cur, n = [], [], 0
     for x in range(a, b + 1):
         t = G.verses[(c, x)]
-        lead = "word of Jehovah came" in t
+        lead = bool(LEAD[0].match(t))
         if cur and (n + len(t) > budget or lead or (x in starts and n > budget * 0.34)):
             out.append(cur); cur, n = [], 0
         cur.append(x); n += len(t)
     if cur: out.append(cur)
-    if len(out) > 1 and sum(len(G.verses[(c, x)]) for x in out[-1]) < budget * 0.3 and "word of Jehovah came" not in G.verses[(c, out[-1][0])] \
+    if len(out) > 1 and sum(len(G.verses[(c, x)]) for x in out[-1]) < budget * 0.3 and not LEAD[0].match(G.verses[(c, out[-1][0])]) \
             and not any(x in starts for x in out[-1]):
         last = out.pop(); out[-1] += last
     return [(g[0], g[-1]) for g in out]

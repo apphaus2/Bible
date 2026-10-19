@@ -36,7 +36,7 @@ def elders_house(p, w, h, seed):
     b = h * 0.94
     o = [mk.defs(p, *ALL), bg(f"eh{seed}", w, h, [(0, "#3A2A2A"), (1, "#8A6A4A")]), f'<rect x="-10" y="{f(h * 0.72)}" width="{f(w + 20)}" height="{f(h * 0.4)}" fill="#6A5040" stroke="{INK}" stroke-width="2"></rect>',
          glow(f"el{seed}", w * 0.5, h * 0.4, w * 0.3, h * 0.4, "#FFC14D", 0.5), A.clay_lamp(w * 0.5, h * 0.42, min(1.2, h / 300)) if hasattr(A, "clay_lamp") else ""]
-    s = min(fit(b, max(h * 0.44, b - 220)) * 0.7, 1.0)
+    s = min(h * 0.78 / 135, 1.3)
     o.append(seated(w * 0.18, b, s * 1.05, EZ_C, head="#F3EFE6", beard="#4A4640"))
     for i in range(5):
         o.append(seated(w * (0.42 + i * 0.12), b, s, CAPT[i], head=CAPT[(i + 3) % 7], beard="#C8C2B6" if i % 2 else "#8A847A", flip=True))

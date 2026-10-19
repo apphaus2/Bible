@@ -331,6 +331,118 @@
    "w": 760,
    "h": 1080,
    "title": "42 · The Glory Went Up"
+  },
+  "EZK-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Stuff for Removing"
+  },
+  "EZK-C04-D-P01-PrepareTheeStuffFo.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Prepare Thee Stuff for Removing"
+  },
+  "EZK-C04-D-P02-IAmYourSign.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · I Am Your Sign"
+  },
+  "EZK-C04-D-P03-IAmYourSign.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · I Am Your Sign"
+  },
+  "EZK-C04-D-P04-BreadWithQuaking.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Bread with Quaking"
+  },
+  "EZK-C04-D-P05-EveryVisionFaileth.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Every Vision Faileth"
+  },
+  "EZK-C04-D-P06-FoxesInTheWastePla.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Foxes in the Waste Places"
+  },
+  "EZK-C04-D-P07-UntemperedMortar.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Untempered Mortar"
+  },
+  "EZK-C04-D-P08-UntemperedMortar.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Untempered Mortar"
+  },
+  "EZK-C04-D-P09-WoeToTheWomenThatS.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Woe to the Women That Sew Pillows"
+  },
+  "EZK-C04-D-P10-IdolsInTheirHeart.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Idols in Their Heart"
+  },
+  "EZK-C04-D-P11-IdolsInTheirHeart.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Idols in Their Heart"
+  },
+  "EZK-C04-D-P12-IdolsInTheirHeart.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Idols in Their Heart"
+  },
+  "EZK-C04-D-P13-NoahDanielAndJob.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Noah, Daniel, and Job"
+  },
+  "EZK-C04-D-P14-YetThereShallBeLef.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Yet There Shall Be Left a Remnant"
+  },
+  "EZK-C04-D-P15-YetThereShallBeLef.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Yet There Shall Be Left a Remnant"
   }
  },
  "order": [
@@ -379,7 +491,23 @@
   "EZK-C03-D-P13-ThisCityIsTheCaldr.dc.html",
   "EZK-C03-D-P14-ThisCityIsTheCaldr.dc.html",
   "EZK-C03-D-P15-ASanctuaryForALitt.dc.html",
-  "EZK-C03-D-P16-TheGloryWentUp.dc.html"
+  "EZK-C03-D-P16-TheGloryWentUp.dc.html",
+  "EZK-C04-00-Title.dc.html",
+  "EZK-C04-D-P01-PrepareTheeStuffFo.dc.html",
+  "EZK-C04-D-P02-IAmYourSign.dc.html",
+  "EZK-C04-D-P03-IAmYourSign.dc.html",
+  "EZK-C04-D-P04-BreadWithQuaking.dc.html",
+  "EZK-C04-D-P05-EveryVisionFaileth.dc.html",
+  "EZK-C04-D-P06-FoxesInTheWastePla.dc.html",
+  "EZK-C04-D-P07-UntemperedMortar.dc.html",
+  "EZK-C04-D-P08-UntemperedMortar.dc.html",
+  "EZK-C04-D-P09-WoeToTheWomenThatS.dc.html",
+  "EZK-C04-D-P10-IdolsInTheirHeart.dc.html",
+  "EZK-C04-D-P11-IdolsInTheirHeart.dc.html",
+  "EZK-C04-D-P12-IdolsInTheirHeart.dc.html",
+  "EZK-C04-D-P13-NoahDanielAndJob.dc.html",
+  "EZK-C04-D-P14-YetThereShallBeLef.dc.html",
+  "EZK-C04-D-P15-YetThereShallBeLef.dc.html"
  ],
  "notes": {
   "Main": {
@@ -409,6 +537,13 @@
    "text": "Chapter 3 · The Glory Departs (Ezekiel 8–11)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Stuff for Removing (Ezekiel 12–14)",
+   "x": 0,
+   "y": 16400
   }
  },
  "designSystems": [],
