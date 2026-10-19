@@ -31,43 +31,35 @@
    "h": 1080,
    "title": "1 · Thy Nest Among the Stars"
   },
-  "OBA-C01-D-P02-ThyNestAmongTheSta.dc.html": {
+  "OBA-C01-D-P02-TheDayOfThyBrother.dc.html": {
    "x": 1680,
    "y": 2000,
    "w": 760,
    "h": 1080,
-   "title": "2 · Thy Nest Among the Stars"
+   "title": "2 · The Day of Thy Brother"
   },
-  "OBA-C01-D-P03-TheDayOfThyBrother.dc.html": {
+  "OBA-C01-D-P03-TheDayOfJehovahIsN.dc.html": {
    "x": 2520,
    "y": 2000,
    "w": 760,
    "h": 1080,
-   "title": "3 · The Day of Thy Brother"
+   "title": "3 · The Day of Jehovah Is Near"
   },
-  "OBA-C01-D-P04-TheDayOfJehovahIsN.dc.html": {
+  "OBA-C01-D-P04-TheKingdomShallBeJ.dc.html": {
    "x": 3360,
    "y": 2000,
    "w": 760,
    "h": 1080,
-   "title": "4 · The Day of Jehovah Is Near"
-  },
-  "OBA-C01-D-P05-TheKingdomShallBeJ.dc.html": {
-   "x": 0,
-   "y": 3200,
-   "w": 760,
-   "h": 1080,
-   "title": "5 · The Kingdom Shall Be Jehovah's"
+   "title": "4 · The Kingdom Shall Be Jehovah's"
   }
  },
  "order": [
   "Main.dc.html",
   "OBA-C01-00-Title.dc.html",
   "OBA-C01-D-P01-ThyNestAmongTheSta.dc.html",
-  "OBA-C01-D-P02-ThyNestAmongTheSta.dc.html",
-  "OBA-C01-D-P03-TheDayOfThyBrother.dc.html",
-  "OBA-C01-D-P04-TheDayOfJehovahIsN.dc.html",
-  "OBA-C01-D-P05-TheKingdomShallBeJ.dc.html"
+  "OBA-C01-D-P02-TheDayOfThyBrother.dc.html",
+  "OBA-C01-D-P03-TheDayOfJehovahIsN.dc.html",
+  "OBA-C01-D-P04-TheKingdomShallBeJ.dc.html"
  ],
  "notes": {
   "Main": {

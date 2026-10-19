@@ -1,0 +1,21 @@
+{
+ "id": "micah",
+ "order": 33,
+ "name": "Micah",
+ "kanji": "ミカ書",
+ "thumb": "vol-micah-",
+ "lede": "The thirty-third book of the Bible, in full: the word of Jehovah that came to Micah the Morashtite concerning Samaria and Jerusalem — the mountains melted as wax, Zion plowed as a field; then the mountain of Jehovah's house, swords into plowshares, every man under his vine and under his fig-tree; Beth-lehem Ephrathah; what doth Jehovah require of thee; and who is a God like unto thee — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Swords into Plowshares",
+   "range": "Micah 1–4",
+   "blurb": "Hear, ye peoples: Jehovah cometh forth out of his place, and the mountains shall be melted under him; Samaria a heap of the field; I will lament and wail — tell it not in Gath; woe to them that devise iniquity upon their beds; the breaker is gone up before them; ye heads of Jacob, Zion shall be plowed as a field; but in the latter days the mountain of Jehovah's house — they shall beat their swords into plowshares, and sit every man under his vine and under his fig-tree.",
+   "prefixes": [
+    "Main.dc.html",
+    "MIC-C01-"
+   ]
+  }
+ ]
+}

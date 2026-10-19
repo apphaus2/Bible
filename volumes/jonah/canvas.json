@@ -66,19 +66,12 @@
    "h": 1080,
    "title": "6 · Out of the Fish's Belly"
   },
-  "JON-C01-D-P07-OutOfTheFishSBelly.dc.html": {
+  "JON-C01-D-P07-UponTheDryLand.dc.html": {
    "x": 1680,
    "y": 3200,
    "w": 760,
    "h": 1080,
-   "title": "7 · Out of the Fish's Belly"
-  },
-  "JON-C01-D-P08-UponTheDryLand.dc.html": {
-   "x": 2520,
-   "y": 3200,
-   "w": 760,
-   "h": 1080,
-   "title": "8 · Upon the Dry Land"
+   "title": "7 · Upon the Dry Land"
   },
   "JON-C02-00-Title.dc.html": {
    "x": 0,
@@ -92,42 +85,35 @@
    "y": 4900,
    "w": 760,
    "h": 1080,
-   "title": "9 · An Exceeding Great City"
+   "title": "8 · An Exceeding Great City"
   },
   "JON-C02-D-P02-SackclothAndAshes.dc.html": {
    "x": 1680,
    "y": 4900,
    "w": 760,
    "h": 1080,
-   "title": "10 · Sackcloth and Ashes"
+   "title": "9 · Sackcloth and Ashes"
   },
   "JON-C02-D-P03-DoestThouWellToBeA.dc.html": {
    "x": 2520,
    "y": 4900,
    "w": 760,
    "h": 1080,
-   "title": "11 · Doest Thou Well to Be Angry?"
+   "title": "10 · Doest Thou Well to Be Angry?"
   },
   "JON-C02-D-P04-TheGourd.dc.html": {
    "x": 3360,
    "y": 4900,
    "w": 760,
    "h": 1080,
-   "title": "12 · The Gourd"
+   "title": "11 · The Gourd"
   },
-  "JON-C02-D-P05-TheGourd.dc.html": {
+  "JON-C02-D-P05-ShouldNotIHaveRega.dc.html": {
    "x": 0,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "13 · The Gourd"
-  },
-  "JON-C02-D-P06-ShouldNotIHaveRega.dc.html": {
-   "x": 840,
-   "y": 6100,
-   "w": 760,
-   "h": 1080,
-   "title": "14 · Should Not I Have Regard for Nineveh?"
+   "title": "12 · Should Not I Have Regard for Nineveh?"
   }
  },
  "order": [
@@ -139,15 +125,13 @@
   "JON-C01-D-P04-TheLotFellUponJona.dc.html",
   "JON-C01-D-P05-TheSeaCeasedFromIt.dc.html",
   "JON-C01-D-P06-OutOfTheFishSBelly.dc.html",
-  "JON-C01-D-P07-OutOfTheFishSBelly.dc.html",
-  "JON-C01-D-P08-UponTheDryLand.dc.html",
+  "JON-C01-D-P07-UponTheDryLand.dc.html",
   "JON-C02-00-Title.dc.html",
   "JON-C02-D-P01-AnExceedingGreatCi.dc.html",
   "JON-C02-D-P02-SackclothAndAshes.dc.html",
   "JON-C02-D-P03-DoestThouWellToBeA.dc.html",
   "JON-C02-D-P04-TheGourd.dc.html",
-  "JON-C02-D-P05-TheGourd.dc.html",
-  "JON-C02-D-P06-ShouldNotIHaveRega.dc.html"
+  "JON-C02-D-P05-ShouldNotIHaveRega.dc.html"
  ],
  "notes": {
   "Main": {

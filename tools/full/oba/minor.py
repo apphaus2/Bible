@@ -93,21 +93,48 @@ class Kit:
     def drawn(self, lines, art, bg, ref=None, k=None, **kw):
         """Words at the top of the panel, the drawing fn(w, h) filling the room below them."""
         lab = self.label(); lines = _flat(lines)
+        if "h" not in kw and lines and sum(len(t) for _, t in lines) < 160: kw["h"] = 250     # a short caption still gets a real picture
         return seg(lines, ref or lab, bg=bg, art=under(art, lines, k) if lines else art, **kw)
 
     def pic(self, art, bg, h, ref=None, **kw):
         """A picture panel without words, of height h."""
         return seg([], ref, bg=bg, art=art, h=h, **kw)
 
-    def pack(self, segs, prefix, start, **k):
-        k.setdefault("by_need", True); k.setdefault("room", 0.92); k.setdefault("min_size", 12.5)
-        return _pack(segs, prefix, start, book=self.book, code=self.code, **k)
+    def pack(self, segs, prefix, start, end="", default_head=None, min_size=12.5, most=3, budget=1150, min_art=200):
+        """Group the panels into pages greedily: a panel joins the page while every panel's words still fit at min_size
+        or more, the page holds fewer than `most` panels and about `budget` characters; a head starts a new page once
+        the page holds a fair share of words. A lone short panel at the end joins the page before it when it fits."""
+        from discourse import _sizes, _chars, _heights
+        def fits(g):
+            """Every panel's words at min_size or more, and every drawing tall enough to be a real picture."""
+            if len(g) == 1: return True
+            if min(_sizes(g)) < min_size: return False
+            return all(hh >= (min_art if s["tok"] is None and s["art"] is not None else 170) for s, hh in zip(g, _heights(g)))
+        n, INF = len(segs), float("inf")
+        best, cut = [0.0] + [INF] * n, [0] * (n + 1)
+        for j in range(1, n + 1):                      # best partition of segs[:j] into pages (fewest, fullest pages)
+            for i in range(max(0, j - most), j):
+                g = segs[i:j]; chars = sum(_chars(x) for x in g)
+                if best[i] == INF or (len(g) > 1 and (chars > budget or not fits(g))): continue
+                under = max(0.0, (budget * 0.8 - chars) / budget)
+                cost = best[i] + 1 + 3 * under * under + sum(0.25 for x in g[1:] if x["head"])
+                if cost < best[j]: best[j], cut[j] = cost, i
+        groups, j = [], n
+        while j > 0: groups.insert(0, segs[cut[j]:j]); j = cut[j]
+        out, head = [], default_head or ""
+        for i, g in enumerate(groups):
+            pages = _pack(g, prefix, start + len(out), book=self.book, code=self.code, budget=10 ** 9, most=99, default_head=head,
+                          end=end if i == len(groups) - 1 else "")
+            for name, t, fn in pages:
+                out.append((f"{prefix}-P{len(out) + 1:02d}-" + name.split("-P01-", 1)[1], t, fn))
+            head = next((s["head"] for s in reversed(g) if s["head"]), head)
+        return out
 
     def paged(self, groups, prefix, start, end="", **k):
         """Each group of segments on a page of its own (pack may still split one that will not fit)."""
         out, head = [], ""
         for i, g in enumerate(groups):
-            out += self.pack(g, f"{prefix}{chr(65 + i)}", start + len(out), default_head=head, end=end if i == len(groups) - 1 else "", **k)
+            out += self.pack(g, f"{prefix}{chr(65 + i)}", start + len(out), default_head=head, end=end if i == len(groups) - 1 else "", most=99, budget=10 ** 9, **k)
             head = next((s["head"] for s in reversed(g) if s["head"]), head)
         return out
 
