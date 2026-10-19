@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 928 verses — 928 full, 0 partial, 0 omitted.
+**So far:** 995 verses — 995 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Almond Rod (Jeremiah 1–3)
 
@@ -73,5 +73,11 @@ Every verse is on the page in full.
 ## Chapter 12 · The Roll (Jeremiah 34–36)
 
 73 verses: 73 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 13 · The Dungeon (Jeremiah 37–39)
+
+67 verses: 67 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

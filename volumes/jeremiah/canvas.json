@@ -1416,6 +1416,118 @@
    "w": 760,
    "h": 1080,
    "title": "188 · Take Thee Again Another Roll"
+  },
+  "JER-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · The Dungeon"
+  },
+  "JER-C13-D-P01-ZedekiahReignedAsK.dc.html": {
+   "x": 840,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Zedekiah Reigned as King"
+  },
+  "JER-C13-D-P02-ZedekiahReignedAsK.dc.html": {
+   "x": 1680,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · Zedekiah Reigned as King"
+  },
+  "JER-C13-D-P03-TheDungeonHouse.dc.html": {
+   "x": 2520,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · The Dungeon-House"
+  },
+  "JER-C13-D-P04-TheDungeonHouse.dc.html": {
+   "x": 3360,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · The Dungeon-House"
+  },
+  "JER-C13-D-P05-LetThisManBePutToD.dc.html": {
+   "x": 0,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Let This Man Be Put to Death"
+  },
+  "JER-C13-D-P06-TheDungeonOfMalchi.dc.html": {
+   "x": 840,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · The Dungeon of Malchijah"
+  },
+  "JER-C13-D-P07-EbedMelechTheEthio.dc.html": {
+   "x": 1680,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · Ebed-melech the Ethiopian"
+  },
+  "JER-C13-D-P08-EbedMelechTheEthio.dc.html": {
+   "x": 2520,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Ebed-melech the Ethiopian"
+  },
+  "JER-C13-D-P09-IWillAskTheeAThing.dc.html": {
+   "x": 3360,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · I Will Ask Thee a Thing"
+  },
+  "JER-C13-D-P10-IWillAskTheeAThing.dc.html": {
+   "x": 0,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · I Will Ask Thee a Thing"
+  },
+  "JER-C13-D-P11-LetNoManKnowOfThes.dc.html": {
+   "x": 840,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · Let No Man Know of These Words"
+  },
+  "JER-C13-D-P12-ABreachWasMadeInTh.dc.html": {
+   "x": 1680,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · A Breach Was Made in the City"
+  },
+  "JER-C13-D-P13-ByTheWayOfTheKingS.dc.html": {
+   "x": 2520,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · By the Way of the King's Garden"
+  },
+  "JER-C13-D-P14-TheyBurnedTheKingS.dc.html": {
+   "x": 3360,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · They Burned the King's House"
+  },
+  "JER-C13-D-P15-ThyLifeShallBeForA.dc.html": {
+   "x": 0,
+   "y": 65600,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · Thy Life Shall Be for a Prey unto Thee"
   }
  },
  "order": [
@@ -1619,7 +1731,23 @@
   "JER-C12-F-P04-GoHideThee.dc.html",
   "JER-C12-F-P05-TheKingWasSittingI.dc.html",
   "JER-C12-F-P06-TakeTheeAgainAnoth.dc.html",
-  "JER-C12-F-P07-TakeTheeAgainAnoth.dc.html"
+  "JER-C12-F-P07-TakeTheeAgainAnoth.dc.html",
+  "JER-C13-00-Title.dc.html",
+  "JER-C13-D-P01-ZedekiahReignedAsK.dc.html",
+  "JER-C13-D-P02-ZedekiahReignedAsK.dc.html",
+  "JER-C13-D-P03-TheDungeonHouse.dc.html",
+  "JER-C13-D-P04-TheDungeonHouse.dc.html",
+  "JER-C13-D-P05-LetThisManBePutToD.dc.html",
+  "JER-C13-D-P06-TheDungeonOfMalchi.dc.html",
+  "JER-C13-D-P07-EbedMelechTheEthio.dc.html",
+  "JER-C13-D-P08-EbedMelechTheEthio.dc.html",
+  "JER-C13-D-P09-IWillAskTheeAThing.dc.html",
+  "JER-C13-D-P10-IWillAskTheeAThing.dc.html",
+  "JER-C13-D-P11-LetNoManKnowOfThes.dc.html",
+  "JER-C13-D-P12-ABreachWasMadeInTh.dc.html",
+  "JER-C13-D-P13-ByTheWayOfTheKingS.dc.html",
+  "JER-C13-D-P14-TheyBurnedTheKingS.dc.html",
+  "JER-C13-D-P15-ThyLifeShallBeForA.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1712,6 +1840,13 @@
    "text": "Chapter 12 · The Roll (Jeremiah 34–36)",
    "x": 0,
    "y": 56400
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · The Dungeon (Jeremiah 37–39)",
+   "x": 0,
+   "y": 61700
   }
  },
  "designSystems": [],

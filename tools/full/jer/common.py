@@ -131,7 +131,7 @@ PRIEST = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#3A3430", hl="#6A6460
 HANANIAH = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#5A3A5A", cord=True, light="#FFC14D")
 BARUCH = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#5A6A4A", cord=True, light="#FFE680")
 BARUCH_GRIEF = F("adam", skin="#C98E66", shadow="#3A2A4A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#5A6A4A", cord=True, brow="sorrow", tear=True, light="#9AA8C8")
-EBEDMELECH = F("adam", skin="#6A4030", shadow="#2A1410", hair="#0D0D0F", hl="#2A2220", stubble="#0D0D0F", scarf="#E8B830", light="#FFE680")
+EBEDMELECH = F("adam", skin="#6A4030", shadow="#2A1410", hair="#0D0D0F", hl="#2A2220", stubble="#0D0D0F", scarf="#F3EFE6", band=True, light="#FFE680")
 PRINCE = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#6A2A3A", band=True, brow="scowl", light="#D7261E")
 PRINCE_CALM = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#2A5A5A", band=True, light="#FFE680")
 ELDER = F("adam", skin="#B98A6E", shadow="#4A3A4A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#5A4A3A", cord=True, light="#FFF4C2")
