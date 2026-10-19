@@ -1822,6 +1822,132 @@
    "w": 760,
    "h": 1080,
    "title": "242 · Fear, and the Pit, and the Snare"
+  },
+  "JER-C17-00-Title.dc.html": {
+   "x": 0,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 17 · Babylon Is Taken"
+  },
+  "JER-C17-D-P01-OfTheChildrenOfAmm.dc.html": {
+   "x": 840,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "243 · Of the Children of Ammon"
+  },
+  "JER-C17-D-P02-OfEdom.dc.html": {
+   "x": 1680,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "244 · Of Edom"
+  },
+  "JER-C17-D-P03-ThouThatDwellestIn.dc.html": {
+   "x": 2520,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "245 · Thou That Dwellest in the Clefts of the Rock"
+  },
+  "JER-C17-D-P04-ThouThatDwellestIn.dc.html": {
+   "x": 3360,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "246 · Thou That Dwellest in the Clefts of the Rock"
+  },
+  "JER-C17-D-P05-OfDamascus.dc.html": {
+   "x": 0,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "247 · Of Damascus"
+  },
+  "JER-C17-D-P06-OfKedarAndHazor.dc.html": {
+   "x": 840,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "248 · Of Kedar and Hazor"
+  },
+  "JER-C17-D-P07-ConcerningElam.dc.html": {
+   "x": 1680,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "249 · Concerning Elam"
+  },
+  "JER-C17-D-P08-BabylonIsTaken.dc.html": {
+   "x": 2520,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "250 · Babylon Is Taken"
+  },
+  "JER-C17-D-P09-BabylonIsTaken.dc.html": {
+   "x": 3360,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "251 · Babylon Is Taken"
+  },
+  "JER-C17-D-P10-FleeOutOfTheMidstO.dc.html": {
+   "x": 0,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "252 · Flee out of the Midst of Babylon"
+  },
+  "JER-C17-D-P11-IsraelIsAHuntedShe.dc.html": {
+   "x": 840,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "253 · Israel Is a Hunted Sheep"
+  },
+  "JER-C17-D-P12-TheHammerOfTheWhol.dc.html": {
+   "x": 1680,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "254 · The Hammer of the Whole Earth"
+  },
+  "JER-C17-D-P13-TheHammerOfTheWhol.dc.html": {
+   "x": 2520,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "255 · The Hammer of the Whole Earth"
+  },
+  "JER-C17-D-P14-TheHammerOfTheWhol.dc.html": {
+   "x": 3360,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "256 · The Hammer of the Whole Earth"
+  },
+  "JER-C17-D-P15-ASwordUponTheChald.dc.html": {
+   "x": 0,
+   "y": 84400,
+   "w": 760,
+   "h": 1080,
+   "title": "257 · A Sword upon the Chaldeans"
+  },
+  "JER-C17-D-P16-APeopleComethFromT.dc.html": {
+   "x": 840,
+   "y": 84400,
+   "w": 760,
+   "h": 1080,
+   "title": "258 · A People Cometh from the North"
+  },
+  "JER-C17-D-P17-APeopleComethFromT.dc.html": {
+   "x": 1680,
+   "y": 84400,
+   "w": 760,
+   "h": 1080,
+   "title": "259 · A People Cometh from the North"
   }
  },
  "order": [
@@ -2083,7 +2209,25 @@
   "JER-C16-D-P12-OVineOfSibmah.dc.html",
   "JER-C16-D-P13-OVineOfSibmah.dc.html",
   "JER-C16-D-P14-HeShallFlyAsAnEagl.dc.html",
-  "JER-C16-D-P15-FearAndThePitAndTh.dc.html"
+  "JER-C16-D-P15-FearAndThePitAndTh.dc.html",
+  "JER-C17-00-Title.dc.html",
+  "JER-C17-D-P01-OfTheChildrenOfAmm.dc.html",
+  "JER-C17-D-P02-OfEdom.dc.html",
+  "JER-C17-D-P03-ThouThatDwellestIn.dc.html",
+  "JER-C17-D-P04-ThouThatDwellestIn.dc.html",
+  "JER-C17-D-P05-OfDamascus.dc.html",
+  "JER-C17-D-P06-OfKedarAndHazor.dc.html",
+  "JER-C17-D-P07-ConcerningElam.dc.html",
+  "JER-C17-D-P08-BabylonIsTaken.dc.html",
+  "JER-C17-D-P09-BabylonIsTaken.dc.html",
+  "JER-C17-D-P10-FleeOutOfTheMidstO.dc.html",
+  "JER-C17-D-P11-IsraelIsAHuntedShe.dc.html",
+  "JER-C17-D-P12-TheHammerOfTheWhol.dc.html",
+  "JER-C17-D-P13-TheHammerOfTheWhol.dc.html",
+  "JER-C17-D-P14-TheHammerOfTheWhol.dc.html",
+  "JER-C17-D-P15-ASwordUponTheChald.dc.html",
+  "JER-C17-D-P16-APeopleComethFromT.dc.html",
+  "JER-C17-D-P17-APeopleComethFromT.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2204,6 +2348,13 @@
    "text": "Chapter 16 · Against the Nations (Jeremiah 46–48)",
    "x": 0,
    "y": 75200
+  },
+  "chapter17": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 17 · Babylon Is Taken (Jeremiah 49–50)",
+   "x": 0,
+   "y": 80500
   }
  },
  "designSystems": [],

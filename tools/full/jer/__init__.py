@@ -60,5 +60,7 @@ META = {
      "blurb": "Thou speakest falsely; the remnant of Judah carried into Egypt, unto Tahpanhes; great stones hid in the brickwork at the entry of Pharaoh's house, where the king of Babylon shall spread his royal pavilion; the women of Pathros and the queen of heaven — we will not hearken unto thee; the sign of Pharaoh Hophra; and to Baruch: seekest thou great things for thyself? seek them not."},
     {"module": "ch16", "dir": "chapter-16", "num": "16", "name": "Against the Nations", "range": "Jeremiah 46–48", "bible_chapters": [46, 47, 48],
      "blurb": "The word concerning the nations: Egypt at Carchemish — prepare ye the buckler and shield; Egypt riseth up like the Nile, a very fair heifer, and destruction out of the north is come; fear not, O Jacob my servant; the Philistines and the waters out of the north — O thou sword of Jehovah, how long ere thou be quiet?; and Moab, settled on his lees: fear, and the pit, and the snare."},
+    {"module": "ch17", "dir": "chapter-17", "num": "17", "name": "Babylon Is Taken", "range": "Jeremiah 49–50", "bible_chapters": [49, 50],
+     "blurb": "The burdens of Ammon, of Edom — thou that dwellest in the clefts of the rock — of Damascus, of Kedar and Hazor, and of Elam; then Babylon is taken, Bel is put to shame: the children of Israel and Judah go on their way weeping to seek Zion; flee out of the midst of Babylon; how is the hammer of the whole earth cut asunder and broken!; their Redeemer is strong; a sword upon the Chaldeans."},
   ],
 }

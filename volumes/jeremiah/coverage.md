@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1181 verses — 1181 full, 0 partial, 0 omitted.
+**So far:** 1266 verses — 1266 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Almond Rod (Jeremiah 1–3)
 
@@ -97,5 +97,11 @@ Every verse is on the page in full.
 ## Chapter 16 · Against the Nations (Jeremiah 46–48)
 
 82 verses: 82 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 17 · Babylon Is Taken (Jeremiah 49–50)
+
+85 verses: 85 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
