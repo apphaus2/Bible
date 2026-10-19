@@ -1126,7 +1126,32 @@ def s_silent(p, w, h, seed):
     """Both chariot and horse are cast into a dead sleep: the camp at morning, silent, no one moving."""
     return K2.silent_camp(p, w, h, seed)
 
-NOMIRROR = {"nations", "lands"}
+
+def s_captives(p, w, h, seed):
+    """Let the sighing of the prisoner come before thee: a column of captives led away from the smoking city."""
+    return K2.captives(p, w, h, seed, city="jerusalem")
+
+def s_judges(p, w, h, seed):
+    """God standeth in the congregation of God; he judgeth among the gods: the judges seated in the gate."""
+    from chr2 import art as C2
+    return C2.judges_gate(p, w, h, seed)
+
+def s_confed(p, w, h, seed):
+    """They are confederate against thee: the tents of Edom and the Ishmaelites, Moab and the Hagarenes, Gebal, Ammon,
+    Amalek, Philistia with Tyre, Assyria joined with them — round about Israel as a technical map."""
+    o = [grid_bg(w, h)]
+    Y = lambda y: h * (0.42 + 0.56 * y)
+    cx, cy = w * 0.46, Y(0.5)
+    o.append(f'<path d="M-10 {f(Y(0))} C {f(w * 0.16)} {f(Y(0.3))} {f(w * 0.12)} {f(Y(0.7))} {f(w * 0.08)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(min(w, h) * 0.08)}" fill="none" stroke="#FFD23F" stroke-width="2" stroke-dasharray="5 4"></circle>')
+    for name, x, y in (("EDOM", 0.5, 1.0), ("ISHMAELITES", 0.74, 0.92), ("MOAB", 0.66, 0.7), ("HAGARENES", 0.88, 0.54), ("GEBAL", 0.4, 0.04), ("AMMON", 0.7, 0.42),
+                       ("AMALEK", 0.3, 0.94), ("PHILISTIA", 0.2, 0.7), ("TYRE", 0.3, 0.16), ("ASSYRIA", 0.9, 0.12)):
+        o.append(route([(w * x, Y(y)), (cx, cy)], color="#FF8A6A", arrow=True))
+        o.append(node(w * x, Y(y), name, color="#FF8A6A", r=5))
+    o.append(node(cx, cy, "ISRAEL", color="#FFD23F", r=8))
+    return "".join(o)
+
+NOMIRROR = {"nations", "lands", "confed"}
 
 SCENES = {
     "tree": ("#8FD0E2", s_tree), "chaff": ("#5A3A5A", s_chaff), "path": ("#5A5A8A", s_path), "kings": ("#3A0A1A", s_kings), "throne": ("#FFB04A", s_throne),
@@ -1152,5 +1177,6 @@ SCENES = {
     "tribute": ("#FFB04A", s_tribute), "egypt": ("#5A3A2A", s_egypt), "plagues": ("#3A1A1A", s_plagues), "manna": ("#5A5A8A", s_manna), "quails": ("#C8A07A", s_quails),
     "rockwater": ("#C8A07A", s_rockwater), "idols": ("#2A1A2A", s_idols), "ark": ("#FFB04A", s_ark), "silent": ("#8A8AA8", s_silent),
     "blood": ("#3A1A1A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 0)), "locusts": ("#5A5A3A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 1)),
+    "captives": ("#5A4A5A", s_captives), "judges": ("#C8A07A", s_judges), "confed": ("#0B1A2E", s_confed),
     "hail": ("#14142A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 2)), "darkness": ("#05050F", lambda p, w, h, seed: s_plagues(p, w, h, seed, 3)),
 }

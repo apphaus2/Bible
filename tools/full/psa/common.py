@@ -58,6 +58,7 @@ ASAPH_STERN = F("adam", skin="#C98E66", shadow="#4A2A2A", hair="#8A847A", hl="#B
 KORAH = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#E8E2D6", band=True, light="#FFE680")
 KORAH_GRIEF = F("adam", skin="#C98E66", shadow="#3A2A4A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#E8E2D6", band=True, brow="sorrow", tear=True, light="#9AA8C8")
 HEMAN = F("adam", skin="#B98A6E", shadow="#2A2A4A", hair="#3A2A20", hl="#6A5A4E", beard=True, beard_color="#3A2A20", scarf="#E8E2D6", cord=True, brow="sorrow", tear=True, light="#8A98C8")
+ETHAN_GRIEF = F("adam", skin="#B98A6E", shadow="#3A2A4A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#E8E2D6", band=True, brow="sorrow", tear=True, light="#9AA8C8")
 ETHAN = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#E8E2D6", band=True, light="#FFD23F")
 LEVITE = F("adam", skin="#C47A5A", shadow="#5A3A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#F3EFE6", cord=True, light="#FFC14D")
 LEVITE_GRIEF = F("adam", skin="#B98A6E", shadow="#3A2A4A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#F3EFE6", cord=True, brow="sorrow", light="#9AA8C8")
@@ -72,7 +73,7 @@ FACES = {
     "SOLOMON": (SOLOMON, GOLDEN), "SOLOMON_WISE": (SOLOMON_WISE, GOLDEN),
     "MOSES": (MOSES_CALM, GOLDEN), "MOSES_GRIEF": (MOSES_GRIEF, COLD), "MOSES_STERN": (MOSES_STERN, RED),
     "ASAPH": (ASAPH, GOLDEN), "ASAPH_GRIEF": (ASAPH_GRIEF, COLD), "ASAPH_STERN": (ASAPH_STERN, RED),
-    "KORAH": (KORAH, GOLDEN), "KORAH_GRIEF": (KORAH_GRIEF, COLD), "HEMAN": (HEMAN, COLD), "ETHAN": (ETHAN, GOLDEN),
+    "KORAH": (KORAH, GOLDEN), "KORAH_GRIEF": (KORAH_GRIEF, COLD), "HEMAN": (HEMAN, COLD), "ETHAN": (ETHAN, GOLDEN), "ETHAN_GRIEF": (ETHAN_GRIEF, COLD),
     "LEVITE": (LEVITE, GOLDEN), "LEVITE_GRIEF": (LEVITE_GRIEF, COLD), "LEVITE_JOY": (LEVITE_JOY, GOLDEN), "EXILE": (EXILE, COLD), "BRIDE": (BRIDE, GOLDEN),
 }
 

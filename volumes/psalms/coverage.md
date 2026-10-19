@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1246 verses — 1246 full, 0 partial, 0 omitted.
+**So far:** 1439 verses — 1439 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Blessed Is the Man (Psalms 1–12)
 
@@ -55,5 +55,11 @@ Every verse is on the page in full.
 ## Chapter 9 · Whom Have I in Heaven (Psalms 73–78)
 
 165 verses: 165 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 10 · How Amiable Are Thy Tabernacles (Psalms 79–89)
+
+193 verses: 193 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
