@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1330 verses — 1330 full, 0 partial, 0 omitted.
+**So far:** 1364 verses — 1364 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Almond Rod (Jeremiah 1–3)
 
@@ -109,5 +109,11 @@ Every verse is on the page in full.
 ## Chapter 18 · The Hammer of the Whole Earth (Jeremiah 51)
 
 64 verses: 64 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 19 · The Fall of Jerusalem (Jeremiah 52)
+
+34 verses: 34 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

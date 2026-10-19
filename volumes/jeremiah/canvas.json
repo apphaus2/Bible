@@ -2046,6 +2046,62 @@
    "w": 760,
    "h": 1080,
    "title": "272 · Thus Shall Babylon Sink"
+  },
+  "JER-C19-00-Title.dc.html": {
+   "x": 0,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 19 · The Fall of Jerusalem"
+  },
+  "JER-C19-D-P01-TheyBuiltFortsAgai.dc.html": {
+   "x": 840,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "273 · They Built Forts against It"
+  },
+  "JER-C19-D-P02-RiblahInTheLandOfH.dc.html": {
+   "x": 1680,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "274 · Riblah in the Land of Hamath"
+  },
+  "JER-C19-D-P03-HeBurnedTheHouseOf.dc.html": {
+   "x": 2520,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "275 · He Burned the House of Jehovah"
+  },
+  "JER-C19-D-P04-TheBrassOfThemToBa.dc.html": {
+   "x": 3360,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "276 · The Brass of Them to Babylon"
+  },
+  "JER-C19-D-P05-TheBrassOfThemToBa.dc.html": {
+   "x": 0,
+   "y": 91400,
+   "w": 760,
+   "h": 1080,
+   "title": "277 · The Brass of Them to Babylon"
+  },
+  "JER-C19-D-P06-ThePeopleWhomNebuc.dc.html": {
+   "x": 840,
+   "y": 91400,
+   "w": 760,
+   "h": 1080,
+   "title": "278 · The People Whom Nebuchadrezzar Carried Away"
+  },
+  "JER-C19-D-P07-HeLiftedUpTheHeadO.dc.html": {
+   "x": 1680,
+   "y": 91400,
+   "w": 760,
+   "h": 1080,
+   "title": "279 · He Lifted Up the Head of Jehoiachin"
   }
  },
  "order": [
@@ -2339,7 +2395,15 @@
   "JER-C18-D-P10-MyPeopleGoYeOutOfT.dc.html",
   "JER-C18-D-P11-TheBroadWallsOfBab.dc.html",
   "JER-C18-D-P12-SeraiahTheSonOfNer.dc.html",
-  "JER-C18-D-P13-ThusShallBabylonSi.dc.html"
+  "JER-C18-D-P13-ThusShallBabylonSi.dc.html",
+  "JER-C19-00-Title.dc.html",
+  "JER-C19-D-P01-TheyBuiltFortsAgai.dc.html",
+  "JER-C19-D-P02-RiblahInTheLandOfH.dc.html",
+  "JER-C19-D-P03-HeBurnedTheHouseOf.dc.html",
+  "JER-C19-D-P04-TheBrassOfThemToBa.dc.html",
+  "JER-C19-D-P05-TheBrassOfThemToBa.dc.html",
+  "JER-C19-D-P06-ThePeopleWhomNebuc.dc.html",
+  "JER-C19-D-P07-HeLiftedUpTheHeadO.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2474,6 +2538,13 @@
    "text": "Chapter 18 · The Hammer of the Whole Earth (Jeremiah 51)",
    "x": 0,
    "y": 85800
+  },
+  "chapter19": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 19 · The Fall of Jerusalem (Jeremiah 52)",
+   "x": 0,
+   "y": 89900
   }
  },
  "designSystems": [],
