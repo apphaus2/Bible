@@ -814,6 +814,90 @@
    "w": 760,
    "h": 1080,
    "title": "104 · The Rulers of the Substance"
+  },
+  "1CH-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Thine Is the Kingdom"
+  },
+  "1CH-C11-D-P01-HearMeMyBrethren.dc.html": {
+   "x": 840,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Hear Me, My Brethren"
+  },
+  "1CH-C11-D-P02-KnowThouTheGodOfTh.dc.html": {
+   "x": 1680,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Know Thou the God of Thy Father"
+  },
+  "1CH-C11-D-P03-ThePattern.dc.html": {
+   "x": 2520,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · The Pattern"
+  },
+  "1CH-C11-D-P04-ThePattern.dc.html": {
+   "x": 3360,
+   "y": 37000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Pattern"
+  },
+  "1CH-C11-D-P05-BeStrongAndOfGoodC.dc.html": {
+   "x": 0,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Be Strong and of Good Courage"
+  },
+  "1CH-C11-E-P01-WhoThenOfferethWil.dc.html": {
+   "x": 840,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Who Then Offereth Willingly?"
+  },
+  "1CH-C11-E-P02-WhoThenOfferethWil.dc.html": {
+   "x": 1680,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Who Then Offereth Willingly?"
+  },
+  "1CH-C11-E-P03-ThineOJehovahIsThe.dc.html": {
+   "x": 2520,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Thine, O Jehovah, Is the Greatness"
+  },
+  "1CH-C11-E-P04-ThineOJehovahIsThe.dc.html": {
+   "x": 3360,
+   "y": 38200,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Thine, O Jehovah, Is the Greatness"
+  },
+  "1CH-C11-E-P05-KingTheSecondTime.dc.html": {
+   "x": 0,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · King the Second Time"
+  },
+  "1CH-C11-E-P06-FullOfDaysRichesAn.dc.html": {
+   "x": 840,
+   "y": 39400,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Full of Days, Riches, and Honor"
   }
  },
  "order": [
@@ -931,7 +1015,19 @@
   "1CH-C10-E-P01-MonthByMonth.dc.html",
   "1CH-C10-E-P02-MonthByMonth.dc.html",
   "1CH-C10-T-P01-OverTheTribesOfIsr.dc.html",
-  "1CH-C10-T-P02-TheRulersOfTheSubs.dc.html"
+  "1CH-C10-T-P02-TheRulersOfTheSubs.dc.html",
+  "1CH-C11-00-Title.dc.html",
+  "1CH-C11-D-P01-HearMeMyBrethren.dc.html",
+  "1CH-C11-D-P02-KnowThouTheGodOfTh.dc.html",
+  "1CH-C11-D-P03-ThePattern.dc.html",
+  "1CH-C11-D-P04-ThePattern.dc.html",
+  "1CH-C11-D-P05-BeStrongAndOfGoodC.dc.html",
+  "1CH-C11-E-P01-WhoThenOfferethWil.dc.html",
+  "1CH-C11-E-P02-WhoThenOfferethWil.dc.html",
+  "1CH-C11-E-P03-ThineOJehovahIsThe.dc.html",
+  "1CH-C11-E-P04-ThineOJehovahIsThe.dc.html",
+  "1CH-C11-E-P05-KingTheSecondTime.dc.html",
+  "1CH-C11-E-P06-FullOfDaysRichesAn.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1010,6 +1106,13 @@
    "text": "Chapter 10 · The Porters and the Captains (1 Chronicles 26–27)",
    "x": 0,
    "y": 33800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Thine Is the Kingdom (1 Chronicles 28–29)",
+   "x": 0,
+   "y": 36700
   }
  },
  "designSystems": [],

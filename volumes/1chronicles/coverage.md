@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 891 verses — 891 full, 0 partial, 0 omitted.
+**So far:** 942 verses — 942 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · From Adam (1 Chronicles 1–2)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · The Porters and the Captains (1 Chronicles 26–27)
 
 66 verses: 66 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · Thine Is the Kingdom (1 Chronicles 28–29)
+
+51 verses: 51 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

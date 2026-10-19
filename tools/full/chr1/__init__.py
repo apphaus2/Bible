@@ -42,5 +42,7 @@ META = {
      "blurb": "David old and full of days makes Solomon king; the Levites numbered and divided into courses, to stand every morning to thank and praise Jehovah, and likewise at even; the sons of Aaron divided by lot into four and twenty courses; and the sons of Asaph, Heman and Jeduthun set apart to prophesy with harps, lot by lot, twelve to each."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The Porters and the Captains", "range": "1 Chronicles 26–27", "bible_chapters": [26, 27],
      "blurb": "The courses of the doorkeepers, and the lots cast for every gate, east, north, south and west; the treasures of the house of God and of the dedicated things; the twelve captains, a course for every month of twenty and four thousand; the princes of the tribes; the rulers of the king's substance; and the king's counsellors."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Thine Is the Kingdom", "range": "1 Chronicles 28–29", "bible_chapters": [28, 29],
+     "blurb": "David stands up before the assembly — hear me, my brethren; Solomon chosen to sit upon the throne of the kingdom of Jehovah; the pattern of the house given by the Spirit; be strong and of good courage; the people offer willingly with a perfect heart; thine, O Jehovah, is the greatness, and of thine own have we given thee; Solomon made king the second time; and David died in a good old age, full of days, riches, and honor."},
   ],
 }

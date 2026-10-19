@@ -182,10 +182,15 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 1 Chronicles | 8 · The Threshing-floor of Ornan | 21–22 | title + 9 (pp. 79–87) | 49/49 verses full (21:14 words over the silent tents; the answer by fire; the stores for the house) | `volumes/1chronicles/` |
 | 1 Chronicles | 9 · The Courses | 23–25 | title + 9 (pp. 88–96) | 94/94 verses full (the Levites as a tally board; the twenty-four courses of priests and singers as boards of lots) | `volumes/1chronicles/` |
 | 1 Chronicles | 10 · The Porters and the Captains | 26–27 | title + 8 (pp. 97–104) | 66/66 verses full (the gates as a plan with their wards; the twelve captains as a calendar wheel) | `volumes/1chronicles/` |
+| 1 Chronicles | 11 · Thine Is the Kingdom | 28–29 | title + 11 (pp. 105–115) | 51/51 verses full (the pattern as 1 Kings' blueprints; David's death words only, over the crown laid down) | `volumes/1chronicles/` |
+| **1 Chronicles** | **complete: cover + 11 chapters** | **1–29** | **127 pages (115 numbered)** | **942 verses: all full** | `volumes/1chronicles/` |
 
-**Genesis through 2 Kings (twelve volumes) are complete; 1 Chronicles is in progress.** 1 Chronicles is `tools/full/chr1/` (a module
-name cannot start with a digit; eleven chapters planned in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts
-(`chr1.art.lineage`, `branch`) over roll cells (`chr1.common.cell`/`cells`/`roll`); David's story reuses 2 Samuel's cast and drawings. 2 Kings is `tools/full/kg2/` (13 chapters, plan and
+**Genesis through 1 Chronicles (thirteen volumes) are complete.** Next: 2 Chronicles. 1 Chronicles is `tools/full/chr1/` (a module
+name cannot start with a digit; eleven chapters, plan in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts
+(`chr1.art.lineage`, `branch`, whose second row of names is staggered so no line crosses a name) over roll cells
+(`chr1.common.cell`/`cells`/`roll`); David's story reuses 2 Samuel's cast and drawings (`sa2.common.over`/`D` for the reference
+panels, `chr1.art.K2` = `sa2.art`); the courses of 23–27 as boards of lots (`chr1.art.lot_grid`), tally boards (`tally`), a plan
+of the four gates (`porters_plan`) and a calendar wheel of the twelve captains (`month_wheel`). 2 Kings is `tools/full/kg2/` (13 chapters, plan and
 restraint notes in `kg2/__init__.py`): it reuses 1 Kings' faces and drawings (`kg2.common` copies `kg1.common`; `kg2.art` re-exports
 `kg1.art`), with Elisha (`kg2.art.elisha_fig`) and the exile maps (`assyria_map`, `exile_map`). `rolls.roll_pages(..., end=)` closes a
 chapter on a roll page. Lists of reigns are `reign()` roll cells. 1 Kings is `tools/full/kg1/` (14 chapters, plan and
@@ -735,6 +740,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (1 Chronicles in progress, then 2 Chronicles).
+- On through the Bible, book by book (2 Chronicles next).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.
