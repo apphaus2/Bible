@@ -1,0 +1,21 @@
+{
+ "id": "daniel",
+ "order": 27,
+ "name": "Daniel",
+ "kanji": "ダニエル書",
+ "thumb": "vol-daniel-",
+ "lede": "The twenty-seventh book of the Bible, in full: Daniel and his companions in the court of Babylon, the image of gold, silver, brass, iron and clay, the burning fiery furnace, the writing on the wall, the den of lions, and the visions of the four beasts, the seventy weeks and the time of the end, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "A Stone Cut Out Without Hands",
+   "range": "Daniel 1–2",
+   "blurb": "Jerusalem besieged and the vessels carried to Shinar; Daniel, Hananiah, Mishael and Azariah in the king's palace, renamed, who would not defile themselves with the king's dainties — prove thy servants ten days; then Nebuchadnezzar's dream that none could tell, the decree to slay the wise men, the secret revealed in a vision of the night, and the great image: head of gold, breast of silver, belly of brass, legs of iron, feet of iron and clay, and the stone that became a great mountain.",
+   "prefixes": [
+    "Main.dc.html",
+    "DAN-C01-"
+   ]
+  }
+ ]
+}

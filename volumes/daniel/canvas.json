@@ -1,0 +1,154 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T02:22:28Z"
+ },
+ "title": "Daniel — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "DAN-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · A Stone Cut Out Without Hands"
+  },
+  "DAN-C01-D-P01-NebuchadnezzarCame.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Nebuchadnezzar Came unto Jerusalem"
+  },
+  "DAN-C01-D-P02-TheKingSDainties.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The King's Dainties"
+  },
+  "DAN-C01-D-P03-ProveThyServantsTe.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Prove Thy Servants Ten Days"
+  },
+  "DAN-C01-D-P04-TenTimesBetter.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Ten Times Better"
+  },
+  "DAN-C01-E-P01-NebuchadnezzarDrea.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Nebuchadnezzar Dreamed Dreams"
+  },
+  "DAN-C01-E-P02-NebuchadnezzarDrea.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Nebuchadnezzar Dreamed Dreams"
+  },
+  "DAN-C01-E-P03-TheDecreeWentForth.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Decree Went Forth"
+  },
+  "DAN-C01-E-P04-AVisionOfTheNight.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · A Vision of the Night"
+  },
+  "DAN-C01-E-P05-ThereIsAGodInHeave.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · There Is a God in Heaven"
+  },
+  "DAN-C01-E-P06-AGreatImage.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · A Great Image"
+  },
+  "DAN-C01-E-P07-AGreatImage.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Great Image"
+  },
+  "DAN-C01-E-P08-ThouArtTheHeadOfGo.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Thou Art the Head of Gold"
+  },
+  "DAN-C01-E-P09-AKingdomWhichShall.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · A Kingdom Which Shall Never Be Destroyed"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "DAN-C01-00-Title.dc.html",
+  "DAN-C01-D-P01-NebuchadnezzarCame.dc.html",
+  "DAN-C01-D-P02-TheKingSDainties.dc.html",
+  "DAN-C01-D-P03-ProveThyServantsTe.dc.html",
+  "DAN-C01-D-P04-TenTimesBetter.dc.html",
+  "DAN-C01-E-P01-NebuchadnezzarDrea.dc.html",
+  "DAN-C01-E-P02-NebuchadnezzarDrea.dc.html",
+  "DAN-C01-E-P03-TheDecreeWentForth.dc.html",
+  "DAN-C01-E-P04-AVisionOfTheNight.dc.html",
+  "DAN-C01-E-P05-ThereIsAGodInHeave.dc.html",
+  "DAN-C01-E-P06-AGreatImage.dc.html",
+  "DAN-C01-E-P07-AGreatImage.dc.html",
+  "DAN-C01-E-P08-ThouArtTheHeadOfGo.dc.html",
+  "DAN-C01-E-P09-AKingdomWhichShall.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Daniel Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · A Stone Cut Out Without Hands (Daniel 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
