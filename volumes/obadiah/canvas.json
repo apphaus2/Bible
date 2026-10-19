@@ -1,0 +1,90 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T02:21:28Z"
+ },
+ "title": "Obadiah — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "OBA-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Clefts of the Rock"
+  },
+  "OBA-C01-D-P01-ThyNestAmongTheSta.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Thy Nest Among the Stars"
+  },
+  "OBA-C01-D-P02-ThyNestAmongTheSta.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Thy Nest Among the Stars"
+  },
+  "OBA-C01-D-P03-TheDayOfThyBrother.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Day of Thy Brother"
+  },
+  "OBA-C01-D-P04-TheDayOfJehovahIsN.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Day of Jehovah Is Near"
+  },
+  "OBA-C01-D-P05-TheKingdomShallBeJ.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Kingdom Shall Be Jehovah's"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "OBA-C01-00-Title.dc.html",
+  "OBA-C01-D-P01-ThyNestAmongTheSta.dc.html",
+  "OBA-C01-D-P02-ThyNestAmongTheSta.dc.html",
+  "OBA-C01-D-P03-TheDayOfThyBrother.dc.html",
+  "OBA-C01-D-P04-TheDayOfJehovahIsN.dc.html",
+  "OBA-C01-D-P05-TheKingdomShallBeJ.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Obadiah Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Clefts of the Rock (Obadiah 1)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
