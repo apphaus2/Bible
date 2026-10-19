@@ -294,3 +294,33 @@ def cleansing(p, w, h, seed):
         o.append(priest(p, x, y, fit(y, y - (b - h * 0.44) * 0.7) * 0.9, up=[(22, -158), (30, -190), (10, -214)])
                  + f'<rect x="{f(x - 6)}" y="{f(y - fit(y, y - (b - h * 0.44) * 0.7) * 0.9 * 236)}" width="22" height="14" fill="#8A6A3A" stroke="#0D0D0F" stroke-width="1.4"></rect>')
     return "".join(o)
+
+# ---- 2 Chronicles 30–32 -------------------------------------------------------------------------------------------------
+import ruth1 as R1
+
+POSTS_M = [("BEER-SHEBA", 0.42, 0.94), ("JERUSALEM", 0.44, 0.62), ("EPHRAIM", 0.42, 0.42), ("MANASSEH", 0.4, 0.28), ("ZEBULUN", 0.36, 0.14), ("ASHER", 0.24, 0.12), ("DAN", 0.5, 0.04)]
+def posts_map(w, h, scorn=False):
+    """The posts with the letters from Beer-sheba even to Dan (scorn=True: Ephraim, Manasseh and Zebulun laughing them to
+    scorn, a few of Asher, Manasseh and Zebulun coming to Jerusalem)."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.14)} -10 C {f(w * 0.16)} {f(h * 0.4)} {f(w * 0.12)} {f(h * 0.7)} {f(w * 0.1)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.66)} -10 C {f(w * 0.64)} {f(h * 0.3)} {f(w * 0.68)} {f(h * 0.5)} {f(w * 0.64)} {f(h * 0.62)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>')
+    pos = {n: (w * x, h * y) for n, x, y in POSTS_M}
+    for nm in ("BEER-SHEBA", "EPHRAIM", "DAN"): o.append(route([pos["JERUSALEM"], pos[nm]], color="#FFD23F", sw=2))
+    if scorn:
+        for nm in ("ASHER", "MANASSEH", "ZEBULUN"): o.append(route([pos[nm], (w * 0.46, h * 0.58)], color="#9CCB5E", sw=2))
+    for nm, x, y in POSTS_M:
+        c = "#D7261E" if scorn and nm in ("EPHRAIM",) else ("#FFD23F" if nm == "JERUSALEM" else CYAN)
+        o.append(node(w * x, h * y, nm, c, r=5, dy=-11, size=9))
+    o.append(label(w * 0.8, h * 0.9, "THE POSTS WITH THE LETTERS", "#FFD23F", 9))
+    return "".join(o)
+
+def heaps(p, w, h, seed):
+    """The heaps of the first-fruits and the tithes laid up in the court, heap upon heap, the king and the princes blessing."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), temple_front(w * 0.5, h * 0.56, w * 0.5, seed), ground(w, h, h * 0.56, "#C8B88A", dy=0)]
+    for i, c in enumerate(("#E8C88A", "#C8A060", "#D9A25A", "#E8D8A0")):
+        o.append(R1.heap(w * (0.2 + i * 0.2), h * 0.86, w * 0.16, h * 0.18, color=c))
+    s = fit(b, max(h * 0.42, b - 230))
+    o.append(king_fig(p, w * 0.08, b, s, up=[(22, -158), (40, -190), (50, -222)], cloth=REHO_C))
+    return "".join(o)

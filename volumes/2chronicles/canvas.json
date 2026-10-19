@@ -961,6 +961,69 @@
    "w": 760,
    "h": 1080,
    "title": "125 · The Song of Jehovah"
+  },
+  "2CH-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Passover of Hezekiah"
+  },
+  "2CH-C11-D-P01-TurnAgainUntoJehov.dc.html": {
+   "x": 840,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Turn Again unto Jehovah"
+  },
+  "2CH-C11-D-P02-TurnAgainUntoJehov.dc.html": {
+   "x": 1680,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Turn Again unto Jehovah"
+  },
+  "2CH-C11-D-P03-TheFeastOfUnleaven.dc.html": {
+   "x": 2520,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · The Feast of Unleavened Bread"
+  },
+  "2CH-C11-D-P04-TheGoodJehovahPard.dc.html": {
+   "x": 3360,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · The Good Jehovah Pardon Every One"
+  },
+  "2CH-C11-D-P05-NotTheLikeInJerusa.dc.html": {
+   "x": 0,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Not the Like in Jerusalem"
+  },
+  "2CH-C11-E-P01-ThePillarsBrokenIn.dc.html": {
+   "x": 840,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · The Pillars Broken in Pieces"
+  },
+  "2CH-C11-E-P02-Heaps.dc.html": {
+   "x": 1680,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Heaps"
+  },
+  "2CH-C11-R-P01-ChambersInTheHouse.dc.html": {
+   "x": 2520,
+   "y": 45400,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Chambers in the House of Jehovah"
   }
  },
  "order": [
@@ -1099,7 +1162,16 @@
   "2CH-C10-F-P02-ForAllIsrael.dc.html",
   "2CH-C10-F-P03-ForAllIsrael.dc.html",
   "2CH-C10-F-P04-TheSongOfJehovah.dc.html",
-  "2CH-C10-F-P05-TheSongOfJehovah.dc.html"
+  "2CH-C10-F-P05-TheSongOfJehovah.dc.html",
+  "2CH-C11-00-Title.dc.html",
+  "2CH-C11-D-P01-TurnAgainUntoJehov.dc.html",
+  "2CH-C11-D-P02-TurnAgainUntoJehov.dc.html",
+  "2CH-C11-D-P03-TheFeastOfUnleaven.dc.html",
+  "2CH-C11-D-P04-TheGoodJehovahPard.dc.html",
+  "2CH-C11-D-P05-NotTheLikeInJerusa.dc.html",
+  "2CH-C11-E-P01-ThePillarsBrokenIn.dc.html",
+  "2CH-C11-E-P02-Heaps.dc.html",
+  "2CH-C11-R-P01-ChambersInTheHouse.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1178,6 +1250,13 @@
    "text": "Chapter 10 · Ahaz and Hezekiah (2 Chronicles 28–29)",
    "x": 0,
    "y": 39800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Passover of Hezekiah (2 Chronicles 30–31)",
+   "x": 0,
+   "y": 43900
   }
  },
  "designSystems": [],

@@ -42,5 +42,7 @@ META = {
      "blurb": "Amaziah, right but not with a perfect heart: the hundred talents — Jehovah is able to give thee much more than this; the gods of Seir; the thistle and the cedar; then Uzziah who sought God and loved husbandry, his towers and engines; his heart lifted up, the censer in the temple, and the leprosy in his forehead; and Jotham, who ordered his ways before Jehovah."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Ahaz and Hezekiah", "range": "2 Chronicles 28–29", "bible_chapters": [28, 29],
      "blurb": "Ahaz who walked in the ways of the kings of Israel; Judah carried captive to Samaria, and Oded the prophet — send back the captives; the captives clothed and brought to Jericho, the city of palm-trees; the gods of Damascus and the doors shut; then Hezekiah opening the doors in the first month, the house cleansed, and the song of Jehovah with the trumpets."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "The Passover of Hezekiah", "range": "2 Chronicles 30–31", "bible_chapters": [30, 31],
+     "blurb": "Letters from Beer-sheba even to Dan — ye children of Israel, turn again unto Jehovah; laughed to scorn, yet some humbled themselves and came; the passover in the second month — the good Jehovah pardon every one that setteth his heart to seek God; great joy in Jerusalem, not the like since Solomon; and the heaps of the first-fruits and the tithes."},
   ],
 }
