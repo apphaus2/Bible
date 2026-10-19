@@ -357,7 +357,7 @@ def s_court(p, w, h, seed):
 
 def s_music(p, w, h, seed):
     """Sing praises unto Jehovah: Levites with harps and cymbals."""
-    return C1.singers(p, w, h, seed, n=6 if w > 500 else 3, top=0.56)
+    return C1.singers(p, w, h, seed, n=6 if w > 500 else 3, top=max(0.56, 0.92 - 210 / h))     # figures no taller than ~210 px
 
 def s_glory(p, w, h, seed):
     """Jehovah in his holy temple, his throne in heaven: light breaking through the clouds (God is never drawn)."""
@@ -757,10 +757,10 @@ def s_nest(p, w, h, seed):
     """Yea, the sparrow hath found her a house, and the swallow a nest for herself, where she may lay her young, even thine
     altars: the swallows' nest under the eaves of the house, the altar's fire below."""
     o = [sky(w, h, "#FFB04A", "#FFF0C8"), ground(w, h, h * 0.8, "#C8B88A", dy=0)]
-    o.append(f'<rect x="{f(w * 0.46)}" y="{f(h * 0.3)}" width="{f(w * 0.6)}" height="{f(h * 0.6)}" fill="#E8DCC0" stroke="#0D0D0F" stroke-width="2.4"></rect>')
-    o.append(f'<rect x="{f(w * 0.42)}" y="{f(h * 0.26)}" width="{f(w * 0.66)}" height="{f(h * 0.05)}" fill="#C8BC9C" stroke="#0D0D0F" stroke-width="2"></rect>')
-    o.append(nest(w * 0.6, h * 0.36, min(1.4, h / 260)))
-    o.append(small_bird(w * 0.3, h * 0.46, min(2.0, h / 200), color="#3A3A5A") + small_bird(w * 0.82, h * 0.42, min(1.4, h / 260), color="#6A4A2A", flip=True))
+    o.append(f'<rect x="{f(w * 0.46)}" y="{f(h * 0.54)}" width="{f(w * 0.6)}" height="{f(h * 0.4)}" fill="#E8DCC0" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    o.append(f'<rect x="{f(w * 0.42)}" y="{f(h * 0.5)}" width="{f(w * 0.66)}" height="{f(h * 0.05)}" fill="#C8BC9C" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(nest(w * 0.6, h * 0.6, min(1.4, h / 260)))
+    o.append(small_bird(w * 0.38, h * 0.62, min(2.0, h / 200), color="#3A3A5A") + small_bird(w * 0.82, h * 0.68, min(1.4, h / 260), color="#6A4A2A", flip=True))
     o.append(K1.horned_altar(w * 0.2, h * 0.94, min(1.0, h / 360), fire=True, seed=seed))
     return "".join(o)
 
