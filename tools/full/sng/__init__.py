@@ -23,5 +23,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "I Am a Rose of Sharon", "range": "Song of Solomon 1–2", "bible_chapters": [1, 2],
      "blurb": "The Song of songs, which is Solomon's: I am black, but comely, as the tents of Kedar; tell me, O thou whom my soul loveth, where thou feedest thy flock; I am a rose of Sharon, a lily of the valleys; his banner over me was love; the voice of my beloved, leaping upon the mountains — rise up, my love, my fair one, and come away, for, lo, the winter is past; the little foxes; my beloved is mine, and I am his."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "A Garden Shut Up", "range": "Song of Solomon 3–5", "bible_chapters": [3, 4, 5],
+     "blurb": "By night on my bed I sought him whom my soul loveth; who is this that cometh up from the wilderness like pillars of smoke? — the litter of Solomon and the crown of his espousals; behold, thou art fair, my love; come with me from Lebanon; a garden shut up, a spring shut up, a fountain sealed; awake, O north wind; I was asleep, but my heart waked; and my beloved is white and ruddy, the chiefest among ten thousand."},
   ],
 }

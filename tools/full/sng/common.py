@@ -64,7 +64,7 @@ ROSE = "radial-gradient(circle at 70% 30%, #FFE8EE 0 24px, #E87A9A 170px, #5A1A3
 LEAF = "radial-gradient(circle at 70% 30%, #F3F8E8 0 24px, #9CCB5E 170px, #1F4A34 420px)"
 
 # the bride: dark and comely, a crimson headscarf with a gold band
-_B = dict(skin="#8E5A3A", shadow="#4E2E1E", hair="#0D0D0F", scarf="#A82A4A", band=True)
+_B = dict(skin="#8E5A3A", shadow="#4E2E1E", hair="#0D0D0F", scarf="#4A1A3A", band=True)
 BRIDE = F("eve", light="#FFC14D", **_B)
 BRIDE_GLAD = F("eve", light="#FFE680", laugh=True, **_B)
 BRIDE_NIGHT = F("eve", **dict(_B, skin="#6A4A5A", shadow="#2E1E3E"), brow="sorrow", light="#CFE0FF")
