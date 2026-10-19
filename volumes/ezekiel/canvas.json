@@ -926,6 +926,118 @@
    "w": 760,
    "h": 1080,
    "title": "121 · The Philistines"
+  },
+  "EZK-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 Â· The Ship of Tyre"
+  },
+  "EZK-C10-D-P01-BeholdIAmAgainstTh.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Behold, I Am against Thee, O Tyre"
+  },
+  "EZK-C10-D-P02-NebuchadrezzarKing.dc.html": {
+   "x": 1680,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Nebuchadrezzar King of Babylon"
+  },
+  "EZK-C10-D-P03-NebuchadrezzarKing.dc.html": {
+   "x": 2520,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Nebuchadrezzar King of Babylon"
+  },
+  "EZK-C10-D-P04-ShallNotTheIslesSh.dc.html": {
+   "x": 3360,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Shall Not the Isles Shake?"
+  },
+  "EZK-C10-D-P05-ALamentationOverTy.dc.html": {
+   "x": 0,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · A Lamentation over Tyre"
+  },
+  "EZK-C10-D-P06-PerfectInBeauty.dc.html": {
+   "x": 840,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Perfect in Beauty"
+  },
+  "EZK-C10-D-P07-ThyTraffickers.dc.html": {
+   "x": 1680,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Thy Traffickers"
+  },
+  "EZK-C10-D-P08-ThyTraffickers.dc.html": {
+   "x": 2520,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Thy Traffickers"
+  },
+  "EZK-C10-D-P09-BrokenInTheHeartOf.dc.html": {
+   "x": 3360,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Broken in the Heart of the Seas"
+  },
+  "EZK-C10-D-P10-WhoIsThereLikeTyre.dc.html": {
+   "x": 0,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Who Is There like Tyre?"
+  },
+  "EZK-C10-D-P11-ThePrinceOfTyre.dc.html": {
+   "x": 840,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Prince of Tyre"
+  },
+  "EZK-C10-D-P12-TheKingOfTyre.dc.html": {
+   "x": 1680,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · The King of Tyre"
+  },
+  "EZK-C10-D-P13-TheKingOfTyre.dc.html": {
+   "x": 2520,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · The King of Tyre"
+  },
+  "EZK-C10-D-P14-SetThyFaceTowardSi.dc.html": {
+   "x": 3360,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Set Thy Face toward Sidon"
+  },
+  "EZK-C10-D-P15-TheyShallDwellSecu.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · They Shall Dwell Securely"
   }
  },
  "order": [
@@ -1059,7 +1171,23 @@
   "EZK-C09-D-P06-AgainstTheChildren.dc.html",
   "EZK-C09-D-P07-AgainstTheChildren.dc.html",
   "EZK-C09-D-P08-Edom.dc.html",
-  "EZK-C09-D-P09-ThePhilistines.dc.html"
+  "EZK-C09-D-P09-ThePhilistines.dc.html",
+  "EZK-C10-00-Title.dc.html",
+  "EZK-C10-D-P01-BeholdIAmAgainstTh.dc.html",
+  "EZK-C10-D-P02-NebuchadrezzarKing.dc.html",
+  "EZK-C10-D-P03-NebuchadrezzarKing.dc.html",
+  "EZK-C10-D-P04-ShallNotTheIslesSh.dc.html",
+  "EZK-C10-D-P05-ALamentationOverTy.dc.html",
+  "EZK-C10-D-P06-PerfectInBeauty.dc.html",
+  "EZK-C10-D-P07-ThyTraffickers.dc.html",
+  "EZK-C10-D-P08-ThyTraffickers.dc.html",
+  "EZK-C10-D-P09-BrokenInTheHeartOf.dc.html",
+  "EZK-C10-D-P10-WhoIsThereLikeTyre.dc.html",
+  "EZK-C10-D-P11-ThePrinceOfTyre.dc.html",
+  "EZK-C10-D-P12-TheKingOfTyre.dc.html",
+  "EZK-C10-D-P13-TheKingOfTyre.dc.html",
+  "EZK-C10-D-P14-SetThyFaceTowardSi.dc.html",
+  "EZK-C10-D-P15-TheyShallDwellSecu.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1131,6 +1259,13 @@
    "text": "Chapter 9 · The Desire of Thine Eyes (Ezekiel 24–25)",
    "x": 0,
    "y": 39300
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · The Ship of Tyre (Ezekiel 26–28)",
+   "x": 0,
+   "y": 42200
   }
  },
  "designSystems": [],
