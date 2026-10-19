@@ -520,6 +520,97 @@
    "w": 760,
    "h": 1080,
    "title": "66 · A Strong Tower"
+  },
+  "PRO-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The King's Heart"
+  },
+  "PRO-C07-S-P01-BetterIsThePoorTha.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P02-BetterIsThePoorTha.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P03-BetterIsThePoorTha.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P04-BetterIsThePoorTha.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P05-WineIsAMocker.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P06-WineIsAMocker.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P07-WineIsAMocker.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P08-WineIsAMocker.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P09-TheKingSHeartIsInT.dc.html": {
+   "x": 3360,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C07-S-P10-TheKingSHeartIsInT.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C07-S-P11-TheKingSHeartIsInT.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C07-S-P12-TheKingSHeartIsInT.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · The King's Heart Is in the Hand of Jehovah"
   }
  },
  "order": [
@@ -595,7 +686,20 @@
   "PRO-C06-S-P08-BetterIsADryMorsel.dc.html",
   "PRO-C06-S-P09-AStrongTower.dc.html",
   "PRO-C06-S-P10-AStrongTower.dc.html",
-  "PRO-C06-S-P11-AStrongTower.dc.html"
+  "PRO-C06-S-P11-AStrongTower.dc.html",
+  "PRO-C07-00-Title.dc.html",
+  "PRO-C07-S-P01-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P02-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P03-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P04-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P05-WineIsAMocker.dc.html",
+  "PRO-C07-S-P06-WineIsAMocker.dc.html",
+  "PRO-C07-S-P07-WineIsAMocker.dc.html",
+  "PRO-C07-S-P08-WineIsAMocker.dc.html",
+  "PRO-C07-S-P09-TheKingSHeartIsInT.dc.html",
+  "PRO-C07-S-P10-TheKingSHeartIsInT.dc.html",
+  "PRO-C07-S-P11-TheKingSHeartIsInT.dc.html",
+  "PRO-C07-S-P12-TheKingSHeartIsInT.dc.html"
  ],
  "notes": {
   "Main": {
@@ -646,6 +750,13 @@
    "text": "Chapter 6 · The Lot Is Cast into the Lap (Proverbs 16–18)",
    "x": 0,
    "y": 22200
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The King's Heart (Proverbs 19–21)",
+   "x": 0,
+   "y": 26300
   }
  },
  "designSystems": [],

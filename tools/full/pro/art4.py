@@ -22,6 +22,22 @@ def father_son(p, w, h, seed, gate=False):
              f'<rect x="{f(w * 0.48 + 38 * s)}" y="{f(b - 136 * s)}" width="{f(8 * s)}" height="{f(38 * s)}" rx="3" fill="#8A5A30" stroke="{INK}" stroke-width="1.4"></rect>')
     return "".join(o)
 
+def watercourses(p, w, h, seed):
+    """The king's heart is in the hand of Jehovah as the watercourses: channels of water turned across a green garden, the
+    king standing among them, light from above (God is never drawn)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A8FC8", "#E8F6FA"), EM.rays(w * 0.5, -h * 0.1, 11, 30, max(w, h), "#FFE680", 0.35, 5, 40, 140),
+         hills(w, h, h * 0.42, seed, "#6A9A4A", amp=10, step=80), ground(w, h, h * 0.5, "#7AAA4A", dy=0)]
+    k = max(w, h)
+    for x0, x1 in ((0.5, 0.1), (0.5, 0.36), (0.5, 0.64), (0.5, 0.9)):
+        d = f'M{f(w * x0)} {f(h * 0.5)} C {f(w * x0)} {f(h * 0.7)} {f(w * x1)} {f(h * 0.7)} {f(w * x1)} {f(h + 10)}'
+        o.append(f'<path d="{d}" fill="none" stroke="#0D0D0F" stroke-width="{f(k * 0.024)}"></path><path d="{d}" fill="none" stroke="#2C9DB8" stroke-width="{f(k * 0.018)}"></path>')
+    s = min(fit(b, h * 0.4), 1.1)
+    o.append(K1.sol_fig(p, w * 0.24, b, s))
+    for x in (0.74, 0.82):
+        o.append(EM.tree(w * x, h * 0.62, s * 0.7))
+    return "".join(o)
+
 def casting_lot(p, w, h, seed):
     """The lot is cast into the lap: men kneeling about a red cloth on the ground, white and black stones fallen on it, light
     from above (the whole disposing thereof is of Jehovah; God is never drawn)."""

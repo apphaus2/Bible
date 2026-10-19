@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 525 verses — 525 full, 0 partial, 0 omitted.
+**So far:** 615 verses — 615 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Beginning of Knowledge (Proverbs 1–3)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · The Lot Is Cast into the Lap (Proverbs 16–18)
 
 85 verses: 85 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · The King's Heart (Proverbs 19–21)
+
+90 verses: 90 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

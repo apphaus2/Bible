@@ -35,5 +35,7 @@ META = {
      "blurb": "Hope deferred maketh the heart sick, but when the desire cometh, it is a tree of life; the law of the wise is a fountain of life; every wise woman buildeth her house; where no oxen are, the crib is clean; a soft answer turneth away wrath; the eyes of Jehovah are in every place; better is a dinner of herbs, where love is."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Lot Is Cast into the Lap", "range": "Proverbs 16–18", "bible_chapters": [16, 17, 18],
      "blurb": "Commit thy works unto Jehovah; a just balance and scales are Jehovah's; pride goeth before destruction, and a haughty spirit before a fall; pleasant words are as a honeycomb; the lot is cast into the lap, but the whole disposing thereof is of Jehovah; better is a dry morsel, and quietness therewith; the name of Jehovah is a strong tower."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The King's Heart", "range": "Proverbs 19–21", "bible_chapters": [19, 20, 21],
+     "blurb": "Better is the poor that walketh in his integrity; the king's wrath is as the roaring of a lion; the contentions of a wife are a continual dropping; wine is a mocker, strong drink a brawler; diverse weights are an abomination to Jehovah; the spirit of man is the lamp of Jehovah; the king's heart is in the hand of Jehovah as the watercourses; the horse is prepared against the day of battle, but victory is of Jehovah."},
   ],
 }
