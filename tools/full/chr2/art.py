@@ -23,3 +23,19 @@ def queen_house(p, w, h, seed):
     s = fit(b, max(h * 0.4, b - 230))
     o.append(sol_fig(p, w * 0.3, b, s) + woman(p, w * 0.46, b, s * 0.92, "#F3EFE6") + woman(p, w * 0.56, b, s * 0.86, "#E8D8B0") + woman(p, w * 0.64, b, s * 0.86, "#E8D8B0"))
     return "".join(o)
+
+# ---- 2 Chronicles 10–12 -------------------------------------------------------------------------------------------------
+FORTS = [("BETH-LEHEM", 0.52, 0.36), ("ETAM", 0.56, 0.44), ("TEKOA", 0.62, 0.5), ("BETH-ZUR", 0.5, 0.56), ("SOCO", 0.36, 0.5), ("ADULLAM", 0.4, 0.58),
+         ("GATH", 0.24, 0.52), ("MARESHAH", 0.3, 0.64), ("ZIPH", 0.56, 0.74), ("ADORAIM", 0.44, 0.7), ("LACHISH", 0.26, 0.72), ("AZEKAH", 0.32, 0.42),
+         ("ZORAH", 0.36, 0.3), ("AIJALON", 0.4, 0.18), ("HEBRON", 0.5, 0.66)]
+def judah_forts(w, h):
+    """Rehoboam's cities for defence in Judah and Benjamin as a technical map, Jerusalem marked."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.1)} -10 C {f(w * 0.12)} {f(h * 0.4)} {f(w * 0.08)} {f(h * 0.7)} {f(w * 0.06)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.84)} -10 C {f(w * 0.82)} {f(h * 0.3)} {f(w * 0.86)} {f(h * 0.5)} {f(w * 0.8)} {f(h * 0.62)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>'
+             f'<ellipse cx="{f(w * 0.8)}" cy="{f(h * 0.78)}" rx="{f(w * 0.03)}" ry="{f(h * 0.16)}" fill="#2C9DB8"></ellipse>')
+    for nm, x, y in FORTS:
+        o.append(f'<rect x="{f(w * x - 6)}" y="{f(h * y - 6)}" width="12" height="12" fill="#FFD23F" fill-opacity="0.3" stroke="#FFD23F" stroke-width="1.6"></rect>'
+                 + label(w * x, h * y - 10, nm, "#FFD23F", 8))
+    o.append(node(w * 0.56, h * 0.26, "JERUSALEM", RED_C, r=6, dy=-12, size=10))
+    return "".join(o)

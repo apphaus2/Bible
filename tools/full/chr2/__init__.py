@@ -28,5 +28,7 @@ META = {
      "blurb": "The ark brought into the oracle under the wings of the cherubim; the trumpeters and singers as one — for he is good, for his lovingkindness endureth for ever — and the house filled with a cloud; Solomon's prayer from the brazen scaffold; the fire came down from heaven; and Jehovah's answer by night: if my people, who are called by my name, shall humble themselves, and pray."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Queen of Sheba", "range": "2 Chronicles 8–9", "bible_chapters": [8, 9],
      "blurb": "Tadmor in the wilderness and the store-cities; Pharaoh's daughter brought up to her own house, for the places are holy whereunto the ark hath come; the ships of Ophir; then the queen of Sheba with hard questions — the half of the greatness of thy wisdom was not told me; the throne of ivory and its twelve lions; and Solomon slept with his fathers."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Rehoboam", "range": "2 Chronicles 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "Rehoboam at Shechem: the counsel of the old men and of the young — my little finger is thicker than my father's loins; whips and scorpions; every man to your tents, O Israel; ye shall not fight against your brethren; the cities for defence and the Levites who came to Judah; Shishak king of Egypt — Jehovah is righteous; and shields of brass for the shields of gold."},
   ],
 }
