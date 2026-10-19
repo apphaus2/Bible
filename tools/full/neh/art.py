@@ -212,20 +212,20 @@ WALL = [("SHEEP GATE", 0.19, 0.22, "g", -9, 4, "end"),
         ("FISH GATE", 0.1, 0.58, "g", 9, 4, "start"),
         ("OLD GATE", 0.14, 0.74, "g", 9, 4, "start"),
         ("GATE OF EPHRAIM", 0.23, 0.84, "g", 0, 17, "middle"),
-        ("BROAD WALL", 0.35, 0.87, "w", 0, 17, "middle"),
-        ("TOWER OF THE FURNACES", 0.48, 0.87, "t", 0, 17, "middle"),
+        ("BROAD WALL", 0.34, 0.87, "w", 0, 17, "middle"),
+        ("TOWER OF THE FURNACES", 0.48, 0.87, "t", -4, -10, "end"),
         ("VALLEY GATE", 0.62, 0.82, "g", 0, 17, "middle"),
-        ("DUNG GATE", 0.89, 0.6, "g", 0, 17, "middle"),
+        ("DUNG GATE", 0.89, 0.6, "g", 9, 4, "start"),
         ("FOUNTAIN GATE", 0.85, 0.36, "g", 9, 4, "start"),
-        ("POOL OF SHELAH", 0.79, 0.28, "x", 0, -9, "middle"),
+        ("POOL OF SHELAH", 0.79, 0.28, "x", 6, -7, "start"),
         ("SEPULCHRES OF DAVID", 0.7, 0.25, "x", 0, 16, "middle"),
         ("THE ARMORY", 0.61, 0.23, "x", 0, -9, "middle"),
         ("HOUSE OF ELIASHIB", 0.53, 0.22, "x", 0, 16, "middle"),
         ("WATER GATE", 0.46, 0.14, "g", 0, -10, "middle"),
-        ("TOWER THAT STANDETH OUT", 0.41, 0.16, "x", 0, 17, "middle"),
+        ("TOWER THAT STANDETH OUT", 0.41, 0.16, "x", 4, 17, "start"),
         ("HORSE GATE", 0.35, 0.15, "g", 0, -10, "middle"),
         ("EAST GATE", 0.3, 0.17, "g", 0, 17, "middle"),
-        ("GATE OF HAMMIPHKAD", 0.245, 0.2, "g", 0, -10, "middle")]
+        ("GATE OF HAMMIPHKAD", 0.245, 0.2, "g", -2, -10, "end")]
 EXTRA = {"JACKAL'S WELL": (0.78, 0.92), "KING'S POOL": (0.95, 0.24), "STAIRS OF THE CITY OF DAVID": (0.76, 0.34), "GATE OF THE GUARD": (0.26, 0.3)}
 
 def wall_plan(w, h, lit=(), night=False, companies=False, title=""):
@@ -238,7 +238,7 @@ def wall_plan(w, h, lit=(), night=False, companies=False, title=""):
     o.append(f'<path d="M-10 {f(h * 0.05)} C {f(w * 0.3)} {f(h * 0.02)} {f(w * 0.6)} {f(h * 0.08)} {f(w + 10)} {f(h * 0.06)}" stroke="#2C7DA8" stroke-width="3" fill="none"></path>'
              + label(w * 0.14, h * 0.04 + 12, "THE BROOK", "#2C7DA8", 8))
     o.append(f'<path d="M{f(w * 0.7)} {f(h + 10)} C {f(w * 0.84)} {f(h * 0.96)} {f(w * 0.98)} {f(h * 0.84)} {f(w + 10)} {f(h * 0.7)}" stroke="#4A7A9A" stroke-width="2" fill="none" stroke-dasharray="3 4"></path>')
-    tx0, ty0 = w * 0.26, h * 0.3                          # the house of God
+    tx0, ty0 = w * 0.3, h * 0.3                          # the house of God
     o.append(f'<rect x="{f(tx0)}" y="{f(ty0)}" width="{f(w * 0.16)}" height="{f(h * 0.18)}" fill="#FFD23F" fill-opacity="0.08" stroke="#4A7A9A" stroke-width="1.6"></rect>'
              + label(tx0 + w * 0.08, ty0 + h * 0.1, "THE HOUSE OF GOD", "#8FD0E2", 8))
     o.append(label(w * 0.72, h * 0.5, "THE CITY OF DAVID", "#4A7A9A", 9) + label(w * 0.42, h * 0.58, "JERUSALEM", "#4A7A9A", 12))
@@ -317,28 +317,130 @@ SWORD = '<path d="M14 -110 L 22 -40" stroke="#C8C2D6" stroke-width="4"></path><p
 
 def builders(p, w, h, seed, dusk=False, trumpet=True, top=0.56):
     """The builders upon the wall: every one with one of his hands wrought in the work and with the other held his weapon,
-    his sword girded by his side; he that sounded the trumpet by Nehemiah."""
+    his sword girded by his side; he that sounded the trumpet by Nehemiah. The seed picks one of three groupings, and some
+    carry burdens (a basket on the head) up onto the wall."""
     wt = h * top
+    r = random.Random(seed)
     o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A3A6A" if dusk else "#8FD0E2", "#FFB04A" if dusk else "#F3E8C8")]
     if dusk: o.append(sun(w * 0.82, h * 0.3, 22))
     o.append(hills(w, h, h * 0.44, seed, "#7A5A5A" if dusk else "#A8946A", amp=10, step=90))
-    o.append(J.city_hill(w * 0.86, h * 0.5, w * 0.2, h * 0.12, seed))
+    o.append(J.city_hill(w * (0.86 if trumpet else 0.6), h * 0.5, w * 0.2, h * 0.12, seed))
     o.append(stone_wall(-10, w + 10, wt, h + 10, seed))
-    for i, x in enumerate((0.06, 0.12, 0.42, 0.48, 0.54)):        # blocks waiting to be laid
+    lay = [((0.2, 0.34, 0.62), 0.27, (0.06, 0.48)), ((0.1, 0.44, 0.56), 0.3, (0.2, 0.66)), ((0.16, 0.28, 0.5), 0.4, (0.06, 0.62))][seed % 3]
+    if not trumpet: lay = (lay[0] + (0.78,), lay[1], lay[2] + (0.9,))
+    for i, x in enumerate(lay[2]):                               # blocks waiting to be laid
         o.append(block(w * x, wt, w * 0.05, h * 0.05 * (1 + i % 2)))
-    s = fit(wt, max(h * 0.1, wt - 200))
+    s = fit(wt, max(h * 0.08, wt - 200))
     lift = [(-22, -158), (-34, -190), (-30, -222)]
-    for i, (x, c) in enumerate(((0.2, WAR[0]), (0.34, WAR[3]), (0.62, WAR[1]))):
+    cols = list(WAR); r.shuffle(cols)
+    for i, x in enumerate(lay[0]):
+        c = cols[i % 4]
+        if i == 1 and seed % 2:                                 # a bearer of burdens, his weapon in the other hand
+            o.append(mk.person(p, round(w * x), round(wt), round(s * 0.97, 3), body=SKIN, cloth=c, kind="Tunic", sw=3, up=[(-22, -158), (-26, -190), (-14, -214)],
+                               extra=E4.SPEAR + SWORD) + E4.basket(w * x, wt - 206 * s, s * 1.5))
+            continue
         o.append(mk.person(p, round(w * x), round(wt), round(s, 3), body=SKIN, cloth=c, kind="Tunic", sw=3, up=lift, extra=E4.SPEAR + SWORD + A.headcloth(c)))
         hx, hy = w * x - 30 * s, wt - 222 * s
         o.append(f'<rect x="{f(hx - 16 * s)}" y="{f(hy - 22 * s)}" width="{f(32 * s)}" height="{f(20 * s)}" fill="{STONE}" stroke="#0D0D0F" stroke-width="1.6"></rect>')
-    o.append(mk.person(p, round(w * 0.27), round(wt), round(s * 0.96, 3), body=SKIN, cloth="#4A5A3A", kind="Tunic", sw=3, extra=E4.SHIELD + SWORD + A.headcloth("#4A5A3A")))
+    o.append(mk.person(p, round(w * lay[1]), round(wt), round(s * 0.96, 3), body=SKIN, cloth="#4A5A3A", kind="Tunic", sw=3, extra=E4.SHIELD + SWORD + A.headcloth("#4A5A3A")))
     if trumpet:
         o.append(neh_fig(p, w * 0.76, wt, s, flip=True))
         o.append(J.trumpeter(p, w * 0.92, wt, s * 0.96, flip=True))
-    else:
-        o.append(mk.person(p, round(w * 0.8), round(wt), round(s, 3), body=SKIN, cloth=WAR[2], kind="Tunic", sw=3, flip=True, up=[(22, -158), (34, -190), (30, -222)], extra=E4.SPEAR + SWORD))
     return "".join(o)
 
 def cover_art(p, w, h, seed):
     return builders(p, w, h, seed, dusk=True, top=0.72)
+
+def gate_build(p, w, h, seed, priests=False):
+    """A gate rebuilt: the two towers of new stone, the beams laid, one door set up and the other raised by men with ropes,
+    the bolts and bars at its foot (priests=True: the priests in white at the work)."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.5, seed, "#A8946A", amp=10, step=90),
+         stone_wall(-10, w * 0.26, h * 0.42, h * 0.8, seed), stone_wall(w * 0.74, w + 10, h * 0.42, h * 0.8, seed + 1),
+         stone_wall(w * 0.3, w * 0.4, h * 0.18, h * 0.8, seed + 2, course=h * 0.05), stone_wall(w * 0.6, w * 0.7, h * 0.18, h * 0.8, seed + 3, course=h * 0.05),
+         f'<rect x="{f(w * 0.28)}" y="{f(h * 0.15)}" width="{f(w * 0.44)}" height="{f(h * 0.05)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<rect x="{f(w * 0.4)}" y="{f(h * 0.2)}" width="{f(w * 0.2)}" height="{f(h * 0.6)}" fill="#3A2A1E" stroke="#0D0D0F" stroke-width="2"></rect>',
+         f'<rect x="{f(w * 0.4)}" y="{f(h * 0.22)}" width="{f(w * 0.1)}" height="{f(h * 0.58)}" fill="#B5793A" stroke="#0D0D0F" stroke-width="2.2"></rect>'
+         + "".join(f'<path d="M{f(w * 0.4)} {f(h * (0.3 + k * 0.15))} L {f(w * 0.5)} {f(h * (0.3 + k * 0.15))}" stroke="#5A3A1E" stroke-width="3"></path>' for k in range(4)),
+         f'<g transform="rotate(-24 {f(w * 0.6)} {f(h * 0.8)})"><rect x="{f(w * 0.5)}" y="{f(h * 0.22)}" width="{f(w * 0.1)}" height="{f(h * 0.58)}" fill="#C8894A" stroke="#0D0D0F" stroke-width="2.2"></rect>'
+         + "".join(f'<path d="M{f(w * 0.5)} {f(h * (0.3 + k * 0.15))} L {f(w * 0.6)} {f(h * (0.3 + k * 0.15))}" stroke="#5A3A1E" stroke-width="3"></path>' for k in range(4)) + '</g>',
+         ground(w, h, h * 0.8, "#C8B88A", dy=0)]
+    o.append(f'<path d="M{f(w * 0.52)} {f(h * 0.3)} L {f(w * 0.86)} {f(h * 0.62)}" stroke="#8A6A3A" stroke-width="2"></path>')
+    o.append(f'<rect x="{f(w * 0.12)}" y="{f(b - h * 0.04)}" width="{f(w * 0.16)}" height="{f(h * 0.03)}" fill="#5A5A62" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+             f'<rect x="{f(w * 0.16)}" y="{f(b - h * 0.08)}" width="{f(w * 0.1)}" height="{f(h * 0.03)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    s = fit(b, max(h * 0.44, b - 220))
+    pull = [(22, -158), (40, -186), (56, -206)]
+    for i in range(2):
+        x = w * (0.72 + i * 0.08)
+        o.append(K1.priest(p, x, b, s, flip=True, up=pull) if priests else man(p, x, b, s, WAR[i], flip=True, up=pull))
+    for i in range(2):
+        x = w * (0.08 + i * 0.1)
+        o.append(K1.priest(p, x, b, s * 0.96) if priests else man(p, x, b, s * 0.96, WAR[2 + i]))
+    return "".join(o)
+
+def daughters(p, w, h, seed):
+    """Shallum the ruler, he and his daughters at the work: he lifts a stone onto the wall, they bring baskets on their heads."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.4, seed, "#A8946A", amp=10, step=90),
+         stone_wall(w * 0.6, w + 10, h * 0.42, h * 0.84, seed), block(w * 0.7, h * 0.42, w * 0.06, h * 0.06), ground(w, h, h * 0.84, "#C8B88A", dy=0)]
+    s = fit(b, max(h * 0.3, b - 220))
+    x = w * 0.5
+    o.append(mk.person(p, round(x), round(b), round(s, 3), body=SKIN, cloth="#3A4A6A", kind="Robe", sw=3, up=[(22, -158), (36, -190), (34, -222)],
+                       extra=A.headcloth("#3A4A6A") + A.BLACK_BEARD)
+             + f'<rect x="{f(x + 34 * s - 18 * s)}" y="{f(b - 222 * s - 24 * s)}" width="{f(36 * s)}" height="{f(22 * s)}" fill="{STONE}" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    for i, c in enumerate(("#C2456A", "#2E6B8A", "#7A3BA8")):
+        xx = w * (0.1 + i * 0.12); k = s * (0.92 - i * 0.03)
+        o.append(woman(p, xx, b - (i % 2) * 4, k, c, up=[(-22, -158), (-26, -190), (-14, -206)]) + E4.basket(xx, b - (i % 2) * 4 - 200 * k, k * 1.5))
+    return "".join(o)
+
+FOES = [("SAMARIA", 0.5, 0.12, "SANBALLAT"), ("AMMON", 0.88, 0.5, "TOBIAH · THE AMMONITES"), ("ARABIA", 0.5, 0.9, "THE ARABIANS"), ("ASHDOD", 0.12, 0.5, "THE ASHDODITES")]
+def foes_map(w, h):
+    """They conspired all of them together to come and fight against Jerusalem: the adversaries on every side as a map."""
+    o = [grid_bg(w, h)]
+    cx, cy = w * 0.5, h * 0.5
+    o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(min(w, h) * 0.12)}" fill="none" stroke="{GOLD}" stroke-width="2.4" stroke-dasharray="8 4"></circle>'
+             + node(cx, cy, "JERUSALEM", GOLD, r=7, dy=-14, size=11))
+    for nm, x, y, who in FOES:
+        X, Y = w * x, h * y
+        dx, dy = cx - X, cy - Y; L = math.hypot(dx, dy); k = 1 - min(w, h) * 0.15 / L
+        o.append(route([(X, Y), (X + dx * k, Y + dy * k)], color=RED_C, sw=3, dash="9 5"))
+        o.append(node(X, Y, nm, "#FF8A6A", r=5, dy=-11, size=9) + label(X, Y + 17, who, "#FF8A6A", 8))
+    return "".join(o)
+
+def watch_night(p, w, h, seed, water=False):
+    """A watch set day and night: men on the wall with spears and a torch under the stars (water=True: going down to the
+    water every one with his weapon, the wall behind them)."""
+    b = h * 0.94; wt = h * (0.86 if water else 0.66)
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#0B0B2A", "#2A2A5A"), mk.stars(60, w, h * 0.5, seed)]
+    if water:
+        o.append(stone_wall(w * 0.68, w + 10, h * 0.3, h * 0.86, seed, color="#7A7A8A") + ground(w, h, h * 0.86, "#2A2438", dy=0)
+                 + f'<ellipse cx="{f(w * 0.14)}" cy="{f(h * 0.92)}" rx="{f(w * 0.12)}" ry="{f(h * 0.04)}" fill="#2C5A7A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    else:
+        o.append(stone_wall(-10, w + 10, wt, h + 10, seed, color="#7A7A8A"))
+    s = fit(wt, max(h * 0.24, wt - 200))
+    for i in range(4):
+        x = w * ((0.26 + i * 0.1) if water else (0.14 + i * 0.22))
+        o.append(warrior(p, x, wt - (i % 2) * 3 * water, s * (0.9 - 0.03 * i * water if water else 1), ("#3A3450", "#4A3A3A", "#3A4A4A", "#4A4A5A")[i], flip=water))
+    if not water:
+        tx, ty = w * 0.46, wt - 150 * s
+        o.append(f'<path d="M{f(tx)} {f(wt)} L {f(tx)} {f(ty)}" stroke="#3A2214" stroke-width="{f(5 * s)}"></path>' + E.flame(tx, ty, 26 * s, 60 * s, 0.1)
+                 + f'<circle cx="{f(tx)}" cy="{f(ty - 20 * s)}" r="{f(80 * s)}" fill="#FFC14D" opacity="0.15"></circle>')
+    return "".join(o)
+
+def families_armed(p, w, h, seed):
+    """In the lowest parts of the space behind the wall, in the open places, the people set after their families with their
+    swords, their spears, and their bows."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8A7A8A", "#E8C8A0"), stone_wall(-10, w + 10, h * 0.2, h * 0.62, seed), ground(w, h, h * 0.62, "#B8A07A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 220))
+    for i in range(7):
+        x = w * (0.06 + i * 0.14)
+        if i % 3 == 2:
+            o.append(woman(p, x, b, s * 0.9, ("#C2456A", "#2E6B8A")[i % 2]) + mk.person(p, round(x + 26 * s), round(b), round(s * 0.55, 3), body=SKIN, cloth="#E8D8B0", kind="Tunic", sw=3))
+        else:
+            o.append(warrior(p, x, b - (i % 2) * 4, s, WAR[i % 4]) + (SWORD if False else ""))
+            if i % 2:
+                bx, by = x + 26 * s, b - 130 * s
+                o.append(f'<path d="M{f(bx)} {f(by - 50 * s)} Q {f(bx + 24 * s)} {f(by)} {f(bx)} {f(by + 50 * s)}" fill="none" stroke="#5A3A1E" stroke-width="{f(4 * s)}"></path>'
+                         f'<path d="M{f(bx)} {f(by - 50 * s)} L {f(bx)} {f(by + 50 * s)}" stroke="#E8E2D6" stroke-width="1.4"></path>')
+    return "".join(o)

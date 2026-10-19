@@ -77,3 +77,39 @@ PEOPLE = F("adam", skin="#B98A6E", shadow="#3A2A3A", hair="#2A1A10", hl="#4A3A2E
 MOTHER = F("eve", skin="#C98E66", shadow="#3A2A3A", hair="#2A1A10", scarf="#4A3A5A", brow="sorrow", tear=True, light="#9AA8C8")
 JUDAH_MAN = F("adam", skin="#C47A5A", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#4A4A3A", brow="sorrow", sweat=True, light="#FFC14D")
 NOBLE = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#3A2A1A", hl="#5A4A3E", beard=True, beard_color="#3A2A1A", scarf="#6A3A5A", band=True, light="#FFC14D")
+
+def _rng(refs_list):
+    a = refs_list[0].split("-")[0]
+    last = refs_list[-1].split("-")[-1]
+    if ":" not in last: last = refs_list[-1].split(":")[0] + ":" + last
+    if a == last: return a
+    return f"{a}–{last.split(':')[1]}" if a.split(":")[0] == last.split(":")[0] else f"{a}–{last}"
+
+def plan_pages(pages, prefix, start, tag="", stamp=None, end=""):
+    """Pages of a list told along a drawing: each page is one picture panel on top (art(w, h), ph px tall) over roll cells
+    for the verses, every word. pages: [(head, art, ph, [(name, refs, accent), ...])]; returns [(file, board title, fn)]
+    like discourse.pack. The cells take the largest type size (up to 16px) at which they fit under the picture."""
+    import re, mk
+    from fx import page, new, vref
+    from genesis.ch02 import grid
+    from genesis.ch03 import clan
+    from rolls import need
+    out = []
+    for k, (head, art, ph, items) in enumerate(pages):
+        cells = [(nm, sp(refs), label(refs), acc) for nm, refs, acc in items]
+        e = end if k == len(pages) - 1 else ""
+        room = 1022 - ph - 12 * len(cells) - (64 if e else 0)
+        s = 16.0
+        while s > 10 and sum(need(t, s) for _, t, _, _ in cells) > room: s -= 0.5
+        hs = [need(t, s) for _, t, _, _ in cells]
+        ph = max(ph, min(int(ph * 1.6), 1022 - 12 * len(cells) - (64 if e else 0) - int(sum(hs))))   # spare room goes to the picture
+        if e: hs[-1] += 64
+        fr = f"{ph}px " + " ".join(f"{x:.0f}fr" for x in hs)
+        over = (mk.stamp(stamp, "right: 12px; top: 10px") if stamp and k == 0 else "") + (vref(tag, "right: 8px; bottom: 7px") if tag else "")
+        pan = new("#0B1A2E", 702, ph - 6, art(702, ph - 6), over)
+        body = grid([pan] + [clan(nm, t, ref, c, size=s) for nm, t, ref, c in cells], fr, ncol=1) + e
+        rng = _rng([refs for _, refs, _ in items])
+        title = f"Nehemiah {rng} — {head}"
+        slug = re.sub(r"[^A-Za-z]", "", head.title())[:18]
+        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {head}", (lambda title=title, body=body, n=start + k: page(title, "minmax(0, 1fr)", body, n))))
+    return out
