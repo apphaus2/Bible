@@ -62,5 +62,7 @@ META = {
      "blurb": "The word concerning the nations: Egypt at Carchemish — prepare ye the buckler and shield; Egypt riseth up like the Nile, a very fair heifer, and destruction out of the north is come; fear not, O Jacob my servant; the Philistines and the waters out of the north — O thou sword of Jehovah, how long ere thou be quiet?; and Moab, settled on his lees: fear, and the pit, and the snare."},
     {"module": "ch17", "dir": "chapter-17", "num": "17", "name": "Babylon Is Taken", "range": "Jeremiah 49–50", "bible_chapters": [49, 50],
      "blurb": "The burdens of Ammon, of Edom — thou that dwellest in the clefts of the rock — of Damascus, of Kedar and Hazor, and of Elam; then Babylon is taken, Bel is put to shame: the children of Israel and Judah go on their way weeping to seek Zion; flee out of the midst of Babylon; how is the hammer of the whole earth cut asunder and broken!; their Redeemer is strong; a sword upon the Chaldeans."},
+    {"module": "ch18", "dir": "chapter-18", "num": "18", "name": "The Hammer of the Whole Earth", "range": "Jeremiah 51", "bible_chapters": [51],
+     "blurb": "A destroying wind against Babylon; Babylon hath been a golden cup in Jehovah's hand; thou that dwellest upon many waters; thou art my battle-axe and weapons of war; O destroying mountain; the kingdoms of Ararat, Minni and Ashkenaz; how is Sheshach taken!; my people, go ye out of the midst of her; and Seraiah's book bound to a stone and cast into the Euphrates — thus shall Babylon sink, and shall not rise again."},
   ],
 }

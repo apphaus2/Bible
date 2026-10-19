@@ -1948,6 +1948,104 @@
    "w": 760,
    "h": 1080,
    "title": "259 · A People Cometh from the North"
+  },
+  "JER-C18-00-Title.dc.html": {
+   "x": 0,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 18 · The Hammer of the Whole Earth"
+  },
+  "JER-C18-D-P01-ADestroyingWind.dc.html": {
+   "x": 840,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "260 · A Destroying Wind"
+  },
+  "JER-C18-D-P02-AGoldenCupInJehova.dc.html": {
+   "x": 1680,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "261 · A Golden Cup in Jehovah's Hand"
+  },
+  "JER-C18-D-P03-ThouThatDwellestUp.dc.html": {
+   "x": 2520,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "262 · Thou That Dwellest upon Many Waters"
+  },
+  "JER-C18-D-P04-ThouThatDwellestUp.dc.html": {
+   "x": 3360,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "263 · Thou That Dwellest upon Many Waters"
+  },
+  "JER-C18-D-P05-ThouArtMyBattleAxe.dc.html": {
+   "x": 0,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "264 · Thou Art My Battle-Axe"
+  },
+  "JER-C18-D-P06-ODestroyingMountai.dc.html": {
+   "x": 840,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "265 · O Destroying Mountain"
+  },
+  "JER-C18-D-P07-OnePostShallRunToM.dc.html": {
+   "x": 1680,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "266 · One Post Shall Run to Meet Another"
+  },
+  "JER-C18-D-P08-HeHathSwallowedMeU.dc.html": {
+   "x": 2520,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "267 · He Hath Swallowed Me Up"
+  },
+  "JER-C18-D-P09-MyPeopleGoYeOutOfT.dc.html": {
+   "x": 3360,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "268 · My People, Go Ye Out of the Midst of Her"
+  },
+  "JER-C18-D-P10-MyPeopleGoYeOutOfT.dc.html": {
+   "x": 0,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "269 · My People, Go Ye Out of the Midst of Her"
+  },
+  "JER-C18-D-P11-TheBroadWallsOfBab.dc.html": {
+   "x": 840,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "270 · The Broad Walls of Babylon"
+  },
+  "JER-C18-D-P12-SeraiahTheSonOfNer.dc.html": {
+   "x": 1680,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "271 · Seraiah the Son of Neriah"
+  },
+  "JER-C18-D-P13-ThusShallBabylonSi.dc.html": {
+   "x": 2520,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "272 · Thus Shall Babylon Sink"
   }
  },
  "order": [
@@ -2227,7 +2325,21 @@
   "JER-C17-D-P14-TheHammerOfTheWhol.dc.html",
   "JER-C17-D-P15-ASwordUponTheChald.dc.html",
   "JER-C17-D-P16-APeopleComethFromT.dc.html",
-  "JER-C17-D-P17-APeopleComethFromT.dc.html"
+  "JER-C17-D-P17-APeopleComethFromT.dc.html",
+  "JER-C18-00-Title.dc.html",
+  "JER-C18-D-P01-ADestroyingWind.dc.html",
+  "JER-C18-D-P02-AGoldenCupInJehova.dc.html",
+  "JER-C18-D-P03-ThouThatDwellestUp.dc.html",
+  "JER-C18-D-P04-ThouThatDwellestUp.dc.html",
+  "JER-C18-D-P05-ThouArtMyBattleAxe.dc.html",
+  "JER-C18-D-P06-ODestroyingMountai.dc.html",
+  "JER-C18-D-P07-OnePostShallRunToM.dc.html",
+  "JER-C18-D-P08-HeHathSwallowedMeU.dc.html",
+  "JER-C18-D-P09-MyPeopleGoYeOutOfT.dc.html",
+  "JER-C18-D-P10-MyPeopleGoYeOutOfT.dc.html",
+  "JER-C18-D-P11-TheBroadWallsOfBab.dc.html",
+  "JER-C18-D-P12-SeraiahTheSonOfNer.dc.html",
+  "JER-C18-D-P13-ThusShallBabylonSi.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2355,6 +2467,13 @@
    "text": "Chapter 17 · Babylon Is Taken (Jeremiah 49–50)",
    "x": 0,
    "y": 80500
+  },
+  "chapter18": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 18 · The Hammer of the Whole Earth (Jeremiah 51)",
+   "x": 0,
+   "y": 85800
   }
  },
  "designSystems": [],
