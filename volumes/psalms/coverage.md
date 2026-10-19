@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 2135 verses — 2135 full, 0 partial, 0 omitted.
+**So far:** 2292 verses — 2292 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Blessed Is the Man (Psalms 1–12)
 
@@ -91,5 +91,11 @@ Every verse is on the page in full.
 ## Chapter 15 · Thy Word Is a Lamp (Psalm 119)
 
 176 verses: 176 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 16 · I Will Lift Up Mine Eyes (Psalms 120–137)
+
+157 verses: 157 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

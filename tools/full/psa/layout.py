@@ -199,12 +199,13 @@ def pack(segments, prefix, start, book="Psalms", code="PS", budget=1250, most=3,
                 art = s["art"](W1, hh) if callable(s["art"]) else (s["art"] or "")
                 body.append(new(s["bg"], W1, hh, art, (vref(s["ref"], "right: 12px; bottom: 12px") if s["ref"] else "") + extra))
         firsts = [s["title"] for s in g if s["title"]]
-        if firsts: title_now = firsts[0]
+        page_title = g[0]["title"] or title_now or (firsts[0] if firsts else "")
+        if firsts: title_now = firsts[-1]
         refs = [s["ref"] for s in g if s["ref"] and s["lines"]] or [s["ref"] for s in g if s["ref"]]
         rng = _span(refs, code)
-        title = f"{book} {rng} — {title_now}"
-        slug = re.sub(r"[^A-Za-z0-9]", "", title_now.title())[:18]
-        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {title_now}", (lambda title=title, t=t, body="".join(body), n=start + k: page(title, t, body, n))))
+        title = f"{book} {rng} — {page_title}"
+        slug = re.sub(r"[^A-Za-z0-9]", "", page_title.title())[:18]
+        out.append((f"{prefix}-P{k + 1:02d}-{slug}", f"{start + k} · {page_title}", (lambda title=title, t=t, body="".join(body), n=start + k: page(title, t, body, n))))
     return out
 
 def _span(refs, code):

@@ -758,17 +758,18 @@ def s_nest(p, w, h, seed):
 
 def s_willows(p, w, h, seed):
     """By the rivers of Babylon, there we sat down, yea, we wept: the harps hung on the willows over the river."""
-    b = h * 0.92
-    o = [mk.defs(p, *ALL), sky(w, h, "#3A3A6A", "#C89A8A"), ground(w, h, h * 0.62, "#6A6A4A", dy=0), stream(w, h * 0.72, h * 0.84, seed, color="#3A7A9A")]
-    for i, x in enumerate((0.16, 0.84)):
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#3A3A6A", "#C89A8A"), ground(w, h, h * 0.7, "#6A6A4A", dy=0), stream(w, h * 0.78, h * 0.88, seed, color="#3A7A9A")]
+    for i, x in enumerate((0.14, 0.86)):
         X = w * x
-        o.append(f'<path d="M{f(X - 10)} {f(h * 0.7)} C {f(X - 6)} {f(h * 0.4)} {f(X)} {f(h * 0.3)} {f(X + 4)} {f(h * 0.2)} L {f(X + 16)} {f(h * 0.2)} C {f(X + 10)} {f(h * 0.36)} {f(X + 10)} {f(h * 0.5)} {f(X + 12)} {f(h * 0.7)} Z" fill="#4A3A2A" stroke="#0D0D0F" stroke-width="2"></path>')
+        o.append(f'<path d="M{f(X - 10)} {f(h * 0.86)} C {f(X - 6)} {f(h * 0.66)} {f(X)} {f(h * 0.56)} {f(X + 4)} {f(h * 0.48)} L {f(X + 16)} {f(h * 0.48)} C {f(X + 10)} {f(h * 0.6)} {f(X + 10)} {f(h * 0.7)} {f(X + 12)} {f(h * 0.86)} Z" fill="#4A3A2A" stroke="#0D0D0F" stroke-width="2"></path>')
         for k in range(12):
-            a = X + (k - 6) * 9
-            o.append(f'<path d="M{f(X + 8)} {f(h * 0.22)} C {f(a)} {f(h * 0.28)} {f(a - 6)} {f(h * 0.44)} {f(a - 4)} {f(h * 0.6)}" stroke="#7A9A5A" stroke-width="3" fill="none"></path>')
-        o.append(S2.harp(X + 20 * (1 if i == 0 else -1), h * 0.44, min(0.9, h / 400)))
+            a_ = X + (k - 6) * 9
+            o.append(f'<path d="M{f(X + 8)} {f(h * 0.5)} C {f(a_)} {f(h * 0.54)} {f(a_ - 6)} {f(h * 0.64)} {f(a_ - 4)} {f(h * 0.76)}" stroke="#7A9A5A" stroke-width="3" fill="none"></path>')
+        o.append(S2.harp(X + 24 * (1 if i == 0 else -1), h * 0.66, min(0.7, h / 520)))
+    k = min(0.8, h / 460)
     for i in range(3):
-        o.append(E.kneel(w * (0.36 + i * 0.12), b, min(1.0, h / 360), color=("#4A4A5A", "#5A4A3A", "#3A4A5A")[i], flip=i == 2))
+        o.append(E.kneel(w * (0.38 + i * 0.12), b, k, color=("#4A4A5A", "#5A4A3A", "#3A4A5A")[i], flip=i == 2))
     return "".join(o)
 
 def s_watch(p, w, h, seed):
@@ -1315,6 +1316,53 @@ def s_bees(p, w, h, seed):
         o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="4" ry="2.6" fill="#E8B830" stroke="#0D0D0F" stroke-width="1"></ellipse>')
     return "".join(o)
 
+
+def s_child(p, w, h, seed):
+    """Surely I have stilled and quieted my soul; like a weaned child with his mother: a mother holding her child at the door
+    of the house at evening."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, *tod(seed, (GOLD, DUSK))), ground(w, h, h * 0.76, "#C8A06A", dy=0),
+         f'<rect x="{f(w * 0.52)}" y="{f(h * 0.44)}" width="{f(w * 0.38)}" height="{f(h * 0.34)}" fill="#D8C0A0" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<rect x="{f(w * 0.66)}" y="{f(h * 0.56)}" width="{f(w * 0.08)}" height="{f(h * 0.22)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></rect>']
+    o.append(R1.naomi_with_child(p, w * 0.36, b, fit(b, h * 0.5)).replace('cloth="#4A3A6A"', 'cloth="#2A6A6A"'))
+    return "".join(o)
+
+def s_hermon(p, w, h, seed):
+    """Like the dew of Hermon, that cometh down upon the mountains of Zion: the snow-crowned mountain at dawn, dew on the grass."""
+    r = R(seed)
+    o = [sky(w, h, *DAWN), mountain(w * 0.56, h * 0.82, w * 0.9, h * 0.46, color="#5A6A8A", lit="#8A9AC0", snow=True), clouds(w, h, seed, 4, "#E8E2F0", 0.6, 0.5, 0.7),
+         ground(w, h, h * 0.82, "#6A9A5A", dy=0)]
+    for _ in range(50):
+        o.append(f'<circle cx="{f(r.uniform(0, w))}" cy="{f(r.uniform(h * 0.84, h))}" r="{f(r.uniform(1.5, 3))}" fill="#E8F6FA" stroke="#0D0D0F" stroke-width="0.6"></circle>')
+    return "".join(o)
+
+def s_templenight(p, w, h, seed):
+    """Behold, bless ye Jehovah, all ye servants of Jehovah, that by night stand in the house of Jehovah: the house under the
+    stars, its court lit by the lamps, priests standing in white."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, *NIGHT), mk.stars(80, w, h * 0.5, seed), K1.temple_front(w * 0.5, h * 0.8, w * 0.46, seed), ground(w, h, h * 0.8, "#3A3048", dy=0),
+         glow(w * 0.5, h * 0.7, h * 0.36, "#FFC14D", 0.16)]
+    s = fit(b, h * 0.62)
+    for i, x in enumerate((0.12, 0.24, 0.76, 0.88)):
+        o.append(K1.priest(p, w * x, b, s, flip=x > 0.5))
+    return "".join(o)
+
+def s_crag(p, w, h, seed):
+    """Remember, O Jehovah, against the children of Edom the day of Jerusalem: a bare crag over the river at nightfall, no one
+    on it (137:7–9 told in words only)."""
+    o = [sky(w, h, "#1A1A3A", "#8A4A4A"), hills(w, h, h * 0.7, seed, color="#2A2030", amp=8), stream(w, h * 0.86, h * 0.94, seed, color="#2A4A6A"),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.38)} {f(h * 0.7)} L {f(w * 0.5)} {f(h * 0.64)} L {f(w * 0.62)} {f(h * 0.72)} L {f(w * 0.7)} {f(h + 10)} Z" fill="#5A4A4A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    return "".join(o)
+
+def s_lift(p, w, h, seed):
+    """I will lift up mine eyes unto the mountains: a pilgrim on the road looking up to the mountains."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, *tod(seed, (DAY, DAWN, GOLD))), clouds(w, h, seed, 4, y0=0.3, y1=0.5),
+         mountain(w * 0.62, h * 0.8, w * 0.7, h * 0.46, snow=True), mountain(w * 0.9, h * 0.8, w * 0.5, h * 0.34, color="#7A6A8A"), ground(w, h, h * 0.8, "#8AA85A", dy=0),
+         f'<path d="M{f(w * 0.1)} {f(h + 10)} C {f(w * 0.2)} {f(h * 0.9)} {f(w * 0.4)} {f(h * 0.84)} {f(w * 0.5)} {f(h * 0.8)} L {f(w * 0.54)} {f(h * 0.8)} C {f(w * 0.44)} {f(h * 0.86)} {f(w * 0.3)} {f(h * 0.94)} {f(w * 0.26)} {f(h + 10)} Z" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2"></path>']
+    o.append(walker(p, w * 0.24, b, fit(b, h * 0.6), cloth="#5A6A8A"))
+    return "".join(o)
+
 NOMIRROR = {"nations", "lands", "confed"}
 
 SCENES = {
@@ -1345,6 +1393,7 @@ SCENES = {
     "creatures": ("#8FD0E2", s_creatures), "housetop": ("#0B0B2A", s_housetop), "prison": ("#1A1412", s_prison), "calf": ("#5A3A2A", s_calf),
     "tents": ("#8FD0E2", s_tents), "going": ("#5A5A8A", s_going),
     "haven": ("#3A2A5A", s_haven), "oasis": ("#C8A07A", s_oasis), "skip": ("#8FD0E2", s_skip), "corner": ("#FFB04A", s_corner), "bees": ("#5A3A2A", s_bees),
+    "child": ("#FFB04A", s_child), "hermon": ("#5A5A8A", s_hermon), "templenight": ("#0B0B2A", s_templenight), "crag": ("#1A1A3A", s_crag), "lift": ("#8FD0E2", s_lift),
     "captives": ("#5A4A5A", s_captives), "judges": ("#C8A07A", s_judges), "confed": ("#0B1A2E", s_confed),
     "hail": ("#14142A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 2)), "darkness": ("#05050F", lambda p, w, h, seed: s_plagues(p, w, h, seed, 3)),
 }
