@@ -66,11 +66,17 @@ def merge(lines):
     return out
 
 def wl(refs, kind="god", ov=None):
-    """The lines for a run of verses ("6:1-4"), split automatically; ov maps a ref to its own list of lines."""
+    """The lines for a run of verses ("6:1-4"), split automatically; ov maps a ref to its own lines: a list of lines, a
+    letter ("c" caption, "g" Voice box, "s" speech, "n" song) for the whole verse, or a tuple of (kind letter, phrase)
+    parts for nv()."""
     ov = ov or {}
     out = []
     for r in refs_of(refs):
-        out += ov[r] if r in ov else pieces(r, kind)
+        o = ov.get(r)
+        if o is None: out += pieces(r, kind)
+        elif isinstance(o, str): out.append((KINDS[o], v(r)))
+        elif isinstance(o, tuple): out += nv(r, *[(KINDS[a], b) for a, b in o])
+        else: out += o
     return merge(out)
 
 def label(refs):
@@ -174,3 +180,28 @@ PELATIAH = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A
 
 FZ = [(EZEKIEL, GOLDEN), (EZEKIEL_STERN, RED)]          # the usual alternation beside oracles
 FG = [(EZEKIEL_GRIEF, COLD), (EZEKIEL, GOLDEN)]
+
+def nv(ref, *parts):
+    """One verse cut into boxes: parts = (kind, phrase) — each box runs from its phrase (None: the verse's start) to the
+    next box's phrase: nv("8:5", ("cap", None), ("god", "Son of man,"), ("cap", "So I lifted"))."""
+    t = G.verses[tuple(map(int, ref.split(":")))]
+    idx, pos = [], 0
+    for kind, ph in parts:
+        i = 0 if ph is None else t.find(ph, pos)
+        if i < 0: raise ValueError(f"EZK {ref}: {ph!r} not found")
+        idx.append(i); pos = i + 1
+    out = []
+    for k, (kind, _) in enumerate(parts):
+        seg_ = t[idx[k]:idx[k + 1] if k + 1 < len(idx) else len(t)].strip()
+        out.append((kind, v(ref, frm=seg_, to=seg_)))
+    return out
+
+KINDS = {"c": "cap", "g": "god", "s": "say", "n": "song"}
+
+def title_art(fn, top, h=700):
+    """A chapter title's art: the drawing fn(w, h) under the title's dark band, the sky colour `top` above it, and a dark
+    band at the foot so the quote and the credit read."""
+    from deu.common import shade
+    return shade(f'<rect x="0" y="0" width="760" height="1080" fill="{top}"></rect><g transform="translate(0 {1080 - h})">{fn(760, h)}</g>'
+                 '<defs><linearGradient id="tfoot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D0D0F" stop-opacity="0"></stop>'
+                 '<stop offset="1" stop-color="#0D0D0F" stop-opacity="0.85"></stop></linearGradient></defs><rect x="0" y="900" width="760" height="180" fill="url(#tfoot)"></rect>')

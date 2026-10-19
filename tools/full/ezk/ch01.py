@@ -12,7 +12,7 @@ from fx import chapter_title, end_mark
 from num.pages import Pages
 from deu.common import shade
 from ezk import G, art as K
-from ezk.common import (pack, cp, say, gd, sg, says, gods, caps, drawn, face, joined, wl, fz, dz, run, label,
+from ezk.common import (title_art, pack, cp, say, gd, sg, says, gods, caps, drawn, face, joined, wl, fz, dz, run, label,
                         EZEKIEL, EZEKIEL_FIRE, EZEKIEL_AWE, EZEKIEL_STERN, EZEKIEL_GRIEF, NIGHT, AMBER, COLD, GOLDEN, RED)
 
 v, sp = G.v, G.span
@@ -23,7 +23,7 @@ VS = "#1A0E1A"
 
 @P("EZK-C01-00-Title", "Chapter 1 · The Visions of God", title=True)
 def title(n):
-    svg = shade(f'<g transform="translate(0 300)">{K.vision("t1", 760, 780, 101, stage="wheels")}</g><rect x="0" y="0" width="760" height="302" fill="#0B0B1A"></rect>')
+    svg = title_art(lambda w, h: K.vision("t1", w, h, 101, stage="wheels"), "#0B0B1A")
     return chapter_title(1, "第一話", "The Visions of God", "Ezekiel 1 – 3", svg, "#0B0B1A", v("1:1", frm="the heavens were opened"), "Ezekiel · Volume Twenty-Six")
 
 

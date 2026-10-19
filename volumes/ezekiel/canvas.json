@@ -212,6 +212,125 @@
    "w": 760,
    "h": 1080,
    "title": "26 · Make the Chain"
+  },
+  "EZK-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Glory Departs"
+  },
+  "EZK-C03-D-P01-AsISatInMyHouse.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · As I Sat in My House"
+  },
+  "EZK-C03-D-P02-TheImageOfJealousy.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · The Image of Jealousy"
+  },
+  "EZK-C03-D-P03-AHoleInTheWall.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · A Hole in the Wall"
+  },
+  "EZK-C03-D-P04-TheirFacesTowardTh.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Their Faces toward the East"
+  },
+  "EZK-C03-D-P05-TheManClothedInLin.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Man Clothed in Linen"
+  },
+  "EZK-C03-D-P06-TheManClothedInLin.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Man Clothed in Linen"
+  },
+  "EZK-C03-D-P07-TheManClothedInLin.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Man Clothed in Linen"
+  },
+  "EZK-C03-D-P08-AhLordJehovah.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Ah Lord Jehovah!"
+  },
+  "EZK-C03-D-P09-CoalsOfFire.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Coals of Fire"
+  },
+  "EZK-C03-D-P10-TheWhirlingWheels.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Whirling Wheels"
+  },
+  "EZK-C03-D-P11-TheWhirlingWheels.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Whirling Wheels"
+  },
+  "EZK-C03-D-P12-AtTheDoorOfTheEast.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · At the Door of the East Gate"
+  },
+  "EZK-C03-D-P13-ThisCityIsTheCaldr.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · This City Is the Caldron"
+  },
+  "EZK-C03-D-P14-ThisCityIsTheCaldr.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · This City Is the Caldron"
+  },
+  "EZK-C03-D-P15-ASanctuaryForALitt.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · A Sanctuary for a Little While"
+  },
+  "EZK-C03-D-P16-TheGloryWentUp.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Glory Went Up"
   }
  },
  "order": [
@@ -243,7 +362,24 @@
   "EZK-C02-D-P12-TheRodHathBlossome.dc.html",
   "EZK-C02-D-P13-TheyHaveBlownTheTr.dc.html",
   "EZK-C02-D-P14-TheyHaveBlownTheTr.dc.html",
-  "EZK-C02-D-P15-MakeTheChain.dc.html"
+  "EZK-C02-D-P15-MakeTheChain.dc.html",
+  "EZK-C03-00-Title.dc.html",
+  "EZK-C03-D-P01-AsISatInMyHouse.dc.html",
+  "EZK-C03-D-P02-TheImageOfJealousy.dc.html",
+  "EZK-C03-D-P03-AHoleInTheWall.dc.html",
+  "EZK-C03-D-P04-TheirFacesTowardTh.dc.html",
+  "EZK-C03-D-P05-TheManClothedInLin.dc.html",
+  "EZK-C03-D-P06-TheManClothedInLin.dc.html",
+  "EZK-C03-D-P07-TheManClothedInLin.dc.html",
+  "EZK-C03-D-P08-AhLordJehovah.dc.html",
+  "EZK-C03-D-P09-CoalsOfFire.dc.html",
+  "EZK-C03-D-P10-TheWhirlingWheels.dc.html",
+  "EZK-C03-D-P11-TheWhirlingWheels.dc.html",
+  "EZK-C03-D-P12-AtTheDoorOfTheEast.dc.html",
+  "EZK-C03-D-P13-ThisCityIsTheCaldr.dc.html",
+  "EZK-C03-D-P14-ThisCityIsTheCaldr.dc.html",
+  "EZK-C03-D-P15-ASanctuaryForALitt.dc.html",
+  "EZK-C03-D-P16-TheGloryWentUp.dc.html"
  ],
  "notes": {
   "Main": {
@@ -266,6 +402,13 @@
    "text": "Chapter 2 · The Siege on a Tile (Ezekiel 4–7)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Glory Departs (Ezekiel 8–11)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],

@@ -13,7 +13,7 @@ from fx import chapter_title, end_mark
 from num.pages import Pages
 from deu.common import shade
 from ezk import G, art2 as K
-from ezk.common import (pack, cp, say, gd, wl, fz, dz, run, FZ, FG, EZEKIEL, EZEKIEL_STERN, EZEKIEL_GRIEF, EZEKIEL_TEAR, NIGHT, COLD, GOLDEN, RED)
+from ezk.common import (title_art, pack, cp, say, gd, wl, fz, dz, run, FZ, FG, EZEKIEL, EZEKIEL_STERN, EZEKIEL_GRIEF, EZEKIEL_TEAR, NIGHT, COLD, GOLDEN, RED)
 from ezk import ch01 as _prev
 
 v, sp = G.v, G.span
@@ -24,7 +24,7 @@ MAP = "#0B1A2E"
 
 @P("EZK-C02-00-Title", "Chapter 2 · The Siege on a Tile", title=True)
 def title(n):
-    svg = shade(f'<g transform="translate(0 300)">{K.jerusalem("t2", 760, 780, 201, mode="siege")}</g><rect x="0" y="0" width="760" height="302" fill="#5A4A5A"></rect>')
+    svg = title_art(lambda w, h: K.jerusalem("t2", w, h, 201, mode="siege"), "#5A4A5A")
     return chapter_title(2, "第二話", "The Siege on a Tile", "Ezekiel 4 – 7", svg, "#3A2A3A", v("4:1", frm="portray upon it a city"), "Ezekiel · Volume Twenty-Six")
 
 
