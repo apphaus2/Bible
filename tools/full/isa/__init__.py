@@ -13,7 +13,7 @@ the winepress alone; 66:24 is words over the valley outside the city.
 Plan (36,642 words, eighteen chapters): 1 The Vineyard of Jehovah (1–5) · 2 Holy, Holy, Holy (6–9) · 3 The Root of
 Jesse (10–12) · 4 How Art Thou Fallen (13–16) · 5 The Burden of Egypt (17–20) · 6 Watchman, What of the Night? (21–23) ·
 7 Thy Dead Shall Live (24–27) · 8 In Returning and Rest (28–30) · 9 The Desert Shall Blossom (31–35) ·
-10 Whereon Dost Thou Trust? (36–39) · 11 Comfort Ye My People (40–42) · 12 Ye Are My Witnesses (43–45) · 13 Go Ye Forth
+10 On Whom Dost Thou Trust? (36–39) · 11 Comfort Ye My People (40–42) · 12 Ye Are My Witnesses (43–45) · 13 Go Ye Forth
 from Babylon (46–48) · 14 A Light to the Gentiles (49–51) · 15 A Man of Sorrows (52–55) · 16 The Fast That I Have Chosen
 (56–59) · 17 Arise, Shine (60–62) · 18 New Heavens and a New Earth (63–66)."""
 import sys, pathlib
@@ -44,5 +44,7 @@ META = {
      "blurb": "Woe to the crown of pride of the drunkards of Ephraim; precept upon precept, line upon line; a covenant with death, and a tried stone laid in Zion, a precious corner-stone of sure foundation; Ho Ariel; a book that is sealed; shall the potter be esteemed as clay?; woe to the rebellious children that go down into Egypt; in returning and rest shall ye be saved; and a word behind thee — this is the way, walk ye in it."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Desert Shall Blossom", "range": "Isaiah 31–35", "bible_chapters": [31, 32, 33, 34, 35],
      "blurb": "Woe to them that go down to Egypt for help; a king shall reign in righteousness, as the shade of a great rock in a weary land; until the Spirit be poured upon us from on high; who among us can dwell with the devouring fire?; thine eyes shall see the king in his beauty, and Zion a tent that shall not be removed; the heavens rolled together as a scroll and the burden upon Edom; and the desert shall rejoice, and blossom as the rose, and the ransomed of Jehovah shall return with singing."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "On Whom Dost Thou Trust?", "range": "Isaiah 36–39", "bible_chapters": [36, 37, 38, 39],
+     "blurb": "Sennacherib against the fortified cities of Judah, and Rabshakeh at the conduit of the upper pool — now on whom dost thou trust?; Hezekiah in sackcloth, the letter spread before Jehovah, and his prayer; the virgin daughter of Zion hath despised thee; the camp of the Assyrians at morning; Hezekiah sick unto death and the shadow returned ten steps on the dial; the writing of Hezekiah; and the envoys of Babylon."},
   ],
 }

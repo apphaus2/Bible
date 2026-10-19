@@ -53,4 +53,4 @@ SEGS = (
     + S("35:5-7", "say", A(lambda w, h: K.streams_desert(w, h, 917), SKY))
     + S("35:8-10", "say", A(lambda w, h: K.way_holiness("wh9", w, h, 918), "#7AB8E8"), head="The Way of Holiness", budget=700)
 )
-PG.extend(pack(SEGS, "ISA-C09-D", PG.next(), end=end_mark("NEXT · WHEREON DOST THOU TRUST?", "right: 10px; bottom: 34px")))
+PG.extend(pack(SEGS, "ISA-C09-D", PG.next(), end=end_mark("NEXT · ON WHOM DOST THOU TRUST?", "right: 10px; bottom: 34px")))

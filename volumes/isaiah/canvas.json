@@ -1010,6 +1010,146 @@
    "w": 760,
    "h": 1080,
    "title": "133 · The Way of Holiness"
+  },
+  "ISA-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · On Whom Dost Thou Trust?"
+  },
+  "ISA-C10-D-P01-Rabshakeh.dc.html": {
+   "x": 840,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Rabshakeh"
+  },
+  "ISA-C10-D-P02-Rabshakeh.dc.html": {
+   "x": 1680,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Rabshakeh"
+  },
+  "ISA-C10-D-P03-InTheJewsLanguage.dc.html": {
+   "x": 2520,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · In the Jews' Language"
+  },
+  "ISA-C10-D-P04-InTheJewsLanguage.dc.html": {
+   "x": 3360,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · In the Jews' Language"
+  },
+  "ISA-C10-D-P05-IsaiahTheProphet.dc.html": {
+   "x": 0,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Isaiah the Prophet"
+  },
+  "ISA-C10-D-P06-IsaiahTheProphet.dc.html": {
+   "x": 840,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Isaiah the Prophet"
+  },
+  "ISA-C10-D-P07-IsaiahTheProphet.dc.html": {
+   "x": 1680,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · Isaiah the Prophet"
+  },
+  "ISA-C10-D-P08-HezekiahPrayedUnto.dc.html": {
+   "x": 2520,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Hezekiah Prayed unto Jehovah"
+  },
+  "ISA-C10-D-P09-TheVirginDaughterO.dc.html": {
+   "x": 3360,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · The Virgin Daughter of Zion"
+  },
+  "ISA-C10-D-P10-TheVirginDaughterO.dc.html": {
+   "x": 0,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · The Virgin Daughter of Zion"
+  },
+  "ISA-C10-D-P11-TheCampOfTheAssyri.dc.html": {
+   "x": 840,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · The Camp of the Assyrians"
+  },
+  "ISA-C10-D-P12-SickUntoDeath.dc.html": {
+   "x": 1680,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Sick unto Death"
+  },
+  "ISA-C10-D-P13-TheShadowOnTheDial.dc.html": {
+   "x": 2520,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · The Shadow on the Dial"
+  },
+  "ISA-C10-D-P14-TheWritingOfHezeki.dc.html": {
+   "x": 3360,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · The Writing of Hezekiah"
+  },
+  "ISA-C10-D-P15-TheWritingOfHezeki.dc.html": {
+   "x": 0,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · The Writing of Hezekiah"
+  },
+  "ISA-C10-D-P16-TheWritingOfHezeki.dc.html": {
+   "x": 840,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The Writing of Hezekiah"
+  },
+  "ISA-C10-D-P17-TheEnvoysOfBabylon.dc.html": {
+   "x": 1680,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · The Envoys of Babylon"
+  },
+  "ISA-C10-D-P18-TheEnvoysOfBabylon.dc.html": {
+   "x": 2520,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Envoys of Babylon"
+  },
+  "ISA-C10-D-P19-TheEnvoysOfBabylon.dc.html": {
+   "x": 3360,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · The Envoys of Babylon"
   }
  },
  "order": [
@@ -1155,7 +1295,27 @@
   "ISA-C09-D-P13-ComeNearYeNationsT.dc.html",
   "ISA-C09-D-P14-ComeNearYeNationsT.dc.html",
   "ISA-C09-D-P15-TheDesertShallRejo.dc.html",
-  "ISA-C09-D-P16-TheWayOfHoliness.dc.html"
+  "ISA-C09-D-P16-TheWayOfHoliness.dc.html",
+  "ISA-C10-00-Title.dc.html",
+  "ISA-C10-D-P01-Rabshakeh.dc.html",
+  "ISA-C10-D-P02-Rabshakeh.dc.html",
+  "ISA-C10-D-P03-InTheJewsLanguage.dc.html",
+  "ISA-C10-D-P04-InTheJewsLanguage.dc.html",
+  "ISA-C10-D-P05-IsaiahTheProphet.dc.html",
+  "ISA-C10-D-P06-IsaiahTheProphet.dc.html",
+  "ISA-C10-D-P07-IsaiahTheProphet.dc.html",
+  "ISA-C10-D-P08-HezekiahPrayedUnto.dc.html",
+  "ISA-C10-D-P09-TheVirginDaughterO.dc.html",
+  "ISA-C10-D-P10-TheVirginDaughterO.dc.html",
+  "ISA-C10-D-P11-TheCampOfTheAssyri.dc.html",
+  "ISA-C10-D-P12-SickUntoDeath.dc.html",
+  "ISA-C10-D-P13-TheShadowOnTheDial.dc.html",
+  "ISA-C10-D-P14-TheWritingOfHezeki.dc.html",
+  "ISA-C10-D-P15-TheWritingOfHezeki.dc.html",
+  "ISA-C10-D-P16-TheWritingOfHezeki.dc.html",
+  "ISA-C10-D-P17-TheEnvoysOfBabylon.dc.html",
+  "ISA-C10-D-P18-TheEnvoysOfBabylon.dc.html",
+  "ISA-C10-D-P19-TheEnvoysOfBabylon.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1227,6 +1387,13 @@
    "text": "Chapter 9 · The Desert Shall Blossom (Isaiah 31–35)",
    "x": 0,
    "y": 40500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · On Whom Dost Thou Trust? (Isaiah 36–39)",
+   "x": 0,
+   "y": 45800
   }
  },
  "designSystems": [],
