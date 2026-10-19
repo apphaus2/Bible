@@ -1,0 +1,1192 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:18:32Z"
+ },
+ "title": "Proverbs — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "PRO-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Beginning of Knowledge"
+  },
+  "PRO-C01-D-P01-TheProverbsOfSolom.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Proverbs of Solomon"
+  },
+  "PRO-C01-D-P02-IfSinnersEnticeThe.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · If Sinners Entice Thee"
+  },
+  "PRO-C01-D-P03-WisdomCriethAloudI.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Wisdom Crieth Aloud in the Street"
+  },
+  "PRO-C01-D-P04-WisdomCriethAloudI.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Wisdom Crieth Aloud in the Street"
+  },
+  "PRO-C01-D-P05-IfThouSeekHerAsSil.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · If Thou Seek Her as Silver"
+  },
+  "PRO-C01-D-P06-TheStrangeWoman.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Strange Woman"
+  },
+  "PRO-C01-D-P07-TrustInJehovahWith.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Trust in Jehovah with All Thy Heart"
+  },
+  "PRO-C01-D-P08-TrustInJehovahWith.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Trust in Jehovah with All Thy Heart"
+  },
+  "PRO-C01-D-P09-TrustInJehovahWith.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Trust in Jehovah with All Thy Heart"
+  },
+  "PRO-C01-D-P10-ATreeOfLife.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · A Tree of Life"
+  },
+  "PRO-C01-D-P11-ATreeOfLife.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Tree of Life"
+  },
+  "PRO-C01-D-P12-WithholdNotGood.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Withhold Not Good"
+  },
+  "PRO-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Get Wisdom"
+  },
+  "PRO-C02-D-P01-GetWisdom.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Get Wisdom"
+  },
+  "PRO-C02-D-P02-GetWisdom.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Get Wisdom"
+  },
+  "PRO-C02-D-P03-ThePathOfTheWicked.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Path of the Wicked"
+  },
+  "PRO-C02-D-P04-KeepThyHeart.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Keep Thy Heart"
+  },
+  "PRO-C02-D-P05-TheLipsOfAStrangeW.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Lips of a Strange Woman"
+  },
+  "PRO-C02-D-P06-ThineOwnWell.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Thine Own Well"
+  },
+  "PRO-C02-D-P07-SuretyForThyNeighb.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Surety for Thy Neighbor"
+  },
+  "PRO-C02-D-P08-SuretyForThyNeighb.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Surety for Thy Neighbor"
+  },
+  "PRO-C02-D-P09-AWorthlessPerson.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · A Worthless Person"
+  },
+  "PRO-C02-D-P10-TheCommandmentIsAL.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · The Commandment Is a Lamp"
+  },
+  "PRO-C02-D-P11-TheCommandmentIsAL.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The Commandment Is a Lamp"
+  },
+  "PRO-C02-D-P12-TheCommandmentIsAL.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · The Commandment Is a Lamp"
+  },
+  "PRO-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Wisdom Hath Builded Her House"
+  },
+  "PRO-C03-D-P01-KeepMyWords.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Keep My Words"
+  },
+  "PRO-C03-D-P02-AtTheWindowOfMyHou.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · At the Window of My House"
+  },
+  "PRO-C03-D-P03-AtTheWindowOfMyHou.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · At the Window of My House"
+  },
+  "PRO-C03-D-P04-AtTheWindowOfMyHou.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · At the Window of My House"
+  },
+  "PRO-C03-D-P05-DothNotWisdomCry.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Doth Not Wisdom Cry?"
+  },
+  "PRO-C03-D-P06-DothNotWisdomCry.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Doth Not Wisdom Cry?"
+  },
+  "PRO-C03-D-P07-DothNotWisdomCry.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Doth Not Wisdom Cry?"
+  },
+  "PRO-C03-D-P08-JehovahPossessedMe.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Jehovah Possessed Me in the Beginning"
+  },
+  "PRO-C03-D-P09-JehovahPossessedMe.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Jehovah Possessed Me in the Beginning"
+  },
+  "PRO-C03-D-P10-HerSevenPillars.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Her Seven Pillars"
+  },
+  "PRO-C03-D-P11-HerSevenPillars.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Her Seven Pillars"
+  },
+  "PRO-C03-D-P12-TheFoolishWoman.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Foolish Woman"
+  },
+  "PRO-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · A Wise Son"
+  },
+  "PRO-C04-S-P01-AWiseSonMakethAGla.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P02-AWiseSonMakethAGla.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P03-AWiseSonMakethAGla.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P04-AWiseSonMakethAGla.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P05-AFalseBalance.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · A False Balance"
+  },
+  "PRO-C04-S-P06-AFalseBalance.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · A False Balance"
+  },
+  "PRO-C04-S-P07-AFalseBalance.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · A False Balance"
+  },
+  "PRO-C04-S-P08-AFalseBalance.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · A False Balance"
+  },
+  "PRO-C04-S-P09-WhosoLovethCorrect.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Whoso Loveth Correction"
+  },
+  "PRO-C04-S-P10-WhosoLovethCorrect.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Whoso Loveth Correction"
+  },
+  "PRO-C04-S-P11-WhosoLovethCorrect.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Whoso Loveth Correction"
+  },
+  "PRO-C04-S-P12-WhosoLovethCorrect.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Whoso Loveth Correction"
+  },
+  "PRO-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · A Tree of Life"
+  },
+  "PRO-C05-S-P01-AWiseSonHearethHis.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · A Wise Son Heareth His Father's Instruction"
+  },
+  "PRO-C05-S-P02-AWiseSonHearethHis.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · A Wise Son Heareth His Father's Instruction"
+  },
+  "PRO-C05-S-P03-AWiseSonHearethHis.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · A Wise Son Heareth His Father's Instruction"
+  },
+  "PRO-C05-S-P04-EveryWiseWomanBuil.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Every Wise Woman Buildeth Her House"
+  },
+  "PRO-C05-S-P05-EveryWiseWomanBuil.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Every Wise Woman Buildeth Her House"
+  },
+  "PRO-C05-S-P06-EveryWiseWomanBuil.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Every Wise Woman Buildeth Her House"
+  },
+  "PRO-C05-S-P07-EveryWiseWomanBuil.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Every Wise Woman Buildeth Her House"
+  },
+  "PRO-C05-S-P08-EveryWiseWomanBuil.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Every Wise Woman Buildeth Her House"
+  },
+  "PRO-C05-S-P09-ASoftAnswerTurneth.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · A Soft Answer Turneth Away Wrath"
+  },
+  "PRO-C05-S-P10-ASoftAnswerTurneth.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · A Soft Answer Turneth Away Wrath"
+  },
+  "PRO-C05-S-P11-ASoftAnswerTurneth.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · A Soft Answer Turneth Away Wrath"
+  },
+  "PRO-C05-S-P12-ASoftAnswerTurneth.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · A Soft Answer Turneth Away Wrath"
+  },
+  "PRO-C05-S-P13-ASoftAnswerTurneth.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · A Soft Answer Turneth Away Wrath"
+  },
+  "PRO-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Lot Is Cast into the Lap"
+  },
+  "PRO-C06-S-P01-CommitThyWorksUnto.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P02-CommitThyWorksUnto.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P03-CommitThyWorksUnto.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P04-CommitThyWorksUnto.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P05-BetterIsADryMorsel.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P06-BetterIsADryMorsel.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P07-BetterIsADryMorsel.dc.html": {
+   "x": 1680,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P08-BetterIsADryMorsel.dc.html": {
+   "x": 2520,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P09-AStrongTower.dc.html": {
+   "x": 3360,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · A Strong Tower"
+  },
+  "PRO-C06-S-P10-AStrongTower.dc.html": {
+   "x": 0,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · A Strong Tower"
+  },
+  "PRO-C06-S-P11-AStrongTower.dc.html": {
+   "x": 840,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · A Strong Tower"
+  },
+  "PRO-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The King's Heart"
+  },
+  "PRO-C07-S-P01-BetterIsThePoorTha.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P02-BetterIsThePoorTha.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P03-BetterIsThePoorTha.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P04-BetterIsThePoorTha.dc.html": {
+   "x": 3360,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Better Is the Poor That Walketh in His Integrity"
+  },
+  "PRO-C07-S-P05-WineIsAMocker.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P06-WineIsAMocker.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P07-WineIsAMocker.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P08-WineIsAMocker.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Wine Is a Mocker"
+  },
+  "PRO-C07-S-P09-TheKingSHeartIsInT.dc.html": {
+   "x": 3360,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C07-S-P10-TheKingSHeartIsInT.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C07-S-P11-TheKingSHeartIsInT.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C07-S-P12-TheKingSHeartIsInT.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Words of the Wise"
+  },
+  "PRO-C08-S-P01-AGoodName.dc.html": {
+   "x": 840,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · A Good Name"
+  },
+  "PRO-C08-S-P02-AGoodName.dc.html": {
+   "x": 1680,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · A Good Name"
+  },
+  "PRO-C08-S-P03-TheWordsOfTheWise.dc.html": {
+   "x": 2520,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · The Words of the Wise"
+  },
+  "PRO-C08-S-P04-TheWordsOfTheWise.dc.html": {
+   "x": 3360,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · The Words of the Wise"
+  },
+  "PRO-C08-S-P05-TheWordsOfTheWise.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Words of the Wise"
+  },
+  "PRO-C08-S-P06-TheWordsOfTheWise.dc.html": {
+   "x": 840,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · The Words of the Wise"
+  },
+  "PRO-C08-S-P07-WhoHathWoe.dc.html": {
+   "x": 1680,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Who Hath Woe?"
+  },
+  "PRO-C08-S-P08-FretNotThyself.dc.html": {
+   "x": 2520,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Fret Not Thyself"
+  },
+  "PRO-C08-S-P09-FretNotThyself.dc.html": {
+   "x": 3360,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Fret Not Thyself"
+  },
+  "PRO-C08-S-P10-FretNotThyself.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · Fret Not Thyself"
+  },
+  "PRO-C08-S-P11-TheFieldOfTheSlugg.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The Field of the Sluggard"
+  },
+  "PRO-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Apples of Gold"
+  },
+  "PRO-C09-S-P01-TheMenOfHezekiahCo.dc.html": {
+   "x": 840,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Men of Hezekiah Copied Out"
+  },
+  "PRO-C09-S-P02-TheMenOfHezekiahCo.dc.html": {
+   "x": 1680,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Men of Hezekiah Copied Out"
+  },
+  "PRO-C09-S-P03-TheMenOfHezekiahCo.dc.html": {
+   "x": 2520,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Men of Hezekiah Copied Out"
+  },
+  "PRO-C09-S-P04-AsADogThatReturnet.dc.html": {
+   "x": 3360,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · As a Dog That Returneth"
+  },
+  "PRO-C09-S-P05-AsADogThatReturnet.dc.html": {
+   "x": 0,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · As a Dog That Returneth"
+  },
+  "PRO-C09-S-P06-AsADogThatReturnet.dc.html": {
+   "x": 840,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · As a Dog That Returneth"
+  },
+  "PRO-C09-S-P07-IronSharpenethIron.dc.html": {
+   "x": 1680,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Iron Sharpeneth Iron"
+  },
+  "PRO-C09-S-P08-IronSharpenethIron.dc.html": {
+   "x": 2520,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Iron Sharpeneth Iron"
+  },
+  "PRO-C09-S-P09-IronSharpenethIron.dc.html": {
+   "x": 3360,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Iron Sharpeneth Iron"
+  },
+  "PRO-C09-S-P10-TheStateOfThyFlock.dc.html": {
+   "x": 0,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · The State of Thy Flocks"
+  },
+  "PRO-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Bold as a Lion"
+  },
+  "PRO-C10-S-P01-TheRighteousAreBol.dc.html": {
+   "x": 840,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · The Righteous Are Bold as a Lion"
+  },
+  "PRO-C10-S-P02-TheRighteousAreBol.dc.html": {
+   "x": 1680,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · The Righteous Are Bold as a Lion"
+  },
+  "PRO-C10-S-P03-TheRighteousAreBol.dc.html": {
+   "x": 2520,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Righteous Are Bold as a Lion"
+  },
+  "PRO-C10-S-P04-TheRighteousAreBol.dc.html": {
+   "x": 3360,
+   "y": 38900,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · The Righteous Are Bold as a Lion"
+  },
+  "PRO-C10-S-P05-WhereThereIsNoVisi.dc.html": {
+   "x": 0,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Where There Is No Vision"
+  },
+  "PRO-C10-S-P06-WhereThereIsNoVisi.dc.html": {
+   "x": 840,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Where There Is No Vision"
+  },
+  "PRO-C10-S-P07-WhereThereIsNoVisi.dc.html": {
+   "x": 1680,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Where There Is No Vision"
+  },
+  "PRO-C10-S-P08-WhereThereIsNoVisi.dc.html": {
+   "x": 2520,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Where There Is No Vision"
+  },
+  "PRO-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 41800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · A Worthy Woman"
+  },
+  "PRO-C11-D-P01-TheWordsOfAgur.dc.html": {
+   "x": 840,
+   "y": 41800,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · The Words of Agur"
+  },
+  "PRO-C11-D-P02-TwoThingsHaveIAske.dc.html": {
+   "x": 1680,
+   "y": 41800,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Two Things Have I Asked of Thee"
+  },
+  "PRO-C11-D-P03-ThereIsAGeneration.dc.html": {
+   "x": 2520,
+   "y": 41800,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · There Is a Generation"
+  },
+  "PRO-C11-D-P04-ThreeThingsTooWond.dc.html": {
+   "x": 3360,
+   "y": 41800,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Three Things Too Wonderful"
+  },
+  "PRO-C11-D-P05-LittleUponTheEarth.dc.html": {
+   "x": 0,
+   "y": 43000,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Little upon the Earth"
+  },
+  "PRO-C11-D-P06-LittleUponTheEarth.dc.html": {
+   "x": 840,
+   "y": 43000,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Little upon the Earth"
+  },
+  "PRO-C11-D-P07-TheWordsOfKingLemu.dc.html": {
+   "x": 1680,
+   "y": 43000,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Words of King Lemuel"
+  },
+  "PRO-C11-D-P08-AWorthyWomanWhoCan.dc.html": {
+   "x": 2520,
+   "y": 43000,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · A Worthy Woman Who Can Find?"
+  },
+  "PRO-C11-D-P09-AWorthyWomanWhoCan.dc.html": {
+   "x": 3360,
+   "y": 43000,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · A Worthy Woman Who Can Find?"
+  },
+  "PRO-C11-D-P10-AWorthyWomanWhoCan.dc.html": {
+   "x": 0,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · A Worthy Woman Who Can Find?"
+  },
+  "PRO-C11-D-P11-HerChildrenRiseUp.dc.html": {
+   "x": 840,
+   "y": 44200,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Her Children Rise Up"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "PRO-C01-00-Title.dc.html",
+  "PRO-C01-D-P01-TheProverbsOfSolom.dc.html",
+  "PRO-C01-D-P02-IfSinnersEnticeThe.dc.html",
+  "PRO-C01-D-P03-WisdomCriethAloudI.dc.html",
+  "PRO-C01-D-P04-WisdomCriethAloudI.dc.html",
+  "PRO-C01-D-P05-IfThouSeekHerAsSil.dc.html",
+  "PRO-C01-D-P06-TheStrangeWoman.dc.html",
+  "PRO-C01-D-P07-TrustInJehovahWith.dc.html",
+  "PRO-C01-D-P08-TrustInJehovahWith.dc.html",
+  "PRO-C01-D-P09-TrustInJehovahWith.dc.html",
+  "PRO-C01-D-P10-ATreeOfLife.dc.html",
+  "PRO-C01-D-P11-ATreeOfLife.dc.html",
+  "PRO-C01-D-P12-WithholdNotGood.dc.html",
+  "PRO-C02-00-Title.dc.html",
+  "PRO-C02-D-P01-GetWisdom.dc.html",
+  "PRO-C02-D-P02-GetWisdom.dc.html",
+  "PRO-C02-D-P03-ThePathOfTheWicked.dc.html",
+  "PRO-C02-D-P04-KeepThyHeart.dc.html",
+  "PRO-C02-D-P05-TheLipsOfAStrangeW.dc.html",
+  "PRO-C02-D-P06-ThineOwnWell.dc.html",
+  "PRO-C02-D-P07-SuretyForThyNeighb.dc.html",
+  "PRO-C02-D-P08-SuretyForThyNeighb.dc.html",
+  "PRO-C02-D-P09-AWorthlessPerson.dc.html",
+  "PRO-C02-D-P10-TheCommandmentIsAL.dc.html",
+  "PRO-C02-D-P11-TheCommandmentIsAL.dc.html",
+  "PRO-C02-D-P12-TheCommandmentIsAL.dc.html",
+  "PRO-C03-00-Title.dc.html",
+  "PRO-C03-D-P01-KeepMyWords.dc.html",
+  "PRO-C03-D-P02-AtTheWindowOfMyHou.dc.html",
+  "PRO-C03-D-P03-AtTheWindowOfMyHou.dc.html",
+  "PRO-C03-D-P04-AtTheWindowOfMyHou.dc.html",
+  "PRO-C03-D-P05-DothNotWisdomCry.dc.html",
+  "PRO-C03-D-P06-DothNotWisdomCry.dc.html",
+  "PRO-C03-D-P07-DothNotWisdomCry.dc.html",
+  "PRO-C03-D-P08-JehovahPossessedMe.dc.html",
+  "PRO-C03-D-P09-JehovahPossessedMe.dc.html",
+  "PRO-C03-D-P10-HerSevenPillars.dc.html",
+  "PRO-C03-D-P11-HerSevenPillars.dc.html",
+  "PRO-C03-D-P12-TheFoolishWoman.dc.html",
+  "PRO-C04-00-Title.dc.html",
+  "PRO-C04-S-P01-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P02-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P03-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P04-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P05-AFalseBalance.dc.html",
+  "PRO-C04-S-P06-AFalseBalance.dc.html",
+  "PRO-C04-S-P07-AFalseBalance.dc.html",
+  "PRO-C04-S-P08-AFalseBalance.dc.html",
+  "PRO-C04-S-P09-WhosoLovethCorrect.dc.html",
+  "PRO-C04-S-P10-WhosoLovethCorrect.dc.html",
+  "PRO-C04-S-P11-WhosoLovethCorrect.dc.html",
+  "PRO-C04-S-P12-WhosoLovethCorrect.dc.html",
+  "PRO-C05-00-Title.dc.html",
+  "PRO-C05-S-P01-AWiseSonHearethHis.dc.html",
+  "PRO-C05-S-P02-AWiseSonHearethHis.dc.html",
+  "PRO-C05-S-P03-AWiseSonHearethHis.dc.html",
+  "PRO-C05-S-P04-EveryWiseWomanBuil.dc.html",
+  "PRO-C05-S-P05-EveryWiseWomanBuil.dc.html",
+  "PRO-C05-S-P06-EveryWiseWomanBuil.dc.html",
+  "PRO-C05-S-P07-EveryWiseWomanBuil.dc.html",
+  "PRO-C05-S-P08-EveryWiseWomanBuil.dc.html",
+  "PRO-C05-S-P09-ASoftAnswerTurneth.dc.html",
+  "PRO-C05-S-P10-ASoftAnswerTurneth.dc.html",
+  "PRO-C05-S-P11-ASoftAnswerTurneth.dc.html",
+  "PRO-C05-S-P12-ASoftAnswerTurneth.dc.html",
+  "PRO-C05-S-P13-ASoftAnswerTurneth.dc.html",
+  "PRO-C06-00-Title.dc.html",
+  "PRO-C06-S-P01-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P02-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P03-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P04-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P05-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P06-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P07-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P08-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P09-AStrongTower.dc.html",
+  "PRO-C06-S-P10-AStrongTower.dc.html",
+  "PRO-C06-S-P11-AStrongTower.dc.html",
+  "PRO-C07-00-Title.dc.html",
+  "PRO-C07-S-P01-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P02-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P03-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P04-BetterIsThePoorTha.dc.html",
+  "PRO-C07-S-P05-WineIsAMocker.dc.html",
+  "PRO-C07-S-P06-WineIsAMocker.dc.html",
+  "PRO-C07-S-P07-WineIsAMocker.dc.html",
+  "PRO-C07-S-P08-WineIsAMocker.dc.html",
+  "PRO-C07-S-P09-TheKingSHeartIsInT.dc.html",
+  "PRO-C07-S-P10-TheKingSHeartIsInT.dc.html",
+  "PRO-C07-S-P11-TheKingSHeartIsInT.dc.html",
+  "PRO-C07-S-P12-TheKingSHeartIsInT.dc.html",
+  "PRO-C08-00-Title.dc.html",
+  "PRO-C08-S-P01-AGoodName.dc.html",
+  "PRO-C08-S-P02-AGoodName.dc.html",
+  "PRO-C08-S-P03-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P04-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P05-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P06-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P07-WhoHathWoe.dc.html",
+  "PRO-C08-S-P08-FretNotThyself.dc.html",
+  "PRO-C08-S-P09-FretNotThyself.dc.html",
+  "PRO-C08-S-P10-FretNotThyself.dc.html",
+  "PRO-C08-S-P11-TheFieldOfTheSlugg.dc.html",
+  "PRO-C09-00-Title.dc.html",
+  "PRO-C09-S-P01-TheMenOfHezekiahCo.dc.html",
+  "PRO-C09-S-P02-TheMenOfHezekiahCo.dc.html",
+  "PRO-C09-S-P03-TheMenOfHezekiahCo.dc.html",
+  "PRO-C09-S-P04-AsADogThatReturnet.dc.html",
+  "PRO-C09-S-P05-AsADogThatReturnet.dc.html",
+  "PRO-C09-S-P06-AsADogThatReturnet.dc.html",
+  "PRO-C09-S-P07-IronSharpenethIron.dc.html",
+  "PRO-C09-S-P08-IronSharpenethIron.dc.html",
+  "PRO-C09-S-P09-IronSharpenethIron.dc.html",
+  "PRO-C09-S-P10-TheStateOfThyFlock.dc.html",
+  "PRO-C10-00-Title.dc.html",
+  "PRO-C10-S-P01-TheRighteousAreBol.dc.html",
+  "PRO-C10-S-P02-TheRighteousAreBol.dc.html",
+  "PRO-C10-S-P03-TheRighteousAreBol.dc.html",
+  "PRO-C10-S-P04-TheRighteousAreBol.dc.html",
+  "PRO-C10-S-P05-WhereThereIsNoVisi.dc.html",
+  "PRO-C10-S-P06-WhereThereIsNoVisi.dc.html",
+  "PRO-C10-S-P07-WhereThereIsNoVisi.dc.html",
+  "PRO-C10-S-P08-WhereThereIsNoVisi.dc.html",
+  "PRO-C11-00-Title.dc.html",
+  "PRO-C11-D-P01-TheWordsOfAgur.dc.html",
+  "PRO-C11-D-P02-TwoThingsHaveIAske.dc.html",
+  "PRO-C11-D-P03-ThereIsAGeneration.dc.html",
+  "PRO-C11-D-P04-ThreeThingsTooWond.dc.html",
+  "PRO-C11-D-P05-LittleUponTheEarth.dc.html",
+  "PRO-C11-D-P06-LittleUponTheEarth.dc.html",
+  "PRO-C11-D-P07-TheWordsOfKingLemu.dc.html",
+  "PRO-C11-D-P08-AWorthyWomanWhoCan.dc.html",
+  "PRO-C11-D-P09-AWorthyWomanWhoCan.dc.html",
+  "PRO-C11-D-P10-AWorthyWomanWhoCan.dc.html",
+  "PRO-C11-D-P11-HerChildrenRiseUp.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Proverbs Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Beginning of Knowledge (Proverbs 1–3)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Get Wisdom (Proverbs 4–6)",
+   "x": 0,
+   "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Wisdom Hath Builded Her House (Proverbs 7–9)",
+   "x": 0,
+   "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · A Wise Son (Proverbs 10–12)",
+   "x": 0,
+   "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · A Tree of Life (Proverbs 13–15)",
+   "x": 0,
+   "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Lot Is Cast into the Lap (Proverbs 16–18)",
+   "x": 0,
+   "y": 22200
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The King's Heart (Proverbs 19–21)",
+   "x": 0,
+   "y": 26300
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Words of the Wise (Proverbs 22–24)",
+   "x": 0,
+   "y": 30400
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Apples of Gold (Proverbs 25–27)",
+   "x": 0,
+   "y": 34500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Bold as a Lion (Proverbs 28–29)",
+   "x": 0,
+   "y": 38600
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · A Worthy Woman (Proverbs 30–31)",
+   "x": 0,
+   "y": 41500
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
