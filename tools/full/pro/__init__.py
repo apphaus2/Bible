@@ -31,5 +31,7 @@ META = {
      "blurb": "Say unto wisdom, Thou art my sister; at the window of my house I looked forth, and beheld a young man void of understanding in the twilight; doth not wisdom cry? — by me kings reign; Jehovah possessed me in the beginning of his way, when he set a circle upon the face of the deep; Wisdom hath builded her house, she hath hewn out her seven pillars; stolen waters are sweet."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "A Wise Son", "range": "Proverbs 10–12", "bible_chapters": [10, 11, 12],
      "blurb": "The proverbs of Solomon, one by one: a wise son maketh a glad father; the hand of the diligent maketh rich; the mouth of the righteous is a fountain of life; hatred stirreth up strifes, but love covereth all transgressions; a false balance is an abomination to Jehovah; as a ring of gold in a swine's snout; a worthy woman is the crown of her husband."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "A Tree of Life", "range": "Proverbs 13–15", "bible_chapters": [13, 14, 15],
+     "blurb": "Hope deferred maketh the heart sick, but when the desire cometh, it is a tree of life; the law of the wise is a fountain of life; every wise woman buildeth her house; where no oxen are, the crib is clean; a soft answer turneth away wrath; the eyes of Jehovah are in every place; better is a dinner of herbs, where love is."},
   ],
 }

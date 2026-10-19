@@ -116,7 +116,7 @@ def e_night(p):
 
 @emb("rays")
 def e_rays(p):
-    return (sky(p, "#3A6AA8", "#C8E0F0", "#6A8A4A", gy=96) + rays(160, -30, 26, 20, 260, "#FFE680", 0.55, 6, 30, 150)
+    return (sky(p, "#1F4A8A", "#8FC0E0", "#6A8A4A", gy=96) + glow(160, -10, 70, "#FFF4C2", 0.7) + rays(160, -20, 11, 30, 260, "#FFE680", 0.5, 5, 25, 155)
             + hills(96, 8, "#4E7A3A", 8) + f'<rect x="-500" y="96" width="1320" height="420" fill="#5E8A3A"></rect>'
             + "".join(f'<path d="M{x} 96 L {x - 4} 112 L {x + 4} 112 Z" fill="#3A5A2A"></path>' for x in range(-40, 380, 30)))
 

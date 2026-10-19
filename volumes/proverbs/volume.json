@@ -46,6 +46,16 @@
    "prefixes": [
     "PRO-C04-"
    ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "A Tree of Life",
+   "range": "Proverbs 13–15",
+   "blurb": "Hope deferred maketh the heart sick, but when the desire cometh, it is a tree of life; the law of the wise is a fountain of life; every wise woman buildeth her house; where no oxen are, the crib is clean; a soft answer turneth away wrath; the eyes of Jehovah are in every place; better is a dinner of herbs, where love is.",
+   "prefixes": [
+    "PRO-C05-"
+   ]
   }
  ]
 }
