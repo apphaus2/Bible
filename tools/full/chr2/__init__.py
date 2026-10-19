@@ -38,5 +38,7 @@ META = {
      "blurb": "A great multitude from beyond the sea; Jehoshaphat's prayer — neither know we what to do, but our eyes are upon thee; Jahaziel: the battle is not yours, but God's — stand ye still, and see the salvation of Jehovah; the singers going out before the army, and the valley of Beracah; then Jehoram, Edom's revolt, and a writing from Elijah the prophet."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Joash", "range": "2 Chronicles 22–24", "bible_chapters": [22, 23, 24],
      "blurb": "Ahaziah and the house of Ahab; Athaliah destroys the seed royal, and Jehoshabeath hides the child Joash six years in the house of God; Jehoiada's covenant — long live the king; treason! treason!; the chest at the gate and the house restored; then, Jehoiada dead, Zechariah his son stoned in the court — Jehovah look upon it, and require it."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Amaziah and Uzziah", "range": "2 Chronicles 25–27", "bible_chapters": [25, 26, 27],
+     "blurb": "Amaziah, right but not with a perfect heart: the hundred talents — Jehovah is able to give thee much more than this; the gods of Seir; the thistle and the cedar; then Uzziah who sought God and loved husbandry, his towers and engines; his heart lifted up, the censer in the temple, and the leprosy in his forehead; and Jotham, who ordered his ways before Jehovah."},
   ],
 }

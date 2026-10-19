@@ -191,3 +191,59 @@ def writing(w, h, seed):
              f'<ellipse cx="{f(w * 0.76)}" cy="{f(h * 0.5)}" rx="{f(w * 0.03)}" ry="{f(h * 0.27)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></ellipse>'
              f'<circle cx="{f(w * 0.5)}" cy="{f(h * 0.8)}" r="{f(min(w, h) * 0.04)}" fill="#B5121B" stroke="#0D0D0F" stroke-width="2"></circle>')
     return "".join(o)
+
+# ---- 2 Chronicles 25–27 -------------------------------------------------------------------------------------------------
+def rock_top(w, h, seed):
+    """The top of the rock in Seir: a sheer red crag against the sky, nothing on it (25:12 told in words only)."""
+    o = [K2.sky(w, h, "#5A3A4A", "#E8A06A"),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.34)} {f(h * 0.3)} L {f(w * 0.46)} {f(h * 0.24)} L {f(w * 0.62)} {f(h * 0.26)} L {f(w * 0.66)} {f(h + 10)} Z" fill="#8A3A1E" stroke="#0D0D0F" stroke-width="2.6"></path>'
+         f'<path d="M{f(w * 0.36)} {f(h * 0.4)} L {f(w * 0.38)} {f(h * 0.9)} M{f(w * 0.5)} {f(h * 0.3)} L {f(w * 0.52)} {f(h * 0.8)} M{f(w * 0.6)} {f(h * 0.34)} L {f(w * 0.62)} {f(h * 0.9)}" stroke="#5A2412" stroke-width="2"></path>',
+         hills(w, h, h * 0.82, seed, "#5A2A1E", amp=8, step=60)]
+    return "".join(o)
+
+def idols_edom(p, w, h, seed):
+    """The gods of the children of Seir set up, and incense burning before them (no worshipper drawn)."""
+    o = [K2.sky(w, h, "#2A1A2A", "#6A3A3A"), ground(w, h, h * 0.76, "#3A2A2A", dy=0)]
+    for i in range(3):
+        x = w * (0.28 + i * 0.22); s = min(1.0, h / 360)
+        o.append(f'<g transform="translate({f(x)} {f(h * 0.76)}) scale({f(s)})"><rect x="-20" y="-24" width="40" height="24" fill="#5A4A4A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<path d="M-14 -24 L -14 -110 Q 0 -130 14 -110 L 14 -24 Z" fill="#8A6A5A" stroke="#0D0D0F" stroke-width="2.2"></path>'
+                 f'<circle cx="0" cy="-118" r="14" fill="#8A6A5A" stroke="#0D0D0F" stroke-width="2.2"></circle>'
+                 f'<circle cx="-5" cy="-120" r="2.4" fill="#0D0D0F"></circle><circle cx="5" cy="-120" r="2.4" fill="#0D0D0F"></circle></g>')
+    o.append(f'<path d="M{f(w * 0.5)} {f(h * 0.7)} C {f(w * 0.46)} {f(h * 0.5)} {f(w * 0.56)} {f(h * 0.36)} {f(w * 0.5)} {f(h * 0.12)}" stroke="#C8C2B6" stroke-width="{f(w * 0.02)}" fill="none" opacity="0.6"></path>'
+             + horned_altar(w * 0.5, h * 0.82, min(0.4, h / 800), fire=True, seed=seed))
+    return "".join(o)
+
+def towers_engines(w, h, seed):
+    """Uzziah's towers at the corner gate and the valley gate, and the engines on the battlements to shoot arrows and great
+    stones, as a blueprint elevation."""
+    o = [bp(w, h)]
+    base = h * 0.84
+    for i, x in enumerate((0.22, 0.78)):
+        cx = w * x; tw, th = w * 0.18, h * 0.5
+        o.append(f'<rect x="{f(cx - tw / 2)}" y="{f(base - th)}" width="{f(tw)}" height="{f(th)}" fill="none" stroke="#8FD0E2" stroke-width="2.2"></rect>'
+                 + "".join(f'<rect x="{f(cx - tw / 2 + k * tw / 5)}" y="{f(base - th - 14)}" width="{f(tw / 10)}" height="14" fill="none" stroke="#8FD0E2" stroke-width="1.8"></rect>' for k in range(5))
+                 + label(cx, base + 16, ["THE CORNER GATE", "THE VALLEY GATE"][i], "#8FD0E2", 9))
+        ex, ey = cx, base - th - 22
+        o.append(f'<path d="M{f(ex - 30)} {f(ey)} L {f(ex + 30)} {f(ey)} M{f(ex - 20)} {f(ey)} L {f(ex + 10)} {f(ey - 40)}" stroke="#FFD23F" stroke-width="3"></path>'
+                 f'<circle cx="{f(ex + 10)}" cy="{f(ey - 44)}" r="7" fill="none" stroke="#FFD23F" stroke-width="2"></circle>')
+    o.append(f'<path d="M{f(w * 0.31)} {f(base - h * 0.36)} L {f(w * 0.69)} {f(base - h * 0.36)} L {f(w * 0.69)} {f(base)} L {f(w * 0.31)} {f(base)} Z" fill="none" stroke="#4A7A9A" stroke-width="1.8" stroke-dasharray="6 5"></path>'
+             + label(w * 0.5, base - h * 0.4, "THE WALL", "#4A7A9A", 9) + label(w * 0.5, base - h * 0.2, "ENGINES · ARROWS AND GREAT STONES", "#FFD23F", 10))
+    return "".join(o)
+
+def censer_altar(p, w, h, seed, priests=True):
+    """Within the temple: the golden altar of incense smoking, a censer in the king's hand, priests coming in after him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#C8962A"></rect>']
+    for k in range(int(w // 60) + 2):
+        o.append(f'<path d="M{f(k * 60)} -10 L {f(k * 60)} {f(h * 0.88)}" stroke="#A8761A" stroke-width="3"></path>'
+                 f'<circle cx="{f(k * 60 + 30)}" cy="{f(h * 0.3)}" r="{f(min(w, h) * 0.03)}" fill="none" stroke="#7A5210" stroke-width="2"></circle>')
+    o.append(ground(w, h, h * 0.88, "#8A6A3A", dy=0))
+    ax = w * 0.62
+    o.append(f'<rect x="{f(ax - w * 0.06)}" y="{f(b - h * 0.26)}" width="{f(w * 0.12)}" height="{f(h * 0.26)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             f'<path d="M{f(ax)} {f(b - h * 0.28)} C {f(ax - 20)} {f(h * 0.4)} {f(ax + 20)} {f(h * 0.3)} {f(ax)} {f(h * 0.06)}" stroke="#E8E2D6" stroke-width="{f(w * 0.02)}" fill="none" opacity="0.6"></path>')
+    s = fit(b, max(h * 0.4, b - 240))
+    o.append(king_fig(p, w * 0.44, b, s, up=[(22, -158), (40, -170), (54, -160)], cloth=REHO_C))
+    if priests:
+        for i in range(3): o.append(priest(p, w * (0.08 + i * 0.1), b, s * 0.94))
+    return "".join(o)
