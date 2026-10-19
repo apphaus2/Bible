@@ -184,8 +184,10 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 1 Chronicles | 10 · The Porters and the Captains | 26–27 | title + 8 (pp. 97–104) | 66/66 verses full (the gates as a plan with their wards; the twelve captains as a calendar wheel) | `volumes/1chronicles/` |
 | 1 Chronicles | 11 · Thine Is the Kingdom | 28–29 | title + 11 (pp. 105–115) | 51/51 verses full (the pattern as 1 Kings' blueprints; David's death words only, over the crown laid down) | `volumes/1chronicles/` |
 | **1 Chronicles** | **complete: cover + 11 chapters** | **1–29** | **127 pages (115 numbered)** | **942 verses: all full** | `volumes/1chronicles/` |
+| 2 Chronicles | 1 · Wisdom and Knowledge | 1–4 | cover + title + 12 (pp. 1–12) | 74/74 verses full (the house as 1 Kings' blueprints) | `volumes/2chronicles/` |
 
-**Genesis through 1 Chronicles (thirteen volumes) are complete.** Next: 2 Chronicles. 1 Chronicles is `tools/full/chr1/` (a module
+**Genesis through 1 Chronicles (thirteen volumes) are complete; 2 Chronicles is in progress** (`tools/full/chr2/`, fourteen chapters
+planned in `chr2/__init__.py`; Solomon's house reuses 1 Kings' blueprints, the kings of Judah reuse 1–2 Kings' faces and drawings). 1 Chronicles is `tools/full/chr1/` (a module
 name cannot start with a digit; eleven chapters, plan in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts
 (`chr1.art.lineage`, `branch`, whose second row of names is staggered so no line crosses a name) over roll cells
 (`chr1.common.cell`/`cells`/`roll`); David's story reuses 2 Samuel's cast and drawings (`sa2.common.over`/`D` for the reference
@@ -470,7 +472,7 @@ Usable panel widths: full 702, half 342; heights are the row height minus 6.
 
 **Covers:** "THE BOOK OF" / "No. NN", the series title in Anton 136–168 px (shrink longer names), "Book N — Name",
 "Chapters a – b", a vertical kanji block in the accent color (創世記 SŌSEIKI for Genesis,
-出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel, サムエル記下 SAMUERU-KI GE for 2 Samuel, 列王記上 RETSUŌKI JŌ for 1 Kings, 列王記下 RETSUŌKI GE for 2 Kings, 歴代志上 REKIDAISHI JŌ for 1 Chronicles), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
+出エジプト記 SHUTSU for Exodus, 民数記 MINSŪKI for Numbers, ヨシュア記 YOSHUA-KI for Joshua, 士師記 SHISHIKI for Judges, ルツ記 RUTSU-KI for Ruth, サムエル記上 SAMUERU-KI JŌ for 1 Samuel, サムエル記下 SAMUERU-KI GE for 2 Samuel, 列王記上 RETSUŌKI JŌ for 1 Kings, 列王記下 RETSUŌKI GE for 2 Kings, 歴代志上 REKIDAISHI JŌ for 1 Chronicles, 歴代志下 REKIDAISHI GE for 2 Chronicles), one short ASV caption, "ASV" and "Vol. N" at the bottom (the digest covers predate this and
 still spell it out; leave them).
 
 **Recurring components** (all in `tools/kit/mk.py`):
@@ -740,6 +742,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (2 Chronicles next).
+- On through the Bible, book by book (2 Chronicles in progress, then Ezra).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.

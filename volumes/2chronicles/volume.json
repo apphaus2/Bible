@@ -1,0 +1,21 @@
+{
+ "id": "2chronicles",
+ "order": 14,
+ "name": "2 Chronicles",
+ "kanji": "歴代志下",
+ "thumb": "vol-2chronicles-",
+ "lede": "The fourteenth book of the Bible, in full: Solomon's wisdom and the house of Jehovah filled with glory, the kings of Judah who sought Jehovah and those who forsook him, Hezekiah's passover and Josiah's book, and the seventy years of the land's sabbath, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Wisdom and Knowledge",
+   "range": "2 Chronicles 1–4",
+   "blurb": "Solomon at the high place at Gibeon, and in that night, ask what I shall give thee — give me now wisdom and knowledge; chariots and horsemen, and silver and gold as stones; Huram king of Tyre and the cedars of Lebanon; then the house of Jehovah on mount Moriah: the most holy house and its cherubim, Jachin and Boaz, the molten sea upon twelve oxen, and the vessels of gold.",
+   "prefixes": [
+    "Main.dc.html",
+    "2CH-C01-"
+   ]
+  }
+ ]
+}
