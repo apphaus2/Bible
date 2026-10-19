@@ -205,10 +205,17 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Ezra | 4 · Ezra the Scribe | 7–8 | title + 9 (pp. 21–29) | 64/64 verses full (Ezra's line to Aaron as a chart; the silver and gold weighed on a great balance) | `volumes/ezra/` |
 | Ezra | 5 · The Strange Wives | 9–10 | title + 8 (pp. 30–37) | 59/59 verses full (Ezra's prayer on his knees; the people trembling in the rain; the names as roll cells) | `volumes/ezra/` |
 | **Ezra** | **complete: cover + 5 chapters** | **1–10** | **43 pages (37 numbered)** | **280 verses: all full** | `volumes/ezra/` |
+| Esther | 1 · Vashti and Esther | 1–2 | cover + title + 9 (pp. 1–9) | 45/45 verses full (all new drawings, `est/art.py`; 2:23 words over the threshold and the book of the chronicles) | `volumes/esther/` |
+| Esther | 2 · For Such a Time as This | 3–4 | title + 7 (pp. 10–16) | 32/32 verses full (Pur as a wheel of the twelve months; Mordecai in sackcloth) | `volumes/esther/` |
+| Esther | 3 · The King Could Not Sleep | 5–7 | title + 12 (pp. 17–28) | 38/38 verses full (the gallows only ever standing and empty; 7:10 words over the empty gallows far off at dusk) | `volumes/esther/` |
+| Esther | 4 · The Days of Purim | 8–10 | title + 10 (pp. 29–38) | 52/52 verses full (9:1–16 words only, over the map of the provinces and Shushan at dusk; the days of Adar as a chart) | `volumes/esther/` |
+| **Esther** | **complete: cover + 4 chapters** | **1–10** | **43 pages (38 numbered)** | **167 verses: all full** | `volumes/esther/` |
 
 **Genesis through Ezra (fifteen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Nehemiah, Esther,
-Job and Proverbs are being built in parallel worktrees (packages `neh`, `est`, `job`, `pro`) from one brief; Psalms comes after Job. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
+`est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Nehemiah,
+Job, Psalms, Proverbs, Ecclesiastes, the Song, Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `neh`, `job`, `psa`, `pro`, `ecc`, `sng`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
