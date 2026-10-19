@@ -344,3 +344,39 @@ def stopped_springs(w, h, upper=False):
         o.append(f'<path d="M-10 {f(h * 0.96)} C {f(w * 0.3)} {f(h * 0.88)} {f(w * 0.6)} {f(h * 0.98)} {f(w + 10)} {f(h * 0.9)}" stroke="#2C9DB8" stroke-width="3" stroke-dasharray="10 8" fill="none"></path>'
                  + label(w * 0.5, h * 0.86, "THE FOUNTAINS STOPPED", "#D7261E", 9))
     return "".join(o)
+
+# ---- 2 Chronicles 33–34 -------------------------------------------------------------------------------------------------
+import judges2 as JG2
+
+def chains_babylon(p, w, h, seed):
+    """Manasseh taken in chains and carried to Babylon: a bound figure among Assyrian captains on the long road east."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A4A5A", "#E8A06A"), hills(w, h, h * 0.56, seed, "#8A6A5A", amp=10, step=90), ground(w, h, h * 0.62, "#A88A6A", dy=0)]
+    s = fit(b, max(h * 0.42, b - 230))
+    o.append(warrior(p, w * 0.2, b, s, "#8A5A1A") + king_fig(p, w * 0.44, b, s * 0.96, cloth=REHO_C) + warrior(p, w * 0.66, b, s, "#8A5A1A", flip=True))
+    o.append(f'<path d="M{f(w * 0.44 - 14 * s)} {f(b - 110 * s)} L {f(w * 0.44 + 14 * s)} {f(b - 110 * s)}" stroke="#5A5A62" stroke-width="{f(5 * s)}"></path>'
+             f'<path d="M{f(w * 0.44 + 14 * s)} {f(b - 110 * s)} Q {f(w * 0.55)} {f(b - 80 * s)} {f(w * 0.66 - 10 * s)} {f(b - 120 * s)}" stroke="#5A5A62" stroke-width="{f(3 * s)}" fill="none" stroke-dasharray="6 3"></path>')
+    o.append(label(w * 0.92, h * 0.5, "→ BABYLON", "#3A2A2A", 10, "end"))
+    return "".join(o)
+
+def outer_wall(w, h):
+    """Manasseh's outer wall to the city of David on the west side of Gihon, to the fish gate, compassing Ophel — a plan."""
+    o = [bp(w, h)]
+    cx, cy = w * 0.54, h * 0.5
+    o.append(f'<path d="M{f(cx - w * 0.14)} {f(cy - h * 0.26)} L {f(cx + w * 0.12)} {f(cy - h * 0.3)} L {f(cx + w * 0.16)} {f(cy + h * 0.26)} L {f(cx - w * 0.1)} {f(cy + h * 0.3)} Z" fill="#8FD0E2" fill-opacity="0.08" stroke="#8FD0E2" stroke-width="2"></path>'
+             + label(cx, cy, "THE CITY OF DAVID", "#8FD0E2", 9) + label(cx, cy + h * 0.2, "OPHEL", "#8FD0E2", 9))
+    o.append(f'<path d="M{f(cx - w * 0.24)} {f(cy - h * 0.38)} L {f(cx + w * 0.18)} {f(cy - h * 0.42)} L {f(cx + w * 0.26)} {f(cy + h * 0.38)} L {f(cx - w * 0.2)} {f(cy + h * 0.42)} Z" fill="none" stroke="#FFD23F" stroke-width="3.4"></path>'
+             + label(cx - w * 0.3, cy - h * 0.1, "THE OUTER WALL", "#FFD23F", 9, "end"))
+    o.append(node(cx + w * 0.36, cy - h * 0.04, "GIHON", CYAN, r=5, dy=-11, size=9) + node(cx - w * 0.24, cy - h * 0.38, "THE FISH GATE", GOLD, r=5, dy=-11, size=9))
+    return "".join(o)
+
+def law_read(p, w, h, seed):
+    """The king standing by his place in the house of Jehovah reading the book of the covenant, all the people great and
+    small before him."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), temple_front(w * 0.5, h * 0.62, w * 0.5, seed), ground(w, h, h * 0.62, "#C8B88A", dy=0)]
+    s = fit(h * 0.7, h * 0.3)
+    o.append(king_fig(p, w * 0.5, h * 0.72, s, up=[(22, -158), (34, -176), (40, -150)], cloth=REHO_C)
+             + f'<rect x="{f(w * 0.5 + 30 * s)}" y="{f(h * 0.72 - 172 * s)}" width="{f(30 * s)}" height="{f(24 * s)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.34, h * 0.76, b, 9, s * 0.7, s * 1.1) + crowd_at(p, w, h, seed + 1, w * 0.66, w * 0.98, h * 0.76, b, 9, s * 0.7, s * 1.1, flip=True))
+    return "".join(o)

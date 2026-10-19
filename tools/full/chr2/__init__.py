@@ -46,5 +46,7 @@ META = {
      "blurb": "Letters from Beer-sheba even to Dan — ye children of Israel, turn again unto Jehovah; laughed to scorn, yet some humbled themselves and came; the passover in the second month — the good Jehovah pardon every one that setteth his heart to seek God; great joy in Jerusalem, not the like since Solomon; and the heaps of the first-fruits and the tithes."},
     {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Sennacherib", "range": "2 Chronicles 32", "bible_chapters": [32],
      "blurb": "Sennacherib come into Judah; the fountains stopped and the wall built up — with him is an arm of flesh, but with us is Jehovah our God; whereon do ye trust?; the letters railing on Jehovah; Hezekiah and Isaiah cry to heaven, and the camp of Assyria cut off; Hezekiah sick and humbled; the upper spring of Gihon; and the ambassadors of Babylon."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Manasseh and Josiah", "range": "2 Chronicles 33–34", "bible_chapters": [33, 34],
+     "blurb": "Manasseh's altars in the two courts and the graven image in the house of God; taken in chains to Babylon, he humbled himself greatly — then Manasseh knew that Jehovah he was God; Amon; then Josiah, who while yet young began to seek the God of David: I have found the book of the law; Huldah — because thy heart was tender; and the covenant read in the ears of all the people."},
   ],
 }

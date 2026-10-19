@@ -196,6 +196,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 2 Chronicles | 10 · Ahaz and Hezekiah | 28–29 | title + 12 (pp. 114–125) | 63/63 verses full (28:3 words only; the captives clothed and led to Jericho) | `volumes/2chronicles/` |
 | 2 Chronicles | 11 · The Passover of Hezekiah | 30–31 | title + 8 (pp. 126–133) | 48/48 verses full (the posts with the letters as a map; the heaps of the tithes) | `volumes/2chronicles/` |
 | 2 Chronicles | 12 · Sennacherib | 32 | title + 7 (pp. 134–140) | 33/33 verses full (the springs stopped and Gihon as plans; 32:21 words over the silent camp) | `volumes/2chronicles/` |
+| 2 Chronicles | 13 · Manasseh and Josiah | 33–34 | title + 11 (pp. 141–151) | 58/58 verses full (33:6 and 33:24 words only; Manasseh in chains and humbled; the outer wall as a plan) | `volumes/2chronicles/` |
 
 **Genesis through 1 Chronicles (thirteen volumes) are complete; 2 Chronicles is in progress** (`tools/full/chr2/`, fourteen chapters
 planned in `chr2/__init__.py`; Solomon's house reuses 1 Kings' blueprints, the kings of Judah reuse 1–2 Kings' faces and drawings). 1 Chronicles is `tools/full/chr1/` (a module

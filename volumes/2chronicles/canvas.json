@@ -1080,6 +1080,90 @@
    "w": 760,
    "h": 1080,
    "title": "140 · The Upper Spring of Gihon"
+  },
+  "2CH-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Manasseh and Josiah"
+  },
+  "2CH-C13-D-P01-Manasseh.dc.html": {
+   "x": 840,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Manasseh"
+  },
+  "2CH-C13-D-P02-Manasseh.dc.html": {
+   "x": 1680,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Manasseh"
+  },
+  "2CH-C13-D-P03-HeHumbledHimselfGr.dc.html": {
+   "x": 2520,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · He Humbled Himself Greatly"
+  },
+  "2CH-C13-R-P01-TheKingsOfJudah.dc.html": {
+   "x": 3360,
+   "y": 50000,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · The Kings of Judah"
+  },
+  "2CH-C13-E-P01-Josiah.dc.html": {
+   "x": 0,
+   "y": 51200,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Josiah"
+  },
+  "2CH-C13-E-P02-ToRepairTheHouse.dc.html": {
+   "x": 840,
+   "y": 51200,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · To Repair the House"
+  },
+  "2CH-C13-E-P03-TheBookOfTheLaw.dc.html": {
+   "x": 1680,
+   "y": 51200,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · The Book of the Law"
+  },
+  "2CH-C13-E-P04-TheBookOfTheLaw.dc.html": {
+   "x": 2520,
+   "y": 51200,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · The Book of the Law"
+  },
+  "2CH-C13-E-P05-HuldahTheProphetes.dc.html": {
+   "x": 3360,
+   "y": 51200,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · Huldah the Prophetess"
+  },
+  "2CH-C13-E-P06-BecauseThyHeartWas.dc.html": {
+   "x": 0,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Because Thy Heart Was Tender"
+  },
+  "2CH-C13-E-P07-TheBookOfTheCovena.dc.html": {
+   "x": 840,
+   "y": 52400,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Book of the Covenant"
   }
  },
  "order": [
@@ -1235,7 +1319,19 @@
   "2CH-C12-D-P04-WhereonDoYeTrust.dc.html",
   "2CH-C12-D-P05-TheyCriedToHeaven.dc.html",
   "2CH-C12-E-P01-ExceedingMuchRiche.dc.html",
-  "2CH-C12-E-P02-TheUpperSpringOfGi.dc.html"
+  "2CH-C12-E-P02-TheUpperSpringOfGi.dc.html",
+  "2CH-C13-00-Title.dc.html",
+  "2CH-C13-D-P01-Manasseh.dc.html",
+  "2CH-C13-D-P02-Manasseh.dc.html",
+  "2CH-C13-D-P03-HeHumbledHimselfGr.dc.html",
+  "2CH-C13-R-P01-TheKingsOfJudah.dc.html",
+  "2CH-C13-E-P01-Josiah.dc.html",
+  "2CH-C13-E-P02-ToRepairTheHouse.dc.html",
+  "2CH-C13-E-P03-TheBookOfTheLaw.dc.html",
+  "2CH-C13-E-P04-TheBookOfTheLaw.dc.html",
+  "2CH-C13-E-P05-HuldahTheProphetes.dc.html",
+  "2CH-C13-E-P06-BecauseThyHeartWas.dc.html",
+  "2CH-C13-E-P07-TheBookOfTheCovena.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1328,6 +1424,13 @@
    "text": "Chapter 12 · Sennacherib (2 Chronicles 32)",
    "x": 0,
    "y": 46800
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Manasseh and Josiah (2 Chronicles 33–34)",
+   "x": 0,
+   "y": 49700
   }
  },
  "designSystems": [],
