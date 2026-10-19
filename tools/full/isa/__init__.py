@@ -32,5 +32,7 @@ META = {
      "blurb": "In the year that king Uzziah died: the Lord upon a throne, high and lifted up, and the seraphim crying holy, holy, holy; woe is me; the live coal; here am I, send me; then Ahaz at the conduit of the upper pool — ask thee a sign; behold, a virgin shall conceive, and shall call his name Immanuel; the River to the neck; the people that walked in darkness have seen a great light; unto us a child is born."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Root of Jesse", "range": "Isaiah 10–12", "bible_chapters": [10, 11, 12],
      "blurb": "Ho Assyrian, the rod of mine anger — shall the axe boast itself against him that heweth therewith?; a remnant shall return; he is come to Aiath, he halteth at Nob; then a shoot out of the stock of Jesse: the wolf shall dwell with the lamb, and a little child shall lead them; an ensign for the nations; and the song of that day — with joy shall ye draw water out of the wells of salvation."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "How Art Thou Fallen", "range": "Isaiah 13–16", "bible_chapters": [13, 14, 15, 16],
+     "blurb": "The burden of Babylon: the day of Jehovah, the sun darkened, the Medes stirred up, and Babylon, the glory of kingdoms, never inhabited; the parable against the king of Babylon — how art thou fallen from heaven, O day-star, son of the morning!; the burden of Philistia and the fiery flying serpent; and the burden of Moab — my heart soundeth like a harp for Moab."},
   ],
 }
