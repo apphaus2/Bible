@@ -310,25 +310,36 @@ def kings_gate_bg(x, base, w, h, lit=False):
          f'fill="{"#FFC14D" if lit else "#2A1A14"}" stroke="#0D0D0F" stroke-width="2.4"></path>']
     k = h / 220
     for sx in (-1, 1):
-        o.append(lamassu(x + sx * w * 0.32, base - h * 0.04, k * 0.9, flip=sx < 0))
+        o.append(lamassu(x + sx * w * 0.32, base - h * 0.03, k * 0.76, flip=sx < 0))
     return "".join(o)
 
 def frieze_band(x, y, w, hh):
     return (f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(hh)}" fill="#1F5FAD" stroke="#0D0D0F" stroke-width="1.6"></rect>'
             + "".join(f'<circle cx="{f(x + (i + 0.5) * w / 10)}" cy="{f(y + hh / 2)}" r="{f(hh * 0.28)}" fill="#E8C040" stroke="#0D0D0F" stroke-width="1"></circle>' for i in range(10)))
 
-LAMASSU = ("M-46 0 L -46 -46 C -46 -58 -38 -64 -26 -64 L 22 -64 C 30 -64 36 -70 38 -78 L 38 -104 L 58 -104 L 58 -64 C 58 -56 54 -50 50 -48 L 50 0 L 40 0 L 40 -30 L 30 -30 L 30 0 L 20 0 "
-           "L 20 -34 L -18 -34 L -18 0 L -28 0 L -28 -32 L -36 -32 L -36 0 Z")
-def lamassu(x, y, s, flip=False, color="#B8A07A"):
-    """A winged bull with a man's head, carved in relief beside the gate (stone colour, no features)."""
+def lamassu(x, y, s, flip=False, color="#B8A07A", dark="#8A7A5A"):
+    """A winged bull with a man's head, carved in relief beside the gate: the bull's body on five legs, the great wing swept
+    up and back in rows of feathers, the bearded head under a tall horned cap (stone colours, no features but the eye)."""
     sx = -s if flip else s
-    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">'
-            f'<path d="{LAMASSU}" fill="{color}" stroke="#0D0D0F" stroke-width="{f(2 / s)}" stroke-linejoin="round"></path>'
-            f'<path d="M-24 -64 C -20 -98 4 -120 34 -118 L 30 -100 C 10 -100 -4 -86 -6 -64 Z" fill="{color}" stroke="#0D0D0F" stroke-width="{f(2 / s)}"></path>'
-            + "".join(f'<path d="M{-18 + i * 9} -66 C {-14 + i * 9} -84 {-6 + i * 9} -96 {4 + i * 8} -104" fill="none" stroke="#0D0D0F" stroke-width="{f(1.2 / s)}" opacity="0.6"></path>' for i in range(4))
-            + f'<path d="M38 -104 L 38 -116 L 58 -116 L 58 -104" fill="{color}" stroke="#0D0D0F" stroke-width="{f(2 / s)}"></path>'
-            f'<path d="M40 -82 L 40 -62 L 56 -62 L 56 -82 Z" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="{f(1.4 / s)}"></path>'
-            f'<circle cx="52" cy="-92" r="2" fill="#0D0D0F"></circle></g>')
+    sw = f(2.2 / s); tw = f(1.2 / s)
+    st = f'stroke="#0D0D0F" stroke-width="{sw}" stroke-linejoin="round"'
+    legs = "".join(f'<path d="M{a} -26 L {a} -2 L {a + 13} -2 L {a + 13} -26 Z" fill="{color}" {st}></path><rect x="{a - 1}" y="-6" width="15" height="6" fill="{dark}" {st}></rect>'
+                   for a in (-50, -32, 20, 36, 48))
+    wing = "".join(f'<path d="M{-36 + i * 6} {-60 - i * 4} C {-30 + i * 10} {-92 - i * 6} {0 + i * 12} {-112 - i * 4} {40 + i * 2} {-122 + i * 2}" fill="none" stroke="#0D0D0F" stroke-width="{tw}" opacity="0.7"></path>'
+                   for i in range(5))
+    feathers = "".join(f'<path d="M{-30 + i * 9} -64 L {-28 + i * 9} -76" stroke="#0D0D0F" stroke-width="{tw}" opacity="0.6"></path>' for i in range(8))
+    beard = "".join(f'<path d="M52 {-90 + i * 6} L 70 {-90 + i * 6}" stroke="#0D0D0F" stroke-width="{tw}" opacity="0.6"></path>' for i in range(4))
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">' + legs
+            + f'<path d="M-56 -24 C -60 -48 -52 -66 -30 -68 L 30 -68 C 44 -68 54 -60 58 -46 L 62 -24 Z" fill="{color}" {st}></path>'
+            + f'<path d="M-56 -50 C -66 -46 -68 -34 -64 -24" fill="none" stroke="#0D0D0F" stroke-width="{f(3 / s)}" stroke-linecap="round"></path><circle cx="-64" cy="-22" r="4" fill="{dark}" {st}></circle>'
+            + f'<path d="M-40 -64 C -48 -100 -12 -130 46 -134 C 30 -120 24 -100 26 -68 Z" fill="{color}" {st}></path>' + wing + feathers
+            + f'<path d="M40 -66 C 46 -74 48 -84 48 -96 L 72 -96 L 72 -66 C 66 -56 58 -50 52 -48 Z" fill="{color}" {st}></path>'
+            + f'<path d="M48 -96 L 48 -112 C 56 -116 66 -116 72 -112 L 76 -104 L 80 -100 L 74 -98 L 72 -96 Z" fill="{color}" {st}></path>'
+            + f'<path d="M50 -96 L 50 -70 C 56 -64 68 -64 72 -72 L 72 -96 Z" fill="{dark}" {st}></path>' + beard
+            + f'<path d="M46 -112 L 46 -134 L 76 -134 L 76 -112 Z" fill="{color}" {st}></path>'
+            + "".join(f'<path d="M46 {-128 + i * 6} C 56 {-126 + i * 6} 66 {-126 + i * 6} 76 {-128 + i * 6}" fill="none" stroke="#0D0D0F" stroke-width="{tw}"></path>' for i in range(3))
+            + f'<path d="M46 -134 L 50 -140 L 72 -140 L 76 -134" fill="{dark}" {st}></path>'
+            + '<circle cx="68" cy="-104" r="2.2" fill="#0D0D0F"></circle></g>')
 
 # ---- Esther 2 -----------------------------------------------------------------------------------------------------------------
 def cypress(x, y, s=1.0, color="#2E5A3A"):
@@ -551,4 +562,116 @@ def inner_court(p, w, h, seed, stage="stand", fig=0.42):
     else:
         o.append(queen(p, w * 0.26 if stage == "stand" else w * 0.34, b, se, ESTHER_C, flip=True))
     o.append(guard(p, w * 0.06, b, se * 1.02) + guard(p, w * 0.97, b, se * 1.02, flip=True))
+    return "".join(o)
+
+# ---- Esther 3–4 ---------------------------------------------------------------------------------------------------------------
+def promoted(p, w, h, seed):
+    """Haman advanced, his seat set above all the princes: the king on his throne, Haman standing on a raised dais beside
+    him, the princes below."""
+    b = h * 0.92
+    o = [hall(p, w, h, seed, n=4, floor=0.62)]
+    s = fit(b, max(h * 0.42, b - 200))
+    kk = (s * 0.95 * 195 - 10) / 124
+    o.append(seated_king(p, w * 0.14, b, kk)[0])
+    dh = h * 0.12
+    o.append(f'<path d="M{f(w * 0.28)} {f(b + 4)} L {f(w * 0.3)} {f(b - dh)} L {f(w * 0.48)} {f(b - dh)} L {f(w * 0.5)} {f(b + 4)} Z" fill="#B5323A" stroke="#0D0D0F" stroke-width="2.2"></path>'
+             f'<path d="M{f(w * 0.3)} {f(b - dh * 0.5)} L {f(w * 0.48)} {f(b - dh * 0.5)}" stroke="#E8B830" stroke-width="3"></path>')
+    o.append(haman(p, w * 0.39, b - dh, s))
+    for i in range(5):
+        o.append(prince(p, w * (0.56 + i * 0.09), b - (i % 2) * 8, s * 0.86, PRINCE[i], flip=True))
+    return "".join(o)
+
+PUR_M = {0: "NISAN", 2: "SIVAN", 9: "TEBETH", 11: "ADAR"}
+def pur_wheel(w, h, lit=11, note="THE TWELFTH MONTH · THE THIRTEENTH DAY"):
+    """Pur, that is, the lot, cast from day to day and from month to month: the twelve months as a wheel, the first month
+    where the casting began and the month the lot fell on lit; dice in the middle."""
+    o = [grid_bg(w, h, color="#3A2A2A", bg="#1A0E14")]
+    cx, cy = w * 0.5, h * 0.5
+    R = min(w * 0.36, h * 0.36); r0 = R * 0.4
+    for i in range(12):
+        a0, a1 = math.radians(-90 + i * 30), math.radians(-90 + (i + 1) * 30)
+        col = "#D7261E" if i == lit else "#FFD23F" if i == 0 else "#7A6A5A"
+        on = i in (0, lit)
+        pts = (f"M{f(cx + r0 * math.cos(a0))} {f(cy + r0 * math.sin(a0))} L {f(cx + R * math.cos(a0))} {f(cy + R * math.sin(a0))} "
+               f"A {f(R)} {f(R)} 0 0 1 {f(cx + R * math.cos(a1))} {f(cy + R * math.sin(a1))} L {f(cx + r0 * math.cos(a1))} {f(cy + r0 * math.sin(a1))} "
+               f"A {f(r0)} {f(r0)} 0 0 0 {f(cx + r0 * math.cos(a0))} {f(cy + r0 * math.sin(a0))} Z")
+        o.append(f'<path d="{pts}" fill="{col}" fill-opacity="{0.35 if on else 0.06}" stroke="{col}" stroke-width="{2.2 if on else 1}"></path>')
+        am = (a0 + a1) / 2
+        o.append(f'<text x="{f(cx + (r0 + (R - r0) * 0.5) * math.cos(am))}" y="{f(cy + (r0 + (R - r0) * 0.5) * math.sin(am) + 7)}" fill="{col}" font-family="Anton, sans-serif" '
+                 f'font-size="{f(R * 0.13)}" text-anchor="middle">{i + 1}</text>')
+        if i in PUR_M:
+            lx, ly = cx + (R + 14) * math.cos(am), cy + (R + 14) * math.sin(am)
+            anchor = "start" if math.cos(am) > 0.2 else ("end" if math.cos(am) < -0.2 else "middle")
+            o.append(label(lx, ly + 4, PUR_M[i], col if on else "#A89A8A", 9, anchor))
+    for j, (dx, dy, rot) in enumerate(((-0.12, -0.04, -14), (0.1, 0.06, 18))):
+        x, y, d = cx + R * dx * 2, cy + R * dy * 2, r0 * 0.5
+        o.append(f'<g transform="translate({f(x)} {f(y)}) rotate({rot})"><rect x="{f(-d / 2)}" y="{f(-d / 2)}" width="{f(d)}" height="{f(d)}" rx="4" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 + "".join(f'<circle cx="{f(px * d * 0.25)}" cy="{f(py * d * 0.25)}" r="{f(d * 0.08)}" fill="#0D0D0F"></circle>' for px, py in ((-1, -1), (1, 1), (0, 0)) [:j + 2]) + '</g>')
+    o.append(label(cx, min(h - 8, cy + R + 26), note, "#FF8A6A", 10))
+    return "".join(o)
+
+def ring_given(w, h, seed):
+    """The king's ring taken from his hand and given: the signet in the middle, purple and gold rays on one side, the red of
+    Haman on the other."""
+    o = [f'<rect x="-10" y="-10" width="{f(w * 0.5 + 10)}" height="{f(h + 20)}" fill="#2A1040"></rect>',
+         f'<rect x="{f(w * 0.5)}" y="-10" width="{f(w * 0.5 + 10)}" height="{f(h + 20)}" fill="#4A0E14"></rect>',
+         V.rays(w * 0.5, h * 0.56, 36, 20, max(w, h), color="#FFD23F", op=0.18)]
+    o.append(signet(w * 0.5, h * 0.66, min(1.6, h / 200)))
+    return "".join(o)
+
+def two_drink(p, w, h, seed):
+    """The king and Haman sat down to drink: the two on a couch of gold with their cups in the hall at dusk, and beyond the
+    columns the city of Shushan, perplexed, under a darkening sky."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), shushan(w, h, seed, tone="dusk"), f'<rect x="-10" y="{f(h * 0.74)}" width="{f(w + 20)}" height="{f(h * 0.3)}" fill="#3A2A2A" stroke="#0D0D0F" stroke-width="2"></rect>']
+    s = min(1.6, h / 330)
+    for x in (0.02, 0.36, 0.98): o.append(pcol(w * x, h * 0.76, -6, s, color="#8A7A6A", shade="#5A4A4A"))
+    o.append(f'<rect x="-10" y="-10" width="{f(w + 20)}" height="18" fill="#3A1E10" stroke="#0D0D0F" stroke-width="2"></rect>')
+    sf = fit(b, max(h * 0.44, b - 200))
+    o.append(behind(ahas(p, w * 0.1, b - 22, sf * 0.9) + haman(p, w * 0.24, b - 22, sf * 0.86), w * 0.02, w * 0.32, b, 30 * min(1.4, sf * 1.4)))
+    o.append(vessel(w * 0.34, b, min(1.1, h / 300), "ewer") + vessel(w * 0.4, b, min(1.0, h / 300), "rhyton"))
+    return "".join(o)
+
+def mourning(p, w, h, seed):
+    """In every province great mourning among the Jews: a village under a grey sky, men and women lying in sackcloth and
+    ashes, others kneeling with their hands over their faces."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A5A6A", "#A8A0A0"), hills(w, h, h * 0.42, seed, "#7A7068", amp=12, step=80),
+         J.city_hill(w * 0.76, h * 0.62, w * 0.24, h * 0.18, seed), ground(w, h, h * 0.62, "#8A8078", dy=0)]
+    s = (b - h * 0.36) / 120
+    r = random.Random(seed)
+    for i in range(5):
+        o.append(E.kneel(w * (0.04 + i * 0.21), b - h * 0.14 - (i % 2) * 8, s * 0.6, color=r.choice([SACK_C, "#5A5248", "#7A6A58"]), skin="#A89A90", flip=bool(i % 2)))
+    for i in range(4):
+        o.append(N.prostrate(w * (0.1 + i * 0.22), b - (i % 2) * 14, s * 0.7, color=SACK_C, skin="#A89A90", flip=bool(i % 2)))
+    for _ in range(40):
+        x, y = r.uniform(0, w), r.uniform(h * 0.64, h)
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r.uniform(1, 3))}" fill="#C8C2BA" opacity="0.6"></circle>')
+    return "".join(o)
+
+def broad_place(p, w, h, seed):
+    """The broad place of the city before the king's gate: Mordecai in sackcloth giving Hathach the copy of the writing."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8A9AB8", "#E8E0D0"), kings_gate_bg(w * 0.3, h * 0.72, w * 0.5, h * 0.56), ground(w, h, h * 0.72, "#B8A07A", dy=0)]
+    s = fit(b, max(h * 0.36, b - 240))
+    d = 70 * s
+    hand = (-(d * 0.55) / s, -146)
+    o.append(mordecai(p, w * 0.62, b, s, state="sack", flip=True, up=[(-22, -158), (-40, -150), hand]))
+    o.append(S3.letter(w * 0.62 + d * 0.55, b - 150 * s, s * 0.34, rot=-10))
+    o.append(chamberlain(p, w * 0.62 + d * 1.1, b, s * 0.96, "#C8A06A", flip=False))
+    return "".join(o)
+
+def fast_night(p, w, h, seed):
+    """Three days, night or day: the Jews of Shushan gathered by night, bowed, and the palace far off on its mound; three
+    nights counted under the stars."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), shushan(w, h, seed, tone="night"), f'<rect x="-10" y="{f(h * 0.7)}" width="{f(w + 20)}" height="{f(h * 0.4)}" fill="#2A2234" stroke="#0D0D0F" stroke-width="2"></rect>']
+    for i in range(3):
+        x = w * (0.62 + i * 0.12)
+        o.append(f'<circle cx="{f(x)}" cy="{f(h * 0.12)}" r="{f(h * 0.035)}" fill="#E8E2D6" stroke="#0D0D0F" stroke-width="1.4"></circle>'
+                 f'<circle cx="{f(x + h * 0.014)}" cy="{f(h * 0.11)}" r="{f(h * 0.032)}" fill="{["#0F0E2A", "#141236", "#181540"][i]}"></circle>')
+    s = fit(b, max(h * 0.5, b - 170))
+    r = random.Random(seed)
+    for i in range(9):
+        o.append(E.kneel(w * (0.04 + i * 0.11), b - (i % 3) * 10, s * (0.56 + (i % 2) * 0.06), color=r.choice([SACK_C, "#3A3448", "#4A3A3A", "#2A3A4A"]), skin="#6A5A5A", flip=bool(i % 2)))
     return "".join(o)

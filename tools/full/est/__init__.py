@@ -23,5 +23,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Vashti and Esther", "range": "Esther 1–2", "bible_chapters": [1, 2],
      "blurb": "Ahasuerus who reigned from India even unto Ethiopia, and the feast in the court of the garden of the palace — hangings of white, green and blue, vessels of gold; Vashti the queen refused to come; the word of Memucan and letters into every province; then Mordecai the Benjamite and Hadassah, that is, Esther; the royal crown set upon her head; and two chamberlains at the threshold."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "For Such a Time as This", "range": "Esther 3–4", "bible_chapters": [3, 4],
+     "blurb": "Haman advanced above all the princes, and Mordecai who bowed not down; Pur, that is, the lot, cast to the month Adar; the king's ring and letters to destroy all the Jews in one day; the king and Haman sat down to drink, but the city of Shushan was perplexed; Mordecai in sackcloth before the gate; who knoweth whether thou art not come to the kingdom for such a time as this?; and if I perish, I perish."},
   ],
 }
