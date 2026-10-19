@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1574 verses — 1574 full, 0 partial, 0 omitted.
+**So far:** 1760 verses — 1760 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Blessed Is the Man (Psalms 1–12)
 
@@ -67,5 +67,17 @@ Every verse is on the page in full.
 ## Chapter 11 · Our Dwelling-place (Psalms 90–100)
 
 135 verses: 135 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 12 · Bless Jehovah, O My Soul (Psalms 101–104)
+
+93 verses: 93 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 13 · He Remembered His Covenant (Psalms 105–106)
+
+93 verses: 93 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

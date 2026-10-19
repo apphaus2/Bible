@@ -116,6 +116,26 @@
    "prefixes": [
     "PS-C11-"
    ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "Bless Jehovah, O My Soul",
+   "range": "Psalms 101–104",
+   "blurb": "I will sing of lovingkindness and justice; I am like a pelican of the wilderness, a sparrow alone upon the housetop; bless Jehovah, O my soul, and forget not all his benefits — thy youth is renewed like the eagle; and O Jehovah, how manifold are thy works — the springs in the valleys, the birds among the branches, the wild goats, the moon for seasons, the sea great and wide, and leviathan.",
+   "prefixes": [
+    "PS-C12-"
+   ]
+  },
+  {
+   "dir": "chapter-13",
+   "num": "13",
+   "name": "He Remembered His Covenant",
+   "range": "Psalms 105–106",
+   "blurb": "The close of Book IV: he hath remembered his covenant for ever — unto thee will I give the land of Canaan; Joseph laid in chains of iron; the wonders in the land of Ham; he brought them forth with silver and gold, and spread a cloud for a covering; and we have sinned with our fathers — the Red Sea, the calf in Horeb, Baal-peor — yet he regarded their distress. Blessed be Jehovah, the God of Israel.",
+   "prefixes": [
+    "PS-C13-"
+   ]
   }
  ]
 }

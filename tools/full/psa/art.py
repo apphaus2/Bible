@@ -1151,6 +1151,108 @@ def s_confed(p, w, h, seed):
     o.append(node(cx, cy, "ISRAEL", color="#FFD23F", r=8))
     return "".join(o)
 
+
+# ---- Book IV: the creation and history psalms ------------------------------------------------------------------------------
+def goat(x, y, s=1.0, flip=False, color="#8A7A6A"):
+    """A wild goat (ibex) with long curved horns, side view facing right, about 80 units long."""
+    sx = -s if flip else s
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">'
+            + "".join(f'<path d="M{a} -30 L {b} 0" stroke="{color}" stroke-width="5" stroke-linecap="round"></path>' for a, b in ((-28, -30), (-20, -16), (18, 16), (26, 30)))
+            + f'<path d="M-36 -40 C -34 -54 20 -56 30 -46 C 34 -38 32 -30 26 -28 L -28 -28 C -36 -30 -38 -34 -36 -40 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2"></path>'
+            f'<path d="M22 -48 L 34 -66 L 46 -62 L 42 -54 L 30 -42 Z" fill="{color}" stroke="#0D0D0F" stroke-width="1.8"></path>'
+            f'<path d="M34 -66 C 26 -84 10 -88 0 -80" stroke="#4A3A2A" stroke-width="4" fill="none" stroke-linecap="round"></path></g>')
+
+def s_birds(p, w, h, seed):
+    """By them the birds of the heavens have their habitation; they sing among the branches; as for the stork, the
+    fir-trees are her house."""
+    o = [sky(w, h, *tod(seed, (DAY, DAWN))), hills(w, h, h * 0.7, seed, color="#6A9A4A", amp=10), ground(w, h, h * 0.8, "#8AB85A", dy=0),
+         stream(w, h * 0.86, h * 0.94, seed)]
+    k = min(0.9, h * 0.5 / 260)
+    o.append(tree(w * 0.26, h * 0.86, k, seed, fruit=False) + cedar(w * 0.74, h * 0.88, k * 0.8, seed))
+    for i, (x, y) in enumerate(((0.2, 0.6), (0.3, 0.66), (0.24, 0.72))):
+        o.append(small_bird(w * x, h * y, min(1.2, h / 300), color=("#C8783A", "#3A5A8A", "#8A6A2A")[i], flip=i == 1))
+    o.append(f'<g transform="translate({f(w * 0.74)} {f(h * 0.88 - 300 * k * 0.8)})"><ellipse cx="0" cy="0" rx="18" ry="9" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.6"></ellipse>'
+             f'<path d="M14 -4 L 22 -22 L 30 -20 L 46 -16 L 30 -16 L 22 -18" stroke="#0D0D0F" stroke-width="2" fill="#F3EFE6"></path><path d="M-14 4 L -22 6" stroke="#0D0D0F" stroke-width="2"></path></g>')
+    o.append(birds(5, w * 0.4, w * 0.9, h * 0.3, h * 0.5, seed, 0.7, 1.2))
+    return "".join(o)
+
+def s_goats(p, w, h, seed):
+    """The high mountains are for the wild goats; the rocks are a refuge for the conies."""
+    o = [sky(w, h, *DAY), clouds(w, h, seed, 4, y0=0.3, y1=0.5), mountain(w * 0.7, h * 0.98, w * 0.8, h * 0.5, color="#7A6A5A", lit="#A89A8A", snow=True),
+         f'<path d="M-10 {f(h + 10)} L {f(w * 0.1)} {f(h * 0.7)} L {f(w * 0.3)} {f(h * 0.66)} L {f(w * 0.42)} {f(h * 0.8)} L {f(w * 0.5)} {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2.4"></path>']
+    k = min(1.2, h / 300)
+    o.append(goat(w * 0.22, h * 0.68, k) + goat(w * 0.62, h * 0.74, k * 0.7, flip=True))
+    for i in range(3):
+        x = w * (0.1 + i * 0.07)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(h * 0.86)}" rx="{f(9 * k)}" ry="{f(6 * k)}" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="1.4"></ellipse><circle cx="{f(x + 7 * k)}" cy="{f(h * 0.86 - 4 * k)}" r="{f(4 * k)}" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="1.2"></circle>')
+    return "".join(o)
+
+def s_moonnight(p, w, h, seed):
+    """He appointed the moon for seasons; thou makest darkness, and it is night, wherein all the beasts of the forest creep
+    forth: the moon over the dark forest, eyes shining among the trees."""
+    r = R(seed)
+    o = [sky(w, h, "#05051A", "#1A1A4A"), mk.stars(80, w, h * 0.5, seed), moon(w * 0.75, h * 0.3, min(26, h * 0.07)), hills(w, h, h * 0.7, seed, color="#0D1A14", amp=10)]
+    for i in range(6):
+        o.append(tree(w * (0.05 + i * 0.18), h * 0.94, min(0.6, h * 0.36 / 260), seed + i, fruit=False, leaf=("#0D2A1A", "#14301F", "#0A1F14")))
+    for i in range(5):
+        x, y = r.uniform(0.1, 0.9) * w, r.uniform(0.82, 0.95) * h
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="2.6" fill="#FFE680"></circle><circle cx="{f(x + 8)}" cy="{f(y)}" r="2.6" fill="#FFE680"></circle>')
+    return "".join(o)
+
+def s_plow(p, w, h, seed):
+    """Man goeth forth unto his work and to his labor until the evening: plowing with the oxen."""
+    return K1.plowing(p, w, h, seed)
+
+def s_creatures(p, w, h, seed):
+    """Yonder is the sea, great and wide, wherein are things creeping innumerable; there go the ships; there is leviathan,
+    whom thou hast formed to play therein."""
+    o = [sky(w, h, *DAY), sea_band(w, h, h * 0.62, seed, color="#1F6F9A", deep="#0B2E4A", amp=8), K1.ship(w * 0.76, h * 0.64, min(0.6, h / 500))]
+    k = min(1.6, h / 220)
+    cx, cy = w * 0.34, h * 0.8
+    o.append(f'<path d="M{f(cx - 120 * k)} {f(cy)} C {f(cx - 80 * k)} {f(cy - 40 * k)} {f(cx + 40 * k)} {f(cy - 50 * k)} {f(cx + 90 * k)} {f(cy - 10 * k)} C {f(cx + 60 * k)} {f(cy + 20 * k)} {f(cx - 60 * k)} {f(cy + 24 * k)} {f(cx - 120 * k)} {f(cy)} Z" fill="#2A4A6A" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<path d="M{f(cx - 120 * k)} {f(cy)} L {f(cx - 150 * k)} {f(cy - 26 * k)} L {f(cx - 140 * k)} {f(cy + 4 * k)} L {f(cx - 154 * k)} {f(cy + 24 * k)} Z" fill="#2A4A6A" stroke="#0D0D0F" stroke-width="2"></path>'
+             f'<circle cx="{f(cx + 60 * k)}" cy="{f(cy - 18 * k)}" r="{f(3 * k)}" fill="#F3EFE6"></circle>'
+             f'<path d="M{f(cx + 20 * k)} {f(cy - 44 * k)} C {f(cx + 14 * k)} {f(cy - 80 * k)} {f(cx + 40 * k)} {f(cy - 90 * k)} {f(cx + 30 * k)} {f(cy - 70 * k)}" stroke="#E8F6FA" stroke-width="{f(3 * k)}" fill="none"></path>')
+    for i in range(6):
+        o.append(fish(w * (0.6 + (i % 3) * 0.12), h * (0.84 + (i // 3) * 0.08), min(1.2, h / 300), flip=i % 2 == 1, color=("#C8B87A", "#E8783A", "#8AC8C8")[i % 3]))
+    return "".join(o)
+
+def s_housetop(p, w, h, seed):
+    """I am like a pelican of the wilderness; I am become as an owl of the waste places; I watch, and am become like a
+    sparrow that is alone upon the housetop."""
+    o = [sky(w, h, "#0B0B2A", "#3A3A6A"), mk.stars(60, w, h * 0.6, seed), moon(w * 0.2, h * 0.24, min(18, h * 0.05)),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.3)} {f(h * 0.74)} L {f(w * 0.86)} {f(h * 0.74)} L {f(w * 0.86)} {f(h + 10)} Z" fill="#3A3048" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<rect x="{f(w * 0.28)}" y="{f(h * 0.72)}" width="{f(w * 0.6)}" height="{f(h * 0.03)}" fill="#5A4A5A" stroke="#0D0D0F" stroke-width="2"></rect>',
+         small_bird(w * 0.6, h * 0.71, min(1.6, h / 220), color="#5A4A3A")]
+    return "".join(o)
+
+def s_prison(p, w, h, seed):
+    """His feet they hurt with fetters: he was laid in chains of iron."""
+    return K1.prison(w, h, seed)
+
+def s_calf(p, w, h, seed):
+    """They made a calf in Horeb, and worshipped a molten image: the gold calf on its pedestal before the tents."""
+    o = [sky(w, h, "#5A3A2A", "#E8B880"), ground(w, h, h * 0.76, "#B89A6A", dy=0), __import__("numbers1").camp(8, w * 0.02, w * 0.98, h * 0.7, h * 0.8, seed),
+         V.calf(w * 0.5, h * 0.96, min(1.0, h / 330), uid=f"cf{p}")]
+    return "".join(o)
+
+def s_tents(p, w, h, seed):
+    """When they were but a few men in number, and sojourners: Abraham's tents and his flocks under the sky."""
+    from genesis.art2 import tents_cattle
+    return tents_cattle(w, h, seed)
+
+def s_going(p, w, h, seed):
+    """He brought them forth with silver and gold: the people going out at dawn, their asses laden."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), sky(w, h, *DAWN), sun(w * 0.86, h * 0.7, 26, color="#FFE680", op=0.45), hills(w, h, h * 0.7, seed, color="#6A5A6A", amp=8), ground(w, h, h * 0.76, "#C8A06A", dy=0)]
+    s = fit(b, h * 0.6)
+    cols = ("#5A6A8A", "#8A5A3A", "#3A6A5A", "#7A3A4A", "#6A5A2A", "#4A4A7A")
+    for i in range(6):
+        x = w * (0.08 + i * 0.15)
+        o.append(walker(p, x, b - (i % 2) * 8, s * (0.84 + 0.04 * (i % 3)), cloth=cols[i]) if i % 3 != 2 else woman(p, x, b - (i % 2) * 8, s * 0.86, cols[i]))
+    o.append(__import__("numbers1").ass(w * 0.58, b + 2, min(0.9, s * 0.9)) + R1.sack(w * 0.58, b - 60 * min(0.9, s * 0.9), min(0.9, s)))
+    return "".join(o)
+
 NOMIRROR = {"nations", "lands", "confed"}
 
 SCENES = {
@@ -1177,6 +1279,9 @@ SCENES = {
     "tribute": ("#FFB04A", s_tribute), "egypt": ("#5A3A2A", s_egypt), "plagues": ("#3A1A1A", s_plagues), "manna": ("#5A5A8A", s_manna), "quails": ("#C8A07A", s_quails),
     "rockwater": ("#C8A07A", s_rockwater), "idols": ("#2A1A2A", s_idols), "ark": ("#FFB04A", s_ark), "silent": ("#8A8AA8", s_silent),
     "blood": ("#3A1A1A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 0)), "locusts": ("#5A5A3A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 1)),
+    "birds": ("#8FD0E2", s_birds), "goats": ("#8FD0E2", s_goats), "moonnight": ("#05051A", s_moonnight), "plow": ("#8FD0E2", s_plow),
+    "creatures": ("#8FD0E2", s_creatures), "housetop": ("#0B0B2A", s_housetop), "prison": ("#1A1412", s_prison), "calf": ("#5A3A2A", s_calf),
+    "tents": ("#8FD0E2", s_tents), "going": ("#5A5A8A", s_going),
     "captives": ("#5A4A5A", s_captives), "judges": ("#C8A07A", s_judges), "confed": ("#0B1A2E", s_confed),
     "hail": ("#14142A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 2)), "darkness": ("#05050F", lambda p, w, h, seed: s_plagues(p, w, h, seed, 3)),
 }
