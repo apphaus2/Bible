@@ -247,6 +247,97 @@
    "w": 760,
    "h": 1080,
    "title": "30 · The Foolish Woman"
+  },
+  "PRO-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · A Wise Son"
+  },
+  "PRO-C04-S-P01-AWiseSonMakethAGla.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P02-AWiseSonMakethAGla.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P03-AWiseSonMakethAGla.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P04-AWiseSonMakethAGla.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · A Wise Son Maketh a Glad Father"
+  },
+  "PRO-C04-S-P05-AFalseBalance.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · A False Balance"
+  },
+  "PRO-C04-S-P06-AFalseBalance.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · A False Balance"
+  },
+  "PRO-C04-S-P07-AFalseBalance.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · A False Balance"
+  },
+  "PRO-C04-S-P08-AFalseBalance.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · A False Balance"
+  },
+  "PRO-C04-S-P09-WhosoLovethCorrect.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Whoso Loveth Correction"
+  },
+  "PRO-C04-S-P10-WhosoLovethCorrect.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Whoso Loveth Correction"
+  },
+  "PRO-C04-S-P11-WhosoLovethCorrect.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Whoso Loveth Correction"
+  },
+  "PRO-C04-S-P12-WhosoLovethCorrect.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Whoso Loveth Correction"
   }
  },
  "order": [
@@ -283,7 +374,20 @@
   "PRO-C03-D-P07-JehovahPossessedMe.dc.html",
   "PRO-C03-D-P08-JehovahPossessedMe.dc.html",
   "PRO-C03-D-P09-HerSevenPillars.dc.html",
-  "PRO-C03-D-P10-TheFoolishWoman.dc.html"
+  "PRO-C03-D-P10-TheFoolishWoman.dc.html",
+  "PRO-C04-00-Title.dc.html",
+  "PRO-C04-S-P01-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P02-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P03-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P04-AWiseSonMakethAGla.dc.html",
+  "PRO-C04-S-P05-AFalseBalance.dc.html",
+  "PRO-C04-S-P06-AFalseBalance.dc.html",
+  "PRO-C04-S-P07-AFalseBalance.dc.html",
+  "PRO-C04-S-P08-AFalseBalance.dc.html",
+  "PRO-C04-S-P09-WhosoLovethCorrect.dc.html",
+  "PRO-C04-S-P10-WhosoLovethCorrect.dc.html",
+  "PRO-C04-S-P11-WhosoLovethCorrect.dc.html",
+  "PRO-C04-S-P12-WhosoLovethCorrect.dc.html"
  ],
  "notes": {
   "Main": {
@@ -313,6 +417,13 @@
    "text": "Chapter 3 · Wisdom Hath Builded Her House (Proverbs 7–9)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · A Wise Son (Proverbs 10–12)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],

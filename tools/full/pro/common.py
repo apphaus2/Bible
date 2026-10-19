@@ -87,7 +87,7 @@ RULES = [
     (r"\bants?\b", ["ant"]), (r"\bconies\b", ["conies"]), (r"\blocusts\b", ["locusts"]), (r"\blizard\b", ["lizard"]),
     (r"\bhedge\b", ["hedge"]), (r"\bdropping\b", ["dripping"]), (r"\bhousetop\b", ["housetop"]), (r"\bhinges\b", ["door"]),
     (r"\bsluggard\b", ["bed", "thorns", "plough"]), (r"\blion'?s?\b", ["lion"]), (r"\ba bear\b", ["bear"]), (r"\bdogs?\b", ["dog"]),
-    (r"\bswine'?s?\b", ["swine"]), (r"\bhorse\b", ["horse"]), (r"\bass\b", ["ass"]), (r"\b(oxen|ox|crib)\b", ["ox"]),
+    (r"\bswine'?s?\b", ["swine"]), (r"\bhorse\b", ["horse"]), (r"\bass\b", ["ass"]), (r"\b(oxen|ox|crib|beast|beasts|cattle)\b", ["ox", "sheep"]),
     (r"\b(sheep|flocks?|herds|lambs)\b", ["sheep"]), (r"\bgoats?'?\b", ["goats"]), (r"\beagle\b", ["eagle"]),
     (r"\b(serpent|adder)\b", ["serpent"]), (r"\b(snares?|net|gin)\b", ["snare"]), (r"\b(birds?|sparrow|swallow|fowler)\b", ["bird"]),
     (r"\b(lamp|candle)\b", ["lamps", "lamp"]), (r"\btree of life\b", ["tree"]), (r"\bfig-tree\b", ["fig"]),
@@ -100,6 +100,10 @@ RULES = [
     (r"\b(wine|strong drink|drunkards?|mixed wine)\b", ["wine"]), (r"\b(honey|honeycomb)\b", ["honey"]),
     (r"\b(rubies|jewels?|precious stones)\b", ["chest", "jewel"]), (r"\bapples\b", ["apples"]), (r"\b(ear-ring|ornament)\b", ["jewel"]),
     (r"\b(silver|gold|treasures?|riches|wealth|money|substance)\b", ["chest", "silver", "gold"]),
+    (r"\b(tilleth|tiller|plough|plow|sow|soweth|reap|reapeth|harvest)\b", ["field", "reaper", "plough"]),
+    (r"\b(diligent|slothful|slack|sluggish|idle)\b", ["reaper", "bed", "field"]),
+    (r"\b(pride|proud|haughty|lofty|haughtiness)\b", ["house_fallen", "city_broken"]),
+    (r"\b(surety|suretyship|stricken hands|hand join)\b", ["friends"]),
     (r"\b(bread|morsel|food|meat|feast|dainties|dinner|eat|eateth|eaten|hungry|famish)\b", ["bread", "feast"]),
     (r"\b(vineyard)\b", ["vineyard"]), (r"\b(thorns|thistles|nettles|thorn)\b", ["thorns"]), (r"\blandmarks?\b", ["landmark"]),
     (r"\b(fields?|harvest|reap|reapeth|soweth|sow|grain|plough|plow|tilleth|tiller|summer)\b", ["field", "reaper", "plough"]),
@@ -119,7 +123,7 @@ RULES = [
     (r"\b(friends?|neighbor|brother|brethren|companions?)\b", ["friends"]),
     (r"\b(strife|contention|contentious|quarrel|anger|angry|wrath|wrathful|furious)\b", ["strife", "face_angry"]),
     (r"\b(poor|poverty|needy|want)\b", ["poor_rich", "poor", "rich"]), (r"\brich\b", ["rich", "poor_rich"]),
-    (r"\b(lie|lies|lying|false|deceit|deceitful|flattereth|flattering|talebearer|whisperer|perverse)\b", ["face_liar"]),
+    (r"\b(lie|lies|lying|false|deceit|deceitful|flattereth|flattering|tale-?bearer|whisperer|slander|slandereth|perverse)\b", ["face_liar"]),
     (r"\b(fool|fools|fool's|folly|foolish|foolishness|scoffer|scoffers|simple)\b", ["face_fool"]),
     (r"\b(lips|mouth|tongue|words|speaketh|answer|speak|uttereth|talk)\b", ["face_wise", "face_listen"]),
     (r"\b(ear|heareth|hear|hearken|instruction|reproof|counsel|correction)\b", ["face_listen", "scroll"]),
@@ -204,9 +208,9 @@ def _cell_html(c, h, s, uid, used, end=""):
                      f'letter-spacing: 0.02em; text-transform: uppercase">{t}</div></div>')
     span = "; grid-column: span 2" if c["span"] else ""
     return (f'\n    <div style="position: relative; min-height: 0; overflow: hidden; border: 3px solid #0D0D0F; background: #FFF8E6; display: flex; flex-direction: column{span}">'
-            f'\n      <div style="position: relative; flex: 1 1 0; min-height: 0; overflow: hidden; background: {pbg}; border-bottom: 3px solid #0D0D0F">{pic_svg}{stamp}{tag}</div>'
+            f'\n      <div style="position: relative; flex: 1 1 0; min-height: 0; overflow: hidden; background: {pbg}; border-bottom: 3px solid #0D0D0F">{pic_svg}{stamp}{tag}{end}</div>'
             f'\n      <div style="flex: none; padding: 8px 12px 10px 12px; box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {ACCENT}; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">'
-            + "".join(words) + f'</div>{end}\n    </div>')
+            + "".join(words) + f'</div>\n    </div>')
 
 def _rows(cells):
     """Pair the cells two to a row; a spanning cell, or a cell left without a partner, fills its row."""
@@ -243,6 +247,22 @@ def sayings(items, prefix, start, default_head, budget=1050, most=4, end="", boo
     if cur: pages.append(cur)
     if len(pages) > 1 and sum(x["chars"] for x in pages[-1]) < 330 and fits(pages[-2] + pages[-1]) and not pages[-1][0]["head"]:
         last = pages.pop(); pages[-1] += last                       # no near-empty last page
+    # even out each run of pages between heads, so no page of the run is left short
+    sections, cur = [], []
+    for pg in pages:
+        if cur and pg[0]["head"]: sections.append(cur); cur = []
+        cur.append(pg)
+    if cur: sections.append(cur)
+    pages = []
+    for sec in sections:
+        flat = [c for pg in sec for c in pg]; n = len(sec)
+        total = sum(c["chars"] for c in flat); bal, cur, acc = [], [], 0
+        for c in flat:
+            if cur and len(bal) < n - 1 and acc + c["chars"] / 2 > total * (len(bal) + 1) / n:
+                bal.append(cur); cur = []
+            cur.append(c); acc += c["chars"]
+        bal.append(cur)
+        pages += bal if len(bal) == n and all(fits(b) for b in bal) else sec
     out, head = [], default_head
     for k, pg in enumerate(pages):
         rows = _rows(pg)

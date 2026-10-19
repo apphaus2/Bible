@@ -550,7 +550,7 @@ def e_poor_rich(p):
 def e_witness(p):
     return (figdefs(p) + sky(p, "#FFE3B8", "#E8C88A", "#C8A06A") + f'<rect x="200" y="20" width="120" height="84" fill="#B8A88A" stroke="{INK}" stroke-width="2"></rect>'
             + f'<path d="M232 104 L 232 64 C 232 50 270 50 270 64 L 270 104 Z" fill="#2A1A10" stroke="{INK}" stroke-width="1.6"></path>'
-            + man(p, 130, 106, 0.36, "#5A3A6A", up=[(-22, -158), (-30, -190), (-32, -220)]) + E.kneel(70, 106, 0.3, color="#5A4A3A") + E.kneel(190, 106, 0.3, color="#3A4A3A", flip=True))
+            + man(p, 130, 106, 0.3, "#5A3A6A", up=[(-22, -158), (-30, -186), (-32, -212)]) + E.kneel(70, 106, 0.3, color="#5A4A3A") + E.kneel(190, 106, 0.3, color="#3A4A3A", flip=True))
 
 @emb("messenger", "runner")
 def e_runner(p):
@@ -767,9 +767,9 @@ GLAD = F("eve", skin="#E3B08A", shadow="#B97A58", hair="#2A1A10", scarf="#2C6A7A
 
 def face_emb(p, tok, top, bot, ray_color, flip=False, lines=True):
     o = sky(p, top, bot) + rays(150, 60, 16, 30, 260, ray_color, 0.3, 8)
-    o += mk.face(tok, 214 if flip else 104, 6, 0.31, flip=flip)
+    o += mk.face(tok, 206 if flip else 112, 16, 0.27, flip=flip)
     if lines:
-        x0 = 214 if not flip else 104
+        x0 = 192 if not flip else 126
         sgn = 1 if not flip else -1
         o += "".join(f'<path d="M{x0 + sgn * 6} {y} q {sgn * 10} {-4 * k} {sgn * 22} {-2 * k}" fill="none" stroke="#F3EFE6" stroke-width="2.4" stroke-linecap="round"></path>' for y, k in ((80, 1), (88, 0), (96, -1)))
     return o

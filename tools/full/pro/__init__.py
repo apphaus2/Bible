@@ -29,5 +29,7 @@ META = {
      "blurb": "Hear, my sons, the instruction of a father — for I was a son unto my father; wisdom is the principal thing, therefore get wisdom; the path of the righteous is as the dawning light; keep thy heart with all diligence; drink waters out of thine own cistern; go to the ant, thou sluggard; six things which Jehovah hateth, yea, seven; for the commandment is a lamp, and the law is light."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "Wisdom Hath Builded Her House", "range": "Proverbs 7–9", "bible_chapters": [7, 8, 9],
      "blurb": "Say unto wisdom, Thou art my sister; at the window of my house I looked forth, and beheld a young man void of understanding in the twilight; doth not wisdom cry? — by me kings reign; Jehovah possessed me in the beginning of his way, when he set a circle upon the face of the deep; Wisdom hath builded her house, she hath hewn out her seven pillars; stolen waters are sweet."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "A Wise Son", "range": "Proverbs 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "The proverbs of Solomon, one by one: a wise son maketh a glad father; the hand of the diligent maketh rich; the mouth of the righteous is a fountain of life; hatred stirreth up strifes, but love covereth all transgressions; a false balance is an abomination to Jehovah; as a ring of gold in a swine's snout; a worthy woman is the crown of her husband."},
   ],
 }
