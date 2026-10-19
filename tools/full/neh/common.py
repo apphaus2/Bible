@@ -102,7 +102,7 @@ def plan_pages(pages, prefix, start, tag="", stamp=None, end=""):
         s = 16.0
         while s > 10 and sum(need(t, s) for _, t, _, _ in cells) > room * 0.93: s -= 0.5
         hs = [need(t, s) for _, t, _, _ in cells]
-        ph = max(ph, min(int(ph * 1.6), 1022 - 12 * len(cells) - (64 if e else 0) - int(sum(hs) / 0.93)))   # spare room goes to the picture
+        ph = max(ph, min(int(ph * 2.0), 1022 - 12 * len(cells) - (64 if e else 0) - int(sum(hs) / 0.93)))   # spare room goes to the picture
         if e: hs[-1] += 64
         fr = f"{ph}px " + " ".join(f"{x:.0f}fr" for x in hs)
         over = (mk.stamp(stamp, "right: 12px; top: 10px") if stamp and k == 0 else "") + (vref(tag, "right: 8px; bottom: 7px") if tag else "")

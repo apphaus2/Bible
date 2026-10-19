@@ -856,3 +856,112 @@ def sealed_scroll(w, h, seed, n=7):
         o.append(f'<path d="M{f(x)} {f(y1)} L {f(x)} {f(y1 + h * 0.08)}" stroke="#7A2A6A" stroke-width="2"></path>'
                  f'<circle cx="{f(x)}" cy="{f(y1 + h * 0.12)}" r="{f(min(w / n * 0.3, h * 0.05))}" fill="#B5121B" stroke="#0D0D0F" stroke-width="1.8"></circle>')
     return "".join(o)
+
+# ---- Nehemiah 10–11 -----------------------------------------------------------------------------------------------------
+def sealing(p, w, h, seed):
+    """They that sealed the covenant: the written covenant on a table, Nehemiah the governor pressing his seal, the priests
+    and chiefs waiting their turn."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C8A890", "#F3E0B0"), K1.temple_front(w * 0.74, h * 0.6, w * 0.36, seed), ground(w, h, h * 0.6, "#C8B88A", dy=0)]
+    tx, ty = w * 0.42, h * 0.78
+    o.append(f'<rect x="{f(tx - w * 0.12)}" y="{f(ty)}" width="{f(w * 0.24)}" height="{f(h * 0.05)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(tx - w * 0.1)} {f(b)} L {f(tx - w * 0.1)} {f(ty + h * 0.05)} M{f(tx + w * 0.1)} {f(b)} L {f(tx + w * 0.1)} {f(ty + h * 0.05)}" stroke="#5A3A1E" stroke-width="4"></path>'
+             f'<rect x="{f(tx - w * 0.08)}" y="{f(ty - h * 0.02)}" width="{f(w * 0.16)}" height="{f(h * 0.025)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.6"></rect>'
+             + "".join(f'<circle cx="{f(tx - w * 0.06 + k * w * 0.03)}" cy="{f(ty - h * 0.008)}" r="{f(min(w, h) * 0.012)}" fill="#B5121B" stroke="#0D0D0F" stroke-width="1"></circle>' for k in range(4)))
+    s = fit(b, max(h * 0.4, b - 220))
+    o.append(neh_fig(p, tx - w * 0.18, b, s, up=[(22, -158), (50, -150), (70, -130)]))
+    for i in range(3): o.append(K1.priest(p, w * (0.66 + i * 0.08), b, s * 0.96, flip=True))
+    for i in range(2): o.append(noble(p, w * (0.06 + i * 0.08), b, s * 0.96, NOBLE_C[i]))
+    return "".join(o)
+
+def shekel(w, h):
+    """The third part of a shekel yearly for the service of the house: a shekel drawn as a coin divided in three, one part
+    lit, with the things it buys listed as tags."""
+    o = [bp(w, h)]
+    cx, cy, r = w * 0.24, h * 0.52, min(w * 0.16, h * 0.36)
+    o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="none" stroke="#8FD0E2" stroke-width="2.4"></circle>')
+    a0, a1 = math.radians(-90), math.radians(30)
+    o.append(f'<path d="M{f(cx)} {f(cy)} L {f(cx + r * math.cos(a0))} {f(cy + r * math.sin(a0))} A {f(r)} {f(r)} 0 0 1 {f(cx + r * math.cos(a1))} {f(cy + r * math.sin(a1))} Z" fill="#FFD23F" fill-opacity="0.45" stroke="#FFD23F" stroke-width="2.4"></path>')
+    for a in (-90, 30, 150):
+        o.append(f'<path d="M{f(cx)} {f(cy)} L {f(cx + r * math.cos(math.radians(a)))} {f(cy + r * math.sin(math.radians(a)))}" stroke="#8FD0E2" stroke-width="1.6"></path>')
+    o.append(label(cx, cy + r + 18, "THE THIRD PART OF A SHEKEL", "#FFD23F", 10))
+    items = ["THE SHOWBREAD", "THE CONTINUAL MEAL-OFFERING", "THE CONTINUAL BURNT-OFFERING", "SABBATHS · NEW MOONS · SET FEASTS", "THE HOLY THINGS", "THE SIN-OFFERINGS"]
+    for i, t in enumerate(items):
+        y = h * (0.16 + i * 0.13)
+        o.append(f'<path d="M{f(cx + r + 8)} {f(cy)} L {f(w * 0.5)} {f(y)} L {f(w * 0.53)} {f(y)}" fill="none" stroke="#4A7A9A" stroke-width="1.4"></path>'
+                 + label(w * 0.54, y + 4, t, "#8FD0E2", 9, "start"))
+    return "".join(o)
+
+def wood_bearers(p, w, h, seed):
+    """The wood-offering brought into the house of God at times appointed, by lot, house by house: men bearing bundles of
+    wood up to the altar, the fire burning."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), K1.temple_front(w * 0.7, h * 0.56, w * 0.4, seed), ground(w, h, h * 0.56, "#C8B88A", dy=0),
+         K1.horned_altar(w * 0.7, h * 0.86, min(0.8, h / 380), fire=True, seed=seed)]
+    s = fit(b, max(h * 0.4, b - 220))
+    for i in range(4):
+        x = w * (0.08 + i * 0.12)
+        o.append(man(p, x, b - (i % 2) * 5, s * 0.95, WAR[i % 4], up=[(22, -158), (30, -190), (14, -214)]))
+        bx, by = x + 14 * s, b - (i % 2) * 5 - 222 * s
+        o.append("".join(f'<rect x="{f(bx - 34 * s)}" y="{f(by - k * 7 * s)}" width="{f(68 * s)}" height="{f(7 * s)}" rx="{f(3 * s)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.2"></rect>' for k in range(3)))
+    return "".join(o)
+
+def firstfruits(p, w, h, seed):
+    """The first-fruits of the ground and of every tree, the firstlings of herd and flock, the first of the dough, the new
+    wine and the oil, brought to the priests at the chambers of the house."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFC890", "#F3E8C8"), K1.temple_front(w * 0.78, h * 0.58, w * 0.34, seed), ground(w, h, h * 0.58, "#C8B88A", dy=0)]
+    s = fit(b, max(h * 0.4, b - 220))
+    o.append(K1.priest(p, w * 0.66, b, s, flip=True))
+    o.append(R1.sheaf(w * 0.12, b, s * 1.2) + R1.sheaf(w * 0.17, b, s * 1.1))
+    for i, c in enumerate(("#B5121B", "#E8B830", "#6A2A6A")):
+        x = w * (0.26 + i * 0.06)
+        o.append(E4.basket(x, b, s * 1.6) + f'<circle cx="{f(x - 6 * s)}" cy="{f(b - 26 * s)}" r="{f(7 * s)}" fill="{c}" stroke="#0D0D0F" stroke-width="1"></circle>'
+                 f'<circle cx="{f(x + 6 * s)}" cy="{f(b - 26 * s)}" r="{f(7 * s)}" fill="{c}" stroke="#0D0D0F" stroke-width="1"></circle>')
+    o.append(E3.lamb(w * 0.48, b, s * 0.6))
+    for i in range(2):
+        x = w * (0.55 + i * 0.04)
+        o.append(f'<path d="M{f(x - 10 * s)} {f(b)} C {f(x - 22 * s)} {f(b - 30 * s)} {f(x - 12 * s)} {f(b - 60 * s)} {f(x - 5 * s)} {f(b - 64 * s)} L {f(x + 5 * s)} {f(b - 64 * s)} '
+                 f'C {f(x + 12 * s)} {f(b - 60 * s)} {f(x + 22 * s)} {f(b - 30 * s)} {f(x + 10 * s)} {f(b)} Z" fill="{("#B5652E", "#C8A060")[i]}" stroke="#0D0D0F" stroke-width="1.8"></path>')
+    return "".join(o)
+
+def sabbath_gate(p, w, h, seed, shut=True, merchants=True):
+    """The gates of Jerusalem at dusk before the sabbath: the doors shut and barred, servants set over them, the merchants
+    with their laden asses lodging without the wall."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#3A2A5A", "#E8906A"), sun(w * 0.86, h * 0.5, 18), hills(w, h, h * 0.5, seed, "#6A5A6A", amp=8, step=90),
+         J.jericho(-10, w * 0.62, h * 0.24, h * 0.76, seed, color=STONE, towers=1, houses=True), S4b.gatehouse(w * 0.36, h * 0.76, w * 0.22, h * 0.56)]
+    dx0, dx1 = w * 0.36 - w * 0.22 * 0.18, w * 0.36 + w * 0.22 * 0.18
+    if shut:
+        o.append(f'<rect x="{f(dx0)}" y="{f(h * 0.76 - h * 0.56 * 0.5)}" width="{f(dx1 - dx0)}" height="{f(h * 0.56 * 0.5)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<path d="M{f((dx0 + dx1) / 2)} {f(h * 0.76 - h * 0.56 * 0.5)} L {f((dx0 + dx1) / 2)} {f(h * 0.76)}" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<rect x="{f(dx0 - 4)}" y="{f(h * 0.62)}" width="{f(dx1 - dx0 + 8)}" height="8" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    o.append(ground(w, h, h * 0.76, "#8A7A5A", dy=0))
+    s = fit(b, max(h * 0.44, b - 220))
+    o.append(warrior(p, w * 0.24, b, s * 0.9, "#3A4A6A") + warrior(p, w * 0.48, b, s * 0.9, "#4A3A3A", flip=True))
+    if merchants:
+        for i in range(2):
+            x = w * (0.66 + i * 0.16)
+            o.append(N.ass(x, b, s * 0.55, flip=True, color="#7A6A5A") + R1.sack(x - 6 * s, b - 66 * s, s * 0.7)
+                     + man(p, x + 40 * s, b, s * 0.9, ("#7A3A1E", "#2A5A6A")[i], flip=True))
+    return "".join(o)
+
+VILL_J = [("KIRIATH-ARBA", 0.36, 0.62), ("DIBON", 0.48, 0.74), ("JEKABZEEL", 0.56, 0.84), ("JESHUA", 0.42, 0.8), ("MOLADAH", 0.4, 0.88), ("BETH-PELET", 0.3, 0.86),
+          ("HAZAR-SHUAL", 0.24, 0.9), ("BEER-SHEBA", 0.32, 0.95), ("ZIKLAG", 0.16, 0.84), ("MECONAH", 0.22, 0.78), ("EN-RIMMON", 0.28, 0.74), ("ZORAH", 0.2, 0.42),
+          ("JARMUTH", 0.18, 0.5), ("ZANOAH", 0.28, 0.46), ("ADULLAM", 0.26, 0.54), ("LACHISH", 0.12, 0.62), ("AZEKAH", 0.14, 0.4)]
+VILL_B = [("GEBA", 0.56, 0.2), ("MICHMASH", 0.62, 0.16), ("AIJA", 0.6, 0.1), ("BETH-EL", 0.52, 0.06), ("ANATHOTH", 0.58, 0.28), ("NOB", 0.5, 0.3), ("ANANIAH", 0.54, 0.34),
+          ("HAZOR", 0.44, 0.18), ("RAMAH", 0.48, 0.22), ("GITTAIM", 0.3, 0.2), ("HADID", 0.24, 0.14), ("ZEBOIM", 0.68, 0.24), ("NEBALLAT", 0.28, 0.1), ("LOD", 0.16, 0.12), ("ONO", 0.12, 0.2)]
+
+def villages_map(w, h, judah=True, benjamin=True):
+    """Where the rest dwelt: the villages of Judah from Beer-sheba unto the valley of Hinnom (gold), and of Benjamin from Geba
+    onward to Lod and Ono, the valley of craftsmen (cyan), Jerusalem between."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.06)} -10 C {f(w * 0.08)} {f(h * 0.4)} {f(w * 0.05)} {f(h * 0.7)} {f(w * 0.03)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.8)} -10 C {f(w * 0.78)} {f(h * 0.3)} {f(w * 0.82)} {f(h * 0.5)} {f(w * 0.78)} {f(h * 0.62)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>'
+             f'<ellipse cx="{f(w * 0.78)}" cy="{f(h * 0.78)}" rx="{f(w * 0.03)}" ry="{f(h * 0.16)}" fill="#2C9DB8"></ellipse>')
+    for on, rows, col in ((judah, VILL_J, GOLD), (benjamin, VILL_B, CYAN)):
+        for nm, x, y in rows:
+            o.append(node(w * x, h * y, nm, col if on else "#4A5A7A", r=3.5, dy=-7, size=7.5))
+    o.append(node(w * 0.5, h * 0.4, "JERUSALEM", "#FFFFFF", r=6, dy=-11, size=10) + label(w * 0.5, h * 0.47, "THE VALLEY OF HINNOM", "#FF8A6A", 7.5))
+    o.append(label(w * 0.96, h * 0.9, "JUDAH", GOLD, 10, "end") + label(w * 0.96, h * 0.1, "BENJAMIN", CYAN, 10, "end"))
+    return "".join(o)

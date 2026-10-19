@@ -394,6 +394,69 @@
    "w": 760,
    "h": 1080,
    "title": "49 · Now Therefore, Our God"
+  },
+  "NEH-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Sealed Covenant"
+  },
+  "NEH-C06-D-P01-ThoseThatSealed.dc.html": {
+   "x": 840,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Those That Sealed"
+  },
+  "NEH-C06-E-P01-ACurseAndAnOath.dc.html": {
+   "x": 1680,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · A Curse and an Oath"
+  },
+  "NEH-C06-E-P02-ForTheHouseOfOurGo.dc.html": {
+   "x": 2520,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · For the House of Our God"
+  },
+  "NEH-C06-E-P03-ForTheHouseOfOurGo.dc.html": {
+   "x": 3360,
+   "y": 18900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · For the House of Our God"
+  },
+  "NEH-C06-F-P01-OneOfTen.dc.html": {
+   "x": 0,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · One of Ten"
+  },
+  "NEH-C06-F-P02-TheyThatDweltInJer.dc.html": {
+   "x": 840,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · They That Dwelt in Jerusalem"
+  },
+  "NEH-C06-F-P03-ThePortersAndTheNe.dc.html": {
+   "x": 1680,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Porters and the Nethinim"
+  },
+  "NEH-C06-F-P04-TheVillages.dc.html": {
+   "x": 2520,
+   "y": 20100,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Villages"
   }
  },
  "order": [
@@ -451,7 +514,16 @@
   "NEH-C05-E-P05-AGodReadyToPardon.dc.html",
   "NEH-C05-E-P06-AGodReadyToPardon.dc.html",
   "NEH-C05-E-P07-AGodReadyToPardon.dc.html",
-  "NEH-C05-E-P08-NowThereforeOurGod.dc.html"
+  "NEH-C05-E-P08-NowThereforeOurGod.dc.html",
+  "NEH-C06-00-Title.dc.html",
+  "NEH-C06-D-P01-ThoseThatSealed.dc.html",
+  "NEH-C06-E-P01-ACurseAndAnOath.dc.html",
+  "NEH-C06-E-P02-ForTheHouseOfOurGo.dc.html",
+  "NEH-C06-E-P03-ForTheHouseOfOurGo.dc.html",
+  "NEH-C06-F-P01-OneOfTen.dc.html",
+  "NEH-C06-F-P02-TheyThatDweltInJer.dc.html",
+  "NEH-C06-F-P03-ThePortersAndTheNe.dc.html",
+  "NEH-C06-F-P04-TheVillages.dc.html"
  ],
  "notes": {
   "Main": {
@@ -495,6 +567,13 @@
    "text": "Chapter 5 · The Book of the Law (Nehemiah 8–9)",
    "x": 0,
    "y": 14500
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Sealed Covenant (Nehemiah 10–11)",
+   "x": 0,
+   "y": 18600
   }
  },
  "designSystems": [],
