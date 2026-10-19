@@ -45,9 +45,15 @@ def sg(ref, who="job", frm=None, to=None, after=None):
     """One verse (or a cut of one) of a speech as a song line in the speaker's colour, the poem's lines kept."""
     return ("song" + SPK[who][1], br(v(ref, frm=frm, to=to, after=after)))
 def sgs(refs, who="job"): return [sg(r, who) for r in _refs(refs)]
+def gl(ref, frm=None, to=None, after=None):
+    """Jehovah's words out of the whirlwind: one Voice box, the poem's lines kept."""
+    return ("god", br(v(ref, frm=frm, to=to, after=after)))
 def gdl(refs):
     """Jehovah's words, a Voice box a verse."""
-    return [("god", v(r)) for r in _refs(refs)]
+    return [gl(r) for r in _refs(refs)]
+def gpd(refs, art, bg, **k):
+    """Jehovah's verses over a drawing (God is never drawn: storm and creation only)."""
+    return drawn(gdl(refs), label(refs), art, bg, **k)
 
 def pack(segs, prefix, start, **k):
     k.setdefault("by_need", True)

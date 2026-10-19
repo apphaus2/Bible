@@ -29,7 +29,7 @@ def _height(lines, bw, s):
         elif kind == "say":
             cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(n / cpl) * s * 1.16 + 30
         else:
-            cpl = max(6, (bw - 36) / (s * 0.53)); tot += math.ceil(n / cpl) * s * 1.15 + 32
+            cpl = max(6, (bw - 36) / (s * 0.53)); tot += sum(math.ceil(len(t) / cpl) for t in text.split("<br>")) * s * 1.15 + 32
         tot += 9
     return tot
 
