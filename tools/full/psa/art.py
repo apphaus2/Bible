@@ -345,7 +345,7 @@ def s_gates(p, w, h, seed):
 
 def s_court(p, w, h, seed):
     """The house of Jehovah and its courts, the people gathered."""
-    return K1.court_scene(p, w, h, seed, crowd=True, smoke=seed % 2 == 0)
+    return K1.court_scene(p, w, h, seed, crowd=h > 440, smoke=seed % 2 == 0)
 
 def s_music(p, w, h, seed):
     """Sing praises unto Jehovah: Levites with harps and cymbals."""
@@ -1253,6 +1253,68 @@ def s_going(p, w, h, seed):
     o.append(__import__("numbers1").ass(w * 0.58, b + 2, min(0.9, s * 0.9)) + R1.sack(w * 0.58, b - 60 * min(0.9, s * 0.9), min(0.9, s)))
     return "".join(o)
 
+
+# ---- Book V ----------------------------------------------------------------------------------------------------------------
+def s_haven(p, w, h, seed):
+    """He maketh the storm a calm; so he bringeth them unto their desired haven: ships at rest in a quiet harbour at evening."""
+    o = [sky(w, h, *tod(seed, (DUSK, GOLD))), sun(w * 0.2, h * 0.62, 22, color="#FFE680", op=0.4),
+         f'<path d="M{f(w * 0.62)} {f(h * 0.7)} C {f(w * 0.72)} {f(h * 0.56)} {f(w * 0.9)} {f(h * 0.54)} {f(w + 10)} {f(h * 0.56)} L {f(w + 10)} {f(h * 0.74)} Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="2"></path>',
+         sea_band(w, h, h * 0.7, seed, color="#3A7A9A", deep="#1F4A6A", amp=3)]
+    o.append(K1.ship(w * 0.36, h * 0.76, min(0.8, h / 400), sail="#E8E2D6") + K1.ship(w * 0.66, h * 0.74, min(0.5, h / 600), sail="#D8C8A8", flip=True))
+    return "".join(o)
+
+def s_oasis(p, w, h, seed):
+    """He turneth a wilderness into a pool of water, and a dry land into watersprings: a pool among palms in the desert."""
+    o = [sky(w, h, "#C8A07A", "#F3D8A0"), hills(w, h, h * 0.66, seed, color="#D8A878", amp=12, step=90), ground(w, h, h * 0.74, "#D8B07A", dy=0),
+         f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.86)}" rx="{f(w * 0.26)}" ry="{f(h * 0.06)}" fill="#3A9AB8" stroke="#0D0D0F" stroke-width="2"></ellipse>',
+         f'<path d="M{f(w * 0.36)} {f(h * 0.86)} l 50 0 M{f(w * 0.52)} {f(h * 0.88)} l 60 0" stroke="#E8F6FA" stroke-width="2"></path>']
+    k = min(0.55, h / 600)
+    for i, x in enumerate((0.2, 0.28, 0.76, 0.84)):
+        o.append(J1.palm(w * x, h * (0.86 + 0.02 * (i % 2)), k * (0.9 + 0.1 * (i % 2))))
+    return "".join(o)
+
+def s_skip(p, w, h, seed):
+    """The mountains skipped like rams, the little hills like lambs: the hills of the land under a leaping sky, rams and
+    lambs bounding over the slopes."""
+    o = [sky(w, h, *DAY), mountain(w * 0.3, h * 0.8, w * 0.5, h * 0.36, color="#7A8A5A", lit="#9CB86A"), mountain(w * 0.74, h * 0.8, w * 0.5, h * 0.44, color="#6A7A5A", lit="#8AA86A"),
+         ground(w, h, h * 0.8, "#8AB85A", dy=0)]
+    k = min(0.9, h / 400)
+    for i in range(5):
+        x, y = w * (0.1 + i * 0.2), h * (0.9 - (i % 2) * 0.06)
+        o.append(f'<g transform="rotate({-14 if i % 2 else 10} {f(x)} {f(y)})">' + E.sheep(x, y, k * (1.0 if i % 2 == 0 else 0.7), flip=i % 2 == 1) + '</g>')
+    for i in range(4):
+        o.append(f'<path d="M{f(w * (0.12 + i * 0.22))} {f(h * 0.62)} q 10 -16 20 0" stroke="#F3EFE6" stroke-width="2.4" fill="none"></path>')
+    return "".join(o)
+
+def s_corner(p, w, h, seed):
+    """The stone which the builders rejected is become the head of the corner: a great squared stone set at the corner of the
+    rising wall, the builders' tools beside it."""
+    o = [sky(w, h, *tod(seed, (GOLD, DAY))), ground(w, h, h * 0.84, "#C8A06A", dy=0)]
+    b, x0 = h * 0.86, w * 0.18
+    rows_ = 6
+    hh = h * 0.07
+    for r_ in range(rows_):
+        y = b - (r_ + 1) * hh
+        for k in range(8 - r_):
+            o.append(f'<rect x="{f(x0 + k * w * 0.07 + (r_ % 2) * w * 0.035)}" y="{f(y)}" width="{f(w * 0.07)}" height="{f(hh)}" fill="#C8B49A" stroke="#0D0D0F" stroke-width="1.8"></rect>')
+    o.append(f'<rect x="{f(x0 - w * 0.1)}" y="{f(b - rows_ * hh - hh * 1.6)}" width="{f(w * 0.12)}" height="{f(rows_ * hh + hh * 1.6)}" fill="#E8DCC0" stroke="#0D0D0F" stroke-width="3"></rect>')
+    o.append(glow(x0 - w * 0.04, b - rows_ * hh, h * 0.3, "#FFE680", 0.2))
+    o.append(f'<path d="M{f(w * 0.8)} {f(b)} L {f(w * 0.86)} {f(b - h * 0.16)} M{f(w * 0.84)} {f(b - h * 0.16)} L {f(w * 0.9)} {f(b - h * 0.12)}" stroke="#5A3A22" stroke-width="4"></path>')
+    return "".join(o)
+
+def s_bees(p, w, h, seed):
+    """They compassed me about like bees; they are quenched as the fire of thorns: thorn-bushes burning out on the hillside."""
+    r = R(seed)
+    o = [sky(w, h, "#5A3A2A", "#E8A060"), hills(w, h, h * 0.7, seed, color="#5A4A3A", amp=10), ground(w, h, h * 0.8, "#6A5A3A", dy=0)]
+    for i in range(4):
+        x = w * (0.15 + i * 0.22)
+        o.append(f'<path d="M{f(x - 30)} {f(h * 0.94)} l 10 -30 l 6 18 l 10 -28 l 8 22 l 10 -18 l 6 36 Z" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="1.6"></path>')
+        o.append(E.blaze(x, h * 0.94, w * 0.08, h * 0.16, seed + i) if i % 2 == 0 else f'<ellipse cx="{f(x)}" cy="{f(h * 0.8)}" rx="{f(w * 0.04)}" ry="{f(h * 0.06)}" fill="#4A4A4A" opacity="0.5"></ellipse>')
+    for _ in range(40):
+        x, y = r.uniform(0, w), r.uniform(h * 0.4, h * 0.75)
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="4" ry="2.6" fill="#E8B830" stroke="#0D0D0F" stroke-width="1"></ellipse>')
+    return "".join(o)
+
 NOMIRROR = {"nations", "lands", "confed"}
 
 SCENES = {
@@ -1282,6 +1344,7 @@ SCENES = {
     "birds": ("#8FD0E2", s_birds), "goats": ("#8FD0E2", s_goats), "moonnight": ("#05051A", s_moonnight), "plow": ("#8FD0E2", s_plow),
     "creatures": ("#8FD0E2", s_creatures), "housetop": ("#0B0B2A", s_housetop), "prison": ("#1A1412", s_prison), "calf": ("#5A3A2A", s_calf),
     "tents": ("#8FD0E2", s_tents), "going": ("#5A5A8A", s_going),
+    "haven": ("#3A2A5A", s_haven), "oasis": ("#C8A07A", s_oasis), "skip": ("#8FD0E2", s_skip), "corner": ("#FFB04A", s_corner), "bees": ("#5A3A2A", s_bees),
     "captives": ("#5A4A5A", s_captives), "judges": ("#C8A07A", s_judges), "confed": ("#0B1A2E", s_confed),
     "hail": ("#14142A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 2)), "darkness": ("#05050F", lambda p, w, h, seed: s_plagues(p, w, h, seed, 3)),
 }

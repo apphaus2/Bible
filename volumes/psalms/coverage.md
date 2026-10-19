@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1760 verses — 1760 full, 0 partial, 0 omitted.
+**So far:** 1959 verses — 1959 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Blessed Is the Man (Psalms 1–12)
 
@@ -79,5 +79,11 @@ Every verse is on the page in full.
 ## Chapter 13 · He Remembered His Covenant (Psalms 105–106)
 
 93 verses: 93 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 14 · They That Go Down to the Sea (Psalms 107–118)
+
+199 verses: 199 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
