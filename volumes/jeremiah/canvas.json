@@ -1528,6 +1528,104 @@
    "w": 760,
    "h": 1080,
    "title": "203 · Thy Life Shall Be for a Prey unto Thee"
+  },
+  "JER-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Gedaliah"
+  },
+  "JER-C14-D-P01-TheChainsWhichAreU.dc.html": {
+   "x": 840,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · The Chains Which Are upon Thy Hand"
+  },
+  "JER-C14-D-P02-GedaliahAtMizpah.dc.html": {
+   "x": 1680,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · Gedaliah at Mizpah"
+  },
+  "JER-C14-D-P03-GedaliahAtMizpah.dc.html": {
+   "x": 2520,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Gedaliah at Mizpah"
+  },
+  "JER-C14-D-P04-DostThouKnow.dc.html": {
+   "x": 3360,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Dost Thou Know?"
+  },
+  "JER-C14-D-P05-InTheSeventhMonth.dc.html": {
+   "x": 0,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · In the Seventh Month"
+  },
+  "JER-C14-D-P06-FourscoreMen.dc.html": {
+   "x": 840,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · Fourscore Men"
+  },
+  "JER-C14-D-P07-FourscoreMen.dc.html": {
+   "x": 1680,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · Fourscore Men"
+  },
+  "JER-C14-D-P08-TheGreatWatersThat.dc.html": {
+   "x": 2520,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · The Great Waters That Are in Gibeon"
+  },
+  "JER-C14-D-P09-TheGreatWatersThat.dc.html": {
+   "x": 3360,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · The Great Waters That Are in Gibeon"
+  },
+  "JER-C14-D-P10-PrayForUs.dc.html": {
+   "x": 0,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · Pray for Us"
+  },
+  "JER-C14-D-P11-AfterTenDays.dc.html": {
+   "x": 840,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "214 · After Ten Days"
+  },
+  "JER-C14-D-P12-GoYeNotIntoEgypt.dc.html": {
+   "x": 1680,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "215 · Go Ye Not into Egypt"
+  },
+  "JER-C14-D-P13-GoYeNotIntoEgypt.dc.html": {
+   "x": 2520,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "216 · Go Ye Not into Egypt"
   }
  },
  "order": [
@@ -1747,7 +1845,21 @@
   "JER-C13-D-P12-ABreachWasMadeInTh.dc.html",
   "JER-C13-D-P13-ByTheWayOfTheKingS.dc.html",
   "JER-C13-D-P14-TheyBurnedTheKingS.dc.html",
-  "JER-C13-D-P15-ThyLifeShallBeForA.dc.html"
+  "JER-C13-D-P15-ThyLifeShallBeForA.dc.html",
+  "JER-C14-00-Title.dc.html",
+  "JER-C14-D-P01-TheChainsWhichAreU.dc.html",
+  "JER-C14-D-P02-GedaliahAtMizpah.dc.html",
+  "JER-C14-D-P03-GedaliahAtMizpah.dc.html",
+  "JER-C14-D-P04-DostThouKnow.dc.html",
+  "JER-C14-D-P05-InTheSeventhMonth.dc.html",
+  "JER-C14-D-P06-FourscoreMen.dc.html",
+  "JER-C14-D-P07-FourscoreMen.dc.html",
+  "JER-C14-D-P08-TheGreatWatersThat.dc.html",
+  "JER-C14-D-P09-TheGreatWatersThat.dc.html",
+  "JER-C14-D-P10-PrayForUs.dc.html",
+  "JER-C14-D-P11-AfterTenDays.dc.html",
+  "JER-C14-D-P12-GoYeNotIntoEgypt.dc.html",
+  "JER-C14-D-P13-GoYeNotIntoEgypt.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1847,6 +1959,13 @@
    "text": "Chapter 13 · The Dungeon (Jeremiah 37–39)",
    "x": 0,
    "y": 61700
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Gedaliah (Jeremiah 40–42)",
+   "x": 0,
+   "y": 67000
   }
  },
  "designSystems": [],

@@ -54,5 +54,7 @@ META = {
      "blurb": "Zedekiah, thou shalt die in peace; liberty proclaimed to the servants, and the servants brought back; the Rechabites — we will drink no wine; then take thee a roll of a book: Baruch writes from the prophet's mouth and reads it on the fast-day; the princes — go, hide thee, thou and Jeremiah; and the king in the winter-house cuts the roll with the penknife and casts it into the fire, until all the roll was consumed."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "The Dungeon", "range": "Jeremiah 37–39", "bible_chapters": [37, 38, 39],
      "blurb": "Thou art falling away to the Chaldeans — it is false; the dungeon-house; is there any word from Jehovah? There is; the daily loaf until all the bread was spent; the dungeon of Malchijah, no water but mire; Ebed-melech the Ethiopian and the rags and worn-out garments let down by cords; I will ask thee a thing, hide nothing from me; and in the eleventh year of Zedekiah a breach was made in the city."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Gedaliah", "range": "Jeremiah 40–42", "bible_chapters": [40, 41, 42],
+     "blurb": "The chains loosed at Ramah — behold, all the land is before thee; Gedaliah the governor at Mizpah: fear not to serve the Chaldeans; wine and summer fruits gathered very much; Ishmael the son of Nethaniah at table in Mizpah, and the evil that he did; the captives turned back at the great waters of Gibeon; and the remnant before the prophet: pray for us — go ye not into Egypt."},
   ],
 }

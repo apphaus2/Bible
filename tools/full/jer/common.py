@@ -136,7 +136,7 @@ PRINCE = F("adam", skin="#C98E66", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E
 PRINCE_CALM = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#2A5A5A", band=True, light="#FFE680")
 ELDER = F("adam", skin="#B98A6E", shadow="#4A3A4A", hair="#C8C2B6", hl="#E8E2D6", beard=True, beard_color="#D8D2C6", scarf="#5A4A3A", cord=True, light="#FFF4C2")
 RECHABITE = F("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#3A3430", hl="#6A6460", beard=True, beard_color="#3A3430", scarf="#7A6A4A", light="#FFE680")
-JOHANAN = F("adam", skin="#C98E66", shadow="#4A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#6A4A2A", cord=True, brow="scowl", light="#FFC14D")
+JOHANAN = F("adam", skin="#C98E66", shadow="#4A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A4A2A", cord=True, brow="scowl", light="#FFC14D")
 ISHMAEL = F("adam", skin="#B98A6E", shadow="#3A1A2A", hair="#0D0D0F", hl="#2A2220", stubble="#0D0D0F", scarf="#3A1A2A", band=True, brow="scowl", light="#D7261E")
 NEBUZARADAN = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#2A4A6A", band=True, light="#FFC14D")
 WOMAN = F("eve", skin="#C98E66", shadow="#5A3A3A", hair="#1A1210", scarf="#7A2A4A", band=True, brow="scowl", light="#FFC14D")
