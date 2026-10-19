@@ -77,9 +77,13 @@ def _god(text, s):
     return (f'<div style="padding: 12px 16px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
             f'font-family: Anton, sans-serif; font-size: {s}px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">{_br(text)}</div>')
 
+def kanji(n):
+    """Kanji numerals up to 199 (mk.kanji_num stops at 99): 23 → 二十三, 119 → 百十九."""
+    return ("百" if n >= 100 else "") + (mk.kanji_num(n % 100) if n % 100 else "")
+
 def _head(hd):
     num, title, extra = hd
-    kan = f'<span style="display: block; font-family: \'Noto Sans JP\', sans-serif; font-weight: 900; font-size: 9px; letter-spacing: 0.1em; color: #FFD23F; margin-top: 2px">第{mk.kanji_num(num)}篇</span>' if isinstance(num, int) else ""
+    kan = f'<span style="display: block; font-family: \'Noto Sans JP\', sans-serif; font-weight: 900; font-size: 9px; letter-spacing: 0.1em; color: #FFD23F; margin-top: 2px">第{kanji(num)}篇</span>' if isinstance(num, int) else ""
     lab = f"PSALM {num}" if isinstance(num, int) else num
     t = ""
     if extra: t += f'<span style="color: #FF8A6A">{extra}</span>' + (" · " if title else "")
