@@ -55,4 +55,4 @@ SEGS = [pf2("eli", "4:1-3", ELIPHAZ, head="Eliphaz the Temanite", stamp=4),
         pd("job", "7:13-16", lambda w, h: K.dream_bed(w, h, 219), "#0F0E2A"),
         pf("job", "7:17-18", JOB_GRIEF, bg=COLD),
         pd("job", "7:19-21", lambda w, h: K.ash_heap("ah2", w, h, 220, night=True), "#0B0B2A")]
-PG.extend(pack(SEGS, "JOB-C02-D", PG.next(), end=end_mark("NEXT · A DAYSMAN BETWIXT US", "right: 10px; bottom: 34px")))
+PG.extend(pack(SEGS, "JOB-C02-D", PG.next(), end=end_mark("NEXT · NO UMPIRE BETWIXT US", "right: 10px; bottom: 34px")))

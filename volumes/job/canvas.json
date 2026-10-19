@@ -191,6 +191,90 @@
    "w": 760,
    "h": 1080,
    "title": "23 · Swifter Than a Weaver's Shuttle"
+  },
+  "JOB-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · No Umpire Betwixt Us"
+  },
+  "JOB-C03-D-P01-BildadTheShuhite.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Bildad the Shuhite"
+  },
+  "JOB-C03-D-P02-BildadTheShuhite.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Bildad the Shuhite"
+  },
+  "JOB-C03-D-P03-BildadTheShuhite.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Bildad the Shuhite"
+  },
+  "JOB-C03-D-P04-HowCanManBeJustWit.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P05-HowCanManBeJustWit.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P06-HowCanManBeJustWit.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P07-HowCanManBeJustWit.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · How Can Man Be Just with God?"
+  },
+  "JOB-C03-D-P08-NoUmpireBetwixtUs.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · No Umpire Betwixt Us"
+  },
+  "JOB-C03-D-P09-NoUmpireBetwixtUs.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · No Umpire Betwixt Us"
+  },
+  "JOB-C03-D-P10-ThouHastFashionedM.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Thou Hast Fashioned Me as Clay"
+  },
+  "JOB-C03-D-P11-ThouHastFashionedM.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Thou Hast Fashioned Me as Clay"
   }
  },
  "order": [
@@ -219,7 +303,19 @@
   "JOB-C02-D-P09-OhThatMyVexationWe.dc.html",
   "JOB-C02-D-P10-SwifterThanAWeaver.dc.html",
   "JOB-C02-D-P11-SwifterThanAWeaver.dc.html",
-  "JOB-C02-D-P12-SwifterThanAWeaver.dc.html"
+  "JOB-C02-D-P12-SwifterThanAWeaver.dc.html",
+  "JOB-C03-00-Title.dc.html",
+  "JOB-C03-D-P01-BildadTheShuhite.dc.html",
+  "JOB-C03-D-P02-BildadTheShuhite.dc.html",
+  "JOB-C03-D-P03-BildadTheShuhite.dc.html",
+  "JOB-C03-D-P04-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P05-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P06-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P07-HowCanManBeJustWit.dc.html",
+  "JOB-C03-D-P08-NoUmpireBetwixtUs.dc.html",
+  "JOB-C03-D-P09-NoUmpireBetwixtUs.dc.html",
+  "JOB-C03-D-P10-ThouHastFashionedM.dc.html",
+  "JOB-C03-D-P11-ThouHastFashionedM.dc.html"
  ],
  "notes": {
   "Main": {
@@ -242,6 +338,13 @@
    "text": "Chapter 2 · The Vision of the Night (Job 4–7)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · No Umpire Betwixt Us (Job 8–10)",
+   "x": 0,
+   "y": 9900
   }
  },
  "designSystems": [],

@@ -8,7 +8,7 @@ either: his words are set over the heavens. Restraint: the servants slain and th
 words over the empty field, the burnt pasture, the dust of the bands and the fallen house; the boils (2:7) as sackcloth, a
 potsherd and the ash heap; behemoth and leviathan drawn as the natural river-horse and crocodile.
 
-Plan (18,263 words, twelve chapters): 1 The Land of Uz (1–3) · 2 The Vision of the Night (4–7) · 3 A Daysman Betwixt Us
+Plan (18,263 words, twelve chapters): 1 The Land of Uz (1–3) · 2 The Vision of the Night (4–7) · 3 No Umpire Betwixt Us
 (8–10) · 4 If a Man Die (11–14) · 5 My Witness Is in Heaven (15–17) · 6 My Redeemer Liveth (18–20) · 7 Where I Might Find
 Him (21–24) · 8 Where Shall Wisdom Be Found? (25–28) · 9 The Months of Old (29–31) · 10 Elihu (32–37) · 11 Out of the
 Whirlwind (38–39) · 12 Mine Eye Seeth Thee (40–42)."""
@@ -26,5 +26,7 @@ META = {
      "blurb": "A man in the land of Uz, perfect and upright, with seven sons and three daughters and the greatest substance of the children of the east; Satan before Jehovah — doth Job fear God for nought?; four messengers, each escaped alone to tell thee; Jehovah gave, and Jehovah hath taken away; the boils, the potsherd and the ashes; three friends sitting silent seven days; then Job opened his mouth: let the day perish wherein I was born."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Vision of the Night", "range": "Job 4–7", "bible_chapters": [4, 5, 6, 7],
      "blurb": "Eliphaz the Temanite: who ever perished, being innocent?; a spirit passed before my face — shall mortal man be more just than God?; man is born unto trouble, as the sparks fly upward; happy is the man whom God correcteth. Job answers: oh that my vexation were but weighed; my brethren have dealt deceitfully as a brook; my days are swifter than a weaver's shuttle; what is man, that thou shouldest magnify him?"},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "No Umpire Betwixt Us", "range": "Job 8–10", "bible_chapters": [8, 9, 10],
+     "blurb": "Bildad the Shuhite: doth God pervert justice?; inquire of the former age; can the rush grow up without mire?; whose trust is a spider's web. Job answers: how can man be just with God? — he maketh the Bear, Orion, and the Pleiades; he goeth by me, and I see him not; there is no umpire betwixt us; thou hast fashioned me as clay; the land of darkness and of the shadow of death."},
   ],
 }
