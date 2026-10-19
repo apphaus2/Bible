@@ -891,6 +891,125 @@
    "w": 760,
    "h": 1080,
    "title": "117 · The Name of Jehovah Cometh from Far"
+  },
+  "ISA-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Desert Shall Blossom"
+  },
+  "ISA-C09-D-P01-WoeToThemThatGoDow.dc.html": {
+   "x": 840,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Woe to Them That Go Down to Egypt"
+  },
+  "ISA-C09-D-P02-WoeToThemThatGoDow.dc.html": {
+   "x": 1680,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Woe to Them That Go Down to Egypt"
+  },
+  "ISA-C09-D-P03-AKingShallReignInR.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · A King Shall Reign in Righteousness"
+  },
+  "ISA-C09-D-P04-AKingShallReignInR.dc.html": {
+   "x": 3360,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · A King Shall Reign in Righteousness"
+  },
+  "ISA-C09-D-P05-YeWomenThatAreAtEa.dc.html": {
+   "x": 0,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Ye Women That Are at Ease"
+  },
+  "ISA-C09-D-P06-WoeToTheeThatDestr.dc.html": {
+   "x": 840,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Woe to Thee That Destroyest"
+  },
+  "ISA-C09-D-P07-WoeToTheeThatDestr.dc.html": {
+   "x": 1680,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Woe to Thee That Destroyest"
+  },
+  "ISA-C09-D-P08-WoeToTheeThatDestr.dc.html": {
+   "x": 2520,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Woe to Thee That Destroyest"
+  },
+  "ISA-C09-D-P09-WhoAmongUsCanDwell.dc.html": {
+   "x": 3360,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Who Among Us Can Dwell with the Devouring Fire?"
+  },
+  "ISA-C09-D-P10-LookUponZion.dc.html": {
+   "x": 0,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Look upon Zion"
+  },
+  "ISA-C09-D-P11-ComeNearYeNationsT.dc.html": {
+   "x": 840,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Come Near, Ye Nations, to Hear"
+  },
+  "ISA-C09-D-P12-ComeNearYeNationsT.dc.html": {
+   "x": 1680,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Come Near, Ye Nations, to Hear"
+  },
+  "ISA-C09-D-P13-ComeNearYeNationsT.dc.html": {
+   "x": 2520,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Come Near, Ye Nations, to Hear"
+  },
+  "ISA-C09-D-P14-ComeNearYeNationsT.dc.html": {
+   "x": 3360,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Come Near, Ye Nations, to Hear"
+  },
+  "ISA-C09-D-P15-TheDesertShallRejo.dc.html": {
+   "x": 0,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Desert Shall Rejoice"
+  },
+  "ISA-C09-D-P16-TheWayOfHoliness.dc.html": {
+   "x": 840,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · The Way of Holiness"
   }
  },
  "order": [
@@ -1019,7 +1138,24 @@
   "ISA-C08-D-P14-ThisIsTheWayWalkYe.dc.html",
   "ISA-C08-D-P15-ThisIsTheWayWalkYe.dc.html",
   "ISA-C08-D-P16-TheNameOfJehovahCo.dc.html",
-  "ISA-C08-D-P17-TheNameOfJehovahCo.dc.html"
+  "ISA-C08-D-P17-TheNameOfJehovahCo.dc.html",
+  "ISA-C09-00-Title.dc.html",
+  "ISA-C09-D-P01-WoeToThemThatGoDow.dc.html",
+  "ISA-C09-D-P02-WoeToThemThatGoDow.dc.html",
+  "ISA-C09-D-P03-AKingShallReignInR.dc.html",
+  "ISA-C09-D-P04-AKingShallReignInR.dc.html",
+  "ISA-C09-D-P05-YeWomenThatAreAtEa.dc.html",
+  "ISA-C09-D-P06-WoeToTheeThatDestr.dc.html",
+  "ISA-C09-D-P07-WoeToTheeThatDestr.dc.html",
+  "ISA-C09-D-P08-WoeToTheeThatDestr.dc.html",
+  "ISA-C09-D-P09-WhoAmongUsCanDwell.dc.html",
+  "ISA-C09-D-P10-LookUponZion.dc.html",
+  "ISA-C09-D-P11-ComeNearYeNationsT.dc.html",
+  "ISA-C09-D-P12-ComeNearYeNationsT.dc.html",
+  "ISA-C09-D-P13-ComeNearYeNationsT.dc.html",
+  "ISA-C09-D-P14-ComeNearYeNationsT.dc.html",
+  "ISA-C09-D-P15-TheDesertShallRejo.dc.html",
+  "ISA-C09-D-P16-TheWayOfHoliness.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1084,6 +1220,13 @@
    "text": "Chapter 8 · In Returning and Rest (Isaiah 28–30)",
    "x": 0,
    "y": 35200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Desert Shall Blossom (Isaiah 31–35)",
+   "x": 0,
+   "y": 40500
   }
  },
  "designSystems": [],

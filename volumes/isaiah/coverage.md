@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 596 verses — 596 full, 0 partial, 0 omitted.
+**So far:** 676 verses — 676 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Vineyard of Jehovah (Isaiah 1–5)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · In Returning and Rest (Isaiah 28–30)
 
 86 verses: 86 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · The Desert Shall Blossom (Isaiah 31–35)
+
+80 verses: 80 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
