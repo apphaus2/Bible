@@ -481,7 +481,7 @@ def sea_bound(w, h, seed):
 
 def rain_field(w, h, seed, rain=True, dry=False):
     """The rain, the former and the latter, in its season, and the appointed weeks of the harvest (dry=True: withholden)."""
-    o = [K2.sky(w, h, "#5A6A8A" if rain else "#E8B070", "#C8D0D8" if rain else "#F3E0B0"), hills(w, h, h * 0.46, seed, "#7A8A5A", amp=10, step=80)]
+    o = [K2.sky(w, h, "#5A6A8A" if rain else "#E8B070", "#C8D0D8" if rain else "#F3E0B0"), hills(w, h, h * 0.46, seed, "#9A8A5A" if dry else "#7A8A5A", amp=10, step=80)]
     o.append(R1.field(-10, w + 10, h * 0.9, h * 0.32, seed, rows=3, color="#C8A060" if dry else "#E8C88A"))
     if rain:
         r = random.Random(seed)

@@ -387,6 +387,104 @@
    "w": 760,
    "h": 1080,
    "title": "50 · Let Him That Glorieth"
+  },
+  "JER-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Broken Covenant"
+  },
+  "JER-C04-D-P01-LearnNotTheWayOfTh.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Learn Not the Way of the Nations"
+  },
+  "JER-C04-D-P02-LearnNotTheWayOfTh.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Learn Not the Way of the Nations"
+  },
+  "JER-C04-D-P03-HeStretchedOutTheH.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · He Stretched Out the Heavens"
+  },
+  "JER-C04-D-P04-OJehovahCorrectMe.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · O Jehovah, Correct Me"
+  },
+  "JER-C04-E-P01-TheWordsOfThisCove.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Words of This Covenant"
+  },
+  "JER-C04-E-P02-AConspiracyAmongTh.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · A Conspiracy among the Men of Judah"
+  },
+  "JER-C04-E-P03-AConspiracyAmongTh.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · A Conspiracy among the Men of Judah"
+  },
+  "JER-C04-E-P04-LikeAGentleLamb.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Like a Gentle Lamb"
+  },
+  "JER-C04-E-P05-LikeAGentleLamb.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Like a Gentle Lamb"
+  },
+  "JER-C04-F-P01-WhereforeDothTheWa.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Wherefore Doth the Way of the Wicked Prosper?"
+  },
+  "JER-C04-F-P02-IHaveForsakenMyHou.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · I Have Forsaken My House"
+  },
+  "JER-C04-F-P03-IHaveForsakenMyHou.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · I Have Forsaken My House"
+  },
+  "JER-C04-F-P04-MineEvilNeighbours.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Mine Evil Neighbours"
   }
  },
  "order": [
@@ -443,7 +541,21 @@
   "JER-C03-F-P03-AFountainOfTears.dc.html",
   "JER-C03-F-P04-CallForTheMourning.dc.html",
   "JER-C03-F-P05-CallForTheMourning.dc.html",
-  "JER-C03-F-P06-LetHimThatGlorieth.dc.html"
+  "JER-C03-F-P06-LetHimThatGlorieth.dc.html",
+  "JER-C04-00-Title.dc.html",
+  "JER-C04-D-P01-LearnNotTheWayOfTh.dc.html",
+  "JER-C04-D-P02-LearnNotTheWayOfTh.dc.html",
+  "JER-C04-D-P03-HeStretchedOutTheH.dc.html",
+  "JER-C04-D-P04-OJehovahCorrectMe.dc.html",
+  "JER-C04-E-P01-TheWordsOfThisCove.dc.html",
+  "JER-C04-E-P02-AConspiracyAmongTh.dc.html",
+  "JER-C04-E-P03-AConspiracyAmongTh.dc.html",
+  "JER-C04-E-P04-LikeAGentleLamb.dc.html",
+  "JER-C04-E-P05-LikeAGentleLamb.dc.html",
+  "JER-C04-F-P01-WhereforeDothTheWa.dc.html",
+  "JER-C04-F-P02-IHaveForsakenMyHou.dc.html",
+  "JER-C04-F-P03-IHaveForsakenMyHou.dc.html",
+  "JER-C04-F-P04-MineEvilNeighbours.dc.html"
  ],
  "notes": {
   "Main": {
@@ -473,6 +585,13 @@
    "text": "Chapter 3 · The Temple of Jehovah (Jeremiah 7–9)",
    "x": 0,
    "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Broken Covenant (Jeremiah 10–12)",
+   "x": 0,
+   "y": 17600
   }
  },
  "designSystems": [],

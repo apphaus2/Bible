@@ -34,5 +34,7 @@ META = {
      "blurb": "Blow ye the trumpet in the land, set up a standard toward Zion; a lion is gone up from his thicket; my anguish, my anguish! I beheld the earth, and, lo, it was waste and void; run ye to and fro through the streets of Jerusalem, if ye can find a man; peace, peace, when there is no peace; ask for the old paths; and a people cometh from the north country."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Temple of Jehovah", "range": "Jeremiah 7–9", "bible_chapters": [7, 8, 9],
      "blurb": "Stand in the gate of Jehovah's house: trust ye not in lying words, the temple of Jehovah, the temple of Jehovah; is this house become a den of robbers?; go ye now unto Shiloh; cakes to the queen of heaven and the valley of Slaughter; the stork knoweth her appointed times; is there no balm in Gilead?; oh that my head were waters; and let him that glorieth glory in this, that he knoweth me."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "The Broken Covenant", "range": "Jeremiah 10–12", "bible_chapters": [10, 11, 12],
+     "blurb": "Learn not the way of the nations: they deck the tree with silver and with gold, and fasten it with nails; but Jehovah is the true God; my tent is destroyed; O Jehovah, correct me, but in measure; hear ye the words of this covenant; I was like a gentle lamb that is led to the slaughter; wherefore doth the way of the wicked prosper?; if thou hast run with the footmen, how canst thou contend with horses?"},
   ],
 }
