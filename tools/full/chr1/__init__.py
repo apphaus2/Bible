@@ -28,5 +28,7 @@ META = {
      "blurb": "The sons born to David in Hebron and in Jerusalem; the kings of Judah from Solomon to Josiah, son after son; Jeconiah the captive and Zerubbabel; the families of Judah, and Jabez, more honorable than his brethren — oh that thou wouldest bless me indeed, and enlarge my border; the potters who dwelt with the king; and Simeon at the fat pasture of Gedor."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The Sons of Levi", "range": "1 Chronicles 5–6", "bible_chapters": [5, 6],
      "blurb": "Reuben, whose birthright was given to the sons of Joseph; Gad in Bashan; the war with the Hagrites, for they cried to God in the battle; the two tribes and a half carried away beyond the river; then the sons of Levi: the high priests from Aaron to Jehozadak, the singers David set over the service of song, and the cities of the Levites."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "They That Dwelt in Jerusalem", "range": "1 Chronicles 7–9", "bible_chapters": [7, 8, 9],
+     "blurb": "Issachar, Benjamin, Naphtali and Manasseh; Ephraim mourning many days, and Sheerah who built Beth-horon; the line from Ephraim to Joshua; Asher; Benjamin and the house of Saul; then all Israel reckoned by genealogies, and those who dwelt in Jerusalem: priests, Levites, and the porters on the four sides of the house, opening it morning by morning."},
   ],
 }

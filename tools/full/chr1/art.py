@@ -174,3 +174,71 @@ def altar_service(p, w, h, seed):
     s = fit(b, max(h * 0.42, b - 220))
     o.append(priest(p, w * 0.12, b, s) + priest(p, w * 0.5, b, s * 0.94, flip=True) + priest(p, w * 0.9, b, s, flip=True))
     return "".join(o)
+
+# ---- 1 Chronicles 7–9 ---------------------------------------------------------------------------------------------------
+from exo.art8 import bp, dim, tag
+import samuel4 as S4b
+
+def porters_plan(w, h, lit=()):
+    """The porters on the four sides of the house of the tent, toward the east, west, north and south, as a blueprint:
+    the court and the tent in plan, a gate on each side with its ward (lit: sides drawn gold)."""
+    o = [bp(w, h)]
+    cx, cy = w * 0.5, h * 0.54
+    cw, ch = min(w * 0.56, h * 1.1), min(h * 0.6, w * 0.4)
+    o.append(f'<rect x="{f(cx - cw / 2)}" y="{f(cy - ch / 2)}" width="{f(cw)}" height="{f(ch)}" fill="none" stroke="#8FD0E2" stroke-width="2.4"></rect>'
+             f'<rect x="{f(cx - cw * 0.16)}" y="{f(cy - ch * 0.2)}" width="{f(cw * 0.32)}" height="{f(ch * 0.4)}" fill="#8FD0E2" fill-opacity="0.12" stroke="#8FD0E2" stroke-width="2"></rect>'
+             + label(cx, cy + 4, "THE HOUSE OF THE TENT", "#8FD0E2", 9))
+    gates = {"EAST": (cx + cw / 2, cy, 0), "WEST": (cx - cw / 2, cy, 0), "NORTH": (cx, cy - ch / 2, 1), "SOUTH": (cx, cy + ch / 2, 1)}
+    for nm, (x, y, horiz) in gates.items():
+        col = GOLD if (not lit or nm in lit) else CYAN
+        gw = cw * 0.12 if horiz else ch * 0.18
+        if horiz: o.append(f'<path d="M{f(x - gw / 2)} {f(y)} L {f(x + gw / 2)} {f(y)}" stroke="{INK if False else "#0B1A2E"}" stroke-width="6"></path>')
+        else: o.append(f'<path d="M{f(x)} {f(y - gw / 2)} L {f(x)} {f(y + gw / 2)}" stroke="#0B1A2E" stroke-width="6"></path>')
+        o.append(node(x, y, "", col, r=6, dy=0))
+        tx = x + (w * 0.1 if nm == "EAST" else -w * 0.1 if nm == "WEST" else 0)
+        ty = y + (-h * 0.1 if nm == "NORTH" else h * 0.12 if nm == "SOUTH" else 4)
+        o.append(label(tx, ty, nm, col, 11))
+    o.append(dim(cx - cw / 2, cy + ch / 2 + h * 0.06, cx + cw / 2, cy + ch / 2 + h * 0.06, "FOUR SIDES · BY WARDS", size=8))
+    return "".join(o)
+
+EPHRAIM_M = [("BETH-EL", 0.44, 0.78), ("NAARAN", 0.66, 0.74), ("GEZER", 0.14, 0.86), ("SHECHEM", 0.48, 0.52), ("BETH-SHEAN", 0.72, 0.26),
+             ("TAANACH", 0.46, 0.24), ("MEGIDDO", 0.36, 0.18), ("DOR", 0.12, 0.2), ("BETH-HORON", 0.3, 0.8)]
+def ephraim_map(w, h, hi=()):
+    """The possessions of Ephraim and Manasseh as a technical map: Beth-el to Gezer, Shechem, and by Manasseh's borders
+    Beth-shean, Taanach, Megiddo and Dor."""
+    o = [grid_bg(w, h)]
+    o.append(f'<path d="M-10 -10 L {f(w * 0.06)} -10 C {f(w * 0.08)} {f(h * 0.4)} {f(w * 0.04)} {f(h * 0.7)} {f(w * 0.02)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>')
+    o.append(f'<path d="M{f(w * 0.84)} -10 C {f(w * 0.86)} {f(h * 0.3)} {f(w * 0.82)} {f(h * 0.6)} {f(w * 0.86)} {f(h + 10)}" stroke="#2C9DB8" stroke-width="4" fill="none"></path>'
+             + label(w * 0.88, h * 0.5, "JORDAN", "#8FD0E2", 9, "start"))
+    o.append(f'<path d="M{f(w * 0.06)} {f(h * 0.42)} L {f(w * 0.84)} {f(h * 0.36)}" stroke="#FFD23F" stroke-width="1.6" stroke-dasharray="8 6"></path>'
+             + label(w * 0.6, h * 0.34, "MANASSEH", "#FFD23F", 9) + label(w * 0.6, h * 0.46, "EPHRAIM", "#FFD23F", 9))
+    for nm, x, y in EPHRAIM_M:
+        o.append(node(w * x, h * y, nm, GOLD if nm in hi else CYAN, r=5, dy=-11, size=9))
+    return "".join(o)
+
+def beth_horon(p, w, h, seed):
+    """Beth-horon the nether and the upper, which Sheerah built: two walled towns on the ridge, one above the other."""
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.5, seed, "#8A7A5A", amp=10, step=80),
+         J.city_hill(w * 0.66, h * 0.5, w * 0.3, h * 0.2, seed), J.city_hill(w * 0.3, h * 0.82, w * 0.36, h * 0.2, seed + 1), ground(w, h, h * 0.84, "#C8A06A", dy=0),
+         label(w * 0.66, h * 0.16, "THE UPPER", "#0D0D0F", 10), label(w * 0.3, h * 0.5, "THE NETHER", "#0D0D0F", 10)]
+    return "".join(o)
+
+def opening(p, w, h, seed):
+    """Morning by morning: the porters opening the gate of the house of God at dawn, a Levite with the keys."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#5A4A7A", "#FFC890"), sun(w * 0.86, h * 0.62, 26, color="#FFE680", op=0.4), ground(w, h, h * 0.7, "#B8A07A", dy=0),
+         S4b.gatehouse(w * 0.44, h * 0.8, w * 0.44, h * 0.56, lit=True)]
+    s = fit(b, max(h * 0.46, b - 200))
+    for i, x in enumerate((0.12, 0.76, 0.88)):
+        o.append(priest(p, w * x, b, s, flip=i > 0))
+    return "".join(o)
+
+def night_song(p, w, h, seed):
+    """The singers employed in their work day and night: the tent under the stars, harps lit by a lamp."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#0B0B2A", "#3A2A5A"), mk.stars(60, w, h * 0.5, seed), ground(w, h, h * 0.62, "#3A3448", dy=0),
+         S1.shiloh(w * 0.5, h * 0.66, w * 0.64, h * 0.42), S1.lamp(w * 0.5, h * 0.62, min(0.4, h / 900))]
+    s = fit(b, max(h * 0.5, b - 180))
+    for i in range(4):
+        o.append(S3.musician(p, w * (0.1 + i * 0.26), b, s, kind="harp", cloth="#C8C2D6", woman=False, seed=seed + i))
+    return "".join(o)

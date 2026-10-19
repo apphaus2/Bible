@@ -219,6 +219,90 @@
    "w": 760,
    "h": 1080,
    "title": "26 · Their Dwelling-places"
+  },
+  "1CH-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · They That Dwelt in Jerusalem"
+  },
+  "1CH-C04-R-P01-TheTribes.dc.html": {
+   "x": 840,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Tribes"
+  },
+  "1CH-C04-R-P02-TheTribes.dc.html": {
+   "x": 1680,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · The Tribes"
+  },
+  "1CH-C04-D-P01-Ephraim.dc.html": {
+   "x": 2520,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Ephraim"
+  },
+  "1CH-C04-D-P02-Ephraim.dc.html": {
+   "x": 3360,
+   "y": 10700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Ephraim"
+  },
+  "1CH-C04-S-P01-TheChildrenOfAsher.dc.html": {
+   "x": 0,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Children of Asher"
+  },
+  "1CH-C04-S-P02-TheSonsOfBenjamin.dc.html": {
+   "x": 840,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Sons of Benjamin"
+  },
+  "1CH-C04-E-P01-TheHouseOfSaul.dc.html": {
+   "x": 1680,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The House of Saul"
+  },
+  "1CH-C04-T-P01-TheyThatDweltInJer.dc.html": {
+   "x": 2520,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · They That Dwelt in Jerusalem"
+  },
+  "1CH-C04-F-P01-ThePorters.dc.html": {
+   "x": 3360,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Porters"
+  },
+  "1CH-C04-F-P02-TheVesselsOfServic.dc.html": {
+   "x": 0,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Vessels of Service"
+  },
+  "1CH-C04-U-P01-TheHouseOfSaul.dc.html": {
+   "x": 840,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The House of Saul"
   }
  },
  "order": [
@@ -251,7 +335,19 @@
   "1CH-C03-F-P01-TheServiceOfSong.dc.html",
   "1CH-C03-F-P02-TheServiceOfSong.dc.html",
   "1CH-C03-U-P01-TheirDwellingPlace.dc.html",
-  "1CH-C03-U-P02-TheirDwellingPlace.dc.html"
+  "1CH-C03-U-P02-TheirDwellingPlace.dc.html",
+  "1CH-C04-00-Title.dc.html",
+  "1CH-C04-R-P01-TheTribes.dc.html",
+  "1CH-C04-R-P02-TheTribes.dc.html",
+  "1CH-C04-D-P01-Ephraim.dc.html",
+  "1CH-C04-D-P02-Ephraim.dc.html",
+  "1CH-C04-S-P01-TheChildrenOfAsher.dc.html",
+  "1CH-C04-S-P02-TheSonsOfBenjamin.dc.html",
+  "1CH-C04-E-P01-TheHouseOfSaul.dc.html",
+  "1CH-C04-T-P01-TheyThatDweltInJer.dc.html",
+  "1CH-C04-F-P01-ThePorters.dc.html",
+  "1CH-C04-F-P02-TheVesselsOfServic.dc.html",
+  "1CH-C04-U-P01-TheHouseOfSaul.dc.html"
  ],
  "notes": {
   "Main": {
@@ -281,6 +377,13 @@
    "text": "Chapter 3 · The Sons of Levi (1 Chronicles 5–6)",
    "x": 0,
    "y": 7500
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · They That Dwelt in Jerusalem (1 Chronicles 7–9)",
+   "x": 0,
+   "y": 10400
   }
  },
  "designSystems": [],

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 283 verses — 283 full, 0 partial, 0 omitted.
+**So far:** 407 verses — 407 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · From Adam (1 Chronicles 1–2)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · The Sons of Levi (1 Chronicles 5–6)
 
 107 verses: 107 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · They That Dwelt in Jerusalem (1 Chronicles 7–9)
+
+124 verses: 124 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
