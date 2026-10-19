@@ -695,6 +695,104 @@
    "w": 760,
    "h": 1080,
    "title": "89 · The Fear of the Lord, That Is Wisdom"
+  },
+  "JOB-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Months of Old"
+  },
+  "JOB-C09-D-P01-OhThatIWereAsInThe.dc.html": {
+   "x": 840,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Oh That I Were as in the Months of Old"
+  },
+  "JOB-C09-D-P02-OhThatIWereAsInThe.dc.html": {
+   "x": 1680,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Oh That I Were as in the Months of Old"
+  },
+  "JOB-C09-D-P03-OhThatIWereAsInThe.dc.html": {
+   "x": 2520,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Oh That I Were as in the Months of Old"
+  },
+  "JOB-C09-D-P04-ButNowTheyHaveMeIn.dc.html": {
+   "x": 3360,
+   "y": 33600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P05-ButNowTheyHaveMeIn.dc.html": {
+   "x": 0,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P06-ButNowTheyHaveMeIn.dc.html": {
+   "x": 840,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P07-ButNowTheyHaveMeIn.dc.html": {
+   "x": 1680,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · But Now They Have Me in Derision"
+  },
+  "JOB-C09-D-P08-IMadeACovenantWith.dc.html": {
+   "x": 2520,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P09-IMadeACovenantWith.dc.html": {
+   "x": 3360,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P10-IMadeACovenantWith.dc.html": {
+   "x": 0,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P11-IMadeACovenantWith.dc.html": {
+   "x": 840,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P12-IMadeACovenantWith.dc.html": {
+   "x": 1680,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · I Made a Covenant with Mine Eyes"
+  },
+  "JOB-C09-D-P13-HereIsMySignature.dc.html": {
+   "x": 2520,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Here Is My Signature"
   }
  },
  "order": [
@@ -795,7 +893,21 @@
   "JOB-C08-D-P07-SurelyThereIsAMine.dc.html",
   "JOB-C08-D-P08-WhereShallWisdomBe.dc.html",
   "JOB-C08-D-P09-WhereShallWisdomBe.dc.html",
-  "JOB-C08-D-P10-TheFearOfTheLordTh.dc.html"
+  "JOB-C08-D-P10-TheFearOfTheLordTh.dc.html",
+  "JOB-C09-00-Title.dc.html",
+  "JOB-C09-D-P01-OhThatIWereAsInThe.dc.html",
+  "JOB-C09-D-P02-OhThatIWereAsInThe.dc.html",
+  "JOB-C09-D-P03-OhThatIWereAsInThe.dc.html",
+  "JOB-C09-D-P04-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P05-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P06-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P07-ButNowTheyHaveMeIn.dc.html",
+  "JOB-C09-D-P08-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P09-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P10-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P11-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P12-IMadeACovenantWith.dc.html",
+  "JOB-C09-D-P13-HereIsMySignature.dc.html"
  ],
  "notes": {
   "Main": {
@@ -860,6 +972,13 @@
    "text": "Chapter 8 · The Price of Wisdom (Job 25–28)",
    "x": 0,
    "y": 29200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Months of Old (Job 29–31)",
+   "x": 0,
+   "y": 33300
   }
  },
  "designSystems": [],
