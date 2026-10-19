@@ -43,5 +43,7 @@ META = {
      "blurb": "The elders come to inquire, and hear the history of their fathers: Egypt, the wilderness, the sabbaths profaned, and I wrought for my name's sake; I will cause you to pass under the rod; the forest of the South set on fire; then a sword, a sword, sharpened and furbished; the king of Babylon at the parting of the way; remove the mitre, and take off the crown — until he come whose right it is."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Oholah and Oholibah", "range": "Ezekiel 22–23", "bible_chapters": [22, 23],
      "blurb": "Wilt thou judge the bloody city? — the house of Israel become dross in the furnace, and I sought for a man that should stand in the gap, but I found none; then two women, the daughters of one mother, Oholah the elder and Oholibah her sister, Samaria and Jerusalem, their lovers and their judgment, and the cup of astonishment and desolation."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Desire of Thine Eyes", "range": "Ezekiel 24–25", "bible_chapters": [24, 25],
+     "blurb": "Write thee the name of the day: the king of Babylon drew close unto Jerusalem; the parable of the caldron and its rust; the desire of thine eyes taken away with a stroke — so I spake unto the people in the morning, and at even my wife died — and Ezekiel a sign unto them; then the burdens of Ammon, Moab, Edom and the Philistines."},
   ],
 }

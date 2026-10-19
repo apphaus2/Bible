@@ -856,6 +856,76 @@
    "w": 760,
    "h": 1080,
    "title": "112 · Righteous Men Shall Judge Them"
+  },
+  "EZK-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Desire of Thine Eyes"
+  },
+  "EZK-C09-D-P01-SetOnTheCaldron.dc.html": {
+   "x": 840,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Set On the Caldron"
+  },
+  "EZK-C09-D-P02-WoeToTheBloodyCity.dc.html": {
+   "x": 1680,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Woe to the Bloody City"
+  },
+  "EZK-C09-D-P03-TheDesireOfThineEy.dc.html": {
+   "x": 2520,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Desire of Thine Eyes"
+  },
+  "EZK-C09-D-P04-EzekielShallBeUnto.dc.html": {
+   "x": 3360,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Ezekiel Shall Be unto You a Sign"
+  },
+  "EZK-C09-D-P05-EzekielShallBeUnto.dc.html": {
+   "x": 0,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Ezekiel Shall Be unto You a Sign"
+  },
+  "EZK-C09-D-P06-AgainstTheChildren.dc.html": {
+   "x": 840,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Against the Children of Ammon"
+  },
+  "EZK-C09-D-P07-AgainstTheChildren.dc.html": {
+   "x": 1680,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Against the Children of Ammon"
+  },
+  "EZK-C09-D-P08-Edom.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Edom"
+  },
+  "EZK-C09-D-P09-ThePhilistines.dc.html": {
+   "x": 3360,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Philistines"
   }
  },
  "order": [
@@ -979,7 +1049,17 @@
   "EZK-C08-D-P11-ThySisterSCup.dc.html",
   "EZK-C08-D-P12-WiltThouJudgeOhola.dc.html",
   "EZK-C08-D-P13-WiltThouJudgeOhola.dc.html",
-  "EZK-C08-D-P14-RighteousMenShallJ.dc.html"
+  "EZK-C08-D-P14-RighteousMenShallJ.dc.html",
+  "EZK-C09-00-Title.dc.html",
+  "EZK-C09-D-P01-SetOnTheCaldron.dc.html",
+  "EZK-C09-D-P02-WoeToTheBloodyCity.dc.html",
+  "EZK-C09-D-P03-TheDesireOfThineEy.dc.html",
+  "EZK-C09-D-P04-EzekielShallBeUnto.dc.html",
+  "EZK-C09-D-P05-EzekielShallBeUnto.dc.html",
+  "EZK-C09-D-P06-AgainstTheChildren.dc.html",
+  "EZK-C09-D-P07-AgainstTheChildren.dc.html",
+  "EZK-C09-D-P08-Edom.dc.html",
+  "EZK-C09-D-P09-ThePhilistines.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1044,6 +1124,13 @@
    "text": "Chapter 8 · Oholah and Oholibah (Ezekiel 22–23)",
    "x": 0,
    "y": 35200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Desire of Thine Eyes (Ezekiel 24–25)",
+   "x": 0,
+   "y": 39300
   }
  },
  "designSystems": [],

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 592 verses — 592 full, 0 partial, 0 omitted.
+**So far:** 636 verses — 636 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Visions of God (Ezekiel 1–3)
 
@@ -49,5 +49,11 @@ Every verse is on the page in full.
 ## Chapter 8 · Oholah and Oholibah (Ezekiel 22–23)
 
 80 verses: 80 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 9 · The Desire of Thine Eyes (Ezekiel 24–25)
+
+44 verses: 44 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
