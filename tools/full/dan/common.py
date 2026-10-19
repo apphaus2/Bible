@@ -2,9 +2,10 @@
 the cast's faces.
 
 Daniel: a blue headcloth with a dark cord; a youth (stubble) in chapter 1, black-bearded in 2–5, greying in 6, grey in the
-visions of 7–12. Nebuchadnezzar: black curled beard, a deep red headcloth with a gold band. Belshazzar: young, stubble,
-purple with the gold band. Darius the Mede: grey beard, crimson with the band. Hananiah, Mishael and Azariah (Shadrach,
-Meshach and Abed-nego): rust, green and teal headcloths. The Chaldeans: black beards, violet headcloths, kohl."""
+visions of 7–12. Nebuchadnezzar: black beard, a deep navy headcloth with a gold band (a deep red robe and a tall gold tiara at
+a distance). Belshazzar: young, stubble, purple with the gold band. Darius the Mede: grey beard, a dark slate headcloth with
+the band (a crimson robe and the Persian crown at a distance). The queen: a teal headscarf with a gold band. Hananiah, Mishael and Azariah (Shadrach,
+Meshach and Abed-nego): dark rust, green and teal headcloths. The Chaldeans: black beards, violet headcloths, kohl."""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 from faces_ex import F

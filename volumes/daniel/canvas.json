@@ -471,6 +471,90 @@
    "w": 760,
    "h": 1080,
    "title": "60 · A Man Clothed in Linen"
+  },
+  "DAN-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Time of the End"
+  },
+  "DAN-C06-D-P01-ThreeKingsInPersia.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Three Kings in Persia"
+  },
+  "DAN-C06-D-P02-TheKingOfTheSouth.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The King of the South"
+  },
+  "DAN-C06-D-P03-TheKingOfTheNorth.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The King of the North"
+  },
+  "DAN-C06-D-P04-AContemptiblePerso.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Contemptible Person"
+  },
+  "DAN-C06-D-P05-AContemptiblePerso.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · A Contemptible Person"
+  },
+  "DAN-C06-D-P06-TheyThatAreWise.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · They That Are Wise"
+  },
+  "DAN-C06-D-P07-TheTimeOfTheEnd.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Time of the End"
+  },
+  "DAN-C06-D-P08-TheTimeOfTheEnd.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Time of the End"
+  },
+  "DAN-C06-E-P01-MichaelShallStandU.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Michael Shall Stand Up"
+  },
+  "DAN-C06-E-P02-HowLongShallItBe.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · How Long Shall It Be?"
+  },
+  "DAN-C06-E-P03-GoThouThyWay.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Go Thou Thy Way"
   }
  },
  "order": [
@@ -539,7 +623,19 @@
   "DAN-C05-E-P01-AManClothedInLinen.dc.html",
   "DAN-C05-E-P02-AManClothedInLinen.dc.html",
   "DAN-C05-E-P03-AManClothedInLinen.dc.html",
-  "DAN-C05-E-P04-AManClothedInLinen.dc.html"
+  "DAN-C05-E-P04-AManClothedInLinen.dc.html",
+  "DAN-C06-00-Title.dc.html",
+  "DAN-C06-D-P01-ThreeKingsInPersia.dc.html",
+  "DAN-C06-D-P02-TheKingOfTheSouth.dc.html",
+  "DAN-C06-D-P03-TheKingOfTheNorth.dc.html",
+  "DAN-C06-D-P04-AContemptiblePerso.dc.html",
+  "DAN-C06-D-P05-AContemptiblePerso.dc.html",
+  "DAN-C06-D-P06-TheyThatAreWise.dc.html",
+  "DAN-C06-D-P07-TheTimeOfTheEnd.dc.html",
+  "DAN-C06-D-P08-TheTimeOfTheEnd.dc.html",
+  "DAN-C06-E-P01-MichaelShallStandU.dc.html",
+  "DAN-C06-E-P02-HowLongShallItBe.dc.html",
+  "DAN-C06-E-P03-GoThouThyWay.dc.html"
  ],
  "notes": {
   "Main": {
@@ -583,6 +679,13 @@
    "text": "Chapter 5 · Seventy Weeks (Daniel 9–10)",
    "x": 0,
    "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Time of the End (Daniel 11–12)",
+   "x": 0,
+   "y": 21000
   }
  },
  "designSystems": [],
