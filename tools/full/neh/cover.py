@@ -9,7 +9,8 @@ def cover():
     weapon, the trumpeter by Nehemiah (full-bleed)."""
     svg = (f'<svg width="760" height="1080" viewBox="0 0 760 1080" style="position: absolute; inset: 0; display: block">'
            f'<g transform="translate(0 300)">{K.cover_art("cv", 760, 780, 1)}</g></svg>'
-           '<div style="position: absolute; left: 0; right: 0; top: 0; height: 470px; background: linear-gradient(180deg, rgba(42,26,58,1) 0%, rgba(42,26,58,0.85) 62%, rgba(42,26,58,0) 100%)"></div>')
+           '<div style="position: absolute; left: 0; right: 0; top: 0; height: 470px; background: linear-gradient(180deg, rgba(42,26,58,1) 0%, rgba(42,26,58,0.85) 62%, rgba(42,26,58,0) 100%)"></div>'
+           '<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(0deg, rgba(42,26,58,0.92) 0%, rgba(42,26,58,0) 100%)"></div>')
     body = svg + f'''
   <div style="position: absolute; top: 40px; left: 38px; right: 38px; display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #F3EFE6">
     <span>The Book of</span>

@@ -50,7 +50,7 @@ PG.extend(plan_pages(WALL, "NEH-C02-D", PG.next(), tag="THE BUILDERS OF THE WALL
 SEGS2 = [face([caps("4:1"), cp("4:2", to="and said,"), say("4:2", frm="What are these")], "NEH 4:1–2", SANBALLAT, bg=RED, head="If a Fox Go Up", stamp=4),
          face([cp("4:3", to="and he said,"), say("4:3", frm="Even that which")], "NEH 4:3", TOBIAH, bg=RED),
          face([says("4:4-5")], "NEH 4:4–5", NEHEMIAH_PRAY, bg=COLD),
-         drawn([caps("4:6")], "NEH 4:6", below(lambda w, h: K.builders("bd2b", w, h, 206, trumpet=False, top=0.64), 0.3), SKY, head="A Mind to Work"),
+         drawn([caps("4:6")], "NEH 4:6", below(lambda w, h: K.builders("bd2b", w, h, 206, trumpet=False, top=0.66), 0.4), SKY, head="A Mind to Work"),
          drawn([caps("4:7-8")], "NEH 4:7–8", below(lambda w, h: K.foes_map(w, h), 0.3), MAP, head="They Conspired All of Them Together"),
          drawn([caps("4:9")], "NEH 4:9", below(lambda w, h: K.watch_night("wn2", w, h, 207), 0.3), "#0B0B2A"),
          face([cp("4:10", to="And Judah said,"), say("4:10", frm="The strength")], "NEH 4:10", JUDAH_MAN, bg=COLD),
@@ -61,7 +61,7 @@ SEGS2 = [face([caps("4:1"), cp("4:2", to="and said,"), say("4:2", frm="What are 
          drawn([caps("4:15")], "NEH 4:15", below(lambda w, h: K.builders("bd2c", w, h, 209, trumpet=False, top=0.62), 0.24), SKY),
          drawn([caps("4:16-18")], "NEH 4:16–18", below(lambda w, h: K.builders("bd2d", w, h, 210, top=0.62), 0.4), SKY, head="With the Other Held His Weapon"),
          face([cp("4:19", to="and to the rest of the people,"), joined("say", ("4:19", "The work is great"), "4:20")], "NEH 4:19–20", NEHEMIAH),
-         drawn([caps("4:21")], "NEH 4:21", below(lambda w, h: K.builders("bd2e", w, h, 211, dusk=True, top=0.62), 0.32), "#5A3A6A"),
+         drawn([caps("4:21")], "NEH 4:21", below(lambda w, h: K.builders("bd2e", w, h, 211, dusk=True, top=0.66), 0.46), "#5A3A6A"),
          face([cp("4:22", to="said I unto the people,"), say("4:22", frm="Let every one")], "NEH 4:22", NEHEMIAH),
          drawn([caps("4:23")], "NEH 4:23", below(lambda w, h: K.watch_night("wn2b", w, h, 212, water=True), 0.2), "#0B0B2A")]
 PG.extend(pack(SEGS2, "NEH-C02-E", PG.next(), end=end_mark("NEXT · THE WORK FINISHED", "right: 10px; bottom: 34px")))

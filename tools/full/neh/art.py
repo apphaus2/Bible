@@ -1078,9 +1078,9 @@ def musicians_court(p, w, h, seed):
     """The singers and Levites with cymbals, psalteries and harps, and the priests with trumpets, before the house of God."""
     b = h * 0.94
     o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFB04A", "#FFE6B0"), K1.temple_front(w * 0.5, h * 0.56, w * 0.46, seed), ground(w, h, h * 0.56, "#C8B88A", dy=0)]
-    s = fit(b, max(h * 0.38, b - 230))
+    s = fit(b, max(h * 0.5, b - 200))
     for i in range(8):
-        x = w * (0.06 + i * 0.125)
+        x = w * (0.08 + i * 0.12)
         if i in (0, 7):
             o.append(J.trumpeter(p, x, b, s * 0.95, flip=i == 7))
         else:
