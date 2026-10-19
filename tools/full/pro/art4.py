@@ -21,3 +21,22 @@ def father_son(p, w, h, seed, gate=False):
              f'<rect x="{f(w * 0.48 - 46 * s)}" y="{f(b - 136 * s)}" width="{f(8 * s)}" height="{f(38 * s)}" rx="3" fill="#8A5A30" stroke="{INK}" stroke-width="1.4"></rect>'
              f'<rect x="{f(w * 0.48 + 38 * s)}" y="{f(b - 136 * s)}" width="{f(8 * s)}" height="{f(38 * s)}" rx="3" fill="#8A5A30" stroke="{INK}" stroke-width="1.4"></rect>')
     return "".join(o)
+
+def casting_lot(p, w, h, seed):
+    """The lot is cast into the lap: men kneeling about a red cloth on the ground, white and black stones fallen on it, light
+    from above (the whole disposing thereof is of Jehovah; God is never drawn)."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), sky(w, h, "#12113A", "#3A2A5A"), EM.rays(w * 0.5, -h * 0.1, 13, 30, max(w, h), "#FFE680", 0.3, 5, 40, 140),
+         ground(w, h, h * 0.7, "#3A2A3A", dy=0)]
+    k = min(1.8, h / 160)
+    cx, cy = w * 0.5, b - 20 * k
+    o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(130 * k)}" ry="{f(30 * k)}" fill="#B5402A" stroke="{INK}" stroke-width="2.4"></ellipse>'
+             f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(110 * k)}" ry="{f(22 * k)}" fill="none" stroke="#E8B830" stroke-width="2"></ellipse>')
+    r = random.Random(seed)
+    for i in range(7):
+        o.append(f'<ellipse cx="{f(cx + r.uniform(-80, 80) * k)}" cy="{f(cy + r.uniform(-12, 12) * k)}" rx="{f(9 * k)}" ry="{f(6 * k)}" fill="{"#F3EFE6" if i % 2 else "#2A2420"}" stroke="{INK}" stroke-width="1.6"></ellipse>')
+    o.append(glow(cx, cy, 120 * k, "#FFE680", 0.25))
+    s = min(fit(b, h * 0.42), 1.0)
+    for x, c, fl in ((0.16, "#5A4A3A", False), (0.28, "#3A4A6A", False), (0.72, "#6A3A3A", True), (0.84, "#4A5A3A", True)):
+        o.append(E.kneel(w * x, b, s * 0.9, color=c, flip=fl))
+    return "".join(o)

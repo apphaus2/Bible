@@ -33,5 +33,7 @@ META = {
      "blurb": "The proverbs of Solomon, one by one: a wise son maketh a glad father; the hand of the diligent maketh rich; the mouth of the righteous is a fountain of life; hatred stirreth up strifes, but love covereth all transgressions; a false balance is an abomination to Jehovah; as a ring of gold in a swine's snout; a worthy woman is the crown of her husband."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "A Tree of Life", "range": "Proverbs 13–15", "bible_chapters": [13, 14, 15],
      "blurb": "Hope deferred maketh the heart sick, but when the desire cometh, it is a tree of life; the law of the wise is a fountain of life; every wise woman buildeth her house; where no oxen are, the crib is clean; a soft answer turneth away wrath; the eyes of Jehovah are in every place; better is a dinner of herbs, where love is."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Lot Is Cast into the Lap", "range": "Proverbs 16–18", "bible_chapters": [16, 17, 18],
+     "blurb": "Commit thy works unto Jehovah; a just balance and scales are Jehovah's; pride goeth before destruction, and a haughty spirit before a fall; pleasant words are as a honeycomb; the lot is cast into the lap, but the whole disposing thereof is of Jehovah; better is a dry morsel, and quietness therewith; the name of Jehovah is a strong tower."},
   ],
 }

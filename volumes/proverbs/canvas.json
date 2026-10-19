@@ -436,6 +436,90 @@
    "w": 760,
    "h": 1080,
    "title": "55 · A Soft Answer Turneth Away Wrath"
+  },
+  "PRO-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Lot Is Cast into the Lap"
+  },
+  "PRO-C06-S-P01-CommitThyWorksUnto.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P02-CommitThyWorksUnto.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P03-CommitThyWorksUnto.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P04-CommitThyWorksUnto.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Commit Thy Works unto Jehovah"
+  },
+  "PRO-C06-S-P05-BetterIsADryMorsel.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P06-BetterIsADryMorsel.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P07-BetterIsADryMorsel.dc.html": {
+   "x": 1680,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P08-BetterIsADryMorsel.dc.html": {
+   "x": 2520,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Better Is a Dry Morsel"
+  },
+  "PRO-C06-S-P09-AStrongTower.dc.html": {
+   "x": 3360,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Strong Tower"
+  },
+  "PRO-C06-S-P10-AStrongTower.dc.html": {
+   "x": 0,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · A Strong Tower"
+  },
+  "PRO-C06-S-P11-AStrongTower.dc.html": {
+   "x": 840,
+   "y": 24900,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · A Strong Tower"
   }
  },
  "order": [
@@ -499,7 +583,19 @@
   "PRO-C05-S-P10-ASoftAnswerTurneth.dc.html",
   "PRO-C05-S-P11-ASoftAnswerTurneth.dc.html",
   "PRO-C05-S-P12-ASoftAnswerTurneth.dc.html",
-  "PRO-C05-S-P13-ASoftAnswerTurneth.dc.html"
+  "PRO-C05-S-P13-ASoftAnswerTurneth.dc.html",
+  "PRO-C06-00-Title.dc.html",
+  "PRO-C06-S-P01-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P02-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P03-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P04-CommitThyWorksUnto.dc.html",
+  "PRO-C06-S-P05-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P06-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P07-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P08-BetterIsADryMorsel.dc.html",
+  "PRO-C06-S-P09-AStrongTower.dc.html",
+  "PRO-C06-S-P10-AStrongTower.dc.html",
+  "PRO-C06-S-P11-AStrongTower.dc.html"
  ],
  "notes": {
   "Main": {
@@ -543,6 +639,13 @@
    "text": "Chapter 5 · A Tree of Life (Proverbs 13–15)",
    "x": 0,
    "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Lot Is Cast into the Lap (Proverbs 16–18)",
+   "x": 0,
+   "y": 22200
   }
  },
  "designSystems": [],
