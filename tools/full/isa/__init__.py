@@ -12,7 +12,7 @@ the winepress alone; 66:24 is words over the valley outside the city.
 
 Plan (36,642 words, eighteen chapters): 1 The Vineyard of Jehovah (1–5) · 2 Holy, Holy, Holy (6–9) · 3 The Root of
 Jesse (10–12) · 4 How Art Thou Fallen (13–16) · 5 The Burden of Egypt (17–20) · 6 Watchman, What of the Night? (21–23) ·
-7 He Hath Swallowed Up Death (24–27) · 8 In Returning and Rest (28–30) · 9 The Desert Shall Blossom (31–35) ·
+7 Thy Dead Shall Live (24–27) · 8 In Returning and Rest (28–30) · 9 The Desert Shall Blossom (31–35) ·
 10 Whereon Dost Thou Trust? (36–39) · 11 Comfort Ye My People (40–42) · 12 Ye Are My Witnesses (43–45) · 13 Go Ye Forth
 from Babylon (46–48) · 14 A Light to the Gentiles (49–51) · 15 A Man of Sorrows (52–55) · 16 The Fast That I Have Chosen
 (56–59) · 17 Arise, Shine (60–62) · 18 New Heavens and a New Earth (63–66)."""
@@ -38,5 +38,7 @@ META = {
      "blurb": "The burden of Damascus, a ruinous heap, and the gleanings of the olive-tree; the uproar of the nations chased as chaff; the land of the rustling of wings beyond the rivers of Ethiopia; the burden of Egypt — Jehovah rideth upon a swift cloud, the Nile dried up, an altar to Jehovah in the midst of Egypt, and a highway out of Egypt to Assyria; and Isaiah's sign, three years barefoot, against Egypt and Ethiopia."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Watchman, What of the Night?", "range": "Isaiah 21–23", "bible_chapters": [21, 22, 23],
      "blurb": "The burden of the wilderness of the sea — set a watchman: fallen, fallen is Babylon; the burden of Dumah — watchman, what of the night? the morning cometh, and also the night; the burden upon Arabia; the valley of vision — let us eat and drink, for to-morrow we shall die; Shebna's sepulchre, and the key of the house of David laid upon Eliakim; and the burden of Tyre — howl, ye ships of Tarshish."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Thy Dead Shall Live", "range": "Isaiah 24–27", "bible_chapters": [24, 25, 26, 27],
+     "blurb": "Jehovah maketh the earth empty, and it reeleth to and fro like a hammock; then the song — O Jehovah, thou art my God; in this mountain a feast of fat things for all peoples: he hath swallowed up death for ever, and the Lord Jehovah will wipe away tears from off all faces; we have a strong city; thy dead shall live; leviathan the swift serpent; the vineyard of wine; and the great trumpet."},
   ],
 }

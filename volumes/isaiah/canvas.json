@@ -667,6 +667,104 @@
    "w": 760,
    "h": 1080,
    "title": "87 · Seventy Years"
+  },
+  "ISA-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Thy Dead Shall Live"
+  },
+  "ISA-C07-D-P01-TheEarthMadeEmpty.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · The Earth Made Empty"
+  },
+  "ISA-C07-D-P02-TheEarthMadeEmpty.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Earth Made Empty"
+  },
+  "ISA-C07-D-P03-FearAndThePitAndTh.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Fear, and the Pit, and the Snare"
+  },
+  "ISA-C07-D-P04-FearAndThePitAndTh.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Fear, and the Pit, and the Snare"
+  },
+  "ISA-C07-D-P05-OJehovahThouArtMyG.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · O Jehovah, Thou Art My God"
+  },
+  "ISA-C07-D-P06-HeHathSwallowedUpD.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · He Hath Swallowed Up Death"
+  },
+  "ISA-C07-D-P07-WeHaveAStrongCity.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · We Have a Strong City"
+  },
+  "ISA-C07-D-P08-WeHaveAStrongCity.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · We Have a Strong City"
+  },
+  "ISA-C07-D-P09-WeHaveAStrongCity.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · We Have a Strong City"
+  },
+  "ISA-C07-D-P10-ThyDeadShallLive.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Thy Dead Shall Live"
+  },
+  "ISA-C07-D-P11-AVineyardOfWine.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · A Vineyard of Wine"
+  },
+  "ISA-C07-D-P12-AVineyardOfWine.dc.html": {
+   "x": 1680,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · A Vineyard of Wine"
+  },
+  "ISA-C07-D-P13-AGreatTrumpet.dc.html": {
+   "x": 2520,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · A Great Trumpet"
   }
  },
  "order": [
@@ -763,7 +861,21 @@
   "ISA-C06-D-P09-HowlYeShipsOfTarsh.dc.html",
   "ISA-C06-D-P10-HowlYeShipsOfTarsh.dc.html",
   "ISA-C06-D-P11-SeventyYears.dc.html",
-  "ISA-C06-D-P12-SeventyYears.dc.html"
+  "ISA-C06-D-P12-SeventyYears.dc.html",
+  "ISA-C07-00-Title.dc.html",
+  "ISA-C07-D-P01-TheEarthMadeEmpty.dc.html",
+  "ISA-C07-D-P02-TheEarthMadeEmpty.dc.html",
+  "ISA-C07-D-P03-FearAndThePitAndTh.dc.html",
+  "ISA-C07-D-P04-FearAndThePitAndTh.dc.html",
+  "ISA-C07-D-P05-OJehovahThouArtMyG.dc.html",
+  "ISA-C07-D-P06-HeHathSwallowedUpD.dc.html",
+  "ISA-C07-D-P07-WeHaveAStrongCity.dc.html",
+  "ISA-C07-D-P08-WeHaveAStrongCity.dc.html",
+  "ISA-C07-D-P09-WeHaveAStrongCity.dc.html",
+  "ISA-C07-D-P10-ThyDeadShallLive.dc.html",
+  "ISA-C07-D-P11-AVineyardOfWine.dc.html",
+  "ISA-C07-D-P12-AVineyardOfWine.dc.html",
+  "ISA-C07-D-P13-AGreatTrumpet.dc.html"
  ],
  "notes": {
   "Main": {
@@ -814,6 +926,13 @@
    "text": "Chapter 6 · Watchman, What of the Night? (Isaiah 21–23)",
    "x": 0,
    "y": 27000
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Thy Dead Shall Live (Isaiah 24–27)",
+   "x": 0,
+   "y": 31100
   }
  },
  "designSystems": [],

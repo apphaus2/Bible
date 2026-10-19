@@ -56,4 +56,4 @@ SEGS = (
     + S("23:13-14", "say", A(lambda w, h: K.tyre(w, h, 612, state="waste"), "#3A3A5A"))
     + S("23:15-18", "say", [ISAIAH, A(lambda w, h: K.harp_lament(w, h, 613), "#2A2040"), A(lambda w, h: K.tyre(w, h, 614, state="trade"), "#8FC8E8")], kinds={16: "song"}, split=[16, 17], head="Seventy Years")
 )
-PG.extend(pack(SEGS, "ISA-C06-D", PG.next(), end=end_mark("NEXT · HE HATH SWALLOWED UP DEATH", "right: 10px; bottom: 34px")))
+PG.extend(pack(SEGS, "ISA-C06-D", PG.next(), end=end_mark("NEXT · THY DEAD SHALL LIVE", "right: 10px; bottom: 34px")))
