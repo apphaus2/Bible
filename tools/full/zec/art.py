@@ -9,6 +9,7 @@ import sys, pathlib, math, random
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from oba.minor import *
 from exo.art9 import high_priest
+from zec import G
 
 ZECH_C = "#3A5A6A"
 GOLD, CY = "#FFD23F", "#8FD0E2"
@@ -206,7 +207,7 @@ def mountain_plain(w, h, seed):
          f'<path d="M-10 {f(h * 0.78)} L {f(w * 0.6)} {f(h * 0.74)} L {f(w + 10)} {f(h * 0.78)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2"></path>',
          route([(w * 0.24, h * 0.3), (w * 0.24, h * 0.66)], color=GOLD, sw=3), temple_front(w * 0.72, h * 0.76, w * 0.24, seed)]
     o.append(f'<rect x="{f(w * 0.72 - 20)}" y="{f(h * 0.2)}" width="40" height="24" fill="#E8DCC8" stroke="#0D0D0F" stroke-width="2"></rect>' + halo(w * 0.72, h * 0.22, h * 0.2, "#FFF4C2", 0.6)
-             + label(w * 0.72, h * 0.12, "GRACE, GRACE", GOLD, 11))
+             + label(w * 0.72, h * 0.12, G.v("4:7", frm="Grace, grace", to="Grace, grace").upper(), GOLD, 11))
     return "".join(o)
 
 def plummet(p, w, h, seed):

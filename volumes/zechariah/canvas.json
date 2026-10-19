@@ -275,6 +275,76 @@
    "w": 760,
    "h": 1080,
    "title": "34 · The Worthless Shepherd"
+  },
+  "ZEC-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Day of Jehovah"
+  },
+  "ZEC-C04-D-P01-ACupOfReeling.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · A Cup of Reeling"
+  },
+  "ZEC-C04-D-P02-ACupOfReeling.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · A Cup of Reeling"
+  },
+  "ZEC-C04-D-P03-WhomTheyHavePierce.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Whom They Have Pierced"
+  },
+  "ZEC-C04-E-P01-AFountainOpened.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · A Fountain Opened"
+  },
+  "ZEC-C04-E-P02-SmiteTheShepherd.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Smite the Shepherd"
+  },
+  "ZEC-C04-F-P01-UponTheMountOfOliv.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Upon the Mount of Olives"
+  },
+  "ZEC-C04-F-P02-LivingWaters.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Living Waters"
+  },
+  "ZEC-C04-F-P03-LivingWaters.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Living Waters"
+  },
+  "ZEC-C04-F-P04-HolyUntoJehovah.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Holy unto Jehovah"
   }
  },
  "order": [
@@ -315,7 +385,17 @@
   "ZEC-C03-F-P01-TheFlockOfSlaughte.dc.html",
   "ZEC-C03-F-P02-TheFlockOfSlaughte.dc.html",
   "ZEC-C03-F-P03-ThirtyPiecesOfSilv.dc.html",
-  "ZEC-C03-F-P04-TheWorthlessShephe.dc.html"
+  "ZEC-C03-F-P04-TheWorthlessShephe.dc.html",
+  "ZEC-C04-00-Title.dc.html",
+  "ZEC-C04-D-P01-ACupOfReeling.dc.html",
+  "ZEC-C04-D-P02-ACupOfReeling.dc.html",
+  "ZEC-C04-D-P03-WhomTheyHavePierce.dc.html",
+  "ZEC-C04-E-P01-AFountainOpened.dc.html",
+  "ZEC-C04-E-P02-SmiteTheShepherd.dc.html",
+  "ZEC-C04-F-P01-UponTheMountOfOliv.dc.html",
+  "ZEC-C04-F-P02-LivingWaters.dc.html",
+  "ZEC-C04-F-P03-LivingWaters.dc.html",
+  "ZEC-C04-F-P04-HolyUntoJehovah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -345,6 +425,13 @@
    "text": "Chapter 3 · Thy King Cometh (Zechariah 9–11)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Day of Jehovah (Zechariah 12–14)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],
