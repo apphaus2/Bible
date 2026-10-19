@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 615 verses — 615 full, 0 partial, 0 omitted.
+**So far:** 713 verses — 713 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Beginning of Knowledge (Proverbs 1–3)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · The King's Heart (Proverbs 19–21)
 
 90 verses: 90 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · The Words of the Wise (Proverbs 22–24)
+
+98 verses: 98 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

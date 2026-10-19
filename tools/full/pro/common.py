@@ -233,6 +233,7 @@ def sayings(items, prefix, start, default_head, budget=1050, most=4, end="", boo
     for it in items:
         c = dict(it); c["vs"] = [(r, v(r)) for r in _refs(it["refs"])]
         c["chars"] = sum(len(t) for _, t in c["vs"])
+        if c["chars"] > 250: c["span"] = True                       # a long group of sayings takes the whole width
         cells.append(c)
     # pages: break on a head (unless the page is still short), on the budget, or when the rows would not fit at 15px
     pages, cur = [], []
@@ -271,10 +272,11 @@ def sayings(items, prefix, start, default_head, budget=1050, most=4, end="", boo
         hs = [max(150, round(room * n / sum(needs))) for n in needs]
         hs[-1] = room - sum(hs[:-1])
         used, html = set(), []
+        size = min(_size(c, hh) for r, hh in zip(rows, hs) for c in r)     # one type size for the whole page
         for i, (r, hh) in enumerate(zip(rows, hs)):
             for j, c in enumerate(r):
                 last = end and k == len(pages) - 1 and i == len(rows) - 1 and j == len(r) - 1
-                html.append(_cell_html(c, hh, _size(c, hh), f"sy{prefix[-3:]}{k}x{i}x{j}", used, end if last else ""))
+                html.append(_cell_html(c, hh, size, f"sy{prefix[-3:]}{k}x{i}x{j}", used, end if last else ""))
         for c in pg:
             if c["head"]: head = c["head"]; break
         a0 = pg[0]["refs"].split("-")[0]

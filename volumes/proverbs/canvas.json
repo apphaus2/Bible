@@ -611,6 +611,90 @@
    "w": 760,
    "h": 1080,
    "title": "78 · The King's Heart Is in the Hand of Jehovah"
+  },
+  "PRO-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Words of the Wise"
+  },
+  "PRO-C08-S-P01-AGoodName.dc.html": {
+   "x": 840,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · A Good Name"
+  },
+  "PRO-C08-S-P02-AGoodName.dc.html": {
+   "x": 1680,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · A Good Name"
+  },
+  "PRO-C08-S-P03-TheWordsOfTheWise.dc.html": {
+   "x": 2520,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · The Words of the Wise"
+  },
+  "PRO-C08-S-P04-TheWordsOfTheWise.dc.html": {
+   "x": 3360,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · The Words of the Wise"
+  },
+  "PRO-C08-S-P05-TheWordsOfTheWise.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The Words of the Wise"
+  },
+  "PRO-C08-S-P06-TheWordsOfTheWise.dc.html": {
+   "x": 840,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · The Words of the Wise"
+  },
+  "PRO-C08-S-P07-WhoHathWoe.dc.html": {
+   "x": 1680,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Who Hath Woe?"
+  },
+  "PRO-C08-S-P08-FretNotThyself.dc.html": {
+   "x": 2520,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Fret Not Thyself"
+  },
+  "PRO-C08-S-P09-FretNotThyself.dc.html": {
+   "x": 3360,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Fret Not Thyself"
+  },
+  "PRO-C08-S-P10-FretNotThyself.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Fret Not Thyself"
+  },
+  "PRO-C08-S-P11-TheFieldOfTheSlugg.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Field of the Sluggard"
   }
  },
  "order": [
@@ -699,7 +783,19 @@
   "PRO-C07-S-P09-TheKingSHeartIsInT.dc.html",
   "PRO-C07-S-P10-TheKingSHeartIsInT.dc.html",
   "PRO-C07-S-P11-TheKingSHeartIsInT.dc.html",
-  "PRO-C07-S-P12-TheKingSHeartIsInT.dc.html"
+  "PRO-C07-S-P12-TheKingSHeartIsInT.dc.html",
+  "PRO-C08-00-Title.dc.html",
+  "PRO-C08-S-P01-AGoodName.dc.html",
+  "PRO-C08-S-P02-AGoodName.dc.html",
+  "PRO-C08-S-P03-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P04-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P05-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P06-TheWordsOfTheWise.dc.html",
+  "PRO-C08-S-P07-WhoHathWoe.dc.html",
+  "PRO-C08-S-P08-FretNotThyself.dc.html",
+  "PRO-C08-S-P09-FretNotThyself.dc.html",
+  "PRO-C08-S-P10-FretNotThyself.dc.html",
+  "PRO-C08-S-P11-TheFieldOfTheSlugg.dc.html"
  ],
  "notes": {
   "Main": {
@@ -757,6 +853,13 @@
    "text": "Chapter 7 · The King's Heart (Proverbs 19–21)",
    "x": 0,
    "y": 26300
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Words of the Wise (Proverbs 22–24)",
+   "x": 0,
+   "y": 30400
   }
  },
  "designSystems": [],

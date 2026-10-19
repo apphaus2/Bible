@@ -76,6 +76,16 @@
    "prefixes": [
     "PRO-C07-"
    ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "The Words of the Wise",
+   "range": "Proverbs 22–24",
+   "blurb": "A good name is rather to be chosen than great riches; train up a child in the way he should go; incline thine ear, and hear the words of the wise; remove not the ancient landmark; riches make themselves wings like an eagle; who hath woe? — look not thou upon the wine when it is red; through wisdom is a house builded; a righteous man falleth seven times, and riseth up again; I went by the field of the sluggard.",
+   "prefixes": [
+    "PRO-C08-"
+   ]
   }
  ]
 }
