@@ -1,0 +1,51 @@
+{
+ "id": "esther",
+ "order": 17,
+ "name": "Esther",
+ "kanji": "エステル記",
+ "thumb": "vol-esther-",
+ "lede": "The seventeenth book of the Bible, in full: the feast of Ahasuerus in Shushan the palace and the queen who would not come, Esther made queen instead of Vashti, Haman's lot and Mordecai's sackcloth, the golden sceptre held out, the night the king could not sleep, and the days of Purim, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Vashti and Esther",
+   "range": "Esther 1–2",
+   "blurb": "Ahasuerus who reigned from India even unto Ethiopia, and the feast in the court of the garden of the palace — hangings of white, green and blue, vessels of gold; Vashti the queen refused to come; the word of Memucan and letters into every province; then Mordecai the Benjamite and Hadassah, that is, Esther; the royal crown set upon her head; and two chamberlains at the threshold.",
+   "prefixes": [
+    "Main.dc.html",
+    "EST-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "For Such a Time as This",
+   "range": "Esther 3–4",
+   "blurb": "Haman advanced above all the princes, and Mordecai who bowed not down; Pur, that is, the lot, cast to the month Adar; the king's ring and letters to destroy all the Jews in one day; the king and Haman sat down to drink, but the city of Shushan was perplexed; Mordecai in sackcloth before the gate; who knoweth whether thou art not come to the kingdom for such a time as this?; and if I perish, I perish.",
+   "prefixes": [
+    "EST-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The King Could Not Sleep",
+   "range": "Esther 5–7",
+   "blurb": "Esther in her royal apparel in the inner court, and the golden sceptre held out — what wilt thou, queen Esther?; the banquet of wine; Zeresh and the gallows fifty cubits high; on that night could not the king sleep, and the book of the records was read; Haman leading Mordecai on the king's horse — thus shall it be done to the man whom the king delighteth to honor; the second banquet: an adversary and an enemy, even this wicked Haman; and Harbonah: behold also, the gallows.",
+   "prefixes": [
+    "EST-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "The Days of Purim",
+   "range": "Esther 8–10",
+   "blurb": "The king's ring given to Mordecai; Esther at the king's feet — how can I endure to see the destruction of my kindred?; letters in the king's name and the posts on swift steeds; Mordecai in royal apparel of blue and white, and the Jews had light and gladness, and joy and honor; the thirteenth day of Adar turned to the contrary; days of feasting and gladness, of sending portions one to another and gifts to the poor; the second letter of Purim; and Mordecai next unto king Ahasuerus, speaking peace to all his seed.",
+   "prefixes": [
+    "EST-C04-"
+   ]
+  }
+ ]
+}
