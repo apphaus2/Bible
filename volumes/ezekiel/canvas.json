@@ -1192,6 +1192,97 @@
    "w": 760,
    "h": 1080,
    "title": "157 · There Is Edom"
+  },
+  "EZK-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Watchman and the Shepherds"
+  },
+  "EZK-C12-D-P01-WhenIBringTheSword.dc.html": {
+   "x": 840,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · When I Bring the Sword upon a Land"
+  },
+  "EZK-C12-D-P02-TurnYeTurnYe.dc.html": {
+   "x": 1680,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Turn Ye, Turn Ye"
+  },
+  "EZK-C12-D-P03-TurnYeTurnYe.dc.html": {
+   "x": 2520,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Turn Ye, Turn Ye"
+  },
+  "EZK-C12-D-P04-TheCityIsSmitten.dc.html": {
+   "x": 3360,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · The City Is Smitten"
+  },
+  "EZK-C12-D-P05-ThoseWastePlaces.dc.html": {
+   "x": 0,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Those Waste Places"
+  },
+  "EZK-C12-D-P06-AVeryLovelySong.dc.html": {
+   "x": 840,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · A Very Lovely Song"
+  },
+  "EZK-C12-D-P07-WoeUntoTheShepherd.dc.html": {
+   "x": 1680,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Woe unto the Shepherds of Israel"
+  },
+  "EZK-C12-D-P08-WoeUntoTheShepherd.dc.html": {
+   "x": 2520,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · Woe unto the Shepherds of Israel"
+  },
+  "EZK-C12-D-P09-IMyselfWillSearchF.dc.html": {
+   "x": 3360,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · I Myself Will Search for My Sheep"
+  },
+  "EZK-C12-D-P10-BetweenSheepAndShe.dc.html": {
+   "x": 0,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Between Sheep and Sheep"
+  },
+  "EZK-C12-D-P11-OneShepherd.dc.html": {
+   "x": 840,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · One Shepherd"
+  },
+  "EZK-C12-D-P12-ACovenantOfPeace.dc.html": {
+   "x": 1680,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · A Covenant of Peace"
   }
  },
  "order": [
@@ -1363,7 +1454,20 @@
   "EZK-C11-D-P18-WailForTheMultitud.dc.html",
   "EZK-C11-D-P19-ThereIsElam.dc.html",
   "EZK-C11-D-P20-ThereIsEdom.dc.html",
-  "EZK-C11-D-P21-ThereIsEdom.dc.html"
+  "EZK-C11-D-P21-ThereIsEdom.dc.html",
+  "EZK-C12-00-Title.dc.html",
+  "EZK-C12-D-P01-WhenIBringTheSword.dc.html",
+  "EZK-C12-D-P02-TurnYeTurnYe.dc.html",
+  "EZK-C12-D-P03-TurnYeTurnYe.dc.html",
+  "EZK-C12-D-P04-TheCityIsSmitten.dc.html",
+  "EZK-C12-D-P05-ThoseWastePlaces.dc.html",
+  "EZK-C12-D-P06-AVeryLovelySong.dc.html",
+  "EZK-C12-D-P07-WoeUntoTheShepherd.dc.html",
+  "EZK-C12-D-P08-WoeUntoTheShepherd.dc.html",
+  "EZK-C12-D-P09-IMyselfWillSearchF.dc.html",
+  "EZK-C12-D-P10-BetweenSheepAndShe.dc.html",
+  "EZK-C12-D-P11-OneShepherd.dc.html",
+  "EZK-C12-D-P12-ACovenantOfPeace.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1449,6 +1553,13 @@
    "text": "Chapter 11 · Pharaoh King of Egypt (Ezekiel 29–32)",
    "x": 0,
    "y": 47500
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Watchman and the Shepherds (Ezekiel 33–34)",
+   "x": 0,
+   "y": 54000
   }
  },
  "designSystems": [],

@@ -116,6 +116,16 @@
    "prefixes": [
     "EZK-C11-"
    ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "The Watchman and the Shepherds",
+   "range": "Ezekiel 33–34",
+   "blurb": "The watchman that seeth the sword come and bloweth the trumpet — I have set thee a watchman unto the house of Israel; have I any pleasure in the death of the wicked? turn ye, turn ye; one that had escaped out of Jerusalem: The city is smitten; then woe unto the shepherds of Israel that feed themselves — I myself will search for my sheep, and I will set up one shepherd over them, even my servant David, and a covenant of peace.",
+   "prefixes": [
+    "EZK-C12-"
+   ]
   }
  ]
 }
