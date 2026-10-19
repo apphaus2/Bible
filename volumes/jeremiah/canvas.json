@@ -590,6 +590,125 @@
    "w": 760,
    "h": 1080,
    "title": "77 · A Fortified Brazen Wall"
+  },
+  "JER-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Potter's House"
+  },
+  "JER-C06-D-P01-ThouShaltNotTakeTh.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Thou Shalt Not Take Thee a Wife"
+  },
+  "JER-C06-D-P02-TheHouseOfMourning.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The House of Mourning"
+  },
+  "JER-C06-D-P03-TheHouseOfMourning.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The House of Mourning"
+  },
+  "JER-C06-D-P04-ManyFishersAndMany.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Many Fishers and Many Hunters"
+  },
+  "JER-C06-D-P05-ManyFishersAndMany.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Many Fishers and Many Hunters"
+  },
+  "JER-C06-E-P01-WithAPenOfIron.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · With a Pen of Iron"
+  },
+  "JER-C06-E-P02-BlessedIsTheManTha.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Blessed Is the Man That Trusteth in Jehovah"
+  },
+  "JER-C06-E-P03-HealMeOJehovah.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Heal Me, O Jehovah"
+  },
+  "JER-C06-E-P04-HallowTheSabbathDa.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Hallow the Sabbath Day"
+  },
+  "JER-C06-E-P05-HallowTheSabbathDa.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Hallow the Sabbath Day"
+  },
+  "JER-C06-E-P06-HallowTheSabbathDa.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Hallow the Sabbath Day"
+  },
+  "JER-C06-F-P01-AsTheClayInThePott.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · As the Clay in the Potter's Hand"
+  },
+  "JER-C06-F-P02-AsTheClayInThePott.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · As the Clay in the Potter's Hand"
+  },
+  "JER-C06-F-P03-AsTheClayInThePott.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · As the Clay in the Potter's Hand"
+  },
+  "JER-C06-F-P04-LetUsDeviseDevices.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Let Us Devise Devices against Jeremiah"
+  },
+  "JER-C06-F-P05-LetUsDeviseDevices.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Let Us Devise Devices against Jeremiah"
   }
  },
  "order": [
@@ -675,7 +794,24 @@
   "JER-C05-F-P02-ThoughMosesAndSamu.dc.html",
   "JER-C05-F-P03-WoeIsMeMyMother.dc.html",
   "JER-C05-F-P04-ThyWordsWereFound.dc.html",
-  "JER-C05-F-P05-AFortifiedBrazenWa.dc.html"
+  "JER-C05-F-P05-AFortifiedBrazenWa.dc.html",
+  "JER-C06-00-Title.dc.html",
+  "JER-C06-D-P01-ThouShaltNotTakeTh.dc.html",
+  "JER-C06-D-P02-TheHouseOfMourning.dc.html",
+  "JER-C06-D-P03-TheHouseOfMourning.dc.html",
+  "JER-C06-D-P04-ManyFishersAndMany.dc.html",
+  "JER-C06-D-P05-ManyFishersAndMany.dc.html",
+  "JER-C06-E-P01-WithAPenOfIron.dc.html",
+  "JER-C06-E-P02-BlessedIsTheManTha.dc.html",
+  "JER-C06-E-P03-HealMeOJehovah.dc.html",
+  "JER-C06-E-P04-HallowTheSabbathDa.dc.html",
+  "JER-C06-E-P05-HallowTheSabbathDa.dc.html",
+  "JER-C06-E-P06-HallowTheSabbathDa.dc.html",
+  "JER-C06-F-P01-AsTheClayInThePott.dc.html",
+  "JER-C06-F-P02-AsTheClayInThePott.dc.html",
+  "JER-C06-F-P03-AsTheClayInThePott.dc.html",
+  "JER-C06-F-P04-LetUsDeviseDevices.dc.html",
+  "JER-C06-F-P05-LetUsDeviseDevices.dc.html"
  ],
  "notes": {
   "Main": {
@@ -719,6 +855,13 @@
    "text": "Chapter 5 · The Marred Girdle (Jeremiah 13–15)",
    "x": 0,
    "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Potter's House (Jeremiah 16–18)",
+   "x": 0,
+   "y": 25800
   }
  },
  "designSystems": [],

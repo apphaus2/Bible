@@ -38,5 +38,7 @@ META = {
      "blurb": "Learn not the way of the nations: they deck the tree with silver and with gold, and fasten it with nails; but Jehovah is the true God; my tent is destroyed; O Jehovah, correct me, but in measure; hear ye the words of this covenant; I was like a gentle lamb that is led to the slaughter; wherefore doth the way of the wicked prosper?; if thou hast run with the footmen, how canst thou contend with horses?"},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Marred Girdle", "range": "Jeremiah 13–15", "bible_chapters": [13, 14, 15],
      "blurb": "A linen girdle hidden in a cleft of the rock by the Euphrates, and, behold, the girdle was marred; every bottle shall be filled with wine; can the Ethiopian change his skin, or the leopard his spots?; the drought, and the gates sitting in black; though Moses and Samuel stood before me; woe is me, my mother; thy words were found, and I did eat them; and a fortified brazen wall."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Potter's House", "range": "Jeremiah 16–18", "bible_chapters": [16, 17, 18],
+     "blurb": "Thou shalt not take thee a wife; enter not into the house of mourning; many fishers and many hunters; the sin of Judah is written with a pen of iron; blessed is the man that trusteth in Jehovah, as a tree planted by the waters; the heart is deceitful above all things; hallow the sabbath day; and the potter's house — behold, as the clay in the potter's hand, so are ye in my hand, O house of Israel."},
   ],
 }
