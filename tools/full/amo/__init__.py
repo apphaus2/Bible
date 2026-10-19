@@ -21,5 +21,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "For Three Transgressions", "range": "Amos 1–4", "bible_chapters": [1, 2, 3, 4],
      "blurb": "The words of Amos, among the herdsmen of Tekoa, two years before the earthquake: Jehovah will roar from Zion; for three transgressions of Damascus, of Gaza, of Tyre, of Edom, of Ammon, of Moab, of Judah — and of Israel, that sold the righteous for silver and the needy for a pair of shoes; shall two walk together, except they have agreed?; the lion hath roared, who will not fear?; ye kine of Bashan; yet have ye not returned unto me; prepare to meet thy God, O Israel."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Plumb-line", "range": "Amos 5–9", "bible_chapters": [5, 6, 7, 8, 9],
+     "blurb": "A lamentation for the virgin of Israel: seek me, and ye shall live; him that maketh the Pleiades and Orion; I hate, I despise your feasts — but let justice roll down as waters; woe to them that are at ease in Zion; then the visions: the locusts, the fire, and a plumb-line in the midst of my people; Amaziah of Beth-el and the herdsman and dresser of sycomore-trees; a basket of summer fruit; a famine of hearing the words of Jehovah; and the tabernacle of David raised up, the plowman overtaking the reaper."},
   ],
 }

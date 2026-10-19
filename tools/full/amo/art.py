@@ -53,18 +53,17 @@ def carmel(w, h, seed):
 NAT = {"DAMASCUS": (0.78, 0.16), "GAZA": (0.18, 0.86), "TYRE": (0.34, 0.12), "EDOM": (0.62, 0.86), "AMMON": (0.84, 0.5), "MOAB": (0.76, 0.74),
        "JUDAH": (0.42, 0.74), "ISRAEL": (0.5, 0.38), "ASHDOD": (0.2, 0.66), "ASHKELON": (0.16, 0.76), "EKRON": (0.26, 0.6), "TEMAN": (0.46, 0.92),
        "BOZRAH": (0.78, 0.9), "RABBAH": (0.86, 0.56), "KERIOTH": (0.74, 0.8), "JERUSALEM": (0.54, 0.62), "KIR": (0.96, 0.06), "SAMARIA": (0.48, 0.42),
-       "BETH-EL": (0.52, 0.56), "GILGAL": (0.62, 0.58), "BEER-SHEBA": (0.4, 0.88), "DAN": (0.6, 0.12), "CALNEH": (0.98, 0.24), "HAMATH": (0.74, 0.02),
+       "BETH-EL": (0.48, 0.54), "GILGAL": (0.58, 0.5), "BEER-SHEBA": (0.36, 0.9), "DAN": (0.6, 0.12), "CALNEH": (0.94, 0.3), "HAMATH": (0.86, 0.06),
        "GATH": (0.24, 0.72), "ARABAH": (0.66, 0.84)}
 ORDER = ["DAMASCUS", "GAZA", "TYRE", "EDOM", "AMMON", "MOAB", "JUDAH", "ISRAEL"]
-def nations(w, h, lit=None, fire=(), extra=(), moves=(), title=""):
+def nations(w, h, lit=None, fire=(), extra=(), moves=(), title="", base=True):
     """The nations round Israel as a technical map: the great sea on the west, the Jordan and the Dead Sea; the eight of
     1:3–2:16 marked, the one `lit` red with a ring; fire = places drawn burning; extra = other places named; moves = arrows."""
     o = [grid_bg(w, h),
          f'<path d="M-10 -10 L {f(w * 0.24)} -10 C {f(w * 0.3)} {f(h * 0.3)} {f(w * 0.18)} {f(h * 0.6)} {f(w * 0.1)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></path>',
          f'<path d="M{f(w * 0.64)} {f(h * 0.1)} C {f(w * 0.62)} {f(h * 0.3)} {f(w * 0.66)} {f(h * 0.45)} {f(w * 0.62)} {f(h * 0.58)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>'
          f'<ellipse cx="{f(w * 0.62)}" cy="{f(h * 0.7)}" rx="{f(w * 0.025)}" ry="{f(h * 0.1)}" fill="#2C9DB8"></ellipse>']
-    for nm in list(dict.fromkeys(ORDER + list(extra))):
-        if nm not in ORDER and nm not in extra: continue
+    for nm in list(dict.fromkeys((ORDER if base else []) + list(extra))):
         x, y = NAT[nm]
         on = nm == lit
         big = nm in ORDER
@@ -76,7 +75,7 @@ def nations(w, h, lit=None, fire=(), extra=(), moves=(), title=""):
     for a, b2 in moves:
         (x0, y0), (x1, y1) = NAT[a], NAT[b2]
         o.append(route([(w * x0, h * y0), (w * x1, h * y1)], color="#FF8A6A"))
-    if title: o.append(label(w * 0.98, h * 0.04 + 8, title, "#F3EFE6", 9, anchor="end"))
+    if title: o.append(label(w * 0.02, h * 0.97, title, "#F3EFE6", 9, anchor="start"))
     return "".join(o)
 
 def tally(w, h, n=8, lit=0):
