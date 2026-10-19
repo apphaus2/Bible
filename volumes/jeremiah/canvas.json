@@ -1,0 +1,2552 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:19:17Z"
+ },
+ "title": "Jeremiah — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JER-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Almond Rod"
+  },
+  "JER-C01-D-P01-TheWordsOfJeremiah.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Words of Jeremiah"
+  },
+  "JER-C01-D-P02-TheWordsOfJeremiah.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Words of Jeremiah"
+  },
+  "JER-C01-D-P03-ARodOfAnAlmondTree.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · A Rod of an Almond-Tree"
+  },
+  "JER-C01-D-P04-ABoilingCaldron.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · A Boiling Caldron"
+  },
+  "JER-C01-D-P05-AnIronPillarAndBra.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · An Iron Pillar and Brazen Walls"
+  },
+  "JER-C01-E-P01-TheKindnessOfThyYo.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Kindness of Thy Youth"
+  },
+  "JER-C01-E-P02-TheKindnessOfThyYo.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Kindness of Thy Youth"
+  },
+  "JER-C01-E-P03-BrokenCisterns.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Broken Cisterns"
+  },
+  "JER-C01-E-P04-ANobleVine.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · A Noble Vine"
+  },
+  "JER-C01-E-P05-ANobleVine.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · A Noble Vine"
+  },
+  "JER-C01-E-P06-DaysWithoutNumber.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Days without Number"
+  },
+  "JER-C01-F-P01-ReturnAgainToMe.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Return Again to Me"
+  },
+  "JER-C01-F-P02-BackslidingIsraelA.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Backsliding Israel and Treacherous Judah"
+  },
+  "JER-C01-F-P03-ReturnOBacksliding.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Return, O Backsliding Children"
+  },
+  "JER-C01-F-P04-ReturnOBacksliding.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Return, O Backsliding Children"
+  },
+  "JER-C01-F-P05-ReturnOBacksliding.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Return, O Backsliding Children"
+  },
+  "JER-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Evil from the North"
+  },
+  "JER-C02-D-P01-IfThouWiltReturn.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · If Thou Wilt Return"
+  },
+  "JER-C02-D-P02-BlowYeTheTrumpet.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Blow Ye the Trumpet"
+  },
+  "JER-C02-D-P03-BlowYeTheTrumpet.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Blow Ye the Trumpet"
+  },
+  "JER-C02-D-P04-BlowYeTheTrumpet.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Blow Ye the Trumpet"
+  },
+  "JER-C02-D-P05-WasteAndVoid.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Waste and Void"
+  },
+  "JER-C02-D-P06-WasteAndVoid.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Waste and Void"
+  },
+  "JER-C02-E-P01-RunYeToAndFro.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Run Ye to and Fro"
+  },
+  "JER-C02-E-P02-RunYeToAndFro.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Run Ye to and Fro"
+  },
+  "JER-C02-E-P03-MyWordsInThyMouthF.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · My Words in Thy Mouth Fire"
+  },
+  "JER-C02-E-P04-TheSandForTheBound.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Sand for the Bound of the Sea"
+  },
+  "JER-C02-E-P05-TheSandForTheBound.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Sand for the Bound of the Sea"
+  },
+  "JER-C02-F-P01-FleeForSafety.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Flee for Safety"
+  },
+  "JER-C02-F-P02-FleeForSafety.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Flee for Safety"
+  },
+  "JER-C02-F-P03-FleeForSafety.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Flee for Safety"
+  },
+  "JER-C02-F-P04-AskForTheOldPaths.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Ask for the Old Paths"
+  },
+  "JER-C02-F-P05-APeopleFromTheNort.dc.html": {
+   "x": 840,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · A People from the North Country"
+  },
+  "JER-C02-F-P06-ATrierAmongMyPeopl.dc.html": {
+   "x": 1680,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · A Trier among My People"
+  },
+  "JER-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Temple of Jehovah"
+  },
+  "JER-C03-D-P01-StandInTheGateOfJe.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Stand in the Gate of Jehovah's House"
+  },
+  "JER-C03-D-P02-GoYeNowUntoShiloh.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Go Ye Now unto Shiloh"
+  },
+  "JER-C03-D-P03-TheQueenOfHeaven.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Queen of Heaven"
+  },
+  "JER-C03-D-P04-TheQueenOfHeaven.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Queen of Heaven"
+  },
+  "JER-C03-D-P05-TheValleyOfSlaught.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · The Valley of Slaughter"
+  },
+  "JER-C03-D-P06-TheValleyOfSlaught.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Valley of Slaughter"
+  },
+  "JER-C03-E-P01-SpreadBeforeTheSun.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Spread before the Sun"
+  },
+  "JER-C03-E-P02-TheStorkInTheHeave.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Stork in the Heavens"
+  },
+  "JER-C03-E-P03-TheStorkInTheHeave.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Stork in the Heavens"
+  },
+  "JER-C03-E-P04-IsThereNoBalmInGil.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Is There No Balm in Gilead?"
+  },
+  "JER-C03-E-P05-IsThereNoBalmInGil.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Is There No Balm in Gilead?"
+  },
+  "JER-C03-F-P01-AFountainOfTears.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · A Fountain of Tears"
+  },
+  "JER-C03-F-P02-AFountainOfTears.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · A Fountain of Tears"
+  },
+  "JER-C03-F-P03-AFountainOfTears.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · A Fountain of Tears"
+  },
+  "JER-C03-F-P04-CallForTheMourning.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Call for the Mourning Women"
+  },
+  "JER-C03-F-P05-CallForTheMourning.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Call for the Mourning Women"
+  },
+  "JER-C03-F-P06-LetHimThatGlorieth.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Let Him That Glorieth"
+  },
+  "JER-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Broken Covenant"
+  },
+  "JER-C04-D-P01-LearnNotTheWayOfTh.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Learn Not the Way of the Nations"
+  },
+  "JER-C04-D-P02-LearnNotTheWayOfTh.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Learn Not the Way of the Nations"
+  },
+  "JER-C04-D-P03-HeStretchedOutTheH.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · He Stretched Out the Heavens"
+  },
+  "JER-C04-D-P04-OJehovahCorrectMe.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · O Jehovah, Correct Me"
+  },
+  "JER-C04-E-P01-TheWordsOfThisCove.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Words of This Covenant"
+  },
+  "JER-C04-E-P02-AConspiracyAmongTh.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · A Conspiracy among the Men of Judah"
+  },
+  "JER-C04-E-P03-AConspiracyAmongTh.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · A Conspiracy among the Men of Judah"
+  },
+  "JER-C04-E-P04-LikeAGentleLamb.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Like a Gentle Lamb"
+  },
+  "JER-C04-E-P05-LikeAGentleLamb.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Like a Gentle Lamb"
+  },
+  "JER-C04-F-P01-WhereforeDothTheWa.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Wherefore Doth the Way of the Wicked Prosper?"
+  },
+  "JER-C04-F-P02-IHaveForsakenMyHou.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · I Have Forsaken My House"
+  },
+  "JER-C04-F-P03-IHaveForsakenMyHou.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · I Have Forsaken My House"
+  },
+  "JER-C04-F-P04-MineEvilNeighbours.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Mine Evil Neighbours"
+  },
+  "JER-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Marred Girdle"
+  },
+  "JER-C05-D-P01-ByTheEuphrates.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · By the Euphrates"
+  },
+  "JER-C05-D-P02-ByTheEuphrates.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · By the Euphrates"
+  },
+  "JER-C05-D-P03-EveryBottleShallBe.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Every Bottle Shall Be Filled with Wine"
+  },
+  "JER-C05-D-P04-HumbleYourselvesSi.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Humble Yourselves, Sit Down"
+  },
+  "JER-C05-D-P05-CanTheEthiopianCha.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Can the Ethiopian Change His Skin?"
+  },
+  "JER-C05-E-P01-ConcerningTheDroug.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Concerning the Drought"
+  },
+  "JER-C05-E-P02-ConcerningTheDroug.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Concerning the Drought"
+  },
+  "JER-C05-E-P03-TheProphetsProphes.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Prophets Prophesy Lies"
+  },
+  "JER-C05-E-P04-HastThouUtterlyRej.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Hast Thou Utterly Rejected Judah?"
+  },
+  "JER-C05-F-P01-ThoughMosesAndSamu.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Though Moses and Samuel Stood before Me"
+  },
+  "JER-C05-F-P02-ThoughMosesAndSamu.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Though Moses and Samuel Stood before Me"
+  },
+  "JER-C05-F-P03-WoeIsMeMyMother.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Woe Is Me, My Mother"
+  },
+  "JER-C05-F-P04-ThyWordsWereFound.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Thy Words Were Found"
+  },
+  "JER-C05-F-P05-AFortifiedBrazenWa.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · A Fortified Brazen Wall"
+  },
+  "JER-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Potter's House"
+  },
+  "JER-C06-D-P01-ThouShaltNotTakeTh.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Thou Shalt Not Take Thee a Wife"
+  },
+  "JER-C06-D-P02-TheHouseOfMourning.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The House of Mourning"
+  },
+  "JER-C06-D-P03-TheHouseOfMourning.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The House of Mourning"
+  },
+  "JER-C06-D-P04-ManyFishersAndMany.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Many Fishers and Many Hunters"
+  },
+  "JER-C06-D-P05-ManyFishersAndMany.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Many Fishers and Many Hunters"
+  },
+  "JER-C06-E-P01-WithAPenOfIron.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · With a Pen of Iron"
+  },
+  "JER-C06-E-P02-BlessedIsTheManTha.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Blessed Is the Man That Trusteth in Jehovah"
+  },
+  "JER-C06-E-P03-HealMeOJehovah.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Heal Me, O Jehovah"
+  },
+  "JER-C06-E-P04-HallowTheSabbathDa.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Hallow the Sabbath Day"
+  },
+  "JER-C06-E-P05-HallowTheSabbathDa.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Hallow the Sabbath Day"
+  },
+  "JER-C06-E-P06-HallowTheSabbathDa.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Hallow the Sabbath Day"
+  },
+  "JER-C06-F-P01-AsTheClayInThePott.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · As the Clay in the Potter's Hand"
+  },
+  "JER-C06-F-P02-AsTheClayInThePott.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · As the Clay in the Potter's Hand"
+  },
+  "JER-C06-F-P03-AsTheClayInThePott.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · As the Clay in the Potter's Hand"
+  },
+  "JER-C06-F-P04-LetUsDeviseDevices.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Let Us Devise Devices against Jeremiah"
+  },
+  "JER-C06-F-P05-LetUsDeviseDevices.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Let Us Devise Devices against Jeremiah"
+  },
+  "JER-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Earthen Bottle"
+  },
+  "JER-C07-D-P01-APotterSEarthenBot.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · A Potter's Earthen Bottle"
+  },
+  "JER-C07-D-P02-TheValleyOfSlaught.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The Valley of Slaughter"
+  },
+  "JER-C07-D-P03-EvenSoWillIBreakTh.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Even So Will I Break This People"
+  },
+  "JER-C07-D-P04-TheStocksInTheGate.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Stocks in the Gate of Benjamin"
+  },
+  "JER-C07-D-P05-TheStocksInTheGate.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Stocks in the Gate of Benjamin"
+  },
+  "JER-C07-D-P06-ThouHastPersuadedM.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Thou Hast Persuaded Me"
+  },
+  "JER-C07-D-P07-CursedBeTheDay.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Cursed Be the Day"
+  },
+  "JER-C07-D-P08-ZedekiahSentUntoHi.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Zedekiah Sent unto Him"
+  },
+  "JER-C07-D-P09-ZedekiahSentUntoHi.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Zedekiah Sent unto Him"
+  },
+  "JER-C07-D-P10-OHouseOfDavid.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · O House of David"
+  },
+  "JER-C07-D-P11-GoDownToTheHouseOf.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Go Down to the House of the King"
+  },
+  "JER-C07-D-P12-GoDownToTheHouseOf.dc.html": {
+   "x": 1680,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Go Down to the House of the King"
+  },
+  "JER-C07-D-P13-WeepSoreForHimThat.dc.html": {
+   "x": 2520,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Weep Sore for Him That Goeth Away"
+  },
+  "JER-C07-D-P14-WoeUntoHimThatBuil.dc.html": {
+   "x": 3360,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Woe unto Him That Buildeth His House by Unrighteousness"
+  },
+  "JER-C07-D-P15-TheBurialOfAnAss.dc.html": {
+   "x": 0,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Burial of an Ass"
+  },
+  "JER-C07-D-P16-Coniah.dc.html": {
+   "x": 840,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Coniah"
+  },
+  "JER-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Cup of the Wine of Wrath"
+  },
+  "JER-C08-D-P01-WoeUntoTheShepherd.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Woe unto the Shepherds"
+  },
+  "JER-C08-D-P02-ARighteousBranch.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · A Righteous Branch"
+  },
+  "JER-C08-D-P03-ConcerningTheProph.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Concerning the Prophets"
+  },
+  "JER-C08-D-P04-HearkenNotUntoTheP.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Hearken Not unto the Prophets"
+  },
+  "JER-C08-D-P05-IHaveDreamedIHaveD.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · I Have Dreamed, I Have Dreamed"
+  },
+  "JER-C08-D-P06-TheBurdenOfJehovah.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Burden of Jehovah"
+  },
+  "JER-C08-D-P07-TwoBasketsOfFigs.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Two Baskets of Figs"
+  },
+  "JER-C08-D-P08-TwoBasketsOfFigs.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Two Baskets of Figs"
+  },
+  "JER-C08-D-P09-TwoBasketsOfFigs.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Two Baskets of Figs"
+  },
+  "JER-C08-D-P10-ThreeAndTwentyYear.dc.html": {
+   "x": 0,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Three and Twenty Years"
+  },
+  "JER-C08-D-P11-ThreeAndTwentyYear.dc.html": {
+   "x": 840,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Three and Twenty Years"
+  },
+  "JER-C08-D-P12-SeventyYears.dc.html": {
+   "x": 1680,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · Seventy Years"
+  },
+  "JER-C08-D-P13-TheCupOfTheWineOfW.dc.html": {
+   "x": 2520,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · The Cup of the Wine of Wrath"
+  },
+  "JER-C08-D-P14-TheCupOfTheWineOfW.dc.html": {
+   "x": 3360,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · The Cup of the Wine of Wrath"
+  },
+  "JER-C08-D-P15-JehovahWillRoarFro.dc.html": {
+   "x": 0,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Jehovah Will Roar from on High"
+  },
+  "JER-C08-D-P16-WailYeShepherds.dc.html": {
+   "x": 840,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Wail, Ye Shepherds"
+  },
+  "JER-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Yoke"
+  },
+  "JER-C09-D-P01-DiminishNotAWord.dc.html": {
+   "x": 840,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Diminish Not a Word"
+  },
+  "JER-C09-D-P02-ThouShaltSurelyDie.dc.html": {
+   "x": 1680,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Thou Shalt Surely Die"
+  },
+  "JER-C09-D-P03-IAmInYourHand.dc.html": {
+   "x": 2520,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · I Am in Your Hand"
+  },
+  "JER-C09-D-P04-IAmInYourHand.dc.html": {
+   "x": 3360,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · I Am in Your Hand"
+  },
+  "JER-C09-D-P05-MicahTheMorashtite.dc.html": {
+   "x": 0,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Micah the Morashtite"
+  },
+  "JER-C09-D-P06-UriahTheSonOfShema.dc.html": {
+   "x": 840,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Uriah the Son of Shemaiah"
+  },
+  "JER-C09-E-P01-BondsAndBars.dc.html": {
+   "x": 1680,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Bonds and Bars"
+  },
+  "JER-C09-E-P02-BondsAndBars.dc.html": {
+   "x": 2520,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Bonds and Bars"
+  },
+  "JER-C09-E-P03-ServeTheKingOfBaby.dc.html": {
+   "x": 3360,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Serve the King of Babylon, and Live"
+  },
+  "JER-C09-E-P04-ServeTheKingOfBaby.dc.html": {
+   "x": 0,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Serve the King of Babylon, and Live"
+  },
+  "JER-C09-E-P05-TheVesselsThatAreL.dc.html": {
+   "x": 840,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Vessels That Are Left"
+  },
+  "JER-C09-F-P01-HananiahTheSonOfAz.dc.html": {
+   "x": 1680,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Hananiah the Son of Azzur"
+  },
+  "JER-C09-F-P02-HananiahBrakeTheBa.dc.html": {
+   "x": 2520,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Hananiah Brake the Bar"
+  },
+  "JER-C09-F-P03-BarsOfIron.dc.html": {
+   "x": 3360,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Bars of Iron"
+  },
+  "JER-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · A New Covenant"
+  },
+  "JER-C10-D-P01-TheLetterToTheCapt.dc.html": {
+   "x": 840,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Letter to the Captivity"
+  },
+  "JER-C10-D-P02-BuildYeHousesAndDw.dc.html": {
+   "x": 1680,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Build Ye Houses, and Dwell in Them"
+  },
+  "JER-C10-D-P03-ThoughtsOfPeace.dc.html": {
+   "x": 2520,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Thoughts of Peace"
+  },
+  "JER-C10-D-P04-ThoughtsOfPeace.dc.html": {
+   "x": 3360,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · Thoughts of Peace"
+  },
+  "JER-C10-D-P05-ShemaiahTheNehelam.dc.html": {
+   "x": 0,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Shemaiah the Nehelamite"
+  },
+  "JER-C10-D-P06-ShemaiahTheNehelam.dc.html": {
+   "x": 840,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Shemaiah the Nehelamite"
+  },
+  "JER-C10-D-P07-WriteTheeAllTheWor.dc.html": {
+   "x": 1680,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Write Thee All the Words in a Book"
+  },
+  "JER-C10-D-P08-TheTimeOfJacobSTro.dc.html": {
+   "x": 2520,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · The Time of Jacob's Trouble"
+  },
+  "JER-C10-D-P09-ThyHurtIsIncurable.dc.html": {
+   "x": 3360,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Thy Hurt Is Incurable"
+  },
+  "JER-C10-D-P10-TheCityBuildedUpon.dc.html": {
+   "x": 0,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The City Builded upon Its Own Hill"
+  },
+  "JER-C10-D-P11-AnEverlastingLove.dc.html": {
+   "x": 840,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · An Everlasting Love"
+  },
+  "JER-C10-D-P12-AGreatCompanyShall.dc.html": {
+   "x": 1680,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · A Great Company Shall Return"
+  },
+  "JER-C10-D-P13-AGreatCompanyShall.dc.html": {
+   "x": 2520,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · A Great Company Shall Return"
+  },
+  "JER-C10-D-P14-EphraimBemoaningHi.dc.html": {
+   "x": 3360,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Ephraim Bemoaning Himself"
+  },
+  "JER-C10-D-P15-EphraimBemoaningHi.dc.html": {
+   "x": 0,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Ephraim Bemoaning Himself"
+  },
+  "JER-C10-D-P16-EphraimBemoaningHi.dc.html": {
+   "x": 840,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Ephraim Bemoaning Himself"
+  },
+  "JER-C10-D-P17-ANewCovenant.dc.html": {
+   "x": 1680,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · A New Covenant"
+  },
+  "JER-C10-D-P18-HolyUntoJehovah.dc.html": {
+   "x": 2520,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · Holy unto Jehovah"
+  },
+  "JER-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Field at Anathoth"
+  },
+  "JER-C11-D-P01-ShutUpInTheCourtOf.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · Shut Up in the Court of the Guard"
+  },
+  "JER-C11-D-P02-BuyTheeMyField.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Buy Thee My Field"
+  },
+  "JER-C11-D-P03-SeventeenShekelsOf.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Seventeen Shekels of Silver"
+  },
+  "JER-C11-D-P04-ThereIsNothingTooH.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · There Is Nothing Too Hard for Thee"
+  },
+  "JER-C11-D-P05-ThereIsNothingTooH.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · There Is Nothing Too Hard for Thee"
+  },
+  "JER-C11-D-P06-IsThereAnythingToo.dc.html": {
+   "x": 840,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Is There Anything Too Hard for Me?"
+  },
+  "JER-C11-D-P07-IsThereAnythingToo.dc.html": {
+   "x": 1680,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Is There Anything Too Hard for Me?"
+  },
+  "JER-C11-D-P08-AnEverlastingCoven.dc.html": {
+   "x": 2520,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · An Everlasting Covenant"
+  },
+  "JER-C11-D-P09-AnEverlastingCoven.dc.html": {
+   "x": 3360,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · An Everlasting Covenant"
+  },
+  "JER-C11-E-P01-CallUntoMe.dc.html": {
+   "x": 0,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Call unto Me"
+  },
+  "JER-C11-E-P02-CallUntoMe.dc.html": {
+   "x": 840,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · Call unto Me"
+  },
+  "JER-C11-E-P03-TheVoiceOfTheBride.dc.html": {
+   "x": 1680,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · The Voice of the Bridegroom"
+  },
+  "JER-C11-E-P04-ABranchOfRighteous.dc.html": {
+   "x": 2520,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · A Branch of Righteousness"
+  },
+  "JER-C11-E-P05-MyCovenantOfTheDay.dc.html": {
+   "x": 3360,
+   "y": 53800,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · My Covenant of the Day and of the Night"
+  },
+  "JER-C11-E-P06-MyCovenantOfTheDay.dc.html": {
+   "x": 0,
+   "y": 55000,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · My Covenant of the Day and of the Night"
+  },
+  "JER-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Roll"
+  },
+  "JER-C12-D-P01-ThouShaltDieInPeac.dc.html": {
+   "x": 840,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Thou Shalt Die in Peace"
+  },
+  "JER-C12-D-P02-ToProclaimLiberty.dc.html": {
+   "x": 1680,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · To Proclaim Liberty"
+  },
+  "JER-C12-D-P03-ToProclaimLiberty.dc.html": {
+   "x": 2520,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · To Proclaim Liberty"
+  },
+  "JER-C12-D-P04-IProclaimUntoYouAL.dc.html": {
+   "x": 3360,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · I Proclaim unto You a Liberty"
+  },
+  "JER-C12-D-P05-IProclaimUntoYouAL.dc.html": {
+   "x": 0,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · I Proclaim unto You a Liberty"
+  },
+  "JER-C12-E-P01-TheHouseOfTheRecha.dc.html": {
+   "x": 840,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · The House of the Rechabites"
+  },
+  "JER-C12-E-P02-WeWillDrinkNoWine.dc.html": {
+   "x": 1680,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · We Will Drink No Wine"
+  },
+  "JER-C12-E-P03-WeWillDrinkNoWine.dc.html": {
+   "x": 2520,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · We Will Drink No Wine"
+  },
+  "JER-C12-E-P04-WeWillDrinkNoWine.dc.html": {
+   "x": 3360,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · We Will Drink No Wine"
+  },
+  "JER-C12-F-P01-TakeTheeARollOfABo.dc.html": {
+   "x": 0,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Take Thee a Roll of a Book"
+  },
+  "JER-C12-F-P02-BaruchReadInTheBoo.dc.html": {
+   "x": 840,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Baruch Read in the Book"
+  },
+  "JER-C12-F-P03-AllThePrincesWereS.dc.html": {
+   "x": 1680,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · All the Princes Were Sitting There"
+  },
+  "JER-C12-F-P04-GoHideThee.dc.html": {
+   "x": 2520,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Go, Hide Thee"
+  },
+  "JER-C12-F-P05-TheKingWasSittingI.dc.html": {
+   "x": 3360,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · The King Was Sitting in the Winter-House"
+  },
+  "JER-C12-F-P06-TakeTheeAgainAnoth.dc.html": {
+   "x": 0,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Take Thee Again Another Roll"
+  },
+  "JER-C12-F-P07-TakeTheeAgainAnoth.dc.html": {
+   "x": 840,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Take Thee Again Another Roll"
+  },
+  "JER-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · The Dungeon"
+  },
+  "JER-C13-D-P01-ZedekiahReignedAsK.dc.html": {
+   "x": 840,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Zedekiah Reigned as King"
+  },
+  "JER-C13-D-P02-ZedekiahReignedAsK.dc.html": {
+   "x": 1680,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · Zedekiah Reigned as King"
+  },
+  "JER-C13-D-P03-TheDungeonHouse.dc.html": {
+   "x": 2520,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · The Dungeon-House"
+  },
+  "JER-C13-D-P04-TheDungeonHouse.dc.html": {
+   "x": 3360,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · The Dungeon-House"
+  },
+  "JER-C13-D-P05-LetThisManBePutToD.dc.html": {
+   "x": 0,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Let This Man Be Put to Death"
+  },
+  "JER-C13-D-P06-TheDungeonOfMalchi.dc.html": {
+   "x": 840,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · The Dungeon of Malchijah"
+  },
+  "JER-C13-D-P07-EbedMelechTheEthio.dc.html": {
+   "x": 1680,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · Ebed-melech the Ethiopian"
+  },
+  "JER-C13-D-P08-EbedMelechTheEthio.dc.html": {
+   "x": 2520,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Ebed-melech the Ethiopian"
+  },
+  "JER-C13-D-P09-IWillAskTheeAThing.dc.html": {
+   "x": 3360,
+   "y": 63200,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · I Will Ask Thee a Thing"
+  },
+  "JER-C13-D-P10-IWillAskTheeAThing.dc.html": {
+   "x": 0,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · I Will Ask Thee a Thing"
+  },
+  "JER-C13-D-P11-LetNoManKnowOfThes.dc.html": {
+   "x": 840,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · Let No Man Know of These Words"
+  },
+  "JER-C13-D-P12-ABreachWasMadeInTh.dc.html": {
+   "x": 1680,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · A Breach Was Made in the City"
+  },
+  "JER-C13-D-P13-ByTheWayOfTheKingS.dc.html": {
+   "x": 2520,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · By the Way of the King's Garden"
+  },
+  "JER-C13-D-P14-TheyBurnedTheKingS.dc.html": {
+   "x": 3360,
+   "y": 64400,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · They Burned the King's House"
+  },
+  "JER-C13-D-P15-ThyLifeShallBeForA.dc.html": {
+   "x": 0,
+   "y": 65600,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · Thy Life Shall Be for a Prey unto Thee"
+  },
+  "JER-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Gedaliah"
+  },
+  "JER-C14-D-P01-TheChainsWhichAreU.dc.html": {
+   "x": 840,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · The Chains Which Are upon Thy Hand"
+  },
+  "JER-C14-D-P02-GedaliahAtMizpah.dc.html": {
+   "x": 1680,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · Gedaliah at Mizpah"
+  },
+  "JER-C14-D-P03-GedaliahAtMizpah.dc.html": {
+   "x": 2520,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Gedaliah at Mizpah"
+  },
+  "JER-C14-D-P04-DostThouKnow.dc.html": {
+   "x": 3360,
+   "y": 67300,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Dost Thou Know?"
+  },
+  "JER-C14-D-P05-InTheSeventhMonth.dc.html": {
+   "x": 0,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · In the Seventh Month"
+  },
+  "JER-C14-D-P06-FourscoreMen.dc.html": {
+   "x": 840,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · Fourscore Men"
+  },
+  "JER-C14-D-P07-FourscoreMen.dc.html": {
+   "x": 1680,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · Fourscore Men"
+  },
+  "JER-C14-D-P08-TheGreatWatersThat.dc.html": {
+   "x": 2520,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · The Great Waters That Are in Gibeon"
+  },
+  "JER-C14-D-P09-TheGreatWatersThat.dc.html": {
+   "x": 3360,
+   "y": 68500,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · The Great Waters That Are in Gibeon"
+  },
+  "JER-C14-D-P10-PrayForUs.dc.html": {
+   "x": 0,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · Pray for Us"
+  },
+  "JER-C14-D-P11-AfterTenDays.dc.html": {
+   "x": 840,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "214 · After Ten Days"
+  },
+  "JER-C14-D-P12-GoYeNotIntoEgypt.dc.html": {
+   "x": 1680,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "215 · Go Ye Not into Egypt"
+  },
+  "JER-C14-D-P13-GoYeNotIntoEgypt.dc.html": {
+   "x": 2520,
+   "y": 69700,
+   "w": 760,
+   "h": 1080,
+   "title": "216 · Go Ye Not into Egypt"
+  },
+  "JER-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · Into Egypt"
+  },
+  "JER-C15-D-P01-ThouSpeakestFalsel.dc.html": {
+   "x": 840,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "217 · Thou Speakest Falsely"
+  },
+  "JER-C15-D-P02-GreatStonesInTheBr.dc.html": {
+   "x": 1680,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "218 · Great Stones in the Brickwork"
+  },
+  "JER-C15-D-P03-GreatStonesInTheBr.dc.html": {
+   "x": 2520,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "219 · Great Stones in the Brickwork"
+  },
+  "JER-C15-D-P04-AllTheJewsThatDwel.dc.html": {
+   "x": 3360,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "220 · All the Jews That Dwelt in the Land of Egypt"
+  },
+  "JER-C15-D-P05-AllTheJewsThatDwel.dc.html": {
+   "x": 0,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "221 · All the Jews That Dwelt in the Land of Egypt"
+  },
+  "JER-C15-D-P06-AllTheJewsThatDwel.dc.html": {
+   "x": 840,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "222 · All the Jews That Dwelt in the Land of Egypt"
+  },
+  "JER-C15-D-P07-TheQueenOfHeaven.dc.html": {
+   "x": 1680,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "223 · The Queen of Heaven"
+  },
+  "JER-C15-D-P08-TheQueenOfHeaven.dc.html": {
+   "x": 2520,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "224 · The Queen of Heaven"
+  },
+  "JER-C15-D-P09-TheQueenOfHeaven.dc.html": {
+   "x": 3360,
+   "y": 72600,
+   "w": 760,
+   "h": 1080,
+   "title": "225 · The Queen of Heaven"
+  },
+  "JER-C15-D-P10-OBaruch.dc.html": {
+   "x": 0,
+   "y": 73800,
+   "w": 760,
+   "h": 1080,
+   "title": "226 · O Baruch"
+  },
+  "JER-C15-D-P11-OBaruch.dc.html": {
+   "x": 840,
+   "y": 73800,
+   "w": 760,
+   "h": 1080,
+   "title": "227 · O Baruch"
+  },
+  "JER-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · Against the Nations"
+  },
+  "JER-C16-D-P01-OfEgypt.dc.html": {
+   "x": 840,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "228 · Of Egypt"
+  },
+  "JER-C16-D-P02-EgyptRisethUpLikeT.dc.html": {
+   "x": 1680,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "229 · Egypt Riseth Up like the Nile"
+  },
+  "JER-C16-D-P03-NebuchadrezzarShal.dc.html": {
+   "x": 2520,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "230 · Nebuchadrezzar Shall Smite the Land of Egypt"
+  },
+  "JER-C16-D-P04-AVeryFairHeifer.dc.html": {
+   "x": 3360,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "231 · A Very Fair Heifer"
+  },
+  "JER-C16-D-P05-AVeryFairHeifer.dc.html": {
+   "x": 0,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "232 · A Very Fair Heifer"
+  },
+  "JER-C16-D-P06-ConcerningThePhili.dc.html": {
+   "x": 840,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "233 · Concerning the Philistines"
+  },
+  "JER-C16-D-P07-ConcerningThePhili.dc.html": {
+   "x": 1680,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "234 · Concerning the Philistines"
+  },
+  "JER-C16-D-P08-OfMoab.dc.html": {
+   "x": 2520,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "235 · Of Moab"
+  },
+  "JER-C16-D-P09-OfMoab.dc.html": {
+   "x": 3360,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "236 · Of Moab"
+  },
+  "JER-C16-D-P10-SettledOnHisLees.dc.html": {
+   "x": 0,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "237 · Settled on His Lees"
+  },
+  "JER-C16-D-P11-JudgmentUponThePla.dc.html": {
+   "x": 840,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "238 · Judgment upon the Plain Country"
+  },
+  "JER-C16-D-P12-OVineOfSibmah.dc.html": {
+   "x": 1680,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "239 · O Vine of Sibmah"
+  },
+  "JER-C16-D-P13-OVineOfSibmah.dc.html": {
+   "x": 2520,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "240 · O Vine of Sibmah"
+  },
+  "JER-C16-D-P14-HeShallFlyAsAnEagl.dc.html": {
+   "x": 3360,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "241 · He Shall Fly as an Eagle"
+  },
+  "JER-C16-D-P15-FearAndThePitAndTh.dc.html": {
+   "x": 0,
+   "y": 79100,
+   "w": 760,
+   "h": 1080,
+   "title": "242 · Fear, and the Pit, and the Snare"
+  },
+  "JER-C17-00-Title.dc.html": {
+   "x": 0,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 17 · Babylon Is Taken"
+  },
+  "JER-C17-D-P01-OfTheChildrenOfAmm.dc.html": {
+   "x": 840,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "243 · Of the Children of Ammon"
+  },
+  "JER-C17-D-P02-OfEdom.dc.html": {
+   "x": 1680,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "244 · Of Edom"
+  },
+  "JER-C17-D-P03-ThouThatDwellestIn.dc.html": {
+   "x": 2520,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "245 · Thou That Dwellest in the Clefts of the Rock"
+  },
+  "JER-C17-D-P04-ThouThatDwellestIn.dc.html": {
+   "x": 3360,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "246 · Thou That Dwellest in the Clefts of the Rock"
+  },
+  "JER-C17-D-P05-OfDamascus.dc.html": {
+   "x": 0,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "247 · Of Damascus"
+  },
+  "JER-C17-D-P06-OfKedarAndHazor.dc.html": {
+   "x": 840,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "248 · Of Kedar and Hazor"
+  },
+  "JER-C17-D-P07-ConcerningElam.dc.html": {
+   "x": 1680,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "249 · Concerning Elam"
+  },
+  "JER-C17-D-P08-BabylonIsTaken.dc.html": {
+   "x": 2520,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "250 · Babylon Is Taken"
+  },
+  "JER-C17-D-P09-BabylonIsTaken.dc.html": {
+   "x": 3360,
+   "y": 82000,
+   "w": 760,
+   "h": 1080,
+   "title": "251 · Babylon Is Taken"
+  },
+  "JER-C17-D-P10-FleeOutOfTheMidstO.dc.html": {
+   "x": 0,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "252 · Flee out of the Midst of Babylon"
+  },
+  "JER-C17-D-P11-IsraelIsAHuntedShe.dc.html": {
+   "x": 840,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "253 · Israel Is a Hunted Sheep"
+  },
+  "JER-C17-D-P12-TheHammerOfTheWhol.dc.html": {
+   "x": 1680,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "254 · The Hammer of the Whole Earth"
+  },
+  "JER-C17-D-P13-TheHammerOfTheWhol.dc.html": {
+   "x": 2520,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "255 · The Hammer of the Whole Earth"
+  },
+  "JER-C17-D-P14-TheHammerOfTheWhol.dc.html": {
+   "x": 3360,
+   "y": 83200,
+   "w": 760,
+   "h": 1080,
+   "title": "256 · The Hammer of the Whole Earth"
+  },
+  "JER-C17-D-P15-ASwordUponTheChald.dc.html": {
+   "x": 0,
+   "y": 84400,
+   "w": 760,
+   "h": 1080,
+   "title": "257 · A Sword upon the Chaldeans"
+  },
+  "JER-C17-D-P16-APeopleComethFromT.dc.html": {
+   "x": 840,
+   "y": 84400,
+   "w": 760,
+   "h": 1080,
+   "title": "258 · A People Cometh from the North"
+  },
+  "JER-C17-D-P17-APeopleComethFromT.dc.html": {
+   "x": 1680,
+   "y": 84400,
+   "w": 760,
+   "h": 1080,
+   "title": "259 · A People Cometh from the North"
+  },
+  "JER-C18-00-Title.dc.html": {
+   "x": 0,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 18 · The Hammer of the Whole Earth"
+  },
+  "JER-C18-D-P01-ADestroyingWind.dc.html": {
+   "x": 840,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "260 · A Destroying Wind"
+  },
+  "JER-C18-D-P02-AGoldenCupInJehova.dc.html": {
+   "x": 1680,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "261 · A Golden Cup in Jehovah's Hand"
+  },
+  "JER-C18-D-P03-ThouThatDwellestUp.dc.html": {
+   "x": 2520,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "262 · Thou That Dwellest upon Many Waters"
+  },
+  "JER-C18-D-P04-ThouThatDwellestUp.dc.html": {
+   "x": 3360,
+   "y": 86100,
+   "w": 760,
+   "h": 1080,
+   "title": "263 · Thou That Dwellest upon Many Waters"
+  },
+  "JER-C18-D-P05-ThouArtMyBattleAxe.dc.html": {
+   "x": 0,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "264 · Thou Art My Battle-Axe"
+  },
+  "JER-C18-D-P06-ODestroyingMountai.dc.html": {
+   "x": 840,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "265 · O Destroying Mountain"
+  },
+  "JER-C18-D-P07-OnePostShallRunToM.dc.html": {
+   "x": 1680,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "266 · One Post Shall Run to Meet Another"
+  },
+  "JER-C18-D-P08-HeHathSwallowedMeU.dc.html": {
+   "x": 2520,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "267 · He Hath Swallowed Me Up"
+  },
+  "JER-C18-D-P09-MyPeopleGoYeOutOfT.dc.html": {
+   "x": 3360,
+   "y": 87300,
+   "w": 760,
+   "h": 1080,
+   "title": "268 · My People, Go Ye Out of the Midst of Her"
+  },
+  "JER-C18-D-P10-MyPeopleGoYeOutOfT.dc.html": {
+   "x": 0,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "269 · My People, Go Ye Out of the Midst of Her"
+  },
+  "JER-C18-D-P11-TheBroadWallsOfBab.dc.html": {
+   "x": 840,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "270 · The Broad Walls of Babylon"
+  },
+  "JER-C18-D-P12-SeraiahTheSonOfNer.dc.html": {
+   "x": 1680,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "271 · Seraiah the Son of Neriah"
+  },
+  "JER-C18-D-P13-ThusShallBabylonSi.dc.html": {
+   "x": 2520,
+   "y": 88500,
+   "w": 760,
+   "h": 1080,
+   "title": "272 · Thus Shall Babylon Sink"
+  },
+  "JER-C19-00-Title.dc.html": {
+   "x": 0,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 19 · The Fall of Jerusalem"
+  },
+  "JER-C19-D-P01-TheyBuiltFortsAgai.dc.html": {
+   "x": 840,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "273 · They Built Forts against It"
+  },
+  "JER-C19-D-P02-RiblahInTheLandOfH.dc.html": {
+   "x": 1680,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "274 · Riblah in the Land of Hamath"
+  },
+  "JER-C19-D-P03-HeBurnedTheHouseOf.dc.html": {
+   "x": 2520,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "275 · He Burned the House of Jehovah"
+  },
+  "JER-C19-D-P04-TheBrassOfThemToBa.dc.html": {
+   "x": 3360,
+   "y": 90200,
+   "w": 760,
+   "h": 1080,
+   "title": "276 · The Brass of Them to Babylon"
+  },
+  "JER-C19-D-P05-TheBrassOfThemToBa.dc.html": {
+   "x": 0,
+   "y": 91400,
+   "w": 760,
+   "h": 1080,
+   "title": "277 · The Brass of Them to Babylon"
+  },
+  "JER-C19-D-P06-ThePeopleWhomNebuc.dc.html": {
+   "x": 840,
+   "y": 91400,
+   "w": 760,
+   "h": 1080,
+   "title": "278 · The People Whom Nebuchadrezzar Carried Away"
+  },
+  "JER-C19-D-P07-HeLiftedUpTheHeadO.dc.html": {
+   "x": 1680,
+   "y": 91400,
+   "w": 760,
+   "h": 1080,
+   "title": "279 · He Lifted Up the Head of Jehoiachin"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JER-C01-00-Title.dc.html",
+  "JER-C01-D-P01-TheWordsOfJeremiah.dc.html",
+  "JER-C01-D-P02-TheWordsOfJeremiah.dc.html",
+  "JER-C01-D-P03-ARodOfAnAlmondTree.dc.html",
+  "JER-C01-D-P04-ABoilingCaldron.dc.html",
+  "JER-C01-D-P05-AnIronPillarAndBra.dc.html",
+  "JER-C01-E-P01-TheKindnessOfThyYo.dc.html",
+  "JER-C01-E-P02-TheKindnessOfThyYo.dc.html",
+  "JER-C01-E-P03-BrokenCisterns.dc.html",
+  "JER-C01-E-P04-ANobleVine.dc.html",
+  "JER-C01-E-P05-ANobleVine.dc.html",
+  "JER-C01-E-P06-DaysWithoutNumber.dc.html",
+  "JER-C01-F-P01-ReturnAgainToMe.dc.html",
+  "JER-C01-F-P02-BackslidingIsraelA.dc.html",
+  "JER-C01-F-P03-ReturnOBacksliding.dc.html",
+  "JER-C01-F-P04-ReturnOBacksliding.dc.html",
+  "JER-C01-F-P05-ReturnOBacksliding.dc.html",
+  "JER-C02-00-Title.dc.html",
+  "JER-C02-D-P01-IfThouWiltReturn.dc.html",
+  "JER-C02-D-P02-BlowYeTheTrumpet.dc.html",
+  "JER-C02-D-P03-BlowYeTheTrumpet.dc.html",
+  "JER-C02-D-P04-BlowYeTheTrumpet.dc.html",
+  "JER-C02-D-P05-WasteAndVoid.dc.html",
+  "JER-C02-D-P06-WasteAndVoid.dc.html",
+  "JER-C02-E-P01-RunYeToAndFro.dc.html",
+  "JER-C02-E-P02-RunYeToAndFro.dc.html",
+  "JER-C02-E-P03-MyWordsInThyMouthF.dc.html",
+  "JER-C02-E-P04-TheSandForTheBound.dc.html",
+  "JER-C02-E-P05-TheSandForTheBound.dc.html",
+  "JER-C02-F-P01-FleeForSafety.dc.html",
+  "JER-C02-F-P02-FleeForSafety.dc.html",
+  "JER-C02-F-P03-FleeForSafety.dc.html",
+  "JER-C02-F-P04-AskForTheOldPaths.dc.html",
+  "JER-C02-F-P05-APeopleFromTheNort.dc.html",
+  "JER-C02-F-P06-ATrierAmongMyPeopl.dc.html",
+  "JER-C03-00-Title.dc.html",
+  "JER-C03-D-P01-StandInTheGateOfJe.dc.html",
+  "JER-C03-D-P02-GoYeNowUntoShiloh.dc.html",
+  "JER-C03-D-P03-TheQueenOfHeaven.dc.html",
+  "JER-C03-D-P04-TheQueenOfHeaven.dc.html",
+  "JER-C03-D-P05-TheValleyOfSlaught.dc.html",
+  "JER-C03-D-P06-TheValleyOfSlaught.dc.html",
+  "JER-C03-E-P01-SpreadBeforeTheSun.dc.html",
+  "JER-C03-E-P02-TheStorkInTheHeave.dc.html",
+  "JER-C03-E-P03-TheStorkInTheHeave.dc.html",
+  "JER-C03-E-P04-IsThereNoBalmInGil.dc.html",
+  "JER-C03-E-P05-IsThereNoBalmInGil.dc.html",
+  "JER-C03-F-P01-AFountainOfTears.dc.html",
+  "JER-C03-F-P02-AFountainOfTears.dc.html",
+  "JER-C03-F-P03-AFountainOfTears.dc.html",
+  "JER-C03-F-P04-CallForTheMourning.dc.html",
+  "JER-C03-F-P05-CallForTheMourning.dc.html",
+  "JER-C03-F-P06-LetHimThatGlorieth.dc.html",
+  "JER-C04-00-Title.dc.html",
+  "JER-C04-D-P01-LearnNotTheWayOfTh.dc.html",
+  "JER-C04-D-P02-LearnNotTheWayOfTh.dc.html",
+  "JER-C04-D-P03-HeStretchedOutTheH.dc.html",
+  "JER-C04-D-P04-OJehovahCorrectMe.dc.html",
+  "JER-C04-E-P01-TheWordsOfThisCove.dc.html",
+  "JER-C04-E-P02-AConspiracyAmongTh.dc.html",
+  "JER-C04-E-P03-AConspiracyAmongTh.dc.html",
+  "JER-C04-E-P04-LikeAGentleLamb.dc.html",
+  "JER-C04-E-P05-LikeAGentleLamb.dc.html",
+  "JER-C04-F-P01-WhereforeDothTheWa.dc.html",
+  "JER-C04-F-P02-IHaveForsakenMyHou.dc.html",
+  "JER-C04-F-P03-IHaveForsakenMyHou.dc.html",
+  "JER-C04-F-P04-MineEvilNeighbours.dc.html",
+  "JER-C05-00-Title.dc.html",
+  "JER-C05-D-P01-ByTheEuphrates.dc.html",
+  "JER-C05-D-P02-ByTheEuphrates.dc.html",
+  "JER-C05-D-P03-EveryBottleShallBe.dc.html",
+  "JER-C05-D-P04-HumbleYourselvesSi.dc.html",
+  "JER-C05-D-P05-CanTheEthiopianCha.dc.html",
+  "JER-C05-E-P01-ConcerningTheDroug.dc.html",
+  "JER-C05-E-P02-ConcerningTheDroug.dc.html",
+  "JER-C05-E-P03-TheProphetsProphes.dc.html",
+  "JER-C05-E-P04-HastThouUtterlyRej.dc.html",
+  "JER-C05-F-P01-ThoughMosesAndSamu.dc.html",
+  "JER-C05-F-P02-ThoughMosesAndSamu.dc.html",
+  "JER-C05-F-P03-WoeIsMeMyMother.dc.html",
+  "JER-C05-F-P04-ThyWordsWereFound.dc.html",
+  "JER-C05-F-P05-AFortifiedBrazenWa.dc.html",
+  "JER-C06-00-Title.dc.html",
+  "JER-C06-D-P01-ThouShaltNotTakeTh.dc.html",
+  "JER-C06-D-P02-TheHouseOfMourning.dc.html",
+  "JER-C06-D-P03-TheHouseOfMourning.dc.html",
+  "JER-C06-D-P04-ManyFishersAndMany.dc.html",
+  "JER-C06-D-P05-ManyFishersAndMany.dc.html",
+  "JER-C06-E-P01-WithAPenOfIron.dc.html",
+  "JER-C06-E-P02-BlessedIsTheManTha.dc.html",
+  "JER-C06-E-P03-HealMeOJehovah.dc.html",
+  "JER-C06-E-P04-HallowTheSabbathDa.dc.html",
+  "JER-C06-E-P05-HallowTheSabbathDa.dc.html",
+  "JER-C06-E-P06-HallowTheSabbathDa.dc.html",
+  "JER-C06-F-P01-AsTheClayInThePott.dc.html",
+  "JER-C06-F-P02-AsTheClayInThePott.dc.html",
+  "JER-C06-F-P03-AsTheClayInThePott.dc.html",
+  "JER-C06-F-P04-LetUsDeviseDevices.dc.html",
+  "JER-C06-F-P05-LetUsDeviseDevices.dc.html",
+  "JER-C07-00-Title.dc.html",
+  "JER-C07-D-P01-APotterSEarthenBot.dc.html",
+  "JER-C07-D-P02-TheValleyOfSlaught.dc.html",
+  "JER-C07-D-P03-EvenSoWillIBreakTh.dc.html",
+  "JER-C07-D-P04-TheStocksInTheGate.dc.html",
+  "JER-C07-D-P05-TheStocksInTheGate.dc.html",
+  "JER-C07-D-P06-ThouHastPersuadedM.dc.html",
+  "JER-C07-D-P07-CursedBeTheDay.dc.html",
+  "JER-C07-D-P08-ZedekiahSentUntoHi.dc.html",
+  "JER-C07-D-P09-ZedekiahSentUntoHi.dc.html",
+  "JER-C07-D-P10-OHouseOfDavid.dc.html",
+  "JER-C07-D-P11-GoDownToTheHouseOf.dc.html",
+  "JER-C07-D-P12-GoDownToTheHouseOf.dc.html",
+  "JER-C07-D-P13-WeepSoreForHimThat.dc.html",
+  "JER-C07-D-P14-WoeUntoHimThatBuil.dc.html",
+  "JER-C07-D-P15-TheBurialOfAnAss.dc.html",
+  "JER-C07-D-P16-Coniah.dc.html",
+  "JER-C08-00-Title.dc.html",
+  "JER-C08-D-P01-WoeUntoTheShepherd.dc.html",
+  "JER-C08-D-P02-ARighteousBranch.dc.html",
+  "JER-C08-D-P03-ConcerningTheProph.dc.html",
+  "JER-C08-D-P04-HearkenNotUntoTheP.dc.html",
+  "JER-C08-D-P05-IHaveDreamedIHaveD.dc.html",
+  "JER-C08-D-P06-TheBurdenOfJehovah.dc.html",
+  "JER-C08-D-P07-TwoBasketsOfFigs.dc.html",
+  "JER-C08-D-P08-TwoBasketsOfFigs.dc.html",
+  "JER-C08-D-P09-TwoBasketsOfFigs.dc.html",
+  "JER-C08-D-P10-ThreeAndTwentyYear.dc.html",
+  "JER-C08-D-P11-ThreeAndTwentyYear.dc.html",
+  "JER-C08-D-P12-SeventyYears.dc.html",
+  "JER-C08-D-P13-TheCupOfTheWineOfW.dc.html",
+  "JER-C08-D-P14-TheCupOfTheWineOfW.dc.html",
+  "JER-C08-D-P15-JehovahWillRoarFro.dc.html",
+  "JER-C08-D-P16-WailYeShepherds.dc.html",
+  "JER-C09-00-Title.dc.html",
+  "JER-C09-D-P01-DiminishNotAWord.dc.html",
+  "JER-C09-D-P02-ThouShaltSurelyDie.dc.html",
+  "JER-C09-D-P03-IAmInYourHand.dc.html",
+  "JER-C09-D-P04-IAmInYourHand.dc.html",
+  "JER-C09-D-P05-MicahTheMorashtite.dc.html",
+  "JER-C09-D-P06-UriahTheSonOfShema.dc.html",
+  "JER-C09-E-P01-BondsAndBars.dc.html",
+  "JER-C09-E-P02-BondsAndBars.dc.html",
+  "JER-C09-E-P03-ServeTheKingOfBaby.dc.html",
+  "JER-C09-E-P04-ServeTheKingOfBaby.dc.html",
+  "JER-C09-E-P05-TheVesselsThatAreL.dc.html",
+  "JER-C09-F-P01-HananiahTheSonOfAz.dc.html",
+  "JER-C09-F-P02-HananiahBrakeTheBa.dc.html",
+  "JER-C09-F-P03-BarsOfIron.dc.html",
+  "JER-C10-00-Title.dc.html",
+  "JER-C10-D-P01-TheLetterToTheCapt.dc.html",
+  "JER-C10-D-P02-BuildYeHousesAndDw.dc.html",
+  "JER-C10-D-P03-ThoughtsOfPeace.dc.html",
+  "JER-C10-D-P04-ThoughtsOfPeace.dc.html",
+  "JER-C10-D-P05-ShemaiahTheNehelam.dc.html",
+  "JER-C10-D-P06-ShemaiahTheNehelam.dc.html",
+  "JER-C10-D-P07-WriteTheeAllTheWor.dc.html",
+  "JER-C10-D-P08-TheTimeOfJacobSTro.dc.html",
+  "JER-C10-D-P09-ThyHurtIsIncurable.dc.html",
+  "JER-C10-D-P10-TheCityBuildedUpon.dc.html",
+  "JER-C10-D-P11-AnEverlastingLove.dc.html",
+  "JER-C10-D-P12-AGreatCompanyShall.dc.html",
+  "JER-C10-D-P13-AGreatCompanyShall.dc.html",
+  "JER-C10-D-P14-EphraimBemoaningHi.dc.html",
+  "JER-C10-D-P15-EphraimBemoaningHi.dc.html",
+  "JER-C10-D-P16-EphraimBemoaningHi.dc.html",
+  "JER-C10-D-P17-ANewCovenant.dc.html",
+  "JER-C10-D-P18-HolyUntoJehovah.dc.html",
+  "JER-C11-00-Title.dc.html",
+  "JER-C11-D-P01-ShutUpInTheCourtOf.dc.html",
+  "JER-C11-D-P02-BuyTheeMyField.dc.html",
+  "JER-C11-D-P03-SeventeenShekelsOf.dc.html",
+  "JER-C11-D-P04-ThereIsNothingTooH.dc.html",
+  "JER-C11-D-P05-ThereIsNothingTooH.dc.html",
+  "JER-C11-D-P06-IsThereAnythingToo.dc.html",
+  "JER-C11-D-P07-IsThereAnythingToo.dc.html",
+  "JER-C11-D-P08-AnEverlastingCoven.dc.html",
+  "JER-C11-D-P09-AnEverlastingCoven.dc.html",
+  "JER-C11-E-P01-CallUntoMe.dc.html",
+  "JER-C11-E-P02-CallUntoMe.dc.html",
+  "JER-C11-E-P03-TheVoiceOfTheBride.dc.html",
+  "JER-C11-E-P04-ABranchOfRighteous.dc.html",
+  "JER-C11-E-P05-MyCovenantOfTheDay.dc.html",
+  "JER-C11-E-P06-MyCovenantOfTheDay.dc.html",
+  "JER-C12-00-Title.dc.html",
+  "JER-C12-D-P01-ThouShaltDieInPeac.dc.html",
+  "JER-C12-D-P02-ToProclaimLiberty.dc.html",
+  "JER-C12-D-P03-ToProclaimLiberty.dc.html",
+  "JER-C12-D-P04-IProclaimUntoYouAL.dc.html",
+  "JER-C12-D-P05-IProclaimUntoYouAL.dc.html",
+  "JER-C12-E-P01-TheHouseOfTheRecha.dc.html",
+  "JER-C12-E-P02-WeWillDrinkNoWine.dc.html",
+  "JER-C12-E-P03-WeWillDrinkNoWine.dc.html",
+  "JER-C12-E-P04-WeWillDrinkNoWine.dc.html",
+  "JER-C12-F-P01-TakeTheeARollOfABo.dc.html",
+  "JER-C12-F-P02-BaruchReadInTheBoo.dc.html",
+  "JER-C12-F-P03-AllThePrincesWereS.dc.html",
+  "JER-C12-F-P04-GoHideThee.dc.html",
+  "JER-C12-F-P05-TheKingWasSittingI.dc.html",
+  "JER-C12-F-P06-TakeTheeAgainAnoth.dc.html",
+  "JER-C12-F-P07-TakeTheeAgainAnoth.dc.html",
+  "JER-C13-00-Title.dc.html",
+  "JER-C13-D-P01-ZedekiahReignedAsK.dc.html",
+  "JER-C13-D-P02-ZedekiahReignedAsK.dc.html",
+  "JER-C13-D-P03-TheDungeonHouse.dc.html",
+  "JER-C13-D-P04-TheDungeonHouse.dc.html",
+  "JER-C13-D-P05-LetThisManBePutToD.dc.html",
+  "JER-C13-D-P06-TheDungeonOfMalchi.dc.html",
+  "JER-C13-D-P07-EbedMelechTheEthio.dc.html",
+  "JER-C13-D-P08-EbedMelechTheEthio.dc.html",
+  "JER-C13-D-P09-IWillAskTheeAThing.dc.html",
+  "JER-C13-D-P10-IWillAskTheeAThing.dc.html",
+  "JER-C13-D-P11-LetNoManKnowOfThes.dc.html",
+  "JER-C13-D-P12-ABreachWasMadeInTh.dc.html",
+  "JER-C13-D-P13-ByTheWayOfTheKingS.dc.html",
+  "JER-C13-D-P14-TheyBurnedTheKingS.dc.html",
+  "JER-C13-D-P15-ThyLifeShallBeForA.dc.html",
+  "JER-C14-00-Title.dc.html",
+  "JER-C14-D-P01-TheChainsWhichAreU.dc.html",
+  "JER-C14-D-P02-GedaliahAtMizpah.dc.html",
+  "JER-C14-D-P03-GedaliahAtMizpah.dc.html",
+  "JER-C14-D-P04-DostThouKnow.dc.html",
+  "JER-C14-D-P05-InTheSeventhMonth.dc.html",
+  "JER-C14-D-P06-FourscoreMen.dc.html",
+  "JER-C14-D-P07-FourscoreMen.dc.html",
+  "JER-C14-D-P08-TheGreatWatersThat.dc.html",
+  "JER-C14-D-P09-TheGreatWatersThat.dc.html",
+  "JER-C14-D-P10-PrayForUs.dc.html",
+  "JER-C14-D-P11-AfterTenDays.dc.html",
+  "JER-C14-D-P12-GoYeNotIntoEgypt.dc.html",
+  "JER-C14-D-P13-GoYeNotIntoEgypt.dc.html",
+  "JER-C15-00-Title.dc.html",
+  "JER-C15-D-P01-ThouSpeakestFalsel.dc.html",
+  "JER-C15-D-P02-GreatStonesInTheBr.dc.html",
+  "JER-C15-D-P03-GreatStonesInTheBr.dc.html",
+  "JER-C15-D-P04-AllTheJewsThatDwel.dc.html",
+  "JER-C15-D-P05-AllTheJewsThatDwel.dc.html",
+  "JER-C15-D-P06-AllTheJewsThatDwel.dc.html",
+  "JER-C15-D-P07-TheQueenOfHeaven.dc.html",
+  "JER-C15-D-P08-TheQueenOfHeaven.dc.html",
+  "JER-C15-D-P09-TheQueenOfHeaven.dc.html",
+  "JER-C15-D-P10-OBaruch.dc.html",
+  "JER-C15-D-P11-OBaruch.dc.html",
+  "JER-C16-00-Title.dc.html",
+  "JER-C16-D-P01-OfEgypt.dc.html",
+  "JER-C16-D-P02-EgyptRisethUpLikeT.dc.html",
+  "JER-C16-D-P03-NebuchadrezzarShal.dc.html",
+  "JER-C16-D-P04-AVeryFairHeifer.dc.html",
+  "JER-C16-D-P05-AVeryFairHeifer.dc.html",
+  "JER-C16-D-P06-ConcerningThePhili.dc.html",
+  "JER-C16-D-P07-ConcerningThePhili.dc.html",
+  "JER-C16-D-P08-OfMoab.dc.html",
+  "JER-C16-D-P09-OfMoab.dc.html",
+  "JER-C16-D-P10-SettledOnHisLees.dc.html",
+  "JER-C16-D-P11-JudgmentUponThePla.dc.html",
+  "JER-C16-D-P12-OVineOfSibmah.dc.html",
+  "JER-C16-D-P13-OVineOfSibmah.dc.html",
+  "JER-C16-D-P14-HeShallFlyAsAnEagl.dc.html",
+  "JER-C16-D-P15-FearAndThePitAndTh.dc.html",
+  "JER-C17-00-Title.dc.html",
+  "JER-C17-D-P01-OfTheChildrenOfAmm.dc.html",
+  "JER-C17-D-P02-OfEdom.dc.html",
+  "JER-C17-D-P03-ThouThatDwellestIn.dc.html",
+  "JER-C17-D-P04-ThouThatDwellestIn.dc.html",
+  "JER-C17-D-P05-OfDamascus.dc.html",
+  "JER-C17-D-P06-OfKedarAndHazor.dc.html",
+  "JER-C17-D-P07-ConcerningElam.dc.html",
+  "JER-C17-D-P08-BabylonIsTaken.dc.html",
+  "JER-C17-D-P09-BabylonIsTaken.dc.html",
+  "JER-C17-D-P10-FleeOutOfTheMidstO.dc.html",
+  "JER-C17-D-P11-IsraelIsAHuntedShe.dc.html",
+  "JER-C17-D-P12-TheHammerOfTheWhol.dc.html",
+  "JER-C17-D-P13-TheHammerOfTheWhol.dc.html",
+  "JER-C17-D-P14-TheHammerOfTheWhol.dc.html",
+  "JER-C17-D-P15-ASwordUponTheChald.dc.html",
+  "JER-C17-D-P16-APeopleComethFromT.dc.html",
+  "JER-C17-D-P17-APeopleComethFromT.dc.html",
+  "JER-C18-00-Title.dc.html",
+  "JER-C18-D-P01-ADestroyingWind.dc.html",
+  "JER-C18-D-P02-AGoldenCupInJehova.dc.html",
+  "JER-C18-D-P03-ThouThatDwellestUp.dc.html",
+  "JER-C18-D-P04-ThouThatDwellestUp.dc.html",
+  "JER-C18-D-P05-ThouArtMyBattleAxe.dc.html",
+  "JER-C18-D-P06-ODestroyingMountai.dc.html",
+  "JER-C18-D-P07-OnePostShallRunToM.dc.html",
+  "JER-C18-D-P08-HeHathSwallowedMeU.dc.html",
+  "JER-C18-D-P09-MyPeopleGoYeOutOfT.dc.html",
+  "JER-C18-D-P10-MyPeopleGoYeOutOfT.dc.html",
+  "JER-C18-D-P11-TheBroadWallsOfBab.dc.html",
+  "JER-C18-D-P12-SeraiahTheSonOfNer.dc.html",
+  "JER-C18-D-P13-ThusShallBabylonSi.dc.html",
+  "JER-C19-00-Title.dc.html",
+  "JER-C19-D-P01-TheyBuiltFortsAgai.dc.html",
+  "JER-C19-D-P02-RiblahInTheLandOfH.dc.html",
+  "JER-C19-D-P03-HeBurnedTheHouseOf.dc.html",
+  "JER-C19-D-P04-TheBrassOfThemToBa.dc.html",
+  "JER-C19-D-P05-TheBrassOfThemToBa.dc.html",
+  "JER-C19-D-P06-ThePeopleWhomNebuc.dc.html",
+  "JER-C19-D-P07-HeLiftedUpTheHeadO.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Jeremiah Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Almond Rod (Jeremiah 1–3)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Evil from the North (Jeremiah 4–6)",
+   "x": 0,
+   "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Temple of Jehovah (Jeremiah 7–9)",
+   "x": 0,
+   "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Broken Covenant (Jeremiah 10–12)",
+   "x": 0,
+   "y": 17600
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Marred Girdle (Jeremiah 13–15)",
+   "x": 0,
+   "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Potter's House (Jeremiah 16–18)",
+   "x": 0,
+   "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Earthen Bottle (Jeremiah 19–22)",
+   "x": 0,
+   "y": 31100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Cup of the Wine of Wrath (Jeremiah 23–25)",
+   "x": 0,
+   "y": 36400
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Yoke (Jeremiah 26–28)",
+   "x": 0,
+   "y": 41700
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · A New Covenant (Jeremiah 29–31)",
+   "x": 0,
+   "y": 45800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Field at Anathoth (Jeremiah 32–33)",
+   "x": 0,
+   "y": 51100
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Roll (Jeremiah 34–36)",
+   "x": 0,
+   "y": 56400
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · The Dungeon (Jeremiah 37–39)",
+   "x": 0,
+   "y": 61700
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Gedaliah (Jeremiah 40–42)",
+   "x": 0,
+   "y": 67000
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · Into Egypt (Jeremiah 43–45)",
+   "x": 0,
+   "y": 71100
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · Against the Nations (Jeremiah 46–48)",
+   "x": 0,
+   "y": 75200
+  },
+  "chapter17": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 17 · Babylon Is Taken (Jeremiah 49–50)",
+   "x": 0,
+   "y": 80500
+  },
+  "chapter18": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 18 · The Hammer of the Whole Earth (Jeremiah 51)",
+   "x": 0,
+   "y": 85800
+  },
+  "chapter19": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 19 · The Fall of Jerusalem (Jeremiah 52)",
+   "x": 0,
+   "y": 89900
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
