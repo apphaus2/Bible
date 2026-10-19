@@ -42,5 +42,7 @@ META = {
      "blurb": "Thou shalt not take thee a wife; enter not into the house of mourning; many fishers and many hunters; the sin of Judah is written with a pen of iron; blessed is the man that trusteth in Jehovah, as a tree planted by the waters; the heart is deceitful above all things; hallow the sabbath day; and the potter's house — behold, as the clay in the potter's hand, so are ye in my hand, O house of Israel."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Earthen Bottle", "range": "Jeremiah 19–22", "bible_chapters": [19, 20, 21, 22],
      "blurb": "The potter's earthen bottle broken at the gate Harsith — even so will I break this people and this city; Pashhur and the stocks in the gate of Benjamin; O Jehovah, thou hast persuaded me, and I was persuaded; a burning fire shut up in my bones; the way of life and the way of death; woe unto him that buildeth his house by unrighteousness; and Coniah, a despised broken vessel — O earth, earth, earth, hear the word of Jehovah."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Cup of the Wine of Wrath", "range": "Jeremiah 23–25", "bible_chapters": [23, 24, 25],
+     "blurb": "Woe unto the shepherds; a righteous Branch unto David, and his name, Jehovah our righteousness; I have dreamed, I have dreamed; is not my word like fire, and like a hammer that breaketh the rock in pieces?; two baskets of figs before the temple; seventy years; and the cup of the wine of wrath, carried from Jerusalem to all the kingdoms of the earth."},
   ],
 }

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 538 verses — 538 full, 0 partial, 0 omitted.
+**So far:** 626 verses — 626 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Almond Rod (Jeremiah 1–3)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · The Earthen Bottle (Jeremiah 19–22)
 
 77 verses: 77 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · The Cup of the Wine of Wrath (Jeremiah 23–25)
+
+88 verses: 88 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
