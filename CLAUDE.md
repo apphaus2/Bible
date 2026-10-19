@@ -219,7 +219,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Esther | 4 · The Days of Purim | 8–10 | title + 10 (pp. 29–38) | 52/52 verses full (9:1–16 words only, over the map of the provinces and Shushan at dusk; the days of Adar as a chart) | `volumes/esther/` |
 | **Esther** | **complete: cover + 4 chapters** | **1–10** | **43 pages (38 numbered)** | **167 verses: all full** | `volumes/esther/` |
 
-**Genesis through Ezra (fifteen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+**Genesis through Esther (seventeen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
 carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` has the wall and its gates as a plan,
 `wall_plan(lit=, night=, companies=)`, the builders with a weapon in one hand, the pulpit of wood; `neh.common.plan_pages` sets one picture
 above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
