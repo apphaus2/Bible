@@ -1,0 +1,191 @@
+{
+ "id": "isaiah",
+ "order": 23,
+ "name": "Isaiah",
+ "kanji": "イザヤ書",
+ "thumb": "vol-isaiah-",
+ "lede": "The twenty-third book of the Bible, in full: the vision of Isaiah the son of Amoz — the vineyard of Jehovah, the seraphim crying holy, holy, holy, the burdens of the nations, Hezekiah and the host of Sennacherib, comfort ye my people, the servant of Jehovah, and new heavens and a new earth, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Vineyard of Jehovah",
+   "range": "Isaiah 1–5",
+   "blurb": "Hear, O heavens, and give ear, O earth: the ox knoweth his owner, but Israel doth not know; come now, and let us reason together — though your sins be as scarlet, they shall be as white as snow; the mountain of Jehovah's house, and swords beaten into plowshares; the day of Jehovah upon all that is lifted up; the daughters of Zion; and the song of the vineyard that brought forth wild grapes.",
+   "prefixes": [
+    "Main.dc.html",
+    "ISA-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Holy, Holy, Holy",
+   "range": "Isaiah 6–9",
+   "blurb": "In the year that king Uzziah died: the Lord upon a throne, high and lifted up, and the seraphim crying holy, holy, holy; woe is me; the live coal; here am I, send me; then Ahaz at the conduit of the upper pool — ask thee a sign; behold, a virgin shall conceive, and shall call his name Immanuel; the River to the neck; the people that walked in darkness have seen a great light; unto us a child is born.",
+   "prefixes": [
+    "ISA-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Root of Jesse",
+   "range": "Isaiah 10–12",
+   "blurb": "Ho Assyrian, the rod of mine anger — shall the axe boast itself against him that heweth therewith?; a remnant shall return; he is come to Aiath, he halteth at Nob; then a shoot out of the stock of Jesse: the wolf shall dwell with the lamb, and a little child shall lead them; an ensign for the nations; and the song of that day — with joy shall ye draw water out of the wells of salvation.",
+   "prefixes": [
+    "ISA-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "How Art Thou Fallen",
+   "range": "Isaiah 13–16",
+   "blurb": "The burden of Babylon: the day of Jehovah, the sun darkened, the Medes stirred up, and Babylon, the glory of kingdoms, never inhabited; the parable against the king of Babylon — how art thou fallen from heaven, O day-star, son of the morning!; the burden of Philistia and the fiery flying serpent; and the burden of Moab — my heart soundeth like a harp for Moab.",
+   "prefixes": [
+    "ISA-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "The Burden of Egypt",
+   "range": "Isaiah 17–20",
+   "blurb": "The burden of Damascus, a ruinous heap, and the gleanings of the olive-tree; the uproar of the nations chased as chaff; the land of the rustling of wings beyond the rivers of Ethiopia; the burden of Egypt — Jehovah rideth upon a swift cloud, the Nile dried up, an altar to Jehovah in the midst of Egypt, and a highway out of Egypt to Assyria; and Isaiah's sign, three years barefoot, against Egypt and Ethiopia.",
+   "prefixes": [
+    "ISA-C05-"
+   ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "Watchman, What of the Night?",
+   "range": "Isaiah 21–23",
+   "blurb": "The burden of the wilderness of the sea — set a watchman: fallen, fallen is Babylon; the burden of Dumah — watchman, what of the night? the morning cometh, and also the night; the burden upon Arabia; the valley of vision — let us eat and drink, for to-morrow we shall die; Shebna's sepulchre, and the key of the house of David laid upon Eliakim; and the burden of Tyre — howl, ye ships of Tarshish.",
+   "prefixes": [
+    "ISA-C06-"
+   ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "Thy Dead Shall Live",
+   "range": "Isaiah 24–27",
+   "blurb": "Jehovah maketh the earth empty, and it reeleth to and fro like a hammock; then the song — O Jehovah, thou art my God; in this mountain a feast of fat things for all peoples: he hath swallowed up death for ever, and the Lord Jehovah will wipe away tears from off all faces; we have a strong city; thy dead shall live; leviathan the swift serpent; the vineyard of wine; and the great trumpet.",
+   "prefixes": [
+    "ISA-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "In Returning and Rest",
+   "range": "Isaiah 28–30",
+   "blurb": "Woe to the crown of pride of the drunkards of Ephraim; precept upon precept, line upon line; a covenant with death, and a tried stone laid in Zion, a precious corner-stone of sure foundation; Ho Ariel; a book that is sealed; shall the potter be esteemed as clay?; woe to the rebellious children that go down into Egypt; in returning and rest shall ye be saved; and a word behind thee — this is the way, walk ye in it.",
+   "prefixes": [
+    "ISA-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "The Desert Shall Blossom",
+   "range": "Isaiah 31–35",
+   "blurb": "Woe to them that go down to Egypt for help; a king shall reign in righteousness, as the shade of a great rock in a weary land; until the Spirit be poured upon us from on high; who among us can dwell with the devouring fire?; thine eyes shall see the king in his beauty, and Zion a tent that shall not be removed; the heavens rolled together as a scroll and the burden upon Edom; and the desert shall rejoice, and blossom as the rose, and the ransomed of Jehovah shall return with singing.",
+   "prefixes": [
+    "ISA-C09-"
+   ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "On Whom Dost Thou Trust?",
+   "range": "Isaiah 36–39",
+   "blurb": "Sennacherib against the fortified cities of Judah, and Rabshakeh at the conduit of the upper pool — now on whom dost thou trust?; Hezekiah in sackcloth, the letter spread before Jehovah, and his prayer; the virgin daughter of Zion hath despised thee; the camp of the Assyrians at morning; Hezekiah sick unto death and the shadow returned ten steps on the dial; the writing of Hezekiah; and the envoys of Babylon.",
+   "prefixes": [
+    "ISA-C10-"
+   ]
+  },
+  {
+   "dir": "chapter-11",
+   "num": "11",
+   "name": "Comfort Ye My People",
+   "range": "Isaiah 40–42",
+   "blurb": "Comfort ye, comfort ye my people: the voice of one that crieth, prepare ye in the wilderness the way of Jehovah; all flesh is grass, but the word of our God shall stand forever; he will feed his flock like a shepherd; who hath measured the waters in the hollow of his hand?; they that wait for Jehovah shall mount up with wings as eagles; fear thou not, for I am with thee; behold my servant — a bruised reed will he not break; sing unto Jehovah a new song.",
+   "prefixes": [
+    "ISA-C11-"
+   ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "Ye Are My Witnesses",
+   "range": "Isaiah 43–45",
+   "blurb": "Fear not, for I have redeemed thee: when thou passest through the waters, I will be with thee; ye are my witnesses, saith Jehovah; a way in the sea, and rivers in the desert; I am the first, and I am the last; the smith, the carpenter, and the tree half burned and half a god; I have blotted out, as a thick cloud, thy transgressions; Cyrus, my shepherd, mine anointed; I form the light, and create darkness; look unto me, and be ye saved, all the ends of the earth.",
+   "prefixes": [
+    "ISA-C12-"
+   ]
+  },
+  {
+   "dir": "chapter-13",
+   "num": "13",
+   "name": "Go Ye Forth from Babylon",
+   "range": "Isaiah 46–48",
+   "blurb": "Bel boweth down, Nebo stoopeth, their idols a burden to the weary beast; even to hoar hairs will I carry you; a ravenous bird from the east; come down, and sit in the dust, O virgin daughter of Babylon; let now the star-gazers save thee; I have chosen thee in the furnace of affliction; oh that thou hadst hearkened — then had thy peace been as a river; go ye forth from Babylon; there is no peace, saith Jehovah, to the wicked.",
+   "prefixes": [
+    "ISA-C13-"
+   ]
+  },
+  {
+   "dir": "chapter-14",
+   "num": "14",
+   "name": "A Light to the Gentiles",
+   "range": "Isaiah 49–51",
+   "blurb": "Listen, O isles: the servant hid as a polished shaft in the quiver — I will also give thee for a light to the Gentiles; to them that are bound, Go forth; can a woman forget her sucking child? yet will not I forget thee; thy walls are continually before me; he wakeneth mine ear morning by morning; I set my face like a flint; look unto the rock whence ye were hewn; awake, awake, put on strength, O arm of Jehovah; and the cup of staggering taken out of thy hand.",
+   "prefixes": [
+    "ISA-C14-"
+   ]
+  },
+  {
+   "dir": "chapter-15",
+   "num": "15",
+   "name": "A Man of Sorrows",
+   "range": "Isaiah 52–55",
+   "blurb": "Awake, awake, put on thy strength, O Zion; how beautiful upon the mountains are the feet of him that bringeth good tidings; behold, my servant shall deal wisely — he was despised, and rejected of men, a man of sorrows; he was wounded for our transgressions; all we like sheep have gone astray; as a lamb that is led to the slaughter; sing, O barren, enlarge the place of thy tent; ho, every one that thirsteth, come ye to the waters; and the trees of the field shall clap their hands.",
+   "prefixes": [
+    "ISA-C15-"
+   ]
+  },
+  {
+   "dir": "chapter-16",
+   "num": "16",
+   "name": "The Fast That I Have Chosen",
+   "range": "Isaiah 56–59",
+   "blurb": "Mine house shall be called a house of prayer for all peoples; his watchmen are blind, dumb dogs that cannot bark; I dwell in the high and holy place, with him also that is of a contrite and humble spirit; cry aloud, lift up thy voice like a trumpet; is not this the fast that I have chosen? to deal thy bread to the hungry — then shall thy light break forth as the morning; the repairer of the breach; and a Redeemer will come to Zion.",
+   "prefixes": [
+    "ISA-C16-"
+   ]
+  },
+  {
+   "dir": "chapter-17",
+   "num": "17",
+   "name": "Arise, Shine",
+   "range": "Isaiah 60–62",
+   "blurb": "Arise, shine; for thy light is come, and the glory of Jehovah is risen upon thee; nations shall come to thy light — the camels of Midian, the ships of Tarshish flying as doves to their windows; thy gates open continually; Jehovah thine everlasting light; the Spirit of the Lord Jehovah is upon me, to preach good tidings unto the meek, a garland for ashes; as a bride adorneth herself with her jewels; for Zion's sake will I not hold my peace; and cast up, cast up the highway.",
+   "prefixes": [
+    "ISA-C17-"
+   ]
+  },
+  {
+   "dir": "chapter-18",
+   "num": "18",
+   "name": "New Heavens and a New Earth",
+   "range": "Isaiah 63–66",
+   "blurb": "Who is this that cometh from Edom? I have trodden the winepress alone; the lovingkindnesses of Jehovah and the days of Moses; oh that thou wouldest rend the heavens — we are the clay, and thou our potter; I am found of them that sought me not; behold, I create new heavens and a new earth, and the wolf and the lamb shall feed together; heaven is my throne, and the earth is my footstool; as one whom his mother comforteth; and all flesh shall come to worship before me.",
+   "prefixes": [
+    "ISA-C18-"
+   ]
+  }
+ ]
+}
