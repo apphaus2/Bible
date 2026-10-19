@@ -1,0 +1,210 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:21:36Z"
+ },
+ "title": "Isaiah — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "ISA-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Vineyard of Jehovah"
+  },
+  "ISA-C01-D-P01-AhSinfulNation.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Ah Sinful Nation"
+  },
+  "ISA-C01-D-P02-WhoHathRequiredThi.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Who Hath Required This?"
+  },
+  "ISA-C01-D-P03-ComeNowAndLetUsRea.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Come Now, and Let Us Reason Together"
+  },
+  "ISA-C01-D-P04-TheFaithfulCity.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Faithful City"
+  },
+  "ISA-C01-D-P05-TheFaithfulCity.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Faithful City"
+  },
+  "ISA-C01-D-P06-TheMountainOfJehov.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Mountain of Jehovah's House"
+  },
+  "ISA-C01-D-P07-TheMountainOfJehov.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Mountain of Jehovah's House"
+  },
+  "ISA-C01-D-P08-TheDayOfJehovahOfH.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Day of Jehovah of Hosts"
+  },
+  "ISA-C01-D-P09-TheDayOfJehovahOfH.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Day of Jehovah of Hosts"
+  },
+  "ISA-C01-D-P10-TheStayAndTheStaff.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Stay and the Staff"
+  },
+  "ISA-C01-D-P11-TheStayAndTheStaff.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Stay and the Staff"
+  },
+  "ISA-C01-D-P12-TheDaughtersOfZion.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Daughters of Zion"
+  },
+  "ISA-C01-D-P13-TheBranchOfJehovah.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Branch of Jehovah"
+  },
+  "ISA-C01-D-P14-TheBranchOfJehovah.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Branch of Jehovah"
+  },
+  "ISA-C01-D-P15-TheSongOfTheVineya.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Song of the Vineyard"
+  },
+  "ISA-C01-D-P16-WoeUntoThem.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Woe unto Them"
+  },
+  "ISA-C01-D-P17-WoeUntoThem.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Woe unto Them"
+  },
+  "ISA-C01-D-P18-WoeUntoThem.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Woe unto Them"
+  },
+  "ISA-C01-D-P19-WoeUntoThem.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Woe unto Them"
+  },
+  "ISA-C01-D-P20-AnEnsignToTheNatio.dc.html": {
+   "x": 0,
+   "y": 6800,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · An Ensign to the Nations"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "ISA-C01-00-Title.dc.html",
+  "ISA-C01-D-P01-AhSinfulNation.dc.html",
+  "ISA-C01-D-P02-WhoHathRequiredThi.dc.html",
+  "ISA-C01-D-P03-ComeNowAndLetUsRea.dc.html",
+  "ISA-C01-D-P04-TheFaithfulCity.dc.html",
+  "ISA-C01-D-P05-TheFaithfulCity.dc.html",
+  "ISA-C01-D-P06-TheMountainOfJehov.dc.html",
+  "ISA-C01-D-P07-TheMountainOfJehov.dc.html",
+  "ISA-C01-D-P08-TheDayOfJehovahOfH.dc.html",
+  "ISA-C01-D-P09-TheDayOfJehovahOfH.dc.html",
+  "ISA-C01-D-P10-TheStayAndTheStaff.dc.html",
+  "ISA-C01-D-P11-TheStayAndTheStaff.dc.html",
+  "ISA-C01-D-P12-TheDaughtersOfZion.dc.html",
+  "ISA-C01-D-P13-TheBranchOfJehovah.dc.html",
+  "ISA-C01-D-P14-TheBranchOfJehovah.dc.html",
+  "ISA-C01-D-P15-TheSongOfTheVineya.dc.html",
+  "ISA-C01-D-P16-WoeUntoThem.dc.html",
+  "ISA-C01-D-P17-WoeUntoThem.dc.html",
+  "ISA-C01-D-P18-WoeUntoThem.dc.html",
+  "ISA-C01-D-P19-WoeUntoThem.dc.html",
+  "ISA-C01-D-P20-AnEnsignToTheNatio.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Isaiah Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Vineyard of Jehovah (Isaiah 1–5)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

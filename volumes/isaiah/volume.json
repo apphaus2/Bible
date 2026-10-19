@@ -1,0 +1,21 @@
+{
+ "id": "isaiah",
+ "order": 23,
+ "name": "Isaiah",
+ "kanji": "イザヤ書",
+ "thumb": "vol-isaiah-",
+ "lede": "The twenty-third book of the Bible, in full: the vision of Isaiah the son of Amoz — the vineyard of Jehovah, the seraphim crying holy, holy, holy, the burdens of the nations, Hezekiah and the host of Sennacherib, comfort ye my people, the servant of Jehovah, and new heavens and a new earth, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Vineyard of Jehovah",
+   "range": "Isaiah 1–5",
+   "blurb": "Hear, O heavens, and give ear, O earth: the ox knoweth his owner, but Israel doth not know; come now, and let us reason together — though your sins be as scarlet, they shall be as white as snow; the mountain of Jehovah's house, and swords beaten into plowshares; the day of Jehovah upon all that is lifted up; the daughters of Zion; and the song of the vineyard that brought forth wild grapes.",
+   "prefixes": [
+    "Main.dc.html",
+    "ISA-C01-"
+   ]
+  }
+ ]
+}
