@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 719 verses — 719 full, 0 partial, 0 omitted.
+**So far:** 816 verses — 816 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Visions of God (Ezekiel 1–3)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · The Ship of Tyre (Ezekiel 26–28)
 
 83 verses: 83 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · Pharaoh King of Egypt (Ezekiel 29–32)
+
+97 verses: 97 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

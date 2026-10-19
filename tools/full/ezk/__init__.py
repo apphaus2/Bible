@@ -47,5 +47,7 @@ META = {
      "blurb": "Write thee the name of the day: the king of Babylon drew close unto Jerusalem; the parable of the caldron and its rust; the desire of thine eyes taken away with a stroke — so I spake unto the people in the morning, and at even my wife died — and Ezekiel a sign unto them; then the burdens of Ammon, Moab, Edom and the Philistines."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The Ship of Tyre", "range": "Ezekiel 26–28", "bible_chapters": [26, 27, 28],
      "blurb": "Behold, I am against thee, O Tyre: Nebuchadrezzar's horsemen, the walls broken, a bare rock for the spreading of nets; the lamentation over Tyre, the ship perfect in beauty — the cedar mast, the linen sail of Egypt, her traffickers from Tarshish to Sheba — broken by the east wind in the heart of the seas; the prince of Tyre who said, I am a god; thou wast in Eden, the garden of God; and Sidon."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Pharaoh King of Egypt", "range": "Ezekiel 29–32", "bible_chapters": [29, 30, 31, 32],
+     "blurb": "Behold, I am against thee, Pharaoh king of Egypt, the great monster that lieth in the midst of his rivers: hooks in his jaws, a staff of reed to the house of Israel, Egypt desolate from Migdol to Syene and given to Nebuchadrezzar; the arm of Pharaoh broken; the Assyrian a cedar in Lebanon brought down to Sheol; and the pit, where Asshur is, and Elam, and Meshech and Tubal, round about their graves."},
   ],
 }

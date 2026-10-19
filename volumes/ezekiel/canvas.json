@@ -1038,6 +1038,160 @@
    "w": 760,
    "h": 1080,
    "title": "136 · They Shall Dwell Securely"
+  },
+  "EZK-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Pharaoh King of Egypt"
+  },
+  "EZK-C11-D-P01-TheGreatMonster.dc.html": {
+   "x": 840,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · The Great Monster"
+  },
+  "EZK-C11-D-P02-AStaffOfReed.dc.html": {
+   "x": 1680,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · A Staff of Reed"
+  },
+  "EZK-C11-D-P03-AStaffOfReed.dc.html": {
+   "x": 2520,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · A Staff of Reed"
+  },
+  "EZK-C11-D-P04-AtTheEndOfFortyYea.dc.html": {
+   "x": 3360,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · At the End of Forty Years"
+  },
+  "EZK-C11-D-P05-HisRecompense.dc.html": {
+   "x": 0,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · His Recompense"
+  },
+  "EZK-C11-D-P06-AlasForTheDay.dc.html": {
+   "x": 840,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Alas for the Day!"
+  },
+  "EZK-C11-D-P07-ByTheHandOfNebucha.dc.html": {
+   "x": 1680,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · By the Hand of Nebuchadrezzar"
+  },
+  "EZK-C11-D-P08-IWillSetAFireInEgy.dc.html": {
+   "x": 2520,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · I Will Set a Fire in Egypt"
+  },
+  "EZK-C11-D-P09-IHaveBrokenTheArmO.dc.html": {
+   "x": 3360,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · I Have Broken the Arm of Pharaoh"
+  },
+  "EZK-C11-D-P10-IHaveBrokenTheArmO.dc.html": {
+   "x": 0,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · I Have Broken the Arm of Pharaoh"
+  },
+  "EZK-C11-D-P11-WhomArtThouLikeInT.dc.html": {
+   "x": 840,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Whom Art Thou Like in Thy Greatness?"
+  },
+  "EZK-C11-D-P12-BecauseThouArtExal.dc.html": {
+   "x": 1680,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Because Thou Art Exalted in Stature"
+  },
+  "EZK-C11-D-P13-BecauseThouArtExal.dc.html": {
+   "x": 2520,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · Because Thou Art Exalted in Stature"
+  },
+  "EZK-C11-D-P14-InTheDayWhenHeWent.dc.html": {
+   "x": 3360,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · In the Day When He Went Down to Sheol"
+  },
+  "EZK-C11-D-P15-ALamentationOverPh.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · A Lamentation over Pharaoh"
+  },
+  "EZK-C11-D-P16-ALamentationOverPh.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · A Lamentation over Pharaoh"
+  },
+  "EZK-C11-D-P17-TheSwordOfTheKingO.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The Sword of the King of Babylon"
+  },
+  "EZK-C11-D-P18-WailForTheMultitud.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Wail for the Multitude of Egypt"
+  },
+  "EZK-C11-D-P19-ThereIsElam.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · There Is Elam"
+  },
+  "EZK-C11-D-P20-ThereIsEdom.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · There Is Edom"
+  },
+  "EZK-C11-D-P21-ThereIsEdom.dc.html": {
+   "x": 840,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · There Is Edom"
   }
  },
  "order": [
@@ -1187,7 +1341,29 @@
   "EZK-C10-D-P12-TheKingOfTyre.dc.html",
   "EZK-C10-D-P13-TheKingOfTyre.dc.html",
   "EZK-C10-D-P14-SetThyFaceTowardSi.dc.html",
-  "EZK-C10-D-P15-TheyShallDwellSecu.dc.html"
+  "EZK-C10-D-P15-TheyShallDwellSecu.dc.html",
+  "EZK-C11-00-Title.dc.html",
+  "EZK-C11-D-P01-TheGreatMonster.dc.html",
+  "EZK-C11-D-P02-AStaffOfReed.dc.html",
+  "EZK-C11-D-P03-AStaffOfReed.dc.html",
+  "EZK-C11-D-P04-AtTheEndOfFortyYea.dc.html",
+  "EZK-C11-D-P05-HisRecompense.dc.html",
+  "EZK-C11-D-P06-AlasForTheDay.dc.html",
+  "EZK-C11-D-P07-ByTheHandOfNebucha.dc.html",
+  "EZK-C11-D-P08-IWillSetAFireInEgy.dc.html",
+  "EZK-C11-D-P09-IHaveBrokenTheArmO.dc.html",
+  "EZK-C11-D-P10-IHaveBrokenTheArmO.dc.html",
+  "EZK-C11-D-P11-WhomArtThouLikeInT.dc.html",
+  "EZK-C11-D-P12-BecauseThouArtExal.dc.html",
+  "EZK-C11-D-P13-BecauseThouArtExal.dc.html",
+  "EZK-C11-D-P14-InTheDayWhenHeWent.dc.html",
+  "EZK-C11-D-P15-ALamentationOverPh.dc.html",
+  "EZK-C11-D-P16-ALamentationOverPh.dc.html",
+  "EZK-C11-D-P17-TheSwordOfTheKingO.dc.html",
+  "EZK-C11-D-P18-WailForTheMultitud.dc.html",
+  "EZK-C11-D-P19-ThereIsElam.dc.html",
+  "EZK-C11-D-P20-ThereIsEdom.dc.html",
+  "EZK-C11-D-P21-ThereIsEdom.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1266,6 +1442,13 @@
    "text": "Chapter 10 · The Ship of Tyre (Ezekiel 26–28)",
    "x": 0,
    "y": 42200
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Pharaoh King of Egypt (Ezekiel 29–32)",
+   "x": 0,
+   "y": 47500
   }
  },
  "designSystems": [],
