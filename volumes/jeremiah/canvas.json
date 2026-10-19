@@ -1052,6 +1052,139 @@
    "w": 760,
    "h": 1080,
    "title": "139 · Bars of Iron"
+  },
+  "JER-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · A New Covenant"
+  },
+  "JER-C10-D-P01-TheLetterToTheCapt.dc.html": {
+   "x": 840,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Letter to the Captivity"
+  },
+  "JER-C10-D-P02-BuildYeHousesAndDw.dc.html": {
+   "x": 1680,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Build Ye Houses, and Dwell in Them"
+  },
+  "JER-C10-D-P03-ThoughtsOfPeace.dc.html": {
+   "x": 2520,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Thoughts of Peace"
+  },
+  "JER-C10-D-P04-ThoughtsOfPeace.dc.html": {
+   "x": 3360,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · Thoughts of Peace"
+  },
+  "JER-C10-D-P05-ShemaiahTheNehelam.dc.html": {
+   "x": 0,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Shemaiah the Nehelamite"
+  },
+  "JER-C10-D-P06-ShemaiahTheNehelam.dc.html": {
+   "x": 840,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Shemaiah the Nehelamite"
+  },
+  "JER-C10-D-P07-WriteTheeAllTheWor.dc.html": {
+   "x": 1680,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Write Thee All the Words in a Book"
+  },
+  "JER-C10-D-P08-TheTimeOfJacobSTro.dc.html": {
+   "x": 2520,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · The Time of Jacob's Trouble"
+  },
+  "JER-C10-D-P09-ThyHurtIsIncurable.dc.html": {
+   "x": 3360,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Thy Hurt Is Incurable"
+  },
+  "JER-C10-D-P10-TheCityBuildedUpon.dc.html": {
+   "x": 0,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The City Builded upon Its Own Hill"
+  },
+  "JER-C10-D-P11-AnEverlastingLove.dc.html": {
+   "x": 840,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · An Everlasting Love"
+  },
+  "JER-C10-D-P12-AGreatCompanyShall.dc.html": {
+   "x": 1680,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · A Great Company Shall Return"
+  },
+  "JER-C10-D-P13-AGreatCompanyShall.dc.html": {
+   "x": 2520,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · A Great Company Shall Return"
+  },
+  "JER-C10-D-P14-EphraimBemoaningHi.dc.html": {
+   "x": 3360,
+   "y": 48500,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Ephraim Bemoaning Himself"
+  },
+  "JER-C10-D-P15-EphraimBemoaningHi.dc.html": {
+   "x": 0,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Ephraim Bemoaning Himself"
+  },
+  "JER-C10-D-P16-EphraimBemoaningHi.dc.html": {
+   "x": 840,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Ephraim Bemoaning Himself"
+  },
+  "JER-C10-D-P17-ANewCovenant.dc.html": {
+   "x": 1680,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · A New Covenant"
+  },
+  "JER-C10-D-P18-HolyUntoJehovah.dc.html": {
+   "x": 2520,
+   "y": 49700,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · Holy unto Jehovah"
   }
  },
  "order": [
@@ -1203,7 +1336,26 @@
   "JER-C09-E-P05-TheVesselsThatAreL.dc.html",
   "JER-C09-F-P01-HananiahTheSonOfAz.dc.html",
   "JER-C09-F-P02-HananiahBrakeTheBa.dc.html",
-  "JER-C09-F-P03-BarsOfIron.dc.html"
+  "JER-C09-F-P03-BarsOfIron.dc.html",
+  "JER-C10-00-Title.dc.html",
+  "JER-C10-D-P01-TheLetterToTheCapt.dc.html",
+  "JER-C10-D-P02-BuildYeHousesAndDw.dc.html",
+  "JER-C10-D-P03-ThoughtsOfPeace.dc.html",
+  "JER-C10-D-P04-ThoughtsOfPeace.dc.html",
+  "JER-C10-D-P05-ShemaiahTheNehelam.dc.html",
+  "JER-C10-D-P06-ShemaiahTheNehelam.dc.html",
+  "JER-C10-D-P07-WriteTheeAllTheWor.dc.html",
+  "JER-C10-D-P08-TheTimeOfJacobSTro.dc.html",
+  "JER-C10-D-P09-ThyHurtIsIncurable.dc.html",
+  "JER-C10-D-P10-TheCityBuildedUpon.dc.html",
+  "JER-C10-D-P11-AnEverlastingLove.dc.html",
+  "JER-C10-D-P12-AGreatCompanyShall.dc.html",
+  "JER-C10-D-P13-AGreatCompanyShall.dc.html",
+  "JER-C10-D-P14-EphraimBemoaningHi.dc.html",
+  "JER-C10-D-P15-EphraimBemoaningHi.dc.html",
+  "JER-C10-D-P16-EphraimBemoaningHi.dc.html",
+  "JER-C10-D-P17-ANewCovenant.dc.html",
+  "JER-C10-D-P18-HolyUntoJehovah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1275,6 +1427,13 @@
    "text": "Chapter 9 · The Yoke (Jeremiah 26–28)",
    "x": 0,
    "y": 41700
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · A New Covenant (Jeremiah 29–31)",
+   "x": 0,
+   "y": 45800
   }
  },
  "designSystems": [],

@@ -46,5 +46,7 @@ META = {
      "blurb": "Woe unto the shepherds; a righteous Branch unto David, and his name, Jehovah our righteousness; I have dreamed, I have dreamed; is not my word like fire, and like a hammer that breaketh the rock in pieces?; two baskets of figs before the temple; seventy years; and the cup of the wine of wrath, carried from Jerusalem to all the kingdoms of the earth."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "The Yoke", "range": "Jeremiah 26–28", "bible_chapters": [26, 27, 28],
      "blurb": "Stand in the court of Jehovah's house, diminish not a word; thou shalt surely die — but as for me, behold, I am in your hand; Micah the Morashtite remembered, and Uriah who fled into Egypt; then bonds and bars upon his neck — bring your necks under the yoke of the king of Babylon, and live; Hananiah breaks the bar: thou hast broken the bars of wood, but thou hast made in their stead bars of iron."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "A New Covenant", "range": "Jeremiah 29–31", "bible_chapters": [29, 30, 31],
+     "blurb": "The letter to the captivity: build ye houses, and plant gardens, and seek the peace of the city; after seventy years I will visit you — thoughts of peace, and not of evil; write all the words in a book; I have loved thee with an everlasting love; Rachel weeping for her children; and, behold, the days come that I will make a new covenant: I will put my law in their inward parts, and in their heart will I write it."},
   ],
 }
