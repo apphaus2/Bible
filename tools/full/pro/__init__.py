@@ -39,5 +39,7 @@ META = {
      "blurb": "Better is the poor that walketh in his integrity; the king's wrath is as the roaring of a lion; the contentions of a wife are a continual dropping; wine is a mocker, strong drink a brawler; diverse weights are an abomination to Jehovah; the spirit of man is the lamp of Jehovah; the king's heart is in the hand of Jehovah as the watercourses; the horse is prepared against the day of battle, but victory is of Jehovah."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Words of the Wise", "range": "Proverbs 22–24", "bible_chapters": [22, 23, 24],
      "blurb": "A good name is rather to be chosen than great riches; train up a child in the way he should go; incline thine ear, and hear the words of the wise; remove not the ancient landmark; riches make themselves wings like an eagle; who hath woe? — look not thou upon the wine when it is red; through wisdom is a house builded; a righteous man falleth seven times, and riseth up again; I went by the field of the sluggard."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Apples of Gold", "range": "Proverbs 25–27", "bible_chapters": [25, 26, 27],
+     "blurb": "These also are proverbs of Solomon, which the men of Hezekiah king of Judah copied out: a word fitly spoken is like apples of gold in network of silver; as cold waters to a thirsty soul; as a dog that returneth to his vomit; as the door turneth upon its hinges, so doth the sluggard upon his bed; iron sharpeneth iron; be thou diligent to know the state of thy flocks."},
   ],
 }

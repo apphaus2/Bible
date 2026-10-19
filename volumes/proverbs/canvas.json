@@ -695,6 +695,83 @@
    "w": 760,
    "h": 1080,
    "title": "89 · The Field of the Sluggard"
+  },
+  "PRO-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Apples of Gold"
+  },
+  "PRO-C09-S-P01-TheMenOfHezekiahCo.dc.html": {
+   "x": 840,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · The Men of Hezekiah Copied Out"
+  },
+  "PRO-C09-S-P02-TheMenOfHezekiahCo.dc.html": {
+   "x": 1680,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Men of Hezekiah Copied Out"
+  },
+  "PRO-C09-S-P03-TheMenOfHezekiahCo.dc.html": {
+   "x": 2520,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Men of Hezekiah Copied Out"
+  },
+  "PRO-C09-S-P04-AsADogThatReturnet.dc.html": {
+   "x": 3360,
+   "y": 34800,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · As a Dog That Returneth"
+  },
+  "PRO-C09-S-P05-AsADogThatReturnet.dc.html": {
+   "x": 0,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · As a Dog That Returneth"
+  },
+  "PRO-C09-S-P06-AsADogThatReturnet.dc.html": {
+   "x": 840,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · As a Dog That Returneth"
+  },
+  "PRO-C09-S-P07-IronSharpenethIron.dc.html": {
+   "x": 1680,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Iron Sharpeneth Iron"
+  },
+  "PRO-C09-S-P08-IronSharpenethIron.dc.html": {
+   "x": 2520,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · Iron Sharpeneth Iron"
+  },
+  "PRO-C09-S-P09-IronSharpenethIron.dc.html": {
+   "x": 3360,
+   "y": 36000,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Iron Sharpeneth Iron"
+  },
+  "PRO-C09-S-P10-TheStateOfThyFlock.dc.html": {
+   "x": 0,
+   "y": 37200,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The State of Thy Flocks"
   }
  },
  "order": [
@@ -795,7 +872,18 @@
   "PRO-C08-S-P08-FretNotThyself.dc.html",
   "PRO-C08-S-P09-FretNotThyself.dc.html",
   "PRO-C08-S-P10-FretNotThyself.dc.html",
-  "PRO-C08-S-P11-TheFieldOfTheSlugg.dc.html"
+  "PRO-C08-S-P11-TheFieldOfTheSlugg.dc.html",
+  "PRO-C09-00-Title.dc.html",
+  "PRO-C09-S-P01-TheMenOfHezekiahCo.dc.html",
+  "PRO-C09-S-P02-TheMenOfHezekiahCo.dc.html",
+  "PRO-C09-S-P03-TheMenOfHezekiahCo.dc.html",
+  "PRO-C09-S-P04-AsADogThatReturnet.dc.html",
+  "PRO-C09-S-P05-AsADogThatReturnet.dc.html",
+  "PRO-C09-S-P06-AsADogThatReturnet.dc.html",
+  "PRO-C09-S-P07-IronSharpenethIron.dc.html",
+  "PRO-C09-S-P08-IronSharpenethIron.dc.html",
+  "PRO-C09-S-P09-IronSharpenethIron.dc.html",
+  "PRO-C09-S-P10-TheStateOfThyFlock.dc.html"
  ],
  "notes": {
   "Main": {
@@ -860,6 +948,13 @@
    "text": "Chapter 8 · The Words of the Wise (Proverbs 22–24)",
    "x": 0,
    "y": 30400
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Apples of Gold (Proverbs 25–27)",
+   "x": 0,
+   "y": 34500
   }
  },
  "designSystems": [],

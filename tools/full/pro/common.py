@@ -239,7 +239,7 @@ def sayings(items, prefix, start, default_head, budget=1050, most=4, end="", boo
     pages, cur = [], []
     def fits(cs):
         rs = _rows(cs)
-        return len(rs) <= most and sum(max(_need(c, 15.0) for c in r) for r in rs) <= ROOM - 12 * (len(rs) - 1)
+        return len(rs) <= most and sum(max(_need(c, 17.5) for c in r) for r in rs) <= ROOM - 12 * (len(rs) - 1)
     for c in cells:
         chars = sum(x["chars"] for x in cur)
         if cur and ((c["head"] and chars > 420) or chars + c["chars"] > budget or not fits(cur + [c])):

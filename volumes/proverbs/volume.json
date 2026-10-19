@@ -86,6 +86,16 @@
    "prefixes": [
     "PRO-C08-"
    ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "Apples of Gold",
+   "range": "Proverbs 25–27",
+   "blurb": "These also are proverbs of Solomon, which the men of Hezekiah king of Judah copied out: a word fitly spoken is like apples of gold in network of silver; as cold waters to a thirsty soul; as a dog that returneth to his vomit; as the door turneth upon its hinges, so doth the sluggard upon his bed; iron sharpeneth iron; be thou diligent to know the state of thy flocks.",
+   "prefixes": [
+    "PRO-C09-"
+   ]
   }
  ]
 }

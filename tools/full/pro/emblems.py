@@ -240,9 +240,9 @@ def e_cistern(p):
 @emb("reflection")
 def e_reflection(p):
     tok = F("adam", skin="#D9A27A", shadow="#7A4A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", light="#FFE680")
-    return (sky(p, "#8FD0E2", "#E8F6FA") + f'<g>{mk.face(tok, 110, -10, 0.2)}</g>'
+    return (sky(p, "#8FD0E2", "#E8F6FA") + f'<g>{mk.face(tok, 124, 2, 0.16)}</g>'
             + f'<rect x="-500" y="62" width="1320" height="420" fill="#2C7DA0"></rect><path d="M-500 62 L 820 62" stroke="{INK}" stroke-width="2"></path>'
-            + f'<g opacity="0.5" transform="translate(0 124) scale(1 -1)">{mk.face(tok, 110, -10, 0.2)}</g>'
+            + f'<g opacity="0.5" transform="translate(0 124) scale(1 -1)">{mk.face(tok, 124, 2, 0.16)}</g>'
             + "".join(f'<path d="M{x} {y} l 24 0" stroke="#E8F6FA" stroke-width="1.6"></path>' for x, y in ((60, 84), (200, 92), (120, 104), (230, 80))))
 
 @emb("cup")
