@@ -1780,6 +1780,76 @@
    "w": 760,
    "h": 1080,
    "title": "236 · A Redeemer Will Come to Zion"
+  },
+  "ISA-C17-00-Title.dc.html": {
+   "x": 0,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 17 · Arise, Shine"
+  },
+  "ISA-C17-D-P01-AriseShine.dc.html": {
+   "x": 840,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "237 · Arise, Shine"
+  },
+  "ISA-C17-D-P02-ThyGatesShallBeOpe.dc.html": {
+   "x": 1680,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "238 · Thy Gates Shall Be Open Continually"
+  },
+  "ISA-C17-D-P03-ThyGatesShallBeOpe.dc.html": {
+   "x": 2520,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "239 · Thy Gates Shall Be Open Continually"
+  },
+  "ISA-C17-D-P04-ThyGatesShallBeOpe.dc.html": {
+   "x": 3360,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "240 · Thy Gates Shall Be Open Continually"
+  },
+  "ISA-C17-D-P05-TheSpiritOfTheLord.dc.html": {
+   "x": 0,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "241 · The Spirit of the Lord Jehovah Is upon Me"
+  },
+  "ISA-C17-D-P06-TheSpiritOfTheLord.dc.html": {
+   "x": 840,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "242 · The Spirit of the Lord Jehovah Is upon Me"
+  },
+  "ISA-C17-D-P07-ForZionSSake.dc.html": {
+   "x": 1680,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "243 · For Zion's Sake"
+  },
+  "ISA-C17-D-P08-ForZionSSake.dc.html": {
+   "x": 2520,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "244 · For Zion's Sake"
+  },
+  "ISA-C17-D-P09-CastUpTheHighway.dc.html": {
+   "x": 3360,
+   "y": 80800,
+   "w": 760,
+   "h": 1080,
+   "title": "245 · Cast Up the Highway"
   }
  },
  "order": [
@@ -2035,7 +2105,17 @@
   "ISA-C16-D-P12-WeGropeForTheWall.dc.html",
   "ISA-C16-D-P13-WeGropeForTheWall.dc.html",
   "ISA-C16-D-P14-RighteousnessAsABr.dc.html",
-  "ISA-C16-D-P15-ARedeemerWillComeT.dc.html"
+  "ISA-C16-D-P15-ARedeemerWillComeT.dc.html",
+  "ISA-C17-00-Title.dc.html",
+  "ISA-C17-D-P01-AriseShine.dc.html",
+  "ISA-C17-D-P02-ThyGatesShallBeOpe.dc.html",
+  "ISA-C17-D-P03-ThyGatesShallBeOpe.dc.html",
+  "ISA-C17-D-P04-ThyGatesShallBeOpe.dc.html",
+  "ISA-C17-D-P05-TheSpiritOfTheLord.dc.html",
+  "ISA-C17-D-P06-TheSpiritOfTheLord.dc.html",
+  "ISA-C17-D-P07-ForZionSSake.dc.html",
+  "ISA-C17-D-P08-ForZionSSake.dc.html",
+  "ISA-C17-D-P09-CastUpTheHighway.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2156,6 +2236,13 @@
    "text": "Chapter 16 · The Fast That I Have Chosen (Isaiah 56–59)",
    "x": 0,
    "y": 74000
+  },
+  "chapter17": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 17 · Arise, Shine (Isaiah 60–62)",
+   "x": 0,
+   "y": 79300
   }
  },
  "designSystems": [],
