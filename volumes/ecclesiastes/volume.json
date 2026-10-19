@@ -26,6 +26,16 @@
    "prefixes": [
     "ECC-C02-"
    ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "A Good Name",
+   "range": "Ecclesiastes 7–9",
+   "blurb": "A good name is better than precious oil; the house of mourning and the crackling of thorns under a pot; consider the work of God; one man among a thousand have I found; keep the king's command; a man's wisdom maketh his face to shine; a living dog is better than a dead lion; whatsoever thy hand findeth to do, do it with thy might; the race is not to the swift; and the little city and the poor wise man.",
+   "prefixes": [
+    "ECC-C03-"
+   ]
   }
  ]
 }

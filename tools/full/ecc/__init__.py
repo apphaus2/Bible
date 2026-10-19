@@ -23,5 +23,7 @@ META = {
      "blurb": "The words of the Preacher: vanity of vanities, all is vanity; the sun ariseth and goeth down, the wind turneth about, all the rivers run into the sea, and there is no new thing under the sun; his great works, his houses and pools and singers, and all a striving after wind; and for everything there is a season — a time to be born, and a time to die."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Two Are Better than One", "range": "Ecclesiastes 4–6", "bible_chapters": [4, 5, 6],
      "blurb": "The tears of the oppressed, and they had no comforter; better is a handful with quietness; one that is alone, and he hath not a second; two are better than one, and a threefold cord is not quickly broken; keep thy foot when thou goest to the house of God — let thy words be few; the sleep of a laboring man is sweet; naked shall he go again as he came; and his days as a shadow."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "A Good Name", "range": "Ecclesiastes 7–9", "bible_chapters": [7, 8, 9],
+     "blurb": "A good name is better than precious oil; the house of mourning and the crackling of thorns under a pot; consider the work of God; one man among a thousand have I found; keep the king's command; a man's wisdom maketh his face to shine; a living dog is better than a dead lion; whatsoever thy hand findeth to do, do it with thy might; the race is not to the swift; and the little city and the poor wise man."},
   ],
 }

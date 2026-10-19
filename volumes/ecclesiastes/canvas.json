@@ -205,6 +205,111 @@
    "w": 760,
    "h": 1080,
    "title": "25 · An Evil Disease"
+  },
+  "ECC-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · A Good Name"
+  },
+  "ECC-C03-A-P01-AGoodName.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · A Good Name"
+  },
+  "ECC-C03-B-P01-AGoodName.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · A Good Name"
+  },
+  "ECC-C03-C-P01-AGoodName.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · A Good Name"
+  },
+  "ECC-C03-D-P01-AGoodName.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · A Good Name"
+  },
+  "ECC-C03-E-P01-FarOffAndExceeding.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Far Off and Exceeding Deep"
+  },
+  "ECC-C03-F-P01-FarOffAndExceeding.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Far Off and Exceeding Deep"
+  },
+  "ECC-C03-G-P01-TheKingSWord.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The King's Word"
+  },
+  "ECC-C03-H-P01-TheKingSWord.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The King's Word"
+  },
+  "ECC-C03-I-P01-TheKingSWord.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The King's Word"
+  },
+  "ECC-C03-J-P01-TheKingSWord.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The King's Word"
+  },
+  "ECC-C03-J-P02-OneEventUntoAll.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · One Event unto All"
+  },
+  "ECC-C03-K-P01-OneEventUntoAll.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · One Event unto All"
+  },
+  "ECC-C03-L-P01-OneEventUntoAll.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · One Event unto All"
+  },
+  "ECC-C03-M-P01-ThePoorWiseMan.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Poor Wise Man"
   }
  },
  "order": [
@@ -235,7 +340,22 @@
   "ECC-C02-G-P01-KeepThyFoot.dc.html",
   "ECC-C02-H-P01-AGrievousEvil.dc.html",
   "ECC-C02-I-P01-AnEvilDisease.dc.html",
-  "ECC-C02-J-P01-AnEvilDisease.dc.html"
+  "ECC-C02-J-P01-AnEvilDisease.dc.html",
+  "ECC-C03-00-Title.dc.html",
+  "ECC-C03-A-P01-AGoodName.dc.html",
+  "ECC-C03-B-P01-AGoodName.dc.html",
+  "ECC-C03-C-P01-AGoodName.dc.html",
+  "ECC-C03-D-P01-AGoodName.dc.html",
+  "ECC-C03-E-P01-FarOffAndExceeding.dc.html",
+  "ECC-C03-F-P01-FarOffAndExceeding.dc.html",
+  "ECC-C03-G-P01-TheKingSWord.dc.html",
+  "ECC-C03-H-P01-TheKingSWord.dc.html",
+  "ECC-C03-I-P01-TheKingSWord.dc.html",
+  "ECC-C03-J-P01-TheKingSWord.dc.html",
+  "ECC-C03-J-P02-OneEventUntoAll.dc.html",
+  "ECC-C03-K-P01-OneEventUntoAll.dc.html",
+  "ECC-C03-L-P01-OneEventUntoAll.dc.html",
+  "ECC-C03-M-P01-ThePoorWiseMan.dc.html"
  ],
  "notes": {
   "Main": {
@@ -258,6 +378,13 @@
    "text": "Chapter 2 · Two Are Better than One (Ecclesiastes 4–6)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · A Good Name (Ecclesiastes 7–9)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],
