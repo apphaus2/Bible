@@ -352,6 +352,188 @@
    "w": 760,
    "h": 1080,
    "title": "46 · Psalm 22"
+  },
+  "PS-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Jehovah Is My Shepherd"
+  },
+  "PS-C03-D-P01-Psalm23.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Psalm 23"
+  },
+  "PS-C03-D-P02-Psalm24.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Psalm 24"
+  },
+  "PS-C03-D-P03-Psalm25.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Psalm 25"
+  },
+  "PS-C03-D-P04-Psalm25.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Psalm 25"
+  },
+  "PS-C03-D-P05-Psalm25.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Psalm 25"
+  },
+  "PS-C03-D-P06-Psalm26.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Psalm 26"
+  },
+  "PS-C03-D-P07-Psalm26.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Psalm 26"
+  },
+  "PS-C03-D-P08-Psalm27.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Psalm 27"
+  },
+  "PS-C03-D-P09-Psalm27.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Psalm 27"
+  },
+  "PS-C03-D-P10-Psalm27.dc.html": {
+   "x": 0,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Psalm 27"
+  },
+  "PS-C03-D-P11-Psalm28.dc.html": {
+   "x": 840,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Psalm 28"
+  },
+  "PS-C03-D-P12-Psalm29.dc.html": {
+   "x": 1680,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Psalm 29"
+  },
+  "PS-C03-D-P13-Psalm29.dc.html": {
+   "x": 2520,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Psalm 29"
+  },
+  "PS-C03-D-P14-Psalm30.dc.html": {
+   "x": 3360,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Psalm 30"
+  },
+  "PS-C03-D-P15-Psalm30.dc.html": {
+   "x": 0,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Psalm 30"
+  },
+  "PS-C03-D-P16-Psalm31.dc.html": {
+   "x": 840,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Psalm 31"
+  },
+  "PS-C03-D-P17-Psalm31.dc.html": {
+   "x": 1680,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Psalm 31"
+  },
+  "PS-C03-D-P18-Psalm31.dc.html": {
+   "x": 2520,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Psalm 31"
+  },
+  "PS-C03-D-P19-Psalm31.dc.html": {
+   "x": 3360,
+   "y": 19800,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Psalm 31"
+  },
+  "PS-C03-D-P20-Psalm32.dc.html": {
+   "x": 0,
+   "y": 21000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Psalm 32"
+  },
+  "PS-C03-D-P21-Psalm32.dc.html": {
+   "x": 840,
+   "y": 21000,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Psalm 32"
+  },
+  "PS-C03-D-P22-Psalm33.dc.html": {
+   "x": 1680,
+   "y": 21000,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Psalm 33"
+  },
+  "PS-C03-D-P23-Psalm33.dc.html": {
+   "x": 2520,
+   "y": 21000,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Psalm 33"
+  },
+  "PS-C03-D-P24-Psalm33.dc.html": {
+   "x": 3360,
+   "y": 21000,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Psalm 33"
+  },
+  "PS-C03-D-P25-Psalm33.dc.html": {
+   "x": 0,
+   "y": 22200,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Psalm 33"
   }
  },
  "order": [
@@ -403,7 +585,33 @@
   "PS-C02-D-P22-Psalm22.dc.html",
   "PS-C02-D-P23-Psalm22.dc.html",
   "PS-C02-D-P24-Psalm22.dc.html",
-  "PS-C02-D-P25-Psalm22.dc.html"
+  "PS-C02-D-P25-Psalm22.dc.html",
+  "PS-C03-00-Title.dc.html",
+  "PS-C03-D-P01-Psalm23.dc.html",
+  "PS-C03-D-P02-Psalm24.dc.html",
+  "PS-C03-D-P03-Psalm25.dc.html",
+  "PS-C03-D-P04-Psalm25.dc.html",
+  "PS-C03-D-P05-Psalm25.dc.html",
+  "PS-C03-D-P06-Psalm26.dc.html",
+  "PS-C03-D-P07-Psalm26.dc.html",
+  "PS-C03-D-P08-Psalm27.dc.html",
+  "PS-C03-D-P09-Psalm27.dc.html",
+  "PS-C03-D-P10-Psalm27.dc.html",
+  "PS-C03-D-P11-Psalm28.dc.html",
+  "PS-C03-D-P12-Psalm29.dc.html",
+  "PS-C03-D-P13-Psalm29.dc.html",
+  "PS-C03-D-P14-Psalm30.dc.html",
+  "PS-C03-D-P15-Psalm30.dc.html",
+  "PS-C03-D-P16-Psalm31.dc.html",
+  "PS-C03-D-P17-Psalm31.dc.html",
+  "PS-C03-D-P18-Psalm31.dc.html",
+  "PS-C03-D-P19-Psalm31.dc.html",
+  "PS-C03-D-P20-Psalm32.dc.html",
+  "PS-C03-D-P21-Psalm32.dc.html",
+  "PS-C03-D-P22-Psalm33.dc.html",
+  "PS-C03-D-P23-Psalm33.dc.html",
+  "PS-C03-D-P24-Psalm33.dc.html",
+  "PS-C03-D-P25-Psalm33.dc.html"
  ],
  "notes": {
   "Main": {
@@ -426,6 +634,13 @@
    "text": "Chapter 2 · The Heavens Declare (Psalms 13–22)",
    "x": 0,
    "y": 8200
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Jehovah Is My Shepherd (Psalms 23–33)",
+   "x": 0,
+   "y": 15900
   }
  },
  "designSystems": [],
