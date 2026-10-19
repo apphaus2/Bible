@@ -1668,6 +1668,118 @@
    "w": 760,
    "h": 1080,
    "title": "221 · Seek Ye Jehovah While He May Be Found"
+  },
+  "ISA-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · The Fast That I Have Chosen"
+  },
+  "ISA-C16-D-P01-KeepYeJustice.dc.html": {
+   "x": 840,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "222 · Keep Ye Justice"
+  },
+  "ISA-C16-D-P02-AHouseOfPrayerForA.dc.html": {
+   "x": 1680,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "223 · A House of Prayer for All Peoples"
+  },
+  "ISA-C16-D-P03-TheRighteousPerish.dc.html": {
+   "x": 2520,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "224 · The Righteous Perisheth"
+  },
+  "ISA-C16-D-P04-TheRighteousPerish.dc.html": {
+   "x": 3360,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "225 · The Righteous Perisheth"
+  },
+  "ISA-C16-D-P05-TheRighteousPerish.dc.html": {
+   "x": 0,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "226 · The Righteous Perisheth"
+  },
+  "ISA-C16-D-P06-TheHighAndHolyPlac.dc.html": {
+   "x": 840,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "227 · The High and Holy Place"
+  },
+  "ISA-C16-D-P07-CryAloudSpareNot.dc.html": {
+   "x": 1680,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "228 · Cry Aloud, Spare Not"
+  },
+  "ISA-C16-D-P08-IsNotThisTheFastTh.dc.html": {
+   "x": 2520,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "229 · Is Not This the Fast That I Have Chosen?"
+  },
+  "ISA-C16-D-P09-IsNotThisTheFastTh.dc.html": {
+   "x": 3360,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "230 · Is Not This the Fast That I Have Chosen?"
+  },
+  "ISA-C16-D-P10-IsNotThisTheFastTh.dc.html": {
+   "x": 0,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "231 · Is Not This the Fast That I Have Chosen?"
+  },
+  "ISA-C16-D-P11-YourIniquitiesHave.dc.html": {
+   "x": 840,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "232 · Your Iniquities Have Separated"
+  },
+  "ISA-C16-D-P12-WeGropeForTheWall.dc.html": {
+   "x": 1680,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "233 · We Grope for the Wall"
+  },
+  "ISA-C16-D-P13-WeGropeForTheWall.dc.html": {
+   "x": 2520,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "234 · We Grope for the Wall"
+  },
+  "ISA-C16-D-P14-RighteousnessAsABr.dc.html": {
+   "x": 3360,
+   "y": 76700,
+   "w": 760,
+   "h": 1080,
+   "title": "235 · Righteousness as a Breastplate"
+  },
+  "ISA-C16-D-P15-ARedeemerWillComeT.dc.html": {
+   "x": 0,
+   "y": 77900,
+   "w": 760,
+   "h": 1080,
+   "title": "236 · A Redeemer Will Come to Zion"
   }
  },
  "order": [
@@ -1907,7 +2019,23 @@
   "ISA-C15-D-P10-TheWatersOfNoah.dc.html",
   "ISA-C15-D-P11-HoEveryOneThatThir.dc.html",
   "ISA-C15-D-P12-SeekYeJehovahWhile.dc.html",
-  "ISA-C15-D-P13-SeekYeJehovahWhile.dc.html"
+  "ISA-C15-D-P13-SeekYeJehovahWhile.dc.html",
+  "ISA-C16-00-Title.dc.html",
+  "ISA-C16-D-P01-KeepYeJustice.dc.html",
+  "ISA-C16-D-P02-AHouseOfPrayerForA.dc.html",
+  "ISA-C16-D-P03-TheRighteousPerish.dc.html",
+  "ISA-C16-D-P04-TheRighteousPerish.dc.html",
+  "ISA-C16-D-P05-TheRighteousPerish.dc.html",
+  "ISA-C16-D-P06-TheHighAndHolyPlac.dc.html",
+  "ISA-C16-D-P07-CryAloudSpareNot.dc.html",
+  "ISA-C16-D-P08-IsNotThisTheFastTh.dc.html",
+  "ISA-C16-D-P09-IsNotThisTheFastTh.dc.html",
+  "ISA-C16-D-P10-IsNotThisTheFastTh.dc.html",
+  "ISA-C16-D-P11-YourIniquitiesHave.dc.html",
+  "ISA-C16-D-P12-WeGropeForTheWall.dc.html",
+  "ISA-C16-D-P13-WeGropeForTheWall.dc.html",
+  "ISA-C16-D-P14-RighteousnessAsABr.dc.html",
+  "ISA-C16-D-P15-ARedeemerWillComeT.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2021,6 +2149,13 @@
    "text": "Chapter 15 · A Man of Sorrows (Isaiah 52–55)",
    "x": 0,
    "y": 69900
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · The Fast That I Have Chosen (Isaiah 56–59)",
+   "x": 0,
+   "y": 74000
   }
  },
  "designSystems": [],
