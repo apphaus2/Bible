@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 251 verses — 251 full, 0 partial, 0 omitted.
+**So far:** 299 verses — 299 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · A Stone Cut Out Without Hands (Daniel 1–2)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · The Ancient of Days (Daniel 7–8)
 
 55 verses: 55 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · Seventy Weeks (Daniel 9–10)
+
+48 verses: 48 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

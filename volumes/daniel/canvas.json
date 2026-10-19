@@ -401,6 +401,76 @@
    "w": 760,
    "h": 1080,
    "title": "51 · Gabriel"
+  },
+  "DAN-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Seventy Weeks"
+  },
+  "DAN-C05-D-P01-WeHaveSinned.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · We Have Sinned"
+  },
+  "DAN-C05-D-P02-WeHaveSinned.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · We Have Sinned"
+  },
+  "DAN-C05-D-P03-WeHaveSinned.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · We Have Sinned"
+  },
+  "DAN-C05-D-P04-TheManGabriel.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Man Gabriel"
+  },
+  "DAN-C05-D-P05-SeventyWeeks.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Seventy Weeks"
+  },
+  "DAN-C05-E-P01-AManClothedInLinen.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · A Man Clothed in Linen"
+  },
+  "DAN-C05-E-P02-AManClothedInLinen.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · A Man Clothed in Linen"
+  },
+  "DAN-C05-E-P03-AManClothedInLinen.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · A Man Clothed in Linen"
+  },
+  "DAN-C05-E-P04-AManClothedInLinen.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · A Man Clothed in Linen"
   }
  },
  "order": [
@@ -459,7 +529,17 @@
   "DAN-C04-E-P02-TheRamAndTheHeGoat.dc.html",
   "DAN-C04-E-P03-HowLongShallBeTheV.dc.html",
   "DAN-C04-E-P04-Gabriel.dc.html",
-  "DAN-C04-E-P05-Gabriel.dc.html"
+  "DAN-C04-E-P05-Gabriel.dc.html",
+  "DAN-C05-00-Title.dc.html",
+  "DAN-C05-D-P01-WeHaveSinned.dc.html",
+  "DAN-C05-D-P02-WeHaveSinned.dc.html",
+  "DAN-C05-D-P03-WeHaveSinned.dc.html",
+  "DAN-C05-D-P04-TheManGabriel.dc.html",
+  "DAN-C05-D-P05-SeventyWeeks.dc.html",
+  "DAN-C05-E-P01-AManClothedInLinen.dc.html",
+  "DAN-C05-E-P02-AManClothedInLinen.dc.html",
+  "DAN-C05-E-P03-AManClothedInLinen.dc.html",
+  "DAN-C05-E-P04-AManClothedInLinen.dc.html"
  ],
  "notes": {
   "Main": {
@@ -496,6 +576,13 @@
    "text": "Chapter 4 · The Ancient of Days (Daniel 7–8)",
    "x": 0,
    "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Seventy Weeks (Daniel 9–10)",
+   "x": 0,
+   "y": 18100
   }
  },
  "designSystems": [],
