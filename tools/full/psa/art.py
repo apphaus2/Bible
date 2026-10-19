@@ -1071,6 +1071,61 @@ def s_tribute(p, w, h, seed):
     """The kings of Tarshish and of the isles shall render tribute; the kings of Sheba and Seba shall offer gifts."""
     return K1.sheba_train(p, w, h, seed)
 
+
+# ---- Book III: the history psalms ------------------------------------------------------------------------------------------
+import egypt as EG, exodus2 as E2
+
+def s_egypt(p, w, h, seed):
+    """Marvellous things did he in the land of Egypt, in the field of Zoan: the pyramids by the Nile under a heavy sky."""
+    o = [sky(w, h, *tod(seed, (("#5A3A2A", "#E8B880"), GOLD))), EG.pyramid(w * 0.66, h * 0.8, w * 0.36, h * 0.32), EG.pyramid(w * 0.86, h * 0.8, w * 0.22, h * 0.2),
+         ground(w, h, h * 0.8, "#D8B070", dy=0), stream(w, h * 0.84, h * 0.92, seed, color="#2C7DA0"), E.reeds(0, w * 0.3, h * 0.96, h * 0.12, 18, seed)]
+    return "".join(o)
+
+def s_plagues(p, w, h, seed, k=None):
+    """He turned their rivers into blood; frogs, flies, the locust, the hail and the lightning (seed picks the plague)."""
+    k = seed % 4 if k is None else k
+    if k == 0:
+        o = [sky(w, h, "#3A1A1A", "#A8584A"), ground(w, h, h * 0.7, "#8A6A4A", dy=0), stream(w, h * 0.76, h * 0.9, seed, color="#8A0E16"), E2.frogs(14, w * 0.05, w * 0.95, h * 0.9, h * 0.98, seed)]
+    elif k == 1:
+        o = [sky(w, h, "#5A5A3A", "#C8B87A"), ground(w, h, h * 0.76, "#8A7A4A", dy=0), E2.locusts(60, 0, w, h * 0.5, h * 0.95, seed), E2.swarm(80, w * 0.7, h * 0.7, w * 0.25, h * 0.15, seed)]
+    elif k == 2:
+        o = [sky(w, h, "#14142A", "#4A4A6A"), ground(w, h, h * 0.84, "#3A3A2A", dy=0), E2.hail(90, 0, w, h * 0.45, h * 0.98, seed), E2.bolt(w * 0.3, h * 0.45, h * 0.4, seed), E2.bolt(w * 0.72, h * 0.5, h * 0.36, seed + 1)]
+    else:
+        o = [sky(w, h, "#05050F", "#1A1A2A"), EG.pyramid(w * 0.6, h * 0.86, w * 0.4, h * 0.3, lit="#3A3A4A", dark="#1A1A2A", line="#0D0D0F"), ground(w, h, h * 0.86, "#14141A", dy=0)]
+    return "".join(o)
+
+def s_manna(p, w, h, seed):
+    """He rained down manna upon them to eat, and gave them food from heaven: the white grains lying round the tents at dawn."""
+    o = [sky(w, h, *DAWN), ground(w, h, h * 0.72, "#C8A87A", dy=0), __import__("numbers1").camp(10, w * 0.05, w * 0.95, h * 0.74, h * 0.86, seed),
+         E4.manna(160, 0, w, h * 0.84, h * 0.99, seed), E4.manna(60, 0, w, h * 0.3, h * 0.7, seed + 1)]
+    return "".join(o)
+
+def s_quails(p, w, h, seed):
+    """He rained flesh also upon them as the dust, and winged birds as the sand of the seas: quails falling round the camp."""
+    o = [sky(w, h, "#C8A07A", "#F3D8A0"), ground(w, h, h * 0.74, "#B89A6A", dy=0), __import__("numbers1").camp(10, w * 0.05, w * 0.95, h * 0.76, h * 0.9, seed),
+         E4.quails(26, 0, w, h * 0.45, h * 0.8, seed)]
+    return "".join(o)
+
+def s_rockwater(p, w, h, seed):
+    """He clave rocks in the wilderness, and gave them drink abundantly as out of the depths: water gushing from the rock."""
+    o = [sky(w, h, "#C8A07A", "#F3D8A0"), ground(w, h, h * 0.8, "#B89A6A", dy=0), E4.rock(w * 0.5, h * 0.84, w * 0.3, h * 0.3), E4.gush(w * 0.5, h * 0.7, seed, scale=min(1.4, h / 260)),
+         stream(w, h * 0.88, h * 0.96, seed)]
+    return "".join(o)
+
+def s_idols(p, w, h, seed):
+    """They moved him to jealousy with their graven images: idols of silver and gold on their pedestals."""
+    return K2.strange_gods(w, h, seed)
+
+def s_ark(p, w, h, seed):
+    """The ark of his strength: the ark of the covenant borne on its staves, its cherubim of gold."""
+    o = [mk.defs(p, *ALL), sky(w, h, *GOLD), V.rays(w * 0.5, h * 0.7, 30, 20, max(w, h), color="#FFF4C2", op=0.25), ground(w, h, h * 0.8, "#C8A06A", dy=0),
+         J.ark_borne(p, w * 0.5, h * 0.94, min(0.75, h / 440), f"ab{p}")]
+    return "".join(o)
+
+def s_silent(p, w, h, seed):
+    """Both chariot and horse are cast into a dead sleep: the camp at morning, silent, no one moving."""
+    return K2.silent_camp(p, w, h, seed)
+
 NOMIRROR = {"nations", "lands"}
 
 SCENES = {
@@ -1094,5 +1149,8 @@ SCENES = {
     "tempest": ("#1A1A3A", s_tempest), "riches": ("#1A140E", s_riches), "tomb": ("#3A2A5A", s_tomb),
     "cave": ("#1A1412", s_cave), "dove": ("#3A2A5A", s_dove), "serpent": ("#3A2A2A", s_serpent), "lands": ("#0B1A2E", s_lands), "hyssop": ("#5A6A8A", s_hyssop),
     "wall": ("#8FD0E2", s_wall), "desert": ("#E8B880", s_desert), "redsea": ("#2A3A6A", s_redsea), "sinai": ("#2A1A2A", s_sinai), "family": ("#FFB04A", s_family),
-    "tribute": ("#FFB04A", s_tribute),
+    "tribute": ("#FFB04A", s_tribute), "egypt": ("#5A3A2A", s_egypt), "plagues": ("#3A1A1A", s_plagues), "manna": ("#5A5A8A", s_manna), "quails": ("#C8A07A", s_quails),
+    "rockwater": ("#C8A07A", s_rockwater), "idols": ("#2A1A2A", s_idols), "ark": ("#FFB04A", s_ark), "silent": ("#8A8AA8", s_silent),
+    "blood": ("#3A1A1A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 0)), "locusts": ("#5A5A3A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 1)),
+    "hail": ("#14142A", lambda p, w, h, seed: s_plagues(p, w, h, seed, 2)), "darkness": ("#05050F", lambda p, w, h, seed: s_plagues(p, w, h, seed, 3)),
 }

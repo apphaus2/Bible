@@ -40,5 +40,7 @@ META = {
      "blurb": "My soul thirsteth for thee in a dry and weary land; thy lovingkindness is better than life; thou visitest the earth, and waterest it — the pastures are clothed with flocks; he turned the sea into dry land; God be merciful unto us, and bless us; and let God arise, let his enemies be scattered — the chariots of God, the singers before, the damsels playing with timbrels."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "He Shall Have Dominion", "range": "Psalms 69–72", "bible_chapters": list(range(69, 73)),
      "blurb": "The close of Book II: save me, O God, for the waters are come in unto my soul; make haste to help me; now also when I am old and grayheaded, forsake me not; and Solomon's psalm — he shall come down like rain upon the mown grass, he shall have dominion from sea to sea, the kings of Sheba and Seba shall offer gifts. The prayers of David the son of Jesse are ended."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Whom Have I in Heaven", "range": "Psalms 73–78", "bible_chapters": list(range(73, 79)),
+     "blurb": "Book III opens with Asaph: until I went into the sanctuary of God — whom have I in heaven but thee?; they have set thy sanctuary on fire; in the hand of Jehovah there is a cup; in Salem is his tabernacle; the waters saw thee, O God; and the dark sayings of old — the sea divided, the rock cleft in the wilderness, bread from heaven, the wonders in the field of Zoan, and David taken from the sheepfolds."},
   ],
 }
