@@ -29,5 +29,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Visions of God", "range": "Ezekiel 1–3", "bible_chapters": [1, 2, 3],
      "blurb": "Among the captives by the river Chebar the heavens were opened: a stormy wind out of the north, the four living creatures, the wheels with their rims full of eyes, the firmament like the terrible crystal, and above it a throne of sapphire, fire and brightness — the appearance of the likeness of the glory of Jehovah; the roll of a book eaten, in the mouth as honey; and I have made thee a watchman unto the house of Israel."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Siege on a Tile", "range": "Ezekiel 4–7", "bible_chapters": [4, 5, 6, 7],
+     "blurb": "Take thee a tile, and portray upon it a city, even Jerusalem: the forts and the mound and the iron pan; the prophet lying on his left side and on his right, each day for a year; the bread of the siege by weight; the hair shaven with a sword and divided in three; set thy face toward the mountains of Israel; and an end, the end is come upon the four corners of the land."},
   ],
 }

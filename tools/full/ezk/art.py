@@ -47,7 +47,10 @@ def vgrad(uid, stops):
             + '</linearGradient></defs>')
 
 def bg(uid, w, h, stops):
-    return vgrad(uid, stops) + f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#{uid})"></rect>'
+    """A sky from top to bottom of the drawing; the top colour carries on above it (the drawing may be set under words)."""
+    return (f'<defs><linearGradient id="{uid}" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="{f(h)}">'
+            + "".join(f'<stop offset="{o}" stop-color="{c}"></stop>' for o, c in stops) + '</linearGradient></defs>'
+            + f'<rect x="-10" y="-1500" width="{f(w + 20)}" height="{f(h + 1510)}" fill="url(#{uid})"></rect>')
 
 # ---- the vision ---------------------------------------------------------------------------------------------------------
 def wing(x0, y0, x1, y1, bulge=0.3, n=6, fill="#F0D8A0", op=1.0, sw=2.2):

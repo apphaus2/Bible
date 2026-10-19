@@ -6,7 +6,7 @@ Ezekiel: a priest among the captives, grey-black beard, white headcloth with a b
 import sys, pathlib, re
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 from faces_ex import F, CORD
-from discourse import seg, pack as _pack
+from ezk.edisc import seg, pack as _pack
 from jos.art import below
 from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
@@ -32,14 +32,18 @@ def joined(kind, *parts):
 
 # ---- the automatic splitter --------------------------------------------------------------------------------------------
 LEAD = [re.compile(r"^(.*?word of Jehovah came (?:again )?unto me[^,]*?, saying,)\s*"),
-        re.compile(r"^((?:And |Then |Moreover |Furthermore |Again |So |But )?(?:he|Jehovah) (?:said|spake) (?:also )?(?:unto|to|with) me,(?: and said unto me,)?)\s*"),
+        re.compile(r"^((?:And |Then |Moreover |Furthermore |Again |So |But )?(?:he|Jehovah) (?:said|spake)(?: (?:also )?(?:unto|to|with) me)?,(?: and said unto me,)?)\s*"),
         re.compile(r"^((?:And|Then|Moreover|So|Again) said he (?:also )?unto me,)\s*"),
         re.compile(r"^(He said (?:also )?unto me,)\s*")]
+SAID_I = re.compile(r"^((?:Then|And) said I,)\s*")
 
 def pieces(ref, kind="god"):
     """A verse as [(kind, text)]: a narration lead ("the word of Jehovah came unto me, saying,") in a caption, the rest in
     `kind`. The cuts are taken with G.v, so coverage counts them."""
     t = G.verses[tuple(map(int, ref.split(":")))]
+    m = SAID_I.match(t)
+    if m:                                       # "Then said I, Ah Lord Jehovah! ..." — Ezekiel's own words
+        return [("cap", v(ref, to=m.group(1))), ("say", v(ref, frm=t[m.end():]))]
     for rx in LEAD:
         m = rx.match(t)
         if m:
@@ -80,53 +84,66 @@ def pack(segs, prefix, start, **k):
     return _pack(segs, prefix, start, book="Ezekiel", code=CODE, **k)
 
 def face(lines, ref, tok, bg=GOLDEN, **k): return seg(lines, ref, tok=tok, bg=bg, **k)
-def drawn(lines, ref, art, bg, k=0.36, **kw):
-    """Words over a drawing: the drawing set under the words (below(art, k)); k=0 lets it fill the panel."""
-    return seg(lines, ref, bg=bg, art=(below(art, k) if k else art), **kw)
+def drawn(lines, ref, art, bg, k=None, full=False, **kw):
+    """Words over a drawing: the drawing set in the space under the words (edisc.under), so the words never cover it;
+    full=True lets it fill the whole panel behind the words (skies). k is accepted and ignored (older calls)."""
+    kw.setdefault("hi", 19)
+    return seg(lines, ref, bg=bg, art=art, under=not full, **kw)
 
 def fz(refs, tok=None, bg=None, kind="god", ov=None, **k):
     """A run of verses beside a face (Ezekiel by default), split automatically."""
     return seg(wl(refs, kind, ov), label(refs), tok=tok or EZEKIEL, bg=bg or GOLDEN, **k)
-def dz(refs, art, bg, kind="god", ov=None, k=0.36, **kw):
+def dz(refs, art, bg, kind="god", ov=None, k=None, **kw):
     """A run of verses over a drawing, split automatically."""
-    return drawn(wl(refs, kind, ov), label(refs), art, bg, k=k, **kw)
+    return drawn(wl(refs, kind, ov), label(refs), art, bg, **kw)
 
-def groups(c, a, b, budget=480):
+def groups(c, a, b, budget=480, starts=()):
     """Verses c:a–b grouped into panels of about `budget` characters; a verse with "the word of Jehovah came unto me"
-    starts a new panel."""
+    starts a new panel, and so does a verse in `starts` (a verse a drawing belongs to) once the panel holds a third of the
+    budget."""
     out, cur, n = [], [], 0
     for x in range(a, b + 1):
         t = G.verses[(c, x)]
         lead = "word of Jehovah came" in t
-        if cur and (n + len(t) > budget or lead):
+        if cur and (n + len(t) > budget or lead or (x in starts and n > budget * 0.34)):
             out.append(cur); cur, n = [], 0
         cur.append(x); n += len(t)
     if cur: out.append(cur)
-    if len(out) > 1 and sum(len(G.verses[(c, x)]) for x in out[-1]) < budget * 0.3 and "word of Jehovah came" not in G.verses[(c, out[-1][0])]:
+    if len(out) > 1 and sum(len(G.verses[(c, x)]) for x in out[-1]) < budget * 0.3 and "word of Jehovah came" not in G.verses[(c, out[-1][0])] \
+            and not any(x in starts for x in out[-1]):
         last = out.pop(); out[-1] += last
     return [(g[0], g[-1]) for g in out]
 
-def run(c, a, b, arts=(), faces=None, head=None, stamp=None, budget=480, pat="AF", kind="god", ov=None, heads=None, k=0.36):
-    """Verses c:a–b as panels: groups() of about `budget` characters, each a drawing (the next of arts: (bg, f(w, h)))
-    or a face (the next of faces: (tok, bg)) by the pattern pat ("AF" = drawing, face, drawing, ...). The chapter stamp
-    goes on the first panel when a == 1. heads maps a verse number to a page head starting there."""
+def run(c, a, b, arts=(), faces=None, head=None, stamp=None, budget=480, pat="AF", kind="god", ov=None, heads=None, k=None, generic=()):
+    """Verses c:a–b as panels: groups() of about `budget` characters, each over a drawing or beside a face (the next of
+    faces: (tok, bg)). arts as a dict {verse: (bg, f(w, h))}: a panel holding that verse is drawn with it (each drawing
+    once); a panel with none is a face, or the next of `generic` drawings when the panel before was a face too. arts as a
+    list: drawings and faces alternate by the pattern pat ("AF"). The chapter stamp goes on the first panel when a == 1.
+    heads maps a verse number to a page head starting there."""
     faces = faces or [(EZEKIEL, GOLDEN)]
     heads = dict(heads or {})
     if head: heads.setdefault(a, head)
-    segs, ai, fi = [], 0, 0
-    for i, (x, y) in enumerate(groups(c, a, b, budget)):
+    keyed = isinstance(arts, dict)
+    starts = set(arts) | set(heads) if keyed else set(heads)
+    segs, ai, fi, gi, used, last_face = [], 0, 0, 0, set(), False
+    for i, (x, y) in enumerate(groups(c, a, b, budget, starts)):
         refs = f"{c}:{x}" + (f"-{y}" if y != x else "")
         kw = {}
         hd = next((heads[n] for n in range(x, y + 1) if n in heads), None)
         if hd: kw["head"] = hd
         if i == 0 and (stamp or (stamp is None and a == 1)): kw["stamp"] = stamp or c
-        use_art = arts and (pat[i % len(pat)] == "A" or not faces)
-        if use_art:
-            bg, fn = arts[ai % len(arts)]; ai += 1
-            segs.append(dz(refs, fn, bg, kind=kind, ov=ov, k=k, **kw))
+        art = None
+        if keyed:
+            key = next((n for n in range(x, y + 1) if n in arts and n not in used), None)
+            if key is not None: art = arts[key]; used.add(key)
+            elif last_face and generic: art = generic[gi % len(generic)]; gi += 1
+        elif arts and (pat[i % len(pat)] == "A" or not faces):
+            art = arts[ai % len(arts)]; ai += 1
+        if art:
+            segs.append(dz(refs, art[1], art[0], kind=kind, ov=ov, **kw)); last_face = False
         else:
             tok, bg = faces[fi % len(faces)]; fi += 1
-            segs.append(fz(refs, tok, bg, kind=kind, ov=ov, **kw))
+            segs.append(fz(refs, tok, bg, kind=kind, ov=ov, **kw)); last_face = True
     return segs
 
 # ---- roll cells ---------------------------------------------------------------------------------------------------------

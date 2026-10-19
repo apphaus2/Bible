@@ -16,6 +16,16 @@
     "Main.dc.html",
     "EZK-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Siege on a Tile",
+   "range": "Ezekiel 4–7",
+   "blurb": "Take thee a tile, and portray upon it a city, even Jerusalem: the forts and the mound and the iron pan; the prophet lying on his left side and on his right, each day for a year; the bread of the siege by weight; the hair shaven with a sword and divided in three; set thy face toward the mountains of Israel; and an end, the end is come upon the four corners of the land.",
+   "prefixes": [
+    "EZK-C02-"
+   ]
   }
  ]
 }
