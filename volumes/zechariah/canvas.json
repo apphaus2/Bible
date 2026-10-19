@@ -100,6 +100,97 @@
    "w": 760,
    "h": 1080,
    "title": "11 · Not by Might, nor by Power"
+  },
+  "ZEC-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Four Chariots"
+  },
+  "ZEC-C02-D-P01-AFlyingRoll.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Flying Roll"
+  },
+  "ZEC-C02-D-P02-TheEphah.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Ephah"
+  },
+  "ZEC-C02-D-P03-TheEphah.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Ephah"
+  },
+  "ZEC-C02-E-P01-FourChariots.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Four Chariots"
+  },
+  "ZEC-C02-E-P02-FourChariots.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Four Chariots"
+  },
+  "ZEC-C02-E-P03-TheManWhoseNameIsT.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Man Whose Name Is the Branch"
+  },
+  "ZEC-C02-F-P01-ShouldIWeepInTheFi.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Should I Weep in the Fifth Month?"
+  },
+  "ZEC-C02-F-P02-ExecuteTrueJudgmen.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Execute True Judgment"
+  },
+  "ZEC-C02-G-P01-TheCityOfTruth.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · The City of Truth"
+  },
+  "ZEC-C02-G-P02-LetYourHandsBeStro.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Let Your Hands Be Strong"
+  },
+  "ZEC-C02-G-P03-LetYourHandsBeStro.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Let Your Hands Be Strong"
+  },
+  "ZEC-C02-G-P04-JoyAndGladness.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Joy and Gladness"
   }
  },
  "order": [
@@ -115,7 +206,20 @@
   "ZEC-C01-F-P02-JoshuaTheHighPries.dc.html",
   "ZEC-C01-G-P01-ACandlestickAllOfG.dc.html",
   "ZEC-C01-G-P02-NotByMightNorByPow.dc.html",
-  "ZEC-C01-G-P03-NotByMightNorByPow.dc.html"
+  "ZEC-C01-G-P03-NotByMightNorByPow.dc.html",
+  "ZEC-C02-00-Title.dc.html",
+  "ZEC-C02-D-P01-AFlyingRoll.dc.html",
+  "ZEC-C02-D-P02-TheEphah.dc.html",
+  "ZEC-C02-D-P03-TheEphah.dc.html",
+  "ZEC-C02-E-P01-FourChariots.dc.html",
+  "ZEC-C02-E-P02-FourChariots.dc.html",
+  "ZEC-C02-E-P03-TheManWhoseNameIsT.dc.html",
+  "ZEC-C02-F-P01-ShouldIWeepInTheFi.dc.html",
+  "ZEC-C02-F-P02-ExecuteTrueJudgmen.dc.html",
+  "ZEC-C02-G-P01-TheCityOfTruth.dc.html",
+  "ZEC-C02-G-P02-LetYourHandsBeStro.dc.html",
+  "ZEC-C02-G-P03-LetYourHandsBeStro.dc.html",
+  "ZEC-C02-G-P04-JoyAndGladness.dc.html"
  ],
  "notes": {
   "Main": {
@@ -131,6 +235,13 @@
    "text": "Chapter 1 · The Night Visions (Zechariah 1–4)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Four Chariots (Zechariah 5–8)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],
