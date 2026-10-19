@@ -1,0 +1,329 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T03:09:02Z"
+ },
+ "title": "Amos — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "AMO-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · For Three Transgressions"
+  },
+  "AMO-C01-D-P01-TheHerdsmenOfTekoa.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Herdsmen of Tekoa"
+  },
+  "AMO-C01-D-P02-ForThreeTransgress.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · For Three Transgressions"
+  },
+  "AMO-C01-D-P03-ForThreeTransgress.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · For Three Transgressions"
+  },
+  "AMO-C01-D-P04-ForThreeTransgress.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · For Three Transgressions"
+  },
+  "AMO-C01-D-P05-ForThreeTransgress.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · For Three Transgressions"
+  },
+  "AMO-C01-D-P06-ForThreeTransgress.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · For Three Transgressions of Israel"
+  },
+  "AMO-C01-D-P07-ForThreeTransgress.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · For Three Transgressions of Israel"
+  },
+  "AMO-C01-D-P08-ForThreeTransgress.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · For Three Transgressions of Israel"
+  },
+  "AMO-C01-E-P01-ShallTwoWalkTogeth.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Shall Two Walk Together?"
+  },
+  "AMO-C01-E-P02-ShallTwoWalkTogeth.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Shall Two Walk Together?"
+  },
+  "AMO-C01-E-P03-YeKineOfBashan.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Ye Kine of Bashan"
+  },
+  "AMO-C01-E-P04-YetHaveYeNotReturn.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Yet Have Ye Not Returned"
+  },
+  "AMO-C01-E-P05-YetHaveYeNotReturn.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Yet Have Ye Not Returned"
+  },
+  "AMO-C01-E-P06-PrepareToMeetThyGo.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Prepare to Meet Thy God"
+  },
+  "AMO-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Plumb-line"
+  },
+  "AMO-C02-D-P01-SeekYeMeAndYeShall.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Seek Ye Me, and Ye Shall Live"
+  },
+  "AMO-C02-D-P02-SeekYeMeAndYeShall.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Seek Ye Me, and Ye Shall Live"
+  },
+  "AMO-C02-D-P03-SeekYeMeAndYeShall.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Seek Ye Me, and Ye Shall Live"
+  },
+  "AMO-C02-D-P04-LetJusticeRollDown.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Let Justice Roll Down"
+  },
+  "AMO-C02-D-P05-LetJusticeRollDown.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Let Justice Roll Down"
+  },
+  "AMO-C02-E-P01-WoeToThemThatAreAt.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Woe to Them That Are at Ease in Zion"
+  },
+  "AMO-C02-E-P02-WoeToThemThatAreAt.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Woe to Them That Are at Ease in Zion"
+  },
+  "AMO-C02-F-P01-ThusTheLordJehovah.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Thus the Lord Jehovah Showed Me"
+  },
+  "AMO-C02-F-P02-ThusTheLordJehovah.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Thus the Lord Jehovah Showed Me"
+  },
+  "AMO-C02-F-P03-APlumbLine.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · A Plumb-line"
+  },
+  "AMO-C02-F-P04-AmaziahThePriestOf.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Amaziah the Priest of Beth-el"
+  },
+  "AMO-C02-F-P05-AmaziahThePriestOf.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Amaziah the Priest of Beth-el"
+  },
+  "AMO-C02-G-P01-ABasketOfSummerFru.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · A Basket of Summer Fruit"
+  },
+  "AMO-C02-G-P02-TheSunToGoDownAtNo.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · The Sun to Go Down at Noon"
+  },
+  "AMO-C02-G-P03-AFamineOfHearing.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · A Famine of Hearing"
+  },
+  "AMO-C02-H-P01-BesideTheAltar.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Beside the Altar"
+  },
+  "AMO-C02-H-P02-BesideTheAltar.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Beside the Altar"
+  },
+  "AMO-C02-H-P03-TheTabernacleOfDav.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Tabernacle of David"
+  },
+  "AMO-C02-H-P04-TheTabernacleOfDav.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Tabernacle of David"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "AMO-C01-00-Title.dc.html",
+  "AMO-C01-D-P01-TheHerdsmenOfTekoa.dc.html",
+  "AMO-C01-D-P02-ForThreeTransgress.dc.html",
+  "AMO-C01-D-P03-ForThreeTransgress.dc.html",
+  "AMO-C01-D-P04-ForThreeTransgress.dc.html",
+  "AMO-C01-D-P05-ForThreeTransgress.dc.html",
+  "AMO-C01-D-P06-ForThreeTransgress.dc.html",
+  "AMO-C01-D-P07-ForThreeTransgress.dc.html",
+  "AMO-C01-D-P08-ForThreeTransgress.dc.html",
+  "AMO-C01-E-P01-ShallTwoWalkTogeth.dc.html",
+  "AMO-C01-E-P02-ShallTwoWalkTogeth.dc.html",
+  "AMO-C01-E-P03-YeKineOfBashan.dc.html",
+  "AMO-C01-E-P04-YetHaveYeNotReturn.dc.html",
+  "AMO-C01-E-P05-YetHaveYeNotReturn.dc.html",
+  "AMO-C01-E-P06-PrepareToMeetThyGo.dc.html",
+  "AMO-C02-00-Title.dc.html",
+  "AMO-C02-D-P01-SeekYeMeAndYeShall.dc.html",
+  "AMO-C02-D-P02-SeekYeMeAndYeShall.dc.html",
+  "AMO-C02-D-P03-SeekYeMeAndYeShall.dc.html",
+  "AMO-C02-D-P04-LetJusticeRollDown.dc.html",
+  "AMO-C02-D-P05-LetJusticeRollDown.dc.html",
+  "AMO-C02-E-P01-WoeToThemThatAreAt.dc.html",
+  "AMO-C02-E-P02-WoeToThemThatAreAt.dc.html",
+  "AMO-C02-F-P01-ThusTheLordJehovah.dc.html",
+  "AMO-C02-F-P02-ThusTheLordJehovah.dc.html",
+  "AMO-C02-F-P03-APlumbLine.dc.html",
+  "AMO-C02-F-P04-AmaziahThePriestOf.dc.html",
+  "AMO-C02-F-P05-AmaziahThePriestOf.dc.html",
+  "AMO-C02-G-P01-ABasketOfSummerFru.dc.html",
+  "AMO-C02-G-P02-TheSunToGoDownAtNo.dc.html",
+  "AMO-C02-G-P03-AFamineOfHearing.dc.html",
+  "AMO-C02-H-P01-BesideTheAltar.dc.html",
+  "AMO-C02-H-P02-BesideTheAltar.dc.html",
+  "AMO-C02-H-P03-TheTabernacleOfDav.dc.html",
+  "AMO-C02-H-P04-TheTabernacleOfDav.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Amos Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · For Three Transgressions (Amos 1–4)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Plumb-line (Amos 5–9)",
+   "x": 0,
+   "y": 5800
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

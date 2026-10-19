@@ -1,0 +1,693 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T02:22:28Z"
+ },
+ "title": "Daniel — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "DAN-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · A Stone Cut Out Without Hands"
+  },
+  "DAN-C01-D-P01-NebuchadnezzarCame.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Nebuchadnezzar Came unto Jerusalem"
+  },
+  "DAN-C01-D-P02-TheKingSDainties.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The King's Dainties"
+  },
+  "DAN-C01-D-P03-ProveThyServantsTe.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Prove Thy Servants Ten Days"
+  },
+  "DAN-C01-D-P04-TenTimesBetter.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Ten Times Better"
+  },
+  "DAN-C01-E-P01-NebuchadnezzarDrea.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Nebuchadnezzar Dreamed Dreams"
+  },
+  "DAN-C01-E-P02-NebuchadnezzarDrea.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Nebuchadnezzar Dreamed Dreams"
+  },
+  "DAN-C01-E-P03-TheDecreeWentForth.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Decree Went Forth"
+  },
+  "DAN-C01-E-P04-AVisionOfTheNight.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · A Vision of the Night"
+  },
+  "DAN-C01-E-P05-ThereIsAGodInHeave.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · There Is a God in Heaven"
+  },
+  "DAN-C01-E-P06-AGreatImage.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · A Great Image"
+  },
+  "DAN-C01-E-P07-AGreatImage.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Great Image"
+  },
+  "DAN-C01-E-P08-ThouArtTheHeadOfGo.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Thou Art the Head of Gold"
+  },
+  "DAN-C01-E-P09-AKingdomWhichShall.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · A Kingdom Which Shall Never Be Destroyed"
+  },
+  "DAN-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Burning Fiery Furnace"
+  },
+  "DAN-C02-D-P01-TheImageOfGold.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Image of Gold"
+  },
+  "DAN-C02-D-P02-CertainChaldeansCa.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Certain Chaldeans Came Near"
+  },
+  "DAN-C02-D-P03-ButIfNot.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · But If Not"
+  },
+  "DAN-C02-D-P04-SevenTimesMore.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Seven Times More"
+  },
+  "DAN-C02-D-P05-FourMenLoose.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Four Men Loose"
+  },
+  "DAN-C02-D-P06-FourMenLoose.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Four Men Loose"
+  },
+  "DAN-C02-E-P01-UntoAllThePeoples.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Unto All the Peoples"
+  },
+  "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · A Tree in the Midst of the Earth"
+  },
+  "DAN-C02-E-P03-ATreeInTheMidstOfT.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · A Tree in the Midst of the Earth"
+  },
+  "DAN-C02-E-P04-ItIsThouOKing.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · It Is Thou, O King"
+  },
+  "DAN-C02-E-P05-ItIsThouOKing.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · It Is Thou, O King"
+  },
+  "DAN-C02-E-P06-IsNotThisGreatBaby.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Is Not This Great Babylon?"
+  },
+  "DAN-C02-E-P07-MineUnderstandingR.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Mine Understanding Returned"
+  },
+  "DAN-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Den of Lions"
+  },
+  "DAN-C03-D-P01-BelshazzarMadeAGre.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Belshazzar Made a Great Feast"
+  },
+  "DAN-C03-D-P02-TheWritingUponTheP.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · The Writing upon the Plaster"
+  },
+  "DAN-C03-D-P03-ArtThouThatDaniel.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Art Thou That Daniel?"
+  },
+  "DAN-C03-D-P04-ArtThouThatDaniel.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Art Thou That Daniel?"
+  },
+  "DAN-C03-D-P05-MeneMeneTekelUphar.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Mene, Mene, Tekel, Upharsin"
+  },
+  "DAN-C03-D-P06-InThatNight.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · In That Night"
+  },
+  "DAN-C03-E-P01-ThreePresidents.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Three Presidents"
+  },
+  "DAN-C03-E-P02-ThreePresidents.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Three Presidents"
+  },
+  "DAN-C03-E-P03-HisWindowsWereOpen.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · His Windows Were Open"
+  },
+  "DAN-C03-E-P04-TheDenOfLions.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Den of Lions"
+  },
+  "DAN-C03-E-P05-VeryEarlyInTheMorn.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Very Early in the Morning"
+  },
+  "DAN-C03-E-P06-VeryEarlyInTheMorn.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Very Early in the Morning"
+  },
+  "DAN-C03-E-P07-TheLivingGod.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Living God"
+  },
+  "DAN-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Ancient of Days"
+  },
+  "DAN-C04-D-P01-FourGreatBeasts.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Four Great Beasts"
+  },
+  "DAN-C04-D-P02-FourGreatBeasts.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Four Great Beasts"
+  },
+  "DAN-C04-D-P03-OneThatWasAncientO.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · One That Was Ancient of Days"
+  },
+  "DAN-C04-D-P04-OneLikeUntoASonOfM.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · One Like unto a Son of Man"
+  },
+  "DAN-C04-D-P05-OneLikeUntoASonOfM.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · One Like unto a Son of Man"
+  },
+  "DAN-C04-D-P06-OneLikeUntoASonOfM.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · One Like unto a Son of Man"
+  },
+  "DAN-C04-D-P07-OneLikeUntoASonOfM.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · One Like unto a Son of Man"
+  },
+  "DAN-C04-E-P01-TheRamAndTheHeGoat.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Ram and the He-goat"
+  },
+  "DAN-C04-E-P02-TheRamAndTheHeGoat.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Ram and the He-goat"
+  },
+  "DAN-C04-E-P03-HowLongShallBeTheV.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · How Long Shall Be the Vision?"
+  },
+  "DAN-C04-E-P04-Gabriel.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Gabriel"
+  },
+  "DAN-C04-E-P05-Gabriel.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Gabriel"
+  },
+  "DAN-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Seventy Weeks"
+  },
+  "DAN-C05-D-P01-WeHaveSinned.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · We Have Sinned"
+  },
+  "DAN-C05-D-P02-WeHaveSinned.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · We Have Sinned"
+  },
+  "DAN-C05-D-P03-WeHaveSinned.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · We Have Sinned"
+  },
+  "DAN-C05-D-P04-TheManGabriel.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Man Gabriel"
+  },
+  "DAN-C05-D-P05-SeventyWeeks.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Seventy Weeks"
+  },
+  "DAN-C05-E-P01-AManClothedInLinen.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · A Man Clothed in Linen"
+  },
+  "DAN-C05-E-P02-AManClothedInLinen.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · A Man Clothed in Linen"
+  },
+  "DAN-C05-E-P03-AManClothedInLinen.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · A Man Clothed in Linen"
+  },
+  "DAN-C05-E-P04-AManClothedInLinen.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · A Man Clothed in Linen"
+  },
+  "DAN-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Time of the End"
+  },
+  "DAN-C06-D-P01-ThreeKingsInPersia.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Three Kings in Persia"
+  },
+  "DAN-C06-D-P02-TheKingOfTheSouth.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The King of the South"
+  },
+  "DAN-C06-D-P03-TheKingOfTheNorth.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The King of the North"
+  },
+  "DAN-C06-D-P04-AContemptiblePerso.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Contemptible Person"
+  },
+  "DAN-C06-D-P05-AContemptiblePerso.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · A Contemptible Person"
+  },
+  "DAN-C06-D-P06-TheyThatAreWise.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · They That Are Wise"
+  },
+  "DAN-C06-D-P07-TheTimeOfTheEnd.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Time of the End"
+  },
+  "DAN-C06-D-P08-TheTimeOfTheEnd.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Time of the End"
+  },
+  "DAN-C06-E-P01-MichaelShallStandU.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Michael Shall Stand Up"
+  },
+  "DAN-C06-E-P02-HowLongShallItBe.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · How Long Shall It Be?"
+  },
+  "DAN-C06-E-P03-GoThouThyWay.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Go Thou Thy Way"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "DAN-C01-00-Title.dc.html",
+  "DAN-C01-D-P01-NebuchadnezzarCame.dc.html",
+  "DAN-C01-D-P02-TheKingSDainties.dc.html",
+  "DAN-C01-D-P03-ProveThyServantsTe.dc.html",
+  "DAN-C01-D-P04-TenTimesBetter.dc.html",
+  "DAN-C01-E-P01-NebuchadnezzarDrea.dc.html",
+  "DAN-C01-E-P02-NebuchadnezzarDrea.dc.html",
+  "DAN-C01-E-P03-TheDecreeWentForth.dc.html",
+  "DAN-C01-E-P04-AVisionOfTheNight.dc.html",
+  "DAN-C01-E-P05-ThereIsAGodInHeave.dc.html",
+  "DAN-C01-E-P06-AGreatImage.dc.html",
+  "DAN-C01-E-P07-AGreatImage.dc.html",
+  "DAN-C01-E-P08-ThouArtTheHeadOfGo.dc.html",
+  "DAN-C01-E-P09-AKingdomWhichShall.dc.html",
+  "DAN-C02-00-Title.dc.html",
+  "DAN-C02-D-P01-TheImageOfGold.dc.html",
+  "DAN-C02-D-P02-CertainChaldeansCa.dc.html",
+  "DAN-C02-D-P03-ButIfNot.dc.html",
+  "DAN-C02-D-P04-SevenTimesMore.dc.html",
+  "DAN-C02-D-P05-FourMenLoose.dc.html",
+  "DAN-C02-D-P06-FourMenLoose.dc.html",
+  "DAN-C02-E-P01-UntoAllThePeoples.dc.html",
+  "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html",
+  "DAN-C02-E-P03-ATreeInTheMidstOfT.dc.html",
+  "DAN-C02-E-P04-ItIsThouOKing.dc.html",
+  "DAN-C02-E-P05-ItIsThouOKing.dc.html",
+  "DAN-C02-E-P06-IsNotThisGreatBaby.dc.html",
+  "DAN-C02-E-P07-MineUnderstandingR.dc.html",
+  "DAN-C03-00-Title.dc.html",
+  "DAN-C03-D-P01-BelshazzarMadeAGre.dc.html",
+  "DAN-C03-D-P02-TheWritingUponTheP.dc.html",
+  "DAN-C03-D-P03-ArtThouThatDaniel.dc.html",
+  "DAN-C03-D-P04-ArtThouThatDaniel.dc.html",
+  "DAN-C03-D-P05-MeneMeneTekelUphar.dc.html",
+  "DAN-C03-D-P06-InThatNight.dc.html",
+  "DAN-C03-E-P01-ThreePresidents.dc.html",
+  "DAN-C03-E-P02-ThreePresidents.dc.html",
+  "DAN-C03-E-P03-HisWindowsWereOpen.dc.html",
+  "DAN-C03-E-P04-TheDenOfLions.dc.html",
+  "DAN-C03-E-P05-VeryEarlyInTheMorn.dc.html",
+  "DAN-C03-E-P06-VeryEarlyInTheMorn.dc.html",
+  "DAN-C03-E-P07-TheLivingGod.dc.html",
+  "DAN-C04-00-Title.dc.html",
+  "DAN-C04-D-P01-FourGreatBeasts.dc.html",
+  "DAN-C04-D-P02-FourGreatBeasts.dc.html",
+  "DAN-C04-D-P03-OneThatWasAncientO.dc.html",
+  "DAN-C04-D-P04-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-D-P05-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-D-P06-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-D-P07-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-E-P01-TheRamAndTheHeGoat.dc.html",
+  "DAN-C04-E-P02-TheRamAndTheHeGoat.dc.html",
+  "DAN-C04-E-P03-HowLongShallBeTheV.dc.html",
+  "DAN-C04-E-P04-Gabriel.dc.html",
+  "DAN-C04-E-P05-Gabriel.dc.html",
+  "DAN-C05-00-Title.dc.html",
+  "DAN-C05-D-P01-WeHaveSinned.dc.html",
+  "DAN-C05-D-P02-WeHaveSinned.dc.html",
+  "DAN-C05-D-P03-WeHaveSinned.dc.html",
+  "DAN-C05-D-P04-TheManGabriel.dc.html",
+  "DAN-C05-D-P05-SeventyWeeks.dc.html",
+  "DAN-C05-E-P01-AManClothedInLinen.dc.html",
+  "DAN-C05-E-P02-AManClothedInLinen.dc.html",
+  "DAN-C05-E-P03-AManClothedInLinen.dc.html",
+  "DAN-C05-E-P04-AManClothedInLinen.dc.html",
+  "DAN-C06-00-Title.dc.html",
+  "DAN-C06-D-P01-ThreeKingsInPersia.dc.html",
+  "DAN-C06-D-P02-TheKingOfTheSouth.dc.html",
+  "DAN-C06-D-P03-TheKingOfTheNorth.dc.html",
+  "DAN-C06-D-P04-AContemptiblePerso.dc.html",
+  "DAN-C06-D-P05-AContemptiblePerso.dc.html",
+  "DAN-C06-D-P06-TheyThatAreWise.dc.html",
+  "DAN-C06-D-P07-TheTimeOfTheEnd.dc.html",
+  "DAN-C06-D-P08-TheTimeOfTheEnd.dc.html",
+  "DAN-C06-E-P01-MichaelShallStandU.dc.html",
+  "DAN-C06-E-P02-HowLongShallItBe.dc.html",
+  "DAN-C06-E-P03-GoThouThyWay.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Daniel Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · A Stone Cut Out Without Hands (Daniel 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Burning Fiery Furnace (Daniel 3–4)",
+   "x": 0,
+   "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Den of Lions (Daniel 5–6)",
+   "x": 0,
+   "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Ancient of Days (Daniel 7–8)",
+   "x": 0,
+   "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Seventy Weeks (Daniel 9–10)",
+   "x": 0,
+   "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Time of the End (Daniel 11–12)",
+   "x": 0,
+   "y": 21000
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
