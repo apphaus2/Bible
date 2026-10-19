@@ -226,7 +226,7 @@ WALL = [("SHEEP GATE", 0.19, 0.22, "g", -9, 4, "end"),
         ("HORSE GATE", 0.35, 0.15, "g", 0, -10, "middle"),
         ("EAST GATE", 0.3, 0.17, "g", 0, 17, "middle"),
         ("GATE OF HAMMIPHKAD", 0.245, 0.2, "g", -2, -10, "end")]
-EXTRA = {"JACKAL'S WELL": (0.78, 0.92), "KING'S POOL": (0.95, 0.24), "STAIRS OF THE CITY OF DAVID": (0.76, 0.34), "GATE OF THE GUARD": (0.26, 0.3)}
+EXTRA = {"JACKAL'S WELL": (0.78, 0.92), "KING'S POOL": (0.95, 0.24), "STAIRS OF THE CITY OF DAVID": (0.76, 0.34), "GATE OF THE GUARD": (0.27, 0.27)}
 
 def wall_plan(w, h, lit=(), night=False, companies=False, title=""):
     """Jerusalem's wall and gates as a technical plan, north at the left. lit: names on the wall (WALL) lit gold, with the
@@ -257,8 +257,8 @@ def wall_plan(w, h, lit=(), night=False, companies=False, title=""):
         a = [P["VALLEY GATE"], P["DUNG GATE"], P["FOUNTAIN GATE"], P["STAIRS OF THE CITY OF DAVID"], P["WATER GATE"]]
         bb = [P["VALLEY GATE"], P["TOWER OF THE FURNACES"], P["BROAD WALL"], P["GATE OF EPHRAIM"], P["OLD GATE"], P["FISH GATE"], P["TOWER OF HANANEL"], P["TOWER OF HAMMEAH"], P["SHEEP GATE"], P["GATE OF THE GUARD"]]
         o.append(route(a, color=GOLD, sw=3.4, dash="10 5") + route(bb, color="#FF8A6A", sw=3.4, dash="10 5"))
-        o.append(node(*P["GATE OF THE GUARD"], "GATE OF THE GUARD", "#FF8A6A", r=4, dy=16, size=8))
-        o.append(label(w * 0.8, h * 0.72, "THE FIRST COMPANY", GOLD, 9) + label(w * 0.36, h * 0.74, "THE OTHER COMPANY", "#FF8A6A", 9))
+        o.append(node(*P["GATE OF THE GUARD"], "", "#FF8A6A", r=4) + label(P["GATE OF THE GUARD"][0] + 9, P["GATE OF THE GUARD"][1] + 4, "GATE OF THE GUARD", "#FF8A6A", 8, "start"))
+        o.append(label(w * 0.82, h * 0.82, "THE FIRST COMPANY", GOLD, 9) + label(w * 0.36, h * 0.74, "THE OTHER COMPANY", "#FF8A6A", 9))
     for n, x, y, kd, dx, dy, anc in WALL:
         on = n in lit
         c = GOLD if on else ("#8FD0E2" if kd == "g" else "#4A7A9A")
@@ -964,4 +964,125 @@ def villages_map(w, h, judah=True, benjamin=True):
             o.append(node(w * x, h * y, nm, col if on else "#4A5A7A", r=3.5, dy=-7, size=7.5))
     o.append(node(w * 0.5, h * 0.4, "JERUSALEM", "#FFFFFF", r=6, dy=-11, size=10) + label(w * 0.5, h * 0.47, "THE VALLEY OF HINNOM", "#FF8A6A", 7.5))
     o.append(label(w * 0.96, h * 0.9, "JUDAH", GOLD, 10, "end") + label(w * 0.96, h * 0.1, "BENJAMIN", CYAN, 10, "end"))
+    return "".join(o)
+
+# ---- Nehemiah 12–13 -----------------------------------------------------------------------------------------------------
+def procession(p, w, h, seed, second=False):
+    """A company that gave thanks going in procession upon the wall: priests' sons with trumpets, singers with harps and
+    cymbals, the princes of Judah, walking along the top of the wall above the city (second=True: the other company, with
+    Nehemiah after them, the tower of the furnaces behind)."""
+    wt = h * 0.6
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFC890", "#FFF4C2"), hills(w, h, h * 0.4, seed, "#A8946A", amp=10, step=90)]
+    if second:
+        o.append(f'<rect x="{f(w * 0.78)}" y="{f(wt - h * 0.34)}" width="{f(w * 0.1)}" height="{f(h * 0.34)}" fill="#B5652E" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+                 + "".join(f'<rect x="{f(w * 0.78 + k * w * 0.026)}" y="{f(wt - h * 0.38)}" width="{f(w * 0.016)}" height="{f(h * 0.04)}" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></rect>' for k in range(4)))
+    o.append(stone_wall(-10, w + 10, wt, h + 10, seed))
+    s = fit(wt, max(h * 0.12, wt - 190))
+    xs = [0.06 + i * 0.105 for i in range(9)]
+    for i, x in enumerate(xs):
+        X = w * x; y = wt
+        if i < 3:
+            o.append(J.trumpeter(p, X, y, s * 0.95))
+        elif i < 6:
+            o.append(S3.musician(p, X, y, s * 0.95, kind=("harp", "cymbals", "harp")[i - 3], cloth="#F3EFE6", woman=False, seed=seed + i))
+        elif i == 7 and second:
+            o.append(neh_fig(p, X, y, s))
+        else:
+            o.append(noble(p, X, y, s, NOBLE_C[i % 3]))
+    return "".join(o)
+
+def chamber_tobiah(p, w, h, seed):
+    """The great chamber in the courts of the house of God, where they laid the meal-offerings, the frankincense and the
+    vessels, made over to Tobiah: his couches, rugs and chests within, the stores gone."""
+    o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#E8DCC0"></rect>']
+    for k in range(int(w // 50) + 2):
+        o.append(f'<path d="M{f(k * 50)} -10 L {f(k * 50)} {f(h * 0.8)}" stroke="#D8CCB0" stroke-width="3"></path>')
+    o.append(ground(w, h, h * 0.8, "#B8A07A", dy=0))
+    o.append(f'<rect x="{f(w * 0.08)}" y="{f(h * 0.62)}" width="{f(w * 0.3)}" height="{f(h * 0.12)}" rx="6" fill="#2E5A4A" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<rect x="{f(w * 0.06)}" y="{f(h * 0.5)}" width="{f(w * 0.05)}" height="{f(h * 0.26)}" rx="6" fill="#1F4A34" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(w * 0.08)} {f(h * 0.74)} L {f(w * 0.08)} {f(h * 0.8)} M{f(w * 0.36)} {f(h * 0.74)} L {f(w * 0.36)} {f(h * 0.8)}" stroke="#5A3A1E" stroke-width="4"></path>')
+    o.append(f'<ellipse cx="{f(w * 0.56)}" cy="{f(h * 0.88)}" rx="{f(w * 0.16)}" ry="{f(h * 0.05)}" fill="#7A2A3A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    for i in range(3):
+        x = w * (0.72 + i * 0.08)
+        o.append(f'<rect x="{f(x)}" y="{f(h * 0.62)}" width="{f(w * 0.07)}" height="{f(h * 0.18)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>'
+                 f'<rect x="{f(x)}" y="{f(h * 0.62)}" width="{f(w * 0.07)}" height="{f(h * 0.04)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    o.append(f'<path d="M{f(w * 0.46)} {f(h * 0.3)} L {f(w * 0.66)} {f(h * 0.3)}" stroke="#8A6A3A" stroke-width="3"></path>'
+             + "".join(f'<path d="M{f(w * (0.48 + k * 0.04))} {f(h * 0.3)} l 0 {f(h * 0.1)}" stroke="#1F4A34" stroke-width="4"></path>' for k in range(5)))
+    return "".join(o)
+
+def cast_out(p, w, h, seed):
+    """All the household stuff of Tobiah cast forth out of the chamber: the couch, the chests and the rugs in the court,
+    Nehemiah at the door."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), stone_wall(w * 0.5, w + 10, h * 0.16, h * 0.7, seed),
+         f'<rect x="{f(w * 0.66)}" y="{f(h * 0.36)}" width="{f(w * 0.12)}" height="{f(h * 0.34)}" fill="#2A1A14" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         ground(w, h, h * 0.7, "#C8B88A", dy=0)]
+    o.append(f'<g transform="rotate(-14 {f(w * 0.3)} {f(h * 0.86)})"><rect x="{f(w * 0.18)}" y="{f(h * 0.8)}" width="{f(w * 0.24)}" height="{f(h * 0.08)}" rx="6" fill="#2E5A4A" stroke="#0D0D0F" stroke-width="2"></rect></g>'
+             f'<g transform="rotate(20 {f(w * 0.08)} {f(h * 0.86)})"><rect x="{f(w * 0.04)}" y="{f(h * 0.78)}" width="{f(w * 0.07)}" height="{f(h * 0.12)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect></g>'
+             f'<path d="M{f(w * 0.42)} {f(h * 0.92)} q {f(w * 0.06)} {f(-h * 0.08)} {f(w * 0.14)} {f(-h * 0.02)} l {f(-w * 0.02)} {f(h * 0.06)} Z" fill="#7A2A3A" stroke="#0D0D0F" stroke-width="2"></path>')
+    s = fit(b, max(h * 0.36, b - 230))
+    o.append(neh_fig(p, w * 0.6, b, s, flip=True, up=[(22, -158), (48, -166), (74, -172)], cloth="#3A4A6A"))
+    return "".join(o)
+
+def sabbath_work(p, w, h, seed):
+    """On the sabbath, men treading winepresses and bringing in sheaves, lading asses with wine, grapes and figs; men of
+    Tyre selling fish at the gate."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), J.jericho(w * 0.56, w + 10, h * 0.3, h * 0.66, seed, color=STONE, towers=1, houses=True),
+         S4b.gatehouse(w * 0.78, h * 0.66, w * 0.18, h * 0.44), ground(w, h, h * 0.66, "#C8B07A", dy=0), J1.winepress(w * 0.16, h * 0.86, w * 0.2, h * 0.1)]
+    s = fit(b, max(h * 0.4, b - 220))
+    o.append(man(p, w * 0.16, h * 0.84, s * 0.8, "#6A3A2A", up=[(-22, -158), (-36, -180), (-30, -200)]))
+    o.append(N.ass(w * 0.38, b, s * 0.6, color="#7A6A5A") + R1.sheaf(w * 0.36, b - 64 * s, s * 0.7) + R1.sack(w * 0.42, b - 60 * s, s * 0.5))
+    o.append(R1.sheaf(w * 0.5, b, s) + R1.sheaf(w * 0.53, b, s * 0.9))
+    o.append(man(p, w * 0.66, b, s * 0.9, "#2A5A6A", flip=True))
+    for k in range(3):
+        fx = w * (0.58 + k * 0.03); fy = b - h * 0.02
+        o.append(f'<path d="M{f(fx - 12)} {f(fy)} q 10 -8 20 0 l 6 -5 l 0 10 l -6 -5 q -10 8 -20 0 Z" fill="#8FA8B8" stroke="#0D0D0F" stroke-width="1.2"></path>')
+    return "".join(o)
+
+def strange_wives(p, w, h, seed):
+    """Jews that had married women of Ashdod, of Ammon and of Moab: mothers in foreign dress with their children before
+    the houses, the children speaking half in the speech of Ashdod."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C8B8A0", "#F3E0B0"), J.jericho(-10, w + 10, h * 0.3, h * 0.62, seed, color=STONE, towers=0, houses=True), ground(w, h, h * 0.62, "#C8B07A", dy=0)]
+    s = fit(b, max(h * 0.26, b - 260))
+    for i, c in enumerate(("#7A1A5A", "#1A5A7A", "#7A5A1A")):
+        x = w * (0.18 + i * 0.3)
+        o.append(woman(p, x, b, s, c) + man(p, x + 36 * s, b, s * 0.55, "#E8D8B0") + man(p, x - 34 * s, b, s * 0.5, "#C8D8E8"))
+    return "".join(o)
+
+def departing(p, w, h, seed):
+    """Chased from me: a lone figure in a priest's white robe going away down the road from the city at dusk."""
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#3A2A4A", "#E8906A"), J.city_hill(w * 0.2, h * 0.6, w * 0.3, h * 0.24, seed), ground(w, h, h * 0.6, "#8A7A5A", dy=0),
+         f'<path d="M{f(w * 0.3)} {f(h * 0.62)} C {f(w * 0.5)} {f(h * 0.7)} {f(w * 0.6)} {f(h * 0.86)} {f(w * 0.9)} {f(h + 10)}" stroke="#B8A07A" stroke-width="{f(w * 0.05)}" fill="none"></path>']
+    y = h * 0.8
+    o.append(K1.priest(p, w * 0.66, y, fit(y, y - h * 0.4), flip=False))
+    return "".join(o)
+
+def heaps(p, w, h, seed):
+    """The heaps of the grain, the new wine and the oil brought into the chambers of the house of God, a Levite in white
+    standing by as treasurer (no king in Nehemiah's Jerusalem)."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), K1.temple_front(w * 0.5, h * 0.56, w * 0.5, seed), ground(w, h, h * 0.56, "#C8B88A", dy=0)]
+    for i, c in enumerate(("#E8C88A", "#C8A060", "#D9A25A", "#E8D8A0")):
+        o.append(R1.heap(w * (0.24 + i * 0.18), h * 0.86, w * 0.14, h * 0.16, color=c))
+    s = fit(b, max(h * 0.42, b - 230))
+    o.append(K1.priest(p, w * 0.08, b, s))
+    for i in range(2):
+        x = w * (0.9 + i * 0.05)
+        o.append(f'<path d="M{f(x - 10 * s)} {f(b)} C {f(x - 22 * s)} {f(b - 30 * s)} {f(x - 12 * s)} {f(b - 60 * s)} {f(x - 5 * s)} {f(b - 64 * s)} L {f(x + 5 * s)} {f(b - 64 * s)} '
+                 f'C {f(x + 12 * s)} {f(b - 60 * s)} {f(x + 22 * s)} {f(b - 30 * s)} {f(x + 10 * s)} {f(b)} Z" fill="{("#B5652E", "#C8A060")[i]}" stroke="#0D0D0F" stroke-width="1.8"></path>')
+    return "".join(o)
+
+def musicians_court(p, w, h, seed):
+    """The singers and Levites with cymbals, psalteries and harps, and the priests with trumpets, before the house of God."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFB04A", "#FFE6B0"), K1.temple_front(w * 0.5, h * 0.56, w * 0.46, seed), ground(w, h, h * 0.56, "#C8B88A", dy=0)]
+    s = fit(b, max(h * 0.38, b - 230))
+    for i in range(8):
+        x = w * (0.06 + i * 0.125)
+        if i in (0, 7):
+            o.append(J.trumpeter(p, x, b, s * 0.95, flip=i == 7))
+        else:
+            o.append(S3.musician(p, x, b - (i % 2) * 5, s * 0.95, kind=("harp", "cymbals")[i % 2], cloth="#F3EFE6", woman=False, seed=seed + i))
     return "".join(o)

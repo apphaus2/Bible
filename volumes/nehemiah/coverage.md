@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 328 verses — 328 full, 0 partial, 0 omitted.
+**So far:** 406 verses — 406 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Wall of Jerusalem (Nehemiah 1–2)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · The Sealed Covenant (Nehemiah 10–11)
 
 75 verses: 75 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · The Dedication of the Wall (Nehemiah 12–13)
+
+78 verses: 78 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

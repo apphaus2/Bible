@@ -457,6 +457,97 @@
    "w": 760,
    "h": 1080,
    "title": "57 · The Villages"
+  },
+  "NEH-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 21800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Dedication of the Wall"
+  },
+  "NEH-C07-D-P01-ThePriestsAndTheLe.dc.html": {
+   "x": 840,
+   "y": 21800,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Priests and the Levites"
+  },
+  "NEH-C07-D-P02-InTheDaysOfJoiakim.dc.html": {
+   "x": 1680,
+   "y": 21800,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · In the Days of Joiakim"
+  },
+  "NEH-C07-E-P01-TheDedicationOfThe.dc.html": {
+   "x": 2520,
+   "y": 21800,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · The Dedication of the Wall"
+  },
+  "NEH-C07-E-P02-TwoGreatCompanies.dc.html": {
+   "x": 3360,
+   "y": 21800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Two Great Companies"
+  },
+  "NEH-C07-E-P03-TwoGreatCompanies.dc.html": {
+   "x": 0,
+   "y": 23000,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Two Great Companies"
+  },
+  "NEH-C07-E-P04-TheJoyOfJerusalem.dc.html": {
+   "x": 840,
+   "y": 23000,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The Joy of Jerusalem"
+  },
+  "NEH-C07-F-P01-AChamberForTobiah.dc.html": {
+   "x": 1680,
+   "y": 23000,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Chamber for Tobiah"
+  },
+  "NEH-C07-F-P02-WhyIsTheHouseOfGod.dc.html": {
+   "x": 2520,
+   "y": 23000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Why Is the House of God Forsaken?"
+  },
+  "NEH-C07-F-P03-TheSabbathDay.dc.html": {
+   "x": 3360,
+   "y": 23000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · The Sabbath Day"
+  },
+  "NEH-C07-F-P04-TheSabbathDay.dc.html": {
+   "x": 0,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Sabbath Day"
+  },
+  "NEH-C07-F-P05-TheSpeechOfAshdod.dc.html": {
+   "x": 840,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Speech of Ashdod"
+  },
+  "NEH-C07-F-P06-RememberMeOMyGodFo.dc.html": {
+   "x": 1680,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Remember Me, O My God, for Good"
   }
  },
  "order": [
@@ -523,7 +614,20 @@
   "NEH-C06-F-P01-OneOfTen.dc.html",
   "NEH-C06-F-P02-TheyThatDweltInJer.dc.html",
   "NEH-C06-F-P03-ThePortersAndTheNe.dc.html",
-  "NEH-C06-F-P04-TheVillages.dc.html"
+  "NEH-C06-F-P04-TheVillages.dc.html",
+  "NEH-C07-00-Title.dc.html",
+  "NEH-C07-D-P01-ThePriestsAndTheLe.dc.html",
+  "NEH-C07-D-P02-InTheDaysOfJoiakim.dc.html",
+  "NEH-C07-E-P01-TheDedicationOfThe.dc.html",
+  "NEH-C07-E-P02-TwoGreatCompanies.dc.html",
+  "NEH-C07-E-P03-TwoGreatCompanies.dc.html",
+  "NEH-C07-E-P04-TheJoyOfJerusalem.dc.html",
+  "NEH-C07-F-P01-AChamberForTobiah.dc.html",
+  "NEH-C07-F-P02-WhyIsTheHouseOfGod.dc.html",
+  "NEH-C07-F-P03-TheSabbathDay.dc.html",
+  "NEH-C07-F-P04-TheSabbathDay.dc.html",
+  "NEH-C07-F-P05-TheSpeechOfAshdod.dc.html",
+  "NEH-C07-F-P06-RememberMeOMyGodFo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -574,6 +678,13 @@
    "text": "Chapter 6 · The Sealed Covenant (Nehemiah 10–11)",
    "x": 0,
    "y": 18600
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Dedication of the Wall (Nehemiah 12–13)",
+   "x": 0,
+   "y": 21500
   }
  },
  "designSystems": [],
