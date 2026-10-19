@@ -35,5 +35,7 @@ META = {
      "blurb": "Lifted up between earth and heaven and brought in the visions of God to Jerusalem: the image of jealousy, the chamber of imagery and the seventy elders with their censers, the women weeping for Tammuz, the men worshipping the sun; the man clothed in linen and the mark upon the foreheads; coals of fire from between the cherubim; and the glory of Jehovah going up from the threshold to the east gate, and to the mountain east of the city."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Stuff for Removing", "range": "Ezekiel 12–14", "bible_chapters": [12, 13, 14],
      "blurb": "The prophet a sign: stuff for removing carried out by day, the wall digged through in the dark — I am your sign; the net spread for the prince in Jerusalem; bread eaten with quaking; the foolish prophets like foxes in the waste places, and the wall daubed with untempered mortar brought down by the stormy wind; and though these three men, Noah, Daniel, and Job, were in it."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Vine and the Foundling", "range": "Ezekiel 15–16", "bible_chapters": [15, 16],
+     "blurb": "What is the vine-tree more than any tree? — cast into the fire for fuel; then Jerusalem, cast out in the open field in the day that she was born, washed and clothed and decked with ornaments, who trusted in her beauty; her lovers and her judgment; Samaria and Sodom her sisters; and nevertheless I will remember my covenant with thee in the days of thy youth."},
   ],
 }

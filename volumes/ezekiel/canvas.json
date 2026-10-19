@@ -443,6 +443,97 @@
    "w": 760,
    "h": 1080,
    "title": "57 · Yet There Shall Be Left a Remnant"
+  },
+  "EZK-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Vine and the Foundling"
+  },
+  "EZK-C05-D-P01-TheVineTree.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Vine-Tree"
+  },
+  "EZK-C05-D-P02-ThyBirthAndThyNati.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Thy Birth and Thy Nativity"
+  },
+  "EZK-C05-D-P03-ThyBirthAndThyNati.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Thy Birth and Thy Nativity"
+  },
+  "EZK-C05-D-P04-ThouDidstTrustInTh.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Thou Didst Trust in Thy Beauty"
+  },
+  "EZK-C05-D-P05-AVaultedPlace.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · A Vaulted Place"
+  },
+  "EZK-C05-D-P06-AVaultedPlace.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · A Vaulted Place"
+  },
+  "EZK-C05-D-P07-AVaultedPlace.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Vaulted Place"
+  },
+  "EZK-C05-D-P08-IWillJudgeThee.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · I Will Judge Thee"
+  },
+  "EZK-C05-D-P09-IWillJudgeThee.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · I Will Judge Thee"
+  },
+  "EZK-C05-D-P10-AsIsTheMotherSoIsH.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · As Is the Mother, So Is Her Daughter"
+  },
+  "EZK-C05-D-P11-AsIsTheMotherSoIsH.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · As Is the Mother, So Is Her Daughter"
+  },
+  "EZK-C05-D-P12-AnEverlastingCoven.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · An Everlasting Covenant"
   }
  },
  "order": [
@@ -507,7 +598,20 @@
   "EZK-C04-D-P12-IdolsInTheirHeart.dc.html",
   "EZK-C04-D-P13-NoahDanielAndJob.dc.html",
   "EZK-C04-D-P14-YetThereShallBeLef.dc.html",
-  "EZK-C04-D-P15-YetThereShallBeLef.dc.html"
+  "EZK-C04-D-P15-YetThereShallBeLef.dc.html",
+  "EZK-C05-00-Title.dc.html",
+  "EZK-C05-D-P01-TheVineTree.dc.html",
+  "EZK-C05-D-P02-ThyBirthAndThyNati.dc.html",
+  "EZK-C05-D-P03-ThyBirthAndThyNati.dc.html",
+  "EZK-C05-D-P04-ThouDidstTrustInTh.dc.html",
+  "EZK-C05-D-P05-AVaultedPlace.dc.html",
+  "EZK-C05-D-P06-AVaultedPlace.dc.html",
+  "EZK-C05-D-P07-AVaultedPlace.dc.html",
+  "EZK-C05-D-P08-IWillJudgeThee.dc.html",
+  "EZK-C05-D-P09-IWillJudgeThee.dc.html",
+  "EZK-C05-D-P10-AsIsTheMotherSoIsH.dc.html",
+  "EZK-C05-D-P11-AsIsTheMotherSoIsH.dc.html",
+  "EZK-C05-D-P12-AnEverlastingCoven.dc.html"
  ],
  "notes": {
   "Main": {
@@ -544,6 +648,13 @@
    "text": "Chapter 4 · Stuff for Removing (Ezekiel 12–14)",
    "x": 0,
    "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Vine and the Foundling (Ezekiel 15–16)",
+   "x": 0,
+   "y": 21700
   }
  },
  "designSystems": [],
