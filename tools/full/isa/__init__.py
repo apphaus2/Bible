@@ -40,5 +40,7 @@ META = {
      "blurb": "The burden of the wilderness of the sea — set a watchman: fallen, fallen is Babylon; the burden of Dumah — watchman, what of the night? the morning cometh, and also the night; the burden upon Arabia; the valley of vision — let us eat and drink, for to-morrow we shall die; Shebna's sepulchre, and the key of the house of David laid upon Eliakim; and the burden of Tyre — howl, ye ships of Tarshish."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Thy Dead Shall Live", "range": "Isaiah 24–27", "bible_chapters": [24, 25, 26, 27],
      "blurb": "Jehovah maketh the earth empty, and it reeleth to and fro like a hammock; then the song — O Jehovah, thou art my God; in this mountain a feast of fat things for all peoples: he hath swallowed up death for ever, and the Lord Jehovah will wipe away tears from off all faces; we have a strong city; thy dead shall live; leviathan the swift serpent; the vineyard of wine; and the great trumpet."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "In Returning and Rest", "range": "Isaiah 28–30", "bible_chapters": [28, 29, 30],
+     "blurb": "Woe to the crown of pride of the drunkards of Ephraim; precept upon precept, line upon line; a covenant with death, and a tried stone laid in Zion, a precious corner-stone of sure foundation; Ho Ariel; a book that is sealed; shall the potter be esteemed as clay?; woe to the rebellious children that go down into Egypt; in returning and rest shall ye be saved; and a word behind thee — this is the way, walk ye in it."},
   ],
 }

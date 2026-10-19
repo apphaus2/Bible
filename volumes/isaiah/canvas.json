@@ -765,6 +765,132 @@
    "w": 760,
    "h": 1080,
    "title": "100 · A Great Trumpet"
+  },
+  "ISA-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · In Returning and Rest"
+  },
+  "ISA-C08-D-P01-TheCrownOfPride.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Crown of Pride"
+  },
+  "ISA-C08-D-P02-PreceptUponPrecept.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Precept upon Precept"
+  },
+  "ISA-C08-D-P03-ACovenantWithDeath.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · A Covenant with Death"
+  },
+  "ISA-C08-D-P04-ATriedStone.dc.html": {
+   "x": 3360,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · A Tried Stone"
+  },
+  "ISA-C08-D-P05-DothHeThatPlowethP.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Doth He That Ploweth Plow Continually?"
+  },
+  "ISA-C08-D-P06-HoAriel.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Ho Ariel"
+  },
+  "ISA-C08-D-P07-HoAriel.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Ho Ariel"
+  },
+  "ISA-C08-D-P08-ABookThatIsSealed.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · A Book That Is Sealed"
+  },
+  "ISA-C08-D-P09-ThePotterAndTheCla.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · The Potter and the Clay"
+  },
+  "ISA-C08-D-P10-ThePotterAndTheCla.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · The Potter and the Clay"
+  },
+  "ISA-C08-D-P11-WoeToTheRebellious.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Woe to the Rebellious Children"
+  },
+  "ISA-C08-D-P12-WoeToTheRebellious.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Woe to the Rebellious Children"
+  },
+  "ISA-C08-D-P13-InReturningAndRest.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · In Returning and Rest"
+  },
+  "ISA-C08-D-P14-ThisIsTheWayWalkYe.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · This Is the Way, Walk Ye in It"
+  },
+  "ISA-C08-D-P15-ThisIsTheWayWalkYe.dc.html": {
+   "x": 0,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · This Is the Way, Walk Ye in It"
+  },
+  "ISA-C08-D-P16-TheNameOfJehovahCo.dc.html": {
+   "x": 840,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The Name of Jehovah Cometh from Far"
+  },
+  "ISA-C08-D-P17-TheNameOfJehovahCo.dc.html": {
+   "x": 1680,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · The Name of Jehovah Cometh from Far"
   }
  },
  "order": [
@@ -875,7 +1001,25 @@
   "ISA-C07-D-P10-ThyDeadShallLive.dc.html",
   "ISA-C07-D-P11-AVineyardOfWine.dc.html",
   "ISA-C07-D-P12-AVineyardOfWine.dc.html",
-  "ISA-C07-D-P13-AGreatTrumpet.dc.html"
+  "ISA-C07-D-P13-AGreatTrumpet.dc.html",
+  "ISA-C08-00-Title.dc.html",
+  "ISA-C08-D-P01-TheCrownOfPride.dc.html",
+  "ISA-C08-D-P02-PreceptUponPrecept.dc.html",
+  "ISA-C08-D-P03-ACovenantWithDeath.dc.html",
+  "ISA-C08-D-P04-ATriedStone.dc.html",
+  "ISA-C08-D-P05-DothHeThatPlowethP.dc.html",
+  "ISA-C08-D-P06-HoAriel.dc.html",
+  "ISA-C08-D-P07-HoAriel.dc.html",
+  "ISA-C08-D-P08-ABookThatIsSealed.dc.html",
+  "ISA-C08-D-P09-ThePotterAndTheCla.dc.html",
+  "ISA-C08-D-P10-ThePotterAndTheCla.dc.html",
+  "ISA-C08-D-P11-WoeToTheRebellious.dc.html",
+  "ISA-C08-D-P12-WoeToTheRebellious.dc.html",
+  "ISA-C08-D-P13-InReturningAndRest.dc.html",
+  "ISA-C08-D-P14-ThisIsTheWayWalkYe.dc.html",
+  "ISA-C08-D-P15-ThisIsTheWayWalkYe.dc.html",
+  "ISA-C08-D-P16-TheNameOfJehovahCo.dc.html",
+  "ISA-C08-D-P17-TheNameOfJehovahCo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -933,6 +1077,13 @@
    "text": "Chapter 7 · Thy Dead Shall Live (Isaiah 24–27)",
    "x": 0,
    "y": 31100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · In Returning and Rest (Isaiah 28–30)",
+   "x": 0,
+   "y": 35200
   }
  },
  "designSystems": [],
