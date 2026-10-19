@@ -1297,6 +1297,125 @@
    "w": 760,
    "h": 1080,
    "title": "172 · My Covenant of the Day and of the Night"
+  },
+  "JER-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Roll"
+  },
+  "JER-C12-D-P01-ThouShaltDieInPeac.dc.html": {
+   "x": 840,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Thou Shalt Die in Peace"
+  },
+  "JER-C12-D-P02-ToProclaimLiberty.dc.html": {
+   "x": 1680,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · To Proclaim Liberty"
+  },
+  "JER-C12-D-P03-ToProclaimLiberty.dc.html": {
+   "x": 2520,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · To Proclaim Liberty"
+  },
+  "JER-C12-D-P04-IProclaimUntoYouAL.dc.html": {
+   "x": 3360,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · I Proclaim unto You a Liberty"
+  },
+  "JER-C12-D-P05-IProclaimUntoYouAL.dc.html": {
+   "x": 0,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · I Proclaim unto You a Liberty"
+  },
+  "JER-C12-E-P01-TheHouseOfTheRecha.dc.html": {
+   "x": 840,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · The House of the Rechabites"
+  },
+  "JER-C12-E-P02-WeWillDrinkNoWine.dc.html": {
+   "x": 1680,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · We Will Drink No Wine"
+  },
+  "JER-C12-E-P03-WeWillDrinkNoWine.dc.html": {
+   "x": 2520,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · We Will Drink No Wine"
+  },
+  "JER-C12-E-P04-WeWillDrinkNoWine.dc.html": {
+   "x": 3360,
+   "y": 57900,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · We Will Drink No Wine"
+  },
+  "JER-C12-F-P01-TakeTheeARollOfABo.dc.html": {
+   "x": 0,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Take Thee a Roll of a Book"
+  },
+  "JER-C12-F-P02-BaruchReadInTheBoo.dc.html": {
+   "x": 840,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Baruch Read in the Book"
+  },
+  "JER-C12-F-P03-AllThePrincesWereS.dc.html": {
+   "x": 1680,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · All the Princes Were Sitting There"
+  },
+  "JER-C12-F-P04-GoHideThee.dc.html": {
+   "x": 2520,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Go, Hide Thee"
+  },
+  "JER-C12-F-P05-TheKingWasSittingI.dc.html": {
+   "x": 3360,
+   "y": 59100,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · The King Was Sitting in the Winter-House"
+  },
+  "JER-C12-F-P06-TakeTheeAgainAnoth.dc.html": {
+   "x": 0,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Take Thee Again Another Roll"
+  },
+  "JER-C12-F-P07-TakeTheeAgainAnoth.dc.html": {
+   "x": 840,
+   "y": 60300,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Take Thee Again Another Roll"
   }
  },
  "order": [
@@ -1483,7 +1602,24 @@
   "JER-C11-E-P03-TheVoiceOfTheBride.dc.html",
   "JER-C11-E-P04-ABranchOfRighteous.dc.html",
   "JER-C11-E-P05-MyCovenantOfTheDay.dc.html",
-  "JER-C11-E-P06-MyCovenantOfTheDay.dc.html"
+  "JER-C11-E-P06-MyCovenantOfTheDay.dc.html",
+  "JER-C12-00-Title.dc.html",
+  "JER-C12-D-P01-ThouShaltDieInPeac.dc.html",
+  "JER-C12-D-P02-ToProclaimLiberty.dc.html",
+  "JER-C12-D-P03-ToProclaimLiberty.dc.html",
+  "JER-C12-D-P04-IProclaimUntoYouAL.dc.html",
+  "JER-C12-D-P05-IProclaimUntoYouAL.dc.html",
+  "JER-C12-E-P01-TheHouseOfTheRecha.dc.html",
+  "JER-C12-E-P02-WeWillDrinkNoWine.dc.html",
+  "JER-C12-E-P03-WeWillDrinkNoWine.dc.html",
+  "JER-C12-E-P04-WeWillDrinkNoWine.dc.html",
+  "JER-C12-F-P01-TakeTheeARollOfABo.dc.html",
+  "JER-C12-F-P02-BaruchReadInTheBoo.dc.html",
+  "JER-C12-F-P03-AllThePrincesWereS.dc.html",
+  "JER-C12-F-P04-GoHideThee.dc.html",
+  "JER-C12-F-P05-TheKingWasSittingI.dc.html",
+  "JER-C12-F-P06-TakeTheeAgainAnoth.dc.html",
+  "JER-C12-F-P07-TakeTheeAgainAnoth.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1569,6 +1705,13 @@
    "text": "Chapter 11 · The Field at Anathoth (Jeremiah 32–33)",
    "x": 0,
    "y": 51100
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Roll (Jeremiah 34–36)",
+   "x": 0,
+   "y": 56400
   }
  },
  "designSystems": [],
