@@ -218,15 +218,33 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Esther | 3 · The King Could Not Sleep | 5–7 | title + 12 (pp. 17–28) | 38/38 verses full (the gallows only ever standing and empty; 7:10 words over the empty gallows far off at dusk) | `volumes/esther/` |
 | Esther | 4 · The Days of Purim | 8–10 | title + 10 (pp. 29–38) | 52/52 verses full (9:1–16 words only, over the map of the provinces and Shushan at dusk; the days of Adar as a chart) | `volumes/esther/` |
 | **Esther** | **complete: cover + 4 chapters** | **1–10** | **43 pages (38 numbered)** | **167 verses: all full** | `volumes/esther/` |
+| Job | 1 · The Land of Uz | 1–3 | cover + title + 11 (pp. 1–11) | 61/61 verses full (Satan never drawn: words over the heavens, a dark streak at most; 1:15–19 words over the empty field; the boils as sackcloth, potsherd and ash heap) | `volumes/job/` |
+| Job | 2 · The Vision of the Night | 4–7 | title + 12 (pp. 12–23) | 99/99 verses full (Eliphaz in teal song lines; the spirit a pale form with no face) | `volumes/job/` |
+| Job | 3 · No Umpire Betwixt Us | 8–10 | title + 11 (pp. 24–34) | 79/79 verses full (the Bear, Orion and the Pleiades as a labelled night sky) | `volumes/job/` |
+| Job | 4 · If a Man Die | 11–14 | title + 12 (pp. 35–46) | 95/95 verses full (the measures of the world as a technical section; the stump that sprouts again) | `volumes/job/` |
+| Job | 5 · My Witness Is in Heaven | 15–17 | title + 9 (pp. 47–55) | 73/73 verses full (the mockers and archers with no blow drawn) | `volumes/job/` |
+| Job | 6 · My Redeemer Liveth | 18–20 | title + 11 (pp. 56–66) | 79/79 verses full (19:25–27 over the dawn on the earth) | `volumes/job/` |
+| Job | 7 · Where I Might Find Him | 21–24 | title + 13 (pp. 67–79) | 106/106 verses full (23:8–9 as a compass of four empty ways) | `volumes/job/` |
+| Job | 8 · The Price of Wisdom | 25–28 | title + 10 (pp. 80–89) | 71/71 verses full (the mine in section; 28:25–26 as a blueprint plate) | `volumes/job/` |
+| Job | 9 · The Months of Old | 29–31 | title + 13 (pp. 90–102) | 96/96 verses full (31:10 as the hand-mill alone) | `volumes/job/` |
+| Job | 10 · Elihu | 32–37 | title + 21 (pp. 103–123) | 165/165 verses full (Elihu young in green; the storm of 36–37 ending in golden splendor) | `volumes/job/` |
+| Job | 11 · Out of the Whirlwind | 38–39 | title + 8 (pp. 124–131) | 71/71 verses full (Jehovah in the Voice box over the whirlwind; the foundations as a blueprint; 39:30 words only) | `volumes/job/` |
+| Job | 12 · Mine Eye Seeth Thee | 40–42 | title + 10 (pp. 132–141) | 75/75 verses full (behemoth as the river-horse, leviathan as the crocodile; the latter end as a tally board) | `volumes/job/` |
+| **Job** | **complete: cover + 12 chapters** | **1–42** | **154 pages (141 numbered)** | **1,070 verses: all full** | `volumes/job/` |
 
-**Genesis through Esther (seventeen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` has the wall and its gates as a plan,
+**Genesis through Job (eighteen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Job is `tools/full/job/` (12 chapters, plan and restraint notes in `job/__init__.py`): its own copies of the packer and speech panels
+(`job.jdiscourse`, `job.jspeech`) colour each speaker's song lines (`("song#D7261E", …)`), keep the poem's line breaks and name the
+speaker on the panel (`seg(..., who=)`); `job.common` `pf`/`pd`/`pf2`/`pd2` set a speaker's verses beside a face or over a drawing, `gpd`
+Jehovah's in Voice boxes; drawings in `job/art.py` … `art12.py` (`seated()`, `ostrich`, `hippo`, `croc`, `whirl` …). Cast: Job (white
+headcloth with a gold band, then a sackcloth hood), Eliphaz in teal, Bildad slate-purple, Zophar deep blue, Elihu young in green.
+Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` has the wall and its gates as a plan,
 `wall_plan(lit=, night=, companies=)`, the builders with a weapon in one hand, the pulpit of wood; `neh.common.plan_pages` sets one picture
 above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
-`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Job,
-Psalms, Proverbs, Ecclesiastes, the Song, Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `job`, `psa`, `pro`, `ecc`, `sng`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Psalms,
+Proverbs, Ecclesiastes, the Song, Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `psa`, `pro`, `ecc`, `sng`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
