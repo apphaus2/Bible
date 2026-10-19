@@ -524,3 +524,106 @@ def wall_done(p, w, h, seed):
          f'<rect x="{f(w * 0.46)}" y="{f(h * 0.82 - h * 0.12)}" width="{f(w * 0.08)}" height="{f(h * 0.02)}" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="1.4"></rect>',
          ground(w, h, h * 0.82, "#C8A06A", dy=0)]
     return "".join(o)
+
+# ---- Nehemiah 7 ---------------------------------------------------------------------------------------------------------
+def bars(w, h, rows, title="", ncol=2, color=CYAN, hi=None):
+    """A census as a bar chart in columns: rows of (name, number); the bar's length is the number, written at its end."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    n = len(rows); per = math.ceil(n / ncol)
+    top, bot = h * 0.06, h * (0.9 if title else 0.96)
+    rh = (bot - top) / per
+    mx = max(v for _, v in rows)
+    cw = w / ncol
+    size = max(7.5, min(10.5, rh * 0.42))
+    for i, (nm, val) in enumerate(rows):
+        c, r = divmod(i, per)
+        x0 = c * cw + cw * 0.46; y = top + r * rh + rh * 0.5
+        L = (cw * 0.36) * val / mx
+        col = GOLD if hi and nm in hi else color
+        o.append(label(x0 - 6, y + size * 0.36, nm, col, size, "end", ls=0.06)
+                 + f'<rect x="{f(x0)}" y="{f(y - rh * 0.3)}" width="{f(max(2, L))}" height="{f(rh * 0.6)}" fill="{col}" fill-opacity="0.35" stroke="{col}" stroke-width="1.4"></rect>'
+                 + label(x0 + L + 5, y + size * 0.36, f"{val:,}", col, size, "start", weight=700, ls=0.04))
+    if title: o.append(label(w * 0.5, h * 0.96, title, "#C8C2D6", 9))
+    return "".join(o)
+
+def tally_grid(w, h, rows, cols=4, title=""):
+    """A tally board in rows and columns: (name, number, colour) boxes, the number large."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    n = len(rows); nr = math.ceil(n / cols)
+    top, bot = h * 0.06, h * (0.88 if title else 0.96)
+    bh = (bot - top - (nr - 1) * h * 0.04) / nr
+    for i, (nm, num, c) in enumerate(rows):
+        r, k = divmod(i, cols)
+        m = min(cols, n - r * cols)
+        bw = w * 0.9 / cols - w * 0.02
+        x = w * 0.5 + (k - (m - 1) / 2) * (w * 0.9 / cols)
+        y = top + r * (bh + h * 0.04)
+        o.append(f'<rect x="{f(x - bw / 2)}" y="{f(y)}" width="{f(bw)}" height="{f(bh)}" fill="none" stroke="{c}" stroke-width="2"></rect>'
+                 + label(x, y + bh * 0.28, nm, c, max(7.5, min(11, bw / (len(nm) * 0.75 + 2))), ls=0.06)
+                 + f'<text x="{f(x)}" y="{f(y + bh * 0.78)}" fill="{c}" font-family="Anton, sans-serif" font-size="{f(min(bw / (len(num) * 0.62 + 1), bh * 0.42))}" text-anchor="middle">{num}</text>')
+    if title: o.append(label(w * 0.5, h * 0.95, title, "#C8C2D6", 9))
+    return "".join(o)
+
+def names_board(w, h, names, title="", cols=6, color=GOLD):
+    """Names set out on a board of tiles (the leaders who came with Zerubbabel, the men who stood by Ezra)."""
+    o = [grid_bg(w, h, color="#3A2A5A", bg="#1A1430")]
+    n = len(names); rows = math.ceil(n / cols)
+    top, bot = h * 0.08, h * (0.86 if title else 0.94)
+    gx = w * 0.02; tw = (w * 0.94 - gx * (cols - 1)) / cols; th = (bot - top - h * 0.04 * (rows - 1)) / rows
+    for i, nm in enumerate(names):
+        r, c = divmod(i, cols)
+        m = min(cols, n - r * cols)
+        x = w * 0.03 + (c + (cols - m) / 2) * (tw + gx); y = top + r * (th + h * 0.04)
+        o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(tw)}" height="{f(th)}" rx="4" fill="{color}" fill-opacity="0.12" stroke="{color}" stroke-width="1.6"></rect>'
+                 + label(x + tw / 2, y + th * 0.6, nm, color, max(7.5, min(12, tw / (len(nm) * 0.7 + 1))), ls=0.06))
+    if title: o.append(label(w * 0.5, h * 0.95, title, "#C8C2D6", 9))
+    return "".join(o)
+
+def genealogy_book(w, h, seed, gaps=False):
+    """The book of the genealogy of them that came up at the first: a long scroll unrolled, ruled with rows of names and
+    numbers (gaps=True: blank places where a register was sought and not found)."""
+    r = random.Random(seed)
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A1A2A"></rect>', V.rays(w * 0.5, h * 0.5, 24, 12, max(w, h), color="#E8C88A", op=0.1)]
+    x0, x1, y0, y1 = w * 0.12, w * 0.88, h * 0.14, h * 0.86
+    o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(x1 - x0)}" height="{f(y1 - y0)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="2.4"></rect>')
+    for side in (x0, x1):
+        o.append(f'<ellipse cx="{f(side)}" cy="{f((y0 + y1) / 2)}" rx="{f(w * 0.025)}" ry="{f((y1 - y0) * 0.54)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    rows = max(4, int((y1 - y0) / 16))
+    for c in range(3):
+        cx0 = x0 + w * 0.05 + c * (x1 - x0 - w * 0.06) / 3
+        for k in range(rows):
+            y = y0 + (k + 0.8) * (y1 - y0) / (rows + 0.4)
+            if gaps and r.random() < 0.18:
+                o.append(f'<rect x="{f(cx0)}" y="{f(y - 5)}" width="{f(w * 0.16)}" height="8" fill="none" stroke="#B5121B" stroke-width="1.4" stroke-dasharray="3 3"></rect>')
+                continue
+            o.append(f'<path d="M{f(cx0)} {f(y)} L {f(cx0 + w * r.uniform(0.08, 0.13))} {f(y)}" stroke="#5A3A22" stroke-width="2"></path>'
+                     f'<path d="M{f(cx0 + w * 0.15)} {f(y)} L {f(cx0 + w * 0.19)} {f(y)}" stroke="#8A5A30" stroke-width="2"></path>')
+    return "".join(o)
+
+def empty_city(w, h, seed):
+    """The city wide and large, but the people few therein, and the houses not builded: the new wall round a broad empty
+    city, a few houses, the house of God."""
+    r = random.Random(seed)
+    o = [K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.3, seed, "#B8A07A", amp=10, step=90), ground(w, h, h * 0.38, "#C8B88A", dy=0)]
+    o.append(K1.temple_front(w * 0.22, h * 0.5, w * 0.2, seed))
+    for _ in range(int(w / 50)):
+        x, y = r.uniform(w * 0.36, w * 0.96), r.uniform(h * 0.42, h * 0.7)
+        if r.random() < 0.3:
+            o.append(f'<rect x="{f(x)}" y="{f(y - 18)}" width="34" height="20" fill="#E8C88A" stroke="#0D0D0F" stroke-width="1.6"></rect><rect x="{f(x + 12)}" y="{f(y - 12)}" width="7" height="10" fill="#3A2214"></rect>')
+        else:
+            o.append(f'<path d="M{f(x)} {f(y)} l 8 -6 l 10 2 l 6 4 Z" fill="{STONE_D}" stroke="#0D0D0F" stroke-width="1.2"></path>')
+    o.append(stone_wall(-10, w + 10, h * 0.72, h + 10, seed))
+    o.append(S4b.gatehouse(w * 0.62, h * 0.98, w * 0.16, h * 0.32))
+    return "".join(o)
+
+def villages(p, w, h, seed):
+    """All Israel dwelt in their cities: walled towns on the hills of Judah, the seventh month, people going up the roads."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFC890", "#F3E8C8"), hills(w, h, h * 0.4, seed, "#9A9A6A", amp=14, step=90),
+         J.city_hill(w * 0.2, h * 0.56, w * 0.18, h * 0.16, seed), J.city_hill(w * 0.56, h * 0.5, w * 0.16, h * 0.14, seed + 1), J.city_hill(w * 0.86, h * 0.58, w * 0.18, h * 0.16, seed + 2),
+         hills(w, h, h * 0.62, seed + 3, "#8AA05A", amp=8, step=70), ground(w, h, h * 0.74, "#C8B07A", dy=0)]
+    s = fit(b, max(h * 0.5, b - 200))
+    for i in range(5):
+        x = w * (0.08 + i * 0.2)
+        o.append(man(p, x, b - (i % 2) * 5, s * 0.8, ("#5A4A3A", "#3A4A6A", "#6A3A2A", "#4A5A3A", "#5A3A5A")[i]) if i % 2 == 0 else woman(p, x, b - 5, s * 0.78, ("#C2456A", "#2E6B8A")[i // 2 % 2]))
+    return "".join(o)

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 124 verses — 124 full, 0 partial, 0 omitted.
+**So far:** 197 verses — 197 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Wall of Jerusalem (Nehemiah 1–2)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · The Work Finished (Nehemiah 5–6)
 
 38 verses: 38 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · The Genealogy of the Return (Nehemiah 7)
+
+73 verses: 73 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

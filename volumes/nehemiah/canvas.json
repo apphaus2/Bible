@@ -233,6 +233,69 @@
    "w": 760,
    "h": 1080,
    "title": "28 · In Fifty and Two Days"
+  },
+  "NEH-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Genealogy of the Return"
+  },
+  "NEH-C04-D-P01-TheDoorsSetUp.dc.html": {
+   "x": 840,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · The Doors Set Up"
+  },
+  "NEH-C04-D-P02-TheBookOfTheGeneal.dc.html": {
+   "x": 1680,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · The Book of the Genealogy"
+  },
+  "NEH-C04-E-P01-TheMenOfThePeople.dc.html": {
+   "x": 2520,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Men of the People"
+  },
+  "NEH-C04-E-P02-TheMenOfTheCities.dc.html": {
+   "x": 3360,
+   "y": 11900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Men of the Cities"
+  },
+  "NEH-C04-E-P03-ThePriestsAndTheLe.dc.html": {
+   "x": 0,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Priests and the Levites"
+  },
+  "NEH-C04-E-P04-TheNethinim.dc.html": {
+   "x": 840,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Nethinim"
+  },
+  "NEH-C04-F-P01-TheirRegisterWasNo.dc.html": {
+   "x": 1680,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Their Register Was Not Found"
+  },
+  "NEH-C04-F-P02-TheWholeAssemblyTo.dc.html": {
+   "x": 2520,
+   "y": 13100,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Whole Assembly Together"
   }
  },
  "order": [
@@ -267,7 +330,16 @@
   "NEH-C03-E-P01-ThePlainOfOno.dc.html",
   "NEH-C03-E-P02-AnOpenLetter.dc.html",
   "NEH-C03-E-P03-AnOpenLetter.dc.html",
-  "NEH-C03-E-P04-InFiftyAndTwoDays.dc.html"
+  "NEH-C03-E-P04-InFiftyAndTwoDays.dc.html",
+  "NEH-C04-00-Title.dc.html",
+  "NEH-C04-D-P01-TheDoorsSetUp.dc.html",
+  "NEH-C04-D-P02-TheBookOfTheGeneal.dc.html",
+  "NEH-C04-E-P01-TheMenOfThePeople.dc.html",
+  "NEH-C04-E-P02-TheMenOfTheCities.dc.html",
+  "NEH-C04-E-P03-ThePriestsAndTheLe.dc.html",
+  "NEH-C04-E-P04-TheNethinim.dc.html",
+  "NEH-C04-F-P01-TheirRegisterWasNo.dc.html",
+  "NEH-C04-F-P02-TheWholeAssemblyTo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -297,6 +369,13 @@
    "text": "Chapter 3 · The Work Finished (Nehemiah 5–6)",
    "x": 0,
    "y": 8700
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Genealogy of the Return (Nehemiah 7)",
+   "x": 0,
+   "y": 11600
   }
  },
  "designSystems": [],
