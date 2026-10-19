@@ -790,6 +790,17 @@ Never fall back to blobs or stick figures.
   - 39:7–18 is in full; drawn as faces, an empty doorway and the garment in her hand.
 - **Genesis faces:** Adam, Eve, Cain, Noah, Abraham, Sarah, Isaac, Jacob, Esau, Rachel, Joseph (also in
   Egyptian dress, weeping), Pharaoh of Joseph's day (gold-and-blue nemes), old Jacob — all in `faces.py`.
+- **Character guide (New Testament, `tools/full/ntcast.py`, shared by every New Testament volume):**
+  - Jesus is drawn as a man, always the same (the user chose this): a first-century Galilean, olive-brown skin, shoulder-length
+    dark-brown hair, a short dark-brown beard, an undyed off-white robe and a blue-grey mantle over one shoulder, a soft gold glow, no
+    halo. Faces `JESUS`, `JESUS_TEACH`, `JESUS_STERN`, `JESUS_GRIEF`, `JESUS_PASSION`, `JESUS_RISEN`; at a distance `jesus_fig(p, x, y, s)`.
+    His words are ordinary speech balloons. The Father is never drawn (the voice from heaven in the Voice box over light); the Spirit
+    at the baptism is a dove of light; angels are white light with a gold rim, no faces.
+  - The recurring cast is in `ntcast` too (Peter, Andrew, James, John, Matthew, Thomas, Philip, Judas, Mary, Mary Magdalene, Martha,
+    John the Baptist, a Pharisee, Caiaphas, Pilate, Herod, a centurion, Paul) with `ROBES` colours at a distance; never redraw them.
+  - The passion with restraint: scourging and the crown of thorns words over the empty court; the crucifixion as three crosses on the
+    hill against a darkened sky, from a distance only, no wounds or blood; his death words over the hill and the rent veil; the sealed
+    tomb; the resurrection as the stone rolled away and the folded linen, then Jesus risen in white light. Demons are never drawn.
 - **Serpents:** always `snake.py` (tapered body, belly scutes, blotches, viper head). The magicians'
   serpents are the brown recolor `exodus2.serpent(..., brown=True)`.
 
