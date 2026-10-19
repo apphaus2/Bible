@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 880 verses — 880 full, 0 partial, 0 omitted.
+**So far:** 961 verses — 961 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Visions of God (Ezekiel 1–3)
 
@@ -73,5 +73,11 @@ Every verse is on the page in full.
 ## Chapter 12 · The Watchman and the Shepherds (Ezekiel 33–34)
 
 64 verses: 64 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 13 · The Valley of Dry Bones (Ezekiel 35–37)
+
+81 verses: 81 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

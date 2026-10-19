@@ -1283,6 +1283,139 @@
    "w": 760,
    "h": 1080,
    "title": "169 · A Covenant of Peace"
+  },
+  "EZK-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · The Valley of Dry Bones"
+  },
+  "EZK-C13-D-P01-OMountSeir.dc.html": {
+   "x": 840,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · O Mount Seir"
+  },
+  "EZK-C13-D-P02-TheseTwoNations.dc.html": {
+   "x": 1680,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · These Two Nations"
+  },
+  "EZK-C13-D-P03-TheseTwoNations.dc.html": {
+   "x": 2520,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · These Two Nations"
+  },
+  "EZK-C13-D-P04-YeMountainsOfIsrae.dc.html": {
+   "x": 3360,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Ye Mountains of Israel, Hear"
+  },
+  "EZK-C13-D-P05-YeMountainsOfIsrae.dc.html": {
+   "x": 0,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · Ye Mountains of Israel, Hear"
+  },
+  "EZK-C13-D-P06-YeShallShootForthY.dc.html": {
+   "x": 840,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · Ye Shall Shoot Forth Your Branches"
+  },
+  "EZK-C13-D-P07-ForMineHolyName.dc.html": {
+   "x": 1680,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · For Mine Holy Name"
+  },
+  "EZK-C13-D-P08-ForMineHolyName.dc.html": {
+   "x": 2520,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · For Mine Holy Name"
+  },
+  "EZK-C13-D-P09-ANewHeartAlsoWillI.dc.html": {
+   "x": 3360,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · A New Heart Also Will I Give You"
+  },
+  "EZK-C13-D-P10-LikeTheGardenOfEde.dc.html": {
+   "x": 0,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Like the Garden of Eden"
+  },
+  "EZK-C13-D-P11-LikeTheGardenOfEde.dc.html": {
+   "x": 840,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Like the Garden of Eden"
+  },
+  "EZK-C13-D-P12-TheValleyFullOfBon.dc.html": {
+   "x": 1680,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · The Valley Full of Bones"
+  },
+  "EZK-C13-D-P13-BoneToItsBone.dc.html": {
+   "x": 2520,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Bone to Its Bone"
+  },
+  "EZK-C13-D-P14-TheseBonesAreTheWh.dc.html": {
+   "x": 3360,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · These Bones Are the Whole House of Israel"
+  },
+  "EZK-C13-D-P15-OneStick.dc.html": {
+   "x": 0,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · One Stick"
+  },
+  "EZK-C13-D-P16-OneNationUponTheMo.dc.html": {
+   "x": 840,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · One Nation upon the Mountains of Israel"
+  },
+  "EZK-C13-D-P17-OneNationUponTheMo.dc.html": {
+   "x": 1680,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · One Nation upon the Mountains of Israel"
+  },
+  "EZK-C13-D-P18-MySanctuaryInTheMi.dc.html": {
+   "x": 2520,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · My Sanctuary in the Midst of Them"
   }
  },
  "order": [
@@ -1467,7 +1600,26 @@
   "EZK-C12-D-P09-IMyselfWillSearchF.dc.html",
   "EZK-C12-D-P10-BetweenSheepAndShe.dc.html",
   "EZK-C12-D-P11-OneShepherd.dc.html",
-  "EZK-C12-D-P12-ACovenantOfPeace.dc.html"
+  "EZK-C12-D-P12-ACovenantOfPeace.dc.html",
+  "EZK-C13-00-Title.dc.html",
+  "EZK-C13-D-P01-OMountSeir.dc.html",
+  "EZK-C13-D-P02-TheseTwoNations.dc.html",
+  "EZK-C13-D-P03-TheseTwoNations.dc.html",
+  "EZK-C13-D-P04-YeMountainsOfIsrae.dc.html",
+  "EZK-C13-D-P05-YeMountainsOfIsrae.dc.html",
+  "EZK-C13-D-P06-YeShallShootForthY.dc.html",
+  "EZK-C13-D-P07-ForMineHolyName.dc.html",
+  "EZK-C13-D-P08-ForMineHolyName.dc.html",
+  "EZK-C13-D-P09-ANewHeartAlsoWillI.dc.html",
+  "EZK-C13-D-P10-LikeTheGardenOfEde.dc.html",
+  "EZK-C13-D-P11-LikeTheGardenOfEde.dc.html",
+  "EZK-C13-D-P12-TheValleyFullOfBon.dc.html",
+  "EZK-C13-D-P13-BoneToItsBone.dc.html",
+  "EZK-C13-D-P14-TheseBonesAreTheWh.dc.html",
+  "EZK-C13-D-P15-OneStick.dc.html",
+  "EZK-C13-D-P16-OneNationUponTheMo.dc.html",
+  "EZK-C13-D-P17-OneNationUponTheMo.dc.html",
+  "EZK-C13-D-P18-MySanctuaryInTheMi.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1560,6 +1712,13 @@
    "text": "Chapter 12 · The Watchman and the Shepherds (Ezekiel 33–34)",
    "x": 0,
    "y": 54000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · The Valley of Dry Bones (Ezekiel 35–37)",
+   "x": 0,
+   "y": 58100
   }
  },
  "designSystems": [],
