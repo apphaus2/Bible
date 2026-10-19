@@ -1164,6 +1164,69 @@
    "w": 760,
    "h": 1080,
    "title": "151 · The Book of the Covenant"
+  },
+  "2CH-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 54100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · The Seventy Years"
+  },
+  "2CH-C14-D-P01-JosiahKeptAPassove.dc.html": {
+   "x": 840,
+   "y": 54100,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · Josiah Kept a Passover"
+  },
+  "2CH-C14-D-P02-JosiahKeptAPassove.dc.html": {
+   "x": 1680,
+   "y": 54100,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Josiah Kept a Passover"
+  },
+  "2CH-C14-D-P03-JosiahKeptAPassove.dc.html": {
+   "x": 2520,
+   "y": 54100,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Josiah Kept a Passover"
+  },
+  "2CH-C14-D-P04-NecoKingOfEgypt.dc.html": {
+   "x": 3360,
+   "y": 54100,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Neco King of Egypt"
+  },
+  "2CH-C14-D-P05-JeremiahLamentedFo.dc.html": {
+   "x": 0,
+   "y": 55300,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · Jeremiah Lamented for Josiah"
+  },
+  "2CH-C14-R-P01-TheLastKingsOfJuda.dc.html": {
+   "x": 840,
+   "y": 55300,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · The Last Kings of Judah"
+  },
+  "2CH-C14-E-P01-TillThereWasNoReme.dc.html": {
+   "x": 1680,
+   "y": 55300,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · Till There Was No Remedy"
+  },
+  "2CH-C14-E-P02-LetHimGoUp.dc.html": {
+   "x": 2520,
+   "y": 55300,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Let Him Go Up"
   }
  },
  "order": [
@@ -1331,7 +1394,16 @@
   "2CH-C13-E-P04-TheBookOfTheLaw.dc.html",
   "2CH-C13-E-P05-HuldahTheProphetes.dc.html",
   "2CH-C13-E-P06-BecauseThyHeartWas.dc.html",
-  "2CH-C13-E-P07-TheBookOfTheCovena.dc.html"
+  "2CH-C13-E-P07-TheBookOfTheCovena.dc.html",
+  "2CH-C14-00-Title.dc.html",
+  "2CH-C14-D-P01-JosiahKeptAPassove.dc.html",
+  "2CH-C14-D-P02-JosiahKeptAPassove.dc.html",
+  "2CH-C14-D-P03-JosiahKeptAPassove.dc.html",
+  "2CH-C14-D-P04-NecoKingOfEgypt.dc.html",
+  "2CH-C14-D-P05-JeremiahLamentedFo.dc.html",
+  "2CH-C14-R-P01-TheLastKingsOfJuda.dc.html",
+  "2CH-C14-E-P01-TillThereWasNoReme.dc.html",
+  "2CH-C14-E-P02-LetHimGoUp.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1431,6 +1503,13 @@
    "text": "Chapter 13 · Manasseh and Josiah (2 Chronicles 33–34)",
    "x": 0,
    "y": 49700
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · The Seventy Years (2 Chronicles 35–36)",
+   "x": 0,
+   "y": 53800
   }
  },
  "designSystems": [],

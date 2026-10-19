@@ -197,9 +197,13 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 2 Chronicles | 11 · The Passover of Hezekiah | 30–31 | title + 8 (pp. 126–133) | 48/48 verses full (the posts with the letters as a map; the heaps of the tithes) | `volumes/2chronicles/` |
 | 2 Chronicles | 12 · Sennacherib | 32 | title + 7 (pp. 134–140) | 33/33 verses full (the springs stopped and Gihon as plans; 32:21 words over the silent camp) | `volumes/2chronicles/` |
 | 2 Chronicles | 13 · Manasseh and Josiah | 33–34 | title + 11 (pp. 141–151) | 58/58 verses full (33:6 and 33:24 words only; Manasseh in chains and humbled; the outer wall as a plan) | `volumes/2chronicles/` |
+| 2 Chronicles | 14 · The Seventy Years | 35–36 | title + 8 (pp. 152–159) | 50/50 verses full (35:23–24 and 36:17–19 words over the chariot and the burning city; the decree of Cyrus) | `volumes/2chronicles/` |
+| **2 Chronicles** | **complete: cover + 14 chapters** | **1–36** | **174 pages (159 numbered)** | **822 verses: all full** | `volumes/2chronicles/` |
 
-**Genesis through 1 Chronicles (thirteen volumes) are complete; 2 Chronicles is in progress** (`tools/full/chr2/`, fourteen chapters
-planned in `chr2/__init__.py`; Solomon's house reuses 1 Kings' blueprints, the kings of Judah reuse 1–2 Kings' faces and drawings). 1 Chronicles is `tools/full/chr1/` (a module
+**Genesis through 2 Chronicles (fourteen volumes) are complete.** Next: Ezra. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
+and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
+battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
 name cannot start with a digit; eleven chapters, plan in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts
 (`chr1.art.lineage`, `branch`, whose second row of names is staggered so no line crosses a name) over roll cells
 (`chr1.common.cell`/`cells`/`roll`); David's story reuses 2 Samuel's cast and drawings (`sa2.common.over`/`D` for the reference
@@ -754,6 +758,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (2 Chronicles in progress, then Ezra).
+- On through the Bible, book by book (Ezra next).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.

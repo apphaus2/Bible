@@ -48,5 +48,7 @@ META = {
      "blurb": "Sennacherib come into Judah; the fountains stopped and the wall built up — with him is an arm of flesh, but with us is Jehovah our God; whereon do ye trust?; the letters railing on Jehovah; Hezekiah and Isaiah cry to heaven, and the camp of Assyria cut off; Hezekiah sick and humbled; the upper spring of Gihon; and the ambassadors of Babylon."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Manasseh and Josiah", "range": "2 Chronicles 33–34", "bible_chapters": [33, 34],
      "blurb": "Manasseh's altars in the two courts and the graven image in the house of God; taken in chains to Babylon, he humbled himself greatly — then Manasseh knew that Jehovah he was God; Amon; then Josiah, who while yet young began to seek the God of David: I have found the book of the law; Huldah — because thy heart was tender; and the covenant read in the ears of all the people."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "The Seventy Years", "range": "2 Chronicles 35–36", "bible_chapters": [35, 36],
+     "blurb": "Josiah's passover, no passover like it since Samuel the prophet; Neco at Carchemish and the archers at Megiddo, and Jeremiah's lament; the last kings of Judah; the messengers mocked till there was no remedy; the house of God burned; the land keeping sabbath seventy years; and the proclamation of Cyrus king of Persia — let him go up."},
   ],
 }

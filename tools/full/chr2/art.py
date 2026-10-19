@@ -380,3 +380,28 @@ def law_read(p, w, h, seed):
              + f'<rect x="{f(w * 0.5 + 30 * s)}" y="{f(h * 0.72 - 172 * s)}" width="{f(30 * s)}" height="{f(24 * s)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.6"></rect>')
     o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.34, h * 0.76, b, 9, s * 0.7, s * 1.1) + crowd_at(p, w, h, seed + 1, w * 0.66, w * 0.98, h * 0.76, b, 9, s * 0.7, s * 1.1, flip=True))
     return "".join(o)
+
+# ---- 2 Chronicles 35–36 -------------------------------------------------------------------------------------------------
+def sabbath_land(w, h, seed):
+    """The land enjoying its sabbaths: the hills of Judah empty and green, the broken wall far off overgrown, quiet."""
+    o = [K2.sky(w, h, "#8FD0E2", "#F3E8C8"), sun(w * 0.82, h * 0.2, 20, color="#FFE680", op=0.35), hills(w, h, h * 0.44, seed, "#7A9A5A", amp=14, step=90),
+         J.city_hill(w * 0.3, h * 0.58, w * 0.3, h * 0.16, seed), hills(w, h, h * 0.6, seed + 1, "#8AB06A", amp=10, step=70), ground(w, h, h * 0.72, "#9CCB5E", dy=0)]
+    r = random.Random(seed)
+    for _ in range(30):
+        x, y = r.uniform(0, w), r.uniform(h * 0.74, h * 0.98)
+        o.append(f'<path d="M{f(x)} {f(y)} l -4 -10 M{f(x)} {f(y)} l 0 -12 M{f(x)} {f(y)} l 4 -10" stroke="#5A8A3A" stroke-width="2"></path>')
+    return "".join(o)
+
+def cyrus_decree(p, w, h, seed):
+    """The proclamation of Cyrus king of Persia: a herald reading a scroll at a city gate under the Persian standard, the
+    exiles listening, the road west open."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#FFC890", "#FFE680"), sun(w * 0.12, h * 0.3, 24, color="#FFF4C2", op=0.4), S4b.gatehouse(w * 0.7, h * 0.78, w * 0.46, h * 0.56),
+         ground(w, h, h * 0.78, "#C8A06A", dy=0),
+         f'<path d="M{f(w * 0.88)} {f(h * 0.2)} L {f(w * 0.88)} {f(h * 0.78)}" stroke="#3A2A1A" stroke-width="4"></path>'
+         f'<path d="M{f(w * 0.88)} {f(h * 0.2)} L {f(w * 0.98)} {f(h * 0.24)} L {f(w * 0.88)} {f(h * 0.3)} Z" fill="#7A2A6A" stroke="#0D0D0F" stroke-width="2"></path>']
+    s = fit(b, max(h * 0.44, b - 220))
+    o.append(man(p, w * 0.62, b, s, "#7A2A6A", up=[(22, -158), (34, -176), (40, -150)], flip=True)
+             + f'<rect x="{f(w * 0.62 - 64 * s)}" y="{f(b - 172 * s)}" width="{f(30 * s)}" height="{f(24 * s)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(crowd_at(p, w, h, seed, w * 0.04, w * 0.46, h * 0.82, b, 10, s * 0.7, s * 1.0))
+    return "".join(o)
