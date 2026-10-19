@@ -231,9 +231,35 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Job | 11 · Out of the Whirlwind | 38–39 | title + 8 (pp. 124–131) | 71/71 verses full (Jehovah in the Voice box over the whirlwind; the foundations as a blueprint; 39:30 words only) | `volumes/job/` |
 | Job | 12 · Mine Eye Seeth Thee | 40–42 | title + 10 (pp. 132–141) | 75/75 verses full (behemoth as the river-horse, leviathan as the crocodile; the latter end as a tally board) | `volumes/job/` |
 | **Job** | **complete: cover + 12 chapters** | **1–42** | **154 pages (141 numbered)** | **1,070 verses: all full** | `volumes/job/` |
+| Proverbs | 1 · The Beginning of Knowledge | 1–3 | cover + title + 12 (pp. 1–12) | 90/90 verses full (the father's words beside Solomon's face; Wisdom at the gate in white and gold light; the strange woman's house with no one drawn) | `volumes/proverbs/` |
+| Proverbs | 2 · Get Wisdom | 4–6 | title + 12 (pp. 13–24) | 85/85 verses full (the strange woman never drawn, only a shut door at dusk; the ant; the six things, yea seven, as numbered signs) | `volumes/proverbs/` |
+| Proverbs | 3 · Wisdom Hath Builded Her House | 7–9 | title + 12 (pp. 25–36) | 81/81 verses full (Proverbs 7 as the lattice, the street at twilight, a far veiled figure; the seven pillars) | `volumes/proverbs/` |
+| Proverbs | 4 · A Wise Son | 10–12 | title + 12 (pp. 37–48) | 91/91 verses full (saying cells, one verse each under an emblem: `pro.common.sayings`) | `volumes/proverbs/` |
+| Proverbs | 5 · A Tree of Life | 13–15 | title + 13 (pp. 49–61) | 93/93 verses full (saying cells; 13:12 a drawn cell) | `volumes/proverbs/` |
+| Proverbs | 6 · The Lot Is Cast into the Lap | 16–18 | title + 11 (pp. 62–72) | 85/85 verses full (saying cells) | `volumes/proverbs/` |
+| Proverbs | 7 · The King's Heart | 19–21 | title + 12 (pp. 73–84) | 90/90 verses full (saying cells; 21:1 the king among the watercourses) | `volumes/proverbs/` |
+| Proverbs | 8 · The Words of the Wise | 22–24 | title + 11 (pp. 85–95) | 98/98 verses full (23:29–35 words over the red cup, no drunkard drawn; 24:30–34 the sluggard's field) | `volumes/proverbs/` |
+| Proverbs | 9 · Apples of Gold | 25–27 | title + 10 (pp. 96–105) | 83/83 verses full (25:1 the men of Hezekiah at their scrolls) | `volumes/proverbs/` |
+| Proverbs | 10 · Bold as a Lion | 28–29 | title + 8 (pp. 106–113) | 55/55 verses full (saying cells) | `volumes/proverbs/` |
+| Proverbs | 11 · A Worthy Woman | 30–31 | title + 11 (pp. 114–124) | 64/64 verses full (Agur's numbered sayings as numbered signs; the worthy woman's household in song boxes) | `volumes/proverbs/` |
+| **Proverbs** | **complete: cover + 11 chapters** | **1–31** | **136 pages (124 numbered)** | **915 verses: all full** | `volumes/proverbs/` |
+| Ecclesiastes | 1 · Vanity of Vanities | 1–3 | cover + title + 15 (pp. 1–15) | 66/66 verses full (the sun's course, the wind's circuits and the rivers as diagrams; a time to every purpose as a ring of cells) | `volumes/ecclesiastes/` |
+| Ecclesiastes | 2 · Two Are Better than One | 4–6 | title + 10 (pp. 16–25) | 48/48 verses full (the threefold cord as a blueprint) | `volumes/ecclesiastes/` |
+| Ecclesiastes | 3 · A Good Name | 7–9 | title + 14 (pp. 26–39) | 64/64 verses full (one among a thousand as a grid of marks) | `volumes/ecclesiastes/` |
+| Ecclesiastes | 4 · Remember Thy Creator | 10–12 | title + 10 (pp. 40–49) | 44/44 verses full (the silver cord and golden bowl as a plate of cells; 12:7 as dust and a light going up) | `volumes/ecclesiastes/` |
+| **Ecclesiastes** | **complete: cover + 4 chapters** | **1–12** | **54 pages (49 numbered)** | **222 verses: all full** | `volumes/ecclesiastes/` |
+| Song of Solomon | 1 · I Am a Rose of Sharon | 1–2 | cover + title + 8 (pp. 1–8) | 34/34 verses full (vineyards, the rose and the lily, roes, the winter past) | `volumes/songofsolomon/` |
+| Song of Solomon | 2 · A Garden Shut Up | 3–5 | title + 12 (pp. 9–20) | 43/43 verses full (4:1–5 and 5:10–16 as plates of likeness cells only) | `volumes/songofsolomon/` |
+| Song of Solomon | 3 · Love Is Strong as Death | 6–8 | title + 9 (pp. 21–29) | 40/40 verses full (7:1–9 as plates of cells only; 8:6–7 a flame over the floods) | `volumes/songofsolomon/` |
+| **Song of Solomon** | **complete: cover + 3 chapters** | **1–8** | **33 pages (29 numbered)** | **117 verses: all full** | `volumes/songofsolomon/` |
 
-**Genesis through Job (eighteen volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Job is `tools/full/job/` (12 chapters, plan and restraint notes in `job/__init__.py`): its own copies of the packer and speech panels
+**Genesis through Job, and Proverbs through the Song of Solomon (twenty-one volumes), are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Proverbs is `tools/full/pro/` (11 chapters): 1–9 and 30–31 by `discourse.pack` through `pro.common`; 10–29 as saying cells, two to a row
+under an emblem (`pro.common.sayings`, `cellv`, `run`; ~117 emblems in `pro/emblems.py`, `pick()` chooses by the saying's words); Wisdom
+in white with a gold band in gold light (`wisdom_fig`), the strange woman only far off and veiled. Ecclesiastes is `tools/full/ecc/` (the
+Preacher is old Solomon) and the Song `tools/full/sng/` (the bride, the beloved and the daughters as faces; the likenesses only as the
+things named, in cells: `sng.art.plate`); both have `common.drawn(refs, fn, bg)` (art sized under the song lines) and `paged()`.
+Job is `tools/full/job/` (12 chapters, plan and restraint notes in `job/__init__.py`): its own copies of the packer and speech panels
 (`job.jdiscourse`, `job.jspeech`) colour each speaker's song lines (`("song#D7261E", …)`), keep the poem's line breaks and name the
 speaker on the panel (`seg(..., who=)`); `job.common` `pf`/`pd`/`pf2`/`pd2` set a speaker's verses beside a face or over a drawing, `gpd`
 Jehovah's in Voice boxes; drawings in `job/art.py` … `art12.py` (`seated()`, `ostrich`, `hippo`, `croc`, `whirl` …). Cast: Job (white
@@ -244,7 +270,7 @@ above roll cells on every page of a list chapter). Nehemiah: black beard, slate-
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
 `pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Psalms,
-Proverbs, Ecclesiastes, the Song, Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `psa`, `pro`, `ecc`, `sng`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+Isaiah and Jeremiah–Lamentations are being built in parallel worktrees (packages `psa`, `isa`, `jer`, `lam`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
@@ -802,6 +828,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (Nehemiah, Esther, Job, Proverbs in progress; then Psalms, Ecclesiastes …).
+- On through the Bible, book by book (Psalms, Isaiah, Jeremiah and Lamentations in progress; then Ezekiel …).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.
