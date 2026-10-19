@@ -60,6 +60,10 @@ class Lines:
         rest = self.v(ref, after=at)
         if poem: rest = br(rest)
         return [("cap", self.v(ref, to=at)), ("god", rest) if who == "god" else ("song" + self.spk[who][1], rest)]
+    def split(self, ref, at, who1, who2):
+        """A verse split after the words `at` between two speakers' boxes (a speaker may be "god" or "cap")."""
+        def box(who, t): return ("god", t) if who == "god" else ("cap", t) if who == "cap" else ("song" + self.spk[who][1], t)
+        return [box(who1, self.v(ref, to=at)), box(who2, self.v(ref, after=at))]
     def joined(self, kind, *parts):
         """One box from several cuts: joined("god", ("1:2", "Let there"), "1:3") — a ref alone is the whole verse."""
         return (kind, " ".join(self.v(p) if isinstance(p, str) else self.v(p[0], frm=p[1], to=p[2] if len(p) > 2 else None) for p in parts))
@@ -81,5 +85,5 @@ class Lines:
     def pack(self, segs, prefix, start, **k):
         k.setdefault("by_need", True)
         k.setdefault("room", 1.3)
-        k.setdefault("min_size", 12.5)
+        k.setdefault("min_size", 14)
         return _pack(segs, prefix, start, book=self.book, code=self.code, **k)

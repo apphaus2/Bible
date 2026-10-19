@@ -20,7 +20,7 @@ SPK = {"daniel": ("DANIEL", "#1F5FAD"), "king": ("NEBUCHADNEZZAR", "#C8962E"), "
        "queen": ("THE QUEEN", "#B8862E"), "darius": ("DARIUS", "#A8283A"), "princes": ("THE PRESIDENTS AND THE SATRAPS", "#6A4A3A"),
        "watcher": ("A WATCHER, A HOLY ONE", "#D8A820"), "voice": ("A VOICE FROM HEAVEN", "#D8A820"), "angel": ("ONE THAT STOOD BY", "#D8A820"),
        "holy": ("A HOLY ONE", "#D8A820"), "gabriel": ("GABRIEL", "#D8A820"), "linen": ("THE MAN CLOTHED IN LINEN", "#D8A820"),
-       "touch": ("ONE LIKE THE SONS OF MEN", "#D8A820")}
+       "touch": ("ONE LIKE THE SONS OF MEN", "#D8A820"), "ulai": ("A MAN'S VOICE", "#D8A820")}
 L = Lines(G, "DAN", "Daniel", SPK)
 v, sp = G.v, G.span
 

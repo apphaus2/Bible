@@ -136,19 +136,19 @@
    "h": 1080,
    "title": "15 · Certain Chaldeans Came Near"
   },
-  "DAN-C02-D-P03-SevenTimesMore.dc.html": {
+  "DAN-C02-D-P03-ButIfNot.dc.html": {
    "x": 2520,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "16 · Seven Times More"
+   "title": "16 · But If Not"
   },
-  "DAN-C02-D-P04-FourMenLoose.dc.html": {
+  "DAN-C02-D-P04-SevenTimesMore.dc.html": {
    "x": 3360,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "17 · Four Men Loose"
+   "title": "17 · Seven Times More"
   },
   "DAN-C02-D-P05-FourMenLoose.dc.html": {
    "x": 0,
@@ -157,47 +157,61 @@
    "h": 1080,
    "title": "18 · Four Men Loose"
   },
-  "DAN-C02-E-P01-UntoAllThePeoples.dc.html": {
+  "DAN-C02-D-P06-FourMenLoose.dc.html": {
    "x": 840,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "19 · Unto All the Peoples"
+   "title": "19 · Four Men Loose"
   },
-  "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html": {
+  "DAN-C02-E-P01-UntoAllThePeoples.dc.html": {
    "x": 1680,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "20 · A Tree in the Midst of the Earth"
+   "title": "20 · Unto All the Peoples"
   },
-  "DAN-C02-E-P03-ItIsThouOKing.dc.html": {
+  "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html": {
    "x": 2520,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "21 · It Is Thou, O King"
+   "title": "21 · A Tree in the Midst of the Earth"
   },
-  "DAN-C02-E-P04-ItIsThouOKing.dc.html": {
+  "DAN-C02-E-P03-ATreeInTheMidstOfT.dc.html": {
    "x": 3360,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "22 · It Is Thou, O King"
+   "title": "22 · A Tree in the Midst of the Earth"
   },
-  "DAN-C02-E-P05-IsNotThisGreatBaby.dc.html": {
+  "DAN-C02-E-P04-ItIsThouOKing.dc.html": {
    "x": 0,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "23 · Is Not This Great Babylon?"
+   "title": "23 · It Is Thou, O King"
   },
-  "DAN-C02-E-P06-MineUnderstandingR.dc.html": {
+  "DAN-C02-E-P05-ItIsThouOKing.dc.html": {
    "x": 840,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "24 · Mine Understanding Returned"
+   "title": "24 · It Is Thou, O King"
+  },
+  "DAN-C02-E-P06-IsNotThisGreatBaby.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Is Not This Great Babylon?"
+  },
+  "DAN-C02-E-P07-MineUnderstandingR.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Mine Understanding Returned"
   },
   "DAN-C03-00-Title.dc.html": {
    "x": 0,
@@ -206,89 +220,187 @@
    "h": 1080,
    "title": "Chapter 3 · The Den of Lions"
   },
-  "DAN-C03-D-P01-TheWritingUponTheP.dc.html": {
+  "DAN-C03-D-P01-BelshazzarMadeAGre.dc.html": {
    "x": 840,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "25 · The Writing upon the Plaster"
+   "title": "27 · Belshazzar Made a Great Feast"
   },
   "DAN-C03-D-P02-TheWritingUponTheP.dc.html": {
    "x": 1680,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "26 · The Writing upon the Plaster"
+   "title": "28 · The Writing upon the Plaster"
   },
   "DAN-C03-D-P03-ArtThouThatDaniel.dc.html": {
    "x": 2520,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "27 · Art Thou That Daniel?"
+   "title": "29 · Art Thou That Daniel?"
   },
-  "DAN-C03-D-P04-MeneMeneTekelUphar.dc.html": {
+  "DAN-C03-D-P04-ArtThouThatDaniel.dc.html": {
    "x": 3360,
    "y": 10200,
    "w": 760,
    "h": 1080,
-   "title": "28 · Mene, Mene, Tekel, Upharsin"
+   "title": "30 · Art Thou That Daniel?"
   },
-  "DAN-C03-D-P05-InThatNight.dc.html": {
+  "DAN-C03-D-P05-MeneMeneTekelUphar.dc.html": {
    "x": 0,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "29 · In That Night"
+   "title": "31 · Mene, Mene, Tekel, Upharsin"
   },
-  "DAN-C03-E-P01-ThreePresidents.dc.html": {
+  "DAN-C03-D-P06-InThatNight.dc.html": {
    "x": 840,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "30 · Three Presidents"
+   "title": "32 · In That Night"
   },
-  "DAN-C03-E-P02-ThreePresidents.dc.html": {
+  "DAN-C03-E-P01-ThreePresidents.dc.html": {
    "x": 1680,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "31 · Three Presidents"
+   "title": "33 · Three Presidents"
   },
-  "DAN-C03-E-P03-HisWindowsWereOpen.dc.html": {
+  "DAN-C03-E-P02-ThreePresidents.dc.html": {
    "x": 2520,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "32 · His Windows Were Open"
+   "title": "34 · Three Presidents"
   },
-  "DAN-C03-E-P04-TheDenOfLions.dc.html": {
+  "DAN-C03-E-P03-HisWindowsWereOpen.dc.html": {
    "x": 3360,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "33 · The Den of Lions"
+   "title": "35 · His Windows Were Open"
   },
-  "DAN-C03-E-P05-VeryEarlyInTheMorn.dc.html": {
+  "DAN-C03-E-P04-TheDenOfLions.dc.html": {
    "x": 0,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "34 · Very Early in the Morning"
+   "title": "36 · The Den of Lions"
   },
-  "DAN-C03-E-P06-VeryEarlyInTheMorn.dc.html": {
+  "DAN-C03-E-P05-VeryEarlyInTheMorn.dc.html": {
    "x": 840,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "35 · Very Early in the Morning"
+   "title": "37 · Very Early in the Morning"
   },
-  "DAN-C03-E-P07-TheLivingGod.dc.html": {
+  "DAN-C03-E-P06-VeryEarlyInTheMorn.dc.html": {
    "x": 1680,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "36 · The Living God"
+   "title": "38 · Very Early in the Morning"
+  },
+  "DAN-C03-E-P07-TheLivingGod.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Living God"
+  },
+  "DAN-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Ancient of Days"
+  },
+  "DAN-C04-D-P01-FourGreatBeasts.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Four Great Beasts"
+  },
+  "DAN-C04-D-P02-FourGreatBeasts.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Four Great Beasts"
+  },
+  "DAN-C04-D-P03-OneThatWasAncientO.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · One That Was Ancient of Days"
+  },
+  "DAN-C04-D-P04-OneLikeUntoASonOfM.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · One Like unto a Son of Man"
+  },
+  "DAN-C04-D-P05-OneLikeUntoASonOfM.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · One Like unto a Son of Man"
+  },
+  "DAN-C04-D-P06-OneLikeUntoASonOfM.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · One Like unto a Son of Man"
+  },
+  "DAN-C04-D-P07-OneLikeUntoASonOfM.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · One Like unto a Son of Man"
+  },
+  "DAN-C04-E-P01-TheRamAndTheHeGoat.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Ram and the He-goat"
+  },
+  "DAN-C04-E-P02-TheRamAndTheHeGoat.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Ram and the He-goat"
+  },
+  "DAN-C04-E-P03-HowLongShallBeTheV.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · How Long Shall Be the Vision?"
+  },
+  "DAN-C04-E-P04-Gabriel.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Gabriel"
+  },
+  "DAN-C04-E-P05-Gabriel.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Gabriel"
   }
  },
  "order": [
@@ -310,28 +422,44 @@
   "DAN-C02-00-Title.dc.html",
   "DAN-C02-D-P01-TheImageOfGold.dc.html",
   "DAN-C02-D-P02-CertainChaldeansCa.dc.html",
-  "DAN-C02-D-P03-SevenTimesMore.dc.html",
-  "DAN-C02-D-P04-FourMenLoose.dc.html",
+  "DAN-C02-D-P03-ButIfNot.dc.html",
+  "DAN-C02-D-P04-SevenTimesMore.dc.html",
   "DAN-C02-D-P05-FourMenLoose.dc.html",
+  "DAN-C02-D-P06-FourMenLoose.dc.html",
   "DAN-C02-E-P01-UntoAllThePeoples.dc.html",
   "DAN-C02-E-P02-ATreeInTheMidstOfT.dc.html",
-  "DAN-C02-E-P03-ItIsThouOKing.dc.html",
+  "DAN-C02-E-P03-ATreeInTheMidstOfT.dc.html",
   "DAN-C02-E-P04-ItIsThouOKing.dc.html",
-  "DAN-C02-E-P05-IsNotThisGreatBaby.dc.html",
-  "DAN-C02-E-P06-MineUnderstandingR.dc.html",
+  "DAN-C02-E-P05-ItIsThouOKing.dc.html",
+  "DAN-C02-E-P06-IsNotThisGreatBaby.dc.html",
+  "DAN-C02-E-P07-MineUnderstandingR.dc.html",
   "DAN-C03-00-Title.dc.html",
-  "DAN-C03-D-P01-TheWritingUponTheP.dc.html",
+  "DAN-C03-D-P01-BelshazzarMadeAGre.dc.html",
   "DAN-C03-D-P02-TheWritingUponTheP.dc.html",
   "DAN-C03-D-P03-ArtThouThatDaniel.dc.html",
-  "DAN-C03-D-P04-MeneMeneTekelUphar.dc.html",
-  "DAN-C03-D-P05-InThatNight.dc.html",
+  "DAN-C03-D-P04-ArtThouThatDaniel.dc.html",
+  "DAN-C03-D-P05-MeneMeneTekelUphar.dc.html",
+  "DAN-C03-D-P06-InThatNight.dc.html",
   "DAN-C03-E-P01-ThreePresidents.dc.html",
   "DAN-C03-E-P02-ThreePresidents.dc.html",
   "DAN-C03-E-P03-HisWindowsWereOpen.dc.html",
   "DAN-C03-E-P04-TheDenOfLions.dc.html",
   "DAN-C03-E-P05-VeryEarlyInTheMorn.dc.html",
   "DAN-C03-E-P06-VeryEarlyInTheMorn.dc.html",
-  "DAN-C03-E-P07-TheLivingGod.dc.html"
+  "DAN-C03-E-P07-TheLivingGod.dc.html",
+  "DAN-C04-00-Title.dc.html",
+  "DAN-C04-D-P01-FourGreatBeasts.dc.html",
+  "DAN-C04-D-P02-FourGreatBeasts.dc.html",
+  "DAN-C04-D-P03-OneThatWasAncientO.dc.html",
+  "DAN-C04-D-P04-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-D-P05-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-D-P06-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-D-P07-OneLikeUntoASonOfM.dc.html",
+  "DAN-C04-E-P01-TheRamAndTheHeGoat.dc.html",
+  "DAN-C04-E-P02-TheRamAndTheHeGoat.dc.html",
+  "DAN-C04-E-P03-HowLongShallBeTheV.dc.html",
+  "DAN-C04-E-P04-Gabriel.dc.html",
+  "DAN-C04-E-P05-Gabriel.dc.html"
  ],
  "notes": {
   "Main": {
@@ -361,6 +489,13 @@
    "text": "Chapter 3 · The Den of Lions (Daniel 5–6)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Ancient of Days (Daniel 7–8)",
+   "x": 0,
+   "y": 14000
   }
  },
  "designSystems": [],
