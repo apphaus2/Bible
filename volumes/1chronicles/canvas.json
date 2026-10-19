@@ -513,6 +513,104 @@
    "w": 760,
    "h": 1080,
    "title": "65 · Before the Ark Continually"
+  },
+  "1CH-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Thy Throne for Ever"
+  },
+  "1CH-C07-D-P01-AHouseOfCedar.dc.html": {
+   "x": 840,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · A House of Cedar"
+  },
+  "1CH-C07-D-P02-TheWordOfGodCameTo.dc.html": {
+   "x": 1680,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Word of God Came to Nathan"
+  },
+  "1CH-C07-D-P03-TheWordOfGodCameTo.dc.html": {
+   "x": 2520,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Word of God Came to Nathan"
+  },
+  "1CH-C07-D-P04-WhoAmIOJehovahGod.dc.html": {
+   "x": 3360,
+   "y": 24200,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Who Am I, O Jehovah God?"
+  },
+  "1CH-C07-D-P05-WhoAmIOJehovahGod.dc.html": {
+   "x": 0,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Who Am I, O Jehovah God?"
+  },
+  "1CH-C07-E-P01-JehovahGaveVictory.dc.html": {
+   "x": 840,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Jehovah Gave Victory to David"
+  },
+  "1CH-C07-E-P02-TouKingOfHamath.dc.html": {
+   "x": 1680,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Tou King of Hamath"
+  },
+  "1CH-C07-F-P01-Hanun.dc.html": {
+   "x": 2520,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Hanun"
+  },
+  "1CH-C07-F-P02-Hanun.dc.html": {
+   "x": 3360,
+   "y": 25400,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Hanun"
+  },
+  "1CH-C07-F-P03-Hanun.dc.html": {
+   "x": 0,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Hanun"
+  },
+  "1CH-C07-F-P04-Shophach.dc.html": {
+   "x": 840,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Shophach"
+  },
+  "1CH-C07-G-P01-Rabbah.dc.html": {
+   "x": 1680,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Rabbah"
+  },
+  "1CH-C07-G-P02-BornUntoTheGiant.dc.html": {
+   "x": 2520,
+   "y": 26600,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Born unto the Giant"
   }
  },
  "order": [
@@ -587,7 +685,21 @@
   "1CH-C06-U-P02-OGiveThanksUntoJeh.dc.html",
   "1CH-C06-U-P03-OGiveThanksUntoJeh.dc.html",
   "1CH-C06-U-P04-OGiveThanksUntoJeh.dc.html",
-  "1CH-C06-V-P01-BeforeTheArkContin.dc.html"
+  "1CH-C06-V-P01-BeforeTheArkContin.dc.html",
+  "1CH-C07-00-Title.dc.html",
+  "1CH-C07-D-P01-AHouseOfCedar.dc.html",
+  "1CH-C07-D-P02-TheWordOfGodCameTo.dc.html",
+  "1CH-C07-D-P03-TheWordOfGodCameTo.dc.html",
+  "1CH-C07-D-P04-WhoAmIOJehovahGod.dc.html",
+  "1CH-C07-D-P05-WhoAmIOJehovahGod.dc.html",
+  "1CH-C07-E-P01-JehovahGaveVictory.dc.html",
+  "1CH-C07-E-P02-TouKingOfHamath.dc.html",
+  "1CH-C07-F-P01-Hanun.dc.html",
+  "1CH-C07-F-P02-Hanun.dc.html",
+  "1CH-C07-F-P03-Hanun.dc.html",
+  "1CH-C07-F-P04-Shophach.dc.html",
+  "1CH-C07-G-P01-Rabbah.dc.html",
+  "1CH-C07-G-P02-BornUntoTheGiant.dc.html"
  ],
  "notes": {
   "Main": {
@@ -638,6 +750,13 @@
    "text": "Chapter 6 · The Ark of God (1 Chronicles 13–16)",
    "x": 0,
    "y": 18600
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Thy Throne for Ever (1 Chronicles 17–20)",
+   "x": 0,
+   "y": 23900
   }
  },
  "designSystems": [],

@@ -34,5 +34,7 @@ META = {
      "blurb": "Saul and his sons fallen on mount Gilboa, and the valiant men of Jabesh who buried their bones under the oak; then all Israel at Hebron — behold, we are thy bone and thy flesh; the stronghold of Zion; the mighty men, and the water of the well of Beth-lehem poured out unto Jehovah; thine are we, David; and three days of feasting, for there was joy in Israel."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "The Ark of God", "range": "1 Chronicles 13–16", "bible_chapters": [13, 14, 15, 16],
      "blurb": "Let us bring again the ark of our God: the new cart, Uzza at the threshing-floor of Chidon, and three months in the house of Obed-edom; Hiram's cedars and the sound of marching in the tops of the mulberry-trees; then the Levites bear the ark on their shoulders, the singers sound aloud, David dances, and Asaph sings — O give thanks unto Jehovah, for his lovingkindness endureth for ever."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Thy Throne for Ever", "range": "1 Chronicles 17–20", "bible_chapters": [17, 18, 19, 20],
+     "blurb": "Lo, I dwell in a house of cedar, but the ark dwelleth under curtains; the word of God to Nathan by night — I will build thee a house, and I will establish his throne for ever; who am I, O Jehovah God?; David's wars and the shields of gold; Hanun and the messengers shamed; Joab before and behind; Rabbah and the crown of gold; and the sons of the giant in Gath."},
   ],
 }

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 611 verses — 611 full, 0 partial, 0 omitted.
+**So far:** 682 verses — 682 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · From Adam (1 Chronicles 1–2)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · The Ark of God (1 Chronicles 13–16)
 
 103 verses: 103 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · Thy Throne for Ever (1 Chronicles 17–20)
+
+71 verses: 71 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
