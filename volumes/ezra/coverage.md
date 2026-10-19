@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 118 verses — 118 full, 0 partial, 0 omitted.
+**So far:** 157 verses — 157 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Decree of Cyrus (Ezra 1–2)
 
@@ -13,5 +13,11 @@ Every verse is on the page in full.
 ## Chapter 2 · The Foundation of the House (Ezra 3–4)
 
 37 verses: 37 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 3 · The House Finished (Ezra 5–6)
+
+39 verses: 39 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

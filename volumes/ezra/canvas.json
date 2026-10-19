@@ -128,6 +128,55 @@
    "w": 760,
    "h": 1080,
    "title": "14 · The Letter to Artaxerxes"
+  },
+  "EZR-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The House Finished"
+  },
+  "EZR-C03-D-P01-Tattenai.dc.html": {
+   "x": 840,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Tattenai"
+  },
+  "EZR-C03-D-P02-TheLetterToDarius.dc.html": {
+   "x": 1680,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · The Letter to Darius"
+  },
+  "EZR-C03-D-P03-TheLetterToDarius.dc.html": {
+   "x": 2520,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Letter to Darius"
+  },
+  "EZR-C03-E-P01-TheRollAtAchmetha.dc.html": {
+   "x": 3360,
+   "y": 7800,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Roll at Achmetha"
+  },
+  "EZR-C03-E-P02-LetTheWorkOfThisHo.dc.html": {
+   "x": 0,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Let the Work of This House Alone"
+  },
+  "EZR-C03-F-P01-ThisHouseWasFinish.dc.html": {
+   "x": 840,
+   "y": 9000,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · This House Was Finished"
   }
  },
  "order": [
@@ -147,7 +196,14 @@
   "EZR-C02-D-P03-TheNoiseOfTheWeepi.dc.html",
   "EZR-C02-E-P01-TheAdversaries.dc.html",
   "EZR-C02-F-P01-TheLetterToArtaxer.dc.html",
-  "EZR-C02-F-P02-TheLetterToArtaxer.dc.html"
+  "EZR-C02-F-P02-TheLetterToArtaxer.dc.html",
+  "EZR-C03-00-Title.dc.html",
+  "EZR-C03-D-P01-Tattenai.dc.html",
+  "EZR-C03-D-P02-TheLetterToDarius.dc.html",
+  "EZR-C03-D-P03-TheLetterToDarius.dc.html",
+  "EZR-C03-E-P01-TheRollAtAchmetha.dc.html",
+  "EZR-C03-E-P02-LetTheWorkOfThisHo.dc.html",
+  "EZR-C03-F-P01-ThisHouseWasFinish.dc.html"
  ],
  "notes": {
   "Main": {
@@ -170,6 +226,13 @@
    "text": "Chapter 2 · The Foundation of the House (Ezra 3–4)",
    "x": 0,
    "y": 4600
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The House Finished (Ezra 5–6)",
+   "x": 0,
+   "y": 7500
   }
  },
  "designSystems": [],

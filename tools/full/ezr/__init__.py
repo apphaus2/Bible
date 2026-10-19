@@ -21,5 +21,7 @@ META = {
      "blurb": "In the first year of Cyrus king of Persia, Jehovah stirred up his spirit: whosoever there is among you of all his people, let him go up to Jerusalem; the vessels of the house of Jehovah numbered to Sheshbazzar; and the children of the province that went up out of the captivity, family by family, forty and two thousand three hundred and threescore."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Foundation of the House", "range": "Ezra 3–4", "bible_chapters": [3, 4],
      "blurb": "The people gathered as one man and the altar set upon its base; the foundation of the house laid with trumpets — for he is good — and the old men that had seen the first house weeping, so that the noise of the shout could not be told from the weeping; then the adversaries, the letter to Artaxerxes, and the work made to cease."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "The House Finished", "range": "Ezra 5–6", "bible_chapters": [5, 6],
+     "blurb": "Haggai and Zechariah prophesy, and the building begins again; Tattenai — who gave you a decree to build this house?; the elders answer, we are the servants of the God of heaven and earth; the roll found at Achmetha; Darius decrees, let the work of this house of God alone; the house finished, dedicated with joy, and the passover kept."},
   ],
 }
