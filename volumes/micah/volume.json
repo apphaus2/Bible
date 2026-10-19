@@ -16,6 +16,16 @@
     "Main.dc.html",
     "MIC-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "What Doth Jehovah Require?",
+   "range": "Micah 5–7",
+   "blurb": "But thou, Beth-lehem Ephrathah, little among the thousands of Judah, out of thee shall one come forth that is to be ruler in Israel; he shall feed his flock in the strength of Jehovah; Jehovah's controversy before the mountains — O my people, what have I done unto thee?; what doth Jehovah require of thee, but to do justly, and to love kindness, and to walk humbly with thy God?; the wicked balances; woe is me; I will look unto Jehovah; and who is a God like unto thee, that pardoneth iniquity?",
+   "prefixes": [
+    "MIC-C02-"
+   ]
   }
  ]
 }

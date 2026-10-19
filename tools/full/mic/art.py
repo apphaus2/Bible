@@ -262,7 +262,11 @@ def cut_off(w, h, seed):
     pillars, and pluck up thine Asherim: an overturned chariot, a broken pillar, a felled pole, a thrown-down tower."""
     o = [sky(w, h, "#5A3A3A", "#D8A07A"), ground(w, h, h * 0.62, "#8A6A4A", dy=0), ruin(w * 0.6, w * 0.98, h * 0.64, h * 0.3, seed)]
     k = min(0.9, h / 300)
-    o.append(f'<g transform="translate({f(w * 0.24)} {f(h * 0.86)}) rotate(160) scale({f(k)})">{E3.chariot(0, 0, 1)}</g>')
+    for i, (x, y, rot) in enumerate(((0.16, 0.9, 70), (0.3, 0.94, 20))):           # broken chariot wheels and the pole
+        cx, cy, r = w * x, h * y, 34 * k
+        o.append(f'<g transform="rotate({rot} {f(cx)} {f(cy)})"><circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="none" stroke="#5A3A1E" stroke-width="{f(6 * k)}"></circle>'
+                 + "".join(f'<path d="M{f(cx)} {f(cy)} L {f(cx + r * math.cos(a * 1.05))} {f(cy + r * math.sin(a * 1.05))}" stroke="#5A3A1E" stroke-width="{f(3 * k)}"></path>' for a in range(5))
+                 + f'<path d="M{f(cx + r * 0.7)} {f(cy - r * 0.7)} L {f(cx + r)} {f(cy)}" stroke="#F3E8C8" stroke-width="{f(7 * k)}"></path></g>')
     o.append(f'<path d="M{f(w * 0.44)} {f(h * 0.96)} L {f(w * 0.44)} {f(h * 0.62)} L {f(w * 0.5)} {f(h * 0.58)} L {f(w * 0.5)} {f(h * 0.96)} Z" fill="#B8A890" stroke="#0D0D0F" stroke-width="2"></path>'
              f'<path d="M{f(w * 0.5)} {f(h * 0.94)} L {f(w * 0.62)} {f(h * 0.98)} L {f(w * 0.63)} {f(h * 0.94)} L {f(w * 0.51)} {f(h * 0.9)} Z" fill="#B8A890" stroke="#0D0D0F" stroke-width="2"></path>'
              f'<path d="M{f(w * 0.04)} {f(h * 0.98)} L {f(w * 0.3)} {f(h * 0.92)}" stroke="#6A4A2A" stroke-width="10" stroke-linecap="round"></path>')
@@ -321,16 +325,23 @@ def futile(w, h, seed):
     """Thou shalt sow, but shalt not reap; tread the olives, but not anoint thee; the vintage, but not drink: a sown field
     gone to dust, an olive press dry, an empty winepress — three cells."""
     o = [sky(w, h, "#C8A880", "#F3E8C8")]
-    cw = w / 3
+    cw = w / 3; k = min(cw / 220, h / 240); g = h * 0.42
     for i in range(3):
         x0 = i * cw
-        o.append(f'<g transform="translate({f(x0)} 0)">')
-        if i == 0: o.append(ground(cw, h, h * 0.6, "#C8A070", dy=0) + grain(0, cw, h * 0.96, h * 0.1, seed, color="#9A8A5A"))
-        if i == 1: o.append(ground(cw, h, h * 0.7, "#B8986A", dy=0) + olive(cw * 0.3, h * 0.72, min(0.7, h / 400), seed)
-                            + f'<ellipse cx="{f(cw * 0.66)}" cy="{f(h * 0.86)}" rx="{f(cw * 0.22)}" ry="{f(h * 0.06)}" fill="#8A8478" stroke="#0D0D0F" stroke-width="2"></ellipse>'
-                            + f'<rect x="{f(cw * 0.6)}" y="{f(h * 0.62)}" width="{f(cw * 0.12)}" height="{f(h * 0.24)}" fill="#A89E92" stroke="#0D0D0F" stroke-width="2"></rect>')
-        if i == 2: o.append(ground(cw, h, h * 0.7, "#B8986A", dy=0) + vines(cw * 0.05, cw * 0.95, h * 0.76, h * 0.76, seed, rows=1, fruit=False)
-                            + f'<rect x="{f(cw * 0.2)}" y="{f(h * 0.82)}" width="{f(cw * 0.6)}" height="{f(h * 0.12)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2"></rect>')
+        o.append(f'<g transform="translate({f(x0)} 0)">' + hills(cw, h, g - 6, seed + i, color="#A8906A", amp=8) + ground(cw, h, g, "#C8A070", dy=0))
+        if i == 0:
+            o.append(grain(0, cw, h * 0.98, h * 0.12, seed, color="#9A8A5A") + grain(0, cw, h * 0.7, h * 0.08, seed + 3, color="#9A8A5A")
+                     + label(cw / 2, h * 0.2, "SOW · NOT REAP", "#5A3A22", 10))
+        if i == 1:
+            o.append(olive(cw * 0.3, h * 0.8, k * 0.8, seed)
+                     + f'<ellipse cx="{f(cw * 0.66)}" cy="{f(h * 0.9)}" rx="{f(cw * 0.24)}" ry="{f(cw * 0.07)}" fill="#8A8478" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+                     + f'<rect x="{f(cw * 0.6)}" y="{f(h * 0.9 - 90 * k)}" width="{f(cw * 0.12)}" height="{f(90 * k)}" fill="#A89E92" stroke="#0D0D0F" stroke-width="2"></rect>'
+                     + label(cw / 2, h * 0.2, "OLIVES · NO OIL", "#5A3A22", 10))
+        if i == 2:
+            o.append(vines(cw * 0.05, cw * 0.95, h * 0.62, h * 0.62, seed, rows=1, fruit=False)
+                     + f'<rect x="{f(cw * 0.16)}" y="{f(h * 0.8)}" width="{f(cw * 0.68)}" height="{f(h * 0.14)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2"></rect>'
+                     + f'<rect x="{f(cw * 0.22)}" y="{f(h * 0.83)}" width="{f(cw * 0.56)}" height="{f(h * 0.08)}" fill="#5A4A3A"></rect>'
+                     + label(cw / 2, h * 0.2, "VINTAGE · NO WINE", "#5A3A22", 10))
         o.append('</g>')
         if i: o.append(f'<path d="M{f(x0)} -10 L {f(x0)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="3"></path>')
     return "".join(o)
