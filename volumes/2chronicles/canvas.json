@@ -688,6 +688,104 @@
    "w": 760,
    "h": 1080,
    "title": "89 · A Writing from Elijah"
+  },
+  "2CH-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Joash"
+  },
+  "2CH-C08-R-P01-Ahaziah.dc.html": {
+   "x": 840,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Ahaziah"
+  },
+  "2CH-C08-D-P01-Athaliah.dc.html": {
+   "x": 1680,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Athaliah"
+  },
+  "2CH-C08-D-P02-JehoiadaStrengthen.dc.html": {
+   "x": 2520,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Jehoiada Strengthened Himself"
+  },
+  "2CH-C08-D-P03-JehoiadaStrengthen.dc.html": {
+   "x": 3360,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Jehoiada Strengthened Himself"
+  },
+  "2CH-C08-D-P04-LongLiveTheKing.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · Long Live the King"
+  },
+  "2CH-C08-D-P05-LongLiveTheKing.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Long Live the King"
+  },
+  "2CH-C08-D-P06-LongLiveTheKing.dc.html": {
+   "x": 1680,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Long Live the King"
+  },
+  "2CH-C08-E-P01-ToRestoreTheHouseO.dc.html": {
+   "x": 2520,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · To Restore the House of Jehovah"
+  },
+  "2CH-C08-E-P02-TheChestAtTheGate.dc.html": {
+   "x": 3360,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Chest at the Gate"
+  },
+  "2CH-C08-E-P03-TheChestAtTheGate.dc.html": {
+   "x": 0,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Chest at the Gate"
+  },
+  "2CH-C08-E-P04-JehoiadaDied.dc.html": {
+   "x": 840,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Jehoiada Died"
+  },
+  "2CH-C08-E-P05-ZechariahTheSonOfJ.dc.html": {
+   "x": 1680,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Zechariah the Son of Jehoiada"
+  },
+  "2CH-C08-E-P06-TheArmyOfTheSyrian.dc.html": {
+   "x": 2520,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The Army of the Syrians"
   }
  },
  "order": [
@@ -787,7 +885,21 @@
   "2CH-C07-R-P01-Jehoram.dc.html",
   "2CH-C07-G-P01-EdomRevolted.dc.html",
   "2CH-C07-G-P02-AWritingFromElijah.dc.html",
-  "2CH-C07-G-P03-AWritingFromElijah.dc.html"
+  "2CH-C07-G-P03-AWritingFromElijah.dc.html",
+  "2CH-C08-00-Title.dc.html",
+  "2CH-C08-R-P01-Ahaziah.dc.html",
+  "2CH-C08-D-P01-Athaliah.dc.html",
+  "2CH-C08-D-P02-JehoiadaStrengthen.dc.html",
+  "2CH-C08-D-P03-JehoiadaStrengthen.dc.html",
+  "2CH-C08-D-P04-LongLiveTheKing.dc.html",
+  "2CH-C08-D-P05-LongLiveTheKing.dc.html",
+  "2CH-C08-D-P06-LongLiveTheKing.dc.html",
+  "2CH-C08-E-P01-ToRestoreTheHouseO.dc.html",
+  "2CH-C08-E-P02-TheChestAtTheGate.dc.html",
+  "2CH-C08-E-P03-TheChestAtTheGate.dc.html",
+  "2CH-C08-E-P04-JehoiadaDied.dc.html",
+  "2CH-C08-E-P05-ZechariahTheSonOfJ.dc.html",
+  "2CH-C08-E-P06-TheArmyOfTheSyrian.dc.html"
  ],
  "notes": {
   "Main": {
@@ -845,6 +957,13 @@
    "text": "Chapter 7 · The Battle Is Not Yours (2 Chronicles 20–21)",
    "x": 0,
    "y": 27500
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Joash (2 Chronicles 22–24)",
+   "x": 0,
+   "y": 31600
   }
  },
  "designSystems": [],

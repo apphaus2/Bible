@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 450 verses — 450 full, 0 partial, 0 omitted.
+**So far:** 510 verses — 510 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Wisdom and Knowledge (2 Chronicles 1–4)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · The Battle Is Not Yours (2 Chronicles 20–21)
 
 57 verses: 57 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · Joash (2 Chronicles 22–24)
+
+60 verses: 60 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

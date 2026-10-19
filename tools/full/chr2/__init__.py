@@ -36,5 +36,7 @@ META = {
      "blurb": "Jehoshaphat who walked in the first ways of David, and the princes and Levites teaching in the cities with the book of the law; then affinity with Ahab — I am as thou art; the four hundred prophets and Micaiah: as Jehovah liveth, what my God saith, that will I speak; the arrow at a venture; Jehu the seer; and the judges set city by city — ye judge not for man, but for Jehovah."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Battle Is Not Yours", "range": "2 Chronicles 20–21", "bible_chapters": [20, 21],
      "blurb": "A great multitude from beyond the sea; Jehoshaphat's prayer — neither know we what to do, but our eyes are upon thee; Jahaziel: the battle is not yours, but God's — stand ye still, and see the salvation of Jehovah; the singers going out before the army, and the valley of Beracah; then Jehoram, Edom's revolt, and a writing from Elijah the prophet."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "Joash", "range": "2 Chronicles 22–24", "bible_chapters": [22, 23, 24],
+     "blurb": "Ahaziah and the house of Ahab; Athaliah destroys the seed royal, and Jehoshabeath hides the child Joash six years in the house of God; Jehoiada's covenant — long live the king; treason! treason!; the chest at the gate and the house restored; then, Jehoiada dead, Zechariah his son stoned in the court — Jehovah look upon it, and require it."},
   ],
 }
