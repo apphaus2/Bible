@@ -312,9 +312,28 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | Lamentations | 1 · How Doth the City Sit Solitary | 1–2 | cover + title + 12 (pp. 1–12) | 44/44 verses full (one song box per verse; 2:11–12 and 2:20–21 in words over empty streets) | `volumes/lamentations/` |
 | Lamentations | 2 · His Compassions Fail Not | 3–5 | title + 21 (pp. 13–33) | 110/110 verses full (4:4–10 and 5:9–12 in words over empty streets) | `volumes/lamentations/` |
 | **Lamentations** | **complete: cover + 2 chapters** | **1–5** | **36 pages (33 numbered)** | **154 verses: all full** | `volumes/lamentations/` |
+| Daniel | 1 · A Stone Cut Out Without Hands | 1–2 | cover + title + 13 (pp. 1–13) | 70/70 verses full (the image of gold, silver, brass, iron and clay as blueprint plates) | `volumes/daniel/` |
+| Daniel | 2 · The Burning Fiery Furnace | 3–4 | title + 13 (pp. 14–26) | 67/67 verses full (3:22 words over the furnace mouth; the fourth in the fire a shape of light) | `volumes/daniel/` |
+| Daniel | 3 · The Den of Lions | 5–6 | title + 13 (pp. 27–39) | 59/59 verses full (the writing a script of light, no hand drawn; 6:24 words only; the lions lying still) | `volumes/daniel/` |
+| Daniel | 4 · The Ancient of Days | 7–8 | title + 12 (pp. 40–51) | 55/55 verses full (the beasts as heraldic emblems; the throne of fiery flames, no figure) | `volumes/daniel/` |
+| Daniel | 5 · Seventy Weeks | 9–10 | title + 9 (pp. 52–60) | 48/48 verses full (Gabriel as a figure of light; the seventy weeks as a chart) | `volumes/daniel/` |
+| Daniel | 6 · The Time of the End | 11–12 | title + 11 (pp. 61–71) | 58/58 verses full (the kings of the north and the south as a map) | `volumes/daniel/` |
+| **Daniel** | **complete: cover + 6 chapters** | **1–12** | **78 pages (71 numbered)** | **357 verses: all full** | `volumes/daniel/` |
+| Hosea | 1 · A Door of Hope | 1–3 | cover + title + 9 (pp. 1–9) | 39/39 verses full (Gomer only before the house; 2:2–13 words over an empty doorway) | `volumes/hosea/` |
+| Hosea | 2 · The Cake Not Turned | 4–8 | title + 13 (pp. 10–22) | 75/75 verses full | `volumes/hosea/` |
+| Hosea | 3 · I Will Be as the Dew | 9–14 | title + 15 (pp. 23–37) | 83/83 verses full (13:16 words over Samaria dark) | `volumes/hosea/` |
+| **Hosea** | **complete: cover + 3 chapters** | **1–14** | **41 pages (37 numbered)** | **197 verses: all full** | `volumes/hosea/` |
+| Joel | 1 · The Day of Jehovah | 1–3 | cover + title + 14 (pp. 1–14) | 73/73 verses full (the locusts as a plate and swarms; the Spirit poured out as light) | `volumes/joel/` |
+| **Joel** | **complete: cover + 1 chapter** | **1–3** | **16 pages (14 numbered)** | **73 verses: all full** | `volumes/joel/` |
+| Amos | 1 · For Three Transgressions | 1–4 | cover + title + 14 (pp. 1–14) | 59/59 verses full (the eight oracles over a map of the nations lit in turn) | `volumes/amos/` |
+| Amos | 2 · The Plumb-line | 5–9 | title + 19 (pp. 15–33) | 87/87 verses full (the plumb-line as a blueprint, no hand drawn) | `volumes/amos/` |
+| **Amos** | **complete: cover + 2 chapters** | **1–9** | **36 pages (33 numbered)** | **146 verses: all full** | `volumes/amos/` |
 
-**Genesis through Lamentations (twenty-five volumes) are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
-carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Isaiah is `tools/full/isa/` (18 chapters): prophecy by `isa.common.S("c:a-b", kind, looks, ...)`, which cuts a run of verses into panels
+**Genesis through Lamentations, and Daniel through Amos (twenty-nine volumes), are complete.** Ezra is `tools/full/ezr/` (five chapters, plan in `ezr/__init__.py`; `ezr.art`
+carries `chr2.art`; the Aramaic letters as sealed scrolls, `ezr.art.letter_scroll`, the return as `return_caravan`). Daniel, Hosea, Joel and Amos are `tools/full/dan/`, `hos/`, `jol/`, `amo/` (each art module builds on the one before; `dan.art` on
+`est.art`): `dan/kit.py` `Lines(G, code, book, SPK)` builds captions, Voice boxes (`gls` keeps line breaks) and speech coloured and
+tagged per speaker, panels `A`/`T`/`N`; packed with `job.jdiscourse`. Angels as `dan.art.glow_fig`; beasts as heraldic plates.
+Isaiah is `tools/full/isa/` (18 chapters): prophecy by `isa.common.S("c:a-b", kind, looks, ...)`, which cuts a run of verses into panels
 alternating Isaiah's face (`kg2.common.ISAIAH` + moods) with drawings `A(fn, bg, h=)`; `art2.nations_map(hi=, arrows=, show=)` serves every
 burden of the nations; the servant and the anointed one are never drawn (a dry root, an empty road, a silent lamb).
 Jeremiah is `tools/full/jer/` (19 chapters): prophecy by `jer.common.O`/`S` (whole verses in the Voice box beside Jeremiah's face or over a
@@ -341,7 +360,7 @@ Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` 
 above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
-`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Ezekiel, Daniel–Amos and Obadiah–Malachi are being built in parallel worktrees (packages `ezk`, `dan`, `hos`, `jol`, `amo`, `oba` … `mal`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Ezekiel and Obadiah–Malachi, and Matthew–Acts, are being built in parallel worktrees (packages `ezk`, `oba` … `mal`, `mat`, `mrk`, `luk`, `jhn`, `act`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
