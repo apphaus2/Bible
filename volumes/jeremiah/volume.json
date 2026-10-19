@@ -1,0 +1,21 @@
+{
+ "id": "jeremiah",
+ "order": 24,
+ "name": "Jeremiah",
+ "kanji": "エレミヤ書",
+ "thumb": "vol-jeremiah-",
+ "lede": "The twenty-fourth book of the Bible, in full: the young prophet set over the nations, the potter's house and the yoke, the roll burned in the fire, the prophet in the dungeon, the fall of Jerusalem and the flight into Egypt, the burdens of the nations, and the promise of a new covenant, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Almond Rod",
+   "range": "Jeremiah 1–3",
+   "blurb": "Before I formed thee in the belly I knew thee — ah, Lord Jehovah! I know not how to speak, for I am a child; I have put my words in thy mouth; the rod of an almond-tree and the boiling caldron from the north; the kindness of thy youth; they have forsaken me, the fountain of living waters, and hewed them out broken cisterns; and return, O backsliding children.",
+   "prefixes": [
+    "Main.dc.html",
+    "JER-C01-"
+   ]
+  }
+ ]
+}

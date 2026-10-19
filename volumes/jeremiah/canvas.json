@@ -1,0 +1,178 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T01:19:17Z"
+ },
+ "title": "Jeremiah — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JER-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Almond Rod"
+  },
+  "JER-C01-D-P01-TheWordsOfJeremiah.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Words of Jeremiah"
+  },
+  "JER-C01-D-P02-TheWordsOfJeremiah.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Words of Jeremiah"
+  },
+  "JER-C01-D-P03-ARodOfAnAlmondTree.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · A Rod of an Almond-Tree"
+  },
+  "JER-C01-D-P04-ABoilingCaldron.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · A Boiling Caldron"
+  },
+  "JER-C01-D-P05-AnIronPillarAndBra.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · An Iron Pillar and Brazen Walls"
+  },
+  "JER-C01-E-P01-TheKindnessOfThyYo.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Kindness of Thy Youth"
+  },
+  "JER-C01-E-P02-TheKindnessOfThyYo.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Kindness of Thy Youth"
+  },
+  "JER-C01-E-P03-BrokenCisterns.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Broken Cisterns"
+  },
+  "JER-C01-E-P04-ANobleVine.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · A Noble Vine"
+  },
+  "JER-C01-E-P05-ANobleVine.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · A Noble Vine"
+  },
+  "JER-C01-E-P06-DaysWithoutNumber.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Days without Number"
+  },
+  "JER-C01-F-P01-ReturnAgainToMe.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Return Again to Me"
+  },
+  "JER-C01-F-P02-BackslidingIsraelA.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Backsliding Israel and Treacherous Judah"
+  },
+  "JER-C01-F-P03-ReturnOBacksliding.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Return, O Backsliding Children"
+  },
+  "JER-C01-F-P04-ReturnOBacksliding.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Return, O Backsliding Children"
+  },
+  "JER-C01-F-P05-ReturnOBacksliding.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Return, O Backsliding Children"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JER-C01-00-Title.dc.html",
+  "JER-C01-D-P01-TheWordsOfJeremiah.dc.html",
+  "JER-C01-D-P02-TheWordsOfJeremiah.dc.html",
+  "JER-C01-D-P03-ARodOfAnAlmondTree.dc.html",
+  "JER-C01-D-P04-ABoilingCaldron.dc.html",
+  "JER-C01-D-P05-AnIronPillarAndBra.dc.html",
+  "JER-C01-E-P01-TheKindnessOfThyYo.dc.html",
+  "JER-C01-E-P02-TheKindnessOfThyYo.dc.html",
+  "JER-C01-E-P03-BrokenCisterns.dc.html",
+  "JER-C01-E-P04-ANobleVine.dc.html",
+  "JER-C01-E-P05-ANobleVine.dc.html",
+  "JER-C01-E-P06-DaysWithoutNumber.dc.html",
+  "JER-C01-F-P01-ReturnAgainToMe.dc.html",
+  "JER-C01-F-P02-BackslidingIsraelA.dc.html",
+  "JER-C01-F-P03-ReturnOBacksliding.dc.html",
+  "JER-C01-F-P04-ReturnOBacksliding.dc.html",
+  "JER-C01-F-P05-ReturnOBacksliding.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Jeremiah Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Almond Rod (Jeremiah 1–3)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
