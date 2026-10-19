@@ -57,4 +57,4 @@ SEGS = [pd2("job", "21:1-4", lambda w, h: K.debate("db7", w, h, 702, "zop", spea
         pd("job", "24:13-17", lambda w, h: K.dug_wall(w, h, 724), "#05051A"),
         pd("job", "24:18-20", lambda w, h: K.brook(w, h, 725, dry=True), "#8FD0E2"),
         pd("job", "24:21-25", lambda w, h: K.grain_tops(w, h, 726), "#8FD0E2")]
-PG.extend(pack(SEGS, "JOB-C07-D", PG.next(), end=end_mark("NEXT · WHERE SHALL WISDOM BE FOUND?", "right: 10px; bottom: 34px")))
+PG.extend(pack(SEGS, "JOB-C07-D", PG.next(), end=end_mark("NEXT · THE PRICE OF WISDOM", "right: 10px; bottom: 34px")))

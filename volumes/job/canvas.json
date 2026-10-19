@@ -618,6 +618,83 @@
    "w": 760,
    "h": 1080,
    "title": "79 · They Remove the Landmarks"
+  },
+  "JOB-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Price of Wisdom"
+  },
+  "JOB-C08-D-P01-BildadTheThirdTime.dc.html": {
+   "x": 840,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Bildad the Third Time"
+  },
+  "JOB-C08-D-P02-HeHangethTheEarthU.dc.html": {
+   "x": 1680,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · He Hangeth the Earth upon Nothing"
+  },
+  "JOB-C08-D-P03-HeHangethTheEarthU.dc.html": {
+   "x": 2520,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · He Hangeth the Earth upon Nothing"
+  },
+  "JOB-C08-D-P04-IWillNotPutAwayMin.dc.html": {
+   "x": 3360,
+   "y": 29500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Will Not Put Away Mine Integrity"
+  },
+  "JOB-C08-D-P05-IWillNotPutAwayMin.dc.html": {
+   "x": 0,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · I Will Not Put Away Mine Integrity"
+  },
+  "JOB-C08-D-P06-IWillNotPutAwayMin.dc.html": {
+   "x": 840,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · I Will Not Put Away Mine Integrity"
+  },
+  "JOB-C08-D-P07-SurelyThereIsAMine.dc.html": {
+   "x": 1680,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Surely There Is a Mine for Silver"
+  },
+  "JOB-C08-D-P08-WhereShallWisdomBe.dc.html": {
+   "x": 2520,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Where Shall Wisdom Be Found?"
+  },
+  "JOB-C08-D-P09-WhereShallWisdomBe.dc.html": {
+   "x": 3360,
+   "y": 30700,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Where Shall Wisdom Be Found?"
+  },
+  "JOB-C08-D-P10-TheFearOfTheLordTh.dc.html": {
+   "x": 0,
+   "y": 31900,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Fear of the Lord, That Is Wisdom"
   }
  },
  "order": [
@@ -707,7 +784,18 @@
   "JOB-C07-D-P10-OhThatIKnewWhereIM.dc.html",
   "JOB-C07-D-P11-TheyRemoveTheLandm.dc.html",
   "JOB-C07-D-P12-TheyRemoveTheLandm.dc.html",
-  "JOB-C07-D-P13-TheyRemoveTheLandm.dc.html"
+  "JOB-C07-D-P13-TheyRemoveTheLandm.dc.html",
+  "JOB-C08-00-Title.dc.html",
+  "JOB-C08-D-P01-BildadTheThirdTime.dc.html",
+  "JOB-C08-D-P02-HeHangethTheEarthU.dc.html",
+  "JOB-C08-D-P03-HeHangethTheEarthU.dc.html",
+  "JOB-C08-D-P04-IWillNotPutAwayMin.dc.html",
+  "JOB-C08-D-P05-IWillNotPutAwayMin.dc.html",
+  "JOB-C08-D-P06-IWillNotPutAwayMin.dc.html",
+  "JOB-C08-D-P07-SurelyThereIsAMine.dc.html",
+  "JOB-C08-D-P08-WhereShallWisdomBe.dc.html",
+  "JOB-C08-D-P09-WhereShallWisdomBe.dc.html",
+  "JOB-C08-D-P10-TheFearOfTheLordTh.dc.html"
  ],
  "notes": {
   "Main": {
@@ -765,6 +853,13 @@
    "text": "Chapter 7 · Where I Might Find Him (Job 21–24)",
    "x": 0,
    "y": 25100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Price of Wisdom (Job 25–28)",
+   "x": 0,
+   "y": 29200
   }
  },
  "designSystems": [],

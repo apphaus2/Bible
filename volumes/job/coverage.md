@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 592 verses — 592 full, 0 partial, 0 omitted.
+**So far:** 663 verses — 663 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Land of Uz (Job 1–3)
 
@@ -43,5 +43,11 @@ Every verse is on the page in full.
 ## Chapter 7 · Where I Might Find Him (Job 21–24)
 
 106 verses: 106 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 8 · The Price of Wisdom (Job 25–28)
+
+71 verses: 71 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

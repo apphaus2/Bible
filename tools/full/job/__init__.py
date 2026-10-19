@@ -10,7 +10,7 @@ potsherd and the ash heap; behemoth and leviathan drawn as the natural river-hor
 
 Plan (18,263 words, twelve chapters): 1 The Land of Uz (1–3) · 2 The Vision of the Night (4–7) · 3 No Umpire Betwixt Us
 (8–10) · 4 If a Man Die (11–14) · 5 My Witness Is in Heaven (15–17) · 6 My Redeemer Liveth (18–20) · 7 Where I Might Find
-Him (21–24) · 8 Where Shall Wisdom Be Found? (25–28) · 9 The Months of Old (29–31) · 10 Elihu (32–37) · 11 Out of the
+Him (21–24) · 8 The Price of Wisdom (25–28) · 9 The Months of Old (29–31) · 10 Elihu (32–37) · 11 Out of the
 Whirlwind (38–39) · 12 Mine Eye Seeth Thee (40–42)."""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
@@ -36,5 +36,7 @@ META = {
      "blurb": "Bildad again: the light of the wicked shall be put out; a gin shall take him by the heel. Job answers: he hath walled up my way; my kinsfolk have failed; have pity upon me, O ye my friends; oh that my words were graven in the rock for ever! — but as for me I know that my Redeemer liveth. Zophar again: the triumphing of the wicked is short; the viper's tongue; the bow of brass."},
     {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "Where I Might Find Him", "range": "Job 21–24", "bible_chapters": [21, 22, 23, 24],
      "blurb": "Job: wherefore do the wicked live? — their children dance, they sing to the timbrel and harp; they lie down alike in the dust. Eliphaz the third time: is not thy wickedness great?; acquaint now thyself with him, and be at peace. Job: oh that I knew where I might find him! — I go forward, but he is not there; when he hath tried me, I shall come forth as gold; the poor of the earth, wet with the showers of the mountains."},
+    {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "The Price of Wisdom", "range": "Job 25–28", "bible_chapters": [25, 26, 27, 28],
+     "blurb": "Bildad the last time: how much less man, that is a worm! Job: he hangeth the earth upon nothing; these are but the outskirts of his ways; till I die I will not put away mine integrity from me. Surely there is a mine for silver — but where shall wisdom be found? It cannot be gotten for gold; the price of wisdom is above rubies; God understandeth the way thereof: behold, the fear of the Lord, that is wisdom."},
   ],
 }
