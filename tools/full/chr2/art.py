@@ -247,3 +247,50 @@ def censer_altar(p, w, h, seed, priests=True):
     if priests:
         for i in range(3): o.append(priest(p, w * (0.08 + i * 0.1), b, s * 0.94))
     return "".join(o)
+
+# ---- 2 Chronicles 28–29 -------------------------------------------------------------------------------------------------
+def captives_clothed(p, w, h, seed):
+    """The captives of Judah clothed and shod, the feeble carried upon asses, going down to Jericho, the city of palm-trees."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.5, seed, "#8A8A5A", amp=10, step=80), ground(w, h, h * 0.6, "#C8A06A", dy=0)]
+    for i in range(4):
+        o.append(J1.palm(w * (0.8 + i * 0.05), h * 0.62, min(0.5, h / 700)))
+    s = fit(b, max(h * 0.44, b - 220))
+    cl = ["#E8D8B0", "#C8D8E8", "#E8C8B0", "#D8E8C8"]
+    for i in range(5):
+        x = w * (0.08 + i * 0.13)
+        if i % 2: o.append(N.ass(x, b, s * 0.6, color="#7A6A5A"))
+        else: o.append(man(p, x, b, s * 0.9, cl[i % 4]))
+    return "".join(o)
+
+def shut_doors(w, h, seed, open_=False):
+    """The doors of the porch of the house of Jehovah shut and the lamps put out; open_=True: the doors opened and repaired,
+    light within."""
+    o = [K2.sky(w, h, "#3A2A3A" if not open_ else "#FFE680", "#8A6A6A" if not open_ else "#F3E0B0"), ground(w, h, h * 0.86, "#6A5A4A" if not open_ else "#C8B88A", dy=0)]
+    x0, x1, top = w * 0.2, w * 0.8, h * 0.12
+    o.append(f'<rect x="{f(x0)}" y="{f(top)}" width="{f(x1 - x0)}" height="{f(h * 0.74)}" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="2.6"></rect>')
+    dx0, dx1, dt = w * 0.34, w * 0.66, h * 0.32
+    if open_:
+        o.append(f'<rect x="{f(dx0)}" y="{f(dt)}" width="{f(dx1 - dx0)}" height="{f(h * 0.54)}" fill="#FFD23F" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+                 + V.rays(w * 0.5, h * 0.6, 20, 12, w * 0.5, color="#FFF4C2", op=0.3)
+                 + f'<path d="M{f(dx0)} {f(dt)} L {f(dx0 - w * 0.08)} {f(dt + h * 0.04)} L {f(dx0 - w * 0.08)} {f(h * 0.9)} L {f(dx0)} {f(h * 0.86)} Z" fill="#B8862A" stroke="#0D0D0F" stroke-width="2"></path>'
+                 + f'<path d="M{f(dx1)} {f(dt)} L {f(dx1 + w * 0.08)} {f(dt + h * 0.04)} L {f(dx1 + w * 0.08)} {f(h * 0.9)} L {f(dx1)} {f(h * 0.86)} Z" fill="#B8862A" stroke="#0D0D0F" stroke-width="2"></path>')
+    else:
+        o.append(f'<rect x="{f(dx0)}" y="{f(dt)}" width="{f(dx1 - dx0)}" height="{f(h * 0.54)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+                 f'<path d="M{f(w * 0.5)} {f(dt)} L {f(w * 0.5)} {f(h * 0.86)}" stroke="#0D0D0F" stroke-width="2"></path>'
+                 f'<rect x="{f(dx0 - 6)}" y="{f(h * 0.56)}" width="{f(dx1 - dx0 + 12)}" height="10" fill="#3A2A1A" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(S1.lamp(w * 0.12, h * 0.86, min(0.5, h / 600), lit=open_) + S1.lamp(w * 0.88, h * 0.86, min(0.5, h / 600), lit=open_))
+    return "".join(o)
+
+def cleansing(p, w, h, seed):
+    """The Levites carrying forth the uncleanness out of the house to the brook Kidron: men bearing baskets down to the
+    brook, the house open above."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8"), temple_front(w * 0.3, h * 0.56, w * 0.44, seed), ground(w, h, h * 0.56, "#C8B88A", dy=0),
+         f'<path d="M-10 {f(h * 0.88)} C {f(w * 0.3)} {f(h * 0.84)} {f(w * 0.6)} {f(h * 0.92)} {f(w + 10)} {f(h * 0.86)}" stroke="#2C7DA8" stroke-width="12" fill="none"></path>']
+    s = fit(b, max(h * 0.44, b - 220))
+    for i in range(4):
+        x = w * (0.46 + i * 0.13); y = h * (0.66 + i * 0.06)
+        o.append(priest(p, x, y, fit(y, y - (b - h * 0.44) * 0.7) * 0.9, up=[(22, -158), (30, -190), (10, -214)])
+                 + f'<rect x="{f(x - 6)}" y="{f(y - fit(y, y - (b - h * 0.44) * 0.7) * 0.9 * 236)}" width="22" height="14" fill="#8A6A3A" stroke="#0D0D0F" stroke-width="1.4"></rect>')
+    return "".join(o)

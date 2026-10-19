@@ -870,6 +870,97 @@
    "w": 760,
    "h": 1080,
    "title": "113 · Jotham"
+  },
+  "2CH-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Ahaz and Hezekiah"
+  },
+  "2CH-C10-D-P01-Ahaz.dc.html": {
+   "x": 840,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Ahaz"
+  },
+  "2CH-C10-D-P02-OdedTheProphet.dc.html": {
+   "x": 1680,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Oded the Prophet"
+  },
+  "2CH-C10-D-P03-TheCityOfPalmTrees.dc.html": {
+   "x": 2520,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The City of Palm-trees"
+  },
+  "2CH-C10-D-P04-TheCityOfPalmTrees.dc.html": {
+   "x": 3360,
+   "y": 40100,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · The City of Palm-trees"
+  },
+  "2CH-C10-D-P05-TheGodsOfDamascus.dc.html": {
+   "x": 0,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Gods of Damascus"
+  },
+  "2CH-C10-E-P01-HeOpenedTheDoors.dc.html": {
+   "x": 840,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · He Opened the Doors"
+  },
+  "2CH-C10-E-P02-HeOpenedTheDoors.dc.html": {
+   "x": 1680,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · He Opened the Doors"
+  },
+  "2CH-C10-F-P01-TheHouseCleansed.dc.html": {
+   "x": 2520,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The House Cleansed"
+  },
+  "2CH-C10-F-P02-ForAllIsrael.dc.html": {
+   "x": 3360,
+   "y": 41300,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · For All Israel"
+  },
+  "2CH-C10-F-P03-ForAllIsrael.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · For All Israel"
+  },
+  "2CH-C10-F-P04-TheSongOfJehovah.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · The Song of Jehovah"
+  },
+  "2CH-C10-F-P05-TheSongOfJehovah.dc.html": {
+   "x": 1680,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · The Song of Jehovah"
   }
  },
  "order": [
@@ -995,7 +1086,20 @@
   "2CH-C09-E-P02-HeLovedHusbandry.dc.html",
   "2CH-C09-E-P03-HisHeartWasLiftedU.dc.html",
   "2CH-C09-E-P04-HisHeartWasLiftedU.dc.html",
-  "2CH-C09-F-P01-Jotham.dc.html"
+  "2CH-C09-F-P01-Jotham.dc.html",
+  "2CH-C10-00-Title.dc.html",
+  "2CH-C10-D-P01-Ahaz.dc.html",
+  "2CH-C10-D-P02-OdedTheProphet.dc.html",
+  "2CH-C10-D-P03-TheCityOfPalmTrees.dc.html",
+  "2CH-C10-D-P04-TheCityOfPalmTrees.dc.html",
+  "2CH-C10-D-P05-TheGodsOfDamascus.dc.html",
+  "2CH-C10-E-P01-HeOpenedTheDoors.dc.html",
+  "2CH-C10-E-P02-HeOpenedTheDoors.dc.html",
+  "2CH-C10-F-P01-TheHouseCleansed.dc.html",
+  "2CH-C10-F-P02-ForAllIsrael.dc.html",
+  "2CH-C10-F-P03-ForAllIsrael.dc.html",
+  "2CH-C10-F-P04-TheSongOfJehovah.dc.html",
+  "2CH-C10-F-P05-TheSongOfJehovah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1067,6 +1171,13 @@
    "text": "Chapter 9 · Amaziah and Uzziah (2 Chronicles 25–27)",
    "x": 0,
    "y": 35700
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Ahaz and Hezekiah (2 Chronicles 28–29)",
+   "x": 0,
+   "y": 39800
   }
  },
  "designSystems": [],

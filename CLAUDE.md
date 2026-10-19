@@ -193,6 +193,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 2 Chronicles | 7 · The Battle Is Not Yours | 20–21 | title + 11 (pp. 79–89) | 57/57 verses full (20:22–25 words over the strewn valley; 21:4 and 21:18–19 words only) | `volumes/2chronicles/` |
 | 2 Chronicles | 8 · Joash | 22–24 | title + 13 (pp. 90–102) | 60/60 verses full (23:15, 24:21 and 24:25 words over the horses' entry, the empty court and the city) | `volumes/2chronicles/` |
 | 2 Chronicles | 9 · Amaziah and Uzziah | 25–27 | title + 11 (pp. 103–113) | 60/60 verses full (25:12 words over the empty rock; Uzziah's leprosy as his face in pale light) | `volumes/2chronicles/` |
+| 2 Chronicles | 10 · Ahaz and Hezekiah | 28–29 | title + 12 (pp. 114–125) | 63/63 verses full (28:3 words only; the captives clothed and led to Jericho) | `volumes/2chronicles/` |
 
 **Genesis through 1 Chronicles (thirteen volumes) are complete; 2 Chronicles is in progress** (`tools/full/chr2/`, fourteen chapters
 planned in `chr2/__init__.py`; Solomon's house reuses 1 Kings' blueprints, the kings of Judah reuse 1–2 Kings' faces and drawings). 1 Chronicles is `tools/full/chr1/` (a module

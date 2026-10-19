@@ -40,5 +40,7 @@ META = {
      "blurb": "Ahaziah and the house of Ahab; Athaliah destroys the seed royal, and Jehoshabeath hides the child Joash six years in the house of God; Jehoiada's covenant — long live the king; treason! treason!; the chest at the gate and the house restored; then, Jehoiada dead, Zechariah his son stoned in the court — Jehovah look upon it, and require it."},
     {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "Amaziah and Uzziah", "range": "2 Chronicles 25–27", "bible_chapters": [25, 26, 27],
      "blurb": "Amaziah, right but not with a perfect heart: the hundred talents — Jehovah is able to give thee much more than this; the gods of Seir; the thistle and the cedar; then Uzziah who sought God and loved husbandry, his towers and engines; his heart lifted up, the censer in the temple, and the leprosy in his forehead; and Jotham, who ordered his ways before Jehovah."},
+    {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Ahaz and Hezekiah", "range": "2 Chronicles 28–29", "bible_chapters": [28, 29],
+     "blurb": "Ahaz who walked in the ways of the kings of Israel; Judah carried captive to Samaria, and Oded the prophet — send back the captives; the captives clothed and brought to Jericho, the city of palm-trees; the gods of Damascus and the doors shut; then Hezekiah opening the doors in the first month, the house cleansed, and the song of Jehovah with the trumpets."},
   ],
 }
