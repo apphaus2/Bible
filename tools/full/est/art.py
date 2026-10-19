@@ -295,7 +295,7 @@ def rider(p, x, y, s, cloth, horse="#5A3A22", letter=True, flip=False, crown=Non
     sx = -1 if flip else 1
     up = [(-22, -158), (-30, -186), (-26, -212)] if letter else None
     ex = (A.headcloth(cloth, cord="#E8B830") + (S3.letter(-26, -222, 0.28) if letter else ""))
-    o = mk.person(p, round(x + sx * 4 * s), round(y - 74 * s), round(s * 0.66, 3), body=SKIN, cloth=cloth, kind="Tunic", sw=3, up=up, extra=ex, flip=flip)
+    o = mk.person(p, round(x + sx * 4 * s), round(y - 30 * s), round(s * 0.44, 3), body=SKIN, cloth=cloth, kind="Tunic", sw=3, up=up, extra=ex, flip=flip)
     o += E3.horse(x, y, s, color=horse, flip=flip)
     return o
 
@@ -534,9 +534,10 @@ def seated_king(p, xk, bt, kk, up=None, extra="", fig=None):
           + f'<rect x="{f(xk - 30 * kk)}" y="{f(bt - 10 * kk)}" width="{f(60 * kk)}" height="{f(10 * kk)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.6"></rect>')
     return o, sk, yk
 
-def inner_court(p, w, h, seed, stage="stand", fig=0.42):
+def inner_court(p, w, h, seed, stage="stand", fig=0.42, mirror=False):
     """Esther in her royal apparel standing in the inner court over against the king's house; the king on his royal throne.
-    stage "stand" / "sceptre" (the golden sceptre held out) / "touch" (Esther drew near and touched the top of the sceptre)."""
+    stage "stand" / "sceptre" (the golden sceptre held out) / "touch" (Esther drew near and touched the top of the sceptre); mirror=True: the king on the left."""
+    if mirror: return f'<g transform="translate({f(w)} 0) scale(-1 1)">' + inner_court(p, w, h, seed, stage, fig) + '</g>'
     b = h * 0.92
     o = [hall(p, w, h, seed, n=3, floor=0.6)]
     se = h * fig / 200
@@ -674,4 +675,165 @@ def fast_night(p, w, h, seed):
     r = random.Random(seed)
     for i in range(9):
         o.append(E.kneel(w * (0.04 + i * 0.11), b - (i % 3) * 10, s * (0.56 + (i % 2) * 0.06), color=r.choice([SACK_C, "#3A3448", "#4A3A3A", "#2A3A4A"]), skin="#6A5A5A", flip=bool(i % 2)))
+    return "".join(o)
+
+
+# ---- Esther 5–7 ---------------------------------------------------------------------------------------------------------------
+def banquet(p, w, h, seed, stage="ask"):
+    """Esther's banquet of wine: the king on a couch of gold, Esther on hers, Haman on a couch of silver, a low table of gold
+    vessels between. stage "ask" (all at the table); "accuse" (Esther standing, her arm stretched toward Haman, Haman
+    afraid); "fallen" (the king come back in from the garden, Haman fallen down at the couch whereon Esther was)."""
+    b = h * 0.92
+    o = [hall(p, w, h, seed, n=3, floor=0.6, dusk=stage != "ask")]
+    s = fit(b, max(h * 0.42, b - 210))
+    dep = 30 * min(1.4, s * 1.4)
+    k = min(1.1, h / 300)
+    if stage == "fallen":
+        o.append(ahas(p, w * 0.12, b, s, up=[(-22, -158), (-38, -196), (-30, -230)]))
+        o.append(behind(queen(p, w * 0.66, b - 22, s * 0.86, ESTHER_C, flip=True), w * 0.54, w * 0.82, b, dep))
+        o.append(E.kneel(w * 0.46, b, s * 0.66, color=HAMAN_C, skin="#B98A6E"))
+        o.append(vessel(w * 0.9, b, k, "amphora") + chamberlain(p, w * 0.97, b, s * 0.9, "#2A5A6A", flip=True))
+        return "".join(o)
+    o.append(behind(ahas(p, w * 0.16, b - 22, s * 0.9), w * 0.04, w * 0.3, b, dep))
+    if stage == "accuse":
+        hand = (-(w * 0.11) / (s * 0.9), -170)
+        o.append(queen(p, w * 0.48, b, s * 0.9, ESTHER_C, flip=True, up=[(-22, -158), (hand[0] * 0.5, -166), hand]))
+        o.append(behind(haman(p, w * 0.84, b - 22, s * 0.86, flip=True), w * 0.72, w * 0.96, b, dep, color="#C8CCD4"))
+        o.append(f'<path d="M{f(w * 0.86)} {f(b - 210 * s)} l 6 -12 M{f(w * 0.9)} {f(b - 204 * s)} l 10 -8 M{f(w * 0.8)} {f(b - 206 * s)} l -8 -10" stroke="#9AA8C8" stroke-width="3" stroke-linecap="round"></path>')
+    else:
+        o.append(behind(queen(p, w * 0.5, b - 22, s * 0.86, ESTHER_C), w * 0.38, w * 0.62, b, dep))
+        o.append(behind(haman(p, w * 0.84, b - 22, s * 0.86, flip=True), w * 0.72, w * 0.96, b, dep, color="#C8CCD4"))
+    o.append(f'<rect x="{f(w * 0.3)}" y="{f(b - 26 * k)}" width="{f(w * 0.4)}" height="{f(10 * k)}" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></rect>')
+    for i, kind in enumerate(("ewer", "cup", "bowl", "rhyton")):
+        o.append(vessel(w * (0.34 + i * 0.1), b - 26 * k, k * 0.6, kind))
+    return "".join(o)
+
+def bedchamber(p, w, h, seed, servants=False):
+    """On that night could not the king sleep: the king sitting up on his bed in the dark chamber, a lamp, a servant kneeling
+    with the book of the records unrolled, reading; servants=True: two chamberlains standing by."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#0F0E2A", "#2A1E3A"), f'<rect x="-10" y="{f(h * 0.7)}" width="{f(w + 20)}" height="{f(h * 0.4)}" fill="#1E1628" stroke="#0D0D0F" stroke-width="2"></rect>',
+         S3.window(w * 0.5, h * 0.36, w * 0.12, h * 0.26, inner="#1A1A4A").replace('fill="#C8B89A"', 'fill="#4A3E4A"').replace('fill="#A89A7E"', 'fill="#3A2E3A"'),
+         V.rays(w * 0.3, h * 0.6, 24, 10, h * 0.7, color="#FFC14D", op=0.14)]
+    s = fit(b, max(h * 0.4, b - 220))
+    bx0, bx1 = w * 0.56, w * 0.96
+    o.append(ahas(p, w * 0.66, b - 30, s * 0.9))
+    o.append(f'<rect x="{f(bx0)}" y="{f(b - 50 * s)}" width="{f(bx1 - bx0)}" height="{f(30 * s)}" fill="#4A1A6A" stroke="#0D0D0F" stroke-width="2.2"></rect>'
+             f'<path d="M{f(bx0 + 10)} {f(b - 50 * s)} C {f(bx0 + 60)} {f(b - 80 * s)} {f(bx1 - 40)} {f(b - 76 * s)} {f(bx1)} {f(b - 50 * s)} Z" fill="#6A2A8A" stroke="#0D0D0F" stroke-width="2"></path>'
+             f'<rect x="{f(bx0)}" y="{f(b - 20 * s)}" width="{f(bx1 - bx0)}" height="{f(20 * s)}" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<rect x="{f(bx1 - 8)}" y="{f(b - 110 * s)}" width="{f(12 * s)}" height="{f(110 * s)}" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(E.kneel(w * 0.26, b, s * 0.7, color="#C8A06A", skin="#B98A6E", flip=False))
+    o.append(S3.letter(w * 0.26 + 50 * s, b - 76 * s, s * 0.5, rot=-8))
+    o.append(f'<path d="M{f(w * 0.12)} {f(b)} L {f(w * 0.12)} {f(b - 80 * s)}" stroke="#8A5A30" stroke-width="{f(5 * s)}"></path>'
+             f'<path d="M{f(w * 0.12 - 14 * s)} {f(b - 80 * s)} C {f(w * 0.12 - 14 * s)} {f(b - 92 * s)} {f(w * 0.12 + 14 * s)} {f(b - 92 * s)} {f(w * 0.12 + 14 * s)} {f(b - 80 * s)} Z" fill="#C8962E" stroke="#0D0D0F" stroke-width="2"></path>'
+             + E.flame(w * 0.12, b - 88 * s, 10 * s, 24 * s, 0.1))
+    if servants:
+        o.append(chamberlain(p, w * 0.4, b, s * 0.92, "#5A7A9A") + chamberlain(p, w * 0.48, b - 6, s * 0.88, "#7A5A8A"))
+    return "".join(o)
+
+def audience(p, w, h, seed, point=False, dawn=True):
+    """The king on his throne and Haman come in, standing before him; point=True: the king's arm stretched out, sending him
+    (take the apparel and the horse)."""
+    b = h * 0.92
+    o = [hall(p, w, h, seed, n=3, floor=0.62, wall=("#E8C8A0", "#F3E0C0") if dawn else None)]
+    s = fit(b, max(h * 0.4, b - 220))
+    kk = (s * 0.95 * 195 - 10) / 124
+    up = [(-22, -158), (22, -150), (60, -150)] if point else None
+    o.append(seated_king(p, w * 0.2, b, kk, up=up, fig=lambda p_, x, y, ss, up=None, extra="": ahas(p_, x, y, ss, flip=True, up=up, extra=extra))[0])
+    o.append(haman(p, w * 0.62, b, s, flip=True))
+    o.append(guard(p, w * 0.9, b, s * 0.96, flip=True))
+    return "".join(o)
+
+def honour_ride(p, w, h, seed):
+    """Mordecai arrayed in the royal apparel, riding the king's horse with the crown royal on its head through the street of
+    the city; Haman going before him on foot, his arm up, proclaiming; the people at the doors."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8")]
+    r = random.Random(seed)
+    for side in (0, 1):                                     # the houses along the street
+        for i in range(4):
+            x = (w * (0.02 + i * 0.1)) if side == 0 else (w * (0.98 - i * 0.1) - w * 0.09)
+            hh = h * r.uniform(0.3, 0.46)
+            o.append(f'<rect x="{f(x)}" y="{f(h * 0.74 - hh)}" width="{f(w * 0.09)}" height="{f(hh)}" fill="{["#D8C0A0", "#C8B090", "#E0CCAA"][i % 3]}" stroke="#0D0D0F" stroke-width="2"></rect>'
+                     f'<rect x="{f(x + w * 0.03)}" y="{f(h * 0.74 - hh * 0.5)}" width="{f(w * 0.03)}" height="{f(hh * 0.5)}" fill="#3A2A2A" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(kings_gate_bg(w * 0.5, h * 0.66, w * 0.3, h * 0.36))
+    o.append(ground(w, h, h * 0.74, "#C8A06A", dy=0))
+    s = min(1.8, (b - h * 0.2) / 130)
+    hx = w * 0.58
+    ride = mordecai(p, hx + 4 * s, b - 34 * s, s * 0.5, state="royal")
+    o.append(ride + E3.horse(hx, b, s, color="#3A2A2A") + f'<g transform="translate({f(hx)} {f(b)}) scale({f(s)})">'
+             '<path d="M-34 -72 L 22 -72 L 18 -40 L -30 -40 Z" fill="#4A1A6A" stroke="#0D0D0F" stroke-width="2"></path><path d="M-30 -44 L 18 -44" stroke="#E8B830" stroke-width="3"></path>'
+             '<g transform="translate(64 -108) scale(0.7)">' + PCROWN.replace("-194", "0").replace("-214", "-20").replace("-216", "-24").replace("-208", "-14") + '</g></g>')
+    sh = fit(b, max(h * 0.4, b - 220)) * 0.86
+    o.append(haman(p, w * 0.86, b, sh, flip=True, up=[(-22, -158), (-36, -196), (-30, -232)]))
+    o.append(crowd_at(p, w, h, seed, w * 0.02, w * 0.3, h * 0.76, b, 9, sh * 0.6, sh * 0.9))
+    return "".join(o)
+
+def gallows(x, base, hh, color="#5A3A22"):
+    """The gallows fifty cubits high, standing: two tall timbers, the crossbeam and braces (no rope, no one on it)."""
+    ww = hh * 0.22
+    return (f'<path d="M{f(x - ww / 2)} {f(base)} L {f(x - ww / 2)} {f(base - hh)} M{f(x + ww / 2)} {f(base)} L {f(x + ww / 2)} {f(base - hh)}" stroke="#0D0D0F" stroke-width="{f(max(4, hh * 0.035) + 3)}"></path>'
+            f'<path d="M{f(x - ww / 2)} {f(base)} L {f(x - ww / 2)} {f(base - hh)} M{f(x + ww / 2)} {f(base)} L {f(x + ww / 2)} {f(base - hh)}" stroke="{color}" stroke-width="{f(max(4, hh * 0.035))}"></path>'
+            f'<rect x="{f(x - ww * 0.8)}" y="{f(base - hh - hh * 0.04)}" width="{f(ww * 1.6)}" height="{f(hh * 0.045)}" fill="{color}" stroke="#0D0D0F" stroke-width="2"></rect>'
+            f'<path d="M{f(x - ww / 2)} {f(base - hh * 0.3)} L {f(x + ww / 2)} {f(base - hh * 0.5)} M{f(x + ww / 2)} {f(base - hh * 0.3)} L {f(x - ww / 2)} {f(base - hh * 0.5)}" stroke="{color}" stroke-width="{f(max(2, hh * 0.016))}"></path>'
+            f'<path d="M{f(x - ww)} {f(base)} L {f(x - ww / 2)} {f(base - hh * 0.12)} M{f(x + ww)} {f(base)} L {f(x + ww / 2)} {f(base - hh * 0.12)}" stroke="{color}" stroke-width="{f(max(2, hh * 0.02))}"></path>')
+
+def haman_home(p, w, h, seed, mood="glad", tree=True, chamberlains=False, building=False):
+    """Haman's house: its gate and court wall, the gallows standing in the court behind (building=True: still being made,
+    men on it); mood "glad" (Haman with his friends and Zeresh about him), "mourn" (Haman hasting home, his head covered),
+    "talk" (Haman with Zeresh and his wise men); chamberlains=True: the king's chamberlains come hasting to the door."""
+    b = h * 0.92
+    dusk = mood != "glad"
+    o = [mk.defs(p, *ALL), K2.sky(w, h, *(("#3A2A5A", "#C88A6A") if dusk else ("#FFB04A", "#F3E0B0")))]
+    if tree:
+        o.append(gallows(w * 0.74, h * 0.6, h * 0.56, color="#4A2A1A" if dusk else "#6A4A2A"))
+        if building:
+            for i in range(3):
+                o.append(f'<rect x="{f(w * (0.8 + i * 0.02))}" y="{f(h * 0.6 - 8 - i * 7)}" width="{f(w * 0.16)}" height="7" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(f'<rect x="-10" y="{f(h * 0.4)}" width="{f(w * 0.62)}" height="{f(h * 0.34)}" fill="#C8A890" stroke="#0D0D0F" stroke-width="2.4"></rect>'
+             f'<rect x="-10" y="{f(h * 0.36)}" width="{f(w * 0.64)}" height="{f(h * 0.05)}" fill="#8A1A1A" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(w * 0.22)} {f(h * 0.74)} L {f(w * 0.22)} {f(h * 0.54)} C {f(w * 0.22)} {f(h * 0.47)} {f(w * 0.34)} {f(h * 0.47)} {f(w * 0.34)} {f(h * 0.54)} L {f(w * 0.34)} {f(h * 0.74)} Z" fill="{"#FFC14D" if dusk else "#3A2A2A"}" stroke="#0D0D0F" stroke-width="2.2"></path>'
+             f'<rect x="{f(w * 0.52)}" y="{f(h * 0.6)}" width="{f(w * 0.5)}" height="{f(h * 0.14)}" fill="#B8987A" stroke="#0D0D0F" stroke-width="2"></rect>')
+    o.append(ground(w, h, h * 0.74, "#B89A7A" if not dusk else "#7A6A6A", dy=0))
+    s = fit(b, max(h * 0.4, b - 220))
+    if mood == "glad":
+        o.append(haman(p, w * 0.5, b, s, up=[(-22, -158), (-40, -196), (-34, -232)]))
+        o.append(queen(p, w * 0.64, b, s * 0.9, ZERESH_C, crown=False, flip=True))
+        for i in range(3): o.append(prince(p, w * (0.76 + i * 0.08), b - (i % 2) * 6, s * 0.88, ["#6A4A3A", "#3A4A3A", "#5A3A4A"][i], flip=True))
+        o.append(man(p, w * 0.08, b, s * 0.7, "#8A1A1A", kind="Tunic") + man(p, w * 0.16, b, s * 0.62, "#8A1A1A", kind="Tunic") + woman(p, w * 0.24, b, s * 0.66, "#C2456A"))
+    elif mood == "mourn":
+        o.append(haman(p, w * 0.42, b, s, covered=True, up=[(-22, -158), (-30, -188), (-14, -200)]))
+    else:
+        o.append(haman(p, w * 0.36, b, s, covered=True) + queen(p, w * 0.5, b, s * 0.9, ZERESH_C, crown=False, flip=True))
+        for i in range(3): o.append(prince(p, w * (0.62 + i * 0.08), b - (i % 2) * 6, s * 0.86, ["#6A4A3A", "#3A4A3A", "#5A3A4A"][i], flip=True))
+    if chamberlains:
+        o.append(chamberlain(p, w * 0.08, b, s * 0.92, "#5A7A9A") + chamberlain(p, w * 0.18, b - 6, s * 0.88, "#7A5A8A"))
+    return "".join(o)
+
+def palace_garden(p, w, h, seed):
+    """The palace garden by night: the king walking alone among the cypresses in his wrath, the lit hall behind him."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#0F0E2A", "#3A1A3A"), mk.stars(30, w, h * 0.4, seed),
+         f'<rect x="{f(w * 0.56)}" y="{f(h * 0.24)}" width="{f(w * 0.5)}" height="{f(h * 0.46)}" fill="#2A1E2A" stroke="#0D0D0F" stroke-width="2"></rect>']
+    for i in range(5):
+        x = w * (0.6 + i * 0.09)
+        o.append(f'<rect x="{f(x)}" y="{f(h * 0.34)}" width="{f(w * 0.05)}" height="{f(h * 0.36)}" fill="#FFC14D" opacity="0.85"></rect>')
+    o.append(ground(w, h, h * 0.7, "#1F3A2A", dy=0))
+    o.append(f'<ellipse cx="{f(w * 0.3)}" cy="{f(h * 0.84)}" rx="{f(w * 0.18)}" ry="{f(h * 0.05)}" fill="#1F3A5A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    for x in (0.04, 0.14, 0.48, 0.56):
+        o.append(cypress(w * x, h * 0.74, min(1.3, h / 260), color="#16301F"))
+    s = fit(b, max(h * 0.4, b - 220))
+    o.append(f'<circle cx="{f(w * 0.36)}" cy="{f(b - 110 * s)}" r="{f(80 * s)}" fill="#D7261E" opacity="0.18"></circle>')
+    o.append(ahas(p, w * 0.36, b, s))
+    return "".join(o)
+
+def gallows_far(w, h, seed, ten=False):
+    """The gallows fifty cubits high standing in the court of Haman's house, seen far off across the roofs at dusk, empty."""
+    o = [K2.sky(w, h, "#2A1A3A", "#E88A5A"), sun(w * 0.2, h * 0.62, 26, color="#FF8A3D", op=0.25)]
+    r = random.Random(seed)
+    o.append(gallows(w * 0.74, h * 0.76, h * 0.46, color="#1A1018"))
+    for i in range(16):
+        x = r.uniform(-0.02, 0.96) * w; bw = r.uniform(30, 70); bh = r.uniform(20, 60)
+        o.append(f'<rect x="{f(x)}" y="{f(h * 0.76 - bh)}" width="{f(bw)}" height="{f(bh + h * 0.3)}" fill="#1A1018" stroke="#0D0D0F" stroke-width="1.6"></rect>')
+    o.append(f'<rect x="-10" y="{f(h * 0.76)}" width="{f(w + 20)}" height="{f(h * 0.3)}" fill="#120A12"></rect>')
     return "".join(o)

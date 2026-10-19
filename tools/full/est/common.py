@@ -95,8 +95,8 @@ HAMAN_AFRAID = F("adam", skin="#B8A0A0", shadow="#3A2A4A", hair="#0D0D0F", hl="#
 HAMAN_MOURN = F("adam", skin="#A88A80", shadow="#3A2A3A", hair="#0D0D0F", hl="#2A2220", beard=True, beard_color="#0D0D0F", scarf="#3A3438", brow="sorrow", light="#9AA8C8")
 ZERESH = F("eve", skin="#D9A27A", shadow="#5A2A3A", hair="#0D0D0F", scarf="#5A1A3A", band=True, kohl=True, brow="scowl", light="#D7261E")
 ZERESH_FEAR = F("eve", skin="#C8A08A", shadow="#3A2A4A", hair="#0D0D0F", scarf="#5A1A3A", band=True, kohl=True, brow="sorrow", light="#9AA8C8")
-MEMUCAN = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#1F3A7A", band=True, light="#FFC14D")
-HEGAI = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#1A1210", hl="#4A3A2E", scarf="#E8E2D6", band=True, light="#FFE680")
-HATHACH = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#1A1210", hl="#4A3A2E", scarf="#C8A06A", cord=True, light="#FFE680")
-HARBONAH = F("adam", skin="#B98A6E", shadow="#3A3A4A", hair="#1A1210", hl="#4A3A2E", scarf="#2A5A6A", band=True, light="#FFC14D")
-SERVANT = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#1A1210", hl="#4A3A2E", stubble="#2A1A10", scarf="#8A6A3A", cord=True, light="#FFE680")
+MEMUCAN = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#1F3A7A", band=True, light="#FFC14D") + HEM
+HEGAI = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#1A1210", hl="#4A3A2E", scarf="#E8E2D6", band=True, light="#FFE680") + HEM
+HATHACH = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#1A1210", hl="#4A3A2E", scarf="#C8A06A", cord=True, light="#FFE680") + HEM
+HARBONAH = F("adam", skin="#B98A6E", shadow="#3A3A4A", hair="#1A1210", hl="#4A3A2E", scarf="#2A5A6A", band=True, light="#FFC14D") + HEM
+SERVANT = F("adam", skin="#C98E66", shadow="#5A4A3A", hair="#1A1210", hl="#4A3A2E", stubble="#2A1A10", scarf="#8A6A3A", cord=True, light="#FFE680") + HEM
