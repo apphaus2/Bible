@@ -135,6 +135,132 @@
    "w": 760,
    "h": 1080,
    "title": "16 · Return, O Backsliding Children"
+  },
+  "JER-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Evil from the North"
+  },
+  "JER-C02-D-P01-IfThouWiltReturn.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · If Thou Wilt Return"
+  },
+  "JER-C02-D-P02-BlowYeTheTrumpet.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Blow Ye the Trumpet"
+  },
+  "JER-C02-D-P03-BlowYeTheTrumpet.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Blow Ye the Trumpet"
+  },
+  "JER-C02-D-P04-BlowYeTheTrumpet.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Blow Ye the Trumpet"
+  },
+  "JER-C02-D-P05-WasteAndVoid.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Waste and Void"
+  },
+  "JER-C02-D-P06-WasteAndVoid.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Waste and Void"
+  },
+  "JER-C02-E-P01-RunYeToAndFro.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Run Ye to and Fro"
+  },
+  "JER-C02-E-P02-RunYeToAndFro.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Run Ye to and Fro"
+  },
+  "JER-C02-E-P03-MyWordsInThyMouthF.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · My Words in Thy Mouth Fire"
+  },
+  "JER-C02-E-P04-TheSandForTheBound.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Sand for the Bound of the Sea"
+  },
+  "JER-C02-E-P05-TheSandForTheBound.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Sand for the Bound of the Sea"
+  },
+  "JER-C02-F-P01-FleeForSafety.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Flee for Safety"
+  },
+  "JER-C02-F-P02-FleeForSafety.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Flee for Safety"
+  },
+  "JER-C02-F-P03-FleeForSafety.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Flee for Safety"
+  },
+  "JER-C02-F-P04-AskForTheOldPaths.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Ask for the Old Paths"
+  },
+  "JER-C02-F-P05-APeopleFromTheNort.dc.html": {
+   "x": 840,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · A People from the North Country"
+  },
+  "JER-C02-F-P06-ATrierAmongMyPeopl.dc.html": {
+   "x": 1680,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · A Trier among My People"
   }
  },
  "order": [
@@ -155,7 +281,25 @@
   "JER-C01-F-P02-BackslidingIsraelA.dc.html",
   "JER-C01-F-P03-ReturnOBacksliding.dc.html",
   "JER-C01-F-P04-ReturnOBacksliding.dc.html",
-  "JER-C01-F-P05-ReturnOBacksliding.dc.html"
+  "JER-C01-F-P05-ReturnOBacksliding.dc.html",
+  "JER-C02-00-Title.dc.html",
+  "JER-C02-D-P01-IfThouWiltReturn.dc.html",
+  "JER-C02-D-P02-BlowYeTheTrumpet.dc.html",
+  "JER-C02-D-P03-BlowYeTheTrumpet.dc.html",
+  "JER-C02-D-P04-BlowYeTheTrumpet.dc.html",
+  "JER-C02-D-P05-WasteAndVoid.dc.html",
+  "JER-C02-D-P06-WasteAndVoid.dc.html",
+  "JER-C02-E-P01-RunYeToAndFro.dc.html",
+  "JER-C02-E-P02-RunYeToAndFro.dc.html",
+  "JER-C02-E-P03-MyWordsInThyMouthF.dc.html",
+  "JER-C02-E-P04-TheSandForTheBound.dc.html",
+  "JER-C02-E-P05-TheSandForTheBound.dc.html",
+  "JER-C02-F-P01-FleeForSafety.dc.html",
+  "JER-C02-F-P02-FleeForSafety.dc.html",
+  "JER-C02-F-P03-FleeForSafety.dc.html",
+  "JER-C02-F-P04-AskForTheOldPaths.dc.html",
+  "JER-C02-F-P05-APeopleFromTheNort.dc.html",
+  "JER-C02-F-P06-ATrierAmongMyPeopl.dc.html"
  ],
  "notes": {
   "Main": {
@@ -171,6 +315,13 @@
    "text": "Chapter 1 · The Almond Rod (Jeremiah 1–3)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Evil from the North (Jeremiah 4–6)",
+   "x": 0,
+   "y": 7000
   }
  },
  "designSystems": [],

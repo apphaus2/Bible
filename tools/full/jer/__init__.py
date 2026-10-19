@@ -30,5 +30,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Almond Rod", "range": "Jeremiah 1–3", "bible_chapters": [1, 2, 3],
      "blurb": "Before I formed thee in the belly I knew thee — ah, Lord Jehovah! I know not how to speak, for I am a child; I have put my words in thy mouth; the rod of an almond-tree and the boiling caldron from the north; the kindness of thy youth; they have forsaken me, the fountain of living waters, and hewed them out broken cisterns; and return, O backsliding children."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Evil from the North", "range": "Jeremiah 4–6", "bible_chapters": [4, 5, 6],
+     "blurb": "Blow ye the trumpet in the land, set up a standard toward Zion; a lion is gone up from his thicket; my anguish, my anguish! I beheld the earth, and, lo, it was waste and void; run ye to and fro through the streets of Jerusalem, if ye can find a man; peace, peace, when there is no peace; ask for the old paths; and a people cometh from the north country."},
   ],
 }

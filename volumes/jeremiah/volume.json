@@ -16,6 +16,16 @@
     "Main.dc.html",
     "JER-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Evil from the North",
+   "range": "Jeremiah 4–6",
+   "blurb": "Blow ye the trumpet in the land, set up a standard toward Zion; a lion is gone up from his thicket; my anguish, my anguish! I beheld the earth, and, lo, it was waste and void; run ye to and fro through the streets of Jerusalem, if ye can find a man; peace, peace, when there is no peace; ask for the old paths; and a people cometh from the north country.",
+   "prefixes": [
+    "JER-C02-"
+   ]
   }
  ]
 }
