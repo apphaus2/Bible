@@ -11,7 +11,7 @@ PLACES = {"TYRE": (0.215, 0.30), "SIDON": (0.225, 0.235), "DAMASCUS": (0.33, 0.2
           "PHILISTIA": (0.14, 0.50), "MOAB": (0.3, 0.53), "EDOM": (0.28, 0.65), "EGYPT": (0.08, 0.74), "ETHIOPIA": (0.12, 0.95),
           "KEDAR": (0.42, 0.6), "DUMAH": (0.48, 0.46), "TEMA": (0.44, 0.74), "HAMATH": (0.33, 0.14), "ARPAD": (0.4, 0.07),
           "CARCHEMISH": (0.48, 0.05), "NINEVEH": (0.7, 0.11), "BABYLON": (0.77, 0.5), "ELAM": (0.93, 0.52), "MEDIA": (0.9, 0.2),
-          "TARSHISH": (0.04, 0.2), "KITTIM": (0.1, 0.26), "SEBA": (0.3, 0.97)}
+          "TARSHISH": (0.07, 0.16), "KITTIM": (0.12, 0.28), "SEBA": (0.3, 0.97)}
 def nations_map(w, h, hi=(), arrows=(), show=None, lit="#D7261E", note=None):
     """The lands of Isaiah's burdens as one technical map: the great sea on the left, the Nile, the Euphrates and the
     Tigris; hi = places lit red, arrows = (from, to) pairs; show = the places named (default all)."""

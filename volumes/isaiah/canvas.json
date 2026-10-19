@@ -576,6 +576,97 @@
    "w": 760,
    "h": 1080,
    "title": "75 · Naked and Barefoot"
+  },
+  "ISA-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Watchman, What of the Night?"
+  },
+  "ISA-C06-D-P01-TheWildernessOfThe.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The Wilderness of the Sea"
+  },
+  "ISA-C06-D-P02-SetAWatchman.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Set a Watchman"
+  },
+  "ISA-C06-D-P03-WatchmanWhatOfTheN.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Watchman, What of the Night?"
+  },
+  "ISA-C06-D-P04-TheBurdenUponArabi.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The Burden upon Arabia"
+  },
+  "ISA-C06-D-P05-TheValleyOfVision.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The Valley of Vision"
+  },
+  "ISA-C06-D-P06-TheValleyOfVision.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · The Valley of Vision"
+  },
+  "ISA-C06-D-P07-ShebnaTheTreasurer.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Shebna the Treasurer"
+  },
+  "ISA-C06-D-P08-EliakimTheSonOfHil.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Eliakim the Son of Hilkiah"
+  },
+  "ISA-C06-D-P09-HowlYeShipsOfTarsh.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Howl, Ye Ships of Tarshish"
+  },
+  "ISA-C06-D-P10-HowlYeShipsOfTarsh.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Howl, Ye Ships of Tarshish"
+  },
+  "ISA-C06-D-P11-SeventyYears.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Seventy Years"
+  },
+  "ISA-C06-D-P12-SeventyYears.dc.html": {
+   "x": 1680,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Seventy Years"
   }
  },
  "order": [
@@ -659,7 +750,20 @@
   "ISA-C05-D-P09-AnAltarToJehovahIn.dc.html",
   "ISA-C05-D-P10-AnAltarToJehovahIn.dc.html",
   "ISA-C05-D-P11-NakedAndBarefoot.dc.html",
-  "ISA-C05-D-P12-NakedAndBarefoot.dc.html"
+  "ISA-C05-D-P12-NakedAndBarefoot.dc.html",
+  "ISA-C06-00-Title.dc.html",
+  "ISA-C06-D-P01-TheWildernessOfThe.dc.html",
+  "ISA-C06-D-P02-SetAWatchman.dc.html",
+  "ISA-C06-D-P03-WatchmanWhatOfTheN.dc.html",
+  "ISA-C06-D-P04-TheBurdenUponArabi.dc.html",
+  "ISA-C06-D-P05-TheValleyOfVision.dc.html",
+  "ISA-C06-D-P06-TheValleyOfVision.dc.html",
+  "ISA-C06-D-P07-ShebnaTheTreasurer.dc.html",
+  "ISA-C06-D-P08-EliakimTheSonOfHil.dc.html",
+  "ISA-C06-D-P09-HowlYeShipsOfTarsh.dc.html",
+  "ISA-C06-D-P10-HowlYeShipsOfTarsh.dc.html",
+  "ISA-C06-D-P11-SeventyYears.dc.html",
+  "ISA-C06-D-P12-SeventyYears.dc.html"
  ],
  "notes": {
   "Main": {
@@ -703,6 +807,13 @@
    "text": "Chapter 5 · The Burden of Egypt (Isaiah 17–20)",
    "x": 0,
    "y": 22900
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Watchman, What of the Night? (Isaiah 21–23)",
+   "x": 0,
+   "y": 27000
   }
  },
  "designSystems": [],

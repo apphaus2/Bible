@@ -36,5 +36,7 @@ META = {
      "blurb": "The burden of Babylon: the day of Jehovah, the sun darkened, the Medes stirred up, and Babylon, the glory of kingdoms, never inhabited; the parable against the king of Babylon — how art thou fallen from heaven, O day-star, son of the morning!; the burden of Philistia and the fiery flying serpent; and the burden of Moab — my heart soundeth like a harp for Moab."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Burden of Egypt", "range": "Isaiah 17–20", "bible_chapters": [17, 18, 19, 20],
      "blurb": "The burden of Damascus, a ruinous heap, and the gleanings of the olive-tree; the uproar of the nations chased as chaff; the land of the rustling of wings beyond the rivers of Ethiopia; the burden of Egypt — Jehovah rideth upon a swift cloud, the Nile dried up, an altar to Jehovah in the midst of Egypt, and a highway out of Egypt to Assyria; and Isaiah's sign, three years barefoot, against Egypt and Ethiopia."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Watchman, What of the Night?", "range": "Isaiah 21–23", "bible_chapters": [21, 22, 23],
+     "blurb": "The burden of the wilderness of the sea — set a watchman: fallen, fallen is Babylon; the burden of Dumah — watchman, what of the night? the morning cometh, and also the night; the burden upon Arabia; the valley of vision — let us eat and drink, for to-morrow we shall die; Shebna's sepulchre, and the key of the house of David laid upon Eliakim; and the burden of Tyre — howl, ye ships of Tarshish."},
   ],
 }
