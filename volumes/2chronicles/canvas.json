@@ -380,6 +380,104 @@
    "w": 760,
    "h": 1080,
    "title": "48 · Shields of Brass"
+  },
+  "2CH-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Abijah and Asa"
+  },
+  "2CH-C05-D-P01-UponMountZemaraim.dc.html": {
+   "x": 840,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Upon Mount Zemaraim"
+  },
+  "2CH-C05-D-P02-UponMountZemaraim.dc.html": {
+   "x": 1680,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Upon Mount Zemaraim"
+  },
+  "2CH-C05-D-P03-GodIsWithUsAtOurHe.dc.html": {
+   "x": 2520,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · God Is with Us at Our Head"
+  },
+  "2CH-C05-D-P04-GodIsWithUsAtOurHe.dc.html": {
+   "x": 3360,
+   "y": 18400,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · God Is with Us at Our Head"
+  },
+  "2CH-C05-E-P01-Asa.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Asa"
+  },
+  "2CH-C05-E-P02-ZerahTheEthiopian.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Zerah the Ethiopian"
+  },
+  "2CH-C05-E-P03-ZerahTheEthiopian.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Zerah the Ethiopian"
+  },
+  "2CH-C05-F-P01-IfYeSeekHim.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · If Ye Seek Him"
+  },
+  "2CH-C05-F-P02-IfYeSeekHim.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · If Ye Seek Him"
+  },
+  "2CH-C05-F-P03-WithAllTheirHeart.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · With All Their Heart"
+  },
+  "2CH-C05-G-P01-BaashaAndRamah.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Baasha and Ramah"
+  },
+  "2CH-C05-G-P02-HananiTheSeer.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Hanani the Seer"
+  },
+  "2CH-C05-G-P03-HananiTheSeer.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Hanani the Seer"
   }
  },
  "order": [
@@ -435,7 +533,21 @@
   "2CH-C04-R-P01-MaacahTheDaughterO.dc.html",
   "2CH-C04-F-P01-ShishakKingOfEgypt.dc.html",
   "2CH-C04-F-P02-ShishakKingOfEgypt.dc.html",
-  "2CH-C04-F-P03-ShieldsOfBrass.dc.html"
+  "2CH-C04-F-P03-ShieldsOfBrass.dc.html",
+  "2CH-C05-00-Title.dc.html",
+  "2CH-C05-D-P01-UponMountZemaraim.dc.html",
+  "2CH-C05-D-P02-UponMountZemaraim.dc.html",
+  "2CH-C05-D-P03-GodIsWithUsAtOurHe.dc.html",
+  "2CH-C05-D-P04-GodIsWithUsAtOurHe.dc.html",
+  "2CH-C05-E-P01-Asa.dc.html",
+  "2CH-C05-E-P02-ZerahTheEthiopian.dc.html",
+  "2CH-C05-E-P03-ZerahTheEthiopian.dc.html",
+  "2CH-C05-F-P01-IfYeSeekHim.dc.html",
+  "2CH-C05-F-P02-IfYeSeekHim.dc.html",
+  "2CH-C05-F-P03-WithAllTheirHeart.dc.html",
+  "2CH-C05-G-P01-BaashaAndRamah.dc.html",
+  "2CH-C05-G-P02-HananiTheSeer.dc.html",
+  "2CH-C05-G-P03-HananiTheSeer.dc.html"
  ],
  "notes": {
   "Main": {
@@ -472,6 +584,13 @@
    "text": "Chapter 4 · Rehoboam (2 Chronicles 10–12)",
    "x": 0,
    "y": 14000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Abijah and Asa (2 Chronicles 13–16)",
+   "x": 0,
+   "y": 18100
   }
  },
  "designSystems": [],

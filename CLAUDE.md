@@ -188,6 +188,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 2 Chronicles | 2 · The Glory Filled the House | 5–7 | title + 16 (pp. 13–28) | 78/78 verses full (Solomon's prayer in full as speech panels; God's answer in the Voice box) | `volumes/2chronicles/` |
 | 2 Chronicles | 3 · The Queen of Sheba | 8–9 | title + 9 (pp. 29–37) | 49/49 verses full (the cities as a map; the throne of ivory as a blueprint) | `volumes/2chronicles/` |
 | 2 Chronicles | 4 · Rehoboam | 10–12 | title + 11 (pp. 38–48) | 58/58 verses full (10:18 words only; the cities for defence as a map) | `volumes/2chronicles/` |
+| 2 Chronicles | 5 · Abijah and Asa | 13–16 | title + 13 (pp. 49–61) | 70/70 verses full (Abijah's battle and Zerah's host as maps; 13:17 words only) | `volumes/2chronicles/` |
 
 **Genesis through 1 Chronicles (thirteen volumes) are complete; 2 Chronicles is in progress** (`tools/full/chr2/`, fourteen chapters
 planned in `chr2/__init__.py`; Solomon's house reuses 1 Kings' blueprints, the kings of Judah reuse 1–2 Kings' faces and drawings). 1 Chronicles is `tools/full/chr1/` (a module

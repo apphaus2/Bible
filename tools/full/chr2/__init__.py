@@ -30,5 +30,7 @@ META = {
      "blurb": "Tadmor in the wilderness and the store-cities; Pharaoh's daughter brought up to her own house, for the places are holy whereunto the ark hath come; the ships of Ophir; then the queen of Sheba with hard questions — the half of the greatness of thy wisdom was not told me; the throne of ivory and its twelve lions; and Solomon slept with his fathers."},
     {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Rehoboam", "range": "2 Chronicles 10–12", "bible_chapters": [10, 11, 12],
      "blurb": "Rehoboam at Shechem: the counsel of the old men and of the young — my little finger is thicker than my father's loins; whips and scorpions; every man to your tents, O Israel; ye shall not fight against your brethren; the cities for defence and the Levites who came to Judah; Shishak king of Egypt — Jehovah is righteous; and shields of brass for the shields of gold."},
+    {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Abijah and Asa", "range": "2 Chronicles 13–16", "bible_chapters": [13, 14, 15, 16],
+     "blurb": "Abijah upon mount Zemaraim — God is with us at our head — and the shout of Judah; Asa who sought Jehovah, and Zerah the Ethiopian with a thousand thousand: help us, O Jehovah our God, for we rely on thee; Azariah's word and the covenant sworn with trumpets; then Ramah, the silver sent to Ben-hadad, and Hanani the seer: the eyes of Jehovah run to and fro throughout the whole earth."},
   ],
 }

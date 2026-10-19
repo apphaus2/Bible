@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 259 verses — 259 full, 0 partial, 0 omitted.
+**So far:** 329 verses — 329 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Wisdom and Knowledge (2 Chronicles 1–4)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · Rehoboam (2 Chronicles 10–12)
 
 58 verses: 58 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · Abijah and Asa (2 Chronicles 13–16)
+
+70 verses: 70 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
