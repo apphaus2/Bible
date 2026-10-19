@@ -357,7 +357,7 @@ def s_court(p, w, h, seed):
 
 def s_music(p, w, h, seed):
     """Sing praises unto Jehovah: Levites with harps and cymbals."""
-    return C1.singers(p, w, h, seed, n=6 if w > 500 else 3, top=max(0.56, 0.92 - 210 / h))     # figures no taller than ~210 px
+    return C1.singers(p, w, h, seed, n=6 if w > 500 else 3, top=max(0.64, 0.92 - 170 / h))     # figures no taller than ~170 px, clear of the words
 
 def s_glory(p, w, h, seed):
     """Jehovah in his holy temple, his throne in heaven: light breaking through the clouds (God is never drawn)."""

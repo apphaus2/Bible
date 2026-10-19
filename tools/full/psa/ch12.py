@@ -25,7 +25,7 @@ def title(n):
 SEGS = (psalm(101, "1 DAVID_KING | 3 DAVID_WRATH | 6 land")
         + psalm(102, "1 LEVITE_GRIEF | 3 smoke | 4 grass | 6 housetop | 8 LEVITE_GRIEF | 11 mist | 12 zion | 18 scroll | 19 glory | 21 zion | 23 LEVITE_GRIEF | 25 earth "
                      "| 26 mist | 28 family", face="LEVITE_GRIEF")
-        + psalm(103, "1 DAVID_KING | 3 dawn | 5 wings | 6 wilderness | 8 DAVID_KING | 11 heavens | 12 sun | 13 family | 14 grass | 17 DAVID_KING | 19 glory | 22 music")
+        + psalm(103, "1 DAVID_KING | 3 dawn | 5 wings | 6 wilderness | 8 DAVID_KING | 11 heavens | 13 family | 14 grass | 17 DAVID_KING | 19 glory | 22 music")
         + psalm(104, "1 glory | 3 storm | 5 earth | 6 waves | 10 brook | 12 birds | 14 harvest | 16 cedars | 18 goats | 19 moonnight | 21 lions | 23 plow | 24 creation "
-                     "| 25 creatures | 27 harvest | 29 mist | 30 dawn | 31 glory | 32 sinai | 33 music | 35 LEVITE"))
+                     "| 25 creatures | 27 harvest | 29 mist | 31 glory | 32 sinai | 33 music | 35 LEVITE"))
 PG.extend(pack(SEGS, "PS-C12-D", PG.next(), end=end_mark("NEXT · HE REMEMBERED HIS COVENANT", "right: 10px; bottom: 34px")))

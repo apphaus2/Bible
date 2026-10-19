@@ -32,7 +32,7 @@ SEGS = (psalm(90, "1 mountains | 3 MOSES | 5 grass | 7 MOSES_GRIEF | 10 mist | 1
         + psalm(95, "1 music | 3 mountains | 5 sea | 6 flock | 8 desert", god={f"95:{x}": None for x in range(8, 12)})
         + psalm(96, "1 music | 4 idols | 6 court | 9 earth | 11 sea | 12 cedars | 13 glory")
         + psalm(97, "1 storm | 3 fire | 5 mountains | 7 idols | 8 zion | 10 dawn")
-        + psalm(98, "1 music | 3 nations | 4 trumpets | 7 sea | 8 mountains | 9 glory")
+        + psalm(98, "1 music | 4 trumpets | 7 sea")
         + psalm(99, "1 ark | 4 judges | 6 wilderness | 8 altar | 9 zion")
         + psalm(100, "1 pasture | 4 gates"))
 PG.extend(pack(SEGS, "PS-C11-D", PG.next(), end=end_mark("NEXT · BLESS JEHOVAH, O MY SOUL", "right: 10px; bottom: 34px")))
