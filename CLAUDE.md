@@ -173,6 +173,7 @@ The 154 digest pages whose drawings the volumes still lift are kept as reference
 | 2 Kings | 12 · Josiah | 22–23 | title + 14 (pp. 132–145) | 57/57 verses full (23:20 and 23:29 words only) | `volumes/2kings/` |
 | 2 Kings | 13 · The Fall of Jerusalem | 24–25 | title + 10 (pp. 146–155) | 50/50 verses full (25:7, 25:21 and 25:25 words only; the city burning with no one drawn) | `volumes/2kings/` |
 | 1 Chronicles | 1 · From Adam | 1–2 | cover + title + 9 (pp. 1–9) | 109/109 verses full (lineage charts, `chr1.art.lineage`/`branch`, over roll cells) | `volumes/1chronicles/` |
+| 1 Chronicles | 2 · The Sons of David | 3–4 | title + 8 (pp. 10–17) | 67/67 verses full (Jabez as faces and a survey plan; 4:41 words over smoke) | `volumes/1chronicles/` |
 
 **Genesis through 2 Kings (twelve volumes) are complete; 1 Chronicles is in progress.** 1 Chronicles is `tools/full/chr1/` (a module
 name cannot start with a digit; eleven chapters planned in `chr1/__init__.py`): the genealogies of 1–9 as lineage charts

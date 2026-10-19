@@ -71,3 +71,51 @@ def fire_altar(p, w, h, seed, king=True):
     if king:
         o.append(E.kneel(w * 0.3, b, fit(b, h * 0.62) * 0.9, color="#4A2A6A", skin="#B98A6E"))
     return "".join(o)
+
+# ---- 1 Chronicles 3–4 ---------------------------------------------------------------------------------------------------
+import random, numbers1 as N
+from genesis.art2 import hills
+from genesis.art3 import flock, sun
+
+def jabez_border(w, h):
+    """Enlarge my border: a holding drawn as a survey plan, its old bound dashed and the new bound pushed out around it."""
+    o = [grid_bg(w, h)]
+    cx, cy = w * 0.5, h * 0.54
+    for k, (col, dash, sw) in enumerate((("#4A7A9A", "6 6", 2), ("#8FD0E2", "10 6", 2.4), ("#FFD23F", "", 3))):
+        rx, ry = w * (0.12 + 0.12 * k), h * (0.14 + 0.12 * k)
+        pts = [(cx + rx * math.cos(a) * (1 + 0.12 * math.sin(3 * a + k)), cy + ry * math.sin(a) * (1 + 0.1 * math.cos(2 * a + k))) for a in [i * math.pi / 9 for i in range(18)]]
+        d = "M" + " L ".join(f"{f(x)} {f(y)}" for x, y in pts) + " Z"
+        o.append(f'<path d="{d}" fill="{col}" fill-opacity="{0.05 + 0.04 * k}" stroke="{col}" stroke-width="{sw}"' + (f' stroke-dasharray="{dash}"' if dash else "") + '></path>')
+    for a in range(0, 360, 45):
+        r = math.radians(a)
+        o.append(route([(cx + w * 0.2 * math.cos(r), cy + h * 0.24 * math.sin(r)), (cx + w * 0.34 * math.cos(r), cy + h * 0.36 * math.sin(r))], color="#FFD23F", sw=2, dash="4 4"))
+    o.append(node(cx, cy, "JABEZ", GOLD, r=6, dy=-14, size=11) + label(cx, h * 0.96, "ENLARGE MY BORDER", GOLD, 10))
+    return "".join(o)
+
+def pasture(p, w, h, seed, smoke=False):
+    """The fat pasture at the entrance of Gedor, wide and quiet, flocks grazing (smoke=True: tents far off under smoke)."""
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#8FD0E2", "#F3E8C8") if not smoke else K2.sky(w, h, "#5A4A5A", "#C8A080"),
+         hills(w, h, h * 0.42, seed, "#6A8A4A" if not smoke else "#5A5A4A", amp=18, step=90), ground(w, h, h * 0.56, "#9CCB5E" if not smoke else "#8A9A5A", dy=0)]
+    if smoke:
+        o.append(N.camp(8, w * 0.5, w * 0.98, h * 0.5, h * 0.62, seed, color=("#4A3A3A", "#3A2A2A", "#5A4A40")))
+        r = random.Random(seed)
+        for i in range(4):
+            x = w * (0.56 + 0.1 * i)
+            o.append(f'<path d="M{f(x)} {f(h * 0.54)} C {f(x - 30)} {f(h * 0.4)} {f(x + 30)} {f(h * 0.26)} {f(x + r.uniform(-20, 40))} {f(h * 0.06)}" stroke="#3A3434" stroke-width="{f(w * 0.03)}" stroke-linecap="round" fill="none" opacity="0.55"></path>')
+        o.append(flock(w * 0.02, w * 0.46, h * 0.66, h * 0.92, 10, seed, cows=0.1))
+    else:
+        o.append(sun(w * 0.84, h * 0.14, 20, color="#FFE680", op=0.5) + flock(w * 0.04, w * 0.96, h * 0.6, h * 0.94, 18, seed, cows=0.2))
+    return "".join(o)
+
+def seir(p, w, h, seed):
+    """Mount Seir, red and steep, and the men of Simeon going up toward it in a long file, small with distance."""
+    from genesis.art3 import man
+    o = [mk.defs(p, *ALL), K2.sky(w, h, "#C86A3A", "#F3C88A"),
+         f'<path d="M-10 {f(h * 0.7)} L {f(w * 0.3)} {f(h * 0.2)} L {f(w * 0.44)} {f(h * 0.34)} L {f(w * 0.62)} {f(h * 0.12)} L {f(w + 10)} {f(h * 0.6)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#8A3A1E" stroke="#0D0D0F" stroke-width="2.6"></path>',
+         hills(w, h, h * 0.76, seed, "#B8682E", amp=10, step=70), ground(w, h, h * 0.86, "#C8A06A", dy=0)]
+    r = random.Random(seed)
+    for i in range(14):
+        k = i / 13
+        x, y = w * (0.06 + 0.7 * k), h * (0.98 - 0.12 * k)
+        o.append(man(p, x, y, fit(y, y - h * (0.3 - 0.18 * k)), r.choice(["#8A3A1E", "#5A2A16", "#3A2214", "#5A6E8A"])))
+    return "".join(o)

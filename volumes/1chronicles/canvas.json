@@ -86,6 +86,69 @@
    "w": 760,
    "h": 1080,
    "title": "9 · The Sons of Caleb"
+  },
+  "1CH-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Sons of David"
+  },
+  "1CH-C02-D-P01-BornUntoHimInHebro.dc.html": {
+   "x": 840,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Born unto Him in Hebron"
+  },
+  "1CH-C02-D-P02-TheKingsOfJudah.dc.html": {
+   "x": 1680,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Kings of Judah"
+  },
+  "1CH-C02-R-P01-AfterTheCaptivity.dc.html": {
+   "x": 2520,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · After the Captivity"
+  },
+  "1CH-C02-R-P02-TheFamiliesOfJudah.dc.html": {
+   "x": 3360,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Families of Judah"
+  },
+  "1CH-C02-E-P01-Jabez.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Jabez"
+  },
+  "1CH-C02-S-P01-TheMenOfRecah.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Men of Recah"
+  },
+  "1CH-C02-S-P02-TheSonsOfSimeon.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · The Sons of Simeon"
+  },
+  "1CH-C02-F-P01-TheEntranceOfGedor.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Entrance of Gedor"
   }
  },
  "order": [
@@ -99,7 +162,16 @@
   "1CH-C01-G-P01-DavidTheSeventh.dc.html",
   "1CH-C01-U-P01-TheSonsOfHezron.dc.html",
   "1CH-C01-U-P02-TheSonsOfJerahmeel.dc.html",
-  "1CH-C01-U-P03-TheSonsOfCaleb.dc.html"
+  "1CH-C01-U-P03-TheSonsOfCaleb.dc.html",
+  "1CH-C02-00-Title.dc.html",
+  "1CH-C02-D-P01-BornUntoHimInHebro.dc.html",
+  "1CH-C02-D-P02-TheKingsOfJudah.dc.html",
+  "1CH-C02-R-P01-AfterTheCaptivity.dc.html",
+  "1CH-C02-R-P02-TheFamiliesOfJudah.dc.html",
+  "1CH-C02-E-P01-Jabez.dc.html",
+  "1CH-C02-S-P01-TheMenOfRecah.dc.html",
+  "1CH-C02-S-P02-TheSonsOfSimeon.dc.html",
+  "1CH-C02-F-P01-TheEntranceOfGedor.dc.html"
  ],
  "notes": {
   "Main": {
@@ -115,6 +187,13 @@
    "text": "Chapter 1 · From Adam (1 Chronicles 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Sons of David (1 Chronicles 3–4)",
+   "x": 0,
+   "y": 4600
   }
  },
  "designSystems": [],

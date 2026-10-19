@@ -23,7 +23,7 @@ ADAM = ["ADAM", "SETH", "ENOSH", "KENAN", "MAHALALEL", "JARED", "ENOCH", "METHUS
 
 @P("1CH-C01-00-Title", "Chapter 1 · From Adam", title=True)
 def title(n):
-    svg = shade(f'<g transform="translate(0 300)">{K.lineage(760, 780, ADAM + ["SHEM", "HAM", "JAPHETH"], hi=("ADAM", "NOAH"), per=4, top=0.12, bot=0.9)}</g>'
+    svg = shade(f'<g transform="translate(0 300)">{K.lineage(760, 780, ADAM + ["SHEM", "HAM", "JAPHETH"], hi=("ADAM", "NOAH"), per=4, top=0.17, bot=0.9)}</g>'
                 f'<rect x="0" y="0" width="760" height="300" fill="#0B1A2E"></rect>')
     return chapter_title(1, "第一話", "From Adam", "1 Chronicles 1 – 2", svg, MAP, v("1:1"), "1 Chronicles · Volume Thirteen")
 
