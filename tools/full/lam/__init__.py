@@ -21,5 +21,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "How Doth the City Sit Solitary", "range": "Lamentations 1–2", "bible_chapters": [1, 2],
      "blurb": "How doth the city sit solitary, that was full of people! She is become as a widow; she weepeth sore in the night; the ways of Zion do mourn; is it nothing to you, all ye that pass by?; the Lord hath covered the daughter of Zion with a cloud in his anger; her gates are sunk into the ground; the elders sit upon the ground and keep silence; thy breach is great like the sea: who can heal thee?"},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "His Compassions Fail Not", "range": "Lamentations 3–5", "bible_chapters": [3, 4, 5],
+     "blurb": "I am the man that hath seen affliction; he hath made me to dwell in dark places; yet this I recall to my mind: his compassions fail not, they are new every morning, great is thy faithfulness; how is the gold become dim!; the crown is fallen from our head; the foxes walk upon the mountain of Zion; turn thou us unto thee, O Jehovah, and we shall be turned; renew our days as of old."},
   ],
 }

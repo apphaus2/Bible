@@ -16,6 +16,16 @@
     "Main.dc.html",
     "LAM-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "His Compassions Fail Not",
+   "range": "Lamentations 3–5",
+   "blurb": "I am the man that hath seen affliction; he hath made me to dwell in dark places; yet this I recall to my mind: his compassions fail not, they are new every morning, great is thy faithfulness; how is the gold become dim!; the crown is fallen from our head; the foxes walk upon the mountain of Zion; turn thou us unto thee, O Jehovah, and we shall be turned; renew our days as of old.",
+   "prefixes": [
+    "LAM-C02-"
+   ]
   }
  ]
 }
