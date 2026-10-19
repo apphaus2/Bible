@@ -32,5 +32,7 @@ META = {
      "blurb": "Zophar the Naamathite: canst thou by searching find out God? — it is high as heaven, deeper than Sheol. Job answers: no doubt but ye are the people; ask now the beasts, and they shall teach thee; behold, he will slay me, nevertheless I will maintain my ways; man, that is born of a woman, is of few days, and full of trouble; there is hope of a tree; if a man die, shall he live again?"},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "My Witness Is in Heaven", "range": "Job 15–17", "bible_chapters": [15, 16, 17],
      "blurb": "Eliphaz again: should a wise man fill himself with the east wind?; art thou the first man that was born?; the wicked man travaileth with pain all his days. Job answers: miserable comforters are ye all; his archers compass me round about; O earth, cover not thou my blood — even now, behold, my witness is in heaven; who is there that will strike hands with me?; the bars of Sheol."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "My Redeemer Liveth", "range": "Job 18–20", "bible_chapters": [18, 19, 20],
+     "blurb": "Bildad again: the light of the wicked shall be put out; a gin shall take him by the heel. Job answers: he hath walled up my way; my kinsfolk have failed; have pity upon me, O ye my friends; oh that my words were graven in the rock for ever! — but as for me I know that my Redeemer liveth. Zophar again: the triumphing of the wicked is short; the viper's tongue; the bow of brass."},
   ],
 }

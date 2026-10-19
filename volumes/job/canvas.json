@@ -436,6 +436,90 @@
    "w": 760,
    "h": 1080,
    "title": "55 · My Witness Is in Heaven"
+  },
+  "JOB-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · My Redeemer Liveth"
+  },
+  "JOB-C06-D-P01-BildadAnsweredAgai.dc.html": {
+   "x": 840,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Bildad Answered Again"
+  },
+  "JOB-C06-D-P02-BildadAnsweredAgai.dc.html": {
+   "x": 1680,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Bildad Answered Again"
+  },
+  "JOB-C06-D-P03-BildadAnsweredAgai.dc.html": {
+   "x": 2520,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Bildad Answered Again"
+  },
+  "JOB-C06-D-P04-HavePityUponMe.dc.html": {
+   "x": 3360,
+   "y": 21300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Have Pity upon Me"
+  },
+  "JOB-C06-D-P05-HavePityUponMe.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Have Pity upon Me"
+  },
+  "JOB-C06-D-P06-HavePityUponMe.dc.html": {
+   "x": 840,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Have Pity upon Me"
+  },
+  "JOB-C06-D-P07-MyRedeemerLiveth.dc.html": {
+   "x": 1680,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · My Redeemer Liveth"
+  },
+  "JOB-C06-D-P08-ZopharAnsweredAgai.dc.html": {
+   "x": 2520,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Zophar Answered Again"
+  },
+  "JOB-C06-D-P09-ZopharAnsweredAgai.dc.html": {
+   "x": 3360,
+   "y": 22500,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Zophar Answered Again"
+  },
+  "JOB-C06-D-P10-ZopharAnsweredAgai.dc.html": {
+   "x": 0,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Zophar Answered Again"
+  },
+  "JOB-C06-D-P11-ZopharAnsweredAgai.dc.html": {
+   "x": 840,
+   "y": 23700,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Zophar Answered Again"
   }
  },
  "order": [
@@ -499,7 +583,19 @@
   "JOB-C05-D-P06-MiserableComforter.dc.html",
   "JOB-C05-D-P07-MyWitnessIsInHeave.dc.html",
   "JOB-C05-D-P08-MyWitnessIsInHeave.dc.html",
-  "JOB-C05-D-P09-MyWitnessIsInHeave.dc.html"
+  "JOB-C05-D-P09-MyWitnessIsInHeave.dc.html",
+  "JOB-C06-00-Title.dc.html",
+  "JOB-C06-D-P01-BildadAnsweredAgai.dc.html",
+  "JOB-C06-D-P02-BildadAnsweredAgai.dc.html",
+  "JOB-C06-D-P03-BildadAnsweredAgai.dc.html",
+  "JOB-C06-D-P04-HavePityUponMe.dc.html",
+  "JOB-C06-D-P05-HavePityUponMe.dc.html",
+  "JOB-C06-D-P06-HavePityUponMe.dc.html",
+  "JOB-C06-D-P07-MyRedeemerLiveth.dc.html",
+  "JOB-C06-D-P08-ZopharAnsweredAgai.dc.html",
+  "JOB-C06-D-P09-ZopharAnsweredAgai.dc.html",
+  "JOB-C06-D-P10-ZopharAnsweredAgai.dc.html",
+  "JOB-C06-D-P11-ZopharAnsweredAgai.dc.html"
  ],
  "notes": {
   "Main": {
@@ -543,6 +639,13 @@
    "text": "Chapter 5 · My Witness Is in Heaven (Job 15–17)",
    "x": 0,
    "y": 18100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · My Redeemer Liveth (Job 18–20)",
+   "x": 0,
+   "y": 21000
   }
  },
  "designSystems": [],
