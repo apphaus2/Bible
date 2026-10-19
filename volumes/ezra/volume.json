@@ -16,6 +16,16 @@
     "Main.dc.html",
     "EZR-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Foundation of the House",
+   "range": "Ezra 3–4",
+   "blurb": "The people gathered as one man and the altar set upon its base; the foundation of the house laid with trumpets — for he is good — and the old men that had seen the first house weeping, so that the noise of the shout could not be told from the weeping; then the adversaries, the letter to Artaxerxes, and the work made to cease.",
+   "prefixes": [
+    "EZR-C02-"
+   ]
   }
  ]
 }

@@ -19,5 +19,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Decree of Cyrus", "range": "Ezra 1–2", "bible_chapters": [1, 2],
      "blurb": "In the first year of Cyrus king of Persia, Jehovah stirred up his spirit: whosoever there is among you of all his people, let him go up to Jerusalem; the vessels of the house of Jehovah numbered to Sheshbazzar; and the children of the province that went up out of the captivity, family by family, forty and two thousand three hundred and threescore."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Foundation of the House", "range": "Ezra 3–4", "bible_chapters": [3, 4],
+     "blurb": "The people gathered as one man and the altar set upon its base; the foundation of the house laid with trumpets — for he is good — and the old men that had seen the first house weeping, so that the noise of the shout could not be told from the weeping; then the adversaries, the letter to Artaxerxes, and the work made to cease."},
   ],
 }
