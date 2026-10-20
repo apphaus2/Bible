@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 2 — Get Wisdom (Proverbs 4–6). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 2 — Get Wisdom (Proverbs 4–6). Every verse, word for word from ref/eng-asv.
 Hear, my sons, the instruction of a father: Solomon remembers David teaching him (David's words beside David's old face);
 the son running on the straight road; the path of the righteous as the dawning light and the way of the wicked as
 darkness; keep thy heart. The strange woman never drawn: a shut door at dusk, the son walking the other way; the young

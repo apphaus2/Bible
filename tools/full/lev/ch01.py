@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 1 — The Offerings (Leviticus 1–5). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 1 — The Offerings (Leviticus 1–5). Every verse, word for word from ref/eng-asv.
 One story page (Jehovah calling out of the tent of meeting, the offerer at the altar), then the laws as law cells."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

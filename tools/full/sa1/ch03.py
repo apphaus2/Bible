@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 3 — Give Us a King (1 Samuel 6–8). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 3 — Give Us a King (1 Samuel 6–8). Every verse, word for word from ref/eng-asv.
 The priests and diviners and the trespass-offering of golden tumors and mice; the new cart and two milch kine lowing as they
 went to Beth-shemesh (the digest's kine panels); the men of Beth-shemesh smitten (6:19 words only); the ark at
 Kiriath-jearim twenty years; Mizpah, the thunder, and the stone Eben-ezer — Hitherto hath Jehovah helped us; Samuel's sons;

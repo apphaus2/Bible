@@ -1,4 +1,4 @@
-"""Nehemiah volume, Chapter 5 — The Book of the Law (Nehemiah 8–9). Every verse, word for word from ref/asv.
+"""Nehemiah volume, Chapter 5 — The Book of the Law (Nehemiah 8–9). Every verse, word for word from ref/eng-asv.
 All the people gathered as one man before the water gate; Ezra the scribe upon the pulpit of wood, six on his right hand and
 seven on his left, reading from early morning until midday; Amen, Amen, with the lifting up of their hands; the Levites
 giving the sense; this day is holy — the joy of Jehovah is your strength; the booths of olive, myrtle and palm on every

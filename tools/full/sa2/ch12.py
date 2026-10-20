@@ -1,5 +1,5 @@
 """2 Samuel volume, Chapter 12 — Which Cost Me Nothing (2 Samuel 23–24), the last chapter of 2 Samuel. Every verse, word for
-word from ref/asv. The last words of David in song boxes; the mighty men as roll cells, with the water of the well of
+word from ref/eng-asv. The last words of David in song boxes; the mighty men as roll cells, with the water of the well of
 Beth-lehem poured out unto Jehovah as story panels; then the numbering (Joab's route as a technical map, the sum as a tally
 board), Gad and the three things, the pestilence (24:15 words over the silent tents), the angel by the threshing-floor —
 it is enough; and the threshing-floor of Araunah bought at a price (the digest's panels)."""

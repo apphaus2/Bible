@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 13 — The Dungeon (Jeremiah 37–39). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 13 — The Dungeon (Jeremiah 37–39). Every verse, word for word from ref/eng-asv.
 Zedekiah made king; pray now unto Jehovah for us; Pharaoh's army and the Chaldeans breaking up (a map); the arrest in the
 gate of Benjamin — thou art falling away to the Chaldeans; the dungeon-house; is there any word from Jehovah? There is; the
 daily loaf; then the princes — let this man be put to death; the dungeon of Malchijah, no water but mire (the cistern's mouth

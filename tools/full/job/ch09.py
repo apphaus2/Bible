@@ -1,4 +1,4 @@
-"""Job volume, Chapter 9 — The Months of Old (Job 29–31). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 9 — The Months of Old (Job 29–31). Every verse, word for word from ref/eng-asv.
 Job's parable: oh that I were as in the months of old — his lamp over the tent door and his children about him; his seat
 in the gate, the aged rising and the princes silent; eyes to the blind and feet to the lame; the tree whose root is spread
 out to the waters. But now: the derision of the young, the outcasts of the frightful valleys; the rabble through a wide

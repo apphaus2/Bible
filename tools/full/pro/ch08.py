@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 8 — The Words of the Wise (Proverbs 22–24). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 8 — The Words of the Wise (Proverbs 22–24). Every verse, word for word from ref/eng-asv.
 Saying cells: a good name rather than great riches; train up a child; the sluggard's lion in the streets; then the words of
 the wise (22:17–21, a drawn cell: elders at the gate, a youth listening), their sayings in small groups — the ancient
 landmark, the ruler's table, riches flying away like an eagle, the rod of correction; who hath woe? (23:29–35, a drawn

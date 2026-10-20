@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 12 — Ye Are My Witnesses (Isaiah 43–45). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 12 — Ye Are My Witnesses (Isaiah 43–45). Every verse, word for word from ref/eng-asv.
 Fear not, for I have redeemed thee — through the waters and through the fire; the four quarters giving up the sons and the
 daughters; the nations assembled — ye are my witnesses; a way in the sea, and a new thing — rivers in the desert; blotted out
 for mine own sake; water on the thirsty, willows by the watercourses; I am the first, and I am the last; the smith and the

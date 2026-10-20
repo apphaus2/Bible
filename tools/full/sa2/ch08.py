@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 8 — The Mount of Olives (2 Samuel 15–16). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 8 — The Mount of Olives (2 Samuel 15–16). Every verse, word for word from ref/eng-asv.
 Absalom's chariot and fifty runners; beside the way of the gate — oh that I were made judge in the land; so Absalom stole the
 hearts of the men of Israel; Absalom is king in Hebron; arise, and let us flee; Ittai the Gittite — whether for death or for
 life; the brook Kidron and the ark carried back; the ascent of the mount of Olives, weeping, barefoot (the digest's panels);

@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 8 — The Pattern of the Tabernacle (Exodus 25–27). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 8 — The Pattern of the Tabernacle (Exodus 25–27). Every verse, word for word from ref/eng-asv.
 God's instructions are set as blueprint pages: art8's technical drawings (cubits marked) with the words in Voice boxes."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

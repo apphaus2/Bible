@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 3 — The Root of Jesse (Isaiah 10–12). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 3 — The Root of Jesse (Isaiah 10–12). Every verse, word for word from ref/eng-asv.
 Woe unto them that decree unrighteous decrees; Ho Assyrian, the rod of mine anger — is not Calno as Carchemish? (a map); the
 king of Assyria's boast, the riches of the peoples gathered as eggs from a nest; shall the axe boast itself (a plate); the
 forest so few that a child may write them; a remnant shall return; the march from Aiath to Nob (a map); Lebanon felled; a

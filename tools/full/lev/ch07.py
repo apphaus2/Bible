@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 7 — Holy unto Jehovah (Leviticus 19–22). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 7 — Holy unto Jehovah (Leviticus 19–22). Every verse, word for word from ref/eng-asv.
 All law cells (lev/art7.py). The penalties of chapter 20 are drawn as the kinship charts of chapter 18 under a red penalty
 bar; no executions are shown."""
 import sys, pathlib

@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 3 — Jehovah Bless Thee (Numbers 5–6). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 3 — Jehovah Bless Thee (Numbers 5–6). Every verse, word for word from ref/eng-asv.
 The unclean put out of the camp (a story page), restitution, the law of jealousy and the vow of a Nazirite as law cells
 (exo.kit.law_pages, pictograms in num/art3.py), and Aaron's blessing as a closing splash."""
 import sys, pathlib

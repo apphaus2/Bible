@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 12 — The Roll (Jeremiah 34–36). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 12 — The Roll (Jeremiah 34–36). Every verse, word for word from ref/eng-asv.
 Zedekiah told: thou shalt die in peace; Lachish and Azekah, the last fortified cities (a map); the covenant of liberty, the
 servants set free and brought back; I proclaim unto you a liberty, to the sword; the calf cut in twain (the covenant pieces
 covered on their stones); the Rechabites before the bowls of wine — we will drink no wine; then the roll: Baruch writes from the

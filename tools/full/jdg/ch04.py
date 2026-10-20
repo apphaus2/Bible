@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 4 — Abimelech (Judges 8–9). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 4 — Abimelech (Judges 8–9). Every verse, word for word from ref/eng-asv.
 Ephraim's chiding; faint, yet pursuing; Succoth and Penuel; Zebah and Zalmunna (8:21 words only); I will not rule over you;
 the golden ear-rings and the ephod in Ophrah; Gideon's death; then Abimelech made king at Shechem (9:5 as words over the
 stone at Ophrah's ruin: nothing drawn), Jotham's fable from the top of Gerizim, Gaal and Zebul, Shechem sowed with salt, the

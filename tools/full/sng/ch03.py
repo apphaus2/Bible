@@ -1,5 +1,5 @@
 """Song of Solomon volume, Chapter 3 — Love Is Strong as Death (Song of Solomon 6–8), the last chapter of the Song. Every
-verse, word for word from ref/asv. Whither is thy beloved gone (the daughters' face); the beds of spices and the lilies;
+verse, word for word from ref/eng-asv. Whither is thy beloved gone (the daughters' face); the beds of spices and the lilies;
 fair as Tirzah, comely as Jerusalem, terrible as an army with banners; the likenesses again as cells; the queens and the
 virgins without number and one dove; looking forth as the morning; the garden of nuts and the chariots; the two camps of
 Mahanaim; then the likenesses of 7:1–9 as plates of cells only — sandals, jewels, a goblet, a heap of wheat set about with

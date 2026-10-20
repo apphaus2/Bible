@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 1 — Long Live King Solomon (1 Kings 1). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 1 — Long Live King Solomon (1 Kings 1). Every verse, word for word from ref/eng-asv.
 King David old and covered with clothes, and Abishag the Shunammite; Adonijah exalting himself — I will be king — with his
 feast by the stone of Zoheleth; Nathan's counsel to Bath-sheba; Bath-sheba and Nathan before the king; the oath: assuredly
 Solomon thy son shall reign after me; Solomon on the king's mule down to Gihon, the horn of oil, long live king Solomon;

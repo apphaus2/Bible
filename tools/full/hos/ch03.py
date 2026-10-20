@@ -1,5 +1,5 @@
 """Hosea volume, Chapter 3 — I Will Be as the Dew (Hosea 9–14), the last chapter of Hosea. Every verse, word for word from
-ref/asv. Rejoice not, O Israel (the threshing-floor and the winepress empty); the days of visitation; grapes in the
+ref/eng-asv. Rejoice not, O Israel (the threshing-floor and the winepress empty); the days of visitation; grapes in the
 wilderness and the first-ripe fig; their glory shall fly away like a bird (9:11–16 over an empty cradle and a dried root —
 nothing else drawn); wanderers among the nations; the luxuriant vine, the calves of Beth-aven carried to Assyria, the king as
 foam upon the water, thistles on the altars, cover us and fall on us; sow to yourselves in righteousness, break up your

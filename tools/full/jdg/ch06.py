@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 6 — Samson (Judges 13–15). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 6 — Samson (Judges 13–15). Every verse, word for word from ref/eng-asv.
 The angel of Jehovah to Manoah's wife (the Voice box; the digest's Nazirite panels), Manoah's prayer, the name that is
 wonderful and the angel ascending in the flame of the altar; Samson born; the woman of Timnah, the young lion, the honey,
 the riddle at the feast; the three hundred foxes and the burning grain (15:6 is words over the burnt field); the rock of

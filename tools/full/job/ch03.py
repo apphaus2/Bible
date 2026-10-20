@@ -1,4 +1,4 @@
-"""Job volume, Chapter 3 — No Umpire Betwixt Us (Job 8–10). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 3 — No Umpire Betwixt Us (Job 8–10). Every verse, word for word from ref/eng-asv.
 Bildad the Shuhite's first speech (purple): doth God pervert justice?; inquire of the former age, our days upon earth are
 a shadow (the standing stones of the fathers); the rush without mire, the spider's web, the green shoots about the
 stone-heap. Job's answer: how can man be just with God? — him that removeth the mountains, that maketh the Bear, Orion and

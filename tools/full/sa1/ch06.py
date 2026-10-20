@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 6 — Jonathan at Michmash (1 Samuel 14). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 6 — Jonathan at Michmash (1 Samuel 14). Every verse, word for word from ref/eng-asv.
 Jonathan and his armorbearer between the crags Bozez and Seneh — no restraint to Jehovah to save by many or by few; Come up
 unto us; the trembling and the earthquake; Saul's rash oath; the honey dropping in the forest; the people eating with the
 blood and the great stone; the lot between Saul and Jonathan, and the people rescuing Jonathan; Saul's wars as a map, and

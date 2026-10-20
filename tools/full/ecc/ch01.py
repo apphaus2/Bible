@@ -1,4 +1,4 @@
-"""Ecclesiastes volume, Chapter 1 — Vanity of Vanities (Ecclesiastes 1–3). Every verse, word for word from ref/asv.
+"""Ecclesiastes volume, Chapter 1 — Vanity of Vanities (Ecclesiastes 1–3). Every verse, word for word from ref/eng-asv.
 The words of the Preacher (1:1 in a caption) over the king on his roof at evening; one generation goeth and another cometh;
 the sun's course, the wind's circuits and the rivers to the sea as diagrams; no remembrance over the ruins in the sand; the
 crooked rod and the tally that cannot be numbered; mirth, the great works and the pools, the singers and the treasure; light

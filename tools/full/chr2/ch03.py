@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 3 — The Queen of Sheba (2 Chronicles 8–9). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 3 — The Queen of Sheba (2 Chronicles 8–9). Every verse, word for word from ref/eng-asv.
 Solomon's cities as a map — Tadmor, the Beth-horons, Baalath; the levy of bondservants; Pharaoh's daughter brought up to her
 own house; the offerings and the courses of the priests; the ships to Ophir; then the queen of Sheba with hard questions —
 the half of the greatness of thy wisdom was not told me; the gold of a year, the shields of beaten gold, the throne of ivory

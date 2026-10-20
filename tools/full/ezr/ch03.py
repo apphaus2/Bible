@@ -1,4 +1,4 @@
-"""Ezra volume, Chapter 3 — The House Finished (Ezra 5–6). Every verse, word for word from ref/asv.
+"""Ezra volume, Chapter 3 — The House Finished (Ezra 5–6). Every verse, word for word from ref/eng-asv.
 Haggai and Zechariah prophesying; Zerubbabel and Jeshua build again; Tattenai — who gave you a decree?; but the eye of their
 God was upon the elders; Tattenai's letter to Darius with the elders' answer — we are the servants of the God of heaven and
 earth; the roll found at Achmetha, the decree of Cyrus with the measures of the house; Darius's decree — let the work of this

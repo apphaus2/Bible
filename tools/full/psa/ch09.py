@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 9 — Whom Have I in Heaven (Psalms 73–78), the opening of Book III: the psalms of Asaph (a Levite
-singer in white, grey-bearded). Every verse, word for word from ref/asv. The prosperity of the wicked until I went into the
+singer in white, grey-bearded). Every verse, word for word from ref/eng-asv. The prosperity of the wicked until I went into the
 sanctuary — whom have I in heaven but thee?; the sanctuary burned and the sea divided; the cup in the hand of Jehovah (God's
 words in the Voice box); the arrows and the shield broken, chariot and horse in a dead sleep; I remember the works of
 Jehovah — the waters saw thee; and Psalm 78, the dark sayings of old: the sea divided, the cloud by day and the fire by

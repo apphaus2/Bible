@@ -1,5 +1,5 @@
 """Deuteronomy volume, Chapter 4 — A People for His Own Possession (Deuteronomy 7–8). Every verse, word for word from
-ref/asv. Moses' words in speech panels (deu.common.auto), with pictures between: the seven nations, the hornet, the manna
+ref/eng-asv. Moses' words in speech panels (deu.common.auto), with pictures between: the seven nations, the hornet, the manna
 in the wilderness, the good land of wheat and barley, vines and fig-trees and pomegranates, and the flinty rock."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

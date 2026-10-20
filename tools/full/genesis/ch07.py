@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 7 — Jacob and Esau (Genesis 25:19–27:46). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 7 — Jacob and Esau (Genesis 25:19–27:46). Every verse, word for word from ref/eng-asv.
 Reuses the digest's Book Four panels for the twins, the pottage, the blessing and the bitter cry."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

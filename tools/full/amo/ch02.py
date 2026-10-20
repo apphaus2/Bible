@@ -1,4 +1,4 @@
-"""Amos volume, Chapter 2 — The Plumb-line (Amos 5–9), the last chapter of Amos. Every verse, word for word from ref/asv.
+"""Amos volume, Chapter 2 — The Plumb-line (Amos 5–9), the last chapter of Amos. Every verse, word for word from ref/eng-asv.
 A lamentation over the house of Israel (a thousand, a hundred, ten); seek me, and ye shall live — not Beth-el, nor Gilgal,
 nor Beer-sheba; him that maketh the Pleiades and Orion; the gate and the houses of hewn stone; seek good, and not evil;
 wailing in the broad ways; the day of Jehovah darkness — the lion, the bear, the serpent; I hate your feasts — let justice

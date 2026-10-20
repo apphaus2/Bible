@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 5 — Jephthah (Judges 10–12). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 5 — Jephthah (Judges 10–12). Every verse, word for word from ref/eng-asv.
 Tola and Jair; Israel sold to the Philistines and Ammon, Go and cry unto the gods which ye have chosen; Jephthah the
 Gileadite fetched out of the land of Tob; his message to the king of Ammon over the map of the way round Edom and Moab; the
 vow; his daughter at the door with timbrels; two months upon the mountains (11:39 is words over the mountains: nothing of

@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 10 — The King Returned (2 Samuel 19–20). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 10 — The King Returned (2 Samuel 19–20). Every verse, word for word from ref/eng-asv.
 The victory turned into mourning (the digest's gate by night); Joab: thou lovest them that hate thee; the king sitting in the
 gate; the men of Judah bring the king back over the Jordan; Shimei fallen before him — thou shalt not die; Mephibosheth
 unwashed; Barzillai fourscore years old; the ten parts in the king; Sheba's trumpet — every man to his tents; Amasa at the

@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 10 — Ahaz and Hezekiah (2 Chronicles 28–29). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 10 — Ahaz and Hezekiah (2 Chronicles 28–29). Every verse, word for word from ref/eng-asv.
 Ahaz who walked in the ways of the kings of Israel (28:3 words only); Syria and Pekah, and two hundred thousand carried
 captive to Samaria (28:5–8 words over the column of captives); Oded the prophet — send back the captives; the captives
 clothed and carried on asses to Jericho, the city of palm-trees; Ahaz and the king of Assyria, the gods of Damascus, the

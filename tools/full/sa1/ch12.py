@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 12 — Abigail (1 Samuel 25–26). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 12 — Abigail (1 Samuel 25–26). Every verse, word for word from ref/eng-asv.
 Samuel's death; Nabal shearing in Carmel and his railing — Who is David?; Abigail's two hundred loaves and her ride down the
 covert of the mountain; at David's feet — the soul of my lord shall be bound in the bundle of life; Blessed be thy discretion;
 Nabal's heart died within him (25:38 words only); Abigail taken to wife. Then the hill of Hachilah: Saul asleep among the

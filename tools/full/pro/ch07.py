@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 7 — The King's Heart (Proverbs 19–21). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 7 — The King's Heart (Proverbs 19–21). Every verse, word for word from ref/eng-asv.
 Saying cells: the poor that walketh in his integrity; the king's wrath as the roaring of a lion; the contentions of a wife a
 continual dropping; the sluggard's hand in the dish; wine is a mocker; the sluggard will not plow by reason of the winter;
 diverse weights; the lamp of Jehovah; the king's heart in the hand of Jehovah as the watercourses (a drawn cell, God never

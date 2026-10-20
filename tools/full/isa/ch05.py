@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 5 — The Burden of Egypt (Isaiah 17–20). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 5 — The Burden of Egypt (Isaiah 17–20). Every verse, word for word from ref/eng-asv.
 The burden of Damascus — a ruinous heap, flocks in the cities of Aroer; the gleanings of the olive-tree; the altars and the
 Asherim forsaken; the uproar of the nations chased as chaff; the land of the rustling of wings beyond the rivers of Ethiopia
 and its vessels of papyrus; the vine pruned before the harvest; the burden of Egypt — Jehovah rideth upon a swift cloud (a

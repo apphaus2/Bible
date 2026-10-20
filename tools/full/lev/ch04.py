@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 4 — The Plague of Leprosy (Leviticus 12–13). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 4 — The Plague of Leprosy (Leviticus 12–13). Every verse, word for word from ref/eng-asv.
 All law cells: the purifying after childbirth, and the priest's inspection of the skin, the head and the garment, drawn
 as clinical sample diagrams (lev/art4.py)."""
 import sys, pathlib

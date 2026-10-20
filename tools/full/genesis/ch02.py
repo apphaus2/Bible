@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 2 — Cain to the Flood (Genesis 4–9). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 2 — Cain to the Flood (Genesis 4–9). Every verse, word for word from ref/eng-asv.
 Genesis 5 (the book of the generations of Adam) is set as two 'scroll' pages: every verse in full, with a
 lifespan bar per patriarch."""
 import sys, pathlib

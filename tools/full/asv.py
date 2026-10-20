@@ -1,4 +1,4 @@
-"""The ASV text, straight from ref/asv/*.usfm (eBible.org, public domain), and a coverage tracker.
+"""The ASV text, straight from ref/eng-asv/*.usfm (eBible.org, public domain), and a coverage tracker.
 
     from asv import Book
     G = Book("GEN")
@@ -16,12 +16,12 @@ the translated verse by its share of the letters, moved to the nearest punctuati
 lands on the same break, so a verse cut in two pieces still meets in the middle)."""
 import os, re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-TEXTS = {"en": ("asv", "ASV"), "es": ("rv1909", "RV1909"), "fr": ("lsg", "LSG")}   # language -> (ref/ folder, credit)
+TEXTS = {"en": ("eng-asv", "ASV"), "es": ("spaRV1909", "RV1909"), "fr": ("fraLSG", "LSG")}   # language -> (ref/<eBible id>, credit)
 LANG = os.environ.get("BIBLE_LANG", "en")
 CREDIT = TEXTS[LANG][1]
 def files(folder):
     return {re.match(r"\d\d-(\w{3})", p.name).group(1): p.name for p in sorted((ROOT / "ref" / folder).glob("[0-9][0-9]-*.usfm"))}
-FILES = files("asv")                                                     # all 66 books
+FILES = files("eng-asv")                                                     # all 66 books
 
 def parse(path):
     """{(chapter, verse): text}: Strong's tags, footnotes and cross-references stripped; supplied (italic) words kept."""
@@ -84,7 +84,7 @@ def key(ref):
 class Book:
     def __init__(self, code):
         self.code = code
-        self.src = parse(ROOT / "ref" / "asv" / FILES[code])          # where the plans' ASV words are found
+        self.src = parse(ROOT / "ref" / "eng-asv" / FILES[code])          # where the plans' ASV words are found
         self.verses = self.src if LANG == "en" else parse(ROOT / "ref" / TEXTS[LANG][0] / files(TEXTS[LANG][0])[code])
         self.used = {}                       # (c, v) -> set of character indexes used
         self.cuts = []                       # every (ref, text) handed out, for build_volume's lost-text check

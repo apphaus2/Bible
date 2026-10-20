@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 6 — The Ark of God (1 Chronicles 13–16). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 6 — The Ark of God (1 Chronicles 13–16). Every verse, word for word from ref/eng-asv.
 David consults with every leader — let us bring again the ark of our God; the new cart from the house of Abinadab (the
 digest's panels); the threshing-floor of Chidon (13:10 words over the cart, no one drawn) and Perez-uzza; three months in
 the house of Obed-edom; Hiram's cedars, David's sons, and Baal-perazim and the sound of marching in the tops of the

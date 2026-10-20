@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 2 — Show Thyself a Man (1 Kings 2). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 2 — Show Thyself a Man (1 Kings 2). Every verse, word for word from ref/eng-asv.
 David's charge to Solomon — be thou strong therefore, and show thyself a man; David sleeps with his fathers (the city at
 dusk, no grave drawn); Adonijah asks for Abishag through Bath-sheba, the throne set for the king's mother; Adonijah's end
 (2:25 words only); Abiathar sent to Anathoth; Joab at the horns of the altar (2:34 words over the altar alone); Shimei bound

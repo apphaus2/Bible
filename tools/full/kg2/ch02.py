@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 2 — The Pot of Oil (2 Kings 3–4). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 2 — The Pot of Oil (2 Kings 3–4). Every verse, word for word from ref/eng-asv.
 Jehoram and Mesha's rebellion; three kings in the wilderness of Edom without water; bring me a minstrel — make this valley
 full of trenches; the water red as blood in the morning sun; Kir-hareseth (3:27 words over the wall and its smoke). Then the
 widow's pot of oil and the borrowed vessels; the great woman of Shunem and the little chamber on the wall; thou shalt embrace

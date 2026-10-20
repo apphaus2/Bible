@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 18 — The Hammer of the Whole Earth (Jeremiah 51). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 18 — The Hammer of the Whole Earth (Jeremiah 51). Every verse, word for word from ref/eng-asv.
 A destroying wind against Babylon, and strangers to winnow her; flee out of the midst of Babylon; a golden cup in Jehovah's
 hand; we would have healed Babylon; the kings of the Medes; a standard against her walls; thou that dwellest upon many waters;
 he hath made the earth by his power; thou art my battle-axe; O destroying mountain, a burnt mountain; the kingdoms of Ararat,

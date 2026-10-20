@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 6 — The Glory of Jehovah (1 Kings 8). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 6 — The Glory of Jehovah (1 Kings 8). Every verse, word for word from ref/eng-asv.
 The ark brought up from Zion into the oracle under the wings of the cherubim; the cloud filling the house — the glory of
 Jehovah; Solomon blessing the assembly; his prayer before the altar with his hands spread toward heaven (speech panels):
 will God in very deed dwell on the earth? — hear thou in heaven thy dwelling-place, and forgive; the blessing; the

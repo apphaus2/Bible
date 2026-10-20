@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 7 — The Earthen Bottle (Jeremiah 19–22). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 7 — The Earthen Bottle (Jeremiah 19–22). Every verse, word for word from ref/eng-asv.
 The potter's earthen bottle carried to the gate Harsith over the valley of the son of Hinnom, and broken before the elders
 (19:7–9, the siege and its distress, words over Topheth and the walls at night); Pashhur and the stocks in the upper gate of
 Benjamin — Magor-missabib; thou hast persuaded me, and I was persuaded; a burning fire shut up in my bones; cursed be the day;

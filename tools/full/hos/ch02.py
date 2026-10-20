@@ -1,4 +1,4 @@
-"""Hosea volume, Chapter 2 — The Cake Not Turned (Hosea 4–8). Every verse, word for word from ref/asv.
+"""Hosea volume, Chapter 2 — The Cake Not Turned (Hosea 4–8). Every verse, word for word from ref/eng-asv.
 Jehovah's controversy with the inhabitants of the land (the land mourning); my people are destroyed for lack of knowledge;
 the high places under oaks and poplars and terebinths; Israel like a stubborn heifer; a snare at Mizpah and a net upon
 Tabor (a map); blow ye the cornet in Gibeah (a map); as a moth and as rottenness; as a lion; come, and let us return unto

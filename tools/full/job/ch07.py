@@ -1,4 +1,4 @@
-"""Job volume, Chapter 7 — Where I Might Find Him (Job 21–24). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 7 — Where I Might Find Him (Job 21–24). Every verse, word for word from ref/eng-asv.
 Job answers Zophar: wherefore do the wicked live? — their houses safe, their children dancing to the timbrel and harp; as
 stubble before the wind, as chaff that the storm carrieth away; one dieth in full strength, another in bitterness, and they
 lie down alike in the dust; the wayfaring men; borne to the grave. Eliphaz's third speech (teal): is not thy wickedness

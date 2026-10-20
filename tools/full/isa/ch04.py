@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 4 — How Art Thou Fallen (Isaiah 13–16). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 4 — How Art Thou Fallen (Isaiah 13–16). Every verse, word for word from ref/eng-asv.
 The burden of Babylon (the map, Babylon lit; the Medes coming): the day of Jehovah, the sun darkened; 13:15–16 told in words
 only, over sheep scattered on the plain; Babylon never inhabited, the beasts of the desert in her palaces; the parable
 against the king of Babylon — the cedars rejoice, Sheol's thrones (pale shapes, no faces), how art thou fallen from heaven,

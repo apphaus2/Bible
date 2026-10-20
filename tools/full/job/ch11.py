@@ -1,4 +1,4 @@
-"""Job volume, Chapter 11 — Out of the Whirlwind (Job 38–39). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 11 — Out of the Whirlwind (Job 38–39). Every verse, word for word from ref/eng-asv.
 Jehovah answers Job out of the whirlwind, his words in the Voice box, a box a verse; God is never drawn. Over the
 whirlwind coming down upon the ash heap; the foundations of the earth as a blueprint plate (the line stretched upon it, the
 corner-stone, the morning stars); the sea shut up with doors; the dayspring along the rim of the earth; the springs of the

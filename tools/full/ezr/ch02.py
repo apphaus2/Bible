@@ -1,4 +1,4 @@
-"""Ezra volume, Chapter 2 — The Foundation of the House (Ezra 3–4). Every verse, word for word from ref/asv.
+"""Ezra volume, Chapter 2 — The Foundation of the House (Ezra 3–4). Every verse, word for word from ref/eng-asv.
 The people gathered as one man in the seventh month; the altar set upon its base, for fear was upon them; the feast of
 tabernacles; cedars from Lebanon to Joppa; the foundation laid in the second year — for he is good; the shout of joy and the
 weeping of the old men that had seen the first house, so that the people could not discern the noise; then the adversaries —

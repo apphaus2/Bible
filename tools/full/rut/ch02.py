@@ -1,4 +1,4 @@
-"""Ruth volume, Chapter 2 — The Near Kinsman (Ruth 3–4), the last chapter of Ruth. Every verse, word for word from ref/asv.
+"""Ruth volume, Chapter 2 — The Near Kinsman (Ruth 3–4), the last chapter of Ruth. Every verse, word for word from ref/eng-asv.
 Shall I not seek rest for thee?; the threshing-floor at night (the digest's panel: Ruth at his feet, nothing more); spread
 thy skirt over thy handmaid; six measures of barley; the gate, the near kinsman and his shoe; Ye are witnesses; Obed laid in
 Naomi's bosom; and the generations of Perez to David as a roll page."""

@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 2 — The Glory Filled the House (2 Chronicles 5–7). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 2 — The Glory Filled the House (2 Chronicles 5–7). Every verse, word for word from ref/eng-asv.
 The dedicated things brought in; the ark into the oracle under the wings of the cherubim; the singers and a hundred and
 twenty priests sounding as one — for he is good; and the house filled with a cloud; Solomon's blessing from the brazen
 scaffold and his prayer, every petition in full; then the fire came down from heaven, and the glory of Jehovah filled the

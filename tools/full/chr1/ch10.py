@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 10 — The Porters and the Captains (1 Chronicles 26–27). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 10 — The Porters and the Captains (1 Chronicles 26–27). Every verse, word for word from ref/eng-asv.
 The courses of the doorkeepers, Meshelemiah, Obed-edom (for God blessed him) and Hosah; the lots for every gate as a plan
 of the four sides, with the watches set; the treasures of the house and of the dedicated things, the officers and judges;
 then the twelve courses of the captains, a course for every month of twenty and four thousand (a calendar wheel); the

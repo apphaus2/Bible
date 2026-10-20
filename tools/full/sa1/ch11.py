@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 11 — The Cave (1 Samuel 22–24). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 11 — The Cave (1 Samuel 22–24). Every verse, word for word from ref/eng-asv.
 The cave of Adullam and the four hundred; Saul under the tamarisk with his spear; Doeg the Edomite's report; Ahimelech's
 answer; the priests of Nob (22:17–19 words over the smoke of Nob: nothing drawn); Abiathar escaped; Keilah and the ephod;
 Jonathan in the wood of Ziph — thou shalt be king over Israel; the Ziphites; this side and that side of the mountain in Maon;

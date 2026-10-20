@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 4 — They That Dwelt in Jerusalem (1 Chronicles 7–9). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 4 — They That Dwelt in Jerusalem (1 Chronicles 7–9). Every verse, word for word from ref/eng-asv.
 Issachar, Benjamin, Naphtali and Manasseh; Ephraim mourning his sons slain by the men of Gath (7:21 words only), Beriah, and
 Sheerah who built Beth-horon; the line from Ephraim to Joshua the son of Nun; the borders as a map; Asher; Benjamin and the
 house of Saul; then all Israel reckoned by genealogies and Judah carried away; those who dwelt in Jerusalem — priests,

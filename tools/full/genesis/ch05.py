@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 5 — The Son of Promise (Genesis 20–23). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 5 — The Son of Promise (Genesis 20–23). Every verse, word for word from ref/eng-asv.
 22:20–24 (the house of Nahor) is set as scroll cells. The binding of Isaac (22:9–10) is drawn as a silhouette on the
 summit and the raised hand against the sky; the angel of Jehovah speaks from heaven in the Voice box."""
 import sys, pathlib

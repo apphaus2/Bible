@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 16 — Israel in Egypt (Genesis 46–47). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 16 — Israel in Egypt (Genesis 46–47). Every verse, word for word from ref/eng-asv.
 46:8–27 (the seventy souls) is set as two scroll pages, one cell per son, coloured by mother."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

@@ -1,4 +1,4 @@
-"""Lamentations volume, Chapter 1 — How Doth the City Sit Solitary (Lamentations 1–2). Every verse, word for word from ref/asv,
+"""Lamentations volume, Chapter 1 — How Doth the City Sit Solitary (Lamentations 1–2). Every verse, word for word from ref/eng-asv,
 each verse its own song line. The first lament: the city sitting solitary as a widow, weeping sore in the night; the ways of Zion
 mourning; the sanctuary entered by the nations; is it nothing to you, all ye that pass by?; the yoke of my transgressions; the
 winepress; Zion spreadeth forth her hands. The second: the daughter of Zion covered with a cloud; the tabernacle taken away as a

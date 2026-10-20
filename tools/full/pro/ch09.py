@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 9 — Apples of Gold (Proverbs 25–27). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 9 — Apples of Gold (Proverbs 25–27). Every verse, word for word from ref/eng-asv.
 These also are proverbs of Solomon, which the men of Hezekiah copied out (a drawn cell: the scribes at their scrolls); the
 glory of kings to search out a matter; apples of gold in network of silver; the cold of snow in harvest; clouds and wind
 without rain; coals of fire; cold waters to a thirsty soul; a city broken down; snow in summer; a dog that returneth to his

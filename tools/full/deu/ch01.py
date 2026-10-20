@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 1 — These Are the Words (Deuteronomy 1–2). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 1 — These Are the Words (Deuteronomy 1–2). Every verse, word for word from ref/eng-asv.
 Moses' first discourse in speech panels (speech.orate): his words in rounded speech boxes, Jehovah's words quoted in Voice
 boxes, the narrator's asides (2:10–12, 2:20–23) as captions. Flashbacks reuse the Numbers art: Horeb, the spies and
 Eshcol, the presumption at Hormah, the way round Seir and Moab (a map), and the host of Sihon at a distance."""

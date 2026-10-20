@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 6 — The Potter's House (Jeremiah 16–18). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 6 — The Potter's House (Jeremiah 16–18). Every verse, word for word from ref/eng-asv.
 Thou shalt not take thee a wife; enter not into the house of mourning, nor the house of feasting (the prophet passing alone
 at night); from the land of the north; many fishers and many hunters; the sin of Judah written with a pen of iron; cursed is
 the man that trusteth in man, like the heath in the desert, and blessed the man that trusteth in Jehovah, a tree by the

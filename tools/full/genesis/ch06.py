@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 6 — A Wife for Isaac (Genesis 24:1–25:18). Word for word from ref/asv.
+"""Genesis volume, Chapter 6 — A Wife for Isaac (Genesis 24:1–25:18). Word for word from ref/eng-asv.
 The servant's retelling (24:34–49) is abridged on one page: its opening (24:34–37) and close (24:48–49) in full,
 the repeated middle cut with "…" (24:38–44 and 24:46 omitted, 24:45 and 24:47 partial). Every other verse is in full.
 25:1–4 (Keturah's sons) and 25:12–16 (Ishmael's princes) are set as scroll cells."""

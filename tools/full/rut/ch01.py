@@ -1,4 +1,4 @@
-"""Ruth volume, Chapter 1 — Whither Thou Goest (Ruth 1–2). Every verse, word for word from ref/asv.
+"""Ruth volume, Chapter 1 — Whither Thou Goest (Ruth 1–2). Every verse, word for word from ref/eng-asv.
 Famine and Moab; Elimelech, Mahlon and Chilion dead; Naomi turning home, Orpah's kiss, Ruth cleaving — Entreat me not to
 leave thee; Call me not Naomi, call me Mara; then the field of Boaz in barley harvest: the gleaning, under whose wings thou
 art come to take refuge, the parched grain, the ephah of barley, and the near kinsman (the digest's Ruth panels throughout)."""

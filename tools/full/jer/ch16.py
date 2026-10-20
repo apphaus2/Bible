@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 16 — Against the Nations (Jeremiah 46–48). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 16 — Against the Nations (Jeremiah 46–48). Every verse, word for word from ref/eng-asv.
 The word concerning the nations: Egypt at Carchemish by the Euphrates (a map) — prepare ye the buckler and shield; they are
 turned backward; Egypt riseth up like the Nile; go up into Gilead, and take balm; Nebuchadrezzar to smite Egypt — Migdol,
 Memphis, Tahpanhes and No (a map); Tabor among the mountains; a very fair heifer; hewers of wood and the locusts; fear not, O

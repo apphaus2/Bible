@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 2 — Take Heed to Thyself (Deuteronomy 3–4). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 2 — Take Heed to Thyself (Deuteronomy 3–4). Every verse, word for word from ref/eng-asv.
 Og and the land beyond the Jordan (Og's iron bedstead as a blueprint, the asides 3:9 and 3:11 as captions); Moses'
 prayer to go over and the answer, Pisgah; then the great exhortation of chapter 4 in speech panels — Horeb, no manner of
 form, the scattering and the return, is there any god beside him — and the cities of refuge and the setting of the law."""

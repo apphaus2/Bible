@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 4 — The Offerings of the Princes (Numbers 7–8). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 4 — The Offerings of the Princes (Numbers 7–8). Every verse, word for word from ref/eng-asv.
 The wagons; then the twelve days of the dedication of the altar, one prince a day, two days to a page — each day's six
 verses in full over a strip of his oblation (num/art4.oblation); the totals; the Voice from above the mercy-seat; the
 seven lamps; and the cleansing of the Levites."""

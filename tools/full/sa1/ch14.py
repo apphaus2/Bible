@@ -1,5 +1,5 @@
 """1 Samuel volume, Chapter 14 — Mount Gilboa (1 Samuel 30–31), the last chapter of 1 Samuel. Every verse, word for word from
-ref/asv. Ziklag burnt and the wives taken; David strengthened himself in Jehovah his God; the ephod — Pursue; the brook
+ref/eng-asv. Ziklag burnt and the wives taken; David strengthened himself in Jehovah his God; the ephod — Pursue; the brook
 Besor; the Egyptian in the field; the Amalekites eating and dancing; all recovered; as his share is that goeth down to the
 battle, so shall his share be that tarrieth by the baggage; the presents to the elders of Judah (roll cells). Then Gilboa
 (the digest's panels): Saul's death is words over the mountain with his crown and spear (31:4–5, 31:8–10 nothing drawn), and

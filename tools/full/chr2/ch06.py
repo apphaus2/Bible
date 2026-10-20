@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 6 — Jehoshaphat (2 Chronicles 17–19). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 6 — Jehoshaphat (2 Chronicles 17–19). Every verse, word for word from ref/eng-asv.
 Jehoshaphat who walked in the first ways of David; the princes and Levites teaching in the cities with the book of the law;
 the fear of Jehovah on the kingdoms round about; the mighty men numbered; then affinity with Ahab — I am as thou art; the
 four hundred prophets and Micaiah the son of Imla (1 Kings' gate of Samaria and the host of heaven); the arrow at a venture

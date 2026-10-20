@@ -1,4 +1,4 @@
-"""Job volume, Chapter 2 — The Vision of the Night (Job 4–7). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 2 — The Vision of the Night (Job 4–7). Every verse, word for word from ref/eng-asv.
 Eliphaz the Temanite's first speech in song lines (teal): they that plow iniquity reap the same; the old lion and the
 scattered whelps; the vision of the night — a form without appearance passing before a sleeper's face; houses of clay
 crushed before the moth; man born unto trouble as the sparks fly upward; rain upon the fields; a shock of grain in its

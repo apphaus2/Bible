@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 14 — A Light to the Gentiles (Isaiah 49–51). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 14 — A Light to the Gentiles (Isaiah 49–51). Every verse, word for word from ref/eng-asv.
 The servant's words (he is never drawn: his words stand over his tokens) — listen, O isles; a sharp sword and a polished shaft
 hid in the quiver (a plate); I will give thee for a light to the Gentiles (the map lit from Zion); to them that are bound, Go
 forth; Zion said, Jehovah hath forsaken me — can a woman forget her sucking child?; thy walls are continually before me;

@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 9 — Carried Away into Assyria (2 Kings 17). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 9 — Carried Away into Assyria (2 Kings 17). Every verse, word for word from ref/eng-asv.
 Hoshea, Shalmaneser and the three years' siege of Samaria; Israel carried away to Halah, the Habor and the cities of the
 Medes (a technical map and the column of captives); because the children of Israel had sinned — the high places, the
 pillars and Asherim, the two calves, the host of heaven (17:17 words only); the nations brought into Samaria, the lions,

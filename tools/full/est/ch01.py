@@ -1,4 +1,4 @@
-"""Esther volume, Chapter 1 — Vashti and Esther (Esther 1–2). Every verse, word for word from ref/asv.
+"""Esther volume, Chapter 1 — Vashti and Esther (Esther 1–2). Every verse, word for word from ref/eng-asv.
 Ahasuerus who reigned from India even unto Ethiopia (a map of the hundred and seven and twenty provinces); the feast of a
 hundred and fourscore days and the feast of seven days in the court of the garden — hangings of white, green and blue, a
 pavement of red, white, yellow and black marble, vessels of gold diverse one from another; Vashti's feast for the women; the

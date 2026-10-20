@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 9 — The Courses (1 Chronicles 23–25). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 9 — The Courses (1 Chronicles 23–25). Every verse, word for word from ref/eng-asv.
 David old and full of days makes Solomon king; the Levites numbered from thirty years old (a tally board) and divided into
 courses by the sons of Levi; their office — to stand every morning to thank and praise Jehovah, and likewise at even; the
 sons of Aaron, Eleazar and Ithamar, divided by lot, and the four and twenty courses of the priests as a board of lots; the

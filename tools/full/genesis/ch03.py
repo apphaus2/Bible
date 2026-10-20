@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 3 — Babel to Abram's Covenant (Genesis 10–15). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 3 — Babel to Abram's Covenant (Genesis 10–15). Every verse, word for word from ref/eng-asv.
 Genesis 10 (the table of the nations) is set as three 'scroll' pages of clan cells, and 11:10–26 (the generations of
 Shem) as one scroll page with a lifespan bar per patriarch, like Genesis 5 in chapter 2."""
 import sys, pathlib

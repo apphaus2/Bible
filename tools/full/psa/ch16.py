@@ -1,4 +1,4 @@
-"""Psalms volume, Chapter 16 — I Will Lift Up Mine Eyes (Psalms 120–137). Every verse, word for word from ref/asv. The
+"""Psalms volume, Chapter 16 — I Will Lift Up Mine Eyes (Psalms 120–137). Every verse, word for word from ref/eng-asv. The
 fifteen Songs of Ascents — the tents of Kedar; I will lift up mine eyes unto the mountains; our feet are standing within thy
 gates, O Jerusalem; the snare is broken; as the mountains are round about Jerusalem; they that sow in tears shall reap in
 joy; except Jehovah build the house, the watchman and the arrows; the olive plants round about thy table; the plowers;

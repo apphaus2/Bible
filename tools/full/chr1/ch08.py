@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 8 — The Threshing-floor of Ornan (1 Chronicles 21–22). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 8 — The Threshing-floor of Ornan (1 Chronicles 21–22). Every verse, word for word from ref/eng-asv.
 Satan moves David to number Israel; Joab's protest and the sum as a tally board; I have done very foolishly; Gad and the
 three things; the pestilence (21:14 words over the silent tents); it is enough, now stay thy hand; the angel with his sword
 stretched out over Jerusalem, David and the elders in sackcloth on their faces; Ornan's threshing-floor bought for the full

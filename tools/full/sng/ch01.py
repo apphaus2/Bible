@@ -1,4 +1,4 @@
-"""Song of Solomon volume, Chapter 1 — I Am a Rose of Sharon (Song of Solomon 1–2). Every verse, word for word from ref/asv.
+"""Song of Solomon volume, Chapter 1 — I Am a Rose of Sharon (Song of Solomon 1–2). Every verse, word for word from ref/eng-asv.
 The Song of songs (1:1 in a caption) and the bride's first lines beside her face; black, but comely, among the vineyards,
 the tents of Kedar and the curtains of Solomon; the flocks at noon and the shepherds' tents; a steed in Pharaoh's chariots
 and plaits of gold; the henna-flowers of En-gedi; the green couch under the cedars, with doves; the rose of Sharon and the

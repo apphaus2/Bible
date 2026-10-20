@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 8 — Micah and the Danites (Judges 17–18). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 8 — Micah and the Danites (Judges 17–18). Every verse, word for word from ref/eng-asv.
 Micah's eleven hundred pieces of silver and the graven image; the house of gods, the ephod and teraphim; the young Levite of
 Beth-lehem-judah hired for ten pieces of silver; the five Danite spies and quiet Laish; the six hundred at the gate, the
 image and the priest carried off, What aileth thee?; Laish burnt and called Dan (18:27 words over the smoke); and Micah's

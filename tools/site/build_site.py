@@ -22,8 +22,8 @@ VOLUMES.sort(key=lambda v: v.get("order", 0))
 SERIES = VOLUMES
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
 # ── the ASV text, one PDF per book (tools/book/asv_pdf.py; rebuild_site.py copies asv/ in when it exists) ──
-ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of each book in ref/asv
-for f in sorted((pathlib.Path(__file__).resolve().parents[2] / "ref" / "asv").glob("[0-9][0-9]-*.usfm")):
+ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of each book in ref/eng-asv
+for f in sorted((pathlib.Path(__file__).resolve().parents[2] / "ref" / "eng-asv").glob("[0-9][0-9]-*.usfm")):
     m = re.search(r"^\\h (.+?)\s*$", f.read_text(encoding="utf-8"), re.M)
     if m: ASV_CODES[m.group(1)] = re.match(r"\d\d-(\w{3})", f.name).group(1)
 ASV_BOOKS = json.loads((out / "asv" / "index.json").read_text(encoding="utf-8")) if (out / "asv" / "index.json").exists() else {}

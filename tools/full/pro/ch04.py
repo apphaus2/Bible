@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 4 — A Wise Son (Proverbs 10–12). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 4 — A Wise Son (Proverbs 10–12). Every verse, word for word from ref/eng-asv.
 The proverbs of Solomon begin: one saying to a cell, each under its emblem (pro.common.sayings; the emblem picked from the
 saying's own words or named here) — the wise son and the glad father, the diligent hand, the mouth of the righteous a well
 of life, the false balance and the just weight, the jewel of gold in a swine's snout, the tree of life, the crown of her

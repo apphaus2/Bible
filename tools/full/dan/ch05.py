@@ -1,4 +1,4 @@
-"""Daniel volume, Chapter 5 — Seventy Weeks (Daniel 9–10). Every verse, word for word from ref/asv.
+"""Daniel volume, Chapter 5 — Seventy Weeks (Daniel 9–10). Every verse, word for word from ref/eng-asv.
 Daniel understands by the books Jeremiah's seventy years (a chart) and sets his face to seek the Lord in sackcloth and
 ashes; his confession and supplication in full — we have sinned, O Lord, hear; O Lord, forgive — over his face at prayer,
 Jerusalem's desolations, the scroll of the law of Moses and the sea divided; Gabriel caused to fly swiftly at the time of

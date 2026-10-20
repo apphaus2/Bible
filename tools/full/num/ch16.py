@@ -1,5 +1,5 @@
 """Numbers volume, Chapter 16 — The Borders of the Land (Numbers 34–36), the end of Numbers. Every verse, word for word
-from ref/asv. The borders of Canaan as a map lit border by border; the men that shall divide the land (cells); the cities
+from ref/eng-asv. The borders of Canaan as a map lit border by border; the men that shall divide the land (cells); the cities
 of the Levites and the cities of refuge as law cells; and the daughters of Zelophehad married within their tribe.
 The volume ends with 完."""
 import sys, pathlib

@@ -1,4 +1,4 @@
-"""Ezra volume, Chapter 4 — Ezra the Scribe (Ezra 7–8). Every verse, word for word from ref/asv.
+"""Ezra volume, Chapter 4 — Ezra the Scribe (Ezra 7–8). Every verse, word for word from ref/eng-asv.
 Ezra's line back to Aaron the chief priest (a lineage chart); a ready scribe in the law of Moses, who had set his heart to
 seek the law of Jehovah, and to do it, and to teach; the letter of Artaxerxes, king of kings (a sealed scroll, the decree in
 speech boxes); blessed be Jehovah, who hath put such a thing in the king's heart; the heads of fathers' houses that went up

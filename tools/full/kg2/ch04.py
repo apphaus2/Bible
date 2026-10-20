@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 4 — The Siege of Samaria (2 Kings 7–8). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 4 — The Siege of Samaria (2 Kings 7–8). Every verse, word for word from ref/eng-asv.
 To-morrow a measure of fine flour for a shekel; if Jehovah should make windows in heaven; four leprous men at the gate — why
 sit we here until we die?; the camp of the Syrians empty in the twilight; this day is a day of good tidings; the way full of
 garments and vessels; the captain trodden in the gate (7:17, 7:20 words over the thronged gate). Then the Shunammite's land

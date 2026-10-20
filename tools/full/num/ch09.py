@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 9 — The Water for Impurity (Numbers 18–19). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 9 — The Water for Impurity (Numbers 18–19). Every verse, word for word from ref/eng-asv.
 All law cells (exo.kit.law_pages, pictograms in num/art9.py): the charge of the priests and the Levites, the priests'
 portions and the covenant of salt, the tithe and the tithe of the tithe, and the red heifer and the water for impurity."""
 import sys, pathlib

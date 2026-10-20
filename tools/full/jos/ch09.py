@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 9 — The Cities of Refuge (Joshua 20–22). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 9 — The Cities of Refuge (Joshua 20–22). Every verse, word for word from ref/eng-asv.
 The cities of refuge: the manslayer at the gate, the six cities on a map; the forty and eight cities of the Levites as roll
 cells, by the lots of Aaron, Kohath, Gershon and Merari; there failed not aught of any good thing; then the two and a half
 tribes sent home with much wealth, the great altar by the Jordan, Phinehas and the ten princes, the answer — the Mighty One,

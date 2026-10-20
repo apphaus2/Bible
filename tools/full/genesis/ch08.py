@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 8 — The Ladder (Genesis 28–30). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 8 — The Ladder (Genesis 28–30). Every verse, word for word from ref/eng-asv.
 Reuses the digest's Book Four panels for the ladder, Bethel, the well and Jacob and Rachel. Jacob's sons are counted
 on a running row of twelve nodes as each is born. Genesis 30:3–4, 9 and 14–16 are given in full; the drawings stay
 with the women's faces, the tent door and the mandrake plant."""

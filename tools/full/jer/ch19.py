@@ -1,5 +1,5 @@
 """Jeremiah volume, Chapter 19 — The Fall of Jerusalem (Jeremiah 52), the last chapter of Jeremiah. Every verse, word for word
-from ref/asv. The fall retold: Zedekiah's reign; the forts built round about; the famine sore in the city; the breach and the
+from ref/eng-asv. The fall retold: Zedekiah's reign; the forts built round about; the famine sore in the city; the breach and the
 flight by the gate between the two walls; Riblah (52:10–11 and 52:24–27 words over the empty plain and the map); the house of
 Jehovah and every great house burned (words over the burning city, no one drawn); the walls broken down; the captives; the
 brass of the pillars, the sea and the bases broken and carried to Babylon, and Jachin and Boaz measured as a blueprint; the

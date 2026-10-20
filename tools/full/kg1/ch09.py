@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 9 — To Your Tents, O Israel (1 Kings 12–13). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 9 — To Your Tents, O Israel (1 Kings 12–13). Every verse, word for word from ref/eng-asv.
 Rehoboam at Shechem; thy father made our yoke grievous; the counsel of the old men and of the young men — my little finger is
 thicker than my father's loins; what portion have we in David?; Adoram stoned (12:18 words over the people turning away);
 Shemaiah — ye shall not go up; Jeroboam's two calves of gold in Beth-el and Dan. Then the man of God out of Judah crying

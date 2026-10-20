@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 9 — When Thou Goest Forth to Battle (Deuteronomy 19 – 21). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 9 — When Thou Goest Forth to Battle (Deuteronomy 19 – 21). Every verse, word for word from ref/eng-asv.
 The statutes as spoken law cells (deu.common.law_chapter: exo.kit.law_pages with spoken=True, pictograms by picto.pick)."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

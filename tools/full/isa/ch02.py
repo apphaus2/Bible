@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 2 — Holy, Holy, Holy (Isaiah 6–9). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 2 — Holy, Holy, Holy (Isaiah 6–9). Every verse, word for word from ref/eng-asv.
 In the year that king Uzziah died: the throne high and lifted up, drawn only as light, smoke and the seraphim (God is never
 drawn); woe is me; the live coal; here am I, send me; how long? — the stock that remaineth; Rezin and Pekah against
 Jerusalem (a map), Isaiah and Shear-jashub at the conduit of the upper pool, the two smoking firebrands; ask thee a sign —

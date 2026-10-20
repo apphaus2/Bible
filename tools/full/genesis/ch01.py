@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 1 — In the Beginning (Genesis 1–3). Every verse, word for word from ref/asv."""
+"""Genesis volume, Chapter 1 — In the Beginning (Genesis 1–3). Every verse, word for word from ref/eng-asv."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))

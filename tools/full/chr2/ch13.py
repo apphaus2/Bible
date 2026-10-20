@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 13 — Manasseh and Josiah (2 Chronicles 33–34). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 13 — Manasseh and Josiah (2 Chronicles 33–34). Every verse, word for word from ref/eng-asv.
 Manasseh's altars for the host of heaven in the two courts (33:6 words only); the graven image in the house of God; taken in
 chains to Babylon, and in his distress humbling himself greatly — then Manasseh knew that Jehovah he was God; the outer wall
 (a plan) and the idol cast out; Amon (33:24 words only); then Josiah, who while yet young began to seek after the God of

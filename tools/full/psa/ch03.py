@@ -1,4 +1,4 @@
-"""Psalms volume, Chapter 3 — Jehovah Is My Shepherd (Psalms 23–33). Every verse, word for word from ref/asv.
+"""Psalms volume, Chapter 3 — Jehovah Is My Shepherd (Psalms 23–33). Every verse, word for word from ref/eng-asv.
 The shepherd, the still waters, the valley of the shadow of death and the table spread; the earth is Jehovah's — lift up
 your heads, O ye gates; the paths and the net; I will wash my hands in innocency; Jehovah is my light; the voice of
 Jehovah upon the waters and in the cedars of Lebanon (God never drawn: storm, flame and flood); joy cometh in the morning,

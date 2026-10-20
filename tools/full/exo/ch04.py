@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 4 — The Red Sea (Exodus 13–15). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 4 — The Red Sea (Exodus 13–15). Every verse, word for word from ref/eng-asv.
 The Song of Moses (15:1–18) and Miriam's answer are set in song boxes (kit.song), one or two lines to a panel."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

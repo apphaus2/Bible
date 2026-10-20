@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 1 — The Almond Rod (Jeremiah 1–3). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 1 — The Almond Rod (Jeremiah 1–3). Every verse, word for word from ref/eng-asv.
 The words of Jeremiah of Anathoth; before I formed thee in the belly I knew thee — ah, Lord Jehovah! I am a child; his mouth
 touched (a shaft of light, the prophet kneeling: God is not drawn); the rod of an almond-tree and the boiling caldron from the
 north (drawn as things); the kingdoms of the north at the gates as a map; an iron pillar and brazen walls; then the kindness

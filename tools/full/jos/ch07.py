@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 7 — The Lot of Judah (Joshua 15–17). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 7 — The Lot of Judah (Joshua 15–17). Every verse, word for word from ref/eng-asv.
 The border of Judah round about and every city of Judah as roll cells (one cell per group of cities, as the verses count
 them: "twenty and nine cities, with their villages"); between them Caleb at Hebron, Othniel and Achsah, and the upper and
 nether springs; the lot of Joseph: Ephraim's border, Manasseh's, the daughters of Zelophehad before Eleazar and Joshua; and

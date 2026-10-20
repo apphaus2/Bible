@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 2 — Abner (2 Samuel 3–4). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 2 — Abner (2 Samuel 3–4). Every verse, word for word from ref/eng-asv.
 Long war between the houses; the sons born in Hebron; Rizpah and Abner's wrath — am I a dog's head?; Michal taken from
 Paltiel, who followed weeping to Bahurim; Abner's league and the feast in Hebron; Joab: what hast thou done?; Abner slain in
 the gate (3:27 words over the empty gate at dusk); the bier and David's lament — should Abner die as a fool dieth?;

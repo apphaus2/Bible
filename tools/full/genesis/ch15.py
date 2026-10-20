@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 15 — I Am Joseph (Genesis 44–45). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 15 — I Am Joseph (Genesis 44–45). Every verse, word for word from ref/eng-asv.
 Judah's plea (44:18–34) is kept in full across three pages: it retells the story, but it is the turning point.
 Reuses the digest's "I am Joseph" close-up."""
 import sys, pathlib

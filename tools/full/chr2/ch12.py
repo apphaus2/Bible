@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 12 — Sennacherib (2 Chronicles 32). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 12 — Sennacherib (2 Chronicles 32). Every verse, word for word from ref/eng-asv.
 Sennacherib come into Judah; the fountains stopped — why should the kings of Assyria come, and find much water? (a plan);
 the wall built up; be strong and of good courage, with him is an arm of flesh; Sennacherib's servants before the wall —
 whereon do ye trust? (2 Kings' upper pool); the letters railing on Jehovah; Hezekiah and Isaiah crying to heaven; the angel

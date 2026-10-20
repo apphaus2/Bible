@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 13 — He Remembered His Covenant (Psalms 105–106), the close of Book IV. Every verse, word for word
-from ref/asv. Psalm 105: the covenant with Abraham, Isaac and Jacob (God's words in the Voice box), the few sojourners and
+from ref/eng-asv. Psalm 105: the covenant with Abraham, Isaac and Jacob (God's words in the Voice box), the few sojourners and
 their tents, Joseph sold and laid in chains of iron, Israel in the land of Ham, the signs and wonders (darkness, blood,
 frogs, flies, hail, locusts; the first-born told in words over the dark), the going out with silver and gold, the cloud,
 the quails and the rock; and Psalm 106's confession — the Red Sea, the lust in the wilderness, the calf in Horeb,

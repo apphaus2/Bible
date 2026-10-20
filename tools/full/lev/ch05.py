@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 5 — The Cleansing (Leviticus 14–15). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 5 — The Cleansing (Leviticus 14–15). Every verse, word for word from ref/eng-asv.
 All law cells: the cleansing of the leper, the plague in a house, and issues (lev/art5.py)."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

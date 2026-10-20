@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 1 — The Beginning of Knowledge (Proverbs 1–3). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 1 — The Beginning of Knowledge (Proverbs 1–3). Every verse, word for word from ref/eng-asv.
 The proverbs of Solomon over Solomon at his scrolls; the father's words to his son beside Solomon's face (speech boxes) and
 over drawn scenes (song boxes): the sinners lying in wait by the road at dusk (no one harmed) and the net spread in vain;
 Wisdom crying aloud before the city gate in white and gold light, her words beside her face; the storm and the whirlwind;

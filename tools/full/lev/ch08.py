@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 8 — The Set Feasts (Leviticus 23–25). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 8 — The Set Feasts (Leviticus 23–25). Every verse, word for word from ref/eng-asv.
 The feasts (23), the lamp and the showbread (24:1–9) and the jubilee (25) as law cells; the blasphemer (24:10–23) as a story
 page. The stoning (24:23) is caption-only over a heap of stones without the camp."""
 import sys, pathlib

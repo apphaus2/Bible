@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 3 — Naaman (2 Kings 5–6). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 3 — Naaman (2 Kings 5–6). Every verse, word for word from ref/eng-asv.
 Naaman the leper and the little maiden of Israel; the letter to the king of Israel — am I God?; go and wash in the Jordan
 seven times; are not Abanah and Pharpar better?; his flesh as the flesh of a little child; two mules' burden of earth;
 Gehazi's lie and the leprosy as white as snow. Then the axe-head that swam; the king of Syria's bedchamber; Dothan and the

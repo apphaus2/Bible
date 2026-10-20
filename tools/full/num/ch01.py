@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 1 — The Numbering (Numbers 1–2). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 1 — The Numbering (Numbers 1–2). Every verse, word for word from ref/eng-asv.
 The census is set as tally cells (one tribe a cell, the number in a red tag); the twelve princes and the four camps of
 Numbers 2 as Voice-box cells (God's words) beside a blueprint plan of the camp round about the tent of meeting."""
 import sys, pathlib

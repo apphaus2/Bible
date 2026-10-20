@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 11 — The Field at Anathoth (Jeremiah 32–33). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 11 — The Field at Anathoth (Jeremiah 32–33). Every verse, word for word from ref/eng-asv.
 In the tenth year of Zedekiah, the city besieged and the prophet shut up in the court of the guard; Hanamel comes — buy thee my
 field that is in Anathoth; seventeen shekels weighed, the deed sealed and open, put in an earthen vessel; houses and fields and
 vineyards shall yet again be bought; ah Lord Jehovah, there is nothing too hard for thee; is there anything too hard for me?;

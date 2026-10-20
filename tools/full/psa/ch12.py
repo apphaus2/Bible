@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 12 — Bless Jehovah, O My Soul (Psalms 101–104). Every verse, word for word
-from ref/asv. I will sing of lovingkindness and justice; the prayer of the afflicted — the pelican of the wilderness, the
+from ref/eng-asv. I will sing of lovingkindness and justice; the prayer of the afflicted — the pelican of the wilderness, the
 sparrow alone upon the housetop; bless Jehovah, O my soul — thy youth renewed like the eagle, as a father pitieth his
 children, man's days as grass; Psalm 104's creation — light as a garment, the springs in the valleys, the birds among the
 branches, the wild goats and the conies, the moon for seasons, the young lions at night, man going forth to his labor,

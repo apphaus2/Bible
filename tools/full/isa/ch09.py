@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 9 — The Desert Shall Blossom (Isaiah 31–35). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 9 — The Desert Shall Blossom (Isaiah 31–35). Every verse, word for word from ref/eng-asv.
 Woe to them that go down to Egypt for help (Pharaoh's chariots); as the lion over Zion, as birds hovering; a king shall
 reign in righteousness — the shade of a great rock in a weary land; the careless women and the palace forsaken; until the
 Spirit be poured upon us from on high; sow beside all waters; woe to thee that destroyest; the highways waste; who among us

@@ -1,4 +1,4 @@
-"""Job volume, Chapter 8 — The Price of Wisdom (Job 25–28). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 8 — The Price of Wisdom (Job 25–28). Every verse, word for word from ref/eng-asv.
 Bildad's third and last speech (purple): the moon hath no brightness, man is a worm. Job: Sheol is naked before God; he
 hangeth the earth upon nothing (the earth hanging among the stars); a boundary upon the face of the waters unto the
 confines of light and darkness; the pillars of heaven tremble. His parable: till I die I will not put away mine integrity;

@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 4 — The Cities of the Plain (Genesis 16–19). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 4 — The Cities of the Plain (Genesis 16–19). Every verse, word for word from ref/eng-asv.
 Genesis 17 (the covenant of circumcision) and the darker parts of Genesis 19 (the men of Sodom at Lot's door; Lot's
 daughters in the cave) are given in full in the text, while the drawings stay restrained: covenant symbols, the
 household gathered, the house at night, the cave from outside."""

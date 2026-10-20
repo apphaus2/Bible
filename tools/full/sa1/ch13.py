@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 13 — The Witch of En-dor (1 Samuel 27–29). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 13 — The Witch of En-dor (1 Samuel 27–29). Every verse, word for word from ref/eng-asv.
 David among the Philistines: Achish gives him Ziklag; the raids (27:9, 27:11 words over the dens of the south); Achish's
 trust. Then Saul before Shunem and Gilboa, Jehovah answering him not; the woman with a familiar spirit at En-dor by night;
 an old man covered with a robe rising out of the earth (a pale shape, no face); to-morrow shalt thou and thy sons be with

@@ -1,4 +1,4 @@
-"""Job volume, Chapter 10 — Elihu (Job 32–37). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 10 — Elihu (Job 32–37). Every verse, word for word from ref/eng-asv.
 The three men cease; Elihu the son of Barachel the Buzite, young, his wrath kindled (green, standing before the four seated
 men): I am young, and ye are very old; my breast is as new wine-skins ready to burst; I also am formed out of the clay; God
 speaketh in a dream, in a vision of the night; the sick man on his bed and the pit with the light over it — I have found a

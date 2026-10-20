@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 3 — The City of David (2 Samuel 5–6). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 3 — The City of David (2 Samuel 5–6). Every verse, word for word from ref/eng-asv.
 All the tribes at Hebron — we are thy bone and thy flesh; David anointed king over Israel (the digest's panels); the
 stronghold of Zion taken from the Jebusites; Hiram's cedar; the sons born in Jerusalem; Baal-perazim and the sound of
 marching in the tops of the mulberry-trees; the ark on the new cart, Uzzah at the threshing-floor of Nacon (6:7 words over

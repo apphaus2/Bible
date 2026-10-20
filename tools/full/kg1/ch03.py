@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 3 — An Understanding Heart (1 Kings 3–4). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 3 — An Understanding Heart (1 Kings 3–4). Every verse, word for word from ref/eng-asv.
 Pharaoh's daughter; the thousand burnt-offerings at Gibeon; the dream by night — ask what I shall give thee; give thy servant
 an understanding heart (God's words in the Voice box); the two women and the living child — fetch me a sword (held, not
 used); the princes and the twelve officers as roll cells; every man under his vine and under his fig-tree; the provision

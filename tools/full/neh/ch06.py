@@ -1,4 +1,4 @@
-"""Nehemiah volume, Chapter 6 — The Sealed Covenant (Nehemiah 10–11). Every verse, word for word from ref/asv.
+"""Nehemiah volume, Chapter 6 — The Sealed Covenant (Nehemiah 10–11). Every verse, word for word from ref/eng-asv.
 They that sealed: Nehemiah the governor, the priests, the Levites and the chiefs of the people (roll cells under the
 sealing of the covenant); the rest of the people entering into a curse and an oath — we will not give our daughters unto
 the peoples of the land, nor buy on the sabbath; the third part of a shekel (a blueprint); the wood-offering by lot; the

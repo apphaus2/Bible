@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 4 — The Broken Covenant (Jeremiah 10–12). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 4 — The Broken Covenant (Jeremiah 10–12). Every verse, word for word from ref/eng-asv.
 Learn not the way of the nations: the tree cut out of the forest, decked with silver and gold and nailed fast (the image
 drawn as a thing); Jehovah the true God, who stretched out the heavens; my tent is destroyed; O Jehovah, correct me, but in
 measure; the words of this covenant and the conspiracy of Judah; the green olive-tree set on fire; the men of Anathoth that

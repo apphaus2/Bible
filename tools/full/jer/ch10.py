@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 10 — A New Covenant (Jeremiah 29–31). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 10 — A New Covenant (Jeremiah 29–31). Every verse, word for word from ref/eng-asv.
 The letter to the captivity — build ye houses, plant gardens, seek the peace of the city (the exiles by a river of Babylon);
 after seventy years I will visit you; thoughts of peace, and not of evil; the vile figs; Ahab and Zedekiah (29:21–22 words over
 Babylon's wall, no one drawn); Shemaiah's letter read to Jeremiah; then the book of consolation: write all the words in a book;

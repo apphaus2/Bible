@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 1 — Blessed Is the Man (Psalms 1–12), the opening of Book I. Every verse, word for word from
-ref/asv. The tree planted by the streams and the chaff the wind driveth away; the kings of the earth against Jehovah and his
+ref/eng-asv. The tree planted by the streams and the chaff the wind driveth away; the kings of the earth against Jehovah and his
 anointed — thou art my son (God's words in the Voice box); David fleeing from Absalom, lying down and sleeping in the midst
 of ten thousands; the morning prayer; the bed made to swim with tears; the lion and the pit; when I consider thy heavens;
 the nations sunk in the pit that they made; the lurking lion and the net; the bow bent in darkness; and the words of

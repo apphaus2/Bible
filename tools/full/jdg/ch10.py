@@ -1,5 +1,5 @@
 """Judges volume, Chapter 10 — No King in Israel (Judges 20–21), the last chapter of Judges. Every verse, word for word from
-ref/asv. All Israel assembled as one man at Mizpah; the Levite's account; Benjamin will not hearken; the seven hundred
+ref/eng-asv. All Israel assembled as one man at Mizpah; the Levite's account; Benjamin will not hearken; the seven hundred
 left-handed slingers; two days lost and the people weeping at Beth-el before the ark, Phinehas standing before it; the third
 day laid out as a technical map, the pillar of smoke out of Gibeah; the six hundred in the rock of Rimmon; one tribe lacking
 in Israel; Jabesh-gilead (21:10–12 are words over a distant city's smoke); the daughters of Shiloh in the dances; and In

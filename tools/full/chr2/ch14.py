@@ -1,5 +1,5 @@
 """2 Chronicles volume, Chapter 14 — The Seventy Years (2 Chronicles 35–36), the last chapter of 2 Chronicles. Every verse,
-word for word from ref/asv. Josiah's passover — put the holy ark in the house, there shall no more be a burden upon your
+word for word from ref/eng-asv. Josiah's passover — put the holy ark in the house, there shall no more be a burden upon your
 shoulders; the lambs and kids given, the singers in their place; no passover like it since Samuel; Neco and Carchemish —
 what have I to do with thee?; the archers at Megiddo (35:23–24 words over the chariot); Jeremiah's lament; then Jehoahaz,
 Jehoiakim, Jehoiachin and Zedekiah as reign cells; the messengers mocked till there was no remedy; the Chaldeans and the house

@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 15 — The Journeys (Numbers 32–33). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 15 — The Journeys (Numbers 32–33). Every verse, word for word from ref/eng-asv.
 Reuben, Gad and half Manasseh beyond the Jordan (dialogue with Moses, a map of their cities); then the journeys of the
 children of Israel from Rameses to the plains of Moab: a route map lit stage by stage over a cell for every station."""
 import sys, pathlib

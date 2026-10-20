@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 10 — Bethel Again (Genesis 34–36). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 10 — Bethel Again (Genesis 34–36). Every verse, word for word from ref/eng-asv.
 Genesis 34 is given in full; the drawings stay restrained (34:2 is a caption over the city; the sword at Shechem is
 drawn as the city under smoke and two figures at the gate). 35:22 is caption-only. Genesis 36 (the generations of
 Esau) is set as four scroll pages."""

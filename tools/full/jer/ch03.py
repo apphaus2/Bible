@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 3 — The Temple of Jehovah (Jeremiah 7–9). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 3 — The Temple of Jehovah (Jeremiah 7–9). Every verse, word for word from ref/eng-asv.
 The prophet in the gate of Jehovah's house: trust ye not in lying words, the temple of Jehovah; a den of robbers; go ye unto
 Shiloh (its stones thrown down); the cakes to the queen of heaven; Topheth in the valley of the son of Hinnom (altars and smoke,
 no one drawn); the graves opened under the sun and moon (no bones drawn); the stork knoweth her appointed times; is there no

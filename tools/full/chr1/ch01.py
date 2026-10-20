@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 1 — From Adam (1 Chronicles 1–2). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 1 — From Adam (1 Chronicles 1–2). Every verse, word for word from ref/eng-asv.
 The generations as charts and roll cells: Adam to Noah; the sons of Japheth, Ham and Shem; Shem to Abram; Ishmael, Keturah,
 Isaac; Esau and Seir; the kings and the chiefs of Edom; the sons of Israel; Judah, Perez and Zerah; Hezron, Ram and the line
 to Jesse and his seven sons, David the seventh; Zeruiah and Abigail; and the houses of Caleb and Jerahmeel."""

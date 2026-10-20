@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 16 — The Fast That I Have Chosen (Isaiah 56–59). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 16 — The Fast That I Have Chosen (Isaiah 56–59). Every verse, word for word from ref/eng-asv.
 Keep ye justice — the foreigner and the eunuch in the house of prayer for all peoples; his watchmen are blind, dumb dogs asleep;
 the righteous perisheth and entereth into peace; ye sons of the sorceress (57:5–8 told in words only, over an empty valley of
 oaks and smooth stones and a shut door on a high place); cast ye up, prepare the way; the high and holy place, and the contrite

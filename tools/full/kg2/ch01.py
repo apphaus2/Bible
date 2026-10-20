@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 1 — The Chariot of Fire (2 Kings 1–2). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 1 — The Chariot of Fire (2 Kings 1–2). Every verse, word for word from ref/eng-asv.
 Ahaziah fallen through the lattice and inquiring of Baal-zebub; is it because there is no God in Israel?; a hairy man girt
 with a girdle of leather; the captains of fifty (1:10–12 words over the fire on the slope: nothing of the men drawn); the
 third captain on his knees; then Gilgal, Beth-el, Jericho — I will not leave thee; the Jordan divided by the mantle; a double

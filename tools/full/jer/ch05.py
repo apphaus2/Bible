@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 5 — The Marred Girdle (Jeremiah 13–15). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 5 — The Marred Girdle (Jeremiah 13–15). Every verse, word for word from ref/eng-asv.
 The linen girdle bought and worn, hidden in a cleft of the rock by the Euphrates, and dug up marred, profitable for nothing;
 every bottle filled with wine; the dark mountains; the king and the queen-mother (two crowns fallen before empty seats);
 can the Ethiopian change his skin?; the drought — the gates sitting in black, the empty vessels at the cisterns, the cracked

@@ -1,5 +1,5 @@
 """Daniel volume, Chapter 6 — The Time of the End (Daniel 11–12), the last chapter of Daniel. Every verse, word for word from
-ref/asv. The words of the man clothed in linen (gold-ruled boxes) over a technical map of the kings of the north and of the
+ref/eng-asv. The words of the man clothed in linen (gold-ruled boxes) over a technical map of the kings of the north and of the
 south and a board of their turns: the kings of Persia stirring up all against Greece; the mighty king and his kingdom
 divided toward the four winds; the daughter of the king of the south; the mound and the well-fortified city; the isles; the
 exactor; the contemptible person and his flatteries; the ships of Kittim and the abomination that maketh desolate; they that

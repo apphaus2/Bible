@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 10 — Ahijah's Word (1 Kings 14–15). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 10 — Ahijah's Word (1 Kings 14–15). Every verse, word for word from ref/eng-asv.
 Abijah sick; Jeroboam's wife disguised at the door of the blind prophet at Shiloh — come in, thou wife of Jeroboam; heavy
 tidings (the Voice box through Ahijah); at the threshold of Tirzah the child died (words only). Then the reigns as roll cells
 (Judah gold, Israel red): Rehoboam and Shishak's plunder, the shields of brass; Abijam; Asa who cut down the Asherah and

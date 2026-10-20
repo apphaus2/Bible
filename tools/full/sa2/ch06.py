@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 6 — Thou Art the Man (2 Samuel 11–12). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 6 — Thou Art the Man (2 Samuel 11–12). Every verse, word for word from ref/eng-asv.
 David tarried at Jerusalem; 11:2–4 words over the empty roof at eventide (the digest's panel: David alone, no one else
 drawn); Uriah sleeping at the king's door — the ark, and Israel, and Judah, abide in booths; the letter; Uriah's death as
 the digest's distant wall; the messenger; the thing displeased Jehovah. Nathan's ewe lamb, thou art the man, I have sinned;

@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 9 — Gibeah (Judges 19). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 9 — Gibeah (Judges 19). Every verse, word for word from ref/eng-asv.
 The Levite and his concubine; the days of eating and drinking at Beth-lehem-judah; Jebus passed by at evening; no man in
 Gibeah taking them in, and the old man from the field. Restraint: the men of the city are dark silhouettes with torches
 before a shut door (genesis.art4.mob_at_door, as at Sodom); 19:24–28 are words over the shut door by night and at the

@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 11 — A Worthy Woman (Proverbs 30–31). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 11 — A Worthy Woman (Proverbs 30–31). Every verse, word for word from ref/eng-asv.
 The words of Agur beside his face: who hath ascended up into heaven? (over the stars and the deep, God never drawn); two
 things have I asked of thee; then his numbered sayings as numbered signs on the blueprint grid — the generations, the four
 never satisfied, the four too wonderful, the four the earth cannot bear, the four little and exceeding wise, the four

@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 2 — The Sons of David (1 Chronicles 3–4). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 2 — The Sons of David (1 Chronicles 3–4). Every verse, word for word from ref/eng-asv.
 The sons born in Hebron and in Jerusalem; the kings of Judah from Solomon to Josiah as one line; the sons of Josiah and the
 line of Jeconiah the captive down past Zerubbabel; then the families of Judah — Jabez, more honorable than his brethren,
 and his prayer, enlarge my border (a survey plan) — the potters that dwelt with the king; and Simeon, its cities, the fat

@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 7 — Absalom (2 Samuel 13–14). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 7 — Absalom (2 Samuel 13–14). Every verse, word for word from ref/eng-asv.
 Amnon and Jonadab's counsel; Tamar's cakes; 13:11–14 words over the chamber door and the shut door (no one drawn); Tamar
 going her way with ashes on her head; two full years, then the shearers at Baal-hazor (13:28–29 words over the empty feast
 and the king's sons fleeing on their mules); Amnon only is dead; Absalom fled to Geshur. Then the wise woman of Tekoa and

@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 2 — The Charge of the Levites (Numbers 3–4). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 2 — The Charge of the Levites (Numbers 3–4). Every verse, word for word from ref/eng-asv.
 Numbers 3: the sons of Aaron, the Levites given to Aaron instead of the first-born, the three families with their places
 about the tabernacle (a plan) and their charges, and the redemption of the 273. Numbers 4: the holy things wrapped for the
 journey and the burdens of Gershon and Merari (blueprint plates, exo.kit.blueprints), and the numbering from thirty

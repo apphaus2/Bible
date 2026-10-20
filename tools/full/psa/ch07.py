@@ -1,4 +1,4 @@
-"""Psalms volume, Chapter 7 — Let God Arise (Psalms 63–68). Every verse, word for word from ref/asv.
+"""Psalms volume, Chapter 7 — Let God Arise (Psalms 63–68). Every verse, word for word from ref/eng-asv.
 David in the wilderness of Judah — my soul thirsteth for thee in a dry and weary land; the bow bent in secret; praise
 waiteth for thee in Zion — the river of God, the rain, the pastures clothed with flocks; he turned the sea into dry land;
 God be merciful unto us, and bless us; and Psalm 68: let God arise, as smoke is driven away, Sinai moved, the chariots of

@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 13 — Pharaoh's Dreams (Genesis 41). Word for word from ref/asv.
+"""Genesis volume, Chapter 13 — Pharaoh's Dreams (Genesis 41). Word for word from ref/eng-asv.
 Pharaoh's retelling of his dreams to Joseph (41:17–24) is abridged on one balloon: 41:17 and the end of 41:24 in full,
 the repeated middle cut with "…" (41:18–23 omitted, 41:24 partial). Every other verse is in full. Reuses the digest's
 kine, ears, hall, seven-years, Pharaoh and granary panels."""

@@ -1,4 +1,4 @@
-"""What asv.Book leaves out of the Psalms, cut straight from ref/asv (never typed): the superscriptions (USFM \\d, "A Psalm
+"""What asv.Book leaves out of the Psalms, cut straight from ref/eng-asv (never typed): the superscriptions (USFM \\d, "A Psalm
 of David." — asv.parse drops them, so they are not verses and coverage does not count them), the five book heads
 (\\ms1 "BOOK I" …), Psalm 119's first letter head (\\qc "א ALEPH.", which comes before verse 1; the other 21 letter heads
 sit at the end of verses 8, 16 … and are cut from the verse itself), and the poetic line breaks (\\q1, \\qs) inside
@@ -11,7 +11,7 @@ each verse, so a song line can be set one poetic line to a row.
 These are shown as labels (data-label): the ASV text check reads only the verses."""
 import re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-SRC = (ROOT / "ref" / "asv" / "20-PSAeng-asv.usfm").read_text(encoding="utf-8")
+SRC = (ROOT / "ref" / "eng-asv" / "20-PSAeng-asv.usfm").read_text(encoding="utf-8")
 
 def _clean(t):
     t = re.sub(r"\\f .*?\\f\*", "", t, flags=re.S)

@@ -1,4 +1,4 @@
-"""Esther volume, Chapter 3 — The King Could Not Sleep (Esther 5–7). Every verse, word for word from ref/asv.
+"""Esther volume, Chapter 3 — The King Could Not Sleep (Esther 5–7). Every verse, word for word from ref/eng-asv.
 On the third day Esther in her royal apparel in the inner court; the golden sceptre held out and the top of it touched — what
 wilt thou, queen Esther?; the first banquet of wine; Haman joyful, then full of wrath at Mordecai in the gate; his friends and
 Zeresh — let a gallows be made fifty cubits high (the gallows only ever standing, empty); then on that night could not the

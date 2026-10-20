@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 9 — Amaziah and Uzziah (2 Chronicles 25–27). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 9 — Amaziah and Uzziah (2 Chronicles 25–27). Every verse, word for word from ref/eng-asv.
 Amaziah, right but not with a perfect heart — every man shall die for his own sin; the hundred talents and the man of God —
 Jehovah is able to give thee much more than this; the Valley of Salt (25:11–12 words over the rock of Seir, no one drawn);
 the gods of Seir and the prophet silenced; the thistle and the cedar; Beth-shemesh and the wall broken down; then Uzziah, who

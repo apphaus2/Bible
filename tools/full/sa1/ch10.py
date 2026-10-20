@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 10 — Jonathan and David (1 Samuel 20–21). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 10 — Jonathan and David (1 Samuel 20–21). Every verse, word for word from ref/eng-asv.
 What have I done?; a step between me and death; the covenant with the house of David; the new moon and David's place empty;
 Saul's spear cast at Jonathan; three arrows by the stone Ezel — Is not the arrow beyond thee?; they kissed one another and
 wept; then Nob, Ahimelech, the holy bread and the sword of Goliath wrapped in a cloth; Doeg the Edomite; and David feigning

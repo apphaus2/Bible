@@ -1,6 +1,6 @@
 # 1 Samuel — coverage of the full edition
 
-Every verse of the chapters built so far, checked against `ref/asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
+Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
 **So far:** 810 verses — 810 full, 0 partial, 0 omitted.
 

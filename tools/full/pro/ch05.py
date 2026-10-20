@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 5 — A Tree of Life (Proverbs 13–15). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 5 — A Tree of Life (Proverbs 13–15). Every verse, word for word from ref/eng-asv.
 Saying cells: a wise son heareth his father's instruction; the lamp of the wicked put out; hope deferred, and the desire
 come a tree of life (a drawn cell); the fountain of life; every wise woman buildeth her house; where no oxen are, the crib
 is clean; a soft answer turneth away wrath; the eyes of Jehovah in every place (rays of light, God never drawn); a dinner

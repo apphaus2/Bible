@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 2 — Speak, Jehovah (1 Samuel 3–5). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 2 — Speak, Jehovah (1 Samuel 3–5). Every verse, word for word from ref/eng-asv.
 The lamp of God not yet gone out; Samuel, Samuel — Speak; for thy servant heareth; the word against Eli's house; the battle
 at Eben-ezer and the ark fetched from Shiloh; the ark taken; Eli fallen from his seat by the gate (the digest's panel: the
 overturned seat only); Ichabod; the ark in the house of Dagon and Dagon fallen; the ark carried about Ashdod, Gath and Ekron

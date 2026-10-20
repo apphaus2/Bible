@@ -1,5 +1,5 @@
 """2 Kings volume, Chapter 13 — The Fall of Jerusalem (2 Kings 24–25), the last chapter of 2 Kings. Every verse, word for word
-from ref/asv. Nebuchadnezzar and the bands of the Chaldeans; Jehoiachin carried away with the treasures and ten thousand
+from ref/eng-asv. Nebuchadnezzar and the bands of the Chaldeans; Jehoiachin carried away with the treasures and ten thousand
 captives; Zedekiah; the siege and the forts; the breach and the flight by the Arabah; Riblah (25:7 words only); the house of
 Jehovah burned and the walls broken down; the pillars and the sea broken in pieces; Riblah again (25:21 words only); Gedaliah
 at Mizpah (25:25 words only); and Jehoiachin lifted up out of prison, eating bread before the king of Babylon continually."""

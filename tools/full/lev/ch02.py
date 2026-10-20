@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 2 — The Consecration (Leviticus 6–8). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 2 — The Consecration (Leviticus 6–8). Every verse, word for word from ref/eng-asv.
 The law of each offering (6–7) as law cells; the consecration of Aaron and his sons (8), done as Exodus 29 commanded, as
 narrated blueprint panels reusing Exodus chapter 9's drawings (exo/art9)."""
 import sys, pathlib

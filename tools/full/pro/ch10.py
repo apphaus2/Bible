@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 10 — Bold as a Lion (Proverbs 28–29). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 10 — Bold as a Lion (Proverbs 28–29). Every verse, word for word from ref/eng-asv.
 Saying cells: the wicked flee when no man pursueth, but the righteous are bold as a lion (a drawn cell: the lion on the rock,
 a man in white standing firm, a far figure fleeing); a sweeping rain; a roaring lion and a ranging bear; he that tilleth his
 land; the king by justice establisheth the land; scoffers set a city in a flame; where there is no vision, the people cast

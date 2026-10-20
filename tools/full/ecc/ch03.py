@@ -1,4 +1,4 @@
-"""Ecclesiastes volume, Chapter 3 — A Good Name (Ecclesiastes 7–9). Every verse, word for word from ref/asv.
+"""Ecclesiastes volume, Chapter 3 — A Good Name (Ecclesiastes 7–9). Every verse, word for word from ref/eng-asv.
 The house of mourning and the house of feasting, a flask of precious oil between; the crackling of thorns under a pot; wisdom
 a defence like a walled city; the day of prosperity and the day of adversity side by side, and a tree grown crooked; ten rulers
 in the gate; far off and exceeding deep (a well in section); nets, snares and bands with nothing in them; one among a thousand

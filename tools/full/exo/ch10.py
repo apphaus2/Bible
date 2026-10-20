@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 10 — The Golden Calf (Exodus 32–34). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 10 — The Golden Calf (Exodus 32–34). Every verse, word for word from ref/eng-asv.
 The digest's Exodus Book Five drawings are lifted for the calf, the broken tables, the cleft of the rock and the shining
 face. The slaying of 32:27–28 is caption-only over an empty gate; 34:12–26 is two pages of law cells."""
 import sys, pathlib

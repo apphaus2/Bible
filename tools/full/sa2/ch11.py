@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 11 — Jehovah Is My Rock (2 Samuel 21–22). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 11 — Jehovah Is My Rock (2 Samuel 21–22). Every verse, word for word from ref/eng-asv.
 The famine for Saul's bloody house and the Gibeonites; 21:9 words over the mountain at barley harvest (no one drawn);
 Rizpah on her sackcloth upon the rock; the bones of Saul and Jonathan buried in Zela; the four sons of the giant — thou
 shalt go no more out with us, that thou quench not the lamp of Israel. Then David's song in song boxes over the waves of

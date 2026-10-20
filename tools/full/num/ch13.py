@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 13 — The Daughters of Zelophehad (Numbers 27–29). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 13 — The Daughters of Zelophehad (Numbers 27–29). Every verse, word for word from ref/eng-asv.
 The daughters of Zelophehad and the law of inheritance; Moses shown the land from the mountain of Abarim; Joshua set
 before Eleazar; and the offerings of every day, sabbath, new moon and set feast as law cells (the beasts counted)."""
 import sys, pathlib

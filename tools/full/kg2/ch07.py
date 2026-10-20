@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 7 — The Bones of Elisha (2 Kings 13–14). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 7 — The Bones of Elisha (2 Kings 13–14). Every verse, word for word from ref/eng-asv.
 The reigns of Jehoahaz and Jehoash of Israel as roll cells; Elisha sick unto death — my father, my father; the arrow of
 victory out of the window eastward, and the ground smitten thrice; the man cast into Elisha's sepulchre who revived; then
 Amaziah of Judah; the thistle and the cedar of Lebanon; Beth-shemesh and the wall of Jerusalem broken down four hundred

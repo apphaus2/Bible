@@ -1,4 +1,4 @@
-"""Job volume, Chapter 1 — The Land of Uz (Job 1–3). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 1 — The Land of Uz (Job 1–3). Every verse, word for word from ref/eng-asv.
 A man in the land of Uz, perfect and upright: his sons and daughters, his flocks and herds, the burnt-offerings at dawn for
 his children. The sons of God before Jehovah, and Satan among them — his words set over the heavens, never a figure; a dark
 streak falling from the court at most. Four messengers, each escaped alone (the slain told in words over the empty field,

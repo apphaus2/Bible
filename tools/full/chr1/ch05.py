@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 5 — David King over Israel (1 Chronicles 10–12). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 5 — David King over Israel (1 Chronicles 10–12). Every verse, word for word from ref/eng-asv.
 Mount Gilboa (the digest's panels; Saul's death 10:4–6 and 10:9–10 words only, over the mountain and the burning city); the
 valiant men of Jabesh and the oak; so Saul died for his trespass (words over the crown laid down); then all Israel at
 Hebron — we are thy bone and thy flesh; the stronghold of Zion; the mighty men as roll cells, with the water of the well of

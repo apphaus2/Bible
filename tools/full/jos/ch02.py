@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 2 — The Waters of the Jordan (Joshua 3–5). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 2 — The Waters of the Jordan (Joshua 3–5). Every verse, word for word from ref/eng-asv.
 The ark goes before with a space of two thousand cubits; the priests' feet in the brink and the waters standing in one heap;
 all Israel over on dry ground; twelve stones out of the midst of the Jordan, set up in Gilgal — what mean these stones?;
 the kings' hearts melted; the knives of flint (drawn as the knives laid on a stone and the camp abiding: nothing more);

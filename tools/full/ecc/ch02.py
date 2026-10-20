@@ -1,4 +1,4 @@
-"""Ecclesiastes volume, Chapter 2 — Two Are Better than One (Ecclesiastes 4–6). Every verse, word for word from ref/asv.
+"""Ecclesiastes volume, Chapter 2 — Two Are Better than One (Ecclesiastes 4–6). Every verse, word for word from ref/eng-asv.
 The tears of the oppressed in the brick field (no blow drawn); a handful with quietness; one that is alone at his table of
 silver; two on the road, the one lifting up his fellow; the threefold cord; the poor wise youth come out of prison and the old
 king on his throne; keep thy foot when thou goest to the house of God; the vow before the altar; the king served by the

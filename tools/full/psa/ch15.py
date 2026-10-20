@@ -1,6 +1,6 @@
-"""Psalms volume, Chapter 15 — Thy Word Is a Lamp (Psalm 119). Every verse, word for word from ref/asv. The twenty-two
+"""Psalms volume, Chapter 15 — Thy Word Is a Lamp (Psalm 119). Every verse, word for word from ref/eng-asv. The twenty-two
 sections of the acrostic, eight verses to each Hebrew letter, every section opening under its letter's head (א ALEPH comes
-from the line before verse 1; the other heads close verses 8, 16 … 168 in ref/asv and are cut from those verses), the
+from the line before verse 1; the other heads close verses 8, 16 … 168 in ref/eng-asv and are cut from those verses), the
 verses over the way and the path, the book of the law by lamplight, the honey, the furnace and the dross, the watch before
 the dawning of the morning, the great spoil, and the sheep gone astray — or beside the psalmist's face (a Levite singer,
 the psalm names no one)."""

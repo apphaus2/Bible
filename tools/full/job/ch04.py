@@ -1,4 +1,4 @@
-"""Job volume, Chapter 4 — If a Man Die (Job 11–14). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 4 — If a Man Die (Job 11–14). Every verse, word for word from ref/eng-asv.
 Zophar the Naamathite's first speech (blue): canst thou by searching find out God? — high as heaven, deeper than Sheol (a
 technical section of the world with its measures running off the edges); man born as a wild ass's colt; though there be
 darkness, it shall be as the morning. Job's answer: no doubt but ye are the people; the tents of robbers prosper; ask now

@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 12 — Josiah (2 Kings 22–23). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 12 — Josiah (2 Kings 22–23). Every verse, word for word from ref/eng-asv.
 Josiah of eight years; the repairing of the house; I have found the book of the law; the king rends his clothes; Huldah the
 prophetess — because thy heart was tender; the covenant read by the pillar; the house cleansed and the Asherah burned at the
 Kidron; the high places defiled from Geba to Beer-sheba, Topheth, the horses of the sun; the altar at Beth-el and the bones

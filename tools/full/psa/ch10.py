@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 10 — How Amiable Are Thy Tabernacles (Psalms 79–89), the close of Book III. Every verse, word for
-word from ref/asv. Jerusalem laid on heaps (words over the ruins and the captives); the Shepherd of Israel and the vine out
+word from ref/eng-asv. Jerusalem laid on heaps (words over the ruins and the captives); the Shepherd of Israel and the vine out
 of Egypt; the trumpet at the new moon and God's word from the secret place of thunder (81:6–16 in the Voice box); God in
 the congregation of the judges (82:2–7 in the Voice box); the nations confederate (a map); how amiable are thy
 tabernacles — the sparrow and the swallow at thine altars; mercy and truth are met together; glorious things of Zion;

@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 5 — The Pillars and the Sea (1 Kings 7). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 5 — The Pillars and the Sea (1 Kings 7). Every verse, word for word from ref/eng-asv.
 Solomon's own house thirteen years: the house of the forest of Lebanon on four rows of cedar pillars, the porch of judgment,
 costly stones; Hiram of Tyre, the worker in brass; the pillars Jachin and Boaz with their nets, pomegranates and lily-work;
 the molten sea upon twelve oxen; the ten bases and lavers; all cast in the clay ground of the Jordan; the vessels of gold —

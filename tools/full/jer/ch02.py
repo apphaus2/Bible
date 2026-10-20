@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 2 — Evil from the North (Jeremiah 4–6). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 2 — Evil from the North (Jeremiah 4–6). Every verse, word for word from ref/eng-asv.
 Break up your fallow ground; blow ye the trumpet in the land (a watchman on the wall, a standard toward Zion); a lion gone up
 from his thicket; chariots as the whirlwind; my anguish, my anguish! (the prophet's own words in speech boxes); waste and
 void — the earth without light, no man, no bird; the daughter of Zion spreading her hands; run to and fro through the streets

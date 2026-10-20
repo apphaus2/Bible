@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 6 — Joash (2 Kings 11–12). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 6 — Joash (2 Kings 11–12). Every verse, word for word from ref/eng-asv.
 Athaliah destroys the seed royal (11:1 words only); Jehosheba hides the child Joash six years in the house of Jehovah;
 Jehoiada's covenant with the captains and the guard set about the king; the crown and the testimony — long live the king;
 Athaliah crying Treason! treason! (11:16, 11:20 words over the horses' entry, empty); the house of Baal broken down; the

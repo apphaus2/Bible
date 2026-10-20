@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 4 — Rehoboam (2 Chronicles 10–12). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 4 — Rehoboam (2 Chronicles 10–12). Every verse, word for word from ref/eng-asv.
 Rehoboam at Shechem and Jeroboam come out of Egypt; the counsel of the old men and of the young men — my little finger is
 thicker than my father's loins; whips and scorpions; every man to your tents, O Israel; Hadoram stoned (10:18 words only)
 and the king fled; Shemaiah's word — ye shall not fight against your brethren; the cities for defence as a map; the priests

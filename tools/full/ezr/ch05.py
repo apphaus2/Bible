@@ -1,4 +1,4 @@
-"""Ezra volume, Chapter 5 — The Strange Wives (Ezra 9–10), the last chapter of Ezra. Every verse, word for word from ref/asv.
+"""Ezra volume, Chapter 5 — The Strange Wives (Ezra 9–10), the last chapter of Ezra. Every verse, word for word from ref/eng-asv.
 The princes' report — the holy seed have mingled themselves with the peoples of the lands; Ezra rends his garment and sits
 confounded until the evening oblation (his face); his prayer on his knees — O my God, I am ashamed and blush to lift up my face
 to thee; a nail in his holy place; the great assembly weeping; Shecaniah — yet now there is hope for Israel; the oath; the

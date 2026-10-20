@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 11 — The Passover of Hezekiah (2 Chronicles 30–31). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 11 — The Passover of Hezekiah (2 Chronicles 30–31). Every verse, word for word from ref/eng-asv.
 The letters sent from Beer-sheba even to Dan — ye children of Israel, turn again unto Jehovah (a map of the posts); laughed
 to scorn, yet some humbled themselves and came; the altars cast into the Kidron; the passover in the second month — the
 good Jehovah pardon every one that setteth his heart to seek God; seven days, and other seven days, with gladness: since

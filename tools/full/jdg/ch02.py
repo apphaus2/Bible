@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 2 — Deborah (Judges 3–5). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 2 — Deborah (Judges 3–5). Every verse, word for word from ref/eng-asv.
 The nations left to prove Israel; Othniel; Ehud and Eglon king of Moab (3:21–22 are words over the locked doors of the cool
 upper room: nothing within is drawn); Shamgar's ox-goad; Deborah under her palm-tree, Barak, mount Tabor and the river
 Kishon (the digest's Deborah panels); Jael's tent (4:21 is the digest's silhouette at the tent door); and the Song of

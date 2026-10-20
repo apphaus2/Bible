@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 7 — Thy Dead Shall Live (Isaiah 24–27). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 7 — Thy Dead Shall Live (Isaiah 24–27). Every verse, word for word from ref/eng-asv.
 Jehovah maketh the earth empty; the city of confusion shut up and its gate smitten; the gleanings of the vintage; fear, and
 the pit, and the snare — the earth reeling like a hammock; the sun ashamed and Zion in glory; the song of praise and the
 stronghold in the storm; the feast of fat things on the mountain and the veil destroyed — he hath swallowed up death for

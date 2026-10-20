@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 6 — Sinai (Exodus 19–21). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 6 — Sinai (Exodus 19–21). Every verse, word for word from ref/eng-asv.
 The Ten Words get the digest's numbered panels; the ordinances of chapter 21 are pages of law cells (kit.law): God's
 words in Voice boxes, each with a pictogram strip from art6."""
 import sys, pathlib

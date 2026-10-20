@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 6 — The Lot Is Cast into the Lap (Proverbs 16–18). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 6 — The Lot Is Cast into the Lap (Proverbs 16–18). Every verse, word for word from ref/eng-asv.
 Saying cells: the plans of the heart and the answer of the tongue; a just balance and scales are Jehovah's; the sayings of
 the king; pride goeth before destruction; pleasant words as a honeycomb; the hoary head a crown of glory; the lot cast into
 the lap (a drawn cell: lots on a red cloth, light from above, God never drawn); a dry morsel and quietness; the refining

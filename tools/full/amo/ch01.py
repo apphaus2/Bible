@@ -1,4 +1,4 @@
-"""Amos volume, Chapter 1 — For Three Transgressions (Amos 1–4). Every verse, word for word from ref/asv.
+"""Amos volume, Chapter 1 — For Three Transgressions (Amos 1–4). Every verse, word for word from ref/eng-asv.
 The words of Amos among the herdsmen of Tekoa; Jehovah will roar from Zion and the top of Carmel withers; then the eight
 oracles, each over the map of the nations with that one lit and fire on its wall — Damascus, Gaza, Tyre, Edom, Ammon (1:13
 in words only over Rabbah's burning wall), Moab, Judah, and Israel: the righteous sold for silver and the needy for a pair

@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 8 — Ahaz (2 Kings 15–16). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 8 — Ahaz (2 Kings 15–16). Every verse, word for word from ref/eng-asv.
 The reigns of Azariah the leper king, and of Zechariah, Shallum, Menahem, Pekahiah, Pekah and Jotham
 as roll cells (the conspiracies in words only); Pul and Tiglath-pileser of Assyria on a technical map; then Ahaz — his son
 passed through the fire (16:3 words only), the siege by Rezin and Pekah, I am thy servant and thy son; the altar after the

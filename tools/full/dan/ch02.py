@@ -1,4 +1,4 @@
-"""Daniel volume, Chapter 2 — The Burning Fiery Furnace (Daniel 3–4). Every verse, word for word from ref/asv.
+"""Daniel volume, Chapter 2 — The Burning Fiery Furnace (Daniel 3–4). Every verse, word for word from ref/eng-asv.
 The image of gold in the plain of Dura and the rulers gathered to its dedication; the herald's decree over a plate of the
 instruments; all the peoples fallen down, three men standing; the Chaldeans' accusation; who is that god that shall deliver
 you?; we will not serve thy gods; the furnace heated seven times more (the mighty men slain by the flame told in words over

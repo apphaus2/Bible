@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 3 — The Sons of Levi (1 Chronicles 5–6). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 3 — The Sons of Levi (1 Chronicles 5–6). Every verse, word for word from ref/eng-asv.
 Reuben, whose birthright was given to Joseph; Gad in Bashan; the war with the Hagrites as a map (5:22 words over the
 cattle taken); the half-tribe of Manasseh, and the two tribes and a half carried away by Pul and Tilgath-pilneser; then the
 sons of Levi: the high priests from Aaron to Jehozadak as one line; the singers David set over the service of song,

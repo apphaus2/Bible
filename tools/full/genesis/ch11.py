@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 11 — The Dreamer (Genesis 37–38). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 11 — The Dreamer (Genesis 37–38). Every verse, word for word from ref/eng-asv.
 Reuses the digest's Book Five panels (the coat, the sheaves, the stars, the pit, the silver, the caravan, the coat in
 blood). Genesis 38 (Judah and Tamar) is given in full; the drawings are faces, the gate of Enaim, the pledge and the
 twins with the scarlet thread."""

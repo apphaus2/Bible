@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 7 — Jehovah Looketh on the Heart (1 Samuel 15–16). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 7 — Jehovah Looketh on the Heart (1 Samuel 15–16). Every verse, word for word from ref/eng-asv.
 Go and smite Amalek; Saul spares Agag and the best of the flocks; It repenteth me that I have set up Saul; What meaneth this
 bleating of the sheep?; to obey is better than sacrifice; the skirt of the robe rent and the kingdom rent from Saul; Agag
 (15:33 words over the night: nothing drawn); then Samuel's horn of oil at Beth-lehem, Jesse's sons passing by, the youngest

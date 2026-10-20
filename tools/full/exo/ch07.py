@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 7 — The Book of the Covenant (Exodus 22–24). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 7 — The Book of the Covenant (Exodus 22–24). Every verse, word for word from ref/eng-asv.
 The ordinances of 22:1–23:19 are five pages of law cells (kit.law) with pictograms from art7."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

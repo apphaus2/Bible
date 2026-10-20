@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 5 — To Obey Is Better (1 Samuel 11–13). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 5 — To Obey Is Better (1 Samuel 11–13). Every verse, word for word from ref/eng-asv.
 Nahash at Jabesh-gilead (11:2 words only); Saul following the oxen, the yoke cut in pieces and sent (words over the field);
 deliverance by the time the sun is hot; the kingdom renewed at Gilgal; Samuel's farewell — Whose ox have I taken? — and
 thunder and rain in wheat harvest; Jonathan smites the garrison at Geba; the Philistines as the sand; Saul's burnt-offering at

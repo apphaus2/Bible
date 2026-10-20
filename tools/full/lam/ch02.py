@@ -1,5 +1,5 @@
 """Lamentations volume, Chapter 2 — His Compassions Fail Not (Lamentations 3–5), the last chapter of Lamentations. Every verse,
-word for word from ref/asv, each verse its own song line. The third lament: I am the man that hath seen affliction — dark places,
+word for word from ref/eng-asv, each verse its own song line. The third lament: I am the man that hath seen affliction — dark places,
 the heavy chain, the ways walled up with hewn stone, the bear and the lion, the mark for the arrow; yet this I recall: his
 compassions fail not, they are new every morning (the dawn over the broken city); let him sit alone and keep silence; let us lift
 up our heart with our hands; the cloud that no prayer can pass through; chased like a bird; out of the lowest dungeon (the pit

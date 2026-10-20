@@ -1,4 +1,4 @@
-"""The whole Bible as a reading PDF, straight from ref/asv/*.usfm: the text every manga page quotes.
+"""The whole Bible as a reading PDF, straight from ref/eng-asv/*.usfm: the text every manga page quotes.
 
 Usage (from the repo root):  python3 tools/book/asv_pdf.py [--out _book] [--books GEN,EXO]
 
@@ -26,12 +26,12 @@ Google Fonts API, cached in _book/fonts/ and embedded.
 
 Needs Node with Playwright 1.49 or later (Chromium 131+ draws the running heads with CSS page-margin boxes) and pypdf
 (Chromium only writes bookmarks into a tagged PDF, three times the size, so pypdf adds them). The website workflow builds
-it with the site and caches it until ref/asv or this script changes. --books limits the text, for proofs."""
+it with the site and caches it until ref/eng-asv or this script changes. --books limits the text, for proofs."""
 import re, html, json, string, hashlib, pathlib, argparse, subprocess, urllib.parse, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 HERE = pathlib.Path(__file__).resolve().parent
-ASV = ROOT / "ref" / "asv"
+ASV = ROOT / "ref" / "eng-asv"
 OUT_NAME = "bible-asv.pdf"
 SINGLE = {"OBA", "PHM", "2JN", "3JN", "JUD"}         # one-chapter books: no chapter numeral
 

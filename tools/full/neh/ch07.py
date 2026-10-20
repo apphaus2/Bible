@@ -1,5 +1,5 @@
 """Nehemiah volume, Chapter 7 — The Dedication of the Wall (Nehemiah 12–13), the last chapter of Nehemiah. Every verse, word
-for word from ref/asv. The priests and Levites that went up with Zerubbabel, the line of the high priests from Jeshua to
+for word from ref/eng-asv. The priests and Levites that went up with Zerubbabel, the line of the high priests from Jeshua to
 Jaddua (a chart), the heads of fathers' houses in the days of Joiakim (a board of names), all as roll cells; the dedication
 of the wall with gladness, cymbals, psalteries and harps; two great companies that gave thanks going round upon the wall
 (the plan of the wall with both routes), meeting in the house of God, the joy of Jerusalem heard even afar off; the

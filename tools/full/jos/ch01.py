@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 1 — Be Strong and of Good Courage (Joshua 1–2). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 1 — Be Strong and of Good Courage (Joshua 1–2). Every verse, word for word from ref/eng-asv.
 Jehovah's charge to Joshua after the death of Moses; the officers and the three days; Reuben, Gad and the half-tribe of
 Manasseh to pass over armed; then the two spies at Jericho: Rahab's house upon the wall, the stalks of flax, the cord
 through the window, the line of scarlet thread, three days in the mountain, and the report to Joshua."""

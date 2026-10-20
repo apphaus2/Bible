@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 12 — The Captain of the Guard (Genesis 39–40). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 12 — The Captain of the Guard (Genesis 39–40). Every verse, word for word from ref/eng-asv.
 39:7–18 is given in full; the drawings are faces, the empty doorway and the garment in her hand."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

@@ -1,5 +1,5 @@
 """2 Samuel volume, Chapter 4 — For Ever (2 Samuel 7–8). Every verse, word for word from
-ref/asv. I dwell in a house of cedar, but the ark of God dwelleth within curtains; the word of Jehovah to Nathan by night (the
+ref/eng-asv. I dwell in a house of cedar, but the ark of God dwelleth within curtains; the word of Jehovah to Nathan by night (the
 Voice box) — I took thee from the sheepcote; he shall build a house for my name; I will be his father; David sitting before
 Jehovah — who am I, O Lord Jehovah?; then David's wars as a technical map (8:2 words over Moab on the map), the shields
 of gold, Toi's vessels dedicated unto Jehovah, and the officers of the kingdom."""

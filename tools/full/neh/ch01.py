@@ -1,4 +1,4 @@
-"""Nehemiah volume, Chapter 1 — The Wall of Jerusalem (Nehemiah 1–2). Every verse, word for word from ref/asv.
+"""Nehemiah volume, Chapter 1 — The Wall of Jerusalem (Nehemiah 1–2). Every verse, word for word from ref/eng-asv.
 In Shushan the palace, Hanani and certain men out of Judah: the wall of Jerusalem is broken down, and the gates thereof are
 burned with fire; Nehemiah weeps, fasts and prays (his prayer in full, God's word to Moses quoted in the Voice box); the
 cupbearer before Artaxerxes — why is thy countenance sad?; the king's letters, the captains and horsemen; Sanballat and

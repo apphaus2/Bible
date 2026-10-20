@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 1 — After the Death of Joshua (Judges 1–2). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 1 — After the Death of Joshua (Judges 1–2). Every verse, word for word from ref/eng-asv.
 Judah shall go up; Adoni-bezek (1:6–7 are words over his empty table: nothing of the maiming drawn); Jerusalem, Hebron,
 Othniel and Achsah's springs; Beth-el taken by its entrance; the tribes that drove not out the Canaanites as roll cells;
 the angel of Jehovah at Bochim; Joshua's death, a generation that knew not Jehovah, the Baalim, and the round of the judges

@@ -1,4 +1,4 @@
-"""Song of Solomon volume, Chapter 2 — A Garden Shut Up (Song of Solomon 3–5). Every verse, word for word from ref/asv.
+"""Song of Solomon volume, Chapter 2 — A Garden Shut Up (Song of Solomon 3–5). Every verse, word for word from ref/eng-asv.
 By night on my bed (the city at night, the watchmen with torches, the bride small in the street); the roes and hinds again;
 the litter of Solomon coming up from the wilderness like pillars of smoke, threescore mighty men about it; the palanquin as a
 blueprint with its silver, gold and purple; the king crowned and the daughters of Zion; then the beloved's likenesses as

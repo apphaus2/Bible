@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 8 — Justice, Only Justice (Deuteronomy 16 – 18). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 8 — Justice, Only Justice (Deuteronomy 16 – 18). Every verse, word for word from ref/eng-asv.
 The statutes as spoken law cells (deu.common.law_chapter: exo.kit.law_pages with spoken=True, pictograms by picto.pick)."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

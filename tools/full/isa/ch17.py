@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 17 — Arise, Shine (Isaiah 60–62). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 17 — Arise, Shine (Isaiah 60–62). Every verse, word for word from ref/eng-asv.
 Arise, shine; for thy light is come — Zion alone in light while darkness covers the earth; the camels of Midian and Ephah, gold
 and frankincense; who are these that fly as a cloud? — the ships of Tarshish; the gates open day and night; the glory of
 Lebanon for the sanctuary; for brass gold (a plate) — thy walls Salvation, thy gates Praise; no more sun, but an everlasting

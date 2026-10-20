@@ -1,4 +1,4 @@
-"""Proverbs volume, Chapter 3 — Wisdom Hath Builded Her House (Proverbs 7–9). Every verse, word for word from ref/asv.
+"""Proverbs volume, Chapter 3 — Wisdom Hath Builded Her House (Proverbs 7–9). Every verse, word for word from ref/eng-asv.
 Keep my words; say unto wisdom, Thou art my sister. Proverbs 7 drawn with restraint: the father at his lattice over the
 street at twilight, the young man passing near the corner, a far veiled figure there; her words in song boxes over the
 empty street, the shut house with its lamp and the full moon on the road; the ox led on its rope and the bird to the net;

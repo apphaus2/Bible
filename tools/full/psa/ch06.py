@@ -1,4 +1,4 @@
-"""Psalms volume, Chapter 6 — A Clean Heart (Psalms 51–62). Every verse, word for word from ref/asv.
+"""Psalms volume, Chapter 6 — A Clean Heart (Psalms 51–62). Every verse, word for word from ref/eng-asv.
 David after Nathan came to him: have mercy upon me, O God — purify me with hyssop, create in me a clean heart; Doeg the
 Edomite and the green olive-tree; the fool again; the Ziphites; oh that I had wings like a dove; the tears in thy bottle at
 Gath; in the cave, fleeing from Saul — my soul is among lions, be thou exalted above the heavens; the deaf adder; the dogs

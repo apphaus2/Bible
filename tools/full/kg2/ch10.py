@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 10 — Hezekiah (2 Kings 18–19). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 10 — Hezekiah (2 Kings 18–19). Every verse, word for word from ref/eng-asv.
 Hezekiah who trusted in Jehovah, and the brazen serpent broken in pieces; Samaria's fall recalled; Sennacherib at Lachish and
 the silver and gold sent; Rabshakeh at the conduit of the upper pool — what confidence is this?; speak in the Syrian
 language; the cry in the Jews' language to the men on the wall; Hezekiah in sackcloth and Isaiah's answer; the letter spread

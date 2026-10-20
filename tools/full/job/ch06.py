@@ -1,4 +1,4 @@
-"""Job volume, Chapter 6 — My Redeemer Liveth (Job 18–20). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 6 — My Redeemer Liveth (Job 18–20). Every verse, word for word from ref/eng-asv.
 Bildad's second speech (purple): the lamp of the wicked put out; the net, the gin, the noose and the trap; brimstone
 scattered upon his habitation. Job's answer: he hath walled up my way; the crown taken from my head, my hope plucked up
 like a tree; his troops encamp round about my tent; my household counteth me a stranger (they walk away from the ash heap);

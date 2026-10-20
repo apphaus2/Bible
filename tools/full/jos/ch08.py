@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 8 — The Lots of the Seven Tribes (Joshua 18–19). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 8 — The Lots of the Seven Tribes (Joshua 18–19). Every verse, word for word from ref/eng-asv.
 The tent of meeting set up at Shiloh; How long are ye slack?; three men of each tribe describe the land by cities into seven
 portions in a book; Joshua casts lots before Jehovah; then the seven lots — Benjamin, Simeon, Zebulun, Issachar, Asher,
 Naphtali and Dan — as roll cells, every border and city; and Joshua's own inheritance, Timnath-serah."""

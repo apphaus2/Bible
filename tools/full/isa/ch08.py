@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 8 — In Returning and Rest (Isaiah 28–30). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 8 — In Returning and Rest (Isaiah 28–30). Every verse, word for word from ref/eng-asv.
 The crown of pride of the drunkards of Ephraim; precept upon precept, line upon line; the covenant with death, and the tried
 corner-stone laid in Zion (a blueprint, with the line and the plummet); the bed too short; the plowman and the threshing of
 fitches and cummin (a plate); Ho Ariel — the siege, the dream of the hungry man; the sealed book; the potter and the clay;

@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 5 — The Tables of Stone (Deuteronomy 9–10). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 5 — The Tables of Stone (Deuteronomy 9–10). Every verse, word for word from ref/eng-asv.
 Not for thy righteousness: the golden calf remembered (the calf, the tables broken, the calf ground to dust), Moses fallen
 down forty days and forty nights, the new tables hewn and laid in the ark, the Levites set apart (an aside), and what
 doth Jehovah thy God require of thee."""

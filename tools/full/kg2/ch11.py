@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 11 — The Shadow on the Dial (2 Kings 20–21). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 11 — The Shadow on the Dial (2 Kings 20–21). Every verse, word for word from ref/eng-asv.
 Hezekiah sick unto death — set thy house in order; he turned his face to the wall and wept sore; I have seen thy tears,
 fifteen years added; the cake of figs; the shadow gone back ten steps on the dial of Ahaz; the envoys of Babylon shown all
 his treasures — all shall be carried to Babylon; then Manasseh and his abominations (21:6, 21:16 words only), the line of

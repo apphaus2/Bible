@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 3 — Gideon (Judges 6–7). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 3 — Gideon (Judges 6–7). Every verse, word for word from ref/eng-asv.
 Midian as locusts for multitude and Israel in the dens and caves; the prophet; the angel of Jehovah under the oak at Ophrah
 (his words in the Voice box), Gideon beating out wheat in the winepress, the fire out of the rock, Jehovah-shalom; the altar
 of Baal thrown down by night and Joash's answer, Jerubbaal; the fleece wet and dry; the three hundred that lapped; the dream

@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 6 — The Day of Atonement (Leviticus 16–18). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 6 — The Day of Atonement (Leviticus 16–18). Every verse, word for word from ref/eng-asv.
 The Day of Atonement (16) as blueprint panels; the blood (17) and the forbidden degrees (18) as law cells, the kinship
 laws drawn only as family-tree charts (lev/art6.py)."""
 import sys, pathlib

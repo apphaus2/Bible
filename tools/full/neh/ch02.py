@@ -1,4 +1,4 @@
-"""Nehemiah volume, Chapter 2 — The Builders (Nehemiah 3–4). Every verse, word for word from ref/asv.
+"""Nehemiah volume, Chapter 2 — The Builders (Nehemiah 3–4). Every verse, word for word from ref/eng-asv.
 The builders of the wall, portion by portion, round from the sheep gate and back to it again: each run of verses over the
 plan of the wall with its stretch and its gates lit (neh.art.wall_plan), with drawings of the priests building the sheep
 gate, the fish gate's doors and bars, and Shallum with his daughters; then Sanballat's mockery — if a fox go up, he shall

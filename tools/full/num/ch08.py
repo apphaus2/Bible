@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 8 — Korah (Numbers 15–17). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 8 — Korah (Numbers 15–17). Every verse, word for word from ref/eng-asv.
 The offerings and drink-offerings, the first of the dough and sins of error as law cells; the man gathering sticks on
 the sabbath (15:36 shown only as the heap of stones without the camp); the fringes; Korah, Dathan and Abiram; the ground
 cleaving (16:31–33 as the tents going down, no bodies); the fire upon the two hundred and fifty (their censers only);

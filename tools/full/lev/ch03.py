@@ -1,4 +1,4 @@
-"""Leviticus volume, Chapter 3 — Strange Fire (Leviticus 9–11). Every verse, word for word from ref/asv.
+"""Leviticus volume, Chapter 3 — Strange Fire (Leviticus 9–11). Every verse, word for word from ref/eng-asv.
 The eighth day and Nadab and Abihu (9–10) as story pages; the clean and the unclean (11) as law cells."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

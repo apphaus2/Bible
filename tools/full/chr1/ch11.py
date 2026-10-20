@@ -1,5 +1,5 @@
 """1 Chronicles volume, Chapter 11 — Thine Is the Kingdom (1 Chronicles 28–29), the last chapter of 1 Chronicles. Every verse,
-word for word from ref/asv. David stands up before the assembly — hear me, my brethren; Solomon chosen to sit upon the
+word for word from ref/eng-asv. David stands up before the assembly — hear me, my brethren; Solomon chosen to sit upon the
 throne of the kingdom of Jehovah; know thou the God of thy father; the pattern of the house given by the Spirit (1 Kings'
 blueprints: the plan, the cherubim, the vessels); be strong and of good courage; the free-will offerings of the king and of
 the princes; David blesses Jehovah — thine, O Jehovah, is the greatness; of thine own have we given thee; the sacrifices;

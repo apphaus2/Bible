@@ -1,4 +1,4 @@
-"""Job volume, Chapter 5 — My Witness Is in Heaven (Job 15–17). Every verse, word for word from ref/asv.
+"""Job volume, Chapter 5 — My Witness Is in Heaven (Job 15–17). Every verse, word for word from ref/eng-asv.
 Eliphaz's second speech (teal): fill himself with the east wind?; art thou the first man that was born?; the heavens are
 not clean in his sight; the wicked man travaileth with pain, runneth upon God with the bosses of his bucklers, dwelleth in
 desolate cities; the unripe grape and the olive's flower. Job's answer: miserable comforters are ye all; they gape upon me

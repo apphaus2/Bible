@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 11 — Elijah (1 Kings 16–17). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 11 — Elijah (1 Kings 16–17). Every verse, word for word from ref/eng-asv.
 Jehu's word against Baasha (the Voice box); the reigns of Elah, Zimri seven days (16:18 words over the king's house burning),
 Tibni and Omri, the hill Samaria bought for two talents; Ahab and Jezebel and the altar of Baal; Hiel and Jericho. Then
 Elijah the Tishbite before Ahab — there shall not be dew nor rain; the brook Cherith and the ravens; the widow of Zarephath,

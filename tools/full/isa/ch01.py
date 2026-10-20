@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 1 — The Vineyard of Jehovah (Isaiah 1–5). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 1 — The Vineyard of Jehovah (Isaiah 1–5). Every verse, word for word from ref/eng-asv.
 The vision of Isaiah; hear, O heavens — the ox knoweth his owner (the hills of Judah, the ox and the ass at the crib); the
 daughter of Zion left as a booth in a vineyard; the sacrifices refused; come now, and let us reason together (scarlet and
 snow); the faithful city become a harlot, the dross purged; the mountain of Jehovah's house and swords into plowshares;

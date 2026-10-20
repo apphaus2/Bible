@@ -1,4 +1,4 @@
-"""Hosea volume, Chapter 1 — A Door of Hope (Hosea 1–3). Every verse, word for word from ref/asv.
+"""Hosea volume, Chapter 1 — A Door of Hope (Hosea 1–3). Every verse, word for word from ref/eng-asv.
 The word of Jehovah to Hosea in the days of the kings; Go, take unto thee a wife (Hosea and Gomer before their house, never
 more); the children Jezreel, Lo-ruhamah and Lo-ammi as a plate of names, the broken bow in the valley of Jezreel; the sand
 of the sea and the gathering under one head; then Jehovah's controversy (2:2–13, in the Voice box, told over an empty

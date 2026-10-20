@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 9 — The Yoke (Jeremiah 26–28). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 9 — The Yoke (Jeremiah 26–28). Every verse, word for word from ref/eng-asv.
 Stand in the court of Jehovah's house, diminish not a word; this house like Shiloh; the priests and the prophets lay hold on
 him — thou shalt surely die; the princes in the entry of the new gate; I am in your hand; the elders remember Micah the
 Morashtite (Zion ploughed as a field); Uriah who fled into Egypt (his death words over the graves of the common people);

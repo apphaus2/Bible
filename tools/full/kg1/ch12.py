@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 12 — The Fire of Jehovah (1 Kings 18). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 12 — The Fire of Jehovah (1 Kings 18). Every verse, word for word from ref/eng-asv.
 In the third year: go, show thyself unto Ahab; Obadiah who hid a hundred prophets by fifty in a cave; is it thou, thou troubler
 of Israel?; mount Carmel — how long go ye limping between the two sides?; the prophets of Baal from morning until noon (18:28
 words over dark figures about the altar, nothing else drawn); twelve stones, the trench, four jars of water three times; the

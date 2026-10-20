@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 14 — Gedaliah (Jeremiah 40–42). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 14 — Gedaliah (Jeremiah 40–42). Every verse, word for word from ref/eng-asv.
 The chains loosed at Ramah — all the land is before thee; the prophet goes to Gedaliah at Mizpah; the captains of the forces;
 fear not to serve the Chaldeans; the Jews return from Moab, Ammon and Edom (a map) and gather wine and summer fruits; Johanan's
 warning, believed not; Ishmael at table in Mizpah; the slaying of Gedaliah and of the fourscore men, and Asa's pit (41:2–3,

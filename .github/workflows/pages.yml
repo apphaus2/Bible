@@ -59,7 +59,7 @@ jobs:
           path: |
             _book/bible-asv.pdf
             _book/asv
-          key: asv-pdf-${{ hashFiles('ref/asv/*.usfm', 'tools/book/asv_pdf.py', 'tools/book/render.js') }}
+          key: asv-pdf-${{ hashFiles('ref/eng-asv/*.usfm', 'tools/book/asv_pdf.py', 'tools/book/render.js') }}
 
       - name: Build the ASV PDF and its per-book PDFs (only when the text or its script changed)
         run: |

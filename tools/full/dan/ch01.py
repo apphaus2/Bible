@@ -1,4 +1,4 @@
-"""Daniel volume, Chapter 1 — A Stone Cut Out Without Hands (Daniel 1–2). Every verse, word for word from ref/asv.
+"""Daniel volume, Chapter 1 — A Stone Cut Out Without Hands (Daniel 1–2). Every verse, word for word from ref/eng-asv.
 Jerusalem besieged and the vessels of the house of God carried to Shinar; the youths of the seed royal in the king's palace
 and their new names (a plate); Daniel purposed in his heart — prove thy servants ten days (the gold table and the plain
 board); ten times better than all the magicians; then the king's dream that none could tell, the Chaldeans before the throne,

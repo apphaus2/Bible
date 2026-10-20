@@ -1,6 +1,6 @@
 """The Psalms volume of the full edition: metadata, the volume cover, and the chapter plans (ch01.py, ...).
 
-Every psalm opens with its head (PSALM N, 第N篇, and the superscription cut from ref/asv by psa.text — superscriptions are
+Every psalm opens with its head (PSALM N, 第N篇, and the superscription cut from ref/eng-asv by psa.text — superscriptions are
 not verses in asv.Book, so they are labels); its verses are song boxes (psa.layout "song" lines, one poetic line to a row)
 over drawings taken from the psalm (psa.art.SCENES: the tree by the streams, the shepherd and the still waters, the
 heavens, the deep, the hart at the brooks, the sparrow at the altar, the harp on the willows …) or beside the singer's face

@@ -3,7 +3,7 @@ additions for poetry:
 
   ("song", text)  a verse in a song box, its poetic lines (from psa.text) set one to a row (text holds "\\n" between lines)
   ("head", (num, title, extra))  a psalm's head at the top of its first panel: a red PSALM N block and the superscription
-                  (a data-label, cut from ref/asv by psa.text: superscriptions are not verses, so the ASV check skips them)
+                  (a data-label, cut from ref/eng-asv by psa.text: superscriptions are not verses, so the ASV check skips them)
 
     seg(lines, ref, tok=FACE, bg=BG, art=None, head=None, title=None, …)
     pages = pack(segments, prefix, start, book="Psalms", code="PS", end=end_mark(...))

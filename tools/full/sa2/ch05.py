@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 5 — Mephibosheth (2 Samuel 9–10). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 5 — Mephibosheth (2 Samuel 9–10). Every verse, word for word from ref/eng-asv.
 Is there yet any that is left of the house of Saul?; Ziba; Mephibosheth fallen on his face — fear not; such a dead dog as
 I am; he shall eat at my table as one of the king's sons (the digest's Mephibosheth page throughout). Then Hanun and the
 comforters shamed (10:4 words over the men waiting at Jericho under the palms); the battle before the gate of Rabbah as a

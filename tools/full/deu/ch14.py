@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 14 — The Song of Moses (Deuteronomy 32). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 14 — The Song of Moses (Deuteronomy 32). Every verse, word for word from ref/eng-asv.
 The song in song boxes (speech.py "song" lines) over the rain on the grass, the Rock, the eagle over her young, the high
 places and the fat of the land, the strange gods, the fire and the arrows, and the heavens; every third panel Moses' face;
 then Set your heart unto all the words, and Jehovah's word to go up mount Nebo and die there."""

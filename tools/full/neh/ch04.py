@@ -1,4 +1,4 @@
-"""Nehemiah volume, Chapter 4 — The Genealogy of the Return (Nehemiah 7). Every verse, word for word from ref/asv.
+"""Nehemiah volume, Chapter 4 — The Genealogy of the Return (Nehemiah 7). Every verse, word for word from ref/eng-asv.
 The doors set up and the porters, singers and Levites appointed; Hanani and Hananiah given charge — let not the gates of
 Jerusalem be opened until the sun be hot; the city wide and large, but the people few; the book of the genealogy of them
 that came up at the first: the leaders with Zerubbabel (a board of names), the men of the people of Israel by their

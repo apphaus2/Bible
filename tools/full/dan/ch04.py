@@ -1,4 +1,4 @@
-"""Daniel volume, Chapter 4 — The Ancient of Days (Daniel 7–8). Every verse, word for word from ref/asv.
+"""Daniel volume, Chapter 4 — The Ancient of Days (Daniel 7–8). Every verse, word for word from ref/eng-asv.
 Daniel's dream in the first year of Belshazzar, told in his own words over plates: the four winds upon the great sea; the
 four beasts as heraldic emblems on a dark field (the lion with eagle's wings, the bear with three ribs, the leopard with four
 wings and four heads, the fourth beast with iron teeth and ten horns, and the little horn with eyes); thrones placed and the

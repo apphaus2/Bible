@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 4 — Ai and the Gibeonites (Joshua 8–9). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 4 — Ai and the Gibeonites (Joshua 8–9). Every verse, word for word from ref/eng-asv.
 The ambush behind the city laid out as a technical map; the feigned flight and the javelin stretched out toward Ai; the city
 set on fire (the slaughter of 8:21–26 and the king of Ai in 8:29 are words over the smoke and the heap: nothing of it
 drawn); the altar of unhewn stones in mount Ebal and the law read before Gerizim and Ebal; then the Gibeonites with their

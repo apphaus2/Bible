@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 14 — They That Go Down to the Sea (Psalms 107–118), the opening of Book V. Every verse, word for
-word from ref/asv. The redeemed of Jehovah — the wanderers in the desert way, the prisoners in darkness and iron, the sick at
+word from ref/eng-asv. The redeemed of Jehovah — the wanderers in the desert way, the prisoners in darkness and iron, the sick at
 the gates of death, they that go down to the sea in ships and the storm made a calm, the wilderness turned into pools;
 awake, psaltery and harp; Psalm 109's curses (words over the bare plain, the locust and the shadow; no one drawn); Jehovah
 saith unto my Lord, Sit thou at my right hand (the Voice box); the righteous man and the barren woman made a joyful mother;

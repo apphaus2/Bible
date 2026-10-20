@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 5 — Bread from Heaven (Exodus 16–18). Every verse, word for word from ref/asv."""
+"""Exodus volume, Chapter 5 — Bread from Heaven (Exodus 16–18). Every verse, word for word from ref/eng-asv."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))

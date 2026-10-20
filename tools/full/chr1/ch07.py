@@ -1,4 +1,4 @@
-"""1 Chronicles volume, Chapter 7 — Thy Throne for Ever (1 Chronicles 17–20). Every verse, word for word from ref/asv.
+"""1 Chronicles volume, Chapter 7 — Thy Throne for Ever (1 Chronicles 17–20). Every verse, word for word from ref/eng-asv.
 A house of cedar and the ark under curtains; the word of God to Nathan by night — I will establish his throne for ever (the
 digest's panels and the throne of glory); who am I, O Jehovah God; David's wars as a map, the shields of gold and the brass
 of Hadarezer; Hanun and the messengers shamed; Joab before and behind; Shophach; Rabbah and the crown of a talent of gold

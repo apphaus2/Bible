@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 13 — A Still Small Voice (1 Kings 19–20). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 13 — A Still Small Voice (1 Kings 19–20). Every verse, word for word from ref/eng-asv.
 Jezebel's oath; Elijah under the juniper-tree — it is enough; the angel and the cake baken on the coals; forty days to Horeb;
 what doest thou here, Elijah?; the wind, the earthquake, the fire, and a still small voice; seven thousand that have not
 bowed unto Baal; the mantle cast upon Elisha at the plough. Then Ben-hadad and the thirty and two kings before Samaria — let

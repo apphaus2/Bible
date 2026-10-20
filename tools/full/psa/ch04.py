@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 4 — Wait for Jehovah (Psalms 34–41), the close of Book I. Every verse, word for word from
-ref/asv. David before Abimelech — O taste and see that Jehovah is good; the angel of Jehovah encamping round about; strive
+ref/eng-asv. David before Abimelech — O taste and see that Jehovah is good; the angel of Jehovah encamping round about; strive
 thou, O Jehovah, with them that strive with me (the enemies told as chaff, net and lions); the fountain of life and the
 river of thy pleasures; fret not thyself — the wicked fade as the grass and vanish in smoke, the old man who never saw the
 righteous forsaken; the sickbed and the burden of sin; every man walketh in a vain show; the horrible pit and the new

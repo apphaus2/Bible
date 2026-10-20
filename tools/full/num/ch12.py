@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 12 — Phinehas (Numbers 25–26). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 12 — Phinehas (Numbers 25–26). Every verse, word for word from ref/eng-asv.
 Baal-peor (from afar; 25:4–5 in captions over an empty plain); Phinehas (25:8 told in a caption over the shut pavilion);
 the covenant of peace; and the numbering in the plains of Moab as tally cells, with the land divided by lot, the Levites,
 and Caleb and Joshua alone left of the first numbering."""

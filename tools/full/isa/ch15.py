@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 15 — A Man of Sorrows (Isaiah 52–55). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 15 — A Man of Sorrows (Isaiah 52–55). Every verse, word for word from ref/eng-asv.
 Awake, awake, O Zion — shake thyself from the dust; ye were sold for nought; how beautiful upon the mountains are the feet of
 him that bringeth good tidings; the watchmen sing; depart ye, ye that bear the vessels of Jehovah; then the servant (never
 drawn: 52:13–53:12 are words over a root out of a dry ground, an empty road at dusk, sheep gone astray, a lamb silent before

@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 13 — Choose Life (Deuteronomy 29–31). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 13 — Choose Life (Deuteronomy 29–31). Every verse, word for word from ref/eng-asv.
 The covenant in the land of Moab; the secret things; I have set before thee life and death, therefore choose life; Moses a
 hundred and twenty years old, and Joshua charged before all Israel; the law written and given to the priests, read every
 seventh year; Jehovah in the pillar of cloud at the Tent, the song foretold, and the book laid by the side of the ark."""

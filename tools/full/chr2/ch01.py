@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 1 — Wisdom and Knowledge (2 Chronicles 1–4). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 1 — Wisdom and Knowledge (2 Chronicles 1–4). Every verse, word for word from ref/eng-asv.
 Solomon and all the assembly at the high place at Gibeon, a thousand burnt-offerings on the brazen altar; in that night,
 ask what I shall give thee — give me now wisdom and knowledge (God's words in the Voice box over the dream); chariots and
 horsemen, silver and gold as stones; the letter to Huram king of Tyre and Huram's answer in writing; the burden-bearers and

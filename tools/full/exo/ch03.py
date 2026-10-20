@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 3 — The Passover (Exodus 9–12). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 3 — The Passover (Exodus 9–12). Every verse, word for word from ref/eng-asv.
 The ordinances of the first month (12:14–20) get a technical calendar of the feast of unleavened bread."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

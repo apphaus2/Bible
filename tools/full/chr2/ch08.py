@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 8 — Joash (2 Chronicles 22–24). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 8 — Joash (2 Chronicles 22–24). Every verse, word for word from ref/eng-asv.
 Ahaziah, whose mother was his counsellor to do wickedly, and the house of Ahab (22:8–9 words over the gate at dawn);
 Athaliah destroys the seed royal and Jehoshabeath hides Joash six years in the house of God (2 Kings' drawings); Jehoiada's
 covenant in the seventh year — long live the king; treason! treason! (23:15 words over the horses' entry); the house of Baal

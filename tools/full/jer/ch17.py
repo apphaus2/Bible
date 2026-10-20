@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 17 — Babylon Is Taken (Jeremiah 49–50). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 17 — Babylon Is Taken (Jeremiah 49–50). Every verse, word for word from ref/eng-asv.
 The burdens of the children of Ammon (Rabbah a desolate heap), of Edom (thou that dwellest in the clefts of the rock; the lion
 from the pride of the Jordan; the eagle against Bozrah), of Damascus (a fire in the wall), of Kedar and Hazor (a nation that
 dwelleth without care, its tents and camels taken), and of Elam (the bow broken, the four winds), each with its map; then the

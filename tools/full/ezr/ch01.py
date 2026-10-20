@@ -1,4 +1,4 @@
-"""Ezra volume, Chapter 1 — The Decree of Cyrus (Ezra 1–2). Every verse, word for word from ref/asv.
+"""Ezra volume, Chapter 1 — The Decree of Cyrus (Ezra 1–2). Every verse, word for word from ref/eng-asv.
 The proclamation of Cyrus — whosoever there is among you of all his people, let him go up; the heads of fathers' houses and
 all whose spirit God had stirred; the vessels of the house of Jehovah brought forth and numbered to Sheshbazzar (a tally
 board); then the children of the province that went up out of the captivity, family by family, as roll cells; the priests

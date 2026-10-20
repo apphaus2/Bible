@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 5 — The Cloud and the Trumpets (Numbers 9–10). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 5 — The Cloud and the Trumpets (Numbers 9–10). Every verse, word for word from ref/eng-asv.
 The passover in the wilderness and the men unclean by the dead; the cloud upon the tabernacle, by day and by night; the
 two trumpets of silver; the order of march out of the wilderness of Sinai (a plan); Hobab; and Moses' words when the
 ark set forward and when it rested."""

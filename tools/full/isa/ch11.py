@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 11 — Comfort Ye My People (Isaiah 40–42). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 11 — Comfort Ye My People (Isaiah 40–42). Every verse, word for word from ref/eng-asv.
 Comfort ye, comfort ye my people; the voice of one that crieth — prepare ye in the wilderness the way of Jehovah (the
 highway, every valley exalted); all flesh is grass; the herald on a high mountain — behold, your God!; he will feed his flock
 like a shepherd (the flock and the lambs, no shepherd drawn); who hath measured the waters (a plate of the measures); the

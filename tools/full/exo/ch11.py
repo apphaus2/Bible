@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 11 — The Willing Offering (Exodus 35–38). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 11 — The Willing Offering (Exodus 35–38). Every verse, word for word from ref/eng-asv.
 The making of the tabernacle (36:8–38:20) follows the pattern of chapters 25–30 almost word for word; it is set in full as
 blueprint pages (kit.blueprints) reusing the drawings of art8 and art9, with the narration in caption boxes."""
 import sys, pathlib

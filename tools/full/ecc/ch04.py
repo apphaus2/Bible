@@ -1,5 +1,5 @@
 """Ecclesiastes volume, Chapter 4 — Remember Thy Creator (Ecclesiastes 10–12), the last chapter of Ecclesiastes. Every
-verse, word for word from ref/asv. Dead flies in the perfumer's oil; servants upon horses and princes on foot; the pit, the
+verse, word for word from ref/eng-asv. Dead flies in the perfumer's oil; servants upon horses and princes on foot; the pit, the
 wall and the serpent, the stones, the wood and the blunt iron as a plate of six cells; the child king; the roof that sinketh
 in; a bird of the heavens; bread upon the waters; the clouds and the fallen tree; sowing morning and evening; the light is
 sweet; rejoice, O young man; then the darkening of sun and moon, the house whose keepers tremble, the almond-tree, the

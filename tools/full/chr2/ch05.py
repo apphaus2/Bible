@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 5 — Abijah and Asa (2 Chronicles 13–16). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 5 — Abijah and Asa (2 Chronicles 13–16). Every verse, word for word from ref/eng-asv.
 Abijah upon mount Zemaraim — hear me, O Jeroboam and all Israel; God is with us at our head; the ambushment behind and the
 shout of Judah (a map; 13:17 words only); then Asa who sought Jehovah, the cities built while the land was quiet; Zerah the
 Ethiopian with a thousand thousand — help us, O Jehovah our God, for we rely on thee (a map); Azariah the son of Oded —

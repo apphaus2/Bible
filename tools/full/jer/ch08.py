@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 8 — The Cup of the Wine of Wrath (Jeremiah 23–25). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 8 — The Cup of the Wine of Wrath (Jeremiah 23–25). Every verse, word for word from ref/eng-asv.
 Woe unto the shepherds that scatter the sheep; the remnant gathered again to their folds; a righteous Branch unto David —
 Jehovah our righteousness; concerning the prophets — my heart within me is broken; the whirling tempest; I have dreamed, I have
 dreamed; is not my word like fire, and like a hammer that breaketh the rock?; the burden of Jehovah; the two baskets of figs

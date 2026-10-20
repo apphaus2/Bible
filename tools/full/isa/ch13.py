@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 13 — Go Ye Forth from Babylon (Isaiah 46–48). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 13 — Go Ye Forth from Babylon (Isaiah 46–48). Every verse, word for word from ref/eng-asv.
 Bel boweth down, Nebo stoopeth — their idols a burden on the weary beasts; even to hoar hairs will I carry you; the idol borne
 on the shoulder that cannot answer; a ravenous bird from the east (a map); come down, and sit in the dust, O virgin daughter
 of Babylon (an empty throne overturned, a woman at the hand-mill; nothing more drawn); I shall be mistress for ever; the

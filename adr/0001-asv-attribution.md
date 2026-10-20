@@ -5,7 +5,7 @@
 
 ## Context
 
-Every word of the manga is taken from the ASV (`ref/asv`). The pages named it inconsistently:
+Every word of the manga is taken from the ASV (`ref/eng-asv`). The pages named it inconsistently:
 the volume cover and chapter title pages spelled out the full name with the year, and the running
 foot on story pages added the year after "ASV". The website footers and the e-book metadata spelled it out
 with the year as well.

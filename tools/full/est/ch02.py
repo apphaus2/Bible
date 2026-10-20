@@ -1,4 +1,4 @@
-"""Esther volume, Chapter 2 — For Such a Time as This (Esther 3–4). Every verse, word for word from ref/asv.
+"""Esther volume, Chapter 2 — For Such a Time as This (Esther 3–4). Every verse, word for word from ref/eng-asv.
 Haman the Agagite advanced above all the princes; all the king's servants in the gate bowed down, but Mordecai bowed not
 down; Pur, that is, the lot, cast before Haman from month to month to the month Adar (a wheel of the twelve months); a
 certain people scattered abroad — let it be written that they be destroyed; the king's ring given; letters by posts into all

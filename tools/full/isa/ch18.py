@@ -1,5 +1,5 @@
 """Isaiah volume, Chapter 18 — New Heavens and a New Earth (Isaiah 63–66), the last chapter of Isaiah. Every verse, word for word
-from ref/asv. Who is this that cometh from Edom? — I have trodden the winepress alone (63:1–6 words over an empty winepress
+from ref/eng-asv. Who is this that cometh from Edom? — I have trodden the winepress alone (63:1–6 words over an empty winepress
 running red at sunset: no one drawn); the lovingkindnesses of Jehovah, the angel of his presence, Moses and the sea, the cattle
 going down into the valley; look down from heaven; oh that thou wouldest rend the heavens; we are the clay, and thou our potter;
 Zion a wilderness, the house burned with fire; I am found of them that sought me not — the gardens and the graves; the new wine

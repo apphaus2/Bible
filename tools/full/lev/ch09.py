@@ -1,5 +1,5 @@
 """Leviticus volume, Chapter 9 — Blessing and Curse (Leviticus 26–27), the end of Leviticus. Every verse, word for word
-from ref/asv. All law cells (lev/art9.py): the blessings, the curses drawn as the land under judgment, and the estimations
+from ref/eng-asv. All law cells (lev/art9.py): the blessings, the curses drawn as the land under judgment, and the estimations
 of vows and tithes as charts. The volume ends with 完."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

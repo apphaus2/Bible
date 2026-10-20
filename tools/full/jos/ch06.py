@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 6 — The Land That Remaineth (Joshua 12–14). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 6 — The Land That Remaineth (Joshua 12–14). Every verse, word for word from ref/eng-asv.
 The kings smitten beyond the Jordan (a map), then the thirty and one kings west of the Jordan as a roll page of cells,
 two kings to a cell as the verses give them; Jehovah's word to Joshua, old and well stricken in years, and the land that yet
 remaineth (a map); the inheritance of Reuben, Gad and the half-tribe of Manasseh beyond the Jordan as roll cells; the lot

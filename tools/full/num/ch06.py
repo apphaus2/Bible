@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 6 — Graves of Lust (Numbers 11–12). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 6 — Graves of Lust (Numbers 11–12). Every verse, word for word from ref/eng-asv.
 Taberah; the mixed multitude lusting after the food of Egypt; the manna; Moses' burden and the seventy elders; Eldad and
 Medad; the quails and Kibroth-hattaavah (11:33 shown only as the graves); Miriam and Aaron against Moses, Miriam leprous
 and shut up without the camp seven days."""

@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 9 — O My Son Absalom (2 Samuel 17–18). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 9 — O My Son Absalom (2 Samuel 17–18). Every verse, word for word from ref/eng-asv.
 Ahithophel's counsel and Hushai's — a bear robbed of her whelps, as the dew falleth on the ground; the priests' sons hidden
 in the well at Bahurim; over the Jordan by morning light; Ahithophel's end (17:23 words over his city at dusk); Barzillai's
 gifts at Mahanaim. Then deal gently for my sake with the young man; the forest devoured more than the sword; Absalom caught

@@ -1,4 +1,4 @@
-"""Judges volume, Chapter 7 — Delilah (Judges 16). Every verse, word for word from ref/asv.
+"""Judges volume, Chapter 7 — Delilah (Judges 16). Every verse, word for word from ref/eng-asv.
 Gaza (16:1 is words over the gate at night) and the doors of the gate carried to the top of the mountain; Delilah and the
 lords' eleven hundred pieces of silver; the green withes, the new ropes, the web — The Philistines are upon thee, Samson;
 the razor, the seven locks shaven (the digest's panels); the prison-house mill (16:21 is words over the mill: no wound

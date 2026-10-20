@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 6 — Watchman, What of the Night? (Isaiah 21–23). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 6 — Watchman, What of the Night? (Isaiah 21–23). Every verse, word for word from ref/eng-asv.
 The burden of the wilderness of the sea — whirlwinds in the South, go up, O Elam; the table prepared; set a watchman, and
 the watchman on his tower — fallen, fallen is Babylon; the burden of Dumah — watchman, what of the night?; the burden upon
 Arabia and the caravans of Dedanites; the burden of the valley of vision — the housetops, the valleys full of chariots, the

@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 2 — Let My People Go (Exodus 5–8). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 2 — Let My People Go (Exodus 5–8). Every verse, word for word from ref/eng-asv.
 6:14–25 (the heads of the fathers' houses) is set as two scroll pages of clan cells, every verse in full."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

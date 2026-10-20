@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 9 — Holy to Jehovah (Exodus 28–31). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 9 — Holy to Jehovah (Exodus 28–31). Every verse, word for word from ref/eng-asv.
 Blueprint pages like chapter 8, laid out by pack(): the verses are listed as panels (verses, drawing, heading) and packed
 into pages of up to three panels and about 1,250 characters, each panel's height in proportion to its words."""
 import sys, pathlib, re

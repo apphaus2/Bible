@@ -1,4 +1,4 @@
-"""Isaiah volume, Chapter 10 — On Whom Dost Thou Trust? (Isaiah 36–39). Every verse, word for word from ref/asv.
+"""Isaiah volume, Chapter 10 — On Whom Dost Thou Trust? (Isaiah 36–39). Every verse, word for word from ref/eng-asv.
 The story of Hezekiah and Sennacherib, drawn as in 2 Kings (kg2.art, kg2.common): Rabshakeh at the conduit of the upper pool
 — on whom dost thou trust?; the cry in the Jews' language to the men on the wall; Hezekiah in sackcloth and Isaiah's answer;
 the letter spread before Jehovah and his prayer; the virgin daughter of Zion hath despised thee (the Voice box over Lebanon,

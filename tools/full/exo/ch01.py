@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 1 — The Bush That Burned (Exodus 1–4). Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 1 — The Bush That Burned (Exodus 1–4). Every verse, word for word from ref/eng-asv.
 The digest's Exodus Book One drawings are lifted where they fit; new drawings are in exo/art.py."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

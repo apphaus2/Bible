@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 4 — The House of Jehovah (1 Kings 5–6). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 4 — The House of Jehovah (1 Kings 5–6). Every verse, word for word from ref/eng-asv.
 Hiram king of Tyre and Solomon's message — I purpose to build a house for the name of Jehovah my God; cedar and fir out of
 Lebanon, floated in rafts by sea; the levy and the hewers; great stones, costly stones. Then the house as blueprint plates:
 the elevation and the plan, the side-chambers in section, stone made ready at the quarry, the word of Jehovah to Solomon

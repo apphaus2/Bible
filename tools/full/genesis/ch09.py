@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 9 — Peniel (Genesis 31–33). Every verse, word for word from ref/asv.
+"""Genesis volume, Chapter 9 — Peniel (Genesis 31–33). Every verse, word for word from ref/eng-asv.
 Reuses the digest's Book Four panels for the wrestling at the Jabbok and the meeting with Esau."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

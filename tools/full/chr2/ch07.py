@@ -1,4 +1,4 @@
-"""2 Chronicles volume, Chapter 7 — The Battle Is Not Yours (2 Chronicles 20–21). Every verse, word for word from ref/asv.
+"""2 Chronicles volume, Chapter 7 — The Battle Is Not Yours (2 Chronicles 20–21). Every verse, word for word from ref/eng-asv.
 Moab, Ammon and mount Seir at En-gedi (a map); Jehoshaphat's fast and his prayer before the new court — our eyes are upon
 thee; Jahaziel in the midst of the assembly — the battle is not yours, but God's; stand ye still; the singers in holy array
 going out before the army — give thanks unto Jehovah; the liers-in-wait and the valley from the watch-tower (20:22–25 words

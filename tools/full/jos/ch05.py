@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 5 — The Sun Stood Still (Joshua 10–11). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 5 — The Sun Stood Still (Joshua 10–11). Every verse, word for word from ref/eng-asv.
 The five kings against Gibeon; the night march from Gilgal; the great stones from heaven at the descent of Beth-horon;
 Sun, stand thou still upon Gibeon; the five kings hid in the cave at Makkedah (10:24–27 are words over the cave and its
 stones: nothing of their deaths drawn); the southern cities taken one by one, as a campaign map; then Jabin of Hazor and

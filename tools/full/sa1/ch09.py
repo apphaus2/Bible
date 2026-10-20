@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 9 — Saul Hath Slain His Thousands (1 Samuel 18–19). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 9 — Saul Hath Slain His Thousands (1 Samuel 18–19). Every verse, word for word from ref/eng-asv.
 The soul of Jonathan knit with the soul of David, the robe, the sword and the bow (the digest's panels); the women with
 timbrels — Saul hath slain his thousands, and David his ten thousands; the spear cast to the wall; Merab and Michal, and the
 dowry (18:25–27 words over the camp); Jonathan pleading for David; the spear in the wall again; Michal letting David down

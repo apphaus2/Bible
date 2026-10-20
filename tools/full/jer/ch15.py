@@ -1,4 +1,4 @@
-"""Jeremiah volume, Chapter 15 — Into Egypt (Jeremiah 43–45). Every verse, word for word from ref/asv.
+"""Jeremiah volume, Chapter 15 — Into Egypt (Jeremiah 43–45). Every verse, word for word from ref/eng-asv.
 Thou speakest falsely; Baruch setteth thee on against us; the remnant of Judah carried into Egypt, the prophet and Baruch
 among them, unto Tahpanhes; great stones hid in the mortar of the brickwork at the entry of Pharaoh's house, and the royal
 pavilion spread over them; the houses of the gods of Egypt burned and the pillars of Beth-shemesh broken (no one drawn); then

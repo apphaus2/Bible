@@ -1,4 +1,4 @@
-"""2 Kings volume, Chapter 5 — Jehu (2 Kings 9–10). Every verse, word for word from ref/asv.
+"""2 Kings volume, Chapter 5 — Jehu (2 Kings 9–10). Every verse, word for word from ref/eng-asv.
 The young prophet's vial of oil in an inner chamber — I have anointed thee king; this mad fellow; garments on the top of
 the stairs — Jehu is king; the watchman in Jezreel — is it peace?; the driving is like the driving of Jehu, for he driveth
 furiously; the portion of Naboth (9:24–27 words over the two chariots in the field); Jezebel at the window — is it peace,

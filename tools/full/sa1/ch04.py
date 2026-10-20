@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 4 — Saul Anointed (1 Samuel 9–10). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 4 — Saul Anointed (1 Samuel 9–10). Every verse, word for word from ref/eng-asv.
 Kish's lost asses and Saul, higher than any of the people; the servant's quarter shekel and the seer; Jehovah's word to
 Samuel a day before; the thigh reserved; the vial of oil (the digest's anointing panels); the three signs and the band of
 prophets — Is Saul also among the prophets?; the lot at Mizpah and Saul hid among the baggage; Long live the king."""

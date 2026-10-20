@@ -1,5 +1,5 @@
 """Joshua volume, Chapter 10 — Choose You This Day (Joshua 23–24), the last chapter of Joshua. Every verse, word for word
-from ref/asv. Joshua old and well stricken in years: one man of you shall chase a thousand; I am going the way of all the
+from ref/eng-asv. Joshua old and well stricken in years: one man of you shall chase a thousand; I am going the way of all the
 earth. At Shechem: Thus saith Jehovah — the fathers beyond the River, Egypt and the sea, Balaam, Jericho, the hornet, a land
 whereon thou hadst not labored (Jehovah's words in Voice boxes over a journey map and the old drawings); choose you this day
 whom ye will serve; the people's answer, the great stone under the oak; and the deaths of Joshua and Eleazar and the bones

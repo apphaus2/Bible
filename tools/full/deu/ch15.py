@@ -1,5 +1,5 @@
 """Deuteronomy volume, Chapter 15 — The Death of Moses (Deuteronomy 33–34), the last chapter of Deuteronomy. Every verse,
-word for word from ref/asv. The blessing wherewith Moses blessed the children of Israel: Jehovah came from Sinai (song
+word for word from ref/eng-asv. The blessing wherewith Moses blessed the children of Israel: Jehovah came from Sinai (song
 boxes over the mount on fire), then the tribes as three pages of cells, one per tribe (as Jacob's blessing in Genesis 49),
 then the everlasting arms; Moses on the top of Pisgah and the land shown him as a map; his death (caption only, over the
 valley over against Beth-peor: no grave is drawn), the thirty days of weeping, Joshua full of the spirit of wisdom, and

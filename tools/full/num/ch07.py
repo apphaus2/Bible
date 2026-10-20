@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 7 — The Twelve Spies (Numbers 13–14). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 7 — The Twelve Spies (Numbers 13–14). Every verse, word for word from ref/eng-asv.
 Lifts the digest's spy pages (the night camp, the grapes of Eshcol, the twelve, Caleb, the frightened spy, the Nephilim,
 the weeping, Joshua and Caleb, the forty years) and adds the names of the twelve, a map of their road, Moses' plea and the
 presumption at Hormah. 14:37 and 14:45 are told over landscape and silhouettes only."""

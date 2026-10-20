@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 7 — The Queen of Sheba (1 Kings 9–10). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 7 — The Queen of Sheba (1 Kings 9–10). Every verse, word for word from ref/eng-asv.
 Jehovah appearing to Solomon the second time — I have hallowed this house; but if ye shall turn away (the Voice box); the
 cities of Cabul; the levy and the cities Solomon built (a technical map); the navy at Ezion-geber and the gold of Ophir. Then
 the queen of Sheba with her very great train — the half was not told me; the almug-trees; the bucklers of beaten gold; the

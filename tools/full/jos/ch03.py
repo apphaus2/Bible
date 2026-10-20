@@ -1,4 +1,4 @@
-"""Joshua volume, Chapter 3 — The Walls of Jericho (Joshua 6–7). Every verse, word for word from ref/asv.
+"""Joshua volume, Chapter 3 — The Walls of Jericho (Joshua 6–7). Every verse, word for word from ref/eng-asv.
 Seven priests with seven trumpets of rams' horns before the ark, six days once about the city and the seventh day seven
 times; the great shout and the wall fallen down flat (6:21 is words over the dust, nothing drawn); Rahab brought out;
 the city burnt. Then Achan and the devoted thing: the flight before Ai, Joshua fallen before the ark, the lot taken tribe

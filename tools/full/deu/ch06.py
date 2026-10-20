@@ -1,5 +1,5 @@
 """Deuteronomy volume, Chapter 6 — The Place of His Name (Deuteronomy 11–12). Every verse, word for word
-from ref/asv. Deuteronomy 11 in speech panels (the rain in its season, the words in your heart, Gerizim and Ebal); then the
+from ref/eng-asv. Deuteronomy 11 in speech panels (the rain in its season, the words in your heart, Gerizim and Ebal); then the
 statutes begin: Deuteronomy 12 as spoken law cells (exo.kit.law_pages, spoken=True; pictograms picked by picto.pick)."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent

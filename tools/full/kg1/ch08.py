@@ -1,4 +1,4 @@
-"""1 Kings volume, Chapter 8 — His Heart Turned Away (1 Kings 11). Every verse, word for word from ref/asv.
+"""1 Kings volume, Chapter 8 — His Heart Turned Away (1 Kings 11). Every verse, word for word from ref/eng-asv.
 Solomon's foreign wives turning away his heart; the high places of Chemosh and Molech on the mount before Jerusalem;
 Jehovah's anger — I will surely rend the kingdom from thee (the Voice box); the adversaries Hadad the Edomite and Rezon of
 Damascus; Jeroboam the son of Nebat; Ahijah's new garment rent in twelve pieces — take thee ten pieces; Jeroboam fled into

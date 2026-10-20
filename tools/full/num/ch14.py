@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 14 — Vows and the War with Midian (Numbers 30–31). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 14 — Vows and the War with Midian (Numbers 30–31). Every verse, word for word from ref/eng-asv.
 The law of vows as law cells; the war with Midian told with restraint — the men going out, cities burning far off, the
 prey coming to the camp; Moses' words to the officers (31:15–18) over his face and the empty plain; the purification; the
 spoil divided (a chart); and the officers' gold."""

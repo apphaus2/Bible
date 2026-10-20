@@ -1,4 +1,4 @@
-"""Daniel volume, Chapter 3 — The Den of Lions (Daniel 5–6). Every verse, word for word from ref/asv.
+"""Daniel volume, Chapter 3 — The Den of Lions (Daniel 5–6). Every verse, word for word from ref/eng-asv.
 Belshazzar's feast to a thousand lords with the vessels of the temple; the fingers of a man's hand writing upon the plaster
 (drawn only as a script of light on the wall, no hand); the king's knees smote one against another; the queen remembers
 Daniel; let thy gifts be to thyself; MENE, TEKEL, PERES as a plate; Daniel clothed with purple; in that night Belshazzar

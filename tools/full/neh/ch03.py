@@ -1,4 +1,4 @@
-"""Nehemiah volume, Chapter 3 — The Work Finished (Nehemiah 5–6). Every verse, word for word from ref/asv.
+"""Nehemiah volume, Chapter 3 — The Work Finished (Nehemiah 5–6). Every verse, word for word from ref/eng-asv.
 A great cry of the people against their brethren — we are mortgaging our fields; Nehemiah contends with the nobles — ye
 exact usury; we will restore them; he shakes out his lap, and all the assembly said, Amen; twelve years without the bread
 of the governor, and the provision of one day as a tally board; then Sanballat and Geshem: come, let us meet in the plain

@@ -1,4 +1,4 @@
-"""2 Samuel volume, Chapter 1 — How Are the Mighty Fallen (2 Samuel 1–2). Every verse, word for word from ref/asv.
+"""2 Samuel volume, Chapter 1 — How Are the Mighty Fallen (2 Samuel 1–2). Every verse, word for word from ref/eng-asv.
 The Amalekite out of Saul's camp with the crown and the bracelet; David rending his clothes; 1:15 words only; the song of the
 bow in song boxes over the digest's mourners and Gilboa; David anointed king over Judah in Hebron; Abner makes Ish-bosheth
 king at Mahanaim; the pool of Gibeon (2:16 words over the field of swords); Asahel light of foot (2:23 words over a spear

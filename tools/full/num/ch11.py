@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 11 — Balaam (Numbers 22–24). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 11 — Balaam (Numbers 22–24). Every verse, word for word from ref/eng-asv.
 Balak and the elders of Moab and Midian; Balaam at Pethor; God's word by night; the ass, the angel of Jehovah and the
 narrow path (the digest's panels); the seven altars on the high places of Baal, on Pisgah and on Peor; and the four
 parables in song boxes over the camp of Israel, ending with the star out of Jacob (the digest's star)."""

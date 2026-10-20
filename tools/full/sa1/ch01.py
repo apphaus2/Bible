@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 1 — Hannah (1 Samuel 1–2). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 1 — Hannah (1 Samuel 1–2). Every verse, word for word from ref/eng-asv.
 Elkanah's two wives and the yearly sacrifice at Shiloh; Hannah's bitterness of soul and her vow; Eli marks her mouth; Samuel
 born and given — For this child I prayed; Hannah's song in song boxes; the sons of Eli and the flesh-hook; the child Samuel
 in his linen ephod and the little robe; and the man of God's word against the house of Eli (the Voice box)."""

@@ -1,5 +1,5 @@
 """Psalms volume, Chapter 11 — Our Dwelling-place (Psalms 90–100), the opening of Book IV. Every verse, word for word from
-ref/asv. The prayer of Moses the man of God (his face from Deuteronomy): before the mountains were brought forth — a
+ref/eng-asv. The prayer of Moses the man of God (his face from Deuteronomy): before the mountains were brought forth — a
 thousand years as yesterday, man as the grass; he that dwelleth in the secret place of the Most High — the snare of the
 fowler, the terror by night, the angels' hands (God's answer in the Voice box); the palm-tree and the cedar; the floods
 have lifted up their voice; the God to whom vengeance belongeth; oh come, let us sing — to-day, oh that ye would hear his

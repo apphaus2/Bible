@@ -1,4 +1,4 @@
-"""Numbers volume, Chapter 10 — Meribah and the Serpent of Brass (Numbers 20–21). Every verse, word for word from ref/asv.
+"""Numbers volume, Chapter 10 — Meribah and the Serpent of Brass (Numbers 20–21). Every verse, word for word from ref/eng-asv.
 Miriam's death at Kadesh; the waters of Meribah (the digest's rock panels); Edom's refusal; Aaron on mount Hor (his death a
 caption over the empty summit); Arad and Hormah; the fiery serpents and the serpent of brass (the digest's panels); the
 journeys to Pisgah with the songs of the Arnon, of the well and of Heshbon in song boxes; Sihon and Og."""

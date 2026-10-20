@@ -1,4 +1,4 @@
-"""Joel volume, Chapter 1 — The Day of Jehovah (Joel 1–3), the whole book. Every verse, word for word from ref/asv.
+"""Joel volume, Chapter 1 — The Day of Jehovah (Joel 1–3), the whole book. Every verse, word for word from ref/eng-asv.
 The word of Jehovah to Joel; hear this, ye old men; the palmer-worm, the locust, the canker-worm and the caterpillar (a
 plate); the vine laid waste and the fig-tree barked white; the priests in sackcloth; the trees of the field withered, the
 barns broken down, the beasts groaning, the fire in the pastures; blow ye the trumpet in Zion — a day of darkness, a great

@@ -1,4 +1,4 @@
-"""Psalms volume, Chapter 2 — The Heavens Declare (Psalms 13–22). Every verse, word for word from ref/asv.
+"""Psalms volume, Chapter 2 — The Heavens Declare (Psalms 13–22). Every verse, word for word from ref/eng-asv.
 How long, O Jehovah?; the fool hath said in his heart; who shall dwell in thy holy hill?; the lines fallen in pleasant
 places and the path of life; the shadow of thy wings; David's song in the day of his deliverance (Psalm 18: the cords of
 death, the earth shaking and the storm, the large place, the lamp, the hinds' feet — God never drawn, only storm and

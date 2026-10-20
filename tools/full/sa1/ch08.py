@@ -1,4 +1,4 @@
-"""1 Samuel volume, Chapter 8 — Goliath (1 Samuel 17). Every verse, word for word from ref/asv.
+"""1 Samuel volume, Chapter 8 — Goliath (1 Samuel 17). Every verse, word for word from ref/eng-asv.
 The vale of Elah, the champion of Gath in his brass; forty days; David sent with parched grain and loaves; the living God;
 Eliab's anger; the lion and the bear; Saul's armor put off; five smooth stones; Am I a dog?; In the name of Jehovah of hosts —
 the battle is Jehovah's; the stone in the forehead (the digest's David and Goliath book throughout). Restraint: 17:51 and

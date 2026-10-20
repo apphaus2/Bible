@@ -1,4 +1,4 @@
-"""Genesis volume, Chapter 14 — The Brothers in Egypt (Genesis 42–43). Word for word from ref/asv.
+"""Genesis volume, Chapter 14 — The Brothers in Egypt (Genesis 42–43). Word for word from ref/eng-asv.
 The brothers' retelling to Jacob (42:29–34) is abridged: 42:29–30 and the end of 42:34 in full, 42:31–33 omitted.
 Every other verse is in full. talk() is a dialogue panel used by the later Joseph chapters: a close-up face with a
 caption ("And he said,") and a balloon beside it."""

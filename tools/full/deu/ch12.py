@@ -1,5 +1,5 @@
 """Deuteronomy volume, Chapter 12 — The Blessings and the Curses (Deuteronomy 27–28). Every verse, word for word from
-ref/asv. The great stones written with the law and the altar of unhewn stones on mount Ebal; the tribes on Gerizim and on
+ref/eng-asv. The great stones written with the law and the altar of unhewn stones on mount Ebal; the tribes on Gerizim and on
 Ebal; the twelve curses with all the people's Amen as law cells; then Moses' blessings and curses in speech panels over
 the land — rain and harvest, then drought, the scattering and the city besieged (28:53–57 are words only: nothing of the
 siege's horror is drawn)."""

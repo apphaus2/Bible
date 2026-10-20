@@ -1,4 +1,4 @@
-"""Deuteronomy volume, Chapter 3 — Hear, O Israel (Deuteronomy 5–6). Every verse, word for word from ref/asv.
+"""Deuteronomy volume, Chapter 3 — Hear, O Israel (Deuteronomy 5–6). Every verse, word for word from ref/eng-asv.
 The ten commandments repeated at Horeb (Voice boxes with the kanji numerals 一…十 over the two tables), the people afar
 off, and the Shema: Hear, O Israel, on the door-posts and the gates, and the son's question. Laid out by discourse.pack."""
 import sys, pathlib

@@ -1,4 +1,4 @@
-"""Exodus volume, Chapter 12 — The Glory (Exodus 39–40), the end of Exodus. Every verse, word for word from ref/asv.
+"""Exodus volume, Chapter 12 — The Glory (Exodus 39–40), the end of Exodus. Every verse, word for word from ref/eng-asv.
 The holy garments made (39:1–31) and the rearing up of the tabernacle (40:17–33) are blueprint pages (kit.blueprints);
 the chapter ends on two story pages: the cloud covering the tent and the glory filling it."""
 import sys, pathlib

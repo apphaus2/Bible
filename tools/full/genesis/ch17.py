@@ -1,5 +1,5 @@
 """Genesis volume, Chapter 17 — The Blessing of Jacob (Genesis 48–50), the last chapter of Genesis. Every verse,
-word for word from ref/asv. Jacob's blessing of the twelve (49:3–27) is set as two pages of cells, one per son,
+word for word from ref/eng-asv. Jacob's blessing of the twelve (49:3–27) is set as two pages of cells, one per son,
 each headed with his name (the words are Jacob's, spoken over his sons on his bed)."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
