@@ -836,6 +836,12 @@ Never fall back to blobs or stick figures.
   file too — no more fetch-tool refusals. For the digest, the old source was `https://ebible.org/asv/<BOOK><NN>.htm`.
 - **Don't** quote the NASB, NAB or any other copyrighted translation. If asked for one, offer the ASV or the
   World English Bible (also public domain).
+- **Other languages** (a first test, Genesis only): `ref/rv1909/` (Spanish, Reina-Valera 1909) and `ref/lsg/` (French, Louis Segond
+  1910), both public domain from eBible.org like the ASV. `BIBLE_LANG=es python3 tools/full/build_volume.py genesis` builds the
+  same pages from that text into `volumes/es/genesis/` (`fr` likewise): `asv.py` finds each cut in the ASV verse and maps it onto
+  the translated verse by its share of the letters, preferring a break of the same kind (a speech break lands on the colon
+  before the words spoken), and the credit reads RV1909 or LSG. Titles, stamps, covers and the site are still English, and
+  the translated volumes are not published yet.
 - **Attribution: always "ASV"** — never spelled out, never with the year, on pages, the website, the e-book or the
   docs (see `adr/0001-asv-attribution.md`).
 - Captions carry narration, balloons carry dialogue, God's words always use the Voice box.

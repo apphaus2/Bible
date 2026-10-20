@@ -20,9 +20,12 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / "kit"))
 
 def main(vol, check=False):
+    import asv                                                        # BIBLE_LANG=es builds the Spanish edition (see asv.py)
     pkg = importlib.import_module(vol)
     META, G = pkg.META, pkg.G
-    out = ROOT / "volumes" / META["id"]; pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
+    out = ROOT / "volumes" / (META["id"] if asv.LANG == "en" else f"{asv.LANG}/{META['id']}")
+    pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
+    credit = (lambda h: h) if asv.LANG == "en" else (lambda h: h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"))
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
     chapters = []
@@ -35,7 +38,7 @@ def main(vol, check=False):
     written = set()
     stale_pages = []
     for name, _, fn in order:
-        html_ = fn(); written.add(name)
+        html_ = credit(fn()); written.add(name)
         if check:
             f = pages_dir / name
             if not f.exists() or f.read_text() != html_: stale_pages.append(name)
