@@ -4,13 +4,14 @@ Usage (from the repo root):  python3 tools/site/rebuild_site.py [--thumbs] [--ou
 
 - Every volumes/<id>/ that has a volume.json (pages/ + canvas.json) is passed straight through. (digest/, the old first
   drafts, is not published: it stays in the repo only as a source of drawings that volume pages lift.)
-- The ASV text: _book/bible-asv.pdf and the per-book PDFs in _book/asv/ (tools/book/asv_pdf.py), if built, are copied to the site root and
-  linked from the home page, every chapter page and every page's "ASV" credit.
+- The ASV text: the per-book PDFs in _book/asv/ (tools/book/asv_pdf.py), if built, are copied to the site and linked from the
+  home page, every chapter page and every page's "ASV" credit (the whole-Bible PDF is not published: it is large).
+- The downloads: _book/download/<lang>/ (tools/book/downloads.py: each volume as an EPUB and a reading PDF), if built.
 The output folder (default _site/, which is git-ignored) is cleared except for thumbs/ (a cache), then
 tools/site/build_site.py writes the pages and tools/site/assets/* is copied in. With --thumbs, any thumbnail
 that is missing or whose source page changed (tracked by a hash in thumbs/.sources.json) is rendered with
 Playwright (needs node + the `playwright` package + Pillow); thumbnails no page uses any more are deleted.
-GitHub Actions (.github/workflows/pages.yml) runs exactly this and deploys _site/ to Cloudflare Pages (bible.apphaus.us) and GitHub Pages."""
+GitHub Actions (.github/workflows/pages.yml) runs exactly this and deploys _site/ to Cloudflare (bible.apphaus.us) and GitHub Pages."""
 import hashlib, json, pathlib, shutil, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -26,11 +27,14 @@ def main():
     for d in out.iterdir():
         if d.name == "thumbs": continue
         shutil.rmtree(d) if d.is_dir() else d.unlink()
-    pdf = ROOT / "_book" / "bible-asv.pdf"                 # the ASV text (tools/book/asv_pdf.py); the site links it if present
-    if (ROOT / "_book" / "asv" / "index.json").exists():       # one PDF per book (asv_pdf.py splits them): the reader links these
+    if (ROOT / "_book" / "asv" / "index.json").exists():       # the ASV text, one PDF per book (tools/book/asv_pdf.py)
         shutil.copytree(ROOT / "_book" / "asv", out / "asv")
-    if pdf.exists(): shutil.copy(pdf, out / pdf.name)
-    else: print("no _book/bible-asv.pdf: the site is built without the ASV text links (run tools/book/asv_pdf.py)")
+    else: print("no _book/asv/: the site is built without the ASV text links (run tools/book/asv_pdf.py)")
+    for idx in sorted((ROOT / "_book" / "download").glob("*/index.json")):   # the manga by book (tools/book/downloads.py)
+        dst = out / "download" / idx.parent.name; dst.mkdir(parents=True, exist_ok=True)
+        shutil.copy(idx, dst / "index.json")
+        for v in json.loads(idx.read_text()).values():
+            for f in [v["epub"]["file"], *(x["file"] for x in v["pdf"])]: shutil.copy(idx.parent / f, dst / f)
     subprocess.run([sys.executable, str(SITE / "build_site.py"), str(out), *args], check=True)
     (out / "assets").mkdir(exist_ok=True)
     for f in (SITE / "assets").iterdir():

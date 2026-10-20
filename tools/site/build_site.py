@@ -21,9 +21,7 @@ for key, d in SRC.items():
 VOLUMES.sort(key=lambda v: v.get("order", 0))
 SERIES = VOLUMES
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
-# ── the ASV text as a PDF (tools/book/asv_pdf.py; rebuild_site.py copies it in when it exists) ──
-ASV_PDF = "bible-asv.pdf"
-HAS_PDF = (out / ASV_PDF).exists()
+# ── the ASV text, one PDF per book (tools/book/asv_pdf.py; rebuild_site.py copies asv/ in when it exists) ──
 ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of each book in ref/asv
 for f in sorted((pathlib.Path(__file__).resolve().parents[2] / "ref" / "asv").glob("[0-9][0-9]-*.usfm")):
     m = re.search(r"^\\h (.+?)\s*$", f.read_text(encoding="utf-8"), re.M)
@@ -36,13 +34,12 @@ def asv_where(ref):
         if m: return ASV_CODES[name], m.group(1)
 def asv_href(up, ref=""):
     """Link to the ASV text at the chapter a ref starts in: the book's own PDF (asv/GEN.pdf#page=N, small files like the
-    HistoryX reader's) when the split is on the site, else the whole PDF at its named destination."""
+    HistoryX reader's); with no ref, the list of books on the home page."""
     w = asv_where(ref)
     if w and w[0] in ASV_BOOKS:
         b = ASV_BOOKS[w[0]]; pg = b["chapters"].get(w[1]) or next(iter(b["chapters"].values()))
         return f"{up}{b['file']}#page={pg[0]}"
-    if w: return f"{up}{ASV_PDF}#nameddest={w[0]}.{w[1]}"
-    return up + ASV_PDF
+    return f"{up}index.html#text"
 def asv_button(up, ref=""):
     """The reader's top-right link to the text of the page (📖 p. N: the page of the ASV PDF where its chapter starts)."""
     w = asv_where(ref)
@@ -51,8 +48,24 @@ def asv_button(up, ref=""):
     return f'<a class="btn asv" href="{asv_href(up, ref)}" title="{esc(b["title"])} {w[1]} in the ASV (PDF)">📖 p. {pg[1]}</a>'
 def asv_credit(up, ref=""):
     """The "ASV" credit of every footer, linked to the text when the PDF is on the site."""
-    if not HAS_PDF and not ASV_BOOKS: return "<span>ASV</span>"
+    if not ASV_BOOKS: return "<span>ASV</span>"
     return f'<a href="{asv_href(up, ref)}" title="Read {esc(ref) + " " if ref else ""}in the ASV (PDF)">ASV</a>'
+
+# ── the manga by book: EPUB and reading PDF (tools/book/downloads.py; rebuild_site.py copies download/<lang>/ in) ──
+LANG = "en"
+HOME = "https://bible.apphaus.us/"
+DOWNLOADS = json.loads((out / "download" / LANG / "index.json").read_text()) if (out / "download" / LANG / "index.json").exists() else {}
+def mb(n): return f"{n / 1e6:.1f} MB" if n < 1e7 else f"{n / 1e6:.0f} MB"
+def downloads(up, S, cls="cta alt"):
+    """Download buttons for a volume: the EPUB, then the PDF (or its parts, each named by its chapters)."""
+    d = DOWNLOADS.get(S["id"])
+    if not d: return ""
+    base = f"{HOME}download/{LANG}/"         # absolute: the GitHub Pages mirror does not carry the files (its 1 GB limit)
+    out_ = [f'<a class="{cls}" href="{base}{d["epub"]["file"]}" download title="{esc(S["name"])} as an EPUB ({mb(d["epub"]["size"])})">EPUB · {mb(d["epub"]["size"])}</a>']
+    for x in d["pdf"]:
+        name = "PDF" if len(d["pdf"]) == 1 else f'PDF · {esc(x["range"])}'
+        out_.append(f'<a class="{cls}" href="{base}{x["file"]}" download title="{esc(x["range"])}, {x["pages"]} pages ({mb(x["size"])})">{name} · {mb(x["size"])}</a>')
+    return f'<p class="dl"><span class="dl-h">Download {esc(S["name"])}</span>{"".join(out_)}</p>'
 
 def slug(t):
     t = re.sub(r"^(B\d+ · )?\d+ · ", "", t)
@@ -149,7 +162,7 @@ for ed, chain in FLAT.items():
 ''')
     cards = "\n".join(f'''<li><a class="card" href="{p['slug']}.html"><img src="../../thumbs/{thumb(b, p)}" alt="{esc(p['heading'])}" width="380" height="540" loading="lazy"><span class="num">{esc(p['num'])}</span><span class="h">{esc(p['heading'])}</span><span class="ref">{esc(p['ref'])}</span></a></li>''' for p in P)
     note = ""
-    text = f'<a class="cta alt" href="{asv_href("../../", b["range"])}">{esc(b["range"])} in the ASV ›</a>' if HAS_PDF else ""
+    text = f'<a class="cta alt" href="{asv_href("../../", b["range"])}">{esc(b["range"])} in the ASV ›</a>' if ASV_BOOKS else ""
     (d / "index.html").write_text(f'''<!doctype html>
 <html lang="en">
 <head>
@@ -169,6 +182,7 @@ for ed, chain in FLAT.items():
     <h1>{esc(b['name'])}</h1>
     <p class="lede">{esc(b['blurb'])}</p>{note}
     <a class="cta" href="{P[0]['slug']}.html">Start reading ›</a>{text}
+    {downloads("../../", S)}
   </section>
   <h2 class="sec">Pages</h2>
   <ol class="grid">
@@ -191,17 +205,17 @@ def toc_entry(b):
 def section(S, cls):
     return f'''  <h3 class="{cls}" id="{S['path']}">{S['name']} <span lang="ja">{S['kanji']}</span></h3>
   <p class="lede">{esc(S['lede'])}</p>
+  {downloads("", S)}
   <ol class="grid books">
 {chr(10).join(book_card(b) for b in S['books'])}
   </ol>'''
 full_secs = "\n".join(section(S, "sec") for S in VOLUMES)
 first = FLAT["full"][0]
-home_text_cta = f'<a class="cta alt" href="{ASV_PDF}">The whole Bible · PDF ›</a>' if HAS_PDF else ""
-text_sec = "" if not HAS_PDF else f'''  <h2 class="sec" id="text">The Text</h2>
-  <p class="lede">The manga quotes the ASV word for word. Here is the whole text, Genesis to Revelation, as one PDF
-  ({(out / ASV_PDF).stat().st_size / 1e6:.0f} MB): two columns, a bookmark for every book and chapter, and a contents page that links them all.
-  The ASV credit at the foot of every manga page opens it at that page's chapter.</p>
-  <a class="cta alt" href="{ASV_PDF}">Read the ASV · PDF ›</a>
+home_text_cta = '<a class="cta alt" href="#text">The ASV text ›</a>' if ASV_BOOKS else ""
+text_sec = "" if not ASV_BOOKS else f'''  <h2 class="sec" id="text">The Text</h2>
+  <p class="lede">The manga quotes the ASV word for word. Here is the whole text, Genesis to Revelation, one PDF per book: two
+  columns, a bookmark for every chapter. The ASV credit at the foot of every manga page opens its book at that page's chapter.</p>
+  <ol class="asv-books">{"".join(f'<li><a href="{b["file"]}">{esc(b["title"])}</a></li>' for b in ASV_BOOKS.values())}</ol>
 '''
 vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
 (out / "index.html").write_text(f'''<!doctype html>
@@ -235,8 +249,10 @@ vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
 </body>
 </html>
 ''')
-if HAS_PDF: manifest["text"] = {"title": "The Holy Bible · ASV", "url": ASV_PDF, "chapter_url": ASV_PDF + "#nameddest=<BOOK>.<chapter>"}
-if ASV_BOOKS: manifest.setdefault("text", {})["books"] = {c: {"title": b["title"], "url": b["file"]} for c, b in ASV_BOOKS.items()}
+if ASV_BOOKS: manifest["text"] = {"title": "The Holy Bible · ASV", "books": {c: {"title": b["title"], "url": b["file"]} for c, b in ASV_BOOKS.items()}}
+if DOWNLOADS: manifest["downloads"] = {LANG: {v: {"epub": f"{HOME}download/{LANG}/{d['epub']['file']}",
+                                                 "pdf": [{"url": f"{HOME}download/{LANG}/{x['file']}", "range": x["range"]} for x in d["pdf"]]}
+                                             for v, d in DOWNLOADS.items()}}
 (out / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
 (out / ".nojekyll").write_text("")
 print("built", sum(len(b["pages"]) for e in FLAT.values() for b in e), "pages")

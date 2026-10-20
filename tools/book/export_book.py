@@ -129,14 +129,14 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
         files["images/cover.jpg"] = cover_jpg.read_bytes()
         items.append('<item id="cover-image" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image"/>')
     opf = f'''<?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="en" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="{meta.get("lang", "en")}" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <dc:identifier id="bookid">{book_id}</dc:identifier>
 <dc:title>{html.escape(title)}</dc:title>
-<dc:language>en</dc:language>
+<dc:language>{meta.get("lang", "en")}</dc:language>
 <dc:creator>Sky Morey</dc:creator>
 <dc:description>{html.escape(meta["lede"])}</dc:description>
-<dc:rights>Scripture text: ASV, public domain.</dc:rights>
+<dc:rights>Scripture text: {meta.get("translation", "ASV")}, public domain.</dc:rights>
 <meta property="dcterms:modified">{now}</meta>
 <meta property="rendition:layout">pre-paginated</meta>
 <meta property="rendition:orientation">portrait</meta>
@@ -189,6 +189,52 @@ def print_html(pages, fonts, fontdir):
            f".pg {{ position: absolute; width: {W}px; height: {H}px; transform-origin: 0 0; }}\n")
     return f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><style>{css}</style></head><body>\n' + "\n".join(sheets) + "\n</body></html>\n"
 
+def screen_html(pages, fonts, fontdir):
+    """The reading PDF: every page at its own 760×1080 size, no bleed (for screens; the print PDF is print_html)."""
+    sheets = [f'<section class="sheet">{prefix_ids(p["root"], f"s{p["i"]}_")}</section>' for p in pages]
+    css = (font_css(fonts, fontdir.as_uri() + "/") +
+           f"@page {{ size: {W}px {H}px; margin: 0; }}\n"
+           "html, body { margin: 0; padding: 0; }\n"
+           f".sheet {{ position: relative; width: {W}px; height: {H}px; overflow: hidden; background: #F3EFE6; break-after: page; }}\n")
+    return f'<!doctype html>\n<html><head><meta charset="utf-8"><style>{css}</style></head><body>\n' + "\n".join(sheets) + "\n</body></html>\n"
+
+LIMIT = 24 * 1024 * 1024                     # Cloudflare serves no single file over 25 MiB: bigger books are split into parts
+
+def screen_pdfs(vol, meta, pages, fonts, out, work):
+    """<vol>.pdf, or <vol>-1.pdf, <vol>-2.pdf … split at chapter boundaries when one file would pass LIMIT.
+    Returns [{"file", "size", "range", "pages"}], one per file."""
+    chaps = meta["books"]
+    groups = [[c] for c in chaps]
+    def pages_of(group):
+        first = group[0] is chaps[0]
+        return [p for p in pages if p["chapter"] in group or (first and p["chapter"] is None)]
+    def render(group, fn):
+        (work / "screen.html").write_text(screen_html(pages_of(group), fonts, out / "fonts"), encoding="utf-8")
+        node("pdf", work / "screen.html", out / fn)
+        return (out / fn).stat().st_size
+    size = render(chaps, f"{vol}.pdf")
+    if size <= LIMIT:
+        parts = [(chaps, f"{vol}.pdf", size)]
+    else:
+        (out / f"{vol}.pdf").unlink()
+        k = -(-size * 11 // 10 // LIMIT)               # parts needed, with 10% to spare
+        while True:
+            per = -(-len(pages) // k); parts, cur = [], []
+            for c in chaps:                            # fill each part with whole chapters up to ~len/k pages
+                cur.append(c)
+                if len(pages_of(cur)) >= per and len(parts) < k - 1: parts.append(cur); cur = []
+            if cur: parts.append(cur)
+            done = [(g, f"{vol}-{i + 1}.pdf", render(g, f"{vol}-{i + 1}.pdf")) for i, g in enumerate(parts)]
+            if all(s <= LIMIT for _, _, s in done): parts = done; break
+            for _, fn, _ in done: (out / fn).unlink()
+            k += 1
+    def rng(g):                                  # "Genesis 1–27": whole Bible chapters, even when a manga chapter ends mid-chapter
+        a, b = g[0]["range"], g[-1]["range"]
+        if a == b: return a
+        start, end = a.rsplit(' ', 1)[1].split('–')[0], b.rsplit(' ', 1)[1].split('–')[-1]
+        return f"{a.rsplit(' ', 1)[0]} {start.split(':')[0]}–{end.split(':')[0]}"
+    return [{"file": fn, "size": s, "range": rng(g), "pages": len(pages_of(g))} for g, fn, s in parts]
+
 def node(*args):
     subprocess.run(["node", str(HERE / "render.js"), *map(str, args)], check=True)
 
@@ -197,6 +243,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("volume"); ap.add_argument("--out", default="_book"); ap.add_argument("--no-fonts", action="store_true")
     g = ap.add_mutually_exclusive_group(); g.add_argument("--epub-only", action="store_true"); g.add_argument("--pdf-only", action="store_true")
+    ap.add_argument("--screen", action="store_true", help="the reading PDF(s) at page size, split under 24 MB, instead of the print PDF")
     a = ap.parse_args()
     out = (ROOT / a.out).resolve(); out.mkdir(parents=True, exist_ok=True)
     meta, pages = load_volume(a.volume)
@@ -204,7 +251,11 @@ def main():
     fonts = [] if a.no_fonts else fetch_fonts(pages, out)
     if not fonts: print("  (no fonts embedded: readers and printers will substitute their own)")
     work = out / "work"; work.mkdir(exist_ok=True)
-    if not a.epub_only:
+    if a.screen and not a.epub_only:
+        parts = screen_pdfs(a.volume, meta, pages, fonts, out, work)
+        (out / f"{a.volume}.pdfs.json").write_text(json.dumps(parts))
+        for x in parts: print(f"  {x['file']}  ({x['size'] // 1024} KB, {x['pages']} pages, {x['range']})")
+    elif not a.epub_only:
         (work / "print.html").write_text(print_html(pages, fonts, out / "fonts"), encoding="utf-8")
         pdf = out / f"{a.volume}-print.pdf"
         node("pdf", work / "print.html", pdf)

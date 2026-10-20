@@ -867,11 +867,16 @@ relative, so the site works at the domain root and at apphaus2.github.io/Bible/ 
   (`asv/2SA.pdf#page=18`; N is the printed page of the whole Bible). `asv/index.json` (chapter → page in the book file and in
   the whole PDF) is written by `asv_pdf.py` (`--split-only` redoes it from an existing `bible-asv.pdf`); the footer "ASV" credit
   opens the same place.
-- `bible-asv.pdf`: the whole ASV text (see Book export). The workflow builds it with `tools/book/asv_pdf.py` and caches
-  it (key: `ref/asv`, `asv_pdf.py`, `render.js`); `rebuild_site.py` copies `_book/bible-asv.pdf` in when it exists, and
-  only then does `build_site.py` link it: a "Whole Bible · PDF" button and a "The Text" section on the home page, a
-  "<range> in the ASV" button on every chapter/book page, and the "ASV" credit in every footer, which opens the PDF at
-  that page's chapter (`#nameddest=GEN.24`, from the page's verse ref).
+- The whole-Bible ASV PDF is not published (it is large): the workflow still builds `_book/bible-asv.pdf` with
+  `tools/book/asv_pdf.py` (cached on `ref/asv`, `asv_pdf.py`, `render.js`) only to split it into `asv/<BOOK>.pdf`. The home page's
+  "The Text" section lists the 66 book PDFs; every chapter page has a "<range> in the ASV" button and every footer's "ASV" credit
+  opens its book's PDF at that page's chapter.
+- `download/<lang>/` (only `en` so far): the manga by book, from `tools/book/downloads.py` — `<vol>.epub` (fixed layout) and
+  `<vol>.pdf`, the reading PDF at page size (no bleed), split at chapter boundaries into `<vol>-1.pdf`, `<vol>-2.pdf` … when a
+  file would pass 24 MB (Cloudflare serves nothing over 25 MiB; Genesis is two parts, Psalms just fits). `index.json` lists them;
+  `.sources.json` hashes each volume so only changed books are rebuilt (the workflow caches `_book/download`). Every volume
+  section on the home page and every chapter page has "Download <Book>" buttons. The links are absolute
+  (`https://bible.apphaus.us/download/...`) because the GitHub Pages mirror leaves the files out (its 1 GB site limit).
 - `manifest.json`: every series/volume, book/chapter and page (title, verse ref, URL, thumbnail, source), plus `text`
   (the PDF's URL).
 - `thumbs/`: 380×540 JPGs — `vol-<volume>-chapter-NN-<slug>.jpg`.
@@ -888,7 +893,7 @@ volume's sources, or the workflow's `--check` step fails the deploy.
 ## Book export (e-reader and print)
 
 `python3 tools/book/export_book.py genesis` writes `_book/genesis.epub` and `_book/genesis-print.pdf` from the same
-pages the website uses. It needs Node + Playwright, like `shots.js`.
+pages the website uses (`--screen` writes the reading PDF the website offers instead of the print PDF). It needs Node + Playwright, like `shots.js`.
 - **EPUB:** fixed-layout EPUB 3 (the comics standard), one XHTML page per manga page with vector art and live text,
   a cover image, contents by chapter and a page list with the printed numbers. Pages are converted to XHTML
   (SVG namespaces, `xlink:href`, `data-label=""`, `<br/>`), and each one is checked for well-formedness.

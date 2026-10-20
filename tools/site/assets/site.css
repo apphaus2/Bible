@@ -57,3 +57,9 @@ body.reader{background:var(--night)}
 @media (max-width:600px){.bar{font-size:11px}.btn{padding:0 12px}}
 .sec.small{font-size:22px;margin-top:28px;color:var(--muted)}
 .note{max-width:640px;margin:0 0 18px;padding:10px 14px;border:2px solid var(--ink);background:#E8E2D6;font-size:12px;line-height:1.6}
+.dl{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:16px 0 8px}
+.dl .cta{min-height:40px;padding:0 16px;font-size:12px;letter-spacing:.1em}
+.dl .cta+.cta{margin:0}
+.dl-h{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-right:4px}
+.asv-books{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px 18px;font-size:14px}
+.asv-books a{color:inherit}
