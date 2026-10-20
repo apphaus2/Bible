@@ -192,10 +192,14 @@ lying LIE_BODY + LIE_ARM (never rotate a standing figure). Close-ups: shaded pro
 finds each cut in the ASV verse and maps it onto the translated verse by its share of the letters, preferring a break of the same
 kind (a speech break lands on the colon before the words spoken; cuts of one verse chain end to start); the credit reads RV1909/LSG.
 Only Genesis has been tried (es, fr: every block found, same coverage as English); not committed or published yet.
-To do: translate the labels (chapter titles, stamps, covers, blurbs, site text — not scripture, so Claude writes them); publish
-each language under `/<lang>/` with a **language dropdown in the site's top bar** (each language named in itself; it opens the
-same page in that language when it exists, else that language's home); downloads under `download/<lang>/`; ASV links become
-that translation's book PDFs.
+Decided, to build: translate the labels (chapter titles, stamps, covers, blurbs, site text — not scripture, so Claude writes them);
+publish each language under `/<lang>/` with a **language dropdown in the site's top bar** (each language named in itself; it opens
+the same page in that language when it exists, else that language's home); **each language gets its own thumbnails** (rendered
+from its own pages) and **its own Worker** (`bible-es`, `bible-fr` …, each with its own 100,000-file limit; a language is ~18,000
+files once the Bible is done): the `bible` Worker answers bible.apphaus.us and hands `/<lang>/…` to that language's Worker through a
+service binding. Downloads under `download/<lang>/`; ASV links become that translation's book PDFs. Target order: Spanish, then
+Portuguese, French, German, Italian (Latin script, same verse numbering), then Chinese; Japanese, Russian and Korean need fonts or
+verse maps; right-to-left and unspaced scripts later.
 
 ## Website
 
