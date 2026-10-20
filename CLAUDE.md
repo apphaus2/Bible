@@ -360,7 +360,9 @@ Nehemiah is `tools/full/neh/` (7 chapters, plan in `neh/__init__.py`; `neh.art` 
 above roll cells on every page of a list chapter). Nehemiah: black beard, slate-blue headcloth with a gold cord, greying in ch. 13; Ezra
 (in Ezra and Nehemiah): white beard, indigo headcloth with a gold band. Esther is `tools/full/est/` (4 chapters, plan in `est/__init__.py`; every drawing new in
 `est/art.py`: the palace of Shushan `hall()`, `kings_gate()` with winged bulls, the sceptre scene `inner_court(stage=)`, `empire_map`,
-`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Ezekiel and Obadiah–Malachi, and Matthew–Acts, are being built in parallel worktrees (packages `ezk`, `oba` … `mal`, `mat`, `mrk`, `luk`, `jhn`, `act`) from one brief, each merged when done. 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
+`pur_wheel`, `adar_days`; `est.common.crowned(tok)` puts a Persian crown on any face; no Voice box, the book never names God). Unfinished books wait on branches, each to be finished and merged: `wip/ezekiel` (`ezk`, through ch. 16, the last commit
+unchecked), `wip/obadiah-malachi` (`oba` … `mal`, stopped in Zechariah), and `wip/matthew`, `wip/mark`, `wip/luke`, `wip/john`, `wip/acts`
+(first drafts of each package; only Mark has a chapter). 2 Chronicles is `tools/full/chr2/` (fourteen chapters,
 plan and restraint notes in `chr2/__init__.py`): Solomon's house reuses 1 Kings' blueprints, the kings of Judah 1–2 Kings' faces
 and drawings (`chr2.common` takes the cast from `kg2.common`; `chr2.art` carries `chr1.art`, `kg2.art`, `kg1.art`), with new
 battle maps (`battle_map`, `zerah_map`, `tekoa_map`, `posts_map`) and plans (`judah_forts`, `stopped_springs`, `outer_wall`). 1 Chronicles is `tools/full/chr1/` (a module
@@ -928,6 +930,6 @@ original viewBox and is cropped (`slice`) to the new panel, so give it a row of 
 
 ## Roadmap
 
-- On through the Bible, book by book (Ezekiel through Malachi in progress; then the New Testament).
+- On through the Bible, book by book (Ezekiel and Obadiah–Malachi half done on `wip/` branches; then the New Testament).
 - `mk.person(..., up=…)` needs `"ManUp"`/`"WomanUp"` in that panel's `defs()`, or the figure renders headless.
 - Possible option: right-to-left reading order.
