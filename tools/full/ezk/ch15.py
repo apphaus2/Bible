@@ -23,7 +23,7 @@ v, sp = G.v, G.span
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
 BP = "#0B1A2E"
-VP = lambda *hi, **k: (BP, lambda w, h: K.vision_plan(w, h, hi=hi, **k))
+VP = lambda *hi, **k: (BP, lambda w, h: K.vision_plan(w, h, hi=hi, **k), 470)
 OV = {"40:4": (("c", None), ("s", "Son of man,")), "40:45": (("c", None), ("s", "This chamber")), "40:46": "s",
       "41:4": (("c", None), ("s", "This is the most holy place.")), "41:22": (("c", None), ("s", "This is the table")),
       "42:13": (("c", None), ("s", "The north chambers")), "42:14": "s"}
@@ -37,7 +37,7 @@ def title(n):
 
 
 SEGS = run(40, 1, 49, arts={1: ("#1A2A5A", lambda w, h: K.high_mountain("hm15", w, h, 1501)), 3: ("#3A4A7A", lambda w, h: K.at_gate("ag15", w, h, 1502)),
-                            5: (BP, lambda w, h: K.reed_plate(w, h)), 6: (BP, lambda w, h: K.gate_plan(w, h)), 11: (BP, lambda w, h: K.gate_plan(w, h)),
+                            5: (BP, lambda w, h: K.reed_plate(w, h)), 6: (BP, lambda w, h: K.gate_plan(w, h), 420), 11: (BP, lambda w, h: K.gate_plan(w, h), 420),
                             14: VP("east_gate"), 17: VP("pavement"), 20: VP("north_gate"), 23: VP("inner_north", "inner_east"), 24: VP("south_gate"),
                             28: VP("inner_south"), 30: (BP, lambda w, h: K.gate_plan(w, h, outer=False)), 32: VP("inner_east"), 35: VP("inner_north"),
                             38: (BP, lambda w, h: K.tables_plate(w, h)), 42: (BP, lambda w, h: K.tables_plate(w, h)), 44: VP("inner_north", "inner_south", "inner_east"),
@@ -46,7 +46,7 @@ SEGS = run(40, 1, 49, arts={1: ("#1A2A5A", lambda w, h: K.high_mountain("hm15", 
            heads={1: "In the Visions of God", 3: "A Man like Brass", 5: "The Measuring Reed", 6: "The Gate toward the East", 17: "The Outer Court",
                   20: "The North Gate", 24: "The South Gate", 28: "The Inner Court", 38: "The Tables of Hewn Stone", 44: "The Chambers of the Priests",
                   47: "The Altar Before the House"})
-SEGS += run(41, 1, 26, arts={1: (BP, lambda w, h: K.house_plan(w, h, hi=("temple",))), 3: (BP, lambda w, h: K.house_plan(w, h, hi=("holy",))),
+SEGS += run(41, 1, 26, arts={1: (BP, lambda w, h: K.house_plan(w, h, hi=("temple",)), 430), 3: (BP, lambda w, h: K.house_plan(w, h, hi=("holy",))),
                              5: (BP, lambda w, h: K.house_plan(w, h, hi=("chambers",))), 7: (BP, lambda w, h: K.chambers_elev(w, h)), 9: (BP, lambda w, h: K.house_plan(w, h, hi=("chambers",))),
                              12: VP("building", "separate"), 13: VP("house", "separate", "building"), 16: (BP, lambda w, h: K.chambers_elev(w, h)),
                              18: (BP, lambda w, h: K.carvings(w, h)), 22: (BP, lambda w, h: K.wood_altar(w, h)), 23: (BP, lambda w, h: K.doors_elev(w, h))},

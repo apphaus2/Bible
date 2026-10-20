@@ -146,6 +146,7 @@ def run(c, a, b, arts=(), faces=None, head=None, stamp=None, budget=480, pat="AF
         elif arts and (pat[i % len(pat)] == "A" or not faces):
             art = arts[ai % len(arts)]; ai += 1
         if art:
+            if len(art) > 2: kw["h"] = art[2]                          # (bg, f, h): a fixed panel height for a plate
             segs.append(dz(refs, art[1], art[0], kind=kind, ov=ov, **kw)); last_face = False
         else:
             tok, bg = faces[fi % len(faces)]; fi += 1
