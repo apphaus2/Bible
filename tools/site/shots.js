@@ -2,6 +2,7 @@
 // Usage: node tools/site/shots.js <out_dir> page.dc.html …   (one browser for the whole batch)
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
 (async () => {
   const [,, outdir, ...srcs] = process.argv;
   fs.mkdirSync(outdir, { recursive: true });
@@ -12,8 +13,8 @@ const fs = require('fs');
     await p.setContent(html, { waitUntil: 'load' });
     try { await p.evaluate(() => document.fonts.ready); } catch (e) {}
     await p.waitForTimeout(150);
-    const name = src.split('/').pop().replace('.dc.html', '.png');
-    await p.screenshot({ path: outdir + '/' + name });
+    const name = path.basename(src).replace('.dc.html', '.png');
+    await p.screenshot({ path: path.join(outdir, name) });
   }
   await b.close();
 })();

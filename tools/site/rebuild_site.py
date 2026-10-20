@@ -52,10 +52,13 @@ def main():
             todo.setdefault(key, []).append((src, dst, h, pg["thumb"]))
         for key, items in todo.items():             # one browser per source folder (file names repeat across folders)
             pngs = tmp / "png" / key
-            subprocess.run(["node", str(SITE / "shots.js"), str(pngs), *[str(s) for s, _, _, _ in items]], check=True)
-            for src, dst, h, t in items:
-                Image.open(pngs / src.name.replace(".dc.html", ".png")).convert("RGB").resize((380, 540), Image.LANCZOS).save(dst, quality=85)
-                state[t] = h
+            for i in range(0, len(items), 150):     # batches: Windows caps a command line at 32,767 characters
+                batch = items[i:i + 150]
+                subprocess.run(["node", str(SITE / "shots.js"), str(pngs), *[str(s) for s, _, _, _ in batch]], check=True)
+                for src, dst, h, t in batch:
+                    Image.open(pngs / src.name.replace(".dc.html", ".png")).convert("RGB").resize((380, 540), Image.LANCZOS).save(dst, quality=85)
+                    state[t] = h
+                state_f.write_text(json.dumps({k: v for k, v in sorted(state.items()) if k in wanted}, indent=0))
             print(f"rendered {len(items)} thumbnails from {key}")
         state_f.write_text(json.dumps({k: v for k, v in sorted(state.items()) if k in wanted}, indent=0))
     for t in (out / "thumbs").glob("*.jpg"):
