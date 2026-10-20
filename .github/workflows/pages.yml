@@ -1,5 +1,5 @@
 # Build the Bible Manga website from volumes/ and deploy it twice: to GitHub Pages (apphaus2.github.io/Bible) and to
-# Cloudflare Pages, which serves bible.apphaus.us (tools/site/cloudflare.sh creates the project, domain and DNS record).
+# Cloudflare as the Worker "bible" (wrangler.jsonc: static assets from _site/, custom domain bible.apphaus.us).
 # Repo settings needed once: Settings › Pages › Source: "GitHub Actions" (no custom domain there), and the Actions
 # secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID; without them the Cloudflare step is skipped.
 name: Build and deploy site
@@ -32,7 +32,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install Pillow, pypdf and Playwright (Chromium)
         run: |
@@ -69,12 +69,12 @@ jobs:
       - name: Build the site
         run: python3 tools/site/rebuild_site.py --thumbs --out _site
 
-      - name: Deploy to Cloudflare Pages (bible.apphaus.us)
+      - name: Deploy to Cloudflare (bible.apphaus.us)
         if: env.CLOUDFLARE_API_TOKEN != ''
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: bash tools/site/cloudflare.sh
+        run: npx --yes wrangler@4 deploy
 
       - uses: actions/configure-pages@v5
 

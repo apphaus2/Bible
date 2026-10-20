@@ -1,0 +1,10 @@
+// The website as a Cloudflare Worker serving static assets, like the other apphaus.us apps: `npx wrangler deploy`
+// uploads _site/ (built by tools/site/rebuild_site.py) and serves it at https://bible.apphaus.us.
+{
+  "name": "bible",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./_site" },
+  "routes": [{ "pattern": "bible.apphaus.us", "custom_domain": true }],
+  "workers_dev": false,
+  "observability": { "enabled": true }
+}

@@ -844,14 +844,13 @@ Never fall back to blobs or stick figures.
 A static site built from `volumes/`, served at https://bible.apphaus.us. Nothing generated is committed: on every push to `master`,
 `.github/workflows/pages.yml` checks each volume (`build_volume.py <vol> --check`), runs
 `rebuild_site.py --thumbs --out _site` (Python + Pillow, Node + Playwright Chromium) and deploys `_site/`
-twice: to GitHub Pages (https://apphaus2.github.io/Bible/) and, with `tools/site/cloudflare.sh`, to the Cloudflare
-Pages project `bible`, which serves https://bible.apphaus.us. Thumbnails are cached between runs (actions/cache on `_site/thumbs`), so a
-push only re-renders pages whose source changed; a cold build of all ~190 thumbnails takes about 2 minutes.
-One-time settings: repo Settings › Pages › Source: **GitHub Actions** (leave its custom domain empty: the domain belongs
-to Cloudflare), and two Actions secrets, `CLOUDFLARE_API_TOKEN` (permissions: Account › Cloudflare Pages › Edit; Zone ›
-DNS › Edit and Zone › Zone › Read on apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`. Without the secrets the Cloudflare step is
-skipped. `cloudflare.sh` is idempotent: the first run creates the Pages project, attaches bible.apphaus.us and adds the
-proxied CNAME `bible` → the project's pages.dev name in the apphaus.us zone; later runs only upload. All links are
+twice: to GitHub Pages (https://apphaus2.github.io/Bible/) and, with `npx wrangler@4 deploy`, to Cloudflare as the Worker
+`bible` (`wrangler.jsonc`: static assets from `_site/`, custom domain bible.apphaus.us; Cloudflare adds the DNS record), like the
+other apphaus.us apps. Thumbnails are cached between runs (actions/cache on `_site/thumbs`), so a push only re-renders pages whose
+source changed. One-time settings: repo Settings › Pages › Source: **GitHub Actions** (leave its custom domain empty: the domain
+belongs to Cloudflare), and two Actions secrets, `CLOUDFLARE_API_TOKEN` (the "Edit Cloudflare Workers" token template, with
+apphaus.us as its zone) and `CLOUDFLARE_ACCOUNT_ID`; without them the Cloudflare step is skipped. By hand from Windows (Node 22+):
+`npx wrangler login` once, build `_site/` with `rebuild_site.py --thumbs`, then `npx wrangler deploy`. All links are
 relative, so the site works at the domain root and at apphaus2.github.io/Bible/ alike. Runs: the repo's Actions tab (or "Run workflow" by hand).
 
 - `index.html`: "The Books" (one section per volume, a card per chapter), "The Text", then a table of contents.
