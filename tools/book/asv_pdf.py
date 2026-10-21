@@ -85,6 +85,7 @@ BLOCK = {"p": "p", "m": "m", "nb": "m", "pi1": "pi", "q1": "q1", "q2": "q2", "q3
 def book_html(code, path):
     """One book as HTML, plus [(chapter, anchor)] for the contents and a short name for the running head."""
     s = path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    if langs.get(LANG).get("drop"): s = re.sub(r"[ \t]*" + langs.get(LANG)["drop"], "", s)   # notes the file keeps in its verses
     notes = []
     def stash(m):
         notes.append(note_html(m.group(1))); return f"\\fn{len(notes) - 1} "
