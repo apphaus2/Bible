@@ -8,7 +8,15 @@ book code (`02-GENspaRV1909.usfm` is `spaRV1909`). The zip is `https://ebible.or
 |---|---|---|
 | `eng-asv/` | American Standard Version (1901), English | the manga: every word is cut from it (`tools/full/asv.py`) |
 | `spaRV1909/` | Reina-Valera 1909, Spanish | `BIBLE_LANG=es` builds |
+| `spablm/` | Biblia Libre para el Mundo, Spanish | the verses `spaRV1909`'s file lost |
 | `fraLSG/` | Louis Segond 1910, French | `BIBLE_LANG=fr` builds |
+| `deu1912/` | Luther 1912, German | `BIBLE_LANG=de` builds |
+| `deuelo/` | Unrevised Elberfelder, German | the verses `deu1912`'s file lost |
+| `ita1927/` | Riveduta 1927, Italian | `BIBLE_LANG=it` builds |
+| `russyn/` | Russian Synodal | `BIBLE_LANG=ru` builds |
+| `jpnm/` | Japanese Freedom Bible (an eBible draft) | `BIBLE_LANG=ja` builds |
+| `cmn-cu89s/` | Chinese Union Version, simplified | `BIBLE_LANG=zh` builds |
+| `cmn-cu89t/` | Chinese Union Version, traditional | characters `cmn-cu89s`'s file lost (`holes`) |
 
 ## Public-domain whole Bibles on eBible.org (64 of 248 whole Bibles; list of October 2026)
 

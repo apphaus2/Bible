@@ -55,10 +55,11 @@ def collect():
     print(len(out), "labels")
 
 def table(lang):
-    """tools/full/i18n/<lang>.json, or the parts in tools/full/i18n/<lang>/*.json merged (scoped.json aside: see scoped())."""
+    """tools/full/i18n/<lang>.json, or the parts in tools/full/i18n/<lang>/*.json merged: labels.json first, then the others
+    by name, each overriding what came before (scoped.json aside: see scoped())."""
     f, d = I18N / f"{lang}.json", I18N / lang
     tab = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
-    for part in sorted(d.glob("*.json")) if d.is_dir() else []:
+    for part in sorted(d.glob("*.json"), key=lambda q: (q.name != "labels.json", q.name)) if d.is_dir() else []:
         if part.name != "scoped.json": tab.update(json.loads(part.read_text(encoding="utf-8")))
     return tab
 
