@@ -1,0 +1,8 @@
+// Italian: the static site in _site-it/ (rebuild_site.py --lang it), all under it/, reached through the router at /it/.
+// npx wrangler deploy -c tools/site/workers/it.jsonc
+{
+  "name": "bible-it",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-it" },
+  "workers_dev": false
+}
