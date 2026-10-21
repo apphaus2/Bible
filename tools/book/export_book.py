@@ -63,25 +63,30 @@ def fetch_fonts(pages, out):
     if index.exists():
         return [tuple(x) for x in json.loads(index.read_text())]
     got = []
+    pieces = langs.text_pieces(chars)                  # a CJK volume's characters go in several requests
     for fam, weights in FAMILIES.items():
-        q = urllib.parse.urlencode({"family": f"{fam}:wght@{';'.join(map(str, weights))}", "text": chars, "display": "swap"})
+      for n, (part, rng) in enumerate(pieces):
+        q = urllib.parse.urlencode({"family": f"{fam}:wght@{';'.join(map(str, weights))}", "text": part, "display": "swap"})
         req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})   # plain UA → TrueType
         css = urllib.request.urlopen(req, timeout=30).read().decode()
         for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
             wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
             url = re.search(r"url\((.*?)\)", block).group(1)
             ext = "woff2" if "woff2" in block else "ttf"
-            fn = f"{fam.replace(' ', '')}-{wt}-{key}.{ext}"
-            (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
-            got.append((fam, wt, fn))
+            fn = f"{fam.replace(' ', '')}-{wt}-{key}{f'-{n}' if rng else ''}.{ext}"
+            try: (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
+            except urllib.request.HTTPError:
+                if rng: continue                       # a piece with no glyph in this family (Anton for kanji) is refused
+                raise
+            got.append((fam, wt, fn) + ((rng,) if rng else ()))
             print(f"  font {fam} {wt}: {(fdir / fn).stat().st_size // 1024} KB")
     index.write_text(json.dumps(got))
     return got
 
 def font_css(fonts, prefix):
     mime = lambda fn: "woff2" if fn.endswith("woff2") else "truetype"
-    return "".join(f"@font-face {{ font-family: '{fam}'; font-weight: {wt}; font-style: normal; src: url('{prefix}{fn}') format('{mime(fn)}'); }}\n"
-                   for fam, wt, fn in fonts)
+    return "".join(f"@font-face {{ font-family: '{fam}'; font-weight: {wt}; font-style: normal; src: url('{prefix}{fn}') format('{mime(fn)}');"
+                   f"{f' unicode-range: {rng[0]};' if rng else ''} }}\n" for fam, wt, fn, *rng in fonts)
 
 # ---- EPUB -------------------------------------------------------------------------------------------------------------
 def to_xhtml(markup):
@@ -105,7 +110,7 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     files = {}                                                                  # path in OEBPS -> bytes
     files["css/book.css"] = (font_css(fonts, "../fonts/") + f"html, body {{ margin: 0; padding: 0; width: {W}px; height: {H}px; overflow: hidden; }}\n").encode()
-    for fam, wt, fn in fonts:
+    for fam, wt, fn, *_ in fonts:
         files[f"fonts/{fn}"] = (out / "fonts" / fn).read_bytes()
     items, spine = [], []
     for p in pages:

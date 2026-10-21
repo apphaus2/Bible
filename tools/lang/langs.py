@@ -52,3 +52,17 @@ def with_fallbacks(src, code):
 def font_query(code):
     """The extra families as Google Fonts css2 query parts ("family=Oswald:wght@400;700")."""
     return [f"family={f.replace(' ', '+')}:wght@{';'.join(map(str, w))}" for f, w in LANGS[code].get("fonts", {}).get("load", {}).items()]
+
+def text_pieces(chars, size=600):
+    """The characters to subset a font to, in pieces Google Fonts' `text=` accepts (a long one is refused with a 400: a
+    whole Bible in a CJK script uses thousands), each with the unicode-range it covers ("" when one piece holds them all)."""
+    if len(chars) <= size: return [(chars, "")]
+    return [(p, unicode_range(p)) for p in (chars[i:i + size] for i in range(0, len(chars), size))]
+
+def unicode_range(chars):
+    cps, out, i = sorted(set(map(ord, chars))), [], 0
+    while i < len(cps):
+        j = i
+        while j + 1 < len(cps) and cps[j + 1] == cps[j] + 1: j += 1
+        out.append(f"U+{cps[i]:X}" + (f"-{cps[j]:X}" if j > i else "")); i = j + 1
+    return ", ".join(out)
