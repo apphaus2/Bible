@@ -8,6 +8,7 @@ face), "god" a Voice box (God's words, indigo with the gold rule) — used where
 size that fits all the words in the panel is chosen by estimate (the sandbox's fallback fonts are wider, so if it fits
 there it fits on the site). tok=None: no face, the column spans the panel over `art` (svg) instead."""
 import math
+from textw import width
 from fx import new, vref
 from genesis.ch02 import W1, W2
 from genesis.ch04 import fc
@@ -15,7 +16,7 @@ from genesis.ch04 import fc
 def _height(lines, bw, s):
     tot = 0
     for kind, text in lines:
-        n = len(text)
+        n = width(text)
         if kind == "raw":
             tot += 40; continue
         if kind == "cap":

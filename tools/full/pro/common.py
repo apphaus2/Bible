@@ -5,6 +5,7 @@ and about `budget` characters a page. A cell is one verse or a small group (cell
 its words (pick) or named (cellv("26:11", "dog")); a drawn cell (cellv("24:30-34", art=f)) spans the page with a scene
 over its words. Each row is as tall as its words need; each cell sets its words as large as its row allows (up to 22 px),
 the emblem taking the rest. A chapter stamp goes on the cell where a Bible chapter begins."""
+from textw import width
 import sys, pathlib, re, math
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 import mk
@@ -182,13 +183,13 @@ def _text_h(nverse, chars, w, s):
 
 def _need(c, s=17.0):
     w = W_FULL if c["span"] else W_HALF
-    return _text_h(len(c["vs"]), [len(t) for _, t in c["vs"]], w, s) + (150 if c["art"] else 72)
+    return _text_h(len(c["vs"]), [width(t) for _, t in c["vs"]], w, s) + (150 if c["art"] else 72)
 
 def _size(c, h):
     w = W_FULL if c["span"] else W_HALF
     pic = 130 if c["art"] else (64 if c["span"] else 70)
     s = 22.0
-    while s > 11 and _text_h(len(c["vs"]), [len(t) for _, t in c["vs"]], w, s) > h - 6 - pic: s -= 0.5
+    while s > 11 and _text_h(len(c["vs"]), [width(t) for _, t in c["vs"]], w, s) > h - 6 - pic: s -= 0.5
     return s
 
 def _cell_html(c, h, s, uid, used, end=""):
@@ -196,7 +197,7 @@ def _cell_html(c, h, s, uid, used, end=""):
     a = c["refs"].split("-")[0]; ch, vs = a.split(":")
     ref = label(c["refs"])
     if c["art"]:
-        th = _text_h(len(c["vs"]), [len(t) for _, t in c["vs"]], w, s)
+        th = _text_h(len(c["vs"]), [width(t) for _, t in c["vs"]], w, s)
         ph = max(80, round(h - 6 - th - 3))
         pic_svg = f'<svg viewBox="0 0 {w} {ph}" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block">{c["art"](w, ph)}</svg>'
         pbg = c["bg"] or "#2A1A3A"
@@ -238,7 +239,7 @@ def sayings(items, prefix, start, default_head, budget=1050, most=4, end="", boo
     cells = []
     for it in items:
         c = dict(it); c["vs"] = [(r, v(r)) for r in _refs(it["refs"])]
-        c["chars"] = sum(len(t) for _, t in c["vs"])
+        c["chars"] = sum(width(t) for _, t in c["vs"])
         if c["chars"] > 250: c["span"] = True                       # a long group of sayings takes the whole width
         cells.append(c)
     # pages: break on a head (unless the page is still short), on the budget, or when the rows would not fit at 15px

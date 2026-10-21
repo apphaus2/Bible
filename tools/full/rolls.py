@@ -6,7 +6,7 @@ borders and the cities of the tribes (Joshua 13–21), and the like.
 
 Cells are packed into pages by estimated height; each page then takes the largest type size (up to 22px) at which its
 cells fit, and each row is as tall as its words need."""
-import math
+import textw, math
 from fx import page
 from genesis.ch02 import grid
 from genesis.ch03 import clan
@@ -15,7 +15,7 @@ ROOM = 1022 - 22
 
 def need(text, s, ncol=1):
     width = (672 - 12 * (ncol - 1)) / ncol - (0 if ncol == 1 else 6)
-    return 66 + math.ceil(len(text) / (width / (s * 0.64))) * s * 1.5
+    return 66 + math.ceil(textw.width(text) / (width / (s * 0.64))) * s * 1.5
 
 def _rows(cells, s, ncol):
     """Row heights: each row as tall as its tallest cell."""
@@ -76,9 +76,9 @@ def verse_cells(G, code, c, a, b, name, accent, head=None, budget=520, brk=None)
     out, cur, n = [], [], 0
     for k in range(a, b + 1):
         t = G.verses[(c, k)]
-        if cur and n + len(t) > budget:
+        if cur and n + textw.width(t) > budget:
             out.append(cur); cur, n = [], 0
-        cur.append(k); n += len(t)
+        cur.append(k); n += textw.width(t)
         if brk and re.search(brk, t): out.append(cur); cur, n = [], 0
     if cur: out.append(cur)
     items = []

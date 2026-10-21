@@ -2,6 +2,7 @@
 
 talk() is Genesis chapter 14's dialogue panel (a close-up face, and beside it a column of captions and balloons), with one
 change: a short line ("Go.", "A rod.") gets a balloon sized to its words instead of the full column width."""
+from textw import width
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 import re
@@ -27,7 +28,7 @@ def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336
     span = the cell spans both columns of its grid. spoken=True: the law is a man's words (Moses in Deuteronomy), not God's —
     a cream speech panel in Archivo Narrow with a rust rule, the pictogram on sand."""
     if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
-        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / ((0.74 if spoken else 0.62) * len(text))) ** 0.5 * 2) / 2))
+        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / ((0.74 if spoken else 0.62) * width(text))) ** 0.5 * 2) / 2))
     if spoken:
         bg, fg, rule, pbg, font, lh, frame = "#FFF8E6", "#0D0D0F", "#B5402A", "#E8D2A6", "'Archivo Narrow', sans-serif; font-weight: 700", 1.16, f"inset 0 0 0 4px #FFF8E6, inset 0 0 0 5.5px #B5402A"
         accent = "#B5402A"
@@ -50,15 +51,15 @@ def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     bw = (w - left - 14) if not flip else (w - 314 if full else w - 154)
     o, y = [], 12
     for kind, text in lines:
-        n = len(text)
+        n = width(text)
         if kind == "cap":
             o.append(cap(text, f"{side}; top: {y}px", size=10 if not full else 10.5, maxw=bw))
             y += 34 + 15 * (n // (bw // 7 or 1))
         else:
             long_ = n > 160                       # long speeches get a deeper oval so the corners don't cut the text
             pad = (f"{min(48, 18 + n // 12)}px 40px" if full else f"{min(36, 16 + n // 12)}px 26px") if long_ else ("18px 24px" if full else "16px 18px")
-            width = min(bw, max(110, int(n * size * 0.62) + 60))
-            o.append(balloon(text, f"{side}; top: {y}px", width, size=size if full else size - 1, pad=pad))
+            bw_ = min(bw, max(110, int(n * size * 0.62) + 60))
+            o.append(balloon(text, f"{side}; top: {y}px", bw_, size=size if full else size - 1, pad=pad))
             y += 50 + 17 * (n // max(1, (bw - 40) // 7)) + (n // 6 if long_ else 0)
     if ref: o.append(vref(ref, "left: 12px; bottom: 12px" if not flip else "right: 12px; bottom: 12px"))
     return new(bg, w, h, fc(tok, h, w=w, flip=flip), "".join(o) + extra)
@@ -69,7 +70,7 @@ def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
 # "god" = God's words in a Voice box, "cap" = a short lead-in caption, "nar" = narration set large in a caption box.
 BP_INK = "#0B1A2E"
 
-def nchars(words): return sum(len(t) for _, t in words)
+def nchars(words): return sum(width(t) for _, t in words)
 
 def bp_panel(h, label_, words, art, extra="", code="EX"):
     """One blueprint panel: the drawing, and in the left half the words, sized to fit the panel."""
@@ -80,7 +81,7 @@ def bp_panel(h, label_, words, art, extra="", code="EX"):
         if kind == "cap":
             o.append(cap(text, f"left: 12px; top: {y}px", size=10.5, maxw=bw)); y += 38
         elif kind == "nar":
-            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(len(text) * size * 0.82 * 0.68 / bw) * size * 1.25
+            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(width(text) * size * 0.82 * 0.68 / bw) * size * 1.25
         elif kind == "say":                    # a man's long speech: a white speech box with rounded corners
             o.append(balloon(text, f"left: 12px; top: {y}px", bw, size=round(size * 0.86 * 2) / 2, pad="12px 16px").replace("border-radius: 50%", "border-radius: 22px"))
         else:
@@ -151,17 +152,17 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
     from genesis.ch02 import grid
     pages, cur, chars = [], [], 0
     for it in items:
-        n = len(_sp(it[1]))
+        n = width(_sp(it[1]))
         heading_break = it[4] and (len(cur) >= 3 or chars >= 700)      # a page head starts a new page unless this page is still short
         if cur and (chars + n > budget or len(cur) == most or heading_break):
             pages.append(cur); cur, chars = [], 0
         cur.append(it); chars += n
     if cur: pages.append(cur)
-    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and len(_sp(pages[-1][0][1])) < 620:
+    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and width(_sp(pages[-1][0][1])) < 620:
         tail = pages.pop(); pages[-1] += tail                    # no lone short cell at the end
     out = []
     for k, group in enumerate(pages):
-        n = len(group); one = n == 1 or (n == 2 and sum(len(_sp(it[1])) for it in group) > 500)
+        n = len(group); one = n == 1 or (n == 2 and sum(width(_sp(it[1])) for it in group) > 500)
         ncol = 1 if one else 2; nrow = n if ncol == 1 else (n + 1) // 2
         cell = (1022 - 12 * (nrow - 1)) // nrow
         cells = []

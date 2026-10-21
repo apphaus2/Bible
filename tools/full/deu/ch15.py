@@ -4,6 +4,7 @@ boxes over the mount on fire), then the tribes as three pages of cells, one per 
 then the everlasting arms; Moses on the top of Pisgah and the land shown him as a map; his death (caption only, over the
 valley over against Beth-peor: no grave is drawn), the thirty days of weeping, Joshua full of the spirit of wisdom, and
 there hath not arisen a prophet since in Israel like unto Moses."""
+from textw import width
 import math, sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
@@ -50,7 +51,7 @@ def tribe_page(cells, title, n):
     """A page of tribe cells stacked full width; one type size for the page, each row as tall as its words need."""
     room = 1022 - 22 - 12 * (len(cells) - 1)
     def need(text, s):
-        return 66 + math.ceil(len(text) / (672 / (s * 0.64))) * s * 1.5
+        return 66 + math.ceil(width(text) / (672 / (s * 0.64))) * s * 1.5
     s = 22.0
     while s > 11 and sum(need(t, s) for _, t, _, _ in cells) > room: s -= 0.5
     fr = " ".join(f"{need(t, s):.0f}fr" for _, t, _, _ in cells)

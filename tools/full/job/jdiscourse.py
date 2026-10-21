@@ -11,6 +11,7 @@ beside the words; with tok=None and art, the words sit at the top of the drawing
 are set over the night sky. A segment with h set (and no lines, or few) is a picture panel of that height.
 Pages hold up to three panels and about 1,250 characters; a head starts a new page. Panel heights follow the words.
 Faces alternate sides from panel to panel unless flip is given. stamp=N puts the chapter stamp on the panel."""
+from textw import width
 import re, math
 import mk
 from fx import page, vref
@@ -27,7 +28,7 @@ def tag(name, color, pos):
     return (f'<div data-label style="position: absolute; {pos}; padding: 3px 9px; background: #F3EFE6; color: #0D0D0F; border: 2px solid #0D0D0F; '
             f'box-shadow: inset 5px 0 0 {color}; padding-left: 13px; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase">{name}</div>')
 
-def _chars(s): return sum(len(t) for _, t in s["lines"])
+def _chars(s): return sum(width(t) for _, t in s["lines"])
 
 def _need(s, w=W1):
     """Panel height the words need at a comfortable size (16px), with a floor for faces and drawings."""
