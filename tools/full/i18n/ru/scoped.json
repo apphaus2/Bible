@@ -20,5 +20,20 @@
  "daniel/Main": {"The Book of": "Книга пророка", "DANIEL": "ДАНИИЛА"},
  "hosea/Main": {"The Book of": "Книга пророка", "HOSEA": "ОСИИ"},
  "joel/Main": {"The Book of": "Книга пророка", "JOEL": "ИОИЛЯ"},
- "amos/Main": {"The Book of": "Книга пророка", "AMOS": "АМОСА"}
+ "amos/Main": {"The Book of": "Книга пророка", "AMOS": "АМОСА"},
+ "ezekiel/Main": {"The Book of": "Книга пророка", "EZEKIEL": "ИЕЗЕКИИЛЯ"},
+ "obadiah/Main": {"OBADIAH": "АВДИЯ"},
+ "jonah/Main": {"JONAH": "ИОНЫ"},
+ "jonah/": {"MICAH": "МИХЕЙ"},
+ "micah/": {"MICAH": "МИХЕЙ"},
+ "micah/Main": {"MICAH": "МИХЕЯ"},
+ "nahum/Main": {"NAHUM": "НАУМА"},
+ "habakkuk/Main": {"HABAKKUK": "АВВАКУМА"},
+ "habakkuk/": {"ZEPHANIAH": "СОФОНИЯ"},
+ "zephaniah/": {"ZEPHANIAH": "СОФОНИЯ"},
+ "zephaniah/Main": {"ZEPHANIAH": "СОФОНИИ"},
+ "haggai/Main": {"HAGGAI": "АГГЕЯ"},
+ "zechariah/Main": {"ZECHARIAH": "ЗАХАРИИ"},
+ "zechariah/ZEC-C02-G-P04": {"THE TENTH": "ДЕСЯТЫЙ"},
+ "malachi/Main": {"MALACHI": "МАЛАХИИ"}
 }
