@@ -12,10 +12,10 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 
 ## Status
 
-**Complete: Genesis through Lamentations, and Daniel through Malachi (38 volumes, 4,210 pages, 21,872 verses).** Per-chapter
-detail is in each `volumes/<id>/volume.json` and `coverage.md`. Unfinished books wait on local branches: `wip/ezekiel` (`ezk`,
-being finished), `wip/matthew`, `wip/mark`, `wip/luke`, `wip/john`, `wip/acts` (first drafts; only Mark has a chapter). Next:
-Ezekiel, then those, then Romans–Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each other's art.
+**Complete: the whole Old Testament, Genesis through Malachi (39 volumes, 4,478 pages, 23,145 verses).** Per-chapter detail is
+in each `volumes/<id>/volume.json` and `coverage.md`. The New Testament waits on local branches: `wip/matthew`, `wip/mark`,
+`wip/luke`, `wip/john`, `wip/acts` (first drafts; only Mark has a chapter). Next: those, then Romans–Revelation. The minor
+prophets share `oba/minor.py` (`Kit`: page packing) and each other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
 |---|---|---|---|---|---|
@@ -44,6 +44,7 @@ Ezekiel, then those, then Romans–Revelation. The minor prophets share `oba/min
 | 23 | Isaiah | `isa` | 18 | 282 | 1,292 full |
 | 24 | Jeremiah | `jer` | 19 | 299 | 1,364 full |
 | 25 | Lamentations | `lam` | 2 | 36 | 154 full |
+| 26 | Ezekiel | `ezk` | 18 | 268 | 1,273 full |
 | 27 | Daniel | `dan` | 6 | 78 | 357 full |
 | 28 | Hosea | `hos` | 3 | 41 | 197 full |
 | 29 | Joel | `jol` | 1 | 16 | 73 full |
@@ -58,7 +59,7 @@ Ezekiel, then those, then Romans–Revelation. The minor prophets share `oba/min
 | 38 | Zechariah | `zec` | 4 | 49 | 211 full |
 | 39 | Malachi | `mal` | 1 | 13 | 55 full |
 
-Order numbers and ids for the rest: Ezekiel 26; Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
+Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.
 
 ## Rules
