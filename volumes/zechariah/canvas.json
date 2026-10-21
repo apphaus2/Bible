@@ -1,0 +1,439 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T03:00:03Z"
+ },
+ "title": "Zechariah — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "ZEC-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Night Visions"
+  },
+  "ZEC-C01-D-P01-ReturnUntoMe.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Return unto Me"
+  },
+  "ZEC-C01-D-P02-AmongTheMyrtleTree.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Among the Myrtle-trees"
+  },
+  "ZEC-C01-D-P03-AmongTheMyrtleTree.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Among the Myrtle-trees"
+  },
+  "ZEC-C01-D-P04-FourHornsAndFourSm.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Four Horns and Four Smiths"
+  },
+  "ZEC-C01-E-P01-AManWithAMeasuring.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · A Man with a Measuring Line"
+  },
+  "ZEC-C01-E-P02-SingAndRejoiceODau.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Sing and Rejoice, O Daughter of Zion"
+  },
+  "ZEC-C01-F-P01-JoshuaTheHighPries.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Joshua the High Priest"
+  },
+  "ZEC-C01-F-P02-JoshuaTheHighPries.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Joshua the High Priest"
+  },
+  "ZEC-C01-G-P01-ACandlestickAllOfG.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · A Candlestick All of Gold"
+  },
+  "ZEC-C01-G-P02-NotByMightNorByPow.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Not by Might, nor by Power"
+  },
+  "ZEC-C01-G-P03-NotByMightNorByPow.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Not by Might, nor by Power"
+  },
+  "ZEC-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Four Chariots"
+  },
+  "ZEC-C02-D-P01-AFlyingRoll.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Flying Roll"
+  },
+  "ZEC-C02-D-P02-TheEphah.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Ephah"
+  },
+  "ZEC-C02-D-P03-TheEphah.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Ephah"
+  },
+  "ZEC-C02-E-P01-FourChariots.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Four Chariots"
+  },
+  "ZEC-C02-E-P02-FourChariots.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Four Chariots"
+  },
+  "ZEC-C02-E-P03-TheManWhoseNameIsT.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Man Whose Name Is the Branch"
+  },
+  "ZEC-C02-F-P01-ShouldIWeepInTheFi.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Should I Weep in the Fifth Month?"
+  },
+  "ZEC-C02-F-P02-ExecuteTrueJudgmen.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Execute True Judgment"
+  },
+  "ZEC-C02-G-P01-TheCityOfTruth.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · The City of Truth"
+  },
+  "ZEC-C02-G-P02-LetYourHandsBeStro.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Let Your Hands Be Strong"
+  },
+  "ZEC-C02-G-P03-LetYourHandsBeStro.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Let Your Hands Be Strong"
+  },
+  "ZEC-C02-G-P04-JoyAndGladness.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Joy and Gladness"
+  },
+  "ZEC-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · Thy King Cometh"
+  },
+  "ZEC-C03-D-P01-TheBurdenOfTheWord.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · The Burden of the Word of Jehovah"
+  },
+  "ZEC-C03-D-P02-TheBurdenOfTheWord.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · The Burden of the Word of Jehovah"
+  },
+  "ZEC-C03-D-P03-PrisonersOfHope.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Prisoners of Hope"
+  },
+  "ZEC-C03-D-P04-PrisonersOfHope.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Prisoners of Hope"
+  },
+  "ZEC-C03-E-P01-AskYeOfJehovahRain.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Ask Ye of Jehovah Rain"
+  },
+  "ZEC-C03-E-P02-AskYeOfJehovahRain.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Ask Ye of Jehovah Rain"
+  },
+  "ZEC-C03-E-P03-IWillHissForThem.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · I Will Hiss for Them"
+  },
+  "ZEC-C03-F-P01-TheFlockOfSlaughte.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Flock of Slaughter"
+  },
+  "ZEC-C03-F-P02-TheFlockOfSlaughte.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Flock of Slaughter"
+  },
+  "ZEC-C03-F-P03-ThirtyPiecesOfSilv.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Thirty Pieces of Silver"
+  },
+  "ZEC-C03-F-P04-TheWorthlessShephe.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Worthless Shepherd"
+  },
+  "ZEC-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Day of Jehovah"
+  },
+  "ZEC-C04-D-P01-ACupOfReeling.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · A Cup of Reeling"
+  },
+  "ZEC-C04-D-P02-ACupOfReeling.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · A Cup of Reeling"
+  },
+  "ZEC-C04-D-P03-WhomTheyHavePierce.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Whom They Have Pierced"
+  },
+  "ZEC-C04-E-P01-AFountainOpened.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · A Fountain Opened"
+  },
+  "ZEC-C04-E-P02-SmiteTheShepherd.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Smite the Shepherd"
+  },
+  "ZEC-C04-F-P01-UponTheMountOfOliv.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Upon the Mount of Olives"
+  },
+  "ZEC-C04-F-P02-LivingWaters.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Living Waters"
+  },
+  "ZEC-C04-F-P03-LivingWaters.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Living Waters"
+  },
+  "ZEC-C04-F-P04-HolyUntoJehovah.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Holy unto Jehovah"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "ZEC-C01-00-Title.dc.html",
+  "ZEC-C01-D-P01-ReturnUntoMe.dc.html",
+  "ZEC-C01-D-P02-AmongTheMyrtleTree.dc.html",
+  "ZEC-C01-D-P03-AmongTheMyrtleTree.dc.html",
+  "ZEC-C01-D-P04-FourHornsAndFourSm.dc.html",
+  "ZEC-C01-E-P01-AManWithAMeasuring.dc.html",
+  "ZEC-C01-E-P02-SingAndRejoiceODau.dc.html",
+  "ZEC-C01-F-P01-JoshuaTheHighPries.dc.html",
+  "ZEC-C01-F-P02-JoshuaTheHighPries.dc.html",
+  "ZEC-C01-G-P01-ACandlestickAllOfG.dc.html",
+  "ZEC-C01-G-P02-NotByMightNorByPow.dc.html",
+  "ZEC-C01-G-P03-NotByMightNorByPow.dc.html",
+  "ZEC-C02-00-Title.dc.html",
+  "ZEC-C02-D-P01-AFlyingRoll.dc.html",
+  "ZEC-C02-D-P02-TheEphah.dc.html",
+  "ZEC-C02-D-P03-TheEphah.dc.html",
+  "ZEC-C02-E-P01-FourChariots.dc.html",
+  "ZEC-C02-E-P02-FourChariots.dc.html",
+  "ZEC-C02-E-P03-TheManWhoseNameIsT.dc.html",
+  "ZEC-C02-F-P01-ShouldIWeepInTheFi.dc.html",
+  "ZEC-C02-F-P02-ExecuteTrueJudgmen.dc.html",
+  "ZEC-C02-G-P01-TheCityOfTruth.dc.html",
+  "ZEC-C02-G-P02-LetYourHandsBeStro.dc.html",
+  "ZEC-C02-G-P03-LetYourHandsBeStro.dc.html",
+  "ZEC-C02-G-P04-JoyAndGladness.dc.html",
+  "ZEC-C03-00-Title.dc.html",
+  "ZEC-C03-D-P01-TheBurdenOfTheWord.dc.html",
+  "ZEC-C03-D-P02-TheBurdenOfTheWord.dc.html",
+  "ZEC-C03-D-P03-PrisonersOfHope.dc.html",
+  "ZEC-C03-D-P04-PrisonersOfHope.dc.html",
+  "ZEC-C03-E-P01-AskYeOfJehovahRain.dc.html",
+  "ZEC-C03-E-P02-AskYeOfJehovahRain.dc.html",
+  "ZEC-C03-E-P03-IWillHissForThem.dc.html",
+  "ZEC-C03-F-P01-TheFlockOfSlaughte.dc.html",
+  "ZEC-C03-F-P02-TheFlockOfSlaughte.dc.html",
+  "ZEC-C03-F-P03-ThirtyPiecesOfSilv.dc.html",
+  "ZEC-C03-F-P04-TheWorthlessShephe.dc.html",
+  "ZEC-C04-00-Title.dc.html",
+  "ZEC-C04-D-P01-ACupOfReeling.dc.html",
+  "ZEC-C04-D-P02-ACupOfReeling.dc.html",
+  "ZEC-C04-D-P03-WhomTheyHavePierce.dc.html",
+  "ZEC-C04-E-P01-AFountainOpened.dc.html",
+  "ZEC-C04-E-P02-SmiteTheShepherd.dc.html",
+  "ZEC-C04-F-P01-UponTheMountOfOliv.dc.html",
+  "ZEC-C04-F-P02-LivingWaters.dc.html",
+  "ZEC-C04-F-P03-LivingWaters.dc.html",
+  "ZEC-C04-F-P04-HolyUntoJehovah.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Zechariah Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Night Visions (Zechariah 1–4)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Four Chariots (Zechariah 5–8)",
+   "x": 0,
+   "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · Thy King Cometh (Zechariah 9–11)",
+   "x": 0,
+   "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Day of Jehovah (Zechariah 12–14)",
+   "x": 0,
+   "y": 14000
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

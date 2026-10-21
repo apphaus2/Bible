@@ -1,0 +1,106 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T02:55:24Z"
+ },
+ "title": "Haggai — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "HAG-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Consider Your Ways"
+  },
+  "HAG-C01-D-P01-ThisHouseLiethWast.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · This House Lieth Waste"
+  },
+  "HAG-C01-D-P02-ThisHouseLiethWast.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · This House Lieth Waste"
+  },
+  "HAG-C01-D-P03-ThePeopleDidFearBe.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The People Did Fear before Jehovah"
+  },
+  "HAG-C01-D-P04-BeStrong.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Be Strong"
+  },
+  "HAG-C01-D-P05-AskNowThePriests.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Ask Now the Priests"
+  },
+  "HAG-C01-D-P06-ConsiderFromThisDa.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Consider from This Day"
+  },
+  "HAG-C01-D-P07-AsASignet.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · As a Signet"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "HAG-C01-00-Title.dc.html",
+  "HAG-C01-D-P01-ThisHouseLiethWast.dc.html",
+  "HAG-C01-D-P02-ThisHouseLiethWast.dc.html",
+  "HAG-C01-D-P03-ThePeopleDidFearBe.dc.html",
+  "HAG-C01-D-P04-BeStrong.dc.html",
+  "HAG-C01-D-P05-AskNowThePriests.dc.html",
+  "HAG-C01-D-P06-ConsiderFromThisDa.dc.html",
+  "HAG-C01-D-P07-AsASignet.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Haggai Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Consider Your Ways (Haggai 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
