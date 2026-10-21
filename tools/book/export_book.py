@@ -129,7 +129,7 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     toc = [f'<li><a href="pages/p001.xhtml">{WD[0]}</a></li>']
     for c in meta["books"]:
         first = next(p for p in pages if p["chapter"] is c and p["name"] != "Main.dc.html")
-        toc.append(f'<li><a href="pages/p{first["i"]:03d}.xhtml">{langs.numbered(WD[1], c["num"])} ·{html.escape(c["name"])} ({c["range"]})</a></li>')
+        toc.append(f'<li><a href="pages/p{first["i"]:03d}.xhtml">{langs.numbered(WD[1], c["num"])} · {html.escape(c["name"])} ({c["range"]})</a></li>')
     plist = [f'<li><a href="pages/p{p["i"]:03d}.xhtml">{p["printed"]}</a></li>' for p in pages if p["printed"]]
     nav = (f'<nav epub:type="toc" id="toc"><h1>{WD[2]}</h1><ol>{"".join(toc)}</ol></nav>\n'
            f'<nav epub:type="page-list" hidden=""><h1>{WD[3]}</h1><ol>{"".join(plist)}</ol></nav>')
