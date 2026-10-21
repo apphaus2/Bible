@@ -25,7 +25,12 @@ def main(vol, check=False):
     META, G = pkg.META, pkg.G
     out = ROOT / "volumes" / (META["id"] if asv.LANG == "en" else f"{asv.LANG}/{META['id']}")
     pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
-    credit = (lambda h: h) if asv.LANG == "en" else (lambda h: h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"))
+    if asv.LANG == "en": credit = lab = lambda h: h
+    else:                                                             # another language: its credit, and every label translated
+        import labels
+        tab = labels.table(asv.LANG)
+        credit = lambda h: labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"), asv.LANG, tab)
+        lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
     chapters = []
@@ -55,7 +60,7 @@ def main(vol, check=False):
     old = json.loads(cpath.read_text()) if cpath.exists() else {}
     boards, notes, y = {}, {}, 0
     blocks = [("Main", META["title"], ["Main.dc.html"])] + [(c["dir"], f"Chapter {c['num']} · {c['name']} ({c['range']})", c["files"]) for c in chapters]
-    titles = {n: t for n, t, _ in order}
+    titles = {n: lab(t) for n, t, _ in order}
     for key, label, files in blocks:
         notes[key.replace("-", "")] = {"kind": "title1", "maxW": 4120, "text": label, "x": 0, "y": y}
         y += 300
@@ -67,8 +72,9 @@ def main(vol, check=False):
               "boards": boards, "order": [n for n, _, _ in order], "notes": notes, "designSystems": [], "attachments": {}}
     if not check: save(cpath, json.dumps(canvas, indent=1, ensure_ascii=False))
 
-    if not check: save(out / "volume.json", json.dumps({k: META[k] for k in ("id", "order", "name", "kanji", "thumb", "lede")} | {
-        "books": [{k: c[k] for k in ("dir", "num", "name", "range", "blurb", "prefixes")} for c in chapters]}, indent=1, ensure_ascii=False))
+    if not check: save(out / "volume.json", json.dumps({k: (lab(META[k]) if k in ("name", "lede") else META[k]) for k in ("id", "order", "name", "kanji", "thumb", "lede")}
+        | ({"lang": asv.LANG, "en_name": META["name"]} if asv.LANG != "en" else {}) | {
+        "books": [{k: (lab(c[k]) if k in ("name", "range", "blurb") else c[k]) for k in ("dir", "num", "name", "range", "blurb", "prefixes")} for c in chapters]}, indent=1, ensure_ascii=False))
 
     # coverage report
     lines = [f"# {META['name']} — coverage of the full edition", "",
@@ -83,6 +89,9 @@ def main(vol, check=False):
                   f"{len(rows)} verses: {n['full']} full, {n['partial']} partial, {n['omitted']} omitted.", ""]
         odd = [f"- {r[0]} — {r[1]} ({r[2]:.0%})" for r in rows if r[1] != "full"]
         lines += (odd or ["Every verse is on the page in full."]) + [""]
+    if getattr(G, "borrowed", None):                                  # a translation's file lost these verses (asv.FALLBACK)
+        lines += [f"Taken from `{asv.FALLBACK[asv.TEXTS[asv.LANG][0]]}` because the `{asv.TEXTS[asv.LANG][0]}` file lacks them: "
+                  + ", ".join(f"{c}:{v}" for c, v in sorted(G.borrowed)) + ".", ""]
     allv = sum(tot.values())
     lines.insert(4, f"**So far:** {allv} verses — {tot['full']} full, {tot['partial']} partial, {tot['omitted']} omitted.\n")
     if not check: save(out / "coverage.md", "\n".join(lines))

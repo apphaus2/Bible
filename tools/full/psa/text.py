@@ -35,9 +35,16 @@ for cm in re.finditer(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", SRC, flags=re.S):
         parts = re.split(r"\\(?:q\d?|qs|qc|b)\b(?!\*)", raw)
         LINES[(c, int(vm.group(1)))] = [p for p in (_clean(x) for x in parts) if p]
 
+import sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+import asv as _asv
+if _asv.LANG != "en":                    # another language: titles split off its verse 1 (asv.psalm_titles), no line breaks
+    TITLES = _asv.Book("PSA").titles
+    LINES = {}
+
 def lines_of(c, x, text):
     """The poetic lines of verse c:x, checked against the verse text asv.Book gives (same words, same order)."""
-    ls = LINES[(c, x)]
+    ls = LINES.get((c, x), [text])
     joined = " ".join(ls)
     if joined != text:
         return [text]          # a verse whose breaks do not line up is set as one block, never altered

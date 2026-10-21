@@ -26,8 +26,8 @@ W, H = 760, 1080                                    # page size in CSS px
 ACCENT = "#D7261E"
 
 # ---- reading the volume -------------------------------------------------------------------------------------------
-def load_volume(vol):
-    d = ROOT / "volumes" / vol
+def load_volume(vol, lang="en"):
+    d = ROOT / "volumes" / (vol if lang == "en" else f"{lang}/{vol}")
     meta = json.loads((d / "volume.json").read_text(encoding="utf-8"))
     canvas = json.loads((d / "canvas.json").read_text(encoding="utf-8"))
     pages = []
@@ -97,7 +97,7 @@ def xhtml_page(title, body, css="../css/book.css"):
 
 def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     book_id = f"urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, 'https://github.com/apphaus2/Bible/' + vol)}"
-    title = f"{meta['name']} — The Bible Manga, Full Edition"
+    title = f"{meta['name']} — " + {"es": "La Biblia en manga"}.get(meta.get("lang", "en"), "The Bible Manga")
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     files = {}                                                                  # path in OEBPS -> bytes
     files["css/book.css"] = (font_css(fonts, "../fonts/") + f"html, body {{ margin: 0; padding: 0; width: {W}px; height: {H}px; overflow: hidden; }}\n").encode()
@@ -113,14 +113,15 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
         items.append(f'<item id="p{p["i"]:03d}" href="{fn}" media-type="application/xhtml+xml" properties="svg"/>')
         spine.append(f'<itemref idref="p{p["i"]:03d}"/>')
     # navigation: chapters (their title pages) and a page list with the printed numbers
-    toc = [f'<li><a href="pages/p001.xhtml">Cover</a></li>']
+    WD = {"es": ("Portada", "Capítulo", "Índice", "Páginas")}.get(meta.get("lang", "en"), ("Cover", "Chapter", "Contents", "Pages"))
+    toc = [f'<li><a href="pages/p001.xhtml">{WD[0]}</a></li>']
     for c in meta["books"]:
         first = next(p for p in pages if p["chapter"] is c and p["name"] != "Main.dc.html")
-        toc.append(f'<li><a href="pages/p{first["i"]:03d}.xhtml">Chapter {c["num"]} · {html.escape(c["name"])} ({c["range"]})</a></li>')
+        toc.append(f'<li><a href="pages/p{first["i"]:03d}.xhtml">{WD[1]} {c["num"]} · {html.escape(c["name"])} ({c["range"]})</a></li>')
     plist = [f'<li><a href="pages/p{p["i"]:03d}.xhtml">{p["printed"]}</a></li>' for p in pages if p["printed"]]
-    nav = (f'<nav epub:type="toc" id="toc"><h1>Contents</h1><ol>{"".join(toc)}</ol></nav>\n'
-           f'<nav epub:type="page-list" hidden=""><h1>Pages</h1><ol>{"".join(plist)}</ol></nav>')
-    files["nav.xhtml"] = xhtml_page("Contents", nav, css="css/book.css").replace(f'<meta name="viewport" content="width={W}, height={H}"/>\n', "").encode()
+    nav = (f'<nav epub:type="toc" id="toc"><h1>{WD[2]}</h1><ol>{"".join(toc)}</ol></nav>\n'
+           f'<nav epub:type="page-list" hidden=""><h1>{WD[3]}</h1><ol>{"".join(plist)}</ol></nav>')
+    files["nav.xhtml"] = xhtml_page(WD[2], nav, css="css/book.css").replace(f'<meta name="viewport" content="width={W}, height={H}"/>\n', "").encode()
     items.append('<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>')
     items.append('<item id="css" href="css/book.css" media-type="text/css"/>')
     for k, (fam, wt, fn) in enumerate(fonts):
@@ -243,10 +244,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("volume"); ap.add_argument("--out", default="_book"); ap.add_argument("--no-fonts", action="store_true")
     g = ap.add_mutually_exclusive_group(); g.add_argument("--epub-only", action="store_true"); g.add_argument("--pdf-only", action="store_true")
+    ap.add_argument("--lang", default="en", help="build from volumes/<lang>/ (a translated edition)")
     ap.add_argument("--screen", action="store_true", help="the reading PDF(s) at page size, split under 24 MB, instead of the print PDF")
     a = ap.parse_args()
     out = (ROOT / a.out).resolve(); out.mkdir(parents=True, exist_ok=True)
-    meta, pages = load_volume(a.volume)
+    meta, pages = load_volume(a.volume, a.lang)
     print(f"{a.volume}: {len(pages)} pages in {len(meta['books'])} chapters")
     fonts = [] if a.no_fonts else fetch_fonts(pages, out)
     if not fonts: print("  (no fonts embedded: readers and printers will substitute their own)")

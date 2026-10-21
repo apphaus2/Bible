@@ -14,9 +14,11 @@ import sys, json, hashlib, pathlib, subprocess
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 HERE = pathlib.Path(__file__).resolve().parent
 
-def source_hash(vol):
+def vdir(lang): return ROOT / "volumes" / ("" if lang == "en" else lang)
+
+def source_hash(vol, lang="en"):
     h = hashlib.sha1()
-    for f in [HERE / "export_book.py", HERE / "render.js", *sorted((ROOT / "volumes" / vol).rglob("*"))]:
+    for f in [HERE / "export_book.py", HERE / "render.js", *sorted((vdir(lang) / vol).rglob("*"))]:
         if f.is_file(): h.update(f.name.encode()); h.update(f.read_bytes())
     return h.hexdigest()
 
@@ -28,16 +30,16 @@ def main():
     state_f, index_f = out / ".sources.json", out / "index.json"
     state = json.loads(state_f.read_text()) if state_f.exists() else {}
     index = json.loads(index_f.read_text()) if index_f.exists() else {}
-    vols = [p.name for p in sorted((ROOT / "volumes").glob("*")) if (p / "volume.json").exists()]
+    vols = [p.name for p in sorted(vdir(lang).glob("*")) if (p / "volume.json").exists()]
     for vol in vols:
         if only and vol not in only: continue
-        h = source_hash(vol)
+        h = source_hash(vol, lang)
         files = [index.get(vol, {}).get("epub", {}).get("file")] + [x["file"] for x in index.get(vol, {}).get("pdf", [])]
         if state.get(vol) == h and all(f and (out / f).exists() for f in files):
             continue
         for f in out.glob(f"{vol}*"):                 # the old files, including parts that may no longer exist
             if f.name == f"{vol}.epub" or f.name.startswith(f"{vol}.") or f.name.startswith(f"{vol}-"): f.unlink()
-        subprocess.run([sys.executable, str(HERE / "export_book.py"), vol, "--screen", "--out", str(out.relative_to(ROOT))], check=True)
+        subprocess.run([sys.executable, str(HERE / "export_book.py"), vol, "--screen", "--lang", lang, "--out", str(out.relative_to(ROOT))], check=True)
         pdfs = json.loads((out / f"{vol}.pdfs.json").read_text()); (out / f"{vol}.pdfs.json").unlink()
         index[vol] = {"epub": {"file": f"{vol}.epub", "size": (out / f"{vol}.epub").stat().st_size}, "pdf": pdfs}
         state[vol] = h

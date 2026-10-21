@@ -33,6 +33,27 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 HERE = pathlib.Path(__file__).resolve().parent
 ASV = ROOT / "ref" / "eng-asv"
 OUT_NAME = "bible-asv.pdf"
+ASV_DIR = "asv"                       # the book PDFs' folder (in _book/ and on the site)
+CREDIT, LANG = "ASV", "en"
+# --text spaRV1909: the same book from another public-domain text, for that language's site (its words below)
+WORDS = {
+  "en": {"testaments": "THE OLD AND NEW TESTAMENTS", "holy": "The Holy <br>Bible", "sub": "The text of the Bible Manga",
+         "contents": "CONTENTS", "lead": "Every book and chapter is a link. The PDF's bookmarks list them too.",
+         "ot": "THE OLD TESTAMENT", "nt": "THE NEW TESTAMENT", "ot_div": "The Old <br>Testament", "nt_div": "The New <br>Testament",
+         "books": "BOOKS", "end": "END", "psalm": "Psalm", "title": "The Holy Bible", "bm_ot": "The Old Testament",
+         "bm_nt": "The New Testament", "bm_contents": "Contents",
+         "colophon": "{c} · public domain. Set from the USFM text published by eBible.org, with the Strong's numbers taken out. "
+                     "Words the translators supplied are in <i>italics</i>, as in the printed edition; the few textual notes stand at the "
+                     "end of their chapter. Every word of the Bible Manga is cut from this text."},
+  "es": {"testaments": "EL ANTIGUO Y EL NUEVO TESTAMENTO", "holy": "La Santa <br>Biblia", "sub": "El texto del manga de la Biblia",
+         "contents": "ÍNDICE", "lead": "Cada libro y cada capítulo es un enlace. Los marcadores del PDF también los listan.",
+         "ot": "EL ANTIGUO TESTAMENTO", "nt": "EL NUEVO TESTAMENTO", "ot_div": "El Antiguo <br>Testamento", "nt_div": "El Nuevo <br>Testamento",
+         "books": "LIBROS", "end": "FIN", "psalm": "Salmo", "title": "La Santa Biblia", "bm_ot": "El Antiguo Testamento",
+         "bm_nt": "El Nuevo Testamento", "bm_contents": "Índice",
+         "colophon": "{c} · dominio público. Compuesto del texto USFM publicado por eBible.org, sin los números de Strong. "
+                     "Las palabras añadidas por los traductores van en <i>cursiva</i>. Cada palabra del manga de la Biblia en español "
+                     "se toma de este texto."}}
+def W(k): return WORDS[LANG][k]
 SINGLE = {"OBA", "PHM", "2JN", "3JN", "JUD"}         # one-chapter books: no chapter numeral
 
 # Static TrueType instances from the Google Fonts API (all SIL Open Font License), subset to the characters in use and
@@ -45,7 +66,7 @@ def book_files():
     """[(code, path)] for the 66 books in canon order (the file names start with their order number)."""
     out = []
     for p in sorted(ASV.glob("[0-9][0-9]-*.usfm")):
-        code = re.match(r"\d\d-(\w{3})eng", p.name).group(1)
+        code = re.match(r"\d\d-(\w{3})", p.name).group(1)
         if code not in ("FRT", "INT"): out.append((code, p))
     assert len(out) == 66, len(out)
     return out
@@ -184,7 +205,7 @@ def fetch_fonts(doc, fdir):
 CSS = r"""
 @page { size: 7in 10in; margin: 0.72in 0.6in 0.7in;
   @bottom-center { content: "— " counter(page) " —"; font: 500 7.5pt 'IBM Plex Mono', monospace; color: #77736C; }
-  @bottom-right { content: "ASV"; font: 500 7.5pt 'IBM Plex Mono', monospace; color: #77736C; letter-spacing: .12em; } }
+  @bottom-right { content: "/*CREDIT*/"; font: 500 7.5pt 'IBM Plex Mono', monospace; color: #77736C; letter-spacing: .12em; } }
 @page front { @bottom-center { content: none; } @bottom-right { content: none; } }
 @page cover { margin: 0; @bottom-center { content: none; } @bottom-right { content: none; } }
 html { font-size: 9.6pt; }
@@ -290,34 +311,37 @@ def document(books):
         return "\n".join(out)
     title = f"""<section class="title">{rays(470, 173, 46, 1)}
 <div class="kanji">聖書</div><div class="kana">SEISHO</div>
-<div class="block"><p class="k">THE OLD AND NEW TESTAMENTS</p><h1>The Holy <br>Bible</h1><div class="rule"></div>
-<p class="sub">The text of the Bible Manga</p></div>
-<div class="foot"><span>Bible Manga</span><span>ASV</span></div></section>"""
-    contents = f"""<section class="contents"><h2>CONTENTS</h2>
-<p class="lead">Every book and chapter is a link. The PDF's bookmarks list them too.</p>
-<div class="cols"><div class="tt"><a href="#OT">THE OLD TESTAMENT</a></div>
+<div class="block"><p class="k">{W("testaments")}</p><h1>{W("holy")}</h1><div class="rule"></div>
+<p class="sub">{W("sub")}</p></div>
+<div class="foot"><span>Bible Manga</span><span>{CREDIT}</span></div></section>"""
+    contents = f"""<section class="contents"><h2>{W("contents")}</h2>
+<p class="lead">{W("lead")}</p>
+<div class="cols"><div class="tt"><a href="#OT">{W("ot")}</a></div>
 {toc(ot)}
-<div class="tt nt"><a href="#NT">THE NEW TESTAMENT</a></div>
+<div class="tt nt"><a href="#NT">{W("nt")}</a></div>
 {toc(nt)}
-<div class="colophon">ASV · public domain. Set from the USFM text published by eBible.org, with the Strong's numbers taken out.
-Words the translators supplied are in <i>italics</i>, as in the printed edition; the few textual notes stand at the end of their chapter.
-Every word of the Bible Manga is cut from this text.</div></div></section>"""
+<div class="colophon">{W("colophon").format(c=CREDIT)}</div></div></section>"""
     def divider(id_, name, kicker, seed):
         return (f'<section class="divider" id="{id_}">{rays(560, 120, 34, seed)}<div class="block"><p>{kicker}</p>'
                 f'<h1>{name}</h1><div class="rule"></div></div></section>')
     parts = [title, contents]
-    if ot: parts += [divider("OT", "The Old <br>Testament", "旧約聖書 · 39 BOOKS", 2)] + [b["html"] for b in ot]
-    if nt: parts += [divider("NT", "The New <br>Testament", "新約聖書 · 27 BOOKS", 3)] + [b["html"] for b in nt]
-    parts[-1] = parts[-1].replace("</div>\n</section>", '</div>\n<div class="end">完<span>END</span></div>\n</section>')  # after the last book's text
-    return (f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><title>The Holy Bible · ASV</title>'
-            f'<style>/*FONTS*/\n{CSS}\n{pages}</style></head>\n<body>\n' + "\n".join(parts) + "\n</body></html>\n")
+    if ot: parts += [divider("OT", W("ot_div"), f"旧約聖書 · 39 {W('books')}", 2)] + [b["html"] for b in ot]
+    if nt: parts += [divider("NT", W("nt_div"), f"新約聖書 · 27 {W('books')}", 3)] + [b["html"] for b in nt]
+    parts[-1] = parts[-1].replace("</div>\n</section>", f'</div>\n<div class="end">完<span>{W("end")}</span></div>\n</section>')  # after the last book's text
+    return (f'<!doctype html>\n<html lang="{LANG}"><head><meta charset="utf-8"><title>{W("title")} · {CREDIT}</title>'
+            f'<style>/*FONTS*/\n{CSS.replace("/*CREDIT*/", CREDIT)}\n{pages}</style></head>\n<body>\n' + "\n".join(parts) + "\n</body></html>\n")
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="_book"); ap.add_argument("--books", help="comma-separated book codes, for proofs")
     ap.add_argument("--html-only", action="store_true")
     ap.add_argument("--split-only", action="store_true", help="only split an existing bible-asv.pdf into book PDFs")
+    ap.add_argument("--text", default="eng-asv", help="the ref/<eBible id> to set: eng-asv (default), spaRV1909, fraLSG")
     a = ap.parse_args()
+    global ASV, OUT_NAME, ASV_DIR, CREDIT, LANG
+    if a.text != "eng-asv":
+        LANG, CREDIT = {"spaRV1909": ("es", "RV1909"), "fraLSG": ("fr", "LSG")}[a.text]
+        ASV, OUT_NAME, ASV_DIR = ROOT / "ref" / a.text, f"bible-{a.text}.pdf", f"asv-{LANG}"
     if a.split_only:
         split_books((ROOT / a.out).resolve()); return
     want = set(a.books.split(",")) if a.books else None
@@ -329,12 +353,12 @@ def main():
         books.append({"code": code, "html": sec, "chapters": chapters, "short": short, "nt": i >= 39})
     verses = sum(len(re.findall(r'class="(?:v|cn|cq)"', b["html"])) for b in books)
     work = out / "work"; work.mkdir(exist_ok=True)
-    src = work / "bible-asv.html"
+    src = work / OUT_NAME.replace(".pdf", ".html")
     doc = document(books)
     src.write_text(doc.replace("/*FONTS*/", fetch_fonts(doc, out / "fonts")), encoding="utf-8")
     print(f"{len(books)} books, {sum(len(b['chapters']) for b in books)} chapters, {verses} verses → {src.relative_to(ROOT)}")
     if a.html_only: return
-    raw, pdf = work / "bible-asv-raw.pdf", out / OUT_NAME
+    raw, pdf = work / OUT_NAME.replace(".pdf", "-raw.pdf"), out / OUT_NAME
     subprocess.run(["node", str(HERE / "render.js"), "text", str(src), str(raw)], check=True)
     bookmark(raw, pdf, books)
     print(f"  {pdf.relative_to(ROOT)}  ({pdf.stat().st_size // 1024} KB)")
@@ -346,9 +370,9 @@ def bookmark(raw, pdf, books):
     reader = PdfReader(raw)
     page_of = {name.lstrip("/"): reader.get_destination_page_number(d) for name, d in reader.named_destinations.items()}
     w = PdfWriter(clone_from=reader)
-    w.add_outline_item("The Holy Bible", 0)
-    w.add_outline_item("Contents", 1)
-    for tid, tname, nt in (("OT", "The Old Testament", False), ("NT", "The New Testament", True)):
+    w.add_outline_item(W("title"), 0)
+    w.add_outline_item(W("bm_contents"), 1)
+    for tid, tname, nt in (("OT", W("bm_ot"), False), ("NT", W("bm_nt"), True)):
         bs = [b for b in books if b["nt"] is nt]
         if not bs: continue
         t = w.add_outline_item(tname, page_of[tid])
@@ -356,9 +380,9 @@ def bookmark(raw, pdf, books):
             bk = w.add_outline_item(b["short"], page_of[b["code"]], parent=t)
             if b["code"] in SINGLE: continue
             for n, anchor in b["chapters"]:
-                w.add_outline_item(f"{'Psalm' if b['code'] == 'PSA' else b['short']} {n}", page_of[anchor], parent=bk)
-    w.add_metadata({"/Title": "The Holy Bible · ASV", "/Subject": "The Old and New Testaments: the text of the Bible Manga",
-                    "/Author": "Bible Manga", "/Keywords": "Bible, ASV, public domain"})
+                w.add_outline_item(f"{W('psalm') if b['code'] == 'PSA' else b['short']} {n}", page_of[anchor], parent=bk)
+    w.add_metadata({"/Title": f"{W('title')} · {CREDIT}", "/Subject": "The text of the Bible Manga",
+                    "/Author": "Bible Manga", "/Keywords": f"Bible, {CREDIT}, public domain"})
     w.page_mode = "/UseOutlines"
     with open(pdf, "wb") as f: w.write(f)
 
@@ -372,7 +396,7 @@ def split_books(out):
     for code, path in book_files():
         m = re.search(r"^\\h (.+?)\s*$", path.read_text(encoding="utf-8"), re.M)
         titles[code] = m.group(1) if m else code
-    d = out / "asv"; d.mkdir(exist_ok=True)
+    d = out / ASV_DIR; d.mkdir(exist_ok=True)
     index, total = {}, 0
     for i, code in enumerate(order):
         first = page_of[code]
@@ -383,7 +407,7 @@ def split_books(out):
         chs = sorted(((int(n.split(".")[1]), pg) for n, pg in page_of.items() if n.startswith(code + ".") and n.split(".")[1].isdigit()))
         for n, pg in chs:
             w.add_outline_item(f"{titles[code]} {n}", pg - first)
-        w.add_metadata({"/Title": f"{titles[code]} · ASV", "/Author": "Bible Manga"})
+        w.add_metadata({"/Title": f"{titles[code]} · {CREDIT}", "/Author": "Bible Manga"})
         w.page_mode = "/UseOutlines"
         with open(d / f"{code}.pdf", "wb") as f: w.write(f)
         index[code] = {"title": titles[code], "file": f"asv/{code}.pdf", "chapters": {str(n): [pg - first + 1, pg + 1] for n, pg in chs} or {"1": [1, first + 1]}}

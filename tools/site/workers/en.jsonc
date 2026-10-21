@@ -1,0 +1,8 @@
+// English: the static site in _site/ (rebuild_site.py), reached through the router "bible" (no route of its own).
+// npx wrangler deploy -c tools/site/workers/en.jsonc
+{
+  "name": "bible-en",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site" },
+  "workers_dev": false
+}

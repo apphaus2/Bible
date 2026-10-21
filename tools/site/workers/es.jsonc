@@ -1,0 +1,8 @@
+// Spanish: the static site in _site-es/ (rebuild_site.py --lang es), all under es/, reached through the router at /es/.
+// npx wrangler deploy -c tools/site/workers/es.jsonc
+{
+  "name": "bible-es",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-es" },
+  "workers_dev": false
+}

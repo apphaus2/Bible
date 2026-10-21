@@ -7,3 +7,6 @@ node_modules/
 tmp/
 _book/
 .wrangler/
+volumes/es/
+volumes/fr/
+_site-*/

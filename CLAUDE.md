@@ -186,30 +186,47 @@ lying LIE_BODY + LIE_ARM (never rotate a standing figure). Close-ups: shaded pro
 
 ## Languages
 
-`ref/` holds public-domain texts named by eBible id (`ref/README.md` lists the 64 public-domain whole Bibles on eBible.org):
-`eng-asv` (the manga), `spaRV1909` (Spanish, Reina-Valera 1909), `fraLSG` (French, Louis Segond 1910).
-`BIBLE_LANG=es python tools/full/build_volume.py genesis` builds the same pages from that text into `volumes/es/genesis/`: `asv.py`
-finds each cut in the ASV verse and maps it onto the translated verse by its share of the letters, preferring a break of the same
-kind (a speech break lands on the colon before the words spoken; cuts of one verse chain end to start); the credit reads RV1909/LSG.
-Only Genesis has been tried (es, fr: every block found, same coverage as English); not committed or published yet.
-Decided, to build: translate the labels (chapter titles, stamps, covers, blurbs, site text — not scripture, so Claude writes them);
-publish each language under `/<lang>/` with a **language dropdown in the site's top bar** (each language named in itself; it opens
-the same page in that language when it exists, else that language's home); **each language gets its own thumbnails** (rendered
-from its own pages) and **its own Worker** (`bible-es`, `bible-fr` …, each with its own 100,000-file limit; a language is ~18,000
-files once the Bible is done): the `bible` Worker answers bible.apphaus.us and hands `/<lang>/…` to that language's Worker through a
-service binding. Downloads under `download/<lang>/`; ASV links become that translation's book PDFs. Target order: Spanish, then
-Portuguese, French, German, Italian (Latin script, same verse numbering), then Chinese; Japanese, Russian and Korean need fonts or
-verse maps; right-to-left and unspaced scripts later.
+The site is in **English and Spanish** (bible.apphaus.us/es/). `ref/` holds the public-domain texts by eBible id
+(`ref/README.md` lists eBible's 64 public-domain whole Bibles): `eng-asv` (the manga), `spaRV1909` (Spanish, Reina-Valera 1909),
+`spablm` (Spanish, only for the verses RV1909's file lost), `fraLSG` (French, tried on Genesis only).
+
+- **Pages:** `BIBLE_LANG=es python tools/full/build_volume.py <pkg>` builds the same plans with the Spanish text into
+  `volumes/es/<id>/` (generated in CI, git-ignored). `asv.Book` keeps `G.verses` in English (plans find their ASV words there) and
+  hands out the translation: each cut is mapped onto the translated verse by its share of the letters, snapping to a break of the
+  same kind (a speech break lands on the colon before the words spoken; cuts of one verse chain end to start); text a plan cuts
+  again by an English phrase is a `Cut` that answers in ASV positions. The text check runs against the translation.
+- **Verse numbering:** eBible's RV1909 keeps English verse numbers but shifts the words where its own numbering differs, leaving
+  slots empty (and loses Job 39:28–40:5 and Numbers 30:16). `asv.align` re-pairs the chapters around any empty slot or any run of
+  verses out of proportion (Gale–Church by length); `asv.VERSEMAP` spells out Job 38–41 and Numbers 29–30; lost verses come from
+  `asv.FALLBACK` (`spablm`, which says "Yahvé") and are listed in that volume's `coverage.md`. Psalm superscriptions are inside
+  RV1909's verse 1: `asv.psalm_titles` splits them off where the psalm's first word is in capitals; RV1909 has no poetic line breaks.
+- **Labels** (titles, stamps, headings, map and chart labels, blurbs, ledes — not scripture): `tools/full/labels.py collect` lists
+  every label of the English pages; `tools/full/i18n/es/*.json` maps each to Spanish (names in RV1909's spelling, quotations in
+  RV1909's words); `labels.label()` translates a label whole or piece by piece (split at " · " and " — "), and verse references by
+  rule (`BOOKS_ES`, `ABBR_ES`: "GEN 1:3" → "GN 1:3"). `python tools/full/labels.py missing es` lists what is still English.
+- **Site:** `rebuild_site.py --lang es` builds `_site-es/es/` (its own thumbnails, `_book/asv-es/` from `asv_pdf.py --text spaRV1909`,
+  `_book/download/es/` from `downloads.py --lang es`). `build_site.py` takes its interface words from `UI[lang]` and puts a
+  **language dropdown** in every page's top bar (`lang_menu`: each language named in itself, linking to the page there whose verses
+  start at or before this page's — page counts differ between languages — else that chapter, else that language's home).
+- **Workers:** `bible` (`wrangler.jsonc`, `tools/site/workers/router.js`) owns bible.apphaus.us and serves nothing itself: `/es/…`
+  goes to `bible-es` (`tools/site/workers/es.jsonc`, `_site-es/`), the rest to `bible-en` (`en.jsonc`, `_site/`), by service
+  bindings. Each language Worker has its own 100,000-file limit (a language is ~18,000 files once the Bible is done).
+- **Next languages:** Portuguese, French, German, Italian (Latin script; check each file's numbering with `asv.align`), then Chinese;
+  Japanese, Russian and Korean need fonts or verse maps; right-to-left and unspaced scripts later. A language needs: its text in
+  `ref/`, `TEXTS`/`FALLBACK`/`VERSEMAP` in `asv.py`, `RULES` and `i18n/<lang>/` in labels, `UI` and `LANGS` in `build_site.py`,
+  `LANGS` in `rebuild_site.py`, `WORDS` in `asv_pdf.py`, a `tools/site/workers/<lang>.jsonc`, a binding in `wrangler.jsonc`, and
+  steps in the workflow.
 
 ## Website
 
-Built from `volumes/` by `.github/workflows/pages.yml` on every push to `master` (nothing generated is committed): `build_volume.py
---check` for every package, the ASV book PDFs (`asv_pdf.py`, cached), the downloads (`downloads.py`, cached), `rebuild_site.py --thumbs
---out _site` (thumbnails cached), then deploys twice: to Cloudflare as the Worker `bible` (`wrangler.jsonc`: static assets from
-`_site/`, custom domain bible.apphaus.us, like the other apphaus.us apps; `npx wrangler@4 deploy`, Node 22) and to GitHub Pages
-(apphaus2.github.io/Bible, without the downloads: its 1 GB limit). Needs Actions secrets `CLOUDFLARE_API_TOKEN` ("Edit Cloudflare
-Workers" template, zone apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`, else the Cloudflare step is skipped (not yet set). By hand from
-Windows: `npx wrangler login` once, build `_site/`, `npx wrangler deploy` (account apphaus@outlook.com).
+Built by `.github/workflows/pages.yml` on every push to `master` (nothing generated is committed): `build_volume.py --check`
+for every package, the Spanish volumes (`BIBLE_LANG=es`), the text PDFs by book (ASV and RV1909, cached), the downloads (both
+languages, cached), `rebuild_site.py --thumbs` and `--lang es` (thumbnails cached), then deploys `bible-en`, `bible-es` and the
+router `bible` to Cloudflare (`npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc`, then `npx wrangler@4 deploy`; Node 22),
+and the English site alone to GitHub Pages (apphaus2.github.io/Bible, without the downloads: its 1 GB limit). Needs Actions secrets
+`CLOUDFLARE_API_TOKEN` ("Edit Cloudflare Workers" template, zone apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`, else the Cloudflare step
+is skipped (not yet set). By hand from Windows: `npx wrangler login` once, build the sites, deploy the three Workers (account
+apphaus@outlook.com).
 
 - Pages: `index.html` (a section per volume with its downloads, "The Text", a table of contents), `<id>/chapter-NN/index.html`,
   `<id>/chapter-NN/NN-<slug>.html` (Prev/Next across books). All links relative.

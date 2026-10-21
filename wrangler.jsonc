@@ -1,10 +1,12 @@
-// The website as a Cloudflare Worker serving static assets, like the other apphaus.us apps: `npx wrangler deploy`
-// uploads _site/ (built by tools/site/rebuild_site.py) and serves it at https://bible.apphaus.us.
+// The router Worker that owns bible.apphaus.us (tools/site/workers/router.js): /es/… to bible-es, the rest to bible-en.
+// The language sites are their own Workers (tools/site/workers/<lang>.jsonc), each serving the static files of one language.
+// Deploy the language Workers first, then this one: `npx wrangler deploy`.
 {
   "name": "bible",
+  "main": "tools/site/workers/router.js",
   "compatibility_date": "2026-09-01",
-  "assets": { "directory": "./_site" },
   "routes": [{ "pattern": "bible.apphaus.us", "custom_domain": true }],
+  "services": [{ "binding": "EN", "service": "bible-en" }, { "binding": "ES", "service": "bible-es" }],
   "workers_dev": false,
   "observability": { "enabled": true }
 }

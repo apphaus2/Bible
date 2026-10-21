@@ -1,6 +1,11 @@
 """Build the whole website, in one step.
 
-Usage (from the repo root):  python3 tools/site/rebuild_site.py [--thumbs] [--out _site]
+Usage (from the repo root):  python3 tools/site/rebuild_site.py [--thumbs] [--lang es] [--out _site]
+
+One language a run. English (the default) is built into _site/ (served by the Worker bible-en at the domain root); another
+language into _site-<lang>/<lang>/ (served by bible-<lang> at /<lang>/), from volumes/<lang>/ (build_volume.py with
+BIBLE_LANG=<lang>), _book/asv-<lang>/ (asv_pdf.py --text <id>) and _book/download/<lang>/ (downloads.py --lang <lang>).
+Every other language that has volumes is passed to build_site.py for the language menu.
 
 - Every volumes/<id>/ that has a volume.json (pages/ + canvas.json) is passed straight through. (digest/, the old first
   drafts, is not published: it stays in the repo only as a source of drawings that volume pages lift.)
@@ -12,34 +17,45 @@ tools/site/build_site.py writes the pages and tools/site/assets/* is copied in. 
 that is missing or whose source page changed (tracked by a hash in thumbs/.sources.json) is rendered with
 Playwright (needs node + the `playwright` package + Pillow); thumbnails no page uses any more are deleted.
 GitHub Actions (.github/workflows/pages.yml) runs exactly this and deploys _site/ to Cloudflare (bible.apphaus.us) and GitHub Pages."""
-import hashlib, json, pathlib, shutil, subprocess, sys, tempfile
+import hashlib, json, os, pathlib, shutil, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SITE = ROOT / "tools" / "site"
 
+LANGS = {"en": None, "es": "spaRV1909"}                      # the site's languages: English, then each translation built
+
+def vols(lang):
+    d = ROOT / "volumes" / ("" if lang == "en" else lang)
+    return sorted(p for p in d.glob("*") if (p / "volume.json").exists())
+
 def main():
-    out = ROOT / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "_site")
+    lang = sys.argv[sys.argv.index("--lang") + 1] if "--lang" in sys.argv else "en"
+    base = ROOT / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else ("_site" if lang == "en" else f"_site-{lang}"))
+    out = base if lang == "en" else base / lang                  # another language lives under /<lang>/
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="manga-"))
     args, keys = [], {}
-    for vol in sorted(p for p in (ROOT / "volumes").glob("*") if (p / "volume.json").exists()):
+    for vol in vols(lang):
         args.append(f"{vol.name}={vol}"); keys[vol.name] = vol / "pages"
-    out.mkdir(exist_ok=True)
+    peers = [f"--peer={l}={ROOT / 'volumes' / ('' if l == 'en' else l)}" for l in LANGS if l != lang and vols(l)]
+    out.mkdir(parents=True, exist_ok=True)
     for d in out.iterdir():
         if d.name == "thumbs": continue
         shutil.rmtree(d) if d.is_dir() else d.unlink()
-    if (ROOT / "_book" / "asv" / "index.json").exists():       # the ASV text, one PDF per book (tools/book/asv_pdf.py)
-        shutil.copytree(ROOT / "_book" / "asv", out / "asv")
-    else: print("no _book/asv/: the site is built without the ASV text links (run tools/book/asv_pdf.py)")
-    for idx in sorted((ROOT / "_book" / "download").glob("*/index.json")):   # the manga by book (tools/book/downloads.py)
-        dst = out / "download" / idx.parent.name; dst.mkdir(parents=True, exist_ok=True)
+    asv = ROOT / "_book" / ("asv" if lang == "en" else f"asv-{lang}")
+    if (asv / "index.json").exists():                           # the Bible text, one PDF per book (tools/book/asv_pdf.py)
+        shutil.copytree(asv, out / "asv")
+    else: print(f"no {asv.relative_to(ROOT)}/: the site is built without the text links (run tools/book/asv_pdf.py)")
+    idx = ROOT / "_book" / "download" / lang / "index.json"       # the manga by book (tools/book/downloads.py)
+    if idx.exists():
+        dst = out / "download" / lang; dst.mkdir(parents=True, exist_ok=True)
         shutil.copy(idx, dst / "index.json")
-        for v in json.loads(idx.read_text()).values():
+        for v in json.loads(idx.read_text(encoding="utf-8")).values():
             for f in [v["epub"]["file"], *(x["file"] for x in v["pdf"])]: shutil.copy(idx.parent / f, dst / f)
-    subprocess.run([sys.executable, str(SITE / "build_site.py"), str(out), *args], check=True)
+    subprocess.run([sys.executable, str(SITE / "build_site.py"), str(out), *args, *peers], check=True, env={**os.environ, "BIBLE_LANG": lang})
     (out / "assets").mkdir(exist_ok=True)
     for f in (SITE / "assets").iterdir():
         shutil.copy(f, out / "assets" / f.name)
-    manifest = json.loads((out / "manifest.json").read_text())
+    manifest = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
     pages = [pg for s in manifest["series"] for b in s["books"] for pg in b["pages"]]
     wanted = {pg["thumb"] for pg in pages}
     if "--thumbs" in sys.argv:
