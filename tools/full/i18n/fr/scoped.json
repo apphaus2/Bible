@@ -1,0 +1,15 @@
+{
+ "obadiah/Main": {"THE BOOK OF": "LE LIVRE D'"},
+ "haggai/Main": {"THE BOOK OF": "LE LIVRE D'"},
+ "isaiah/Main": {"The Book of": "Le livre d'"},
+ "ezekiel/Main": {"The Book of": "Le livre d'"},
+ "hosea/Main": {"The Book of": "Le livre d'"},
+ "amos/Main": {"The Book of": "Le livre d'"},
+ "ezra/Main": {"The Book of": "Le livre d'"},
+ "esther/Main": {"The Book of": "Le livre d'"},
+ "ecclesiastes/Main": {"The Book of": "Le livre de l'"},
+ "judges/Main": {"The Book of": "Le livre des"},
+ "lamentations/Main": {"The Book of": "Le livre des"},
+ "proverbs/Main": {"The Book of": "Le livre des"},
+ "psalms/Main": {"The Book of": "Le livre des"}
+}
