@@ -10,6 +10,8 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     psalm_title_verses  true for a text that numbers a psalm's superscription as verse 1 (or 1–2), the Hebrew numbering:
                  those verses become the title and the psalm is renumbered from 1 (asv.title_verses; needs psalm_title too)
+    accent_room  a share (0.16) by which a cover's book name is set smaller, on the same baseline, when its capitals carry
+                 accents (ÉSAÏE), so they clear the line above it (labels.lower)
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
     books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels

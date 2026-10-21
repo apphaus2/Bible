@@ -106,7 +106,25 @@ def translate(page, lang, tab=None):
         return m.group(0) if t == s else ">" + html.escape(t, quote=False) + "<"
     page = re.sub(r"<title>(.*?)</title>", lambda m: "<title>" + html.escape(label(norm(m.group(1)), lang, tab), quote=False) + "</title>", page, count=1)
     head, sep, body = page.partition("<x-dc>")
-    return head + sep + FIT.sub(fit, TEXT.sub(sub, body))
+    body = FIT.sub(fit, TEXT.sub(sub, body))
+    room = langs.get(lang).get("accent_room")
+    return head + sep + (COVER.sub(lambda m: lower(m, room), body) if room else body)
+
+COVER = re.compile(r'<h1 style="([^"]*)">([^<]*)</h1>')
+TALL = re.compile(r"[ÀÁÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜŸ]")
+def lower(m, room):
+    """A cover's book name (an h1 with no max-width) whose translated capitals carry accents: set smaller by the share room
+    on the same baseline, so the accents clear the small line above it ("LE LIVRE DE") and nothing below moves (Anton's
+    baseline sits (line-height - 1.506) / 2 + 1.1765 em below the top of its line). accent_room in tools/lang/<code>.json."""
+    style, text = m.group(1), m.group(2)
+    if "max-width" in style or not TALL.search(html.unescape(text)): return m.group(0)
+    fs, lh = re.search(r"font-size: ([\d.]+)px", style), re.search(r"line-height: ([\d.]+);", style)
+    if not fs: return m.group(0)
+    f = float(fs.group(1)); base = (float(lh.group(1)) if lh else 1.0) - 1.506
+    drop = (base / 2 + 1.1765) * f * room
+    style = re.sub(r"top: ([\d.]+)px", lambda t: f"top: {float(t.group(1)) + drop:.0f}px", style, count=1)
+    style = style.replace(fs.group(0), f"font-size: {f * (1 - room):.0f}px", 1)
+    return f'<h1 style="{style}">{text}</h1>'
 
 FIT = re.compile(r'(<text [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')
 def fit(m):
