@@ -202,7 +202,7 @@ def _cell_html(c, h, s, uid, used, end=""):
         pic_svg = f'<svg viewBox="0 0 {w} {ph}" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block">{c["art"](w, ph)}</svg>'
         pbg = c["bg"] or "#2A1A3A"
     else:
-        name = c["emb"] or pick(" ".join(t for _, t in c["vs"]), used)
+        name = c["emb"] or pick(" ".join(getattr(t, "en", t) for _, t in c["vs"]), used)     # by the ASV's words
         used.add(name)
         pic_svg = f'<svg viewBox="0 0 320 120" preserveAspectRatio="xMidYMid meet" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block">{EMB[name](uid)}</svg>'
         pbg = "#2A1A3A"

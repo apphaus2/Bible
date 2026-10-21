@@ -39,8 +39,10 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import asv as _asv
 TITLES_EN = dict(TITLES)                 # the ASV's, in every language: who sings a psalm (common.singer) reads them
+HEADS = {}                               # (119, v) -> the letter head a translation sets before verse v ("BETE"), if it has them
 if _asv.LANG != "en":                    # another language: titles split off its verse 1 (asv.psalm_titles), no line breaks
-    TITLES = _asv.Book("PSA").titles
+    _B = _asv.Book("PSA")
+    TITLES, HEADS = _B.titles, {k: h for k, h in getattr(_B, "inner_heads", {}).items() if k[0] == 119}
     LINES = {}
 
 def lines_of(c, x, text):
