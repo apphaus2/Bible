@@ -1,4 +1,5 @@
-// The router Worker that owns bible.apphaus.us (tools/site/workers/router.js): /es/… to bible-es, the rest to bible-en.
+// The router Worker that owns bible.apphaus.us (tools/site/workers/router.js): /<code>/… to bible-<code> (one
+// binding per tools/lang/<code>.json), the rest to bible-en.
 // The language sites are their own Workers (tools/site/workers/<lang>.jsonc), each serving the static files of one language.
 // Deploy the language Workers first, then this one: `npx wrangler deploy`.
 {
@@ -6,7 +7,16 @@
   "main": "tools/site/workers/router.js",
   "compatibility_date": "2026-09-01",
   "routes": [{ "pattern": "bible.apphaus.us", "custom_domain": true }],
-  "services": [{ "binding": "EN", "service": "bible-en" }, { "binding": "ES", "service": "bible-es" }],
+  "services": [
+    { "binding": "EN", "service": "bible-en" },
+    { "binding": "ES", "service": "bible-es" },
+    { "binding": "FR", "service": "bible-fr" },
+    { "binding": "DE", "service": "bible-de" },
+    { "binding": "IT", "service": "bible-it" },
+    { "binding": "RU", "service": "bible-ru" },
+    { "binding": "ZH", "service": "bible-zh" },
+    { "binding": "JA", "service": "bible-ja" }
+  ],
   "workers_dev": false,
   "observability": { "enabled": true }
 }
