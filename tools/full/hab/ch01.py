@@ -4,7 +4,8 @@ over the Chaldeans marching, the horsemen and the eagle, the siege ramp; the sec
 Habakkuk upon his watchtower; write the vision upon tablets; the cup and the pit; the five woes over the pledges, the
 stone crying out of the wall, the sea under the glory, Lebanon felled, the idol and the holy temple; then the prayer of
 Habakkuk in song boxes: light behind Teman and Paran, the tents of Cushan, the waters lifting their hands, sun and moon
-standing still, the heap of mighty waters, Habakkuk trembling, the barren fig-tree, and the hinds on the high places.
+standing still, the heap of mighty waters, Habakkuk trembling, the barren fig-tree, and the hinds on the high places;
+the note after 3:19 (For the Chief Musician …) as a small label.
 God is never drawn."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
@@ -12,6 +13,19 @@ sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "
 from oba.minor import Pages, title, fin, NIGHT
 from hab import G, art as A
 from hab.common import K, cp, gd, sg, gds, sgs, HABAKKUK, HABAKKUK_GRIEF, HABAKKUK_TREMBLE, HABAKKUK_GLAD, COLD, GOLDEN, RED, DUSK
+import re, asv
+
+def subscription():
+    """The note after 3:19 ("For the Chief Musician, on my stringed instruments.", USFM \\d), cut from ref/eng-asv like the
+    psalm titles (psa.text) and set as a small label (data-label: asv.Book does not count it as a verse). The Spanish text
+    keeps these words inside verse 19 itself, so other languages show nothing here."""
+    if asv.LANG != "en": return []
+    src = (pathlib.Path(__file__).resolve().parents[3] / "ref" / "eng-asv" / "36-HABeng-asv.usfm").read_text(encoding="utf-8")
+    m = re.search(r"^\\d (.*)$", src.split("\\c 3", 1)[1], flags=re.M)
+    t = re.sub(r"\\\+?w ([^|\\]*)\|[^\\]*\\\+?w\*", r"\1", m.group(1))
+    t = re.sub(r"\s+", " ", re.sub(r"\\[a-z0-9+]+\*?", "", t)).strip()
+    return [("raw", f'<div data-label="" style="align-self: flex-end; padding: 4px 10px; background: #F3EFE6; color: #0D0D0F; border: 2px solid #0D0D0F; '
+                    f'font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">{t}</div>')]
 
 v = G.v
 PG = Pages(1)
@@ -47,5 +61,5 @@ SEGS = [K.face([cp("1:1"), sg("1:2")], HABAKKUK_GRIEF, bg=COLD, head="How Long S
         K.drawn(sgs("3:13-15"), lambda w, h: A.sea_heap(w, h, 119), "#1E1650"),
         K.face(sgs("3:16"), HABAKKUK_TREMBLE, bg=COLD),
         K.drawn(sgs("3:17"), lambda w, h: A.barren(w, h, 120), "#8A7A6A", head="Though the Fig-tree Shall Not Flourish"),
-        K.drawn(sgs("3:18-19"), lambda w, h: A.hinds(w, h, 121), "#3A4A8A")]
+        K.drawn([*sgs("3:18-19"), *subscription()], lambda w, h: A.hinds(w, h, 121), "#3A4A8A")]
 PG.extend(K.pack(SEGS, "HAB-C01-D", PG.next(), end=fin("END OF HABAKKUK · NEXT · ZEPHANIAH")))

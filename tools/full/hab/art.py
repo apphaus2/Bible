@@ -1,4 +1,4 @@
-"""Drawings for the Habakkuk volume, on the minor prophets' kit (oba.minor). Habakkuk at a distance: an indigo robe and
+"""Drawings for the Habakkuk volume, on the minor prophets' kit (oba.minor). Habakkuk at a distance: an indigo tunic and
 headcloth, white beard (hab_fig). The Chaldeans are an army and horsemen; the watchtower; the vision written plain upon
 tablets; the woes over the house set on high, the stone crying out of the wall, Lebanon's cedars felled, the dumb idol and
 the holy temple. The prayer of chapter 3 is light over Teman and Paran, the tents of Cushan, the rivers and the sea, the
@@ -14,7 +14,7 @@ import exodus2 as E2
 HAB_C = "#2A2A5A"
 
 def hab_fig(p, x, y, s, flip=False, up=None):
-    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=HAB_C, sw=3, flip=flip, up=up, extra=A.headcloth(HAB_C) + WHITE_BEARD)
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=HAB_C, kind="Tunic", sw=3, flip=flip, up=up, extra=A.headcloth(HAB_C) + WHITE_BEARD)
 
 def strife(p, w, h, seed):
     """Strife and contention rise up; the law is slacked, justice goeth forth perverted: men quarrelling at the city gate,
@@ -247,11 +247,35 @@ def barren(w, h, seed):
     o.append(f'<path d="M{f(x0)} {f(h * 0.96)} L {f(x0)} {f(h * 0.82)} L {f(w * 0.96)} {f(h * 0.82)} L {f(w * 0.96)} {f(h * 0.96)}" stroke="#8A7A6A" stroke-width="{f(h * 0.03)}" fill="none"></path>')
     return "".join(o)
 
+def hind(x, y, s, leap=False, flip=False, color="#B5743A", belly="#F3E2C8"):
+    """A hind (a female deer, no antlers) on slender legs; (x, y) = the ground under her hooves; about 130 units tall at
+    s=1, facing right unless flip. leap=True: in mid-bound, forelegs tucked, hind legs thrust back."""
+    sx = -s if flip else s
+    def leg(d): return (f'<path d="{d}" stroke="#0D0D0F" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>'
+                        f'<path d="{d}" stroke="{color}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>')
+    if leap:
+        legs = [leg("M26 -50 L 48 -40 L 62 -48"), leg("M34 -50 L 58 -46 L 72 -56"), leg("M-30 -50 L -58 -40 L -86 -38"), leg("M-38 -52 L -64 -48 L -92 -50")]
+        rot = -14
+    else:
+        legs = [leg("M26 -48 L 26 -22 L 28 0"), leg("M36 -48 L 38 -24 L 36 0"), leg("M-26 -48 C -32 -36 -28 -26 -22 -20 L -26 0"), leg("M-36 -50 C -42 -38 -38 -28 -32 -20 L -36 0")]
+        rot = 0
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)}) rotate({rot} 0 -60)">' + "".join(legs[:1] + legs[2:3])
+            + f'<path d="M-48 -60 C -52 -76 -30 -84 0 -82 C 22 -82 40 -78 46 -66 C 52 -54 44 -44 30 -44 L -30 -44 C -44 -44 -52 -50 -48 -60 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.2"></path>'
+            f'<path d="M-36 -46 C -10 -52 14 -52 34 -46 C 20 -42 -20 -42 -36 -46 Z" fill="{belly}"></path>'
+            f'<path d="M30 -74 C 40 -90 46 -104 50 -112 L 62 -108 C 56 -96 52 -80 46 -62 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.2"></path>'
+            f'<path d="M48 -110 C 50 -122 62 -124 70 -118 L 84 -106 C 86 -101 82 -99 77 -99 L 60 -100 Z" fill="{color}" stroke="#0D0D0F" stroke-width="2.2"></path>'
+            '<circle cx="83" cy="-103" r="2" fill="#0D0D0F"></circle>'
+            f'<path d="M54 -118 L 46 -134 L 60 -121 Z M60 -120 L 60 -136 L 66 -120 Z" fill="{color}" stroke="#0D0D0F" stroke-width="1.8"></path>'
+            '<circle cx="66" cy="-112" r="2.2" fill="#0D0D0F"></circle><circle cx="66.6" cy="-112.6" r="0.7" fill="#FFF"></circle>'
+            f'<path d="M-46 -64 L -58 -72 L -52 -58 Z" fill="{belly}" stroke="#0D0D0F" stroke-width="1.6"></path>'
+            + "".join(legs[1:2] + legs[3:]) + '</g>')
+
 def hinds(w, h, seed):
-    """He maketh my feet like hinds' feet, and will make me to walk upon my high places: hinds leaping on the high crags at
-    sunrise."""
+    """He maketh my feet like hinds' feet, and will make me to walk upon my high places: a hind standing sure-footed on the
+    highest crag at sunrise, another bounding from peak to peak."""
     o = [sky(w, h, "#3A4A8A", "#FFD8A0"), sun(w * 0.8, h * 0.5, max(14, h * 0.07), color="#FFE680", op=0.5),
-         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.7)} L {f(w * 0.2)} {f(h * 0.3)} L {f(w * 0.34)} {f(h * 0.46)} L {f(w * 0.5)} {f(h * 0.2)} L {f(w * 0.64)} {f(h * 0.52)} L {f(w * 0.8)} {f(h * 0.62)} L {f(w + 10)} {f(h * 0.7)} L {f(w + 10)} {f(h + 10)} Z" fill="#6A5A7A" stroke="#0D0D0F" stroke-width="2.4"></path>']
-    k = min(0.7, h / 380)
-    o.append(roe(w * 0.22, h * 0.31, k, pose="leap", color="#B5743A") + roe(w * 0.5, h * 0.21, k * 0.9, pose="stand", color="#B5743A", flip=True))
+         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.7)} L {f(w * 0.2)} {f(h * 0.3)} L {f(w * 0.34)} {f(h * 0.46)} L {f(w * 0.5)} {f(h * 0.2)} L {f(w * 0.64)} {f(h * 0.52)} L {f(w * 0.8)} {f(h * 0.62)} L {f(w + 10)} {f(h * 0.7)} L {f(w + 10)} {f(h + 10)} Z" fill="#6A5A7A" stroke="#0D0D0F" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.2)} {f(h * 0.3)} L {f(w * 0.24)} {f(h * 0.5)} M{f(w * 0.5)} {f(h * 0.2)} L {f(w * 0.46)} {f(h * 0.44)} L {f(w * 0.52)} {f(h * 0.7)}" stroke="#4A3A5A" stroke-width="2" fill="none"></path>']
+    k = min(0.9, h * 0.26 / 136)
+    o.append(hind(w * 0.49, h * 0.2 + 2, k) + hind(w * 0.3, h * 0.2, k, leap=True))
     return "".join(o)
