@@ -1,0 +1,8 @@
+// Russian: the static site in _site-ru/ (rebuild_site.py --lang ru), all under ru/, reached through the router at /ru/.
+// npx wrangler deploy -c tools/site/workers/ru.jsonc
+{
+  "name": "bible-ru",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-ru" },
+  "workers_dev": false
+}
