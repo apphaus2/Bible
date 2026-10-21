@@ -9,11 +9,13 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
                  pairing by length can't find its way (a renumbered chapter)
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
-    books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
+    books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED";
+                 a value with {n} takes the numbers inside it ("Chapter": "第{n}章"), else they follow it after a space
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels
     fonts        {"load": {family: [weights]}, "fallback": {manga font: family}}: Google Fonts families for a script the
                  manga's fonts lack (Anton and Archivo Narrow have no Cyrillic or CJK, IBM Plex Mono and Source Serif 4, the
-                 text PDFs' face, no CJK), each set in every font list right after the font it stands in for
+                 text PDFs' face, no CJK), each set in every font list right after the font it stands in for (a list:
+                 several, in order, e.g. a display face whose glyph set is smaller, then a complete one)
     ui           the website's words (build_site.py); words: the text PDF's (asv_pdf.py); epub: the EPUB's (export_book.py)"""
 import json, pathlib, re
 HERE = pathlib.Path(__file__).resolve().parent
@@ -24,6 +26,10 @@ def get(code): return LANGS[code]
 def by_text(tid):
     """The language whose text is ref/<tid>."""
     return next(k for k, v in LANGS.items() if v["text"] == tid)
+
+def numbered(word, n):
+    """"Chapter" + 3 -> "Chapter 3"; a word with {n} takes the number inside it ("第{n}章" -> "第3章")."""
+    return word.replace("{n}", str(n)) if "{n}" in word else f"{word} {n}"
 
 def versemap(code):
     """{BOOK: [((c, a, b), (tc, tv))]} from the "c:a-b > tc:tv" strings."""
@@ -39,7 +45,9 @@ def with_fallbacks(src, code):
     """Page markup or CSS with this language's fallback family after each manga font it stands in for."""
     fb = LANGS[code].get("fonts", {}).get("fallback", {})
     if not fb: return src
-    return FAMILY.sub(lambda m: m.group(0) + (f", '{fb[m.group(2)]}'" if m.group(2) in fb else ""), src)
+    def more(f):                                       # one family, or a list of them (a display face, then a full one)
+        return "".join(f", '{x}'" for x in ([f] if isinstance(f, str) else f))
+    return FAMILY.sub(lambda m: m.group(0) + (more(fb[m.group(2)]) if m.group(2) in fb else ""), src)
 
 def font_query(code):
     """The extra families as Google Fonts css2 query parts ("family=Oswald:wght@400;700")."""

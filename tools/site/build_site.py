@@ -34,7 +34,7 @@ for key, d in SRC.items():
     V = json.loads(vj.read_text(encoding="utf-8"))
     V.update(edition="full", path=V["id"], key=key)
     for c in V["books"]:
-        c["label"] = f"{T('chapter')} {c['num']}"
+        c["label"] = langs.numbered(UI[LANG]["chapter"], c["num"])
         c["match"] = (lambda pre: (lambda n: n.startswith(tuple(pre))))(c["prefixes"])
     VOLUMES.append(V)
 VOLUMES.sort(key=lambda v: v.get("order", 0))
@@ -163,7 +163,7 @@ for S in SERIES:
             ref, _, heading = title.partition(" — ")
             if n == "Main.dc.html": ref, heading = b["range"], T("cover")
             pm = re.search(r"— (\d+) —", body)
-            num = f"{T('page')} {int(pm.group(1))}" if pm else (T("cover") if n == "Main.dc.html" else T("title"))
+            num = langs.numbered(UI[LANG]["page"], int(pm.group(1))) if pm else (T("cover") if n == "Main.dc.html" else T("title"))
             pages.append({"file": n, "slug": f"{i:02d}-{slug(t)}", "label": re.sub(r'^B\d+ · ', '', t), "heading": heading or t,
                           "ref": ref, "num": num, "style": style, "body": body})
         b["pages"] = pages; FLAT[S["edition"]].append(b)

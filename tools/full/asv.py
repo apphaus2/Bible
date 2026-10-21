@@ -49,10 +49,22 @@ def _share(t, i):
     return sum(1 for ch in t[:i] if not ch.isspace()) / max(1, n)
 
 STOPS = ",;:.!?，、；：。！？"
+CLOSE, OPEN = "」』）〉》】”’)]、。，．！？：；・ー々ゝゞぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ", "「『（〈《【“‘(["
+WIDE = "　-ヿ㐀-䶿一-鿿豈-﫿＀-￯"    # CJK: kana, kanji, full-width forms
+def unspace(t):
+    """An unspaced script's text with the spaces between two of its characters taken out: those a USFM poetic line
+    break or a stripped note leaves inside a verse, and those a plan puts between the verses or cuts it joins (a line
+    break is no space there; the text check reads it the same way). Spaces next to Latin letters, digits, · or — stay."""
+    return re.sub(f"(?<=[{WIDE}])\\s+(?=[{WIDE}])", "", t) if UNSPACED else t
+
 def _kind(t, i):
     """What kind of break index i is: "speech" (a stop before a capital or an opening quote, as before words spoken), "end"
-    (after . ? !), "pause" (after , ; :) or None (between words). Full-width CJK stops count as their Latin kin."""
+    (after . ? !), "pause" (after , ; :) or None (between words). Full-width CJK stops count as their Latin kin; in an
+    unspaced script a closing quote is looked through (。」 is an end) and any stop before 「 or 『 is speech (言われた。「…)."""
     ch, nxt = t[:i].rstrip()[-1:], t[i:].lstrip()[:1]
+    if UNSPACED:
+        ch = t[:i].rstrip().rstrip("」』）)”")[-1:]
+        if ch and ch in STOPS and nxt in "「『": return "speech"
     if ch and ch in ",:，：" and (nxt.isupper() or nxt in "¿¡«「『“"): return "speech"
     if ch and ch in ".?!。？！": return "end"
     if ch and ch in ",;:，、；：": return "pause"
@@ -66,6 +78,7 @@ def _snap(t, f, kind, lo=0):
     best, bi = 9, len(t)
     for i in range(lo + 1, len(t)):
         if t[i] != " " and not UNSPACED: continue
+        if UNSPACED and (t[i] in CLOSE or t[i - 1] in OPEN): continue   # no piece starts with 」、。 or ends with 「
         k = _kind(t, i)
         d = abs(_share(t, i) - f) - (0.25 if k and k == kind else 0.06 if k else 0)
         if d < best: best, bi = d, i
@@ -205,7 +218,10 @@ class Book:
                 fb = parse(ROOT / "ref" / L["fallback"] / files(L["fallback"])[code])
                 for k in lost:
                     if fb.get(k, "").strip(): self.tgt[k] = fb[k]; self.borrowed.append(k)
-        self.used = {}                       # (c, v) -> set of character indexes used
+            if UNSPACED:
+                self.tgt = {k: unspace(t) for k, t in self.tgt.items()}
+                if code == "PSA": self.titles = {c: unspace(t) for c, t in self.titles.items()}
+        self.used = {}                      # (c, v) -> set of character indexes used
         self.cuts = []                       # every (ref, text) handed out, for build_volume's lost-text check
         self.last = {}                       # (c, v) -> (ASV end, translated end) of the last cut, other languages only
 

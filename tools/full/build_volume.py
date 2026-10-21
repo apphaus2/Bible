@@ -33,6 +33,9 @@ def main(vol, check=False):
         credit = lambda h: langs.with_fallbacks(labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"),
                                                                  asv.LANG, tab).replace("&amp;display=swap", more + "&amp;display=swap", 1), asv.LANG)
         lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
+        if asv.UNSPACED:                                              # Chinese, Japanese: no space where a plan joins two
+            spaced = credit                                           # verses or cuts (asv.unspace), in text nodes only
+            credit = lambda h: (lambda a, s, b: a + s + re.sub(r">([^<>]+)<", lambda m: ">" + asv.unspace(m.group(1)) + "<", b))(*spaced(h).partition("<x-dc>"))
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
     chapters = []
