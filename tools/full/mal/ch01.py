@@ -2,9 +2,9 @@
 The burden (1:1 in a caption) beside Malachi's face; I have loved you — Edom's waste places and the jackals; the blind, the
 lame and the sick at the altar; the doors shut; incense from the rising of the sun to its going down; the cold altar and
 the curse; the covenant with Levi, the priest teaching; turned aside out of the way; one father, and the foreign god in the
-doorway; the altar wet with tears and the wife of thy youth; wearied with words; the messenger preparing the way to the
-lit temple; the refiner's fire and the fullers' soap; the swift witness; will a man rob God? — the store-house empty, then
-the windows of heaven opened; the proud built up; the book of remembrance; the day burning as a furnace; the sun of
+doorway; the altar wet with tears and the wife of thy youth; wearied with words; the way prepared to the lit temple (no one
+drawn on it); the refiner's fire and the fullers' soap; the swift witness; will a man rob God? — the store-house empty, then
+the windows of heaven opened; the proud built up; the book of remembrance by lamplight; the day burning as a furnace; the sun of
 righteousness with healing in its wings; Horeb and the tables; and Elijah the prophet on the road. God is never drawn."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
@@ -47,4 +47,4 @@ SEGS = [K.face([cp("1:1"), gd("1:2")], MALACHI, head="I Have Loved You", stamp=1
         K.drawn(gds("4:2-3"), lambda w, h: A.sun_wings(w, h, 120), "#3A4A8A", head="The Sun of Righteousness"),
         K.drawn(gds("4:4"), lambda w, h: A.horeb_law(w, h, 121), "#5A6E8A"),
         K.drawn(gds("4:5-6"), lambda w, h: A.elijah_comes("el1", w, h, 122), "#3A3A6A", head="Elijah the Prophet", h=430)]
-PG.extend(K.pack(SEGS, "MAL-C01-D", PG.next(), end=fin("END OF MALACHI · END OF THE OLD TESTAMENT · NEXT · MATTHEW")))
+PG.extend(K.pack(SEGS, "MAL-C01-D", PG.next(), end=fin("END OF MALACHI · NEXT · MATTHEW")))
