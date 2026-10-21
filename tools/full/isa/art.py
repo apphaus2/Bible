@@ -339,7 +339,7 @@ def ornaments(w, h):
         r_, c_ = divmod(i, cols)
         x0, y0 = c_ * cw, r_ * ch
         o.append(f'<rect x="{f(x0 + 4)}" y="{f(y0 + 4)}" width="{f(cw - 8)}" height="{f(ch - 8)}" fill="#12203A" stroke="#4A7A9A" stroke-width="1.2"></rect>')
-        o.append(_orn(i, x0 + cw / 2, y0 + ch * 0.42, s) + label(x0 + cw / 2, y0 + ch - 12, nm, CYAN, max(7, min(9, cw / 11))))
+        o.append(_orn(i, x0 + cw / 2, y0 + ch * 0.42, s) + label(x0 + cw / 2, y0 + ch - 12, nm, CYAN, max(7, min(9, cw / 11)), fit=cw - 14))
         o.append(f'<path d="M{f(x0 + 10)} {f(y0 + ch - 8)} L {f(x0 + cw - 10)} {f(y0 + 10)}" stroke="#D7261E" stroke-width="1.4" opacity="0.6"></path>')
     return "".join(o)
 

@@ -121,7 +121,21 @@ def translate(page, lang, tab=None):
         return m.group(0) if t == s else ">" + html.escape(t, quote=False) + "<"
     page = re.sub(r"<title>(.*?)</title>", lambda m: "<title>" + html.escape(label(norm(m.group(1)), lang, tab), quote=False) + "</title>", page, count=1)
     head, sep, body = page.partition("<x-dc>")
-    return head + sep + TEXT.sub(sub, body)
+    return head + sep + FIT.sub(fit, TEXT.sub(sub, body))
+
+FIT = re.compile(r'(<text [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')
+def fit(m):
+    """A drawn label with data-fit (genesis.art3.label(fit=)) made to fit its room: the letter-spacing goes first, then the
+    font shrinks (IBM Plex Mono is 0.6 em a letter), never below 6 px."""
+    tag, room, n = m.group(1), float(m.group(2)), len(html.unescape(m.group(3)))
+    fs = float(re.search(r'font-size="([\d.]+)"', tag).group(1))
+    ls = float((re.search(r'letter-spacing="([\d.]+)em"', tag) or [0, 0])[1])
+    if not n or n * fs * (0.6 + ls) <= room: return m.group(0)
+    ls2 = max(0.0, room / (n * fs) - 0.6)
+    fs2 = fs if ls2 > 0 else max(6.0, room / (n * 0.6))
+    tag = re.sub(r'letter-spacing="[\d.]+em"', f'letter-spacing="{ls2:.2f}em"', tag)
+    tag = re.sub(r'font-size="[\d.]+"', f'font-size="{fs2:.1f}"', tag)
+    return tag + m.group(3) + "<"
 
 if __name__ == "__main__":
     if sys.argv[1] == "collect": collect()

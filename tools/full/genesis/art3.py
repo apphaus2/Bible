@@ -55,9 +55,11 @@ def king(p, x, y, s, cloth, flip=False, up=None):
 def sun(x, y, r, color="#FFD23F", glow="#FFF4C2", op=0.35):
     return V.rays(x, y, 30, r * 1.1, r * 9, color=glow, op=op) + f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r)}" fill="{color}"></circle>'
 
-def label(x, y, text, color="#F3EFE6", size=11, anchor="middle", weight=600, ls=0.14):
+def label(x, y, text, color="#F3EFE6", size=11, anchor="middle", weight=600, ls=0.14, fit=None):
+    """fit: the width the label has room for; a translation longer than that is shrunk to it (labels.translate)."""
+    fit = f' data-fit="{f(fit)}"' if fit else ""
     return (f'<text x="{f(x)}" y="{f(y)}" fill="{color}" font-family="IBM Plex Mono, monospace" font-weight="{weight}" font-size="{size}" '
-            f'letter-spacing="{ls}em" text-anchor="{anchor}">{text}</text>')
+            f'letter-spacing="{ls}em" text-anchor="{anchor}"{fit}>{text}</text>')
 
 def grid_bg(w, h, color="#1E3A5A", step=28, bg="#0B1A2E"):
     lines = "".join(f'<path d="M{x} 0 L {x} {f(h)}" stroke="{color}" stroke-width="1"></path>' for x in range(0, int(w) + step, step))
