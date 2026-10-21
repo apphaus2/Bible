@@ -10,6 +10,7 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
                  the text splits in two (its verses tv…tw joined). A mapped chapter's verses no rule names come from fallback
     strip        a regex of editorial marks to take out of the text's verses (Luther 1912's own verse numbers, "[3:19]")
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
+    css          extra CSS for every page of the language (in the page's own <style>), for layout the translation needs
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
     books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels
