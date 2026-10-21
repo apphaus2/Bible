@@ -1,0 +1,8 @@
+// French: the static site in _site-fr/ (rebuild_site.py --lang fr), all under fr/, reached through the router at /fr/.
+// npx wrangler deploy -c tools/site/workers/fr.jsonc
+{
+  "name": "bible-fr",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-fr" },
+  "workers_dev": false
+}
