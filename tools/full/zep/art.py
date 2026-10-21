@@ -12,6 +12,18 @@ import joshua1 as J1
 
 ZEPH_C = "#5A2A4A"
 
+def oil_lamp(x, y, s=1.0):
+    """A clay oil lamp seen from the side, (x, y) its foot: a shallow body with a pinched spout to the right, a knob of a
+    handle to the left, the filling hole on top, and a flame on the spout."""
+    return (f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})">'
+            '<path d="M-34 -10 C -40 -14 -42 -4 -34 -4" fill="none" stroke="#0D0D0F" stroke-width="5"></path>'
+            '<path d="M-34 -10 C -40 -14 -42 -4 -34 -4" fill="none" stroke="#B5652E" stroke-width="2.6"></path>'
+            '<path d="M-34 -8 C -32 -20 10 -22 30 -14 L 44 -16 C 46 -10 40 -4 30 -4 C 10 2 -20 4 -30 0 C -34 -2 -35 -5 -34 -8 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2.4"></path>'
+            '<ellipse cx="-4" cy="-16" rx="9" ry="3" fill="#3A1A0A" stroke="#0D0D0F" stroke-width="1.4"></ellipse>'
+            '<path d="M-24 -4 C -10 -1 12 -1 28 -6" fill="none" stroke="#7A3A16" stroke-width="2"></path>'
+            '<path d="M42 -17 C 34 -26 38 -40 44 -50 C 50 -40 54 -27 42 -17 Z" fill="#FFC14D" stroke="#E86A2A" stroke-width="2"></path>'
+            '<path d="M42 -20 C 39 -26 41 -33 44 -38 C 47 -33 48 -26 42 -20 Z" fill="#FFF4C2"></path></g>')
+
 def desolate(w, h, seed):
     """I will utterly consume all things from off the face of the ground — man and beast, the birds of the heavens and the
     fishes of the sea: an empty land and a dry shore under a dark sky, nothing living."""
@@ -66,7 +78,6 @@ def fish_gate(w, h, seed):
 
 def lamps(w, h, seed):
     """I will search Jerusalem with lamps: a dark street between houses, lamps carried along it throwing pools of light."""
-    from genesis.art4 import clay_lamp
     o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#0B0B1A"></rect>']
     for side in (0, 1):
         for i in range(4):
@@ -75,7 +86,7 @@ def lamps(w, h, seed):
                      f'<rect x="{f(x + w * 0.04)}" y="{f(h * 0.62)}" width="{f(w * 0.04)}" height="{f(h * 0.38)}" fill="#120E1A"></rect>')
     o.append(f'<path d="M{f(w * 0.48)} {f(h * 0.5)} L {f(w * 0.52)} {f(h * 0.5)} L {f(w * 0.62)} {f(h + 10)} L {f(w * 0.38)} {f(h + 10)} Z" fill="#3A3448"></path>')
     for i, (x, y) in enumerate(((0.44, 0.66), (0.54, 0.8), (0.5, 0.56))):
-        o.append(halo(w * x, h * y, h * 0.16, "#FFC14D", 0.5) + clay_lamp(w * x, h * y, min(0.7, h / 400)))
+        o.append(halo(w * x, h * y - 20 * min(1.0, h / 300), h * 0.16, "#FFC14D", 0.5) + oil_lamp(w * x, h * y, min(1.0, h / 300)))
     return "".join(o)
 
 def day_dark(w, h, seed):
