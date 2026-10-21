@@ -1,0 +1,2297 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T02:22:12Z"
+ },
+ "title": "Ezekiel — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "EZK-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Visions of God"
+  },
+  "EZK-C01-D-P01-AStormyWindOutOfTh.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · A Stormy Wind out of the North"
+  },
+  "EZK-C01-D-P02-FourLivingCreature.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Four Living Creatures"
+  },
+  "EZK-C01-D-P03-AWheelWithinAWheel.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · A Wheel within a Wheel"
+  },
+  "EZK-C01-D-P04-TheTerribleCrystal.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Terrible Crystal"
+  },
+  "EZK-C01-D-P05-TheLikenessOfTheGl.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Likeness of the Glory of Jehovah"
+  },
+  "EZK-C01-D-P06-SonOfManStandUponT.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Son of Man, Stand upon Thy Feet"
+  },
+  "EZK-C01-D-P07-ARollOfABook.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · A Roll of a Book"
+  },
+  "EZK-C01-D-P08-SpeakWithMyWordsUn.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Speak with My Words unto Them"
+  },
+  "EZK-C01-D-P09-TheVoiceOfAGreatRu.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Voice of a Great Rushing"
+  },
+  "EZK-C01-D-P10-IHaveMadeTheeAWatc.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · I Have Made Thee a Watchman"
+  },
+  "EZK-C01-D-P11-GoForthIntoThePlai.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Go Forth into the Plain"
+  },
+  "EZK-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Siege on a Tile"
+  },
+  "EZK-C02-D-P01-EachDayForAYear.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Each Day for a Year"
+  },
+  "EZK-C02-D-P02-TheBreadOfTheSiege.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Bread of the Siege"
+  },
+  "EZK-C02-D-P03-TheBreadOfTheSiege.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Bread of the Siege"
+  },
+  "EZK-C02-D-P04-ThisIsJerusalem.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · This Is Jerusalem"
+  },
+  "EZK-C02-D-P05-ThisIsJerusalem.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · This Is Jerusalem"
+  },
+  "EZK-C02-D-P06-AThirdPart.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · A Third Part"
+  },
+  "EZK-C02-D-P07-YeMountainsOfIsrae.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Ye Mountains of Israel"
+  },
+  "EZK-C02-D-P08-YeMountainsOfIsrae.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Ye Mountains of Israel"
+  },
+  "EZK-C02-D-P09-YetWillILeaveARemn.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Yet Will I Leave a Remnant"
+  },
+  "EZK-C02-D-P10-SmiteWithThyHand.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Smite with Thy Hand"
+  },
+  "EZK-C02-D-P11-AnEndIsCome.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · An End Is Come"
+  },
+  "EZK-C02-D-P12-TheRodHathBlossome.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The Rod Hath Blossomed"
+  },
+  "EZK-C02-D-P13-TheyHaveBlownTheTr.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · They Have Blown the Trumpet"
+  },
+  "EZK-C02-D-P14-TheyHaveBlownTheTr.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · They Have Blown the Trumpet"
+  },
+  "EZK-C02-D-P15-MakeTheChain.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Make the Chain"
+  },
+  "EZK-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Glory Departs"
+  },
+  "EZK-C03-D-P01-AsISatInMyHouse.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · As I Sat in My House"
+  },
+  "EZK-C03-D-P02-TheImageOfJealousy.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · The Image of Jealousy"
+  },
+  "EZK-C03-D-P03-AHoleInTheWall.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · A Hole in the Wall"
+  },
+  "EZK-C03-D-P04-TheirFacesTowardTh.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Their Faces toward the East"
+  },
+  "EZK-C03-D-P05-TheManClothedInLin.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Man Clothed in Linen"
+  },
+  "EZK-C03-D-P06-TheManClothedInLin.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Man Clothed in Linen"
+  },
+  "EZK-C03-D-P07-TheManClothedInLin.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Man Clothed in Linen"
+  },
+  "EZK-C03-D-P08-AhLordJehovah.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Ah Lord Jehovah!"
+  },
+  "EZK-C03-D-P09-CoalsOfFire.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Coals of Fire"
+  },
+  "EZK-C03-D-P10-TheWhirlingWheels.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Whirling Wheels"
+  },
+  "EZK-C03-D-P11-TheWhirlingWheels.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Whirling Wheels"
+  },
+  "EZK-C03-D-P12-AtTheDoorOfTheEast.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · At the Door of the East Gate"
+  },
+  "EZK-C03-D-P13-ThisCityIsTheCaldr.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · This City Is the Caldron"
+  },
+  "EZK-C03-D-P14-ThisCityIsTheCaldr.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · This City Is the Caldron"
+  },
+  "EZK-C03-D-P15-ASanctuaryForALitt.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · A Sanctuary for a Little While"
+  },
+  "EZK-C03-D-P16-TheGloryWentUp.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Glory Went Up"
+  },
+  "EZK-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Stuff for Removing"
+  },
+  "EZK-C04-D-P01-PrepareTheeStuffFo.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Prepare Thee Stuff for Removing"
+  },
+  "EZK-C04-D-P02-IAmYourSign.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · I Am Your Sign"
+  },
+  "EZK-C04-D-P03-IAmYourSign.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · I Am Your Sign"
+  },
+  "EZK-C04-D-P04-BreadWithQuaking.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Bread with Quaking"
+  },
+  "EZK-C04-D-P05-EveryVisionFaileth.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Every Vision Faileth"
+  },
+  "EZK-C04-D-P06-FoxesInTheWastePla.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Foxes in the Waste Places"
+  },
+  "EZK-C04-D-P07-UntemperedMortar.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Untempered Mortar"
+  },
+  "EZK-C04-D-P08-UntemperedMortar.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Untempered Mortar"
+  },
+  "EZK-C04-D-P09-WoeToTheWomenThatS.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Woe to the Women That Sew Pillows"
+  },
+  "EZK-C04-D-P10-IdolsInTheirHeart.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Idols in Their Heart"
+  },
+  "EZK-C04-D-P11-IdolsInTheirHeart.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Idols in Their Heart"
+  },
+  "EZK-C04-D-P12-IdolsInTheirHeart.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Idols in Their Heart"
+  },
+  "EZK-C04-D-P13-NoahDanielAndJob.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Noah, Daniel, and Job"
+  },
+  "EZK-C04-D-P14-YetThereShallBeLef.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Yet There Shall Be Left a Remnant"
+  },
+  "EZK-C04-D-P15-YetThereShallBeLef.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Yet There Shall Be Left a Remnant"
+  },
+  "EZK-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Vine and the Foundling"
+  },
+  "EZK-C05-D-P01-TheVineTree.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Vine-Tree"
+  },
+  "EZK-C05-D-P02-ThyBirthAndThyNati.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Thy Birth and Thy Nativity"
+  },
+  "EZK-C05-D-P03-ThyBirthAndThyNati.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Thy Birth and Thy Nativity"
+  },
+  "EZK-C05-D-P04-ThouDidstTrustInTh.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Thou Didst Trust in Thy Beauty"
+  },
+  "EZK-C05-D-P05-AVaultedPlace.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · A Vaulted Place"
+  },
+  "EZK-C05-D-P06-AVaultedPlace.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · A Vaulted Place"
+  },
+  "EZK-C05-D-P07-AVaultedPlace.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · A Vaulted Place"
+  },
+  "EZK-C05-D-P08-IWillJudgeThee.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · I Will Judge Thee"
+  },
+  "EZK-C05-D-P09-IWillJudgeThee.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · I Will Judge Thee"
+  },
+  "EZK-C05-D-P10-AsIsTheMotherSoIsH.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · As Is the Mother, So Is Her Daughter"
+  },
+  "EZK-C05-D-P11-AsIsTheMotherSoIsH.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · As Is the Mother, So Is Her Daughter"
+  },
+  "EZK-C05-D-P12-AnEverlastingCoven.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · An Everlasting Covenant"
+  },
+  "EZK-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Eagles and the Cedar"
+  },
+  "EZK-C06-D-P01-TwoGreatEagles.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Two Great Eagles"
+  },
+  "EZK-C06-D-P02-TwoGreatEagles.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Two Great Eagles"
+  },
+  "EZK-C06-D-P03-KnowYeNotWhatThese.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Know Ye Not What These Things Mean?"
+  },
+  "EZK-C06-D-P04-KnowYeNotWhatThese.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Know Ye Not What These Things Mean?"
+  },
+  "EZK-C06-D-P05-ATenderTwig.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · A Tender Twig"
+  },
+  "EZK-C06-D-P06-IfAManBeJust.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · If a Man Be Just"
+  },
+  "EZK-C06-D-P07-IfAManBeJust.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · If a Man Be Just"
+  },
+  "EZK-C06-D-P08-IfHeBegetASon.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · If He Beget a Son"
+  },
+  "EZK-C06-D-P09-TurnYourselvesAndL.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Turn Yourselves, and Live"
+  },
+  "EZK-C06-D-P10-IsNotMyWayEqual.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Is Not My Way Equal?"
+  },
+  "EZK-C06-D-P11-ALamentationForThe.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · A Lamentation for the Princes of Israel"
+  },
+  "EZK-C06-D-P12-ALamentationForThe.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · A Lamentation for the Princes of Israel"
+  },
+  "EZK-C06-D-P13-ThyMotherWasLikeAV.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Thy Mother Was Like a Vine"
+  },
+  "EZK-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · A Sword, a Sword"
+  },
+  "EZK-C07-D-P01-InTheDayWhenIChose.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · In the Day When I Chose Israel"
+  },
+  "EZK-C07-D-P02-InTheDayWhenIChose.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · In the Day When I Chose Israel"
+  },
+  "EZK-C07-D-P03-InTheWilderness.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · In the Wilderness"
+  },
+  "EZK-C07-D-P04-InTheWilderness.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · In the Wilderness"
+  },
+  "EZK-C07-D-P05-InTheWilderness.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · In the Wilderness"
+  },
+  "EZK-C07-D-P06-WhenIHadBroughtThe.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · When I Had Brought Them into the Land"
+  },
+  "EZK-C07-D-P07-IWillBeKingOverYou.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · I Will Be King over You"
+  },
+  "EZK-C07-D-P08-InMyHolyMountain.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · In My Holy Mountain"
+  },
+  "EZK-C07-D-P09-InMyHolyMountain.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · In My Holy Mountain"
+  },
+  "EZK-C07-D-P10-TheForestOfTheSout.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Forest of the South"
+  },
+  "EZK-C07-D-P11-IHaveDrawnForthMyS.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · I Have Drawn Forth My Sword"
+  },
+  "EZK-C07-D-P12-ASwordASword.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · A Sword, a Sword"
+  },
+  "EZK-C07-D-P13-ASwordASword.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · A Sword, a Sword"
+  },
+  "EZK-C07-D-P14-ThePartingOfTheWay.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Parting of the Way"
+  },
+  "EZK-C07-D-P15-ThePartingOfTheWay.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Parting of the Way"
+  },
+  "EZK-C07-D-P16-ConcerningTheChild.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · Concerning the Children of Ammon"
+  },
+  "EZK-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Oholah and Oholibah"
+  },
+  "EZK-C08-D-P01-TheBloodyCity.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The Bloody City"
+  },
+  "EZK-C08-D-P02-TheBloodyCity.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · The Bloody City"
+  },
+  "EZK-C08-D-P03-TheBloodyCity.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Bloody City"
+  },
+  "EZK-C08-D-P04-DrossInTheFurnace.dc.html": {
+   "x": 3360,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Dross in the Furnace"
+  },
+  "EZK-C08-D-P05-ALandNotCleansed.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · A Land Not Cleansed"
+  },
+  "EZK-C08-D-P06-ISoughtForAMan.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · I Sought for a Man"
+  },
+  "EZK-C08-D-P07-TwoWomenTheDaughte.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Two Women, the Daughters of One Mother"
+  },
+  "EZK-C08-D-P08-HerSisterOholibah.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Her Sister Oholibah"
+  },
+  "EZK-C08-D-P09-HerSisterOholibah.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Her Sister Oholibah"
+  },
+  "EZK-C08-D-P10-ThereforeOOholibah.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Therefore, O Oholibah"
+  },
+  "EZK-C08-D-P11-ThySisterSCup.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Thy Sister's Cup"
+  },
+  "EZK-C08-D-P12-WiltThouJudgeOhola.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Wilt Thou Judge Oholah and Oholibah?"
+  },
+  "EZK-C08-D-P13-WiltThouJudgeOhola.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Wilt Thou Judge Oholah and Oholibah?"
+  },
+  "EZK-C08-D-P14-RighteousMenShallJ.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Righteous Men Shall Judge Them"
+  },
+  "EZK-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Desire of Thine Eyes"
+  },
+  "EZK-C09-D-P01-SetOnTheCaldron.dc.html": {
+   "x": 840,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Set On the Caldron"
+  },
+  "EZK-C09-D-P02-WoeToTheBloodyCity.dc.html": {
+   "x": 1680,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Woe to the Bloody City"
+  },
+  "EZK-C09-D-P03-TheDesireOfThineEy.dc.html": {
+   "x": 2520,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Desire of Thine Eyes"
+  },
+  "EZK-C09-D-P04-EzekielShallBeUnto.dc.html": {
+   "x": 3360,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Ezekiel Shall Be unto You a Sign"
+  },
+  "EZK-C09-D-P05-EzekielShallBeUnto.dc.html": {
+   "x": 0,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Ezekiel Shall Be unto You a Sign"
+  },
+  "EZK-C09-D-P06-AgainstTheChildren.dc.html": {
+   "x": 840,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Against the Children of Ammon"
+  },
+  "EZK-C09-D-P07-AgainstTheChildren.dc.html": {
+   "x": 1680,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Against the Children of Ammon"
+  },
+  "EZK-C09-D-P08-Edom.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Edom"
+  },
+  "EZK-C09-D-P09-ThePhilistines.dc.html": {
+   "x": 3360,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Philistines"
+  },
+  "EZK-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · The Ship of Tyre"
+  },
+  "EZK-C10-D-P01-BeholdIAmAgainstTh.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Behold, I Am against Thee, O Tyre"
+  },
+  "EZK-C10-D-P02-NebuchadrezzarKing.dc.html": {
+   "x": 1680,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Nebuchadrezzar King of Babylon"
+  },
+  "EZK-C10-D-P03-NebuchadrezzarKing.dc.html": {
+   "x": 2520,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Nebuchadrezzar King of Babylon"
+  },
+  "EZK-C10-D-P04-ShallNotTheIslesSh.dc.html": {
+   "x": 3360,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · Shall Not the Isles Shake?"
+  },
+  "EZK-C10-D-P05-ALamentationOverTy.dc.html": {
+   "x": 0,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · A Lamentation over Tyre"
+  },
+  "EZK-C10-D-P06-PerfectInBeauty.dc.html": {
+   "x": 840,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Perfect in Beauty"
+  },
+  "EZK-C10-D-P07-ThyTraffickers.dc.html": {
+   "x": 1680,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Thy Traffickers"
+  },
+  "EZK-C10-D-P08-ThyTraffickers.dc.html": {
+   "x": 2520,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Thy Traffickers"
+  },
+  "EZK-C10-D-P09-BrokenInTheHeartOf.dc.html": {
+   "x": 3360,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Broken in the Heart of the Seas"
+  },
+  "EZK-C10-D-P10-WhoIsThereLikeTyre.dc.html": {
+   "x": 0,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Who Is There like Tyre?"
+  },
+  "EZK-C10-D-P11-ThePrinceOfTyre.dc.html": {
+   "x": 840,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Prince of Tyre"
+  },
+  "EZK-C10-D-P12-TheKingOfTyre.dc.html": {
+   "x": 1680,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · The King of Tyre"
+  },
+  "EZK-C10-D-P13-TheKingOfTyre.dc.html": {
+   "x": 2520,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · The King of Tyre"
+  },
+  "EZK-C10-D-P14-SetThyFaceTowardSi.dc.html": {
+   "x": 3360,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Set Thy Face toward Sidon"
+  },
+  "EZK-C10-D-P15-TheyShallDwellSecu.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · They Shall Dwell Securely"
+  },
+  "EZK-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Pharaoh King of Egypt"
+  },
+  "EZK-C11-D-P01-TheGreatMonster.dc.html": {
+   "x": 840,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · The Great Monster"
+  },
+  "EZK-C11-D-P02-AStaffOfReed.dc.html": {
+   "x": 1680,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · A Staff of Reed"
+  },
+  "EZK-C11-D-P03-AStaffOfReed.dc.html": {
+   "x": 2520,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · A Staff of Reed"
+  },
+  "EZK-C11-D-P04-AtTheEndOfFortyYea.dc.html": {
+   "x": 3360,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · At the End of Forty Years"
+  },
+  "EZK-C11-D-P05-HisRecompense.dc.html": {
+   "x": 0,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · His Recompense"
+  },
+  "EZK-C11-D-P06-AlasForTheDay.dc.html": {
+   "x": 840,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Alas for the Day!"
+  },
+  "EZK-C11-D-P07-ByTheHandOfNebucha.dc.html": {
+   "x": 1680,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · By the Hand of Nebuchadrezzar"
+  },
+  "EZK-C11-D-P08-IWillSetAFireInEgy.dc.html": {
+   "x": 2520,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · I Will Set a Fire in Egypt"
+  },
+  "EZK-C11-D-P09-IHaveBrokenTheArmO.dc.html": {
+   "x": 3360,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · I Have Broken the Arm of Pharaoh"
+  },
+  "EZK-C11-D-P10-IHaveBrokenTheArmO.dc.html": {
+   "x": 0,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · I Have Broken the Arm of Pharaoh"
+  },
+  "EZK-C11-D-P11-WhomArtThouLikeInT.dc.html": {
+   "x": 840,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Whom Art Thou Like in Thy Greatness?"
+  },
+  "EZK-C11-D-P12-BecauseThouArtExal.dc.html": {
+   "x": 1680,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Because Thou Art Exalted in Stature"
+  },
+  "EZK-C11-D-P13-BecauseThouArtExal.dc.html": {
+   "x": 2520,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · Because Thou Art Exalted in Stature"
+  },
+  "EZK-C11-D-P14-InTheDayWhenHeWent.dc.html": {
+   "x": 3360,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · In the Day When He Went Down to Sheol"
+  },
+  "EZK-C11-D-P15-ALamentationOverPh.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · A Lamentation over Pharaoh"
+  },
+  "EZK-C11-D-P16-ALamentationOverPh.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · A Lamentation over Pharaoh"
+  },
+  "EZK-C11-D-P17-TheSwordOfTheKingO.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The Sword of the King of Babylon"
+  },
+  "EZK-C11-D-P18-WailForTheMultitud.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Wail for the Multitude of Egypt"
+  },
+  "EZK-C11-D-P19-ThereIsElam.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · There Is Elam"
+  },
+  "EZK-C11-D-P20-ThereIsEdom.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · There Is Edom"
+  },
+  "EZK-C11-D-P21-ThereIsEdom.dc.html": {
+   "x": 840,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · There Is Edom"
+  },
+  "EZK-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Watchman and the Shepherds"
+  },
+  "EZK-C12-D-P01-WhenIBringTheSword.dc.html": {
+   "x": 840,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · When I Bring the Sword upon a Land"
+  },
+  "EZK-C12-D-P02-TurnYeTurnYe.dc.html": {
+   "x": 1680,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Turn Ye, Turn Ye"
+  },
+  "EZK-C12-D-P03-TurnYeTurnYe.dc.html": {
+   "x": 2520,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Turn Ye, Turn Ye"
+  },
+  "EZK-C12-D-P04-TheCityIsSmitten.dc.html": {
+   "x": 3360,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · The City Is Smitten"
+  },
+  "EZK-C12-D-P05-ThoseWastePlaces.dc.html": {
+   "x": 0,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Those Waste Places"
+  },
+  "EZK-C12-D-P06-AVeryLovelySong.dc.html": {
+   "x": 840,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · A Very Lovely Song"
+  },
+  "EZK-C12-D-P07-WoeUntoTheShepherd.dc.html": {
+   "x": 1680,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Woe unto the Shepherds of Israel"
+  },
+  "EZK-C12-D-P08-WoeUntoTheShepherd.dc.html": {
+   "x": 2520,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · Woe unto the Shepherds of Israel"
+  },
+  "EZK-C12-D-P09-IMyselfWillSearchF.dc.html": {
+   "x": 3360,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · I Myself Will Search for My Sheep"
+  },
+  "EZK-C12-D-P10-BetweenSheepAndShe.dc.html": {
+   "x": 0,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Between Sheep and Sheep"
+  },
+  "EZK-C12-D-P11-OneShepherd.dc.html": {
+   "x": 840,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · One Shepherd"
+  },
+  "EZK-C12-D-P12-ACovenantOfPeace.dc.html": {
+   "x": 1680,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · A Covenant of Peace"
+  },
+  "EZK-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · The Valley of Dry Bones"
+  },
+  "EZK-C13-D-P01-OMountSeir.dc.html": {
+   "x": 840,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · O Mount Seir"
+  },
+  "EZK-C13-D-P02-TheseTwoNations.dc.html": {
+   "x": 1680,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · These Two Nations"
+  },
+  "EZK-C13-D-P03-TheseTwoNations.dc.html": {
+   "x": 2520,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · These Two Nations"
+  },
+  "EZK-C13-D-P04-YeMountainsOfIsrae.dc.html": {
+   "x": 3360,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Ye Mountains of Israel, Hear"
+  },
+  "EZK-C13-D-P05-YeMountainsOfIsrae.dc.html": {
+   "x": 0,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · Ye Mountains of Israel, Hear"
+  },
+  "EZK-C13-D-P06-YeShallShootForthY.dc.html": {
+   "x": 840,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · Ye Shall Shoot Forth Your Branches"
+  },
+  "EZK-C13-D-P07-ForMineHolyName.dc.html": {
+   "x": 1680,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · For Mine Holy Name"
+  },
+  "EZK-C13-D-P08-ForMineHolyName.dc.html": {
+   "x": 2520,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · For Mine Holy Name"
+  },
+  "EZK-C13-D-P09-ANewHeartAlsoWillI.dc.html": {
+   "x": 3360,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · A New Heart Also Will I Give You"
+  },
+  "EZK-C13-D-P10-LikeTheGardenOfEde.dc.html": {
+   "x": 0,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Like the Garden of Eden"
+  },
+  "EZK-C13-D-P11-LikeTheGardenOfEde.dc.html": {
+   "x": 840,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Like the Garden of Eden"
+  },
+  "EZK-C13-D-P12-TheValleyFullOfBon.dc.html": {
+   "x": 1680,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · The Valley Full of Bones"
+  },
+  "EZK-C13-D-P13-BoneToItsBone.dc.html": {
+   "x": 2520,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Bone to Its Bone"
+  },
+  "EZK-C13-D-P14-TheseBonesAreTheWh.dc.html": {
+   "x": 3360,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · These Bones Are the Whole House of Israel"
+  },
+  "EZK-C13-D-P15-OneStick.dc.html": {
+   "x": 0,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · One Stick"
+  },
+  "EZK-C13-D-P16-OneNationUponTheMo.dc.html": {
+   "x": 840,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · One Nation upon the Mountains of Israel"
+  },
+  "EZK-C13-D-P17-OneNationUponTheMo.dc.html": {
+   "x": 1680,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · One Nation upon the Mountains of Israel"
+  },
+  "EZK-C13-D-P18-MySanctuaryInTheMi.dc.html": {
+   "x": 2520,
+   "y": 62000,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · My Sanctuary in the Midst of Them"
+  },
+  "EZK-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Gog"
+  },
+  "EZK-C14-D-P01-GogOfTheLandOfMago.dc.html": {
+   "x": 840,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Gog, of the Land of Magog"
+  },
+  "EZK-C14-D-P02-TheLandOfUnwalledV.dc.html": {
+   "x": 1680,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · The Land of Unwalled Villages"
+  },
+  "EZK-C14-D-P03-TheLandOfUnwalledV.dc.html": {
+   "x": 2520,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · The Land of Unwalled Villages"
+  },
+  "EZK-C14-D-P04-OutOfTheUttermostP.dc.html": {
+   "x": 3360,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · Out of the Uttermost Parts of the North"
+  },
+  "EZK-C14-D-P05-AGreatShaking.dc.html": {
+   "x": 0,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · A Great Shaking"
+  },
+  "EZK-C14-D-P06-BeholdIAmAgainstTh.dc.html": {
+   "x": 840,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Behold, I Am against Thee, O Gog"
+  },
+  "EZK-C14-D-P07-FiresOfTheWeapons.dc.html": {
+   "x": 1680,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Fires of the Weapons"
+  },
+  "EZK-C14-D-P08-TheValleyOfHamonGo.dc.html": {
+   "x": 2520,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · The Valley of Hamon-gog"
+  },
+  "EZK-C14-D-P09-AssembleYourselves.dc.html": {
+   "x": 3360,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Assemble Yourselves"
+  },
+  "EZK-C14-D-P10-IWillSetMyGloryAmo.dc.html": {
+   "x": 0,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · I Will Set My Glory among the Nations"
+  },
+  "EZK-C14-D-P11-NowWillIBringBackT.dc.html": {
+   "x": 840,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · Now Will I Bring Back the Captivity of Jacob"
+  },
+  "EZK-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · The Measuring Reed"
+  },
+  "EZK-C15-D-P01-AManLikeBrass.dc.html": {
+   "x": 840,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · A Man like Brass"
+  },
+  "EZK-C15-D-P02-TheGateTowardTheEa.dc.html": {
+   "x": 1680,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · The Gate toward the East"
+  },
+  "EZK-C15-D-P03-TheGateTowardTheEa.dc.html": {
+   "x": 2520,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · The Gate toward the East"
+  },
+  "EZK-C15-D-P04-TheNorthGate.dc.html": {
+   "x": 3360,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · The North Gate"
+  },
+  "EZK-C15-D-P05-TheInnerCourt.dc.html": {
+   "x": 0,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · The Inner Court"
+  },
+  "EZK-C15-D-P06-TheInnerCourt.dc.html": {
+   "x": 840,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · The Inner Court"
+  },
+  "EZK-C15-D-P07-TheTablesOfHewnSto.dc.html": {
+   "x": 1680,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · The Tables of Hewn Stone"
+  },
+  "EZK-C15-D-P08-ThePorchOfTheHouse.dc.html": {
+   "x": 2520,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · The Porch of the House"
+  },
+  "EZK-C15-D-P09-TheTempleAndTheMos.dc.html": {
+   "x": 3360,
+   "y": 69000,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · The Temple and the Most Holy Place"
+  },
+  "EZK-C15-D-P10-TheSideChambers.dc.html": {
+   "x": 0,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · The Side-Chambers"
+  },
+  "EZK-C15-D-P11-TheBuildingTowardT.dc.html": {
+   "x": 840,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · The Building toward the West"
+  },
+  "EZK-C15-D-P12-CherubimAndPalmTre.dc.html": {
+   "x": 1680,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · Cherubim and Palm-Trees"
+  },
+  "EZK-C15-D-P13-TheTableThatIsBefo.dc.html": {
+   "x": 2520,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · The Table That Is before Jehovah"
+  },
+  "EZK-C15-D-P14-TheChambersTowardT.dc.html": {
+   "x": 3360,
+   "y": 70200,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · The Chambers toward the North"
+  },
+  "EZK-C15-D-P15-TheHolyChambers.dc.html": {
+   "x": 0,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "213 · The Holy Chambers"
+  },
+  "EZK-C15-D-P16-FiveHundredReeds.dc.html": {
+   "x": 840,
+   "y": 71400,
+   "w": 760,
+   "h": 1080,
+   "title": "214 · Five Hundred Reeds"
+  },
+  "EZK-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 73100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · The Glory Returns"
+  },
+  "EZK-C16-D-P01-TheGloryOfJehovahF.dc.html": {
+   "x": 840,
+   "y": 73100,
+   "w": 760,
+   "h": 1080,
+   "title": "215 · The Glory of Jehovah Filled the House"
+  },
+  "EZK-C16-D-P02-ThePlaceOfMyThrone.dc.html": {
+   "x": 1680,
+   "y": 73100,
+   "w": 760,
+   "h": 1080,
+   "title": "216 · The Place of My Throne"
+  },
+  "EZK-C16-D-P03-ShowTheHouse.dc.html": {
+   "x": 2520,
+   "y": 73100,
+   "w": 760,
+   "h": 1080,
+   "title": "217 · Show the House"
+  },
+  "EZK-C16-D-P04-TheMeasuresOfTheAl.dc.html": {
+   "x": 3360,
+   "y": 73100,
+   "w": 760,
+   "h": 1080,
+   "title": "218 · The Measures of the Altar"
+  },
+  "EZK-C16-D-P05-TheOrdinancesOfThe.dc.html": {
+   "x": 0,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "219 · The Ordinances of the Altar"
+  },
+  "EZK-C16-D-P06-TheOrdinancesOfThe.dc.html": {
+   "x": 840,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "220 · The Ordinances of the Altar"
+  },
+  "EZK-C16-D-P07-ThisGateShallBeShu.dc.html": {
+   "x": 1680,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "221 · This Gate Shall Be Shut"
+  },
+  "EZK-C16-D-P08-MarkWell.dc.html": {
+   "x": 2520,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "222 · Mark Well"
+  },
+  "EZK-C16-D-P09-TheLevites.dc.html": {
+   "x": 3360,
+   "y": 74300,
+   "w": 760,
+   "h": 1080,
+   "title": "223 · The Levites"
+  },
+  "EZK-C16-D-P10-TheSonsOfZadok.dc.html": {
+   "x": 0,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "224 · The Sons of Zadok"
+  },
+  "EZK-C16-D-P11-LinenGarments.dc.html": {
+   "x": 840,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "225 · Linen Garments"
+  },
+  "EZK-C16-D-P12-LinenGarments.dc.html": {
+   "x": 1680,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "226 · Linen Garments"
+  },
+  "EZK-C16-D-P13-IAmTheirInheritanc.dc.html": {
+   "x": 2520,
+   "y": 75500,
+   "w": 760,
+   "h": 1080,
+   "title": "227 · I Am Their Inheritance"
+  },
+  "EZK-C17-00-Title.dc.html": {
+   "x": 0,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 17 · The Holy Oblation"
+  },
+  "EZK-C17-D-P01-TheHolyOblation.dc.html": {
+   "x": 840,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "228 · The Holy Oblation"
+  },
+  "EZK-C17-D-P02-WhatsoeverIsForThe.dc.html": {
+   "x": 1680,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "229 · Whatsoever Is for the Prince"
+  },
+  "EZK-C17-D-P03-TheOblationThatYeS.dc.html": {
+   "x": 2520,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "230 · The Oblation That Ye Shall Offer"
+  },
+  "EZK-C17-D-P04-InTheFirstMonth.dc.html": {
+   "x": 3360,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "231 · In the First Month"
+  },
+  "EZK-C17-D-P05-ThePassover.dc.html": {
+   "x": 0,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "232 · The Passover"
+  },
+  "EZK-C17-D-P06-OnTheSabbathItShal.dc.html": {
+   "x": 840,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "233 · On the Sabbath It Shall Be Opened"
+  },
+  "EZK-C17-D-P07-InTheAppointedFeas.dc.html": {
+   "x": 1680,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "234 · In the Appointed Feasts"
+  },
+  "EZK-C17-D-P08-MorningByMorning.dc.html": {
+   "x": 2520,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "235 · Morning by Morning"
+  },
+  "EZK-C17-D-P09-WhereThePriestsSha.dc.html": {
+   "x": 3360,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "236 · Where the Priests Shall Boil"
+  },
+  "EZK-C17-D-P10-InEveryCornerOfThe.dc.html": {
+   "x": 0,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "237 · In Every Corner of the Court"
+  },
+  "EZK-C18-00-Title.dc.html": {
+   "x": 0,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 18 · Jehovah Is There"
+  },
+  "EZK-C18-D-P01-WatersToSwimIn.dc.html": {
+   "x": 840,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "238 · Waters to Swim In"
+  },
+  "EZK-C18-D-P02-TheWatersShallBeHe.dc.html": {
+   "x": 1680,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "239 · The Waters Shall Be Healed"
+  },
+  "EZK-C18-D-P03-TheLeafThereofForH.dc.html": {
+   "x": 2520,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "240 · The Leaf Thereof for Healing"
+  },
+  "EZK-C18-D-P04-ThisShallBeTheBord.dc.html": {
+   "x": 3360,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "241 · This Shall Be the Border"
+  },
+  "EZK-C18-D-P05-TheStrangerThatSoj.dc.html": {
+   "x": 0,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "242 · The Stranger That Sojourneth"
+  },
+  "EZK-C18-D-P06-TheNamesOfTheTribe.dc.html": {
+   "x": 840,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "243 · The Names of the Tribes"
+  },
+  "EZK-C18-D-P07-TheHolyOblation.dc.html": {
+   "x": 1680,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "244 · The Holy Oblation"
+  },
+  "EZK-C18-D-P08-TheCityAndItsSubur.dc.html": {
+   "x": 2520,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "245 · The City and Its Suburbs"
+  },
+  "EZK-C18-D-P09-TheResidueShallBeF.dc.html": {
+   "x": 3360,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "246 · The Residue Shall Be for the Prince"
+  },
+  "EZK-C18-D-P10-TheRestOfTheTribes.dc.html": {
+   "x": 0,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "247 · The Rest of the Tribes"
+  },
+  "EZK-C18-D-P11-TheEgressesOfTheCi.dc.html": {
+   "x": 840,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "248 · The Egresses of the City"
+  },
+  "EZK-C18-D-P12-JehovahIsThere.dc.html": {
+   "x": 1680,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "249 · Jehovah Is There"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "EZK-C01-00-Title.dc.html",
+  "EZK-C01-D-P01-AStormyWindOutOfTh.dc.html",
+  "EZK-C01-D-P02-FourLivingCreature.dc.html",
+  "EZK-C01-D-P03-AWheelWithinAWheel.dc.html",
+  "EZK-C01-D-P04-TheTerribleCrystal.dc.html",
+  "EZK-C01-D-P05-TheLikenessOfTheGl.dc.html",
+  "EZK-C01-D-P06-SonOfManStandUponT.dc.html",
+  "EZK-C01-D-P07-ARollOfABook.dc.html",
+  "EZK-C01-D-P08-SpeakWithMyWordsUn.dc.html",
+  "EZK-C01-D-P09-TheVoiceOfAGreatRu.dc.html",
+  "EZK-C01-D-P10-IHaveMadeTheeAWatc.dc.html",
+  "EZK-C01-D-P11-GoForthIntoThePlai.dc.html",
+  "EZK-C02-00-Title.dc.html",
+  "EZK-C02-D-P01-EachDayForAYear.dc.html",
+  "EZK-C02-D-P02-TheBreadOfTheSiege.dc.html",
+  "EZK-C02-D-P03-TheBreadOfTheSiege.dc.html",
+  "EZK-C02-D-P04-ThisIsJerusalem.dc.html",
+  "EZK-C02-D-P05-ThisIsJerusalem.dc.html",
+  "EZK-C02-D-P06-AThirdPart.dc.html",
+  "EZK-C02-D-P07-YeMountainsOfIsrae.dc.html",
+  "EZK-C02-D-P08-YeMountainsOfIsrae.dc.html",
+  "EZK-C02-D-P09-YetWillILeaveARemn.dc.html",
+  "EZK-C02-D-P10-SmiteWithThyHand.dc.html",
+  "EZK-C02-D-P11-AnEndIsCome.dc.html",
+  "EZK-C02-D-P12-TheRodHathBlossome.dc.html",
+  "EZK-C02-D-P13-TheyHaveBlownTheTr.dc.html",
+  "EZK-C02-D-P14-TheyHaveBlownTheTr.dc.html",
+  "EZK-C02-D-P15-MakeTheChain.dc.html",
+  "EZK-C03-00-Title.dc.html",
+  "EZK-C03-D-P01-AsISatInMyHouse.dc.html",
+  "EZK-C03-D-P02-TheImageOfJealousy.dc.html",
+  "EZK-C03-D-P03-AHoleInTheWall.dc.html",
+  "EZK-C03-D-P04-TheirFacesTowardTh.dc.html",
+  "EZK-C03-D-P05-TheManClothedInLin.dc.html",
+  "EZK-C03-D-P06-TheManClothedInLin.dc.html",
+  "EZK-C03-D-P07-TheManClothedInLin.dc.html",
+  "EZK-C03-D-P08-AhLordJehovah.dc.html",
+  "EZK-C03-D-P09-CoalsOfFire.dc.html",
+  "EZK-C03-D-P10-TheWhirlingWheels.dc.html",
+  "EZK-C03-D-P11-TheWhirlingWheels.dc.html",
+  "EZK-C03-D-P12-AtTheDoorOfTheEast.dc.html",
+  "EZK-C03-D-P13-ThisCityIsTheCaldr.dc.html",
+  "EZK-C03-D-P14-ThisCityIsTheCaldr.dc.html",
+  "EZK-C03-D-P15-ASanctuaryForALitt.dc.html",
+  "EZK-C03-D-P16-TheGloryWentUp.dc.html",
+  "EZK-C04-00-Title.dc.html",
+  "EZK-C04-D-P01-PrepareTheeStuffFo.dc.html",
+  "EZK-C04-D-P02-IAmYourSign.dc.html",
+  "EZK-C04-D-P03-IAmYourSign.dc.html",
+  "EZK-C04-D-P04-BreadWithQuaking.dc.html",
+  "EZK-C04-D-P05-EveryVisionFaileth.dc.html",
+  "EZK-C04-D-P06-FoxesInTheWastePla.dc.html",
+  "EZK-C04-D-P07-UntemperedMortar.dc.html",
+  "EZK-C04-D-P08-UntemperedMortar.dc.html",
+  "EZK-C04-D-P09-WoeToTheWomenThatS.dc.html",
+  "EZK-C04-D-P10-IdolsInTheirHeart.dc.html",
+  "EZK-C04-D-P11-IdolsInTheirHeart.dc.html",
+  "EZK-C04-D-P12-IdolsInTheirHeart.dc.html",
+  "EZK-C04-D-P13-NoahDanielAndJob.dc.html",
+  "EZK-C04-D-P14-YetThereShallBeLef.dc.html",
+  "EZK-C04-D-P15-YetThereShallBeLef.dc.html",
+  "EZK-C05-00-Title.dc.html",
+  "EZK-C05-D-P01-TheVineTree.dc.html",
+  "EZK-C05-D-P02-ThyBirthAndThyNati.dc.html",
+  "EZK-C05-D-P03-ThyBirthAndThyNati.dc.html",
+  "EZK-C05-D-P04-ThouDidstTrustInTh.dc.html",
+  "EZK-C05-D-P05-AVaultedPlace.dc.html",
+  "EZK-C05-D-P06-AVaultedPlace.dc.html",
+  "EZK-C05-D-P07-AVaultedPlace.dc.html",
+  "EZK-C05-D-P08-IWillJudgeThee.dc.html",
+  "EZK-C05-D-P09-IWillJudgeThee.dc.html",
+  "EZK-C05-D-P10-AsIsTheMotherSoIsH.dc.html",
+  "EZK-C05-D-P11-AsIsTheMotherSoIsH.dc.html",
+  "EZK-C05-D-P12-AnEverlastingCoven.dc.html",
+  "EZK-C06-00-Title.dc.html",
+  "EZK-C06-D-P01-TwoGreatEagles.dc.html",
+  "EZK-C06-D-P02-TwoGreatEagles.dc.html",
+  "EZK-C06-D-P03-KnowYeNotWhatThese.dc.html",
+  "EZK-C06-D-P04-KnowYeNotWhatThese.dc.html",
+  "EZK-C06-D-P05-ATenderTwig.dc.html",
+  "EZK-C06-D-P06-IfAManBeJust.dc.html",
+  "EZK-C06-D-P07-IfAManBeJust.dc.html",
+  "EZK-C06-D-P08-IfHeBegetASon.dc.html",
+  "EZK-C06-D-P09-TurnYourselvesAndL.dc.html",
+  "EZK-C06-D-P10-IsNotMyWayEqual.dc.html",
+  "EZK-C06-D-P11-ALamentationForThe.dc.html",
+  "EZK-C06-D-P12-ALamentationForThe.dc.html",
+  "EZK-C06-D-P13-ThyMotherWasLikeAV.dc.html",
+  "EZK-C07-00-Title.dc.html",
+  "EZK-C07-D-P01-InTheDayWhenIChose.dc.html",
+  "EZK-C07-D-P02-InTheDayWhenIChose.dc.html",
+  "EZK-C07-D-P03-InTheWilderness.dc.html",
+  "EZK-C07-D-P04-InTheWilderness.dc.html",
+  "EZK-C07-D-P05-InTheWilderness.dc.html",
+  "EZK-C07-D-P06-WhenIHadBroughtThe.dc.html",
+  "EZK-C07-D-P07-IWillBeKingOverYou.dc.html",
+  "EZK-C07-D-P08-InMyHolyMountain.dc.html",
+  "EZK-C07-D-P09-InMyHolyMountain.dc.html",
+  "EZK-C07-D-P10-TheForestOfTheSout.dc.html",
+  "EZK-C07-D-P11-IHaveDrawnForthMyS.dc.html",
+  "EZK-C07-D-P12-ASwordASword.dc.html",
+  "EZK-C07-D-P13-ASwordASword.dc.html",
+  "EZK-C07-D-P14-ThePartingOfTheWay.dc.html",
+  "EZK-C07-D-P15-ThePartingOfTheWay.dc.html",
+  "EZK-C07-D-P16-ConcerningTheChild.dc.html",
+  "EZK-C08-00-Title.dc.html",
+  "EZK-C08-D-P01-TheBloodyCity.dc.html",
+  "EZK-C08-D-P02-TheBloodyCity.dc.html",
+  "EZK-C08-D-P03-TheBloodyCity.dc.html",
+  "EZK-C08-D-P04-DrossInTheFurnace.dc.html",
+  "EZK-C08-D-P05-ALandNotCleansed.dc.html",
+  "EZK-C08-D-P06-ISoughtForAMan.dc.html",
+  "EZK-C08-D-P07-TwoWomenTheDaughte.dc.html",
+  "EZK-C08-D-P08-HerSisterOholibah.dc.html",
+  "EZK-C08-D-P09-HerSisterOholibah.dc.html",
+  "EZK-C08-D-P10-ThereforeOOholibah.dc.html",
+  "EZK-C08-D-P11-ThySisterSCup.dc.html",
+  "EZK-C08-D-P12-WiltThouJudgeOhola.dc.html",
+  "EZK-C08-D-P13-WiltThouJudgeOhola.dc.html",
+  "EZK-C08-D-P14-RighteousMenShallJ.dc.html",
+  "EZK-C09-00-Title.dc.html",
+  "EZK-C09-D-P01-SetOnTheCaldron.dc.html",
+  "EZK-C09-D-P02-WoeToTheBloodyCity.dc.html",
+  "EZK-C09-D-P03-TheDesireOfThineEy.dc.html",
+  "EZK-C09-D-P04-EzekielShallBeUnto.dc.html",
+  "EZK-C09-D-P05-EzekielShallBeUnto.dc.html",
+  "EZK-C09-D-P06-AgainstTheChildren.dc.html",
+  "EZK-C09-D-P07-AgainstTheChildren.dc.html",
+  "EZK-C09-D-P08-Edom.dc.html",
+  "EZK-C09-D-P09-ThePhilistines.dc.html",
+  "EZK-C10-00-Title.dc.html",
+  "EZK-C10-D-P01-BeholdIAmAgainstTh.dc.html",
+  "EZK-C10-D-P02-NebuchadrezzarKing.dc.html",
+  "EZK-C10-D-P03-NebuchadrezzarKing.dc.html",
+  "EZK-C10-D-P04-ShallNotTheIslesSh.dc.html",
+  "EZK-C10-D-P05-ALamentationOverTy.dc.html",
+  "EZK-C10-D-P06-PerfectInBeauty.dc.html",
+  "EZK-C10-D-P07-ThyTraffickers.dc.html",
+  "EZK-C10-D-P08-ThyTraffickers.dc.html",
+  "EZK-C10-D-P09-BrokenInTheHeartOf.dc.html",
+  "EZK-C10-D-P10-WhoIsThereLikeTyre.dc.html",
+  "EZK-C10-D-P11-ThePrinceOfTyre.dc.html",
+  "EZK-C10-D-P12-TheKingOfTyre.dc.html",
+  "EZK-C10-D-P13-TheKingOfTyre.dc.html",
+  "EZK-C10-D-P14-SetThyFaceTowardSi.dc.html",
+  "EZK-C10-D-P15-TheyShallDwellSecu.dc.html",
+  "EZK-C11-00-Title.dc.html",
+  "EZK-C11-D-P01-TheGreatMonster.dc.html",
+  "EZK-C11-D-P02-AStaffOfReed.dc.html",
+  "EZK-C11-D-P03-AStaffOfReed.dc.html",
+  "EZK-C11-D-P04-AtTheEndOfFortyYea.dc.html",
+  "EZK-C11-D-P05-HisRecompense.dc.html",
+  "EZK-C11-D-P06-AlasForTheDay.dc.html",
+  "EZK-C11-D-P07-ByTheHandOfNebucha.dc.html",
+  "EZK-C11-D-P08-IWillSetAFireInEgy.dc.html",
+  "EZK-C11-D-P09-IHaveBrokenTheArmO.dc.html",
+  "EZK-C11-D-P10-IHaveBrokenTheArmO.dc.html",
+  "EZK-C11-D-P11-WhomArtThouLikeInT.dc.html",
+  "EZK-C11-D-P12-BecauseThouArtExal.dc.html",
+  "EZK-C11-D-P13-BecauseThouArtExal.dc.html",
+  "EZK-C11-D-P14-InTheDayWhenHeWent.dc.html",
+  "EZK-C11-D-P15-ALamentationOverPh.dc.html",
+  "EZK-C11-D-P16-ALamentationOverPh.dc.html",
+  "EZK-C11-D-P17-TheSwordOfTheKingO.dc.html",
+  "EZK-C11-D-P18-WailForTheMultitud.dc.html",
+  "EZK-C11-D-P19-ThereIsElam.dc.html",
+  "EZK-C11-D-P20-ThereIsEdom.dc.html",
+  "EZK-C11-D-P21-ThereIsEdom.dc.html",
+  "EZK-C12-00-Title.dc.html",
+  "EZK-C12-D-P01-WhenIBringTheSword.dc.html",
+  "EZK-C12-D-P02-TurnYeTurnYe.dc.html",
+  "EZK-C12-D-P03-TurnYeTurnYe.dc.html",
+  "EZK-C12-D-P04-TheCityIsSmitten.dc.html",
+  "EZK-C12-D-P05-ThoseWastePlaces.dc.html",
+  "EZK-C12-D-P06-AVeryLovelySong.dc.html",
+  "EZK-C12-D-P07-WoeUntoTheShepherd.dc.html",
+  "EZK-C12-D-P08-WoeUntoTheShepherd.dc.html",
+  "EZK-C12-D-P09-IMyselfWillSearchF.dc.html",
+  "EZK-C12-D-P10-BetweenSheepAndShe.dc.html",
+  "EZK-C12-D-P11-OneShepherd.dc.html",
+  "EZK-C12-D-P12-ACovenantOfPeace.dc.html",
+  "EZK-C13-00-Title.dc.html",
+  "EZK-C13-D-P01-OMountSeir.dc.html",
+  "EZK-C13-D-P02-TheseTwoNations.dc.html",
+  "EZK-C13-D-P03-TheseTwoNations.dc.html",
+  "EZK-C13-D-P04-YeMountainsOfIsrae.dc.html",
+  "EZK-C13-D-P05-YeMountainsOfIsrae.dc.html",
+  "EZK-C13-D-P06-YeShallShootForthY.dc.html",
+  "EZK-C13-D-P07-ForMineHolyName.dc.html",
+  "EZK-C13-D-P08-ForMineHolyName.dc.html",
+  "EZK-C13-D-P09-ANewHeartAlsoWillI.dc.html",
+  "EZK-C13-D-P10-LikeTheGardenOfEde.dc.html",
+  "EZK-C13-D-P11-LikeTheGardenOfEde.dc.html",
+  "EZK-C13-D-P12-TheValleyFullOfBon.dc.html",
+  "EZK-C13-D-P13-BoneToItsBone.dc.html",
+  "EZK-C13-D-P14-TheseBonesAreTheWh.dc.html",
+  "EZK-C13-D-P15-OneStick.dc.html",
+  "EZK-C13-D-P16-OneNationUponTheMo.dc.html",
+  "EZK-C13-D-P17-OneNationUponTheMo.dc.html",
+  "EZK-C13-D-P18-MySanctuaryInTheMi.dc.html",
+  "EZK-C14-00-Title.dc.html",
+  "EZK-C14-D-P01-GogOfTheLandOfMago.dc.html",
+  "EZK-C14-D-P02-TheLandOfUnwalledV.dc.html",
+  "EZK-C14-D-P03-TheLandOfUnwalledV.dc.html",
+  "EZK-C14-D-P04-OutOfTheUttermostP.dc.html",
+  "EZK-C14-D-P05-AGreatShaking.dc.html",
+  "EZK-C14-D-P06-BeholdIAmAgainstTh.dc.html",
+  "EZK-C14-D-P07-FiresOfTheWeapons.dc.html",
+  "EZK-C14-D-P08-TheValleyOfHamonGo.dc.html",
+  "EZK-C14-D-P09-AssembleYourselves.dc.html",
+  "EZK-C14-D-P10-IWillSetMyGloryAmo.dc.html",
+  "EZK-C14-D-P11-NowWillIBringBackT.dc.html",
+  "EZK-C15-00-Title.dc.html",
+  "EZK-C15-D-P01-AManLikeBrass.dc.html",
+  "EZK-C15-D-P02-TheGateTowardTheEa.dc.html",
+  "EZK-C15-D-P03-TheGateTowardTheEa.dc.html",
+  "EZK-C15-D-P04-TheNorthGate.dc.html",
+  "EZK-C15-D-P05-TheInnerCourt.dc.html",
+  "EZK-C15-D-P06-TheInnerCourt.dc.html",
+  "EZK-C15-D-P07-TheTablesOfHewnSto.dc.html",
+  "EZK-C15-D-P08-ThePorchOfTheHouse.dc.html",
+  "EZK-C15-D-P09-TheTempleAndTheMos.dc.html",
+  "EZK-C15-D-P10-TheSideChambers.dc.html",
+  "EZK-C15-D-P11-TheBuildingTowardT.dc.html",
+  "EZK-C15-D-P12-CherubimAndPalmTre.dc.html",
+  "EZK-C15-D-P13-TheTableThatIsBefo.dc.html",
+  "EZK-C15-D-P14-TheChambersTowardT.dc.html",
+  "EZK-C15-D-P15-TheHolyChambers.dc.html",
+  "EZK-C15-D-P16-FiveHundredReeds.dc.html",
+  "EZK-C16-00-Title.dc.html",
+  "EZK-C16-D-P01-TheGloryOfJehovahF.dc.html",
+  "EZK-C16-D-P02-ThePlaceOfMyThrone.dc.html",
+  "EZK-C16-D-P03-ShowTheHouse.dc.html",
+  "EZK-C16-D-P04-TheMeasuresOfTheAl.dc.html",
+  "EZK-C16-D-P05-TheOrdinancesOfThe.dc.html",
+  "EZK-C16-D-P06-TheOrdinancesOfThe.dc.html",
+  "EZK-C16-D-P07-ThisGateShallBeShu.dc.html",
+  "EZK-C16-D-P08-MarkWell.dc.html",
+  "EZK-C16-D-P09-TheLevites.dc.html",
+  "EZK-C16-D-P10-TheSonsOfZadok.dc.html",
+  "EZK-C16-D-P11-LinenGarments.dc.html",
+  "EZK-C16-D-P12-LinenGarments.dc.html",
+  "EZK-C16-D-P13-IAmTheirInheritanc.dc.html",
+  "EZK-C17-00-Title.dc.html",
+  "EZK-C17-D-P01-TheHolyOblation.dc.html",
+  "EZK-C17-D-P02-WhatsoeverIsForThe.dc.html",
+  "EZK-C17-D-P03-TheOblationThatYeS.dc.html",
+  "EZK-C17-D-P04-InTheFirstMonth.dc.html",
+  "EZK-C17-D-P05-ThePassover.dc.html",
+  "EZK-C17-D-P06-OnTheSabbathItShal.dc.html",
+  "EZK-C17-D-P07-InTheAppointedFeas.dc.html",
+  "EZK-C17-D-P08-MorningByMorning.dc.html",
+  "EZK-C17-D-P09-WhereThePriestsSha.dc.html",
+  "EZK-C17-D-P10-InEveryCornerOfThe.dc.html",
+  "EZK-C18-00-Title.dc.html",
+  "EZK-C18-D-P01-WatersToSwimIn.dc.html",
+  "EZK-C18-D-P02-TheWatersShallBeHe.dc.html",
+  "EZK-C18-D-P03-TheLeafThereofForH.dc.html",
+  "EZK-C18-D-P04-ThisShallBeTheBord.dc.html",
+  "EZK-C18-D-P05-TheStrangerThatSoj.dc.html",
+  "EZK-C18-D-P06-TheNamesOfTheTribe.dc.html",
+  "EZK-C18-D-P07-TheHolyOblation.dc.html",
+  "EZK-C18-D-P08-TheCityAndItsSubur.dc.html",
+  "EZK-C18-D-P09-TheResidueShallBeF.dc.html",
+  "EZK-C18-D-P10-TheRestOfTheTribes.dc.html",
+  "EZK-C18-D-P11-TheEgressesOfTheCi.dc.html",
+  "EZK-C18-D-P12-JehovahIsThere.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Ezekiel Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Visions of God (Ezekiel 1–3)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Siege on a Tile (Ezekiel 4–7)",
+   "x": 0,
+   "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Glory Departs (Ezekiel 8–11)",
+   "x": 0,
+   "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Stuff for Removing (Ezekiel 12–14)",
+   "x": 0,
+   "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Vine and the Foundling (Ezekiel 15–16)",
+   "x": 0,
+   "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Eagles and the Cedar (Ezekiel 17–19)",
+   "x": 0,
+   "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · A Sword, a Sword (Ezekiel 20–21)",
+   "x": 0,
+   "y": 29900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Oholah and Oholibah (Ezekiel 22–23)",
+   "x": 0,
+   "y": 35200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Desire of Thine Eyes (Ezekiel 24–25)",
+   "x": 0,
+   "y": 39300
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · The Ship of Tyre (Ezekiel 26–28)",
+   "x": 0,
+   "y": 42200
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Pharaoh King of Egypt (Ezekiel 29–32)",
+   "x": 0,
+   "y": 47500
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Watchman and the Shepherds (Ezekiel 33–34)",
+   "x": 0,
+   "y": 54000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · The Valley of Dry Bones (Ezekiel 35–37)",
+   "x": 0,
+   "y": 58100
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Gog (Ezekiel 38–39)",
+   "x": 0,
+   "y": 63400
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · The Measuring Reed (Ezekiel 40–42)",
+   "x": 0,
+   "y": 67500
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · The Glory Returns (Ezekiel 43–44)",
+   "x": 0,
+   "y": 72800
+  },
+  "chapter17": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 17 · The Holy Oblation (Ezekiel 45–46)",
+   "x": 0,
+   "y": 76900
+  },
+  "chapter18": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 18 · Jehovah Is There (Ezekiel 47–48)",
+   "x": 0,
+   "y": 81000
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
