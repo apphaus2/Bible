@@ -12,10 +12,10 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 
 ## Status
 
-**Complete: Genesis through Lamentations, and Daniel through Amos (29 volumes, 4,057 pages, 21,238 verses).** Per-chapter detail is
-in each `volumes/<id>/volume.json` and `coverage.md`. Unfinished books wait on local branches: `wip/ezekiel` (`ezk`, through
-ch. 16, last commit unchecked), `wip/obadiah-malachi` (`oba` … `mal`, stopped in Zechariah), `wip/matthew`, `wip/mark`, `wip/luke`,
-`wip/john`, `wip/acts` (first drafts; only Mark has a chapter). Next: finish those, then Romans–Revelation.
+**Complete: Genesis through Lamentations, and Daniel through Malachi (38 volumes, 4,210 pages, 21,872 verses).** Per-chapter
+detail is in each `volumes/<id>/volume.json` and `coverage.md`. Unfinished books wait on local branches: `wip/ezekiel` (`ezk`,
+being finished), `wip/matthew`, `wip/mark`, `wip/luke`, `wip/john`, `wip/acts` (first drafts; only Mark has a chapter). Next:
+Ezekiel, then those, then Romans–Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each other's art.
 
 | # | Book | Package | Chapters | Pages | Verses |
 |---|---|---|---|---|---|
@@ -48,8 +48,17 @@ ch. 16, last commit unchecked), `wip/obadiah-malachi` (`oba` … `mal`, stopped 
 | 28 | Hosea | `hos` | 3 | 41 | 197 full |
 | 29 | Joel | `jol` | 1 | 16 | 73 full |
 | 30 | Amos | `amo` | 2 | 36 | 146 full |
+| 31 | Obadiah | `oba` | 1 | 6 | 21 full |
+| 32 | Jonah | `jon` | 2 | 15 | 48 full |
+| 33 | Micah | `mic` | 2 | 26 | 105 full |
+| 34 | Nahum | `nam` | 1 | 11 | 47 full |
+| 35 | Habakkuk | `hab` | 1 | 12 | 56 full |
+| 36 | Zephaniah | `zep` | 1 | 12 | 53 full |
+| 37 | Haggai | `hag` | 1 | 9 | 38 full |
+| 38 | Zechariah | `zec` | 4 | 49 | 211 full |
+| 39 | Malachi | `mal` | 1 | 13 | 55 full |
 
-Order numbers and ids for the rest: Ezekiel 26, Obadiah 31 … Malachi 39; Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
+Order numbers and ids for the rest: Ezekiel 26; Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.
 
 ## Rules
