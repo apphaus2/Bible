@@ -2,6 +2,7 @@
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 from speech import orate
+from asv import ems, UNSPACED
 from deu import G, art as K
 from genesis import art as X
 from genesis.ch02 import W1, NIGHT
@@ -45,9 +46,9 @@ def auto(c, a, b, moods=("calm",), budget=620, code="DEUT", arts=None, every=3, 
     vs = verses(c, a, b)
     for i, r in enumerate(vs):
         t = v(r)
-        if cur and n + len(t) > budget:
+        if cur and n + ems(t) > budget:
             out.append(cur); cur, n = [], 0
-        cur.append(r); n += len(t)
+        cur.append(r); n += ems(t)
     if cur: out.append(cur)
     segs = []
     ai = 0
@@ -71,6 +72,9 @@ def heading(text, n=6):
     for _ in range(3):                         # drop filler openings: "And it shall be, when ..." → "When ..."
         t = _re.sub(r"^(And it shall come to pass,?|And it shall be,?|It shall be,?|And|But|For|Moreover|Also|Then|Now|Notwithstanding,|Therefore)\s+", "", t)
     t = t[:1].upper() + t[1:]
+    if UNSPACED:                               # an unspaced script (Japanese): up to the first stop, at most 3n characters
+        h = _re.split(r"[,;:.!?(、。，；：！？（「『」』]", t.lstrip("「『"))[0]
+        return h if len(h) <= 3 * n else h[:3 * n - 1] + "…"
     first = _re.split(r"[,;:.!?(]", t)[0].split()
     words = first if len(first) <= n + 1 else _re.split(r"\s+", t)[:n]
     return _re.sub(r"[,;:.!?()]+$", "", " ".join(words)).upper()
@@ -91,9 +95,9 @@ def law_groups(c, a, b, budget=380):
     out, cur, n = [], [], 0
     for k in range(a, b + 1):
         t = v(f"{c}:{k}")
-        if cur and n + len(t) > budget:
+        if cur and n + ems(t) > budget:
             out.append((cur[0], cur[-1])); cur, n = [], 0
-        cur.append(k); n += len(t)
+        cur.append(k); n += ems(t)
     if cur: out.append((cur[0], cur[-1]))
     return out
 
@@ -131,9 +135,9 @@ def sing(c, a, b, arts, budget=300, code="DEUT", **k):
     out, cur, n = [], [], 0
     for x in range(a, b + 1):
         t = v(f"{c}:{x}")
-        if cur and n + len(t) > budget:
+        if cur and n + ems(t) > budget:
             out.append(cur); cur, n = [], 0
-        cur.append(f"{c}:{x}"); n += len(t)
+        cur.append(f"{c}:{x}"); n += ems(t)
     if cur: out.append(cur)
     segs = []
     for i, g in enumerate(out):
