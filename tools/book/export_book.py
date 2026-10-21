@@ -133,7 +133,7 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     files["nav.xhtml"] = xhtml_page(WD[2], nav, css="css/book.css").replace(f'<meta name="viewport" content="width={W}, height={H}"/>\n', "").encode()
     items.append('<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>')
     items.append('<item id="css" href="css/book.css" media-type="text/css"/>')
-    for k, (fam, wt, fn) in enumerate(fonts):
+    for k, (fam, wt, fn, *_) in enumerate(fonts):
         items.append(f'<item id="font{k}" href="fonts/{fn}" media-type="{"font/woff2" if fn.endswith("woff2") else "font/ttf"}"/>')
     if cover_jpg:
         files["images/cover.jpg"] = cover_jpg.read_bytes()
