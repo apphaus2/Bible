@@ -113,14 +113,14 @@ def book_html(code, path):
             ch_notes.clear()
 
     text = "\\c 1" + s.split("\\c 1", 1)[1]
-    for m in re.finditer(r"\\(c|ms\d|d|qc|b|v|p|m|nb|pi1|q[123])(?:\s+|$)(.*?)(?=\\(?:c|ms\d|d|qc|b|v|p|m|nb|pi1|q[123])(?:\s|$)|\Z)", text, re.S):
+    for m in re.finditer(r"\\(c|ms\d|d|sp|qc|b|v|p|m|nb|pi1|q[123])(?:\s+|$)(.*?)(?=\\(?:c|ms\d|d|sp|qc|b|v|p|m|nb|pi1|q[123])(?:\s|$)|\Z)", text, re.S):
         mk, rest = m.group(1), m.group(2)
         if mk == "c":
             flush_notes(); close()
             n = int(rest.split()[0])
             anchor = f"{code}.{n}"; chapters.append((n, anchor))
             if code == "PSA":
-                body.append(f'<h3 class="ps" id="{anchor}">{W("psalm")} {n}</h3>')
+                body.append(f'<h3 class="ps" id="{anchor}">{langs.numbered(W("psalm"), n)}</h3>')   # "Psalm 23", ja "詩篇 第{n}篇"
             elif code in SINGLE:
                 body.append(f'<span class="anchor" id="{anchor}"></span>')
             else:
@@ -130,7 +130,7 @@ def book_html(code, path):
             close(); ms = f'<h4 class="ms">{inline(rest).strip()}</h4>'
             body.insert(len(body) - 1, ms) if body and body[-1].startswith('<h3 class="ps"') else body.append(ms)
             continue
-        if mk == "d":
+        if mk in ("d", "sp"):             # sp: a speaker heading (Song of Solomon in some texts), set like a title
             close(); body.append(f'<div class="d">{inline(rest).strip()}</div>'); continue
         if mk == "qc":
             close(); body.append(f'<div class="qc">{inline(rest).strip()}</div>'); continue
@@ -174,21 +174,27 @@ def fetch_fonts(doc, fdir):
         got = json.loads(index.read_text())
     else:
         got = []
+        pieces = langs.text_pieces(chars)
         for fam, spec in FAMILIES.items():
-            q = urllib.parse.urlencode({"family": f"{fam}:{spec}", "text": chars})
+          for n, (part, rng) in enumerate(pieces):
+            q = urllib.parse.urlencode({"family": f"{fam}:{spec}", "text": part})
             req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})  # plain UA → TrueType
             css = urllib.request.urlopen(req, timeout=30).read().decode()
             for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
                 wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
                 st = re.search(r"font-style:\s*(\w+)", block).group(1)
                 url = re.search(r"url\((.*?)\)", block).group(1)
-                fn = f"asv-{fam.replace(' ', '')}-{wt}{'i' if st == 'italic' else ''}-{key}.ttf"
-                (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
-                got.append([fam, wt, st, fn])
+                fn = f"asv-{fam.replace(' ', '')}-{wt}{'i' if st == 'italic' else ''}-{key}{f'-{n}' if rng else ''}.ttf"
+                try: (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
+                except urllib.request.HTTPError:
+                    if rng: continue                   # a piece with no glyph in this family (Source Serif for kanji) is refused
+                    raise
+                got.append([fam, wt, st, fn] + ([rng] if rng else []))
                 print(f"  font {fam} {wt} {st}: {(fdir / fn).stat().st_size // 1024} KB")
         index.write_text(json.dumps(got))
     return "".join(f"@font-face {{ font-family: '{fam}'; font-weight: {wt}; font-style: {st}; "
-                   f"src: url('{(fdir / fn).as_uri()}') format('truetype'); }}\n" for fam, wt, st, fn in got)
+                   f"src: url('{(fdir / fn).as_uri()}') format('truetype');{f' unicode-range: {rng[0]};' if rng else ''} }}\n"
+                   for fam, wt, st, fn, *rng in got)
 
 # ---- the document -------------------------------------------------------------------------------------------------------
 CSS = r"""
@@ -370,7 +376,7 @@ def bookmark(raw, pdf, books):
             bk = w.add_outline_item(b["short"], page_of[b["code"]], parent=t)
             if b["code"] in SINGLE: continue
             for n, anchor in b["chapters"]:
-                w.add_outline_item(f"{W('psalm') if b['code'] == 'PSA' else b['short']} {n}", page_of[anchor], parent=bk)
+                w.add_outline_item(langs.numbered(W('psalm') if b['code'] == 'PSA' else b['short'], n), page_of[anchor], parent=bk)
     w.add_metadata({"/Title": f"{W('title')} · {CREDIT}", "/Subject": "The text of the Bible Manga",
                     "/Author": "Bible Manga", "/Keywords": f"Bible, {CREDIT}, public domain"})
     w.page_mode = "/UseOutlines"

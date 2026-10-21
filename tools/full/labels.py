@@ -79,13 +79,14 @@ SEP = re.compile(r"( · | — )")
 def ref_rule(part, lang):
     """'Genesis 1:3–4' -> 'Génesis 1:3–4', 'GEN 1:3' -> 'GN 1:3', 'Chapters 1 – 50' -> 'Capítulos 1 – 50'; None if not a ref."""
     L = langs.get(lang); names, abbr = L.get("books", {}), L.get("abbr", {})
-    words = {**{k.upper(): v.upper() for k, v in names.items()}, **names, **abbr}
+    words = {**{k.upper(): v.upper().replace("{N}", "{n}") for k, v in names.items()}, **names, **abbr}
     for w in sorted(words, key=len, reverse=True):
         m = re.fullmatch(re.escape(w) + r" ?(" + NUMS + r"(?:\s*–\s*\d+)?)( ABRIDGED)?", part)
         if m:
             sp = " " if part[len(w):len(w) + 1] == " " else ""
             nums = renumber(BOOK_CODES.get(w.upper()), m.group(1), lang) if L.get("refs") == "text" else m.group(1)
-            return words[w] + sp + nums + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
+            num = words[w].replace("{n}", nums) if "{n}" in words[w] else words[w] + sp + nums   # ja: "第{n}章"
+            return num + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
     return None
 
 # the English book names and page abbreviations of the refs, for "refs": "text" (a language whose references follow its

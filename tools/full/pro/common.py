@@ -11,6 +11,7 @@ import mk
 from faces_ex import F
 from discourse import seg, pack as _pack
 from fx import page
+from asv import ems
 from genesis.ch02 import grid
 from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
@@ -182,7 +183,7 @@ def _text_h(nverse, chars, w, s):
 
 def _need(c, s=17.0):
     w = W_FULL if c["span"] else W_HALF
-    return _text_h(len(c["vs"]), [len(t) for _, t in c["vs"]], w, s) + (150 if c["art"] else 72)
+    return _text_h(len(c["vs"]), [ems(t, 0.57) for _, t in c["vs"]], w, s) + (150 if c["art"] else 72)
 
 def _size(c, h):
     w = W_FULL if c["span"] else W_HALF

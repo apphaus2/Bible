@@ -39,6 +39,9 @@ def main(vol, check=False):
         lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
         if css := langs.get(asv.LANG).get("css"):                     # the language's own page CSS (e.g. room for capital umlauts)
             credit = (lambda f: lambda h, name=None: f(h, name).replace("body{margin:0}", "body{margin:0}\n" + css, 1))(credit)
+        if asv.UNSPACED:                                              # Chinese, Japanese: no space where a plan joins two
+            spaced = credit                                           # verses or cuts (asv.unspace), in text nodes only
+            credit = lambda h, name=None: (lambda a, s, b: a + s + re.sub(r">([^<>]+)<", lambda m: ">" + asv.unspace(m.group(1)) + "<", b))(*spaced(h, name).partition("<x-dc>"))
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
     chapters = []

@@ -82,6 +82,10 @@ def cap(text, pos, size=11, center=False, maxw=None):
 
 def god(text, pos, size=20, maxw=None):
     mw = f" max-width: {maxw}px;" if maxw else ""
+    if "nowrap" in pos:                            # one line: in a wide (CJK) script, no wider than the page's panels
+        import unicodedata
+        wide = sum(1 for ch in text if unicodedata.east_asian_width(ch) in "WF")
+        if wide: size = min(size, round(640 / (wide + 0.5 * (len(text) - wide)) * 2) / 2)
     return (f'    <div style="position: absolute; {pos};{mw} padding: 13px 17px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
             f'font-family: Anton, sans-serif; font-size: {size}px; line-height: 1.14; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n')
 

@@ -16,6 +16,7 @@ import mk
 from fx import page, vref
 from genesis.ch02 import rows, W1
 from job import jspeech as speech
+from asv import ems
 from genesis import art as X
 
 def seg(lines, ref, tok=None, bg="#2A1A3A", art=None, head=None, stamp=None, flip=None, extra="", h=None, hi=21, who=None, wk=0.7):
@@ -27,7 +28,7 @@ def tag(name, color, pos):
     return (f'<div data-label style="position: absolute; {pos}; padding: 3px 9px; background: #F3EFE6; color: #0D0D0F; border: 2px solid #0D0D0F; '
             f'box-shadow: inset 5px 0 0 {color}; padding-left: 13px; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase">{name}</div>')
 
-def _chars(s): return sum(len(t) for _, t in s["lines"])
+def _chars(s): return sum(ems(t) for _, t in s["lines"])
 
 def _need(s, w=W1):
     """Panel height the words need at a comfortable size (16px), with a floor for faces and drawings."""

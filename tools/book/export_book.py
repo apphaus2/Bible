@@ -63,25 +63,30 @@ def fetch_fonts(pages, out):
     if index.exists():
         return [tuple(x) for x in json.loads(index.read_text())]
     got = []
+    pieces = langs.text_pieces(chars)                  # a CJK volume's characters go in several requests
     for fam, weights in FAMILIES.items():
-        q = urllib.parse.urlencode({"family": f"{fam}:wght@{';'.join(map(str, weights))}", "text": chars, "display": "swap"})
+      for n, (part, rng) in enumerate(pieces):
+        q = urllib.parse.urlencode({"family": f"{fam}:wght@{';'.join(map(str, weights))}", "text": part, "display": "swap"})
         req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})   # plain UA → TrueType
         css = urllib.request.urlopen(req, timeout=30).read().decode()
         for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
             wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
             url = re.search(r"url\((.*?)\)", block).group(1)
             ext = "woff2" if "woff2" in block else "ttf"
-            fn = f"{fam.replace(' ', '')}-{wt}-{key}.{ext}"
-            (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
-            got.append((fam, wt, fn))
+            fn = f"{fam.replace(' ', '')}-{wt}-{key}{f'-{n}' if rng else ''}.{ext}"
+            try: (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
+            except urllib.request.HTTPError:
+                if rng: continue                       # a piece with no glyph in this family (Anton for kanji) is refused
+                raise
+            got.append((fam, wt, fn) + ((rng,) if rng else ()))
             print(f"  font {fam} {wt}: {(fdir / fn).stat().st_size // 1024} KB")
     index.write_text(json.dumps(got))
     return got
 
 def font_css(fonts, prefix):
     mime = lambda fn: "woff2" if fn.endswith("woff2") else "truetype"
-    return "".join(f"@font-face {{ font-family: '{fam}'; font-weight: {wt}; font-style: normal; src: url('{prefix}{fn}') format('{mime(fn)}'); }}\n"
-                   for fam, wt, fn in fonts)
+    return "".join(f"@font-face {{ font-family: '{fam}'; font-weight: {wt}; font-style: normal; src: url('{prefix}{fn}') format('{mime(fn)}');"
+                   f"{f' unicode-range: {rng[0]};' if rng else ''} }}\n" for fam, wt, fn, *rng in fonts)
 
 # ---- EPUB -------------------------------------------------------------------------------------------------------------
 def to_xhtml(markup):
@@ -105,7 +110,7 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     files = {}                                                                  # path in OEBPS -> bytes
     files["css/book.css"] = (font_css(fonts, "../fonts/") + f"html, body {{ margin: 0; padding: 0; width: {W}px; height: {H}px; overflow: hidden; }}\n").encode()
-    for fam, wt, fn in fonts:
+    for fam, wt, fn, *_ in fonts:
         files[f"fonts/{fn}"] = (out / "fonts" / fn).read_bytes()
     items, spine = [], []
     for p in pages:
@@ -121,14 +126,14 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     toc = [f'<li><a href="pages/p001.xhtml">{WD[0]}</a></li>']
     for c in meta["books"]:
         first = next(p for p in pages if p["chapter"] is c and p["name"] != "Main.dc.html")
-        toc.append(f'<li><a href="pages/p{first["i"]:03d}.xhtml">{WD[1]} {c["num"]} · {html.escape(c["name"])} ({c["range"]})</a></li>')
+        toc.append(f'<li><a href="pages/p{first["i"]:03d}.xhtml">{langs.numbered(WD[1], c["num"])} · {html.escape(c["name"])} ({c["range"]})</a></li>')
     plist = [f'<li><a href="pages/p{p["i"]:03d}.xhtml">{p["printed"]}</a></li>' for p in pages if p["printed"]]
     nav = (f'<nav epub:type="toc" id="toc"><h1>{WD[2]}</h1><ol>{"".join(toc)}</ol></nav>\n'
            f'<nav epub:type="page-list" hidden=""><h1>{WD[3]}</h1><ol>{"".join(plist)}</ol></nav>')
     files["nav.xhtml"] = xhtml_page(WD[2], nav, css="css/book.css").replace(f'<meta name="viewport" content="width={W}, height={H}"/>\n', "").encode()
     items.append('<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>')
     items.append('<item id="css" href="css/book.css" media-type="text/css"/>')
-    for k, (fam, wt, fn) in enumerate(fonts):
+    for k, (fam, wt, fn, *_) in enumerate(fonts):
         items.append(f'<item id="font{k}" href="fonts/{fn}" media-type="{"font/woff2" if fn.endswith("woff2") else "font/ttf"}"/>')
     if cover_jpg:
         files["images/cover.jpg"] = cover_jpg.read_bytes()

@@ -16,11 +16,13 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
     accent_room  a share (0.16) by which a cover's book name is set smaller, on the same baseline, when its capitals carry
                  accents (ÉSAÏE), so they clear the line above it (labels.lower)
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
-    books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
+    books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED";
+                 a value with {n} takes the numbers inside it ("Chapter": "第{n}章"), else they follow it after a space
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels
     fonts        {"load": {family: [weights]}, "fallback": {manga font: family}}: Google Fonts families for a script the
                  manga's fonts lack (Anton and Archivo Narrow have no Cyrillic or CJK, IBM Plex Mono and Source Serif 4, the
-                 text PDFs' face, no CJK), each set in every font list right after the font it stands in for
+                 text PDFs' face, no CJK), each set in every font list right after the font it stands in for (a list:
+                 several, in order, e.g. a display face whose glyph set is smaller, then a complete one)
     ui           the website's words (build_site.py); words: the text PDF's (asv_pdf.py); epub: the EPUB's (export_book.py)"""
 import json, pathlib, re
 HERE = pathlib.Path(__file__).resolve().parent
@@ -31,6 +33,10 @@ def get(code): return LANGS[code]
 def by_text(tid):
     """The language whose text is ref/<tid>."""
     return next(k for k, v in LANGS.items() if v["text"] == tid)
+
+def numbered(word, n):
+    """"Chapter" + 3 -> "Chapter 3"; a word with {n} takes the number inside it ("第{n}章" -> "第3章")."""
+    return word.replace("{n}", str(n)) if "{n}" in word else f"{word} {n}"
 
 def versemap(code):
     """{BOOK: [((c, a, b), (tc, tv, tw))]} from the "c:a-b > tc:tv" strings (tw None: verse for verse) and the block form
@@ -51,7 +57,9 @@ def with_fallbacks(src, code):
     the page was laid out for ("adjust": {manga font: x-height ratio})."""
     fb = LANGS[code].get("fonts", {}).get("fallback", {})
     if not fb: return src
-    src = FAMILY.sub(lambda m: m.group(0) + (f", '{fb[m.group(2)]}'" if m.group(2) in fb else ""), src)
+    def more(f):                                       # one family, or a list of them (a display face, then a full one)
+        return "".join(f", '{x}'" for x in ([f] if isinstance(f, str) else f))
+    src = FAMILY.sub(lambda m: m.group(0) + (more(fb[m.group(2)]) if m.group(2) in fb else ""), src)
     for fam, ratio in LANGS[code].get("fonts", {}).get("adjust", {}).items():
         src = re.sub(r"""(font-family:\s*['"]?""" + re.escape(fam) + r"""\b[^;"{}]*)(?=[;"}])""", rf"\1; font-size-adjust: {ratio}", src)
     return src
@@ -59,3 +67,17 @@ def with_fallbacks(src, code):
 def font_query(code):
     """The extra families as Google Fonts css2 query parts ("family=Oswald:wght@400;700")."""
     return [f"family={f.replace(' ', '+')}:wght@{';'.join(map(str, w))}" for f, w in LANGS[code].get("fonts", {}).get("load", {}).items()]
+
+def text_pieces(chars, size=600):
+    """The characters to subset a font to, in pieces Google Fonts' `text=` accepts (a long one is refused with a 400: a
+    whole Bible in a CJK script uses thousands), each with the unicode-range it covers ("" when one piece holds them all)."""
+    if len(chars) <= size: return [(chars, "")]
+    return [(p, unicode_range(p)) for p in (chars[i:i + size] for i in range(0, len(chars), size))]
+
+def unicode_range(chars):
+    cps, out, i = sorted(set(map(ord, chars))), [], 0
+    while i < len(cps):
+        j = i
+        while j + 1 < len(cps) and cps[j + 1] == cps[j] + 1: j += 1
+        out.append(f"U+{cps[i]:X}" + (f"-{cps[j]:X}" if j > i else "")); i = j + 1
+    return ", ".join(out)

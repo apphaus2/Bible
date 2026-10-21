@@ -7,6 +7,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.i
 import re
 import mk
 from fx import new, vref, cap, balloon, god, page
+from asv import ems
 from genesis.ch02 import rows
 from genesis.ch02 import W1
 from genesis.ch04 import fc
@@ -27,7 +28,7 @@ def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336
     span = the cell spans both columns of its grid. spoken=True: the law is a man's words (Moses in Deuteronomy), not God's —
     a cream speech panel in Archivo Narrow with a rust rule, the pictogram on sand."""
     if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
-        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / ((0.74 if spoken else 0.62) * len(text))) ** 0.5 * 2) / 2))
+        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / ((0.74 if spoken else 0.62) * ems(text, 0.56 if spoken else 0.5))) ** 0.5 * 2) / 2))
     if spoken:
         bg, fg, rule, pbg, font, lh, frame = "#FFF8E6", "#0D0D0F", "#B5402A", "#E8D2A6", "'Archivo Narrow', sans-serif; font-weight: 700", 1.16, f"inset 0 0 0 4px #FFF8E6, inset 0 0 0 5.5px #B5402A"
         accent = "#B5402A"
@@ -80,7 +81,7 @@ def bp_panel(h, label_, words, art, extra="", code="EX"):
         if kind == "cap":
             o.append(cap(text, f"left: 12px; top: {y}px", size=10.5, maxw=bw)); y += 38
         elif kind == "nar":
-            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(len(text) * size * 0.82 * 0.68 / bw) * size * 1.25
+            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(ems(text, 0.68) * size * 0.82 * 0.68 / bw) * size * 1.25
         elif kind == "say":                    # a man's long speech: a white speech box with rounded corners
             o.append(balloon(text, f"left: 12px; top: {y}px", bw, size=round(size * 0.86 * 2) / 2, pad="12px 16px").replace("border-radius: 50%", "border-radius: 22px"))
         else:
@@ -151,17 +152,17 @@ def law_pages(items, prefix, start, default_head, title_book="Leviticus", budget
     from genesis.ch02 import grid
     pages, cur, chars = [], [], 0
     for it in items:
-        n = len(_sp(it[1]))
+        n = ems(_sp(it[1]), 0.62)
         heading_break = it[4] and (len(cur) >= 3 or chars >= 700)      # a page head starts a new page unless this page is still short
         if cur and (chars + n > budget or len(cur) == most or heading_break):
             pages.append(cur); cur, chars = [], 0
         cur.append(it); chars += n
     if cur: pages.append(cur)
-    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and len(_sp(pages[-1][0][1])) < 620:
+    if len(pages) > 1 and len(pages[-1]) == 1 and len(pages[-2]) < most and ems(_sp(pages[-1][0][1]), 0.62) < 620:
         tail = pages.pop(); pages[-1] += tail                    # no lone short cell at the end
     out = []
     for k, group in enumerate(pages):
-        n = len(group); one = n == 1 or (n == 2 and sum(len(_sp(it[1])) for it in group) > 500)
+        n = len(group); one = n == 1 or (n == 2 and sum(ems(_sp(it[1]), 0.62) for it in group) > 500)
         ncol = 1 if one else 2; nrow = n if ncol == 1 else (n + 1) // 2
         cell = (1022 - 12 * (nrow - 1)) // nrow
         cells = []
