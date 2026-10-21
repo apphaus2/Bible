@@ -13,7 +13,7 @@ from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
 from genesis.ch07 import RED
 from psa import G
-from psa.text import TITLES, BOOKS, ALEPH, LINES, lines_of
+from psa.text import TITLES, BOOKS, ALEPH, LINES, HEADS, lines_of
 from psa.layout import seg, pack as _pack
 from fx import end_mark
 from sa2.common import (DAVID, DAVID_BOLD, DAVID_GRIEVED, DAVID_KING, DAVID_JOY, DAVID_WRATH, DAVID_GRIEF, DAVID_MOURN, DAVID_OLD, DAVID_OLD_ALARM,
@@ -99,6 +99,7 @@ def _plain(c, x):
     """Psalm 119: a verse whose end carries the next letter's head (ב BETH.) is cut in two: the verse, and the head."""
     t = G.verses[(c, x)]
     m = re.search(r"[א-ת]", t)
+    if HEADS: return (t, None)           # a translation with its own letter heads: the verse is whole, the head is its own line
     return (t[:m.start()].strip(), t[m.start():]) if m else (t, None)
 
 def mirror(svg, w, on):

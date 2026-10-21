@@ -28,7 +28,7 @@ FILES = files("eng-asv")                                                     # a
 
 def parse(path):
     """{(chapter, verse): text}: Strong's tags, footnotes and cross-references stripped; supplied (italic) words kept."""
-    s = pathlib.Path(path).read_text(encoding="utf-8")
+    s = langs.usfm(path)
     s = re.sub(r"\\f .*?\\f\*", "", s, flags=re.S)
     s = re.sub(r"\\x .*?\\x\*", "", s, flags=re.S)
     s = re.sub(r"\\\+?w ([^|\\]*)\|[^\\]*\\\+?w\*", r"\1", s)
@@ -155,7 +155,7 @@ def psalm_titles(tgt):
 
 def d_titles(path):
     """{psalm: superscription} from the \\d lines of a USFM file (a text that keeps them out of verse 1, as the ASV does)."""
-    s = pathlib.Path(path).read_text(encoding="utf-8")
+    s = langs.usfm(path)
     out = {}
     for c, body in re.findall(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S):
         m = re.search(r"^\\d (.*)", body.split("\\v ", 1)[0], flags=re.M | re.S)
@@ -165,9 +165,21 @@ def d_titles(path):
             out[int(c)] = re.sub(r"\s+", " ", re.sub(r"\\[a-z0-9+]+\*?", "", t)).strip().replace("\u2019", "'").replace("\u2018", "'")
     return out
 
+def inner_heads(path):
+    """{(chapter, verse): head} from \\d lines that stand between two verses of a psalm, before the verse they head (a text
+    that sets Psalm 119's letter heads apart: porbrbsl's "\\d BETE" before 119:9, where the ASV ends 119:8 with "ב BETH.")."""
+    s = langs.usfm(path)
+    out = {}
+    for c, body in re.findall(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S):
+        parts = body.split("\\v ", 1)
+        if len(parts) < 2: continue
+        for m in re.finditer(r"^\\d ([^\n]*)\n(?:\\[a-z]+\d?\s*\n)*\\v (\d+)", "\\v " + parts[1], flags=re.M):
+            out[(int(c), int(m.group(2)))] = re.sub(r"\s+", " ", re.sub(r"\\[a-z0-9+]+\*?", "", m.group(1))).strip()
+    return out
+
 def parse_titles(path):
     """The psalms that have a superscription (a \\d line before verse 1) in a USFM file."""
-    s = pathlib.Path(path).read_text(encoding="utf-8")
+    s = langs.usfm(path)
     return [int(c) for c, body in re.findall(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S)
             if re.search(r"^\\d ", body.split("\\v ", 1)[0], flags=re.M)]
 
@@ -199,6 +211,7 @@ class Book:
                 for n in range(a, b + 1): self.tgt[(c, n)] = raw[(tc, tv + n - a)]
             if code == "PSA":                # superscriptions: the text's own \d lines, else split off verse 1
                 self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or (psalm_titles(self.tgt) if L.get("psalm_title") else {})
+                self.heads = inner_heads(ROOT / "ref" / tid / files(tid)[code])   # Psalm 119's letter heads, if the text has its own
             ruled = {(c, n) for (c, a, b), _ in rules for n in range(a, b + 1)}
             lost = [k for k in self.src if not self.tgt.get(k, "").strip() or (rules and k[0] in {r[0][0] for r in rules} and k not in ruled)]
             if lost and L.get("fallback"):

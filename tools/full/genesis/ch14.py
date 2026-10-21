@@ -39,6 +39,8 @@ def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     left = 300 if full else 140
     side = f"left: {left}px" if not flip else "left: 12px"
     bw = (w - left - 14) if not flip else (w - 314 if full else w - 154)
+    from exo.kit import talk_fit
+    size, k = talk_fit(lines, bw, h, size)        # smaller balloons where a translation's words overrun the panel
     o, y = [], 12
     for kind, text in lines:
         n = len(text)
@@ -49,7 +51,7 @@ def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
             long_ = n > 160                       # long speeches get a deeper oval so the corners don't cut the text
             pad = (f"{min(48, 18 + n // 12)}px 40px" if full else f"{min(36, 16 + n // 12)}px 26px") if long_ else ("18px 24px" if full else "16px 18px")
             o.append(balloon(text, f"{side}; top: {y}px", bw, size=size if full else size - 1, pad=pad))
-            y += 50 + 17 * (n // max(1, (bw - 40) // 7)) + (n // 6 if long_ else 0)
+            y += round(k * (50 + 17 * (n // max(1, (bw - 40) // 7)) + (n // 6 if long_ else 0)))
     if ref: o.append(vref(ref, "left: 12px; bottom: 12px" if not flip else "right: 12px; bottom: 12px"))
     return new(bg, w, h, fc(tok, h, w=w, flip=flip), "".join(o) + extra)
 

@@ -9,6 +9,15 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
                  pairing by length can't find its way (a renumbered chapter)
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
+    accent_room  true: a big <h1> title whose capitals carry accents (GÊNESIS) is set lower by an accent's height, so the
+                 accent clears the line above it (labels.translate)
+    fit_room     true, for a language whose words run longer than the English: a law cell sets its words a little smaller,
+                 and smaller again by a heading that runs to a second line (exo.kit.law); a dialogue panel whose words
+                 overrun it sets its balloons smaller (exo.kit.talk_fit); a drawn IBM Plex Mono label that would run out of
+                 its drawing shrinks to fit as a data-fit label does (labels.translate)
+    strip        regexes (multiline) cut out of the text's USFM files before anything reads them: stray matter a draft
+                 text left in its verses (porbrbsl: a machine translator's "Aqui está a tradução …:" and ``` fences)
+    thousands    the thousands separator for numbers in labels and drawings (601,730 -> "." 601.730); none: kept as is
     books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels
     fonts        {"load": {family: [weights]}, "fallback": {manga font: family}}: Google Fonts families for a script the
@@ -24,6 +33,14 @@ def get(code): return LANGS[code]
 def by_text(tid):
     """The language whose text is ref/<tid>."""
     return next(k for k, v in LANGS.items() if v["text"] == tid)
+
+def usfm(path):
+    """A USFM file's source, less what its language's "strip" patterns cut out (the text is known by its ref/<id> folder)."""
+    s = pathlib.Path(path).read_text(encoding="utf-8")
+    for v in LANGS.values():
+        if v["text"] == pathlib.Path(path).parent.name:
+            for pat in v.get("strip", []): s = re.sub(pat, "", s, flags=re.M)
+    return s
 
 def versemap(code):
     """{BOOK: [((c, a, b), (tc, tv))]} from the "c:a-b > tc:tv" strings."""

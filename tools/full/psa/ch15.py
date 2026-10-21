@@ -9,7 +9,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 from num.pages import Pages
 from psa import G
-from psa.common import pack, psalm, end_mark, chapter_open, ALEPH
+from psa.common import pack, psalm, end_mark, chapter_open, ALEPH, HEADS
 from psa import ch14 as _prev
 
 v = G.v
@@ -35,6 +35,9 @@ for k, plan in enumerate(PLANS):
     if k == 0:
         letter = ALEPH                                         # a label: the line before verse 1 is no verse
         heads = [(119, None, None), (letter.rstrip("."), None, None)]
+    elif (119, a) in HEADS:                                    # a translation's own head before verse a: a label
+        letter = re.search(r"[א-ת]", G.verses[(119, a - 1)]).group(0) + " " + HEADS[(119, a)]
+        heads = [(letter, None, None)]
     else:
         letter = v(f"119:{a - 1}", frm=re.search(r"[א-ת]", G.verses[(119, a - 1)]).group(0))   # "ב BETH." closes verse a-1
         heads = [(letter.rstrip("."), None, None)]

@@ -90,7 +90,11 @@ def label(s, lang, tab):
         q = p.strip()
         r = tab.get(q) or ref_rule(q, lang)
         out.append(p.replace(q, r) if r else p)
-    return "".join(out)
+    sep = langs.get(lang).get("thousands")          # 601,730 -> 601.730 (tools/lang/<code>.json "thousands")
+    return THOUSANDS.sub(lambda m: m.group(0).replace(",", sep), "".join(out)) if sep else "".join(out)
+
+NUMBER = re.compile(r">\s*\d{1,3}(?:,\d{3})+\s*<")
+THOUSANDS = re.compile(r"(?<![\d:,])\d{1,3}(?:,\d{3})+(?![\d,])")
 
 SCRIPTURE = set()                    # the translated verses' own text, so a label lookup never touches scripture
 def is_scripture_text(s): return any(s in t for t in SCRIPTURE) if len(s) > 12 else False
@@ -106,7 +110,50 @@ def translate(page, lang, tab=None):
         return m.group(0) if t == s else ">" + html.escape(t, quote=False) + "<"
     page = re.sub(r"<title>(.*?)</title>", lambda m: "<title>" + html.escape(label(norm(m.group(1)), lang, tab), quote=False) + "</title>", page, count=1)
     head, sep, body = page.partition("<x-dc>")
-    return head + sep + FIT.sub(fit, TEXT.sub(sub, body))
+    body = FIT.sub(fit, TEXT.sub(sub, body))
+    if langs.get(lang).get("accent_room"): body = H1.sub(accent_room, body)
+    th = langs.get(lang).get("thousands")
+    if th: body = NUMBER.sub(lambda m: m.group(0).replace(",", th), body)          # a figure on its own: >601,730<
+    if langs.get(lang).get("fit_room"): body = fit_svg(body)
+    return head + sep + body
+
+SVGTAG = re.compile(r'<(/?)(svg|g|text)\b([^>]*)>')
+def fit_svg(body):
+    """Every drawn IBM Plex Mono label that would run out of its drawing (the viewBox, by its x and anchor) given data-fit
+    with the room it has, then fitted (tools/lang/<code>.json "fit_room"). Labels under any transform but a translate are
+    left alone."""
+    out, last, stack = [], 0, []                 # stack: (tag, left edge in local units, width, transformed)
+    for m in SVGTAG.finditer(body):
+        close, tag, attrs = m.group(1), m.group(2), m.group(3)
+        if close:
+            while tag != "text" and stack and stack.pop()[0] != tag: pass
+            continue
+        if tag == "svg":
+            vb = re.search(r'viewBox="([-\d.]+) [-\d.]+ ([\d.]+) [\d.]+"', attrs)
+            stack.append(("svg", float(vb.group(1)), float(vb.group(2)), False) if vb else ("svg", 0, 0, True))
+        elif tag == "g":
+            if not attrs.rstrip().endswith("/"):
+                x0, w, tr = stack[-1][1:] if stack else (0, 0, True)
+                t = re.search(r'transform="([^"]*)"', attrs)
+                mv = re.fullmatch(r"\s*translate\(\s*([-\d.]+)(?:[\s,]+[-\d.]+)?\s*\)\s*", t.group(1)) if t else None
+                stack.append(("g", x0 - float(mv.group(1)) if mv else x0, w, tr or bool(t and not mv)))
+        elif stack and "data-fit" not in attrs and "Mono" in attrs and "transform" not in attrs and not stack[-1][3] and stack[-1][2]:
+            x = re.search(r'\bx="([-\d.]+)"', attrs)
+            if not x: continue
+            x0, w = stack[-1][1], stack[-1][2]; x = float(x.group(1)) - x0
+            anchor = (re.search(r'text-anchor="(\w+)"', attrs) or [0, "start"])[1]
+            room = {"start": w - x, "end": x, "middle": 2 * min(x, w - x)}.get(anchor, w - x) - 4
+            if room > 12:
+                out.append(body[last:m.start()] + f'<text data-fit="{room:.0f}"{attrs}>'); last = m.end()
+    return FIT.sub(fit, "".join(out) + body[last:])
+
+H1 = re.compile(r'(<h1 style="[^"]*?\btop: )(\d+)(px;[^"]*?font-size: )(\d+)(px[^"]*">)([^<]*)(</h1>)')
+ACCENTED = re.compile("[ÁÀÂÃÄÉÊÈÍÎÓÔÕÖÚÛÜ]")
+def accent_room(m):
+    """A big title whose capitals carry accents (GÊNESIS, ÊXODO) drops by the height of an accent, so the accent does not
+    run into the line set above it (tools/lang/<code>.json "accent_room")."""
+    if not ACCENTED.search(m.group(6)): return m.group(0)
+    return m.group(1) + str(int(m.group(2)) + round(int(m.group(4)) * 0.13)) + "".join(m.group(i) for i in range(3, 8))
 
 FIT = re.compile(r'(<text [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')
 def fit(m):
