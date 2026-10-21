@@ -11,6 +11,7 @@ face), "god" a Voice box (God's words, indigo with the gold rule) — used where
 size that fits all the words in the panel is chosen by estimate (the sandbox's fallback fonts are wider, so if it fits
 there it fits on the site). tok=None: no face, the column spans the panel over `art` (svg) instead."""
 import math
+from asv import ems
 from fx import new, vref
 from genesis.ch02 import W1, W2
 from genesis.ch04 import fc
@@ -18,18 +19,17 @@ from genesis.ch04 import fc
 def _height(lines, bw, s):
     tot = 0
     for kind, text in lines:
-        n = len(text)
         if kind == "raw":
             tot += 40; continue
         if kind == "cap":
             fs = min(11.5, max(9.5, s * 0.66)); cpl = max(8, (bw - 24) / (fs * 0.64))
-            tot += math.ceil(n / cpl) * fs * 1.45 + 20
+            tot += math.ceil(ems(text, 0.64) / cpl) * fs * 1.45 + 20
         elif kind.startswith("song"):
-            cpl = max(6, (bw - 40) / (s * 0.56)); tot += sum(math.ceil(len(t) / cpl) for t in text.split("<br>")) * s * 1.18 + 24
+            cpl = max(6, (bw - 40) / (s * 0.56)); tot += sum(math.ceil(ems(t, 0.56) / cpl) for t in text.split("<br>")) * s * 1.18 + 24
         elif kind == "say":
-            cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(n / cpl) * s * 1.16 + 30
+            cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(ems(text, 0.56) / cpl) * s * 1.16 + 30
         else:
-            cpl = max(6, (bw - 36) / (s * 0.53)); tot += sum(math.ceil(len(t) / cpl) for t in text.split("<br>")) * s * 1.15 + 22
+            cpl = max(6, (bw - 36) / (s * 0.53)); tot += sum(math.ceil(ems(t, 0.53) / cpl) for t in text.split("<br>")) * s * 1.15 + 22
         tot += 9
     return tot
 

@@ -14,12 +14,13 @@ import mk
 from fx import page, vref
 from genesis.ch02 import rows, W1
 import speech
+from asv import ems
 from genesis import art as X
 
 def seg(lines, ref, tok=None, bg="#2A1A3A", art=None, head=None, stamp=None, flip=None, extra="", h=None, hi=21):
     return dict(lines=lines or [], ref=ref, tok=tok, bg=bg, art=art, head=head, stamp=stamp, flip=flip, extra=extra, h=h, hi=hi)
 
-def _chars(s): return sum(len(t) for _, t in s["lines"])
+def _chars(s): return sum(ems(t) for _, t in s["lines"])
 
 def _need(s, w=W1):
     """Panel height the words need at a comfortable size (16px), with a floor for faces and drawings."""

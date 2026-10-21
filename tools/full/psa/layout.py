@@ -12,6 +12,7 @@ A segment with head starts a new page when the page is already more than `brk` f
 without forcing a break."""
 import re, math, html
 import mk
+from asv import ems
 from fx import page, vref, new
 from genesis.ch02 import rows, W1
 from genesis.ch04 import fc
@@ -26,7 +27,7 @@ def _hd_lines(hd, bw):
     t = (extra + " · " if extra else "") + (title or "")
     if not t: return 0
     cpl = max(10, (bw - 150) / 7.0)
-    return math.ceil(len(t) / cpl)
+    return math.ceil(ems(t, 0.6) / cpl)
 
 def _height(lines, bw, s):
     tot = 0
@@ -37,15 +38,15 @@ def _height(lines, bw, s):
             tot += max(36, _hd_lines(text, bw) * 14.5 + 12) + 9; continue
         if kind == "cap":
             fs = min(11.5, max(9.5, s * 0.66)); cpl = max(8, (bw - 24) / (fs * 0.64))
-            tot += math.ceil(len(text) / cpl) * fs * 1.45 + 20
+            tot += math.ceil(ems(text, 0.64) / cpl) * fs * 1.45 + 20
         elif kind == "song":
             cpl = max(6, (bw - 40) / (s * 0.56))
-            tot += sum(math.ceil(len(x) / cpl) for x in text.split("\n")) * s * 1.18 + 20
+            tot += sum(math.ceil(ems(x, 0.56) / cpl) for x in text.split("\n")) * s * 1.18 + 20
         elif kind == "say":
-            cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(len(text) / cpl) * s * 1.16 + 30
+            cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(ems(text, 0.56) / cpl) * s * 1.16 + 30
         else:
             cpl = max(6, (bw - 36) / (s * 0.53))
-            tot += sum(math.ceil(len(x) / cpl) for x in text.split("\n")) * s * 1.15 + 32
+            tot += sum(math.ceil(ems(x, 0.53) / cpl) for x in text.split("\n")) * s * 1.15 + 32
         tot += 8
     return tot
 

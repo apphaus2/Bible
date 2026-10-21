@@ -14,7 +14,7 @@ Other languages: with BIBLE_LANG=es (any tools/lang/<code>.json) every call retu
 public-domain text instead. The plans still name their cuts in ASV words, so a cut is found in the ASV verse and mapped onto
 the translated verse by its share of the letters, moved to the nearest punctuation or word break (the same share always
 lands on the same break, so a verse cut in two pieces still meets in the middle)."""
-import os, re, math, pathlib
+import os, re, math, pathlib, unicodedata
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 import sys; sys.path.insert(0, str(ROOT / "tools" / "lang"))
 import langs
@@ -56,6 +56,12 @@ def unspace(t):
     break or a stripped note leaves inside a verse, and those a plan puts between the verses or cuts it joins (a line
     break is no space there; the text check reads it the same way). Spaces next to Latin letters, digits, · or — stay."""
     return re.sub(f"(?<=[{WIDE}])\\s+(?=[{WIDE}])", "", t) if UNSPACED else t
+
+def ems(t, f=0.56):
+    """len(t) for the layout estimates, which count letters f em wide (Archivo Narrow 0.56, captions 0.64, the Voice box
+    0.53): a wide character (kanji, kana, hangul, full-width forms) is a whole em, so it counts 1/f letters."""
+    w = sum(1 for ch in t if unicodedata.east_asian_width(ch) in "WF")
+    return len(t) + w * (1 / f - 1) if w else len(t)
 
 def _kind(t, i):
     """What kind of break index i is: "speech" (a stop before a capital or an opening quote, as before words spoken), "end"

@@ -7,6 +7,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.i
 import re
 import mk
 from fx import new, vref, cap, balloon, god, page
+from asv import ems
 from genesis.ch02 import rows
 from genesis.ch02 import W1
 from genesis.ch04 import fc
@@ -80,7 +81,7 @@ def bp_panel(h, label_, words, art, extra="", code="EX"):
         if kind == "cap":
             o.append(cap(text, f"left: 12px; top: {y}px", size=10.5, maxw=bw)); y += 38
         elif kind == "nar":
-            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(len(text) * size * 0.82 * 0.68 / bw) * size * 1.25
+            o.append(cap(text, f"left: 12px; top: {y}px", size=round(size * 0.82 * 2) / 2, maxw=bw)); y += 34 + int(ems(text, 0.68) * size * 0.82 * 0.68 / bw) * size * 1.25
         elif kind == "say":                    # a man's long speech: a white speech box with rounded corners
             o.append(balloon(text, f"left: 12px; top: {y}px", bw, size=round(size * 0.86 * 2) / 2, pad="12px 16px").replace("border-radius: 50%", "border-radius: 22px"))
         else:

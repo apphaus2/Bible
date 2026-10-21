@@ -9,6 +9,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 import mk
 from fx import chapter_title, end_mark, page
+from asv import ems
 from discourse import seg, pack
 from deu import G, art as K, art4 as K4
 from deu.common import shade, cp, gd, caps, MOODS
@@ -50,7 +51,7 @@ def tribe_page(cells, title, n):
     """A page of tribe cells stacked full width; one type size for the page, each row as tall as its words need."""
     room = 1022 - 22 - 12 * (len(cells) - 1)
     def need(text, s):
-        return 66 + math.ceil(len(text) / (672 / (s * 0.64))) * s * 1.5
+        return 66 + math.ceil(ems(text, 0.64) / (672 / (s * 0.64))) * s * 1.5
     s = 22.0
     while s > 11 and sum(need(t, s) for _, t, _, _ in cells) > room: s -= 0.5
     fr = " ".join(f"{need(t, s):.0f}fr" for _, t, _, _ in cells)

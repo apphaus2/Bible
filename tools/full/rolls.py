@@ -8,6 +8,7 @@ Cells are packed into pages by estimated height; each page then takes the larges
 cells fit, and each row is as tall as its words need."""
 import math
 from fx import page
+from asv import ems
 from genesis.ch02 import grid
 from genesis.ch03 import clan
 
@@ -15,7 +16,7 @@ ROOM = 1022 - 22
 
 def need(text, s, ncol=1):
     width = (672 - 12 * (ncol - 1)) / ncol - (0 if ncol == 1 else 6)
-    return 66 + math.ceil(len(text) / (width / (s * 0.64))) * s * 1.5
+    return 66 + math.ceil(ems(text, 0.64) / (width / (s * 0.64))) * s * 1.5
 
 def _rows(cells, s, ncol):
     """Row heights: each row as tall as its tallest cell."""
