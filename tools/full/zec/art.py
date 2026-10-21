@@ -2,8 +2,8 @@
 (vision(): a night field with a faint grid and stars, the drawing glowing on it, a title tag in technical type): the horses
 among the myrtle-trees, the four horns and the four smiths, the man with the measuring line and the wall of fire, Joshua the
 high priest, the stone with seven eyes, the candlestick of gold between two olive-trees, the flying roll, the ephah, the
-four chariots between the mountains of brass. Angels are shapes of white light, no faces; the adversary (3:1) a shadow
-with no face; God is never drawn. Later chapters: the king lowly riding upon an ass, the thirty pieces of silver, the
+four chariots between the mountains of brass. Angels are shapes of white light with a gold rim, no faces; the adversary
+(3:1) is never drawn; God is never drawn. Later chapters: the king lowly riding upon an ass, the thirty pieces of silver, the
 fountain opened, the day of Jehovah on the mount of Olives."""
 import sys, pathlib, math, random
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
@@ -18,8 +18,17 @@ def zech_fig(p, x, y, s, flip=False, up=None):
     """Zechariah at a distance: a slate-teal robe and headcloth, black beard."""
     return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=ZECH_C, sw=3, flip=flip, up=up, extra=A.headcloth(ZECH_C) + BLACK_BEARD)
 
+PLATE_TAGS = [True]
+
+def bare(fn, *a, **k):
+    """A vision plate without its numbered title tag (for a cover or a chapter title, where the tag would sit on the foot)."""
+    PLATE_TAGS[0] = False
+    try: return fn(*a, **k)
+    finally: PLATE_TAGS[0] = True
+
 def vision(p, w, h, body, title=None, tags=(), bg="#070720", seed=1):
     """A vision plate: night field, faint grid, stars, the body (svg placed in panel coordinates) glowing."""
+    if not PLATE_TAGS[0]: title = None
     o = [hgrad(f"{p}vg", [("0", "#0B0B2A"), ("0.6", "#1E1650"), ("1", "#2A1A4A")], vertical=True),
          f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#{p}vg)"></rect>',
          "".join(f'<path d="M{x} 0 L {x} {f(h)}" stroke="#2A3A6A" stroke-width="0.8" opacity="0.5"></path>' for x in range(0, int(w) + 40, 40)),
@@ -34,11 +43,6 @@ def light_fig(p, x, base, top, flip=False, up=None, color="#FFF4C2"):
     s = fit(base, top)
     return (halo(x, base - 110 * s, 110 * s, "#FFF4C2", 0.45)
             + mk.person(p, round(x), round(base), round(s, 3), body=color, cloth="#F3EFE6", stroke="#E8B830", sw=2.4, flip=flip, up=up))
-
-def shadow_fig(p, x, base, top, flip=False):
-    """The adversary: a dark shape with no face."""
-    s = fit(base, top)
-    return mk.person(p, round(x), round(base), round(s, 3), body="#0D0D0F", cloth="#1A1018", stroke="#4A2A3A", sw=2, flip=flip)
 
 def myrtles(x0, x1, base, hh, seed):
     r = random.Random(seed); o = []
@@ -69,7 +73,7 @@ def myrtle_horses(p, w, h, seed, rider=True, report=False):
     for i, (c, x) in enumerate(cols):
         body.append(E3.horse(w * x, b, k * (1.0 if i == 0 else 0.8), color=c, flip=True, rim="#FFD23F"))
     if rider: body.append(mk.defs(p, *ALL) + light_fig(p, w * 0.3 + 6 * k, b - 70 * k, b - 70 * k - 120 * k))
-    tags = [(w * 0.3, h * 0.2, "RED"), (w * 0.52, h * 0.28, "SORREL"), (w * 0.84, h * 0.28, "WHITE")]
+    tags = [(w * x, b + 16, n) for (c, x), n in zip(cols[1:], ("SORREL", "RED", "WHITE"))]     # the rider's red horse is named in the words
     return vision(p, w, h, "".join(body), "I · THE HORSES AMONG THE MYRTLES", tags, seed=seed)
 
 def line_jerusalem(w, h, seed):
@@ -88,7 +92,7 @@ def horns(p, w, h, seed, smiths=False):
     """Four horns — the horns which have scattered Judah, Israel, and Jerusalem; and four smiths come to cast them down."""
     k = min(1.2, h / 260)
     body = [horn(w * (0.2 + i * 0.2), h * 0.62, k, rot=(-12 + i * 8)) for i in range(4)]
-    tags = [(w * (0.2 + i * 0.2), h * 0.72, t) for i, t in enumerate(("JUDAH", "ISRAEL", "JERUSALEM", "·"))][:3]
+    tags = [(w * 0.5, h * 0.74, "THE HORNS OF THE NATIONS")]
     if smiths:
         body.append(mk.defs(p, *ALL))
         for i in range(4):
@@ -146,22 +150,22 @@ def zion_dwell(w, h, seed):
     return "".join(o)
 
 def joshua_trial(p, w, h, seed, clean=False, mitre=False):
-    """Joshua the high priest standing before the angel of Jehovah, the adversary a shadow at his right hand; clothed with
-    filthy garments (clean=True: the filthy garments taken away; mitre=True: a clean mitre set on his head, and rich
-    apparel)."""
+    """Joshua the high priest standing before the angel of Jehovah, clothed with filthy garments (clean=True: the filthy
+    garments taken away; mitre=True: a clean mitre set on his head, and rich apparel). The adversary of 3:1 is never drawn:
+    the place at Joshua's right hand is left empty."""
     b = h * 0.94
     body = [mk.defs(p, *ALL), light_fig(p, w * 0.78, b, h * 0.18, flip=True, up=[(22, -158), (40, -150), (60, -146)] if clean else None)]
     s = fit(b, h * 0.26)
     if mitre: body.append(high_priest(p, w * 0.46, b, s))
     else:
         cloth = "#E8E2D6" if clean else "#5A4A30"
-        body.append(mk.person(p, round(w * 0.46), round(b), round(s, 3), body=SKIN, cloth=cloth, sw=3, extra=GREY_BEARD))
+        hood = A.headcloth("#E8E2D6" if clean else "#8A7A5A", cord="#E8B830")
+        body.append(mk.person(p, round(w * 0.46), round(b), round(s, 3), body=SKIN, cloth=cloth, sw=3, extra=hood + GREY_BEARD))
         if not clean:
             r = random.Random(seed)
             body.append("".join(f'<circle cx="{f(w * 0.46 + r.uniform(-22, 22) * s)}" cy="{f(b - r.uniform(20, 140) * s)}" r="{f(r.uniform(3, 7) * s)}" fill="#2A1E10" opacity="0.8"></circle>' for _ in range(14)))
         else:
             body.append(f'<path d="M{f(w * 0.24)} {f(b)} l 40 -20 l 50 6 l 10 14 Z" fill="#5A4A30" stroke="#0D0D0F" stroke-width="1.6"></path>')
-    if not clean and not mitre: body.append(shadow_fig(p, w * 0.2, b, h * 0.3))
     if mitre: body.append(halo(w * 0.46, b - 200 * s, 30 * s, "#FFF4C2", 0.6))
     return vision(p, w, h, "".join(body), "IV · JOSHUA THE HIGH PRIEST", seed=seed)
 

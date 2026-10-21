@@ -1,6 +1,6 @@
 """Zechariah volume, Chapter 2 — The Four Chariots (Zechariah 5–8). Every verse, word for word from ref/asv.
-VI the flying roll, and the curse entering the house of the thief; VII the ephah with the talent of lead and Wickedness a
-faceless shadow within it, carried to Shinar by two women with wings like a stork; VIII the four chariots between the
+VI the flying roll, and the curse entering the house of the thief; VII the ephah with the talent of lead (the woman within it
+in words only), carried to Shinar by two women with wings like a stork; VIII the four chariots between the
 mountains of brass, going forth north and south; the crowns of silver and gold for Joshua, the man whose name is the Branch
 (Joshua's face), and the crowns a memorial in the temple; the men of Bethel asking of the fast (Sharezer's face); the fast
 in sackcloth; the widow and the sojourner at the gate; the whirlwind over the desolate land; then the city of truth: the
@@ -23,10 +23,11 @@ VN = "#0B0B2A"
 
 @P("ZEC-C02-00-Title", "Chapter 2 · The Four Chariots", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#0B0B2A"></rect><g transform="translate(0 240)">{A.chariots("tc", 760, 840, 201)}</g>'
+    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#0B0B2A"></rect><g transform="translate(0 210)">{A.bare(A.chariots, "tc", 760, 760, 201)}</g>'
     return title(2, "The Four Chariots", "Zechariah 5 – 8", svg, "#0B0B2A", v("6:1", frm="there came four chariots"), "Zechariah · Volume Thirty-Eight")
 
 
+K.ptr = len(G.cuts)
 SEGS = [K.drawn([cp("5:1"), cp("5:2", to="said unto me,"), sy("5:2", frm="What seest", to="seest thou?"), cp("5:2", frm="And I answered,", to="I answered,"), sy("5:2", frm="I see a flying")],
                 lambda w, h: A.flying_roll("fr1", w, h, 202), VN, head="A Flying Roll", stamp=5),
         K.drawn([cp("5:3", to="Then said he unto me,"), sy("5:3", frm="This is the curse"), gd("5:4")], lambda w, h: A.flying_roll("fr2", w, h, 203, houses=True), VN),

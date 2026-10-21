@@ -6,7 +6,7 @@ beard and a slate-teal headcloth with a cord (ezr.common.ZECHARIAH). The visions
 a night field with a faint grid, the drawing glowing, a numbered title tag): the horses among the myrtles, the four horns
 and the four smiths, the measuring line and the wall of fire, Joshua the high priest, the stone of seven eyes, the
 candlestick and the two olive-trees, the flying roll, the ephah, the four chariots. Angels are shapes of white light with
-no faces; the adversary of 3:1 a faceless shadow; God is never drawn. Restraint: the slain of 11:4–9 and 13:7–9 and the
+no faces; the adversary of 3:1 is never drawn (his place at Joshua's right hand is left empty); God is never drawn. Restraint: the slain of 11:4–9 and 13:7–9 and the
 plague of 14:12 are words over empty pasture, the scattered flock and the bare hills.
 
 Plan (6,322 words, four chapters): 1 The Night Visions (1–4) · 2 The Four Chariots (5–8) · 3 Thy King Cometh (9–11) ·

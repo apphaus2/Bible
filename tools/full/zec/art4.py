@@ -69,14 +69,17 @@ def mourning(p, w, h, seed):
     Megiddon: small groups of mourners standing apart across the valley, heads covered, men and women apart."""
     o = [mk.defs(p, *ALL), sky(w, h, "#4A4A5A", "#B8A8A0"), hills(w, h, h * 0.42, seed, color="#5A5A5A", amp=20), ground(w, h, h * 0.5, "#7A7060", dy=0)]
     r = random.Random(seed)
-    groups = [(0.1, 0.62, "man"), (0.28, 0.66, "woman"), (0.48, 0.6, "man"), (0.66, 0.64, "woman"), (0.84, 0.62, "man"),
-              (0.18, 0.92, "woman"), (0.4, 0.96, "man"), (0.62, 0.94, "woman"), (0.84, 0.96, "man")]
+    groups = [(0.12, 0.66, "man"), (0.34, 0.64, "woman"), (0.6, 0.66, "man"), (0.84, 0.64, "woman"),
+              (0.22, 0.96, "woman"), (0.5, 0.97, "man"), (0.78, 0.96, "woman")]
+    men, women = ("#3A3A44", "#4A4038", "#2E3A44"), ("#4A3A4A", "#3A3448", "#5A4A4A")
     for gx, gy, kind in groups:
-        b = h * gy; s = fit(b, b - h * (0.16 if gy < 0.8 else 0.26))
+        b = h * gy; s = fit(b, b - h * (0.24 if gy < 0.8 else 0.5))
         for j in range(3):
-            x = w * gx + (j - 1) * 14 * s * 3
-            o.append((man if kind == "man" else woman)(p, x, b, s, "#3A3A44" if kind == "man" else "#4A3A4A", flip=j == 2)
-                     + f'<path d="M{f(x - 15 * s)} {f(b - 190 * s)} C {f(x - 16 * s)} {f(b - 214 * s)} {f(x + 16 * s)} {f(b - 214 * s)} {f(x + 15 * s)} {f(b - 190 * s)} L {f(x + 19 * s)} {f(b - 150 * s)} L {f(x - 19 * s)} {f(b - 150 * s)} Z" fill="#2A2A32" stroke="#0D0D0F" stroke-width="1.4"></path>')
+            x = w * gx + (j - 1) * 46 * s
+            if kind == "man":
+                o.append(man(p, x, b, s, men[j], flip=j == 2, extra=A.headcloth("#2A2A30", cord="#5A5A60")))
+            else:
+                o.append(woman(p, x, b, s, women[j], flip=j == 2))
     o.append(label(w * 0.96, h * 0.08, "THE VALLEY OF MEGIDDON", "#F3EFE6", 9, anchor="end"))
     return "".join(o)
 
@@ -180,9 +183,9 @@ def gates_plan(w, h):
     d = "M" + " L ".join(f"{f(w * x)} {f(h * y)}" for x, y in pts) + " Z"
     o.append(f'<path d="{d}" fill="#12385A" stroke="{GOLD}" stroke-width="3"></path>')
     names = [("BENJAMIN'S GATE", 0.7, 0.16, "start"), ("THE FIRST GATE", 0.84, 0.46, "start"), ("THE CORNER GATE", 0.3, 0.2, "end"),
-             ("TOWER OF HANANEL", 0.18, 0.52, "end"), ("THE KING'S WINEPRESSES", 0.74, 0.84, "start")]
+             ("TOWER OF HANANEL", 0.18, 0.52, "end"), ("THE KING'S WINEPRESSES", 0.74, 0.84, "end")]
     for n, x, y, an in names:
-        o.append(node(w * x, h * y, "", color=GOLD, r=5) + label(w * x + (10 if an == "start" else -10), h * y + 4, n, CY, 9, anchor=an))
+        o.append(node(w * x, h * y, "", color=GOLD, r=5) + label(w * x + (10 if an == "start" else -10), h * y + (-10 if n.startswith("THE KING") else 4), n, CY, 9, anchor=an))
     o.append(halo(w * 0.5, h * 0.5, h * 0.2, "#FFE680", 0.4) + label(w * 0.5, h * 0.52, "JERUSALEM", GOLD, 11))
     return "".join(o)
 

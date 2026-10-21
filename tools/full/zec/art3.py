@@ -46,13 +46,14 @@ def king_ass(p, w, h, seed):
     """Behold, thy king cometh unto thee; he is just, and having salvation; lowly, and riding upon an ass, even upon a colt
     the foal of an ass: a king in a plain white robe with a small gold circlet, on an ass, a colt beside her, the gate of
     Jerusalem ahead (no face)."""
-    b = h * 0.95
+    b = h * 0.92
     o = [mk.defs(p, *ALL), sky(w, h, "#5A7AB8", "#FFE6A0"), sun(w * 0.2, h * 0.24, max(14, h * 0.06), color="#FFE680", op=0.4),
-         walls(w * 0.56, w * 1.06, h * 0.7, h * 0.46, seed, color="#C8A878", towers=2), ground(w, h, h * 0.7, "#C8B080", dy=0)]
-    k = min(1.4, h / 300)
+         walls(w * 0.5, w * 1.06, h * 0.7, min(h * 0.46, w * 0.36), seed, color="#C8A878", towers=2), ground(w, h, h * 0.7, "#C8B080", dy=0),
+         f'<path d="M{f(w * 0.02)} {f(h + 10)} C {f(w * 0.3)} {f(h * 0.86)} {f(w * 0.56)} {f(h * 0.76)} {f(w * 0.66)} {f(h * 0.7)} L {f(w * 0.72)} {f(h * 0.7)} C {f(w * 0.66)} {f(h * 0.8)} {f(w * 0.5)} {f(h * 0.92)} {f(w * 0.36)} {f(h + 10)} Z" fill="#E0CC98" opacity="0.8"></path>']
+    k = min(0.7, h / 520)
     crown = '<path d="M-12 -196 L 12 -196 L 10 -202 L -10 -202 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.2"></path>'
     o.append(N1.mount(w * 0.36, b, k, color="#8A8478", rider_body=SKIN, rider_cloth="#F3EFE6", p=p, extra=crown))
-    o.append(N1.ass(w * 0.14, b + 4, k * 0.6, color="#9A948A"))
+    o.append(N1.ass(w * 0.36 - 96 * k, b + 4, k * 0.6, color="#9A948A"))
     o.append(halo(w * 0.36, b - 160 * k, 70 * k, "#FFF4C2", 0.35))
     return "".join(o)
 

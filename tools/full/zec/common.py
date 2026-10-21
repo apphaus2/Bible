@@ -15,5 +15,5 @@ ZECH_NIGHT = F("adam", **dict(_Z, skin="#9A8AA0", shadow="#3A3A5E"), light="#CFE
 ZECH_AWE = F("adam", **dict(_Z, skin="#9A8AA0", shadow="#3A3A5E"), sweat=True, brow="sorrow", light="#FFE680")
 ZECH_STERN = F("adam", brow="scowl", light="#D7261E", **_Z)
 ZECH_GOLD = F("adam", light="#FFE680", **_Z)
-# the men of Bethel (7:2–3): Sharezer, a brown headcloth; the shepherd's face is Zechariah's own (11:4–17)
-SHAREZER = F("adam", skin="#C98E66", shadow="#5A3A3A", hair="#3A2A1E", hl="#6A5A4E", beard=True, beard_color="#3A2A1E", scarf="#6A4A2A", cord=True, light="#FFC14D")
+# the men of Bethel (7:2–3): Sharezer, a dark slate headcloth with a cord; the shepherd's face is Zechariah's own (11:4–17)
+SHAREZER = F("adam", skin="#C98E66", shadow="#5A3A3A", hair="#3A2A1E", hl="#6A5A4E", beard=True, beard_color="#3A2A1E", scarf="#3A4048", cord=True, light="#FFC14D")
