@@ -7,6 +7,8 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
     fallback     a second eBible text for verses the first one's file lacks (listed in coverage.md)
     versemap     {BOOK: ["c:a-b > tc:tv", …]}: ASV verses c:a…c:b are the translation's tc:tv onward, where asv.align's
                  pairing by length can't find its way (a renumbered chapter)
+    merged       true for a text that keeps the ASV's verse numbers and only joins a verse to the one before it, leaving its
+                 slot empty (KorRV): asv.unmerge cuts it back, instead of asv.align's pairing by length
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
     breaks       {"speech"|"end"|"pause": regex}: for a text with little punctuation, the words a break of that kind

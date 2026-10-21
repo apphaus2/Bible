@@ -140,11 +140,34 @@ def align(src, tgt):
             if not ks: continue
             if not text: MISSING.extend(ks); continue
             if len(ks) == 1: out[ks[0]] = text; continue
-            la = [_letters(src[k]) for k in ks]; tot, cut, a = sum(la), 0, 0
-            for n_, k in enumerate(ks):
-                cut += la[n_]
-                b = len(text) if n_ == len(ks) - 1 else _snap(text, cut / tot, _kind(src[k] + " X", len(src[k])), a)
-                out[k] = text[a:b].strip(); a = b
+            out.update(_split(src, ks, text))
+    return out
+
+def _split(src, ks, text):
+    """One translated text that holds the ASV verses ks, cut into them by the ASV's letter shares, at its best breaks."""
+    out, la = {}, [_letters(src[k]) for k in ks]
+    tot, cut, a = sum(la), 0, 0
+    for n_, k in enumerate(ks):
+        cut += la[n_]
+        b = len(text) if n_ == len(ks) - 1 else _snap(text, cut / tot, _kind(src[k] + " X", len(src[k])), a)
+        out[k] = text[a:b].strip(); a = b
+    return out
+
+def unmerge(src, tgt):
+    """For a text that keeps the ASV's verse numbers and only joins a verse to the one before it, leaving its slot empty
+    (KorRV: Psalm 92:1 holds 92:1–3), "merged" in tools/lang/<code>.json: no pairing by length (Korean verses are too
+    unlike the English in length for it), each joined verse is cut back into its slots. A verse past the ASV's last
+    (NRSV's 3 John 1:15) joins the ASV verse before it."""
+    out = {k: v for k, v in tgt.items() if k in src}
+    for k in sorted(set(tgt) - set(src)):
+        prev = max((p for p in src if p[0] == k[0] and p < k), default=None)
+        if prev and tgt[k].strip(): out[prev] = (out.get(prev, "") + " " + tgt[k]).strip()
+    ks = sorted(src); i = 0
+    while i < len(ks):
+        j = i + 1
+        while j < len(ks) and ks[j][0] == ks[i][0] and not out.get(ks[j], "").strip(): j += 1
+        if j > i + 1 and out.get(ks[i], "").strip(): out.update(_split(src, ks[i:j], out[ks[i]]))
+        i = j
     return out
 
 def psalm_titles(tgt):
@@ -199,7 +222,7 @@ class Book:
         if LANG == "en": self.tgt = self.src
         else:
             tid = L["text"]; raw = parse(ROOT / "ref" / tid / files(tid)[code])
-            self.tgt = align(self.src, raw)
+            self.tgt = (unmerge if L.get("merged") else align)(self.src, raw)
             rules = langs.versemap(LANG).get(code, [])
             for (c, a, b), (tc, tv) in rules:
                 for n in range(a, b + 1): self.tgt[(c, n)] = raw[(tc, tv + n - a)]
