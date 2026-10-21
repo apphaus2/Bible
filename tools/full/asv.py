@@ -171,6 +171,12 @@ def parse_titles(path):
     return [int(c) for c, body in re.findall(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S)
             if re.search(r"^\\d ", body.split("\\v ", 1)[0], flags=re.M)]
 
+def drop(tgt):
+    """A translation's verses without the notes its file keeps inline (L["drop"], a regex: Riveduta's "(H7-1)", the Hebrew
+    verse number where it differs)."""
+    if not L.get("drop"): return tgt
+    return {k: re.sub(r"\s+", " ", re.sub(L["drop"], " ", t)).strip() for k, t in tgt.items()}
+
 def key(ref):
     c, v = ref.split(":"); return int(c), int(v)
 
@@ -192,9 +198,7 @@ class Book:
         self.borrowed = []                   # verses taken from FALLBACK (listed in coverage.md)
         if LANG == "en": self.tgt = self.src
         else:
-            tid = L["text"]; raw = parse(ROOT / "ref" / tid / files(tid)[code])
-            if L.get("strip"):               # editorial marks in the text's verses (Luther 1912: its own numbers, "[3:19]")
-                raw = {k: re.sub(L["strip"], " ", t).strip() for k, t in raw.items()}
+            tid = L["text"]; raw = drop(parse(ROOT / "ref" / tid / files(tid)[code]))
             self.tgt = align(self.src, raw)
             rules = langs.versemap(LANG).get(code, [])
             for (c, a, b), (tc, tv, *tw) in rules:   # tw: one ASV verse that is the text's verses tv…tw joined

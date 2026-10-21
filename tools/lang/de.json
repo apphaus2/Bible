@@ -3,7 +3,7 @@
  "text": "deu1912",
  "credit": "LUTHER 1912",
  "fallback": "deuelo",
- "strip": "\\s*\\[\\d+(?::\\d+)?[ab]?\\]\\s*",
+ "drop": "\\s*\\[\\d+(?::\\d+)?[ab]?\\]\\s*",
  "versemap": {
   "NUM": [
    "20:1-27 > 20:1",
