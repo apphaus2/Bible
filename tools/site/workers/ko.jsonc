@@ -1,0 +1,8 @@
+// Korean: the static site in _site-ko/ (rebuild_site.py --lang ko), all under ko/, reached through the router at /ko/.
+// npx wrangler deploy -c tools/site/workers/ko.jsonc
+{
+  "name": "bible-ko",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-ko" },
+  "workers_dev": false
+}
