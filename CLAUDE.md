@@ -197,25 +197,28 @@ The site is in **English and Spanish** (bible.apphaus.us/es/). `ref/` holds the 
   again by an English phrase is a `Cut` that answers in ASV positions. The text check runs against the translation.
 - **Verse numbering:** eBible's RV1909 keeps English verse numbers but shifts the words where its own numbering differs, leaving
   slots empty (and loses Job 39:28–40:5 and Numbers 30:16). `asv.align` re-pairs the chapters around any empty slot or any run of
-  verses out of proportion (Gale–Church by length); `asv.VERSEMAP` spells out Job 38–41 and Numbers 29–30; lost verses come from
-  `asv.FALLBACK` (`spablm`, which says "Yahvé") and are listed in that volume's `coverage.md`. Psalm superscriptions are inside
-  RV1909's verse 1: `asv.psalm_titles` splits them off where the psalm's first word is in capitals; RV1909 has no poetic line breaks.
+  verses out of proportion (Gale–Church by length); the language's `versemap` spells out Job 38–41 and Numbers 29–30; lost verses
+  come from its `fallback` (`spablm`, which says "Yahvé") and are listed in that volume's `coverage.md`. Psalm superscriptions: a
+  text's own `\d` lines, else split off verse 1 by its `psalm_title` regex (RV1909: where the first word is in capitals); RV1909 has
+  no poetic line breaks.
 - **Labels** (titles, stamps, headings, map and chart labels, blurbs, ledes — not scripture): `tools/full/labels.py collect` lists
   every label of the English pages; `tools/full/i18n/es/*.json` maps each to Spanish (names in RV1909's spelling, quotations in
   RV1909's words); `labels.label()` translates a label whole or piece by piece (split at " · " and " — "), and verse references by
-  rule (`BOOKS_ES`, `ABBR_ES`: "GEN 1:3" → "GN 1:3"). `python tools/full/labels.py missing es` lists what is still English.
+  rule (the language's `books` and `abbr`: "GEN 1:3" → "GN 1:3"). `python tools/full/labels.py missing es` lists what is still English.
 - **Site:** `rebuild_site.py --lang es` builds `_site-es/es/` (its own thumbnails, `_book/asv-es/` from `asv_pdf.py --text spaRV1909`,
-  `_book/download/es/` from `downloads.py --lang es`). `build_site.py` takes its interface words from `UI[lang]` and puts a
+  `_book/download/es/` from `downloads.py --lang es`). `build_site.py` takes its interface words from the language's `ui` and puts a
   **language dropdown** in every page's top bar (`lang_menu`: each language named in itself, linking to the page there whose verses
   start at or before this page's — page counts differ between languages — else that chapter, else that language's home).
 - **Workers:** `bible` (`wrangler.jsonc`, `tools/site/workers/router.js`) owns bible.apphaus.us and serves nothing itself: `/es/…`
   goes to `bible-es` (`tools/site/workers/es.jsonc`, `_site-es/`), the rest to `bible-en` (`en.jsonc`, `_site/`), by service
   bindings. Each language Worker has its own 100,000-file limit (a language is ~18,000 files once the Bible is done).
-- **Next languages:** Portuguese, French, German, Italian (Latin script; check each file's numbering with `asv.align`), then Chinese;
-  Japanese, Russian and Korean need fonts or verse maps; right-to-left and unspaced scripts later. A language needs: its text in
-  `ref/`, `TEXTS`/`FALLBACK`/`VERSEMAP` in `asv.py`, `RULES` and `i18n/<lang>/` in labels, `UI` and `LANGS` in `build_site.py`,
-  `LANGS` in `rebuild_site.py`, `WORDS` in `asv_pdf.py`, a `tools/site/workers/<lang>.jsonc`, a binding in `wrangler.jsonc`, and
-  steps in the workflow.
+- **A language is one file, `tools/lang/<code>.json`** (`tools/lang/langs.py` documents every key): its text, credit, fallback,
+  versemap, psalm_title, `unspaced` (Chinese, Japanese: a cut may fall between any two characters, and the text check ignores
+  line breaks), reference rules, the site's `ui`, the text PDF's `words`, the EPUB's `epub`, and `fonts` (Google Fonts families
+  for a script the manga's fonts lack, set after each manga font in every font list of its pages, PDFs and EPUBs). Plus its text
+  in `ref/<id>/`, its labels in `tools/full/i18n/<code>/`, a `tools/site/workers/<code>.jsonc` and a service binding in
+  `wrangler.jsonc`; every tool and the workflow pick it up from there. Under way: Portuguese, French, German, Italian, Chinese
+  (simplified), Japanese, Russian, Korean; right-to-left scripts later.
 
 ## Website
 

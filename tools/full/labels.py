@@ -3,10 +3,10 @@
     python3 tools/full/labels.py collect          # every label of the English pages -> tools/full/i18n/labels.json
     python3 tools/full/labels.py missing es       # labels with no Spanish yet -> printed, for translating
 
-tools/full/i18n/<lang>.json maps each English label to its translation; build_volume.py (BIBLE_LANG=<lang>) puts it on
+tools/full/i18n/<lang>/*.json maps each English label to its translation; build_volume.py (BIBLE_LANG=<lang>) puts it on
 every page with translate(). A label is a text node of a page that is not a run of the ASV: scripture is never in these
 files (it comes from ref/<eBible id> through asv.Book)."""
-import re, sys, json, html, pathlib
+import re, sys, json, html, pathlib, unicodedata
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 I18N = HERE / "i18n"
@@ -63,36 +63,21 @@ def table(lang):
     return tab
 
 # verse references are translated by rule, not by the table: the book's name or page abbreviation, then the numbers
-BOOKS_ES = {
-    "Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico", "Numbers": "Números", "Deuteronomy": "Deuteronomio",
-    "Joshua": "Josué", "Judges": "Jueces", "Ruth": "Rut", "1 Samuel": "1 Samuel", "2 Samuel": "2 Samuel", "1 Kings": "1 Reyes",
-    "2 Kings": "2 Reyes", "1 Chronicles": "1 Crónicas", "2 Chronicles": "2 Crónicas", "Ezra": "Esdras", "Nehemiah": "Nehemías",
-    "Esther": "Ester", "Job": "Job", "Psalms": "Salmos", "Psalm": "Salmo", "Proverbs": "Proverbios", "Ecclesiastes": "Eclesiastés",
-    "Song of Solomon": "Cantar de los Cantares", "Isaiah": "Isaías", "Jeremiah": "Jeremías", "Lamentations": "Lamentaciones", "Ezekiel": "Ezequiel",
-    "Daniel": "Daniel", "Hosea": "Oseas", "Joel": "Joel", "Amos": "Amós", "Obadiah": "Abdías", "Jonah": "Jonás", "Micah": "Miqueas",
-    "Nahum": "Nahum", "Habakkuk": "Habacuc", "Zephaniah": "Sofonías", "Haggai": "Hageo", "Zechariah": "Zacarías", "Malachi": "Malaquías",
-    "Matthew": "Mateo", "Mark": "Marcos", "Luke": "Lucas", "John": "Juan", "Acts": "Hechos", "Romans": "Romanos",
-    "Chapter": "Capítulo", "Chapters": "Capítulos", "Day": "Día", "Year": "Año", "Years": "Años"}
-ABBR_ES = {"GEN": "GN", "EX": "ÉX", "LEV": "LV", "NUM": "NM", "DEUT": "DT", "JOSH": "JOS", "JDG": "JUE", "RUTH": "RT",
-    "1SAM": "1S", "2SAM": "2S", "1KGS": "1R", "2KGS": "2R", "1CHR": "1CR", "2CHR": "2CR", "EZRA": "ESD", "NEH": "NEH", "ESTH": "EST",
-    "JOB": "JOB", "PS": "SAL", "PROV": "PR", "ECCL": "EC", "SONG": "CNT", "ISA": "IS", "JER": "JER", "LAM": "LM", "EZEK": "EZ",
-    "DAN": "DN", "HOS": "OS", "JOEL": "JL", "AMOS": "AM", "OBAD": "ABD", "JONAH": "JON", "MIC": "MI", "NAH": "NAH", "HAB": "HAB",
-    "ZEPH": "SOF", "HAG": "HAG", "ZECH": "ZAC", "MAL": "MAL", "PSALM": "SALMO", "CHAPTER": "CAPÍTULO", "DAY": "DÍA",
-    "YEAR": "AÑO", "YEARS": "AÑOS", "No.": "N.º", "Vol.": "Vol.", "PORTION": "PORCIÓN", "MALE": "VARÓN", "FEMALE": "HEMBRA",
-    "TRIBUTE": "TRIBUTO"}
-RULES = {"es": (BOOKS_ES, ABBR_ES)}
+# ("books" and "abbr" in tools/lang/<code>.json)
+sys.path.insert(0, str(ROOT / "tools" / "lang"))
+import langs
 NUMS = r"\d+(?::\d+)?(?:\s*[–-]\s*\d+(?::\d+)?)?(?:[,;] ?\d+(?::\d+)?(?:\s*[–-]\s*\d+(?::\d+)?)?)*"
 SEP = re.compile(r"( · | — )")
 
 def ref_rule(part, lang):
     """'Genesis 1:3–4' -> 'Génesis 1:3–4', 'GEN 1:3' -> 'GN 1:3', 'Chapters 1 – 50' -> 'Capítulos 1 – 50'; None if not a ref."""
-    names, abbr = RULES.get(lang, ({}, {}))
+    L = langs.get(lang); names, abbr = L.get("books", {}), L.get("abbr", {})
     words = {**{k.upper(): v.upper() for k, v in names.items()}, **names, **abbr}
     for w in sorted(words, key=len, reverse=True):
         m = re.fullmatch(re.escape(w) + r" ?(" + NUMS + r"(?:\s*–\s*\d+)?)( ABRIDGED)?", part)
         if m:
             sp = " " if part[len(w):len(w) + 1] == " " else ""
-            return words[w] + sp + m.group(1) + (" ABREVIADO" if m.group(2) else "")
+            return words[w] + sp + m.group(1) + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
     return None
 
 def label(s, lang, tab):
@@ -126,8 +111,9 @@ def translate(page, lang, tab=None):
 FIT = re.compile(r'(<text [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')
 def fit(m):
     """A drawn label with data-fit (genesis.art3.label(fit=)) made to fit its room: the letter-spacing goes first, then the
-    font shrinks (IBM Plex Mono is 0.6 em a letter), never below 6 px."""
-    tag, room, n = m.group(1), float(m.group(2)), len(html.unescape(m.group(3)))
+    font shrinks (IBM Plex Mono is 0.6 em a letter, a CJK character 1 em), never below 6 px."""
+    tag, room = m.group(1), float(m.group(2))
+    n = sum(1 / 0.6 if unicodedata.east_asian_width(ch) in "WF" else 1 for ch in html.unescape(m.group(3)))   # a CJK glyph is 1 em
     fs = float(re.search(r'font-size="([\d.]+)"', tag).group(1))
     ls = float((re.search(r'letter-spacing="([\d.]+)em"', tag) or [0, 0])[1])
     if not n or n * fs * (0.6 + ls) <= room: return m.group(0)

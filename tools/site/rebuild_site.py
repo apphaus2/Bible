@@ -22,7 +22,9 @@ import hashlib, json, os, pathlib, shutil, subprocess, sys, tempfile
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SITE = ROOT / "tools" / "site"
 
-LANGS = {"en": None, "es": "spaRV1909"}                      # the site's languages: English, then each translation built
+sys.path.insert(0, str(ROOT / "tools" / "lang"))
+import langs
+LANGS = langs.ORDER                                          # the site's languages (tools/lang/<code>.json), English first
 
 def vols(lang):
     d = ROOT / "volumes" / ("" if lang == "en" else lang)
