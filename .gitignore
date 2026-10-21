@@ -9,4 +9,11 @@ _book/
 .wrangler/
 volumes/es/
 volumes/fr/
+volumes/pt/
+volumes/de/
+volumes/it/
+volumes/zh/
+volumes/ja/
+volumes/ru/
+volumes/ko/
 _site-*/
