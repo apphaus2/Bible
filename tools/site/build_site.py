@@ -89,6 +89,11 @@ def slug(t):
     t = re.sub(r"^(B\d+ · )?\d+ · ", "", t)
     t = "".join(ch for ch in unicodedata.normalize("NFKD", t) if not unicodedata.combining(ch))   # "Génesis" -> "genesis"
     return re.sub(r"[^a-z0-9]+", "-", t.lower().replace("·", " ")).strip("-")
+def numbered_slug(i, t):
+    """'03-the-threshing-floor'; just '03' when the title has words but no Latin letters to slug (Japanese, Chinese ...).
+    An untitled page keeps its old name ('03-')."""
+    s = slug(t)
+    return f"{i:02d}-{s}" if s or not re.sub(r"^(B\d+ · )?\d+ · ", "", t).strip() else f"{i:02d}"
 def esc(s): return html.escape(s, quote=True)
 
 def convert(path):
@@ -115,7 +120,7 @@ def chapter_pages(vdir, V, b, canvas):
     for i, n in enumerate(names):
         t = canvas["boards"][n].get("title", n)
         ref = re.search(r"<title>(.*?)</title>", (vdir / "pages" / n).read_text(encoding="utf-8")).group(1).partition(" — ")[0]
-        out_.append((f"{i:02d}-{slug(t)}", ref))
+        out_.append((f"{numbered_slug(i, t)}", ref))
     return out_
 
 # the other languages' pages, for the language menu: {lang: {(volume id, chapter dir): [(slug, start)]}}
@@ -164,7 +169,7 @@ for S in SERIES:
             if n == "Main.dc.html": ref, heading = b["range"], T("cover")
             pm = re.search(r"— (\d+) —", body)
             num = langs.numbered(UI[LANG]["page"], int(pm.group(1))) if pm else (T("cover") if n == "Main.dc.html" else T("title"))
-            pages.append({"file": n, "slug": f"{i:02d}-{slug(t)}", "label": re.sub(r'^B\d+ · ', '', t), "heading": heading or t,
+            pages.append({"file": n, "slug": f"{numbered_slug(i, t)}", "label": re.sub(r'^B\d+ · ', '', t), "heading": heading or t,
                           "ref": ref, "num": num, "style": style, "body": body})
         b["pages"] = pages; FLAT[S["edition"]].append(b)
         ms["books"].append({"id": b["dir"], "title": f"{b['label']}: {b['name']}", "range": b["range"], "url": f"{S['path']}/{b['dir']}/",
@@ -263,7 +268,9 @@ def toc_entry(b):
     return (f'''<li><h3><a href="{S['path']}/{b['dir']}/index.html">{S['name']}{edition_tag(S)} · {b['label']}: {esc(b['name'])}</a></h3><ol>'''
             + "".join(f'<li><a href="{S["path"]}/{b["dir"]}/{p["slug"]}.html"><span>{esc(p["num"])}</span> {esc(p["heading"])} <em>{esc(p["ref"])}</em></a></li>' for p in b["pages"]) + "</ol></li>")
 def section(S, cls):
-    return f'''  <h3 class="{cls}" id="{S['path']}">{S['name']} <span lang="ja">{S['kanji']}</span></h3>
+    wide = any(unicodedata.east_asian_width(ch) in "WF" for ch in S["name"])           # a CJK name needs no kanji beside it
+    kanji = "" if wide else f' <span lang="ja">{S["kanji"]}</span>'
+    return f'''  <h3 class="{cls}" id="{S['path']}">{S['name']}{kanji}</h3>
   <p class="lede">{esc(S['lede'])}</p>
   {downloads("", S)}
   <ol class="grid books">
@@ -276,7 +283,7 @@ text_sec = "" if not ASV_BOOKS else f'''  <h2 class="sec" id="text">{T("text")}<
   <p class="lede">{esc(T("text_lede", c=CREDIT))}</p>
   <ol class="asv-books">{"".join(f'<li><a href="{b["file"]}">{esc(b["title"])}</a></li>' for b in ASV_BOOKS.values())}</ol>
 '''
-vol_names = ", ".join(v["name"] for v in VOLUMES) or "—"
+vol_names = UI[LANG].get("list_sep", ", ").join(v["name"] for v in VOLUMES) or "—"   # ja "、"
 (out / "index.html").write_text(f'''<!doctype html>
 <html lang="{LANG}">
 <head>
