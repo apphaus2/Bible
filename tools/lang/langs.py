@@ -6,8 +6,8 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
     text         ref/<eBible id> of its public-domain Bible; credit: the short name on every page ("RV1909")
     fallback     a second eBible text for verses the first one's file lacks (listed in coverage.md)
     versemap     {BOOK: ["c:a-b > tc:tv", …]}: ASV verses c:a…c:b are the translation's tc:tv onward, where asv.align's
-                 pairing by length can't find its way (a renumbered chapter); "c:a-a > tc:tv-tw": one ASV verse that
-                 the text splits in two (its verses tv…tw joined). A mapped chapter's verses no rule names come from fallback
+                 pairing by length can't find its way (a renumbered chapter); "c:a-b > tc:tv-tw" shares a block of
+                 verses divided differently; verse 0 is a psalm's superscription (see versemap()); a mapped chapter's verses no rule names come from fallback
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     css          extra CSS for every page of the language (in the page's own <style>), for layout the translation needs
     drop         a regex for notes the text's file keeps inside its verses, taken out of the pages and the text PDFs (Riveduta's "(H7-1)" Hebrew numbers, Luther 1912's own "[3:19]")
@@ -33,20 +33,28 @@ def by_text(tid):
     return next(k for k, v in LANGS.items() if v["text"] == tid)
 
 def versemap(code):
-    """{BOOK: [((c, a, b), (tc, tv))]} from the "c:a-b > tc:tv" strings."""
+    """{BOOK: [((c, a, b), (tc, tv, tw))]} from the "c:a-b > tc:tv" strings (tw None: verse for verse) and the block form
+    "c:a-b > tc:tv-tw" (ASV verses a…b share the translation's verses tv…tw, divided by length at the best breaks: two
+    verses the translation joins in one, or one it splits in two). Verse 0 is a psalm's superscription: on the ASV side
+    its title (asv.Book("PSA").titles), on the translation's side its \\d line, else a numbered verse ("51:0-0 > 50:1-2")."""
     out = {}
     for book, rules in LANGS[code].get("versemap", {}).items():
         for r in rules:
             c, a, b, tc, tv, tw = re.fullmatch(r"(\d+):(\d+)-(\d+) > (\d+):(\d+)(?:-(\d+))?", r).groups()
-            out.setdefault(book, []).append(((int(c), int(a), int(b)), (int(tc), int(tv)) + ((int(tw),) if tw else ())))
+            out.setdefault(book, []).append(((int(c), int(a), int(b)), (int(tc), int(tv), int(tw) if tw else None)))
     return out
 
 FAMILY = re.compile(r"""(?<![\w-])(['"]?)(Anton|Archivo Narrow|IBM Plex Mono|Noto Sans JP|Source Serif 4)\1(?=\s*[,;"'])""")
 def with_fallbacks(src, code):
-    """Page markup or CSS with this language's fallback family after each manga font it stands in for."""
+    """Page markup or CSS with this language's fallback family after each manga font it stands in for, and, where the
+    fallback is wider than the manga font (Anton is very narrow), a font-size-adjust that sets its letters at the size
+    the page was laid out for ("adjust": {manga font: x-height ratio})."""
     fb = LANGS[code].get("fonts", {}).get("fallback", {})
     if not fb: return src
-    return FAMILY.sub(lambda m: m.group(0) + (f", '{fb[m.group(2)]}'" if m.group(2) in fb else ""), src)
+    src = FAMILY.sub(lambda m: m.group(0) + (f", '{fb[m.group(2)]}'" if m.group(2) in fb else ""), src)
+    for fam, ratio in LANGS[code].get("fonts", {}).get("adjust", {}).items():
+        src = re.sub(r"""(font-family:\s*['"]?""" + re.escape(fam) + r"""\b[^;"{}]*)(?=[;"}])""", rf"\1; font-size-adjust: {ratio}", src)
+    return src
 
 def font_query(code):
     """The extra families as Google Fonts css2 query parts ("family=Oswald:wght@400;700")."""

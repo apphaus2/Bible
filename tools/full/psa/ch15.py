@@ -11,6 +11,7 @@ from num.pages import Pages
 from psa import G
 from psa.common import pack, psalm, end_mark, chapter_open, ALEPH
 from psa import ch14 as _prev
+import asv
 
 v = G.v
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
@@ -36,7 +37,8 @@ for k, plan in enumerate(PLANS):
         letter = ALEPH                                         # a label: the line before verse 1 is no verse
         heads = [(119, None, None), (letter.rstrip("."), None, None)]
     else:
-        letter = v(f"119:{a - 1}", frm=re.search(r"[א-ת]", G.verses[(119, a - 1)]).group(0))   # "ב BETH." closes verse a-1
+        t = G.verses[(119, a - 1)]; i = re.search(r"[א-ת]", t).start()
+        letter = v(f"119:{a - 1}", frm=t[i]) if asv.LANG == "en" else t[i:]   # "ב BETH." closes verse a-1 (a label in a translation)
         heads = [(letter.rstrip("."), None, None)]
     name = letter.split()[-1].rstrip(".").title()
     SEGS += psalm(119, plan, start=a, upto=a + 7, head=heads, title=f"Psalm 119 · {name}", face="LEVITE")

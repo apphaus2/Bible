@@ -38,6 +38,7 @@ for cm in re.finditer(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", SRC, flags=re.S):
 import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import asv as _asv
+TITLES_EN = dict(TITLES)                 # the ASV's, in every language: who sings a psalm (common.singer) reads them
 if _asv.LANG != "en":                    # another language: titles split off its verse 1 (asv.psalm_titles), no line breaks
     TITLES = _asv.Book("PSA").titles
     LINES = {}

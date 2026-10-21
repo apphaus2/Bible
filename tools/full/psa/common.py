@@ -13,7 +13,8 @@ from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
 from genesis.ch07 import RED
 from psa import G
-from psa.text import TITLES, BOOKS, ALEPH, LINES, lines_of
+from psa.text import TITLES, TITLES_EN, BOOKS, ALEPH, LINES, lines_of
+import asv as _asv
 from psa.layout import seg, pack as _pack
 from fx import end_mark
 from sa2.common import (DAVID, DAVID_BOLD, DAVID_GRIEVED, DAVID_KING, DAVID_JOY, DAVID_WRATH, DAVID_GRIEF, DAVID_MOURN, DAVID_OLD, DAVID_OLD_ALARM,
@@ -137,7 +138,7 @@ def parse_plan(plan):
 def singer(n):
     """The face for psalm n, from its superscription: David, Asaph, the sons of Korah, Heman, Ethan, Moses, Solomon, or a
     Levite singer when the psalm names no one."""
-    t = TITLES.get(n, "")
+    t = TITLES_EN.get(n, "")
     for name, k in (("Heman", "HEMAN"), ("Ethan", "ETHAN"), ("Asaph", "ASAPH"), ("Korah", "KORAH"), ("Moses", "MOSES"), ("Solomon", "SOLOMON_WISE"), ("David", "DAVID_KING")):
         if name in t: return k
     return "LEVITE"
@@ -167,8 +168,8 @@ def psalm(n, plan, god=None, budget=380, fbudget=440, face=None, head=None, upto
                 lines += [("head", hd) for hd in (head if isinstance(head, list) else [head])]
             for x in ch:
                 if n == 119:
-                    main, nxt = _plain(n, x)
-                    lines.append(("song", _poem(f"{n}:{x}", to=main) if nxt else _poem(f"{n}:{x}")))
+                    main, nxt = _plain(n, x)          # a translation's verse carries no letter head: it stays whole
+                    lines.append(("song", _poem(f"{n}:{x}", to=main) if nxt and _asv.LANG == "en" else _poem(f"{n}:{x}")))
                 else:
                     lines += _verse_lines(n, x, god)
             ref = label(n, ch[0], ch[-1])
