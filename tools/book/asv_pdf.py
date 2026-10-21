@@ -117,7 +117,7 @@ def book_html(code, path):
             n = int(rest.split()[0])
             anchor = f"{code}.{n}"; chapters.append((n, anchor))
             if code == "PSA":
-                body.append(f'<h3 class="ps" id="{anchor}">Psalm {n}</h3>')
+                body.append(f'<h3 class="ps" id="{anchor}">{W("psalm")} {n}</h3>')
             elif code in SINGLE:
                 body.append(f'<span class="anchor" id="{anchor}"></span>')
             else:

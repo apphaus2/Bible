@@ -40,10 +40,15 @@ def versemap(code):
 
 FAMILY = re.compile(r"""(?<![\w-])(['"]?)(Anton|Archivo Narrow|IBM Plex Mono|Noto Sans JP|Source Serif 4)\1(?=\s*[,;"'])""")
 def with_fallbacks(src, code):
-    """Page markup or CSS with this language's fallback family after each manga font it stands in for."""
+    """Page markup or CSS with this language's fallback family after each manga font it stands in for, and, where the
+    fallback is wider than the manga font (Anton is very narrow), a font-size-adjust that sets its letters at the size
+    the page was laid out for ("adjust": {manga font: x-height ratio})."""
     fb = LANGS[code].get("fonts", {}).get("fallback", {})
     if not fb: return src
-    return FAMILY.sub(lambda m: m.group(0) + (f", '{fb[m.group(2)]}'" if m.group(2) in fb else ""), src)
+    src = FAMILY.sub(lambda m: m.group(0) + (f", '{fb[m.group(2)]}'" if m.group(2) in fb else ""), src)
+    for fam, ratio in LANGS[code].get("fonts", {}).get("adjust", {}).items():
+        src = re.sub(r"""(font-family:\s*['"]?""" + re.escape(fam) + r"""\b[^;"{}]*)(?=[;"}])""", rf"\1; font-size-adjust: {ratio}", src)
+    return src
 
 def font_query(code):
     """The extra families as Google Fonts css2 query parts ("family=Oswald:wght@400;700")."""
