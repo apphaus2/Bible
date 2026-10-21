@@ -36,8 +36,8 @@ OUT_NAME = "bible-asv.pdf"
 ASV_DIR = "asv"                       # the book PDFs' folder (in _book/ and on the site)
 CREDIT, LANG = "ASV", "en"
 # --text spaRV1909: the same book from another public-domain text, for that language's site (its "words" in tools/lang/<code>.json)
-import sys; sys.path.insert(0, str(ROOT / "tools" / "lang"))
-import langs
+import sys; sys.path.insert(0, str(ROOT / "tools" / "lang")); sys.path.insert(0, str(ROOT / "tools" / "full"))
+import langs, asv
 WORDS = {k: v["words"] for k, v in langs.LANGS.items() if "words" in v}
 def W(k): return WORDS[LANG][k]
 SINGLE = {"OBA", "PHM", "2JN", "3JN", "JUD"}         # one-chapter books: no chapter numeral
@@ -66,7 +66,8 @@ def inline(s):
     s = re.sub(r"\\bd (.*?)\\bd\*", r"<b>\1</b>", s)
     s = re.sub(r"\\it (.*?)\\it\*", r"<i>\1</i>", s)
     s = re.sub(r"\\sc (.*?)\\sc\*", r'<span class="sc">\1</span>', s)
-    s = re.sub(r"\\[a-z0-9+]+\*?", "", s)                               # anything else: drop the marker, keep the words
+    # anything else: drop the marker, keep the words (in an unspaced script also the space that ends "\pn 摩西")
+    s = re.sub(r"\\[a-z0-9+]+(?:\*| )?" if langs.get(LANG).get("unspaced") else r"\\[a-z0-9+]+\*?", "", s)
     return s
 
 def note_html(body):
@@ -84,12 +85,12 @@ BLOCK = {"p": "p", "m": "m", "nb": "m", "pi1": "pi", "q1": "q1", "q2": "q2", "q3
 
 def book_html(code, path):
     """One book as HTML, plus [(chapter, anchor)] for the contents and a short name for the running head."""
-    s = path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    s = asv.read(path).replace("\r\n", "\n")           # asv.read: with the characters a text's file lost put back
     if langs.get(LANG).get("drop"): s = re.sub(r"[ \t]*" + langs.get(LANG)["drop"], "", s)   # notes the file keeps in its verses
     notes = []
     def stash(m):
         notes.append(note_html(m.group(1))); return f"\\fn{len(notes) - 1} "
-    s = re.sub(r"\\f \+ (.*?)\\f\*", stash, s, flags=re.S)
+    s = re.sub(r"\\f [+-] (.*?)\\f\*", stash, s, flags=re.S)          # "\f -": a note with no caller of its own (cmn-cu89s)
     s = re.sub(r"\\x .*?\\x\*", "", s, flags=re.S)                     # cross-references (Segond's), not the text
     s = re.sub(r"^\\(?:r|mr|s\d?)\b[^\n]*\n?", "", s, flags=re.M)      # an edition's section heads and their references
     short = re.search(r"^\\h (.+?)\s*$", s, re.M).group(1)
@@ -179,7 +180,10 @@ def fetch_fonts(doc, fdir):
           for n, (part, rng) in enumerate(pieces):
             q = urllib.parse.urlencode({"family": f"{fam}:{spec}", "text": part})
             req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})  # plain UA → TrueType
-            css = urllib.request.urlopen(req, timeout=30).read().decode()
+            try: css = urllib.request.urlopen(req, timeout=30).read().decode()
+            except urllib.request.HTTPError:
+                if rng: continue                       # a piece with no glyph in this family at all is refused too
+                raise
             for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
                 wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
                 st = re.search(r"font-style:\s*(\w+)", block).group(1)

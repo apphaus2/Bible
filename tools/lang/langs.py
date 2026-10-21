@@ -16,27 +16,33 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
     accent_room  a share (0.16) by which a cover's book name is set smaller, on the same baseline, when its capitals carry
                  accents (ÉSAÏE), so they clear the line above it (labels.lower)
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
-    books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED";
-                 a value with {n} takes the numbers inside it ("Chapter": "第{n}章"), else they follow it after a space
+    proportions  false: trust the text's verse numbers; asv.align re-pairs verses by length only around an empty slot, not
+                 where two verses running are merely out of proportion with the ASV's (Chinese genealogies run long)
+    holes        {"text": a sister eBible text, "chars": {its character: this script's}}: fills the blanks a text's file left
+                 where its conversion lost a character (asv.read; eBible's simplified Chinese lacks 仑 throughout)
+    books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels
     fonts        {"load": {family: [weights]}, "fallback": {manga font: family}}: Google Fonts families for a script the
                  manga's fonts lack (Anton and Archivo Narrow have no Cyrillic or CJK, IBM Plex Mono and Source Serif 4, the
                  text PDFs' face, no CJK), each set in every font list right after the font it stands in for (a list:
-                 several, in order, e.g. a display face whose glyph set is smaller, then a complete one)
-    ui           the website's words (build_site.py); words: the text PDF's (asv_pdf.py); epub: the EPUB's (export_book.py)"""
+                 several, in order, e.g. a display face whose glyph set is smaller, then a complete one); "adjust":
+                 {manga font: x-height ratio} for a fallback wider than the manga font (with_fallbacks)
+    ui           the website's words (build_site.py); words: the text PDF's (asv_pdf.py); epub: the EPUB's (export_book.py)
+                 A word said with a number ("chapter", "page"; "Chapter", "Vol." in books/abbr) may hold {n} where the number
+                 goes, for a language that puts it inside ("第{n}章"); without it the number follows after a space (numbered())."""
 import json, pathlib, re
 HERE = pathlib.Path(__file__).resolve().parent
 LANGS = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(HERE.glob("*.json"))}
 ORDER = ["en"] + sorted(k for k in LANGS if k != "en")
 
 def get(code): return LANGS[code]
+def numbered(word, n, sp=" "):
+    """A word with its number: "Capítulo" -> "Capítulo 3"; a word with {n} takes the number inside it ("第{n}章" -> "第3章").
+    sp: what goes between them otherwise (labels.ref_rule: none where the English ref has none, "No.12")."""
+    return word.replace("{n}", str(n)) if "{n}" in word else f"{word}{sp}{n}"
 def by_text(tid):
     """The language whose text is ref/<tid>."""
     return next(k for k, v in LANGS.items() if v["text"] == tid)
-
-def numbered(word, n):
-    """"Chapter" + 3 -> "Chapter 3"; a word with {n} takes the number inside it ("第{n}章" -> "第3章")."""
-    return word.replace("{n}", str(n)) if "{n}" in word else f"{word} {n}"
 
 def versemap(code):
     """{BOOK: [((c, a, b), (tc, tv, tw))]} from the "c:a-b > tc:tv" strings (tw None: verse for verse) and the block form

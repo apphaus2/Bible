@@ -68,7 +68,10 @@ def fetch_fonts(pages, out):
       for n, (part, rng) in enumerate(pieces):
         q = urllib.parse.urlencode({"family": f"{fam}:wght@{';'.join(map(str, weights))}", "text": part, "display": "swap"})
         req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})   # plain UA → TrueType
-        css = urllib.request.urlopen(req, timeout=30).read().decode()
+        try: css = urllib.request.urlopen(req, timeout=30).read().decode()
+        except urllib.request.HTTPError:
+            if rng: continue                           # a piece with no glyph in this family at all is refused too
+            raise
         for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
             wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
             url = re.search(r"url\((.*?)\)", block).group(1)

@@ -1,0 +1,8 @@
+// Chinese (simplified): the static site in _site-zh/ (rebuild_site.py --lang zh), all under zh/, reached through the router at /zh/.
+// npx wrangler deploy -c tools/site/workers/zh.jsonc
+{
+  "name": "bible-zh",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-zh" },
+  "workers_dev": false
+}
