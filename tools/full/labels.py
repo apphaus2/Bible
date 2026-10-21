@@ -125,18 +125,31 @@ def fit(m):
 
 if __name__ == "__main__":
     if sys.argv[1] == "collect": collect()
-    elif sys.argv[1] == "leftover":            # labels still in English on the built pages of a language
-        lang = sys.argv[2]; tab = table(lang); left = {}
+    elif sys.argv[1] == "leftover":            # labels still in English on the built pages of a language (and in its
+        # volume.json names, ledes and blurbs): leftover <lang> [volume ids …] [--out list.json] (all of them, for translating)
+        args = sys.argv[2:]
+        out = args.pop(args.index("--out") + 1) if "--out" in args else None
+        args = [a for a in args if a != "--out"]
+        lang, only = args[0], args[1:]
+        tab = table(lang); left = {}
         known = json.loads((I18N / "labels.json").read_text(encoding="utf-8"))
-        for p in sorted((ROOT / "volumes" / lang).glob("*/pages/*.dc.html")):
-            body = p.read_text(encoding="utf-8").split("<x-dc>", 1)[-1]
-            for m in TEXT.finditer(re.sub(r"<style>.*?</style>", "", body, flags=re.S)):
-                s = norm(m.group(1))
-                if s in tab or s not in known: continue
-                for q in (x.strip() for x in SEP.split(s) if x.strip() and not SEP.fullmatch(x)):
-                    if q in tab or ref_rule(q, lang) or re.fullmatch(r"[\d\s.,:;/–\-+×?%°'\"()·▸◂◼…]+|Vol\. \d+|\d+ [–-] \d+", q): continue
-                    left.setdefault(q, p.parent.parent.name)
+        def pieces(s, where):
+            if s in tab: return
+            for q in (x.strip() for x in SEP.split(s) if x.strip() and not SEP.fullmatch(x)):
+                if q in tab or ref_rule(q, lang) or re.fullmatch(r"[\d\s.,:;/–\-+×?%°'\"()·▸◂◼…]+|Vol\. \d+|\d+ [–-] \d+", q): continue
+                left.setdefault(q, where)
+        for d in sorted((ROOT / "volumes" / lang).glob("*")):
+            if not (d / "volume.json").exists() or (only and d.name not in only): continue
+            for p in sorted((d / "pages").glob("*.dc.html")):
+                body = p.read_text(encoding="utf-8").split("<x-dc>", 1)[-1]
+                for m in TEXT.finditer(re.sub(r"<style>.*?</style>", "", body, flags=re.S)):
+                    s = norm(m.group(1))
+                    if s in known: pieces(s, d.name)
+            en = json.loads((ROOT / "volumes" / d.name / "volume.json").read_text(encoding="utf-8"))
+            for s in [en["name"], en["lede"]] + [x for c in en["books"] for x in (c["name"], c["range"], c["blurb"])]:
+                pieces(norm(s), d.name)
         print(len(left), "English labels left"); [print(f"  {v}: {k}") for k, v in list(left.items())[:80]]
+        if out: pathlib.Path(out).write_bytes(json.dumps(sorted(left), ensure_ascii=False, indent=0).encode())
     elif sys.argv[1] == "missing":
         tab, labels = table(sys.argv[2]), json.loads((I18N / "labels.json").read_text(encoding="utf-8"))
         miss = [s for s in labels if s not in tab]
