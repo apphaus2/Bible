@@ -33,7 +33,7 @@ def parse(path):
     s = re.sub(r"\\x .*?\\x\*", "", s, flags=re.S)
     s = re.sub(r"\\\+?w ([^|\\]*)\|[^\\]*\\\+?w\*", r"\1", s)
     s = re.sub(r"\\\+?add\*?", "", s)
-    s = re.sub(r"\\(id|h|toc\d|mt\d?|ms\d?|s\d?|d|r)\b[^\n]*", "", s)
+    s = re.sub(r"\\(id|h|toc\d|mt\d?|ms\d?|mr|s\d?|d|r)\b[^\n]*", "", s)      # \mr: Segond's section references
     s = re.sub(r"\\(p|q\d?|m|b|nb|pi\d?|li\d?|qc|qr)\b", " ", s)
     out = {}
     for cm in re.finditer(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S):
