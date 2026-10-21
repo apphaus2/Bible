@@ -193,10 +193,13 @@ class Book:
         if LANG == "en": self.tgt = self.src
         else:
             tid = L["text"]; raw = parse(ROOT / "ref" / tid / files(tid)[code])
+            if L.get("strip"):               # editorial marks in the text's verses (Luther 1912: its own numbers, "[3:19]")
+                raw = {k: re.sub(L["strip"], " ", t).strip() for k, t in raw.items()}
             self.tgt = align(self.src, raw)
             rules = langs.versemap(LANG).get(code, [])
-            for (c, a, b), (tc, tv) in rules:
-                for n in range(a, b + 1): self.tgt[(c, n)] = raw[(tc, tv + n - a)]
+            for (c, a, b), (tc, tv, *tw) in rules:   # tw: one ASV verse that is the text's verses tv…tw joined
+                for n in range(a, b + 1):
+                    self.tgt[(c, n)] = " ".join(raw[(tc, x)] for x in range(tv, tw[0] + 1)) if tw else raw[(tc, tv + n - a)]
             if code == "PSA":                # superscriptions: the text's own \d lines, else split off verse 1
                 self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or (psalm_titles(self.tgt) if L.get("psalm_title") else {})
             ruled = {(c, n) for (c, a, b), _ in rules for n in range(a, b + 1)}
