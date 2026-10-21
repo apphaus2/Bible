@@ -15,7 +15,8 @@
     { "binding": "IT", "service": "bible-it" },
     { "binding": "RU", "service": "bible-ru" },
     { "binding": "ZH", "service": "bible-zh" },
-    { "binding": "JA", "service": "bible-ja" }
+    { "binding": "JA", "service": "bible-ja" },
+    { "binding": "KO", "service": "bible-ko" }
   ],
   "workers_dev": false,
   "observability": { "enabled": true }

@@ -77,9 +77,9 @@ def verse_cells(G, code, c, a, b, name, accent, head=None, budget=520, brk=None)
     out, cur, n = [], [], 0
     for k in range(a, b + 1):
         t = G.verses[(c, k)]
-        if cur and n + len(t) > budget:
+        if cur and n + ems(t, 0.64) > budget:
             out.append(cur); cur, n = [], 0
-        cur.append(k); n += len(t)
+        cur.append(k); n += ems(t, 0.64)
         if brk and re.search(brk, t): out.append(cur); cur, n = [], 0
     if cur: out.append(cur)
     items = []

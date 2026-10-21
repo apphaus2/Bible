@@ -1,6 +1,7 @@
 """Numbers volume, Chapter 15 — The Journeys (Numbers 32–33). Every verse, word for word from ref/eng-asv.
 Reuben, Gad and half Manasseh beyond the Jordan (dialogue with Moses, a map of their cities); then the journeys of the
 children of Israel from Rameses to the plains of Moab: a route map lit stage by stage over a cell for every station."""
+from asv import ems
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
@@ -36,7 +37,7 @@ def stages(n, title_ref, head, lit, items, ncol=3, top=300, extra_top=None):
     cw = (702 - 12 * (ncol - 1)) / ncol - 22; ch = (h[1] + 6 - 12 * (nrow - 1)) / nrow - 50
     cells = []
     for nm, text, ref, accent, size in items:
-        size = size or max(10.5, min(19, round((cw * ch / (0.66 * 1.4 * len(text))) ** 0.5 * 0.8 * 2) / 2))
+        size = size or max(10.5, min(19, round((cw * ch / (0.66 * 1.4 * ems(text, 0.66))) ** 0.5 * 0.8 * 2) / 2))
         cells.append(K15.station(nm, text, ref, accent=accent, size=size))
     return page(f"Numbers {title_ref} — {head}", t, m + grid(cells, f"repeat({nrow}, minmax(0, 1fr))", ncol=ncol), n)
 

@@ -124,7 +124,7 @@ NEED_SIZE = 14
 TOP = 0.7          # words over a drawing use the top part of the panel; the drawing keeps the rest
 
 # ---- packing segments into pages -------------------------------------------------------------------------------------------
-def _chars(s): return sum((len(t) if isinstance(t, str) else 60) for _, t in s["lines"])
+def _chars(s): return sum((ems(t) if isinstance(t, str) else 60) for _, t in s["lines"])
 
 def _need(s, w=W1):
     if s["h"]: return s["h"]

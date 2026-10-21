@@ -36,6 +36,9 @@ def main(vol, check=False):
         more = "".join(f"&amp;{q}" for q in langs.font_query(asv.LANG))
         credit = lambda h, name=None: langs.with_fallbacks(labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"),
                                                                  asv.LANG, page_tab(name)).replace("&amp;display=swap", more + "&amp;display=swap", 1), asv.LANG)
+        if langs.get(asv.LANG).get("page_style"):                     # e.g. Korean "word-break: keep-all" (break lines between words),
+            st, _credit = langs.get(asv.LANG)["page_style"], credit   # inline on the page's root so the site and the EPUB keep it
+            credit = lambda h, name=None: _credit(h, name).replace('</helmet>\n<div style="', f'</helmet>\n<div style="{st}; ', 1)
         lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
         if css := langs.get(asv.LANG).get("css"):                     # the language's own page CSS (e.g. room for capital umlauts)
             credit = (lambda f: lambda h, name=None: f(h, name).replace("body{margin:0}", "body{margin:0}\n" + css, 1))(credit)

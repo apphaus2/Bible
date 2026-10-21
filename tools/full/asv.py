@@ -111,18 +111,24 @@ def ems(t, f=0.56):
     w = sum(1 for ch in t if unicodedata.east_asian_width(ch) in "WF")
     return len(t) + w * (1 / f - 1) if w else len(t)
 
+BREAKS = {k: re.compile("(?:" + v + ")$") for k, v in L.get("breaks", {}).items()}   # a text that marks them with words
 def _kind(t, i):
     """What kind of break index i is: "speech" (a stop before a capital or an opening quote, as before words spoken), "end"
     (after . ? !), "pause" (after , ; :) or None (between words). Full-width CJK stops count as their Latin kin; in an
     unspaced script a closing quote is looked through (。」 is an end) and an opening 「 or 『 starts words spoken, with a
-    stop before it or none (言われた。「…, 刻着『归耶和华为圣』)."""
+    stop before it or none (言われた。「…, 刻着『归耶和华为圣』). A text with little punctuation names its breaks by
+    the word before them instead ("breaks" in tools/lang/<code>.json: Korean 가로되 before words spoken, -니라 at a
+    sentence's end)."""
     before = t[:i].rstrip()
     if UNSPACED: before = before.rstrip(SHUT)
     ch, nxt = before[-1:], t[i:].lstrip()[:1]
     if UNSPACED and nxt and nxt in "「『": return "speech"
+    if "speech" in BREAKS and BREAKS["speech"].search(t[max(0, i - 30):i].rstrip().rstrip(STOPS)): return "speech"
     if ch and ch in ",:，：" and (nxt.isupper() or nxt in "¿¡«「『“"): return "speech"
     if ch and ch in ".?!。？！": return "end"
     if ch and ch in ",;:，、；：": return "pause"
+    for k in ("end", "pause"):
+        if k in BREAKS and BREAKS[k].search(t[max(0, i - 30):i].rstrip()): return k
     return None
 
 def _breaks(t, lo=0):
@@ -250,6 +256,23 @@ def align(src, tgt):
             out.update(zip(ks, _divide([src[k] for k in ks], text)))
     return out
 
+def unmerge(src, tgt):
+    """For a text that keeps the ASV's verse numbers and only joins a verse to the one before it, leaving its slot empty
+    (KorRV: Psalm 92:1 holds 92:1–3), "merged" in tools/lang/<code>.json: no pairing by length (Korean verses are too
+    unlike the English in length for it), each joined verse is cut back into its slots. A verse past the ASV's last
+    (NRSV's 3 John 1:15) joins the ASV verse before it."""
+    out = {k: v for k, v in tgt.items() if k in src}
+    for k in sorted(set(tgt) - set(src)):
+        prev = max((p for p in src if p[0] == k[0] and p < k), default=None)
+        if prev and tgt[k].strip(): out[prev] = (out.get(prev, "") + " " + tgt[k]).strip()
+    ks = sorted(src); i = 0
+    while i < len(ks):
+        j = i + 1
+        while j < len(ks) and ks[j][0] == ks[i][0] and not out.get(ks[j], "").strip(): j += 1
+        if j > i + 1 and out.get(ks[i], "").strip(): out.update(zip(ks[i:j], _divide([src[k] for k in ks[i:j]], out[ks[i]])))
+        i = j
+    return out
+
 def _divide(parts, text):
     """Translated text shared among ASV verses (their texts, in order) by their share of the letters, each cut at its
     best break (a verse the translation joins with the next)."""
@@ -355,7 +378,7 @@ class Book:
                 ks = [(c, n) for n in range(a, b + 1) if (c, n) in self.src]                 # over the ASV's
                 if (c, a) in raw and ks: raw.update(zip(ks, _divide([self.src[k] for k in ks], raw[(c, a)])))
             tv_heads = title_verses(self.src, raw) if code == "PSA" and L.get("psalm_title_verses") else {}
-            self.tgt = align(self.src, raw)
+            self.tgt = (unmerge if L.get("merged") else align)(self.src, raw)
             rules = langs.versemap(LANG).get(code, [])
             titled = any(a == 0 for (c, a, b), _ in rules)      # superscriptions placed by the rules (verse 0)
             if titled: self.titles = {}

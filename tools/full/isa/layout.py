@@ -13,6 +13,7 @@ beside the words; with tok=None and art, the words sit at the top of the drawing
 are set over the night sky. A segment with h set (and no lines, or few) is a picture panel of that height.
 Pages hold up to three panels and about 1,250 characters; a head starts a new page. Panel heights follow the words.
 Faces alternate sides from panel to panel unless flip is given. stamp=N puts the chapter stamp on the panel."""
+from asv import ems
 import re, math
 import mk
 from fx import page, vref
@@ -23,7 +24,7 @@ from genesis import art as X
 def seg(lines, ref, tok=None, bg="#2A1A3A", art=None, head=None, stamp=None, flip=None, extra="", h=None, hi=21):
     return dict(lines=lines or [], ref=ref, tok=tok, bg=bg, art=art, head=head, stamp=stamp, flip=flip, extra=extra, h=h, hi=hi)
 
-def _chars(s): return sum(len(t) for _, t in s["lines"])
+def _chars(s): return sum(ems(t) for _, t in s["lines"])
 
 def _need(s, w=W1):
     """Panel height the words need at a comfortable size (16px), with a floor for faces and drawings."""

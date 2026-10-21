@@ -8,6 +8,8 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
     versemap     {BOOK: ["c:a-b > tc:tv", …]}: ASV verses c:a…c:b are the translation's tc:tv onward, where asv.align's
                  pairing by length can't find its way (a renumbered chapter); "c:a-b > tc:tv-tw" shares a block of
                  verses divided differently; verse 0 is a psalm's superscription (see versemap()); a mapped chapter's verses no rule names come from fallback
+    merged       true for a text that keeps the ASV's verse numbers and only joins a verse to the one before it, leaving its
+                 slot empty (KorRV): asv.unmerge cuts it back, instead of asv.align's pairing by length
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     css          extra CSS for every page of the language (in the page's own <style>), for layout the translation needs
     drop         a regex for notes the text's file keeps inside its verses, taken out of the pages and the text PDFs (Riveduta's "(H7-1)" Hebrew numbers, Luther 1912's own "[3:19]")
@@ -20,6 +22,9 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
                  where two verses running are merely out of proportion with the ASV's (Chinese genealogies run long)
     holes        {"text": a sister eBible text, "chars": {its character: this script's}}: fills the blanks a text's file left
                  where its conversion lost a character (asv.read; eBible's simplified Chinese lacks 仑 throughout)
+    breaks       {"speech"|"end"|"pause": regex}: for a text with little punctuation, the words a break of that kind
+                 follows (Korean 가로되 before words spoken, -니라 at a sentence's end), so cuts land where the ASV's do
+    page_style   CSS put inline on every page's root ("word-break: keep-all": Korean lines break between words)
     books, abbr  verse references by rule: English book names / page abbreviations -> this language's; abridged: "ABRIDGED"
     codes        extra {book name in the text's \\h line: USFM code} where the text's own names don't match the labels
     fonts        {"load": {family: [weights]}, "fallback": {manga font: family}}: Google Fonts families for a script the
