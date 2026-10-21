@@ -176,7 +176,17 @@ def translate(page, lang, tab=None):
         return m.group(0) if t == s else ">" + html.escape(t, quote=False) + "<"
     page = re.sub(r"<title>(.*?)</title>", lambda m: "<title>" + html.escape(label(norm(m.group(1)), lang, tab), quote=False) + "</title>", page, count=1)
     head, sep, body = page.partition("<x-dc>")
-    return head + sep + FIT.sub(fit, TEXT.sub(sub, body))
+    return head + sep + HFIT.sub(hfit, FIT.sub(fit, TEXT.sub(sub, body)))
+
+HFIT = re.compile(r'(<(?!text\b)\w+ [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')
+def hfit(m):
+    """An HTML title with data-fit="<px>" (a cover's book name in Anton) shrunk to its room when the translation runs
+    longer: a display capital is taken as 0.55 em wide (a CJK character 1 em)."""
+    tag, room = m.group(1), float(m.group(2))
+    n = sum(1 / 0.55 if unicodedata.east_asian_width(ch) in "WF" else 1 for ch in html.unescape(m.group(3)).strip())
+    fs = re.search(r'font-size: ([\d.]+)px', tag)
+    if not n or not fs or n * float(fs.group(1)) * 0.55 <= room: return m.group(0)
+    return tag.replace(fs.group(0), f"font-size: {room / (n * 0.55):.0f}px") + m.group(3) + "<"
 
 FIT = re.compile(r'(<text [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')
 def fit(m):
