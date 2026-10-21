@@ -49,13 +49,19 @@ def _share(t, i):
     return sum(1 for ch in t[:i] if not ch.isspace()) / max(1, n)
 
 STOPS = ",;:.!?，、；：。！？"
+BREAKS = {k: re.compile("(?:" + v + ")$") for k, v in L.get("breaks", {}).items()}   # a text that marks them with words
 def _kind(t, i):
     """What kind of break index i is: "speech" (a stop before a capital or an opening quote, as before words spoken), "end"
-    (after . ? !), "pause" (after , ; :) or None (between words). Full-width CJK stops count as their Latin kin."""
+    (after . ? !), "pause" (after , ; :) or None (between words). Full-width CJK stops count as their Latin kin. A text
+    with little punctuation names its breaks by the word before them instead ("breaks" in tools/lang/<code>.json: Korean
+    가로되 before words spoken, -니라 at a sentence's end)."""
     ch, nxt = t[:i].rstrip()[-1:], t[i:].lstrip()[:1]
+    if "speech" in BREAKS and BREAKS["speech"].search(t[max(0, i - 30):i].rstrip().rstrip(STOPS)): return "speech"
     if ch and ch in ",:，：" and (nxt.isupper() or nxt in "¿¡«「『“"): return "speech"
     if ch and ch in ".?!。？！": return "end"
     if ch and ch in ",;:，、；：": return "pause"
+    for k in ("end", "pause"):
+        if k in BREAKS and BREAKS[k].search(t[max(0, i - 30):i].rstrip()): return k
     return None
 
 def _snap(t, f, kind, lo=0):
