@@ -10,21 +10,18 @@
 Every call records which characters of which verse were used, so G.coverage() can report each verse as
 full / partial / omitted. Text is never typed by hand: it is always cut out of the USFM.
 
-Other languages: with BIBLE_LANG=es (or fr) every call returns the same verses from that language's public-domain text
-(TEXTS below) instead. The plans still name their cuts in ASV words, so a cut is found in the ASV verse and mapped onto
+Other languages: with BIBLE_LANG=es (any tools/lang/<code>.json) every call returns the same verses from that language's
+public-domain text instead. The plans still name their cuts in ASV words, so a cut is found in the ASV verse and mapped onto
 the translated verse by its share of the letters, moved to the nearest punctuation or word break (the same share always
 lands on the same break, so a verse cut in two pieces still meets in the middle)."""
 import os, re, math, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-TEXTS = {"en": ("eng-asv", "ASV"), "es": ("spaRV1909", "RV1909"), "fr": ("fraLSG", "LSG")}   # language -> (ref/<eBible id>, credit)
-FALLBACK = {"spaRV1909": "spablm"}  # a second public-domain text for verses the first one's file has lost
-# Where length pairing can't find its way (eBible's Reina-Valera renumbers Job 38–41 and Numbers 29–30 and loses verses off
-# the ends of chapters): ASV verses (chapter, first, last) -> the translated verse holding the first of them, in order.
-VERSEMAP = {"spaRV1909": {
-    "JOB": [((38, 1, 38), (38, 1)), ((38, 39, 41), (39, 1)), ((39, 1, 27), (39, 4)), ((40, 6, 24), (40, 1)), ((41, 1, 34), (41, 1))],
-    "NUM": [((29, 1, 39), (29, 1)), ((29, 40, 40), (30, 1)), ((30, 1, 15), (30, 2))]}}
+import sys; sys.path.insert(0, str(ROOT / "tools" / "lang"))
+import langs
 LANG = os.environ.get("BIBLE_LANG", "en")
-CREDIT = TEXTS[LANG][1]
+L = langs.get(LANG)                  # the language's text, credit, fallback text and verse map (tools/lang/<code>.json)
+CREDIT = L["credit"]
+UNSPACED = bool(L.get("unspaced"))   # Chinese, Japanese: a cut may fall between any two characters
 def files(folder):
     return {re.match(r"\d\d-(\w{3})", p.name).group(1): p.name for p in sorted((ROOT / "ref" / folder).glob("[0-9][0-9]-*.usfm"))}
 FILES = files("eng-asv")                                                     # all 66 books
@@ -51,14 +48,14 @@ def _share(t, i):
     n = sum(1 for ch in t if not ch.isspace())
     return sum(1 for ch in t[:i] if not ch.isspace()) / max(1, n)
 
-STOPS = ",;:.!?"
+STOPS = ",;:.!?，、；：。！？"
 def _kind(t, i):
-    """What kind of break index i is: "speech" (a stop before a capital, as before words spoken), "end" (after . ? !),
-    "pause" (after , ; :) or None (between words)."""
+    """What kind of break index i is: "speech" (a stop before a capital or an opening quote, as before words spoken), "end"
+    (after . ? !), "pause" (after , ; :) or None (between words). Full-width CJK stops count as their Latin kin."""
     ch, nxt = t[:i].rstrip()[-1:], t[i:].lstrip()[:1]
-    if ch and ch in ",:" and (nxt.isupper() or nxt in "¿¡«"): return "speech"
-    if ch and ch in ".?!": return "end"
-    if ch and ch in ",;:": return "pause"
+    if ch and ch in ",:，：" and (nxt.isupper() or nxt in "¿¡«「『“"): return "speech"
+    if ch and ch in ".?!。？！": return "end"
+    if ch and ch in ",;:，、；：": return "pause"
     return None
 
 def _snap(t, f, kind, lo=0):
@@ -68,7 +65,7 @@ def _snap(t, f, kind, lo=0):
     if f >= 0.998: return len(t)
     best, bi = 9, len(t)
     for i in range(lo + 1, len(t)):
-        if t[i] != " ": continue
+        if t[i] != " " and not UNSPACED: continue
         k = _kind(t, i)
         d = abs(_share(t, i) - f) - (0.25 if k and k == kind else 0.06 if k else 0)
         if d < best: best, bi = d, i
@@ -151,9 +148,21 @@ def psalm_titles(tgt):
     out = {}
     for c in parse_titles(ROOT / "ref" / "eng-asv" / FILES["PSA"]):
         t = tgt.get((c, 1), "")
-        m = re.search(r"(?:^|\s)(?:[ÁA-ZÉÍÓÚÑÜ]\s)?[¡¿«(]*[A-ZÁÉÍÓÚÑÜ]{2,}", t)   # "A JEHOVÁ llamé": a one-letter word too
+        m = re.search(L["psalm_title"], t)                  # es: "A JEHOVÁ llamé" (a one-letter word too)
         if m and m.start() > 0:
             out[c] = t[:m.start()].strip(); tgt[(c, 1)] = t[m.start():].strip()
+    return out
+
+def d_titles(path):
+    """{psalm: superscription} from the \\d lines of a USFM file (a text that keeps them out of verse 1, as the ASV does)."""
+    s = pathlib.Path(path).read_text(encoding="utf-8")
+    out = {}
+    for c, body in re.findall(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S):
+        m = re.search(r"^\\d (.*)", body.split("\\v ", 1)[0], flags=re.M | re.S)
+        if m:
+            t = re.sub(r"\\f .*?\\f\*", "", m.group(1), flags=re.S)
+            t = re.sub(r"\\\+?w ([^|\\]*)\|[^\\]*\\\+?w\*", r"\1", t)
+            out[int(c)] = re.sub(r"\s+", " ", re.sub(r"\\[a-z0-9+]+\*?", "", t)).strip().replace("\u2019", "'").replace("\u2018", "'")
     return out
 
 def parse_titles(path):
@@ -183,16 +192,17 @@ class Book:
         self.borrowed = []                   # verses taken from FALLBACK (listed in coverage.md)
         if LANG == "en": self.tgt = self.src
         else:
-            tid = TEXTS[LANG][0]; raw = parse(ROOT / "ref" / tid / files(tid)[code])
+            tid = L["text"]; raw = parse(ROOT / "ref" / tid / files(tid)[code])
             self.tgt = align(self.src, raw)
-            rules = VERSEMAP.get(tid, {}).get(code, [])
+            rules = langs.versemap(LANG).get(code, [])
             for (c, a, b), (tc, tv) in rules:
                 for n in range(a, b + 1): self.tgt[(c, n)] = raw[(tc, tv + n - a)]
-            if code == "PSA": self.titles = psalm_titles(self.tgt)
+            if code == "PSA":                # superscriptions: the text's own \d lines, else split off verse 1
+                self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or (psalm_titles(self.tgt) if L.get("psalm_title") else {})
             ruled = {(c, n) for (c, a, b), _ in rules for n in range(a, b + 1)}
             lost = [k for k in self.src if not self.tgt.get(k, "").strip() or (rules and k[0] in {r[0][0] for r in rules} and k not in ruled)]
-            if lost and tid in FALLBACK:
-                fb = parse(ROOT / "ref" / FALLBACK[tid] / files(FALLBACK[tid])[code])
+            if lost and L.get("fallback"):
+                fb = parse(ROOT / "ref" / L["fallback"] / files(L["fallback"])[code])
                 for k in lost:
                     if fb.get(k, "").strip(): self.tgt[k] = fb[k]; self.borrowed.append(k)
         self.used = {}                       # (c, v) -> set of character indexes used

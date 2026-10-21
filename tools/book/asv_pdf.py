@@ -35,24 +35,10 @@ ASV = ROOT / "ref" / "eng-asv"
 OUT_NAME = "bible-asv.pdf"
 ASV_DIR = "asv"                       # the book PDFs' folder (in _book/ and on the site)
 CREDIT, LANG = "ASV", "en"
-# --text spaRV1909: the same book from another public-domain text, for that language's site (its words below)
-WORDS = {
-  "en": {"testaments": "THE OLD AND NEW TESTAMENTS", "holy": "The Holy <br>Bible", "sub": "The text of the Bible Manga",
-         "contents": "CONTENTS", "lead": "Every book and chapter is a link. The PDF's bookmarks list them too.",
-         "ot": "THE OLD TESTAMENT", "nt": "THE NEW TESTAMENT", "ot_div": "The Old <br>Testament", "nt_div": "The New <br>Testament",
-         "books": "BOOKS", "end": "END", "psalm": "Psalm", "title": "The Holy Bible", "bm_ot": "The Old Testament",
-         "bm_nt": "The New Testament", "bm_contents": "Contents",
-         "colophon": "{c} · public domain. Set from the USFM text published by eBible.org, with the Strong's numbers taken out. "
-                     "Words the translators supplied are in <i>italics</i>, as in the printed edition; the few textual notes stand at the "
-                     "end of their chapter. Every word of the Bible Manga is cut from this text."},
-  "es": {"testaments": "EL ANTIGUO Y EL NUEVO TESTAMENTO", "holy": "La Santa <br>Biblia", "sub": "El texto del manga de la Biblia",
-         "contents": "ÍNDICE", "lead": "Cada libro y cada capítulo es un enlace. Los marcadores del PDF también los listan.",
-         "ot": "EL ANTIGUO TESTAMENTO", "nt": "EL NUEVO TESTAMENTO", "ot_div": "El Antiguo <br>Testamento", "nt_div": "El Nuevo <br>Testamento",
-         "books": "LIBROS", "end": "FIN", "psalm": "Salmo", "title": "La Santa Biblia", "bm_ot": "El Antiguo Testamento",
-         "bm_nt": "El Nuevo Testamento", "bm_contents": "Índice",
-         "colophon": "{c} · dominio público. Compuesto del texto USFM publicado por eBible.org, sin los números de Strong. "
-                     "Las palabras añadidas por los traductores van en <i>cursiva</i>. Cada palabra del manga de la Biblia en español "
-                     "se toma de este texto."}}
+# --text spaRV1909: the same book from another public-domain text, for that language's site (its "words" in tools/lang/<code>.json)
+import sys; sys.path.insert(0, str(ROOT / "tools" / "lang"))
+import langs
+WORDS = {k: v["words"] for k, v in langs.LANGS.items() if "words" in v}
 def W(k): return WORDS[LANG][k]
 SINGLE = {"OBA", "PHM", "2JN", "3JN", "JUD"}         # one-chapter books: no chapter numeral
 
@@ -336,11 +322,12 @@ def main():
     ap.add_argument("--out", default="_book"); ap.add_argument("--books", help="comma-separated book codes, for proofs")
     ap.add_argument("--html-only", action="store_true")
     ap.add_argument("--split-only", action="store_true", help="only split an existing bible-asv.pdf into book PDFs")
-    ap.add_argument("--text", default="eng-asv", help="the ref/<eBible id> to set: eng-asv (default), spaRV1909, fraLSG")
+    ap.add_argument("--text", default="eng-asv", help="the ref/<eBible id> to set: eng-asv (default), or any language's text (tools/lang)")
     a = ap.parse_args()
     global ASV, OUT_NAME, ASV_DIR, CREDIT, LANG
     if a.text != "eng-asv":
-        LANG, CREDIT = {"spaRV1909": ("es", "RV1909"), "fraLSG": ("fr", "LSG")}[a.text]
+        LANG = langs.by_text(a.text); CREDIT = langs.get(LANG)["credit"]
+        FAMILIES.update({f: "wght@" + ";".join(map(str, w)) for f, w in langs.get(LANG).get("fonts", {}).get("load", {}).items()})
         ASV, OUT_NAME, ASV_DIR = ROOT / "ref" / a.text, f"bible-{a.text}.pdf", f"asv-{LANG}"
     if a.split_only:
         split_books((ROOT / a.out).resolve()); return
@@ -354,7 +341,7 @@ def main():
     verses = sum(len(re.findall(r'class="(?:v|cn|cq)"', b["html"])) for b in books)
     work = out / "work"; work.mkdir(exist_ok=True)
     src = work / OUT_NAME.replace(".pdf", ".html")
-    doc = document(books)
+    doc = langs.with_fallbacks(document(books), LANG)         # a script Source Serif 4 and the manga fonts lack
     src.write_text(doc.replace("/*FONTS*/", fetch_fonts(doc, out / "fonts")), encoding="utf-8")
     print(f"{len(books)} books, {sum(len(b['chapters']) for b in books)} chapters, {verses} verses → {src.relative_to(ROOT)}")
     if a.html_only: return

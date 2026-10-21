@@ -26,10 +26,12 @@ def main(vol, check=False):
     out = ROOT / "volumes" / (META["id"] if asv.LANG == "en" else f"{asv.LANG}/{META['id']}")
     pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
     if asv.LANG == "en": credit = lab = lambda h: h
-    else:                                                             # another language: its credit, and every label translated
-        import labels
+    else:                                                             # another language: its credit, every label translated, and
+        import labels, langs                                          # fonts for a script the manga's fonts lack (tools/lang/<code>.json)
         tab = labels.table(asv.LANG)
-        credit = lambda h: labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"), asv.LANG, tab)
+        more = "".join(f"&amp;{q}" for q in langs.font_query(asv.LANG))
+        credit = lambda h: langs.with_fallbacks(labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"),
+                                                                 asv.LANG, tab).replace("&amp;display=swap", more + "&amp;display=swap", 1), asv.LANG)
         lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
@@ -89,8 +91,8 @@ def main(vol, check=False):
                   f"{len(rows)} verses: {n['full']} full, {n['partial']} partial, {n['omitted']} omitted.", ""]
         odd = [f"- {r[0]} — {r[1]} ({r[2]:.0%})" for r in rows if r[1] != "full"]
         lines += (odd or ["Every verse is on the page in full."]) + [""]
-    if getattr(G, "borrowed", None):                                  # a translation's file lost these verses (asv.FALLBACK)
-        lines += [f"Taken from `{asv.FALLBACK[asv.TEXTS[asv.LANG][0]]}` because the `{asv.TEXTS[asv.LANG][0]}` file lacks them: "
+    if getattr(G, "borrowed", None):                                  # a translation's file lost these verses (its "fallback")
+        lines += [f"Taken from `{asv.L['fallback']}` because the `{asv.L['text']}` file lacks them: "
                   + ", ".join(f"{c}:{v}" for c, v in sorted(G.borrowed)) + ".", ""]
     allv = sum(tot.values())
     lines.insert(4, f"**So far:** {allv} verses — {tot['full']} full, {tot['partial']} partial, {tot['omitted']} omitted.\n")
@@ -98,7 +100,7 @@ def main(vol, check=False):
 
     # text check: every uppercase text block must be a run of the ASV (… marks a cut). Labels that are not
     # scripture (titles, credits) carry data-label and are skipped.
-    norm = lambda t: re.sub(r"\s+", " ", t.replace("\u2019", "'")).strip().lower()
+    norm = lambda t: re.sub(r"\s+", "" if asv.UNSPACED else " ", t.replace("\u2019", "'")).strip().lower()   # Chinese, Japanese: a line break is no space
     full = norm(G.text()); bad = n = 0
     for p in sorted(pages_dir.glob("*.dc.html")):
         # leaf text boxes only: a div/h1 whose body holds no tags but <br> (a wider match would swallow the first caption of a panel)

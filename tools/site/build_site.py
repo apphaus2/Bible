@@ -15,30 +15,15 @@ PEERS = {k: pathlib.Path(v) for k, v in (a.split("=", 1)[1].split("=", 1) for a 
 
 # ── the language ──
 LANG = os.environ.get("BIBLE_LANG", "en")
-LANGS = {"en": "English", "es": "Español"}                  # each language named in itself, for the menu
-TEXT = {"en": ("eng-asv", "ASV"), "es": ("spaRV1909", "RV1909")}[LANG]
+sys.path.insert(0, str(ROOT / "tools" / "lang"))
+import langs                                                  # tools/lang/<code>.json: the text, credit and the site's words
+LANGS = {k: v["name"] for k, v in langs.LANGS.items()}         # each language named in itself, for the menu
+L = langs.get(LANG)
+TEXT = (L["text"], L["credit"])
 CREDIT = TEXT[1]
 HOME = "https://bible.apphaus.us/"
 def home(lang): return HOME if lang == "en" else f"{HOME}{lang}/"
-UI = {
-  "en": {"chapter": "Chapter", "page": "Page", "cover": "Cover", "title": "Title", "prev": "‹ Prev", "next": "Next ›",
-         "desc": "a manga adaptation of the Bible.", "start": "Start reading ›", "in_text": "in the {c} ›", "pages": "Pages",
-         "download": "Download", "pages_n": "{n} pages", "books": "The Books", "text": "The Text", "all": "All pages",
-         "begin": "Start at the beginning ›", "the_text": "The {c} text ›", "language": "Language",
-         "read_in": "Read {r}in the {c} (PDF)", "pdf_of": "{t} {c} in the {k} (PDF)", "epub_of": "{n} as an EPUB ({s})",
-         "lede": "The Bible as a full-color manga — one volume per book of the Bible, every scene and every line of dialogue in the words of the {c}. Now in progress: {v}.",
-         "meta": "The Bible as a full-color manga, in the style of 1980s cyberpunk comics, in the words of the {c}.",
-         "text_lede": "The manga quotes the {c} word for word. Here is the whole text, Genesis to Revelation, one PDF per book: two columns, a bookmark for every chapter. The {c} credit at the foot of every manga page opens its book at that page's chapter.",
-         "cover_of": "{s} {l} cover"},
-  "es": {"chapter": "Capítulo", "page": "Página", "cover": "Portada", "title": "Título", "prev": "‹ Anterior", "next": "Siguiente ›",
-         "desc": "la Biblia adaptada al manga.", "start": "Empezar a leer ›", "in_text": "en la {c} ›", "pages": "Páginas",
-         "download": "Descargar", "pages_n": "{n} páginas", "books": "Los libros", "text": "El texto", "all": "Todas las páginas",
-         "begin": "Empezar por el principio ›", "the_text": "El texto de la {c} ›", "language": "Idioma",
-         "read_in": "Leer {r}en la {c} (PDF)", "pdf_of": "{t} {c} en la {k} (PDF)", "epub_of": "{n} en EPUB ({s})",
-         "lede": "La Biblia como un manga a todo color: un volumen por cada libro de la Biblia, cada escena y cada línea de diálogo con las palabras de la {c}. En curso: {v}.",
-         "meta": "La Biblia como un manga a todo color, al estilo del cómic cyberpunk de los años ochenta, con las palabras de la {c}.",
-         "text_lede": "El manga cita la {c} palabra por palabra. Aquí está el texto completo, de Génesis a Apocalipsis, un PDF por libro: dos columnas y un marcador por capítulo. El crédito {c} al pie de cada página del manga abre su libro en el capítulo de esa página.",
-         "cover_of": "Portada de {s}, {l}"}}
+UI = {LANG: L["ui"]}
 def T(key, **kw): return UI[LANG][key].format(**kw)
 
 # ── one volume per Bible book, described by volumes/<id>/volume.json ──
@@ -54,13 +39,13 @@ for key, d in SRC.items():
     VOLUMES.append(V)
 VOLUMES.sort(key=lambda v: v.get("order", 0))
 SERIES = VOLUMES
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">'
+FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900' + "".join("&" + q for q in langs.font_query(LANG)) + '&display=swap" rel="stylesheet">'
 # ── the Bible text, one PDF per book (tools/book/asv_pdf.py; rebuild_site.py copies asv/ in when it exists) ──
 ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of each book of the language's text
 for f in sorted((ROOT / "ref" / TEXT[0]).glob("[0-9][0-9]-*.usfm")):
     m = re.search(r"^\\h (.+?)\s*$", f.read_text(encoding="utf-8"), re.M)
     if m: ASV_CODES[m.group(1)] = re.match(r"\d\d-(\w{3})", f.name).group(1)
-if LANG == "es": ASV_CODES.update({"Cantares": "SNG", "Mateo": "MAT", "Lucas": "LUK"})
+ASV_CODES.update(L.get("codes", {}))                          # where the text's own book names differ from the labels
 ASV_BOOKS = json.loads((out / "asv" / "index.json").read_text(encoding="utf-8")) if (out / "asv" / "index.json").exists() else {}
 def asv_where(ref):
     """(book code, chapter) that a ref like "Genesis 24:1–25:18" or "1 Samuel 1 – 3" starts in, or None."""

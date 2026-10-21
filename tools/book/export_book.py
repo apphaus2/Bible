@@ -21,6 +21,9 @@ import xml.dom.minidom
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 HERE = pathlib.Path(__file__).resolve().parent
 FAMILIES = {"Anton": [400], "IBM Plex Mono": [500, 600], "Archivo Narrow": [600, 700], "Noto Sans JP": [900]}
+sys.path.insert(0, str(ROOT / "tools" / "lang"))
+import langs                         # a translated edition adds the families its script needs (tools/lang/<code>.json)
+LANG = "en"
 TRIM, BLEED, DPI = (7.0, 10.0), 0.125, 96          # inches; CSS px per inch
 W, H = 760, 1080                                    # page size in CSS px
 ACCENT = "#D7261E"
@@ -91,13 +94,14 @@ def to_xhtml(markup):
 
 def xhtml_page(title, body, css="../css/book.css"):
     return (f'<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE html>\n'
-            f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">\n'
+            f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="{LANG}" lang="{LANG}">\n'
             f'<head>\n<meta charset="utf-8"/>\n<title>{html.escape(title)}</title>\n<meta name="viewport" content="width={W}, height={H}"/>\n'
             f'<link rel="stylesheet" type="text/css" href="{css}"/>\n</head>\n<body>\n{body}\n</body>\n</html>\n')
 
 def write_epub(vol, meta, pages, fonts, cover_jpg, out):
     book_id = f"urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, 'https://github.com/apphaus2/Bible/' + vol)}"
-    title = f"{meta['name']} — " + {"es": "La Biblia en manga"}.get(meta.get("lang", "en"), "The Bible Manga")
+    E = langs.get(meta.get("lang", "en"))["epub"]
+    title = f"{meta['name']} — {E['title']}"
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     files = {}                                                                  # path in OEBPS -> bytes
     files["css/book.css"] = (font_css(fonts, "../fonts/") + f"html, body {{ margin: 0; padding: 0; width: {W}px; height: {H}px; overflow: hidden; }}\n").encode()
@@ -113,7 +117,7 @@ def write_epub(vol, meta, pages, fonts, cover_jpg, out):
         items.append(f'<item id="p{p["i"]:03d}" href="{fn}" media-type="application/xhtml+xml" properties="svg"/>')
         spine.append(f'<itemref idref="p{p["i"]:03d}"/>')
     # navigation: chapters (their title pages) and a page list with the printed numbers
-    WD = {"es": ("Portada", "Capítulo", "Índice", "Páginas")}.get(meta.get("lang", "en"), ("Cover", "Chapter", "Contents", "Pages"))
+    WD = (E["cover"], E["chapter"], E["contents"], E["pages"])
     toc = [f'<li><a href="pages/p001.xhtml">{WD[0]}</a></li>']
     for c in meta["books"]:
         first = next(p for p in pages if p["chapter"] is c and p["name"] != "Main.dc.html")
@@ -188,7 +192,7 @@ def print_html(pages, fonts, fontdir):
            "html, body { margin: 0; padding: 0; }\n"
            f".sheet {{ position: relative; width: {bw}px; height: {bh}px; overflow: hidden; background: #F3EFE6; break-after: page; }}\n"
            f".pg {{ position: absolute; width: {W}px; height: {H}px; transform-origin: 0 0; }}\n")
-    return f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><style>{css}</style></head><body>\n' + "\n".join(sheets) + "\n</body></html>\n"
+    return f'<!doctype html>\n<html lang="{LANG}"><head><meta charset="utf-8"><style>{css}</style></head><body>\n' + "\n".join(sheets) + "\n</body></html>\n"
 
 def screen_html(pages, fonts, fontdir):
     """The reading PDF: every page at its own 760×1080 size, no bleed (for screens; the print PDF is print_html)."""
@@ -197,7 +201,7 @@ def screen_html(pages, fonts, fontdir):
            f"@page {{ size: {W}px {H}px; margin: 0; }}\n"
            "html, body { margin: 0; padding: 0; }\n"
            f".sheet {{ position: relative; width: {W}px; height: {H}px; overflow: hidden; background: #F3EFE6; break-after: page; }}\n")
-    return f'<!doctype html>\n<html><head><meta charset="utf-8"><style>{css}</style></head><body>\n' + "\n".join(sheets) + "\n</body></html>\n"
+    return f'<!doctype html>\n<html lang="{LANG}"><head><meta charset="utf-8"><style>{css}</style></head><body>\n' + "\n".join(sheets) + "\n</body></html>\n"
 
 LIMIT = 24 * 1024 * 1024                     # Cloudflare serves no single file over 25 MiB: bigger books are split into parts
 
@@ -247,6 +251,9 @@ def main():
     ap.add_argument("--lang", default="en", help="build from volumes/<lang>/ (a translated edition)")
     ap.add_argument("--screen", action="store_true", help="the reading PDF(s) at page size, split under 24 MB, instead of the print PDF")
     a = ap.parse_args()
+    global LANG
+    LANG = a.lang
+    FAMILIES.update(langs.get(LANG).get("fonts", {}).get("load", {}))
     out = (ROOT / a.out).resolve(); out.mkdir(parents=True, exist_ok=True)
     meta, pages = load_volume(a.volume, a.lang)
     print(f"{a.volume}: {len(pages)} pages in {len(meta['books'])} chapters")
