@@ -138,13 +138,17 @@ if __name__ == "__main__":
             for q in (x.strip() for x in SEP.split(s) if x.strip() and not SEP.fullmatch(x)):
                 if q in tab or ref_rule(q, lang) or re.fullmatch(r"[\d\s.,:;/–\-+×?%°'\"()·▸◂◼…]+|Vol\. \d+|\d+ [–-] \d+", q): continue
                 left.setdefault(q, where)
+        def nodes(p):                          # every text node of a page, drawn words too
+            body = re.sub(r"<style>.*?</style>", "", p.read_text(encoding="utf-8").split("<x-dc>", 1)[-1], flags=re.S)
+            return {s for rx in (TEXT, SVG_TEXT) for m in rx.finditer(body) if re.search(r"[A-Za-z]", s := norm(m.group(1)))}
         for d in sorted((ROOT / "volumes" / lang).glob("*")):
             if not (d / "volume.json").exists() or (only and d.name not in only): continue
+            # a node word for word on the English pages of the volume is still English, even one collect() took for
+            # scripture ("KINGS", "BOOK I", a quoted law heading); a name that is the same in both languages maps to itself
+            english = set().union(*(nodes(p) for p in (ROOT / "volumes" / d.name / "pages").glob("*.dc.html")))
             for p in sorted((d / "pages").glob("*.dc.html")):
-                body = p.read_text(encoding="utf-8").split("<x-dc>", 1)[-1]
-                for m in TEXT.finditer(re.sub(r"<style>.*?</style>", "", body, flags=re.S)):
-                    s = norm(m.group(1))
-                    if s in known: pieces(s, d.name)
+                for s in nodes(p):
+                    if s in known or s in english: pieces(s, d.name)
             en = json.loads((ROOT / "volumes" / d.name / "volume.json").read_text(encoding="utf-8"))
             for s in [en["name"], en["lede"]] + [x for c in en["books"] for x in (c["name"], c["range"], c["blurb"])]:
                 pieces(norm(s), d.name)
