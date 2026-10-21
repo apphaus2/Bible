@@ -17,6 +17,7 @@ book code (`02-GENspaRV1909.usfm` is `spaRV1909`). The zip is `https://ebible.or
 | `jpnm/` | Japanese Freedom Bible (an eBible draft) | `BIBLE_LANG=ja` builds |
 | `cmn-cu89s/` | Chinese Union Version, simplified | `BIBLE_LANG=zh` builds |
 | `cmn-cu89t/` | Chinese Union Version, traditional | characters `cmn-cu89s`'s file lost (`holes`) |
+| `KorRV/` | 개역 Korean Revised Version (1952/61), from CrossWire's SWORD module (`korrv.conf`), not eBible | `BIBLE_LANG=ko` builds |
 
 ## Public-domain whole Bibles on eBible.org (64 of 248 whole Bibles; list of October 2026)
 
