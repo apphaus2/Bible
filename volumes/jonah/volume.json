@@ -1,0 +1,31 @@
+{
+ "id": "jonah",
+ "order": 32,
+ "name": "Jonah",
+ "kanji": "ヨナ書",
+ "thumb": "vol-jonah-",
+ "lede": "The thirty-second book of the Bible, in full: Jonah fleeing unto Tarshish from the presence of Jehovah, the mighty tempest and the lot, three days and three nights in the belly of the great fish — salvation is of Jehovah — then Nineveh, that great city, in sackcloth and ashes, and the gourd that came up in a night and perished in a night — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Great Fish",
+   "range": "Jonah 1–2",
+   "blurb": "Arise, go to Nineveh, that great city — but Jonah rose up to flee unto Tarshish, and went down to Joppa; a great wind upon the sea, the mariners crying every man unto his god, and Jonah fast asleep; the lot fell upon Jonah — I am a Hebrew, and I fear Jehovah; take me up, and cast me forth into the sea; a great fish to swallow up Jonah, and his prayer out of the fish's belly: salvation is of Jehovah.",
+   "prefixes": [
+    "Main.dc.html",
+    "JON-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "That Great City",
+   "range": "Jonah 3–4",
+   "blurb": "The word of Jehovah the second time; yet forty days, and Nineveh shall be overthrown; the people of Nineveh believed God, and the king laid his robe from him and sat in ashes — who knoweth whether God will not turn and repent?; but it displeased Jonah exceedingly: doest thou well to be angry?; the booth on the east side of the city, the gourd, the worm and the sultry east wind; and should not I have regard for Nineveh, that great city?",
+   "prefixes": [
+    "JON-C02-"
+   ]
+  }
+ ]
+}

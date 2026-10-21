@@ -1,0 +1,138 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-19T03:17:59Z"
+ },
+ "title": "Malachi — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "MAL-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Sun of Righteousness"
+  },
+  "MAL-C01-D-P01-IHaveLovedYou.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · I Have Loved You"
+  },
+  "MAL-C01-D-P02-WhereIsMineHonor.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Where Is Mine Honor?"
+  },
+  "MAL-C01-D-P03-WhereIsMineHonor.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Where Is Mine Honor?"
+  },
+  "MAL-C01-D-P04-MyCovenantWithLevi.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · My Covenant with Levi"
+  },
+  "MAL-C01-D-P05-HaveWeNotAllOneFat.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Have We Not All One Father?"
+  },
+  "MAL-C01-D-P06-HaveWeNotAllOneFat.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Have We Not All One Father?"
+  },
+  "MAL-C01-D-P07-BeholdISendMyMesse.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Behold, I Send My Messenger"
+  },
+  "MAL-C01-D-P08-WillAManRobGod.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Will a Man Rob God?"
+  },
+  "MAL-C01-D-P09-TheWindowsOfHeaven.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Windows of Heaven"
+  },
+  "MAL-C01-D-P10-TheDayCometh.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Day Cometh"
+  },
+  "MAL-C01-D-P11-ElijahTheProphet.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Elijah the Prophet"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "MAL-C01-00-Title.dc.html",
+  "MAL-C01-D-P01-IHaveLovedYou.dc.html",
+  "MAL-C01-D-P02-WhereIsMineHonor.dc.html",
+  "MAL-C01-D-P03-WhereIsMineHonor.dc.html",
+  "MAL-C01-D-P04-MyCovenantWithLevi.dc.html",
+  "MAL-C01-D-P05-HaveWeNotAllOneFat.dc.html",
+  "MAL-C01-D-P06-HaveWeNotAllOneFat.dc.html",
+  "MAL-C01-D-P07-BeholdISendMyMesse.dc.html",
+  "MAL-C01-D-P08-WillAManRobGod.dc.html",
+  "MAL-C01-D-P09-TheWindowsOfHeaven.dc.html",
+  "MAL-C01-D-P10-TheDayCometh.dc.html",
+  "MAL-C01-D-P11-ElijahTheProphet.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Malachi Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Sun of Righteousness (Malachi 1–4)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

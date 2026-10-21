@@ -1,0 +1,21 @@
+{
+ "id": "malachi",
+ "order": 39,
+ "name": "Malachi",
+ "kanji": "マラキ書",
+ "thumb": "vol-malachi-",
+ "lede": "The thirty-ninth book of the Bible and the last of the Old Testament, in full: the burden of the word of Jehovah to Israel by Malachi — I have loved you, saith Jehovah; a son honoreth his father; behold, I send my messenger; will a man rob God?; a book of remembrance; the sun of righteousness with healing in its wings; and Elijah the prophet before the great and terrible day of Jehovah — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Sun of Righteousness",
+   "range": "Malachi 1–4",
+   "blurb": "I have loved you, saith Jehovah — yet ye say, Wherein hast thou loved us?; the blind, the lame and the sick upon mine altar, and from the rising of the sun my name great among the Gentiles; the covenant with Levi; the wife of thy youth; behold, I send my messenger, and he is like a refiner's fire; will a man rob God? bring ye the whole tithe into the store-house, and I will open you the windows of heaven; a book of remembrance; the day that burneth as a furnace; unto you that fear my name shall the sun of righteousness arise with healing in its wings; and I will send you Elijah the prophet.",
+   "prefixes": [
+    "Main.dc.html",
+    "MAL-C01-"
+   ]
+  }
+ ]
+}

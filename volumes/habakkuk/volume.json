@@ -1,0 +1,21 @@
+{
+ "id": "habakkuk",
+ "order": 35,
+ "name": "Habakkuk",
+ "kanji": "ハバクク書",
+ "thumb": "vol-habakkuk-",
+ "lede": "The thirty-fifth book of the Bible, in full: the burden which Habakkuk the prophet did see — O Jehovah, how long shall I cry?; the Chaldeans, that bitter and hasty nation; I will stand upon my watch; write the vision, and make it plain upon tablets — the righteous shall live by his faith; and the prayer of Habakkuk: though the fig-tree shall not flourish, yet I will rejoice in Jehovah — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Watchtower",
+   "range": "Habakkuk 1–3",
+   "blurb": "O Jehovah, how long shall I cry, and thou wilt not hear?; lo, I raise up the Chaldeans, whose horses are swifter than leopards; art not thou from everlasting, O Jehovah my God?; I will stand upon my watch, and set me upon the tower; write the vision, and make it plain upon tablets, that he may run that readeth it — the righteous shall live by his faith; the five woes, and Jehovah in his holy temple; then the prayer of Habakkuk: God came from Teman; though the fig-tree shall not flourish, yet I will rejoice in Jehovah.",
+   "prefixes": [
+    "Main.dc.html",
+    "HAB-C01-"
+   ]
+  }
+ ]
+}
