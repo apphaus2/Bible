@@ -8,5 +8,17 @@
  },
  "2chronicles/": {
   "TAMAR": "TADMOR"
+ },
+ "1chronicles/1CH-C01-R": {
+  "Mizraim": "Misraim"
+ },
+ "2samuel/2SA-C12": {
+  "Benaiah the Son of Jehoiada": "Benaía hijo de Joiada"
+ },
+ "genesis/GEN-C11": {
+  "Shelah": "Sela"
+ },
+ "songofsolomon/Main": {
+  "SOLOMON": "LOS CANTARES"
  }
 }
