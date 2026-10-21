@@ -1,0 +1,8 @@
+// German: the static site in _site-de/ (rebuild_site.py --lang de), all under de/, reached through the router at /de/.
+// npx wrangler deploy -c tools/site/workers/de.jsonc
+{
+  "name": "bible-de",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-de" },
+  "workers_dev": false
+}
