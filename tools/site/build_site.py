@@ -34,7 +34,7 @@ for key, d in SRC.items():
     V = json.loads(vj.read_text(encoding="utf-8"))
     V.update(edition="full", path=V["id"], key=key)
     for c in V["books"]:
-        c["label"] = langs.numbered(T('chapter'), c['num'])
+        c["label"] = langs.numbered(UI[LANG]["chapter"], c['num'])            # "Chapter 3", "第{n}章" -> "第3章"
         c["match"] = (lambda pre: (lambda n: n.startswith(tuple(pre))))(c["prefixes"])
     VOLUMES.append(V)
 VOLUMES.sort(key=lambda v: v.get("order", 0))
@@ -88,7 +88,7 @@ def downloads(up, S, cls="cta alt"):
 def slug(t):
     t = re.sub(r"^(B\d+ · )?\d+ · ", "", t)
     t = "".join(ch for ch in unicodedata.normalize("NFKD", t) if not unicodedata.combining(ch))   # "Génesis" -> "genesis"
-    return re.sub(r"[^a-z0-9]+", "-", t.lower().replace("·", " ")).strip("-")
+    return re.sub(r"[^a-z0-9]+", "-", t.lower().replace("·", " ")).strip("-") or "page"   # a title with no Latin letter (中文)
 def esc(s): return html.escape(s, quote=True)
 
 def convert(path):
@@ -163,7 +163,7 @@ for S in SERIES:
             ref, _, heading = title.partition(" — ")
             if n == "Main.dc.html": ref, heading = b["range"], T("cover")
             pm = re.search(r"— (\d+) —", body)
-            num = langs.numbered(T('page'), int(pm.group(1))) if pm else (T("cover") if n == "Main.dc.html" else T("title"))
+            num = langs.numbered(UI[LANG]["page"], int(pm.group(1))) if pm else (T("cover") if n == "Main.dc.html" else T("title"))
             pages.append({"file": n, "slug": f"{i:02d}-{slug(t)}", "label": re.sub(r'^B\d+ · ', '', t), "heading": heading or t,
                           "ref": ref, "num": num, "style": style, "body": body})
         b["pages"] = pages; FLAT[S["edition"]].append(b)
