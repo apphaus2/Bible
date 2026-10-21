@@ -21,7 +21,7 @@ def title_page(n):
     return title(2, "That Great City", "Jonah 3 – 4", svg, "#2A1A3A", v("3:4", frm="Yet forty days"), "Jonah · Volume Thirty-Two")
 
 
-SEGS = [K.drawn([cp("3:1"), gd("3:2")], lambda w, h: vista(w, h, 202, tone="dawn", sun_at=(0.8, 0.5), hills_n=2, horizon=0.68, people=[(0.4, "prophet", A.JONAH_C)], p="jw2"),
+SEGS = [K.drawn([cp("3:1"), gd("3:2")], lambda w, h: A.called("jw2", w, h, 202, dawn=True),
                 "#2A2A5A", head="The Second Time", stamp=3),
         K.drawn([cp("3:3")], lambda w, h: A.nineveh_great("ng1", w, h, 203), "#E8C890", head="An Exceeding Great City"),
         K.drawn([cp("3:4", to="and said,"), sy("3:4", frm="Yet forty days")], lambda w, h: A.nineveh_great("ng2", w, h, 204), "#E8C890"),

@@ -19,16 +19,16 @@ STORM = "#14141E"
 
 @P("JON-C01-00-Title", "Chapter 1 · The Great Fish", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#0B1A2E"></rect><g transform="translate(0 280)">{A.deep(760, 800, 101, inside=True)}</g>'
+    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#0B1A2E"></rect><g transform="translate(0 280)">{A.swallow("ts", 760, 800, 101)}</g>'
     return title(1, "The Great Fish", "Jonah 1 – 2", svg, "#0B1A2E", v("1:17", to="to swallow up Jonah;"), "Jonah · Volume Thirty-Two")
 
 
-SEGS = [K.drawn([cp("1:1"), gd("1:2")], lambda w, h: vista(w, h, 102, tone="night", stars=True, hills_n=2, horizon=0.7, people=[(0.5, "prophet", A.JONAH_C)], p="jw1"),
+SEGS = [K.drawn([cp("1:1"), gd("1:2")], lambda w, h: A.called("jw1", w, h, 102),
                 NIGHT, head="Arise, Go to Nineveh", stamp=1),
         K.drawn([cp("1:3")], lambda w, h: A.joppa("jp1", w, h, 103), "#8FD0E2", head="Unto Tarshish"),
         K.drawn([cp("1:4")], lambda w, h: A.tempest("tp1", w, h, 104), STORM, head="A Mighty Tempest"),
         K.drawn([cp("1:5", to="to lighten it unto them.")], lambda w, h: A.wares("wr1", w, h, 105), STORM),
-        K.drawn([cp("1:5", frm="But Jonah")], lambda w, h: A.hold(w, h, 106), "#1A120C"),
+        K.drawn([cp("1:5", frm="But Jonah")], lambda w, h: A.hold("hd1", w, h, 106), "#1A120C"),
         K.face([cp("1:6", to="said unto him,"), sy("1:6", frm="What meanest")], SHIPMASTER, bg=COLD),
         K.drawn([cp("1:7", to="to his fellow,"), sy("1:7", frm="Come,", to="upon us."), cp("1:7", frm="So they cast")], lambda w, h: A.lots(w, h, 107), "#3A2A1E", head="The Lot Fell upon Jonah"),
         K.face([cp("1:8", to="unto him,"), sy("1:8", frm="Tell us")], MARINER, bg=COLD),
@@ -40,10 +40,10 @@ SEGS = [K.drawn([cp("1:1"), gd("1:2")], lambda w, h: vista(w, h, 102, tone="nigh
         K.face([cp("1:14", to="and said,"), sy("1:14", frm="We beseech")], SHIPMASTER, bg=COLD),
         K.drawn([cp("1:15")], lambda w, h: A.cast_forth(w, h, 109), "#5A6A8A", head="The Sea Ceased from Its Raging"),
         K.drawn([cp("1:16")], lambda w, h: A.vows("vw1", w, h, 110), "#2A2A5A"),
-        K.drawn([cp("1:17")], lambda w, h: A.deep(w, h, 111, inside=True), "#0B2A44", head="Three Days and Three Nights"),
-        K.drawn([cp("2:1"), cp("2:2", to="And he said,"), sg("2:2", frm="I called")], lambda w, h: A.deep(w, h, 112, inside=True, weeds=False), "#0B2A44", head="Out of the Fish's Belly", stamp=2),
+        K.drawn([cp("1:17")], lambda w, h: A.swallow("sw1", w, h, 111), "#0B2A44", head="Three Days and Three Nights"),
+        K.drawn([cp("2:1"), cp("2:2", to="And he said,"), sg("2:2", frm="I called")], lambda w, h: A.belly(w, h, 112), "#0B2A44", head="Out of the Fish's Belly", stamp=2),
         K.drawn(sgs("2:3-4"), lambda w, h: A.temple_far(w, h, 113), "#0B2A44"),
         K.drawn(sgs("2:5-6"), lambda w, h: A.bars(w, h, 114), "#03101E"),
-        K.drawn(sgs("2:7-9"), lambda w, h: A.deep(w, h, 115, fish_=True, inside=True, light=True), "#0B2A44"),
+        K.drawn(sgs("2:7-9"), lambda w, h: A.belly(w, h, 115, light=True, rot=-8), "#0B2A44"),
         K.drawn([cp("2:10")], lambda w, h: A.dry_land("dl1", w, h, 116), "#FFE6A0", head="Upon the Dry Land")]
 PG.extend(K.pack(SEGS, "JON-C01-D", PG.next(), end=nxt("NEXT · THAT GREAT CITY")))

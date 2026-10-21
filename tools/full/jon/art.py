@@ -13,8 +13,67 @@ JONAH_C = "#1F5A7A"
 SACK = "#6A5A48"
 
 def jonah_fig(p, x, y, s, flip=False, up=None):
-    """Jonah at a distance: a sea-blue robe and headcloth, brown beard."""
-    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=JONAH_C, sw=3, flip=flip, up=up, extra=A.headcloth(JONAH_C) + BLACK_BEARD.replace("#2A1A10", "#4A2A1A"))
+    """Jonah at a distance: a sea-blue tunic and headcloth, brown beard."""
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=JONAH_C, kind="Tunic", sw=3, flip=flip, up=up, extra=A.headcloth(JONAH_C) + BLACK_BEARD.replace("#2A1A10", "#4A2A1A"))
+
+def jonah_kneel(x, y, s, flip=False):
+    """Jonah kneeling in prayer (exodus.kneel), sea-blue, his face and hand in skin."""
+    return E.kneel(x, y, s, color=JONAH_C, skin="#C98E66", flip=flip)
+
+def _smooth(pts):
+    """A Catmull-Rom curve through pts as cubic segments (the path continues from pts[0])."""
+    d = ""
+    for i in range(len(pts) - 1):
+        p0 = pts[max(0, i - 1)]; p1, p2 = pts[i], pts[i + 1]; p3 = pts[min(len(pts) - 1, i + 2)]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6); c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d += f" C {f(c1[0])} {f(c1[1])} {f(c2[0])} {f(c2[1])} {f(p2[0])} {f(p2[1])}"
+    return d
+
+def great_fish(x, y, s=1.0, flip=False, mouth=0.0, window=False, rot=0, seed=1):
+    """The great fish Jehovah prepared: a long dark-blue body, a pale ridged belly, barnacles, a broad forked tail; mouth 0..1
+    opens the jaw (the gape dark red); window=True cuts a lit window into the belly with Jonah kneeling in prayer inside.
+    (x, y) = the middle of the body; facing right unless flip; about 640 units long at s=1."""
+    sx = -s if flip else s
+    m = mouth
+    lip = (262, 4 + 92 * m)
+    under = [lip, (214, 34 + 76 * m), (130, 60 + 42 * m), (40, 72 + 20 * m), (-80, 74), (-200, 52), (-272, 12)]
+    belly = [(lip[0] - 16, lip[1] - 6), (206, 18 + 70 * m), (126, 40 + 38 * m), (40, 50 + 18 * m), (-80, 52), (-200, 34), (-262, 6)]
+    o = [f'<g transform="translate({f(x)} {f(y)}) rotate({rot}) scale({f(sx)} {f(s)})">']
+    # the tail
+    o.append('<path d="M-262 -6 C -296 -40 -318 -70 -360 -104 C -352 -70 -344 -36 -330 -2 C -344 34 -354 70 -366 102 C -322 72 -298 42 -262 14 Z" fill="#22344A" stroke="#0D0D0F" stroke-width="3"></path>'
+             '<path d="M-300 -40 L -340 -84 M-302 34 L -346 80" stroke="#3E5670" stroke-width="2.4"></path>')
+    if m > 0:                                               # the gape behind the jaws
+        o.append(f'<path d="M274 -12 L 124 6 L {f(lip[0])} {f(lip[1])} C {f(lip[0] + 20)} {f(lip[1] * 0.6)} 290 0 274 -12 Z" fill="#4A0E18" stroke="#0D0D0F" stroke-width="2.4"></path>'
+                 f'<path d="M150 8 C 190 {f(10 + 30 * m)} 226 {f(14 + 50 * m)} {f(lip[0] - 10)} {f(lip[1] - 8)}" stroke="#A84A5A" stroke-width="{f(6 + 8 * m)}" fill="none" stroke-linecap="round"></path>')
+    # the body: back from the tail to the snout, the jaw line, the underside back to the tail
+    jaw = f" L 124 6 L {f(lip[0])} {f(lip[1])}" if m > 0 else f" C 276 -2 270 4 {f(lip[0])} {f(lip[1])}"
+    o.append(f'<path d="M-272 -12 C -200 -80 -40 -98 120 -82 C 204 -74 256 -48 276 -12{jaw}{_smooth(under)} Z" fill="#30475F" stroke="#0D0D0F" stroke-width="3"></path>')
+    o.append(f'<path d="M-250 -30 C -150 -76 0 -86 120 -74 C 190 -66 236 -48 256 -26" stroke="#4E6A86" stroke-width="5" fill="none" opacity="0.7"></path>')
+    # the pale belly with its ridges
+    o.append(f'<path d="M{f(under[0][0])} {f(under[0][1])}{_smooth(under)} L {f(belly[-1][0])} {f(belly[-1][1])}{_smooth(belly[::-1])} Z" fill="#C8D4DA" stroke="#0D0D0F" stroke-width="2"></path>')
+    for k in range(1, 6):
+        a, b = under[k], belly[k]
+        o.append(f'<path d="M{f(b[0])} {f(b[1])} L {f(a[0] - 6)} {f(a[1] - 2)}" stroke="#7A8A96" stroke-width="2"></path>')
+    # barnacles, the eye, the fins
+    r = random.Random(seed)
+    for _ in range(9):
+        bx, by = r.uniform(-180, 160), r.uniform(-74, -40)
+        if window and ((bx + 50) / 112) ** 2 + ((by + 8) / 58) ** 2 < 1: continue
+        o.append(f'<circle cx="{f(bx)}" cy="{f(by)}" r="{f(r.uniform(2.5, 5))}" fill="#9AA6A8" stroke="#0D0D0F" stroke-width="1"></circle>')
+    o.append('<path d="M-70 -86 C -56 -112 -28 -118 -6 -88 Z" fill="#22344A" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             '<ellipse cx="206" cy="-34" rx="11" ry="9" fill="#E8E2C8" stroke="#0D0D0F" stroke-width="2"></ellipse><circle cx="209" cy="-34" r="5.5" fill="#0D0D0F"></circle><circle cx="211" cy="-36" r="1.8" fill="#FFF"></circle>'
+             '<path d="M190 -48 C 200 -54 216 -54 224 -46" stroke="#0D0D0F" stroke-width="2.4" fill="none"></path>'
+             '<path d="M150 -14 C 158 -4 158 8 152 16" stroke="#1A2838" stroke-width="2.4" fill="none"></path>'
+             f'<path d="M60 {f(44 + 18 * m)} C 40 {f(80 + 18 * m)} 6 {f(104 + 16 * m)} -36 {f(112 + 14 * m)} C -18 {f(90 + 14 * m)} 4 {f(66 + 16 * m)} 20 {f(46 + 18 * m)} Z" fill="#22344A" stroke="#0D0D0F" stroke-width="2.4"></path>')
+    if window:                                              # the belly cut open to show Jonah praying within
+        o.append('<ellipse cx="-50" cy="-8" rx="104" ry="50" fill="#2A0E10" stroke="#0D0D0F" stroke-width="3"></ellipse>'
+                 '<ellipse cx="-50" cy="-8" rx="96" ry="43" fill="#6A2A22"></ellipse>'
+                 + halo(-50, -10, 70, "#FFC14D", 0.55) +
+                 '<path d="M-144 12 C -100 24 0 24 44 10 C 30 30 -10 40 -50 40 C -90 40 -130 30 -144 12 Z" fill="#3A1410"></path>'
+                 + "".join(f'<path d="M{-130 + i * 26} -38 C {-124 + i * 26} -28 {-124 + i * 26} -16 {-130 + i * 26} -8" stroke="#8A3A30" stroke-width="2.4" fill="none" opacity="0.7"></path>' for i in range(8))
+                 + jonah_kneel(-56, 28, 0.5)
+                 + '<ellipse cx="-50" cy="-8" rx="104" ry="50" fill="none" stroke="#0D0D0F" stroke-width="3" stroke-dasharray="14 6"></ellipse>')
+    return "".join(o) + "</g>"
 
 def tossed(x, y, s, rot, sail="#E8E2D6", crew=0, p=None, seed=1):
     """The ship heeling over at angle rot, with a few mariners on deck."""
@@ -72,21 +131,32 @@ def wares(p, w, h, seed):
         o.append(f'<g transform="rotate({r.randint(-40, 40)} {f(x)} {f(y)})"><path d="M{f(x - 8 * k)} {f(y)} C {f(x - 12 * k)} {f(y - 20 * k)} {f(x + 12 * k)} {f(y - 20 * k)} {f(x + 8 * k)} {f(y)} Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.6"></path></g>')
     return "".join(o)
 
-def hold(w, h, seed):
-    """Jonah gone down into the innermost parts of the ship, fast asleep: the dark hold, its ribs, a swinging lamp."""
+def hold(p, w, h, seed):
+    """Jonah gone down into the innermost parts of the ship, fast asleep: the dark hold, its ribs, a swinging lamp, the
+    cargo jars, and Jonah lying on a heap of sacks and coiled rope."""
     from genesis.art4 import clay_lamp
-    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1A120C"></rect>']
+    b = h * 0.94
+    o = [mk.defs(p, "LieB", "LieA"), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1A120C"></rect>']
     for i in range(9):
         x = w * (i + 0.5) / 9
         o.append(f'<path d="M{f(x)} -10 C {f(x - 14)} {f(h * 0.4)} {f(x - 14)} {f(h * 0.7)} {f(x + (x - w / 2) * 0.1)} {f(h + 10)}" stroke="#4A3220" stroke-width="12" fill="none"></path>'
                  f'<path d="M{f(x)} -10 C {f(x - 14)} {f(h * 0.4)} {f(x - 14)} {f(h * 0.7)} {f(x + (x - w / 2) * 0.1)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="1.4" fill="none"></path>')
-    o.append(halo(w * 0.3, h * 0.3, h * 0.5, "#FFC14D", 0.35))
-    o.append(f'<path d="M{f(w * 0.3)} 0 L {f(w * 0.31)} {f(h * 0.24)}" stroke="#0D0D0F" stroke-width="2"></path>' + clay_lamp(w * 0.31, h * 0.3, min(1.0, h / 300)))
-    for i in range(3):
-        o.append(f'<path d="M{f(w * (0.68 + i * 0.09))} {f(h * 0.94)} C {f(w * (0.66 + i * 0.09))} {f(h * 0.7)} {f(w * (0.74 + i * 0.09))} {f(h * 0.7)} {f(w * (0.72 + i * 0.09))} {f(h * 0.94)} Z" fill="#8A4A26" stroke="#0D0D0F" stroke-width="2"></path>')
-    o.append(f'<rect x="-10" y="{f(h * 0.92)}" width="{f(w + 20)}" height="{f(h * 0.1)}" fill="#3A2614" stroke="#0D0D0F" stroke-width="2"></rect>')
-    o.append(bed(w, h, w * 0.12, w * 0.6, h * 0.98, cover=JONAH_C, head="#C98E66", hair="#4A2A1A"))
-    o.append(label(w * 0.42, h * 0.62, "Z z z", "#FFE6A0", 14))
+    o.append(halo(w * 0.22, h * 0.3, h * 0.6, "#FFC14D", 0.4))
+    o.append(f'<path d="M{f(w * 0.22)} 0 L {f(w * 0.23)} {f(h * 0.26)}" stroke="#0D0D0F" stroke-width="2"></path>' + clay_lamp(w * 0.23, h * 0.32, min(1.0, h / 300)))
+    k = min(1.3, h / 200)
+    for i in range(4):                                      # cargo jars against the hull
+        x = w * (0.7 + i * 0.075)
+        o.append(f'<path d="M{f(x - 14 * k)} {f(b)} C {f(x - 26 * k)} {f(b - 30 * k)} {f(x - 16 * k)} {f(b - 56 * k)} {f(x - 6 * k)} {f(b - 62 * k)} L {f(x - 6 * k)} {f(b - 72 * k)} L {f(x + 6 * k)} {f(b - 72 * k)} L {f(x + 6 * k)} {f(b - 62 * k)} C {f(x + 16 * k)} {f(b - 56 * k)} {f(x + 26 * k)} {f(b - 30 * k)} {f(x + 14 * k)} {f(b)} Z" fill="#9A5A2E" stroke="#0D0D0F" stroke-width="2"></path>')
+    o.append(f'<rect x="-10" y="{f(b)}" width="{f(w + 20)}" height="{f(h)}" fill="#3A2614" stroke="#0D0D0F" stroke-width="2"></rect>')
+    sx0, sx1 = w * 0.18, w * 0.6                            # the heap of sacks
+    for i in range(5):
+        x = sx0 + (sx1 - sx0) * (i + 0.5) / 5
+        o.append(f'<ellipse cx="{f(x)}" cy="{f(b - 14 * k)}" rx="{f((sx1 - sx0) / 8)}" ry="{f(16 * k)}" fill="#8A7A5A" stroke="#0D0D0F" stroke-width="2"></ellipse>')
+    o.append(f'<ellipse cx="{f(w * 0.64)}" cy="{f(b - 8 * k)}" rx="{f(34 * k)}" ry="{f(10 * k)}" fill="none" stroke="#C8A878" stroke-width="{f(5 * k)}"></ellipse>'
+             f'<ellipse cx="{f(w * 0.64)}" cy="{f(b - 14 * k)}" rx="{f(26 * k)}" ry="{f(8 * k)}" fill="none" stroke="#C8A878" stroke-width="{f(5 * k)}"></ellipse>')
+    sl = k * 0.95
+    o.append(f'<g transform="translate({f(w * 0.56)} {f(b - 26 * k)}) scale({f(sl)})" fill="{JONAH_C}" stroke="#0D0D0F" stroke-width="2"><use href="#{p}LieB"></use><use href="#{p}LieA"></use></g>')
+    o.append(label(w * 0.34, b - 70 * k, "Z z z", "#FFE6A0", 14))
     return "".join(o)
 
 def lots(w, h, seed):
@@ -122,27 +192,12 @@ def vows(p, w, h, seed):
          smoke(w * 0.42, h * 0.6, 9, seed, color="#E8E2D6", op=0.5, k=max(0.6, h / 300))]
     return "".join(o)
 
-def fish(x, y, s=1.0, flip=False, mouth=0.0, inside=False):
-    """A great fish, whale-like: a long dark body with a pale ridged throat, a small eye, a pectoral fin and broad tail;
-    (x, y) = its middle. mouth 0..1 opens the jaw; inside=True shows only a dark shape within, faintly lit."""
-    sx = -s if flip else s
-    jaw = 30 * mouth
-    o = (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">'
-         '<path d="M-260 -10 C -300 -60 -330 -70 -350 -84 C -340 -40 -340 30 -352 70 C -330 50 -300 30 -262 10 Z" fill="#2A3A4E" stroke="#0D0D0F" stroke-width="3"></path>'
-         f'<path d="M-270 -10 C -200 -70 -40 -90 120 -74 C 200 -66 250 -40 268 -10 L 268 {f(4 + jaw * 0.3)} C 200 {f(10 + jaw)} 120 {f(40 + jaw)} 40 {f(56 + jaw * 0.6)} C -80 74 -200 50 -270 10 Z" fill="#34495E" stroke="#0D0D0F" stroke-width="3"></path>'
-         f'<path d="M260 2 C 180 {f(12 + jaw)} 100 {f(34 + jaw)} 20 {f(48 + jaw * 0.6)} C -60 60 -160 46 -230 14 C -150 70 -40 84 40 {f(70 + jaw * 0.6)} C 120 {f(56 + jaw)} 200 {f(30 + jaw)} 262 {f(10 + jaw * 0.4)} Z" fill="#C8D4DA" stroke="#0D0D0F" stroke-width="2.2"></path>')
-    for k in range(6):
-        o += f'<path d="M{200 - k * 40} {f(18 + jaw * 0.8 - k * 1)} C {170 - k * 40} {f(36 + jaw * 0.6)} {130 - k * 40} {f(52 + jaw * 0.4)} {90 - k * 40} {f(58 + jaw * 0.3)}" stroke="#7A8A96" stroke-width="2" fill="none"></path>'
-    o += ('<path d="M40 30 C 20 60 -10 90 -50 104 C -30 76 -10 50 0 30 Z" fill="#2A3A4E" stroke="#0D0D0F" stroke-width="2.4"></path>'
-          '<circle cx="190" cy="-20" r="7" fill="#0D0D0F"></circle><circle cx="192" cy="-22" r="2" fill="#E8F6FA"></circle>'
-          '<path d="M-60 -84 C -40 -100 -20 -100 0 -86" stroke="#0D0D0F" stroke-width="2" fill="#2A3A4E"></path>')
-    if inside:
-        o += ('<ellipse cx="-20" cy="-6" rx="90" ry="36" fill="#FFC14D" opacity="0.18"></ellipse>'
-              '<path d="M-40 10 C -46 -6 -36 -24 -20 -26 C -6 -28 2 -18 0 -8 C 8 -4 14 6 12 14 Z" fill="#0D0D0F" opacity="0.85"></path>')
-    return o + '</g>'
+def _fs(w, h, k=0.84):
+    """The scale at which the great fish (about 730 × 230 units) fills k of a w × h drawing."""
+    return min(w * k / 730, h * k / 230)
 
-def deep(w, h, seed, fish_=True, inside=False, weeds=True, mountains=False, light=False):
-    """The depth, in the heart of the seas: dark water, shafts of light from far above, weeds, and the great fish."""
+def deep(w, h, seed, weeds=True, mountains=False, light=False):
+    """The depth, in the heart of the seas: dark water, shafts of light from far above, bubbles, weeds (no fish)."""
     r = random.Random(seed)
     o = [hgrad(f"dp{seed}", [("0", "#1F5A7A"), ("0.5", "#0B2A44"), ("1", "#03101E")], vertical=True),
          f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#dp{seed})"></rect>']
@@ -155,36 +210,70 @@ def deep(w, h, seed, fish_=True, inside=False, weeds=True, mountains=False, ligh
     for i in range(14):
         x, y = r.uniform(0, w), r.uniform(0, h)
         o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r.uniform(1.5, 4))}" fill="none" stroke="#8FD0E2" stroke-width="1" opacity="0.5"></circle>')
-    if fish_:
-        o.append(fish(w * 0.52, h * 0.52, min(w / 760, h / 300) * 1.0, flip=r.random() < 0.5, inside=inside))
-    if weeds:
-        for i in range(10):
-            x = w * (i + 0.5) / 10 + r.uniform(-14, 14); hh = h * r.uniform(0.2, 0.4)
-            o.append(f'<path d="M{f(x)} {f(h + 4)} C {f(x - 16)} {f(h - hh * 0.4)} {f(x + 16)} {f(h - hh * 0.7)} {f(x - 6)} {f(h - hh)}" stroke="#2E6B3A" stroke-width="5" fill="none" stroke-linecap="round"></path>')
+    if weeds: o.append(weed_bed(w, h, seed))
     return "".join(o)
 
+def weed_bed(w, h, seed, n=10, color="#2E6B3A"):
+    r = random.Random(seed + 7); o = []
+    for i in range(n):
+        x = w * (i + 0.5) / n + r.uniform(-14, 14); hh = h * r.uniform(0.2, 0.4)
+        o.append(f'<path d="M{f(x)} {f(h + 4)} C {f(x - 16)} {f(h - hh * 0.4)} {f(x + 16)} {f(h - hh * 0.7)} {f(x - 6)} {f(h - hh)}" stroke="{color}" stroke-width="5" fill="none" stroke-linecap="round"></path>')
+    return "".join(o)
+
+def swallow(p, w, h, seed):
+    """Jehovah prepared a great fish to swallow up Jonah: under the stilled sea, Jonah sinking from the bright surface, the
+    great fish rising beneath him with its jaws open."""
+    o = [mk.defs(p, *ALL), deep(w, h, seed, weeds=False)]
+    o.append(f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h * 0.1)}" fill="#8FD0E2" opacity="0.5"></rect>'
+             f'<path d="M-10 {f(h * 0.09)}' + "".join(f" q 20 -6 40 0" for _ in range(int(w / 40) + 2)) + '" stroke="#CFEFFF" stroke-width="2.4" fill="none"></path>')
+    s = _fs(w, h, 0.86)
+    fx, fy = w * 0.34, h * 0.64
+    o.append(great_fish(fx, fy, s, mouth=1.0, rot=-16, seed=seed))
+    jx, jy = fx + 316 * s, fy - 4 * s
+    js = s * 0.62
+    r = random.Random(seed)
+    o.append(f'<g transform="rotate(-24 {f(jx)} {f(jy)})">{jonah_fig(p, jx, jy, js, up=[(22, -158), (40, -186), (52, -214)])}</g>')
+    for i in range(10):
+        bx, by = jx + r.uniform(-20, 30) * js, jy - (230 + i * 30) * js
+        if by > 0: o.append(f'<circle cx="{f(bx)}" cy="{f(by)}" r="{f(r.uniform(2, 5))}" fill="none" stroke="#CFEFFF" stroke-width="1.4"></circle>')
+    return "".join(o)
+
+def belly(w, h, seed, light=False, rot=0, weeds=True, k=0.88):
+    """In the belly of the fish: the great fish in the deep, its side cut away to show Jonah kneeling in prayer within."""
+    s = _fs(w, h, k)
+    return deep(w, h, seed, weeds=weeds, light=light) + great_fish(w * 0.5, h * 0.52, s, window=True, rot=rot, seed=seed)
+
 def bars(w, h, seed):
-    """I went down to the bottoms of the mountains; the earth with its bars closed upon me: the roots of the mountains and
-    the sea floor barred like a gate."""
-    o = [deep(w, h, seed, fish_=False, mountains=True, weeds=False)]
+    """I went down to the bottoms of the mountains; the earth with its bars closed upon me; the weeds were wrapped about my
+    head: the roots of the mountains, the sea floor barred like a gate, the weeds streaming."""
+    o = [deep(w, h, seed, mountains=True, weeds=False)]
     for i in range(11):
         x = w * (i + 0.5) / 11
         o.append(f'<path d="M{f(x)} {f(h * 0.5)} L {f(x)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="7"></path><path d="M{f(x)} {f(h * 0.5)} L {f(x)} {f(h + 10)}" stroke="#3A4A5A" stroke-width="3"></path>')
     o.append(f'<path d="M-10 {f(h * 0.56)} L {f(w + 10)} {f(h * 0.56)} M-10 {f(h * 0.84)} L {f(w + 10)} {f(h * 0.84)}" stroke="#3A4A5A" stroke-width="5"></path>')
+    o.append(weed_bed(w, h, seed, n=14))
     return "".join(o)
 
 def temple_far(w, h, seed):
-    """Yet I will look again toward thy holy temple: from the deep, the light far above, and the house on its hill at the
-    top of the panel (seen as through the water)."""
-    o = [deep(w, h, seed, fish_=False, weeds=True, light=True),
-         f'<g opacity="0.55">{temple_front(w * 0.5, h * 0.3, w * 0.2, seed)}</g>', fish(w * 0.5, h * 0.7, min(w / 760, h / 300) * 0.7, flip=True, inside=True)]
+    """Yet I will look again toward thy holy temple: from the deep, the light far above and the house on its hill seen as
+    through the water; below, the great fish with Jonah praying within."""
+    s = _fs(w, h * 0.6, 0.9)
+    o = [deep(w, h, seed, weeds=True, light=True),
+         f'<g opacity="0.55">{temple_front(w * 0.5, h * 0.3, w * 0.2, seed)}</g>', great_fish(w * 0.5, h * 0.7, s, flip=True, window=True, seed=seed)]
     return "".join(o)
 
 def dry_land(p, w, h, seed):
-    """It vomited out Jonah upon the dry land: the great fish turning away in the surf, a dark shape on the sand."""
-    o = [sky(w, h, "#FFE6A0", "#F3C890"), sea(w, h, h * 0.48, seed), fish(w * 0.66, h * 0.62, min(w / 1100, h / 520), flip=False, mouth=0.4),
-         f'<path d="M-10 {f(h * 0.74)} C {f(w * 0.3)} {f(h * 0.7)} {f(w * 0.5)} {f(h * 0.8)} {f(w + 10)} {f(h * 0.84)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2.2"></path>',
-         E.kneel(w * 0.2, h * 0.92, fit(h * 0.92, h * 0.6) * 0.9, color="#0D0D0F")]
+    """It vomited out Jonah upon the dry land: the great fish in the shallows with its jaws open, Jonah on his knees on
+    the sand, the morning over the sea."""
+    o = [sky(w, h, "#FFE6A0", "#F3C890"), sun(w * 0.12, h * 0.34, max(14, h * 0.07), color="#FFF4C2", op=0.4), sea(w, h, h * 0.4, seed)]
+    s = _fs(w * 0.62, h, 0.9)
+    fx, fy = w * 0.26, h * 0.62
+    o.append(great_fish(fx, fy, s, mouth=0.8, rot=-6, seed=seed))
+    wy = h * 0.7                                            # the water over the fish's lower body, foam at the line
+    o.append(f'<path d="M-10 {f(wy)}' + "".join(f" q 18 -7 36 0" for _ in range(int(w * 0.62 / 36) + 1)) + f' L {f(w * 0.62)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#1F6F9A" stroke="#CFEFFF" stroke-width="2.4" opacity="0.92"></path>')
+    o.append(f'<path d="M{f(w * 0.4)} {f(h + 10)} C {f(w * 0.44)} {f(h * 0.82)} {f(w * 0.5)} {f(h * 0.7)} {f(w * 0.62)} {f(h * 0.62)} L {f(w + 10)} {f(h * 0.58)} L {f(w + 10)} {f(h + 10)} Z" fill="#E8C88A" stroke="#0D0D0F" stroke-width="2.2"></path>')
+    o.append(f'<path d="M{f(w * 0.45)} {f(h * 0.84)} C {f(w * 0.5)} {f(h * 0.74)} {f(w * 0.56)} {f(h * 0.68)} {f(w * 0.66)} {f(h * 0.64)}" stroke="#CFEFFF" stroke-width="3" fill="none" stroke-dasharray="10 8"></path>')
+    o.append(jonah_kneel(w * 0.58, h * 0.86, min(1.0, h * 0.42 / 130), flip=True))
     return "".join(o)
 
 def nineveh_great(p, w, h, seed, jonah=True, sack=False, dusk=False):
@@ -236,28 +325,84 @@ def king_ashes(p, w, h, seed):
     o.append(seated(w * 0.32, b, min(1.4, h / 220), SACK, head=SACK, beard="#1A1210", bowed=True))
     return "".join(o)
 
-def decree(p, w, h, seed):
-    """Let neither man nor beast, herd nor flock, taste anything: a herald with the decree on the wall, the herds and flocks
-    standing unfed by empty troughs, the beasts covered with sackcloth."""
+def called(p, w, h, seed, dawn=False):
+    """The word of Jehovah came unto Jonah: Jonah standing alone under the night sky (dawn=True: at sunrise, the second
+    time), the land rolling away toward the east."""
+    o = [mk.defs(p, *ALL), vista(w, h, seed, tone="dawn" if dawn else "night", stars=not dawn, sun_at=(0.78, 0.52) if dawn else None,
+                                 hills_n=2, horizon=0.7)]
+    b = h * 0.96
+    o.append(jonah_fig(p, w * 0.34, b, fit(b, h * 0.42)))
+    return "".join(o)
+
+def sackcow(x, y, s, flip=False):
+    """A cow covered with sackcloth (samuel1.cow under a rough cloth over its back)."""
     from samuel1 import cow
+    sx = -1 if flip else 1
+    cloth = (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx * s)} {f(s)})">'
+             '<path d="M-84 -104 C -40 -116 30 -118 66 -110 L 72 -64 L 60 -58 L 50 -66 L 38 -56 L 24 -64 L 10 -54 L -6 -64 L -22 -54 L -38 -64 L -54 -56 L -70 -64 L -86 -58 Z" '
+             f'fill="{SACK}" stroke="#0D0D0F" stroke-width="2.2"></path>'
+             '<path d="M-60 -108 L -56 -62 M-20 -114 L -18 -60 M20 -114 L 22 -60 M50 -112 L 52 -64" stroke="#4A3E30" stroke-width="1.6" opacity="0.7"></path></g>')
+    return cow(x, y, s, flip=flip) + cloth
+
+def trough(x, y, s):
+    return (f'<path d="M{f(x - 46 * s)} {f(y - 22 * s)} L {f(x + 46 * s)} {f(y - 22 * s)} L {f(x + 38 * s)} {f(y)} L {f(x - 38 * s)} {f(y)} Z" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="2"></path>'
+            f'<path d="M{f(x - 40 * s)} {f(y - 18 * s)} L {f(x + 40 * s)} {f(y - 18 * s)}" stroke="#4A3220" stroke-width="{f(4 * s)}"></path>')
+
+def decree(p, w, h, seed):
+    """Let neither man nor beast, herd nor flock, taste anything: a herald with the decree on the wall, the herds standing
+    covered with sackcloth by their empty troughs, the flock beside them."""
     b = h * 0.94
     o = [mk.defs(p, *ALL), sky(w, h, "#7A7A8A", "#D8C8B0"), walls(w * 0.3, w * 1.05, h * 0.44, h * 0.22, seed, color="#B8986A", towers=3, gate=False),
          ground(w, h, h * 0.48, "#9A8A6A", dy=0)]
     s = fit(h * 0.3, h * 0.08)
     o.append(man(p, w * 0.58, h * 0.3, s * 0.6, "#5A3A6A", up=[(22, -158), (38, -180), (34, -206)]) + scroll(w * 0.62, h * 0.08, w * 0.08, h * 0.06, lines=3))
-    k = min(0.8, h / 400)
-    for i in range(3):
-        x = w * (0.12 + i * 0.16)
-        o.append(f'<rect x="{f(x - 40 * k)}" y="{f(b - 18 * k)}" width="{f(80 * k)}" height="{f(18 * k)}" fill="#8A6A4A" stroke="#0D0D0F" stroke-width="1.6"></rect>')
-    o.append(cow(w * 0.18, b - 4, k * 0.9) + cow(w * 0.42, b - 10, k * 0.8, flip=True))
-    o.append(sheep_row(w * 0.62, w * 0.96, b, 4, seed, s=k * 0.7))
-    o.append("".join(f'<path d="M{f(w * x - 30 * k)} {f(b - 70 * k)} l {f(60 * k)} 0 l 6 {f(30 * k)} l {f(-72 * k)} 0 Z" fill="{SACK}" stroke="#0D0D0F" stroke-width="1.4" opacity="0.9"></path>' for x in (0.18, 0.42)))
+    k = min(0.85, h / 380)
+    o.append(sackcow(w * 0.16, b - 16 * k, k * 0.9) + sackcow(w * 0.42, b - 22 * k, k * 0.8, flip=True))
+    o.append(trough(w * 0.24, b, k) + trough(w * 0.5, b + 2, k * 0.9))
+    o.append(sheep_row(w * 0.64, w * 0.96, b, 4, seed, s=k * 0.7))
+    return "".join(o)
+
+def gourd_leaf(x, y, s, rot, fill="#3F8A34", vein="#2A5A22"):
+    """A broad five-lobed gourd leaf on its stalk, rot degrees (0 = pointing up)."""
+    return (f'<g transform="translate({f(x)} {f(y)}) rotate({rot:.1f}) scale({f(s)})">'
+            f'<path d="M0 0 C -8 -10 -30 -12 -34 -30 C -24 -32 -20 -42 -22 -54 C -10 -50 -4 -60 0 -70 C 4 -60 10 -50 22 -54 C 20 -42 24 -32 34 -30 C 30 -12 8 -10 0 0 Z" fill="{fill}" stroke="#0D0D0F" stroke-width="2"></path>'
+            f'<path d="M0 0 L 0 -62 M0 -14 L -24 -30 M0 -14 L 24 -30 M0 -30 L -14 -50 M0 -30 L 14 -50" stroke="{vein}" stroke-width="1.6" fill="none"></path></g>')
+
+def gourd_fruit(x, y, s, fill="#A8C46A"):
+    return (f'<path d="M{f(x)} {f(y)} L {f(x)} {f(y + 8 * s)}" stroke="#2E5A22" stroke-width="{f(2.4 * s)}"></path>'
+            f'<path d="M{f(x)} {f(y + 6 * s)} C {f(x - 7 * s)} {f(y + 8 * s)} {f(x - 6 * s)} {f(y + 20 * s)} {f(x - 12 * s)} {f(y + 30 * s)} C {f(x - 18 * s)} {f(y + 44 * s)} {f(x + 18 * s)} {f(y + 44 * s)} {f(x + 12 * s)} {f(y + 30 * s)} C {f(x + 6 * s)} {f(y + 20 * s)} {f(x + 7 * s)} {f(y + 8 * s)} {f(x)} {f(y + 6 * s)} Z" '
+            f'fill="{fill}" stroke="#0D0D0F" stroke-width="1.8"></path>')
+
+def gourd_vine(bx, b, k, seed, stage="gourd"):
+    """The gourd grown up over the booth: a thick vine climbing the left post and running along the roof, broad leaves,
+    curling tendrils and hanging gourds. stage 'gourd' green and full; 'wind' withered brown, leaves fallen on the sand."""
+    r = random.Random(seed)
+    dead = stage != "gourd"
+    leaf, vein = {"gourd": ("#3F8A34", "#2A5A22"), "wind": ("#8A6A3A", "#5A4022")}[stage]
+    stem = "#2E6A2A" if not dead else "#6A5A2A"
+    o = [f'<path d="M{f(bx - 96 * k)} {f(b)} C {f(bx - 112 * k)} {f(b - 50 * k)} {f(bx - 80 * k)} {f(b - 90 * k)} {f(bx - 96 * k)} {f(b - 128 * k)} '
+         f'C {f(bx - 60 * k)} {f(b - 148 * k)} {f(bx - 10 * k)} {f(b - 126 * k)} {f(bx + 30 * k)} {f(b - 140 * k)} C {f(bx + 60 * k)} {f(b - 150 * k)} {f(bx + 90 * k)} {f(b - 130 * k)} {f(bx + 110 * k)} {f(b - 136 * k)}" '
+         f'stroke="{stem}" stroke-width="{f(7 * k)}" fill="none" stroke-linecap="round"></path>']
+    for i in range(6):                                      # tendrils
+        tx, ty = bx + (-90 + i * 36) * k, b - (132 + r.uniform(-6, 8)) * k
+        o.append(f'<path d="M{f(tx)} {f(ty)} c {f(6 * k)} {f(8 * k)} {f(14 * k)} {f(4 * k)} {f(10 * k)} {f(-4 * k)} c {f(-3 * k)} {f(-5 * k)} {f(-8 * k)} {f(-2 * k)} {f(-6 * k)} {f(2 * k)}" stroke="{stem}" stroke-width="{f(1.8 * k)}" fill="none"></path>')
+    for i in range(13):                                     # leaves up the post and along the roof
+        if i < 4: lx, ly, rot = bx - 98 * k + r.uniform(-8, 8) * k, b - (36 + i * 26) * k, r.choice([-60, 60]) + r.uniform(-15, 15)
+        else: lx, ly, rot = bx + (-96 + (i - 4) * 25) * k, b - (136 + r.uniform(-4, 10)) * k, r.uniform(-40, 40)
+        if stage == "wind": rot = 160 + r.uniform(-30, 30)
+        o.append(gourd_leaf(lx, ly, k * r.uniform(0.8, 1.05) * (0.8 if stage == "wind" else 1), rot, leaf, vein))
+    if stage == "gourd":
+        for i in range(3):
+            o.append(gourd_fruit(bx + (-50 + i * 54) * k, b - 132 * k, k))
+    else:
+        for i in range(7):
+            o.append(gourd_leaf(bx + r.uniform(-150, 170) * k, b - r.uniform(0, 4) * k, k * 0.6, r.choice([95, -95]) + r.uniform(-20, 20), leaf, vein))
     return "".join(o)
 
 def booth(p, w, h, seed, stage="booth"):
     """On the east side of the city: Jonah sitting under his booth, watching the city. stage 'booth', 'gourd' (the gourd
-    grown over it, green and shading), 'worm' (the gourd withered, the worm on its stem) or 'wind' (the sun beating and the
-    sultry east wind, Jonah fainting)."""
+    grown over it, green and shading), 'wind' (the sun beating and the sultry east wind, the gourd withered, Jonah
+    fainting)."""
     b = h * 0.94
     hot = stage in ("wind",)
     o = [sky(w, h, "#FFE680", "#FFB04A") if hot else sky(w, h, "#8FD0E2", "#F3E8C8")]
@@ -265,46 +410,40 @@ def booth(p, w, h, seed, stage="booth"):
     o.append(walls(w * 0.52, w * 1.02, h * 0.5, h * 0.16, seed, color="#C8A878", towers=3, gate=False))
     o.append(ground(w, h, h * 0.52, "#D8B880", dy=0))
     if hot: o.append(wind_lines(w, h, seed, n=10, color="#FFF4C2", op=0.6, y0=0.3, y1=0.9))
-    bx, k = w * 0.26, min(1.3, h / 300)
+    bx, k = w * 0.3, min(1.5, h / 230)
+    if stage == "gourd":                                    # the cool shade under the gourd
+        o.append(f'<ellipse cx="{f(bx)}" cy="{f(b)}" rx="{f(130 * k)}" ry="{f(10 * k)}" fill="#6A5A3A" opacity="0.35"></ellipse>')
     o.append(f'<g transform="translate({f(bx)} {f(b)}) scale({f(k)})"><path d="M-90 0 L -84 -120 M90 0 L 84 -120 M-90 -120 L 92 -122" stroke="#6A4A2A" stroke-width="7" fill="none" stroke-linecap="round"></path>'
              + "".join(f'<path d="M{-96 + i * 24} -124 l 12 -8 l 14 8" stroke="#8A6A3A" stroke-width="4" fill="none"></path>' for i in range(8)) + '</g>')
-    if stage in ("gourd", "worm", "wind"):
-        dead = stage != "gourd"
-        leaf, stem = ("#8A7A3A", "#6A5A2A") if dead else ("#3F8A34", "#2E6A2A")
-        o.append(f'<path d="M{f(bx - 100 * k)} {f(b)} C {f(bx - 110 * k)} {f(b - 80 * k)} {f(bx - 100 * k)} {f(b - 140 * k)} {f(bx - 40 * k)} {f(b - 150 * k)} C {f(bx + 20 * k)} {f(b - 160 * k)} {f(bx + 80 * k)} {f(b - 150 * k)} {f(bx + 110 * k)} {f(b - 130 * k)}" stroke="{stem}" stroke-width="{f(6 * k)}" fill="none"></path>')
-        r = random.Random(seed)
-        for i in range(10):
-            lx, ly = bx + (-100 + i * 22) * k, b - (130 + r.uniform(0, 34)) * k
-            if dead:
-                o.append(f'<path d="M{f(lx)} {f(ly)} c {f(-10 * k)} {f(10 * k)} {f(-6 * k)} {f(26 * k)} {f(4 * k)} {f(34 * k)} c {f(8 * k)} {f(-10 * k)} {f(8 * k)} {f(-22 * k)} {f(-4 * k)} {f(-34 * k)} Z" fill="{leaf}" stroke="#0D0D0F" stroke-width="1.4"></path>')
-            else:
-                o.append(f'<path d="M{f(lx)} {f(ly)} c {f(-26 * k)} {f(-6 * k)} {f(-30 * k)} {f(20 * k)} {f(-10 * k)} {f(26 * k)} c {f(16 * k)} {f(6 * k)} {f(32 * k)} {f(-14 * k)} {f(10 * k)} {f(-26 * k)} Z" fill="{leaf}" stroke="#0D0D0F" stroke-width="1.6"></path>')
-        if stage == "worm":
-            wx, wy = bx - 104 * k, b - 60 * k
-            o.append(f'<path d="M{f(wx - 4 * k)} {f(wy)} c {f(6 * k)} {f(-6 * k)} {f(10 * k)} {f(6 * k)} {f(16 * k)} 0 c {f(6 * k)} {f(-6 * k)} {f(10 * k)} {f(6 * k)} {f(16 * k)} 0" stroke="#E8C8A8" stroke-width="{f(5 * k)}" fill="none" stroke-linecap="round"></path>')
-    o.append(seated(bx + 10 * k, b, k * (0.62 if stage != "wind" else 0.6), JONAH_C, head=JONAH_C, beard="#4A2A1A", flip=True, bowed=stage == "wind"))
+    if stage in ("gourd", "wind"): o.append(gourd_vine(bx, b, k, seed, stage))
+    o.append(seated(bx + 10 * k, b, k * 0.62, JONAH_C, head=JONAH_C, beard="#4A2A1A", flip=True, bowed=stage == "wind"))
     return "".join(o)
 
 def worm_close(w, h, seed):
-    """When the morning rose the next day, a worm smote the gourd, that it withered: the stem close up at dawn, the worm
-    in it, the leaves above already drooping."""
-    o = [sky(w, h, "#5A4A7A", "#FFB07A"), sun(w * 0.8, h * 0.8, max(14, h * 0.07), color="#FFC14D", op=0.4)]
-    k = min(1.6, h / 220)
-    o.append(f'<path d="M{f(w * 0.3)} {f(h + 10)} C {f(w * 0.32)} {f(h * 0.6)} {f(w * 0.28)} {f(h * 0.3)} {f(w * 0.4)} {f(h * 0.06)}" stroke="#4A6A2A" stroke-width="{f(14 * k)}" fill="none"></path>')
-    for i in range(4):
-        x, y = w * (0.36 + i * 0.12), h * (0.1 + i * 0.05)
-        o.append(f'<path d="M{f(x)} {f(y)} c {f(-30 * k)} {f(10 * k)} {f(-24 * k)} {f(50 * k)} {f(6 * k)} {f(60 * k)} c {f(20 * k)} {f(-20 * k)} {f(16 * k)} {f(-50 * k)} {f(-6 * k)} {f(-60 * k)} Z" fill="#8A8A3A" stroke="#0D0D0F" stroke-width="1.8"></path>')
-    wx, wy = w * 0.31, h * 0.62
-    o.append(f'<ellipse cx="{f(wx)}" cy="{f(wy)}" rx="{f(10 * k)}" ry="{f(5 * k)}" fill="#2A1A10"></ellipse>'
-             f'<path d="M{f(wx)} {f(wy)} c {f(10 * k)} {f(-10 * k)} {f(18 * k)} {f(6 * k)} {f(28 * k)} 0 c {f(8 * k)} {f(-8 * k)} {f(14 * k)} {f(6 * k)} {f(22 * k)} {f(-2 * k)}" stroke="#E8C8A8" stroke-width="{f(7 * k)}" fill="none" stroke-linecap="round"></path>'
-             f'<circle cx="{f(wx + 50 * k)}" cy="{f(wy - 2 * k)}" r="{f(3.4 * k)}" fill="#3A2A1A"></circle>')
+    """When the morning rose the next day, God prepared a worm, and it smote the gourd, that it withered: the gourd's stem
+    close up at dawn, the worm boring into it, the leaves above already yellowing and drooping."""
+    o = [sky(w, h, "#5A4A7A", "#FFB07A"), sun(w * 0.84, h * 0.86, max(14, h * 0.08), color="#FFC14D", op=0.45)]
+    k = min(2.4, h / 120)
+    sx = w * 0.3
+    d = f"M{f(sx)} {f(h + 10)} C {f(sx + 10)} {f(h * 0.6)} {f(sx - 14)} {f(h * 0.34)} {f(sx + 40)} {f(h * 0.12)} C {f(sx + 120)} {f(-h * 0.02)} {f(w * 0.7)} {f(h * 0.14)} {f(w + 10)} {f(h * 0.06)}"
+    o.append(f'<path d="{d}" stroke="#0D0D0F" stroke-width="{f(12 * k + 4)}" fill="none"></path><path d="{d}" stroke="#5A7A2A" stroke-width="{f(12 * k)}" fill="none"></path>')
+    r = random.Random(seed)
+    for i in range(6):
+        lx, ly = sx + 70 + i * (w * 0.62 - 40) / 6, h * (0.12 + r.uniform(0, 0.05))
+        o.append(gourd_leaf(lx, ly, k * 0.85, 150 + r.uniform(-30, 30), "#C8B040" if i % 2 else "#9AA03A", "#6A5A22"))
+    wx, wy = sx + 2, h * 0.62                               # the worm at its bore-hole in the stem
+    wd = f"M{f(wx + 2 * k)} {f(wy)} c {f(6 * k)} {f(-8 * k)} {f(12 * k)} {f(6 * k)} {f(18 * k)} 0 c {f(6 * k)} {f(-8 * k)} {f(12 * k)} {f(6 * k)} {f(18 * k)} {f(-2 * k)}"
+    o.append(f'<ellipse cx="{f(wx)}" cy="{f(wy)}" rx="{f(5 * k)}" ry="{f(3.4 * k)}" fill="#2A1A10"></ellipse>'
+             f'<path d="{wd}" stroke="#0D0D0F" stroke-width="{f(7 * k + 3)}" fill="none" stroke-linecap="round"></path>'
+             f'<path d="{wd}" stroke="#E8C8A8" stroke-width="{f(7 * k)}" fill="none" stroke-linecap="round"></path>'
+             f'<circle cx="{f(wx + 37 * k)}" cy="{f(wy - 2 * k)}" r="{f(1.6 * k)}" fill="#3A2A1A"></circle>')
     return "".join(o)
 
 def sixscore(p, w, h, seed):
     """Nineveh, that great city, wherein are more than sixscore thousand persons, and also much cattle: the city at evening,
-    its lamps lit, herds on the plain before it."""
+    its lamps lit, herds on the plain before it (to the left, clear of the end mark)."""
     from samuel1 import cow
     o = [nineveh_great(p, w, h, seed, jonah=False, dusk=True)]
-    k = min(0.6, h / 500)
-    for i in range(5): o.append(cow(w * (0.1 + i * 0.18), h * 0.97, k * (0.9 + (i % 2) * 0.1), flip=i % 2 == 1))
+    k = min(0.62, h / 480)
+    for i in range(4): o.append(cow(w * (0.08 + i * 0.13), h * 0.97, k * (0.9 + (i % 2) * 0.1), flip=i % 2 == 1))
     return "".join(o)
