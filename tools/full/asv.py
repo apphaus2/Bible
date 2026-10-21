@@ -134,12 +134,22 @@ def align(src, tgt):
             if not ks: continue
             if not text: MISSING.extend(ks); continue
             if len(ks) == 1: out[ks[0]] = text; continue
-            la = [_letters(src[k]) for k in ks]; tot, cut, a = sum(la), 0, 0
-            for n_, k in enumerate(ks):
-                cut += la[n_]
-                b = len(text) if n_ == len(ks) - 1 else _snap(text, cut / tot, _kind(src[k] + " X", len(src[k])), a)
-                out[k] = text[a:b].strip(); a = b
+            out.update(zip(ks, _divide([src[k] for k in ks], text)))
     return out
+
+def _divide(parts, text):
+    """Translated text shared among ASV verses (their texts, in order) by their share of the letters, each cut at its
+    best break (a verse the translation joins with the next)."""
+    la = [_letters(p) for p in parts]; tot, cut, a, out = sum(la), 0, 0, []
+    for n_, p in enumerate(parts):
+        cut += la[n_]
+        b = len(text) if n_ == len(parts) - 1 else _snap(text, cut / tot, _kind(p + " X", len(p)), a)
+        out.append(text[a:b].strip()); a = b
+    return out
+
+def _block(src, raw, ks, rs):
+    """{ASV key: text} for a versemap block: ASV verses ks share translated verses rs, joined and divided by length."""
+    return dict(zip(ks, _divide([src[k] for k in ks], " ".join(raw[r] for r in rs))))
 
 def psalm_titles(tgt):
     """A translation that folds a psalm's superscription into verse 1 (Reina-Valera: "Salmo de David, cuando huía de delante
@@ -163,6 +173,14 @@ def d_titles(path):
             t = re.sub(r"\\f .*?\\f\*", "", m.group(1), flags=re.S)
             t = re.sub(r"\\\+?w ([^|\\]*)\|[^\\]*\\\+?w\*", r"\1", t)
             out[int(c)] = re.sub(r"\s+", " ", re.sub(r"\\[a-z0-9+]+\*?", "", t)).strip().replace("\u2019", "'").replace("\u2018", "'")
+    return out
+
+def heads(path):
+    """{chapter: the words a USFM file sets before its verse 1}: the \\d line, else for chapter 1 the book's \\mt title
+    (a text that prints a superscription only as its heading, as the Synodal does the Song of Songs'). Verse 0 of versemap."""
+    out = d_titles(path)
+    m = re.search(r"^\\mt1? (.*)$", pathlib.Path(path).read_text(encoding="utf-8").split("\\c ", 1)[0], flags=re.M)
+    if m and 1 not in out: out[1] = m.group(1).strip()
     return out
 
 def parse_titles(path):
@@ -195,9 +213,16 @@ class Book:
             tid = L["text"]; raw = parse(ROOT / "ref" / tid / files(tid)[code])
             self.tgt = align(self.src, raw)
             rules = langs.versemap(LANG).get(code, [])
-            for (c, a, b), (tc, tv) in rules:
-                for n in range(a, b + 1): self.tgt[(c, n)] = raw[(tc, tv + n - a)]
-            if code == "PSA":                # superscriptions: the text's own \d lines, else split off verse 1
+            titled = any(a == 0 for (c, a, b), _ in rules)      # superscriptions placed by the rules (verse 0)
+            if titled: self.titles = {}
+            src0 = {**self.src, **{(c, 0): t for c, t in heads(ROOT / "ref" / "eng-asv" / FILES[code]).items()}}
+            raw0 = {**raw, **{(c, 0): t for c, t in heads(ROOT / "ref" / tid / files(tid)[code]).items()}}
+            for (c, a, b), (tc, tv, tw) in rules:
+                if tw is None: got = {(c, n): raw0[(tc, tv + n - a)] for n in range(a, b + 1)}
+                else: got = _block(src0, raw0, [(c, n) for n in range(a, b + 1)], [(tc, n) for n in range(tv, tw + 1)])
+                if (c, 0) in got: self.titles[c] = got.pop((c, 0))
+                self.tgt.update(got)
+            if code == "PSA" and not titled:  # superscriptions: the text's own \d lines, else split off verse 1
                 self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or (psalm_titles(self.tgt) if L.get("psalm_title") else {})
             ruled = {(c, n) for (c, a, b), _ in rules for n in range(a, b + 1)}
             lost = [k for k in self.src if not self.tgt.get(k, "").strip() or (rules and k[0] in {r[0][0] for r in rules} and k not in ruled)]

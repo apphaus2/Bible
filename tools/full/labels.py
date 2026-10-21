@@ -55,12 +55,19 @@ def collect():
     print(len(out), "labels")
 
 def table(lang):
-    """tools/full/i18n/<lang>.json, or the parts in tools/full/i18n/<lang>/*.json merged."""
+    """tools/full/i18n/<lang>.json, or the parts in tools/full/i18n/<lang>/*.json merged (scoped.json aside: see scoped())."""
     f, d = I18N / f"{lang}.json", I18N / lang
     tab = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
     for part in sorted(d.glob("*.json")) if d.is_dir() else []:
-        tab.update(json.loads(part.read_text(encoding="utf-8")))
+        if part.name != "scoped.json": tab.update(json.loads(part.read_text(encoding="utf-8")))
     return tab
+
+def scoped(lang):
+    """tools/full/i18n/<lang>/scoped.json: {"<volume id>/<page name prefix>": {label: translation}} for a label that must
+    read differently on some pages ("The First Book of the" is "Третья книга" on the 1 Kings cover, "Первая книга" on the
+    1 Chronicles one); build_volume lays them over the table for each page they match."""
+    f = I18N / lang / "scoped.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
 
 # verse references are translated by rule, not by the table: the book's name or page abbreviation, then the numbers
 # ("books" and "abbr" in tools/lang/<code>.json)
@@ -77,8 +84,71 @@ def ref_rule(part, lang):
         m = re.fullmatch(re.escape(w) + r" ?(" + NUMS + r"(?:\s*–\s*\d+)?)( ABRIDGED)?", part)
         if m:
             sp = " " if part[len(w):len(w) + 1] == " " else ""
-            return words[w] + sp + m.group(1) + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
+            nums = renumber(BOOK_CODES.get(w.upper()), m.group(1), lang) if L.get("refs") == "text" else m.group(1)
+            return words[w] + sp + nums + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
     return None
+
+# the English book names and page abbreviations of the refs, for "refs": "text" (a language whose references follow its
+# own Bible's numbering: the Synodal's Psalm 22 is the ASV's 23)
+BOOK_CODES = {k.upper(): v for k, v in {
+    "Genesis": "GEN", "Exodus": "EXO", "Leviticus": "LEV", "Numbers": "NUM", "Deuteronomy": "DEU", "Joshua": "JOS",
+    "Judges": "JDG", "Ruth": "RUT", "1 Samuel": "1SA", "2 Samuel": "2SA", "1 Kings": "1KI", "2 Kings": "2KI",
+    "1 Chronicles": "1CH", "2 Chronicles": "2CH", "Ezra": "EZR", "Nehemiah": "NEH", "Esther": "EST", "Job": "JOB",
+    "Psalms": "PSA", "Psalm": "PSA", "Proverbs": "PRO", "Ecclesiastes": "ECC", "Song of Solomon": "SNG", "Isaiah": "ISA",
+    "Jeremiah": "JER", "Lamentations": "LAM", "Ezekiel": "EZK", "Daniel": "DAN", "Hosea": "HOS", "Joel": "JOL", "Amos": "AMO",
+    "Obadiah": "OBA", "Jonah": "JON", "Micah": "MIC", "Nahum": "NAM", "Habakkuk": "HAB", "Zephaniah": "ZEP", "Haggai": "HAG",
+    "Zechariah": "ZEC", "Malachi": "MAL", "GEN": "GEN", "EX": "EXO", "LEV": "LEV", "NUM": "NUM", "JDG": "JDG", "RUTH": "RUT",
+    "NEH": "NEH", "DEUT": "DEU", "JOSH": "JOS", "1SAM": "1SA", "2SAM": "2SA",
+    "1KGS": "1KI", "2KGS": "2KI", "1CHR": "1CH", "2CHR": "2CH", "EZRA": "EZR", "ESTH": "EST", "PS": "PSA", "PROV": "PRO",
+    "ECCL": "ECC", "SONG": "SNG", "ISA": "ISA", "JER": "JER", "LAM": "LAM", "EZEK": "EZK", "DAN": "DAN", "HOS": "HOS",
+    "JOEL": "JOL", "AMOS": "AMO", "OBAD": "OBA", "JONAH": "JON", "MIC": "MIC", "NAH": "NAM", "HAB": "HAB", "ZEPH": "ZEP",
+    "HAG": "HAG", "ZECH": "ZEC", "MAL": "MAL"}.items()}
+_LAST = {}
+def renumber(code, nums, lang):
+    """Chapter and verse numbers of an ASV ref ("23:1–6", "9–10", "51:1–19") in the numbering of the language's text, by its
+    versemap (a verse of a block: the translated verse it falls in). A whole chapter is the chapter its verse 1 goes to;
+    the end of a run of chapters, the chapter its last verse goes to unless only a verse or two spill over."""
+    rules = langs.versemap(lang).get(code) if code else None
+    if not rules: return nums
+    def to(c, v, end=False):
+        for (rc, a, b), (tc, tv, tw) in rules:
+            if rc == c and a <= v <= b and v:
+                if tw is None: return tc, tv + v - a
+                k, m = b - a + 1, tw - tv + 1
+                return tc, tv + ((v - a + 1) * m + k - 1) // k - 1 if end else tv + (v - a) * m // k
+        return c, v
+    def last(c):
+        if code not in _LAST:
+            sys.path.insert(0, str(HERE)); import asv
+            _LAST[code] = {}
+            for (cc, vv) in asv.parse(ROOT / "ref" / "eng-asv" / asv.FILES[code]): _LAST[code][cc] = max(vv, _LAST[code].get(cc, 0))
+        return _LAST[code].get(c, 1)
+    def chap_end(c):
+        tc, tv = to(c, last(c), True); t1 = to(c, 1)[0]
+        return t1 if tc != t1 and tv <= 2 else tc
+    out, cur = [], None
+    for sep, item in re.findall(r"(^|[,;] ?)([^,;]+)", nums):
+        m = re.fullmatch(r"(\d+)(?::(\d+))?(?:(\s*[–-]\s*)(\d+)(?::(\d+))?)?", item.strip())
+        if not m: out.append(sep + item); continue
+        x, y, dash, z, w = m.groups()
+        if sep.startswith(";"): cur = None
+        if y is None and cur is not None and sep.startswith(","):          # ", 5": a verse of the chapter before
+            x, y = cur, x
+        if y is None:                                                   # chapters: "23", "9–10"
+            a = to(int(x), 1)[0]; b = chap_end(int(z)) if z else a
+            s = str(a) if a == b else f"{a}{dash}{b}"
+            cur = None
+        else:
+            c, v = int(x), int(y); tc, tv = to(c, v)
+            if z is None: s = f"{tc}:{tv}"
+            else:
+                c2, v2 = (int(z), int(w)) if w else (c, int(z))
+                tc2, tv2 = to(c2, v2, True)
+                s = f"{tc}:{tv}" if (tc2, tv2) == (tc, tv) else f"{tc}:{tv}{dash}{tv2}" if tc2 == tc else f"{tc}:{tv}{dash}{tc2}:{tv2}"
+            cur = int(x)
+            if sep.startswith(",") and m.group(2) is None: s = s.split(":", 1)[1]
+        out.append(sep + s)
+    return "".join(out)
 
 def label(s, lang, tab):
     """One label in another language: the whole string from the table, else piece by piece (refs by rule)."""

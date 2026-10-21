@@ -25,13 +25,17 @@ def main(vol, check=False):
     META, G = pkg.META, pkg.G
     out = ROOT / "volumes" / (META["id"] if asv.LANG == "en" else f"{asv.LANG}/{META['id']}")
     pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
-    if asv.LANG == "en": credit = lab = lambda h: h
+    if asv.LANG == "en": credit = lambda h, name=None: h; lab = lambda h: h
     else:                                                             # another language: its credit, every label translated, and
         import labels, langs                                          # fonts for a script the manga's fonts lack (tools/lang/<code>.json)
         tab = labels.table(asv.LANG)
+        scope = {k.split("/", 1)[1]: v for k, v in labels.scoped(asv.LANG).items() if k.split("/", 1)[0] == META["id"]}
+        def page_tab(name):                                           # the table with this page's scoped labels laid over it
+            over = {k: v for p, d in scope.items() if name and name.startswith(p) for k, v in d.items()}
+            return {**tab, **over} if over else tab
         more = "".join(f"&amp;{q}" for q in langs.font_query(asv.LANG))
-        credit = lambda h: langs.with_fallbacks(labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"),
-                                                                 asv.LANG, tab).replace("&amp;display=swap", more + "&amp;display=swap", 1), asv.LANG)
+        credit = lambda h, name=None: langs.with_fallbacks(labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"),
+                                                                 asv.LANG, page_tab(name)).replace("&amp;display=swap", more + "&amp;display=swap", 1), asv.LANG)
         lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
@@ -45,7 +49,7 @@ def main(vol, check=False):
     written = set()
     stale_pages = []
     for name, _, fn in order:
-        html_ = credit(fn()); written.add(name)
+        html_ = credit(fn(), name); written.add(name)
         if check:
             f = pages_dir / name
             if not f.exists() or f.read_text() != html_: stale_pages.append(name)
