@@ -90,6 +90,8 @@ def book_html(code, path):
     def stash(m):
         notes.append(note_html(m.group(1))); return f"\\fn{len(notes) - 1} "
     s = re.sub(r"\\f \+ (.*?)\\f\*", stash, s, flags=re.S)
+    s = re.sub(r"\\x .*?\\x\*", "", s, flags=re.S)                     # cross-references (Segond's), not the text
+    s = re.sub(r"^\\(?:r|mr|s\d?)\b[^\n]*\n?", "", s, flags=re.M)      # an edition's section heads and their references
     short = re.search(r"^\\h (.+?)\s*$", s, re.M).group(1)
     titles = re.findall(r"^\\(mt\d) (.+?)\s*$", s, re.M)
     last_mt1 = max(i for i, (k, _) in enumerate(titles) if k == "mt1")
@@ -118,7 +120,7 @@ def book_html(code, path):
             n = int(rest.split()[0])
             anchor = f"{code}.{n}"; chapters.append((n, anchor))
             if code == "PSA":
-                body.append(f'<h3 class="ps" id="{anchor}">Psalm {n}</h3>')
+                body.append(f'<h3 class="ps" id="{anchor}">{W("psalm")} {n}</h3>')
             elif code in SINGLE:
                 body.append(f'<span class="anchor" id="{anchor}"></span>')
             else:

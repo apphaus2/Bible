@@ -33,7 +33,7 @@ def parse(path):
     s = re.sub(r"\\x .*?\\x\*", "", s, flags=re.S)
     s = re.sub(r"\\\+?w ([^|\\]*)\|[^\\]*\\\+?w\*", r"\1", s)
     s = re.sub(r"\\\+?add\*?", "", s)
-    s = re.sub(r"\\(id|h|toc\d|mt\d?|ms\d?|s\d?|d|r)\b[^\n]*", "", s)
+    s = re.sub(r"\\(id|h|toc\d|mt\d?|ms\d?|mr|s\d?|d|r)\b[^\n]*", "", s)      # \mr: Segond's section references
     s = re.sub(r"\\(p|q\d?|m|b|nb|pi\d?|li\d?|qc|qr)\b", " ", s)
     out = {}
     for cm in re.finditer(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S):
@@ -141,12 +141,33 @@ def align(src, tgt):
                 out[k] = text[a:b].strip(); a = b
     return out
 
-def psalm_titles(tgt):
-    """A translation that folds a psalm's superscription into verse 1 (Reina-Valera: "Salmo de David, cuando huía de delante
-    de Absalom su hijo. ¡OH Jehová …") gets it split off where the psalm proper begins, its first word in capitals.
-    Only psalms whose ASV has a superscription (USFM \\d). Returns {psalm: title}; verse 1 keeps the rest."""
+def title_verses(src, raw):
+    """A text that numbers a psalm's superscription as a verse of its own (the Hebrew numbering, psalm_title_verses: Segond's
+    Psalm 3:1 is "Psaume de David. A l'occasion de sa fuite …", its Psalm 51 has two such verses): where the psalm has more
+    verses than the ASV's, the extra ones at its head are the title; where it has as many and verse 1 has no psalm_title
+    break in it, verse 1 alone is (asv.align then pairs the verse the text runs together). The verses after the title are
+    numbered from 1 again. Only psalms whose ASV has a superscription. Returns {psalm: title}; raw is changed in place."""
     out = {}
     for c in parse_titles(ROOT / "ref" / "eng-asv" / FILES["PSA"]):
+        vs = sorted(n for (cc, n) in raw if cc == c)
+        d = len(vs) - sum(1 for k in src if k[0] == c)
+        if d <= 0:
+            m = re.search(L["psalm_title"], raw.get((c, 1), ""))
+            d = 0 if m and m.start() > 0 else 1
+        if not d: continue
+        out[c] = " ".join(raw[(c, n)] for n in vs[:d]).strip()
+        moved = {(c, n - d): raw.pop((c, n)) for n in vs}
+        raw.update({k: t for k, t in moved.items() if k[1] > 0})
+    return out
+
+def psalm_titles(tgt, skip=()):
+    """A translation that folds a psalm's superscription into verse 1 (Reina-Valera: "Salmo de David, cuando huía de delante
+    de Absalom su hijo. ¡OH Jehová …") gets it split off where the psalm proper begins, its first word in capitals.
+    Only psalms whose ASV has a superscription (USFM \\d), and not those in skip (titles already taken off by
+    title_verses). Returns {psalm: title}; verse 1 keeps the rest."""
+    out = {}
+    for c in parse_titles(ROOT / "ref" / "eng-asv" / FILES["PSA"]):
+        if c in skip: continue
         t = tgt.get((c, 1), "")
         m = re.search(L["psalm_title"], t)                  # es: "A JEHOVÁ llamé" (a one-letter word too)
         if m and m.start() > 0:
@@ -199,13 +220,15 @@ class Book:
         if LANG == "en": self.tgt = self.src
         else:
             tid = L["text"]; raw = drop(parse(ROOT / "ref" / tid / files(tid)[code]))
+            heads = title_verses(self.src, raw) if code == "PSA" and L.get("psalm_title_verses") else {}
             self.tgt = align(self.src, raw)
             rules = langs.versemap(LANG).get(code, [])
             for (c, a, b), (tc, tv, *tw) in rules:   # tw: one ASV verse that is the text's verses tv…tw joined
                 for n in range(a, b + 1):
                     self.tgt[(c, n)] = " ".join(raw[(tc, x)] for x in range(tv, tw[0] + 1)) if tw else raw[(tc, tv + n - a)]
             if code == "PSA":                # superscriptions: the text's own \d lines, else split off verse 1
-                self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or (psalm_titles(self.tgt) if L.get("psalm_title") else {})
+                self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or {
+                    **(psalm_titles(self.tgt, heads) if L.get("psalm_title") else {}), **heads}
             ruled = {(c, n) for (c, a, b), _ in rules for n in range(a, b + 1)}
             lost = [k for k in self.src if not self.tgt.get(k, "").strip() or (rules and k[0] in {r[0][0] for r in rules} and k not in ruled)]
             if lost and L.get("fallback"):
