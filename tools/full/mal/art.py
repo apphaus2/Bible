@@ -82,7 +82,7 @@ def turned_aside(w, h, seed):
     for i in range(10):
         x, y = r.uniform(0, w * 0.3), r.uniform(h * 0.6, h * 0.9)
         o.append(f'<path d="M{f(x)} {f(y)} l 8 -10 l 8 10 Z" fill="#6A5A4A" stroke="#0D0D0F" stroke-width="1"></path>')
-    o.append(f'<g transform="rotate(-20 {f(w * 0.46)} {f(h * 0.82)})">{scroll(w * 0.46, h * 0.82, w * 0.08, h * 0.05, lines=2)}</g>')
+    o.append(f'<g transform="rotate(-20 {f(w * 0.46)} {f(h * 0.82)})">{scroll(w * 0.46, h * 0.8, max(90, w * 0.16), max(34, h * 0.13), lines=3)}</g>')
     return "".join(o)
 
 def foreign_god(p, w, h, seed):
@@ -114,14 +114,19 @@ def tears_altar(p, w, h, seed):
 
 def messenger_way(p, w, h, seed):
     """Behold, I send my messenger, and he shall prepare the way before me; and the Lord, whom ye seek, will suddenly come to
-    his temple: a messenger on a straightened road, the temple at its end blazing with light (no one drawn in the light)."""
-    from genesis.art3 import STAFF, HOLD_STAFF
+    his temple: the way prepared, a straightened road with its stones cleared to the sides, the temple at its end blazing
+    with light — no one drawn on the road or in the light."""
     b = h * 0.95
     o = [mk.defs(p, *ALL), sky(w, h, "#2A3A6A", "#FFD8A0"), halo(w * 0.7, h * 0.36, h * 0.5, "#FFF4C2", 0.7), rays(w * 0.7, h * 0.36, 24, h * 0.1, max(w, h), "#FFF4C2", 0.3, 4),
          temple_front(w * 0.7, h * 0.56, w * 0.24, seed), ground(w, h, h * 0.56, "#B8A07A", dy=0),
          f'<path d="M{f(w * 0.66)} {f(h * 0.56)} L {f(w * 0.74)} {f(h * 0.56)} L {f(w * 0.5)} {f(h + 10)} L {f(w * 0.1)} {f(h + 10)} Z" fill="#E8D8A8" stroke="#0D0D0F" stroke-width="1.6"></path>']
-    s = fit(b, h * 0.4)
-    o.append(mk.person(p, round(w * 0.3), round(b), round(s, 3), body=SKIN, cloth="#E8E2D6", sw=3, flip=True, up=HOLD_STAFF, extra=STAFF + A.headcloth("#E8E2D6")))
+    r = random.Random(seed)
+    for i in range(14):                                       # the stones gathered out of the way, heaped at its sides
+        t = r.uniform(0.05, 1.0); y = h * 0.56 + (h * 0.44) * t
+        xl = w * (0.66 - 0.56 * t) - r.uniform(14, 40) * (0.4 + t); xr = w * (0.74 - 0.24 * t) + r.uniform(14, 40) * (0.4 + t)
+        for x in (xl, xr):
+            rs = (4 + 8 * t) * r.uniform(0.7, 1.2)
+            o.append(f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(rs * 1.4)}" ry="{f(rs)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="1.2"></ellipse>')
     return "".join(o)
 
 def refiner(w, h, seed):
@@ -175,7 +180,7 @@ def proud(w, h, seed):
 def remembrance(p, w, h, seed):
     """Then they that feared Jehovah spake one with another; and a book of remembrance was written before him: two and three
     together in a lamplit room speaking, and above them a glowing open book with its lines being written."""
-    from genesis.art4 import clay_lamp
+    from zep.art import oil_lamp
     b = h * 0.95
     o = [mk.defs(p, *ALL), f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1A1430"></rect>', halo(w * 0.5, h * 0.22, h * 0.3, "#FFE680", 0.6)]
     k = min(1.4, h / 260); x, y = w * 0.5, h * 0.24
@@ -185,7 +190,7 @@ def remembrance(p, w, h, seed):
     s = fit(b, h * 0.52)
     for i, (x, c, fl) in enumerate(((0.14, "#3A4A6A", False), (0.3, "#6A4A3A", True), (0.66, "#4A5A3A", False), (0.84, "#5A3A5A", True))):
         o.append((man if i != 3 else woman)(p, w * x, b, s, c, flip=fl, up=[(22, -158), (40, -150), (56, -146)] if i in (0, 2) else None))
-    o.append(clay_lamp(w * 0.5, h * 0.9, min(0.9, h / 360)) + halo(w * 0.5, h * 0.84, h * 0.2, "#FFC14D", 0.4))
+    o.append(halo(w * 0.5, h * 0.84, h * 0.2, "#FFC14D", 0.4) + oil_lamp(w * 0.5, h * 0.92, min(1.1, h / 300)))
     return "".join(o)
 
 def sun_wings(w, h, seed):

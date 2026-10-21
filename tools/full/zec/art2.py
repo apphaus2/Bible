@@ -31,23 +31,33 @@ def ephah(p, w, h, seed, shut=False, carried=False):
     k = min(2.6, h / 250, w / 420); cx, cy = w * 0.5, h * (0.6 if not carried else 0.5)
     basket = (f'<path d="M{f(cx - 60 * k)} {f(cy - 40 * k)} L {f(cx + 60 * k)} {f(cy - 40 * k)} L {f(cx + 48 * k)} {f(cy + 50 * k)} L {f(cx - 48 * k)} {f(cy + 50 * k)} Z" fill="#8A6A3A" stroke="{GOLD}" stroke-width="2"></path>'
               + "".join(f'<path d="M{f(cx - 58 * k + i * 4 * k)} {f(cy - 30 * k + i * 16 * k)} L {f(cx + 58 * k - i * 4 * k)} {f(cy - 30 * k + i * 16 * k)}" stroke="#5A4A2A" stroke-width="1.4"></path>' for i in range(5)))
-    body = []
-    if not shut and not carried:
-        body.append(f'<path d="M{f(cx - 10 * k)} {f(cy - 40 * k)} C {f(cx - 16 * k)} {f(cy - 70 * k)} {f(cx + 16 * k)} {f(cy - 70 * k)} {f(cx + 10 * k)} {f(cy - 40 * k)} Z" fill="#1A1018" stroke="#5A3A4A" stroke-width="1.4"></path>'
-                    f'<circle cx="{f(cx)}" cy="{f(cy - 76 * k)}" r="{f(9 * k)}" fill="#1A1018" stroke="#5A3A4A" stroke-width="1.4"></circle>')
-    body.append(basket)
+    body = [basket]
     lx, ly = (cx, cy - 46 * k) if (shut or carried) else (cx + 110 * k, cy - 110 * k)
     body.append(f'<ellipse cx="{f(lx)}" cy="{f(ly)}" rx="{f(62 * k)}" ry="{f(12 * k)}" fill="#6A6A78" stroke="{CY}" stroke-width="1.6"></ellipse>')
     if not carried: body.append(label(lx, ly - 18 * k, "A TALENT OF LEAD", CY, 9))
     if carried:
         body.append(mk.defs(p, *ALL))
+        s = 0.42 * k
         for side in (-1, 1):
-            x = cx + side * 120 * k
-            body.append(f'<path d="M{f(x)} {f(cy - 60 * k)} C {f(x + side * 50 * k)} {f(cy - 130 * k)} {f(x + side * 120 * k)} {f(cy - 120 * k)} {f(x + side * 150 * k)} {f(cy - 80 * k)} C {f(x + side * 100 * k)} {f(cy - 86 * k)} {f(x + side * 50 * k)} {f(cy - 60 * k)} {f(x)} {f(cy - 40 * k)} Z" fill="#E8E2D6" stroke="#2A2A3A" stroke-width="1.6"></path>'
-                        + woman(p, x, cy + 60 * k, 0.5 * k, "#4A4A6A", flip=side > 0, up=[(22, -158), (40, -176), (58, -196)])
-                        + f'<path d="M{f(x - side * 14 * k)} {f(cy - 30 * k)} L {f(cx + side * 58 * k)} {f(cy - 36 * k)}" stroke="#C8B890" stroke-width="2"></path>')
+            x = cx + side * 104 * k; yb = cy + 60 * k
+            body.append(stork_wing(x - side * 6 * s, yb - 150 * s, s * 0.9, side)
+                        + mk.person(p, round(x), round(yb), round(s, 3), body=SKIN, cloth="#5A5A8A", woman=True, hair="#1A1210", sw=3, flip=side > 0,
+                                    up=[(22, -150), (46, -138), (70, -128)])
+                        + f'<path d="M{f(x - side * 70 * s)} {f(yb - 128 * s)} L {f(cx + side * 56 * k)} {f(cy - 34 * k)}" stroke="#C8B890" stroke-width="2.4"></path>')
         body.append(wind_lines(w, h, seed, n=8, color=CY, op=0.5) + route([(w * 0.7, h * 0.86), (w * 0.94, h * 0.7)], color=GOLD) + label(w * 0.9, h * 0.62, "SHINAR", GOLD, 10))
     return vision(p, w, h, "".join(body), "VII · THE EPHAH", seed=seed)
+
+def stork_wing(x, y, s, side):
+    """A stork's wing spread from the shoulder at (x, y) toward side (+1 right, -1 left): white coverts, black flight
+    feathers."""
+    q = lambda a, b: f"{f(x + side * a * s)} {f(y + b * s)}"
+    white = (f'<path d="M{q(0, 0)} C {q(30, -70)} {q(110, -120)} {q(200, -112)} L {q(150, -60)} C {q(110, -36)} {q(60, -10)} {q(8, 30)} Z" '
+             'fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.8"></path>')
+    tips = [(200, -112), (186, -84), (196, -78), (172, -56), (180, -48), (150, -34), (156, -24), (120, -14)]
+    black = (f'<path d="M{q(150, -60)} L {q(200, -112)} ' + " ".join(f"L {q(a, b)}" for a, b in tips[1:]) + f' C {q(110, -24)} {q(130, -44)} {q(150, -60)} Z" '
+             'fill="#1A1A1E" stroke="#0D0D0F" stroke-width="1.4"></path>')
+    lines = "".join(f'<path d="M{q(40 + i * 24, -40 - i * 10)} L {q(60 + i * 26, -20 - i * 9)}" stroke="#B8B2A6" stroke-width="1.2"></path>' for i in range(3))
+    return white + black + lines
 
 def chariots(p, w, h, seed, going=False):
     """Four chariots coming out from between two mountains of brass: red horses, black, white, and grizzled (going=True: the

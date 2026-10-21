@@ -21,7 +21,8 @@ START, PAGES, P = PG.start, PG.pages, PG.P
 
 @P("ZEC-C03-00-Title", "Chapter 3 · Thy King Cometh", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#5A7AB8"></rect><g transform="translate(0 300)">{A.king_ass("tk", 760, 780, 301)}</g>'
+    svg = (f'<rect x="0" y="0" width="760" height="1080" fill="#5A7AB8"></rect><rect x="0" y="880" width="760" height="200" fill="#E0CC98"></rect>'
+           f'<g transform="translate(0 250)">{A.king_ass("tk", 760, 640, 301)}</g>')
     return title(3, "Thy King Cometh", "Zechariah 9 – 11", svg, "#3A5A9A", v("9:9", frm="behold, thy king cometh"), "Zechariah · Volume Thirty-Eight")
 
 
@@ -29,7 +30,7 @@ SEGS = [K.drawn(sgs("9:1-2"), lambda w, h: A.burden_map(w, h, lit=("HADRACH", "D
         K.drawn(sgs("9:3-4"), lambda w, h: A.tyre_fire(w, h, 302), "#2A0A10"),
         K.drawn([sg("9:5"), gd("9:6"), gd("9:7")], lambda w, h: A.burden_map(w, h, lit=("ASHDOD", "EKRON", "ASHKELON", "GAZA")), "#0B1A2E"),
         K.drawn(gds("9:8"), lambda w, h: A.encamp(w, h, 303), "#0B0B2A"),
-        K.drawn(sgs("9:9"), lambda w, h: A.king_ass("ka1", w, h, 304), "#5A7AB8", head="Thy King Cometh unto Thee"),
+        K.drawn(sgs("9:9"), lambda w, h: A.king_ass("ka1", w, h, 304), "#5A7AB8", head="Thy King Cometh unto Thee", h=440),
         K.drawn(gds("9:10"), lambda w, h: A.peace_nations(w, h, 305), "#0B1A2E"),
         K.drawn(gds("9:11-12"), lambda w, h: A.pit(w, h, 306), "#2A1E16", head="Prisoners of Hope"),
         K.drawn([gd("9:13"), sg("9:14")], lambda w, h: A.bow_lightning(w, h, 307), "#0B0B2A"),
@@ -40,7 +41,7 @@ SEGS2 = [K.drawn(sgs("10:1-2"), lambda w, h: A.latter_rain(w, h, 309), "#3A4A6A"
          K.drawn(gds("10:6-7"), lambda w, h: fold("fd3", w, h, 311), "#2A2A5A"),
          K.drawn(gds("10:8-10"), lambda w, h: A.gather_map(w, h), "#0B1A2E", head="I Will Hiss for Them"),
          K.drawn(gds("10:11-12"), lambda w, h: A.no_shepherd(w, h, 312, scatter=False), "#4A4A5A")]
-PG.extend(K.pack(SEGS2, "ZEC-C03-E", PG.next()))
+PG.extend(K.paged([SEGS2[0:3], SEGS2[3:5]], "ZEC-C03-E", PG.next()))
 SEGS3 = [K.drawn(sgs("11:1-3"), lambda w, h: A.lebanon_fire(w, h, 313), "#2A0A0A", head="Open Thy Doors, O Lebanon", stamp=11),
          K.drawn([cp("11:4", to="my God:"), gd("11:4", frm="Feed the flock"), gd("11:5"), gd("11:6")], lambda w, h: A.slaughter_flock(w, h, 314), "#4A4A5A", head="The Flock of Slaughter"),
          K.drawn([cp("11:7"), cp("11:8")], lambda w, h: A.staves("st1", w, h, 315), "#8A7A8A"),

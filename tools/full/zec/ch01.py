@@ -2,7 +2,7 @@
 The word in the eighth month (1:1 in a caption) and return unto me, beside Zechariah's face; the fathers' tombs; then the
 night visions as glowing plates: I the horses among the myrtle-trees (the rider a shape of light), the line stretched over
 Jerusalem; II the four horns and the four smiths; III the man with the measuring line and the wall of fire, the road home
-from the land of the north, Zion in the light; IV Joshua the high priest, the adversary a faceless shadow, the filthy
+from the land of the north, Zion in the light; IV Joshua the high priest (the adversary never drawn: words only), the filthy
 garments taken away and the clean mitre, the stone of seven eyes; V the candlestick of gold and the two olive-trees, the
 great mountain become a plain, the plummet in Zerubbabel's hand. God is never drawn."""
 import sys, pathlib
@@ -20,24 +20,23 @@ VN = "#0B0B2A"
 
 @P("ZEC-C01-00-Title", "Chapter 1 · The Night Visions", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#0B0B2A"></rect><g transform="translate(0 200)">{A.myrtle_horses("tm", 760, 740, 101)}</g>'
+    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#0B0B2A"></rect><g transform="translate(0 200)">{A.bare(A.myrtle_horses, "tm", 760, 700, 101)}</g>'
     return title(1, "The Night Visions", "Zechariah 1 – 4", svg, "#0B0B2A", v("1:8", to="among the myrtle-trees that were in the bottom;"), "Zechariah · Volume Thirty-Eight")
 
 
 SEGS = [K.face([cp("1:1"), gd("1:2"), gd("1:3")], ZECHARIAH, head="Return unto Me", stamp=1),
         K.drawn(gds("1:4-6"), lambda w, h: A.fathers(w, h, 102), "#2A1A3A"),
-        K.drawn([cp("1:7"), cp("1:8")], lambda w, h: A.myrtle_horses("mh1", w, h, 103), VN, head="Among the Myrtle-trees"),
+        K.drawn([cp("1:7"), cp("1:8")], lambda w, h: A.myrtle_horses("mh1", w, h, 103), VN, head="Among the Myrtle-trees", h=440),
         K.face([cp("1:9", to="Then said I,"), sy("1:9", frm="O my lord", to="what are these?"), cp("1:9", frm="And the angel", to="said unto me,"), sy("1:9", frm="I will show")], ZECH_NIGHT, bg=COLD),
-        K.drawn([cp("1:10", to="answered and said,"), sy("1:10", frm="These are"), cp("1:11", to="and said,"), sy("1:11", frm="We have walked")],
-                lambda w, h: A.myrtle_horses("mh2", w, h, 104), VN),
-        K.drawn([cp("1:12", to="answered and said,"), sy("1:12", frm="O Jehovah of hosts"), cp("1:13")], lambda w, h: A.myrtle_horses("mh3", w, h, 105, rider=True), VN),
+        K.drawn([cp("1:10", to="answered and said,"), sy("1:10", frm="These are"), cp("1:11", to="and said,"), sy("1:11", frm="We have walked"),
+                 cp("1:12", to="answered and said,"), sy("1:12", frm="O Jehovah of hosts"), cp("1:13")], lambda w, h: A.myrtle_horses("mh2", w, h, 104), VN),
         K.drawn([cp("1:14", to="said unto me,"), sy("1:14", frm="Cry thou,", to="saying,"), gd("1:14", frm="Thus saith"), gd("1:15"), gd("1:16"), gd("1:17")],
                 lambda w, h: A.line_jerusalem(w, h, 106), "#2A2A5A"),
         K.drawn([cp("1:18"), cp("1:19", to="talked with me,"), sy("1:19", frm="What are these?", to="What are these?"), cp("1:19", frm="And he answered me,", to="answered me,"),
                  sy("1:19", frm="These are the horns")], lambda w, h: A.horns("hr1", w, h, 107), VN, head="Four Horns and Four Smiths"),
         K.drawn([cp("1:20"), cp("1:21", to="Then said I,"), sy("1:21", frm="What come", to="to do?"), cp("1:21", frm="And he spake,", to="saying,"), sy("1:21", frm="These are the horns")],
                 lambda w, h: A.horns("hr2", w, h, 108, smiths=True), VN)]
-PG.extend(K.pack(SEGS, "ZEC-C01-D", PG.next()))
+PG.extend(K.paged([SEGS[0:2], SEGS[2:4], SEGS[4:6], SEGS[6:8]], "ZEC-C01-D", PG.next()))
 SEGS2 = [K.drawn([cp("2:1"), cp("2:2", to="Then said I,"), sy("2:2", frm="Whither", to="goest thou?"), cp("2:2", frm="And he said", to="unto me,"), sy("2:2", frm="To measure")],
                  lambda w, h: A.measuring("ms1", w, h, 109), VN, head="A Man with a Measuring Line", stamp=2),
          K.drawn([cp("2:3"), cp("2:4", to="said unto him,"), sy("2:4", frm="Run,"), gd("2:5")], lambda w, h: A.wall_fire("wf1", w, h, 110), VN),

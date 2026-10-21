@@ -65,7 +65,7 @@ def drought(w, h, seed):
     o.append(f'<path d="M{f(w * 0.74 - 20 * k)} {f(h * 0.92)} C {f(w * 0.74 - 34 * k)} {f(h * 0.92 - 50 * k)} {f(w * 0.74 - 14 * k)} {f(h * 0.92 - 80 * k)} {f(w * 0.74)} {f(h * 0.92 - 84 * k)} C {f(w * 0.74 + 14 * k)} {f(h * 0.92 - 80 * k)} {f(w * 0.74 + 34 * k)} {f(h * 0.92 - 50 * k)} {f(w * 0.74 + 20 * k)} {f(h * 0.92)} Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2" transform="rotate(80 {f(w * 0.74)} {f(h * 0.92)})"></path>')
     return "".join(o)
 
-def rebuild(p, w, h, seed):
+def rebuild(p, w, h, seed, people=1.0):
     """They came and did work on the house of Jehovah of hosts: the walls of the house rising in courses, a scaffold, men
     setting stones and hauling on ropes."""
     b = h * 0.94
@@ -75,9 +75,11 @@ def rebuild(p, w, h, seed):
             x = w * (0.22 + k * 0.055) + row * w * 0.0275; y = h * (0.82 - row * 0.06)
             o.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(w * 0.053)}" height="{f(h * 0.058)}" fill="#D8CDB8" stroke="#0D0D0F" stroke-width="1.4"></rect>')
     o.append(f'<path d="M{f(w * 0.2)} {f(h * 0.88)} L {f(w * 0.2)} {f(h * 0.3)} M{f(w * 0.82)} {f(h * 0.88)} L {f(w * 0.82)} {f(h * 0.3)} M{f(w * 0.18)} {f(h * 0.4)} L {f(w * 0.84)} {f(h * 0.4)} M{f(w * 0.18)} {f(h * 0.58)} L {f(w * 0.84)} {f(h * 0.58)}" stroke="#6A4A2A" stroke-width="4"></path>')
-    s = fit(b, h * 0.5)
-    o.append(man(p, w * 0.1, b, s, "#6A4A3A", up=[(22, -158), (40, -176), (58, -196)]) + man(p, w * 0.9, b, s, "#3A4A6A", flip=True)
-             + man(p, w * 0.5, h * 0.4, fit(h * 0.4, h * 0.2), "#5A6A3A", up=[(22, -158), (40, -150), (56, -140)]))
+    s = fit(b, h * 0.62) * people
+    hc = lambda c: A.headcloth(c, cord="#3A2214")
+    o.append(man(p, w * 0.12, b, s, "#6A4A3A", up=[(22, -158), (40, -176), (58, -196)], extra=hc("#C8B890"))
+             + man(p, w * 0.9, b, s, "#3A4A6A", flip=True, extra=hc("#E8E2D6"))
+             + man(p, w * 0.5, h * 0.4, fit(h * 0.4, h * 0.24) * people, "#5A6A3A", up=[(22, -158), (40, -150), (56, -140)], extra=hc("#8A7A5A")))
     return "".join(o)
 
 def former_glory(w, h, seed):
@@ -92,7 +94,7 @@ def former_glory(w, h, seed):
     d = f"M{f(x0)} {f(h * 0.8)} L {f(x0)} {f(top + h * 0.2)} L {f(x0 + w * 0.12)} {f(top + h * 0.2)} L {f(x0 + w * 0.12)} {f(top)} L {f(x1 - w * 0.12)} {f(top)} L {f(x1 - w * 0.12)} {f(top + h * 0.2)} L {f(x1)} {f(top + h * 0.2)} L {f(x1)} {f(h * 0.8)}"
     o.append(f'<path d="{d}" stroke="#FFD23F" stroke-width="2.4" stroke-dasharray="10 6" fill="none" opacity="0.9"></path>'
              + "".join(f'<path d="M{f(x)} {f(top + h * 0.26)} L {f(x)} {f(h * 0.62)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"></path>' for x in (w * 0.44, w * 0.56))
-             + label(w * 0.5, top - 6, "THE FORMER GLORY", "#FFD23F", 10) + label(w * 0.5, h * 0.94, "THIS HOUSE · NOW", "#F3EFE6", 10))
+             + label(w * 0.5, top - 6, "THE FORMER GLORY", "#FFD23F", 10) + label(w * 0.5, h * 0.87, "THIS HOUSE · NOW", "#F3EFE6", 10))
     return "".join(o)
 
 def shaking(w, h, seed):
@@ -165,6 +167,7 @@ def signet_plate(w, h, seed):
          rays(w * 0.42, h * 0.56, 24, h * 0.24, h * 0.6, "#FFE680", 0.3, 3)]
     k = min(2.2, h / 130)
     o.append(ring(w * 0.42, h * 0.62, k))
-    o.append(f'<ellipse cx="{f(w * 0.76)}" cy="{f(h * 0.74)}" rx="{f(44 * k)}" ry="{f(30 * k)}" fill="#A8603A" stroke="#0D0D0F" stroke-width="2"></ellipse>'
-             f'<path d="M{f(w * 0.76 - 14 * k)} {f(h * 0.74 - 8 * k)} L {f(w * 0.76)} {f(h * 0.74 + 4 * k)} L {f(w * 0.76 + 14 * k)} {f(h * 0.74 - 8 * k)} M{f(w * 0.76 - 10 * k)} {f(h * 0.74 + 10 * k)} L {f(w * 0.76 + 10 * k)} {f(h * 0.74 + 10 * k)}" stroke="#5A2A12" stroke-width="{f(3 * k)}" fill="none"></path>')
+    sx, sy = w * 0.16, h * 0.7                                   # the seal pressed in clay, at the left, clear of the end mark
+    o.append(f'<ellipse cx="{f(sx)}" cy="{f(sy)}" rx="{f(44 * k)}" ry="{f(30 * k)}" fill="#A8603A" stroke="#0D0D0F" stroke-width="2"></ellipse>'
+             f'<path d="M{f(sx - 14 * k)} {f(sy - 8 * k)} L {f(sx)} {f(sy + 4 * k)} L {f(sx + 14 * k)} {f(sy - 8 * k)} M{f(sx - 10 * k)} {f(sy + 10 * k)} L {f(sx + 10 * k)} {f(sy + 10 * k)}" stroke="#5A2A12" stroke-width="{f(3 * k)}" fill="none"></path>')
     return "".join(o)
