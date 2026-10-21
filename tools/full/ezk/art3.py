@@ -241,11 +241,12 @@ def hearts(w, h):
         if stone: s += f'<path d="M{f(cx - R * 0.4)} {f(cy - R * 0.5)} L {f(cx - R * 0.1)} {f(cy)} L {f(cx - R * 0.3)} {f(cy + R * 0.3)} M{f(cx + R * 0.3)} {f(cy - R * 0.6)} L {f(cx + R * 0.1)} {f(cy - R * 0.1)}" stroke="#0D0D0F" stroke-width="2" fill="none"></path>'
         else: s += f'<path d="M{f(cx - R * 0.5)} {f(cy - R * 0.3)} C {f(cx - R * 0.4)} {f(cy - R * 0.6)} {f(cx - R * 0.1)} {f(cy - R * 0.6)} {f(cx)} {f(cy - R * 0.3)}" stroke="#FFB0A0" stroke-width="3" fill="none"></path>'
         return s
-    R = min(w * 0.14, h * 0.3)
-    o.append(heart(w * 0.26, h * 0.56, R, "#8A8A90", True))
-    o.append(heart(w * 0.74, h * 0.56, R, "#C8202A", False) + glow("hg", w * 0.74, h * 0.56, R * 1.6, R * 1.6, "#FF8A6A", 0.4))
-    o.append(route([(w * 0.42, h * 0.56), (w * 0.56, h * 0.56)], color=GOLD, sw=3, dash="8 5"))
-    o.append(label(w * 0.26, h * 0.56 + R * 1.5, "THE STONY HEART", CYAN, 10) + label(w * 0.74, h * 0.56 + R * 1.5, "A HEART OF FLESH", GOLD, 10))
+    R = min(w * 0.14, h * 0.26); cy = h * 0.52                  # the labels under the hearts stay inside the panel
+    o.append(heart(w * 0.26, cy, R, "#8A8A90", True))
+    o.append(heart(w * 0.74, cy, R, "#C8202A", False) + glow("hg", w * 0.74, cy, R * 1.6, R * 1.6, "#FF8A6A", 0.4))
+    o.append(route([(w * 0.42, cy), (w * 0.56, cy)], color=GOLD, sw=3, dash="8 5"))
+    ly = min(cy + R + 24, h - 12)
+    o.append(label(w * 0.26, ly, "THE STONY HEART", CYAN, 10) + label(w * 0.74, ly, "A HEART OF FLESH", GOLD, 10))
     return "".join(o)
 
 def glory_mountain(w, h, seed):

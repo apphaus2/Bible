@@ -16,8 +16,12 @@ LIT, LINE, FILL = "#FFD23F", "#8FD0E2", "#1E3A5A"
 def man_brass(p, x, y, s, flip=False, reed=True):
     """The man whose appearance was like the appearance of brass, with a line of flax in his hand and a measuring reed: a
     gleaming bronze figure with a glow, no face detail."""
-    o = glow(f"mb{p}{int(x)}", x, y - 100 * s, 90 * s, 130 * s, "#FFC14D", 0.55)
-    o += mk.person(p, round(x), round(y), round(s, 3), body="#C8863E", cloth="#E8A850", sw=2.6, flip=flip, up=[(-22, -158), (-40, -186), (-46, -214)])
+    o = glow(f"mb{p}{int(x)}{int(y)}", x, y - 100 * s, 90 * s, 140 * s, "#FFC14D", 0.6)
+    o += (f'<g transform="translate({f(x)} {f(y)}) scale({f(s)})">'          # a figure of light with a bronze rim, no face
+          f'<ellipse cx="0" cy="-100" rx="40" ry="100" fill="#FFE680" opacity="0.3"></ellipse>'
+          f'<path d="M-26 0 C -28 -60 -24 -120 -16 -152 C -20 -172 -13 -192 0 -194 C 13 -192 20 -172 16 -152 C 24 -120 28 -60 26 0 Z" '
+          f'fill="#FFF4D8" stroke="#C87A2E" stroke-width="3"></path>'
+          f'<path d="M-10 -150 C -4 -110 -6 -50 -12 -4 M10 -150 C 4 -110 6 -50 12 -4" stroke="#E8B060" stroke-width="2" fill="none" opacity="0.7"></path></g>')
     sx = -1 if flip else 1
     if reed:
         o += (f'<path d="M{f(x - sx * 46 * s)} {f(y - 250 * s)} L {f(x - sx * 46 * s)} {f(y - 40 * s)}" stroke="#0D0D0F" stroke-width="{f(6 * s)}"></path>'
@@ -65,12 +69,34 @@ PARTS = {
     "kitchens": [(-245, -245, 40, 30), (205, -245, 40, 30), (-245, 215, 40, 30), (205, 215, 40, 30)],
     "boiling": [(-162, -100, 10, 50), (-162, 50, 10, 50)],
 }
-def vision_plan(w, h, hi=(), title="THE HOUSE OF THE VISION · PLAN", dims=False, altar=True):
-    """The house of the vision as a plan, north up and east to the right: the parts named in hi lit gold."""
-    o = [bp(w, h), title_bar(w, title)]
-    u = min(w * 0.86, h * 0.82) / 520
-    cx, cy = w * 0.5, h * 0.54
+_VP = [0]
+def vision_plan(w, h, hi=(), title="THE HOUSE OF THE VISION · PLAN", dims=False, altar=True, zoom=None):
+    """The house of the vision as a plan, north up and east to the right: the parts named in hi lit gold. In a panel too
+    low to show the whole at a readable scale, the plan is drawn closer, framed on the lit parts (zoom=None: when that
+    doubles the scale; zoom=False: always the whole)."""
+    _VP[0] += 1
+    o = [bp(w, h)]
+    ax0, ay0, aw, ah = 12, 34, w - 24, h - 44
+    u = min(aw, ah) / 560
+    cx, cy = ax0 + aw / 2, ay0 + ah / 2
+    if hi and zoom is not False:
+        rs = [r for n in hi if n in PARTS for r in PARTS[n]] + ([(-8, -8, 16, 16)] if "altar" in hi else [])
+        bx0 = min(x for x, y, a, b in rs); by0 = min(y for x, y, a, b in rs)
+        bx1 = max(x + a for x, y, a, b in rs); by1 = max(y + b for x, y, a, b in rs)
+        pad = max(85, 0.45 * max(bx1 - bx0, by1 - by0))
+        bx0, by0, bx1, by1 = bx0 - pad, by0 - pad, bx1 + pad, by1 + pad
+        ex = max(0, 280 - (bx1 - bx0)) / 2; ey = max(0, 280 - (by1 - by0)) / 2   # never closer than about half the court
+        bx0, bx1, by0, by1 = bx0 - ex, bx1 + ex, by0 - ey, by1 + ey
+        uz = min(aw / (bx1 - bx0), ah / (by1 - by0))
+        if zoom or uz > 1.8 * u:
+            u = min(uz, 2.6)
+            mx, my = (bx0 + bx1) / 2, (by0 + by1) / 2
+            cx, cy = ax0 + aw / 2 - mx * u, ay0 + ah / 2 - my * u
+            title = title.replace("· PLAN", "· DETAIL")
     X = lambda x: cx + x * u; Y = lambda y: cy + y * u
+    cid = f"vpc{_VP[0]}"
+    o.append(f'<defs><clipPath id="{cid}"><rect x="0" y="28" width="{f(w)}" height="{f(h - 28)}"></rect></clipPath></defs><g clip-path="url(#{cid})">')
+    lsz = max(7, min(12, 5 + u * 2.4))
     def rects(name, fill=FILL, line=LINE, sw=1.6, dash=None):
         lit = name in hi
         out = ""
@@ -100,11 +126,17 @@ def vision_plan(w, h, hi=(), title="THE HOUSE OF THE VISION · PLAN", dims=False
     if altar:
         a_lit = "altar" in hi
         o.append(f'<rect x="{f(X(-8))}" y="{f(Y(-8))}" width="{f(16 * u)}" height="{f(16 * u)}" fill="{"#E8B830" if a_lit else "#8A6A3A"}" stroke="{LIT if a_lit else LINE}" stroke-width="2"></rect>')
-    for nm, x, y in (("EAST GATE", 225, 30), ("NORTH GATE", 0, -186), ("SOUTH GATE", 0, 268), ("INNER COURT", 0, 42), ("HOUSE", -100, 4), ("BUILDING", -195, 4), ("ALTAR", 0, -12)):
-        o.append(label(X(x), Y(y), nm, "#4A7A9A", 7))
+    names = [("EAST GATE", 225, 36, "east_gate"), ("NORTH GATE", 0, -192, "north_gate"), ("SOUTH GATE", 0, 196, "south_gate"), ("INNER COURT", 0, 44, "inner_court"),
+             ("HOUSE", -100, 4, "house"), ("BUILDING", -195, 4, "building"), ("ALTAR", 0, -12, "altar")]
+    if u > 1.2:
+        names += [("PAVEMENT", -120, -222, "pavement"), ("CHAMBERS", -100, -72, "priests_chambers"), ("CHAMBERS", -100, 78, "priests_chambers"),
+                  ("INNER GATE", 75, -16, "inner_east"), ("INNER GATE", 0, -104, "inner_north"), ("INNER GATE", 0, 108, "inner_south"),
+                  ("SEPARATE PLACE", -100, -32, "separate"), ("SEPARATE PLACE", -100, 40, "separate")]
+    for nm, x, y, part in names:
+        o.append(label(X(x), Y(y), nm, LIT if part in hi else "#6A9ABA", lsz))
     if dims:
-        o.append(dim(X(-250), Y(-262), X(250), Y(-262), "500", size=8) + dim(X(262), Y(-250), X(262), Y(250), "500", size=8))
-    o.append(label(w - 16, h - 12, "N ↑", CY, 11, "end"))
+        o.append(dim(X(-250), Y(-262), X(250), Y(-262), "500 REEDS", size=9) + dim(X(262), Y(-250), X(262), Y(250), "500", size=9))
+    o.append('</g>' + title_bar(w, title) + label(w - 16, h - 12, "N ↑", CY, 11, "end"))
     return "".join(o)
 
 def gate_plan(w, h, outer=True):
@@ -112,8 +144,8 @@ def gate_plan(w, h, outer=True):
     reed square, five cubits between, the posts, the porch of eight cubits, the length fifty and the breadth five and twenty;
     closed windows, and palm-trees upon the posts."""
     o = [bp(w, h), title_bar(w, ("THE GATE WHICH LOOKETH TOWARD THE EAST" if outer else "A GATE OF THE INNER COURT") + " · PLAN")]
-    u = min(w * 0.8 / 62, h * 0.56 / 25)
-    x0 = w * 0.5 - 25 * u; y0 = h * 0.54 - 12.5 * u
+    u = min(w * 0.72 / 62, (h - 110) / 25)                 # room above for the callouts and below for the dimension and steps
+    x0 = w * 0.5 - 25 * u; y0 = 34 + (h - 34 - 25 * u) * 0.5 - 6
     X = lambda x: x0 + x * u; Y = lambda y: y0 + y * u
     o.append(f'<rect x="{f(X(0))}" y="{f(Y(0))}" width="{f(50 * u)}" height="{f(25 * u)}" fill="{FILL}" stroke="{LINE}" stroke-width="2"></rect>')
     o.append(f'<rect x="{f(X(0))}" y="{f(Y(7.5))}" width="{f(50 * u)}" height="{f(10 * u)}" fill="#0F1E2E" stroke="{LINE}" stroke-width="1.4"></rect>')
@@ -132,11 +164,11 @@ def gate_plan(w, h, outer=True):
         o.append(f'<path d="M{f(X(-1.5 - i * 1.2))} {f(Y(7.5))} L {f(X(-1.5 - i * 1.2))} {f(Y(17.5))}" stroke="{LINE}" stroke-width="1.2"></path>')
     o.append(dim(X(0), Y(28), X(50), Y(28), "FIFTY CUBITS", size=8))
     o.append(dim(X(53), Y(0), X(53), Y(25), "25", size=8))
-    ty = max(36, Y(-5))
+    ty = max(44, Y(0) - 16); by = min(h - 10, Y(25) + 40)
     o.append(tag(X(9), Y(4.5), "LODGES · ONE REED", X(2), ty))
-    o.append(tag(X(46), Y(12.5), "PORCH · 8 CUBITS", X(52), ty))
-    o.append(tag(X(-4), Y(12.5), f"{'SEVEN' if outer else 'EIGHT'} STEPS", X(-8), Y(34)))
-    o.append(tag(X(25), Y(12.5), "OPENING · 10 CUBITS", X(30), Y(34)))
+    o.append(tag(X(46), Y(12.5), "PORCH · 8 CUBITS", X(40), ty))
+    o.append(tag(X(-4), Y(12.5), f"{'SEVEN' if outer else 'EIGHT'} STEPS", X(-6), by))
+    o.append(tag(X(25), Y(12.5), "OPENING · 10 CUBITS", X(30), by))
     return "".join(o)
 
 def reed_plate(w, h):
@@ -184,8 +216,8 @@ def porch_plan(w, h):
     cubits on this side and three on that; the length twenty cubits and the breadth eleven, the steps, and the pillars by the
     posts."""
     o = [bp(w, h), title_bar(w, "THE PORCH OF THE HOUSE")]
-    u = min(w * 0.6 / 20, h * 0.56 / 11)
-    x0, y0 = w * 0.5 - 10 * u, h * 0.56 - 5.5 * u
+    u = min(w * 0.6 / 20, (h - 92) / 20)                  # the porch, the posts, the pillars and the steps: 20 cubits deep
+    x0, y0 = w * 0.5 - 10 * u, 52 + (h - 92 - 20 * u) / 2
     o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(20 * u)}" height="{f(11 * u)}" fill="{FILL}" stroke="{LINE}" stroke-width="2"></rect>')
     for px in (0, 15):
         o.append(f'<rect x="{f(x0 + px * u)}" y="{f(y0 + 11 * u)}" width="{f(5 * u)}" height="{f(2 * u)}" fill="#3A5A7A" stroke="{LIT}" stroke-width="1.6"></rect>')
@@ -193,7 +225,8 @@ def porch_plan(w, h):
         o.append(f'<circle cx="{f(x0 + px * u)}" cy="{f(y0 + 14.5 * u)}" r="{f(1.2 * u)}" fill="{BGOLD}" stroke="#0D0D0F" stroke-width="1.4"></circle>')
     for i in range(4): o.append(f'<path d="M{f(x0 + 6 * u)} {f(y0 + (16.5 + i * 0.8) * u)} L {f(x0 + 14 * u)} {f(y0 + (16.5 + i * 0.8) * u)}" stroke="{LINE}" stroke-width="1.2"></path>')
     o.append(dim(x0, y0 - 12, x0 + 20 * u, y0 - 12, "TWENTY CUBITS", size=8) + dim(x0 - 14, y0, x0 - 14, y0 + 11 * u, "ELEVEN", size=8))
-    o.append(tag(x0 + 2.5 * u, y0 + 12 * u, "POST · 5 CUBITS", w * 0.06, h * 0.94) + tag(x0 + 16 * u, y0 + 14.5 * u, "PILLARS BY THE POSTS", w * 0.66, h * 0.94))
+    o.append(tag(x0 + 2.5 * u, y0 + 12 * u, "POST · 5 CUBITS", x0 - 30, y0 + 16 * u) + tag(x0 + 16 * u, y0 + 14.5 * u, "PILLARS BY THE POSTS", x0 + 24 * u, y0 + 17 * u)
+             + tag(x0 + 10 * u, y0 + 17.7 * u, "THE STEPS", x0 + 24 * u, y0 + 20 * u))
     return "".join(o)
 
 def house_plan(w, h, hi=()):
@@ -277,4 +310,48 @@ def doors_elev(w, h):
             o.append(cherub(x + k * 0.25, top + k * 0.5, k / 300, flip=s < 0))
             o.append(f'<path d="M{f(x + k * 0.25)} {f(top + k * 1.05)} L {f(x + k * 0.25)} {f(top + k * 0.7)}" stroke="#5ECB5E" stroke-width="3"></path>')
         o.append(label(cx, top + k * 1.1 + 18, ["THE TEMPLE", "THE SANCTUARY"][d], CY, 9))
+    return "".join(o)
+
+def gate_elev(w, h):
+    """The gate seen from without, an elevation: the posts threescore cubits with palm-trees upon them, the closed windows
+    to the lodges and the posts round about, the arches, and seven steps going up to it."""
+    o = [bp(w, h), title_bar(w, "THE GATE · POSTS, WINDOWS AND PALM-TREES")]
+    base = h - 26; top = 52
+    k = min((base - top) / 60, w * 0.6 / 60)
+    cx = w * 0.5
+    X = lambda x: cx + x * k; Y = lambda y: base - y * k
+    o.append(f'<rect x="{f(X(-25))}" y="{f(Y(52))}" width="{f(50 * k)}" height="{f(48 * k)}" fill="{FILL}" stroke="{LINE}" stroke-width="2"></rect>')
+    for px in (-25, 17):                                  # the posts, threescore cubits, with palm-trees upon them
+        o.append(f'<rect x="{f(X(px))}" y="{f(Y(60))}" width="{f(8 * k)}" height="{f(56 * k)}" fill="#2A4A6A" stroke="{LIT}" stroke-width="1.8"></rect>')
+        pxc = X(px + 4)
+        o.append(f'<path d="M{f(pxc)} {f(Y(10))} L {f(pxc)} {f(Y(40))}" stroke="#B8863E" stroke-width="{f(1.2 * k)}"></path>'
+                 + "".join(f'<path d="M{f(pxc)} {f(Y(40))} q {f(math.cos(a) * 4 * k)} {f(-2 * k)} {f(math.cos(a) * 7 * k)} {f(math.sin(a) * 4 * k)}" stroke="#5ECB5E" stroke-width="{f(0.8 * k)}" fill="none"></path>' for a in (0.3, 1.2, 2.0, 2.9, -0.4)))
+    o.append(f'<path d="M{f(X(-6))} {f(Y(4))} L {f(X(-6))} {f(Y(30))} Q {f(X(0))} {f(Y(40))} {f(X(6))} {f(Y(30))} L {f(X(6))} {f(Y(4))} Z" fill="#0F1E2E" stroke="{LINE}" stroke-width="2"></path>')
+    for i in range(3):                                     # closed windows, three on this side and three on that
+        for sx in (-1, 1):
+            wx = X(sx * 11.5) - 1.2 * k
+            o.append(f'<rect x="{f(wx)}" y="{f(Y(46 - i * 13))}" width="{f(2.4 * k)}" height="{f(6 * k)}" fill="#0B1A2E" stroke="{LINE}" stroke-width="1.2"></rect>'
+                     f'<path d="M{f(wx)} {f(Y(43 - i * 13))} l {f(2.4 * k)} 0" stroke="{LINE}" stroke-width="1"></path>')
+    for i in range(7):                                     # seven steps
+        o.append(f'<rect x="{f(X(-9 - i * 1.2))}" y="{f(Y(4 - i * 0.57))}" width="{f((18 + i * 2.4) * k)}" height="{f(0.57 * k)}" fill="#3A5A7A" stroke="{LINE}" stroke-width="0.8"></rect>')
+    o.append(dim(X(-31), Y(0), X(-31), Y(60), "THREESCORE CUBITS", size=8))
+    o.append(tag(X(-21), Y(30), "PALM-TREES UPON THE POSTS", X(-34), Y(50)) + tag(X(12.7), Y(40), "CLOSED WINDOWS", X(32), Y(50)) + tag(X(6), Y(2), "SEVEN STEPS", X(32), Y(8)))
+    return "".join(o)
+
+def round_wall(p, w, h, seed):
+    """He measured it round about: the outer wall seen from without at evening, the gate toward the east, the man of light
+    walking beside the wall with his reed, Ezekiel following."""
+    b = h * 0.9
+    o = [mk.defs(p, *ALL), bg(f"rw{seed}", w, h, [(0, "#2A3A6A"), (0.65, "#E8A878"), (1, "#F3D8B0")])]
+    o.append(hills(w, h, h * 0.42, seed, "#7A6A7A", amp=8, step=110))
+    top = h * 0.44
+    o.append(f'<rect x="-10" y="{f(top)}" width="{f(w + 20)}" height="{f(b - top)}" fill="#C8B490" stroke="{INK}" stroke-width="2.4"></rect>'
+             + "".join(f'<path d="M-10 {f(top + k * (b - top) / 6)} L {f(w + 10)} {f(top + k * (b - top) / 6)}" stroke="#A8946E" stroke-width="1.2"></path>' for k in range(1, 6))
+             + "".join(f'<rect x="{f(i * w / 14)}" y="{f(top - 12)}" width="{f(w / 28)}" height="12" fill="#C8B490" stroke="{INK}" stroke-width="1.6"></rect>' for i in range(15)))
+    o.append(S4.gatehouse(w * 0.2, b, w * 0.24, (b - top) * 1.25))
+    o.append(ground(w, h, b, "#B8A47E", dy=0))
+    s = min(fit(h * 0.99, h * 0.36), 0.9)
+    o.append(f'<path d="M{f(w * 0.36)} {f(h * 0.97)} L {f(w * 0.98)} {f(h * 0.97)}" stroke="#FFD23F" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"></path>')
+    o.append(man_brass(p, w * 0.58, h * 0.99, s))
+    o.append(ezek_fig(p, w * 0.86, h * 0.99, s * 0.92, flip=True))
     return "".join(o)

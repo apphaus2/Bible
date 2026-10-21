@@ -25,7 +25,7 @@ MAP = "#0B1A2E"
 @P("EZK-C12-00-Title", "Chapter 12 · The Watchman and the Shepherds", title=True)
 def title(n):
     svg = title_art(lambda w, h: K.watch_sword("t12", w, h, 1201), "#1A1A3A")
-    return chapter_title(12, "第十二話", "The Watchman and the Shepherds", "Ezekiel 33 – 34", svg, "#1A1A3A", v("33:7", to="unto the house of Israel;"), "Ezekiel · Volume Twenty-Six")
+    return chapter_title(12, "第十二話", "The Watchman and the Shepherds", "Ezekiel 33 – 34", svg, "#1A1A3A", v("33:7", to="unto the house of Israel;"), "Ezekiel · Volume Twenty-Six").replace("top: 330px", "top: 404px")   # the title runs to three lines
 
 
 OV = {"33:21": (("c", None), ("s", "The city is smitten.")), "33:22": "c"}

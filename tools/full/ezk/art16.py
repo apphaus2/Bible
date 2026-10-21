@@ -23,13 +23,21 @@ def glory_east(p, w, h, seed):
     o.append(N.prostrate(w * 0.66, h * 0.98, min(1.0, h / 400), color=EZ_C, skin=SKIN))
     return "".join(o)
 
+def filled_house(p, w, h, seed):
+    """The Spirit took me up and brought me into the inner court; the glory of Jehovah filled the house; and a man stood by
+    me: the house full of light and cloud, Ezekiel in the court and beside him the man of light with his reed."""
+    o = [threshold(p, w, h, seed)]
+    s = min(fit(h * 0.98, h * 0.5), 0.8)
+    o.append(ezek_fig(p, w * 0.12, h * 0.98, s) + man_brass(p, w * 0.88, h * 0.98, s, flip=True))
+    return "".join(o)
+
 def altar_plate(w, h):
     """The measures of the altar by cubits (the cubit a cubit and a handbreadth): the bottom a cubit; the lower ledge two
     cubits; the greater ledge four cubits; the upper altar four cubits, and from the altar hearth four horns; the hearth twelve
     by twelve, the ledge fourteen by fourteen, the border half a cubit; the steps looking toward the east."""
     o = [bp(w, h), title_bar(w, "THE MEASURES OF THE ALTAR · BY CUBITS")]
-    u = min(w * 0.7 / 20, h * 0.74 / 12.5)
-    cx, base = w * 0.46, h * 0.92
+    u = min(w * 0.7 / 20, (h - 74) / 13.5)                # the hearth's dimension clear of the title above
+    cx, base = w * 0.46, h - 16
     tiers = [(18, 1, "#4A5A6A"), (16, 2, "#5A6A7A"), (14, 4, "#6A7A8A"), (12, 4, "#B07A3A")]
     y = base
     for wd, ht, c in tiers:
@@ -41,7 +49,7 @@ def altar_plate(w, h):
     sx = cx + 9 * u
     for i in range(7):
         o.append(f'<rect x="{f(sx + i * 0.7 * u)}" y="{f(base - 11 * u + i * 1.5 * u)}" width="{f(0.7 * u + 2)}" height="{f(1.5 * u)}" fill="#3A4A5A" stroke="{LINE}" stroke-width="1"></rect>')
-    o.append(tag(sx + 2 * u, base - 8 * u, "THE STEPS · TOWARD THE EAST", w * 0.78, h * 0.3))
+    o.append(tag(sx + 2 * u, base - 8 * u, "STEPS · TOWARD THE EAST", min(w * 0.74, w - 230), base - 0.5 * u, size=8))
     o.append(dim(cx - 9 * u - 14, base, cx - 9 * u - 14, base - 1 * u, "1", size=8, off=0))
     o.append(dim(cx - 8 * u - 14, base - 1 * u, cx - 8 * u - 14, base - 3 * u, "2", size=8))
     o.append(dim(cx - 7 * u - 14, base - 3 * u, cx - 7 * u - 14, base - 7 * u, "4", size=8))

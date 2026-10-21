@@ -932,7 +932,7 @@
    "y": 42500,
    "w": 760,
    "h": 1080,
-   "title": "Chapter 10 Â· The Ship of Tyre"
+   "title": "Chapter 10 · The Ship of Tyre"
   },
   "EZK-C10-D-P01-BeholdIAmAgainstTh.dc.html": {
    "x": 840,
@@ -1529,264 +1529,194 @@
    "h": 1080,
    "title": "201 · The Gate toward the East"
   },
-  "EZK-C15-D-P04-TheGateTowardTheEa.dc.html": {
+  "EZK-C15-D-P04-TheNorthGate.dc.html": {
    "x": 3360,
    "y": 67800,
    "w": 760,
    "h": 1080,
-   "title": "202 · The Gate toward the East"
+   "title": "202 · The North Gate"
   },
-  "EZK-C15-D-P05-TheOuterCourt.dc.html": {
+  "EZK-C15-D-P05-TheInnerCourt.dc.html": {
    "x": 0,
    "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "203 · The Outer Court"
+   "title": "203 · The Inner Court"
   },
-  "EZK-C15-D-P06-TheNorthGate.dc.html": {
+  "EZK-C15-D-P06-TheInnerCourt.dc.html": {
    "x": 840,
    "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "204 · The North Gate"
+   "title": "204 · The Inner Court"
   },
-  "EZK-C15-D-P07-TheSouthGate.dc.html": {
+  "EZK-C15-D-P07-TheTablesOfHewnSto.dc.html": {
    "x": 1680,
    "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "205 · The South Gate"
+   "title": "205 · The Tables of Hewn Stone"
   },
-  "EZK-C15-D-P08-TheInnerCourt.dc.html": {
+  "EZK-C15-D-P08-ThePorchOfTheHouse.dc.html": {
    "x": 2520,
    "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "206 · The Inner Court"
+   "title": "206 · The Porch of the House"
   },
-  "EZK-C15-D-P09-TheInnerCourt.dc.html": {
+  "EZK-C15-D-P09-TheTempleAndTheMos.dc.html": {
    "x": 3360,
    "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "207 · The Inner Court"
+   "title": "207 · The Temple and the Most Holy Place"
   },
-  "EZK-C15-D-P10-TheInnerCourt.dc.html": {
+  "EZK-C15-D-P10-TheSideChambers.dc.html": {
    "x": 0,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "208 · The Inner Court"
+   "title": "208 · The Side-Chambers"
   },
-  "EZK-C15-D-P11-TheTablesOfHewnSto.dc.html": {
+  "EZK-C15-D-P11-TheBuildingTowardT.dc.html": {
    "x": 840,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "209 · The Tables of Hewn Stone"
+   "title": "209 · The Building toward the West"
   },
-  "EZK-C15-D-P12-TheChambersOfThePr.dc.html": {
+  "EZK-C15-D-P12-CherubimAndPalmTre.dc.html": {
    "x": 1680,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "210 · The Chambers of the Priests"
+   "title": "210 · Cherubim and Palm-Trees"
   },
-  "EZK-C15-D-P13-TheChambersOfThePr.dc.html": {
+  "EZK-C15-D-P13-TheTableThatIsBefo.dc.html": {
    "x": 2520,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "211 · The Chambers of the Priests"
+   "title": "211 · The Table That Is before Jehovah"
   },
-  "EZK-C15-D-P14-TheAltarBeforeTheH.dc.html": {
+  "EZK-C15-D-P14-TheChambersTowardT.dc.html": {
    "x": 3360,
    "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "212 · The Altar Before the House"
+   "title": "212 · The Chambers toward the North"
   },
-  "EZK-C15-D-P15-TheTempleAndTheMos.dc.html": {
+  "EZK-C15-D-P15-TheHolyChambers.dc.html": {
    "x": 0,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "213 · The Temple and the Most Holy Place"
+   "title": "213 · The Holy Chambers"
   },
-  "EZK-C15-D-P16-TheSideChambers.dc.html": {
+  "EZK-C15-D-P16-FiveHundredReeds.dc.html": {
    "x": 840,
    "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "214 · The Side-Chambers"
-  },
-  "EZK-C15-D-P17-TheBuildingTowardT.dc.html": {
-   "x": 1680,
-   "y": 71400,
-   "w": 760,
-   "h": 1080,
-   "title": "215 · The Building toward the West"
-  },
-  "EZK-C15-D-P18-TheBuildingTowardT.dc.html": {
-   "x": 2520,
-   "y": 71400,
-   "w": 760,
-   "h": 1080,
-   "title": "216 · The Building toward the West"
-  },
-  "EZK-C15-D-P19-TheTableThatIsBefo.dc.html": {
-   "x": 3360,
-   "y": 71400,
-   "w": 760,
-   "h": 1080,
-   "title": "217 · The Table That Is before Jehovah"
-  },
-  "EZK-C15-D-P20-TheChambersTowardT.dc.html": {
-   "x": 0,
-   "y": 72600,
-   "w": 760,
-   "h": 1080,
-   "title": "218 · The Chambers toward the North"
-  },
-  "EZK-C15-D-P21-TheChambersTowardT.dc.html": {
-   "x": 840,
-   "y": 72600,
-   "w": 760,
-   "h": 1080,
-   "title": "219 · The Chambers toward the North"
-  },
-  "EZK-C15-D-P22-TheChambersTowardT.dc.html": {
-   "x": 1680,
-   "y": 72600,
-   "w": 760,
-   "h": 1080,
-   "title": "220 · The Chambers toward the North"
-  },
-  "EZK-C15-D-P23-TheHolyChambers.dc.html": {
-   "x": 2520,
-   "y": 72600,
-   "w": 760,
-   "h": 1080,
-   "title": "221 · The Holy Chambers"
-  },
-  "EZK-C15-D-P24-TheHolyChambers.dc.html": {
-   "x": 3360,
-   "y": 72600,
-   "w": 760,
-   "h": 1080,
-   "title": "222 · The Holy Chambers"
-  },
-  "EZK-C15-D-P25-FiveHundredReeds.dc.html": {
-   "x": 0,
-   "y": 73800,
-   "w": 760,
-   "h": 1080,
-   "title": "223 · Five Hundred Reeds"
+   "title": "214 · Five Hundred Reeds"
   },
   "EZK-C16-00-Title.dc.html": {
    "x": 0,
-   "y": 75500,
+   "y": 73100,
    "w": 760,
    "h": 1080,
    "title": "Chapter 16 · The Glory Returns"
   },
   "EZK-C16-D-P01-TheGloryOfJehovahF.dc.html": {
    "x": 840,
-   "y": 75500,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "224 · The Glory of Jehovah Filled the House"
+   "title": "215 · The Glory of Jehovah Filled the House"
   },
   "EZK-C16-D-P02-ThePlaceOfMyThrone.dc.html": {
    "x": 1680,
-   "y": 75500,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "225 · The Place of My Throne"
+   "title": "216 · The Place of My Throne"
   },
   "EZK-C16-D-P03-ShowTheHouse.dc.html": {
    "x": 2520,
-   "y": 75500,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "226 · Show the House"
+   "title": "217 · Show the House"
   },
   "EZK-C16-D-P04-TheMeasuresOfTheAl.dc.html": {
    "x": 3360,
-   "y": 75500,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "227 · The Measures of the Altar"
+   "title": "218 · The Measures of the Altar"
   },
-  "EZK-C16-D-P05-TheMeasuresOfTheAl.dc.html": {
+  "EZK-C16-D-P05-TheOrdinancesOfThe.dc.html": {
    "x": 0,
-   "y": 76700,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "228 · The Measures of the Altar"
+   "title": "219 · The Ordinances of the Altar"
   },
   "EZK-C16-D-P06-TheOrdinancesOfThe.dc.html": {
    "x": 840,
-   "y": 76700,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "229 · The Ordinances of the Altar"
+   "title": "220 · The Ordinances of the Altar"
   },
-  "EZK-C16-D-P07-TheOrdinancesOfThe.dc.html": {
+  "EZK-C16-D-P07-ThisGateShallBeShu.dc.html": {
    "x": 1680,
-   "y": 76700,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "230 · The Ordinances of the Altar"
+   "title": "221 · This Gate Shall Be Shut"
   },
-  "EZK-C16-D-P08-ThisGateShallBeShu.dc.html": {
+  "EZK-C16-D-P08-MarkWell.dc.html": {
    "x": 2520,
-   "y": 76700,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "231 · This Gate Shall Be Shut"
+   "title": "222 · Mark Well"
   },
-  "EZK-C16-D-P09-MarkWell.dc.html": {
+  "EZK-C16-D-P09-TheLevites.dc.html": {
    "x": 3360,
-   "y": 76700,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "232 · Mark Well"
+   "title": "223 · The Levites"
   },
-  "EZK-C16-D-P10-TheLevites.dc.html": {
+  "EZK-C16-D-P10-TheSonsOfZadok.dc.html": {
    "x": 0,
-   "y": 77900,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "233 · The Levites"
+   "title": "224 · The Sons of Zadok"
   },
-  "EZK-C16-D-P11-TheSonsOfZadok.dc.html": {
+  "EZK-C16-D-P11-LinenGarments.dc.html": {
    "x": 840,
-   "y": 77900,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "234 · The Sons of Zadok"
+   "title": "225 · Linen Garments"
   },
   "EZK-C16-D-P12-LinenGarments.dc.html": {
    "x": 1680,
-   "y": 77900,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "235 · Linen Garments"
+   "title": "226 · Linen Garments"
   },
-  "EZK-C16-D-P13-LinenGarments.dc.html": {
+  "EZK-C16-D-P13-IAmTheirInheritanc.dc.html": {
    "x": 2520,
-   "y": 77900,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "236 · Linen Garments"
-  },
-  "EZK-C16-D-P14-IAmTheirInheritanc.dc.html": {
-   "x": 3360,
-   "y": 77900,
-   "w": 760,
-   "h": 1080,
-   "title": "237 · I Am Their Inheritance"
+   "title": "227 · I Am Their Inheritance"
   }
  },
  "order": [
@@ -2007,43 +1937,33 @@
   "EZK-C15-D-P01-AManLikeBrass.dc.html",
   "EZK-C15-D-P02-TheGateTowardTheEa.dc.html",
   "EZK-C15-D-P03-TheGateTowardTheEa.dc.html",
-  "EZK-C15-D-P04-TheGateTowardTheEa.dc.html",
-  "EZK-C15-D-P05-TheOuterCourt.dc.html",
-  "EZK-C15-D-P06-TheNorthGate.dc.html",
-  "EZK-C15-D-P07-TheSouthGate.dc.html",
-  "EZK-C15-D-P08-TheInnerCourt.dc.html",
-  "EZK-C15-D-P09-TheInnerCourt.dc.html",
-  "EZK-C15-D-P10-TheInnerCourt.dc.html",
-  "EZK-C15-D-P11-TheTablesOfHewnSto.dc.html",
-  "EZK-C15-D-P12-TheChambersOfThePr.dc.html",
-  "EZK-C15-D-P13-TheChambersOfThePr.dc.html",
-  "EZK-C15-D-P14-TheAltarBeforeTheH.dc.html",
-  "EZK-C15-D-P15-TheTempleAndTheMos.dc.html",
-  "EZK-C15-D-P16-TheSideChambers.dc.html",
-  "EZK-C15-D-P17-TheBuildingTowardT.dc.html",
-  "EZK-C15-D-P18-TheBuildingTowardT.dc.html",
-  "EZK-C15-D-P19-TheTableThatIsBefo.dc.html",
-  "EZK-C15-D-P20-TheChambersTowardT.dc.html",
-  "EZK-C15-D-P21-TheChambersTowardT.dc.html",
-  "EZK-C15-D-P22-TheChambersTowardT.dc.html",
-  "EZK-C15-D-P23-TheHolyChambers.dc.html",
-  "EZK-C15-D-P24-TheHolyChambers.dc.html",
-  "EZK-C15-D-P25-FiveHundredReeds.dc.html",
+  "EZK-C15-D-P04-TheNorthGate.dc.html",
+  "EZK-C15-D-P05-TheInnerCourt.dc.html",
+  "EZK-C15-D-P06-TheInnerCourt.dc.html",
+  "EZK-C15-D-P07-TheTablesOfHewnSto.dc.html",
+  "EZK-C15-D-P08-ThePorchOfTheHouse.dc.html",
+  "EZK-C15-D-P09-TheTempleAndTheMos.dc.html",
+  "EZK-C15-D-P10-TheSideChambers.dc.html",
+  "EZK-C15-D-P11-TheBuildingTowardT.dc.html",
+  "EZK-C15-D-P12-CherubimAndPalmTre.dc.html",
+  "EZK-C15-D-P13-TheTableThatIsBefo.dc.html",
+  "EZK-C15-D-P14-TheChambersTowardT.dc.html",
+  "EZK-C15-D-P15-TheHolyChambers.dc.html",
+  "EZK-C15-D-P16-FiveHundredReeds.dc.html",
   "EZK-C16-00-Title.dc.html",
   "EZK-C16-D-P01-TheGloryOfJehovahF.dc.html",
   "EZK-C16-D-P02-ThePlaceOfMyThrone.dc.html",
   "EZK-C16-D-P03-ShowTheHouse.dc.html",
   "EZK-C16-D-P04-TheMeasuresOfTheAl.dc.html",
-  "EZK-C16-D-P05-TheMeasuresOfTheAl.dc.html",
+  "EZK-C16-D-P05-TheOrdinancesOfThe.dc.html",
   "EZK-C16-D-P06-TheOrdinancesOfThe.dc.html",
-  "EZK-C16-D-P07-TheOrdinancesOfThe.dc.html",
-  "EZK-C16-D-P08-ThisGateShallBeShu.dc.html",
-  "EZK-C16-D-P09-MarkWell.dc.html",
-  "EZK-C16-D-P10-TheLevites.dc.html",
-  "EZK-C16-D-P11-TheSonsOfZadok.dc.html",
+  "EZK-C16-D-P07-ThisGateShallBeShu.dc.html",
+  "EZK-C16-D-P08-MarkWell.dc.html",
+  "EZK-C16-D-P09-TheLevites.dc.html",
+  "EZK-C16-D-P10-TheSonsOfZadok.dc.html",
+  "EZK-C16-D-P11-LinenGarments.dc.html",
   "EZK-C16-D-P12-LinenGarments.dc.html",
-  "EZK-C16-D-P13-LinenGarments.dc.html",
-  "EZK-C16-D-P14-IAmTheirInheritanc.dc.html"
+  "EZK-C16-D-P13-IAmTheirInheritanc.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2163,7 +2083,7 @@
    "maxW": 4120,
    "text": "Chapter 16 · The Glory Returns (Ezekiel 43–44)",
    "x": 0,
-   "y": 75200
+   "y": 72800
   }
  },
  "designSystems": [],

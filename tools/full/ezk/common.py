@@ -7,6 +7,8 @@ import sys, pathlib, re
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
 from faces_ex import F, CORD
 from ezk.edisc import seg, pack as _pack
+import speech
+from genesis.ch02 import W1
 from jos.art import below
 from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
@@ -89,6 +91,27 @@ def pack(segs, prefix, start, **k):
     k.setdefault("min_size", 12.5)
     return _pack(segs, prefix, start, book="Ezekiel", code=CODE, **k)
 
+def paged(groups, prefix, start, end=""):
+    """Pages laid out by hand: groups is a list of pages, each a list of segments (one panel each, top to bottom); a
+    segment's h fixes its panel height, the rest share the room by need. Returns [(file, board title, fn)] like pack()."""
+    out, head = [], ""
+    for i, g in enumerate(groups):
+        fixed = sum(s["h"] for s in g if s["h"]); flex = sum(1 for s in g if not s["h"])
+        room = 1022 - 12 * (len(g) - 1) - fixed
+        if (flex and room < 230 * flex) or (not flex and room < 0):
+            print(f"  paged: {prefix} page {i + 1} ({g[0]['ref']}): only {room}px left for {flex} free panel(s)")
+        r = pack(g, prefix, start + i, budget=10 ** 9, most=99, by_need=False, min_size=None, default_head=head, end=end if i == len(groups) - 1 else "")
+        assert len(r) == 1, f"{prefix} page {i + 1} split"
+        fn, title, f_ = r[0]
+        out.append((fn.replace(f"{prefix}-P01-", f"{prefix}-P{i + 1:02d}-"), title, f_))
+        head = next((s["head"] for s in reversed(g) if s["head"]), head)
+    return out
+
+def plate(s, room):
+    """Give a words-over-drawing segment `room` px for its drawing under the words (the panel height fixed to fit both)."""
+    s["h"] = round(speech._height(s["lines"], W1 - 24, 17) + 40 + room)
+    return s
+
 def face(lines, ref, tok, bg=GOLDEN, **k): return seg(lines, ref, tok=tok, bg=bg, **k)
 def drawn(lines, ref, art, bg, k=None, full=False, **kw):
     """Words over a drawing: the drawing set in the space under the words (edisc.under), so the words never cover it;
@@ -120,12 +143,13 @@ def groups(c, a, b, budget=480, starts=()):
         last = out.pop(); out[-1] += last
     return [(g[0], g[-1]) for g in out]
 
-def run(c, a, b, arts=(), faces=None, head=None, stamp=None, budget=480, pat="AF", kind="god", ov=None, heads=None, k=None, generic=()):
+def run(c, a, b, arts=(), faces=None, head=None, stamp=None, budget=480, pat="AF", kind="god", ov=None, heads=None, k=None, generic=(), plate_h=None):
     """Verses c:a–b as panels: groups() of about `budget` characters, each over a drawing or beside a face (the next of
     faces: (tok, bg)). arts as a dict {verse: (bg, f(w, h))}: a panel holding that verse is drawn with it (each drawing
     once); a panel with none is a face, or the next of `generic` drawings when the panel before was a face too. arts as a
     list: drawings and faces alternate by the pattern pat ("AF"). The chapter stamp goes on the first panel when a == 1.
-    heads maps a verse number to a page head starting there."""
+    heads maps a verse number to a page head starting there. plate_h: every drawing gets that much room under its words
+    (plans and plates that must not be squeezed); an art tuple's third item sets it for that drawing alone."""
     faces = faces or [(EZEKIEL, GOLDEN)]
     heads = dict(heads or {})
     if head: heads.setdefault(a, head)
@@ -146,8 +170,10 @@ def run(c, a, b, arts=(), faces=None, head=None, stamp=None, budget=480, pat="AF
         elif arts and (pat[i % len(pat)] == "A" or not faces):
             art = arts[ai % len(arts)]; ai += 1
         if art:
-            if len(art) > 2: kw["h"] = art[2]                          # (bg, f, h): a fixed panel height for a plate
-            segs.append(dz(refs, art[1], art[0], kind=kind, ov=ov, **kw)); last_face = False
+            s_ = dz(refs, art[1], art[0], kind=kind, ov=ov, **kw)
+            room_ = art[2] if len(art) > 2 else plate_h                 # (bg, f, room): the drawing's own height under the words
+            if room_: s_["h"] = round(speech._height(s_["lines"], W1 - 24, 17) + 40 + room_)
+            segs.append(s_); last_face = False
         else:
             tok, bg = faces[fi % len(faces)]; fi += 1
             segs.append(fz(refs, tok, bg, kind=kind, ov=ov, **kw)); last_face = True
