@@ -9,4 +9,5 @@ _book/
 .wrangler/
 volumes/es/
 volumes/fr/
+volumes/ja/
 _site-*/

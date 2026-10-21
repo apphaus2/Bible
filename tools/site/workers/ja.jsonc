@@ -1,0 +1,8 @@
+// Japanese: the static site in _site-ja/ (rebuild_site.py --lang ja), all under ja/, reached through the router at /ja/.
+// npx wrangler deploy -c tools/site/workers/ja.jsonc
+{
+  "name": "bible-ja",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-ja" },
+  "workers_dev": false
+}
