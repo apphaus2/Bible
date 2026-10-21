@@ -19,7 +19,7 @@ START, PAGES, P = PG.start, PG.pages, PG.P
 
 @P("HAG-C01-00-Title", "Chapter 1 · Consider Your Ways", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#3A3A6A"></rect><g transform="translate(0 300)">{A.rebuild("tr", 760, 780, 101)}</g>'
+    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#3A3A6A"></rect><g transform="translate(0 300)">{A.rebuild("tr", 760, 780, 101, people=0.62)}</g>'
     return title(1, "Consider Your Ways", "Haggai 1 – 2", svg, "#3A3A6A", v("1:5", frm="Consider your ways."), "Haggai · Volume Thirty-Seven")
 
 
