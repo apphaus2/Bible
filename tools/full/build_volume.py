@@ -33,6 +33,7 @@ def main(vol, check=False):
         credit = lambda h: langs.with_fallbacks(labels.translate(h.replace(">ASV<", f">{asv.CREDIT}<").replace("· ASV<", f"· {asv.CREDIT}<"),
                                                                  asv.LANG, tab).replace("&amp;display=swap", more + "&amp;display=swap", 1), asv.LANG)
         lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
+        if asv.UNSPACED: credit = (lambda f: lambda h: asv.tighten(f(h)))(credit)   # no ASV spaces after full-width stops
     cover = importlib.import_module(f"{vol}.cover").cover
     order = [("Main.dc.html", "Cover", cover)]
     chapters = []

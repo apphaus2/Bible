@@ -77,7 +77,7 @@ def ref_rule(part, lang):
         m = re.fullmatch(re.escape(w) + r" ?(" + NUMS + r"(?:\s*–\s*\d+)?)( ABRIDGED)?", part)
         if m:
             sp = " " if part[len(w):len(w) + 1] == " " else ""
-            return words[w] + sp + m.group(1) + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
+            return langs.numbered(words[w], m.group(1), sp) + (" " + L.get("abridged", "ABRIDGED") if m.group(2) else "")
     return None
 
 def label(s, lang, tab):
@@ -99,13 +99,15 @@ def translate(page, lang, tab=None):
     """A built page with every label replaced by its translation (text nodes only; scripture is untouched because it
     never matches an English label exactly)."""
     tab = table(lang) if tab is None else tab
+    head, sep, body = page.partition("<x-dc>")
     def sub(m):
         s = norm(m.group(1))
         if not s or is_scripture_text(s): return m.group(0)
-        t = label(s, lang, tab)
+        tag = re.match(r"<(\w+)", body[body.rfind("<", 0, m.start() + 1):])       # "h1|JOB": a label that differs by its
+        t = tab.get(f"{tag.group(1)}|{s}") if tag else None                         # element (the book on a cover, the
+        t = t or label(s, lang, tab)                                                 # man in a speaker tag)
         return m.group(0) if t == s else ">" + html.escape(t, quote=False) + "<"
-    page = re.sub(r"<title>(.*?)</title>", lambda m: "<title>" + html.escape(label(norm(m.group(1)), lang, tab), quote=False) + "</title>", page, count=1)
-    head, sep, body = page.partition("<x-dc>")
+    head = re.sub(r"<title>(.*?)</title>", lambda m: "<title>" + html.escape(label(norm(m.group(1)), lang, tab), quote=False) + "</title>", head, count=1)
     return head + sep + FIT.sub(fit, TEXT.sub(sub, body))
 
 FIT = re.compile(r'(<text [^>]*data-fit="([\d.]+)"[^>]*>)([^<]*)<')

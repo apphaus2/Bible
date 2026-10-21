@@ -36,8 +36,8 @@ OUT_NAME = "bible-asv.pdf"
 ASV_DIR = "asv"                       # the book PDFs' folder (in _book/ and on the site)
 CREDIT, LANG = "ASV", "en"
 # --text spaRV1909: the same book from another public-domain text, for that language's site (its "words" in tools/lang/<code>.json)
-import sys; sys.path.insert(0, str(ROOT / "tools" / "lang"))
-import langs
+import sys; sys.path.insert(0, str(ROOT / "tools" / "lang")); sys.path.insert(0, str(ROOT / "tools" / "full"))
+import langs, asv
 WORDS = {k: v["words"] for k, v in langs.LANGS.items() if "words" in v}
 def W(k): return WORDS[LANG][k]
 SINGLE = {"OBA", "PHM", "2JN", "3JN", "JUD"}         # one-chapter books: no chapter numeral
@@ -66,7 +66,8 @@ def inline(s):
     s = re.sub(r"\\bd (.*?)\\bd\*", r"<b>\1</b>", s)
     s = re.sub(r"\\it (.*?)\\it\*", r"<i>\1</i>", s)
     s = re.sub(r"\\sc (.*?)\\sc\*", r'<span class="sc">\1</span>', s)
-    s = re.sub(r"\\[a-z0-9+]+\*?", "", s)                               # anything else: drop the marker, keep the words
+    # anything else: drop the marker, keep the words (in an unspaced script also the space that ends "\pn 摩西")
+    s = re.sub(r"\\[a-z0-9+]+(?:\*| )?" if langs.get(LANG).get("unspaced") else r"\\[a-z0-9+]+\*?", "", s)
     return s
 
 def note_html(body):
@@ -84,11 +85,11 @@ BLOCK = {"p": "p", "m": "m", "nb": "m", "pi1": "pi", "q1": "q1", "q2": "q2", "q3
 
 def book_html(code, path):
     """One book as HTML, plus [(chapter, anchor)] for the contents and a short name for the running head."""
-    s = path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    s = asv.read(path).replace("\r\n", "\n")           # asv.read: with the characters a text's file lost put back
     notes = []
     def stash(m):
         notes.append(note_html(m.group(1))); return f"\\fn{len(notes) - 1} "
-    s = re.sub(r"\\f \+ (.*?)\\f\*", stash, s, flags=re.S)
+    s = re.sub(r"\\f [+-] (.*?)\\f\*", stash, s, flags=re.S)          # "\f -": a note with no caller of its own (cmn-cu89s)
     short = re.search(r"^\\h (.+?)\s*$", s, re.M).group(1)
     titles = re.findall(r"^\\(mt\d) (.+?)\s*$", s, re.M)
     last_mt1 = max(i for i, (k, _) in enumerate(titles) if k == "mt1")
@@ -110,14 +111,14 @@ def book_html(code, path):
             ch_notes.clear()
 
     text = "\\c 1" + s.split("\\c 1", 1)[1]
-    for m in re.finditer(r"\\(c|ms\d|d|qc|b|v|p|m|nb|pi1|q[123])(?:\s+|$)(.*?)(?=\\(?:c|ms\d|d|qc|b|v|p|m|nb|pi1|q[123])(?:\s|$)|\Z)", text, re.S):
+    for m in re.finditer(r"\\(c|ms\d|d|sp|qc|b|v|p|m|nb|pi1|q[123])(?:\s+|$)(.*?)(?=\\(?:c|ms\d|d|sp|qc|b|v|p|m|nb|pi1|q[123])(?:\s|$)|\Z)", text, re.S):
         mk, rest = m.group(1), m.group(2)
         if mk == "c":
             flush_notes(); close()
             n = int(rest.split()[0])
             anchor = f"{code}.{n}"; chapters.append((n, anchor))
             if code == "PSA":
-                body.append(f'<h3 class="ps" id="{anchor}">Psalm {n}</h3>')
+                body.append(f'<h3 class="ps" id="{anchor}">{langs.numbered(W("psalm"), n)}</h3>')
             elif code in SINGLE:
                 body.append(f'<span class="anchor" id="{anchor}"></span>')
             else:
@@ -128,6 +129,8 @@ def book_html(code, path):
             body.insert(len(body) - 1, ms) if body and body[-1].startswith('<h3 class="ps"') else body.append(ms)
             continue
         if mk == "d":
+            close(); body.append(f'<div class="d">{inline(rest).strip()}</div>'); continue
+        if mk == "sp":                    # a speaker heading (the Song of Solomon in some texts)
             close(); body.append(f'<div class="d">{inline(rest).strip()}</div>'); continue
         if mk == "qc":
             close(); body.append(f'<div class="qc">{inline(rest).strip()}</div>'); continue
@@ -171,21 +174,29 @@ def fetch_fonts(doc, fdir):
         got = json.loads(index.read_text())
     else:
         got = []
+        parts = langs.text_chunks(chars)                  # a CJK text: several subsets of each face, by unicode-range
         for fam, spec in FAMILIES.items():
-            q = urllib.parse.urlencode({"family": f"{fam}:{spec}", "text": chars})
-            req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})  # plain UA → TrueType
-            css = urllib.request.urlopen(req, timeout=30).read().decode()
-            for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
-                wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
-                st = re.search(r"font-style:\s*(\w+)", block).group(1)
-                url = re.search(r"url\((.*?)\)", block).group(1)
-                fn = f"asv-{fam.replace(' ', '')}-{wt}{'i' if st == 'italic' else ''}-{key}.ttf"
-                (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
-                got.append([fam, wt, st, fn])
-                print(f"  font {fam} {wt} {st}: {(fdir / fn).stat().st_size // 1024} KB")
+            for n, part in enumerate(parts):
+                q = urllib.parse.urlencode({"family": f"{fam}:{spec}", "text": part})
+                req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})  # plain UA → TrueType
+                try: css = urllib.request.urlopen(req, timeout=30).read().decode()
+                except urllib.error.HTTPError:
+                    if len(parts) == 1: raise
+                    continue                              # no glyph of this piece in this family
+                for block in re.findall(r"@font-face\s*{(.*?)}", css, re.S):
+                    wt = int(re.search(r"font-weight:\s*(\d+)", block).group(1))
+                    st = re.search(r"font-style:\s*(\w+)", block).group(1)
+                    url = re.search(r"url\((.*?)\)", block).group(1)
+                    fn = f"asv-{fam.replace(' ', '')}-{wt}{'i' if st == 'italic' else ''}{f'-{n}' if len(parts) > 1 else ''}-{key}.ttf"
+                    try: (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
+                    except urllib.error.HTTPError:
+                        if len(parts) == 1: raise
+                        continue
+                    got.append([fam, wt, st, fn] + ([langs.unicode_range(part)] if len(parts) > 1 else []))
+                    print(f"  font {fam} {wt} {st}: {(fdir / fn).stat().st_size // 1024} KB")
         index.write_text(json.dumps(got))
-    return "".join(f"@font-face {{ font-family: '{fam}'; font-weight: {wt}; font-style: {st}; "
-                   f"src: url('{(fdir / fn).as_uri()}') format('truetype'); }}\n" for fam, wt, st, fn in got)
+    return "".join(f"@font-face {{ font-family: '{g[0]}'; font-weight: {g[1]}; font-style: {g[2]}; "
+                   f"src: url('{(fdir / g[3]).as_uri()}') format('truetype');{f' unicode-range: {g[4]};' if len(g) > 4 else ''} }}\n" for g in got)
 
 # ---- the document -------------------------------------------------------------------------------------------------------
 CSS = r"""
