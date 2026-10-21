@@ -100,10 +100,11 @@ class Kit:
         """A picture panel without words, of height h."""
         return seg([], ref, bg=bg, art=art, h=h, **kw)
 
-    def pack(self, segs, prefix, start, end="", default_head=None, min_size=12.5, most=3, budget=1150, min_art=200):
+    def pack(self, segs, prefix, start, end="", default_head=None, min_size=12.5, most=3, budget=1150, min_art=200, lone=0.0):
         """Group the panels into pages greedily: a panel joins the page while every panel's words still fit at min_size
         or more, the page holds fewer than `most` panels and about `budget` characters; a head starts a new page once
-        the page holds a fair share of words. A lone short panel at the end joins the page before it when it fits."""
+        the page holds a fair share of words. A lone short panel at the end joins the page before it when it fits.
+        lone > 0 adds that cost to every page of a single panel, so the packing prefers pages of two or three."""
         from discourse import _sizes, _chars, _heights
         def fits(g):
             """Every panel's words at min_size or more, and every drawing tall enough to be a real picture."""
@@ -117,7 +118,7 @@ class Kit:
                 g = segs[i:j]; chars = sum(_chars(x) for x in g)
                 if best[i] == INF or (len(g) > 1 and (chars > budget or not fits(g))): continue
                 under = max(0.0, (budget * 0.8 - chars) / budget)
-                cost = best[i] + 1 + 3 * under * under + sum(0.25 for x in g[1:] if x["head"])
+                cost = best[i] + 1 + 3 * under * under + sum(0.25 for x in g[1:] if x["head"]) + (lone if len(g) == 1 else 0)
                 if cost < best[j]: best[j], cut[j] = cost, i
         groups, j = [], n
         while j > 0: groups.insert(0, segs[cut[j]:j]); j = cut[j]

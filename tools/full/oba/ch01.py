@@ -31,6 +31,6 @@ SEGS = [K.face([cp("1:1", to="concerning Edom:"), sg("1:1", frm="We have heard")
         K.drawn(gds("1:12-14"), lambda w, h: A.crossway(w, h, 107), "#2A1A3A"),
         K.drawn(gds("1:15-16"), lambda w, h: A.cup_mount(w, h, 108), "#3A0A10", head="The Day of Jehovah Is Near"),
         K.drawn(sgs("1:17-18"), lambda w, h: A.stubble(w, h, 109), "#1A0A0A"),
-        K.drawn(sgs("1:19-20"), lambda w, h: A.possess_map(w, h, lit=("ZION",)), "#0B1A2E", head="The Kingdom Shall Be Jehovah's", h=440),
+        K.drawn(sgs("1:19-20"), lambda w, h: A.possess_map(w, h, lit=("ZION",)), "#0B1A2E", head="The Kingdom Shall Be Jehovah's", h=380),
         K.drawn(sgs("1:21"), lambda w, h: A.kingdom(w, h, 110), "#2A2A5A")]
 PG.extend(K.pack(SEGS, "OBA-C01-D", PG.next(), end=fin("END OF OBADIAH · NEXT · JONAH")))

@@ -103,11 +103,11 @@ def possess_map(w, h, lit=()):
     o.append(f'<path d="M{f(jx)} {f(h * 0.12)} C {f(jx + 6)} {f(h * 0.3)} {f(jx - 6)} {f(h * 0.4)} {f(jx)} {f(h * 0.52)}" stroke="#8FD0E2" stroke-width="2.4" fill="none"></path>'
              f'<ellipse cx="{f(jx)}" cy="{f(h * 0.64)}" rx="{f(w * 0.025)}" ry="{f(h * 0.11)}" fill="#12385A" stroke="#8FD0E2" stroke-width="1.6"></ellipse>')
     pts = [("ZAREPHATH", 0.3, 0.1, "start"), ("SAMARIA", 0.38, 0.26, "end"), ("EPHRAIM", 0.4, 0.4, "end"), ("GILEAD", 0.72, 0.34, "start"), ("BENJAMIN", 0.42, 0.52, "end"),
-           ("ZION", 0.47, 0.62, "start"), ("PHILISTINES", 0.24, 0.72, "end"), ("THE SOUTH", 0.4, 0.88, "end"), ("MOUNT OF ESAU", 0.7, 0.84, "start")]
+           ("ZION", 0.47, 0.62, "start"), ("PHILISTINES", 0.24, 0.72, "end"), ("THE SOUTH", 0.4, 0.88, "end"), ("MOUNT OF ESAU", 0.62, 0.8, "start")]
     for name, x, y, an in pts:
         c = "#FFD23F" if name in lit else "#8FD0E2"
         o.append(node(w * x, h * y, "", color=c, r=5) + label(w * x + (12 if an == "start" else -12), h * y + 4, name, c, 10, anchor=an))
-    o += [route([(w * 0.42, h * 0.84), (w * 0.66, h * 0.82)], color="#FF8A6A"), route([(w * 0.44, h * 0.6), (w * 0.27, h * 0.7)], color="#FF8A6A"),
+    o += [route([(w * 0.42, h * 0.86), (w * 0.59, h * 0.81)], color="#FF8A6A"), route([(w * 0.44, h * 0.6), (w * 0.27, h * 0.7)], color="#FF8A6A"),
           route([(w * 0.44, h * 0.5), (w * 0.69, h * 0.36)], color="#FF8A6A"), route([(w * 0.37, h * 0.24), (w * 0.31, h * 0.13)], color="#FF8A6A"),
           label(w * 0.86, h * 0.12, "SEPHARAD →", "#FFD23F", 10)]
     return "".join(o)
