@@ -1,0 +1,21 @@
+{
+ "id": "zephaniah",
+ "order": 36,
+ "name": "Zephaniah",
+ "kanji": "ゼパニヤ書",
+ "thumb": "vol-zephaniah-",
+ "lede": "The thirty-sixth book of the Bible, in full: the word of Jehovah which came unto Zephaniah in the days of Josiah — the great day of Jehovah is near, a day of wrath, a day of darkness and gloominess; seek ye Jehovah, all ye meek of the earth; woe to the oppressing city; and sing, O daughter of Zion, for Jehovah thy God is in the midst of thee — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Great Day of Jehovah",
+   "range": "Zephaniah 1–3",
+   "blurb": "I will utterly consume all things from off the face of the ground; them that worship the host of heaven upon the housetops; hold thy peace, for the day of Jehovah is at hand; I will search Jerusalem with lamps; the great day of Jehovah is near, a day of darkness and gloominess, a day of the trumpet and alarm; seek ye Jehovah, all ye meek of the earth; Gaza forsaken, Moab as Sodom, Nineveh a desolation; woe to the oppressing city; and sing, O daughter of Zion — he will rejoice over thee with joy, he will joy over thee with singing.",
+   "prefixes": [
+    "Main.dc.html",
+    "ZEP-C01-"
+   ]
+  }
+ ]
+}

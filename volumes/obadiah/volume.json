@@ -1,0 +1,21 @@
+{
+ "id": "obadiah",
+ "order": 31,
+ "name": "Obadiah",
+ "kanji": "オバデヤ書",
+ "thumb": "vol-obadiah-",
+ "lede": "The thirty-first book of the Bible, in full: the vision of Obadiah concerning Edom — thou that dwellest in the clefts of the rock, though thou set thy nest among the stars; the day of thy brother's calamity; the day of Jehovah near upon all the nations; and saviours on mount Zion, and the kingdom shall be Jehovah's — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Clefts of the Rock",
+   "range": "Obadiah 1",
+   "blurb": "The vision of Obadiah: an ambassador sent among the nations against Edom; the pride of thy heart hath deceived thee, O thou that dwellest in the clefts of the rock — though thy nest be set among the stars, I will bring thee down from thence; the violence done to thy brother Jacob in the day of his calamity; as thou hast done, it shall be done unto thee; the house of Jacob a fire, the house of Esau stubble; and the kingdom shall be Jehovah's.",
+   "prefixes": [
+    "Main.dc.html",
+    "OBA-C01-"
+   ]
+  }
+ ]
+}

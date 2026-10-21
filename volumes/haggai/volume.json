@@ -1,0 +1,21 @@
+{
+ "id": "haggai",
+ "order": 37,
+ "name": "Haggai",
+ "kanji": "ハガイ書",
+ "thumb": "vol-haggai-",
+ "lede": "The thirty-seventh book of the Bible, in full: the word of Jehovah by Haggai the prophet in the second year of Darius — is it a time for you to dwell in your ceiled houses, while this house lieth waste? consider your ways; be strong, and work, for I am with you; the latter glory of this house shall be greater than the former; and Zerubbabel as a signet — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Consider Your Ways",
+   "range": "Haggai 1–2",
+   "blurb": "In the second year of Darius: this people say, it is not the time for Jehovah's house to be built — is it a time for you to dwell in your ceiled houses, while this house lieth waste? consider your ways: ye have sown much, and bring in little, wages into a bag with holes; go up to the mountain, and bring wood; Zerubbabel and Joshua and the remnant obeyed, and came and did work; be strong, all ye people of the land — I will shake all nations, and the latter glory of this house shall be greater than the former; holy flesh in the skirt of a garment; from this day will I bless you; and I will make thee as a signet.",
+   "prefixes": [
+    "Main.dc.html",
+    "HAG-C01-"
+   ]
+  }
+ ]
+}
