@@ -1717,6 +1717,174 @@
    "w": 760,
    "h": 1080,
    "title": "227 · I Am Their Inheritance"
+  },
+  "EZK-C17-00-Title.dc.html": {
+   "x": 0,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 17 · The Holy Oblation"
+  },
+  "EZK-C17-D-P01-TheHolyOblation.dc.html": {
+   "x": 840,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "228 · The Holy Oblation"
+  },
+  "EZK-C17-D-P02-WhatsoeverIsForThe.dc.html": {
+   "x": 1680,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "229 · Whatsoever Is for the Prince"
+  },
+  "EZK-C17-D-P03-TheOblationThatYeS.dc.html": {
+   "x": 2520,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "230 · The Oblation That Ye Shall Offer"
+  },
+  "EZK-C17-D-P04-InTheFirstMonth.dc.html": {
+   "x": 3360,
+   "y": 77200,
+   "w": 760,
+   "h": 1080,
+   "title": "231 · In the First Month"
+  },
+  "EZK-C17-D-P05-ThePassover.dc.html": {
+   "x": 0,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "232 · The Passover"
+  },
+  "EZK-C17-D-P06-OnTheSabbathItShal.dc.html": {
+   "x": 840,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "233 · On the Sabbath It Shall Be Opened"
+  },
+  "EZK-C17-D-P07-InTheAppointedFeas.dc.html": {
+   "x": 1680,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "234 · In the Appointed Feasts"
+  },
+  "EZK-C17-D-P08-MorningByMorning.dc.html": {
+   "x": 2520,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "235 · Morning by Morning"
+  },
+  "EZK-C17-D-P09-WhereThePriestsSha.dc.html": {
+   "x": 3360,
+   "y": 78400,
+   "w": 760,
+   "h": 1080,
+   "title": "236 · Where the Priests Shall Boil"
+  },
+  "EZK-C17-D-P10-InEveryCornerOfThe.dc.html": {
+   "x": 0,
+   "y": 79600,
+   "w": 760,
+   "h": 1080,
+   "title": "237 · In Every Corner of the Court"
+  },
+  "EZK-C18-00-Title.dc.html": {
+   "x": 0,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 18 · Jehovah Is There"
+  },
+  "EZK-C18-D-P01-WatersToSwimIn.dc.html": {
+   "x": 840,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "238 · Waters to Swim In"
+  },
+  "EZK-C18-D-P02-TheWatersShallBeHe.dc.html": {
+   "x": 1680,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "239 · The Waters Shall Be Healed"
+  },
+  "EZK-C18-D-P03-TheLeafThereofForH.dc.html": {
+   "x": 2520,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "240 · The Leaf Thereof for Healing"
+  },
+  "EZK-C18-D-P04-ThisShallBeTheBord.dc.html": {
+   "x": 3360,
+   "y": 81300,
+   "w": 760,
+   "h": 1080,
+   "title": "241 · This Shall Be the Border"
+  },
+  "EZK-C18-D-P05-TheStrangerThatSoj.dc.html": {
+   "x": 0,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "242 · The Stranger That Sojourneth"
+  },
+  "EZK-C18-D-P06-TheNamesOfTheTribe.dc.html": {
+   "x": 840,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "243 · The Names of the Tribes"
+  },
+  "EZK-C18-D-P07-TheHolyOblation.dc.html": {
+   "x": 1680,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "244 · The Holy Oblation"
+  },
+  "EZK-C18-D-P08-TheCityAndItsSubur.dc.html": {
+   "x": 2520,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "245 · The City and Its Suburbs"
+  },
+  "EZK-C18-D-P09-TheResidueShallBeF.dc.html": {
+   "x": 3360,
+   "y": 82500,
+   "w": 760,
+   "h": 1080,
+   "title": "246 · The Residue Shall Be for the Prince"
+  },
+  "EZK-C18-D-P10-TheRestOfTheTribes.dc.html": {
+   "x": 0,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "247 · The Rest of the Tribes"
+  },
+  "EZK-C18-D-P11-TheEgressesOfTheCi.dc.html": {
+   "x": 840,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "248 · The Egresses of the City"
+  },
+  "EZK-C18-D-P12-JehovahIsThere.dc.html": {
+   "x": 1680,
+   "y": 83700,
+   "w": 760,
+   "h": 1080,
+   "title": "249 · Jehovah Is There"
   }
  },
  "order": [
@@ -1963,7 +2131,31 @@
   "EZK-C16-D-P10-TheSonsOfZadok.dc.html",
   "EZK-C16-D-P11-LinenGarments.dc.html",
   "EZK-C16-D-P12-LinenGarments.dc.html",
-  "EZK-C16-D-P13-IAmTheirInheritanc.dc.html"
+  "EZK-C16-D-P13-IAmTheirInheritanc.dc.html",
+  "EZK-C17-00-Title.dc.html",
+  "EZK-C17-D-P01-TheHolyOblation.dc.html",
+  "EZK-C17-D-P02-WhatsoeverIsForThe.dc.html",
+  "EZK-C17-D-P03-TheOblationThatYeS.dc.html",
+  "EZK-C17-D-P04-InTheFirstMonth.dc.html",
+  "EZK-C17-D-P05-ThePassover.dc.html",
+  "EZK-C17-D-P06-OnTheSabbathItShal.dc.html",
+  "EZK-C17-D-P07-InTheAppointedFeas.dc.html",
+  "EZK-C17-D-P08-MorningByMorning.dc.html",
+  "EZK-C17-D-P09-WhereThePriestsSha.dc.html",
+  "EZK-C17-D-P10-InEveryCornerOfThe.dc.html",
+  "EZK-C18-00-Title.dc.html",
+  "EZK-C18-D-P01-WatersToSwimIn.dc.html",
+  "EZK-C18-D-P02-TheWatersShallBeHe.dc.html",
+  "EZK-C18-D-P03-TheLeafThereofForH.dc.html",
+  "EZK-C18-D-P04-ThisShallBeTheBord.dc.html",
+  "EZK-C18-D-P05-TheStrangerThatSoj.dc.html",
+  "EZK-C18-D-P06-TheNamesOfTheTribe.dc.html",
+  "EZK-C18-D-P07-TheHolyOblation.dc.html",
+  "EZK-C18-D-P08-TheCityAndItsSubur.dc.html",
+  "EZK-C18-D-P09-TheResidueShallBeF.dc.html",
+  "EZK-C18-D-P10-TheRestOfTheTribes.dc.html",
+  "EZK-C18-D-P11-TheEgressesOfTheCi.dc.html",
+  "EZK-C18-D-P12-JehovahIsThere.dc.html"
  ],
  "notes": {
   "Main": {
@@ -2084,6 +2276,20 @@
    "text": "Chapter 16 · The Glory Returns (Ezekiel 43–44)",
    "x": 0,
    "y": 72800
+  },
+  "chapter17": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 17 · The Holy Oblation (Ezekiel 45–46)",
+   "x": 0,
+   "y": 76900
+  },
+  "chapter18": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 18 · Jehovah Is There (Ezekiel 47–48)",
+   "x": 0,
+   "y": 81000
   }
  },
  "designSystems": [],

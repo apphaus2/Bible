@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1166 verses — 1166 full, 0 partial, 0 omitted.
+**So far:** 1273 verses — 1273 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Visions of God (Ezekiel 1–3)
 
@@ -95,6 +95,18 @@ Every verse is on the page in full.
 Every verse is on the page in full.
 
 ## Chapter 16 · The Glory Returns (Ezekiel 43–44)
+
+58 verses: 58 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 17 · The Holy Oblation (Ezekiel 45–46)
+
+49 verses: 49 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 18 · Jehovah Is There (Ezekiel 47–48)
 
 58 verses: 58 full, 0 partial, 0 omitted.
 
