@@ -1,5 +1,5 @@
 """Drawings for the Micah volume, on the minor prophets' kit (oba.minor), with 1 and 2 Kings' drawings where they fit
-(kg1.art.vine_fig, kg2.art.captives, siege_forts, assyria_map). Micah at a distance: a dark brown robe and headcloth,
+(kg1.art.vine_fig, kg2.art.captives, siege_forts, assyria_map). Micah at a distance: a dark brown tunic and a slate headcloth,
 grey-black beard (micah_fig)."""
 import sys, pathlib, math, random
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
@@ -12,7 +12,7 @@ import samuel1 as S1, samuel4 as S4, judges2 as JG2
 MICAH_C = "#4A3424"
 
 def micah_fig(p, x, y, s, flip=False, up=None):
-    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=MICAH_C, sw=3, flip=flip, up=up, extra=A.headcloth("#3A2A22") + GREY_BEARD.replace("#B8B2A6", "#5A544E"))
+    return mk.person(p, round(x), round(y), round(s, 3), body=SKIN, cloth=MICAH_C, sw=3, flip=flip, up=up, kind="Tunic", extra=A.headcloth("#2F3A4A") + GREY_BEARD.replace("#B8B2A6", "#5A544E"))
 
 def melting(w, h, seed):
     """The mountains melted as wax before the fire, the valleys cleft (God is not drawn: fire and storm on the heights)."""
@@ -119,6 +119,26 @@ def fold(p, w, h, seed):
     o.append(sheep_row(w * 0.06, w * 0.6, h * 0.86, 7, seed, s=min(0.6, h / 500)) + sheep_row(w * 0.66, w * 0.96, h * 0.82, 3, seed + 1, s=min(0.55, h / 520)))
     return "".join(o)
 
+def breaker(p, w, h, seed):
+    """The breaker is gone up before them: they have broken forth and passed on to the gate, and are gone out thereat; and
+    Jehovah at the head of them: a gate broken open in the wall, the people streaming out on the road toward the light
+    (their king and Jehovah are not drawn: the light goes before them)."""
+    o = [mk.defs(p, *ALL), sky(w, h, "#2A2A5A", "#FFD8A0"), halo(w * 0.86, h * 0.3, h * 0.7, "#FFF4C2", 0.55),
+         rays(w * 0.86, h * 0.3, 22, h * 0.12, max(w, h), "#FFF4C2", 0.22, 4), hills(w, h, h * 0.56, seed, color="#5A4A6A", amp=14),
+         ground(w, h, h * 0.6, "#8A7A6A", dy=0)]
+    gx = w * 0.2
+    o.append(walls(-10, w * 0.36, h * 0.94, h * 0.5, seed, color="#A8906A", towers=2, gate=False, houses=False))
+    o.append(f'<path d="M{f(gx - w * 0.06)} {f(h * 0.94)} L {f(gx - w * 0.06)} {f(h * 0.7)} Q {f(gx)} {f(h * 0.6)} {f(gx + w * 0.06)} {f(h * 0.7)} L {f(gx + w * 0.06)} {f(h * 0.94)} Z" fill="#FFE6A0" stroke="#0D0D0F" stroke-width="2.4"></path>'
+             f'<path d="M{f(gx + w * 0.06)} {f(h * 0.94)} L {f(gx + w * 0.13)} {f(h * 0.97)} L {f(gx + w * 0.12)} {f(h * 0.74)} L {f(gx + w * 0.06)} {f(h * 0.7)} Z" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></path>')
+    o.append(route([(gx + w * 0.06, h * 0.9), (w * 0.6, h * 0.76), (w * 0.86, h * 0.62)], color="#FFE680", sw=3, dash="2 8", arrow=False))
+    r = random.Random(seed)
+    for i in range(7):
+        t = (i + 0.6) / 7
+        x = gx + w * 0.1 + (w * 0.66 - gx) * t; b = h * (0.96 - 0.22 * t); top = b - h * (0.36 - 0.18 * t)
+        o.append(figure(p, x, b, top, r.choice(["#6A4A3A", "#3A4A6A", "#5A6A3A", "#7A3A3A", "#4A3A5A"]), "woman" if i % 3 == 1 else "man"))
+    o.append(sheep_row(w * 0.42, w * 0.7, h * 0.97, 4, seed, s=min(0.5, h / 560)))
+    return "".join(o)
+
 def caldron(w, h, seed):
     """Ye heads of Jacob, who chop them in pieces as for the pot: the empty judgment seats in a dark hall, a caldron
     steaming on its fire (nothing in it drawn)."""
@@ -214,8 +234,10 @@ def thresh(w, h, seed):
         y = h * (0.66 if i % 2 else 0.98)
         o.append(f'<path d="M{f(x - 16)} {f(y)} L {f(x - 6)} {f(y - 40)} L {f(x + 6)} {f(y - 40)} L {f(x + 16)} {f(y)} Z" fill="#E8C060" stroke="#0D0D0F" stroke-width="1.6"></path>')
     k = min(0.9, h / 320)
-    o.append(cow(w * 0.5, h * 0.86, k, color="#7A5A3A", patch="#5A3A22"))
-    o.append(f'<path d="M{f(w * 0.5 + 64 * k)} {f(h * 0.86 - 96 * k)} l {f(14 * k)} {f(-20 * k)} M{f(w * 0.5 + 54 * k)} {f(h * 0.86 - 96 * k)} l {f(4 * k)} {f(-22 * k)}" stroke="#5A6A7A" stroke-width="{f(6 * k)}" stroke-linecap="round"></path>')
+    cx = w * 0.34
+    o.append(cow(cx, h * 0.86, k, color="#7A5A3A", patch="#5A3A22"))
+    o.append(f'<path d="M{f(cx + 64 * k)} {f(h * 0.86 - 96 * k)} l {f(14 * k)} {f(-20 * k)} M{f(cx + 54 * k)} {f(h * 0.86 - 96 * k)} l {f(4 * k)} {f(-22 * k)}" stroke="#5A6A7A" stroke-width="{f(6 * k)}" stroke-linecap="round"></path>'
+             + "".join(f'<path d="M{f(cx + dx * k)} {f(h * 0.86)} l {f(-5 * k)} {f(-12 * k)} l {f(10 * k)} 0 Z" fill="#C8963E" stroke="#0D0D0F" stroke-width="1.2"></path>' for dx in (-74, -58, 44, 60)))
     return "".join(o)
 
 # ---- Micah 5–7 ---------------------------------------------------------------------------------------------------------
@@ -232,14 +254,14 @@ def bethlehem(w, h, seed):
     return "".join(o)
 
 def shepherd_ruler(p, w, h, seed):
-    """He shall stand, and shall feed his flock in the strength of Jehovah: a shepherd standing with his staff over the
-    flock in a broad light (no face)."""
-    from genesis.art3 import STAFF, HOLD_STAFF
-    o = [sky(w, h, "#3A4A8A", "#FFE6A0"), halo(w * 0.5, h * 0.34, h * 0.6, "#FFF4C2", 0.5), hills(w, h, h * 0.62, seed, color="#6A8A5A", amp=14),
-         ground(w, h, h * 0.68, "#9CAB6A", dy=0), mk.defs(p, *ALL)]
-    b = h * 0.92
-    o.append(mk.person(p, round(w * 0.5), round(b), round(fit(b, h * 0.3), 3), body="#3A2A22", cloth="#E8E2D6", kind="Tunic", sw=3, up=HOLD_STAFF, extra=STAFF))
-    o.append(sheep_row(w * 0.06, w * 0.4, h * 0.94, 4, seed, s=min(0.55, h / 520)) + sheep_row(w * 0.6, w * 0.96, h * 0.94, 4, seed + 1, s=min(0.55, h / 520)))
+    """He shall stand, and shall feed his flock in the strength of Jehovah: the flock feeding in a broad light, a shepherd's
+    staff planted upright among them (the ruler himself is not drawn)."""
+    o = [sky(w, h, "#3A4A8A", "#FFE6A0"), halo(w * 0.5, h * 0.34, h * 0.6, "#FFF4C2", 0.5), rays(w * 0.5, h * 0.34, 24, h * 0.1, max(w, h), "#FFF4C2", 0.2, 4),
+         hills(w, h, h * 0.62, seed, color="#6A8A5A", amp=14), ground(w, h, h * 0.68, "#9CAB6A", dy=0)]
+    x, b = w * 0.5, h * 0.94
+    o.append(f'<path d="M{f(x)} {f(b)} L {f(x)} {f(h * 0.42)} C {f(x)} {f(h * 0.34)} {f(x + h * 0.08)} {f(h * 0.34)} {f(x + h * 0.08)} {f(h * 0.42)}" stroke="#0D0D0F" stroke-width="9" fill="none" stroke-linecap="round"></path>'
+             f'<path d="M{f(x)} {f(b)} L {f(x)} {f(h * 0.42)} C {f(x)} {f(h * 0.34)} {f(x + h * 0.08)} {f(h * 0.34)} {f(x + h * 0.08)} {f(h * 0.42)}" stroke="#8A6A3A" stroke-width="5" fill="none" stroke-linecap="round"></path>')
+    o.append(sheep_row(w * 0.04, w * 0.44, h * 0.94, 5, seed, s=min(0.6, h / 480)) + sheep_row(w * 0.56, w * 0.96, h * 0.92, 5, seed + 1, s=min(0.6, h / 480)))
     return "".join(o)
 
 def dew_lion(w, h, seed):
@@ -251,25 +273,44 @@ def dew_lion(w, h, seed):
         x = r.uniform(0, w * 0.48); y = r.uniform(h * 0.64, h)
         o.append(f'<path d="M{f(x)} {f(y)} l -3 -14 M{f(x)} {f(y)} l 4 -12" stroke="#2E6B3A" stroke-width="2"></path><circle cx="{f(x - 3)}" cy="{f(y - 14)}" r="2.4" fill="#E8F6FA" stroke="#8FD0E2" stroke-width="0.8"></circle>')
     o.append(rain(w * 0.48, h * 0.6, seed, n=20, color="#E8F6FA", op=0.6))
-    o.append(f'<path d="M{f(w * 0.5)} -10 L {f(w * 0.5)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="3"></path>')
     k = min(0.9, h / 300)
     o.append(sheep_row(w * 0.56, w * 0.98, h * 0.98, 4, seed, s=k * 0.6))
     o.append(JG2.lion(w * 0.74, h * 0.8, k * 0.8))
     return "".join(o)
 
 def cut_off(w, h, seed):
-    """I will cut off thy horses and destroy thy chariots, throw down thy strongholds, cut off thy graven images and thy
-    pillars, and pluck up thine Asherim: an overturned chariot, a broken pillar, a felled pole, a thrown-down tower."""
-    o = [sky(w, h, "#5A3A3A", "#D8A07A"), ground(w, h, h * 0.62, "#8A6A4A", dy=0), ruin(w * 0.6, w * 0.98, h * 0.64, h * 0.3, seed)]
-    k = min(0.9, h / 300)
-    for i, (x, y, rot) in enumerate(((0.16, 0.9, 70), (0.3, 0.94, 20))):           # broken chariot wheels and the pole
+    """I will cut off thy horses and destroy thy chariots, and throw down all thy strongholds: an overturned chariot, its
+    wheels broken, and a thrown-down fortress behind."""
+    o = [sky(w, h, "#5A3A3A", "#D8A07A"), ground(w, h, h * 0.62, "#8A6A4A", dy=0), ruin(w * 0.46, w * 0.98, h * 0.64, h * 0.34, seed)]
+    k = min(1.2, h / 220)
+    for i, (x, y, rot) in enumerate(((0.16, 0.78, 70), (0.32, 0.84, 20))):           # broken chariot wheels and the pole
         cx, cy, r = w * x, h * y, 34 * k
         o.append(f'<g transform="rotate({rot} {f(cx)} {f(cy)})"><circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="none" stroke="#5A3A1E" stroke-width="{f(6 * k)}"></circle>'
                  + "".join(f'<path d="M{f(cx)} {f(cy)} L {f(cx + r * math.cos(a * 1.05))} {f(cy + r * math.sin(a * 1.05))}" stroke="#5A3A1E" stroke-width="{f(3 * k)}"></path>' for a in range(5))
                  + f'<path d="M{f(cx + r * 0.7)} {f(cy - r * 0.7)} L {f(cx + r)} {f(cy)}" stroke="#F3E8C8" stroke-width="{f(7 * k)}"></path></g>')
-    o.append(f'<path d="M{f(w * 0.44)} {f(h * 0.96)} L {f(w * 0.44)} {f(h * 0.62)} L {f(w * 0.5)} {f(h * 0.58)} L {f(w * 0.5)} {f(h * 0.96)} Z" fill="#B8A890" stroke="#0D0D0F" stroke-width="2"></path>'
-             f'<path d="M{f(w * 0.5)} {f(h * 0.94)} L {f(w * 0.62)} {f(h * 0.98)} L {f(w * 0.63)} {f(h * 0.94)} L {f(w * 0.51)} {f(h * 0.9)} Z" fill="#B8A890" stroke="#0D0D0F" stroke-width="2"></path>'
-             f'<path d="M{f(w * 0.04)} {f(h * 0.98)} L {f(w * 0.3)} {f(h * 0.92)}" stroke="#6A4A2A" stroke-width="10" stroke-linecap="round"></path>')
+    o.append(f'<path d="M{f(w * 0.04)} {f(h * 0.98)} L {f(w * 0.3)} {f(h * 0.9)}" stroke="#6A4A2A" stroke-width="10" stroke-linecap="round"></path>'
+             f'<path d="M{f(w * 0.22)} {f(h * 0.78)} L {f(w * 0.4)} {f(h * 0.72)} L {f(w * 0.42)} {f(h * 0.8)} L {f(w * 0.26)} {f(h * 0.86)} Z" fill="#B8863E" stroke="#0D0D0F" stroke-width="2"></path>')
+    return "".join(o)
+
+def idols_down(w, h, seed):
+    """I will cut off witchcrafts, thy graven images and thy pillars, and pluck up thine Asherim, and destroy thy cities:
+    a broken pillar, a toppled image, a felled Asherah pole, an empty city on the hill under a red sky."""
+    o = [sky(w, h, "#3A1A1A", "#C8704A"), ruin(w * 0.56, w * 0.98, h * 0.6, h * 0.22, seed + 3), ground(w, h, h * 0.62, "#6A4A3A", dy=0)]
+    k = min(1.3, h / 240)
+    x, b = w * 0.18, h * 0.94                               # a standing pillar snapped
+    o.append(f'<path d="M{f(x - 16 * k)} {f(b)} L {f(x - 16 * k)} {f(b - 70 * k)} L {f(x - 4 * k)} {f(b - 80 * k)} L {f(x + 6 * k)} {f(b - 66 * k)} L {f(x + 16 * k)} {f(b - 74 * k)} L {f(x + 16 * k)} {f(b)} Z" fill="#A8A098" stroke="#0D0D0F" stroke-width="2.2"></path>'
+             f'<path d="M{f(x + 30 * k)} {f(b - 4 * k)} L {f(x + 96 * k)} {f(b - 18 * k)} L {f(x + 100 * k)} {f(b - 2 * k)} L {f(x + 34 * k)} {f(b + 10 * k)} Z" fill="#A8A098" stroke="#0D0D0F" stroke-width="2.2"></path>')
+    x = w * 0.46                                            # a graven image fallen on its face, broken
+    o.append(f'<rect x="{f(x - 70 * k)}" y="{f(b - 16 * k)}" width="{f(30 * k)}" height="{f(16 * k)}" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<g transform="translate({f(x)} {f(b - 8 * k)}) rotate(84) scale({f(k)})"><path d="M-12 0 L -12 -54 L -6 -66 L 6 -66 L 12 -54 L 12 0 Z" fill="#C8A040" stroke="#0D0D0F" stroke-width="2"></path>'
+             '<path d="M-12 -20 L 12 -20 M-12 -40 L 12 -40" stroke="#8A6A1A" stroke-width="2"></path></g>'
+             f'<path d="M{f(x + 40 * k)} {f(b)} l {f(10 * k)} {f(-16 * k)} l {f(12 * k)} {f(4 * k)} l {f(-2 * k)} {f(12 * k)} Z" fill="#C8A040" stroke="#0D0D0F" stroke-width="1.6"></path>'
+             f'<path d="M{f(x - 70 * k)} {f(b - 4 * k)} l {f(14 * k)} {f(-6 * k)} l {f(6 * k)} {f(8 * k)} Z" fill="#C8A040" stroke="#0D0D0F" stroke-width="1.4"></path>')
+    x = w * 0.7                                             # an Asherah pole hewn down, the stump left
+    o.append(f'<rect x="{f(x - 7 * k)}" y="{f(b - 20 * k)}" width="{f(14 * k)}" height="{f(20 * k)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(x + 10 * k)} {f(b - 6 * k)} L {f(x + 160 * k)} {f(b - 34 * k)}" stroke="#0D0D0F" stroke-width="{f(13 * k)}" stroke-linecap="round"></path>'
+             f'<path d="M{f(x + 10 * k)} {f(b - 6 * k)} L {f(x + 160 * k)} {f(b - 34 * k)}" stroke="#7A5A32" stroke-width="{f(9 * k)}" stroke-linecap="round"></path>')
+    o.append(smokes([w * 0.66, w * 0.86], h * 0.6, seed, k=max(0.5, h / 400), color="#2A1A1E", op=0.5, n=6))
     return "".join(o)
 
 def mountains_hear(w, h, seed):
@@ -323,7 +364,7 @@ def balances(w, h, seed):
 
 def futile(w, h, seed):
     """Thou shalt sow, but shalt not reap; tread the olives, but not anoint thee; the vintage, but not drink: a sown field
-    gone to dust, an olive press dry, an empty winepress — three cells."""
+    gone to dust, an olive press dry, an empty winepress — three cells, each with its label."""
     o = [sky(w, h, "#C8A880", "#F3E8C8")]
     cw = w / 3; k = min(cw / 220, h / 240); g = h * 0.42
     for i in range(3):
@@ -343,7 +384,30 @@ def futile(w, h, seed):
                      + f'<rect x="{f(cw * 0.22)}" y="{f(h * 0.83)}" width="{f(cw * 0.56)}" height="{f(h * 0.08)}" fill="#5A4A3A"></rect>'
                      + label(cw / 2, h * 0.2, "VINTAGE · NO WINE", "#5A3A22", 10))
         o.append('</g>')
-        if i: o.append(f'<path d="M{f(x0)} -10 L {f(x0)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="3"></path>')
+        if i: o.append(f'<path d="M{f(x0)} {f(h * 0.12)} L {f(x0)} {f(h + 10)}" stroke="#0D0D0F" stroke-width="3"></path>')
+    return "".join(o)
+
+def want(w, h, seed):
+    """Therefore I have smitten thee with a grievous wound: thou shalt eat, but not be satisfied; that which thou savest
+    will I give up to the sword: an emptied house, the bowls and the bread-basket bare, the storage jar overturned, a
+    sword hung by the door."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A4030"></rect>',
+         f'<rect x="{f(w * 0.62)}" y="{f(h * 0.12)}" width="{f(w * 0.2)}" height="{f(h * 0.76)}" fill="#C8A878" stroke="#0D0D0F" stroke-width="2.4"></rect>',
+         f'<rect x="{f(w * 0.65)}" y="{f(h * 0.18)}" width="{f(w * 0.14)}" height="{f(h * 0.7)}" fill="#E8D0A0"></rect>',
+         halo(w * 0.72, h * 0.5, h * 0.5, "#FFE6A0", 0.25),
+         f'<rect x="-10" y="{f(h * 0.88)}" width="{f(w + 20)}" height="{f(h * 0.2)}" fill="#3A2A1E" stroke="#0D0D0F" stroke-width="2"></rect>']
+    k = min(1.3, h / 230)
+    tx, ty = w * 0.3, h * 0.88                              # the low table with empty bowls
+    o.append(f'<rect x="{f(tx - 110 * k)}" y="{f(ty - 40 * k)}" width="{f(220 * k)}" height="{f(10 * k)}" fill="#8A5A30" stroke="#0D0D0F" stroke-width="2"></rect>'
+             f'<path d="M{f(tx - 96 * k)} {f(ty - 30 * k)} L {f(tx - 96 * k)} {f(ty)} M{f(tx + 96 * k)} {f(ty - 30 * k)} L {f(tx + 96 * k)} {f(ty)}" stroke="#5A3A1E" stroke-width="{f(7 * k)}"></path>')
+    for dx in (-60, 0, 60):
+        o.append(f'<path d="M{f(tx + (dx - 24) * k)} {f(ty - 40 * k)} C {f(tx + (dx - 20) * k)} {f(ty - 58 * k)} {f(tx + (dx + 20) * k)} {f(ty - 58 * k)} {f(tx + (dx + 24) * k)} {f(ty - 40 * k)} Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.8"></path>'
+                 f'<ellipse cx="{f(tx + dx * k)}" cy="{f(ty - 54 * k)}" rx="{f(19 * k)}" ry="{f(4 * k)}" fill="#3A1A10"></ellipse>')
+    jx, jy = w * 0.56, h * 0.86                             # the storage jar overturned, empty
+    o.append(f'<g transform="translate({f(jx)} {f(jy)}) rotate(-80) scale({f(k)})"><path d="M-20 0 C -36 -30 -26 -70 -10 -80 L -10 -92 L 10 -92 L 10 -80 C 26 -70 36 -30 20 0 Z" fill="#9A5A2E" stroke="#0D0D0F" stroke-width="2"></path></g>')
+    sx, sy = w * 0.9, h * 0.3                               # the sword on its peg by the door
+    o.append(f'<g transform="translate({f(sx)} {f(sy)}) rotate(8) scale({f(k)})"><path d="M-3 0 L -3 120 L 0 132 L 3 120 L 3 0 Z" fill="#C8C8D0" stroke="#0D0D0F" stroke-width="1.8"></path>'
+             '<rect x="-14" y="-4" width="28" height="7" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="1.6"></rect><rect x="-4" y="-26" width="8" height="22" fill="#4A2A1A" stroke="#0D0D0F" stroke-width="1.6"></rect></g>')
     return "".join(o)
 
 def gleaned(w, h, seed):
@@ -382,22 +446,25 @@ def builders(p, w, h, seed):
 
 def carmel(p, w, h, seed):
     """Feed thy people with thy rod, the flock of thy heritage, which dwell solitarily in the forest in the midst of
-    Carmel: a flock in a forest glade, a shepherd's rod raised."""
-    from genesis.art3 import STAFF, HOLD_STAFF
-    o = [vista(w, h, seed, tone="day", hills_n=2, horizon=0.56, trees=6, tree_kind="round", sheep=6), mk.defs(p, *ALL)]
-    b = h * 0.92
-    o.append(mk.person(p, round(w * 0.5), round(b), round(fit(b, h * 0.42), 3), body="#3A2A22", cloth="#6A5A3A", kind="Tunic", sw=3, up=HOLD_STAFF, extra=STAFF))
+    Carmel: a flock in a forest glade on the heights, a shepherd's rod standing among them (no shepherd drawn: the prayer
+    is to Jehovah)."""
+    o = [vista(w, h, seed, tone="day", hills_n=2, horizon=0.56, trees=6, tree_kind="round", sheep=7)]
+    x, b = w * 0.46, h * 0.99
+    d = f"M{f(x)} {f(b)} L {f(x)} {f(h * 0.62)} C {f(x)} {f(h * 0.55)} {f(x + h * 0.07)} {f(h * 0.55)} {f(x + h * 0.07)} {f(h * 0.62)}"
+    o.append(f'<path d="{d}" stroke="#0D0D0F" stroke-width="9" fill="none" stroke-linecap="round"></path><path d="{d}" stroke="#8A6A3A" stroke-width="5" fill="none" stroke-linecap="round"></path>')
     return "".join(o)
 
 def nations_bow(w, h, seed):
     """The nations shall see and be ashamed; they shall lay their hand upon their mouth; they shall lick the dust like a
-    serpent: kings bowed to the ground before a great light."""
+    serpent: kings in their robes and crowns bowed to the ground before a great light."""
     o = [sky(w, h, "#2A1A3A", "#FFC890"), halo(w * 0.5, h * 0.18, h * 0.6, "#FFF4C2", 0.6), rays(w * 0.5, h * 0.18, 30, h * 0.1, max(w, h), "#FFF4C2", 0.25, 4),
-         ground(w, h, h * 0.66, "#8A6A5A", dy=0)]
-    for i in range(6):
-        x = w * (0.1 + i * 0.16); c = ["#6A1A5A", "#1F5FAD", "#2E6B3A", "#B5652E", "#7A1A2A", "#3A3A5A"][i]
-        o.append(E.kneel(x, h * 0.94, fit(h * 0.94, h * 0.62) * 0.8, color=c, flip=i >= 3)
-                 + f'<path d="M{f(x - 8)} {f(h * 0.94 - 110 * fit(h * 0.94, h * 0.62) * 0.8)} l 4 -8 l 4 6 l 4 -6 l 4 8 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1"></path>')
+         ground(w, h, h * 0.62, "#8A6A5A", dy=0)]
+    ks = min(1.1, h * 0.34 / 130)
+    for i in range(5):
+        x = w * (0.1 + i * 0.2); c = ["#6A1A5A", "#1F5FAD", "#2E6B3A", "#B5652E", "#7A1A2A"][i]
+        fl = i >= 3; sx = -1 if fl else 1; b = h * (0.94 if i % 2 == 0 else 0.86)
+        o.append(E.kneel(x, b, ks, color=c, skin=SKIN, flip=fl)
+                 + f'<g transform="translate({f(x + sx * 32 * ks)} {f(b - 124 * ks)}) scale({f(ks)})"><path d="M-9 4 L -10 -10 L -4 -4 L 0 -13 L 4 -4 L 10 -10 L 9 4 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.6"></path></g>')
     return "".join(o)
 
 def depths(w, h, seed):

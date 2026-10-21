@@ -73,12 +73,12 @@
    "h": 1080,
    "title": "7 · Ye Heads of Jacob"
   },
-  "MIC-C01-F-P02-YeHeadsOfJacob.dc.html": {
+  "MIC-C01-F-P02-FullOfPowerByTheSp.dc.html": {
    "x": 2520,
    "y": 3200,
    "w": 760,
    "h": 1080,
-   "title": "8 · Ye Heads of Jacob"
+   "title": "8 · Full of Power by the Spirit of Jehovah"
   },
   "MIC-C01-F-P03-FullOfPowerByTheSp.dc.html": {
    "x": 3360,
@@ -143,12 +143,12 @@
    "h": 1080,
    "title": "16 · Jehovah's Controversy"
   },
-  "MIC-C02-E-P02-WhatDothJehovahReq.dc.html": {
+  "MIC-C02-E-P02-JehovahSControvers.dc.html": {
    "x": 0,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "17 · What Doth Jehovah Require of Thee?"
+   "title": "17 · Jehovah's Controversy"
   },
   "MIC-C02-E-P03-WhatDothJehovahReq.dc.html": {
    "x": 840,
@@ -157,33 +157,40 @@
    "h": 1080,
    "title": "18 · What Doth Jehovah Require of Thee?"
   },
-  "MIC-C02-F-P01-WoeIsMe.dc.html": {
+  "MIC-C02-E-P04-WhatDothJehovahReq.dc.html": {
    "x": 1680,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "19 · Woe Is Me"
+   "title": "19 · What Doth Jehovah Require of Thee?"
   },
-  "MIC-C02-F-P02-IWillLookUntoJehov.dc.html": {
+  "MIC-C02-F-P01-WoeIsMe.dc.html": {
    "x": 2520,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "20 · I Will Look unto Jehovah"
+   "title": "20 · Woe Is Me"
   },
-  "MIC-C02-F-P03-IWillLookUntoJehov.dc.html": {
+  "MIC-C02-F-P02-IWillLookUntoJehov.dc.html": {
    "x": 3360,
    "y": 7300,
    "w": 760,
    "h": 1080,
    "title": "21 · I Will Look unto Jehovah"
   },
-  "MIC-C02-F-P04-WhoIsAGodLikeUntoT.dc.html": {
+  "MIC-C02-F-P03-IWillLookUntoJehov.dc.html": {
    "x": 0,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "22 · Who Is a God like unto Thee?"
+   "title": "22 · I Will Look unto Jehovah"
+  },
+  "MIC-C02-F-P04-WhoIsAGodLikeUntoT.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Who Is a God like unto Thee?"
   }
  },
  "order": [
@@ -196,7 +203,7 @@
   "MIC-C01-E-P02-WoeToThemThatDevis.dc.html",
   "MIC-C01-E-P03-TheBreakerIsGoneUp.dc.html",
   "MIC-C01-F-P01-YeHeadsOfJacob.dc.html",
-  "MIC-C01-F-P02-YeHeadsOfJacob.dc.html",
+  "MIC-C01-F-P02-FullOfPowerByTheSp.dc.html",
   "MIC-C01-F-P03-FullOfPowerByTheSp.dc.html",
   "MIC-C01-G-P01-TheMountainOfJehov.dc.html",
   "MIC-C01-G-P02-UnderHisVineAndUnd.dc.html",
@@ -206,8 +213,9 @@
   "MIC-C02-D-P02-BethLehemEphrathah.dc.html",
   "MIC-C02-D-P03-BethLehemEphrathah.dc.html",
   "MIC-C02-E-P01-JehovahSControvers.dc.html",
-  "MIC-C02-E-P02-WhatDothJehovahReq.dc.html",
+  "MIC-C02-E-P02-JehovahSControvers.dc.html",
   "MIC-C02-E-P03-WhatDothJehovahReq.dc.html",
+  "MIC-C02-E-P04-WhatDothJehovahReq.dc.html",
   "MIC-C02-F-P01-WoeIsMe.dc.html",
   "MIC-C02-F-P02-IWillLookUntoJehov.dc.html",
   "MIC-C02-F-P03-IWillLookUntoJehov.dc.html",
