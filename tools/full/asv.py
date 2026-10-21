@@ -14,7 +14,7 @@ Other languages: with BIBLE_LANG=es (any tools/lang/<code>.json) every call retu
 public-domain text instead. The plans still name their cuts in ASV words, so a cut is found in the ASV verse and mapped onto
 the translated verse by its share of the letters, moved to the nearest punctuation or word break (the same share always
 lands on the same break, so a verse cut in two pieces still meets in the middle)."""
-import os, re, math, difflib, pathlib
+import os, re, math, difflib, pathlib, unicodedata
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 import sys; sys.path.insert(0, str(ROOT / "tools" / "lang"))
 import langs
@@ -101,6 +101,7 @@ def _kind(t, i):
     if ch and ch in ",:，：" and (nxt.isupper() or nxt in "¿¡«「『“"): return "speech"
     if ch and ch in ".?!。？！": return "end"
     if ch and ch in ",;:，、；：": return "pause"
+    if UNSPACED and nxt and nxt in "「『": return "speech"          # 刻着『归耶和华为圣』: words quoted, no stop before them
     return None
 
 def _breaks(t, lo=0):
@@ -177,6 +178,11 @@ def tighten(page):
     return head + sep + re.sub(r">([^<>]+)<", lambda m: ">" + re.sub(r"(?<=[，。；：！？、」』）》〕])[ 　]+(?!神)", "", m.group(1)) + "<", body)
 
 def _letters(t): return sum(1 for ch in t if not ch.isspace())
+
+def width(t):
+    """A text's length for layout, in average Latin letters: a CJK character (a full em, where a letter of the manga's
+    faces averages about 0.64) counts 1.6, so a roll cell of Chinese is sized for what it takes."""
+    return sum(1.6 if unicodedata.east_asian_width(ch) in "WF" else 1 for ch in t)
 
 MISSING = []                         # ASV verses a translation's file lacks (see align)
 
