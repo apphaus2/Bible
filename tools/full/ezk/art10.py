@@ -78,7 +78,7 @@ def ship_plate(w, h):
     oaks of Bashan, benches of ivory inlaid in boxwood, a sail of fine linen with broidered work from Egypt, an awning of blue
     and purple from the isles of Elishah."""
     o = [bp(w, h), title_bar(w, "THE SHIP OF TYRE · PERFECT IN BEAUTY")]
-    k = min(w / 520, h / 200)
+    k = min(w / 520, (h * 0.86 - 36) / 160)                # the mast clear of the title above
     cx, base = w * 0.3, h * 0.86
     o.append(galley(cx, base - 10 * k, k))
     tx = w * 0.58
@@ -116,7 +116,8 @@ def trade_map(w, h, hi=None):
     for nm, (x, y) in TRADE.items():
         on = hi is None or nm in hi
         o.append(route([(w * x, h * y), T], color="#FFD23F" if on else "#2A4A6A", sw=1.4, dash="4 5", arrow=False))
-        o.append(node(w * x, h * y, nm, "#FFD23F" if on else "#4A7A9A", r=4, dy=-9, size=8 if on else 7))
+        an = "end" if x > 0.86 else "start" if x < 0.08 else "middle"          # labels at the edges kept inside the panel
+        o.append(node(w * x, h * y, nm, "#FFD23F" if on else "#4A7A9A", r=4, dy=-9, size=8 if on else 7, anchor=an))
     o.append(node(*T, "TYRE", "#D7261E", r=7, dy=-13, size=11))
     return "".join(o)
 

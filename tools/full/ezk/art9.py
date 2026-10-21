@@ -76,9 +76,10 @@ def escaped(p, w, h, seed):
     o.append(smoke(w * 0.36, h * 0.86, 3, seed, color="#D8C8A0", op=0.5, k=0.5))
     return "".join(o)
 
-NATIONS = {"AMMON · RABBAH": (0.7, 0.36), "MOAB": (0.68, 0.6), "BETH-JESHIMOTH": (0.58, 0.5), "BAAL-MEON": (0.66, 0.52), "KIRIATHAIM": (0.7, 0.66),
-           "EDOM · TEMAN": (0.6, 0.86), "DEDAN": (0.86, 0.94), "THE PHILISTINES": (0.16, 0.58), "THE CHERETHITES": (0.12, 0.7), "TYRE": (0.24, 0.12),
-           "SIDON": (0.28, 0.04), "THE CHILDREN OF THE EAST": (0.92, 0.3)}
+NATIONS = {"AMMON · RABBAH": (0.74, 0.3, -10, "middle"), "MOAB": (0.68, 0.6, -10, "middle"), "BETH-JESHIMOTH": (0.55, 0.4, -10, "start"),
+           "BAAL-MEON": (0.66, 0.5, -10, "start"), "KIRIATHAIM": (0.7, 0.68, 16, "middle"), "EDOM · TEMAN": (0.6, 0.84, -10, "middle"),
+           "DEDAN": (0.8, 0.8, -10, "middle"), "THE PHILISTINES": (0.16, 0.58, -10, "start"), "THE CHERETHITES": (0.12, 0.7, -10, "start"),
+           "TYRE": (0.24, 0.14, -10, "middle"), "SIDON": (0.28, 0.06, 14, "start"), "THE CHILDREN OF THE EAST": (0.9, 0.24, -10, "end")}
 def nations_map(w, h, hi=()):
     """The land of Israel among the nations round about as a technical map: the Salt Sea and the Jordan, Jerusalem, and the
     peoples about her; those in hi lit gold."""
@@ -87,9 +88,9 @@ def nations_map(w, h, hi=()):
     o.append(f'<path d="M{f(w * 0.5)} {f(h * 0.08)} C {f(w * 0.48)} {f(h * 0.2)} {f(w * 0.52)} {f(h * 0.32)} {f(w * 0.5)} {f(h * 0.44)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>'
              f'<ellipse cx="{f(w * 0.5)}" cy="{f(h * 0.56)}" rx="{f(w * 0.03)}" ry="{f(h * 0.12)}" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="2"></ellipse>')
     o.append(node(w * 0.4, h * 0.48, "JERUSALEM", "#D7261E", r=6, dy=-12, size=9))
-    for nm, (x, y) in NATIONS.items():
+    for nm, (x, y, dy, an) in NATIONS.items():                # labels placed so none runs off the panel or into another
         on = any(nm.startswith(k) for k in hi)
-        o.append(node(w * x, h * y, nm, "#FFD23F" if on else "#4A7A9A", r=5 if on else 3, dy=-10, size=9 if on else 7))
+        o.append(node(w * x, h * y, nm, "#FFD23F" if on else "#4A7A9A", r=5 if on else 3, dy=dy, size=9 if on else 7, anchor=an))
     return "".join(o)
 
 def camels_rabbah(w, h, seed):

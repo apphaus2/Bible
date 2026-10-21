@@ -241,7 +241,7 @@ def creature_plan(w, h):
     """A plate of the living creatures: four about one centre, each with four faces — a man before, a lion on the right,
     an ox on the left, an eagle — the wings of each joined to the next, the wheel beside each."""
     o = [bp(w, h), title_bar(w, "THE LIVING CREATURES · THEIR FACES AND THEIR WINGS")]
-    cx, cy = w * 0.5, h * 0.56; d = min(w * 0.22, h * 0.28)
+    cx, cy = w * 0.5, 50 + (h - 70) * 0.5; d = min(w * 0.22, (h - 70) / 3.5)   # the outer wheels clear of the labels
     pts = [(cx, cy - d), (cx + d, cy), (cx, cy + d), (cx - d, cy)]
     o.append(f'<path d="M{" L ".join(f"{f(x)} {f(y)}" for x, y in pts)} Z" fill="none" stroke="#FFD23F" stroke-width="2.4" stroke-dasharray="8 5"></path>')
     k = d * 0.3
@@ -253,9 +253,9 @@ def creature_plan(w, h):
             o.append(f'<circle cx="{f(fx)}" cy="{f(fy)}" r="{f(k * 0.3)}" fill="{col}" stroke="#0D0D0F" stroke-width="1.4"></circle>')
             if i == 1: o.append(label(fx + math.cos(a) * k * 0.9, fy + math.sin(a) * k * 0.9 + 3, nm, col, 8))
         o.append(wheel(x + (x - cx) * 0.55, y + (y - cy) * 0.55, k * 0.6, 3 + i, lit=False))
-    o.append(tag(pts[0][0] + k, pts[0][1], "TWO WINGS JOINED ONE TO ANOTHER", w * 0.72, h * 0.16))
+    o.append(tag(pts[0][0] + k, pts[0][1], "TWO WINGS JOINED ONE TO ANOTHER", w - 290, cy - d * 1.4))
     o.append(label(14, 36, "THEY TURNED NOT WHEN THEY WENT · EVERY ONE STRAIGHT FORWARD", "#8FD0E2", 8, "start"))
-    o.append(tag(pts[2][0] + k * 0.5, pts[2][1] + k * 0.6, "A WHEEL UPON THE EARTH BESIDE EACH", w * 0.62, h * 0.86))
+    o.append(tag(pts[2][0] + k * 0.5, pts[2][1] + k * 0.6, "A WHEEL UPON THE EARTH BESIDE EACH", w - 310, cy + d * 1.4))
     o.append(label(w * 0.03, h * 0.95, "FACE OF A MAN · A LION ON THE RIGHT · AN OX ON THE LEFT · AN EAGLE", "#8FD0E2", 8, "start"))
     return "".join(o)
 

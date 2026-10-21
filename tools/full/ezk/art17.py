@@ -60,13 +60,19 @@ def oblation_plan(w, h, hi=(), title="THE HOLY OBLATION · FIVE AND TWENTY THOUS
     o.append(f'<rect x="{f(sx_ - 9)}" y="{f(sy_ - 9)}" width="18" height="18" fill="{GOLD_ if sl else "#8A6A3A"}" stroke="{INK}" stroke-width="1.6"></rect>')
     if sl: o.append(glow("obg", sx_, sy_, 34, 34, "#FFE680", 0.7))
     lc = lambda k: LIT if k in hi else CY
-    o.append(label(X(0), Y(-7500) + 4, "THE LEVITES · 25,000 × 10,000", lc("levites"), 9))
-    o.append(label(X(-6250), Y(2500) + 4, "THE PRIESTS", lc("priests"), 9) + label(X(6250), Y(2500) + 4, "25,000 × 10,000", lc("priests"), 8))
-    o.append(label(X(0), Y(2500) + 24, "THE SANCTUARY", LIT if sl else CY, 8))
-    o.append(label(X(-7500), Y(10000) + 4, "FOR FOOD", LIT if fd else "#9CCB5E", 8) + label(X(7500), Y(10000) + 4, "FOR FOOD", LIT if fd else "#9CCB5E", 8))
-    o.append(label(X(0), Y(10000) + 4, "THE CITY", lc("city"), 8))
+    big = S >= 300                                         # a small plan keeps only the names, smaller, clear of each other
+    fs = 9 if big else 7
+    o.append(label(X(0), Y(-7500) + 4, "THE LEVITES · 25,000 × 10,000" if big else "THE LEVITES", lc("levites"), fs))
+    o.append((label(X(-6250), Y(2500) + 4, "THE PRIESTS", lc("priests"), fs) if big else label(X(0), Y(2500) - 13, "THE PRIESTS", lc("priests"), fs))
+             + (label(X(6250), Y(2500) + 4, "25,000 × 10,000", lc("priests"), 8) if big else ""))
+    o.append(label(X(0), Y(2500) + (24 if big else 18), "THE SANCTUARY", LIT if sl else CY, 8 if big else 6.5))
+    if big:
+        o.append(label(X(-7500), Y(10000) + 4, "FOR FOOD", LIT if fd else "#9CCB5E", 8) + label(X(7500), Y(10000) + 4, "FOR FOOD", LIT if fd else "#9CCB5E", 8))
+    else:
+        o.append(label(X(-7500), Y(10000) + 3, "FOOD", LIT if fd else "#9CCB5E", 6.5) + label(X(7500), Y(10000) + 3, "FOOD", LIT if fd else "#9CCB5E", 6.5))
+    o.append(label(X(0), Y(10000) + 3, "THE CITY" if big else "CITY", lc("city"), 8 if big else 6.5))
     o.append(dim(X(-12500), Y(12500) + 14, X(12500), Y(12500) + 14, "25,000 REEDS", size=8))
-    o.append(label(w - 16, h - 10, "N ↑", CY, 11, "end"))
+    o.append(label(w - 16, 19, "N ↑", CY, 11, "end"))
     return "".join(o)
 
 # ---- the land and its tribes ------------------------------------------------------------------------------------------------
@@ -135,7 +141,7 @@ def land_map(w, h, hi=(), bands=True, borders=(), title=None):
     if "S" in borders or not bands:
         o.append(pl("TAMAR", w * 0.64, sy + 6, "S", dy=14) + pl("MERIBOTH-KADESH", w * 0.5, sy + 6, "S", dy=14) + pl("THE BROOK OF EGYPT", coast(sy) + 4, sy + 2, "S", dy=14, anchor="end"))
     if not bands or "N" in borders: pass
-    o.append(label(w - 14, h - 8, "N ↑", CY, 10, "end"))
+    o.append(label(w - 16, 19, "N ↑", CY, 11, "end"))
     if title: o.append(title_bar(w, title))
     return "".join(o)
 
@@ -150,7 +156,7 @@ def city_plan(w, h, hi=("N", "E", "S", "W")):
     o.append(f'<rect x="{f(x0 - sb)}" y="{f(y0 - sb)}" width="{f(S + 2 * sb)}" height="{f(S + 2 * sb)}" fill="#203A54" stroke="#4A7A9A" stroke-width="1" stroke-dasharray="4 3"></rect>')
     o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(S)}" height="{f(S)}" fill="#24405C" stroke="{LINE}" stroke-width="3"></rect>')
     gates = {"N": ["REUBEN", "JUDAH", "LEVI"], "E": ["JOSEPH", "BENJAMIN", "DAN"], "S": ["SIMEON", "ISSACHAR", "ZEBULUN"], "W": ["GAD", "ASHER", "NAPHTALI"]}
-    g = max(10, S * 0.07); fs = 9 if S > 260 else 8
+    g = max(10, S * 0.07); fs = 9 if S > 260 else 7.5
     for side, names in gates.items():
         lit = side in hi
         for i, nm in enumerate(names):
@@ -161,10 +167,10 @@ def city_plan(w, h, hi=("N", "E", "S", "W")):
             else: gx, gy, lx, ly, an = x0, y0 + S * t, x0 - sb - 6, y0 + S * t + 3, "end"
             c = TC.get(nm, "#E04A2A") if lit else "#4A6A8A"
             o.append(f'<rect x="{f(gx - g / 2)}" y="{f(gy - g / 2)}" width="{f(g)}" height="{f(g)}" fill="{c}" stroke="{LIT if lit else LINE}" stroke-width="1.6"></rect>')
-            if S >= 240: o.append(label(lx, ly, nm, LIT if lit else "#6A8AA8", fs, an))
+            if S >= 200: o.append(label(lx, ly, nm, LIT if lit else "#6A8AA8", fs, an))
     o.append(dim(x0, y0 + S + sb + 30, x0 + S, y0 + S + sb + 30, "4,500 REEDS", size=8) if y0 + S + sb + 34 < h else "")
     o.append(label(cx, cy - 4, "THE CITY", CY, 10) + label(cx, cy + 12, "SUBURBS · 250 ROUND ABOUT", "#6A9ABA", 7))
-    o.append(label(w - 16, h - 10, "N ↑", CY, 11, "end"))
+    o.append(label(w - 16, 19, "N ↑", CY, 11, "end"))
     return "".join(o)
 
 # ---- charts --------------------------------------------------------------------------------------------------------------------
@@ -350,8 +356,8 @@ def open_gate(p, w, h, seed):
     o.append(_prince(p, gx - ow * 0.78, b + 2, s, flip=False))
     ks = s * 0.8
     for i in range(3):
-        o.append(E.kneel(w * (0.04 + i * 0.1), b, ks, color=CAPT[i % len(CAPT)]))
-        o.append(E.kneel(w * (0.96 - i * 0.1), b, ks, color=CAPT[(i + 3) % len(CAPT)], flip=True))
+        o.append(E.kneel(w * (0.08 + i * 0.09), b, ks, color=CAPT[i % len(CAPT)]))
+        o.append(E.kneel(w * (0.78 - i * 0.09), b, ks, color=CAPT[(i + 3) % len(CAPT)], flip=True))
     return "".join(o)
 
 def morning_altar(p, w, h, seed):
@@ -387,8 +393,8 @@ def boiling_houses(p, w, h, seed):
                  + f'<path d="M{f(x - 26 * k)} {f(b - 34 * k)} C {f(x - 28 * k)} {f(b - 70 * k)} {f(x + 28 * k)} {f(b - 70 * k)} {f(x + 26 * k)} {f(b - 34 * k)} Z" fill="#4A3A30" stroke="{INK}" stroke-width="2"></path>'
                  + smoke(x, b - 74 * k, 3, seed + i, color="#E8E2D6", op=0.6, k=k * 0.5))
     s = min(fit(b + 4, h * 0.42), 0.8)
-    o.append(mk.person(p, round(w * 0.27), round(b + 4), round(s, 3), body=SKIN, cloth="#5A6A8A", sw=3, extra=A.headcloth("#E8E2D6") + A.BLACK_BEARD))
-    o.append(mk.person(p, round(w * 0.63), round(b + 4), round(s, 3), body=SKIN, cloth="#4A5A7A", sw=3, flip=True, extra=A.headcloth("#E8E2D6") + A.BLACK_BEARD))
+    o.append(mk.person(p, round(w * 0.26), round(b + 4), round(s, 3), body=SKIN, cloth="#5A6A8A", sw=3, extra=A.headcloth("#E8E2D6") + A.BLACK_BEARD))
+    o.append(mk.person(p, round(w * 0.5), round(b + 4), round(s, 3), body=SKIN, cloth="#4A5A7A", sw=3, flip=True, extra=A.headcloth("#E8E2D6") + A.BLACK_BEARD))
     return "".join(o)
 
 # ---- the river ---------------------------------------------------------------------------------------------------------------

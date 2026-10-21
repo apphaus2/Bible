@@ -166,11 +166,11 @@ def tile_plan(w, h, pan=True):
     for a in (2.4, 3.6, 4.4):
         x, y = cx + math.cos(a) * R * 1.48, cy + math.sin(a) * R * 1.2
         o.append(f'<path d="M{f(x)} {f(y)} L {f(x + math.cos(a + math.pi) * 18)} {f(y + math.sin(a + math.pi) * 18)}" stroke="#C8C8D0" stroke-width="5"></path>')
-    o.append(tag(cx + math.cos(3.6) * R * 1.48, cy + math.sin(3.6) * R * 1.2, "BATTERING RAMS", w * 0.06, h * 0.3))
+    o.append(tag(cx + math.cos(3.6) * R * 1.48, cy + math.sin(3.6) * R * 1.2, "BATTERING RAMS", w * 0.2, h * 0.24))
     if pan:
         px = cx + R * 2.05
         o.append(f'<rect x="{f(px)}" y="{f(cy - R * 1.2)}" width="10" height="{f(R * 2.4)}" fill="#5A5A6A" stroke="#C8C8D0" stroke-width="2"></rect>')
-        o.append(tag(px + 5, cy + R * 0.9, "AN IRON PAN · A WALL OF IRON", w * 0.6, h * 0.86))
+        o.append(tag(px + 5, cy + R * 0.9, "AN IRON PAN · A WALL OF IRON", w * 0.72, h * 0.56))
     return "".join(o)
 
 def lie(x, y, s, cloth=EZ_C, flip=False, bands=False):
@@ -257,16 +257,16 @@ def hair_plate(w, h):
     o.append(f'<path d="M{f(cx - w * 0.3)} {f(h * 0.16)} L {f(cx + w * 0.26)} {f(h * 0.16)} L {f(cx + w * 0.32)} {f(h * 0.19)} L {f(cx - w * 0.3)} {f(h * 0.2)} Z" fill="#C8C8D0" stroke="#0D0D0F" stroke-width="2"></path>'
              f'<rect x="{f(cx - w * 0.38)}" y="{f(h * 0.15)}" width="{f(w * 0.08)}" height="{f(h * 0.06)}" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="2"></rect>')
     o.append(tag(cx + w * 0.1, h * 0.18, "A SHARP SWORD · AS A BARBER'S RAZOR", cx + w * 0.16, h * 0.28))
-    xs = [w * 0.2, w * 0.5, w * 0.8]
+    xs = [w * 0.18, w * 0.46, w * 0.74]                       # clear of the chapter stamp and the verse label at the right
     for i, x in enumerate(xs):
         y = h * 0.62
         o.append("".join(f'<path d="M{f(x - 30 + k * 6)} {f(y)} C {f(x - 26 + k * 6)} {f(y - 20)} {f(x - 20 + k * 6)} {f(y - 30)} {f(x - 14 + k * 6)} {f(y - 36)}" fill="none" stroke="#4A4640" stroke-width="2"></path>' for k in range(10)))
         if i == 0: o.append(E.blaze(x, y + h * 0.18, w * 0.12, h * 0.14, 51, n=4))
         if i == 1: o.append(f'<path d="M{f(x - 40)} {f(y + h * 0.14)} L {f(x + 40)} {f(y + h * 0.1)}" stroke="#C8C8D0" stroke-width="5"></path>')
         if i == 2: o.append(wind_lines(w * 0.26, h * 0.2, 52, n=5, color=CYAN, op=0.7).replace("<path ", f'<path transform="translate({f(x - w * 0.12)} {f(y + h * 0.02)})" '))
-    o.append(label(xs[0], h * 0.94, "BURNED IN THE FIRE", GOLD, 9))
-    o.append(label(xs[1], h * 0.94, "SMITTEN WITH THE SWORD", GOLD, 9))
-    o.append(label(xs[2], h * 0.94, "SCATTERED TO THE WIND", GOLD, 9))
+    o.append(label(xs[0], h * 0.62 - 46, "BURNED IN THE FIRE", GOLD, 9))
+    o.append(label(xs[1], h * 0.62 - 46, "SMITTEN WITH THE SWORD", GOLD, 9))
+    o.append(label(xs[2], h * 0.62 - 46, "SCATTERED TO THE WIND", GOLD, 9))
     return "".join(o)
 
 def nations_center(w, h, hi=None):
@@ -285,13 +285,13 @@ def nations_center(w, h, hi=None):
 def four_corners(w, h):
     """An end is come upon the four corners of the land: the land as a map, the four corners lit red."""
     o = [grid_bg(w, h)]
-    x0, x1, y0, y1 = w * 0.3, w * 0.7, h * 0.14, h * 0.94
+    x0, x1, y0, y1 = w * 0.3, w * 0.7, 52, h - 22                 # the corners' rings inside the panel, under the label
     o.append(f'<path d="M{f(x0)} {f(y0)} L {f(x1)} {f(y0 + 10)} L {f(x1 + 10)} {f(y1)} L {f(x0 - 16)} {f(y1 - 8)} Z" fill="#1A2A3A" stroke="{CYAN}" stroke-width="2"></path>')
     o.append(f'<path d="M{f(w * 0.6)} {f(y0 + 20)} C {f(w * 0.62)} {f(h * 0.4)} {f(w * 0.58)} {f(h * 0.6)} {f(w * 0.62)} {f(h * 0.7)}" stroke="#2C9DB8" stroke-width="3" fill="none"></path>')
     for x, y in ((x0, y0), (x1, y0 + 10), (x1 + 10, y1), (x0 - 16, y1 - 8)):
         o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="16" fill="{RED_C}" fill-opacity="0.35" stroke="{RED_C}" stroke-width="2.4"></circle><circle cx="{f(x)}" cy="{f(y)}" r="5" fill="{RED_C}"></circle>')
     o.append(node(w * 0.5, h * 0.56, "JERUSALEM", GOLD, r=5, dy=-12, size=9))
-    o.append(label(w * 0.5, h * 0.06 + 14, "THE FOUR CORNERS OF THE LAND", RED_C, 10))
+    o.append(label(w * 0.5, 24, "THE FOUR CORNERS OF THE LAND", RED_C, 10))
     return "".join(o)
 
 def rod(w, h, seed):

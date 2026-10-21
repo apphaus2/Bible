@@ -63,7 +63,7 @@ GROUPS = [
      D("48:21-22", LM("PRINCE", title="THE PRINCE · BETWEEN JUDAH AND BENJAMIN"), BP, None, head="The Residue Shall Be for the Prince")],
     [D("48:23-27", LM(*K.SOUTH5, title="THE REST OF THE TRIBES · TO THE SOUTH"), BP, 350, head="The Rest of the Tribes"),
      F("48:28-29")],
-    [D("48:30-32", lambda w, h: K.city_plan(w, h, hi=("N", "E")), BP, 340, head="The Egresses of the City"),
+    [D("48:30-32", lambda w, h: K.city_plan(w, h, hi=("N", "E")), BP, 420, head="The Egresses of the City"),
      D("48:33-34", lambda w, h: K.gate_names("gn18", w, h, 1807, sides=("S", "W")), "#4A7AB8", None)],
     [D("48:35", lambda w, h: K.city_glory("cg18", w, h, 1808), "#1A1A4A", None, head="Jehovah Is There")],
 ]

@@ -136,7 +136,7 @@ def vision_plan(w, h, hi=(), title="THE HOUSE OF THE VISION · PLAN", dims=False
         o.append(label(X(x), Y(y), nm, LIT if part in hi else "#6A9ABA", lsz))
     if dims:
         o.append(dim(X(-250), Y(-262), X(250), Y(-262), "500 REEDS", size=9) + dim(X(262), Y(-250), X(262), Y(250), "500", size=9))
-    o.append('</g>' + title_bar(w, title) + label(w - 16, h - 12, "N ↑", CY, 11, "end"))
+    o.append('</g>' + title_bar(w, title) + label(w - 16, 19, "N ↑", CY, 11, "end"))
     return "".join(o)
 
 def gate_plan(w, h, outer=True):
