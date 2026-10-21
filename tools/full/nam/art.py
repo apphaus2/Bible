@@ -83,14 +83,18 @@ def tidings(p, w, h, seed):
 
 def chariots_streets(p, w, h, seed, night_=False):
     """The chariots rage in the streets, they rush to and fro in the broad ways, like torches, like the lightnings; the
-    shields made red, the valiant men in scarlet."""
+    shields made red, the valiant men in scarlet: the chariots racing before the walls, each with a red shield hung on its
+    side and its driver in scarlet."""
     o = [sky(w, h, "#2A0A1A", "#C8502A") if night_ else sky(w, h, "#8A5A3A", "#E8B880"), nineveh_wall(w, h, seed, base=0.56, lit=night_)]
     o.append(ground(w, h, h * 0.56, "#6A4A3A", dy=0))
     k = min(0.9, h / 320)
     for i, (x, fl) in enumerate(((0.24, False), (0.62, True), (0.86, False))):
-        y = h * (0.86 + (i % 2) * 0.08)
-        o.append(E3.chariot(w * x, y, k * (0.8 + 0.1 * (i % 2)), flip=fl, color="#3A1A10", driver="#B5121B") + mk.speed(w * x + (60 if not fl else -60) * k, y - 50 * k, 8, 10 * k, 80 * k, seed + i, color="#FFC14D", op=0.6))
-        o.append(f'<circle cx="{f(w * x + (14 if fl else -14) * k)}" cy="{f(y - 70 * k)}" r="{f(12 * k)}" fill="#B5121B" stroke="#0D0D0F" stroke-width="1.6"></circle>')
+        y = h * (0.86 + (i % 2) * 0.08); s = k * (0.8 + 0.1 * (i % 2)); sx = -1 if fl else 1
+        o.append(E3.chariot(w * x, y, s, flip=fl, color="#3A1A10", driver="#B5121B") + mk.speed(w * x + (60 if not fl else -60) * k, y - 50 * k, 8, 10 * k, 80 * k, seed + i, color="#FFC14D", op=0.6))
+        o.append(f'<circle cx="{f(w * x + sx * -160 * s)}" cy="{f(y - 120 * s)}" r="{f(9 * s)}" fill="{SKIN}" stroke="#0D0D0F" stroke-width="1.6"></circle>'
+                 f'<path d="M{f(w * x + sx * -172 * s)} {f(y - 124 * s)} C {f(w * x + sx * -164 * s)} {f(y - 136 * s)} {f(w * x + sx * -150 * s)} {f(y - 134 * s)} {f(w * x + sx * -148 * s)} {f(y - 124 * s)} Z" fill="#1F5FAD" stroke="#0D0D0F" stroke-width="1.4"></path>'
+                 f'<circle cx="{f(w * x + sx * -128 * s)}" cy="{f(y - 56 * s)}" r="{f(17 * s)}" fill="#B5121B" stroke="#0D0D0F" stroke-width="2"></circle>'
+                 f'<circle cx="{f(w * x + sx * -128 * s)}" cy="{f(y - 56 * s)}" r="{f(5 * s)}" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.2"></circle>')
     return "".join(o)
 
 def river_gates(w, h, seed, open_=True):
@@ -131,13 +135,27 @@ def lions_den(w, h, seed):
     o.append(f'<g transform="rotate(-8 {f(w * 0.8)} {f(h * 0.9)})">{lion_lying(w * 0.8, h * 0.92, min(0.8, h / 300), color="#B8A07A")}</g>')
     return "".join(o)
 
+def wreck(x, y, s, flip=False, rot=-12):
+    """A war chariot overturned and burnt black: its body tipped, one wheel broken off (no horse, no driver)."""
+    sx = -s if flip else s
+    o = (f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)}) rotate({rot})">'
+         '<path d="M-30 -30 L -30 -78 L 40 -78 C 54 -66 56 -46 50 -30 Z" fill="#1A1210" stroke="#0D0D0F" stroke-width="2.4"></path>'
+         '<path d="M-24 -70 L 40 -70 M-24 -46 L 48 -46" stroke="#4A2A1A" stroke-width="3"></path>'
+         '<path d="M50 -40 L 120 -20" stroke="#2A1A10" stroke-width="6"></path>'
+         '<circle cx="0" cy="-26" r="26" fill="none" stroke="#0D0D0F" stroke-width="7"></circle><circle cx="0" cy="-26" r="26" fill="none" stroke="#3A2414" stroke-width="4"></circle>'
+         + "".join(f'<path d="M0 -26 L {f(26 * math.cos(a))} {f(-26 + 26 * math.sin(a))}" stroke="#2A1A10" stroke-width="3"></path>' for a in [i * math.pi / 3 for i in range(6)])
+         + '</g>')
+    return o + (f'<g transform="translate({f(x + (70 if not flip else -70) * s)} {f(y)}) scale({f(s)})"><ellipse cx="0" cy="-6" rx="26" ry="8" fill="none" stroke="#0D0D0F" stroke-width="6"></ellipse>'
+                '<ellipse cx="0" cy="-6" rx="26" ry="8" fill="none" stroke="#3A2414" stroke-width="3"></ellipse></g>')
+
 def burnt_chariots(w, h, seed):
-    """I will burn her chariots in the smoke: the shapes of chariots black in a great smoke before the walls."""
+    """I will burn her chariots in the smoke: the chariots overturned and burning before the walls, a great smoke going up
+    (no horse or man drawn in the fire)."""
     o = [sky(w, h, "#1A0A0A", "#6A2A1A"), nineveh_wall(w, h, seed, color="#6A5A4A", base=0.6), ground(w, h, h * 0.6, "#2A1810", dy=0),
          smokes([w * 0.15, w * 0.4, w * 0.65, w * 0.9], h * 0.8, seed, k=max(0.8, h / 260), color="#2A2024", op=0.7)]
-    k = min(0.9, h / 320)
-    for i, x in enumerate((0.2, 0.5, 0.8)):
-        o.append(E3.chariot(w * x, h * 0.94, k * 0.8, flip=i % 2 == 1, color="#0D0D0F", driver="#0D0D0F") + E.blaze(w * x, h * 0.96, w * 0.12, h * 0.2, seed + i, n=5))
+    k = min(1.1, h / 280)
+    for i, x in enumerate((0.18, 0.5, 0.8)):
+        o.append(E.blaze(w * x, h * 0.92, w * 0.14, h * 0.26, seed + i, n=5) + wreck(w * x, h * 0.95, k * 0.9, flip=i % 2 == 1))
     return "".join(o)
 
 def bloody_city(w, h, seed):
