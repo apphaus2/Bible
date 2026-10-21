@@ -237,7 +237,7 @@ if __name__ == "__main__":
                 if q in tab or ref_rule(q, lang) or re.fullmatch(r"[\d\s.,:;/–\-+×?%°'\"()·▸◂◼…]+|Vol\. \d+|\d+ [–-] \d+", q): continue
                 left.setdefault(q, where)
         def nodes(p):                          # every text node of a page, drawn words too
-            body = re.sub(r"<style>.*?</style>", "", p.read_text(encoding="utf-8").split("<x-dc>", 1)[-1], flags=re.S)
+            body = re.sub(r"<style>.*?</style>|<script.*?</script>", "", p.read_text(encoding="utf-8").split("<x-dc>", 1)[-1], flags=re.S)
             return {s for rx in (TEXT, SVG_TEXT) for m in rx.finditer(body) if re.search(r"[A-Za-z]", s := norm(m.group(1)))}
         for d in sorted((ROOT / "volumes" / lang).glob("*")):
             if not (d / "volume.json").exists() or (only and d.name not in only): continue
