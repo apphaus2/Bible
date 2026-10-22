@@ -196,9 +196,11 @@ lying LIE_BODY + LIE_ARM (never rotate a standing figure). Close-ups: shaded pro
 
 ## Languages
 
-The site is in **English and Spanish** (bible.apphaus.us/es/). `ref/` holds the public-domain texts by eBible id
-(`ref/README.md` lists eBible's 64 public-domain whole Bibles): `eng-asv` (the manga), `spaRV1909` (Spanish, Reina-Valera 1909),
-`spablm` (Spanish, only for the verses RV1909's file lost), `fraLSG` (French, tried on Genesis only).
+The site is in **ten languages**: English, Spanish (`es`), German (`de`), French (`fr`), Italian (`it`), Portuguese (`pt`), Russian
+(`ru`), Chinese (`zh`, simplified), Japanese (`ja`) and Korean (`ko`), at bible.apphaus.us/<code>/. `ref/` holds the public-domain
+texts (`ref/README.md` lists the ones in use and eBible's 64 public-domain whole Bibles): `eng-asv` (the manga), `spaRV1909`,
+`deu1912`, `fraLSG`, `ita1927`, `porbrbsl`, `russyn`, `cmn-cu89s`, `jpnm`, `KorRV` (CrossWire, not eBible), and fallbacks for
+verses a file lost (`spablm`, `deuelo`, `cmn-cu89t`). Spanish is the worked example below; every language works the same way.
 
 - **Pages:** `BIBLE_LANG=es python tools/full/build_volume.py <pkg>` builds the same plans with the Spanish text into
   `volumes/es/<id>/` (generated in CI, git-ignored). `asv.Book` keeps `G.verses` in English (plans find their ASV words there) and
@@ -214,7 +216,9 @@ The site is in **English and Spanish** (bible.apphaus.us/es/). `ref/` holds the 
 - **Labels** (titles, stamps, headings, map and chart labels, blurbs, ledes — not scripture): `tools/full/labels.py collect` lists
   every label of the English pages; `tools/full/i18n/es/*.json` maps each to Spanish (names in RV1909's spelling, quotations in
   RV1909's words); `labels.label()` translates a label whole or piece by piece (split at " · " and " — "), and verse references by
-  rule (the language's `books` and `abbr`: "GEN 1:3" → "GN 1:3"). `python tools/full/labels.py missing es` lists what is still English.
+  rule (the language's `books` and `abbr`: "GEN 1:3" → "GN 1:3"). `python tools/full/labels.py missing es` lists what is still English;
+  `leftover <lang>` lists English labels on built pages, but skips a node already partly translated, and page titles (canvas.json
+  board titles, which go through the same tables) need their own comparison.
 - **Site:** `rebuild_site.py --lang es` builds `_site-es/es/` (its own thumbnails, `_book/asv-es/` from `asv_pdf.py --text spaRV1909`,
   `_book/download/es/` from `downloads.py --lang es`). `build_site.py` takes its interface words from the language's `ui` and puts a
   **language dropdown** in every page's top bar (`lang_menu`: each language named in itself, linking to the page there whose verses
@@ -227,14 +231,14 @@ The site is in **English and Spanish** (bible.apphaus.us/es/). `ref/` holds the 
   line breaks), reference rules, the site's `ui`, the text PDF's `words`, the EPUB's `epub`, and `fonts` (Google Fonts families
   for a script the manga's fonts lack, set after each manga font in every font list of its pages, PDFs and EPUBs). Plus its text
   in `ref/<id>/`, its labels in `tools/full/i18n/<code>/`, a `tools/site/workers/<code>.jsonc` and a service binding in
-  `wrangler.jsonc`; every tool and the workflow pick it up from there. Under way: Portuguese, French, German, Italian, Chinese
-  (simplified), Japanese, Russian, Korean; right-to-left scripts later.
+  `wrangler.jsonc`; every tool and the workflow pick it up from there. Right-to-left scripts later.
 
 ## Website
 
 Built by `.github/workflows/pages.yml` on every push to `master` (nothing generated is committed): `build_volume.py --check`
-for every package, the Spanish volumes (`BIBLE_LANG=es`), the text PDFs by book (ASV and RV1909, cached), the downloads (both
-languages, cached), `rebuild_site.py --thumbs` and `--lang es` (thumbnails cached), then deploys `bible-en`, `bible-es` and the
+for every package, every translation's volumes (`BIBLE_LANG=<code>`, each `tools/lang/<code>.json`), the text PDFs by book
+(cached), the downloads (every language, cached), `rebuild_site.py --thumbs` and `--lang <code>` (thumbnails cached), then deploys
+`bible-en`, each `bible-<code>` and the
 router `bible` to Cloudflare (`npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc`, then `npx wrangler@4 deploy`; Node 22),
 and the English site alone to GitHub Pages (apphaus2.github.io/Bible, without the downloads: its 1 GB limit). Needs Actions secrets
 `CLOUDFLARE_API_TOKEN` ("Edit Cloudflare Workers" template, zone apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`, else the Cloudflare step
