@@ -12,11 +12,17 @@ Worker in tools/site/workers/<code>.jsonc), never an edit of shared code.
                  slot empty (KorRV): asv.unmerge cuts it back, instead of asv.align's pairing by length
     psalm_title  a regex for where a psalm proper begins inside verse 1, for a text that folds the superscription into it
     css          extra CSS for every page of the language (in the page's own <style>), for layout the translation needs
-    drop         a regex for notes the text's file keeps inside its verses, taken out of the pages and the text PDFs (Riveduta's "(H7-1)" Hebrew numbers, Luther 1912's own "[3:19]")
+    drop         a regex for notes the text's file keeps inside its verses, taken out of the pages and the text PDFs (Riveduta's "(H7-1)" Hebrew numbers, Luther 1912's own "[3:19]",
+                 porbrbsl's machine-translation leftovers: "Aqui está a tradução …:" and ``` fences)
     psalm_title_verses  true for a text that numbers a psalm's superscription as verse 1 (or 1–2), the Hebrew numbering:
                  those verses become the title and the psalm is renumbered from 1 (asv.title_verses; needs psalm_title too)
     accent_room  a share (0.16) by which a cover's book name is set smaller, on the same baseline, when its capitals carry
-                 accents (ÉSAÏE), so they clear the line above it (labels.lower)
+                 accents (ÉSAÏE, ÊXODO), so they clear the line above it (labels.lower)
+    fit_room     true, for a language whose words run longer than the English: a law cell sets its words a little smaller,
+                 and smaller again by a heading that runs to a second line (exo.kit.law); a dialogue panel whose words
+                 overrun it sets its balloons smaller (exo.kit.talk_fit); a drawn IBM Plex Mono label that would run out of
+                 its drawing shrinks to fit as a data-fit label does (labels.fit_svg)
+    thousands    the thousands separator for numbers in labels and drawings (601,730 -> "." 601.730); none: kept as is
     unspaced     true for a script written without spaces (Chinese, Japanese): a cut may fall between any two characters
     proportions  false: trust the text's verse numbers; asv.align re-pairs verses by length only around an empty slot, not
                  where two verses running are merely out of proportion with the ASV's (Chinese genealogies run long)

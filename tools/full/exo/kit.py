@@ -20,6 +20,7 @@ def song(text, pos, size=15, maxw=None, color="#D7261E"):
             f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
             f'font-size: {size}px; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>\n')
 
+_TAB = {}
 def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336, lead="", span=False, spoken=False):
     """One cell of a page of ordinances (Exodus 21–23): a Voice box (God's words, indigo with the gold inner rule) with a
     pictogram above (svg in a 320 x 100 viewBox, standing on the cell's ground line and filling whatever height the words
@@ -28,7 +29,13 @@ def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336
     span = the cell spans both columns of its grid. spoken=True: the law is a man's words (Moses in Deuteronomy), not God's —
     a cream speech panel in Archivo Narrow with a rust rule, the pictogram on sand."""
     if size is None:                              # as large as the cell allows: the words take ~60% of the height, the pictogram the rest
-        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0)) / ((0.74 if spoken else 0.62) * ems(text, 0.56 if spoken else 0.5))) ** 0.5 * 2) / 2))
+        import asv                                # tools/lang/<code>.json "fit_room": room for a heading that runs to a
+        wrap, long_ = 0, 1.0                      # second line, and for words longer than the English the sizes were tuned on
+        if asv.L.get("fit_room"):
+            import labels
+            hd = labels.label(labels.norm(heading), asv.LANG, _TAB.setdefault(asv.LANG, labels.table(asv.LANG)))
+            wrap, long_ = 13 * (-(-ems(hd, 0.6) * 7.2 // max(1, w - 32 - len(ref) * 7)) - 1), 1.06
+        size = max(12.5, min(24, round((w * (cell - 150 - (34 if lead else 0) - wrap) / ((0.74 if spoken else 0.62) * long_ * ems(text, 0.56 if spoken else 0.5))) ** 0.5 * 2) / 2))
     if spoken:
         bg, fg, rule, pbg, font, lh, frame = "#FFF8E6", "#0D0D0F", "#B5402A", "#E8D2A6", "'Archivo Narrow', sans-serif; font-weight: 700", 1.16, f"inset 0 0 0 4px #FFF8E6, inset 0 0 0 5.5px #B5402A"
         accent = "#B5402A"
@@ -43,12 +50,26 @@ def law(heading, text, ref, svg="", size=None, accent="#FFD23F", cell=490, w=336
             + (f'\n      <div style="margin: 6px 12px 0; align-self: flex-start; padding: 3px 7px; background: #F3EFE6; color: #0D0D0F; font-size: 9.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase{"; border: 1.5px solid #0D0D0F" if spoken else ""}">{lead}</div>' if lead else "")
             + f'\n      <div style="padding: 6px 12px 12px; font-family: {font}; font-size: {size}px; line-height: {lh}; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>\n    </div>')
 
+def talk_fit(lines, bw, h, size):
+    """(balloon size, height scale) for a dialogue panel's words: as given, unless the language's words run longer than the
+    English (tools/lang/<code>.json "fit_room") and the panel's estimated column of captions and balloons overruns its
+    height, when the balloons are set smaller in proportion (never below 9.5 px)."""
+    import asv, math
+    if not asv.L.get("fit_room"): return size, 1.0
+    caps = sum(34 + 15 * (ems(t) // (bw // 7 or 1)) for kind, t in lines if kind == "cap")
+    bal = sum(50 + 17 * (ems(t) // max(1, (bw - 40) // 7)) + (ems(t) // 6 if ems(t) > 160 else 0) for kind, t in lines if kind != "cap")
+    bal *= max(1.0, size / 12.5)                  # the estimate is for 12.5 px words
+    if not bal or 12 + caps + bal <= h - 16: return size, 1.0
+    s = max(9.5, math.floor(size * max(0.5, (h - 28 - caps) / bal) ** 0.5 * 2) / 2)
+    return s, (s / size) ** 2
+
 def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
     """lines is a list of ("cap", text) or ("say", text) in reading order."""
     full = w > 400
     left = 300 if full else 140
     side = f"left: {left}px" if not flip else "left: 12px"
     bw = (w - left - 14) if not flip else (w - 314 if full else w - 154)
+    size, k = talk_fit(lines, bw, h, size)        # smaller balloons where a translation's words overrun the panel
     o, y = [], 12
     for kind, text in lines:
         n = ems(text)
@@ -60,7 +81,7 @@ def talk(tok, h, bg, lines, w=W1, flip=False, ref=None, size=12.5, extra=""):
             pad = (f"{min(48, 18 + n // 12)}px 40px" if full else f"{min(36, 16 + n // 12)}px 26px") if long_ else ("18px 24px" if full else "16px 18px")
             bw_ = min(bw, max(110, int(n * size * 0.62) + 60))
             o.append(balloon(text, f"{side}; top: {y}px", bw_, size=size if full else size - 1, pad=pad))
-            y += 50 + 17 * (n // max(1, (bw - 40) // 7)) + (n // 6 if long_ else 0)
+            y += round(k * (50 + 17 * (n // max(1, (bw - 40) // 7)) + (n // 6 if long_ else 0)))
     if ref: o.append(vref(ref, "left: 12px; bottom: 12px" if not flip else "right: 12px; bottom: 12px"))
     return new(bg, w, h, fc(tok, h, w=w, flip=flip), "".join(o) + extra)
 

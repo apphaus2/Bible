@@ -1,0 +1,8 @@
+// Portuguese: the static site in _site-pt/ (rebuild_site.py --lang pt), all under pt/, reached through the router at /pt/.
+// npx wrangler deploy -c tools/site/workers/pt.jsonc
+{
+  "name": "bible-pt",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "../../../_site-pt" },
+  "workers_dev": false
+}

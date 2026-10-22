@@ -340,6 +340,19 @@ def heads(path):
     if m and 1 not in out: out[1] = m.group(1).strip()
     return out
 
+def inner_heads(path):
+    """{(chapter, verse): head} from \\d lines that stand between two verses of a psalm, before the verse they head (a text
+    that sets Psalm 119's letter heads apart: porbrbsl's "\\d BETE" before 119:9, jpnm's "\\d ベト", where the
+    ASV ends 119:8 with "ב BETH.")."""
+    s = read(path)
+    out = {}
+    for c, body in re.findall(r"\\c (\d+)(.*?)(?=\\c \d+|\Z)", s, flags=re.S):
+        parts = body.split("\\v ", 1)
+        if len(parts) < 2: continue
+        for m in re.finditer(r"^\\d ([^\n]*)\n(?:\\[a-z]+\d?\s*\n)*\\v (\d+)", "\\v " + parts[1], flags=re.M):
+            out[(int(c), int(m.group(2)))] = re.sub(r"\s+", " ", re.sub(r"\\[a-z0-9+]+\*?", "", m.group(1))).strip()
+    return out
+
 def parse_titles(path):
     """The psalms that have a superscription (a \\d line before verse 1) in a USFM file."""
     s = pathlib.Path(path).read_text(encoding="utf-8")
@@ -392,6 +405,7 @@ class Book:
             if code == "PSA" and not titled:  # superscriptions: the text's own \d lines, else split off verse 1
                 self.titles = d_titles(ROOT / "ref" / tid / files(tid)[code]) or {
                     **(psalm_titles(self.tgt, tv_heads) if L.get("psalm_title") else {}), **tv_heads}
+                self.inner_heads = inner_heads(f)   # Psalm 119's letter heads, where the text sets its own (psa.text.HEADS)
             ruled = {(c, n) for (c, a, b), _ in rules for n in range(a, b + 1)}
             lost = [k for k in self.src if not self.tgt.get(k, "").strip() or (rules and k[0] in {r[0][0] for r in rules} and k not in ruled)]
             if lost and L.get("fallback"):
@@ -400,7 +414,9 @@ class Book:
                     if fb.get(k, "").strip(): self.tgt[k] = fb[k]; self.borrowed.append(k)
             if UNSPACED:
                 self.tgt = {k: unspace(t) for k, t in self.tgt.items()}
-                if code == "PSA": self.titles = {c: unspace(t) for c, t in self.titles.items()}
+                if code == "PSA":
+                    self.titles = {c: unspace(t) for c, t in self.titles.items()}
+                    self.inner_heads = {k: unspace(t) for k, t in getattr(self, "inner_heads", {}).items()}
         self.used = {}                      # (c, v) -> set of character indexes used
         self.cuts = []                       # every (ref, text) handed out, for build_volume's lost-text check
         self.last = {}                       # (c, v) -> (ASV end, translated end) of the last cut, other languages only

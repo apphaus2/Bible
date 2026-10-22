@@ -87,7 +87,8 @@ def laws(c, groups, head=None, lead=None):
         refs = f"{c}:{a}" + (f"-{b}" if b != a else "")
         text = sp(refs) if b != a else v(f"{c}:{a}")
         uid = f"lw{c}x{a}"
-        items.append((heading(text), refs, (lambda p, text=text: picto.pick(text, p)), "", head if i == 0 else None))
+        en = " ".join(G.verses[(c, n)] for n in range(a, b + 1))     # the pictogram is picked by the ASV's words
+        items.append((heading(text), refs, (lambda p, en=en: picto.pick(en, p)), "", head if i == 0 else None))
     return items
 
 def law_groups(c, a, b, budget=380):

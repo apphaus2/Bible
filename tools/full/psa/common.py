@@ -13,7 +13,7 @@ from genesis.ch04 import COLD
 from genesis.ch06 import GOLDEN
 from genesis.ch07 import RED
 from psa import G
-from psa.text import TITLES, TITLES_EN, BOOKS, ALEPH, LINES, lines_of
+from psa.text import TITLES, TITLES_EN, BOOKS, ALEPH, LINES, HEADS, lines_of
 import asv as _asv
 from psa.layout import seg, pack as _pack
 from fx import end_mark
