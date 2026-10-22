@@ -22,10 +22,12 @@ not inside a phrase such as "Every word from the ASV".
 - **Website** (`tools/site/build_site.py`): page footers read "ASV"; descriptions say "the ASV".
 - **E-book** (`tools/book/export_book.py`): rights metadata reads "Scripture text: ASV, public domain."
 - **Docs:** README and CLAUDE.md say "ASV".
+- **Translations** (added later): each language's pages, site and e-books carry its own text's short credit in the same
+  places (`credit` in `tools/lang/<code>.json`: RV1909, LUTHER 1912, LSG, Riveduta, BPM, Синод., 和合本, フリーダム訳, 개역).
 
 ## Consequences
 
 - One short, consistent mark on every page, matching the verse labels (`GEN 1:1`) in style.
 - The full name of the translation does not appear anywhere in the edition.
-- The legacy digest pages (`digest/`) predate this decision and still spell it out; they are not
-  being extended and are left as they are.
+- The legacy digest pages that predated this decision have since been removed from the repo; the drawings they held
+  survive only as reference art (`tools/full/reference/`), which is never published.

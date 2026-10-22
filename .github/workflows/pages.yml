@@ -51,7 +51,7 @@ jobs:
         run: |
           echo "LANGS=$(cd tools/lang && ls *.json | sed 's/\.json$//' | grep -vx en | tr '\n' ' ')" >> "$GITHUB_ENV"
 
-      - name: Build the translated volumes (generated, not committed: the plans with each language's text and translated labels)
+      - name: Build the translated volumes (generated, not committed; the plans with each language's text and translated labels)
         run: |
           for l in $LANGS; do
             for v in tools/full/*/__init__.py; do

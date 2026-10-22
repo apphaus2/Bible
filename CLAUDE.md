@@ -101,17 +101,19 @@ module (`exo`, not `exodus`).
 ## Code map
 
 ```
-ref/<eBible id>/      Bible texts as USFM from eBible.org (see ref/README.md): eng-asv (the manga), spaRV1909, fraLSG
+ref/<eBible id>/      Bible texts as USFM (see ref/README.md): eng-asv (the manga), one text per translation, fallbacks
 tools/full/           asv.py (Book: cuts, coverage; BIBLE_LANG), build_volume.py, fx.py (page(), chapter_title(), end_mark(), vref()),
                       discourse.py (pack: by_need, room, min_size, budget, default_head), speech.py (orate), rolls.py (roll_pages,
                       verse_cells), reuse.py (lift reference panels; fill()), picto.py, ntcast.py (New Testament cast),
-                      <pkg>/ one package per book
+                      labels.py (collect, missing, leftover), i18n/<code>/ (each language's labels), <pkg>/ one package per book
 tools/kit/            mk.py (page, panel, cap, god, balloon+tail, stamp, sfx, person(up=), defs, speed, stars), faces.py + faces_ex.py,
                       figures.json, snake.py, crowds.py, and per-book drawing kits: exodus*.py, numbers1, joshua1, judges1–2, ruth1,
                       samuel1–4, egypt, tower, ladder
-tools/site/           build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js
+tools/site/           build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js, workers/ (router.js, <lang>.jsonc)
+tools/lang/           <code>.json (one per language), langs.py (documents every key)
 tools/book/           export_book.py + render.js (EPUB, print/reading PDF), downloads.py, asv_pdf.py (the ASV text as PDFs)
 volumes/<id>/         generated pages (pages/*.dc.html), canvas.json, volume.json, coverage.md; volumes/<lang>/<id>/ for translations
+wrangler.jsonc        the router Worker `bible` (bible.apphaus.us), with a service binding per language
 ```
 
 Package notes (helpers worth reusing; each package's `__init__.py` has its plan and restraint notes):
@@ -240,10 +242,12 @@ for every package, every translation's volumes (`BIBLE_LANG=<code>`, each `tools
 (cached), the downloads (every language, cached), `rebuild_site.py --thumbs` and `--lang <code>` (thumbnails cached), then deploys
 `bible-en`, each `bible-<code>` and the
 router `bible` to Cloudflare (`npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc`, then `npx wrangler@4 deploy`; Node 22),
-and the English site alone to GitHub Pages (apphaus2.github.io/Bible, without the downloads: its 1 GB limit). Needs Actions secrets
+and the English site alone to GitHub Pages (apphaus2.github.io/Bible, without the downloads: its 1 GB limit; Settings › Pages ›
+Source must be "GitHub Actions", else a Jekyll branch build runs and fails on every push). Needs Actions secrets
 `CLOUDFLARE_API_TOKEN` ("Edit Cloudflare Workers" template, zone apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`, else the Cloudflare step
-is skipped (not yet set). By hand from Windows: `npx wrangler login` once, build the sites, deploy the three Workers (account
-apphaus@outlook.com).
+is skipped. By hand from Windows: `npx wrangler login` once, build the sites, deploy the eleven Workers (each `bible-<code>`,
+then the router; account apphaus@outlook.com). Quote a step name in `pages.yml` that holds ": " (it made the file invalid and
+stopped every run from 2026-10-20 to 10-22).
 
 - Pages: `index.html` (a section per volume with its downloads, "The Text", a table of contents), `<id>/chapter-NN/index.html`,
   `<id>/chapter-NN/NN-<slug>.html` (Prev/Next across books). All links relative.
@@ -251,7 +255,7 @@ apphaus@outlook.com).
   finger cancels and blocks swipes for 0.6 s; nothing turns while zoomed or after a pan. Keep these rules: phones zoom to read.
 - `asv/<BOOK>.pdf` (66 files, `asv/index.json`): the ASV by book; the "📖 p. N" button, "<range> in the ASV" and every footer
   credit open the book at the page's chapter. The whole-Bible PDF is built only to split it, never published.
-- `download/en/`: each book as `<id>.epub` (fixed layout) and `<id>.pdf` (reading PDF at page size), split at chapter boundaries
+- `download/<lang>/`: each book as `<id>.epub` (fixed layout) and `<id>.pdf` (reading PDF at page size), split at chapter boundaries
   into `<id>-1.pdf` … under 24 MB (Cloudflare's 25 MiB file limit: Genesis is two parts). Links are absolute to bible.apphaus.us.
 - `manifest.json` (every volume, chapter, page, thumbnail, text and download URL); `thumbs/` 380×540 JPGs, re-rendered by hash.
 
