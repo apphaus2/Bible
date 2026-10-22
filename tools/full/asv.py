@@ -153,8 +153,16 @@ def _snap(t, f, kind, lo=0, speeches=None, hi=None):
         k = _kind(t, i)
         d = abs(_share(t, i) - f) - (same if k and k == kind else 0.06 if k else 0)
         if speeches is not None: d += 0.2 * abs(sum(1 for j in sp if j < i) - speeches)
+        if _twice(t, i): d += 0.2
         if d < best: best, bi = d, i
     return bi
+
+def _twice(t, i):
+    """Whether i falls inside a word cried twice, a comma between and a stop after ("Amen, | Amen!", "¡Moisés, | Moisés!",
+    「アーメン、|アーメン」): a cut keeps the two together (but not "dijo á Daniel: | Daniel," or "aquel día, | día de angustia")."""
+    a = re.search(r"(?<![\w-])(\w+)[,、，]\s*$", t[:i])
+    b = re.match(r"\s*[¡¿«“\"']?(\w+)[,.!?;:\"”’»、。，！？」』]", t[i:])
+    return bool(a and b and a.group(1).casefold() == b.group(1).casefold())
 
 # words spoken follow in the ASV: a clause ending "said unto the reapers," (a capital after a comma alone is often a name)
 SAID = re.compile(r"\b(?:said|saith|saying|say|says|spake|speak|answered|answer|cried|called|commanded|asked|sware|prayed|"

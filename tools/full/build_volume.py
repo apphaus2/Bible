@@ -25,7 +25,7 @@ def main(vol, check=False):
     META, G = pkg.META, pkg.G
     out = ROOT / "volumes" / (META["id"] if asv.LANG == "en" else f"{asv.LANG}/{META['id']}")
     pages_dir = out / "pages"; pages_dir.mkdir(parents=True, exist_ok=True)
-    if asv.LANG == "en": credit = lambda h, name=None: h; lab = lambda h: h
+    if asv.LANG == "en": credit = lambda h, name=None: h; lab = lambda h, name=None: h
     else:                                                             # another language: its credit, every label translated, and
         import labels, langs                                          # fonts for a script the manga's fonts lack (tools/lang/<code>.json)
         tab = labels.table(asv.LANG)
@@ -39,7 +39,7 @@ def main(vol, check=False):
         if langs.get(asv.LANG).get("page_style"):                     # e.g. Korean "word-break: keep-all" (break lines between words),
             st, _credit = langs.get(asv.LANG)["page_style"], credit   # inline on the page's root so the site and the EPUB keep it
             credit = lambda h, name=None: _credit(h, name).replace('</helmet>\n<div style="', f'</helmet>\n<div style="{st}; ', 1)
-        lab = lambda t: labels.label(labels.norm(t), asv.LANG, tab)
+        lab = lambda t, name=None: labels.label(labels.norm(t), asv.LANG, page_tab(name))   # name: a page whose scoped labels apply
         if css := langs.get(asv.LANG).get("css"):                     # the language's own page CSS (e.g. room for capital umlauts)
             credit = (lambda f: lambda h, name=None: f(h, name).replace("body{margin:0}", "body{margin:0}\n" + css, 1))(credit)
         if asv.UNSPACED:                                              # Chinese, Japanese: no space where a plan joins two
@@ -74,7 +74,7 @@ def main(vol, check=False):
     old = json.loads(cpath.read_text()) if cpath.exists() else {}
     boards, notes, y = {}, {}, 0
     blocks = [("Main", META["title"], ["Main.dc.html"])] + [(c["dir"], f"Chapter {c['num']} · {c['name']} ({c['range']})", c["files"]) for c in chapters]
-    titles = {n: lab(t) for n, t, _ in order}
+    titles = {n: lab(t, n) for n, t, _ in order}
     for key, label, files in blocks:
         notes[key.replace("-", "")] = {"kind": "title1", "maxW": 4120, "text": label, "x": 0, "y": y}
         y += 300
@@ -86,9 +86,9 @@ def main(vol, check=False):
               "boards": boards, "order": [n for n, _, _ in order], "notes": notes, "designSystems": [], "attachments": {}}
     if not check: save(cpath, json.dumps(canvas, indent=1, ensure_ascii=False))
 
-    if not check: save(out / "volume.json", json.dumps({k: (lab(META[k]) if k in ("name", "lede") else META[k]) for k in ("id", "order", "name", "kanji", "thumb", "lede")}
+    if not check: save(out / "volume.json", json.dumps({k: (lab(META[k], "Main.dc.html") if k in ("name", "lede") else META[k]) for k in ("id", "order", "name", "kanji", "thumb", "lede")}
         | ({"lang": asv.LANG, "en_name": META["name"]} if asv.LANG != "en" else {}) | {
-        "books": [{k: (lab(c[k]) if k in ("name", "range", "blurb") else c[k]) for k in ("dir", "num", "name", "range", "blurb", "prefixes")} for c in chapters]}, indent=1, ensure_ascii=False))
+        "books": [{k: (lab(c[k], c["files"][0]) if k in ("name", "range", "blurb") else c[k]) for k in ("dir", "num", "name", "range", "blurb", "prefixes")} for c in chapters]}, indent=1, ensure_ascii=False))
 
     # coverage report
     lines = [f"# {META['name']} — coverage of the full edition", "",
