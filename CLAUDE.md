@@ -237,17 +237,13 @@ verses a file lost (`spablm`, `deuelo`, `cmn-cu89t`). Spanish is the worked exam
 
 ## Website
 
-Built by `.github/workflows/pages.yml` on every push to `master` (nothing generated is committed): `build_volume.py --check`
-for every package, every translation's volumes (`BIBLE_LANG=<code>`, each `tools/lang/<code>.json`), the text PDFs by book
-(cached), the downloads (every language, cached), `rebuild_site.py --thumbs` and `--lang <code>` (thumbnails cached), then deploys
-`bible-en`, each `bible-<code>` and the
-router `bible` to Cloudflare (`npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc`, then `npx wrangler@4 deploy`; Node 22),
-and the English site alone to GitHub Pages (apphaus2.github.io/Bible, without the downloads: its 1 GB limit; Settings › Pages ›
-Source must be "GitHub Actions", else a Jekyll branch build runs and fails on every push). Needs Actions secrets
-`CLOUDFLARE_API_TOKEN` ("Edit Cloudflare Workers" template, zone apphaus.us) and `CLOUDFLARE_ACCOUNT_ID`, else the Cloudflare step
-is skipped. By hand from Windows: `npx wrangler login` once, build the sites, deploy the eleven Workers (each `bible-<code>`,
-then the router; account apphaus@outlook.com). Quote a step name in `pages.yml` that holds ": " (it made the file invalid and
-stopped every run from 2026-10-20 to 10-22).
+Built and deployed **by hand from Windows** (nothing generated is committed; account apphaus@outlook.com, `npx wrangler login`
+once). For each translation: `BIBLE_LANG=<code> build_volume.py` for every package, `asv_pdf.py --text <id>`, `downloads.py
+--lang <code>`, `rebuild_site.py --thumbs --lang <code>`; English the same without `BIBLE_LANG`/`--lang` (`asv_pdf.py` alone).
+Then deploy each language Worker, `npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc` (`en` and every `<code>`), and the
+router last, `npx wrangler@4 deploy`. Downloads and text PDFs are cached by hash, thumbnails too: only changed books are redone.
+GitHub Actions (`.github/workflows/check.yml`) only runs `build_volume.py --check` for every package on each push to `master`.
+There is no GitHub Pages copy. In a workflow, quote a step name that holds ": " (it makes the whole file invalid).
 
 - Pages: `index.html` (a section per volume with its downloads, "The Text", a table of contents), `<id>/chapter-NN/index.html`,
   `<id>/chapter-NN/NN-<slug>.html` (Prev/Next across books). All links relative.
@@ -256,7 +252,7 @@ stopped every run from 2026-10-20 to 10-22).
 - `asv/<BOOK>.pdf` (66 files, `asv/index.json`): the ASV by book; the "📖 p. N" button, "<range> in the ASV" and every footer
   credit open the book at the page's chapter. The whole-Bible PDF is built only to split it, never published.
 - `download/<lang>/`: each book as `<id>.epub` (fixed layout) and `<id>.pdf` (reading PDF at page size), split at chapter boundaries
-  into `<id>-1.pdf` … under 24 MB (Cloudflare's 25 MiB file limit: Genesis is two parts). Links are absolute to bible.apphaus.us.
+  into `<id>-1.pdf` … under 24 MB (Cloudflare's 25 MiB file limit: Genesis is two parts). Links are absolute (bible.apphaus.us/…).
 - `manifest.json` (every volume, chapter, page, thumbnail, text and download URL); `thumbs/` 380×540 JPGs, re-rendered by hash.
 
 Local: `python tools/site/rebuild_site.py --thumbs` (Node + Playwright + Pillow) → `_site/`; `python tools/book/downloads.py` first

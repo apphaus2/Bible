@@ -1,0 +1,28 @@
+# Check the full edition on every push to master: every committed page matches its plan, every text block is ASV and
+# every cut is on a page (tools/full/build_volume.py --check). Nothing is built or deployed here: the site is built and
+# deployed to Cloudflare by hand (see CLAUDE.md, "Website").
+name: Check the full edition
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check every volume against the ASV
+        run: |
+          for v in tools/full/*/__init__.py; do
+            python3 tools/full/build_volume.py "$(basename "$(dirname "$v")")" --check
+          done

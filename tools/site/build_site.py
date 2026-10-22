@@ -1,4 +1,4 @@
-"""Build the static website (deployed by GitHub Actions to bible.apphaus.us and GitHub Pages) from the volumes, in one language.
+"""Build the static website (deployed by hand to Cloudflare, bible.apphaus.us) from the volumes, in one language.
 
 Usage: BIBLE_LANG=es python3 tools/site/build_site.py <out_dir> <key>=<dir> ... [--peer <lang>=<volumes dir> ...]
   - each key names a volume folder (volumes/<id>/ or volumes/<lang>/<id>/): canvas.json, volume.json, pages/
@@ -78,7 +78,7 @@ def downloads(up, S, cls="cta alt"):
     """Download buttons for a volume: the EPUB, then the PDF (or its parts, each named by its chapters)."""
     d = DOWNLOADS.get(S["id"])
     if not d: return ""
-    base = f"{home(LANG)}download/{LANG}/"   # absolute: the GitHub Pages mirror does not carry the files (its 1 GB limit)
+    base = f"{home(LANG)}download/{LANG}/"   # absolute, like the manifest's download URLs
     out_ = [f'<a class="{cls}" href="{base}{d["epub"]["file"]}" download title="{esc(T("epub_of", n=S["name"], s=mb(d["epub"]["size"])))}">EPUB · {mb(d["epub"]["size"])}</a>']
     for x in d["pdf"]:
         name = "PDF" if len(d["pdf"]) == 1 else f'PDF · {esc(x["range"])}'

@@ -7,8 +7,8 @@ language into _site-<lang>/<lang>/ (served by bible-<lang> at /<lang>/), from vo
 BIBLE_LANG=<lang>), _book/asv-<lang>/ (asv_pdf.py --text <id>) and _book/download/<lang>/ (downloads.py --lang <lang>).
 Every other language that has volumes is passed to build_site.py for the language menu.
 
-- Every volumes/<id>/ that has a volume.json (pages/ + canvas.json) is passed straight through. (digest/, the old first
-  drafts, is not published: it stays in the repo only as a source of drawings that volume pages lift.)
+- Every volumes/<id>/ that has a volume.json (pages/ + canvas.json) is passed straight through. (The old first drafts'
+  pages in tools/full/reference/ are not published: they stay only as a source of drawings that volume pages lift.)
 - The ASV text: the per-book PDFs in _book/asv/ (tools/book/asv_pdf.py), if built, are copied to the site and linked from the
   home page, every chapter page and every page's "ASV" credit (the whole-Bible PDF is not published: it is large).
 - The downloads: _book/download/<lang>/ (tools/book/downloads.py: each volume as an EPUB and a reading PDF), if built.
@@ -16,7 +16,7 @@ The output folder (default _site/, which is git-ignored) is cleared except for t
 tools/site/build_site.py writes the pages and tools/site/assets/* is copied in. With --thumbs, any thumbnail
 that is missing or whose source page changed (tracked by a hash in thumbs/.sources.json) is rendered with
 Playwright (needs node + the `playwright` package + Pillow); thumbnails no page uses any more are deleted.
-GitHub Actions (.github/workflows/pages.yml) runs exactly this and deploys _site/ to Cloudflare (bible.apphaus.us) and GitHub Pages."""
+The result is deployed to Cloudflare by hand (npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc; see CLAUDE.md)."""
 import hashlib, json, os, pathlib, shutil, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
