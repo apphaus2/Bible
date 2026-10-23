@@ -55,6 +55,12 @@ body.reader{background:var(--night)}
 .toc span{min-width:56px;color:var(--red);font-weight:600}
 .toc em{font-style:normal;color:var(--muted);margin-left:auto}
 @media (max-width:600px){.bar{font-size:11px}.btn{padding:0 12px}}
+/* the switch between the two testaments' home pages (index.html, index2.html), above the books */
+.testaments{display:flex;flex-wrap:wrap;gap:0 4px;margin:-4px 0 8px;border-bottom:3px solid var(--line)}
+.testaments a{margin-bottom:-3px;padding:10px 18px 8px;border:3px solid transparent;border-bottom:0;font-family:Anton,sans-serif;font-size:18px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.testaments a[href]:hover{color:var(--red)}
+.testaments a[aria-current]{border-color:var(--line);background:var(--paper);color:var(--ink)}
+@media (max-width:520px){.testaments a{padding:8px 10px 6px;font-size:15px}}
 .sec.small{font-size:22px;margin-top:28px;color:var(--muted)}
 .note{max-width:640px;margin:0 0 18px;padding:10px 14px;border:2px solid var(--ink);background:#E8E2D6;font-size:12px;line-height:1.6}
 .dl{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:16px 0 8px}

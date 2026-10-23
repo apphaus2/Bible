@@ -5,7 +5,10 @@ Usage: BIBLE_LANG=es python3 tools/site/build_site.py <out_dir> <key>=<dir> ... 
   - each --peer names another language's volumes, for the language menu: every page links to the page in that language
     that covers the same verses (page counts differ between languages, so pages are matched by verse, not by number)
 The language's site root is <out_dir> (English: the domain root; another language: <out>/<lang>/, served at /<lang>/).
-Every page URL is <path>/<book-or-chapter>/<slug>.html, two levels deep, so relative links are the same everywhere."""
+Every page URL is <path>/<book-or-chapter>/<slug>.html, two levels deep, so relative links are the same everywhere.
+Two home pages, one per testament, linked by a switch above the books: index.html (the Old Testament, volumes 1–39)
+and index2.html (the New, volumes 40–66); each has its own volumes, books of the text and page index, and every page's
+breadcrumbs lead back to its own testament's."""
 import os, json, re, sys, html, pathlib, unicodedata
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 args = [a for a in sys.argv[1:] if not a.startswith("--peer")]
@@ -39,12 +42,19 @@ for key, d in SRC.items():
     VOLUMES.append(V)
 VOLUMES.sort(key=lambda v: v.get("order", 0))
 SERIES = VOLUMES
+def testament(S): return "nt" if S.get("order", 0) >= 40 else "ot"   # Matthew is volume 40
+SPLASH = {"ot": "index.html", "nt": "index2.html"}                   # each testament's home page
+TESTAMENT = {"ot": L["words"]["bm_ot"], "nt": L["words"]["bm_nt"]}  # "The Old Testament" (the text PDF's bookmarks)
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@900' + "".join("&" + q for q in langs.font_query(LANG)) + '&display=swap" rel="stylesheet">'
 # ── the Bible text, one PDF per book (tools/book/asv_pdf.py; rebuild_site.py copies asv/ in when it exists) ──
 ASV_CODES = {}                      # "1 Samuel" -> "1SA", from the \h line of each book of the language's text
+NT_CODES = []                       # the New Testament's books: eBible numbers them from 70 (70-MAT …)
 for f in sorted((ROOT / "ref" / TEXT[0]).glob("[0-9][0-9]-*.usfm")):
     m = re.search(r"^\\h (.+?)\s*$", f.read_text(encoding="utf-8"), re.M)
-    if m: ASV_CODES[m.group(1)] = re.match(r"\d\d-(\w{3})", f.name).group(1)
+    code = re.match(r"\d\d-(\w{3})", f.name).group(1)
+    if m: ASV_CODES[m.group(1)] = code
+    if int(f.name[:2]) >= 70: NT_CODES.append(code)
+NT_FIRST = next((n for n, c in ASV_CODES.items() if c == "MAT"), "Matthew")   # named on index2.html before it has a volume
 ASV_CODES.update(L.get("codes", {}))                          # where the text's own book names differ from the labels
 ASV_BOOKS = json.loads((out / "asv" / "index.json").read_text(encoding="utf-8")) if (out / "asv" / "index.json").exists() else {}
 def asv_where(ref):
@@ -52,24 +62,24 @@ def asv_where(ref):
     for name in sorted(ASV_CODES, key=len, reverse=True):
         m = re.match(re.escape(name) + r" (\d+)", ref)
         if m: return ASV_CODES[name], m.group(1)
-def asv_href(up, ref=""):
+def asv_href(up, ref="", home_page="index.html"):
     """Link to the text at the chapter a ref starts in: the book's own PDF (asv/GEN.pdf#page=N, small files like the
-    HistoryX reader's); with no ref, the list of books on the home page."""
+    HistoryX reader's); with no ref, the list of books on the (testament's) home page."""
     w = asv_where(ref)
     if w and w[0] in ASV_BOOKS:
         b = ASV_BOOKS[w[0]]; pg = b["chapters"].get(w[1]) or next(iter(b["chapters"].values()))
         return f"{up}{b['file']}#page={pg[0]}"
-    return f"{up}index.html#text"
+    return f"{up}{home_page}#text"
 def asv_button(up, ref=""):
     """The reader's top-right link to the text of the page (📖 p. N: the page of the text PDF where its chapter starts)."""
     w = asv_where(ref)
     if not w or w[0] not in ASV_BOOKS: return ""
     b = ASV_BOOKS[w[0]]; pg = b["chapters"].get(w[1]) or next(iter(b["chapters"].values()))
     return f'<a class="btn asv" href="{asv_href(up, ref)}" title="{esc(T("pdf_of", t=b["title"], c=w[1], k=CREDIT))}">📖 p. {pg[1]}</a>'
-def asv_credit(up, ref=""):
+def asv_credit(up, ref="", home_page="index.html"):
     """The translation's credit in every footer, linked to the text when the PDFs are on the site."""
     if not ASV_BOOKS: return f"<span>{CREDIT}</span>"
-    return f'<a href="{asv_href(up, ref)}" title="{esc(T("read_in", r=(ref + " ") if ref else "", c=CREDIT))}">{CREDIT}</a>'
+    return f'<a href="{asv_href(up, ref, home_page)}" title="{esc(T("read_in", r=(ref + " ") if ref else "", c=CREDIT))}">{CREDIT}</a>'
 
 # ── the manga by book: EPUB and reading PDF (tools/book/downloads.py; rebuild_site.py copies download/<lang>/ in) ──
 DOWNLOADS = json.loads((out / "download" / LANG / "index.json").read_text(encoding="utf-8")) if (out / "download" / LANG / "index.json").exists() else {}
@@ -132,9 +142,10 @@ for lang, root in PEERS.items():
         for b in V["books"]:
             PEER[lang][(V["id"], b["dir"])] = [(s, start(r)) for s, r in chapter_pages(vj.parent, V, b, canvas)]
 
-def lang_menu(vol=None, chap=None, i=None, ref=None):
+def lang_menu(vol=None, chap=None, i=None, ref=None, home_page="index.html"):
     """The language dropdown: each language named in itself, linking to the same page there when it exists (the page of
-    that language whose verses start at or before this page's), else to that chapter, else to that language's home."""
+    that language whose verses start at or before this page's), else to that chapter, else to that language's home
+    (home_page: the same testament's)."""
     if not PEER: return ""
     items = [f'<li><span aria-current="true" lang="{LANG}">{LANGS[LANG]}</span></li>']
     for lang in sorted(PEER, key=lambda l: LANGS.get(l, l)):
@@ -147,6 +158,7 @@ def lang_menu(vol=None, chap=None, i=None, ref=None):
                 j = 0 if i == 0 else max((k for k, (_, s) in enumerate(pages) if s <= me), default=0)
                 url += f"{pages[j][0]}.html"
             else: url += "index.html"
+        elif home_page != "index.html": url += home_page
         items.append(f'<li><a href="{url}" lang="{lang}" hreflang="{lang}">{LANGS.get(lang, lang)}</a></li>')
     return (f'<details class="lang"><summary aria-label="{T("language")}">{LANGS[LANG]}</summary>'
             f'<ul>{"".join(items)}</ul></details>')
@@ -157,7 +169,7 @@ manifest = {"title": "Bible Manga", "lang": LANG, "series": []}
 FLAT = {"full": []}   # every chapter in reading order, for prev/next
 for S in SERIES:
     canvas = json.loads((SRC[S["key"]] / "canvas.json").read_text(encoding="utf-8"))
-    ms = {"id": S["id"], "path": S["path"], "edition": S["edition"], "title": S["name"], "books": []}
+    ms = {"id": S["id"], "path": S["path"], "edition": S["edition"], "title": S["name"], "testament": testament(S), "books": []}
     for b in S["books"]:
         b["series"] = S
         names = [n for n in canvas["order"] if b["match"](n)]
@@ -194,7 +206,8 @@ for ed, chain in FLAT.items():
   for bi, b in enumerate(chain):
     S = b["series"]; SN = S["name"] + edition_tag(S); L = b["label"]
     P = b["pages"]; d = out / S["path"] / b["dir"]; d.mkdir(parents=True, exist_ok=True)
-    crumbs0 = ['<a href="../../index.html">Bible Manga</a>', f'<a href="../../index.html#{S["path"]}">{SN}</a>']
+    hp = SPLASH[testament(S)]                                           # back to its own testament's home page
+    crumbs0 = [f'<a href="../../{hp}">Bible Manga</a>', f'<a href="../../{hp}#{S["path"]}">{SN}</a>']
     for i, p in enumerate(P):
         prev = P[i-1]["slug"] + ".html" if i > 0 else (href(b, chain[bi-1], chain[bi-1]["pages"][-1]) if bi > 0 else None)
         nxt = P[i+1]["slug"] + ".html" if i < len(P)-1 else (href(b, chain[bi+1], chain[bi+1]["pages"][0]) if bi < len(chain)-1 else None)
@@ -276,46 +289,61 @@ def section(S, cls):
   <ol class="grid books">
 {chr(10).join(book_card(b) for b in S['books'])}
   </ol>'''
-full_secs = "\n".join(section(S, "sec") for S in VOLUMES)
-first = FLAT["full"][0]
-home_text_cta = f'<a class="cta alt" href="#text">{T("the_text", c=CREDIT)}</a>' if ASV_BOOKS else ""
-text_sec = "" if not ASV_BOOKS else f'''  <h2 class="sec" id="text">{T("text")}</h2>
+def splash(t):
+    """One testament's home page (index.html, index2.html): its volumes, its books of the text and its page index, with
+    a switch to the other's. Before the New Testament has a volume, index2.html names its first book as in progress."""
+    vols = [S for S in VOLUMES if testament(S) == t]
+    chain = [b for b in FLAT["full"] if testament(b["series"]) == t]
+    fname = SPLASH[t]
+    first = chain[0] if chain else FLAT["full"][0]                  # og:image: the other testament's while this has none
+    switch = "".join(f'<a aria-current="page">{esc(TESTAMENT[k])}</a>' if k == t else f'<a href="{SPLASH[k]}">{esc(TESTAMENT[k])}</a>'
+                     for k in SPLASH)
+    secs = "\n".join(section(S, "sec") for S in vols)
+    begin = f'<a class="cta" href="{first["series"]["path"]}/{first["dir"]}/{first["pages"][0]["slug"]}.html">{T("begin")}</a>' if chain else ""
+    books = {c: b for c, b in ASV_BOOKS.items() if (c in NT_CODES) == (t == "nt")}
+    text_cta = f'<a class="cta{" alt" if begin else ""}" href="#text">{T("the_text", c=CREDIT)}</a>' if books else ""
+    text_sec = "" if not books else f'''  <h2 class="sec" id="text">{T("text")}</h2>
   <p class="lede">{esc(T("text_lede", c=CREDIT))}</p>
-  <ol class="asv-books">{"".join(f'<li><a href="{b["file"]}">{esc(b["title"])}</a></li>' for b in ASV_BOOKS.values())}</ol>
+  <ol class="asv-books">{"".join(f'<li><a href="{b["file"]}">{esc(b["title"])}</a></li>' for b in books.values())}</ol>
 '''
-vol_names = UI[LANG].get("list_sep", ", ").join(v["name"] for v in VOLUMES) or "—"   # ja "、"
-(out / "index.html").write_text(f'''<!doctype html>
+    toc = "" if not chain else f'''  <h2 class="sec">{T("all")}</h2>
+  <ol class="toc">
+{chr(10).join(toc_entry(b) for b in chain)}
+  </ol>
+'''
+    vol_names = UI[LANG].get("list_sep", ", ").join(v["name"] for v in vols) or (NT_FIRST if t == "nt" else "—")   # ja "、"
+    kanji = " · ".join(v["kanji"] for v in vols)
+    (out / fname).write_text(f'''<!doctype html>
 <html lang="{LANG}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bible Manga</title>
+<title>{"Bible Manga" if t == "ot" else f"{esc(TESTAMENT[t])} · Bible Manga"}</title>
 <meta name="description" content="{esc(T("meta", c=CREDIT))}">
 <meta property="og:image" content="thumbs/{thumb(first, first['pages'][0])}">
-{"".join(f'<link rel="alternate" hreflang="{l}" href="{home(l)}">' for l in [LANG, *PEER])}
+{"".join(f'<link rel="alternate" hreflang="{l}" href="{home(l)}{"" if t == "ot" else fname}">' for l in [LANG, *PEER])}
 {FONTS}
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body class="index home">
-{bar(['<span aria-current="page">Bible Manga</span>'], menu=lang_menu())}
+{bar(['<span aria-current="page">Bible Manga</span>'], menu=lang_menu(home_page=fname))}
 <main class="wrap">
   <section class="hero">
-    <p class="kicker">Bible Manga · {" · ".join(v["kanji"] for v in VOLUMES)}</p>
+    <p class="kicker">Bible Manga{" · " + kanji if kanji else ""}</p>
     <h1>Bible Manga</h1>
     <p class="lede">{esc(T("lede", c=CREDIT, v=vol_names))}</p>
-    <a class="cta" href="{first['series']['path']}/{first['dir']}/{first['pages'][0]['slug']}.html">{T("begin")}</a>{home_text_cta}
+    {begin}{text_cta}
   </section>
   <h2 class="sec">{T("books")}</h2>
-{full_secs}
-{text_sec}  <h2 class="sec">{T("all")}</h2>
-  <ol class="toc">
-{chr(10).join(toc_entry(b) for b in FLAT["full"])}
-  </ol>
-</main>
-<footer class="foot"><span>Bible Manga</span>{asv_credit("")}</footer>
+  <nav class="testaments">{switch}</nav>
+{secs}
+{text_sec}{toc}</main>
+<footer class="foot"><span>Bible Manga</span>{asv_credit("", home_page=fname)}</footer>
 </body>
 </html>
 ''', encoding="utf-8")
+for t in SPLASH: splash(t)
+manifest["home"] = dict(SPLASH)                                     # {"ot": "index.html", "nt": "index2.html"}
 if ASV_BOOKS: manifest["text"] = {"title": CREDIT, "books": {c: {"title": b["title"], "url": b["file"]} for c, b in ASV_BOOKS.items()}}
 if DOWNLOADS: manifest["downloads"] = {LANG: {v: {"epub": f"{home(LANG)}download/{LANG}/{d['epub']['file']}",
                                                  "pdf": [{"url": f"{home(LANG)}download/{LANG}/{x['file']}", "range": x["range"]} for x in d["pdf"]]}

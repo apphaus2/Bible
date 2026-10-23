@@ -249,8 +249,11 @@ the text PDFs and downloads are hard links into `_book/`, so the tools replace t
 GitHub Actions (`.github/workflows/check.yml`) only runs `build_volume.py --check` for every package on each push to `master`.
 There is no GitHub Pages copy. In a workflow, quote a step name that holds ": " (it makes the whole file invalid).
 
-- Pages: `index.html` (a section per volume with its downloads, "The Text", a table of contents), `<id>/chapter-NN/index.html`,
-  `<id>/chapter-NN/NN-<slug>.html` (Prev/Next across books). All links relative.
+- Pages: two home pages, `index.html` (the Old Testament, volumes 1–39) and `index2.html` (the New, 40–66), linked by a
+  switch under "The Books"; each has a section per volume with its downloads, its books of "The Text" and a table of its
+  pages (before Matthew, index2.html names it as in progress). `<id>/chapter-NN/index.html`, `<id>/chapter-NN/NN-<slug>.html`
+  (Prev/Next across books, Malachi into Matthew); breadcrumbs lead to the page's own testament. Paths are unchanged: every
+  volume at `<id>/`. All links relative.
 - Reader (`site.js`): arrow keys; a swipe is a quick one-finger flick (¼ screen, ≥ 90 px, mostly sideways, < 0.6 s); a second
   finger cancels and blocks swipes for 0.6 s; nothing turns while zoomed or after a pan. Keep these rules: phones zoom to read.
 - `asv/<BOOK>.pdf` (66 files, `asv/index.json`): the ASV by book; the "📖 p. N" button, "<range> in the ASV" and every footer
