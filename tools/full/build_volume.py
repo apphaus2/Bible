@@ -1,8 +1,10 @@
 """Build one volume of the full edition.
 
-Usage (from the repo root):  python3 tools/full/build_volume.py genesis [--check]   (Exodus: build_volume.py exo)
+Usage (from the repo root):  python3 tools/full/build_volume.py genesis [--check | --force]   (Exodus: build_volume.py exo)
   --check  writes nothing: regenerates every page in memory, fails if a committed page differs from what the
            plan would produce, and runs the ASV text check (GitHub Actions runs this on every push).
+  --force  builds even when the volume's stamp says nothing it read has changed (tools/full/stamps.py): a built volume
+           is stamped with every file its plan read and every file it wrote, and is skipped while they are all unchanged.
 
 Reads tools/full/<volume>/ (META in __init__.py, cover.py, one module per manga chapter) and writes volumes/<volume>/:
   pages/*.dc.html   every page (Main.dc.html is the volume cover)
@@ -10,7 +12,7 @@ Reads tools/full/<volume>/ (META in __init__.py, cover.py, one module per manga 
   volume.json       what the website needs (chapters, page prefixes, blurbs)
   coverage.md       every Bible verse in the chapters built so far: full / partial / omitted
 Then it checks every caption, balloon and title quote against the ASV text and stops on any mismatch."""
-import sys, json, re, html, pathlib, importlib, datetime
+import os, sys, json, re, html, pathlib, importlib, datetime
 
 def save(path, text):
     """Write UTF-8 with LF line endings on every platform (Windows would otherwise write CRLF)."""
@@ -18,6 +20,7 @@ def save(path, text):
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / "kit"))
+import stamps
 
 def main(vol, check=False):
     import asv                                                        # BIBLE_LANG=es builds the Spanish edition (see asv.py)
@@ -132,6 +135,14 @@ def main(vol, check=False):
     for r, t in lost.items(): print("CUT BUT NOT ON ANY PAGE:", r, "|", t[:80])
     print(f"{vol}: {len(order)} pages, {n} text blocks checked, {bad} not found, {len(lost)} lost; coverage {tot}")
     if bad or lost: sys.exit(1)
+    if not check and stamps.watching():                               # what it read (not its own output) and what it wrote
+        mine = out.relative_to(ROOT).as_posix() + "/"
+        stamps.record(f"volumes/{asv.LANG}/{vol}", stamps.own_lang([r for r in stamps.watched() if not r.startswith(mine)], asv.LANG),
+                      [p for p in out.rglob("*") if p.is_file()])
 
 if __name__ == "__main__":
-    main(sys.argv[1], check="--check" in sys.argv)
+    vol, check = sys.argv[1], "--check" in sys.argv
+    if not check and "--force" not in sys.argv and stamps.fresh(f"volumes/{os.environ.get('BIBLE_LANG', 'en')}/{vol}"):
+        print(f"{vol}: unchanged (--force builds it anyway)"); sys.exit(0)
+    stamps.watch()
+    main(vol, check=check)

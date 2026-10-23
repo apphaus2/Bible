@@ -102,6 +102,7 @@ module (`exo`, not `exodus`).
 
 ```
 ref/<eBible id>/      Bible texts as USFM (see ref/README.md): eng-asv (the manga), one text per translation, fallbacks
+tools/build.py        the whole site in every language, only what changed (stamps: tools/full/stamps.py), then the deploys
 tools/full/           asv.py (Book: cuts, coverage; BIBLE_LANG), build_volume.py, fx.py (page(), chapter_title(), end_mark(), vref()),
                       discourse.py (pack: by_need, room, min_size, budget, default_head), speech.py (orate), rolls.py (roll_pages,
                       verse_cells), reuse.py (lift reference panels; fill()), picto.py, ntcast.py (New Testament cast),
@@ -238,10 +239,13 @@ verses a file lost (`spablm`, `deuelo`, `cmn-cu89t`). Spanish is the worked exam
 ## Website
 
 Built and deployed **by hand from Windows** (nothing generated is committed; account apphaus@outlook.com, `npx wrangler login`
-once). For each translation: `BIBLE_LANG=<code> build_volume.py` for every package, `asv_pdf.py --text <id>`, `downloads.py
---lang <code>`, `rebuild_site.py --thumbs --lang <code>`; English the same without `BIBLE_LANG`/`--lang` (`asv_pdf.py` alone).
-Then deploy each language Worker, `npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc` (`en` and every `<code>`), and the
-router last, `npx wrangler@4 deploy`. Downloads and text PDFs are cached by hash, thumbnails too: only changed books are redone.
+once) with **`python tools/build.py --deploy`** (`[en es …] [--only pkg,…] [--dry-run] [--force]`), which redoes only what
+changed: `build_volume.py` for every package in every language, 4 at once (a volume is skipped while its stamp in `_book/stamps/`
+says no file its plan read and none it wrote has changed: `tools/full/stamps.py`); then for each language `asv_pdf.py [--text
+<id>]` (stamped the same way), `downloads.py --lang` (a hash per book), `rebuild_site.py --thumbs --lang` (a hash per thumbnail;
+the text PDFs and downloads are hard links into `_book/`, so the tools replace those files, never rewrite them in place) and
+`npx wrangler@4 deploy -c tools/site/workers/<lang>.jsonc`, only when that site's files differ from the last deploy; the router
+(`npx wrangler@4 deploy`) last, only when it changed. A file nothing read before (a new `ref/` text) isn't noticed: `--force`.
 GitHub Actions (`.github/workflows/check.yml`) only runs `build_volume.py --check` for every package on each push to `master`.
 There is no GitHub Pages copy. In a workflow, quote a step name that holds ": " (it makes the whole file invalid).
 

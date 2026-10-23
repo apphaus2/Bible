@@ -12,6 +12,8 @@ Every other language that has volumes is passed to build_site.py for the languag
 - The ASV text: the per-book PDFs in _book/asv/ (tools/book/asv_pdf.py), if built, are copied to the site and linked from the
   home page, every chapter page and every page's "ASV" credit (the whole-Bible PDF is not published: it is large).
 - The downloads: _book/download/<lang>/ (tools/book/downloads.py: each volume as an EPUB and a reading PDF), if built.
+  The PDFs and downloads are hard links to the files in _book/ (no copy: they are gigabytes over ten languages), so
+  the tools that write them replace a file rather than rewrite it in place.
 The output folder (default _site/, which is git-ignored) is cleared except for thumbs/ (a cache), then
 tools/site/build_site.py writes the pages and tools/site/assets/* is copied in. With --thumbs, any thumbnail
 that is missing or whose source page changed (tracked by a hash in thumbs/.sources.json) is rendered with
@@ -25,6 +27,12 @@ SITE = ROOT / "tools" / "site"
 sys.path.insert(0, str(ROOT / "tools" / "lang"))
 import langs
 LANGS = langs.ORDER                                          # the site's languages (tools/lang/<code>.json), English first
+
+def place(src, dst):
+    """A hard link to src at dst (instant, no extra disk), or a copy where a link can't be made (another drive)."""
+    try: os.link(src, dst)
+    except OSError: shutil.copy2(src, dst)
+    return dst
 
 def vols(lang):
     d = ROOT / "volumes" / ("" if lang == "en" else lang)
@@ -45,14 +53,14 @@ def main():
         shutil.rmtree(d) if d.is_dir() else d.unlink()
     asv = ROOT / "_book" / ("asv" if lang == "en" else f"asv-{lang}")
     if (asv / "index.json").exists():                           # the Bible text, one PDF per book (tools/book/asv_pdf.py)
-        shutil.copytree(asv, out / "asv")
+        shutil.copytree(asv, out / "asv", copy_function=place)
     else: print(f"no {asv.relative_to(ROOT)}/: the site is built without the text links (run tools/book/asv_pdf.py)")
     idx = ROOT / "_book" / "download" / lang / "index.json"       # the manga by book (tools/book/downloads.py)
     if idx.exists():
         dst = out / "download" / lang; dst.mkdir(parents=True, exist_ok=True)
         shutil.copy(idx, dst / "index.json")
         for v in json.loads(idx.read_text(encoding="utf-8")).values():
-            for f in [v["epub"]["file"], *(x["file"] for x in v["pdf"])]: shutil.copy(idx.parent / f, dst / f)
+            for f in [v["epub"]["file"], *(x["file"] for x in v["pdf"])]: place(idx.parent / f, dst / f)
     subprocess.run([sys.executable, str(SITE / "build_site.py"), str(out), *args, *peers], check=True, env={**os.environ, "BIBLE_LANG": lang})
     (out / "assets").mkdir(exist_ok=True)
     for f in (SITE / "assets").iterdir():

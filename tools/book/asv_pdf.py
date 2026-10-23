@@ -1,6 +1,6 @@
 """The whole Bible as a reading PDF, straight from ref/eng-asv/*.usfm: the text every manga page quotes.
 
-Usage (from the repo root):  python3 tools/book/asv_pdf.py [--out _book] [--books GEN,EXO]
+Usage (from the repo root):  python3 tools/book/asv_pdf.py [--out _book] [--books GEN,EXO] [--text spaRV1909] [--force]
 
 Writes (git-ignored) _book/bible-asv.pdf: 7 × 10 in pages (the manga's print trim), two columns of serif text with
 red verse numbers and big Anton chapter numerals, a running head naming the book and a running foot like the manga's
@@ -25,8 +25,9 @@ Fonts (Source Serif 4 for the text, the manga's Anton, IBM Plex Mono and Noto Sa
 Google Fonts API, cached in _book/fonts/ and embedded.
 
 Needs Node with Playwright 1.49 or later (Chromium 131+ draws the running heads with CSS page-margin boxes) and pypdf
-(Chromium only writes bookmarks into a tagged PDF, three times the size, so pypdf adds them). The website workflow builds
-it with the site and caches it until ref/eng-asv or this script changes. --books limits the text, for proofs."""
+(Chromium only writes bookmarks into a tagged PDF, three times the size, so pypdf adds them). A run is skipped while every file it read
+(the text, this script, the language file …) and every PDF it wrote are unchanged (tools/full/stamps.py; --force builds it
+anyway). --books limits the text, for proofs."""
 import re, html, json, string, hashlib, pathlib, argparse, subprocess, urllib.parse, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -37,7 +38,7 @@ ASV_DIR = "asv"                       # the book PDFs' folder (in _book/ and on 
 CREDIT, LANG = "ASV", "en"
 # --text spaRV1909: the same book from another public-domain text, for that language's site (its "words" in tools/lang/<code>.json)
 import sys; sys.path.insert(0, str(ROOT / "tools" / "lang")); sys.path.insert(0, str(ROOT / "tools" / "full"))
-import langs, asv
+import langs, asv, stamps
 WORDS = {k: v["words"] for k, v in langs.LANGS.items() if "words" in v}
 def W(k): return WORDS[LANG][k]
 SINGLE = {"OBA", "PHM", "2JN", "3JN", "JUD"}         # one-chapter books: no chapter numeral
@@ -336,7 +337,13 @@ def main():
     ap.add_argument("--html-only", action="store_true")
     ap.add_argument("--split-only", action="store_true", help="only split an existing bible-asv.pdf into book PDFs")
     ap.add_argument("--text", default="eng-asv", help="the ref/<eBible id> to set: eng-asv (default), or any language's text (tools/lang)")
+    ap.add_argument("--force", action="store_true", help="build even when nothing it reads has changed since the last run")
     a = ap.parse_args()
+    stamp = f"text/{a.text}" + (f"-{a.books.replace(',', '-')}" if a.books else "") + (
+        "" if a.out == "_book" else "-" + hashlib.sha1(str((ROOT / a.out).resolve()).encode()).hexdigest()[:8])
+    if not (a.force or a.split_only or a.html_only) and stamps.fresh(stamp):
+        print(f"{a.text}: unchanged (--force builds it anyway)"); return
+    stamps.watch()
     global ASV, OUT_NAME, ASV_DIR, CREDIT, LANG
     if a.text != "eng-asv":
         LANG = langs.by_text(a.text); CREDIT = langs.get(LANG)["credit"]
@@ -363,6 +370,8 @@ def main():
     bookmark(raw, pdf, books)
     print(f"  {pdf.relative_to(ROOT)}  ({pdf.stat().st_size // 1024} KB)")
     split_books(out)
+    stamps.record(stamp, stamps.own_lang(sorted(stamps.watched() | {"tools/book/render.js", f"tools/lang/{LANG}.json"}), LANG),   # (read before watch())
+                  [pdf, *(p for p in (out / ASV_DIR).iterdir() if p.is_file())])
 
 def bookmark(raw, pdf, books):
     """Bookmarks (testament › book › chapter) and document info, found through the PDF's own named destinations."""
@@ -409,9 +418,11 @@ def split_books(out):
             w.add_outline_item(f"{titles[code]} {n}", pg - first)
         w.add_metadata({"/Title": f"{titles[code]} · {CREDIT}", "/Author": "Bible Manga"})
         w.page_mode = "/UseOutlines"
+        (d / f"{code}.pdf").unlink(missing_ok=True)       # a new file, not rewritten in place: the site hard-links it
         with open(d / f"{code}.pdf", "wb") as f: w.write(f)
         index[code] = {"title": titles[code], "file": f"asv/{code}.pdf", "chapters": {str(n): [pg - first + 1, pg + 1] for n, pg in chs} or {"1": [1, first + 1]}}
         total += (d / f"{code}.pdf").stat().st_size
+    (d / "index.json").unlink(missing_ok=True)
     (d / "index.json").write_text(json.dumps(index, separators=(",", ":")), encoding="utf-8")
     big = max((d / f"{c}.pdf").stat().st_size for c in order)
     print(f"  {len(order)} book PDFs in {d.relative_to(ROOT)} ({total // 1024} KB, largest {big // 1024} KB)")

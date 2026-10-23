@@ -19,6 +19,7 @@ Actions checks every page against the ASV.
 python3 tools/full/build_volume.py genesis     # write volumes/genesis/ and check every line against ref/eng-asv
 python3 tools/book/asv_pdf.py                  # _book/bible-asv.pdf and _book/asv/*.pdf (needs Playwright 1.49+ and pypdf)
 python3 tools/site/rebuild_site.py --thumbs    # local preview in _site/ (needs node + Playwright + Pillow)
+python3 tools/build.py --dry-run               # every language: what changed and would be rebuilt (--deploy: and deployed)
 ```
 
 Text source: `ref/eng-asv/` (USFM from eBible.org, public domain). See `CLAUDE.md` for the full working notes.
