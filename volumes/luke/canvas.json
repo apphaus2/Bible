@@ -765,6 +765,83 @@
    "w": 760,
    "h": 1080,
    "title": "100 · Follow Me"
+  },
+  "LUK-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Good Samaritan"
+  },
+  "LUK-C08-D-P01-TheSeventy.dc.html": {
+   "x": 840,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Seventy"
+  },
+  "LUK-C08-D-P02-TheSeventy.dc.html": {
+   "x": 1680,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The Seventy"
+  },
+  "LUK-C08-D-P03-YourNamesAreWritte.dc.html": {
+   "x": 2520,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Your Names Are Written in Heaven"
+  },
+  "LUK-C08-D-P04-YourNamesAreWritte.dc.html": {
+   "x": 3360,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Your Names Are Written in Heaven"
+  },
+  "LUK-C08-D-P05-WhoIsMyNeighbor.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Who Is My Neighbor?"
+  },
+  "LUK-C08-D-P06-ACertainManWasGoin.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · A Certain Man Was Going Down to Jericho"
+  },
+  "LUK-C08-D-P07-ACertainManWasGoin.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · A Certain Man Was Going Down to Jericho"
+  },
+  "LUK-C08-D-P08-ACertainManWasGoin.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · A Certain Man Was Going Down to Jericho"
+  },
+  "LUK-C08-D-P09-ACertainManWasGoin.dc.html": {
+   "x": 3360,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · A Certain Man Was Going Down to Jericho"
+  },
+  "LUK-C08-D-P10-MarthaMartha.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Martha, Martha"
   }
  },
  "order": [
@@ -875,7 +952,18 @@
   "LUK-C07-D-P11-HeThatIsLeastAmong.dc.html",
   "LUK-C07-D-P12-HeStedfastlySetHis.dc.html",
   "LUK-C07-D-P13-FollowMe.dc.html",
-  "LUK-C07-D-P14-FollowMe.dc.html"
+  "LUK-C07-D-P14-FollowMe.dc.html",
+  "LUK-C08-00-Title.dc.html",
+  "LUK-C08-D-P01-TheSeventy.dc.html",
+  "LUK-C08-D-P02-TheSeventy.dc.html",
+  "LUK-C08-D-P03-YourNamesAreWritte.dc.html",
+  "LUK-C08-D-P04-YourNamesAreWritte.dc.html",
+  "LUK-C08-D-P05-WhoIsMyNeighbor.dc.html",
+  "LUK-C08-D-P06-ACertainManWasGoin.dc.html",
+  "LUK-C08-D-P07-ACertainManWasGoin.dc.html",
+  "LUK-C08-D-P08-ACertainManWasGoin.dc.html",
+  "LUK-C08-D-P09-ACertainManWasGoin.dc.html",
+  "LUK-C08-D-P10-MarthaMartha.dc.html"
  ],
  "notes": {
   "Main": {
@@ -933,6 +1021,13 @@
    "text": "Chapter 7 · Thou Art the Christ (Luke 9)",
    "x": 0,
    "y": 29900
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Good Samaritan (Luke 10)",
+   "x": 0,
+   "y": 34000
   }
  },
  "designSystems": [],
