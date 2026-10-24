@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 1042 verses — 1041 full, 0 partial, 1 omitted.
+**So far:** 1098 verses — 1096 full, 0 partial, 2 omitted.
 
 ## Chapter 1 · Gabriel (Luke 1)
 
@@ -93,3 +93,9 @@ Every verse is on the page in full.
 71 verses: 71 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
+
+## Chapter 16 · Father, Into Thy Hands (Luke 23)
+
+56 verses: 55 full, 0 partial, 1 omitted.
+
+- 23:17 — omitted (0%)
