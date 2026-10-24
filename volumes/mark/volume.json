@@ -1,0 +1,21 @@
+{
+ "id": "mark",
+ "order": 41,
+ "name": "Mark",
+ "kanji": "マルコによる福音書",
+ "thumb": "vol-mark-",
+ "lede": "The forty-first book of the Bible, in full: the gospel of Jesus Christ, the Son of God — the fishermen called by the sea of Galilee, the storm stilled, the dead raised and the multitudes fed, the way to Jerusalem, the cross and the empty tomb, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Beginning of the Gospel",
+   "range": "Mark 1–2",
+   "blurb": "John in the wilderness and the baptism in the Jordan — thou art my beloved Son; the forty days; the time is fulfilled; Simon and Andrew, James and John called from their nets — I will make you to become fishers of men; the synagogue at Capernaum, the fever, the leper; the palsied man let down through the roof; Levi at the place of toll; and the Son of man lord even of the sabbath.",
+   "prefixes": [
+    "Main.dc.html",
+    "MRK-C01-"
+   ]
+  }
+ ]
+}
