@@ -145,7 +145,9 @@
   "epub_of": "{n} als EPUB ({s})",
   "lede": "Die Bibel als Manga in Farbe: ein Band für jedes Buch der Bibel, jede Szene und jede Zeile Dialog im Wortlaut der Lutherbibel ({c}). In Arbeit: {v}.",
   "meta": "Die Bibel als Manga in Farbe, im Stil der Cyberpunk-Comics der achtziger Jahre, im Wortlaut der Lutherbibel ({c}).",
-  "text_lede": "Der Manga zitiert die Lutherbibel ({c}) Wort für Wort. Hier ist der ganze Text, von 1. Mose bis zur Offenbarung, ein PDF für jedes Buch: zweispaltig, mit einem Lesezeichen für jedes Kapitel. Die Angabe {c} am Fuß jeder Manga-Seite öffnet ihr Buch beim Kapitel dieser Seite.",
+  "text_lede": "Der Manga zitiert die Lutherbibel ({c}) Wort für Wort. Hier ist der Text, {r}, ein PDF für jedes Buch: zweispaltig, mit einem Lesezeichen für jedes Kapitel. Die Angabe {c} am Fuß jeder Manga-Seite öffnet ihr Buch beim Kapitel dieser Seite.",
+  "text_ot": "von 1. Mose bis Maleachi",
+  "text_nt": "von Matthäus bis zur Offenbarung",
   "cover_of": "Titelbild: {s}, {l}"
  },
  "words": {

@@ -152,7 +152,9 @@
   "epub_of": "{n} in EPUB ({s})",
   "lede": "La Bibbia come un manga a colori: un volume per ogni libro della Bibbia, ogni scena e ogni battuta con le parole della {c}. In corso: {v}.",
   "meta": "La Bibbia come un manga a colori, nello stile del fumetto cyberpunk degli anni Ottanta, con le parole della {c}.",
-  "text_lede": "Il manga cita la {c} parola per parola. Ecco il testo completo, dalla Genesi all'Apocalisse, un PDF per libro: due colonne e un segnalibro per ogni capitolo. Il richiamo alla {c} in fondo a ogni pagina del manga apre il suo libro al capitolo di quella pagina.",
+  "text_lede": "Il manga cita la {c} parola per parola. Ecco il testo, {r}, un PDF per libro: due colonne e un segnalibro per ogni capitolo. Il richiamo alla {c} in fondo a ogni pagina del manga apre il suo libro al capitolo di quella pagina.",
+  "text_ot": "dalla Genesi a Malachia",
+  "text_nt": "da Matteo all'Apocalisse",
   "cover_of": "Copertina di {s}, {l}"
  },
  "words": {

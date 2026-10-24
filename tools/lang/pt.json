@@ -136,7 +136,9 @@
   "epub_of": "{n} em EPUB ({s})",
   "lede": "A Bíblia como um mangá colorido: um volume para cada livro da Bíblia, cada cena e cada fala com as palavras da {c}. Em andamento: {v}.",
   "meta": "A Bíblia como um mangá colorido, no estilo dos quadrinhos cyberpunk dos anos oitenta, com as palavras da {c}.",
-  "text_lede": "O mangá cita a {c} palavra por palavra. Aqui está o texto completo, de Gênesis a Apocalipse, um PDF por livro: duas colunas e um marcador para cada capítulo. O crédito {c} no rodapé de cada página do mangá abre o livro no capítulo daquela página.",
+  "text_lede": "O mangá cita a {c} palavra por palavra. Aqui está o texto, {r}, um PDF por livro: duas colunas e um marcador para cada capítulo. O crédito {c} no rodapé de cada página do mangá abre o livro no capítulo daquela página.",
+  "text_ot": "de Gênesis a Malaquias",
+  "text_nt": "de Mateus a Apocalipse",
   "cover_of": "Capa de {s}, {l}"
  },
  "words": {

@@ -183,7 +183,9 @@
   "epub_of": "{n} en EPUB ({s})",
   "lede": "La Bible en manga tout en couleurs: un volume pour chaque livre de la Bible, chaque scène et chaque réplique dans les mots de la {c}. En cours: {v}.",
   "meta": "La Bible en manga tout en couleurs, dans le style de la bande dessinée cyberpunk des années quatre-vingt, dans les mots de la {c}.",
-  "text_lede": "Le manga cite la {c} mot pour mot. Voici le texte entier, de la Genèse à l'Apocalypse, un PDF par livre: deux colonnes et un signet pour chaque chapitre. Le crédit {c} au pied de chaque page du manga ouvre son livre au chapitre de cette page.",
+  "text_lede": "Le manga cite la {c} mot pour mot. Voici le texte, {r}, un PDF par livre: deux colonnes et un signet pour chaque chapitre. Le crédit {c} au pied de chaque page du manga ouvre son livre au chapitre de cette page.",
+  "text_ot": "de la Genèse à Malachie",
+  "text_nt": "de Matthieu à l'Apocalypse",
   "cover_of": "Couverture de {s}, {l}"
  },
  "words": {
