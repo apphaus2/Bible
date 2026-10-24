@@ -1,0 +1,171 @@
+{
+ "id": "acts",
+ "order": 44,
+ "name": "Acts",
+ "kanji": "使徒行伝",
+ "thumb": "vol-acts-",
+ "lede": "The forty-fourth book of the Bible, in full: the ascension and the Spirit poured forth at Pentecost, Peter and John before the council, Stephen, the road to Damascus, Cornelius, Paul's journeys through Cyprus, Galatia, Macedonia, Achaia and Asia, the arrest in Jerusalem, the shipwreck on Melita and the gospel preached at Rome, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Promise of the Father",
+   "range": "Acts 1–2",
+   "blurb": "Forty days, and wait for the promise of the Father; ye shall be my witnesses unto the uttermost part of the earth; a cloud received him out of their sight; the upper chamber and the lot that fell upon Matthias; then Pentecost — a sound as of a mighty wind, tongues as of fire — and every man heard them in his own language; Peter's sermon, and about three thousand souls.",
+   "prefixes": [
+    "Main.dc.html",
+    "ACT-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Silver and Gold Have I None",
+   "range": "Acts 3–4",
+   "blurb": "The lame man at the door of the temple called Beautiful — silver and gold have I none; in the name of Jesus Christ of Nazareth, walk; walking, and leaping, and praising God; Peter in Solomon's porch; the ward and the council — the stone set at nought of you the builders; we cannot but speak the things which we saw and heard; the place shaken; and all things common.",
+   "prefixes": [
+    "ACT-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "We Must Obey God",
+   "range": "Acts 5–6",
+   "blurb": "Ananias and Sapphira and the price kept back — thou hast not lied unto men, but unto God; signs and wonders, and Peter's shadow on the sick in the streets; an angel by night opens the prison doors; we must obey God rather than men; Gamaliel's counsel — if it is of God, ye will not be able to overthrow them; the seven chosen to serve tables; and Stephen, his face as it had been the face of an angel.",
+   "prefixes": [
+    "ACT-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "Stephen",
+   "range": "Acts 7",
+   "blurb": "Are these things so? — Stephen's defence before the council: Abraham called out of Mesopotamia, Joseph sold into Egypt, Moses at the bush and at the Red sea, the calf, the tabernacle and the house Solomon built — howbeit the Most High dwelleth not in houses made with hands; ye stiffnecked; I see the heavens opened; and the garments laid down at the feet of a young man named Saul: Lord, lay not this sin to their charge.",
+   "prefixes": [
+    "ACT-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "The Road to Damascus",
+   "range": "Acts 8–9",
+   "blurb": "Saul laying waste the church; Philip in Samaria and Simon the sorcerer — thy silver perish with thee; the Ethiopian reading Isaiah in his chariot on the desert road — understandest thou what thou readest?; then near Damascus a light out of heaven: Saul, Saul, why persecutest thou me?; three days without sight; Ananias and the scales; the basket let down over the wall; Æneas, arise; and Tabitha, arise.",
+   "prefixes": [
+    "ACT-C05-"
+   ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "What God Hath Cleansed",
+   "range": "Acts 10–11",
+   "blurb": "Cornelius the centurion at the ninth hour and the angel of God; Peter on the housetop at Joppa and the great sheet let down by four corners — what God hath cleansed, make not thou common; Stand up; I myself also am a man; God is no respecter of persons, and the Holy Spirit fell on the Gentiles; then Antioch, Barnabas and Saul, and the disciples called Christians first.",
+   "prefixes": [
+    "ACT-C06-"
+   ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "The Word of God Grew",
+   "range": "Acts 12–13",
+   "blurb": "Herod and the sword; Peter sleeping between two soldiers, and an angel and a light in the cell — rise up quickly; the iron gate that opened of its own accord; Rhoda at the door of the gate; Herod's oration — the voice of a god, and not of a man; then at Antioch, separate me Barnabas and Saul: Cyprus and the proconsul, Elymas the sorcerer, and Paul's sermon at Antioch of Pisidia — lo, we turn to the Gentiles.",
+   "prefixes": [
+    "ACT-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "The Council at Jerusalem",
+   "range": "Acts 14–15",
+   "blurb": "Iconium divided; at Lystra the cripple leaps up and the people cry, the gods are come down to us — we also are men of like passions with you; Paul stoned and rising again; a door of faith opened unto the Gentiles; then at Jerusalem the apostles and elders gathered: Peter's word, James' judgment and the letter — it seemed good to the Holy Spirit, and to us; and the parting of Paul and Barnabas.",
+   "prefixes": [
+    "ACT-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "Come Over into Macedonia",
+   "range": "Acts 16:1–17:15",
+   "blurb": "Timothy at Lystra; forbidden in Asia, and at Troas the vision of a man of Macedonia — come over into Macedonia, and help us; Lydia, a seller of purple, by the river at Philippi; the maid with a spirit of divination; Paul and Silas in the stocks at midnight, singing hymns — the earthquake, and Sirs, what must I do to be saved?; then Thessalonica and the men who turned the world upside down, and the more noble Berœans.",
+   "prefixes": [
+    "ACT-C09-"
+   ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "The Unknown God",
+   "range": "Acts 17:16–18:28",
+   "blurb": "Athens full of idols; the Epicureans and Stoics — what would this babbler say?; Paul on the Areopagus and the altar TO AN UNKNOWN GOD — in him we live, and move, and have our being; Corinth and the tentmakers Aquila and Priscilla; be not afraid, but speak; Gallio on the judgment-seat, caring for none of these things; and Apollos, mighty in the scriptures.",
+   "prefixes": [
+    "ACT-C10-"
+   ]
+  },
+  {
+   "dir": "chapter-11",
+   "num": "11",
+   "name": "Great Is Diana",
+   "range": "Acts 19–20",
+   "blurb": "Ephesus: the twelve who knew only John's baptism; the school of Tyrannus; the sons of Sceva — Jesus I know, and Paul I know; but who are ye?; the books burned; Demetrius and the silver shrines, and the theatre crying Great is Diana of the Ephesians; Eutychus in the window at Troas; and the farewell at Miletus — it is more blessed to give than to receive.",
+   "prefixes": [
+    "ACT-C11-"
+   ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "Bound in the Spirit",
+   "range": "Acts 21:1–22:29",
+   "blurb": "Kneeling on the beach at Tyre; Agabus and Paul's girdle — I am ready not to be bound only, but also to die at Jerusalem; James and the elders and the four men under a vow; the uproar in the temple and the chief captain's soldiers; Paul borne up the stairs of the castle, then standing on the stairs to speak in the Hebrew language: the road to Damascus once more; Away with such a fellow; and But I am a Roman born.",
+   "prefixes": [
+    "ACT-C12-"
+   ]
+  },
+  {
+   "dir": "chapter-13",
+   "num": "13",
+   "name": "Before Felix",
+   "range": "Acts 22:30–24:27",
+   "blurb": "Before the council — God shall smite thee, thou whited wall; I am a Pharisee, a son of Pharisees, and the assembly divided; Be of good cheer: so must thou bear witness also at Rome; the forty under a curse and Paul's sister's son; the escort by night to Cæsarea; Tertullus the orator before Felix; and Felix and Drusilla hearing of righteousness, and self-control, and the judgment to come.",
+   "prefixes": [
+    "ACT-C13-"
+   ]
+  },
+  {
+   "dir": "chapter-14",
+   "num": "14",
+   "name": "Before Agrippa",
+   "range": "Acts 25–26",
+   "blurb": "Festus on the judgment-seat — I appeal unto Cæsar; unto Cæsar shalt thou go; Agrippa and Bernice come with great pomp; Paul stretches forth his hand: the light from heaven above the brightness of the sun, and I was not disobedient unto the heavenly vision; Paul, thou art mad; With but little persuasion thou wouldest fain make me a Christian; and except these bonds.",
+   "prefixes": [
+    "ACT-C14-"
+   ]
+  },
+  {
+   "dir": "chapter-15",
+   "num": "15",
+   "name": "The Shipwreck",
+   "range": "Acts 27",
+   "blurb": "Julius the centurion and the ship of Alexandria; Fair Havens and Paul's warning; the tempestuous wind called Euraquilo, the ship undergirded and the tackling cast out, neither sun nor stars for many days; an angel of the God whose I am — be of good cheer; the fourteenth night, the soundings and the four anchors; bread broken on the deck; and the ship broken where two seas met — so they all escaped safe to the land.",
+   "prefixes": [
+    "ACT-C15-"
+   ]
+  },
+  {
+   "dir": "chapter-16",
+   "num": "16",
+   "name": "Rome",
+   "range": "Acts 28",
+   "blurb": "The island called Melita and the barbarians' fire; the viper fastened on Paul's hand and shaken off into the fire; Publius and his father healed; the ship whose sign was the Twin Brothers; the brethren at the Market of Appius and the Three Taverns — and so we came to Rome; the chief of the Jews in Paul's lodging, and Isaiah's word; and two whole years in his own hired dwelling, preaching the kingdom of God with all boldness, none forbidding him.",
+   "prefixes": [
+    "ACT-C16-"
+   ]
+  }
+ ]
+}

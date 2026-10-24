@@ -1,0 +1,1971 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T14:54:31Z"
+ },
+ "title": "Acts — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "ACT-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Promise of the Father"
+  },
+  "ACT-C01-D-P01-TheFormerTreatise.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Former Treatise"
+  },
+  "ACT-C01-D-P02-YeShallBeMyWitness.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Ye Shall Be My Witnesses"
+  },
+  "ACT-C01-D-P03-ACloudReceivedHim.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · A Cloud Received Him"
+  },
+  "ACT-C01-D-P04-TheUpperChamber.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Upper Chamber"
+  },
+  "ACT-C01-D-P05-TheFieldOfBlood.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Field of Blood"
+  },
+  "ACT-C01-D-P06-TheLotFellUponMatt.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Lot Fell upon Matthias"
+  },
+  "ACT-C01-D-P07-TheDayOfPentecost.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Day of Pentecost"
+  },
+  "ACT-C01-D-P08-TheDayOfPentecost.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Day of Pentecost"
+  },
+  "ACT-C01-D-P09-EveryNationUnderHe.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Every Nation under Heaven"
+  },
+  "ACT-C01-D-P10-ThisIsThatWhichHat.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P11-ThisIsThatWhichHat.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P12-ThisIsThatWhichHat.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P13-ThisIsThatWhichHat.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P14-WhatShallWeDo.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · What Shall We Do?"
+  },
+  "ACT-C01-D-P15-AllThingsCommon.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · All Things Common"
+  },
+  "ACT-C01-D-P16-AllThingsCommon.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · All Things Common"
+  },
+  "ACT-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Silver and Gold Have I None"
+  },
+  "ACT-C02-D-P01-TheGateCalledBeaut.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Gate Called Beautiful"
+  },
+  "ACT-C02-D-P02-TheGateCalledBeaut.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Gate Called Beautiful"
+  },
+  "ACT-C02-D-P03-InThePorchCalledSo.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · In the Porch Called Solomon's"
+  },
+  "ACT-C02-D-P04-InThePorchCalledSo.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · In the Porch Called Solomon's"
+  },
+  "ACT-C02-D-P05-InThePorchCalledSo.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · In the Porch Called Solomon's"
+  },
+  "ACT-C02-D-P06-PutInWard.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Put in Ward"
+  },
+  "ACT-C02-D-P07-ByWhatPower.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · By What Power?"
+  },
+  "ACT-C02-D-P08-ByWhatPower.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · By What Power?"
+  },
+  "ACT-C02-D-P09-WeCannotButSpeak.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · We Cannot but Speak"
+  },
+  "ACT-C02-D-P10-WithOneAccord.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · With One Accord"
+  },
+  "ACT-C02-D-P11-WithOneAccord.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · With One Accord"
+  },
+  "ACT-C02-D-P12-OneHeartAndSoul.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · One Heart and Soul"
+  },
+  "ACT-C02-D-P13-Barnabas.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Barnabas"
+  },
+  "ACT-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · We Must Obey God"
+  },
+  "ACT-C03-D-P01-AnaniasAndSapphira.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Ananias and Sapphira"
+  },
+  "ACT-C03-D-P02-AnaniasAndSapphira.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Ananias and Sapphira"
+  },
+  "ACT-C03-D-P03-AnaniasAndSapphira.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Ananias and Sapphira"
+  },
+  "ACT-C03-D-P04-SignsAndWonders.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Signs and Wonders"
+  },
+  "ACT-C03-D-P05-ThePrisonDoorsOpen.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Prison Doors Opened"
+  },
+  "ACT-C03-D-P06-ThePrisonDoorsOpen.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Prison Doors Opened"
+  },
+  "ACT-C03-D-P07-WeMustObeyGod.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · We Must Obey God"
+  },
+  "ACT-C03-D-P08-Gamaliel.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Gamaliel"
+  },
+  "ACT-C03-D-P09-Gamaliel.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Gamaliel"
+  },
+  "ACT-C03-D-P10-TheSeven.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Seven"
+  },
+  "ACT-C03-D-P11-TheSeven.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · The Seven"
+  },
+  "ACT-C03-D-P12-Stephen.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Stephen"
+  },
+  "ACT-C03-D-P13-Stephen.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Stephen"
+  },
+  "ACT-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Stephen"
+  },
+  "ACT-C04-D-P01-BrethrenAndFathers.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Brethren and Fathers, Hearken"
+  },
+  "ACT-C04-D-P02-BrethrenAndFathers.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Brethren and Fathers, Hearken"
+  },
+  "ACT-C04-D-P03-Joseph.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Joseph"
+  },
+  "ACT-C04-D-P04-Joseph.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Joseph"
+  },
+  "ACT-C04-D-P05-Moses.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Moses"
+  },
+  "ACT-C04-D-P06-Moses.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Moses"
+  },
+  "ACT-C04-D-P07-Moses.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Moses"
+  },
+  "ACT-C04-D-P08-TheBush.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Bush"
+  },
+  "ACT-C04-D-P09-TheBush.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Bush"
+  },
+  "ACT-C04-D-P10-TheCalf.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Calf"
+  },
+  "ACT-C04-D-P11-TheTabernacleOfThe.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Tabernacle of the Testimony"
+  },
+  "ACT-C04-D-P12-TheHeavensOpened.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · The Heavens Opened"
+  },
+  "ACT-C04-D-P13-TheHeavensOpened.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Heavens Opened"
+  },
+  "ACT-C04-D-P14-TheyStonedStephen.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · They Stoned Stephen"
+  },
+  "ACT-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Road to Damascus"
+  },
+  "ACT-C05-D-P01-ScatteredAbroad.dc.html": {
+   "x": 840,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · Scattered Abroad"
+  },
+  "ACT-C05-D-P02-PhilipInSamaria.dc.html": {
+   "x": 1680,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Philip in Samaria"
+  },
+  "ACT-C05-D-P03-Simon.dc.html": {
+   "x": 2520,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Simon"
+  },
+  "ACT-C05-D-P04-Simon.dc.html": {
+   "x": 3360,
+   "y": 19600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Simon"
+  },
+  "ACT-C05-D-P05-Simon.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Simon"
+  },
+  "ACT-C05-D-P06-TheWayUntoGaza.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The Way unto Gaza"
+  },
+  "ACT-C05-D-P07-TheWayUntoGaza.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The Way unto Gaza"
+  },
+  "ACT-C05-D-P08-TheWayUntoGaza.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · The Way unto Gaza"
+  },
+  "ACT-C05-D-P09-TheWayUntoGaza.dc.html": {
+   "x": 3360,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · The Way unto Gaza"
+  },
+  "ACT-C05-D-P10-TheRoadToDamascus.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · The Road to Damascus"
+  },
+  "ACT-C05-D-P11-TheRoadToDamascus.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Road to Damascus"
+  },
+  "ACT-C05-D-P12-Ananias.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Ananias"
+  },
+  "ACT-C05-D-P13-Ananias.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Ananias"
+  },
+  "ACT-C05-D-P14-TheStreetCalledStr.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Street Called Straight"
+  },
+  "ACT-C05-D-P15-TheStreetCalledStr.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Street Called Straight"
+  },
+  "ACT-C05-D-P16-LetDownInABasket.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Let Down in a Basket"
+  },
+  "ACT-C05-D-P17-LetDownInABasket.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Let Down in a Basket"
+  },
+  "ACT-C05-D-P18-neasAndDorcas.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Æneas and Dorcas"
+  },
+  "ACT-C05-D-P19-neasAndDorcas.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Æneas and Dorcas"
+  },
+  "ACT-C05-D-P20-neasAndDorcas.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Æneas and Dorcas"
+  },
+  "ACT-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · What God Hath Cleansed"
+  },
+  "ACT-C06-D-P01-Cornelius.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Cornelius"
+  },
+  "ACT-C06-D-P02-Cornelius.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Cornelius"
+  },
+  "ACT-C06-D-P03-UponTheHousetop.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Upon the Housetop"
+  },
+  "ACT-C06-D-P04-UponTheHousetop.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Upon the Housetop"
+  },
+  "ACT-C06-D-P05-UponTheHousetop.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Upon the Housetop"
+  },
+  "ACT-C06-D-P06-IMyselfAlsoAmAMan.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · I Myself Also Am a Man"
+  },
+  "ACT-C06-D-P07-IMyselfAlsoAmAMan.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Myself Also Am a Man"
+  },
+  "ACT-C06-D-P08-GodIsNoRespecterOf.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · God Is No Respecter of Persons"
+  },
+  "ACT-C06-D-P09-GodIsNoRespecterOf.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · God Is No Respecter of Persons"
+  },
+  "ACT-C06-D-P10-PeterAtJerusalem.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Peter at Jerusalem"
+  },
+  "ACT-C06-D-P11-PeterAtJerusalem.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Peter at Jerusalem"
+  },
+  "ACT-C06-D-P12-PeterAtJerusalem.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Peter at Jerusalem"
+  },
+  "ACT-C06-D-P13-ChristiansFirstInA.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Christians First in Antioch"
+  },
+  "ACT-C06-D-P14-ChristiansFirstInA.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Christians First in Antioch"
+  },
+  "ACT-C06-D-P15-ChristiansFirstInA.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Christians First in Antioch"
+  },
+  "ACT-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Word of God Grew"
+  },
+  "ACT-C07-D-P01-HerodTheKing.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Herod the King"
+  },
+  "ACT-C07-D-P02-TheIronGate.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Iron Gate"
+  },
+  "ACT-C07-D-P03-TheIronGate.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · The Iron Gate"
+  },
+  "ACT-C07-D-P04-Rhoda.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Rhoda"
+  },
+  "ACT-C07-D-P05-Rhoda.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Rhoda"
+  },
+  "ACT-C07-D-P06-TheVoiceOfAGod.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Voice of a God"
+  },
+  "ACT-C07-D-P07-TheVoiceOfAGod.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Voice of a God"
+  },
+  "ACT-C07-D-P08-SeparateMeBarnabas.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Separate Me Barnabas and Saul"
+  },
+  "ACT-C07-D-P09-Paphos.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Paphos"
+  },
+  "ACT-C07-D-P10-Paphos.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Paphos"
+  },
+  "ACT-C07-D-P11-AntiochOfPisidia.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P12-AntiochOfPisidia.dc.html": {
+   "x": 1680,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P13-AntiochOfPisidia.dc.html": {
+   "x": 2520,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P14-AntiochOfPisidia.dc.html": {
+   "x": 3360,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P15-AntiochOfPisidia.dc.html": {
+   "x": 0,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P16-WeTurnToTheGentile.dc.html": {
+   "x": 840,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · We Turn to the Gentiles"
+  },
+  "ACT-C07-D-P17-WeTurnToTheGentile.dc.html": {
+   "x": 1680,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · We Turn to the Gentiles"
+  },
+  "ACT-C07-D-P18-WeTurnToTheGentile.dc.html": {
+   "x": 2520,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · We Turn to the Gentiles"
+  },
+  "ACT-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Council at Jerusalem"
+  },
+  "ACT-C08-D-P01-Iconium.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Iconium"
+  },
+  "ACT-C08-D-P02-Lystra.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Lystra"
+  },
+  "ACT-C08-D-P03-Lystra.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Lystra"
+  },
+  "ACT-C08-D-P04-Lystra.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Lystra"
+  },
+  "ACT-C08-D-P05-Lystra.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Lystra"
+  },
+  "ACT-C08-D-P06-TheApostlesAndTheE.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P07-TheApostlesAndTheE.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P08-TheApostlesAndTheE.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P09-TheApostlesAndTheE.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P10-TheApostlesAndTheE.dc.html": {
+   "x": 0,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P11-TheLetter.dc.html": {
+   "x": 840,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Letter"
+  },
+  "ACT-C08-D-P12-TheLetter.dc.html": {
+   "x": 1680,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Letter"
+  },
+  "ACT-C08-D-P13-PaulAndSilas.dc.html": {
+   "x": 2520,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Paul and Silas"
+  },
+  "ACT-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Come Over into Macedonia"
+  },
+  "ACT-C09-D-P01-Timothy.dc.html": {
+   "x": 840,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Timothy"
+  },
+  "ACT-C09-D-P02-ComeOverIntoMacedo.dc.html": {
+   "x": 1680,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Come Over into Macedonia"
+  },
+  "ACT-C09-D-P03-InTheNameOfJesusCh.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · In the Name of Jesus Christ"
+  },
+  "ACT-C09-D-P04-InTheNameOfJesusCh.dc.html": {
+   "x": 3360,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · In the Name of Jesus Christ"
+  },
+  "ACT-C09-D-P05-AtMidnight.dc.html": {
+   "x": 0,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · At Midnight"
+  },
+  "ACT-C09-D-P06-AtMidnight.dc.html": {
+   "x": 840,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · At Midnight"
+  },
+  "ACT-C09-D-P07-AtMidnight.dc.html": {
+   "x": 1680,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · At Midnight"
+  },
+  "ACT-C09-D-P08-MenThatAreRomans.dc.html": {
+   "x": 2520,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Men That Are Romans"
+  },
+  "ACT-C09-D-P09-Thessalonica.dc.html": {
+   "x": 3360,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Thessalonica"
+  },
+  "ACT-C09-D-P10-Thessalonica.dc.html": {
+   "x": 0,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Thessalonica"
+  },
+  "ACT-C09-D-P11-Bera.dc.html": {
+   "x": 840,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Berœa"
+  },
+  "ACT-C09-D-P12-Bera.dc.html": {
+   "x": 1680,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Berœa"
+  },
+  "ACT-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · The Unknown God"
+  },
+  "ACT-C10-D-P01-Athens.dc.html": {
+   "x": 840,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Athens"
+  },
+  "ACT-C10-D-P02-TheAreopagus.dc.html": {
+   "x": 1680,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Areopagus"
+  },
+  "ACT-C10-D-P03-TheAreopagus.dc.html": {
+   "x": 2520,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · The Areopagus"
+  },
+  "ACT-C10-D-P04-TheAreopagus.dc.html": {
+   "x": 3360,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · The Areopagus"
+  },
+  "ACT-C10-D-P05-Corinth.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Corinth"
+  },
+  "ACT-C10-D-P06-Corinth.dc.html": {
+   "x": 840,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · Corinth"
+  },
+  "ACT-C10-D-P07-Gallio.dc.html": {
+   "x": 1680,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Gallio"
+  },
+  "ACT-C10-D-P08-Gallio.dc.html": {
+   "x": 2520,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Gallio"
+  },
+  "ACT-C10-D-P09-Gallio.dc.html": {
+   "x": 3360,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · Gallio"
+  },
+  "ACT-C10-D-P10-Apollos.dc.html": {
+   "x": 0,
+   "y": 47300,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Apollos"
+  },
+  "ACT-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Great Is Diana"
+  },
+  "ACT-C11-D-P01-Ephesus.dc.html": {
+   "x": 840,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Ephesus"
+  },
+  "ACT-C11-D-P02-Ephesus.dc.html": {
+   "x": 1680,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Ephesus"
+  },
+  "ACT-C11-D-P03-Ephesus.dc.html": {
+   "x": 2520,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Ephesus"
+  },
+  "ACT-C11-D-P04-TheSonsOfSceva.dc.html": {
+   "x": 3360,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · The Sons of Sceva"
+  },
+  "ACT-C11-D-P05-TheSonsOfSceva.dc.html": {
+   "x": 0,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The Sons of Sceva"
+  },
+  "ACT-C11-D-P06-Demetrius.dc.html": {
+   "x": 840,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Demetrius"
+  },
+  "ACT-C11-D-P07-TheTheatre.dc.html": {
+   "x": 1680,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Theatre"
+  },
+  "ACT-C11-D-P08-TheTheatre.dc.html": {
+   "x": 2520,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · The Theatre"
+  },
+  "ACT-C11-D-P09-TheTheatre.dc.html": {
+   "x": 3360,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The Theatre"
+  },
+  "ACT-C11-D-P10-Troas.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Troas"
+  },
+  "ACT-C11-D-P11-Eutychus.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Eutychus"
+  },
+  "ACT-C11-D-P12-AtMiletus.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · At Miletus"
+  },
+  "ACT-C11-D-P13-AtMiletus.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · At Miletus"
+  },
+  "ACT-C11-D-P14-AtMiletus.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · At Miletus"
+  },
+  "ACT-C11-D-P15-AtMiletus.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · At Miletus"
+  },
+  "ACT-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · Bound in the Spirit"
+  },
+  "ACT-C12-D-P01-ToTyre.dc.html": {
+   "x": 840,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · To Tyre"
+  },
+  "ACT-C12-D-P02-Agabus.dc.html": {
+   "x": 1680,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Agabus"
+  },
+  "ACT-C12-D-P03-Agabus.dc.html": {
+   "x": 2520,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Agabus"
+  },
+  "ACT-C12-D-P04-JamesAndTheElders.dc.html": {
+   "x": 3360,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · James and the Elders"
+  },
+  "ACT-C12-D-P05-JamesAndTheElders.dc.html": {
+   "x": 0,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · James and the Elders"
+  },
+  "ACT-C12-D-P06-TheUproarInTheTemp.dc.html": {
+   "x": 840,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · The Uproar in the Temple"
+  },
+  "ACT-C12-D-P07-TheCastle.dc.html": {
+   "x": 1680,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · The Castle"
+  },
+  "ACT-C12-D-P08-TheCastle.dc.html": {
+   "x": 2520,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · The Castle"
+  },
+  "ACT-C12-D-P09-BrethrenAndFathers.dc.html": {
+   "x": 3360,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · Brethren and Fathers"
+  },
+  "ACT-C12-D-P10-BrethrenAndFathers.dc.html": {
+   "x": 0,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · Brethren and Fathers"
+  },
+  "ACT-C12-D-P11-BrethrenAndFathers.dc.html": {
+   "x": 840,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · Brethren and Fathers"
+  },
+  "ACT-C12-D-P12-BrethrenAndFathers.dc.html": {
+   "x": 1680,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · Brethren and Fathers"
+  },
+  "ACT-C12-D-P13-ARomanBorn.dc.html": {
+   "x": 2520,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · A Roman Born"
+  },
+  "ACT-C12-D-P14-ARomanBorn.dc.html": {
+   "x": 3360,
+   "y": 56700,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · A Roman Born"
+  },
+  "ACT-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Before Felix"
+  },
+  "ACT-C13-D-P01-TheCouncil.dc.html": {
+   "x": 840,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · The Council"
+  },
+  "ACT-C13-D-P02-TheCouncil.dc.html": {
+   "x": 1680,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · The Council"
+  },
+  "ACT-C13-D-P03-TheCouncil.dc.html": {
+   "x": 2520,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · The Council"
+  },
+  "ACT-C13-D-P04-TheForty.dc.html": {
+   "x": 3360,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · The Forty"
+  },
+  "ACT-C13-D-P05-TheForty.dc.html": {
+   "x": 0,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · The Forty"
+  },
+  "ACT-C13-D-P06-TheForty.dc.html": {
+   "x": 840,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · The Forty"
+  },
+  "ACT-C13-D-P07-UntoTheMostExcelle.dc.html": {
+   "x": 1680,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Unto the Most Excellent Governor Felix"
+  },
+  "ACT-C13-D-P08-UntoTheMostExcelle.dc.html": {
+   "x": 2520,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Unto the Most Excellent Governor Felix"
+  },
+  "ACT-C13-D-P09-Tertullus.dc.html": {
+   "x": 3360,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Tertullus"
+  },
+  "ACT-C13-D-P10-PaulSDefenceBefore.dc.html": {
+   "x": 0,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Paul's Defence before Felix"
+  },
+  "ACT-C13-D-P11-PaulSDefenceBefore.dc.html": {
+   "x": 840,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Paul's Defence before Felix"
+  },
+  "ACT-C13-D-P12-FelixAndDrusilla.dc.html": {
+   "x": 1680,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Felix and Drusilla"
+  },
+  "ACT-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Before Agrippa"
+  },
+  "ACT-C14-D-P01-Festus.dc.html": {
+   "x": 840,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Festus"
+  },
+  "ACT-C14-D-P02-IAppealUntoCsar.dc.html": {
+   "x": 1680,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · I Appeal unto Cæsar"
+  },
+  "ACT-C14-D-P03-AgrippaTheKing.dc.html": {
+   "x": 2520,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Agrippa the King"
+  },
+  "ACT-C14-D-P04-AgrippaTheKing.dc.html": {
+   "x": 3360,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Agrippa the King"
+  },
+  "ACT-C14-D-P05-AgrippaTheKing.dc.html": {
+   "x": 0,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · Agrippa the King"
+  },
+  "ACT-C14-D-P06-PaulBeforeAgrippa.dc.html": {
+   "x": 840,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P07-PaulBeforeAgrippa.dc.html": {
+   "x": 1680,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P08-PaulBeforeAgrippa.dc.html": {
+   "x": 2520,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P09-PaulBeforeAgrippa.dc.html": {
+   "x": 3360,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P10-AlmostThouPersuade.dc.html": {
+   "x": 0,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · Almost Thou Persuadest"
+  },
+  "ACT-C14-D-P11-AlmostThouPersuade.dc.html": {
+   "x": 840,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Almost Thou Persuadest"
+  },
+  "ACT-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · The Shipwreck"
+  },
+  "ACT-C15-D-P01-ACenturionNamedJul.dc.html": {
+   "x": 840,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · A Centurion Named Julius"
+  },
+  "ACT-C15-D-P02-FairHavens.dc.html": {
+   "x": 1680,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · Fair Havens"
+  },
+  "ACT-C15-D-P03-Euraquilo.dc.html": {
+   "x": 2520,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · Euraquilo"
+  },
+  "ACT-C15-D-P04-Euraquilo.dc.html": {
+   "x": 3360,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · Euraquilo"
+  },
+  "ACT-C15-D-P05-BeOfGoodCheer.dc.html": {
+   "x": 0,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · Be of Good Cheer"
+  },
+  "ACT-C15-D-P06-TheFourteenthNight.dc.html": {
+   "x": 840,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · The Fourteenth Night"
+  },
+  "ACT-C15-D-P07-TheFourteenthNight.dc.html": {
+   "x": 1680,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · The Fourteenth Night"
+  },
+  "ACT-C15-D-P08-AllEscapedSafeToTh.dc.html": {
+   "x": 2520,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · All Escaped Safe to the Land"
+  },
+  "ACT-C15-D-P09-AllEscapedSafeToTh.dc.html": {
+   "x": 3360,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · All Escaped Safe to the Land"
+  },
+  "ACT-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · Rome"
+  },
+  "ACT-C16-D-P01-Melita.dc.html": {
+   "x": 840,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Melita"
+  },
+  "ACT-C16-D-P02-Publius.dc.html": {
+   "x": 1680,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Publius"
+  },
+  "ACT-C16-D-P03-AndSoWeCameToRome.dc.html": {
+   "x": 2520,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · And So We Came to Rome"
+  },
+  "ACT-C16-D-P04-AndSoWeCameToRome.dc.html": {
+   "x": 3360,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · And So We Came to Rome"
+  },
+  "ACT-C16-D-P05-TheHopeOfIsrael.dc.html": {
+   "x": 0,
+   "y": 70700,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · The Hope of Israel"
+  },
+  "ACT-C16-D-P06-TheHopeOfIsrael.dc.html": {
+   "x": 840,
+   "y": 70700,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · The Hope of Israel"
+  },
+  "ACT-C16-D-P07-NoneForbiddingHim.dc.html": {
+   "x": 1680,
+   "y": 70700,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · None Forbidding Him"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "ACT-C01-00-Title.dc.html",
+  "ACT-C01-D-P01-TheFormerTreatise.dc.html",
+  "ACT-C01-D-P02-YeShallBeMyWitness.dc.html",
+  "ACT-C01-D-P03-ACloudReceivedHim.dc.html",
+  "ACT-C01-D-P04-TheUpperChamber.dc.html",
+  "ACT-C01-D-P05-TheFieldOfBlood.dc.html",
+  "ACT-C01-D-P06-TheLotFellUponMatt.dc.html",
+  "ACT-C01-D-P07-TheDayOfPentecost.dc.html",
+  "ACT-C01-D-P08-TheDayOfPentecost.dc.html",
+  "ACT-C01-D-P09-EveryNationUnderHe.dc.html",
+  "ACT-C01-D-P10-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P11-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P12-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P13-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P14-WhatShallWeDo.dc.html",
+  "ACT-C01-D-P15-AllThingsCommon.dc.html",
+  "ACT-C01-D-P16-AllThingsCommon.dc.html",
+  "ACT-C02-00-Title.dc.html",
+  "ACT-C02-D-P01-TheGateCalledBeaut.dc.html",
+  "ACT-C02-D-P02-TheGateCalledBeaut.dc.html",
+  "ACT-C02-D-P03-InThePorchCalledSo.dc.html",
+  "ACT-C02-D-P04-InThePorchCalledSo.dc.html",
+  "ACT-C02-D-P05-InThePorchCalledSo.dc.html",
+  "ACT-C02-D-P06-PutInWard.dc.html",
+  "ACT-C02-D-P07-ByWhatPower.dc.html",
+  "ACT-C02-D-P08-ByWhatPower.dc.html",
+  "ACT-C02-D-P09-WeCannotButSpeak.dc.html",
+  "ACT-C02-D-P10-WithOneAccord.dc.html",
+  "ACT-C02-D-P11-WithOneAccord.dc.html",
+  "ACT-C02-D-P12-OneHeartAndSoul.dc.html",
+  "ACT-C02-D-P13-Barnabas.dc.html",
+  "ACT-C03-00-Title.dc.html",
+  "ACT-C03-D-P01-AnaniasAndSapphira.dc.html",
+  "ACT-C03-D-P02-AnaniasAndSapphira.dc.html",
+  "ACT-C03-D-P03-AnaniasAndSapphira.dc.html",
+  "ACT-C03-D-P04-SignsAndWonders.dc.html",
+  "ACT-C03-D-P05-ThePrisonDoorsOpen.dc.html",
+  "ACT-C03-D-P06-ThePrisonDoorsOpen.dc.html",
+  "ACT-C03-D-P07-WeMustObeyGod.dc.html",
+  "ACT-C03-D-P08-Gamaliel.dc.html",
+  "ACT-C03-D-P09-Gamaliel.dc.html",
+  "ACT-C03-D-P10-TheSeven.dc.html",
+  "ACT-C03-D-P11-TheSeven.dc.html",
+  "ACT-C03-D-P12-Stephen.dc.html",
+  "ACT-C03-D-P13-Stephen.dc.html",
+  "ACT-C04-00-Title.dc.html",
+  "ACT-C04-D-P01-BrethrenAndFathers.dc.html",
+  "ACT-C04-D-P02-BrethrenAndFathers.dc.html",
+  "ACT-C04-D-P03-Joseph.dc.html",
+  "ACT-C04-D-P04-Joseph.dc.html",
+  "ACT-C04-D-P05-Moses.dc.html",
+  "ACT-C04-D-P06-Moses.dc.html",
+  "ACT-C04-D-P07-Moses.dc.html",
+  "ACT-C04-D-P08-TheBush.dc.html",
+  "ACT-C04-D-P09-TheBush.dc.html",
+  "ACT-C04-D-P10-TheCalf.dc.html",
+  "ACT-C04-D-P11-TheTabernacleOfThe.dc.html",
+  "ACT-C04-D-P12-TheHeavensOpened.dc.html",
+  "ACT-C04-D-P13-TheHeavensOpened.dc.html",
+  "ACT-C04-D-P14-TheyStonedStephen.dc.html",
+  "ACT-C05-00-Title.dc.html",
+  "ACT-C05-D-P01-ScatteredAbroad.dc.html",
+  "ACT-C05-D-P02-PhilipInSamaria.dc.html",
+  "ACT-C05-D-P03-Simon.dc.html",
+  "ACT-C05-D-P04-Simon.dc.html",
+  "ACT-C05-D-P05-Simon.dc.html",
+  "ACT-C05-D-P06-TheWayUntoGaza.dc.html",
+  "ACT-C05-D-P07-TheWayUntoGaza.dc.html",
+  "ACT-C05-D-P08-TheWayUntoGaza.dc.html",
+  "ACT-C05-D-P09-TheWayUntoGaza.dc.html",
+  "ACT-C05-D-P10-TheRoadToDamascus.dc.html",
+  "ACT-C05-D-P11-TheRoadToDamascus.dc.html",
+  "ACT-C05-D-P12-Ananias.dc.html",
+  "ACT-C05-D-P13-Ananias.dc.html",
+  "ACT-C05-D-P14-TheStreetCalledStr.dc.html",
+  "ACT-C05-D-P15-TheStreetCalledStr.dc.html",
+  "ACT-C05-D-P16-LetDownInABasket.dc.html",
+  "ACT-C05-D-P17-LetDownInABasket.dc.html",
+  "ACT-C05-D-P18-neasAndDorcas.dc.html",
+  "ACT-C05-D-P19-neasAndDorcas.dc.html",
+  "ACT-C05-D-P20-neasAndDorcas.dc.html",
+  "ACT-C06-00-Title.dc.html",
+  "ACT-C06-D-P01-Cornelius.dc.html",
+  "ACT-C06-D-P02-Cornelius.dc.html",
+  "ACT-C06-D-P03-UponTheHousetop.dc.html",
+  "ACT-C06-D-P04-UponTheHousetop.dc.html",
+  "ACT-C06-D-P05-UponTheHousetop.dc.html",
+  "ACT-C06-D-P06-IMyselfAlsoAmAMan.dc.html",
+  "ACT-C06-D-P07-IMyselfAlsoAmAMan.dc.html",
+  "ACT-C06-D-P08-GodIsNoRespecterOf.dc.html",
+  "ACT-C06-D-P09-GodIsNoRespecterOf.dc.html",
+  "ACT-C06-D-P10-PeterAtJerusalem.dc.html",
+  "ACT-C06-D-P11-PeterAtJerusalem.dc.html",
+  "ACT-C06-D-P12-PeterAtJerusalem.dc.html",
+  "ACT-C06-D-P13-ChristiansFirstInA.dc.html",
+  "ACT-C06-D-P14-ChristiansFirstInA.dc.html",
+  "ACT-C06-D-P15-ChristiansFirstInA.dc.html",
+  "ACT-C07-00-Title.dc.html",
+  "ACT-C07-D-P01-HerodTheKing.dc.html",
+  "ACT-C07-D-P02-TheIronGate.dc.html",
+  "ACT-C07-D-P03-TheIronGate.dc.html",
+  "ACT-C07-D-P04-Rhoda.dc.html",
+  "ACT-C07-D-P05-Rhoda.dc.html",
+  "ACT-C07-D-P06-TheVoiceOfAGod.dc.html",
+  "ACT-C07-D-P07-TheVoiceOfAGod.dc.html",
+  "ACT-C07-D-P08-SeparateMeBarnabas.dc.html",
+  "ACT-C07-D-P09-Paphos.dc.html",
+  "ACT-C07-D-P10-Paphos.dc.html",
+  "ACT-C07-D-P11-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P12-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P13-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P14-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P15-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P16-WeTurnToTheGentile.dc.html",
+  "ACT-C07-D-P17-WeTurnToTheGentile.dc.html",
+  "ACT-C07-D-P18-WeTurnToTheGentile.dc.html",
+  "ACT-C08-00-Title.dc.html",
+  "ACT-C08-D-P01-Iconium.dc.html",
+  "ACT-C08-D-P02-Lystra.dc.html",
+  "ACT-C08-D-P03-Lystra.dc.html",
+  "ACT-C08-D-P04-Lystra.dc.html",
+  "ACT-C08-D-P05-Lystra.dc.html",
+  "ACT-C08-D-P06-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P07-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P08-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P09-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P10-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P11-TheLetter.dc.html",
+  "ACT-C08-D-P12-TheLetter.dc.html",
+  "ACT-C08-D-P13-PaulAndSilas.dc.html",
+  "ACT-C09-00-Title.dc.html",
+  "ACT-C09-D-P01-Timothy.dc.html",
+  "ACT-C09-D-P02-ComeOverIntoMacedo.dc.html",
+  "ACT-C09-D-P03-InTheNameOfJesusCh.dc.html",
+  "ACT-C09-D-P04-InTheNameOfJesusCh.dc.html",
+  "ACT-C09-D-P05-AtMidnight.dc.html",
+  "ACT-C09-D-P06-AtMidnight.dc.html",
+  "ACT-C09-D-P07-AtMidnight.dc.html",
+  "ACT-C09-D-P08-MenThatAreRomans.dc.html",
+  "ACT-C09-D-P09-Thessalonica.dc.html",
+  "ACT-C09-D-P10-Thessalonica.dc.html",
+  "ACT-C09-D-P11-Bera.dc.html",
+  "ACT-C09-D-P12-Bera.dc.html",
+  "ACT-C10-00-Title.dc.html",
+  "ACT-C10-D-P01-Athens.dc.html",
+  "ACT-C10-D-P02-TheAreopagus.dc.html",
+  "ACT-C10-D-P03-TheAreopagus.dc.html",
+  "ACT-C10-D-P04-TheAreopagus.dc.html",
+  "ACT-C10-D-P05-Corinth.dc.html",
+  "ACT-C10-D-P06-Corinth.dc.html",
+  "ACT-C10-D-P07-Gallio.dc.html",
+  "ACT-C10-D-P08-Gallio.dc.html",
+  "ACT-C10-D-P09-Gallio.dc.html",
+  "ACT-C10-D-P10-Apollos.dc.html",
+  "ACT-C11-00-Title.dc.html",
+  "ACT-C11-D-P01-Ephesus.dc.html",
+  "ACT-C11-D-P02-Ephesus.dc.html",
+  "ACT-C11-D-P03-Ephesus.dc.html",
+  "ACT-C11-D-P04-TheSonsOfSceva.dc.html",
+  "ACT-C11-D-P05-TheSonsOfSceva.dc.html",
+  "ACT-C11-D-P06-Demetrius.dc.html",
+  "ACT-C11-D-P07-TheTheatre.dc.html",
+  "ACT-C11-D-P08-TheTheatre.dc.html",
+  "ACT-C11-D-P09-TheTheatre.dc.html",
+  "ACT-C11-D-P10-Troas.dc.html",
+  "ACT-C11-D-P11-Eutychus.dc.html",
+  "ACT-C11-D-P12-AtMiletus.dc.html",
+  "ACT-C11-D-P13-AtMiletus.dc.html",
+  "ACT-C11-D-P14-AtMiletus.dc.html",
+  "ACT-C11-D-P15-AtMiletus.dc.html",
+  "ACT-C12-00-Title.dc.html",
+  "ACT-C12-D-P01-ToTyre.dc.html",
+  "ACT-C12-D-P02-Agabus.dc.html",
+  "ACT-C12-D-P03-Agabus.dc.html",
+  "ACT-C12-D-P04-JamesAndTheElders.dc.html",
+  "ACT-C12-D-P05-JamesAndTheElders.dc.html",
+  "ACT-C12-D-P06-TheUproarInTheTemp.dc.html",
+  "ACT-C12-D-P07-TheCastle.dc.html",
+  "ACT-C12-D-P08-TheCastle.dc.html",
+  "ACT-C12-D-P09-BrethrenAndFathers.dc.html",
+  "ACT-C12-D-P10-BrethrenAndFathers.dc.html",
+  "ACT-C12-D-P11-BrethrenAndFathers.dc.html",
+  "ACT-C12-D-P12-BrethrenAndFathers.dc.html",
+  "ACT-C12-D-P13-ARomanBorn.dc.html",
+  "ACT-C12-D-P14-ARomanBorn.dc.html",
+  "ACT-C13-00-Title.dc.html",
+  "ACT-C13-D-P01-TheCouncil.dc.html",
+  "ACT-C13-D-P02-TheCouncil.dc.html",
+  "ACT-C13-D-P03-TheCouncil.dc.html",
+  "ACT-C13-D-P04-TheForty.dc.html",
+  "ACT-C13-D-P05-TheForty.dc.html",
+  "ACT-C13-D-P06-TheForty.dc.html",
+  "ACT-C13-D-P07-UntoTheMostExcelle.dc.html",
+  "ACT-C13-D-P08-UntoTheMostExcelle.dc.html",
+  "ACT-C13-D-P09-Tertullus.dc.html",
+  "ACT-C13-D-P10-PaulSDefenceBefore.dc.html",
+  "ACT-C13-D-P11-PaulSDefenceBefore.dc.html",
+  "ACT-C13-D-P12-FelixAndDrusilla.dc.html",
+  "ACT-C14-00-Title.dc.html",
+  "ACT-C14-D-P01-Festus.dc.html",
+  "ACT-C14-D-P02-IAppealUntoCsar.dc.html",
+  "ACT-C14-D-P03-AgrippaTheKing.dc.html",
+  "ACT-C14-D-P04-AgrippaTheKing.dc.html",
+  "ACT-C14-D-P05-AgrippaTheKing.dc.html",
+  "ACT-C14-D-P06-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P07-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P08-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P09-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P10-AlmostThouPersuade.dc.html",
+  "ACT-C14-D-P11-AlmostThouPersuade.dc.html",
+  "ACT-C15-00-Title.dc.html",
+  "ACT-C15-D-P01-ACenturionNamedJul.dc.html",
+  "ACT-C15-D-P02-FairHavens.dc.html",
+  "ACT-C15-D-P03-Euraquilo.dc.html",
+  "ACT-C15-D-P04-Euraquilo.dc.html",
+  "ACT-C15-D-P05-BeOfGoodCheer.dc.html",
+  "ACT-C15-D-P06-TheFourteenthNight.dc.html",
+  "ACT-C15-D-P07-TheFourteenthNight.dc.html",
+  "ACT-C15-D-P08-AllEscapedSafeToTh.dc.html",
+  "ACT-C15-D-P09-AllEscapedSafeToTh.dc.html",
+  "ACT-C16-00-Title.dc.html",
+  "ACT-C16-D-P01-Melita.dc.html",
+  "ACT-C16-D-P02-Publius.dc.html",
+  "ACT-C16-D-P03-AndSoWeCameToRome.dc.html",
+  "ACT-C16-D-P04-AndSoWeCameToRome.dc.html",
+  "ACT-C16-D-P05-TheHopeOfIsrael.dc.html",
+  "ACT-C16-D-P06-TheHopeOfIsrael.dc.html",
+  "ACT-C16-D-P07-NoneForbiddingHim.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Acts Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Promise of the Father (Acts 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Silver and Gold Have I None (Acts 3–4)",
+   "x": 0,
+   "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · We Must Obey God (Acts 5–6)",
+   "x": 0,
+   "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Stephen (Acts 7)",
+   "x": 0,
+   "y": 15200
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Road to Damascus (Acts 8–9)",
+   "x": 0,
+   "y": 19300
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · What God Hath Cleansed (Acts 10–11)",
+   "x": 0,
+   "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Word of God Grew (Acts 12–13)",
+   "x": 0,
+   "y": 31100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Council at Jerusalem (Acts 14–15)",
+   "x": 0,
+   "y": 36400
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Come Over into Macedonia (Acts 16:1–17:15)",
+   "x": 0,
+   "y": 40500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · The Unknown God (Acts 17:16–18:28)",
+   "x": 0,
+   "y": 44600
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Great Is Diana (Acts 19–20)",
+   "x": 0,
+   "y": 48700
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · Bound in the Spirit (Acts 21:1–22:29)",
+   "x": 0,
+   "y": 54000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Before Felix (Acts 22:30–24:27)",
+   "x": 0,
+   "y": 58100
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Before Agrippa (Acts 25–26)",
+   "x": 0,
+   "y": 62200
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · The Shipwreck (Acts 27)",
+   "x": 0,
+   "y": 66300
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · Rome (Acts 28)",
+   "x": 0,
+   "y": 69200
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

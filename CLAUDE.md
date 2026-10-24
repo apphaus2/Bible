@@ -13,10 +13,9 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 ## Status
 
 **Complete: the whole Old Testament, Genesis through Malachi (39 volumes, 4,478 pages, 23,145 verses).** Per-chapter detail is
-in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: Matthew and Mark are complete** (`mat`, built
-on `oba/minor.py`'s `Kit`, the shared `ntcast.py` cast; `mrk` reuses Matthew's art). Luke, John and Acts have unchecked first
-drafts on local branches `wip/luke`, `wip/john`, `wip/acts`, cut from an older master: lift what is sound, never merge them.
-Next: Luke, then the rest in order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
+in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: the Gospels and Acts are complete** (`mat`,
+built on `oba/minor.py`'s `Kit`, the shared `ntcast.py` cast; `mrk`, `luk`, `jhn`, `act` build on Matthew's art and Mark's
+`MarkKit`, with `drawn(..., sky=)` keeping chapter stamps in clear sky). Next: Romans, then the rest in order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
 other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
@@ -64,6 +63,7 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 41 | Mark | `mrk` | 9 | 147 | 678: 673 full; 7:16, 9:44, 9:46, 11:26, 15:28 have no text in the ASV |
 | 42 | Luke | `luk` | 17 | 265 | 1,151: 1,149 full; 17:36, 23:17 have no text in the ASV |
 | 43 | John | `jhn` | 10 | 199 | 879: 878 full; 5:4 has no text in the ASV |
+| 44 | Acts | `act` | 16 | 229 | 1,007: 1,003 full; 8:37, 15:34, 24:7, 28:29 have no text in the ASV |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.
