@@ -69,5 +69,5 @@ SEGS = [D([cp("5:1"), cp("5:2")], lambda w, h: A.washing_nets("wn1", w, h, 501),
         D([sy("6:41"), sy("6:42")], lambda w, h: A.mote_beam("mb1", w, h, 612), "#B8987A"),
         D([sy("6:43"), sy("6:44"), sy("6:45")], lambda w, h: A.fruit_trees("ft1", w, h, 613), "#8FD0E2"),
         D([sy("6:46"), sy("6:47"), sy("6:48")], lambda w, h: A.house_storm("hs1", w, h, 614), "#14141E", head="A Foundation upon the Rock"),
-        D([sy("6:49")], lambda w, h: A.house_storm("hs2", w, h, 615, rock=False), "#14141E", art_h=240)]
+        D([sy("6:49")], A.footed(lambda w, h: A.house_storm("hs2", w, h, 615, rock=False), "#3A5A7A"), "#14141E", art_h=280)]
 PG.extend(K.pack(SEGS, "LUK-C04-D", PG.next(), most=4, lone=0.5, end=nxt("NEXT · THE WIDOW OF NAIN")))

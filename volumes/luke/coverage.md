@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 352 verses — 352 full, 0 partial, 0 omitted.
+**So far:** 408 verses — 408 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Gabriel (Luke 1)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · The Widow of Nain (Luke 7)
 
 50 verses: 50 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · The Sower (Luke 8)
+
+56 verses: 56 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -59,5 +59,5 @@ SEGS = [D([cp("1:1"), cp("1:2"), cp("1:3"), cp("1:4")], lambda w, h: A.writing_d
         D([sg("1:71"), sg("1:72"), sg("1:73"), sg("1:74"), sg("1:75")], lambda w, h: A.prophecy("pp1", w, h, 123), "#1A1630"),
         F([sg("1:76"), sg("1:77")], ZACHARIAS),
         D([sg("1:78"), sg("1:79")], lambda w, h: A.dayspring("dy1", w, h, 124), "#0B0B2A", art_h=260),
-        D([cp("1:80")], lambda w, h: A.deserts("de1", w, h, 125), "#3A2A5A")]
+        D([cp("1:80")], A.footed(lambda w, h: A.deserts("de1", w, h, 125), "#6A5A5A"), "#3A2A5A", art_h=240)]
 PG.extend(K.pack(SEGS, "LUK-C01-D", PG.next(), most=4, lone=0.5, end=nxt("NEXT · GOOD TIDINGS OF GREAT JOY")))

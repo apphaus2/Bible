@@ -61,6 +61,7 @@ def Q(ref, *spec):
     out, p = [], 0
     for i, kind in enumerate(kinds):
         while p < len(t) and t[p].isspace(): p += 1
+        if p >= len(t): break                        # the verse ends at the last phrase (a "saying," before the next verse)
         frm, after = (t[p:].split()[0], t[:p]) if p else (None, None)
         if i < len(bounds):
             e = t.find(bounds[i], p)

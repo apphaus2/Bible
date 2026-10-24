@@ -23,6 +23,12 @@ GOLD = "#E8B830"
 ZACH_C, ELIS_C, ELIS_VEIL = "#F3EFE6", "#3A5A5A", "#1F5A5A"
 SHEP = ["#6A5A3A", "#7A5A3A", "#5A4A3A", "#8A6A4A"]
 
+def footed(fn, color="#8A6A4A", room=76):
+    """A drawing fn(w, h) kept clear of the chapter's end mark: drawn in the panel less `room` px at the bottom, over a strip
+    of ground in `color` (the end mark sits on the strip, never over a figure)."""
+    return lambda w, h: (f'<rect x="-10" y="{f(h - room - 4)}" width="{f(w + 20)}" height="{f(room + 14)}" fill="{color}" stroke="{INK}" stroke-width="2"></rect>'
+                         f'<g>{fn(w, h - room)}</g>')
+
 # ---- people -------------------------------------------------------------------------------------------------------------
 def zach_fig(p, x, y, s, flip=False, up=None, extra=""):
     """Zacharias the priest at a distance: a white robe, a white headcloth with a blue band, a white beard."""
@@ -161,11 +167,11 @@ def holy_place(p, w, h, seed, angel_=True, zach=True, afraid=False):
     s = fit(b, max(h * 0.12, b - 250))
     if angel_:
         o.append(glow(w * 0.76, b - 110 * s, 170 * s, "#FFFFFF", 0.7, f"{p}ag"))
-        o.append(angel(p, w * 0.76, b, s * 1.02, flip=True, up=UP_BLESS))
+        o.append(angel(p, w * 0.76, b, s * 1.02, flip=False, up=UP_BLESS))
     if zach:
         censer = '<path d="M-60 -150 L -62 -120" stroke="#E8B830" stroke-width="2"></path><path d="M-72 -120 L -52 -120 L -56 -108 L -68 -108 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.4"></path>'
         if afraid: o.append(zach_fig(p, w * 0.32, b, s * 0.96, up=[(-22, -158), (-34, -184), (-30, -206)]))
-        else: o.append(zach_fig(p, w * 0.34, b, s * 0.96, up=[(-22, -158), (-44, -152), (-60, -150)], extra=censer))
+        else: o.append(zach_fig(p, w * 0.34, b, s * 0.96, flip=True, up=[(-22, -158), (-44, -152), (-60, -150)], extra=censer))
     return "".join(o)
 
 def dumb_signs(p, w, h, seed):
@@ -204,7 +210,7 @@ def annunciation(p, w, h, seed, departed=False):
     if not departed:
         o.append(glow(w * 0.74, b - 120 * s, 220 * s, "#FFFFFF", 0.8, f"{p}ag"))
         o.append(f'<path d="M{f(w * 0.62)} {f(b)} L {f(w * 0.3)} {f(b)} L {f(w * 0.62)} {f(b - 60)} Z" fill="#FFF4C2" opacity="0.4"></path>')
-        o.append(angel(p, w * 0.74, b, s * 1.02, flip=True, up=UP_BLESS))
+        o.append(angel(p, w * 0.74, b, s * 1.02, flip=False, up=UP_BLESS))
         o.append(mary_fig(p, w * 0.36, b, s * 0.94, up=[(-22, -158), (-6, -140), (8, -150)]))
     else:
         o.append(glow(w * 0.74, b - 120 * s, 160 * s, "#FFF4C2", 0.4, f"{p}ag"))
@@ -507,7 +513,7 @@ def subject(p, w, h, seed):
     for k in range(3):
         o.append(f'<rect x="{f(w * 0.04)}" y="{f(b - h * (0.1 + 0.05 * k))}" width="{f(w * 0.16)}" height="{f(h * 0.04)}" fill="#C8985A" stroke="{INK}" stroke-width="1.6"></rect>')
     s = fit(b, max(h * 0.2, b - 230))
-    o.append(joseph_fig(p, w * 0.7, b, s, flip=True, up=[(-22, -158), (-46, -136), (-66, -128)]))
+    o.append(joseph_fig(p, w * 0.7, b, s, flip=False, up=[(-22, -158), (-46, -136), (-66, -128)]))
     o.append(boy_fig(p, w * 0.42, b, s * 0.82, up=[(-22, -158), (-44, -132), (-60, -128)], flip=True))
     o.append(mary_fig(p, w * 0.88, b, s * 0.92, flip=True))
     return "".join(o)

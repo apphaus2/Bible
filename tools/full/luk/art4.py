@@ -28,9 +28,9 @@ def elders_ask(p, w, h, seed, friends=False):
     s = fit(b, max(h * 0.24, b - 240))
     o.append(jesus(p, w * 0.24, b, s) + disciple(p, w * 0.1, b, s * 0.95, "peter"))
     if friends:
-        for i in range(3): o.append(man(p, w * (0.44 + 0.1 * i), b - i * 2, s * (0.96 - 0.02 * i), ["#5A6A7A", "#7A5A3A", "#4A5A4A"][i], flip=True, up=UP_BLESS if i == 0 else None))
+        for i in range(3): o.append(man(p, w * (0.44 + 0.1 * i), b - i * 2, s * (0.96 - 0.02 * i), ["#5A6A7A", "#7A5A3A", "#4A5A4A"][i], flip=False, up=UP_BLESS if i == 0 else None))
     else:
-        o.append(scribe_fig(p, w * 0.42, b, s * 0.96, flip=True, up=UP_BLESS) + scribe_fig(p, w * 0.53, b, s * 0.94, white=True, flip=True))
+        o.append(scribe_fig(p, w * 0.42, b, s * 0.96, flip=False, up=UP_BLESS) + scribe_fig(p, w * 0.53, b, s * 0.94, white=True, flip=True))
     return "".join(o)
 
 def bier(x, b, s, up=False):
@@ -67,11 +67,11 @@ def nain(p, w, h, seed, stage="out"):
     if stage == "out":
         o.append(jesus(p, w * 0.22, b, s) + disciple(p, w * 0.1, b, s * 0.95, "peter") + disciple(p, w * 0.34, b - 4, s * 0.9, "john"))
     elif stage in ("touch", "risen"):
-        o.append(jesus(p, bx - 150 * sf, by, sf * 1.02, up=[(-22, -158), (-46, -150), (-64, -140)] if stage == "touch" else UP_BLESS))
+        o.append(jesus(p, bx - 150 * sf, by, sf * 1.02, flip=True, up=[(-22, -158), (-46, -150), (-64, -140)] if stage == "touch" else UP_BLESS))
     else:
         o.append(jesus(p, w * 0.3, b, s))
         o.append(glow(w * 0.56, b - 120 * s, 150 * s, "#FFF4C2", 0.6, f"{p}g"))
-        o.append(man(p, w * 0.5, b, s * 0.92, "#C8A878", flip=True) + woman_fig(p, w * 0.6, b, s * 0.9, WIDOW_C, WIDOW_V, flip=True, up=[(-22, -158), (-44, -150), (-60, -152)]))
+        o.append(man(p, w * 0.5, b, s * 0.92, "#C8A878", flip=True) + woman_fig(p, w * 0.6, b, s * 0.9, WIDOW_C, WIDOW_V, flip=False, up=[(-22, -158), (-44, -150), (-60, -152)]))
         o.append(crowd(p, w * 0.7, w * 0.98, b, b - 180 * s, 4, seed, flip=True, up=UP_HIGH))
     return "".join(o)
 

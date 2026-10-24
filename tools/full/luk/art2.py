@@ -61,11 +61,11 @@ def reading(p, w, h, seed, seated_=False):
              f'<path d="M{f(w * 0.5 - 40 * s)} {f(b - 80 * s)} L {f(w * 0.5 + 40 * s)} {f(b - 90 * s)}" stroke="#4A2A1A" stroke-width="{f(6 * s)}"></path>')
     if seated_:
         o.append(jesus_seated(w * 0.42, b, s * 0.86))
-        o.append(man(p, w * 0.6, b, s * 0.94, "#5A4A3A", flip=True, up=[(-22, -158), (-36, -150), (-44, -140)])
+        o.append(man(p, w * 0.6, b, s * 0.94, "#5A4A3A", flip=False, up=[(-22, -158), (-36, -150), (-44, -140)])
                  + f'<rect x="{f(w * 0.6 - 48 * s * 0.94)}" y="{f(b - 150 * s * 0.94)}" width="{f(16 * s)}" height="{f(30 * s)}" rx="4" fill="#E8D8B0" stroke="{INK}" stroke-width="1.6"></rect>')
     else:
         o.append(glow(w * 0.42, b - 130 * s, 120 * s, "#FFF4C2", 0.6, f"{p}g"))
-        o.append(jesus(p, w * 0.42, b, s, up=[(-22, -158), (-44, -140), (-60, -134)]))
+        o.append(jesus(p, w * 0.42, b, s, flip=True, up=[(-22, -158), (-44, -140), (-60, -134)]))
         o.append(scroll(w * 0.42 + 66 * s, b - 136 * s, 46 * s, 30 * s, lines=3))
         o.append(man(p, w * 0.62, b, s * 0.92, "#5A4A3A", flip=True))
     return "".join(o)
@@ -119,7 +119,7 @@ def brow(p, w, h, seed):
     r = random.Random(seed)
     for i in range(12):
         x = w * (0.3 + 0.032 * i) + r.uniform(-4, 4)
-        o.append(man(p, x, base(x) + 2, s * r.uniform(0.9, 1.05), r.choice(HEB + ["#3A2A2A", "#4A3A3A"]), flip=False, up=UP_BLESS if i % 3 == 0 else None))
+        o.append(man(p, x, base(x) + 2, s * r.uniform(0.9, 1.05), r.choice(HEB + ["#3A2A2A", "#4A3A3A"]), flip=True, up=UP_BLESS if i % 3 == 0 else None))
     xj = w * 0.68
     o.append(jesus(p, xj, base(xj) + 2, s * 1.04, flip=True))
     return "".join(o)

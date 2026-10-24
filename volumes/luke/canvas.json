@@ -555,6 +555,111 @@
    "w": 760,
    "h": 1080,
    "title": "72 · She Loved Much"
+  },
+  "LUK-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · The Sower"
+  },
+  "LUK-C06-D-P01-TheSowerWentForthT.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Sower Went Forth to Sow"
+  },
+  "LUK-C06-D-P02-TheSowerWentForthT.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Sower Went Forth to Sow"
+  },
+  "LUK-C06-D-P03-TheSowerWentForthT.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The Sower Went Forth to Sow"
+  },
+  "LUK-C06-D-P04-ALampOnAStand.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · A Lamp on a Stand"
+  },
+  "LUK-C06-D-P05-MyMotherAndMyBreth.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · My Mother and My Brethren"
+  },
+  "LUK-C06-D-P06-WhereIsYourFaith.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Where Is Your Faith?"
+  },
+  "LUK-C06-D-P07-WhatIsThyName.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · What Is Thy Name?"
+  },
+  "LUK-C06-D-P08-WhatIsThyName.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · What Is Thy Name?"
+  },
+  "LUK-C06-D-P09-WhatIsThyName.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · What Is Thy Name?"
+  },
+  "LUK-C06-D-P10-ClothedAndInHisRig.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Clothed, and in His Right Mind"
+  },
+  "LUK-C06-D-P11-WhoIsItThatTouched.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Who Is It That Touched Me?"
+  },
+  "LUK-C06-D-P12-WhoIsItThatTouched.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Who Is It That Touched Me?"
+  },
+  "LUK-C06-D-P13-MaidenArise.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Maiden, Arise"
+  },
+  "LUK-C06-D-P14-MaidenArise.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Maiden, Arise"
   }
  },
  "order": [
@@ -635,7 +740,22 @@
   "LUK-C05-D-P09-SheLovedMuch.dc.html",
   "LUK-C05-D-P10-SheLovedMuch.dc.html",
   "LUK-C05-D-P11-SheLovedMuch.dc.html",
-  "LUK-C05-D-P12-SheLovedMuch.dc.html"
+  "LUK-C05-D-P12-SheLovedMuch.dc.html",
+  "LUK-C06-00-Title.dc.html",
+  "LUK-C06-D-P01-TheSowerWentForthT.dc.html",
+  "LUK-C06-D-P02-TheSowerWentForthT.dc.html",
+  "LUK-C06-D-P03-TheSowerWentForthT.dc.html",
+  "LUK-C06-D-P04-ALampOnAStand.dc.html",
+  "LUK-C06-D-P05-MyMotherAndMyBreth.dc.html",
+  "LUK-C06-D-P06-WhereIsYourFaith.dc.html",
+  "LUK-C06-D-P07-WhatIsThyName.dc.html",
+  "LUK-C06-D-P08-WhatIsThyName.dc.html",
+  "LUK-C06-D-P09-WhatIsThyName.dc.html",
+  "LUK-C06-D-P10-ClothedAndInHisRig.dc.html",
+  "LUK-C06-D-P11-WhoIsItThatTouched.dc.html",
+  "LUK-C06-D-P12-WhoIsItThatTouched.dc.html",
+  "LUK-C06-D-P13-MaidenArise.dc.html",
+  "LUK-C06-D-P14-MaidenArise.dc.html"
  ],
  "notes": {
   "Main": {
@@ -679,6 +799,13 @@
    "text": "Chapter 5 · The Widow of Nain (Luke 7)",
    "x": 0,
    "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · The Sower (Luke 8)",
+   "x": 0,
+   "y": 25800
   }
  },
  "designSystems": [],
