@@ -30,7 +30,8 @@ def drawn(lines, art, bg, art_h=240, size=17, **kw):
     (pass h= to fix it)."""
     if "h" not in kw:
         from oba.minor import _flat
-        kw["h"] = int(speech._height(_flat(lines), 678, size) + 44 + art_h)
+        hw = speech._height(_flat(lines), 678, size)
+        kw["h"] = int(max(hw + 44 + art_h, (hw + 40) / 0.6))       # the words get at most 62% of a panel over a drawing
     return K.drawn(lines, art, bg, **kw)
 
 def D(lines, fn, bg, **k):
