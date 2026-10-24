@@ -1,0 +1,181 @@
+{
+ "id": "luke",
+ "order": 42,
+ "name": "Luke",
+ "kanji": "ルカによる福音書",
+ "thumb": "vol-luke-",
+ "lede": "The forty-second book of the Bible, in full: Gabriel in the temple and at Nazareth, the birth in Bethlehem and the shepherds, the Spirit of the Lord upon him at Nazareth, the widow of Nain and the woman with the ointment, the good Samaritan, the lost sheep, the lost coin and the prodigal son, Zacchaeus, the cross, and the road to Emmaus, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Gabriel",
+   "range": "Luke 1",
+   "blurb": "To Theophilus, that thou mightest know the certainty; Zacharias burning incense in the temple and Gabriel that standeth in the presence of God — thy prayer is heard; Elisabeth hid five months; the angel sent to Nazareth — Hail, thou that art highly favored; behold, the handmaid of the Lord; the babe leaping in the womb; My soul doth magnify the Lord; his name is John; and Zacharias' song: the dayspring from on high hath visited us.",
+   "prefixes": [
+    "Main.dc.html",
+    "LUK-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Good Tidings of Great Joy",
+   "range": "Luke 2",
+   "blurb": "A decree from Cæsar Augustus; no room for them in the inn — the babe wrapped in swaddling clothes and laid in a manger; shepherds abiding in the field by night, the glory of the Lord round about them, and a multitude of the heavenly host: Glory to God in the highest; Mary pondering these sayings in her heart; Simeon in the temple — now lettest thou thy servant depart in peace; Anna the prophetess; and the boy of twelve among the teachers: knew ye not that I must be in my Father's house?",
+   "prefixes": [
+    "LUK-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Voice in the Wilderness",
+   "range": "Luke 3–4",
+   "blurb": "The word of God came unto John in the wilderness — every valley shall be filled; what then must we do?; the heaven opened and the Spirit as a dove — thou art my beloved Son; the generations back to Adam, the son of God; forty days tempted of the devil — it is written; the book of Isaiah at Nazareth: the Spirit of the Lord is upon me; the brow of the hill, and he passing through the midst of them; the unclean demon at Capernaum, the fever rebuked, and the good tidings to the other cities also.",
+   "prefixes": [
+    "LUK-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "Launch Out into the Deep",
+   "range": "Luke 5–6",
+   "blurb": "By the lake of Gennesaret: Master, we toiled all night, and took nothing — the nets breaking, both boats filled; depart from me, for I am a sinful man; from henceforth thou shalt catch men; the leper made clean; the palsied man let down through the tiles; Levi's great feast; new wine into fresh wine-skins; the lord of the sabbath and the withered hand; the twelve named apostles; and on a level place: blessed are ye poor; love your enemies; good measure, running over; the mote and the beam; and the house founded upon the rock.",
+   "prefixes": [
+    "LUK-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "The Widow of Nain",
+   "range": "Luke 7",
+   "blurb": "The centurion's servant — Lord, I am not worthy that thou shouldest come under my roof; the gate of Nain, the only son of his mother carried out — Weep not; Young man, I say unto thee, Arise; John's messengers: art thou he that cometh?; a reed shaken with the wind; we piped unto you, and ye did not dance; and in the Pharisee's house the woman with the alabaster cruse at his feet: her sins, which are many, are forgiven; for she loved much — go in peace.",
+   "prefixes": [
+    "LUK-C05-"
+   ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "The Sower",
+   "range": "Luke 8",
+   "blurb": "The twelve and the women who ministered of their substance; the sower went forth to sow — the way side, the rock, the thorns and the good ground; a lamp on a stand; my mother and my brethren are these that hear the word of God; the storm on the lake — Master, master, we perish; Legion in the country of the Gerasenes, and the man sitting clothed and in his right mind; the woman who touched the border of his garment; and Jaïrus' daughter: Maiden, arise.",
+   "prefixes": [
+    "LUK-C06-"
+   ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "Thou Art the Christ",
+   "range": "Luke 9",
+   "blurb": "The twelve sent forth to preach and to heal; Herod perplexed — John I beheaded: but who is this?; five loaves and two fishes, and twelve baskets; who say ye that I am? — The Christ of God; take up his cross daily; on the mountain his raiment white and dazzling, Moses and Elijah, a voice out of the cloud: This is my Son, my chosen: hear ye him; the boy healed; the least among you; his face set to go to Jerusalem; and no man, having put his hand to the plow, and looking back, is fit for the kingdom of God.",
+   "prefixes": [
+    "LUK-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "The Good Samaritan",
+   "range": "Luke 10",
+   "blurb": "The seventy sent two and two — the harvest indeed is plenteous, but the laborers are few; lambs in the midst of wolves; woe unto thee, Chorazin!; the seventy returned with joy — rejoice that your names are written in heaven; who is my neighbor? — a certain man going down from Jerusalem to Jericho, the priest and the Levite passing by on the other side, and a certain Samaritan moved with compassion: go, and do thou likewise; and Martha, Martha — Mary hath chosen the good part.",
+   "prefixes": [
+    "LUK-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "Teach Us to Pray",
+   "range": "Luke 11",
+   "blurb": "Lord, teach us to pray — Father, hallowed be thy name; the friend at midnight and three loaves; ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you; by the finger of God; the strong man fully armed; blessed are they that hear the word of God, and keep it; the sign of Jonah; the lamp of thy body is thine eye; and woe unto you Pharisees, and you lawyers, that took away the key of knowledge.",
+   "prefixes": [
+    "LUK-C09-"
+   ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "Consider the Lilies",
+   "range": "Luke 12–13",
+   "blurb": "Five sparrows sold for two pence; the rich fool and his greater barns — Thou foolish one, this night is thy soul required of thee; consider the ravens, consider the lilies, how they grow; fear not, little flock; let your loins be girded about, and your lamps burning; fire upon the earth; the tower in Siloam; the barren fig tree spared a year; the woman bowed together eighteen years, loosed on the sabbath; the narrow door; go and say to that fox; and O Jerusalem, Jerusalem, as a hen gathereth her own brood under her wings.",
+   "prefixes": [
+    "LUK-C10-"
+   ]
+  },
+  {
+   "dir": "chapter-11",
+   "num": "11",
+   "name": "The Prodigal Son",
+   "range": "Luke 14–15",
+   "blurb": "The man with the dropsy healed on the sabbath; friend, go up higher; a great supper and all the excuses — go out into the highways and hedges; count the cost of the tower; salt that hath lost its savor; the lost sheep laid on his shoulders, rejoicing; the woman who lit a lamp and swept the house for the piece of silver; and a certain man had two sons — the far country and the swine, I will arise and go to my father, while he was yet afar off his father ran and fell on his neck: this my son was dead, and is alive again; he was lost, and is found.",
+   "prefixes": [
+    "LUK-C11-"
+   ]
+  },
+  {
+   "dir": "chapter-12",
+   "num": "12",
+   "name": "The Rich Man and Lazarus",
+   "range": "Luke 16–17",
+   "blurb": "The unrighteous steward and the debtors' bonds; ye cannot serve God and mammon; a certain rich man clothed in purple and fine linen, and a beggar named Lazarus laid at his gate — carried away by the angels into Abraham's bosom; between us and you there is a great gulf fixed; if they hear not Moses and the prophets; increase our faith — the sycamine tree; the ten lepers, and the one who turned back to give glory to God; the kingdom of God is within you; and as it was in the days of Noah, and in the days of Lot.",
+   "prefixes": [
+    "LUK-C12-"
+   ]
+  },
+  {
+   "dir": "chapter-13",
+   "num": "13",
+   "name": "Zacchæus",
+   "range": "Luke 18–19",
+   "blurb": "The unrighteous judge and the widow; the Pharisee and the publican — God, be thou merciful to me a sinner; suffer the little children; one thing thou lackest; a camel through a needle's eye; the blind man by the way side at Jericho; Zacchæus, little of stature, in the sycomore tree — make haste, and come down; for to-day I must abide at thy house; the Son of man came to seek and to save that which was lost; the pounds; blessed is the King that cometh in the name of the Lord; he wept over the city; and a house of prayer.",
+   "prefixes": [
+    "LUK-C13-"
+   ]
+  },
+  {
+   "dir": "chapter-14",
+   "num": "14",
+   "name": "Render unto Cæsar",
+   "range": "Luke 20–21",
+   "blurb": "By what authority doest thou these things?; the husbandmen and the beloved son; the stone which the builders rejected; whose image and superscription? — render unto Cæsar the things that are Cæsar's, and unto God the things that are God's; the God of the living; David's Lord; the poor widow who cast in all the living that she had; not one stone upon another; Jerusalem compassed with armies; the Son of man coming in a cloud with power and great glory; heaven and earth shall pass away: but my words shall not pass away; and watch ye at every season.",
+   "prefixes": [
+    "LUK-C14-"
+   ]
+  },
+  {
+   "dir": "chapter-15",
+   "num": "15",
+   "name": "This Do in Remembrance of Me",
+   "range": "Luke 22",
+   "blurb": "The passover in the large upper room — this is my body which is given for you: this do in remembrance of me; this cup is the new covenant in my blood; I am in the midst of you as he that serveth; Simon, Simon, I made supplication for thee; the two swords; on the mount of Olives: not my will, but thine, be done — an angel from heaven strengthening him; the kiss of Judas and the ear healed; Peter's three denials, and the Lord turned and looked upon Peter; and before the council: Ye say that I am.",
+   "prefixes": [
+    "LUK-C15-"
+   ]
+  },
+  {
+   "dir": "chapter-16",
+   "num": "16",
+   "name": "Father, Into Thy Hands",
+   "range": "Luke 23",
+   "blurb": "Before Pilate — I find no fault in this man; sent to Herod, who set him at nought and arrayed him in gorgeous apparel; Barabbas, and Crucify, crucify him; Simon of Cyrene, and the daughters of Jerusalem — weep not for me; the place which is called The skull: Father, forgive them; for they know not what they do; Jesus, remember me when thou comest in thy kingdom — To-day shalt thou be with me in Paradise; the darkness, the veil of the temple rent; Father, into thy hands I commend my spirit; and the tomb that was hewn in stone.",
+   "prefixes": [
+    "LUK-C16-"
+   ]
+  },
+  {
+   "dir": "chapter-17",
+   "num": "17",
+   "name": "He Is Risen",
+   "range": "Luke 24",
+   "blurb": "At early dawn the stone rolled away, and two men in dazzling apparel: why seek ye the living among the dead? He is not here, but is risen; Peter at the tomb and the linen cloths by themselves; the road to Emmaus — their eyes were holden; abide with us, for it is toward evening; he was known of them in the breaking of the bread — was not our heart burning within us?; peace be unto you; ye are witnesses of these things; and at Bethany he lifted up his hands, and blessed them, and was carried up into heaven.",
+   "prefixes": [
+    "LUK-C17-"
+   ]
+  }
+ ]
+}

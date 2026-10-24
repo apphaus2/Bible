@@ -62,6 +62,7 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 39 | Malachi | `mal` | 1 | 13 | 55 full |
 | 40 | Matthew | `mat` | 11 | 215 | 1,071: 1,068 full; 17:21, 18:11, 23:14 have no text in the ASV |
 | 41 | Mark | `mrk` | 9 | 147 | 678: 673 full; 7:16, 9:44, 9:46, 11:26, 15:28 have no text in the ASV |
+| 42 | Luke | `luk` | 17 | 265 | 1,151: 1,149 full; 17:36, 23:17 have no text in the ASV |
 | 43 | John | `jhn` | 10 | 199 | 879: 878 full; 5:4 has no text in the ASV |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
