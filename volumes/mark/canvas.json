@@ -758,6 +758,118 @@
    "w": 760,
    "h": 1080,
    "title": "99 · Two Mites"
+  },
+  "MRK-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Watch"
+  },
+  "MRK-C08-D-P01-NotOneStoneUponAno.dc.html": {
+   "x": 840,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Not One Stone upon Another"
+  },
+  "MRK-C08-D-P02-TheBeginningOfTrav.dc.html": {
+   "x": 1680,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · The Beginning of Travail"
+  },
+  "MRK-C08-D-P03-FleeUntoTheMountai.dc.html": {
+   "x": 2520,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Flee unto the Mountains"
+  },
+  "MRK-C08-D-P04-ComingInClouds.dc.html": {
+   "x": 3360,
+   "y": 33100,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Coming in Clouds"
+  },
+  "MRK-C08-D-P05-LearnHerParable.dc.html": {
+   "x": 0,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Learn Her Parable"
+  },
+  "MRK-C08-D-P06-Watch.dc.html": {
+   "x": 840,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Watch"
+  },
+  "MRK-C08-D-P07-ForTheBurying.dc.html": {
+   "x": 1680,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · For the Burying"
+  },
+  "MRK-C08-D-P08-ForTheBurying.dc.html": {
+   "x": 2520,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · For the Burying"
+  },
+  "MRK-C08-D-P09-TheGuestChamber.dc.html": {
+   "x": 3360,
+   "y": 34300,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · The Guest-Chamber"
+  },
+  "MRK-C08-D-P10-IsItI.dc.html": {
+   "x": 0,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · Is It I?"
+  },
+  "MRK-C08-D-P11-ThisIsMyBody.dc.html": {
+   "x": 840,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · This Is My Body"
+  },
+  "MRK-C08-D-P12-BeforeTheCockCrowT.dc.html": {
+   "x": 1680,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Before the Cock Crow Twice"
+  },
+  "MRK-C08-D-P13-BeforeTheCockCrowT.dc.html": {
+   "x": 2520,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Before the Cock Crow Twice"
+  },
+  "MRK-C08-D-P14-Gethsemane.dc.html": {
+   "x": 3360,
+   "y": 35500,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Gethsemane"
+  },
+  "MRK-C08-D-P15-Gethsemane.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Gethsemane"
   }
  },
  "order": [
@@ -867,7 +979,23 @@
   "MRK-C07-D-P12-TheFirstCommandmen.dc.html",
   "MRK-C07-D-P13-TheFirstCommandmen.dc.html",
   "MRK-C07-D-P14-DavidSSon.dc.html",
-  "MRK-C07-D-P15-TwoMites.dc.html"
+  "MRK-C07-D-P15-TwoMites.dc.html",
+  "MRK-C08-00-Title.dc.html",
+  "MRK-C08-D-P01-NotOneStoneUponAno.dc.html",
+  "MRK-C08-D-P02-TheBeginningOfTrav.dc.html",
+  "MRK-C08-D-P03-FleeUntoTheMountai.dc.html",
+  "MRK-C08-D-P04-ComingInClouds.dc.html",
+  "MRK-C08-D-P05-LearnHerParable.dc.html",
+  "MRK-C08-D-P06-Watch.dc.html",
+  "MRK-C08-D-P07-ForTheBurying.dc.html",
+  "MRK-C08-D-P08-ForTheBurying.dc.html",
+  "MRK-C08-D-P09-TheGuestChamber.dc.html",
+  "MRK-C08-D-P10-IsItI.dc.html",
+  "MRK-C08-D-P11-ThisIsMyBody.dc.html",
+  "MRK-C08-D-P12-BeforeTheCockCrowT.dc.html",
+  "MRK-C08-D-P13-BeforeTheCockCrowT.dc.html",
+  "MRK-C08-D-P14-Gethsemane.dc.html",
+  "MRK-C08-D-P15-Gethsemane.dc.html"
  ],
  "notes": {
   "Main": {
@@ -925,6 +1053,13 @@
    "text": "Chapter 7 · Hosanna (Mark 11–12)",
    "x": 0,
    "y": 27500
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Watch (Mark 13:1–14:42)",
+   "x": 0,
+   "y": 32800
   }
  },
  "designSystems": [],
