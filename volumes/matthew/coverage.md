@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 985 verses — 982 full, 0 partial, 3 omitted.
+**So far:** 1071 verses — 1068 full, 0 partial, 3 omitted.
 
 ## Chapter 1 · The Son of David (Matthew 1–4)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · Gethsemane (Matthew 26)
 
 75 verses: 75 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · He Is Risen (Matthew 27–28)
+
+86 verses: 86 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

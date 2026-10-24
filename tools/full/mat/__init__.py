@@ -8,7 +8,7 @@ never drawn: his words stand over the empty wilderness, the pinnacle and the mou
 alone in every picture of the temptation. Demons are never drawn: the healed are drawn at peace. The scripture Matthew
 quotes as fulfilled is set in song boxes (sg), so it stands apart from the narration.
 
-Matthew's own cast (mat.common): Joseph the husband of Mary, a brown beard and an ochre headcloth with a cord (ochre robe at a
+Matthew's own cast (mat.common): Joseph the husband of Mary, a brown beard and a dark olive headcloth with a cord (ochre-brown robe at a
 distance); Mary from ntcast (blue); the wise-men, one dark-bearded in a purple headcloth, one white-bearded in teal, the third
 in red at a distance, on camels; Herod the king, grey-bearded, a purple headcloth with a gold band (his son Herod the tetrarch
 is ntcast.HEROD, black-bearded); the chief priests and scribes in white and slate-blue headcloths with bands.
@@ -54,5 +54,7 @@ META = {
      "blurb": "Woe unto you, scribes and Pharisees, hypocrites! — blind guides, that strain out the gnat, and swallow the camel; whited sepulchres; O Jerusalem, Jerusalem, as a hen gathereth her chickens; not one stone upon another; wars and rumors of wars; the sun darkened and the Son of man coming on the clouds of heaven; as were the days of Noah; watch therefore; the ten virgins and the door that was shut; the talents — well done, good and faithful servant; and the sheep and the goats — inasmuch as ye did it unto one of these my brethren, even these least, ye did it unto me."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "Gethsemane", "range": "Matthew 26", "bible_chapters": [26],
      "blurb": "After two days the passover cometh; the alabaster cruse at Bethany; thirty pieces of silver; one of you shall betray me — is it I, Lord?; take, eat; this is my body — this is my blood of the covenant; before the cock crow, thou shalt deny me thrice; in Gethsemane — my Father, if it be possible, let this cup pass away from me: nevertheless, not as I will, but as thou wilt; could ye not watch with me one hour?; the kiss and the swords and staves; before Caiaphas — thou hast said; and Peter by the fire: I know not the man."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "He Is Risen", "range": "Matthew 27–28", "bible_chapters": [27, 28],
+     "blurb": "Delivered up to Pilate; Judas and the thirty pieces of silver, the field of blood; art thou the King of the Jews? — thou sayest; Barabbas, and the basin of water; the scarlet robe and the crown of thorns; Simon of Cyrene; Golgotha and the three crosses; darkness over all the land — My God, my God, why hast thou forsaken me?; the veil of the temple rent in two; truly this was the Son of God; the new tomb and the sealed stone; and at the dawn of the first day of the week, the angel on the stone rolled away — he is not here; for he is risen; go ye therefore, and make disciples of all the nations: and lo, I am with you always, even unto the end of the world."},
   ],
 }

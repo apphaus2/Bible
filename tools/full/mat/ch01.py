@@ -38,11 +38,11 @@ K.label()                                          # the genealogy's cuts are on
 @P("MAT-C01-A-P01-TheBookOfTheGeneration", "The Book of the Generation")
 def generations(n):
     return chart_roll(GEN, lambda w, h: A.generations(w, h, top=0.13), 470, "Matthew 1:1–16 — The Book of the Generation", n, cap=CAP1,
-                      ref="MATT 1:1", tag="THE GENERATIONS · MATTHEW 1", extra=mk.stamp(1, "left: 14px; bottom: 12px"))
+                      ref="MATT 1:1", tag="THE GENERATIONS · MATTHEW 1")
 
 
 SEGS = [K.drawn([cp("1:17")], lambda w, h: A.fourteens(w, h), MAP, head="Fourteen Generations"),
-        K.drawn([cp("1:18")], lambda w, h: A.mary_alone("ma1", w, h, 111), "#B8987A", head="Immanuel"),
+        K.drawn([cp("1:18")], lambda w, h: A.mary_alone("ma1", w, h, 111), "#B8987A", head="Immanuel", stamp=1),
         K.face([cp("1:19")], JOSEPH_TROUBLED, bg=COLD),
         K.drawn([cp("1:20", to="saying,"), sy("1:20", frm="Joseph,"), sy("1:21")], lambda w, h: A.dream("dr1", w, h, 112), NIGHT),
         K.drawn([cp("1:22"), sg("1:23")], lambda w, h: A.prophecy("pp1", w, h, 113), "#1A1630"),

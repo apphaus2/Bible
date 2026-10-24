@@ -58,7 +58,7 @@ prophets share `oba/minor.py` (`Kit`: page packing) and each other's art; Ezekie
 | 37 | Haggai | `hag` | 1 | 9 | 38 full |
 | 38 | Zechariah | `zec` | 4 | 49 | 211 full |
 | 39 | Malachi | `mal` | 1 | 13 | 55 full |
-| 40 | Matthew | `mat` | 10 | 197 | 985: 982 full, 17:21, 18:11 and 23:14 empty in the ASV (Matthew 1–26 so far) |
+| 40 | Matthew | `mat` | 11 | 215 | 1,071: 1,068 full; 17:21, 18:11, 23:14 have no text in the ASV |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.

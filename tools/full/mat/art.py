@@ -30,7 +30,7 @@ def f(v): return f"{v:.1f}"
 NIGHT_TOP, NIGHT_BOT = "#0B0B2A", "#2A2050"
 HEB = A.HEBREW + ["#C2456A", "#5A6E8A", "#2A5A6A", "#8A3A2A"]
 TWELVE = [ROBES[k] for k in ("peter", "andrew", "james", "john", "matthew", "thomas", "judas")] + ["#4A6A4A", "#7A5A2A", "#5A5A7A", "#6A3A3A", "#3A5A5A"]
-JOSEPH_C, JOSEPH_HEAD, MARY_C = "#7A5A30", "#C8A050", ROBES["mary"]
+JOSEPH_C, JOSEPH_HEAD, MARY_C = "#7A5A30", "#4A4A3A", ROBES["mary"]
 MAGI_C = ("#5A2A7A", "#1F5A6A", "#8A2A2A")
 BROWN_BEARD = A.BLACK_BEARD.replace("#2A1A10", "#3A2214")
 GREY_BEARD = A.WHITE_BEARD.replace("#E8E2D6", "#9A948A")

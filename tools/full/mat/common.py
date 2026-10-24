@@ -65,7 +65,7 @@ def cell(name, refs, accent="#FFD23F", frm=None, to=None):
     return (name, text, f"{CODE} {a}" + (f"–{b}" if b else ""), accent)
 
 # ---- Matthew's own cast ------------------------------------------------------------------------------------------------
-_JO = dict(skin="#C98E66", shadow="#5A3A2A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#A8803A", cord=True)
+_JO = dict(skin="#C98E66", shadow="#5A3A2A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#3A2214", scarf="#4A4A3A", cord=True)
 JOSEPH = F("adam", light="#FFC14D", **_JO)                                            # the husband of Mary
 JOSEPH_TROUBLED = F("adam", brow="sorrow", light="#9AA8C8", **_JO)
 JOSEPH_DREAM = F("adam", **dict(_JO, skin="#A88A8E", shadow="#3A3A5A"), brow="sorrow", light="#E8ECF8")
@@ -96,4 +96,9 @@ ZEBEDEE_MOTHER = F("eve", skin="#C98E66", shadow="#5A3A3A", hair="#8A847A", scar
 MAID = F("eve", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", scarf="#8A9A6A", light="#FF8A3D")
 WITNESS = F("adam", skin="#C98E66", shadow="#3A2A3A", hair="#3A2A1A", hl="#6A5A4A", stubble="#3A2A1A", scarf="#5A4A3A", cord=True, brow="scowl", light="#D7261E")
 CAIAPHAS_RENT = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#F3EFE6", band=True, brow="scowl", sweat=True, light="#D7261E")
+JUDAS_REMORSE = F("adam", skin="#A87A5E", shadow="#3A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#6A2A1A", cord=True, brow="sorrow", sweat=True, light="#5A4A6A")
+PILATE_WIFE = F("eve", skin="#E3B08A", shadow="#8A5A4A", hair="#4A2A1A", scarf="#6A2A5A", band=True, brow="sorrow", light="#9AA8C8")
+PILATE_TROUBLED = F("adam", skin="#E3B08A", shadow="#6A4A4A", hair="#4A3A2A", hl="#7A6A5A", brow="sorrow", sweat=True, light="#9AA8C8")
+ARIMATHAEA = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#1F3A5A", band=True, brow="sorrow", light="#9AA8C8")
+SOLDIER = F("adam", skin="#D9A27A", shadow="#6A3A2A", hair="#3A2A1A", hl="#6A5A4A", stubble="#3A2A1A", brow="sorrow", sweat=True, light="#9AA8C8")
 COLLECTOR = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#1A1210", hl="#4A3A2E", stubble="#1A1210", scarf="#3A4A6A", cord=True, light="#FFC14D")
