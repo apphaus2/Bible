@@ -540,7 +540,7 @@ def wilderness(p, w, h, seed, john=True, crowd_n=0, tone="desert"):
         o.append(crowd(p, w * 0.48, w * 0.84, b, max(h * 0.4, b - 160), crowd_n, seed, flip=True))
     return "".join(o)
 
-def jordan(p, w, h, seed, jesus_=False, crowd_n=7):
+def jordan(p, w, h, seed, jesus_=False, crowd_n=7, john=True):
     """The river Jordan between its green banks: John standing in the water baptizing, the people on the bank, coming down
     to him confessing their sins; jesus_=True: Jesus coming down to the water."""
     b = h * 0.94
@@ -558,7 +558,7 @@ def jordan(p, w, h, seed, jesus_=False, crowd_n=7):
     jy = h * 0.62
     # John waist-deep in the water: the water covers him from the waist
     js = min(s * 0.62, (h * 0.84 - jy) / 96)
-    o.append(john_fig(p, w * 0.42, jy + 92 * js, js, up=UP_BLESS)
+    if john: o.append(john_fig(p, w * 0.42, jy + 92 * js, js, up=UP_BLESS)
              + f'<rect x="{f(w * 0.42 - 40 * js)}" y="{f(jy)}" width="{f(80 * js)}" height="{f(94 * js)}" fill="#2C7DA8"></rect>'
              + f'<path d="M{f(w * 0.42 - 44 * js)} {f(jy)} q {f(22 * js)} -5 {f(44 * js)} 0 t {f(44 * js)} 0" stroke="#BFE6F2" stroke-width="2.4" fill="none"></path>')
     if crowd_n:

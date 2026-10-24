@@ -842,6 +842,139 @@
    "w": 760,
    "h": 1080,
    "title": "112 · O Faithless and Perverse Generation"
+  },
+  "MAT-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The First Shall Be Last"
+  },
+  "MAT-C07-D-P01-AsLittleChildren.dc.html": {
+   "x": 840,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · As Little Children"
+  },
+  "MAT-C07-D-P02-AsLittleChildren.dc.html": {
+   "x": 1680,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · As Little Children"
+  },
+  "MAT-C07-D-P03-TheNinetyAndNine.dc.html": {
+   "x": 2520,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Ninety and Nine"
+  },
+  "MAT-C07-D-P04-SeventyTimesSeven.dc.html": {
+   "x": 3360,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Seventy Times Seven"
+  },
+  "MAT-C07-D-P05-SeventyTimesSeven.dc.html": {
+   "x": 0,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Seventy Times Seven"
+  },
+  "MAT-C07-D-P06-SeventyTimesSeven.dc.html": {
+   "x": 840,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Seventy Times Seven"
+  },
+  "MAT-C07-D-P07-WhatGodHathJoinedT.dc.html": {
+   "x": 1680,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · What God Hath Joined Together"
+  },
+  "MAT-C07-D-P08-WhatGodHathJoinedT.dc.html": {
+   "x": 2520,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · What God Hath Joined Together"
+  },
+  "MAT-C07-D-P09-OneThingThouLackes.dc.html": {
+   "x": 3360,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P10-OneThingThouLackes.dc.html": {
+   "x": 0,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P11-OneThingThouLackes.dc.html": {
+   "x": 840,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P12-OneThingThouLackes.dc.html": {
+   "x": 1680,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P13-TheLaborersInTheVi.dc.html": {
+   "x": 2520,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · The Laborers in the Vineyard"
+  },
+  "MAT-C07-D-P14-TheLaborersInTheVi.dc.html": {
+   "x": 3360,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · The Laborers in the Vineyard"
+  },
+  "MAT-C07-D-P15-TheLaborersInTheVi.dc.html": {
+   "x": 0,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · The Laborers in the Vineyard"
+  },
+  "MAT-C07-D-P16-TheCupThatIAmAbout.dc.html": {
+   "x": 840,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · The Cup That I Am about to Drink"
+  },
+  "MAT-C07-D-P17-TheCupThatIAmAbout.dc.html": {
+   "x": 1680,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · The Cup That I Am about to Drink"
+  },
+  "MAT-C07-D-P18-TwoBlindMenAtJeric.dc.html": {
+   "x": 2520,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Two Blind Men at Jericho"
   }
  },
  "order": [
@@ -963,7 +1096,26 @@
   "MAT-C06-D-P14-OFaithlessAndPerve.dc.html",
   "MAT-C06-D-P15-OFaithlessAndPerve.dc.html",
   "MAT-C06-D-P16-OFaithlessAndPerve.dc.html",
-  "MAT-C06-D-P17-OFaithlessAndPerve.dc.html"
+  "MAT-C06-D-P17-OFaithlessAndPerve.dc.html",
+  "MAT-C07-00-Title.dc.html",
+  "MAT-C07-D-P01-AsLittleChildren.dc.html",
+  "MAT-C07-D-P02-AsLittleChildren.dc.html",
+  "MAT-C07-D-P03-TheNinetyAndNine.dc.html",
+  "MAT-C07-D-P04-SeventyTimesSeven.dc.html",
+  "MAT-C07-D-P05-SeventyTimesSeven.dc.html",
+  "MAT-C07-D-P06-SeventyTimesSeven.dc.html",
+  "MAT-C07-D-P07-WhatGodHathJoinedT.dc.html",
+  "MAT-C07-D-P08-WhatGodHathJoinedT.dc.html",
+  "MAT-C07-D-P09-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P10-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P11-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P12-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P13-TheLaborersInTheVi.dc.html",
+  "MAT-C07-D-P14-TheLaborersInTheVi.dc.html",
+  "MAT-C07-D-P15-TheLaborersInTheVi.dc.html",
+  "MAT-C07-D-P16-TheCupThatIAmAbout.dc.html",
+  "MAT-C07-D-P17-TheCupThatIAmAbout.dc.html",
+  "MAT-C07-D-P18-TwoBlindMenAtJeric.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1014,6 +1166,13 @@
    "text": "Chapter 6 · Thou Art the Christ (Matthew 15–17)",
    "x": 0,
    "y": 29400
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The First Shall Be Last (Matthew 18–20)",
+   "x": 0,
+   "y": 34700
   }
  },
  "designSystems": [],

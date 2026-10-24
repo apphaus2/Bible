@@ -90,4 +90,7 @@ JOHN_DISCIPLE = F("adam", skin="#9A6A4A", shadow="#4A2A1A", hair="#2A1A10", hl="
 CROWD_MAN = F("adam", skin="#B98A6E", shadow="#5A3A2A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#6A5A3A", cord=True, light="#FFE680")
 CANAANITE = F("eve", skin="#B9785A", shadow="#4A2A2A", hair="#1A1210", scarf="#E8903A", brow="sorrow", light="#FFC14D")
 FATHER_BOY = F("adam", skin="#B98A6E", shadow="#3A2A3A", hair="#3A2A1E", hl="#6A5A4E", beard=True, beard_color="#3A2A1E", scarf="#6A5A3A", cord=True, brow="sorrow", tear=True, light="#9AA8C8")
+RICH_YOUNG = F("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#2A1A10", hl="#5A4A3E", stubble="#2A1A10", scarf="#7A2A6A", band=True, light="#FFC14D")
+RICH_SAD = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#2A1A10", hl="#5A4A3E", stubble="#2A1A10", scarf="#7A2A6A", band=True, brow="sorrow", light="#9AA8C8")
+ZEBEDEE_MOTHER = F("eve", skin="#C98E66", shadow="#5A3A3A", hair="#8A847A", scarf="#8A5A3A", light="#FFC14D")
 COLLECTOR = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#1A1210", hl="#4A3A2E", stubble="#1A1210", scarf="#3A4A6A", cord=True, light="#FFC14D")

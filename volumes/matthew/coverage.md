@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 583 verses — 582 full, 0 partial, 1 omitted.
+**So far:** 682 verses — 680 full, 0 partial, 2 omitted.
 
 ## Chapter 1 · The Son of David (Matthew 1–4)
 
@@ -39,3 +39,9 @@ Every verse is on the page in full.
 94 verses: 93 full, 0 partial, 1 omitted.
 
 - 17:21 — omitted (0%)
+
+## Chapter 7 · The First Shall Be Last (Matthew 18–20)
+
+99 verses: 98 full, 0 partial, 1 omitted.
+
+- 18:11 — omitted (0%)
