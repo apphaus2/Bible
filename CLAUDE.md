@@ -13,10 +13,10 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 ## Status
 
 **Complete: the whole Old Testament, Genesis through Malachi (39 volumes, 4,478 pages, 23,145 verses).** Per-chapter detail is
-in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: Matthew is complete** (`mat`, built on
-`oba/minor.py`'s `Kit`, the shared `ntcast.py` cast). Mark, Luke, John and Acts have unchecked first drafts on local branches
-`wip/mark` (one chapter), `wip/luke`, `wip/john`, `wip/acts`, cut from an older master: lift what is sound, never merge them.
-Next: Mark, then the rest in order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
+in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: Matthew and Mark are complete** (`mat`, built
+on `oba/minor.py`'s `Kit`, the shared `ntcast.py` cast; `mrk` reuses Matthew's art). Luke, John and Acts have unchecked first
+drafts on local branches `wip/luke`, `wip/john`, `wip/acts`, cut from an older master: lift what is sound, never merge them.
+Next: Luke, then the rest in order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
 other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
