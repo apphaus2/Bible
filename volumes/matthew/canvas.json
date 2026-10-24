@@ -576,6 +576,146 @@
    "w": 760,
    "h": 1080,
    "title": "76 · My Mother and My Brethren"
+  },
+  "MAT-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Kingdom of Heaven Is Like"
+  },
+  "MAT-C05-D-P01-TheSower.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Sower"
+  },
+  "MAT-C05-D-P02-TheSower.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · The Sower"
+  },
+  "MAT-C05-D-P03-TheSower.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The Sower"
+  },
+  "MAT-C05-D-P04-TheSower.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The Sower"
+  },
+  "MAT-C05-D-P05-TheTaresOfTheField.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · The Tares of the Field"
+  },
+  "MAT-C05-D-P06-TheTaresOfTheField.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · The Tares of the Field"
+  },
+  "MAT-C05-D-P07-AGrainOfMustardSee.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · A Grain of Mustard Seed"
+  },
+  "MAT-C05-D-P08-AGrainOfMustardSee.dc.html": {
+   "x": 2520,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · A Grain of Mustard Seed"
+  },
+  "MAT-C05-D-P09-AGrainOfMustardSee.dc.html": {
+   "x": 3360,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · A Grain of Mustard Seed"
+  },
+  "MAT-C05-D-P10-ThePearlOfGreatPri.dc.html": {
+   "x": 0,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · The Pearl of Great Price"
+  },
+  "MAT-C05-D-P11-ThePearlOfGreatPri.dc.html": {
+   "x": 840,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · The Pearl of Great Price"
+  },
+  "MAT-C05-D-P12-JohnTheBaptist.dc.html": {
+   "x": 1680,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · John the Baptist"
+  },
+  "MAT-C05-D-P13-JohnTheBaptist.dc.html": {
+   "x": 2520,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · John the Baptist"
+  },
+  "MAT-C05-D-P14-FiveLoavesAndTwoFi.dc.html": {
+   "x": 3360,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P15-FiveLoavesAndTwoFi.dc.html": {
+   "x": 0,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P16-FiveLoavesAndTwoFi.dc.html": {
+   "x": 840,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P17-FiveLoavesAndTwoFi.dc.html": {
+   "x": 1680,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P18-FiveLoavesAndTwoFi.dc.html": {
+   "x": 2520,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P19-FiveLoavesAndTwoFi.dc.html": {
+   "x": 3360,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Five Loaves and Two Fishes"
   }
  },
  "order": [
@@ -659,7 +799,27 @@
   "MAT-C04-D-P11-AKingdomDivided.dc.html",
   "MAT-C04-D-P12-TheSignOfJonah.dc.html",
   "MAT-C04-D-P13-TheSignOfJonah.dc.html",
-  "MAT-C04-D-P14-MyMotherAndMyBreth.dc.html"
+  "MAT-C04-D-P14-MyMotherAndMyBreth.dc.html",
+  "MAT-C05-00-Title.dc.html",
+  "MAT-C05-D-P01-TheSower.dc.html",
+  "MAT-C05-D-P02-TheSower.dc.html",
+  "MAT-C05-D-P03-TheSower.dc.html",
+  "MAT-C05-D-P04-TheSower.dc.html",
+  "MAT-C05-D-P05-TheTaresOfTheField.dc.html",
+  "MAT-C05-D-P06-TheTaresOfTheField.dc.html",
+  "MAT-C05-D-P07-AGrainOfMustardSee.dc.html",
+  "MAT-C05-D-P08-AGrainOfMustardSee.dc.html",
+  "MAT-C05-D-P09-AGrainOfMustardSee.dc.html",
+  "MAT-C05-D-P10-ThePearlOfGreatPri.dc.html",
+  "MAT-C05-D-P11-ThePearlOfGreatPri.dc.html",
+  "MAT-C05-D-P12-JohnTheBaptist.dc.html",
+  "MAT-C05-D-P13-JohnTheBaptist.dc.html",
+  "MAT-C05-D-P14-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P15-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P16-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P17-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P18-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P19-FiveLoavesAndTwoFi.dc.html"
  ],
  "notes": {
   "Main": {
@@ -696,6 +856,13 @@
    "text": "Chapter 4 · Lord of the Sabbath (Matthew 11–12)",
    "x": 0,
    "y": 20000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Kingdom of Heaven Is Like (Matthew 13–14)",
+   "x": 0,
+   "y": 24100
   }
  },
  "designSystems": [],

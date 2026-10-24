@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 395 verses — 395 full, 0 partial, 0 omitted.
+**So far:** 489 verses — 489 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Son of David (Matthew 1–4)
 
@@ -25,5 +25,11 @@ Every verse is on the page in full.
 ## Chapter 4 · Lord of the Sabbath (Matthew 11–12)
 
 80 verses: 80 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 5 · The Kingdom of Heaven Is Like (Matthew 13–14)
+
+94 verses: 94 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
