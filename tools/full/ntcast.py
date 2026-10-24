@@ -71,7 +71,17 @@ PHARISEE = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#6A645E", hl="#9A94
 CAIAPHAS = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#F3EFE6", band=True, brow="scowl", light="#D7261E")
 PILATE = F("adam", skin="#E3B08A", shadow="#8A5A4A", hair="#4A3A2A", hl="#7A6A5A", light="#FFC14D")
 HEROD = F("adam", skin="#C98E66", shadow="#4A2A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#5A1A4A", band=True, light="#D7261E")
-CENTURION = F("adam", skin="#D9A27A", shadow="#7A4A3A", hair="#3A2A1A", hl="#6A5A4A", stubble="#3A2A1A", scarf="#8A2A1A", light="#FFC14D")
+# a Roman's brass helmet over the face (on the 400x400 face): the bowl, a brow ridge, the neck-guard behind, a hinged cheek-piece,
+# and the centurion's transverse crest in red across the top (the Roman soldiers at a distance wear the same brass and red)
+_HELMET = ('\n<path d="M252 130 C 264 60 220 6 160 8 C 104 10 66 52 64 110 C 62 160 70 200 82 236 L 58 268 L 142 264 L 144 214 '
+           'C 136 180 140 152 156 138 C 184 130 216 128 250 130 Z" fill="#C8963E" stroke="#0D0D0F" stroke-width="2.6"></path>'
+           '\n<path d="M258 136 C 214 126 170 126 142 140 L 140 126 C 172 114 218 114 260 124 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="2"></path>'
+           '\n<path d="M162 136 L 198 136 L 200 216 C 192 228 172 230 164 220 Z" fill="#C8963E" stroke="#0D0D0F" stroke-width="2"></path>'
+           '\n<g fill="#0D0D0F"><circle cx="181" cy="152" r="2.6"></circle><circle cx="181" cy="202" r="2.6"></circle></g>'
+           '\n<path d="M96 64 C 136 38 198 36 238 68" fill="none" stroke="#8A6A2A" stroke-width="2"></path>'
+           '\n<path d="M118 26 C 116 -8 210 -10 210 24 L 196 28 C 192 4 136 4 132 28 Z" fill="#B5121B" stroke="#0D0D0F" stroke-width="2"></path>'
+           '\n<path d="M128 22 L 124 4 M144 12 L 142 -2 M164 8 L 164 -6 M182 10 L 186 -4 M198 18 L 204 4" stroke="#7A0A10" stroke-width="2.4"></path>')
+CENTURION = F("adam", skin="#D9A27A", shadow="#7A4A3A", hair="#3A2A1A", hl="#6A5A4A", stubble="#3A2A1A", light="#FFC14D") + _HELMET
 PAUL = F("adam", skin="#C98E66", shadow="#5A3A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#3A2A1A", scarf="#5A4A3A", cord=True, light="#FFC14D")
 SAUL_PERSECUTOR = F("adam", skin="#C98E66", shadow="#4A2A2A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#3A2A1A", scarf="#5A4A3A", cord=True, brow="scowl", light="#D7261E")
 

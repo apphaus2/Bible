@@ -205,15 +205,15 @@ def new_tomb(p, w, h, seed, stone=True, women=False, sealed=False, guard=False):
     return "".join(o)
 
 def stone_rolled(p, w, h, seed, guards=True, women=False):
-    """At dawn: the stone rolled away from the door, and sitting upon it an angel of the Lord, a figure of white light with
+    """At dawn: the stone rolled away from the door (kept clear of the panel's lower right, where the chapter stamp sits), and sitting upon it an angel of the Lord, a figure of white light with
     a gold rim and no face, his raiment white as snow; guards=True the watchers fallen on the ground as dead men; women=True
     the two Marys standing before him."""
     b = h * 0.94
-    o = [mk.defs(p, *ALL, *LIE), sky(w, h, "#3A3A7A", "#FFC890"), sun(w * 0.9, h * 0.5, 16, color="#FFE680", op=0.4),
-         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.34)} {f(h * 0.3)} C {f(w * 0.5)} {f(h * 0.2)} {f(w * 0.8)} {f(h * 0.22)} {f(w + 10)} {f(h * 0.3)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A7A6A" stroke="{INK}" stroke-width="2.4"></path>',
-         f'<path d="M{f(w * 0.5)} {f(b - h * 0.04)} L {f(w * 0.5)} {f(h * 0.54)} Q {f(w * 0.58)} {f(h * 0.44)} {f(w * 0.66)} {f(h * 0.54)} L {f(w * 0.66)} {f(b - h * 0.04)} Z" fill="#1A1210" stroke="{INK}" stroke-width="2"></path>',
+    o = [mk.defs(p, *ALL, *LIE), sky(w, h, "#3A3A7A", "#FFC890"), sun(w * 0.14, h * 0.4, 16, color="#FFE680", op=0.4),
+         f'<path d="M{f(w * 0.24)} {f(h + 10)} L {f(w * 0.28)} {f(h * 0.3)} C {f(w * 0.5)} {f(h * 0.2)} {f(w * 0.8)} {f(h * 0.22)} {f(w + 10)} {f(h * 0.3)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A7A6A" stroke="{INK}" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.36)} {f(b - h * 0.04)} L {f(w * 0.36)} {f(h * 0.54)} Q {f(w * 0.44)} {f(h * 0.44)} {f(w * 0.52)} {f(h * 0.54)} L {f(w * 0.52)} {f(b - h * 0.04)} Z" fill="#1A1210" stroke="{INK}" stroke-width="2"></path>',
          ground(w, h, b - h * 0.04, "#5A6A3A", dy=0)]
-    cx, cy, r = w * 0.82, b - h * 0.04 - h * 0.14, h * 0.14
+    cx, cy, r = w * 0.64, b - h * 0.04 - h * 0.14, h * 0.14
     o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="#A89A8A" stroke="{INK}" stroke-width="2.6"></circle>')
     s = fit(b, max(h * 0.3, b - 220))
     o.append(glow(cx, cy - r - 60 * s, 140 * s, "#FFFFFF", 0.95, f"{p}ag") + angel(p, cx, cy - r * 0.6, s * 0.9, flip=True, up=UP_BLESS))
