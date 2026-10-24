@@ -106,9 +106,14 @@ def jesus(p, x, y, s, flip=False, up=None, glow=True):
 def disciple(p, x, y, s, who, flip=False, up=None, kind="Robe"):
     return mk.person(p, round(x), round(y), round(s, 3), body="#B98A6E", cloth=ROBES.get(who, who), kind=kind, sw=3, flip=flip, up=up)
 
+ANGEL_LIGHT, ANGEL_RIM = "#FFF6D8", "#E8B830"
 def angel(p, x, y, s, flip=False, up=None):
-    """An angel of the Lord: white light, a gold rim, no face (genesis.art4.shining)."""
-    return shining(p, x, y, s, flip=flip, up=up)
+    """An angel of the Lord: a figure of white light with a gold rim — the head and hands light too, no face, no skin
+    (genesis.art4.shining, the men in white at Mamre, keeps its flesh-coloured head; an angel does not)."""
+    halo = f'<ellipse cx="{f(x)}" cy="{f(y - 110 * s)}" rx="{f(80 * s)}" ry="{f(130 * s)}" fill="#FFF4C2" opacity="0.45"></ellipse>'
+    fig = mk.person(p, round(x), round(y), round(s, 3), body=ANGEL_LIGHT, cloth="#FFFFFF", stroke=ANGEL_RIM, sw=3, flip=flip, up=up)
+    fig = fig.replace(f'fill="{ANGEL_LIGHT}">', f'fill="{ANGEL_LIGHT}" stroke="{ANGEL_RIM}" stroke-width="3">', 1).replace('stroke="#0D0D0F"', f'stroke="{ANGEL_RIM}"')
+    return halo + fig
 
 def dove_light(x, y, s=1.0, uid="dv"):
     """The Spirit of God descending as a dove: a white dove in a glow of light, wings spread."""

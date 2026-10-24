@@ -44,7 +44,7 @@ SEGS = [F([cp("6:30"), cp("6:31", to="saith unto them,"), sy("6:31", frm="Come y
         D([cp("6:51"), cp("6:52")], lambda w, h: A.on_the_sea("os2", w, h, 651, calm=True), "#2A2A6A"),
         D([cp("6:53"), cp("6:54"), cp("6:55"), cp("6:56")], lambda w, h: A.gennesaret("gn1", w, h, 653), "#8FD0E2", art_h=220),
         # Mark 7
-        D([cp("7:1"), cp("7:2")], lambda w, h: A.unwashed("uw1", w, h, 701), "#8FD0E2", head="The Tradition of the Elders", stamp=7),
+        D([cp("7:1"), cp("7:2")], lambda w, h: A.unwashed("uw1", w, h, 701), "#8FD0E2", head="The Tradition of the Elders", sky=(7, "left")),
         D([cp("7:3"), cp("7:4")], lambda w, h: A.cups_pots("cu1", w, h, 703), "#C8B490"),
         F([cp("7:5", to="ask him,"), sy("7:5", frm="Why walk not")], PHARISEE, bg=RED),
         F([cp("7:6", to="as it is written,"), sg("7:6", frm="This people"), sg("7:7"), sy("7:8")], JESUS_STERN, bg=RED),

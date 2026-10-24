@@ -28,15 +28,15 @@ def title_page(n):
 
 def F(lines, tok=JESUS_TEACH, bg=GOLDEN, **k): return K.face(lines, tok, bg=bg, **k)
 
-SEGS = [D([cp("3:1"), cp("3:2")], lambda w, h: A.withered("wh1", w, h, 301), "#C8B490", head="Stretch Forth Thy Hand", stamp=3),
+SEGS = [D([cp("3:1"), cp("3:2")], lambda w, h: A.withered("wh1", w, h, 301), "#C8B490", head="Stretch Forth Thy Hand", sky=3),
         F([cp("3:3", to="hand withered,"), sy("3:3", frm="Stand forth."), cp("3:4", to="unto them,"), sy("3:4", frm="Is it lawful", to="or to kill?"),
            cp("3:4", frm="But they held")], JESUS_STERN, bg=RED),
         D([cp("3:5", to="unto the man,"), sy("3:5", frm="Stretch forth", to="thy hand."), cp("3:5", frm="And he stretched")], lambda w, h: A.withered("wh2", w, h, 302, restored=True),
           "#C8B490"),
         D([cp("3:6")], lambda w, h: A.counsel("cn1", w, h, 303), "#2A1A3A"),
         D([cp("3:7"), cp("3:8")], lambda w, h: A.whence(w, h, 304), MAP, head="A Great Multitude", art_h=300),
-        D([cp("3:9"), cp("3:10")], lambda w, h: A.gennesaret("gn1", w, h, 305), "#8FD0E2"),
-        F([cp("3:11", to="saying,"), sy("3:11", frm="Thou art the Son"), cp("3:12")], JESUS_STERN, bg=RED),
+        D([cp("3:9"), cp("3:10"), cp("3:11", to="saying,"), sy("3:11", frm="Thou art the Son")], lambda w, h: A.gennesaret("gn1", w, h, 305), "#8FD0E2"),
+        F([cp("3:12")], JESUS_STERN, bg=RED),
         D([cp("3:13"), cp("3:14"), cp("3:15"), cp("3:16"), cp("3:17"), cp("3:18"), cp("3:19", to="betrayed him.")], lambda w, h: A.twelve_mark("tw1", w, h, 306), MAP,
           head="He Appointed Twelve", art_h=300),
         D([cp("3:19", frm="And he cometh"), cp("3:20"), cp("3:21", to="for they said,"), sy("3:21", frm="He is beside")], lambda w, h: A.door_crowd("dc2", w, h, 307), "#8FD0E2",

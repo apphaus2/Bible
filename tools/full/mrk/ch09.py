@@ -31,6 +31,7 @@ def title_page(n):
     return title(9, "He Is Risen", "Mark 14:43 – 16:20", svg, "#3A4A7A", v("16:6", frm="he is risen;", to="he is not here:"))
 
 
+RISEN_LIGHT = "radial-gradient(circle at 26% 46%, #FFFFFF 0 70px, #FFF8DC 220px, #F3E2B0 460px)"
 def F(lines, tok=JESUS_PASSION, bg=COLD, **k): return K.face(lines, tok, bg=bg, **k)
 
 SEGS = [D([cp("14:43")], lambda w, h: A.arrest("ar1", w, h, 1443), "#05051A", head="Swords and Staves"),
@@ -55,7 +56,7 @@ SEGS = [D([cp("14:43")], lambda w, h: A.arrest("ar1", w, h, 1443), "#05051A", he
           lambda w, h: A.cockcrow("cc1", w, h, 1471), "#1A1A3A"),
         F([cp("14:72", frm="And when he thought")], PETER_GRIEF),
         # Mark 15
-        D([cp("15:1")], lambda w, h: A.bound_dawn("bd1", w, h, 1501), "#2A2A4A", head="Delivered Up to Pilate", stamp=15),
+        D([cp("15:1")], lambda w, h: A.bound_dawn("bd1", w, h, 1501), "#2A2A4A", head="Delivered Up to Pilate", sky=(15, "left")),
         D([cp("15:2", to="Pilate asked him,"), sy("15:2", frm="Art thou", to="the Jews?"), cp("15:2", frm="And he answering", to="unto him,"), sy("15:2", frm="Thou sayest.")],
           lambda w, h: A.judgment_seat("js1", w, h, 1502, crowd_=False), "#8FD0E2"),
         F([cp("15:3"), cp("15:4", to="saying,"), sy("15:4", frm="Answerest"), cp("15:5")], PILATE, bg=GOLDEN),
@@ -78,7 +79,7 @@ SEGS = [D([cp("14:43")], lambda w, h: A.arrest("ar1", w, h, 1443), "#05051A", he
         F([cp("15:39", to="he said,"), sy("15:39", frm="Truly")], CENTURION, bg=GOLDEN),
         D([cp("15:40"), cp("15:41")], lambda w, h: A.women_afar("wa1", w, h, 1540), "#05050E"),
         F([cp("15:42"), cp("15:43")], ARIMATHAEA, head="The Tomb Hewn out of a Rock"),
-        F([cp("15:44"), cp("15:45")], PILATE_TROUBLED),
+        F([cp("15:44"), cp("15:45")], PILATE_TROUBLED, h=280),
         D([cp("15:46"), cp("15:47")], lambda w, h: A.new_tomb("nt1", w, h, 1546, women=True), "#2A2A4A", art_h=220),
         # Mark 16
         D([cp("16:1"), cp("16:2"), cp("16:3", to="among themselves,"), sy("16:3", frm="Who shall roll")], lambda w, h: A.spices_dawn("sd2", w, h, 1601), "#3A3A7A",
@@ -90,7 +91,7 @@ SEGS = [D([cp("14:43")], lambda w, h: A.arrest("ar1", w, h, 1443), "#05051A", he
         D([cp("16:9"), cp("16:10"), cp("16:11")], lambda w, h: A.mourners("mr1", w, h, 1609), "#5A4A4A", head="He Appeared First to Mary Magdalene", art_h=260),
         D([cp("16:12"), cp("16:13")], lambda w, h: A.two_country("tc1", w, h, 1612), "#5A3A6A"),
         D([cp("16:14")], lambda w, h: A.eleven_meat("em1", w, h, 1614), "#6A5A4A", head="Go Ye into All the World"),
-        F([cp("16:15", to="said unto them,"), sy("16:15", frm="Go ye"), sy("16:16"), sy("16:17"), sy("16:18")], JESUS_RISEN, bg=GOLDEN),
+        F([cp("16:15", to="said unto them,"), sy("16:15", frm="Go ye"), sy("16:16"), sy("16:17"), sy("16:18")], JESUS_RISEN, bg=RISEN_LIGHT),
         D([cp("16:19")], lambda w, h: A.received_up("ru1", w, h, 1619), "#2A3A7A", art_h=260),
         D([cp("16:20")], lambda w, h: A.everywhere("ev1", w, h, 1620), "#8FD0E2")]
 PG.extend(K.pack(SEGS, "MRK-C09-D", PG.next(), most=4, lone=0.5, end=fin("END OF MARK · NEXT · LUKE")))

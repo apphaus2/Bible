@@ -136,26 +136,26 @@
    "h": 1080,
    "title": "15 · Stretch Forth Thy Hand"
   },
-  "MRK-C02-D-P02-AGreatMultitude.dc.html": {
+  "MRK-C02-D-P02-StretchForthThyHan.dc.html": {
    "x": 1680,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "16 · A Great Multitude"
+   "title": "16 · Stretch Forth Thy Hand"
   },
-  "MRK-C02-D-P03-HeAppointedTwelve.dc.html": {
+  "MRK-C02-D-P03-AGreatMultitude.dc.html": {
    "x": 2520,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "17 · He Appointed Twelve"
+   "title": "17 · A Great Multitude"
   },
-  "MRK-C02-D-P04-AHouseDivided.dc.html": {
+  "MRK-C02-D-P04-HeAppointedTwelve.dc.html": {
    "x": 3360,
    "y": 6100,
    "w": 760,
    "h": 1080,
-   "title": "18 · A House Divided"
+   "title": "18 · He Appointed Twelve"
   },
   "MRK-C02-D-P05-AHouseDivided.dc.html": {
    "x": 0,
@@ -164,26 +164,26 @@
    "h": 1080,
    "title": "19 · A House Divided"
   },
-  "MRK-C02-D-P06-MyMotherAndMyBreth.dc.html": {
+  "MRK-C02-D-P06-AHouseDivided.dc.html": {
    "x": 840,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "20 · My Mother and My Brethren"
+   "title": "20 · A House Divided"
   },
-  "MRK-C02-D-P07-BeholdTheSowerWent.dc.html": {
+  "MRK-C02-D-P07-MyMotherAndMyBreth.dc.html": {
    "x": 1680,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "21 · Behold, the Sower Went Forth"
+   "title": "21 · My Mother and My Brethren"
   },
-  "MRK-C02-D-P08-TheSowerSowethTheW.dc.html": {
+  "MRK-C02-D-P08-BeholdTheSowerWent.dc.html": {
    "x": 2520,
    "y": 7300,
    "w": 760,
    "h": 1080,
-   "title": "22 · The Sower Soweth the Word"
+   "title": "22 · Behold, the Sower Went Forth"
   },
   "MRK-C02-D-P09-TheSowerSowethTheW.dc.html": {
    "x": 3360,
@@ -192,19 +192,19 @@
    "h": 1080,
    "title": "23 · The Sower Soweth the Word"
   },
-  "MRK-C02-D-P10-TheLampOnTheStand.dc.html": {
+  "MRK-C02-D-P10-TheSowerSowethTheW.dc.html": {
    "x": 0,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "24 · The Lamp on the Stand"
+   "title": "24 · The Sower Soweth the Word"
   },
-  "MRK-C02-D-P11-TheSeedShouldSprin.dc.html": {
+  "MRK-C02-D-P11-TheLampOnTheStand.dc.html": {
    "x": 840,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "25 · The Seed Should Spring Up"
+   "title": "25 · The Lamp on the Stand"
   },
   "MRK-C02-D-P12-TheSeedShouldSprin.dc.html": {
    "x": 1680,
@@ -213,12 +213,12 @@
    "h": 1080,
    "title": "26 · The Seed Should Spring Up"
   },
-  "MRK-C02-D-P13-PeaceBeStill.dc.html": {
+  "MRK-C02-D-P13-TheSeedShouldSprin.dc.html": {
    "x": 2520,
    "y": 8500,
    "w": 760,
    "h": 1080,
-   "title": "27 · Peace, Be Still"
+   "title": "27 · The Seed Should Spring Up"
   },
   "MRK-C02-D-P14-PeaceBeStill.dc.html": {
    "x": 3360,
@@ -227,803 +227,817 @@
    "h": 1080,
    "title": "28 · Peace, Be Still"
   },
+  "MRK-C02-D-P15-PeaceBeStill.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Peace, Be Still"
+  },
   "MRK-C03-00-Title.dc.html": {
    "x": 0,
-   "y": 10200,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "Chapter 3 · Talitha Cumi"
   },
   "MRK-C03-D-P01-MyNameIsLegion.dc.html": {
    "x": 840,
-   "y": 10200,
-   "w": 760,
-   "h": 1080,
-   "title": "29 · My Name Is Legion"
-  },
-  "MRK-C03-D-P02-MyNameIsLegion.dc.html": {
-   "x": 1680,
-   "y": 10200,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "30 · My Name Is Legion"
   },
-  "MRK-C03-D-P03-MyNameIsLegion.dc.html": {
-   "x": 2520,
-   "y": 10200,
+  "MRK-C03-D-P02-MyNameIsLegion.dc.html": {
+   "x": 1680,
+   "y": 11400,
    "w": 760,
    "h": 1080,
    "title": "31 · My Name Is Legion"
   },
-  "MRK-C03-D-P04-ClothedAndInHisRig.dc.html": {
-   "x": 3360,
-   "y": 10200,
+  "MRK-C03-D-P03-MyNameIsLegion.dc.html": {
+   "x": 2520,
+   "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "32 · Clothed, and in His Right Mind"
+   "title": "32 · My Name Is Legion"
+  },
+  "MRK-C03-D-P04-ClothedAndInHisRig.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Clothed, and in His Right Mind"
   },
   "MRK-C03-D-P05-WhoTouchedMyGarmen.dc.html": {
    "x": 0,
-   "y": 11400,
-   "w": 760,
-   "h": 1080,
-   "title": "33 · Who Touched My Garments?"
-  },
-  "MRK-C03-D-P06-WhoTouchedMyGarmen.dc.html": {
-   "x": 840,
-   "y": 11400,
+   "y": 12600,
    "w": 760,
    "h": 1080,
    "title": "34 · Who Touched My Garments?"
   },
-  "MRK-C03-D-P07-WhoTouchedMyGarmen.dc.html": {
-   "x": 1680,
-   "y": 11400,
-   "w": 760,
-   "h": 1080,
-   "title": "35 · Who Touched My Garments?"
-  },
-  "MRK-C03-D-P08-TheChildIsNotDead.dc.html": {
-   "x": 2520,
-   "y": 11400,
-   "w": 760,
-   "h": 1080,
-   "title": "36 · The Child Is Not Dead"
-  },
-  "MRK-C03-D-P09-TheChildIsNotDead.dc.html": {
-   "x": 3360,
-   "y": 11400,
-   "w": 760,
-   "h": 1080,
-   "title": "37 · The Child Is Not Dead"
-  },
-  "MRK-C03-D-P10-AProphetIsNotWitho.dc.html": {
-   "x": 0,
-   "y": 12600,
-   "w": 760,
-   "h": 1080,
-   "title": "38 · A Prophet Is Not without Honor"
-  },
-  "MRK-C03-D-P11-ByTwoAndTwo.dc.html": {
+  "MRK-C03-D-P06-WhoTouchedMyGarmen.dc.html": {
    "x": 840,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "39 · By Two and Two"
+   "title": "35 · Who Touched My Garments?"
   },
-  "MRK-C03-D-P12-JohnWhomIBeheaded.dc.html": {
+  "MRK-C03-D-P07-WhoTouchedMyGarmen.dc.html": {
    "x": 1680,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "40 · John Whom I Beheaded"
+   "title": "36 · Who Touched My Garments?"
   },
-  "MRK-C03-D-P13-JohnWhomIBeheaded.dc.html": {
+  "MRK-C03-D-P08-TheChildIsNotDead.dc.html": {
    "x": 2520,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "41 · John Whom I Beheaded"
+   "title": "37 · The Child Is Not Dead"
   },
-  "MRK-C03-D-P14-HerodSBirthday.dc.html": {
+  "MRK-C03-D-P09-TheChildIsNotDead.dc.html": {
    "x": 3360,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "42 · Herod's Birthday"
+   "title": "38 · The Child Is Not Dead"
   },
-  "MRK-C03-D-P15-HerodSBirthday.dc.html": {
+  "MRK-C03-D-P10-AProphetIsNotWitho.dc.html": {
    "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · A Prophet Is Not without Honor"
+  },
+  "MRK-C03-D-P11-ByTwoAndTwo.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · By Two and Two"
+  },
+  "MRK-C03-D-P12-JohnWhomIBeheaded.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · John Whom I Beheaded"
+  },
+  "MRK-C03-D-P13-JohnWhomIBeheaded.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · John Whom I Beheaded"
+  },
+  "MRK-C03-D-P14-HerodSBirthday.dc.html": {
+   "x": 3360,
    "y": 13800,
    "w": 760,
    "h": 1080,
    "title": "43 · Herod's Birthday"
   },
-  "MRK-C03-D-P16-HerodSBirthday.dc.html": {
-   "x": 840,
-   "y": 13800,
+  "MRK-C03-D-P15-HerodSBirthday.dc.html": {
+   "x": 0,
+   "y": 15000,
    "w": 760,
    "h": 1080,
    "title": "44 · Herod's Birthday"
   },
+  "MRK-C03-D-P16-HerodSBirthday.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Herod's Birthday"
+  },
   "MRK-C04-00-Title.dc.html": {
    "x": 0,
-   "y": 15500,
+   "y": 16700,
    "w": 760,
    "h": 1080,
    "title": "Chapter 4 · It Is I"
   },
   "MRK-C04-D-P01-SheepNotHavingAShe.dc.html": {
    "x": 840,
-   "y": 15500,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "45 · Sheep Not Having a Shepherd"
+   "title": "46 · Sheep Not Having a Shepherd"
   },
   "MRK-C04-D-P02-FiveLoavesAndTwoFi.dc.html": {
    "x": 1680,
-   "y": 15500,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "46 · Five Loaves, and Two Fishes"
+   "title": "47 · Five Loaves, and Two Fishes"
   },
   "MRK-C04-D-P03-ByHundredsAndByFif.dc.html": {
    "x": 2520,
-   "y": 15500,
+   "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "47 · By Hundreds, and by Fifties"
+   "title": "48 · By Hundreds, and by Fifties"
   },
   "MRK-C04-D-P04-BeNotAfraid.dc.html": {
    "x": 3360,
-   "y": 15500,
-   "w": 760,
-   "h": 1080,
-   "title": "48 · Be Not Afraid"
-  },
-  "MRK-C04-D-P05-BeNotAfraid.dc.html": {
-   "x": 0,
    "y": 16700,
    "w": 760,
    "h": 1080,
    "title": "49 · Be Not Afraid"
   },
-  "MRK-C04-D-P06-BeNotAfraid.dc.html": {
-   "x": 840,
-   "y": 16700,
+  "MRK-C04-D-P05-BeNotAfraid.dc.html": {
+   "x": 0,
+   "y": 17900,
    "w": 760,
    "h": 1080,
    "title": "50 · Be Not Afraid"
   },
-  "MRK-C04-D-P07-TheTraditionOfTheE.dc.html": {
-   "x": 1680,
-   "y": 16700,
-   "w": 760,
-   "h": 1080,
-   "title": "51 · The Tradition of the Elders"
-  },
-  "MRK-C04-D-P08-TheTraditionOfTheE.dc.html": {
-   "x": 2520,
-   "y": 16700,
-   "w": 760,
-   "h": 1080,
-   "title": "52 · The Tradition of the Elders"
-  },
-  "MRK-C04-D-P09-ThatWhichProceedet.dc.html": {
-   "x": 3360,
-   "y": 16700,
-   "w": 760,
-   "h": 1080,
-   "title": "53 · That Which Proceedeth out of the Man"
-  },
-  "MRK-C04-D-P10-EvenTheDogsUnderTh.dc.html": {
-   "x": 0,
-   "y": 17900,
-   "w": 760,
-   "h": 1080,
-   "title": "54 · Even the Dogs under the Table"
-  },
-  "MRK-C04-D-P11-EvenTheDogsUnderTh.dc.html": {
+  "MRK-C04-D-P06-BeNotAfraid.dc.html": {
    "x": 840,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "55 · Even the Dogs under the Table"
+   "title": "51 · Be Not Afraid"
   },
-  "MRK-C04-D-P12-Ephphatha.dc.html": {
+  "MRK-C04-D-P07-TheTraditionOfTheE.dc.html": {
    "x": 1680,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "56 · Ephphatha"
+   "title": "52 · The Tradition of the Elders"
   },
-  "MRK-C04-D-P13-Ephphatha.dc.html": {
+  "MRK-C04-D-P08-TheTraditionOfTheE.dc.html": {
    "x": 2520,
    "y": 17900,
    "w": 760,
    "h": 1080,
+   "title": "53 · The Tradition of the Elders"
+  },
+  "MRK-C04-D-P09-ThatWhichProceedet.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · That Which Proceedeth out of the Man"
+  },
+  "MRK-C04-D-P10-EvenTheDogsUnderTh.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Even the Dogs under the Table"
+  },
+  "MRK-C04-D-P11-EvenTheDogsUnderTh.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Even the Dogs under the Table"
+  },
+  "MRK-C04-D-P12-Ephphatha.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
    "title": "57 · Ephphatha"
+  },
+  "MRK-C04-D-P13-Ephphatha.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Ephphatha"
   },
   "MRK-C05-00-Title.dc.html": {
    "x": 0,
-   "y": 19600,
+   "y": 20800,
    "w": 760,
    "h": 1080,
    "title": "Chapter 5 · Thou Art the Christ"
   },
   "MRK-C05-D-P01-SevenLoaves.dc.html": {
    "x": 840,
-   "y": 19600,
+   "y": 20800,
    "w": 760,
    "h": 1080,
-   "title": "58 · Seven Loaves"
+   "title": "59 · Seven Loaves"
   },
   "MRK-C05-D-P02-TheLeavenOfThePhar.dc.html": {
    "x": 1680,
-   "y": 19600,
-   "w": 760,
-   "h": 1080,
-   "title": "59 · The Leaven of the Pharisees"
-  },
-  "MRK-C05-D-P03-TheLeavenOfThePhar.dc.html": {
-   "x": 2520,
-   "y": 19600,
+   "y": 20800,
    "w": 760,
    "h": 1080,
    "title": "60 · The Leaven of the Pharisees"
   },
-  "MRK-C05-D-P04-TheLeavenOfThePhar.dc.html": {
-   "x": 3360,
-   "y": 19600,
+  "MRK-C05-D-P03-TheLeavenOfThePhar.dc.html": {
+   "x": 2520,
+   "y": 20800,
    "w": 760,
    "h": 1080,
    "title": "61 · The Leaven of the Pharisees"
   },
-  "MRK-C05-D-P05-ISeeMenAsTreesWalk.dc.html": {
-   "x": 0,
-   "y": 20800,
-   "w": 760,
-   "h": 1080,
-   "title": "62 · I See Men, as Trees, Walking"
-  },
-  "MRK-C05-D-P06-ThouArtTheChrist.dc.html": {
-   "x": 840,
-   "y": 20800,
-   "w": 760,
-   "h": 1080,
-   "title": "63 · Thou Art the Christ"
-  },
-  "MRK-C05-D-P07-GetTheeBehindMe.dc.html": {
-   "x": 1680,
-   "y": 20800,
-   "w": 760,
-   "h": 1080,
-   "title": "64 · Get Thee behind Me"
-  },
-  "MRK-C05-D-P08-TakeUpHisCross.dc.html": {
-   "x": 2520,
-   "y": 20800,
-   "w": 760,
-   "h": 1080,
-   "title": "65 · Take Up His Cross"
-  },
-  "MRK-C05-D-P09-HeWasTransfigured.dc.html": {
+  "MRK-C05-D-P04-TheLeavenOfThePhar.dc.html": {
    "x": 3360,
    "y": 20800,
    "w": 760,
    "h": 1080,
-   "title": "66 · He Was Transfigured"
+   "title": "62 · The Leaven of the Pharisees"
   },
-  "MRK-C05-D-P10-ElijahIsCome.dc.html": {
+  "MRK-C05-D-P05-ISeeMenAsTreesWalk.dc.html": {
    "x": 0,
    "y": 22000,
    "w": 760,
    "h": 1080,
-   "title": "67 · Elijah Is Come"
+   "title": "63 · I See Men, as Trees, Walking"
   },
-  "MRK-C05-D-P11-HelpThouMineUnbeli.dc.html": {
+  "MRK-C05-D-P06-ThouArtTheChrist.dc.html": {
    "x": 840,
    "y": 22000,
    "w": 760,
    "h": 1080,
-   "title": "68 · Help Thou Mine Unbelief"
+   "title": "64 · Thou Art the Christ"
   },
-  "MRK-C05-D-P12-HelpThouMineUnbeli.dc.html": {
+  "MRK-C05-D-P07-GetTheeBehindMe.dc.html": {
    "x": 1680,
    "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Get Thee behind Me"
+  },
+  "MRK-C05-D-P08-TakeUpHisCross.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Take Up His Cross"
+  },
+  "MRK-C05-D-P09-HeWasTransfigured.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · He Was Transfigured"
+  },
+  "MRK-C05-D-P10-ElijahIsCome.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Elijah Is Come"
+  },
+  "MRK-C05-D-P11-HelpThouMineUnbeli.dc.html": {
+   "x": 840,
+   "y": 23200,
    "w": 760,
    "h": 1080,
    "title": "69 · Help Thou Mine Unbelief"
   },
-  "MRK-C05-D-P13-HelpThouMineUnbeli.dc.html": {
-   "x": 2520,
-   "y": 22000,
+  "MRK-C05-D-P12-HelpThouMineUnbeli.dc.html": {
+   "x": 1680,
+   "y": 23200,
    "w": 760,
    "h": 1080,
    "title": "70 · Help Thou Mine Unbelief"
   },
-  "MRK-C05-D-P14-HelpThouMineUnbeli.dc.html": {
-   "x": 3360,
-   "y": 22000,
+  "MRK-C05-D-P13-HelpThouMineUnbeli.dc.html": {
+   "x": 2520,
+   "y": 23200,
    "w": 760,
    "h": 1080,
    "title": "71 · Help Thou Mine Unbelief"
   },
+  "MRK-C05-D-P14-HelpThouMineUnbeli.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Help Thou Mine Unbelief"
+  },
   "MRK-C06-00-Title.dc.html": {
    "x": 0,
-   "y": 23700,
+   "y": 24900,
    "w": 760,
    "h": 1080,
    "title": "Chapter 6 · The Last Shall Be First"
   },
   "MRK-C06-D-P01-WhoIsTheGreatest.dc.html": {
    "x": 840,
-   "y": 23700,
+   "y": 24900,
    "w": 760,
    "h": 1080,
-   "title": "72 · Who Is the Greatest"
+   "title": "73 · Who Is the Greatest"
   },
   "MRK-C06-D-P02-TheFireIsNotQuench.dc.html": {
    "x": 1680,
-   "y": 23700,
-   "w": 760,
-   "h": 1080,
-   "title": "73 · The Fire Is Not Quenched"
-  },
-  "MRK-C06-D-P03-TheFireIsNotQuench.dc.html": {
-   "x": 2520,
-   "y": 23700,
+   "y": 24900,
    "w": 760,
    "h": 1080,
    "title": "74 · The Fire Is Not Quenched"
   },
-  "MRK-C06-D-P04-WhatGodHathJoinedT.dc.html": {
-   "x": 3360,
-   "y": 23700,
+  "MRK-C06-D-P03-TheFireIsNotQuench.dc.html": {
+   "x": 2520,
+   "y": 24900,
    "w": 760,
    "h": 1080,
-   "title": "75 · What God Hath Joined Together"
+   "title": "75 · The Fire Is Not Quenched"
   },
-  "MRK-C06-D-P05-WhatGodHathJoinedT.dc.html": {
-   "x": 0,
+  "MRK-C06-D-P04-WhatGodHathJoinedT.dc.html": {
+   "x": 3360,
    "y": 24900,
    "w": 760,
    "h": 1080,
    "title": "76 · What God Hath Joined Together"
   },
-  "MRK-C06-D-P06-OneThingThouLackes.dc.html": {
-   "x": 840,
-   "y": 24900,
+  "MRK-C06-D-P05-WhatGodHathJoinedT.dc.html": {
+   "x": 0,
+   "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "77 · One Thing Thou Lackest"
+   "title": "77 · What God Hath Joined Together"
   },
-  "MRK-C06-D-P07-OneThingThouLackes.dc.html": {
-   "x": 1680,
-   "y": 24900,
+  "MRK-C06-D-P06-OneThingThouLackes.dc.html": {
+   "x": 840,
+   "y": 26100,
    "w": 760,
    "h": 1080,
    "title": "78 · One Thing Thou Lackest"
   },
-  "MRK-C06-D-P08-OneThingThouLackes.dc.html": {
-   "x": 2520,
-   "y": 24900,
-   "w": 760,
-   "h": 1080,
-   "title": "79 · One Thing Thou Lackest"
-  },
-  "MRK-C06-D-P09-TheLastShallBeFirs.dc.html": {
-   "x": 3360,
-   "y": 24900,
-   "w": 760,
-   "h": 1080,
-   "title": "80 · The Last Shall Be First"
-  },
-  "MRK-C06-D-P10-AreYeAble.dc.html": {
-   "x": 0,
-   "y": 26100,
-   "w": 760,
-   "h": 1080,
-   "title": "81 · Are Ye Able?"
-  },
-  "MRK-C06-D-P11-AreYeAble.dc.html": {
-   "x": 840,
-   "y": 26100,
-   "w": 760,
-   "h": 1080,
-   "title": "82 · Are Ye Able?"
-  },
-  "MRK-C06-D-P12-Bartimus.dc.html": {
+  "MRK-C06-D-P07-OneThingThouLackes.dc.html": {
    "x": 1680,
    "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "83 · Bartimæus"
+   "title": "79 · One Thing Thou Lackest"
   },
-  "MRK-C06-D-P13-Bartimus.dc.html": {
+  "MRK-C06-D-P08-OneThingThouLackes.dc.html": {
    "x": 2520,
    "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "84 · Bartimæus"
+   "title": "80 · One Thing Thou Lackest"
   },
-  "MRK-C06-D-P14-Bartimus.dc.html": {
+  "MRK-C06-D-P09-TheLastShallBeFirs.dc.html": {
    "x": 3360,
    "y": 26100,
    "w": 760,
    "h": 1080,
+   "title": "81 · The Last Shall Be First"
+  },
+  "MRK-C06-D-P10-AreYeAble.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Are Ye Able?"
+  },
+  "MRK-C06-D-P11-AreYeAble.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · Are Ye Able?"
+  },
+  "MRK-C06-D-P12-Bartimus.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Bartimæus"
+  },
+  "MRK-C06-D-P13-Bartimus.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
    "title": "85 · Bartimæus"
+  },
+  "MRK-C06-D-P14-Bartimus.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Bartimæus"
   },
   "MRK-C07-00-Title.dc.html": {
    "x": 0,
-   "y": 27800,
+   "y": 29000,
    "w": 760,
    "h": 1080,
    "title": "Chapter 7 · Hosanna"
   },
   "MRK-C07-D-P01-Hosanna.dc.html": {
    "x": 840,
-   "y": 27800,
-   "w": 760,
-   "h": 1080,
-   "title": "86 · Hosanna"
-  },
-  "MRK-C07-D-P02-Hosanna.dc.html": {
-   "x": 1680,
-   "y": 27800,
+   "y": 29000,
    "w": 760,
    "h": 1080,
    "title": "87 · Hosanna"
   },
-  "MRK-C07-D-P03-AHouseOfPrayer.dc.html": {
-   "x": 2520,
-   "y": 27800,
+  "MRK-C07-D-P02-Hosanna.dc.html": {
+   "x": 1680,
+   "y": 29000,
    "w": 760,
    "h": 1080,
-   "title": "88 · A House of Prayer"
+   "title": "88 · Hosanna"
+  },
+  "MRK-C07-D-P03-AHouseOfPrayer.dc.html": {
+   "x": 2520,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · A House of Prayer"
   },
   "MRK-C07-D-P04-HaveFaithInGod.dc.html": {
    "x": 3360,
-   "y": 27800,
-   "w": 760,
-   "h": 1080,
-   "title": "89 · Have Faith in God"
-  },
-  "MRK-C07-D-P05-HaveFaithInGod.dc.html": {
-   "x": 0,
    "y": 29000,
    "w": 760,
    "h": 1080,
    "title": "90 · Have Faith in God"
   },
-  "MRK-C07-D-P06-ByWhatAuthority.dc.html": {
-   "x": 840,
-   "y": 29000,
+  "MRK-C07-D-P05-HaveFaithInGod.dc.html": {
+   "x": 0,
+   "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "91 · By What Authority?"
+   "title": "91 · Have Faith in God"
   },
-  "MRK-C07-D-P07-ByWhatAuthority.dc.html": {
-   "x": 1680,
-   "y": 29000,
+  "MRK-C07-D-P06-ByWhatAuthority.dc.html": {
+   "x": 840,
+   "y": 30200,
    "w": 760,
    "h": 1080,
    "title": "92 · By What Authority?"
   },
-  "MRK-C07-D-P08-TheBelovedSon.dc.html": {
-   "x": 2520,
-   "y": 29000,
-   "w": 760,
-   "h": 1080,
-   "title": "93 · The Beloved Son"
-  },
-  "MRK-C07-D-P09-TheBelovedSon.dc.html": {
-   "x": 3360,
-   "y": 29000,
-   "w": 760,
-   "h": 1080,
-   "title": "94 · The Beloved Son"
-  },
-  "MRK-C07-D-P10-RenderUntoCsar.dc.html": {
-   "x": 0,
-   "y": 30200,
-   "w": 760,
-   "h": 1080,
-   "title": "95 · Render unto Cæsar"
-  },
-  "MRK-C07-D-P11-TheGodOfTheLiving.dc.html": {
-   "x": 840,
-   "y": 30200,
-   "w": 760,
-   "h": 1080,
-   "title": "96 · The God of the Living"
-  },
-  "MRK-C07-D-P12-TheFirstCommandmen.dc.html": {
+  "MRK-C07-D-P07-ByWhatAuthority.dc.html": {
    "x": 1680,
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "97 · The First Commandment"
+   "title": "93 · By What Authority?"
   },
-  "MRK-C07-D-P13-TheFirstCommandmen.dc.html": {
+  "MRK-C07-D-P08-TheBelovedSon.dc.html": {
    "x": 2520,
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "98 · The First Commandment"
+   "title": "94 · The Beloved Son"
   },
-  "MRK-C07-D-P14-DavidSSon.dc.html": {
+  "MRK-C07-D-P09-TheBelovedSon.dc.html": {
    "x": 3360,
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "99 · David's Son"
+   "title": "95 · The Beloved Son"
   },
-  "MRK-C07-D-P15-TwoMites.dc.html": {
+  "MRK-C07-D-P10-RenderUntoCsar.dc.html": {
    "x": 0,
    "y": 31400,
    "w": 760,
    "h": 1080,
-   "title": "100 · Two Mites"
+   "title": "96 · Render unto Cæsar"
+  },
+  "MRK-C07-D-P11-TheGodOfTheLiving.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The God of the Living"
+  },
+  "MRK-C07-D-P12-TheFirstCommandmen.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The First Commandment"
+  },
+  "MRK-C07-D-P13-TheFirstCommandmen.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · The First Commandment"
+  },
+  "MRK-C07-D-P14-DavidSSon.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · David's Son"
+  },
+  "MRK-C07-D-P15-TwoMites.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Two Mites"
   },
   "MRK-C08-00-Title.dc.html": {
    "x": 0,
-   "y": 33100,
+   "y": 34300,
    "w": 760,
    "h": 1080,
    "title": "Chapter 8 · Watch"
   },
   "MRK-C08-D-P01-NotOneStoneUponAno.dc.html": {
    "x": 840,
-   "y": 33100,
+   "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "101 · Not One Stone upon Another"
+   "title": "102 · Not One Stone upon Another"
   },
   "MRK-C08-D-P02-TheBeginningOfTrav.dc.html": {
    "x": 1680,
-   "y": 33100,
+   "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "102 · The Beginning of Travail"
+   "title": "103 · The Beginning of Travail"
   },
   "MRK-C08-D-P03-FleeUntoTheMountai.dc.html": {
    "x": 2520,
-   "y": 33100,
+   "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "103 · Flee unto the Mountains"
+   "title": "104 · Flee unto the Mountains"
   },
   "MRK-C08-D-P04-ComingInClouds.dc.html": {
    "x": 3360,
-   "y": 33100,
+   "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "104 · Coming in Clouds"
+   "title": "105 · Coming in Clouds"
   },
   "MRK-C08-D-P05-LearnHerParable.dc.html": {
    "x": 0,
-   "y": 34300,
+   "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "105 · Learn Her Parable"
+   "title": "106 · Learn Her Parable"
   },
   "MRK-C08-D-P06-Watch.dc.html": {
    "x": 840,
-   "y": 34300,
+   "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "106 · Watch"
+   "title": "107 · Watch"
   },
   "MRK-C08-D-P07-ForTheBurying.dc.html": {
    "x": 1680,
-   "y": 34300,
-   "w": 760,
-   "h": 1080,
-   "title": "107 · For the Burying"
-  },
-  "MRK-C08-D-P08-ForTheBurying.dc.html": {
-   "x": 2520,
-   "y": 34300,
+   "y": 35500,
    "w": 760,
    "h": 1080,
    "title": "108 · For the Burying"
   },
-  "MRK-C08-D-P09-TheGuestChamber.dc.html": {
-   "x": 3360,
-   "y": 34300,
-   "w": 760,
-   "h": 1080,
-   "title": "109 · The Guest-Chamber"
-  },
-  "MRK-C08-D-P10-IsItI.dc.html": {
-   "x": 0,
-   "y": 35500,
-   "w": 760,
-   "h": 1080,
-   "title": "110 · Is It I?"
-  },
-  "MRK-C08-D-P11-ThisIsMyBody.dc.html": {
-   "x": 840,
-   "y": 35500,
-   "w": 760,
-   "h": 1080,
-   "title": "111 · This Is My Body"
-  },
-  "MRK-C08-D-P12-BeforeTheCockCrowT.dc.html": {
-   "x": 1680,
-   "y": 35500,
-   "w": 760,
-   "h": 1080,
-   "title": "112 · Before the Cock Crow Twice"
-  },
-  "MRK-C08-D-P13-BeforeTheCockCrowT.dc.html": {
+  "MRK-C08-D-P08-ForTheBurying.dc.html": {
    "x": 2520,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "113 · Before the Cock Crow Twice"
+   "title": "109 · For the Burying"
   },
-  "MRK-C08-D-P14-Gethsemane.dc.html": {
+  "MRK-C08-D-P09-TheGuestChamber.dc.html": {
    "x": 3360,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "114 · Gethsemane"
+   "title": "110 · The Guest-Chamber"
   },
-  "MRK-C08-D-P15-Gethsemane.dc.html": {
+  "MRK-C08-D-P10-IsItI.dc.html": {
    "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Is It I?"
+  },
+  "MRK-C08-D-P11-ThisIsMyBody.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · This Is My Body"
+  },
+  "MRK-C08-D-P12-BeforeTheCockCrowT.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Before the Cock Crow Twice"
+  },
+  "MRK-C08-D-P13-BeforeTheCockCrowT.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Before the Cock Crow Twice"
+  },
+  "MRK-C08-D-P14-Gethsemane.dc.html": {
+   "x": 3360,
    "y": 36700,
    "w": 760,
    "h": 1080,
    "title": "115 · Gethsemane"
   },
+  "MRK-C08-D-P15-Gethsemane.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Gethsemane"
+  },
   "MRK-C09-00-Title.dc.html": {
    "x": 0,
-   "y": 38400,
+   "y": 39600,
    "w": 760,
    "h": 1080,
    "title": "Chapter 9 · He Is Risen"
   },
   "MRK-C09-D-P01-SwordsAndStaves.dc.html": {
    "x": 840,
-   "y": 38400,
-   "w": 760,
-   "h": 1080,
-   "title": "116 · Swords and Staves"
-  },
-  "MRK-C09-D-P02-SwordsAndStaves.dc.html": {
-   "x": 1680,
-   "y": 38400,
+   "y": 39600,
    "w": 760,
    "h": 1080,
    "title": "117 · Swords and Staves"
   },
-  "MRK-C09-D-P03-BeforeTheHighPries.dc.html": {
-   "x": 2520,
-   "y": 38400,
+  "MRK-C09-D-P02-SwordsAndStaves.dc.html": {
+   "x": 1680,
+   "y": 39600,
    "w": 760,
    "h": 1080,
-   "title": "118 · Before the High Priest"
+   "title": "118 · Swords and Staves"
   },
-  "MRK-C09-D-P04-BeforeTheHighPries.dc.html": {
-   "x": 3360,
-   "y": 38400,
+  "MRK-C09-D-P03-BeforeTheHighPries.dc.html": {
+   "x": 2520,
+   "y": 39600,
    "w": 760,
    "h": 1080,
    "title": "119 · Before the High Priest"
   },
-  "MRK-C09-D-P05-BeforeTheHighPries.dc.html": {
-   "x": 0,
+  "MRK-C09-D-P04-BeforeTheHighPries.dc.html": {
+   "x": 3360,
    "y": 39600,
    "w": 760,
    "h": 1080,
    "title": "120 · Before the High Priest"
   },
-  "MRK-C09-D-P06-PeterByTheFire.dc.html": {
-   "x": 840,
-   "y": 39600,
+  "MRK-C09-D-P05-BeforeTheHighPries.dc.html": {
+   "x": 0,
+   "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "121 · Peter by the Fire"
+   "title": "121 · Before the High Priest"
   },
-  "MRK-C09-D-P07-PeterByTheFire.dc.html": {
-   "x": 1680,
-   "y": 39600,
+  "MRK-C09-D-P06-PeterByTheFire.dc.html": {
+   "x": 840,
+   "y": 40800,
    "w": 760,
    "h": 1080,
    "title": "122 · Peter by the Fire"
   },
-  "MRK-C09-D-P08-DeliveredUpToPilat.dc.html": {
-   "x": 2520,
-   "y": 39600,
+  "MRK-C09-D-P07-PeterByTheFire.dc.html": {
+   "x": 1680,
+   "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "123 · Delivered Up to Pilate"
+   "title": "123 · Peter by the Fire"
+  },
+  "MRK-C09-D-P08-DeliveredUpToPilat.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Delivered Up to Pilate"
   },
   "MRK-C09-D-P09-Barabbas.dc.html": {
    "x": 3360,
-   "y": 39600,
-   "w": 760,
-   "h": 1080,
-   "title": "124 · Barabbas"
-  },
-  "MRK-C09-D-P10-Barabbas.dc.html": {
-   "x": 0,
    "y": 40800,
    "w": 760,
    "h": 1080,
    "title": "125 · Barabbas"
   },
-  "MRK-C09-D-P11-TheKingOfTheJews.dc.html": {
-   "x": 840,
-   "y": 40800,
+  "MRK-C09-D-P10-Barabbas.dc.html": {
+   "x": 0,
+   "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "126 · The King of the Jews"
+   "title": "126 · Barabbas"
+  },
+  "MRK-C09-D-P11-TheKingOfTheJews.dc.html": {
+   "x": 840,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · The King of the Jews"
   },
   "MRK-C09-D-P12-Golgotha.dc.html": {
    "x": 1680,
-   "y": 40800,
-   "w": 760,
-   "h": 1080,
-   "title": "127 · Golgotha"
-  },
-  "MRK-C09-D-P13-Golgotha.dc.html": {
-   "x": 2520,
-   "y": 40800,
+   "y": 42000,
    "w": 760,
    "h": 1080,
    "title": "128 · Golgotha"
   },
-  "MRK-C09-D-P14-DarknessOverTheWho.dc.html": {
-   "x": 3360,
-   "y": 40800,
-   "w": 760,
-   "h": 1080,
-   "title": "129 · Darkness over the Whole Land"
-  },
-  "MRK-C09-D-P15-TheTombHewnOutOfAR.dc.html": {
-   "x": 0,
-   "y": 42000,
-   "w": 760,
-   "h": 1080,
-   "title": "130 · The Tomb Hewn out of a Rock"
-  },
-  "MRK-C09-D-P16-HeIsRisen.dc.html": {
-   "x": 840,
-   "y": 42000,
-   "w": 760,
-   "h": 1080,
-   "title": "131 · He Is Risen"
-  },
-  "MRK-C09-D-P17-HeIsRisen.dc.html": {
-   "x": 1680,
-   "y": 42000,
-   "w": 760,
-   "h": 1080,
-   "title": "132 · He Is Risen"
-  },
-  "MRK-C09-D-P18-HeAppearedFirstToM.dc.html": {
+  "MRK-C09-D-P13-Golgotha.dc.html": {
    "x": 2520,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "133 · He Appeared First to Mary Magdalene"
+   "title": "129 · Golgotha"
   },
-  "MRK-C09-D-P19-GoYeIntoAllTheWorl.dc.html": {
+  "MRK-C09-D-P14-DarknessOverTheWho.dc.html": {
    "x": 3360,
    "y": 42000,
    "w": 760,
    "h": 1080,
-   "title": "134 · Go Ye into All the World"
+   "title": "130 · Darkness over the Whole Land"
   },
-  "MRK-C09-D-P20-GoYeIntoAllTheWorl.dc.html": {
+  "MRK-C09-D-P15-TheVeilOfTheTemple.dc.html": {
    "x": 0,
    "y": 43200,
    "w": 760,
    "h": 1080,
-   "title": "135 · Go Ye into All the World"
+   "title": "131 · The Veil of the Temple"
+  },
+  "MRK-C09-D-P16-TheTombHewnOutOfAR.dc.html": {
+   "x": 840,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Tomb Hewn out of a Rock"
+  },
+  "MRK-C09-D-P17-HeIsRisen.dc.html": {
+   "x": 1680,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · He Is Risen"
+  },
+  "MRK-C09-D-P18-HeIsRisen.dc.html": {
+   "x": 2520,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · He Is Risen"
+  },
+  "MRK-C09-D-P19-HeAppearedFirstToM.dc.html": {
+   "x": 3360,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · He Appeared First to Mary Magdalene"
+  },
+  "MRK-C09-D-P20-GoYeIntoAllTheWorl.dc.html": {
+   "x": 0,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Go Ye into All the World"
+  },
+  "MRK-C09-D-P21-GoYeIntoAllTheWorl.dc.html": {
+   "x": 840,
+   "y": 44400,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Go Ye into All the World"
   }
  },
  "order": [
@@ -1045,19 +1059,20 @@
   "MRK-C01-D-P14-LordOfTheSabbath.dc.html",
   "MRK-C02-00-Title.dc.html",
   "MRK-C02-D-P01-StretchForthThyHan.dc.html",
-  "MRK-C02-D-P02-AGreatMultitude.dc.html",
-  "MRK-C02-D-P03-HeAppointedTwelve.dc.html",
-  "MRK-C02-D-P04-AHouseDivided.dc.html",
+  "MRK-C02-D-P02-StretchForthThyHan.dc.html",
+  "MRK-C02-D-P03-AGreatMultitude.dc.html",
+  "MRK-C02-D-P04-HeAppointedTwelve.dc.html",
   "MRK-C02-D-P05-AHouseDivided.dc.html",
-  "MRK-C02-D-P06-MyMotherAndMyBreth.dc.html",
-  "MRK-C02-D-P07-BeholdTheSowerWent.dc.html",
-  "MRK-C02-D-P08-TheSowerSowethTheW.dc.html",
+  "MRK-C02-D-P06-AHouseDivided.dc.html",
+  "MRK-C02-D-P07-MyMotherAndMyBreth.dc.html",
+  "MRK-C02-D-P08-BeholdTheSowerWent.dc.html",
   "MRK-C02-D-P09-TheSowerSowethTheW.dc.html",
-  "MRK-C02-D-P10-TheLampOnTheStand.dc.html",
-  "MRK-C02-D-P11-TheSeedShouldSprin.dc.html",
+  "MRK-C02-D-P10-TheSowerSowethTheW.dc.html",
+  "MRK-C02-D-P11-TheLampOnTheStand.dc.html",
   "MRK-C02-D-P12-TheSeedShouldSprin.dc.html",
-  "MRK-C02-D-P13-PeaceBeStill.dc.html",
+  "MRK-C02-D-P13-TheSeedShouldSprin.dc.html",
   "MRK-C02-D-P14-PeaceBeStill.dc.html",
+  "MRK-C02-D-P15-PeaceBeStill.dc.html",
   "MRK-C03-00-Title.dc.html",
   "MRK-C03-D-P01-MyNameIsLegion.dc.html",
   "MRK-C03-D-P02-MyNameIsLegion.dc.html",
@@ -1166,12 +1181,13 @@
   "MRK-C09-D-P12-Golgotha.dc.html",
   "MRK-C09-D-P13-Golgotha.dc.html",
   "MRK-C09-D-P14-DarknessOverTheWho.dc.html",
-  "MRK-C09-D-P15-TheTombHewnOutOfAR.dc.html",
-  "MRK-C09-D-P16-HeIsRisen.dc.html",
+  "MRK-C09-D-P15-TheVeilOfTheTemple.dc.html",
+  "MRK-C09-D-P16-TheTombHewnOutOfAR.dc.html",
   "MRK-C09-D-P17-HeIsRisen.dc.html",
-  "MRK-C09-D-P18-HeAppearedFirstToM.dc.html",
-  "MRK-C09-D-P19-GoYeIntoAllTheWorl.dc.html",
-  "MRK-C09-D-P20-GoYeIntoAllTheWorl.dc.html"
+  "MRK-C09-D-P18-HeIsRisen.dc.html",
+  "MRK-C09-D-P19-HeAppearedFirstToM.dc.html",
+  "MRK-C09-D-P20-GoYeIntoAllTheWorl.dc.html",
+  "MRK-C09-D-P21-GoYeIntoAllTheWorl.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1200,49 +1216,49 @@
    "maxW": 4120,
    "text": "Chapter 3 · Talitha Cumi (Mark 5:1–6:29)",
    "x": 0,
-   "y": 9900
+   "y": 11100
   },
   "chapter04": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 4 · It Is I (Mark 6:30–7:37)",
    "x": 0,
-   "y": 15200
+   "y": 16400
   },
   "chapter05": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 5 · Thou Art the Christ (Mark 8:1–9:29)",
    "x": 0,
-   "y": 19300
+   "y": 20500
   },
   "chapter06": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 6 · The Last Shall Be First (Mark 9:30–10:52)",
    "x": 0,
-   "y": 23400
+   "y": 24600
   },
   "chapter07": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 7 · Hosanna (Mark 11–12)",
    "x": 0,
-   "y": 27500
+   "y": 28700
   },
   "chapter08": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 8 · Watch (Mark 13:1–14:42)",
    "x": 0,
-   "y": 32800
+   "y": 34000
   },
   "chapter09": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 9 · He Is Risen (Mark 14:43–16:20)",
    "x": 0,
-   "y": 38100
+   "y": 39300
   }
  },
  "designSystems": [],

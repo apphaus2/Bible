@@ -12,6 +12,7 @@ mine unbelief; then the boy standing quiet beside his father."""
 import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
+import mk
 from mrk import G, art5 as A, ch04 as _prev
 from mrk.common import (K, Pages, D, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
                         PETER, PETER_GRIEF, ANDREW, JOHN, PHARISEE, FATHER_BOY, BETHSAIDA, BETHSAIDA_SEE)
@@ -56,7 +57,7 @@ SEGS = [F([cp("8:1"), sy("8:2"), sy("8:3")], JESUS, head="Seven Loaves", stamp=8
         D([cp("8:34", to="said unto them,"), sy("8:34", frm="If any man"), sy("8:35")], lambda w, h: A.to_jerusalem("tj1", w, h, 834), "#4A2A5A", head="Take Up His Cross"),
         F([sy("8:36"), sy("8:37"), sy("8:38")], JESUS_GRIEF, bg=COLD),
         # Mark 9
-        F([cp("9:1", to="said unto them,"), sy("9:1", frm="Verily")], JESUS_TEACH, stamp=9),
+        F([cp("9:1", to="said unto them,"), sy("9:1", frm="Verily")], JESUS_TEACH, flip=True, h=250, extra=mk.stamp(9, "left: 462px; top: 16px")),
         D([cp("9:2"), cp("9:3"), cp("9:4")], lambda w, h: A.transfigured("tf1", w, h, 902), "#2A2A6A", head="He Was Transfigured", art_h=320),
         F([cp("9:5", to="saith to Jesus,"), sy("9:5", frm="Rabbi,"), cp("9:6")], PETER),
         D([cp("9:7", to="out of the cloud,"), gd("9:7", frm="This is my beloved")], lambda w, h: A.transfigured("tf2", w, h, 907, cloud=True), "#FFFDF0", art_h=280),

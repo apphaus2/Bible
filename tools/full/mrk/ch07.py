@@ -28,7 +28,7 @@ def title_page(n):
 
 def F(lines, tok=JESUS_TEACH, bg=GOLDEN, **k): return K.face(lines, tok, bg=bg, **k)
 
-SEGS = [D([cp("11:1"), cp("11:2", to="saith unto them,"), sy("11:2", frm="Go your way"), sy("11:3")], lambda w, h: A.bethphage("bp1", w, h, 1101), "#8FD0E2", head="Hosanna", stamp=11),
+SEGS = [D([cp("11:1"), cp("11:2", to="saith unto them,"), sy("11:2", frm="Go your way"), sy("11:3")], lambda w, h: A.bethphage("bp1", w, h, 1101), "#8FD0E2", head="Hosanna", sky=11),
         D([cp("11:4"), cp("11:5", to="said unto them,"), sy("11:5", frm="What do ye"), cp("11:6")], lambda w, h: A.bethphage("bp2", w, h, 1104), "#8FD0E2"),
         D([cp("11:7"), cp("11:8"), cp("11:9", to="cried,"), sy("11:9", frm="Hosanna;"), sy("11:10")], lambda w, h: A.entry("en1", w, h, 1107), "#8FD0E2", art_h=260),
         D([cp("11:11")], lambda w, h: A.temple_court("tc1", w, h, 1111), "#4A2A5A"),

@@ -57,13 +57,19 @@ def title(num, name, rng, svg, bg, quote):
     """A chapter opener (第一話, 第二話, …)."""
     return chapter_title(num, f"第{mk.kanji_num(num)}話", name, rng, shade(svg), bg, quote, CREDIT)
 
-def drawn(lines, art, bg, art_h=240, size=17, **kw):
+def drawn(lines, art, bg, art_h=240, size=17, sky=None, **kw):
     """K.drawn with room for a real picture: the panel as tall as its words need at `size` px plus art_h for the drawing
-    (pass h= to fix it)."""
+    (pass h= to fix it). sky=n (or (n, "left")) sets chapter n's stamp at the top right (left) of the drawing, just under the words (in the sky
+    or on the wall, clear of the figures standing below), instead of over the verse label."""
+    from oba.minor import _flat
     if "h" not in kw:
-        from oba.minor import _flat
         hw = speech._height(_flat(lines), 678, size)
         kw["h"] = int(max(hw + 44 + art_h, (hw + 40) / 0.6))       # the words get at most 62% of a panel over a drawing
+    if sky:
+        n, side = sky if isinstance(sky, tuple) else (sky, "right")
+        ls = _flat(lines); h = kw["h"]
+        top = min(h * 0.62, speech._height(ls, 678, speech.fit(ls, 678, h * 0.62)) + 44)
+        kw["extra"] = kw.get("extra", "") + mk.stamp(n, f"{side}: 18px; top: {top + 10:.0f}px")
     return K.drawn(lines, art, bg, **kw)
 
 def D(lines, fn, bg, **k):

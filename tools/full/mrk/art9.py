@@ -165,5 +165,7 @@ def everywhere(p, w, h, seed):
     for i, (x, y) in enumerate(((0.16, 0.6), (0.38, 0.64), (0.6, 0.64), (0.82, 0.6), (0.26, 0.86), (0.7, 0.86))):
         for j in range(2):
             yy = h * y; ss = fit(yy, yy - h * 0.14 * (1 + (y - 0.6) * 2.4))
-            o.append(disciple(p, w * x + (j - 0.5) * 84 * ss, yy, ss, TWELVE[(i * 2 + j) % 12], flip=x > 0.5, kind="Tunic"))
+            c = TWELVE[(i * 2 + j) % 12]
+            head = A.headcloth(["#E8E2D6", "#6A5A3A", "#3A4A6A", "#8A847A"][(i + j) % 4], cord="#3A2214") + (A.BLACK_BEARD if (i + j) % 3 else "")
+            o.append(mk.person(p, round(w * x + (j - 0.5) * 84 * ss), round(yy), round(ss, 3), body="#B98A6E", cloth=c, kind="Tunic", sw=3, flip=x > 0.5, extra=head))
     return "".join(o)
