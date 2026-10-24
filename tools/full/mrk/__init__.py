@@ -72,5 +72,3 @@ META = {
      "blurb": "The kiss of Judas and the swords and staves; before the high priest — I am; Peter's three denials; Pilate and Barabbas; the purple and the crown of thorns; Golgotha, the darkness over the whole land and the veil of the temple rent — truly this man was the Son of God; the stone at the door of the tomb; and very early on the first day of the week: he is risen; he is not here; go ye into all the world, and preach the gospel to the whole creation."},
   ],
 }
-# chapters are listed as they are built
-META["chapters"] = [c for c in META["chapters"] if (pathlib.Path(__file__).resolve().parent / f"{c['module']}.py").exists()]

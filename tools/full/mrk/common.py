@@ -16,7 +16,39 @@ from mat.common import (SCRIBE, SCRIBE_STERN, PRIEST, SADDUCEE, BAPTIST_STERN, B
 from mrk import G
 
 CODE = "MARK"
-K = Kit(G, CODE, "Mark")
+
+class MarkKit(Kit):
+    """oba.minor.Kit, with one more rule for a page: a panel over a drawing keeps at least `keep` of the height it asked
+    for (Kit.pack gives the last panel of a page whatever room is left, which could squeeze its drawing to a strip)."""
+    def pack(self, segs, prefix, start, end="", default_head=None, min_size=12.5, most=3, budget=1150, min_art=200, lone=0.0, keep=0.8):
+        from discourse import _sizes, _chars, _heights, pack as _pack
+        def fits(g):
+            if len(g) == 1: return True
+            if min(_sizes(g)) < min_size: return False
+            hs = _heights(g)
+            return (all(hh >= (min_art if s["tok"] is None and s["art"] is not None else 170) for s, hh in zip(g, hs))
+                    and all(hh >= keep * s["h"] for s, hh in zip(g, hs) if s["h"]))
+        n, INF = len(segs), float("inf")
+        best, cut = [0.0] + [INF] * n, [0] * (n + 1)
+        for j in range(1, n + 1):
+            for i in range(max(0, j - most), j):
+                g = segs[i:j]; chars = sum(_chars(x) for x in g)
+                if best[i] == INF or (len(g) > 1 and (chars > budget or not fits(g))): continue
+                under = max(0.0, (budget * 0.8 - chars) / budget)
+                cost = best[i] + 1 + 3 * under * under + sum(0.25 for x in g[1:] if x["head"]) + (lone if len(g) == 1 else 0)
+                if cost < best[j]: best[j], cut[j] = cost, i
+        groups, j = [], n
+        while j > 0: groups.insert(0, segs[cut[j]:j]); j = cut[j]
+        out, head = [], default_head or ""
+        for i, g in enumerate(groups):
+            pages = _pack(g, prefix, start + len(out), book=self.book, code=self.code, budget=10 ** 9, most=99, default_head=head,
+                          end=end if i == len(groups) - 1 else "")
+            for name, t, fn in pages:
+                out.append((f"{prefix}-P{len(out) + 1:02d}-" + name.split("-P01-", 1)[1], t, fn))
+            head = next((s["head"] for s in reversed(g) if s["head"]), head)
+        return out
+
+K = MarkKit(G, CODE, "Mark")
 cp, gd, sg, sy, cps, gds, sgs, j = K.cp, K.gd, K.sg, K.sy, K.cps, K.gds, K.sgs, K.j
 v, sp = G.v, G.span
 CREDIT = "Mark · Volume Forty-One"
