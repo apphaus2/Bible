@@ -842,6 +842,104 @@
    "w": 760,
    "h": 1080,
    "title": "110 · Martha, Martha"
+  },
+  "LUK-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Teach Us to Pray"
+  },
+  "LUK-C09-D-P01-LordTeachUsToPray.dc.html": {
+   "x": 840,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Lord, Teach Us to Pray"
+  },
+  "LUK-C09-D-P02-FriendLendMeThreeL.dc.html": {
+   "x": 1680,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Friend, Lend Me Three Loaves"
+  },
+  "LUK-C09-D-P03-AskAndItShallBeGiv.dc.html": {
+   "x": 2520,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Ask, and It Shall Be Given You"
+  },
+  "LUK-C09-D-P04-TheFingerOfGod.dc.html": {
+   "x": 3360,
+   "y": 38400,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · The Finger of God"
+  },
+  "LUK-C09-D-P05-TheFingerOfGod.dc.html": {
+   "x": 0,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Finger of God"
+  },
+  "LUK-C09-D-P06-BlessedAreTheyThat.dc.html": {
+   "x": 840,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · Blessed Are They That Hear"
+  },
+  "LUK-C09-D-P07-AGreaterThanJonah.dc.html": {
+   "x": 1680,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · A Greater Than Jonah"
+  },
+  "LUK-C09-D-P08-TheLampOfThyBody.dc.html": {
+   "x": 2520,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Lamp of Thy Body"
+  },
+  "LUK-C09-D-P09-WoeUntoYouPharisee.dc.html": {
+   "x": 3360,
+   "y": 39600,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Woe unto You Pharisees"
+  },
+  "LUK-C09-D-P10-WoeUntoYouPharisee.dc.html": {
+   "x": 0,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · Woe unto You Pharisees"
+  },
+  "LUK-C09-D-P11-WoeUntoYouLawyers.dc.html": {
+   "x": 840,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · Woe unto You Lawyers"
+  },
+  "LUK-C09-D-P12-WoeUntoYouLawyers.dc.html": {
+   "x": 1680,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Woe unto You Lawyers"
+  },
+  "LUK-C09-D-P13-WoeUntoYouLawyers.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Woe unto You Lawyers"
   }
  },
  "order": [
@@ -963,7 +1061,21 @@
   "LUK-C08-D-P07-ACertainManWasGoin.dc.html",
   "LUK-C08-D-P08-ACertainManWasGoin.dc.html",
   "LUK-C08-D-P09-ACertainManWasGoin.dc.html",
-  "LUK-C08-D-P10-MarthaMartha.dc.html"
+  "LUK-C08-D-P10-MarthaMartha.dc.html",
+  "LUK-C09-00-Title.dc.html",
+  "LUK-C09-D-P01-LordTeachUsToPray.dc.html",
+  "LUK-C09-D-P02-FriendLendMeThreeL.dc.html",
+  "LUK-C09-D-P03-AskAndItShallBeGiv.dc.html",
+  "LUK-C09-D-P04-TheFingerOfGod.dc.html",
+  "LUK-C09-D-P05-TheFingerOfGod.dc.html",
+  "LUK-C09-D-P06-BlessedAreTheyThat.dc.html",
+  "LUK-C09-D-P07-AGreaterThanJonah.dc.html",
+  "LUK-C09-D-P08-TheLampOfThyBody.dc.html",
+  "LUK-C09-D-P09-WoeUntoYouPharisee.dc.html",
+  "LUK-C09-D-P10-WoeUntoYouPharisee.dc.html",
+  "LUK-C09-D-P11-WoeUntoYouLawyers.dc.html",
+  "LUK-C09-D-P12-WoeUntoYouLawyers.dc.html",
+  "LUK-C09-D-P13-WoeUntoYouLawyers.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1028,6 +1140,13 @@
    "text": "Chapter 8 · The Good Samaritan (Luke 10)",
    "x": 0,
    "y": 34000
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Teach Us to Pray (Luke 11)",
+   "x": 0,
+   "y": 38100
   }
  },
  "designSystems": [],
