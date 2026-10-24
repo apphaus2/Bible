@@ -604,6 +604,146 @@
    "w": 760,
    "h": 1080,
    "title": "80 · Before Abraham Was"
+  },
+  "JHN-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Good Shepherd"
+  },
+  "JHN-C05-D-P01-AManBlindFromHisBi.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · A Man Blind from His Birth"
+  },
+  "JHN-C05-D-P02-AManBlindFromHisBi.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · A Man Blind from His Birth"
+  },
+  "JHN-C05-D-P03-IAmHe.dc.html": {
+   "x": 2520,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Am He"
+  },
+  "JHN-C05-D-P04-BeforeThePharisees.dc.html": {
+   "x": 3360,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Before the Pharisees"
+  },
+  "JHN-C05-D-P05-BeforeThePharisees.dc.html": {
+   "x": 0,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Before the Pharisees"
+  },
+  "JHN-C05-D-P06-BeforeThePharisees.dc.html": {
+   "x": 840,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Before the Pharisees"
+  },
+  "JHN-C05-D-P07-NowISee.dc.html": {
+   "x": 1680,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Now I See"
+  },
+  "JHN-C05-D-P08-NowISee.dc.html": {
+   "x": 2520,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Now I See"
+  },
+  "JHN-C05-D-P09-LordIBelieve.dc.html": {
+   "x": 3360,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Lord, I Believe"
+  },
+  "JHN-C05-D-P10-LordIBelieve.dc.html": {
+   "x": 0,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Lord, I Believe"
+  },
+  "JHN-C05-D-P11-TheDoorOfTheSheep.dc.html": {
+   "x": 840,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Door of the Sheep"
+  },
+  "JHN-C05-D-P12-TheDoorOfTheSheep.dc.html": {
+   "x": 1680,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Door of the Sheep"
+  },
+  "JHN-C05-D-P13-TheDoorOfTheSheep.dc.html": {
+   "x": 2520,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Door of the Sheep"
+  },
+  "JHN-C05-D-P14-IAmTheGoodShepherd.dc.html": {
+   "x": 3360,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · I Am the Good Shepherd"
+  },
+  "JHN-C05-D-P15-IAmTheGoodShepherd.dc.html": {
+   "x": 0,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · I Am the Good Shepherd"
+  },
+  "JHN-C05-D-P16-IAndTheFatherAreOn.dc.html": {
+   "x": 840,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · I and the Father Are One"
+  },
+  "JHN-C05-D-P17-IAndTheFatherAreOn.dc.html": {
+   "x": 1680,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · I and the Father Are One"
+  },
+  "JHN-C05-D-P18-IAndTheFatherAreOn.dc.html": {
+   "x": 2520,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · I and the Father Are One"
+  },
+  "JHN-C05-D-P19-BeyondTheJordan.dc.html": {
+   "x": 3360,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Beyond the Jordan"
   }
  },
  "order": [
@@ -691,7 +831,27 @@
   "JHN-C04-D-P17-TheTruthShallMakeY.dc.html",
   "JHN-C04-D-P18-BeforeAbrahamWas.dc.html",
   "JHN-C04-D-P19-BeforeAbrahamWas.dc.html",
-  "JHN-C04-D-P20-BeforeAbrahamWas.dc.html"
+  "JHN-C04-D-P20-BeforeAbrahamWas.dc.html",
+  "JHN-C05-00-Title.dc.html",
+  "JHN-C05-D-P01-AManBlindFromHisBi.dc.html",
+  "JHN-C05-D-P02-AManBlindFromHisBi.dc.html",
+  "JHN-C05-D-P03-IAmHe.dc.html",
+  "JHN-C05-D-P04-BeforeThePharisees.dc.html",
+  "JHN-C05-D-P05-BeforeThePharisees.dc.html",
+  "JHN-C05-D-P06-BeforeThePharisees.dc.html",
+  "JHN-C05-D-P07-NowISee.dc.html",
+  "JHN-C05-D-P08-NowISee.dc.html",
+  "JHN-C05-D-P09-LordIBelieve.dc.html",
+  "JHN-C05-D-P10-LordIBelieve.dc.html",
+  "JHN-C05-D-P11-TheDoorOfTheSheep.dc.html",
+  "JHN-C05-D-P12-TheDoorOfTheSheep.dc.html",
+  "JHN-C05-D-P13-TheDoorOfTheSheep.dc.html",
+  "JHN-C05-D-P14-IAmTheGoodShepherd.dc.html",
+  "JHN-C05-D-P15-IAmTheGoodShepherd.dc.html",
+  "JHN-C05-D-P16-IAndTheFatherAreOn.dc.html",
+  "JHN-C05-D-P17-IAndTheFatherAreOn.dc.html",
+  "JHN-C05-D-P18-IAndTheFatherAreOn.dc.html",
+  "JHN-C05-D-P19-BeyondTheJordan.dc.html"
  ],
  "notes": {
   "Main": {
@@ -728,6 +888,13 @@
    "text": "Chapter 4 · Before Abraham Was (John 7–8)",
    "x": 0,
    "y": 18800
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Good Shepherd (John 9–10)",
+   "x": 0,
+   "y": 25300
   }
  },
  "designSystems": [],

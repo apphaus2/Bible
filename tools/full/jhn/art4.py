@@ -193,11 +193,11 @@ def stones_up(p, w, h, seed):
     o.append(f'<path d="M{f(w * 0.82)} {f(h * 0.5)} L {f(w * 0.82)} {f(h * 0.3)} Q {f(w * 0.88)} {f(h * 0.22)} {f(w * 0.94)} {f(h * 0.3)} L {f(w * 0.94)} {f(h * 0.5)} Z" fill="#FFE6A0" stroke="{INK}" stroke-width="2"></path>')
     s = fit(b, max(h * 0.26, b - 230))
     o.append(jesus(p, w * 0.88, h * 0.5, fit(h * 0.5, h * 0.5 - 100 * s), glow=False))
-    held = '<ellipse cx="-62" cy="-118" rx="10" ry="8" fill="#B8B0A0" stroke="#0D0D0F" stroke-width="1.4"></ellipse>'
+    held = '<ellipse cx="-36" cy="-86" rx="10" ry="8" fill="#B8B0A0" stroke="#0D0D0F" stroke-width="1.4"></ellipse>'
     r = random.Random(seed)
     for i, x in enumerate((0.08, 0.2, 0.34, 0.62)):
         o.append(mk.person(p, round(w * x), round(b - 4 * (i % 2)), round(s * (0.98 - 0.02 * i), 3), body=SKIN, cloth=r.choice(HEB), kind="Robe", sw=3, flip=True,
-                           up=[(-22, -158), (-42, -136), (-58, -122)], extra=held + A.headcloth(r.choice(["#5E626E", "#E8E2D6", "#3A4A6A"]), cord="#3A2214") + A.BLACK_BEARD))
+                           up=[(-22, -158), (-30, -120), (-34, -92)], extra=held + A.headcloth(r.choice(["#5E626E", "#E8E2D6", "#3A4A6A"]), cord="#3A2214") + A.BLACK_BEARD))
     o.append(kneeler(w * 0.48, b, s * 0.8, "#6A5A3A"))
     return "".join(o)
 
