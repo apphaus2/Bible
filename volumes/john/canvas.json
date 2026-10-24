@@ -744,6 +744,153 @@
    "w": 760,
    "h": 1080,
    "title": "99 · Beyond the Jordan"
+  },
+  "JHN-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Lazarus, Come Forth"
+  },
+  "JHN-C06-D-P01-LazarusOfBethany.dc.html": {
+   "x": 840,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Lazarus of Bethany"
+  },
+  "JHN-C06-D-P02-LazarusOfBethany.dc.html": {
+   "x": 1680,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Lazarus of Bethany"
+  },
+  "JHN-C06-D-P03-LazarusOfBethany.dc.html": {
+   "x": 2520,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Lazarus of Bethany"
+  },
+  "JHN-C06-D-P04-IAmTheResurrection.dc.html": {
+   "x": 3360,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · I Am the Resurrection"
+  },
+  "JHN-C06-D-P05-IAmTheResurrection.dc.html": {
+   "x": 0,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · I Am the Resurrection"
+  },
+  "JHN-C06-D-P06-IAmTheResurrection.dc.html": {
+   "x": 840,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · I Am the Resurrection"
+  },
+  "JHN-C06-D-P07-JesusWept.dc.html": {
+   "x": 1680,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Jesus Wept"
+  },
+  "JHN-C06-D-P08-JesusWept.dc.html": {
+   "x": 2520,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Jesus Wept"
+  },
+  "JHN-C06-D-P09-LazarusComeForth.dc.html": {
+   "x": 3360,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Lazarus, Come Forth"
+  },
+  "JHN-C06-D-P10-ItIsExpedient.dc.html": {
+   "x": 0,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · It Is Expedient"
+  },
+  "JHN-C06-D-P11-ItIsExpedient.dc.html": {
+   "x": 840,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · It Is Expedient"
+  },
+  "JHN-C06-D-P12-TheOdorOfTheOintme.dc.html": {
+   "x": 1680,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · The Odor of the Ointment"
+  },
+  "JHN-C06-D-P13-TheOdorOfTheOintme.dc.html": {
+   "x": 2520,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · The Odor of the Ointment"
+  },
+  "JHN-C06-D-P14-Hosanna.dc.html": {
+   "x": 3360,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Hosanna"
+  },
+  "JHN-C06-D-P15-WeWouldSeeJesus.dc.html": {
+   "x": 0,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · We Would See Jesus"
+  },
+  "JHN-C06-D-P16-TheVoiceOutOfHeave.dc.html": {
+   "x": 840,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Voice out of Heaven"
+  },
+  "JHN-C06-D-P17-TheVoiceOutOfHeave.dc.html": {
+   "x": 1680,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The Voice out of Heaven"
+  },
+  "JHN-C06-D-P18-WalkWhileYeHaveThe.dc.html": {
+   "x": 2520,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Walk While Ye Have the Light"
+  },
+  "JHN-C06-D-P19-WalkWhileYeHaveThe.dc.html": {
+   "x": 3360,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Walk While Ye Have the Light"
+  },
+  "JHN-C06-D-P20-IAmComeALight.dc.html": {
+   "x": 0,
+   "y": 35700,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · I Am Come a Light"
   }
  },
  "order": [
@@ -851,7 +998,28 @@
   "JHN-C05-D-P16-IAndTheFatherAreOn.dc.html",
   "JHN-C05-D-P17-IAndTheFatherAreOn.dc.html",
   "JHN-C05-D-P18-IAndTheFatherAreOn.dc.html",
-  "JHN-C05-D-P19-BeyondTheJordan.dc.html"
+  "JHN-C05-D-P19-BeyondTheJordan.dc.html",
+  "JHN-C06-00-Title.dc.html",
+  "JHN-C06-D-P01-LazarusOfBethany.dc.html",
+  "JHN-C06-D-P02-LazarusOfBethany.dc.html",
+  "JHN-C06-D-P03-LazarusOfBethany.dc.html",
+  "JHN-C06-D-P04-IAmTheResurrection.dc.html",
+  "JHN-C06-D-P05-IAmTheResurrection.dc.html",
+  "JHN-C06-D-P06-IAmTheResurrection.dc.html",
+  "JHN-C06-D-P07-JesusWept.dc.html",
+  "JHN-C06-D-P08-JesusWept.dc.html",
+  "JHN-C06-D-P09-LazarusComeForth.dc.html",
+  "JHN-C06-D-P10-ItIsExpedient.dc.html",
+  "JHN-C06-D-P11-ItIsExpedient.dc.html",
+  "JHN-C06-D-P12-TheOdorOfTheOintme.dc.html",
+  "JHN-C06-D-P13-TheOdorOfTheOintme.dc.html",
+  "JHN-C06-D-P14-Hosanna.dc.html",
+  "JHN-C06-D-P15-WeWouldSeeJesus.dc.html",
+  "JHN-C06-D-P16-TheVoiceOutOfHeave.dc.html",
+  "JHN-C06-D-P17-TheVoiceOutOfHeave.dc.html",
+  "JHN-C06-D-P18-WalkWhileYeHaveThe.dc.html",
+  "JHN-C06-D-P19-WalkWhileYeHaveThe.dc.html",
+  "JHN-C06-D-P20-IAmComeALight.dc.html"
  ],
  "notes": {
   "Main": {
@@ -895,6 +1063,13 @@
    "text": "Chapter 5 · The Good Shepherd (John 9–10)",
    "x": 0,
    "y": 25300
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Lazarus, Come Forth (John 11–12)",
+   "x": 0,
+   "y": 30600
   }
  },
  "designSystems": [],
