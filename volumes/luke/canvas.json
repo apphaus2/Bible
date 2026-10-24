@@ -212,6 +212,125 @@
    "w": 760,
    "h": 1080,
    "title": "26 · In My Father's House"
+  },
+  "LUK-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Voice in the Wilderness"
+  },
+  "LUK-C03-D-P01-TheWordOfGodCameUn.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Word of God Came unto John"
+  },
+  "LUK-C03-D-P02-FruitsWorthyOfRepe.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Fruits Worthy of Repentance"
+  },
+  "LUK-C03-D-P03-WhatThenMustWeDo.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · What Then Must We Do?"
+  },
+  "LUK-C03-D-P04-HeShallBaptizeYouI.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · He Shall Baptize You in the Holy Spirit"
+  },
+  "LUK-C03-D-P05-ThouArtMyBelovedSo.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Thou Art My Beloved Son"
+  },
+  "LUK-C03-E-P01-TheSonOfAdamTheSonOfGod.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Son of Adam, the Son of God"
+  },
+  "LUK-C03-F-P01-TemptedOfTheDevil.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Tempted of the Devil"
+  },
+  "LUK-C03-F-P02-AllTheKingdomsOfTh.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · All the Kingdoms of the World"
+  },
+  "LUK-C03-F-P03-ThePinnacleOfTheTe.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Pinnacle of the Temple"
+  },
+  "LUK-C03-F-P04-TheSpiritOfTheLord.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Spirit of the Lord Is upon Me"
+  },
+  "LUK-C03-F-P05-NoProphetIsAccepta.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · No Prophet Is Acceptable in His Own Country"
+  },
+  "LUK-C03-F-P06-NoProphetIsAccepta.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · No Prophet Is Acceptable in His Own Country"
+  },
+  "LUK-C03-F-P07-WithAuthorityAndPo.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · With Authority and Power"
+  },
+  "LUK-C03-F-P08-WithAuthorityAndPo.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · With Authority and Power"
+  },
+  "LUK-C03-F-P09-HeRebukedTheFever.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · He Rebuked the Fever"
+  },
+  "LUK-C03-F-P10-ToTheOtherCitiesAl.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · To the Other Cities Also"
   }
  },
  "order": [
@@ -243,7 +362,24 @@
   "LUK-C02-D-P07-Simeon.dc.html",
   "LUK-C02-D-P08-InMyFatherSHouse.dc.html",
   "LUK-C02-D-P09-InMyFatherSHouse.dc.html",
-  "LUK-C02-D-P10-InMyFatherSHouse.dc.html"
+  "LUK-C02-D-P10-InMyFatherSHouse.dc.html",
+  "LUK-C03-00-Title.dc.html",
+  "LUK-C03-D-P01-TheWordOfGodCameUn.dc.html",
+  "LUK-C03-D-P02-FruitsWorthyOfRepe.dc.html",
+  "LUK-C03-D-P03-WhatThenMustWeDo.dc.html",
+  "LUK-C03-D-P04-HeShallBaptizeYouI.dc.html",
+  "LUK-C03-D-P05-ThouArtMyBelovedSo.dc.html",
+  "LUK-C03-E-P01-TheSonOfAdamTheSonOfGod.dc.html",
+  "LUK-C03-F-P01-TemptedOfTheDevil.dc.html",
+  "LUK-C03-F-P02-AllTheKingdomsOfTh.dc.html",
+  "LUK-C03-F-P03-ThePinnacleOfTheTe.dc.html",
+  "LUK-C03-F-P04-TheSpiritOfTheLord.dc.html",
+  "LUK-C03-F-P05-NoProphetIsAccepta.dc.html",
+  "LUK-C03-F-P06-NoProphetIsAccepta.dc.html",
+  "LUK-C03-F-P07-WithAuthorityAndPo.dc.html",
+  "LUK-C03-F-P08-WithAuthorityAndPo.dc.html",
+  "LUK-C03-F-P09-HeRebukedTheFever.dc.html",
+  "LUK-C03-F-P10-ToTheOtherCitiesAl.dc.html"
  ],
  "notes": {
   "Main": {
@@ -266,6 +402,13 @@
    "text": "Chapter 2 · Good Tidings of Great Joy (Luke 2)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Voice in the Wilderness (Luke 3–4)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],
