@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 971 verses — 970 full, 0 partial, 1 omitted.
+**So far:** 1042 verses — 1041 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · Gabriel (Luke 1)
 
@@ -85,5 +85,11 @@ Every verse is on the page in full.
 ## Chapter 14 · Render unto Cæsar (Luke 20–21)
 
 85 verses: 85 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 15 · This Do in Remembrance of Me (Luke 22)
+
+71 verses: 71 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
