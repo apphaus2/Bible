@@ -4,7 +4,7 @@ midst); the company praying and the place shaken; the money laid at the apostles
 (Ananias and Sapphira, told in words only); the prison doors opened by night; the council's door (the beating told in
 words only); the seven chosen and the hands laid on them. Built on act.art."""
 from act.art import *
-from act.art import f, INK, HEB, TWELVE, LIE, _porch, _temple, _hall, _prison, _street, _upper, _house
+from act.art import f, INK, HEB, TWELVE, LIE, _porch, _temple, _hall, _prison, _street, _upper, _house, _synagogue
 import random, math
 
 GATE_BRONZE = "#C8963E"

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 136 verses — 136 full, 0 partial, 0 omitted.
+**So far:** 193 verses — 193 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -13,5 +13,11 @@ Every verse is on the page in full.
 ## Chapter 2 · Silver and Gold Have I None (Acts 3–4)
 
 63 verses: 63 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 3 · We Must Obey God (Acts 5–6)
+
+57 verses: 57 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

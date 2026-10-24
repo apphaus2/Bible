@@ -233,6 +233,104 @@
    "w": 760,
    "h": 1080,
    "title": "29 · Barnabas"
+  },
+  "ACT-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · We Must Obey God"
+  },
+  "ACT-C03-D-P01-AnaniasAndSapphira.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Ananias and Sapphira"
+  },
+  "ACT-C03-D-P02-AnaniasAndSapphira.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Ananias and Sapphira"
+  },
+  "ACT-C03-D-P03-AnaniasAndSapphira.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Ananias and Sapphira"
+  },
+  "ACT-C03-D-P04-SignsAndWonders.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Signs and Wonders"
+  },
+  "ACT-C03-D-P05-ThePrisonDoorsOpen.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · The Prison Doors Opened"
+  },
+  "ACT-C03-D-P06-ThePrisonDoorsOpen.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Prison Doors Opened"
+  },
+  "ACT-C03-D-P07-ThePrisonDoorsOpen.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · The Prison Doors Opened"
+  },
+  "ACT-C03-D-P08-WeMustObeyGod.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · We Must Obey God"
+  },
+  "ACT-C03-D-P09-Gamaliel.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Gamaliel"
+  },
+  "ACT-C03-D-P10-TheSeven.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Seven"
+  },
+  "ACT-C03-D-P11-TheSeven.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · The Seven"
+  },
+  "ACT-C03-D-P12-Stephen.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Stephen"
+  },
+  "ACT-C03-D-P13-Stephen.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Stephen"
   }
  },
  "order": [
@@ -267,7 +365,21 @@
   "ACT-C02-D-P10-WithOneAccord.dc.html",
   "ACT-C02-D-P11-WithOneAccord.dc.html",
   "ACT-C02-D-P12-OneHeartAndSoul.dc.html",
-  "ACT-C02-D-P13-Barnabas.dc.html"
+  "ACT-C02-D-P13-Barnabas.dc.html",
+  "ACT-C03-00-Title.dc.html",
+  "ACT-C03-D-P01-AnaniasAndSapphira.dc.html",
+  "ACT-C03-D-P02-AnaniasAndSapphira.dc.html",
+  "ACT-C03-D-P03-AnaniasAndSapphira.dc.html",
+  "ACT-C03-D-P04-SignsAndWonders.dc.html",
+  "ACT-C03-D-P05-ThePrisonDoorsOpen.dc.html",
+  "ACT-C03-D-P06-ThePrisonDoorsOpen.dc.html",
+  "ACT-C03-D-P07-ThePrisonDoorsOpen.dc.html",
+  "ACT-C03-D-P08-WeMustObeyGod.dc.html",
+  "ACT-C03-D-P09-Gamaliel.dc.html",
+  "ACT-C03-D-P10-TheSeven.dc.html",
+  "ACT-C03-D-P11-TheSeven.dc.html",
+  "ACT-C03-D-P12-Stephen.dc.html",
+  "ACT-C03-D-P13-Stephen.dc.html"
  ],
  "notes": {
   "Main": {
@@ -290,6 +402,13 @@
    "text": "Chapter 2 · Silver and Gold Have I None (Acts 3–4)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · We Must Obey God (Acts 5–6)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],
