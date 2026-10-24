@@ -86,5 +86,7 @@ META = {
      "blurb": "Ephesus: the twelve who knew only John's baptism; the school of Tyrannus; the sons of Sceva — Jesus I know, and Paul I know; but who are ye?; the books burned; Demetrius and the silver shrines, and the theatre crying Great is Diana of the Ephesians; Eutychus in the window at Troas; and the farewell at Miletus — it is more blessed to give than to receive."},
     {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Bound in the Spirit", "range": "Acts 21:1–22:29", "bible_chapters": [21, 22], "span": ["21:1", "22:29"],
      "blurb": "Kneeling on the beach at Tyre; Agabus and Paul's girdle — I am ready not to be bound only, but also to die at Jerusalem; James and the elders and the four men under a vow; the uproar in the temple and the chief captain's soldiers; Paul borne up the stairs of the castle, then standing on the stairs to speak in the Hebrew language: the road to Damascus once more; Away with such a fellow; and But I am a Roman born."},
+    {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Before Felix", "range": "Acts 22:30–24:27", "bible_chapters": [22, 23, 24], "span": ["22:30", "24:27"],
+     "blurb": "Before the council — God shall smite thee, thou whited wall; I am a Pharisee, a son of Pharisees, and the assembly divided; Be of good cheer: so must thou bear witness also at Rome; the forty under a curse and Paul's sister's son; the escort by night to Cæsarea; Tertullus the orator before Felix; and Felix and Drusilla hearing of righteousness, and self-control, and the judgment to come."},
   ],
 }

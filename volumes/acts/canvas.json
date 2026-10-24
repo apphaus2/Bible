@@ -1311,6 +1311,97 @@
    "w": 760,
    "h": 1080,
    "title": "173 · A Roman Born"
+  },
+  "ACT-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Before Felix"
+  },
+  "ACT-C13-D-P01-TheCouncil.dc.html": {
+   "x": 840,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · The Council"
+  },
+  "ACT-C13-D-P02-TheCouncil.dc.html": {
+   "x": 1680,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · The Council"
+  },
+  "ACT-C13-D-P03-TheCouncil.dc.html": {
+   "x": 2520,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · The Council"
+  },
+  "ACT-C13-D-P04-TheForty.dc.html": {
+   "x": 3360,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · The Forty"
+  },
+  "ACT-C13-D-P05-TheForty.dc.html": {
+   "x": 0,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · The Forty"
+  },
+  "ACT-C13-D-P06-TheForty.dc.html": {
+   "x": 840,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · The Forty"
+  },
+  "ACT-C13-D-P07-UntoTheMostExcelle.dc.html": {
+   "x": 1680,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Unto the Most Excellent Governor Felix"
+  },
+  "ACT-C13-D-P08-UntoTheMostExcelle.dc.html": {
+   "x": 2520,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Unto the Most Excellent Governor Felix"
+  },
+  "ACT-C13-D-P09-Tertullus.dc.html": {
+   "x": 3360,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Tertullus"
+  },
+  "ACT-C13-D-P10-PaulSDefenceBefore.dc.html": {
+   "x": 0,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Paul's Defence before Felix"
+  },
+  "ACT-C13-D-P11-PaulSDefenceBefore.dc.html": {
+   "x": 840,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Paul's Defence before Felix"
+  },
+  "ACT-C13-D-P12-FelixAndDrusilla.dc.html": {
+   "x": 1680,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Felix and Drusilla"
   }
  },
  "order": [
@@ -1499,7 +1590,20 @@
   "ACT-C12-D-P11-BrethrenAndFathers.dc.html",
   "ACT-C12-D-P12-BrethrenAndFathers.dc.html",
   "ACT-C12-D-P13-ARomanBorn.dc.html",
-  "ACT-C12-D-P14-ARomanBorn.dc.html"
+  "ACT-C12-D-P14-ARomanBorn.dc.html",
+  "ACT-C13-00-Title.dc.html",
+  "ACT-C13-D-P01-TheCouncil.dc.html",
+  "ACT-C13-D-P02-TheCouncil.dc.html",
+  "ACT-C13-D-P03-TheCouncil.dc.html",
+  "ACT-C13-D-P04-TheForty.dc.html",
+  "ACT-C13-D-P05-TheForty.dc.html",
+  "ACT-C13-D-P06-TheForty.dc.html",
+  "ACT-C13-D-P07-UntoTheMostExcelle.dc.html",
+  "ACT-C13-D-P08-UntoTheMostExcelle.dc.html",
+  "ACT-C13-D-P09-Tertullus.dc.html",
+  "ACT-C13-D-P10-PaulSDefenceBefore.dc.html",
+  "ACT-C13-D-P11-PaulSDefenceBefore.dc.html",
+  "ACT-C13-D-P12-FelixAndDrusilla.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1592,6 +1696,13 @@
    "text": "Chapter 12 · Bound in the Spirit (Acts 21:1–22:29)",
    "x": 0,
    "y": 54000
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Before Felix (Acts 22:30–24:27)",
+   "x": 0,
+   "y": 58100
   }
  },
  "designSystems": [],
