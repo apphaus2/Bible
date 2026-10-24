@@ -464,6 +464,97 @@
    "w": 760,
    "h": 1080,
    "title": "60 · A Foundation upon the Rock"
+  },
+  "LUK-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Widow of Nain"
+  },
+  "LUK-C05-D-P01-SoGreatFaith.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · So Great Faith"
+  },
+  "LUK-C05-D-P02-SoGreatFaith.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · So Great Faith"
+  },
+  "LUK-C05-D-P03-SoGreatFaith.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · So Great Faith"
+  },
+  "LUK-C05-D-P04-YoungManArise.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Young Man, Arise"
+  },
+  "LUK-C05-D-P05-ArtThouHeThatComet.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Art Thou He That Cometh?"
+  },
+  "LUK-C05-D-P06-ArtThouHeThatComet.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Art Thou He That Cometh?"
+  },
+  "LUK-C05-D-P07-MoreThanAProphet.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · More Than a Prophet"
+  },
+  "LUK-C05-D-P08-MoreThanAProphet.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · More Than a Prophet"
+  },
+  "LUK-C05-D-P09-SheLovedMuch.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · She Loved Much"
+  },
+  "LUK-C05-D-P10-SheLovedMuch.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · She Loved Much"
+  },
+  "LUK-C05-D-P11-SheLovedMuch.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · She Loved Much"
+  },
+  "LUK-C05-D-P12-SheLovedMuch.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · She Loved Much"
   }
  },
  "order": [
@@ -531,7 +622,20 @@
   "LUK-C04-D-P15-LoveYourEnemies.dc.html",
   "LUK-C04-D-P16-GoodMeasureRunning.dc.html",
   "LUK-C04-D-P17-GoodMeasureRunning.dc.html",
-  "LUK-C04-D-P18-AFoundationUponThe.dc.html"
+  "LUK-C04-D-P18-AFoundationUponThe.dc.html",
+  "LUK-C05-00-Title.dc.html",
+  "LUK-C05-D-P01-SoGreatFaith.dc.html",
+  "LUK-C05-D-P02-SoGreatFaith.dc.html",
+  "LUK-C05-D-P03-SoGreatFaith.dc.html",
+  "LUK-C05-D-P04-YoungManArise.dc.html",
+  "LUK-C05-D-P05-ArtThouHeThatComet.dc.html",
+  "LUK-C05-D-P06-ArtThouHeThatComet.dc.html",
+  "LUK-C05-D-P07-MoreThanAProphet.dc.html",
+  "LUK-C05-D-P08-MoreThanAProphet.dc.html",
+  "LUK-C05-D-P09-SheLovedMuch.dc.html",
+  "LUK-C05-D-P10-SheLovedMuch.dc.html",
+  "LUK-C05-D-P11-SheLovedMuch.dc.html",
+  "LUK-C05-D-P12-SheLovedMuch.dc.html"
  ],
  "notes": {
   "Main": {
@@ -568,6 +672,13 @@
    "text": "Chapter 4 · Launch Out into the Deep (Luke 5–6)",
    "x": 0,
    "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Widow of Nain (Luke 7)",
+   "x": 0,
+   "y": 21700
   }
  },
  "designSystems": [],
