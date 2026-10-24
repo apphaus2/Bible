@@ -27,7 +27,7 @@ def title_page(n):
     return title(4, "Before Abraham Was", "John 7 – 8", svg, "#05051A", v("8:58", frm="Before Abraham was born, I am."))
 
 
-SEGS = [D([cp("7:1"), cp("7:2"), said("7:3", "said unto him,", "Depart hence,"), sy("7:4")], lambda w, h: A.brethren("br1", w, h, 702), "#8FD0E2",
+SEGS = [D([cp("7:1"), cp("7:2"), said("7:3", "said unto him,", "Depart hence,"), sy("7:4")], lambda w, h: A.brethren("br1", w, h, 702), "#8FD0E2", art_h=320,
           head="The Feast of Tabernacles", sky=7),
         F([cp("7:5"), said("7:6", "saith unto them,", "My time"), sy("7:7"), sy("7:8")], JESUS),
         D([cp("7:9"), cp("7:10")], lambda w, h: A.booths("bo1", w, h, 703, secret=True), "#8FD0E2", art_h=240),

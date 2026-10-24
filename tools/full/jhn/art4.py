@@ -43,7 +43,7 @@ def brethren(p, w, h, seed):
     o.append(jesus(p, w * 0.2, b, s))
     for i, c in enumerate(BRETHREN):
         o.append(mk.person(p, round(w * (0.46 + 0.13 * i)), round(b - 4 * (i % 2)), round(s * (0.98 - 0.02 * i), 3), body="#C98E66", cloth=c, kind="Robe", sw=3,
-                           flip=i == 3, up=UP_CALL if i == 3 else None, extra=A.headcloth(c, cord="#2A2A2A") + (A.BLACK_BEARD if i % 2 == 0 else "")))
+                           up=UP_BLESS if i == 3 else None, extra=A.headcloth(c, cord="#2A2A2A") + (A.BLACK_BEARD if i % 2 == 0 else "")))
     return "".join(o)
 
 def booths(p, w, h, seed, secret=False):
