@@ -73,3 +73,104 @@ def spices_prepare(p, w, h, seed):
         x = (0.14, 0.66, 0.78)[i]
         o.append(seated(w * x, b, s * 0.78, c, head=vl, beard=None, flip=x > 0.4))
     return "".join(o)
+
+# ---- Luke 24 ------------------------------------------------------------------------------------------------------------
+WOMEN_TOMB = [(ROBES["magdalene"], "#C2456A"), JOANNA, ("#6A4A2A", "#5A3A22")]      # Mary Magdalene, Joanna, Mary the mother of James
+
+def two_men(p, w, h, seed):
+    """Two men stood by them in dazzling apparel: within the open tomb, the stone shelf empty and the linen lying, two figures
+    of white light with a gold rim standing (no faces), and the women bowed down with their faces to the earth."""
+    b = h * 0.92
+    o = [mk.defs(p, *ALL), bgr(w, h, "#2A2220"),
+         f'<rect x="-10" y="{f(b)}" width="{f(w + 20)}" height="{f(h)}" fill="#4A3A34" stroke="{INK}" stroke-width="2"></rect>',
+         f'<rect x="{f(w * 0.5)}" y="{f(b - h * 0.16)}" width="{f(w * 0.46)}" height="{f(h * 0.16)}" fill="#8A7A6A" stroke="{INK}" stroke-width="2.4"></rect>',
+         f'<path d="M{f(w * 0.62)} {f(b - h * 0.16)} L {f(w * 0.64)} {f(b - h * 0.2)} L {f(w * 0.84)} {f(b - h * 0.2)} L {f(w * 0.86)} {f(b - h * 0.16)} Z" fill="#F8F4EC" stroke="{INK}" stroke-width="1.6"></path>',
+         glow(w * 0.6, b - h * 0.3, h * 0.6, "#FFFFFF", 0.7, f"{p}g")]
+    s = fit(b, max(h * 0.12, b - 250))
+    o.append(angel(p, w * 0.5, b, s, up=UP_BLESS) + angel(p, w * 0.72, b, s, flip=False, up=UP_BLESS))
+    for i, (c, vl) in enumerate(WOMEN_TOMB):
+        o.append(kneel_w(w * (0.1 + 0.1 * i), b, s * 0.7, c, vl))
+    return "".join(o)
+
+def peter_stoops(p, w, h, seed):
+    """Peter arose, and ran unto the tomb; and stooping and looking in: the rock tomb in the garden at morning, the stone
+    rolled back, Peter bent at the low doorway looking in, the linen cloths lying by themselves within."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A6A9A", "#FFE6A0"),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.34)} {f(h * 0.26)} C {f(w * 0.5)} {f(h * 0.16)} {f(w * 0.8)} {f(h * 0.18)} {f(w + 10)} {f(h * 0.26)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A7A6A" stroke="{INK}" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.46)} {f(b - h * 0.04)} L {f(w * 0.46)} {f(h * 0.52)} Q {f(w * 0.54)} {f(h * 0.42)} {f(w * 0.62)} {f(h * 0.52)} L {f(w * 0.62)} {f(b - h * 0.04)} Z" fill="#1A1210" stroke="{INK}" stroke-width="2"></path>',
+         f'<path d="M{f(w * 0.5)} {f(b - h * 0.08)} L {f(w * 0.51)} {f(b - h * 0.12)} L {f(w * 0.59)} {f(b - h * 0.12)} L {f(w * 0.6)} {f(b - h * 0.08)} Z" fill="#F8F4EC" stroke="{INK}" stroke-width="1.4"></path>',
+         ground(w, h, b - h * 0.04, "#6A8A3A", dy=0)]
+    cx, cy, r = w * 0.82, b - h * 0.04 - h * 0.19, h * 0.19
+    o.append(f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="#A89A8A" stroke="{INK}" stroke-width="2.6"></circle>')
+    s = fit(b, max(h * 0.3, b - 220))
+    o.append(f'<g transform="translate({f(w * 0.4)} {f(b)}) rotate(22) translate({f(-w * 0.4)} {f(-b)})">' + disciple(p, w * 0.4, b, s * 0.9, "peter", flip=True) + '</g>')
+    return "".join(o)
+
+def emmaus(p, w, h, seed, stage="walk"):
+    """The road to Emmaus, threescore furlongs from Jerusalem: stage='walk' the two going along the road in the afternoon among
+    the hills, talking, Jerusalem behind them; 'joined' Jesus risen in white light walking with them — their eyes holden;
+    'village' at evening at the gate of the village, the two constraining him, his hand lifted as though he would go further;
+    'table' within, at the low table under the lamp, Jesus risen in white light breaking the bread, the two seated; 'gone' the
+    same table with the broken bread, his place empty, the two risen up amazed; 'back' the road at night, the two hurrying
+    back toward Jerusalem's lights."""
+    b = h * 0.94
+    s = fit(b, max(h * 0.24, b - 230))
+    C1, C2 = "#6A4A2A", "#5A6A7A"                      # Cleopas, and his companion
+    if stage in ("walk", "joined", "village", "back"):
+        top, bot = {"walk": ("#8FD0E2", "#FFE6B0"), "joined": ("#8FD0E2", "#FFE6B0"), "village": ("#4A3A6A", "#FFB07A"), "back": ("#05051A", "#2A2050")}[stage]
+        o = [mk.defs(p, *ALL), sky(w, h, top, bot)]
+        if stage == "back": o.append(mk.stars(50, w, h * 0.4, seed))
+        o += [hills(w, h, h * 0.46, seed, color="#8A8A6A" if stage != "back" else "#1E1838", amp=14, step=80)]
+        if stage in ("walk", "back"):
+            o.append(walls(w * 0.74, w * 1.02, h * 0.5, h * 0.14, seed, lit=stage == "back", towers=2))
+        o += [ground(w, h, h * 0.58, "#B8A06A" if stage != "back" else "#2A2438", dy=-4),
+              f'<path d="M-10 {f(b + 6)} C {f(w * 0.3)} {f(b - h * 0.06)} {f(w * 0.6)} {f(h * 0.68)} {f(w * 0.84)} {f(h * 0.58)}" stroke="{"#D8C08A" if stage != "back" else "#4A4458"}" stroke-width="{f(h * 0.07)}" fill="none" opacity="0.8"></path>']
+        if stage == "walk":
+            o.append(man(p, w * 0.36, b, s, C1, extra=A.headcloth("#6A4A2A")) + man(p, w * 0.48, b, s * 0.96, C2, flip=True))
+        elif stage == "joined":
+            o.append(man(p, w * 0.3, b, s, C1, extra=A.headcloth("#6A4A2A")) + man(p, w * 0.42, b, s * 0.96, C2))
+            o.append(jesus_risen(p, w * 0.6, b, s, flip=True))
+        elif stage == "village":
+            o.append(houses(w, h, h * 0.86, seed, x0=w * 0.56, x1=w + 10, hmin=0.3, hmax=0.42, lit=True))
+            o.append(jesus_risen(p, w * 0.74, b, s, flip=True, up=UP_CALL))
+            o.append(man(p, w * 0.4, b, s, C1, flip=True, up=UP_BLESS, extra=A.headcloth("#6A4A2A")) + man(p, w * 0.52, b, s * 0.96, C2, flip=True, up=UP_BLESS))
+        else:
+            o.append(man(p, w * 0.5, b, s, C1, up=[(-22, -158), (-40, -136), (-56, -124)], extra=A.headcloth("#6A4A2A")) + man(p, w * 0.62, b, s * 0.96, C2))
+    else:
+        o = [mk.defs(p, *ALL), room(w, h, b - h * 0.02, wall="#5A4A48", floor="#4A3A30", window=(w * 0.84, w * 0.08), night_=True, seed=seed),
+             A.lamp(w * 0.5, h * 0.26, max(0.6, h / 300)), glow(w * 0.5, h * 0.4, h * 0.6, "#FFE680", 0.4, f"{p}g")]
+        bb = b - h * 0.02
+        o.append(f'<rect x="{f(w * 0.3)}" y="{f(bb - 40 * s)}" width="{f(w * 0.4)}" height="{f(14 * s)}" fill="#6A3A1E" stroke="{INK}" stroke-width="2"></rect>'
+                 + loaf(w * 0.44, bb - 44 * s, s * 0.6) + loaf(w * 0.54, bb - 44 * s, s * 0.5))
+        if stage == "table":
+            o.append(seated(w * 0.22, bb, s * 0.8, C1, head="#6A4A2A", beard="#6A5A4E") + seated(w * 0.78, bb, s * 0.78, C2, beard=None, flip=True))
+            o.append(jesus_risen(p, w * 0.5, bb - 6, s * 0.9, up=[(-22, -158), (-40, -140), (-50, -130)]))
+        else:
+            o.append(glow(w * 0.5, bb - 100 * s, 90 * s, "#FFFFFF", 0.4, f"{p}e"))
+            o.append(man(p, w * 0.22, bb, s, C1, up=UP_HIGH, extra=A.headcloth("#6A4A2A")) + man(p, w * 0.78, bb, s * 0.96, C2, flip=True, up=UP_HIGH))
+    return "".join(o)
+
+def bethany_bless(p, w, h, seed):
+    """He led them out until they were over against Bethany: and he lifted up his hands, and blessed them: the slope of the
+    mount over against Bethany at morning, Jesus risen in white light with both hands lifted, the eleven kneeling and
+    standing about him."""
+    b = h * 0.94
+    o = [mk.defs(p, *ALL), sky(w, h, "#5A8AC8", "#FFE6B0"), hill_town(w * 0.84, h * 0.6, w * 0.24, h * 0.16, seed, hill="#8A9A6A"),
+         f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.62)} C {f(w * 0.3)} {f(h * 0.5)} {f(w * 0.6)} {f(h * 0.56)} {f(w + 10)} {f(h * 0.7)} L {f(w + 10)} {f(h + 10)} Z" fill="#7A9A4A" stroke="{INK}" stroke-width="2"></path>']
+    s = fit(b, max(h * 0.24, b - 230))
+    o.append(jesus_risen(p, w * 0.46, b - 10, s, up=UP_HIGH))
+    for i, x in enumerate((0.12, 0.22, 0.32, 0.6, 0.7, 0.8, 0.9)):
+        if i in (2, 3): o.append(E.kneel(w * x, b, s * 0.8, color=TWELVE[i], flip=x > 0.46, skin="#B98A6E"))
+        else: o.append(disciple(p, w * x, b - 2 * (i % 2), s * 0.9, TWELVE[i], flip=x > 0.46))
+    return "".join(o)
+
+def temple_joy(p, w, h, seed):
+    """They returned to Jerusalem with great joy, and were continually in the temple, blessing God: the court of the temple
+    at morning, the disciples standing together with their hands lifted (the floor clear below them for the end mark)."""
+    b = min(h * 0.94, h - 76)
+    o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#FFF4C2"), temple(w * 0.62, h * 0.56, w * 0.6), pavement(w, h, h * 0.56)]
+    s = fit(b, max(h * 0.56, b - 150))
+    for i in range(9):
+        o.append(disciple(p, w * (0.06 + 0.07 * i), b - 2 * (i % 2), s * (0.94 - 0.01 * i), TWELVE[i], up=UP_HIGH if i % 2 == 0 else None))
+    return "".join(o)

@@ -23,7 +23,7 @@ START, PAGES, P = PG.start, PG.pages, PG.P
 
 @P("LUK-C16-00-Title", "Chapter 16 · Father, Into Thy Hands", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#05050E"></rect><g transform="translate(0 300)">{A.golgotha("t16", 760, 780, 2301, dark=True)}</g>'
+    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#4A3A5A"></rect><g transform="translate(0 300)">{A.golgotha("t16", 760, 780, 2301)}</g>'
     return title(16, "Father, Into Thy Hands", "Luke 23", svg, "#4A3A5A", v("23:46", frm="Father, into thy hands", to="my spirit:"))
 
 
