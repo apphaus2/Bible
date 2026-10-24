@@ -1,0 +1,101 @@
+{
+ "id": "mark",
+ "order": 41,
+ "name": "Mark",
+ "kanji": "マルコによる福音書",
+ "thumb": "vol-mark-",
+ "lede": "The forty-first book of the Bible, in full: the gospel of Jesus Christ, the Son of God — the fishermen called by the sea of Galilee, the storm stilled, the dead raised and the multitudes fed, the way to Jerusalem, the cross and the empty tomb, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Beginning of the Gospel",
+   "range": "Mark 1–2",
+   "blurb": "John in the wilderness and the baptism in the Jordan — thou art my beloved Son; the forty days; the time is fulfilled; Simon and Andrew, James and John called from their nets — I will make you to become fishers of men; the synagogue at Capernaum, the fever, the leper; the palsied man let down through the roof; Levi at the place of toll; and the Son of man lord even of the sabbath.",
+   "prefixes": [
+    "Main.dc.html",
+    "MRK-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Peace, Be Still",
+   "range": "Mark 3–4",
+   "blurb": "The withered hand on the sabbath; the multitude by the sea and the twelve appointed on the mountain; a house divided; whosoever shall do the will of God, the same is my brother; then the parables from a boat — the sower, the lamp, the seed growing secretly, the grain of mustard seed; and a great storm of wind: Teacher, carest thou not that we perish? Peace, be still.",
+   "prefixes": [
+    "MRK-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "Talitha Cumi",
+   "range": "Mark 5:1–6:29",
+   "blurb": "The man of the tombs in the country of the Gerasenes — my name is Legion — and the swine down the steep into the sea, the man sitting clothed and in his right mind; the woman who touched his garment; Jairus' daughter — Talitha cumi; the prophet without honor at Nazareth; the twelve sent two by two; and John the Baptist beheaded at Herod's feast.",
+   "prefixes": [
+    "MRK-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "It Is I",
+   "range": "Mark 6:30–7:37",
+   "blurb": "Sheep not having a shepherd; five loaves and two fishes, the companies on the green grass and twelve basketfuls; walking upon the sea in the fourth watch — be of good cheer: it is I; the washing of hands and the tradition of men; the Syrophœnician woman — even the dogs under the table eat of the children's crumbs; and Ephphatha.",
+   "prefixes": [
+    "MRK-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "Thou Art the Christ",
+   "range": "Mark 8:1–9:29",
+   "blurb": "Four thousand fed; the leaven of the Pharisees; the blind man of Bethsaida — I see men, as trees, walking; at Cæsarea Philippi, who say ye that I am? — Thou art the Christ; take up his cross; the transfiguration on a high mountain, garments glistering, exceeding white, and a voice out of the cloud; and the boy below — I believe; help thou mine unbelief.",
+   "prefixes": [
+    "MRK-C05-"
+   ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "The Last Shall Be First",
+   "range": "Mark 9:30–10:52",
+   "blurb": "Who is the greatest? — a little child in the midst; the cup of cold water and the salt; what God hath joined together; suffer the little children; the rich man who went away sorrowful — with God all things are possible; the cup and the baptism of James and John; the Son of man came to minister; and blind Bartimæus by the way side at Jericho.",
+   "prefixes": [
+    "MRK-C06-"
+   ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "Hosanna",
+   "range": "Mark 11–12",
+   "blurb": "The colt and the garments in the way — Hosanna; blessed is he that cometh in the name of the Lord; the fig tree and the den of robbers; by what authority?; the husbandmen and the beloved son; Cæsar's and God's; the God of the living; the first commandment of all; David's son and David's Lord; and the poor widow's two mites.",
+   "prefixes": [
+    "MRK-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "Watch",
+   "range": "Mark 13:1–14:42",
+   "blurb": "Not one stone upon another; the beginning of travail, the abomination of desolation, the Son of man coming in clouds; the fig tree's tender branch — watch; then the alabaster cruse at Bethany, Judas and the silver, the passover in the upper room — this is my body, this is my blood of the covenant; the cock crowing twice; and Gethsemane: Abba, Father, not what I will.",
+   "prefixes": [
+    "MRK-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "He Is Risen",
+   "range": "Mark 14:43–16:20",
+   "blurb": "The kiss of Judas and the swords and staves; before the high priest — I am; Peter's three denials; Pilate and Barabbas; the purple and the crown of thorns; Golgotha, the darkness over the whole land and the veil of the temple rent — truly this man was the Son of God; the stone at the door of the tomb; and very early on the first day of the week: he is risen; he is not here; go ye into all the world, and preach the gospel to the whole creation.",
+   "prefixes": [
+    "MRK-C09-"
+   ]
+  }
+ ]
+}

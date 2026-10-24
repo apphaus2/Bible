@@ -47,8 +47,9 @@ def anointing(p, w, h, seed):
     for i in range(5): o.append(loaf(w * (0.5 + 0.08 * i), b - 40 * s, s * 0.6))
     o.append(jesus_seated(w * 0.36, b, s * 0.82))
     cruse = '<path d="M-70 -196 C -80 -186 -78 -170 -68 -166 L -56 -166 C -48 -172 -48 -186 -58 -196 Z" fill="#F3EFE6" stroke="#0D0D0F" stroke-width="1.6"></path>'
-    o.append(woman_fig(p, w * 0.36 + 90 * s, b, s * 0.94, "#8A2A3A", "#C2456A", flip=True, up=[(-22, -158), (-46, -184), (-62, -190)], extra=cruse))
-    o.append(f'<path d="M{f(w * 0.36 + 90 * s - 62 * s * 0.94)} {f(b - 168 * s * 0.94)} q -10 20 -20 40" stroke="#E8C060" stroke-width="3" fill="none"></path>')
+    wx = w * 0.36 + 66 * s                         # she stands behind him, facing him, the cruse held over his head
+    o.append(woman_fig(p, wx, b, s * 0.94, "#8A2A3A", "#C2456A", up=[(-22, -158), (-46, -184), (-62, -190)], extra=cruse))
+    o.append(f'<path d="M{f(wx - 62 * s * 0.94)} {f(b - 166 * s * 0.94)} C {f(wx - 64 * s * 0.94)} {f(b - 140 * s)} {f(w * 0.36)} {f(b - 128 * s)} {f(w * 0.36)} {f(b - 108 * s)}" stroke="#E8C060" stroke-width="3" fill="none"></path>')
     for i, x in enumerate((0.66, 0.76, 0.86)):
         o.append(disciple_seated(w * x, b, s * 0.74, i + 4, flip=True))
     o.append(disciple_seated(w * 0.14, b, s * 0.74, 6))
