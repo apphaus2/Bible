@@ -92,8 +92,9 @@ Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes 
 3. Add it to `META["chapters"]` (module, dir, num, name, range, bible_chapters, blurb; `span` for a chapter starting mid-chapter).
 4. `PYTHONUTF8=1 python tools/full/build_volume.py <pkg>` must end `0 not found, 0 lost` (every text block is ASV, every cut is on
    a page); `--check` writes nothing and fails on stale pages. Render with `node tools/site/shots.js <dir> volumes/<id>/pages/*.dc.html`
-   and look at every page: captions over faces, clipped figures, lone panels, stamps over names, a caption repeated inside a
-   balloon (a `say(..., frm=)` missing its `to=`).
+   and look at every page: captions over faces, clipped figures, lone panels, stamps over names or figures, a warm scarf read
+   as long hair, a caption repeated inside a balloon (a `say(..., frm=)` missing its `to=`). A whole volume at a glance:
+   `python tools/site/sheets.py <id> <dir> [--from N --to M]` (contact sheets, 20 numbered pages a sheet).
 5. Add the book's row above and commit.
 
 A new volume: `tools/full/<pkg>/` with `__init__.py` (plan docstring + `META`: id, order, name, kanji, thumb `vol-<id>-`, book
@@ -113,7 +114,8 @@ tools/full/           asv.py (Book: cuts, coverage; BIBLE_LANG), build_volume.py
 tools/kit/            mk.py (page, panel, cap, god, balloon+tail, stamp, sfx, person(up=), defs, speed, stars), faces.py + faces_ex.py,
                       figures.json, snake.py, crowds.py, and per-book drawing kits: exodus*.py, numbers1, joshua1, judges1–2, ruth1,
                       samuel1–4, egypt, tower, ladder
-tools/site/           build_site.py, rebuild_site.py, shots.js, assets/site.css + site.js, workers/ (router.js, <lang>.jsonc)
+tools/site/           build_site.py, rebuild_site.py, shots.js, sheets.py (contact sheets), assets/site.css + site.js,
+                      workers/ (router.js, <lang>.jsonc)
 tools/lang/           <code>.json (one per language), langs.py (documents every key)
 tools/book/           export_book.py + render.js (EPUB, print/reading PDF), downloads.py, asv_pdf.py (the ASV text as PDFs)
 volumes/<id>/         generated pages (pages/*.dc.html), canvas.json, volume.json, coverage.md; volumes/<lang>/<id>/ for translations
@@ -278,5 +280,8 @@ fonts are fetched from Google Fonts, subset and embedded. Before a print run: CM
 - "continue" = build the next chapter. "commit" / "update github" = commit straight to `master` (from a worktree, commit there and
   fast-forward `master` in the main clone); the user runs `git push` (the SSH key has a passphrase). No CRLF-only commits.
 - Git author Sky <sky75.morey@gmail.com>; commit messages end with the Co-Authored-By line.
-- Parallel builders: one worktree per book from one brief; merge when a book is done (check `--check`, sample pages, add the row).
+- A book in a subagent: the `build-book` skill (`.claude/skills/build-book/SKILL.md`): the brief, the review (every contact
+  sheet, the restraint pages full size, fixes sent back to the same subagent), the merge and the English site build.
+  Parallel builders: one worktree per book; merge each when it is done.
+- Opening a file costs ~40 ms on this machine: a step that reads thousands of files needs a cache (see Website).
 - Possible later: right-to-left reading order.
