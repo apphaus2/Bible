@@ -84,6 +84,7 @@ PLACES = {
     "SYRACUSE": (15.29, 37.07), "RHEGIUM": (15.65, 38.11), "PUTEOLI": (14.1, 40.83), "MARKET OF APPIUS": (13.1, 41.45), "THREE TAVERNS": (12.85, 41.62),
     "MITYLENE": (26.55, 39.1), "CHIOS": (26.0, 38.4), "SAMOS": (26.8, 37.72), "ASSOS": (26.34, 39.49), "SAMOTHRACE": (25.55, 40.45),
     "ALEXANDRIA": (29.92, 31.2), "CYRENE": (21.85, 32.82), "ANTIPATRIS": (34.93, 32.1), "PHŒNICIA": (35.4, 33.9), "TROGYLLIUM": (27.1, 37.66),
+    "UR": (46.1, 30.96), "HARAN": (39.03, 36.87), "SHECHEM": (35.28, 32.21), "MOUNT SINAI": (33.97, 28.54), "MEMPHIS": (31.25, 29.85),
 }
 REGIONS = {
     "JUDÆA": (35.0, 31.5), "SAMARIA": (35.3, 32.3), "GALILEE": (35.35, 32.85), "SYRIA": (37.2, 34.8), "CILICIA": (35.0, 37.3),
@@ -93,6 +94,7 @@ REGIONS = {
     "LIBYA": (23.5, 30.6), "CRETE": (24.9, 35.2), "ARABIA": (38.5, 29.5), "MESOPOTAMIA": (41.5, 36.0), "MEDIA": (48.0, 35.5),
     "PARTHIA": (55.0, 36.5), "ELAM": (48.5, 32.0), "LYCIA": (29.6, 36.6), "SICILY": (14.2, 37.45), "MELITA": (14.4, 35.6),
     "THE GREAT SEA": (19.0, 34.6), "ADRIA": (18.0, 37.2), "ARABIA ": (44.0, 27.0),
+    "CANAAN": (36.7, 30.5), "MIDIAN": (35.9, 27.6), "CHALDÆA": (45.0, 31.9),
 }
 
 class Proj:

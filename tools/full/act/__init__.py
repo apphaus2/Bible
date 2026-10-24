@@ -68,5 +68,7 @@ META = {
      "blurb": "The lame man at the door of the temple called Beautiful — silver and gold have I none; in the name of Jesus Christ of Nazareth, walk; walking, and leaping, and praising God; Peter in Solomon's porch; the ward and the council — the stone set at nought of you the builders; we cannot but speak the things which we saw and heard; the place shaken; and all things common."},
     {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "We Must Obey God", "range": "Acts 5–6", "bible_chapters": [5, 6],
      "blurb": "Ananias and Sapphira and the price kept back — thou hast not lied unto men, but unto God; signs and wonders, and Peter's shadow on the sick in the streets; an angel by night opens the prison doors; we must obey God rather than men; Gamaliel's counsel — if it is of God, ye will not be able to overthrow them; the seven chosen to serve tables; and Stephen, his face as it had been the face of an angel."},
+    {"module": "ch04", "dir": "chapter-04", "num": "4", "name": "Stephen", "range": "Acts 7", "bible_chapters": [7],
+     "blurb": "Are these things so? — Stephen's defence before the council: Abraham called out of Mesopotamia, Joseph sold into Egypt, Moses at the bush and at the Red sea, the calf, the tabernacle and the house Solomon built — howbeit the Most High dwelleth not in houses made with hands; ye stiffnecked; I see the heavens opened; and the garments laid down at the feet of a young man named Saul: Lord, lay not this sin to their charge."},
   ],
 }

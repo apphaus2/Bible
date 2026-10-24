@@ -94,7 +94,7 @@ def council(p, w, h, seed, accused=("peter", "john"), healed=False, empty=False,
         o.append(man_fig(p, w * standing, b, s, "#2A3A5A", head="#2A3A5A", cord="#E8B830", bd="#E8E2D6", flip=standing < 0.5, up=UP_BLESS))
     if not empty:
         xs = [0.4, 0.5, 0.6][:len(accused)] if len(accused) < 3 else [0.36, 0.46, 0.56]
-        if len(accused) == 1: xs = [0.5]
+        if len(accused) == 1: xs = [0.38]
         if len(accused) == 2: xs = [0.44, 0.56]
         for x, who in zip(xs, accused):
             o.append(WHO[who](p, w * x, b, s, flip=x > 0.5))

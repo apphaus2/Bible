@@ -331,6 +331,111 @@
    "w": 760,
    "h": 1080,
    "title": "42 · Stephen"
+  },
+  "ACT-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Stephen"
+  },
+  "ACT-C04-D-P01-BrethrenAndFathers.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Brethren and Fathers, Hearken"
+  },
+  "ACT-C04-D-P02-BrethrenAndFathers.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Brethren and Fathers, Hearken"
+  },
+  "ACT-C04-D-P03-Joseph.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Joseph"
+  },
+  "ACT-C04-D-P04-Joseph.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Joseph"
+  },
+  "ACT-C04-D-P05-Moses.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Moses"
+  },
+  "ACT-C04-D-P06-Moses.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Moses"
+  },
+  "ACT-C04-D-P07-Moses.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Moses"
+  },
+  "ACT-C04-D-P08-TheBush.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Bush"
+  },
+  "ACT-C04-D-P09-TheBush.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Bush"
+  },
+  "ACT-C04-D-P10-TheCalf.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Calf"
+  },
+  "ACT-C04-D-P11-TheTabernacleOfThe.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Tabernacle of the Testimony"
+  },
+  "ACT-C04-D-P12-TheHeavensOpened.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · The Heavens Opened"
+  },
+  "ACT-C04-D-P13-TheHeavensOpened.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Heavens Opened"
+  },
+  "ACT-C04-D-P14-TheyStonedStephen.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · They Stoned Stephen"
   }
  },
  "order": [
@@ -379,7 +484,22 @@
   "ACT-C03-D-P10-TheSeven.dc.html",
   "ACT-C03-D-P11-TheSeven.dc.html",
   "ACT-C03-D-P12-Stephen.dc.html",
-  "ACT-C03-D-P13-Stephen.dc.html"
+  "ACT-C03-D-P13-Stephen.dc.html",
+  "ACT-C04-00-Title.dc.html",
+  "ACT-C04-D-P01-BrethrenAndFathers.dc.html",
+  "ACT-C04-D-P02-BrethrenAndFathers.dc.html",
+  "ACT-C04-D-P03-Joseph.dc.html",
+  "ACT-C04-D-P04-Joseph.dc.html",
+  "ACT-C04-D-P05-Moses.dc.html",
+  "ACT-C04-D-P06-Moses.dc.html",
+  "ACT-C04-D-P07-Moses.dc.html",
+  "ACT-C04-D-P08-TheBush.dc.html",
+  "ACT-C04-D-P09-TheBush.dc.html",
+  "ACT-C04-D-P10-TheCalf.dc.html",
+  "ACT-C04-D-P11-TheTabernacleOfThe.dc.html",
+  "ACT-C04-D-P12-TheHeavensOpened.dc.html",
+  "ACT-C04-D-P13-TheHeavensOpened.dc.html",
+  "ACT-C04-D-P14-TheyStonedStephen.dc.html"
  ],
  "notes": {
   "Main": {
@@ -409,6 +529,13 @@
    "text": "Chapter 3 · We Must Obey God (Acts 5–6)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Stephen (Acts 7)",
+   "x": 0,
+   "y": 15200
   }
  },
  "designSystems": [],
