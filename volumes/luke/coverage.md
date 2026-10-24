@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 566 verses — 566 full, 0 partial, 0 omitted.
+**So far:** 660 verses — 660 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Gabriel (Luke 1)
 
@@ -55,5 +55,11 @@ Every verse is on the page in full.
 ## Chapter 9 · Teach Us to Pray (Luke 11)
 
 54 verses: 54 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 10 · Consider the Lilies (Luke 12–13)
+
+94 verses: 94 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

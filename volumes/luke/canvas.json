@@ -940,6 +940,146 @@
    "w": 760,
    "h": 1080,
    "title": "123 · Woe unto You Lawyers"
+  },
+  "LUK-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Consider the Lilies"
+  },
+  "LUK-C10-D-P01-TheLeavenOfThePhar.dc.html": {
+   "x": 840,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · The Leaven of the Pharisees"
+  },
+  "LUK-C10-D-P02-TheLeavenOfThePhar.dc.html": {
+   "x": 1680,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · The Leaven of the Pharisees"
+  },
+  "LUK-C10-D-P03-TakeHeedOfCovetous.dc.html": {
+   "x": 2520,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · Take Heed of Covetousness"
+  },
+  "LUK-C10-D-P04-TakeHeedOfCovetous.dc.html": {
+   "x": 3360,
+   "y": 42500,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · Take Heed of Covetousness"
+  },
+  "LUK-C10-D-P05-ConsiderTheRavens.dc.html": {
+   "x": 0,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Consider the Ravens"
+  },
+  "LUK-C10-D-P06-ConsiderTheLilies.dc.html": {
+   "x": 840,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · Consider the Lilies"
+  },
+  "LUK-C10-D-P07-YourLampsBurning.dc.html": {
+   "x": 1680,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Your Lamps Burning"
+  },
+  "LUK-C10-D-P08-TheFaithfulAndWise.dc.html": {
+   "x": 2520,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · The Faithful and Wise Steward"
+  },
+  "LUK-C10-D-P09-TheFaithfulAndWise.dc.html": {
+   "x": 3360,
+   "y": 43700,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · The Faithful and Wise Steward"
+  },
+  "LUK-C10-D-P10-FireUponTheEarth.dc.html": {
+   "x": 0,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Fire upon the Earth"
+  },
+  "LUK-C10-D-P11-FireUponTheEarth.dc.html": {
+   "x": 840,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Fire upon the Earth"
+  },
+  "LUK-C10-D-P12-ExceptYeRepent.dc.html": {
+   "x": 1680,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · Except Ye Repent"
+  },
+  "LUK-C10-D-P13-TheBarrenFigTree.dc.html": {
+   "x": 2520,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Barren Fig Tree"
+  },
+  "LUK-C10-D-P14-ThouArtLoosed.dc.html": {
+   "x": 3360,
+   "y": 44900,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · Thou Art Loosed"
+  },
+  "LUK-C10-D-P15-ThouArtLoosed.dc.html": {
+   "x": 0,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · Thou Art Loosed"
+  },
+  "LUK-C10-D-P16-LikeAGrainOfMustar.dc.html": {
+   "x": 840,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · Like a Grain of Mustard Seed"
+  },
+  "LUK-C10-D-P17-TheNarrowDoor.dc.html": {
+   "x": 1680,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Narrow Door"
+  },
+  "LUK-C10-D-P18-GoAndSayToThatFox.dc.html": {
+   "x": 2520,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · Go and Say to That Fox"
+  },
+  "LUK-C10-D-P19-GoAndSayToThatFox.dc.html": {
+   "x": 3360,
+   "y": 46100,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · Go and Say to That Fox"
   }
  },
  "order": [
@@ -1075,7 +1215,27 @@
   "LUK-C09-D-P10-WoeUntoYouPharisee.dc.html",
   "LUK-C09-D-P11-WoeUntoYouLawyers.dc.html",
   "LUK-C09-D-P12-WoeUntoYouLawyers.dc.html",
-  "LUK-C09-D-P13-WoeUntoYouLawyers.dc.html"
+  "LUK-C09-D-P13-WoeUntoYouLawyers.dc.html",
+  "LUK-C10-00-Title.dc.html",
+  "LUK-C10-D-P01-TheLeavenOfThePhar.dc.html",
+  "LUK-C10-D-P02-TheLeavenOfThePhar.dc.html",
+  "LUK-C10-D-P03-TakeHeedOfCovetous.dc.html",
+  "LUK-C10-D-P04-TakeHeedOfCovetous.dc.html",
+  "LUK-C10-D-P05-ConsiderTheRavens.dc.html",
+  "LUK-C10-D-P06-ConsiderTheLilies.dc.html",
+  "LUK-C10-D-P07-YourLampsBurning.dc.html",
+  "LUK-C10-D-P08-TheFaithfulAndWise.dc.html",
+  "LUK-C10-D-P09-TheFaithfulAndWise.dc.html",
+  "LUK-C10-D-P10-FireUponTheEarth.dc.html",
+  "LUK-C10-D-P11-FireUponTheEarth.dc.html",
+  "LUK-C10-D-P12-ExceptYeRepent.dc.html",
+  "LUK-C10-D-P13-TheBarrenFigTree.dc.html",
+  "LUK-C10-D-P14-ThouArtLoosed.dc.html",
+  "LUK-C10-D-P15-ThouArtLoosed.dc.html",
+  "LUK-C10-D-P16-LikeAGrainOfMustar.dc.html",
+  "LUK-C10-D-P17-TheNarrowDoor.dc.html",
+  "LUK-C10-D-P18-GoAndSayToThatFox.dc.html",
+  "LUK-C10-D-P19-GoAndSayToThatFox.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1147,6 +1307,13 @@
    "text": "Chapter 9 · Teach Us to Pray (Luke 11)",
    "x": 0,
    "y": 38100
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Consider the Lilies (Luke 12–13)",
+   "x": 0,
+   "y": 42200
   }
  },
  "designSystems": [],
