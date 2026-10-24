@@ -74,5 +74,7 @@ META = {
      "blurb": "Saul laying waste the church; Philip in Samaria and Simon the sorcerer — thy silver perish with thee; the Ethiopian reading Isaiah in his chariot on the desert road — understandest thou what thou readest?; then near Damascus a light out of heaven: Saul, Saul, why persecutest thou me?; three days without sight; Ananias and the scales; the basket let down over the wall; Æneas, arise; and Tabitha, arise."},
     {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "What God Hath Cleansed", "range": "Acts 10–11", "bible_chapters": [10, 11],
      "blurb": "Cornelius the centurion at the ninth hour and the angel of God; Peter on the housetop at Joppa and the great sheet let down by four corners — what God hath cleansed, make not thou common; Stand up; I myself also am a man; God is no respecter of persons, and the Holy Spirit fell on the Gentiles; then Antioch, Barnabas and Saul, and the disciples called Christians first."},
+    {"module": "ch07", "dir": "chapter-07", "num": "7", "name": "The Word of God Grew", "range": "Acts 12–13", "bible_chapters": [12, 13],
+     "blurb": "Herod and the sword; Peter sleeping between two soldiers, and an angel and a light in the cell — rise up quickly; the iron gate that opened of its own accord; Rhoda at the door of the gate; Herod's oration — the voice of a god, and not of a man; then at Antioch, separate me Barnabas and Saul: Cyprus and the proconsul, Elymas the sorcerer, and Paul's sermon at Antioch of Pisidia — lo, we turn to the Gentiles."},
   ],
 }

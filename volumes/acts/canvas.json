@@ -695,6 +695,139 @@
    "w": 760,
    "h": 1080,
    "title": "91 · Christians First in Antioch"
+  },
+  "ACT-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Word of God Grew"
+  },
+  "ACT-C07-D-P01-HerodTheKing.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Herod the King"
+  },
+  "ACT-C07-D-P02-TheIronGate.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Iron Gate"
+  },
+  "ACT-C07-D-P03-TheIronGate.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · The Iron Gate"
+  },
+  "ACT-C07-D-P04-Rhoda.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Rhoda"
+  },
+  "ACT-C07-D-P05-Rhoda.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · Rhoda"
+  },
+  "ACT-C07-D-P06-TheVoiceOfAGod.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Voice of a God"
+  },
+  "ACT-C07-D-P07-TheVoiceOfAGod.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Voice of a God"
+  },
+  "ACT-C07-D-P08-SeparateMeBarnabas.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Separate Me Barnabas and Saul"
+  },
+  "ACT-C07-D-P09-Paphos.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Paphos"
+  },
+  "ACT-C07-D-P10-Paphos.dc.html": {
+   "x": 0,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Paphos"
+  },
+  "ACT-C07-D-P11-AntiochOfPisidia.dc.html": {
+   "x": 840,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P12-AntiochOfPisidia.dc.html": {
+   "x": 1680,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P13-AntiochOfPisidia.dc.html": {
+   "x": 2520,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P14-AntiochOfPisidia.dc.html": {
+   "x": 3360,
+   "y": 33800,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P15-AntiochOfPisidia.dc.html": {
+   "x": 0,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Antioch of Pisidia"
+  },
+  "ACT-C07-D-P16-WeTurnToTheGentile.dc.html": {
+   "x": 840,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · We Turn to the Gentiles"
+  },
+  "ACT-C07-D-P17-WeTurnToTheGentile.dc.html": {
+   "x": 1680,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · We Turn to the Gentiles"
+  },
+  "ACT-C07-D-P18-WeTurnToTheGentile.dc.html": {
+   "x": 2520,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · We Turn to the Gentiles"
   }
  },
  "order": [
@@ -795,7 +928,26 @@
   "ACT-C06-D-P12-PeterAtJerusalem.dc.html",
   "ACT-C06-D-P13-ChristiansFirstInA.dc.html",
   "ACT-C06-D-P14-ChristiansFirstInA.dc.html",
-  "ACT-C06-D-P15-ChristiansFirstInA.dc.html"
+  "ACT-C06-D-P15-ChristiansFirstInA.dc.html",
+  "ACT-C07-00-Title.dc.html",
+  "ACT-C07-D-P01-HerodTheKing.dc.html",
+  "ACT-C07-D-P02-TheIronGate.dc.html",
+  "ACT-C07-D-P03-TheIronGate.dc.html",
+  "ACT-C07-D-P04-Rhoda.dc.html",
+  "ACT-C07-D-P05-Rhoda.dc.html",
+  "ACT-C07-D-P06-TheVoiceOfAGod.dc.html",
+  "ACT-C07-D-P07-TheVoiceOfAGod.dc.html",
+  "ACT-C07-D-P08-SeparateMeBarnabas.dc.html",
+  "ACT-C07-D-P09-Paphos.dc.html",
+  "ACT-C07-D-P10-Paphos.dc.html",
+  "ACT-C07-D-P11-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P12-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P13-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P14-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P15-AntiochOfPisidia.dc.html",
+  "ACT-C07-D-P16-WeTurnToTheGentile.dc.html",
+  "ACT-C07-D-P17-WeTurnToTheGentile.dc.html",
+  "ACT-C07-D-P18-WeTurnToTheGentile.dc.html"
  ],
  "notes": {
   "Main": {
@@ -846,6 +998,13 @@
    "text": "Chapter 6 · What God Hath Cleansed (Acts 10–11)",
    "x": 0,
    "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Word of God Grew (Acts 12–13)",
+   "x": 0,
+   "y": 31100
   }
  },
  "designSystems": [],

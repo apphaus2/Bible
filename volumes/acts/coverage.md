@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 414 verses — 413 full, 0 partial, 1 omitted.
+**So far:** 491 verses — 490 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · What God Hath Cleansed (Acts 10–11)
 
 78 verses: 78 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · The Word of God Grew (Acts 12–13)
+
+77 verses: 77 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
