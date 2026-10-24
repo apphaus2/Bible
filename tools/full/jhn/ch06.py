@@ -87,6 +87,6 @@ SEGS = [D([cp("11:1"), cp("11:2")], lambda w, h: A.sick_bed("sb1", w, h, 1102), 
         D([cp("12:39"), sg("12:40"), cp("12:41")], lambda w, h: A.prophecy("pr1", w, h, 1212), "#1A1630"),
         F([cp("12:42"), cp("12:43")], NICODEMUS_DAY),
         F([said("12:44", "cried and said,", "He that believeth"), sy("12:45"), sy("12:46")], JESUS_TEACH, head="I Am Come a Light"),
-        F([sy("12:47"), sy("12:48")], JESUS_STERN),
+        D([sy("12:47"), sy("12:48")], lambda w, h: A.word_light("wl1", w, h, 1213, "world"), "#05051A"),
         F([sy("12:49"), sy("12:50")], JESUS)]
 PG.extend(K.pack(SEGS, "JHN-C06-D", PG.next(), end=nxt("NEXT · THE WASHING OF FEET")))

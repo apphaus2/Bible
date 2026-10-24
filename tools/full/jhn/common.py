@@ -141,6 +141,7 @@ JEW = face_of("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#2A1A10", hl="#4A3
               brow="scowl", light="#D7261E")                                       # "the Jews" who question him (a cool grey headcloth)
 BROTHER = face_of("adam", skin="#C98E66", shadow="#4A3A4A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#4A5A6A", cord=True,
                   brow="scowl", light="#FFC14D")                                    # one of his brethren (7:3)
+JUDE = face_of("adam", skin="#C98E66", shadow="#5A3A2A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#4A5A4A", cord=True, light="#FFC14D")   # Judas (not Iscariot)
 CROWD = face_of("adam", skin="#C98E66", shadow="#5A3A2A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#4E6A6A", cord=True,
                 light="#FFE680")                                                    # one of the multitude
 THOMAS_AWE = face_of("adam", skin="#C98E66", shadow="#5A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#5A4A6A", cord=True, light="#FFFFFF")

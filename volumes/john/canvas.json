@@ -891,6 +891,111 @@
    "w": 760,
    "h": 1080,
    "title": "119 · I Am Come a Light"
+  },
+  "JHN-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Washing of Feet"
+  },
+  "JHN-C07-D-P01-TheWashingOfFeet.dc.html": {
+   "x": 840,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Washing of Feet"
+  },
+  "JHN-C07-D-P02-TheWashingOfFeet.dc.html": {
+   "x": 1680,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Washing of Feet"
+  },
+  "JHN-C07-D-P03-TheWashingOfFeet.dc.html": {
+   "x": 2520,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · The Washing of Feet"
+  },
+  "JHN-C07-D-P04-TheWashingOfFeet.dc.html": {
+   "x": 3360,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · The Washing of Feet"
+  },
+  "JHN-C07-D-P05-OneOfYouShallBetra.dc.html": {
+   "x": 0,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · One of You Shall Betray Me"
+  },
+  "JHN-C07-D-P06-OneOfYouShallBetra.dc.html": {
+   "x": 840,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · One of You Shall Betray Me"
+  },
+  "JHN-C07-D-P07-ANewCommandment.dc.html": {
+   "x": 1680,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · A New Commandment"
+  },
+  "JHN-C07-D-P08-ANewCommandment.dc.html": {
+   "x": 2520,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · A New Commandment"
+  },
+  "JHN-C07-D-P09-ManyMansions.dc.html": {
+   "x": 3360,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Many Mansions"
+  },
+  "JHN-C07-D-P10-IAmTheWay.dc.html": {
+   "x": 0,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · I Am the Way"
+  },
+  "JHN-C07-D-P11-IAmTheWay.dc.html": {
+   "x": 840,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · I Am the Way"
+  },
+  "JHN-C07-D-P12-AnotherComforter.dc.html": {
+   "x": 1680,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Another Comforter"
+  },
+  "JHN-C07-D-P13-PeaceILeaveWithYou.dc.html": {
+   "x": 2520,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Peace I Leave with You"
+  },
+  "JHN-C07-D-P14-PeaceILeaveWithYou.dc.html": {
+   "x": 3360,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Peace I Leave with You"
   }
  },
  "order": [
@@ -1019,7 +1124,22 @@
   "JHN-C06-D-P17-TheVoiceOutOfHeave.dc.html",
   "JHN-C06-D-P18-WalkWhileYeHaveThe.dc.html",
   "JHN-C06-D-P19-WalkWhileYeHaveThe.dc.html",
-  "JHN-C06-D-P20-IAmComeALight.dc.html"
+  "JHN-C06-D-P20-IAmComeALight.dc.html",
+  "JHN-C07-00-Title.dc.html",
+  "JHN-C07-D-P01-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P02-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P03-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P04-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P05-OneOfYouShallBetra.dc.html",
+  "JHN-C07-D-P06-OneOfYouShallBetra.dc.html",
+  "JHN-C07-D-P07-ANewCommandment.dc.html",
+  "JHN-C07-D-P08-ANewCommandment.dc.html",
+  "JHN-C07-D-P09-ManyMansions.dc.html",
+  "JHN-C07-D-P10-IAmTheWay.dc.html",
+  "JHN-C07-D-P11-IAmTheWay.dc.html",
+  "JHN-C07-D-P12-AnotherComforter.dc.html",
+  "JHN-C07-D-P13-PeaceILeaveWithYou.dc.html",
+  "JHN-C07-D-P14-PeaceILeaveWithYou.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1070,6 +1190,13 @@
    "text": "Chapter 6 · Lazarus, Come Forth (John 11–12)",
    "x": 0,
    "y": 30600
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Washing of Feet (John 13–14)",
+   "x": 0,
+   "y": 37100
   }
  },
  "designSystems": [],

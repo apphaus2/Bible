@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 586 verses — 585 full, 0 partial, 1 omitted.
+**So far:** 655 verses — 654 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · The Word Became Flesh (John 1–2)
 
@@ -37,5 +37,11 @@ Every verse is on the page in full.
 ## Chapter 6 · Lazarus, Come Forth (John 11–12)
 
 107 verses: 107 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 7 · The Washing of Feet (John 13–14)
+
+69 verses: 69 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
