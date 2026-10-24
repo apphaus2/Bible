@@ -1,0 +1,1689 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T14:52:20Z"
+ },
+ "title": "John — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JHN-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Word Became Flesh"
+  },
+  "JHN-C01-D-P01-InTheBeginningWasT.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · In the Beginning Was the Word"
+  },
+  "JHN-C01-D-P02-AManSentFromGod.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · A Man Sent from God"
+  },
+  "JHN-C01-D-P03-TheWordBecameFlesh.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Word Became Flesh"
+  },
+  "JHN-C01-D-P04-WhoArtThou.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Who Art Thou?"
+  },
+  "JHN-C01-D-P05-WhoArtThou.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Who Art Thou?"
+  },
+  "JHN-C01-D-P06-WhoArtThou.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Who Art Thou?"
+  },
+  "JHN-C01-D-P07-BeholdTheLambOfGod.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Behold, the Lamb of God"
+  },
+  "JHN-C01-D-P08-ComeAndSee.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Come and See"
+  },
+  "JHN-C01-D-P09-ComeAndSee.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Come and See"
+  },
+  "JHN-C01-D-P10-UnderTheFigTree.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Under the Fig Tree"
+  },
+  "JHN-C01-D-P11-UnderTheFigTree.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Under the Fig Tree"
+  },
+  "JHN-C01-D-P12-UnderTheFigTree.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Under the Fig Tree"
+  },
+  "JHN-C01-D-P13-TheMarriageInCana.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Marriage in Cana"
+  },
+  "JHN-C01-D-P14-TheMarriageInCana.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Marriage in Cana"
+  },
+  "JHN-C01-D-P15-TheMarriageInCana.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Marriage in Cana"
+  },
+  "JHN-C01-D-P16-MyFatherSHouse.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · My Father's House"
+  },
+  "JHN-C01-D-P17-MyFatherSHouse.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · My Father's House"
+  },
+  "JHN-C01-D-P18-MyFatherSHouse.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · My Father's House"
+  },
+  "JHN-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Ye Must Be Born Anew"
+  },
+  "JHN-C02-D-P01-NicodemusByNight.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Nicodemus by Night"
+  },
+  "JHN-C02-D-P02-NicodemusByNight.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Nicodemus by Night"
+  },
+  "JHN-C02-D-P03-TheSonOfManLiftedU.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · The Son of Man Lifted Up"
+  },
+  "JHN-C02-D-P04-GodSoLovedTheWorld.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · God So Loved the World"
+  },
+  "JHN-C02-D-P05-HeMustIncrease.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · He Must Increase"
+  },
+  "JHN-C02-D-P06-HeMustIncrease.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · He Must Increase"
+  },
+  "JHN-C02-D-P07-HeMustIncrease.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · He Must Increase"
+  },
+  "JHN-C02-D-P08-JacobSWell.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Jacob's Well"
+  },
+  "JHN-C02-D-P09-TheWomanOfSamaria.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · The Woman of Samaria"
+  },
+  "JHN-C02-D-P10-LivingWater.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Living Water"
+  },
+  "JHN-C02-D-P11-LivingWater.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Living Water"
+  },
+  "JHN-C02-D-P12-InSpiritAndTruth.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · In Spirit and Truth"
+  },
+  "JHN-C02-D-P13-MyMeat.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · My Meat"
+  },
+  "JHN-C02-D-P14-WhiteUntoHarvest.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · White unto Harvest"
+  },
+  "JHN-C02-D-P15-WhiteUntoHarvest.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · White unto Harvest"
+  },
+  "JHN-C02-D-P16-ThySonLiveth.dc.html": {
+   "x": 840,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Thy Son Liveth"
+  },
+  "JHN-C02-D-P17-ThySonLiveth.dc.html": {
+   "x": 1680,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Thy Son Liveth"
+  },
+  "JHN-C02-D-P18-ThySonLiveth.dc.html": {
+   "x": 2520,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Thy Son Liveth"
+  },
+  "JHN-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Bread of Life"
+  },
+  "JHN-C03-D-P01-ThePoolOfBethesda.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Pool of Bethesda"
+  },
+  "JHN-C03-D-P02-ThePoolOfBethesda.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · The Pool of Bethesda"
+  },
+  "JHN-C03-D-P03-ItIsTheSabbath.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · It Is the Sabbath"
+  },
+  "JHN-C03-D-P04-ItIsTheSabbath.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · It Is the Sabbath"
+  },
+  "JHN-C03-D-P05-TheSonGivethLife.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Son Giveth Life"
+  },
+  "JHN-C03-D-P06-TheSonGivethLife.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Son Giveth Life"
+  },
+  "JHN-C03-D-P07-TheyBearWitnessOfM.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · They Bear Witness of Me"
+  },
+  "JHN-C03-D-P08-TheyBearWitnessOfM.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · They Bear Witness of Me"
+  },
+  "JHN-C03-D-P09-TheyBearWitnessOfM.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · They Bear Witness of Me"
+  },
+  "JHN-C03-D-P10-FiveBarleyLoaves.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Five Barley Loaves"
+  },
+  "JHN-C03-D-P11-FiveBarleyLoaves.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Five Barley Loaves"
+  },
+  "JHN-C03-D-P12-FiveBarleyLoaves.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Five Barley Loaves"
+  },
+  "JHN-C03-D-P13-ItIsI.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · It Is I"
+  },
+  "JHN-C03-D-P14-ItIsI.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · It Is I"
+  },
+  "JHN-C03-D-P15-TheBreadOutOfHeave.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Bread out of Heaven"
+  },
+  "JHN-C03-D-P16-TheBreadOutOfHeave.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Bread out of Heaven"
+  },
+  "JHN-C03-D-P17-TheBreadOutOfHeave.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Bread out of Heaven"
+  },
+  "JHN-C03-D-P18-IAmTheBreadOfLife.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P19-IAmTheBreadOfLife.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P20-IAmTheBreadOfLife.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P21-IAmTheBreadOfLife.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P22-ToWhomShallWeGo.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · To Whom Shall We Go?"
+  },
+  "JHN-C03-D-P23-ToWhomShallWeGo.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · To Whom Shall We Go?"
+  },
+  "JHN-C03-D-P24-ToWhomShallWeGo.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · To Whom Shall We Go?"
+  },
+  "JHN-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Before Abraham Was"
+  },
+  "JHN-C04-D-P01-TheFeastOfTabernac.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · The Feast of Tabernacles"
+  },
+  "JHN-C04-D-P02-TheFeastOfTabernac.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The Feast of Tabernacles"
+  },
+  "JHN-C04-D-P03-MyTeachingIsNotMin.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · My Teaching Is Not Mine"
+  },
+  "JHN-C04-D-P04-MyTeachingIsNotMin.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · My Teaching Is Not Mine"
+  },
+  "JHN-C04-D-P05-OfficersToTakeHim.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Officers to Take Him"
+  },
+  "JHN-C04-D-P06-RiversOfLivingWate.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Rivers of Living Water"
+  },
+  "JHN-C04-D-P07-NeverManSoSpake.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Never Man So Spake"
+  },
+  "JHN-C04-D-P08-NeverManSoSpake.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Never Man So Spake"
+  },
+  "JHN-C04-D-P09-NeitherDoICondemnT.dc.html": {
+   "x": 3360,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Neither Do I Condemn Thee"
+  },
+  "JHN-C04-D-P10-NeitherDoICondemnT.dc.html": {
+   "x": 0,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Neither Do I Condemn Thee"
+  },
+  "JHN-C04-D-P11-TheLightOfTheWorld.dc.html": {
+   "x": 840,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Light of the World"
+  },
+  "JHN-C04-D-P12-TheLightOfTheWorld.dc.html": {
+   "x": 1680,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · The Light of the World"
+  },
+  "JHN-C04-D-P13-IAmFromAbove.dc.html": {
+   "x": 2520,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · I Am from Above"
+  },
+  "JHN-C04-D-P14-IAmFromAbove.dc.html": {
+   "x": 3360,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · I Am from Above"
+  },
+  "JHN-C04-D-P15-TheTruthShallMakeY.dc.html": {
+   "x": 0,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The Truth Shall Make You Free"
+  },
+  "JHN-C04-D-P16-TheTruthShallMakeY.dc.html": {
+   "x": 840,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The Truth Shall Make You Free"
+  },
+  "JHN-C04-D-P17-TheTruthShallMakeY.dc.html": {
+   "x": 1680,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Truth Shall Make You Free"
+  },
+  "JHN-C04-D-P18-BeforeAbrahamWas.dc.html": {
+   "x": 2520,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Before Abraham Was"
+  },
+  "JHN-C04-D-P19-BeforeAbrahamWas.dc.html": {
+   "x": 3360,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Before Abraham Was"
+  },
+  "JHN-C04-D-P20-BeforeAbrahamWas.dc.html": {
+   "x": 0,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Before Abraham Was"
+  },
+  "JHN-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Good Shepherd"
+  },
+  "JHN-C05-D-P01-AManBlindFromHisBi.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · A Man Blind from His Birth"
+  },
+  "JHN-C05-D-P02-AManBlindFromHisBi.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · A Man Blind from His Birth"
+  },
+  "JHN-C05-D-P03-IAmHe.dc.html": {
+   "x": 2520,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Am He"
+  },
+  "JHN-C05-D-P04-BeforeThePharisees.dc.html": {
+   "x": 3360,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · Before the Pharisees"
+  },
+  "JHN-C05-D-P05-BeforeThePharisees.dc.html": {
+   "x": 0,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Before the Pharisees"
+  },
+  "JHN-C05-D-P06-BeforeThePharisees.dc.html": {
+   "x": 840,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Before the Pharisees"
+  },
+  "JHN-C05-D-P07-NowISee.dc.html": {
+   "x": 1680,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Now I See"
+  },
+  "JHN-C05-D-P08-NowISee.dc.html": {
+   "x": 2520,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Now I See"
+  },
+  "JHN-C05-D-P09-LordIBelieve.dc.html": {
+   "x": 3360,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Lord, I Believe"
+  },
+  "JHN-C05-D-P10-LordIBelieve.dc.html": {
+   "x": 0,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Lord, I Believe"
+  },
+  "JHN-C05-D-P11-TheDoorOfTheSheep.dc.html": {
+   "x": 840,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Door of the Sheep"
+  },
+  "JHN-C05-D-P12-TheDoorOfTheSheep.dc.html": {
+   "x": 1680,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Door of the Sheep"
+  },
+  "JHN-C05-D-P13-TheDoorOfTheSheep.dc.html": {
+   "x": 2520,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Door of the Sheep"
+  },
+  "JHN-C05-D-P14-IAmTheGoodShepherd.dc.html": {
+   "x": 3360,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · I Am the Good Shepherd"
+  },
+  "JHN-C05-D-P15-IAmTheGoodShepherd.dc.html": {
+   "x": 0,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · I Am the Good Shepherd"
+  },
+  "JHN-C05-D-P16-IAndTheFatherAreOn.dc.html": {
+   "x": 840,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · I and the Father Are One"
+  },
+  "JHN-C05-D-P17-IAndTheFatherAreOn.dc.html": {
+   "x": 1680,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · I and the Father Are One"
+  },
+  "JHN-C05-D-P18-IAndTheFatherAreOn.dc.html": {
+   "x": 2520,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · I and the Father Are One"
+  },
+  "JHN-C05-D-P19-BeyondTheJordan.dc.html": {
+   "x": 3360,
+   "y": 29200,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Beyond the Jordan"
+  },
+  "JHN-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Lazarus, Come Forth"
+  },
+  "JHN-C06-D-P01-LazarusOfBethany.dc.html": {
+   "x": 840,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Lazarus of Bethany"
+  },
+  "JHN-C06-D-P02-LazarusOfBethany.dc.html": {
+   "x": 1680,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Lazarus of Bethany"
+  },
+  "JHN-C06-D-P03-LazarusOfBethany.dc.html": {
+   "x": 2520,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Lazarus of Bethany"
+  },
+  "JHN-C06-D-P04-IAmTheResurrection.dc.html": {
+   "x": 3360,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · I Am the Resurrection"
+  },
+  "JHN-C06-D-P05-IAmTheResurrection.dc.html": {
+   "x": 0,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · I Am the Resurrection"
+  },
+  "JHN-C06-D-P06-IAmTheResurrection.dc.html": {
+   "x": 840,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · I Am the Resurrection"
+  },
+  "JHN-C06-D-P07-JesusWept.dc.html": {
+   "x": 1680,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Jesus Wept"
+  },
+  "JHN-C06-D-P08-JesusWept.dc.html": {
+   "x": 2520,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Jesus Wept"
+  },
+  "JHN-C06-D-P09-LazarusComeForth.dc.html": {
+   "x": 3360,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · Lazarus, Come Forth"
+  },
+  "JHN-C06-D-P10-ItIsExpedient.dc.html": {
+   "x": 0,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · It Is Expedient"
+  },
+  "JHN-C06-D-P11-ItIsExpedient.dc.html": {
+   "x": 840,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · It Is Expedient"
+  },
+  "JHN-C06-D-P12-TheOdorOfTheOintme.dc.html": {
+   "x": 1680,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · The Odor of the Ointment"
+  },
+  "JHN-C06-D-P13-TheOdorOfTheOintme.dc.html": {
+   "x": 2520,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · The Odor of the Ointment"
+  },
+  "JHN-C06-D-P14-Hosanna.dc.html": {
+   "x": 3360,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Hosanna"
+  },
+  "JHN-C06-D-P15-WeWouldSeeJesus.dc.html": {
+   "x": 0,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · We Would See Jesus"
+  },
+  "JHN-C06-D-P16-TheVoiceOutOfHeave.dc.html": {
+   "x": 840,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · The Voice out of Heaven"
+  },
+  "JHN-C06-D-P17-TheVoiceOutOfHeave.dc.html": {
+   "x": 1680,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The Voice out of Heaven"
+  },
+  "JHN-C06-D-P18-WalkWhileYeHaveThe.dc.html": {
+   "x": 2520,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Walk While Ye Have the Light"
+  },
+  "JHN-C06-D-P19-WalkWhileYeHaveThe.dc.html": {
+   "x": 3360,
+   "y": 34500,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Walk While Ye Have the Light"
+  },
+  "JHN-C06-D-P20-IAmComeALight.dc.html": {
+   "x": 0,
+   "y": 35700,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · I Am Come a Light"
+  },
+  "JHN-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The Washing of Feet"
+  },
+  "JHN-C07-D-P01-TheWashingOfFeet.dc.html": {
+   "x": 840,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Washing of Feet"
+  },
+  "JHN-C07-D-P02-TheWashingOfFeet.dc.html": {
+   "x": 1680,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Washing of Feet"
+  },
+  "JHN-C07-D-P03-TheWashingOfFeet.dc.html": {
+   "x": 2520,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · The Washing of Feet"
+  },
+  "JHN-C07-D-P04-TheWashingOfFeet.dc.html": {
+   "x": 3360,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · The Washing of Feet"
+  },
+  "JHN-C07-D-P05-OneOfYouShallBetra.dc.html": {
+   "x": 0,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · One of You Shall Betray Me"
+  },
+  "JHN-C07-D-P06-OneOfYouShallBetra.dc.html": {
+   "x": 840,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · One of You Shall Betray Me"
+  },
+  "JHN-C07-D-P07-ANewCommandment.dc.html": {
+   "x": 1680,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · A New Commandment"
+  },
+  "JHN-C07-D-P08-ANewCommandment.dc.html": {
+   "x": 2520,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · A New Commandment"
+  },
+  "JHN-C07-D-P09-ManyMansions.dc.html": {
+   "x": 3360,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · Many Mansions"
+  },
+  "JHN-C07-D-P10-IAmTheWay.dc.html": {
+   "x": 0,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · I Am the Way"
+  },
+  "JHN-C07-D-P11-IAmTheWay.dc.html": {
+   "x": 840,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · I Am the Way"
+  },
+  "JHN-C07-D-P12-AnotherComforter.dc.html": {
+   "x": 1680,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Another Comforter"
+  },
+  "JHN-C07-D-P13-PeaceILeaveWithYou.dc.html": {
+   "x": 2520,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Peace I Leave with You"
+  },
+  "JHN-C07-D-P14-PeaceILeaveWithYou.dc.html": {
+   "x": 3360,
+   "y": 39800,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Peace I Leave with You"
+  },
+  "JHN-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · That They May Be One"
+  },
+  "JHN-C08-D-P01-IAmTheTrueVine.dc.html": {
+   "x": 840,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · I Am the True Vine"
+  },
+  "JHN-C08-D-P02-IAmTheTrueVine.dc.html": {
+   "x": 1680,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · I Am the True Vine"
+  },
+  "JHN-C08-D-P03-AbideInMyLove.dc.html": {
+   "x": 2520,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Abide in My Love"
+  },
+  "JHN-C08-D-P04-IfTheWorldHatethYo.dc.html": {
+   "x": 3360,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · If the World Hateth You"
+  },
+  "JHN-C08-D-P05-IfTheWorldHatethYo.dc.html": {
+   "x": 0,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · If the World Hateth You"
+  },
+  "JHN-C08-D-P06-ItIsExpedientForYo.dc.html": {
+   "x": 840,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · It Is Expedient for You"
+  },
+  "JHN-C08-D-P07-ItIsExpedientForYo.dc.html": {
+   "x": 1680,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · It Is Expedient for You"
+  },
+  "JHN-C08-D-P08-ALittleWhile.dc.html": {
+   "x": 2520,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · A Little While"
+  },
+  "JHN-C08-D-P09-ALittleWhile.dc.html": {
+   "x": 3360,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · A Little While"
+  },
+  "JHN-C08-D-P10-ALittleWhile.dc.html": {
+   "x": 0,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · A Little While"
+  },
+  "JHN-C08-D-P11-IHaveOvercomeTheWo.dc.html": {
+   "x": 840,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · I Have Overcome the World"
+  },
+  "JHN-C08-D-P12-FatherTheHourIsCom.dc.html": {
+   "x": 1680,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Father, the Hour Is Come"
+  },
+  "JHN-C08-D-P13-ThatTheyMayBeOne.dc.html": {
+   "x": 2520,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · That They May Be One"
+  },
+  "JHN-C08-D-P14-ThatTheyMayBeOne.dc.html": {
+   "x": 3360,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · That They May Be One"
+  },
+  "JHN-C08-D-P15-ThatTheyMayBeOne.dc.html": {
+   "x": 0,
+   "y": 45100,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · That They May Be One"
+  },
+  "JHN-C08-D-P16-ThatTheyMayBeOne.dc.html": {
+   "x": 840,
+   "y": 45100,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · That They May Be One"
+  },
+  "JHN-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · It Is Finished"
+  },
+  "JHN-C09-D-P01-OverTheBrookKidron.dc.html": {
+   "x": 840,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Over the Brook Kidron"
+  },
+  "JHN-C09-D-P02-IAmHe.dc.html": {
+   "x": 1680,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · I Am He"
+  },
+  "JHN-C09-D-P03-IAmHe.dc.html": {
+   "x": 2520,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · I Am He"
+  },
+  "JHN-C09-D-P04-BeforeAnnas.dc.html": {
+   "x": 3360,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Before Annas"
+  },
+  "JHN-C09-D-P05-BeforeAnnas.dc.html": {
+   "x": 0,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Before Annas"
+  },
+  "JHN-C09-D-P06-BeforeAnnas.dc.html": {
+   "x": 840,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Before Annas"
+  },
+  "JHN-C09-D-P07-TheCockCrew.dc.html": {
+   "x": 1680,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · The Cock Crew"
+  },
+  "JHN-C09-D-P08-ThePrtorium.dc.html": {
+   "x": 2520,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · The Prætorium"
+  },
+  "JHN-C09-D-P09-ThePrtorium.dc.html": {
+   "x": 3360,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · The Prætorium"
+  },
+  "JHN-C09-D-P10-MyKingdomIsNotOfTh.dc.html": {
+   "x": 0,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · My Kingdom Is Not of This World"
+  },
+  "JHN-C09-D-P11-MyKingdomIsNotOfTh.dc.html": {
+   "x": 840,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · My Kingdom Is Not of This World"
+  },
+  "JHN-C09-D-P12-BeholdTheMan.dc.html": {
+   "x": 1680,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Behold, the Man!"
+  },
+  "JHN-C09-D-P13-BeholdTheMan.dc.html": {
+   "x": 2520,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Behold, the Man!"
+  },
+  "JHN-C09-D-P14-BeholdTheMan.dc.html": {
+   "x": 3360,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Behold, the Man!"
+  },
+  "JHN-C09-D-P15-Gabbatha.dc.html": {
+   "x": 0,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Gabbatha"
+  },
+  "JHN-C09-D-P16-ThePlaceOfASkull.dc.html": {
+   "x": 840,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · The Place of a Skull"
+  },
+  "JHN-C09-D-P17-ThePlaceOfASkull.dc.html": {
+   "x": 1680,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · The Place of a Skull"
+  },
+  "JHN-C09-D-P18-BeholdThyMother.dc.html": {
+   "x": 2520,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Behold, Thy Mother"
+  },
+  "JHN-C09-D-P19-ItIsFinished.dc.html": {
+   "x": 3360,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · It Is Finished"
+  },
+  "JHN-C09-D-P20-ItIsFinished.dc.html": {
+   "x": 0,
+   "y": 51600,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · It Is Finished"
+  },
+  "JHN-C09-D-P21-ANewTombInTheGarde.dc.html": {
+   "x": 840,
+   "y": 51600,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · A New Tomb in the Garden"
+  },
+  "JHN-C09-D-P22-ANewTombInTheGarde.dc.html": {
+   "x": 1680,
+   "y": 51600,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · A New Tomb in the Garden"
+  },
+  "JHN-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P01-TheStoneTakenAway.dc.html": {
+   "x": 840,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · The Stone Taken Away"
+  },
+  "JHN-C10-D-P02-TheNapkinByItself.dc.html": {
+   "x": 1680,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · The Napkin by Itself"
+  },
+  "JHN-C10-D-P03-WomanWhyWeepestTho.dc.html": {
+   "x": 2520,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · Woman, Why Weepest Thou?"
+  },
+  "JHN-C10-D-P04-WomanWhyWeepestTho.dc.html": {
+   "x": 3360,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · Woman, Why Weepest Thou?"
+  },
+  "JHN-C10-D-P05-Rabboni.dc.html": {
+   "x": 0,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · Rabboni"
+  },
+  "JHN-C10-D-P06-PeaceBeUntoYou.dc.html": {
+   "x": 840,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Peace Be unto You"
+  },
+  "JHN-C10-D-P07-PeaceBeUntoYou.dc.html": {
+   "x": 1680,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · Peace Be unto You"
+  },
+  "JHN-C10-D-P08-MyLordAndMyGod.dc.html": {
+   "x": 2520,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · My Lord and My God"
+  },
+  "JHN-C10-D-P09-MyLordAndMyGod.dc.html": {
+   "x": 3360,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · My Lord and My God"
+  },
+  "JHN-C10-D-P10-ByTheSeaOfTiberias.dc.html": {
+   "x": 0,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · By the Sea of Tiberias"
+  },
+  "JHN-C10-D-P11-ByTheSeaOfTiberias.dc.html": {
+   "x": 840,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · By the Sea of Tiberias"
+  },
+  "JHN-C10-D-P12-ComeAndBreakYourFa.dc.html": {
+   "x": 1680,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Come and Break Your Fast"
+  },
+  "JHN-C10-D-P13-LovestThouMe.dc.html": {
+   "x": 2520,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P14-LovestThouMe.dc.html": {
+   "x": 3360,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P15-LovestThouMe.dc.html": {
+   "x": 0,
+   "y": 56900,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P16-FollowThouMe.dc.html": {
+   "x": 840,
+   "y": 56900,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Follow Thou Me"
+  },
+  "JHN-C10-D-P17-FollowThouMe.dc.html": {
+   "x": 1680,
+   "y": 56900,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Follow Thou Me"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JHN-C01-00-Title.dc.html",
+  "JHN-C01-D-P01-InTheBeginningWasT.dc.html",
+  "JHN-C01-D-P02-AManSentFromGod.dc.html",
+  "JHN-C01-D-P03-TheWordBecameFlesh.dc.html",
+  "JHN-C01-D-P04-WhoArtThou.dc.html",
+  "JHN-C01-D-P05-WhoArtThou.dc.html",
+  "JHN-C01-D-P06-WhoArtThou.dc.html",
+  "JHN-C01-D-P07-BeholdTheLambOfGod.dc.html",
+  "JHN-C01-D-P08-ComeAndSee.dc.html",
+  "JHN-C01-D-P09-ComeAndSee.dc.html",
+  "JHN-C01-D-P10-UnderTheFigTree.dc.html",
+  "JHN-C01-D-P11-UnderTheFigTree.dc.html",
+  "JHN-C01-D-P12-UnderTheFigTree.dc.html",
+  "JHN-C01-D-P13-TheMarriageInCana.dc.html",
+  "JHN-C01-D-P14-TheMarriageInCana.dc.html",
+  "JHN-C01-D-P15-TheMarriageInCana.dc.html",
+  "JHN-C01-D-P16-MyFatherSHouse.dc.html",
+  "JHN-C01-D-P17-MyFatherSHouse.dc.html",
+  "JHN-C01-D-P18-MyFatherSHouse.dc.html",
+  "JHN-C02-00-Title.dc.html",
+  "JHN-C02-D-P01-NicodemusByNight.dc.html",
+  "JHN-C02-D-P02-NicodemusByNight.dc.html",
+  "JHN-C02-D-P03-TheSonOfManLiftedU.dc.html",
+  "JHN-C02-D-P04-GodSoLovedTheWorld.dc.html",
+  "JHN-C02-D-P05-HeMustIncrease.dc.html",
+  "JHN-C02-D-P06-HeMustIncrease.dc.html",
+  "JHN-C02-D-P07-HeMustIncrease.dc.html",
+  "JHN-C02-D-P08-JacobSWell.dc.html",
+  "JHN-C02-D-P09-TheWomanOfSamaria.dc.html",
+  "JHN-C02-D-P10-LivingWater.dc.html",
+  "JHN-C02-D-P11-LivingWater.dc.html",
+  "JHN-C02-D-P12-InSpiritAndTruth.dc.html",
+  "JHN-C02-D-P13-MyMeat.dc.html",
+  "JHN-C02-D-P14-WhiteUntoHarvest.dc.html",
+  "JHN-C02-D-P15-WhiteUntoHarvest.dc.html",
+  "JHN-C02-D-P16-ThySonLiveth.dc.html",
+  "JHN-C02-D-P17-ThySonLiveth.dc.html",
+  "JHN-C02-D-P18-ThySonLiveth.dc.html",
+  "JHN-C03-00-Title.dc.html",
+  "JHN-C03-D-P01-ThePoolOfBethesda.dc.html",
+  "JHN-C03-D-P02-ThePoolOfBethesda.dc.html",
+  "JHN-C03-D-P03-ItIsTheSabbath.dc.html",
+  "JHN-C03-D-P04-ItIsTheSabbath.dc.html",
+  "JHN-C03-D-P05-TheSonGivethLife.dc.html",
+  "JHN-C03-D-P06-TheSonGivethLife.dc.html",
+  "JHN-C03-D-P07-TheyBearWitnessOfM.dc.html",
+  "JHN-C03-D-P08-TheyBearWitnessOfM.dc.html",
+  "JHN-C03-D-P09-TheyBearWitnessOfM.dc.html",
+  "JHN-C03-D-P10-FiveBarleyLoaves.dc.html",
+  "JHN-C03-D-P11-FiveBarleyLoaves.dc.html",
+  "JHN-C03-D-P12-FiveBarleyLoaves.dc.html",
+  "JHN-C03-D-P13-ItIsI.dc.html",
+  "JHN-C03-D-P14-ItIsI.dc.html",
+  "JHN-C03-D-P15-TheBreadOutOfHeave.dc.html",
+  "JHN-C03-D-P16-TheBreadOutOfHeave.dc.html",
+  "JHN-C03-D-P17-TheBreadOutOfHeave.dc.html",
+  "JHN-C03-D-P18-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P19-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P20-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P21-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P22-ToWhomShallWeGo.dc.html",
+  "JHN-C03-D-P23-ToWhomShallWeGo.dc.html",
+  "JHN-C03-D-P24-ToWhomShallWeGo.dc.html",
+  "JHN-C04-00-Title.dc.html",
+  "JHN-C04-D-P01-TheFeastOfTabernac.dc.html",
+  "JHN-C04-D-P02-TheFeastOfTabernac.dc.html",
+  "JHN-C04-D-P03-MyTeachingIsNotMin.dc.html",
+  "JHN-C04-D-P04-MyTeachingIsNotMin.dc.html",
+  "JHN-C04-D-P05-OfficersToTakeHim.dc.html",
+  "JHN-C04-D-P06-RiversOfLivingWate.dc.html",
+  "JHN-C04-D-P07-NeverManSoSpake.dc.html",
+  "JHN-C04-D-P08-NeverManSoSpake.dc.html",
+  "JHN-C04-D-P09-NeitherDoICondemnT.dc.html",
+  "JHN-C04-D-P10-NeitherDoICondemnT.dc.html",
+  "JHN-C04-D-P11-TheLightOfTheWorld.dc.html",
+  "JHN-C04-D-P12-TheLightOfTheWorld.dc.html",
+  "JHN-C04-D-P13-IAmFromAbove.dc.html",
+  "JHN-C04-D-P14-IAmFromAbove.dc.html",
+  "JHN-C04-D-P15-TheTruthShallMakeY.dc.html",
+  "JHN-C04-D-P16-TheTruthShallMakeY.dc.html",
+  "JHN-C04-D-P17-TheTruthShallMakeY.dc.html",
+  "JHN-C04-D-P18-BeforeAbrahamWas.dc.html",
+  "JHN-C04-D-P19-BeforeAbrahamWas.dc.html",
+  "JHN-C04-D-P20-BeforeAbrahamWas.dc.html",
+  "JHN-C05-00-Title.dc.html",
+  "JHN-C05-D-P01-AManBlindFromHisBi.dc.html",
+  "JHN-C05-D-P02-AManBlindFromHisBi.dc.html",
+  "JHN-C05-D-P03-IAmHe.dc.html",
+  "JHN-C05-D-P04-BeforeThePharisees.dc.html",
+  "JHN-C05-D-P05-BeforeThePharisees.dc.html",
+  "JHN-C05-D-P06-BeforeThePharisees.dc.html",
+  "JHN-C05-D-P07-NowISee.dc.html",
+  "JHN-C05-D-P08-NowISee.dc.html",
+  "JHN-C05-D-P09-LordIBelieve.dc.html",
+  "JHN-C05-D-P10-LordIBelieve.dc.html",
+  "JHN-C05-D-P11-TheDoorOfTheSheep.dc.html",
+  "JHN-C05-D-P12-TheDoorOfTheSheep.dc.html",
+  "JHN-C05-D-P13-TheDoorOfTheSheep.dc.html",
+  "JHN-C05-D-P14-IAmTheGoodShepherd.dc.html",
+  "JHN-C05-D-P15-IAmTheGoodShepherd.dc.html",
+  "JHN-C05-D-P16-IAndTheFatherAreOn.dc.html",
+  "JHN-C05-D-P17-IAndTheFatherAreOn.dc.html",
+  "JHN-C05-D-P18-IAndTheFatherAreOn.dc.html",
+  "JHN-C05-D-P19-BeyondTheJordan.dc.html",
+  "JHN-C06-00-Title.dc.html",
+  "JHN-C06-D-P01-LazarusOfBethany.dc.html",
+  "JHN-C06-D-P02-LazarusOfBethany.dc.html",
+  "JHN-C06-D-P03-LazarusOfBethany.dc.html",
+  "JHN-C06-D-P04-IAmTheResurrection.dc.html",
+  "JHN-C06-D-P05-IAmTheResurrection.dc.html",
+  "JHN-C06-D-P06-IAmTheResurrection.dc.html",
+  "JHN-C06-D-P07-JesusWept.dc.html",
+  "JHN-C06-D-P08-JesusWept.dc.html",
+  "JHN-C06-D-P09-LazarusComeForth.dc.html",
+  "JHN-C06-D-P10-ItIsExpedient.dc.html",
+  "JHN-C06-D-P11-ItIsExpedient.dc.html",
+  "JHN-C06-D-P12-TheOdorOfTheOintme.dc.html",
+  "JHN-C06-D-P13-TheOdorOfTheOintme.dc.html",
+  "JHN-C06-D-P14-Hosanna.dc.html",
+  "JHN-C06-D-P15-WeWouldSeeJesus.dc.html",
+  "JHN-C06-D-P16-TheVoiceOutOfHeave.dc.html",
+  "JHN-C06-D-P17-TheVoiceOutOfHeave.dc.html",
+  "JHN-C06-D-P18-WalkWhileYeHaveThe.dc.html",
+  "JHN-C06-D-P19-WalkWhileYeHaveThe.dc.html",
+  "JHN-C06-D-P20-IAmComeALight.dc.html",
+  "JHN-C07-00-Title.dc.html",
+  "JHN-C07-D-P01-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P02-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P03-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P04-TheWashingOfFeet.dc.html",
+  "JHN-C07-D-P05-OneOfYouShallBetra.dc.html",
+  "JHN-C07-D-P06-OneOfYouShallBetra.dc.html",
+  "JHN-C07-D-P07-ANewCommandment.dc.html",
+  "JHN-C07-D-P08-ANewCommandment.dc.html",
+  "JHN-C07-D-P09-ManyMansions.dc.html",
+  "JHN-C07-D-P10-IAmTheWay.dc.html",
+  "JHN-C07-D-P11-IAmTheWay.dc.html",
+  "JHN-C07-D-P12-AnotherComforter.dc.html",
+  "JHN-C07-D-P13-PeaceILeaveWithYou.dc.html",
+  "JHN-C07-D-P14-PeaceILeaveWithYou.dc.html",
+  "JHN-C08-00-Title.dc.html",
+  "JHN-C08-D-P01-IAmTheTrueVine.dc.html",
+  "JHN-C08-D-P02-IAmTheTrueVine.dc.html",
+  "JHN-C08-D-P03-AbideInMyLove.dc.html",
+  "JHN-C08-D-P04-IfTheWorldHatethYo.dc.html",
+  "JHN-C08-D-P05-IfTheWorldHatethYo.dc.html",
+  "JHN-C08-D-P06-ItIsExpedientForYo.dc.html",
+  "JHN-C08-D-P07-ItIsExpedientForYo.dc.html",
+  "JHN-C08-D-P08-ALittleWhile.dc.html",
+  "JHN-C08-D-P09-ALittleWhile.dc.html",
+  "JHN-C08-D-P10-ALittleWhile.dc.html",
+  "JHN-C08-D-P11-IHaveOvercomeTheWo.dc.html",
+  "JHN-C08-D-P12-FatherTheHourIsCom.dc.html",
+  "JHN-C08-D-P13-ThatTheyMayBeOne.dc.html",
+  "JHN-C08-D-P14-ThatTheyMayBeOne.dc.html",
+  "JHN-C08-D-P15-ThatTheyMayBeOne.dc.html",
+  "JHN-C08-D-P16-ThatTheyMayBeOne.dc.html",
+  "JHN-C09-00-Title.dc.html",
+  "JHN-C09-D-P01-OverTheBrookKidron.dc.html",
+  "JHN-C09-D-P02-IAmHe.dc.html",
+  "JHN-C09-D-P03-IAmHe.dc.html",
+  "JHN-C09-D-P04-BeforeAnnas.dc.html",
+  "JHN-C09-D-P05-BeforeAnnas.dc.html",
+  "JHN-C09-D-P06-BeforeAnnas.dc.html",
+  "JHN-C09-D-P07-TheCockCrew.dc.html",
+  "JHN-C09-D-P08-ThePrtorium.dc.html",
+  "JHN-C09-D-P09-ThePrtorium.dc.html",
+  "JHN-C09-D-P10-MyKingdomIsNotOfTh.dc.html",
+  "JHN-C09-D-P11-MyKingdomIsNotOfTh.dc.html",
+  "JHN-C09-D-P12-BeholdTheMan.dc.html",
+  "JHN-C09-D-P13-BeholdTheMan.dc.html",
+  "JHN-C09-D-P14-BeholdTheMan.dc.html",
+  "JHN-C09-D-P15-Gabbatha.dc.html",
+  "JHN-C09-D-P16-ThePlaceOfASkull.dc.html",
+  "JHN-C09-D-P17-ThePlaceOfASkull.dc.html",
+  "JHN-C09-D-P18-BeholdThyMother.dc.html",
+  "JHN-C09-D-P19-ItIsFinished.dc.html",
+  "JHN-C09-D-P20-ItIsFinished.dc.html",
+  "JHN-C09-D-P21-ANewTombInTheGarde.dc.html",
+  "JHN-C09-D-P22-ANewTombInTheGarde.dc.html",
+  "JHN-C10-00-Title.dc.html",
+  "JHN-C10-D-P01-TheStoneTakenAway.dc.html",
+  "JHN-C10-D-P02-TheNapkinByItself.dc.html",
+  "JHN-C10-D-P03-WomanWhyWeepestTho.dc.html",
+  "JHN-C10-D-P04-WomanWhyWeepestTho.dc.html",
+  "JHN-C10-D-P05-Rabboni.dc.html",
+  "JHN-C10-D-P06-PeaceBeUntoYou.dc.html",
+  "JHN-C10-D-P07-PeaceBeUntoYou.dc.html",
+  "JHN-C10-D-P08-MyLordAndMyGod.dc.html",
+  "JHN-C10-D-P09-MyLordAndMyGod.dc.html",
+  "JHN-C10-D-P10-ByTheSeaOfTiberias.dc.html",
+  "JHN-C10-D-P11-ByTheSeaOfTiberias.dc.html",
+  "JHN-C10-D-P12-ComeAndBreakYourFa.dc.html",
+  "JHN-C10-D-P13-LovestThouMe.dc.html",
+  "JHN-C10-D-P14-LovestThouMe.dc.html",
+  "JHN-C10-D-P15-LovestThouMe.dc.html",
+  "JHN-C10-D-P16-FollowThouMe.dc.html",
+  "JHN-C10-D-P17-FollowThouMe.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "John Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Word Became Flesh (John 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Ye Must Be Born Anew (John 3–4)",
+   "x": 0,
+   "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Bread of Life (John 5–6)",
+   "x": 0,
+   "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Before Abraham Was (John 7–8)",
+   "x": 0,
+   "y": 18800
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Good Shepherd (John 9–10)",
+   "x": 0,
+   "y": 25300
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Lazarus, Come Forth (John 11–12)",
+   "x": 0,
+   "y": 30600
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The Washing of Feet (John 13–14)",
+   "x": 0,
+   "y": 37100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · That They May Be One (John 15–17)",
+   "x": 0,
+   "y": 41200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · It Is Finished (John 18–19)",
+   "x": 0,
+   "y": 46500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Lovest Thou Me? (John 20–21)",
+   "x": 0,
+   "y": 53000
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

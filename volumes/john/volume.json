@@ -1,0 +1,111 @@
+{
+ "id": "john",
+ "order": 43,
+ "name": "John",
+ "kanji": "ヨハネによる福音書",
+ "thumb": "vol-john-",
+ "lede": "The Gospel according to John, in full: in the beginning was the Word; the Lamb of God; water made wine; Nicodemus by night and the woman at the well; the bread of life, the light of the world, the good shepherd; Lazarus come forth; the washing of feet, the upper room and the prayer; the cross and the empty tomb; and by the sea at dawn, lovest thou me? — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Word Became Flesh",
+   "range": "John 1–2",
+   "blurb": "In the beginning was the Word, and the light shineth in the darkness; a man sent from God whose name was John; the Word became flesh, and dwelt among us; the voice of one crying in the wilderness; behold, the Lamb of God; the Spirit descending as a dove; come and see; we have found the Messiah; Nathanael under the fig tree; the water become wine at Cana; and the scourge of cords in the temple — destroy this temple, and in three days I will raise it up.",
+   "prefixes": [
+    "Main.dc.html",
+    "JHN-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Ye Must Be Born Anew",
+   "range": "John 3–4",
+   "blurb": "Nicodemus by night — except one be born anew, he cannot see the kingdom of God; the wind bloweth where it will; as Moses lifted up the serpent; God so loved the world; he must increase, but I must decrease; then Jacob's well at the sixth hour and the woman of Samaria — give me to drink, living water, in spirit and truth, I that speak unto thee am he; the fields white already unto harvest; and the nobleman's son at Capernaum — go thy way; thy son liveth.",
+   "prefixes": [
+    "JHN-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Bread of Life",
+   "range": "John 5–6",
+   "blurb": "The pool of Bethesda with its five porches and the man of thirty and eight years — arise, take up thy bed, and walk; my Father worketh even until now, and I work; the dead shall hear the voice of the Son of God; John the lamp that burneth and shineth; then five barley loaves and two fishes on the much grass, twelve baskets over, the boat in the dark — it is I; be not afraid; I am the bread of life; and Lord, to whom shall we go? thou hast the words of eternal life.",
+   "prefixes": [
+    "JHN-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "Before Abraham Was",
+   "range": "John 7–8",
+   "blurb": "The feast of tabernacles — my time is not yet come; my teaching is not mine; on the last great day, if any man thirst, let him come unto me and drink, and rivers of living water; never man so spake; the woman taken in adultery — he that is without sin among you, let him first cast a stone, neither do I condemn thee; I am the light of the world; the truth shall make you free; and before Abraham was born, I am.",
+   "prefixes": [
+    "JHN-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "The Good Shepherd",
+   "range": "John 9–10",
+   "blurb": "The man blind from his birth — go, wash in the pool of Siloam, and he came seeing; the neighbours, the Pharisees, his father and mother afraid; one thing I know, that, whereas I was blind, now I see; Lord, I believe; then the fold of the sheep — I am the door; I am the good shepherd: the good shepherd layeth down his life for the sheep; other sheep I have; and in Solomon's porch in winter, I and the Father are one.",
+   "prefixes": [
+    "JHN-C05-"
+   ]
+  },
+  {
+   "dir": "chapter-06",
+   "num": "6",
+   "name": "Lazarus, Come Forth",
+   "range": "John 11–12",
+   "blurb": "Lazarus of Bethany is sick; Thomas — let us also go, that we may die with him; Martha on the road — I am the resurrection, and the life; Jesus wept; take ye away the stone; Lazarus, come forth, bound with grave-clothes — loose him, and let him go; Caiaphas' counsel; Mary's pound of nard and the house filled with the odor; Hosanna and the branches of the palm trees; sir, we would see Jesus; except a grain of wheat fall into the earth and die; and a voice out of heaven: I have both glorified it, and will glorify it again.",
+   "prefixes": [
+    "JHN-C06-"
+   ]
+  },
+  {
+   "dir": "chapter-07",
+   "num": "7",
+   "name": "The Washing of Feet",
+   "range": "John 13–14",
+   "blurb": "Having loved his own, he loved them unto the end: the towel and the basin in the upper room — Lord, dost thou wash my feet?; I have given you an example; one of you shall betray me, the sop, and it was night; a new commandment, that ye love one another; let not your heart be troubled: in my Father's house are many mansions; I am the way, and the truth, and the life; another Comforter; peace I leave with you; arise, let us go hence.",
+   "prefixes": [
+    "JHN-C07-"
+   ]
+  },
+  {
+   "dir": "chapter-08",
+   "num": "8",
+   "name": "That They May Be One",
+   "range": "John 15–17",
+   "blurb": "I am the true vine, ye are the branches; abide in me; greater love hath no man than this; ye are my friends; if the world hateth you; it is expedient for you that I go away; a little while, and ye shall see me; your sorrow shall be turned into joy; be of good cheer, I have overcome the world; and the prayer with his eyes lifted up to heaven — Father, the hour is come; that they may all be one; that the love wherewith thou lovedst me may be in them.",
+   "prefixes": [
+    "JHN-C08-"
+   ]
+  },
+  {
+   "dir": "chapter-09",
+   "num": "9",
+   "name": "It Is Finished",
+   "range": "John 18–19",
+   "blurb": "Over the brook Kidron into the garden, the lanterns and torches — whom seek ye? I am he; put up the sword; Annas and the fire of coals, Peter's denials and the cock; the Prætorium — my kingdom is not of this world; what is truth?; not this man, but Barabbas; the purple and the crown of thorns — behold, the man!; Gabbatha — we have no king but Cæsar; the place of a skull, the title in Hebrew, Latin and Greek; woman, behold, thy son; I thirst; it is finished; and the new tomb in the garden.",
+   "prefixes": [
+    "JHN-C09-"
+   ]
+  },
+  {
+   "dir": "chapter-10",
+   "num": "10",
+   "name": "Lovest Thou Me?",
+   "range": "John 20–21",
+   "blurb": "While it was yet dark, the stone taken away; the linen cloths lying and the napkin rolled up in a place by itself; two angels in white; woman, why weepest thou? — Mary. Rabboni; peace be unto you behind the shut doors; Thomas — my Lord and my God; blessed are they that have not seen, and yet have believed; then the sea of Tiberias at daybreak, the net on the right side, a hundred and fifty and three, the fire of coals; Simon, son of John, lovest thou me? — feed my sheep; follow thou me.",
+   "prefixes": [
+    "JHN-C10-"
+   ]
+  }
+ ]
+}
