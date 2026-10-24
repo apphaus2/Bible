@@ -88,3 +88,6 @@ ISSUE = F("eve", skin="#B98A6E", shadow="#4A3A4A", hair="#2A1A10", scarf="#6A5A7
 BLIND = F("adam", skin="#A87A5E", shadow="#4A3A3A", hair="#4A3A2E", hl="#7A6A5E", beard=True, beard_color="#4A3A2E", scarf="#7A7A80", brow="sorrow", light="#9AA8C8")
 JOHN_DISCIPLE = F("adam", skin="#9A6A4A", shadow="#4A2A1A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#7A5A3A", cord=True, light="#FFC14D")
 CROWD_MAN = F("adam", skin="#B98A6E", shadow="#5A3A2A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#6A5A3A", cord=True, light="#FFE680")
+CANAANITE = F("eve", skin="#B9785A", shadow="#4A2A2A", hair="#1A1210", scarf="#E8903A", brow="sorrow", light="#FFC14D")
+FATHER_BOY = F("adam", skin="#B98A6E", shadow="#3A2A3A", hair="#3A2A1E", hl="#6A5A4E", beard=True, beard_color="#3A2A1E", scarf="#6A5A3A", cord=True, brow="sorrow", tear=True, light="#9AA8C8")
+COLLECTOR = F("adam", skin="#C98E66", shadow="#4A3A4A", hair="#1A1210", hl="#4A3A2E", stubble="#1A1210", scarf="#3A4A6A", cord=True, light="#FFC14D")

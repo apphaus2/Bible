@@ -716,6 +716,132 @@
    "w": 760,
    "h": 1080,
    "title": "95 · Five Loaves and Two Fishes"
+  },
+  "MAT-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Thou Art the Christ"
+  },
+  "MAT-C06-D-P01-TheTraditionOfTheE.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Tradition of the Elders"
+  },
+  "MAT-C06-D-P02-TheTraditionOfTheE.dc.html": {
+   "x": 1680,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Tradition of the Elders"
+  },
+  "MAT-C06-D-P03-OWomanGreatIsThyFa.dc.html": {
+   "x": 2520,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · O Woman, Great Is Thy Faith"
+  },
+  "MAT-C06-D-P04-OWomanGreatIsThyFa.dc.html": {
+   "x": 3360,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · O Woman, Great Is Thy Faith"
+  },
+  "MAT-C06-D-P05-SevenLoaves.dc.html": {
+   "x": 0,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Seven Loaves"
+  },
+  "MAT-C06-D-P06-SevenLoaves.dc.html": {
+   "x": 840,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Seven Loaves"
+  },
+  "MAT-C06-D-P07-TheSignsOfTheTimes.dc.html": {
+   "x": 1680,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · The Signs of the Times"
+  },
+  "MAT-C06-D-P08-TheSignsOfTheTimes.dc.html": {
+   "x": 2520,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · The Signs of the Times"
+  },
+  "MAT-C06-D-P09-ThouArtTheChrist.dc.html": {
+   "x": 3360,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · Thou Art the Christ"
+  },
+  "MAT-C06-D-P10-GetTheeBehindMe.dc.html": {
+   "x": 0,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Get Thee behind Me"
+  },
+  "MAT-C06-D-P11-GetTheeBehindMe.dc.html": {
+   "x": 840,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Get Thee behind Me"
+  },
+  "MAT-C06-D-P12-HeWasTransfigured.dc.html": {
+   "x": 1680,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · He Was Transfigured"
+  },
+  "MAT-C06-D-P13-HeWasTransfigured.dc.html": {
+   "x": 2520,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · He Was Transfigured"
+  },
+  "MAT-C06-D-P14-OFaithlessAndPerve.dc.html": {
+   "x": 3360,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · O Faithless and Perverse Generation"
+  },
+  "MAT-C06-D-P15-OFaithlessAndPerve.dc.html": {
+   "x": 0,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · O Faithless and Perverse Generation"
+  },
+  "MAT-C06-D-P16-OFaithlessAndPerve.dc.html": {
+   "x": 840,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · O Faithless and Perverse Generation"
+  },
+  "MAT-C06-D-P17-OFaithlessAndPerve.dc.html": {
+   "x": 1680,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · O Faithless and Perverse Generation"
   }
  },
  "order": [
@@ -819,7 +945,25 @@
   "MAT-C05-D-P16-FiveLoavesAndTwoFi.dc.html",
   "MAT-C05-D-P17-FiveLoavesAndTwoFi.dc.html",
   "MAT-C05-D-P18-FiveLoavesAndTwoFi.dc.html",
-  "MAT-C05-D-P19-FiveLoavesAndTwoFi.dc.html"
+  "MAT-C05-D-P19-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C06-00-Title.dc.html",
+  "MAT-C06-D-P01-TheTraditionOfTheE.dc.html",
+  "MAT-C06-D-P02-TheTraditionOfTheE.dc.html",
+  "MAT-C06-D-P03-OWomanGreatIsThyFa.dc.html",
+  "MAT-C06-D-P04-OWomanGreatIsThyFa.dc.html",
+  "MAT-C06-D-P05-SevenLoaves.dc.html",
+  "MAT-C06-D-P06-SevenLoaves.dc.html",
+  "MAT-C06-D-P07-TheSignsOfTheTimes.dc.html",
+  "MAT-C06-D-P08-TheSignsOfTheTimes.dc.html",
+  "MAT-C06-D-P09-ThouArtTheChrist.dc.html",
+  "MAT-C06-D-P10-GetTheeBehindMe.dc.html",
+  "MAT-C06-D-P11-GetTheeBehindMe.dc.html",
+  "MAT-C06-D-P12-HeWasTransfigured.dc.html",
+  "MAT-C06-D-P13-HeWasTransfigured.dc.html",
+  "MAT-C06-D-P14-OFaithlessAndPerve.dc.html",
+  "MAT-C06-D-P15-OFaithlessAndPerve.dc.html",
+  "MAT-C06-D-P16-OFaithlessAndPerve.dc.html",
+  "MAT-C06-D-P17-OFaithlessAndPerve.dc.html"
  ],
  "notes": {
   "Main": {
@@ -863,6 +1007,13 @@
    "text": "Chapter 5 · The Kingdom of Heaven Is Like (Matthew 13–14)",
    "x": 0,
    "y": 24100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Thou Art the Christ (Matthew 15–17)",
+   "x": 0,
+   "y": 29400
   }
  },
  "designSystems": [],

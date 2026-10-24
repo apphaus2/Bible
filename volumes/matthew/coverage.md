@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 489 verses — 489 full, 0 partial, 0 omitted.
+**So far:** 583 verses — 582 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · The Son of David (Matthew 1–4)
 
@@ -33,3 +33,9 @@ Every verse is on the page in full.
 94 verses: 94 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
+
+## Chapter 6 · Thou Art the Christ (Matthew 15–17)
+
+94 verses: 93 full, 0 partial, 1 omitted.
+
+- 17:21 — omitted (0%)
