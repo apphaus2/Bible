@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 491 verses — 490 full, 0 partial, 1 omitted.
+**So far:** 560 verses — 558 full, 0 partial, 2 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -45,3 +45,9 @@ Every verse is on the page in full.
 77 verses: 77 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
+
+## Chapter 8 · The Council at Jerusalem (Acts 14–15)
+
+69 verses: 68 full, 0 partial, 1 omitted.
+
+- 15:34 — omitted (0%)

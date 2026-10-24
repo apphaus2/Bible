@@ -828,6 +828,104 @@
    "w": 760,
    "h": 1080,
    "title": "109 · We Turn to the Gentiles"
+  },
+  "ACT-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · The Council at Jerusalem"
+  },
+  "ACT-C08-D-P01-Iconium.dc.html": {
+   "x": 840,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · Iconium"
+  },
+  "ACT-C08-D-P02-Lystra.dc.html": {
+   "x": 1680,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · Lystra"
+  },
+  "ACT-C08-D-P03-Lystra.dc.html": {
+   "x": 2520,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · Lystra"
+  },
+  "ACT-C08-D-P04-Lystra.dc.html": {
+   "x": 3360,
+   "y": 36700,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · Lystra"
+  },
+  "ACT-C08-D-P05-Lystra.dc.html": {
+   "x": 0,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · Lystra"
+  },
+  "ACT-C08-D-P06-Lystra.dc.html": {
+   "x": 840,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · Lystra"
+  },
+  "ACT-C08-D-P07-TheApostlesAndTheE.dc.html": {
+   "x": 1680,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P08-TheApostlesAndTheE.dc.html": {
+   "x": 2520,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P09-TheApostlesAndTheE.dc.html": {
+   "x": 3360,
+   "y": 37900,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P10-TheApostlesAndTheE.dc.html": {
+   "x": 0,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · The Apostles and the Elders"
+  },
+  "ACT-C08-D-P11-TheLetter.dc.html": {
+   "x": 840,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · The Letter"
+  },
+  "ACT-C08-D-P12-TheLetter.dc.html": {
+   "x": 1680,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · The Letter"
+  },
+  "ACT-C08-D-P13-PaulAndSilas.dc.html": {
+   "x": 2520,
+   "y": 39100,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · Paul and Silas"
   }
  },
  "order": [
@@ -947,7 +1045,21 @@
   "ACT-C07-D-P15-AntiochOfPisidia.dc.html",
   "ACT-C07-D-P16-WeTurnToTheGentile.dc.html",
   "ACT-C07-D-P17-WeTurnToTheGentile.dc.html",
-  "ACT-C07-D-P18-WeTurnToTheGentile.dc.html"
+  "ACT-C07-D-P18-WeTurnToTheGentile.dc.html",
+  "ACT-C08-00-Title.dc.html",
+  "ACT-C08-D-P01-Iconium.dc.html",
+  "ACT-C08-D-P02-Lystra.dc.html",
+  "ACT-C08-D-P03-Lystra.dc.html",
+  "ACT-C08-D-P04-Lystra.dc.html",
+  "ACT-C08-D-P05-Lystra.dc.html",
+  "ACT-C08-D-P06-Lystra.dc.html",
+  "ACT-C08-D-P07-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P08-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P09-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P10-TheApostlesAndTheE.dc.html",
+  "ACT-C08-D-P11-TheLetter.dc.html",
+  "ACT-C08-D-P12-TheLetter.dc.html",
+  "ACT-C08-D-P13-PaulAndSilas.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1005,6 +1117,13 @@
    "text": "Chapter 7 · The Word of God Grew (Acts 12–13)",
    "x": 0,
    "y": 31100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · The Council at Jerusalem (Acts 14–15)",
+   "x": 0,
+   "y": 36400
   }
  },
  "designSystems": [],
