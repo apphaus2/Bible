@@ -14,8 +14,6 @@ from act import G, art10 as A, ch09 as _prev
 from act.common import (K, Pages, D, F, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, DUSK, PAUL, PAUL_STERN, ATHENIAN, AQUILA, PRISCILLA, GALLIO,
                         APOLLOS, WHITE_LIGHT, ROBES, face_of)
 
-ATHENIAN_MOCK = face_of("adam", skin="#E3B08A", shadow="#7A5A4A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", laugh=True, light="#FFC14D")
-
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
 
@@ -39,7 +37,7 @@ SEGS = [D([cp("17:16")], lambda w, h: A.athens("at1", w, h, 1716), "#8FD0E2", he
         F([sy("17:24"), sy("17:25"), sy("17:26"), sy("17:27")], PAUL),
         D([sy("17:28", to="have said,"), sg("17:28", frm="For we are also"), sy("17:29")], lambda w, h: A.athens("at2", w, h, 1728, paul_=False), "#8FD0E2"),
         F([sy("17:30"), sy("17:31")], PAUL_STERN, bg=RED),
-        F([cp("17:32", to="others said,"), sy("17:32", frm="We will hear thee"), cp("17:33")], ATHENIAN_MOCK, h=240),
+        F([cp("17:32", to="others said,"), sy("17:32", frm="We will hear thee"), cp("17:33")], ATHENIAN, h=240),
         D([cp("17:34")], lambda w, h: A.areopagus("ar3", w, h, 1734, speaking=False), "#8FD0E2"),
         # Acts 18
         D([cp("18:1"), cp("18:2"), cp("18:3")], lambda w, h: A.tentmakers("tm1", w, h, 1801), "#D8C098", head="Corinth", sky=(18, "left"), art_h=240),

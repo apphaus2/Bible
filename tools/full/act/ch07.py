@@ -35,6 +35,11 @@ def title_page(n):
 
 
 def scene(p, seed, place, people, **k): return lambda w, h: A.scene(p, w, h, seed, place, people, **k)
+def household(seed):
+    """The company gathered praying by lamplight in Mary's house, turned to Rhoda come in from the gate."""
+    return scene(f"hh{seed}", seed, "house", [(0.16, "woman", {"c": "#C8A050", "v": "#F3EFE6", "flip": True}), (0.4, "seated", {"c": "#6A4A3A", "flip": True}),
+                                               (0.52, "man", {"c": "#3A4A6A", "hr": "#2A1A10", "bd": "#2A1A10", "up": A.UP_BLESS}), (0.66, "seated", {"c": "#5A3A4A", "v": "#3A3A4A", "flip": True}),
+                                               (0.8, "woman", {"c": "#2A4A7A", "v": "#3A6AA8"}), (0.92, "seated", {"c": "#6A5A3A", "v": "#E8E2D6", "bd": "#6A645E", "flip": True})], tone="night")
 ot = A.ot
 
 SEGS = [F([cp("12:1")], AGRIPPA1_PROUD, bg=RED, head="Herod the King", h=220),
@@ -48,8 +53,9 @@ SEGS = [F([cp("12:1")], AGRIPPA1_PROUD, bg=RED, head="Herod the King", h=220),
         D([cp("12:9"), cp("12:10")], lambda w, h: A.iron_gate("ig1", w, h, 1209), "#05051A", art_h=240),
         F([cp("12:11", to="he said,"), sy("12:11", frm="Now I know")], PETER_BOLD, bg=NIGHT),
         D([cp("12:12"), cp("12:13"), cp("12:14")], lambda w, h: A.rhoda_gate("rg1", w, h, 1212), "#05051A", head="Rhoda", art_h=240),
-        F([cp("12:15", to="And they said unto her,"), sy("12:15", frm="Thou art mad.", to="Thou art mad."), cp("12:15", frm="But she confidently", to="even so."),
-           cp("12:15", frm="And they said,", to="And they said,", after="even so."), sy("12:15", frm="It is his angel.")], RHODA, bg=NIGHT),
+        D([cp("12:15", to="And they said unto her,"), sy("12:15", frm="Thou art mad.", to="Thou art mad.")], household(1215), "#4A3A3A", h=330),
+        F([cp("12:15", frm="But she confidently", to="even so.")], RHODA, bg=NIGHT, h=200),
+        D([cp("12:15", frm="And they said,", to="And they said,", after="even so."), sy("12:15", frm="It is his angel.")], household(1216), "#4A3A3A", h=330),
         D([cp("12:16"), cp("12:17", to="And he said,"), sy("12:17", frm="Tell these things", to="and to the brethren."), cp("12:17", frm="And he departed,")],
           lambda w, h: A.rhoda_gate("rg2", w, h, 1216, opened=True), "#05051A"),
         D([cp("12:18"), cp("12:19")], lambda w, h: A.prison_found("pf1", w, h, 1218), "#3A3238"),

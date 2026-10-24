@@ -18,7 +18,26 @@ from est.common import _crown
 from act import G
 
 CODE = "ACTS"
-K = MarkKit(G, CODE, "Acts")
+import re as _re
+_COL = '<div style="position: absolute; left: 12px; top: 34px; bottom: 12px;'     # the column of words over a drawing (speech.orate, top=True)
+_NOTCH = _re.compile(r'<div style="position: absolute; (?:left|right): -8px; top: 16px; width: 13px; height: 13px;[^"]*"></div>')
+
+def untail(html):
+    """Speech boxes over a drawing lose their notch (the speaker is not at the panel's edge there); speech beside a face keeps
+    its notch toward the face."""
+    out, i = [], 0
+    while True:
+        a = html.find(_COL, i)
+        if a < 0: out.append(html[i:]); break
+        b = html.find('</div>\n', a)
+        out.append(html[i:a]); out.append(_NOTCH.sub("", html[a:b])); i = b
+    return "".join(out)
+
+class ActKit(MarkKit):
+    def pack(self, *a, **k):
+        return [(n, t, (lambda fn=fn: untail(fn()))) for n, t, fn in super().pack(*a, **k)]
+
+K = ActKit(G, CODE, "Acts")
 cp, gd, sg, sy, cps, gds, sgs, j = K.cp, K.gd, K.sg, K.sy, K.cps, K.gds, K.sgs, K.j
 v, sp = G.v, G.span
 CREDIT = "Acts · Volume Forty-Four"
@@ -28,18 +47,35 @@ def title(num, name, rng, svg, bg, quote):
     """A chapter opener (第一話, 第二話, …)."""
     return chapter_title(num, f"第{mk.kanji_num(num)}話", name, rng, shade(svg), bg, quote, CREDIT)
 
+STAMP_BAND = 66
+
+def svg_stamp(n, x, y):
+    """Chapter n's stamp drawn inside a drawing, its top-left corner at (x, y): the red-ruled paper label of mk.stamp."""
+    kj = f"第{mk.kanji_num(n)}章"
+    wd = max(92, 22 * len(kj) + 14)
+    return (f'<g transform="translate({x:.1f} {y:.1f}) rotate(4 {wd / 2:.1f} 20)">'
+            f'<rect x="0" y="0" width="{wd}" height="42" fill="#F3EFE6" stroke="#D7261E" stroke-width="2.5"></rect>'
+            f'<text x="{wd / 2:.1f}" y="23" fill="#D7261E" font-family="Noto Sans JP, sans-serif" font-weight="900" font-size="18" text-anchor="middle">{kj}</text>'
+            f'<text x="{wd / 2:.1f}" y="35" fill="#D7261E" font-family="IBM Plex Mono, monospace" font-weight="600" font-size="8" letter-spacing="1.3" text-anchor="middle">CHAPTER {n}</text></g>')
+
+def with_stamp(fn, n, side="right"):
+    """A drawing fn(w, h) set STAMP_BAND px lower, and chapter n's stamp in the band of plain panel colour left above it — so
+    the stamp sits between the words and the picture, clear of every figure, wherever the packer sizes the panel."""
+    def art(w, h):
+        x = 16 if side == "left" else w - 124
+        return f'<g transform="translate(0 {STAMP_BAND})">' + fn(w, h - STAMP_BAND) + '</g>' + svg_stamp(n, x, 10)
+    return art
+
 def drawn(lines, art, bg, art_h=240, size=17, sky=None, **kw):
     """K.drawn with room for a real picture (as Mark's): the panel as tall as its words need at `size` px plus art_h for the
-    drawing (pass h= to fix it). sky=n (or (n, "left")) sets chapter n's stamp at the top right (left) of the drawing, just
-    under the words (in the sky or on the wall, clear of the figures standing below)."""
+    drawing (pass h= to fix it). sky=n (or (n, "left")) sets chapter n's stamp in a band of the panel's own colour between
+    the words and the drawing, at the right (left), clear of the figures (the drawing moves down to make room)."""
     if "h" not in kw:
         hw = speech._height(_flat(lines), 678, size)
-        kw["h"] = int(max(hw + 44 + art_h, (hw + 40) / 0.6))
+        kw["h"] = int(max(hw + 44 + art_h, (hw + 40) / 0.6)) + (STAMP_BAND if sky else 0)
     if sky:
         n, side = sky if isinstance(sky, tuple) else (sky, "right")
-        ls = _flat(lines); h = kw["h"]
-        top = min(h * 0.62, speech._height(ls, 678, speech.fit(ls, 678, h * 0.62)) + 44)
-        kw["extra"] = kw.get("extra", "") + mk.stamp(n, f"{side}: 18px; top: {top + 10:.0f}px")
+        art = with_stamp(art, n, side)
     return K.drawn(lines, art, bg, **kw)
 
 def D(lines, fn, bg, **k):

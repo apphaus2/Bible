@@ -49,7 +49,7 @@ SEGS = [D([cp("22:30")], lambda w, h: A.council("cn1", w, h, 2230, accused=("pau
         D([cp("23:33"), cp("23:34"), sy("23:35", to="are come:"), cp("23:35", frm="and he commanded")], A.to_caesarea, "#0B1A2E", art_h=240),
         # Acts 24
         D([cp("24:1"), cp("24:2", to="saying,"), sy("24:2", frm="Seeing that by thee")], lambda w, h: A.praetorium("pr1", w, h, 2401, orator="tertullus"), "#C8B8A0",
-          head="Tertullus", sky=(24, "left"), art_h=280),
+          head="Tertullus", sky=(24, "left"), art_h=190),
         F([sy("24:3"), sy("24:4"), sy("24:5"), sy("24:6"), sy("24:8"), cp("24:9")], TERTULLUS, bg=RED),
         F([cp("24:10", to="Paul answered,"), sy("24:10", frm="Forasmuch as I know"), sy("24:11"), sy("24:12"), sy("24:13")], PAUL, head="Paul's Defence before Felix"),
         F([sy("24:14"), sy("24:15"), sy("24:16")], PAUL),
