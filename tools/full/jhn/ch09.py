@@ -30,9 +30,9 @@ def title_page(n):
 DARK = lambda seed: (lambda w, h: A.dark_hill(f"gd{seed}", w, h, seed))
 SEGS = [D([cp("18:1")], lambda w, h: A.kidron("kd1", w, h, 1802), "#05051A", head="Over the Brook Kidron", sky=18, art_h=260),
         D([cp("18:2"), cp("18:3")], lambda w, h: A.arrest("ar1", w, h, 1803), "#05051A", art_h=240),
-        D([cp("18:4", to="saith unto them,"), sy("18:4", frm="Whom seek ye?"), cp("18:5", to="They answered him,"), sy("18:5", frm="Jesus of Nazareth.", to="of Nazareth."),
-           cp("18:5", frm="Jesus saith", to="unto them,"), sy("18:5", frm="I am he.", to="I am he."), cp("18:5", frm="And Judas also")],
+        D([cp("18:4", to="saith unto them,"), sy("18:4", frm="Whom seek ye?"), cp("18:5", to="They answered him,"), sy("18:5", frm="Jesus of Nazareth.", to="of Nazareth.")],
           lambda w, h: A.arrest("ar2", w, h, 1804), "#05051A", head="I Am He"),
+        F([cp("18:5", frm="Jesus saith", to="unto them,"), sy("18:5", frm="I am he.", to="I am he."), cp("18:5", frm="And Judas also")], JESUS_PASSION, bg=COLD),
         D([cp("18:6")], lambda w, h: A.fell_back("fb1", w, h, 1805), "#05051A", art_h=260),
         D([cp("18:7", to="asked them,"), sy("18:7", frm="Whom seek ye?", to="seek ye?"), cp("18:7", frm="And they said,", to="they said,"), sy("18:7", frm="Jesus of Nazareth.")],
           lambda w, h: A.arrest("ar3", w, h, 1806), "#05051A"),
@@ -104,4 +104,4 @@ SEGS = [D([cp("18:1")], lambda w, h: A.kidron("kd1", w, h, 1802), "#05051A", hea
         F([cp("19:39")], NICODEMUS_GRIEF, bg=COLD),
         D([cp("19:40")], lambda w, h: A.burial("bu1", w, h, 1916), "#2A2A4A", art_h=260),
         D([cp("19:41"), cp("19:42")], lambda w, h: A.new_tomb("nt1", w, h, 1917), "#2A2A4A", art_h=260)]
-PG.extend(K.pack(SEGS, "JHN-C09-D", PG.next(), end=nxt("NEXT · LOVEST THOU ME?")))
+PG.extend(K.pack(SEGS, "JHN-C09-D", PG.next(), lone=1.5, end=nxt("NEXT · LOVEST THOU ME?")))

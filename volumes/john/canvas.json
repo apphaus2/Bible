@@ -1144,12 +1144,12 @@
    "h": 1080,
    "title": "152 · I Am He"
   },
-  "JHN-C09-D-P04-IAmHe.dc.html": {
+  "JHN-C09-D-P04-BeforeAnnas.dc.html": {
    "x": 3360,
    "y": 46800,
    "w": 760,
    "h": 1080,
-   "title": "153 · I Am He"
+   "title": "153 · Before Annas"
   },
   "JHN-C09-D-P05-BeforeAnnas.dc.html": {
    "x": 0,
@@ -1276,6 +1276,132 @@
    "w": 760,
    "h": 1080,
    "title": "171 · A New Tomb in the Garden"
+  },
+  "JHN-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P01-TheStoneTakenAway.dc.html": {
+   "x": 840,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · The Stone Taken Away"
+  },
+  "JHN-C10-D-P02-TheNapkinByItself.dc.html": {
+   "x": 1680,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · The Napkin by Itself"
+  },
+  "JHN-C10-D-P03-WomanWhyWeepestTho.dc.html": {
+   "x": 2520,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · Woman, Why Weepest Thou?"
+  },
+  "JHN-C10-D-P04-WomanWhyWeepestTho.dc.html": {
+   "x": 3360,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · Woman, Why Weepest Thou?"
+  },
+  "JHN-C10-D-P05-Rabboni.dc.html": {
+   "x": 0,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · Rabboni"
+  },
+  "JHN-C10-D-P06-PeaceBeUntoYou.dc.html": {
+   "x": 840,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Peace Be unto You"
+  },
+  "JHN-C10-D-P07-PeaceBeUntoYou.dc.html": {
+   "x": 1680,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · Peace Be unto You"
+  },
+  "JHN-C10-D-P08-MyLordAndMyGod.dc.html": {
+   "x": 2520,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · My Lord and My God"
+  },
+  "JHN-C10-D-P09-MyLordAndMyGod.dc.html": {
+   "x": 3360,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · My Lord and My God"
+  },
+  "JHN-C10-D-P10-ByTheSeaOfTiberias.dc.html": {
+   "x": 0,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · By the Sea of Tiberias"
+  },
+  "JHN-C10-D-P11-ByTheSeaOfTiberias.dc.html": {
+   "x": 840,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · By the Sea of Tiberias"
+  },
+  "JHN-C10-D-P12-ComeAndBreakYourFa.dc.html": {
+   "x": 1680,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Come and Break Your Fast"
+  },
+  "JHN-C10-D-P13-LovestThouMe.dc.html": {
+   "x": 2520,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P14-LovestThouMe.dc.html": {
+   "x": 3360,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P15-LovestThouMe.dc.html": {
+   "x": 0,
+   "y": 56900,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Lovest Thou Me?"
+  },
+  "JHN-C10-D-P16-FollowThouMe.dc.html": {
+   "x": 840,
+   "y": 56900,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Follow Thou Me"
+  },
+  "JHN-C10-D-P17-FollowThouMe.dc.html": {
+   "x": 1680,
+   "y": 56900,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Follow Thou Me"
   }
  },
  "order": [
@@ -1441,7 +1567,7 @@
   "JHN-C09-D-P01-OverTheBrookKidron.dc.html",
   "JHN-C09-D-P02-IAmHe.dc.html",
   "JHN-C09-D-P03-IAmHe.dc.html",
-  "JHN-C09-D-P04-IAmHe.dc.html",
+  "JHN-C09-D-P04-BeforeAnnas.dc.html",
   "JHN-C09-D-P05-BeforeAnnas.dc.html",
   "JHN-C09-D-P06-BeforeAnnas.dc.html",
   "JHN-C09-D-P07-TheCockCrew.dc.html",
@@ -1459,7 +1585,25 @@
   "JHN-C09-D-P19-ItIsFinished.dc.html",
   "JHN-C09-D-P20-ItIsFinished.dc.html",
   "JHN-C09-D-P21-ANewTombInTheGarde.dc.html",
-  "JHN-C09-D-P22-ANewTombInTheGarde.dc.html"
+  "JHN-C09-D-P22-ANewTombInTheGarde.dc.html",
+  "JHN-C10-00-Title.dc.html",
+  "JHN-C10-D-P01-TheStoneTakenAway.dc.html",
+  "JHN-C10-D-P02-TheNapkinByItself.dc.html",
+  "JHN-C10-D-P03-WomanWhyWeepestTho.dc.html",
+  "JHN-C10-D-P04-WomanWhyWeepestTho.dc.html",
+  "JHN-C10-D-P05-Rabboni.dc.html",
+  "JHN-C10-D-P06-PeaceBeUntoYou.dc.html",
+  "JHN-C10-D-P07-PeaceBeUntoYou.dc.html",
+  "JHN-C10-D-P08-MyLordAndMyGod.dc.html",
+  "JHN-C10-D-P09-MyLordAndMyGod.dc.html",
+  "JHN-C10-D-P10-ByTheSeaOfTiberias.dc.html",
+  "JHN-C10-D-P11-ByTheSeaOfTiberias.dc.html",
+  "JHN-C10-D-P12-ComeAndBreakYourFa.dc.html",
+  "JHN-C10-D-P13-LovestThouMe.dc.html",
+  "JHN-C10-D-P14-LovestThouMe.dc.html",
+  "JHN-C10-D-P15-LovestThouMe.dc.html",
+  "JHN-C10-D-P16-FollowThouMe.dc.html",
+  "JHN-C10-D-P17-FollowThouMe.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1531,6 +1675,13 @@
    "text": "Chapter 9 · It Is Finished (John 18–19)",
    "x": 0,
    "y": 46500
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Lovest Thou Me? (John 20–21)",
+   "x": 0,
+   "y": 53000
   }
  },
  "designSystems": [],
