@@ -1,0 +1,31 @@
+{
+ "id": "luke",
+ "order": 42,
+ "name": "Luke",
+ "kanji": "ルカによる福音書",
+ "thumb": "vol-luke-",
+ "lede": "The forty-second book of the Bible, in full: Gabriel in the temple and at Nazareth, the birth in Bethlehem and the shepherds, the Spirit of the Lord upon him at Nazareth, the widow of Nain and the woman with the ointment, the good Samaritan, the lost sheep, the lost coin and the prodigal son, Zacchaeus, the cross, and the road to Emmaus, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Gabriel",
+   "range": "Luke 1",
+   "blurb": "To Theophilus, that thou mightest know the certainty; Zacharias burning incense in the temple and Gabriel that standeth in the presence of God — thy prayer is heard; Elisabeth hid five months; the angel sent to Nazareth — Hail, thou that art highly favored; behold, the handmaid of the Lord; the babe leaping in the womb; My soul doth magnify the Lord; his name is John; and Zacharias' song: the dayspring from on high hath visited us.",
+   "prefixes": [
+    "Main.dc.html",
+    "LUK-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Good Tidings of Great Joy",
+   "range": "Luke 2",
+   "blurb": "A decree from Cæsar Augustus; no room for them in the inn — the babe wrapped in swaddling clothes and laid in a manger; shepherds abiding in the field by night, the glory of the Lord round about them, and a multitude of the heavenly host: Glory to God in the highest; Mary pondering these sayings in her heart; Simeon in the temple — now lettest thou thy servant depart in peace; Anna the prophetess; and the boy of twelve among the teachers: knew ye not that I must be in my Father's house?",
+   "prefixes": [
+    "LUK-C02-"
+   ]
+  }
+ ]
+}

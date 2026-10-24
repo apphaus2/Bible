@@ -1,0 +1,273 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T14:52:36Z"
+ },
+ "title": "Luke — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "LUK-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Gabriel"
+  },
+  "LUK-C01-D-P01-ZachariasAndElisab.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Zacharias and Elisabeth"
+  },
+  "LUK-C01-D-P02-TheHourOfIncense.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Hour of Incense"
+  },
+  "LUK-C01-D-P03-TheHourOfIncense.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Hour of Incense"
+  },
+  "LUK-C01-D-P04-IAmGabriel.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · I Am Gabriel"
+  },
+  "LUK-C01-D-P05-IAmGabriel.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · I Am Gabriel"
+  },
+  "LUK-C01-D-P06-HailThouThatArtHig.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Hail, Thou That Art Highly Favored"
+  },
+  "LUK-C01-D-P07-HailThouThatArtHig.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Hail, Thou That Art Highly Favored"
+  },
+  "LUK-C01-D-P08-HailThouThatArtHig.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Hail, Thou That Art Highly Favored"
+  },
+  "LUK-C01-D-P09-BlessedArtThouAmon.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Blessed Art Thou among Women"
+  },
+  "LUK-C01-D-P10-MySoulDothMagnifyT.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · My Soul Doth Magnify the Lord"
+  },
+  "LUK-C01-D-P11-MySoulDothMagnifyT.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · My Soul Doth Magnify the Lord"
+  },
+  "LUK-C01-D-P12-HisNameIsJohn.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · His Name Is John"
+  },
+  "LUK-C01-D-P13-HisNameIsJohn.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · His Name Is John"
+  },
+  "LUK-C01-D-P14-HisNameIsJohn.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · His Name Is John"
+  },
+  "LUK-C01-D-P15-TheDayspringFromOn.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Dayspring from on High"
+  },
+  "LUK-C01-D-P16-TheDayspringFromOn.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · The Dayspring from on High"
+  },
+  "LUK-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Good Tidings of Great Joy"
+  },
+  "LUK-C02-D-P01-AllTheWorldShouldB.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · All the World Should Be Enrolled"
+  },
+  "LUK-C02-D-P02-GoodTidingsOfGreat.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Good Tidings of Great Joy"
+  },
+  "LUK-C02-D-P03-GoodTidingsOfGreat.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Good Tidings of Great Joy"
+  },
+  "LUK-C02-D-P04-GloryToGodInTheHig.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Glory to God in the Highest"
+  },
+  "LUK-C02-D-P05-PonderingThemInHer.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Pondering Them in Her Heart"
+  },
+  "LUK-C02-D-P06-Simeon.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Simeon"
+  },
+  "LUK-C02-D-P07-Simeon.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Simeon"
+  },
+  "LUK-C02-D-P08-InMyFatherSHouse.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · In My Father's House"
+  },
+  "LUK-C02-D-P09-InMyFatherSHouse.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · In My Father's House"
+  },
+  "LUK-C02-D-P10-InMyFatherSHouse.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · In My Father's House"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "LUK-C01-00-Title.dc.html",
+  "LUK-C01-D-P01-ZachariasAndElisab.dc.html",
+  "LUK-C01-D-P02-TheHourOfIncense.dc.html",
+  "LUK-C01-D-P03-TheHourOfIncense.dc.html",
+  "LUK-C01-D-P04-IAmGabriel.dc.html",
+  "LUK-C01-D-P05-IAmGabriel.dc.html",
+  "LUK-C01-D-P06-HailThouThatArtHig.dc.html",
+  "LUK-C01-D-P07-HailThouThatArtHig.dc.html",
+  "LUK-C01-D-P08-HailThouThatArtHig.dc.html",
+  "LUK-C01-D-P09-BlessedArtThouAmon.dc.html",
+  "LUK-C01-D-P10-MySoulDothMagnifyT.dc.html",
+  "LUK-C01-D-P11-MySoulDothMagnifyT.dc.html",
+  "LUK-C01-D-P12-HisNameIsJohn.dc.html",
+  "LUK-C01-D-P13-HisNameIsJohn.dc.html",
+  "LUK-C01-D-P14-HisNameIsJohn.dc.html",
+  "LUK-C01-D-P15-TheDayspringFromOn.dc.html",
+  "LUK-C01-D-P16-TheDayspringFromOn.dc.html",
+  "LUK-C02-00-Title.dc.html",
+  "LUK-C02-D-P01-AllTheWorldShouldB.dc.html",
+  "LUK-C02-D-P02-GoodTidingsOfGreat.dc.html",
+  "LUK-C02-D-P03-GoodTidingsOfGreat.dc.html",
+  "LUK-C02-D-P04-GloryToGodInTheHig.dc.html",
+  "LUK-C02-D-P05-PonderingThemInHer.dc.html",
+  "LUK-C02-D-P06-Simeon.dc.html",
+  "LUK-C02-D-P07-Simeon.dc.html",
+  "LUK-C02-D-P08-InMyFatherSHouse.dc.html",
+  "LUK-C02-D-P09-InMyFatherSHouse.dc.html",
+  "LUK-C02-D-P10-InMyFatherSHouse.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Luke Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Gabriel (Luke 1)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Good Tidings of Great Joy (Luke 2)",
+   "x": 0,
+   "y": 7000
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
