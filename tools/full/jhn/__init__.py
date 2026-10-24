@@ -63,5 +63,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Word Became Flesh", "range": "John 1–2", "bible_chapters": [1, 2],
      "blurb": "In the beginning was the Word, and the light shineth in the darkness; a man sent from God whose name was John; the Word became flesh, and dwelt among us; the voice of one crying in the wilderness; behold, the Lamb of God; the Spirit descending as a dove; come and see; we have found the Messiah; Nathanael under the fig tree; the water become wine at Cana; and the scourge of cords in the temple — destroy this temple, and in three days I will raise it up."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Ye Must Be Born Anew", "range": "John 3–4", "bible_chapters": [3, 4],
+     "blurb": "Nicodemus by night — except one be born anew, he cannot see the kingdom of God; the wind bloweth where it will; as Moses lifted up the serpent; God so loved the world; he must increase, but I must decrease; then Jacob's well at the sixth hour and the woman of Samaria — give me to drink, living water, in spirit and truth, I that speak unto thee am he; the fields white already unto harvest; and the nobleman's son at Capernaum — go thy way; thy son liveth."},
   ],
 }

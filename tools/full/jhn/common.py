@@ -12,7 +12,7 @@ from deu.common import shade
 import speech
 from ntcast import (JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF, JESUS_PASSION, JESUS_RISEN, PETER, PETER_GRIEF, ANDREW, JAMES, JOHN, MATTHEW,
                     THOMAS, PHILIP, JUDAS, MARY, MARY_GRIEF, MAGDALENE, MARTHA, BAPTIST, PHARISEE, CAIAPHAS, PILATE, HEROD, CENTURION, ROBES)
-from mat.common import (SCRIBE, SCRIBE_STERN, PRIEST, SADDUCEE, BAPTIST_STERN, BAPTIST_HUMBLE, CROWD_MAN, MAID, WITNESS, CAIAPHAS_RENT, PILATE_TROUBLED,
+from mat.common import (SCRIBE, SCRIBE_STERN, PRIEST, SADDUCEE, BAPTIST_STERN, BAPTIST_HUMBLE, CROWD_MAN, MAID, JOHN_DISCIPLE, WITNESS, CAIAPHAS_RENT, PILATE_TROUBLED,
                         ARIMATHAEA, SOLDIER)
 from mrk.common import MarkKit, MAGDALENE_GRIEF
 from jhn import G
@@ -58,6 +58,7 @@ K = JohnKit(G, CODE, "John")
 cp, gd, sg, sy, cps, gds, sgs, j = K.cp, K.gd, K.sg, K.sy, K.cps, K.gds, K.sgs, K.j
 v, sp = G.v, G.span
 CREDIT = "John · Volume Forty-Three"
+NIGHTF = "radial-gradient(circle at 70% 30%, #9AA8E8 0 14px, #2A2A6A 160px, #0B0B2A 400px)"           # behind a face at night
 WHITE = "radial-gradient(circle at 26% 46%, #FFFFFF 0 70px, #FFF8DC 220px, #F3E2B0 460px)"     # behind JESUS_RISEN
 
 def title(num, name, rng, svg, bg, quote):
@@ -102,6 +103,8 @@ _NI = dict(skin="#C98E66", shadow="#3A3A5A", hair="#8A847A", hl="#B8B2A6", beard
 NICODEMUS = face_of("adam", light="#9AA8E8", **_NI)                                  # by night
 NICODEMUS_DAY = face_of("adam", light="#FFC14D", **_NI)
 NICODEMUS_GRIEF = face_of("adam", brow="sorrow", light="#9AA8C8", **_NI)
+JOHN_DISC = face_of("adam", skin="#9A6A4A", shadow="#4A2A1A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#4A4E5A", cord=True,
+                    light="#FFC14D")                                                 # one of John's disciples (a cool slate headcloth)
 LEVITE = face_of("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#E8E2D6", cord=True,
                  brow="scowl", light="#FFC14D")
 RULER_FEAST = face_of("adam", skin="#D9A27A", shadow="#7A4A3A", hair="#6A645E", hl="#9A948A", beard=True, beard_color="#6A645E", scarf="#E8D8B0", cord=True,
