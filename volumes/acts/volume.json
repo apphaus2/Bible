@@ -16,6 +16,16 @@
     "Main.dc.html",
     "ACT-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Silver and Gold Have I None",
+   "range": "Acts 3–4",
+   "blurb": "The lame man at the door of the temple called Beautiful — silver and gold have I none; in the name of Jesus Christ of Nazareth, walk; walking, and leaping, and praising God; Peter in Solomon's porch; the ward and the council — the stone set at nought of you the builders; we cannot but speak the things which we saw and heard; the place shaken; and all things common.",
+   "prefixes": [
+    "ACT-C02-"
+   ]
   }
  ]
 }

@@ -64,5 +64,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Promise of the Father", "range": "Acts 1–2", "bible_chapters": [1, 2],
      "blurb": "Forty days, and wait for the promise of the Father; ye shall be my witnesses unto the uttermost part of the earth; a cloud received him out of their sight; the upper chamber and the lot that fell upon Matthias; then Pentecost — a sound as of a mighty wind, tongues as of fire — and every man heard them in his own language; Peter's sermon, and about three thousand souls."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "Silver and Gold Have I None", "range": "Acts 3–4", "bible_chapters": [3, 4],
+     "blurb": "The lame man at the door of the temple called Beautiful — silver and gold have I none; in the name of Jesus Christ of Nazareth, walk; walking, and leaping, and praising God; Peter in Solomon's porch; the ward and the council — the stone set at nought of you the builders; we cannot but speak the things which we saw and heard; the place shaken; and all things common."},
   ],
 }

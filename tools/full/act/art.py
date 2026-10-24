@@ -35,7 +35,8 @@ from act import geo
 
 # ---- heads, beards and figures --------------------------------------------------------------------------------------------
 def beard(color): return WHITE_BEARD.replace("#E8E2D6", color)
-def hair(color): return f'<path d="M-13.5 -186 C -16 -206 16 -206 13.5 -186 C 9 -195 -9 -195 -13.5 -186 Z" fill="{color}" stroke="#0D0D0F" stroke-width="1.3"></path>'
+def hair(color): return (f'<path d="M-13.5 -186 C -16 -206 16 -206 13.5 -186 L 14 -178 C 12.5 -175 11 -177 11 -181 C 8 -192 -8 -192 -11 -181 C -11 -177 -12.5 -175 -14 -178 Z" '
+                         f'fill="{color}" stroke="#0D0D0F" stroke-width="1.3"></path>')
 def band(color="#E8B830"): return f'<path d="M-14 -194 C -6 -198 6 -198 14 -194" fill="none" stroke="{color}" stroke-width="3.4"></path>'
 def diadem(color="#E8B830"):
     return (f'<path d="M-14 -194 L -14 -204 L -9 -198 L -4 -207 L 0 -199 L 4 -207 L 9 -198 L 14 -204 L 14 -194 C 6 -197 -6 -197 -14 -194 Z" fill="{color}" stroke="#0D0D0F" stroke-width="1.2"></path>')
@@ -282,14 +283,14 @@ def forty_days(p, w, h, seed):
     o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#FFF4C2"), hills(w, h, h * 0.46, seed, color="#9AA07A", amp=12, step=90), ground(w, h, h * 0.6, "#A8A86A", dy=0),
          olive(w * 0.9, h * 0.9, h / 380, seed=seed), olive(w * 0.08, h * 0.86, h / 440, seed=seed + 1)]
     s = fit(b, max(h * 0.24, b - 230))
-    o.append(jesus_risen(p, w * 0.22, b, s, up=UP_BLESS))
+    o.append(jesus_risen(p, w * 0.22, b, s, flip=True, up=UP_BLESS))
     for i, x in enumerate((0.4, 0.5, 0.6, 0.7, 0.8)):
         o.append(seated(w * x, b, s * 0.78, TWELVE[i], head=TWELVE[i] if i % 2 else None, beard="#4A4440" if i == 0 else "#2A1A10", flip=True))
     return "".join(o)
 
 def olivet_ask(p, w, h, seed):
     """On the mount of Olives: Jesus risen standing with the eleven, Jerusalem across the valley."""
-    return scene(p, w, h, seed, "hill", [(0.18, "risen", {"up": UP_BLESS}), (0.34, "eleven", {"x1": 0.62, "n": 6, "flips": True, "k": 0.92})])
+    return scene(p, w, h, seed, "hill", [(0.18, "risen", {"up": UP_BLESS, "flip": True}), (0.34, "eleven", {"x1": 0.62, "n": 6, "flips": True, "k": 0.92})])
 
 def ascension(p, w, h, seed, gone=False):
     """He was taken up; and a cloud received him out of their sight: above the mount, Jesus risen in white light with his
@@ -320,7 +321,7 @@ def two_in_white(p, w, h, seed):
     s = fit(b, max(h * 0.3, b - 220))
     for i in range(7):
         o.append(apostle(p, w * (0.36 + 0.09 * i), b - (i % 2) * 6, s * (0.92 + 0.04 * (i % 2)), i, flip=True, up=[(-22, -158), (-30, -190), (-34, -222)] if i in (1, 4) else None))
-    o.append(angel(p, w * 0.1, b, s * 1.02, up=UP_BLESS) + angel(p, w * 0.22, b, s * 1.0))
+    o.append(angel(p, w * 0.1, b, s * 1.02, flip=True, up=UP_BLESS) + angel(p, w * 0.22, b, s * 1.0))
     return "".join(o)
 
 def olivet_road(p, w, h, seed):
@@ -362,9 +363,9 @@ def upper_chamber(p, w, h, seed, prayer=True, fire=False, wind=False, peter_up=F
         o.append(seated(w * x, b, s * 0.76, c, head=c if i % 2 else None, beard="#4A4440" if i == 0 else "#2A1A10", flip=x > 0.55))
         if fire: o.append(flame_tongue(w * x + (-6 if x > 0.55 else 6) * s * 0.76, b - 150 * s * 0.76, s * 0.8))
     if prayer and not fire:
-        o.append(apostle(p, w * 0.06, b, s * 0.96, 3, up=UP_HIGH))
+        o.append(apostle(p, w * 0.06, b, s * 0.96, 3, flip=True, up=UP_HIGH))
     if peter_up:
-        o.append(peter(p, w * 0.1, b, s, up=UP_BLESS))
+        o.append(peter(p, w * 0.1, b, s, flip=True, up=UP_BLESS))
     return "".join(o)
 
 def lots(p, w, h, seed):
@@ -444,7 +445,7 @@ def peter_preach(p, w, h, seed, crowd_n=10, tone="day"):
     o.append(f'<path d="M-10 {f(st)} L {f(w * 0.42)} {f(st)} L {f(w * 0.42)} {f(st + 20 * s)} L {f(w * 0.48)} {f(st + 20 * s)} L {f(w * 0.48)} {f(b + 10)} L -10 {f(b + 10)} Z" fill="#D8C8A0" stroke="{INK}" stroke-width="2"></path>')
     for i in range(1, 6):
         o.append(apostle(p, w * (0.05 + 0.06 * i), st - 4, s * 0.86, i))
-    o.append(peter(p, w * 0.36, st, s * 1.02, up=UP_HIGH))
+    o.append(peter(p, w * 0.36, st, s * 1.02, flip=True, up=UP_HIGH))
     o.append(crowd(p, w * 0.52, w * 0.98, b, b - 170 * s, crowd_n, seed, flip=True))
     return "".join(o)
 
@@ -524,7 +525,7 @@ def all_common(p, w, h, seed):
              f'<path d="M{f(cx - 110 * k)} {f(b)} C {f(cx - 120 * k)} {f(b - 40 * k)} {f(cx - 70 * k)} {f(b - 50 * k)} {f(cx - 70 * k)} {f(b)} Z" fill="#C8A878" stroke="{INK}" stroke-width="2"></path>'
              f'<circle cx="{f(cx + 110 * k)}" cy="{f(b - 10 * k)}" r="{f(10 * k)}" fill="#8A5A2A" stroke="{INK}" stroke-width="1.6"></circle>')
     o.append(peter(p, w * 0.2, b, s) + john_ap(p, w * 0.3, b, s * 0.98))
-    o.append(woman_fig(p, w * 0.72, b, s * 0.9, "#4A4A5A", "#2A2A3A", flip=True, up=UP_TOUCH))
+    o.append(woman_fig(p, w * 0.72, b, s * 0.9, "#4A4A5A", "#2A2A3A", up=UP_TOUCH))
     o.append(man_fig(p, w * 0.84, b, s * 0.92, "#7A7A80", hr="#6A645E", bd="#6A645E", flip=True, extra='<path d="M-30 -150 L -40 0" stroke="#5A3A22" stroke-width="5"></path>'))
     o.append(man_fig(p, w * 0.94, b, s * 0.94, "#5A6A3A", head="#6A5A3A", bd="#2A1A10", flip=True))
     return "".join(o)
