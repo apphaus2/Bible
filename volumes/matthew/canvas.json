@@ -471,6 +471,111 @@
    "w": 760,
    "h": 1080,
    "title": "62 · Not Peace, but a Sword"
+  },
+  "MAT-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Lord of the Sabbath"
+  },
+  "MAT-C04-D-P01-ArtThouHeThatComet.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Art Thou He That Cometh?"
+  },
+  "MAT-C04-D-P02-ArtThouHeThatComet.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Art Thou He That Cometh?"
+  },
+  "MAT-C04-D-P03-WePipedUntoYou.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · We Piped unto You"
+  },
+  "MAT-C04-D-P04-ComeUntoMe.dc.html": {
+   "x": 3360,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Come unto Me"
+  },
+  "MAT-C04-D-P05-LordOfTheSabbath.dc.html": {
+   "x": 0,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Lord of the Sabbath"
+  },
+  "MAT-C04-D-P06-StretchForthThyHan.dc.html": {
+   "x": 840,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Stretch Forth Thy Hand"
+  },
+  "MAT-C04-D-P07-StretchForthThyHan.dc.html": {
+   "x": 1680,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Stretch Forth Thy Hand"
+  },
+  "MAT-C04-D-P08-ABruisedReedShallH.dc.html": {
+   "x": 2520,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · A Bruised Reed Shall He Not Break"
+  },
+  "MAT-C04-D-P09-AKingdomDivided.dc.html": {
+   "x": 3360,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · A Kingdom Divided"
+  },
+  "MAT-C04-D-P10-AKingdomDivided.dc.html": {
+   "x": 0,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · A Kingdom Divided"
+  },
+  "MAT-C04-D-P11-AKingdomDivided.dc.html": {
+   "x": 840,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · A Kingdom Divided"
+  },
+  "MAT-C04-D-P12-TheSignOfJonah.dc.html": {
+   "x": 1680,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Sign of Jonah"
+  },
+  "MAT-C04-D-P13-TheSignOfJonah.dc.html": {
+   "x": 2520,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The Sign of Jonah"
+  },
+  "MAT-C04-D-P14-MyMotherAndMyBreth.dc.html": {
+   "x": 3360,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · My Mother and My Brethren"
   }
  },
  "order": [
@@ -539,7 +644,22 @@
   "MAT-C03-D-P19-SheepInTheMidstOfW.dc.html",
   "MAT-C03-D-P20-FearThemNot.dc.html",
   "MAT-C03-D-P21-NotPeaceButASword.dc.html",
-  "MAT-C03-D-P22-NotPeaceButASword.dc.html"
+  "MAT-C03-D-P22-NotPeaceButASword.dc.html",
+  "MAT-C04-00-Title.dc.html",
+  "MAT-C04-D-P01-ArtThouHeThatComet.dc.html",
+  "MAT-C04-D-P02-ArtThouHeThatComet.dc.html",
+  "MAT-C04-D-P03-WePipedUntoYou.dc.html",
+  "MAT-C04-D-P04-ComeUntoMe.dc.html",
+  "MAT-C04-D-P05-LordOfTheSabbath.dc.html",
+  "MAT-C04-D-P06-StretchForthThyHan.dc.html",
+  "MAT-C04-D-P07-StretchForthThyHan.dc.html",
+  "MAT-C04-D-P08-ABruisedReedShallH.dc.html",
+  "MAT-C04-D-P09-AKingdomDivided.dc.html",
+  "MAT-C04-D-P10-AKingdomDivided.dc.html",
+  "MAT-C04-D-P11-AKingdomDivided.dc.html",
+  "MAT-C04-D-P12-TheSignOfJonah.dc.html",
+  "MAT-C04-D-P13-TheSignOfJonah.dc.html",
+  "MAT-C04-D-P14-MyMotherAndMyBreth.dc.html"
  ],
  "notes": {
   "Main": {
@@ -569,6 +689,13 @@
    "text": "Chapter 3 · The Harvest Is Plenteous (Matthew 8–10)",
    "x": 0,
    "y": 13500
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Lord of the Sabbath (Matthew 11–12)",
+   "x": 0,
+   "y": 20000
   }
  },
  "designSystems": [],
