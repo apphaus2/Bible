@@ -1,0 +1,21 @@
+{
+ "id": "matthew",
+ "order": 40,
+ "name": "Matthew",
+ "kanji": "マタイによる福音書",
+ "thumb": "vol-matthew-",
+ "lede": "The fortieth book of the Bible and the first of the New Testament, in full: the book of the generation of Jesus Christ, the wise-men and the star, the voice in the wilderness, the sermon on the mount, the healings and the parables of the kingdom, the transfiguration, the entry into Jerusalem, the last supper and the cross, and the empty tomb — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Son of David",
+   "range": "Matthew 1–4",
+   "blurb": "The book of the generation of Jesus Christ, the son of David, the son of Abraham: three times fourteen generations; Joseph's dream — thou shalt call his name JESUS; Immanuel, God with us; the wise-men from the east and the star that stood over the young child; gold and frankincense and myrrh; the flight into Egypt and Rachel weeping for her children; John the Baptist in the wilderness; the heavens opened and the Spirit as a dove — this is my beloved Son; forty days in the wilderness — it is written; and the fishers of men by the sea of Galilee.",
+   "prefixes": [
+    "Main.dc.html",
+    "MAT-C01-"
+   ]
+  }
+ ]
+}

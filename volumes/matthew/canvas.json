@@ -1,0 +1,202 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T09:12:41Z"
+ },
+ "title": "Matthew — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "MAT-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Son of David"
+  },
+  "MAT-C01-A-P01-TheBookOfTheGeneration.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Book of the Generation"
+  },
+  "MAT-C01-D-P01-Immanuel.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Immanuel"
+  },
+  "MAT-C01-D-P02-Immanuel.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Immanuel"
+  },
+  "MAT-C01-D-P03-WiseMenFromTheEast.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Wise-Men from the East"
+  },
+  "MAT-C01-D-P04-WiseMenFromTheEast.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Wise-Men from the East"
+  },
+  "MAT-C01-D-P05-HerodTheKing.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Herod the King"
+  },
+  "MAT-C01-D-P06-ExceedingGreatJoy.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Exceeding Great Joy"
+  },
+  "MAT-C01-D-P07-RachelWeepingForHe.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Rachel Weeping for Her Children"
+  },
+  "MAT-C01-D-P08-HeShallBeCalledANa.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · He Shall Be Called a Nazarene"
+  },
+  "MAT-C01-D-P09-TheVoiceInTheWilde.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Voice in the Wilderness"
+  },
+  "MAT-C01-D-P10-FruitWorthyOfRepen.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Fruit Worthy of Repentance"
+  },
+  "MAT-C01-D-P11-FruitWorthyOfRepen.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Fruit Worthy of Repentance"
+  },
+  "MAT-C01-D-P12-ThisIsMyBelovedSon.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · This Is My Beloved Son"
+  },
+  "MAT-C01-D-P13-ItIsWritten.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · It Is Written"
+  },
+  "MAT-C01-D-P14-ThePinnacleOfTheTe.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Pinnacle of the Temple"
+  },
+  "MAT-C01-D-P15-AnExceedingHighMou.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · An Exceeding High Mountain"
+  },
+  "MAT-C01-D-P16-AGreatLight.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · A Great Light"
+  },
+  "MAT-C01-D-P17-FishersOfMen.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Fishers of Men"
+  },
+  "MAT-C01-D-P18-GreatMultitudes.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Great Multitudes"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "MAT-C01-00-Title.dc.html",
+  "MAT-C01-A-P01-TheBookOfTheGeneration.dc.html",
+  "MAT-C01-D-P01-Immanuel.dc.html",
+  "MAT-C01-D-P02-Immanuel.dc.html",
+  "MAT-C01-D-P03-WiseMenFromTheEast.dc.html",
+  "MAT-C01-D-P04-WiseMenFromTheEast.dc.html",
+  "MAT-C01-D-P05-HerodTheKing.dc.html",
+  "MAT-C01-D-P06-ExceedingGreatJoy.dc.html",
+  "MAT-C01-D-P07-RachelWeepingForHe.dc.html",
+  "MAT-C01-D-P08-HeShallBeCalledANa.dc.html",
+  "MAT-C01-D-P09-TheVoiceInTheWilde.dc.html",
+  "MAT-C01-D-P10-FruitWorthyOfRepen.dc.html",
+  "MAT-C01-D-P11-FruitWorthyOfRepen.dc.html",
+  "MAT-C01-D-P12-ThisIsMyBelovedSon.dc.html",
+  "MAT-C01-D-P13-ItIsWritten.dc.html",
+  "MAT-C01-D-P14-ThePinnacleOfTheTe.dc.html",
+  "MAT-C01-D-P15-AnExceedingHighMou.dc.html",
+  "MAT-C01-D-P16-AGreatLight.dc.html",
+  "MAT-C01-D-P17-FishersOfMen.dc.html",
+  "MAT-C01-D-P18-GreatMultitudes.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Matthew Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Son of David (Matthew 1–4)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
