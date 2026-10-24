@@ -1,0 +1,1824 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T09:12:41Z"
+ },
+ "title": "Matthew — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "MAT-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Son of David"
+  },
+  "MAT-C01-A-P01-TheBookOfTheGeneration.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Book of the Generation"
+  },
+  "MAT-C01-D-P01-Immanuel.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Immanuel"
+  },
+  "MAT-C01-D-P02-Immanuel.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Immanuel"
+  },
+  "MAT-C01-D-P03-WiseMenFromTheEast.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Wise-Men from the East"
+  },
+  "MAT-C01-D-P04-WiseMenFromTheEast.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Wise-Men from the East"
+  },
+  "MAT-C01-D-P05-HerodTheKing.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Herod the King"
+  },
+  "MAT-C01-D-P06-ExceedingGreatJoy.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Exceeding Great Joy"
+  },
+  "MAT-C01-D-P07-RachelWeepingForHe.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Rachel Weeping for Her Children"
+  },
+  "MAT-C01-D-P08-HeShallBeCalledANa.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · He Shall Be Called a Nazarene"
+  },
+  "MAT-C01-D-P09-TheVoiceInTheWilde.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Voice in the Wilderness"
+  },
+  "MAT-C01-D-P10-FruitWorthyOfRepen.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Fruit Worthy of Repentance"
+  },
+  "MAT-C01-D-P11-FruitWorthyOfRepen.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Fruit Worthy of Repentance"
+  },
+  "MAT-C01-D-P12-ThisIsMyBelovedSon.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · This Is My Beloved Son"
+  },
+  "MAT-C01-D-P13-ItIsWritten.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · It Is Written"
+  },
+  "MAT-C01-D-P14-ThePinnacleOfTheTe.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Pinnacle of the Temple"
+  },
+  "MAT-C01-D-P15-AnExceedingHighMou.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · An Exceeding High Mountain"
+  },
+  "MAT-C01-D-P16-AGreatLight.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · A Great Light"
+  },
+  "MAT-C01-D-P17-FishersOfMen.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Fishers of Men"
+  },
+  "MAT-C01-D-P18-GreatMultitudes.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Great Multitudes"
+  },
+  "MAT-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · The Sermon on the Mount"
+  },
+  "MAT-C02-D-P01-Blessed.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Blessed"
+  },
+  "MAT-C02-D-P02-Blessed.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Blessed"
+  },
+  "MAT-C02-D-P03-TheLightOfTheWorld.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · The Light of the World"
+  },
+  "MAT-C02-D-P04-NotToDestroyButToF.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Not to Destroy, but to Fulfil"
+  },
+  "MAT-C02-D-P05-ButISayUntoYou.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · But I Say unto You"
+  },
+  "MAT-C02-D-P06-ButISayUntoYou.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · But I Say unto You"
+  },
+  "MAT-C02-D-P07-SwearNotAtAll.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Swear Not at All"
+  },
+  "MAT-C02-D-P08-LoveYourEnemies.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Love Your Enemies"
+  },
+  "MAT-C02-D-P09-InSecret.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · In Secret"
+  },
+  "MAT-C02-D-P10-InSecret.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · In Secret"
+  },
+  "MAT-C02-D-P11-OurFatherWhoArtInH.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Our Father Who Art in Heaven"
+  },
+  "MAT-C02-D-P12-OurFatherWhoArtInH.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · Our Father Who Art in Heaven"
+  },
+  "MAT-C02-D-P13-TreasuresInHeaven.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Treasures in Heaven"
+  },
+  "MAT-C02-D-P14-TreasuresInHeaven.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Treasures in Heaven"
+  },
+  "MAT-C02-D-P15-TreasuresInHeaven.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Treasures in Heaven"
+  },
+  "MAT-C02-D-P16-JudgeNot.dc.html": {
+   "x": 840,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Judge Not"
+  },
+  "MAT-C02-D-P17-JudgeNot.dc.html": {
+   "x": 1680,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Judge Not"
+  },
+  "MAT-C02-D-P18-TheNarrowGate.dc.html": {
+   "x": 2520,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Narrow Gate"
+  },
+  "MAT-C02-D-P19-ByTheirFruits.dc.html": {
+   "x": 3360,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · By Their Fruits"
+  },
+  "MAT-C02-D-P20-UponTheRock.dc.html": {
+   "x": 0,
+   "y": 12100,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Upon the Rock"
+  },
+  "MAT-C02-D-P21-UponTheRock.dc.html": {
+   "x": 840,
+   "y": 12100,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Upon the Rock"
+  },
+  "MAT-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Harvest Is Plenteous"
+  },
+  "MAT-C03-D-P01-IfThouWilt.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · If Thou Wilt"
+  },
+  "MAT-C03-D-P02-SoGreatFaith.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · So Great Faith"
+  },
+  "MAT-C03-D-P03-SoGreatFaith.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · So Great Faith"
+  },
+  "MAT-C03-D-P04-HeTouchedHerHand.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · He Touched Her Hand"
+  },
+  "MAT-C03-D-P05-FollowMe.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Follow Me"
+  },
+  "MAT-C03-D-P06-EvenTheWindsAndThe.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Even the Winds and the Sea Obey Him"
+  },
+  "MAT-C03-D-P07-TheCountryOfTheGad.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Country of the Gadarenes"
+  },
+  "MAT-C03-D-P08-TheCountryOfTheGad.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Country of the Gadarenes"
+  },
+  "MAT-C03-D-P09-ThySinsAreForgiven.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Thy Sins Are Forgiven"
+  },
+  "MAT-C03-D-P10-NotTheRighteousBut.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Not the Righteous, but Sinners"
+  },
+  "MAT-C03-D-P11-NotTheRighteousBut.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Not the Righteous, but Sinners"
+  },
+  "MAT-C03-D-P12-TheDamselIsNotDead.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Damsel Is Not Dead"
+  },
+  "MAT-C03-D-P13-TheDamselIsNotDead.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Damsel Is Not Dead"
+  },
+  "MAT-C03-D-P14-AccordingToYourFai.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · According to Your Faith"
+  },
+  "MAT-C03-D-P15-TheHarvestIndeedIs.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Harvest Indeed Is Plenteous"
+  },
+  "MAT-C03-D-P16-TheTwelveApostles.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Twelve Apostles"
+  },
+  "MAT-C03-D-P17-TheTwelveApostles.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Twelve Apostles"
+  },
+  "MAT-C03-D-P18-SheepInTheMidstOfW.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Sheep in the Midst of Wolves"
+  },
+  "MAT-C03-D-P19-SheepInTheMidstOfW.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Sheep in the Midst of Wolves"
+  },
+  "MAT-C03-D-P20-FearThemNot.dc.html": {
+   "x": 0,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Fear Them Not"
+  },
+  "MAT-C03-D-P21-NotPeaceButASword.dc.html": {
+   "x": 840,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Not Peace, but a Sword"
+  },
+  "MAT-C03-D-P22-NotPeaceButASword.dc.html": {
+   "x": 1680,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Not Peace, but a Sword"
+  },
+  "MAT-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Lord of the Sabbath"
+  },
+  "MAT-C04-D-P01-ArtThouHeThatComet.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Art Thou He That Cometh?"
+  },
+  "MAT-C04-D-P02-ArtThouHeThatComet.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Art Thou He That Cometh?"
+  },
+  "MAT-C04-D-P03-WePipedUntoYou.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · We Piped unto You"
+  },
+  "MAT-C04-D-P04-ComeUntoMe.dc.html": {
+   "x": 3360,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Come unto Me"
+  },
+  "MAT-C04-D-P05-LordOfTheSabbath.dc.html": {
+   "x": 0,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Lord of the Sabbath"
+  },
+  "MAT-C04-D-P06-StretchForthThyHan.dc.html": {
+   "x": 840,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Stretch Forth Thy Hand"
+  },
+  "MAT-C04-D-P07-StretchForthThyHan.dc.html": {
+   "x": 1680,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Stretch Forth Thy Hand"
+  },
+  "MAT-C04-D-P08-ABruisedReedShallH.dc.html": {
+   "x": 2520,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · A Bruised Reed Shall He Not Break"
+  },
+  "MAT-C04-D-P09-AKingdomDivided.dc.html": {
+   "x": 3360,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · A Kingdom Divided"
+  },
+  "MAT-C04-D-P10-AKingdomDivided.dc.html": {
+   "x": 0,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · A Kingdom Divided"
+  },
+  "MAT-C04-D-P11-AKingdomDivided.dc.html": {
+   "x": 840,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · A Kingdom Divided"
+  },
+  "MAT-C04-D-P12-TheSignOfJonah.dc.html": {
+   "x": 1680,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · The Sign of Jonah"
+  },
+  "MAT-C04-D-P13-TheSignOfJonah.dc.html": {
+   "x": 2520,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The Sign of Jonah"
+  },
+  "MAT-C04-D-P14-MyMotherAndMyBreth.dc.html": {
+   "x": 3360,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · My Mother and My Brethren"
+  },
+  "MAT-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · The Kingdom of Heaven Is Like"
+  },
+  "MAT-C05-D-P01-TheSower.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Sower"
+  },
+  "MAT-C05-D-P02-TheSower.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · The Sower"
+  },
+  "MAT-C05-D-P03-TheSower.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The Sower"
+  },
+  "MAT-C05-D-P04-TheSower.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The Sower"
+  },
+  "MAT-C05-D-P05-TheTaresOfTheField.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · The Tares of the Field"
+  },
+  "MAT-C05-D-P06-TheTaresOfTheField.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · The Tares of the Field"
+  },
+  "MAT-C05-D-P07-AGrainOfMustardSee.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · A Grain of Mustard Seed"
+  },
+  "MAT-C05-D-P08-AGrainOfMustardSee.dc.html": {
+   "x": 2520,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · A Grain of Mustard Seed"
+  },
+  "MAT-C05-D-P09-AGrainOfMustardSee.dc.html": {
+   "x": 3360,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · A Grain of Mustard Seed"
+  },
+  "MAT-C05-D-P10-ThePearlOfGreatPri.dc.html": {
+   "x": 0,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · The Pearl of Great Price"
+  },
+  "MAT-C05-D-P11-ThePearlOfGreatPri.dc.html": {
+   "x": 840,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · The Pearl of Great Price"
+  },
+  "MAT-C05-D-P12-JohnTheBaptist.dc.html": {
+   "x": 1680,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · John the Baptist"
+  },
+  "MAT-C05-D-P13-JohnTheBaptist.dc.html": {
+   "x": 2520,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · John the Baptist"
+  },
+  "MAT-C05-D-P14-FiveLoavesAndTwoFi.dc.html": {
+   "x": 3360,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P15-FiveLoavesAndTwoFi.dc.html": {
+   "x": 0,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P16-FiveLoavesAndTwoFi.dc.html": {
+   "x": 840,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P17-FiveLoavesAndTwoFi.dc.html": {
+   "x": 1680,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P18-FiveLoavesAndTwoFi.dc.html": {
+   "x": 2520,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · Five Loaves and Two Fishes"
+  },
+  "MAT-C05-D-P19-FiveLoavesAndTwoFi.dc.html": {
+   "x": 3360,
+   "y": 28000,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · Five Loaves and Two Fishes"
+  },
+  "MAT-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Thou Art the Christ"
+  },
+  "MAT-C06-D-P01-TheTraditionOfTheE.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The Tradition of the Elders"
+  },
+  "MAT-C06-D-P02-TheTraditionOfTheE.dc.html": {
+   "x": 1680,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The Tradition of the Elders"
+  },
+  "MAT-C06-D-P03-TheTraditionOfTheE.dc.html": {
+   "x": 2520,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · The Tradition of the Elders"
+  },
+  "MAT-C06-D-P04-OWomanGreatIsThyFa.dc.html": {
+   "x": 3360,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · O Woman, Great Is Thy Faith"
+  },
+  "MAT-C06-D-P05-OWomanGreatIsThyFa.dc.html": {
+   "x": 0,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · O Woman, Great Is Thy Faith"
+  },
+  "MAT-C06-D-P06-SevenLoaves.dc.html": {
+   "x": 840,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "101 · Seven Loaves"
+  },
+  "MAT-C06-D-P07-SevenLoaves.dc.html": {
+   "x": 1680,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "102 · Seven Loaves"
+  },
+  "MAT-C06-D-P08-TheSignsOfTheTimes.dc.html": {
+   "x": 2520,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "103 · The Signs of the Times"
+  },
+  "MAT-C06-D-P09-TheSignsOfTheTimes.dc.html": {
+   "x": 3360,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "104 · The Signs of the Times"
+  },
+  "MAT-C06-D-P10-ThouArtTheChrist.dc.html": {
+   "x": 0,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "105 · Thou Art the Christ"
+  },
+  "MAT-C06-D-P11-GetTheeBehindMe.dc.html": {
+   "x": 840,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "106 · Get Thee behind Me"
+  },
+  "MAT-C06-D-P12-GetTheeBehindMe.dc.html": {
+   "x": 1680,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "107 · Get Thee behind Me"
+  },
+  "MAT-C06-D-P13-HeWasTransfigured.dc.html": {
+   "x": 2520,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "108 · He Was Transfigured"
+  },
+  "MAT-C06-D-P14-HeWasTransfigured.dc.html": {
+   "x": 3360,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "109 · He Was Transfigured"
+  },
+  "MAT-C06-D-P15-OFaithlessAndPerve.dc.html": {
+   "x": 0,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "110 · O Faithless and Perverse Generation"
+  },
+  "MAT-C06-D-P16-OFaithlessAndPerve.dc.html": {
+   "x": 840,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "111 · O Faithless and Perverse Generation"
+  },
+  "MAT-C06-D-P17-OFaithlessAndPerve.dc.html": {
+   "x": 1680,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "112 · O Faithless and Perverse Generation"
+  },
+  "MAT-C06-D-P18-OFaithlessAndPerve.dc.html": {
+   "x": 2520,
+   "y": 33300,
+   "w": 760,
+   "h": 1080,
+   "title": "113 · O Faithless and Perverse Generation"
+  },
+  "MAT-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · The First Shall Be Last"
+  },
+  "MAT-C07-D-P01-AsLittleChildren.dc.html": {
+   "x": 840,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "114 · As Little Children"
+  },
+  "MAT-C07-D-P02-AsLittleChildren.dc.html": {
+   "x": 1680,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "115 · As Little Children"
+  },
+  "MAT-C07-D-P03-TheNinetyAndNine.dc.html": {
+   "x": 2520,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "116 · The Ninety and Nine"
+  },
+  "MAT-C07-D-P04-SeventyTimesSeven.dc.html": {
+   "x": 3360,
+   "y": 35000,
+   "w": 760,
+   "h": 1080,
+   "title": "117 · Seventy Times Seven"
+  },
+  "MAT-C07-D-P05-SeventyTimesSeven.dc.html": {
+   "x": 0,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "118 · Seventy Times Seven"
+  },
+  "MAT-C07-D-P06-SeventyTimesSeven.dc.html": {
+   "x": 840,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "119 · Seventy Times Seven"
+  },
+  "MAT-C07-D-P07-WhatGodHathJoinedT.dc.html": {
+   "x": 1680,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "120 · What God Hath Joined Together"
+  },
+  "MAT-C07-D-P08-WhatGodHathJoinedT.dc.html": {
+   "x": 2520,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "121 · What God Hath Joined Together"
+  },
+  "MAT-C07-D-P09-WhatGodHathJoinedT.dc.html": {
+   "x": 3360,
+   "y": 36200,
+   "w": 760,
+   "h": 1080,
+   "title": "122 · What God Hath Joined Together"
+  },
+  "MAT-C07-D-P10-OneThingThouLackes.dc.html": {
+   "x": 0,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P11-OneThingThouLackes.dc.html": {
+   "x": 840,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P12-OneThingThouLackes.dc.html": {
+   "x": 1680,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · One Thing Thou Lackest"
+  },
+  "MAT-C07-D-P13-TheLaborersInTheVi.dc.html": {
+   "x": 2520,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · The Laborers in the Vineyard"
+  },
+  "MAT-C07-D-P14-TheLaborersInTheVi.dc.html": {
+   "x": 3360,
+   "y": 37400,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · The Laborers in the Vineyard"
+  },
+  "MAT-C07-D-P15-TheLaborersInTheVi.dc.html": {
+   "x": 0,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · The Laborers in the Vineyard"
+  },
+  "MAT-C07-D-P16-TheCupThatIAmAbout.dc.html": {
+   "x": 840,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · The Cup That I Am about to Drink"
+  },
+  "MAT-C07-D-P17-TheCupThatIAmAbout.dc.html": {
+   "x": 1680,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · The Cup That I Am about to Drink"
+  },
+  "MAT-C07-D-P18-TwoBlindMenAtJeric.dc.html": {
+   "x": 2520,
+   "y": 38600,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Two Blind Men at Jericho"
+  },
+  "MAT-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · Hosanna to the Son of David"
+  },
+  "MAT-C08-D-P01-ThyKingCometh.dc.html": {
+   "x": 840,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Thy King Cometh"
+  },
+  "MAT-C08-D-P02-ThyKingCometh.dc.html": {
+   "x": 1680,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Thy King Cometh"
+  },
+  "MAT-C08-D-P03-AHouseOfPrayer.dc.html": {
+   "x": 2520,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · A House of Prayer"
+  },
+  "MAT-C08-D-P04-AHouseOfPrayer.dc.html": {
+   "x": 3360,
+   "y": 40300,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · A House of Prayer"
+  },
+  "MAT-C08-D-P05-TheFigTree.dc.html": {
+   "x": 0,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · The Fig Tree"
+  },
+  "MAT-C08-D-P06-ByWhatAuthority.dc.html": {
+   "x": 840,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · By What Authority?"
+  },
+  "MAT-C08-D-P07-TheTwoSons.dc.html": {
+   "x": 1680,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · The Two Sons"
+  },
+  "MAT-C08-D-P08-TheHusbandmen.dc.html": {
+   "x": 2520,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · The Husbandmen"
+  },
+  "MAT-C08-D-P09-TheHusbandmen.dc.html": {
+   "x": 3360,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · The Husbandmen"
+  },
+  "MAT-C08-D-P10-TheHusbandmen.dc.html": {
+   "x": 0,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · The Husbandmen"
+  },
+  "MAT-C08-D-P11-TheMarriageFeast.dc.html": {
+   "x": 840,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · The Marriage Feast"
+  },
+  "MAT-C08-D-P12-TheMarriageFeast.dc.html": {
+   "x": 1680,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · The Marriage Feast"
+  },
+  "MAT-C08-D-P13-TheMarriageFeast.dc.html": {
+   "x": 2520,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · The Marriage Feast"
+  },
+  "MAT-C08-D-P14-RenderUntoCsar.dc.html": {
+   "x": 3360,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Render unto Cæsar"
+  },
+  "MAT-C08-D-P15-RenderUntoCsar.dc.html": {
+   "x": 0,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Render unto Cæsar"
+  },
+  "MAT-C08-D-P16-WhoseWifeShallSheB.dc.html": {
+   "x": 840,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Whose Wife Shall She Be?"
+  },
+  "MAT-C08-D-P17-TheGreatCommandmen.dc.html": {
+   "x": 1680,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · The Great Commandment"
+  },
+  "MAT-C08-D-P18-TheGreatCommandmen.dc.html": {
+   "x": 2520,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The Great Commandment"
+  },
+  "MAT-C08-D-P19-TheGreatCommandmen.dc.html": {
+   "x": 3360,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · The Great Commandment"
+  },
+  "MAT-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · The Son of Man Cometh"
+  },
+  "MAT-C09-D-P01-WoeUntoYou.dc.html": {
+   "x": 840,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · Woe unto You"
+  },
+  "MAT-C09-D-P02-WoeUntoYou.dc.html": {
+   "x": 1680,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · Woe unto You"
+  },
+  "MAT-C09-D-P03-WoeUntoYou.dc.html": {
+   "x": 2520,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · Woe unto You"
+  },
+  "MAT-C09-D-P04-WoeUntoYou.dc.html": {
+   "x": 3360,
+   "y": 45600,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Woe unto You"
+  },
+  "MAT-C09-D-P05-WoeUntoYou.dc.html": {
+   "x": 0,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Woe unto You"
+  },
+  "MAT-C09-D-P06-TheSignOfThyComing.dc.html": {
+   "x": 840,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · The Sign of Thy Coming"
+  },
+  "MAT-C09-D-P07-TheSignOfThyComing.dc.html": {
+   "x": 1680,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · The Sign of Thy Coming"
+  },
+  "MAT-C09-D-P08-TheSignOfThyComing.dc.html": {
+   "x": 2520,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · The Sign of Thy Coming"
+  },
+  "MAT-C09-D-P09-TheSignOfThyComing.dc.html": {
+   "x": 3360,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · The Sign of Thy Coming"
+  },
+  "MAT-C09-D-P10-ComingOnTheCloudsO.dc.html": {
+   "x": 0,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · Coming on the Clouds of Heaven"
+  },
+  "MAT-C09-D-P11-ComingOnTheCloudsO.dc.html": {
+   "x": 840,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Coming on the Clouds of Heaven"
+  },
+  "MAT-C09-D-P12-WatchTherefore.dc.html": {
+   "x": 1680,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Watch Therefore"
+  },
+  "MAT-C09-D-P13-WatchTherefore.dc.html": {
+   "x": 2520,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Watch Therefore"
+  },
+  "MAT-C09-D-P14-TheTenVirgins.dc.html": {
+   "x": 3360,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · The Ten Virgins"
+  },
+  "MAT-C09-D-P15-TheTenVirgins.dc.html": {
+   "x": 0,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · The Ten Virgins"
+  },
+  "MAT-C09-D-P16-TheTalents.dc.html": {
+   "x": 840,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · The Talents"
+  },
+  "MAT-C09-D-P17-TheTalents.dc.html": {
+   "x": 1680,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · The Talents"
+  },
+  "MAT-C09-D-P18-TheTalents.dc.html": {
+   "x": 2520,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · The Talents"
+  },
+  "MAT-C09-D-P19-TheThroneOfHisGlor.dc.html": {
+   "x": 3360,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · The Throne of His Glory"
+  },
+  "MAT-C09-D-P20-TheThroneOfHisGlor.dc.html": {
+   "x": 0,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · The Throne of His Glory"
+  },
+  "MAT-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Gethsemane"
+  },
+  "MAT-C10-D-P01-ThePassoverCometh.dc.html": {
+   "x": 840,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · The Passover Cometh"
+  },
+  "MAT-C10-D-P02-ForMyBurial.dc.html": {
+   "x": 1680,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · For My Burial"
+  },
+  "MAT-C10-D-P03-TheLastSupper.dc.html": {
+   "x": 2520,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · The Last Supper"
+  },
+  "MAT-C10-D-P04-TheLastSupper.dc.html": {
+   "x": 3360,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · The Last Supper"
+  },
+  "MAT-C10-D-P05-TheLastSupper.dc.html": {
+   "x": 0,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · The Last Supper"
+  },
+  "MAT-C10-D-P06-BeforeTheCockCrow.dc.html": {
+   "x": 840,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · Before the Cock Crow"
+  },
+  "MAT-C10-D-P07-BeforeTheCockCrow.dc.html": {
+   "x": 1680,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Before the Cock Crow"
+  },
+  "MAT-C10-D-P08-Gethsemane.dc.html": {
+   "x": 2520,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · Gethsemane"
+  },
+  "MAT-C10-D-P09-Gethsemane.dc.html": {
+   "x": 3360,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Gethsemane"
+  },
+  "MAT-C10-D-P10-FriendDoThatForWhi.dc.html": {
+   "x": 0,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Friend, Do That for Which Thou Art Come"
+  },
+  "MAT-C10-D-P11-FriendDoThatForWhi.dc.html": {
+   "x": 840,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Friend, Do That for Which Thou Art Come"
+  },
+  "MAT-C10-D-P12-BeforeCaiaphas.dc.html": {
+   "x": 1680,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Before Caiaphas"
+  },
+  "MAT-C10-D-P13-BeforeCaiaphas.dc.html": {
+   "x": 2520,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Before Caiaphas"
+  },
+  "MAT-C10-D-P14-BeforeCaiaphas.dc.html": {
+   "x": 3360,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Before Caiaphas"
+  },
+  "MAT-C10-D-P15-ThouShaltDenyMeThr.dc.html": {
+   "x": 0,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Thou Shalt Deny Me Thrice"
+  },
+  "MAT-C10-D-P16-ThouShaltDenyMeThr.dc.html": {
+   "x": 840,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Thou Shalt Deny Me Thrice"
+  },
+  "MAT-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · He Is Risen"
+  },
+  "MAT-C11-D-P01-DeliveredUntoPilat.dc.html": {
+   "x": 840,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Delivered unto Pilate"
+  },
+  "MAT-C11-D-P02-TheFieldOfBlood.dc.html": {
+   "x": 1680,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · The Field of Blood"
+  },
+  "MAT-C11-D-P03-ArtThouTheKingOfTh.dc.html": {
+   "x": 2520,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Art Thou the King of the Jews?"
+  },
+  "MAT-C11-D-P04-Barabbas.dc.html": {
+   "x": 3360,
+   "y": 57400,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · Barabbas"
+  },
+  "MAT-C11-D-P05-Barabbas.dc.html": {
+   "x": 0,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · Barabbas"
+  },
+  "MAT-C11-D-P06-Barabbas.dc.html": {
+   "x": 840,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · Barabbas"
+  },
+  "MAT-C11-D-P07-TheKingOfTheJews.dc.html": {
+   "x": 1680,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · The King of the Jews"
+  },
+  "MAT-C11-D-P08-Golgotha.dc.html": {
+   "x": 2520,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Golgotha"
+  },
+  "MAT-C11-D-P09-Golgotha.dc.html": {
+   "x": 3360,
+   "y": 58600,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · Golgotha"
+  },
+  "MAT-C11-D-P10-DarknessOverAllThe.dc.html": {
+   "x": 0,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Darkness over All the Land"
+  },
+  "MAT-C11-D-P11-TheVeilRentInTwo.dc.html": {
+   "x": 840,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · The Veil Rent in Two"
+  },
+  "MAT-C11-D-P12-TheSepulchre.dc.html": {
+   "x": 1680,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · The Sepulchre"
+  },
+  "MAT-C11-D-P13-TheSepulchre.dc.html": {
+   "x": 2520,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · The Sepulchre"
+  },
+  "MAT-C11-D-P14-HeIsRisen.dc.html": {
+   "x": 3360,
+   "y": 59800,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · He Is Risen"
+  },
+  "MAT-C11-D-P15-HeIsRisen.dc.html": {
+   "x": 0,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · He Is Risen"
+  },
+  "MAT-C11-D-P16-TheGuard.dc.html": {
+   "x": 840,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · The Guard"
+  },
+  "MAT-C11-D-P17-LoIAmWithYouAlways.dc.html": {
+   "x": 1680,
+   "y": 61000,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · Lo, I Am with You Always"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "MAT-C01-00-Title.dc.html",
+  "MAT-C01-A-P01-TheBookOfTheGeneration.dc.html",
+  "MAT-C01-D-P01-Immanuel.dc.html",
+  "MAT-C01-D-P02-Immanuel.dc.html",
+  "MAT-C01-D-P03-WiseMenFromTheEast.dc.html",
+  "MAT-C01-D-P04-WiseMenFromTheEast.dc.html",
+  "MAT-C01-D-P05-HerodTheKing.dc.html",
+  "MAT-C01-D-P06-ExceedingGreatJoy.dc.html",
+  "MAT-C01-D-P07-RachelWeepingForHe.dc.html",
+  "MAT-C01-D-P08-HeShallBeCalledANa.dc.html",
+  "MAT-C01-D-P09-TheVoiceInTheWilde.dc.html",
+  "MAT-C01-D-P10-FruitWorthyOfRepen.dc.html",
+  "MAT-C01-D-P11-FruitWorthyOfRepen.dc.html",
+  "MAT-C01-D-P12-ThisIsMyBelovedSon.dc.html",
+  "MAT-C01-D-P13-ItIsWritten.dc.html",
+  "MAT-C01-D-P14-ThePinnacleOfTheTe.dc.html",
+  "MAT-C01-D-P15-AnExceedingHighMou.dc.html",
+  "MAT-C01-D-P16-AGreatLight.dc.html",
+  "MAT-C01-D-P17-FishersOfMen.dc.html",
+  "MAT-C01-D-P18-GreatMultitudes.dc.html",
+  "MAT-C02-00-Title.dc.html",
+  "MAT-C02-D-P01-Blessed.dc.html",
+  "MAT-C02-D-P02-Blessed.dc.html",
+  "MAT-C02-D-P03-TheLightOfTheWorld.dc.html",
+  "MAT-C02-D-P04-NotToDestroyButToF.dc.html",
+  "MAT-C02-D-P05-ButISayUntoYou.dc.html",
+  "MAT-C02-D-P06-ButISayUntoYou.dc.html",
+  "MAT-C02-D-P07-SwearNotAtAll.dc.html",
+  "MAT-C02-D-P08-LoveYourEnemies.dc.html",
+  "MAT-C02-D-P09-InSecret.dc.html",
+  "MAT-C02-D-P10-InSecret.dc.html",
+  "MAT-C02-D-P11-OurFatherWhoArtInH.dc.html",
+  "MAT-C02-D-P12-OurFatherWhoArtInH.dc.html",
+  "MAT-C02-D-P13-TreasuresInHeaven.dc.html",
+  "MAT-C02-D-P14-TreasuresInHeaven.dc.html",
+  "MAT-C02-D-P15-TreasuresInHeaven.dc.html",
+  "MAT-C02-D-P16-JudgeNot.dc.html",
+  "MAT-C02-D-P17-JudgeNot.dc.html",
+  "MAT-C02-D-P18-TheNarrowGate.dc.html",
+  "MAT-C02-D-P19-ByTheirFruits.dc.html",
+  "MAT-C02-D-P20-UponTheRock.dc.html",
+  "MAT-C02-D-P21-UponTheRock.dc.html",
+  "MAT-C03-00-Title.dc.html",
+  "MAT-C03-D-P01-IfThouWilt.dc.html",
+  "MAT-C03-D-P02-SoGreatFaith.dc.html",
+  "MAT-C03-D-P03-SoGreatFaith.dc.html",
+  "MAT-C03-D-P04-HeTouchedHerHand.dc.html",
+  "MAT-C03-D-P05-FollowMe.dc.html",
+  "MAT-C03-D-P06-EvenTheWindsAndThe.dc.html",
+  "MAT-C03-D-P07-TheCountryOfTheGad.dc.html",
+  "MAT-C03-D-P08-TheCountryOfTheGad.dc.html",
+  "MAT-C03-D-P09-ThySinsAreForgiven.dc.html",
+  "MAT-C03-D-P10-NotTheRighteousBut.dc.html",
+  "MAT-C03-D-P11-NotTheRighteousBut.dc.html",
+  "MAT-C03-D-P12-TheDamselIsNotDead.dc.html",
+  "MAT-C03-D-P13-TheDamselIsNotDead.dc.html",
+  "MAT-C03-D-P14-AccordingToYourFai.dc.html",
+  "MAT-C03-D-P15-TheHarvestIndeedIs.dc.html",
+  "MAT-C03-D-P16-TheTwelveApostles.dc.html",
+  "MAT-C03-D-P17-TheTwelveApostles.dc.html",
+  "MAT-C03-D-P18-SheepInTheMidstOfW.dc.html",
+  "MAT-C03-D-P19-SheepInTheMidstOfW.dc.html",
+  "MAT-C03-D-P20-FearThemNot.dc.html",
+  "MAT-C03-D-P21-NotPeaceButASword.dc.html",
+  "MAT-C03-D-P22-NotPeaceButASword.dc.html",
+  "MAT-C04-00-Title.dc.html",
+  "MAT-C04-D-P01-ArtThouHeThatComet.dc.html",
+  "MAT-C04-D-P02-ArtThouHeThatComet.dc.html",
+  "MAT-C04-D-P03-WePipedUntoYou.dc.html",
+  "MAT-C04-D-P04-ComeUntoMe.dc.html",
+  "MAT-C04-D-P05-LordOfTheSabbath.dc.html",
+  "MAT-C04-D-P06-StretchForthThyHan.dc.html",
+  "MAT-C04-D-P07-StretchForthThyHan.dc.html",
+  "MAT-C04-D-P08-ABruisedReedShallH.dc.html",
+  "MAT-C04-D-P09-AKingdomDivided.dc.html",
+  "MAT-C04-D-P10-AKingdomDivided.dc.html",
+  "MAT-C04-D-P11-AKingdomDivided.dc.html",
+  "MAT-C04-D-P12-TheSignOfJonah.dc.html",
+  "MAT-C04-D-P13-TheSignOfJonah.dc.html",
+  "MAT-C04-D-P14-MyMotherAndMyBreth.dc.html",
+  "MAT-C05-00-Title.dc.html",
+  "MAT-C05-D-P01-TheSower.dc.html",
+  "MAT-C05-D-P02-TheSower.dc.html",
+  "MAT-C05-D-P03-TheSower.dc.html",
+  "MAT-C05-D-P04-TheSower.dc.html",
+  "MAT-C05-D-P05-TheTaresOfTheField.dc.html",
+  "MAT-C05-D-P06-TheTaresOfTheField.dc.html",
+  "MAT-C05-D-P07-AGrainOfMustardSee.dc.html",
+  "MAT-C05-D-P08-AGrainOfMustardSee.dc.html",
+  "MAT-C05-D-P09-AGrainOfMustardSee.dc.html",
+  "MAT-C05-D-P10-ThePearlOfGreatPri.dc.html",
+  "MAT-C05-D-P11-ThePearlOfGreatPri.dc.html",
+  "MAT-C05-D-P12-JohnTheBaptist.dc.html",
+  "MAT-C05-D-P13-JohnTheBaptist.dc.html",
+  "MAT-C05-D-P14-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P15-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P16-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P17-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P18-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C05-D-P19-FiveLoavesAndTwoFi.dc.html",
+  "MAT-C06-00-Title.dc.html",
+  "MAT-C06-D-P01-TheTraditionOfTheE.dc.html",
+  "MAT-C06-D-P02-TheTraditionOfTheE.dc.html",
+  "MAT-C06-D-P03-TheTraditionOfTheE.dc.html",
+  "MAT-C06-D-P04-OWomanGreatIsThyFa.dc.html",
+  "MAT-C06-D-P05-OWomanGreatIsThyFa.dc.html",
+  "MAT-C06-D-P06-SevenLoaves.dc.html",
+  "MAT-C06-D-P07-SevenLoaves.dc.html",
+  "MAT-C06-D-P08-TheSignsOfTheTimes.dc.html",
+  "MAT-C06-D-P09-TheSignsOfTheTimes.dc.html",
+  "MAT-C06-D-P10-ThouArtTheChrist.dc.html",
+  "MAT-C06-D-P11-GetTheeBehindMe.dc.html",
+  "MAT-C06-D-P12-GetTheeBehindMe.dc.html",
+  "MAT-C06-D-P13-HeWasTransfigured.dc.html",
+  "MAT-C06-D-P14-HeWasTransfigured.dc.html",
+  "MAT-C06-D-P15-OFaithlessAndPerve.dc.html",
+  "MAT-C06-D-P16-OFaithlessAndPerve.dc.html",
+  "MAT-C06-D-P17-OFaithlessAndPerve.dc.html",
+  "MAT-C06-D-P18-OFaithlessAndPerve.dc.html",
+  "MAT-C07-00-Title.dc.html",
+  "MAT-C07-D-P01-AsLittleChildren.dc.html",
+  "MAT-C07-D-P02-AsLittleChildren.dc.html",
+  "MAT-C07-D-P03-TheNinetyAndNine.dc.html",
+  "MAT-C07-D-P04-SeventyTimesSeven.dc.html",
+  "MAT-C07-D-P05-SeventyTimesSeven.dc.html",
+  "MAT-C07-D-P06-SeventyTimesSeven.dc.html",
+  "MAT-C07-D-P07-WhatGodHathJoinedT.dc.html",
+  "MAT-C07-D-P08-WhatGodHathJoinedT.dc.html",
+  "MAT-C07-D-P09-WhatGodHathJoinedT.dc.html",
+  "MAT-C07-D-P10-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P11-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P12-OneThingThouLackes.dc.html",
+  "MAT-C07-D-P13-TheLaborersInTheVi.dc.html",
+  "MAT-C07-D-P14-TheLaborersInTheVi.dc.html",
+  "MAT-C07-D-P15-TheLaborersInTheVi.dc.html",
+  "MAT-C07-D-P16-TheCupThatIAmAbout.dc.html",
+  "MAT-C07-D-P17-TheCupThatIAmAbout.dc.html",
+  "MAT-C07-D-P18-TwoBlindMenAtJeric.dc.html",
+  "MAT-C08-00-Title.dc.html",
+  "MAT-C08-D-P01-ThyKingCometh.dc.html",
+  "MAT-C08-D-P02-ThyKingCometh.dc.html",
+  "MAT-C08-D-P03-AHouseOfPrayer.dc.html",
+  "MAT-C08-D-P04-AHouseOfPrayer.dc.html",
+  "MAT-C08-D-P05-TheFigTree.dc.html",
+  "MAT-C08-D-P06-ByWhatAuthority.dc.html",
+  "MAT-C08-D-P07-TheTwoSons.dc.html",
+  "MAT-C08-D-P08-TheHusbandmen.dc.html",
+  "MAT-C08-D-P09-TheHusbandmen.dc.html",
+  "MAT-C08-D-P10-TheHusbandmen.dc.html",
+  "MAT-C08-D-P11-TheMarriageFeast.dc.html",
+  "MAT-C08-D-P12-TheMarriageFeast.dc.html",
+  "MAT-C08-D-P13-TheMarriageFeast.dc.html",
+  "MAT-C08-D-P14-RenderUntoCsar.dc.html",
+  "MAT-C08-D-P15-RenderUntoCsar.dc.html",
+  "MAT-C08-D-P16-WhoseWifeShallSheB.dc.html",
+  "MAT-C08-D-P17-TheGreatCommandmen.dc.html",
+  "MAT-C08-D-P18-TheGreatCommandmen.dc.html",
+  "MAT-C08-D-P19-TheGreatCommandmen.dc.html",
+  "MAT-C09-00-Title.dc.html",
+  "MAT-C09-D-P01-WoeUntoYou.dc.html",
+  "MAT-C09-D-P02-WoeUntoYou.dc.html",
+  "MAT-C09-D-P03-WoeUntoYou.dc.html",
+  "MAT-C09-D-P04-WoeUntoYou.dc.html",
+  "MAT-C09-D-P05-WoeUntoYou.dc.html",
+  "MAT-C09-D-P06-TheSignOfThyComing.dc.html",
+  "MAT-C09-D-P07-TheSignOfThyComing.dc.html",
+  "MAT-C09-D-P08-TheSignOfThyComing.dc.html",
+  "MAT-C09-D-P09-TheSignOfThyComing.dc.html",
+  "MAT-C09-D-P10-ComingOnTheCloudsO.dc.html",
+  "MAT-C09-D-P11-ComingOnTheCloudsO.dc.html",
+  "MAT-C09-D-P12-WatchTherefore.dc.html",
+  "MAT-C09-D-P13-WatchTherefore.dc.html",
+  "MAT-C09-D-P14-TheTenVirgins.dc.html",
+  "MAT-C09-D-P15-TheTenVirgins.dc.html",
+  "MAT-C09-D-P16-TheTalents.dc.html",
+  "MAT-C09-D-P17-TheTalents.dc.html",
+  "MAT-C09-D-P18-TheTalents.dc.html",
+  "MAT-C09-D-P19-TheThroneOfHisGlor.dc.html",
+  "MAT-C09-D-P20-TheThroneOfHisGlor.dc.html",
+  "MAT-C10-00-Title.dc.html",
+  "MAT-C10-D-P01-ThePassoverCometh.dc.html",
+  "MAT-C10-D-P02-ForMyBurial.dc.html",
+  "MAT-C10-D-P03-TheLastSupper.dc.html",
+  "MAT-C10-D-P04-TheLastSupper.dc.html",
+  "MAT-C10-D-P05-TheLastSupper.dc.html",
+  "MAT-C10-D-P06-BeforeTheCockCrow.dc.html",
+  "MAT-C10-D-P07-BeforeTheCockCrow.dc.html",
+  "MAT-C10-D-P08-Gethsemane.dc.html",
+  "MAT-C10-D-P09-Gethsemane.dc.html",
+  "MAT-C10-D-P10-FriendDoThatForWhi.dc.html",
+  "MAT-C10-D-P11-FriendDoThatForWhi.dc.html",
+  "MAT-C10-D-P12-BeforeCaiaphas.dc.html",
+  "MAT-C10-D-P13-BeforeCaiaphas.dc.html",
+  "MAT-C10-D-P14-BeforeCaiaphas.dc.html",
+  "MAT-C10-D-P15-ThouShaltDenyMeThr.dc.html",
+  "MAT-C10-D-P16-ThouShaltDenyMeThr.dc.html",
+  "MAT-C11-00-Title.dc.html",
+  "MAT-C11-D-P01-DeliveredUntoPilat.dc.html",
+  "MAT-C11-D-P02-TheFieldOfBlood.dc.html",
+  "MAT-C11-D-P03-ArtThouTheKingOfTh.dc.html",
+  "MAT-C11-D-P04-Barabbas.dc.html",
+  "MAT-C11-D-P05-Barabbas.dc.html",
+  "MAT-C11-D-P06-Barabbas.dc.html",
+  "MAT-C11-D-P07-TheKingOfTheJews.dc.html",
+  "MAT-C11-D-P08-Golgotha.dc.html",
+  "MAT-C11-D-P09-Golgotha.dc.html",
+  "MAT-C11-D-P10-DarknessOverAllThe.dc.html",
+  "MAT-C11-D-P11-TheVeilRentInTwo.dc.html",
+  "MAT-C11-D-P12-TheSepulchre.dc.html",
+  "MAT-C11-D-P13-TheSepulchre.dc.html",
+  "MAT-C11-D-P14-HeIsRisen.dc.html",
+  "MAT-C11-D-P15-HeIsRisen.dc.html",
+  "MAT-C11-D-P16-TheGuard.dc.html",
+  "MAT-C11-D-P17-LoIAmWithYouAlways.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Matthew Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Son of David (Matthew 1–4)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · The Sermon on the Mount (Matthew 5–7)",
+   "x": 0,
+   "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Harvest Is Plenteous (Matthew 8–10)",
+   "x": 0,
+   "y": 13500
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Lord of the Sabbath (Matthew 11–12)",
+   "x": 0,
+   "y": 20000
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · The Kingdom of Heaven Is Like (Matthew 13–14)",
+   "x": 0,
+   "y": 24100
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Thou Art the Christ (Matthew 15–17)",
+   "x": 0,
+   "y": 29400
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · The First Shall Be Last (Matthew 18–20)",
+   "x": 0,
+   "y": 34700
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · Hosanna to the Son of David (Matthew 21–22)",
+   "x": 0,
+   "y": 40000
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · The Son of Man Cometh (Matthew 23–25)",
+   "x": 0,
+   "y": 45300
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Gethsemane (Matthew 26)",
+   "x": 0,
+   "y": 51800
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · He Is Risen (Matthew 27–28)",
+   "x": 0,
+   "y": 57100
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
