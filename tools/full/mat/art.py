@@ -754,7 +754,7 @@ def multitudes(p, w, h, seed, sick=True):
     after him, some carried on beds, the lame on staves."""
     b = h * 0.94
     o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.4, seed, color="#8A9A6A", amp=16, step=90),
-         lake(w, h, h * 0.46, seed, n=6) if True else "", hills(w, h, h * 0.56, seed + 2, color="#9AAA5A", amp=10, step=70), ground(w, h, h * 0.66, "#B8A86A", dy=0)]
+         lake(w, h, h * 0.46, seed, n=6), hills(w, h, h * 0.56, seed + 2, color="#9AAA5A", amp=10, step=70), ground(w, h, h * 0.66, "#B8A86A", dy=0)]
     s = fit(b, max(h * 0.3, b - 230))
     yb = b - 80 * s
     o.append(crowd(p, w * 0.42, w * 0.96, yb, yb - 110 * s, 9, seed + 1, flip=True))
