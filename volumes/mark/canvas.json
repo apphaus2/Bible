@@ -646,6 +646,118 @@
    "w": 760,
    "h": 1080,
    "title": "84 · Bartimæus"
+  },
+  "MRK-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Hosanna"
+  },
+  "MRK-C07-D-P01-Hosanna.dc.html": {
+   "x": 840,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · Hosanna"
+  },
+  "MRK-C07-D-P02-Hosanna.dc.html": {
+   "x": 1680,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Hosanna"
+  },
+  "MRK-C07-D-P03-AHouseOfPrayer.dc.html": {
+   "x": 2520,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · A House of Prayer"
+  },
+  "MRK-C07-D-P04-HaveFaithInGod.dc.html": {
+   "x": 3360,
+   "y": 27800,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Have Faith in God"
+  },
+  "MRK-C07-D-P05-HaveFaithInGod.dc.html": {
+   "x": 0,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Have Faith in God"
+  },
+  "MRK-C07-D-P06-ByWhatAuthority.dc.html": {
+   "x": 840,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · By What Authority?"
+  },
+  "MRK-C07-D-P07-ByWhatAuthority.dc.html": {
+   "x": 1680,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · By What Authority?"
+  },
+  "MRK-C07-D-P08-TheBelovedSon.dc.html": {
+   "x": 2520,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Beloved Son"
+  },
+  "MRK-C07-D-P09-TheBelovedSon.dc.html": {
+   "x": 3360,
+   "y": 29000,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The Beloved Son"
+  },
+  "MRK-C07-D-P10-RenderUntoCsar.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · Render unto Cæsar"
+  },
+  "MRK-C07-D-P11-TheGodOfTheLiving.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The God of the Living"
+  },
+  "MRK-C07-D-P12-TheFirstCommandmen.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · The First Commandment"
+  },
+  "MRK-C07-D-P13-TheFirstCommandmen.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · The First Commandment"
+  },
+  "MRK-C07-D-P14-DavidSSon.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · David's Son"
+  },
+  "MRK-C07-D-P15-TwoMites.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Two Mites"
   }
  },
  "order": [
@@ -739,7 +851,23 @@
   "MRK-C06-D-P11-AreYeAble.dc.html",
   "MRK-C06-D-P12-Bartimus.dc.html",
   "MRK-C06-D-P13-Bartimus.dc.html",
-  "MRK-C06-D-P14-Bartimus.dc.html"
+  "MRK-C06-D-P14-Bartimus.dc.html",
+  "MRK-C07-00-Title.dc.html",
+  "MRK-C07-D-P01-Hosanna.dc.html",
+  "MRK-C07-D-P02-Hosanna.dc.html",
+  "MRK-C07-D-P03-AHouseOfPrayer.dc.html",
+  "MRK-C07-D-P04-HaveFaithInGod.dc.html",
+  "MRK-C07-D-P05-HaveFaithInGod.dc.html",
+  "MRK-C07-D-P06-ByWhatAuthority.dc.html",
+  "MRK-C07-D-P07-ByWhatAuthority.dc.html",
+  "MRK-C07-D-P08-TheBelovedSon.dc.html",
+  "MRK-C07-D-P09-TheBelovedSon.dc.html",
+  "MRK-C07-D-P10-RenderUntoCsar.dc.html",
+  "MRK-C07-D-P11-TheGodOfTheLiving.dc.html",
+  "MRK-C07-D-P12-TheFirstCommandmen.dc.html",
+  "MRK-C07-D-P13-TheFirstCommandmen.dc.html",
+  "MRK-C07-D-P14-DavidSSon.dc.html",
+  "MRK-C07-D-P15-TwoMites.dc.html"
  ],
  "notes": {
   "Main": {
@@ -790,6 +918,13 @@
    "text": "Chapter 6 · The Last Shall Be First (Mark 9:30–10:52)",
    "x": 0,
    "y": 23400
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Hosanna (Mark 11–12)",
+   "x": 0,
+   "y": 27500
   }
  },
  "designSystems": [],
