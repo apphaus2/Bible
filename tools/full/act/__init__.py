@@ -84,5 +84,7 @@ META = {
      "blurb": "Athens full of idols; the Epicureans and Stoics — what would this babbler say?; Paul on the Areopagus and the altar TO AN UNKNOWN GOD — in him we live, and move, and have our being; Corinth and the tentmakers Aquila and Priscilla; be not afraid, but speak; Gallio on the judgment-seat, caring for none of these things; and Apollos, mighty in the scriptures."},
     {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Great Is Diana", "range": "Acts 19–20", "bible_chapters": [19, 20],
      "blurb": "Ephesus: the twelve who knew only John's baptism; the school of Tyrannus; the sons of Sceva — Jesus I know, and Paul I know; but who are ye?; the books burned; Demetrius and the silver shrines, and the theatre crying Great is Diana of the Ephesians; Eutychus in the window at Troas; and the farewell at Miletus — it is more blessed to give than to receive."},
+    {"module": "ch12", "dir": "chapter-12", "num": "12", "name": "Bound in the Spirit", "range": "Acts 21:1–22:29", "bible_chapters": [21, 22], "span": ["21:1", "22:29"],
+     "blurb": "Kneeling on the beach at Tyre; Agabus and Paul's girdle — I am ready not to be bound only, but also to die at Jerusalem; James and the elders and the four men under a vow; the uproar in the temple and the chief captain's soldiers; Paul borne up the stairs of the castle, then standing on the stairs to speak in the Hebrew language: the road to Damascus once more; Away with such a fellow; and But I am a Roman born."},
   ],
 }
