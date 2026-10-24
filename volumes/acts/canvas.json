@@ -583,6 +583,118 @@
    "w": 760,
    "h": 1080,
    "title": "76 · Æneas and Dorcas"
+  },
+  "ACT-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · What God Hath Cleansed"
+  },
+  "ACT-C06-D-P01-Cornelius.dc.html": {
+   "x": 840,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Cornelius"
+  },
+  "ACT-C06-D-P02-Cornelius.dc.html": {
+   "x": 1680,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Cornelius"
+  },
+  "ACT-C06-D-P03-UponTheHousetop.dc.html": {
+   "x": 2520,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Upon the Housetop"
+  },
+  "ACT-C06-D-P04-UponTheHousetop.dc.html": {
+   "x": 3360,
+   "y": 26100,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Upon the Housetop"
+  },
+  "ACT-C06-D-P05-UponTheHousetop.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Upon the Housetop"
+  },
+  "ACT-C06-D-P06-IMyselfAlsoAmAMan.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · I Myself Also Am a Man"
+  },
+  "ACT-C06-D-P07-IMyselfAlsoAmAMan.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · I Myself Also Am a Man"
+  },
+  "ACT-C06-D-P08-GodIsNoRespecterOf.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · God Is No Respecter of Persons"
+  },
+  "ACT-C06-D-P09-GodIsNoRespecterOf.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · God Is No Respecter of Persons"
+  },
+  "ACT-C06-D-P10-PeterAtJerusalem.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · Peter at Jerusalem"
+  },
+  "ACT-C06-D-P11-PeterAtJerusalem.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Peter at Jerusalem"
+  },
+  "ACT-C06-D-P12-PeterAtJerusalem.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Peter at Jerusalem"
+  },
+  "ACT-C06-D-P13-ChristiansFirstInA.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Christians First in Antioch"
+  },
+  "ACT-C06-D-P14-ChristiansFirstInA.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Christians First in Antioch"
+  },
+  "ACT-C06-D-P15-ChristiansFirstInA.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Christians First in Antioch"
   }
  },
  "order": [
@@ -667,7 +779,23 @@
   "ACT-C05-D-P17-LetDownInABasket.dc.html",
   "ACT-C05-D-P18-neasAndDorcas.dc.html",
   "ACT-C05-D-P19-neasAndDorcas.dc.html",
-  "ACT-C05-D-P20-neasAndDorcas.dc.html"
+  "ACT-C05-D-P20-neasAndDorcas.dc.html",
+  "ACT-C06-00-Title.dc.html",
+  "ACT-C06-D-P01-Cornelius.dc.html",
+  "ACT-C06-D-P02-Cornelius.dc.html",
+  "ACT-C06-D-P03-UponTheHousetop.dc.html",
+  "ACT-C06-D-P04-UponTheHousetop.dc.html",
+  "ACT-C06-D-P05-UponTheHousetop.dc.html",
+  "ACT-C06-D-P06-IMyselfAlsoAmAMan.dc.html",
+  "ACT-C06-D-P07-IMyselfAlsoAmAMan.dc.html",
+  "ACT-C06-D-P08-GodIsNoRespecterOf.dc.html",
+  "ACT-C06-D-P09-GodIsNoRespecterOf.dc.html",
+  "ACT-C06-D-P10-PeterAtJerusalem.dc.html",
+  "ACT-C06-D-P11-PeterAtJerusalem.dc.html",
+  "ACT-C06-D-P12-PeterAtJerusalem.dc.html",
+  "ACT-C06-D-P13-ChristiansFirstInA.dc.html",
+  "ACT-C06-D-P14-ChristiansFirstInA.dc.html",
+  "ACT-C06-D-P15-ChristiansFirstInA.dc.html"
  ],
  "notes": {
   "Main": {
@@ -711,6 +839,13 @@
    "text": "Chapter 5 · The Road to Damascus (Acts 8–9)",
    "x": 0,
    "y": 19300
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · What God Hath Cleansed (Acts 10–11)",
+   "x": 0,
+   "y": 25800
   }
  },
  "designSystems": [],

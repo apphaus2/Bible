@@ -72,5 +72,7 @@ META = {
      "blurb": "Are these things so? — Stephen's defence before the council: Abraham called out of Mesopotamia, Joseph sold into Egypt, Moses at the bush and at the Red sea, the calf, the tabernacle and the house Solomon built — howbeit the Most High dwelleth not in houses made with hands; ye stiffnecked; I see the heavens opened; and the garments laid down at the feet of a young man named Saul: Lord, lay not this sin to their charge."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "The Road to Damascus", "range": "Acts 8–9", "bible_chapters": [8, 9],
      "blurb": "Saul laying waste the church; Philip in Samaria and Simon the sorcerer — thy silver perish with thee; the Ethiopian reading Isaiah in his chariot on the desert road — understandest thou what thou readest?; then near Damascus a light out of heaven: Saul, Saul, why persecutest thou me?; three days without sight; Ananias and the scales; the basket let down over the wall; Æneas, arise; and Tabitha, arise."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "What God Hath Cleansed", "range": "Acts 10–11", "bible_chapters": [10, 11],
+     "blurb": "Cornelius the centurion at the ninth hour and the angel of God; Peter on the housetop at Joppa and the great sheet let down by four corners — what God hath cleansed, make not thou common; Stand up; I myself also am a man; God is no respecter of persons, and the Holy Spirit fell on the Gentiles; then Antioch, Barnabas and Saul, and the disciples called Christians first."},
   ],
 }

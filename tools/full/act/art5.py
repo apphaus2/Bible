@@ -243,11 +243,13 @@ def basket_wall(p, w, h, seed):
     xx = x0
     while xx < x1 - bw:
         o.append(f'<rect x="{f(xx)}" y="{f(h * 0.1 - bw)}" width="{f(bw)}" height="{f(bw + 1)}" fill="#6A5A54" stroke="{INK}" stroke-width="1.6"></rect>'); xx += bw * 1.9
-    wx, wy = w * 0.5, h * 0.26
-    o.append(f'<rect x="{f(wx - 30)}" y="{f(wy - 36)}" width="60" height="50" fill="#FFC14D" stroke="{INK}" stroke-width="2"></rect>')
     s = max(0.4, h / 380)
-    o.append(f'<g transform="translate({f(wx)} {f(wy - 4)})">' + mk.person(p, -12, 14, round(s * 0.7, 3), body=SKIN, cloth="#4A4A5A", kind="Tunic", sw=3, up=[(-22, -158), (-28, -130), (-30, -100)]) + '</g>')
-    by = h * 0.66
+    wx, wy = w * 0.5, h * 0.1 + 70 * s
+    o.append(f'<rect x="{f(wx - 46 * s)}" y="{f(wy - 60 * s)}" width="{f(92 * s)}" height="{f(74 * s)}" fill="#FFC14D" stroke="{INK}" stroke-width="2"></rect>')
+    o.append(f'<clipPath id="{p}win"><rect x="{f(wx - 46 * s)}" y="{f(wy - 60 * s)}" width="{f(92 * s)}" height="{f(74 * s)}"></rect></clipPath>'
+             f'<g clip-path="url(#{p}win)">' + mk.person(p, round(wx - 14 * s), round(wy + 60 * s), round(s * 0.5, 3), body=SKIN, cloth="#4A4A5A", kind="Tunic", sw=3,
+                                                         up=[(-22, -158), (-28, -130), (-30, -100)], extra=A.BLACK_BEARD) + '</g>')
+    by = h * 0.72
     o.append(f'<path d="M{f(wx)} {f(wy + 10)} L {f(wx)} {f(by - 60 * s)}" stroke="#C8A878" stroke-width="3"></path>')
     o.append(f'<g transform="translate({f(wx)} {f(by)})">' + mk.person(p, 0, 0, round(s, 3), body=SKIN, cloth=ROBES["paul"], kind="Robe", sw=3,
                                                                    extra=A.headcloth("#5A4A3A", cord="#2A1A10") + beard("#3A2A1A")) + '</g>')
