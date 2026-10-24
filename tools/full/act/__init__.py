@@ -88,5 +88,7 @@ META = {
      "blurb": "Kneeling on the beach at Tyre; Agabus and Paul's girdle — I am ready not to be bound only, but also to die at Jerusalem; James and the elders and the four men under a vow; the uproar in the temple and the chief captain's soldiers; Paul borne up the stairs of the castle, then standing on the stairs to speak in the Hebrew language: the road to Damascus once more; Away with such a fellow; and But I am a Roman born."},
     {"module": "ch13", "dir": "chapter-13", "num": "13", "name": "Before Felix", "range": "Acts 22:30–24:27", "bible_chapters": [22, 23, 24], "span": ["22:30", "24:27"],
      "blurb": "Before the council — God shall smite thee, thou whited wall; I am a Pharisee, a son of Pharisees, and the assembly divided; Be of good cheer: so must thou bear witness also at Rome; the forty under a curse and Paul's sister's son; the escort by night to Cæsarea; Tertullus the orator before Felix; and Felix and Drusilla hearing of righteousness, and self-control, and the judgment to come."},
+    {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Before Agrippa", "range": "Acts 25–26", "bible_chapters": [25, 26],
+     "blurb": "Festus on the judgment-seat — I appeal unto Cæsar; unto Cæsar shalt thou go; Agrippa and Bernice come with great pomp; Paul stretches forth his hand: the light from heaven above the brightness of the sun, and I was not disobedient unto the heavenly vision; Paul, thou art mad; With but little persuasion thou wouldest fain make me a Christian; and except these bonds."},
   ],
 }

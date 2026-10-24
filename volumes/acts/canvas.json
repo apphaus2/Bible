@@ -1402,6 +1402,90 @@
    "w": 760,
    "h": 1080,
    "title": "185 · Felix and Drusilla"
+  },
+  "ACT-C14-00-Title.dc.html": {
+   "x": 0,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 14 · Before Agrippa"
+  },
+  "ACT-C14-D-P01-Festus.dc.html": {
+   "x": 840,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Festus"
+  },
+  "ACT-C14-D-P02-IAppealUntoCsar.dc.html": {
+   "x": 1680,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · I Appeal unto Cæsar"
+  },
+  "ACT-C14-D-P03-AgrippaTheKing.dc.html": {
+   "x": 2520,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Agrippa the King"
+  },
+  "ACT-C14-D-P04-AgrippaTheKing.dc.html": {
+   "x": 3360,
+   "y": 62500,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Agrippa the King"
+  },
+  "ACT-C14-D-P05-AgrippaTheKing.dc.html": {
+   "x": 0,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · Agrippa the King"
+  },
+  "ACT-C14-D-P06-PaulBeforeAgrippa.dc.html": {
+   "x": 840,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P07-PaulBeforeAgrippa.dc.html": {
+   "x": 1680,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "192 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P08-PaulBeforeAgrippa.dc.html": {
+   "x": 2520,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "193 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P09-PaulBeforeAgrippa.dc.html": {
+   "x": 3360,
+   "y": 63700,
+   "w": 760,
+   "h": 1080,
+   "title": "194 · Paul before Agrippa"
+  },
+  "ACT-C14-D-P10-AlmostThouPersuade.dc.html": {
+   "x": 0,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "195 · Almost Thou Persuadest"
+  },
+  "ACT-C14-D-P11-AlmostThouPersuade.dc.html": {
+   "x": 840,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "196 · Almost Thou Persuadest"
   }
  },
  "order": [
@@ -1603,7 +1687,19 @@
   "ACT-C13-D-P09-Tertullus.dc.html",
   "ACT-C13-D-P10-PaulSDefenceBefore.dc.html",
   "ACT-C13-D-P11-PaulSDefenceBefore.dc.html",
-  "ACT-C13-D-P12-FelixAndDrusilla.dc.html"
+  "ACT-C13-D-P12-FelixAndDrusilla.dc.html",
+  "ACT-C14-00-Title.dc.html",
+  "ACT-C14-D-P01-Festus.dc.html",
+  "ACT-C14-D-P02-IAppealUntoCsar.dc.html",
+  "ACT-C14-D-P03-AgrippaTheKing.dc.html",
+  "ACT-C14-D-P04-AgrippaTheKing.dc.html",
+  "ACT-C14-D-P05-AgrippaTheKing.dc.html",
+  "ACT-C14-D-P06-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P07-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P08-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P09-PaulBeforeAgrippa.dc.html",
+  "ACT-C14-D-P10-AlmostThouPersuade.dc.html",
+  "ACT-C14-D-P11-AlmostThouPersuade.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1703,6 +1799,13 @@
    "text": "Chapter 13 · Before Felix (Acts 22:30–24:27)",
    "x": 0,
    "y": 58100
+  },
+  "chapter14": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 14 · Before Agrippa (Acts 25–26)",
+   "x": 0,
+   "y": 62200
   }
  },
  "designSystems": [],
