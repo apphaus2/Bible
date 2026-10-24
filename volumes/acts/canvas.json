@@ -926,6 +926,97 @@
    "w": 760,
    "h": 1080,
    "title": "122 · Paul and Silas"
+  },
+  "ACT-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · Come Over into Macedonia"
+  },
+  "ACT-C09-D-P01-Timothy.dc.html": {
+   "x": 840,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "123 · Timothy"
+  },
+  "ACT-C09-D-P02-ComeOverIntoMacedo.dc.html": {
+   "x": 1680,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "124 · Come Over into Macedonia"
+  },
+  "ACT-C09-D-P03-InTheNameOfJesusCh.dc.html": {
+   "x": 2520,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "125 · In the Name of Jesus Christ"
+  },
+  "ACT-C09-D-P04-InTheNameOfJesusCh.dc.html": {
+   "x": 3360,
+   "y": 40800,
+   "w": 760,
+   "h": 1080,
+   "title": "126 · In the Name of Jesus Christ"
+  },
+  "ACT-C09-D-P05-AtMidnight.dc.html": {
+   "x": 0,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "127 · At Midnight"
+  },
+  "ACT-C09-D-P06-AtMidnight.dc.html": {
+   "x": 840,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "128 · At Midnight"
+  },
+  "ACT-C09-D-P07-AtMidnight.dc.html": {
+   "x": 1680,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "129 · At Midnight"
+  },
+  "ACT-C09-D-P08-MenThatAreRomans.dc.html": {
+   "x": 2520,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "130 · Men That Are Romans"
+  },
+  "ACT-C09-D-P09-Thessalonica.dc.html": {
+   "x": 3360,
+   "y": 42000,
+   "w": 760,
+   "h": 1080,
+   "title": "131 · Thessalonica"
+  },
+  "ACT-C09-D-P10-Thessalonica.dc.html": {
+   "x": 0,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "132 · Thessalonica"
+  },
+  "ACT-C09-D-P11-Bera.dc.html": {
+   "x": 840,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "133 · Berœa"
+  },
+  "ACT-C09-D-P12-Bera.dc.html": {
+   "x": 1680,
+   "y": 43200,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · Berœa"
   }
  },
  "order": [
@@ -1059,7 +1150,20 @@
   "ACT-C08-D-P10-TheApostlesAndTheE.dc.html",
   "ACT-C08-D-P11-TheLetter.dc.html",
   "ACT-C08-D-P12-TheLetter.dc.html",
-  "ACT-C08-D-P13-PaulAndSilas.dc.html"
+  "ACT-C08-D-P13-PaulAndSilas.dc.html",
+  "ACT-C09-00-Title.dc.html",
+  "ACT-C09-D-P01-Timothy.dc.html",
+  "ACT-C09-D-P02-ComeOverIntoMacedo.dc.html",
+  "ACT-C09-D-P03-InTheNameOfJesusCh.dc.html",
+  "ACT-C09-D-P04-InTheNameOfJesusCh.dc.html",
+  "ACT-C09-D-P05-AtMidnight.dc.html",
+  "ACT-C09-D-P06-AtMidnight.dc.html",
+  "ACT-C09-D-P07-AtMidnight.dc.html",
+  "ACT-C09-D-P08-MenThatAreRomans.dc.html",
+  "ACT-C09-D-P09-Thessalonica.dc.html",
+  "ACT-C09-D-P10-Thessalonica.dc.html",
+  "ACT-C09-D-P11-Bera.dc.html",
+  "ACT-C09-D-P12-Bera.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1124,6 +1228,13 @@
    "text": "Chapter 8 · The Council at Jerusalem (Acts 14–15)",
    "x": 0,
    "y": 36400
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · Come Over into Macedonia (Acts 16:1–17:15)",
+   "x": 0,
+   "y": 40500
   }
  },
  "designSystems": [],

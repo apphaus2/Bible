@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 560 verses — 558 full, 0 partial, 2 omitted.
+**So far:** 615 verses — 613 full, 0 partial, 2 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -51,3 +51,9 @@ Every verse is on the page in full.
 69 verses: 68 full, 0 partial, 1 omitted.
 
 - 15:34 — omitted (0%)
+
+## Chapter 9 · Come Over into Macedonia (Acts 16:1–17:15)
+
+55 verses: 55 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
