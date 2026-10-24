@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 284 verses — 283 full, 0 partial, 1 omitted.
+**So far:** 396 verses — 395 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · The Word Became Flesh (John 1–2)
 
@@ -21,3 +21,9 @@ Every verse is on the page in full.
 118 verses: 117 full, 0 partial, 1 omitted.
 
 - 5:4 — omitted (0%)
+
+## Chapter 4 · Before Abraham Was (John 7–8)
+
+112 verses: 112 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.

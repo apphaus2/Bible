@@ -457,6 +457,153 @@
    "w": 760,
    "h": 1080,
    "title": "60 · To Whom Shall We Go?"
+  },
+  "JHN-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · Before Abraham Was"
+  },
+  "JHN-C04-D-P01-TheFeastOfTabernac.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · The Feast of Tabernacles"
+  },
+  "JHN-C04-D-P02-TheFeastOfTabernac.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The Feast of Tabernacles"
+  },
+  "JHN-C04-D-P03-MyTeachingIsNotMin.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · My Teaching Is Not Mine"
+  },
+  "JHN-C04-D-P04-MyTeachingIsNotMin.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · My Teaching Is Not Mine"
+  },
+  "JHN-C04-D-P05-OfficersToTakeHim.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Officers to Take Him"
+  },
+  "JHN-C04-D-P06-RiversOfLivingWate.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · Rivers of Living Water"
+  },
+  "JHN-C04-D-P07-NeverManSoSpake.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · Never Man So Spake"
+  },
+  "JHN-C04-D-P08-NeverManSoSpake.dc.html": {
+   "x": 2520,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · Never Man So Spake"
+  },
+  "JHN-C04-D-P09-NeitherDoICondemnT.dc.html": {
+   "x": 3360,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · Neither Do I Condemn Thee"
+  },
+  "JHN-C04-D-P10-NeitherDoICondemnT.dc.html": {
+   "x": 0,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · Neither Do I Condemn Thee"
+  },
+  "JHN-C04-D-P11-TheLightOfTheWorld.dc.html": {
+   "x": 840,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · The Light of the World"
+  },
+  "JHN-C04-D-P12-TheLightOfTheWorld.dc.html": {
+   "x": 1680,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · The Light of the World"
+  },
+  "JHN-C04-D-P13-IAmFromAbove.dc.html": {
+   "x": 2520,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · I Am from Above"
+  },
+  "JHN-C04-D-P14-IAmFromAbove.dc.html": {
+   "x": 3360,
+   "y": 21500,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · I Am from Above"
+  },
+  "JHN-C04-D-P15-TheTruthShallMakeY.dc.html": {
+   "x": 0,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · The Truth Shall Make You Free"
+  },
+  "JHN-C04-D-P16-TheTruthShallMakeY.dc.html": {
+   "x": 840,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · The Truth Shall Make You Free"
+  },
+  "JHN-C04-D-P17-TheTruthShallMakeY.dc.html": {
+   "x": 1680,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · The Truth Shall Make You Free"
+  },
+  "JHN-C04-D-P18-BeforeAbrahamWas.dc.html": {
+   "x": 2520,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Before Abraham Was"
+  },
+  "JHN-C04-D-P19-BeforeAbrahamWas.dc.html": {
+   "x": 3360,
+   "y": 22700,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · Before Abraham Was"
+  },
+  "JHN-C04-D-P20-BeforeAbrahamWas.dc.html": {
+   "x": 0,
+   "y": 23900,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Before Abraham Was"
   }
  },
  "order": [
@@ -523,7 +670,28 @@
   "JHN-C03-D-P21-IAmTheBreadOfLife.dc.html",
   "JHN-C03-D-P22-ToWhomShallWeGo.dc.html",
   "JHN-C03-D-P23-ToWhomShallWeGo.dc.html",
-  "JHN-C03-D-P24-ToWhomShallWeGo.dc.html"
+  "JHN-C03-D-P24-ToWhomShallWeGo.dc.html",
+  "JHN-C04-00-Title.dc.html",
+  "JHN-C04-D-P01-TheFeastOfTabernac.dc.html",
+  "JHN-C04-D-P02-TheFeastOfTabernac.dc.html",
+  "JHN-C04-D-P03-MyTeachingIsNotMin.dc.html",
+  "JHN-C04-D-P04-MyTeachingIsNotMin.dc.html",
+  "JHN-C04-D-P05-OfficersToTakeHim.dc.html",
+  "JHN-C04-D-P06-RiversOfLivingWate.dc.html",
+  "JHN-C04-D-P07-NeverManSoSpake.dc.html",
+  "JHN-C04-D-P08-NeverManSoSpake.dc.html",
+  "JHN-C04-D-P09-NeitherDoICondemnT.dc.html",
+  "JHN-C04-D-P10-NeitherDoICondemnT.dc.html",
+  "JHN-C04-D-P11-TheLightOfTheWorld.dc.html",
+  "JHN-C04-D-P12-TheLightOfTheWorld.dc.html",
+  "JHN-C04-D-P13-IAmFromAbove.dc.html",
+  "JHN-C04-D-P14-IAmFromAbove.dc.html",
+  "JHN-C04-D-P15-TheTruthShallMakeY.dc.html",
+  "JHN-C04-D-P16-TheTruthShallMakeY.dc.html",
+  "JHN-C04-D-P17-TheTruthShallMakeY.dc.html",
+  "JHN-C04-D-P18-BeforeAbrahamWas.dc.html",
+  "JHN-C04-D-P19-BeforeAbrahamWas.dc.html",
+  "JHN-C04-D-P20-BeforeAbrahamWas.dc.html"
  ],
  "notes": {
   "Main": {
@@ -553,6 +721,13 @@
    "text": "Chapter 3 · The Bread of Life (John 5–6)",
    "x": 0,
    "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · Before Abraham Was (John 7–8)",
+   "x": 0,
+   "y": 18800
   }
  },
  "designSystems": [],
