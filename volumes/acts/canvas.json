@@ -1094,6 +1094,118 @@
    "w": 760,
    "h": 1080,
    "title": "144 · Apollos"
+  },
+  "ACT-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · Great Is Diana"
+  },
+  "ACT-C11-D-P01-Ephesus.dc.html": {
+   "x": 840,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Ephesus"
+  },
+  "ACT-C11-D-P02-Ephesus.dc.html": {
+   "x": 1680,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · Ephesus"
+  },
+  "ACT-C11-D-P03-Ephesus.dc.html": {
+   "x": 2520,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Ephesus"
+  },
+  "ACT-C11-D-P04-TheSonsOfSceva.dc.html": {
+   "x": 3360,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · The Sons of Sceva"
+  },
+  "ACT-C11-D-P05-TheSonsOfSceva.dc.html": {
+   "x": 0,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · The Sons of Sceva"
+  },
+  "ACT-C11-D-P06-Demetrius.dc.html": {
+   "x": 840,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Demetrius"
+  },
+  "ACT-C11-D-P07-TheTheatre.dc.html": {
+   "x": 1680,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Theatre"
+  },
+  "ACT-C11-D-P08-TheTheatre.dc.html": {
+   "x": 2520,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · The Theatre"
+  },
+  "ACT-C11-D-P09-TheTheatre.dc.html": {
+   "x": 3360,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · The Theatre"
+  },
+  "ACT-C11-D-P10-Eutychus.dc.html": {
+   "x": 0,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Eutychus"
+  },
+  "ACT-C11-D-P11-Eutychus.dc.html": {
+   "x": 840,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Eutychus"
+  },
+  "ACT-C11-D-P12-AtMiletus.dc.html": {
+   "x": 1680,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · At Miletus"
+  },
+  "ACT-C11-D-P13-AtMiletus.dc.html": {
+   "x": 2520,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · At Miletus"
+  },
+  "ACT-C11-D-P14-AtMiletus.dc.html": {
+   "x": 3360,
+   "y": 51400,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · At Miletus"
+  },
+  "ACT-C11-D-P15-AtMiletus.dc.html": {
+   "x": 0,
+   "y": 52600,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · At Miletus"
   }
  },
  "order": [
@@ -1251,7 +1363,23 @@
   "ACT-C10-D-P07-Gallio.dc.html",
   "ACT-C10-D-P08-Gallio.dc.html",
   "ACT-C10-D-P09-Gallio.dc.html",
-  "ACT-C10-D-P10-Apollos.dc.html"
+  "ACT-C10-D-P10-Apollos.dc.html",
+  "ACT-C11-00-Title.dc.html",
+  "ACT-C11-D-P01-Ephesus.dc.html",
+  "ACT-C11-D-P02-Ephesus.dc.html",
+  "ACT-C11-D-P03-Ephesus.dc.html",
+  "ACT-C11-D-P04-TheSonsOfSceva.dc.html",
+  "ACT-C11-D-P05-TheSonsOfSceva.dc.html",
+  "ACT-C11-D-P06-Demetrius.dc.html",
+  "ACT-C11-D-P07-TheTheatre.dc.html",
+  "ACT-C11-D-P08-TheTheatre.dc.html",
+  "ACT-C11-D-P09-TheTheatre.dc.html",
+  "ACT-C11-D-P10-Eutychus.dc.html",
+  "ACT-C11-D-P11-Eutychus.dc.html",
+  "ACT-C11-D-P12-AtMiletus.dc.html",
+  "ACT-C11-D-P13-AtMiletus.dc.html",
+  "ACT-C11-D-P14-AtMiletus.dc.html",
+  "ACT-C11-D-P15-AtMiletus.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1330,6 +1458,13 @@
    "text": "Chapter 10 · The Unknown God (Acts 17:16–18:28)",
    "x": 0,
    "y": 44600
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · Great Is Diana (Acts 19–20)",
+   "x": 0,
+   "y": 48700
   }
  },
  "designSystems": [],

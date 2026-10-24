@@ -82,5 +82,7 @@ META = {
      "blurb": "Timothy at Lystra; forbidden in Asia, and at Troas the vision of a man of Macedonia — come over into Macedonia, and help us; Lydia, a seller of purple, by the river at Philippi; the maid with a spirit of divination; Paul and Silas in the stocks at midnight, singing hymns — the earthquake, and Sirs, what must I do to be saved?; then Thessalonica and the men who turned the world upside down, and the more noble Berœans."},
     {"module": "ch10", "dir": "chapter-10", "num": "10", "name": "The Unknown God", "range": "Acts 17:16–18:28", "bible_chapters": [17, 18], "span": ["17:16", "18:28"],
      "blurb": "Athens full of idols; the Epicureans and Stoics — what would this babbler say?; Paul on the Areopagus and the altar TO AN UNKNOWN GOD — in him we live, and move, and have our being; Corinth and the tentmakers Aquila and Priscilla; be not afraid, but speak; Gallio on the judgment-seat, caring for none of these things; and Apollos, mighty in the scriptures."},
+    {"module": "ch11", "dir": "chapter-11", "num": "11", "name": "Great Is Diana", "range": "Acts 19–20", "bible_chapters": [19, 20],
+     "blurb": "Ephesus: the twelve who knew only John's baptism; the school of Tyrannus; the sons of Sceva — Jesus I know, and Paul I know; but who are ye?; the books burned; Demetrius and the silver shrines, and the theatre crying Great is Diana of the Ephesians; Eutychus in the window at Troas; and the farewell at Miletus — it is more blessed to give than to receive."},
   ],
 }

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 662 verses — 660 full, 0 partial, 2 omitted.
+**So far:** 741 verses — 739 full, 0 partial, 2 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -61,5 +61,11 @@ Every verse is on the page in full.
 ## Chapter 10 · The Unknown God (Acts 17:16–18:28)
 
 47 verses: 47 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 11 · Great Is Diana (Acts 19–20)
+
+79 verses: 79 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
