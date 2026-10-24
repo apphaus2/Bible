@@ -99,7 +99,7 @@ def said(ref, to, frm, kind="say"):
 # ---- John's own cast ---------------------------------------------------------------------------------------------------
 _NA = dict(skin="#C98E66", shadow="#5A3A2A", hair="#3A2214", hl="#6A5A4E", beard=True, beard_color="#4A3A2A", scarf="#2E5A5A", cord=True)
 NATHANAEL = face_of("adam", light="#FFE680", **_NA)
-_NI = dict(skin="#C98E66", shadow="#3A3A5A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#22356A", band=True)
+_NI = dict(skin="#C98E66", shadow="#3A3A5A", hair="#8A847A", hl="#B8B2A6", beard=True, beard_color="#9A948A", scarf="#3E2C62", band=True)
 NICODEMUS = face_of("adam", light="#9AA8E8", **_NI)                                  # by night
 NICODEMUS_DAY = face_of("adam", light="#FFC14D", **_NI)
 NICODEMUS_GRIEF = face_of("adam", brow="sorrow", light="#9AA8C8", **_NI)

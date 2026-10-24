@@ -1115,6 +1115,167 @@
    "w": 760,
    "h": 1080,
    "title": "149 · That They May Be One"
+  },
+  "JHN-C09-00-Title.dc.html": {
+   "x": 0,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 9 · It Is Finished"
+  },
+  "JHN-C09-D-P01-OverTheBrookKidron.dc.html": {
+   "x": 840,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · Over the Brook Kidron"
+  },
+  "JHN-C09-D-P02-IAmHe.dc.html": {
+   "x": 1680,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · I Am He"
+  },
+  "JHN-C09-D-P03-IAmHe.dc.html": {
+   "x": 2520,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · I Am He"
+  },
+  "JHN-C09-D-P04-IAmHe.dc.html": {
+   "x": 3360,
+   "y": 46800,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · I Am He"
+  },
+  "JHN-C09-D-P05-BeforeAnnas.dc.html": {
+   "x": 0,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · Before Annas"
+  },
+  "JHN-C09-D-P06-BeforeAnnas.dc.html": {
+   "x": 840,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Before Annas"
+  },
+  "JHN-C09-D-P07-TheCockCrew.dc.html": {
+   "x": 1680,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · The Cock Crew"
+  },
+  "JHN-C09-D-P08-ThePrtorium.dc.html": {
+   "x": 2520,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · The Prætorium"
+  },
+  "JHN-C09-D-P09-ThePrtorium.dc.html": {
+   "x": 3360,
+   "y": 48000,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · The Prætorium"
+  },
+  "JHN-C09-D-P10-MyKingdomIsNotOfTh.dc.html": {
+   "x": 0,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · My Kingdom Is Not of This World"
+  },
+  "JHN-C09-D-P11-MyKingdomIsNotOfTh.dc.html": {
+   "x": 840,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · My Kingdom Is Not of This World"
+  },
+  "JHN-C09-D-P12-BeholdTheMan.dc.html": {
+   "x": 1680,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · Behold, the Man!"
+  },
+  "JHN-C09-D-P13-BeholdTheMan.dc.html": {
+   "x": 2520,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · Behold, the Man!"
+  },
+  "JHN-C09-D-P14-BeholdTheMan.dc.html": {
+   "x": 3360,
+   "y": 49200,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · Behold, the Man!"
+  },
+  "JHN-C09-D-P15-Gabbatha.dc.html": {
+   "x": 0,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Gabbatha"
+  },
+  "JHN-C09-D-P16-ThePlaceOfASkull.dc.html": {
+   "x": 840,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · The Place of a Skull"
+  },
+  "JHN-C09-D-P17-ThePlaceOfASkull.dc.html": {
+   "x": 1680,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · The Place of a Skull"
+  },
+  "JHN-C09-D-P18-BeholdThyMother.dc.html": {
+   "x": 2520,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · Behold, Thy Mother"
+  },
+  "JHN-C09-D-P19-ItIsFinished.dc.html": {
+   "x": 3360,
+   "y": 50400,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · It Is Finished"
+  },
+  "JHN-C09-D-P20-ItIsFinished.dc.html": {
+   "x": 0,
+   "y": 51600,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · It Is Finished"
+  },
+  "JHN-C09-D-P21-ANewTombInTheGarde.dc.html": {
+   "x": 840,
+   "y": 51600,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · A New Tomb in the Garden"
+  },
+  "JHN-C09-D-P22-ANewTombInTheGarde.dc.html": {
+   "x": 1680,
+   "y": 51600,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · A New Tomb in the Garden"
   }
  },
  "order": [
@@ -1275,7 +1436,30 @@
   "JHN-C08-D-P13-ThatTheyMayBeOne.dc.html",
   "JHN-C08-D-P14-ThatTheyMayBeOne.dc.html",
   "JHN-C08-D-P15-ThatTheyMayBeOne.dc.html",
-  "JHN-C08-D-P16-ThatTheyMayBeOne.dc.html"
+  "JHN-C08-D-P16-ThatTheyMayBeOne.dc.html",
+  "JHN-C09-00-Title.dc.html",
+  "JHN-C09-D-P01-OverTheBrookKidron.dc.html",
+  "JHN-C09-D-P02-IAmHe.dc.html",
+  "JHN-C09-D-P03-IAmHe.dc.html",
+  "JHN-C09-D-P04-IAmHe.dc.html",
+  "JHN-C09-D-P05-BeforeAnnas.dc.html",
+  "JHN-C09-D-P06-BeforeAnnas.dc.html",
+  "JHN-C09-D-P07-TheCockCrew.dc.html",
+  "JHN-C09-D-P08-ThePrtorium.dc.html",
+  "JHN-C09-D-P09-ThePrtorium.dc.html",
+  "JHN-C09-D-P10-MyKingdomIsNotOfTh.dc.html",
+  "JHN-C09-D-P11-MyKingdomIsNotOfTh.dc.html",
+  "JHN-C09-D-P12-BeholdTheMan.dc.html",
+  "JHN-C09-D-P13-BeholdTheMan.dc.html",
+  "JHN-C09-D-P14-BeholdTheMan.dc.html",
+  "JHN-C09-D-P15-Gabbatha.dc.html",
+  "JHN-C09-D-P16-ThePlaceOfASkull.dc.html",
+  "JHN-C09-D-P17-ThePlaceOfASkull.dc.html",
+  "JHN-C09-D-P18-BeholdThyMother.dc.html",
+  "JHN-C09-D-P19-ItIsFinished.dc.html",
+  "JHN-C09-D-P20-ItIsFinished.dc.html",
+  "JHN-C09-D-P21-ANewTombInTheGarde.dc.html",
+  "JHN-C09-D-P22-ANewTombInTheGarde.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1340,6 +1524,13 @@
    "text": "Chapter 8 · That They May Be One (John 15–17)",
    "x": 0,
    "y": 41200
+  },
+  "chapter09": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 9 · It Is Finished (John 18–19)",
+   "x": 0,
+   "y": 46500
   }
  },
  "designSystems": [],

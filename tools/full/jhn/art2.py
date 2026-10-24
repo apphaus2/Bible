@@ -12,7 +12,7 @@ import random, math
 import numbers1 as N
 from ecc.art import wind_lines
 
-NICODEMUS_C, NICODEMUS_HEAD = "#22356A", "#22356A"
+NICODEMUS_C, NICODEMUS_HEAD = "#3E2C62", "#3E2C62"
 SAMARITAN_C, SAMARITAN_VEIL = "#7A4A6A", "#5A2E5E"
 NOBLEMAN_C = "#4A2A6A"
 

@@ -14,7 +14,7 @@ vine), so no page is a wall of one face. The scripture John quotes is set in son
 John's own cast (jhn.common), each the same in every chapter; the people Matthew and Mark also tell of keep their looks
 (Mary the mother of Jesus, Mary Magdalene, Martha, Peter, Andrew, Philip, Thomas, Judas, John the Baptist, Caiaphas, Pilate:
 ntcast; Joseph of Arimathæa: Matthew's). Nathanael — a dark-teal headcloth with a cord, a brown beard; Nicodemus — a grey
-beard, a deep-blue headcloth with a gold band (a ruler of the Jews), drawn by night under a lamp, and again at the tomb with
+beard, a deep indigo-violet headcloth with a gold band (a ruler of the Jews), drawn by night under a lamp, and again at the tomb with
 the myrrh and aloes; the woman of Samaria — a plum veil, a water-pot on her shoulder; the nobleman of Capernaum — a black
 beard, a purple headcloth with a gold band; the man at Bethesda — grey-haired, a grey beard, no headcloth, a grey-brown
 mantle, on his pallet, then standing; the man born blind — a dark-brown beard, an undyed grey headcloth (eyes closed and
@@ -77,5 +77,7 @@ META = {
      "blurb": "Having loved his own, he loved them unto the end: the towel and the basin in the upper room — Lord, dost thou wash my feet?; I have given you an example; one of you shall betray me, the sop, and it was night; a new commandment, that ye love one another; let not your heart be troubled: in my Father's house are many mansions; I am the way, and the truth, and the life; another Comforter; peace I leave with you; arise, let us go hence."},
     {"module": "ch08", "dir": "chapter-08", "num": "8", "name": "That They May Be One", "range": "John 15–17", "bible_chapters": [15, 16, 17],
      "blurb": "I am the true vine, ye are the branches; abide in me; greater love hath no man than this; ye are my friends; if the world hateth you; it is expedient for you that I go away; a little while, and ye shall see me; your sorrow shall be turned into joy; be of good cheer, I have overcome the world; and the prayer with his eyes lifted up to heaven — Father, the hour is come; that they may all be one; that the love wherewith thou lovedst me may be in them."},
+    {"module": "ch09", "dir": "chapter-09", "num": "9", "name": "It Is Finished", "range": "John 18–19", "bible_chapters": [18, 19],
+     "blurb": "Over the brook Kidron into the garden, the lanterns and torches — whom seek ye? I am he; put up the sword; Annas and the fire of coals, Peter's denials and the cock; the Prætorium — my kingdom is not of this world; what is truth?; not this man, but Barabbas; the purple and the crown of thorns — behold, the man!; Gabbatha — we have no king but Cæsar; the place of a skull, the title in Hebrew, Latin and Greek; woman, behold, thy son; I thirst; it is finished; and the new tomb in the garden."},
   ],
 }
