@@ -310,6 +310,167 @@
    "w": 760,
    "h": 1080,
    "title": "40 · Upon the Rock"
+  },
+  "MAT-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Harvest Is Plenteous"
+  },
+  "MAT-C03-D-P01-IfThouWilt.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · If Thou Wilt"
+  },
+  "MAT-C03-D-P02-SoGreatFaith.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · So Great Faith"
+  },
+  "MAT-C03-D-P03-SoGreatFaith.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · So Great Faith"
+  },
+  "MAT-C03-D-P04-HeTouchedHerHand.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · He Touched Her Hand"
+  },
+  "MAT-C03-D-P05-FollowMe.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Follow Me"
+  },
+  "MAT-C03-D-P06-EvenTheWindsAndThe.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Even the Winds and the Sea Obey Him"
+  },
+  "MAT-C03-D-P07-TheCountryOfTheGad.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · The Country of the Gadarenes"
+  },
+  "MAT-C03-D-P08-TheCountryOfTheGad.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Country of the Gadarenes"
+  },
+  "MAT-C03-D-P09-ThySinsAreForgiven.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Thy Sins Are Forgiven"
+  },
+  "MAT-C03-D-P10-NotTheRighteousBut.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Not the Righteous, but Sinners"
+  },
+  "MAT-C03-D-P11-NotTheRighteousBut.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Not the Righteous, but Sinners"
+  },
+  "MAT-C03-D-P12-TheDamselIsNotDead.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Damsel Is Not Dead"
+  },
+  "MAT-C03-D-P13-TheDamselIsNotDead.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Damsel Is Not Dead"
+  },
+  "MAT-C03-D-P14-AccordingToYourFai.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · According to Your Faith"
+  },
+  "MAT-C03-D-P15-TheHarvestIndeedIs.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Harvest Indeed Is Plenteous"
+  },
+  "MAT-C03-D-P16-TheTwelveApostles.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Twelve Apostles"
+  },
+  "MAT-C03-D-P17-TheTwelveApostles.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Twelve Apostles"
+  },
+  "MAT-C03-D-P18-SheepInTheMidstOfW.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Sheep in the Midst of Wolves"
+  },
+  "MAT-C03-D-P19-SheepInTheMidstOfW.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Sheep in the Midst of Wolves"
+  },
+  "MAT-C03-D-P20-FearThemNot.dc.html": {
+   "x": 0,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Fear Them Not"
+  },
+  "MAT-C03-D-P21-NotPeaceButASword.dc.html": {
+   "x": 840,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · Not Peace, but a Sword"
+  },
+  "MAT-C03-D-P22-NotPeaceButASword.dc.html": {
+   "x": 1680,
+   "y": 18600,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · Not Peace, but a Sword"
   }
  },
  "order": [
@@ -355,7 +516,30 @@
   "MAT-C02-D-P18-TheNarrowGate.dc.html",
   "MAT-C02-D-P19-ByTheirFruits.dc.html",
   "MAT-C02-D-P20-UponTheRock.dc.html",
-  "MAT-C02-D-P21-UponTheRock.dc.html"
+  "MAT-C02-D-P21-UponTheRock.dc.html",
+  "MAT-C03-00-Title.dc.html",
+  "MAT-C03-D-P01-IfThouWilt.dc.html",
+  "MAT-C03-D-P02-SoGreatFaith.dc.html",
+  "MAT-C03-D-P03-SoGreatFaith.dc.html",
+  "MAT-C03-D-P04-HeTouchedHerHand.dc.html",
+  "MAT-C03-D-P05-FollowMe.dc.html",
+  "MAT-C03-D-P06-EvenTheWindsAndThe.dc.html",
+  "MAT-C03-D-P07-TheCountryOfTheGad.dc.html",
+  "MAT-C03-D-P08-TheCountryOfTheGad.dc.html",
+  "MAT-C03-D-P09-ThySinsAreForgiven.dc.html",
+  "MAT-C03-D-P10-NotTheRighteousBut.dc.html",
+  "MAT-C03-D-P11-NotTheRighteousBut.dc.html",
+  "MAT-C03-D-P12-TheDamselIsNotDead.dc.html",
+  "MAT-C03-D-P13-TheDamselIsNotDead.dc.html",
+  "MAT-C03-D-P14-AccordingToYourFai.dc.html",
+  "MAT-C03-D-P15-TheHarvestIndeedIs.dc.html",
+  "MAT-C03-D-P16-TheTwelveApostles.dc.html",
+  "MAT-C03-D-P17-TheTwelveApostles.dc.html",
+  "MAT-C03-D-P18-SheepInTheMidstOfW.dc.html",
+  "MAT-C03-D-P19-SheepInTheMidstOfW.dc.html",
+  "MAT-C03-D-P20-FearThemNot.dc.html",
+  "MAT-C03-D-P21-NotPeaceButASword.dc.html",
+  "MAT-C03-D-P22-NotPeaceButASword.dc.html"
  ],
  "notes": {
   "Main": {
@@ -378,6 +562,13 @@
    "text": "Chapter 2 · The Sermon on the Mount (Matthew 5–7)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Harvest Is Plenteous (Matthew 8–10)",
+   "x": 0,
+   "y": 13500
   }
  },
  "designSystems": [],
