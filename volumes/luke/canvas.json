@@ -1185,6 +1185,111 @@
    "w": 760,
    "h": 1080,
    "title": "156 · Thy Brother Was Dead, and Is Alive Again"
+  },
+  "LUK-C12-00-Title.dc.html": {
+   "x": 0,
+   "y": 51900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 12 · The Rich Man and Lazarus"
+  },
+  "LUK-C12-D-P01-TheUnrighteousStew.dc.html": {
+   "x": 840,
+   "y": 51900,
+   "w": 760,
+   "h": 1080,
+   "title": "157 · The Unrighteous Steward"
+  },
+  "LUK-C12-D-P02-TheUnrighteousStew.dc.html": {
+   "x": 1680,
+   "y": 51900,
+   "w": 760,
+   "h": 1080,
+   "title": "158 · The Unrighteous Steward"
+  },
+  "LUK-C12-D-P03-YeCannotServeGodAn.dc.html": {
+   "x": 2520,
+   "y": 51900,
+   "w": 760,
+   "h": 1080,
+   "title": "159 · Ye Cannot Serve God and Mammon"
+  },
+  "LUK-C12-D-P04-ACertainBeggarName.dc.html": {
+   "x": 3360,
+   "y": 51900,
+   "w": 760,
+   "h": 1080,
+   "title": "160 · A Certain Beggar Named Lazarus"
+  },
+  "LUK-C12-D-P05-ACertainBeggarName.dc.html": {
+   "x": 0,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "161 · A Certain Beggar Named Lazarus"
+  },
+  "LUK-C12-D-P06-AGreatGulfFixed.dc.html": {
+   "x": 840,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "162 · A Great Gulf Fixed"
+  },
+  "LUK-C12-D-P07-AGreatGulfFixed.dc.html": {
+   "x": 1680,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "163 · A Great Gulf Fixed"
+  },
+  "LUK-C12-D-P08-IncreaseOurFaith.dc.html": {
+   "x": 2520,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "164 · Increase Our Faith"
+  },
+  "LUK-C12-D-P09-IncreaseOurFaith.dc.html": {
+   "x": 3360,
+   "y": 53100,
+   "w": 760,
+   "h": 1080,
+   "title": "165 · Increase Our Faith"
+  },
+  "LUK-C12-D-P10-WhereAreTheNine.dc.html": {
+   "x": 0,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "166 · Where Are the Nine?"
+  },
+  "LUK-C12-D-P11-TheKingdomOfGodIsW.dc.html": {
+   "x": 840,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "167 · The Kingdom of God Is within You"
+  },
+  "LUK-C12-D-P12-AsInTheDaysOfNoah.dc.html": {
+   "x": 1680,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "168 · As in the Days of Noah"
+  },
+  "LUK-C12-D-P13-AsInTheDaysOfNoah.dc.html": {
+   "x": 2520,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "169 · As in the Days of Noah"
+  },
+  "LUK-C12-D-P14-AsInTheDaysOfNoah.dc.html": {
+   "x": 3360,
+   "y": 54300,
+   "w": 760,
+   "h": 1080,
+   "title": "170 · As in the Days of Noah"
   }
  },
  "order": [
@@ -1355,7 +1460,22 @@
   "LUK-C11-D-P11-IWillAriseAndGoToM.dc.html",
   "LUK-C11-D-P12-IWillAriseAndGoToM.dc.html",
   "LUK-C11-D-P13-ThyBrotherWasDeadA.dc.html",
-  "LUK-C11-D-P14-ThyBrotherWasDeadA.dc.html"
+  "LUK-C11-D-P14-ThyBrotherWasDeadA.dc.html",
+  "LUK-C12-00-Title.dc.html",
+  "LUK-C12-D-P01-TheUnrighteousStew.dc.html",
+  "LUK-C12-D-P02-TheUnrighteousStew.dc.html",
+  "LUK-C12-D-P03-YeCannotServeGodAn.dc.html",
+  "LUK-C12-D-P04-ACertainBeggarName.dc.html",
+  "LUK-C12-D-P05-ACertainBeggarName.dc.html",
+  "LUK-C12-D-P06-AGreatGulfFixed.dc.html",
+  "LUK-C12-D-P07-AGreatGulfFixed.dc.html",
+  "LUK-C12-D-P08-IncreaseOurFaith.dc.html",
+  "LUK-C12-D-P09-IncreaseOurFaith.dc.html",
+  "LUK-C12-D-P10-WhereAreTheNine.dc.html",
+  "LUK-C12-D-P11-TheKingdomOfGodIsW.dc.html",
+  "LUK-C12-D-P12-AsInTheDaysOfNoah.dc.html",
+  "LUK-C12-D-P13-AsInTheDaysOfNoah.dc.html",
+  "LUK-C12-D-P14-AsInTheDaysOfNoah.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1441,6 +1561,13 @@
    "text": "Chapter 11 · The Prodigal Son (Luke 14–15)",
    "x": 0,
    "y": 47500
+  },
+  "chapter12": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 12 · The Rich Man and Lazarus (Luke 16–17)",
+   "x": 0,
+   "y": 51600
   }
  },
  "designSystems": [],
