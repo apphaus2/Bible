@@ -282,6 +282,181 @@
    "w": 760,
    "h": 1080,
    "title": "36 · Thy Son Liveth"
+  },
+  "JHN-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Bread of Life"
+  },
+  "JHN-C03-D-P01-ThePoolOfBethesda.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · The Pool of Bethesda"
+  },
+  "JHN-C03-D-P02-ThePoolOfBethesda.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · The Pool of Bethesda"
+  },
+  "JHN-C03-D-P03-ItIsTheSabbath.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · It Is the Sabbath"
+  },
+  "JHN-C03-D-P04-ItIsTheSabbath.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · It Is the Sabbath"
+  },
+  "JHN-C03-D-P05-TheSonGivethLife.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · The Son Giveth Life"
+  },
+  "JHN-C03-D-P06-TheSonGivethLife.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Son Giveth Life"
+  },
+  "JHN-C03-D-P07-TheyBearWitnessOfM.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · They Bear Witness of Me"
+  },
+  "JHN-C03-D-P08-TheyBearWitnessOfM.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · They Bear Witness of Me"
+  },
+  "JHN-C03-D-P09-TheyBearWitnessOfM.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · They Bear Witness of Me"
+  },
+  "JHN-C03-D-P10-FiveBarleyLoaves.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Five Barley Loaves"
+  },
+  "JHN-C03-D-P11-FiveBarleyLoaves.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Five Barley Loaves"
+  },
+  "JHN-C03-D-P12-FiveBarleyLoaves.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Five Barley Loaves"
+  },
+  "JHN-C03-D-P13-ItIsI.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · It Is I"
+  },
+  "JHN-C03-D-P14-ItIsI.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · It Is I"
+  },
+  "JHN-C03-D-P15-TheBreadOutOfHeave.dc.html": {
+   "x": 0,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Bread out of Heaven"
+  },
+  "JHN-C03-D-P16-TheBreadOutOfHeave.dc.html": {
+   "x": 840,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Bread out of Heaven"
+  },
+  "JHN-C03-D-P17-TheBreadOutOfHeave.dc.html": {
+   "x": 1680,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Bread out of Heaven"
+  },
+  "JHN-C03-D-P18-IAmTheBreadOfLife.dc.html": {
+   "x": 2520,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P19-IAmTheBreadOfLife.dc.html": {
+   "x": 3360,
+   "y": 16200,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P20-IAmTheBreadOfLife.dc.html": {
+   "x": 0,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P21-IAmTheBreadOfLife.dc.html": {
+   "x": 840,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · I Am the Bread of Life"
+  },
+  "JHN-C03-D-P22-ToWhomShallWeGo.dc.html": {
+   "x": 1680,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · To Whom Shall We Go?"
+  },
+  "JHN-C03-D-P23-ToWhomShallWeGo.dc.html": {
+   "x": 2520,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · To Whom Shall We Go?"
+  },
+  "JHN-C03-D-P24-ToWhomShallWeGo.dc.html": {
+   "x": 3360,
+   "y": 17400,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · To Whom Shall We Go?"
   }
  },
  "order": [
@@ -323,7 +498,32 @@
   "JHN-C02-D-P15-WhiteUntoHarvest.dc.html",
   "JHN-C02-D-P16-ThySonLiveth.dc.html",
   "JHN-C02-D-P17-ThySonLiveth.dc.html",
-  "JHN-C02-D-P18-ThySonLiveth.dc.html"
+  "JHN-C02-D-P18-ThySonLiveth.dc.html",
+  "JHN-C03-00-Title.dc.html",
+  "JHN-C03-D-P01-ThePoolOfBethesda.dc.html",
+  "JHN-C03-D-P02-ThePoolOfBethesda.dc.html",
+  "JHN-C03-D-P03-ItIsTheSabbath.dc.html",
+  "JHN-C03-D-P04-ItIsTheSabbath.dc.html",
+  "JHN-C03-D-P05-TheSonGivethLife.dc.html",
+  "JHN-C03-D-P06-TheSonGivethLife.dc.html",
+  "JHN-C03-D-P07-TheyBearWitnessOfM.dc.html",
+  "JHN-C03-D-P08-TheyBearWitnessOfM.dc.html",
+  "JHN-C03-D-P09-TheyBearWitnessOfM.dc.html",
+  "JHN-C03-D-P10-FiveBarleyLoaves.dc.html",
+  "JHN-C03-D-P11-FiveBarleyLoaves.dc.html",
+  "JHN-C03-D-P12-FiveBarleyLoaves.dc.html",
+  "JHN-C03-D-P13-ItIsI.dc.html",
+  "JHN-C03-D-P14-ItIsI.dc.html",
+  "JHN-C03-D-P15-TheBreadOutOfHeave.dc.html",
+  "JHN-C03-D-P16-TheBreadOutOfHeave.dc.html",
+  "JHN-C03-D-P17-TheBreadOutOfHeave.dc.html",
+  "JHN-C03-D-P18-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P19-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P20-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P21-IAmTheBreadOfLife.dc.html",
+  "JHN-C03-D-P22-ToWhomShallWeGo.dc.html",
+  "JHN-C03-D-P23-ToWhomShallWeGo.dc.html",
+  "JHN-C03-D-P24-ToWhomShallWeGo.dc.html"
  ],
  "notes": {
   "Main": {
@@ -346,6 +546,13 @@
    "text": "Chapter 2 · Ye Must Be Born Anew (John 3–4)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Bread of Life (John 5–6)",
+   "x": 0,
+   "y": 12300
   }
  },
  "designSystems": [],

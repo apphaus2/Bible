@@ -137,8 +137,10 @@ ANNAS = face_of("adam", skin="#C98E66", shadow="#4A2A3A", hair="#E8E2D6", hl="#F
                 brow="scowl", light="#D7261E")
 OFFICER = face_of("adam", skin="#B98A6E", shadow="#3A2A2A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", scarf="#3A3A46", cord=True,
                   brow="scowl", light="#D7261E")
-JEW = face_of("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#8A7A6A", cord=True,
-              brow="scowl", light="#D7261E")
+JEW = face_of("adam", skin="#B98A6E", shadow="#4A2A2A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#5E626E", cord=True,
+              brow="scowl", light="#D7261E")                                       # "the Jews" who question him (a cool grey headcloth)
+CROWD = face_of("adam", skin="#C98E66", shadow="#5A3A2A", hair="#2A1A10", hl="#5A4A3E", beard=True, beard_color="#2A1A10", scarf="#4E6A6A", cord=True,
+                light="#FFE680")                                                    # one of the multitude
 THOMAS_AWE = face_of("adam", skin="#C98E66", shadow="#5A3A3A", hair="#2A1A10", hl="#4A3A2E", stubble="#2A1A10", scarf="#5A4A6A", cord=True, light="#FFFFFF")
 PILATE_AFRAID = face_of("adam", skin="#E3B08A", shadow="#6A4A5A", hair="#4A3A2A", hl="#7A6A5A", brow="sorrow", sweat=True, light="#9AA8C8")
 PETER_GLAD = face_of("adam", skin="#B98A6E", shadow="#5A3A2A", hair="#2A2420", hl="#6A645E", beard=True, beard_color="#4A4440", light="#FFF4C2")
