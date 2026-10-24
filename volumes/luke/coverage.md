@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 795 verses — 794 full, 0 partial, 1 omitted.
+**So far:** 886 verses — 885 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · Gabriel (Luke 1)
 
@@ -75,3 +75,9 @@ Every verse is on the page in full.
 68 verses: 67 full, 0 partial, 1 omitted.
 
 - 17:36 — omitted (0%)
+
+## Chapter 13 · Zacchæus (Luke 18–19)
+
+91 verses: 91 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.

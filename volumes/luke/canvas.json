@@ -1290,6 +1290,139 @@
    "w": 760,
    "h": 1080,
    "title": "170 · As in the Days of Noah"
+  },
+  "LUK-C13-00-Title.dc.html": {
+   "x": 0,
+   "y": 56000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 13 · Zacchæus"
+  },
+  "LUK-C13-D-P01-TheyOughtAlwaysToP.dc.html": {
+   "x": 840,
+   "y": 56000,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · They Ought Always to Pray"
+  },
+  "LUK-C13-D-P02-TwoMenWentUpIntoTh.dc.html": {
+   "x": 1680,
+   "y": 56000,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · Two Men Went Up into the Temple to Pray"
+  },
+  "LUK-C13-D-P03-SufferTheLittleChi.dc.html": {
+   "x": 2520,
+   "y": 56000,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · Suffer the Little Children"
+  },
+  "LUK-C13-D-P04-OneThingThouLackes.dc.html": {
+   "x": 3360,
+   "y": 56000,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · One Thing Thou Lackest"
+  },
+  "LUK-C13-D-P05-OneThingThouLackes.dc.html": {
+   "x": 0,
+   "y": 57200,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · One Thing Thou Lackest"
+  },
+  "LUK-C13-D-P06-OneThingThouLackes.dc.html": {
+   "x": 840,
+   "y": 57200,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · One Thing Thou Lackest"
+  },
+  "LUK-C13-D-P07-ReceiveThySight.dc.html": {
+   "x": 1680,
+   "y": 57200,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Receive Thy Sight"
+  },
+  "LUK-C13-D-P08-ReceiveThySight.dc.html": {
+   "x": 2520,
+   "y": 57200,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · Receive Thy Sight"
+  },
+  "LUK-C13-D-P09-ZacchusMakeHaste.dc.html": {
+   "x": 3360,
+   "y": 57200,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Zacchæus, Make Haste"
+  },
+  "LUK-C13-D-P10-ZacchusMakeHaste.dc.html": {
+   "x": 0,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Zacchæus, Make Haste"
+  },
+  "LUK-C13-D-P11-TradeYeHerewithTil.dc.html": {
+   "x": 840,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Trade Ye Herewith Till I Come"
+  },
+  "LUK-C13-D-P12-TradeYeHerewithTil.dc.html": {
+   "x": 1680,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Trade Ye Herewith Till I Come"
+  },
+  "LUK-C13-D-P13-TradeYeHerewithTil.dc.html": {
+   "x": 2520,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Trade Ye Herewith Till I Come"
+  },
+  "LUK-C13-D-P14-TradeYeHerewithTil.dc.html": {
+   "x": 3360,
+   "y": 58400,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Trade Ye Herewith Till I Come"
+  },
+  "LUK-C13-D-P15-BlessedIsTheKingTh.dc.html": {
+   "x": 0,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Blessed Is the King That Cometh"
+  },
+  "LUK-C13-D-P16-BlessedIsTheKingTh.dc.html": {
+   "x": 840,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Blessed Is the King That Cometh"
+  },
+  "LUK-C13-D-P17-HeSawTheCityAndWep.dc.html": {
+   "x": 1680,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · He Saw the City and Wept over It"
+  },
+  "LUK-C13-D-P18-AHouseOfPrayer.dc.html": {
+   "x": 2520,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · A House of Prayer"
   }
  },
  "order": [
@@ -1475,7 +1608,26 @@
   "LUK-C12-D-P11-TheKingdomOfGodIsW.dc.html",
   "LUK-C12-D-P12-AsInTheDaysOfNoah.dc.html",
   "LUK-C12-D-P13-AsInTheDaysOfNoah.dc.html",
-  "LUK-C12-D-P14-AsInTheDaysOfNoah.dc.html"
+  "LUK-C12-D-P14-AsInTheDaysOfNoah.dc.html",
+  "LUK-C13-00-Title.dc.html",
+  "LUK-C13-D-P01-TheyOughtAlwaysToP.dc.html",
+  "LUK-C13-D-P02-TwoMenWentUpIntoTh.dc.html",
+  "LUK-C13-D-P03-SufferTheLittleChi.dc.html",
+  "LUK-C13-D-P04-OneThingThouLackes.dc.html",
+  "LUK-C13-D-P05-OneThingThouLackes.dc.html",
+  "LUK-C13-D-P06-OneThingThouLackes.dc.html",
+  "LUK-C13-D-P07-ReceiveThySight.dc.html",
+  "LUK-C13-D-P08-ReceiveThySight.dc.html",
+  "LUK-C13-D-P09-ZacchusMakeHaste.dc.html",
+  "LUK-C13-D-P10-ZacchusMakeHaste.dc.html",
+  "LUK-C13-D-P11-TradeYeHerewithTil.dc.html",
+  "LUK-C13-D-P12-TradeYeHerewithTil.dc.html",
+  "LUK-C13-D-P13-TradeYeHerewithTil.dc.html",
+  "LUK-C13-D-P14-TradeYeHerewithTil.dc.html",
+  "LUK-C13-D-P15-BlessedIsTheKingTh.dc.html",
+  "LUK-C13-D-P16-BlessedIsTheKingTh.dc.html",
+  "LUK-C13-D-P17-HeSawTheCityAndWep.dc.html",
+  "LUK-C13-D-P18-AHouseOfPrayer.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1568,6 +1720,13 @@
    "text": "Chapter 12 · The Rich Man and Lazarus (Luke 16–17)",
    "x": 0,
    "y": 51600
+  },
+  "chapter13": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 13 · Zacchæus (Luke 18–19)",
+   "x": 0,
+   "y": 55700
   }
  },
  "designSystems": [],
