@@ -121,6 +121,104 @@
    "w": 760,
    "h": 1080,
    "title": "14 · Lord of the Sabbath"
+  },
+  "MRK-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Peace, Be Still"
+  },
+  "MRK-C02-D-P01-StretchForthThyHan.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Stretch Forth Thy Hand"
+  },
+  "MRK-C02-D-P02-AGreatMultitude.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · A Great Multitude"
+  },
+  "MRK-C02-D-P03-HeAppointedTwelve.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · He Appointed Twelve"
+  },
+  "MRK-C02-D-P04-AHouseDivided.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · A House Divided"
+  },
+  "MRK-C02-D-P05-AHouseDivided.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · A House Divided"
+  },
+  "MRK-C02-D-P06-BeholdTheSowerWent.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Behold, the Sower Went Forth"
+  },
+  "MRK-C02-D-P07-BeholdTheSowerWent.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Behold, the Sower Went Forth"
+  },
+  "MRK-C02-D-P08-TheSowerSowethTheW.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · The Sower Soweth the Word"
+  },
+  "MRK-C02-D-P09-TheSowerSowethTheW.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The Sower Soweth the Word"
+  },
+  "MRK-C02-D-P10-TheLampOnTheStand.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · The Lamp on the Stand"
+  },
+  "MRK-C02-D-P11-TheSeedShouldSprin.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · The Seed Should Spring Up"
+  },
+  "MRK-C02-D-P12-PeaceBeStill.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Peace, Be Still"
+  },
+  "MRK-C02-D-P13-PeaceBeStill.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Peace, Be Still"
   }
  },
  "order": [
@@ -139,7 +237,21 @@
   "MRK-C01-D-P11-ThySinsAreForgiven.dc.html",
   "MRK-C01-D-P12-LeviTheSonOfAlphus.dc.html",
   "MRK-C01-D-P13-TheBridegroom.dc.html",
-  "MRK-C01-D-P14-LordOfTheSabbath.dc.html"
+  "MRK-C01-D-P14-LordOfTheSabbath.dc.html",
+  "MRK-C02-00-Title.dc.html",
+  "MRK-C02-D-P01-StretchForthThyHan.dc.html",
+  "MRK-C02-D-P02-AGreatMultitude.dc.html",
+  "MRK-C02-D-P03-HeAppointedTwelve.dc.html",
+  "MRK-C02-D-P04-AHouseDivided.dc.html",
+  "MRK-C02-D-P05-AHouseDivided.dc.html",
+  "MRK-C02-D-P06-BeholdTheSowerWent.dc.html",
+  "MRK-C02-D-P07-BeholdTheSowerWent.dc.html",
+  "MRK-C02-D-P08-TheSowerSowethTheW.dc.html",
+  "MRK-C02-D-P09-TheSowerSowethTheW.dc.html",
+  "MRK-C02-D-P10-TheLampOnTheStand.dc.html",
+  "MRK-C02-D-P11-TheSeedShouldSprin.dc.html",
+  "MRK-C02-D-P12-PeaceBeStill.dc.html",
+  "MRK-C02-D-P13-PeaceBeStill.dc.html"
  ],
  "notes": {
   "Main": {
@@ -155,6 +267,13 @@
    "text": "Chapter 1 · The Beginning of the Gospel (Mark 1–2)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Peace, Be Still (Mark 3–4)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],
