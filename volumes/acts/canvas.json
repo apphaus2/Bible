@@ -1486,6 +1486,76 @@
    "w": 760,
    "h": 1080,
    "title": "196 · Almost Thou Persuadest"
+  },
+  "ACT-C15-00-Title.dc.html": {
+   "x": 0,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 15 · The Shipwreck"
+  },
+  "ACT-C15-D-P01-ACenturionNamedJul.dc.html": {
+   "x": 840,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "197 · A Centurion Named Julius"
+  },
+  "ACT-C15-D-P02-FairHavens.dc.html": {
+   "x": 1680,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "198 · Fair Havens"
+  },
+  "ACT-C15-D-P03-Euraquilo.dc.html": {
+   "x": 2520,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "199 · Euraquilo"
+  },
+  "ACT-C15-D-P04-Euraquilo.dc.html": {
+   "x": 3360,
+   "y": 66600,
+   "w": 760,
+   "h": 1080,
+   "title": "200 · Euraquilo"
+  },
+  "ACT-C15-D-P05-BeOfGoodCheer.dc.html": {
+   "x": 0,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "201 · Be of Good Cheer"
+  },
+  "ACT-C15-D-P06-TheFourteenthNight.dc.html": {
+   "x": 840,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · The Fourteenth Night"
+  },
+  "ACT-C15-D-P07-TheFourteenthNight.dc.html": {
+   "x": 1680,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · The Fourteenth Night"
+  },
+  "ACT-C15-D-P08-AllEscapedSafeToTh.dc.html": {
+   "x": 2520,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · All Escaped Safe to the Land"
+  },
+  "ACT-C15-D-P09-AllEscapedSafeToTh.dc.html": {
+   "x": 3360,
+   "y": 67800,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · All Escaped Safe to the Land"
   }
  },
  "order": [
@@ -1699,7 +1769,17 @@
   "ACT-C14-D-P08-PaulBeforeAgrippa.dc.html",
   "ACT-C14-D-P09-PaulBeforeAgrippa.dc.html",
   "ACT-C14-D-P10-AlmostThouPersuade.dc.html",
-  "ACT-C14-D-P11-AlmostThouPersuade.dc.html"
+  "ACT-C14-D-P11-AlmostThouPersuade.dc.html",
+  "ACT-C15-00-Title.dc.html",
+  "ACT-C15-D-P01-ACenturionNamedJul.dc.html",
+  "ACT-C15-D-P02-FairHavens.dc.html",
+  "ACT-C15-D-P03-Euraquilo.dc.html",
+  "ACT-C15-D-P04-Euraquilo.dc.html",
+  "ACT-C15-D-P05-BeOfGoodCheer.dc.html",
+  "ACT-C15-D-P06-TheFourteenthNight.dc.html",
+  "ACT-C15-D-P07-TheFourteenthNight.dc.html",
+  "ACT-C15-D-P08-AllEscapedSafeToTh.dc.html",
+  "ACT-C15-D-P09-AllEscapedSafeToTh.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1806,6 +1886,13 @@
    "text": "Chapter 14 · Before Agrippa (Acts 25–26)",
    "x": 0,
    "y": 62200
+  },
+  "chapter15": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 15 · The Shipwreck (Acts 27)",
+   "x": 0,
+   "y": 66300
   }
  },
  "designSystems": [],

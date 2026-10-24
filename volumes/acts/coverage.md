@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 932 verses — 929 full, 0 partial, 3 omitted.
+**So far:** 976 verses — 973 full, 0 partial, 3 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -85,5 +85,11 @@ Every verse is on the page in full.
 ## Chapter 14 · Before Agrippa (Acts 25–26)
 
 59 verses: 59 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 15 · The Shipwreck (Acts 27)
+
+44 verses: 44 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

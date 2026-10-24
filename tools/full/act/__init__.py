@@ -90,5 +90,7 @@ META = {
      "blurb": "Before the council — God shall smite thee, thou whited wall; I am a Pharisee, a son of Pharisees, and the assembly divided; Be of good cheer: so must thou bear witness also at Rome; the forty under a curse and Paul's sister's son; the escort by night to Cæsarea; Tertullus the orator before Felix; and Felix and Drusilla hearing of righteousness, and self-control, and the judgment to come."},
     {"module": "ch14", "dir": "chapter-14", "num": "14", "name": "Before Agrippa", "range": "Acts 25–26", "bible_chapters": [25, 26],
      "blurb": "Festus on the judgment-seat — I appeal unto Cæsar; unto Cæsar shalt thou go; Agrippa and Bernice come with great pomp; Paul stretches forth his hand: the light from heaven above the brightness of the sun, and I was not disobedient unto the heavenly vision; Paul, thou art mad; With but little persuasion thou wouldest fain make me a Christian; and except these bonds."},
+    {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "The Shipwreck", "range": "Acts 27", "bible_chapters": [27],
+     "blurb": "Julius the centurion and the ship of Alexandria; Fair Havens and Paul's warning; the tempestuous wind called Euraquilo, the ship undergirded and the tackling cast out, neither sun nor stars for many days; an angel of the God whose I am — be of good cheer; the fourteenth night, the soundings and the four anchors; bread broken on the deck; and the ship broken where two seas met — so they all escaped safe to the land."},
   ],
 }
