@@ -1269,6 +1269,125 @@
    "w": 760,
    "h": 1080,
    "title": "170 · The Throne of His Glory"
+  },
+  "MAT-C10-00-Title.dc.html": {
+   "x": 0,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 10 · Gethsemane"
+  },
+  "MAT-C10-D-P01-ThePassoverCometh.dc.html": {
+   "x": 840,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "171 · The Passover Cometh"
+  },
+  "MAT-C10-D-P02-ForMyBurial.dc.html": {
+   "x": 1680,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "172 · For My Burial"
+  },
+  "MAT-C10-D-P03-TheLastSupper.dc.html": {
+   "x": 2520,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · The Last Supper"
+  },
+  "MAT-C10-D-P04-TheLastSupper.dc.html": {
+   "x": 3360,
+   "y": 52100,
+   "w": 760,
+   "h": 1080,
+   "title": "174 · The Last Supper"
+  },
+  "MAT-C10-D-P05-TheLastSupper.dc.html": {
+   "x": 0,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "175 · The Last Supper"
+  },
+  "MAT-C10-D-P06-BeforeTheCockCrow.dc.html": {
+   "x": 840,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "176 · Before the Cock Crow"
+  },
+  "MAT-C10-D-P07-BeforeTheCockCrow.dc.html": {
+   "x": 1680,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "177 · Before the Cock Crow"
+  },
+  "MAT-C10-D-P08-Gethsemane.dc.html": {
+   "x": 2520,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "178 · Gethsemane"
+  },
+  "MAT-C10-D-P09-Gethsemane.dc.html": {
+   "x": 3360,
+   "y": 53300,
+   "w": 760,
+   "h": 1080,
+   "title": "179 · Gethsemane"
+  },
+  "MAT-C10-D-P10-FriendDoThatForWhi.dc.html": {
+   "x": 0,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "180 · Friend, Do That for Which Thou Art Come"
+  },
+  "MAT-C10-D-P11-FriendDoThatForWhi.dc.html": {
+   "x": 840,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "181 · Friend, Do That for Which Thou Art Come"
+  },
+  "MAT-C10-D-P12-BeforeCaiaphas.dc.html": {
+   "x": 1680,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "182 · Before Caiaphas"
+  },
+  "MAT-C10-D-P13-BeforeCaiaphas.dc.html": {
+   "x": 2520,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "183 · Before Caiaphas"
+  },
+  "MAT-C10-D-P14-BeforeCaiaphas.dc.html": {
+   "x": 3360,
+   "y": 54500,
+   "w": 760,
+   "h": 1080,
+   "title": "184 · Before Caiaphas"
+  },
+  "MAT-C10-D-P15-ThouShaltDenyMeThr.dc.html": {
+   "x": 0,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "185 · Thou Shalt Deny Me Thrice"
+  },
+  "MAT-C10-D-P16-ThouShaltDenyMeThr.dc.html": {
+   "x": 840,
+   "y": 55700,
+   "w": 760,
+   "h": 1080,
+   "title": "186 · Thou Shalt Deny Me Thrice"
   }
  },
  "order": [
@@ -1451,7 +1570,24 @@
   "MAT-C09-D-P17-TheTalents.dc.html",
   "MAT-C09-D-P18-TheTalents.dc.html",
   "MAT-C09-D-P19-TheThroneOfHisGlor.dc.html",
-  "MAT-C09-D-P20-TheThroneOfHisGlor.dc.html"
+  "MAT-C09-D-P20-TheThroneOfHisGlor.dc.html",
+  "MAT-C10-00-Title.dc.html",
+  "MAT-C10-D-P01-ThePassoverCometh.dc.html",
+  "MAT-C10-D-P02-ForMyBurial.dc.html",
+  "MAT-C10-D-P03-TheLastSupper.dc.html",
+  "MAT-C10-D-P04-TheLastSupper.dc.html",
+  "MAT-C10-D-P05-TheLastSupper.dc.html",
+  "MAT-C10-D-P06-BeforeTheCockCrow.dc.html",
+  "MAT-C10-D-P07-BeforeTheCockCrow.dc.html",
+  "MAT-C10-D-P08-Gethsemane.dc.html",
+  "MAT-C10-D-P09-Gethsemane.dc.html",
+  "MAT-C10-D-P10-FriendDoThatForWhi.dc.html",
+  "MAT-C10-D-P11-FriendDoThatForWhi.dc.html",
+  "MAT-C10-D-P12-BeforeCaiaphas.dc.html",
+  "MAT-C10-D-P13-BeforeCaiaphas.dc.html",
+  "MAT-C10-D-P14-BeforeCaiaphas.dc.html",
+  "MAT-C10-D-P15-ThouShaltDenyMeThr.dc.html",
+  "MAT-C10-D-P16-ThouShaltDenyMeThr.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1523,6 +1659,13 @@
    "text": "Chapter 9 · The Son of Man Cometh (Matthew 23–25)",
    "x": 0,
    "y": 45300
+  },
+  "chapter10": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 10 · Gethsemane (Matthew 26)",
+   "x": 0,
+   "y": 51800
   }
  },
  "designSystems": [],
