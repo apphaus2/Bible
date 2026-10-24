@@ -996,6 +996,125 @@
    "w": 760,
    "h": 1080,
    "title": "133 · Peace I Leave with You"
+  },
+  "JHN-C08-00-Title.dc.html": {
+   "x": 0,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 8 · That They May Be One"
+  },
+  "JHN-C08-D-P01-IAmTheTrueVine.dc.html": {
+   "x": 840,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "134 · I Am the True Vine"
+  },
+  "JHN-C08-D-P02-IAmTheTrueVine.dc.html": {
+   "x": 1680,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "135 · I Am the True Vine"
+  },
+  "JHN-C08-D-P03-AbideInMyLove.dc.html": {
+   "x": 2520,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "136 · Abide in My Love"
+  },
+  "JHN-C08-D-P04-IfTheWorldHatethYo.dc.html": {
+   "x": 3360,
+   "y": 41500,
+   "w": 760,
+   "h": 1080,
+   "title": "137 · If the World Hateth You"
+  },
+  "JHN-C08-D-P05-IfTheWorldHatethYo.dc.html": {
+   "x": 0,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "138 · If the World Hateth You"
+  },
+  "JHN-C08-D-P06-ItIsExpedientForYo.dc.html": {
+   "x": 840,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "139 · It Is Expedient for You"
+  },
+  "JHN-C08-D-P07-ItIsExpedientForYo.dc.html": {
+   "x": 1680,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "140 · It Is Expedient for You"
+  },
+  "JHN-C08-D-P08-ALittleWhile.dc.html": {
+   "x": 2520,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "141 · A Little While"
+  },
+  "JHN-C08-D-P09-ALittleWhile.dc.html": {
+   "x": 3360,
+   "y": 42700,
+   "w": 760,
+   "h": 1080,
+   "title": "142 · A Little While"
+  },
+  "JHN-C08-D-P10-ALittleWhile.dc.html": {
+   "x": 0,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · A Little While"
+  },
+  "JHN-C08-D-P11-IHaveOvercomeTheWo.dc.html": {
+   "x": 840,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · I Have Overcome the World"
+  },
+  "JHN-C08-D-P12-FatherTheHourIsCom.dc.html": {
+   "x": 1680,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · Father, the Hour Is Come"
+  },
+  "JHN-C08-D-P13-ThatTheyMayBeOne.dc.html": {
+   "x": 2520,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · That They May Be One"
+  },
+  "JHN-C08-D-P14-ThatTheyMayBeOne.dc.html": {
+   "x": 3360,
+   "y": 43900,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · That They May Be One"
+  },
+  "JHN-C08-D-P15-ThatTheyMayBeOne.dc.html": {
+   "x": 0,
+   "y": 45100,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · That They May Be One"
+  },
+  "JHN-C08-D-P16-ThatTheyMayBeOne.dc.html": {
+   "x": 840,
+   "y": 45100,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · That They May Be One"
   }
  },
  "order": [
@@ -1139,7 +1258,24 @@
   "JHN-C07-D-P11-IAmTheWay.dc.html",
   "JHN-C07-D-P12-AnotherComforter.dc.html",
   "JHN-C07-D-P13-PeaceILeaveWithYou.dc.html",
-  "JHN-C07-D-P14-PeaceILeaveWithYou.dc.html"
+  "JHN-C07-D-P14-PeaceILeaveWithYou.dc.html",
+  "JHN-C08-00-Title.dc.html",
+  "JHN-C08-D-P01-IAmTheTrueVine.dc.html",
+  "JHN-C08-D-P02-IAmTheTrueVine.dc.html",
+  "JHN-C08-D-P03-AbideInMyLove.dc.html",
+  "JHN-C08-D-P04-IfTheWorldHatethYo.dc.html",
+  "JHN-C08-D-P05-IfTheWorldHatethYo.dc.html",
+  "JHN-C08-D-P06-ItIsExpedientForYo.dc.html",
+  "JHN-C08-D-P07-ItIsExpedientForYo.dc.html",
+  "JHN-C08-D-P08-ALittleWhile.dc.html",
+  "JHN-C08-D-P09-ALittleWhile.dc.html",
+  "JHN-C08-D-P10-ALittleWhile.dc.html",
+  "JHN-C08-D-P11-IHaveOvercomeTheWo.dc.html",
+  "JHN-C08-D-P12-FatherTheHourIsCom.dc.html",
+  "JHN-C08-D-P13-ThatTheyMayBeOne.dc.html",
+  "JHN-C08-D-P14-ThatTheyMayBeOne.dc.html",
+  "JHN-C08-D-P15-ThatTheyMayBeOne.dc.html",
+  "JHN-C08-D-P16-ThatTheyMayBeOne.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1197,6 +1333,13 @@
    "text": "Chapter 7 · The Washing of Feet (John 13–14)",
    "x": 0,
    "y": 37100
+  },
+  "chapter08": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 8 · That They May Be One (John 15–17)",
+   "x": 0,
+   "y": 41200
   }
  },
  "designSystems": [],
