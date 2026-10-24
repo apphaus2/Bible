@@ -1,0 +1,21 @@
+{
+ "id": "acts",
+ "order": 44,
+ "name": "Acts",
+ "kanji": "使徒行伝",
+ "thumb": "vol-acts-",
+ "lede": "The forty-fourth book of the Bible, in full: the ascension and the Spirit poured forth at Pentecost, Peter and John before the council, Stephen, the road to Damascus, Cornelius, Paul's journeys through Cyprus, Galatia, Macedonia, Achaia and Asia, the arrest in Jerusalem, the shipwreck on Melita and the gospel preached at Rome, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Promise of the Father",
+   "range": "Acts 1–2",
+   "blurb": "Forty days, and wait for the promise of the Father; ye shall be my witnesses unto the uttermost part of the earth; a cloud received him out of their sight; the upper chamber and the lot that fell upon Matthias; then Pentecost — a sound as of a mighty wind, tongues as of fire — and every man heard them in his own language; Peter's sermon, and about three thousand souls.",
+   "prefixes": [
+    "Main.dc.html",
+    "ACT-C01-"
+   ]
+  }
+ ]
+}

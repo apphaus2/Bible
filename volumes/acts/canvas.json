@@ -1,0 +1,178 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T14:54:31Z"
+ },
+ "title": "Acts — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "ACT-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Promise of the Father"
+  },
+  "ACT-C01-D-P01-TheFormerTreatise.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · The Former Treatise"
+  },
+  "ACT-C01-D-P02-YeShallBeMyWitness.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Ye Shall Be My Witnesses"
+  },
+  "ACT-C01-D-P03-ACloudReceivedHim.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · A Cloud Received Him"
+  },
+  "ACT-C01-D-P04-TheUpperChamber.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Upper Chamber"
+  },
+  "ACT-C01-D-P05-TheFieldOfBlood.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Field of Blood"
+  },
+  "ACT-C01-D-P06-TheLotFellUponMatt.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · The Lot Fell upon Matthias"
+  },
+  "ACT-C01-D-P07-TheDayOfPentecost.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Day of Pentecost"
+  },
+  "ACT-C01-D-P08-TheDayOfPentecost.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Day of Pentecost"
+  },
+  "ACT-C01-D-P09-EveryNationUnderHe.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Every Nation under Heaven"
+  },
+  "ACT-C01-D-P10-ThisIsThatWhichHat.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P11-ThisIsThatWhichHat.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P12-ThisIsThatWhichHat.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P13-ThisIsThatWhichHat.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · This Is That Which Hath Been Spoken"
+  },
+  "ACT-C01-D-P14-WhatShallWeDo.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · What Shall We Do?"
+  },
+  "ACT-C01-D-P15-AllThingsCommon.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · All Things Common"
+  },
+  "ACT-C01-D-P16-AllThingsCommon.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · All Things Common"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "ACT-C01-00-Title.dc.html",
+  "ACT-C01-D-P01-TheFormerTreatise.dc.html",
+  "ACT-C01-D-P02-YeShallBeMyWitness.dc.html",
+  "ACT-C01-D-P03-ACloudReceivedHim.dc.html",
+  "ACT-C01-D-P04-TheUpperChamber.dc.html",
+  "ACT-C01-D-P05-TheFieldOfBlood.dc.html",
+  "ACT-C01-D-P06-TheLotFellUponMatt.dc.html",
+  "ACT-C01-D-P07-TheDayOfPentecost.dc.html",
+  "ACT-C01-D-P08-TheDayOfPentecost.dc.html",
+  "ACT-C01-D-P09-EveryNationUnderHe.dc.html",
+  "ACT-C01-D-P10-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P11-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P12-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P13-ThisIsThatWhichHat.dc.html",
+  "ACT-C01-D-P14-WhatShallWeDo.dc.html",
+  "ACT-C01-D-P15-AllThingsCommon.dc.html",
+  "ACT-C01-D-P16-AllThingsCommon.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Acts Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Promise of the Father (Acts 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
