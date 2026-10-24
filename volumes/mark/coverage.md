@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 285 verses — 284 full, 0 partial, 1 omitted.
+**So far:** 352 verses — 351 full, 0 partial, 1 omitted.
 
 ## Chapter 1 · The Beginning of the Gospel (Mark 1–2)
 
@@ -27,3 +27,9 @@ Every verse is on the page in full.
 64 verses: 63 full, 0 partial, 1 omitted.
 
 - 7:16 — omitted (0%)
+
+## Chapter 5 · Thou Art the Christ (Mark 8:1–9:29)
+
+67 verses: 67 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
