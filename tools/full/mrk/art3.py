@@ -75,9 +75,10 @@ def gerasene_sitting(p, w, h, seed):
     o.append(disciple(p, w * 0.14, b, s * 0.94, "peter") + disciple(p, w * 0.54, b, s * 0.92, "john", flip=True))
     return "".join(o)
 
-def decapolis(p, w, h, seed):
+def decapolis(p, w, h, seed, jesus_=False):
     """He went his way, and began to publish in Decapolis: the road winding through the hills from town to town, the man in
-    his clean robe on it, his arm raised as he tells it, people standing to hear at a town gate."""
+    his clean robe on it, his arm raised as he tells it, people standing to hear at a town gate (jesus_=True: Jesus and
+    the disciples on the road, the people coming out to him)."""
     b = h * 0.94
     o = [mk.defs(p, *ALL), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.36, seed, color="#9AAA7A", amp=14, step=90)]
     for i, (x, y) in enumerate(((0.1, 0.42), (0.3, 0.38), (0.52, 0.42), (0.74, 0.36), (0.92, 0.44))):
@@ -86,7 +87,10 @@ def decapolis(p, w, h, seed):
     o.append(f'<path d="M{f(w * 0.2)} {f(h + 10)} C {f(w * 0.3)} {f(h * 0.7)} {f(w * 0.7)} {f(h * 0.66)} {f(w * 0.74)} {f(h * 0.46)}" stroke="#E0D0A8" stroke-width="{f(max(6, h * 0.05))}" fill="none"></path>')
     o.append(walls(w * 0.62, w + 10, h * 0.7, h * 0.24, seed, towers=2))
     s = fit(b, max(h * 0.24, b - 230))
-    o.append(gerasene_fig(p, w * 0.34, b, s, up=UP_HIGH))
+    if jesus_:
+        o.append(jesus(p, w * 0.3, b, s) + disciple(p, w * 0.18, b, s * 0.96, "peter") + disciple(p, w * 0.08, b, s * 0.94, "john"))
+    else:
+        o.append(gerasene_fig(p, w * 0.34, b, s, up=UP_HIGH))
     o.append(crowd(p, w * 0.5, w * 0.9, b, b - 160 * s, 5, seed, flip=True))
     return "".join(o)
 

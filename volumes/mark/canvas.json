@@ -345,6 +345,97 @@
    "w": 760,
    "h": 1080,
    "title": "44 · Herod's Birthday"
+  },
+  "MRK-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · It Is I"
+  },
+  "MRK-C04-D-P01-SheepNotHavingAShe.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Sheep Not Having a Shepherd"
+  },
+  "MRK-C04-D-P02-FiveLoavesAndTwoFi.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Five Loaves, and Two Fishes"
+  },
+  "MRK-C04-D-P03-ByHundredsAndByFif.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · By Hundreds, and by Fifties"
+  },
+  "MRK-C04-D-P04-BeNotAfraid.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Be Not Afraid"
+  },
+  "MRK-C04-D-P05-BeNotAfraid.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · Be Not Afraid"
+  },
+  "MRK-C04-D-P06-TheTraditionOfTheE.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Tradition of the Elders"
+  },
+  "MRK-C04-D-P07-TheTraditionOfTheE.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Tradition of the Elders"
+  },
+  "MRK-C04-D-P08-ThatWhichProceedet.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · That Which Proceedeth out of the Man"
+  },
+  "MRK-C04-D-P09-EvenTheDogsUnderTh.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Even the Dogs under the Table"
+  },
+  "MRK-C04-D-P10-EvenTheDogsUnderTh.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Even the Dogs under the Table"
+  },
+  "MRK-C04-D-P11-Ephphatha.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Ephphatha"
+  },
+  "MRK-C04-D-P12-Ephphatha.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Ephphatha"
   }
  },
  "order": [
@@ -395,7 +486,20 @@
   "MRK-C03-D-P13-JohnWhomIBeheaded.dc.html",
   "MRK-C03-D-P14-HerodSBirthday.dc.html",
   "MRK-C03-D-P15-HerodSBirthday.dc.html",
-  "MRK-C03-D-P16-HerodSBirthday.dc.html"
+  "MRK-C03-D-P16-HerodSBirthday.dc.html",
+  "MRK-C04-00-Title.dc.html",
+  "MRK-C04-D-P01-SheepNotHavingAShe.dc.html",
+  "MRK-C04-D-P02-FiveLoavesAndTwoFi.dc.html",
+  "MRK-C04-D-P03-ByHundredsAndByFif.dc.html",
+  "MRK-C04-D-P04-BeNotAfraid.dc.html",
+  "MRK-C04-D-P05-BeNotAfraid.dc.html",
+  "MRK-C04-D-P06-TheTraditionOfTheE.dc.html",
+  "MRK-C04-D-P07-TheTraditionOfTheE.dc.html",
+  "MRK-C04-D-P08-ThatWhichProceedet.dc.html",
+  "MRK-C04-D-P09-EvenTheDogsUnderTh.dc.html",
+  "MRK-C04-D-P10-EvenTheDogsUnderTh.dc.html",
+  "MRK-C04-D-P11-Ephphatha.dc.html",
+  "MRK-C04-D-P12-Ephphatha.dc.html"
  ],
  "notes": {
   "Main": {
@@ -425,6 +529,13 @@
    "text": "Chapter 3 · Talitha Cumi (Mark 5:1–6:29)",
    "x": 0,
    "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · It Is I (Mark 6:30–7:37)",
+   "x": 0,
+   "y": 15200
   }
  },
  "designSystems": [],
