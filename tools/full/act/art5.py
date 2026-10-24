@@ -32,7 +32,7 @@ def mourners_tomb(p, w, h, seed):
     s = fit(b, max(h * 0.3, b - 210))
     for i, x in enumerate((0.08, 0.17, 0.26, 0.35)):
         o.append(man_fig(p, w * x, b, s * (1 - 0.02 * i), ["#3A3A4A", "#4A3A3A", "#2A3A4A", "#4A4A3A"][i], head=["#E8E2D6", "#3A3A4A", None, "#6A5A3A"][i],
-                         hr="#2A1A10", bd="#2A1A10", flip=True, up=[(22, -158), (14, -176), (8, -190)] if i % 2 else None))
+                         hr="#2A1A10", bd="#2A1A10", up=[(22, -158), (14, -176), (8, -190)] if i % 2 else None))
     return "".join(o)
 
 def scattered(w, h):
@@ -112,7 +112,7 @@ def hands_on(p, w, h, seed, money=False):
     s = fit(b, max(h * 0.28, b - 210))
     for i, (x, c) in enumerate(((0.42, "#6A4A3A"), (0.56, "#5A6A3A"))):
         o.append(E.kneel(w * x, b, s * 0.82, color=c, skin=SKIN, flip=True))
-    o.append(peter(p, w * 0.3, b, s, flip=True, up=[(22, -158), (44, -150), (60, -134)]) + john_ap(p, w * 0.68, b, s, up=[(-22, -158), (-44, -150), (-60, -134)]))
+    o.append(peter(p, w * 0.3, b, s, up=[(22, -158), (44, -150), (60, -134)]) + john_ap(p, w * 0.68, b, s, up=[(-22, -158), (-44, -150), (-60, -134)]))
     if money:
         purse = '<path d="M-74 -150 C -80 -134 -66 -128 -60 -134 C -54 -140 -60 -156 -70 -156 Z" fill="#8A5A2A" stroke="#0D0D0F" stroke-width="1.6"></path>'
         o.append(man_fig(p, w * 0.86, b, s, "#3A1A4A", head="#4A1A5A", cord="#E8B830", bd="#1A1210", up=UP_BLESS, extra=purse))
@@ -193,8 +193,8 @@ def damascus_road(p, w, h, seed, fallen=False, lit=True, led=False):
             o.append(man_fig(p, w * x, b, s * (0.96 - 0.03 * i), ["#6A5A4A", "#4A4A5A", "#5A3A2A"][i], head=["#3A3A3A", "#6A5A3A", None][i], hr="#2A1A10",
                              bd="#2A1A10", kind="Tunic", up=UP_HIGH if i != 1 else None))
     elif led:
-        o.append(man_fig(p, w * 0.36, b, s * 0.98, "#6A5A4A", head="#3A3A3A", bd="#2A1A10", kind="Tunic", flip=True, up=[(22, -158), (40, -140), (54, -132)]))
-        o.append(paul(p, w * 0.24, b, s, flip=True, up=[(22, -158), (36, -150), (50, -146)]))
+        o.append(man_fig(p, w * 0.36, b, s * 0.98, "#6A5A4A", head="#3A3A3A", bd="#2A1A10", kind="Tunic", up=[(22, -158), (40, -140), (54, -132)]))
+        o.append(paul(p, w * 0.24, b, s, up=[(22, -158), (36, -150), (50, -146)]))
         o.append(man_fig(p, w * 0.12, b, s * 0.96, "#4A4A5A", head="#6A5A3A", bd="#2A1A10", kind="Tunic", flip=True))
     else:
         o.append(paul(p, w * 0.3, b, s, flip=True) + man_fig(p, w * 0.18, b, s * 0.96, "#6A5A4A", head="#3A3A3A", bd="#2A1A10", kind="Tunic", flip=True)

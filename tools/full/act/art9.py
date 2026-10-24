@@ -35,7 +35,7 @@ def timothy_joined(p, w, h, seed):
     bg, b = _gate(w, h, seed)
     o = [mk.defs(p, *ALL), bg]
     s = fit(b, max(h * 0.3, b - 200))
-    o.append(silas(p, w * 0.12, b, s, flip=True) + paul(p, w * 0.24, b, s, flip=True, up=[(22, -158), (42, -170), (60, -166)]))
+    o.append(silas(p, w * 0.12, b, s, flip=True) + paul(p, w * 0.24, b, s, up=[(22, -158), (42, -170), (60, -166)]))
     o.append(timothy(p, w * 0.36, b, s * 0.94) + woman_fig(p, w * 0.47, b, s * 0.9, "#3A5A5A", "#1F5A5A", flip=True))
     o.append(crowd(p, w * 0.62, w * 0.94, b, b - 170 * s, 3, seed, flip=True))
     return "".join(o)

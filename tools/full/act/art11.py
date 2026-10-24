@@ -39,7 +39,7 @@ def handkerchiefs(p, w, h, seed):
     s = fit(b, max(h * 0.3, b - 200))
     o.append(on_bed(p, w * 0.6, b - 26 * s, 220 * s, cloth="#8A9AAA"))
     cloth = '<path d="M-66 -150 L -40 -152 L -42 -118 L -64 -116 Z" fill="#F8F4EC" stroke="#0D0D0F" stroke-width="1.6"></path>'
-    o.append(woman_fig(p, w * 0.3, b, s, "#5A6A4A", "#2A4A5A", flip=True, up=[(22, -158), (44, -150), (62, -150)], extra=cloth.replace("-66", "66").replace("-40", "40").replace("-42", "42").replace("-64", "64")))
+    o.append(woman_fig(p, w * 0.3, b, s, "#5A6A4A", "#2A4A5A", up=[(22, -158), (44, -150), (62, -150)], extra=cloth.replace("-66", "66").replace("-40", "40").replace("-42", "42").replace("-64", "64")))
     o.append(man_fig(p, w * 0.86, b, s, "#6A5A3A", head="#E8E2D6", bd="#6A645E", flip=True))
     return "".join(o)
 
@@ -68,7 +68,7 @@ def books_burned(p, w, h, seed):
         o.append(f'<rect x="{f(x - 22 * k)}" y="{f(y - 12 * k)}" width="{f(44 * k)}" height="{f(12 * k)}" rx="{f(6 * k)}" fill="{["#E8D8B0", "#C8A878", "#8A5A3A"][i % 3]}" stroke="{INK}" stroke-width="1.4" transform="rotate({(i * 23) % 40 - 20} {f(x)} {f(y)})"></rect>')
     o.append(glow(cx, b - 60 * k, 160 * k, "#FF8A3D", 0.6, f"{p}f") + E.blaze(cx, b, 110 * k, 130 * k, seed, n=6))
     scrolls = '<rect x="-54" y="-136" width="30" height="12" rx="6" fill="#E8D8B0" stroke="#0D0D0F" stroke-width="1.4"></rect>'
-    o.append(man_fig(p, w * 0.24, b, s, "#4A2A5A", head="#2A1A3A", bd="#1A1210", flip=True, up=[(22, -158), (40, -140), (56, -134)]) + man_fig(p, w * 0.12, b, s, "#6A4A3A", hr="#2A1A10", bd="#2A1A10", flip=True, extra=scrolls))
+    o.append(man_fig(p, w * 0.24, b, s, "#4A2A5A", head="#2A1A3A", bd="#1A1210", up=[(22, -158), (40, -140), (56, -134)]) + man_fig(p, w * 0.12, b, s, "#6A4A3A", hr="#2A1A10", bd="#2A1A10", flip=True, extra=scrolls))
     o.append(crowd(p, w * 0.7, w * 0.96, b, b - 170 * s, 4, seed, flip=True))
     return "".join(o)
 
@@ -174,7 +174,7 @@ def miletus(p, w, h, seed, kneel=False):
         o.append(E.kneel(w * 0.3, b, s * 0.86, color=ROBES["paul"], skin=SKIN, flip=True))
         for i, x in enumerate((0.44, 0.56, 0.68)):
             o.append(E.kneel(w * x, b, s * 0.84, color=["#6A5A3A", "#3A4A6A", "#E8E2D6"][i], skin=SKIN))
-        o.append(elder(p, w * 0.14, b, s, flip=True, up=[(22, -158), (14, -176), (8, -190)]))
+        o.append(elder(p, w * 0.14, b, s, up=[(22, -158), (14, -176), (8, -190)]))
     else:
         o.append(paul(p, w * 0.2, b, s, flip=True, up=UP_BLESS))
         for i, x in enumerate((0.36, 0.46, 0.56, 0.66)):

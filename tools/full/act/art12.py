@@ -50,7 +50,7 @@ def philip_house(p, w, h, seed, agabus_=False):
         o.append(f'<path d="M{f(w * 0.44 + 20 * k)} {f(b - 126 * k)} C {f(w * 0.44 + 40 * k)} {f(b - 116 * k)} {f(w * 0.44 + 44 * k)} {f(b - 134 * k)} {f(w * 0.44 + 30 * k)} {f(b - 140 * k)}" stroke="#C8963E" stroke-width="{f(6 * k)}" fill="none"></path>'
                  f'<path d="M{f(w * 0.44 - 40 * k)} {f(b - 6 * k)} C {f(w * 0.44 - 20 * k)} {f(b - 16 * k)} {f(w * 0.44)} {f(b - 4 * k)} {f(w * 0.44 + 10 * k)} {f(b - 10 * k)}" stroke="#C8963E" stroke-width="{f(6 * k)}" fill="none"></path>')
         o.append(paul(p, w * 0.66, b, s, flip=True) + philip_ev(p, w * 0.78, b, s, flip=True) + woman_fig(p, w * 0.9, b, s * 0.86, "#E8E2D6", "#3A6A8A", flip=True))
-        o.append(man_fig(p, w * 0.2, b, s, "#6A4A3A", hr="#2A1A10", bd="#2A1A10", flip=True, up=[(22, -158), (14, -176), (8, -190)]))
+        o.append(man_fig(p, w * 0.2, b, s, "#6A4A3A", hr="#2A1A10", bd="#2A1A10", up=[(22, -158), (14, -176), (8, -190)]))
     return "".join(o)
 
 def up_to_jerusalem(w, h):

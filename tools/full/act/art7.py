@@ -117,7 +117,7 @@ def rhoda_gate(p, w, h, seed, opened=False):
     o.append(f'<rect x="-10" y="{f(b)}" width="{f(w + 20)}" height="{f(h)}" fill="#2A2228"></rect>')
     s = fit(b, max(h * 0.3, b - 200))
     if not opened:
-        o.append(peter(p, gx - 40 * s, b, s, flip=True, up=[(22, -158), (40, -170), (52, -180)]))
+        o.append(peter(p, gx - 40 * s, b, s, up=[(22, -158), (40, -170), (52, -180)]))
         o.append(woman_fig(p, w * 0.6, b, s * 0.84, "#C8A050", "#F3EFE6", up=UP_HIGH))
         for i, x in enumerate((0.76, 0.86, 0.95)):
             o.append(seated(w * x, b, s * 0.72, ["#6A4A3A", "#3A4A6A", "#5A3A4A"][i], head=None if i else "#3A3A4A", beard="#2A1A10", flip=True))
@@ -179,6 +179,6 @@ def kings_of_israel(p, w, h, seed):
     bg, b = _road(w, h, seed)
     o = [mk.defs(p, *ALL), bg]
     s = fit(b, max(h * 0.3, b - 190))
-    o.append(samuel_fig(p, w * 0.3, b, s, flip=True, up=[(22, -158), (40, -186), (56, -206)]) + saul_fig(p, w * 0.44, b, s * 0.92, crown=True))
+    o.append(samuel_fig(p, w * 0.3, b, s, up=[(22, -158), (40, -186), (56, -206)]) + saul_fig(p, w * 0.44, b, s * 0.92, crown=True))
     o.append(crowd(p, w * 0.6, w * 0.96, b, b - 170 * s, 5, seed, flip=True))
     return "".join(o)

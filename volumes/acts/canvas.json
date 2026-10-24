@@ -1556,6 +1556,62 @@
    "w": 760,
    "h": 1080,
    "title": "205 · All Escaped Safe to the Land"
+  },
+  "ACT-C16-00-Title.dc.html": {
+   "x": 0,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 16 · Rome"
+  },
+  "ACT-C16-D-P01-Melita.dc.html": {
+   "x": 840,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Melita"
+  },
+  "ACT-C16-D-P02-Publius.dc.html": {
+   "x": 1680,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Publius"
+  },
+  "ACT-C16-D-P03-AndSoWeCameToRome.dc.html": {
+   "x": 2520,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "208 · And So We Came to Rome"
+  },
+  "ACT-C16-D-P04-AndSoWeCameToRome.dc.html": {
+   "x": 3360,
+   "y": 69500,
+   "w": 760,
+   "h": 1080,
+   "title": "209 · And So We Came to Rome"
+  },
+  "ACT-C16-D-P05-TheHopeOfIsrael.dc.html": {
+   "x": 0,
+   "y": 70700,
+   "w": 760,
+   "h": 1080,
+   "title": "210 · The Hope of Israel"
+  },
+  "ACT-C16-D-P06-TheHopeOfIsrael.dc.html": {
+   "x": 840,
+   "y": 70700,
+   "w": 760,
+   "h": 1080,
+   "title": "211 · The Hope of Israel"
+  },
+  "ACT-C16-D-P07-NoneForbiddingHim.dc.html": {
+   "x": 1680,
+   "y": 70700,
+   "w": 760,
+   "h": 1080,
+   "title": "212 · None Forbidding Him"
   }
  },
  "order": [
@@ -1779,7 +1835,15 @@
   "ACT-C15-D-P06-TheFourteenthNight.dc.html",
   "ACT-C15-D-P07-TheFourteenthNight.dc.html",
   "ACT-C15-D-P08-AllEscapedSafeToTh.dc.html",
-  "ACT-C15-D-P09-AllEscapedSafeToTh.dc.html"
+  "ACT-C15-D-P09-AllEscapedSafeToTh.dc.html",
+  "ACT-C16-00-Title.dc.html",
+  "ACT-C16-D-P01-Melita.dc.html",
+  "ACT-C16-D-P02-Publius.dc.html",
+  "ACT-C16-D-P03-AndSoWeCameToRome.dc.html",
+  "ACT-C16-D-P04-AndSoWeCameToRome.dc.html",
+  "ACT-C16-D-P05-TheHopeOfIsrael.dc.html",
+  "ACT-C16-D-P06-TheHopeOfIsrael.dc.html",
+  "ACT-C16-D-P07-NoneForbiddingHim.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1893,6 +1957,13 @@
    "text": "Chapter 15 · The Shipwreck (Acts 27)",
    "x": 0,
    "y": 66300
+  },
+  "chapter16": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 16 · Rome (Acts 28)",
+   "x": 0,
+   "y": 69200
   }
  },
  "designSystems": [],

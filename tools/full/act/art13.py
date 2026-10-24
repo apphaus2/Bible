@@ -69,7 +69,7 @@ def nephew_told(p, w, h, seed, captain=False):
          f'<rect x="-10" y="{f(b - h * 0.04)}" width="{f(w + 20)}" height="{f(h)}" fill="#8A7A6A" stroke="{INK}" stroke-width="2"></rect>']
     s = fit(b, max(h * 0.3, b - 200))
     if captain:
-        o.append(lysias(p, w * 0.4, b, s, up=[(-22, -158), (-40, -136), (-56, -126)]) + nephew(p, w * 0.28, b, s * 0.94, flip=True, up=[(22, -158), (40, -136), (52, -128)]))
+        o.append(lysias(p, w * 0.4, b, s, up=[(-22, -158), (-40, -136), (-56, -126)]) + nephew(p, w * 0.28, b, s * 0.94, up=[(22, -158), (40, -136), (52, -128)]))
         o.append(centurion(p, w * 0.78, b, s, flip=True))
     else:
         o.append(paul(p, w * 0.24, b, s, flip=True, up=UP_BLESS) + nephew(p, w * 0.38, b, s * 0.94) + centurion(p, w * 0.6, b, s, flip=True))
@@ -135,6 +135,6 @@ def two_years(p, w, h, seed):
     o.append("".join(f'<path d="M{f(w * (0.06 + 0.05 * k))} {f(h * 0.2)} L {f(w * (0.06 + 0.05 * k))} {f(h * 0.52)}" stroke="#3A3A44" stroke-width="4"></path>' for k in range(1, 4)))
     s = fit(b, max(h * 0.3, b - 200))
     o.append(seated(w * 0.32, b, s * 0.84, ROBES["paul"], head="#5A4A3A", beard="#3A2A1A", flip=True))
-    o.append(man_fig(p, w * 0.5, b, s, "#6A5A3A", hr="#2A1A10", bd="#2A1A10", flip=True, up=[(22, -158), (40, -140), (56, -136)]) + loaf(w * 0.5 - 56 * s, b - 140 * s, s * 0.5))
+    o.append(man_fig(p, w * 0.5, b, s, "#6A5A3A", hr="#2A1A10", bd="#2A1A10", up=[(22, -158), (40, -140), (56, -136)]) + loaf(w * 0.5 - 56 * s, b - 140 * s, s * 0.5))
     o.append(soldier(p, w * 0.64, b, s, flip=True))
     return "".join(o)

@@ -40,7 +40,7 @@ def beautiful_gate(p, w, h, seed, stage="ask"):
             o.append(peter(p, w * 0.72, b, s, up=UP_TOUCH) + john_ap(p, w * 0.82, b, s * 0.98))
     elif stage == "raise":
         o.append(bedroll(mx - 30 * s, b - 6, 150 * s, 10 * s))
-        o.append(man_fig(p, mx + 10 * s, b, s * 0.96, "#8A7A5A", head="#6A5A3A", bd="#3A2A1E", flip=True, up=[(22, -158), (36, -150), (52, -150)]))
+        o.append(man_fig(p, mx + 10 * s, b, s * 0.96, "#8A7A5A", head="#6A5A3A", bd="#3A2A1E", up=[(22, -158), (36, -150), (52, -150)]))
         o.append(peter(p, mx + 120 * s, b, s, up=UP_BLESS) + john_ap(p, mx + 200 * s, b, s * 0.98))
     else:
         o.append(glow(w * 0.48, b - 120 * s, 140 * s, "#FFF4C2", 0.7, f"{p}j") + man_fig(p, w * 0.48, b - 30 * s, s, "#8A7A5A", head="#6A5A3A", bd="#3A2A1E", up=UP_HIGH))

@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 976 verses — 973 full, 0 partial, 3 omitted.
+**So far:** 1007 verses — 1003 full, 0 partial, 4 omitted.
 
 ## Chapter 1 · The Promise of the Father (Acts 1–2)
 
@@ -93,3 +93,9 @@ Every verse is on the page in full.
 44 verses: 44 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
+
+## Chapter 16 · Rome (Acts 28)
+
+31 verses: 30 full, 0 partial, 1 omitted.
+
+- 28:29 — omitted (0%)

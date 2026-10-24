@@ -92,5 +92,7 @@ META = {
      "blurb": "Festus on the judgment-seat — I appeal unto Cæsar; unto Cæsar shalt thou go; Agrippa and Bernice come with great pomp; Paul stretches forth his hand: the light from heaven above the brightness of the sun, and I was not disobedient unto the heavenly vision; Paul, thou art mad; With but little persuasion thou wouldest fain make me a Christian; and except these bonds."},
     {"module": "ch15", "dir": "chapter-15", "num": "15", "name": "The Shipwreck", "range": "Acts 27", "bible_chapters": [27],
      "blurb": "Julius the centurion and the ship of Alexandria; Fair Havens and Paul's warning; the tempestuous wind called Euraquilo, the ship undergirded and the tackling cast out, neither sun nor stars for many days; an angel of the God whose I am — be of good cheer; the fourteenth night, the soundings and the four anchors; bread broken on the deck; and the ship broken where two seas met — so they all escaped safe to the land."},
+    {"module": "ch16", "dir": "chapter-16", "num": "16", "name": "Rome", "range": "Acts 28", "bible_chapters": [28],
+     "blurb": "The island called Melita and the barbarians' fire; the viper fastened on Paul's hand and shaken off into the fire; Publius and his father healed; the ship whose sign was the Twin Brothers; the brethren at the Market of Appius and the Three Taverns — and so we came to Rome; the chief of the Jews in Paul's lodging, and Isaiah's word; and two whole years in his own hired dwelling, preaching the kingdom of God with all boldness, none forbidding him."},
   ],
 }
