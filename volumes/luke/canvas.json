@@ -660,6 +660,111 @@
    "w": 760,
    "h": 1080,
    "title": "86 · Maiden, Arise"
+  },
+  "LUK-C07-00-Title.dc.html": {
+   "x": 0,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 7 · Thou Art the Christ"
+  },
+  "LUK-C07-D-P01-TakeNothingForYour.dc.html": {
+   "x": 840,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · Take Nothing for Your Journey"
+  },
+  "LUK-C07-D-P02-GiveYeThemToEat.dc.html": {
+   "x": 1680,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Give Ye Them to Eat"
+  },
+  "LUK-C07-D-P03-GiveYeThemToEat.dc.html": {
+   "x": 2520,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · Give Ye Them to Eat"
+  },
+  "LUK-C07-D-P04-GiveYeThemToEat.dc.html": {
+   "x": 3360,
+   "y": 30200,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · Give Ye Them to Eat"
+  },
+  "LUK-C07-D-P05-WhoSayYeThatIAm.dc.html": {
+   "x": 0,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · Who Say Ye That I Am?"
+  },
+  "LUK-C07-D-P06-TakeUpHisCrossDail.dc.html": {
+   "x": 840,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · Take Up His Cross Daily"
+  },
+  "LUK-C07-D-P07-HisRaimentBecameWh.dc.html": {
+   "x": 1680,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · His Raiment Became White and Dazzling"
+  },
+  "LUK-C07-D-P08-HisRaimentBecameWh.dc.html": {
+   "x": 2520,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · His Raiment Became White and Dazzling"
+  },
+  "LUK-C07-D-P09-IBeseechTheeLookUp.dc.html": {
+   "x": 3360,
+   "y": 31400,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · I Beseech Thee, Look upon My Son"
+  },
+  "LUK-C07-D-P10-IBeseechTheeLookUp.dc.html": {
+   "x": 0,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · I Beseech Thee, Look upon My Son"
+  },
+  "LUK-C07-D-P11-HeThatIsLeastAmong.dc.html": {
+   "x": 840,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · He That Is Least among You"
+  },
+  "LUK-C07-D-P12-HeStedfastlySetHis.dc.html": {
+   "x": 1680,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · He Stedfastly Set His Face"
+  },
+  "LUK-C07-D-P13-FollowMe.dc.html": {
+   "x": 2520,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "99 · Follow Me"
+  },
+  "LUK-C07-D-P14-FollowMe.dc.html": {
+   "x": 3360,
+   "y": 32600,
+   "w": 760,
+   "h": 1080,
+   "title": "100 · Follow Me"
   }
  },
  "order": [
@@ -755,7 +860,22 @@
   "LUK-C06-D-P11-WhoIsItThatTouched.dc.html",
   "LUK-C06-D-P12-WhoIsItThatTouched.dc.html",
   "LUK-C06-D-P13-MaidenArise.dc.html",
-  "LUK-C06-D-P14-MaidenArise.dc.html"
+  "LUK-C06-D-P14-MaidenArise.dc.html",
+  "LUK-C07-00-Title.dc.html",
+  "LUK-C07-D-P01-TakeNothingForYour.dc.html",
+  "LUK-C07-D-P02-GiveYeThemToEat.dc.html",
+  "LUK-C07-D-P03-GiveYeThemToEat.dc.html",
+  "LUK-C07-D-P04-GiveYeThemToEat.dc.html",
+  "LUK-C07-D-P05-WhoSayYeThatIAm.dc.html",
+  "LUK-C07-D-P06-TakeUpHisCrossDail.dc.html",
+  "LUK-C07-D-P07-HisRaimentBecameWh.dc.html",
+  "LUK-C07-D-P08-HisRaimentBecameWh.dc.html",
+  "LUK-C07-D-P09-IBeseechTheeLookUp.dc.html",
+  "LUK-C07-D-P10-IBeseechTheeLookUp.dc.html",
+  "LUK-C07-D-P11-HeThatIsLeastAmong.dc.html",
+  "LUK-C07-D-P12-HeStedfastlySetHis.dc.html",
+  "LUK-C07-D-P13-FollowMe.dc.html",
+  "LUK-C07-D-P14-FollowMe.dc.html"
  ],
  "notes": {
   "Main": {
@@ -806,6 +926,13 @@
    "text": "Chapter 6 · The Sower (Luke 8)",
    "x": 0,
    "y": 25800
+  },
+  "chapter07": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 7 · Thou Art the Christ (Luke 9)",
+   "x": 0,
+   "y": 29900
   }
  },
  "designSystems": [],
