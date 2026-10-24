@@ -1,0 +1,21 @@
+{
+ "id": "john",
+ "order": 43,
+ "name": "John",
+ "kanji": "ヨハネによる福音書",
+ "thumb": "vol-john-",
+ "lede": "The Gospel according to John, in full: in the beginning was the Word; the Lamb of God; water made wine; Nicodemus by night and the woman at the well; the bread of life, the light of the world, the good shepherd; Lazarus come forth; the washing of feet, the upper room and the prayer; the cross and the empty tomb; and by the sea at dawn, lovest thou me? — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Word Became Flesh",
+   "range": "John 1–2",
+   "blurb": "In the beginning was the Word, and the light shineth in the darkness; a man sent from God whose name was John; the Word became flesh, and dwelt among us; the voice of one crying in the wilderness; behold, the Lamb of God; the Spirit descending as a dove; come and see; we have found the Messiah; Nathanael under the fig tree; the water become wine at Cana; and the scourge of cords in the temple — destroy this temple, and in three days I will raise it up.",
+   "prefixes": [
+    "Main.dc.html",
+    "JHN-C01-"
+   ]
+  }
+ ]
+}

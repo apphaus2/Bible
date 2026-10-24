@@ -1,0 +1,194 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-24T14:52:20Z"
+ },
+ "title": "John — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JHN-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Word Became Flesh"
+  },
+  "JHN-C01-D-P01-InTheBeginningWasT.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · In the Beginning Was the Word"
+  },
+  "JHN-C01-D-P02-AManSentFromGod.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · A Man Sent from God"
+  },
+  "JHN-C01-D-P03-TheWordBecameFlesh.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Word Became Flesh"
+  },
+  "JHN-C01-D-P04-WhoArtThou.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Who Art Thou?"
+  },
+  "JHN-C01-D-P05-WhoArtThou.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Who Art Thou?"
+  },
+  "JHN-C01-D-P06-WhoArtThou.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Who Art Thou?"
+  },
+  "JHN-C01-D-P07-BeholdTheLambOfGod.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Behold, the Lamb of God"
+  },
+  "JHN-C01-D-P08-ComeAndSee.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Come and See"
+  },
+  "JHN-C01-D-P09-ComeAndSee.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Come and See"
+  },
+  "JHN-C01-D-P10-UnderTheFigTree.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Under the Fig Tree"
+  },
+  "JHN-C01-D-P11-UnderTheFigTree.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Under the Fig Tree"
+  },
+  "JHN-C01-D-P12-UnderTheFigTree.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Under the Fig Tree"
+  },
+  "JHN-C01-D-P13-TheMarriageInCana.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Marriage in Cana"
+  },
+  "JHN-C01-D-P14-TheMarriageInCana.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The Marriage in Cana"
+  },
+  "JHN-C01-D-P15-TheMarriageInCana.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Marriage in Cana"
+  },
+  "JHN-C01-D-P16-MyFatherSHouse.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · My Father's House"
+  },
+  "JHN-C01-D-P17-MyFatherSHouse.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · My Father's House"
+  },
+  "JHN-C01-D-P18-MyFatherSHouse.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · My Father's House"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JHN-C01-00-Title.dc.html",
+  "JHN-C01-D-P01-InTheBeginningWasT.dc.html",
+  "JHN-C01-D-P02-AManSentFromGod.dc.html",
+  "JHN-C01-D-P03-TheWordBecameFlesh.dc.html",
+  "JHN-C01-D-P04-WhoArtThou.dc.html",
+  "JHN-C01-D-P05-WhoArtThou.dc.html",
+  "JHN-C01-D-P06-WhoArtThou.dc.html",
+  "JHN-C01-D-P07-BeholdTheLambOfGod.dc.html",
+  "JHN-C01-D-P08-ComeAndSee.dc.html",
+  "JHN-C01-D-P09-ComeAndSee.dc.html",
+  "JHN-C01-D-P10-UnderTheFigTree.dc.html",
+  "JHN-C01-D-P11-UnderTheFigTree.dc.html",
+  "JHN-C01-D-P12-UnderTheFigTree.dc.html",
+  "JHN-C01-D-P13-TheMarriageInCana.dc.html",
+  "JHN-C01-D-P14-TheMarriageInCana.dc.html",
+  "JHN-C01-D-P15-TheMarriageInCana.dc.html",
+  "JHN-C01-D-P16-MyFatherSHouse.dc.html",
+  "JHN-C01-D-P17-MyFatherSHouse.dc.html",
+  "JHN-C01-D-P18-MyFatherSHouse.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "John Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Word Became Flesh (John 1–2)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
