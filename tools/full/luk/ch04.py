@@ -13,7 +13,7 @@ import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 from luk import G, art3 as A, ch03 as _prev
-from luk.common import (K, Pages, D, F, Q, N, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, PETER,
+from luk.common import (K, Pages, D, F, Q, N, T, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, PETER,
                         PETER_GRIEF, SCRIBE_STERN, PHARISEE)
 
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
@@ -28,11 +28,11 @@ def title_page(n):
 
 SEGS = [D([cp("5:1"), cp("5:2")], lambda w, h: A.washing_nets("wn1", w, h, 501), "#8FD0E2", head="Put Out into the Deep", sky=5),
         D([cp("5:3")], lambda w, h: A.boat_preach("bp1", w, h, 502), "#8FD0E2"),
-        D([N("5:4", "said unto Simon,")], lambda w, h: A.the_deep("dp1", w, h, 503), "#5A8AC8", art_h=240),
+        D(T([N("5:4", "said unto Simon,")], "left"), lambda w, h: A.the_deep("dp1", w, h, 503), "#5A8AC8", art_h=240),
         F([N("5:5", "answered and said,")], PETER),
         D([cp("5:6"), cp("5:7")], lambda w, h: A.the_deep("dp2", w, h, 504, stage="full"), "#5A8AC8", art_h=260),
         F([Q("5:8", "c", "saying,", "s")], PETER_GRIEF, bg=COLD),
-        D([cp("5:9"), Q("5:10", "c", "said unto Simon,", "s")], lambda w, h: A.the_deep("dp3", w, h, 505, stage="knees"), "#5A8AC8", head="Thou Shalt Catch Men", art_h=240),
+        D(T([cp("5:9"), Q("5:10", "c", "said unto Simon,", "s")], "left"), lambda w, h: A.the_deep("dp3", w, h, 505, stage="knees"), "#5A8AC8", head="Thou Shalt Catch Men", art_h=240),
         D([cp("5:11")], lambda w, h: A.left_all("la1", w, h, 506), "#8FD0E2", art_h=240),
         D([Q("5:12", "c", "saying,", "s")], lambda w, h: A.leper("lp1", w, h, 507), "#8FD0E2", head="Be Thou Made Clean"),
         F([Q("5:13", "c", "saying,", "s", "be thou made clean.", "c"), Q("5:14", "c", "tell no man:", "s")], JESUS),

@@ -11,7 +11,7 @@ import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 from luk import G, art4 as A, ch04 as _prev
-from luk.common import (K, Pages, D, F, Q, N, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
+from luk.common import (K, Pages, D, F, Q, N, T, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
                         CENTURION, CROWD_MAN, NAIN_WIDOW, JOHN_DISCIPLE, PHARISEE, SINNER_WOMAN, DOCTOR)
 
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
@@ -32,7 +32,7 @@ SEGS = [D([cp("7:1"), cp("7:2"), cp("7:3")], lambda w, h: A.centurion("cn1", w, 
         D([cp("7:10")], lambda w, h: A.centurion("cn2", w, h, 704, healed=True), "#8FD0E2"),
         D([cp("7:11"), cp("7:12")], lambda w, h: A.nain("na1", w, h, 705), "#8FD0E2", head="Young Man, Arise", art_h=260),
         F([N("7:13", "said unto her,")], JESUS_GRIEF, bg=COLD),
-        D([Q("7:14", "c", "And he said,", "s")], lambda w, h: A.nain("na2", w, h, 706, stage="touch"), "#8FD0E2", art_h=240),
+        D(T([Q("7:14", "c", "And he said,", "s")], "left"), lambda w, h: A.nain("na2", w, h, 706, stage="touch"), "#8FD0E2", art_h=240),
         D([cp("7:15")], lambda w, h: A.nain("na3", w, h, 707, stage="risen"), "#8FD0E2", art_h=240),
         D([Q("7:16", "c", "saying,", "s"), cp("7:17")], lambda w, h: A.nain("na4", w, h, 708, stage="given"), "#8FD0E2"),
         D([cp("7:18"), N("7:19", "saying,")], lambda w, h: A.prison("pr1", w, h, 709), "#2A2A4A", head="Art Thou He That Cometh?"),

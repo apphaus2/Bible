@@ -20,7 +20,39 @@ from mrk.common import MarkKit, JAIRUS_GLAD, ISSUE_HEALED, GERASENE, GERASENE_PL
 from luk import G
 
 CODE = "LUKE"
-K = MarkKit(G, CODE, "Luke")
+
+# ---- balloon tails in drawn panels -------------------------------------------------------------------------------------
+# A speech box over a drawing gets its notch on the left by default (speech.orate), which can point at the wrong figure.
+# In Luke's drawn panels every speech box is tail-less unless T() gives its speaker's side: T(lines, "right") / "left".
+TAILS = {}
+_NOTCH = {side: speech._say("", 10, side).split('<div style="padding')[0].replace('<div style="position: relative">', "", 1) for side in ("left", "right")}
+
+def T(lines, side):
+    """Mark the speech boxes among lines (a box, a list of boxes, or Q's list) as tailed toward side ('left'/'right'/'none')."""
+    for kind, text in _flat(lines if isinstance(lines, list) else [lines]):
+        if kind == "say": TAILS[text] = side
+    return lines
+
+def _tails(html):
+    import re
+    for text, side in TAILS.items():
+        if text not in html: continue
+        for old in ("left", "right"):
+            html = re.sub(re.escape(_NOTCH[old]) + r'(<div style="padding: 11px 16px 12px;[^"]*">)' + re.escape(text) + "</div>",
+                          lambda m: (_NOTCH[side] if side in _NOTCH else "") + m.group(1) + text + "</div>", html)
+    return html
+
+class LukeKit(MarkKit):
+    """MarkKit, with the balloon tails of drawn panels set by T() (tail-less unless marked)."""
+    def drawn(self, lines, art, bg, ref=None, k=None, **kw):
+        for kind, text in _flat(lines):
+            if kind == "say": TAILS.setdefault(text, "none")
+        return super().drawn(lines, art, bg, ref=ref, k=k, **kw)
+
+    def pack(self, *a, **k):
+        return [(name, t, (lambda fn=fn: _tails(fn()))) for name, t, fn in super().pack(*a, **k)]
+
+K = LukeKit(G, CODE, "Luke")
 cp, gd, sg, sy, cps, gds, sgs, j = K.cp, K.gd, K.sg, K.sy, K.cps, K.gds, K.sgs, K.j
 v, sp = G.v, G.span
 CREDIT = "Luke · Volume Forty-Two"
@@ -33,6 +65,7 @@ def drawn(lines, art, bg, art_h=240, size=17, sky=None, **kw):
     """K.drawn with room for a real picture (mrk.common.drawn, bound to Luke's Kit): the panel as tall as its words need at
     `size` px plus art_h for the drawing (pass h= to fix it). sky=n (or (n, "left")) sets chapter n's stamp at the top right
     (left) of the drawing, just under the words, clear of the figures standing below."""
+    if sky: art_h = max(art_h, 400)                  # room for the stamp in clear sky or on bare wall above the figures (~230 px tall)
     if "h" not in kw:
         hw = speech._height(_flat(lines), 678, size)
         kw["h"] = int(max(hw + 44 + art_h, (hw + 40) / 0.6))

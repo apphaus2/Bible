@@ -13,7 +13,7 @@ import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 from luk import G, art12 as A, ch14 as _prev
-from luk.common import (K, Pages, D, F, Q, N, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
+from luk.common import (K, Pages, D, F, Q, N, T, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
                         JESUS_PASSION, PETER, PETER_GRIEF, ANDREW, CAIAPHAS, CAIAPHAS_RENT)
 
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
@@ -26,8 +26,8 @@ def title_page(n):
     return title(15, "This Do in Remembrance of Me", "Luke 22", svg, "#2A1E1A", v("22:19", frm="this do in remembrance of me."))
 
 
-SEGS = [D([cp("22:1"), cp("22:2")], lambda w, h: A.priests_court("pc1", w, h, 2201), "#2A1A2A", head="The Feast of Unleavened Bread", sky=22),
-        D([cp("22:3"), cp("22:4"), cp("22:5"), cp("22:6")], lambda w, h: A.silver("sv1", w, h, 2202), "#2A1E1A"),
+SEGS = [D([cp("22:1"), cp("22:2")], lambda w, h: A.priests_court("pc1", w, h, 2201), "#2A1A2A", head="The Feast of Unleavened Bread"),
+        D([cp("22:3"), cp("22:4"), cp("22:5"), cp("22:6")], lambda w, h: A.silver("sv1", w, h, 2202), "#2A1E1A", sky=22),
         D([cp("22:7"), N("22:8", "saying,")], lambda w, h: A.pitcher("pt1", w, h, 2203), "#C8A878", head="A Large Upper Room Furnished"),
         F([N("22:9", "said unto him,")], PETER),
         F([N("22:10", "said unto them,"), sy("22:11"), sy("22:12")]),

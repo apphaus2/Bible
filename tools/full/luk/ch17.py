@@ -12,7 +12,7 @@ import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 from luk import G, art13 as A, ch16 as _prev
-from luk.common import (K, Pages, D, F, Q, N, S, cp, gd, sg, sy, v, title, fin, COLD, GOLDEN, RED, NIGHT, JESUS_RISEN, CLEOPAS, CLEOPAS_JOY)
+from luk.common import (K, Pages, D, F, Q, N, T, S, cp, gd, sg, sy, v, title, fin, COLD, GOLDEN, RED, NIGHT, JESUS_RISEN, CLEOPAS, CLEOPAS_JOY)
 
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
 START, PAGES, P = PG.start, PG.pages, PG.P
@@ -33,20 +33,20 @@ SEGS = [D([cp("24:1")], lambda w, h: A.spices_dawn("sd1", w, h, 2401), "#3A3A7A"
         D([cp("24:12")], lambda w, h: A.peter_stoops("ps1", w, h, 2412), "#5A6A9A", art_h=260),
         D([cp("24:13"), cp("24:14")], lambda w, h: A.emmaus("em1", w, h, 2413), "#8FD0E2", head="Their Eyes Were Holden"),
         D([cp("24:15"), cp("24:16")], lambda w, h: A.emmaus("em2", w, h, 2415, stage="joined"), "#8FD0E2", art_h=240),
-        D([Q("24:17", "c", "said unto them,", "s", "as ye walk?", "c")], lambda w, h: A.emmaus("em3", w, h, 2417, stage="joined"), "#8FD0E2"),
+        D(T([Q("24:17", "c", "said unto them,", "s", "as ye walk?", "c")], "right"), lambda w, h: A.emmaus("em3", w, h, 2417, stage="joined"), "#8FD0E2"),
         F([N("24:18", "answering said unto him,")], CLEOPAS, bg=COLD),
         F((q19 := Q("24:19", "c", "And he said unto them,", "s", "What things?", "c", "said unto him,", "s"))[:2], JESUS_RISEN, bg=RISEN_LIGHT),
         F([q19[2:], sy("24:20"), sy("24:21")], CLEOPAS, bg=COLD, ref="LUKE 24:19–21"),
         F([sy("24:22"), sy("24:23"), sy("24:24")], CLEOPAS, bg=COLD),
-        D([N("24:25", "said unto them,"), sy("24:26"), cp("24:27")], lambda w, h: A.emmaus("em4", w, h, 2425, stage="joined"), "#8FD0E2", head="Slow of Heart to Believe"),
+        D(T([N("24:25", "said unto them,"), sy("24:26"), cp("24:27")], "right"), lambda w, h: A.emmaus("em4", w, h, 2425, stage="joined"), "#8FD0E2", head="Slow of Heart to Believe"),
         D([cp("24:28"), Q("24:29", "c", "saying,", "s", "far spent.", "c")], lambda w, h: A.emmaus("em5", w, h, 2428, stage="village"), "#4A3A6A", head="Abide with Us"),
         D([cp("24:30")], lambda w, h: A.emmaus("em6", w, h, 2430, stage="table"), "#5A4A48", art_h=260),
         D([cp("24:31")], lambda w, h: A.emmaus("em7", w, h, 2431, stage="gone"), "#5A4A48", art_h=240),
         F([N("24:32", "one to another,")], CLEOPAS_JOY),
         D([cp("24:33"), N("24:34", "saying,"), cp("24:35")], lambda w, h: A.emmaus("em8", w, h, 2433, stage="back"), NIGHT),
-        D([Q("24:36", "c", "saith unto them,", "s"), cp("24:37")], lambda w, h: A.eleven_meat("el1", w, h, 2436), "#6A5A4A", head="Peace Be unto You", art_h=240),
+        D(T([Q("24:36", "c", "saith unto them,", "s"), cp("24:37")], "left"), lambda w, h: A.eleven_meat("el1", w, h, 2436), "#6A5A4A", head="Peace Be unto You", art_h=240),
         F([N("24:38", "said unto them,"), sy("24:39")], JESUS_RISEN, bg=RISEN_LIGHT),
-        D([cp("24:40"), N("24:41", "he said unto them,"), cp("24:42"), cp("24:43")], lambda w, h: A.eleven_meat("el2", w, h, 2440), "#6A5A4A"),
+        D(T([cp("24:40"), N("24:41", "he said unto them,"), cp("24:42"), cp("24:43")], "left"), lambda w, h: A.eleven_meat("el2", w, h, 2440), "#6A5A4A"),
         F([N("24:44", "said unto them,")], JESUS_RISEN, bg=RISEN_LIGHT, head="Ye Are Witnesses"),
         F([cp("24:45"), N("24:46", "said unto them,"), sy("24:47"), sy("24:48"), sy("24:49")], JESUS_RISEN, bg=RISEN_LIGHT),
         D([cp("24:50")], lambda w, h: A.bethany_bless("bb1", w, h, 2450), "#5A8AC8", head="He Was Carried Up into Heaven", art_h=260),

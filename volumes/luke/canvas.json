@@ -241,96 +241,103 @@
    "h": 1080,
    "title": "29 · What Then Must We Do?"
   },
-  "LUK-C03-D-P04-HeShallBaptizeYouI.dc.html": {
+  "LUK-C03-D-P04-WhatThenMustWeDo.dc.html": {
    "x": 3360,
    "y": 11400,
    "w": 760,
    "h": 1080,
-   "title": "30 · He Shall Baptize You in the Holy Spirit"
+   "title": "30 · What Then Must We Do?"
   },
-  "LUK-C03-D-P05-ThouArtMyBelovedSo.dc.html": {
+  "LUK-C03-D-P05-HeShallBaptizeYouI.dc.html": {
    "x": 0,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "31 · Thou Art My Beloved Son"
+   "title": "31 · He Shall Baptize You in the Holy Spirit"
   },
-  "LUK-C03-E-P01-TheSonOfAdamTheSonOfGod.dc.html": {
+  "LUK-C03-D-P06-ThouArtMyBelovedSo.dc.html": {
    "x": 840,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "32 · The Son of Adam, the Son of God"
+   "title": "32 · Thou Art My Beloved Son"
   },
-  "LUK-C03-F-P01-TemptedOfTheDevil.dc.html": {
+  "LUK-C03-E-P01-TheSonOfAdamTheSonOfGod.dc.html": {
    "x": 1680,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "33 · Tempted of the Devil"
+   "title": "33 · The Son of Adam, the Son of God"
   },
-  "LUK-C03-F-P02-AllTheKingdomsOfTh.dc.html": {
+  "LUK-C03-F-P01-TemptedOfTheDevil.dc.html": {
    "x": 2520,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "34 · All the Kingdoms of the World"
+   "title": "34 · Tempted of the Devil"
   },
-  "LUK-C03-F-P03-ThePinnacleOfTheTe.dc.html": {
+  "LUK-C03-F-P02-AllTheKingdomsOfTh.dc.html": {
    "x": 3360,
    "y": 12600,
    "w": 760,
    "h": 1080,
-   "title": "35 · The Pinnacle of the Temple"
+   "title": "35 · All the Kingdoms of the World"
   },
-  "LUK-C03-F-P04-TheSpiritOfTheLord.dc.html": {
+  "LUK-C03-F-P03-ThePinnacleOfTheTe.dc.html": {
    "x": 0,
    "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "36 · The Spirit of the Lord Is upon Me"
+   "title": "36 · The Pinnacle of the Temple"
   },
-  "LUK-C03-F-P05-NoProphetIsAccepta.dc.html": {
+  "LUK-C03-F-P04-TheSpiritOfTheLord.dc.html": {
    "x": 840,
    "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "37 · No Prophet Is Acceptable in His Own Country"
+   "title": "37 · The Spirit of the Lord Is upon Me"
   },
-  "LUK-C03-F-P06-NoProphetIsAccepta.dc.html": {
+  "LUK-C03-F-P05-NoProphetIsAccepta.dc.html": {
    "x": 1680,
    "y": 13800,
    "w": 760,
    "h": 1080,
    "title": "38 · No Prophet Is Acceptable in His Own Country"
   },
-  "LUK-C03-F-P07-WithAuthorityAndPo.dc.html": {
+  "LUK-C03-F-P06-NoProphetIsAccepta.dc.html": {
    "x": 2520,
    "y": 13800,
    "w": 760,
    "h": 1080,
-   "title": "39 · With Authority and Power"
+   "title": "39 · No Prophet Is Acceptable in His Own Country"
   },
-  "LUK-C03-F-P08-WithAuthorityAndPo.dc.html": {
+  "LUK-C03-F-P07-WithAuthorityAndPo.dc.html": {
    "x": 3360,
    "y": 13800,
    "w": 760,
    "h": 1080,
    "title": "40 · With Authority and Power"
   },
-  "LUK-C03-F-P09-HeRebukedTheFever.dc.html": {
+  "LUK-C03-F-P08-WithAuthorityAndPo.dc.html": {
    "x": 0,
    "y": 15000,
    "w": 760,
    "h": 1080,
-   "title": "41 · He Rebuked the Fever"
+   "title": "41 · With Authority and Power"
   },
-  "LUK-C03-F-P10-ToTheOtherCitiesAl.dc.html": {
+  "LUK-C03-F-P09-HeRebukedTheFever.dc.html": {
    "x": 840,
    "y": 15000,
    "w": 760,
    "h": 1080,
-   "title": "42 · To the Other Cities Also"
+   "title": "42 · He Rebuked the Fever"
+  },
+  "LUK-C03-F-P10-ToTheOtherCitiesAl.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · To the Other Cities Also"
   },
   "LUK-C04-00-Title.dc.html": {
    "x": 0,
@@ -344,126 +351,133 @@
    "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "43 · Put Out into the Deep"
+   "title": "44 · Put Out into the Deep"
   },
   "LUK-C04-D-P02-PutOutIntoTheDeep.dc.html": {
    "x": 1680,
    "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "44 · Put Out into the Deep"
+   "title": "45 · Put Out into the Deep"
   },
   "LUK-C04-D-P03-ThouShaltCatchMen.dc.html": {
    "x": 2520,
    "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "45 · Thou Shalt Catch Men"
+   "title": "46 · Thou Shalt Catch Men"
   },
   "LUK-C04-D-P04-BeThouMadeClean.dc.html": {
    "x": 3360,
    "y": 16700,
    "w": 760,
    "h": 1080,
-   "title": "46 · Be Thou Made Clean"
+   "title": "47 · Be Thou Made Clean"
   },
   "LUK-C04-D-P05-ThySinsAreForgiven.dc.html": {
    "x": 0,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "47 · Thy Sins Are Forgiven Thee"
+   "title": "48 · Thy Sins Are Forgiven Thee"
   },
   "LUK-C04-D-P06-ThySinsAreForgiven.dc.html": {
    "x": 840,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "48 · Thy Sins Are Forgiven Thee"
+   "title": "49 · Thy Sins Are Forgiven Thee"
   },
   "LUK-C04-D-P07-LeviMadeHimAGreatF.dc.html": {
    "x": 1680,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "49 · Levi Made Him a Great Feast"
+   "title": "50 · Levi Made Him a Great Feast"
   },
   "LUK-C04-D-P08-TheBridegroom.dc.html": {
    "x": 2520,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "50 · The Bridegroom"
+   "title": "51 · The Bridegroom"
   },
-  "LUK-C04-D-P09-LordOfTheSabbath.dc.html": {
+  "LUK-C04-D-P09-TheBridegroom.dc.html": {
    "x": 3360,
    "y": 17900,
    "w": 760,
    "h": 1080,
-   "title": "51 · Lord of the Sabbath"
+   "title": "52 · The Bridegroom"
   },
-  "LUK-C04-D-P10-StretchForthThyHan.dc.html": {
+  "LUK-C04-D-P10-LordOfTheSabbath.dc.html": {
    "x": 0,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "52 · Stretch Forth Thy Hand"
+   "title": "53 · Lord of the Sabbath"
   },
   "LUK-C04-D-P11-StretchForthThyHan.dc.html": {
    "x": 840,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "53 · Stretch Forth Thy Hand"
+   "title": "54 · Stretch Forth Thy Hand"
   },
-  "LUK-C04-D-P12-WhomHeNamedApostle.dc.html": {
+  "LUK-C04-D-P12-StretchForthThyHan.dc.html": {
    "x": 1680,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "54 · Whom He Named Apostles"
+   "title": "55 · Stretch Forth Thy Hand"
   },
-  "LUK-C04-D-P13-BlessedAreYePoor.dc.html": {
+  "LUK-C04-D-P13-WhomHeNamedApostle.dc.html": {
    "x": 2520,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "55 · Blessed Are Ye Poor"
+   "title": "56 · Whom He Named Apostles"
   },
-  "LUK-C04-D-P14-LoveYourEnemies.dc.html": {
+  "LUK-C04-D-P14-BlessedAreYePoor.dc.html": {
    "x": 3360,
    "y": 19100,
    "w": 760,
    "h": 1080,
-   "title": "56 · Love Your Enemies"
+   "title": "57 · Blessed Are Ye Poor"
   },
   "LUK-C04-D-P15-LoveYourEnemies.dc.html": {
    "x": 0,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "57 · Love Your Enemies"
+   "title": "58 · Love Your Enemies"
   },
-  "LUK-C04-D-P16-GoodMeasureRunning.dc.html": {
+  "LUK-C04-D-P16-LoveYourEnemies.dc.html": {
    "x": 840,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "58 · Good Measure, Running Over"
+   "title": "59 · Love Your Enemies"
   },
   "LUK-C04-D-P17-GoodMeasureRunning.dc.html": {
    "x": 1680,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "59 · Good Measure, Running Over"
+   "title": "60 · Good Measure, Running Over"
   },
-  "LUK-C04-D-P18-AFoundationUponThe.dc.html": {
+  "LUK-C04-D-P18-GoodMeasureRunning.dc.html": {
    "x": 2520,
    "y": 20300,
    "w": 760,
    "h": 1080,
-   "title": "60 · A Foundation upon the Rock"
+   "title": "61 · Good Measure, Running Over"
+  },
+  "LUK-C04-D-P19-AFoundationUponThe.dc.html": {
+   "x": 3360,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · A Foundation upon the Rock"
   },
   "LUK-C05-00-Title.dc.html": {
    "x": 0,
@@ -477,84 +491,84 @@
    "y": 22000,
    "w": 760,
    "h": 1080,
-   "title": "61 · So Great Faith"
+   "title": "63 · So Great Faith"
   },
   "LUK-C05-D-P02-SoGreatFaith.dc.html": {
    "x": 1680,
    "y": 22000,
    "w": 760,
    "h": 1080,
-   "title": "62 · So Great Faith"
+   "title": "64 · So Great Faith"
   },
   "LUK-C05-D-P03-SoGreatFaith.dc.html": {
    "x": 2520,
    "y": 22000,
    "w": 760,
    "h": 1080,
-   "title": "63 · So Great Faith"
+   "title": "65 · So Great Faith"
   },
   "LUK-C05-D-P04-YoungManArise.dc.html": {
    "x": 3360,
    "y": 22000,
    "w": 760,
    "h": 1080,
-   "title": "64 · Young Man, Arise"
+   "title": "66 · Young Man, Arise"
   },
   "LUK-C05-D-P05-ArtThouHeThatComet.dc.html": {
    "x": 0,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "65 · Art Thou He That Cometh?"
+   "title": "67 · Art Thou He That Cometh?"
   },
   "LUK-C05-D-P06-ArtThouHeThatComet.dc.html": {
    "x": 840,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "66 · Art Thou He That Cometh?"
+   "title": "68 · Art Thou He That Cometh?"
   },
   "LUK-C05-D-P07-MoreThanAProphet.dc.html": {
    "x": 1680,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "67 · More Than a Prophet"
+   "title": "69 · More Than a Prophet"
   },
   "LUK-C05-D-P08-MoreThanAProphet.dc.html": {
    "x": 2520,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "68 · More Than a Prophet"
+   "title": "70 · More Than a Prophet"
   },
   "LUK-C05-D-P09-SheLovedMuch.dc.html": {
    "x": 3360,
    "y": 23200,
    "w": 760,
    "h": 1080,
-   "title": "69 · She Loved Much"
+   "title": "71 · She Loved Much"
   },
   "LUK-C05-D-P10-SheLovedMuch.dc.html": {
    "x": 0,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "70 · She Loved Much"
+   "title": "72 · She Loved Much"
   },
   "LUK-C05-D-P11-SheLovedMuch.dc.html": {
    "x": 840,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "71 · She Loved Much"
+   "title": "73 · She Loved Much"
   },
   "LUK-C05-D-P12-SheLovedMuch.dc.html": {
    "x": 1680,
    "y": 24400,
    "w": 760,
    "h": 1080,
-   "title": "72 · She Loved Much"
+   "title": "74 · She Loved Much"
   },
   "LUK-C06-00-Title.dc.html": {
    "x": 0,
@@ -568,98 +582,98 @@
    "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "73 · The Sower Went Forth to Sow"
+   "title": "75 · The Sower Went Forth to Sow"
   },
   "LUK-C06-D-P02-TheSowerWentForthT.dc.html": {
    "x": 1680,
    "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "74 · The Sower Went Forth to Sow"
+   "title": "76 · The Sower Went Forth to Sow"
   },
   "LUK-C06-D-P03-TheSowerWentForthT.dc.html": {
    "x": 2520,
    "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "75 · The Sower Went Forth to Sow"
+   "title": "77 · The Sower Went Forth to Sow"
   },
   "LUK-C06-D-P04-ALampOnAStand.dc.html": {
    "x": 3360,
    "y": 26100,
    "w": 760,
    "h": 1080,
-   "title": "76 · A Lamp on a Stand"
+   "title": "78 · A Lamp on a Stand"
   },
   "LUK-C06-D-P05-MyMotherAndMyBreth.dc.html": {
    "x": 0,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "77 · My Mother and My Brethren"
+   "title": "79 · My Mother and My Brethren"
   },
   "LUK-C06-D-P06-WhereIsYourFaith.dc.html": {
    "x": 840,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "78 · Where Is Your Faith?"
+   "title": "80 · Where Is Your Faith?"
   },
   "LUK-C06-D-P07-WhatIsThyName.dc.html": {
    "x": 1680,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "79 · What Is Thy Name?"
+   "title": "81 · What Is Thy Name?"
   },
   "LUK-C06-D-P08-WhatIsThyName.dc.html": {
    "x": 2520,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "80 · What Is Thy Name?"
+   "title": "82 · What Is Thy Name?"
   },
   "LUK-C06-D-P09-WhatIsThyName.dc.html": {
    "x": 3360,
    "y": 27300,
    "w": 760,
    "h": 1080,
-   "title": "81 · What Is Thy Name?"
+   "title": "83 · What Is Thy Name?"
   },
   "LUK-C06-D-P10-ClothedAndInHisRig.dc.html": {
    "x": 0,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "82 · Clothed, and in His Right Mind"
+   "title": "84 · Clothed, and in His Right Mind"
   },
   "LUK-C06-D-P11-WhoIsItThatTouched.dc.html": {
    "x": 840,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "83 · Who Is It That Touched Me?"
+   "title": "85 · Who Is It That Touched Me?"
   },
   "LUK-C06-D-P12-WhoIsItThatTouched.dc.html": {
    "x": 1680,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "84 · Who Is It That Touched Me?"
+   "title": "86 · Who Is It That Touched Me?"
   },
   "LUK-C06-D-P13-MaidenArise.dc.html": {
    "x": 2520,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "85 · Maiden, Arise"
+   "title": "87 · Maiden, Arise"
   },
   "LUK-C06-D-P14-MaidenArise.dc.html": {
    "x": 3360,
    "y": 28500,
    "w": 760,
    "h": 1080,
-   "title": "86 · Maiden, Arise"
+   "title": "88 · Maiden, Arise"
   },
   "LUK-C07-00-Title.dc.html": {
    "x": 0,
@@ -673,98 +687,98 @@
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "87 · Take Nothing for Your Journey"
+   "title": "89 · Take Nothing for Your Journey"
   },
   "LUK-C07-D-P02-GiveYeThemToEat.dc.html": {
    "x": 1680,
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "88 · Give Ye Them to Eat"
+   "title": "90 · Give Ye Them to Eat"
   },
   "LUK-C07-D-P03-GiveYeThemToEat.dc.html": {
    "x": 2520,
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "89 · Give Ye Them to Eat"
+   "title": "91 · Give Ye Them to Eat"
   },
   "LUK-C07-D-P04-GiveYeThemToEat.dc.html": {
    "x": 3360,
    "y": 30200,
    "w": 760,
    "h": 1080,
-   "title": "90 · Give Ye Them to Eat"
+   "title": "92 · Give Ye Them to Eat"
   },
   "LUK-C07-D-P05-WhoSayYeThatIAm.dc.html": {
    "x": 0,
    "y": 31400,
    "w": 760,
    "h": 1080,
-   "title": "91 · Who Say Ye That I Am?"
+   "title": "93 · Who Say Ye That I Am?"
   },
   "LUK-C07-D-P06-TakeUpHisCrossDail.dc.html": {
    "x": 840,
    "y": 31400,
    "w": 760,
    "h": 1080,
-   "title": "92 · Take Up His Cross Daily"
+   "title": "94 · Take Up His Cross Daily"
   },
   "LUK-C07-D-P07-HisRaimentBecameWh.dc.html": {
    "x": 1680,
    "y": 31400,
    "w": 760,
    "h": 1080,
-   "title": "93 · His Raiment Became White and Dazzling"
+   "title": "95 · His Raiment Became White and Dazzling"
   },
   "LUK-C07-D-P08-HisRaimentBecameWh.dc.html": {
    "x": 2520,
    "y": 31400,
    "w": 760,
    "h": 1080,
-   "title": "94 · His Raiment Became White and Dazzling"
+   "title": "96 · His Raiment Became White and Dazzling"
   },
   "LUK-C07-D-P09-IBeseechTheeLookUp.dc.html": {
    "x": 3360,
    "y": 31400,
    "w": 760,
    "h": 1080,
-   "title": "95 · I Beseech Thee, Look upon My Son"
+   "title": "97 · I Beseech Thee, Look upon My Son"
   },
   "LUK-C07-D-P10-IBeseechTheeLookUp.dc.html": {
    "x": 0,
    "y": 32600,
    "w": 760,
    "h": 1080,
-   "title": "96 · I Beseech Thee, Look upon My Son"
+   "title": "98 · I Beseech Thee, Look upon My Son"
   },
   "LUK-C07-D-P11-HeThatIsLeastAmong.dc.html": {
    "x": 840,
    "y": 32600,
    "w": 760,
    "h": 1080,
-   "title": "97 · He That Is Least among You"
+   "title": "99 · He That Is Least among You"
   },
   "LUK-C07-D-P12-HeStedfastlySetHis.dc.html": {
    "x": 1680,
    "y": 32600,
    "w": 760,
    "h": 1080,
-   "title": "98 · He Stedfastly Set His Face"
+   "title": "100 · He Stedfastly Set His Face"
   },
   "LUK-C07-D-P13-FollowMe.dc.html": {
    "x": 2520,
    "y": 32600,
    "w": 760,
    "h": 1080,
-   "title": "99 · Follow Me"
+   "title": "101 · Follow Me"
   },
   "LUK-C07-D-P14-FollowMe.dc.html": {
    "x": 3360,
    "y": 32600,
    "w": 760,
    "h": 1080,
-   "title": "100 · Follow Me"
+   "title": "102 · Follow Me"
   },
   "LUK-C08-00-Title.dc.html": {
    "x": 0,
@@ -778,70 +792,70 @@
    "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "101 · The Seventy"
+   "title": "103 · The Seventy"
   },
   "LUK-C08-D-P02-TheSeventy.dc.html": {
    "x": 1680,
    "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "102 · The Seventy"
+   "title": "104 · The Seventy"
   },
   "LUK-C08-D-P03-YourNamesAreWritte.dc.html": {
    "x": 2520,
    "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "103 · Your Names Are Written in Heaven"
+   "title": "105 · Your Names Are Written in Heaven"
   },
   "LUK-C08-D-P04-YourNamesAreWritte.dc.html": {
    "x": 3360,
    "y": 34300,
    "w": 760,
    "h": 1080,
-   "title": "104 · Your Names Are Written in Heaven"
+   "title": "106 · Your Names Are Written in Heaven"
   },
   "LUK-C08-D-P05-WhoIsMyNeighbor.dc.html": {
    "x": 0,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "105 · Who Is My Neighbor?"
+   "title": "107 · Who Is My Neighbor?"
   },
   "LUK-C08-D-P06-ACertainManWasGoin.dc.html": {
    "x": 840,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "106 · A Certain Man Was Going Down to Jericho"
+   "title": "108 · A Certain Man Was Going Down to Jericho"
   },
   "LUK-C08-D-P07-ACertainManWasGoin.dc.html": {
    "x": 1680,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "107 · A Certain Man Was Going Down to Jericho"
+   "title": "109 · A Certain Man Was Going Down to Jericho"
   },
   "LUK-C08-D-P08-ACertainManWasGoin.dc.html": {
    "x": 2520,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "108 · A Certain Man Was Going Down to Jericho"
+   "title": "110 · A Certain Man Was Going Down to Jericho"
   },
   "LUK-C08-D-P09-ACertainManWasGoin.dc.html": {
    "x": 3360,
    "y": 35500,
    "w": 760,
    "h": 1080,
-   "title": "109 · A Certain Man Was Going Down to Jericho"
+   "title": "111 · A Certain Man Was Going Down to Jericho"
   },
   "LUK-C08-D-P10-MarthaMartha.dc.html": {
    "x": 0,
    "y": 36700,
    "w": 760,
    "h": 1080,
-   "title": "110 · Martha, Martha"
+   "title": "112 · Martha, Martha"
   },
   "LUK-C09-00-Title.dc.html": {
    "x": 0,
@@ -855,91 +869,91 @@
    "y": 38400,
    "w": 760,
    "h": 1080,
-   "title": "111 · Lord, Teach Us to Pray"
+   "title": "113 · Lord, Teach Us to Pray"
   },
   "LUK-C09-D-P02-FriendLendMeThreeL.dc.html": {
    "x": 1680,
    "y": 38400,
    "w": 760,
    "h": 1080,
-   "title": "112 · Friend, Lend Me Three Loaves"
+   "title": "114 · Friend, Lend Me Three Loaves"
   },
   "LUK-C09-D-P03-AskAndItShallBeGiv.dc.html": {
    "x": 2520,
    "y": 38400,
    "w": 760,
    "h": 1080,
-   "title": "113 · Ask, and It Shall Be Given You"
+   "title": "115 · Ask, and It Shall Be Given You"
   },
   "LUK-C09-D-P04-TheFingerOfGod.dc.html": {
    "x": 3360,
    "y": 38400,
    "w": 760,
    "h": 1080,
-   "title": "114 · The Finger of God"
+   "title": "116 · The Finger of God"
   },
   "LUK-C09-D-P05-TheFingerOfGod.dc.html": {
    "x": 0,
    "y": 39600,
    "w": 760,
    "h": 1080,
-   "title": "115 · The Finger of God"
+   "title": "117 · The Finger of God"
   },
   "LUK-C09-D-P06-BlessedAreTheyThat.dc.html": {
    "x": 840,
    "y": 39600,
    "w": 760,
    "h": 1080,
-   "title": "116 · Blessed Are They That Hear"
+   "title": "118 · Blessed Are They That Hear"
   },
   "LUK-C09-D-P07-AGreaterThanJonah.dc.html": {
    "x": 1680,
    "y": 39600,
    "w": 760,
    "h": 1080,
-   "title": "117 · A Greater Than Jonah"
+   "title": "119 · A Greater Than Jonah"
   },
   "LUK-C09-D-P08-TheLampOfThyBody.dc.html": {
    "x": 2520,
    "y": 39600,
    "w": 760,
    "h": 1080,
-   "title": "118 · The Lamp of Thy Body"
+   "title": "120 · The Lamp of Thy Body"
   },
   "LUK-C09-D-P09-WoeUntoYouPharisee.dc.html": {
    "x": 3360,
    "y": 39600,
    "w": 760,
    "h": 1080,
-   "title": "119 · Woe unto You Pharisees"
+   "title": "121 · Woe unto You Pharisees"
   },
   "LUK-C09-D-P10-WoeUntoYouPharisee.dc.html": {
    "x": 0,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "120 · Woe unto You Pharisees"
+   "title": "122 · Woe unto You Pharisees"
   },
   "LUK-C09-D-P11-WoeUntoYouLawyers.dc.html": {
    "x": 840,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "121 · Woe unto You Lawyers"
+   "title": "123 · Woe unto You Lawyers"
   },
   "LUK-C09-D-P12-WoeUntoYouLawyers.dc.html": {
    "x": 1680,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "122 · Woe unto You Lawyers"
+   "title": "124 · Woe unto You Lawyers"
   },
   "LUK-C09-D-P13-WoeUntoYouLawyers.dc.html": {
    "x": 2520,
    "y": 40800,
    "w": 760,
    "h": 1080,
-   "title": "123 · Woe unto You Lawyers"
+   "title": "125 · Woe unto You Lawyers"
   },
   "LUK-C10-00-Title.dc.html": {
    "x": 0,
@@ -953,133 +967,133 @@
    "y": 42500,
    "w": 760,
    "h": 1080,
-   "title": "124 · The Leaven of the Pharisees"
+   "title": "126 · The Leaven of the Pharisees"
   },
   "LUK-C10-D-P02-TheLeavenOfThePhar.dc.html": {
    "x": 1680,
    "y": 42500,
    "w": 760,
    "h": 1080,
-   "title": "125 · The Leaven of the Pharisees"
+   "title": "127 · The Leaven of the Pharisees"
   },
   "LUK-C10-D-P03-TakeHeedOfCovetous.dc.html": {
    "x": 2520,
    "y": 42500,
    "w": 760,
    "h": 1080,
-   "title": "126 · Take Heed of Covetousness"
+   "title": "128 · Take Heed of Covetousness"
   },
   "LUK-C10-D-P04-TakeHeedOfCovetous.dc.html": {
    "x": 3360,
    "y": 42500,
    "w": 760,
    "h": 1080,
-   "title": "127 · Take Heed of Covetousness"
+   "title": "129 · Take Heed of Covetousness"
   },
   "LUK-C10-D-P05-ConsiderTheRavens.dc.html": {
    "x": 0,
    "y": 43700,
    "w": 760,
    "h": 1080,
-   "title": "128 · Consider the Ravens"
+   "title": "130 · Consider the Ravens"
   },
   "LUK-C10-D-P06-ConsiderTheLilies.dc.html": {
    "x": 840,
    "y": 43700,
    "w": 760,
    "h": 1080,
-   "title": "129 · Consider the Lilies"
+   "title": "131 · Consider the Lilies"
   },
   "LUK-C10-D-P07-YourLampsBurning.dc.html": {
    "x": 1680,
    "y": 43700,
    "w": 760,
    "h": 1080,
-   "title": "130 · Your Lamps Burning"
+   "title": "132 · Your Lamps Burning"
   },
   "LUK-C10-D-P08-TheFaithfulAndWise.dc.html": {
    "x": 2520,
    "y": 43700,
    "w": 760,
    "h": 1080,
-   "title": "131 · The Faithful and Wise Steward"
+   "title": "133 · The Faithful and Wise Steward"
   },
   "LUK-C10-D-P09-TheFaithfulAndWise.dc.html": {
    "x": 3360,
    "y": 43700,
    "w": 760,
    "h": 1080,
-   "title": "132 · The Faithful and Wise Steward"
+   "title": "134 · The Faithful and Wise Steward"
   },
   "LUK-C10-D-P10-FireUponTheEarth.dc.html": {
    "x": 0,
    "y": 44900,
    "w": 760,
    "h": 1080,
-   "title": "133 · Fire upon the Earth"
+   "title": "135 · Fire upon the Earth"
   },
   "LUK-C10-D-P11-FireUponTheEarth.dc.html": {
    "x": 840,
    "y": 44900,
    "w": 760,
    "h": 1080,
-   "title": "134 · Fire upon the Earth"
+   "title": "136 · Fire upon the Earth"
   },
   "LUK-C10-D-P12-ExceptYeRepent.dc.html": {
    "x": 1680,
    "y": 44900,
    "w": 760,
    "h": 1080,
-   "title": "135 · Except Ye Repent"
+   "title": "137 · Except Ye Repent"
   },
   "LUK-C10-D-P13-TheBarrenFigTree.dc.html": {
    "x": 2520,
    "y": 44900,
    "w": 760,
    "h": 1080,
-   "title": "136 · The Barren Fig Tree"
+   "title": "138 · The Barren Fig Tree"
   },
   "LUK-C10-D-P14-ThouArtLoosed.dc.html": {
    "x": 3360,
    "y": 44900,
    "w": 760,
    "h": 1080,
-   "title": "137 · Thou Art Loosed"
+   "title": "139 · Thou Art Loosed"
   },
   "LUK-C10-D-P15-ThouArtLoosed.dc.html": {
    "x": 0,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "138 · Thou Art Loosed"
+   "title": "140 · Thou Art Loosed"
   },
   "LUK-C10-D-P16-LikeAGrainOfMustar.dc.html": {
    "x": 840,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "139 · Like a Grain of Mustard Seed"
+   "title": "141 · Like a Grain of Mustard Seed"
   },
   "LUK-C10-D-P17-TheNarrowDoor.dc.html": {
    "x": 1680,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "140 · The Narrow Door"
+   "title": "142 · The Narrow Door"
   },
   "LUK-C10-D-P18-GoAndSayToThatFox.dc.html": {
    "x": 2520,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "141 · Go and Say to That Fox"
+   "title": "143 · Go and Say to That Fox"
   },
   "LUK-C10-D-P19-GoAndSayToThatFox.dc.html": {
    "x": 3360,
    "y": 46100,
    "w": 760,
    "h": 1080,
-   "title": "142 · Go and Say to That Fox"
+   "title": "144 · Go and Say to That Fox"
   },
   "LUK-C11-00-Title.dc.html": {
    "x": 0,
@@ -1093,98 +1107,98 @@
    "y": 47800,
    "w": 760,
    "h": 1080,
-   "title": "143 · Is It Lawful to Heal on the Sabbath?"
+   "title": "145 · Is It Lawful to Heal on the Sabbath?"
   },
   "LUK-C11-D-P02-FriendGoUpHigher.dc.html": {
    "x": 1680,
    "y": 47800,
    "w": 760,
    "h": 1080,
-   "title": "144 · Friend, Go Up Higher"
+   "title": "146 · Friend, Go Up Higher"
   },
   "LUK-C11-D-P03-AGreatSupper.dc.html": {
    "x": 2520,
    "y": 47800,
    "w": 760,
    "h": 1080,
-   "title": "145 · A Great Supper"
+   "title": "147 · A Great Supper"
   },
   "LUK-C11-D-P04-AGreatSupper.dc.html": {
    "x": 3360,
    "y": 47800,
    "w": 760,
    "h": 1080,
-   "title": "146 · A Great Supper"
+   "title": "148 · A Great Supper"
   },
   "LUK-C11-D-P05-CountTheCost.dc.html": {
    "x": 0,
    "y": 49000,
    "w": 760,
    "h": 1080,
-   "title": "147 · Count the Cost"
+   "title": "149 · Count the Cost"
   },
   "LUK-C11-D-P06-CountTheCost.dc.html": {
    "x": 840,
    "y": 49000,
    "w": 760,
    "h": 1080,
-   "title": "148 · Count the Cost"
+   "title": "150 · Count the Cost"
   },
   "LUK-C11-D-P07-ThatWhichWasLost.dc.html": {
    "x": 1680,
    "y": 49000,
    "w": 760,
    "h": 1080,
-   "title": "149 · That Which Was Lost"
+   "title": "151 · That Which Was Lost"
   },
   "LUK-C11-D-P08-ThatWhichWasLost.dc.html": {
    "x": 2520,
    "y": 49000,
    "w": 760,
    "h": 1080,
-   "title": "150 · That Which Was Lost"
+   "title": "152 · That Which Was Lost"
   },
   "LUK-C11-D-P09-ThePieceWhichIHadL.dc.html": {
    "x": 3360,
    "y": 49000,
    "w": 760,
    "h": 1080,
-   "title": "151 · The Piece Which I Had Lost"
+   "title": "153 · The Piece Which I Had Lost"
   },
   "LUK-C11-D-P10-ACertainManHadTwoS.dc.html": {
    "x": 0,
    "y": 50200,
    "w": 760,
    "h": 1080,
-   "title": "152 · A Certain Man Had Two Sons"
+   "title": "154 · A Certain Man Had Two Sons"
   },
   "LUK-C11-D-P11-IWillAriseAndGoToM.dc.html": {
    "x": 840,
    "y": 50200,
    "w": 760,
    "h": 1080,
-   "title": "153 · I Will Arise and Go to My Father"
+   "title": "155 · I Will Arise and Go to My Father"
   },
   "LUK-C11-D-P12-IWillAriseAndGoToM.dc.html": {
    "x": 1680,
    "y": 50200,
    "w": 760,
    "h": 1080,
-   "title": "154 · I Will Arise and Go to My Father"
+   "title": "156 · I Will Arise and Go to My Father"
   },
   "LUK-C11-D-P13-ThyBrotherWasDeadA.dc.html": {
    "x": 2520,
    "y": 50200,
    "w": 760,
    "h": 1080,
-   "title": "155 · Thy Brother Was Dead, and Is Alive Again"
+   "title": "157 · Thy Brother Was Dead, and Is Alive Again"
   },
   "LUK-C11-D-P14-ThyBrotherWasDeadA.dc.html": {
    "x": 3360,
    "y": 50200,
    "w": 760,
    "h": 1080,
-   "title": "156 · Thy Brother Was Dead, and Is Alive Again"
+   "title": "158 · Thy Brother Was Dead, and Is Alive Again"
   },
   "LUK-C12-00-Title.dc.html": {
    "x": 0,
@@ -1198,644 +1212,658 @@
    "y": 51900,
    "w": 760,
    "h": 1080,
-   "title": "157 · The Unrighteous Steward"
+   "title": "159 · The Unrighteous Steward"
   },
   "LUK-C12-D-P02-TheUnrighteousStew.dc.html": {
    "x": 1680,
    "y": 51900,
    "w": 760,
    "h": 1080,
-   "title": "158 · The Unrighteous Steward"
+   "title": "160 · The Unrighteous Steward"
   },
   "LUK-C12-D-P03-YeCannotServeGodAn.dc.html": {
    "x": 2520,
    "y": 51900,
    "w": 760,
    "h": 1080,
-   "title": "159 · Ye Cannot Serve God and Mammon"
+   "title": "161 · Ye Cannot Serve God and Mammon"
   },
-  "LUK-C12-D-P04-ACertainBeggarName.dc.html": {
+  "LUK-C12-D-P04-YeCannotServeGodAn.dc.html": {
    "x": 3360,
    "y": 51900,
    "w": 760,
    "h": 1080,
-   "title": "160 · A Certain Beggar Named Lazarus"
+   "title": "162 · Ye Cannot Serve God and Mammon"
   },
   "LUK-C12-D-P05-ACertainBeggarName.dc.html": {
    "x": 0,
    "y": 53100,
    "w": 760,
    "h": 1080,
-   "title": "161 · A Certain Beggar Named Lazarus"
+   "title": "163 · A Certain Beggar Named Lazarus"
   },
   "LUK-C12-D-P06-AGreatGulfFixed.dc.html": {
    "x": 840,
    "y": 53100,
    "w": 760,
    "h": 1080,
-   "title": "162 · A Great Gulf Fixed"
+   "title": "164 · A Great Gulf Fixed"
   },
   "LUK-C12-D-P07-AGreatGulfFixed.dc.html": {
    "x": 1680,
    "y": 53100,
    "w": 760,
    "h": 1080,
-   "title": "163 · A Great Gulf Fixed"
+   "title": "165 · A Great Gulf Fixed"
   },
   "LUK-C12-D-P08-IncreaseOurFaith.dc.html": {
    "x": 2520,
    "y": 53100,
    "w": 760,
    "h": 1080,
-   "title": "164 · Increase Our Faith"
+   "title": "166 · Increase Our Faith"
   },
   "LUK-C12-D-P09-IncreaseOurFaith.dc.html": {
    "x": 3360,
    "y": 53100,
    "w": 760,
    "h": 1080,
-   "title": "165 · Increase Our Faith"
+   "title": "167 · Increase Our Faith"
   },
-  "LUK-C12-D-P10-WhereAreTheNine.dc.html": {
+  "LUK-C12-D-P10-IncreaseOurFaith.dc.html": {
    "x": 0,
    "y": 54300,
    "w": 760,
    "h": 1080,
-   "title": "166 · Where Are the Nine?"
+   "title": "168 · Increase Our Faith"
   },
-  "LUK-C12-D-P11-TheKingdomOfGodIsW.dc.html": {
+  "LUK-C12-D-P11-WhereAreTheNine.dc.html": {
    "x": 840,
    "y": 54300,
    "w": 760,
    "h": 1080,
-   "title": "167 · The Kingdom of God Is within You"
+   "title": "169 · Where Are the Nine?"
   },
-  "LUK-C12-D-P12-AsInTheDaysOfNoah.dc.html": {
+  "LUK-C12-D-P12-TheKingdomOfGodIsW.dc.html": {
    "x": 1680,
    "y": 54300,
    "w": 760,
    "h": 1080,
-   "title": "168 · As in the Days of Noah"
+   "title": "170 · The Kingdom of God Is within You"
   },
   "LUK-C12-D-P13-AsInTheDaysOfNoah.dc.html": {
    "x": 2520,
    "y": 54300,
    "w": 760,
    "h": 1080,
-   "title": "169 · As in the Days of Noah"
+   "title": "171 · As in the Days of Noah"
   },
   "LUK-C12-D-P14-AsInTheDaysOfNoah.dc.html": {
    "x": 3360,
    "y": 54300,
    "w": 760,
    "h": 1080,
-   "title": "170 · As in the Days of Noah"
+   "title": "172 · As in the Days of Noah"
+  },
+  "LUK-C12-D-P15-AsInTheDaysOfNoah.dc.html": {
+   "x": 0,
+   "y": 55500,
+   "w": 760,
+   "h": 1080,
+   "title": "173 · As in the Days of Noah"
   },
   "LUK-C13-00-Title.dc.html": {
    "x": 0,
-   "y": 56000,
+   "y": 57200,
    "w": 760,
    "h": 1080,
    "title": "Chapter 13 · Zacchæus"
   },
   "LUK-C13-D-P01-TheyOughtAlwaysToP.dc.html": {
    "x": 840,
-   "y": 56000,
+   "y": 57200,
    "w": 760,
    "h": 1080,
-   "title": "171 · They Ought Always to Pray"
+   "title": "174 · They Ought Always to Pray"
   },
   "LUK-C13-D-P02-TwoMenWentUpIntoTh.dc.html": {
    "x": 1680,
-   "y": 56000,
+   "y": 57200,
    "w": 760,
    "h": 1080,
-   "title": "172 · Two Men Went Up into the Temple to Pray"
+   "title": "175 · Two Men Went Up into the Temple to Pray"
   },
   "LUK-C13-D-P03-SufferTheLittleChi.dc.html": {
    "x": 2520,
-   "y": 56000,
+   "y": 57200,
    "w": 760,
    "h": 1080,
-   "title": "173 · Suffer the Little Children"
+   "title": "176 · Suffer the Little Children"
   },
   "LUK-C13-D-P04-OneThingThouLackes.dc.html": {
    "x": 3360,
-   "y": 56000,
+   "y": 57200,
    "w": 760,
    "h": 1080,
-   "title": "174 · One Thing Thou Lackest"
+   "title": "177 · One Thing Thou Lackest"
   },
   "LUK-C13-D-P05-OneThingThouLackes.dc.html": {
    "x": 0,
-   "y": 57200,
+   "y": 58400,
    "w": 760,
    "h": 1080,
-   "title": "175 · One Thing Thou Lackest"
+   "title": "178 · One Thing Thou Lackest"
   },
   "LUK-C13-D-P06-OneThingThouLackes.dc.html": {
    "x": 840,
-   "y": 57200,
+   "y": 58400,
    "w": 760,
    "h": 1080,
-   "title": "176 · One Thing Thou Lackest"
+   "title": "179 · One Thing Thou Lackest"
   },
   "LUK-C13-D-P07-ReceiveThySight.dc.html": {
    "x": 1680,
-   "y": 57200,
+   "y": 58400,
    "w": 760,
    "h": 1080,
-   "title": "177 · Receive Thy Sight"
+   "title": "180 · Receive Thy Sight"
   },
   "LUK-C13-D-P08-ReceiveThySight.dc.html": {
    "x": 2520,
-   "y": 57200,
+   "y": 58400,
    "w": 760,
    "h": 1080,
-   "title": "178 · Receive Thy Sight"
+   "title": "181 · Receive Thy Sight"
   },
   "LUK-C13-D-P09-ZacchusMakeHaste.dc.html": {
    "x": 3360,
-   "y": 57200,
+   "y": 58400,
    "w": 760,
    "h": 1080,
-   "title": "179 · Zacchæus, Make Haste"
+   "title": "182 · Zacchæus, Make Haste"
   },
   "LUK-C13-D-P10-ZacchusMakeHaste.dc.html": {
    "x": 0,
-   "y": 58400,
+   "y": 59600,
    "w": 760,
    "h": 1080,
-   "title": "180 · Zacchæus, Make Haste"
+   "title": "183 · Zacchæus, Make Haste"
   },
   "LUK-C13-D-P11-TradeYeHerewithTil.dc.html": {
    "x": 840,
-   "y": 58400,
-   "w": 760,
-   "h": 1080,
-   "title": "181 · Trade Ye Herewith Till I Come"
-  },
-  "LUK-C13-D-P12-TradeYeHerewithTil.dc.html": {
-   "x": 1680,
-   "y": 58400,
-   "w": 760,
-   "h": 1080,
-   "title": "182 · Trade Ye Herewith Till I Come"
-  },
-  "LUK-C13-D-P13-TradeYeHerewithTil.dc.html": {
-   "x": 2520,
-   "y": 58400,
-   "w": 760,
-   "h": 1080,
-   "title": "183 · Trade Ye Herewith Till I Come"
-  },
-  "LUK-C13-D-P14-TradeYeHerewithTil.dc.html": {
-   "x": 3360,
-   "y": 58400,
+   "y": 59600,
    "w": 760,
    "h": 1080,
    "title": "184 · Trade Ye Herewith Till I Come"
   },
-  "LUK-C13-D-P15-BlessedIsTheKingTh.dc.html": {
-   "x": 0,
-   "y": 59600,
-   "w": 760,
-   "h": 1080,
-   "title": "185 · Blessed Is the King That Cometh"
-  },
-  "LUK-C13-D-P16-BlessedIsTheKingTh.dc.html": {
-   "x": 840,
-   "y": 59600,
-   "w": 760,
-   "h": 1080,
-   "title": "186 · Blessed Is the King That Cometh"
-  },
-  "LUK-C13-D-P17-HeSawTheCityAndWep.dc.html": {
+  "LUK-C13-D-P12-TradeYeHerewithTil.dc.html": {
    "x": 1680,
    "y": 59600,
    "w": 760,
    "h": 1080,
-   "title": "187 · He Saw the City and Wept over It"
+   "title": "185 · Trade Ye Herewith Till I Come"
   },
-  "LUK-C13-D-P18-AHouseOfPrayer.dc.html": {
+  "LUK-C13-D-P13-TradeYeHerewithTil.dc.html": {
    "x": 2520,
    "y": 59600,
    "w": 760,
    "h": 1080,
-   "title": "188 · A House of Prayer"
+   "title": "186 · Trade Ye Herewith Till I Come"
+  },
+  "LUK-C13-D-P14-TradeYeHerewithTil.dc.html": {
+   "x": 3360,
+   "y": 59600,
+   "w": 760,
+   "h": 1080,
+   "title": "187 · Trade Ye Herewith Till I Come"
+  },
+  "LUK-C13-D-P15-BlessedIsTheKingTh.dc.html": {
+   "x": 0,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "188 · Blessed Is the King That Cometh"
+  },
+  "LUK-C13-D-P16-BlessedIsTheKingTh.dc.html": {
+   "x": 840,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "189 · Blessed Is the King That Cometh"
+  },
+  "LUK-C13-D-P17-HeSawTheCityAndWep.dc.html": {
+   "x": 1680,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "190 · He Saw the City and Wept over It"
+  },
+  "LUK-C13-D-P18-AHouseOfPrayer.dc.html": {
+   "x": 2520,
+   "y": 60800,
+   "w": 760,
+   "h": 1080,
+   "title": "191 · A House of Prayer"
   },
   "LUK-C14-00-Title.dc.html": {
    "x": 0,
-   "y": 61300,
+   "y": 62500,
    "w": 760,
    "h": 1080,
    "title": "Chapter 14 · Render unto Cæsar"
   },
   "LUK-C14-D-P01-ByWhatAuthority.dc.html": {
    "x": 840,
-   "y": 61300,
+   "y": 62500,
    "w": 760,
    "h": 1080,
-   "title": "189 · By What Authority?"
+   "title": "192 · By What Authority?"
   },
   "LUK-C14-D-P02-IWillSendMyBeloved.dc.html": {
    "x": 1680,
-   "y": 61300,
+   "y": 62500,
    "w": 760,
    "h": 1080,
-   "title": "190 · I Will Send My Beloved Son"
+   "title": "193 · I Will Send My Beloved Son"
   },
   "LUK-C14-D-P03-IWillSendMyBeloved.dc.html": {
    "x": 2520,
-   "y": 61300,
+   "y": 62500,
    "w": 760,
    "h": 1080,
-   "title": "191 · I Will Send My Beloved Son"
+   "title": "194 · I Will Send My Beloved Son"
   },
-  "LUK-C14-D-P04-RenderUntoCsar.dc.html": {
+  "LUK-C14-D-P04-IWillSendMyBeloved.dc.html": {
    "x": 3360,
-   "y": 61300,
+   "y": 62500,
    "w": 760,
    "h": 1080,
-   "title": "192 · Render unto Cæsar"
+   "title": "195 · I Will Send My Beloved Son"
   },
   "LUK-C14-D-P05-RenderUntoCsar.dc.html": {
    "x": 0,
-   "y": 62500,
+   "y": 63700,
    "w": 760,
    "h": 1080,
-   "title": "193 · Render unto Cæsar"
+   "title": "196 · Render unto Cæsar"
   },
-  "LUK-C14-D-P06-TheGodOfTheLiving.dc.html": {
+  "LUK-C14-D-P06-RenderUntoCsar.dc.html": {
    "x": 840,
-   "y": 62500,
+   "y": 63700,
    "w": 760,
    "h": 1080,
-   "title": "194 · The God of the Living"
+   "title": "197 · Render unto Cæsar"
   },
   "LUK-C14-D-P07-TheGodOfTheLiving.dc.html": {
    "x": 1680,
-   "y": 62500,
+   "y": 63700,
    "w": 760,
    "h": 1080,
-   "title": "195 · The God of the Living"
+   "title": "198 · The God of the Living"
   },
-  "LUK-C14-D-P08-BewareOfTheScribes.dc.html": {
+  "LUK-C14-D-P08-TheGodOfTheLiving.dc.html": {
    "x": 2520,
-   "y": 62500,
+   "y": 63700,
    "w": 760,
    "h": 1080,
-   "title": "196 · Beware of the Scribes"
+   "title": "199 · The God of the Living"
   },
-  "LUK-C14-D-P09-NotOneStoneUponAno.dc.html": {
+  "LUK-C14-D-P09-BewareOfTheScribes.dc.html": {
    "x": 3360,
-   "y": 62500,
+   "y": 63700,
    "w": 760,
    "h": 1080,
-   "title": "197 · Not One Stone upon Another"
+   "title": "200 · Beware of the Scribes"
   },
   "LUK-C14-D-P10-NotOneStoneUponAno.dc.html": {
-   "x": 0,
-   "y": 63700,
-   "w": 760,
-   "h": 1080,
-   "title": "198 · Not One Stone upon Another"
-  },
-  "LUK-C14-D-P11-JerusalemCompassed.dc.html": {
-   "x": 840,
-   "y": 63700,
-   "w": 760,
-   "h": 1080,
-   "title": "199 · Jerusalem Compassed with Armies"
-  },
-  "LUK-C14-D-P12-JerusalemCompassed.dc.html": {
-   "x": 1680,
-   "y": 63700,
-   "w": 760,
-   "h": 1080,
-   "title": "200 · Jerusalem Compassed with Armies"
-  },
-  "LUK-C14-D-P13-SignsInSunAndMoonA.dc.html": {
-   "x": 2520,
-   "y": 63700,
-   "w": 760,
-   "h": 1080,
-   "title": "201 · Signs in Sun and Moon and Stars"
-  },
-  "LUK-C14-D-P14-SignsInSunAndMoonA.dc.html": {
-   "x": 3360,
-   "y": 63700,
-   "w": 760,
-   "h": 1080,
-   "title": "202 · Signs in Sun and Moon and Stars"
-  },
-  "LUK-C14-D-P15-WatchYeAtEverySeas.dc.html": {
    "x": 0,
    "y": 64900,
    "w": 760,
    "h": 1080,
-   "title": "203 · Watch Ye at Every Season"
+   "title": "201 · Not One Stone upon Another"
+  },
+  "LUK-C14-D-P11-NotOneStoneUponAno.dc.html": {
+   "x": 840,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "202 · Not One Stone upon Another"
+  },
+  "LUK-C14-D-P12-JerusalemCompassed.dc.html": {
+   "x": 1680,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "203 · Jerusalem Compassed with Armies"
+  },
+  "LUK-C14-D-P13-JerusalemCompassed.dc.html": {
+   "x": 2520,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "204 · Jerusalem Compassed with Armies"
+  },
+  "LUK-C14-D-P14-SignsInSunAndMoonA.dc.html": {
+   "x": 3360,
+   "y": 64900,
+   "w": 760,
+   "h": 1080,
+   "title": "205 · Signs in Sun and Moon and Stars"
+  },
+  "LUK-C14-D-P15-SignsInSunAndMoonA.dc.html": {
+   "x": 0,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "206 · Signs in Sun and Moon and Stars"
+  },
+  "LUK-C14-D-P16-WatchYeAtEverySeas.dc.html": {
+   "x": 840,
+   "y": 66100,
+   "w": 760,
+   "h": 1080,
+   "title": "207 · Watch Ye at Every Season"
   },
   "LUK-C15-00-Title.dc.html": {
    "x": 0,
-   "y": 66600,
+   "y": 67800,
    "w": 760,
    "h": 1080,
    "title": "Chapter 15 · This Do in Remembrance of Me"
   },
   "LUK-C15-D-P01-TheFeastOfUnleaven.dc.html": {
    "x": 840,
-   "y": 66600,
+   "y": 67800,
    "w": 760,
    "h": 1080,
-   "title": "204 · The Feast of Unleavened Bread"
+   "title": "208 · The Feast of Unleavened Bread"
   },
   "LUK-C15-D-P02-ALargeUpperRoomFur.dc.html": {
    "x": 1680,
-   "y": 66600,
+   "y": 67800,
    "w": 760,
    "h": 1080,
-   "title": "205 · A Large Upper Room Furnished"
+   "title": "209 · A Large Upper Room Furnished"
   },
   "LUK-C15-D-P03-ThisDoInRemembranc.dc.html": {
    "x": 2520,
-   "y": 66600,
+   "y": 67800,
    "w": 760,
    "h": 1080,
-   "title": "206 · This Do in Remembrance of Me"
+   "title": "210 · This Do in Remembrance of Me"
   },
   "LUK-C15-D-P04-ThisDoInRemembranc.dc.html": {
    "x": 3360,
-   "y": 66600,
+   "y": 67800,
    "w": 760,
    "h": 1080,
-   "title": "207 · This Do in Remembrance of Me"
+   "title": "211 · This Do in Remembrance of Me"
   },
   "LUK-C15-D-P05-AsHeThatServeth.dc.html": {
    "x": 0,
-   "y": 67800,
+   "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "208 · As He That Serveth"
+   "title": "212 · As He That Serveth"
   },
   "LUK-C15-D-P06-AsHeThatServeth.dc.html": {
    "x": 840,
-   "y": 67800,
+   "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "209 · As He That Serveth"
+   "title": "213 · As He That Serveth"
   },
   "LUK-C15-D-P07-SimonSimon.dc.html": {
    "x": 1680,
-   "y": 67800,
+   "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "210 · Simon, Simon"
+   "title": "214 · Simon, Simon"
   },
   "LUK-C15-D-P08-SimonSimon.dc.html": {
    "x": 2520,
-   "y": 67800,
+   "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "211 · Simon, Simon"
+   "title": "215 · Simon, Simon"
   },
   "LUK-C15-D-P09-NotMyWillButThineB.dc.html": {
    "x": 3360,
-   "y": 67800,
+   "y": 69000,
    "w": 760,
    "h": 1080,
-   "title": "212 · Not My Will, but Thine, Be Done"
+   "title": "216 · Not My Will, but Thine, Be Done"
   },
   "LUK-C15-D-P10-NotMyWillButThineB.dc.html": {
    "x": 0,
-   "y": 69000,
+   "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "213 · Not My Will, but Thine, Be Done"
+   "title": "217 · Not My Will, but Thine, Be Done"
   },
   "LUK-C15-D-P11-BetrayestThouTheSo.dc.html": {
    "x": 840,
-   "y": 69000,
+   "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "214 · Betrayest Thou the Son of Man with a Kiss?"
+   "title": "218 · Betrayest Thou the Son of Man with a Kiss?"
   },
   "LUK-C15-D-P12-PeterFollowedAfarO.dc.html": {
    "x": 1680,
-   "y": 69000,
+   "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "215 · Peter Followed Afar Off"
+   "title": "219 · Peter Followed Afar Off"
   },
   "LUK-C15-D-P13-PeterFollowedAfarO.dc.html": {
    "x": 2520,
-   "y": 69000,
+   "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "216 · Peter Followed Afar Off"
+   "title": "220 · Peter Followed Afar Off"
   },
   "LUK-C15-D-P14-PeterFollowedAfarO.dc.html": {
    "x": 3360,
-   "y": 69000,
+   "y": 70200,
    "w": 760,
    "h": 1080,
-   "title": "217 · Peter Followed Afar Off"
+   "title": "221 · Peter Followed Afar Off"
   },
   "LUK-C15-D-P15-YeSayThatIAm.dc.html": {
    "x": 0,
-   "y": 70200,
+   "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "218 · Ye Say That I Am"
+   "title": "222 · Ye Say That I Am"
   },
   "LUK-C15-D-P16-YeSayThatIAm.dc.html": {
    "x": 840,
-   "y": 70200,
+   "y": 71400,
    "w": 760,
    "h": 1080,
-   "title": "219 · Ye Say That I Am"
+   "title": "223 · Ye Say That I Am"
   },
   "LUK-C16-00-Title.dc.html": {
    "x": 0,
-   "y": 71900,
+   "y": 73100,
    "w": 760,
    "h": 1080,
    "title": "Chapter 16 · Father, Into Thy Hands"
   },
   "LUK-C16-D-P01-IFindNoFaultInThis.dc.html": {
    "x": 840,
-   "y": 71900,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "220 · I Find No Fault in This Man"
+   "title": "224 · I Find No Fault in This Man"
   },
   "LUK-C16-D-P02-IFindNoFaultInThis.dc.html": {
    "x": 1680,
-   "y": 71900,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "221 · I Find No Fault in This Man"
+   "title": "225 · I Find No Fault in This Man"
   },
   "LUK-C16-D-P03-HerodSetHimAtNough.dc.html": {
    "x": 2520,
-   "y": 71900,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "222 · Herod Set Him at Nought"
+   "title": "226 · Herod Set Him at Nought"
   },
   "LUK-C16-D-P04-CrucifyCrucifyHim.dc.html": {
    "x": 3360,
-   "y": 71900,
+   "y": 73100,
    "w": 760,
    "h": 1080,
-   "title": "223 · Crucify, Crucify Him"
+   "title": "227 · Crucify, Crucify Him"
   },
   "LUK-C16-D-P05-DaughtersOfJerusal.dc.html": {
    "x": 0,
-   "y": 73100,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "224 · Daughters of Jerusalem"
+   "title": "228 · Daughters of Jerusalem"
   },
   "LUK-C16-D-P06-ThePlaceWhichIsCal.dc.html": {
    "x": 840,
-   "y": 73100,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "225 · The Place Which Is Called The Skull"
+   "title": "229 · The Place Which Is Called The Skull"
   },
   "LUK-C16-D-P07-ThePlaceWhichIsCal.dc.html": {
    "x": 1680,
-   "y": 73100,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "226 · The Place Which Is Called The Skull"
+   "title": "230 · The Place Which Is Called The Skull"
   },
   "LUK-C16-D-P08-ToDayShaltThouBeWi.dc.html": {
    "x": 2520,
-   "y": 73100,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "227 · To-day Shalt Thou Be with Me in Paradise"
+   "title": "231 · To-day Shalt Thou Be with Me in Paradise"
   },
   "LUK-C16-D-P09-FatherIntoThyHands.dc.html": {
    "x": 3360,
-   "y": 73100,
+   "y": 74300,
    "w": 760,
    "h": 1080,
-   "title": "228 · Father, into Thy Hands"
+   "title": "232 · Father, into Thy Hands"
   },
   "LUK-C16-D-P10-FatherIntoThyHands.dc.html": {
    "x": 0,
-   "y": 74300,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "229 · Father, into Thy Hands"
+   "title": "233 · Father, into Thy Hands"
   },
   "LUK-C16-D-P11-ATombThatWasHewnIn.dc.html": {
    "x": 840,
-   "y": 74300,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "230 · A Tomb That Was Hewn in Stone"
+   "title": "234 · A Tomb That Was Hewn in Stone"
   },
   "LUK-C16-D-P12-ATombThatWasHewnIn.dc.html": {
    "x": 1680,
-   "y": 74300,
+   "y": 75500,
    "w": 760,
    "h": 1080,
-   "title": "231 · A Tomb That Was Hewn in Stone"
+   "title": "235 · A Tomb That Was Hewn in Stone"
   },
   "LUK-C17-00-Title.dc.html": {
    "x": 0,
-   "y": 76000,
+   "y": 77200,
    "w": 760,
    "h": 1080,
    "title": "Chapter 17 · He Is Risen"
   },
   "LUK-C17-D-P01-WhySeekYeTheLiving.dc.html": {
    "x": 840,
-   "y": 76000,
+   "y": 77200,
    "w": 760,
    "h": 1080,
-   "title": "232 · Why Seek Ye the Living among the Dead?"
+   "title": "236 · Why Seek Ye the Living among the Dead?"
   },
   "LUK-C17-D-P02-WhySeekYeTheLiving.dc.html": {
    "x": 1680,
-   "y": 76000,
+   "y": 77200,
    "w": 760,
    "h": 1080,
-   "title": "233 · Why Seek Ye the Living among the Dead?"
+   "title": "237 · Why Seek Ye the Living among the Dead?"
   },
   "LUK-C17-D-P03-WhySeekYeTheLiving.dc.html": {
    "x": 2520,
-   "y": 76000,
+   "y": 77200,
    "w": 760,
    "h": 1080,
-   "title": "234 · Why Seek Ye the Living among the Dead?"
+   "title": "238 · Why Seek Ye the Living among the Dead?"
   },
   "LUK-C17-D-P04-TheirEyesWereHolde.dc.html": {
    "x": 3360,
-   "y": 76000,
+   "y": 77200,
    "w": 760,
    "h": 1080,
-   "title": "235 · Their Eyes Were Holden"
+   "title": "239 · Their Eyes Were Holden"
   },
   "LUK-C17-D-P05-TheirEyesWereHolde.dc.html": {
    "x": 0,
-   "y": 77200,
+   "y": 78400,
    "w": 760,
    "h": 1080,
-   "title": "236 · Their Eyes Were Holden"
+   "title": "240 · Their Eyes Were Holden"
   },
   "LUK-C17-D-P06-SlowOfHeartToBelie.dc.html": {
    "x": 840,
-   "y": 77200,
+   "y": 78400,
    "w": 760,
    "h": 1080,
-   "title": "237 · Slow of Heart to Believe"
+   "title": "241 · Slow of Heart to Believe"
   },
   "LUK-C17-D-P07-AbideWithUs.dc.html": {
    "x": 1680,
-   "y": 77200,
+   "y": 78400,
    "w": 760,
    "h": 1080,
-   "title": "238 · Abide with Us"
+   "title": "242 · Abide with Us"
   },
   "LUK-C17-D-P08-AbideWithUs.dc.html": {
    "x": 2520,
-   "y": 77200,
+   "y": 78400,
    "w": 760,
    "h": 1080,
-   "title": "239 · Abide with Us"
+   "title": "243 · Abide with Us"
   },
   "LUK-C17-D-P09-PeaceBeUntoYou.dc.html": {
    "x": 3360,
-   "y": 77200,
+   "y": 78400,
    "w": 760,
    "h": 1080,
-   "title": "240 · Peace Be unto You"
+   "title": "244 · Peace Be unto You"
   },
   "LUK-C17-D-P10-YeAreWitnesses.dc.html": {
    "x": 0,
-   "y": 78400,
+   "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "241 · Ye Are Witnesses"
+   "title": "245 · Ye Are Witnesses"
   },
   "LUK-C17-D-P11-HeWasCarriedUpInto.dc.html": {
    "x": 840,
-   "y": 78400,
+   "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "242 · He Was Carried Up into Heaven"
+   "title": "246 · He Was Carried Up into Heaven"
   },
   "LUK-C17-D-P12-HeWasCarriedUpInto.dc.html": {
    "x": 1680,
-   "y": 78400,
+   "y": 79600,
    "w": 760,
    "h": 1080,
-   "title": "243 · He Was Carried Up into Heaven"
+   "title": "247 · He Was Carried Up into Heaven"
   }
  },
  "order": [
@@ -1872,8 +1900,9 @@
   "LUK-C03-D-P01-TheWordOfGodCameUn.dc.html",
   "LUK-C03-D-P02-FruitsWorthyOfRepe.dc.html",
   "LUK-C03-D-P03-WhatThenMustWeDo.dc.html",
-  "LUK-C03-D-P04-HeShallBaptizeYouI.dc.html",
-  "LUK-C03-D-P05-ThouArtMyBelovedSo.dc.html",
+  "LUK-C03-D-P04-WhatThenMustWeDo.dc.html",
+  "LUK-C03-D-P05-HeShallBaptizeYouI.dc.html",
+  "LUK-C03-D-P06-ThouArtMyBelovedSo.dc.html",
   "LUK-C03-E-P01-TheSonOfAdamTheSonOfGod.dc.html",
   "LUK-C03-F-P01-TemptedOfTheDevil.dc.html",
   "LUK-C03-F-P02-AllTheKingdomsOfTh.dc.html",
@@ -1894,16 +1923,17 @@
   "LUK-C04-D-P06-ThySinsAreForgiven.dc.html",
   "LUK-C04-D-P07-LeviMadeHimAGreatF.dc.html",
   "LUK-C04-D-P08-TheBridegroom.dc.html",
-  "LUK-C04-D-P09-LordOfTheSabbath.dc.html",
-  "LUK-C04-D-P10-StretchForthThyHan.dc.html",
+  "LUK-C04-D-P09-TheBridegroom.dc.html",
+  "LUK-C04-D-P10-LordOfTheSabbath.dc.html",
   "LUK-C04-D-P11-StretchForthThyHan.dc.html",
-  "LUK-C04-D-P12-WhomHeNamedApostle.dc.html",
-  "LUK-C04-D-P13-BlessedAreYePoor.dc.html",
-  "LUK-C04-D-P14-LoveYourEnemies.dc.html",
+  "LUK-C04-D-P12-StretchForthThyHan.dc.html",
+  "LUK-C04-D-P13-WhomHeNamedApostle.dc.html",
+  "LUK-C04-D-P14-BlessedAreYePoor.dc.html",
   "LUK-C04-D-P15-LoveYourEnemies.dc.html",
-  "LUK-C04-D-P16-GoodMeasureRunning.dc.html",
+  "LUK-C04-D-P16-LoveYourEnemies.dc.html",
   "LUK-C04-D-P17-GoodMeasureRunning.dc.html",
-  "LUK-C04-D-P18-AFoundationUponThe.dc.html",
+  "LUK-C04-D-P18-GoodMeasureRunning.dc.html",
+  "LUK-C04-D-P19-AFoundationUponThe.dc.html",
   "LUK-C05-00-Title.dc.html",
   "LUK-C05-D-P01-SoGreatFaith.dc.html",
   "LUK-C05-D-P02-SoGreatFaith.dc.html",
@@ -2011,17 +2041,18 @@
   "LUK-C12-D-P01-TheUnrighteousStew.dc.html",
   "LUK-C12-D-P02-TheUnrighteousStew.dc.html",
   "LUK-C12-D-P03-YeCannotServeGodAn.dc.html",
-  "LUK-C12-D-P04-ACertainBeggarName.dc.html",
+  "LUK-C12-D-P04-YeCannotServeGodAn.dc.html",
   "LUK-C12-D-P05-ACertainBeggarName.dc.html",
   "LUK-C12-D-P06-AGreatGulfFixed.dc.html",
   "LUK-C12-D-P07-AGreatGulfFixed.dc.html",
   "LUK-C12-D-P08-IncreaseOurFaith.dc.html",
   "LUK-C12-D-P09-IncreaseOurFaith.dc.html",
-  "LUK-C12-D-P10-WhereAreTheNine.dc.html",
-  "LUK-C12-D-P11-TheKingdomOfGodIsW.dc.html",
-  "LUK-C12-D-P12-AsInTheDaysOfNoah.dc.html",
+  "LUK-C12-D-P10-IncreaseOurFaith.dc.html",
+  "LUK-C12-D-P11-WhereAreTheNine.dc.html",
+  "LUK-C12-D-P12-TheKingdomOfGodIsW.dc.html",
   "LUK-C12-D-P13-AsInTheDaysOfNoah.dc.html",
   "LUK-C12-D-P14-AsInTheDaysOfNoah.dc.html",
+  "LUK-C12-D-P15-AsInTheDaysOfNoah.dc.html",
   "LUK-C13-00-Title.dc.html",
   "LUK-C13-D-P01-TheyOughtAlwaysToP.dc.html",
   "LUK-C13-D-P02-TwoMenWentUpIntoTh.dc.html",
@@ -2045,18 +2076,19 @@
   "LUK-C14-D-P01-ByWhatAuthority.dc.html",
   "LUK-C14-D-P02-IWillSendMyBeloved.dc.html",
   "LUK-C14-D-P03-IWillSendMyBeloved.dc.html",
-  "LUK-C14-D-P04-RenderUntoCsar.dc.html",
+  "LUK-C14-D-P04-IWillSendMyBeloved.dc.html",
   "LUK-C14-D-P05-RenderUntoCsar.dc.html",
-  "LUK-C14-D-P06-TheGodOfTheLiving.dc.html",
+  "LUK-C14-D-P06-RenderUntoCsar.dc.html",
   "LUK-C14-D-P07-TheGodOfTheLiving.dc.html",
-  "LUK-C14-D-P08-BewareOfTheScribes.dc.html",
-  "LUK-C14-D-P09-NotOneStoneUponAno.dc.html",
+  "LUK-C14-D-P08-TheGodOfTheLiving.dc.html",
+  "LUK-C14-D-P09-BewareOfTheScribes.dc.html",
   "LUK-C14-D-P10-NotOneStoneUponAno.dc.html",
-  "LUK-C14-D-P11-JerusalemCompassed.dc.html",
+  "LUK-C14-D-P11-NotOneStoneUponAno.dc.html",
   "LUK-C14-D-P12-JerusalemCompassed.dc.html",
-  "LUK-C14-D-P13-SignsInSunAndMoonA.dc.html",
+  "LUK-C14-D-P13-JerusalemCompassed.dc.html",
   "LUK-C14-D-P14-SignsInSunAndMoonA.dc.html",
-  "LUK-C14-D-P15-WatchYeAtEverySeas.dc.html",
+  "LUK-C14-D-P15-SignsInSunAndMoonA.dc.html",
+  "LUK-C14-D-P16-WatchYeAtEverySeas.dc.html",
   "LUK-C15-00-Title.dc.html",
   "LUK-C15-D-P01-TheFeastOfUnleaven.dc.html",
   "LUK-C15-D-P02-ALargeUpperRoomFur.dc.html",
@@ -2198,35 +2230,35 @@
    "maxW": 4120,
    "text": "Chapter 13 · Zacchæus (Luke 18–19)",
    "x": 0,
-   "y": 55700
+   "y": 56900
   },
   "chapter14": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 14 · Render unto Cæsar (Luke 20–21)",
    "x": 0,
-   "y": 61000
+   "y": 62200
   },
   "chapter15": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 15 · This Do in Remembrance of Me (Luke 22)",
    "x": 0,
-   "y": 66300
+   "y": 67500
   },
   "chapter16": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 16 · Father, Into Thy Hands (Luke 23)",
    "x": 0,
-   "y": 71600
+   "y": 72800
   },
   "chapter17": {
    "kind": "title1",
    "maxW": 4120,
    "text": "Chapter 17 · He Is Risen (Luke 24)",
    "x": 0,
-   "y": 75700
+   "y": 76900
   }
  },
  "designSystems": [],

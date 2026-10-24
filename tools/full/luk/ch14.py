@@ -11,7 +11,7 @@ import sys, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE.parents[1] / "kit"))
 from luk import G, art12 as A, ch13 as _prev
-from luk.common import (K, Pages, D, F, Q, N, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
+from luk.common import (K, Pages, D, F, Q, N, T, S, cp, gd, sg, sy, v, title, nxt, COLD, GOLDEN, RED, NIGHT, JESUS, JESUS_TEACH, JESUS_STERN, JESUS_GRIEF,
                         PETER, PRIEST, SCRIBE, SCRIBE_STERN, SADDUCEE, SCRIBE_WISE, WITNESS)
 
 PG = Pages(_prev.START + len(_prev.PAGES) - 1)
@@ -24,7 +24,7 @@ def title_page(n):
     return title(14, "Render unto Cæsar", "Luke 20 – 21", svg, "#2A2A3A", v("20:25", frm="render unto Cæsar"))
 
 
-SEGS = [D([cp("20:1"), N("20:2", "saying unto him,")], lambda w, h: A.temple_teaching("tt1", w, h, 2001), "#C8B490", head="By What Authority?", sky=20),
+SEGS = [D([cp("20:1"), N("20:2", "saying unto him,")], lambda w, h: A.temple_teaching("tt1", w, h, 2001), "#C8B490", head="By What Authority?", sky=(20, "left")),
         F([N("20:3", "said unto them,"), sy("20:4")]),
         F([N("20:5", "with themselves, saying,"), sy("20:6"), cp("20:7")], PRIEST, bg=COLD),
         F([N("20:8", "said unto them,")], JESUS_STERN, bg=RED),
@@ -45,8 +45,8 @@ SEGS = [D([cp("20:1"), N("20:2", "saying unto him,")], lambda w, h: A.temple_tea
         D([N("20:41", "said unto them,"), sy("20:42"), sy("20:43"), sy("20:44")], lambda w, h: A.psalm_scroll("ps1", w, h, 2011), "#1A1630", head="David's Son"),
         D([cp("20:45"), sy("20:46"), sy("20:47")], lambda w, h: A.moses_seat("ms1", w, h, 2012), "#C8B490", head="Beware of the Scribes"),
         # Luke 21
-        D([cp("21:1"), cp("21:2"), N("21:3", "And he said,"), sy("21:4")], lambda w, h: A.treasury("tr1", w, h, 2101), "#C8B490", head="The Poor Widow", sky=21, art_h=220),
-        D([cp("21:5"), sy("21:6")], lambda w, h: A.temple_stones("ts1", w, h, 2102), "#8FD0E2", head="Not One Stone upon Another"),
+        D([cp("21:1"), cp("21:2"), N("21:3", "And he said,"), sy("21:4")], lambda w, h: A.treasury("tr1", w, h, 2101), "#C8B490", head="The Poor Widow", art_h=220),
+        D([cp("21:5"), sy("21:6")], lambda w, h: A.temple_stones("ts1", w, h, 2102), "#8FD0E2", head="Not One Stone upon Another", sky=21),
         F([N("21:7", "asked him, saying,")], PETER),
         F([N("21:8", "And he said,"), sy("21:9")], JESUS_STERN, bg=RED),
         D([N("21:10", "Then said he unto them,"), sy("21:11")], lambda w, h: A.wars_far("wf1", w, h, 2103), "#3A1A1A"),
