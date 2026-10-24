@@ -16,6 +16,16 @@
     "Main.dc.html",
     "MAT-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "The Sermon on the Mount",
+   "range": "Matthew 5–7",
+   "blurb": "He went up into the mountain and opened his mouth and taught them: blessed are the poor in spirit; ye are the salt of the earth, ye are the light of the world; not to destroy, but to fulfil; but I say unto you — love your enemies; when thou prayest, enter into thine inner chamber: Our Father who art in heaven; treasures in heaven; consider the lilies of the field; judge not; ask, and it shall be given you; the narrow gate; by their fruits ye shall know them; and the house built upon the rock.",
+   "prefixes": [
+    "MAT-C02-"
+   ]
   }
  ]
 }

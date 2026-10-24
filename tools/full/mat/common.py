@@ -43,6 +43,14 @@ def chart_roll(cells, chart, ch, title_, n, cap=None, bg="#0B1A2E", ref=None, ta
                  f'letter-spacing: 0.24em; color: #6B6862">{tag}</div>')
     return page(title_, f"{ch}px minmax(0, 1fr)", body + end, n)
 
+def drawn(lines, art, bg, art_h=240, size=17, **kw):
+    """K.drawn with room for a real picture: the panel as tall as its words need at `size` px plus art_h for the drawing
+    (pass h= to fix it)."""
+    if "h" not in kw:
+        from oba.minor import _flat
+        kw["h"] = int(speech._height(_flat(lines), 678, size) + 44 + art_h)
+    return K.drawn(lines, art, bg, **kw)
+
 def cell(name, refs, accent="#FFD23F", frm=None, to=None):
     """A roll cell: a name over a verse cut or a run of whole verses ("1:2-5")."""
     if "-" in refs and frm is None and to is None: text = sp(refs)

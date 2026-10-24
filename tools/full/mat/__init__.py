@@ -36,5 +36,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "The Son of David", "range": "Matthew 1–4", "bible_chapters": [1, 2, 3, 4],
      "blurb": "The book of the generation of Jesus Christ, the son of David, the son of Abraham: three times fourteen generations; Joseph's dream — thou shalt call his name JESUS; Immanuel, God with us; the wise-men from the east and the star that stood over the young child; gold and frankincense and myrrh; the flight into Egypt and Rachel weeping for her children; John the Baptist in the wilderness; the heavens opened and the Spirit as a dove — this is my beloved Son; forty days in the wilderness — it is written; and the fishers of men by the sea of Galilee."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Sermon on the Mount", "range": "Matthew 5–7", "bible_chapters": [5, 6, 7],
+     "blurb": "He went up into the mountain and opened his mouth and taught them: blessed are the poor in spirit; ye are the salt of the earth, ye are the light of the world; not to destroy, but to fulfil; but I say unto you — love your enemies; when thou prayest, enter into thine inner chamber: Our Father who art in heaven; treasures in heaven; consider the lilies of the field; judge not; ask, and it shall be given you; the narrow gate; by their fruits ye shall know them; and the house built upon the rock."},
   ],
 }
