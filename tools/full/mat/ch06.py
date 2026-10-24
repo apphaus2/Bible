@@ -26,7 +26,7 @@ def D(lines, fn, bg, **k): return drawn(lines, fn, bg, **{"art_h": 180, "size": 
 def F(lines, tok=JESUS_TEACH, bg=GOLDEN, **k): return K.face(lines, tok, bg=bg, **k)
 
 SEGS = [D([cp("15:1"), sy("15:2")], lambda w, h: A.unwashed("uw1", w, h, 1501), "#8FD0E2", head="The Tradition of the Elders", stamp=15),
-        F([cp("15:3", to="said unto them,"), sy("15:3", frm="Why do ye"), sy("15:4"), sy("15:5"), sy("15:6")], JESUS_STERN, bg=RED),
+        F([cp("15:3", to="said unto them,"), sy("15:3", frm="Why do ye"), sy("15:4", to="For God said,"), gd("15:4", frm="Honor thy"), sy("15:5"), sy("15:6")], JESUS_STERN, bg=RED),
         F([sy("15:7"), sg("15:8"), sg("15:9")], JESUS_STERN, bg=RED),
         F([cp("15:10", to="said unto them,"), sy("15:10", frm="Hear, and"), sy("15:11")]),
         F([cp("15:12", to="said unto him,"), sy("15:12", frm="Knowest thou")], ANDREW),

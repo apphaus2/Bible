@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 682 verses — 680 full, 0 partial, 2 omitted.
+**So far:** 774 verses — 772 full, 0 partial, 2 omitted.
 
 ## Chapter 1 · The Son of David (Matthew 1–4)
 
@@ -45,3 +45,9 @@ Every verse is on the page in full.
 99 verses: 98 full, 0 partial, 1 omitted.
 
 - 18:11 — omitted (0%)
+
+## Chapter 8 · Hosanna to the Son of David (Matthew 21–22)
+
+92 verses: 92 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
