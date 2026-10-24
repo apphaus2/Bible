@@ -1080,6 +1080,111 @@
    "w": 760,
    "h": 1080,
    "title": "142 · Go and Say to That Fox"
+  },
+  "LUK-C11-00-Title.dc.html": {
+   "x": 0,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 11 · The Prodigal Son"
+  },
+  "LUK-C11-D-P01-IsItLawfulToHealOn.dc.html": {
+   "x": 840,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "143 · Is It Lawful to Heal on the Sabbath?"
+  },
+  "LUK-C11-D-P02-FriendGoUpHigher.dc.html": {
+   "x": 1680,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "144 · Friend, Go Up Higher"
+  },
+  "LUK-C11-D-P03-AGreatSupper.dc.html": {
+   "x": 2520,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "145 · A Great Supper"
+  },
+  "LUK-C11-D-P04-AGreatSupper.dc.html": {
+   "x": 3360,
+   "y": 47800,
+   "w": 760,
+   "h": 1080,
+   "title": "146 · A Great Supper"
+  },
+  "LUK-C11-D-P05-CountTheCost.dc.html": {
+   "x": 0,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "147 · Count the Cost"
+  },
+  "LUK-C11-D-P06-CountTheCost.dc.html": {
+   "x": 840,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "148 · Count the Cost"
+  },
+  "LUK-C11-D-P07-ThatWhichWasLost.dc.html": {
+   "x": 1680,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "149 · That Which Was Lost"
+  },
+  "LUK-C11-D-P08-ThatWhichWasLost.dc.html": {
+   "x": 2520,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "150 · That Which Was Lost"
+  },
+  "LUK-C11-D-P09-ThePieceWhichIHadL.dc.html": {
+   "x": 3360,
+   "y": 49000,
+   "w": 760,
+   "h": 1080,
+   "title": "151 · The Piece Which I Had Lost"
+  },
+  "LUK-C11-D-P10-ACertainManHadTwoS.dc.html": {
+   "x": 0,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "152 · A Certain Man Had Two Sons"
+  },
+  "LUK-C11-D-P11-IWillAriseAndGoToM.dc.html": {
+   "x": 840,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "153 · I Will Arise and Go to My Father"
+  },
+  "LUK-C11-D-P12-IWillAriseAndGoToM.dc.html": {
+   "x": 1680,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "154 · I Will Arise and Go to My Father"
+  },
+  "LUK-C11-D-P13-ThyBrotherWasDeadA.dc.html": {
+   "x": 2520,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "155 · Thy Brother Was Dead, and Is Alive Again"
+  },
+  "LUK-C11-D-P14-ThyBrotherWasDeadA.dc.html": {
+   "x": 3360,
+   "y": 50200,
+   "w": 760,
+   "h": 1080,
+   "title": "156 · Thy Brother Was Dead, and Is Alive Again"
   }
  },
  "order": [
@@ -1235,7 +1340,22 @@
   "LUK-C10-D-P16-LikeAGrainOfMustar.dc.html",
   "LUK-C10-D-P17-TheNarrowDoor.dc.html",
   "LUK-C10-D-P18-GoAndSayToThatFox.dc.html",
-  "LUK-C10-D-P19-GoAndSayToThatFox.dc.html"
+  "LUK-C10-D-P19-GoAndSayToThatFox.dc.html",
+  "LUK-C11-00-Title.dc.html",
+  "LUK-C11-D-P01-IsItLawfulToHealOn.dc.html",
+  "LUK-C11-D-P02-FriendGoUpHigher.dc.html",
+  "LUK-C11-D-P03-AGreatSupper.dc.html",
+  "LUK-C11-D-P04-AGreatSupper.dc.html",
+  "LUK-C11-D-P05-CountTheCost.dc.html",
+  "LUK-C11-D-P06-CountTheCost.dc.html",
+  "LUK-C11-D-P07-ThatWhichWasLost.dc.html",
+  "LUK-C11-D-P08-ThatWhichWasLost.dc.html",
+  "LUK-C11-D-P09-ThePieceWhichIHadL.dc.html",
+  "LUK-C11-D-P10-ACertainManHadTwoS.dc.html",
+  "LUK-C11-D-P11-IWillAriseAndGoToM.dc.html",
+  "LUK-C11-D-P12-IWillAriseAndGoToM.dc.html",
+  "LUK-C11-D-P13-ThyBrotherWasDeadA.dc.html",
+  "LUK-C11-D-P14-ThyBrotherWasDeadA.dc.html"
  ],
  "notes": {
   "Main": {
@@ -1314,6 +1434,13 @@
    "text": "Chapter 10 · Consider the Lilies (Luke 12–13)",
    "x": 0,
    "y": 42200
+  },
+  "chapter11": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 11 · The Prodigal Son (Luke 14–15)",
+   "x": 0,
+   "y": 47500
   }
  },
  "designSystems": [],
