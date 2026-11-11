@@ -1,0 +1,21 @@
+{
+ "id": "2corinthians",
+ "order": 47,
+ "name": "2 Corinthians",
+ "kanji": "コリント人への第二の手紙",
+ "thumb": "vol-2corinthians-",
+ "lede": "The forty-seventh book of the Bible, in full: Paul's second letter to the church of God at Corinth, written in Macedonia after Titus came and carried by Titus and the brethren — the God of all comfort, the epistle written in hearts of flesh, the veil taken away, treasure in earthen vessels, a house not made with hands, a new creature and the ministry of reconciliation, the collection for the saints and the cheerful giver, strongholds cast down, Paul's sufferings and his weakness, the third heaven and the thorn in the flesh, and my grace is sufficient for thee, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Treasure in Earthen Vessels",
+   "range": "2 Corinthians 1–5",
+   "blurb": "Paul and Timothy to the church of God at Corinth — the letter written in Macedonia; blessed be the God of all comfort; the sentence of death on the road through Asia; sealed, and the earnest of the Spirit; I wrote unto you with many tears; a door opened at Troas; led in triumph, a sweet savor of Christ; ye are our epistle, written in tables that are hearts of flesh; the glory of Moses' face and the veil taken away; light shall shine out of darkness; we have this treasure in earthen vessels; pressed, perplexed, pursued, smitten down; a house not made with hands, eternal, in the heavens; if any man is in Christ, he is a new creature; we are ambassadors on behalf of Christ.",
+   "prefixes": [
+    "Main.dc.html",
+    "2CO-C01-"
+   ]
+  }
+ ]
+}
