@@ -1,5 +1,5 @@
 """Drawings for 1 Corinthians 15–16 (chapter 5 of the volume), on co1.art4: died, buried, raised — the three crosses far off,
-the sealed tomb, the stone rolled away (Matthew's and John's drawings, no wounds, nothing nearer, 15:3–4); the witnesses as
+the sealed tomb, the stone rolled away and Jesus risen before the open tomb (no wounds, nothing nearer, 15:3–4); the witnesses as
 greeting cells (15:5–8); the sealed tomb at night (15:12–14); the tombs at dusk (15:18); the firstfruits (15:20); the throne
 and the footstool, no figure (15:25); the theatre at Ephesus empty (15:32, "fought with beasts", words only); the grain of
 wheat (John's plan, 15:36–38); one flesh of men, of beasts, of birds, of fishes (15:39); the glory of the sun, the moon and the
@@ -9,12 +9,35 @@ day of the week (16:2); Paul's road through Macedonia (16:5–9); Timothy settin
 hand (16:21)."""
 from co1.art4 import *
 from co1.art4 import f, INK, _seated_lap
-from mat.art11 import new_tomb, stone_rolled, linen, jesus_risen
+from mat.art11 import new_tomb, linen
+from ntcast import JESUS_SKIN, _HAIR_FIG, _BEARD_FIG
 from act.art4 import throne_footstool
 from ecc.art import tombs as ecc_tombs
 from jhn.art6 import grain_wheat
 from oba.minor import eagle
 from epistle import portrait
+
+def risen_fig(p, x, y, s, flip=False, up=None):
+    """Jesus risen (CLAUDE.md: the same man as ntcast draws him, after the resurrection in white light): ntcast's skin,
+    shoulder-length dark-brown hair and short beard, his robe white and his mantle a pale blue-grey, drawn on the kit
+    silhouette (epistle.robed) with a full ink line so he reads as a man; a white glow and soft rays behind him."""
+    return (glow(x, y - 110 * s, 170 * s, "#FFFFFF", 0.9, f"{p}rz{int(x)}") + rays(x, y - 110 * s, 24, 70 * s, 230 * s, color="#FFFDF0", op=0.35)
+            + robed(p, x, y, s, "#FFFFFF", skin=JESUS_SKIN, mantle="#C8D2E6", flip=flip, up=up, extra=_HAIR_FIG + _BEARD_FIG))
+
+def risen_tomb(p, w, h, seed):
+    """He hath been raised on the third day: the garden at dawn, the tomb in the rock with its stone rolled away and its door
+    open and dark, and Jesus risen standing before it in white light, about seven tenths of the panel's height."""
+    b = h * 0.95
+    o = [mk.defs(p, *ALL, "ManUp"), sky(w, h, "#3A3A7A", "#FFC890"),
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} L {f(w * 0.36)} {f(h * 0.2)} C {f(w * 0.6)} {f(h * 0.1)} {f(w * 0.86)} {f(h * 0.14)} {f(w + 10)} {f(h * 0.2)} L {f(w + 10)} {f(h + 10)} Z" fill="#8A7A6A" stroke="{INK}" stroke-width="2.4"></path>',
+         f'<path d="M{f(w * 0.56)} {f(b - h * 0.04)} L {f(w * 0.56)} {f(h * 0.44)} Q {f(w * 0.66)} {f(h * 0.32)} {f(w * 0.76)} {f(h * 0.44)} L {f(w * 0.76)} {f(b - h * 0.04)} Z" fill="#1A1210" stroke="{INK}" stroke-width="2.4"></path>',
+         ground(w, h, b - h * 0.04, "#5A6A3A", dy=0)]
+    r = min(h * 0.14, w * 0.14)
+    o.append(f'<circle cx="{f(w * 0.88)}" cy="{f(b - h * 0.04 - r)}" r="{f(r)}" fill="#A89A8A" stroke="{INK}" stroke-width="2.6"></circle>'
+             f'<circle cx="{f(w * 0.88)}" cy="{f(b - h * 0.04 - r)}" r="{f(r * 0.6)}" fill="none" stroke="#8A7C6C" stroke-width="2"></circle>')
+    s = h * 0.7 / 205
+    o.append(risen_fig(p, w * 0.34, b, s, flip=True, up=[(-22, -158), (-44, -150), (-64, -160)]))
+    return "".join(o)
 
 def cells(p, w, h, fns, gap=0, line=True):
     """Several drawings side by side in one panel, each clipped to its cell: fns = [fn(p, w, h) …]."""
@@ -30,10 +53,10 @@ def cells(p, w, h, fns, gap=0, line=True):
 # ---- 1 Corinthians 15 --------------------------------------------------------------------------------------------------
 def died_buried_raised(p, w, h, seed):
     """That Christ died … and that he was buried; and that he hath been raised on the third day: three cells — the hill of the
-    three crosses far off under a black sky; the tomb with its stone sealed; the stone rolled away at dawn and the angel of
-    white light sitting on it (no face)."""
+    three crosses far off under a black sky; the tomb with its stone sealed; the stone rolled away at dawn and Jesus risen
+    standing before the open tomb in white light (risen_tomb)."""
     return cells(p, w, h, [lambda q, cw, hh: dark_hill(q, cw, hh, seed), lambda q, cw, hh: new_tomb(q, cw, hh, seed + 1, sealed=True),
-                           lambda q, cw, hh: stone_rolled(q, cw, hh, seed + 2, guards=False)])
+                           lambda q, cw, hh: risen_tomb(q, cw, hh, seed + 2)])
 
 def sealed_tomb(p, w, h, seed):
     """If Christ hath not been raised: the tomb hewn in the rock at evening, the great stone rolled to the door and sealed."""
@@ -157,7 +180,7 @@ def earthy_heavenly(p, w, h, seed):
          f'<rect x="-10" y="{f(b)}" width="{f(w * 0.5 + 10)}" height="{f(h)}" fill="#7A5030" stroke="{INK}" stroke-width="2"></rect>']
     s = fit(b, b - min(h * 0.78, 210))
     o.append(robed(p, w * 0.25, b, s, "#8A6A44", hair="#3A2A1A", beard="#3A2A1A", flip=True))
-    o.append(jesus_risen(p, w * 0.75, b, s))
+    o.append(f'<g clip-path="url(#{p}eh)">' + risen_fig(p, w * 0.75, b, h * 0.7 / 205) + '</g>')
     o.append(f'<path d="M{f(w * 0.5)} -10 L {f(w * 0.5)} {f(h + 10)}" stroke="{INK}" stroke-width="4"></path>')
     o.append(plate_label(w * 0.25, h * 0.08, "OF THE EARTH", "#3A2418", 11, halo_="#E8D0A0") + plate_label(w * 0.75, h * 0.08, "OF HEAVEN", "#FFF8E6", 11, halo_="#2A3A7A"))
     return "".join(o)
