@@ -587,6 +587,7 @@ def _cell(name, tg, lines, art, h, s, p, accent="#7A4A2A"):
            f'<path d="M{_PW} 0 L {_PW} {f(h)}" stroke="{INK}" stroke-width="3"></path>')
     fs = min(s, speech.fit(lines, bw, h - 40))
     items = [re.sub(r"font-size: [\d.]+px", f"font-size: {fs}px", it, count=1) for it in speech.column(lines, bw, 10 ** 6, side=None)]
+    name, tg = (re.sub(r"&(?![#\w]+;)", "&amp;", t) for t in (name, tg))     # a bare "&" (PRISCA & AQUILA) breaks the EPUB's XHTML
     head = (f'<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px">'
             f'<span data-label style="font-family: Anton, sans-serif; font-size: 22px; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; color: {accent}">{name}</span>'
             f'<span data-label style="font-size: 9px; font-weight: 600; letter-spacing: 0.16em; white-space: nowrap; color: #4A3A2A">{tg}</span></div>')

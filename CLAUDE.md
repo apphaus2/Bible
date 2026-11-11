@@ -15,7 +15,9 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 **Complete: the whole Old Testament, Genesis through Malachi (39 volumes, 4,478 pages, 23,145 verses).** Per-chapter detail is
 in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: the Gospels and Acts are complete** (`mat`,
 built on `oba/minor.py`'s `Kit`, the shared `ntcast.py` cast; `mrk`, `luk`, `jhn`, `act` build on Matthew's art and Mark's
-`MarkKit`, with `drawn(..., sky=)` keeping chapter stamps in clear sky). Next: Romans, then the rest in order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
+`MarkKit`, with `drawn(..., sky=)` keeping chapter stamps in clear sky). **Paul's letters have begun: Romans, 1 and 2 Corinthians
+and Galatians are complete**, on the shared epistle kit (`tools/full/epistle.py`). Next: Ephesians, then the rest in order to
+Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
 other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
@@ -151,6 +153,17 @@ Package notes (helpers worth reusing; each package's `__init__.py` has its plan 
   `jer(age, mood)` faces, `near_east()`, `pagepack.py` merges lone panels. `lam`: `L(c, a, b, d=|t=)` one song box per verse.
 - `dan`/`hos`/`jol`/`amo`: `dan/kit.py` `Lines(G, code, book, SPK)` (captions, Voice boxes, per-speaker speech), packed with
   `job.jdiscourse`; `dan.art.glow_fig` angels; beasts as heraldic plates.
+- **The letters** (`rom`, `co1`, `co2`, `gal`, and every letter after): `epistle.py` (its docstring lists every helper).
+  `EpistleKit` builds on `MarkKit`. Paul's words go in parchment LETTER boxes with a sepia rule (the `"letter"` kind in
+  `speech.py`), tailed toward his face, untailed over drawings. Quoted scripture goes in song boxes, God's spoken words in
+  the Voice box, and Christ's words in ordinary balloons. Paul's faces (`PAUL`, `PAUL_LAMP`, `PAUL_GRIEF`, `PAUL_JOY`,
+  `PAUL_STERN`) alternate sides by themselves and alternate with drawings that carry the argument: technical plates
+  (`plate_bg`/`tag`/`dim`), maps (`letter_road` on Acts' projection), emblems. Never more than two face pages in a row.
+  Other helpers: `study()` (writer, scribe, bearer), `robed()`/`paul_fig()` standing people on the kit silhouettes,
+  `greetings()` roll cells with `face_portrait()`, and `glory` panels for doxologies and benedictions. The risen Christ is
+  `co1.art5.risen_fig` (ntcast's look on the kit figure). The letters' builders wished the kit had: face panels sized to
+  their words (`gal.common.F`), drawings clipped to their panel (`gal.art.art`), `study(window=, scribe beard, bearer
+  figure)`, seated and walking `robed()` poses, a title size option, and `athlete()` (`co1/art3.py`) for action poses.
 
 ## Visual style
 
