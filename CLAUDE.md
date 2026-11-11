@@ -64,6 +64,7 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 42 | Luke | `luk` | 17 | 265 | 1,151: 1,149 full; 17:36, 23:17 have no text in the ASV |
 | 43 | John | `jhn` | 10 | 199 | 879: 878 full; 5:4 has no text in the ASV |
 | 44 | Acts | `act` | 16 | 229 | 1,007: 1,003 full; 8:37, 15:34, 24:7, 28:29 have no text in the ASV |
+| 46 | 1 Corinthians | `co1` | 5 | 85 | 437 full |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.

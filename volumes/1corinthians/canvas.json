@@ -492,6 +492,118 @@
    "w": 760,
    "h": 1080,
    "title": "64 · Decently and in Order"
+  },
+  "1CO-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · O Death, Where Is Thy Victory?"
+  },
+  "1CO-C05-D-P01-DiedBuriedRaised.dc.html": {
+   "x": 840,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Died, Buried, Raised"
+  },
+  "1CO-C05-W-P01-HeAppeared.dc.html": {
+   "x": 1680,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · He Appeared"
+  },
+  "1CO-C05-E-P01-IfChristHathNotBee.dc.html": {
+   "x": 2520,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · If Christ Hath Not Been Raised"
+  },
+  "1CO-C05-E-P02-IfChristHathNotBee.dc.html": {
+   "x": 3360,
+   "y": 20800,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · If Christ Hath Not Been Raised"
+  },
+  "1CO-C05-E-P03-TheLastEnemy.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Last Enemy"
+  },
+  "1CO-C05-E-P04-TheLastEnemy.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Last Enemy"
+  },
+  "1CO-C05-E-P05-HowAreTheDeadRaise.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · How Are the Dead Raised?"
+  },
+  "1CO-C05-E-P06-OneStarDifferethFr.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · One Star Differeth from Another"
+  },
+  "1CO-C05-E-P07-TheLastAdam.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · The Last Adam"
+  },
+  "1CO-C05-E-P08-WeShallAllBeChange.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · We Shall All Be Changed"
+  },
+  "1CO-C05-E-P09-ODeathWhereIsThyVi.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · O Death, Where Is Thy Victory?"
+  },
+  "1CO-C05-E-P10-AGreatDoorAndEffec.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · A Great Door and Effectual"
+  },
+  "1CO-C05-E-P11-TimothyAndApollos.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Timothy and Apollos"
+  },
+  "1CO-C05-G-P01-Salute.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Salute"
+  },
+  "1CO-C05-F-P01-WithMineOwnHand.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · With Mine Own Hand"
   }
  },
  "order": [
@@ -563,7 +675,23 @@
   "1CO-C04-D-P11-AnUncertainVoice.dc.html",
   "1CO-C04-D-P12-AnUncertainVoice.dc.html",
   "1CO-C04-D-P13-DecentlyAndInOrder.dc.html",
-  "1CO-C04-D-P14-DecentlyAndInOrder.dc.html"
+  "1CO-C04-D-P14-DecentlyAndInOrder.dc.html",
+  "1CO-C05-00-Title.dc.html",
+  "1CO-C05-D-P01-DiedBuriedRaised.dc.html",
+  "1CO-C05-W-P01-HeAppeared.dc.html",
+  "1CO-C05-E-P01-IfChristHathNotBee.dc.html",
+  "1CO-C05-E-P02-IfChristHathNotBee.dc.html",
+  "1CO-C05-E-P03-TheLastEnemy.dc.html",
+  "1CO-C05-E-P04-TheLastEnemy.dc.html",
+  "1CO-C05-E-P05-HowAreTheDeadRaise.dc.html",
+  "1CO-C05-E-P06-OneStarDifferethFr.dc.html",
+  "1CO-C05-E-P07-TheLastAdam.dc.html",
+  "1CO-C05-E-P08-WeShallAllBeChange.dc.html",
+  "1CO-C05-E-P09-ODeathWhereIsThyVi.dc.html",
+  "1CO-C05-E-P10-AGreatDoorAndEffec.dc.html",
+  "1CO-C05-E-P11-TimothyAndApollos.dc.html",
+  "1CO-C05-G-P01-Salute.dc.html",
+  "1CO-C05-F-P01-WithMineOwnHand.dc.html"
  ],
  "notes": {
   "Main": {
@@ -600,6 +728,13 @@
    "text": "Chapter 4 · The Greatest of These Is Love (1 Corinthians 12–14)",
    "x": 0,
    "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · O Death, Where Is Thy Victory? (1 Corinthians 15–16)",
+   "x": 0,
+   "y": 20500
   }
  },
  "designSystems": [],
