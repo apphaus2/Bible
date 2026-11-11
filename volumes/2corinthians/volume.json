@@ -1,0 +1,41 @@
+{
+ "id": "2corinthians",
+ "order": 47,
+ "name": "2 Corinthians",
+ "kanji": "コリント人への第二の手紙",
+ "thumb": "vol-2corinthians-",
+ "lede": "The forty-seventh book of the Bible, in full: Paul's second letter to the church of God at Corinth, written in Macedonia after Titus came and carried by Titus and the brethren — the God of all comfort, the epistle written in hearts of flesh, the veil taken away, treasure in earthen vessels, a house not made with hands, a new creature and the ministry of reconciliation, the collection for the saints and the cheerful giver, strongholds cast down, Paul's sufferings and his weakness, the third heaven and the thorn in the flesh, and my grace is sufficient for thee, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Treasure in Earthen Vessels",
+   "range": "2 Corinthians 1–5",
+   "blurb": "Paul and Timothy to the church of God at Corinth — the letter written in Macedonia; blessed be the God of all comfort; the sentence of death on the road through Asia; sealed, and the earnest of the Spirit; I wrote unto you with many tears; a door opened at Troas; led in triumph, a sweet savor of Christ; ye are our epistle, written in tables that are hearts of flesh; the glory of Moses' face and the veil taken away; light shall shine out of darkness; we have this treasure in earthen vessels; pressed, perplexed, pursued, smitten down; a house not made with hands, eternal, in the heavens; if any man is in Christ, he is a new creature; we are ambassadors on behalf of Christ.",
+   "prefixes": [
+    "Main.dc.html",
+    "2CO-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "God Loveth a Cheerful Giver",
+   "range": "2 Corinthians 6–9",
+   "blurb": "Behold, now is the day of salvation; as dying, and behold, we live; as sorrowful, yet always rejoicing; be not unequally yoked with unbelievers — we are a temple of the living God; without were fightings, within were fears, but God comforted us by the coming of Titus; godly sorrow worketh repentance unto salvation; the churches of Macedonia in their deep poverty; though he was rich, yet for your sakes he became poor; he that gathered much had nothing over; Titus and the brethren sent with the bounty; he that soweth bountifully shall reap also bountifully; God loveth a cheerful giver; thanks be to God for his unspeakable gift.",
+   "prefixes": [
+    "2CO-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "My Grace Is Sufficient for Thee",
+   "range": "2 Corinthians 10–13",
+   "blurb": "I Paul myself entreat you by the meekness and gentleness of Christ; the weapons of our warfare, mighty to the casting down of strongholds; his letters, they say, are weighty and strong; the measure of the province; I espoused you to one husband; are they Hebrews? so am I — in labors more abundantly, in prisons, thrice shipwrecked, in perils of rivers, of robbers, in the city, in the wilderness, in the sea; let down in a basket by the wall at Damascus; caught up even to the third heaven; a thorn in the flesh; my grace is sufficient for thee, for my power is made perfect in weakness; when I am weak, then am I strong; the grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Spirit, be with you all.",
+   "prefixes": [
+    "2CO-C03-"
+   ]
+  }
+ ]
+}
