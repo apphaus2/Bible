@@ -61,7 +61,7 @@ SEGS = [
     D(lp("3:1-2"), lambda w, h: A.oracles(w, h, 1301), "#3A2A22", head="The Oracles of God", sky=3, art_h=190),
     F([lt("3:3"), lt("3:4", to="as it is written,"), sg("3:4", frm="That thou mightest")], PAUL),
     D(lp("3:5-8"), st("st4", 1305), "#3A2418", art_h=260),
-    D([lt("3:9"), lt("3:10", to="as it is written,"), sg("3:10", frm="There is none righteous")], lambda w, h: A.under_sin(w, h), "#0B1A2E", art_h=190,
+    D([K.lj("3:9", ("3:10", None, "as it is written,")), sg("3:10", frm="There is none righteous")], lambda w, h: A.under_sin(w, h), "#0B1A2E", art_h=190,
       head="None Righteous"),
     D([sg("3:11"), sg("3:12")], lambda w, h: A.dark_road(w, h, 1311), "#05050E"),
     D([sg("3:13"), sg("3:14")], lambda w, h: A.open_tomb("ot1", w, h, 1313), "#0B0B2A"),
