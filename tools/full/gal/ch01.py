@@ -29,7 +29,7 @@ def title_page(n):
     return title(1, "Not from Men", "Galatians 1–3", svg, "#3A2418", v("2:20", to="Christ liveth in me"))
 
 
-def art(fn, *a, **k): return lambda w, h: fn(*a[:1], w, h, *a[1:], **k) if a and isinstance(a[0], str) else fn(w, h, *a, **k)
+from gal.art import art
 
 SEGS = [
     # Galatians 1 — the letter, and the gospel not after man

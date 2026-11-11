@@ -11,8 +11,16 @@ from gal import G
 CODE = "GAL"
 K = EpistleKit(G, CODE, "Galatians", credit="Galatians · Volume Forty-Eight")
 lt, lts, ltj, lp, lj, sg, sgs, gd, gds, sy, wq, qw = K.lt, K.lts, K.ltj, K.lp, K.lj, K.sg, K.sgs, K.gd, K.gds, K.sy, K.wq, K.qw
-D, F, glory, title = K.D, K.F, K.glory, K.title
+D, glory, title = K.D, K.glory, K.title
 v, sp = G.v, G.span
+
+def F(lines, tok, bg=GOLD_BG, **k):
+    """The words beside Paul's face (K.F), the panel only as tall as its words need at 16 px (at least 240 px), so that a
+    face beside a few lines does not swallow the page: the drawing on the page takes the rest (pass h= to set it)."""
+    import speech
+    from oba.minor import _flat
+    if "h" not in k: k["h"] = max(240, int(speech._height(_flat(lines), 408, 16) + 80))
+    return K.F(lines, tok, bg=bg, **k)
 
 # ---- the others the letter names (faces) ----------------------------------------------------------------------------------
 from ntcast import PETER, JOHN                                                             # Cephas and John, as ntcast draws them

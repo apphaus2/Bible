@@ -26,7 +26,12 @@ from mat.art import veil as _veil, temple, houses, star_of, night
 from mat.art11 import golgotha
 from ntcast import PETER, JOHN, PAUL as PAUL_FACE
 import exodus4 as E4, exodus5 as V
-from gal.common import TITUS_LOOK, BARNABAS, JAMES_LORD
+from gal.common import TITUS_LOOK, BARNABAS, JAMES_LORD, HAGAR, SARAH
+from oba.minor import grain
+from mat.art5 import leaven
+from ecc.art import race
+from jer.art10 import yoke_off
+from jhn.art2 import reaping
 
 GOLD, CY = "#FFD23F", "#8FD0E2"
 
@@ -66,6 +71,17 @@ def boy(p, x, y, s, cloth="#C8A060", hair="#2A1A10", flip=False, up=None, extra=
 WHO.update({"titus": titus, "barnabas_r": barnabas_r, "cephas": cephas, "john_r": john_r, "james_r": james_r})
 
 def _defs(p): return mk.defs(p, *ALL, "ManUp", "WomanUp")
+
+def art(fn, *a, **k):
+    """A panel's drawing as fn(w, h): fn(p, w, h, seed, ...) when the first argument is a prefix string, else fn(w, h, ...);
+    clipped to its own w × h so a glow or a ray never spills up behind the words."""
+    import zlib
+    def draw(w, h):
+        svg = fn(*a[:1], w, h, *a[1:], **k) if a and isinstance(a[0], str) else fn(w, h, *a, **k)
+        uid = f"gc{zlib.crc32(repr((fn.__name__, a, sorted(k.items()), round(w), round(h))).encode()) % 10 ** 8}"
+        return (f'<defs><clipPath id="{uid}"><rect x="0" y="0" width="{f(w)}" height="{f(h)}"></rect></clipPath></defs>'
+                f'<g clip-path="url(#{uid})">{svg}</g>')
+    return draw
 
 def light_fig(p, x, y, s, flip=False, up=None):
     """An angel: a figure of white light with a gold rim, no face, no wings (the text gives none), a soft light about it."""
@@ -496,4 +512,395 @@ def far_crosses(w, h, seed):
         x = hx + dx * w; base = h * 0.56 + abs(dx) * h * 0.06; ch = 110 * k * tall
         o.append(f'<path d="M{f(x)} {f(base)} L {f(x)} {f(base - ch)} M{f(x - 26 * k)} {f(base - ch * 0.78)} L {f(x + 26 * k)} {f(base - ch * 0.78)}" stroke="#0D0D0F" stroke-width="{f(5 * k + 1)}"></path>')
     o.append(ground(w, h, h * 0.84, "#141014", dy=0))
+    return "".join(o)
+
+# ---- Galatians 4 ----------------------------------------------------------------------------------------------------------
+def hall(w, h, b, seed):
+    """The hall of a great house: a painted wall with a red dado, two columns, a doorway onto the court, a tiled floor."""
+    o = [bgr(w, h, "#E8D8B8"), f'<rect x="-10" y="{f(b - h * 0.32)}" width="{f(w + 20)}" height="{f(h * 0.32)}" fill="#9A3A2A"></rect>',
+         f'<path d="M-10 {f(b - h * 0.32)} L {f(w + 10)} {f(b - h * 0.32)}" stroke="{INK}" stroke-width="2"></path>',
+         f'<rect x="-10" y="{f(h * 0.05)}" width="{f(w + 20)}" height="{f(h * 0.05)}" fill="#C8A060" stroke="{INK}" stroke-width="2"></rect>']
+    for x in (0.08, 0.92):
+        cw = w * 0.045
+        o.append(f'<rect x="{f(w * x - cw / 2)}" y="{f(h * 0.1)}" width="{f(cw)}" height="{f(b - h * 0.1)}" fill="#F3EFE6" stroke="{INK}" stroke-width="2"></rect>'
+                 f'<rect x="{f(w * x - cw * 0.75)}" y="{f(h * 0.1)}" width="{f(cw * 1.5)}" height="{f(h * 0.03)}" fill="#E8DCC0" stroke="{INK}" stroke-width="1.6"></rect>')
+    o.append(f'<rect x="{f(w * 0.44)}" y="{f(h * 0.2)}" width="{f(w * 0.12)}" height="{f(b - h * 0.2)}" fill="#8FD0E2" stroke="{INK}" stroke-width="2.4"></rect>'
+             f'<rect x="{f(w * 0.44)}" y="{f(b - h * 0.16)}" width="{f(w * 0.12)}" height="{f(h * 0.16)}" fill="#C8B898"></rect>')
+    o.append(f'<rect x="-10" y="{f(b)}" width="{f(w + 20)}" height="{f(h)}" fill="#B8A07A" stroke="{INK}" stroke-width="2"></rect>'
+             + "".join(f'<path d="M{f(x)} {f(b)} L {f(x - 20)} {f(h + 10)}" stroke="#9A8460" stroke-width="1.2"></path>' for x in range(0, int(w) + 40, 40)))
+    return "".join(o)
+
+def heir_child(p, w, h, seed):
+    """So long as the heir is a child, he differeth nothing from a bondservant, but is under guardians and stewards: in the
+    hall of his father's house, the boy heir in a white tunic with a purple border, a guardian's hand on his shoulder, the
+    steward with his tablet and keys, and a bondservant going by with a water-jar."""
+    b = h * 0.92
+    o = [_defs(p), hall(w, h, b, seed)]
+    s = fit(b, max(h * 0.18, b - 230))
+    keys = '<path d="M14 -100 L 14 -84 M10 -84 L 18 -84 M12 -92 L 18 -92" stroke="#C8963E" stroke-width="2.4"></path><circle cx="14" cy="-104" r="4" fill="none" stroke="#C8963E" stroke-width="2"></circle>'
+    tablet = '<rect x="-74" y="-170" width="26" height="20" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.4"></rect><rect x="-71" y="-167" width="20" height="14" fill="#C8A060"></rect>'
+    bx = w * 0.46
+    o.append(robed(p, bx - 120 * s, b, s, "#5A6A7A", head="#2A3A4A", cord="#C8963E", beard="#2A1A10", mantle="#3A4A5A", flip=True, up=[(-22, -158), (-48, -164), (-60, -160)], extra=tablet + keys))
+    border = '<path d="M-30 -2 L 30 -2" stroke="#6A1A6A" stroke-width="5"></path>'
+    o.append(boy(p, bx, b, s * 0.62, cloth="#F3EFE6", hair="#3A2214", extra=border))
+    o.append(robed(p, bx + 92 * s, b, s, "#3A3A5A", head="#E8E2D6", cord="#3A2A1A", beard="#B8B2A6", mantle="#2A2A44", up=[(-22, -158), (-50, -136), (-76, -106)]))
+    jar = '<path d="M28 -214 C 16 -214 12 -190 22 -182 L 34 -182 C 44 -190 40 -214 28 -214 Z" fill="#B8603A" stroke="#0D0D0F" stroke-width="1.6"></path>'
+    o.append(robed(p, w * 0.84, b, s * 0.94, "#8A7A5A", hair="#1A1210", belt="#4A3A2A", up=[(22, -158), (30, -184), (28, -198)], extra=jar))
+    o.append("".join(plate_label(x, h * 0.05 + 12, t, "#12113A", 9, halo_="#F3EFE6") for x, t in
+                     ((bx - 120 * s, "A STEWARD"), (bx, "THE HEIR"), (bx + 92 * s, "A GUARDIAN"), (w * 0.84, "A BONDSERVANT"))))
+    return "".join(o)
+
+def fulness_star(p, w, h, seed):
+    """When the fulness of the time came, God sent forth his Son, born of a woman: Bethlehem asleep on its hill under the
+    stars, one star standing over a house, its light falling straight down on the roof (no one drawn)."""
+    o = [night(w, h, seed, n=80, top="#05051A", bot="#2A2050"), hills(w, h, h * 0.62, seed, color="#1E1838", amp=14, step=80)]
+    o.append(f'<path d="M{f(w * 0.2)} {f(h * 0.7)} C {f(w * 0.36)} {f(h * 0.5)} {f(w * 0.7)} {f(h * 0.48)} {f(w * 0.86)} {f(h * 0.7)} Z" fill="#2A2440" stroke="{INK}" stroke-width="2"></path>')
+    hx = w * 0.56
+    o.append(f'<path d="M{f(hx - w * 0.03)} {f(h * 0.18)} L {f(hx + w * 0.03)} {f(h * 0.18)} L {f(hx + w * 0.05)} {f(h * 0.6)} L {f(hx - w * 0.05)} {f(h * 0.6)} Z" fill="#FFF4C2" opacity="0.22"></path>')
+    o.append(houses(w, h, h * 0.66, seed, x0=w * 0.3, x1=w * 0.78, hmin=0.08, hmax=0.14, lit=True))
+    o.append(star_of(hx, h * 0.16, max(10, h * 0.05), uid=f"{p}st"))
+    o.append(ground(w, h, h * 0.8, "#141024", dy=0))
+    return "".join(o)
+
+def _moon(x, y, r, phase, lit="#F3EFE6", dark="#1E3A5A"):
+    """A moon of the given phase (0 new … 0.5 full … 1 new): a disc and its lit part."""
+    o = f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(r)}" fill="{dark}" stroke="{CY}" stroke-width="1"></circle>'
+    if phase in (0, 1): return o
+    k = math.cos(phase * 2 * math.pi)                 # 1 new … -1 full
+    right = phase < 0.5
+    sweep = 1 if right else 0
+    rx = abs(k) * r
+    inner = 0 if (k > 0) == right else 1
+    d = f"M{f(x)} {f(y - r)} A {f(r)} {f(r)} 0 0 {sweep} {f(x)} {f(y + r)} A {f(rx)} {f(r)} 0 0 {inner if right else 1 - inner} {f(x)} {f(y - r)} Z"
+    return o + f'<path d="{d}" fill="{lit}"></path>'
+
+def seasons(w, h):
+    """Ye observe days, and months, and seasons, and years: a plate — the sun in the middle, the ring of the twelve new
+    moons and their phases about it, the four seasons as quarters of the year, the round of the days marked on the rim."""
+    o = [plate_bg(w, h, "GALATIANS 4:9–10 · THE WEAK AND BEGGARLY RUDIMENTS")]
+    cx, cy = w * 0.5, h * 0.56
+    R = min(w * 0.3, (h - 60) * 0.42)
+    cols = ("#5E8F26", "#E8B830", "#C8682E", "#5A7A9A")
+    for i, c in enumerate(cols):
+        a0, a1 = math.radians(-90 + 90 * i), math.radians(-90 + 90 * (i + 1))
+        x0, y0, x1, y1 = cx + R * 1.1 * math.cos(a0), cy + R * 1.1 * math.sin(a0), cx + R * 1.1 * math.cos(a1), cy + R * 1.1 * math.sin(a1)
+        o.append(f'<path d="M{f(cx)} {f(cy)} L {f(x0)} {f(y0)} A {f(R * 1.1)} {f(R * 1.1)} 0 0 1 {f(x1)} {f(y1)} Z" fill="{c}" opacity="0.28" stroke="{c}" stroke-width="1.4"></path>')
+    for i in range(60):
+        a = math.radians(-90 + 6 * i)
+        o.append(f'<path d="M{f(cx + R * 1.1 * math.cos(a))} {f(cy + R * 1.1 * math.sin(a))} L {f(cx + R * (1.16 if i % 5 == 0 else 1.13) * math.cos(a))} {f(cy + R * (1.16 if i % 5 == 0 else 1.13) * math.sin(a))}" stroke="{CY}" stroke-width="1.2"></path>')
+    for i in range(12):
+        a = math.radians(-90 + 30 * i + 15)
+        o.append(_moon(cx + R * 0.78 * math.cos(a), cy + R * 0.78 * math.sin(a), R * 0.1, (i + 0.5) / 12))
+    o.append(halo(cx, cy, R * 0.4, "#FFE680", 0.5) + f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R * 0.22)}" fill="{GOLD}" stroke="{INK}" stroke-width="1.6"></circle>'
+             + rays(cx, cy, 16, R * 0.26, R * 0.4, GOLD, 0.6, 2))
+    lx = cx + R * 1.3
+    o.append(tag(cx + R * 1.12, cy - R * 0.2, "DAYS", w * 0.86, cy - R * 0.8, color=CY) + tag(cx + R * 0.78 * math.cos(math.radians(-45)), cy + R * 0.78 * math.sin(math.radians(-45)), "MONTHS", w * 0.86, cy - R * 0.3, color=CY)
+             + tag(cx - R * 0.9, cy + R * 0.4, "SEASONS", w * 0.14, cy + R * 0.7, color=CY) + tag(cx - R * 1.1, cy - R * 0.1, "YEARS", w * 0.14, cy - R * 0.6, color=CY))
+    return "".join(o)
+
+def welcomed(p, w, h, seed):
+    """Ye received me as an angel of God, even as Christ Jesus: the gate of a town of Galatia, Paul come in weak, leaning on
+    his staff (his infirmity is told only in the words), the Galatians coming out to take him in — a man's arm held out, a
+    woman bringing a cup."""
+    bg, b = _gate(w, h, seed)
+    o = [_defs(p), bg]
+    s = fit(b, max(h * 0.18, b - 230))
+    staff = '<path d="M-52 -176 L -46 4" stroke="#5A3A22" stroke-width="5" stroke-linecap="round"></path>'
+    o.append(paul_fig(p, w * 0.16, b, s, up=[(-22, -158), (-38, -124), (-48, -96)], extra=staff))
+    o.append(gentile(p, w * 0.32, b, s, 0, up=[(-22, -158), (-48, -146), (-72, -140)]))
+    cup = '<path d="M-60 -150 L -48 -150 L -50 -138 L -58 -138 Z" fill="#C8963E" stroke="#0D0D0F" stroke-width="1.4"></path>'
+    o.append(robed(p, w * 0.44, b, s * 0.94, "#5A7A7A", woman=True, veil="#1F3A3A", up=[(-22, -158), (-44, -152), (-56, -148)], extra=cup))
+    o.append(gentile(p, w * 0.56, b, s * 0.98, 1) + gentile(p, w * 0.66, b, s * 0.94, 0, woman=True) + gentile(p, w * 0.76, b, s * 0.97, 2))
+    return "".join(o)
+
+def two_sons(p, w, h, seed):
+    """Abraham had two sons, one by the handmaid, and one by the freewoman: before Abraham's tents, Hagar (cerulean, a
+    cerulean veil) with Ishmael, a lad, at the left; Sarah (her mulberry veil, grey hair) with the little boy Isaac at the
+    right; the tents between them."""
+    b = h * 0.92
+    o = [_defs(p), sky(w, h, "#8FD0E2", "#F3E8C8"), hills(w, h, h * 0.5, seed, color="#B8A07A", amp=12, step=90), ground(w, h, h * 0.58, "#C8A06A", dy=0)]
+    o.append(black_tent(w * 0.5, h * 0.62, w * 0.26, h * 0.2) + black_tent(w * 0.74, h * 0.6, w * 0.16, h * 0.13, lit=False))
+    s = fit(b, max(h * 0.18, b - 230))
+    o.append(hagar_r(p, w * 0.14, b, s, flip=True) + boy(p, w * 0.14 + 54 * s, b, s * 0.72, cloth="#8A6A3A", hair="#0D0D0F", flip=True))
+    o.append(sarah_r(p, w * 0.86, b, s) + boy(p, w * 0.86 - 48 * s, b, s * 0.5, cloth="#E8DCC0", hair="#5A3A22"))
+    o.append(plate_label(w * 0.17, h * 0.08, "THE HANDMAID · HAGAR · ISHMAEL", "#12113A", 9, halo_="#F3EFE6")
+             + plate_label(w * 0.82, h * 0.08, "THE FREEWOMAN · SARAH · ISAAC", "#12113A", 9, halo_="#F3EFE6"))
+    return "".join(o)
+
+def _portrait(tok, x, y, wd, hh, uid, light="#FFE680", ground_=("#3A2A3A", "#8A5A4A"), flip=False):
+    """A shaded profile face set in a framed square (a portrait inset on a plate)."""
+    s = min(wd / 300, (hh + 10) / 380)
+    fx = x + wd - (300 * s - 40 * s) if flip else x - 40 * s
+    return (f'<defs><clipPath id="{uid}c"><rect x="{f(x)}" y="{f(y)}" width="{f(wd)}" height="{f(hh)}"></rect></clipPath>'
+            f'<radialGradient id="{uid}g" cx="0.7" cy="0.3" r="0.9"><stop offset="0" stop-color="{light}"></stop><stop offset="0.45" stop-color="{ground_[1]}"></stop>'
+            f'<stop offset="1" stop-color="{ground_[0]}"></stop></radialGradient></defs>'
+            f'<g clip-path="url(#{uid}c)"><rect x="{f(x)}" y="{f(y)}" width="{f(wd)}" height="{f(hh)}" fill="url(#{uid}g)"></rect>'
+            + mk.face(tok, f(fx + (300 * s if flip else 0)), f(y + hh - 380 * s + 6), round(s, 3), flip=flip) + '</g>'
+            f'<rect x="{f(x)}" y="{f(y)}" width="{f(wd)}" height="{f(hh)}" fill="none" stroke="{INK}" stroke-width="3"></rect>')
+
+def sinai_bondage(w, h, seed):
+    """One from mount Sinai, bearing children unto bondage, which is Hagar; she answereth to the Jerusalem that now is: at
+    the left Hagar's face in a framed portrait; mount Sinai in Arabia under a dark, stormy sky; at its foot the walls of the
+    Jerusalem that now is, dark, a chain across the gate."""
+    o = [sky(w, h, "#1A1424", "#6A2A2A"), clouds(w, h * 0.12, seed, n=5, color="#2A2030", op=0.85, h=h)]
+    o.append(E4.sinai(w * 0.62, h * 0.86, w * 0.56, h * 0.62, seed, fire=False))
+    o.append(ground(w, h, h * 0.84, "#3A2A2A", dy=0))
+    o.append(walls(w * 0.74, w * 0.98, h * 0.9, h * 0.14, seed, color="#6A5A5A", towers=2))
+    pw = min(w * 0.3, h * 0.7)
+    o.append(_portrait(HAGAR, w * 0.03, h * 0.12, pw, h * 0.8, f"hp{seed}", light="#9FB8D8", ground_=("#14202E", "#2A4A6A")))
+    o.append(plate_label(w * 0.03 + pw / 2, h * 0.08, "HAGAR · THE HANDMAID", "#9FD0FF", 10, halo_="#1A1424")
+             + plate_label(w * 0.62, h * 0.08, "MOUNT SINAI IN ARABIA", "#FFB89A", 10, halo_="#1A1424")
+             + plate_label(w * 0.86, h * 0.64, "THE JERUSALEM THAT NOW IS", "#FFB89A", 9, halo_="#1A1424"))
+    return "".join(o)
+
+def jerusalem_above(w, h, seed):
+    """The Jerusalem that is above is free, which is our mother: a city of light above the clouds in a sky of gold and
+    white (walls, gates and towers of light — no one drawn, God not drawn); at the right Sarah's face in a framed portrait
+    (Rejoice, thou barren)."""
+    o = [sky(w, h, "#3A2A6A", "#FFE6A0"), halo(w * 0.4, h * 0.42, max(w, h) * 0.5, "#FFFFFF", 0.6), rays(w * 0.4, h * 0.42, 30, h * 0.1, max(w, h), "#FFF4C2", 0.25, 4)]
+    cx, cb, cw = w * 0.4, h * 0.6, w * 0.5
+    o.append(walls(cx - cw / 2, cx + cw / 2, cb, h * 0.26, seed, color="#FFF4D8", towers=4).replace('fill="#FFC14D"', 'fill="#FFFFFF"'))
+    o.append(halo(cx, cb - h * 0.12, cw * 0.5, "#FFFFFF", 0.55) + clouds(w, h * 0.62, seed, n=7, color="#FFFDF4", op=0.95, h=h))
+    o.append(f'<rect x="-10" y="{f(h * 0.72)}" width="{f(w + 20)}" height="{f(h)}" fill="#FFF8E6" opacity="0.9"></rect>')
+    pw = min(w * 0.3, h * 0.7)
+    o.append(_portrait(SARAH, w * 0.97 - pw, h * 0.12, pw, h * 0.8, f"sp{seed}", light="#FFFFFF", ground_=("#8A5A4A", "#E8C08A"), flip=True))
+    o.append(plate_label(w * 0.97 - pw / 2, h * 0.08, "SARAH · THE FREEWOMAN", "#7A3A2A", 10, halo_="#FFF8E6")
+             + plate_label(w * 0.4, h * 0.08, "THE JERUSALEM THAT IS ABOVE", "#7A3A2A", 10, halo_="#FFF8E6"))
+    return "".join(o)
+
+# ---- Galatians 5 ----------------------------------------------------------------------------------------------------------
+def dark_street(w, h, seed):
+    """The works of the flesh: a street of a city at night, every door shut and every window dark, a cup overturned and a
+    broken jar on the paving, a torch gone out in its bracket — no one in it."""
+    b = h * 0.94
+    o = [sky(w, h, "#05050E", "#1E1430"), mk.stars(24, w, h * 0.3, seed), houses(w, h, h * 0.66, seed, hmin=0.3, hmax=0.46, shut=True, color=("#4A4250", "#3E3848", "#544C5A", "#463E4E")),
+         pavement(w, h, h * 0.66, color="#2E2834", line="#3E3644")]
+    jx, jy = w * 0.36, h * 0.86
+    o.append(f'<path d="M{f(jx - 24)} {f(jy)} C {f(jx - 30)} {f(jy - 30)} {f(jx - 10)} {f(jy - 40)} {f(jx + 4)} {f(jy - 30)} L {f(jx)} {f(jy - 14)} L {f(jx + 10)} {f(jy)} Z" fill="#5A3A2E" stroke="{INK}" stroke-width="1.8"></path>'
+             f'<path d="M{f(jx + 26)} {f(jy + 2)} L {f(jx + 40)} {f(jy - 10)} L {f(jx + 48)} {f(jy + 4)} Z" fill="#5A3A2E" stroke="{INK}" stroke-width="1.6"></path>')
+    cx_, cy_ = w * 0.62, h * 0.9
+    o.append(f'<path d="M{f(cx_ - 14)} {f(cy_)} L {f(cx_ + 12)} {f(cy_ - 6)} L {f(cx_ + 14)} {f(cy_ + 4)} L {f(cx_ - 12)} {f(cy_ + 8)} Z" fill="#8A6A2A" stroke="{INK}" stroke-width="1.4"></path>'
+             f'<path d="M{f(cx_ + 14)} {f(cy_ + 2)} C {f(cx_ + 40)} {f(cy_ + 4)} {f(cx_ + 60)} {f(cy_ + 10)} {f(cx_ + 80)} {f(cy_ + 6)}" stroke="#3A1A2A" stroke-width="6" opacity="0.7" fill="none"></path>')
+    tx = w * 0.84
+    o.append(f'<rect x="{f(tx - 3)}" y="{f(h * 0.4)}" width="6" height="{f(h * 0.1)}" fill="#2A2228" stroke="{INK}" stroke-width="1.4"></rect>'
+             f'<path d="M{f(tx - 8)} {f(h * 0.4)} L {f(tx + 8)} {f(h * 0.4)} L {f(tx + 5)} {f(h * 0.35)} L {f(tx - 5)} {f(h * 0.35)} Z" fill="#1A1414" stroke="{INK}" stroke-width="1.4"></path>'
+             + smoke(tx, h * 0.33, 3, seed, color="#4A4048", op=0.4))
+    return "".join(o)
+
+FRUITS = ("LOVE", "JOY", "PEACE", "LONGSUFFERING", "KINDNESS", "GOODNESS", "FAITHFULNESS", "MEEKNESS", "SELF-CONTROL")
+
+def fruit_tree(w, h, seed=1, title=True):
+    """The fruit of the Spirit: a botanical plate on cream paper — one tree, its trunk and boughs, its leaves, and nine
+    fruits hanging in it, each drawn and named with a leader line to the margin (love, joy, peace, longsuffering, kindness,
+    goodness, faithfulness, meekness, self-control); the ground and its roots below."""
+    r = random.Random(seed)
+    o = [bgr(w, h, "#F3EAD0"), f'<rect x="8" y="8" width="{f(w - 16)}" height="{f(h - 16)}" fill="none" stroke="#7A5A3A" stroke-width="1.4"></rect>']
+    if title:
+        o.append(f'<rect x="8" y="8" width="{f(w - 16)}" height="24" fill="#3A5A2A"></rect>' + label(20, 25, "GALATIANS 5:22–23 · THE FRUIT OF THE SPIRIT · ONE TREE, NINE FRUITS", "#F3EAD0", 10, "start"))
+    top = 40 if title else 14
+    cx, gy = w * 0.5, h - 26
+    ch = gy - top
+    k = ch / 300
+    # roots and ground
+    o.append(f'<path d="M{f(cx - w * 0.3)} {f(gy)} L {f(cx + w * 0.3)} {f(gy)}" stroke="#7A5A3A" stroke-width="2"></path>'
+             + "".join(f'<path d="M{f(cx + dx * k)} {f(gy)} C {f(cx + dx * 1.4 * k)} {f(gy + 8)} {f(cx + dx * 2 * k)} {f(gy + 12)} {f(cx + dx * 2.6 * k)} {f(gy + 14)}" stroke="#7A5A3A" stroke-width="1.6" fill="none"></path>' for dx in (-20, -8, 8, 20)))
+    # trunk and boughs
+    o.append(f'<path d="M{f(cx - 14 * k)} {f(gy)} C {f(cx - 12 * k)} {f(gy - 60 * k)} {f(cx - 10 * k)} {f(gy - 100 * k)} {f(cx - 8 * k)} {f(gy - 120 * k)} '
+             f'L {f(cx + 8 * k)} {f(gy - 120 * k)} C {f(cx + 10 * k)} {f(gy - 100 * k)} {f(cx + 12 * k)} {f(gy - 60 * k)} {f(cx + 16 * k)} {f(gy)} Z" fill="#6A4A2A" stroke="{INK}" stroke-width="2"></path>')
+    for dx, dy in ((-80, -190), (-50, -230), (0, -250), (50, -230), (80, -190), (-100, -150), (100, -150)):
+        o.append(f'<path d="M{f(cx)} {f(gy - 116 * k)} C {f(cx + dx * 0.3 * k)} {f(gy - 150 * k)} {f(cx + dx * 0.7 * k)} {f(gy + dy * 0.85 * k)} {f(cx + dx * k)} {f(gy + dy * k)}" stroke="#6A4A2A" stroke-width="{f(5 * k)}" fill="none" stroke-linecap="round"></path>')
+    # canopy of leaves
+    cy = gy - 200 * k
+    for _ in range(46):
+        a = r.uniform(0, 2 * math.pi); rr = r.uniform(0.2, 1.0)
+        lx, ly = cx + math.cos(a) * rr * 130 * k, cy + math.sin(a) * rr * 80 * k
+        o.append(f'<ellipse cx="{f(lx)}" cy="{f(ly)}" rx="{f(16 * k)}" ry="{f(8 * k)}" transform="rotate({r.randint(-60, 60)} {f(lx)} {f(ly)})" fill="{r.choice(("#3F8A44", "#2E6B3A", "#5E8F26", "#4E7A3A"))}" stroke="#1E3A1E" stroke-width="1"></ellipse>')
+    # nine fruits, labelled to the margins
+    # fruits 1–5 down the left of the crown, 6–9 down the right, so the leader lines run out to the margins uncrossed
+    spots = [(-40, -78), (-96, -50), (-118, -10), (-84, 30), (-34, 50), (40, -74), (98, -44), (114, 0), (64, 40)]
+    colors = ("#D7261E", "#FFB020", "#7AB8E0", "#8A3A8A", "#E8682E", "#C8963E", "#B8202E", "#E8C8A0", "#5E8F26")
+    fr = max(6, 11 * k)
+    lab_w = 150                                                       # room for the longest name at 11 px
+    for i, ((dx, dy), c) in enumerate(zip(spots, colors)):
+        fx, fy = cx + dx * k, cy + dy * k
+        o.append(f'<path d="M{f(fx)} {f(fy - fr)} l 0 {f(-5 * k)}" stroke="#4A3A2A" stroke-width="1.6"></path>'
+                 f'<circle cx="{f(fx)}" cy="{f(fy)}" r="{f(fr)}" fill="{c}" stroke="{INK}" stroke-width="1.8"></circle>'
+                 f'<ellipse cx="{f(fx - fr * 0.35)}" cy="{f(fy - fr * 0.35)}" rx="{f(fr * 0.28)}" ry="{f(fr * 0.18)}" fill="#FFFFFF" opacity="0.55"></ellipse>')
+        left = i < 5
+        j, n = (i, 5) if left else (i - 5, 4)
+        ty = top + 24 + (gy - top - 70) * (j + 0.5) / n
+        ex = 22 + lab_w if left else w - 22 - lab_w
+        sx_ = fx + (-1 if left else 1) * (fr + 2)
+        o.append(f'<path d="M{f(sx_)} {f(fy)} L {f(ex + (14 if left else -14))} {f(ty)} L {f(ex + (4 if left else -4))} {f(ty)}" stroke="#7A5A3A" stroke-width="1.2" fill="none"></path>'
+                 f'<circle cx="{f(sx_)}" cy="{f(fy)}" r="2" fill="#7A5A3A"></circle>'
+                 + label(22 if left else w - 22, ty + 4, f"{i + 1} · {FRUITS[i]}", "#3A2A1A", 11, "start" if left else "end"))
+    return "".join(o)
+
+# ---- Galatians 6 ----------------------------------------------------------------------------------------------------------
+def burdens(p, w, h, seed):
+    """Bear ye one another's burdens: on the road, a heavy bundle slung from a pole carried on two men's shoulders; and one
+    lifting the sack from the back of a man sunk to his knees under it."""
+    bg, b = _road(w, h, seed)
+    o = [_defs(p), bg]
+    s = fit(b, max(h * 0.18, b - 230))
+    x1, x2 = w * 0.18, w * 0.42
+    py = b - 161 * s
+    o.append(robed(p, x1, b, s, "#6A5A4A", head="#3A3A3A", beard="#2A1A10", flip=True))
+    o.append(robed(p, x2, b, s, "#4A5A6A", head="#E8E2D6", beard="#6A645E"))
+    o.append(f'<path d="M{f(x1 - 10 * s)} {f(py)} L {f(x2 + 10 * s)} {f(py)}" stroke="#5A3A22" stroke-width="{f(7 * s)}" stroke-linecap="round"></path>'
+             f'<path d="M{f((x1 + x2) / 2 - 8 * s)} {f(py)} L {f((x1 + x2) / 2 - 14 * s)} {f(py + 30 * s)} M{f((x1 + x2) / 2 + 8 * s)} {f(py)} L {f((x1 + x2) / 2 + 14 * s)} {f(py + 30 * s)}" stroke="#8A6A3A" stroke-width="2.4"></path>'
+             f'<ellipse cx="{f((x1 + x2) / 2)}" cy="{f(py + 62 * s)}" rx="{f(46 * s)}" ry="{f(36 * s)}" fill="#B8986A" stroke="{INK}" stroke-width="2.4"></ellipse>'
+             f'<path d="M{f((x1 + x2) / 2 - 40 * s)} {f(py + 50 * s)} C {f((x1 + x2) / 2)} {f(py + 64 * s)} {f((x1 + x2) / 2 + 20 * s)} {f(py + 60 * s)} {f((x1 + x2) / 2 + 42 * s)} {f(py + 52 * s)}" stroke="#7A5A3A" stroke-width="2" fill="none"></path>')
+    # one helped up: kneeling under his sack, another lifting it from his back
+    kx = w * 0.7
+    o.append(E.kneel(kx, b, s * 0.92, color="#7A5A3A", skin=SKIN))
+    o.append(f'<ellipse cx="{f(kx - 4 * s)}" cy="{f(b - 128 * s)}" rx="{f(30 * s)}" ry="{f(22 * s)}" fill="#C8A878" stroke="{INK}" stroke-width="2.2"></ellipse>')
+    o.append(robed(p, kx + 58 * s, b, s, "#3A6A5A", hair="#2A1A10", beard="#2A1A10", up=[(-22, -158), (-46, -146), (-58, -136)]))
+    return "".join(o)
+
+def sow_two(p, w, h, seed):
+    """He that soweth unto his own flesh shall of the flesh reap corruption; he that soweth unto the Spirit shall of the
+    Spirit reap eternal life: a sower in the middle of the field casting seed; at the left the field gone to thistles and
+    blight under a grey sky, at the right the field green and golden under the light."""
+    b = h * 0.94
+    r = random.Random(seed)
+    o = [_defs(p), f'<defs><linearGradient id="{p}sk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4A4450"></stop><stop offset="0.45" stop-color="#8A8A90"></stop>'
+         f'<stop offset="0.55" stop-color="#8FD0E2"></stop><stop offset="1" stop-color="#FFF4C2"></stop></linearGradient></defs>',
+         f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#{p}sk)"></rect>', halo(w * 0.88, h * 0.16, h * 0.3, "#FFFFFF", 0.6),
+         hills(w, h, h * 0.42, seed, color="#8A8A70", amp=10, step=90), ground(w, h, h * 0.52, "#7A6A4A", dy=0),
+         f'<path d="M{f(w * 0.5)} {f(h * 0.52)} L {f(w + 10)} {f(h * 0.52)} L {f(w + 10)} {f(h + 10)} L {f(w * 0.5)} {f(h + 10)} Z" fill="#6A8A3A"></path>']
+    for _ in range(14):                                                # thistles and blighted stalks at the left
+        x, y = r.uniform(0, w * 0.42), r.uniform(h * 0.6, h * 0.98)
+        o.append(f'<path d="M{f(x)} {f(y)} l -8 -24 M{f(x)} {f(y)} l 2 -30 M{f(x)} {f(y)} l 10 -22" stroke="#4A4030" stroke-width="2.2"></path>'
+                 f'<circle cx="{f(x + 2)}" cy="{f(y - 32)}" r="4" fill="#6A4A6A" stroke="{INK}" stroke-width="1"></circle>')
+    o.append(grain(w * 0.58, w + 10, b, h * 0.3, seed, color="#E8C060"))
+    s = fit(b, max(h * 0.18, b - 230))
+    bag = '<path d="M14 -120 C 30 -116 34 -96 26 -84 C 16 -80 8 -90 10 -104 Z" fill="#C8A060" stroke="#0D0D0F" stroke-width="1.6"></path>'
+    o.append(robed(p, w * 0.5, b, s, "#7A5A30", head="#E8E2D6", cord="#5A3A22", beard="#3A2A1A", up=[(-22, -158), (-48, -168), (-72, -160)], extra=bag))
+    for _ in range(18):
+        a = r.uniform(-2.8, -0.4); d = r.uniform(20, 90) * s
+        o.append(f'<circle cx="{f(w * 0.5 - 72 * s + math.cos(a) * d)}" cy="{f(b - 160 * s - math.sin(a) * d * 0.4)}" r="1.8" fill="#E8D8A0"></circle>')
+    o.append(plate_label(w * 0.2, h * 0.1, "OF THE FLESH · CORRUPTION", "#F3EFE6", 10, halo_="#3A3440")
+             + plate_label(w * 0.8, h * 0.1, "OF THE SPIRIT · ETERNAL LIFE", "#5A3A1A", 10, halo_="#FFF8E6"))
+    return "".join(o)
+
+def large_letters(w, h, seed):
+    """See with how large letters I write unto you with mine own hand: close over the table, the sheet of the letter —
+    the scribe's even lines of small writing above, and below them the great strokes of Paul's own hand, still wet; his
+    hand with the reed pen at the last stroke, the inkpot and the lamp."""
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#5A341E"></rect>', lamp_glow(w * 0.86, h * 0.2, max(w, h) * 0.5, f"ll{seed}", op=0.5)]
+    sx, sy, sw, sh = w * 0.1, h * 0.08, w * 0.64, h * 0.86
+    o.append(f'<g transform="rotate(-2 {f(sx + sw / 2)} {f(sy + sh / 2)})"><rect x="{f(sx)}" y="{f(sy)}" width="{f(sw)}" height="{f(sh)}" fill="#EADBB4" stroke="{INK}" stroke-width="2.4"></rect>'
+             f'<path d="M{f(sx + sw * 0.33)} {f(sy)} L {f(sx + sw * 0.33)} {f(sy + sh)} M{f(sx + sw * 0.66)} {f(sy)} L {f(sx + sw * 0.66)} {f(sy + sh)}" stroke="#C8B488" stroke-width="1"></path>')
+    r = random.Random(seed)
+    for k in range(6):                                              # the scribe's small even lines
+        yy = sy + sh * (0.07 + k * 0.065); xx = sx + sw * 0.06
+        while xx < sx + sw * 0.92:
+            L = sw * r.uniform(0.04, 0.12)
+            o.append(f'<path d="M{f(xx)} {f(yy)} l {f(min(L, sx + sw * 0.94 - xx))} 0" stroke="#4A3020" stroke-width="{f(max(1.2, h / 220))}"></path>'); xx += L + sw * 0.02
+    ink = "#1A1008"
+    big = sh * 0.17
+    yy = sy + sh * 0.52
+    shapes = {                                                      # uncial letter-shapes, one stroke-path each
+        "LAMBDA": lambda x, y, B: f"M{f(x)} {f(y + B)} L {f(x + B * 0.4)} {f(y)} L {f(x + B * 0.8)} {f(y + B)}",
+        "PI": lambda x, y, B: f"M{f(x - B * 0.05)} {f(y)} L {f(x + B * 0.75)} {f(y)} M{f(x + B * 0.1)} {f(y)} L {f(x + B * 0.1)} {f(y + B)} M{f(x + B * 0.6)} {f(y)} L {f(x + B * 0.6)} {f(y + B)}",
+        "SIGMA": lambda x, y, B: f"M{f(x + B * 0.7)} {f(y + B * 0.15)} C {f(x + B * 0.5)} {f(y - B * 0.05)} {f(x)} {f(y)} {f(x)} {f(y + B * 0.5)} C {f(x)} {f(y + B)} {f(x + B * 0.5)} {f(y + B * 1.05)} {f(x + B * 0.7)} {f(y + B * 0.85)}",
+        "OMICRON": lambda x, y, B: f"M{f(x + B * 0.35)} {f(y)} C {f(x - B * 0.05)} {f(y)} {f(x - B * 0.05)} {f(y + B)} {f(x + B * 0.35)} {f(y + B)} C {f(x + B * 0.75)} {f(y + B)} {f(x + B * 0.75)} {f(y)} {f(x + B * 0.35)} {f(y)} Z",
+        "DELTA": lambda x, y, B: f"M{f(x)} {f(y + B)} L {f(x + B * 0.4)} {f(y)} L {f(x + B * 0.8)} {f(y + B)} Z",
+        "EPSILON": lambda x, y, B: f"M{f(x + B * 0.65)} {f(y + B * 0.1)} C {f(x + B * 0.3)} {f(y - B * 0.05)} {f(x)} {f(y + B * 0.2)} {f(x)} {f(y + B * 0.5)} C {f(x)} {f(y + B * 0.8)} {f(x + B * 0.3)} {f(y + B * 1.05)} {f(x + B * 0.65)} {f(y + B * 0.9)} M{f(x)} {f(y + B * 0.5)} L {f(x + B * 0.45)} {f(y + B * 0.5)}",
+        "TAU": lambda x, y, B: f"M{f(x - B * 0.05)} {f(y)} L {f(x + B * 0.75)} {f(y)} M{f(x + B * 0.35)} {f(y)} L {f(x + B * 0.35)} {f(y + B)}",
+        "OMEGA": lambda x, y, B: f"M{f(x)} {f(y + B * 0.2)} L {f(x + B * 0.12)} {f(y + B)} L {f(x + B * 0.4)} {f(y + B * 0.55)} L {f(x + B * 0.68)} {f(y + B)} L {f(x + B * 0.8)} {f(y + B * 0.2)}",
+    }
+    seq = ["DELTA", "EPSILON", "PI", "LAMBDA", "OMICRON", "SIGMA", "TAU", "OMICRON"]
+    for row in range(2):                                            # Paul's great strokes (letter-shapes, no words)
+        xx = sx + sw * 0.08
+        for j in range(5 if row == 0 else 3):
+            x0, y0 = xx, yy + row * big * 1.4
+            d = shapes[seq[(row * 5 + j) % len(seq)]](x0, y0, big)
+            o.append(f'<path d="{d}" stroke="{ink}" stroke-width="{f(max(3, big * 0.11))}" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>')
+            xx += big * 1.05
+    o.append('</g>')
+    hx, hy = sx + sw * 0.08 + big * 1.05 * 3 + big * 0.8, sy + sh * 0.52 + big * 1.4 + big * 0.2   # the hand at the last stroke
+    o.append(f'<path d="M{f(hx + 30)} {f(hy + 6)} C {f(hx + 80)} {f(hy + 20)} {f(hx + 140)} {f(hy + 40)} {f(w + 20)} {f(hy + 60)} L {f(w + 20)} {f(hy + 130)} C {f(hx + 140)} {f(hy + 110)} {f(hx + 80)} {f(hy + 80)} {f(hx + 34)} {f(hy + 50)} Z" '
+             f'fill="{ROBES["paul"]}" stroke="{INK}" stroke-width="2.4"></path>'
+             f'<path d="M{f(hx - 4)} {f(hy + 12)} C {f(hx - 6)} {f(hy - 2)} {f(hx + 8)} {f(hy - 10)} {f(hx + 24)} {f(hy - 6)} C {f(hx + 40)} {f(hy - 2)} {f(hx + 46)} {f(hy + 18)} {f(hx + 42)} {f(hy + 36)} '
+             f'C {f(hx + 38)} {f(hy + 50)} {f(hx + 20)} {f(hy + 54)} {f(hx + 8)} {f(hy + 46)} C {f(hx)} {f(hy + 40)} {f(hx - 4)} {f(hy + 26)} {f(hx - 4)} {f(hy + 12)} Z" fill="#C98E66" stroke="{INK}" stroke-width="2.2"></path>'
+             f'<path d="M{f(hx + 4)} {f(hy + 22)} C {f(hx + 10)} {f(hy + 26)} {f(hx + 14)} {f(hy + 34)} {f(hx + 12)} {f(hy + 42)} M{f(hx + 20)} {f(hy + 24)} C {f(hx + 26)} {f(hy + 30)} {f(hx + 28)} {f(hy + 38)} {f(hx + 26)} {f(hy + 48)} '
+             f'M{f(hx + 2)} {f(hy + 8)} C {f(hx + 10)} {f(hy + 2)} {f(hx + 18)} {f(hy + 4)} {f(hx + 22)} {f(hy + 12)}" fill="none" stroke="#7A4A2A" stroke-width="1.6"></path>'
+             + reed_pen(hx - 2, hy + 4, max(0.8, h / 300), rot=-34))
+    o.append(inkpot(w * 0.84, h * 0.7, max(1.0, h / 200)) + clay_lamp(w * 0.86, h * 0.36, max(1.0, h / 220)))
+    return "".join(o)
+
+def new_creation(w, h, seed):
+    """But a new creature: the sun rising over a sown field, the first green shoots standing up in the furrows."""
+    o = [sky(w, h, "#3A3A7A", "#FFC890"), halo(w * 0.62, h * 0.46, max(w, h) * 0.5, "#FFE6A0", 0.55),
+         f'<circle cx="{f(w * 0.62)}" cy="{f(h * 0.46)}" r="{f(max(14, h * 0.07))}" fill="#FFF4C2"></circle>',
+         rays(w * 0.62, h * 0.46, 24, h * 0.1, max(w, h), "#FFF4C2", 0.2, 3),
+         hills(w, h, h * 0.46, seed, color="#6A5A6A", amp=10, step=90), ground(w, h, h * 0.52, "#6A4A2E", dy=0), birds(4, w * 0.2, w * 0.5, h * 0.12, h * 0.3, seed)]
+    for i in range(9):                                         # the furrows in perspective
+        t = (i + 1) / 9
+        y = h * 0.52 + (h * 0.5) * t * t
+        o.append(f'<path d="M-10 {f(y)} L {f(w + 10)} {f(y)}" stroke="#4A3220" stroke-width="{f(1 + 3 * t)}"></path>')
+        n = int(8 + 10 * (1 - t))
+        for j in range(n):
+            x = w * (j + 0.5 * (i % 2)) / n; sz = 3 + 12 * t
+            o.append(f'<path d="M{f(x)} {f(y)} C {f(x - sz * 0.2)} {f(y - sz * 0.6)} {f(x - sz * 0.6)} {f(y - sz * 0.9)} {f(x - sz * 0.8)} {f(y - sz)} M{f(x)} {f(y)} C {f(x + sz * 0.2)} {f(y - sz * 0.7)} {f(x + sz * 0.6)} {f(y - sz)} {f(x + sz * 0.7)} {f(y - sz * 1.2)}" '
+                     f'stroke="#7AB84A" stroke-width="{f(1 + 1.4 * t)}" fill="none" stroke-linecap="round"></path>')
+    return "".join(o)
+
+def love_one_word(w, h):
+    """The whole law is fulfilled in one word: a plate — the two tables of the law at the left, their rows of writing
+    gathered by lines into one point, and at the right two neighbours, one giving the other bread at his door."""
+    o = [plate_bg(w, h, "GALATIANS 5:14 · THE WHOLE LAW · IN ONE WORD"), mk.defs("lw", *ALL)]
+    k = min(w / 620, (h - 44) / 230)
+    cy = h * 0.58
+    o.append(V.tables(w * 0.2, cy + 70 * k, min(0.6, 0.5 * k), uid="lwtb"))
+    for i in range(6):
+        yy = cy - 50 * k + i * 20 * k
+        o.append(f'<path d="M{f(w * 0.3)} {f(yy)} C {f(w * 0.4)} {f(yy)} {f(w * 0.44)} {f(cy)} {f(w * 0.52)} {f(cy)}" stroke="{GOLD}" stroke-width="1.4" fill="none" opacity="0.8"></path>')
+    o.append(halo(w * 0.53, cy, 26 * k, "#FFE680", 0.7) + f'<circle cx="{f(w * 0.53)}" cy="{f(cy)}" r="{f(8 * k)}" fill="{GOLD}" stroke="{INK}" stroke-width="1.4"></circle>')
+    base = h - 22; sc = (base - (h * 0.3)) / 205
+    loaf = '<ellipse cx="-62" cy="-150" rx="12" ry="7" fill="#163A56" stroke="#8FD0E2" stroke-width="2"></ellipse>'
+    o.append(mk.person("lw", round(w * 0.68), round(base), round(sc, 3), body="#1E4A6A", cloth="#163A56", kind="Robe", stroke=CY, sw=2.4, flip=True, up=[(-22, -158), (-46, -152), (-58, -150)], extra=loaf))
+    o.append(mk.person("lw", round(w * 0.82), round(base), round(sc, 3), body="#1E4A6A", cloth="#24506E", kind="Tunic", stroke=CY, sw=2.4, up=[(-22, -158), (-40, -152), (-50, -152)]))
+    o.append(label(w * 0.2, min(cy + 92 * k, h - 8), "THE LAW", CY, 9.5) + label(w * 0.75, 56, "LEVITICUS 19:18 · THE NEIGHBOR", GOLD, 9.5))
+    return "".join(o)
+
+def two_ways(p, w, h, seed):
+    """Walk by the Spirit, and ye shall not fulfil the lust of the flesh: a man walking on a road that parts in two — the
+    way at the left going down into the dark, the way at the right climbing into the light of the morning, his face set
+    toward the light."""
+    b = h * 0.94
+    o = [_defs(p), f'<defs><linearGradient id="{p}tw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14101E"></stop><stop offset="0.45" stop-color="#3A3048"></stop>'
+         f'<stop offset="0.6" stop-color="#C8B080"></stop><stop offset="1" stop-color="#FFF4C2"></stop></linearGradient></defs>',
+         f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="url(#{p}tw)"></rect>', mk.stars(20, w * 0.4, h * 0.4, seed),
+         halo(w * 0.86, h * 0.3, max(w, h) * 0.34, "#FFFFFF", 0.7), rays(w * 0.86, h * 0.3, 20, h * 0.06, max(w, h) * 0.5, "#FFF4C2", 0.3, 4),
+         f'<path d="M-10 {f(h * 0.6)} C {f(w * 0.3)} {f(h * 0.52)} {f(w * 0.6)} {f(h * 0.56)} {f(w + 10)} {f(h * 0.48)} L {f(w + 10)} {f(h + 10)} L -10 {f(h + 10)} Z" fill="#5A5048" stroke="{INK}" stroke-width="2"></path>',
+         f'<path d="M{f(w * 0.3)} {f(h + 10)} C {f(w * 0.34)} {f(h * 0.86)} {f(w * 0.4)} {f(h * 0.78)} {f(w * 0.46)} {f(h * 0.72)}" stroke="#D8C8A0" stroke-width="{f(max(16, h * 0.1))}" fill="none"></path>',
+         f'<path d="M{f(w * 0.46)} {f(h * 0.72)} C {f(w * 0.58)} {f(h * 0.64)} {f(w * 0.72)} {f(h * 0.52)} {f(w * 0.84)} {f(h * 0.46)}" stroke="#F3E8C8" stroke-width="{f(max(8, h * 0.05))}" fill="none"></path>',
+         f'<path d="M{f(w * 0.46)} {f(h * 0.72)} C {f(w * 0.36)} {f(h * 0.68)} {f(w * 0.22)} {f(h * 0.64)} {f(w * 0.06)} {f(h * 0.66)}" stroke="#4A4250" stroke-width="{f(max(8, h * 0.05))}" fill="none"></path>']
+    s = fit(b, max(h * 0.2, b - 230))
+    o.append(robed(p, w * 0.4, b, s, "#5A6A4A", head="#E8E2D6", cord="#3A2A1A", beard="#3A2A1A", flip=True))
+    o.append(plate_label(w * 0.16, h * 0.08, "THE LUST OF THE FLESH", "#C8C8E8", 10, halo_="#14101E")
+             + plate_label(w * 0.82, h * 0.08, "THE SPIRIT", "#7A4A2A", 10, halo_="#FFF8E6"))
+    return "".join(o)
+
+def yoke_broken(p, w, h, seed):
+    """For freedom did Christ set us free: the yoke of bondage broken — an ox-yoke snapped in the middle, its two halves and
+    its bows thrown down on the ground, the thongs burst, in a burst of morning light; a man standing upright beside it."""
+    b = h * 0.92
+    o = [_defs(p), sky(w, h, "#3A3A7A", "#FFE0A0"), halo(w * 0.5, h * 0.6, max(w, h) * 0.5, "#FFF4C2", 0.5), rays(w * 0.5, h * 0.62, 30, h * 0.1, max(w, h), "#FFF4C2", 0.28, 4),
+         hills(w, h, h * 0.62, seed, color="#8A7A6A", amp=10, step=90), ground(w, h, h * 0.7, "#9A8460", dy=0)]
+    k = min(w / 700, h / 260)
+    def half(x, y, rot, flip):
+        sx = -1 if flip else 1
+        return (f'<g transform="translate({f(x)} {f(y)}) rotate({rot}) scale({f(sx * k)} {f(k)})">'
+                '<path d="M0 -10 C 30 -16 60 -14 90 -22 C 110 -28 130 -26 150 -18 L 150 4 C 130 -4 110 -6 90 0 C 60 8 30 10 0 12 L -8 6 L 4 0 L -6 -6 Z" fill="#8A5A2A" stroke="#0D0D0F" stroke-width="3"></path>'
+                '<path d="M86 0 C 84 30 92 52 112 54 C 132 52 138 30 134 -2" fill="none" stroke="#0D0D0F" stroke-width="10"></path>'
+                '<path d="M86 0 C 84 30 92 52 112 54 C 132 52 138 30 134 -2" fill="none" stroke="#B8864A" stroke-width="6"></path>'
+                '<path d="M150 -6 C 166 -2 176 10 170 24 M150 0 C 160 8 162 20 156 30" fill="none" stroke="#5A3A1A" stroke-width="3"></path></g>')
+    o.append(half(w * 0.5 - 20 * k, b - 74 * k, -14, True) + half(w * 0.5 + 20 * k, b - 68 * k, 12, False))
+    o.append(f'<path d="M{f(w * 0.5 - 8 * k)} {f(b - 98 * k)} L {f(w * 0.5)} {f(b - 118 * k)} L {f(w * 0.5 + 6 * k)} {f(b - 96 * k)}" stroke="#FFF4C2" stroke-width="3" fill="none"></path>')
+    s_ = fit(b, max(h * 0.2, b - 230))
+    o.append(gentile(p, w * 0.86, b, s_, 0, flip=True))
     return "".join(o)

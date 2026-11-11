@@ -8,9 +8,9 @@ scriptures he quotes are song boxes (3:6, 3:10–13, 4:27, 4:30, 5:14); God's ow
 "In thee shall all the nations be blessed") is the Voice box. His words to Cephas at Antioch (2:14–21) stay letter boxes,
 since it is the letter that tells them, over the scene of Paul withstanding Peter before them all.
 
-Galatians is the sternest letter: Paul's face is PAUL_STERN (red light) at 1:6–9, 2:4–5, 3:1–3, 5:2–4, 5:10–12 and 6:12–13,
-earnest gold elsewhere, grieving blue at 4:11–20 (his infirmity among them and "my little children"), white with joy at
-2:20, 3:26–27 and 5:22–26.
+Galatians is the sternest letter: Paul's face is PAUL_STERN (red light) at 1:6–7, 2:3–5, 3:1–3, 5:2–6, 5:10–12 and 6:12–13,
+earnest gold elsewhere, grieving blue at 4:12–20 (his infirmity among them and "my little children"), white with joy at
+2:20–21, 4:6–7 and 5:24–26.
 
 Drawings (gal.art, on Acts' drawings and the epistle kit): Paul and the brethren with him in the study, the letter's road
 to the churches of Galatia (Antioch of Pisidia, Iconium, Lystra, Derbe) on Acts' map; an angel from heaven as a figure of
@@ -60,5 +60,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Not from Men", "range": "Galatians 1–3", "bible_chapters": [1, 2, 3],
      "blurb": "Paul, an apostle, not from men, neither through man, unto the churches of Galatia; I marvel that ye are so quickly removing unto a different gospel; let him be anathema; the gospel came to me through revelation of Jesus Christ — the persecutor called on the Damascus road, Arabia, fifteen days with Cephas; Titus not compelled; the right hands of fellowship; Cephas withstood to the face at Antioch; I have been crucified with Christ; O foolish Galatians; Abraham believed God; Christ redeemed us from the curse of the law; the law our tutor; ye all are one man in Christ Jesus."},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "The Fruit of the Spirit", "range": "Galatians 4–6", "bible_chapters": [4, 5, 6],
+     "blurb": "The heir as a child under guardians; when the fulness of the time came, God sent forth his Son; Abba, Father; no longer a bondservant, but a son; my little children, of whom I am again in travail; Hagar and Sarah, the two covenants, the Jerusalem that is above; for freedom did Christ set us free: stand fast; a little leaven; thou shalt love thy neighbor as thyself; walk by the Spirit; the works of the flesh and the fruit of the Spirit; bear ye one another's burdens; whatsoever a man soweth, that shall he also reap; see with how large letters I write unto you with mine own hand."},
   ],
 }
