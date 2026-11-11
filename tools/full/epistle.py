@@ -11,6 +11,7 @@ A letter has no narration. Every word of scripture on its pages is one of three 
     the Voice box. Jesus' words, where a letter quotes them (1 Cor 11:24–25), are ordinary speech balloons (`say`).
 
     K = EpistleKit(G, "ROM", "Romans", credit="Romans · Volume Forty-Five")
+    K = EpistleKit(G, "EPH", "Ephesians", credit=…, fit_faces=True, clip=True)   # the letter's defaults for F(fit=), D(clip=)
 
 Line builders (each a (kind, text) line cut from the ASV with G.v — never typed):
     K.lt(ref, frm=, to=, after=)   a letter box                 K.lts("1:8-10")  one letter box per verse
@@ -22,43 +23,65 @@ Line builders (each a (kind, text) line cut from the ASV with G.v — never type
     K.wq(ref, to, frm, kind="song") a verse in two boxes: the letter up to `to`, then the quotation from `frm` (song / god / say)
     K.qw(ref, to, frm, kind="song") the other way round: the quotation up to `to`, then the letter from `frm` ("…, even as it is written.")
 Panels (discourse segments; a page holds two to four, packed by K.pack):
-    K.F(lines, tok, bg=GOLD_BG, hi=18)  the words beside a face (tok: one of the faces below, or the letter's own cast), at
-                                    most hi px
+    K.F(lines, tok, bg=GOLD_BG, hi=18, fit=None, fit_min=240)  the words beside a face (tok: one of the faces below, or the
+                                    letter's own cast), at most hi px; fit=True (default: the kit's fit_faces, False) sizes
+                                    the panel to its words at 16 px (at least fit_min), the drawing on the page taking the rest
     K.D(lines, fn, bg, sky=n, art_h=130, size=15, h=)  the words over a drawing fn(w, h): the words at `size` px at most, the
                                     drawing at least art_h tall below them (give maps, plates and the study ~200–280);
-                                    sky=n (or (n, "left")) sets chapter n's stamp in a band between the words and the drawing
+                                    sky=n (or (n, "left")) sets chapter n's stamp in a band between the words and the drawing;
+                                    clip=True (default: the kit's clip, False) clips the drawing to its panel (clipped(fn))
     K.glory(lines, bg=GLORY_BG, h=) a doxology or benediction: the words over a burst of light (no figure), a gold inner frame
-    K.pic(fn, bg, h)                a drawing with no words
+    K.pic(fn, bg, h, clip=None)     a drawing with no words
     K.pack(segs, prefix, start, end=, most=4, lone=0.5, face_min=230)   the panels into pages (Mark's and Acts' packer:
                                     fewest, fullest pages, no drawing squeezed to a strip, no face panel under face_min px;
                                     tails removed from boxes over drawings)
-    K.title(num, name, rng, svg, bg, quote)               a chapter opener (第一話 …) with the letter's credit
+    K.title(num, name, rng, svg, bg, quote, size=None)    a chapter opener (第一話 …) with the letter's credit; size= the
+                                    name's px (default the opener's 96; ~80 for a name that would run to three lines)
+    clipped(fn)                     a drawing fn(w, h) clipped to its own w × h (glows and rays kept off the words)
     nxt(text) / fin(text)           the end marks (つづく / 完) for the last panel of a chapter / of the letter
 Faces (tok= for K.F), each with its background: Paul as ntcast draws him, in his moods —
     PAUL + GOLD_BG (earnest) · PAUL_LAMP + LAMP_BG (dictating by lamplight) · PAUL_GRIEF + GRIEF_BG (grieving: Rom 9:1–3)
     PAUL_JOY + JOY_BG (white light: Rom 8:31–39, 11:33–36) · PAUL_STERN + STERN_BG (warning, rebuke)
+    GUARD (the Roman soldier that guarded Paul at Rome: Acts' brass helmet, dark stubble; a prison letter's face panel)
 Faces alternate sides: K.pack sets every other face panel flip=True (the face at the right, the words at the left)
 unless the panel gives flip= itself.
 People (never blobs: drawn on the kit's MAN / WOMAN silhouettes, so shoulders, arms and waist show):
-    robed(p, x, y, s, cloth, woman=, head=, cord=, veil=, hair=, beard=, mantle=, belt=, up=, flip=, extra=)  a person standing
-        in a sleeved robe and long skirt that follow the body, hands and head showing (needs mk.defs(p, *ALL, "ManUp",
+    robed(p, x, y, s, cloth, woman=, head=, cord=, veil=, hair=, beard=, mantle=, belt=, up=, flip=, extra=, pose=, seat=)
+        a person in a sleeved robe and long skirt that follow the body, hands and head showing (needs mk.defs(p, *ALL, "ManUp",
         "WomanUp")); up= arm points from (-22, -158) reach left, or right with flip=True; extra= svg in the figure's own
-        units (a scroll in the hand at the arm's last point)
-    paul_fig(p, x, y, s, flip=, up=, extra=)   Paul in ntcast's colours on robed(), a darker mantle
-    scribe_seated(x, y, s, cloth=, head=, cord=, flip=, stage="write"|"read")  a scribe cross-legged on the floor, the roll
-        across his knee and the reed pen on it ("write"), or the roll lifted to read it back
+        units (a scroll in the hand at the arm's last point). pose="stand" (default); "sit" on a seat ("stool" default,
+        "bench", or None when the drawing has its own: stool(x, y, s) / bench(x, y, wd, s), top SEAT_Y·s up), the knees
+        toward the left (right with flip=True), hands on the lap; "walk" striding left (right with flip=True)
+    paul_fig(p, x, y, s, flip=, up=, extra=, pose=, seat=)   Paul in ntcast's colours on robed(), a darker mantle
+    scribe_seated(x, y, s, cloth=, head=, cord=, flip=, stage="write"|"read", beard=None, hair=None)  a scribe cross-legged
+        on the floor, the roll across his knee and the reed pen on it ("write"), or the roll lifted to read it back; beard=
+        a short beard, head=None bareheaded (short hair in hair=)
+    roman_guard(p, x, y, s, flip=, up=, spear=True, extra=)   the soldier that guarded Paul (Acts 28:16) on the MAN
+        silhouette: red tunic, iron-banded cuirass, Acts' brass helmet and red crest, a red cloak, dark stubble, a spear
+        (GUARD_LOOK); guard_hand(x, y, s, flip) his chained right hand · robed_hand(x, y, s, flip, pose) a robed figure's
+        hanging hand · chain(x1, y1, x2, y2, s, sag=) the chain between two wrists (Acts 28:20, Eph 6:20)
     face_portrait(tok, tok2=None)   a greeting cell's portrait: a shaded profile face (faces.face token), a second behind it
 Furniture: pigeonholes(x, y, w, h) (scroll cubbies) · couch(x, y, w, s) · mat(x, y, w, s) · low_table(x, y, w, s) ·
+    stool(x, y, s) · bench(x, y, wd, s) ·
     doorway(x, top, w, b, seed, night) (an open door onto the street, house fronts and lit windows beyond)
 Drawings (svg strings; p is a prefix unique to the panel; w, h the panel's size):
-    study(p, w, h, seed, stage=, scribe=, bearer=, night=, window=, writer=paul_fig, fig_h=)   the opening scene (also a
+    study(p, w, h, seed, stage=, scribe=, bearer=, night=, window=, writer=paul_fig, fig_h=, others=, guard=, up=, sit=)
+        the opening scene (also a
         good "Paul speaking" panel anywhere in a letter, between the face panels), close in — the figures stand about 72%
         of the drawing's height: the writer standing, the scribe cross-legged on a mat writing on the roll, a low table
         with the lamp and inkpot, a couch, pigeonholes of scrolls, the window on the city (the Acrocorinth). stage
         "dictate" (the writer's hand out), "read" (the scribe reads the roll back, the writer listening), "give" (the
         writer turns to the bearer standing in the open doorway onto the night street, the sealed scroll in her hand).
         scribe: dict(cloth, head, cord) (TERTIUS_LOOK) or False; bearer: dict(cloth, veil, mantle) for a woman
-        (PHOEBE_LOOK) or dict(cloth, head, beard) for a man; fig_h a figure's height in px (default 72% of h)
+        (PHOEBE_LOOK) or dict(cloth, head, beard) for a man; fig_h a figure's height in px (default 72% of h). Options:
+        window= "city" (default) / "rome" / False / a function (x, y, ww, hh, night, seed) (WINDOWS: city_window,
+        rome_window); scribe dict(..., beard=) or dict(cloth=, hair=) bareheaded; bearer dict(..., hair=, mantle=) or a
+        figure function; others= figure functions standing at the right, listening. The prison stages (the letters from
+        Rome: Ephesians, Philippians, Colossians, Philemon): "prison" — Paul's hired dwelling, the soldier at the left with
+        his spear and shield, chained wrist to wrist to Paul sitting on a bench (sit=False standing), Paul's hand out (up=
+        another arm, up=False none), the scribe writing, the window on Rome; "prison_read" the scribe reading it back;
+        "prison_give" Paul standing, chained, handing the sealed scroll to the bearer in the doorway; guard= the soldier's
+        figure function (roman_guard) or False
     still_life(w, h, seed, sealed=True, night=True)   the letter on the table: the rolled scroll tied and sealed, the reed
         pen, the inkpot, the lamp (an opening's or an ending's picture panel)
     sealed_scroll(x, y, s, rot=0, seal=SEAL)   a rolled letter tied with a cord and sealed with red clay
@@ -93,7 +116,7 @@ from num.art import ALL
 from jer.art import glow
 from mat.art import room, woman_fig, veil as _veil, UP_BLESS, UP_HIGH, UP_TOUCH, UP_CALL
 from exo.art import headcloth, WHITE_BEARD
-from ntcast import ROBES
+from ntcast import ROBES, _HELMET
 from job.art import seated
 from exo.art8 import tag, dim, title_bar
 from act import geo
@@ -130,8 +153,9 @@ PARCHMENT, SEPIA, SEAL = "#F6EEDA", "#7A4A2A", "#B5121B"
 
 class EpistleKit(MarkKit):
     """oba.minor.Kit (by way of Mark's MarkKit) with the letter's line kinds and panels; see the module docstring."""
-    def __init__(self, G, code, book, credit=""):
+    def __init__(self, G, code, book, credit="", fit_faces=False, clip=False):
         super().__init__(G, code, book); self.credit = credit
+        self.fit_faces, self.clip = fit_faces, clip            # the letter's defaults for F(fit=) and D(clip=) / pic(clip=)
 
     # lines
     def lt(self, ref, frm=None, to=None, after=None): return ("letter", self.G.v(ref, frm=frm, to=to, after=after))
@@ -154,16 +178,22 @@ class EpistleKit(MarkKit):
         return [{"song": self.sg, "god": self.gd, "say": self.sy}[kind](ref, to=to), self.lt(ref, frm=frm)]
 
     # panels
-    def F(self, lines, tok, bg=GOLD_BG, **k):
-        """The words beside a face."""
+    def F(self, lines, tok, bg=GOLD_BG, fit=None, fit_min=240, **k):
+        """The words beside a face. fit=True (or the kit's fit_faces=True): the panel only as tall as its words need at 16 px
+        (at least fit_min px), so a face beside a few lines does not swallow the page and the drawing on the page takes the
+        rest (as Galatians' F); h= still sets it outright."""
         k.setdefault("hi", 18)
+        if (self.fit_faces if fit is None else fit) and "h" not in k:
+            k["h"] = max(fit_min, int(speech._height(_flat(lines), 408, 16) + 80))
         return self.face(lines, tok, bg=bg, **k)
 
-    def D(self, lines, fn, bg, art_h=130, size=15, sky=None, ref=None, **kw):
+    def D(self, lines, fn, bg, art_h=130, size=15, sky=None, ref=None, clip=None, **kw):
         """The words over a drawing fn(w, h): the words at `size` px at most (they shrink only if they must), the drawing
         below them at least art_h tall — the panel as tall as both need (pass h= to fix it); sky=n (or (n, "left")) puts
-        chapter n's stamp in a band between the words and the drawing."""
+        chapter n's stamp in a band between the words and the drawing. clip=True (or the kit's clip=True): the drawing
+        clipped to its own w × h (clipped()), so a glow or a ray never spills up behind the words."""
         lab = self.label(); ls = _flat(lines)
+        if self.clip if clip is None else clip: fn = clipped(fn)
         if "h" not in kw:
             hw = speech._height(ls, 678, size) + 44
             kw["h"] = int(max(hw + art_h, hw / 0.62)) + (STAMP_BAND if sky else 0)
@@ -180,9 +210,15 @@ class EpistleKit(MarkKit):
             h = int(speech._height(lines, 678, 17) / 0.6 + 120)
         return seg(lines, kw.pop("ref", None) or lab, bg=bg, art=art, h=h, **kw)
 
-    def title(self, num, name, rng, svg, bg, quote):
-        """A chapter opener (第一話, 第二話, …) with the letter's credit."""
-        return chapter_title(num, f"第{mk.kanji_num(num)}話", name, rng, shade(svg), bg, quote, self.credit)
+    def pic(self, art, bg, h, ref=None, clip=None, **kw):
+        """A drawing with no words, h tall (clip= as D)."""
+        return super().pic(clipped(art) if (self.clip if clip is None else clip) else art, bg, h, ref=ref, **kw)
+
+    def title(self, num, name, rng, svg, bg, quote, size=None):
+        """A chapter opener (第一話, 第二話, …) with the letter's credit. size= the name's type in px (the opener sets 96 px;
+        a name long enough to run to three lines covers the verse range under it: give it ~80)."""
+        html = chapter_title(num, f"第{mk.kanji_num(num)}話", name, rng, shade(svg), bg, quote, self.credit)
+        return html.replace("font-size: 96px; line-height: 1.0", f"font-size: {size}px; line-height: 1.0", 1) if size else html
 
     def pack(self, segs, prefix, start, end="", default_head=None, min_size=12.5, most=4, budget=1150, min_art=200, lone=0.5, keep=0.8, face_min=230):
         """Mark's packer (fewest, fullest pages; every panel's words at min_size or more; a drawing at least min_art tall and
@@ -219,6 +255,16 @@ class EpistleKit(MarkKit):
                 out.append((f"{prefix}-P{len(out) + 1:02d}-" + name.split("-P01-", 1)[1], t, (lambda fn=fn: untail(fn()))))
             head = next((s["head"] for s in reversed(g) if s["head"]), head)
         return out
+
+def clipped(fn):
+    """A drawing fn(w, h) clipped to its own w × h (its clipPath id from the drawing itself, so it is the same at every build)."""
+    import zlib
+    def draw(w, h):
+        svg = fn(w, h)
+        uid = f"kc{zlib.crc32(f'{svg}|{w:.1f}|{h:.1f}'.encode()) % 10 ** 9}"
+        return (f'<defs><clipPath id="{uid}"><rect x="0" y="0" width="{f(w)}" height="{f(h)}"></rect></clipPath></defs>'
+                f'<g clip-path="url(#{uid})">{svg}</g>')
+    return draw
 
 def under(fn, lines, hi=16):
     """A drawing fn(w, h) set just under the column of words at the top of its panel (oba.minor.under, with the words' size
@@ -340,13 +386,19 @@ def _window(w, h, x, y, ww, hh, night, seed):
     return "".join(o)
 
 def robed(p, x, y, s, cloth, skin=SKIN, woman=False, head=None, cord="#2A1A10", veil=None, hair=None, beard=None, up=None, flip=False,
-          mantle=None, belt=None, line=INK, extra=""):
+          mantle=None, belt=None, line=INK, extra="", pose="stand", seat="stool"):
     """A person standing, drawn on the kit's MAN / WOMAN silhouette (shoulders, arms, waist) so the garment follows the
     body: the sleeved robe is the silhouette itself below the neck, a long skirt falls from the waist, the hands and head
     show; head= a headcloth colour (cord= its cord, None for none), veil= a woman's veil, hair= bare hair, beard= a beard
     colour; mantle= a cloak over one shoulder; belt= a girdle; up= a free arm as mk.person, its points from the shoulder
     (-22, -158): it reaches to the left as drawn, to the right with flip=True (the other hand hangs). Needs mk.defs(p, *num.art.ALL,
-    "ManUp", "WomanUp") in the panel. (x, y) is the ground under the feet; the figure is about 205 units tall at s = 1."""
+    "ManUp", "WomanUp") in the panel. (x, y) is the ground under the feet; the figure is about 205 units tall at s = 1.
+    pose="sit": sitting on a seat ("stool", "bench", or None when the drawing supplies one: its top SEAT_Y units above the
+    floor), the knees and feet toward the left as drawn (right with flip=True, the way up= reaches), the hands on the lap,
+    about 157 units tall; pose="walk": striding to the left as drawn (right with flip=True), the skirt swinging, the front
+    foot forward and the back heel lifted. Every other option works in each pose."""
+    if pose != "stand":
+        return _robed_pose(p, x, y, s, cloth, skin, woman, head, cord, veil, hair, beard, up, flip, mantle, belt, line, extra, pose, seat)
     sx = -s if flip else s
     fig = ("Woman" if woman else "Man") + ("Up" if up else "")
     cid = f"{p}nk{abs(int(x))}x{abs(int(y))}"
@@ -379,14 +431,199 @@ def robed(p, x, y, s, cloth, skin=SKIN, woman=False, head=None, cord="#2A1A10", 
     if head: o.append(headcloth(head, cord=cord))
     return "".join(o) + extra + "</g>"
 
-def paul_fig(p, x, y, s, flip=False, up=None, extra=""):
-    """Paul at a distance in the letters: ntcast's colours (a dark-brown robe and headcloth with a cord, a black beard), on
-    the kit silhouette, a darker mantle over the shoulder."""
-    return robed(p, x, y, s, ROBES["paul"], head="#5A4A3A", cord="#2A1A10", beard="#3A2A1A", mantle="#3E3228", belt="#2A1A10", flip=flip, up=up, extra=extra)
+SEAT_Y, _SIT = 50, 48                     # a seat's top above the floor; how far the seated torso is lowered
 
-def scribe_seated(x, y, s, cloth="#3A5A5A", head="#1F4A4A", cord="#0D2A2A", skin=SKIN, flip=False, stage="write"):
+def stool(x, y, s=1.0, wd=46, color="#6A3A1E"):
+    """A low wooden stool, (x, y) the middle of its foot on the floor, its top SEAT_Y·s above it."""
+    t = y - SEAT_Y * s
+    return (f'<rect x="{f(x - wd / 2 * s)}" y="{f(t)}" width="{f(wd * s)}" height="{f(7 * s)}" fill="{color}" stroke="{INK}" stroke-width="{f(max(1.4, 2 * s))}"></rect>'
+            + "".join(f'<path d="M{f(x + k * wd * 0.36 * s)} {f(t + 7 * s)} L {f(x + k * wd * 0.44 * s)} {f(y)}" stroke="#4A2412" stroke-width="{f(5 * s)}" stroke-linecap="round"></path>' for k in (-1, 1)))
+
+def bench(x, y, wd, s=1.0, color="#6A3A1E"):
+    """A plain wooden bench along the wall, (x, y) its left foot on the floor, wd its length, its top SEAT_Y·s up."""
+    t = y - SEAT_Y * s
+    return (f'<rect x="{f(x)}" y="{f(t)}" width="{f(wd)}" height="{f(9 * s)}" fill="{color}" stroke="{INK}" stroke-width="{f(max(1.4, 2 * s))}"></rect>'
+            + "".join(f'<rect x="{f(lx)}" y="{f(t + 9 * s)}" width="{f(7 * s)}" height="{f(SEAT_Y * s - 9 * s)}" fill="#4A2412" stroke="{INK}" stroke-width="1.4"></rect>' for lx in (x + 6 * s, x + wd - 13 * s)))
+
+def _robed_pose(p, x, y, s, cloth, skin, woman, head, cord, veil, hair, beard, up, flip, mantle, belt, line, extra, pose, seat):
+    """robed() sitting or walking (see robed)."""
+    sx = -s if flip else s
+    fig = ("Woman" if woman else "Man") + ("Up" if up else "")
+    cid = f"{p}nk{pose[0]}{abs(int(x))}x{abs(int(y))}"
+    hx, hw = (24.5, 3.6) if woman else (28.5, 4.2)
+    wx = 15 if woman else 19
+    dy = _SIT if pose == "sit" else 0
+    o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">',
+         f'<defs><clipPath id="{cid}t"><rect x="-80" y="-167" width="160" height="61"></rect></clipPath>'
+         f'<clipPath id="{cid}u"><rect x="-80" y="-230" width="160" height="{124 if pose == "sit" else 300}"></rect></clipPath>'
+         f'<clipPath id="{cid}a"><rect x="-60" y="-110" width="{60 - wx - 1}" height="40"></rect><rect x="{wx + 1}" y="-110" width="{60 - wx - 1}" height="40"></rect></clipPath></defs>']
+    if pose == "sit":
+        if seat == "stool": o.append(stool(4, 0, 1.0, wd=50))
+        elif seat == "bench": o.append(bench(-40, 0, 96, 1.0))
+    top = f'<g transform="translate(0 {dy})">'
+    # the body: the silhouette (above the hips when sitting), the bodice and upper sleeves
+    o.append(top + f'<use href="#{p}{fig}" fill="{skin}" stroke="{line}" stroke-width="3" clip-path="url(#{cid}u)"></use>'
+             f'<use href="#{p}{fig}" fill="{cloth}" stroke="{line}" stroke-width="2.6" clip-path="url(#{cid}t)"></use></g>')
+    if pose == "sit":
+        w0 = -110 + dy                                        # the waist, lowered onto the seat
+        # the lap and the legs, the knees toward -x: robe over the thighs, falling over the shins to the ankles
+        o.append(f'<path d="M{wx + 2} {w0} C {wx + 6} {w0 + 12} {wx + 6} {-SEAT_Y + 2} {wx + 2} {-SEAT_Y + 4} L -16 {-SEAT_Y + 6} '
+                 f'C -26 {-SEAT_Y + 8} -34 {-SEAT_Y + 14} -36 -4 L -66 -4 C -68 -24 -70 -40 -68 {-SEAT_Y - 2} C -66 {w0 + 2} -50 {w0 - 2} -30 {w0 - 2} '
+                 f'L {-wx} {w0} Z" fill="{cloth}" stroke="{line}" stroke-width="2.6"></path>'
+                 f'<path d="M-62 {-SEAT_Y - 4} C -52 {-SEAT_Y - 8} -30 {-SEAT_Y - 8} -10 {-SEAT_Y - 6} M-50 -40 C -52 -28 -54 -16 -52 -4" fill="none" stroke="{line}" stroke-width="1.2" opacity="0.45"></path>'
+                 f'<path d="M-64 -4 L -82 -1 C -84 0 -84 2 -82 2 L -54 2 L -54 -4 Z" fill="{skin}" stroke="{line}" stroke-width="1.4"></path>'
+                 f'<path d="M-44 -4 L -60 -1 C -62 0 -62 2 -60 2 L -38 2 L -38 -4 Z" fill="{skin}" stroke="{line}" stroke-width="1.2" opacity="0.9"></path>')
+    else:
+        # the striding skirt: the front hem swung forward (-x), the back hem trailing, a fold between the legs
+        o.append(f'<path d="M-{wx} -110 C -{wx + 8} -76 -{wx + 18} -36 -46 -2 L 30 -6 C {wx + 10} -36 {wx + 6} -76 {wx} -110 Z" fill="{cloth}" stroke="{line}" stroke-width="2.6"></path>'
+                 f'<path d="M-2 -94 C -6 -60 -10 -30 -8 -4 M-14 -80 C -22 -50 -30 -24 -36 -4" fill="none" stroke="{line}" stroke-width="1.2" opacity="0.45"></path>'
+                 f'<path d="M-44 -4 L -62 -1 C -64 0 -64 3 -62 3 L -36 3 L -36 -4 Z" fill="{skin}" stroke="{line}" stroke-width="1.4"></path>'
+                 f'<path d="M24 -7 L 40 -14 C 42 -14 44 -11 42 -9 L 30 0 L 22 0 Z" fill="{skin}" stroke="{line}" stroke-width="1.4"></path>')
+    o.append(top + f'<use href="#{p}{fig}" fill="{cloth}" stroke="{line}" stroke-width="2.6" clip-path="url(#{cid}a)"></use>'
+             f'<path d="M-7 -166 L 0 -156 L 7 -166" fill="none" stroke="{line}" stroke-width="1.4"></path>')
+    for side in ((1,) if up else (-1, 1)):
+        o.append(f'<ellipse cx="{f(side * hx)}" cy="-90" rx="{hw}" ry="6.5" fill="{skin}" stroke="{line}" stroke-width="1.4"></ellipse>')
+    if belt: o.append(f'<path d="M-{wx + 1} -108 C -6 -104 6 -104 {wx + 1} -108" fill="none" stroke="{belt}" stroke-width="3.4"></path>')
+    if mantle:
+        clip = f' clip-path="url(#{cid}u)"' if pose == "sit" else ""
+        o.append(f'<path d="M-25 -162 C -12 -150 6 -118 16 -58 C 18 -40 20 -20 22 -4 L 34 -4 C 30 -40 26 -100 20 -150 C 8 -166 -14 -168 -25 -162 Z" '
+                 f'fill="{mantle}" stroke="{line}" stroke-width="2.2"{clip}></path>')
+    if up:
+        d = "M" + " L ".join(f"{a} {b}" for a, b in up)
+        o.append(f'<path d="{d}" fill="none" stroke="{line}" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"></path>'
+                 f'<path d="{d}" fill="none" stroke="{cloth}" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round"></path>'
+                 f'<circle cx="{up[-1][0]}" cy="{up[-1][1]}" r="5" fill="{skin}" stroke="{line}" stroke-width="1.4"></circle>')
+    if hair: o.append(f'<path d="M-13.5 -186 C -16 -206 16 -206 13.5 -186 L 14 -178 C 12.5 -175 11 -177 11 -181 C 8 -192 -8 -192 -11 -181 C -11 -177 -12.5 -175 -14 -178 Z" '
+                      f'fill="{hair}" stroke="{line}" stroke-width="1.3"></path>')
+    if beard: o.append(WHITE_BEARD.replace("#E8E2D6", beard))
+    if veil: o.append(_veil(veil))
+    if head: o.append(headcloth(head, cord=cord))
+    return "".join(o) + extra + "</g></g>"
+
+def paul_fig(p, x, y, s, flip=False, up=None, extra="", pose="stand", seat="stool"):
+    """Paul at a distance in the letters: ntcast's colours (a dark-brown robe and headcloth with a cord, a black beard), on
+    the kit silhouette, a darker mantle over the shoulder; pose= "stand" / "sit" / "walk" as robed()."""
+    return robed(p, x, y, s, ROBES["paul"], head="#5A4A3A", cord="#2A1A10", beard="#3A2A1A", mantle="#3E3228", belt="#2A1A10", flip=flip, up=up, extra=extra,
+                 pose=pose, seat=seat)
+
+# ---- the Roman guard and the chain (Acts 28:16, 20; the prison letters) ----------------------------------------------------
+GUARD_LOOK = dict(tunic="#A8281E", cloak="#B5121B", helmet="#C8963E", crest="#B5121B", iron="#8A8A94", stubble="#2A1A10")
+
+def roman_guard(p, x, y, s, flip=False, up=None, spear=True, extra="", skin=SKIN):
+    """The soldier that guarded Paul (Acts 28:16): on the kit's MAN silhouette — a red tunic to the knee, a cuirass of iron
+    bands with shoulder guards and leather strips below, a sword at the right hip, Acts' brass helmet with cheek-pieces and a
+    red crest, a red cloak falling behind from the shoulders and over the left one, dark stubble on the jaw, sandals; spear=True
+    a spear upright in his left hand (the side away from up=). (x, y) the ground under his feet; about 210 units tall (the
+    crest) at s = 1, his right hand (the one chained to the prisoner's) at guard_hand(). Needs mk.defs(p, *num.art.ALL)."""
+    L = GUARD_LOOK
+    sx = -s if flip else s
+    fig = "Man" + ("Up" if up else "")
+    cid = f"{p}gd{abs(int(x))}x{abs(int(y))}"
+    o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">',
+         f'<defs><clipPath id="{cid}t"><rect x="-80" y="-167" width="160" height="117"></rect></clipPath>'
+         f'<clipPath id="{cid}s"><rect x="-80" y="-167" width="160" height="34"></rect></clipPath></defs>',
+         # the cloak behind the shoulders
+         f'<path d="M-24 -164 C -34 -150 -40 -110 -40 -54 L -30 -50 L 30 -50 L 40 -54 C 40 -110 34 -150 24 -164 Z" fill="{L["cloak"]}" stroke="{INK}" stroke-width="2.4"></path>',
+         f'<use href="#{p}{fig}" fill="{skin}" stroke="{INK}" stroke-width="3"></use>',
+         # the tunic: short sleeves and the skirt to the knee
+         f'<use href="#{p}{fig}" fill="{L["tunic"]}" stroke="{INK}" stroke-width="2.6" clip-path="url(#{cid}s)"></use>',
+         f'<path d="M-19 -110 C -22 -90 -24 -70 -25 -52 L 25 -52 C 24 -70 22 -90 19 -110 Z" fill="{L["tunic"]}" stroke="{INK}" stroke-width="2.6"></path>',
+         # the cuirass of iron bands, the shoulder guards, the leather strips
+         f'<path d="M-22 -160 C -26 -140 -24 -118 -20 -104 L 20 -104 C 24 -118 26 -140 22 -160 C 10 -165 -10 -165 -22 -160 Z" fill="{L["iron"]}" stroke="{INK}" stroke-width="2.2"></path>']
+    for i in range(5):
+        yy = -150 + i * 10
+        o.append(f'<path d="M-23 {yy} C -8 {yy + 3} 8 {yy + 3} 23 {yy}" fill="none" stroke="#4A4A54" stroke-width="1.6"></path>')
+    o.append(f'<path d="M-30 -164 C -34 -154 -34 -146 -30 -140 L -20 -150 L -18 -162 Z M30 -164 C 34 -154 34 -146 30 -140 L 20 -150 L 18 -162 Z" fill="#9A9AA4" stroke="{INK}" stroke-width="1.8"></path>'
+             '<path d="M-20 -105 C -6 -101 6 -101 20 -105" fill="none" stroke="#5A3A1E" stroke-width="4"></path>'
+             + "".join(f'<rect x="{xx - 2.5}" y="-102" width="5" height="22" fill="#6A3A1E" stroke="{INK}" stroke-width="1"></rect>' for xx in range(-16, 17, 8))
+             + f'<path d="M22 -104 L 34 -62" stroke="{INK}" stroke-width="7" stroke-linecap="round"></path><path d="M22 -104 L 34 -62" stroke="#5A4A3A" stroke-width="4.4" stroke-linecap="round"></path>'
+             '<path d="M18 -110 L 26 -98" stroke="#C8963E" stroke-width="3"></path>')
+    # the cloak's fold over the left shoulder
+    o.append(f'<path d="M-26 -164 C -36 -126 -34 -90 -30 -60 L -22 -62 C -24 -96 -22 -128 -14 -160 Z" fill="{L["cloak"]}" stroke="{INK}" stroke-width="1.8"></path>'
+             '<circle cx="-18" cy="-160" r="3" fill="#C8963E" stroke="#0D0D0F" stroke-width="1"></circle>')
+    # sandals
+    o.append('<path d="M-17 -6 L -5 -6 M-17 -14 L -6 -14 M17 -6 L 5 -6 M17 -14 L 6 -14" stroke="#4A2A14" stroke-width="2"></path>')
+    if up:
+        d = "M" + " L ".join(f"{a} {b}" for a, b in up)
+        o.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>'
+                 f'<path d="{d}" fill="none" stroke="{skin}" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>')
+    elif spear:
+        o.append(f'<path d="M-29 -2 L -31 -232" stroke="{INK}" stroke-width="5.4" stroke-linecap="round"></path><path d="M-29 -2 L -31 -232" stroke="#8A6A3A" stroke-width="3"></path>'
+                 f'<path d="M-31 -232 L -35 -246 L -31 -262 L -27 -246 Z" fill="#B8B8C0" stroke="{INK}" stroke-width="1.6"></path>'
+                 f'<ellipse cx="-28.5" cy="-90" rx="4.6" ry="6" fill="{skin}" stroke="{INK}" stroke-width="1.4"></ellipse>')
+    # the face: dark stubble on the jaw; the helmet with its cheek-pieces, neck-guard and crest
+    o.append(f'<path d="M-11 -186 C -11 -176 -6 -175 0 -175 C 6 -175 11 -176 11 -186 C 7 -181 -7 -181 -11 -186 Z" fill="{L["stubble"]}" opacity="0.55"></path>'
+             f'<path d="M-14 -188 C -15 -206 15 -206 14 -188 L 17 -184 L -17 -184 Z" fill="{L["helmet"]}" stroke="{INK}" stroke-width="1.8"></path>'
+             f'<path d="M-14 -188 L -15 -176 L -10 -175 L -9 -186 Z M14 -188 L 15 -176 L 10 -175 L 9 -186 Z" fill="#B8862E" stroke="{INK}" stroke-width="1.4"></path>'
+             f'<path d="M-15 -194 C -6 -197 6 -197 15 -194" fill="none" stroke="#E8B830" stroke-width="2"></path>'
+             f'<path d="M-3 -202 C -8 -212 -2 -220 6 -216 C 10 -212 8 -206 4 -202 Z" fill="{L["crest"]}" stroke="{INK}" stroke-width="1.4"></path>')
+    return "".join(o) + extra + "</g>"
+
+def guard_hand(x, y, s, flip=False):
+    """Where roman_guard's right hand (the hanging one, chained to the prisoner) is, in the drawing's units."""
+    return (x + (-28.5 if flip else 28.5) * s, y - 90 * s)
+
+def robed_hand(x, y, s, flip=False, pose="stand", up=True):
+    """Where a robed() figure's hanging hand is, in the drawing's units: with up= only one hand hangs, on the side away
+    from the arm (the prisoner's chained wrist); without, the hand on the far side of the way it faces."""
+    return (x + (-28.5 if flip else 28.5) * s, y - (90 - (_SIT if pose == "sit" else 0)) * s)
+
+def chain(x1, y1, x2, y2, s=1.0, sag=0.22, color="#8A8A94"):
+    """A chain from one wrist to another (Acts 28:20, "this chain"; Eph 6:20 "an ambassador in chains"): a band about each
+    wrist and iron links along a hanging curve between them (sag a share of their distance)."""
+    d = math.hypot(x2 - x1, y2 - y1)
+    mx, my = (x1 + x2) / 2, max(y1, y2) + d * sag
+    n = max(4, int(d / (9 * s)))
+    o = []
+    for i in range(n + 1):
+        t = i / n
+        px_ = (1 - t) ** 2 * x1 + 2 * (1 - t) * t * mx + t * t * x2
+        py_ = (1 - t) ** 2 * y1 + 2 * (1 - t) * t * my + t * t * y2
+        tx = 2 * (1 - t) * (mx - x1) + 2 * t * (x2 - mx); ty = 2 * (1 - t) * (my - y1) + 2 * t * (y2 - my)
+        ang = math.degrees(math.atan2(ty, tx))
+        ry = 2.6 * s if i % 2 == 0 else 1.3 * s
+        o.append(f'<ellipse cx="{f(px_)}" cy="{f(py_)}" rx="{f(5.2 * s)}" ry="{f(ry)}" transform="rotate({ang:.1f} {f(px_)} {f(py_)})" fill="none" stroke="{INK}" stroke-width="{f(3.2 * s)}"></ellipse>'
+                 f'<ellipse cx="{f(px_)}" cy="{f(py_)}" rx="{f(5.2 * s)}" ry="{f(ry)}" transform="rotate({ang:.1f} {f(px_)} {f(py_)})" fill="none" stroke="{color}" stroke-width="{f(1.6 * s)}"></ellipse>')
+    for (cx, cy) in ((x1, y1), (x2, y2)):
+        o.append(f'<rect x="{f(cx - 6 * s)}" y="{f(cy - 9 * s)}" width="{f(12 * s)}" height="{f(7 * s)}" rx="{f(2 * s)}" fill="#6A6A74" stroke="{INK}" stroke-width="{f(1.6 * s)}"></rect>')
+    return "".join(o)
+
+_GUARD_CLOAK = ('<path d="M96 384 C 108 352 138 334 172 330 L 236 326 C 268 332 294 354 306 384 Z" fill="#B5121B" stroke="#0D0D0F" stroke-width="4"></path>'
+                '<path d="M150 384 C 160 360 180 348 204 344 M232 384 C 236 364 248 350 264 344" fill="none" stroke="#7A0A10" stroke-width="3"></path>'
+                '<circle cx="214" cy="342" r="9" fill="#C8963E" stroke="#0D0D0F" stroke-width="3"></circle>')
+GUARD = face_of("adam", skin="#C9926A", shadow="#5A3A2A", hair="#1A1210", hl="#4A3A2E", stubble="#1A1008", light="#FFC14D") + _HELMET + _GUARD_CLOAK
+
+def rome_window(x, y, ww, hh, night, seed):
+    """A window on Rome: the roofs of the city, and on its hill the temple of Jupiter (Acts' drawing) against the sky."""
+    from act.art8 import jupiter_temple
+    sky_ = ("#0B0B2A", "#2A2050") if night else ("#8FD0E2", "#F3E8C8")
+    uid = f"rw{seed}"
+    o = [f'<defs><clipPath id="{uid}"><rect x="{f(x)}" y="{f(y)}" width="{f(ww)}" height="{f(hh)}"></rect></clipPath>'
+         f'<linearGradient id="{uid}g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{sky_[0]}"></stop><stop offset="1" stop-color="{sky_[1]}"></stop></linearGradient></defs>',
+         f'<g clip-path="url(#{uid})"><rect x="{f(x)}" y="{f(y)}" width="{f(ww)}" height="{f(hh)}" fill="url(#{uid}g)"></rect>']
+    if night: o.append(f'<g transform="translate({f(x)} {f(y)})">' + mk.stars(int(ww * hh / 900) + 6, ww, hh * 0.45, seed) + '</g>')
+    hill = "#2A2440" if night else "#8A9A6A"
+    o.append(f'<path d="M{f(x - 4)} {f(y + hh * 0.7)} C {f(x + ww * 0.2)} {f(y + hh * 0.44)} {f(x + ww * 0.5)} {f(y + hh * 0.4)} {f(x + ww * 0.8)} {f(y + hh * 0.5)} '
+             f'L {f(x + ww + 4)} {f(y + hh * 0.56)} L {f(x + ww + 4)} {f(y + hh + 4)} L {f(x - 4)} {f(y + hh + 4)} Z" fill="{hill}" stroke="{INK}" stroke-width="1.6"></path>')
+    tmp = jupiter_temple(x + ww * 0.5, y + hh * 0.44, ww * 0.36)
+    o.append(tmp.replace("#F8F4EC", "#8A8090").replace("#E8E0D0", "#7A7088").replace("#D8D0C0", "#6A6078") if night else tmp)
+    r = random.Random(seed)
+    xx = x - 6
+    while xx < x + ww:
+        bw = ww * r.uniform(0.14, 0.24); bh = hh * r.uniform(0.14, 0.26)
+        o.append(f'<rect x="{f(xx)}" y="{f(y + hh - bh)}" width="{f(bw)}" height="{f(bh + 4)}" fill="{"#3A3050" if night else "#E0B890"}" stroke="{INK}" stroke-width="1.2"></rect>'
+                 f'<path d="M{f(xx - 2)} {f(y + hh - bh)} L {f(xx + bw / 2)} {f(y + hh - bh - bh * 0.22)} L {f(xx + bw + 2)} {f(y + hh - bh)} Z" fill="{"#4A2A2A" if night else "#B8583A"}" stroke="{INK}" stroke-width="1"></path>')
+        if night and r.random() < 0.6: o.append(f'<rect x="{f(xx + bw * 0.4)}" y="{f(y + hh - bh * 0.7)}" width="{f(bw * 0.18)}" height="{f(bh * 0.24)}" fill="#FFC14D"></rect>')
+        xx += bw
+    o.append('</g>' + f'<rect x="{f(x)}" y="{f(y)}" width="{f(ww)}" height="{f(hh)}" fill="none" stroke="{INK}" stroke-width="3"></rect>'
+             f'<path d="M{f(x + ww / 2)} {f(y)} L {f(x + ww / 2)} {f(y + hh)}" stroke="#5A3A22" stroke-width="4"></path>'
+             f'<rect x="{f(x - 8)}" y="{f(y + hh)}" width="{f(ww + 16)}" height="8" fill="#6A4A2A" stroke="{INK}" stroke-width="1.6"></rect>')
+    return "".join(o)
+
+def scribe_seated(x, y, s, cloth="#3A5A5A", head="#1F4A4A", cord="#0D2A2A", skin=SKIN, flip=False, stage="write", beard=None, hair=None):
     """A scribe sitting cross-legged on the floor, facing right, the roll open across his knee: stage "write" the reed pen
-    in his hand on the roll; "read" the roll lifted before his face. (x, y) is the floor under him; about 128 units tall."""
+    in his hand on the roll; "read" the roll lifted before his face. (x, y) is the floor under him; about 128 units tall.
+    beard= a short beard's colour; head=None bareheaded, his short hair in hair= (default near-black)."""
     sx = -s if flip else s
     o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">',
          # crossed legs under the robe, the lap
@@ -401,9 +638,16 @@ def scribe_seated(x, y, s, cloth="#3A5A5A", head="#1F4A4A", cord="#0D2A2A", skin
     o.append(f'<rect x="{hx - 5}" y="{hy + 8}" width="10" height="10" fill="{skin}"></rect>'
              f'<circle cx="{hx}" cy="{hy}" r="13" fill="{skin}" stroke="{INK}" stroke-width="2.2"></circle>'
              f'<path d="M{hx + 10} {hy - 2} l 5 4 l -5 2" fill="{skin}" stroke="{INK}" stroke-width="1.4"></path>')
-    o.append(f'<path d="M{hx - 15} {hy + 2} C {hx - 16} {hy - 22} {hx + 14} {hy - 24} {hx + 14} {hy - 4} L {hx + 8} {hy - 6} L {hx - 2} {hy - 10} L {hx - 8} {hy + 4} '
-             f'L {hx - 14} {hy + 22} L {hx - 22} {hy + 20} Z" fill="{head}" stroke="{INK}" stroke-width="1.8"></path>'
-             f'<path d="M{hx - 12} {hy - 10} C {hx - 4} {hy - 16} {hx + 6} {hy - 16} {hx + 13} {hy - 10}" fill="none" stroke="{cord}" stroke-width="2.6"></path>')
+    if head:
+        o.append(f'<path d="M{hx - 15} {hy + 2} C {hx - 16} {hy - 22} {hx + 14} {hy - 24} {hx + 14} {hy - 4} L {hx + 8} {hy - 6} L {hx - 2} {hy - 10} L {hx - 8} {hy + 4} '
+                 f'L {hx - 14} {hy + 22} L {hx - 22} {hy + 20} Z" fill="{head}" stroke="{INK}" stroke-width="1.8"></path>'
+                 f'<path d="M{hx - 12} {hy - 10} C {hx - 4} {hy - 16} {hx + 6} {hy - 16} {hx + 13} {hy - 10}" fill="none" stroke="{cord}" stroke-width="2.6"></path>')
+    else:                                                         # bareheaded: short hair (as 2 Corinthians draws Timothy writing)
+        o.append(f'<path d="M{hx - 13} {hy + 5} C {hx - 17} {hy - 10} {hx - 8} {hy - 17} {hx + 1} {hy - 15} C {hx + 9} {hy - 14} {hx + 14} {hy - 9} {hx + 13} {hy - 3} '
+                 f'C {hx + 7} {hy - 8} {hx} {hy - 8} {hx - 4} {hy - 4} C {hx - 6} {hy} {hx - 8} {hy + 5} {hx - 9} {hy + 9} Z" fill="{hair or "#1A1210"}" stroke="{INK}" stroke-width="1.6"></path>')
+    if beard:                                                     # a short beard (as 1 Corinthians draws Sosthenes)
+        o.append(f'<path d="M{hx - 8} {hy + 1} C {hx - 9} {hy + 14} {hx} {hy + 22} {hx + 9} {hy + 19} C {hx + 14} {hy + 16} {hx + 15} {hy + 10} {hx + 13} {hy + 6} '
+                 f'C {hx + 8} {hy + 9} {hx + 2} {hy + 8} {hx - 3} {hy + 3} Z" fill="{beard}" stroke="{INK}" stroke-width="1.4"></path>')
     if stage == "write":
         o.append(f'<path d="M14 -46 L 70 -50" stroke="#C8B488" stroke-width="2"></path>'
                  f'<rect x="14" y="-54" width="56" height="9" fill="#EADBB4" stroke="{INK}" stroke-width="1.6" transform="rotate(-4 42 -50)"></rect>'
@@ -483,14 +727,59 @@ def doorway(x, top, w, b, seed, night=True):
              + "".join(f'<rect x="{f(jx)}" y="{f(top)}" width="10" height="{f(hh)}" fill="#6A4A2A" stroke="{INK}" stroke-width="2"></rect>' for jx in (x - 10, x + w)))
     return "".join(o)
 
-def study(p, w, h, seed, stage="dictate", scribe=None, bearer=None, night=True, window="city", writer=None, fig_h=None):
+def city_window(x, y, ww, hh, night, seed):
+    """A window on Corinth: flat roofs, and the Acrocorinth on its rock with a temple (study()'s window="city")."""
+    return _window(0, 0, x, y, ww, hh, night, seed)
+
+WINDOWS = {"city": city_window, "corinth": city_window, "rome": rome_window}       # study(window=...): the windows by name
+
+def _win(window, prison=False):
+    """study()'s window= as a function (x, y, ww, hh, night, seed), or None for no window."""
+    if not window: return None
+    if callable(window): return window
+    if prison and window == "city": window = "rome"
+    return WINDOWS[window]
+
+def _scribe_kw(scribe):
+    """The scribe's look as scribe_seated's keywords: cloth, head, cord, beard, hair (hair and no head: bareheaded)."""
+    kw = {kk: vv for kk, vv in scribe.items() if kk in ("cloth", "head", "cord", "beard", "hair")}
+    if "hair" in scribe and not scribe.get("head"): kw["head"] = None
+    return kw
+
+def _bearer(p, bearer, x, b, s, **k):
+    """The bearer standing: a figure function fig(p, x, y, s, flip=, up=, extra=), or a look dict (a woman with veil=, or a
+    man with head= / hair=, beard=, mantle=)."""
+    if callable(bearer): return bearer(p, x, b, s, **k)
+    if "veil" in bearer: return robed(p, x, b, s * 0.94, bearer["cloth"], woman=True, veil=bearer["veil"], mantle=bearer.get("mantle"), **k)
+    return robed(p, x, b, s, bearer["cloth"], head=bearer.get("head"), hair=bearer.get("hair"), beard=bearer.get("beard"), mantle=bearer.get("mantle"), **k)
+
+def study(p, w, h, seed, stage="dictate", scribe=None, bearer=None, night=True, window="city", writer=None, fig_h=None, others=(), guard=None,
+          up=None, sit=None):
     """The letter written: a room of a house by lamplight, close in, the people standing about 70% of the panel's height —
     stage "dictate": the writer standing at the left, his hand out, the scribe sitting cross-legged on a mat writing on the
     roll across his knee, a low table at his side with the lamp and the inkpot, a couch behind the writer, pigeonholes of
     scrolls and the window on the city (the Acrocorinth) on the wall; "read": the scribe holding the roll up to read it
     back, the writer listening; "give": the writer handing the sealed scroll to the bearer standing in the open doorway
     onto the night street. scribe: dict(cloth, head, cord) (TERTIUS_LOOK) or False for none; bearer: dict(cloth, veil) for
-    a woman (PHOEBE_LOOK) or dict(cloth, head, beard) for a man; writer: fig(p, x, y, s, flip, up, extra) (paul_fig)."""
+    a woman (PHOEBE_LOOK) or dict(cloth, head, beard) for a man; writer: fig(p, x, y, s, flip, up, extra) (paul_fig).
+    Options (each off by default, so a call without them draws what it always drew):
+      window=  "city" (Corinth's Acrocorinth), "rome", False for none, or a function (x, y, ww, hh, night, seed) -> svg
+      scribe=  dict(..., beard=) a short beard; dict(cloth=, hair=) with no head a bareheaded scribe
+      bearer=  dict(..., hair=) a bareheaded man, dict(..., mantle=) a man's cloak, or a figure function fig(p, x, y, s, flip=,
+               up=, extra=) drawn in the bearer's place (with the sealed scroll in its raised hand at "give")
+      others=  figure functions fig(p, x, y, s, flip=) standing at the right, listening (the brethren with him), from the
+               right edge leftward (left of the bearer when there is one; at "give", left of the writer)
+    The prison stages — Paul's own hired dwelling at Rome (Acts 28:16, 30), the letters written in his bonds: a plain room by
+    lamplight, the window on Rome (window="city" means "rome" here), the soldier that guarded him standing at the left with
+    his spear and his shield against the wall, the chain from the soldier's wrist to Paul's (Acts 28:20):
+      "prison"       Paul sitting on a bench (sit=False: standing), his hand out dictating (up= another arm, e.g. raised in
+                     prayer; up=False none), the scribe on his mat at the right writing, the low table between them;
+      "prison_read"  the same, the scribe reading the roll back, Paul's hands at rest;
+      "prison_give"  Paul standing, handing the sealed scroll to the bearer in the doorway at the right, the guard beside him,
+                     the scribe (if any) at the left.
+    guard= a figure function fig(p, x, y, s) for the soldier (default roman_guard), False for none (and no chain)."""
+    if stage.startswith("prison"):
+        return _prison(p, w, h, seed, stage, scribe, bearer, night, window, writer, fig_h, others, guard, up, sit)
     scribe = TERTIUS_LOOK if scribe is None else scribe
     writer = writer or paul_fig
     b = h * 0.95
@@ -499,40 +788,100 @@ def study(p, w, h, seed, stage="dictate", scribe=None, bearer=None, night=True, 
     o = [mk.defs(p, *ALL, "ManUp", "WomanUp"), room(w, h, b, wall="#5A3E2E" if night else "#D8C098", floor="#3A2A20" if night else "#8A6A4A")]
     if night: o.append(lamp_glow(w * 0.5, b - 60 * k, max(w, h) * 0.55, f"{p}lg", op=0.45))
     give = stage == "give"
+    win = _win(window)
     # the wall: pigeonholes and the window
     ph_w, ph_h = min(w * 0.2, 130 * k), min(h * 0.32, 80 * k)
     if give:
         o.append(pigeonholes(w * 0.36, b - 205 * k, ph_w, ph_h, seed))
-        if window: o.append(_window(w, h, w * 0.06, b - 200 * k, min(w * 0.16, 110 * k), min(h * 0.36, 90 * k), night, seed))
+        if win: o.append(win(w * 0.06, b - 200 * k, min(w * 0.16, 110 * k), min(h * 0.36, 90 * k), night, seed))
         dx, dw = w * 0.68, min(w * 0.22, 120 * k)
         o.append(doorway(dx, b - 196 * k, dw, b, seed + 7, night))
     else:
         o.append(pigeonholes(w * 0.86 - ph_w, b - 205 * k, ph_w, ph_h, seed))
-        if window: o.append(_window(w, h, w * 0.4, b - 210 * k, min(w * 0.17, 115 * k), min(h * 0.38, 95 * k), night, seed))
+        if win: o.append(win(w * 0.4, b - 210 * k, min(w * 0.17, 115 * k), min(h * 0.38, 95 * k), night, seed))
     o.append(mat(w * 0.44, b, 120 * k, k) if not give else mat(w * 0.06, b, 110 * k, k))
     if give:
-        o.append(scribe_seated(w * 0.12, b - 4 * k, k, **{kk: vv for kk, vv in scribe.items() if kk in ("cloth", "head", "cord")}, stage="write") if scribe else "")
+        o.append(scribe_seated(w * 0.12, b - 4 * k, k, **_scribe_kw(scribe), stage="write") if scribe else "")
         o.append(low_table(w * 0.24, b, 46 * k, k) + clay_lamp(w * 0.24 + 23 * k, b - 31 * k, k * 0.5) + inkpot(w * 0.24 + 40 * k, b - 30 * k, k * 0.5))
         scroll_ = sealed_scroll(-70, -150, 0.3, rot=12)                     # the sealed letter in the bearer's hand
         o.append(writer(p, w * 0.5, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -150)]))
         if bearer:
             reach = [(-22, -158), (-42, -146), (-62, -146)]
-            bx = dx + dw * 0.5
-            if "veil" in bearer: o.append(robed(p, bx, b, s * 0.94, bearer["cloth"], woman=True, veil=bearer["veil"], mantle=bearer.get("mantle"), up=reach, extra=scroll_))
-            else: o.append(robed(p, bx, b, s, bearer["cloth"], head=bearer.get("head"), beard=bearer.get("beard"), up=reach, extra=scroll_))
+            o.append(_bearer(p, bearer, dx + dw * 0.5, b, s, up=reach, extra=scroll_))
+        for i, fig in enumerate(others):
+            o.append(fig(p, w * (0.36 - 0.1 * i), b, s * (0.98 - 0.02 * i), flip=True))
         return "".join(o)
     o.append(couch(w * 0.02, b, min(w * 0.18, 120 * k), k))
     o.append(writer(p, w * 0.24, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -160)] if stage == "dictate" else None))
     if scribe:
         sx = w * 0.56
-        o.append(scribe_seated(sx, b - 4 * k, k, **{kk: vv for kk, vv in scribe.items() if kk in ("cloth", "head", "cord")}, flip=True,
+        o.append(scribe_seated(sx, b - 4 * k, k, **_scribe_kw(scribe), flip=True,
                                stage="write" if stage == "dictate" else "read"))
         tx = (w * 0.24 + 76 * k + sx - 78 * k) / 2 - 26 * k             # the low table between them, the lamp and the inkpot on it
         o.append(low_table(tx, b, 52 * k, k) + clay_lamp(tx + 18 * k, b - 31 * k, k * 0.5) + inkpot(tx + 42 * k, b - 30 * k, k * 0.5))
     if bearer:
-        bx = w * 0.92
-        if "veil" in bearer: o.append(robed(p, bx, b, s * 0.94, bearer["cloth"], woman=True, veil=bearer["veil"], flip=True))
-        else: o.append(robed(p, bx, b, s, bearer["cloth"], head=bearer.get("head"), beard=bearer.get("beard"), flip=True))
+        o.append(_bearer(p, bearer, w * 0.92, b, s, flip=True))
+    x0 = 0.81 if bearer else 0.92
+    for i, fig in enumerate(others):
+        o.append(fig(p, w * (x0 - 0.11 * i), b, s * (0.98 - 0.02 * i), flip=True))
+    return "".join(o)
+
+def _shield(x, b, k):
+    """A soldier's curved shield leaning on the wall, (x, b) its left foot."""
+    return (f'<g transform="translate({f(x)} {f(b)}) scale({f(k)})"><path d="M0 -2 L 6 -96 C 22 -100 38 -98 52 -92 L 48 0 C 32 -2 16 -2 0 -2 Z" fill="#A8281E" stroke="{INK}" stroke-width="2.4"></path>'
+            '<circle cx="27" cy="-48" r="7" fill="#C8963E" stroke="#0D0D0F" stroke-width="1.4"></circle>'
+            '<path d="M10 -80 C 20 -72 34 -72 46 -78 M8 -18 C 18 -10 32 -10 44 -16" fill="none" stroke="#E8B830" stroke-width="2"></path></g>')
+
+def _prison(p, w, h, seed, stage, scribe, bearer, night, window, writer, fig_h, others, guard, up, sit):
+    """study()'s prison stages (see study)."""
+    scribe = TERTIUS_LOOK if scribe is None else scribe
+    writer = writer or paul_fig
+    guard = roman_guard if guard is None else guard
+    b = h * 0.95
+    s = (fig_h or h * 0.72) / 205
+    k = s
+    o = [mk.defs(p, *ALL, "ManUp", "WomanUp"), room(w, h, b, wall="#5E4A3C" if night else "#D8C8A8", floor="#3A2E26" if night else "#8A7A62")]
+    if night: o.append(lamp_glow(w * 0.52, b - 60 * k, max(w, h) * 0.55, f"{p}lg", op=0.42))
+    win = _win(window, prison=True)
+    ph_w, ph_h = min(w * 0.2, 130 * k), min(h * 0.32, 80 * k)
+    if stage == "prison_give":
+        if win: o.append(win(w * 0.04, b - 205 * k, min(w * 0.15, 105 * k), min(h * 0.36, 88 * k), night, seed))
+        o.append(pigeonholes(w * 0.5, b - 205 * k, min(ph_w, w * 0.14), ph_h, seed))
+        dx, dw = w * 0.7, min(w * 0.22, 120 * k)
+        o.append(doorway(dx, b - 196 * k, dw, b, seed + 7, night))
+        if scribe:
+            o.append(mat(w * 0.02, b, 100 * k, k) + scribe_seated(w * 0.08, b - 4 * k, k, **_scribe_kw(scribe), stage="write"))
+        gx, px = w * 0.27, w * 0.47
+        if guard: o.append(_shield(gx - 70 * k, b, k * 0.9) + guard(p, gx, b, s))
+        o.append(writer(p, px, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -150)]))
+        if guard: o.append(chain(*guard_hand(gx, b, s), *robed_hand(px, b, s, flip=True), s=k * 0.8))
+        if bearer:
+            o.append(_bearer(p, bearer, dx + dw * 0.5, b, s, up=[(-22, -158), (-42, -146), (-62, -146)], extra=sealed_scroll(-70, -150, 0.3, rot=12)))
+        for i, fig in enumerate(others):
+            o.append(fig(p, w * (0.62 - 0.1 * i), b, s * 0.96, flip=True))
+        return "".join(o)
+    sit = True if sit is None else sit
+    if win: o.append(win(w * 0.38, b - 212 * k, min(w * 0.17, 115 * k), min(h * 0.38, 95 * k), night, seed))
+    o.append(pigeonholes(w * 0.88 - ph_w, b - 205 * k, ph_w, ph_h, seed))
+    if guard: o.append(_shield(w * 0.02, b, k))
+    gx, px = w * 0.12, w * 0.31
+    reading = stage == "prison_read"
+    arm = None if reading or up is False else (up or ([(-22, -158), (-50, -146), (-76, -150)] if sit else [(-22, -158), (-48, -150), (-72, -160)]))
+    if sit: o.append(bench(px - 52 * k, b, 110 * k, k))
+    if guard: o.append(guard(p, gx, b, s))
+    o.append(writer(p, px, b, s, flip=True, up=arm, **({"pose": "sit", "seat": None} if sit else {})))
+    if guard:
+        hx_, hy_ = robed_hand(px, b, s, flip=True, pose="sit" if sit else "stand")
+        o.append(chain(*guard_hand(gx, b, s), hx_, hy_, s=k * 0.8))
+    if scribe:
+        sx = w * 0.62
+        o.append(mat(w * 0.5, b, 120 * k, k) + scribe_seated(sx, b - 4 * k, k, **_scribe_kw(scribe), flip=True, stage="read" if reading else "write"))
+        tx = (px + 60 * k + sx - 78 * k) / 2 - 26 * k
+        o.append(low_table(tx, b, 52 * k, k) + clay_lamp(tx + 18 * k, b - 31 * k, k * 0.5) + inkpot(tx + 42 * k, b - 30 * k, k * 0.5))
+    if bearer: o.append(_bearer(p, bearer, w * 0.92, b, s, flip=True))
+    x0 = 0.81 if bearer else 0.93
+    for i, fig in enumerate(others):
+        o.append(fig(p, w * (x0 - 0.11 * i), b, s * (0.98 - 0.02 * i), flip=True))
     return "".join(o)
 
 def still_life(w, h, seed, sealed=True, night=True):
