@@ -35,8 +35,9 @@ Greek (Gal 2:3): bareheaded, short black hair, clean-shaven, a sand tunic and a 
 warm headcloths (a warm scarf reads as long hair).
 
 Restraint: Satan is never drawn and no serpent is drawn — 2:11, 4:4 ("the god of this world"), 6:15 (Belial), 11:3 (the
-serpent that beguiled Eve), 11:14–15 (fashioned into an angel of light) and 12:7 (a messenger of Satan) are words only, over
-a dark city, a shut door, Paul's face or the thorn branch. Angels (11:14) are only words. Paul's sufferings (1:8–10,
+serpent that beguiled Eve), 11:14–15 (fashioned into an angel of light) and 12:7 (a messenger of Satan) are words only — beside
+Paul's face (2:11, 11:3, 11:14–15), over the veiled town (4:4), over the saints gathered in the light (6:15) and over the thorn
+branch (12:7). Angels (11:14) are only words. Paul's sufferings (1:8–10,
 4:8–12, 6:4–10, 11:23–27) are words over empty places — the road and its tombs, a shut prison door, the rods laid down, a
 heap of stones outside a gate, a broken ship on an empty sea with no one in the water, the river, the robbers' pass, the
 city, the wilderness, a cold camp at night — with no wounds and no beatings drawn; 1:9 the sentence of death is words over
@@ -60,5 +61,7 @@ META = {
      "blurb": "Paul and Timothy to the church of God at Corinth — the letter written in Macedonia; blessed be the God of all comfort; the sentence of death on the road through Asia; sealed, and the earnest of the Spirit; I wrote unto you with many tears; a door opened at Troas; led in triumph, a sweet savor of Christ; ye are our epistle, written in tables that are hearts of flesh; the glory of Moses' face and the veil taken away; light shall shine out of darkness; we have this treasure in earthen vessels; pressed, perplexed, pursued, smitten down; a house not made with hands, eternal, in the heavens; if any man is in Christ, he is a new creature; we are ambassadors on behalf of Christ."},
     {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "God Loveth a Cheerful Giver", "range": "2 Corinthians 6–9", "bible_chapters": [6, 7, 8, 9],
      "blurb": "Behold, now is the day of salvation; as dying, and behold, we live; as sorrowful, yet always rejoicing; be not unequally yoked with unbelievers — we are a temple of the living God; without were fightings, within were fears, but God comforted us by the coming of Titus; godly sorrow worketh repentance unto salvation; the churches of Macedonia in their deep poverty; though he was rich, yet for your sakes he became poor; he that gathered much had nothing over; Titus and the brethren sent with the bounty; he that soweth bountifully shall reap also bountifully; God loveth a cheerful giver; thanks be to God for his unspeakable gift."},
+    {"module": "ch03", "dir": "chapter-03", "num": "3", "name": "My Grace Is Sufficient for Thee", "range": "2 Corinthians 10–13", "bible_chapters": [10, 11, 12, 13],
+     "blurb": "I Paul myself entreat you by the meekness and gentleness of Christ; the weapons of our warfare, mighty to the casting down of strongholds; his letters, they say, are weighty and strong; the measure of the province; I espoused you to one husband; are they Hebrews? so am I — in labors more abundantly, in prisons, thrice shipwrecked, in perils of rivers, of robbers, in the city, in the wilderness, in the sea; let down in a basket by the wall at Damascus; caught up even to the third heaven; a thorn in the flesh; my grace is sufficient for thee, for my power is made perfect in weakness; when I am weak, then am I strong; the grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Spirit, be with you all."},
   ],
 }

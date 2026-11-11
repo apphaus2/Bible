@@ -254,6 +254,125 @@
    "w": 760,
    "h": 1080,
    "title": "32 · Thanksgivings unto God"
+  },
+  "2CO-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · My Grace Is Sufficient for Thee"
+  },
+  "2CO-C03-D-P01-TheCastingDownOfSt.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · The Casting Down of Strongholds"
+  },
+  "2CO-C03-D-P02-HisLettersTheySay.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · His Letters, They Say"
+  },
+  "2CO-C03-D-P03-TheMeasureOfThePro.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · The Measure of the Province"
+  },
+  "2CO-C03-D-P04-AGodlyJealousy.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · A Godly Jealousy"
+  },
+  "2CO-C03-D-P05-NotABurdenOnAnyMan.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · Not a Burden on Any Man"
+  },
+  "2CO-C03-D-P06-AreTheyHebrewsSoAm.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Are They Hebrews? So Am I"
+  },
+  "2CO-C03-D-P07-InLaborsMoreAbunda.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · In Labors More Abundantly"
+  },
+  "2CO-C03-D-P08-InPerils.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · In Perils"
+  },
+  "2CO-C03-D-P09-InPerils.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · In Perils"
+  },
+  "2CO-C03-D-P10-CaughtUpIntoParadi.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Caught Up into Paradise"
+  },
+  "2CO-C03-D-P11-AThornInTheFlesh.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · A Thorn in the Flesh"
+  },
+  "2CO-C03-D-P12-MyGraceIsSufficien.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · My Grace Is Sufficient for Thee"
+  },
+  "2CO-C03-D-P13-TheThirdTimeIAmRea.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · The Third Time I Am Ready to Come"
+  },
+  "2CO-C03-D-P14-TwoWitnessesOrThre.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Two Witnesses or Three"
+  },
+  "2CO-C03-D-P15-ForBuildingUp.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · For Building Up"
+  },
+  "2CO-C03-D-P16-ForBuildingUp.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · For Building Up"
   }
  },
  "order": [
@@ -291,7 +410,24 @@
   "2CO-C02-D-P11-TheMinisteringToTh.dc.html",
   "2CO-C02-D-P12-HeThatSowethBounti.dc.html",
   "2CO-C02-D-P13-GodLovethACheerful.dc.html",
-  "2CO-C02-D-P14-ThanksgivingsUntoG.dc.html"
+  "2CO-C02-D-P14-ThanksgivingsUntoG.dc.html",
+  "2CO-C03-00-Title.dc.html",
+  "2CO-C03-D-P01-TheCastingDownOfSt.dc.html",
+  "2CO-C03-D-P02-HisLettersTheySay.dc.html",
+  "2CO-C03-D-P03-TheMeasureOfThePro.dc.html",
+  "2CO-C03-D-P04-AGodlyJealousy.dc.html",
+  "2CO-C03-D-P05-NotABurdenOnAnyMan.dc.html",
+  "2CO-C03-D-P06-AreTheyHebrewsSoAm.dc.html",
+  "2CO-C03-D-P07-InLaborsMoreAbunda.dc.html",
+  "2CO-C03-D-P08-InPerils.dc.html",
+  "2CO-C03-D-P09-InPerils.dc.html",
+  "2CO-C03-D-P10-CaughtUpIntoParadi.dc.html",
+  "2CO-C03-D-P11-AThornInTheFlesh.dc.html",
+  "2CO-C03-D-P12-MyGraceIsSufficien.dc.html",
+  "2CO-C03-D-P13-TheThirdTimeIAmRea.dc.html",
+  "2CO-C03-D-P14-TwoWitnessesOrThre.dc.html",
+  "2CO-C03-D-P15-ForBuildingUp.dc.html",
+  "2CO-C03-D-P16-ForBuildingUp.dc.html"
  ],
  "notes": {
   "Main": {
@@ -314,6 +450,13 @@
    "text": "Chapter 2 · God Loveth a Cheerful Giver (2 Corinthians 6–9)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · My Grace Is Sufficient for Thee (2 Corinthians 10–13)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],

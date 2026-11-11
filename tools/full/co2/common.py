@@ -11,7 +11,13 @@ from co2 import G
 CODE = "2CO"
 K = EpistleKit(G, CODE, "2 Corinthians", credit="2 Corinthians · Volume Forty-Seven")
 lt, lts, ltj, lp, lj, sg, sgs, gd, gds, sy, wq, qw = K.lt, K.lts, K.ltj, K.lp, K.lj, K.sg, K.sgs, K.gd, K.gds, K.sy, K.wq, K.qw
-D, F, glory, title = K.D, K.F, K.glory, K.title
+D, F, glory = K.D, K.F, K.glory
+
+def title(num, name, rng, svg, bg, quote):
+    """K.title, the name set a little smaller when it is long enough to run to three lines at the opener's 96 px (it would
+    cover the verse range under it)."""
+    html = K.title(num, name, rng, svg, bg, quote)
+    return html.replace("font-size: 96px; line-height: 1.0", "font-size: 80px; line-height: 1.0", 1) if len(name) > 28 else html
 v, sp = G.v, G.span
 
 def lps(*refs, most=280):
