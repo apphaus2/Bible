@@ -18,7 +18,15 @@ Drawings (co1.art …, on top of all of Acts' drawings by way of act.art16, and 
 plate (1:12); the word of the cross as three crosses far off on a hill under a darkened sky (1:18, 1:23, 2:2 — nothing
 nearer); the Jew asking a sign and the Greek with his scroll (1:22); things which eye saw not (2:9); planting and watering,
 God's husbandry (3:6–9); the foundation plate and the fire that proves the work (3:10–15); the temple (3:16, 6:19); the
-stewards (4:1–2); the empty arena (4:9); the tentmakers' bench (4:12); the rod or love (4:21) …
+stewards (4:1–2); the empty arena (4:9); the tentmakers' bench (4:12); the rod or love (4:21); the leaven, the unleavened cakes
+and the passover lamb as an emblem in light (5:6–8); the tribunal in the forum (6:1–8); the idol's temple and its meat
+(8); the ox treading out the corn unmuzzled (9:9); the race, the two crowns and the boxer, the athletes drawn with jointed
+limbs (co1.art3.athlete, 9:24–27); the cloud, the manna and the rock (Exodus', John's and Isaiah's drawings, 10:1–4); the cup
+of blessing (10:16); the Lord's supper (Matthew's drawing, 11:23–25); the gifts of the one Spirit and the body and its members
+as technical plates (12); sounding brass, the bronze mirror, three lamps (13); the pipe, the harp and the trumpet (14:7–8);
+died, buried, raised and the witnesses as greeting cells (15:3–8); the grain, the four fleshes, sun, moon and stars (15:36–41);
+the earthy man and Jesus risen in white light (15:47); the last trump over the opened tombs (15:52); the collection, the road
+through Macedonia, the greetings and Paul's own hand (16).
 
 1 Corinthians' own cast, each the same everywhere (every headcloth cool, dark or off-white — a warm scarf would read as long
 hair): Paul only ever ntcast's face (PAUL and epistle's moods) and epistle.paul_fig; Sosthenes a slate-grey headcloth with a
@@ -34,7 +42,8 @@ an empty house front; 6:9–20 words over dark, empty streets and the temple; 7 
 10:9 drawn with snake.py, no one bitten); 11:30 words only; 15:32 ("fought with beasts at Ephesus") words over the empty
 theatre. The crucifixion is only ever three crosses on a hill far off.
 
-Plan (9,415 words, five chapters): 1 Christ the Power of God (1–4)."""
+Plan (9,415 words, five chapters, 85 pages): 1 Christ the Power of God (1–4) · 2 A Little Leaven (5–7) · 3 In Remembrance of
+Me (8–11) · 4 The Greatest of These Is Love (12–14) · 5 O Death, Where Is Thy Victory? (15–16)."""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from asv import Book
