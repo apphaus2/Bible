@@ -247,6 +247,146 @@
    "w": 760,
    "h": 1080,
    "title": "31 · The Time Is Shortened"
+  },
+  "1CO-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · In Remembrance of Me"
+  },
+  "1CO-C03-D-P01-OneGodTheFather.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · One God, the Father"
+  },
+  "1CO-C03-D-P02-OneGodTheFather.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · One God, the Father"
+  },
+  "1CO-C03-D-P03-AmINotAnApostle.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Am I Not an Apostle?"
+  },
+  "1CO-C03-D-P04-ThouShaltNotMuzzle.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · Thou Shalt Not Muzzle the Ox"
+  },
+  "1CO-C03-D-P05-WoeIsUntoMe.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · Woe Is unto Me"
+  },
+  "1CO-C03-D-P06-AllThingsToAllMen.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · All Things to All Men"
+  },
+  "1CO-C03-D-P07-SoRunThatYeMayAtta.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · So Run, That Ye May Attain"
+  },
+  "1CO-C03-D-P08-UnderTheCloud.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Under the Cloud"
+  },
+  "1CO-C03-D-P09-UnderTheCloud.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Under the Cloud"
+  },
+  "1CO-C03-D-P10-UnderTheCloud.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Under the Cloud"
+  },
+  "1CO-C03-D-P11-TheCupOfBlessing.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · The Cup of Blessing"
+  },
+  "1CO-C03-D-P12-TheCupOfBlessing.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · The Cup of Blessing"
+  },
+  "1CO-C03-D-P13-TheCupOfBlessing.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · The Cup of Blessing"
+  },
+  "1CO-C03-D-P14-PrayingOrProphesyi.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Praying or Prophesying"
+  },
+  "1CO-C03-D-P15-PrayingOrProphesyi.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · Praying or Prophesying"
+  },
+  "1CO-C03-D-P16-PrayingOrProphesyi.dc.html": {
+   "x": 840,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Praying or Prophesying"
+  },
+  "1CO-C03-D-P17-NotForTheBetter.dc.html": {
+   "x": 1680,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · Not for the Better"
+  },
+  "1CO-C03-D-P18-ThisDoInRemembranc.dc.html": {
+   "x": 2520,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · This Do in Remembrance of Me"
+  },
+  "1CO-C03-D-P19-ThisDoInRemembranc.dc.html": {
+   "x": 3360,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · This Do in Remembrance of Me"
   }
  },
  "order": [
@@ -283,7 +423,27 @@
   "1CO-C02-D-P11-ConcerningVirgins.dc.html",
   "1CO-C02-D-P12-TheTimeIsShortened.dc.html",
   "1CO-C02-D-P13-TheTimeIsShortened.dc.html",
-  "1CO-C02-D-P14-TheTimeIsShortened.dc.html"
+  "1CO-C02-D-P14-TheTimeIsShortened.dc.html",
+  "1CO-C03-00-Title.dc.html",
+  "1CO-C03-D-P01-OneGodTheFather.dc.html",
+  "1CO-C03-D-P02-OneGodTheFather.dc.html",
+  "1CO-C03-D-P03-AmINotAnApostle.dc.html",
+  "1CO-C03-D-P04-ThouShaltNotMuzzle.dc.html",
+  "1CO-C03-D-P05-WoeIsUntoMe.dc.html",
+  "1CO-C03-D-P06-AllThingsToAllMen.dc.html",
+  "1CO-C03-D-P07-SoRunThatYeMayAtta.dc.html",
+  "1CO-C03-D-P08-UnderTheCloud.dc.html",
+  "1CO-C03-D-P09-UnderTheCloud.dc.html",
+  "1CO-C03-D-P10-UnderTheCloud.dc.html",
+  "1CO-C03-D-P11-TheCupOfBlessing.dc.html",
+  "1CO-C03-D-P12-TheCupOfBlessing.dc.html",
+  "1CO-C03-D-P13-TheCupOfBlessing.dc.html",
+  "1CO-C03-D-P14-PrayingOrProphesyi.dc.html",
+  "1CO-C03-D-P15-PrayingOrProphesyi.dc.html",
+  "1CO-C03-D-P16-PrayingOrProphesyi.dc.html",
+  "1CO-C03-D-P17-NotForTheBetter.dc.html",
+  "1CO-C03-D-P18-ThisDoInRemembranc.dc.html",
+  "1CO-C03-D-P19-ThisDoInRemembranc.dc.html"
  ],
  "notes": {
   "Main": {
@@ -306,6 +466,13 @@
    "text": "Chapter 2 · A Little Leaven (1 Corinthians 5–7)",
    "x": 0,
    "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · In Remembrance of Me (1 Corinthians 8–11)",
+   "x": 0,
+   "y": 11100
   }
  },
  "designSystems": [],

@@ -58,4 +58,4 @@ SEGS = [
     D(lp("7:37-38"), lambda w, h: A.father_daughter("fd1", w, h, 1737), "#8FD0E2", art_h=260),
     D(lp("7:39-40"), lambda w, h: A.widow_door("wd1", w, h, 1739), "#3A2A5A", art_h=260),
 ]
-PG.extend(K.pack(SEGS, "1CO-C02-D", PG.next(), budget=950, lone=1.5, end=nxt("NEXT · KNOWLEDGE PUFFETH UP")))
+PG.extend(K.pack(SEGS, "1CO-C02-D", PG.next(), budget=950, lone=1.5, end=nxt("NEXT · IN REMEMBRANCE OF ME")))
