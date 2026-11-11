@@ -22,7 +22,20 @@ from genesis.art3 import label, node, route
 from oba.minor import vista, halo, rays, starfield, bolt, rain, sea as sea_
 from job.art import seated
 from exo.art import MOSES_ROBE
-from exo.art10 import MOSES_VEIL
+from exo.art10 import MOSES_VEIL as _EXO_VEIL
+
+# Moses veiled (3:13): Exodus' face under a veil of cloth drawn here — it hangs from under the cord of the headcloth, falls
+# over the brow, catches on the nose and drops past the beard in soft folds, a little translucent so the nose and the beard
+# show through (Exodus' own token lays a flat panel over the profile).
+_VEIL_CLOTH = ('<path d="M154 94 C 180 90 210 93 239 101 C 248 132 257 178 269 213 C 274 221 274 230 270 240 '
+               'C 274 270 277 304 274 340 C 258 347 244 338 228 344 C 210 350 194 340 176 346 C 168 344 162 342 158 338 '
+               'C 151 280 145 200 147 150 C 148 124 150 106 154 94 Z" fill="#F3EFE6" fill-opacity="0.66" stroke="#0D0D0F" stroke-width="2.4" stroke-linejoin="round"></path>'
+               '<path d="M180 96 C 174 170 178 260 184 344 M206 95 C 212 170 202 262 210 346 M228 99 C 240 156 250 226 244 340 '
+               'M262 228 C 256 262 264 300 258 340" fill="none" stroke="#A8A094" stroke-width="2" stroke-linecap="round" opacity="0.85"></path>'
+               '<path d="M194 98 C 200 130 196 168 190 200 M220 98 C 226 124 232 146 238 168" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.6"></path>'
+               '<path d="M238 100 C 206 92 160 88 98 104" fill="none" stroke="#0D0D0F" stroke-width="9" stroke-linecap="round"></path>'
+               '<path d="M238 100 C 206 92 160 88 98 104" fill="none" stroke="#3A2214" stroke-width="6" stroke-linecap="round"></path>')
+MOSES_VEIL = _EXO_VEIL.split('<path d="M150 150 C 200 136')[0] + _VEIL_CLOTH
 import exodus4 as E4
 import act.geo as geo
 
