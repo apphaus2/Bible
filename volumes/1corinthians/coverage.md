@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 271 verses — 271 full, 0 partial, 0 omitted.
+**So far:** 355 verses — 355 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Christ the Power of God (1 Corinthians 1–4)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · In Remembrance of Me (1 Corinthians 8–11)
 
 107 verses: 107 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · The Greatest of These Is Love (1 Corinthians 12–14)
+
+84 verses: 84 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

@@ -387,6 +387,111 @@
    "w": 760,
    "h": 1080,
    "title": "50 · This Do in Remembrance of Me"
+  },
+  "1CO-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Greatest of These Is Love"
+  },
+  "1CO-C04-D-P01-ConcerningSpiritua.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Concerning Spiritual Gifts"
+  },
+  "1CO-C04-D-P02-OneBodyManyMembers.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · One Body, Many Members"
+  },
+  "1CO-C04-D-P03-OneBodyManyMembers.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · One Body, Many Members"
+  },
+  "1CO-C04-D-P04-YeAreTheBodyOfChri.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · Ye Are the Body of Christ"
+  },
+  "1CO-C04-D-P05-TheGreatestOfThese.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · The Greatest of These Is Love"
+  },
+  "1CO-C04-D-P06-TheGreatestOfThese.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Greatest of These Is Love"
+  },
+  "1CO-C04-D-P07-InAMirrorDarkly.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · In a Mirror, Darkly"
+  },
+  "1CO-C04-D-P08-FollowAfterLove.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · Follow After Love"
+  },
+  "1CO-C04-D-P09-AnUncertainVoice.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · An Uncertain Voice"
+  },
+  "1CO-C04-D-P10-AnUncertainVoice.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · An Uncertain Voice"
+  },
+  "1CO-C04-D-P11-AnUncertainVoice.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · An Uncertain Voice"
+  },
+  "1CO-C04-D-P12-AnUncertainVoice.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · An Uncertain Voice"
+  },
+  "1CO-C04-D-P13-DecentlyAndInOrder.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · Decently and in Order"
+  },
+  "1CO-C04-D-P14-DecentlyAndInOrder.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · Decently and in Order"
   }
  },
  "order": [
@@ -443,7 +548,22 @@
   "1CO-C03-D-P16-PrayingOrProphesyi.dc.html",
   "1CO-C03-D-P17-NotForTheBetter.dc.html",
   "1CO-C03-D-P18-ThisDoInRemembranc.dc.html",
-  "1CO-C03-D-P19-ThisDoInRemembranc.dc.html"
+  "1CO-C03-D-P19-ThisDoInRemembranc.dc.html",
+  "1CO-C04-00-Title.dc.html",
+  "1CO-C04-D-P01-ConcerningSpiritua.dc.html",
+  "1CO-C04-D-P02-OneBodyManyMembers.dc.html",
+  "1CO-C04-D-P03-OneBodyManyMembers.dc.html",
+  "1CO-C04-D-P04-YeAreTheBodyOfChri.dc.html",
+  "1CO-C04-D-P05-TheGreatestOfThese.dc.html",
+  "1CO-C04-D-P06-TheGreatestOfThese.dc.html",
+  "1CO-C04-D-P07-InAMirrorDarkly.dc.html",
+  "1CO-C04-D-P08-FollowAfterLove.dc.html",
+  "1CO-C04-D-P09-AnUncertainVoice.dc.html",
+  "1CO-C04-D-P10-AnUncertainVoice.dc.html",
+  "1CO-C04-D-P11-AnUncertainVoice.dc.html",
+  "1CO-C04-D-P12-AnUncertainVoice.dc.html",
+  "1CO-C04-D-P13-DecentlyAndInOrder.dc.html",
+  "1CO-C04-D-P14-DecentlyAndInOrder.dc.html"
  ],
  "notes": {
   "Main": {
@@ -473,6 +593,13 @@
    "text": "Chapter 3 · In Remembrance of Me (1 Corinthians 8–11)",
    "x": 0,
    "y": 11100
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Greatest of These Is Love (1 Corinthians 12–14)",
+   "x": 0,
+   "y": 16400
   }
  },
  "designSystems": [],
