@@ -1,0 +1,21 @@
+{
+ "id": "romans",
+ "order": 45,
+ "name": "Romans",
+ "kanji": "ローマ人への手紙",
+ "thumb": "vol-romans-",
+ "lede": "The forty-fifth book of the Bible, in full: Paul's letter to the saints at Rome, written at Corinth and carried by Phoebe — the gospel the power of God unto salvation, all under sin and justified freely by his grace, Abraham's faith reckoned for righteousness, the free gift in Christ, no condemnation and nothing able to separate us from the love of God, Israel and the olive tree, a living sacrifice, and the greetings, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Power of God unto Salvation",
+   "range": "Romans 1–3",
+   "blurb": "Paul, a servant of Jesus Christ, to all that are in Rome — the letter written at Corinth by lamplight and given to Phoebe; I long to see you; I am not ashamed of the gospel: for it is the power of God unto salvation; the invisible things of him clearly seen; they changed the glory of the incorruptible God for an image; thou art without excuse, O man, whosoever thou art that judgest; the law written in their hearts; there is none righteous, no, not one; for all have sinned, and fall short of the glory of God; being justified freely by his grace.",
+   "prefixes": [
+    "Main.dc.html",
+    "ROM-C01-"
+   ]
+  }
+ ]
+}
