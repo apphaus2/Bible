@@ -1,0 +1,21 @@
+{
+ "id": "1corinthians",
+ "order": 46,
+ "name": "1 Corinthians",
+ "kanji": "コリント人への第一の手紙",
+ "thumb": "vol-1corinthians-",
+ "lede": "The forty-sixth book of the Bible, in full: Paul's first letter to the church of God at Corinth, written at Ephesus with Sosthenes and carried home by Stephanas, Fortunatus and Achaicus — I of Paul, I of Apollos, I of Cephas; the word of the cross, Christ the power of God; I planted, Apollos watered, but God gave the increase; ye are a temple of God; a little leaven; meats offered to idols; the race and the incorruptible crown; the Lord's supper; one body and many members; love, the greatest of these; Christ raised, the firstfruits; O death, where is thy victory? — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Christ the Power of God",
+   "range": "1 Corinthians 1–4",
+   "blurb": "Paul and Sosthenes to the church of God which is at Corinth — the letter written at Ephesus; I am of Paul; and I of Apollos; and I of Cephas; and I of Christ: is Christ divided? The word of the cross is to them that perish foolishness, but unto us who are saved it is the power of God; things which eye saw not; I planted, Apollos watered, but God gave the increase; other foundation can no man lay; the fire shall prove each man's work; ye are a temple of God; a spectacle unto the world; shall I come with a rod, or in love?",
+   "prefixes": [
+    "Main.dc.html",
+    "1CO-C01-"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-11T17:44:50Z"
+ },
+ "title": "1 Corinthians — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "1CO-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Christ the Power of God"
+  },
+  "1CO-C01-D-P01-CalledToBeAnApostl.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Called to Be an Apostle"
+  },
+  "1CO-C01-D-P02-CalledToBeAnApostl.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Called to Be an Apostle"
+  },
+  "1CO-C01-D-P03-NoDivisionsAmongYo.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · No Divisions Among You"
+  },
+  "1CO-C01-D-P04-TheWordOfTheCross.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Word of the Cross"
+  },
+  "1CO-C01-D-P05-ChristThePowerOfGo.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Christ the Power of God"
+  },
+  "1CO-C01-D-P06-NotManyWise.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Not Many Wise"
+  },
+  "1CO-C01-D-P07-JesusChristAndHimC.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Jesus Christ, and Him Crucified"
+  },
+  "1CO-C01-D-P08-ThingsWhichEyeSawN.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Things Which Eye Saw Not"
+  },
+  "1CO-C01-D-P09-ThingsWhichEyeSawN.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Things Which Eye Saw Not"
+  },
+  "1CO-C01-D-P10-BabesInChrist.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Babes in Christ"
+  },
+  "1CO-C01-D-P11-OtherFoundationCan.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Other Foundation Can No Man Lay"
+  },
+  "1CO-C01-D-P12-YeAreATempleOfGod.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Ye Are a Temple of God"
+  },
+  "1CO-C01-D-P13-YeAreATempleOfGod.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Ye Are a Temple of God"
+  },
+  "1CO-C01-D-P14-StewardsOfTheMyste.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Stewards of the Mysteries of God"
+  },
+  "1CO-C01-D-P15-ASpectacleUntoTheW.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · A Spectacle unto the World"
+  },
+  "1CO-C01-D-P16-FoolsForChristSSak.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Fools for Christ's Sake"
+  },
+  "1CO-C01-D-P17-IHaveSentUntoYouTi.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · I Have Sent unto You Timothy"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "1CO-C01-00-Title.dc.html",
+  "1CO-C01-D-P01-CalledToBeAnApostl.dc.html",
+  "1CO-C01-D-P02-CalledToBeAnApostl.dc.html",
+  "1CO-C01-D-P03-NoDivisionsAmongYo.dc.html",
+  "1CO-C01-D-P04-TheWordOfTheCross.dc.html",
+  "1CO-C01-D-P05-ChristThePowerOfGo.dc.html",
+  "1CO-C01-D-P06-NotManyWise.dc.html",
+  "1CO-C01-D-P07-JesusChristAndHimC.dc.html",
+  "1CO-C01-D-P08-ThingsWhichEyeSawN.dc.html",
+  "1CO-C01-D-P09-ThingsWhichEyeSawN.dc.html",
+  "1CO-C01-D-P10-BabesInChrist.dc.html",
+  "1CO-C01-D-P11-OtherFoundationCan.dc.html",
+  "1CO-C01-D-P12-YeAreATempleOfGod.dc.html",
+  "1CO-C01-D-P13-YeAreATempleOfGod.dc.html",
+  "1CO-C01-D-P14-StewardsOfTheMyste.dc.html",
+  "1CO-C01-D-P15-ASpectacleUntoTheW.dc.html",
+  "1CO-C01-D-P16-FoolsForChristSSak.dc.html",
+  "1CO-C01-D-P17-IHaveSentUntoYouTi.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "1 Corinthians Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Christ the Power of God (1 Corinthians 1–4)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
