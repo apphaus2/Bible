@@ -1,0 +1,790 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-11T16:59:23Z"
+ },
+ "title": "Romans — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "ROM-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Power of God unto Salvation"
+  },
+  "ROM-C01-D-P01-PaulAServantOfJesu.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Paul, a Servant of Jesus Christ"
+  },
+  "ROM-C01-D-P02-ILongToSeeYou.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · I Long to See You"
+  },
+  "ROM-C01-D-P03-NotAshamedOfTheGos.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Not Ashamed of the Gospel"
+  },
+  "ROM-C01-D-P04-WithoutExcuse.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Without Excuse"
+  },
+  "ROM-C01-D-P05-WithoutExcuse.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Without Excuse"
+  },
+  "ROM-C01-D-P06-GodGaveThemUp.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · God Gave Them Up"
+  },
+  "ROM-C01-D-P07-GodGaveThemUp.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · God Gave Them Up"
+  },
+  "ROM-C01-D-P08-ThouThatJudgest.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Thou That Judgest"
+  },
+  "ROM-C01-D-P09-AccordingToHisWork.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · According to His Works"
+  },
+  "ROM-C01-D-P10-TheLawWrittenInThe.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Law Written in Their Hearts"
+  },
+  "ROM-C01-D-P11-ALightOfThemInDark.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Light of Them in Darkness"
+  },
+  "ROM-C01-D-P12-TheOraclesOfGod.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Oracles of God"
+  },
+  "ROM-C01-D-P13-TheOraclesOfGod.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Oracles of God"
+  },
+  "ROM-C01-D-P14-NoneRighteous.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · None Righteous"
+  },
+  "ROM-C01-D-P15-NoneRighteous.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · None Righteous"
+  },
+  "ROM-C01-D-P16-ApartFromTheLaw.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Apart from the Law"
+  },
+  "ROM-C01-D-P17-JustifiedFreelyByH.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Justified Freely by His Grace"
+  },
+  "ROM-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Justified by Faith"
+  },
+  "ROM-C02-D-P01-AbrahamBelievedGod.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Abraham Believed God"
+  },
+  "ROM-C02-D-P02-TheFatherOfAllThem.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · The Father of All Them That Believe"
+  },
+  "ROM-C02-D-P03-HeirOfTheWorld.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Heir of the World"
+  },
+  "ROM-C02-D-P04-InHopeBelievedAgai.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · In Hope Believed Against Hope"
+  },
+  "ROM-C02-D-P05-InHopeBelievedAgai.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · In Hope Believed Against Hope"
+  },
+  "ROM-C02-D-P06-PeaceWithGod.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · Peace with God"
+  },
+  "ROM-C02-D-P07-ThroughOneMan.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Through One Man"
+  },
+  "ROM-C02-D-P08-ThroughOneMan.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Through One Man"
+  },
+  "ROM-C02-D-P09-ThroughOneMan.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Through One Man"
+  },
+  "ROM-C02-D-P10-NewnessOfLife.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Newness of Life"
+  },
+  "ROM-C02-D-P11-NewnessOfLife.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Newness of Life"
+  },
+  "ROM-C02-D-P12-ServantsOfRighteou.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Servants of Righteousness"
+  },
+  "ROM-C02-D-P13-DeadToTheLaw.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Dead to the Law"
+  },
+  "ROM-C02-D-P14-TheLawIsHoly.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Law Is Holy"
+  },
+  "ROM-C02-D-P15-TheLawIsHoly.dc.html": {
+   "x": 0,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · The Law Is Holy"
+  },
+  "ROM-C02-D-P16-WretchedManThatIAm.dc.html": {
+   "x": 840,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Wretched Man That I Am"
+  },
+  "ROM-C02-D-P17-WretchedManThatIAm.dc.html": {
+   "x": 1680,
+   "y": 10900,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · Wretched Man That I Am"
+  },
+  "ROM-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · No Condemnation"
+  },
+  "ROM-C03-D-P01-NoCondemnation.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · No Condemnation"
+  },
+  "ROM-C03-D-P02-NoCondemnation.dc.html": {
+   "x": 1680,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · No Condemnation"
+  },
+  "ROM-C03-D-P03-NoCondemnation.dc.html": {
+   "x": 2520,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · No Condemnation"
+  },
+  "ROM-C03-D-P04-AbbaFather.dc.html": {
+   "x": 3360,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · Abba, Father"
+  },
+  "ROM-C03-D-P05-TheWholeCreationGr.dc.html": {
+   "x": 0,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · The Whole Creation Groaneth"
+  },
+  "ROM-C03-D-P06-TheWholeCreationGr.dc.html": {
+   "x": 840,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · The Whole Creation Groaneth"
+  },
+  "ROM-C03-D-P07-IfGodIsForUs.dc.html": {
+   "x": 1680,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · If God Is for Us"
+  },
+  "ROM-C03-D-P08-WhoShallSeparateUs.dc.html": {
+   "x": 2520,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Who Shall Separate Us"
+  },
+  "ROM-C03-D-P09-WhoShallSeparateUs.dc.html": {
+   "x": 3360,
+   "y": 13800,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Who Shall Separate Us"
+  },
+  "ROM-C03-D-P10-WhoShallSeparateUs.dc.html": {
+   "x": 0,
+   "y": 15000,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Who Shall Separate Us"
+  },
+  "ROM-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · The Depth of the Riches"
+  },
+  "ROM-C04-D-P01-GreatSorrow.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · Great Sorrow"
+  },
+  "ROM-C04-D-P02-TheChildrenOfThePr.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · The Children of the Promise"
+  },
+  "ROM-C04-D-P03-OfGodThatHathMercy.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · Of God That Hath Mercy"
+  },
+  "ROM-C04-D-P04-ThePotterAndTheCla.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Potter and the Clay"
+  },
+  "ROM-C04-D-P05-ThePotterAndTheCla.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Potter and the Clay"
+  },
+  "ROM-C04-D-P06-ThePotterAndTheCla.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · The Potter and the Clay"
+  },
+  "ROM-C04-D-P07-TheStoneOfStumblin.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · The Stone of Stumbling"
+  },
+  "ROM-C04-D-P08-TheWordIsNighThee.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · The Word Is Nigh Thee"
+  },
+  "ROM-C04-D-P09-TheWordIsNighThee.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · The Word Is Nigh Thee"
+  },
+  "ROM-C04-D-P10-HowBeautifulAreThe.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · How Beautiful Are the Feet"
+  },
+  "ROM-C04-D-P11-ARemnant.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · A Remnant"
+  },
+  "ROM-C04-D-P12-ARemnant.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · A Remnant"
+  },
+  "ROM-C04-D-P13-ARemnant.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · A Remnant"
+  },
+  "ROM-C04-D-P14-TheOliveTree.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Olive Tree"
+  },
+  "ROM-C04-D-P15-TheOliveTree.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · The Olive Tree"
+  },
+  "ROM-C04-D-P16-ThisMystery.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · This Mystery"
+  },
+  "ROM-C04-D-P17-OTheDepthOfTheRich.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · O the Depth of the Riches"
+  },
+  "ROM-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · A Living Sacrifice"
+  },
+  "ROM-C05-D-P01-ALivingSacrifice.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · A Living Sacrifice"
+  },
+  "ROM-C05-D-P02-OneBody.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · One Body"
+  },
+  "ROM-C05-D-P03-OneBody.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · One Body"
+  },
+  "ROM-C05-D-P04-OvercomeEvilWithGo.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · Overcome Evil with Good"
+  },
+  "ROM-C05-D-P05-TheHigherPowers.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · The Higher Powers"
+  },
+  "ROM-C05-D-P06-TheHigherPowers.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Higher Powers"
+  },
+  "ROM-C05-D-P07-TheArmorOfLight.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Armor of Light"
+  },
+  "ROM-C05-D-P08-TheWeakAndTheStron.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Weak and the Strong"
+  },
+  "ROM-C05-D-P09-TheWeakAndTheStron.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Weak and the Strong"
+  },
+  "ROM-C05-D-P10-EveryKneeShallBow.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Every Knee Shall Bow"
+  },
+  "ROM-C05-D-P11-EveryKneeShallBow.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Every Knee Shall Bow"
+  },
+  "ROM-C05-D-P12-WeThatAreStrong.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · We That Are Strong"
+  },
+  "ROM-C05-D-P13-RejoiceYeGentiles.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Rejoice, Ye Gentiles"
+  },
+  "ROM-C05-D-P14-RejoiceYeGentiles.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Rejoice, Ye Gentiles"
+  },
+  "ROM-C05-D-P15-UntoIllyricum.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Unto Illyricum"
+  },
+  "ROM-C05-D-P16-UntoSpain.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Unto Spain"
+  },
+  "ROM-C05-D-P17-UntoSpain.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Unto Spain"
+  },
+  "ROM-C05-D-P18-ICommendUntoYouPho.dc.html": {
+   "x": 2520,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · I Commend unto You Phoebe"
+  },
+  "ROM-C05-G-P01-Salute.dc.html": {
+   "x": 3360,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · Salute"
+  },
+  "ROM-C05-G-P02-Salute.dc.html": {
+   "x": 0,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Salute"
+  },
+  "ROM-C05-G-P03-Salute.dc.html": {
+   "x": 840,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Salute"
+  },
+  "ROM-C05-E-P01-TheGodOfPeace.dc.html": {
+   "x": 1680,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · The God of Peace"
+  },
+  "ROM-C05-E-P02-ITertius.dc.html": {
+   "x": 2520,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · I Tertius"
+  },
+  "ROM-C05-E-P03-ToTheOnlyWiseGod.dc.html": {
+   "x": 3360,
+   "y": 26800,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · To the Only Wise God"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "ROM-C01-00-Title.dc.html",
+  "ROM-C01-D-P01-PaulAServantOfJesu.dc.html",
+  "ROM-C01-D-P02-ILongToSeeYou.dc.html",
+  "ROM-C01-D-P03-NotAshamedOfTheGos.dc.html",
+  "ROM-C01-D-P04-WithoutExcuse.dc.html",
+  "ROM-C01-D-P05-WithoutExcuse.dc.html",
+  "ROM-C01-D-P06-GodGaveThemUp.dc.html",
+  "ROM-C01-D-P07-GodGaveThemUp.dc.html",
+  "ROM-C01-D-P08-ThouThatJudgest.dc.html",
+  "ROM-C01-D-P09-AccordingToHisWork.dc.html",
+  "ROM-C01-D-P10-TheLawWrittenInThe.dc.html",
+  "ROM-C01-D-P11-ALightOfThemInDark.dc.html",
+  "ROM-C01-D-P12-TheOraclesOfGod.dc.html",
+  "ROM-C01-D-P13-TheOraclesOfGod.dc.html",
+  "ROM-C01-D-P14-NoneRighteous.dc.html",
+  "ROM-C01-D-P15-NoneRighteous.dc.html",
+  "ROM-C01-D-P16-ApartFromTheLaw.dc.html",
+  "ROM-C01-D-P17-JustifiedFreelyByH.dc.html",
+  "ROM-C02-00-Title.dc.html",
+  "ROM-C02-D-P01-AbrahamBelievedGod.dc.html",
+  "ROM-C02-D-P02-TheFatherOfAllThem.dc.html",
+  "ROM-C02-D-P03-HeirOfTheWorld.dc.html",
+  "ROM-C02-D-P04-InHopeBelievedAgai.dc.html",
+  "ROM-C02-D-P05-InHopeBelievedAgai.dc.html",
+  "ROM-C02-D-P06-PeaceWithGod.dc.html",
+  "ROM-C02-D-P07-ThroughOneMan.dc.html",
+  "ROM-C02-D-P08-ThroughOneMan.dc.html",
+  "ROM-C02-D-P09-ThroughOneMan.dc.html",
+  "ROM-C02-D-P10-NewnessOfLife.dc.html",
+  "ROM-C02-D-P11-NewnessOfLife.dc.html",
+  "ROM-C02-D-P12-ServantsOfRighteou.dc.html",
+  "ROM-C02-D-P13-DeadToTheLaw.dc.html",
+  "ROM-C02-D-P14-TheLawIsHoly.dc.html",
+  "ROM-C02-D-P15-TheLawIsHoly.dc.html",
+  "ROM-C02-D-P16-WretchedManThatIAm.dc.html",
+  "ROM-C02-D-P17-WretchedManThatIAm.dc.html",
+  "ROM-C03-00-Title.dc.html",
+  "ROM-C03-D-P01-NoCondemnation.dc.html",
+  "ROM-C03-D-P02-NoCondemnation.dc.html",
+  "ROM-C03-D-P03-NoCondemnation.dc.html",
+  "ROM-C03-D-P04-AbbaFather.dc.html",
+  "ROM-C03-D-P05-TheWholeCreationGr.dc.html",
+  "ROM-C03-D-P06-TheWholeCreationGr.dc.html",
+  "ROM-C03-D-P07-IfGodIsForUs.dc.html",
+  "ROM-C03-D-P08-WhoShallSeparateUs.dc.html",
+  "ROM-C03-D-P09-WhoShallSeparateUs.dc.html",
+  "ROM-C03-D-P10-WhoShallSeparateUs.dc.html",
+  "ROM-C04-00-Title.dc.html",
+  "ROM-C04-D-P01-GreatSorrow.dc.html",
+  "ROM-C04-D-P02-TheChildrenOfThePr.dc.html",
+  "ROM-C04-D-P03-OfGodThatHathMercy.dc.html",
+  "ROM-C04-D-P04-ThePotterAndTheCla.dc.html",
+  "ROM-C04-D-P05-ThePotterAndTheCla.dc.html",
+  "ROM-C04-D-P06-ThePotterAndTheCla.dc.html",
+  "ROM-C04-D-P07-TheStoneOfStumblin.dc.html",
+  "ROM-C04-D-P08-TheWordIsNighThee.dc.html",
+  "ROM-C04-D-P09-TheWordIsNighThee.dc.html",
+  "ROM-C04-D-P10-HowBeautifulAreThe.dc.html",
+  "ROM-C04-D-P11-ARemnant.dc.html",
+  "ROM-C04-D-P12-ARemnant.dc.html",
+  "ROM-C04-D-P13-ARemnant.dc.html",
+  "ROM-C04-D-P14-TheOliveTree.dc.html",
+  "ROM-C04-D-P15-TheOliveTree.dc.html",
+  "ROM-C04-D-P16-ThisMystery.dc.html",
+  "ROM-C04-D-P17-OTheDepthOfTheRich.dc.html",
+  "ROM-C05-00-Title.dc.html",
+  "ROM-C05-D-P01-ALivingSacrifice.dc.html",
+  "ROM-C05-D-P02-OneBody.dc.html",
+  "ROM-C05-D-P03-OneBody.dc.html",
+  "ROM-C05-D-P04-OvercomeEvilWithGo.dc.html",
+  "ROM-C05-D-P05-TheHigherPowers.dc.html",
+  "ROM-C05-D-P06-TheHigherPowers.dc.html",
+  "ROM-C05-D-P07-TheArmorOfLight.dc.html",
+  "ROM-C05-D-P08-TheWeakAndTheStron.dc.html",
+  "ROM-C05-D-P09-TheWeakAndTheStron.dc.html",
+  "ROM-C05-D-P10-EveryKneeShallBow.dc.html",
+  "ROM-C05-D-P11-EveryKneeShallBow.dc.html",
+  "ROM-C05-D-P12-WeThatAreStrong.dc.html",
+  "ROM-C05-D-P13-RejoiceYeGentiles.dc.html",
+  "ROM-C05-D-P14-RejoiceYeGentiles.dc.html",
+  "ROM-C05-D-P15-UntoIllyricum.dc.html",
+  "ROM-C05-D-P16-UntoSpain.dc.html",
+  "ROM-C05-D-P17-UntoSpain.dc.html",
+  "ROM-C05-D-P18-ICommendUntoYouPho.dc.html",
+  "ROM-C05-G-P01-Salute.dc.html",
+  "ROM-C05-G-P02-Salute.dc.html",
+  "ROM-C05-G-P03-Salute.dc.html",
+  "ROM-C05-E-P01-TheGodOfPeace.dc.html",
+  "ROM-C05-E-P02-ITertius.dc.html",
+  "ROM-C05-E-P03-ToTheOnlyWiseGod.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Romans Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Power of God unto Salvation (Romans 1–3)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Justified by Faith (Romans 4–7)",
+   "x": 0,
+   "y": 7000
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · No Condemnation (Romans 8)",
+   "x": 0,
+   "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · The Depth of the Riches (Romans 9–11)",
+   "x": 0,
+   "y": 16400
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · A Living Sacrifice (Romans 12–16)",
+   "x": 0,
+   "y": 21700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

@@ -21,7 +21,7 @@ def _height(lines, bw, s):
         if kind == "cap":
             fs = min(11.5, max(9.5, s * 0.66)); cpl = max(8, (bw - 24) / (fs * 0.64))
             tot += math.ceil(ems(text, 0.64) / cpl) * fs * 1.45 + 20
-        elif kind in ("say", "song"):
+        elif kind in ("say", "song", "letter"):
             cpl = max(6, (bw - 36) / (s * 0.56)); tot += math.ceil(ems(text, 0.56) / cpl) * s * 1.16 + 30
         else:
             cpl = max(6, (bw - 36) / (s * 0.53)); tot += math.ceil(ems(text, 0.53) / cpl) * s * 1.15 + 32
@@ -50,6 +50,17 @@ def _song(text, s, color="#7A3BA8"):
             f'box-shadow: inset 6px 0 0 #FFF8E6, inset 10px 0 0 {color}, 4px 4px 0 #0D0D0F; font-family: \'Archivo Narrow\', sans-serif; font-weight: 700; '
             f'font-size: {s}px; line-height: 1.18; letter-spacing: 0.02em; text-transform: uppercase">{text}</div>')
 
+LETTER_TAIL = "#7A4A2A"
+def _letter(text, s, side=None):
+    """A line of a letter (the epistles: the writer speaking to the reader): a parchment box with a 2 px ink border and a
+    sepia rule down the left edge; side= "left"/"right" gives it a short sepia tail toward the writer's face."""
+    box = (f'<div style="padding: 10px 14px 11px 19px; background: #F6EEDA; color: #0D0D0F; border: 2px solid #0D0D0F; box-shadow: inset 5px 0 0 {LETTER_TAIL}; '
+           f"font-family: 'Archivo Narrow', sans-serif; font-weight: 700; font-size: {s}px; line-height: 1.17; letter-spacing: 0.01em; text-transform: uppercase\">{text}</div>")
+    if not side: return box
+    tail = (f'<div style="position: absolute; {side}: -9px; top: 14px; width: 14px; height: 14px; background: {LETTER_TAIL}; '
+            f'border-{side}: 2px solid #0D0D0F; border-bottom: 2px solid #0D0D0F; transform: rotate({45 if side == "left" else -45}deg)"></div>')
+    return f'<div style="position: relative">{tail}{box.replace("<div style=\"", "<div style=\"position: relative; ", 1)}</div>'                # the box over the tail: only its point shows
+
 def _god(text, s):
     return (f'<div style="padding: 12px 16px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
             f'font-family: Anton, sans-serif; font-size: {s}px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase">{text}</div>')
@@ -57,8 +68,10 @@ def _god(text, s):
 def column(lines, bw, h, side="left", hi=21):
     s = fit(lines, bw, h, hi=hi)
     fs = min(11.5, max(9.5, s * 0.66))
-    items = []
+    items, tailed = [], False
     for kind, text in lines:
+        if kind == "letter":                       # only the first letter box of a column carries the tail
+            items.append(_letter(text, s, None if tailed else side)); tailed = True; continue
         items.append(text if kind == "raw" else _cap(text, fs) if kind == "cap" else _say(text, s, side) if kind == "say" else _song(text, s) if kind == "song" else _god(text, s))
     return items
 
