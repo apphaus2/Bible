@@ -16,6 +16,16 @@
     "Main.dc.html",
     "1CO-C01-"
    ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "A Little Leaven",
+   "range": "1 Corinthians 5–7",
+   "blurb": "Ye are puffed up, and did not rather mourn; know ye not that a little leaven leaveneth the whole lump? Purge out the old leaven, for our passover also hath been sacrificed, even Christ; brother goeth to law with brother, and that before unbelievers; but ye were washed, but ye were sanctified; your body is a temple of the Holy Spirit, for ye were bought with a price; concerning the things whereof ye wrote — the married, the unmarried and the widows, the bondservant and the free; the time is shortened, for the fashion of this world passeth away.",
+   "prefixes": [
+    "1CO-C02-"
+   ]
   }
  ]
 }

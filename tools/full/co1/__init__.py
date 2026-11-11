@@ -47,5 +47,7 @@ META = {
   "chapters": [
     {"module": "ch01", "dir": "chapter-01", "num": "1", "name": "Christ the Power of God", "range": "1 Corinthians 1–4", "bible_chapters": [1, 2, 3, 4],
      "blurb": "Paul and Sosthenes to the church of God which is at Corinth — the letter written at Ephesus; I am of Paul; and I of Apollos; and I of Cephas; and I of Christ: is Christ divided? The word of the cross is to them that perish foolishness, but unto us who are saved it is the power of God; things which eye saw not; I planted, Apollos watered, but God gave the increase; other foundation can no man lay; the fire shall prove each man's work; ye are a temple of God; a spectacle unto the world; shall I come with a rod, or in love?"},
+    {"module": "ch02", "dir": "chapter-02", "num": "2", "name": "A Little Leaven", "range": "1 Corinthians 5–7", "bible_chapters": [5, 6, 7],
+     "blurb": "Ye are puffed up, and did not rather mourn; know ye not that a little leaven leaveneth the whole lump? Purge out the old leaven, for our passover also hath been sacrificed, even Christ; brother goeth to law with brother, and that before unbelievers; but ye were washed, but ye were sanctified; your body is a temple of the Holy Spirit, for ye were bought with a price; concerning the things whereof ye wrote — the married, the unmarried and the widows, the bondservant and the free; the time is shortened, for the fashion of this world passeth away."},
   ],
 }

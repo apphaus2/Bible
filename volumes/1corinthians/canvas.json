@@ -142,6 +142,111 @@
    "w": 760,
    "h": 1080,
    "title": "17 · I Have Sent unto You Timothy"
+  },
+  "1CO-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · A Little Leaven"
+  },
+  "1CO-C02-D-P01-PuffedUp.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Puffed Up"
+  },
+  "1CO-C02-D-P02-NotToKeepCompany.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Not to Keep Company"
+  },
+  "1CO-C02-D-P03-BrotherGoethToLawW.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Brother Goeth to Law with Brother"
+  },
+  "1CO-C02-D-P04-BrotherGoethToLawW.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · Brother Goeth to Law with Brother"
+  },
+  "1CO-C02-D-P05-SuchWereSomeOfYou.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Such Were Some of You"
+  },
+  "1CO-C02-D-P06-AllThingsAreLawful.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · All Things Are Lawful"
+  },
+  "1CO-C02-D-P07-ConcerningTheThing.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · Concerning the Things Whereof Ye Wrote"
+  },
+  "1CO-C02-D-P08-ConcerningTheThing.dc.html": {
+   "x": 2520,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · Concerning the Things Whereof Ye Wrote"
+  },
+  "1CO-C02-D-P09-NowAreTheyHoly.dc.html": {
+   "x": 3360,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · Now Are They Holy"
+  },
+  "1CO-C02-D-P10-AsGodHathCalledEac.dc.html": {
+   "x": 0,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · As God Hath Called Each"
+  },
+  "1CO-C02-D-P11-ConcerningVirgins.dc.html": {
+   "x": 840,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Concerning Virgins"
+  },
+  "1CO-C02-D-P12-TheTimeIsShortened.dc.html": {
+   "x": 1680,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · The Time Is Shortened"
+  },
+  "1CO-C02-D-P13-TheTimeIsShortened.dc.html": {
+   "x": 2520,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · The Time Is Shortened"
+  },
+  "1CO-C02-D-P14-TheTimeIsShortened.dc.html": {
+   "x": 3360,
+   "y": 9700,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · The Time Is Shortened"
   }
  },
  "order": [
@@ -163,7 +268,22 @@
   "1CO-C01-D-P14-StewardsOfTheMyste.dc.html",
   "1CO-C01-D-P15-ASpectacleUntoTheW.dc.html",
   "1CO-C01-D-P16-FoolsForChristSSak.dc.html",
-  "1CO-C01-D-P17-IHaveSentUntoYouTi.dc.html"
+  "1CO-C01-D-P17-IHaveSentUntoYouTi.dc.html",
+  "1CO-C02-00-Title.dc.html",
+  "1CO-C02-D-P01-PuffedUp.dc.html",
+  "1CO-C02-D-P02-NotToKeepCompany.dc.html",
+  "1CO-C02-D-P03-BrotherGoethToLawW.dc.html",
+  "1CO-C02-D-P04-BrotherGoethToLawW.dc.html",
+  "1CO-C02-D-P05-SuchWereSomeOfYou.dc.html",
+  "1CO-C02-D-P06-AllThingsAreLawful.dc.html",
+  "1CO-C02-D-P07-ConcerningTheThing.dc.html",
+  "1CO-C02-D-P08-ConcerningTheThing.dc.html",
+  "1CO-C02-D-P09-NowAreTheyHoly.dc.html",
+  "1CO-C02-D-P10-AsGodHathCalledEac.dc.html",
+  "1CO-C02-D-P11-ConcerningVirgins.dc.html",
+  "1CO-C02-D-P12-TheTimeIsShortened.dc.html",
+  "1CO-C02-D-P13-TheTimeIsShortened.dc.html",
+  "1CO-C02-D-P14-TheTimeIsShortened.dc.html"
  ],
  "notes": {
   "Main": {
@@ -179,6 +299,13 @@
    "text": "Chapter 1 · Christ the Power of God (1 Corinthians 1–4)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · A Little Leaven (1 Corinthians 5–7)",
+   "x": 0,
+   "y": 7000
   }
  },
  "designSystems": [],
