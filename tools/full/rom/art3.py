@@ -61,25 +61,57 @@ def new_grain(w, h, seed):
                      f'stroke="#7AB84A" stroke-width="{f(1.4 + j * 0.4)}" fill="none"></path>')
     return "".join(o)
 
+def love_seal(cx, cy, R, text, sub=None):
+    """A seal of light in the manner of the golden chain: a gold ring doubled, rays about it, the words inscribed within
+    (svg text, a label) — for the love of God and of Christ where the text names no heart."""
+    o = [halo(cx, cy, R * 1.7, "#FFE680", 0.55), rays(cx, cy, 24, R * 1.08, R * 1.6, "#FFF4C2", 0.4, 2.4),
+         f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R)}" fill="#1A1A3A" stroke="#0D0D0F" stroke-width="{f(R * 0.2)}"></circle>',
+         f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R)}" fill="none" stroke="#E8B830" stroke-width="{f(R * 0.13)}"></circle>',
+         f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R * 0.78)}" fill="none" stroke="#FFD23F" stroke-width="{f(max(1.4, R * 0.03))}"></circle>']
+    words = text.split(" ")
+    lines = [" ".join(words[:len(words) // 2 + len(words) % 2]), " ".join(words[len(words) // 2 + len(words) % 2:])] if len(text) > 10 else [text]
+    fs = max(8, min(14, R * 0.22))
+    for i, t in enumerate(lines):
+        o.append(label(cx, cy + (i - (len(lines) - 1) / 2) * fs * 1.3 + fs * 0.35 - (fs * 0.5 if sub else 0), t, GOLD, fs))
+    if sub: o.append(label(cx, cy + R * 0.5, sub, "#FFE6A0", max(6.5, fs * 0.6)))
+    return "".join(o)
+
+def _chain_link(x, y, rx, ry, rot, color, sw):
+    return (f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(rx)}" ry="{f(ry)}" transform="rotate({rot} {f(x)} {f(y)})" fill="none" stroke="#0D0D0F" stroke-width="{f(sw * 1.5)}"></ellipse>'
+            f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(rx)}" ry="{f(ry)}" transform="rotate({rot} {f(x)} {f(y)})" fill="none" stroke="{color}" stroke-width="{f(sw)}"></ellipse>')
+
 def adoption(w, h):
-    """Not the spirit of bondage again unto fear, but the spirit of adoption: a plate — an iron slave-collar broken open at
-    the left; at the right a signet ring and a testament sealed for the heirs, HEIRS OF GOD · JOINT-HEIRS WITH CHRIST."""
+    """Not the spirit of bondage again unto fear, but the spirit of adoption: a plate in two halves, the drawings filling
+    them — at the left a slave's iron chain hanging from its staple in the wall, broken, the lower links fallen in a heap
+    (BONDAGE · FEAR); at the right the testament of adoption unrolled from top to bottom, sealed in red, the signet ring
+    beside the seal (ADOPTION · ABBA, FATHER); beneath them, HEIRS OF GOD · JOINT-HEIRS WITH CHRIST."""
     o = [plate_bg(w, h, "ROMANS 8:15–17 · BONDAGE · ADOPTION")]
-    k = min(w / 700, h / 220); cy = h * 0.56
-    cx = w * 0.26
-    o.append(f'<path d="M{f(cx - 50 * k)} {f(cy)} A {f(50 * k)} {f(36 * k)} 0 0 1 {f(cx + 40 * k)} {f(cy - 22 * k)}" fill="none" stroke="#0D0D0F" stroke-width="{f(16 * k)}"></path>'
-             f'<path d="M{f(cx - 50 * k)} {f(cy)} A {f(50 * k)} {f(36 * k)} 0 0 1 {f(cx + 40 * k)} {f(cy - 22 * k)}" fill="none" stroke="#6A6A74" stroke-width="{f(11 * k)}"></path>'
-             f'<path d="M{f(cx - 44 * k)} {f(cy + 18 * k)} A {f(50 * k)} {f(36 * k)} 0 0 0 {f(cx + 48 * k)} {f(cy + 8 * k)}" fill="none" stroke="#0D0D0F" stroke-width="{f(16 * k)}"></path>'
-             f'<path d="M{f(cx - 44 * k)} {f(cy + 18 * k)} A {f(50 * k)} {f(36 * k)} 0 0 0 {f(cx + 48 * k)} {f(cy + 8 * k)}" fill="none" stroke="#6A6A74" stroke-width="{f(11 * k)}"></path>')
-    o.append(label(cx, min(h - 12, cy + 70 * k), "THE SPIRIT OF BONDAGE · FEAR", "#C8C8E8", 10))
-    gx = w * 0.74
-    o.append(halo(gx, cy, 90 * k, "#FFE680", 0.4) + open_letter(gx - 70 * k, cy - 50 * k, 110 * k, 80 * k, rows=5, seed=815, color="#E8D8B0")
-             + f'<circle cx="{f(gx + 30 * k)}" cy="{f(cy + 30 * k)}" r="{f(12 * k)}" fill="#B5121B" stroke="{INK}" stroke-width="1.6"></circle>'
-             f'<circle cx="{f(gx + 64 * k)}" cy="{f(cy + 6 * k)}" r="{f(16 * k)}" fill="none" stroke="#0D0D0F" stroke-width="{f(8 * k)}"></circle>'
-             f'<circle cx="{f(gx + 64 * k)}" cy="{f(cy + 6 * k)}" r="{f(16 * k)}" fill="none" stroke="#E8B830" stroke-width="{f(5 * k)}"></circle>'
-             f'<rect x="{f(gx + 56 * k)}" y="{f(cy - 22 * k)}" width="{f(16 * k)}" height="{f(13 * k)}" rx="2" fill="#2C4A8A" stroke="{INK}" stroke-width="1.4"></rect>')
-    o.append(label(gx, min(h - 26, cy + 70 * k), "THE SPIRIT OF ADOPTION", GOLD, 10) + label(gx, min(h - 12, cy + 84 * k), "HEIRS OF GOD · JOINT-HEIRS WITH CHRIST", GOLD, 9))
-    o.append(f'<path d="M{f(w * 0.5)} 34 L {f(w * 0.5)} {f(h - 8)}" stroke="#2C5A7A" stroke-width="1.4" stroke-dasharray="5 5"></path>')
+    top, bot = 46, h - 56
+    k = min(w / 540, (bot - top) / 260)
+    cx = w * 0.25
+    o.append(f'<rect x="{f(cx - 16 * k)}" y="{f(top)}" width="{f(32 * k)}" height="{f(10 * k)}" fill="#4A4A54" stroke="{CY}" stroke-width="1.4"></rect>')
+    sp = 26 * k
+    n1 = max(3, int((bot - top) * 0.5 / sp))
+    for i in range(n1):                                            # the chain hanging, broken at its foot
+        o.append(_chain_link(cx + (2 if i % 2 else -2) * k, top + 26 * k + i * sp, 11 * k if i % 2 else 7 * k, 18 * k, 0, "#8A8A94", 5.5 * k))
+    yb = top + 26 * k + n1 * sp
+    o.append(f'<path d="M{f(cx - 6 * k)} {f(yb - 10 * k)} c {f(-10 * k)} {f(10 * k)} {f(-6 * k)} {f(22 * k)} {f(4 * k)} {f(24 * k)}" fill="none" stroke="#8A8A94" stroke-width="{f(5.5 * k)}"></path>')
+    for i in range(7):                                             # the fallen links in a heap
+        x = cx - 60 * k + i * 22 * k; y = bot - 40 * k - (abs(i - 3) * -4 + 12) * k
+        o.append(_chain_link(x, y, 16 * k, 9 * k, 25 if i % 2 else -20, "#7A7A84", 5.5 * k))
+    o.append(label(cx, bot + 4, "BONDAGE · FEAR", "#C8C8E8", 12))
+    gx = w * 0.72; sw_ = min(190 * k, w * 0.4); sh = bot - top - 40 * k
+    nb = max(1, int(sh / 110))                                    # the sheet in blocks, so the rows of writing stay fine
+    o.append(halo(gx, (top + bot) / 2, sh * 0.6, "#FFE680", 0.4) + "".join(open_letter(gx - sw_ / 2, top + 22 * k + sh * j / nb, sw_, sh / nb, rows=5, seed=815 + j, color="#E8D8B0") for j in range(nb))
+             + "".join(f'<ellipse cx="{f(gx)}" cy="{f(y)}" rx="{f(sw_ / 2 + 8 * k)}" ry="{f(9 * k)}" fill="#C8A878" stroke="{INK}" stroke-width="1.8"></ellipse>' for y in (top + 22 * k, top + 22 * k + sh))
+             + f'<circle cx="{f(gx + sw_ * 0.22)}" cy="{f(top + 22 * k + sh - 30 * k)}" r="{f(17 * k)}" fill="#B5121B" stroke="{INK}" stroke-width="1.8"></circle>'
+             f'<circle cx="{f(gx + sw_ * 0.22)}" cy="{f(top + 22 * k + sh - 30 * k)}" r="{f(9 * k)}" fill="none" stroke="#7A0A10" stroke-width="1.4"></circle>'
+             f'<circle cx="{f(gx + sw_ / 2 + 22 * k)}" cy="{f(top + 22 * k + sh - 8 * k)}" r="{f(18 * k)}" fill="none" stroke="#0D0D0F" stroke-width="{f(9 * k)}"></circle>'
+             f'<circle cx="{f(gx + sw_ / 2 + 22 * k)}" cy="{f(top + 22 * k + sh - 8 * k)}" r="{f(18 * k)}" fill="none" stroke="#E8B830" stroke-width="{f(6 * k)}"></circle>'
+             f'<rect x="{f(gx + sw_ / 2 + 12 * k)}" y="{f(top + 22 * k + sh - 40 * k)}" width="{f(20 * k)}" height="{f(15 * k)}" rx="3" fill="#2C4A8A" stroke="{INK}" stroke-width="1.6"></rect>')
+    o.append(label(gx, bot + 4, "ADOPTION · ABBA, FATHER", GOLD, 12))
+    o.append(label(w * 0.5, h - 18, "HEIRS OF GOD · JOINT-HEIRS WITH CHRIST", GOLD, 11))
+    o.append(f'<path d="M{f(w * 0.5)} 34 L {f(w * 0.5)} {f(h - 34)}" stroke="#2C5A7A" stroke-width="1.4" stroke-dasharray="5 5"></path>')
     return "".join(o)
 
 def groaning(w, h, seed, dawn=0.4):
@@ -142,8 +174,7 @@ def love_ring(w, h):
     ring and unable to cross it, the seven: tribulation, anguish, persecution, famine, nakedness, peril, sword."""
     o = [plate_bg(w, h, "ROMANS 8:35 · WHO SHALL SEPARATE US?")]
     cx, cy = w * 0.5, h * 0.55; R = min(w * 0.18, h * 0.3)
-    o.append(halo(cx, cy, R * 1.2, "#FFE680", 0.5) + f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R)}" fill="none" stroke="{GOLD}" stroke-width="4"></circle>'
-             + _heart(cx, cy, R * 0.5, writing=False) + label(cx, cy + R * 0.82, "THE LOVE OF CHRIST", GOLD, 10))
+    o.append(love_seal(cx, cy, R * 0.82, "THE LOVE OF CHRIST"))
     names = ["TRIBULATION", "ANGUISH", "PERSECUTION", "FAMINE", "NAKEDNESS", "PERIL", "SWORD"]
     for i, t in enumerate(names):
         a = math.radians(-90 + i * 360 / 7)
@@ -183,9 +214,7 @@ def height_depth(w, h):
     o.append(label(w * 0.5, top + h * 0.1, "HEIGHT", "#C8D8FF", 10) + label(w * 0.5, h * 0.95, "DEPTH", "#8FD0E2", 10))
     o.append(f'<path d="M{f(w * 0.04)} {f(cy)} L {f(w * 0.96)} {f(cy)}" stroke="{CY}" stroke-width="1.4" stroke-dasharray="6 4"></path>'
              + label(w * 0.1, cy - 8, "THINGS PRESENT", CY, 9) + label(w * 0.9, cy - 8, "THINGS TO COME", CY, 9))
-    o.append(halo(cx, cy, R * 1.6, "#FFE680", 0.6) + f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(R)}" fill="#1A1A3A" stroke="{GOLD}" stroke-width="4"></circle>'
-             + _heart(cx, cy - R * 0.15, R * 0.42, writing=False, glow_=False)
-             + label(cx, cy + R * 0.48, "THE LOVE OF GOD", GOLD, 9) + label(cx, cy + R * 0.66, "IN CHRIST JESUS OUR LORD", GOLD, 7.5))
+    o.append(love_seal(cx, cy, R, "THE LOVE OF GOD", sub="IN CHRIST JESUS OUR LORD"))
     names = [("DEATH", 0.18, 0.34), ("LIFE", 0.82, 0.34), ("ANGELS", 0.22, 0.74), ("PRINCIPALITIES", 0.8, 0.74), ("POWERS", 0.34, 0.24),
              ("ANY OTHER CREATURE", 0.68, 0.24)]
     for t, x, y in names:

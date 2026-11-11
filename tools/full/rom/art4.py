@@ -115,10 +115,38 @@ def vessels(w, h):
     o.append(label(w * 0.23, 52, "VESSELS OF WRATH · UNTO DISHONOR", "#C8C8E8", 9.5) + label(w * 0.77, 52, "VESSELS OF MERCY · UNTO HONOR", GOLD, 9.5))
     return "".join(o)
 
+CROWD_CLOTH = ["#3A4A6A", "#2A3A4A", "#5A4A6A", "#3A5A5A", "#4A3A3A", "#2A2A3A", "#5A5A6A", "#3A4A3A", "#6A5A4A", "#E8E2D6"]
+CROWD_HEAD = ["#E8E2D6", "#2A2A4A", "#1F3A4A", "#3A3A4A", "#4A4A5A", "#1A2A3A", "#D8D2C6"]
+
+def crowd_back(p, w, h, seed, rows=3, height=0.5, base=0.99, x0=-0.02, x1=1.02, ups=0.0, women=0.45):
+    """A crowd seen from behind, standing in overlapping rows on the kit silhouettes (epistle.robed): men in headcloths with
+    cords or bareheaded, women veiled, cool and dark cloths with a few off-white; the front row `height` of the drawing tall,
+    each row behind a little smaller and higher; ups= the share with an arm lifted. Needs mk.defs(p, *ALL, "ManUp",
+    "WomanUp") in the panel (the function adds it)."""
+    r = random.Random(seed)
+    o = [mk.defs(p, *ALL, "ManUp", "WomanUp")]
+    for j in range(rows):                                          # the back row first
+        depth = rows - 1 - j
+        by = h * (base - depth * 0.07); s = h * (height - depth * 0.07) / 205
+        n = max(3, int((x1 - x0) * w / (30 * s)))
+        for i in range(n):
+            x = w * (x0 + (x1 - x0) * (i + 0.5) / n) + r.uniform(-6, 6) * s + (15 * s if j % 2 else 0)
+            woman = r.random() < women
+            cloth = r.choice(CROWD_CLOTH); hd = r.choice(CROWD_HEAD)
+            up = [(-22, -158), (-46, -182), (-52, -214)] if r.random() < ups else None
+            back = f'<circle cx="0" cy="-190" r="13.6" fill="{hd if (woman or r.random() < 0.7) else "#2A1A10"}" stroke="#0D0D0F" stroke-width="1.6"></circle>'
+            ss = s * r.uniform(0.94, 1.04)
+            if woman: o.append(robed(p, x, by, ss * 0.95, cloth, woman=True, veil=hd, flip=r.random() < 0.5, up=up, extra=back))
+            else: o.append(robed(p, x, by, ss, cloth, head=hd, cord="#1A1210", mantle=r.choice([None, "#2A2A34", "#4A3A2A"]), flip=r.random() < 0.5, up=up, extra=back))
+    return "".join(o)
+
 def nations_dawn(p, w, h, seed):
-    """I will call that my people, which was not my people: a crowd of many peoples, men and women of the nations, on a road
-    at dawn, a city of the Gentiles behind them."""
-    return scene(p, w, h, seed, "road", [(0.06, "crowd", {"n": 12, "x1": 0.94, "women": 0.45})], tone="dusk")
+    """I will call that my people, which was not my people: the peoples of the nations, men and women, seen from behind in a
+    great company on the plain at dawn, looking toward the light; a city of the Gentiles on the far hill."""
+    o = [sky(w, h, "#4A3A6A", "#FFC890"), halo(w * 0.6, h * 0.34, max(w, h) * 0.4, "#FFF4C2", 0.6), hills(w, h, h * 0.3, seed, color="#6A5A6A", amp=12, step=90),
+         walls(w * 0.52, w * 0.84, h * 0.34, h * 0.14, seed, towers=2), ground(w, h, h * 0.36, "#8A7A5A", dy=0)]
+    o.append(crowd_back(p, w, h, seed, rows=3, height=0.52))
+    return "".join(o)
 
 def sand_shore(w, h, seed):
     """As the sand of the sea: an endless shore at evening, the sand reaching away to the horizon, the waves on it (no one)."""

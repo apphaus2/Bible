@@ -74,8 +74,26 @@ def gifts_plate(w, h):
     return "".join(o)
 
 def table_guests(p, w, h, seed):
-    """Given to hospitality: the believers at a low table under the lamp, sharing bread (Acts' drawing)."""
-    return breaking_bread(p, w, h, seed)
+    """Given to hospitality: the believers gathered at a long table in a house by lamplight, men and women, the loaves and
+    the cup on it, one passing bread across, a guest come in at the door (all on the kit silhouettes)."""
+    b = h * 0.95
+    o = [mk.defs(p, *ALL, "ManUp", "WomanUp"), room(w, h, b, wall="#5A4234", floor="#3A2A20"), lamp_glow(w * 0.5, h * 0.3, max(w, h) * 0.55, f"{p}tg", op=0.5),
+         doorway(w * 0.84, b - h * 0.62, w * 0.12, b, seed, night=True)]
+    s = (h * 0.62) / 205
+    r = random.Random(seed)
+    people = [(0.14, "#3A4A6A", "#E8E2D6", False), (0.25, "#5A4A6A", "#2A2A4A", True), (0.36, "#6A5A4A", "#3A4A5A", False), (0.47, "#3A5A5A", "#1F3A4A", True),
+              (0.58, "#4A3A3A", "#E8E2D6", False), (0.69, "#2A3A4A", "#4A4A5A", True)]
+    for i, (x, c, hd, woman) in enumerate(people):
+        up = [(-22, -158), (-40, -136), (-58, -128)] if i == 2 else None
+        if woman: o.append(robed(p, w * x, b - h * 0.08, s * 0.94, c, woman=True, veil=hd, flip=i % 2 == 0))
+        else: o.append(robed(p, w * x, b - h * 0.08, s, c, head=hd, cord="#1A1210", beard=r.choice(["#2A1A10", "#6A645E", "#3A2A1A"]), flip=i % 2 == 0, up=up))
+    ty = b - h * 0.08 - 90 * s
+    from ecc.art import loaf
+    o.append(f'<rect x="{f(w * 0.08)}" y="{f(ty)}" width="{f(w * 0.68)}" height="{f(12 * s)}" fill="#6A3A1E" stroke="{INK}" stroke-width="2"></rect>'
+             f'<rect x="{f(w * 0.08)}" y="{f(ty + 12 * s)}" width="{f(w * 0.68)}" height="{f(b - ty - 12 * s)}" fill="#5A2E16" stroke="{INK}" stroke-width="2"></rect>'
+             + "".join(loaf(w * x, ty - 4 * s, s * 0.9) for x in (0.2, 0.42, 0.64)) + cup(w * 0.53, ty + 2 * s, 0.3 * s) + clay_lamp(w * 0.31, ty - 2, s * 0.6))
+    o.append(robed(p, w * 0.9, b, s, "#6A4A3A", head="#3A3A4A", cord="#1A1210", beard="#2A1A10", flip=True))
+    return "".join(o)
 
 def coals(w, h, seed):
     """If thine enemy hunger, feed him; if he thirst, give him to drink: a loaf and a jar of water set on a doorstep by a
@@ -131,29 +149,66 @@ def law_love(w, h):
     for i in range(5):
         y = cy - 34 * k + i * 18 * k
         o.append(f'<path d="M{f(w * 0.26 + 70 * k)} {f(y)} C {f(w * 0.5)} {f(y)} {f(w * 0.56)} {f(cy)} {f(w * 0.66)} {f(cy)}" stroke="{GOLD}" stroke-width="1.6" fill="none" opacity="0.7"></path>')
-    o.append(_heart(w * 0.76, cy, 56 * k, writing=False) + label(w * 0.76, min(h - 12, cy + 80 * k), "LOVE · THE FULFILMENT OF THE LAW", GOLD, 10))
+    R = min(56 * k, h * 0.3)
+    o.append(love_seal(w * 0.76, cy, R, "LOVE") + label(w * 0.76, min(h - 12, cy + R * 1.5), "THE FULFILMENT OF THE LAW", GOLD, 10))
     return "".join(o)
 
+def armour_stand(x, base, s, light=True):
+    """A Roman soldier's armour on a wooden stand: the helmet with its cheek-pieces, neck-guard and red crest; the cuirass of
+    iron bands over the shoulders and chest, the leather strips below; the curved shield leaning against the foot of the
+    stand — each edged in gold light (light=False plain). (x, base) the foot of the stand; about 230 units tall."""
+    gl = "#FFE680" if light else "#0D0D0F"
+    o = [halo(x, base - 130 * s, 150 * s, "#FFF4C2", 0.55) if light else "",
+         f'<g transform="translate({f(x)} {f(base)}) scale({f(s)})">',
+         '<rect x="-34" y="-8" width="68" height="8" fill="#5A3A22" stroke="#0D0D0F" stroke-width="2"></rect>',
+         '<rect x="-4" y="-196" width="8" height="190" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="1.8"></rect>',
+         '<rect x="-40" y="-162" width="80" height="7" fill="#6A4A2A" stroke="#0D0D0F" stroke-width="1.8"></rect>']
+    # the cuirass: shoulder guards and iron bands
+    o.append(f'<path d="M-34 -160 C -40 -130 -34 -96 -26 -74 L 26 -74 C 34 -96 40 -130 34 -160 C 18 -168 -18 -168 -34 -160 Z" fill="#8A8A94" stroke="{gl}" stroke-width="3"></path>')
+    for i in range(6):
+        y = -150 + i * 13
+        o.append(f'<path d="M{-36 + abs(i - 2) * 1.5} {y} C -10 {y + 4} 10 {y + 4} {36 - abs(i - 2) * 1.5} {y}" fill="none" stroke="#4A4A54" stroke-width="2"></path>')
+    o.append(f'<path d="M-40 -164 C -46 -150 -44 -138 -36 -132 L -24 -150 Z M40 -164 C 46 -150 44 -138 36 -132 L 24 -150 Z" fill="#9A9AA4" stroke="{gl}" stroke-width="2.4"></path>'
+             '<path d="M-12 -150 L 12 -150 M0 -150 L 0 -78" stroke="#C8963E" stroke-width="2"></path>')
+    for i in range(7):                                             # the leather strips (pteruges)
+        xx = -24 + i * 8
+        o.append(f'<rect x="{xx - 3}" y="-74" width="6" height="28" fill="#6A3A1E" stroke="#0D0D0F" stroke-width="1.2"></rect><circle cx="{xx}" cy="-48" r="2" fill="#C8963E"></circle>')
+    # the helmet on the top of the stand
+    o.append(f'<path d="M-20 -196 C -22 -226 22 -226 20 -196 L 26 -190 L 20 -186 L -20 -186 L -26 -190 Z" fill="#C8963E" stroke="{gl}" stroke-width="3"></path>'
+             f'<path d="M-24 -192 L -28 -170 L -16 -172 L -14 -190 Z M24 -192 L 28 -170 L 16 -172 L 14 -190 Z" fill="#B8862E" stroke="{gl}" stroke-width="2"></path>'
+             '<path d="M-22 -204 C -8 -208 8 -208 22 -204" fill="none" stroke="#E8B830" stroke-width="3"></path>'
+             '<path d="M-18 -224 C -10 -246 10 -246 18 -224 L 12 -222 C 8 -234 -8 -234 -12 -222 Z" fill="#B5121B" stroke="#0D0D0F" stroke-width="1.6"></path>')
+    # the shield leaning at the foot
+    o.append(f'<path d="M30 -2 L 44 -112 C 62 -114 78 -110 92 -104 L 82 4 C 66 0 48 -2 30 -2 Z" fill="#A8281E" stroke="{gl}" stroke-width="3"></path>'
+             '<circle cx="62" cy="-54" r="9" fill="#C8963E" stroke="#0D0D0F" stroke-width="1.6"></circle>'
+             '<path d="M46 -90 C 56 -80 70 -80 84 -86 M42 -22 C 52 -12 66 -12 80 -18" fill="none" stroke="#E8B830" stroke-width="2.4"></path>')
+    return "".join(o) + "</g>"
+
 def armor_light(w, h, seed):
-    """The night is far spent, and the day is at hand; put on the armor of light: a window at the end of night, the dawn
-    breaking over the roofs, and before it on its stand a soldier's armour — helmet, breastplate, shield — made of light."""
-    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#1E1828"></rect>']
-    wx, ww, wy, wh = w * 0.46, w * 0.46, h * 0.1, h * 0.62
+    """The night is far spent, and the day is at hand; put on the armor of light: a room at the end of night, the window on
+    the roofs of the city with the dawn breaking, and before it on its wooden stand a soldier's armour — the helmet, the
+    cuirass, the shield — outlined in gold light; on the floor a mat, a pair of sandals, the lamp put out and smoking."""
+    b = h * 0.9
+    o = [f'<rect x="-10" y="-10" width="{f(w + 20)}" height="{f(h + 20)}" fill="#2A2232"></rect>']
+    wx, ww, wy, wh = w * 0.46, w * 0.44, h * 0.08, h * 0.6
     o.append(f'<defs><linearGradient id="al{seed}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A1A4A"></stop><stop offset="0.6" stop-color="#8A5A7A"></stop><stop offset="1" stop-color="#FFC890"></stop></linearGradient></defs>'
              f'<rect x="{f(wx)}" y="{f(wy)}" width="{f(ww)}" height="{f(wh)}" fill="url(#al{seed})" stroke="{INK}" stroke-width="3"></rect>'
              + f'<g transform="translate({f(wx)} {f(wy)})">' + mk.stars(14, ww, wh * 0.3, seed) + houses(ww, wh, wh * 0.86, seed, hmin=0.12, hmax=0.24) + '</g>'
              + halo(wx + ww * 0.6, wy + wh * 0.86, wh * 0.4, "#FFE680", 0.6)
              + f'<path d="M{f(wx + ww / 2)} {f(wy)} L {f(wx + ww / 2)} {f(wy + wh)}" stroke="#4A3424" stroke-width="5"></path>'
-             f'<rect x="-10" y="{f(h * 0.86)}" width="{f(w + 20)}" height="{f(h)}" fill="#2A2028" stroke="{INK}" stroke-width="2"></rect>')
-    cx, k = w * 0.24, min(1.6, h / 260)
-    o.append(halo(cx, h * 0.5, 120 * k, "#FFF4C2", 0.65))
-    o.append(f'<path d="M{f(cx)} {f(h * 0.86)} L {f(cx)} {f(h * 0.3)}" stroke="#5A3A22" stroke-width="{f(5 * k)}"></path>'
-             f'<path d="M{f(cx - 32 * k)} {f(h * 0.36)} C {f(cx - 40 * k)} {f(h * 0.5)} {f(cx - 30 * k)} {f(h * 0.62)} {f(cx)} {f(h * 0.66)} C {f(cx + 30 * k)} {f(h * 0.62)} {f(cx + 40 * k)} {f(h * 0.5)} {f(cx + 32 * k)} {f(h * 0.36)} Z" fill="#FFF4C2" stroke="#E8B830" stroke-width="3"></path>'
-             f'<path d="M{f(cx - 18 * k)} {f(h * 0.3)} C {f(cx - 20 * k)} {f(h * 0.2)} {f(cx + 20 * k)} {f(h * 0.2)} {f(cx + 18 * k)} {f(h * 0.3)} Z" fill="#FFFDF0" stroke="#E8B830" stroke-width="3"></path>'
-             f'<path d="M{f(cx - 24 * k)} {f(h * 0.2)} L {f(cx + 24 * k)} {f(h * 0.2)}" stroke="#E8B830" stroke-width="{f(5 * k)}"></path>'
-             f'<ellipse cx="{f(cx + 60 * k)}" cy="{f(h * 0.62)}" rx="{f(30 * k)}" ry="{f(42 * k)}" fill="#FFF8DC" stroke="#E8B830" stroke-width="3"></ellipse>'
-             + plate_label(cx, h * 0.17, "HELMET", "#12113A", 9).replace('stroke="#0B1A2E"', 'stroke="#FFF4C2"') + plate_label(cx - 50 * k, h * 0.5, "BREASTPLATE", "#12113A", 9, "end").replace('stroke="#0B1A2E"', 'stroke="#FFF4C2"')
-             + plate_label(cx + 60 * k, h * 0.62 + 56 * k, "SHIELD", "#12113A", 9).replace('stroke="#0B1A2E"', 'stroke="#FFF4C2"'))
+             f'<rect x="{f(wx - 8)}" y="{f(wy + wh)}" width="{f(ww + 16)}" height="8" fill="#6A4A2A" stroke="{INK}" stroke-width="1.6"></rect>'
+             f'<path d="M{f(wx)} {f(wy + wh + 8)} L {f(wx + ww)} {f(wy + wh + 8)} L {f(wx + ww + w * 0.06)} {f(b)} L {f(wx - w * 0.22)} {f(b)} Z" fill="#FFC890" opacity="0.16"></path>'
+             f'<rect x="-10" y="{f(b)}" width="{f(w + 20)}" height="{f(h)}" fill="#4A3A34" stroke="{INK}" stroke-width="2"></rect>')
+    s = (h * 0.8) / 250
+    o.append(mat(w * 0.06, b + h * 0.06, w * 0.34, s * 1.2, color="#8A6A3A"))
+    o.append(armour_stand(w * 0.22, b + h * 0.04, s))
+    for dx in (0, 22):                                             # the sandals
+        x = w * 0.42 + dx * s
+        o.append(f'<path d="M{f(x)} {f(b + h * 0.06)} C {f(x - 2 * s)} {f(b + h * 0.06 - 8 * s)} {f(x + 18 * s)} {f(b + h * 0.06 - 8 * s)} {f(x + 18 * s)} {f(b + h * 0.06)} Z" fill="#6A3A1E" stroke="{INK}" stroke-width="1.4"></path>'
+                 f'<path d="M{f(x + 4 * s)} {f(b + h * 0.06 - 6 * s)} l {f(10 * s)} 0" stroke="#3A1E0A" stroke-width="1.6"></path>')
+    lx = w * 0.94
+    o.append(f'<g transform="translate({f(lx)} {f(b + h * 0.05)}) scale({f(s)})"><path d="M-20 0 C -22 -12 6 -16 18 -8 L 30 -10 L 24 -2 L 16 0 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="2"></path></g>'
+             + smoke(lx + 27 * s, b + h * 0.03, 4, seed, color="#8A8A9A", op=0.4, k=s * 0.3))
     return "".join(o)
 
 def two_diners(p, w, h, seed):
@@ -193,16 +248,16 @@ def knees_bow(p, w, h, seed):
     far below on the plain a great company kneeling (God never drawn)."""
     b = h * 0.94
     o = [sky(w, h, "#2A3A7A", "#FFF4C2"), halo(w * 0.5, h * 0.2, max(w, h) * 0.4, "#FFFFFF", 0.85), rays(w * 0.5, h * 0.2, 30, 30, max(w, h), "#FFFDF0", 0.3, 3),
-         clouds(w, h * 0.34, seed, n=6, color="#FFFDF0", op=0.8, h=h), ground(w, h, h * 0.7, "#8A8A6A", dy=0)]
-    k = min(1.0, h / 400)
-    o.append(f'<g transform="translate({f(w * 0.5)} {f(h * 0.2)}) scale({f(k)})"><path d="M-40 40 L -40 -30 C -40 -60 40 -60 40 -30 L 40 40 Z" fill="#FFE680" stroke="#C8962E" stroke-width="3"></path>'
+         clouds(w, h * 0.3, seed, n=6, color="#FFFDF0", op=0.8, h=h), ground(w, h, h * 0.5, "#8A8A6A", dy=0)]
+    k = min(0.8, h / 500)
+    o.append(f'<g transform="translate({f(w * 0.5)} {f(h * 0.16)}) scale({f(k)})"><path d="M-40 40 L -40 -30 C -40 -60 40 -60 40 -30 L 40 40 Z" fill="#FFE680" stroke="#C8962E" stroke-width="3"></path>'
              '<rect x="-56" y="30" width="112" height="16" fill="#FFD23F" stroke="#C8962E" stroke-width="3"></rect></g>')
     r = random.Random(seed)
-    for row in range(3):
-        y = h * (0.78 + row * 0.07); ks = (h * 0.12 + row * h * 0.03) / 140
-        for i in range(9 + row * 2):
-            x = w * (0.04 + (i + 0.5) / (9 + row * 2) * 0.92) + r.uniform(-6, 6)
-            o.append(E.kneel(x, y, ks, color=r.choice(["#6A4A3A", "#3A4A6A", "#5A6A3A", "#7A3A3A", "#4A3A5A", "#E8E2D6"]), skin=SKIN, flip=x > w * 0.5))
+    for y_, hh in ((0.62, 0.14), (0.78, 0.2), (0.99, 0.28)):       # three rows kneeling, the nearest the largest, overlapping
+        ks = h * hh / 120; n = max(5, int(w / (80 * ks)))
+        for i in range(n):
+            x = w * (-0.02 + (i + 0.5) / n * 1.04) + r.uniform(-8, 8) * ks
+            o.append(E.kneel(x, h * y_, ks, color=r.choice(["#6A4A3A", "#3A4A6A", "#5A6A3A", "#2A3A4A", "#4A3A5A", "#E8E2D6", "#3A5A5A"]), skin=SKIN, flip=x > w * 0.5))
     return "".join(o)
 
 def meat_wine(w, h, seed):
@@ -231,8 +286,12 @@ def jesse_root(w, h, seed):
     return "".join(o)
 
 def nations_praise(p, w, h, seed):
-    """Praise the Lord, all ye Gentiles: a company of many nations on a hill at sunrise, their hands lifted."""
-    return scene(p, w, h, seed, "road", [(0.06, "crowd", {"n": 12, "x1": 0.94, "women": 0.45, "up": [(-22, -158), (-30, -196), (-40, -230)]})], tone="dusk")
+    """Praise the Lord, all ye Gentiles: a company of the nations seen from behind on a hill at sunrise, men and women in
+    overlapping rows, many with an arm lifted toward the dawn."""
+    o = [sky(w, h, "#3A3A7A", "#FFC890"), halo(w * 0.5, h * 0.3, max(w, h) * 0.45, "#FFF4C2", 0.65), rays(w * 0.5, h * 0.3, 24, h * 0.05, max(w, h) * 0.6, "#FFF4C2", 0.25, 3),
+         hills(w, h, h * 0.3, seed, color="#6A5A7A", amp=12, step=90), ground(w, h, h * 0.36, "#7A7A5A", dy=0)]
+    o.append(crowd_back(p, w, h, seed, rows=3, height=0.52, ups=0.45))
+    return "".join(o)
 
 def illyricum(w, h):
     """From Jerusalem, and round about even unto Illyricum: the map — Paul's road from Jerusalem through Syria, Asia,
@@ -280,11 +339,11 @@ def brethren(p, w, h, seed, stage="timothy"):
     o.append(paul_fig(p, w * 0.16, b, k, flip=True))
     o.append(scribe_seated(w * 0.3, b - 4 * k, k, **{kk: vv for kk, vv in TERTIUS_LOOK.items() if kk in ("cloth", "head", "cord")}, stage="write"))
     if stage == "timothy":
-        o.append(robed(p, w * 0.52, b, k * 0.98, "#7A8A9A", hair="#3A2214", flip=True))
+        o.append(robed(p, w * 0.52, b, k * 0.98, "#7A8A9A", hair="#6A4A2E", belt="#3A2A1A", mantle="#5A6A7A", flip=True))          # Timothy (Acts: young, beardless)
         for i, (c, hd, bd) in enumerate((("#5A4A6A", "#2A2A4A", "#2A1A10"), ("#4A5A3A", "#E8E2D6", "#3A2A1A"), ("#6A5A3A", "#3A4A5A", "#6A645E"))):
-            o.append(robed(p, w * (0.66 + i * 0.12), b, k * (0.97 + 0.02 * (i % 2)), c, head=hd, cord="#1A1210", beard=bd, flip=True))
+            o.append(robed(p, w * (0.66 + i * 0.12), b, k * (0.97 + 0.02 * (i % 2)), c, head=hd, cord="#1A1210", beard=bd, belt="#2A1A10", mantle=["#3A2A3A", "#2A3A2A", "#4A3A2A"][i], flip=True))
     else:
-        o.append(robed(p, w * 0.54, b, k, "#6A4A3A", head="#E8E2D6", cord="#3A2A1A", beard="#9A948A", flip=True))
+        o.append(robed(p, w * 0.54, b, k, "#6A4A3A", head="#E8E2D6", cord="#3A2A1A", beard="#9A948A", belt="#2A1A10", mantle="#4A3424", flip=True))
         o.append(toga_fig(p, w * 0.7, b, k, hr="#4A3A2A", border="#2A4A6A", flip=True))
-        o.append(robed(p, w * 0.84, b, k * 0.98, "#3A5A6A", hair="#2A1A10", beard="#2A1A10", flip=True))
+        o.append(robed(p, w * 0.84, b, k * 0.98, "#3A5A6A", hair="#2A1A10", beard="#2A1A10", belt="#1A2A2A", mantle="#24404A", flip=True))
     return "".join(o)
