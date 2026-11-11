@@ -1,0 +1,61 @@
+{
+ "id": "1corinthians",
+ "order": 46,
+ "name": "1 Corinthians",
+ "kanji": "コリント人への第一の手紙",
+ "thumb": "vol-1corinthians-",
+ "lede": "The forty-sixth book of the Bible, in full: Paul's first letter to the church of God at Corinth, written at Ephesus with Sosthenes and carried home by Stephanas, Fortunatus and Achaicus — I of Paul, I of Apollos, I of Cephas; the word of the cross, Christ the power of God; I planted, Apollos watered, but God gave the increase; ye are a temple of God; a little leaven; meats offered to idols; the race and the incorruptible crown; the Lord's supper; one body and many members; love, the greatest of these; Christ raised, the firstfruits; O death, where is thy victory? — every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Christ the Power of God",
+   "range": "1 Corinthians 1–4",
+   "blurb": "Paul and Sosthenes to the church of God which is at Corinth — the letter written at Ephesus; I am of Paul; and I of Apollos; and I of Cephas; and I of Christ: is Christ divided? The word of the cross is to them that perish foolishness, but unto us who are saved it is the power of God; things which eye saw not; I planted, Apollos watered, but God gave the increase; other foundation can no man lay; the fire shall prove each man's work; ye are a temple of God; a spectacle unto the world; shall I come with a rod, or in love?",
+   "prefixes": [
+    "Main.dc.html",
+    "1CO-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "A Little Leaven",
+   "range": "1 Corinthians 5–7",
+   "blurb": "Ye are puffed up, and did not rather mourn; know ye not that a little leaven leaveneth the whole lump? Purge out the old leaven, for our passover also hath been sacrificed, even Christ; brother goeth to law with brother, and that before unbelievers; but ye were washed, but ye were sanctified; your body is a temple of the Holy Spirit, for ye were bought with a price; concerning the things whereof ye wrote — the married, the unmarried and the widows, the bondservant and the free; the time is shortened, for the fashion of this world passeth away.",
+   "prefixes": [
+    "1CO-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "In Remembrance of Me",
+   "range": "1 Corinthians 8–11",
+   "blurb": "Knowledge puffeth up, but love edifieth: there is no God but one; if meat causeth my brother to stumble, I will eat no flesh; am I not an apostle? Thou shalt not muzzle the ox; I am become all things to all men; so run, that ye may attain — a corruptible crown, but we an incorruptible; our fathers under the cloud, through the sea, and the rock was Christ; the way of escape; the cup of blessing which we bless; do all to the glory of God; praying with the head covered or unveiled; the Lord Jesus in the night in which he was betrayed took bread: this do in remembrance of me.",
+   "prefixes": [
+    "1CO-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "The Greatest of These Is Love",
+   "range": "1 Corinthians 12–14",
+   "blurb": "Concerning spiritual gifts: diversities of gifts, but the same Spirit; as the body is one, and hath many members, so also is Christ — if the foot shall say, Because I am not the hand; the eye cannot say to the hand, I have no need of thee; ye are the body of Christ; a most excellent way: if I have not love, I am become sounding brass, or a clanging cymbal; love suffereth long, and is kind; now we see in a mirror, darkly; but then face to face; faith, hope, love, and the greatest of these is love; if the trumpet give an uncertain voice; let all things be done decently and in order.",
+   "prefixes": [
+    "1CO-C04-"
+   ]
+  },
+  {
+   "dir": "chapter-05",
+   "num": "5",
+   "name": "O Death, Where Is Thy Victory?",
+   "range": "1 Corinthians 15–16",
+   "blurb": "That Christ died for our sins according to the scriptures; and that he was buried; and that he hath been raised on the third day — he appeared to Cephas, to the twelve, to above five hundred brethren at once, to James, and last of all to me also; now hath Christ been raised, the firstfruits of them that are asleep; the last enemy that shall be abolished is death; that which thou sowest is not quickened except it die; one star differeth from another star in glory; we shall all be changed, at the last trump; O death, where is thy victory? the collection for the saints; the greetings, and the salutation of Paul with his own hand. Maranatha.",
+   "prefixes": [
+    "1CO-C05-"
+   ]
+  }
+ ]
+}

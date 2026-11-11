@@ -65,6 +65,7 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 43 | John | `jhn` | 10 | 199 | 879: 878 full; 5:4 has no text in the ASV |
 | 44 | Acts | `act` | 16 | 229 | 1,007: 1,003 full; 8:37, 15:34, 24:7, 28:29 have no text in the ASV |
 | 45 | Romans | `rom` | 5 | 91 | 433: 432 full; 16:24 has no text in the ASV |
+| 46 | 1 Corinthians | `co1` | 5 | 85 | 437 full |
 | 47 | 2 Corinthians | `co2` | 3 | 52 | 257 full |
 | 48 | Galatians | `gal` | 2 | 31 | 149 full |
 
