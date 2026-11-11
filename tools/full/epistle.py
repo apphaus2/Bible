@@ -37,13 +37,28 @@ Panels (discourse segments; a page holds two to four, packed by K.pack):
 Faces (tok= for K.F), each with its background: Paul as ntcast draws him, in his moods —
     PAUL + GOLD_BG (earnest) · PAUL_LAMP + LAMP_BG (dictating by lamplight) · PAUL_GRIEF + GRIEF_BG (grieving: Rom 9:1–3)
     PAUL_JOY + JOY_BG (white light: Rom 8:31–39, 11:33–36) · PAUL_STERN + STERN_BG (warning, rebuke)
+Faces alternate sides: K.pack sets every other face panel flip=True (the face at the right, the words at the left)
+unless the panel gives flip= itself.
+People (never blobs: drawn on the kit's MAN / WOMAN silhouettes, so shoulders, arms and waist show):
+    robed(p, x, y, s, cloth, woman=, head=, cord=, veil=, hair=, beard=, mantle=, belt=, up=, flip=, extra=)  a person standing
+        in a sleeved robe and long skirt that follow the body, hands and head showing (needs mk.defs(p, *ALL, "ManUp",
+        "WomanUp")); up= arm points from (-22, -158) reach left, or right with flip=True; extra= svg in the figure's own
+        units (a scroll in the hand at the arm's last point)
+    paul_fig(p, x, y, s, flip=, up=, extra=)   Paul in ntcast's colours on robed(), a darker mantle
+    scribe_seated(x, y, s, cloth=, head=, cord=, flip=, stage="write"|"read")  a scribe cross-legged on the floor, the roll
+        across his knee and the reed pen on it ("write"), or the roll lifted to read it back
+    face_portrait(tok, tok2=None)   a greeting cell's portrait: a shaded profile face (faces.face token), a second behind it
+Furniture: pigeonholes(x, y, w, h) (scroll cubbies) · couch(x, y, w, s) · mat(x, y, w, s) · low_table(x, y, w, s) ·
+    doorway(x, top, w, b, seed, night) (an open door onto the street, house fronts and lit windows beyond)
 Drawings (svg strings; p is a prefix unique to the panel; w, h the panel's size):
-    study(p, w, h, seed, stage=, scribe=, bearer=, night=, window=, writer=paul, fig_h=250)   the opening scene (also a
-        good "Paul speaking" panel anywhere in a letter, between the face panels): the writer dictating, the scribe
-        writing at a low table by lamplight. stage "dictate" (the writer standing, his hand out), "read" (the scribe holds
-        up the sheet, the writer listening), "give" (the writer hands the sealed scroll to the bearer at the door).
-        scribe / bearer: dicts of colours (cloth, head; bearer veil) or None (TERTIUS_LOOK, PHOEBE_LOOK are Romans');
-        window "city" (roofs and a citadel by night); fig_h the tallest a figure may stand (a title page: ~330)
+    study(p, w, h, seed, stage=, scribe=, bearer=, night=, window=, writer=paul_fig, fig_h=)   the opening scene (also a
+        good "Paul speaking" panel anywhere in a letter, between the face panels), close in — the figures stand about 72%
+        of the drawing's height: the writer standing, the scribe cross-legged on a mat writing on the roll, a low table
+        with the lamp and inkpot, a couch, pigeonholes of scrolls, the window on the city (the Acrocorinth). stage
+        "dictate" (the writer's hand out), "read" (the scribe reads the roll back, the writer listening), "give" (the
+        writer turns to the bearer standing in the open doorway onto the night street, the sealed scroll in her hand).
+        scribe: dict(cloth, head, cord) (TERTIUS_LOOK) or False; bearer: dict(cloth, veil, mantle) for a woman
+        (PHOEBE_LOOK) or dict(cloth, head, beard) for a man; fig_h a figure's height in px (default 72% of h)
     still_life(w, h, seed, sealed=True, night=True)   the letter on the table: the rolled scroll tied and sealed, the reed
         pen, the inkpot, the lamp (an opening's or an ending's picture panel)
     sealed_scroll(x, y, s, rot=0, seal=SEAL)   a rolled letter tied with a cord and sealed with red clay
@@ -57,10 +72,10 @@ Drawings (svg strings; p is a prefix unique to the panel; w, h the panel's size)
 Greetings (Rom 16, 1 Cor 16, Col 4 …):
     greetings(items, prefix, start, book, code, head=, end=)  pages of cells, one per person greeted, packed by height:
         items = [(name, tag, lines, portrait), …] — name in Anton and tag (one short line, e.g. "16:3–5 · IN CHRIST JESUS")
-        are labels (data-label); lines are the verse(s) as letter boxes; portrait(p, w, h) draws the person small (a figure
-        at a distance on a coloured ground, or an emblem) in the cell's left square. Returns [(file, board title, fn)] like
+        are labels (data-label); lines are the verse(s) as letter boxes; portrait(p, w, h) draws the person in the cell's
+        left square — use face_portrait(TOKEN) (or face_portrait(A, B) for two). Returns [(file, board title, fn)] like
         K.pack, so PG.extend(greetings(...)) puts them in the chapter.
-    portrait(fig, bg=, floor=)      a portrait function from fig(p, x, y, s) (any act.art / rom.art figure)"""
+    portrait(fig, bg=, floor=)      a standing figure in the cell instead (fig(p, x, y, s), e.g. a robed() figure)"""
 import sys, pathlib, math, random, re
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "kit"))
 import mk, exodus as E
@@ -76,7 +91,9 @@ from oba.minor import F as face_of, GOLDEN, COLD, RED, DUSK, DAWN, NIGHT, nxt, f
 from mrk.common import MarkKit
 from num.art import ALL
 from jer.art import glow
-from mat.art import room, woman_fig, UP_BLESS, UP_HIGH, UP_TOUCH, UP_CALL
+from mat.art import room, woman_fig, veil as _veil, UP_BLESS, UP_HIGH, UP_TOUCH, UP_CALL
+from exo.art import headcloth, WHITE_BEARD
+from ntcast import ROBES
 from job.art import seated
 from exo.art8 import tag, dim, title_bar
 from act import geo
@@ -172,6 +189,11 @@ class EpistleKit(MarkKit):
         keeping `keep` of the height it asked for) with one more rule: a face panel at least face_min tall, so a face is
         never squeezed to a strip. Boxes over drawings lose their tails."""
         from discourse import _chars, pack as _pack
+        nf = 0
+        for s_ in segs:                                # Paul's face alternates sides: left (words right), then right (words left)
+            if s_["tok"]:
+                if s_["flip"] is None: s_["flip"] = nf % 2 == 1
+                nf += 1
         def fits(g):
             if len(g) == 1: return True
             if min(_sizes(g)) < min_size: return False
@@ -288,8 +310,8 @@ def letter_road(w, h, route_, title=None, box=(11.0, 25.5, 35.6, 43.0), places=N
                        title=title, red=True)
 
 # ---- the opening scene --------------------------------------------------------------------------------------------------
-TERTIUS_LOOK = dict(cloth="#3A5A5A", head="#1F4A4A")                 # Romans: a young scribe, dark-teal headcloth
-PHOEBE_LOOK = dict(cloth="#7A7A84", veil="#1F2F6A")                  # Romans: deep-blue veil, grey travelling cloak
+TERTIUS_LOOK = dict(cloth="#3A5A5A", head="#1F4A4A", cord="#0D2A2A")                # Romans: a young scribe, dark-teal headcloth
+PHOEBE_LOOK = dict(cloth="#7A7A84", veil="#1F2F6A", mantle="#5E5E6A")                 # Romans: deep-blue veil, grey travelling cloak
 
 def _window(w, h, x, y, ww, hh, night, seed):
     """A window on the city: flat roofs, and the citadel on its rock with a temple (Corinth's Acrocorinth) against the sky."""
@@ -317,53 +339,200 @@ def _window(w, h, x, y, ww, hh, night, seed):
              f'<rect x="{f(x - 8)}" y="{f(y + hh)}" width="{f(ww + 16)}" height="8" fill="#6A4A2A" stroke="{INK}" stroke-width="1.6"></rect>')
     return "".join(o)
 
-def _scribe_at_table(p, x, b, s, look, writing=True, holding=False):
-    """The scribe sitting on the floor facing right, a low table before him with the sheet on it, the reed pen in his hand."""
-    o = [seated(x, b, s * 0.86, look["cloth"], head=look["head"], beard=None, bowed=writing)]
-    tx0, tx1, ty = x + 58 * s, x + 150 * s, b - 34 * s
-    o.append(f'<rect x="{f(tx0)}" y="{f(ty)}" width="{f(tx1 - tx0)}" height="{f(7 * s)}" fill="#6A3A1E" stroke="{INK}" stroke-width="2"></rect>'
-             + "".join(f'<rect x="{f(lx)}" y="{f(ty + 7 * s)}" width="{f(6 * s)}" height="{f(27 * s)}" fill="#5A2E16" stroke="{INK}" stroke-width="1.6"></rect>' for lx in (tx0 + 6 * s, tx1 - 12 * s)))
-    if holding:
-        o.append(open_letter(x + 24 * s, b - 98 * s, 40 * s, 50 * s, rows=5, seed=int(x)))
+def robed(p, x, y, s, cloth, skin=SKIN, woman=False, head=None, cord="#2A1A10", veil=None, hair=None, beard=None, up=None, flip=False,
+          mantle=None, belt=None, line=INK, extra=""):
+    """A person standing, drawn on the kit's MAN / WOMAN silhouette (shoulders, arms, waist) so the garment follows the
+    body: the sleeved robe is the silhouette itself below the neck, a long skirt falls from the waist, the hands and head
+    show; head= a headcloth colour (cord= its cord, None for none), veil= a woman's veil, hair= bare hair, beard= a beard
+    colour; mantle= a cloak over one shoulder; belt= a girdle; up= a free arm as mk.person, its points from the shoulder
+    (-22, -158): it reaches to the left as drawn, to the right with flip=True (the other hand hangs). Needs mk.defs(p, *num.art.ALL,
+    "ManUp", "WomanUp") in the panel. (x, y) is the ground under the feet; the figure is about 205 units tall at s = 1."""
+    sx = -s if flip else s
+    fig = ("Woman" if woman else "Man") + ("Up" if up else "")
+    cid = f"{p}nk{abs(int(x))}x{abs(int(y))}"
+    hx, hw = (24.5, 3.6) if woman else (28.5, 4.2)
+    wx = 15 if woman else 19
+    o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">',
+         f'<defs><clipPath id="{cid}t"><rect x="-80" y="-167" width="160" height="61"></rect></clipPath>'      # the bodice and the upper arms
+         f'<clipPath id="{cid}a"><rect x="-60" y="-110" width="{60 - wx - 1}" height="40"></rect><rect x="{wx + 1}" y="-110" width="{60 - wx - 1}" height="40"></rect></clipPath></defs>',
+         f'<use href="#{p}{fig}" fill="{skin}" stroke="{line}" stroke-width="3"></use>',
+         f'<use href="#{p}{fig}" fill="{cloth}" stroke="{line}" stroke-width="2.6" clip-path="url(#{cid}t)"></use>',
+         f'<path d="M-{wx} -110 C -{wx + 6} -76 -{wx + 12} -36 -{wx + 15} 0 L {wx + 15} 0 C {wx + 12} -36 {wx + 6} -76 {wx} -110 Z" fill="{cloth}" stroke="{line}" stroke-width="2.6"></path>',
+         f'<path d="M-6 -96 C -8 -60 -10 -30 -12 -2 M7 -90 C 8 -60 10 -30 13 -2" fill="none" stroke="{line}" stroke-width="1.2" opacity="0.45"></path>',
+         f'<use href="#{p}{fig}" fill="{cloth}" stroke="{line}" stroke-width="2.6" clip-path="url(#{cid}a)"></use>',     # the sleeves over the skirt
+         f'<path d="M-7 -166 L 0 -156 L 7 -166" fill="none" stroke="{line}" stroke-width="1.4"></path>']
+    for side in ((1,) if up else (-1, 1)):
+        o.append(f'<ellipse cx="{f(side * hx)}" cy="-90" rx="{hw}" ry="6.5" fill="{skin}" stroke="{line}" stroke-width="1.4"></ellipse>')
+    if belt: o.append(f'<path d="M-{wx + 1} -108 C -6 -104 6 -104 {wx + 1} -108" fill="none" stroke="{belt}" stroke-width="3.4"></path>')
+    if mantle:
+        o.append(f'<path d="M-25 -162 C -12 -150 6 -118 16 -58 C 18 -40 20 -20 22 -4 L 34 -4 C 30 -40 26 -100 20 -150 C 8 -166 -14 -168 -25 -162 Z" '
+                 f'fill="{mantle}" stroke="{line}" stroke-width="2.2"></path>')
+    if up:
+        d = "M" + " L ".join(f"{a} {b}" for a, b in up)
+        o.append(f'<path d="{d}" fill="none" stroke="{line}" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"></path>'
+                 f'<path d="{d}" fill="none" stroke="{cloth}" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round"></path>'
+                 f'<circle cx="{up[-1][0]}" cy="{up[-1][1]}" r="5" fill="{skin}" stroke="{line}" stroke-width="1.4"></circle>')
+    if hair: o.append(f'<path d="M-13.5 -186 C -16 -206 16 -206 13.5 -186 L 14 -178 C 12.5 -175 11 -177 11 -181 C 8 -192 -8 -192 -11 -181 C -11 -177 -12.5 -175 -14 -178 Z" '
+                      f'fill="{hair}" stroke="{line}" stroke-width="1.3"></path>')
+    if beard: o.append(WHITE_BEARD.replace("#E8E2D6", beard))
+    if veil: o.append(_veil(veil))
+    if head: o.append(headcloth(head, cord=cord))
+    return "".join(o) + extra + "</g>"
+
+def paul_fig(p, x, y, s, flip=False, up=None, extra=""):
+    """Paul at a distance in the letters: ntcast's colours (a dark-brown robe and headcloth with a cord, a black beard), on
+    the kit silhouette, a darker mantle over the shoulder."""
+    return robed(p, x, y, s, ROBES["paul"], head="#5A4A3A", cord="#2A1A10", beard="#3A2A1A", mantle="#3E3228", belt="#2A1A10", flip=flip, up=up, extra=extra)
+
+def scribe_seated(x, y, s, cloth="#3A5A5A", head="#1F4A4A", cord="#0D2A2A", skin=SKIN, flip=False, stage="write"):
+    """A scribe sitting cross-legged on the floor, facing right, the roll open across his knee: stage "write" the reed pen
+    in his hand on the roll; "read" the roll lifted before his face. (x, y) is the floor under him; about 128 units tall."""
+    sx = -s if flip else s
+    o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">',
+         # crossed legs under the robe, the lap
+         f'<path d="M-44 0 C -46 -18 -34 -34 -10 -36 L 34 -34 C 52 -32 60 -18 56 0 Z" fill="{cloth}" stroke="{INK}" stroke-width="2.6"></path>',
+         f'<path d="M-30 -14 C -10 -24 20 -24 46 -12" fill="none" stroke="{INK}" stroke-width="1.3" opacity="0.5"></path>',
+         f'<path d="M48 -4 C 58 -6 64 -2 62 2 L 46 2 Z" fill="{skin}" stroke="{INK}" stroke-width="1.4"></path>',
+         # the back and chest, leaning a little toward the roll
+         f'<path d="M-24 -34 C -30 -60 -28 -88 -14 -104 C -6 -110 6 -110 12 -102 C 20 -88 22 -60 18 -36 Z" fill="{cloth}" stroke="{INK}" stroke-width="2.6"></path>',
+         f'<path d="M-4 -104 L 2 -96 L 8 -104" fill="none" stroke="{INK}" stroke-width="1.3"></path>',
+         f'<path d="M-24 -40 C -6 -44 8 -44 18 -40" fill="none" stroke="#0D2A2A" stroke-width="3"></path>']
+    hx, hy = (6, -118) if stage == "write" else (2, -122)
+    o.append(f'<rect x="{hx - 5}" y="{hy + 8}" width="10" height="10" fill="{skin}"></rect>'
+             f'<circle cx="{hx}" cy="{hy}" r="13" fill="{skin}" stroke="{INK}" stroke-width="2.2"></circle>'
+             f'<path d="M{hx + 10} {hy - 2} l 5 4 l -5 2" fill="{skin}" stroke="{INK}" stroke-width="1.4"></path>')
+    o.append(f'<path d="M{hx - 15} {hy + 2} C {hx - 16} {hy - 22} {hx + 14} {hy - 24} {hx + 14} {hy - 4} L {hx + 8} {hy - 6} L {hx - 2} {hy - 10} L {hx - 8} {hy + 4} '
+             f'L {hx - 14} {hy + 22} L {hx - 22} {hy + 20} Z" fill="{head}" stroke="{INK}" stroke-width="1.8"></path>'
+             f'<path d="M{hx - 12} {hy - 10} C {hx - 4} {hy - 16} {hx + 6} {hy - 16} {hx + 13} {hy - 10}" fill="none" stroke="{cord}" stroke-width="2.6"></path>')
+    if stage == "write":
+        o.append(f'<path d="M14 -46 L 70 -50" stroke="#C8B488" stroke-width="2"></path>'
+                 f'<rect x="14" y="-54" width="56" height="9" fill="#EADBB4" stroke="{INK}" stroke-width="1.6" transform="rotate(-4 42 -50)"></rect>'
+                 f'<ellipse cx="14" cy="-48" rx="4" ry="7" fill="#D8C49A" stroke="{INK}" stroke-width="1.4"></ellipse>'
+                 f'<ellipse cx="70" cy="-52" rx="4" ry="7" fill="#D8C49A" stroke="{INK}" stroke-width="1.4"></ellipse>'
+                 + "".join(f'<path d="M{20 + k * 10} -52 l 6 0" stroke="#4A3020" stroke-width="1.4" transform="rotate(-4 42 -50)"></path>' for k in range(4)))
+        arms = [((2, -96), (14, -72), (40, -60)), ((-12, -94), (-2, -68), (20, -56))]
+        for pts in arms:
+            d = "M" + " L ".join(f"{a} {b}" for a, b in pts)
+            o.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>'
+                     f'<path d="{d}" fill="none" stroke="{cloth}" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>'
+                     f'<circle cx="{pts[-1][0]}" cy="{pts[-1][1]}" r="4.6" fill="{skin}" stroke="{INK}" stroke-width="1.3"></circle>')
+        o.append(f'<path d="M40 -61 L 54 -84" stroke="{INK}" stroke-width="3.6" stroke-linecap="round"></path><path d="M40 -61 L 54 -84" stroke="#C8A060" stroke-width="2" stroke-linecap="round"></path>')
     else:
-        o.append(f'<g transform="rotate(-4 {f(tx0 + 40 * s)} {f(ty)})">' + open_letter(tx0 + 4 * s, ty - 4 * s, 70 * s, 5 * s, rows=1, seed=int(x)) + '</g>')
-        o.append(f'<path d="M{f(tx0 + 10 * s)} {f(ty - 3 * s)} l {f(60 * s)} {f(-4 * s)}" stroke="#EADBB4" stroke-width="{f(4 * s)}"></path>')
-    o.append(inkpot(tx1 - 20 * s, ty, s * 0.8))
-    if writing: o.append(reed_pen(x + 40 * s, b - 56 * s, s * 0.6, rot=30))
+        o.append(f'<rect x="20" y="-126" width="12" height="46" fill="#EADBB4" stroke="{INK}" stroke-width="1.6"></rect>'
+                 + "".join(f'<path d="M23 {-120 + k * 8} l 6 0" stroke="#4A3020" stroke-width="1.3"></path>' for k in range(5))
+                 + f'<ellipse cx="26" cy="-128" rx="8" ry="3.4" fill="#D8C49A" stroke="{INK}" stroke-width="1.4"></ellipse>'
+                 f'<ellipse cx="26" cy="-78" rx="8" ry="3.4" fill="#D8C49A" stroke="{INK}" stroke-width="1.4"></ellipse>')
+        for pts in (((2, -96), (14, -84), (22, -110)), ((-10, -94), (6, -78), (22, -86))):
+            d = "M" + " L ".join(f"{a} {b}" for a, b in pts)
+            o.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>'
+                     f'<path d="{d}" fill="none" stroke="{cloth}" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>'
+                     f'<circle cx="{pts[-1][0]}" cy="{pts[-1][1]}" r="4.6" fill="{skin}" stroke="{INK}" stroke-width="1.3"></circle>')
+    return "".join(o) + "</g>"
+
+def pigeonholes(x, y, w, h, seed=1):
+    """A wall case of pigeonholes with rolled scrolls in them (their ends, tags hanging)."""
+    r = random.Random(seed)
+    cols, rows_ = max(3, int(w / 34)), max(2, int(h / 30))
+    cw, ch = w / cols, h / rows_
+    o = [f'<rect x="{f(x - 6)}" y="{f(y - 6)}" width="{f(w + 12)}" height="{f(h + 12)}" fill="#5A3418" stroke="{INK}" stroke-width="2.4"></rect>']
+    for i in range(cols):
+        for j in range(rows_):
+            cx, cy = x + i * cw, y + j * ch
+            o.append(f'<rect x="{f(cx + 2)}" y="{f(cy + 2)}" width="{f(cw - 4)}" height="{f(ch - 4)}" fill="#1E120A" stroke="{INK}" stroke-width="1.2"></rect>')
+            for k in range(r.randint(1, 3)):
+                rx = cx + cw * (0.3 + 0.22 * k); ry = cy + ch * 0.62
+                o.append(f'<circle cx="{f(rx)}" cy="{f(ry)}" r="{f(min(cw, ch) * 0.17)}" fill="#E0CFA4" stroke="{INK}" stroke-width="1"></circle>')
+                if r.random() < 0.4: o.append(f'<path d="M{f(rx)} {f(ry)} l 0 {f(ch * 0.3)}" stroke="#B5121B" stroke-width="1.4"></path>')
     return "".join(o)
 
-def study(p, w, h, seed, stage="dictate", scribe=TERTIUS_LOOK, bearer=None, night=True, window="city", writer=paul, fig_h=250):
-    """The letter written: a room of a house by lamplight, the writer standing and dictating, the scribe sitting at a low
-    table writing (stage "dictate"); "read" the scribe holding up the sheet, the writer listening; "give" the writer
-    handing the sealed scroll to the bearer standing at the open door (bearer: a dict cloth, veil — a woman — or cloth,
-    head — a man)."""
-    b = h * 0.92
+def couch(x, y, w, s=1.0, color="#7A3A2A"):
+    """A low couch (a reclining bench) with a cushion, its feet turned; (x, y) its left foot on the floor."""
+    return (f'<rect x="{f(x)}" y="{f(y - 30 * s)}" width="{f(w)}" height="{f(10 * s)}" fill="#6A3A1E" stroke="{INK}" stroke-width="2"></rect>'
+            f'<rect x="{f(x + 4)}" y="{f(y - 42 * s)}" width="{f(w - 8)}" height="{f(13 * s)}" rx="{f(5 * s)}" fill="{color}" stroke="{INK}" stroke-width="2"></rect>'
+            f'<path d="M{f(x)} {f(y - 30 * s)} C {f(x - 8 * s)} {f(y - 50 * s)} {f(x + 4 * s)} {f(y - 62 * s)} {f(x + 12 * s)} {f(y - 54 * s)} L {f(x + 12 * s)} {f(y - 30 * s)} Z" fill="#6A3A1E" stroke="{INK}" stroke-width="2"></path>'
+            + "".join(f'<rect x="{f(fx)}" y="{f(y - 20 * s)}" width="{f(7 * s)}" height="{f(20 * s)}" fill="#4A2412" stroke="{INK}" stroke-width="1.6"></rect>' for fx in (x + 6 * s, x + w - 13 * s)))
+
+def mat(x, y, w, s=1.0, color="#8A6A3A"):
+    """A woven floor mat, (x, y) its left end on the floor."""
+    return (f'<path d="M{f(x)} {f(y)} L {f(x + 14 * s)} {f(y - 10 * s)} L {f(x + w + 14 * s)} {f(y - 10 * s)} L {f(x + w)} {f(y)} Z" fill="{color}" stroke="{INK}" stroke-width="1.8"></path>'
+            + "".join(f'<path d="M{f(x + w * k / 9 + 2)} {f(y - 1)} l {f(12 * s)} {f(-8 * s)}" stroke="#6A4A22" stroke-width="1.2"></path>' for k in range(1, 9)))
+
+def low_table(x, y, w, s=1.0):
+    """A low table on the floor; (x, y) its left foot, the top at y - 30 s."""
+    return (f'<rect x="{f(x)}" y="{f(y - 30 * s)}" width="{f(w)}" height="{f(7 * s)}" fill="#6A3A1E" stroke="{INK}" stroke-width="2"></rect>'
+            + "".join(f'<rect x="{f(lx)}" y="{f(y - 23 * s)}" width="{f(6 * s)}" height="{f(23 * s)}" fill="#5A2E16" stroke="{INK}" stroke-width="1.6"></rect>' for lx in (x + 5 * s, x + w - 11 * s)))
+
+def doorway(x, top, w, b, seed, night=True):
+    """An open doorway onto the street: the jambs and lintel, and through it the street by night (or day) — house fronts
+    across the way with lit windows, the paving, the sky and stars."""
+    uid = f"dw{seed}"
+    hh = b - top
+    o = [f'<defs><clipPath id="{uid}"><rect x="{f(x)}" y="{f(top)}" width="{f(w)}" height="{f(hh)}"></rect></clipPath></defs><g clip-path="url(#{uid})">',
+         f'<rect x="{f(x)}" y="{f(top)}" width="{f(w)}" height="{f(hh)}" fill="{"#141838" if night else "#8FD0E2"}"></rect>']
+    if night: o.append(f'<g transform="translate({f(x)} {f(top)})">' + mk.stars(10, w, hh * 0.3, seed) + '</g>')
+    r = random.Random(seed); xx = x - 4
+    while xx < x + w:
+        bw = w * r.uniform(0.3, 0.5); bh = hh * r.uniform(0.42, 0.62)
+        o.append(f'<rect x="{f(xx)}" y="{f(b - hh * 0.16 - bh)}" width="{f(bw)}" height="{f(bh)}" fill="{"#3A3456" if night else "#E8D8B0"}" stroke="{INK}" stroke-width="1.4"></rect>'
+                 f'<rect x="{f(xx + bw * 0.3)}" y="{f(b - hh * 0.16 - bh * 0.72)}" width="{f(bw * 0.22)}" height="{f(bh * 0.18)}" fill="{"#FFC14D" if night and r.random() < 0.7 else "#2A2030"}" stroke="{INK}" stroke-width="1"></rect>')
+        xx += bw
+    o.append(f'<rect x="{f(x)}" y="{f(b - hh * 0.16)}" width="{f(w)}" height="{f(hh * 0.16)}" fill="{"#4A4458" if night else "#C8B898"}"></rect>'
+             + "".join(f'<path d="M{f(x)} {f(b - hh * 0.16 * k / 3)} L {f(x + w)} {f(b - hh * 0.16 * k / 3)}" stroke="{INK}" stroke-width="0.8" opacity="0.5"></path>' for k in (1, 2)))
+    if night: o.append(lamp_glow(x + w * 0.7, b - hh * 0.5, hh * 0.3, f"{uid}g", color="#FFC14D", op=0.35))
+    o.append('</g>' + f'<rect x="{f(x - 10)}" y="{f(top - 12)}" width="{f(w + 20)}" height="12" fill="#6A4A2A" stroke="{INK}" stroke-width="2"></rect>'
+             + "".join(f'<rect x="{f(jx)}" y="{f(top)}" width="10" height="{f(hh)}" fill="#6A4A2A" stroke="{INK}" stroke-width="2"></rect>' for jx in (x - 10, x + w)))
+    return "".join(o)
+
+def study(p, w, h, seed, stage="dictate", scribe=None, bearer=None, night=True, window="city", writer=None, fig_h=None):
+    """The letter written: a room of a house by lamplight, close in, the people standing about 70% of the panel's height —
+    stage "dictate": the writer standing at the left, his hand out, the scribe sitting cross-legged on a mat writing on the
+    roll across his knee, a low table at his side with the lamp and the inkpot, a couch behind the writer, pigeonholes of
+    scrolls and the window on the city (the Acrocorinth) on the wall; "read": the scribe holding the roll up to read it
+    back, the writer listening; "give": the writer handing the sealed scroll to the bearer standing in the open doorway
+    onto the night street. scribe: dict(cloth, head, cord) (TERTIUS_LOOK) or False for none; bearer: dict(cloth, veil) for
+    a woman (PHOEBE_LOOK) or dict(cloth, head, beard) for a man; writer: fig(p, x, y, s, flip, up, extra) (paul_fig)."""
+    scribe = TERTIUS_LOOK if scribe is None else scribe
+    writer = writer or paul_fig
+    b = h * 0.95
+    s = (fig_h or h * 0.72) / 205
+    k = s
     o = [mk.defs(p, *ALL, "ManUp", "WomanUp"), room(w, h, b, wall="#5A3E2E" if night else "#D8C098", floor="#3A2A20" if night else "#8A6A4A")]
-    if window: o.append(_window(w, h, w * 0.66, h * 0.18, w * 0.22, h * 0.34, night, seed))
-    s = fit(b, max(h * 0.3, b - fig_h))
-    lx, ly = w * 0.46, b - 34 * s * 0.9
-    if night: o.append(lamp_glow(lx, ly - 30 * s, max(w, h) * 0.5, f"{p}lg", op=0.5))
-    if stage == "give":
-        door_x = w * 0.62
-        o.append(f'<rect x="{f(door_x)}" y="{f(h * 0.26)}" width="{f(w * 0.2)}" height="{f(b - h * 0.26)}" fill="{"#2A3A6A" if night else "#FFE6A0"}" stroke="{INK}" stroke-width="2.4"></rect>')
-        if night: o.append(f'<g transform="translate({f(door_x)} {f(h * 0.26)})">' + mk.stars(8, w * 0.2, (b - h * 0.26) * 0.5, seed + 3) + '</g>')
-        o.append(writer(p, w * 0.42, b, s, up=[(22, -158), (46, -150), (70, -156)]))
-        o.append(sealed_scroll(w * 0.42 + 80 * s, b - 160 * s, s * 0.34, rot=-10))
+    if night: o.append(lamp_glow(w * 0.5, b - 60 * k, max(w, h) * 0.55, f"{p}lg", op=0.45))
+    give = stage == "give"
+    # the wall: pigeonholes and the window
+    ph_w, ph_h = min(w * 0.2, 130 * k), min(h * 0.32, 80 * k)
+    if give:
+        o.append(pigeonholes(w * 0.36, b - 205 * k, ph_w, ph_h, seed))
+        if window: o.append(_window(w, h, w * 0.06, b - 200 * k, min(w * 0.16, 110 * k), min(h * 0.36, 90 * k), night, seed))
+        dx, dw = w * 0.68, min(w * 0.22, 120 * k)
+        o.append(doorway(dx, b - 196 * k, dw, b, seed + 7, night))
+    else:
+        o.append(pigeonholes(w * 0.86 - ph_w, b - 205 * k, ph_w, ph_h, seed))
+        if window: o.append(_window(w, h, w * 0.4, b - 210 * k, min(w * 0.17, 115 * k), min(h * 0.38, 95 * k), night, seed))
+    o.append(mat(w * 0.44, b, 120 * k, k) if not give else mat(w * 0.06, b, 110 * k, k))
+    if give:
+        o.append(scribe_seated(w * 0.12, b - 4 * k, k, **{kk: vv for kk, vv in scribe.items() if kk in ("cloth", "head", "cord")}, stage="write") if scribe else "")
+        o.append(low_table(w * 0.24, b, 46 * k, k) + clay_lamp(w * 0.24 + 23 * k, b - 31 * k, k * 0.5) + inkpot(w * 0.24 + 40 * k, b - 30 * k, k * 0.5))
+        scroll_ = sealed_scroll(-70, -150, 0.3, rot=12)                     # the sealed letter in the bearer's hand
+        o.append(writer(p, w * 0.5, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -150)]))
         if bearer:
-            if "veil" in bearer: o.append(woman_fig(p, w * 0.7, b, s * 0.94, bearer["cloth"], bearer["veil"], flip=True, up=[(-22, -158), (-40, -144), (-60, -150)]))
-            else: o.append(man_fig(p, w * 0.7, b, s, bearer["cloth"], head=bearer.get("head"), bd=bearer.get("beard"), flip=True, up=[(-22, -158), (-40, -144), (-60, -150)]))
-        if scribe: o.append(_scribe_at_table(p, w * 0.08, b, s, scribe, writing=False))
-        o.append(clay_lamp(w * 0.08 + 120 * s, b - 34 * s - 6 * s, s * 0.7))
+            reach = [(-22, -158), (-42, -146), (-62, -146)]
+            bx = dx + dw * 0.5
+            if "veil" in bearer: o.append(robed(p, bx, b, s * 0.94, bearer["cloth"], woman=True, veil=bearer["veil"], mantle=bearer.get("mantle"), up=reach, extra=scroll_))
+            else: o.append(robed(p, bx, b, s, bearer["cloth"], head=bearer.get("head"), beard=bearer.get("beard"), up=reach, extra=scroll_))
         return "".join(o)
-    # dictate / read: the writer at the left facing right, the scribe facing him across the table
-    o.append(writer(p, w * 0.2, b, s, up=[(22, -158), (46, -150), (70, -158)] if stage == "dictate" else None))
+    o.append(couch(w * 0.02, b, min(w * 0.18, 120 * k), k))
+    o.append(writer(p, w * 0.24, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -160)] if stage == "dictate" else None))
     if scribe:
         sx = w * 0.56
-        o.append(f'<g transform="translate({f(2 * sx)} 0) scale(-1 1)">' + _scribe_at_table(p, sx, b, s, scribe, writing=stage == "dictate", holding=stage == "read") + '</g>')
-        o.append(clay_lamp(sx - 104 * s, b - 34 * s - 6 * s, s * 0.7))
+        o.append(scribe_seated(sx, b - 4 * k, k, **{kk: vv for kk, vv in scribe.items() if kk in ("cloth", "head", "cord")}, flip=True,
+                               stage="write" if stage == "dictate" else "read"))
+        tx = (w * 0.24 + 76 * k + sx - 78 * k) / 2 - 26 * k             # the low table between them, the lamp and the inkpot on it
+        o.append(low_table(tx, b, 52 * k, k) + clay_lamp(tx + 18 * k, b - 31 * k, k * 0.5) + inkpot(tx + 42 * k, b - 30 * k, k * 0.5))
     if bearer:
-        if "veil" in bearer: o.append(woman_fig(p, w * 0.9, b, s * 0.94, bearer["cloth"], bearer["veil"], flip=True))
-        else: o.append(man_fig(p, w * 0.9, b, s, bearer["cloth"], head=bearer.get("head"), bd=bearer.get("beard"), flip=True))
+        bx = w * 0.92
+        if "veil" in bearer: o.append(robed(p, bx, b, s * 0.94, bearer["cloth"], woman=True, veil=bearer["veil"], flip=True))
+        else: o.append(robed(p, bx, b, s, bearer["cloth"], head=bearer.get("head"), beard=bearer.get("beard"), flip=True))
     return "".join(o)
 
 def still_life(w, h, seed, sealed=True, night=True):
@@ -390,6 +559,22 @@ def portrait(fig, bg=("#8FD0E2", "#F3E8C8"), floor="#C8B07A"):
         return (mk.defs(p, *ALL, "ManUp", "WomanUp") + f'<rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="{bg[0]}"></rect>'
                 + f'<rect x="0" y="{f(h * 0.55)}" width="{f(w)}" height="{f(h * 0.45)}" fill="{bg[1]}"></rect>'
                 + f'<rect x="0" y="{f(b - 6)}" width="{f(w)}" height="{f(h - b + 6)}" fill="{floor}"></rect>' + fig(p, w * 0.5, b, s))
+    return draw
+
+def face_portrait(tok, tok2=None, bg="radial-gradient", light="#FFE680", ground=("#3A2A3A", "#8A5A4A")):
+    """A portrait for a greeting cell: a shaded profile face (a faces.face / ntcast-style token) looking right, as large as
+    the cell allows, over a soft light; tok2 a second face set behind it, a little higher and to the right (a couple:
+    Prisca and Aquila). Give each person their own cool, dark or off-white headcloth or veil in their face token."""
+    def draw(p, w, h):
+        uid = f"{p}fp"
+        o = [f'<defs><radialGradient id="{uid}" cx="0.7" cy="0.3" r="0.9"><stop offset="0" stop-color="{light}"></stop><stop offset="0.45" stop-color="{ground[1]}"></stop>'
+             f'<stop offset="1" stop-color="{ground[0]}"></stop></radialGradient></defs><rect x="0" y="0" width="{f(w)}" height="{f(h)}" fill="url(#{uid})"></rect>']
+        if tok2:
+            s2 = min(w / 300, (h + 10) / 420) * 0.92
+            o.append(mk.face(tok2, f(w * 0.3 - 40 * s2), f(h - 380 * s2 - h * 0.1), round(s2, 3)))
+        s = min(w / (330 if tok2 else 300), (h + 10) / 380)
+        o.append(mk.face(tok, f(-40 * s - (w * 0.06 if tok2 else 0)), f(h - 380 * s + 6), round(s, 3)))
+        return "".join(o)
     return draw
 
 def _cell_need(lines, s):

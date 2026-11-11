@@ -23,7 +23,7 @@ START, PAGES, P = PG.start, PG.pages, PG.P
 
 @P("ROM-C01-00-Title", "Chapter 1 · The Power of God unto Salvation", title=True)
 def title_page(n):
-    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#3A2418"></rect><g transform="translate(0 300)">{A.study("t01", 760, 640, 101, fig_h=330)}</g>'
+    svg = f'<rect x="0" y="0" width="760" height="1080" fill="#3A2418"></rect><g transform="translate(0 300)">{A.study("t01", 760, 640, 101, fig_h=420)}</g>'
     return title(1, "The Power of God unto Salvation", "Romans 1–3", svg, "#3A2418", v("1:16", frm="the power of God unto salvation", to="unto salvation"))
 
 
@@ -31,9 +31,9 @@ def st(p, seed, **k): return lambda w, h: A.study(p, w, h, seed, **k)
 
 SEGS = [
     # Romans 1 — the letter written at Corinth
-    D(lp("1:1-3"), st("st1", 1101), "#3A2418", head="Paul, a Servant of Jesus Christ", sky=1, art_h=220),
+    D(lp("1:1-3"), st("st1", 1101), "#3A2418", head="Paul, a Servant of Jesus Christ", sky=1, art_h=300),
     F(lp("1:4-6"), PAUL_LAMP, bg=LAMP_BG),
-    D([lt("1:7")], st("st2", 1107, stage="give", bearer=PHOEBE_LOOK), "#3A2418", art_h=230),
+    D([lt("1:7")], st("st2", 1107, stage="give", bearer=PHOEBE_LOOK), "#3A2418", art_h=290),
     D([lt("1:8")], lambda w, h: A.letter_to_rome(w, h), "#0B1A2E", head="I Long to See You", art_h=280),
     F(lp("1:9-13"), PAUL),
     D(lp("1:14-15"), lambda w, h: A.debtors("db1", w, h, 1114), "#8FD0E2", head="Not Ashamed of the Gospel", art_h=200),
@@ -51,7 +51,7 @@ SEGS = [
     F(lp("2:4-5"), PAUL),
     D(lp("2:6-8"), lambda w, h: A.two_roads(w, h, 1206), "#4A3A4A", head="According to His Works", art_h=190),
     F(lp("2:9-11"), PAUL_STERN, bg=STERN_BG),
-    D(lp("2:12-13"), st("st3", 1212, stage="read"), "#3A2418", art_h=220),
+    D(lp("2:12-13"), st("st3", 1212, stage="read"), "#3A2418", art_h=260),
     D(lp("2:14-16"), lambda w, h: A.law_in_hearts(w, h), "#0B1A2E", head="The Law Written in Their Hearts", art_h=220),
     D(lp("2:17-20"), lambda w, h: A.teacher("tc1", w, h, 1217), "#C8B490", head="A Light of Them in Darkness"),
     F(lp("2:21-23") + qw("2:24", "because of you,", "even as it is written."), PAUL_STERN, bg=STERN_BG),
@@ -60,7 +60,7 @@ SEGS = [
     # Romans 3
     D(lp("3:1-2"), lambda w, h: A.oracles(w, h, 1301), "#3A2A22", head="The Oracles of God", sky=3, art_h=190),
     F([lt("3:3"), lt("3:4", to="as it is written,"), sg("3:4", frm="That thou mightest")], PAUL),
-    D(lp("3:5-8"), st("st4", 1305), "#3A2418", art_h=220),
+    D(lp("3:5-8"), st("st4", 1305), "#3A2418", art_h=260),
     D([lt("3:9"), lt("3:10", to="as it is written,"), sg("3:10", frm="There is none righteous")], lambda w, h: A.under_sin(w, h), "#0B1A2E", art_h=190,
       head="None Righteous"),
     D([sg("3:11"), sg("3:12")], lambda w, h: A.dark_road(w, h, 1311), "#05050E"),
@@ -69,7 +69,7 @@ SEGS = [
     D(lp("3:19-20"), lambda w, h: A.throne_light("tl1", w, h, 1319), "#2A3A7A", head="Apart from the Law"),
     D(lp("3:21-22"), lambda w, h: A.dawn(w, h, 1321), "#2A2A5A"),
     D([lt("3:23")], lambda w, h: A.fall_short(w, h), "#0B1A2E", art_h=240),
-    D(lp("3:24-26"), lambda w, h: A.propitiation(w, h), "#0B1A2E", head="Justified Freely by His Grace", art_h=240),
+    D(lp("3:24-26"), lambda w, h: A.propitiation(w, h), "#0B1A2E", head="Justified Freely by His Grace", art_h=270),
     F(lp("3:27-31"), PAUL_JOY, bg=JOY_BG),
 ]
 PG.extend(K.pack(SEGS, "ROM-C01-D", PG.next(), end=nxt("NEXT · JUSTIFIED BY FAITH")))

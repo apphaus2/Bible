@@ -2,7 +2,7 @@
 act.art15, Mark's and Matthew's drawings) and from the epistle kit (epistle.py: the study, the sealed scroll, the still life,
 the letter's road, the radiance, the technical plate), and adds its own.
 
-Romans' people at a distance: Paul only ever act.art.paul; Tertius (tertius) a young beardless scribe in a dark-teal
+Romans' people at a distance, on the kit silhouettes (epistle.robed): Paul only ever epistle.paul_fig; Tertius (tertius) a young beardless scribe in a dark-teal
 headcloth and a teal-grey tunic; Phoebe (phoebe) a deep-blue veil and a grey travelling cloak. God is never drawn (light,
 storm, an empty throne); no one is drawn in the panels of 1:24–32. Every function takes (p, w, h, seed, ...) or (w, h,
 ...); p, a prefix unique to the panel, names the figure defs and gradients."""
@@ -14,7 +14,7 @@ from act.art10 import statue, philosopher, judgment_bema
 from act.art16 import islander, rome
 from act.art8 import jupiter_temple
 from act.art4 import throne_footstool
-from epistle import (study, still_life, sealed_scroll, open_letter, reed_pen, inkpot, lamp_glow, letter_road, plate_bg, radiance, tag, dim,
+from epistle import (study, still_life, sealed_scroll, open_letter, reed_pen, inkpot, lamp_glow, letter_road, plate_bg, radiance, tag, dim, robed, paul_fig,
                      TERTIUS_LOOK, PHOEBE_LOOK, SEPIA, SEAL)
 from oba.minor import vista, eagle, halo, rays, starfield, bolt, rain, sea as sea_
 from exo.art8 import mercy_seat
@@ -25,9 +25,9 @@ import exodus5 as V
 
 # ---- Romans' cast at a distance -------------------------------------------------------------------------------------------
 def tertius(p, x, y, s, flip=False, up=None):
-    return man_fig(p, x, y, s, TERTIUS_LOOK["cloth"], head=TERTIUS_LOOK["head"], cord="#0D2A2A", flip=flip, up=up, kind="Tunic")
+    return robed(p, x, y, s, TERTIUS_LOOK["cloth"], head=TERTIUS_LOOK["head"], cord=TERTIUS_LOOK["cord"], belt="#0D2A2A", flip=flip, up=up)
 def phoebe(p, x, y, s, flip=False, up=None):
-    return woman_fig(p, x, y, s * 0.94, PHOEBE_LOOK["cloth"], PHOEBE_LOOK["veil"], flip=flip, up=up)
+    return robed(p, x, y, s * 0.94, PHOEBE_LOOK["cloth"], woman=True, veil=PHOEBE_LOOK["veil"], mantle=PHOEBE_LOOK["mantle"], flip=flip, up=up)
 WHO.update({"tertius": tertius, "phoebe": phoebe})
 
 GOLD, CY = "#FFD23F", "#8FD0E2"
@@ -69,7 +69,7 @@ def debtors(p, w, h, seed):
     s = fit(b, max(h * 0.3, b - 200))
     o.append(philosopher(p, w * 0.12, b, s, 0) + philosopher(p, w * 0.24, b, s * 0.98, 1))
     o.append(islander(p, w * 0.78, b, s, 0, flip=True) + islander(p, w * 0.92, b, s * 0.97, 2, flip=True))
-    o.append(paul(p, w * 0.48, b, s, up=[(22, -158), (46, -150), (70, -156)]))
+    o.append(paul_fig(p, w * 0.48, b, s, flip=True, up=[(-22, -158), (-46, -150), (-70, -156)]))
     o.append(plate_label(w * 0.18, h * 0.08, "GREEKS", "#12113A", 11) + plate_label(w * 0.85, h * 0.08, "BARBARIANS", "#12113A", 11))
     return "".join(o).replace('stroke="#0B1A2E" stroke-width="3" paint-order', 'stroke="#F3EFE6" stroke-width="3" paint-order')
 
@@ -111,7 +111,7 @@ def image_of_man(p, x, base, s, color="#C8C8D0", flip=False):
     arm raised; an object, no face drawn."""
     k = s * 0.9
     return (f'<rect x="{f(x - 24 * k)}" y="{f(base - 34 * k)}" width="{f(48 * k)}" height="{f(34 * k)}" fill="#7A6A5A" stroke="{INK}" stroke-width="1.8"></rect>'
-            + mk.person(p, round(x), round(base - 34 * k), round(s * 0.62, 3), body=color, cloth=color, kind="Robe", sw=2.6, flip=flip, up=[(22, -158), (40, -176), (52, -200)]))
+            + robed(p, x, base - 34 * k, s * 0.62, "#D8D4CC", skin="#E6E2DA", hair="#C8C4BC", mantle="#C4C0B8", flip=flip, up=[(-22, -158), (-40, -176), (-52, -200)]))
 
 def idols(w, h, seed, dark=False, tags=True):
     """They changed the glory of the incorruptible God for the likeness of an image of corruptible man, and of birds, and
@@ -125,12 +125,12 @@ def idols(w, h, seed, dark=False, tags=True):
         o.append(f'<rect x="{f(x)}" y="{f(h * 0.12)}" width="{f(w * 0.04)}" height="{f(b - h * 0.12)}" fill="#D8CCB0" stroke="{INK}" stroke-width="1.6"></rect>')
     o.append(f'<rect x="-10" y="{f(b)}" width="{f(w + 20)}" height="{f(h)}" fill="#6A5A4A" stroke="{INK}" stroke-width="2"></rect>')
     k = min(1.6, (b - h * 0.16) / 170)
-    o.append(image_of_man(p, w * 0.14, b, k, color="#C8C8D0"))
-    o.append(_bird_idol(w * 0.38, b, k, "#E8B830"))
-    o.append(V.calf(w * 0.62, b, k * 0.62, uid=f"ic{seed}"))
-    o.append(_creeper_idol(w * 0.86, b, k * 1.3, "#C8963E"))
+    o.append(image_of_man(p, w * 0.12, b, k, color="#C8C8D0"))
+    o.append(_bird_idol(w * 0.34, b, k, "#E8B830"))
+    o.append(V.calf(w * 0.56, b, k * 0.62, uid=f"ic{seed}"))
+    o.append(_creeper_idol(w * 0.78, b, k * 1.3, "#C8963E"))
     if tags:
-        for x, t in ((0.14, "CORRUPTIBLE MAN"), (0.38, "BIRDS"), (0.62, "FOUR-FOOTED BEASTS"), (0.86, "CREEPING THINGS")):
+        for x, t in ((0.12, "CORRUPTIBLE MAN"), (0.34, "BIRDS"), (0.56, "FOUR-FOOTED BEASTS"), (0.78, "CREEPING THINGS")):
             o.append(f'<rect x="{f(w * x - len(t) * 3.4 - 6)}" y="{f(b + 6)}" width="{f(len(t) * 6.8 + 12)}" height="16" fill="#12113A"></rect>' + label(w * x, b + 18, t, GOLD, 9))
     return "".join(o)
 
@@ -279,7 +279,7 @@ def teacher(p, w, h, seed):
     bg, b = _synagogue(w, h, seed)
     o = [mk.defs(p, *ALL, "ManUp"), bg, lamp_glow(w * 0.19, h * 0.34, max(w, h) * 0.3, f"{p}tl", op=0.5)]
     s = fit(b, max(h * 0.3, b - 220))
-    o.append(man_fig(p, w * 0.36, b, s, "#E8E2D6", head="#F3EFE6", cord="#1F3A7A", bd="#3A2A1A", up=[(22, -158), (40, -150), (56, -158)]))
+    o.append(robed(p, w * 0.36, b, s, "#E8E2D6", head="#F3EFE6", cord="#1F3A7A", beard="#3A2A1A", mantle="#C8C2B4", flip=True, up=[(-22, -158), (-40, -150), (-56, -158)]))
     o.append(open_letter(w * 0.36 + 44 * s, b - 186 * s, 40 * s, 34 * s, rows=4, seed=seed))
     for i, x in enumerate((0.56, 0.68, 0.8, 0.92)):
         o.append(seated(w * x, b, s * 0.78, ["#5A6A3A", "#3A4A6A", "#7A5A3A", "#5A4A6A"][i], head=["#5A6A3A", None, "#7A5A3A", None][i],
@@ -381,11 +381,50 @@ def fall_short(w, h):
     o.append(dim(w * 0.95, top + 8, w * 0.95, peak - 2, "FALL SHORT", size=9, color="#FF6A4A"))
     return "".join(o)
 
+def cherub(x, y, s, reach, flip=False, uid="ch"):
+    """A cherub of beaten gold kneeling on the mercy-seat, facing the other, bowed toward the seat — no face drawn, the head
+    a smooth gold form — its wings arched up and forward to meet the other's over the middle; reach = the distance (in
+    local units) from the cherub to the middle of the seat. (x, y) the knee on the lid."""
+    sx = -s if flip else s
+    m = reach
+    g = f"url(#{uid})"
+    return (f'<defs><linearGradient id="{uid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4C2"></stop><stop offset="0.4" stop-color="#FFD23F"></stop>'
+            f'<stop offset="1" stop-color="#B8820E"></stop></linearGradient></defs>'
+            f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">'
+            # the far wing, behind
+            f'<path d="M-6 -58 C -20 -110 10 -150 {f(m * 0.55)} -150 C {f(m * 0.85)} -150 {f(m)} -138 {f(m + 4)} -124 C {f(m * 0.7)} -128 {f(m * 0.4)} -116 14 -64 Z" '
+            f'fill="#C8961E" stroke="{INK}" stroke-width="2.4"></path>'
+            # the body: knees on the lid, the back bowed forward, the arms reaching down toward the seat
+            f'<path d="M-34 0 L 20 0 C 24 -8 20 -18 10 -22 L 4 -30 C 14 -40 22 -50 26 -60 C 20 -72 4 -76 -6 -70 C -20 -60 -28 -40 -30 -24 C -34 -16 -36 -8 -34 0 Z" '
+            f'fill="{g}" stroke="{INK}" stroke-width="2.4"></path>'
+            f'<path d="M18 -58 C 28 -50 34 -38 38 -24" fill="none" stroke="{INK}" stroke-width="11" stroke-linecap="round"></path>'
+            f'<path d="M18 -58 C 28 -50 34 -38 38 -24" fill="none" stroke="#E8B830" stroke-width="7.5" stroke-linecap="round"></path>'
+            f'<ellipse cx="32" cy="-66" rx="10" ry="12" transform="rotate(30 32 -66)" fill="{g}" stroke="{INK}" stroke-width="2.2"></ellipse>'
+            # the near wing, arched forward over the seat
+            f'<path d="M-10 -62 C -26 -126 14 -170 {f(m * 0.6)} -166 C {f(m * 0.9)} -164 {f(m + 2)} -148 {f(m + 6)} -132 C {f(m * 0.74)} -140 {f(m * 0.44)} -126 8 -60 Z" '
+            f'fill="{g}" stroke="{INK}" stroke-width="2.6"></path>'
+            + "".join(f'<path d="M{f(-2 + k * m * 0.16)} {f(-80 - k * 12)} C {f(4 + k * m * 0.16)} {f(-100 - k * 10)} {f(16 + k * m * 0.18)} {f(-120 - k * 6)} {f(28 + k * m * 0.2)} {f(-130 - k * 3)}" '
+                      f'fill="none" stroke="#8A5A10" stroke-width="1.4" opacity="0.7"></path>' for k in range(5))
+            + '</g>')
+
 def propitiation(w, h):
-    """Whom God set forth to be a propitiation: the mercy-seat of the ark (Exodus' blueprint), the two cherubim of gold, and
-    the light between them (God is never drawn)."""
-    o = plate_bg(w, h, "ROMANS 3:25 · A PROPITIATION · THE MERCY-SEAT") + mercy_seat(w, h, grid=False, cx=0.5, scale=0.8)
-    return o + halo(w * 0.5, h * 0.42, min(w, h) * 0.28, "#FFFFFF", 0.6)
+    """Whom God set forth to be a propitiation: the ark of the covenant drawn as a technical plate — the chest overlaid with
+    gold, the mercy-seat its lid, two kneeling cherubim of gold facing one another on its two ends, bowed toward the seat,
+    their wings arched forward to meet over it, and the light between them (God is never drawn; the cherubim have no faces)."""
+    o = [plate_bg(w, h, "ROMANS 3:25 · A PROPITIATION · THE MERCY-SEAT")]
+    from exo.art8 import box
+    k = min(w / 620, (h - 44) / 250)
+    L, H = 300 * k, 82 * k
+    x0, base = w * 0.5 - L / 2, h - 18
+    o.append(halo(w * 0.5, base - H - 70 * k, 120 * k, "#FFFFFF", 0.75) + rays(w * 0.5, base - H - 70 * k, 24, 30 * k, 150 * k, "#FFF4C2", 0.3, 3))
+    o.append(box(x0, base, L, 60 * k, H, fill="#E8B830", top="#FFD23F", side="#B8860E"))
+    o.append(f'<rect x="{f(x0 - 6 * k)}" y="{f(base - H - 9 * k)}" width="{f(L + 12 * k)}" height="{f(10 * k)}" fill="#FFD23F" stroke="{INK}" stroke-width="2"></rect>'
+             + "".join(f'<path d="M{f(x0 + L * t)} {f(base - H + 10 * k)} L {f(x0 + L * t)} {f(base - 8 * k)}" stroke="#B8860E" stroke-width="1.6"></path>' for t in (0.18, 0.5, 0.82)))
+    o.append(f'<rect x="{f(x0 - 40 * k)}" y="{f(base - H * 0.35)}" width="{f(L + 80 * k)}" height="{f(6 * k)}" rx="{f(3 * k)}" fill="#B8860E" stroke="{INK}" stroke-width="1.6"></rect>')
+    ly = base - H - 9 * k; reach = 150 / 1.0
+    o.append(cherub(x0 + 30 * k, ly, k * 0.82, reach * 1.1, uid="chL") + cherub(x0 + L - 30 * k, ly, k * 0.82, reach * 1.1, flip=True, uid="chR"))
+    o.append(tag(x0 + L * 0.5, ly - 4, "THE MERCY-SEAT", x0 + L + 50 * k, ly + 26 * k, color=GOLD) + tag(x0 + 30 * k, ly - 90 * k, "CHERUBIM OF GOLD", x0 - 60 * k, ly - 120 * k, color=CY))
+    return "".join(o)
 
 def under_sin(w, h):
     """We before laid to the charge both of Jews and Greeks, that they are all under sin: a plate — two companies of men

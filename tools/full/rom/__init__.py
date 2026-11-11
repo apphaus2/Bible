@@ -17,8 +17,8 @@ tablets of stone and the law written in the heart as a technical plate (2:14–1
 (2:17–20); the outward and the inward (2:28–29); the oracles of God in the ark of the scrolls (3:1–2); the scales and the
 mark of the glory of God (3:23); the mercy-seat and the light between the cherubim (3:25).
 
-Romans' own cast (rom.common faces, rom.art figures), each the same everywhere: Paul only ever ntcast's (PAUL) and Acts'
-figure (act.art.paul), his face in five lights (epistle: earnest gold, lamplight, grieving blue, joyful white, stern red);
+Romans' own cast (rom.common faces, rom.art figures), each the same everywhere: Paul's face only ever ntcast's (PAUL) and his
+figure epistle.paul_fig (ntcast's colours on the kit silhouette), his face in five lights (epistle: earnest gold, lamplight, grieving blue, joyful white, stern red);
 Tertius, a young beardless scribe in a dark-teal headcloth with a reed pen; Phoebe, a deep-blue veil and a grey travelling
 cloak. A warm scarf would read as long hair: both headcloths are cool and dark.
 

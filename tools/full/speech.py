@@ -58,8 +58,8 @@ def _letter(text, s, side=None):
            f"font-family: 'Archivo Narrow', sans-serif; font-weight: 700; font-size: {s}px; line-height: 1.17; letter-spacing: 0.01em; text-transform: uppercase\">{text}</div>")
     if not side: return box
     tail = (f'<div style="position: absolute; {side}: -9px; top: 14px; width: 14px; height: 14px; background: {LETTER_TAIL}; '
-            f'border-{side}: 2px solid #0D0D0F; border-bottom: 2px solid #0D0D0F; transform: rotate({45 if side == "left" else -135}deg)"></div>')
-    return f'<div style="position: relative">{tail}{box}</div>'
+            f'border-{side}: 2px solid #0D0D0F; border-bottom: 2px solid #0D0D0F; transform: rotate({45 if side == "left" else -45}deg)"></div>')
+    return f'<div style="position: relative">{tail}{box.replace("<div style=\"", "<div style=\"position: relative; ", 1)}</div>'                # the box over the tail: only its point shows
 
 def _god(text, s):
     return (f'<div style="padding: 12px 16px; background: #12113A; color: #F3EFE6; box-shadow: inset 0 0 0 4px #12113A, inset 0 0 0 5.5px #FFD23F; '
