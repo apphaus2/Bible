@@ -1,0 +1,194 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:22:01Z"
+ },
+ "title": "2 Timothy — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "2TI-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · I Have Kept the Faith"
+  },
+  "2TI-C01-D-P01-NightAndDay.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Night and Day"
+  },
+  "2TI-C01-D-P02-StirUpTheGift.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Stir Up the Gift"
+  },
+  "2TI-C01-D-P03-IKnowHimWhomIHaveB.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · I Know Him Whom I Have Believed"
+  },
+  "2TI-C01-D-P04-TheHouseOfOnesipho.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The House of Onesiphorus"
+  },
+  "2TI-C01-D-P05-AGoodSoldierOfChri.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · A Good Soldier of Christ Jesus"
+  },
+  "2TI-C01-D-P06-RememberJesusChris.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Remember Jesus Christ"
+  },
+  "2TI-C01-D-P07-AWorkman.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · A Workman"
+  },
+  "2TI-C01-D-P08-TheFirmFoundationO.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · The Firm Foundation of God"
+  },
+  "2TI-C01-D-P09-TheFirmFoundationO.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Firm Foundation of God"
+  },
+  "2TI-C01-D-P10-InTheLastDays.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · In the Last Days"
+  },
+  "2TI-C01-D-P11-AntiochIconiumLyst.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Antioch, Iconium, Lystra"
+  },
+  "2TI-C01-D-P12-EveryScriptureInsp.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Every Scripture Inspired of God"
+  },
+  "2TI-C01-D-P13-PreachTheWord.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Preach the Word"
+  },
+  "2TI-C01-D-P14-IHaveKeptTheFaith.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · I Have Kept the Faith"
+  },
+  "2TI-C01-D-P15-TheCloakAndTheParc.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Cloak and the Parchments"
+  },
+  "2TI-C01-D-P16-AtMyFirstDefence.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · At My First Defence"
+  },
+  "2TI-C01-G-P01-Salute.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Salute"
+  },
+  "2TI-C01-E-P01-GraceBeWithYou.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Grace Be with You"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "2TI-C01-00-Title.dc.html",
+  "2TI-C01-D-P01-NightAndDay.dc.html",
+  "2TI-C01-D-P02-StirUpTheGift.dc.html",
+  "2TI-C01-D-P03-IKnowHimWhomIHaveB.dc.html",
+  "2TI-C01-D-P04-TheHouseOfOnesipho.dc.html",
+  "2TI-C01-D-P05-AGoodSoldierOfChri.dc.html",
+  "2TI-C01-D-P06-RememberJesusChris.dc.html",
+  "2TI-C01-D-P07-AWorkman.dc.html",
+  "2TI-C01-D-P08-TheFirmFoundationO.dc.html",
+  "2TI-C01-D-P09-TheFirmFoundationO.dc.html",
+  "2TI-C01-D-P10-InTheLastDays.dc.html",
+  "2TI-C01-D-P11-AntiochIconiumLyst.dc.html",
+  "2TI-C01-D-P12-EveryScriptureInsp.dc.html",
+  "2TI-C01-D-P13-PreachTheWord.dc.html",
+  "2TI-C01-D-P14-IHaveKeptTheFaith.dc.html",
+  "2TI-C01-D-P15-TheCloakAndTheParc.dc.html",
+  "2TI-C01-D-P16-AtMyFirstDefence.dc.html",
+  "2TI-C01-G-P01-Salute.dc.html",
+  "2TI-C01-E-P01-GraceBeWithYou.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "2 Timothy Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · I Have Kept the Faith (2 Timothy 1–4)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

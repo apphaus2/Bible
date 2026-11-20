@@ -119,14 +119,15 @@ def church_room(w, h, b, seed, night=False):
     o.append(_eph_window(w * 0.42, b - h * 0.62, min(w * 0.16, h * 0.4), min(h * 0.3, w * 0.12), night, seed))
     return "".join(o)
 
-def youth(p, w, h, seed):
+def youth(p, w, h, seed, beard=None):
     """Let no man despise thy youth; but be thou an ensample to them that believe: the church at Ephesus gathered by day,
     Timothy young and beardless standing with the open roll and his hand out, teaching; the elders with their grey beards
-    sitting on the bench and standing at the right, listening."""
+    sitting on the bench and standing at the right, listening. beard= Timothy's short beard (2 Timothy 2:2: the same room,
+    the things heard committed to faithful men)."""
     b = h * 0.95
     s = fig_k(w, h)
     o = [_defs(p), church_room(w, h, b, seed)]
-    o.append(timothy_fig_(p, w * 0.2, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -156)], extra=_sheet(-40, -128, 36, 26, rot=6)))
+    o.append(timothy_fig_(p, w * 0.2, b, s, flip=True, up=[(-22, -158), (-48, -150), (-72, -156)], extra=_sheet(-40, -128, 36, 26, rot=6), beard=beard))
     o.append(bench(w * 0.56, b, w * 0.2, s))
     o.append(robed(p, w * 0.6, b, s, "#5A6A7A", head="#E8E2D6", beard="#C8C2B6", mantle="#3A4A5A", pose="sit", seat=None))
     o.append(robed(p, w * 0.72, b, s, "#6A5A4A", head="#2A3A4A", beard="#9A948A", mantle="#4A3A2A", pose="sit", seat=None))
