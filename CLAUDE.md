@@ -15,9 +15,9 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 **Complete: the whole Old Testament, Genesis through Malachi (39 volumes, 4,478 pages, 23,145 verses).** Per-chapter detail is
 in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: the Gospels and Acts are complete** (`mat`,
 built on `oba/minor.py`'s `Kit`, the shared `ntcast.py` cast; `mrk`, `luk`, `jhn`, `act` build on Matthew's art and Mark's
-`MarkKit`, with `drawn(..., sky=)` keeping chapter stamps in clear sky). **Paul's letters have begun: Romans, 1 and 2 Corinthians
-and Galatians are complete**, on the shared epistle kit (`tools/full/epistle.py`). Next: Ephesians, then the rest in order to
-Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
+`MarkKit`, with `drawn(..., sky=)` keeping chapter stamps in clear sky). **Paul's letters have begun: Romans, 1 and 2 Corinthians,
+Galatians and Ephesians are complete**, on the shared epistle kit (`tools/full/epistle.py`). Next: Philippians, then the rest in
+order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
 other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
@@ -70,6 +70,7 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 46 | 1 Corinthians | `co1` | 5 | 85 | 437 full |
 | 47 | 2 Corinthians | `co2` | 3 | 52 | 257 full |
 | 48 | Galatians | `gal` | 2 | 31 | 149 full |
+| 49 | Ephesians | `eph` | 2 | 29 | 155 full |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.
@@ -159,11 +160,18 @@ Package notes (helpers worth reusing; each package's `__init__.py` has its plan 
   the Voice box, and Christ's words in ordinary balloons. Paul's faces (`PAUL`, `PAUL_LAMP`, `PAUL_GRIEF`, `PAUL_JOY`,
   `PAUL_STERN`) alternate sides by themselves and alternate with drawings that carry the argument: technical plates
   (`plate_bg`/`tag`/`dim`), maps (`letter_road` on Acts' projection), emblems. Never more than two face pages in a row.
-  Other helpers: `study()` (writer, scribe, bearer), `robed()`/`paul_fig()` standing people on the kit silhouettes,
+  Other helpers: `study()` (writer, scribe, bearer), `robed()`/`paul_fig()` people on the kit silhouettes,
   `greetings()` roll cells with `face_portrait()`, and `glory` panels for doxologies and benedictions. The risen Christ is
-  `co1.art5.risen_fig` (ntcast's look on the kit figure). The letters' builders wished the kit had: face panels sized to
-  their words (`gal.common.F`), drawings clipped to their panel (`gal.art.art`), `study(window=, scribe beard, bearer
-  figure)`, seated and walking `robed()` poses, a title size option, and `athlete()` (`co1/art3.py`) for action poses.
+  `co1.art5.risen_fig` (ntcast's look on the kit figure). Options (all off by default): `EpistleKit(fit_faces=, clip=)` and
+  `K.F(fit=)` (a face panel only as tall as its words), `K.D(clip=)`/`K.pic(clip=)`/`clipped()` (a drawing kept in its
+  panel), `K.title(size=)` for long names; `study(window="city"|"rome"|False|fn, others=[figures], scribe dict(beard=,
+  hair=), bearer dict(hair=, mantle=) or a figure function)`; the **prison stages** for the letters from Rome
+  (`study(stage="prison"|"prison_read"|"prison_give", sit=, up=, guard=)`: Paul's hired dwelling, the soldier chained
+  wrist to wrist, the window on Rome), with `roman_guard()`, `chain()`, `guard_hand()`/`robed_hand()`, the `GUARD` face,
+  `rome_window`; `robed(pose="sit"|"walk", seat=)`, `stool()`, `bench()`, `scribe_seated(beard=, hair=, head=None)`.
+  Ephesians (`eph`) is the model for a prison letter: Tychicus (`eph.art.tychicus`, `TYCHICUS` face), `eph.art.prison()`,
+  `paul_kneel()`, `callout()`; the armour of God plate `eph.art2.armour_plate`. Still wished for: `athlete()`
+  (`co1/art3.py`) in the kit for action poses.
 
 ## Visual style
 
