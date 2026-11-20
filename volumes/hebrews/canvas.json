@@ -205,6 +205,90 @@
    "w": 760,
    "h": 1080,
    "title": "25 · A New Covenant"
+  },
+  "HEB-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Way into the Holy Place"
+  },
+  "HEB-C03-D-P01-TheHolyOfHolies.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Holy of Holies"
+  },
+  "HEB-C03-D-P02-OnceInTheYear.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Once in the Year"
+  },
+  "HEB-C03-D-P03-NotMadeWithHands.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Not Made with Hands"
+  },
+  "HEB-C03-D-P04-NotMadeWithHands.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Not Made with Hands"
+  },
+  "HEB-C03-D-P05-IntoHeavenItself.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Into Heaven Itself"
+  },
+  "HEB-C03-D-P06-AShadowOfTheGoodTh.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · A Shadow of the Good Things to Come"
+  },
+  "HEB-C03-D-P07-LoIAmCome.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Lo, I Am Come"
+  },
+  "HEB-C03-D-P08-LoIAmCome.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Lo, I Am Come"
+  },
+  "HEB-C03-D-P09-ANewAndLivingWay.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · A New and Living Way"
+  },
+  "HEB-C03-D-P10-ANewAndLivingWay.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · A New and Living Way"
+  },
+  "HEB-C03-D-P11-MyRighteousOneShal.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · My Righteous One Shall Live by Faith"
   }
  },
  "order": [
@@ -235,7 +319,19 @@
   "HEB-C02-D-P09-HeEverLiveth.dc.html",
   "HEB-C02-D-P10-TheTrueTabernacle.dc.html",
   "HEB-C02-D-P11-ANewCovenant.dc.html",
-  "HEB-C02-D-P12-ANewCovenant.dc.html"
+  "HEB-C02-D-P12-ANewCovenant.dc.html",
+  "HEB-C03-00-Title.dc.html",
+  "HEB-C03-D-P01-TheHolyOfHolies.dc.html",
+  "HEB-C03-D-P02-OnceInTheYear.dc.html",
+  "HEB-C03-D-P03-NotMadeWithHands.dc.html",
+  "HEB-C03-D-P04-NotMadeWithHands.dc.html",
+  "HEB-C03-D-P05-IntoHeavenItself.dc.html",
+  "HEB-C03-D-P06-AShadowOfTheGoodTh.dc.html",
+  "HEB-C03-D-P07-LoIAmCome.dc.html",
+  "HEB-C03-D-P08-LoIAmCome.dc.html",
+  "HEB-C03-D-P09-ANewAndLivingWay.dc.html",
+  "HEB-C03-D-P10-ANewAndLivingWay.dc.html",
+  "HEB-C03-D-P11-MyRighteousOneShal.dc.html"
  ],
  "notes": {
   "Main": {
@@ -258,6 +354,13 @@
    "text": "Chapter 2 · A Priest for Ever after the Order of Melchizedek (Hebrews 5–8)",
    "x": 0,
    "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Way into the Holy Place (Hebrews 9–10)",
+   "x": 0,
+   "y": 9900
   }
  },
  "designSystems": [],
