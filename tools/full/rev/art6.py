@@ -289,13 +289,15 @@ def city_plan(w, h):
     o.append(f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(S)}" height="{f(S)}" fill="#3A3410" stroke="#CFE8C8" stroke-width="4"></rect>')
     o.append(halo(x0 + S / 2, y0 + S / 2, S * 0.4, "#FFE680", 0.6))
     o.append(f'<path d="M{f(x0 + S / 2)} {f(y0)} L {f(x0 + S / 2)} {f(y0 + S)} M{f(x0)} {f(y0 + S / 2)} L {f(x0 + S)} {f(y0 + S / 2)}" stroke="#FFD23F" stroke-width="5" opacity="0.8"></path>')
-    def gate(gx, gy, nm, side):
+    def gate(gx, gy, nm, side, i=1):
         o.append(f'<circle cx="{f(gx)}" cy="{f(gy)}" r="{f(S * 0.035)}" fill="#F8F6F2" stroke="#C8B8C8" stroke-width="2"></circle>'
                  f'<circle cx="{f(gx)}" cy="{f(gy)}" r="{f(S * 0.012)}" fill="#FFF4C2"></circle>')
         dx, dy, an = {"N": (0, -34, "middle"), "S": (0, 44, "middle"), "E": (34, 4, "start"), "W": (-34, 4, "end")}[side]
+        if side in "NS" and i != 1:                     # the outer names of a wall run outward, clear of the middle one
+            dx, an = (-6, "end") if i == 0 else (6, "start")
         o.append(geo.label(gx + dx, gy + dy, nm, "#FFD23F", max(7, min(9, S / 40)), anchor=an))
-    for i, nm in enumerate(GATES["N"]): gate(x0 + S * (i + 1) / 4, y0, nm, "N")
-    for i, nm in enumerate(GATES["S"]): gate(x0 + S * (i + 1) / 4, y0 + S, nm, "S")
+    for i, nm in enumerate(GATES["N"]): gate(x0 + S * (i + 1) / 4, y0, nm, "N", i)
+    for i, nm in enumerate(GATES["S"]): gate(x0 + S * (i + 1) / 4, y0 + S, nm, "S", i)
     for i, nm in enumerate(GATES["E"]): gate(x0 + S, y0 + S * (i + 1) / 4, nm, "E")
     for i, nm in enumerate(GATES["W"]): gate(x0, y0 + S * (i + 1) / 4, nm, "W")
     sz = max(8, min(10, S / 34))

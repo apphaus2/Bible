@@ -20,5 +20,155 @@
  },
  "songofsolomon/Main": {
   "SOLOMON": "LOS CANTARES"
+ },
+ "james/Main": {
+  "JAMES": "SANTIAGO",
+  "THE BOOK OF": "LA EPÍSTOLA DE"
+ },
+ "hebrews/HEB-C04-D-P21": {
+  "JAMES": "SANTIAGO"
+ },
+ "romans/": {
+  "LOVE": "CARIDAD"
+ },
+ "1corinthians/": {
+  "LOVE": "CARIDAD",
+  "THE EAR": "LA OREJA"
+ },
+ "galatians/": {
+  "LOVE": "CARIDAD"
+ },
+ "colossians/": {
+  "LOVE": "CARIDAD"
+ },
+ "2peter/": {
+  "LOVE": "CARIDAD"
+ },
+ "2peter/2PE-C01-D-P02": {
+  "GODLINESS": "TEMOR DE DIOS",
+  "KINDNESS": "FRATERNAL"
+ },
+ "ephesians/EPH-C02-D-P05": {
+  "PUT AWAY": "DEJAD"
+ },
+ "ephesians/EPH-C01-D-P10": {
+  "HEIGHT": "ALTURA",
+  "DEPTH": "PROFUNDIDAD",
+  "LENGTH": "LONGURA"
+ },
+ "2timothy/": {
+  "PRISCA & AQUILA": "PRISCA & AQUILA"
+ },
+ "titus/TIT-C01-D-P05": {
+  "SOBER-MINDED": "PRUDENTES"
+ },
+ "hebrews/HEB-C02-D-P03": {
+  "ETERNAL": "JUICIO",
+  "JUDGMENT": "ETERNO"
+ },
+ "revelation/": {
+  "JACINTH": "JACINTO",
+  "SARDIUS": "SARDIO"
+ },
+ "matthew/MAT-C05-00": {
+  "The Kingdom of Heaven Is Like": "El reino es semejante"
+ },
+ "hebrews/HEB-C03-D-P01": {
+  "THE SHOWBREAD": "LOS PANES"
+ },
+ "1john/1JN-C02-D-P05": {
+  "THE DROSS": "ESCORIA"
+ },
+ "1peter/1PE-C01-D-P06": {
+  "ELECT · PRECIOUS": "ELEGIDA·PRECIOSA"
+ },
+ "matthew/Main": {
+  "THE BOOK OF": "EL EVANGELIO SEGÚN"
+ },
+ "mark/Main": {
+  "THE BOOK OF": "EL EVANGELIO SEGÚN"
+ },
+ "luke/Main": {
+  "THE BOOK OF": "EL EVANGELIO SEGÚN"
+ },
+ "john/Main": {
+  "THE BOOK OF": "EL EVANGELIO SEGÚN"
+ },
+ "acts/Main": {
+  "THE BOOK OF": "EL LIBRO DE LOS"
+ },
+ "romans/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A LOS"
+ },
+ "galatians/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A LOS"
+ },
+ "ephesians/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A LOS"
+ },
+ "philippians/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A LOS"
+ },
+ "colossians/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A LOS"
+ },
+ "hebrews/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A LOS"
+ },
+ "1corinthians/Main": {
+  "THE BOOK OF": "LA PRIMERA EPÍSTOLA A LOS",
+  "1 CORINTHIANS": "CORINTIOS"
+ },
+ "2corinthians/Main": {
+  "THE BOOK OF": "LA SEGUNDA EPÍSTOLA A LOS",
+  "2 CORINTHIANS": "CORINTIOS"
+ },
+ "1thessalonians/Main": {
+  "THE BOOK OF": "LA PRIMERA EPÍSTOLA A LOS",
+  "1 THESSALONIANS": "TESALONICENSES"
+ },
+ "2thessalonians/Main": {
+  "THE BOOK OF": "LA SEGUNDA EPÍSTOLA A LOS",
+  "2 THESSALONIANS": "TESALONICENSES"
+ },
+ "1timothy/Main": {
+  "THE BOOK OF": "LA PRIMERA EPÍSTOLA A",
+  "1 TIMOTHY": "TIMOTEO"
+ },
+ "2timothy/Main": {
+  "THE BOOK OF": "LA SEGUNDA EPÍSTOLA A",
+  "2 TIMOTHY": "TIMOTEO"
+ },
+ "titus/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A"
+ },
+ "philemon/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA A"
+ },
+ "jude/Main": {
+  "THE BOOK OF": "LA EPÍSTOLA DE"
+ },
+ "1peter/Main": {
+  "THE BOOK OF": "LA PRIMERA EPÍSTOLA DE",
+  "1 PETER": "PEDRO"
+ },
+ "2peter/Main": {
+  "THE BOOK OF": "LA SEGUNDA EPÍSTOLA DE",
+  "2 PETER": "PEDRO"
+ },
+ "1john/Main": {
+  "THE BOOK OF": "LA PRIMERA EPÍSTOLA DE",
+  "1 JOHN": "JUAN"
+ },
+ "2john/Main": {
+  "THE BOOK OF": "LA SEGUNDA EPÍSTOLA DE",
+  "2 JOHN": "JUAN"
+ },
+ "3john/Main": {
+  "THE BOOK OF": "LA TERCERA EPÍSTOLA DE",
+  "3 JOHN": "JUAN"
+ },
+ "revelation/Main": {
+  "THE BOOK OF": "EL LIBRO DEL"
  }
 }

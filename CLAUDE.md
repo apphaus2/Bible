@@ -18,8 +18,8 @@ each `volumes/<id>/volume.json` and `coverage.md`. The Gospels and Acts: `mat`, 
 `ntcast.py` cast; `mrk`, `luk`, `jhn` and `act` build on Matthew's art and Mark's `MarkKit`, with `drawn(..., sky=)` keeping
 chapter stamps in clear sky. The letters (Romans–Jude) are built on the shared epistle kit (`tools/full/epistle.py`; see "The
 letters" below). Hebrews draws no writer. James–Jude and 1–3 John have their own writers' faces (`jas/common.py`,
-`jn1/common.py`). Revelation (`rev`, `RevKit` on the epistle kit) narrates in captions, as Daniel and Ezekiel do. Not yet done:
-the other nine languages' labels for Mark through Revelation, and the deploys. The minor prophets share `oba/minor.py`
+`jn1/common.py`). Revelation (`rev`, `RevKit` on the epistle kit) narrates in captions, as Daniel and Ezekiel do. Every
+volume's labels are in all ten languages (the New Testament's in `i18n/<lang>/labels-nt.json`). Not yet done: the deploys. The minor prophets share `oba/minor.py`
 (`Kit`: page packing) and each other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
@@ -273,7 +273,8 @@ verses a file lost (`spablm`, `deuelo`, `cmn-cu89t`). Spanish is the worked exam
   RV1909's words); `labels.label()` translates a label whole or piece by piece (split at " · " and " — "), and verse references by
   rule (the language's `books` and `abbr`: "GEN 1:3" → "GN 1:3"). `python tools/full/labels.py missing es` lists what is still English;
   `leftover <lang>` lists English labels on built pages, but skips a node already partly translated, and page titles (canvas.json
-  board titles, which go through the same tables) need their own comparison.
+  board titles, which go through the same tables) need their own comparison. A language's pages are numbered differently from
+  the English, so a `scoped.json` key is best a volume or chapter prefix (`romans/ROM-C02`), checked on that language's own pages.
 - **Site:** `rebuild_site.py --lang es` builds `_site-es/es/` (its own thumbnails, `_book/asv-es/` from `asv_pdf.py --text spaRV1909`,
   `_book/download/es/` from `downloads.py --lang es`). `build_site.py` takes its interface words from the language's `ui` and puts a
   **language dropdown** in every page's top bar (`lang_menu`: each language named in itself, linking to the page there whose verses

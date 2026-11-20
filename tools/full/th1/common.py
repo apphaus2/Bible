@@ -47,6 +47,7 @@ def paged(K, groups, prefix, start, end=""):
     them; boxes over drawings lose their tails. Returns [(file, board title, fn)] like K.pack."""
     from discourse import pack as _pack
     from epistle import untail
+    import asv
     nf = 0
     for g in groups:
         for s_ in g:
@@ -60,7 +61,8 @@ def paged(K, groups, prefix, start, end=""):
         fixed = sum(s_["h"] - s_.get("flex", 0) for s_ in g)
         assert flex, f"page {i + 1} of {prefix} has nothing that can grow"
         k = (room - fixed) / flex
-        assert 0.6 < k < 2.2, f"page {i + 1} of {prefix}: its drawings would be scaled by {k:.2f}"
+        lo, hi = (0.6, 2.2) if asv.LANG == "en" else (0.3, 3.5)     # a translation runs longer or shorter than the ASV
+        assert lo < k < hi, f"page {i + 1} of {prefix}: its drawings would be scaled by {k:.2f}"
         for s_ in g:
             s_["h"] = int(s_["h"] - s_.get("flex", 0) + s_.get("flex", 0) * k)
         pages = _pack(g, prefix, start + len(out), book=K.book, code=K.code, budget=10 ** 9, most=99, default_head=head,

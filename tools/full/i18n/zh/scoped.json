@@ -13,5 +13,127 @@
  },
  "haggai/HAG-C01-D-P13": {
   "ZECHARIAH": "撒迦利亚书"
+ },
+ "matthew/MAT-C01-A-P01": {
+  "RAM": "亚兰"
+ },
+ "mark/MRK-C08-": {
+  "AT EVEN": "晚上"
+ },
+ "luke/LUK-C03-E-P01": {
+  "AMOS": "亚摩斯",
+  "NAHUM": "拿鸿"
+ },
+ "acts/": {
+  "SYRIA": "叙利亚",
+  "MEDIA": "米底亚"
+ },
+ "romans/": {
+  "LOVE": "爱",
+  "SYRIA": "叙利亚"
+ },
+ "romans/ROM-C01-": {
+  "HONOR": "尊贵",
+  "THE SPIRIT": "灵"
+ },
+ "romans/ROM-C03-": {
+  "FEAR": "害怕"
+ },
+ "romans/ROM-C04-": {
+  "THE SERVICE": "礼仪",
+  "THE GLORY": "荣耀",
+  "THE ELDER": "大的",
+  "THE YOUNGER": "小的"
+ },
+ "1corinthians/": {
+  "LOVE": "爱",
+  "COSTLY STONES": "宝石",
+  "WOOD": "木",
+  "HARP": "琴",
+  "A ROD": "刑杖"
+ },
+ "1corinthians/1CO-C02-": {
+  "BOUND": "缠着"
+ },
+ "1corinthians/1CO-C04-D-P02": {
+  "FAITH": "信心"
+ },
+ "1corinthians/1CO-C05-W-": {
+  "JAMES": "雅各"
+ },
+ "2corinthians/": {
+  "SYRIA": "叙利亚"
+ },
+ "galatians/": {
+  "LOVE": "仁爱",
+  "PEACE": "和平",
+  "SYRIA": "叙利亚"
+ },
+ "ephesians/EPH-C02-": {
+  "PUT AWAY": "脱去"
+ },
+ "ephesians/EPH-C01-": {
+  "HEIGHT": "高",
+  "DEPTH": "深"
+ },
+ "colossians/": {
+  "LOVE": "爱心",
+  "SALT": "盐",
+  "MEAT": "食",
+  "DRINK": "饮"
+ },
+ "colossians/COL-": {
+  "PRINCIPALITIES": "执政的",
+  "POWERS": "掌权的"
+ },
+ "colossians/COL-C02-G-": {
+  "MARK": "马可"
+ },
+ "1timothy/": {
+  "WATER": "水",
+  "THE HOUSE OF GOD": "神的家"
+ },
+ "2timothy/2TI-C01-D-": {
+  "TITUS": "提多"
+ },
+ "titus/": {
+  "SERVANTS": "仆人"
+ },
+ "titus/TIT-C01-D-P03": {
+  "HOLY": "圣洁"
+ },
+ "titus/TIT-C01-D-": {
+  "TITUS": "提多"
+ },
+ "hebrews/": {
+  "SYRIA": "叙利亚",
+  "WATER": "水"
+ },
+ "hebrews/HEB-C01-D-P01": {
+  "ISAIAH": "以赛亚",
+  "EZEKIEL": "以西结",
+  "HOSEA": "何西阿",
+  "AMOS": "阿摩司"
+ },
+ "james/": {
+  "SYRIA": "叙利亚"
+ },
+ "james/JAS-C01-D-": {
+  "OF HEAVEN": "众光"
+ },
+ "2peter/": {
+  "FAITH": "信心",
+  "LOVE": "爱众人的心",
+  "KINDNESS": "心"
+ },
+ "revelation/REV-C05-": {
+  "TONGUES": "多方",
+  "CINNAMON": "肉桂",
+  "INCENSE": "香料",
+  "FINE LINEN": "细麻布",
+  "PURPLE": "紫色料",
+  "SCARLET": "朱红色料",
+  "WHEAT": "麦子",
+  "CHARIOTS": "车"
  }
 }
