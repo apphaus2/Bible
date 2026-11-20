@@ -103,10 +103,11 @@ def timothy_receives(p, w, h, seed):
     Diana; the brother come from Macedonia standing in the open doorway with the sealed roll, Timothy reaching to take it."""
     return study(p, w, h, seed, stage="give", scribe=False, writer=timothy_fig_, bearer=messenger, window=_eph_window, night=False, fig_h=min(h * 0.72, w * 0.34))
 
-def timothy_reads(p, w, h, seed, night=True, beard=None, window=None, sheet=True):
+def timothy_reads(p, w, h, seed, night=True, beard=None, window=None, sheet=True, x=0.58, tx=0.3):
     """Timothy reading the letter: his room at Ephesus (window= the window on the theatre and the temple of Diana), Timothy
     sitting on a stool holding the open sheet up before him, the lamp and the broken seal on the low table beside him, the
-    pigeonholes of scrolls on the wall. beard= his short beard (2 Timothy)."""
+    pigeonholes of scrolls on the wall. beard= his short beard (2 Timothy); x=, tx= where he and the table stand (fractions of
+    the width: an end panel moves him left, clear of the end mark)."""
     b = h * 0.95
     k = fig_k(w, h, 0.42)
     o = [mk.defs(p, *ALL, "ManUp", "WomanUp"), room(w, h, b, wall="#5A3E2E" if night else "#D8C098", floor="#3A2A20" if night else "#8A6A4A")]
@@ -114,10 +115,10 @@ def timothy_reads(p, w, h, seed, night=True, beard=None, window=None, sheet=True
     win = window or _eph_window
     o.append(win(w * 0.06, b - 205 * k, min(w * 0.2, 120 * k), min(h * 0.38, 92 * k), night, seed))
     o.append(pigeonholes(w * 0.74, b - 205 * k, min(w * 0.18, 120 * k), min(h * 0.3, 76 * k), seed))
-    tx = w * 0.3
+    tx = w * tx
     o.append(low_table(tx, b, 60 * k, k) + clay_lamp(tx + 18 * k, b - 31 * k, k * 0.55) + sealed_scroll(tx + 46 * k, b - 32 * k, 0.32 * k, rot=-8))
     held = _sheet(-74, -132, 46, 34, rot=-8) if sheet else ""
-    o.append(timothy_fig_(p, w * 0.58, b, k, up=READ_UP if sheet else None, extra=held, pose="sit", beard=beard))
+    o.append(timothy_fig_(p, w * x, b, k, up=READ_UP if sheet else None, extra=held, pose="sit", beard=beard))
     return "".join(o)
 
 def wreck_rocks(p, w, h, seed):
@@ -165,7 +166,7 @@ def prayer_kings(p, w, h, seed):
          f'<rect x="-10" y="{f(h * 0.5)}" width="{f(w + 20)}" height="{f(h * 0.6)}" fill="#C8B08A" stroke="{INK}" stroke-width="2"></rect>',
          f'<rect x="-10" y="{f(h * 0.5)}" width="{f(w + 20)}" height="{f(h * 0.04)}" fill="#A8906A" stroke="{INK}" stroke-width="1.6"></rect>']
     o.append(crowd_back(p, w, h, seed, rows=2, height=0.44, ups=0.45))
-    o.append(plate_label(w * 0.71, h * 0.1, "FOR KINGS AND ALL THAT ARE IN HIGH PLACE", "#12113A", 10, halo_="#FFF4C2"))
+    o.append(plate_label(w * 0.3, h * 0.24, "FOR KINGS AND ALL THAT ARE IN HIGH PLACE", "#12113A", 10, halo_="#FFF4C2"))
     return "".join(o)
 
 def mediator(p, w, h):

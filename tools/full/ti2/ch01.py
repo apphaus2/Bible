@@ -90,6 +90,6 @@ PG.extend(greetings(ITEMS, "2TI-C01-G", PG.next(), "2 Timothy", "2TI", head="Sal
 
 SEGS2 = [
     D([lt("4:22")], art(A.cell_night, 5822), "#241E22", head="Grace Be with You", art_h=300),
-    K.pic(art(A.timothy_reads, "rd2", 5823, beard=OLD), "#3A2418", h=420),
+    K.pic(art(A.timothy_reads, "rd2", 5823, beard=OLD, x=0.46, tx=0.2), "#3A2418", h=420),
 ]
 PG.extend(K.pack(SEGS2, "2TI-C01-E", PG.next(), end=fin("END OF 2 TIMOTHY · NEXT · TITUS")))
