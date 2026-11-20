@@ -1,0 +1,551 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:04:44Z"
+ },
+ "title": "Hebrews — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "HEB-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Better than the Angels"
+  },
+  "HEB-C01-D-P01-GodHathSpoken.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · God Hath Spoken"
+  },
+  "HEB-C01-D-P02-BetterThanTheAngel.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Better than the Angels"
+  },
+  "HEB-C01-D-P03-BetterThanTheAngel.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Better than the Angels"
+  },
+  "HEB-C01-D-P04-BetterThanTheAngel.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Better than the Angels"
+  },
+  "HEB-C01-D-P05-SoGreatASalvation.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · So Great a Salvation"
+  },
+  "HEB-C01-D-P06-CrownedWithGloryAn.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Crowned with Glory and Honor"
+  },
+  "HEB-C01-D-P07-CrownedWithGloryAn.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Crowned with Glory and Honor"
+  },
+  "HEB-C01-D-P08-MosesInAllHisHouse.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Moses in All His House"
+  },
+  "HEB-C01-D-P09-ToDayIfYeShallHear.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · To-day If Ye Shall Hear His Voice"
+  },
+  "HEB-C01-D-P10-ToDayIfYeShallHear.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · To-day If Ye Shall Hear His Voice"
+  },
+  "HEB-C01-D-P11-APromiseOfEntering.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Promise of Entering into His Rest"
+  },
+  "HEB-C01-D-P12-APromiseOfEntering.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Promise of Entering into His Rest"
+  },
+  "HEB-C01-D-P13-TheThroneOfGrace.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Throne of Grace"
+  },
+  "HEB-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · A Priest for Ever after the Order of Melchizedek"
+  },
+  "HEB-C02-D-P01-EveryHighPriest.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Every High Priest"
+  },
+  "HEB-C02-D-P02-MilkAndSolidFood.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Milk and Solid Food"
+  },
+  "HEB-C02-D-P03-PressOnUntoPerfect.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Press On unto Perfection"
+  },
+  "HEB-C02-D-P04-PressOnUntoPerfect.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Press On unto Perfection"
+  },
+  "HEB-C02-D-P05-ThePromiseToAbraha.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Promise to Abraham"
+  },
+  "HEB-C02-D-P06-MelchizedekKingOfS.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Melchizedek, King of Salem"
+  },
+  "HEB-C02-D-P07-MelchizedekKingOfS.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Melchizedek, King of Salem"
+  },
+  "HEB-C02-D-P08-APriestForEver.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · A Priest for Ever"
+  },
+  "HEB-C02-D-P09-HeEverLiveth.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · He Ever Liveth"
+  },
+  "HEB-C02-D-P10-TheTrueTabernacle.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The True Tabernacle"
+  },
+  "HEB-C02-D-P11-ANewCovenant.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · A New Covenant"
+  },
+  "HEB-C02-D-P12-ANewCovenant.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · A New Covenant"
+  },
+  "HEB-C03-00-Title.dc.html": {
+   "x": 0,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 3 · The Way into the Holy Place"
+  },
+  "HEB-C03-D-P01-TheHolyOfHolies.dc.html": {
+   "x": 840,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "26 · The Holy of Holies"
+  },
+  "HEB-C03-D-P02-OnceInTheYear.dc.html": {
+   "x": 1680,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "27 · Once in the Year"
+  },
+  "HEB-C03-D-P03-NotMadeWithHands.dc.html": {
+   "x": 2520,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "28 · Not Made with Hands"
+  },
+  "HEB-C03-D-P04-NotMadeWithHands.dc.html": {
+   "x": 3360,
+   "y": 10200,
+   "w": 760,
+   "h": 1080,
+   "title": "29 · Not Made with Hands"
+  },
+  "HEB-C03-D-P05-IntoHeavenItself.dc.html": {
+   "x": 0,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "30 · Into Heaven Itself"
+  },
+  "HEB-C03-D-P06-AShadowOfTheGoodTh.dc.html": {
+   "x": 840,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "31 · A Shadow of the Good Things to Come"
+  },
+  "HEB-C03-D-P07-LoIAmCome.dc.html": {
+   "x": 1680,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "32 · Lo, I Am Come"
+  },
+  "HEB-C03-D-P08-LoIAmCome.dc.html": {
+   "x": 2520,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "33 · Lo, I Am Come"
+  },
+  "HEB-C03-D-P09-ANewAndLivingWay.dc.html": {
+   "x": 3360,
+   "y": 11400,
+   "w": 760,
+   "h": 1080,
+   "title": "34 · A New and Living Way"
+  },
+  "HEB-C03-D-P10-ANewAndLivingWay.dc.html": {
+   "x": 0,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "35 · A New and Living Way"
+  },
+  "HEB-C03-D-P11-MyRighteousOneShal.dc.html": {
+   "x": 840,
+   "y": 12600,
+   "w": 760,
+   "h": 1080,
+   "title": "36 · My Righteous One Shall Live by Faith"
+  },
+  "HEB-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · So Great a Cloud of Witnesses"
+  },
+  "HEB-C04-D-P01-ByFaith.dc.html": {
+   "x": 840,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "37 · By Faith"
+  },
+  "HEB-C04-D-P02-ByFaith.dc.html": {
+   "x": 1680,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "38 · By Faith"
+  },
+  "HEB-C04-D-P03-Abraham.dc.html": {
+   "x": 2520,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "39 · Abraham"
+  },
+  "HEB-C04-D-P04-StrangersAndPilgri.dc.html": {
+   "x": 3360,
+   "y": 14300,
+   "w": 760,
+   "h": 1080,
+   "title": "40 · Strangers and Pilgrims"
+  },
+  "HEB-C04-D-P05-StrangersAndPilgri.dc.html": {
+   "x": 0,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "41 · Strangers and Pilgrims"
+  },
+  "HEB-C04-D-P06-Moses.dc.html": {
+   "x": 840,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "42 · Moses"
+  },
+  "HEB-C04-D-P07-Moses.dc.html": {
+   "x": 1680,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "43 · Moses"
+  },
+  "HEB-C04-D-P08-Moses.dc.html": {
+   "x": 2520,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "44 · Moses"
+  },
+  "HEB-C04-D-P09-WhatShallIMoreSay.dc.html": {
+   "x": 3360,
+   "y": 15500,
+   "w": 760,
+   "h": 1080,
+   "title": "45 · What Shall I More Say?"
+  },
+  "HEB-C04-D-P10-WhatShallIMoreSay.dc.html": {
+   "x": 0,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "46 · What Shall I More Say?"
+  },
+  "HEB-C04-D-P11-SoGreatACloudOfWit.dc.html": {
+   "x": 840,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · So Great a Cloud of Witnesses"
+  },
+  "HEB-C04-D-P12-TheChasteningOfThe.dc.html": {
+   "x": 1680,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · The Chastening of the Lord"
+  },
+  "HEB-C04-D-P13-TheChasteningOfThe.dc.html": {
+   "x": 2520,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · The Chastening of the Lord"
+  },
+  "HEB-C04-D-P14-NotUntoAMountThatM.dc.html": {
+   "x": 3360,
+   "y": 16700,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · Not unto a Mount That Might Be Touched"
+  },
+  "HEB-C04-D-P15-UntoMountZion.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · Unto Mount Zion"
+  },
+  "HEB-C04-D-P16-EntertainingAngels.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · Entertaining Angels Unawares"
+  },
+  "HEB-C04-D-P17-EntertainingAngels.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Entertaining Angels Unawares"
+  },
+  "HEB-C04-D-P18-TheSameYesterdayAn.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · The Same Yesterday and To-day"
+  },
+  "HEB-C04-D-P19-WithoutTheGate.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Without the Gate"
+  },
+  "HEB-C04-D-P20-TheGreatShepherdOf.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · The Great Shepherd of the Sheep"
+  },
+  "HEB-C04-D-P21-TheGreatShepherdOf.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Great Shepherd of the Sheep"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "HEB-C01-00-Title.dc.html",
+  "HEB-C01-D-P01-GodHathSpoken.dc.html",
+  "HEB-C01-D-P02-BetterThanTheAngel.dc.html",
+  "HEB-C01-D-P03-BetterThanTheAngel.dc.html",
+  "HEB-C01-D-P04-BetterThanTheAngel.dc.html",
+  "HEB-C01-D-P05-SoGreatASalvation.dc.html",
+  "HEB-C01-D-P06-CrownedWithGloryAn.dc.html",
+  "HEB-C01-D-P07-CrownedWithGloryAn.dc.html",
+  "HEB-C01-D-P08-MosesInAllHisHouse.dc.html",
+  "HEB-C01-D-P09-ToDayIfYeShallHear.dc.html",
+  "HEB-C01-D-P10-ToDayIfYeShallHear.dc.html",
+  "HEB-C01-D-P11-APromiseOfEntering.dc.html",
+  "HEB-C01-D-P12-APromiseOfEntering.dc.html",
+  "HEB-C01-D-P13-TheThroneOfGrace.dc.html",
+  "HEB-C02-00-Title.dc.html",
+  "HEB-C02-D-P01-EveryHighPriest.dc.html",
+  "HEB-C02-D-P02-MilkAndSolidFood.dc.html",
+  "HEB-C02-D-P03-PressOnUntoPerfect.dc.html",
+  "HEB-C02-D-P04-PressOnUntoPerfect.dc.html",
+  "HEB-C02-D-P05-ThePromiseToAbraha.dc.html",
+  "HEB-C02-D-P06-MelchizedekKingOfS.dc.html",
+  "HEB-C02-D-P07-MelchizedekKingOfS.dc.html",
+  "HEB-C02-D-P08-APriestForEver.dc.html",
+  "HEB-C02-D-P09-HeEverLiveth.dc.html",
+  "HEB-C02-D-P10-TheTrueTabernacle.dc.html",
+  "HEB-C02-D-P11-ANewCovenant.dc.html",
+  "HEB-C02-D-P12-ANewCovenant.dc.html",
+  "HEB-C03-00-Title.dc.html",
+  "HEB-C03-D-P01-TheHolyOfHolies.dc.html",
+  "HEB-C03-D-P02-OnceInTheYear.dc.html",
+  "HEB-C03-D-P03-NotMadeWithHands.dc.html",
+  "HEB-C03-D-P04-NotMadeWithHands.dc.html",
+  "HEB-C03-D-P05-IntoHeavenItself.dc.html",
+  "HEB-C03-D-P06-AShadowOfTheGoodTh.dc.html",
+  "HEB-C03-D-P07-LoIAmCome.dc.html",
+  "HEB-C03-D-P08-LoIAmCome.dc.html",
+  "HEB-C03-D-P09-ANewAndLivingWay.dc.html",
+  "HEB-C03-D-P10-ANewAndLivingWay.dc.html",
+  "HEB-C03-D-P11-MyRighteousOneShal.dc.html",
+  "HEB-C04-00-Title.dc.html",
+  "HEB-C04-D-P01-ByFaith.dc.html",
+  "HEB-C04-D-P02-ByFaith.dc.html",
+  "HEB-C04-D-P03-Abraham.dc.html",
+  "HEB-C04-D-P04-StrangersAndPilgri.dc.html",
+  "HEB-C04-D-P05-StrangersAndPilgri.dc.html",
+  "HEB-C04-D-P06-Moses.dc.html",
+  "HEB-C04-D-P07-Moses.dc.html",
+  "HEB-C04-D-P08-Moses.dc.html",
+  "HEB-C04-D-P09-WhatShallIMoreSay.dc.html",
+  "HEB-C04-D-P10-WhatShallIMoreSay.dc.html",
+  "HEB-C04-D-P11-SoGreatACloudOfWit.dc.html",
+  "HEB-C04-D-P12-TheChasteningOfThe.dc.html",
+  "HEB-C04-D-P13-TheChasteningOfThe.dc.html",
+  "HEB-C04-D-P14-NotUntoAMountThatM.dc.html",
+  "HEB-C04-D-P15-UntoMountZion.dc.html",
+  "HEB-C04-D-P16-EntertainingAngels.dc.html",
+  "HEB-C04-D-P17-EntertainingAngels.dc.html",
+  "HEB-C04-D-P18-TheSameYesterdayAn.dc.html",
+  "HEB-C04-D-P19-WithoutTheGate.dc.html",
+  "HEB-C04-D-P20-TheGreatShepherdOf.dc.html",
+  "HEB-C04-D-P21-TheGreatShepherdOf.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Hebrews Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Better than the Angels (Hebrews 1–4)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · A Priest for Ever after the Order of Melchizedek (Hebrews 5–8)",
+   "x": 0,
+   "y": 5800
+  },
+  "chapter03": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 3 · The Way into the Holy Place (Hebrews 9–10)",
+   "x": 0,
+   "y": 9900
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · So Great a Cloud of Witnesses (Hebrews 11–13)",
+   "x": 0,
+   "y": 14000
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

@@ -1,0 +1,51 @@
+{
+ "id": "hebrews",
+ "order": 58,
+ "name": "Hebrews",
+ "kanji": "ヘブル人への手紙",
+ "thumb": "vol-hebrews-",
+ "lede": "The fifty-eighth book of the Bible, in full: the letter to the Hebrews — God, who spake of old time unto the fathers in the prophets, hath spoken unto us in his Son, better than the angels; to-day if ye shall hear his voice; the word of God sharper than any two-edged sword; a great high priest, a priest for ever after the order of Melchizedek; the true tabernacle and the new covenant; the way into the holy place through the veil; faith, the assurance of things hoped for, and so great a cloud of witnesses; let us run with patience the race, looking unto Jesus; mount Zion and the heavenly Jerusalem; and the great shepherd of the sheep, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Better than the Angels",
+   "range": "Hebrews 1–4",
+   "blurb": "God, having of old time spoken unto the fathers in the prophets, hath at the end of these days spoken unto us in his Son, the effulgence of his glory; better than the angels — Thou art my Son, let all the angels of God worship him, sit thou on my right hand; so great a salvation; Jesus crowned with glory and honor; Moses faithful in all his house; to-day if ye shall hear his voice, harden not your hearts; a sabbath rest for the people of God; the word of God sharper than any two-edged sword; the throne of grace.",
+   "prefixes": [
+    "Main.dc.html",
+    "HEB-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "A Priest for Ever after the Order of Melchizedek",
+   "range": "Hebrews 5–8",
+   "blurb": "Every high priest taken from among men; thou art a priest for ever after the order of Melchizedek; milk and solid food; press on unto perfection; the oath to Abraham, surely blessing I will bless thee; the hope as an anchor of the soul, entering within the veil; Melchizedek king of Salem meeting Abraham, the tenth part of all; priests many in number, hindered by death, and one that abideth for ever; the pattern showed thee in the mount; the new covenant, I will put my laws into their mind.",
+   "prefixes": [
+    "HEB-C02-"
+   ]
+  },
+  {
+   "dir": "chapter-03",
+   "num": "3",
+   "name": "The Way into the Holy Place",
+   "range": "Hebrews 9–10",
+   "blurb": "The first tabernacle: the candlestick, the table and the showbread, the golden altar of incense, the ark of the covenant with the pot of manna, Aaron's rod that budded and the tables of the covenant, the cherubim of glory overshadowing the mercy-seat; the high priest alone, once in the year; Christ come through the greater tabernacle, not made with hands, into heaven itself; lo, I am come to do thy will; one sacrifice for sins for ever; a new and living way through the veil; my righteous one shall live by faith.",
+   "prefixes": [
+    "HEB-C03-"
+   ]
+  },
+  {
+   "dir": "chapter-04",
+   "num": "4",
+   "name": "So Great a Cloud of Witnesses",
+   "range": "Hebrews 11–13",
+   "blurb": "Faith is assurance of things hoped for: Abel, Enoch, Noah; Abraham going out not knowing whither, Sarah, Isaac offered up; Isaac, Jacob and Joseph; Moses hid, choosing ill treatment with the people of God, the passover, the Red sea; Jericho's walls and Rahab; Gideon, Barak, Samson, Jephthah, David, Samuel and the prophets; let us run with patience the race, looking unto Jesus; the chastening of the Lord; Esau; not unto Sinai's fire but unto mount Zion, the heavenly Jerusalem; our God is a consuming fire; entertaining angels unawares; without the gate; the great shepherd of the sheep.",
+   "prefixes": [
+    "HEB-C04-"
+   ]
+  }
+ ]
+}

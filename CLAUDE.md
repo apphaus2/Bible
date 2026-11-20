@@ -79,6 +79,7 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 55 | 2 Timothy | `ti2` | 1 | 20 | 83 full |
 | 56 | Titus | `tit` | 1 | 13 | 46 full |
 | 57 | Philemon | `phm` | 1 | 7 | 25 full |
+| 58 | Hebrews | `heb` | 4 | 62 | 303 full |
 | 59 | James | `jas` | 1 | 21 | 108 full |
 | 60 | 1 Peter | `pe1` | 1 | 21 | 105 full |
 | 61 | 2 Peter | `pe2` | 1 | 15 | 61 full |
