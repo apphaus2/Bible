@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 209 verses — 209 full, 0 partial, 0 omitted.
+**So far:** 303 verses — 303 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · Better than the Angels (Hebrews 1–4)
 
@@ -19,5 +19,11 @@ Every verse is on the page in full.
 ## Chapter 3 · The Way into the Holy Place (Hebrews 9–10)
 
 67 verses: 67 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 4 · So Great a Cloud of Witnesses (Hebrews 11–13)
+
+94 verses: 94 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.

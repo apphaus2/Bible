@@ -55,17 +55,18 @@ def throne_of_light(cx, base, s, uid, lit=1.0):
     o.append(glow(cx, base - 150 * s, 120 * s, "#FFFFFF", 0.55 * lit, f"{uid}h"))
     return "".join(o)
 
-def cloud_bank(w, y, seed, color="#FFFDF0", op=0.9, k=1.0):
+def cloud_bank(w, y, seed, color="#FFFDF0", op=0.9, k=1.0, base=True):
     """A bank of round-topped cloud across the panel at height y."""
     r = random.Random(seed); o = []; x = -30
     while x < w + 30:
         rr = r.uniform(26, 48) * k
         o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(rr)}" fill="{color}" opacity="{op}"></circle>'); x += rr * 1.2
-    o.append(f'<rect x="-10" y="{f(y)}" width="{f(w + 20)}" height="{f(60 * k)}" fill="{color}" opacity="{op}"></rect>')
+    if base: o.append(f'<rect x="-10" y="{f(y)}" width="{f(w + 20)}" height="{f(60 * k)}" fill="{color}" opacity="{op}"></rect>')
     return "".join(o)
 
 def face_cell(tok, x, y, w, h, uid, light="#FFE680", ground=("#2A2440", "#8A5A4A"), name=None):
-    """A portrait cell: a shaded profile face (a faces.face token) looking right over a soft light, framed; name a label."""
+    """A portrait cell: a shaded profile face (a faces.face token) looking right over a soft light, framed; name a label across
+    its top."""
     s = min(w / 300, (h + 10) / 380)
     o = [f'<defs><radialGradient id="{uid}" cx="0.7" cy="0.3" r="0.9"><stop offset="0" stop-color="{light}"></stop><stop offset="0.45" stop-color="{ground[1]}"></stop>'
          f'<stop offset="1" stop-color="{ground[0]}"></stop></radialGradient><clipPath id="{uid}c"><rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}"></rect></clipPath></defs>',
@@ -73,8 +74,8 @@ def face_cell(tok, x, y, w, h, uid, light="#FFE680", ground=("#2A2440", "#8A5A4A
          f'<g transform="translate({f(x + w / 2 - 170 * s)} {f(y + h - 380 * s + 6)})">' + mk.face(tok, 0, 0, round(s, 3)) + '</g></g>',
          f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" fill="none" stroke="{INK}" stroke-width="3"></rect>']
     if name:
-        o.append(f'<rect x="{f(x)}" y="{f(y + h - 20)}" width="{f(w)}" height="20" fill="#0D0D0F" opacity="0.72"></rect>'
-                 + label(x + w / 2, y + h - 6, name, GOLD, 9))
+        o.append(f'<rect x="{f(x)}" y="{f(y + 3)}" width="{f(w)}" height="20" fill="#0D0D0F" opacity="0.72"></rect>'      # the name across the top, clear of the verse ref
+                 + label(x + w / 2, y + 17, name, GOLD, 9))
     return "".join(o)
 
 # ---- the opening ----------------------------------------------------------------------------------------------------------
@@ -134,7 +135,7 @@ def majesty(p, w, h, seed):
              f'<path d="M{f(w * 0.6)} {f(h * 0.9)} C {f(w * 0.7)} {f(h * 0.88)} {f(w * 0.8)} {f(h * 0.92)} {f(w * 0.9)} {f(h * 0.96)} L {f(w * 0.92)} {f(h + 10)} L {f(w * 0.58)} {f(h + 10)} Z" fill="#6A7A3A" opacity="0.8"></path>')
     o.append(rays(w * 0.5, h * 0.3, 48, h * 0.06, max(w, h) * 1.1, "#FFE680", 0.2, 4))
     s = min(h * 0.42 / 300, w * 0.3 / 220)
-    o.append(f'<g transform="translate({f(w * 0.15)} 0)">' + cloud_bank(w * 0.7, h * 0.52, seed, "#FFF4C2", 0.6, k=min(1.0, h / 360)) + '</g>')
+    o.append(f'<g transform="translate({f(w * 0.15)} 0)">' + cloud_bank(w * 0.7, h * 0.52, seed, "#FFF4C2", 0.6, k=min(1.0, h / 360), base=False) + '</g>')
     o.append(throne_of_light(w * 0.5, h * 0.54, s, f"{p}t"))
     return "".join(o)
 
@@ -326,7 +327,7 @@ def high_priest_mercy(w, h):
     """A merciful and faithful high priest, to make propitiation for the sins of the people: the ark of the covenant and the
     mercy-seat as a technical plate (Romans' drawing)."""
     from rom.art import propitiation
-    return propitiation(w, h)
+    return propitiation(w, h).replace("ROMANS 3:25 · A PROPITIATION · THE MERCY-SEAT", "HEBREWS 2:17 · TO MAKE PROPITIATION · THE MERCY-SEAT")
 
 def chains_broken(w, h, seed):
     """Deliver all them who through fear of death were all their lifetime subject to bondage: a chain broken open on the
@@ -336,9 +337,9 @@ def chains_broken(w, h, seed):
 
 # ---- Hebrews 3 ------------------------------------------------------------------------------------------------------------
 def moses_tent(p, w, h, seed):
-    """Moses faithful in all his house: Moses (Exodus' look — off-white headcloth, black beard, brown robe, the rod) standing
+    """Moses faithful in all his house: Moses (Exodus' look — off-white headcloth, black beard, brown robe, on the kit figure) standing
     before the tabernacle in its court of white linen in the wilderness, the pillar of cloud over it."""
-    from exo.art import moses
+    from co2.art import moses_fig as moses                             # Exodus' Moses on the kit figure (2 Corinthians)
     b = h * 0.94
     o = [mk.defs(p, *ALL, "ManUp"), sky(w, h, "#8FD0E2", "#F3E0B0"), hills(w, h, h * 0.6, seed, color="#C8985A", amp=12, step=90), ground(w, h, h * 0.7, "#D8B880", dy=0)]
     k = min(w / 700, h / 300)

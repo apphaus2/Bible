@@ -368,7 +368,7 @@ def pattern_mount(p, w, h, seed):
     """See, saith he, that thou make all things according to the pattern that was showed thee in the mount: mount Sinai in its
     cloud and fire at the left, and over the plain at the right the pattern drawn in the sky as a plan of light — the court,
     the tent, the ark and the altar laid out — Moses small on the slope looking up at it."""
-    from exo.art import moses
+    from co2.art import moses_fig as moses                             # Exodus' Moses on the kit figure (2 Corinthians)
     o = [mk.defs(p, *ALL, "ManUp"), sky(w, h, "#14123A", "#5A3A6A"), starfield(w, h, seed, 30, 0.4)]
     o.append(f'<path d="M-10 {f(h * 0.9)} L {f(w * 0.12)} {f(h * 0.36)} L {f(w * 0.2)} {f(h * 0.28)} L {f(w * 0.28)} {f(h * 0.38)} L {f(w * 0.46)} {f(h * 0.9)} Z" fill="#4A3A4A" stroke="{INK}" stroke-width="2.4"></path>'
              + halo(w * 0.2, h * 0.24, h * 0.24, "#FF8A3D", 0.55) + f'<ellipse cx="{f(w * 0.2)}" cy="{f(h * 0.24)}" rx="{f(w * 0.16)}" ry="{f(h * 0.1)}" fill="#3A3048" opacity="0.85"></ellipse>')
@@ -400,7 +400,7 @@ def two_covenants(w, h):
     o = [plate_bg(w, h, "HEBREWS 8:6–8 · THE MEDIATOR OF A BETTER COVENANT")]
     k = min(w / 700, (h - 30) / 240)
     o.append(tablets(w * 0.26, h * 0.54, k * 0.9, op=0.6) + heart(w * 0.74, h * 0.52, 62 * k, writing=True, glow_=True))
-    o.append(label(w * 0.26, h - 18, "THE FIRST COVENANT · NOT FAULTLESS", CY, 10) + label(w * 0.74, h - 18, "A NEW COVENANT · BETTER PROMISES", GOLD, 10))
+    o.append(label(w * 0.26, h - 34, "THE FIRST COVENANT · NOT FAULTLESS", CY, 10) + label(w * 0.7, h - 34, "A NEW COVENANT · BETTER PROMISES", GOLD, 10))
     o.append(f'<path d="M{f(w * 0.42)} {f(h * 0.54)} L {f(w * 0.58)} {f(h * 0.54)}" stroke="{GOLD}" stroke-width="2.4"></path><path d="M{f(w * 0.57)} {f(h * 0.54 - 7)} L {f(w * 0.59)} {f(h * 0.54)} L {f(w * 0.57)} {f(h * 0.54 + 7)}" fill="none" stroke="{GOLD}" stroke-width="2.4"></path>')
     return "".join(o)
 

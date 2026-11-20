@@ -31,11 +31,22 @@ crosses far off under a darkened sky. Sacrifices are altars, smoke and vessels: 
 10:26–31 (judgment) is words over fire on a dark field; 11:35–38 (tortured, stoned, sawn asunder, slain with the sword) words
 over empty places — the desert, the mountains, the caves and dens of the earth; 12:4 (not yet resisted unto blood) words
 over the empty stadium track; 12:5–11 (chastening) words over a household at peace, no blow drawn; 12:16 Esau and his mess of
-pottage, no more; 13:4 words over a shut door. Rahab is drawn as Joshua draws her (her window and its scarlet line).
+pottage and his weeping face, no more; 13:4 words over a shut door. Rahab is her window and its scarlet line (Joshua's
+drawing). Isaac on Moriah is never bound: Abraham and the lad stand by the altar and the wood, the ram caught in the thicket.
+Gethsemane (5:7) is the garden of olives at night with no one drawn. The passover (11:28) is a street of shut doors at
+midnight, the destroyer not drawn. The Old Testament volumes' drawings whose people are the old blob shapes (Abraham at
+Moriah, the Levite house, the passover table, Jericho's procession, Daniel in the den, the furnace's feeders, the angels at
+Mamre, the old Moses figure) are not reused: those scenes are redrawn on the kit figure (epistle.robed), or reused with no one
+in them (the den's lions, the furnace's fire).
 
-Drawings: see heb/art.py … art4.py; the cast as the Old Testament volumes and ntcast draw them (Moses as Exodus draws him,
-Aaron in the high priest's garments with the white mitre, Abraham's grey beard and slate-blue robe, Melchizedek in white
-with a gold band and crown, Esau's red curls, the three men at Mamre white with gold rims and no faces).
+Drawings (heb/art.py … art4.py; their docstrings say what each shows): the cast as the Old Testament volumes and ntcast draw
+them — Moses as Exodus draws him (2 Corinthians' moses_fig), Aaron in the high priest's garments (the robe of blue with bells
+and pomegranates, the ephod, the breastplate of twelve stones, the white mitre with its gold plate), Abraham's grey beard and
+slate-blue robe and Sarah's mulberry veil (Romans' figures), Melchizedek in white with a gold band and crown, Joshua's
+rust-red headcloth, Jacob old in slate-blue, Esau's red curls, the faces of the prophets and the judges from their own
+volumes. Plates on the epistle kit's navy grid: the house, the sword, the sceptre and the oil, the foundation, the two seals,
+the tenth part, the lineage of Levi, Levi and Judah, the high priests from Aaron, the two covenants, the mind and the heart,
+the Holy place, the Holy of holies, the testament, year by year.
 
 Plan (7,030 words, four chapters): 1 Better than the Angels (1–4) · 2 A Priest for Ever after the Order of Melchizedek (5–8)
 · 3 The Way into the Holy Place (9–10) · 4 So Great a Cloud of Witnesses (11–13)."""
@@ -59,4 +70,3 @@ META = {
      "blurb": "Faith is assurance of things hoped for: Abel, Enoch, Noah; Abraham going out not knowing whither, Sarah, Isaac offered up; Isaac, Jacob and Joseph; Moses hid, choosing ill treatment with the people of God, the passover, the Red sea; Jericho's walls and Rahab; Gideon, Barak, Samson, Jephthah, David, Samuel and the prophets; let us run with patience the race, looking unto Jesus; the chastening of the Lord; Esau; not unto Sinai's fire but unto mount Zion, the heavenly Jerusalem; our God is a consuming fire; entertaining angels unawares; without the gate; the great shepherd of the sheep."},
   ],
 }
-META["chapters"] = [c for c in META["chapters"] if (pathlib.Path(__file__).parent / f"{c['module']}.py").exists()]   # TEMP while building

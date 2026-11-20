@@ -233,8 +233,8 @@ def second_time(w, h, seed):
     from sin, to them that wait for him, unto salvation: the sepulchres hewn in the hillside in the grey before dawn, their
     stones rolled to, and over the hills the clouds breaking open on a great light."""
     o = [sky(w, h, "#1A1A4A", "#FFD8A0"), glow(w * 0.62, h * 0.3, h * 0.7, "#FFFFFF", 0.8, "stg"), rays(w * 0.62, h * 0.3, 40, h * 0.12, max(w, h), "#FFF4C2", 0.25, 4)]
-    o.append(cloud_bank(w * 0.4, h * 0.4, seed, "#8A80A8", 0.85, k=min(1.0, h / 300)))
-    o.append(f'<g transform="translate({f(w * 0.74)} 0)">' + cloud_bank(w * 0.4, h * 0.36, seed + 1, "#8A80A8", 0.85, k=min(1.0, h / 300)) + '</g>')
+    o.append(cloud_bank(w * 0.4, h * 0.4, seed, "#8A80A8", 0.85, k=min(1.0, h / 300), base=False))
+    o.append(f'<g transform="translate({f(w * 0.74)} 0)">' + cloud_bank(w * 0.4, h * 0.36, seed + 1, "#8A80A8", 0.85, k=min(1.0, h / 300), base=False) + '</g>')
     o.append(hills(w, h, h * 0.6, seed, color="#3A3048", amp=14, step=90))
     o.append(f'<path d="M-10 {f(h + 10)} L -10 {f(h * 0.66)} C {f(w * 0.3)} {f(h * 0.6)} {f(w * 0.6)} {f(h * 0.7)} {f(w + 10)} {f(h * 0.68)} L {f(w + 10)} {f(h + 10)} Z" fill="#5A4A5A" stroke="{INK}" stroke-width="2"></path>')
     k = min(1.0, h / 300)
