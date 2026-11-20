@@ -1,0 +1,21 @@
+{
+ "id": "2john",
+ "order": 63,
+ "name": "2 John",
+ "kanji": "ヨハネの第二の手紙",
+ "thumb": "vol-2john-",
+ "lede": "The sixty-third book of the Bible, in full: the elder's letter unto the elect lady and her children — whom I love in truth; I rejoice greatly that I have found certain of thy children walking in truth; that we love one another; many deceivers are gone forth into the world; look to yourselves; receive him not into your house; I hope to come unto you, and to speak face to face; the children of thine elect sister salute thee, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Elect Lady",
+   "range": "2 John 1",
+   "blurb": "The elder unto the elect lady and her children, whom I love in truth; grace, mercy, peace; I rejoice greatly that I have found certain of thy children walking in truth; not a new commandment, but that which we had from the beginning, that we love one another; many deceivers are gone forth into the world; look to yourselves, that ye lose not the things which we have wrought; whosoever abideth in the teaching hath both the Father and the Son; receive him not into your house; I would not write them with paper and ink, but I hope to speak face to face; the children of thine elect sister salute thee.",
+   "prefixes": [
+    "Main.dc.html",
+    "2JN-C01-"
+   ]
+  }
+ ]
+}
