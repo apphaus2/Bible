@@ -37,6 +37,18 @@ def lab(x, y, text, color=GOLD, size=10, anchor="middle", halo_=NAVY):
     """A plate label with a dark halo (plate_label), the text escaped for the EPUB."""
     return plate_label(x, y, text.replace("&", "&amp;"), color, size, anchor, halo_)
 
+def callout(x0, y0, x1, ty, lines, side=None):
+    """A plate callout: a dot on the part, a leader to the margin at x1 (left or right of the part), and the label lines
+    stacked there, anchored at the margin so they never run off the plate (lines: (text, color, size))."""
+    side = side or ("l" if x1 < x0 else "r")
+    anchor = "start" if side == "l" else "end"
+    ex = x1 + (150 if side == "l" else -150)
+    c = lines[0][1]
+    out = [f'<circle cx="{f(x0)}" cy="{f(y0)}" r="3.2" fill="{c}"></circle><path d="M{f(x0)} {f(y0)} L {f(ex)} {f(ty)} L {f(x1 + (4 if side == "l" else -4))} {f(ty)}" stroke="{c}" stroke-width="1.2" fill="none"></path>']
+    for j, (t, col, sz) in enumerate(lines):
+        out.append(lab(x1, ty - 6 if j == 0 else ty + 8 + (j - 1) * 12, t, col, sz, anchor))
+    return "".join(out)
+
 # ---- Ephesians' cast at a distance ----------------------------------------------------------------------------------------
 def tychicus(p, x, y, s, flip=False, up=None, extra="", pose="stand"):
     """Tychicus, the beloved brother and faithful minister (6:21): slate-teal headcloth, short brown beard, grey travelling cloak."""
@@ -47,6 +59,7 @@ def prison(p, w, h, seed, stage="prison", **k):
     """Paul's own hired dwelling at Rome (epistle.study's prison stages) with Ephesians' people: the scribe at Rome on his
     mat, Tychicus the bearer."""
     k.setdefault("scribe", SCRIBE_LOOK)
+    k.setdefault("fig_h", min(h * 0.72, w * 0.42))                 # a tall panel does not blow the room up past its width
     if stage == "prison_give": k.setdefault("bearer", tychicus)
     return study(p, w, h, seed, stage=stage, **k)
 
@@ -218,7 +231,7 @@ def air_dark(w, h, seed):
     for _ in range(9):
         y = r.uniform(0.1, 0.5) * h; x = r.uniform(0, w)
         o.append(f'<path d="M{f(x)} {f(y)} C {f(x + 40)} {f(y - 6)} {f(x + 90)} {f(y + 4)} {f(x + 150)} {f(y - 4)}" fill="none" stroke="#5A4A6A" stroke-width="1.6" opacity="0.6"></path>')
-    o.append(diana_temple(w * 0.8, h * 0.66, w * 0.22).replace("#F3EFE6", "#4A4458").replace("#D8D0C0", "#3A3448").replace("#E8E0D0", "#443E52"))
+    o.append(diana_temple(w * 0.8, h * 0.66, w * 0.22).replace("#F8F4EC", "#545066").replace("#F3EFE6", "#4A4458").replace("#D8D0C0", "#3A3448").replace("#E8E0D0", "#443E52"))
     o.append(houses(w, h, h * 0.96, seed, hmin=0.2, hmax=0.34, shut=True, color=("#2E2838", "#262030", "#342C3E", "#2A2434")))
     return "".join(o)
 
