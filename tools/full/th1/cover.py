@@ -1,0 +1,17 @@
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+from th1 import G
+from oba.minor import cover_page
+from th1 import art as A
+
+def cover():
+    """The letter come to Thessalonica: the city climbing above its harbour at dawn, Olympus white across the gulf, and in
+    the foreground, on a stone parapet, the scroll tied and sealed (full-bleed)."""
+    scene = (f'<rect x="0" y="0" width="760" height="1080" fill="#2A2A5A"></rect>'
+             f'<g transform="translate(0 300)">{A.thess_view(760, 680, 5201)}</g>'
+             f'<rect x="-10" y="930" width="780" height="160" fill="#8A7A6A" stroke="#0D0D0F" stroke-width="3"></rect>'
+             + "".join(f'<path d="M{x} 930 L {x} 1090" stroke="#6A5A4A" stroke-width="2"></path>' for x in range(40, 760, 120))
+             + '<path d="M-10 960 L 770 960" stroke="#6A5A4A" stroke-width="2"></path>'
+             + A.sealed_scroll(420, 908, 2.3, rot=-7))
+    return cover_page("1 Thessalonians", "Volume Fifty-Two", 52, "Chapters 1 – 5", "テサロニケ人への第一の手紙", "TESARONIKEJIN E NO DAIICHI NO TEGAMI",
+                      G.v("4:17", frm="so shall we ever"), scene, bg="#2A2A5A", band="42,42,90")
