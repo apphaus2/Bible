@@ -202,15 +202,16 @@ def night_toil(p, w, h, seed, who="silvanus"):
     s = fig_s(h, 0.84)
     o = [_defs(p), room(w, h, b, wall="#3A2E2E", floor="#241C1A"), glow(w * 0.5, b - 110 * s, max(w, h) * 0.5, "#FFC14D", 0.36, f"{p}lg")]
     o.append(night_window(w * 0.06, b - 200 * s, min(w * 0.14, 100 * s), 80 * s, seed))
-    o.append(tent_frame(w * 0.68, w * 0.96, b - 196 * s, b, s))
+    o.append(tent_frame(w * 0.78, w * 0.98, b - 196 * s, b, s))
     o.append(f'<rect x="{f(w * 0.4)}" y="{f(b - 176 * s)}" width="{f(90 * s)}" height="{f(8 * s)}" fill="#6A4A2A" stroke="{INK}" stroke-width="1.6"></rect>'
              + clay_lamp(w * 0.4 + 45 * s, b - 178 * s, max(0.6, s * 0.7)))
-    lx, rx = w * 0.3, w * 0.56
-    hand = sit_up((-22, -158), (-46, -130), (-66, -116))
+    cx = w * 0.46
+    lx, rx = cx - 116 * s, cx + 116 * s
+    hand = sit_up((-22, -158), (-44, -128), (-60, -112))
     o.append(paul_fig(p, lx, b, s, flip=True, up=hand, pose="sit"))
     other = silvanus_r if who == "silvanus" else timothy_r
     o.append(other(p, rx, b, s, pose="sit", up=hand))
-    o.append(lap_cloth(lx + 40 * s, rx - 40 * s, b - SEAT_Y * s - 10 * s, s))
+    o.append(lap_cloth(lx + 56 * s, rx - 56 * s, b - SEAT_Y * s - 8 * s, s))
     return "".join(o)
 
 def jason_house(p, w, h, seed):
