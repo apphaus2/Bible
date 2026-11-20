@@ -1,0 +1,21 @@
+{
+ "id": "2peter",
+ "order": 61,
+ "name": "2 Peter",
+ "kanji": "ペテロの第二の手紙",
+ "thumb": "vol-2peter-",
+ "lede": "The sixty-first book of the Bible, in full: Peter's second letter, written near his death — partakers of the divine nature, in your faith supply virtue, the putting off of my tabernacle cometh swiftly, eyewitnesses of his majesty on the holy mount, a lamp shining in a dark place until the day-star arise, false teachers, Noah, Sodom and righteous Lot, Balaam and the dumb ass, where is the promise of his coming?, one day as a thousand years, the day of the Lord as a thief, new heavens and a new earth, our beloved brother Paul, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Until the Day Dawn",
+   "range": "2 Peter 1–3",
+   "blurb": "Simon Peter, to them that have obtained a like precious faith: partakers of the divine nature; in your faith supply virtue, and in your virtue knowledge, … and in your brotherly kindness love; the putting off of my tabernacle cometh swiftly; we were eyewitnesses of his majesty, This is my beloved Son, in the holy mount; a lamp shining in a dark place, until the day dawn; false teachers; God spared not the ancient world, but preserved Noah; Sodom and Gomorrah turned into ashes, righteous Lot delivered; the way of Balaam, a dumb ass spake; mockers: where is the promise of his coming?; one day is with the Lord as a thousand years; the day of the Lord will come as a thief; new heavens and a new earth; our beloved brother Paul; grow in grace.",
+   "prefixes": [
+    "Main.dc.html",
+    "2PE-C01-"
+   ]
+  }
+ ]
+}

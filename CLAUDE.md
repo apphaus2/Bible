@@ -79,9 +79,13 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 55 | 2 Timothy | `ti2` | 1 | 20 | 83 full |
 | 56 | Titus | `tit` | 1 | 13 | 46 full |
 | 57 | Philemon | `phm` | 1 | 7 | 25 full |
+| 59 | James | `jas` | 1 | 21 | 108 full |
+| 60 | 1 Peter | `pe1` | 1 | 21 | 105 full |
+| 61 | 2 Peter | `pe2` | 1 | 15 | 61 full |
 | 62 | 1 John | `jn1` | 2 | 23 | 105 full |
 | 63 | 2 John | `jn2` | 1 | 5 | 13 full |
 | 64 | 3 John | `jn3` | 1 | 5 | 14 full |
+| 65 | Jude | `jud` | 1 | 8 | 25 full |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.

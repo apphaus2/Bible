@@ -1,0 +1,202 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:21:33Z"
+ },
+ "title": "1 Peter — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "1PE-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Living Stones"
+  },
+  "1PE-C01-D-P01-ALivingHope.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · A Living Hope"
+  },
+  "1PE-C01-D-P02-ProvedByFire.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Proved by Fire"
+  },
+  "1PE-C01-D-P03-BeYeHoly.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Be Ye Holy"
+  },
+  "1PE-C01-D-P04-ALambWithoutBlemis.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · A Lamb Without Blemish"
+  },
+  "1PE-C01-D-P05-AsNewbornBabes.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · As Newborn Babes"
+  },
+  "1PE-C01-D-P06-LivingStones.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Living Stones"
+  },
+  "1PE-C01-D-P07-SojournersAndPilgr.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Sojourners and Pilgrims"
+  },
+  "1PE-C01-D-P08-Servants.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Servants"
+  },
+  "1PE-C01-D-P09-UponTheTree.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Upon the Tree"
+  },
+  "1PE-C01-D-P10-YeWives.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Ye Wives"
+  },
+  "1PE-C01-D-P11-YeHusbands.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Ye Husbands"
+  },
+  "1PE-C01-D-P12-AReasonOfTheHope.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Reason of the Hope"
+  },
+  "1PE-C01-D-P13-TheWillOfGod.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Will of God"
+  },
+  "1PE-C01-D-P14-TheEndOfAllThings.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · The End of All Things"
+  },
+  "1PE-C01-D-P15-TheFieryTrial.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · The Fiery Trial"
+  },
+  "1PE-C01-D-P16-TheFieryTrial.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · The Fiery Trial"
+  },
+  "1PE-C01-D-P17-TendTheFlock.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Tend the Flock"
+  },
+  "1PE-C01-D-P18-HumbleYourselves.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Humble Yourselves"
+  },
+  "1PE-C01-D-P19-BySilvanus.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · By Silvanus"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "1PE-C01-00-Title.dc.html",
+  "1PE-C01-D-P01-ALivingHope.dc.html",
+  "1PE-C01-D-P02-ProvedByFire.dc.html",
+  "1PE-C01-D-P03-BeYeHoly.dc.html",
+  "1PE-C01-D-P04-ALambWithoutBlemis.dc.html",
+  "1PE-C01-D-P05-AsNewbornBabes.dc.html",
+  "1PE-C01-D-P06-LivingStones.dc.html",
+  "1PE-C01-D-P07-SojournersAndPilgr.dc.html",
+  "1PE-C01-D-P08-Servants.dc.html",
+  "1PE-C01-D-P09-UponTheTree.dc.html",
+  "1PE-C01-D-P10-YeWives.dc.html",
+  "1PE-C01-D-P11-YeHusbands.dc.html",
+  "1PE-C01-D-P12-AReasonOfTheHope.dc.html",
+  "1PE-C01-D-P13-TheWillOfGod.dc.html",
+  "1PE-C01-D-P14-TheEndOfAllThings.dc.html",
+  "1PE-C01-D-P15-TheFieryTrial.dc.html",
+  "1PE-C01-D-P16-TheFieryTrial.dc.html",
+  "1PE-C01-D-P17-TendTheFlock.dc.html",
+  "1PE-C01-D-P18-HumbleYourselves.dc.html",
+  "1PE-C01-D-P19-BySilvanus.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "1 Peter Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Living Stones (1 Peter 1–5)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

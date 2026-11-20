@@ -1,0 +1,98 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:35:00Z"
+ },
+ "title": "Jude — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JUD-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Contend for the Faith"
+  },
+  "JUD-C01-D-P01-ContendEarnestly.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Contend Earnestly"
+  },
+  "JUD-C01-D-P02-OutOfTheLandOfEgyp.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Out of the Land of Egypt"
+  },
+  "JUD-C01-D-P03-WoeUntoThem.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Woe unto Them"
+  },
+  "JUD-C01-D-P04-EnochProphesied.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Enoch Prophesied"
+  },
+  "JUD-C01-D-P05-KeepYourselvesInTh.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Keep Yourselves in the Love of God"
+  },
+  "JUD-C01-D-P06-KeepYourselvesInTh.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Keep Yourselves in the Love of God"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JUD-C01-00-Title.dc.html",
+  "JUD-C01-D-P01-ContendEarnestly.dc.html",
+  "JUD-C01-D-P02-OutOfTheLandOfEgyp.dc.html",
+  "JUD-C01-D-P03-WoeUntoThem.dc.html",
+  "JUD-C01-D-P04-EnochProphesied.dc.html",
+  "JUD-C01-D-P05-KeepYourselvesInTh.dc.html",
+  "JUD-C01-D-P06-KeepYourselvesInTh.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Jude Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Contend for the Faith (Jude 1–25)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

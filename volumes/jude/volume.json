@@ -1,0 +1,21 @@
+{
+ "id": "jude",
+ "order": 65,
+ "name": "Jude",
+ "kanji": "ユダの手紙",
+ "thumb": "vol-jude-",
+ "lede": "The sixty-fifth book of the Bible, in full: the letter of Jude, a servant of Jesus Christ and brother of James — contend earnestly for the faith once for all delivered unto the saints; the people saved out of Egypt, the angels that kept not their principality, Sodom and Gomorrah; Michael the archangel and the body of Moses; the way of Cain, the error of Balaam, the gainsaying of Korah; hidden rocks, clouds without water, wandering stars; Enoch's prophecy; keep yourselves in the love of God; now unto him that is able to guard you from stumbling, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Contend for the Faith",
+   "range": "Jude 1–25",
+   "blurb": "Jude, a servant of Jesus Christ, and brother of James: contend earnestly for the faith which was once for all delivered unto the saints; certain men crept in privily; the Lord saved a people out of the land of Egypt; angels that kept not their own principality; Sodom and Gomorrah; Michael the archangel, disputing about the body of Moses: The Lord rebuke thee; the way of Cain, the error of Balaam, the gainsaying of Korah; hidden rocks, clouds without water, autumn trees twice dead, wild waves, wandering stars; Enoch prophesied; build up yourselves on your most holy faith; now unto him that is able to guard you from stumbling.",
+   "prefixes": [
+    "Main.dc.html",
+    "JUD-C01-"
+   ]
+  }
+ ]
+}
