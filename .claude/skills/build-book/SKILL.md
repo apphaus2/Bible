@@ -34,7 +34,8 @@ The brief must stand alone. Include, in this order:
 6. Report: branch, a table of chapters (Bible chapters, pages, verses full/partial/omitted), PNG folder, doubts
    (restraint calls, one-off characters' looks, verses it could not place).
 
-Python: `PYTHONUTF8=1 /c/Users/smorey01/AppData/Local/Python/bin/python.exe`. Playwright: give the subagent the NODE_PATH
+Python 3.12 or later (3.14 tested): `PYTHONUTF8=1 python` — find the command on the machine you're on (`command -v python`)
+and give the subagent its full path. Playwright: give the subagent the NODE_PATH
 of a folder whose `node_modules` has `playwright` (set up once in a scratch folder; renders need it).
 
 ## 3. Review (yourself, not the subagent's word)

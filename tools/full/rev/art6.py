@@ -307,6 +307,7 @@ def city_plan(w, h):
     o.append(tag(x0 + S + 10, y0 + S * 0.86, "TWELVE FOUNDATIONS", tx, h * 0.5))
     o.append(label(tx, h * 0.6, "TWELVE NAMES OF THE TWELVE", "#8FD0E2", 8, anchor="start") + label(tx, h * 0.6 + 12, "APOSTLES OF THE LAMB", "#8FD0E2", 8, anchor="start"))
     o.append(tag(x0 + S * 0.75, y0 + S, "AT THE GATES TWELVE ANGELS", tx, h * 0.76))
+    o.append(label(tx, h * 0.84, "GATES AS IN EZEKIEL 48", "#B8C4D0", 7, anchor="start"))   # the text names no tribe's gate
     return "".join(o)
 
 def city_measure(w, h):

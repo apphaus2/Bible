@@ -4,8 +4,8 @@ The Bible as a full-colour manga in a 1980s cyberpunk-manga style (the general s
 red motorcycle, capsules, Neo-Tokyo or white-dome explosion), every word of scripture cut from the **ASV**. Python generates
 every page (nothing is drawn by hand); the repo is the only source of truth. Served at **https://bible.apphaus.us**.
 
-- **The manga** (`volumes/<id>/`): one volume per book of the Bible, in manga chapters of ~15–25 pages, ~140–160 words a page,
-  story-complete: every verse full (lists as roll cells/charts, never dropped). Each volume has `coverage.md` (every verse
+- **The manga** (`volumes/<id>/`): one volume per book of the Bible, in manga chapters of ~15–25 pages (a short book is one
+  chapter of any length), ~110–160 words a page (the letters run ~110–125, leaving room for the drawings), story-complete: every verse full (lists as roll cells/charts, never dropped). Each volume has `coverage.md` (every verse
   full / partial / omitted), `volume.json` (chapters, blurbs) and `canvas.json` (page order and titles, read by the site).
 - **Reference art** (`tools/full/reference/<series>/book-NN/`): 154 pages of the old digest whose drawings the early volumes lift
   (`reuse.panels()`, `<vol>.common.D(...)`); never published, never added to. New drawings go in `<pkg>/art.py`.
@@ -111,7 +111,7 @@ Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes 
 
 ## Building a chapter
 
-1. Print the verses (`asv.Book("GEN").verses` is `{(c, v): text}`), group them ~140–160 words a page; lists become roll cells.
+1. Print the verses (`asv.Book("GEN").verses` is `{(c, v): text}`), group them ~110–160 words a page; lists become roll cells.
 2. Write `tools/full/<pkg>/chNN.py`: `PG = Pages(start)` (`num/pages.py`; chapter 1 `Pages(1)`, later
    `Pages(_prev.START + len(_prev.PAGES) - 1)`), a title page `@P("<CODE>-C0N-00-Title", …, title=True)` + `fx.chapter_title`,
    then `PG.extend(discourse.pack(SEGS, prefix, PG.next(), …))` with segments `face([...], ref, FACE)` / `drawn([...], ref, art_fn, bg)`
@@ -322,7 +322,8 @@ fonts are fetched from Google Fonts, subset and embedded. Before a print run: CM
 
 ## Working notes for Claude
 
-- Windows, in `C:\_GITHUB\apphaus2\Bible` or a worktree under `.claude/worktrees/`. Run Python as `PYTHONUTF8=1 python …`; Node +
+- Windows, in `C:\_GITHUB\apphaus2\Bible` (or `F:\_GITHUB\apphaus2\Bible` on the second machine) or a worktree under
+  `.claude/worktrees/`. Python 3.12 or later (3.14 tested); run it as `PYTHONUTF8=1 python …`; Node +
   Playwright may live in a scratch folder (`NODE_PATH`). Renders use fallback fonts: if text fits there, it fits on the site.
 - "continue" = build the next chapter. "commit" / "update github" = commit straight to `master` (from a worktree, commit there and
   fast-forward `master` in the main clone); the user runs `git push` (the SSH key has a passphrase). No CRLF-only commits.
