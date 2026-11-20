@@ -1,0 +1,21 @@
+{
+ "id": "philemon",
+ "order": 57,
+ "name": "Philemon",
+ "kanji": "ピレモンへの手紙",
+ "thumb": "vol-philemon-",
+ "lede": "The fifty-seventh book of the Bible, in full: Paul's letter from his bonds at Rome to Philemon and the church in his house at Colossæ, sent with Onesimus — I beseech thee for my child, whom I have begotten in my bonds; no longer as a servant, but more than a servant, a brother beloved; receive him as myself; put that to mine account; I Paul write it with mine own hand, I will repay it; prepare me also a lodging, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "More Than a Servant",
+   "range": "Philemon 1–25",
+   "blurb": "Paul, a prisoner of Christ Jesus, and Timothy, to Philemon, to Apphia our sister, to Archippus our fellow-soldier, and to the church in thy house; the hearts of the saints have been refreshed through thee; for love's sake I rather beseech, being such a one as Paul the aged; I beseech thee for my child Onesimus, whom I have begotten in my bonds, once unprofitable, now profitable — my very heart; no longer as a servant, but more than a servant, a brother beloved; receive him as myself; if he oweth thee aught, put that to mine account: I Paul write it with mine own hand, I will repay it; prepare me also a lodging; Epaphras, Mark, Aristarchus, Demas, Luke.",
+   "prefixes": [
+    "Main.dc.html",
+    "PHM-C01-"
+   ]
+  }
+ ]
+}

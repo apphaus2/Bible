@@ -1,0 +1,31 @@
+{
+ "id": "colossians",
+ "order": 51,
+ "name": "Colossians",
+ "kanji": "コロサイ人への手紙",
+ "thumb": "vol-colossians-",
+ "lede": "The fifty-first book of the Bible, in full: Paul's letter from his bonds at Rome to the saints at Colossæ, carried by Tychicus and Onesimus — the image of the invisible God, the firstborn of all creation, in whom all things were created and in whom all things consist; peace through the blood of his cross; Christ in you, the hope of glory; rooted and builded up in him; buried with him in baptism; the bond nailed to the cross; a shadow of the things to come; seek the things that are above; put off the old man and put on the new; love, the bond of perfectness; wives, husbands, children, fathers, servants and masters; speech seasoned with salt; the greetings of Aristarchus, Mark, Justus, Epaphras, Luke and Demas; and remember my bonds, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Image of the Invisible God",
+   "range": "Colossians 1–2",
+   "blurb": "Paul and Timothy to the saints at Colossæ — the letter written in his bonds at Rome; the gospel bearing fruit in all the world, as ye learned of Epaphras; delivered out of the power of darkness into the kingdom of the Son of his love; who is the image of the invisible God, the firstborn of all creation, for in him were all things created, thrones or dominions or principalities or powers, and in him all things consist; the head of the body, the church; peace through the blood of his cross; the mystery hid for ages, Christ in you, the hope of glory; for them at Laodicea; rooted and builded up in him; philosophy and vain deceit; buried with him in baptism; the bond nailed to the cross; a shadow of the things to come, but the body is Christ's; handle not, nor taste, nor touch.",
+   "prefixes": [
+    "Main.dc.html",
+    "COL-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Seek the Things That Are Above",
+   "range": "Colossians 3–4",
+   "blurb": "If then ye were raised together with Christ, seek the things that are above; put to death your members which are upon the earth; ye have put off the old man and put on the new; put on a heart of compassion, kindness, lowliness, meekness, longsuffering, and above all these things love, the bond of perfectness; psalms and hymns and spiritual songs; wives, husbands, children, fathers; servants and masters; continue stedfastly in prayer, for which I am also in bonds; let your speech be always with grace, seasoned with salt; Tychicus and Onesimus sent; Aristarchus my fellow-prisoner, Mark, Jesus called Justus, Epaphras, Luke the beloved physician, and Demas; read it also at Laodicea; say to Archippus, fulfil thy ministry; the salutation of me Paul with mine own hand — remember my bonds.",
+   "prefixes": [
+    "COL-C02-"
+   ]
+  }
+ ]
+}

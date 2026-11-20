@@ -1,0 +1,31 @@
+{
+ "id": "philippians",
+ "order": 50,
+ "name": "Philippians",
+ "kanji": "ピリピ人への手紙",
+ "thumb": "vol-philippians-",
+ "lede": "The fiftieth book of the Bible, in full: Paul's letter from his bonds at Rome to the saints at Philippi, carried home by Epaphroditus — my bonds manifest throughout the whole prætorian guard, to live is Christ and to die is gain, have this mind in you which was also in Christ Jesus, who emptied himself and whom God highly exalted, lights in the world, Timothy and Epaphroditus, all things counted loss, I press on toward the goal, our citizenship is in heaven, rejoice in the Lord always, the peace of God which passeth all understanding, whatsoever things are true, I can do all things in him that strengtheneth me, and Cæsar's household, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "To Live Is Christ",
+   "range": "Philippians 1–2",
+   "blurb": "Paul and Timothy, servants of Christ Jesus, to all the saints at Philippi — the letter written in his bonds at Rome; he who began a good work in you will perfect it; my bonds became manifest throughout the whole prætorian guard; Christ is proclaimed, and therein I rejoice; for to me to live is Christ, and to die is gain; having the desire to depart and be with Christ; stand fast in one spirit; have this mind in you, which was also in Christ Jesus, who emptied himself, taking the form of a servant, and became obedient unto the death of the cross — wherefore God highly exalted him; lights in the world; poured out upon the sacrifice of your faith; Timothy; Epaphroditus, sick nigh unto death, sent home.",
+   "prefixes": [
+    "Main.dc.html",
+    "PHP-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "Rejoice in the Lord",
+   "range": "Philippians 3–4",
+   "blurb": "Rejoice in the Lord; beware of the dogs; a Hebrew of Hebrews, as touching the law a Pharisee — what things were gain to me, these have I counted loss for Christ; that I may know him, and the power of his resurrection; I press on toward the goal unto the prize of the high calling of God; our citizenship is in heaven; Euodia and Syntyche; rejoice in the Lord always; in nothing be anxious, and the peace of God, which passeth all understanding, shall guard your hearts; whatsoever things are true, honorable, just, pure, lovely, of good report; I have learned, in whatsoever state I am, therein to be content; I can do all things in him that strengtheneth me; an odor of a sweet smell; they that are of Cæsar's household.",
+   "prefixes": [
+    "PHP-C02-"
+   ]
+  }
+ ]
+}

@@ -71,11 +71,14 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 47 | 2 Corinthians | `co2` | 3 | 52 | 257 full |
 | 48 | Galatians | `gal` | 2 | 31 | 149 full |
 | 49 | Ephesians | `eph` | 2 | 29 | 155 full |
+| 50 | Philippians | `php` | 2 | 22 | 104 full |
+| 51 | Colossians | `col` | 2 | 21 | 95 full |
 | 52 | 1 Thessalonians | `th1` | 2 | 18 | 89 full |
 | 53 | 2 Thessalonians | `th2` | 1 | 11 | 47 full |
 | 54 | 1 Timothy | `ti1` | 1 | 24 | 113 full |
 | 55 | 2 Timothy | `ti2` | 1 | 20 | 83 full |
 | 56 | Titus | `tit` | 1 | 13 | 46 full |
+| 57 | Philemon | `phm` | 1 | 7 | 25 full |
 | 62 | 1 John | `jn1` | 2 | 23 | 105 full |
 | 63 | 2 John | `jn2` | 1 | 5 | 13 full |
 | 64 | 3 John | `jn3` | 1 | 5 | 14 full |

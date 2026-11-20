@@ -1,0 +1,209 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:27:44Z"
+ },
+ "title": "Colossians — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "COL-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Image of the Invisible God"
+  },
+  "COL-C01-D-P01-PaulAndTimothy.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Paul and Timothy"
+  },
+  "COL-C01-D-P02-Epaphras.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Epaphras"
+  },
+  "COL-C01-D-P03-TheImageOfTheInvis.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Image of the Invisible God"
+  },
+  "COL-C01-D-P04-TheHeadOfTheBody.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Head of the Body"
+  },
+  "COL-C01-D-P05-TheMystery.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · The Mystery"
+  },
+  "COL-C01-D-P06-ForThemAtLaodicea.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · For Them at Laodicea"
+  },
+  "COL-C01-D-P07-RootedAndBuildedUp.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Rooted and Builded Up"
+  },
+  "COL-C01-D-P08-PhilosophyAndVainD.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Philosophy and Vain Deceit"
+  },
+  "COL-C01-D-P09-NailingItToTheCros.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Nailing It to the Cross"
+  },
+  "COL-C01-D-P10-AShadowOfTheThings.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · A Shadow of the Things to Come"
+  },
+  "COL-C01-D-P11-AShadowOfTheThings.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Shadow of the Things to Come"
+  },
+  "COL-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Seek the Things That Are Above"
+  },
+  "COL-C02-D-P01-PutToDeath.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Put to Death"
+  },
+  "COL-C02-D-P02-PutOnTherefore.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Put On Therefore"
+  },
+  "COL-C02-D-P03-WivesHusbandsChild.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Wives, Husbands, Children, Fathers"
+  },
+  "COL-C02-D-P04-ServantsAndMasters.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Servants and Masters"
+  },
+  "COL-C02-D-P05-TychicusAndOnesimu.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Tychicus and Onesimus"
+  },
+  "COL-C02-G-P01-SalutethYou.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Saluteth You"
+  },
+  "COL-C02-E-P01-WithMineOwnHand.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · With Mine Own Hand"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "COL-C01-00-Title.dc.html",
+  "COL-C01-D-P01-PaulAndTimothy.dc.html",
+  "COL-C01-D-P02-Epaphras.dc.html",
+  "COL-C01-D-P03-TheImageOfTheInvis.dc.html",
+  "COL-C01-D-P04-TheHeadOfTheBody.dc.html",
+  "COL-C01-D-P05-TheMystery.dc.html",
+  "COL-C01-D-P06-ForThemAtLaodicea.dc.html",
+  "COL-C01-D-P07-RootedAndBuildedUp.dc.html",
+  "COL-C01-D-P08-PhilosophyAndVainD.dc.html",
+  "COL-C01-D-P09-NailingItToTheCros.dc.html",
+  "COL-C01-D-P10-AShadowOfTheThings.dc.html",
+  "COL-C01-D-P11-AShadowOfTheThings.dc.html",
+  "COL-C02-00-Title.dc.html",
+  "COL-C02-D-P01-PutToDeath.dc.html",
+  "COL-C02-D-P02-PutOnTherefore.dc.html",
+  "COL-C02-D-P03-WivesHusbandsChild.dc.html",
+  "COL-C02-D-P04-ServantsAndMasters.dc.html",
+  "COL-C02-D-P05-TychicusAndOnesimu.dc.html",
+  "COL-C02-G-P01-SalutethYou.dc.html",
+  "COL-C02-E-P01-WithMineOwnHand.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Colossians Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Image of the Invisible God (Colossians 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Seek the Things That Are Above (Colossians 3–4)",
+   "x": 0,
+   "y": 5800
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
