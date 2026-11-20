@@ -1,0 +1,21 @@
+{
+ "id": "james",
+ "order": 59,
+ "name": "James",
+ "kanji": "ヤコブの手紙",
+ "thumb": "vol-james-",
+ "lede": "The fifty-ninth book of the Bible, in full: the letter of James, a servant of God and of the Lord Jesus Christ, to the twelve tribes of the Dispersion — count it all joy, ask of God who giveth liberally, the flower of the grass, every good gift from the Father of lights, be ye doers of the word and not hearers only, no respect of persons, faith apart from works is dead, Abraham and Rahab, the tongue a little member and a fire, the wisdom that is from above, draw nigh to God, what is your life? a vapor, ye rich weep and howl, the patience of Job, the prayer of faith and Elijah praying for rain, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Doers of the Word",
+   "range": "James 1–5",
+   "blurb": "James, a servant of God and of the Lord Jesus Christ, to the twelve tribes of the Dispersion: count it all joy; he that doubteth is like the surge of the sea; the flower of the grass; the crown of life; every good gift from the Father of lights; be ye doers of the word, and not hearers only — a man beholding his face in a mirror; hold not the faith with respect of persons; faith apart from works is dead — Abraham offering Isaac, Rahab; the tongue a little member, a little fire kindling a great wood; the wisdom from above; draw nigh to God; what is your life? a vapor; ye rich, weep and howl; the husbandman waiteth for the early and latter rain; the patience of Job; the prayer of faith; Elijah prayed, and the heaven gave rain.",
+   "prefixes": [
+    "Main.dc.html",
+    "JAS-C01-"
+   ]
+  }
+ ]
+}

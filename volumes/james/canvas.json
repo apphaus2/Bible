@@ -1,0 +1,202 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:11:39Z"
+ },
+ "title": "James — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "JAS-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Doers of the Word"
+  },
+  "JAS-C01-D-P01-CountItAllJoy.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Count It All Joy"
+  },
+  "JAS-C01-D-P02-TheFlowerOfTheGras.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Flower of the Grass"
+  },
+  "JAS-C01-D-P03-TheCrownOfLife.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Crown of Life"
+  },
+  "JAS-C01-D-P04-DoersOfTheWord.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Doers of the Word"
+  },
+  "JAS-C01-D-P05-PureReligion.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Pure Religion"
+  },
+  "JAS-C01-D-P06-RespectOfPersons.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Respect of Persons"
+  },
+  "JAS-C01-D-P07-TheRoyalLaw.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Royal Law"
+  },
+  "JAS-C01-D-P08-FaithWithoutWorks.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Faith Without Works"
+  },
+  "JAS-C01-D-P09-AbrahamOurFather.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Abraham Our Father"
+  },
+  "JAS-C01-D-P10-TheTongueIsAFire.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · The Tongue Is a Fire"
+  },
+  "JAS-C01-D-P11-TheTongueIsAFire.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · The Tongue Is a Fire"
+  },
+  "JAS-C01-D-P12-TheWisdomFromAbove.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · The Wisdom from Above"
+  },
+  "JAS-C01-D-P13-WhenceComeWars.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Whence Come Wars"
+  },
+  "JAS-C01-D-P14-DrawNighToGod.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Draw Nigh to God"
+  },
+  "JAS-C01-D-P15-ComeNowYeRich.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Come Now, Ye Rich"
+  },
+  "JAS-C01-D-P16-BePatient.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Be Patient"
+  },
+  "JAS-C01-D-P17-ThePatienceOfJob.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Patience of Job"
+  },
+  "JAS-C01-D-P18-ThePrayerOfFaith.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Prayer of Faith"
+  },
+  "JAS-C01-D-P19-ElijahPrayed.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Elijah Prayed"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "JAS-C01-00-Title.dc.html",
+  "JAS-C01-D-P01-CountItAllJoy.dc.html",
+  "JAS-C01-D-P02-TheFlowerOfTheGras.dc.html",
+  "JAS-C01-D-P03-TheCrownOfLife.dc.html",
+  "JAS-C01-D-P04-DoersOfTheWord.dc.html",
+  "JAS-C01-D-P05-PureReligion.dc.html",
+  "JAS-C01-D-P06-RespectOfPersons.dc.html",
+  "JAS-C01-D-P07-TheRoyalLaw.dc.html",
+  "JAS-C01-D-P08-FaithWithoutWorks.dc.html",
+  "JAS-C01-D-P09-AbrahamOurFather.dc.html",
+  "JAS-C01-D-P10-TheTongueIsAFire.dc.html",
+  "JAS-C01-D-P11-TheTongueIsAFire.dc.html",
+  "JAS-C01-D-P12-TheWisdomFromAbove.dc.html",
+  "JAS-C01-D-P13-WhenceComeWars.dc.html",
+  "JAS-C01-D-P14-DrawNighToGod.dc.html",
+  "JAS-C01-D-P15-ComeNowYeRich.dc.html",
+  "JAS-C01-D-P16-BePatient.dc.html",
+  "JAS-C01-D-P17-ThePatienceOfJob.dc.html",
+  "JAS-C01-D-P18-ThePrayerOfFaith.dc.html",
+  "JAS-C01-D-P19-ElijahPrayed.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "James Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Doers of the Word (James 1–5)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
