@@ -24,6 +24,16 @@ def angel_fig(p, x, y, s, flip=False, up=None, pose="stand"):
     return (f'<ellipse cx="{f(x)}" cy="{f(y - 105 * s)}" rx="{f(70 * s)}" ry="{f(125 * s)}" fill="#FFF4C2" opacity="0.4"></ellipse>'
             + robed(p, x, y, s, "#FFFFFF", skin="#FFFDF0", line="#E8B830", mantle="#FFF8E0", flip=flip, up=up, pose=pose))
 
+def tag(x, y, text, tx, ty, color=CY, size=9):
+    """A callout (exo.art8.tag) whose label is kept inside the plate by its true width (the letter-spaced mono type runs
+    about 0.8 em a letter)."""
+    import exo.art8 as B
+    est = len(text) * size * 0.8; right = tx >= x; W = B._W[0]
+    if right and tx + 4 + est > W - 8: tx = W - 12 - est
+    if not right and tx - 4 - est < 8: tx = 12 + est
+    return (f'<circle cx="{f(x)}" cy="{f(y)}" r="3" fill="{color}"></circle><path d="M{f(x)} {f(y)} L {f(tx)} {f(ty)}" stroke="{color}" stroke-width="1.2"></path>'
+            + label(tx + (4 if right else -4), ty + 3, text, color, size, "start" if right else "end"))
+
 # ---- small things shared by the volume ------------------------------------------------------------------------------------
 def throne_of_light(cx, base, s, uid, lit=1.0):
     """A throne standing empty in light (God is never drawn): a high-backed seat of white and gold on three steps, a glow

@@ -114,6 +114,97 @@
    "w": 760,
    "h": 1080,
    "title": "13 · The Throne of Grace"
+  },
+  "HEB-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · A Priest for Ever after the Order of Melchizedek"
+  },
+  "HEB-C02-D-P01-EveryHighPriest.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Every High Priest"
+  },
+  "HEB-C02-D-P02-MilkAndSolidFood.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Milk and Solid Food"
+  },
+  "HEB-C02-D-P03-PressOnUntoPerfect.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Press On unto Perfection"
+  },
+  "HEB-C02-D-P04-PressOnUntoPerfect.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Press On unto Perfection"
+  },
+  "HEB-C02-D-P05-ThePromiseToAbraha.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · The Promise to Abraham"
+  },
+  "HEB-C02-D-P06-MelchizedekKingOfS.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Melchizedek, King of Salem"
+  },
+  "HEB-C02-D-P07-MelchizedekKingOfS.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Melchizedek, King of Salem"
+  },
+  "HEB-C02-D-P08-APriestForEver.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · A Priest for Ever"
+  },
+  "HEB-C02-D-P09-HeEverLiveth.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · He Ever Liveth"
+  },
+  "HEB-C02-D-P10-TheTrueTabernacle.dc.html": {
+   "x": 0,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "23 · The True Tabernacle"
+  },
+  "HEB-C02-D-P11-ANewCovenant.dc.html": {
+   "x": 840,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "24 · A New Covenant"
+  },
+  "HEB-C02-D-P12-ANewCovenant.dc.html": {
+   "x": 1680,
+   "y": 8500,
+   "w": 760,
+   "h": 1080,
+   "title": "25 · A New Covenant"
   }
  },
  "order": [
@@ -131,7 +222,20 @@
   "HEB-C01-D-P10-ToDayIfYeShallHear.dc.html",
   "HEB-C01-D-P11-APromiseOfEntering.dc.html",
   "HEB-C01-D-P12-APromiseOfEntering.dc.html",
-  "HEB-C01-D-P13-TheThroneOfGrace.dc.html"
+  "HEB-C01-D-P13-TheThroneOfGrace.dc.html",
+  "HEB-C02-00-Title.dc.html",
+  "HEB-C02-D-P01-EveryHighPriest.dc.html",
+  "HEB-C02-D-P02-MilkAndSolidFood.dc.html",
+  "HEB-C02-D-P03-PressOnUntoPerfect.dc.html",
+  "HEB-C02-D-P04-PressOnUntoPerfect.dc.html",
+  "HEB-C02-D-P05-ThePromiseToAbraha.dc.html",
+  "HEB-C02-D-P06-MelchizedekKingOfS.dc.html",
+  "HEB-C02-D-P07-MelchizedekKingOfS.dc.html",
+  "HEB-C02-D-P08-APriestForEver.dc.html",
+  "HEB-C02-D-P09-HeEverLiveth.dc.html",
+  "HEB-C02-D-P10-TheTrueTabernacle.dc.html",
+  "HEB-C02-D-P11-ANewCovenant.dc.html",
+  "HEB-C02-D-P12-ANewCovenant.dc.html"
  ],
  "notes": {
   "Main": {
@@ -147,6 +251,13 @@
    "text": "Chapter 1 · Better than the Angels (Hebrews 1–4)",
    "x": 0,
    "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · A Priest for Ever after the Order of Melchizedek (Hebrews 5–8)",
+   "x": 0,
+   "y": 5800
   }
  },
  "designSystems": [],
