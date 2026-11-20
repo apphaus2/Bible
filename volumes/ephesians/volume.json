@@ -1,0 +1,21 @@
+{
+ "id": "ephesians",
+ "order": 49,
+ "name": "Ephesians",
+ "kanji": "エペソ人への手紙",
+ "thumb": "vol-ephesians-",
+ "lede": "The forty-ninth book of the Bible, in full: Paul's letter from his chains at Rome to the saints at Ephesus — every spiritual blessing in the heavenly places, sealed with the Holy Spirit of promise, Christ far above all rule, dead through trespasses and made alive by God rich in mercy, saved by grace through faith, the middle wall of partition broken down, built upon the corner stone, the breadth and length and height and depth of the love of Christ, one body and one Spirit, he led captivity captive, the old man put off and the new man put on, children of light, husbands and wives, children and fathers, servants and masters, the whole armor of God, and Tychicus sent with the letter, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Rich in Mercy",
+   "range": "Ephesians 1–3",
+   "blurb": "Paul, an apostle of Christ Jesus, from his chains at Rome to the saints at Ephesus; every spiritual blessing in the heavenly places; chosen before the foundation of the world; sealed with the Holy Spirit of promise, the earnest of our inheritance; Christ raised far above all rule and authority; dead through trespasses, but God, being rich in mercy, made us alive together with Christ; by grace have ye been saved through faith; his workmanship; the middle wall of partition broken down; fellow-citizens with the saints, built upon Christ Jesus the chief corner stone; the mystery hid for ages; I bow my knees unto the Father; the breadth and length and height and depth; unto him be the glory.",
+   "prefixes": [
+    "Main.dc.html",
+    "EPH-C01-"
+   ]
+  }
+ ]
+}
