@@ -133,12 +133,20 @@ def contended(p, w, h, seed):
                          bd=["#6A645E", "#2A1A10", "#4A3A2A", "#9A948A"][i], up=UP_BLESS if i in (0, 2) else None))
     return "".join(o)
 
-def antioch_map(w, h):
-    """Phœnicia, and Cyprus, and Antioch: the roads of the scattering out of Judæa, north along the coast and over the sea."""
+def antioch_map(w, h, title="ACTS 11:19–26 · AS FAR AS ANTIOCH", samaria=False):
+    """Phœnicia, and Cyprus, and Antioch: the roads of the scattering out of Judæa, north along the coast and over the sea.
+    samaria=True: only the coast road, taken back up from Antioch to Jerusalem through Phœnicia and Samaria (15:3). Sidon,
+    Tyre and Damascus lie close at this scale: each name on its own side."""
+    road = ("JERUSALEM", "CÆSAREA", "TYRE", "SIDON", (35.8, 34.6), (35.8, 35.6), "ANTIOCH")
+    at = {"SIDON": (-8, -2, "end"), "TYRE": (-8, 8, "end"), "DAMASCUS": (8, 4, "start"), "TARSUS": (-8, 6, "end")}
+    if samaria:
+        return geo.med_map(w, h, box=(32.6, 38.6, 31.4, 36.6), places=("JERUSALEM", "CÆSAREA", "TYRE", "SIDON", "DAMASCUS", "ANTIOCH"), routes=[road],
+                           hi=("ANTIOCH", "JERUSALEM"), regions=(("PHŒNICIA", 36.6, 34.25), ("SAMARIA", 36.3, 32.2), ("SYRIA", 37.6, 35.3)),
+                           lit_routes=[0], size=10, rsize=10, title=title, label_at=at)
     return geo.med_map(w, h, box=(31.6, 38.4, 31.0, 37.4), places=("JERUSALEM", "TYRE", "SIDON", "SALAMIS", "ANTIOCH", "TARSUS", "DAMASCUS", "CÆSAREA"),
-                       routes=[("JERUSALEM", "CÆSAREA", "TYRE", "SIDON", (35.8, 34.6), (35.8, 35.6), "ANTIOCH"), ("SIDON", (34.4, 34.6), "SALAMIS"), ("TARSUS", "ANTIOCH")],
-                       hi=("ANTIOCH",), regions=(("PHŒNICIA", 36.0, 33.7), "CYPRUS", "SYRIA", "CILICIA"), lit_routes=[0, 1], size=10, rsize=10,
-                       title="ACTS 11:19–26 · AS FAR AS ANTIOCH")
+                       routes=[road, ("SIDON", (34.4, 34.6), "SALAMIS"), ("TARSUS", "ANTIOCH")],
+                       hi=("ANTIOCH",), regions=(("PHŒNICIA", 36.6, 34.25), ("CYPRUS", 33.0, 34.75), ("SYRIA", 37.8, 33.9), ("CILICIA", 34.6, 37.25)),
+                       lit_routes=[0, 1], size=10, rsize=10, title=title, label_at=at)
 
 def antioch(p, w, h, seed, who=("barnabas", "paul"), crowd_n=6, tone="day"):
     """Antioch of Syria: the great colonnaded street of the Greek city, white columns and red roofs, the mountain behind;

@@ -211,7 +211,7 @@ def height_depth(w, h):
     o.append(f'<rect x="0" y="{f(top)}" width="{f(w)}" height="{f(h * 0.16)}" fill="#14204A" opacity="0.8"></rect>' + mk.stars(30, w, h * 0.12, 839).replace('<g fill="#F3EFE6">', f'<g fill="#F3EFE6" transform="translate(0 {f(top + 4)})">', 1))
     o.append(f'<rect x="0" y="{f(h * 0.84)}" width="{f(w)}" height="{f(h * 0.16)}" fill="#05203A" opacity="0.9"></rect>'
              + "".join(f'<path d="M0 {f(h * (0.87 + 0.04 * j))} ' + "".join(f"Q {f(x + 20)} {f(h * (0.86 + 0.04 * j))} {f(x + 40)} {f(h * (0.87 + 0.04 * j))} " for x in range(0, int(w), 40)) + f'" stroke="#2C7DA8" stroke-width="1.4" fill="none"></path>' for j in range(3)))
-    o.append(label(w * 0.5, top + h * 0.1, "HEIGHT", "#C8D8FF", 10) + label(w * 0.5, h * 0.95, "DEPTH", "#8FD0E2", 10))
+    o.append(label(w * 0.5, top + h * 0.1, "HEIGHT", "#C8D8FF", 10) + label(w * 0.5, h * 0.9, "DEPTH", "#8FD0E2", 10))   # between the waves, above the end box
     o.append(f'<path d="M{f(w * 0.04)} {f(cy)} L {f(w * 0.96)} {f(cy)}" stroke="{CY}" stroke-width="1.4" stroke-dasharray="6 4"></path>'
              + label(w * 0.1, cy - 8, "THINGS PRESENT", CY, 9) + label(w * 0.9, cy - 8, "THINGS TO COME", CY, 9))
     o.append(love_seal(cx, cy, R, "THE LOVE OF GOD", sub="IN CHRIST JESUS OUR LORD"))

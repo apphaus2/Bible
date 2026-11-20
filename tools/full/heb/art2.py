@@ -225,7 +225,7 @@ def anchor_veil(p, w, h, seed):
                  f'fill="{cols[i % 4]}" stroke="{INK}" stroke-width="1.2"></path>')
     o.append(f'<path d="M{f(ax)} {f(ay - 160 * k)} C {f(ax + 40 * k)} {f(h * 0.2)} {f(vx - 80 * k)} {f(h * 0.3)} {f(vx + 60 * k)} {f(h * 0.34)}" fill="none" stroke="#C8A060" stroke-width="{f(5 * k)}"></path>'
              f'<path d="M{f(ax)} {f(ay - 160 * k)} C {f(ax + 40 * k)} {f(h * 0.2)} {f(vx - 80 * k)} {f(h * 0.3)} {f(vx + 60 * k)} {f(h * 0.34)}" fill="none" stroke="#7A5A2A" stroke-width="{f(5 * k)}" stroke-dasharray="3 5"></path>')
-    o.append(plate_label(w * 0.3, h * 0.1, "AN ANCHOR OF THE SOUL · SURE AND STEDFAST", GOLD, 10) + plate_label(w * 0.84, h * 0.94, "WITHIN THE VEIL", "#7A4A10", 10, halo_="#FFF4C2"))
+    o.append(plate_label(w * 0.3, h * 0.1, "AN ANCHOR OF THE SOUL · SURE AND STEDFAST", GOLD, 10) + plate_label(w * 0.84, h * 0.12, "WITHIN THE VEIL", "#7A4A10", 10, halo_="#FFF4C2"))
     return "".join(o)
 
 # ---- Hebrews 7 ------------------------------------------------------------------------------------------------------------

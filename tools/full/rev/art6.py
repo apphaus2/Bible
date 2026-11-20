@@ -332,10 +332,11 @@ def city_measure(w, h):
     o.append(f'<rect x="{f(cx - S / 2 - 8)}" y="{f(cy - S * 0.12)}" width="{f(S + 16)}" height="{f(S * 0.12)}" fill="#CFE8C8" stroke="#4F9A6A" stroke-width="2"></rect>')
     o.append(dim(cx - S / 2, cy + 18, cx + S / 2, cy + 18, "12,000 FURLONGS", size=8))
     o.append(dim(cx - S / 2 - 22, cy, cx - S / 2 - 22, cy - S, "12,000 FURLONGS", size=8))
-    o.append(dim(cx + S / 2 + 10, cy + 8, cx + S / 2 + dxs + 10, cy - dys + 8, "12,000", size=8))
+    o.append(dim(cx - S / 2, cy - S, cx - S / 2 + dxs, cy - S - dys, "12,000 FURLONGS", off=-12, size=7))   # the length, on the top's
+                                                                              # far edge: clear of the wall's leader, and a label
     tx = w * 0.7
     o.append(tag(cx + S * 0.3, cy - S * 0.06, "THE WALL · 144 CUBITS · JASPER", tx, h * 0.74))
-    o.append(tag(cx, cy - S * 0.5, "PURE GOLD, LIKE UNTO PURE GLASS", tx, h * 0.3))
+    o.append(tag(cx, cy - S * 0.5, "PURE GOLD, LIKE UNTO PURE GLASS", tx - w * 0.04, h * 0.3))
     o.append(f'<path d="M{f(w * 0.68)} {f(h * 0.52)} L {f(w * 0.94)} {f(h * 0.4)}" stroke="#E8B830" stroke-width="6" stroke-linecap="round"></path>' + label(w * 0.81, h * 0.56, "A GOLDEN REED", "#FFD23F", 9))
     return "".join(o)
 

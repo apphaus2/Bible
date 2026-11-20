@@ -43,7 +43,7 @@ SEGS = [D([cp("14:1"), cp("14:2"), cp("14:3")], lambda w, h: A.iconium("ic1", w,
         D([cp("14:27"), cp("14:28")], lambda w, h: A.antioch("an1", w, h, 1427), "#8FD0E2"),
         # Acts 15
         F([cp("15:1", to="saying,"), sy("15:1", frm="Except ye be")], PHARISEE, bg=RED, head="The Apostles and the Elders"),
-        D([cp("15:2"), cp("15:3")], lambda w, h: A.antioch_map(w, h), "#0B1A2E", art_h=240, sky=(15, "left")),
+        D([cp("15:2"), cp("15:3")], lambda w, h: A.antioch_map(w, h, title="ACTS 15:2–3 · PHŒNICIA · SAMARIA", samaria=True), "#0B1A2E", art_h=320, sky=(15, "left")),
         D([cp("15:4"), cp("15:5", to="saying,"), sy("15:5", frm="It is needful")], lambda w, h: A.contended("ct1", w, h, 1504), "#C8A878"),
         D([cp("15:6")], lambda w, h: A.council_jerusalem("cj1", w, h, 1506), "#C8A878", art_h=240),
         F([cp("15:7", to="and said unto them,"), sy("15:7", frm="Brethren, ye know"), sy("15:8"), sy("15:9")], PETER_BOLD),
@@ -61,5 +61,7 @@ SEGS = [D([cp("14:1"), cp("14:2"), cp("14:3")], lambda w, h: A.iconium("ic1", w,
         D([cp("15:32"), cp("15:33"), cp("15:35")], lambda w, h: A.antioch("an3", w, h, 1532, who=("paul", "barnabas", "silas"), tone="dusk"), "#4A2A5A"),
         F([cp("15:36", to="Paul said unto Barnabas,"), sy("15:36", frm="Let us return"), cp("15:37"), cp("15:38")], PAUL, head="Paul and Silas"),
         D([cp("15:39"), cp("15:40")], lambda w, h: A.parting("pt1", w, h, 1539), "#8FD0E2", art_h=240),
-        D([cp("15:41")], lambda w, h: A.second_journey(w, h, legs=1, title="ACTS 15:41 · THROUGH SYRIA AND CILICIA", box=(30.6, 37.6, 34.8, 38.4)), "#0B1A2E", art_h=200)]
+        D([cp("15:41")], lambda w, h: A.second_journey(w, h, legs=1, title="ACTS 15:41 · THROUGH SYRIA AND CILICIA", box=(30.6, 37.6, 34.8, 38.4),
+                                                    label_at={"DERBE": (-8, 4, "end")},   # Syria clear of the end box
+                                                    regions=(("SYRIA", 37.3, 36.9), "CILICIA", "GALATIA", "PHRYGIA", "ASIA", "MYSIA", "MACEDONIA", "ACHAIA")), "#0B1A2E", art_h=200)]
 PG.extend(K.pack(SEGS, "ACT-C08-D", PG.next(), most=4, lone=0.5, end=nxt("NEXT · COME OVER INTO MACEDONIA")))

@@ -131,12 +131,12 @@ SECOND = [["ANTIOCH", "TARSUS", "DERBE"], ["DERBE", "LYSTRA", "ICONIUM", (31.4, 
           ["PHILIPPI", "AMPHIPOLIS", "APOLLONIA", "THESSALONICA"], ["THESSALONICA", "BERŒA"], ["BERŒA", (23.2, 38.6), "ATHENS"], ["ATHENS", "CORINTH"],
           ["CORINTH", "CENCHREÆ", (25.4, 37.6), "EPHESUS"], ["EPHESUS", (30.0, 35.8), (33.8, 33.6), "CÆSAREA", "JERUSALEM", (35.8, 34.6), "ANTIOCH"]]
 
-def second_journey(w, h, legs=99, title="ACTS 15:40 – 18:22 · THE SECOND JOURNEY", box=(21.0, 37.0, 31.4, 42.0), lit=None):
+def second_journey(w, h, legs=99, title="ACTS 15:40 – 18:22 · THE SECOND JOURNEY", box=(21.0, 37.0, 31.4, 42.0), lit=None, label_at=None,
+                   regions=("SYRIA", "CILICIA", "GALATIA", "PHRYGIA", "ASIA", "MYSIA", "MACEDONIA", "ACHAIA")):
     """The second journey, leg by leg (legs= how many are drawn; the last drawn is lit red unless lit= lists others):
     Antioch through Cilicia to Derbe and Lystra, Phrygia and Galatia, Troas, Samothrace, Neapolis, Philippi, Amphipolis,
     Apollonia, Thessalonica, Berœa, Athens, Corinth, Cenchreæ, Ephesus, Cæsarea, Jerusalem, Antioch."""
     rts = SECOND[:legs]
     names = [q for r in rts for q in r if isinstance(q, str)]
     return geo.med_map(w, h, box=box, places=tuple(dict.fromkeys(names + ["ANTIOCH", "JERUSALEM"])), routes=rts, hi=tuple(q for q in rts[-1] if isinstance(q, str)),
-                       regions=("SYRIA", "CILICIA", "GALATIA", "PHRYGIA", "ASIA", "MYSIA", "MACEDONIA", "ACHAIA"), lit_routes=lit if lit is not None else [len(rts) - 1],
-                       size=10, rsize=10, title=title)
+                       regions=regions, lit_routes=lit if lit is not None else [len(rts) - 1], size=10, rsize=10, title=title, label_at=label_at)

@@ -131,8 +131,9 @@ LABEL_AT = {"CENCHREÆ": (8, 12, "start"), "CORINTH": (-8, -8, "end"), "ATHENS":
             "CYRENE": (0, 16, "middle")}
 
 def med_map(w, h, box=(10, 37, 29.5, 43), places=(), routes=(), hi=(), regions=(), title=None, red=False, lit_routes=None, size=9, dots=True,
-            ship=None, rsize=None, labels_left=(), rings=None):
-    """rings=place: rings spreading out from that place (the witnesses of 1:8); hi= places lit red, the rest gold."""
+            ship=None, rsize=None, labels_left=(), rings=None, label_at=None):
+    """rings=place: rings spreading out from that place (the witnesses of 1:8); hi= places lit red, the rest gold;
+    label_at={place: (dx, dy, anchor)} sets names for this map only, over LABEL_AT."""
     P = Proj(w, h, box)
     uid = f"mc{zlib.crc32(repr((box, places, title, w, h)).encode()) % 10 ** 8}"
     o = [f'<defs><clipPath id="{uid}"><rect x="0" y="0" width="{f(w)}" height="{f(h)}"></rect></clipPath></defs><g clip-path="url(#{uid})">',
@@ -157,7 +158,7 @@ def med_map(w, h, box=(10, 37, 29.5, 43), places=(), routes=(), hi=(), regions=(
     for nm in places:
         x, y = P.pt(nm)
         c = "#FF6A4A" if nm in hi else "#FFD23F"
-        dx, dy, anchor = LABEL_AT.get(nm, (0, -10, "middle"))
+        dx, dy, anchor = (label_at or {}).get(nm) or LABEL_AT.get(nm, (0, -10, "middle"))
         if nm in labels_left: dx, dy, anchor = -10, 4, "end"
         o.append(node(x, y, "", c, r=3.6 if nm not in hi else 5, dy=-10, size=size) + label(x + dx, y + dy, nm, c, size, anchor))
     if ship:

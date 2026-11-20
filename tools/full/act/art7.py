@@ -137,8 +137,11 @@ def first_journey(w, h, legs=99, title="ACTS 13 – 14 · THE FIRST JOURNEY"):
     legs_out = [out[0:2], out[1:4], out[3:6], out[5:8], out[7:9], out[8:10], out[9:11], out[10:12]]
     rts = legs_out[:legs] + ([back] if legs > 8 else [])
     return geo.med_map(w, h, box=(29.6, 37.2, 34.2, 39.0), places=("ANTIOCH", "SELEUCIA", "SALAMIS", "PAPHOS", "PERGA", "ATTALIA", "ANTIOCH OF PISIDIA", "ICONIUM", "LYSTRA", "DERBE", "TARSUS"),
-                       routes=rts, hi=tuple(q for r in rts for q in r if isinstance(q, str)), regions=("CYPRUS", "PAMPHYLIA", "PISIDIA", "LYCAONIA", "CILICIA", "SYRIA", "GALATIA"),
-                       lit_routes=list(range(len(rts))), size=10, rsize=10, title=title)
+                       routes=rts, hi=tuple(q for r in rts for q in r if isinstance(q, str)),
+                       regions=(("CYPRUS", 33.0, 35.5), "PAMPHYLIA", "PISIDIA", ("LYCAONIA", 33.9, 38.25), "CILICIA", "SYRIA", "GALATIA"),
+                       lit_routes=list(range(len(rts))), size=10, rsize=10, title=title,
+                       label_at={"ICONIUM": (8, -4, "start"), "LYSTRA": (-8, 1, "end"), "PERGA": (8, 4, "start"), "TARSUS": (8, 4, "start"),
+                                 "PAPHOS": (0, -9, "middle")})   # the towns of Galatia lie close at this scale: each name on its own side
 
 def proconsul(p, w, h, seed, elymas_=True, mist=False):
     """The proconsul Sergius Paulus in his hall at Paphos (a white toga with a purple border), seated; Barnabas and Saul

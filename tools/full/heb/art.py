@@ -24,15 +24,16 @@ def angel_fig(p, x, y, s, flip=False, up=None, pose="stand"):
     return (f'<ellipse cx="{f(x)}" cy="{f(y - 105 * s)}" rx="{f(70 * s)}" ry="{f(125 * s)}" fill="#FFF4C2" opacity="0.4"></ellipse>'
             + robed(p, x, y, s, "#FFFFFF", skin="#FFFDF0", line="#E8B830", mantle="#FFF8E0", flip=flip, up=up, pose=pose))
 
-def tag(x, y, text, tx, ty, color=CY, size=9):
+def tag(x, y, text, tx, ty, color=CY, size=9, fit=False):
     """A callout (exo.art8.tag) whose label is kept inside the plate by its true width (the letter-spaced mono type runs
-    about 0.8 em a letter)."""
+    about 0.8 em a letter); fit=True: a translation longer than the room left to the plate's edge is shrunk to it."""
     import exo.art8 as B
     est = len(text) * size * 0.8; right = tx >= x; W = B._W[0]
     if right and tx + 4 + est > W - 8: tx = W - 12 - est
     if not right and tx - 4 - est < 8: tx = 12 + est
     return (f'<circle cx="{f(x)}" cy="{f(y)}" r="3" fill="{color}"></circle><path d="M{f(x)} {f(y)} L {f(tx)} {f(ty)}" stroke="{color}" stroke-width="1.2"></path>'
-            + label(tx + (4 if right else -4), ty + 3, text, color, size, "start" if right else "end"))
+            + label(tx + (4 if right else -4), ty + 3, text, color, size, "start" if right else "end",
+                    fit=(W - 8 - tx - 4 if right else tx - 4 - 8) if fit else None))
 
 # ---- small things shared by the volume ------------------------------------------------------------------------------------
 def throne_of_light(cx, base, s, uid, lit=1.0):
@@ -183,7 +184,8 @@ def sceptre_plate(w, h):
     knop and rod tagged; the horn of oil tipped and pouring; and the throne small in light behind them."""
     o = [plate_bg(w, h, "HEBREWS 1:8–9 · THE SCEPTRE OF THY KINGDOM")]
     k = min(w / 700, (h - 30) / 250)
-    o.append(throne_of_light(w * 0.5, h - 10, min(1.0, (h - 40) / 330), "sp", lit=0.6))
+    tc, ts = w * 0.54, min(1.0, (h - 40) / 330)                              # the throne, a little right of the middle
+    o.append(throne_of_light(tc, h - 10, ts, "sp", lit=0.6))
     x0, x1, y = w * 0.1, w * 0.9, h * 0.62                                    # the sceptre, laid across
     o.append(f'<rect x="{f(x0)}" y="{f(y - 6 * k)}" width="{f(x1 - x0)}" height="{f(12 * k)}" rx="{f(6 * k)}" fill="#E8B830" stroke="{INK}" stroke-width="2"></rect>'
              + "".join(f'<rect x="{f(x0 + (x1 - x0) * q)}" y="{f(y - 9 * k)}" width="{f(10 * k)}" height="{f(18 * k)}" fill="#FFD23F" stroke="{INK}" stroke-width="1.4"></rect>' for q in (0.2, 0.45, 0.7))
@@ -191,13 +193,13 @@ def sceptre_plate(w, h):
              f'<circle cx="{f(x1 + 14 * k)}" cy="{f(y)}" r="{f(9 * k)}" fill="#D7261E" stroke="{INK}" stroke-width="1.4"></circle>')
     o.append(tag(x0 + (x1 - x0) * 0.3, y + 8 * k, "THE SCEPTRE OF UPRIGHTNESS", x0 + 60 * k, y + 60 * k, GOLD, 10))
     o.append(tag(x1 + 14 * k, y - 22 * k, "THE KNOP", x1 - 40 * k, y - 70 * k, CY, 9))
-    hx, hy = w * 0.2, h * 0.3                                                 # the horn of oil
+    hx, hy = w * 0.17, h * 0.32                                               # the horn of oil
     o.append(f'<path d="M{f(hx - 50 * k)} {f(hy - 36 * k)} C {f(hx)} {f(hy - 48 * k)} {f(hx + 46 * k)} {f(hy - 14 * k)} {f(hx + 60 * k)} {f(hy + 22 * k)} L {f(hx + 46 * k)} {f(hy + 30 * k)} '
              f'C {f(hx + 32 * k)} {f(hy)} {f(hx)} {f(hy - 18 * k)} {f(hx - 50 * k)} {f(hy - 18 * k)} Z" fill="#E8D8B0" stroke="{INK}" stroke-width="2"></path>'
              + "".join(f'<circle cx="{f(hx + 56 * k + 4 * i * k)}" cy="{f(hy + 44 * k + 18 * i * k)}" r="{f((4 - i * 0.6) * k)}" fill="#FFE680" stroke="#7A5A1A" stroke-width="1"></circle>' for i in range(4))
              + halo(hx + 56 * k, hy + 40 * k, 40 * k, "#FFE680", 0.45))
-    o.append(tag(hx - 10 * k, hy - 30 * k, "THE OIL OF GLADNESS", hx + 120 * k, hy - 54 * k, GOLD, 10))
-    o.append(label(w * 0.5, h - 14, "THY THRONE, O GOD · FOR EVER AND EVER", CREAM, 10))
+    o.append(tag(hx + 40 * k, hy - 12 * k, "THE OIL OF GLADNESS", hx + 90 * k, hy - 26 * k, GOLD, 10))   # clear of the title
+    o.append(tag(tc + 44 * ts, h - 10 - 266 * ts, "THY THRONE, O GOD · FOR EVER AND EVER", tc + 90 * ts, h * 0.2, CREAM, 9, fit=True))
     return "".join(o)
 
 def rolled_heavens(p, w, h, seed):
@@ -380,7 +382,7 @@ def house_plate(w, h):
     ox, oy = cx + hw / 2 + 60 * k, b - hh - 30 * k
     o.append(halo(ox, oy, 40 * k, "#FFE680", 0.5) + f'<circle cx="{f(ox)}" cy="{f(oy - 14 * k)}" r="{f(8 * k)}" fill="#FFF8DC"></circle><path d="M{f(ox - 11 * k)} {f(oy + 22 * k)} L {f(ox - 7 * k)} {f(oy - 4 * k)} L {f(ox + 7 * k)} {f(oy - 4 * k)} L {f(ox + 11 * k)} {f(oy + 22 * k)} Z" fill="#FFF8DC"></path>')
     o.append(tag(ox, oy + 26 * k, "CHRIST · A SON OVER HIS HOUSE", w * 0.84, b - 30 * k, "#FFE680", 9))
-    o.append(tag(cx + hw / 4, b - hh / 2 - 30 * k, "WHOSE HOUSE ARE WE", cx + hw / 2 + 30 * k, b - hh / 2 + 34 * k, GOLD, 9))
+    o.append(label(cx, b + 15, "WHOSE HOUSE ARE WE", GOLD, 9))              # under the house, its household
     return "".join(o)
 
 def wilderness_years(p, w, h, seed):

@@ -292,8 +292,12 @@ def temple_elev(w, h):
     o.append(f'<path d="M{f(x0 + 26 * u)} {f(base)} L {f(x0 + 26 * u)} {f(base - 12 * u)} L {f(x0 + 34 * u)} {f(base - 12 * u)} L {f(x0 + 34 * u)} {f(base)}" fill="#3A2214" stroke="#0D0D0F" stroke-width="2"></path>')
     o.append(dim(x0 + 10 * u, base - 30 * u - 12, x0 + 50 * u, base - 30 * u - 12, "20 CUBITS"))
     o.append(dim(x0 + 50 * u + 4, base, x0 + 50 * u + 4, base - 30 * u, "30 CUBITS", off=-14))
-    o.append(tag(x0 + 55 * u, base - 12 * u, "SIDE-CHAMBERS · THREE STORIES", x0 + 44 * u, base - 36 * u))
-    o.append(tag(x0 + 20 * u, base - 24 * u, "WINDOWS OF FIXED LATTICE-WORK", x0 + 34 * u, base - 36 * u))
+    ty = max(base - 36 * u, 36)                                               # one row above the house, a label at each edge,
+    for x, y, text, left in ((x0 + 15.5 * u, base - 24.5 * u, "WINDOWS OF FIXED LATTICE-WORK", True),     # so a longer name never
+                             (x0 + 55 * u, base - 12 * u, "SIDE-CHAMBERS · THREE STORIES", False)):       # runs into the other
+        lx = 14 if left else w - 14
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="3" fill="{CY}"></circle><path d="M{f(x)} {f(y)} L {f(lx + (12 if left else -12))} {f(ty + 6)}" stroke="{CY}" stroke-width="1.2"></path>'
+                 + label(lx, ty + 3, text, CY, 9, "start" if left else "end", fit=w / 2 - 24))
     return "".join(o)
 
 def temple_plan(w, h, oracle=False):

@@ -40,9 +40,9 @@ def seven_ones(w, h):
     faith (a shield), baptism (water)."""
     o = [plate_bg(w, h, "EPHESIANS 4:4–6 · ONE"), mk.defs("so", *ALL)]
     top = 34; H = h - top
-    cx, cy = w * 0.5, top + H * 0.5
+    cx, cy = w * 0.5, top + H * 0.46                                          # raised, so the lowest names clear the last line
     R0 = min(H * 0.17, w * 0.1); r = min(H * 0.11, w * 0.07)
-    rx, ry = min(w * 0.36, w * 0.5 - r - 40), H * 0.33
+    rx, ry = min(w * 0.36, w * 0.5 - r - 40), H * 0.3
     items = [("ONE BODY", "body"), ("ONE SPIRIT", "dove"), ("ONE HOPE", "anchor"), ("ONE LORD", "crown"), ("ONE FAITH", "shield"), ("ONE BAPTISM", "water")]
     pts = []
     for i in range(6):
