@@ -335,7 +335,7 @@ def page(fname, title, crumbs, main, og, home_page):
 def splash(t):
     """One testament's home page (index.html, index2.html): its volumes and its books of the text, with a switch to the
     other's, and its page index on a page of its own (pages.html, pages2.html: a link to every page, three quarters of
-    what the home page weighed). Before the New Testament has a volume, index2.html names its first book as in progress."""
+    what the home page weighed). Before the New Testament has a volume, index2.html names its first book as in progress; once a testament has every book, its lede drops the "in progress" list (lede_done)."""
     vols = [S for S in VOLUMES if testament(S) == t]
     chain = [b for b in FLAT["full"] if testament(b["series"]) == t]
     fname = SPLASH[t]
@@ -354,10 +354,12 @@ def splash(t):
     more = f'  <h2 class="sec">{T("all")}</h2>\n  <p><a class="cta alt" href="{INDEX[t]}">{T("all")} ›</a></p>\n' if chain else ""
     vol_names = UI[LANG].get("list_sep", ", ").join(v["name"] for v in vols) or (NT_FIRST if t == "nt" else "—")   # ja "、"
     kanji = " · ".join(v["kanji"] for v in vols)
+    done = len(vols) == (39 if t == "ot" else 27) and "lede_done" in UI[LANG]      # every book of the testament: no "in progress" list
+    lede = T("lede_done", c=CREDIT) if done else T("lede", c=CREDIT, v=vol_names)
     page(fname, "Bible Manga" if t == "ot" else f"{esc(TESTAMENT[t])} · Bible Manga", ['<span aria-current="page">Bible Manga</span>'], f'''  <section class="hero">
     <p class="kicker">Bible Manga{" · " + kanji if kanji else ""}</p>
     <h1>Bible Manga</h1>
-    <p class="lede">{esc(T("lede", c=CREDIT, v=vol_names))}</p>
+    <p class="lede">{esc(lede)}</p>
     {begin}{text_cta}
   </section>
   <h2 class="sec">{T("books")}</h2>

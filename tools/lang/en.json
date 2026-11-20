@@ -25,6 +25,7 @@
   "pdf_of": "{t} {c} in the {k} (PDF)",
   "epub_of": "{n} as an EPUB ({s})",
   "lede": "The Bible as a full-color manga — one volume per book of the Bible, every scene and every line of dialogue in the words of the {c}. Now in progress: {v}.",
+  "lede_done": "The Bible as a full-color manga — one volume per book of the Bible, every scene and every line of dialogue in the words of the {c}.",
   "meta": "The Bible as a full-color manga, in the style of 1980s cyberpunk comics, in the words of the {c}.",
   "text_lede": "The manga quotes the {c} word for word. Here is the text, {r}, one PDF per book: two columns, a bookmark for every chapter. The {c} credit at the foot of every manga page opens its book at that page's chapter.",
   "text_ot": "Genesis to Malachi",
