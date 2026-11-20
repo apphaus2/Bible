@@ -1,0 +1,21 @@
+{
+ "id": "2thessalonians",
+ "order": 53,
+ "name": "2 Thessalonians",
+ "kanji": "テサロニケ人への第二の手紙",
+ "thumb": "vol-2thessalonians-",
+ "lede": "The fifty-third book of the Bible, in full: Paul's second letter to the church of the Thessalonians, written again from Corinth with Silvanus and Timothy — your faith groweth exceedingly, the Lord Jesus revealed from heaven in flaming fire, the day of the Lord not yet at hand, the falling away and the man of sin, stand fast and hold the traditions, pray that the word of the Lord may run, if any will not work neither let him eat, be not weary in well-doing, and the salutation in Paul's own hand, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Stand Fast",
+   "range": "2 Thessalonians 1–3",
+   "blurb": "Paul, and Silvanus, and Timothy, unto the church of the Thessalonians; your faith groweth exceedingly, and your patience in all your persecutions; the Lord Jesus revealed from heaven with the angels of his power in flaming fire; be not quickly shaken, as that the day of the Lord is just at hand: the falling away must come first, and the man of sin be revealed, whom the Lord Jesus shall slay with the breath of his mouth; God chose you from the beginning unto salvation; stand fast, and hold the traditions; pray for us, that the word of the Lord may run; if any will not work, neither let him eat; be not weary in well-doing; the salutation of me Paul with mine own hand.",
+   "prefixes": [
+    "Main.dc.html",
+    "2TH-C01-"
+   ]
+  }
+ ]
+}
