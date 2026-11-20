@@ -46,7 +46,7 @@ SPK = {
     "merchants": ("THE MERCHANTS OF THE EARTH", "#8A5A2A"), "ships": ("EVERY SHIPMASTER", "#1F6F9A"),
     "sun": ("AN ANGEL STANDING IN THE SUN", ANGEL_C), "bowl": ("ONE OF THE SEVEN ANGELS", ANGEL_C),
     "worshippers": ("THE WHOLE EARTH", "#8A6A4A"), "throne": ("A GREAT VOICE OUT OF THE THRONE", VOICE_C),
-    "bride": ("THE SPIRIT AND THE BRIDE", "#FFD23F"), "john": ("JOHN", "#B85A3A"),
+    "bride": ("THE SPIRIT AND THE BRIDE", "#FFD23F"), "john": ("JOHN", "#B85A3A"), "voices": ("GREAT VOICES IN HEAVEN", VOICE_C),
 }
 
 class RevKit(EpistleKit):
@@ -69,7 +69,7 @@ class RevKit(EpistleKit):
                 nf += 1
                 if s.get("rev_who"):
                     s["extra"] += _tag(*SPK[s["rev_who"]], ("right" if s["flip"] else "left") + ": 12px; bottom: 38px")
-        k.setdefault("most", 4); k.setdefault("lone", 0.5)
+        k.setdefault("most", 4); k.setdefault("lone", 0.5); k.setdefault("budget", 1250)
         return super().pack(segs, prefix, start, **k)
 
 K = RevKit(G, CODE, "Revelation", credit=CREDIT, fit_faces=True, clip=True)
@@ -102,4 +102,7 @@ JOHN_AWE = face_of("adam", brow="sorrow", light="#FFFFFF", **_JO) + _LONG_BEARD
 JOHN_NIGHT = face_of("adam", **dict(_JO, skin="#B8A0A0", shadow="#3A3A5A"), light="#9FB8FF") + _LONG_BEARD
 JOHN_GRIEF = face_of("adam", **dict(_JO, skin="#B8A0A0", shadow="#3A3A5A"), brow="sorrow", tear=True, light="#9AA8C8") + _LONG_BEARD
 JOHN_JOY = face_of("adam", **dict(_JO, skin="#DCAA86"), light="#FFFFFF") + _LONG_BEARD
+from est.common import _crown
+_EL = dict(skin="#C98E66", shadow="#5A4A4A", hair="#EEECE6", hl="#B8B4AA", beard=True, beard_color="#EEECE6")
+ELDER = face_of("adam", light="#FFF4C2", **_EL) + _crown(False, "#E8B830")      # one of the elders: white hair and beard, a crown of gold
 JOHN_LOOK = dict(robe="#B85A3A", mantle="#8A847A", hair="#EEECE6", beard="#EEECE6")      # at a distance: ntcast's rust robe, a grey mantle
