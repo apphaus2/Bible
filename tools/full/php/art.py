@@ -104,16 +104,22 @@ def hand_pen(x, y, s, skin=SKIN, chained=True, flip=False):
     """Paul's own hand writing (close in): the sleeve, the hand holding the reed pen, its nib at (x, y); chained=True the iron
     cuff on the wrist and the chain running off (Col 4:18, 'Remember my bonds')."""
     sx = -s if flip else s
-    o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">',
-         '<path d="M40 -40 C 90 -60 170 -80 260 -96 L 280 -40 C 200 -26 120 -10 64 2 Z" fill="#7A5A44" stroke="#0D0D0F" stroke-width="3"></path>',
-         f'<path d="M8 -6 C 10 -30 30 -48 52 -50 C 70 -52 82 -40 80 -22 C 78 -6 64 4 44 6 C 28 8 14 6 8 -6 Z" fill="{skin}" stroke="#0D0D0F" stroke-width="3"></path>',
-         f'<path d="M20 -36 C 12 -40 4 -36 2 -28 C 0 -20 8 -16 16 -18" fill="{skin}" stroke="#0D0D0F" stroke-width="2.4"></path>',
-         '<path d="M-2 4 L 2 -4 L 70 -76 L 64 -82 Z" fill="#C8A060" stroke="#0D0D0F" stroke-width="2"></path>',
-         f'<path d="M30 -2 C 34 -14 44 -20 54 -18" fill="none" stroke="#0D0D0F" stroke-width="1.6"></path>']
-    if chained:
-        o.append('<rect x="74" y="-62" width="22" height="60" rx="4" transform="rotate(-14 85 -32)" fill="#6A6A74" stroke="#0D0D0F" stroke-width="2.6"></rect>'
-                 '<path d="M90 -2 C 96 30 108 60 130 90" fill="none" stroke="#0D0D0F" stroke-width="7" stroke-dasharray="10 4"></path>'
-                 '<path d="M90 -2 C 96 30 108 60 130 90" fill="none" stroke="#8A8A94" stroke-width="4" stroke-dasharray="10 4"></path>')
+    o = [f'<g transform="translate({f(x)} {f(y)}) scale({f(sx)} {f(s)})">']
+    if chained:                                                  # the chain, from the cuff down off the table (under the sleeve)
+        d = "M96 -36 C 130 -10 150 30 170 90 C 176 110 180 130 184 160"
+        o.append(f'<path d="{d}" fill="none" stroke="#0D0D0F" stroke-width="9" stroke-dasharray="12 5" stroke-linecap="round"></path>'
+                 f'<path d="{d}" fill="none" stroke="#9A9AA4" stroke-width="5" stroke-dasharray="12 5" stroke-linecap="round"></path>')
+    o += ['<path d="M84 -70 C 140 -104 220 -150 330 -200 L 360 -130 C 260 -90 170 -46 110 -14 Z" fill="#6A4A36" stroke="#0D0D0F" stroke-width="3"></path>',   # the sleeve
+          '<path d="M120 -60 C 170 -92 230 -122 300 -150" fill="none" stroke="#4A3022" stroke-width="2"></path>',
+          f'<path d="M58 -56 C 70 -66 84 -70 96 -64 L 112 -28 C 100 -20 86 -16 74 -18 Z" fill="{skin}" stroke="#0D0D0F" stroke-width="2.6"></path>',      # the wrist
+          f'<path d="M14 -10 C 12 -30 26 -50 48 -56 C 66 -60 80 -54 84 -40 C 88 -24 80 -10 64 -4 C 46 2 24 4 14 -10 Z" fill="{skin}" stroke="#0D0D0F" stroke-width="2.8"></path>',  # the hand
+          f'<path d="M30 -46 C 22 -42 16 -34 16 -26 C 16 -18 22 -14 30 -16 C 36 -18 38 -26 34 -32" fill="{skin}" stroke="#0D0D0F" stroke-width="2.2"></path>',   # the thumb
+          '<path d="M36 -10 C 44 -16 56 -18 66 -14 M40 -2 C 50 -6 60 -6 68 -2" fill="none" stroke="#0D0D0F" stroke-width="1.6"></path>',                        # the fingers' folds
+          '<path d="M-1 3 L 3 -3 L 58 -84 L 52 -88 Z" fill="#C8A060" stroke="#0D0D0F" stroke-width="2"></path>',                                                 # the reed pen
+          '<path d="M-1 3 L 3 -3 L 6 -8 L 2 -6 Z" fill="#2A1A10"></path>']
+    if chained:                                                  # the iron cuff on the wrist
+        o.append('<path d="M88 -72 L 104 -78 L 124 -30 L 108 -24 Z" fill="#6A6A74" stroke="#0D0D0F" stroke-width="2.6"></path>'
+                 '<path d="M94 -66 L 112 -30" stroke="#9A9AA4" stroke-width="2"></path>')
     return "".join(o) + "</g>"
 
 # ---- the prison at Rome --------------------------------------------------------------------------------------------------------

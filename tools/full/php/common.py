@@ -17,7 +17,7 @@ off-white (a warm one reads as long hair):
   Mark           as Acts draws him (a sand-olive tunic, bareheaded, brown hair), a young man's stubble
   Luke           the beloved physician: bareheaded, greying brown hair and a short greying beard, a deep-blue robe, a cream mantle
   Aristarchus    of Thessalonica, Paul's fellow-prisoner: bareheaded, black hair and beard, a dark wine-red tunic
-  Justus         of the circumcision: a deep-blue headcloth with a cord, a black beard, a grey robe
+  Justus         of the circumcision: an off-white headcloth with a blue band, a black beard, a grey robe
   Demas          young, bareheaded, clean-shaven, light-brown hair, an olive-grey robe"""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "kit"))
@@ -48,7 +48,7 @@ TYCHICUS = face_of("adam", skin="#C98E66", shadow="#5A3A3A", hair="#5A3A22", hl=
 MARK = face_of("adam", skin="#C98E66", shadow="#5A3A2A", hair="#3A2214", hl="#6A5A4E", stubble="#3A2214", light="#FFE680")
 LUKE = face_of("adam", skin="#D9A27A", shadow="#6A4A3A", hair="#6A5A4A", hl="#9A8A7A", beard=True, beard_color="#7A6A5A", light="#FFF4C2")
 ARISTARCHUS = face_of("adam", skin="#C98E66", shadow="#4A3A3A", hair="#1A1210", hl="#4A3A2E", beard=True, beard_color="#1A1210", light="#FFC14D")
-JUSTUS = face_of("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#1F3A6A", cord=True, light="#FFE680")
+JUSTUS = face_of("adam", skin="#B98A6E", shadow="#4A3A3A", hair="#2A1A10", hl="#4A3A2E", beard=True, beard_color="#2A1A10", scarf="#E8E2D6", band=True, light="#FFE680")
 DEMAS = face_of("adam", skin="#E3B08A", shadow="#7A5A4A", hair="#6A4A2A", hl="#9A7A5A", light="#FFE680")
 
 # ---- the same people at a distance (php.art draws them on epistle.robed) --------------------------------------------------
@@ -65,5 +65,5 @@ TYCHICUS_LOOK = dict(cloth="#7A6A5A", head="#3A6A6A", cord="#1A2A2A", beard="#5A
 MARK_LOOK = dict(cloth="#8A7A4A", hair="#3A2214", belt="#4A3A1A")
 LUKE_LOOK = dict(cloth="#2A4A6A", hair="#6A5A4A", beard="#7A6A5A", mantle="#C8BCA0")
 ARISTARCHUS_LOOK = dict(cloth="#6A3A3A", hair="#1A1210", beard="#1A1210", mantle="#4A4A50")
-JUSTUS_LOOK = dict(cloth="#5A5A6A", head="#1F3A6A", cord="#0D1A2A", beard="#2A1A10")
+JUSTUS_LOOK = dict(cloth="#5A5A6A", head="#E8E2D6", cord="#1F3A6A", beard="#2A1A10")
 DEMAS_LOOK = dict(cloth="#8A8A6A", hair="#6A4A2A", belt="#4A4A3A")
