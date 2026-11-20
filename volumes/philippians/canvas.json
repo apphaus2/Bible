@@ -1,0 +1,217 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:02:12Z"
+ },
+ "title": "Philippians — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "PHP-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · To Live Is Christ"
+  },
+  "PHP-C01-D-P01-PaulAndTimothy.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Paul and Timothy"
+  },
+  "PHP-C01-D-P02-PaulAndTimothy.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Paul and Timothy"
+  },
+  "PHP-C01-D-P03-TheWholePrtorianGu.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · The Whole Prætorian Guard"
+  },
+  "PHP-C01-D-P04-ToLiveIsChrist.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · To Live Is Christ"
+  },
+  "PHP-C01-D-P05-StandFastInOneSpir.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · Stand Fast in One Spirit"
+  },
+  "PHP-C01-D-P06-HaveThisMindInYou.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Have This Mind in You"
+  },
+  "PHP-C01-D-P07-HaveThisMindInYou.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Have This Mind in You"
+  },
+  "PHP-C01-D-P08-LightsInTheWorld.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Lights in the World"
+  },
+  "PHP-C01-D-P09-Timothy.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · Timothy"
+  },
+  "PHP-C01-D-P10-Epaphroditus.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Epaphroditus"
+  },
+  "PHP-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · Rejoice in the Lord"
+  },
+  "PHP-C02-D-P01-RejoiceInTheLord.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Rejoice in the Lord"
+  },
+  "PHP-C02-D-P02-AHebrewOfHebrews.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Hebrew of Hebrews"
+  },
+  "PHP-C02-D-P03-IPressOnTowardTheG.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · I Press On toward the Goal"
+  },
+  "PHP-C02-D-P04-OurCitizenshipIsIn.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Our Citizenship Is in Heaven"
+  },
+  "PHP-C02-D-P05-OfTheSameMind.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Of the Same Mind"
+  },
+  "PHP-C02-D-P06-ThinkOnTheseThings.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Think on These Things"
+  },
+  "PHP-C02-D-P07-Content.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · Content"
+  },
+  "PHP-C02-D-P08-AnOdorOfASweetSmel.dc.html": {
+   "x": 2520,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · An Odor of a Sweet Smell"
+  },
+  "PHP-C02-D-P09-CsarSHousehold.dc.html": {
+   "x": 3360,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Cæsar's Household"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "PHP-C01-00-Title.dc.html",
+  "PHP-C01-D-P01-PaulAndTimothy.dc.html",
+  "PHP-C01-D-P02-PaulAndTimothy.dc.html",
+  "PHP-C01-D-P03-TheWholePrtorianGu.dc.html",
+  "PHP-C01-D-P04-ToLiveIsChrist.dc.html",
+  "PHP-C01-D-P05-StandFastInOneSpir.dc.html",
+  "PHP-C01-D-P06-HaveThisMindInYou.dc.html",
+  "PHP-C01-D-P07-HaveThisMindInYou.dc.html",
+  "PHP-C01-D-P08-LightsInTheWorld.dc.html",
+  "PHP-C01-D-P09-Timothy.dc.html",
+  "PHP-C01-D-P10-Epaphroditus.dc.html",
+  "PHP-C02-00-Title.dc.html",
+  "PHP-C02-D-P01-RejoiceInTheLord.dc.html",
+  "PHP-C02-D-P02-AHebrewOfHebrews.dc.html",
+  "PHP-C02-D-P03-IPressOnTowardTheG.dc.html",
+  "PHP-C02-D-P04-OurCitizenshipIsIn.dc.html",
+  "PHP-C02-D-P05-OfTheSameMind.dc.html",
+  "PHP-C02-D-P06-ThinkOnTheseThings.dc.html",
+  "PHP-C02-D-P07-Content.dc.html",
+  "PHP-C02-D-P08-AnOdorOfASweetSmel.dc.html",
+  "PHP-C02-D-P09-CsarSHousehold.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Philippians Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · To Live Is Christ (Philippians 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · Rejoice in the Lord (Philippians 3–4)",
+   "x": 0,
+   "y": 5800
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
