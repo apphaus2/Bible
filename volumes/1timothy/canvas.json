@@ -1,0 +1,226 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:10:14Z"
+ },
+ "title": "1 Timothy — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "1TI-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · The Good Fight of the Faith"
+  },
+  "1TI-C01-D-P01-TarryAtEphesus.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · Tarry at Ephesus"
+  },
+  "1TI-C01-D-P02-TheLawIsGood.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · The Law Is Good"
+  },
+  "1TI-C01-D-P03-OfWhomIAmChief.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Of Whom I Am Chief"
+  },
+  "1TI-C01-D-P04-TheGoodWarfare.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The Good Warfare"
+  },
+  "1TI-C01-D-P05-OneMediator.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · One Mediator"
+  },
+  "1TI-C01-D-P06-ModestApparel.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Modest Apparel"
+  },
+  "1TI-C01-D-P07-TheOfficeOfABishop.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · The Office of a Bishop"
+  },
+  "1TI-C01-D-P08-DeaconsInLikeManne.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Deacons in Like Manner"
+  },
+  "1TI-C01-D-P09-TheMysteryOfGodlin.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · The Mystery of Godliness"
+  },
+  "1TI-C01-D-P10-InLaterTimes.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · In Later Times"
+  },
+  "1TI-C01-D-P11-ExerciseThyselfUnt.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Exercise Thyself unto Godliness"
+  },
+  "1TI-C01-D-P12-LetNoManDespiseThy.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · Let No Man Despise Thy Youth"
+  },
+  "1TI-C01-D-P13-AsAFatherAsBrethre.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · As a Father, as Brethren"
+  },
+  "1TI-C01-D-P14-WidowsIndeed.dc.html": {
+   "x": 3360,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · Widows Indeed"
+  },
+  "1TI-C01-D-P15-WidowsIndeed.dc.html": {
+   "x": 0,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · Widows Indeed"
+  },
+  "1TI-C01-D-P16-WorthyOfDoubleHono.dc.html": {
+   "x": 840,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Worthy of Double Honor"
+  },
+  "1TI-C01-D-P17-ALittleWine.dc.html": {
+   "x": 1680,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · A Little Wine"
+  },
+  "1TI-C01-D-P18-ServantsUnderTheYo.dc.html": {
+   "x": 2520,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Servants under the Yoke"
+  },
+  "1TI-C01-D-P19-GodlinessWithConte.dc.html": {
+   "x": 3360,
+   "y": 5600,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · Godliness with Contentment"
+  },
+  "1TI-C01-D-P20-FightTheGoodFightO.dc.html": {
+   "x": 0,
+   "y": 6800,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Fight the Good Fight of the Faith"
+  },
+  "1TI-C01-D-P21-TheBlessedAndOnlyP.dc.html": {
+   "x": 840,
+   "y": 6800,
+   "w": 760,
+   "h": 1080,
+   "title": "21 · The Blessed and Only Potentate"
+  },
+  "1TI-C01-D-P22-GuardThatWhichIsCo.dc.html": {
+   "x": 1680,
+   "y": 6800,
+   "w": 760,
+   "h": 1080,
+   "title": "22 · Guard That Which Is Committed"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "1TI-C01-00-Title.dc.html",
+  "1TI-C01-D-P01-TarryAtEphesus.dc.html",
+  "1TI-C01-D-P02-TheLawIsGood.dc.html",
+  "1TI-C01-D-P03-OfWhomIAmChief.dc.html",
+  "1TI-C01-D-P04-TheGoodWarfare.dc.html",
+  "1TI-C01-D-P05-OneMediator.dc.html",
+  "1TI-C01-D-P06-ModestApparel.dc.html",
+  "1TI-C01-D-P07-TheOfficeOfABishop.dc.html",
+  "1TI-C01-D-P08-DeaconsInLikeManne.dc.html",
+  "1TI-C01-D-P09-TheMysteryOfGodlin.dc.html",
+  "1TI-C01-D-P10-InLaterTimes.dc.html",
+  "1TI-C01-D-P11-ExerciseThyselfUnt.dc.html",
+  "1TI-C01-D-P12-LetNoManDespiseThy.dc.html",
+  "1TI-C01-D-P13-AsAFatherAsBrethre.dc.html",
+  "1TI-C01-D-P14-WidowsIndeed.dc.html",
+  "1TI-C01-D-P15-WidowsIndeed.dc.html",
+  "1TI-C01-D-P16-WorthyOfDoubleHono.dc.html",
+  "1TI-C01-D-P17-ALittleWine.dc.html",
+  "1TI-C01-D-P18-ServantsUnderTheYo.dc.html",
+  "1TI-C01-D-P19-GodlinessWithConte.dc.html",
+  "1TI-C01-D-P20-FightTheGoodFightO.dc.html",
+  "1TI-C01-D-P21-TheBlessedAndOnlyP.dc.html",
+  "1TI-C01-D-P22-GuardThatWhichIsCo.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "1 Timothy Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · The Good Fight of the Faith (1 Timothy 1–6)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

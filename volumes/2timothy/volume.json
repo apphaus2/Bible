@@ -1,0 +1,21 @@
+{
+ "id": "2timothy",
+ "order": 55,
+ "name": "2 Timothy",
+ "kanji": "テモテへの第二の手紙",
+ "thumb": "vol-2timothy-",
+ "lede": "The fifty-fifth book of the Bible, in full: Paul's last letter, from his bonds at Rome, to Timothy his beloved child — the unfeigned faith of Lois and Eunice; stir up the gift of God; I know him whom I have believed; a good soldier of Christ Jesus; the word of God is not bound; a workman that needeth not to be ashamed; the firm foundation of God standeth; in the last days grievous times shall come; every scripture inspired of God; preach the word; I have fought the good fight, I have finished the course, I have kept the faith; only Luke is with me; bring the cloak and the books, especially the parchments, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "I Have Kept the Faith",
+   "range": "2 Timothy 1–4",
+   "blurb": "Paul, an apostle, to Timothy, my beloved child; the unfeigned faith that dwelt first in thy grandmother Lois and thy mother Eunice; stir up the gift of God; God gave us not a spirit of fearfulness; I know him whom I have believed; the house of Onesiphorus; suffer hardship with me, as a good soldier of Christ Jesus; remember Jesus Christ, risen from the dead; the word of God is not bound; a workman handling aright the word of truth; the firm foundation of God standeth; vessels unto honor; in the last days grievous times shall come; as Jannes and Jambres withstood Moses; from a babe thou hast known the sacred writings; every scripture inspired of God; preach the word; I am already being offered; I have fought the good fight, I have finished the course, I have kept the faith; the crown of righteousness; only Luke is with me; the cloak, the books, the parchments; the Lord stood by me; come before winter.",
+   "prefixes": [
+    "Main.dc.html",
+    "2TI-C01-"
+   ]
+  }
+ ]
+}

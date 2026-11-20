@@ -1,0 +1,21 @@
+{
+ "id": "titus",
+ "order": 56,
+ "name": "Titus",
+ "kanji": "テトスへの手紙",
+ "thumb": "vol-titus-",
+ "lede": "The fifty-sixth book of the Bible, in full: Paul's letter to Titus, his true child after a common faith, left in Crete — appoint elders in every city; the bishop as God's steward; Cretans are always liars, said a prophet of their own; to the pure all things are pure; aged men and aged women, young women and younger men, servants; the grace of God hath appeared, bringing salvation to all men; looking for the blessed hope; the washing of regeneration and renewing of the Holy Spirit; come unto me to Nicopolis; set forward Zenas the lawyer and Apollos, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Grace of God Hath Appeared",
+   "range": "Titus 1–3",
+   "blurb": "Paul, a servant of God, to Titus, my true child after a common faith; for this cause left I thee in Crete, to appoint elders in every city; the bishop must be blameless, as God's steward; many unruly men, vain talkers and deceivers; Cretans are always liars, evil beasts, idle gluttons; to the pure all things are pure; aged men, aged women, the young women, the younger men; in all things showing thyself an ensample of good works; servants showing all good fidelity; the grace of God hath appeared, bringing salvation to all men; looking for the blessed hope; subject to rulers; the washing of regeneration and renewing of the Holy Spirit; come unto me to Nicopolis, for there I have determined to winter; set forward Zenas the lawyer and Apollos; grace be with you all.",
+   "prefixes": [
+    "Main.dc.html",
+    "TIT-C01-"
+   ]
+  }
+ ]
+}

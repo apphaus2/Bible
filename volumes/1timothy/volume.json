@@ -1,0 +1,21 @@
+{
+ "id": "1timothy",
+ "order": 54,
+ "name": "1 Timothy",
+ "kanji": "テモテへの第一の手紙",
+ "thumb": "vol-1timothy-",
+ "lede": "The fifty-fourth book of the Bible, in full: Paul's first letter to Timothy, his true child in faith, left at Ephesus — the law is good, if a man use it lawfully; Christ Jesus came into the world to save sinners, of whom I am chief; war the good warfare; prayers for kings; one God, one mediator; the bishop and the deacons; the house of God, the pillar and ground of the truth; great is the mystery of godliness; let no man despise thy youth; widows and elders; godliness with contentment is great gain; the love of money is a root of all kinds of evil; fight the good fight of the faith; O Timothy, guard that which is committed unto thee, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "The Good Fight of the Faith",
+   "range": "1 Timothy 1–6",
+   "blurb": "Paul, an apostle, unto Timothy, my true child in faith; tarry at Ephesus and charge certain men not to teach a different doctrine; the law is not made for a righteous man; I was before a blasphemer, and a persecutor, howbeit I obtained mercy; Christ Jesus came into the world to save sinners, of whom I am chief; war the good warfare; supplications for kings; one God, one mediator, himself man, Christ Jesus; lifting up holy hands; the bishop and the deacons; the pillar and ground of the truth; the mystery of godliness; let no man despise thy youth; honor widows that are widows indeed; the laborer is worthy of his hire; use a little wine; godliness with contentment is great gain; the love of money is a root of all kinds of evil; fight the good fight of the faith; the blessed and only Potentate, dwelling in light unapproachable; guard that which is committed unto thee.",
+   "prefixes": [
+    "Main.dc.html",
+    "1TI-C01-"
+   ]
+  }
+ ]
+}
