@@ -33,7 +33,12 @@ Restraint (CLAUDE.md; every call made in this volume):
 - Violence, death and judgment in words over landscapes, sky, sea, fire, smoke and empty places (each panel's choice is
   in its chapter's docstring).
 
-Plan (12,155 words, six chapters)."""
+Plan (12,155 words, six chapters, 105 pages with the cover): 1 I Am the Alpha and the Omega (1–3) · 2 Worthy Is the Lamb (4–7) ·
+3 Silence in Heaven (8–11) · 4 A Great Sign in Heaven (12–14) · 5 Fallen Is Babylon the Great (15–18) · 6 Behold, I Make All
+Things New (19–22). The last page is the last of the Bible: END OF REVELATION · THE END, with 完.
+
+Text note: the eBible USFM of Revelation had three local file paths pasted into 1:2 (one in the verse text, two in Strong's
+attributes); they were removed from ref/eng-asv/96-REVeng-asv.usfm so that 1:2 reads as the ASV does."""
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from asv import Book
@@ -54,5 +59,7 @@ META = {
      "blurb": "A woman arrayed with the sun, the moon under her feet and a crown of twelve stars; another sign, a great red dragon; her child caught up unto God and unto his throne, and her flight into the wilderness; war in heaven, Michael and his angels, and the old serpent cast down; a beast coming up out of the sea, with ten horns and seven heads, and another out of the earth with two horns like a lamb; the mark, and the number of the beast; the Lamb standing on the mount Zion with the hundred and forty and four thousand; three angels flying in mid heaven — fallen, fallen is Babylon the great; one like unto a son of man on a white cloud, the harvest and the vintage of the earth."},
     {"module": "ch05", "dir": "chapter-05", "num": "5", "name": "Fallen Is Babylon the Great", "range": "Revelation 15–18", "bible_chapters": [15, 16, 17, 18],
      "blurb": "Seven angels having the seven last plagues, and a sea of glass mingled with fire — the song of Moses and the song of the Lamb; the seven golden bowls poured out upon the earth, the sea, the rivers, the sun, the throne of the beast and the great river Euphrates; behold, I come as a thief; Har-Magedon; it is done; the great harlot that sitteth upon many waters, the scarlet-coloured beast, the seven mountains and the ten kings — and the Lamb shall overcome them; then fallen, fallen is Babylon the great: come forth, my people; the kings, the merchants and the shipmasters standing afar off; a great millstone cast into the sea."},
+    {"module": "ch06", "dir": "chapter-06", "num": "6", "name": "Behold, I Make All Things New", "range": "Revelation 19–22", "bible_chapters": [19, 20, 21, 22],
+     "blurb": "Hallelujah — the marriage of the Lamb is come; heaven opened, and a white horse, and he that sat thereon called Faithful and True, the Word of God; an angel standing in the sun; the abyss shut and sealed for a thousand years, thrones, and the first resurrection; Gog and Magog and the beloved city; a great white throne and the books opened; a new heaven and a new earth, and the holy city, new Jerusalem, coming down out of heaven as a bride adorned — behold, I make all things new; twelve gates of pearl, twelve foundations of precious stones, the street of pure gold; the river of water of life and the tree of life; I am the root and the offspring of David, the bright, the morning star; the Spirit and the bride say, Come; Amen: come, Lord Jesus."},
   ],
 }

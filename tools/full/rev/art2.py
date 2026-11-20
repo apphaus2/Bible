@@ -295,7 +295,7 @@ def throne_plan(w, h):
         x = cx - R * 0.32 + i * R * 0.64 / 6
         o.append(f'<circle cx="{f(x)}" cy="{f(cy + R * 0.32)}" r="3.2" fill="#FF8A2E" stroke="#FFD23F" stroke-width="1"></circle>')
     o.append(f'<ellipse cx="{f(cx)}" cy="{f(cy + R * 0.76)}" rx="{f(R * 0.36)}" ry="{f(R * 0.12)}" fill="#8FD0E2" opacity="0.55" stroke="#C8ECF8" stroke-width="1.6"></ellipse>')
-    tx = w * 0.78
+    tx = w * 0.64
     o.append(tag(cx + 10, cy - 8, "THE THRONE · ONE SITTING", tx, h * 0.16))
     o.append(tag(cx + R * 0.42, cy - R * 0.1, "A RAINBOW LIKE AN EMERALD", tx, h * 0.27))
     o.append(tag(cx + R * 0.6, cy, "FOUR LIVING CREATURES", tx, h * 0.38))

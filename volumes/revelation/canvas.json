@@ -583,6 +583,167 @@
    "w": 760,
    "h": 1080,
    "title": "76 · Fallen, Fallen Is Babylon the Great"
+  },
+  "REV-C06-00-Title.dc.html": {
+   "x": 0,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 6 · Behold, I Make All Things New"
+  },
+  "REV-C06-D-P01-Hallelujah.dc.html": {
+   "x": 840,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "77 · Hallelujah"
+  },
+  "REV-C06-D-P02-Hallelujah.dc.html": {
+   "x": 1680,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "78 · Hallelujah"
+  },
+  "REV-C06-D-P03-TheMarriageOfTheLa.dc.html": {
+   "x": 2520,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "79 · The Marriage of the Lamb"
+  },
+  "REV-C06-D-P04-TheMarriageOfTheLa.dc.html": {
+   "x": 3360,
+   "y": 27300,
+   "w": 760,
+   "h": 1080,
+   "title": "80 · The Marriage of the Lamb"
+  },
+  "REV-C06-D-P05-FaithfulAndTrue.dc.html": {
+   "x": 0,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "81 · Faithful and True"
+  },
+  "REV-C06-D-P06-FaithfulAndTrue.dc.html": {
+   "x": 840,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "82 · Faithful and True"
+  },
+  "REV-C06-D-P07-AThousandYears.dc.html": {
+   "x": 1680,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "83 · A Thousand Years"
+  },
+  "REV-C06-D-P08-AThousandYears.dc.html": {
+   "x": 2520,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "84 · A Thousand Years"
+  },
+  "REV-C06-D-P09-AGreatWhiteThrone.dc.html": {
+   "x": 3360,
+   "y": 28500,
+   "w": 760,
+   "h": 1080,
+   "title": "85 · A Great White Throne"
+  },
+  "REV-C06-D-P10-ANewHeavenAndANewE.dc.html": {
+   "x": 0,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "86 · A New Heaven and a New Earth"
+  },
+  "REV-C06-D-P11-ANewHeavenAndANewE.dc.html": {
+   "x": 840,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "87 · A New Heaven and a New Earth"
+  },
+  "REV-C06-D-P12-BeholdIMakeAllThin.dc.html": {
+   "x": 1680,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "88 · Behold, I Make All Things New"
+  },
+  "REV-C06-D-P13-TheHolyCityJerusal.dc.html": {
+   "x": 2520,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "89 · The Holy City Jerusalem"
+  },
+  "REV-C06-D-P14-TheHolyCityJerusal.dc.html": {
+   "x": 3360,
+   "y": 29700,
+   "w": 760,
+   "h": 1080,
+   "title": "90 · The Holy City Jerusalem"
+  },
+  "REV-C06-D-P15-TheHolyCityJerusal.dc.html": {
+   "x": 0,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "91 · The Holy City Jerusalem"
+  },
+  "REV-C06-D-P16-TheHolyCityJerusal.dc.html": {
+   "x": 840,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "92 · The Holy City Jerusalem"
+  },
+  "REV-C06-D-P17-TheRiverOfWaterOfL.dc.html": {
+   "x": 1680,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "93 · The River of Water of Life"
+  },
+  "REV-C06-D-P18-TheRiverOfWaterOfL.dc.html": {
+   "x": 2520,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "94 · The River of Water of Life"
+  },
+  "REV-C06-D-P19-TheRiverOfWaterOfL.dc.html": {
+   "x": 3360,
+   "y": 30900,
+   "w": 760,
+   "h": 1080,
+   "title": "95 · The River of Water of Life"
+  },
+  "REV-C06-D-P20-IComeQuickly.dc.html": {
+   "x": 0,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "96 · I Come Quickly"
+  },
+  "REV-C06-D-P21-IComeQuickly.dc.html": {
+   "x": 840,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "97 · I Come Quickly"
+  },
+  "REV-C06-D-P22-IComeQuickly.dc.html": {
+   "x": 1680,
+   "y": 32100,
+   "w": 760,
+   "h": 1080,
+   "title": "98 · I Come Quickly"
   }
  },
  "order": [
@@ -667,7 +828,30 @@
   "REV-C05-D-P15-FallenFallenIsBaby.dc.html",
   "REV-C05-D-P16-FallenFallenIsBaby.dc.html",
   "REV-C05-D-P17-FallenFallenIsBaby.dc.html",
-  "REV-C05-D-P18-FallenFallenIsBaby.dc.html"
+  "REV-C05-D-P18-FallenFallenIsBaby.dc.html",
+  "REV-C06-00-Title.dc.html",
+  "REV-C06-D-P01-Hallelujah.dc.html",
+  "REV-C06-D-P02-Hallelujah.dc.html",
+  "REV-C06-D-P03-TheMarriageOfTheLa.dc.html",
+  "REV-C06-D-P04-TheMarriageOfTheLa.dc.html",
+  "REV-C06-D-P05-FaithfulAndTrue.dc.html",
+  "REV-C06-D-P06-FaithfulAndTrue.dc.html",
+  "REV-C06-D-P07-AThousandYears.dc.html",
+  "REV-C06-D-P08-AThousandYears.dc.html",
+  "REV-C06-D-P09-AGreatWhiteThrone.dc.html",
+  "REV-C06-D-P10-ANewHeavenAndANewE.dc.html",
+  "REV-C06-D-P11-ANewHeavenAndANewE.dc.html",
+  "REV-C06-D-P12-BeholdIMakeAllThin.dc.html",
+  "REV-C06-D-P13-TheHolyCityJerusal.dc.html",
+  "REV-C06-D-P14-TheHolyCityJerusal.dc.html",
+  "REV-C06-D-P15-TheHolyCityJerusal.dc.html",
+  "REV-C06-D-P16-TheHolyCityJerusal.dc.html",
+  "REV-C06-D-P17-TheRiverOfWaterOfL.dc.html",
+  "REV-C06-D-P18-TheRiverOfWaterOfL.dc.html",
+  "REV-C06-D-P19-TheRiverOfWaterOfL.dc.html",
+  "REV-C06-D-P20-IComeQuickly.dc.html",
+  "REV-C06-D-P21-IComeQuickly.dc.html",
+  "REV-C06-D-P22-IComeQuickly.dc.html"
  ],
  "notes": {
   "Main": {
@@ -711,6 +895,13 @@
    "text": "Chapter 5 · Fallen Is Babylon the Great (Revelation 15–18)",
    "x": 0,
    "y": 21700
+  },
+  "chapter06": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 6 · Behold, I Make All Things New (Revelation 19–22)",
+   "x": 0,
+   "y": 27000
   }
  },
  "designSystems": [],

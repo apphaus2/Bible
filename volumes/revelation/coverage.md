@@ -2,7 +2,7 @@
 
 Every verse of the chapters built so far, checked against `ref/eng-asv`. **full** = every word on the page; **partial** = abridged (cuts marked with …); **omitted** = not on any page.
 
-**So far:** 320 verses — 320 full, 0 partial, 0 omitted.
+**So far:** 404 verses — 404 full, 0 partial, 0 omitted.
 
 ## Chapter 1 · I Am the Alpha and the Omega (Revelation 1–3)
 
@@ -31,5 +31,11 @@ Every verse is on the page in full.
 ## Chapter 5 · Fallen Is Babylon the Great (Revelation 15–18)
 
 71 verses: 71 full, 0 partial, 0 omitted.
+
+Every verse is on the page in full.
+
+## Chapter 6 · Behold, I Make All Things New (Revelation 19–22)
+
+84 verses: 84 full, 0 partial, 0 omitted.
 
 Every verse is on the page in full.
