@@ -1,0 +1,154 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:04:44Z"
+ },
+ "title": "Hebrews — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "HEB-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · Better than the Angels"
+  },
+  "HEB-C01-D-P01-GodHathSpoken.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · God Hath Spoken"
+  },
+  "HEB-C01-D-P02-BetterThanTheAngel.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Better than the Angels"
+  },
+  "HEB-C01-D-P03-BetterThanTheAngel.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · Better than the Angels"
+  },
+  "HEB-C01-D-P04-BetterThanTheAngel.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · Better than the Angels"
+  },
+  "HEB-C01-D-P05-SoGreatASalvation.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · So Great a Salvation"
+  },
+  "HEB-C01-D-P06-CrownedWithGloryAn.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · Crowned with Glory and Honor"
+  },
+  "HEB-C01-D-P07-CrownedWithGloryAn.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · Crowned with Glory and Honor"
+  },
+  "HEB-C01-D-P08-MosesInAllHisHouse.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Moses in All His House"
+  },
+  "HEB-C01-D-P09-ToDayIfYeShallHear.dc.html": {
+   "x": 3360,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · To-day If Ye Shall Hear His Voice"
+  },
+  "HEB-C01-D-P10-ToDayIfYeShallHear.dc.html": {
+   "x": 0,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · To-day If Ye Shall Hear His Voice"
+  },
+  "HEB-C01-D-P11-APromiseOfEntering.dc.html": {
+   "x": 840,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · A Promise of Entering into His Rest"
+  },
+  "HEB-C01-D-P12-APromiseOfEntering.dc.html": {
+   "x": 1680,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · A Promise of Entering into His Rest"
+  },
+  "HEB-C01-D-P13-TheThroneOfGrace.dc.html": {
+   "x": 2520,
+   "y": 4400,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · The Throne of Grace"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "HEB-C01-00-Title.dc.html",
+  "HEB-C01-D-P01-GodHathSpoken.dc.html",
+  "HEB-C01-D-P02-BetterThanTheAngel.dc.html",
+  "HEB-C01-D-P03-BetterThanTheAngel.dc.html",
+  "HEB-C01-D-P04-BetterThanTheAngel.dc.html",
+  "HEB-C01-D-P05-SoGreatASalvation.dc.html",
+  "HEB-C01-D-P06-CrownedWithGloryAn.dc.html",
+  "HEB-C01-D-P07-CrownedWithGloryAn.dc.html",
+  "HEB-C01-D-P08-MosesInAllHisHouse.dc.html",
+  "HEB-C01-D-P09-ToDayIfYeShallHear.dc.html",
+  "HEB-C01-D-P10-ToDayIfYeShallHear.dc.html",
+  "HEB-C01-D-P11-APromiseOfEntering.dc.html",
+  "HEB-C01-D-P12-APromiseOfEntering.dc.html",
+  "HEB-C01-D-P13-TheThroneOfGrace.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Hebrews Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · Better than the Angels (Hebrews 1–4)",
+   "x": 0,
+   "y": 1700
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

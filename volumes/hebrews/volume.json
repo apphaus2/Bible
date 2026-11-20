@@ -1,0 +1,21 @@
+{
+ "id": "hebrews",
+ "order": 58,
+ "name": "Hebrews",
+ "kanji": "ヘブル人への手紙",
+ "thumb": "vol-hebrews-",
+ "lede": "The fifty-eighth book of the Bible, in full: the letter to the Hebrews — God, who spake of old time unto the fathers in the prophets, hath spoken unto us in his Son, better than the angels; to-day if ye shall hear his voice; the word of God sharper than any two-edged sword; a great high priest, a priest for ever after the order of Melchizedek; the true tabernacle and the new covenant; the way into the holy place through the veil; faith, the assurance of things hoped for, and so great a cloud of witnesses; let us run with patience the race, looking unto Jesus; mount Zion and the heavenly Jerusalem; and the great shepherd of the sheep, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Better than the Angels",
+   "range": "Hebrews 1–4",
+   "blurb": "God, having of old time spoken unto the fathers in the prophets, hath at the end of these days spoken unto us in his Son, the effulgence of his glory; better than the angels — Thou art my Son, let all the angels of God worship him, sit thou on my right hand; so great a salvation; Jesus crowned with glory and honor; Moses faithful in all his house; to-day if ye shall hear his voice, harden not your hearts; a sabbath rest for the people of God; the word of God sharper than any two-edged sword; the throne of grace.",
+   "prefixes": [
+    "Main.dc.html",
+    "HEB-C01-"
+   ]
+  }
+ ]
+}
