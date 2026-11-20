@@ -1,0 +1,21 @@
+{
+ "id": "1peter",
+ "order": 60,
+ "name": "1 Peter",
+ "kanji": "ペテロの第一の手紙",
+ "thumb": "vol-1peter-",
+ "lede": "The sixtieth book of the Bible, in full: Peter's first letter, to the elect sojourners of the Dispersion in Pontus, Galatia, Cappadocia, Asia and Bithynia — a living hope, faith more precious than gold proved by fire, ye shall be holy, the precious blood as of a lamb without blemish, all flesh is as grass, living stones and the chief corner stone, a royal priesthood, sojourners and pilgrims, honor the king, who his own self bare our sins upon the tree, the Shepherd and Bishop of your souls, eight souls saved through water, the fiery trial, tend the flock of God, your adversary as a roaring lion, by Silvanus from Babylon with Mark my son, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Living Stones",
+   "range": "1 Peter 1–5",
+   "blurb": "Peter, an apostle of Jesus Christ, to the elect sojourners of the Dispersion: begotten again unto a living hope; the proof of your faith more precious than gold proved by fire; the prophets searched, and angels desire to look into it; ye shall be holy, for I am holy; redeemed with precious blood, as of a lamb without blemish; all flesh is as grass, but the word of the Lord abideth; living stones, the chief corner stone; a royal priesthood, out of darkness into his marvellous light; honor the king; Christ bare our sins upon the tree, the Shepherd and Bishop of your souls; wives and husbands; eight souls saved through water; the fiery trial; tend the flock of God, the crown of glory; casting all your anxiety upon him; by Silvanus, from Babylon, and Mark my son.",
+   "prefixes": [
+    "Main.dc.html",
+    "1PE-C01-"
+   ]
+  }
+ ]
+}
