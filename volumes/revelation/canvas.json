@@ -359,6 +359,97 @@
    "w": 760,
    "h": 1080,
    "title": "46 · The Kingdom of the World"
+  },
+  "REV-C04-00-Title.dc.html": {
+   "x": 0,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 4 · A Great Sign in Heaven"
+  },
+  "REV-C04-D-P01-AGreatSignInHeaven.dc.html": {
+   "x": 840,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "47 · A Great Sign in Heaven"
+  },
+  "REV-C04-D-P02-WarInHeaven.dc.html": {
+   "x": 1680,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "48 · War in Heaven"
+  },
+  "REV-C04-D-P03-WarInHeaven.dc.html": {
+   "x": 2520,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "49 · War in Heaven"
+  },
+  "REV-C04-D-P04-WarInHeaven.dc.html": {
+   "x": 3360,
+   "y": 17900,
+   "w": 760,
+   "h": 1080,
+   "title": "50 · War in Heaven"
+  },
+  "REV-C04-D-P05-ABeastOutOfTheSea.dc.html": {
+   "x": 0,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "51 · A Beast out of the Sea"
+  },
+  "REV-C04-D-P06-ABeastOutOfTheSea.dc.html": {
+   "x": 840,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "52 · A Beast out of the Sea"
+  },
+  "REV-C04-D-P07-AnotherBeastOutOfT.dc.html": {
+   "x": 1680,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "53 · Another Beast out of the Earth"
+  },
+  "REV-C04-D-P08-TheLambOnMountZion.dc.html": {
+   "x": 2520,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "54 · The Lamb on Mount Zion"
+  },
+  "REV-C04-D-P09-ThreeAngels.dc.html": {
+   "x": 3360,
+   "y": 19100,
+   "w": 760,
+   "h": 1080,
+   "title": "55 · Three Angels"
+  },
+  "REV-C04-D-P10-ThreeAngels.dc.html": {
+   "x": 0,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "56 · Three Angels"
+  },
+  "REV-C04-D-P11-TheHarvestOfTheEar.dc.html": {
+   "x": 840,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "57 · The Harvest of the Earth"
+  },
+  "REV-C04-D-P12-TheHarvestOfTheEar.dc.html": {
+   "x": 1680,
+   "y": 20300,
+   "w": 760,
+   "h": 1080,
+   "title": "58 · The Harvest of the Earth"
   }
  },
  "order": [
@@ -411,7 +502,20 @@
   "REV-C03-D-P12-TheTwoWitnesses.dc.html",
   "REV-C03-D-P13-TheTwoWitnesses.dc.html",
   "REV-C03-D-P14-TheKingdomOfTheWor.dc.html",
-  "REV-C03-D-P15-TheKingdomOfTheWor.dc.html"
+  "REV-C03-D-P15-TheKingdomOfTheWor.dc.html",
+  "REV-C04-00-Title.dc.html",
+  "REV-C04-D-P01-AGreatSignInHeaven.dc.html",
+  "REV-C04-D-P02-WarInHeaven.dc.html",
+  "REV-C04-D-P03-WarInHeaven.dc.html",
+  "REV-C04-D-P04-WarInHeaven.dc.html",
+  "REV-C04-D-P05-ABeastOutOfTheSea.dc.html",
+  "REV-C04-D-P06-ABeastOutOfTheSea.dc.html",
+  "REV-C04-D-P07-AnotherBeastOutOfT.dc.html",
+  "REV-C04-D-P08-TheLambOnMountZion.dc.html",
+  "REV-C04-D-P09-ThreeAngels.dc.html",
+  "REV-C04-D-P10-ThreeAngels.dc.html",
+  "REV-C04-D-P11-TheHarvestOfTheEar.dc.html",
+  "REV-C04-D-P12-TheHarvestOfTheEar.dc.html"
  ],
  "notes": {
   "Main": {
@@ -441,6 +545,13 @@
    "text": "Chapter 3 · Silence in Heaven (Revelation 8–11)",
    "x": 0,
    "y": 12300
+  },
+  "chapter04": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 4 · A Great Sign in Heaven (Revelation 12–14)",
+   "x": 0,
+   "y": 17600
   }
  },
  "designSystems": [],

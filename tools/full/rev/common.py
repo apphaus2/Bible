@@ -52,8 +52,11 @@ SPK = {
 class RevKit(EpistleKit):
     """EpistleKit with a speaker's tag on a panel: D(..., who=) at the top left over the drawing, F(..., who=) on the
     face's side above the verse label (the face sides are settled before packing, as EpistleKit.pack settles them)."""
+    art_k = 1.0                      # every drawing's art_h scaled by this (a chapter may set K.art_k to give its pictures more room)
+
     def D(self, lines, fn, bg, who=None, **kw):
         if who: kw["extra"] = kw.get("extra", "") + _tag(*SPK[who], "left: 12px; top: 8px")
+        if "art_h" in kw: kw["art_h"] = int(kw["art_h"] * self.art_k)
         return super().D(lines, fn, bg, **kw)
 
     def F(self, lines, tok, bg=GOLD_BG, who=None, **k):

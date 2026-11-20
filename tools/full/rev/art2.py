@@ -65,26 +65,26 @@ def elder_throne(x, b, s, color="#E8D8A0"):
     return (f'<rect x="{f(x - 30 * s)}" y="{f(t - 80 * s)}" width="{f(60 * s)}" height="{f(80 * s + 4 * s)}" rx="{f(6 * s)}" fill="{color}" stroke="#8A7A4A" stroke-width="{f(max(1, 2 * s))}"></rect>'
             f'<rect x="{f(x - 34 * s)}" y="{f(t)}" width="{f(68 * s)}" height="{f(50 * s)}" fill="{color}" stroke="#8A7A4A" stroke-width="{f(max(1, 2 * s))}"></rect>')
 
-def elder_bow(x, b, s, flip=False, crown_cast=True):
+def elder_bow(x, b, s, flip=False, crown_cast=True, robe="#FAF8F0", legs="#F0EDE2", hair="#EEECE6", skin="#C98E66"):
     """An elder fallen down before the throne: kneeling low, bowed to the floor, white robe, white hair; his crown of gold
     cast before him (4:10)."""
     sx = -s if flip else s
     L = "#3A3A4A"
     o = (f'<g transform="translate({f(x)} {f(b)}) scale({f(sx)} {f(s)})">'
          # the legs folded under him: the shin flat on the floor, the thigh rising to the hips resting on the heels
-         f'<path d="M48 0 L -6 0 C -14 0 -16 -10 -10 -16 L 18 -46 C 30 -56 50 -50 54 -36 C 56 -24 54 -10 48 0 Z" fill="#F0EDE2" stroke="{L}" stroke-width="2.6" stroke-linejoin="round"></path>'
+         f'<path d="M48 0 L -6 0 C -14 0 -16 -10 -10 -16 L 18 -46 C 30 -56 50 -50 54 -36 C 56 -24 54 -10 48 0 Z" fill="{legs}" stroke="{L}" stroke-width="2.6" stroke-linejoin="round"></path>'
          f'<path d="M-6 -12 C 10 -20 26 -24 46 -22" fill="none" stroke="{L}" stroke-width="1.3" opacity="0.6"></path>'
-         f'<path d="M50 -4 C 56 -4 60 -2 60 0 L 46 0 Z" fill="#C98E66" stroke="{L}" stroke-width="1.2"></path>'
+         f'<path d="M50 -4 C 56 -4 60 -2 60 0 L 46 0 Z" fill="{skin}" stroke="{L}" stroke-width="1.2"></path>'
          # the back bowed forward from the hips to the shoulders, the head down near the floor
-         f'<path d="M48 -38 C 46 -60 24 -74 -2 -72 C -24 -70 -40 -58 -46 -44 L -38 -30 C -26 -38 -6 -44 18 -42 Z" fill="#FAF8F0" stroke="{L}" stroke-width="2.6" stroke-linejoin="round"></path>'
+         f'<path d="M48 -38 C 46 -60 24 -74 -2 -72 C -24 -70 -40 -58 -46 -44 L -38 -30 C -26 -38 -6 -44 18 -42 Z" fill="{robe}" stroke="{L}" stroke-width="2.6" stroke-linejoin="round"></path>'
          f'<path d="M30 -60 C 14 -64 -6 -62 -22 -54" fill="none" stroke="{L}" stroke-width="1.2" opacity="0.5"></path>'
-         f'<circle cx="-54" cy="-30" r="12" fill="#C98E66" stroke="{L}" stroke-width="2"></circle>'
-         f'<path d="M-44 -38 C -48 -46 -62 -46 -66 -36 C -67 -30 -64 -24 -60 -22 L -48 -26 Z" fill="#EEECE6" stroke="{L}" stroke-width="1.4"></path>'
-         f'<path d="M-64 -24 C -70 -16 -70 -8 -66 -4 L -56 -18 Z" fill="#EEECE6" stroke="{L}" stroke-width="1.2"></path>'
+         f'<circle cx="-54" cy="-30" r="12" fill="{skin}" stroke="{L}" stroke-width="2"></circle>'
+         f'<path d="M-44 -38 C -48 -46 -62 -46 -66 -36 C -67 -30 -64 -24 -60 -22 L -48 -26 Z" fill="{hair}" stroke="{L}" stroke-width="1.4"></path>'
+         f'<path d="M-64 -24 C -70 -16 -70 -8 -66 -4 L -56 -18 Z" fill="{hair}" stroke="{L}" stroke-width="1.2"></path>'
          # the arm stretched to the floor in its white sleeve, the hand flat before him
          f'<path d="M-30 -52 C -46 -40 -60 -20 -72 -6" fill="none" stroke="{L}" stroke-width="13" stroke-linecap="round"></path>'
-         f'<path d="M-30 -52 C -46 -40 -60 -20 -72 -6" fill="none" stroke="#FAF8F0" stroke-width="10" stroke-linecap="round"></path>'
-         f'<ellipse cx="-80" cy="-3" rx="8" ry="3.6" fill="#C98E66" stroke="{L}" stroke-width="1.2"></ellipse>')
+         f'<path d="M-30 -52 C -46 -40 -60 -20 -72 -6" fill="none" stroke="{robe}" stroke-width="10" stroke-linecap="round"></path>'
+         f'<ellipse cx="-80" cy="-3" rx="8" ry="3.6" fill="{skin}" stroke="{L}" stroke-width="1.2"></ellipse>')
     if crown_cast: o += '<path d="M-112 0 L -113 -13 L -106 -7 L -99 -17 L -92 -7 L -85 -13 L -86 0 Z" fill="#E8B830" stroke="#0D0D0F" stroke-width="1.4"></path>'
     return o + '</g>'
 
