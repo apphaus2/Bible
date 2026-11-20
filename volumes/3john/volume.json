@@ -1,0 +1,21 @@
+{
+ "id": "3john",
+ "order": 64,
+ "name": "3 John",
+ "kanji": "ヨハネの第三の手紙",
+ "thumb": "vol-3john-",
+ "lede": "The sixty-fourth book of the Bible, in full: the elder's letter unto Gaius the beloved — I pray that in all things thou mayest prosper; greater joy have I none than this, to hear of my children walking in the truth; a faithful work toward the brethren and strangers; fellow-workers for the truth; Diotrephes, who loveth to have the preeminence; imitate not that which is evil, but that which is good; Demetrius hath the witness of all men; not with ink and pen, but face to face; the friends salute thee, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "Gaius the Beloved",
+   "range": "3 John 1",
+   "blurb": "The elder unto Gaius the beloved, whom I love in truth; I pray that thou mayest prosper and be in health, even as thy soul prospereth; greater joy have I none than this, to hear of my children walking in the truth; thou doest a faithful work toward them that are brethren and strangers withal; we ought to welcome such, that we may be fellow-workers for the truth; Diotrephes, who loveth to have the preeminence among them, receiveth us not; imitate not that which is evil, but that which is good; Demetrius hath the witness of all men; I am unwilling to write with ink and pen, but we shall speak face to face; peace be unto thee; the friends salute thee.",
+   "prefixes": [
+    "Main.dc.html",
+    "3JN-C01-"
+   ]
+  }
+ ]
+}

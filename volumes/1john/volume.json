@@ -1,0 +1,31 @@
+{
+ "id": "1john",
+ "order": 62,
+ "name": "1 John",
+ "kanji": "ヨハネの第一の手紙",
+ "thumb": "vol-1john-",
+ "lede": "The sixty-second book of the Bible, in full: the first letter of John — that which was from the beginning, which we have heard, which we have seen with our eyes, and our hands handled; God is light, and in him is no darkness at all; an Advocate with the Father; the darkness is passing away, and the true light already shineth; little children, fathers, young men; love not the world; it is the last hour; behold what manner of love the Father hath bestowed upon us; we shall be like him; not as Cain; prove the spirits; God is love; perfect love casteth out fear; the water and the blood; little children, guard yourselves from idols, every word in the words of the ASV.",
+ "books": [
+  {
+   "dir": "chapter-01",
+   "num": "1",
+   "name": "God Is Light",
+   "range": "1 John 1–2",
+   "blurb": "That which was from the beginning, that which we have heard, that which we have seen with our eyes, and our hands handled, concerning the Word of life; that our joy may be made full; God is light, and in him is no darkness at all; if we walk in the light, we have fellowship one with another; if we confess our sins, he is faithful and righteous to forgive us; we have an Advocate with the Father, Jesus Christ the righteous; the darkness is passing away, and the true light already shineth; he that hateth his brother walketh in the darkness; I write unto you, little children, fathers, young men; love not the world, for the world passeth away; it is the last hour, and many antichrists have arisen; ye have an anointing from the Holy One; abide in him.",
+   "prefixes": [
+    "Main.dc.html",
+    "1JN-C01-"
+   ]
+  },
+  {
+   "dir": "chapter-02",
+   "num": "2",
+   "name": "God Is Love",
+   "range": "1 John 3–5",
+   "blurb": "Behold what manner of love the Father hath bestowed upon us, that we should be called children of God; we shall be like him, for we shall see him even as he is; not as Cain, who slew his brother; hereby know we love, because he laid down his life for us; let us not love in word, but in deed and truth; prove the spirits, whether they are of God; beloved, let us love one another, for God is love; God sent his only begotten Son into the world; there is no fear in love: perfect love casteth out fear; we love, because he first loved us; this is the victory that hath overcome the world, even our faith; the Spirit, and the water, and the blood; that ye may know that ye have eternal life; little children, guard yourselves from idols.",
+   "prefixes": [
+    "1JN-C02-"
+   ]
+  }
+ ]
+}
