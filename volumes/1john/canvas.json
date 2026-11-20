@@ -1,0 +1,225 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-20T14:12:56Z"
+ },
+ "title": "1 John — Full Edition",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 300,
+   "w": 760,
+   "h": 1080,
+   "title": "Cover"
+  },
+  "1JN-C01-00-Title.dc.html": {
+   "x": 0,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 1 · God Is Light"
+  },
+  "1JN-C01-D-P01-ThatWhichWasFromTh.dc.html": {
+   "x": 840,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "1 · That Which Was from the Beginning"
+  },
+  "1JN-C01-D-P02-WalkInTheLight.dc.html": {
+   "x": 1680,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "2 · Walk in the Light"
+  },
+  "1JN-C01-D-P03-AnAdvocateWithTheF.dc.html": {
+   "x": 2520,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "3 · An Advocate with the Father"
+  },
+  "1JN-C01-D-P04-TheTrueLightAlread.dc.html": {
+   "x": 3360,
+   "y": 2000,
+   "w": 760,
+   "h": 1080,
+   "title": "4 · The True Light Already Shineth"
+  },
+  "1JN-C01-D-P05-IWriteUntoYou.dc.html": {
+   "x": 0,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "5 · I Write unto You"
+  },
+  "1JN-C01-D-P06-ItIsTheLastHour.dc.html": {
+   "x": 840,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "6 · It Is the Last Hour"
+  },
+  "1JN-C01-D-P07-AnAnointingFromThe.dc.html": {
+   "x": 1680,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "7 · An Anointing from the Holy One"
+  },
+  "1JN-C01-D-P08-AbideInHim.dc.html": {
+   "x": 2520,
+   "y": 3200,
+   "w": 760,
+   "h": 1080,
+   "title": "8 · Abide in Him"
+  },
+  "1JN-C02-00-Title.dc.html": {
+   "x": 0,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 2 · God Is Love"
+  },
+  "1JN-C02-D-P01-WeShallBeLikeHim.dc.html": {
+   "x": 840,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "9 · We Shall Be Like Him"
+  },
+  "1JN-C02-D-P02-LetNoManLeadYouAst.dc.html": {
+   "x": 1680,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "10 · Let No Man Lead You Astray"
+  },
+  "1JN-C02-D-P03-NotAsCain.dc.html": {
+   "x": 2520,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "11 · Not as Cain"
+  },
+  "1JN-C02-D-P04-InDeedAndTruth.dc.html": {
+   "x": 3360,
+   "y": 4900,
+   "w": 760,
+   "h": 1080,
+   "title": "12 · In Deed and Truth"
+  },
+  "1JN-C02-D-P05-ProveTheSpirits.dc.html": {
+   "x": 0,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "13 · Prove the Spirits"
+  },
+  "1JN-C02-D-P06-GodIsLove.dc.html": {
+   "x": 840,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "14 · God Is Love"
+  },
+  "1JN-C02-D-P07-HeSentHisSon.dc.html": {
+   "x": 1680,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "15 · He Sent His Son"
+  },
+  "1JN-C02-D-P08-PerfectLoveCasteth.dc.html": {
+   "x": 2520,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "16 · Perfect Love Casteth Out Fear"
+  },
+  "1JN-C02-D-P09-TheVictoryThatOver.dc.html": {
+   "x": 3360,
+   "y": 6100,
+   "w": 760,
+   "h": 1080,
+   "title": "17 · The Victory That Overcometh"
+  },
+  "1JN-C02-D-P10-ThreeWhoBearWitnes.dc.html": {
+   "x": 0,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "18 · Three Who Bear Witness"
+  },
+  "1JN-C02-D-P11-ThatYeMayKnow.dc.html": {
+   "x": 840,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "19 · That Ye May Know"
+  },
+  "1JN-C02-D-P12-GuardYourselvesFro.dc.html": {
+   "x": 1680,
+   "y": 7300,
+   "w": 760,
+   "h": 1080,
+   "title": "20 · Guard Yourselves from Idols"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "1JN-C01-00-Title.dc.html",
+  "1JN-C01-D-P01-ThatWhichWasFromTh.dc.html",
+  "1JN-C01-D-P02-WalkInTheLight.dc.html",
+  "1JN-C01-D-P03-AnAdvocateWithTheF.dc.html",
+  "1JN-C01-D-P04-TheTrueLightAlread.dc.html",
+  "1JN-C01-D-P05-IWriteUntoYou.dc.html",
+  "1JN-C01-D-P06-ItIsTheLastHour.dc.html",
+  "1JN-C01-D-P07-AnAnointingFromThe.dc.html",
+  "1JN-C01-D-P08-AbideInHim.dc.html",
+  "1JN-C02-00-Title.dc.html",
+  "1JN-C02-D-P01-WeShallBeLikeHim.dc.html",
+  "1JN-C02-D-P02-LetNoManLeadYouAst.dc.html",
+  "1JN-C02-D-P03-NotAsCain.dc.html",
+  "1JN-C02-D-P04-InDeedAndTruth.dc.html",
+  "1JN-C02-D-P05-ProveTheSpirits.dc.html",
+  "1JN-C02-D-P06-GodIsLove.dc.html",
+  "1JN-C02-D-P07-HeSentHisSon.dc.html",
+  "1JN-C02-D-P08-PerfectLoveCasteth.dc.html",
+  "1JN-C02-D-P09-TheVictoryThatOver.dc.html",
+  "1JN-C02-D-P10-ThreeWhoBearWitnes.dc.html",
+  "1JN-C02-D-P11-ThatYeMayKnow.dc.html",
+  "1JN-C02-D-P12-GuardYourselvesFro.dc.html"
+ ],
+ "notes": {
+  "Main": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "1 John Volume",
+   "x": 0,
+   "y": 0
+  },
+  "chapter01": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 1 · God Is Light (1 John 1–2)",
+   "x": 0,
+   "y": 1700
+  },
+  "chapter02": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 2 · God Is Love (1 John 3–5)",
+   "x": 0,
+   "y": 4600
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}
