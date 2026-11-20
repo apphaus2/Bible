@@ -12,13 +12,15 @@ every page (nothing is drawn by hand); the repo is the only source of truth. Ser
 
 ## Status
 
-**Complete: the whole Old Testament, Genesis through Malachi (39 volumes, 4,478 pages, 23,145 verses).** Per-chapter detail is
-in each `volumes/<id>/volume.json` and `coverage.md`. **The New Testament has begun: the Gospels and Acts are complete** (`mat`,
-built on `oba/minor.py`'s `Kit`, the shared `ntcast.py` cast; `mrk`, `luk`, `jhn`, `act` build on Matthew's art and Mark's
-`MarkKit`, with `drawn(..., sky=)` keeping chapter stamps in clear sky). **Paul's letters have begun: Romans, 1 and 2 Corinthians,
-Galatians and Ephesians are complete**, on the shared epistle kit (`tools/full/epistle.py`). Next: Philippians, then the rest in
-order to Revelation. The minor prophets share `oba/minor.py` (`Kit`: page packing) and each
-other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
+**Complete: the whole Bible, Genesis through Revelation (66 volumes, 6,222 pages, 31,102 verses).** The Old Testament is 39
+volumes, 4,478 pages and 23,145 verses; the New Testament 27 volumes, 1,744 pages and 7,957 verses. Per-chapter detail is in
+each `volumes/<id>/volume.json` and `coverage.md`. The Gospels and Acts: `mat`, built on `oba/minor.py`'s `Kit` and the shared
+`ntcast.py` cast; `mrk`, `luk`, `jhn` and `act` build on Matthew's art and Mark's `MarkKit`, with `drawn(..., sky=)` keeping
+chapter stamps in clear sky. The letters (Romans–Jude) are built on the shared epistle kit (`tools/full/epistle.py`; see "The
+letters" below). Hebrews draws no writer. James–Jude and 1–3 John have their own writers' faces (`jas/common.py`,
+`jn1/common.py`). Revelation (`rev`, `RevKit` on the epistle kit) narrates in captions, as Daniel and Ezekiel do. Not yet done:
+the other nine languages' labels for Mark through Revelation, and the deploys. The minor prophets share `oba/minor.py`
+(`Kit`: page packing) and each other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 
 | # | Book | Package | Chapters | Pages | Verses |
 |---|---|---|---|---|---|
