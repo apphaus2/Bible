@@ -71,6 +71,8 @@ other's art; Ezekiel's temple plans are `ezk.common.paged/plate`.
 | 47 | 2 Corinthians | `co2` | 3 | 52 | 257 full |
 | 48 | Galatians | `gal` | 2 | 31 | 149 full |
 | 49 | Ephesians | `eph` | 2 | 29 | 155 full |
+| 52 | 1 Thessalonians | `th1` | 2 | 18 | 89 full |
+| 53 | 2 Thessalonians | `th2` | 1 | 11 | 47 full |
 
 Order numbers and ids for the rest: Matthew 40 "matthew", Mark 41, Luke 42, John 43, Acts 44,
 Romans 45 … Revelation 66 ("Volume Forty" … "Volume Sixty-Six"). Book codes are the USFM ones in `ref/eng-asv` file names.
