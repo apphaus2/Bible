@@ -47,6 +47,7 @@ SPK = {
     "sun": ("AN ANGEL STANDING IN THE SUN", ANGEL_C), "bowl": ("ONE OF THE SEVEN ANGELS", ANGEL_C),
     "worshippers": ("THE WHOLE EARTH", "#8A6A4A"), "throne": ("A GREAT VOICE OUT OF THE THRONE", VOICE_C),
     "bride": ("THE SPIRIT AND THE BRIDE", "#FFD23F"), "john": ("JOHN", "#B85A3A"), "voices": ("GREAT VOICES IN HEAVEN", VOICE_C),
+    "victors": ("THEY THAT CAME OFF VICTORIOUS", "#F3EFE6"), "altar2": ("THE ALTAR", GOLD),
 }
 
 class RevKit(EpistleKit):

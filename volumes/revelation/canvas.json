@@ -450,6 +450,139 @@
    "w": 760,
    "h": 1080,
    "title": "58 · The Harvest of the Earth"
+  },
+  "REV-C05-00-Title.dc.html": {
+   "x": 0,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "Chapter 5 · Fallen Is Babylon the Great"
+  },
+  "REV-C05-D-P01-SevenAngelsHavingS.dc.html": {
+   "x": 840,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "59 · Seven Angels Having Seven Plagues"
+  },
+  "REV-C05-D-P02-SevenAngelsHavingS.dc.html": {
+   "x": 1680,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "60 · Seven Angels Having Seven Plagues"
+  },
+  "REV-C05-D-P03-TheSevenBowls.dc.html": {
+   "x": 2520,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "61 · The Seven Bowls"
+  },
+  "REV-C05-D-P04-TheSevenBowls.dc.html": {
+   "x": 3360,
+   "y": 22000,
+   "w": 760,
+   "h": 1080,
+   "title": "62 · The Seven Bowls"
+  },
+  "REV-C05-D-P05-TheSevenBowls.dc.html": {
+   "x": 0,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "63 · The Seven Bowls"
+  },
+  "REV-C05-D-P06-TheSevenBowls.dc.html": {
+   "x": 840,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "64 · The Seven Bowls"
+  },
+  "REV-C05-D-P07-TheSevenBowls.dc.html": {
+   "x": 1680,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "65 · The Seven Bowls"
+  },
+  "REV-C05-D-P08-TheSevenBowls.dc.html": {
+   "x": 2520,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "66 · The Seven Bowls"
+  },
+  "REV-C05-D-P09-TheGreatHarlot.dc.html": {
+   "x": 3360,
+   "y": 23200,
+   "w": 760,
+   "h": 1080,
+   "title": "67 · The Great Harlot"
+  },
+  "REV-C05-D-P10-TheGreatHarlot.dc.html": {
+   "x": 0,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "68 · The Great Harlot"
+  },
+  "REV-C05-D-P11-TheGreatHarlot.dc.html": {
+   "x": 840,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "69 · The Great Harlot"
+  },
+  "REV-C05-D-P12-TheGreatHarlot.dc.html": {
+   "x": 1680,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "70 · The Great Harlot"
+  },
+  "REV-C05-D-P13-FallenFallenIsBaby.dc.html": {
+   "x": 2520,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "71 · Fallen, Fallen Is Babylon the Great"
+  },
+  "REV-C05-D-P14-FallenFallenIsBaby.dc.html": {
+   "x": 3360,
+   "y": 24400,
+   "w": 760,
+   "h": 1080,
+   "title": "72 · Fallen, Fallen Is Babylon the Great"
+  },
+  "REV-C05-D-P15-FallenFallenIsBaby.dc.html": {
+   "x": 0,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "73 · Fallen, Fallen Is Babylon the Great"
+  },
+  "REV-C05-D-P16-FallenFallenIsBaby.dc.html": {
+   "x": 840,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "74 · Fallen, Fallen Is Babylon the Great"
+  },
+  "REV-C05-D-P17-FallenFallenIsBaby.dc.html": {
+   "x": 1680,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "75 · Fallen, Fallen Is Babylon the Great"
+  },
+  "REV-C05-D-P18-FallenFallenIsBaby.dc.html": {
+   "x": 2520,
+   "y": 25600,
+   "w": 760,
+   "h": 1080,
+   "title": "76 · Fallen, Fallen Is Babylon the Great"
   }
  },
  "order": [
@@ -515,7 +648,26 @@
   "REV-C04-D-P09-ThreeAngels.dc.html",
   "REV-C04-D-P10-ThreeAngels.dc.html",
   "REV-C04-D-P11-TheHarvestOfTheEar.dc.html",
-  "REV-C04-D-P12-TheHarvestOfTheEar.dc.html"
+  "REV-C04-D-P12-TheHarvestOfTheEar.dc.html",
+  "REV-C05-00-Title.dc.html",
+  "REV-C05-D-P01-SevenAngelsHavingS.dc.html",
+  "REV-C05-D-P02-SevenAngelsHavingS.dc.html",
+  "REV-C05-D-P03-TheSevenBowls.dc.html",
+  "REV-C05-D-P04-TheSevenBowls.dc.html",
+  "REV-C05-D-P05-TheSevenBowls.dc.html",
+  "REV-C05-D-P06-TheSevenBowls.dc.html",
+  "REV-C05-D-P07-TheSevenBowls.dc.html",
+  "REV-C05-D-P08-TheSevenBowls.dc.html",
+  "REV-C05-D-P09-TheGreatHarlot.dc.html",
+  "REV-C05-D-P10-TheGreatHarlot.dc.html",
+  "REV-C05-D-P11-TheGreatHarlot.dc.html",
+  "REV-C05-D-P12-TheGreatHarlot.dc.html",
+  "REV-C05-D-P13-FallenFallenIsBaby.dc.html",
+  "REV-C05-D-P14-FallenFallenIsBaby.dc.html",
+  "REV-C05-D-P15-FallenFallenIsBaby.dc.html",
+  "REV-C05-D-P16-FallenFallenIsBaby.dc.html",
+  "REV-C05-D-P17-FallenFallenIsBaby.dc.html",
+  "REV-C05-D-P18-FallenFallenIsBaby.dc.html"
  ],
  "notes": {
   "Main": {
@@ -552,6 +704,13 @@
    "text": "Chapter 4 · A Great Sign in Heaven (Revelation 12–14)",
    "x": 0,
    "y": 17600
+  },
+  "chapter05": {
+   "kind": "title1",
+   "maxW": 4120,
+   "text": "Chapter 5 · Fallen Is Babylon the Great (Revelation 15–18)",
+   "x": 0,
+   "y": 21700
   }
  },
  "designSystems": [],
