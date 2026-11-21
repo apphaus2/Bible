@@ -9,6 +9,7 @@ with red=True). Everything is scaled to fit the panel, centred."""
 import math
 from genesis.art3 import grid_bg, node, route, label as _label
 import zlib
+from mapfit import Placer, AROUND
 
 def label(x, y, text, color="#F3EFE6", size=11, anchor="middle", weight=600, ls=0.14):
     """A map label with a dark halo (the map's sea colour) so it reads over coastlines and routes."""
@@ -130,10 +131,14 @@ LABEL_AT = {"CENCHREÆ": (8, 12, "start"), "CORINTH": (-8, -8, "end"), "ATHENS":
             "SALAMIS": (8, 4, "start"), "PAPHOS": (-8, 10, "end"), "ANTIOCH OF PISIDIA": (0, -10, "middle"), "ALEXANDRIA": (0, 16, "middle"),
             "CYRENE": (0, 16, "middle")}
 
+# where a region's name may move (in units of an 8 px name) when its own place is crowded
+REGION_SPOTS = [(0, 0), (0, -11), (0, 11), (0, -22), (0, 22), (-24, 0), (24, 0), (-24, -11), (24, -11), (-24, 11), (24, 11), (0, -33), (0, 33),
+                (-48, 0), (48, 0), (-48, -11), (48, -11), (-48, 11), (48, 11), (-24, -22), (24, -22), (-24, 22), (24, 22)]
+
 def med_map(w, h, box=(10, 37, 29.5, 43), places=(), routes=(), hi=(), regions=(), title=None, red=False, lit_routes=None, size=9, dots=True,
-            ship=None, rsize=None, labels_left=(), rings=None, label_at=None):
+            ship=None, rsize=None, labels_left=(), rings=None, label_at=None, quiet=()):
     """rings=place: rings spreading out from that place (the witnesses of 1:8); hi= places lit red, the rest gold;
-    label_at={place: (dx, dy, anchor)} sets names for this map only, over LABEL_AT."""
+    label_at={place: (dx, dy, anchor)} sets names for this map only, over LABEL_AT; quiet= places drawn as dots, unnamed."""
     P = Proj(w, h, box)
     uid = f"mc{zlib.crc32(repr((box, places, title, w, h)).encode()) % 10 ** 8}"
     o = [f'<defs><clipPath id="{uid}"><rect x="0" y="0" width="{f(w)}" height="{f(h)}"></rect></clipPath></defs><g clip-path="url(#{uid})">',
@@ -147,20 +152,30 @@ def med_map(w, h, box=(10, 37, 29.5, 43), places=(), routes=(), hi=(), regions=(
         for k in range(1, 5):
             o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(min(w, h) * 0.12 * k)}" fill="none" stroke="#FF6A4A" stroke-width="1.6" stroke-dasharray="5 6" opacity="{0.8 - 0.15 * k:.2f}"></circle>')
     rs = rsize or max(8, size - 1)
+    pl = Placer(w, h)                                # every name kept clear of the dots, the title and each other
+    if title: pl.block(8, h - 32, 32 + len(title) * 7.4, h - 8)
+    for nm in places:
+        x, y = P.pt(nm); pl.dot(x, y, 7 if nm in hi else 5.6)
+    names = []
+    for nm in places:
+        x, y = P.pt(nm)
+        if nm in quiet: names.append((nm, x, y, 0, 0, None)); continue
+        first = (-10, 4, "end") if nm in labels_left else (label_at or {}).get(nm) or LABEL_AT.get(nm, (0, -10, "middle"))
+        dx, dy, anchor = pl.put(x, y, nm, size, 0.14, [first] + [a for a in AROUND if a != first])
+        names.append((nm, x, y, dx, dy, anchor))
+    k = rs / 8
     for nm in regions:                               # a name, or (name, lon, lat[, anchor]) to set it elsewhere
         if isinstance(nm, tuple): nm, lon, lat, *an = nm; x, y = P(lon, lat); an = an[0] if an else "middle"
         else: x, y = P(*REGIONS[nm]); an = "middle"
-        o.append(label(x, y, nm.strip(), "#7AAAC8", rs, anchor=an, weight=500, ls=0.3))
+        dx, dy, _ = pl.put(x, y, nm.strip(), rs, 0.3, [(a * k, b * k, an) for a, b in REGION_SPOTS])
+        o.append(label(x + dx, y + dy, nm.strip(), "#7AAAC8", rs, anchor=an, weight=500, ls=0.3))
     for i, rt in enumerate(routes):
         pts = [P.pt(q) for q in rt]
         lit = (red and i == len(routes) - 1) if lit_routes is None else (i in lit_routes)
         o.append(route(pts, color="#FF6A4A" if lit else "#FFD23F", sw=2.6 if lit else 2.2))
-    for nm in places:
-        x, y = P.pt(nm)
+    for nm, x, y, dx, dy, anchor in names:
         c = "#FF6A4A" if nm in hi else "#FFD23F"
-        dx, dy, anchor = (label_at or {}).get(nm) or LABEL_AT.get(nm, (0, -10, "middle"))
-        if nm in labels_left: dx, dy, anchor = -10, 4, "end"
-        o.append(node(x, y, "", c, r=3.6 if nm not in hi else 5, dy=-10, size=size) + label(x + dx, y + dy, nm, c, size, anchor))
+        o.append(node(x, y, "", c, r=3.6 if nm not in hi else 5, dy=-10, size=size) + (label(x + dx, y + dy, nm, c, size, anchor) if anchor else ""))
     if ship:
         x, y = P.pt(ship)
         o.append(f'<g transform="translate({f(x)} {f(y)})"><path d="M-12 0 L 12 0 L 8 6 L -8 6 Z" fill="#FFD23F" stroke="#0D0D0F" stroke-width="1.2"></path>'

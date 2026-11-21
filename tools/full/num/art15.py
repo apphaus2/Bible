@@ -8,6 +8,7 @@ from genesis.art2 import fit, ground, hills
 from genesis.art3 import sun, label, man, grid_bg, node, route
 from exo import art as A, art8 as B8
 from num.art import ALL, TRIBE_C
+from mapfit import Placer, box as lbox
 def f(v): return f"{v:.1f}"
 CY = B8.CY
 
@@ -59,6 +60,10 @@ STATIONS = [("RAMESES", 0.04, 0.42), ("SUCCOTH", 0.1, 0.44), ("ETHAM", 0.15, 0.4
             ("PUNON", 0.8, 0.46), ("OBOTH", 0.84, 0.42), ("IYE-ABARIM", 0.86, 0.36), ("DIBON-GAD", 0.86, 0.3), ("ALMON-DIBLATHAIM", 0.86, 0.24),
             ("ABARIM", 0.84, 0.18), ("PLAINS OF MOAB", 0.8, 0.12)]
 
+# where a station's name may go when both of its first spots (above, below) are crowded: (dx, dy, anchor)
+STATION_SPOTS = [(7, 3, "start"), (-7, 3, "end"), (6, -5, "start"), (-6, -5, "end"), (6, 11, "start"), (-6, 11, "end"),
+                 (9, -9, "start"), (-9, -9, "end"), (9, 15, "start"), (-9, 15, "end"), (0, -15, "middle"), (0, 21, "middle")]
+
 def stations_map(w, h, lit=None, title="THE JOURNEYS OF THE CHILDREN OF ISRAEL Â· NUMBERS 33"):
     """The whole route; lit = (first, last) indexes of the stations to light (the rest dim)."""
     o = [grid_bg(w, h), label(14, 18, title, "#FFD23F", 10, "start", ls=0.16)]
@@ -69,9 +74,15 @@ def stations_map(w, h, lit=None, title="THE JOURNEYS OF THE CHILDREN OF ISRAEL Â
     P = [(w * x, h * y) for _, x, y in STATIONS]
     o.append(route(P, color="#4A5A6A", arrow=False))
     o.append(route(P[a:b + 1], color="#FFD23F", arrow=True) if b > a else "")
+    pl = Placer(w, h)                                # the lit names clear of every dot, the title and each other
+    pl.block(*lbox(14, 18, title, 10, 0.16, "start"))
+    for i, (x, y) in enumerate(P): pl.dot(x, y, 4 if a <= i <= b else 3.5)
+    for i, (x, y) in enumerate(P): o.append(node(x, y, "", "#FFD23F" if a <= i <= b else "#4A5A6A", r=4 if a <= i <= b else 3, size=7))
     for i, (nm, x, y) in enumerate(STATIONS):
-        on = a <= i <= b
-        o.append(node(w * x, h * y, nm if on else "", "#FFD23F" if on else "#4A5A6A", r=3 if not on else 4, dy=-7 if i % 2 else 13, size=7))
+        on = a <= i <= b; x, y = w * x, h * y
+        if on:
+            dx, dy, an = pl.put(x, y, nm, 7, 0.14, ([(0, -7, "middle"), (0, 13, "middle")] if i % 2 else [(0, 13, "middle"), (0, -7, "middle")]) + STATION_SPOTS)
+            o.append(label(x + dx, y + dy, nm, "#FFD23F", 7, an).replace("<text ", '<text stroke="#0B1A2E" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round" ', 1))
     return "".join(o)
 
 def station(name, text, ref, accent="#FFD23F", size=12):

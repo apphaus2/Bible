@@ -13,6 +13,7 @@ import joshua1 as J, judges1 as J1, judges2 as JG2, ruth1 as R1, exodus as E, ex
 import samuel1 as S1, samuel2 as S2, samuel3 as S3, samuel4 as S4b, numbers1 as N
 from exo import art as A
 from num.art import ALL
+from mapfit import Placer, AROUND, box as lbox
 from jos.art import crowd_at, warrior, WAR, night
 
 JER_C = "#3A4656"
@@ -672,10 +673,16 @@ def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), l
             o.append(f'<path d="M{path(DEAD)} Z" fill="#0F3A5A" stroke="#8FD0E2" stroke-width="1.6"></path>' + label(*P(35.49, 31.45), "THE SALT SEA", "#8FD0E2", 8))
     for a, b in arrows:
         o.append(route([P(*PLACES[a]), P(*PLACES[b])], color=lit, sw=2.6))
+    pl = Placer(w, h)                                # names clear of the dots, the title and each other
+    if title: pl.block(*lbox(w - 12, h - 14, title, 9, anchor="end"))
+    if dead_sea and x1 - x0 <= 4: pl.block(*lbox(*P(35.49, 31.45), "THE SALT SEA", 8))
+    for nm in places: pl.dot(*P(*PLACES[nm]), 7 if nm in hi else 5.5)
     for nm in places:
         x, y = P(*PLACES[nm])
         c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2")
-        o.append(node(x, y, nm, c, r=5 if nm in hi else 3.5, dy=18 if nm in under else -9, size=size))
+        first = (0, 18, "middle") if nm in under else (0, -9, "middle")
+        dx, dy, an = pl.put(x, y, nm, size, 0.14, [first] + [a for a in AROUND if a[2] != "middle"] + [(0, -9, "middle"), (0, 18, "middle")])
+        o.append(node(x, y, "", c, r=5 if nm in hi else 3.5, size=size) + label(x + dx, y + dy, nm, c, size, an))
     if title: o.append(label(w - 12, h - 14, title, "#8FD0E2", 9, anchor="end"))
     return "".join(o)
 

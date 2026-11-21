@@ -135,5 +135,11 @@
   "SCARLET": "朱红色料",
   "WHEAT": "麦子",
   "CHARIOTS": "车"
+ },
+ "leviticus/LEV-C02": {
+  "BROKEN": "打碎"
+ },
+ "leviticus/LEV-C05": {
+  "BROKEN": "打碎"
  }
 }

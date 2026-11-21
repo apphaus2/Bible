@@ -71,7 +71,9 @@ def map_moab(w, h, hi=None):
         o.append(f'<rect x="{f(w * x0)}" y="{f(h * y0)}" width="{f(w * (x1 - x0))}" height="{f(h * (y1 - y0))}" fill="{c}" opacity="{0.55 if on else 0.15}" stroke="{c}" stroke-width="2"></rect>' + label(w * x0 + 8, h * y0 + 14, nm, "#F3EFE6", 9, "start", ls=0.1))
     pts = [("KADESH-BARNEA", 0.12, 0.7), ("EZION-GEBER", 0.44, 0.98), ("ZERED", 0.64, 0.56), ("ARNON", 0.6, 0.34), ("HESHBON", 0.5, 0.18)]
     o.append(route([(w * x, h * y) for _, x, y in pts], color="#FFD23F"))
-    for nm, x, y in pts: o.append(node(w * x, h * y, nm, "#FFD23F", r=4, dy=-8, size=8))
+    for nm, x, y in pts:
+        o.append(node(w * x, h * y, "" if nm == "HESHBON" else nm, "#FFD23F", r=4, dy=-8, size=8)
+                 + (label(w * x + 8, h * y + 3, nm, "#FFD23F", 8, "start") if nm == "HESHBON" else ""))
     o.append(label(w * 0.82, h * 0.32, "JABBOK", "#8FD0E2", 8))
     return "".join(o)
 

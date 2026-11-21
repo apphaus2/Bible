@@ -156,8 +156,8 @@ def lampstand(w, h, lit=True):
     s = min(w / 220, h / 190)
     x, y = w * 0.5, h * 0.92
     o = [bp(w, h), title_bar(w, "THE CANDLESTICK" if w < 400 else "THE CANDLESTICK · ONE BEATEN WORK OF PURE GOLD"), re.sub(r'<path d="M[^"]*" fill="none" stroke="#8A8478"[^>]*></path>', "", S1.lamp(x, y, s, lit=lit))]   # unlit: no smoke either
-    o.append(tag(x - 66 * s, y - 128 * s, "CUPS LIKE ALMOND-BLOSSOMS", x - 100 * s, y - 160 * s))
-    o.append(tag(x + 44 * s, y - 120 * s, "A KNOP AND A FLOWER", x + 90 * s, y - 150 * s))
+    o.append(tag(x - 66 * s, y - 128 * s, "CUPS LIKE ALMOND-BLOSSOMS", x - 100 * s, max(y - 160 * s, 38)))
+    o.append(tag(x + 44 * s, y - 120 * s, "A KNOP AND A FLOWER", x + 90 * s, max(y - 150 * s, 38)))
     o.append(tag(x, y - 40 * s, "THE SHAFT", x + 60 * s, y - 50 * s))
     o.append(tag(x, y - 6 * s, "THE BASE", x - 60 * s, y - 14 * s))
     o.append(label(w - 14, h - 10, "7 LAMPS · 6 BRANCHES · 1 TALENT", CY, 9, "end"))

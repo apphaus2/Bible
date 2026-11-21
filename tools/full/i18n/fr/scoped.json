@@ -58,5 +58,7 @@
  "revelation/REV-C05": {"PURPLE": "POURPRE", "SCARLET": "ÉCARLATE"},
  "revelation/REV-C06": {"THE WALL": "MUR", "EMERALD": "ÉMERAUDE", "BERYL": "BÉRYL", "JACINTH": "HYACINTHE"},
  "hebrews/HEB-C03": {"THE SHOWBREAD": "LES PAINS"},
- "hebrews/HEB": {"WITHIN THE VEIL": "AU-DELÀ DU VOILE", "A NEW COVENANT": "UNE ALLIANCE NOUVELLE"}
+ "hebrews/HEB": {"WITHIN THE VEIL": "AU-DELÀ DU VOILE", "A NEW COVENANT": "UNE ALLIANCE NOUVELLE"},
+ "leviticus/LEV-C02": {"BROKEN": "BRISÉ"},
+ "leviticus/LEV-C05": {"BROKEN": "BRISÉ"}
 }

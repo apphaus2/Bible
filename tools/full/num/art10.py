@@ -10,6 +10,7 @@ from genesis.art2 import fit, ground, hills
 from genesis.art3 import sun, label, man, woman, king, grid_bg, node, route
 from exo import art as A, art8 as B8, art9 as Q
 from num.art import ALL, wilderness_camp, standard, TRIBE_C
+import mapfit
 def f(v): return f"{v:.1f}"
 
 EDOM_KING = F("adam", skin="#B9785A", shadow="#5A2A1A", hair="#8A3A1A", hl="#B85A2A", beard=True, beard_color="#8A3A1A", scarf="#8A2A1A", band=True, brow="scowl", light="#FF6A2A")
@@ -85,10 +86,18 @@ def journeys(w, h, hi=None):
            ("MATTANAH", 0.53, 0.43), ("NAHALIEL", 0.49, 0.36), ("BAMOTH", 0.44, 0.3), ("PISGAH", 0.37, 0.24)]
     P = [(w * x, h * y) for _, x, y in pts]
     o.append(route(P, color="#FFD23F"))
+    towns = (("HESHBON", 0.36, 0.44), ("JAZER", 0.46, 0.16), ("EDREI · BASHAN", 0.56, 0.06))
+    pl = mapfit.Placer(w, h)                         # names clear of the dots, the rivers' names and each other
+    pl.block(*mapfit.box(w * 0.26, h * 0.3, "JORDAN", 8, anchor="end")); pl.block(*mapfit.box(w * 0.9, h * 0.58, "THE ARNON", 8, anchor="end"))
+    for _, x, y in list(pts) + list(towns): pl.dot(w * x, h * y, 5.5)
     for i, (nm, x, y) in enumerate(pts):
-        o.append(node(w * x, h * y, nm, "#FFD23F" if hi is None or nm in hi else "#6A7A8A", r=4, dy=-8 if i % 2 else 14, size=8))
-    for nm, x, y in (("HESHBON", 0.36, 0.44), ("JAZER", 0.46, 0.16), ("EDREI · BASHAN", 0.56, 0.06)):
-        o.append(node(w * x, h * y, nm, "#D7261E" if hi is None or nm in hi else "#6A3A3A", r=4, dy=-8, size=8))
+        c = "#FFD23F" if hi is None or nm in hi else "#6A7A8A"; first = (0, -8, "middle") if i % 2 else (0, 14, "middle")
+        dx, dy, an = pl.put(w * x, h * y, nm, 8, 0.14, [first] + mapfit.AROUND)
+        o.append(node(w * x, h * y, "", c, r=4, size=8) + label(w * x + dx, h * y + dy, nm, c, 8, an))
+    for nm, x, y in towns:
+        c = "#D7261E" if hi is None or nm in hi else "#6A3A3A"
+        dx, dy, an = pl.put(w * x, h * y, nm, 8, 0.14, [(0, -8, "middle")] + mapfit.AROUND)
+        o.append(node(w * x, h * y, "", c, r=4, size=8) + label(w * x + dx, h * y + dy, nm, c, 8, an))
     return "".join(o)
 
 def well(p, w, h, seed):

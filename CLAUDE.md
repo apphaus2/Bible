@@ -139,6 +139,7 @@ tools/build.py        the whole site in every language, only what changed (stamp
 tools/full/           asv.py (Book: cuts, coverage; BIBLE_LANG), build_volume.py, fx.py (page(), chapter_title(), end_mark(), vref()),
                       discourse.py (pack: by_need, room, min_size, budget, default_head), speech.py (orate), rolls.py (roll_pages,
                       verse_cells), reuse.py (lift reference panels; fill()), picto.py, ntcast.py (New Testament cast),
+                      mapfit.py (Placer: map names kept clear of dots and each other, measured in each language),
                       labels.py (collect, missing, leftover), i18n/<code>/ (each language's labels), <pkg>/ one package per book
 tools/kit/            mk.py (page, panel, cap, god, balloon+tail, stamp, sfx, person(up=), defs, speed, stars), faces.py + faces_ex.py,
                       figures.json, snake.py, crowds.py, and per-book drawing kits: exodus*.py, numbers1, joshua1, judges1–2, ruth1,

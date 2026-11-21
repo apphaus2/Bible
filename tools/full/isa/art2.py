@@ -5,6 +5,7 @@ import sys, pathlib, math, random
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from isa.art import *
 from isa.art import f, K2, K3, bg, rect, smoke, thorns, tower
+from mapfit import Placer, AROUND, box as lbox
 
 # ---- the nations: one technical map for the whole book ---------------------------------------------------------------------
 PLACES = {"TYRE": (0.215, 0.30), "SIDON": (0.225, 0.235), "DAMASCUS": (0.33, 0.27), "SAMARIA": (0.215, 0.39), "JERUSALEM": (0.225, 0.47),
@@ -27,9 +28,13 @@ def nations_map(w, h, hi=(), arrows=(), show=None, lit="#D7261E", note=None):
     for a, b in arrows: o.append(route([pos[a], pos[b]], color=lit))
     names = show or list(PLACES)
     size = max(8, min(10, w / 70))
+    pl = Placer(w, h)                                # names clear of the dots, the rivers' names and each other
+    pl.block(*lbox(w * 0.58, h * 0.3, "EUPHRATES", 8)); pl.block(*lbox(w * 0.03, h * 0.56, "THE GREAT SEA", 8, anchor="start"))
+    for nm in names: pl.dot(*pos[nm], 8 if nm in hi else 6)
     for nm in names:
-        x, y = pos[nm]
-        o.append(node(x, y, nm, lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2"), r=6 if nm in hi else 4, dy=-11, size=size + (1 if nm in hi else 0)))
+        x, y = pos[nm]; c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2"); sz = size + (1 if nm in hi else 0)
+        dx, dy, an = pl.put(x, y, nm, sz, 0.14, [(0, -11, "middle")] + [a for a in AROUND if a != (0, -10, "middle")])
+        o.append(node(x, y, "", c, r=6 if nm in hi else 4, size=sz) + label(x + dx, y + dy, nm, c, sz, an))
     if note: o.append(label(w * 0.34, h * 0.95, note, "#FF8A6A", 10, "start"))
     return "".join(o)
 

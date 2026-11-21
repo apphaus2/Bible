@@ -89,5 +89,7 @@
  "revelation/REV-C02-D-P03": {"LIKE A LION": "ПОДОБНО ЛЬВУ"},
  "revelation/REV-C05": {"SCARLET": "БАГРЯНИЦА", "FRANKINCENSE": "ЛАДАН", "INCENSE": "ФИМИАМ", "PURPLE": "ПОРФИРА"},
  "revelation/REV-C06": {"FIRST": "ПЕРВОЕ", "SECOND": "ВТОРОЕ", "THIRD": "ТРЕТЬЕ", "EMERALD": "СМАРАГД", "SARDIUS": "СЕРДОЛИК", "BERYL": "ВИРИЛЛ", "JACINTH": "ГИАЦИНТ"},
- "romans/ROM-C05-G-P01": {"MARY": "МАРИАМ"}
+ "romans/ROM-C05-G-P01": {"MARY": "МАРИАМ"},
+ "leviticus/LEV-C02": {"BROKEN": "РАЗБИТ"},
+ "leviticus/LEV-C05": {"BROKEN": "РАЗБИТ"}
 }

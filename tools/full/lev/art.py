@@ -207,7 +207,7 @@ def pg_continual(p):  return GND + altar(110, 84, 1.4) + "".join(f'<rect x="{196
 def pg_eat_court(p):  return GND + door(60, 84) + "".join(priest(p, 120 + i * 36) for i in range(3)) + cakes(250, 84, 1.0)
 def pg_anointed(p):   return GND + priest(p, 80, high=True) + pan(170, 84, 1.0) + flour(240, 84, 0.8) + label(170, 96, "1/10 EPHAH · MORNING AND EVENING", B8.CY, 6.5)
 def pg_wholly(p):     return GND + altar(160, 84, 1.6) + label(250, 40, "WHOLLY BURNT", "#FFD23F", 9)
-def pg_holy_touch(p): return GND + priest(p, 100) + f'<path d="M180 84 L 184 60 L 216 60 L 220 84 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.6"></path>' + f'<path d="M232 84 L 236 62 L 268 62 L 272 84 Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="1.6"></path>' + label(200, 96, "EARTHEN · BROKEN", B8.CY, 7) + label(252, 96, "BRAZEN · SCOURED", B8.CY, 7)
+def pg_holy_touch(p): return GND + priest(p, 100) + f'<path d="M180 84 L 184 60 L 216 60 L 220 84 Z" fill="#B5652E" stroke="#0D0D0F" stroke-width="1.6"></path>' + f'<path d="M232 84 L 236 62 L 268 62 L 272 84 Z" fill="{BRASS}" stroke="#0D0D0F" stroke-width="1.6"></path>' + label(218, 54, "EARTHEN", B8.CY, 7, "end") + label(218, 96, "BROKEN", B8.CY, 7, "end") + label(234, 54, "BRAZEN", B8.CY, 7, "start") + label(234, 96, "SCOURED", B8.CY, 7, "start")
 def pg_no_eat(p):     return GND + veil(120, 84, 0.9) + E.blaze(230, 84, 40, 40, 5, n=5) + label(230, 96, "BURNT WITH FIRE", B8.CY, 7)
 def pg_most_holy(p):  return GND + priest(p, 100) + priest(p, 140) + altar(250, 84, 1.0) + label(170, 24, "MOST HOLY", "#FFD23F", 10)
 def pg_skin(p):       return GND + priest(p, 90) + '<path d="M150 84 C 152 70 200 66 214 84 Z" fill="#8A5A30" stroke="#0D0D0F" stroke-width="1.6"></path>' + oven(260, 84, 0.9)

@@ -54,7 +54,8 @@ SEGS = [D([cp("17:16")], lambda w, h: A.athens("at1", w, h, 1716), "#8FD0E2", he
         D([cp("18:16"), cp("18:17")], lambda w, h: A.judgment_bema("jb2", w, h, 1816, gallio_=False, accusers=False, paul_=False), "#8FD0E2", art_h=220),
         D([cp("18:18")], lambda w, h: A.cenchreae("cc1", w, h, 1818), "#8FD0E2", art_h=240),
         D([cp("18:19"), cp("18:20"), cp("18:21", to="and saying,"), sy("18:21", frm="I will return", to="if God will,"), cp("18:21", frm="he set sail"), cp("18:22")],
-          lambda w, h: sj(w, h, legs=10, lit=[8, 9], title="ACTS 18:18–22 · BY EPHESUS TO CÆSAREA AND ANTIOCH"), "#0B1A2E", art_h=280),
+          lambda w, h: sj(w, h, legs=10, lit=[8, 9], title="ACTS 18:18–22 · BY EPHESUS TO CÆSAREA AND ANTIOCH",
+                           named=("CORINTH", "CENCHREÆ", "EPHESUS", "CÆSAREA", "JERUSALEM", "ANTIOCH", "ATHENS", "PHILIPPI", "TROAS", "TARSUS")), "#0B1A2E", art_h=280),
         D([cp("18:23")], lambda w, h: A.third_journey(w, h, legs=1, title="ACTS 18:23 · GALATIA AND PHRYGIA", box=(29.0, 37.4, 35.0, 40.6)), "#0B1A2E", art_h=220),
         D([cp("18:24"), cp("18:25"), cp("18:26", to="in the synagogue.")], lambda w, h: A.apollos_synagogue("ap1", w, h, 1824), "#C8B490", head="Apollos", art_h=220),
         D([cp("18:26", frm="But when Priscilla"), cp("18:27"), cp("18:28")], lambda w, h: A.apollos_synagogue("ap2", w, h, 1826, taught=True), "#D8C098", art_h=220)]

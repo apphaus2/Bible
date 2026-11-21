@@ -10,6 +10,7 @@ from ezk.art14 import *
 from ezk.art14 import f, K2, K3, P, rect, seated, clouds, smoke, house, INK, EZ_C, GB_BEARD, CAPT, bg, glow, vgrad, rgrad, KK2, JJ2, J1
 from exo.art8 import bp, dim, tag, title_bar, box, INK as BINK, CY, GOLD as BGOLD, cherub
 from exo.art8 import f as ff
+import mapfit
 
 LIT, LINE, FILL = "#FFD23F", "#8FD0E2", "#1E3A5A"
 
@@ -132,6 +133,8 @@ def vision_plan(w, h, hi=(), title="THE HOUSE OF THE VISION · PLAN", dims=False
         names += [("PAVEMENT", -120, -222, "pavement"), ("CHAMBERS", -100, -72, "priests_chambers"), ("CHAMBERS", -100, 78, "priests_chambers"),
                   ("INNER GATE", 75, -16, "inner_east"), ("INNER GATE", 0, -104, "inner_north"), ("INNER GATE", 0, 108, "inner_south"),
                   ("SEPARATE PLACE", -100, -32, "separate"), ("SEPARATE PLACE", -100, 40, "separate")]
+    if 95 * u < (mapfit.width("HOUSE", lsz) + mapfit.width("BUILDING", lsz)) / 2 + 6:      # too close side by side: one above
+        names = [(nm, x, y + (-7 if nm == "HOUSE" else 9) / u if nm in ("HOUSE", "BUILDING") else y, part) for nm, x, y, part in names]   # the other
     for nm, x, y, part in names:
         o.append(label(X(x), Y(y), nm, LIT if part in hi else "#6A9ABA", lsz))
     if dims:

@@ -88,7 +88,7 @@ def princes_chart(w, h):
     o.append(node(w * 0.5, h * 0.84, "MICHAEL · YOUR PRINCE", "#FFD23F", r=7, dy=20, size=9))
     o.append(route([(w * 0.46, h * 0.5), (w * 0.2, h * 0.5)], color="#FF8A6A") + route([(w * 0.5, h * 0.8), (w * 0.5, h * 0.56)], color="#FFD23F")
              + route([(w * 0.54, h * 0.5), (w * 0.8, h * 0.5)], color="#FF8A6A", arrow=False))
-    o.append(label(w * 0.33, h * 0.44, "WITHSTOOD ME 21 DAYS", "#FF8A6A", 8) + label(w * 0.67, h * 0.44, "SHALL COME", "#FF8A6A", 8))
+    o.append(label(w * 0.33, h * 0.5 + 18, "WITHSTOOD ME 21 DAYS", "#FF8A6A", 8) + label(w * 0.67, h * 0.5 + 18, "SHALL COME", "#FF8A6A", 8))
     return "".join(o)
 
 def jerusalem_desolate(w, h, seed):

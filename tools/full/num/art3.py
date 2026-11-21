@@ -56,8 +56,8 @@ def pg_hallowed(p):    return GND + offerer(p, 60, up=REACH) + flour(120, 84, 0.
 # ---- 5:11–31 the law of jealousy -------------------------------------------------------------------------------------
 def pg_jealous(p):     return GND + man(p, 80, 86, 0.36, "#5A3A22") + spark(160, 44, 1.2) + wife(p, 240, flip=True) + label(160, 96, "THE SPIRIT OF JEALOUSY", CY, 7)
 def pg_hid(p):         return GND + man(p, 70, 86, 0.36, "#5A3A22") + label(160, 46, "NO WITNESS", "#FFD23F", 9) + wife(p, 250, flip=True)
-def pg_barley(p):      return (GND + man(p, 40, 86, 0.34, "#5A3A22") + wife(p, 80) + flour(150, 84, 1.0) + label(150, 96, "1/10 EPHAH OF BARLEY MEAL", CY, 6.5)
-                               + jar(262, 72, 0.6) + ban(262, 54, 28) + label(262, 96, "NO OIL · NO FRANKINCENSE", CY, 6.5))
+def pg_barley(p):      return (GND + man(p, 40, 86, 0.34, "#5A3A22") + wife(p, 80) + flour(150, 84, 1.0) + label(206, 96, "1/10 EPHAH OF BARLEY MEAL", CY, 6.5, "end")
+                               + jar(262, 72, 0.6) + ban(262, 54, 28) + label(216, 96, "NO OIL · NO FRANKINCENSE", CY, 6.5, "start"))
 def pg_set_before(p):  return GND + door(60, 84, 1.0) + wife(p, 140) + priest(p, 210, flip=True)
 def pg_holy_water(p):  return (GND + priest(p, 70, up=REACH) + earthen(160, 82, 1.4) + water(160, 64, 30)
                                + "".join(f'<circle cx="{150 + i * 5}" cy="{40 + (i % 3) * 5}" r="1.8" fill="#8A6A4A"></circle>' for i in range(5)) + label(240, 60, "DUST OF THE FLOOR", CY, 7))
