@@ -11,6 +11,7 @@ from lev.art import goat, flour, incense, altar
 from lev.art3 import BOTH
 from lev.art5 import water
 from num.art import ALL, TRIBE_C, standard
+import mapfit
 def f(v): return f"{v:.1f}"
 CY, GOLD, SILVER = B8.CY, B8.GOLD, B8.SILVER
 
@@ -62,8 +63,9 @@ def oblation(w, h, tribe=None, days_=1):
     o = [f'<path d="M0 {f(b)} L {f(w)} {f(b)}" stroke="#0D0D0F" stroke-width="2"></path>']
     items = [(platter, "SILVER PLATTER", 130), (bowl, "SILVER BOWL", 70), (spoon, "GOLDEN SPOON", 10)]
     x = w * 0.04
-    for fn, nm, wt in items:                          # each vessel: its weight in shekels above it, and ×12 for the twelve
-        o.append(fn(x + 26 * s, b, s) + label(x + 26 * s, b + 12, nm, "#0D0D0F", 6.5, ls=0.04)
+    two = any(mapfit.width(nm, 6.5, 0.04) > 72 * s - 4 for _, nm, _ in items)      # names wider than their place: two rows
+    for k, (fn, nm, wt) in enumerate(items):          # each vessel: its weight in shekels above it, and ×12 for the twelve
+        o.append(fn(x + 26 * s, b, s) + label(x + 26 * s, b + (19 if two and k % 2 else 11), nm, "#0D0D0F", 6.5, ls=0.04)
                  + label(x + 26 * s, b - 34 * s, f"{wt} SHEKELS", "#3A2A1A", 6.5, ls=0.04)
                  + (label(x + 26 * s, b - 44 * s - 4, f"×{days_}", "#D7261E", 11, ls=0.04) if days_ > 1 else ""))
         x += 72 * s

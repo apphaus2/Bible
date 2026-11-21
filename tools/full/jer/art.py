@@ -677,11 +677,11 @@ def near_east(w, h, places=(), hi=(), arrows=(), box=(29.6, 49.6, 25.6, 37.6), l
     if title: pl.block(*lbox(w - 12, h - 14, title, 9, anchor="end"))
     if dead_sea and x1 - x0 <= 4: pl.block(*lbox(*P(35.49, 31.45), "THE SALT SEA", 8))
     for nm in places: pl.dot(*P(*PLACES[nm]), 7 if nm in hi else 5.5)
-    for nm in places:
+    first = lambda nm: (0, 18, "middle") if nm in under else (0, -9, "middle")
+    at = pl.solve([(*P(*PLACES[nm]), nm, size, 0.14, [first(nm)] + [a for a in AROUND if a[2] != "middle"] + [(0, -9, "middle"), (0, 18, "middle")]) for nm in places])
+    for nm, (dx, dy, an) in zip(places, at):
         x, y = P(*PLACES[nm])
         c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2")
-        first = (0, 18, "middle") if nm in under else (0, -9, "middle")
-        dx, dy, an = pl.put(x, y, nm, size, 0.14, [first] + [a for a in AROUND if a[2] != "middle"] + [(0, -9, "middle"), (0, 18, "middle")])
         o.append(node(x, y, "", c, r=5 if nm in hi else 3.5, size=size) + label(x + dx, y + dy, nm, c, size, an))
     if title: o.append(label(w - 12, h - 14, title, "#8FD0E2", 9, anchor="end"))
     return "".join(o)

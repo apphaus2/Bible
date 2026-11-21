@@ -133,10 +133,12 @@ def vision_plan(w, h, hi=(), title="THE HOUSE OF THE VISION · PLAN", dims=False
         names += [("PAVEMENT", -120, -222, "pavement"), ("CHAMBERS", -100, -72, "priests_chambers"), ("CHAMBERS", -100, 78, "priests_chambers"),
                   ("INNER GATE", 75, -16, "inner_east"), ("INNER GATE", 0, -104, "inner_north"), ("INNER GATE", 0, 108, "inner_south"),
                   ("SEPARATE PLACE", -100, -32, "separate"), ("SEPARATE PLACE", -100, 40, "separate")]
-    if 95 * u < (mapfit.width("HOUSE", lsz) + mapfit.width("BUILDING", lsz)) / 2 + 6:      # too close side by side: one above
-        names = [(nm, x, y + (-7 if nm == "HOUSE" else 9) / u if nm in ("HOUSE", "BUILDING") else y, part) for nm, x, y, part in names]   # the other
-    for nm, x, y, part in names:
-        o.append(label(X(x), Y(y), nm, LIT if part in hi else "#6A9ABA", lsz))
+    pl = mapfit.Placer(w, h); pl.block(0, 0, w, 30)  # each name on its part, moved up or down off its neighbours
+    k = lsz * 1.25
+    at = pl.solve([(X(x), Y(y), nm, lsz, 0.14, [(0, 0, "middle"), (0, -k, "middle"), (0, k, "middle"), (0, -2 * k, "middle"), (0, 2 * k, "middle")])
+                   for nm, x, y, part in names])
+    for (nm, x, y, part), (dx, dy, _) in zip(names, at):
+        o.append(label(X(x), Y(y) + dy, nm, LIT if part in hi else "#6A9ABA", lsz))
     if dims:
         o.append(dim(X(-250), Y(-262), X(250), Y(-262), "500 REEDS", size=9) + dim(X(262), Y(-250), X(262), Y(250), "500", size=9))
     o.append('</g>' + title_bar(w, title) + label(w - 16, 19, "N ↑", CY, 11, "end"))
@@ -249,9 +251,9 @@ def house_plan(w, h, hi=()):
             o.append(f'<rect x="{f(X(x))}" y="{f(Y(yy))}" width="{f(6.6 * u)}" height="{f(4 * u)}" fill="none" stroke="{LIT if ch else "#4A7A9A"}" stroke-width="1"></rect>')
     o.append(f'<rect x="{f(X(21))}" y="{f(Y(11))}" width="{f(68 * u)}" height="{f(28 * u)}" fill="#24405C" stroke="{LINE}" stroke-width="2.4"></rect>')
     t = "temple" in hi; hl = "holy" in hi
-    o.append(f'<rect x="{f(X(27))}" y="{f(Y(15))}" width="{f(40 * u)}" height="{f(20 * u)}" fill="{"#5A4A1A" if t else "#16304A"}" stroke="{LIT if t else LINE}" stroke-width="2"></rect>' + label(X(47), Y(26), "THE TEMPLE · 40 × 20", LIT if t else CY, 9))
+    o.append(f'<rect x="{f(X(27))}" y="{f(Y(15))}" width="{f(40 * u)}" height="{f(20 * u)}" fill="{"#5A4A1A" if t else "#16304A"}" stroke="{LIT if t else LINE}" stroke-width="2"></rect>' + label(X(47), Y(26), "THE TEMPLE · 40 × 20", LIT if t else CY, round(min(9, 9 * (40 * u - 8) / mapfit.width("THE TEMPLE · 40 × 20", 9)), 1), fit=40 * u - 6))
     o.append(f'<rect x="{f(X(67))}" y="{f(Y(15))}" width="{f(20 * u)}" height="{f(20 * u)}" fill="{BGOLD if hl else "#16304A"}" stroke="{LIT if hl else LINE}" stroke-width="2.4"></rect>'
-             + label(X(77), Y(24), "MOST HOLY", INK if hl else CY, 8) + label(X(77), Y(29), "20 × 20", INK if hl else CY, 8))
+             + label(X(77), Y(24), "MOST HOLY", INK if hl else CY, round(min(8, 8 * (20 * u - 6) / mapfit.width("MOST HOLY", 8)), 1), fit=20 * u - 4) + label(X(77), Y(29), "20 × 20", INK if hl else CY, 8))
     o.append(f'<rect x="{f(X(4))}" y="{f(Y(14))}" width="{f(11 * u)}" height="{f(22 * u)}" fill="#2A4A6A" stroke="{LINE}" stroke-width="1.6"></rect>' + label(X(9.5), Y(26), "PORCH", CY, 7))
     o.append(dim(X(0), Y(53), X(100), Y(53), "A HUNDRED CUBITS", size=8))
     ty = max(36, Y(-5))

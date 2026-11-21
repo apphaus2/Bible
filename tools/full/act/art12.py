@@ -55,8 +55,9 @@ def philip_house(p, w, h, seed, agabus_=False):
 
 def up_to_jerusalem(w, h):
     """We went up to Jerusalem: the map, from Patara over against Cyprus to Tyre, Ptolemais, Cæsarea and up to Jerusalem."""
-    return third_journey(w, h, legs=10, lit=[8, 9], title="ACTS 21:1–17 · UP TO JERUSALEM", box=(28.6, 36.4, 30.8, 37.0),
+    return third_journey(w, h, legs=10, lit=[8, 9], title="ACTS 21:1–17 · UP TO JERUSALEM", box=(28.6, 36.4, 30.8, 37.9),
                          label_at={"COS": (-8, 4, "end"), "RHODES": (0, 16, "middle"), "PATARA": (6, -8, "start"), "TARSUS": (-8, 6, "end")},
+                         named=("MILETUS", "COS", "RHODES", "PATARA", "TYRE", "PTOLEMAIS", "CÆSAREA", "JERUSALEM", "TARSUS", "ANTIOCH", "EPHESUS"),
                          regions=("GALATIA", "PHRYGIA", "ASIA", "MACEDONIA", "ACHAIA", "SYRIA", ("LYCIA", 30.3, 36.95)))   # Cos, Rhodes, Patara close: spread
 
 def temple_vow(p, w, h, seed):

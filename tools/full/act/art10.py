@@ -135,13 +135,15 @@ THIRD = [["ANTIOCH", "TARSUS", (33.0, 37.8), (32.4, 39.0)], [(32.4, 39.0), (30.2
          ["TROAS", "ASSOS", "MITYLENE", "CHIOS", "SAMOS", "TROGYLLIUM", "MILETUS"], ["MILETUS", "COS", "RHODES", "PATARA"], ["PATARA", (31.6, 34.6), "TYRE"],
          ["TYRE", "PTOLEMAIS", "CÆSAREA", "JERUSALEM"]]
 
-def third_journey(w, h, legs=99, lit=None, title="ACTS 18:23 – 21:17 · THE THIRD JOURNEY", box=(21.0, 37.0, 31.4, 42.0), label_at=None,
+def third_journey(w, h, legs=99, lit=None, title="ACTS 18:23 – 21:17 · THE THIRD JOURNEY", box=(21.0, 37.0, 31.4, 42.0), label_at=None, named=None,
                   regions=("GALATIA", "PHRYGIA", "ASIA", "MACEDONIA", "ACHAIA", "SYRIA", "LYCIA")):
     """The third journey, leg by leg: through Galatia and Phrygia to Ephesus; Macedonia and Greece and back by Philippi to
-    Troas; Assos, Mitylene, Chios, Samos, Trogyllium, Miletus; Cos, Rhodes, Patara; Tyre, Ptolemais, Cæsarea, Jerusalem."""
+    Troas; Assos, Mitylene, Chios, Samos, Trogyllium, Miletus; Cos, Rhodes, Patara; Tyre, Ptolemais, Cæsarea, Jerusalem. named=
+    the only places given names (the rest are dots)."""
     rts = THIRD[:legs]
     names = [q for r in rts for q in r if isinstance(q, str)]
-    return geo.med_map(w, h, box=box, places=tuple(dict.fromkeys(names)), routes=rts, hi=tuple(q for q in rts[-1] if isinstance(q, str)),
+    places = tuple(dict.fromkeys(names))
+    return geo.med_map(w, h, box=box, places=places, quiet=() if named is None else tuple(q for q in places if q not in named), routes=rts, hi=tuple(q for q in rts[-1] if isinstance(q, str)),
                        regions=regions, lit_routes=lit if lit is not None else [len(rts) - 1], size=10, rsize=10, title=title, label_at=label_at)
 
 def apollos_synagogue(p, w, h, seed, taught=False):

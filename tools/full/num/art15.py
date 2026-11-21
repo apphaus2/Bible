@@ -78,11 +78,10 @@ def stations_map(w, h, lit=None, title="THE JOURNEYS OF THE CHILDREN OF ISRAEL Â
     pl.block(*lbox(14, 18, title, 10, 0.16, "start"))
     for i, (x, y) in enumerate(P): pl.dot(x, y, 4 if a <= i <= b else 3.5)
     for i, (x, y) in enumerate(P): o.append(node(x, y, "", "#FFD23F" if a <= i <= b else "#4A5A6A", r=4 if a <= i <= b else 3, size=7))
-    for i, (nm, x, y) in enumerate(STATIONS):
-        on = a <= i <= b; x, y = w * x, h * y
-        if on:
-            dx, dy, an = pl.put(x, y, nm, 7, 0.14, ([(0, -7, "middle"), (0, 13, "middle")] if i % 2 else [(0, 13, "middle"), (0, -7, "middle")]) + STATION_SPOTS)
-            o.append(label(x + dx, y + dy, nm, "#FFD23F", 7, an).replace("<text ", '<text stroke="#0B1A2E" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round" ', 1))
+    lit_ = [(i, nm, w * x, h * y) for i, (nm, x, y) in enumerate(STATIONS) if a <= i <= b]
+    at = pl.solve([(x, y, nm, 7, 0.14, ([(0, -7, "middle"), (0, 13, "middle")] if i % 2 else [(0, 13, "middle"), (0, -7, "middle")]) + STATION_SPOTS) for i, nm, x, y in lit_])
+    for (i, nm, x, y), (dx, dy, an) in zip(lit_, at):
+        o.append(label(x + dx, y + dy, nm, "#FFD23F", 7, an).replace("<text ", '<text stroke="#0B1A2E" stroke-width="2.6" paint-order="stroke" stroke-linejoin="round" ', 1))
     return "".join(o)
 
 def station(name, text, ref, accent="#FFD23F", size=12):

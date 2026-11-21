@@ -10,6 +10,7 @@ import math
 from genesis.art3 import grid_bg, node, route, label as _label
 import zlib
 from mapfit import Placer, AROUND
+import mapfit
 
 def label(x, y, text, color="#F3EFE6", size=11, anchor="middle", weight=600, ls=0.14):
     """A map label with a dark halo (the map's sea colour) so it reads over coastlines and routes."""
@@ -153,22 +154,23 @@ def med_map(w, h, box=(10, 37, 29.5, 43), places=(), routes=(), hi=(), regions=(
             o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(min(w, h) * 0.12 * k)}" fill="none" stroke="#FF6A4A" stroke-width="1.6" stroke-dasharray="5 6" opacity="{0.8 - 0.15 * k:.2f}"></circle>')
     rs = rsize or max(8, size - 1)
     pl = Placer(w, h)                                # every name kept clear of the dots, the title and each other
-    if title: pl.block(8, h - 32, 32 + len(title) * 7.4, h - 8)
+    if title: pl.block(8, h - 32, max(32 + len(title) * 7.4, 34 + mapfit.width(title, 10)), h - 8)   # the box, as long as the translated title
     for nm in places:
         x, y = P.pt(nm); pl.dot(x, y, 7 if nm in hi else 5.6)
-    names = []
-    for nm in places:
-        x, y = P.pt(nm)
-        if nm in quiet: names.append((nm, x, y, 0, 0, None)); continue
+    named = [nm for nm in places if nm not in quiet]
+    def spots(nm):
         first = (-10, 4, "end") if nm in labels_left else (label_at or {}).get(nm) or LABEL_AT.get(nm, (0, -10, "middle"))
-        dx, dy, anchor = pl.put(x, y, nm, size, 0.14, [first] + [a for a in AROUND if a != first])
-        names.append((nm, x, y, dx, dy, anchor))
+        return [first] + [a for a in AROUND if a != first]
+    at = dict(zip(named, pl.solve([(*P.pt(nm), nm, size, 0.14, spots(nm)) for nm in named])))
+    names = [(nm, *P.pt(nm), *at.get(nm, (0, 0, None))) for nm in places]
     k = rs / 8
     for nm in regions:                               # a name, or (name, lon, lat[, anchor]) to set it elsewhere
         if isinstance(nm, tuple): nm, lon, lat, *an = nm; x, y = P(lon, lat); an = an[0] if an else "middle"
         else: x, y = P(*REGIONS[nm]); an = "middle"
-        dx, dy, _ = pl.put(x, y, nm.strip(), rs, 0.3, [(a * k, b * k, an) for a, b in REGION_SPOTS])
-        o.append(label(x + dx, y + dy, nm.strip(), "#7AAAC8", rs, anchor=an, weight=500, ls=0.3))
+        got = pl.put_clear(x, y, nm.strip(), (rs, rs - 1.5), 0.3, [(a * k, b * k, an) for a, b in REGION_SPOTS])
+        if got:                                      # a region crowded out by the towns' names is left unnamed
+            dx, dy, _, sz = got
+            o.append(label(x + dx, y + dy, nm.strip(), "#7AAAC8", sz, anchor=an, weight=500, ls=0.3))
     for i, rt in enumerate(routes):
         pts = [P.pt(q) for q in rt]
         lit = (red and i == len(routes) - 1) if lit_routes is None else (i in lit_routes)

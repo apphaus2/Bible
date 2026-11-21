@@ -65,7 +65,7 @@ def offering(w, h):
         elif kind == "jar": g = f'<path d="M{f(x - 12 * s)} {f(y - 18 * s)} L {f(x + 12 * s)} {f(y - 18 * s)} C {f(x + 24 * s)} {f(y)} {f(x + 18 * s)} {f(y + 18 * s)} {f(x)} {f(y + 18 * s)} C {f(x - 18 * s)} {f(y + 18 * s)} {f(x - 24 * s)} {f(y)} {f(x - 12 * s)} {f(y - 18 * s)} Z" fill="{c}" stroke="#0D0D0F" stroke-width="2"></path>'
         else: g = "".join(f'<path d="M{f(x + dx * s)} {f(y - 10 * s)} l {f(10 * s)} {f(8 * s)} l {f(-4 * s)} {f(12 * s)} l {f(-12 * s)} 0 l {f(-4 * s)} {f(-12 * s)} Z" fill="{c}" stroke="{CY}" stroke-width="1.6"></path>' for dx in (-14, 8))
         o.append(f'<rect x="{f(x - cw / 2 + 4)}" y="{f(y - ch * 0.42)}" width="{f(cw - 8)}" height="{f(ch * 0.84)}" fill="none" stroke="#2C9DB8" stroke-width="1"></rect>' + g
-                 + label(x, y + ch * 0.36, nm, CY, 7.5, ls=0.04))
+                 + label(x, y + ch * 0.36, nm, CY, 7.5, ls=0.04, fit=cw - 12))     # a translation shrunk to its cell
     return "".join(o)
 
 def sanctuary(w, h):

@@ -32,6 +32,7 @@ from mat.art5 import leaven
 from ecc.art import race
 from jer.art10 import yoke_off
 from jhn.art2 import reaping
+import mapfit
 
 GOLD, CY = "#FFD23F", "#8FD0E2"
 
@@ -457,7 +458,11 @@ def one_in_christ(w, h):
                            up=[(-22, -158), (-28, -180), (-30, -190)] if i == 1 else None, extra=ea))
         o.append(mk.person("oc", round(xb), round(base), round(sc * (0.94 if i == 2 else 1), 3), body="#1E4A6A", cloth="#24506E", woman=i == 2, kind="Robe" if i == 2 else "Tunic",
                            stroke=CY, sw=2.4, flip=True, extra=eb))
-        o.append(label(xa, min(base + 18, h - 6), a, CY, 9.5) + label(xb, min(base + 18, h - 6), bb, CY, 9.5))
+        ly = min(base + 18, h - 6)
+        if (mapfit.width(a, 9.5) + mapfit.width(bb, 9.5)) / 2 + 8 > xb - xa:      # too long to centre under each figure
+            o.append(label(cx - 5, ly, a, CY, 9.5, "end") + label(cx + 5, ly, bb, CY, 9.5, "start"))
+        else:
+            o.append(label(xa, ly, a, CY, 9.5) + label(xb, ly, bb, CY, 9.5))
         if i < 2: o.append(f'<path d="M{f(cx + w * 0.15)} {f(top)} L {f(cx + w * 0.15)} {f(base)}" stroke="#2C5A7A" stroke-width="1.4" stroke-dasharray="5 5"></path>')
     o.append(halo(w * 0.5, top - h * 0.06, h * 0.2, "#FFE680", 0.35)
              + f'<rect x="{f(w * 0.05)}" y="{f(top - h * 0.12)}" width="{f(w * 0.9)}" height="{f(h * 0.06)}" fill="{GOLD}" opacity="0.92"></rect>'

@@ -90,13 +90,13 @@ def journeys(w, h, hi=None):
     pl = mapfit.Placer(w, h)                         # names clear of the dots, the rivers' names and each other
     pl.block(*mapfit.box(w * 0.26, h * 0.3, "JORDAN", 8, anchor="end")); pl.block(*mapfit.box(w * 0.9, h * 0.58, "THE ARNON", 8, anchor="end"))
     for _, x, y in list(pts) + list(towns): pl.dot(w * x, h * y, 5.5)
-    for i, (nm, x, y) in enumerate(pts):
-        c = "#FFD23F" if hi is None or nm in hi else "#6A7A8A"; first = (0, -8, "middle") if i % 2 else (0, 14, "middle")
-        dx, dy, an = pl.put(w * x, h * y, nm, 8, 0.14, [first] + mapfit.AROUND)
+    at = pl.solve([(w * x, h * y, nm, 8, 0.14, [(0, -8, "middle") if i % 2 else (0, 14, "middle")] + mapfit.AROUND) for i, (nm, x, y) in enumerate(pts)]
+                  + [(w * x, h * y, nm, 8, 0.14, [(0, -8, "middle")] + mapfit.AROUND) for nm, x, y in towns])
+    for (nm, x, y), (dx, dy, an) in zip(pts, at):
+        c = "#FFD23F" if hi is None or nm in hi else "#6A7A8A"
         o.append(node(w * x, h * y, "", c, r=4, size=8) + label(w * x + dx, h * y + dy, nm, c, 8, an))
-    for nm, x, y in towns:
+    for (nm, x, y), (dx, dy, an) in zip(towns, at[len(pts):]):
         c = "#D7261E" if hi is None or nm in hi else "#6A3A3A"
-        dx, dy, an = pl.put(w * x, h * y, nm, 8, 0.14, [(0, -8, "middle")] + mapfit.AROUND)
         o.append(node(w * x, h * y, "", c, r=4, size=8) + label(w * x + dx, h * y + dy, nm, c, 8, an))
     return "".join(o)
 

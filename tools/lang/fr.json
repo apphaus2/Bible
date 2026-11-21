@@ -5,6 +5,7 @@
  "psalm_title_verses": true,
  "psalm_title": "(?<=[.,] )(?!Au chef des chantres|Du serviteur|De David|De Salomon|D'Asaph|Des fils de Koré|Psaume|Cantique|Hymne|Prière|Louange|Complainte|homme de Dieu|Pour |Sur |Avec |A Jeduthun|D'après|Chant d'amour|Lorsqu)",
  "accent_room": 0.16,
+ "fit_room": true,
  "books": {
   "Genesis": "Genèse",
   "Exodus": "Exode",

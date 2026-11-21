@@ -192,9 +192,10 @@ def mediator(p, w, h):
     jb = base - h * 0.02
     o.append(halo(w * 0.5, jb - 110 * js, 120 * js, "#FFF4C2", 0.6))
     o.append(robed(p, w * 0.5, jb, js, "#E8E2D6", skin=JESUS_SKIN, mantle="#7A8A9A", up=[(-22, -158), (-50, -150), (-76, -146)], extra=_JESUS_HEAD))
-    o.append(plate_label(w * 0.5 + 70 * js, jb - 120 * js, "HIMSELF MAN", CY, 9.5, anchor="start"))
-    o.append(plate_label(w * 0.5 + 70 * js, jb - 104 * js, "CHRIST JESUS", GOLD, 10, anchor="start"))
-    o.append(plate_label(w * 0.5 + 70 * js, jb - 84 * js, "A RANSOM FOR ALL", CY, 9.5, anchor="start"))
+    y1 = jb - 120 * js; y2 = y1 + max(16 * js, 13); y3 = y2 + max(20 * js, 13)          # never closer than a line
+    o.append(plate_label(w * 0.5 + 70 * js, y1, "HIMSELF MAN", CY, 9.5, anchor="start"))
+    o.append(plate_label(w * 0.5 + 70 * js, y2, "CHRIST JESUS", GOLD, 10, anchor="start"))
+    o.append(plate_label(w * 0.5 + 70 * js, y3, "A RANSOM FOR ALL", CY, 9.5, anchor="start"))
     return "".join(o)
 
 from ntcast import _HAIR_FIG, _BEARD_FIG

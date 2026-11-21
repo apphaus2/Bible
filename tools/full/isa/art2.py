@@ -31,9 +31,10 @@ def nations_map(w, h, hi=(), arrows=(), show=None, lit="#D7261E", note=None):
     pl = Placer(w, h)                                # names clear of the dots, the rivers' names and each other
     pl.block(*lbox(w * 0.58, h * 0.3, "EUPHRATES", 8)); pl.block(*lbox(w * 0.03, h * 0.56, "THE GREAT SEA", 8, anchor="start"))
     for nm in names: pl.dot(*pos[nm], 8 if nm in hi else 6)
-    for nm in names:
-        x, y = pos[nm]; c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2"); sz = size + (1 if nm in hi else 0)
-        dx, dy, an = pl.put(x, y, nm, sz, 0.14, [(0, -11, "middle")] + [a for a in AROUND if a != (0, -10, "middle")])
+    sz_ = lambda nm: size + (1 if nm in hi else 0)
+    at = pl.solve([(*pos[nm], nm, sz_(nm), 0.14, [(0, -11, "middle")] + [a for a in AROUND if a != (0, -10, "middle")]) for nm in names])
+    for nm, (dx, dy, an) in zip(names, at):
+        x, y = pos[nm]; c = lit if nm in hi else ("#FFD23F" if nm == "JERUSALEM" else "#8FD0E2"); sz = sz_(nm)
         o.append(node(x, y, "", c, r=6 if nm in hi else 4, size=sz) + label(x + dx, y + dy, nm, c, sz, an))
     if note: o.append(label(w * 0.34, h * 0.95, note, "#FF8A6A", 10, "start"))
     return "".join(o)
