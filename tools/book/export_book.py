@@ -15,7 +15,7 @@ just the characters the volume uses (all four are under the SIL Open Font Licens
 in _book/fonts/ and embeds them in both outputs.
 
 Needs Node with Playwright (as for tools/site/shots.js) for the PDF and the cover image."""
-import sys, re, json, html, uuid, zipfile, shutil, hashlib, pathlib, argparse, datetime, subprocess, urllib.parse, urllib.request
+import sys, re, json, html, uuid, zipfile, shutil, hashlib, pathlib, argparse, datetime, subprocess, time, urllib.parse, urllib.request
 import xml.dom.minidom
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -53,6 +53,15 @@ def page_chars(pages):
     text = "".join(html.unescape(re.sub(r"<[^>]+>", " ", p["root"])) for p in pages)
     return "".join(sorted(set(text) - set("\n\r\t")))
 
+def fetch(req, timeout):
+    """urlopen().read(), tried again on a dropped connection (Google Fonts resets one now and then); an HTTP error at once."""
+    for n in range(5):
+        try: return urllib.request.urlopen(req, timeout=timeout).read()
+        except urllib.request.HTTPError: raise
+        except (urllib.error.URLError, ConnectionError, TimeoutError):
+            if n == 4: raise
+            time.sleep(2 * (n + 1))
+
 def fetch_fonts(pages, out):
     """Download every family subset to the characters in use; returns [(family, weight, file)] (cached by content hash)."""
     chars = page_chars(pages) + "0123456789—–·…'’ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -68,7 +77,7 @@ def fetch_fonts(pages, out):
       for n, (part, rng) in enumerate(pieces):
         q = urllib.parse.urlencode({"family": f"{fam}:wght@{';'.join(map(str, weights))}", "text": part, "display": "swap"})
         req = urllib.request.Request("https://fonts.googleapis.com/css2?" + q, headers={"User-Agent": "Wget/1.21"})   # plain UA → TrueType
-        try: css = urllib.request.urlopen(req, timeout=30).read().decode()
+        try: css = fetch(req, 30).decode()
         except urllib.request.HTTPError:
             if rng: continue                           # a piece with no glyph in this family at all is refused too
             raise
@@ -77,7 +86,7 @@ def fetch_fonts(pages, out):
             url = re.search(r"url\((.*?)\)", block).group(1)
             ext = "woff2" if "woff2" in block else "ttf"
             fn = f"{fam.replace(' ', '')}-{wt}-{key}{f'-{n}' if rng else ''}.{ext}"
-            try: (fdir / fn).write_bytes(urllib.request.urlopen(url, timeout=60).read())
+            try: (fdir / fn).write_bytes(fetch(url, 60))
             except urllib.request.HTTPError:
                 if rng: continue                       # a piece with no glyph in this family (Anton for kanji) is refused
                 raise
